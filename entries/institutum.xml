@@ -34,8 +34,9 @@
         <form type="lemma">
           <orth>institutum</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">institutum</hi> <hi rend="italic">Satzung, Beschluss, Verordnung</hi> <ref type="lawCode" target="law:IAtr">I Atr</ref> 4,3 <ref type="lawCode" target="law:Quadr">Q</ref>. Wl lad Insc</dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">institutum</hi> <hi rend="italic">Satzung, Beschluss, Verordnung</hi> <ref type="lawCode" target="law:IAtr">I Atr</ref> 4,3 <ref type="lawCode" target="law:Quadr">Q</ref>. <ref type="lawCode" target="law:WiLad">Wl lad</ref> Insc</dictScrap>
         <xr type="lawCode"><ref target="clause:IAtr_4-3">I Atr 4,3</ref></xr>
+        <xr type="lawCode"><ref target="clause:WiLad_Inscr">Wl lad Insc</ref></xr>
       </entry>
     </body>
   </text>

@@ -19,6 +19,7 @@
     <encodingDesc>
       <listPrefixDef>
         <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
         <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
         <prefixDef ident="bib" matchPattern="(.+)" replacementPattern="bibAbb.html#$1"/>
         <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
@@ -34,9 +35,10 @@
         <form type="lemma">
           <orth>leornere</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">leornere</hi> <hi rend="italic">geistlicher Schüler</hi> Geþyncðo 7; <hi rend="italic"><ref type="abbreviation" target="gram:vielleicht"><abbr>vielleicht</abbr></ref></hi> ‘lector, <hi rend="italic">zweiter Grad kirchlicher Weihe</hi>’ [<hi rend="italic"><ref type="abbreviation" target="gram:wofur"><abbr>wofür</abbr></ref></hi> ~ <hi rend="italic"><ref type="abbreviation" target="gram:auch"><abbr>auch</abbr></ref> <ref type="abbreviation" target="gram:sonst"><abbr>sonst</abbr></ref>; </hi><ref type="bibl" target="bib:CitKlaeberAnglia"><hi rend="italic">Klaeber,</hi> Anglia 27,268</ref>]</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">leornere</hi> <hi rend="italic">geistlicher Schüler</hi> <ref type="lawCode" target="law:Gethinctho">Geþyncðo</ref> 7; <hi rend="italic"><ref type="abbreviation" target="gram:vielleicht"><abbr>vielleicht</abbr></ref></hi> ‘lector, <hi rend="italic">zweiter Grad kirchlicher Weihe</hi>’ [<hi rend="italic"><ref type="abbreviation" target="gram:wofur"><abbr>wofür</abbr></ref></hi> ~ <hi rend="italic"><ref type="abbreviation" target="gram:auch"><abbr>auch</abbr></ref> <ref type="abbreviation" target="gram:sonst"><abbr>sonst</abbr></ref>; </hi><ref type="bibl" target="bib:CitKlaeberAnglia"><hi rend="italic">Klaeber,</hi> Anglia 27,268</ref>]</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/21480">leornere</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/54539">leornere (Supplement)</ref></xr>
+        <xr type="lawCode"><ref target="clause:Gethyn_7">Geþyncðo 7</ref></xr>
       </entry>
     </body>
   </text>

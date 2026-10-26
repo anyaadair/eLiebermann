@@ -35,9 +35,10 @@
         <form type="lemma">
           <orth>asetnysse</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">asetnysse</hi> <hi rend="italic">Gesetz(e?) stets nur</hi> <ref type="lawCode" target="law:H">H</ref>: <ref type="lawCode" target="law:Ine">Ine</ref> Insc. <ref type="lawCode" target="law:IEm">I Em</ref> Insc. Wl lad Insc</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">asetnysse</hi> <hi rend="italic">Gesetz(e?) stets nur</hi> <ref type="lawCode" target="law:H">H</ref>: <ref type="lawCode" target="law:Ine">Ine</ref> Insc. <ref type="lawCode" target="law:IEm">I Em</ref> Insc. <ref type="lawCode" target="law:WiLad">Wl lad</ref> Insc</dictScrap>
         <xr type="lawCode"><ref target="law:Ine">Ine Insc</ref></xr>
         <xr type="lawCode"><ref target="clause:IEm_Inscr">I Em Insc</ref></xr>
+        <xr type="lawCode"><ref target="clause:WiLad_Inscr">Wl lad Insc</ref></xr>
       </entry>
     </body>
   </text>

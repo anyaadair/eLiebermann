@@ -19,6 +19,7 @@
     <encodingDesc>
       <listPrefixDef>
         <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
         <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
         <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
       </listPrefixDef>
@@ -33,7 +34,8 @@
         <form type="lemma">
           <orth>lahlicne</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">lahlicne</hi> spalan, <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>, gesetzmässigen Vertreter</hi> Wl lad 2,1</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">lahlicne</hi> spalan, <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>, gesetzmässigen Vertreter</hi> <ref type="lawCode" target="law:WiLad">Wl lad</ref> 2,1</dictScrap>
+        <xr type="lawCode"><ref target="clause:WiLad_2-1">Wl lad 2,1</ref></xr>
       </entry>
     </body>
   </text>

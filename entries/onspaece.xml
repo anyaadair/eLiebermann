@@ -19,6 +19,7 @@
     <encodingDesc>
       <listPrefixDef>
         <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
         <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
         <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
       </listPrefixDef>
@@ -34,7 +35,8 @@
         <form type="lemma">
           <orth>onspæce</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">onspæce</hi> [<hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref></hi>] geræcan <hi rend="italic">Klage rechtsgiltig einbringen</hi> Geþyncðo 3; accusationem admallare <ref type="lawCode" target="law:Quadr">Q</ref>; preiurare forað <ref type="lawCode" target="law:InCn">In Cn</ref></dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">onspæce</hi> [<hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref></hi>] geræcan <hi rend="italic">Klage rechtsgiltig einbringen</hi> <ref type="lawCode" target="law:Gethinctho">Geþyncðo</ref> 3; accusationem admallare <ref type="lawCode" target="law:Quadr">Q</ref>; preiurare forað <ref type="lawCode" target="law:InCn">In Cn</ref></dictScrap>
+        <xr type="lawCode"><ref target="clause:Gethyn_3">Geþyncðo 3</ref></xr>
       </entry>
     </body>
   </text>

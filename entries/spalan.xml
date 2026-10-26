@@ -19,6 +19,7 @@
     <encodingDesc>
       <listPrefixDef>
         <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
         <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
         <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
       </listPrefixDef>
@@ -33,9 +34,10 @@
         <form type="lemma">
           <orth>spalan</orth>
         </form>
-        <dictScrap type="liebermann">lahlicne <hi rend="bold">spalan</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref></hi>, <hi rend="italic">gesetzmässigen Vertreter</hi> (<hi rend="italic">beim Zweikampf: Kämpen</hi>) Wl lad 2,1; defensor <ref type="lawCode" target="law:Quadr">Q</ref> [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>.</hi> gespelia]</dictScrap>
+        <dictScrap type="liebermann">lahlicne <hi rend="bold">spalan</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref></hi>, <hi rend="italic">gesetzmässigen Vertreter</hi> (<hi rend="italic">beim Zweikampf: Kämpen</hi>) <ref type="lawCode" target="law:WiLad">Wl lad</ref> 2,1; defensor <ref type="lawCode" target="law:Quadr">Q</ref> [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>.</hi> gespelia]</dictScrap>
         <xr type="compare"><ref target="entry:gespelia">gespelia</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/28394">spala</ref></xr>
+        <xr type="lawCode"><ref target="clause:WiLad_2-1">Wl lad 2,1</ref></xr>
       </entry>
     </body>
   </text>
