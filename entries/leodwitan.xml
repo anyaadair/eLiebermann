@@ -19,6 +19,7 @@
     <encodingDesc>
       <listPrefixDef>
         <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
         <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
         <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
       </listPrefixDef>
@@ -34,9 +35,10 @@
         <form type="lemma">
           <orth>leodwitan</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">leodwitan,</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref>, Ratsherren der Nation, Volksfürsten</hi> Geþyncðo 1 <ref type="lawCode" target="law:H">H</ref>; þeodw~ <hi rend="italic"><ref type="abbreviation" target="gram:ubrigeHandschriften"><abbr>übr.</abbr></ref></hi></dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">leodwitan,</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref>, Ratsherren der Nation, Volksfürsten</hi> <ref type="lawCode" target="law:Gethinctho">Geþyncðo</ref> 1 <ref type="lawCode" target="law:H">H</ref>; þeodw~ <hi rend="italic"><ref type="abbreviation" target="gram:ubrigeHandschriften"><abbr>übr.</abbr></ref></hi></dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/21427">leód-wita</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/54506">leód-wita (Supplement)</ref></xr>
+        <xr type="lawCode"><ref target="clause:Gethyn_1">Geþyncðo 1</ref></xr>
       </entry>
     </body>
   </text>

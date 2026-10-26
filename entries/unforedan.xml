@@ -19,6 +19,7 @@
     <encodingDesc>
       <listPrefixDef>
         <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
         <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
         <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
       </listPrefixDef>
@@ -33,7 +34,8 @@
         <form type="lemma">
           <orth>unforedan</orth>
         </form>
-        <dictScrap type="liebermann">mid <hi rend="bold">unforedan</hi> aðe, <hi rend="italic"><ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>, <ref type="abbreviation" target="gram:durch"><abbr>durch</abbr></ref> ungestabten</hi> (<hi rend="italic">nicht <ref type="abbreviation" target="gram:vom"><abbr>vom</abbr></ref> Vorstabenden in Wörter zerlegten und so, <ref type="abbreviation" target="gram:mit"><abbr>mit</abbr></ref> Gefahr sich zu versprechen, nachzusprechenden</hi>) <hi rend="italic">Reinigungseid</hi> Wl lad 3,2; plano iuramento, i. e. non in verborum observantiis <ref type="lawCode" target="law:Quadr">Q</ref></dictScrap>
+        <dictScrap type="liebermann">mid <hi rend="bold">unforedan</hi> aðe, <hi rend="italic"><ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>, <ref type="abbreviation" target="gram:durch"><abbr>durch</abbr></ref> ungestabten</hi> (<hi rend="italic">nicht <ref type="abbreviation" target="gram:vom"><abbr>vom</abbr></ref> Vorstabenden in Wörter zerlegten und so, <ref type="abbreviation" target="gram:mit"><abbr>mit</abbr></ref> Gefahr sich zu versprechen, nachzusprechenden</hi>) <hi rend="italic">Reinigungseid</hi> <ref type="lawCode" target="law:WiLad">Wl lad</ref> 3,2; plano iuramento, i. e. non in verborum observantiis <ref type="lawCode" target="law:Quadr">Q</ref></dictScrap>
+        <xr type="lawCode"><ref target="clause:WiLad_3-2">Wl lad 3,2</ref></xr>
       </entry>
     </body>
   </text>

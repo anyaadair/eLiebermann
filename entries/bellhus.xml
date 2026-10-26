@@ -19,6 +19,7 @@
     <encodingDesc>
       <listPrefixDef>
         <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
         <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
         <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
       </listPrefixDef>
@@ -33,10 +34,11 @@
         <form type="lemma">
           <orth>bellhus</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">bellhus</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref></hi>, <hi rend="italic">Glockenhaus</hi> Geþyncðo 2 <ref type="lawCode" target="law:H">H</ref>; belle <ref type="lawCode" target="law:D">D</ref></dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">bellhus</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref></hi>, <hi rend="italic">Glockenhaus</hi> <ref type="lawCode" target="law:Gethinctho">Geþyncðo</ref> 2 <ref type="lawCode" target="law:H">H</ref>; belle <ref type="lawCode" target="law:D">D</ref></dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/3617">bell-hús</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/3599">bel-hús</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/39892">bel-hús (Supplement)</ref></xr>
+        <xr type="lawCode"><ref target="clause:Gethyn_2">Geþyncðo 2</ref></xr>
       </entry>
     </body>
   </text>

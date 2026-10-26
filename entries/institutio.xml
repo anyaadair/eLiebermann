@@ -34,8 +34,9 @@
         <form type="lemma">
           <orth>institutio</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">institutio</hi> <hi rend="italic">Satzung, Gesetz</hi> <ref type="lawCode" target="law:IIIEm">III Em</ref> Insc. Wl lad Insc <ref type="lawCode" target="law:Quadr">Q</ref>. <ref type="lawCode" target="law:Hn">Hn</ref> 7,1; ~ones <hi rend="italic">gesetzliche <ref type="abbreviation" target="gram:Artikel"><abbr>Artikel</abbr></ref>, Verfassungserlass</hi> <ref type="lawCode" target="law:CHnCor">CHn cor</ref> Prot<hi rend="superscript">2</hi></dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">institutio</hi> <hi rend="italic">Satzung, Gesetz</hi> <ref type="lawCode" target="law:IIIEm">III Em</ref> Insc. <ref type="lawCode" target="law:WiLad">Wl lad</ref> Insc <ref type="lawCode" target="law:Quadr">Q</ref>. <ref type="lawCode" target="law:Hn">Hn</ref> 7,1; ~ones <hi rend="italic">gesetzliche <ref type="abbreviation" target="gram:Artikel"><abbr>Artikel</abbr></ref>, Verfassungserlass</hi> <ref type="lawCode" target="law:CHnCor">CHn cor</ref> Prot<hi rend="superscript">2</hi></dictScrap>
         <xr type="lawCode"><ref target="clause:IIIEm_Inscr">III Em Insc</ref></xr>
+        <xr type="lawCode"><ref target="clause:WiLad_Inscr">Wl lad Insc</ref></xr>
         <xr type="lawCode"><ref target="clause:Hn_7-1">Hn 7,1</ref></xr>
       </entry>
     </body>
