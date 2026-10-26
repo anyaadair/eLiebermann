@@ -391,6 +391,11 @@
     // Manuscripts and versions (Quadripartitus, Instituta Cnuti…). After a
     // passage they name the reading cited (Af 41 B); they are not codes, and
     // they are left out of the citation list.
+    // Liebermann's grammatical labels that come before a number ("pl 3", "op 3",
+    // "sbj 3"): person and number, not a spelling followed by a clause.
+    const GRAM_LABELS = new Set(['pl', 'sg', 'op', 'sbj', 'sbjf', 'ipf', 'pf', 'pc', 'ptt', 'pt', 'prs', 'prd', 'praes',
+        'fut', 'inf', 'imp', 'no', 'nom', 'gn', 'dt', 'ac', 'instr', 'obl', 'voc', 'nt', 'fm', 'msc', 'm', 'f', 'st',
+        'praed', 'sbst', 'attr', 'adj', 'adv', 'spl', 'spla', 'cj', 'prp', 'prn', 'sb']);
     const SIGLA = new Set(['MsA', 'B', 'Bu', 'C', 'D', 'E', 'F', 'G', 'G2', 'H', 'Hk', 'I', 'K', 'Ld', 'O', 'Ot',
         'So', 'Vt', 'Io', 'Isp', 'Quadr', 'InCn', 'ConsCn', 'WlEdmr', 'Wb', 'LatVersion']);
     // "L" after a passage (msAbb: LatVersion) is the Latin version Liebermann prints
@@ -481,11 +486,14 @@
                 }
                 // Liebermann's "Hn 13,12. 70,21a; boclond 13,1": after a semicolon, a
                 // spelling (lower case, one word) then a number is another passage of
-                // the same code. The number must end the citation (punctuation, a
+                // the same code. So too after "|" between grammatical forms, with or
+                // without a label: "Geþyncðo 2; sele 3 | hirede 3", "Rect 20 | dt: ~ce
+                // 18,1". A grammatical abbreviation is not a spelling ("| pl 1; we",
+                // "| pl 3: ~að"). The number must end the citation (punctuation, a
                 // manuscript letter, a sense number "2)", or the end), so "to 3 tunan",
                 // "ofer 5 ~", "im 12. Jh." and "an 7 (9) nihtum" are not read as passages.
-                if (code && last && last.anchor === code.anchor && (m = new RegExp(`^(\\s*;\\s*[\\p{Ll}~æðþǣ][\\p{L}~\\-]*\\s+)(${PASSAGE})(?![\\p{L}\\d])(?=\\s*(?:$|[;|‖=\\[\\u0001\\u0004]|\\.\\s*(?:$|[\\d;|‖(—\\u0001\\u0004])|\\((?!\\d)|ff?\\.|—|,\\s|\\d{1,2}[a-z]?\\)|\\p{L}\\)))`, 'u').exec(rest))) {
-                    const n = m[2].replace(/\.$/, ''), s = at + m[1].length;
+                if (code && last && last.anchor === code.anchor && (m = new RegExp(`^(\\s*(?:;|\\|(?:\\s*[\\p{L}\\d .]{1,15}:)?)\\s*([\\p{Ll}~æðþǣ][\\p{L}~\\-]*)\\s+)(${PASSAGE})(?![\\p{L}\\d])(?=\\s*(?:$|[;|‖=\\[\\u0001\\u0004]|\\.\\s*(?:$|[\\d;|‖(—\\u0001\\u0004])|\\((?!\\d)|ff?\\.|—|,\\s|\\d{1,2}[a-z]?\\)|\\p{L}\\)))`, 'u').exec(rest)) && !GRAM_LABELS.has(m[2])) {
+                    const n = m[3].replace(/\.$/, ''), s = at + m[1].length;
                     add(code.label + ' ' + n, s, s + n.length);
                     rest = rest.slice(m[0].length); at += m[0].length;
                     continue;
