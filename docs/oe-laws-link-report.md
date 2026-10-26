@@ -4,16 +4,16 @@ Made by `tools/link-citations.py --letter ALL`. It is replaced each time the too
 
 ```
 All entries: 9091 (with a law code citation list: 6404)
-Citations in their lists: 30368
-  linked, exact            5608
-  linked, subclause         363
-  linked, and-following      16
+Citations in their lists: 30514
+  linked, exact            1231
+  linked, subclause          63
+  linked, and-following       2
   linked, instituta           1
-  linked, already linked  22951
-  LINKED TO A CLAUSE:       28939  (95% of all citations; 99% of those with a clause number to a code in the database)
-  not linked, clause not found            353
-  not linked, code not in database       1070
-Entries changed: 209; entries whose whole list is linked: 5483
+  linked, already linked  27780
+  LINKED TO A CLAUSE:       29077  (95% of all citations; 99% of those with a clause number to a code in the database)
+  not linked, clause not found            355
+  not linked, code not in database       1076
+Entries changed: 114; entries whose whole list is linked: 5483
 ```
 
 ## The code is in the database but no clause file has that number
@@ -85,35 +85,35 @@ Citations (with how many times each occurs):
 
 ## The code has no clause files
 
-By code: ECf (642), WlArtFz (319), ECfRetr (52), Lond (46), ApAGu (11)
+By code: ECf (642), WlArtFz (325), ECfRetr (52), Lond (46), ApAGu (11)
 
 Citations (with how many times each occurs):
 
 - ECf 32 ×97
-- Wl art Fz 5 ×27
+- Wl art Fz 5 ×28
+- Wl art Fz 6 ×26
 - ECf 13,1 ×25
 - Wl art Fz 2 ×24
 - Wl art Fz 3,1 ×24
-- Wl art Fz 6 ×24
 - ECf 11,1 ×22
+- Wl art Fz 4 ×21
 - Wl art Fz 1 ×20
 - Wl art Fz 10 ×20
-- Wl art Fz 4 ×20
 - ECf 33 ×19
 - Wl art Fz 8 ×17
 - Wl art Fz Insc ×16
+- Wl art Fz 8,2 ×15
 - Wl art Fz 3 ×14
 - Wl art Fz 7 ×14
-- Wl art Fz 8,2 ×14
 - Wl art Fz 8,1 ×13
 - Wl art Fz 8a ×13
 - ECf 35,1 ×12
 - Wl art Fz 8,3 ×12
 - ECf Pro ×11
 - Wl art Fz 6,1 ×11
+- Wl art Fz 9 ×11
 - ECf 35,2 ×10
 - Wl art Fz 3,2 ×10
-- Wl art Fz 9 ×10
 - ECf 12,6 ×9
 - ECf 21 ×9
 - ECf 30 ×9
