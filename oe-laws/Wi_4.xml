@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Wi_4">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Wi 4</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#oliver">Oliver</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#oliver">Oliver</name></respStmt>
+        <respStmt><resp>Cross-references to other clauses</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Cross-references to other clauses</resp><name ref="#wormald-ppmel">Wormald, Papers Preparatory</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Attenborough’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">Wi_4</idno>
+        <idno type="citation">Wi 4</idno>
+        <idno type="lawCode">Wi</idno>
+        <idno type="lawCodeAnchor">Wi</idno>
+        <idno type="clause">4</idno>
+        <idno type="citationKey">Wi 4</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Wihtred’s Code</title> <note type="reign">Wihtred, r. 690/1–725</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">12</biblScope></bibl>
+          <bibl xml:id="oliver" type="edition">Lisi Oliver, <title>The Beginnings of English Law</title> (Toronto: University of Toronto Press, 2002), p. <biblScope unit="page">154</biblScope></bibl>
+          <bibl xml:id="attenborough" type="edition">F. L. Attenborough, <title>The Laws of the Earliest English Kings</title> (Cambridge: Cambridge University Press, 1922), p. <biblScope unit="page">24</biblScope></bibl>
+          <bibl xml:id="whitelock" type="translation">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007), p. <biblScope unit="page">397</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="wormald-ppmel" type="study">Patrick Wormald, <title>Papers Preparatory to The Making of English Law: King Alfred to the Twelfth Century, II: From God’s Law to Common Law</title>, ed. Stephen Baxter and John Hudson (London: University of London, 2014)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-h"><abbr>H</abbr> <note type="manuscript">Strood, Medway Archive and Local Studies Centre, MS DRc/R1 (Textus Roffensis; formerly Rochester, Cathedral Library, A.3.5), c. 1120–25</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 12">695–6</date><date source="#attenborough #whitelock #wormald-mel" n="|EHD p. 396|MEL p. 102">6 Sept. 695</date><note type="promulgation">695–6 (Liebermann, I p. 12); 6 Sept. 695 (Attenborough; Whitelock, EHD p. 396; Wormald, MEL p. 102)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Illicit unions</term><term>Goods</term><term>Boundaries</term><term>Banishment</term></keywords>
+        <keywords n="people"><term>Foreigners/strangers</term><term>Sexual offenders</term><term>All people</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 160 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 12.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="4">
+        <head><ref type="lawCode" target="law:Wi">Wi</ref> 4</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="4" corresp="#wit-h"><pb n="12" ed="#liebermann"/>Æltheodige mæn, gif hio hiora hæmed rihtan nyllað, of lande mid hiora æhtum ⁊ mid synnum gewiten;</ab>
+        <ab type="editionText" xml:lang="ang" source="#attenborough" corresp="#wit-h"><pb n="24" ed="#attenborough"/>Æltheodige mæn, gif hio hiora hæmed rihtan nyllað, of lande mid hiora æhtum ⁊ mid synnum gewiten;</ab>
+        <ab type="editionText" xml:lang="ang" source="#oliver" n="3.1" corresp="#wit-h"><pb n="154" ed="#oliver"/>Æltheodige mæn, gif hio hiora hæmed rihtan nyllað, of lande mid hiora æhtum ⁊ mid synnum gewiten.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="12" ed="#liebermann"/>Fremde<ptr type="liebermannNote" n="1" target="#Wi_4.lnote.de.1"/> Männer, wenn sie ihren Geschlechtsverkehr<ptr type="liebermannNote" n="2" target="#Wi_4.lnote.de.2"/> nicht bessern wollen, sollen aus dem Lande<ptr type="liebermannNote" n="3" target="#Wi_4.lnote.de.3"/> mit ihren Gütern und mit Sünden weichen,</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">Foreign men, if they will not amend their sexual relations, are to depart from the land with their goods and with their sins,</ab>
+        <ab type="translation" xml:lang="en" source="#attenborough" corresp="#wit-h"><pb n="25" ed="#attenborough"/>Foreigners, if they will not regularise their unions, shall depart from the land<ptr type="editorNote" n="1" target="#Wi_4.attnote.n.1"/> with their possessions and with their sins.</ab>
+        <ab type="translation" xml:lang="en" source="#whitelock" corresp="#wit-h"><pb n="397" ed="#whitelock"/>Foreigners, if they will not regularise their marriages, are to depart from the land with their goods and their sins.</ab>
+        <ab type="translation" xml:lang="en" source="#oliver" corresp="#wit-h"><pb n="155" ed="#oliver"/>Foreign men, if they will not set their union to right, must depart from the land with their possessions and with [their] sins.</ab>
+        <note type="comparedBy" source="#liebermann"><ref target="clause:IICn_55">II Cn 55</ref></note>
+        <note type="comparedBy" source="#wormald-mel" n="353"><ref target="clause:IICn_55">II Cn 55</ref></note>
+        <note type="comparedBy" source="#wormald-ppmel" n="67"><ref target="clause:IICn_55">II Cn 55</ref></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Wi_4.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">26</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Verbannung 1b. 2. Diesen Satz wiederholt II Cn 55. — Über <hi rend="italic">th</hi> statt <hi rend="italic">þ</hi> <hi rend="italic">s. d.</hi> Wb 2b. — Das Wort kann hier den ursprünglichen Sinn ‘volksfremd’ haben, wie in den Wbb in den weitaus meisten Beispielen, also ‘nicht Inselgermanisch’ bedeuten; in Kent zuerst landeten Fremde, bes. Händler, von der Festlandsküste gegenüber, meist ohne Frauen, also zu Unsittlichkeit geneigt. Doch heissen Bischöfe auch der Nachbardiözesen ebenfalls <hi rend="italic">peregrini</hi>, <hi rend="italic">ælþeodige</hi>; Beda IV 5</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf. Gl</hi> Verbannung 1b. 2. This clause is repeated by II Cn 55. — On <hi rend="italic">th</hi> instead of <hi rend="italic">þ</hi> <hi rend="italic">see</hi> that entry in Wb 2b. — The word may here have the original sense ‘foreign to the people’, as in the great majority of examples in the dictionaries, and thus mean ‘not insular Germanic’; it was in Kent that foreigners, esp. traders, from the continental coast opposite first landed, mostly without women and hence inclined to immorality. Yet bishops of the neighbouring dioceses too are likewise called <hi rend="italic">peregrini</hi>, <hi rend="italic">ælþeodige</hi>; Beda IV 5</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Wi_4.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">26</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">Nicht bloss ‘Hurerei’, auch ‘Konkubinat’, <hi rend="italic">s. o.</hi> 3¹</seg><seg type="translation" xml:lang="en" source="#claude">Not merely ‘fornication’, but also ‘concubinage’; see above 3¹</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Wi_4.lnote.de.3" n="3" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">26</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">Wihtred konnte nur Kent meinen; Cnut versteht ganz England</seg><seg type="translation" xml:lang="en" source="#claude">Wihtred could mean only Kent; Cnut understands the whole of England</seg></note>
+        <note type="editorNote" subtype="endnote" xml:id="Wi_4.attnote.n.1" n="1" source="#attenborough"><bibl><biblScope unit="page">180</biblScope></bibl><seg type="original" xml:lang="en"><hi rend="italic">i.e.</hi> Kent.</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

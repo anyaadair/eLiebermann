@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IEw_1">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>I Ew 1</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Cross-references to other clauses</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Cross-references to other clauses</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Attenborough’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">IEw_1</idno>
+        <idno type="citation">I Ew 1</idno>
+        <idno type="lawCode">I Ew</idno>
+        <idno type="lawCodeAnchor">IEw</idno>
+        <idno type="clause">1</idno>
+        <idno type="citationKey">IEw 1</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>I Edward</title> <note type="reign">Edward the Elder, r. 899–924</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">138</biblScope></bibl>
+          <bibl xml:id="attenborough" type="edition">F. L. Attenborough, <title>The Laws of the Earliest English Kings</title> (Cambridge: Cambridge University Press, 1922), p. <biblScope unit="page">114</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="whitelock" type="study">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-h" rend="bold"><abbr>H</abbr> <note type="manuscript">Strood, Medway Archive and Local Studies Centre, MS DRc/R1 (Textus Roffensis; formerly Rochester, Cathedral Library, A.3.5), c. 1120–25</note></witness>
+          <witness xml:id="wit-b"><abbr>B</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383</note></witness>
+          <witness xml:id="wit-q"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note></witness>
+          <witness xml:id="wit-ld"><abbr>Ld</abbr> <note type="manuscript">William Lambarde, Archaionomia (London, 1568) – printed from manuscripts now lost</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 138">901–24</date><date source="#attenborough">before 918</date><date source="#wormald-mel" n="MEL pp. 438–9">well before 916</date><note type="promulgation">901–24 (Liebermann, I p. 138); before 918 (Attenborough); well before 916 (Wormald, MEL pp. 438–9)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Livestock</term><term>Goods</term><term>Commerce</term></keywords>
+        <keywords n="people"><term>Traders</term><term>Reeves</term><term>Guarantor</term><term>Witnesses</term><term>Trustworthy men</term><term>Weorcmen</term><term>All people</term><term>Secular classes</term><term>Rank</term></keywords>
+        <keywords n="locations"><term>Towns</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 702 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 138.</change>
+      <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 138: “ungeligrena” → “ungeligenra”.</change>
+      <change when="2026-10" type="checked">Liebermann’s German translation corrected against Gesetze I, p. 138: “(Vom Kaufen. Ld) Und ich will, dass jedermann seinen Gewährsmann habe; und niemand kaufe ausserhalb der Stadt, sondern habe Zeugniss des Stadtvogts oder anderer wahrhaftiger Männer, denen man glauben könne.” → “(Vom Kaufen. Ld) Und ich will, dass jedermann seinen Gewährsmann habe; und niemand kaufe ausserhalb der Stadt, sondern habe Zeugniss des Stadtvogts oder anderer wahrhaftiger Männer, denen man glauben könne. (expanded letters in italics: Ld)”.</change>
+      <change when="2026-10" type="checked">The modern editor’s text corrected against Attenborough, p. 114: “[Ld]; ungeligrena” → “∅; ungeligenra”.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="1">
+        <head><ref type="lawCode" target="law:IEw">I Ew</ref> 1</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="1" corresp="#wit-h"><ptr type="liebermannNote" n="**" target="#IEw_1.lnote.oe.star2"/><pb n="138" ed="#liebermann"/>⁊ ic wille, ðæt gehwilc man hæbbe his geteaman; ⁊ nan man ne ceapige butan porte, ac hæbbe þæs portgerefan gewitnesse oððe oþera ungeligenra manna, ðe man gelyfan mæge.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="1" corresp="#wit-b"><pb n="138" ed="#liebermann"/>⁊ ic wille, þ<hi rend="italic">æt</hi> gehwilc<ptr type="liebermannNote" n="5" target="#IEw_1.lnote.oe.5"/> man hæbbe his geteaman; ⁊ nan man ne ceapige<ptr type="liebermannNote" n="7" target="#IEw_1.lnote.oe.7"/> butan porte, ac hæbbe ðæs portgerefan<ptr type="liebermannNote" n="8" target="#IEw_1.lnote.oe.8"/> gewitnesse<ptr type="liebermannNote" n="9" target="#IEw_1.lnote.oe.9"/> oððe oðera ungeligenra man[na<ptr type="liebermannNote" n="10" target="#IEw_1.lnote.oe.10"/>], ðe man<ptr type="liebermannNote" n="11" target="#IEw_1.lnote.oe.11"/> gelyfan mæge.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="1" corresp="#wit-q"><pb n="139" ed="#liebermann"/>Et uolo<ptr type="liebermannNote" n="5" target="#IEw_1.lnote.oe.5-2"/>, ut omnis homo habeat aduocatum suum; et nemo barganniet extra portum, sed habeat portiréue testimonium uel alterius non mendacis hominis, cui possit credi.</ab>
+        <ab type="editionText" xml:lang="ang" source="#attenborough" n="1" corresp="#wit-h"><pb n="114" ed="#attenborough"/>[Be ceapunge.]<ptr type="editorNote" n="5" target="#IEw_1.attnote.fn.5"/> ⁊ ic wille, ðæt gehwilc man hæbbe his geteaman; ⁊ nan man ne ceapige butan porte, ac hæbbe þæs portgerefan gewitnesse oððe oþera ungeligenra manna<ptr type="editorNote" n="6" target="#IEw_1.attnote.fn.6"/>, ðe man gelyfan mæge.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="139" ed="#liebermann"/>(Vom Kaufen.<ptr type="liebermannNote" n="1" target="#IEw_1.lnote.de.1"/> <hi rend="italic">Ld</hi>) Und ich will, dass jedermann seinen Gewährsmann<ptr type="liebermannNote" n="2" target="#IEw_1.lnote.de.2"/> habe; und niemand kaufe<ptr type="liebermannNote" n="3" target="#IEw_1.lnote.de.3"/> ausserhalb der Stadt<ptr type="liebermannNote" n="4" target="#IEw_1.lnote.de.4"/>, sondern habe Zeugniss des Stadtvogts oder anderer<ptr type="liebermannNote" n="5" target="#IEw_1.lnote.de.5"/> wahrhaftiger Männer, denen man glauben könne.</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">(Of buying. Ld) And I will that everyone have his warrantor; and that no one buy outside a town, but have the witness of the town-reeve or of other truthful men whom one can believe.</ab>
+        <ab type="translation" xml:lang="en" source="#attenborough" corresp="#wit-h"><pb n="115" ed="#attenborough"/>And my will is that every man shall have a warrantor [to his transactions] and that no one shall buy [and sell] except in a market town; but he shall have the witness of the 'port-reeve<ptr type="editorNote" n="1" target="#IEw_1.attnote.n.1"/>' or of other men of credit, who can be trusted.</ab>
+        <note type="comparison" source="#liebermann" n="139"><ref target="clause:AGu_4">AGu 4</ref></note>
+        <note type="comparisonPrinted" source="#liebermann">Vgl. A Gu. 4</note>
+        <note type="comparedBy" source="#liebermann"><ref target="clause:IIAs_12">II As 12</ref></note>
+        <note type="comparison" source="#wormald-mel" n="290"><label>builds on</label> <ref target="clause:Af_34">Af 34</ref> <quote>Each built on themes covered by Alfred ... Alfred, himself building on Ine, demanded that traders register their escorts</quote></note>
+        <note type="comparedBy" source="#wormald-mel" n="286"><ref target="clause:AGu_4">AGu 4–5</ref></note>
+        <note type="comparedBy" source="#wormald-mel" n="302"><ref target="clause:IIAs_12">II As 12</ref></note>
+        <note type="comparedBy" source="#whitelock" n="421"><ref target="clause:IIAs_12">II As 12</ref></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IEw_1.lnote.oe.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">138</biblScope></bibl><seg type="original" xml:lang="de">-wylc <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">-wylc Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IEw_1.lnote.oe.7" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">138</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">so Ld;</hi> -pge <hi rend="italic">B</hi></seg><seg type="translation" xml:lang="en" source="#claude">thus Ld; -pge B</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IEw_1.lnote.oe.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">138</biblScope></bibl><seg type="original" xml:lang="de">-geferan <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">-geferan Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IEw_1.lnote.oe.9" n="9" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">138</biblScope></bibl><seg type="original" xml:lang="de">-nysse <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">-nysse Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IEw_1.lnote.oe.10" n="10" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">138</biblScope></bibl><seg type="original" xml:lang="de">manna <hi rend="italic">Ld;</hi> man <hi rend="italic">B</hi></seg><seg type="translation" xml:lang="en" source="#claude">manna Ld; man B</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IEw_1.lnote.oe.11" n="11" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">138</biblScope></bibl><seg type="original" xml:lang="de">mon <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">mon Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IEw_1.lnote.oe.star2" n="**" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">138</biblScope></bibl><seg type="original" xml:lang="de">Be ceapunge <hi rend="italic">überschreibt Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">Be ceapunge written above in Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IEw_1.lnote.oe.5-2" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">139</biblScope></bibl><seg type="original" xml:lang="de">uoluit <hi rend="italic">MHkBr</hi></seg><seg type="translation" xml:lang="en" source="#claude">uoluit MHkBr</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="IEw_1.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">93</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">Oder ‘Markt’; <hi rend="italic">vgl.</hi> Toller <hi rend="italic">ceaping; villae mercimonium, Anglice: þæs tunes cyping</hi> Urk. a. 904 Bi 612</seg><seg type="translation" xml:lang="en" source="#claude">Or ‘market’; <hi rend="italic">cf.</hi> Toller <hi rend="italic">ceaping; villae mercimonium, Anglice: þæs tunes cyping</hi> charter a. 904 Bi 612</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="IEw_1.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">93</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Handel 8a. b. g; Anefang 4ff.</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf. Gl</hi> Handel 8a. b. g; Anefang 4ff.</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="IEw_1.lnote.de.3" n="3" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">93</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">Wohl benutzt in II As 12. — <hi rend="italic">Barganniare</hi> Romanisches Latein (Ducange), Mittelenglisch seit c. 1200 nachweisbar</seg><seg type="translation" xml:lang="en" source="#claude">Probably used in II As 12. — <hi rend="italic">Barganniare</hi> is Romance Latin (Ducange), and is attested in Middle English from c. 1200</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="IEw_1.lnote.de.4" n="4" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">93</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">Nicht ‘des Tores’, was Schmid 643 bessert. <hi rend="italic">Vgl. Gl</hi> Stadt 1. k. 15; <hi rend="italic">binnan</hi> ⁊ <hi rend="italic">butan porte</hi> steht völlig synonym mit <hi rend="italic">burge</hi> Urk. 1067 bei Davis <hi rend="italic">Reg. Agnorm.</hi> n. 12. 14. [Ein zweites Masc. <hi rend="italic">port</hi> heisst und stammt von <hi rend="italic">porta;</hi> Earle <hi rend="italic">Philol. Engl. tongue</hi> 18]. Komposita von <hi rend="italic">port</hi> ‘Stadt’ <hi rend="italic">s.</hi> Toller: <hi rend="italic">portgeat, -gerefa, -geriht, -mann, -stræt, -wara, -weall,</hi> ferner mittel- und neuengl.: <hi rend="italic">portmarsh, -meadow, -mot, -socn.</hi> — Q denkt mit <hi rend="italic">portus</hi> nicht etwa an ‘Hafen’, er glossiert II As 12 dazu: <hi rend="italic">civitatem.</hi> — <hi rend="italic">S. Gl</hi> Vogt 3. 18</seg><seg type="translation" xml:lang="en" source="#claude">Not ‘of the gate’, a rendering which Schmid 643 corrects. <hi rend="italic">Cf. Gl</hi> Stadt 1. k. 15; <hi rend="italic">binnan</hi> ⁊ <hi rend="italic">butan porte</hi> is used entirely synonymously with <hi rend="italic">burge</hi> in a charter of 1067 in Davis <hi rend="italic">Reg. Agnorm.</hi> n. 12. 14. [A second masc. <hi rend="italic">port</hi> means, and derives from, <hi rend="italic">porta;</hi> Earle <hi rend="italic">Philol. Engl. tongue</hi> 18]. For compounds of <hi rend="italic">port</hi> ‘town’ <hi rend="italic">see</hi> Toller: <hi rend="italic">portgeat, -gerefa, -geriht, -mann, -stræt, -wara, -weall,</hi> and further, in Middle and Modern English: <hi rend="italic">portmarsh, -meadow, -mot, -socn.</hi> — By <hi rend="italic">portus</hi> Q is not thinking, say, of ‘harbour’; on II As 12 he glosses it: <hi rend="italic">civitatem.</hi> — <hi rend="italic">See Gl</hi> Vogt 3. 18</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="IEw_1.lnote.de.5" n="5" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">94</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de">Einen Kaufzeugen (<hi rend="italic">s. d. Gl</hi> 6) fordert II As 12; vielleicht daher weicht hier Q ab</seg><seg type="translation" xml:lang="en" source="#claude">II As 12 requires a witness to the purchase (<hi rend="italic">see</hi> that word in <hi rend="italic">Gl</hi> 6); perhaps that is why Q deviates here</seg></note>
+        <note type="editorNote" subtype="endnote" xml:id="IEw_1.attnote.n.1" n="1" source="#attenborough"><bibl><biblScope unit="page">204</biblScope></bibl><seg type="original" xml:lang="en"><hi rend="italic">i.e</hi>. the reeve in charge of a town (<hi rend="italic">port</hi>). For ‘port’ see Maitland, <hi rend="italic">Domesday Book and Beyond</hi>, p. 195 f. (cf. note 1 to II As. cap. 14; note 2 to II As. cap. 14 § 2).</seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="IEw_1.attnote.fn.5" n="5" source="#attenborough"><bibl><biblScope unit="page">114</biblScope></bibl><label>ceapunge</label><seg type="original" xml:lang="en">Ld.</seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="IEw_1.attnote.fn.6" n="6" source="#attenborough"><bibl><biblScope unit="page">114</biblScope></bibl><label>manna</label><seg type="original" xml:lang="en"><hi rend="italic">man</hi>. B. <hi rend="italic">manna</hi>. Ld.</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

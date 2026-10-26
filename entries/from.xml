@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>from</title>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">from</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, <biblScope unit="volume">2.1</biblScope> (Wörterbuch), <biblScope unit="page">82</biblScope>
+            <ptr type="facsimile" target="https://archive.org/details/diegesetzederang02liebuoft/page/82/mode/2up"/>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <revisionDesc>
+      <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
+      <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry xml:lang="ang">
+        <form type="lemma">
+          <orth>from</orth>
+        </form>
+        <dictScrap type="liebermann"><hi rend="bold">from</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Praeposition"><abbr>prp</abbr></ref> <ref type="abbreviation" target="gram:mitDativ"><abbr>m dt</abbr></ref>:</hi> <ref type="lawCode" target="law:Ine">Ine</ref> <ref type="lawCode" target="law:Rb">Rb</ref> 39. <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:El">El</ref> 11. 13. 49,5. <ref type="lawCode" target="law:Ine">Ine</ref> 13,1. <ref type="lawCode" target="law:IIAs">II As</ref> 22,2; fram <ref type="lawCode" target="law:Ine">Ine</ref> <ref type="lawCode" target="law:Rb">Rb</ref> 39 <ref type="lawCode" target="law:G">G</ref>. <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:El">El</ref> 11 <ref type="lawCode" target="law:G">G</ref>. 49,5. <ref type="lawCode" target="law:Ine">Ine</ref> 39. <ref type="lawCode" target="law:IIAs">II As</ref> 22,2 <ref type="lawCode" target="law:Ot">Ot</ref>. <ref type="lawCode" target="law:IIEg">II Eg</ref> 5. <ref type="lawCode" target="law:ICn">I Cn</ref> 14,2. 16,1. <ref type="lawCode" target="law:IICn">II</ref> 82. <ref type="lawCode" target="law:Pax">Pax</ref>. <ref type="lawCode" target="law:Iudex">Iudex</ref> 2. 7 <hi rend="bold">1</hi>) [<hi rend="italic">Zeit</hi>] ~ .. oð <hi rend="italic">von .. bis</hi> <ref type="lawCode" target="law:IIEg">II Eg</ref> 5 = <ref type="lawCode" target="law:ICn">I Cn</ref> 14,2. 16,1 <hi rend="bold">2</hi>) [<hi rend="italic">Ort</hi>] fare ~ <hi rend="italic">fortzieht von</hi> <ref type="lawCode" target="law:Ine">Ine</ref> 39; nelle ~ <hi rend="italic">nicht fort will von</hi> <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:El">El</ref> 11; aluc ~ <hi rend="italic">reisse fort von</hi> 13; to gemote, ~ gemote <hi rend="italic">zum, vom Gericht</hi> [<hi rend="italic">kommend</hi>] <ref type="lawCode" target="law:IICn">II Cn</ref> 82; ~ geate <hi rend="italic">vom Tore ab</hi> <ref type="lawCode" target="law:Pax">Pax</ref> | <hi rend="italic"><ref type="abbreviation" target="gram:regiertem"><abbr>regiertem</abbr></ref> <ref type="abbreviation" target="gram:Pronomen"><abbr>pron.</abbr></ref> nachstehend:</hi> him ~ gan <hi rend="italic">von ihm sich abwenden, weichen</hi> <ref type="lawCode" target="law:IIAs">II As</ref> 23,2. <ref type="lawCode" target="law:VIAs">VI</ref> 8,3 <hi rend="bold">3</hi>) <hi rend="italic"><ref type="abbreviation" target="gram:ubertragen"><abbr>übertr.</abbr></ref></hi> him ~ do <hi rend="italic">von sich jagt</hi> <ref type="lawCode" target="law:VAs">V</ref> 1; tæce <pb n="83"/>~ him <hi rend="italic">von sich weist</hi> <ref type="lawCode" target="law:IIAs">II</ref> 22,2 | forberen ~ <hi rend="italic">abstehet von</hi> <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:El">El</ref> 49,5 <hi rend="bold">4</hi>) [<hi rend="italic">Reihebeginn</hi>] ~ 7 oð 35 <ref type="lawCode" target="law:Ine">Ine</ref> 13,1 <hi rend="bold">5</hi>) <hi rend="italic">beim Passiv: von, durch</hi> <ref type="lawCode" target="law:Iudex">Iudex</ref> 2. 7</dictScrap>
+        <dictScrap type="senses">
+          <sense n="1">[<hi rend="italic">Zeit</hi>] ~ .. oð <hi rend="italic">von .. bis</hi> <ref type="lawCode" target="law:IIEg">II Eg</ref> 5 = <ref type="lawCode" target="law:ICn">I Cn</ref> 14,2. 16,1</sense>
+          <sense n="2">[<hi rend="italic">Ort</hi>] fare ~ <hi rend="italic">fortzieht von</hi> <ref type="lawCode" target="law:Ine">Ine</ref> 39; nelle ~ <hi rend="italic">nicht fort will von</hi> <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:El">El</ref> 11; aluc ~ <hi rend="italic">reisse fort von</hi> 13; to gemote, ~ gemote <hi rend="italic">zum, vom Gericht</hi> [<hi rend="italic">kommend</hi>] <ref type="lawCode" target="law:IICn">II Cn</ref> 82; ~ geate <hi rend="italic">vom Tore ab</hi> <ref type="lawCode" target="law:Pax">Pax</ref> | <hi rend="italic"><ref type="abbreviation" target="gram:regiertem"><abbr>regiertem</abbr></ref> <ref type="abbreviation" target="gram:Pronomen"><abbr>pron.</abbr></ref> nachstehend:</hi> him ~ gan <hi rend="italic">von ihm sich abwenden, weichen</hi> <ref type="lawCode" target="law:IIAs">II As</ref> 23,2. <ref type="lawCode" target="law:VIAs">VI</ref> 8,3</sense>
+          <sense n="3"><hi rend="italic"><ref type="abbreviation" target="gram:ubertragen"><abbr>übertr.</abbr></ref></hi> him ~ do <hi rend="italic">von sich jagt</hi> <ref type="lawCode" target="law:VAs">V</ref> 1; tæce <pb n="83"/>~ him <hi rend="italic">von sich weist</hi> <ref type="lawCode" target="law:IIAs">II</ref> 22,2 | forberen ~ <hi rend="italic">abstehet von</hi> <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:El">El</ref> 49,5</sense>
+          <sense n="4">[<hi rend="italic">Reihebeginn</hi>] ~ 7 oð 35 <ref type="lawCode" target="law:Ine">Ine</ref> 13,1</sense>
+          <sense n="5"><hi rend="italic">beim Passiv: von, durch</hi> <ref type="lawCode" target="law:Iudex">Iudex</ref> 2. 7</sense>
+        </dictScrap>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/12483">from</ref></xr>
+        <xr type="lawCode"><ref target="clause:Rubrics-Ine_39">Ine Rb 39</ref></xr>
+        <xr type="lawCode"><ref target="clause:Af_El-to-11">Af El 11</ref></xr>
+        <xr type="lawCode"><ref target="clause:Af_El-to-13">Af El 13</ref></xr>
+        <xr type="lawCode"><ref target="clause:Af_El-to-49-5">Af El 49,5</ref></xr>
+        <xr type="lawCode"><ref target="clause:Ine_13-1">Ine 13,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIAs_22-2">II As 22,2</ref></xr>
+        <xr type="lawCode"><ref target="clause:Ine_39">Ine 39</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIEg_5">II Eg 5</ref></xr>
+        <xr type="lawCode"><ref target="clause:ICn_14-2">I Cn 14,2</ref></xr>
+        <xr type="lawCode"><ref target="clause:ICn_16-1">I Cn 16,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IICn_82">II Cn 82</ref></xr>
+        <xr type="lawCode"><ref target="clause:Iudex_2">Iudex 2</ref></xr>
+        <xr type="lawCode"><ref target="clause:Iudex_7">Iudex 7</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIAs_23-2">II As 23,2</ref></xr>
+        <xr type="lawCode"><ref target="clause:VIAs_8-3">VI As 8,3</ref></xr>
+        <xr type="lawCode"><ref target="clause:VAs_Prol-to-1">V As 1</ref></xr>
+      </entry>
+    </body>
+  </text>
+</TEI>

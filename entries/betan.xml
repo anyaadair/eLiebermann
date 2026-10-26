@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>betan</title>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">betan</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, <biblScope unit="volume">2.1</biblScope> (Wörterbuch), <biblScope unit="page">23</biblScope>
+            <ptr type="facsimile" target="https://archive.org/details/diegesetzederang02liebuoft/page/23/mode/2up"/>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <revisionDesc>
+      <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
+      <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
+      <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry xml:lang="ang">
+        <form type="lemma">
+          <orth>betan</orth>
+        </form>
+        <dictScrap type="liebermann"><hi rend="bold">betan</hi> <ref type="lawCode" target="law:Ine">Ine</ref> 45. <ref type="lawCode" target="law:IIEm">II Em</ref> 7. <ref type="lawCode" target="law:VIIIAtr">VIII Atr</ref> 25. 40. <ref type="lawCode" target="law:Cn1020">Cn 1020</ref>,14. <ref type="lawCode" target="law:I">I</ref> 18,1. <ref type="lawCode" target="law:Ger">Ger</ref> 13; <hi rend="italic"><ref type="abbreviation" target="gram:flectiert"><abbr>flect</abbr></ref>:</hi> ~nne <ref type="lawCode" target="law:Iudex">Iudex</ref> 2 | <hi rend="italic"><ref type="abbreviation" target="gram:Optativ"><abbr>op</abbr></ref></hi> 3: bete <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:El">El</ref> 18. <ref type="lawCode" target="law:Af">Af</ref> 1,8. <ref type="lawCode" target="law:Ine">Ine</ref> 5. 14. <ref type="lawCode" target="law:EGu">EGu</ref> 3. <ref type="lawCode" target="law:IIEw">II Ew</ref> 2. <ref type="lawCode" target="law:IIAs">II As</ref> 5. 22,1. <ref type="lawCode" target="law:IEm">I Em</ref> 5. <ref type="lawCode" target="law:IAtr">I Atr</ref> 1,5. <ref type="lawCode" target="law:IIAtr">II</ref> 5,2. <ref type="lawCode" target="law:VIAtr">VI</ref> 27. <ref type="lawCode" target="law:VIIIAtr">VIII</ref> 5,1. <ref type="lawCode" target="law:ICn">I Cn</ref> 3. <ref type="lawCode" target="law:IICn">II</ref> 15a. <ref type="lawCode" target="law:Northu">Northu</ref> 11. 19. <ref type="lawCode" target="law:Ordal">Ordal</ref> 4,2. <ref type="lawCode" target="law:Wif">Wif</ref> 7. <ref type="lawCode" target="law:Had">Had</ref> 9; bæte <ref type="lawCode" target="law:IICn">II Cn</ref> 61,1 <ref type="lawCode" target="law:Ld">Ld</ref> | <hi rend="italic"><ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref></hi> 1: ~ <ref type="lawCode" target="law:VAtr">V Atr</ref> 1 <ref type="lawCode" target="law:G2">G 2</ref>. <ref type="lawCode" target="law:VIAtr">VI</ref> 1. <ref type="lawCode" target="law:XAtr">X</ref> 1 | 3: beten <ref type="lawCode" target="law:EGu">EGu</ref> 4,1; ~ man <ref type="lawCode" target="law:VIIIAtr">VIII Atr</ref> 4 (bete man <ref type="lawCode" target="law:G">G</ref>). <ref type="lawCode" target="law:Northu">Northu</ref> 10,1. <ref type="lawCode" target="law:Hn">Hn</ref> 90,11a | <hi rend="italic"><ref type="abbreviation" target="gram:Praeteritum"><abbr>ptt</abbr></ref></hi> 3 (<hi rend="italic"><ref type="abbreviation" target="gram:Optativ"><abbr>op</abbr></ref>?</hi>): bettan Geþyncðo 8 <ref type="lawCode" target="law:H">H</ref>; ~ <ref type="lawCode" target="law:D">D</ref>. — <hi rend="bold">1</hi>) <hi rend="italic">ausbessern, in stand halten</hi> Godes hus <ref type="lawCode" target="law:IEm">I Em</ref> 5 | <hi rend="italic">repariren</hi> dicsceard <ref type="lawCode" target="law:Ger">Ger</ref> 13 | <hi rend="italic">schüren</hi> fyr <ref type="lawCode" target="law:Ordal">Ordal</ref> 4,2 <hi rend="bold">2</hi>) <hi rend="italic">zur Ordnung bringen, strafen, büssen lassen</hi> Geþyncðo 8; gyltas fram (<hi rend="italic">durch Macht der</hi>) deman <ref type="lawCode" target="law:Iudex">Iudex</ref> 2 <hi rend="bold">3</hi>) <hi rend="italic">kirchlich büssen</hi> <ref type="lawCode" target="law:EGu">EGu</ref> 3. <ref type="lawCode" target="law:IIAs">II As</ref> 26,1. <ref type="lawCode" target="law:VAtr">V Atr</ref> 1 (= <ref type="lawCode" target="law:VIAtr">VI</ref> 1 = X 1). 5 (= VI 3a). <ref type="lawCode" target="law:VIIIAtr">VIII</ref> 40. <ref type="lawCode" target="law:Cn1020">Cn 1020</ref>,14. <ref type="lawCode" target="law:IICn">II Cn</ref> 4,1 <ref type="lawCode" target="law:MsA">A</ref> (geb~ <ref type="lawCode" target="law:G">G</ref> <ref type="lawCode" target="law:B">B</ref>). <ref type="lawCode" target="law:Northu">Northu</ref> 61,2; for Gode 10,1; wið God 11 <hi rend="bold">4</hi>) <hi rend="italic">gutmachen, ausgleichen, entgelten:</hi> æwerdlan <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:El">El</ref> 18; bryce <ref type="lawCode" target="law:Af">Af</ref> 1,8. <ref type="lawCode" target="law:Ine">Ine</ref> 45; be munde mid <hi rend="italic">gemäss Schutzrecht durch</hi> <ref type="lawCode" target="law:VIIIAtr">VIII Atr</ref> 5,1; into (<hi rend="italic">an</hi>) circan 4. 4,1 = <ref type="lawCode" target="law:ICn">I Cn</ref> 3. 3a = <ref type="lawCode" target="law:Northu">Northu</ref> 19; grið mid (<hi rend="italic">durch Zahlung von</hi>) <ref type="lawCode" target="law:IIIAtr">III Atr</ref> 1,2; misdæda <ref type="lawCode" target="law:Af">Af</ref> 14; oferhyrnesse <ref type="lawCode" target="law:IIEw">II Ew</ref> 2. <ref type="lawCode" target="law:IIAs">II As</ref> 22,1; bete <pb n="24"/>þæt wið (<hi rend="italic">an</hi>) cyning mid 120 <ref type="abbreviation" target="gram:Schilling"><abbr>sc.</abbr></ref> <ref type="lawCode" target="law:IICn">II Cn</ref> 44,1 <ref type="lawCode" target="law:MsA">A</ref>; gebete <ref type="lawCode" target="law:G">G</ref> <ref type="lawCode" target="law:B">B</ref>; þone stæpe mid punde <ref type="lawCode" target="law:Had">Had</ref> 2 <hi rend="bold">5</hi>) <hi rend="italic">entrichten</hi> fæhðbote <ref type="lawCode" target="law:VIIIAtr">VIII Atr</ref> 25 = <ref type="lawCode" target="law:ICn">I Cn</ref> 5,2d <hi rend="bold">6</hi>) <hi rend="italic">zahlen</hi> <hi rend="bold">a</hi>) <hi rend="italic">Busse dem Verletzten</hi> <ref type="lawCode" target="law:Ine">Ine</ref> 5; were <hi rend="italic">durch des Erschlagenen Wer</hi> <ref type="lawCode" target="law:IIAtr">II Atr</ref> 5,2; <hi rend="italic">dem Verletzten</hi> (be <hi rend="italic">gemäss, in Höhe von</hi>) <ref type="lawCode" target="law:Had">Had</ref> 9; wið (<hi rend="italic">an</hi>) mægðe <ref type="lawCode" target="law:IIEm">II Em</ref> 7 <hi rend="bold">b</hi>) <hi rend="italic">Strafgeld dem Gerichtsherrn</hi> <ref type="lawCode" target="law:Ine">Ine</ref> 14. <ref type="lawCode" target="law:IICn">II Cn</ref> 15a. 61,1; be wite <hi rend="italic">durch Strafbetrag</hi> <ref type="lawCode" target="law:EGu">EGu</ref> 4,1; be lahslite <ref type="lawCode" target="law:Northu">Northu</ref> 20; 30 <ref type="abbreviation" target="gram:Schilling"><abbr>sc.</abbr></ref> <ref type="lawCode" target="law:IIEw">II Ew</ref> 1,3; be [dome] <hi rend="italic">gemäss Gesetz</hi> <ref type="lawCode" target="law:IIAs">II As</ref> 5 <hi rend="bold">c</hi>) <hi rend="italic">Busse und Strafe</hi> <ref type="lawCode" target="law:Hn">Hn</ref> 90,11a; of hwam <hi rend="italic">woraus, von welcher Habe</hi> <ref type="lawCode" target="law:Wif">Wif</ref> 7; teonde (<hi rend="italic">Verletzten</hi>) twygylde ⁊ hlaforde (<hi rend="italic">Richter</hi>) were <ref type="lawCode" target="law:IAtr">I Atr</ref> 1,5. — <hi rend="italic">Für</hi> gebetan <ref type="lawCode" target="law:IICn">II Cn</ref> <ref type="lawCode" target="law:MsA">A</ref>: 4,1. 44,1. <hi rend="italic"><ref type="abbreviation" target="gram:ersetztDurch"><abbr>Ersetzt durch</abbr></ref></hi> gebetan <hi rend="italic"><ref type="abbreviation" target="gram:sieheDort"><abbr>s. d.</abbr></ref></hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> dædb~, forb~, geb~</dictScrap>
+        <dictScrap type="senses">
+          <sense n="1"><hi rend="italic">ausbessern, in stand halten</hi> Godes hus <ref type="lawCode" target="law:IEm">I Em</ref> 5 | <hi rend="italic">repariren</hi> dicsceard <ref type="lawCode" target="law:Ger">Ger</ref> 13 | <hi rend="italic">schüren</hi> fyr <ref type="lawCode" target="law:Ordal">Ordal</ref> 4,2</sense>
+          <sense n="2"><hi rend="italic">zur Ordnung bringen, strafen, büssen lassen</hi> Geþyncðo 8; gyltas fram (<hi rend="italic">durch Macht der</hi>) deman <ref type="lawCode" target="law:Iudex">Iudex</ref> 2</sense>
+          <sense n="3"><hi rend="italic">kirchlich büssen</hi> <ref type="lawCode" target="law:EGu">EGu</ref> 3. <ref type="lawCode" target="law:IIAs">II As</ref> 26,1. <ref type="lawCode" target="law:VAtr">V Atr</ref> 1 (= <ref type="lawCode" target="law:VIAtr">VI</ref> 1 = X 1). 5 (= VI 3a). <ref type="lawCode" target="law:VIIIAtr">VIII</ref> 40. <ref type="lawCode" target="law:Cn1020">Cn 1020</ref>,14. <ref type="lawCode" target="law:IICn">II Cn</ref> 4,1 <ref type="lawCode" target="law:MsA">A</ref> (geb~ <ref type="lawCode" target="law:G">G</ref> <ref type="lawCode" target="law:B">B</ref>). <ref type="lawCode" target="law:Northu">Northu</ref> 61,2; for Gode 10,1; wið God 11</sense>
+          <sense n="4"><hi rend="italic">gutmachen, ausgleichen, entgelten:</hi> æwerdlan <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:El">El</ref> 18; bryce <ref type="lawCode" target="law:Af">Af</ref> 1,8. <ref type="lawCode" target="law:Ine">Ine</ref> 45; be munde mid <hi rend="italic">gemäss Schutzrecht durch</hi> <ref type="lawCode" target="law:VIIIAtr">VIII Atr</ref> 5,1; into (<hi rend="italic">an</hi>) circan 4. 4,1 = <ref type="lawCode" target="law:ICn">I Cn</ref> 3. 3a = <ref type="lawCode" target="law:Northu">Northu</ref> 19; grið mid (<hi rend="italic">durch Zahlung von</hi>) <ref type="lawCode" target="law:IIIAtr">III Atr</ref> 1,2; misdæda <ref type="lawCode" target="law:Af">Af</ref> 14; oferhyrnesse <ref type="lawCode" target="law:IIEw">II Ew</ref> 2. <ref type="lawCode" target="law:IIAs">II As</ref> 22,1; bete <pb n="24"/>þæt wið (<hi rend="italic">an</hi>) cyning mid 120 <ref type="abbreviation" target="gram:Schilling"><abbr>sc.</abbr></ref> <ref type="lawCode" target="law:IICn">II Cn</ref> 44,1 <ref type="lawCode" target="law:MsA">A</ref>; gebete <ref type="lawCode" target="law:G">G</ref> <ref type="lawCode" target="law:B">B</ref>; þone stæpe mid punde <ref type="lawCode" target="law:Had">Had</ref> 2</sense>
+          <sense n="5"><hi rend="italic">entrichten</hi> fæhðbote <ref type="lawCode" target="law:VIIIAtr">VIII Atr</ref> 25 = <ref type="lawCode" target="law:ICn">I Cn</ref> 5,2d</sense>
+          <sense n="6"><hi rend="italic">zahlen</hi> <hi rend="bold">a</hi>) <hi rend="italic">Busse dem Verletzten</hi> <ref type="lawCode" target="law:Ine">Ine</ref> 5; were <hi rend="italic">durch des Erschlagenen Wer</hi> <ref type="lawCode" target="law:IIAtr">II Atr</ref> 5,2; <hi rend="italic">dem Verletzten</hi> (be <hi rend="italic">gemäss, in Höhe von</hi>) <ref type="lawCode" target="law:Had">Had</ref> 9; wið (<hi rend="italic">an</hi>) mægðe <ref type="lawCode" target="law:IIEm">II Em</ref> 7 <hi rend="bold">b</hi>) <hi rend="italic">Strafgeld dem Gerichtsherrn</hi> <ref type="lawCode" target="law:Ine">Ine</ref> 14. <ref type="lawCode" target="law:IICn">II Cn</ref> 15a. 61,1; be wite <hi rend="italic">durch Strafbetrag</hi> <ref type="lawCode" target="law:EGu">EGu</ref> 4,1; be lahslite <ref type="lawCode" target="law:Northu">Northu</ref> 20; 30 <ref type="abbreviation" target="gram:Schilling"><abbr>sc.</abbr></ref> <ref type="lawCode" target="law:IIEw">II Ew</ref> 1,3; be [dome] <hi rend="italic">gemäss Gesetz</hi> <ref type="lawCode" target="law:IIAs">II As</ref> 5 <hi rend="bold">c</hi>) <hi rend="italic">Busse und Strafe</hi> <ref type="lawCode" target="law:Hn">Hn</ref> 90,11a; of hwam <hi rend="italic">woraus, von welcher Habe</hi> <ref type="lawCode" target="law:Wif">Wif</ref> 7; teonde (<hi rend="italic">Verletzten</hi>) twygylde ⁊ hlaforde (<hi rend="italic">Richter</hi>) were <ref type="lawCode" target="law:IAtr">I Atr</ref> 1,5. — <hi rend="italic">Für</hi> gebetan <ref type="lawCode" target="law:IICn">II Cn</ref> <ref type="lawCode" target="law:MsA">A</ref>: 4,1. 44,1. <hi rend="italic"><ref type="abbreviation" target="gram:ersetztDurch"><abbr>Ersetzt durch</abbr></ref></hi> gebetan <hi rend="italic"><ref type="abbreviation" target="gram:sieheDort"><abbr>s. d.</abbr></ref></hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> dædb~, forb~, geb~</sense>
+        </dictScrap>
+        <xr type="see"><ref target="entry:gebetan">gebetan</ref></xr>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/4034">bétan</ref></xr>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/40206">bétan (Supplement)</ref></xr>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/61486">bétan (Supplement)</ref></xr>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/3786">beótian (v.)</ref></xr>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/40008">beótian (Supplement)</ref></xr>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/61462">beótian (Supplement)</ref></xr>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/39515">batian</ref></xr>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/40009">beótian (v.)</ref></xr>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/40758">bótian</ref></xr>
+        <xr type="lawCode"><ref target="clause:Ine_45">Ine 45</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIEm_7">II Em 7</ref></xr>
+        <xr type="lawCode"><ref target="clause:VIIIAtr_25">VIII Atr 25</ref></xr>
+        <xr type="lawCode"><ref target="clause:VIIIAtr_40">VIII Atr 40</ref></xr>
+        <xr type="lawCode"><ref target="clause:Cn1020_14">Cn 1020,14</ref></xr>
+        <xr type="lawCode"><ref target="clause:Ger_13">Ger 13</ref></xr>
+        <xr type="lawCode"><ref target="clause:Iudex_2">Iudex 2</ref></xr>
+        <xr type="lawCode"><ref target="clause:Af_El-to-18">Af El 18</ref></xr>
+        <xr type="lawCode"><ref target="clause:Af_1-8">Af 1,8</ref></xr>
+        <xr type="lawCode"><ref target="clause:Ine_5">Ine 5</ref></xr>
+        <xr type="lawCode"><ref target="clause:Ine_14">Ine 14</ref></xr>
+        <xr type="lawCode"><ref target="clause:EGu_3">EGu 3</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIEw_2">II Ew 2</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIAs_5">II As 5</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIAs_22-1">II As 22,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IEm_5">I Em 5</ref></xr>
+        <xr type="lawCode"><ref target="clause:IAtr_1-5">I Atr 1,5</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIAtr_5-2">II Atr 5,2</ref></xr>
+        <xr type="lawCode"><ref target="clause:VIAtr_27">VI Atr 27</ref></xr>
+        <xr type="lawCode"><ref target="clause:VIIIAtr_5-1">VIII Atr 5,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:ICn_3">I Cn 3</ref></xr>
+        <xr type="lawCode"><ref target="clause:IICn_15a">II Cn 15a</ref></xr>
+        <xr type="lawCode"><ref target="clause:Northu_11">Northu 11</ref></xr>
+        <xr type="lawCode"><ref target="clause:Northu_19">Northu 19</ref></xr>
+        <xr type="lawCode"><ref target="clause:Ordal_4-2">Ordal 4,2</ref></xr>
+        <xr type="lawCode"><ref target="clause:Wif_7">Wif 7</ref></xr>
+        <xr type="lawCode"><ref target="clause:Had_9">Had 9</ref></xr>
+        <xr type="lawCode"><ref target="clause:IICn_61-1">II Cn 61,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:VAtr_1">V Atr 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:VIAtr_1">VI Atr 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:XAtr_1">X Atr 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:EGu_4-1">EGu 4,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:VIIIAtr_4">VIII Atr 4</ref></xr>
+        <xr type="lawCode"><ref target="clause:Northu_10-1">Northu 10,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:Hn_90-11a">Hn 90,11a</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIAs_26-1">II As 26,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IICn_4-1">II Cn 4,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:Northu_61-2">Northu 61,2</ref></xr>
+        <xr type="lawCode"><ref target="clause:ICn_3a">I Cn 3a</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIIAtr_1-2">III Atr 1,2</ref></xr>
+        <xr type="lawCode"><ref target="clause:Af_14">Af 14</ref></xr>
+        <xr type="lawCode"><ref target="clause:IICn_44-1">II Cn 44,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:Had_2">Had 2</ref></xr>
+        <xr type="lawCode"><ref target="clause:ICn_5-2d">I Cn 5,2d</ref></xr>
+        <xr type="lawCode"><ref target="clause:Northu_20">Northu 20</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIEw_1-3">II Ew 1,3</ref></xr>
+      </entry>
+    </body>
+  </text>
+</TEI>

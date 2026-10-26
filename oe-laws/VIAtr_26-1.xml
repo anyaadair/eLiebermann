@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="VIAtr_26-1">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>VI Atr 26.1</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Cross-references to other clauses</resp><name ref="#kennedy">Kennedy</name></respStmt>
+        <respStmt><resp>Cross-references to other clauses</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Cross-references to other clauses</resp><name ref="#whitelock">Whitelock</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">VIAtr_26-1</idno>
+        <idno type="citation">VI Atr 26.1</idno>
+        <idno type="lawCode">VI Atr</idno>
+        <idno type="lawCodeAnchor">VIAtr</idno>
+        <idno type="clause">26.1</idno>
+        <idno type="citationKey">VIAtr 26.1</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>VI Æthelred (Enham)</title> <note type="reign">Æthelred II, r. 978–1016</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">254</biblScope></bibl>
+          <bibl xml:id="robertson" type="edition">A. J. Robertson, <title>The Laws of the Kings of England from Edmund to Henry I</title> (Cambridge: Cambridge University Press, 1925), p. <biblScope unit="page">98</biblScope></bibl>
+          <bibl xml:id="rabin-doml" type="edition">Andrew Rabin, ed. and trans., <title>Old English Legal Writings: Wulfstan</title>, Dumbarton Oaks Medieval Library (Cambridge, MA: Harvard University Press, 2020), p. <biblScope unit="page">170</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="kennedy" type="study">A. G. Kennedy, ‘Cnut’s Law Code of 1018’, <title>Anglo-Saxon England</title> 11 (1983), 57–81</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="whitelock" type="study">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-k" rend="bold"><abbr>K</abbr> <note type="manuscript">London, British Library, Cotton Claudius A.iii</note></witness>
+          <witness xml:id="wit-d-incomplete"><abbr>D (incomplete)</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 201</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 246">16 May 1008–13 May 1011</date><date source="#robertson #wormald-mel" n="|MEL pp. 332–5">1008</date><placeName>Enham</placeName><note type="promulgation">16 May 1008–13 May 1011 (Liebermann, I p. 246); 1008 (Robertson; Wormald, MEL pp. 332–5); Enham</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Widowhood</term><term>Ecclesiastical directives</term><term>Marriage</term></keywords>
+        <keywords n="people"><term>Widow</term><term>Women</term><term>Husband</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 1265 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 254.</change>
+      <change when="2026-10" type="checked">Liebermann’s text of MS K added from Gesetze I, p. 254.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="26.1">
+        <head><ref type="lawCode" target="law:VIAtr">VI Atr</ref> 26.1</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="26.1" corresp="#wit-k"><pb n="254" ed="#liebermann"/>⁊ sitte ælc XII monað werleas; ceose syþþan þ<hi rend="italic">æt</hi> heo sylf wille.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="26.1" corresp="#wit-d-incomplete"><pb n="254" ed="#liebermann"/>And sitte ælc XII monað wereleas; ⁊ ceose siððan þ<hi rend="italic">æt</hi> heo silf wille.</ab>
+        <ab type="editionText" xml:lang="ang" source="#robertson" n="26.1" corresp="#wit-k"><pb n="98" ed="#robertson"/>⁊ sitte ælc XII monað werleas; ceose syþþan þæt heo sylf wille.</ab>
+        <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-k"><pb n="170" ed="#rabin-doml"/>And sitte ælc XII monað werleas; ceose syþþan þæt heo sylf wille.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="255" ed="#liebermann"/>Und sitze jede ein Jahr lang gattenlos; wähle sie hernach, was sie selbst will.</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">And let each remain without a husband for twelve months; afterwards let her choose what she herself wishes.</ab>
+        <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-k"><pb n="99" ed="#robertson"/>And each of them shall remain without a husband for a year, after which she may decide as she herself desires.</ab>
+        <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-k"><pb n="171" ed="#rabin-doml"/>And each of them is to remain husbandless for twelve months; then she may choose as she pleases.</ab>
+        <note type="comparison" source="#liebermann" n="255"><ref target="clause:VAtr_21-1">V Atr 21.1</ref></note>
+        <note type="comparisonPrinted" source="#liebermann">ebd. 21, 1</note>
+        <note type="comparedBy" source="#liebermann"><ref target="clause:IICn_73">II Cn 73</ref>; <ref target="clause:Rect_1">Rect 1</ref></note>
+        <note type="comparedBy" source="#kennedy" n="59"><ref target="clause:Cn-1018_part-049">Cn 1018 16–16.1</ref></note>
+        <note type="comparedBy" source="#wormald-mel" n="359"><ref target="clause:IICn_73">II Cn 73</ref></note>
+        <note type="comparedBy" source="#whitelock" n="472"><ref target="clause:IICn_73">II Cn 73</ref></note>
+        <note type="comparedBy" source="#kennedy" n="60"><ref target="clause:IICn_73">II Cn 73</ref></note>
+      </div>
+    </body>
+  </text>
+</TEI>

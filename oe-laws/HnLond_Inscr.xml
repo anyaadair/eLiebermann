@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="HnLond_Inscr">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Hn Lond Inscr.</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">HnLond_Inscr</idno>
+        <idno type="citation">Hn Lond Inscr.</idno>
+        <idno type="lawCode">Hn Lond</idno>
+        <idno type="lawCodeAnchor">HnLond</idno>
+        <idno type="clause">Inscr.</idno>
+        <idno type="citationKey">HnLond inscr.</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Henry I: London Charter</title> <note type="reign">Henry I, r. 1100–1135</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903)</bibl>
+          <bibl xml:id="robertson" type="edition">A. J. Robertson, The Laws of the Kings of England from Edmund to Henry I (Cambridge: Cambridge University Press, 1925), p. <biblScope unit="page">288</biblScope></bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-rs"><abbr>Rs</abbr> <note type="manuscript">Manchester, John Rylands Library, MS Latin 155</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 524">1115–33, probably 1131</date><date source="#wormald-mel" n="MEL p. 401">very late in Henry I's reign</date><placeName source="#robertson">Westminster</placeName><note type="promulgation">1115–33, probably 1131 (Liebermann, I p. 524); very late in Henry I's reign (Wormald, MEL p. 401); Westminster (Robertson)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 2529 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="Inscr.">
+        <head><ref type="lawCode" target="law:HnLond">Hn Lond</ref> Inscr.</head>
+        <ab type="editionText" xml:lang="la" source="#robertson" n="Inscr." corresp="#wit-rs"><pb n="288" ed="#robertson"/>Item epistola eiusdem omnibus fidelibus suis [de libertate civitatis Lond.].</ab>
+        <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-rs"><pb n="289" ed="#robertson"/>Letter of the same to all his subjects concerning the freedom of the city of London.</ab>
+        <note type="editorial">Added October 2026 from Robertson pp. 288–289 (text and translation); Liebermann’s text (K–M) not yet added; F: corrected against Liebermann, Gesetze I (date in the running heads); Wormald, Making of English Law I, October 2026 (was “1115–33, probably 1131; Westminster (Robertson)”, now “1115–33, probably 1131 (Liebermann); very late in Henry I's reign (Wormald); Westminster (Robertson)”); F: corrected against Liebermann, Gesetze I (date at the head of the text); Wormald, Making of English Law I; Whitelock, English Historical Documents I, October 2026 (was “1115–33, probably 1131 (Liebermann); very late in Henry I's reign (Wormald); Westminster (Robertson)”, now “1115–33, probably 1131 (Liebermann, I p. 524); very late in Henry I's reign (Wormald, MEL p. 401); Westminster (Robertson)”); V: page of the modern editor’s text / translation, checked against Robertson (translation on the facing page), October 2026 (e.g. was “288”, now “288 / 289”; 20 rows of Hn Lond)</note>
+      </div>
+    </body>
+  </text>
+</TEI>

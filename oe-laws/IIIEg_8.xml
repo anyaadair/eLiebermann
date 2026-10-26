@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IIIEg_8">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>III Eg 8</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Cross-references to other clauses</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Robertson’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">IIIEg_8</idno>
+        <idno type="citation">III Eg 8</idno>
+        <idno type="lawCode">III Eg</idno>
+        <idno type="lawCodeAnchor">IIIEg</idno>
+        <idno type="clause">8</idno>
+        <idno type="citationKey">IIIEg 8</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>III Edgar (Andover)</title> <note type="reign">Edgar, r. 957/9–975</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">204</biblScope></bibl>
+          <bibl xml:id="robertson" type="edition">A. J. Robertson, <title>The Laws of the Kings of England from Edmund to Henry I</title> (Cambridge: Cambridge University Press, 1925), p. <biblScope unit="page">28</biblScope></bibl>
+          <bibl xml:id="rabin-doml" type="edition">Andrew Rabin, ed. and trans., <title>Old English Legal Writings: Wulfstan</title>, Dumbarton Oaks Medieval Library (Cambridge, MA: Harvard University Press, 2020), p. <biblScope unit="page">358</biblScope></bibl>
+          <bibl xml:id="whitelock" type="translation">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007), p. <biblScope unit="page">437</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-d" rend="bold"><abbr>D</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 201</note></witness>
+          <witness xml:id="wit-g-a"><abbr>G(A)</abbr> <note type="manuscript">London, British Library, Cotton Nero A.i</note></witness>
+          <witness xml:id="wit-a"><abbr>A</abbr> <note type="manuscript">London, British Library, Harley 55</note></witness>
+          <witness xml:id="wit-q"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note></witness>
+          <witness xml:id="wit-ld"><abbr>Ld</abbr> <note type="manuscript">William Lambarde, Archaionomia (London, 1568) – printed from manuscripts now lost</note></witness>
+          <witness xml:id="wit-so"><abbr>So</abbr> <note type="manuscript">William Somner's transcript of Cotton Otho B.xi (made before the fire)</note></witness>
+          <witness xml:id="wit-g2"><abbr>G2</abbr> <note type="manuscript">London, British Library, Cotton Nero A.i, second text (another hand, c. 1060)</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 200">959–c.962</date><date source="#robertson">after IV Eg</date><date source="#whitelock" n="EHD p. 434">959–63</date><placeName>Andover</placeName><note type="promulgation">959–c.962 (Liebermann, I p. 200); after IV Eg (Robertson); 959–63 (Whitelock, EHD p. 434); Andover</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Coinage</term></keywords>
+        <keywords n="locations"><term>Kingdoms</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 970 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 204.</change>
+      <change when="2026-10" type="checked">Liebermann’s text of MS D added from Gesetze I, p. 204.</change>
+      <change when="2026-10" type="checked">Liebermann’s German translation corrected against Gesetze I, p. 204: “(Von Münzen und Maassen. Ld) Und es gehe Eine Münze über des Königs ganzes Gebiet, und die weise niemand zurück;” → “(Von Münzen und Maassen. Ld) Und es gehe Eine Münze über des Königs ganzes Gebiet, und die weise niemand zurück; (expanded letters in italics: Ld)”.</change>
+      <change when="2026-10" type="checked">The modern editor’s text corrected against Robertson, p. 28: “[Ld]” → “∅”.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="8">
+        <head><ref type="lawCode" target="law:IIIEg">III Eg</ref> 8</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="8" corresp="#wit-g-a"><ptr type="liebermannNote" n="†" target="#IIIEg_8.lnote.oe.dagger"/><pb n="204" ed="#liebermann"/>⁊<ptr type="liebermannNote" n="1" target="#IIIEg_8.lnote.oe.1"/> ga an<ptr type="liebermannNote" n="24" target="#IIIEg_8.lnote.oe.24"/> mynet ofer ealne þæs cynges anweald<ptr type="liebermannNote" n="16" target="#IIIEg_8.lnote.oe.16"/>, ⁊ þane nan man ne forsace;</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="8" corresp="#wit-a"><pb n="204" ed="#liebermann"/>⁊ gange án mynet ofer ealne ðæs cynges anweald, ⁊ þæne nan man ne forsace.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="8" corresp="#wit-d"><pb n="204" ed="#liebermann"/>⁊ gange án mynet ofer ealne þæs cyninges anweald, ⁊ þone nan man ne forsace.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="8" corresp="#wit-g2"><pb n="205" ed="#liebermann"/>⁊ gange an mynet ofer ealne þæs cynges anweald, ⁊ þæne nan man ne forsace.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="8" corresp="#wit-q"><pb n="205" ed="#liebermann"/>Et sit una moneta per totum regis imperium, et nemo sonet eam;</ab>
+        <ab type="editionText" xml:lang="ang" source="#robertson" n="8" corresp="#wit-d"><pb n="28" ed="#robertson"/>[Be mynetum ⁊ gemettum.] ⁊ gange<ptr type="editorNote" n="1" target="#missing"/> án mynet ofer ealne þæs cyninges anweald, ⁊ þone nan man ne forsace.</ab>
+        <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-g-a"><pb n="358" ed="#rabin-doml"/>And ga an mynet ofer ealne þæs cynges anweald, and þane nan man ne forsace.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="205" ed="#liebermann"/>(Von Münzen und Maassen. <hi rend="italic">Ld</hi>) Und es gehe Eine<ptr type="liebermannNote" n="1" target="#IIIEg_8.lnote.de.1"/> Münze über des Königs ganzes Gebiet, und die<ptr type="liebermannNote" n="2" target="#IIIEg_8.lnote.de.2"/> weise niemand zurück;</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">(Of coins and measures. Ld) And let one coinage be current throughout all the king's dominion, and let no one refuse it;</ab>
+        <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-d"><ptr type="editorNote" n="1" target="#IIIEg_8.robnote.n.1"/><pb n="29" ed="#robertson"/>And one coinage<ptr type="editorNote" n="2" target="#IIIEg_8.robnote.n.2"/> shall be current throughout all the king's realm, and no-one shall refuse it.</ab>
+        <ab type="translation" xml:lang="en" source="#whitelock"><pb n="437" ed="#whitelock"/>And one coinage is to be current throughout all the king’s dominion, and no man is to refuse it;</ab>
+        <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-g-a"><pb n="359" ed="#rabin-doml"/>And there is to be one coinage throughout the king’s whole realm and no one may refuse it.</ab>
+        <note type="comparison" source="#liebermann" n="205"><ref target="clause:IIAs_14">II As 14</ref></note>
+        <note type="comparisonPrinted" source="#liebermann">Vgl. II As. 14</note>
+        <note type="comparedBy" source="#liebermann"><ref target="clause:IVAtr_6">IV Atr 6</ref>; <ref target="clause:VIAtr_32-1">VI Atr 32.1</ref>; <ref target="clause:IICn_8">II Cn 8</ref></note>
+        <note type="comparison" source="#wormald-mel" n="315"><label>compare</label> <ref target="clause:IIEm_Prol-to-1">II Em Prol.1</ref> <quote>III 8 with II Em Pr.:1</quote></note>
+        <note type="comparison" source="#wormald-mel" n="316"><label>reinforces</label> <ref target="clause:IIAs_14">II As 14</ref> <quote>he reinforced Æthelstan's demand for a single currency throughout his realm with uniform measures and a fixed price for wool</quote></note>
+        <note type="comparedBy" source="#wormald-mel" n="344"><ref target="clause:VIAtr_32-1">VI Atr 32.1–2</ref></note>
+        <note type="comparedBy" source="#wormald-mel" n="357"><ref target="clause:IICn_8">II Cn 8</ref></note>
+        <note type="comparedBy" source="#whitelock" n="463"><ref target="clause:IICn_8">II Cn 8</ref></note>
+        <note type="editorial">Liebermann compares II As 14.; AZ: added from Rabin p. 358 / 359, October 2026 (Rabin’s note to the translation)</note>
+        <note type="textual" source="#rabin-doml">ga: gange ADG2</note>
+        <note type="translator" source="#rabin-doml">8–8.3: Likely an addition by Wulfstan.</note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIIEg_8.lnote.oe.dagger" n="†" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">204</biblScope></bibl><seg type="original" xml:lang="de">Be mynetum ⁊ gemettum <hi rend="italic">Rubrik Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">Be mynetum ⁊ gemettum rubric Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIIEg_8.lnote.oe.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">204</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIIEg_8.lnote.oe.24" n="24" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">204</biblScope></bibl><seg type="original" xml:lang="de">ane <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">ane Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIIEg_8.lnote.oe.16" n="16" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">204</biblScope></bibl><seg type="original" xml:lang="de">-de <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">-de Ld</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="IIIEg_8.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">137</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">Aus 8 und 8, 1 floss wahrscheinlich IV Atr 6 = VI 32, 1f. = II Cn 8f. <hi rend="italic">Vgl. Gl</hi> Münze 3. 10; Münzfälschung 2c</seg><seg type="translation" xml:lang="en" source="#claude">IV Atr 6 = VI 32, 1f. = II Cn 8f. probably derived from 8 and 8, 1. <hi rend="italic">Cf. Gl</hi> Münze 3. 10; Münzfälschung 2c</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="IIIEg_8.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">137</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">Dies wiederholen z. T. IV Atr 6. II Cn 8, wo Q <hi rend="italic">repudiare</hi> überträgt. Also ist auch hier sein <hi rend="italic">sonare</hi> nicht von <hi rend="italic">sonus</hi> ‘Ton’ abzuleiten, sondern mit <hi rend="italic">absoniare</hi>, das er Swer 1 für <hi rend="italic">ascunian</hi> setzt, zu verbinden. Auch im sonstigen Normanno-Latein (<hi rend="italic">Somma de leg. Norm</hi>. ed. 1523, c. 123) heisst <hi rend="italic">sconare</hi> ‘verwerfen’.—Auf Nichtannahme der <hi rend="italic">novi denarii</hi> setzt Geldstrafe <hi rend="italic">Capit. Francfurt</hi>. a. 794 ed. Boretius (<hi rend="italic">Mon. Germ</hi>.) I 74, 5</seg><seg type="translation" xml:lang="en" source="#claude">This is repeated in part by IV Atr 6. II Cn 8, where Q renders it as <hi rend="italic">repudiare</hi>. So here too his <hi rend="italic">sonare</hi> is not to be derived from <hi rend="italic">sonus</hi> ‘sound’, but to be connected with <hi rend="italic">absoniare</hi>, which he puts for <hi rend="italic">ascunian</hi> in Swer 1. In other Norman Latin too (<hi rend="italic">Somma de leg. Norm</hi>. ed. 1523, c. 123) <hi rend="italic">sconare</hi> means ‘reject’. — A money fine for refusing to accept the <hi rend="italic">novi denarii</hi> is imposed by <hi rend="italic">Capit. Francfurt</hi>. a. 794 ed. Boretius (<hi rend="italic">Mon. Germ</hi>.) I 74, 5</seg></note>
+        <note type="editorNote" subtype="endnote" xml:id="IIIEg_8.robnote.n.1" n="1" source="#robertson"><bibl><biblScope unit="page">305</biblScope></bibl><seg type="original" xml:lang="en">Cf. II As. 14; IV Atr. 6; VI, 32, 1; II Cn. 8.</seg></note>
+        <note type="editorNote" subtype="endnote" xml:id="IIIEg_8.robnote.n.2" n="2" source="#robertson"><bibl><biblScope unit="page">305</biblScope></bibl><seg type="original" xml:lang="en">See Chadwick, <hi rend="italic">op. cit.</hi> p. 34 for a table showing the weight of Edgar’s coins as compared with those of his predecessors and successors. Matthew Paris, ann. 975 (Rolls Series, <hi rend="smallcaps">i</hi>. p. 467), notes the issue of a new coinage at the end of his reign: <hi rend="italic">deinde per totam Angliam nouam fieri praecepit monetam, quia uetus uitio tonsorum adeo erat corrupta ut uix nummus obolum appenderet in statera.</hi> See Chadwick, <hi rend="italic">op. cit.</hi> pp. 36, 38¹.</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

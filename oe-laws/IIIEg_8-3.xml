@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IIIEg_8-3">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>III Eg 8.3</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Robertson’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Whitelock’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">IIIEg_8-3</idno>
+        <idno type="citation">III Eg 8.3</idno>
+        <idno type="lawCode">III Eg</idno>
+        <idno type="lawCodeAnchor">IIIEg</idno>
+        <idno type="clause">8.3</idno>
+        <idno type="citationKey">IIIEg 8.3</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>III Edgar (Andover)</title> <note type="reign">Edgar, r. 957/9–975</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">204</biblScope></bibl>
+          <bibl xml:id="robertson" type="edition">A. J. Robertson, <title>The Laws of the Kings of England from Edmund to Henry I</title> (Cambridge: Cambridge University Press, 1925), p. <biblScope unit="page">28</biblScope></bibl>
+          <bibl xml:id="rabin-doml" type="edition">Andrew Rabin, ed. and trans., <title>Old English Legal Writings: Wulfstan</title>, Dumbarton Oaks Medieval Library (Cambridge, MA: Harvard University Press, 2020), p. <biblScope unit="page">358</biblScope></bibl>
+          <bibl xml:id="whitelock" type="translation">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007), p. <biblScope unit="page">437</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-d" rend="bold"><abbr>D</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 201</note></witness>
+          <witness xml:id="wit-g-a"><abbr>G(A)</abbr> <note type="manuscript">London, British Library, Cotton Nero A.i</note></witness>
+          <witness xml:id="wit-a"><abbr>A</abbr> <note type="manuscript">London, British Library, Harley 55</note></witness>
+          <witness xml:id="wit-q"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note></witness>
+          <witness xml:id="wit-ld"><abbr>Ld</abbr> <note type="manuscript">William Lambarde, Archaionomia (London, 1568) – printed from manuscripts now lost</note></witness>
+          <witness xml:id="wit-so"><abbr>So</abbr> <note type="manuscript">William Somner's transcript of Cotton Otho B.xi (made before the fire)</note></witness>
+          <witness xml:id="wit-g2"><abbr>G2</abbr> <note type="manuscript">London, British Library, Cotton Nero A.i, second text (another hand, c. 1060)</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 200">959–c.962</date><date source="#robertson">after IV Eg</date><date source="#whitelock" n="EHD p. 434">959–63</date><placeName>Andover</placeName><note type="promulgation">959–c.962 (Liebermann, I p. 200); after IV Eg (Robertson); 959–63 (Whitelock, EHD p. 434); Andover</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Commerce</term><term>Fines</term></keywords>
+        <keywords n="people"><term>King</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 973 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 204.</change>
+      <change when="2026-10" type="checked">Liebermann’s text of MS A added from Gesetze I, p. 204.</change>
+      <change when="2026-10" type="checked">Liebermann’s text of MS D added from Gesetze I, p. 204.</change>
+      <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 204: “biege.” → “bicge.”.</change>
+      <change when="2026-10" type="checked">Liebermann’s German translation corrected against Gesetze I, p. 204: “(Und wenn sie jemand nun billiger verkauft, entweder öffentlich oder heimlich, so zahle sowohl wer sie verkauft, als wer sie kauft dem König 60 (40 D) Schill. A D G2.)” → “(Und wenn sie jemand nun billiger verkauft, entweder öffentlich oder heimlich, so zahle sowohl wer sie verkauft, als wer sie kauft dem König 60 (40 D) Schill. A D G2.) (expanded letters in italics: D, A D G2)”.</change>
+      <change when="2026-10" type="checked">The modern editor’s translation corrected against Robertson, p. 29: “it,” → “it”.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="8.3">
+        <head><ref type="lawCode" target="law:IIIEg">III Eg</ref> 8.3</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="8.3" corresp="#wit-d"><pb n="204" ed="#liebermann"/>⁊ gif hwa hi þon<hi rend="italic">ne</hi> undeoror sille, oððe eawunga oððe dearnunga, gilde ægðer þa<hi rend="italic">m</hi> cynge XL<ptr type="liebermannNote" n="1" target="#IIIEg_8-3.lnote.oe.1-2"/> scill' ge se þe hi sille ge se þe hi bicge.<ptr type="liebermannNote" n="2" target="#IIIEg_8-3.lnote.oe.2"/></ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="8.3" corresp="#wit-g2"><pb n="205" ed="#liebermann"/>⁊ gyf hwa hy þon<hi rend="italic">ne</hi> undeoror sylle, oððe eawunga oððe dearnunga, gylde ægþer þam cynge LX scill' ge se ðe hy sylle ge se þe hy bicge.<ptr type="liebermannNote" n="1" target="#IIIEg_8-3.lnote.oe.1"/></ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="8.3"><pb n="204" ed="#liebermann"/>[Not in G(A), Ld.] ⁊ gyf hwa hi þon<hi rend="italic">ne</hi> undeoror sylle, oððe eawunga oððe dearnunga, gylde ægþer þam cynge LX seyllinga ge se þe hy sylle ge se ðe hy bicge. [A]</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="8.3"><pb n="204" ed="#liebermann"/>⁊ gyf hwa hi þon<hi rend="italic">ne</hi> undeoror sylle, oððe eawunga oððe dearnunga, gylde ægþer þam cynge LX scyllinga ge se þe hy sylle ge se ðe hy bicge.<ptr type="liebermannNote" n="1" target="#IIIEg_8-3.lnote.oe.1-3"/></ab>
+        <ab type="editionText" xml:lang="ang" source="#robertson" n="8.3" corresp="#wit-d"><ptr type="editorNote" n="7" target="#missing"/><pb n="28" ed="#robertson"/>⁊ gif hwa hi þonne undeoror sille, oððe eawunga oððe dearnunga, gilde ægðer þam cynge LX<ptr type="editorNote" n="8" target="#missing"/> scill' ge se þe hi sille ge se þe hi bicge.</ab>
+        <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-g-a"><pb n="358" ed="#rabin-doml"/>And gyf hwa hi þonne undeoror sylle, oððe eawunga oððe dearnunga, gylde ægþer þam cynge LX scyllinga ge se þe hy sylle ge se þe hy bicge.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><ptr type="liebermannNote" n="1" target="#IIIEg_8-3.lnote.de.1"/><pb n="205" ed="#liebermann"/>(Und wenn sie jemand nun billiger verkauft, entweder öffentlich oder heimlich, so zahle sowohl wer sie verkauft, als wer sie kauft dem König 60 (40 <hi rend="italic">D<ptr type="liebermannNote" n="2" target="#IIIEg_8-3.lnote.de.2"/></hi>) Schill. <hi rend="italic">A D G2</hi>.)</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">(And if anyone sells it more cheaply, either openly or secretly, let both the seller and the buyer pay the king 60 (40, D) shillings. A D G2.)</ab>
+        <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-d"><ptr type="editorNote" n="1" target="#IIIEg_8-3.robnote.n.1"/><pb n="29" ed="#robertson"/>And if anyone sells it at a cheaper rate, either openly or secretly, both he who sells it and he who buys it shall pay 60 shillings<ptr type="editorNote" n="2" target="#IIIEg_8-3.robnote.n.2"/> to the king.</ab>
+        <ab type="translation" xml:lang="en" source="#whitelock"><pb n="437" ed="#whitelock"/>[And if anyone sells it cheaper, whether openly or secretly, both he who sells and he who buys are to pay 60 shillings to the king.]<ptr type="editorNote" n="8" target="#IIIEg_8-3.whinote.n.8"/></ab>
+        <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-g-a"><pb n="359" ed="#rabin-doml"/>And if anyone does sell it at a lower price, either publicly or in secret, both the seller and the buyer are to pay the king sixty shillings.</ab>
+        <note type="editorial">Not in G or Ld; K gives A's text. D reads XL, to be corrected to LX from A and G2. In A, a charter of Oswald of York (c. 972) follows in another hand, then I–II Cn; in D and G2, V Atr follows in the same hand.</note>
+        <note type="textual" source="#rabin-doml">omitted G1; text from A</note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIIEg_8-3.lnote.oe.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">207</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">folgt von ders. Hand</hi> V Atr.</seg><seg type="translation" xml:lang="en" source="#claude">followed, in the same hand, by V Atr.</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIIEg_8-3.lnote.oe.1-2" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">206</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">bessere</hi> LX <hi rend="italic">aus A G2</hi></seg><seg type="translation" xml:lang="en" source="#claude">read LX from A G2</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIIEg_8-3.lnote.oe.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">206</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">folgt von derselben Hand</hi> V Atr.</seg><seg type="translation" xml:lang="en" source="#claude">followed, in the same hand, by V Atr.</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIIEg_8-3.lnote.oe.1-3" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">206</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">folgt in anderer Hand Urkunde Oswalds von York, um</hi> 972, <hi rend="italic">bei</hi> Birch <hi rend="italic">Cart. Saxon. n.</hi> 1278 <hi rend="italic">f., dann in dritter Hd. und anderem Format:</hi> I. II Cnut</seg><seg type="translation" xml:lang="en" source="#claude">followed in a different hand by a charter of Oswald of York, c. 972, in Birch Cart. Saxon. n. 1278 f., then in a third hand and in a different format: I. II Cnut</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="IIIEg_8-3.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">137</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">Der Satz steht nur in zweiter Rezension</seg><seg type="translation" xml:lang="en" source="#claude">The sentence occurs only in the second recension</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="IIIEg_8-3.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">137</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">Da nur D, gegen AG 2, 40 liest, ist dies sein Fehler. Die beiden Händler zusammen zahlen also Königs ‘Ungehorsam’ (<hi rend="italic">s. d. Gl</hi> 14), wie für andere Verletzungen der gesetzlichen Schranken des Handels (<hi rend="italic">s. d. Gl</hi> 8b); I Ew 1, 1</seg><seg type="translation" xml:lang="en" source="#claude">Since only D, against AG 2, reads 40, this is its error. The two traders together thus pay the king’s ‘disobedience’ (<hi rend="italic">see</hi> that word in <hi rend="italic">Gl</hi> 14), as for other breaches of the legal restrictions on trade (<hi rend="italic">see</hi> that word in <hi rend="italic">Gl</hi> 8b); I Ew 1, 1</seg></note>
+        <note type="editorNote" subtype="endnote" xml:id="IIIEg_8-3.robnote.n.1" n="1" source="#robertson"><bibl><biblScope unit="page">306</biblScope></bibl><seg type="original" xml:lang="en">This clause is found only in the second recension.</seg></note>
+        <note type="editorNote" subtype="endnote" xml:id="IIIEg_8-3.robnote.n.2" n="2" source="#robertson"><bibl><biblScope unit="page">306</biblScope></bibl><seg type="original" xml:lang="en">D’s reading <hi rend="smallcaps">xl</hi> <hi rend="italic">scill.</hi> as against <hi rend="smallcaps">lx</hi> <hi rend="italic">scill.</hi> in A, G₂ is probably a scribal error. Liebermann points out that seller and buyer together pay the regular fine of 120 shillings to the king.</seg></note>
+        <note type="editorNote" subtype="translationFootnote" xml:id="IIIEg_8-3.whinote.n.8" n="8" source="#whitelock"><bibl><biblScope unit="page">437</biblScope></bibl><label>king.]</label><seg type="original" xml:lang="en">This chapter, lacking from the full version in Nero and <hi rend="italic">Quadripartitus,</hi> is probably Wulfstan’s addition.</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

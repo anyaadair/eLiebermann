@@ -1,0 +1,13 @@
+_site/
+.jekyll-cache/
+.sass-cache/
+node_modules/
+vendor/
+Gemfile.lock
+data/entries.json
+data/entry-order.json
+data/laws.json
+.DS_Store
+__pycache__/
+*.pyc
+__MACOSX/

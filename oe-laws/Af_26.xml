@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Af_26">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Af 26</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
+        <respStmt><resp>Cross-references to other clauses</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Attenborough’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">Af_26</idno>
+        <idno type="citation">Af 26</idno>
+        <idno type="lawCode">Af</idno>
+        <idno type="lawCodeAnchor">Af</idno>
+        <idno type="clause">26</idno>
+        <idno type="citationKey">Af 26</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Alfred’s Domboc</title> <note type="reign">Alfred, r. 871–899</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">64</biblScope></bibl>
+          <bibl xml:id="jurasinski-and-oliver" type="edition">Stefan Jurasinski and Lisi Oliver, <title>The Laws of Alfred: The Domboc and the Making of Anglo-Saxon Law</title> (Cambridge: Cambridge University Press, 2021), p. <biblScope unit="page">322</biblScope></bibl>
+          <bibl xml:id="attenborough" type="edition">F. L. Attenborough, <title>The Laws of the Earliest English Kings</title> (Cambridge: Cambridge University Press, 1922), p. <biblScope unit="page">76</biblScope></bibl>
+          <bibl xml:id="whitelock" type="translation">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007), p. <biblScope unit="page">414</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-e" rend="bold"><abbr>E</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 173 (Parker Chronicle and Laws)</note></witness>
+          <witness xml:id="wit-h"><abbr>H</abbr> <note type="manuscript">Strood, Medway Archive and Local Studies Centre, MS DRc/R1 (Textus Roffensis; formerly Rochester, Cathedral Library, A.3.5), c. 1120–25</note></witness>
+          <witness xml:id="wit-b-no-prol"><abbr>B (no Prol.)</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383</note></witness>
+          <witness xml:id="wit-g-prol-only"><abbr>G (Prol. only)</abbr> <note type="manuscript">London, British Library, Cotton Nero A.i</note></witness>
+          <witness xml:id="wit-q"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note></witness>
+          <witness xml:id="wit-ld"><abbr>Ld</abbr> <note type="manuscript">William Lambarde, Archaionomia (London, 1568) – printed from manuscripts now lost</note></witness>
+          <witness xml:id="wit-bu"><abbr>Bu</abbr></witness>
+          <witness xml:id="wit-ot-frags"><abbr>Ot (frags.)</abbr> <note type="manuscript">London, British Library, Cotton Otho B.xi (damaged by fire, 1731)</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 27">871 (after 890?)–901</date><date source="#whitelock" n="EHD p. 408">885–899</date><date source="#wormald-mel" n="MEL p. 286">after 893</date><note type="promulgation">871 (after 890?)–901 (Liebermann, I p. 27); 885–899 (Whitelock, EHD p. 408); after 893 (Wormald, MEL p. 286)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Compensation</term><term>Sexual assault</term><term>Legal principles</term></keywords>
+        <keywords n="people"><term>Women</term><term>Maiden</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 442 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 64.</change>
+      <change when="2026-10" type="checked">The second translation corrected against Attenborough, p. 77: “for; ∅” → “to; is paid”.</change>
+      <change when="2026-10" type="checked">Liebermann’s text of MS B added from Gesetze I, p. 64.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="26">
+        <head><ref type="lawCode" target="law:Af">Af</ref> 26</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="26" corresp="#wit-e"><pb n="64" ed="#liebermann"/>XXVII. Gif mon ungewintrædne<ptr type="liebermannNote" n="28" target="#Af_26.lnote.oe.28"/> wifmon<ptr type="liebermannNote" n="29" target="#Af_26.lnote.oe.29"/> to niedhæmde<ptr type="liebermannNote" n="30" target="#Af_26.lnote.oe.30"/> geðreatige, sie<ptr type="liebermannNote" n="1" target="#Af_26.lnote.oe.1"/> ðæt swa ðæs<ptr type="liebermannNote" n="2" target="#Af_26.lnote.oe.2"/> gewintredan<ptr type="liebermannNote" n="3" target="#Af_26.lnote.oe.3"/> monnes<ptr type="liebermannNote" n="*" target="#Af_26.lnote.oe.star"/> bot.<ptr type="liebermannNote" n="4" target="#Af_26.lnote.oe.4"/></ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="26" corresp="#wit-h"><pb n="64" ed="#liebermann"/>XXVII. Gif mon<ptr type="liebermannNote" n="3" target="#Af_26.lnote.oe.3-2"/> ungewintredne wifmon<ptr type="liebermannNote" n="15" target="#Af_26.lnote.oe.15"/> to nydhæmede<ptr type="liebermannNote" n="4" target="#Af_26.lnote.oe.4-2"/> geðreatige, sy<ptr type="liebermannNote" n="1" target="#Af_26.lnote.oe.1-2"/> ðæt swa ðæs gewintredon<ptr type="liebermannNote" n="2" target="#Af_26.lnote.oe.2-2"/> monnes<ptr type="liebermannNote" n="2" target="#Af_26.lnote.oe.2-2"/> bot.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="26" corresp="#wit-b-no-prol"><pb n="64" ed="#liebermann"/>Be ungewintredes wifmannes slæge. Gyf man úng[e]wintredne<ptr type="liebermannNote" n="1" target="#Af_26.lnote.oe.1-4"/> wifman to nydhæmede g<hi rend="italic">e</hi>þreatige, sy þ<hi rend="italic">æt</hi> swa ðæs g<hi rend="italic">e</hi>wintredes mannes bot.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="26" corresp="#wit-q"><pb n="65" ed="#liebermann"/>Si quis uirginem immaturam ad<ptr type="liebermannNote" n="17" target="#Af_26.lnote.oe.17"/> uiolentum concubitum perferendum<ptr type="liebermannNote" n="1" target="#Af_26.lnote.oe.1-3"/> cogat, sit<ptr type="liebermannNote" n="2" target="#Af_26.lnote.oe.2-3"/> hoc sicut adulte mulieris emendatio.</ab>
+        <ab type="editionText" xml:lang="ang" source="#attenborough" corresp="#wit-e"><pb n="76" ed="#attenborough"/>[Be ungewintredes wifmannes slæge.] Gif mon ungewintrædne wifmon to niedhæmde geðreatige, sie ðæt swa ðæs gewintredan monnes<ptr type="editorNote" n="15" target="#Af_26.attnote.fn.15"/> bot.</ab>
+        <ab type="editionText" xml:lang="ang" source="#jurasinski-and-oliver" n="31" corresp="#wit-e"><pb n="322" ed="#jurasinski-and-oliver"/>{XXVII} Gif mon ungewintrædne wifmon to niedhæmde geðreatige, sie ðæt swa ðæs gewintredan monnes bot.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><ptr type="liebermannNote" n="1" target="#Af_26.lnote.de.1"/><pb n="65" ed="#liebermann"/>Wenn jemand ein unerwachsenes<ptr type="liebermannNote" n="2" target="#Af_26.lnote.de.2"/> Mädchen zu Nothzucht<ptr type="liebermannNote" n="3" target="#Af_26.lnote.de.3"/> drängt, sei das [so hoch zu büssen<ptr type="liebermannNote" n="4" target="#Af_26.lnote.de.4"/>] wie die Busse für die erwachsene Person.<ptr type="liebermannNote" n="5" target="#Af_26.lnote.de.5"/></ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">If someone forces an under-age girl to intercourse, let that be [compensated as highly] as the compensation for an adult person.</ab>
+        <ab type="translation" xml:lang="en" source="#attenborough" corresp="#wit-e"><pb n="77" ed="#attenborough"/>If anyone rapes a girl who is not of age, the same compensation shall be paid to her as is paid to an adult.</ab>
+        <ab type="translation" xml:lang="en" source="#whitelock"><pb n="414" ed="#whitelock"/>If anyone rapes a girl not of age, that is to be the same compensation as for an adult.</ab>
+        <ab type="translation" xml:lang="en" source="#jurasinski-and-oliver" corresp="#wit-e"><pb n="323" ed="#jurasinski-and-oliver"/>If someone rapes an underage girl, let the compensation be the same as for a mature person.</ab>
+        <note type="comparison" source="#wormald-mel" n="270"><label>cites</label> <ref target="clause:Af_11-2">Af 11.2</ref> <quote>Note too that Af 18 (lewd approaches to nuns) and 26 (under-age rape) actually cite 11, 11:2 (equivalent for laity/adult)</quote></note>
+        <note type="comparison" source="#wormald-mel" n="272"><label>cross-reference</label> <ref target="clause:Af_11-2">Af 11.2–11.5</ref> <quote>26 (ref. 11:2–5)</quote></note>
+        <note type="comparison" source="#wormald-mel" n="281"><label>possibly influenced by</label> <ref target="clause:Abt_10">Abt 10–11</ref> <quote>Other possible effects of Æthelberht's influence are that Alfred had much more to say than Ine about sexual offences (n. 86)</quote></note>
+        <note type="comparison" source="#wormald-mel" n="281"><label>possibly influenced by</label> <ref target="clause:Abt_14">Abt 14</ref> <quote>Other possible effects of Æthelberht's influence are that Alfred had much more to say than Ine about sexual offences (n. 86)</quote></note>
+        <note type="comparison" source="#wormald-mel" n="281"><label>possibly influenced by</label> <ref target="clause:Abt_16">Abt 16</ref> <quote>Other possible effects of Æthelberht's influence are that Alfred had much more to say than Ine about sexual offences (n. 86)</quote></note>
+        <note type="comparison" source="#wormald-mel" n="281"><label>possibly influenced by</label> <ref target="clause:Abt_31">Abt 31</ref> <quote>Other possible effects of Æthelberht's influence are that Alfred had much more to say than Ine about sexual offences (n. 86)</quote></note>
+        <note type="comparison" source="#wormald-mel" n="281"><label>possibly influenced by</label> <ref target="clause:Abt_82">Abt 82–85</ref> <quote>Other possible effects of Æthelberht's influence are that Alfred had much more to say than Ine about sexual offences (n. 86)</quote></note>
+        <note type="comparison" source="#jurasinski-and-oliver" n="323"><label>shared vocabulary</label> <ref target="clause:Ine_38">Ine 38</ref> <quote>the term gewintred occurs in only one other place in West Saxon law: Ine §39</quote></note>
+        <note type="translator" source="#whitelock">Whitelock numbers this chapter 26 and gives Liebermann’s number, 26, in brackets.</note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_26.lnote.oe.28" n="28" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">64</biblScope></bibl><seg type="original" xml:lang="de">-redne <hi rend="italic">So Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">-redne So Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_26.lnote.oe.29" n="29" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">64</biblScope></bibl><seg type="original" xml:lang="de">-man <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">-man Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_26.lnote.oe.30" n="30" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">64</biblScope></bibl><seg type="original" xml:lang="de">nyd. <hi rend="italic">So;</hi> nydhæmede <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">nyd. So; nydhæmede Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_26.lnote.oe.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">66</biblScope></bibl><seg type="original" xml:lang="de">sy <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">sy Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_26.lnote.oe.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">66</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt So</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in So</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_26.lnote.oe.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">66</biblScope></bibl><seg type="original" xml:lang="de">-des mennes <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">-des mennes Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_26.lnote.oe.star" n="*" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">66</biblScope></bibl><seg type="original" xml:lang="de">wifmonnes <hi rend="italic">So</hi></seg><seg type="translation" xml:lang="en" source="#claude">wifmonnes So</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_26.lnote.oe.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">66</biblScope></bibl><seg type="original" xml:lang="de">bót <hi rend="italic">So Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">bót So Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_26.lnote.oe.3-2" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">64</biblScope></bibl><seg type="original" xml:lang="de">o <hi rend="italic">geänd. in</hi> a</seg><seg type="translation" xml:lang="en" source="#claude">o altered to a</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_26.lnote.oe.15" n="15" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">64</biblScope></bibl><seg type="original" xml:lang="de">wif <hi rend="italic">übergeschr.;</hi> o <hi rend="italic">geänd. in</hi> a</seg><seg type="translation" xml:lang="en" source="#claude">wif written above; o altered to a</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_26.lnote.oe.4-2" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">64</biblScope></bibl><seg type="original" xml:lang="de">y <hi rend="italic">auf Rasur</hi></seg><seg type="translation" xml:lang="en" source="#claude">y on an erasure</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_26.lnote.oe.1-2" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">66</biblScope></bibl><seg type="original" xml:lang="de">y <hi rend="italic">auf Rasur</hi></seg><seg type="translation" xml:lang="en" source="#claude">y on an erasure</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_26.lnote.oe.2-2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">66</biblScope></bibl><seg type="original" xml:lang="de">o <hi rend="italic">geänd. in</hi> a</seg><seg type="translation" xml:lang="en" source="#claude">o altered to a</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_26.lnote.oe.17" n="17" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">65</biblScope></bibl><seg type="original" xml:lang="de">ad u. c. p. cogat <hi rend="italic">aus Lond; nur</hi> <hi rend="spaced">uiolenter opprimat</hi> <hi rend="italic">übrige</hi></seg><seg type="translation" xml:lang="en" source="#claude">ad u. c. p. cogat from Lond; only <hi rend="italic">uiolenter opprimat</hi> the others</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_26.lnote.oe.1-3" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">67</biblScope></bibl><seg type="original" xml:lang="de">prof. <hi rend="italic">Or</hi></seg><seg type="translation" xml:lang="en" source="#claude">prof. Or</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_26.lnote.oe.2-3" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">67</biblScope></bibl><seg type="original" xml:lang="de">si <hi rend="italic">Or</hi></seg><seg type="translation" xml:lang="en" source="#claude">si Or</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_26.lnote.oe.1-4" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">67</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">erstes</hi> e <hi rend="italic">später</hi></seg><seg type="translation" xml:lang="en" source="#claude">first e later</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Af_26.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">57</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de">‘Totschlag’ statt ‘Notzucht’ (<hi rend="italic">s. d. Gl</hi> 3) führt falsch ein Rb B</seg><seg type="translation" xml:lang="en" source="#claude">Rb B wrongly introduces ‘homicide’ instead of ‘rape’ (<hi rend="italic">see</hi> that word in <hi rend="italic">Gl</hi> 3)</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Af_26.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">57</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">S. Gl</hi> mündig 5</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">See Gl</hi> mündig 5</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Af_26.lnote.de.3" n="3" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">57</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de">Q <hi rend="smallcaps">i</hi> gibt Af’s Text wörtlicher als spätere Rez.</seg><seg type="translation" xml:lang="en" source="#claude">Q <hi rend="smallcaps">i</hi> renders Af’s text more literally than later recensions</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Af_26.lnote.de.4" n="4" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">57</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de">ihrem Vormunde</seg><seg type="translation" xml:lang="en" source="#claude">to her guardian</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Af_26.lnote.de.5" n="5" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">57</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de">Hs. So modernisiert verdeutlichend</seg><seg type="translation" xml:lang="en" source="#claude">MS So modernizes, for clarity</seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="Af_26.attnote.fn.15" n="15" source="#attenborough"><bibl><biblScope unit="page">76</biblScope></bibl><label>monnes</label><seg type="original" xml:lang="en"><hi rend="italic">wifmonnes</hi>. So.</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

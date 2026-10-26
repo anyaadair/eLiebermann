@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IICn_68-1c">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>II Cn 68.1c</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">IICn_68-1c</idno>
+        <idno type="citation">II Cn 68.1c</idno>
+        <idno type="lawCode">II Cn</idno>
+        <idno type="lawCodeAnchor">IICn</idno>
+        <idno type="clause">68.1c</idno>
+        <idno type="citationKey">IICn 68.1c</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>II Cnut (Winchester)</title> <note type="reign">Cnut, r. 1016–1035</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">354</biblScope></bibl>
+          <bibl xml:id="robertson" type="edition">A. J. Robertson, <title>The Laws of the Kings of England from Edmund to Henry I</title> (Cambridge: Cambridge University Press, 1925), p. <biblScope unit="page">208</biblScope></bibl>
+          <bibl xml:id="rabin-doml" type="edition">Andrew Rabin, ed. and trans., <title>Old English Legal Writings: Wulfstan</title>, Dumbarton Oaks Medieval Library (Cambridge, MA: Harvard University Press, 2020), p. <biblScope unit="page">288</biblScope></bibl>
+          <bibl xml:id="whitelock" type="translation">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007), p. <biblScope unit="page">472</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-b" rend="bold"><abbr>B</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383</note></witness>
+          <witness xml:id="wit-g-a"><abbr>G(A)</abbr> <note type="manuscript">London, British Library, Cotton Nero A.i</note></witness>
+          <witness xml:id="wit-a"><abbr>A</abbr> <note type="manuscript">London, British Library, Harley 55</note></witness>
+          <witness xml:id="wit-ld"><abbr>Ld</abbr> <note type="manuscript">William Lambarde, Archaionomia (London, 1568) – printed from manuscripts now lost</note></witness>
+          <witness xml:id="wit-d-frags"><abbr>D (frags.)</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 201</note></witness>
+          <witness xml:id="wit-q"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note></witness>
+          <witness xml:id="wit-inst-cn"><abbr>Inst. Cn.</abbr></witness>
+          <witness xml:id="wit-cons-cn"><abbr>Cons. Cn.</abbr> <note type="manuscript">Consiliatio Cnuti (Latin translation, early 12th c.)</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 308">25 Dec. 1027–34</date><date source="#whitelock" n="EHD p. 461">1020–23</date><date source="#wormald-mel" n="MEL p. 345">1020/21</date><placeName>Winchester</placeName><note type="promulgation">25 Dec. 1027–34 (Liebermann, I p. 308); 1020–23 (Whitelock, EHD p. 461); 1020/21 (Wormald, MEL p. 345); Winchester</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Legal principles</term><term>Administrative directives</term><term>Ecclesiastical directives</term><term>Christian obligations</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 1856 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 354.</change>
+      <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 354: “þingc” → “þinge”.</change>
+      <change when="2026-10" type="checked">Liebermann’s text of MS B added from Gesetze I, p. 354.</change>
+      <change when="2026-10" type="checked">Liebermann’s German translation corrected against Gesetze I, p. 355: “Und diese Umstände muss man unterscheiden sowohl bei geistlichen Bussen wie bei weltlichen [-em B] Urtheilen.” → “Und diese Umstände muss man unterscheiden sowohl bei geistlichen Bussen wie bei weltlichen [-em B] Urtheilen. (expanded letters in italics: B)”.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="68.1c">
+        <head><ref type="lawCode" target="law:IICn">II Cn</ref> 68.1c</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="68.1c" corresp="#wit-g-a"><pb n="354" ed="#liebermann"/>And ægþer man sceal ge on godcundan scriftan ge on woruldcundan<ptr type="liebermannNote" n="15" target="#IICn_68-1c.lnote.oe.15"/> doman þas þinge tosceadan.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="68.1c" corresp="#wit-b"><pb n="354" ed="#liebermann"/>And æðer<ptr type="liebermannNote" n="2" target="#IICn_68-1c.lnote.oe.2"/> man sceal ge on godcundan scrift<hi rend="italic">um</hi> ge on woruldcundan dome ðas ðincg tosceadan.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="68.1c" corresp="#wit-a"><pb n="354" ed="#liebermann"/>And ægðer man sceall ge on godcundan scr[i]ftan<ptr type="liebermannNote" n="4" target="#IICn_68-1c.lnote.oe.4"/> ge on woruldcundan doman þæs þincg toseaden.<ptr type="liebermannNote" n="5" target="#IICn_68-1c.lnote.oe.5"/></ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="68.1c" corresp="#wit-q"><pb n="355" ed="#liebermann"/>Et<ptr type="liebermannNote" n="9" target="#IICn_68-1c.lnote.oe.9"/> utrobique debet hoc diligenter aduerti tam in diuinis legibus (penitentiis<ptr type="liebermannNote" n="10" target="#IICn_68-1c.lnote.oe.10"/> diuinis) quam in secularibus iudiciis.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="68.1c" corresp="#wit-cons-cn"><pb n="355" ed="#liebermann"/>Non solum in diuinis decretis sed etiam in secularibus iudiciis hec sunt distinguenda.</ab>
+        <ab type="editionText" xml:lang="ang" source="#robertson" n="68.1c" corresp="#wit-b"><pb n="208" ed="#robertson"/>And æðer man sceal, ge on godcundan scriftum ge on woruldcundan dome, ðas ðincg tosceadan.</ab>
+        <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-g-a"><pb n="288" ed="#rabin-doml"/>And ægþer man sceal ge on godcundan scriftan ge on woruldcundan doman þas þingc tosceadan.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="355" ed="#liebermann"/>Und diese Umstände muss man unterscheiden sowohl bei geistlichen Bussen wie bei weltlichen [-em <hi rend="italic">B</hi>] Urtheilen.</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">And one must distinguish these circumstances both in spiritual penances and in secular judgments (judgment, B).</ab>
+        <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-b"><pb n="209" ed="#robertson"/>And discrimination with regard to these circumstances must be shown both in [imposing] ecclesiastical amends and in [passing] secular judgment.</ab>
+        <ab type="translation" xml:lang="en" source="#whitelock"><pb n="472" ed="#whitelock"/>And these things are to be distinguished both in religious penances and in secular judgments.</ab>
+        <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-g-a"><pb n="289" ed="#rabin-doml"/>And these considerations must be weighed when assigning spiritual penance and secular judgment.</ab>
+        <note type="comparison" source="#liebermann" n="355"><ref target="clause:VIAtr_52">VI Atr 52</ref></note>
+        <note type="comparisonPrinted" source="#liebermann">VI Atr. 52</note>
+        <note type="editorial">Liebermann compares VI Atr 52.; BR: added from Gesetze I p. 355, October 2026 (MS Cons)</note>
+        <note type="liebermannNote" subtype="textual" xml:id="IICn_68-1c.lnote.oe.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">354</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">so</hi></seg><seg type="translation" xml:lang="en" source="#claude">sic</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IICn_68-1c.lnote.oe.9" n="9" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">355</biblScope></bibl><seg type="original" xml:lang="de">Et — aduerti <hi rend="italic">fehlt K</hi></seg><seg type="translation" xml:lang="en" source="#claude">Et — aduerti lacking in K</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IICn_68-1c.lnote.oe.10" n="10" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">355</biblScope></bibl><seg type="original" xml:lang="de">p. d. <hi rend="italic">über</hi> d. l. <hi rend="italic">Dm; fehlt übr.</hi></seg><seg type="translation" xml:lang="en" source="#claude">p. d. above d. l. Dm; lacking in the others</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IICn_68-1c.lnote.oe.15" n="15" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">354</biblScope></bibl><seg type="original" xml:lang="de">worulc. d. ðæs dinge <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">worulc. d. ðæs dinge Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IICn_68-1c.lnote.oe.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">354</biblScope></bibl><seg type="original" xml:lang="de">scrftan</seg><seg type="translation" xml:lang="en" source="#claude">scrftan</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IICn_68-1c.lnote.oe.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">354</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">so</hi></seg><seg type="translation" xml:lang="en" source="#claude">sic</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

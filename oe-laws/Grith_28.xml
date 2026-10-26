@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Grith_28">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Grið 28</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">Grith_28</idno>
+        <idno type="citation">Grið 28</idno>
+        <idno type="lawCode">Grið</idno>
+        <idno type="lawCodeAnchor">Grith</idno>
+        <idno type="clause">28</idno>
+        <idno type="citationKey">Grith 28</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Be griðe ⁊ be munde (On Sanctuary and Protection)</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">473</biblScope></bibl>
+          <bibl xml:id="rabin-doml" type="edition">Andrew Rabin, ed. and trans., <title>Old English Legal Writings: Wulfstan</title>, Dumbarton Oaks Medieval Library (Cambridge, MA: Harvard University Press, 2020), p. <biblScope unit="page">30</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-g-b"><abbr>G(B)</abbr> <note type="manuscript">London, British Library, Cotton Nero A.i</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 470">1028–1070</date><date source="#wormald-mel" n="MEL pp. 394–5">before 1014</date><date source="#rabin-doml">1006–8</date><note type="promulgation">1028–1070 (Liebermann, I p. 470); before 1014 (Wormald, MEL pp. 394–5); 1006–8 (Rabin)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Ecclesiastical directives</term></keywords>
+        <keywords n="people"><term>God</term></keywords>
+        <keywords n="locations"><term>Churches</term><term>Buildings</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 2233 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 473.</change>
+      <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 473: “7; 7; 7” → “⁊; ⁊; ⁊”.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="28">
+        <head><ref type="lawCode" target="law:Grith">Grið</ref> 28</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="28" corresp="#wit-g-b"><pb n="473" ed="#liebermann"/>Ac haligdom ⁊ hadas ⁊ gehalgode Godes hus a man sceal for Godes ege weorðian georne ⁊ inwerdre heortan æfre God lufian.</ab>
+        <ab type="editionText" xml:lang="ang" source="#rabin-doml" n="28" corresp="#wit-g-b"><pb n="30" ed="#rabin-doml"/>Ac haligdom and hadas and gehalgode Godes hus a man sceal for Godes ege weorðian georne, and inwerdre heortan æfre God lufian.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="473" ed="#liebermann"/>Vielmehr soll man Heiligthum und Geistliche und geweihte Gotteshäuser immer aus Gottesfurcht eifrig ehren und aus innerstem Herzen stets Gott lieben.</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">Rather, one must always eagerly honour the sanctuary and the clergy and consecrated houses of God out of fear of God, and always love God with one's inmost heart.</ab>
+        <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-g-b"><pb n="31" ed="#rabin-doml"/>But holiness and the holy orders and the hallowed house of God shall always be fervently venerated for fear of God, and God always be loved with one’s innermost heart.</ab>
+        <note type="comparison" source="#liebermann" n="473"><ref target="clause:ICn_4">I Cn 4</ref>; <ref target="clause:ICn_21">I Cn 21</ref></note>
+        <note type="comparisonPrinted" source="#liebermann">I Cn. 4 | *ebd. 21</note>
+        <note type="editorial">Liebermann compares I Cn 4 and 21.</note>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Northu_21">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Northu 21</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">Northu_21</idno>
+        <idno type="citation">Northu 21</idno>
+        <idno type="lawCode">Northu</idno>
+        <idno type="lawCodeAnchor">Northu</idno>
+        <idno type="clause">21</idno>
+        <idno type="citationKey">Northu 21</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Northumbrian Priests’ Law</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">381</biblScope></bibl>
+          <bibl xml:id="rabin-doml" type="edition">Andrew Rabin, ed. and trans., <title>Old English Legal Writings: Wulfstan</title>, Dumbarton Oaks Medieval Library (Cambridge, MA: Harvard University Press, 2020), p. <biblScope unit="page">306</biblScope></bibl>
+          <bibl xml:id="whitelock" type="translation">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007), p. <biblScope unit="page">482</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-d"><abbr>D</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 201</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 380">1028–c.1060</date><date source="#whitelock" n="EHD p. 479">probably 1020–23</date><date source="#wormald-mel" n="MEL pp. 396–7">after 1023</date><note type="promulgation">1028–c.1060 (Liebermann, I p. 380); probably 1020–23 (Whitelock, EHD p. 479); after 1023 (Wormald, MEL pp. 396–7)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Ecclesiastical directives</term><term>Church rights</term><term>Fines</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 1967 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text added from <title>Die Gesetze der Angelsachsen</title> I, p. 381.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="21">
+        <head><ref type="lawCode" target="law:Northu">Northu</ref> 21</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="21" corresp="#wit-d"><pb n="381" ed="#liebermann"/>Gif man cirican nydþeowige, gebete þæt be lahslihte.</ab>
+        <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-d"><pb n="306" ed="#rabin-doml"/>Gif man cirican nydþeowige, gebete þæt be lahslihte.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="381" ed="#liebermann"/>Wenn jemand eine Kirche verknechtet, büsse er das durch Rechtsbruchbusse.</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">If anyone forcibly enslaves a church, let him atone for it with the fine for breach of law (lahslit).</ab>
+        <ab type="translation" xml:lang="en" source="#whitelock" corresp="#wit-d"><pb n="482" ed="#whitelock"/>If anyone brings a church under subjection, he is to pay compensation with <hi rend="italic">lahslit</hi>.</ab>
+        <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-d"><pb n="307" ed="#rabin-doml"/>If anyone compels service from a church, he is to compensate for that with <hi rend="italic">lahslit</hi>.</ab>
+        <note type="comparison" source="#liebermann" n="381"><ref target="clause:VIAtr_15">VI Atr 15</ref></note>
+        <note type="comparisonPrinted" source="#liebermann">ebd.</note>
+        <note type="editorial">Liebermann compares VI Atr 15.</note>
+      </div>
+    </body>
+  </text>
+</TEI>

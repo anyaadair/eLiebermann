@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="XAtr_Prol-to-3">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>X Atr Prol. 3</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Robertson’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">XAtr_Prol-to-3</idno>
+        <idno type="citation">X Atr Prol. 3</idno>
+        <idno type="lawCode">X Atr</idno>
+        <idno type="lawCodeAnchor">XAtr</idno>
+        <idno type="clause">Prol. 3</idno>
+        <idno type="citationKey">XAtr prol</idno>
+        <idno type="citationKey">XAtr 3</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>X Æthelred</title> <note type="reign">Æthelred II, r. 978–1016</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">269</biblScope></bibl>
+          <bibl xml:id="robertson" type="edition">A. J. Robertson, <title>The Laws of the Kings of England from Edmund to Henry I</title> (Cambridge: Cambridge University Press, 1925), p. <biblScope unit="page">130</biblScope></bibl>
+          <bibl xml:id="rabin-doml" type="edition">Andrew Rabin, ed. and trans., <title>Old English Legal Writings: Wulfstan</title>, Dumbarton Oaks Medieval Library (Cambridge, MA: Harvard University Press, 2020), p. <biblScope unit="page">208</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-vr"><abbr>Vr</abbr> <note type="manuscript">Vatican, Biblioteca Apostolica, Reg. lat. 946</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 269">1009–16</date><date source="#wormald-mel" n="MEL pp. 336–7">?as for V &amp; VI Atr: 1008</date><placeName source="#wormald-mel" n="MEL pp. 336–7">?King’s Enham</placeName><note type="promulgation">1009–16 (Liebermann, I p. 269); ?as for V &amp; VI Atr: 1008 (Wormald, MEL pp. 336–7); ?King’s Enham (Wormald, MEL pp. 336–7)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Christian obligations</term><term>Ecclesiastical directives</term></keywords>
+        <keywords n="people"><term>King</term><term>Æthelred</term><term>Christians</term><term>All people</term><term>Named individuals</term><term>Nobles</term><term>Secular classes</term><term>Rank</term></keywords>
+        <keywords n="locations"><term>Enham</term><term>Named towns</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 1484 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 269.</change>
+      <change when="2026-10" type="checked">Liebermann’s text added from <title>Die Gesetze der Angelsachsen</title> I, p. 269.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="Prol. 3">
+        <head><ref type="lawCode" target="law:XAtr">X Atr</ref> Prol. 3</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="Prol. 3" corresp="#wit-vr"><pb n="269" ed="#liebermann"/>⁊ þis is seo gerædnes<ptr type="liebermannNote" n="**" target="#XAtr_Prol-to-3.lnote.oe.star2"/>, þe we willað healdan, swa swa we æt Eanham fæste gecwædon.</ab>
+        <ab type="editionText" xml:lang="ang" source="#robertson" n="§3" corresp="#wit-vr"><pb n="130" ed="#robertson"/>⁊ þis is seo gerædnes þe we willað healdan, swa swa we æt Eanham fæste gecwædon.</ab>
+        <ab type="editionText" xml:lang="ang" source="#rabin-doml"><pb n="208" ed="#rabin-doml"/>Pr.3 And þis is seo gerædnes þe we willað healdan, swa swa we æt Eanham fæste gecwædon.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="269" ed="#liebermann"/>Und Folgendes ist der Beschluss, den wir halten wollen, so wie wir zu Enham<ptr type="liebermannNote" n="1" target="#XAtr_Prol-to-3.lnote.de.1"/> fest bestimmt haben.</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">And the following is the ordinance which we will keep, as we firmly decided at Enham.</ab>
+        <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-vr"><pb n="131" ed="#robertson"/>And this is the ordinance which we desire to observe in accordance with what we have firmly decreed at Enham<ptr type="editorNote" n="1" target="#XAtr_Prol-to-3.robnote.n.1"/>.</ab>
+        <ab type="translation" xml:lang="en" source="#rabin-doml"><pb n="209" ed="#rabin-doml"/>Pr.3 And this is the decree that we wish to observe, just as we firmly established at Enham.</ab>
+        <note type="comparison" source="#liebermann" n="269"><ref target="clause:VI-Atr-Latin-Paraphrase_Prol">VI Atr Lat Prol.</ref></note>
+        <note type="comparisonPrinted" source="#liebermann">ebd. Paraph. Prol.</note>
+        <note type="editorial">Vr has a cross-reference sign here; four lines in the margin in another hand, each mutilated by four or five letters at the front (‘Godes gife … [Ea]dgares cinges ge … im þe ic Æðel[red] … ealle witan’), were meant to replace the underlined ‘þe wo’; the corrector seems to ascribe the content to Edgar (compare D of I Cn 1). Liebermann compares the Paraphrase of VI Atr, Prol.</note>
+        <note type="translator" source="#rabin-doml">[Pr.3] Enham: The site of the 1008 meeting at which 5 Æthelred and 6 Æthelred were promulgated.</note>
+        <note type="liebermannNote" subtype="textual" xml:id="XAtr_Prol-to-3.lnote.oe.star2" n="**" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">269</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Folgt Heranziehungszeichen; hierzu gehören wohl am Rande von anderer Hand vier vorn durch Abreissen um je vier bis fünf Buchstaben verstümmelte Zeilen:</hi> Godes gife . . . . [Ea]dgares cinges ge . . . . im þe ic Æðel[red] . . . . ealle witan <hi rend="italic">Diese Worte sollen ersetzen</hi> þe wo, <hi rend="italic">das unterstrichen ist. Der Emendator scheint Eadgar den Ursprung des Inhaltes beizulegen. Vgl. Hs. D von I Cnut</hi> 1.</seg><seg type="translation" xml:lang="en" source="#claude">Followed by a reference mark; to this probably belong four lines in the margin in another hand, each mutilated at the beginning by four to five letters through tearing: Godes gife . . . . [Ea]dgares cinges ge . . . . im þe ic Æðel[red] . . . . ealle witan These words are meant to replace þe wo, which is underlined. The emender seems to ascribe the origin of the contents to Eadgar. Cf. MS D of I Cnut 1.</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="XAtr_Prol-to-3.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">186</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">Dies bedeutet nicht: X Atr erging zu Enham, sondern: der Enhamer Beschluss wird im folgenden zitiert. <hi rend="italic">Vgl</hi>. VI As 10¹¹</seg><seg type="translation" xml:lang="en" source="#claude">This does not mean that X Atr was issued at Enham, but that the Enham decree is quoted in what follows. <hi rend="italic">Cf</hi>. VI As 10¹¹</seg></note>
+        <note type="editorNote" subtype="endnote" xml:id="XAtr_Prol-to-3.robnote.n.1" n="1" source="#robertson"><bibl><biblScope unit="page">342</biblScope></bibl><seg type="original" xml:lang="en">Cf. VI Atr. Pre. and note.</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

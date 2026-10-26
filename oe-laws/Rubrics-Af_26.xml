@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Rubrics-Af_26">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Af Rb 26</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">Rubrics-Af_26</idno>
+        <idno type="citation">Af Rb 26</idno>
+        <idno type="lawCode">Af Rb</idno>
+        <idno type="clause">26</idno>
+        <idno type="citationKey">Af Rb 26</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Rubrics to Alfred’s Domboc</title> <note type="reign">Alfred, r. 871–899</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">18</biblScope></bibl>
+          <bibl xml:id="jurasinski-and-oliver" type="edition">Stefan Jurasinski and Lisi Oliver, <title>The Laws of Alfred: The Domboc and the Making of Anglo-Saxon Law</title> (Cambridge: Cambridge University Press, 2021), p. <biblScope unit="page">194</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-e" rend="bold"><abbr>E</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 173 (Parker Chronicle and Laws)</note></witness>
+          <witness xml:id="wit-h"><abbr>H</abbr> <note type="manuscript">Strood, Medway Archive and Local Studies Centre, MS DRc/R1 (Textus Roffensis; formerly Rochester, Cathedral Library, A.3.5), c. 1120–25</note></witness>
+          <witness xml:id="wit-q"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note></witness>
+          <witness xml:id="wit-g-prol"><abbr>G (Prol.)</abbr> <note type="manuscript">London, British Library, Cotton Nero A.i</note></witness>
+          <witness xml:id="wit-b"><abbr>B</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383</note></witness>
+          <witness xml:id="wit-ot-frag"><abbr>Ot (frag.)</abbr> <note type="manuscript">London, British Library, Cotton Otho B.xi (damaged by fire, 1731)</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 16">c.890–c.940</date><note type="promulgation">c.890–c.940 (Liebermann, I p. 16)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Sexual assault</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 222 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked and corrected against <title>Die Gesetze der Angelsachsen</title> I, p. 18.</change>
+      <change when="2026-10" type="checked">Liebermann’s text of MS Ot added from Gesetze I, p. 18.</change>
+      <change when="2026-10" type="checked">Liebermann’s text of MS G added from Gesetze I, p. 18.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="26">
+        <head>Af Rb 26</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="26" corresp="#wit-e"><pb n="18" ed="#liebermann"/>XXVII. Be ungewintredes wifmonnes nedhæmde.<ptr type="liebermannNote" n="**" target="#Rubrics-Af_26.lnote.oe.star2"/></ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="26" corresp="#wit-ot-frag"><pb n="18" ed="#liebermann"/>XXVII.<ptr type="liebermannNote" n="3" target="#Rubrics-Af_26.lnote.oe.3"/> Be ungewintr:des monnes<ptr type="liebermannNote" n="4" target="#Rubrics-Af_26.lnote.oe.4"/> wif nedhæmd:</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="26" corresp="#wit-g-prol"><pb n="18" ed="#liebermann"/>XXVII. Be ungewintredes wifmannes niedhæ<hi rend="italic">m</hi>de.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="26" corresp="#wit-h"><pb n="19" ed="#liebermann"/>XXVII. Be tyngewintredes<ptr type="liebermannNote" n="12" target="#Rubrics-Af_26.lnote.oe.12"/> monnes<ptr type="liebermannNote" n="13" target="#Rubrics-Af_26.lnote.oe.13"/> nydhæmede.<ptr type="liebermannNote" n="9" target="#Rubrics-Af_26.lnote.oe.9"/></ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="26" corresp="#wit-q"><pb n="19" ed="#liebermann"/>De adolescentula<ptr type="liebermannNote" n="15" target="#Rubrics-Af_26.lnote.oe.15"/> ui subacta.</ab>
+        <ab type="editionText" xml:lang="ang" source="#jurasinski-and-oliver" corresp="#wit-e"><pb n="194" ed="#jurasinski-and-oliver"/>XXVII Be ungewintredes wifmonnes nedhæmde</ab>
+        <ab type="editionText" xml:lang="ang" source="#jurasinski-and-oliver" corresp="#wit-b"><pb n="194" ed="#jurasinski-and-oliver"/>Be ungewintredes wifmannes slæge</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="19" ed="#liebermann"/>Über Nothzüchtigung eines unerwachsenen<ptr type="liebermannNote" n="1" target="#Rubrics-Af_26.lnote.de.1"/> Mädchens.<ptr type="liebermannNote" n="2" target="#Rubrics-Af_26.lnote.de.2"/></ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">Concerning the rape of an under-age girl.</ab>
+        <ab type="translation" xml:lang="en" source="#jurasinski-and-oliver" corresp="#wit-e"><pb n="195" ed="#jurasinski-and-oliver"/>Concerning the rape of an underage girl</ab>
+        <ab type="translation" xml:lang="en" source="#jurasinski-and-oliver" corresp="#wit-b"><pb n="195" ed="#jurasinski-and-oliver"/>Concerning the slaying of an underage girl</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="Rubrics-Af_26.lnote.oe.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">18</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">corrigirt aus</hi> XXVI.</seg><seg type="translation" xml:lang="en" source="#claude">corrected from XXVI.</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Rubrics-Af_26.lnote.oe.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">18</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">so</hi></seg><seg type="translation" xml:lang="en" source="#claude">sic</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Rubrics-Af_26.lnote.oe.15" n="15" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">19</biblScope></bibl><seg type="original" xml:lang="de">virgine <hi rend="italic">Br</hi></seg><seg type="translation" xml:lang="en" source="#claude">virgine Br</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Rubrics-Af_26.lnote.oe.star2" n="**" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">18</biblScope></bibl><seg type="original" xml:lang="de">[27] Be mægleasum monnum <hi rend="italic">fügt zu Ld;</hi> Be, <hi rend="italic">Rest der Zeile leer So; auch unten im Texte zählen</hi> [27] <hi rend="italic">nicht gesondert E G H B Quadr</hi></seg><seg type="translation" xml:lang="en" source="#claude">[27] Be mægleasum monnum added by Ld; Be, rest of the line blank So; below in the text too, E G H B Quadr do not number [27] separately</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Rubrics-Af_26.lnote.oe.12" n="12" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">19</biblScope></bibl><seg type="original" xml:lang="de">tyn <hi rend="italic">auf Rasur</hi></seg><seg type="translation" xml:lang="en" source="#claude">tyn on an erasure</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Rubrics-Af_26.lnote.oe.13" n="13" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">19</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">davor Rasur, geänd.</hi> man.</seg><seg type="translation" xml:lang="en" source="#claude">erasure before it, altered man.</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Rubrics-Af_26.lnote.oe.9" n="9" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">19</biblScope></bibl><seg type="original" xml:lang="de">y <hi rend="italic">auf Rasur</hi></seg><seg type="translation" xml:lang="en" source="#claude">y on an erasure</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Rubrics-Af_26.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">41</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">‘Zehn Jahr alten’ Hcor.; ‘unmannbaren’ Schmid ungenau; eigentlich ‘ungejährten’; <hi rend="italic">s. Gl</hi> mündig 5</seg><seg type="translation" xml:lang="en" source="#claude">‘Ten years old’ Hcor.; ‘not of marriageable age’ Schmid, inexactly; properly ‘not of full years’; see <hi rend="italic">Gl</hi> mündig 5</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Rubrics-Af_26.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">41</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Der Archetyp zeigte vielleicht <hi rend="italic">wif</hi> über der Zeile, das daher in Ot an falsche Stelle geriet und in H ausradiert ward. — ‘Von sippelosen Leuten’ überschreiben Af 27 Ld, Q spät. Rez.</seg><seg type="translation" xml:lang="en" source="#claude">The archetype perhaps had <hi rend="italic">wif</hi> above the line, which therefore got into the wrong place in Ot and was erased in H. — ‘Of kinless people’ is the heading given to Af 27 by Ld and Q later rec.</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

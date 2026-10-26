@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Rubrics-Af_41">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Af Rb 41</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">Rubrics-Af_41</idno>
+        <idno type="citation">Af Rb 41</idno>
+        <idno type="lawCode">Af Rb</idno>
+        <idno type="clause">41</idno>
+        <idno type="citationKey">Af Rb 41</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Rubrics to Alfred’s Domboc</title> <note type="reign">Alfred, r. 871–899</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">18</biblScope></bibl>
+          <bibl xml:id="jurasinski-and-oliver" type="edition">Stefan Jurasinski and Lisi Oliver, <title>The Laws of Alfred: The Domboc and the Making of Anglo-Saxon Law</title> (Cambridge: Cambridge University Press, 2021), p. <biblScope unit="page">198</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-e" rend="bold"><abbr>E</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 173 (Parker Chronicle and Laws)</note></witness>
+          <witness xml:id="wit-h"><abbr>H</abbr> <note type="manuscript">Strood, Medway Archive and Local Studies Centre, MS DRc/R1 (Textus Roffensis; formerly Rochester, Cathedral Library, A.3.5), c. 1120–25</note></witness>
+          <witness xml:id="wit-q"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note></witness>
+          <witness xml:id="wit-g-prol"><abbr>G (Prol.)</abbr> <note type="manuscript">London, British Library, Cotton Nero A.i</note></witness>
+          <witness xml:id="wit-b"><abbr>B</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383</note></witness>
+          <witness xml:id="wit-ot-frag"><abbr>Ot (frag.)</abbr> <note type="manuscript">London, British Library, Cotton Otho B.xi (damaged by fire, 1731)</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 16">c.890–c.940</date><note type="promulgation">c.890–c.940 (Liebermann, I p. 16)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Land</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 232 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 18.</change>
+      <change when="2026-10" type="checked">Liebermann’s text of MS Ot added from Gesetze I, p. 18.</change>
+      <change when="2026-10" type="checked">Liebermann’s text of MS G added from Gesetze I, p. 18.</change>
+      <change when="2026-10" type="checked">Liebermann’s Latin text corrected against Gesetze I, p. 18: “∅” → “De infractura burgi.”.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="41">
+        <head>Af Rb 41</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="41" corresp="#wit-e"><pb n="18" ed="#liebermann"/>XXXVII. Be bóclondum.<ptr type="liebermannNote" n="25" target="#Rubrics-Af_41.lnote.oe.25"/></ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="41" corresp="#wit-ot-frag"><pb n="18" ed="#liebermann"/>… boclondum.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="41" corresp="#wit-g-prol"><pb n="18" ed="#liebermann"/>XXXVII. Be boclandum.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="41" corresp="#wit-h"><pb n="19" ed="#liebermann"/>XXXVII. Be boclandum.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="41" corresp="#wit-q"><pb n="19" ed="#liebermann"/>De infractura burgi.<ptr type="liebermannNote" n="27" target="#Rubrics-Af_41.lnote.oe.27"/> De terra hereditatis.<ptr type="liebermannNote" n="28" target="#Rubrics-Af_41.lnote.oe.28"/></ab>
+        <ab type="editionText" xml:lang="ang" source="#jurasinski-and-oliver" corresp="#wit-e"><pb n="198" ed="#jurasinski-and-oliver"/>XXXVII Be bóclondum</ab>
+        <ab type="editionText" xml:lang="ang" source="#jurasinski-and-oliver" corresp="#wit-b"><pb n="198" ed="#jurasinski-and-oliver"/>Be boclande</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="19" ed="#liebermann"/>Von urkund[lich verschriebenen] Landgütern.</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">Of estates [granted] by charter.</ab>
+        <ab type="translation" xml:lang="en" source="#jurasinski-and-oliver" corresp="#wit-e"><pb n="199" ed="#jurasinski-and-oliver"/>Concerning book-lands</ab>
+        <ab type="translation" xml:lang="en" source="#jurasinski-and-oliver" corresp="#wit-b"><pb n="199" ed="#jurasinski-and-oliver"/>Concerning book-land</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="Rubrics-Af_41.lnote.oe.27" n="27" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">19</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">zu</hi> [40] horgi <hi rend="italic">Hk;</hi> borgi <hi rend="italic">Br;</hi> regis vel archiepiscopi <hi rend="italic">fügt zu Hk Br;</hi> vel aldremanni, XIIhindi hominis vel VIhindi <hi rend="italic">fügt dann zu Hk. Dann:</hi> De fractione sepis rustici. [40,2] De sancto [<hi rend="italic">fehlt Br</hi>] velo in XLª. iniuste deposito <hi rend="italic">fügen zu Hk Br</hi></seg><seg type="translation" xml:lang="en" source="#claude">relating to [40]: horgi Hk; borgi Br; regis vel archiepiscopi added by Hk Br; vel aldremanni, XIIhindi hominis vel VIhindi then added by Hk. Then: De fractione sepis rustici. [40,2] De sancto [lacking in Br] velo in XLª. iniuste deposito added by Hk Br</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Rubrics-Af_41.lnote.oe.28" n="28" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">19</biblScope></bibl><seg type="original" xml:lang="de">-taria <hi rend="italic">Hk Br</hi></seg><seg type="translation" xml:lang="en" source="#claude">-taria Hk Br</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Rubrics-Af_41.lnote.oe.25" n="25" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">18</biblScope></bibl><seg type="original" xml:lang="de">-lande <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">-lande Ld</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

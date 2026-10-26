@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Ger_11-d">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Ger 11[d]</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#gobbitt">Gobbitt</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#gobbitt">Gobbitt</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">Ger_11-d</idno>
+        <idno type="citation">Ger 11[d]</idno>
+        <idno type="lawCode">Ger</idno>
+        <idno type="lawCodeAnchor">Ger</idno>
+        <idno type="clause">11[d]</idno>
+        <idno type="citationKey">Ger 11d</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Gerefa (The Reeve)</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">454</biblScope></bibl>
+          <bibl xml:id="gobbitt" type="edition">Thom Gobbitt, ed., ‘Rectitudines singularum personarum’ and ‘Gerefa’, <title>Early English Laws</title> (earlyenglishlaws.ac.uk)</bibl>
+          <bibl xml:id="rabin-doml" type="edition">Andrew Rabin, ed. and trans., <title>Old English Legal Writings: Wulfstan</title>, Dumbarton Oaks Medieval Library (Cambridge, MA: Harvard University Press, 2020), p. <biblScope unit="page">336</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-b"><abbr>B</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 453">960 (c.1025)–1060</date><placeName source="#wormald-mel">?Bath Abbey</placeName><note type="promulgation">960 (c.1025)–1060 (Liebermann, I p. 453); ?Bath Abbey (Wormald)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Service</term><term>Administrative directives</term></keywords>
+        <keywords n="people"><term>Reeves</term><term>Weorcmen</term><term>All people</term><term>Secular classes</term><term>Rank</term></keywords>
+        <keywords n="locations"><term>Estates</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 2142 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 454.</change>
+      <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 454: “7; 7; –” → “⁊; ⁊; —”.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="11[d]">
+        <head><ref type="lawCode" target="law:Ger">Ger</ref> 11[d]</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="11[d]" corresp="#wit-b"><pb n="454" ed="#liebermann"/>[11[d]] ofn ⁊ aste<ptr type="liebermannNote" n="6" target="#Ger_11-d.lnote.oe.6"/> ⁊ fela ðinga sceal to tune — ge eac henna hrost;</ab>
+        <ab type="editionText" xml:lang="ang" source="#gobbitt" n="26.3" corresp="#wit-b">Ofn . 7 aste . 7 fela ðinga sceal|to tune ge eac henna hrost .</ab>
+        <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-b"><pb n="336" ed="#rabin-doml"/>ofn and aste and fela ðinga sceal to tune, ge eac henna hrost.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="454" ed="#liebermann"/>Ofen und Trockenofen und viele Dinge gehören zum Gutsgehöft — wie auch Hühnersteige;</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">an oven and a drying-kiln and many things belong to the estate — and also a hen-roost;</ab>
+        <ab type="translation" xml:lang="en" source="#gobbitt" corresp="#wit-b">[To make] an oven and a kiln, and many things must [be done] about the estate, likewise [to make] chicken roosts.</ab>
+        <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-b"><pb n="337" ed="#rabin-doml"/>and do many other things on the estate such as building chicken roosts.</ab>
+        <note type="editorial">B's ‘aste’ stands for ‘ast’ (compare Rect 6).</note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ger_11-d.lnote.oe.6" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">454</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">für</hi> ast; <hi rend="italic">vgl.</hi> Rect. 6<hi rend="italic">ᵉ</hi></seg><seg type="translation" xml:lang="en" source="#claude">for ast; cf. Rect. 6ᵉ</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

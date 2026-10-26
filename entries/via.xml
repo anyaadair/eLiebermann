@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>via</title>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">via</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, <biblScope unit="volume">2.1</biblScope> (Wörterbuch), <biblScope unit="page">233</biblScope>
+            <ptr type="facsimile" target="https://archive.org/details/diegesetzederang02liebuoft/page/233/mode/2up"/>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <revisionDesc>
+      <change when="2026-10-12">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-10-17">“In Cn” and “In” (Instituta Cnuti) linked to the law codes list.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry xml:lang="la">
+        <form type="lemma">
+          <orth>via</orth>
+        </form>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">via</hi> <hi rend="bold">1</hi>) regia <hi rend="italic">Heerstrasse</hi> <ref type="lawCode" target="law:IVAtr">IV Atr</ref> 4. <ref type="lawCode" target="law:Hn">Hn</ref> 80,2. 91,4. <ref type="lawCode" target="law:InCn">In Cn</ref> III 50,1 <hi rend="bold">2</hi>)<hi rend="bold">a</hi>) <hi rend="italic">weg;</hi> viam tollere [<hi rend="italic">altfz.</hi> voie; <hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>.</hi> onweg] <hi rend="italic">fortnehmen</hi> <ref type="lawCode" target="law:Hn">Hn</ref> 51,8 <hi rend="bold">b</hi>) omni via <hi rend="italic"><ref type="abbreviation" target="gram:immer"><abbr>immer</abbr></ref></hi> <ref type="lawCode" target="law:AsAlm">As Alm</ref> Pro <ref type="lawCode" target="law:Quadr">Q</ref>, ealle wæga <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref></hi> [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>.</hi> tuteveies, <hi rend="italic"><ref type="abbreviation" target="gram:english"><abbr>engl.</abbr></ref></hi> always]</dictScrap>
+        <dictScrap type="senses">
+          <sense n="1">regia <hi rend="italic">Heerstrasse</hi> <ref type="lawCode" target="law:IVAtr">IV Atr</ref> 4. <ref type="lawCode" target="law:Hn">Hn</ref> 80,2. 91,4. <ref type="lawCode" target="law:InCn">In Cn</ref> III 50,1</sense>
+          <sense n="2"><hi rend="bold">a</hi>) <hi rend="italic">weg;</hi> viam tollere [<hi rend="italic">altfz.</hi> voie; <hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>.</hi> onweg] <hi rend="italic">fortnehmen</hi> <ref type="lawCode" target="law:Hn">Hn</ref> 51,8 <hi rend="bold">b</hi>) omni via <hi rend="italic"><ref type="abbreviation" target="gram:immer"><abbr>immer</abbr></ref></hi> <ref type="lawCode" target="law:AsAlm">As Alm</ref> Pro <ref type="lawCode" target="law:Quadr">Q</ref>, ealle wæga <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref></hi> [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>.</hi> tuteveies, <hi rend="italic"><ref type="abbreviation" target="gram:english"><abbr>engl.</abbr></ref></hi> always]</sense>
+        </dictScrap>
+        <xr type="compare"><ref target="entry:onweg">onweg</ref></xr>
+        <xr type="compare"><ref target="entry:tuteveies">tuteveies</ref></xr>
+        <xr type="lawCode"><ref target="clause:IVAtr_4">IV Atr 4</ref></xr>
+        <xr type="lawCode"><ref target="clause:Hn_80-2">Hn 80,2</ref></xr>
+        <xr type="lawCode"><ref target="clause:Hn_91-4">Hn 91,4</ref></xr>
+        <xr type="lawCode"><ref target="clause:Hn_51-8">Hn 51,8</ref></xr>
+        <xr type="lawCode"><ref target="clause:AsAlm_Prol">As Alm Pro</ref></xr>
+      </entry>
+    </body>
+  </text>
+</TEI>

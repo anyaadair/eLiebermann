@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Af_39">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Af 39</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
+        <respStmt><resp>Cross-references to other clauses</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Attenborough’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">Af_39</idno>
+        <idno type="citation">Af 39</idno>
+        <idno type="lawCode">Af</idno>
+        <idno type="lawCodeAnchor">Af</idno>
+        <idno type="clause">39</idno>
+        <idno type="citationKey">Af 39</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Alfred’s Domboc</title> <note type="reign">Alfred, r. 871–899</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">72</biblScope></bibl>
+          <bibl xml:id="jurasinski-and-oliver" type="edition">Stefan Jurasinski and Lisi Oliver, <title>The Laws of Alfred: The Domboc and the Making of Anglo-Saxon Law</title> (Cambridge: Cambridge University Press, 2021), p. <biblScope unit="page">338</biblScope></bibl>
+          <bibl xml:id="attenborough" type="edition">F. L. Attenborough, <title>The Laws of the Earliest English Kings</title> (Cambridge: Cambridge University Press, 1922), p. <biblScope unit="page">80</biblScope></bibl>
+          <bibl xml:id="whitelock" type="translation">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007), p. <biblScope unit="page">415</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-e" rend="bold"><abbr>E</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 173 (Parker Chronicle and Laws)</note></witness>
+          <witness xml:id="wit-h"><abbr>H</abbr> <note type="manuscript">Strood, Medway Archive and Local Studies Centre, MS DRc/R1 (Textus Roffensis; formerly Rochester, Cathedral Library, A.3.5), c. 1120–25</note></witness>
+          <witness xml:id="wit-b-no-prol"><abbr>B (no Prol.)</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383</note></witness>
+          <witness xml:id="wit-g-prol-only"><abbr>G (Prol. only)</abbr> <note type="manuscript">London, British Library, Cotton Nero A.i</note></witness>
+          <witness xml:id="wit-q"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note></witness>
+          <witness xml:id="wit-ld"><abbr>Ld</abbr> <note type="manuscript">William Lambarde, Archaionomia (London, 1568) – printed from manuscripts now lost</note></witness>
+          <witness xml:id="wit-bu"><abbr>Bu</abbr></witness>
+          <witness xml:id="wit-ot-frags"><abbr>Ot (frags.)</abbr> <note type="manuscript">London, British Library, Cotton Otho B.xi (damaged by fire, 1731)</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 27">871 (after 890?)–901</date><date source="#whitelock" n="EHD p. 408">885–899</date><date source="#wormald-mel" n="MEL p. 286">after 893</date><note type="promulgation">871 (after 890?)–901 (Liebermann, I p. 27); 885–899 (Whitelock, EHD p. 408); after 893 (Wormald, MEL p. 286)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Assault</term><term>Breach of king's peace</term><term>Compensation</term><term>Weapons</term></keywords>
+        <keywords n="people"><term>Ceorl</term><term>Weorcmen</term><term>Secular classes</term><term>Rank</term></keywords>
+        <keywords n="locations"><term>Commoner's premises</term><term>Buildings</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 467 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 72.</change>
+      <change when="2026-10" type="checked">Liebermann’s text of MS B added from Gesetze I, p. 72.</change>
+      <change when="2026-10" type="checked">The second translation corrected against Attenborough, p. None: “six” → “6”.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="39">
+        <head><ref type="lawCode" target="law:Af">Af</ref> 39</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="39" corresp="#wit-e"><pb n="72" ed="#liebermann"/>XXXVI. Gif hwa on cierlisces<ptr type="liebermannNote" n="8" target="#Af_39.lnote.oe.8"/> monnes flette gefeohte, mid syx scill. gebete ðam<ptr type="liebermannNote" n="2" target="#Af_39.lnote.oe.2"/> ceorle.<ptr type="liebermannNote" n="9" target="#Af_39.lnote.oe.9"/></ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="39" corresp="#wit-h"><pb n="72" ed="#liebermann"/>XXXVI. Gif hwa on ciorlisces monnes<ptr type="liebermannNote" n="5" target="#Af_39.lnote.oe.5"/> flette gefeohte<ptr type="liebermannNote" n="6" target="#Af_39.lnote.oe.6"/>, gebete mid VI scll' ðam ciorle.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="39" corresp="#wit-b-no-prol"><pb n="72" ed="#liebermann"/>Be cyrlisces monnes flettegefeohte. Gyf hwá on ceorlisces mannes flette gefeohte, mid VI scill' gebete ðam ceorle.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="39" corresp="#wit-q"><pb n="73" ed="#liebermann"/>Si quis in ceorlisces mannes flette<ptr type="liebermannNote" n="10" target="#Af_39.lnote.oe.10"/> gefeohte<ptr type="liebermannNote" n="11" target="#Af_39.lnote.oe.11"/> (id est in rusticani hominis domus<ptr type="liebermannNote" n="12" target="#Af_39.lnote.oe.12"/> area pugnet), quinque sol. emendet ipsi rustico.</ab>
+        <ab type="editionText" xml:lang="ang" source="#attenborough" corresp="#wit-e"><pb n="80" ed="#attenborough"/>[Be cyrlisces monnes flettegefeohte.] Gif hwa on cierlisces monnes flette gefeohte, mid syx scill. gebete ðam ceorle.</ab>
+        <ab type="editionText" xml:lang="ang" source="#jurasinski-and-oliver" n="40" corresp="#wit-e"><pb n="338" ed="#jurasinski-and-oliver"/>{XXXVI} Gif hwa cierlisces monnes flette gefeohte, mid syx scill gebete ðam ceorle.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="73" ed="#liebermann"/>Wenn<ptr type="liebermannNote" n="1" target="#Af_39.lnote.de.1"/> jemand im Hause<ptr type="liebermannNote" n="2" target="#Af_39.lnote.de.2"/> eines gemeinfreien Mannes<ptr type="liebermannNote" n="3" target="#Af_39.lnote.de.3"/> ficht, büsse er<ptr type="liebermannNote" n="4" target="#Af_39.lnote.de.4"/> dem Gemeinfreien mit 6 Schill.</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">If someone fights in the house of a common freeman, let him pay the common freeman 6 shillings.</ab>
+        <ab type="translation" xml:lang="en" source="#attenborough" corresp="#wit-e"><pb n="81" ed="#attenborough"/>If anyone fights in the house of a commoner, he shall pay the commoner 6 shillings<ptr type="editorNote" n="1" target="#Af_39.attnote.n.1"/> compensation.</ab>
+        <ab type="translation" xml:lang="en" source="#whitelock"><pb n="415" ed="#whitelock"/>If anyone fights in the house of a <hi rend="italic">ceorl</hi>, he is to pay six shillings compensation to the ceorl.</ab>
+        <ab type="translation" xml:lang="en" source="#jurasinski-and-oliver" corresp="#wit-e"><pb n="339" ed="#jurasinski-and-oliver"/>If someone fights in a <hi rend="italic">ceorl</hi>’s house, let him recompense the <hi rend="italic">ceorl</hi> with six shillings.</ab>
+        <note type="comparison" source="#wormald-mel" n="274"><label>ramification of</label> <ref target="clause:Ine_6">Ine 6–6.4</ref> <quote>four of five Alfredian uses of 'gefeohtan' are scattered ramifications of Ine's law on fighting before the privileged</quote></note>
+        <note type="comparison" source="#wormald-mel" n="279"><label>same penalty, extended</label> <ref target="clause:Ine_6-3">Ine 6.3</ref> <quote>His penalty of six shillings for fighting on a ceorl's 'floor' was the same as Ine's, but this is one of several laws that went on to fix bigger sums</quote></note>
+        <note type="comparison" source="#wormald-mel" n="280"><label>cf. (wergeld enumerations)</label> <ref target="clause:Ine_70">Ine 70</ref> <quote>Alfred enumerated the wergelds ... five times as against Ine's once (n. 80)</quote></note>
+        <note type="comparison" source="#jurasinski-and-oliver" n="339"><label>compare</label> <ref target="clause:Hl_11">Hl 11–13</ref> <quote>Compare rulings against fighting in public in Hloþhere and Eadric §7 to §9 [L11–13] and Ine §6.</quote></note>
+        <note type="comparison" source="#jurasinski-and-oliver" n="339"><label>compare</label> <ref target="clause:Ine_6">Ine 6</ref> <quote>Compare rulings against fighting in public in Hloþhere and Eadric §7 to §9 [L11–13] and Ine §6.</quote></note>
+        <note type="comparedBy" source="#wormald-mel" n="272"><ref target="clause:Af_42-4">Af 42.4</ref></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_39.lnote.oe.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">72</biblScope></bibl><seg type="original" xml:lang="de">cyr. <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">cyr. Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_39.lnote.oe.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">72</biblScope></bibl><seg type="original" xml:lang="de">ðæm <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">ðæm Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_39.lnote.oe.9" n="9" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">72</biblScope></bibl><seg type="original" xml:lang="de">-rl <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">-rl Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_39.lnote.oe.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">72</biblScope></bibl><seg type="original" xml:lang="de">o <hi rend="italic">geänd. in</hi> a</seg><seg type="translation" xml:lang="en" source="#claude">o altered to a</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_39.lnote.oe.6" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">72</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">zweites</hi> e <hi rend="italic">auf Rasur</hi></seg><seg type="translation" xml:lang="en" source="#claude">second e on an erasure</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_39.lnote.oe.10" n="10" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">73</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">so Or;</hi> flet <hi rend="italic">übrige</hi></seg><seg type="translation" xml:lang="en" source="#claude">thus Or; flet the others</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_39.lnote.oe.11" n="11" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">73</biblScope></bibl><seg type="original" xml:lang="de">-fehte <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">-fehte Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_39.lnote.oe.12" n="12" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">73</biblScope></bibl><seg type="original" xml:lang="de">a. d. <hi rend="italic">Brti</hi></seg><seg type="translation" xml:lang="en" source="#claude">a. d. Brti</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Af_39.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">59</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Gemeinfreier 8; Schutz 15a. Das Einschiebsel in Inst. wiederholt Inst. II 59a (aus Af 15)</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf. Gl</hi> Gemeinfreier 8; Schutz 15a. The interpolation in Inst. repeats Inst. II 59a (from Af 15)</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Af_39.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">59</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de">‘Fletz, Diele’ Q, Schmid, gemäss ursprüngl. Sinne. Doch bedeutet das Wort auch das ganze Haus, steht also mit <hi rend="italic">gebures huse</hi> Ine 6, 3 synonym; so nimmt Hn 81, 3 den Satz</seg><seg type="translation" xml:lang="en" source="#claude">‘Floor, hall’ Q, Schmid, in accordance with the original sense. But the word also means the whole house, and is thus synonymous with <hi rend="italic">gebures huse</hi> Ine 6, 3; this is how Hn 81, 3 takes the sentence</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Af_39.lnote.de.3" n="3" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">59</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de">‘gemeinfrei geboren’ Inst.</seg><seg type="translation" xml:lang="en" source="#claude">‘born a common freeman’ Inst.</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Af_39.lnote.de.4" n="4" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">59</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de">ausser <hi rend="italic">wer</hi> (für Getroffenen) <hi rend="italic">and wite</hi> für den Richter. — Q’s Abweichung in der Zahl scheint blosses Verlesen</seg><seg type="translation" xml:lang="en" source="#claude">besides <hi rend="italic">wer</hi> (for the man struck) <hi rend="italic">and wite</hi> for the judge. — Q’s divergence in the number seems a mere misreading</seg></note>
+        <note type="editorNote" subtype="endnote" xml:id="Af_39.attnote.n.1" n="1" source="#attenborough"><bibl><biblScope unit="page">198</biblScope></bibl><seg type="original" xml:lang="en">Cf. Ine, cap. 6 § 3. In Kent the fine for a similar offence was 6 shillings, but the Kentish shilling contained 20 sceattas; cf. Abt. cap. 15, and the note to Abt. cap. 16.</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

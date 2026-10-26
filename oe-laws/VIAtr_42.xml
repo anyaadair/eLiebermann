@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="VIAtr_42">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>VI Atr 42</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Cross-references to other clauses</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Cross-references to other clauses</resp><name ref="#kennedy">Kennedy</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Robertson’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">VIAtr_42</idno>
+        <idno type="citation">VI Atr 42</idno>
+        <idno type="lawCode">VI Atr</idno>
+        <idno type="lawCodeAnchor">VIAtr</idno>
+        <idno type="clause">42</idno>
+        <idno type="citationKey">VIAtr 42</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>VI Æthelred (Enham)</title> <note type="reign">Æthelred II, r. 978–1016</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">256</biblScope></bibl>
+          <bibl xml:id="robertson" type="edition">A. J. Robertson, <title>The Laws of the Kings of England from Edmund to Henry I</title> (Cambridge: Cambridge University Press, 1925), p. <biblScope unit="page">104</biblScope></bibl>
+          <bibl xml:id="rabin-doml" type="edition">Andrew Rabin, ed. and trans., <title>Old English Legal Writings: Wulfstan</title>, Dumbarton Oaks Medieval Library (Cambridge, MA: Harvard University Press, 2020), p. <biblScope unit="page">174</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="kennedy" type="study">A. G. Kennedy, ‘Cnut’s Law Code of 1018’, <title>Anglo-Saxon England</title> 11 (1983), 57–81</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-k" rend="bold"><abbr>K</abbr> <note type="manuscript">London, British Library, Cotton Claudius A.iii</note></witness>
+          <witness xml:id="wit-d-incomplete"><abbr>D (incomplete)</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 201</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 246">16 May 1008–13 May 1011</date><date source="#robertson #wormald-mel" n="|MEL pp. 332–5">1008</date><placeName>Enham</placeName><note type="promulgation">16 May 1008–13 May 1011 (Liebermann, I p. 246); 1008 (Robertson; Wormald, MEL pp. 332–5); Enham</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Spiritual welfare</term><term>Christian obligations</term><term>Ecclesiastical directives</term><term>Ritual</term><term>Fasts</term></keywords>
+        <keywords n="people"><term>Christians</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 1289 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked and corrected against <title>Die Gesetze der Angelsachsen</title> I, p. 256.</change>
+      <change when="2026-10" type="checked">Robertson’s text checked and corrected against her edition, p. 104.</change>
+      <change when="2026-10" type="checked">Liebermann’s text of MS K added from Gesetze I, p. 256.</change>
+      <change when="2026-10" type="checked">Liebermann’s German translation corrected against Gesetze I, p. 256: “der” → “dèr”.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="42">
+        <head><ref type="lawCode" target="law:VIAtr">VI Atr</ref> 42</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="42" corresp="#wit-k"><pb n="256" ed="#liebermann"/>K. Eac we [gyt<ptr type="liebermannNote" n="2" target="#VIAtr_42.lnote.oe.2"/>] willað myngian [georne<ptr type="liebermannNote" n="2" target="#VIAtr_42.lnote.oe.2"/>] freonda gehwilcne, ealswa us neod is gelome to donne, þ<hi rend="italic">æt</hi> gehwa hine sylfne georne beþence,</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="42" corresp="#wit-d-incomplete"><pb n="256" ed="#liebermann"/>And git we willað myngian freonda gehwilcne, ealswa us neod is gelome to donne, ⁊<ptr type="liebermannNote" n="**" target="#VIAtr_42.lnote.oe.star2"/> þ<hi rend="italic">æt</hi> gehwa hine silfne georne beþence,</ab>
+        <ab type="editionText" xml:lang="ang" source="#robertson" n="42[a]" corresp="#wit-k"><pb n="104" ed="#robertson"/>Eac we<ptr type="editorNote" n="1" target="#VIAtr_42.robnote.fn.1"/> gyt willað myngian georne<ptr type="editorNote" n="2" target="#VIAtr_42.robnote.fn.2"/> freonda gehwilcne, ealswa us neod is gelome to donne, þæt gehwa hine sylfne georne beþence,</ab>
+        <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-k"><pb n="174" ed="#rabin-doml"/>Eac we gyt willað myngian georne freonda gehwilcne, ealswa us neod is gelome to donne, þæt gehwa hine sylfne georne beþence.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="257" ed="#liebermann"/>Auch<ptr type="liebermannNote" n="1" target="#VIAtr_42.lnote.de.1"/> (Und noch <hi rend="italic">D</hi>) wollen wir dèr Freunde jeden (eifrig <hi rend="italic">K</hi>) ermahnen, wie häufig zu thun uns nöthig ist, dass jeder eifrig auf sich selbst achte</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">Also (And further, D) we will (eagerly, K) exhort each of our friends, as we often need to do, that everyone take careful heed of himself</ab>
+        <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-k"><pb n="105" ed="#robertson"/>And likewise we desire earnestly to exhort all our friends<ptr type="editorNote" n="1" target="#VIAtr_42.robnote.n.1"/>, as there is need for us to do frequently, to take thought diligently for themselves,</ab>
+        <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-k"><pb n="175" ed="#rabin-doml"/>Moreover, we also earnestly desire to admonish each of our friends, just as there is often need for us to do, to sincerely give thought to themselves.</ab>
+        <note type="comparedBy" source="#liebermann"><ref target="clause:VIIIAtr_43-1">VIII Atr 43.1</ref></note>
+        <note type="comparison" source="#wormald-mel" n="334"><label>recurs in later code</label> <ref target="clause:Cn-1018_part-069">Cn 1018 28–36</ref> <quote>Almost all these additions recurred in codes later drafted by Wulfstan for Cnut (n. 332: VI Atr 42–49, Cn 1018 28–36)</quote></note>
+        <note type="comparedBy" source="#wormald-mel" n="346"><ref target="clause:Cn-1018_part-069">Cn 1018 28–36</ref></note>
+        <note type="comparedBy" source="#kennedy" n="59"><ref target="clause:Cn-1018_part-069">Cn 1018 28–36</ref></note>
+        <note type="editorial">D's ‘⁊’ before ‘þæt gehwa’ should be struck.</note>
+        <note type="textual" source="#rabin-doml">gyt: added in Wulfstan’s handwriting K</note>
+        <note type="textual" source="#rabin-doml">georne: added in Wulfstan’s handwriting K</note>
+        <note type="liebermannNote" subtype="textual" xml:id="VIAtr_42.lnote.oe.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">256</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">spät übergeschr.</hi></seg><seg type="translation" xml:lang="en" source="#claude">written above late</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="VIAtr_42.lnote.oe.star2" n="**" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">256</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">zu streichen</hi></seg><seg type="translation" xml:lang="en" source="#claude">to be deleted</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="VIAtr_42.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">177</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de">42—49 steht in <hi rend="italic">Sermo Lupi</hi> (Wulfstan) ed. Napier 308f.</seg><seg type="translation" xml:lang="en" source="#claude">42—49 occur in the <hi rend="italic">Sermo Lupi</hi> (Wulfstan) ed. Napier 308f.</seg></note>
+        <note type="editorNote" subtype="endnote" xml:id="VIAtr_42.robnote.n.1" n="1" source="#robertson"><bibl><biblScope unit="page">335</biblScope></bibl><seg type="original" xml:lang="en">Cf. 6; 28.</seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="VIAtr_42.robnote.fn.1" n="1" source="#robertson"><bibl><biblScope unit="page">104</biblScope></bibl><label>we</label><seg type="original" xml:lang="en"><hi rend="italic">And git we</hi> D.</seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="VIAtr_42.robnote.fn.2" n="2" source="#robertson"><bibl><biblScope unit="page">104</biblScope></bibl><label>georne</label><seg type="original" xml:lang="en">Om. D.</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

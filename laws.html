@@ -1,0 +1,233 @@
+---
+title: Laws
+section: laws
+description: Search the clauses of the Old English laws, by law code, clause number, keyword, or text.
+scripts:
+  - "ROOT/scripts/eliebermann.js"
+  - "ROOT/scripts/law-search.js"
+---
+<h1>Laws</h1>
+
+<p class="lede">The law codes of early England, as Liebermann edited them, with additional editions and translations. Choose a law code to read it clause by clause, <a href="subjects.html">browse the clauses by subject</a>, or search the clauses below.</p>
+
+<div class="search-bar" role="search">
+    <input type="search" id="q" placeholder="Law code and clause, e.g. Ine 23, Alfred 5, II Cnut 30,1" aria-label="Search by law code (abbreviation or name) and clause">
+    <select id="law" aria-label="Law code"><option value="">All law codes</option></select>
+    <input type="search" id="kw" list="kwlist" placeholder="Keyword, e.g. Theft, Bishops, Churches" aria-label="Keyword: an offence, a kind of person or a place">
+    <datalist id="kwlist"></datalist>
+    <label class="small" style="align-self:center; font-weight:400"><input type="checkbox" id="fulltext"> Also search the texts and translations</label>
+</div>
+
+<p id="count" class="muted small"></p>
+<div id="results"><p class="loading">Loading the law codes…</p></div>
+
+<p class="small muted">Keywords name legal matters, kinds of people and places (<em>Theft</em>, <em>Bishops</em>, <em>Churches</em>). <a href="subjects.html">Browse them all by subject.</a></p>
+
+<script>
+(function () {
+    const root = window.SITE_ROOT || '';
+    const results = document.getElementById('results');
+    const count = document.getElementById('count');
+    const q = document.getElementById('q');
+    const law = document.getElementById('law');
+    const kw = document.getElementById('kw');
+    const fulltext = document.getElementById('fulltext');
+    const params = new URLSearchParams(location.search);
+    q.value = params.get('q') || '';
+    kw.value = params.get('kw') || '';
+    fulltext.checked = params.get('text') === '1';
+    const wantedLaw = params.get('law') || '';
+    const LIMIT = 300;
+    let showAll = false;
+    let clauses = [];
+    let codes = [];
+    let searcher = null;
+    let allTerms = [];
+    const byCode = {};
+
+    const esc = ELieb.escapeXml;
+    // Plain lower-case letters: æ as ae, þ as th, accents removed, punctuation as spaces.
+    const fold = s => ELieb.slugify(s).toLowerCase().replace(/-/g, ' ');
+    const squash = s => fold(s).replace(/ /g, '');
+    const keywords = c => c.offences.concat(c.people, c.places);
+    const codeUrl = code => root + 'lawcode.html?code=' + encodeURIComponent(code);
+    const plural = (n, one, many) => n + ' ' + (n === 1 ? one : many);
+
+    function snippet(c) {
+        const t = c.gloss || c.en || c.text || '';
+        return t.length > 200 ? t.slice(0, 200).replace(/\s+\S*$/, '') + '…' : t;
+    }
+
+    // The law codes in groups (by king), in the order of the database.
+    function groups() {
+        const out = [];
+        codes.forEach(c => {
+            let g = out.find(x => x.name === c.group);
+            if (!g) out.push(g = { name: c.group, reign: '', items: [] });
+            g.items.push(c);
+            // The group's dates: from a code issued by the king alone (not a treaty),
+            // and not from one listed under another king (Ine Rb, issued by Alfred).
+            const otherKing = c.king && c.group !== 'Other laws and legal texts' && !c.group.includes(c.king.split(' ')[0]);
+            if (c.reign && !otherKing && (!g.reign || (g.joint && !/ and /.test(c.king)))) {
+                g.reign = c.reign.replace(/^\[|\]$/g, '');
+                g.joint = / and /.test(c.king) && !/^Hlothhere/.test(c.king);
+            }
+        });
+        return out;
+    }
+
+    // The suggested dates of a law code, short, for the list: the "Place and
+    // date of promulgation" text without scholars' names (in brackets), places,
+    // or remarks with no date in them. The law code's own page has it in full.
+    function summaryDates(text) {
+        const SEASON = /^(Easter|Christmas|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sept?|Oct|Nov|Dec)/;
+        const seen = new Set();
+        const out = [];
+        for (let part of (text || '').split(';')) {
+            part = part.replace(/\([^)\d]*(\)|$)/g, ' ')          // (Whitelock), (Robertson, Wormald), but not (1030?)
+                .replace(/^\s*\?Date:\s*/, '')
+                .replace(/,\s*probably written from .*/, '')
+                .replace(/\s+/g, ' ').trim();
+            // A place, or a place with a condition ("Kingston, if 978–9").
+            const lead = part.match(/^\??([A-ZÐÞ][^\s,]*)/);
+            if (lead && !SEASON.test(lead[1]) && !/^\??(Date|before|after)/.test(part)) continue;
+            // A place after the date ("c.930, ?Archenfield, on the Wye").
+            part = part.replace(/,\s*\??[A-ZÐÞ].*$/, m => {
+                const word = m.replace(/^,\s*\??/, '');
+                return SEASON.test(word) || /^[IVX]+\b/.test(word) ? m : '';   // a month, or "III, IV & VI As"
+            });
+            part = part.replace(/\s*–\s*/g, '–').trim();
+            // Keep dates, and dates relative to other codes ("before III As").
+            if (!/\d/.test(part) && !/^\??(before|after|same time|as for|Easter|Christmas)\b/i.test(part)) continue;
+            const key = part.replace(/[\s,.]/g, '');
+            if (seen.has(key)) continue;
+            seen.add(key);
+            out.push(part);
+        }
+        return out.join('; ');
+    }
+
+    // No search: the list of law codes.
+    function drawCodes() {
+        count.textContent = `${codes.length} law codes, ${clauses.length} clauses`;
+        results.innerHTML = groups().map(g => `
+            <section class="code-group">
+                <h2>${esc(g.name)}${g.reign && g.items[0].king ? ` <span class="code-group-reign">${esc(g.reign)}</span>` : ''}</h2>
+                <ul class="code-list">${g.items.map(c => `
+                    <li>
+                        <a href="${codeUrl(c.code)}"><span class="code-abbr">${esc(c.code)}</span> <span class="code-name">${esc(c.name)}</span></a>
+                        <span class="code-meta">${esc(plural(c.clauses, 'clause', 'clauses'))}${summaryDates(c.date) ? ' · Suggested dates: ' + esc(summaryDates(c.date)) : ''}</span>
+                    </li>`).join('')}
+                </ul>
+            </section>`).join('');
+    }
+
+    function draw() {
+        if (!q.value.trim() && !kw.value.trim() && !law.value) return drawCodes();
+        const term = squash(q.value.trim());
+        const kword = fold(kw.value.trim());
+        const text = fold(q.value.trim());
+        // A law code by its abbreviation or its name, then perhaps a clause ("Alfred 5", "II Cnut 30,1");
+        // otherwise the start of a citation or of a word in a law code's name, as before.
+        const reading = q.value.trim() ? searcher.read(q.value) : null;
+        const byCite = c => reading
+            ? reading.codes.includes(c.code) && LawSearch.clauseMatches(c._keys, reading.clause)
+            : c._cite.some(x => x.startsWith(term));
+        const list = clauses.filter(c =>
+            (!law.value || c.code === law.value) &&
+            (!kword || c._kw.includes(kword)) &&
+            (!term || byCite(c) || (fulltext.checked && c._text.includes(text))));
+
+        const readAs = reading && reading.exact && !law.value
+            ? ` · read as <strong>${reading.codes.map(esc).join(', ')}${reading.clause ? ' ' + esc(clauseLabel(reading.clause)) : ''}</strong>` : '';
+        // A keyword that is a subject: link to its page, with the timeline.
+        const subject = kw.value.trim() && allTerms.find(t => fold(t) === kword);
+        count.innerHTML = `${list.length} of ${clauses.length} clauses${readAs}` +
+            (subject ? ` · <a href="${root}subjects.html?k=${encodeURIComponent(subject)}">See “${esc(subject)}” through all the law codes</a>` : '');
+        if (!list.length) {
+            results.innerHTML = '<p>No clauses match. Try a shorter search, or leave the keyword empty.</p>' + ambiguous();
+            return;
+        }
+        const shown = showAll ? list : list.slice(0, LIMIT);
+        const grouped = [];
+        shown.forEach(c => {
+            const g = grouped[grouped.length - 1];
+            if (g && g.code === c.code) g.items.push(c); else grouped.push({ code: c.code, items: [c] });
+        });
+        results.innerHTML = grouped.map(g => {
+            const info = byCode[g.code] || { name: g.code };
+            return `
+            <h2 class="result-code"><a href="${codeUrl(g.code)}">${esc(info.name)}</a> <span class="code-abbr">${esc(g.code)}</span></h2>
+            <ul class="entry-list clause-list">${g.items.map(c => `
+                <li>
+                    <a class="headword" href="${root}law.html?id=${encodeURIComponent(c.id)}">${esc(c.citation)}</a>
+                    <span class="gloss">${esc(snippet(c))}</span>
+                    ${keywords(c).length ? `<span class="chips">${keywords(c).slice(0, 6).map(k => `<button type="button" class="chip" data-kw="${esc(k)}">${esc(k)}</button>`).join('')}</span>` : ''}
+                </li>`).join('')}
+            </ul>`;
+        }).join('') +
+            (list.length > shown.length ? `<p><button type="button" class="button" id="more">Show all ${list.length} clauses</button></p>` : '');
+    }
+
+    // "el49.3" -> "El 49.3", "prol" -> "Prol." (for the "read as" line)
+    function clauseLabel(k) {
+        return k.replace(/^(prol|inscr|epil|rubr)/, w => w[0].toUpperCase() + w.slice(1) + '. ').replace(/^el/, 'El ').trim();
+    }
+
+    // "Edgar 3": the king made several codes, so say which they are.
+    function ambiguous() {
+        const words = q.value.trim().split(/\s+/);
+        if (words.length < 2) return '';
+        const r = searcher.read(words.slice(0, -1).join(' '));
+        if (!r || r.codes.length < 2) return '';
+        const last = words[words.length - 1];
+        return `<p>That name fits ${r.codes.length} law codes. Which one did you mean?</p><ul class="code-list">${r.codes.map(code =>
+            `<li><a href="?q=${encodeURIComponent(code + ' ' + last)}"><span class="code-abbr">${esc(code + ' ' + last)}</span> <span class="code-name">${esc((byCode[code] || {}).name || '')}</span></a></li>`).join('')}</ul>`;
+    }
+
+    function update() {
+        showAll = false;
+        const p = new URLSearchParams();
+        if (q.value.trim()) p.set('q', q.value.trim());
+        if (law.value) p.set('law', law.value);
+        if (kw.value.trim()) p.set('kw', kw.value.trim());
+        if (fulltext.checked) p.set('text', '1');
+        history.replaceState(null, '', location.pathname + (p.toString() ? '?' + p : ''));
+        draw();
+    }
+
+    [q, law, kw, fulltext].forEach(el => el.addEventListener('input', update));
+    results.addEventListener('click', e => {
+        const chip = e.target.closest('.chip');
+        if (chip) { kw.value = chip.dataset.kw; update(); window.scrollTo(0, 0); return; }
+        if (e.target.id === 'more') { showAll = true; draw(); }
+    });
+
+    Promise.all([
+        fetch(root + 'data/laws.json').then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }),
+        fetch(root + 'oe-laws/codes.json').then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+    ]).then(([list, codeList]) => {
+        codes = codeList.filter(c => list.some(x => x.code === c.code));
+        codes.forEach(c => { byCode[c.code] = c; });
+        list.forEach(c => {
+            const name = (byCode[c.code] || {}).name || '';
+            // The search must match the start of the citation, the law's name, or the start of any word in them
+            // ("ine 23" finds Ine 23.2 but not Mine 23).
+            const words = fold(c.citation + ' ' + name).split(' ').filter(Boolean);
+            c._cite = words.map((w, i) => words.slice(i).join(''));
+            c._keys = LawSearch.clauseKeys(c);
+            c._kw = fold(keywords(c).join(' | '));
+            c._text = fold(c.text + ' ' + c.en);
+        });
+        clauses = list;
+        searcher = LawSearch.build(codes);
+        law.innerHTML = '<option value="">All law codes</option>' + groups().map(g =>
+            `<optgroup label="${esc(g.name)}">${g.items.map(c => `<option value="${esc(c.code)}">${esc(c.code)} – ${esc(c.name)}</option>`).join('')}</optgroup>`).join('');
+        law.value = byCode[wantedLaw] ? wantedLaw : '';
+        const terms = [...new Set(list.flatMap(keywords))].sort((a, b) => a.localeCompare(b));
+        allTerms = terms;
+        document.getElementById('kwlist').innerHTML = terms.map(t => `<option value="${esc(t)}">`).join('');
+        draw();
+    }).catch(() => { results.innerHTML = '<p>The law codes could not be loaded.</p>'; });
+})();
+</script>

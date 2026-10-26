@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="VIAtr_22-3">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>VI Atr 22.3</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Cross-references to other clauses</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Cross-references to other clauses</resp><name ref="#kennedy">Kennedy</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Robertson’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">VIAtr_22-3</idno>
+        <idno type="citation">VI Atr 22.3</idno>
+        <idno type="lawCode">VI Atr</idno>
+        <idno type="lawCodeAnchor">VIAtr</idno>
+        <idno type="clause">22.3</idno>
+        <idno type="citationKey">VIAtr 22.3</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>VI Æthelred (Enham)</title> <note type="reign">Æthelred II, r. 978–1016</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">252</biblScope></bibl>
+          <bibl xml:id="robertson" type="edition">A. J. Robertson, <title>The Laws of the Kings of England from Edmund to Henry I</title> (Cambridge: Cambridge University Press, 1925), p. <biblScope unit="page">96</biblScope></bibl>
+          <bibl xml:id="rabin-doml" type="edition">Andrew Rabin, ed. and trans., <title>Old English Legal Writings: Wulfstan</title>, Dumbarton Oaks Medieval Library (Cambridge, MA: Harvard University Press, 2020), p. <biblScope unit="page">168</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="kennedy" type="study">A. G. Kennedy, ‘Cnut’s Law Code of 1018’, <title>Anglo-Saxon England</title> 11 (1983), 57–81</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-k" rend="bold"><abbr>K</abbr> <note type="manuscript">London, British Library, Cotton Claudius A.iii</note></witness>
+          <witness xml:id="wit-d-incomplete"><abbr>D (incomplete)</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 201</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 246">16 May 1008–13 May 1011</date><date source="#robertson #wormald-mel" n="|MEL pp. 332–5">1008</date><placeName>Enham</placeName><note type="promulgation">16 May 1008–13 May 1011 (Liebermann, I p. 246); 1008 (Robertson; Wormald, MEL pp. 332–5); Enham</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Church festivals</term><term>Fasts</term><term>Ecclesiastical directives</term></keywords>
+        <keywords n="people"><term>St Philip</term><term>St James</term><term>Apostles</term><term>All people</term><term>Named individuals</term><term>Saints</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 1256 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 252.</change>
+      <change when="2026-10" type="checked">Liebermann’s text of MS K added from Gesetze I, p. 252.</change>
+      <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 252: “⁊” → “And”.</change>
+      <change when="2026-10" type="checked">Liebermann’s German translation corrected against Gesetze I, p. 252: “Philippus-” → “Philippus”.</change>
+      <change when="2026-10" type="checked">The modern editor’s translation corrected against Robertson, p. 97: “festival” → “festival,”.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="22.3">
+        <head><ref type="lawCode" target="law:VIAtr">VI Atr</ref> 22.3</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="22.3" corresp="#wit-k"><pb n="252" ed="#liebermann"/>⁊ to æghwilces apostoles heahtide fæste man georne, butan to Philippus ⁊ Iacobus freolse ne beode we nan fæsten for þam easterlican freolse, butan hwa wille; elles oþre freolsa ⁊ fæstena healde man georne, swa swa þa heoldan þa þe betst heoldan,</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="22.3" corresp="#wit-d-incomplete"><pb n="252" ed="#liebermann"/>And to æghwilces ap<hi rend="italic">osto</hi>les heahtide fæste man georne, buton<ptr type="liebermannNote" n="2" target="#VIAtr_22-3.lnote.oe.2"/> Philippus ⁊ Iacob<hi rend="italic">us</hi> freolse ne beode we nán fæsten for ðam eastran dæges freolse; elles oðre freolsa ⁊ fæstena healde man georne, swa swa þa heoldon þa ðe betst heoldon,</ab>
+        <ab type="editionText" xml:lang="ang" source="#robertson" n="22.3" corresp="#wit-k"><pb n="96" ed="#robertson"/>⁊ to æghwilces apostoles heahtide fæste man georne, butan to<ptr type="editorNote" n="3" target="#VIAtr_22-3.robnote.fn.3"/> Philippus ⁊ Iacobus freolse ne beode we nan fæsten for þam easterlican<ptr type="editorNote" n="8" target="#VIAtr_22-3.robnote.fn.8"/> freolse, butan hwa wille<ptr type="editorNote" n="9" target="#VIAtr_22-3.robnote.fn.9"/>.</ab>
+        <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-k"><pb n="168" ed="#rabin-doml"/>And to æghwilces apostoles heahtide fæste man georne, butan to Philippus and Iacobus freolse ne beode we nan fæsten for þam Easterlican freolse, butan hwa wille.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="253" ed="#liebermann"/>Und zu jeden Apostels Festzeit faste man willig; nur zum Philippus und Jacobusfeste [1. Mai] gebieten wir kein Fasten wegen des österlichen (Ostertages <hi rend="italic">D</hi>) Festes, ausser wer freiwill[ig fastet <hi rend="italic">K</hi>]; andere Feste und Fasten sonst halte man willig, so wie jene, welche [sie] bestens hielten, gehalten haben,</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">And at the festival of every apostle let there be eager fasting; only for the feast of Philip and James [1 May] we command no fast, because of the Easter (Easter Day's, D) festival, except for whoever wishes [to fast, K]; other feasts and fasts otherwise let them be eagerly kept, as those kept them who kept them best,</ab>
+        <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-k"><pb n="97" ed="#robertson"/>And at the festival of every apostle fasting shall be strictly observed, except that at the festival of Philip and James we enjoin no fast, because of the Easter festival, unless anyone desires to fast.</ab>
+        <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-k"><pb n="169" ed="#rabin-doml"/>And one must fast readily for the feast of each apostle, but we order no fast for the Feasts of Philip and James because of Easter, unless one wishes to do so.</ab>
+        <note type="comparison" source="#liebermann" n="253"><ref target="clause:VAtr_14-1">V Atr 14.1</ref>; <ref target="clause:VAtr_15">V Atr 15</ref></note>
+        <note type="comparisonPrinted" source="#liebermann">ebd. 14, 1 | ebd. 15</note>
+        <note type="comparedBy" source="#liebermann"><ref target="clause:ICn_16">I Cn 16</ref>; <ref target="clause:ICn_16-1">I Cn 16.1</ref></note>
+        <note type="comparison" source="#wormald-mel" n="334"><label>lines up with (G2 version)</label> <ref target="clause:VAtr_14-1">V Atr 14.1</ref> <quote>This text also lined up with the second G statement of 'V' in nearly every way that it varied from the first (n. 333: VI 22.3, V 14.1)</quote></note>
+        <note type="comparison" source="#rabin-doml" n="419"><label>similar clause</label> <ref target="clause:VAtr_14-1">V Atr 14.1</ref> <quote>Compare the similar clause at 5 Æthelred 14.1.</quote></note>
+        <note type="comparedBy" source="#kennedy" n="59"><ref target="clause:Cn-1018_part-040">Cn 1018 14.2–14.3</ref></note>
+        <note type="comparedBy" source="#kennedy" n="59"><ref target="clause:Cn-1018_part-042">Cn 1018 14.4–14.5</ref></note>
+        <note type="translator" source="#rabin-doml">Feasts of Philip and James: The former is May 3, the latter April 30, though now more frequently celebrated on July 25. Compare the similar clause at 5 Æthelred 14.1.</note>
+        <note type="liebermannNote" subtype="textual" xml:id="VIAtr_22-3.lnote.oe.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">252</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">ohne</hi> to</seg><seg type="translation" xml:lang="en" source="#claude">without to</seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="VIAtr_22-3.robnote.fn.3" n="3" source="#robertson"><bibl><biblScope unit="page">96</biblScope></bibl><label>⁊</label><seg type="original" xml:lang="en">Om. D.</seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="VIAtr_22-3.robnote.fn.8" n="8" source="#robertson"><bibl><biblScope unit="page">96</biblScope></bibl><label>easterlican</label><seg type="original" xml:lang="en"><hi rend="italic">eastran dæges fr.</hi> D.</seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="VIAtr_22-3.robnote.fn.9" n="9" source="#robertson"><bibl><biblScope unit="page">96</biblScope></bibl><label>wille</label><seg type="original" xml:lang="en"><hi rend="italic">b. hw. w.</hi> om. D.</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

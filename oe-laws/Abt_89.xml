@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Abt_89">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Abt 89</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#oliver">Oliver</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#oliver">Oliver</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Attenborough’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">Abt_89</idno>
+        <idno type="citation">Abt 89</idno>
+        <idno type="lawCode">Abt</idno>
+        <idno type="lawCodeAnchor">Abt</idno>
+        <idno type="clause">89</idno>
+        <idno type="citationKey">Abt 89</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Æthelberht’s Code</title> <note type="reign">Æthelberht, r. ?584–616</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">8</biblScope></bibl>
+          <bibl xml:id="oliver" type="edition">Lisi Oliver, <title>The Beginnings of English Law</title> (Toronto: University of Toronto Press, 2002), p. <biblScope unit="page">80</biblScope></bibl>
+          <bibl xml:id="attenborough" type="edition">F. L. Attenborough, <title>The Laws of the Earliest English Kings</title> (Cambridge: Cambridge University Press, 1922), p. <biblScope unit="page">16</biblScope></bibl>
+          <bibl xml:id="whitelock" type="translation">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007), p. <biblScope unit="page">393</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-h"><abbr>H</abbr> <note type="manuscript">Strood, Medway Archive and Local Studies Centre, MS DRc/R1 (Textus Roffensis; formerly Rochester, Cathedral Library, A.3.5), c. 1120–25</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 3">601–4</date><date source="#whitelock" n="EHD p. 390">597–616, perhaps 602–3</date><date source="#wormald-mel" n="MEL pp. 100–1">?614 or just after</date><note type="promulgation">601–4 (Liebermann, I p. 3); 597–616, perhaps 602–3 (Whitelock, EHD p. 390); ?614 or just after (Wormald, MEL pp. 100–1)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Theft</term><term>Slavery</term><term>Fines</term></keywords>
+        <keywords n="people"><term>Thief</term><term>Slave</term><term>All people</term><term>Secular classes</term><term>Rank</term></keywords>
+        <keywords n="locations"><term>Highways</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 128 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 8.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="89">
+        <head><ref type="lawCode" target="law:Abt">Abt</ref> 89</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="89" corresp="#wit-h"><pb n="8" ed="#liebermann"/>Ðeowæs wegreaf se III scillingas.</ab>
+        <ab type="editionText" xml:lang="ang" source="#attenborough" corresp="#wit-h"><pb n="16" ed="#attenborough"/>Ðeowæs wegreaf se III scillingas.</ab>
+        <ab type="editionText" xml:lang="ang" source="#oliver" n="82" corresp="#wit-h"><pb n="80" ed="#oliver"/>Ðeowæs wegreaf se III scillingas.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="8" ed="#liebermann"/>Wegraub<ptr type="liebermannNote" n="1" target="#Abt_89.lnote.de.1"/> durch<ptr type="liebermannNote" n="2" target="#Abt_89.lnote.de.2"/> einen Sklaven sei 3 Schillinge.<ptr type="liebermannNote" n="3" target="#Abt_89.lnote.de.3"/></ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">Highway robbery by a slave is to be 3 shillings.</ab>
+        <ab type="translation" xml:lang="en" source="#attenborough" corresp="#wit-h"><pb n="17" ed="#attenborough"/>The sum to be paid for<ptr type="editorNote" n="1" target="#Abt_89.attnote.n.1"/> robbing a slave on the highway shall be 3 shillings.</ab>
+        <ab type="translation" xml:lang="en" source="#whitelock" corresp="#wit-h"><pb n="393" ed="#whitelock"/>Highway robbery of [or by?] a slave is to be three shillings.</ab>
+        <ab type="translation" xml:lang="en" source="#oliver" corresp="#wit-h"><pb n="81" ed="#oliver"/>A slave’s highway robbery shall be [paid for with] 3 shillings.</ab>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Abt_89.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">17</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Strasse 5. a; <hi rend="italic">o.</hi> 19²</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf. Gl</hi> Strasse 5. a; <hi rend="italic">above</hi> 19²</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Abt_89.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">17</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de">Dieser Gen. subjectivus ist weitaus der häufigere; doch heisst <hi rend="italic">bot friges mannes</hi> ‘Busse für einen Freien’ <hi rend="italic">o.</hi> 74</seg><seg type="translation" xml:lang="en" source="#claude">This subjective genitive is by far the more common; yet <hi rend="italic">bot friges mannes</hi> means ‘compensation for a free man’ <hi rend="italic">above</hi> 74</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Abt_89.lnote.de.3" n="3" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">17</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de">Diese Busse ist weit kleiner als die, welche der Freie zahlen würde, und zwar über die Hälfte. Denn das Doppelte zahlt schon der freie Beihelfer <hi rend="italic">o.</hi> 19, also der freie Strassenräuber selbst mehr. Als Verletzter ist der Gemeinfreie zu denken. Mehr zu zahlen war, wenn der Unfreie einen Adligen beraubte. Hinzu tritt, was der Unfreie oder sein Herr zahlen muss als Ersatz des Geraubten und als dessen Mehrfaches zur Busse, abgesehen von Gliederbussen für etwaige Wunden; daneben Strafgeld für den Richter</seg><seg type="translation" xml:lang="en" source="#claude">This compensation is far smaller – by more than half – than the one a free man would pay. For the free accomplice already pays double <hi rend="italic">above</hi> 19, so the free highway robber himself would pay more still. The injured party is to be thought of as a common freeman. More would have to be paid if the unfree man robbed a nobleman. To this is added what the unfree man or his lord must pay as replacement of the stolen property and, as compensation, a multiple of it, apart from compensation for limbs for any wounds; and besides this a fine to the judge</seg></note>
+        <note type="editorNote" subtype="endnote" xml:id="Abt_89.attnote.n.1" n="1" source="#attenborough"><bibl><biblScope unit="page">179</biblScope></bibl><seg type="original" xml:lang="en">Liebermann understands the law to mean ‘robbery <hi rend="italic">by</hi> a slave.’</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

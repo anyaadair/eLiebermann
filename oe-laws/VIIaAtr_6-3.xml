@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="VIIaAtr_6-3">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>VIIa Atr 6.3</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Transcription of Robertson’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Whitelock’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">VIIaAtr_6-3</idno>
+        <idno type="citation">VIIa Atr 6.3</idno>
+        <idno type="lawCode">VIIa Atr</idno>
+        <idno type="lawCodeAnchor">VIIaAtr</idno>
+        <idno type="clause">6.3</idno>
+        <idno type="citationKey">VIIaAtr 6.3</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>VIIa Æthelred</title> <note type="reign">Æthelred II, r. 978–1016</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">262</biblScope></bibl>
+          <bibl xml:id="robertson" type="edition">A. J. Robertson, <title>The Laws of the Kings of England from Edmund to Henry I</title> (Cambridge: Cambridge University Press, 1925), p. <biblScope unit="page">116</biblScope></bibl>
+          <bibl xml:id="rabin-doml" type="edition">Andrew Rabin, ed. and trans., <title>Old English Legal Writings: Wulfstan</title>, Dumbarton Oaks Medieval Library (Cambridge, MA: Harvard University Press, 2020), p. <biblScope unit="page">188</biblScope></bibl>
+          <bibl xml:id="whitelock" type="translation">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007), p. <biblScope unit="page">454</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-d"><abbr>D</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 201</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 262">992–1011</date><date source="#robertson">no evidence of exact date</date><date source="#whitelock" n="EHD p. 452">probably 1009</date><date source="#wormald-mel" n="MEL pp. 331–2">1009</date><placeName>Bath</placeName><note type="promulgation">992–1011 (Liebermann, I p. 262); no evidence of exact date (Robertson); probably 1009 (Whitelock, EHD p. 452); 1009 (Wormald, MEL pp. 331–2); Bath</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Ecclesiastical directives</term><term>Ritual</term><term>Prayer</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 1414 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text added from <title>Die Gesetze der Angelsachsen</title> I, p. 262.</change>
+      <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 262: “⁊ æt ælcan tídsange eal hired aþenedum limum ætforan Godes weofode singe þone sealm: ‘Domine, quid multiplicati sunt’ ⁊ preces ⁊ col'.” → “⁊ æt ælcan tídsange eal hired aþenedum limum ætforan Godes weofode singe þone sealm: ‘Domine, quid multiplicati sunt’ ⁊ preces ⁊ col'. (expanded letters in italics: m, m, omi, re)”.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="6.3">
+        <head><ref type="lawCode" target="law:VIIaAtr">VIIa Atr</ref> 6.3</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="6.3" corresp="#wit-d"><pb n="262" ed="#liebermann"/>⁊ æt ælcan tídsange eal hired aþenedu<hi rend="italic">m</hi> limu<hi rend="italic">m</hi> ætforan Godes weofode singe þone sealm: ‘D<hi rend="italic">omi</hi>ne, quid multiplicati sunt’ ⁊ p<hi rend="italic">re</hi>ces ⁊ col'.</ab>
+        <ab type="editionText" xml:lang="ang" source="#robertson" n="6.3" corresp="#wit-d"><pb n="116" ed="#robertson"/>⁊ æt ælcan tídsange eal hired aþenedum limum ætforan Godes weofode singe þone sealm: "Domine, quid multiplicati sunt" ⁊ preces ⁊ col'.</ab>
+        <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-d"><pb n="188" ed="#rabin-doml"/>And æt ælcan tidsange eal hired aþenedum limum ætforan Godes weofode singe þone sealm: “<hi rend="italic">Domine, quid multiplicati sunt</hi>,” and <hi rend="italic">preces</hi> and <hi rend="italic">col</hi>.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="262" ed="#liebermann"/>Und bei jeder Hora singe der ganze Convent mit vor Gottes Altar ausgestreckten Gliedern folgenden Psalm: ‘Domine, quid multiplicati sunt’ und Preces und Collecta.</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">And at every service of the hours let the whole community, lying prostrate before God's altar, sing the psalm ‘Lord, how are they increased’, with the prayers and collect.</ab>
+        <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-d"><ptr type="editorNote" n="1" target="#VIIaAtr_6-3.robnote.n.1"/><pb n="117" ed="#robertson"/>And at every service all the brotherhood, prostrate before the altar of God, shall chant the psalm: "O Lord, how are they multiplied" and the Prayers and Collect.</ab>
+        <ab type="translation" xml:lang="en" source="#whitelock" corresp="#wit-d"><pb n="454" ed="#whitelock"/>And at each of the canonical hours the whole community, prostrate before God’s altar, is to sing the psalm: “Why, O Lord, are they multiplied”<ptr type="editorNote" n="5" target="#VIIaAtr_6-3.whinote.n.5"/> and the prayers and collects.<ptr type="editorNote" n="6" target="#VIIaAtr_6-3.whinote.n.6"/></ab>
+        <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-d"><pb n="189" ed="#rabin-doml"/>And at each service, the whole community, prostrate with outstretched arms before God’s altar, is to sing the psalm, “<hi rend="italic">Lord, how are they multiplied</hi>,” and the prayers and Collect.</ab>
+        <note type="passageSource">Ps. 3:1</note>
+        <note type="comparison" source="#liebermann" n="262"><ref target="clause:VIIAtr_3-1">VII Atr 3.1</ref></note>
+        <note type="comparisonPrinted" source="#liebermann">ebd.</note>
+        <note type="comparedBy" source="#liebermann"><ref target="clause:VIIAtr_3-1">VII Atr 3.1</ref></note>
+        <note type="editorial">Liebermann compares VII Atr 3.1.; AU: corrected against Rabin p. 188 / 189, October 2026 (was “And æt ælcan tidsange eal hired aþenedum limum ætforan Godes weofode singe þone sealm: “Domine, quid multiplicati sunt,” and preces and col.”, now “And æt ælcan tidsange eal hired aþenedum limum ætforan Godes weofode singe þone sealm: “Domine, quid multiplicati sunt,” and preces and col. (expanded letters in italics: Domine, quid multiplicati sunt, preces, col)”); AV: corrected against Rabin p. 188 / 189, October 2026 (was “And at each service, the whole community, prostrate with outstretched arms before God’s altar, is to sing the psalm, “Lord, how are they multiplied,” and the prayers and Collect.”, now “And at each service, the whole community, prostrate with outstretched arms before God’s altar, is to sing the psalm, “Lord, how are they multiplied,” and the prayers and Collect. (expanded letters in italics: Lord, how are they multiplied)”)</note>
+        <note type="translator" source="#rabin-doml">Lord, how they are multiplied: Psalm 3.</note>
+        <note type="editorNote" subtype="endnote" xml:id="VIIaAtr_6-3.robnote.n.1" n="1" source="#robertson"><bibl><biblScope unit="page">338</biblScope></bibl><seg type="original" xml:lang="en">Cf. VII, 3, 1.</seg></note>
+        <note type="editorNote" subtype="translationFootnote" xml:id="VIIaAtr_6-3.whinote.n.5" n="5" source="#whitelock"><bibl><biblScope unit="page">454</biblScope></bibl><label>multiplied”</label><seg type="original" xml:lang="en">Psalm iii</seg></note>
+        <note type="editorNote" subtype="translationFootnote" xml:id="VIIaAtr_6-3.whinote.n.6" n="6" source="#whitelock"><bibl><biblScope unit="page">454</biblScope></bibl><label>collects</label><seg type="original" xml:lang="en">The Latin (3.1) says “the collect against the heathen”</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

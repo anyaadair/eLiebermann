@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Hu_9">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Hu 9</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Robertson’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">Hu_9</idno>
+        <idno type="citation">Hu 9</idno>
+        <idno type="lawCode">Hu</idno>
+        <idno type="lawCodeAnchor">Hu</idno>
+        <idno type="clause">9</idno>
+        <idno type="citationKey">Hu 9</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Hundred Ordinance (I Edgar)</title> <note type="reign">Edgar, r. 957/9–975</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">194</biblScope></bibl>
+          <bibl xml:id="robertson" type="edition">A. J. Robertson, <title>The Laws of the Kings of England from Edmund to Henry I</title> (Cambridge: Cambridge University Press, 1925), p. <biblScope unit="page">18</biblScope></bibl>
+          <bibl xml:id="whitelock" type="translation">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007), p. <biblScope unit="page">433</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-b" rend="bold"><abbr>B</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383</note></witness>
+          <witness xml:id="wit-q"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note></witness>
+          <witness xml:id="wit-cons-cn"><abbr>Cons.Cn.</abbr> <note type="manuscript">Consiliatio Cnuti (Latin translation, early 12th c.)</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann #robertson" n="I p. 192|">946–c.961</date><date source="#whitelock" n="EHD p. 431">939–c.961</date><date source="#wormald-mel" n="MEL p. 378">during or soon after Edmund's reign</date><note type="promulgation">946–c.961 (Liebermann, I p. 192; Robertson); 939–c.961 (Whitelock, EHD p. 431); during or soon after Edmund's reign (Wormald, MEL p. 378)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Ordeal</term><term>Ritual</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 932 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 194.</change>
+      <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 194: “Ðæt isen, ðe bið to ðrimfealdum ordale, þæt wege III pund.” → “Ðæt isen, ðe bið to ðrimfealdum ordale, þæt wege III pund. (expanded letters in italics: æt)”.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="9">
+        <head><ref type="lawCode" target="law:Hu">Hu</ref> 9</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="9" corresp="#wit-b"><pb n="194" ed="#liebermann"/>Ðæt isen, ðe bið to ðrimfealdum ordale, þ<hi rend="italic">æt</hi> wege III pund.<ptr type="liebermannNote" n="*" target="#Hu_9.lnote.oe.star"/><ptr type="liebermannNote" n="4" target="#Hu_9.lnote.oe.4"/></ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="9" corresp="#wit-q"><pb n="194" ed="#liebermann"/>Ferrum, quod<ptr type="liebermannNote" n="15" target="#Hu_9.lnote.oe.15-2"/> facit ad triplex ordalium, debet ponderare LX solidos.<ptr type="liebermannNote" n="16" target="#Hu_9.lnote.oe.16"/></ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="9" corresp="#wit-cons-cn"><pb n="195" ed="#liebermann"/>Ferrum<ptr type="liebermannNote" n="14" target="#Hu_9.lnote.oe.14"/> triplicis Dei iudicii ponderet III<ptr type="liebermannNote" n="15" target="#Hu_9.lnote.oe.15"/> libras.</ab>
+        <ab type="editionText" xml:lang="ang" source="#robertson" n="9" corresp="#wit-b"><pb n="18" ed="#robertson"/>Ðæt isen ðe bið to ðrimfealdum ordale, þæt wege III pund<ptr type="editorNote" n="3" target="#Hu_9.robnote.fn.3"/>.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="195" ed="#liebermann"/>Das<ptr type="liebermannNote" n="1" target="#Hu_9.lnote.de.1"/> Eisen, welches zum dreifachen Ordale gehört, das wiege 3<ptr type="liebermannNote" n="2" target="#Hu_9.lnote.de.2"/> Pfund.<ptr type="liebermannNote" n="3" target="#Hu_9.lnote.de.3"/></ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">The iron which belongs to the threefold ordeal is to weigh 3 pounds.</ab>
+        <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-b"><ptr type="editorNote" n="1" target="#Hu_9.robnote.n.1"/><pb n="19" ed="#robertson"/>The iron for the triple ordeal shall weigh three pounds.</ab>
+        <ab type="translation" xml:lang="en" source="#whitelock" corresp="#wit-b"><pb n="433" ed="#whitelock"/>The iron which belongs to the three-fold ordeal is to weigh three pounds.</ab>
+        <note type="comparedBy" source="#liebermann"><ref target="clause:Blas_1">Blas 1</ref></note>
+        <note type="editorial">‘and to anfaldum an pund’ was added in the margin of B in the 16th century (not in the archetype, as Quadr. and Cons. Cn. show). The Latin's ‘LX solidos’ = 3 pounds. In B, I Atr follows in the same hand; in Quadr., IV As.</note>
+        <note type="liebermannNote" subtype="textual" xml:id="Hu_9.lnote.oe.star" n="*" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">194</biblScope></bibl><seg type="original" xml:lang="de">and to anfaldu<hi rend="italic">m</hi> an pund <hi rend="italic">im</hi> 16. <hi rend="italic">Jh. am Rande zugefügt</hi> [<hi rend="italic">nicht archetyp, laut Quadr., Consil. Cn.</hi>].</seg><seg type="translation" xml:lang="en" source="#claude">and to anfaldu<hi rend="italic">m</hi> an pund added in the margin in the 16th cent. [not in the archetype, according to Quadr., Consil. Cn.].</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Hu_9.lnote.oe.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">194</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">folgt in derselben Hand:</hi> Æðelredes lage, <hi rend="italic">d. i.</hi> I Atr.</seg><seg type="translation" xml:lang="en" source="#claude">followed in the same hand by: Æðelredes lage, i.e. I Atr.</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Hu_9.lnote.oe.14" n="14" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">195</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Cap.</hi> 9 <hi rend="italic">aus Cb Hr; fehlt Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">Cap. 9 from Cb Hr; lacking in Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Hu_9.lnote.oe.15" n="15" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">195</biblScope></bibl><seg type="original" xml:lang="de">li. III <hi rend="italic">Cb.</hi></seg><seg type="translation" xml:lang="en" source="#claude">li. III Cb.</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Hu_9.lnote.oe.15-2" n="15" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">194</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt K</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in K</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Hu_9.lnote.oe.16" n="16" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">194</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">folgt</hi> IV As.; <hi rend="italic">o. S.</hi> 171.</seg><seg type="translation" xml:lang="en" source="#claude">IV As. follows; above p. 171.</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Hu_9.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">133</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">Der Satz = Blas 1, <hi rend="italic">o</hi>. I S. 388, welches Stück im Archetyp fast unmittelbar vorhergeht; <hi rend="italic">s</hi>. Einl. 8</seg><seg type="translation" xml:lang="en" source="#claude">The sentence = Blas 1, <hi rend="italic">above</hi> I p. 388, a piece which in the archetype comes almost immediately before; <hi rend="italic">see</hi> Introduction 8</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Hu_9.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">133</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Eisenordal 8</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf. Gl</hi> Eisenordal 8</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Hu_9.lnote.de.3" n="3" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">133</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">Q spricht wie <hi rend="italic">o</hi>. 3, 1 von Normannischen Schillingen zu ¹/₂₀ £, von denen 60 = 720 Silberpfennige damals noch nahezu drei kleine Römerpfund wogen. <hi rend="italic">Vgl. Gl</hi> Gewicht 1</seg><seg type="translation" xml:lang="en" source="#claude">Q, as <hi rend="italic">above</hi> 3, 1, speaks of Norman shillings of ¹/₂₀ £, 60 of which = 720 silver pennies then still weighed almost three small Roman pounds. <hi rend="italic">Cf. Gl</hi> Gewicht 1</seg></note>
+        <note type="editorNote" subtype="endnote" xml:id="Hu_9.robnote.n.1" n="1" source="#robertson"><bibl><biblScope unit="page">302</biblScope></bibl><seg type="original" xml:lang="en">Cf. <hi rend="italic">Be Blas.</hi>: <hi rend="italic">þæt man…myclade þæt ordal ysen</hi>, <hi rend="italic">þæt hit gewege þry pund</hi>. Schmid, following B, reads ⁊ <hi rend="italic">to anfealdum an pund</hi>.</seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="Hu_9.robnote.fn.3" n="3" source="#robertson"><bibl><biblScope unit="page">18</biblScope></bibl><label>pund</label><seg type="original" xml:lang="en">⁊ <hi rend="italic">to anfaldum an pund</hi>, added in the margin in later handwriting.</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

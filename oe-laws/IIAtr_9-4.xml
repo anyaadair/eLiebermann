@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IIAtr_9-4">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>II Atr 9.4</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Robertson’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">IIAtr_9-4</idno>
+        <idno type="citation">II Atr 9.4</idno>
+        <idno type="lawCode">II Atr</idno>
+        <idno type="lawCodeAnchor">IIAtr</idno>
+        <idno type="clause">9.4</idno>
+        <idno type="citationKey">IIAtr 9.4</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>II Æthelred (Treaty with Olaf)</title> <note type="reign">Æthelred II, r. 978–1016</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">226</biblScope></bibl>
+          <bibl xml:id="robertson" type="edition">A. J. Robertson, <title>The Laws of the Kings of England from Edmund to Henry I</title> (Cambridge: Cambridge University Press, 1925), p. <biblScope unit="page">62</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="whitelock" type="study">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007)</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-b" rend="bold"><abbr>B</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383</note></witness>
+          <witness xml:id="wit-q"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note></witness>
+          <witness xml:id="wit-ld"><abbr>Ld</abbr> <note type="manuscript">William Lambarde, Archaionomia (London, 1568) – printed from manuscripts now lost</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 220">c.1000</date><date source="#whitelock" n="EHD p. 441">991 or 994</date><date source="#wormald-mel" n="MEL p. 321">mid-990s</date><note type="promulgation">c.1000 (Liebermann, I p. 220); 991 or 994 (Whitelock, EHD p. 441); mid-990s (Wormald, MEL p. 321)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Attachment</term><term>Legal procedure</term><term>Legal principles</term><term>Oath and pledge</term><term>Commerce</term></keywords>
+        <keywords n="people"><term>Owner of goods</term><term>Witnesses</term><term>Trustworthy men</term><term>Buyer of goods</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 1070 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 226.</change>
+      <change when="2026-10" type="checked">Robertson’s translation checked and corrected against her edition, p. 63.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="9.4">
+        <head><ref type="lawCode" target="law:IIAtr">II Atr</ref> 9.4</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="9.4" corresp="#wit-b"><pb n="226" ed="#liebermann"/>Eac betweox teame, gif hwa tofehð ⁊ na furðor team ne cenð, ac agnian wile<ptr type="liebermannNote" n="27" target="#IIAtr_9-4.lnote.oe.27"/>, ne mæg mon ðæs wyrnan, gif getrywe gewitnes<ptr type="liebermannNote" n="28" target="#IIAtr_9-4.lnote.oe.28"/> him to agenunge rymð: forðam<ptr type="liebermannNote" n="26" target="#IIAtr_9-4.lnote.oe.26"/> agnung<ptr type="liebermannNote" n="29" target="#IIAtr_9-4.lnote.oe.29"/> bið ner ðam<ptr type="liebermannNote" n="19" target="#IIAtr_9-4.lnote.oe.19-2"/> ðe hæfð ðonne ðam<ptr type="liebermannNote" n="19" target="#IIAtr_9-4.lnote.oe.19-2"/> ðe æftersprecð.<ptr type="liebermannNote" n="30" target="#IIAtr_9-4.lnote.oe.30"/></ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="9.4" corresp="#wit-q"><pb n="226" ed="#liebermann"/>Etiam<ptr type="liebermannNote" n="18" target="#IIAtr_9-4.lnote.oe.18"/> inter aduocandum, si quis hoc recipiat<ptr type="liebermannNote" n="19" target="#IIAtr_9-4.lnote.oe.19"/> nec ultra aduocet, si propriare sibi uelit, non potest hoc ei iure denegari<ptr type="liebermannNote" n="20" target="#IIAtr_9-4.lnote.oe.20"/>, si credibile testimonium locum ei faciat accedendi: quia propriatio propinquior semper<ptr type="liebermannNote" n="21" target="#IIAtr_9-4.lnote.oe.21"/> est possidenti quam repetenti.<ptr type="liebermannNote" n="22" target="#IIAtr_9-4.lnote.oe.22"/></ab>
+        <ab type="editionText" xml:lang="ang" source="#robertson" n="9.4" corresp="#wit-b"><pb n="62" ed="#robertson"/>Eac betweox teame, gif hwa tofehð ⁊ na furðor team ne cenð ac agnian wille, ne mæg mon ðæs wyrnan, gif getrywe gewitnes him to agenunge rymð, forðam agnung bið ner ðam ðe hæfð ðonne ðam ðe æftersprecð.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="227" ed="#liebermann"/>Ferner bei [ungebrochen] fortlaufendem<ptr type="liebermannNote" n="1" target="#IIAtr_9-4.lnote.de.1"/> Gewährzuge: wenn ein [Bezogener] den Schub annimmt und keinen ferneren Gewährsmann angiebt, sondern [das Eingeklagte] als sein ursprüngliches Eigen<ptr type="liebermannNote" n="2" target="#IIAtr_9-4.lnote.de.2"/> erweisen will, so kann er daran [vom Anefänger] nicht gehindert werden, wenn vertrauenswerthes Zeugniss ihm zum Eigenthumserweise den Weg öffnet: denn Eigenthumserweis<ptr type="liebermannNote" n="3" target="#IIAtr_9-4.lnote.de.3"/> ist dem Inhaber<ptr type="liebermannNote" n="4" target="#IIAtr_9-4.lnote.de.4"/> näher als dem Einklagenden.</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">Further, during [unbroken, continuing] vouching to warranty: if a [person vouched] accepts the vouching and declares no further warrantor, but wishes to prove [the claimed item] his original property, he cannot be prevented [by the claimant], if trustworthy witness opens the way for him to prove ownership: for proof of ownership is nearer to the possessor than to the one who claims it.</ab>
+        <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-b"><pb n="63" ed="#robertson"/>Further, in the course of vouching to warranty, if anyone accepts and does not carry the process any farther but desires to declare himself the owner [of the goods]<ptr type="editorNote" n="1" target="#IIAtr_9-4.robnote.n.1"/>, no-one can deny his claim, if trustworthy witnesses establish his ownership of the goods, for a priori the actual possessor must be regarded as having more right than the claimant<ptr type="editorNote" n="2" target="#IIAtr_9-4.robnote.n.2"/>.</ab>
+        <note type="editorial">In B and Ld, Dunsæte (Schmid's App. I) follows after a blank line; in Quadr., Dunsæte follows.</note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIAtr_9-4.lnote.oe.18" n="18" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">226</biblScope></bibl><seg type="original" xml:lang="de">E. i. a. <hi rend="italic">als Schluss von</hi> 9, 3 <hi rend="italic">RTM</hi></seg><seg type="translation" xml:lang="en" source="#claude">E. i. a. as the end of 9, 3 RTM</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIAtr_9-4.lnote.oe.19" n="19" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">226</biblScope></bibl><seg type="original" xml:lang="de">inc. <hi rend="italic">MHkBr</hi></seg><seg type="translation" xml:lang="en" source="#claude">inc. MHkBr</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIAtr_9-4.lnote.oe.20" n="20" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">226</biblScope></bibl><seg type="original" xml:lang="de">neg. <hi rend="italic">T</hi></seg><seg type="translation" xml:lang="en" source="#claude">neg. T</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIAtr_9-4.lnote.oe.21" n="21" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">226</biblScope></bibl><seg type="original" xml:lang="de">est s. <hi rend="italic">MHkBr</hi></seg><seg type="translation" xml:lang="en" source="#claude">est s. MHkBr</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIAtr_9-4.lnote.oe.22" n="22" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">226</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">folgt</hi> Dunsæte.</seg><seg type="translation" xml:lang="en" source="#claude">Dunsæte follows.</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIAtr_9-4.lnote.oe.27" n="27" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">226</biblScope></bibl><seg type="original" xml:lang="de">wille <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">wille Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIAtr_9-4.lnote.oe.28" n="28" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">226</biblScope></bibl><seg type="original" xml:lang="de">-esse him to agenonge <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">-esse him to agenonge Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIAtr_9-4.lnote.oe.26" n="26" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">226</biblScope></bibl><seg type="original" xml:lang="de">-ðæm <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">-ðæm Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIAtr_9-4.lnote.oe.29" n="29" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">226</biblScope></bibl><seg type="original" xml:lang="de">-ge <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">-ge Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIAtr_9-4.lnote.oe.19-2" n="19" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">226</biblScope></bibl><seg type="original" xml:lang="de">ðæm <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">ðæm Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIAtr_9-4.lnote.oe.30" n="30" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">226</biblScope></bibl><seg type="original" xml:lang="de">-spræcþ <hi rend="italic">Ld. Folgt nach freier Zeile</hi> Dunsæte (<hi rend="italic">Schmids Appendix I</hi>) <hi rend="italic">BLd.</hi></seg><seg type="translation" xml:lang="en" source="#claude">-spræcþ Ld. After a blank line there follows Dunsæte (Schmid's Appendix I) BLd.</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="IIAtr_9-4.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">156</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">betweox</hi> ‘mitten während’, Toller <hi rend="italic">Suppl</hi>. s. v. II 2</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">betweox</hi> ‘in the very course of’, Toller <hi rend="italic">Suppl</hi>. s. v. II 2</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="IIAtr_9-4.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">156</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Anefang 25c; Beweisnähe 2; ‘Defensivwirkung der Gewere’ Rauch <hi rend="italic">Spurfolge</hi> 18</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf. Gl</hi> Anefang 25c; Beweisnähe 2; ‘defensive effect of the Gewere’ Rauch <hi rend="italic">Spurfolge</hi> 18</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="IIAtr_9-4.lnote.de.3" n="3" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">156</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">Aus Q wiederholt Hn 64, 6</seg><seg type="translation" xml:lang="en" source="#claude">Hn 64, 6 repeats this from Q</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="IIAtr_9-4.lnote.de.4" n="4" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">156</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">Aus Q wiederholt Hn 64, 6</seg><seg type="translation" xml:lang="en" source="#claude">Hn 64, 6 repeats this from Q</seg></note>
+        <note type="editorNote" subtype="endnote" xml:id="IIAtr_9-4.robnote.n.1" n="1" source="#robertson"><bibl><biblScope unit="page">318</biblScope></bibl><seg type="original" xml:lang="en">Cf. I Edw. 1, 5; II As. 9.</seg></note>
+        <note type="editorNote" subtype="endnote" xml:id="IIAtr_9-4.robnote.n.2" n="2" source="#robertson"><bibl><biblScope unit="page">318</biblScope></bibl><seg type="original" xml:lang="en"><hi rend="italic">propriatio propinquior semper est possidenti quam repetenti</hi>, Q, cf. Hn. 64, 6: <hi rend="italic">semper erit possidens propior quam repetens</hi>.</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

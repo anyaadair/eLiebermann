@@ -1,0 +1,54 @@
+# Main menu. "section" marks the menu item as current on pages that set the
+# same `section` in their front matter.
+main:
+  - title: Home
+    url: index.html
+    section: home
+  - title: Laws
+    url: laws.html
+    section: laws
+  - title: Dictionary
+    url: dictionary.html
+    section: dictionary
+  - title: Guides
+    url: abbreviations.html
+    section: abbreviations
+  - title: Editorial Principles
+    url: editorial.html
+    section: editorial
+  - title: Make a suggestion
+    url: contribute.html
+    section: contribute
+  - title: About
+    url: about.html
+    section: about
+
+# Second row of links, shown on pages in that section.
+sections:
+  laws:
+    - title: By King and Code
+      url: laws.html
+    - title: By Subject
+      url: subjects.html
+  abbreviations:
+    - title: How to Read a Dictionary Entry
+      url: guide.html
+    - title: Law Codes
+      url: lawAbb.html
+    - title: Manuscripts
+      url: msAbb.html
+    - title: Grammatical Terms and Abbreviations
+      url: gramAbb.html
+    - title: Authors and Works Cited
+      url: bibAbb.html
+    - title: Liebermann's Forewords
+      url: forewords.html
+  # Statuta Vetera is a separate project hosted here; it isn't in the main
+  # menu, but its own pages keep this menu.
+  statuta:
+    - title: Manuscripts
+      url: StatutaVetera/index.html
+    - title: Statutes of the Realm viewer
+      url: StatutaVetera/sidebyside.html
+    - title: Manuscript description generator
+      url: StatutaVetera/tei-gen.html

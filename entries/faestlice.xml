@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>fæstlice</title>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">faestlice</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, <biblScope unit="volume">2.1</biblScope> (Wörterbuch), <biblScope unit="page">67</biblScope>
+            <ptr type="facsimile" target="https://archive.org/details/diegesetzederang02liebuoft/page/67/mode/2up"/>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <revisionDesc>
+      <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry xml:lang="ang">
+        <form type="lemma">
+          <orth>fæstlice</orth>
+        </form>
+        <dictScrap type="liebermann"><hi rend="bold">fæstlice</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:adverb"><abbr>adv</abbr></ref>, fest</hi> <ref type="lawCode" target="law:Cn1020">Cn 1020</ref>,13 | <hi rend="italic"><ref type="abbreviation" target="gram:superlativus"><abbr>spl</abbr></ref>:</hi> ~cost <hi rend="italic">festestens</hi> <ref type="lawCode" target="law:IIEm">II Em</ref> Pro 1</dictScrap>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/10028">fæstlíce</ref></xr>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/44449">fæstlíce (Supplement)</ref></xr>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/62187">fæstlíce (Supplement)</ref></xr>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/10190">feastlíce</ref></xr>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/10583">festlíce</ref></xr>
+        <xr type="lawCode"><ref target="clause:Cn1020_13">Cn 1020,13</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIEm_Prolog">II Em Pro</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIEm_1">II Em 1</ref></xr>
+      </entry>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Hl_14">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Hl 14</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#oliver">Oliver</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#oliver">Oliver</name></respStmt>
+        <respStmt><resp>Cross-references to other clauses</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Whitelock’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">Hl_14</idno>
+        <idno type="citation">Hl 14</idno>
+        <idno type="lawCode">Hl</idno>
+        <idno type="lawCodeAnchor">Hl</idno>
+        <idno type="clause">14</idno>
+        <idno type="citationKey">Hl 14</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Hlothhere and Eadric’s Code</title> <note type="reign">Hlothhere, r. 673–685; Eadric, r. 685–686</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">11</biblScope></bibl>
+          <bibl xml:id="oliver" type="edition">Lisi Oliver, <title>The Beginnings of English Law</title> (Toronto: University of Toronto Press, 2002), p. <biblScope unit="page">132</biblScope></bibl>
+          <bibl xml:id="attenborough" type="edition">F. L. Attenborough, <title>The Laws of the Earliest English Kings</title> (Cambridge: Cambridge University Press, 1922), p. <biblScope unit="page">20</biblScope></bibl>
+          <bibl xml:id="whitelock" type="translation">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007), p. <biblScope unit="page">395</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-h"><abbr>H</abbr> <note type="manuscript">Strood, Medway Archive and Local Studies Centre, MS DRc/R1 (Textus Roffensis; formerly Rochester, Cathedral Library, A.3.5), c. 1120–25</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 9">685–6</date><date source="#whitelock" n="EHD p. 393">673–85?</date><note type="promulgation">685–6 (Liebermann, I p. 9); 673–85? (Whitelock, EHD p. 393)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Assault</term><term>Breach of king's peace</term><term>Fines</term><term>Protections</term><term>Compensation</term></keywords>
+        <keywords n="people"><term>Host</term><term>Guest</term><term>King</term></keywords>
+        <keywords n="locations"><term>House</term><term>Buildings</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 148 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 11.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="14">
+        <head><ref type="lawCode" target="law:Hl">Hl</ref> 14</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="14" corresp="#wit-h"><pb n="11" ed="#liebermann"/>Gif þ<hi rend="italic">æt</hi> flet geblodgad wyrþe, forgylde þem mæn his mundbyrd ⁊ cyninge L scill'.</ab>
+        <ab type="editionText" xml:lang="ang" source="#attenborough" corresp="#wit-h"><pb n="20" ed="#attenborough"/>Gif þæt flet geblodgad wyrþe, forgylde þem mæn his mundbyrd ⁊ cyninge L scill'.</ab>
+        <ab type="editionText" xml:lang="ang" source="#oliver" n="9.1" corresp="#wit-h"><pb n="132" ed="#oliver"/>Gif þ<hi rend="italic">æt</hi> flet geblodgad wyrþe, forgylde þem mæn his mundbyrd ⁊ cyninge L sciƚƚ.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="11" ed="#liebermann"/>wenn<ptr type="liebermannNote" n="1" target="#Hl_14.lnote.de.1"/> das Haus blutbefleckt<ptr type="liebermannNote" n="2" target="#Hl_14.lnote.de.2"/> wird, entgelte er demselben Manne dessen Sonderschutzrecht<ptr type="liebermannNote" n="3" target="#Hl_14.lnote.de.3"/> und dem Könige 50 Schill.<ptr type="liebermannNote" n="4" target="#Hl_14.lnote.de.4"/></ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">if the house becomes bloodstained, let him pay that same man his special protection-right and 50 shillings to the king.</ab>
+        <ab type="translation" xml:lang="en" source="#attenborough" corresp="#wit-h"><pb n="21" ed="#attenborough"/>[But] if the house is stained with blood, the owner shall have his <hi rend="italic">mundbyrd</hi> paid to him, and 50 shillings shall be paid to the king.</ab>
+        <ab type="translation" xml:lang="en" source="#whitelock" corresp="#wit-h"><pb n="395" ed="#whitelock"/>If the house is stained by bloodshed, he is to pay to the man<ptr type="editorNote" n="3" target="#Hl_14.whinote.n.3"/> [the price for breach of] his protection, and 50 shillings to the king.</ab>
+        <ab type="translation" xml:lang="en" source="#oliver" corresp="#wit-h"><pb n="133" ed="#oliver"/>If that house becomes bloodied, let him pay the man [the price for violation of] his protection and 50 shillings to the king.</ab>
+        <note type="comparedBy" source="#wormald-mel" n="105"><ref target="clause:Ine_36">Ine 36</ref></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Hl_14.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">22</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Laut der Wörter <hi rend="italic">þæt</hi> (noch demonstrativ) <hi rend="italic">flet</hi>, die sich auf das <hi rend="italic">o.</hi> 13 erwähnte Haus beziehen, ist dies Fortsetzung von 13.</seg><seg type="translation" xml:lang="en" source="#claude">According to the words <hi rend="italic">þæt</hi> (still demonstrative) <hi rend="italic">flet</hi>, which refer to the house mentioned <hi rend="italic">above</hi> 13, this is a continuation of 13.</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Hl_14.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">22</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Blutig (<hi rend="italic">s. d. Gl</hi> 3c. 9) fechten bringt, mehr als Waffenzücken, dem Ortsherrn für voll gebrochenen Schutz volle Busse und dem König höchstes Strafgeld; Af 39, 1. Nach anderen Stellen stehen beide Friedensbrüche gleich; <hi rend="italic">s. Gl ebd.</hi> 3d. 5b. c</seg><seg type="translation" xml:lang="en" source="#claude">Fighting with bloodshed (<hi rend="italic">see</hi> that word in <hi rend="italic">Gl</hi> 3c. 9) brings, more than drawing weapons does, full compensation to the lord of the place for fully broken protection, and the highest fine to the king; Af 39, 1. According to other passages the two breaches of the peace are on an equal footing; see <hi rend="italic">Gl ibid.</hi> 3d. 5b. c</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Hl_14.lnote.de.3" n="3" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">22</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Im Königsgut 50, im Adelshof 12, im gemeinfreien Hause 6 Schill. laut Abt 8. 13ff</seg><seg type="translation" xml:lang="en" source="#claude">On the king’s estate 50, in a nobleman’s household 12, in a common freeman’s house 6 shill., according to Abt 8. 13ff</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Hl_14.lnote.de.4" n="4" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">22</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Strafe für Totschlag; Abt 6. Hinzuzudenken ist Busse an den Verwundeten, bzw. Wergeld an des Erschlagenen Sippe</seg><seg type="translation" xml:lang="en" source="#claude">Penalty for homicide; Abt 6. Compensation to the wounded man, or wergild to the slain man’s kindred, is to be understood in addition</seg></note>
+        <note type="editorNote" subtype="translationFootnote" xml:id="Hl_14.whinote.n.3" n="3" source="#whitelock"><bibl><biblScope unit="page">395</biblScope></bibl><label>man</label><seg type="original" xml:lang="en">The owner of the house.</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

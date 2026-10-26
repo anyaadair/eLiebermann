@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Ine_73">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Ine 73</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Attenborough’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Whitelock’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">Ine_73</idno>
+        <idno type="citation">Ine 73</idno>
+        <idno type="lawCode">Ine</idno>
+        <idno type="lawCodeAnchor">Ine</idno>
+        <idno type="clause">73</idno>
+        <idno type="citationKey">Ine 73</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Ine’s Laws (in Alfred’s Domboc)</title> <note type="reign">Ine, r. 688–726</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">120</biblScope></bibl>
+          <bibl xml:id="jurasinski-and-oliver" type="edition">Stefan Jurasinski and Lisi Oliver, <title>The Laws of Alfred: The Domboc and the Making of Anglo-Saxon Law</title> (Cambridge: Cambridge University Press, 2021), p. <biblScope unit="page">432</biblScope></bibl>
+          <bibl xml:id="attenborough" type="edition">F. L. Attenborough, <title>The Laws of the Earliest English Kings</title> (Cambridge: Cambridge University Press, 1922), p. <biblScope unit="page">60</biblScope></bibl>
+          <bibl xml:id="whitelock" type="translation">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007), p. <biblScope unit="page">407</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-e" rend="bold"><abbr>E</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 173 (Parker Chronicle and Laws)</note></witness>
+          <witness xml:id="wit-h"><abbr>H</abbr> <note type="manuscript">Strood, Medway Archive and Local Studies Centre, MS DRc/R1 (Textus Roffensis; formerly Rochester, Cathedral Library, A.3.5), c. 1120–25</note></witness>
+          <witness xml:id="wit-b-no-prol"><abbr>B (no Prol.)</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383</note></witness>
+          <witness xml:id="wit-g-prol-only"><abbr>G (Prol. only)</abbr> <note type="manuscript">London, British Library, Cotton Nero A.i</note></witness>
+          <witness xml:id="wit-q"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note></witness>
+          <witness xml:id="wit-ld"><abbr>Ld</abbr> <note type="manuscript">William Lambarde, Archaionomia (London, 1568) – printed from manuscripts now lost</note></witness>
+          <witness xml:id="wit-bu"><abbr>Bu</abbr></witness>
+          <witness xml:id="wit-ot-frags"><abbr>Ot (frags.)</abbr> <note type="manuscript">London, British Library, Cotton Otho B.xi (damaged by fire, 1731)</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 88">688–95</date><date source="#whitelock" n="EHD p. 399">688–94</date><date source="#wormald-mel" n="MEL p. 103">688×92</date><note type="promulgation">688–95 (Liebermann, I p. 88); 688–94 (Whitelock, EHD p. 399); 688×92 (Wormald, MEL p. 103)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Theft</term><term>Legal procedure</term><term>Compensation</term><term>Fines</term><term>Absconding</term><term>Law enforcement</term></keywords>
+        <keywords n="people"><term>Thief</term><term>Reeves</term><term>Fugitive</term><term>King</term><term>Weorcmen</term><term>All people</term><term>Secular classes</term><term>Rank</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 653 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked and corrected against <title>Die Gesetze der Angelsachsen</title> I, p. 120.</change>
+      <change when="2026-10" type="checked">Liebermann’s text of MS Ot added from Gesetze I, p. 120.</change>
+      <change when="2026-10" type="checked">Liebermann’s text of MS B added from Gesetze I, p. 120.</change>
+      <change when="2026-10" type="checked">The second translation corrected against Attenborough, p. None: “thefts,” → “theft,”.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="73">
+        <head><ref type="lawCode" target="law:Ine">Ine</ref> 73</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="73" corresp="#wit-e"><pb n="120" ed="#liebermann"/>CXVII. Gif hit bið<ptr type="liebermannNote" n="14" target="#Ine_73.lnote.oe.14"/> niht eald þiefð<ptr type="liebermannNote" n="15" target="#Ine_73.lnote.oe.15"/>, gebeten þa þone gylt<ptr type="liebermannNote" n="16" target="#Ine_73.lnote.oe.16"/> þe hine gefengon, swa hie<ptr type="liebermannNote" n="17" target="#Ine_73.lnote.oe.17"/> geþingian mægen<ptr type="liebermannNote" n="18" target="#Ine_73.lnote.oe.18"/> wið cyning ⁊ his gerefan.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="73" corresp="#wit-ot-frags"><pb n="120" ed="#liebermann"/>...............an.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="73" corresp="#wit-h"><pb n="120" ed="#liebermann"/>CXVII. Gif hit biþ nyht<ptr type="liebermannNote" n="8" target="#Ine_73.lnote.oe.8-2"/> eald þyfð, gebeten þa ðone gylt þe hine gefengon, swa hy<ptr type="liebermannNote" n="3" target="#Ine_73.lnote.oe.3"/> geþingian magon wiþ cyning ⁊ his gerefan.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="73" corresp="#wit-b-no-prol"><pb n="121" ed="#liebermann"/>Be anre nihte ðyfte. Gyf hit bið niht eald ðyfð, gebéten ða ðone gylt ðe hine gefengon, swa hig geðingian magon wið cyning<hi rend="italic">e</hi> ⁊ his gerefan.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="73" corresp="#wit-q"><pb n="121" ed="#liebermann"/>Si uero sit una nocte uetus furtum, emendent<ptr type="liebermannNote" n="8" target="#Ine_73.lnote.oe.8"/> illi culpam, qui ceperunt eum<ptr type="liebermannNote" n="9" target="#Ine_73.lnote.oe.9"/>, sicut inde componere poterunt apud regem et prepositum suum.</ab>
+        <ab type="editionText" xml:lang="ang" source="#attenborough" corresp="#wit-e"><pb n="60" ed="#attenborough"/>[Be anre nihte ðyfte.] Gif hit bið niht eald þiefð, gebeten þa þone gylt þe hine gefengon, swa hie geþingian mægen wið cyning ⁊ his gerefan.</ab>
+        <ab type="editionText" xml:lang="ang" source="#jurasinski-and-oliver" n="74.1" corresp="#wit-e"><pb n="432" ed="#jurasinski-and-oliver"/>{CXVII} Gif hit bið niht eald þiefð, gebeten þa þone gylt þe hine gefengon swa hie geþingian mægan wið cyning ⁊ his gerefan.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="121" ed="#liebermann"/>Wenn es [das Verbrechen des Entflohenen] ein [schon] eine Nacht alter Diebstahl ist, dann sollen die, die ihn [handhaft] gefasst hatten, diese Schuld<ptr type="liebermannNote" n="1" target="#Ine_73.lnote.de.1"/> [der Unachtsamkeit] büssen, wie sie gegenüber dem König und seinem Amtmann<ptr type="liebermannNote" n="2" target="#Ine_73.lnote.de.2"/> ausmachen können.</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">If it [the escaped man’s crime] is a theft [already] a night old, then let those who had caught him [red-handed] pay for this fault [of carelessness] as they can settle with the king and his reeve.</ab>
+        <ab type="translation" xml:lang="en" source="#attenborough" corresp="#wit-e"><pb n="61" ed="#attenborough"/>If a night has elapsed since the theft<ptr type="editorNote" n="1" target="#Ine_73.attnote.n.1"/>, those who caught him [and allowed him to escape] shall make compensation for their offence, according to such terms as they can arrange with the king and his reeve.</ab>
+        <ab type="translation" xml:lang="en" source="#whitelock"><pb n="407" ed="#whitelock"/>If, however, the theft is now a night old, those who caught him are to pay compensation for their fault<ptr type="editorNote" n="2" target="#Ine_73.whinote.n.2"/> as they may compound with the king and with his reeve.</ab>
+        <ab type="translation" xml:lang="en" source="#jurasinski-and-oliver" corresp="#wit-e"><pb n="433" ed="#jurasinski-and-oliver"/>If the theft is a night old, then let those who caught him [and allowed him to escape] pay whatever debt [for their carelessness] that they may arrange with the king and his reeve.</ab>
+        <note type="comparison" source="#jurasinski-and-oliver" n="365"><label>qualifies</label> <ref target="clause:Ine_36">Ine 36</ref> <quote>some appear to add qualifications to judgments earlier given (such as §37 [...] and §74.1 in which the fine for the same offense must be negotiated</quote></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_73.lnote.oe.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">121</biblScope></bibl><seg type="original" xml:lang="de">-detur <hi rend="italic">R</hi></seg><seg type="translation" xml:lang="en" source="#claude">-detur R</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_73.lnote.oe.9" n="9" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">121</biblScope></bibl><seg type="original" xml:lang="de">illum <hi rend="italic">Br;</hi> illud <hi rend="italic">Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">illum Br; illud Lond</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_73.lnote.oe.8-2" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">120</biblScope></bibl><seg type="original" xml:lang="de">y <hi rend="italic">auf Rasur; hinter</hi> t <hi rend="italic">Rasur</hi></seg><seg type="translation" xml:lang="en" source="#claude">y on an erasure; erasure after t</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_73.lnote.oe.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">120</biblScope></bibl><seg type="original" xml:lang="de">y <hi rend="italic">auf Rasur</hi></seg><seg type="translation" xml:lang="en" source="#claude">y on an erasure</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_73.lnote.oe.14" n="14" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">120</biblScope></bibl><seg type="original" xml:lang="de">beoð <hi rend="italic">So</hi></seg><seg type="translation" xml:lang="en" source="#claude">beoð So</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_73.lnote.oe.15" n="15" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">120</biblScope></bibl><seg type="original" xml:lang="de">þyfð <hi rend="italic">So;</hi> ðyfþe <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">þyfð So; ðyfþe Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_73.lnote.oe.16" n="16" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">120</biblScope></bibl><seg type="original" xml:lang="de">gyld <hi rend="italic">So</hi></seg><seg type="translation" xml:lang="en" source="#claude">gyld So</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_73.lnote.oe.17" n="17" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">120</biblScope></bibl><seg type="original" xml:lang="de">hig <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">hig Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_73.lnote.oe.18" n="18" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">120</biblScope></bibl><seg type="original" xml:lang="de">magen <hi rend="italic">So;</hi> magon <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">magen So; magon Ld</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Ine_73.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">81</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de">Nicht etwa die des Diebes, was ebenso hart wäre, als wenn, wie in 36, absichtliche Begünstigung vorläge. Sie zahlen wie 28, 1 nur Strafgeld, von dem sie beim Richter abdingen mögen</seg><seg type="translation" xml:lang="en" source="#claude">Not, say, that of the thief, which would be as harsh as if there were deliberate connivance, as in 36. As in 28, 1, they pay only the fine, which they may get reduced by bargaining with the judge</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Ine_73.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">81</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">and</hi> (<hi rend="italic">s. Wb</hi> 2): ‘beziehungsweise’. Oder Hendiadyoin (<hi rend="italic">s. d. Wb</hi>): ‘staatlichem Vogte’; <hi rend="italic">s. d. Gl</hi> 2 d. 22. Dieser muss hier den Ealdorman mit umfassen</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">and</hi> (<hi rend="italic">see Wb</hi> 2): ‘or, as the case may be’. Or hendiadys (<hi rend="italic">see</hi> that word in <hi rend="italic">Wb</hi>): ‘the public reeve’; <hi rend="italic">see</hi> that word in <hi rend="italic">Gl</hi> 2 d. 22. Here he must include the ealdorman as well</seg></note>
+        <note type="editorNote" subtype="endnote" xml:id="Ine_73.attnote.n.1" n="1" source="#attenborough"><bibl><biblScope unit="page">193</biblScope></bibl><seg type="original" xml:lang="en"><hi rend="italic">i.e.</hi> before the thief is recaptured.</seg></note>
+        <note type="editorNote" subtype="translationFootnote" xml:id="Ine_73.whinote.n.2" n="2" source="#whitelock"><bibl><biblScope unit="page">407</biblScope></bibl><label>fault</label><seg type="original" xml:lang="en">In letting him escape.</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

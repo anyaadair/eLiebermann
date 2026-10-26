@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IIAs_5">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>II As 5</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Cross-references to other clauses</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Attenborough’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Whitelock’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">IIAs_5</idno>
+        <idno type="citation">II As 5</idno>
+        <idno type="lawCode">II As</idno>
+        <idno type="lawCodeAnchor">IIAs</idno>
+        <idno type="clause">5</idno>
+        <idno type="citationKey">IIAs 5</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>II Æthelstan (Grately)</title> <note type="reign">Æthelstan, r. 924–939</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">152</biblScope></bibl>
+          <bibl xml:id="attenborough" type="edition">F. L. Attenborough, <title>The Laws of the Earliest English Kings</title> (Cambridge: Cambridge University Press, 1922), p. <biblScope unit="page">130</biblScope></bibl>
+          <bibl xml:id="whitelock" type="translation">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007), p. <biblScope unit="page">419</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="jurasinski-and-oliver" type="study">Stefan Jurasinski and Lisi Oliver, <title>The Laws of Alfred: The Domboc and the Making of Anglo-Saxon Law</title> (Cambridge: Cambridge University Press, 2021)</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-h" rend="bold"><abbr>H</abbr> <note type="manuscript">Strood, Medway Archive and Local Studies Centre, MS DRc/R1 (Textus Roffensis; formerly Rochester, Cathedral Library, A.3.5), c. 1120–25</note></witness>
+          <witness xml:id="wit-b"><abbr>B</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383</note></witness>
+          <witness xml:id="wit-ot"><abbr>Ot</abbr> <note type="manuscript">London, British Library, Cotton Otho B.xi (damaged by fire, 1731)</note></witness>
+          <witness xml:id="wit-ld"><abbr>Ld</abbr> <note type="manuscript">William Lambarde, Archaionomia (London, 1568) – printed from manuscripts now lost</note></witness>
+          <witness xml:id="wit-so"><abbr>So</abbr> <note type="manuscript">William Somner's transcript of Cotton Otho B.xi (made before the fire)</note></witness>
+          <witness xml:id="wit-q"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 150">925–c.935</date><date source="#attenborough">before III–VI As</date><date source="#whitelock" n="EHD p. 418">c.926–c.930</date><date source="#wormald-mel" n="MEL p. 440">not before 928</date><placeName>Grately</placeName><note type="promulgation">925–c.935 (Liebermann, I p. 150); before III–VI As (Attenborough); c.926–c.930 (Whitelock, EHD p. 418); not before 928 (Wormald, MEL p. 440); Grately</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Breaking and entering</term><term>Accusations</term><term>Ordeal</term><term>Ritual</term><term>Compensation</term><term>Written laws/decisions</term></keywords>
+        <keywords n="people"><term>Thief</term></keywords>
+        <keywords n="locations"><term>Churches</term><term>Buildings</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 751 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked and corrected against <title>Die Gesetze der Angelsachsen</title> I, p. 152.</change>
+      <change when="2026-10" type="checked">Liebermann’s German translation corrected against Gesetze I, p. 152: “(Von Einbruch in Kirchen. B So) Und wir bestimmten über Einbruch in Kirchen, wenn der [Missethäter] überführt wird im dreifachen Ordal, büsse er gemäss dem, was das Gesetzbuch besagt.” → “(Von Einbruch in Kirchen. B So) Und wir bestimmten über Einbruch in Kirchen, wenn der [Missethäter] überführt wird im dreifachen Ordal, büsse er gemäss dem, was das Gesetzbuch besagt. (expanded letters in italics: B So)”.</change>
+      <change when="2026-10" type="checked">The modern editor’s text corrected against Attenborough, p. 130: “[B, Ld]” → “∅”.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="5">
+        <head><ref type="lawCode" target="law:IIAs">II As</ref> 5</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="5" corresp="#wit-h"><pb n="152" ed="#liebermann"/>⁊ we cwædon be ciricbryce: gif he ful wære on ðam ðryfealdan<ptr type="liebermannNote" n="14" target="#IIAs_5.lnote.oe.14"/> ordale, bete be þam þe sio<ptr type="liebermannNote" n="15" target="#IIAs_5.lnote.oe.15"/> dómboc secge.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="5" corresp="#wit-b"><pb n="152" ed="#liebermann"/>[Be<ptr type="liebermannNote" n="24" target="#IIAs_5.lnote.oe.24"/> cyricbryce.] And we cwædon be cyricbryce: gyf<ptr type="liebermannNote" n="1" target="#IIAs_5.lnote.oe.1"/> he fúl wære on ða<hi rend="italic">m<ptr type="liebermannNote" n="3" target="#IIAs_5.lnote.oe.3"/></hi> ðryfealdan ordale, [bete<ptr type="liebermannNote" n="26" target="#IIAs_5.lnote.oe.26"/>] be ðam<ptr type="liebermannNote" n="3" target="#IIAs_5.lnote.oe.3"/> ðe<ptr type="liebermannNote" n="27" target="#IIAs_5.lnote.oe.27"/> seo dómboc secge.<ptr type="liebermannNote" n="28" target="#IIAs_5.lnote.oe.28"/></ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="5" corresp="#wit-so"><pb n="152" ed="#liebermann"/>Be cyricbryce. We cwædon be cyricbryce: gif he ful wære on ðam þreofealdum ordale, bete be ðam þe seo domboc<ptr type="liebermannNote" n="8" target="#IIAs_5.lnote.oe.8"/> sæcge.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="5" corresp="#wit-q"><ptr type="liebermannNote" n="27" target="#IIAs_5.lnote.oe.27-2"/><pb n="153" ed="#liebermann"/>Et de infracturis ecclesiarum: si quis reus appareat in triplici ordalio, emendetur sicut iudicialis liber dicit.</ab>
+        <ab type="editionText" xml:lang="ang" source="#attenborough" n="5" corresp="#wit-h"><pb n="130" ed="#attenborough"/>[Be cyricbryce.]<ptr type="editorNote" n="10" target="#IIAs_5.attnote.fn.10"/> ⁊ we cwædon be ciricbryce: gif he ful wære on ðam þryfealdan<ptr type="editorNote" n="11" target="#IIAs_5.attnote.fn.11"/> ordale, bete be þam þe sio dómboc secge.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="153" ed="#liebermann"/>(Von Einbruch in Kirchen. <hi rend="italic">B So</hi>) Und wir bestimmten über Einbruch<ptr type="liebermannNote" n="1" target="#IIAs_5.lnote.de.1"/> in Kirchen, wenn der [Missethäter] überführt wird im dreifachen Ordal, büsse er gemäss dem, was das Gesetzbuch besagt.</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">(Of breaking into churches. B So) And we determined concerning breaking into churches: if the [offender] is convicted in the threefold ordeal, let him pay compensation according to what the law-book says.</ab>
+        <ab type="translation" xml:lang="en" source="#attenborough" corresp="#wit-h"><pb n="131" ed="#attenborough"/>And we have declared with regard to breaking into a church—if he [who is accused of doing so] is found guilty in the threefold ordeal<ptr type="editorNote" n="1" target="#IIAs_5.attnote.n.1"/>, he shall pay such compensation for it as the written law declares<ptr type="editorNote" n="2" target="#IIAs_5.attnote.n.2"/>.</ab>
+        <ab type="translation" xml:lang="en" source="#whitelock"><pb n="419" ed="#whitelock"/>And we have pronounced concerning breaking into a church; if he [who is accused] be convicted at the three-fold ordeal, he is to pay according to what the law-book<ptr type="editorNote" n="3" target="#IIAs_5.whinote.n.3"/> says.</ab>
+        <note type="comparison" source="#liebermann" n="153"><ref target="clause:Af_6">Af 6</ref></note>
+        <note type="comparisonPrinted" source="#liebermann">Vgl. Af. 6</note>
+        <note type="comparison" source="#whitelock" n="419"><label>refers to</label> <ref target="clause:Af_6">Af 6</ref> <quote>The reference in this chapter is to Alfred 6.</quote></note>
+        <note type="comparison" source="#jurasinski-and-oliver" n="148"><label>alludes to (implied referent)</label> <ref target="clause:Af_6">Af 6</ref> <quote>bete be þam þe sio dómboc segce). The implied referent seems to be Alfred §7, though no reference to the ordeal is made here</quote></note>
+        <note type="editorial">‘bete’ was added in the margin of B in the 16th century. Liebermann compares Af 6.</note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIAs_5.lnote.oe.24" n="24" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">152</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">so Ld; Raum für Rubrik B</hi></seg><seg type="translation" xml:lang="en" source="#claude">so Ld; space for a rubric B</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIAs_5.lnote.oe.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">152</biblScope></bibl><seg type="original" xml:lang="de">gif <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">gif Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIAs_5.lnote.oe.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">152</biblScope></bibl><seg type="original" xml:lang="de">ðæm <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">ðæm Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIAs_5.lnote.oe.26" n="26" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">152</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">im</hi> 16. <hi rend="italic">Jh. am Rande B</hi></seg><seg type="translation" xml:lang="en" source="#claude">in the margin in the 16th cent. B</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIAs_5.lnote.oe.27" n="27" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">152</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIAs_5.lnote.oe.28" n="28" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">152</biblScope></bibl><seg type="original" xml:lang="de">sæcge <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">sæcge Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIAs_5.lnote.oe.14" n="14" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">152</biblScope></bibl><seg type="original" xml:lang="de">y <hi rend="italic">und</hi> an <hi rend="italic">auf Rasur</hi></seg><seg type="translation" xml:lang="en" source="#claude">y and an on an erasure</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIAs_5.lnote.oe.15" n="15" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">152</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">geänd.</hi> seo</seg><seg type="translation" xml:lang="en" source="#claude">altered to seo</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIAs_5.lnote.oe.27-2" n="27" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">153</biblScope></bibl><seg type="original" xml:lang="de">De infracturis ęcclesiarum <hi rend="italic">Rubrik MHkBr</hi></seg><seg type="translation" xml:lang="en" source="#claude">De infracturis ęcclesiarum rubric MHkBr</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIAs_5.lnote.oe.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">152</biblScope></bibl><seg type="original" xml:lang="de">-bót</seg><seg type="translation" xml:lang="en" source="#claude">-bót</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="IIAs_5.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">103</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de">So Schmid, Toller 155 b. Auch in den Compositis <hi rend="italic">burg-, eodor-, husbryce</hi> bedeutet <hi rend="italic">-bryce</hi> gewaltsames Eindringen. <hi rend="italic">Vgl. Gl</hi> Kirchenraub 5; Ordal 33 c. Price-Thorpe verstanden blosse ‘Privilegverletzung’; aber für Friedensbruch braucht ECf 6 u. a. andere Ausdrücke, z. B. <hi rend="italic">griðbryce</hi></seg><seg type="translation" xml:lang="en" source="#claude">So Schmid, Toller 155 b. In the compounds <hi rend="italic">burg-, eodor-, husbryce</hi> too, <hi rend="italic">-bryce</hi> means forcible entry. <hi rend="italic">Cf. Gl</hi> Kirchenraub 5; Ordal 33 c. Price-Thorpe understood mere ‘violation of privilege’; but for breach of the peace ECf 6 and other texts use other expressions, e.g. <hi rend="italic">griðbryce</hi></seg></note>
+        <note type="editorNote" subtype="endnote" xml:id="IIAs_5.attnote.n.1" n="1" source="#attenborough"><bibl><biblScope unit="page">207</biblScope></bibl><seg type="original" xml:lang="en">Cf. note to Ine, cap. 37.</seg></note>
+        <note type="editorNote" subtype="endnote" xml:id="IIAs_5.attnote.n.2" n="2" source="#attenborough"><bibl><biblScope unit="page">207</biblScope></bibl><seg type="original" xml:lang="en">Cf. Alf. cap. 6; I Wm. cap. 15; Edw. Conf. cap. 6.</seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="IIAs_5.attnote.fn.10" n="10" source="#attenborough"><bibl><biblScope unit="page">130</biblScope></bibl><label>cyricbryce</label><seg type="original" xml:lang="en">B, Ld.</seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="IIAs_5.attnote.fn.11" n="11" source="#attenborough"><bibl><biblScope unit="page">130</biblScope></bibl><label>þryfealdan</label><seg type="original" xml:lang="en"><hi rend="italic">þreofealdum</hi>. So.</seg></note>
+        <note type="editorNote" subtype="translationFootnote" xml:id="IIAs_5.whinote.n.3" n="3" source="#whitelock"><bibl><biblScope unit="page">419</biblScope></bibl><label>law-book</label><seg type="original" xml:lang="en">The laws of Alfred, with those of Ine as an appendix. The reference in this chapter is to Alfred 6.</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

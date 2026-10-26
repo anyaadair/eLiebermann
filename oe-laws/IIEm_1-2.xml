@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IIEm_1-2">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>II Em 1.2</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">IIEm_1-2</idno>
+        <idno type="citation">II Em 1.2</idno>
+        <idno type="lawCode">II Em</idno>
+        <idno type="lawCodeAnchor">IIEm</idno>
+        <idno type="clause">1.2</idno>
+        <idno type="citationKey">IIEm 1.2</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>II Edmund</title> <note type="reign">Edmund, r. 939–946</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">186</biblScope></bibl>
+          <bibl xml:id="robertson" type="edition">A. J. Robertson, <title>The Laws of the Kings of England from Edmund to Henry I</title> (Cambridge: Cambridge University Press, 1925), p. <biblScope unit="page">8</biblScope></bibl>
+          <bibl xml:id="whitelock" type="translation">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007), p. <biblScope unit="page">430</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-b" rend="bold"><abbr>B</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383</note></witness>
+          <witness xml:id="wit-h"><abbr>H</abbr> <note type="manuscript">Strood, Medway Archive and Local Studies Centre, MS DRc/R1 (Textus Roffensis; formerly Rochester, Cathedral Library, A.3.5), c. 1120–25</note></witness>
+          <witness xml:id="wit-q"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note></witness>
+          <witness xml:id="wit-ld"><abbr>Ld</abbr> <note type="manuscript">William Lambarde, Archaionomia (London, 1568) – printed from manuscripts now lost</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 186">c.943–6</date><date source="#robertson">no evidence of exact date</date><date source="#whitelock" n="EHD p. 429">939–46</date><date source="#wormald-mel" n="MEL pp. 440–1">after I Em: 945 or 946</date><note type="promulgation">c.943–6 (Liebermann, I p. 186); no evidence of exact date (Robertson); 939–46 (Whitelock, EHD p. 429); after I Em: 945 or 946 (Wormald, MEL pp. 440–1)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Vendetta</term><term>Harbouring</term><term>Homicide</term><term>Legal procedure</term><term>Goods</term><term>Forfeiture</term></keywords>
+        <keywords n="people"><term>Kin</term><term>Harbourer</term><term>King</term><term>Edmund</term><term>All people</term><term>Named individuals</term><term>Nobles</term><term>Secular classes</term><term>Rank</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 893 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 186.</change>
+      <change when="2026-10" type="checked">Robertson’s translation checked and corrected against her edition, p. 9.</change>
+      <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 186: “fahðe” → “fæhðe”.</change>
+      <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 186: “Gif ðonne syððan hwilc his maga hine feormie, ðonne beo he scyldig ealles ðæs þe he age wið ðone cyning ⁊ wege ða fæhðe wið ða mægðe, forðam hi hine forsocan ær.” → “Gif ðonne syððan hwilc his maga hine feormie, ðonne beo he scyldig ealles ðæs þe he age wið ðone cyning ⁊ wege ða fæhðe wið ða mægðe, forðam hi hine forsocan ær. (expanded letters in italics: ne, ne)”.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="1.2">
+        <head><ref type="lawCode" target="law:IIEm">II Em</ref> 1.2</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="1.2" corresp="#wit-h"><pb n="186" ed="#liebermann"/>Gif ðon<hi rend="italic">ne</hi> syððan hwilc his maga hine feormige, ðon<hi rend="italic">ne</hi> beo he scyldig ealles ðæs ðe he age wið þone cyning ⁊ wege ða fæhðe wið þa mægðe, forðam hi hine forsocan ær.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="1.2" corresp="#wit-b"><pb n="186" ed="#liebermann"/>Gif ðon<hi rend="italic">ne</hi> syððan hwilc<ptr type="liebermannNote" n="21" target="#IIEm_1-2.lnote.oe.21"/> his maga hine feormie, ðon<hi rend="italic">ne</hi> beo he scyldig ealles ðæs þe he age wið ðone cyning ⁊ wege ða fæhðe wið ða mægðe, forðam<ptr type="liebermannNote" n="1" target="#IIEm_1-2.lnote.oe.1"/> hi hine forsocan ær.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="1.2" corresp="#wit-q"><pb n="187" ed="#liebermann"/>Si quisquam cognationis sue firmet eum postea, reus sit omnium que habebit erga regem et portet faidiam<ptr type="liebermannNote" n="1" target="#IIEm_1-2.lnote.oe.1-2"/> erga contribules<ptr type="liebermannNote" n="2" target="#IIEm_1-2.lnote.oe.2"/> mortui, quia primitus<ptr type="liebermannNote" n="3" target="#IIEm_1-2.lnote.oe.3"/> reprobauerat eum.</ab>
+        <ab type="editionText" xml:lang="ang" source="#robertson" n="1.2" corresp="#wit-b"><pb n="8" ed="#robertson"/>Gif ðonne syððan hwilc his maga hine feormie, ðonne beo he scyldig ealles ðæs þe he age wið ðone cyning, ⁊ wege ða fæhðe wið þa mægðe, forðam hi hine forsocan ær.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="187" ed="#liebermann"/>Wenn dagegen einer seiner Verwandten ihn nachher beherbergt, dann sei dieser alles<ptr type="liebermannNote" n="1" target="#IIEm_1-2.lnote.de.1"/>, was er besitzt, an den König [zu verlieren] schuldig und gegenüber der Sippe [des Erschlagenen<ptr type="liebermannNote" n="2" target="#IIEm_1-2.lnote.de.2"/>] trage er die [Gefahr der] Rache [durch sie], weil die [Verwandten] sich zuvor von dem [Todtschläger] losgesagt hatten.</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">But if any of his kinsmen afterwards harbours him, then let that kinsman be liable [to forfeit] to the king everything that he owns, and let him bear the [danger of] vengeance from the kindred [of the slain man], because the [kinsmen] had previously renounced the [slayer].</ab>
+        <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-b"><pb n="9" ed="#robertson"/>If, however, any of his kinsmen harbour him thereafter, then, inasmuch as they had previously disclaimed him, that kinsman shall forfeit all his property to the king, and shall incur vendetta with the kin [of the slain man].</ab>
+        <ab type="translation" xml:lang="en" source="#whitelock"><pb n="430" ed="#whitelock"/>If, however, any one of his kinsmen harbours him afterwards, he is to be liable to forfeit all that he owns to the king, and to bear the feud as regards the kindred [of the man slain], because they previously abandoned him.</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="IIEm_1-2.lnote.oe.21" n="21" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">186</biblScope></bibl><seg type="original" xml:lang="de">hwylce <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">hwylce Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIEm_1-2.lnote.oe.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">188</biblScope></bibl><seg type="original" xml:lang="de">-þæm <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">-þæm Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIEm_1-2.lnote.oe.1-2" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">189</biblScope></bibl><seg type="original" xml:lang="de">factionem <hi rend="italic">Hn</hi></seg><seg type="translation" xml:lang="en" source="#claude">factionem Hn</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIEm_1-2.lnote.oe.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">189</biblScope></bibl><seg type="original" xml:lang="de">-lis <hi rend="italic">T;</hi> contribunales <hi rend="italic">MHkBr;</hi> <hi rend="spaced">cognationem</hi> <hi rend="italic">Hn</hi></seg><seg type="translation" xml:lang="en" source="#claude">-lis T; contribunales MHkBr; <hi rend="italic">cognationem</hi> Hn</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIEm_1-2.lnote.oe.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">189</biblScope></bibl><seg type="original" xml:lang="de">prius <hi rend="italic">Br</hi></seg><seg type="translation" xml:lang="en" source="#claude">prius Br</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="IIEm_1-2.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">127</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Vermögenseinziehung 3b. 10a. i. Sie straft die Begünstigung (<hi rend="italic">s. d. Gl</hi> 12b) trotz Entsippung. Sie tritt also hier neben Blutrache; <hi rend="italic">vgl</hi>. Schreuer <hi rend="italic">Verbrechenskonk</hi>. 183</seg><seg type="translation" xml:lang="en" source="#claude">Cf. <hi rend="italic">Gl</hi> Vermögenseinziehung 3b. 10a. i. Confiscation punishes harbouring (<hi rend="italic">see</hi> that word in <hi rend="italic">Gl</hi> 12b) despite expulsion from the kindred. Here, therefore, it occurs alongside blood-feud; cf. Schreuer <hi rend="italic">Verbrechenskonk</hi>. 183</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="IIEm_1-2.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">127</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Gegen Q versteht Rieger <hi rend="italic">Altsächs. Leseb</hi>. 162 irrig, des Totschlägers Sippe verfolge dessen Beherberger als aufsässig, und möchte zu solchem Sinne <hi rend="italic">wið</hi> in <hi rend="italic">wiðutan</hi> ‘ohne seine Sippe’ ändern. Allein <hi rend="italic">wið</hi> ist erfordert durch 1, 3 <hi rend="italic">gefah wið cyning</hi>. Wer mit dem Feinde gemeinschaftliche Sache macht, gilt ihm gleich (Brunner II 576), aber er wird dadurch nicht, wie in 1, 3, gegenüber dem Staate friedlos; <hi rend="italic">s. d. Gl</hi> 1 n. 10b. 11b.—Nicht eines entsippten Totschlägers, sondern eines Friedlosen Begünstiger (<hi rend="italic">s. d. Gl</hi> 8d) wird mit Friedlosigkeit gestraft in der hierzu von Kemble. und Thorpe zitierten Urkunde</seg><seg type="translation" xml:lang="en" source="#claude">Against Q, Rieger <hi rend="italic">Altsächs. Leseb</hi>. 162 wrongly understands that the slayer’s kindred pursues his harbourer as hostile, and would change <hi rend="italic">wið</hi> to <hi rend="italic">wiðutan</hi> ‘without his kindred’ to give that sense. But <hi rend="italic">wið</hi> is required by 1, 3 <hi rend="italic">gefah wið cyning</hi>. He who makes common cause with the enemy is treated as equal to him (Brunner II 576), but he does not thereby become outlawed with respect to the state, as in 1, 3; <hi rend="italic">see</hi> that word in <hi rend="italic">Gl</hi> 1 n. 10b. 11b.—It is not the harbourer of a slayer expelled from his kindred, but the harbourer of an outlaw (<hi rend="italic">see</hi> that word in <hi rend="italic">Gl</hi> 8d), who is punished with outlawry in the charter cited in this connection by Kemble. and Thorpe</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

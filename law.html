@@ -1,0 +1,853 @@
+---
+title: Law clause
+section: laws
+scripts:
+  - "ROOT/scripts/eliebermann.js"
+  - "ROOT/scripts/lawpopup.js"
+---
+<article id="clause"><p class="loading">Loading clause…</p></article>
+
+<script>
+(function () {
+    const root = window.SITE_ROOT || '';
+    const target = document.getElementById('clause');
+    const id = new URLSearchParams(location.search).get('id') || '';
+    const NS = 'http://www.tei-c.org/ns/1.0';
+    let catalogue = [];
+
+    // Liebermann's volume 1 on archive.org, opened at a printed page in a new tab.
+    // "445/6" or "450/451" (a clause running over two pages) opens at the first.
+    const SCAN_URL = {{ site.laws_facsimile_url | jsonify }};
+    const SCAN_ID = (/\/details\/([^/?#]+)/.exec(SCAN_URL || '') || [])[1] || '';
+    function scanPage(page) {
+        const m = /^\s*(\d+)/.exec(page || '');
+        return m ? m[1] : '';
+    }
+    const scanLink = p => SCAN_URL.replace('{page}', p);
+
+    const el = (tag, cls, text) => {
+        const n = document.createElement(tag);
+        if (cls) n.className = cls;
+        if (text !== undefined) n.textContent = text;
+        return n;
+    };
+    const first = (doc, sel) => doc.querySelector(sel);
+    const tei = (doc, name) => [...doc.getElementsByTagNameNS(NS, name)];
+    const fetchXml = file => fetch(root + 'oe-laws/' + file)
+        .then(r => { if (!r.ok) throw new Error('missing'); return r.text(); })
+        .then(t => new DOMParser().parseFromString(t, 'application/xml'));
+
+    const LABELS = [
+        ['selectedText', 'Text'],
+        ['translation', 'Translation'],
+        ['secondTranslation', 'Second translation'],
+        ['supplementaryText', 'Supplementary manuscript'],
+        ['supplementaryTranslation', 'Translation of the supplementary manuscript']
+    ];
+
+    // TEI inline markup as HTML: <hi rend="italic"> and <title> in italic.
+    // With opts.notes, Liebermann's note numbers (<ptr type="liebermannNote">) are shown as superscripts
+    // linking to the notes; without it (the plain text) they are left out.
+    // The printed page a text or translation begins on: <pb n="5"/> at its start (tools/laws-from-database.py);
+    // older files have only the edition's page, in its <bibl>.
+    function pageOf(a, src) {
+        const pb = a.getElementsByTagNameNS('*', 'pb')[0];      // the first, also inside a part (Abt, merge-parts.py)
+        return pb ? pb.getAttribute('n') : (src && src.page) || '';
+    }
+
+    function inline(node, opts) {
+        const frag = document.createDocumentFragment();
+        node.childNodes.forEach(n => {
+            if (n.nodeType === 3) { frag.appendChild(document.createTextNode(n.nodeValue)); return; }
+            if (n.nodeType !== 1) return;
+            const name = n.localName;
+            if (name === 'ptr' && /^(liebermannNote|editorNote)$/.test(n.getAttribute('type'))) {
+                if (opts && opts.notes) frag.appendChild(noteRef(n));
+                return;
+            }
+            if (name === 'note' && n.getAttribute('type') === 'remark') return;
+            if (name === 'seg' && n.getAttribute('type') === 'part') {
+                // one part of a clause the later editors divide (tools/merge-parts.py): the editor's clause
+                // number for it, then its text
+                const letters = (n.getAttribute('corresp') || '').split(/\s+/).map(x => x.replace(/^#part-/, '')).filter(x => /^[a-z]$/.test(x));
+                const span = el('span', ['part'].concat(letters.map(x => 'part-' + x)).join(' '));
+                const num = n.getAttribute('n') || '';
+                if (num) span.appendChild(el('sup', 'part-mark', num));
+                span.appendChild(inline(n, opts));
+                frag.appendChild(span);
+                return;
+            }
+            if (name === 'pb') return;      // the page the text begins on: shown in its label (pageOf)
+            if (name === 'lb') { frag.appendChild(el('br')); if (n.getAttribute('type') === 'paragraph') frag.appendChild(el('br')); return; }
+            const rend = name === 'hi' ? (n.getAttribute('rend') || '') : '';
+            if (/bold|spaced|smallcaps/.test(rend)) {
+                const out = el(/bold/.test(rend) ? 'strong' : 'span', /spaced/.test(rend) ? 'spaced' : /smallcaps/.test(rend) ? 'smallcaps' : null);
+                out.appendChild(inline(n, opts));
+                frag.appendChild(out);
+                return;
+            }
+            const italic = (name === 'hi' && /italic/.test(n.getAttribute('rend') || '')) || name === 'title';
+            const target = name === 'ref' ? (n.getAttribute('target') || '') : '';
+            if (target.startsWith('clause:')) {
+                // a link to another clause of the database (Liebermann's cross-references)
+                const a = el('a', 'clause-link');
+                a.href = 'law.html?id=' + encodeURIComponent(target.slice(7));
+                a.appendChild(inline(n));
+                frag.appendChild(a);
+                return;
+            }
+            const out = el(italic ? (name === 'title' ? 'cite' : 'em') : 'span');
+            out.appendChild(inline(n, opts));
+            frag.appendChild(out);
+        });
+        return frag;
+    }
+    const plainText = node => node.textContent.replace(/\s+/g, ' ').trim();
+
+    // ---- Liebermann's notes ----
+    // Two kinds, each shown or hidden with its own button: his textual notes on the Old English
+    // (footnotes in Gesetze I) and his Erklärungen on his German translation (Gesetze III, 1916).
+    const NOTE_GROUPS = {
+        textual: {
+            subtypes: ['textual'],
+            title: 'Liebermann’s textual notes',
+            intro: 'Liebermann’s footnotes to this text (Gesetze I, at the foot of the page), in his German, with an English rendering made with an LLM (Claude). Numbers are his, counted afresh on each page (and for each manuscript, where he prints several side by side); * marks an editor’s emendation.'
+        },
+        attenborough: {
+            type: 'editorNote', source: 'attenborough', subtypes: ['endnote', 'footnote'], who: 'Attenborough’s',
+            title: 'Attenborough’s notes',
+            intro: 'Attenborough’s notes (The Laws of the Earliest English Kings, 1922): the notes at the back of his book, keyed to the numbers in his translation, and his footnotes to his Old English text.'
+        },
+        erklaerung: {
+            subtypes: ['erklaerung', 'translationFootnote'],
+            title: 'Liebermann’s Erklärungen',
+            intro: 'Liebermann’s explanatory notes and commentary (Erklärungen), printed in Gesetze III (1916) and linked, as in his original print edition, to the superscript numbers found in his German translation in Gesetze I (1903). These notes are given here with an English crib made with the help of an LLM (Claude, 2026). Note that scholarship on the laws has moved a long way since 1916, and much of Liebermann’s commentary is superseded.'
+        }
+    };
+    // Modern editors and translators whose notes are linked to the numbers in their texts.
+    const EDITOR_GROUPS = {
+        attenborough: { name: 'Attenborough', intro: NOTE_GROUPS.attenborough.intro,
+            textIntro: 'Attenborough’s footnotes to his Old English text (The Laws of the Earliest English Kings, 1922).',
+            trIntro: 'Attenborough’s notes to his translation, printed at the back of his book (The Laws of the Earliest English Kings, 1922).' },
+        robertson: { name: 'Robertson', intro: 'Robertson’s notes (The Laws of the Kings of England from Edmund to Henry I, 1925): the notes at the back of her book, keyed to the numbers in his translation, and his footnotes to her text.',
+            textIntro: 'Robertson’s footnotes to her text (The Laws of the Kings of England from Edmund to Henry I, 1925), mostly the readings of the other manuscripts.',
+            trIntro: 'Robertson’s notes to her translation, printed at the back of her book (The Laws of the Kings of England from Edmund to Henry I, 1925).' },
+        oliver: { name: 'Oliver', intro: 'Oliver’s footnotes to her edition and to her translation (The Beginnings of English Law, 2002).',
+            textIntro: 'Oliver’s footnotes to her Old English text (The Beginnings of English Law, 2002).',
+            trIntro: 'Oliver’s footnotes to her translation (The Beginnings of English Law, 2002).' },
+        whitelock: { name: 'Whitelock', intro: 'Whitelock’s introduction and footnotes to her translation (English Historical Documents I, 2nd edn, 1979).',
+            textIntro: '', trIntro: 'Whitelock’s introduction and footnotes to her translation (English Historical Documents I, 2nd edn, 1979).' }
+    };
+    const xmlId = n => n.getAttribute('xml:id') || n.getAttributeNS('http://www.w3.org/XML/1998/namespace', 'id') || '';
+    const htmlId = id => 'ln-' + id.replace(/[^A-Za-z0-9_-]/g, '_');
+    function noteRef(ptr) {
+        const n = ptr.getAttribute('n') || '';
+        const rend = ptr.getAttribute('rend') || '';
+        const sup = el('sup', 'lnote-ref');
+        const a = el('a', null, rend === 'supplied' ? '[' + n + ']' : n);
+        a.href = '#' + htmlId((ptr.getAttribute('target') || '').replace(/^#/, ''));
+        a.title = rend === 'supplied' ? 'Note ' + n + ': not printed in Gesetze I; Liebermann says in vol. III where it belongs'
+            : /^printed-as-/.test(rend) ? 'Note ' + n + ': printed as ' + rend.slice(11) + ' in Gesetze I, corrected by Liebermann in vol. III'
+            : (ptr.getAttribute('type') === 'editorNote' ? 'Note ' : 'Liebermann’s note ') + n;
+        sup.appendChild(a);
+        return sup;
+    }
+    // Names of the authors and works on the Authors and Works Cited list (Toller, Schmid, Turk …) become
+    // links to it, with the same popup as in the dictionary entries (scripts/lawpopup.js).
+    // In the English, "His" (Rudolf His) is far more often the pronoun, so it is linked in the German only.
+    function linkWorks(p, english) {
+        if (!bibliography.length || !window.ELieb || !window.ELieb.linkAbbreviations) return;
+        const works = english ? bibliography.filter(w => w['Gesetze Text'] !== 'His') : bibliography;
+        p.innerHTML = window.ELieb.linkAbbreviations(p.innerHTML, [], [], works);
+    }
+    // The notes of one group as a list: number, German as printed, English, where printed, remarks.
+    function notesList(notes, group) {
+        const box = el('div', 'lnotes small');
+        if (group.intro) box.appendChild(el('p', 'lnotes__intro muted', group.intro));
+        const ol = el('ol', 'lnotes__list');
+        notes.forEach(n => {
+            const li = el('li');
+            li.id = htmlId(xmlId(n));
+            const whole = /wholeClause/.test(n.getAttribute('rend') || '');
+            const nn = n.getAttribute('n') || '';
+            const intro = nn === 'Introduction';     // an editor's introduction to the text (Whitelock)
+            const num = el('span', 'lnotes__num', nn === '0' ? '' : nn + (whole ? '' : ')'));
+            li.appendChild(num);
+            if (intro) li.appendChild(el('span', 'muted', ' (to the whole text) '));
+            else if (whole) li.appendChild(el('span', 'muted', ' (on the clause as a whole, no number in the text) '));
+            const kids = Array.from(n.children);
+            const label = kids.find(k => k.localName === 'label');
+            if (n.getAttribute('subtype') === 'footnote' && group.textShown === false) {
+                const on = el('span', 'muted', 'On the text (not given here)' + (label ? ', at ' : ': '));
+                if (label) { const w = el('em', null, plainText(label)); on.appendChild(w); on.appendChild(document.createTextNode(': ')); }
+                li.appendChild(on);
+            }
+            const seg = type => kids.find(k => k.localName === 'seg' && k.getAttribute('type') === type);
+            const de = seg('original'), en = seg('translation');
+            if (de) { const p = el('span', 'lnotes__de'); p.lang = de.getAttribute('xml:lang') || 'de'; p.appendChild(inline(de)); linkWorks(p); li.appendChild(p); }
+            if (en) { const p = el('span', 'lnotes__en'); p.lang = 'en'; p.appendChild(inline(en)); linkWorks(p, true); li.appendChild(p); }
+            const bibl = kids.find(k => k.localName === 'bibl');
+            const where = [];
+            if (bibl) {
+                const scope = u => { const s = tei(bibl, 'biblScope').find(b => b.getAttribute('unit') === u); return s ? plainText(s) : ''; };
+                if (n.getAttribute('type') === 'editorNote') where.push((group.name || '') + ', p. ' + scope('page') + (n.getAttribute('subtype') === 'footnote' ? ', footnote to the text' : n.getAttribute('subtype') === 'translationFootnote' ? ', footnote' : ''));
+                else where.push('Gesetze ' + ({ 1: 'I', 3: 'III' }[scope('volume')] || scope('volume')) + ', p. ' + scope('page') + (scope('column') ? ', col. ' + scope('column') : ''));
+            }
+            if (n.getAttribute('type') !== 'editorNote' && n.getAttribute('subtype') === 'translationFootnote') where.push('Liebermann’s footnote to his German translation');
+            const remark = kids.find(k => k.localName === 'note' && k.getAttribute('type') === 'remark');
+            const foot = el('span', 'lnotes__where muted', where.join(' · '));
+            if (remark) foot.appendChild(document.createTextNode((where.length ? ' · ' : '') + plainText(remark)));
+            li.appendChild(foot);
+            ol.appendChild(li);
+        });
+        box.appendChild(ol);
+        return box;
+    }
+    // Adds the "Liebermann's notes" (or "Attenborough's notes") button to a text's label line and the notes
+    // under its text. `texts` are the [paragraph, <ab>] pairs whose note numbers the button shows (all of
+    // Liebermann's texts share his textual notes, which are numbered by the page). `filter` narrows the notes.
+    function attachNotes(box, label, texts, div, groupKey, filter, extra) {
+        const group = Object.assign({}, NOTE_GROUPS[groupKey], extra || {});
+        const src = n => (n.getAttribute('source') || '').replace(/^#/, '');
+        const notes = tei(div, 'note').filter(n => n.getAttribute('type') === (group.type || 'liebermannNote') && group.subtypes.includes(n.getAttribute('subtype'))
+            && (!group.source || src(n) === group.source) && (!filter || filter(n)));
+        if (!notes.length) return;
+        const who = group.who || 'Liebermann’s';
+        const btn = el('button', 'chip lnotes-toggle', who + ' notes');
+        btn.type = 'button';
+        btn.title = 'Show or hide ' + group.title + ' (' + notes.length + ')';
+        label.appendChild(document.createTextNode(' '));
+        label.appendChild(btn);
+        const list = notesList(notes, group);
+        box.appendChild(list);
+        const set = on => {
+            btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+            btn.textContent = (on ? 'Hide ' : 'Show ') + who + ' notes';
+            list.hidden = !on;
+            texts.forEach(([p, a]) => { p.textContent = ''; p.appendChild(inline(a, { notes: on })); });
+        };
+        btn.addEventListener('click', () => {
+            const on = btn.getAttribute('aria-pressed') !== 'true';
+            set(on);
+        });
+        // Closed unless the reader opens them, clause by clause; open only when the link points at a note.
+        set(notes.some(n => location.hash === '#' + htmlId(xmlId(n))));
+        return true;
+    }
+
+    // The editions and translations a clause file names (new layout only):
+    // { liebermann: {name, ref, page}, oliver: {...}, ... }
+    function sources(doc) {
+        const out = {};
+        tei(doc, 'listBibl').forEach(list => tei(list, 'bibl').forEach(b => {
+            const id = b.getAttribute('xml:id') || b.getAttributeNS('http://www.w3.org/XML/1998/namespace', 'id');
+            if (!id) return;
+            const name = tei(doc, 'name').find(n => n.getAttribute('ref') === '#' + id);
+            const page = tei(b, 'biblScope').find(s => s.getAttribute('unit') === 'page');
+            out[id] = { id, bibl: b, type: b.getAttribute('type') || '', name: id === 'claude' ? 'LLM' : name ? plainText(name) : (SOURCE_NAMES[id] || id.charAt(0).toUpperCase() + id.slice(1)),
+                        page: page ? plainText(page) : '' };
+        }));
+        return out;
+    }
+
+    // Names for works a clause file lists without naming (e.g. Liebermann in Cn 1018).
+    const SOURCE_NAMES = { liebermann: 'Liebermann', 'liebermann-erkl': 'Liebermann', 'wormald-mel': 'Wormald', 'wormald-ppmel': 'Wormald', 'rabin-doml': 'Rabin', 'whitelock-cs': 'Whitelock' };
+
+    // A translator's or editor's surname, linked to the full reference at the foot of the page.
+    function sourceLink(src) {
+        const a = el('a', 'source-name', src.name);
+        a.href = '#src-' + src.id;
+        a.title = plainText(src.bibl);
+        return a;
+    }
+
+    // The manuscripts a clause file names: { 'wit-h': {abbr: 'H', name: 'Rochester, …', selected} }
+    function witnesses(doc) {
+        const out = {};
+        tei(doc, 'witness').forEach(w => {
+            const id = w.getAttribute('xml:id') || w.getAttributeNS('http://www.w3.org/XML/1998/namespace', 'id');
+            const abbr = tei(w, 'abbr')[0];
+            const name = tei(w, 'note')[0];
+            out[id || ''] = { abbr: abbr ? plainText(abbr) : plainText(w), name: name ? plainText(name) : '',
+                              selected: w.getAttribute('rend') === 'bold' };
+        });
+        return out;
+    }
+
+    // "MS H", with the manuscript's full name on hover.
+    function msLabel(a, wits, prefix) {
+        const id = (a.getAttribute('corresp') || '').replace(/^#/, '');
+        const w = wits[id];
+        if (!id) return null;
+        const abbr = (w ? w.abbr : id.replace(/^wit-/, '').toUpperCase()).replace(/\s*\([^)]*\)\s*$/, '');
+        // The Quadripartitus, the Instituta Cnuti and the Consiliatio Cnuti are Latin translations known from
+        // several manuscripts, not one manuscript: just "Q", "Inst. Cn.", "Cons. Cn.".
+        const isQuad = LATIN_VERSION.test(abbr);
+        const s = el('span', 'ms-label', (isQuad ? (prefix ? 'of ' : '') : (prefix || 'MS ')) + abbr);
+        if (w && w.name) s.title = w.name;
+        return s;
+    }
+
+    // Manuscript sigla link to the Manuscripts list (msAbb.html), or, for the Quadripartitus and the
+    // other Latin versions, to the list of law codes (lawAbb.html).
+    let siglumIndex = null;
+    let bibliography = [];    // authors and works Liebermann cites (data/bibliography.json), linked in his notes
+    const sigKey = s => s.replace(/[\s.]/g, '');
+    const SIGLUM_ALIASES = { 'InstCn': 'In(Cn)' };
+    const LATIN_VERSION = /^(Q|Lat|In|Inst\.? ?Cn\.?|Cons\.?(?: ?Cn\.?)?)(?![\w])/;
+    function loadSigla() {
+        const get = f => fetch(root + 'data/' + f).then(r => r.json()).catch(() => []);
+        return Promise.all([get('manuscripts.json'), get('markLaw.json'), get('bibliography.json')]).then(([ms, law, bib]) => {
+            bibliography = bib || [];
+            siglumIndex = {};
+            law.forEach(r => { if (r['Gesetze Text']) siglumIndex[sigKey(r['Gesetze Text'])] = 'lawAbb.html#' + encodeURIComponent(r.Anchor); });
+            ms.forEach(r => { if (r['Gesetze Text']) siglumIndex[sigKey(r['Gesetze Text'])] = 'msAbb.html#' + encodeURIComponent(r.Anchor); });
+        });
+    }
+    // "G (Prol.)" -> the page for G; "Fl, Ox" -> one link each.
+    function siglumHref(sig) {
+        if (!siglumIndex) return '';
+        let k = sigKey(sig);
+        k = SIGLUM_ALIASES[k] || k;
+        return siglumIndex[k] || siglumIndex[sigKey(sig.replace(/\s*\([^)]*\)\s*$/, ''))] || '';
+    }
+    function siglumLinks(sig) {
+        const frag = document.createDocumentFragment();
+        const parts = sig.split(/,\s*/);
+        const linkable = parts.length > 1 && parts.every(p => siglumHref(p)) ? parts : [sig];
+        linkable.forEach((p, i) => {
+            if (i) frag.appendChild(document.createTextNode(', '));
+            const href = siglumHref(p);
+            if (!href) { frag.appendChild(document.createTextNode(p)); return; }
+            const a = el('a', null, p);
+            a.href = root + href;
+            a.title = 'See ' + p + ' in the list of ' + (href.startsWith('msAbb') ? 'manuscripts' : 'law codes');
+            frag.appendChild(a);
+        });
+        return frag;
+    }
+
+    const LANG_NAMES = { de: 'German', la: 'Latin', xno: 'Anglo-Norman French' };
+
+    // New layout: the texts on the left (Liebermann's manuscripts, then the
+    // modern edition), the translations on the right, each labelled with its
+    // source and the manuscript it comes from.
+    function newTexts(doc, div, heading) {
+        const wrap = el('div', 'clause-texts clause-texts--sources');
+        wrap.appendChild(heading);
+        const srcs = sources(doc);
+        const wits = witnesses(doc);
+        const grid = el('div', 'clause-grid');
+        const col = (title, cls) => { const c = el('div', 'clause-col ' + cls); c.appendChild(el('h3', null, title)); grid.appendChild(c); return c; };
+        const abs = tei(div, 'ab');
+        const texts = abs.filter(a => /^(liebermannText|editionText)$/.test(a.getAttribute('type')));
+        // Texts from the Quadripartitus (Q) have their own heading, unless
+        // the clause survives only in Latin. Liebermann's texts come first, in
+        // the order of his columns (his leftmost, main text first), then the
+        // other editors'.
+        const witOf = a => wits[(a.getAttribute('corresp') || '').replace(/^#/, '')] || {};
+        const isQ = a => LATIN_VERSION.test(witOf(a).abbr || '');
+        const onlyQ = list => list.every(a => /^Q\b/.test(witOf(a).abbr || ''));
+        const hasOE = texts.some(a => a.getAttribute('xml:lang') === 'ang');
+        const hasFrench = texts.some(a => a.getAttribute('xml:lang') === 'xno');
+        const main = texts.filter(a => !(hasOE && isQ(a)));
+        const quad = texts.filter(a => hasOE && isQ(a));
+        const byEditor = list => list.filter(a => a.getAttribute('type') === 'liebermannText')
+            .concat(list.filter(a => a.getAttribute('type') !== 'liebermannText'));
+        const left = col(hasOE ? 'Old English text' : hasFrench ? 'Anglo-Norman French text' : 'Latin text', 'clause-col--text');
+        const right = col('Translations', 'clause-col--translation');
+        const liebTexts = [];
+        const add = (column, a, bits, cls) => {
+            const id = (a.getAttribute('source') || '').replace(/^#/, '');
+            const src = srcs[id] || { id, name: id || 'Unknown', bibl: a, page: '' };
+            const box = el('div', 'clause-reading' + (cls ? ' ' + cls : ''));
+            const label = el('p', 'clause-source');
+            label.appendChild(sourceLink(src));
+            bits.filter(Boolean).forEach(b => {
+                label.appendChild(document.createTextNode(' · '));
+                label.appendChild(typeof b === 'string' ? el('span', 'muted', b) : b);
+            });
+            box.appendChild(label);
+            const p = el('p', 'clause-reading-text');
+            const lang = a.getAttribute('xml:lang');
+            if (lang && lang !== 'und') p.lang = lang;
+            p.appendChild(inline(a));
+            box.appendChild(p);
+            // Liebermann's own notes, behind a button: textual notes on his texts (one button, on his first
+            // text, for the numbers in all of them), Erklärungen on his German.
+            if (a.getAttribute('type') === 'liebermannText') liebTexts.push([box, label, p, a]);
+            else if (a.getAttribute('type') === 'translation' && a.getAttribute('xml:lang') === 'de' && id === 'liebermann') attachNotes(box, label, [[p, a]], div, 'erklaerung');
+            // The modern editors' and translators' notes, each behind its own button: footnotes to an editor's text
+            // with his text, his notes at the back (and footnotes to a translation) with his translation.
+            const eg = EDITOR_GROUPS[id];
+            if (eg) {
+                const hasText = abs.some(x => x.getAttribute('type') === 'editionText' && (x.getAttribute('source') || '') === '#' + id);
+                const key = 'editor-' + id;
+                NOTE_GROUPS[key] = { type: 'editorNote', source: id, subtypes: ['endnote', 'footnote', 'translationFootnote'], who: eg.name + '’s', title: eg.name + '’s notes', intro: eg.intro };
+                if (a.getAttribute('type') === 'editionText') attachNotes(box, label, [[p, a]], div, key, n => n.getAttribute('subtype') === 'footnote', { name: eg.name, textShown: true, intro: eg.textIntro });
+                else if (a.getAttribute('type') === 'translation') attachNotes(box, label, [[p, a]], div, key, hasText ? (n => n.getAttribute('subtype') !== 'footnote') : null,
+                    { name: eg.name, textShown: hasText, intro: hasText ? eg.trIntro : eg.intro });
+            }
+            // Notes without numbers in the text (Rabin's notes to his text and to his translation, keyed to a word;
+            // Whitelock's footnotes where they are not yet linked to her numbers): a list behind a button.
+            const noteType = { translation: 'translator', editionText: 'textual' }[a.getAttribute('type')];
+            const own = noteType ? tei(div, 'note').filter(n => n.getAttribute('type') === noteType && (n.getAttribute('source') || '').replace(/^#/, '') === id) : [];
+            if (own.length) {
+                const ol = el('ol', 'clause-reading-notes small');
+                ol.setAttribute('aria-label', src.name + (noteType === 'textual' ? '’s textual notes' : '’s notes'));
+                own.forEach(n => { const li = el('li'); li.appendChild(partLabel(n)); li.appendChild(inline(n)); ol.appendChild(li); });
+                const btn = el('button', 'chip lnotes-toggle', 'Show ' + src.name + '’s notes');
+                btn.type = 'button';
+                btn.title = 'Show or hide ' + src.name + '’s ' + (noteType === 'textual' ? 'notes to the text' : 'notes to the translation') + ' (' + own.length + ')';
+                label.appendChild(document.createTextNode(' '));
+                label.appendChild(btn);
+                ol.hidden = true;
+                btn.setAttribute('aria-pressed', 'false');
+                btn.addEventListener('click', () => {
+                    const on = btn.getAttribute('aria-pressed') !== 'true';
+                    btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+                    btn.textContent = (on ? 'Hide ' : 'Show ') + src.name + '’s notes';
+                    ol.hidden = !on;
+                });
+                box.appendChild(ol);
+            }
+            column.appendChild(box);
+        };
+        const addText = (a, showLatin) => {
+            const id = (a.getAttribute('source') || '').replace(/^#/, '');
+            const src = srcs[id] || {};
+            const lieb = a.getAttribute('type') === 'liebermannText';
+            const n = a.getAttribute('n');
+            add(left, a, [msLabel(a, wits),
+                lieb ? (pageOf(a, src) ? 'Gesetze I, p. ' + pageOf(a, src) : '') : (n && n !== div.getAttribute('n') ? '§ ' + n : ''),
+                !lieb && pageOf(a, src) ? 'p. ' + pageOf(a, src) : '',
+                showLatin && a.getAttribute('xml:lang') === 'la' ? 'Latin' : '']);
+        };
+        byEditor(main).forEach(a => addText(a, hasOE));
+        if (quad.length) {
+            left.appendChild(el('h3', 'clause-subhead', onlyQ(quad) ? 'Quadripartitus' : 'Latin versions'));
+            byEditor(quad).forEach(a => addText(a, false));
+        }
+        // Liebermann's textual notes: each of his texts gets the notes whose numbers stand in it (his footnotes
+        // are numbered separately for each manuscript's column); notes with no number in any text go with the first.
+        const targets = ab => tei(ab, 'ptr').map(x => (x.getAttribute('target') || '').replace(/^#/, ''));
+        const pointed = new Set([].concat(...liebTexts.map(t => targets(t[3]))));
+        let introShown = false;      // the explanation once, over the first list
+        liebTexts.forEach(([box, label, p, a], i) => {
+            const mine = new Set(targets(a));
+            if (attachNotes(box, label, [[p, a]], div, 'textual', n => mine.has(xmlId(n)) || (i === 0 && !pointed.has(xmlId(n))), introShown ? { intro: '' } : null)) introShown = true;
+        });
+        const trans = abs.filter(a => a.getAttribute('type') === 'translation');
+        const isGerman = a => a.getAttribute('xml:lang') === 'de' || a.getAttribute('ana') === '#fromGerman';
+        // Liebermann's German first, then the LLM's English of it (made with Claude), then the other translations.
+        trans.filter(a => a.getAttribute('xml:lang') === 'de').forEach(a => add(right, a, ['German translation', pageOf(a) ? 'Gesetze I, p. ' + pageOf(a) : '']));
+        trans.filter(a => a.getAttribute('ana') === '#fromGerman').forEach(a => add(right, a, ['English of Liebermann’s German']));
+        trans.filter(a => !isGerman(a)).forEach(a => {
+            const id = (a.getAttribute('source') || '').replace(/^#/, '');
+            const src = srcs[id] || {};
+            add(right, a, [msLabel(a, wits, 'of MS '), pageOf(a, src) ? 'p. ' + pageOf(a, src) : '']);
+        });
+        if (!trans.length) { right.remove(); grid.classList.add('clause-grid--single'); }
+        wrap.appendChild(grid);
+        // Cross-references to other clauses: Liebermann's marginal notes ("Vgl."), then other scholars'
+        // (Whitelock, Rabin, Wormald, Jurasinski and Oliver), each under the scholar's name; then the
+        // clauses that each of them compares with this one.
+        const notesOf = type => tei(div, 'note').filter(n => n.getAttribute('type') === type);
+        const noteOf = type => notesOf(type)[0];
+        const srcId = n => (n.getAttribute('source') || '').replace(/^#/, '');
+        const cmpAll = notesOf('comparison'), backAll = notesOf('comparedBy');
+        const cmp = cmpAll.find(n => srcId(n) === 'liebermann'), back = backAll.find(n => srcId(n) === 'liebermann');
+        const others = cmpAll.filter(n => srcId(n) !== 'liebermann'), othersBack = backAll.filter(n => srcId(n) !== 'liebermann');
+        const scholar = id => (srcs[id] || {}).name || id;
+        const childOf = (n, name) => Array.from(n.childNodes).find(c => c.localName === name);
+        if (cmp || back || others.length || othersBack.length) {
+            const box = el('div', 'clause-compare small');
+            box.appendChild(el('h3', 'clause-compare__head', 'Cross-references'));
+            if (cmp) {
+                const p = el('p');
+                p.appendChild(el('strong', null, 'Compare (Liebermann' + (cmp.getAttribute('n') ? ', Gesetze I p. ' + cmp.getAttribute('n') : '') + '): '));
+                const printed = noteOf('comparisonPrinted');
+                if (plainText(cmp)) {
+                    p.appendChild(inline(cmp));
+                    if (printed) p.appendChild(el('span', 'muted', ' — as printed: ' + plainText(printed)));
+                } else if (printed) {
+                    p.appendChild(document.createTextNode(plainText(printed)));
+                }
+                box.appendChild(p);
+                const inc = noteOf('comparisonIncomplete');
+                if (inc) box.appendChild(el('p', 'muted', plainText(inc)));
+            }
+            // Other scholars: one line per scholar. Links made in the same words on the same page are
+            // given together: relation, clauses, page, then the scholar's words.
+            const bySource = {};
+            others.forEach(n => (bySource[srcId(n)] = bySource[srcId(n)] || []).push(n));
+            Object.entries(bySource).forEach(([id, ns]) => {
+                const groups = [];
+                ns.forEach(n => {
+                    const label = childOf(n, 'label'), quote = childOf(n, 'quote');
+                    const key = [label ? plainText(label) : '', n.getAttribute('n') || '', quote ? plainText(quote) : ''].join('|');
+                    let g = groups.find(x => x.key === key);
+                    if (!g) groups.push(g = { key, label, quote, page: n.getAttribute('n'), notes: [] });
+                    g.notes.push(n);
+                });
+                const p = el('p');
+                p.appendChild(el('strong', null, 'Compare (' + scholar(id) + '): '));
+                groups.forEach((g, i) => {
+                    if (i) p.appendChild(document.createTextNode('; '));
+                    if (g.label) p.appendChild(el('span', 'muted', plainText(g.label) + ' '));
+                    g.notes.forEach((n, j) => {
+                        if (j) p.appendChild(document.createTextNode(', '));
+                        const ref = childOf(n, 'ref');
+                        if (ref) {
+                            const a = el('a', null, plainText(ref));
+                            a.href = 'law.html?id=' + encodeURIComponent((ref.getAttribute('target') || '').replace(/^clause:/, ''));
+                            p.appendChild(a);
+                        } else {
+                            p.appendChild(document.createTextNode(Array.from(n.childNodes).filter(c => c.nodeType === 3).map(c => c.textContent).join('').trim()));
+                        }
+                    });
+                    if (g.page) p.appendChild(el('span', 'muted', ' (p. ' + g.page + ')'));
+                    if (g.quote) {
+                        p.appendChild(document.createTextNode(' '));
+                        p.appendChild(el('span', 'clause-compare__quote', '“' + plainText(g.quote) + '”'));
+                    }
+                });
+                box.appendChild(p);
+            });
+            if (back) {
+                const p = el('p');
+                p.appendChild(el('strong', null, 'Liebermann compares this clause at: '));
+                p.appendChild(inline(back));
+                box.appendChild(p);
+            }
+            const backBySource = {};
+            othersBack.forEach(n => (backBySource[srcId(n)] = backBySource[srcId(n)] || []).push(n));
+            Object.entries(backBySource).forEach(([id, ns]) => {
+                const p = el('p');
+                p.appendChild(el('strong', null, 'Compared with this clause (' + scholar(id) + '): '));
+                ns.forEach((n, i) => {
+                    if (i) p.appendChild(document.createTextNode('; '));
+                    p.appendChild(inline(n));
+                    if (n.getAttribute('n')) p.appendChild(el('span', 'muted', ' (p. ' + n.getAttribute('n') + ')'));
+                });
+                box.appendChild(p);
+            });
+            wrap.appendChild(box);
+        }
+        // The clause notes (<note type="editorial">, spreadsheet column AI) are kept in the files but not
+        // shown, for a cleaner page (decided October 2026); only the source of a passage is shown here.
+        tei(div, 'note').forEach(n => {
+            const type = n.getAttribute('type');
+            if (type !== 'passageSource') return;
+            const p = el('p', 'clause-note small');
+            p.appendChild(el('strong', null, 'Source of the passage: '));
+            p.appendChild(partLabel(n));
+            p.appendChild(inline(n));
+            wrap.appendChild(p);
+        });
+        [['supplementaryText', 'Supplementary manuscript'], ['supplementaryTranslation', 'Translation of the supplementary manuscript']].forEach(([type, label]) => {
+            abs.filter(a => a.getAttribute('type') === type).forEach(a => {
+                const p = el('div', 'clause-text clause-' + type);
+                p.appendChild(el('h3', null, label));
+                const t = el('p');
+                t.appendChild(inline(a));
+                p.appendChild(t);
+                wrap.appendChild(p);
+            });
+        });
+        return wrap;
+    }
+
+    // The texts of one clause as a block of headed paragraphs.
+    function texts(doc, heading) {
+        const wrap = el('div', 'clause-texts');
+        const div = tei(doc, 'div').find(d => d.getAttribute('type') === 'clause');
+        if (!div) return wrap;
+        // Files built from the laws database (Liebermann's texts and the editors'); Cn 1018 has only editors' texts.
+        if (tei(div, 'ab').some(a => /^(liebermannText|editionText)$/.test(a.getAttribute('type')))) return newTexts(doc, div, heading);
+        wrap.appendChild(heading);
+        LABELS.forEach(([type, label]) => {
+            tei(div, 'ab').filter(a => a.getAttribute('type') === type).forEach(a => {
+                const p = el('div', 'clause-text clause-' + type);
+                p.appendChild(el('h3', null, label));
+                p.appendChild(el('p', null, a.textContent.trim()));
+                wrap.appendChild(p);
+            });
+        });
+        return wrap;
+    }
+
+    // The law code in the heading links to its page, which lists all its clauses.
+    function codeLink(row) {
+        const a = el('a', null, row.code);
+        a.href = root + 'lawcode.html?code=' + encodeURIComponent(row.code) + '#' + encodeURIComponent(row.id);
+        a.title = 'All the clauses of ' + row.code;
+        return a;
+    }
+
+    // "Suggested dates: 1018 (Whitelock, Kennedy, Wormald) · …" and "Place: Oxford", each on its own line. Each
+    // date or place is followed by the scholars who propose it, linked to their works at the foot of the page.
+    // Liebermann's date comes first, then the others in order of publication (as the database gives them).
+    function datePlace(doc, srcs) {
+        const creation = tei(doc, 'creation')[0];
+        if (!creation) return null;
+        const box = el('div', 'clause-dates');
+        const line = (label, items) => {
+            if (!items.length) return;
+            const p = el('p');
+            p.appendChild(el('span', 'clause-dates__label', label + ': '));
+            items.forEach((it, i) => {
+                if (i) p.appendChild(el('span', 'clause-dates__sep', ' · '));
+                p.appendChild(document.createTextNode(plainText(it)));
+                const ids = (it.getAttribute('source') || '').split(/\s+/).map(x => x.replace(/^#/, '')).filter(Boolean);
+                // n: the page where each scholar gives the date ("I p. 269|MEL p. 337"), in the order of source
+                const pages = (it.getAttribute('n') || '').split('|');
+                if (ids.length) {
+                    p.appendChild(document.createTextNode(' ('));
+                    ids.forEach((id, j) => {
+                        if (j) p.appendChild(document.createTextNode(pages.some(Boolean) ? '; ' : ', '));
+                        const src = srcs[id] || { id, name: id, bibl: it };
+                        const a = sourceLink(src);
+                        a.textContent = src.name.split(',')[0];
+                        p.appendChild(a);
+                        if (pages[j]) p.appendChild(document.createTextNode(', ' + pages[j]));
+                    });
+                    p.appendChild(document.createTextNode(')'));
+                }
+            });
+            box.appendChild(p);
+        };
+        const kids = Array.from(creation.children);
+        line('Suggested dates', kids.filter(n => n.localName === 'date'));
+        line('Place', kids.filter(n => n.localName === 'placeName'));
+        if (!box.children.length) {
+            // Older files: only the spreadsheet's wording.
+            const note = kids.find(n => n.localName === 'note' && n.getAttribute('type') === 'promulgation');
+            if (note && plainText(note)) box.appendChild(el('p', null, 'Date and place: ' + plainText(note)));
+        }
+        return box.children.length ? box : null;
+    }
+
+    // A clause of Liebermann's that later editors divide (Abt 1 = Oliver 1–7): the texts mark the parts with
+    // the editions' clause numbers; say so, and list them (the concordance note written by tools/merge-parts.py).
+    // a note on one part of a divided clause: which part, by the dividing editor's number
+    const partLabel = n => {
+        const m = (n.getAttribute('target') || '').match(/^#part-([a-z])$/);
+        if (!m) return document.createTextNode('');
+        const doc = n.ownerDocument;
+        const seg = tei(doc, 'seg').find(x => x.getAttribute('type') === 'part' && x.getAttribute('n')
+            && (x.getAttribute('corresp') || '').split(/\s+/).includes('#part-' + m[1]));
+        if (!seg) return document.createTextNode('');
+        const who = (sources(doc)[(seg.parentNode.getAttribute('source') || '').replace(/^#/, '')] || {}).name || '';
+        return el('span', 'muted', '[' + (who ? who + ' ' : '') + seg.getAttribute('n') + '] ');
+    };
+
+    function partsNote(row, doc) {
+        if (!row.parts || row.parts.length < 2) return null;
+        const p = el('p', 'clause-parts small');
+        const conc = tei(doc, 'note').find(n => n.getAttribute('type') === 'concordance');
+        p.appendChild(document.createTextNode('Liebermann prints this as one clause'));
+        if (conc && plainText(conc)) {
+            p.appendChild(document.createTextNode('; later editors divide it ('));
+            p.appendChild(el('span', 'clause-parts__conc', plainText(conc)));
+            p.appendChild(document.createTextNode('), and their numbers are marked in their own texts'));
+        }
+        p.appendChild(document.createTextNode('.'));
+        return p;
+    }
+
+    function render(row, doc) {
+        const h1 = el('h1');
+        h1.appendChild(codeLink(row));
+        h1.appendChild(document.createTextNode(row.clause ? ' ' + row.clause : ''));
+        document.title = row.citation + ' · eLiebermann';
+
+        target.textContent = '';
+        const header = el('header', 'entry-header');
+        header.appendChild(h1);
+        const meta = el('div', 'meta');
+        const isNew = tei(doc, 'ab').some(a => /^(liebermannText|editionText)$/.test(a.getAttribute('type')));
+        const lawBibl = tei(doc, 'bibl').find(b => b.getAttribute('type') === 'legalText');
+        if (isNew && lawBibl) {
+            const t = tei(lawBibl, 'title')[0];
+            const reign = tei(lawBibl, 'note').find(n => n.getAttribute('type') === 'reign');
+            if (t) meta.appendChild(el('span', null, plainText(t)));
+            if (reign) meta.appendChild(el('span', null, plainText(reign)));
+        } else if (row.legalText) meta.appendChild(el('span', null, row.legalText));
+        const allSrcs = sources(doc);
+        const lieb = allSrcs.liebermann;
+        const liebPage = isNew ? (lieb ? lieb.page : '') : row.page;
+        const scanAt = SCAN_ID ? scanPage(liebPage) : '';
+        if (liebPage) {
+            const s = el('span', null, 'Liebermann, Gesetze I, p. ' + liebPage);
+            if (scanAt) {
+                s.appendChild(document.createTextNode(' · '));
+                const a = el('a', null, 'page scan');
+                a.href = scanLink(scanAt);
+                a.target = '_blank';
+                a.rel = 'noopener';
+                s.appendChild(a);
+            }
+            meta.appendChild(s);
+        }
+        header.appendChild(meta);
+        const dated = datePlace(doc, allSrcs);
+        if (dated) header.appendChild(dated);
+        const parts = partsNote(row, doc);
+        if (parts) header.appendChild(parts);
+        target.appendChild(header);
+
+        const sec = el('section', 'entry-section clause-texts-section');
+        const t = texts(doc, el('span'));
+        sec.appendChild(t);
+        target.appendChild(sec);
+
+        const wits = tei(doc, 'witness');
+        if (wits.length) {
+            const s = el('section', 'entry-section');
+            s.appendChild(el('h2', null, 'Manuscripts'));
+            const named = wits.some(w => tei(w, 'abbr').length);
+            if (named) {
+                const ul = el('ul', 'ms-list');
+                Object.values(witnesses(doc)).forEach(w => {
+                    const li = el('li');
+                    const sig = el('span', 'ms-siglum');
+                    sig.appendChild(siglumLinks(w.abbr));
+                    li.appendChild(sig);
+                    if (w.name) li.appendChild(document.createTextNode(' ' + w.name));
+                    ul.appendChild(li);
+                });
+                s.appendChild(ul);
+            } else {
+                const p = el('p');
+                wits.forEach((w, i) => {
+                    if (i) p.appendChild(document.createTextNode(', '));
+                    p.appendChild(el(w.getAttribute('rend') === 'bold' ? 'strong' : 'span', null, w.textContent.trim()));
+                });
+                s.appendChild(p);
+                s.appendChild(el('p', 'small muted', 'The manuscript in bold is the one the text above is taken from, where more than one is listed.'));
+            }
+            target.appendChild(s);
+        }
+
+        const kw = tei(doc, 'keywords').filter(k => k.textContent.trim());
+        if (kw.length) {
+            const s = el('section', 'entry-section');
+            s.appendChild(el('h2', null, 'Keywords'));
+            s.appendChild(el('p', 'small muted', 'Click a keyword to see every clause indexed with it in the pre-1066 codes.'));
+            // Each keyword is a bubble, linking to its page under Subjects.
+            const names = { 'offence-legal-event': 'Legal matters', people: 'People', locations: 'Places' };
+            const dl = el('dl', 'kw-groups');
+            kw.forEach(k => {
+                dl.appendChild(el('dt', null, names[k.getAttribute('n')] || k.getAttribute('n') || 'Keywords'));
+                const dd = el('dd');
+                const chips = el('span', 'chips');
+                tei(k, 'term').forEach(x => {
+                    const a = el('a', 'chip', x.textContent.trim());
+                    a.href = root + 'subjects.html?k=' + encodeURIComponent(x.textContent.trim());
+                    a.title = 'Other clauses tagged “' + x.textContent.trim() + '”';
+                    chips.appendChild(a);
+                });
+                dd.appendChild(chips);
+                dl.appendChild(dd);
+            });
+            s.appendChild(dl);
+            target.appendChild(s);
+        }
+
+        // Editions and translations, then studies (only if there are any), without bullet points.
+        const srcs = Object.values(allSrcs);
+        // The LLM's English of Liebermann's German comes last.
+        [['Editions and translations', srcs.filter(x => x.type !== 'study' && x.id !== 'claude').concat(srcs.filter(x => x.id === 'claude'))],
+         ['Studies', srcs.filter(x => x.type === 'study')]].forEach(([title, list]) => {
+            if (!list.length) return;
+            const s = el('section', 'entry-section clause-sources');
+            s.appendChild(el('h2', null, title));
+            const ul = el('ul');
+            list.forEach(x => {
+                const li = el('li');
+                li.id = 'src-' + x.id;
+                li.appendChild(el('strong', null, x.name + ': '));
+                li.appendChild(inline(x.bibl));
+                ul.appendChild(li);
+            });
+            s.appendChild(ul);
+            target.appendChild(s);
+        });
+
+        // Neighbouring clauses and the whole code
+        const sameCode = catalogue.filter(c => c.code === row.code);
+        const i = sameCode.findIndex(c => c.id === row.id);
+        const nav = el('nav', 'clause-nav');
+        const link = (c, label) => { const a = el('a', null, label); a.href = '?id=' + encodeURIComponent(c.id); return a; };
+        nav.appendChild(i > 0 ? link(sameCode[i - 1], '← ' + sameCode[i - 1].citation) : el('span'));
+        nav.appendChild(i < sameCode.length - 1 ? link(sameCode[i + 1], sameCode[i + 1].citation + ' →') : el('span'));
+        target.appendChild(nav);
+
+        const whole = el('section', 'entry-section');
+        const btn = el('button', 'button', 'Show the whole of ' + row.code + ' (' + sameCode.length + ' clauses)');
+        btn.type = 'button';
+        const out = el('div', 'whole-code');
+        btn.addEventListener('click', () => {
+            btn.disabled = true;
+            btn.textContent = 'Loading…';
+            Promise.all(sameCode.map(c => fetchXml(c.file).then(d => ({ c, d })).catch(() => ({ c, d: null }))))
+                .then(items => {
+                    items.forEach(({ c, d }) => {
+                        const h = el('h2', c.id === row.id ? 'current' : null);
+                        h.id = c.id;
+                        const a = el('a', null, c.citation);
+                        a.href = '?id=' + encodeURIComponent(c.id);
+                        h.appendChild(a);
+                        if (d) out.appendChild(texts(d, h)); else { out.appendChild(h); out.appendChild(el('p', 'muted', 'This clause could not be loaded.')); }
+                    });
+                    btn.remove();
+                    const cur = document.getElementById(row.id);
+                    if (cur) cur.scrollIntoView();
+                });
+        });
+        whole.appendChild(btn);
+        whole.appendChild(out);
+        target.appendChild(whole);
+        if (new URLSearchParams(location.search).get('all') === '1') btn.click();
+
+        const src = el('p', 'source-line');
+        const changes = tei(doc, 'change');
+        const checked = changes.filter(c => c.getAttribute('type') === 'checked');
+        const made = changes.find(c => c.getAttribute('type') !== 'checked');
+        src.appendChild(document.createTextNode((made ? plainText(made) : 'Made from the OE Laws spreadsheet, not yet checked against the print.') + ' '));
+        checked.forEach(c => src.appendChild(document.createTextNode(plainText(c) + ' ')));
+        const a = el('a', null, 'View the TEI file');
+        a.href = root + 'oe-laws/' + encodeURIComponent(row.file);
+        src.appendChild(a);
+        target.appendChild(src);
+    }
+
+    if (!id) {
+        target.innerHTML = '<h1>No clause chosen</h1><p>Clauses are reached from the law code citations at the foot of dictionary entries.</p>';
+        return;
+    }
+    fetch(root + 'oe-laws/index.json')
+        .then(r => r.json())
+        .then(list => {
+            catalogue = list;
+            // a part of a clause that is shown whole (Abt_1-c): the whole clause, with that part marked
+            const row = list.find(c => c.id === id) || list.find(c => (c.parts || []).some(p => p.id === id));
+            if (!row) throw new Error('missing');
+            const part = row.id === id ? '' : ((row.parts.find(p => p.id === id).clause.match(/\[([a-z])\]$/) || [])[1] || '');
+            return Promise.all([fetchXml(row.file), loadSigla()]).then(([doc]) => {
+                render(row, doc);
+                if (part) {
+                    const marked = target.querySelectorAll('.part-' + part);
+                    marked.forEach(e => e.classList.add('part-active'));
+                    if (marked[0]) marked[0].scrollIntoView({ block: 'center' });
+                }
+            });
+        })
+        .catch(() => {
+            target.innerHTML = '';
+            target.appendChild(el('h1', null, 'Clause not found'));
+            target.appendChild(el('p', null, 'There is no clause "' + id + '" in the laws database.'));
+        });
+})();
+</script>

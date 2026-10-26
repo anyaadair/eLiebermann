@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="AGu_4">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>AGu 4</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Cross-references to other clauses</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Attenborough’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">AGu_4</idno>
+        <idno type="citation">AGu 4</idno>
+        <idno type="lawCode">AGu</idno>
+        <idno type="lawCodeAnchor">AGu</idno>
+        <idno type="clause">4</idno>
+        <idno type="citationKey">AGu 4</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Treaty of Alfred and Guthrum</title> <note type="reign">Alfred, r. 871–899; Guthrum, d. 890</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">128</biblScope></bibl>
+          <bibl xml:id="attenborough" type="edition">F. L. Attenborough, <title>The Laws of the Earliest English Kings</title> (Cambridge: Cambridge University Press, 1922), p. <biblScope unit="page">100</biblScope></bibl>
+          <bibl xml:id="whitelock" type="translation">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007), p. <biblScope unit="page">418</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-b1" rend="bold"><abbr>B1</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383 (first copy)</note></witness>
+          <witness xml:id="wit-b2"><abbr>B2</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383 (second copy)</note></witness>
+          <witness xml:id="wit-q"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note></witness>
+          <witness xml:id="wit-ld"><abbr>Ld</abbr> <note type="manuscript">William Lambarde, Archaionomia (London, 1568) – printed from manuscripts now lost</note></witness>
+          <witness xml:id="wit-b"><abbr>B</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 126">880–90</date><date source="#whitelock" n="EHD p. 417">886–90</date><date source="#wormald-mel" n="MEL p. 286">before 890, perhaps by over a decade</date><note type="promulgation">880–90 (Liebermann, I p. 126); 886–90 (Whitelock, EHD p. 417); before 890, perhaps by over a decade (Wormald, MEL p. 286)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Livestock</term><term>Surety</term><term>Commerce</term><term>Slavery</term><term>Legal principles</term><term>Treaty</term><term>Danelaw</term></keywords>
+        <keywords n="people"><term>Guarantor</term><term>Slave</term><term>All people</term><term>Secular classes</term><term>Rank</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 667 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 128.</change>
+      <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 128: “⁊ þæt ælc man wite his getyman be mannum ⁊ be horsum ⁊ be oxum.” → “⁊ þæt ælc man wite his getyman be mannum ⁊ be horsum ⁊ be oxum. (expanded letters in italics: æt, m)”.</change>
+      <change when="2026-10" type="checked">Liebermann’s German translation corrected against Gesetze I, p. 128: “(Über Gewährsmänner. Ld) Und dass jedermann seinen Gewährsmann kenne bei [Erwerb von] Sklaven und Pferden und Ochsen.” → “(Über Gewährsmänner. Ld) Und dass jedermann seinen Gewährsmann kenne bei [Erwerb von] Sklaven und Pferden und Ochsen. (expanded letters in italics: Ld)”.</change>
+      <change when="2026-10" type="checked">The modern editor’s text corrected against Attenborough, p. 100: “[Ld]” → “∅”.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="4">
+        <head><ref type="lawCode" target="law:AGu">AGu</ref> 4</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="4" corresp="#wit-b"><ptr type="liebermannNote" n="*" target="#AGu_4.lnote.oe.star"/><pb n="128" ed="#liebermann"/>⁊ þ<hi rend="italic">æt<ptr type="liebermannNote" n="1" target="#AGu_4.lnote.oe.1"/></hi> ælc man wite his getyman be mannu<hi rend="italic">m</hi> ⁊ be horsum ⁊ be oxum.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="4" corresp="#wit-q"><pb n="129" ed="#liebermann"/>Et omnis<ptr type="liebermannNote" n="1" target="#AGu_4.lnote.oe.1-2"/> homo sciat aduocatum suum de hominibus et<ptr type="liebermannNote" n="2" target="#AGu_4.lnote.oe.2"/> de equis et de<ptr type="liebermannNote" n="2" target="#AGu_4.lnote.oe.2"/> bobus.<ptr type="liebermannNote" n="3" target="#AGu_4.lnote.oe.3"/></ab>
+        <ab type="editionText" xml:lang="ang" source="#attenborough" n="4" corresp="#wit-b1"><pb n="100" ed="#attenborough"/>[Be getymum.]<ptr type="editorNote" n="1" target="#AGu_4.attnote.fn.1"/> ⁊ ðæt ælc man wite his getyman be mannum ⁊ be horsum ⁊ be oxum.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="129" ed="#liebermann"/>(Über Gewährsmänner. <hi rend="italic">Ld</hi>) Und<ptr type="liebermannNote" n="1" target="#AGu_4.lnote.de.1"/> dass jedermann seinen Gewährsmann kenne<ptr type="liebermannNote" n="2" target="#AGu_4.lnote.de.2"/> bei [Erwerb von] Sklaven und Pferden und Ochsen.</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">(Of warrantors. Ld) And that everyone should know his warrantor in [acquiring] slaves and horses and oxen.</ab>
+        <ab type="translation" xml:lang="en" source="#attenborough" corresp="#wit-b1"><pb n="101" ed="#attenborough"/>Every man shall have knowledge of his warrantor when he buys slaves, or horses, or oxen.</ab>
+        <ab type="translation" xml:lang="en" source="#whitelock" corresp="#wit-b"><pb n="418" ed="#whitelock"/>And that each man is to know his warrantor at [the purchase of] men or horses or oxen.</ab>
+        <note type="comparedBy" source="#liebermann"><ref target="clause:IEw_1">I Ew 1</ref></note>
+        <note type="comparison" source="#wormald-mel" n="286"><label>resembles</label> <ref target="clause:IEw_1">I Ew 1–1.5</ref> <quote>They also resembled what tenth-century kings became inclined to say about transactions in movable goods, above all cattle (n. 104)</quote></note>
+        <note type="comparison" source="#wormald-mel" n="286"><label>resembles</label> <ref target="clause:IIAs_12">II As 12</ref> <quote>They also resembled what tenth-century kings became inclined to say about transactions in movable goods, above all cattle (n. 104)</quote></note>
+        <note type="comparison" source="#wormald-mel" n="286"><label>resembles</label> <ref target="clause:IIAs_13-1">II As 13.1</ref> <quote>They also resembled what tenth-century kings became inclined to say about transactions in movable goods, above all cattle (n. 104)</quote></note>
+        <note type="comparison" source="#wormald-mel" n="286"><label>resembles</label> <ref target="clause:IIAs_22">II As 22–22.2</ref> <quote>They also resembled what tenth-century kings became inclined to say about transactions in movable goods, above all cattle (n. 104)</quote></note>
+        <note type="comparison" source="#wormald-mel" n="286"><label>resembles</label> <ref target="clause:IVEg_3">IV Eg 3–11</ref> <quote>They also resembled what tenth-century kings became inclined to say about transactions in movable goods, above all cattle (n. 104)</quote></note>
+        <note type="comparison" source="#wormald-mel" n="286"><label>not unlike</label> <ref target="clause:IIAtr_II-Atr-Prol">II Atr</ref> <quote>These were in general not unlike the terms of Æthelred's treaty with Olaf and others a century later, or those hammered out on the Anglo-Welsh border.</quote></note>
+        <note type="comparison" source="#wormald-mel" n="286"><label>not unlike</label> <ref target="clause:Duns_Prol">Duns</ref> <quote>These were in general not unlike the terms of Æthelred's treaty with Olaf and others a century later, or those hammered out on the Anglo-Welsh border.</quote></note>
+        <note type="editorial">Not in B2 (K left blank); text from B.</note>
+        <note type="liebermannNote" subtype="textual" xml:id="AGu_4.lnote.oe.star" n="*" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">128</biblScope></bibl><seg type="original" xml:lang="de">Be getymum <hi rend="italic">überschreibt Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">Ld has as heading Be getymum</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="AGu_4.lnote.oe.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">128</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="AGu_4.lnote.oe.1-2" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">129</biblScope></bibl><seg type="original" xml:lang="de">sc. o. h. <hi rend="italic">Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">sc. o. h. Lond</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="AGu_4.lnote.oe.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">129</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Lond</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="AGu_4.lnote.oe.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">129</biblScope></bibl><seg type="original" xml:lang="de">hominibus <hi rend="italic">MHk</hi></seg><seg type="translation" xml:lang="en" source="#claude">hominibus MHk</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="AGu_4.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">85</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Anefang 11; unfrei 6a. d; Handel 8g. i</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf. Gl</hi> Anefang 11; unfrei 6a. d; Handel 8g. i</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="AGu_4.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">85</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">geteama</hi> auch II Atr 8</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">geteama</hi> also II Atr 8</seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="AGu_4.attnote.fn.1" n="1" source="#attenborough"><bibl><biblScope unit="page">100</biblScope></bibl><label>getymum</label><seg type="original" xml:lang="en">Ld. This cap. is omitted in B 2.</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

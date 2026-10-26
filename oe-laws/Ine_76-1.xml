@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Ine_76-1">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Ine 76.1</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Attenborough’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">Ine_76-1</idno>
+        <idno type="citation">Ine 76.1</idno>
+        <idno type="lawCode">Ine</idno>
+        <idno type="lawCodeAnchor">Ine</idno>
+        <idno type="clause">76.1</idno>
+        <idno type="citationKey">Ine 76.1</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Ine’s Laws (in Alfred’s Domboc)</title> <note type="reign">Ine, r. 688–726</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">122</biblScope></bibl>
+          <bibl xml:id="jurasinski-and-oliver" type="edition">Stefan Jurasinski and Lisi Oliver, <title>The Laws of Alfred: The Domboc and the Making of Anglo-Saxon Law</title> (Cambridge: Cambridge University Press, 2021), p. <biblScope unit="page">436</biblScope></bibl>
+          <bibl xml:id="attenborough" type="edition">F. L. Attenborough, <title>The Laws of the Earliest English Kings</title> (Cambridge: Cambridge University Press, 1922), p. <biblScope unit="page">60</biblScope></bibl>
+          <bibl xml:id="whitelock" type="translation">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007), p. <biblScope unit="page">408</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-e" rend="bold"><abbr>E</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 173 (Parker Chronicle and Laws)</note></witness>
+          <witness xml:id="wit-h"><abbr>H</abbr> <note type="manuscript">Strood, Medway Archive and Local Studies Centre, MS DRc/R1 (Textus Roffensis; formerly Rochester, Cathedral Library, A.3.5), c. 1120–25</note></witness>
+          <witness xml:id="wit-b-no-prol"><abbr>B (no Prol.)</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383</note></witness>
+          <witness xml:id="wit-g-prol-only"><abbr>G (Prol. only)</abbr> <note type="manuscript">London, British Library, Cotton Nero A.i</note></witness>
+          <witness xml:id="wit-q"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note></witness>
+          <witness xml:id="wit-ld"><abbr>Ld</abbr> <note type="manuscript">William Lambarde, Archaionomia (London, 1568) – printed from manuscripts now lost</note></witness>
+          <witness xml:id="wit-bu"><abbr>Bu</abbr></witness>
+          <witness xml:id="wit-ot-frags"><abbr>Ot (frags.)</abbr> <note type="manuscript">London, British Library, Cotton Otho B.xi (damaged by fire, 1731)</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 88">688–95</date><date source="#whitelock" n="EHD p. 399">688–94</date><date source="#wormald-mel" n="MEL p. 103">688×92</date><note type="promulgation">688–95 (Liebermann, I p. 88); 688–94 (Whitelock, EHD p. 399); 688×92 (Wormald, MEL p. 103)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Homicide</term><term>Legal procedure</term><term>Compensation</term><term>Fines</term><term>Capital offences</term></keywords>
+        <keywords n="people"><term>Godson</term><term>Spiritual kin</term><term>Kin</term><term>Capital offenders</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 659 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked and corrected against <title>Die Gesetze der Angelsachsen</title> I, p. 122.</change>
+      <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 122: “Gif hit þonne kyninges godsunu sie, bete be his were þam cyninge swa ilce swa þære mægþe.” → “Gif hit þonne kyninges godsunu sie, bete be his were þam cyninge swa ilce swa þære mægþe. (no italics)”.</change>
+      <change when="2026-10" type="checked">Liebermann’s text of MS Ot added from Gesetze I, p. 122.</change>
+      <change when="2026-10" type="checked">Liebermann’s text of MS B added from Gesetze I, p. 122.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="76.1">
+        <head><ref type="lawCode" target="law:Ine">Ine</ref> 76.1</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="76.1" corresp="#wit-e"><pb n="122" ed="#liebermann"/>Gif hit þonne kyninges<ptr type="liebermannNote" n="27" target="#Ine_76-1.lnote.oe.27"/> godsunu sie<ptr type="liebermannNote" n="22" target="#Ine_76-1.lnote.oe.22"/>, bete be his were þam<ptr type="liebermannNote" n="28" target="#Ine_76-1.lnote.oe.28"/> cyninge swa<ptr type="liebermannNote" n="29" target="#Ine_76-1.lnote.oe.29"/> ilce swa<ptr type="liebermannNote" n="30" target="#Ine_76-1.lnote.oe.30"/> þære mægþe.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="76.1" corresp="#wit-ot-frags"><pb n="122" ed="#liebermann"/>..., bete be his were ....</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="76.1" corresp="#wit-h"><pb n="122" ed="#liebermann"/>Gif hit þonne<ptr type="liebermannNote" n="13" target="#Ine_76-1.lnote.oe.13"/> sy<ptr type="liebermannNote" n="5" target="#Ine_76-1.lnote.oe.5"/> cyninges godsunu, bete be his were þam cyninge swa same<ptr type="liebermannNote" n="6" target="#Ine_76-1.lnote.oe.6"/> swa þære mægþe.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="76.1" corresp="#wit-b-no-prol"><pb n="123" ed="#liebermann"/>Gyf hit ðonne kyninges godsunu sy, bete be his were ðam cinge swa [same<ptr type="liebermannNote" n="4" target="#Ine_76-1.lnote.oe.4"/>] swa ðære mægðe.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="76.1" corresp="#wit-q"><pb n="123" ed="#liebermann"/>Si sit filiolus regis, emendet secundum<ptr type="liebermannNote" n="17" target="#Ine_76-1.lnote.oe.17"/> weram eius<ptr type="liebermannNote" n="18" target="#Ine_76-1.lnote.oe.18"/> regi sicut<ptr type="liebermannNote" n="19" target="#Ine_76-1.lnote.oe.19"/> cognationi.</ab>
+        <ab type="editionText" xml:lang="ang" source="#attenborough" corresp="#wit-e"><pb n="60" ed="#attenborough"/>Gif hit þonne kyninges godsunu sie, bete be his were þam cyninge swa ilce<ptr type="editorNote" n="13" target="#Ine_76-1.attnote.fn.13"/> swa þære mægþe.</ab>
+        <ab type="editionText" xml:lang="ang" source="#jurasinski-and-oliver" n="78.1" corresp="#wit-e"><pb n="436" ed="#jurasinski-and-oliver"/>Gif hit þonne kyninges godsunu sie, bete be his were þam cyninge swa ilce swa þære mægþe.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="123" ed="#liebermann"/>Wenn es [der Erschlagene] jedoch ein Taufsohn des Königs<ptr type="liebermannNote" n="1" target="#Ine_76-1.lnote.de.1"/> ist, so büsse [Thät]er durch<ptr type="liebermannNote" n="2" target="#Ine_76-1.lnote.de.2"/> dessen Wergeld dem Könige ebenso [viel<ptr type="liebermannNote" n="3" target="#Ine_76-1.lnote.de.3"/>] wie der Sippe [des Erschlagenen].</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">But if it [the slain man] is a godson of the king, let the [kill]er compensate the king according to his wergeld just as [much] as the kindred [of the slain man].</ab>
+        <ab type="translation" xml:lang="en" source="#attenborough" corresp="#wit-e"><pb n="61" ed="#attenborough"/>If, however, it is the godson of a king [who is slain], a compensation equivalent to the wergeld shall be paid to the king, as well as [the wergeld itself] to the kindred.</ab>
+        <ab type="translation" xml:lang="en" source="#whitelock"><pb n="408" ed="#whitelock"/>If, however, it is the king’s godson, his wergild is to be paid to the king the same as to the kindred.</ab>
+        <ab type="translation" xml:lang="en" source="#jurasinski-and-oliver" corresp="#wit-e"><pb n="437" ed="#jurasinski-and-oliver"/>If, however, it is the king’s godson, let him pay his <hi rend="italic">wer</hi> to the king as well as to the kin.</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_76-1.lnote.oe.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">123</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Rasur (unter welcher einst</hi> ilce?); <hi rend="italic">im</hi> 16. <hi rend="italic">Jh.</hi> same</seg><seg type="translation" xml:lang="en" source="#claude">erasure (under which formerly ilce?); in the 16th cent. same</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_76-1.lnote.oe.17" n="17" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">123</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="spaced">per</hi> <hi rend="italic">Hn</hi></seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">per</hi> Hn</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_76-1.lnote.oe.18" n="18" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">123</biblScope></bibl><seg type="original" xml:lang="de">ipsius <hi rend="italic">Co Or</hi></seg><seg type="translation" xml:lang="en" source="#claude">ipsius Co Or</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_76-1.lnote.oe.19" n="19" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">123</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_76-1.lnote.oe.13" n="13" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">122</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">übergeschr.</hi></seg><seg type="translation" xml:lang="en" source="#claude">written above</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_76-1.lnote.oe.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">122</biblScope></bibl><seg type="original" xml:lang="de">y <hi rend="italic">auf Rasur</hi></seg><seg type="translation" xml:lang="en" source="#claude">y on an erasure</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_76-1.lnote.oe.6" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">122</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">auf Rasur</hi></seg><seg type="translation" xml:lang="en" source="#claude">on an erasure</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_76-1.lnote.oe.27" n="27" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">122</biblScope></bibl><seg type="original" xml:lang="de">cyn. <hi rend="italic">So Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">cyn. So Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_76-1.lnote.oe.22" n="22" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">122</biblScope></bibl><seg type="original" xml:lang="de">sy <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">sy Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_76-1.lnote.oe.28" n="28" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">122</biblScope></bibl><seg type="original" xml:lang="de">ðæm cyning <hi rend="italic">Ld;</hi> þ. c. <hi rend="italic">fehlt So</hi></seg><seg type="translation" xml:lang="en" source="#claude">ðæm cyning Ld; þ. c. lacking in So</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_76-1.lnote.oe.29" n="29" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">122</biblScope></bibl><seg type="original" xml:lang="de">same <hi rend="italic">fügt zu Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">Ld adds same</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_76-1.lnote.oe.30" n="30" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">122</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt So</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in So</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Ine_76-1.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">82</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">König Ælfred stand 878 bei Taufe des (Ostangl.) Königs Guthrum Gevatter und schickte 894 zwei kriegsgefangene Söhne seines Feindes, des Dänenkönigs Hastein, diesem zurück, <hi rend="italic">forþamþe hiora wæs oðer his godsunu, oðer</hi> [Pate] seines Schwiegersohns; Ann. Anglosax. — Einen <hi rend="italic">regis filiolus</hi> zeichnet das Domesdaybuch aus (Ellis <hi rend="italic">Introd. to Dom.</hi> I 305); <hi rend="italic">vgl.</hi> 76²</seg><seg type="translation" xml:lang="en" source="#claude">King Ælfred stood godfather in 878 at the baptism of the (East Anglian) king Guthrum, and in 894 sent back to his enemy, the Danish king Hastein, two of the latter’s sons who had been taken prisoner, <hi rend="italic">forþamþe hiora wæs oðer his godsunu, oðer</hi> [godson] of his son-in-law; Ann. Anglosax. — Domesday Book singles out a <hi rend="italic">regis filiolus</hi> (Ellis <hi rend="italic">Introd. to Dom.</hi> I 305); <hi rend="italic">cf.</hi> 76²</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Ine_76-1.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">82</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">be</hi> versteht Q hier ‘gemäss’, dagegen in Hn <hi rend="italic">per:</hi> was den Sinn nicht ändert</seg><seg type="translation" xml:lang="en" source="#claude">Q here takes <hi rend="italic">be</hi> as ‘according to’, whereas in Hn it is <hi rend="italic">per:</hi> which does not change the sense</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Ine_76-1.lnote.de.3" n="3" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">82</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Hcor, Bcor. modernisieren, ebenso 76, 2</seg><seg type="translation" xml:lang="en" source="#claude">Hcor, Bcor. modernise; likewise 76, 2</seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="Ine_76-1.attnote.fn.13" n="13" source="#attenborough"><bibl><biblScope unit="page">60</biblScope></bibl><label>ilce</label><seg type="original" xml:lang="en"><hi rend="italic">same</hi>. H &amp; B*.</seg><note type="remark" resp="#claude">The number 13 is printed 2 times on the page (76.1, 76.2), with one footnote.</note></note>
+      </div>
+    </body>
+  </text>
+</TEI>

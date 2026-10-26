@@ -1,0 +1,343 @@
+---
+title: Entry
+section: dictionary
+scripts:
+  - "ROOT/scripts/eliebermann.js"
+  - "ROOT/scripts/lawpopup.js"
+---
+<article id="entry"><p class="loading">Loading entry…</p></article>
+
+<script>
+(function () {
+    const root = window.SITE_ROOT || '';
+    const target = document.getElementById('entry');
+    const id = new URLSearchParams(location.search).get('id') || '';
+    const esc = ELieb.escapeXml;
+    // Accept a headword as well as a file name: "æbære" finds aebaere.xml.
+    const slug = /^[A-Za-z0-9-]+$/.test(id) ? id : ELieb.slugify(id);
+
+    if (!slug) {
+        target.innerHTML = `<h1>No entry chosen</h1><p>Find one in the <a href="${root}dictionary.html">Dictionary</a>.</p>`;
+        return;
+    }
+
+    // The law codes in the laws database, so a citation with no clause of its
+    // own can still go to its code's page. If the list can't be loaded, those
+    // citations are shown as plain text.
+    let lawCodes = {};
+    let codeList = [];   // the codes in the order of the laws database (laws.html), with their group
+    const codesLoaded = fetch(root + 'oe-laws/codes.json')
+        .then(r => r.ok ? r.json() : [])
+        .then(list => { codeList = list; list.forEach(c => { if (c.anchor) lawCodes[c.anchor] = c.code; }); })
+        .catch(() => {});
+
+    Promise.all([
+        fetch(root + 'entries/' + encodeURIComponent(slug) + '.xml')
+            .then(r => { if (!r.ok) throw new Error('missing'); return r.text(); }),
+        codesLoaded
+    ])
+        .then(([text]) => {
+            const doc = new DOMParser().parseFromString(text, 'application/xml');
+            if (doc.getElementsByTagName('parsererror').length) throw new Error('parse');
+            const e = ELieb.readEntry(doc);
+            document.title = e.headword + ' · eLiebermann';
+            target.innerHTML = render(e);
+            linkClauses(e);
+            showScanOnClick();
+            showNeighbours();
+        })
+        .catch(err => {
+            // A file joined into another entry (e.g. þæt IV, once thaet-5, is now
+            // part of thaet-2): send the reader to the entry it is part of.
+            if (err.message === 'missing') {
+                return fetch(root + 'data/entry-redirects.json')
+                    .then(r => r.ok ? r.json() : {})
+                    .then(map => { if (map[slug]) location.replace(root + 'entry.html?id=' + encodeURIComponent(map[slug])); else throw err; })
+                    .catch(() => showError(err));
+            }
+            showError(err);
+        });
+
+    function showError(err) {
+            if (err.message !== 'missing' && err.message !== 'parse') console.error(err);
+            target.innerHTML = err.message === 'missing'
+                ? `<h1>${esc(id)}</h1>
+                   <p class="notice">There's no entry for <strong>${esc(id)}</strong> yet.
+                   You can <a href="${root}contribute.html?headword=${encodeURIComponent(id)}">suggest it</a>,
+                   or look for it in the <a href="${root}dictionary.html?q=${encodeURIComponent(id)}">Dictionary</a>.</p>`
+                : `<h1>${esc(id)}</h1><p class="notice error">This entry's file couldn't be read. Its XML may be malformed: <a href="${root}entries/${encodeURIComponent(slug)}.xml">view the file</a>.</p>`;
+    }
+
+    function senses(el) {
+        if (!el) return '';
+        const subs = [...el.children].filter(c => c.localName === 'sense');
+        if (subs.length) {
+            return '<ol>' + subs.map(s => {
+                const def = [...s.children].find(c => c.localName === 'def');
+                return `<li value="${esc(s.getAttribute('n') || '')}">${ELieb.renderTei(def || s, root)}</li>`;
+            }).join('') + '</ol>';
+        }
+        const def = [...el.children].find(c => c.localName === 'def');
+        return `<p class="def">${ELieb.renderTei(def || el, root)}</p>`;
+    }
+
+    // Liebermann's outline: each division (A), I), 2), b)) starts a new
+    // paragraph, indented one step for each level below the top.
+    function paragraphs(html) {
+        const { head, parts } = ELieb.splitOutline(html);
+        if (!parts.length) return html;
+        return (head.trim() ? `<p>${head.trim()}</p>` : '') + parts.map(s =>
+            `<p class="sense sense--${s.kind} sense--depth-${Math.min(s.depth, 4)}"><strong>${esc(s.marker)}</strong>) ${s.body.trim()}</p>`).join('');
+    }
+
+    function xrList(e, type) {
+        return e.xr.filter(x => x.getAttribute('type') === type)
+            .map(x => `<li>${ELieb.renderTei(x, root)}</li>`).join('');
+    }
+
+    // Links to the same word in other dictionaries (Bosworth-Toller and so
+    // on), from <xr type="bosworthToller"> and the like, shown as cards.
+    function dictionaryCards(e) {
+        // One group per dictionary, in this order, each with its own heading.
+        const dictionaries = [
+            ['doe', 'The Dictionary of Old English', 'University of Toronto', 'DOE is subscription access. If you are logged in, this link will open the full entry for the headword.'],
+            ['bosworthToller', 'Bosworth-Toller', 'An Anglo-Saxon Dictionary', ''],
+            ['wiktionary', 'Wiktionary', 'The free dictionary', '']
+        ];
+        return dictionaries.map(([type, name, sub, note]) => {
+            const cards = e.xr.filter(x => x.getAttribute('type') === type).map(x => {
+                const ref = [...x.children].find(c => c.localName === 'ref') || x;
+                const url = ELieb.safeUrl(ref.getAttribute('target'));
+                const word = esc(ref.textContent.replace(/\s+/g, ' ').trim());
+                let host = '';
+                try { host = new URL(url).hostname.replace(/^www\./, '').replace(/^indiv\.dictionary\./, ''); } catch (err) { /* no address */ }
+                const inner = `
+                    <span class="dict-card__word">${word}</span>
+                    <span class="dict-card__foot">${host ? esc(host) : esc(sub)}${url ? ' <span aria-hidden="true">↗</span>' : ''}</span>`;
+                return url
+                    ? `<a class="dict-card" href="${esc(url)}" target="_blank" rel="noopener" aria-label="${word} in ${esc(name)} (opens in a new tab)">${inner}</a>`
+                    : `<div class="dict-card">${inner}</div>`;
+            }).join('');
+            return cards ? `<div class="dict-group"><h3 class="dict-group__name">${esc(name)}</h3>${note ? `<p class="dict-group__note">${esc(note)}</p>` : ''}<div class="dict-cards">${cards}</div></div>` : '';
+        }).join('');
+    }
+
+    // The law code citations listed under the entry go into the laws
+    // database: to the clause where it has one ("clause:Ine_23-2"), otherwise
+    // to the page of the whole code ("law:Ine"). They never open the
+    // abbreviation popup; a code the database doesn't have yet is plain text.
+    const COLUMNS_FROM = 6;   // more citations than this in a group: columns
+    function citationList(e) {
+        const items = e.xr.filter(x => x.getAttribute('type') === 'lawCode').map((x, n) => {
+            const ref = [...x.children].find(c => c.localName === 'ref') || x;
+            const raw = ref.textContent.replace(/\s+/g, ' ').trim();
+            const m = /^(clause|law):(.+)$/.exec(ref.getAttribute('target') || '');
+            let href = '', title = '';
+            if (m && m[1] === 'clause') {
+                href = root + 'law.html?id=' + encodeURIComponent(m[2]);
+            } else if (m && lawCodes[m[2]]) {
+                href = root + 'lawcode.html?code=' + encodeURIComponent(lawCodes[m[2]]);
+                title = 'This clause is not yet in the laws database; this opens the whole of ' + lawCodes[m[2]];
+            }
+            const at = codeIndex(raw, m);
+            const rest = at >= 0 ? raw.slice(codeList[at].code.length).trim() : raw;
+            const html = href
+                ? `<li><a href="${esc(href)}"${title ? ` title="${esc(title)}"` : ''}>${esc(raw)}</a></li>`
+                : `<li>${esc(raw)}</li>`;
+            return { at, key: clauseKey(rest), n, html };
+        });
+        // In the order of the list of law codes (laws.html), under its headings;
+        // codes not in the laws database last, in the order Liebermann cites them.
+        items.sort((a, b) => (a.at < 0 ? 1e6 : a.at) - (b.at < 0 ? 1e6 : b.at)
+            || (a.at < 0 ? a.n - b.n : compareKeys(a.key, b.key) || a.n - b.n));
+        // Each group is its own block: the heading across the top, then its
+        // citations, in one column unless the group is long enough to be
+        // worth spreading into columns.
+        const groups = [];
+        items.forEach(it => {
+            const g = it.at >= 0 ? codeList[it.at].group : 'Not yet in the laws database';
+            if (!groups.length || groups[groups.length - 1].g !== g) groups.push({ g, list: [] });
+            groups[groups.length - 1].list.push(it.html);
+        });
+        const out = groups.map(({ g, list }) =>
+            `<div class="citation-block"><h3 class="citation-group">${esc(g)}</h3>`
+            + `<ul class="citations${list.length > COLUMNS_FROM ? ' citations--cols' : ''}">${list.join('')}</ul></div>`);
+        return out.join('');
+    }
+
+    // Which code of the laws database a citation belongs to: by the clause
+    // file's name (Ine_23-2 is Ine), or by the anchor, or else by the longest
+    // code name the citation starts with ("Af Rb 44" is Af Rb, not Af).
+    const ID_PREFIX = { 'Rubrics-Af': 'Af Rb', 'Rubrics-AF': 'Af Rb', 'Rubrics-Ine': 'Ine Rb' };
+    function codeIndex(text, m) {
+        if (!codeList.length) return -1;
+        if (m && m[1] === 'clause') {
+            const pre = m[2].split('_')[0];
+            const byId = codeList.findIndex(c => ID_PREFIX[pre] ? c.code === ID_PREFIX[pre] : (c.first || '').split('_')[0] === pre);
+            if (byId >= 0) return byId;
+        }
+        let best = -1;
+        codeList.forEach((c, i) => {
+            if ((text === c.code || text.startsWith(c.code + ' ') || text.startsWith(c.code + ','))
+                && (best < 0 || c.code.length > codeList[best].code.length)) best = i;
+        });
+        if (best < 0 && m && m[1] === 'law') best = codeList.findIndex(c => c.anchor === m[2]);
+        return best;
+    }
+    // A clause number as something to sort by: Insc and Pro first, then the
+    // numbers in order (2 before 10, 2,1 before 2,2), then anything else.
+    function clauseKey(rest) {
+        return rest.split(/[\s,.]+/).filter(Boolean).map(p => {
+            if (/^insc/i.test(p)) return [-2, ''];
+            if (/^pro/i.test(p)) return [-1, ''];
+            const d = /^(\d+)([a-z]*)$/.exec(p);
+            return d ? [Number(d[1]), d[2]] : [1e6, p];
+        });
+    }
+    function compareKeys(a, b) {
+        for (let i = 0; i < Math.max(a.length, b.length); i++) {
+            if (!a[i]) return -1;
+            if (!b[i]) return 1;
+            if (a[i][0] !== b[i][0]) return a[i][0] - b[i][0];
+            if (a[i][1] !== b[i][1]) return a[i][1] < b[i][1] ? -1 : 1;
+        }
+        return 0;
+    }
+
+
+    // In Liebermann's text, the number of a cited clause ("8" in "Ine 8")
+    // links to that clause, as in the citation list under the entry. The law
+    // code itself keeps its own link and popup.
+    function linkClauses(e) {
+        const clauses = {};
+        e.xr.filter(x => x.getAttribute('type') === 'lawCode').forEach(x => {
+            const ref = [...x.children].find(c => c.localName === 'ref') || x;
+            const m = /^clause:(.+)$/.exec(ref.getAttribute('target') || '');
+            if (m) clauses[ref.textContent.replace(/\s+/g, ' ').trim()] = root + 'law.html?id=' + encodeURIComponent(m[1]);
+        });
+        ELieb.linkClauseNumbers(target.querySelector('.liebermann-text'), clauses);
+    }
+
+    // An archive.org page link (…/details/ID/page/14/…) becomes the address
+    // of archive.org's embedded reader opened at that page.
+    function scanEmbed(url) {
+        const m = /^https?:\/\/archive\.org\/details\/([^/?#]+)\/page\/([^/?#]+)/.exec(url || '');
+        return m ? `https://archive.org/embed/${m[1]}#page/${m[2]}/mode/1up` : '';
+    }
+
+    function render(e) {
+        // A cross-reference entry (<entry type="xref">) only sends the reader
+        // to another headword: it shows Liebermann's line and a "See" list,
+        // and nothing else.
+        const see = xrList(e, 'see');
+        // a short list stays one column; a long one spreads into columns
+        const linkCols = html => (html.match(/<li[ >]/g) || []).length > COLUMNS_FROM ? ' class="link-columns"' : '';
+        const compare = e.xref ? '' : xrList(e, 'compare');
+        const links = e.xref ? '' : dictionaryCards(e);
+        const citations = e.xref ? '' : citationList(e);
+        const page = e.page ? `Liebermann, <cite>Gesetze</cite> II.1, p. ${esc(e.page)}` : '';
+        const changes = e.changes.map(c => `${esc(c.when)}: ${esc(c.text.replace(/\.$/, ''))}`).join('; ');
+        const scan = scanEmbed(e.facsimile);
+
+        const body = `
+        <header class="entry-header">
+            <h1>${esc(e.headword)}${e.n ? ` <sup>${esc(e.n)}</sup>` : ''}</h1>
+            <div class="meta">
+                <span class="lang-badge ${esc(e.lang)}">${esc(e.language)}</span>${e.spelling ? '<span class="lang-badge spelling" title="A spelling, not a word">Spelling</span>' : ELieb.isProperNoun(e.headword, e.lang) ? ELieb.properNounBadge() : ''}
+                ${page ? `<span>${page}${e.facsimile ? ` · <a href="${esc(ELieb.safeUrl(e.facsimile))}" target="_blank" rel="noopener">page scan</a>` : ''}</span>` : ''}
+            </div>
+        </header>
+
+        <section class="entry-section">
+            <h2>Liebermann's entry</h2>
+            <div class="liebermann-text">${e.original ? paragraphs(ELieb.renderTei(e.original, root)) : ''}</div>
+            ${e.editorNotes.map(n => `<p class="editor-note"><span class="editor-note__label">Editor’s note.</span> ${ELieb.renderTei(n, root)}</p>`).join('')}
+            ${e.spelling ? `<p class="spelling-note">This headword refers to a scribal spelling: the entry is Liebermann's note on how scribes of the legal MSS write a certain sound or letter combination.</p>` : ''}
+            ${e.xref ? '' : `<p class="small muted reading-help">Click a <span class="link-key link-key--law">law code</span>, <span class="link-key link-key--ms">manuscript</span> or <span class="link-key link-key--gram">German term or abbreviation</span> or <span class="link-key link-key--bib">author or work cited</span> to see what it stands for, or a <span class="link-key link-key--clause">clause number</span> to read that clause.</p><p class="small muted reading-help reading-help--tilde">Liebermann's ~ repeats as much of the headword or preceding word as stays the same (e.g. under <i>abbod</i>, ~des is <i>abbodes</i>). <a href="${root}guide.html">How to read an entry</a>.</p>`}
+        </section>
+
+        ${/* An English translation of the definition (<sense type="translation">)
+             stays in the entry file but is not shown for now: hardly any
+             entries have one. */ ''}
+        ${e.definition ? `
+        <div class="two-col">
+            <section class="entry-section"><h2>Liebermann's definition</h2>${senses(e.definition)}</section>
+        </div>` : ''}
+
+        ${see ? `<section class="entry-section"><h2>${e.xref ? 'See' : 'See also'}</h2><ul${linkCols(see)}>${see}</ul></section>` : ''}
+        ${compare ? `<section class="entry-section"><h2>Compare</h2><ul${linkCols(compare)}>${compare}</ul></section>` : ''}
+        ${links ? `<section class="entry-section"><h2>Other dictionaries</h2><p class="dict-wip"><span class="dict-wip__tag">⚠ Under construction</span> The work of linking to external dictionaries is ongoing. A semi-automated process is used to guess Bosworth-Toller links in the first instance, so note that some words may be incorrectly linked to Bosworth-Toller entries until checked by the editor.</p>${links}</section>` : ''}
+        ${citations ? `<section class="entry-section"><h2>Law code citations</h2><div class="citation-groups">${citations}</div></section>` : ''}
+
+        <nav class="entry-nav" aria-label="Previous and next entries" hidden></nav>
+
+        <div class="suggest-change">
+            <p>Spotted a mistake, or have a translation or link to add?</p>
+            <a class="button" href="${root}contribute.html?id=${encodeURIComponent(slug)}">Suggest a change</a>
+        </div>
+
+        <p class="source-line">
+            ${page ? page + '. ' : ''}${changes ? `History: ${changes}. ` : ''}
+            <a href="${root}entries/${encodeURIComponent(slug)}.xml">View the TEI file</a> ·
+            <a href="https://github.com/anyaadair/eLiebermann/blob/main/entries/${encodeURIComponent(slug)}.xml">Edit on GitHub</a>
+        </p>`;
+
+        if (!scan) return body;
+        return `
+        <div class="entry-with-scan">
+            <div class="entry-main">${body}</div>
+            <aside class="entry-scan" aria-label="Page scan">
+                <div class="entry-scan-bar">
+                    <span>${e.page ? `Printed page ${esc(e.page)}` : 'Page scan'}</span>
+                    <a href="${esc(ELieb.safeUrl(e.facsimile))}" target="_blank" rel="noopener">Open on archive.org</a>
+                </div>
+                <div class="entry-scan-load">
+                    <button type="button" data-scan="${esc(scan)}" data-title="Liebermann, Gesetze II.1${e.page ? `, p. ${esc(e.page)}` : ''}, on archive.org">Show page scan</button>
+                    <p>The scan loads from archive.org.</p>
+                </div>
+            </aside>
+        </div>`;
+    }
+
+    // Links to the previous and next entries in Liebermann's order, as the
+    // Dictionary page lists them, skipping any language the reader has hidden
+    // there. They are left out if the list can't load.
+    function showNeighbours() {
+        const nav = target.querySelector('.entry-nav');
+        if (!nav) return;
+        fetch(root + 'data/entry-order.json')
+            .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+            .then(list => {
+                const order = list.map(([id, hw, lang]) => ({ id, hw, lang, key: ELieb.alphaKey(hw) }))
+                    .sort((a, b) => (a.key < b.key ? -1 : a.key > b.key ? 1 : 0) || a.id.localeCompare(b.id, undefined, { numeric: true }));
+                const hidden = ELieb.hiddenLanguages();
+                const shown = order.filter(x => x.id === slug || ELieb.isShown(x.lang, hidden, x.hw));
+                order.length = 0;
+                order.push(...shown);
+                const i = order.findIndex(x => x.id === slug);
+                if (i === -1) return;
+                const link = (x, dir) => x
+                    ? `<a class="entry-nav__${dir}" href="?id=${encodeURIComponent(x.id)}" rel="${dir}"><span class="entry-nav__label">${dir === 'prev' ? '← Previous' : 'Next →'}</span><span class="entry-nav__word">${esc(x.hw)} ${ELieb.languageBadge(x.lang || 'ang', x.hw)}</span></a>`
+                    : '<span></span>';
+                nav.innerHTML = link(order[i - 1], 'prev') + link(order[i + 1], 'next');
+                nav.hidden = false;
+            })
+            .catch(() => {});
+    }
+
+    // The scan only loads from archive.org when the reader asks for it.
+    function showScanOnClick() {
+        const button = target.querySelector('[data-scan]');
+        if (!button) return;
+        button.addEventListener('click', () => {
+            const frame = document.createElement('iframe');
+            frame.src = button.dataset.scan;
+            frame.title = button.dataset.title;
+            frame.allowFullscreen = true;
+            const aside = button.closest('.entry-scan');
+            aside.classList.add('loaded');
+            button.parentElement.replaceWith(frame);
+        });
+    }
+})();
+</script>

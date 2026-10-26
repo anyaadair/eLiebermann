@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Maria</title>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">Maria</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, <biblScope unit="volume">2.1</biblScope> (Wörterbuch), <biblScope unit="page">143</biblScope>
+            <ptr type="facsimile" target="https://archive.org/details/diegesetzederang02liebuoft/page/143/mode/2up"/>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <revisionDesc>
+      <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-10-14">S. marked as Sanctus, not siehe.</change>
+      <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
+      <change when="2026-10-19">“Lat.” linked to the abbreviations list (printed bold italic, missed before).</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry xml:lang="ang">
+        <form type="lemma">
+          <orth>Maria</orth>
+        </form>
+        <dictScrap type="liebermann"><ref type="abbreviation" target="gram:sanctus"><abbr>s.</abbr></ref> <hi rend="bold">Maria</hi>; <hi rend="italic"><ref type="abbreviation" target="gram:Genitiv"><abbr>gn</abbr></ref>:</hi> ~an mæssan [<hi rend="italic"><ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>;</hi> 8. <hi rend="italic">Sept.</hi>] <ref type="lawCode" target="law:Af">Af</ref> 43 (Mariam- [<hi rend="italic">Ein Wort</hi>] <ref type="lawCode" target="law:B">B</ref>); - freolstida <ref type="lawCode" target="law:VAtr">V Atr</ref> 14 = <ref type="lawCode" target="law:VIAtr">VI</ref> 22,2 = <ref type="lawCode" target="law:ICn">I Cn</ref> 16a; ~an clænsung [2. <hi rend="italic">Febr.</hi>] <ref type="lawCode" target="law:ICn">I Cn</ref> 12; fæmnan sancta ~an <ref type="lawCode" target="law:IudDeiVI">Iud Dei VI</ref> 1. <ref type="lawCode" target="law:ExcomVII">Excom VII</ref> 2 | <hi rend="italic"><ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>:</hi> Mar’ <ref type="lawCode" target="law:IudDeiIV">Iud Dei IV</ref> 3,1 | <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>:</hi> ~an <ref type="lawCode" target="law:IudDeiVII">VII</ref> 12,1 <ref type="lawCode" target="law:MsA">A</ref>. 23,2 <ref type="lawCode" target="law:MsA">A</ref> | <hi rend="bold"><hi rend="italic"><ref type="abbreviation" target="gram:Lateinisch"><abbr>Lat.</abbr></ref>:</hi></hi> ~ 12,1. <ref type="lawCode" target="law:IudDeiXIII">XIII</ref> 13,2. <ref type="lawCode" target="law:IudDeiXIV">XIV</ref> 4. <ref type="lawCode" target="law:IudDeiXVI">XVI</ref> 14. 30,3. <ref type="lawCode" target="law:ExcomV">Excom V</ref> 1; genitrix Dei <ref type="lawCode" target="law:ExcomVIII">VIII</ref> 1. <ref type="lawCode" target="law:ExcomIX">IX</ref> 1; virgo <ref type="lawCode" target="law:ExcomVIII">VIII</ref> 9. <ref type="lawCode" target="law:ExcomX">X</ref> 1 | <hi rend="italic">ihr Fest</hi> [8. <hi rend="italic">Sept.</hi>] <ref type="lawCode" target="law:ECf">ECf</ref> 2,5</dictScrap>
+        <xr type="lawCode"><ref target="clause:Af_43">Af 43</ref></xr>
+        <xr type="lawCode"><ref target="clause:VAtr_14">V Atr 14</ref></xr>
+        <xr type="lawCode"><ref target="clause:VIAtr_22-2">VI Atr 22,2</ref></xr>
+        <xr type="lawCode"><ref target="clause:ICn_16a">I Cn 16a</ref></xr>
+        <xr type="lawCode"><ref target="clause:ICn_12">I Cn 12</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVI_1">Iud Dei VI 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:ExcomVII_2">Excom VII 2</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiIV_3-1">Iud Dei IV 3,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_12-1">Iud Dei VII 12,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_23-2">Iud Dei VII 23,2</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiXIII_13-2">Iud Dei XIII 13,2</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiXIV_4">Iud Dei XIV 4</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiXVI_14">Iud Dei XVI 14</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiXVI_30-3">Iud Dei XVI 30,3</ref></xr>
+        <xr type="lawCode"><ref target="clause:ExcomV_1">Excom V 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:ExcomVIII_1">Excom VIII 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:ExcomIX_1">Excom IX 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:ExcomVIII_9">Excom VIII 9</ref></xr>
+        <xr type="lawCode"><ref target="clause:ExcomX_1">Excom X 1</ref></xr>
+        <xr type="lawCode"><ref target="law:ECf">ECf 2,5</ref></xr>
+      </entry>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Af_9">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Af 9</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
+        <respStmt><resp>Cross-references to other clauses</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Attenborough’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">Af_9</idno>
+        <idno type="citation">Af 9</idno>
+        <idno type="lawCode">Af</idno>
+        <idno type="lawCodeAnchor">Af</idno>
+        <idno type="clause">9</idno>
+        <idno type="citationKey">Af 9</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Alfred’s Domboc</title> <note type="reign">Alfred, r. 871–899</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">54</biblScope></bibl>
+          <bibl xml:id="jurasinski-and-oliver" type="edition">Stefan Jurasinski and Lisi Oliver, <title>The Laws of Alfred: The Domboc and the Making of Anglo-Saxon Law</title> (Cambridge: Cambridge University Press, 2021), p. <biblScope unit="page">304</biblScope></bibl>
+          <bibl xml:id="attenborough" type="edition">F. L. Attenborough, <title>The Laws of the Earliest English Kings</title> (Cambridge: Cambridge University Press, 1922), p. <biblScope unit="page">68</biblScope></bibl>
+          <bibl xml:id="whitelock" type="translation">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007), p. <biblScope unit="page">411</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-e" rend="bold"><abbr>E</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 173 (Parker Chronicle and Laws)</note></witness>
+          <witness xml:id="wit-h"><abbr>H</abbr> <note type="manuscript">Strood, Medway Archive and Local Studies Centre, MS DRc/R1 (Textus Roffensis; formerly Rochester, Cathedral Library, A.3.5), c. 1120–25</note></witness>
+          <witness xml:id="wit-b-no-prol"><abbr>B (no Prol.)</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383</note></witness>
+          <witness xml:id="wit-g-prol-only"><abbr>G (Prol. only)</abbr> <note type="manuscript">London, British Library, Cotton Nero A.i</note></witness>
+          <witness xml:id="wit-q"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note></witness>
+          <witness xml:id="wit-ld"><abbr>Ld</abbr> <note type="manuscript">William Lambarde, Archaionomia (London, 1568) – printed from manuscripts now lost</note></witness>
+          <witness xml:id="wit-bu"><abbr>Bu</abbr></witness>
+          <witness xml:id="wit-ot-frags"><abbr>Ot (frags.)</abbr> <note type="manuscript">London, British Library, Cotton Otho B.xi (damaged by fire, 1731)</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 27">871 (after 890?)–901</date><date source="#whitelock" n="EHD p. 408">885–899</date><date source="#wormald-mel" n="MEL p. 286">after 893</date><note type="promulgation">871 (after 890?)–901 (Liebermann, I p. 27); 885–899 (Whitelock, EHD p. 408); after 893 (Wormald, MEL p. 286)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Homicide</term><term>Compensation</term><term>Wergeld</term><term>Capital offences</term><term>Pregnancy</term><term>Marriage</term></keywords>
+        <keywords n="people"><term>Women</term><term>Pregnant woman</term><term>Children</term><term>Kin</term><term>Capital offenders</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 405 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked and corrected against <title>Die Gesetze der Angelsachsen</title> I, p. 54.</change>
+      <change when="2026-10" type="checked">Liebermann’s text of MS B added from Gesetze I, p. 54.</change>
+      <change when="2026-10" type="checked">The second translation corrected against Attenborough, p. None: “∅; father's” → “woman, and half the wergeld for the; father’s”.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="9">
+        <head><ref type="lawCode" target="law:Af">Af</ref> 9</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="9" corresp="#wit-e"><pb n="54" ed="#liebermann"/>X. Gif mon wíf mid bearne<ptr type="liebermannNote" n="34" target="#Af_9.lnote.oe.34"/> ófslea, þon<hi rend="italic">ne</hi> þæt bearn in<ptr type="liebermannNote" n="35" target="#Af_9.lnote.oe.35"/> hire sie<ptr type="liebermannNote" n="36" target="#Af_9.lnote.oe.36"/>, forgielde<ptr type="liebermannNote" n="37" target="#Af_9.lnote.oe.37"/> ðone wifman<ptr type="liebermannNote" n="38" target="#Af_9.lnote.oe.38"/> fullan gielde<ptr type="liebermannNote" n="39" target="#Af_9.lnote.oe.39"/>, ⁊ þæt bearn be ðæs fædrencnosles were healfan gelde.<ptr type="liebermannNote" n="39" target="#Af_9.lnote.oe.39"/></ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="9" corresp="#wit-h"><pb n="54" ed="#liebermann"/>X. Gif hwa wif ofslea mid bearne<ptr type="liebermannNote" n="14" target="#Af_9.lnote.oe.14"/>, þonne þæt bearn in hyre<ptr type="liebermannNote" n="14" target="#Af_9.lnote.oe.14"/> sy<ptr type="liebermannNote" n="2" target="#Af_9.lnote.oe.2"/>, forgilde heo<ptr type="liebermannNote" n="8" target="#Af_9.lnote.oe.8"/> fullan gylde<ptr type="liebermannNote" n="3" target="#Af_9.lnote.oe.3"/>, ⁊ ðæt bearn be ðæs fædrencnosles were healfan gylde.<ptr type="liebermannNote" n="3" target="#Af_9.lnote.oe.3"/></ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="9" corresp="#wit-b-no-prol"><pb n="55" ed="#liebermann"/>Be ða<hi rend="italic">m</hi> ðæt man ofslea wif mid cilde. Gyf man wif mid bearne ofslea, ðonne þ<hi rend="italic">æt</hi> bearn in hire sy, forgylde ðone<ptr type="liebermannNote" n="3" target="#Af_9.lnote.oe.3-2"/> wifman fullan gylde, ⁊ þ<hi rend="italic">æt</hi> bearn be ðæs fædrencnosles were halfan gylde.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="9" corresp="#wit-q"><pb n="55" ed="#liebermann"/>Si femina pregnans occidatur, dum puer in ea sit, soluatur ipsa pleno gildo<ptr type="liebermannNote" n="14" target="#Af_9.lnote.oe.14-2"/>, et partus dimidio gildo secundum weram patris.<ptr type="liebermannNote" n="15" target="#Af_9.lnote.oe.15"/></ab>
+        <ab type="editionText" xml:lang="ang" source="#attenborough" corresp="#wit-e"><pb n="68" ed="#attenborough"/>[Be ðam ðæt man ofslea wif mid cilde.] Gif mon<ptr type="editorNote" n="18" target="#Af_9.attnote.fn.18"/> wíf mid bearne ófslea þonne þæt bearn in hire sie, forgielde ðone wifman<ptr type="editorNote" n="19" target="#Af_9.attnote.fn.19"/> fullan gielde, ⁊ þæt bearn be ðæs fædrencnosles were healfan gelde.</ab>
+        <ab type="editionText" xml:lang="ang" source="#jurasinski-and-oliver" n="10" corresp="#wit-e"><pb n="304" ed="#jurasinski-and-oliver"/>{X} Gif mon wíf mid bearne ófslea þon<hi rend="italic">ne</hi> þæt bearn in hire sie, forgielde ðone wifman fullan gielde, ⁊ þæt bearn be ðæs fædrencnosles were healfan gelde.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><ptr type="liebermannNote" n="1" target="#Af_9.lnote.de.1"/><pb n="55" ed="#liebermann"/>Wenn jemand ein schwangeres Weib erschlägt<ptr type="liebermannNote" n="2" target="#Af_9.lnote.de.2"/>, während das Kind in ihr ist, vergelte er die Frau mit [ihrem] vollen [Wer]gelde, und das Kind mit halbem Entgelt<ptr type="liebermannNote" n="3" target="#Af_9.lnote.de.3"/> gemäss dem Wergeld des Vatergeschlechts.</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">If someone slays a pregnant woman while the child is in her, let him pay for the woman with [her] full [wer]geld, and for the child with half payment according to the wergeld of the father’s kindred.</ab>
+        <ab type="translation" xml:lang="en" source="#attenborough" corresp="#wit-e"><pb n="69" ed="#attenborough"/>If anyone slays a woman with child, while the child is in her womb, he shall pay the full wergeld for the woman, and half the wergeld for the child, [which shall be] in accordance with the wergeld of the father’s kindred.</ab>
+        <ab type="translation" xml:lang="en" source="#whitelock"><pb n="411" ed="#whitelock"/>If a woman with child is slain when she is bearing the child, the woman is to be paid for with full payment, and the child at half payment according to the wergild of the father’s kin.</ab>
+        <ab type="translation" xml:lang="en" source="#jurasinski-and-oliver" corresp="#wit-e"><pb n="305" ed="#jurasinski-and-oliver"/>If a woman bearing a child is slain when the child is in her, let [the slayer] pay full recompense for the woman, and compensate for the child by half the wergild [appropriate to] the father’s kin</ab>
+        <note type="comparison" source="#wormald-mel" n="282"><label>prompted by</label> <ref target="clause:Af_El-to-18">Af El 18</ref> <quote>Some may have been prompted by the Mosaic laws excerpted in the preface. An obvious example is the decree on killing a pregnant woman (n. 89)</quote></note>
+        <note type="comparison" source="#jurasinski-and-oliver" n="305"><label>compare</label> <ref target="clause:Af_El-to-18">Af El 18</ref> <quote>Compare MP §18.</quote></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_9.lnote.oe.34" n="34" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">54</biblScope></bibl><seg type="original" xml:lang="de">bearn <hi rend="italic">So Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">bearn So Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_9.lnote.oe.35" n="35" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">54</biblScope></bibl><seg type="original" xml:lang="de">on <hi rend="italic">So</hi></seg><seg type="translation" xml:lang="en" source="#claude">on So</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_9.lnote.oe.36" n="36" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">54</biblScope></bibl><seg type="original" xml:lang="de">sy <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">sy Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_9.lnote.oe.37" n="37" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">54</biblScope></bibl><seg type="original" xml:lang="de">forgylde <hi rend="italic">So Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">forgylde So Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_9.lnote.oe.38" n="38" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">54</biblScope></bibl><seg type="original" xml:lang="de">-mon <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">-mon Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_9.lnote.oe.39" n="39" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">54</biblScope></bibl><seg type="original" xml:lang="de">gylde <hi rend="italic">So Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">gylde So Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_9.lnote.oe.14" n="14" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">54</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">auf Rasur</hi></seg><seg type="translation" xml:lang="en" source="#claude">on an erasure</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_9.lnote.oe.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">54</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">übergeschr.</hi></seg><seg type="translation" xml:lang="en" source="#claude">written above</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_9.lnote.oe.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">54</biblScope></bibl><seg type="original" xml:lang="de">eo <hi rend="italic">auf Rasur</hi></seg><seg type="translation" xml:lang="en" source="#claude">eo on an erasure</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_9.lnote.oe.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">54</biblScope></bibl><seg type="original" xml:lang="de">y <hi rend="italic">auf Rasur</hi></seg><seg type="translation" xml:lang="en" source="#claude">y on an erasure</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_9.lnote.oe.14-2" n="14" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">55</biblScope></bibl><seg type="original" xml:lang="de">secundum weram patris <hi rend="italic">fügt zu Hk Brti, wohl vom Ende folgender Zeile</hi></seg><seg type="translation" xml:lang="en" source="#claude">secundum weram patris added by Hk Brti, probably from the end of the following line</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_9.lnote.oe.15" n="15" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">55</biblScope></bibl><seg type="original" xml:lang="de">matris <hi rend="italic">Brti</hi></seg><seg type="translation" xml:lang="en" source="#claude">matris Brti</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_9.lnote.oe.3-2" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">55</biblScope></bibl><seg type="original" xml:lang="de">e <hi rend="italic">modern auf Rasur</hi></seg><seg type="translation" xml:lang="en" source="#claude">e modern, on an erasure</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Af_9.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">53</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">‘Davon, dass man schwangeres Weib tötet’ Rb B; <hi rend="italic">with child</hi> heisst noch heute ‘schwanger’</seg><seg type="translation" xml:lang="en" source="#claude">‘Of slaying a pregnant woman’ Rb B; <hi rend="italic">with child</hi> still means ‘pregnant’ today</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Af_9.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">53</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Unlösbarer Widerspruch gegen <hi rend="italic">o.</hi> Af El 18, aber Germanischem Rechte nahe; <hi rend="italic">s. Gl</hi> Frau 4</seg><seg type="translation" xml:lang="en" source="#claude">An irreconcilable contradiction of <hi rend="italic">above</hi> Af El 18, but close to Germanic law; <hi rend="italic">see Gl</hi> Frau 4</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Af_9.lnote.de.3" n="3" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">53</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Kind 2. 4</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf. Gl</hi> Kind 2. 4</seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="Af_9.attnote.fn.18" n="18" source="#attenborough"><bibl><biblScope unit="page">68</biblScope></bibl><label>mon</label><seg type="original" xml:lang="en"><hi rend="italic">hwa</hi>. H.</seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="Af_9.attnote.fn.19" n="19" source="#attenborough"><bibl><biblScope unit="page">68</biblScope></bibl><label>wifman</label><seg type="original" xml:lang="en"><hi rend="italic">heo</hi>. H.</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

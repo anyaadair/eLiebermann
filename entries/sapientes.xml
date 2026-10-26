@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>sapientes</title>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">sapientes</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, <biblScope unit="volume">2.1</biblScope> (Wörterbuch), <biblScope unit="page">188</biblScope>
+            <ptr type="facsimile" target="https://archive.org/details/diegesetzederang02liebuoft/page/188/mode/2up"/>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <revisionDesc>
+      <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-10-13">Page corrected from 187 to 188 (the page turns inside sacu), as in the team transcription (sadelican - singan.docx).</change>
+      <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
+      <change when="2026-10-17">“Quadr Arg” and “Quadr Ded” (Quadripartitus, Argumentum and Dedicatio) linked as codes.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry xml:lang="la">
+        <form type="lemma">
+          <orth>sapientes</orth>
+        </form>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">sapientes</hi> <hi rend="bold">1</hi>) <hi rend="italic">Reichsräte, Magnaten, Staatsmänner, Nationaltag vor</hi> 1066 <ref type="lawCode" target="law:ECf">ECf</ref> 28 <ref type="abbreviation" target="gram:folgende"><abbr>f.</abbr></ref> <ref type="lawCode" target="law:QuadrArg">Quadr Arg</ref> 3, <hi rend="italic">und,</hi> witan <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref></hi> <ref type="lawCode" target="law:Quadr">Q</ref>: <ref type="lawCode" target="law:Ine">Ine</ref> Pro. <ref type="lawCode" target="law:AGu">AGu</ref> Pro. <ref type="lawCode" target="law:EGu">EGu</ref> Pro. <ref type="lawCode" target="law:IIEw">II Ew</ref> 1.4. 5,1. <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:El">El</ref> 49,1; 9; 10. <ref type="lawCode" target="law:IIAs">II As</ref> Epil. <ref type="lawCode" target="law:VAs">V</ref> Pro. <ref type="lawCode" target="law:VIAs">VI</ref> 10. 11. 12,1. <ref type="lawCode" target="law:IIEm">II Em</ref> Pro. <ref type="lawCode" target="law:IIEg">II Eg</ref> Pro. <ref type="lawCode" target="law:IIIEg">III</ref> Insc. <ref type="lawCode" target="law:IAtr">I Atr</ref> Pro. <ref type="lawCode" target="law:IIAtr">II</ref> 9. <ref type="lawCode" target="law:IIIAtr">III</ref> Pro. <ref type="lawCode" target="law:ICn">I Cn</ref> Pro. <ref type="lawCode" target="law:Duns">Duns</ref> Pro <hi rend="bold">2</hi>) <hi rend="italic">Urteilfinder</hi> <pb n="189"/><hi rend="italic">des Gerichts,</hi> witan <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref></hi> <ref type="lawCode" target="law:Quadr">Q</ref>: <ref type="lawCode" target="law:Af">Af</ref> 77. <ref type="lawCode" target="law:Wer">Wer</ref> 6 (= <ref type="lawCode" target="law:Hn">Hn</ref> 93,37. 76,5a). <ref type="lawCode" target="law:IIEm">II Em</ref> 7. <ref type="lawCode" target="law:Hn">Hn</ref> 75,5b. 88,15</dictScrap>
+        <dictScrap type="senses">
+          <sense n="1"><hi rend="italic">Reichsräte, Magnaten, Staatsmänner, Nationaltag vor</hi> 1066 <ref type="lawCode" target="law:ECf">ECf</ref> 28 <ref type="abbreviation" target="gram:folgende"><abbr>f.</abbr></ref> <ref type="lawCode" target="law:QuadrArg">Quadr Arg</ref> 3, <hi rend="italic">und,</hi> witan <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref></hi> <ref type="lawCode" target="law:Quadr">Q</ref>: <ref type="lawCode" target="law:Ine">Ine</ref> Pro. <ref type="lawCode" target="law:AGu">AGu</ref> Pro. <ref type="lawCode" target="law:EGu">EGu</ref> Pro. <ref type="lawCode" target="law:IIEw">II Ew</ref> 1.4. 5,1. <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:El">El</ref> 49,1; 9; 10. <ref type="lawCode" target="law:IIAs">II As</ref> Epil. <ref type="lawCode" target="law:VAs">V</ref> Pro. <ref type="lawCode" target="law:VIAs">VI</ref> 10. 11. 12,1. <ref type="lawCode" target="law:IIEm">II Em</ref> Pro. <ref type="lawCode" target="law:IIEg">II Eg</ref> Pro. <ref type="lawCode" target="law:IIIEg">III</ref> Insc. <ref type="lawCode" target="law:IAtr">I Atr</ref> Pro. <ref type="lawCode" target="law:IIAtr">II</ref> 9. <ref type="lawCode" target="law:IIIAtr">III</ref> Pro. <ref type="lawCode" target="law:ICn">I Cn</ref> Pro. <ref type="lawCode" target="law:Duns">Duns</ref> Pro</sense>
+          <sense n="2"><hi rend="italic">Urteilfinder</hi> <pb n="189"/><hi rend="italic">des Gerichts,</hi> witan <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref></hi> <ref type="lawCode" target="law:Quadr">Q</ref>: <ref type="lawCode" target="law:Af">Af</ref> 77. <ref type="lawCode" target="law:Wer">Wer</ref> 6 (= <ref type="lawCode" target="law:Hn">Hn</ref> 93,37. 76,5a). <ref type="lawCode" target="law:IIEm">II Em</ref> 7. <ref type="lawCode" target="law:Hn">Hn</ref> 75,5b. 88,15</sense>
+        </dictScrap>
+        <xr type="lawCode"><ref target="law:ECf">ECf 28</ref></xr>
+        <xr type="lawCode"><ref target="clause:QuadrArg_3">Quadr Arg 3</ref></xr>
+        <xr type="lawCode"><ref target="law:Ine">Ine Pro</ref></xr>
+        <xr type="lawCode"><ref target="clause:AGu_Prol">AGu Pro</ref></xr>
+        <xr type="lawCode"><ref target="clause:EGu_Prol">EGu Pro</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIEw_1-1">II Ew 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:Af_El-to-49-1">Af El 49,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:Af_El-to-49-9">Af El 49,9</ref></xr>
+        <xr type="lawCode"><ref target="clause:Af_El-to-49-10">Af El 49,10</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIAs_Epilog">II As Epil</ref></xr>
+        <xr type="lawCode"><ref target="clause:VAs_Prol">V As Pro</ref></xr>
+        <xr type="lawCode"><ref target="clause:VIAs_10">VI As 10</ref></xr>
+        <xr type="lawCode"><ref target="clause:VIAs_11">VI As 11</ref></xr>
+        <xr type="lawCode"><ref target="clause:VIAs_12-1">VI As 12,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIEm_Prolog">II Em Pro</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIEg_Prol">II Eg Pro</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIIEg_Inscr">III Eg Insc</ref></xr>
+        <xr type="lawCode"><ref target="clause:IAtr_Prolog">I Atr Pro</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIAtr_9">II Atr 9</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIIAtr_Prol">III Atr Pro</ref></xr>
+        <xr type="lawCode"><ref target="clause:ICn_Prol">I Cn Pro</ref></xr>
+        <xr type="lawCode"><ref target="clause:Duns_Prol">Duns Pro</ref></xr>
+        <xr type="lawCode"><ref target="clause:Af_77">Af 77</ref></xr>
+        <xr type="lawCode"><ref target="clause:Wer_6">Wer 6</ref></xr>
+        <xr type="lawCode"><ref target="clause:Hn_93-37">Hn 93,37</ref></xr>
+        <xr type="lawCode"><ref target="clause:Hn_76-5a">Hn 76,5a</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIEm_7">II Em 7</ref></xr>
+        <xr type="lawCode"><ref target="clause:Hn_75-5b">Hn 75,5b</ref></xr>
+        <xr type="lawCode"><ref target="clause:Hn_88-15">Hn 88,15</ref></xr>
+      </entry>
+    </body>
+  </text>
+</TEI>

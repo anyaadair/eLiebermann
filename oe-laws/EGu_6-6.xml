@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="EGu_6-6">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>EGu 6.6</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Attenborough’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">EGu_6-6</idno>
+        <idno type="citation">EGu 6.6</idno>
+        <idno type="lawCode">EGu</idno>
+        <idno type="lawCodeAnchor">EGu</idno>
+        <idno type="clause">6.6</idno>
+        <idno type="citationKey">EGu 6.6</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Treaty of Edward and Guthrum</title> <note type="reign">Attributed to Edward the Elder, r. 899–924, and Guthrum, d. 890</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">132</biblScope></bibl>
+          <bibl xml:id="attenborough" type="edition">F. L. Attenborough, <title>The Laws of the Earliest English Kings</title> (Cambridge: Cambridge University Press, 1922), p. <biblScope unit="page">106</biblScope></bibl>
+          <bibl xml:id="rabin-doml" type="edition">Andrew Rabin, ed. and trans., <title>Old English Legal Writings: Wulfstan</title>, Dumbarton Oaks Medieval Library (Cambridge, MA: Harvard University Press, 2020), p. <biblScope unit="page">6</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-h" rend="bold"><abbr>H</abbr> <note type="manuscript">Strood, Medway Archive and Local Studies Centre, MS DRc/R1 (Textus Roffensis; formerly Rochester, Cathedral Library, A.3.5), c. 1120–25</note></witness>
+          <witness xml:id="wit-b"><abbr>B</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383</note></witness>
+          <witness xml:id="wit-q"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note></witness>
+          <witness xml:id="wit-ld"><abbr>Ld</abbr> <note type="manuscript">William Lambarde, Archaionomia (London, 1568) – printed from manuscripts now lost</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 128">Nov. 921–938?</date><date source="#wormald-mel #rabin-doml" n="MEL pp. 389–91|">1002–4</date><note type="promulgation">Nov. 921–938? (Liebermann, I p. 128); 1002–4 (Wormald, MEL pp. 389–91; Rabin)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Homicide</term><term>Taxes</term><term>Church dues</term><term>Church rights</term><term>Outlawry</term><term>Law enforcement</term><term>Treaty</term><term>Danelaw</term><term>Boundaries</term></keywords>
+        <keywords n="people"><term>Capital offenders</term><term>Outlaw</term></keywords>
+        <keywords n="locations"><term>Danish districts</term><term>English districts</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 689 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 132.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="6.6">
+        <head><ref type="lawCode" target="law:EGu">EGu</ref> 6.6</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="6.6" corresp="#wit-h"><pb n="132" ed="#liebermann"/>Gif he man to deaþe gefylle<ptr type="liebermannNote" n="5" target="#EGu_6-6.lnote.oe.5"/>, beo he þonne útlah, ⁊ his<ptr type="liebermannNote" n="6" target="#EGu_6-6.lnote.oe.6"/> hente mid hearme ælc þara þe riht wille.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="6.6" corresp="#wit-b"><pb n="132" ed="#liebermann"/>Gyf he man to deaðe gefylle, beo he ðonne uthlah<ptr type="liebermannNote" n="1" target="#EGu_6-6.lnote.oe.1"/>, ⁊ his hente mid hearme ælc ðara ðe riht wylle.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="6.6" corresp="#wit-q"><pb n="133" ed="#liebermann"/>Si aliquem deiciat<ptr type="liebermannNote" n="8" target="#EGu_6-6.lnote.oe.8"/> in mortem, sit utlaga (uel<ptr type="liebermannNote" n="9" target="#EGu_6-6.lnote.oe.9"/> exlex), et prosequatur<ptr type="liebermannNote" n="10" target="#EGu_6-6.lnote.oe.10"/> eum cum clamore omnis qui rectum amat.</ab>
+        <ab type="editionText" xml:lang="ang" source="#attenborough" n="6.6" corresp="#wit-h"><pb n="106" ed="#attenborough"/>Gif he man to deaþe gefylle, beo he þonne útlah<ptr type="editorNote" n="3" target="#EGu_6-6.attnote.fn.3"/>, ⁊ his hente mid hearme ælc þara þe riht wille.</ab>
+        <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-h"><pb n="6" ed="#rabin-doml"/>Gif he man to deaþe gefylle, beo he þonne utlah, and his hente mid hearme ælc þara þe riht wille.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="133" ed="#liebermann"/>Wenn<ptr type="liebermannNote" n="1" target="#EGu_6-6.lnote.de.1"/> er jemanden zu Tode schlägt, dann sei er friedlos, und es fahnde<ptr type="liebermannNote" n="2" target="#EGu_6-6.lnote.de.2"/> auf ihn mit Gerüfte<ptr type="liebermannNote" n="3" target="#EGu_6-6.lnote.de.3"/> jeder derer, die Gesetzlichkeit wünschen.</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">If he strikes someone dead, then let him be an outlaw, and let everyone who desires lawfulness pursue him with hue and cry.</ab>
+        <ab type="translation" xml:lang="en" source="#attenborough" corresp="#wit-h"><pb n="107" ed="#attenborough"/>If he strikes a man<ptr type="editorNote" n="1" target="#EGu_6-6.attnote.n.1"/> dead, he shall then be outlawed, and he shall be pursued with hostility<ptr type="editorNote" n="2" target="#EGu_6-6.attnote.n.2"/> by all those who wish to promote law and order.</ab>
+        <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-h"><pb n="7" ed="#rabin-doml"/>If he causes anyone’s death, then he will become an outlaw and be hunted with enmity by all those who wish for justice.</ab>
+        <note type="comparedBy" source="#liebermann"><ref target="clause:IICn_48-2">II Cn 48.2</ref></note>
+        <note type="liebermannNote" subtype="textual" xml:id="EGu_6-6.lnote.oe.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">133</biblScope></bibl><seg type="original" xml:lang="de">deciat <hi rend="italic">MHk</hi></seg><seg type="translation" xml:lang="en" source="#claude">deciat MHk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="EGu_6-6.lnote.oe.9" n="9" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">133</biblScope></bibl><seg type="original" xml:lang="de">u. e. <hi rend="italic">aus TMHkBr</hi></seg><seg type="translation" xml:lang="en" source="#claude">u. e. from TMHkBr</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="EGu_6-6.lnote.oe.10" n="10" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">133</biblScope></bibl><seg type="original" xml:lang="de">perseq. <hi rend="italic">TMHkBr</hi></seg><seg type="translation" xml:lang="en" source="#claude">perseq. TMHkBr</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="EGu_6-6.lnote.oe.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">132</biblScope></bibl><seg type="original" xml:lang="de">sylle <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">sylle Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="EGu_6-6.lnote.oe.6" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">132</biblScope></bibl><seg type="original" xml:lang="de">him <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">him Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="EGu_6-6.lnote.oe.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">132</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">so</hi></seg><seg type="translation" xml:lang="en" source="#claude">sic</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="EGu_6-6.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">91</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Dies wiederholt II Cn 48, 2. — Das Nord. Lehnwort <hi rend="italic">utlah</hi> erscheint hier zuerst</seg><seg type="translation" xml:lang="en" source="#claude">This is repeated in II Cn 48, 2. — The Norse loan-word <hi rend="italic">utlah</hi> appears here for the first time</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="EGu_6-6.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">91</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Richtig wird II Cn 19, 2. 48, 2 <hi rend="italic">(ge)hentan</hi> (<hi rend="italic">s.</hi> Toller, mengl. <hi rend="italic">henten</hi>, nengl. <hi rend="italic">to hent</hi>): <hi rend="italic">capere, perquirere, prosequi</hi> übersetzt. — <hi rend="italic">Vgl. Gl</hi> Polizei 1 G</seg><seg type="translation" xml:lang="en" source="#claude">At II Cn 19, 2. 48, 2 <hi rend="italic">(ge)hentan</hi> (<hi rend="italic">see</hi> Toller, Middle English <hi rend="italic">henten</hi>, Modern English <hi rend="italic">to hent</hi>) is correctly translated <hi rend="italic">capere, perquirere, prosequi</hi>. — <hi rend="italic">Cf. Gl</hi> Polizei 1 G</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="EGu_6-6.lnote.de.3" n="3" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">91</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">hearm</hi> ist Metathese (<hi rend="italic">s. d. Wb</hi>) für <hi rend="italic">hream</hi>, auch II Cn 29, wo zwei Übersetzer, gegen deren Mehrzahl, <hi rend="italic">damno</hi> missverstehen. — Unrichtig verbindet mit diesem Gerüfte (<hi rend="italic">s. d. Gl</hi> 1—2a) den <hi rend="italic">clamor</hi> der den verbannten Genossen bis zum Wald geleitenden Witherlaggenossen, <hi rend="italic">ne fugiturus ullo ad eos errore referri posset,</hi> Kolderup-Rosenvinge <hi rend="italic">Annivers. Univ. Havn.</hi> 1826 p. 74¹⁸</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">hearm</hi> is a metathesis (<hi rend="italic">see</hi> that word in <hi rend="italic">Wb</hi>) for <hi rend="italic">hream</hi>, also in II Cn 29, where two translators, against the majority of them, misunderstand it as <hi rend="italic">damno</hi>. — Kolderup-Rosenvinge <hi rend="italic">Annivers. Univ. Havn.</hi> 1826 p. 74¹⁸ wrongly connects with this hue and cry (<hi rend="italic">see</hi> that word in <hi rend="italic">Gl</hi> 1—2a) the <hi rend="italic">clamor</hi> of the members of the Witherlag who escort the banished comrade to the forest, <hi rend="italic">ne fugiturus ullo ad eos errore referri posset</hi></seg></note>
+        <note type="editorNote" subtype="endnote" xml:id="EGu_6-6.attnote.n.1" n="1" source="#attenborough"><bibl><biblScope unit="page">202</biblScope></bibl><seg type="original" xml:lang="en">Lit. ‘if he strikes anyone dead,’ but the reference is obviously to the same person mentioned in the preceding clause.</seg></note>
+        <note type="editorNote" subtype="endnote" xml:id="EGu_6-6.attnote.n.2" n="2" source="#attenborough"><bibl><biblScope unit="page">202</biblScope></bibl><seg type="original" xml:lang="en">The word <hi rend="italic">hearme</hi> occurs in all MSS, both here and in II Can. cap. 48 § 2. Schmid (followed by Liebermann) suggested that <hi rend="italic">hearme</hi> stands for <hi rend="italic">hreame</hi> (‘hue and cry’); cf. Quadr. <hi rend="italic">et prosequatur eum cum clamore</hi>. But the actual reading of the MSS gives at least intelligible sense.</seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="EGu_6-6.attnote.fn.3" n="3" source="#attenborough"><bibl><biblScope unit="page">106</biblScope></bibl><label>útlah</label><seg type="original" xml:lang="en"><hi rend="italic">uthlah</hi>. B.</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

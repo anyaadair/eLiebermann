@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Cn-1018_part-025">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Cn 1018 12</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#kennedy">Kennedy</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#kennedy">Kennedy</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Cross-references to other clauses</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#whitelock">Whitelock</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">Cn-1018_part-025</idno>
+        <idno type="citation">Cn 1018 12</idno>
+        <idno type="lawCode">Cn 1018</idno>
+        <idno type="clause">12</idno>
+        <idno type="citationKey">Cn 1018 12</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Cnut’s Code of 1018 (Oxford)</title> <note type="reign">Cnut, r. 1016–1035</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903)</bibl>
+          <bibl xml:id="kennedy" type="edition">A. G. Kennedy, ‘Cnut’s Law Code of 1018’, <title>Anglo-Saxon England</title> 11 (1983), 57–81, p. <biblScope unit="page">75</biblScope></bibl>
+          <bibl xml:id="rabin-doml" type="edition">Andrew Rabin, ed. and trans., <title>Old English Legal Writings: Wulfstan</title>, Dumbarton Oaks Medieval Library (Cambridge, MA: Harvard University Press, 2020), p. <biblScope unit="page">216</biblScope></bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="whitelock" type="study">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-d"><abbr>D</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 201</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#whitelock #kennedy #wormald-mel" n="EHD p. 458||MEL p. 346">1018</date><placeName>Oxford</placeName><note type="promulgation">1018 (Whitelock, EHD p. 458; Kennedy; Wormald, MEL p. 346); Oxford</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Marriage</term><term>Widowhood</term><term>Consanguinity</term><term>Illicit unions</term><term>Ecclesiastical directives</term></keywords>
+        <keywords n="people"><term>Christians</term><term>Women</term><term>Wife</term><term>Kin</term><term>Widow</term><term>Sexual offenders</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 1512 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="12">
+        <head>Cn 1018 12</head>
+        <ab type="editionText" xml:lang="ang" source="#kennedy" n="12" corresp="#wit-d"><pb n="75" ed="#kennedy"/>7 we lærað 7 we biddað. 7 on godes naman beodað. þæt ænig cristen man binnon six manna sibfæce on his agenum cynne æfre ne wifige. ne on his mæges lafe. þe swa neahsib wære.</ab>
+        <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-d"><pb n="216" ed="#rabin-doml"/>And we lærað and we biddað and on Godes naman beodað þæt ænig Cristen man binnon six manna sibfæce on his agenum cynne æfre ne wifige, ne on his mæges lafe þe swa neahsib wære,</ab>
+        <ab type="translation" xml:lang="en" source="#kennedy" corresp="#wit-d"><pb n="75" ed="#kennedy"/>And we teach and we command and in the name of God enjoin that no Christian man ever take a wife from his own kindred within six degrees of relationship, nor the widow of his kinsman, who was as closely related to him.</ab>
+        <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-d"><pb n="217" ed="#rabin-doml"/>And we instruct, pray, and decree in God’s name that no Christian man shall ever take a wife within six degrees of kinship in his own family, nor the widow of one so closely related,</ab>
+        <note type="comparedBy" source="#wormald-mel" n="334"><ref target="clause:VIAtr_12">VI Atr 12–12.2</ref></note>
+        <note type="comparedBy" source="#wormald-mel" n="356"><ref target="clause:ICn_7">I Cn 7–7.3</ref></note>
+        <note type="editorial">Kennedy n. 76: lafe: Liebermann, Gesetze 1, 290: leafe.</note>
+        <note type="textual" source="#rabin-doml">lafe: leafe D</note>
+      </div>
+    </body>
+  </text>
+</TEI>

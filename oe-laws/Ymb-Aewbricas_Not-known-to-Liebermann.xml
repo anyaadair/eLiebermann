@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Ymb-Aewbricas_Not-known-to-Liebermann">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Ymb Æwbricas Not known to Liebermann</title>
+        <respStmt><resp>Translation</resp><name ref="#unattributed">Translator not recorded</name></respStmt>
+        <respStmt><resp>Cross-references to other clauses</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">Ymb-Aewbricas_Not-known-to-Liebermann</idno>
+        <idno type="citation">Ymb Æwbricas Not known to Liebermann</idno>
+        <idno type="lawCode">Ymb Æwbricas</idno>
+        <idno type="clause">Not known to Liebermann</idno>
+        <idno type="citationKey">Ymb Æwbricas notknowntoliebermann</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Ymb æwbricas (On Adulterers)</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903)</bibl>
+          <bibl xml:id="unattributed" type="translation">Translation from the original OE Laws Database spreadsheet; the translator is not recorded</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-ld"><abbr>Ld</abbr> <note type="manuscript">William Lambarde, Archaionomia (London, 1568) – printed from manuscripts now lost</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#wormald-mel" n="MEL pp. 372–3">c.945, the work excerpted</date><note type="promulgation">c.945, the work excerpted (Wormald, MEL pp. 372–3)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Illicit unions</term><term>Forfeiture</term><term>Land</term><term>Legal procedure</term><term>Adultery</term></keywords>
+        <keywords n="people"><term>Nun</term><term>Women</term><term>Nobles</term><term>King</term><term>Bishops</term><term>Ecclesiastical orders</term><term>Rank</term><term>All people</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 2294 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="Not known to Liebermann">
+        <head>Ymb Æwbricas Not known to Liebermann</head>
+        <ab type="translation" xml:lang="en" source="#unattributed">And on your question about adulterers, whether with nuns or lay women, the forfeited woman and man go respectively to the bishopric with her third, and to the lord – whether it be bookland or folkland, whether of the king himself or of any man – he goes with his two parts to his lord if he has wicked intercourse, and they are both forfeit.</ab>
+        <note type="comparison" source="#wormald-mel" n="373"><label>closest to an echo</label> <ref target="clause:EGu_4">EGu 4</ref> <quote>the closest to an echo of Ymb Æwbricas is in his 'Peace of Edward and Guthrum' [n. EGu 4]</quote></note>
+        <note type="comparison" source="#wormald-mel" n="373"><label>same offence stigmatized</label> <ref target="clause:IEm_4">I Em 4</ref> <quote>at the time when such offences were stigmatized by Edmund's London council [n. I Em 4]</quote></note>
+        <note type="comparison" source="#wormald-mel" n="373"><label>cf.</label> <ref target="clause:VAtr_10">V Atr 10</ref> <quote>EGu 4; cf. V Atr 10 (VI 11 – 12:2), Cn 1018 11:3 – 12:4, I Cn 6:3 – 7:3, II 50 – 55</quote></note>
+        <note type="comparison" source="#wormald-mel" n="373"><label>cf.</label> <ref target="clause:VIAtr_11">VI Atr 11–12.2</ref> <quote>EGu 4; cf. V Atr 10 (VI 11 – 12:2), Cn 1018 11:3 – 12:4, I Cn 6:3 – 7:3, II 50 – 55</quote></note>
+        <note type="comparison" source="#wormald-mel" n="373"><label>cf.</label> <ref target="clause:Cn-1018_part-024">Cn 1018 11.3–12.4</ref> <quote>EGu 4; cf. V Atr 10 (VI 11 – 12:2), Cn 1018 11:3 – 12:4, I Cn 6:3 – 7:3, II 50 – 55</quote></note>
+        <note type="comparison" source="#wormald-mel" n="373"><label>cf.</label> <ref target="clause:ICn_6-3">I Cn 6.3–7.3</ref> <quote>EGu 4; cf. V Atr 10 (VI 11 – 12:2), Cn 1018 11:3 – 12:4, I Cn 6:3 – 7:3, II 50 – 55</quote></note>
+        <note type="comparison" source="#wormald-mel" n="373"><label>cf.</label> <ref target="clause:IICn_50">II Cn 50–55</ref> <quote>EGu 4; cf. V Atr 10 (VI 11 – 12:2), Cn 1018 11:3 – 12:4, I Cn 6:3 – 7:3, II 50 – 55</quote></note>
+        <note type="editorial">F: added from Wormald, Making of English Law I, October 2026 (Suggested dates: Liebermann’s date credited or added, and Wormald’s where the database had none from him; the same change in all 1 rows of Ymb Æwbricas); F: corrected against Liebermann, Gesetze I (date at the head of the text); Wormald, Making of English Law I; Whitelock, English Historical Documents I, October 2026 (was “c.945, the work excerpted (Wormald)”, now “c.945, the work excerpted (Wormald, MEL pp. 372–3)”)</note>
+      </div>
+    </body>
+  </text>
+</TEI>

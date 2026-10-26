@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Cn1020_19">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Cn 1020 19</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Cross-references to other clauses</resp><name ref="#wormald-ppmel">Wormald, Papers Preparatory</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">Cn1020_19</idno>
+        <idno type="citation">Cn 1020 19</idno>
+        <idno type="lawCode">Cn 1020</idno>
+        <idno type="lawCodeAnchor">Cn1020</idno>
+        <idno type="clause">19</idno>
+        <idno type="citationKey">Cn1020 19</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Cnut’s Letter of 1020</title> <note type="reign">Cnut, r. 1016–1035</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">275</biblScope></bibl>
+          <bibl xml:id="robertson" type="edition">A. J. Robertson, <title>The Laws of the Kings of England from Edmund to Henry I</title> (Cambridge: Cambridge University Press, 1925), p. <biblScope unit="page">144</biblScope></bibl>
+          <bibl xml:id="rabin-doml" type="edition">Andrew Rabin, ed. and trans., <title>Old English Legal Writings: Wulfstan</title>, Dumbarton Oaks Medieval Library (Cambridge, MA: Harvard University Press, 2020), p. <biblScope unit="page">230</biblScope></bibl>
+          <bibl xml:id="whitelock" type="translation">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007), p. <biblScope unit="page">461</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="wormald-ppmel" type="study">Patrick Wormald, <title>Papers Preparatory to The Making of English Law: King Alfred to the Twelfth Century, II: From God’s Law to Common Law</title>, ed. Stephen Baxter and John Hudson (London: University of London, 2014)</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-york-gospels"><abbr>York Gospels</abbr> <note type="manuscript">York, Minster Library, Add. 1 (York Gospels)</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 273">1020, Feb.–July</date><date source="#robertson #wormald-mel" n="|MEL p. 347">1019/1020</date><date source="#whitelock" n="EHD p. 459">end of 1019 or very beginning of 1020</date><placeName source="#robertson">England</placeName><placeName source="#whitelock" n="EHD p. 459">probably written from Denmark</placeName><note type="promulgation">1020, Feb.–July (Liebermann, I p. 273); 1019/1020 (Robertson; Wormald, MEL p. 347); end of 1019 or very beginning of 1020 (Whitelock, EHD p. 459); England (Robertson); probably written from Denmark (Whitelock, EHD p. 459)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Christian obligations</term><term>Ecclesiastical directives</term><term>Fasts</term><term>Prayer</term></keywords>
+        <keywords n="people"><term>Ecclesiastical orders</term><term>Rank</term><term>Priest</term><term>Christians</term><term>All people</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 1583 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 275.</change>
+      <change when="2026-10" type="checked">Robertson’s text checked and corrected against her edition, p. 144.</change>
+      <change when="2026-10" type="checked">Liebermann’s text added from <title>Die Gesetze der Angelsachsen</title> I, p. 275.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="19">
+        <head><ref type="lawCode" target="law:Cn1020">Cn 1020</ref> 19</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="19" corresp="#wit-york-gospels"><pb n="275" ed="#liebermann"/>⁊ ealle men, earme ⁊ eadige, heora cyrcan secean ⁊ for heora synnum þingian ⁊ ælc beboden fæstan geornlice healdan ⁊ þa halgan georne weorðian, þe us mæssepreostas beodan sceolan,</ab>
+        <ab type="editionText" xml:lang="ang" source="#robertson" n="19" corresp="#wit-york-gospels"><pb n="144" ed="#robertson"/>⁊ ealle men, earme ⁊ eadige, heora cyrcan secean ⁊ for heora synnum þingian ⁊ ælc beboden fæstan geornlice healdan ⁊ þa halgan georne weorðian þe us mæssepreostas beodan sceolan.</ab>
+        <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-york-gospels"><pb n="230" ed="#rabin-doml"/>And ealle men, earme and eadige, heora cyrcan secean and for heora synnum þingian and ælc beboden fæsten geornlice healdan and þa halgan georne weorðian, þe us mæssepreostas beodan sceolan.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="275" ed="#liebermann"/>Und alle Leute, arme und reiche, sollen ihre Kirche(n?) besuchen und um ihre Sünden fürbitten und jedes gebotene Fasten willig halten und eifrig die Heiligen ehren, welche [d. h. deren Feste] uns die Pfarrer verkünden sollen,</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">And let all people, poor and rich, attend their church(es?) and pray for their sins and keep every commanded fast willingly and eagerly honour the saints whose [feasts] the priests are to announce to us,</ab>
+        <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-york-gospels"><pb n="145" ed="#robertson"/>And all men, both rich and poor, shall attend their churches and make supplication for their sins, and zealously keep every prescribed fast, and diligently celebrate the saints-days which the priests enjoin upon us.</ab>
+        <ab type="translation" xml:lang="en" source="#whitelock"><pb n="461" ed="#whitelock"/>And all men, poor and rich, are to go to their church and make supplication for their sins, and to observe zealously every appointed fast, and honour readily those saints whose feasts the mass-priests shall announce to us,</ab>
+        <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-york-gospels"><pb n="231" ed="#rabin-doml"/>And all people, the poor and the wealthy, are to attend their churches and pray for their sins and readily observe every mandated fast, and sincerely honor the saints’ days which the priests have set for us.</ab>
+        <note type="comparison" source="#liebermann" n="275"><ref target="clause:IIEg_5-1">II Eg 5.1</ref></note>
+        <note type="comparisonPrinted" source="#liebermann">Vgl. II Eg. 5, 1</note>
+        <note type="comparedBy" source="#wormald-ppmel" n="57"><ref target="clause:Cn-1018_part-040">Cn 1018 14.2–7</ref></note>
+        <note type="editorial">Liebermann compares II Eg 5.1.</note>
+        <note type="textual" source="#rabin-doml">[6] fæsten: fæstan Y</note>
+      </div>
+    </body>
+  </text>
+</TEI>

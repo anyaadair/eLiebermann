@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>wyrcan</title>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">wyrcan</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, <biblScope unit="volume">2.1</biblScope> (Wörterbuch), <biblScope unit="page">251</biblScope>
+            <ptr type="facsimile" target="https://archive.org/details/diegesetzederang02liebuoft/page/251/mode/2up"/>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <revisionDesc>
+      <change when="2026-10-12">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry xml:lang="ang">
+        <form type="lemma">
+          <orth>wyrcan</orth>
+        </form>
+        <dictScrap type="liebermann"><hi rend="bold">wyrcan</hi> <hi rend="italic">wirken</hi> <ref type="lawCode" target="law:IIAs">II As</ref> 20,1. <ref type="lawCode" target="law:Rect">Rect</ref> 2—4a. <ref type="lawCode" target="law:Episc">Episc</ref> 4; ~cean <ref type="lawCode" target="law:Cn1020">Cn 1020</ref>,3. <ref type="lawCode" target="law:Duns">Duns</ref> 3,1. 8,4. <ref type="lawCode" target="law:Ger">Ger</ref> 11 | <hi rend="italic"><ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref></hi> 3: ~að <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:El">El</ref> 49,3 <ref type="lawCode" target="law:G">G</ref> (<hi rend="italic"><ref type="abbreviation" target="gram:irrig"><abbr>irrig</abbr></ref> <ref type="abbreviation" target="gram:fur"><abbr>für</abbr></ref></hi> wyscað). <ref type="lawCode" target="law:IEm">I Em</ref> 6; ~ceð<ref type="abbreviation" target="gram:sic"><abbr>!</abbr></ref> <ref type="lawCode" target="law:IIIAtr">III Atr</ref> 16 | <hi rend="italic"><ref type="abbreviation" target="gram:Optativ"><abbr>op</abbr></ref></hi> 3; ~ce <ref type="lawCode" target="law:Af">Af</ref> 23,2 (gewyrce <ref type="lawCode" target="law:H">H</ref> <ref type="lawCode" target="law:B">B</ref>). <ref type="lawCode" target="law:Ine">Ine</ref> 3 (werce <ref type="lawCode" target="law:B">B</ref>). <ref type="lawCode" target="law:IIIEg">III Eg</ref> 6,1 (wirce <ref type="lawCode" target="law:D">D</ref>). <ref type="lawCode" target="law:IICn">II Cn</ref> 8,1 (wirce <ref type="lawCode" target="law:MsA">A</ref>). 45,2; weorce <ref type="lawCode" target="law:MsA">A</ref> <hi rend="italic"><ref type="abbreviation" target="gram:undSoWeiter"><abbr>usw.</abbr></ref></hi> | <hi rend="italic"><ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref></hi> 3: ~ <ref type="lawCode" target="law:Episc">Episc</ref> 11 | <hi rend="italic"><ref type="abbreviation" target="gram:Imperativ"><abbr>ipa</abbr></ref>:</hi> wyrc <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:El">El</ref> 10; -ce <ref type="lawCode" target="law:G">G</ref> <ref type="lawCode" target="law:So">So</ref> | <hi rend="italic"><ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref>:</hi> ~ceað 3; ~cað <ref type="lawCode" target="law:G">G</ref> <ref type="lawCode" target="law:H">H</ref> | <hi rend="italic"><ref type="abbreviation" target="gram:Praeteritum"><abbr>ptt</abbr></ref></hi> 2: worhtest <ref type="lawCode" target="law:IudDeiIV">Iud Dei IV</ref> 3,3 | 3 (<hi rend="italic"><ref type="abbreviation" target="gram:meist"><abbr>meist</abbr></ref> <ref type="abbreviation" target="gram:Optativ"><abbr>op</abbr></ref></hi>): -hte <ref type="lawCode" target="law:IEw">I Ew</ref> 2. <ref type="lawCode" target="law:IAtr">I Atr</ref> 1,8. <ref type="lawCode" target="law:IIAtr">II</ref> 9,3 <hi rend="italic"><ref type="abbreviation" target="gram:undSoWeiter"><abbr>usw.</abbr></ref></hi> | <hi rend="italic"><ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref></hi> 1: we worhtan <ref type="lawCode" target="law:ICn">I Cn</ref> 18a. | 3: worhton <ref type="lawCode" target="law:IIAtr">II Atr</ref> 1 | <hi rend="italic"><ref type="abbreviation" target="gram:Particip"><abbr>pc</abbr></ref>:</hi> geworht <ref type="lawCode" target="law:IIAs">II As</ref> 22,2. <ref type="lawCode" target="law:IICn">II Cn</ref> 30,5; geweorht <ref type="lawCode" target="law:B">B</ref>; geworoht <ref type="lawCode" target="law:MsA">A</ref>; gewroht <ref type="lawCode" target="law:Ld">Ld</ref>; <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>:</hi> geworhtne <ref type="lawCode" target="law:IIAtr">II Atr</ref> 3,2 — <hi rend="bold">1</hi>) <hi rend="italic">körperliche Arbeit tun, weltliches Geschäft verrichten</hi> <ref type="lawCode" target="law:Ine">Ine</ref> 3-3,2. <ref type="lawCode" target="law:EGu">EGu</ref> 7,1 = <ref type="lawCode" target="law:IICn">II Cn</ref> 45,1 <ref type="abbreviation" target="gram:folgende"><abbr>f.</abbr></ref> <ref type="lawCode" target="law:IIIAtr">III Atr</ref> 16. <ref type="lawCode" target="law:Rect">Rect</ref> 2. 4a | <hi rend="italic"><ref type="abbreviation" target="gram:mitDativ"><abbr>m dt</abbr></ref> eth.:</hi> eow <hi rend="italic"><ref type="abbreviation" target="gram:fur"><abbr>für</abbr></ref> euch</hi> <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:El">El</ref> 3; hlaforde (-dum) <ref type="lawCode" target="law:VIAs">VI As</ref> 5. <ref type="lawCode" target="law:Rect">Rect</ref> 3 (<ref type="lawCode" target="law:Episc">Episc</ref> 11) <hi rend="bold">2</hi>) <hi rend="italic">herstellen, machen</hi> <hi rend="bold">a</hi>) <hi rend="italic">Körperliches:</hi> fals <hi rend="italic">Falschgeld</hi> <ref type="lawCode" target="law:IIAs">II As</ref> 14,1 = <ref type="lawCode" target="law:IICn">II Cn</ref> 8,1 <ref type="abbreviation" target="gram:folgende"><abbr>f.</abbr></ref> | worhtest win <ref type="lawCode" target="law:IudDeiIV">Iud Dei IV</ref> 3,3, vinum fecisti <hi rend="italic"><ref type="abbreviation" target="gram:glossirend"><abbr>glossirend</abbr></ref></hi> | godas <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:El">El</ref> 10; friðgeard <ref type="lawCode" target="law:Northu">Northu</ref> 54; hulc <ref type="lawCode" target="law:IIAtr">II Atr</ref> 3,2 <hi rend="bold">b</hi>) <hi rend="italic">Vertrag</hi> 1; frið <ref type="lawCode" target="law:Cn1020">Cn 1020</ref>,3. <ref type="lawCode" target="law:Episc">Episc</ref> 4 <hi rend="bold">3</hi>) <hi rend="italic">verrichten, tun:</hi> weorc <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:El">El</ref> 16. <ref type="lawCode" target="law:IICn">II Cn</ref> 30,5. <ref type="lawCode" target="law:Rect">Rect</ref> 4a; inweorc <ref type="lawCode" target="law:Ger">Ger</ref> 11; þeowweorc <ref type="lawCode" target="law:Wi">Wi</ref> 9 | cypinge <hi rend="italic">treiben</hi> <ref type="lawCode" target="law:Cn1020">Cn 1020</ref>,18 <hi rend="bold">4</hi>) <hi rend="italic">verüben:</hi> facn <ref type="lawCode" target="law:IIAs">II As</ref> 14,1; woh <ref type="lawCode" target="law:IIIEg">III Eg</ref> 6,1; liblac <ref type="lawCode" target="law:IEm">I Em</ref> 6; yfel <ref type="lawCode" target="law:VIAtr">VI Atr</ref> 52,1; unriht <ref type="lawCode" target="law:I">I</ref> 1,8 = <ref type="lawCode" target="law:IICn">II Cn</ref> 30,7; <hi rend="italic"><ref type="abbreviation" target="gram:mit"><abbr>mit</abbr></ref> <ref type="abbreviation" target="gram:Genitiv"><abbr>gn</abbr></ref>:</hi> unrihtes <ref type="lawCode" target="law:MsA">A</ref> | <hi rend="italic">abs: verbricht</hi> <ref type="lawCode" target="law:Af">Af</ref> 23,2 <hi rend="bold">5</hi>) <hi rend="italic">vollziehen, erfüllen:</hi> Godes willan <ref type="lawCode" target="law:ICn">I Cn</ref> 18a; riht <hi rend="italic">Prozesspflicht, Urteil</hi> <ref type="lawCode" target="law:IEw">I Ew</ref> 2. <ref type="lawCode" target="law:IIAs">II As</ref> 20,1. 22,2. <ref type="lawCode" target="law:Hu">Hu</ref> 1. <ref type="lawCode" target="law:Duns">Duns</ref> 2. 3,1. 8,4; andsæc <ref type="lawCode" target="law:IIAtr">II Atr</ref> 9,3. — <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> aw~, forw~, forew~, fulw~, gew~, samw~; unworht, yfelwyrcend</dictScrap>
+        <dictScrap type="senses">
+          <sense n="1"><hi rend="italic">körperliche Arbeit tun, weltliches Geschäft verrichten</hi> <ref type="lawCode" target="law:Ine">Ine</ref> 3-3,2. <ref type="lawCode" target="law:EGu">EGu</ref> 7,1 = <ref type="lawCode" target="law:IICn">II Cn</ref> 45,1 <ref type="abbreviation" target="gram:folgende"><abbr>f.</abbr></ref> <ref type="lawCode" target="law:IIIAtr">III Atr</ref> 16. <ref type="lawCode" target="law:Rect">Rect</ref> 2. 4a | <hi rend="italic"><ref type="abbreviation" target="gram:mitDativ"><abbr>m dt</abbr></ref> eth.:</hi> eow <hi rend="italic"><ref type="abbreviation" target="gram:fur"><abbr>für</abbr></ref> euch</hi> <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:El">El</ref> 3; hlaforde (-dum) <ref type="lawCode" target="law:VIAs">VI As</ref> 5. <ref type="lawCode" target="law:Rect">Rect</ref> 3 (<ref type="lawCode" target="law:Episc">Episc</ref> 11)</sense>
+          <sense n="2"><hi rend="italic">herstellen, machen</hi> <hi rend="bold">a</hi>) <hi rend="italic">Körperliches:</hi> fals <hi rend="italic">Falschgeld</hi> <ref type="lawCode" target="law:IIAs">II As</ref> 14,1 = <ref type="lawCode" target="law:IICn">II Cn</ref> 8,1 <ref type="abbreviation" target="gram:folgende"><abbr>f.</abbr></ref> | worhtest win <ref type="lawCode" target="law:IudDeiIV">Iud Dei IV</ref> 3,3, vinum fecisti <hi rend="italic"><ref type="abbreviation" target="gram:glossirend"><abbr>glossirend</abbr></ref></hi> | godas <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:El">El</ref> 10; friðgeard <ref type="lawCode" target="law:Northu">Northu</ref> 54; hulc <ref type="lawCode" target="law:IIAtr">II Atr</ref> 3,2 <hi rend="bold">b</hi>) <hi rend="italic">Vertrag</hi> 1; frið <ref type="lawCode" target="law:Cn1020">Cn 1020</ref>,3. <ref type="lawCode" target="law:Episc">Episc</ref> 4</sense>
+          <sense n="3"><hi rend="italic">verrichten, tun:</hi> weorc <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:El">El</ref> 16. <ref type="lawCode" target="law:IICn">II Cn</ref> 30,5. <ref type="lawCode" target="law:Rect">Rect</ref> 4a; inweorc <ref type="lawCode" target="law:Ger">Ger</ref> 11; þeowweorc <ref type="lawCode" target="law:Wi">Wi</ref> 9 | cypinge <hi rend="italic">treiben</hi> <ref type="lawCode" target="law:Cn1020">Cn 1020</ref>,18</sense>
+          <sense n="4"><hi rend="italic">verüben:</hi> facn <ref type="lawCode" target="law:IIAs">II As</ref> 14,1; woh <ref type="lawCode" target="law:IIIEg">III Eg</ref> 6,1; liblac <ref type="lawCode" target="law:IEm">I Em</ref> 6; yfel <ref type="lawCode" target="law:VIAtr">VI Atr</ref> 52,1; unriht <ref type="lawCode" target="law:I">I</ref> 1,8 = <ref type="lawCode" target="law:IICn">II Cn</ref> 30,7; <hi rend="italic"><ref type="abbreviation" target="gram:mit"><abbr>mit</abbr></ref> <ref type="abbreviation" target="gram:Genitiv"><abbr>gn</abbr></ref>:</hi> unrihtes <ref type="lawCode" target="law:MsA">A</ref> | <hi rend="italic">abs: verbricht</hi> <ref type="lawCode" target="law:Af">Af</ref> 23,2</sense>
+          <sense n="5"><hi rend="italic">vollziehen, erfüllen:</hi> Godes willan <ref type="lawCode" target="law:ICn">I Cn</ref> 18a; riht <hi rend="italic">Prozesspflicht, Urteil</hi> <ref type="lawCode" target="law:IEw">I Ew</ref> 2. <ref type="lawCode" target="law:IIAs">II As</ref> 20,1. 22,2. <ref type="lawCode" target="law:Hu">Hu</ref> 1. <ref type="lawCode" target="law:Duns">Duns</ref> 2. 3,1. 8,4; andsæc <ref type="lawCode" target="law:IIAtr">II Atr</ref> 9,3. — <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> aw~, forw~, forew~, fulw~, gew~, samw~; unworht, yfelwyrcend</sense>
+        </dictScrap>
+        <xr type="lawCode"><ref target="clause:IIAs_20-1">II As 20,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:Rect_2">Rect 2</ref></xr>
+        <xr type="lawCode"><ref target="clause:Episc_4">Episc 4</ref></xr>
+        <xr type="lawCode"><ref target="clause:Cn1020_3">Cn 1020,3</ref></xr>
+        <xr type="lawCode"><ref target="clause:Duns_3-1">Duns 3,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:Duns_8-4">Duns 8,4</ref></xr>
+        <xr type="lawCode"><ref target="clause:Ger_11-a">Ger 11</ref></xr>
+        <xr type="lawCode"><ref target="clause:Af_El-to-49-3">Af El 49,3</ref></xr>
+        <xr type="lawCode"><ref target="clause:IEm_6">I Em 6</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIIAtr_16">III Atr 16</ref></xr>
+        <xr type="lawCode"><ref target="clause:Af_23-2">Af 23,2</ref></xr>
+        <xr type="lawCode"><ref target="clause:Ine_3">Ine 3</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIIEg_6-1">III Eg 6,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IICn_8-1">II Cn 8,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IICn_45-2">II Cn 45,2</ref></xr>
+        <xr type="lawCode"><ref target="clause:Episc_11">Episc 11</ref></xr>
+        <xr type="lawCode"><ref target="clause:Af_El-to-10">Af El 10</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiIV_3-3">Iud Dei IV 3,3</ref></xr>
+        <xr type="lawCode"><ref target="clause:IEw_2">I Ew 2</ref></xr>
+        <xr type="lawCode"><ref target="clause:IAtr_1-8">I Atr 1,8</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIAtr_9-3">II Atr 9,3</ref></xr>
+        <xr type="lawCode"><ref target="clause:ICn_18a">I Cn 18a</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIAtr_1">II Atr 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIAs_22-2">II As 22,2</ref></xr>
+        <xr type="lawCode"><ref target="clause:IICn_30-5">II Cn 30,5</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIAtr_3-2">II Atr 3,2</ref></xr>
+        <xr type="lawCode"><ref target="clause:EGu_7-1">EGu 7,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IICn_45-1">II Cn 45,1</ref></xr>
+        <xr type="lawCode"><ref target="law:Rect">Rect 4a</ref></xr>
+        <xr type="lawCode"><ref target="clause:Af_El-to-3">Af El 3</ref></xr>
+        <xr type="lawCode"><ref target="clause:VIAs_5">VI As 5</ref></xr>
+        <xr type="lawCode"><ref target="clause:Rect_3-to-3-4">Rect 3</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIAs_14-1">II As 14,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:Northu_54">Northu 54</ref></xr>
+        <xr type="lawCode"><ref target="clause:Af_El-to-16">Af El 16</ref></xr>
+        <xr type="lawCode"><ref target="clause:Wi_9">Wi 9</ref></xr>
+        <xr type="lawCode"><ref target="clause:Cn1020_18">Cn 1020,18</ref></xr>
+        <xr type="lawCode"><ref target="clause:VIAtr_52-1">VI Atr 52,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IICn_30-7">II Cn 30,7</ref></xr>
+        <xr type="lawCode"><ref target="clause:Hu_1">Hu 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:Duns_2">Duns 2</ref></xr>
+      </entry>
+    </body>
+  </text>
+</TEI>

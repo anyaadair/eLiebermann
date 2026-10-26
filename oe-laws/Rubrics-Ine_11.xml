@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Rubrics-Ine_11">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Ine Rb 11</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">Rubrics-Ine_11</idno>
+        <idno type="citation">Ine Rb 11</idno>
+        <idno type="lawCode">Ine Rb</idno>
+        <idno type="clause">11</idno>
+        <idno type="citationKey">Ine Rb 11</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Rubrics to Ine’s Laws (in Alfred’s Domboc)</title> <note type="reign">Alfred, r. 871–899</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">20</biblScope></bibl>
+          <bibl xml:id="jurasinski-and-oliver" type="edition">Stefan Jurasinski and Lisi Oliver, <title>The Laws of Alfred: The Domboc and the Making of Anglo-Saxon Law</title> (Cambridge: Cambridge University Press, 2021), p. <biblScope unit="page">202</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-e" rend="bold"><abbr>E</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 173 (Parker Chronicle and Laws)</note></witness>
+          <witness xml:id="wit-h"><abbr>H</abbr> <note type="manuscript">Strood, Medway Archive and Local Studies Centre, MS DRc/R1 (Textus Roffensis; formerly Rochester, Cathedral Library, A.3.5), c. 1120–25</note></witness>
+          <witness xml:id="wit-q"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note></witness>
+          <witness xml:id="wit-g-prol"><abbr>G (Prol.)</abbr> <note type="manuscript">London, British Library, Cotton Nero A.i</note></witness>
+          <witness xml:id="wit-b"><abbr>B</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383</note></witness>
+          <witness xml:id="wit-ot-frag"><abbr>Ot (frag.)</abbr> <note type="manuscript">London, British Library, Cotton Otho B.xi (damaged by fire, 1731)</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 20">c.890–c.940</date><note type="promulgation">c.890–c.940 (Liebermann, I p. 20)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Slavery</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 250 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 20.</change>
+      <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 20: “LV. Be ðam monnum þe hiora gelondan bebycggað.” → “LV. Be ðam monnum þe hiora gelondan bebycggað. (expanded letters in italics: m)”.</change>
+      <change when="2026-10" type="checked">Liebermann’s text of MS G added from Gesetze I, p. 20.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="11">
+        <head>Ine Rb 11</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="11" corresp="#wit-e"><pb n="20" ed="#liebermann"/>LV. Be ðam<ptr type="liebermannNote" n="11" target="#Rubrics-Ine_11.lnote.oe.11"/> monnu<hi rend="italic">m</hi> þe hiora gelondan bebycggað.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="11" corresp="#wit-g-prol"><pb n="20" ed="#liebermann"/>LV. Be þan mannu<hi rend="italic">m</hi> þe hira gelandan bebicgað.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="11" corresp="#wit-h"><pb n="21" ed="#liebermann"/>LV. Be þam mannum þe heora<ptr type="liebermannNote" n="8" target="#Rubrics-Ine_11.lnote.oe.8"/> gelandan<ptr type="liebermannNote" n="9" target="#Rubrics-Ine_11.lnote.oe.9"/> bebicgað.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="11" corresp="#wit-q"><pb n="21" ed="#liebermann"/>De illis qui compatriotas suos emunt.</ab>
+        <ab type="editionText" xml:lang="ang" source="#jurasinski-and-oliver" corresp="#wit-e"><pb n="202" ed="#jurasinski-and-oliver"/>LV Be ðam monnu<hi rend="italic">m</hi> þe hiora gelondan bebycggað</ab>
+        <ab type="editionText" xml:lang="ang" source="#jurasinski-and-oliver" corresp="#wit-b"><pb n="202" ed="#jurasinski-and-oliver"/>Be landbygene</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="21" ed="#liebermann"/>Von den Menschen, die ihre Landsleute<ptr type="liebermannNote" n="1" target="#Rubrics-Ine_11.lnote.de.1"/> verkaufen.<ptr type="liebermannNote" n="2" target="#Rubrics-Ine_11.lnote.de.2"/></ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">Of people who sell their countrymen.</ab>
+        <ab type="translation" xml:lang="en" source="#jurasinski-and-oliver" corresp="#wit-e"><pb n="203" ed="#jurasinski-and-oliver"/>Concerning those who sell their countrymen</ab>
+        <ab type="translation" xml:lang="en" source="#jurasinski-and-oliver" corresp="#wit-b"><pb n="203" ed="#jurasinski-and-oliver"/>Concerning selling land</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="Rubrics-Ine_11.lnote.oe.11" n="11" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">20</biblScope></bibl><seg type="original" xml:lang="de">leodbygene <hi rend="italic">statt</hi> ðam — bebycggað <hi rend="italic">Ld</hi> [<hi rend="italic">aus B?</hi>]</seg><seg type="translation" xml:lang="en" source="#claude">leodbygene instead of ðam — bebycggað Ld [from B?]</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Rubrics-Ine_11.lnote.oe.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">21</biblScope></bibl><seg type="original" xml:lang="de">eo <hi rend="italic">auf Rasur</hi></seg><seg type="translation" xml:lang="en" source="#claude">eo on an erasure</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Rubrics-Ine_11.lnote.oe.9" n="9" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">21</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">geänd. aus</hi> land.</seg><seg type="translation" xml:lang="en" source="#claude">altered from land.</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Rubrics-Ine_11.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">41</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">Oder ‘ihren Landsmann’. Ohne Grund denkt Price an eine von <hi rend="italic">geleod</hi> des Textes verschiedene Bedeutung. Das Wort wird glossiert <hi rend="italic">fratrueles, paternitates</hi>; ahd. heisst <hi rend="italic">galanto</hi> : <hi rend="italic">pagensis</hi>, <hi rend="italic">gilante</hi> : <hi rend="italic">patriota</hi>. ‘Vaterland’ heisst <hi rend="italic">land</hi> in den Compositis <hi rend="italic">landbegenga</hi>, <hi rend="italic">-buend</hi>, <hi rend="italic">-leode</hi>, <hi rend="italic">-man</hi>, <hi rend="italic">-sidu</hi></seg><seg type="translation" xml:lang="en" source="#claude">Or ‘their fellow-countryman’. Price has no grounds for thinking of a meaning different from that of <hi rend="italic">geleod</hi> in the text. The word is glossed <hi rend="italic">fratrueles, paternitates</hi>; in OHG <hi rend="italic">galanto</hi> : <hi rend="italic">pagensis</hi>, <hi rend="italic">gilante</hi> : <hi rend="italic">patriota</hi>. <hi rend="italic">land</hi> means ‘native country’ in the compounds <hi rend="italic">landbegenga</hi>, <hi rend="italic">-buend</hi>, <hi rend="italic">-leode</hi>, <hi rend="italic">-man</hi>, <hi rend="italic">-sidu</hi></seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Rubrics-Ine_11.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">41</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">An <hi rend="italic">bycgean</hi> denkt Q</seg><seg type="translation" xml:lang="en" source="#claude">Q is thinking of <hi rend="italic">bycgean</hi></seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

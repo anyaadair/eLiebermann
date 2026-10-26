@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>byrðenn</title>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">byrdenn</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, <biblScope unit="volume">2.1</biblScope> (Wörterbuch), <biblScope unit="page">29</biblScope>
+            <ptr type="facsimile" target="https://archive.org/details/diegesetzederang02liebuoft/page/29/mode/2up"/>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="bib" matchPattern="(.+)" replacementPattern="bibAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <revisionDesc>
+      <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry xml:lang="ang">
+        <form type="lemma">
+          <orth>byrðenn</orth>
+        </form>
+        <dictScrap type="liebermann"><hi rend="bold">byrðenn</hi> <hi rend="italic">Bürde, Last; <ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>:</hi> lade on byrdene <hi rend="italic">Ladung als Tragelast</hi> <ref type="lawCode" target="law:Northu">Northu</ref> 55 [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>. in Erzbischof Thomas’</hi> <ref type="lawCode" target="law:I">I</ref>. (1070—1100) <hi rend="italic">Rechten zu York:</hi> coupfare to Everwyc mid horsum oððe wegnon, <hi rend="italic">im franz. Texte</hi> a cheval u a pee; <hi rend="italic"><ref type="abbreviation" target="gram:editio"><abbr>ed.</abbr></ref></hi> <ref type="bibl" target="bib:CitArchivNS">Archiv neu. Sprach. 1904 <hi rend="italic">S.</hi> 6</ref>] | <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>:</hi> ~nne <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:El">El</ref> 49,5; ~ ðē <ref type="lawCode" target="law:Ld">Ld</ref>; ~ene <ref type="lawCode" target="law:G">G</ref> <ref type="lawCode" target="law:H">H</ref> <ref type="lawCode" target="law:So">So</ref>. <ref type="lawCode" target="law:VIAtr">VI Atr</ref> 52. <ref type="lawCode" target="law:IICn">II Cn</ref> 68,1a</dictScrap>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/5662">byrðen</ref></xr>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/41259">byrþen (Supplement)</ref></xr>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/61708">byrþen (Supplement)</ref></xr>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/3876">berðen</ref></xr>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/5672">byrðyn</ref></xr>
+        <xr type="lawCode"><ref target="clause:Northu_55">Northu 55</ref></xr>
+        <xr type="lawCode"><ref target="clause:Af_El-to-49-5">Af El 49,5</ref></xr>
+        <xr type="lawCode"><ref target="clause:VIAtr_52">VI Atr 52</ref></xr>
+        <xr type="lawCode"><ref target="clause:IICn_68-1a">II Cn 68,1a</ref></xr>
+      </entry>
+    </body>
+  </text>
+</TEI>

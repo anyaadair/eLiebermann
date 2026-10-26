@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IIAs_22">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>II As 22</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Cross-references to other clauses</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Attenborough’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">IIAs_22</idno>
+        <idno type="citation">II As 22</idno>
+        <idno type="lawCode">II As</idno>
+        <idno type="lawCodeAnchor">IIAs</idno>
+        <idno type="clause">22</idno>
+        <idno type="citationKey">IIAs 22</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>II Æthelstan (Grately)</title> <note type="reign">Æthelstan, r. 924–939</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">162</biblScope></bibl>
+          <bibl xml:id="attenborough" type="edition">F. L. Attenborough, <title>The Laws of the Earliest English Kings</title> (Cambridge: Cambridge University Press, 1922), p. <biblScope unit="page">138</biblScope></bibl>
+          <bibl xml:id="whitelock" type="translation">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007), p. <biblScope unit="page">422</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-h" rend="bold"><abbr>H</abbr> <note type="manuscript">Strood, Medway Archive and Local Studies Centre, MS DRc/R1 (Textus Roffensis; formerly Rochester, Cathedral Library, A.3.5), c. 1120–25</note></witness>
+          <witness xml:id="wit-b"><abbr>B</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383</note></witness>
+          <witness xml:id="wit-ot"><abbr>Ot</abbr> <note type="manuscript">London, British Library, Cotton Otho B.xi (damaged by fire, 1731)</note></witness>
+          <witness xml:id="wit-ld"><abbr>Ld</abbr> <note type="manuscript">William Lambarde, Archaionomia (London, 1568) – printed from manuscripts now lost</note></witness>
+          <witness xml:id="wit-so"><abbr>So</abbr> <note type="manuscript">William Somner's transcript of Cotton Otho B.xi (made before the fire)</note></witness>
+          <witness xml:id="wit-q"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 150">925–c.935</date><date source="#attenborough">before III–VI As</date><date source="#whitelock" n="EHD p. 418">c.926–c.930</date><date source="#wormald-mel" n="MEL p. 440">not before 928</date><placeName>Grately</placeName><note type="promulgation">925–c.935 (Liebermann, I p. 150); before III–VI As (Attenborough); c.926–c.930 (Whitelock, EHD p. 418); not before 928 (Wormald, MEL p. 440); Grately</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Service</term><term>Legal responsibility</term></keywords>
+        <keywords n="people"><term>Nobles</term><term>Lord's men</term><term>All people</term><term>Rank</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 783 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 162.</change>
+      <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 162: “…; …; he::” → “. . .; . . .; he : :”.</change>
+      <change when="2026-10" type="checked">Liebermann’s German translation corrected against Gesetze I, p. 162: “(Von dem, der den Untergebenen eines anderen Mannes [als Vasallen] aufnimmt. Ld) Und niemand nehme den Untergebenen eines anderen [zum Vasallen] auf, ohne dessen Erlaubniss, dem dieser früher commendirt war.” → “(Von dem, der den Untergebenen eines anderen Mannes [als Vasallen] aufnimmt. Ld) Und niemand nehme den Untergebenen eines anderen [zum Vasallen] auf, ohne dessen Erlaubniss, dem dieser früher commendirt war. (expanded letters in italics: Ld)”.</change>
+      <change when="2026-10" type="checked">The modern editor’s text corrected against Attenborough, p. 138: “[Ld]” → “∅”.</change>
+      <change when="2026-10" type="checked">The modern editor’s translation corrected against Attenborough, p. 139: “man” → “one”.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="22">
+        <head><ref type="lawCode" target="law:IIAs">II As</ref> 22</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="22" corresp="#wit-h"><pb n="162" ed="#liebermann"/>⁊ ne underfó nan mon<ptr type="liebermannNote" n="4" target="#IIAs_22.lnote.oe.4"/> oþres<ptr type="liebermannNote" n="8" target="#IIAs_22.lnote.oe.8"/> monnes<ptr type="liebermannNote" n="4" target="#IIAs_22.lnote.oe.4"/> mon<ptr type="liebermannNote" n="4" target="#IIAs_22.lnote.oe.4"/>, buton<ptr type="liebermannNote" n="4" target="#IIAs_22.lnote.oe.4"/> his leafe þe he ær folgode.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="22" corresp="#wit-ld"><pb n="162" ed="#liebermann"/>Be ðon ðe oþres mannes man underfehþ. Ne underfó nan man oþres mannes man, butan ðæs leafe ðe he ær folgode.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="22" corresp="#wit-ot"><pb n="162" ed="#liebermann"/>⁊ ne . . . nan man oðres . . . man, butan þæs leafe þe he : : folgode.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="22" corresp="#wit-q"><pb n="163" ed="#liebermann"/>Ne quis recipiat<ptr type="liebermannNote" n="12" target="#IIAs_22.lnote.oe.12"/> alterius hominem sine<ptr type="liebermannNote" n="13" target="#IIAs_22.lnote.oe.13"/> licentia. Et nemo recipiat alterius hominem sine<ptr type="liebermannNote" n="14" target="#IIAs_22.lnote.oe.14"/> licentia eius cui antea seruiuit.</ab>
+        <ab type="editionText" xml:lang="ang" source="#attenborough" n="22" corresp="#wit-h"><pb n="138" ed="#attenborough"/>[Be ðon ðe oþres mannes man underfehþ.]<ptr type="editorNote" n="12" target="#IIAs_22.attnote.fn.12"/> ⁊ ne underfó nan mon oþres monnes mon, buton his<ptr type="editorNote" n="13" target="#IIAs_22.attnote.fn.13"/> leafe þe he ær folgode.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="163" ed="#liebermann"/>(Von dem, der den Untergebenen eines anderen Mannes [als Vasallen] aufnimmt. <hi rend="italic">Ld</hi>) Und<ptr type="liebermannNote" n="1" target="#IIAs_22.lnote.de.1"/> niemand nehme den Untergebenen eines anderen [zum Vasallen] auf, ohne dessen Erlaubniss, dem dieser früher commendirt war.</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">(Of him who takes another man's dependant [as his vassal]. Ld) And let no one take another's dependant [as his vassal] without the permission of the one to whom he was previously commended.</ab>
+        <ab type="translation" xml:lang="en" source="#attenborough" corresp="#wit-h"><pb n="139" ed="#attenborough"/>And no one shall receive a man who is subject to another, without the permission of him whom he has been serving.</ab>
+        <ab type="translation" xml:lang="en" source="#whitelock"><pb n="422" ed="#whitelock"/>And no one is to receive the man of another man, without the permission of him whom he served before.</ab>
+        <note type="comparison" source="#liebermann" n="163"><ref target="clause:IIEw_7">II Ew 7</ref></note>
+        <note type="comparisonPrinted" source="#liebermann">Vgl. II Ew. 7</note>
+        <note type="comparedBy" source="#liebermann"><ref target="clause:VAs_1">V As 1</ref>; <ref target="clause:IICn_28">II Cn 28</ref></note>
+        <note type="comparedBy" source="#wormald-mel" n="286"><ref target="clause:AGu_4">AGu 4–5</ref></note>
+        <note type="comparedBy" source="#wormald-mel" n="296"><ref target="clause:VAs_1">V As 1–1.1</ref></note>
+        <note type="comparedBy" source="#wormald-mel" n="358"><ref target="clause:IICn_28">II Cn 28–28.1</ref></note>
+        <note type="comparedBy" source="#whitelock" n="465"><ref target="clause:IICn_28">II Cn 28</ref></note>
+        <note type="editorial">Liebermann compares II Ew 7.</note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIAs_22.lnote.oe.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">162</biblScope></bibl><seg type="original" xml:lang="de">o <hi rend="italic">geänd. in</hi> a</seg><seg type="translation" xml:lang="en" source="#claude">o altered to a</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIAs_22.lnote.oe.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">162</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">auf Rasur</hi></seg><seg type="translation" xml:lang="en" source="#claude">on an erasure</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIAs_22.lnote.oe.12" n="12" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">163</biblScope></bibl><seg type="original" xml:lang="de">acc. <hi rend="italic">MHkBr</hi></seg><seg type="translation" xml:lang="en" source="#claude">acc. MHkBr</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIAs_22.lnote.oe.13" n="13" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">163</biblScope></bibl><seg type="original" xml:lang="de">s. l. <hi rend="italic">fehlt Br</hi></seg><seg type="translation" xml:lang="en" source="#claude">s. l. lacking in Br</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIAs_22.lnote.oe.14" n="14" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">163</biblScope></bibl><seg type="original" xml:lang="de">si non <hi rend="italic">M</hi></seg><seg type="translation" xml:lang="en" source="#claude">si non M</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="IIAs_22.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">106</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Wiederholt III 4</seg><seg type="translation" xml:lang="en" source="#claude">Repeated in III 4</seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="IIAs_22.attnote.fn.12" n="12" source="#attenborough"><bibl><biblScope unit="page">138</biblScope></bibl><label>underfehþ</label><seg type="original" xml:lang="en">Ld.</seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="IIAs_22.attnote.fn.13" n="13" source="#attenborough"><bibl><biblScope unit="page">138</biblScope></bibl><label>his</label><seg type="original" xml:lang="en"><hi rend="italic">ðæs</hi>. Ld, Ot.</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

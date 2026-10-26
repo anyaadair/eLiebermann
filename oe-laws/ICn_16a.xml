@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ICn_16a">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>I Cn 16a</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Cross-references to other clauses</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Cross-references to other clauses</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Cross-references to other clauses</resp><name ref="#kennedy">Kennedy</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Robertson’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ICn_16a</idno>
+        <idno type="citation">I Cn 16a</idno>
+        <idno type="lawCode">I Cn</idno>
+        <idno type="lawCodeAnchor">ICn</idno>
+        <idno type="clause">16a</idno>
+        <idno type="citationKey">ICn 16a</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>I Cnut (Winchester)</title> <note type="reign">Cnut, r. 1016–1035</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">296</biblScope></bibl>
+          <bibl xml:id="robertson" type="edition">A. J. Robertson, <title>The Laws of the Kings of England from Edmund to Henry I</title> (Cambridge: Cambridge University Press, 1925), p. <biblScope unit="page">166</biblScope></bibl>
+          <bibl xml:id="rabin-doml" type="edition">Andrew Rabin, ed. and trans., <title>Old English Legal Writings: Wulfstan</title>, Dumbarton Oaks Medieval Library (Cambridge, MA: Harvard University Press, 2020), p. <biblScope unit="page">246</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="whitelock" type="study">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007)</bibl>
+          <bibl xml:id="kennedy" type="study">A. G. Kennedy, ‘Cnut’s Law Code of 1018’, <title>Anglo-Saxon England</title> 11 (1983), 57–81</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-b" rend="bold"><abbr>B</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383</note></witness>
+          <witness xml:id="wit-g-a" rend="bold"><abbr>G(A)</abbr> <note type="manuscript">London, British Library, Cotton Nero A.i</note></witness>
+          <witness xml:id="wit-a"><abbr>A</abbr> <note type="manuscript">London, British Library, Harley 55</note></witness>
+          <witness xml:id="wit-ld"><abbr>Ld</abbr> <note type="manuscript">William Lambarde, Archaionomia (London, 1568) – printed from manuscripts now lost</note></witness>
+          <witness xml:id="wit-d-frags"><abbr>D (frags.)</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 201</note></witness>
+          <witness xml:id="wit-q"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note></witness>
+          <witness xml:id="wit-inst-cn"><abbr>Inst. Cn.</abbr></witness>
+          <witness xml:id="wit-cons-cn"><abbr>Cons. Cn.</abbr> <note type="manuscript">Consiliatio Cnuti (Latin translation, early 12th c.)</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 278">25 Dec. 1027–34</date><date source="#whitelock" n="EHD p. 461">1020–23</date><date source="#wormald-mel" n="MEL p. 345">1020/21</date><placeName>Winchester</placeName><note type="promulgation">25 Dec. 1027–34 (Liebermann, I p. 278); 1020–23 (Whitelock, EHD p. 461); 1020/21 (Wormald, MEL p. 345); Winchester</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Church festivals</term><term>Fasts</term></keywords>
+        <keywords n="people"><term>St Mary</term><term>St Philip</term><term>St James</term><term>Apostles</term><term>All people</term><term>Named individuals</term><term>Saints</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 1660 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 296.</change>
+      <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 296: “Sancta” → “sancta”.</change>
+      <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 296: “⁊ to sancta Marian mæssan ælcere ⁊ to ælces apostoles mæssan fæstan, buton Philippi et Iacobi we ne beodað nan fæsten, for ðan eastorlicon freolse, ⁊ ælce Frígdæges fæston, buton hit freols sy.” → “⁊ to sancta Marian mæssan ælcere ⁊ to ælces apostoles mæssan fæstan, buton Philippi et Iacobi we ne beodað nan fæsten, for ðan eastorlicon freolse, ⁊ ælce Frígdæges fæston, buton hit freols sy. (expanded letters in italics: anct)”.</change>
+      <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 296: “⁊ to sancta Marian mæssan ælcere ⁊ to ælces apostoles mæssan fæsten, buton Philippi ⁊ Iacobi we ne beodað nan fæsten, for ðam easterlican freolse, and ælces Frigdæges fæsten, buton hyt freols sy.” → “⁊ to sancta Marian mæssan ælcere ⁊ to ælces apostoles mæssan fæsten, buton Philippi ⁊ Iacobi we ne beodað nan fæsten, for ðam easterlican freolse, and ælces Frigdæges fæsten, buton hyt freols sy. (expanded letters in italics: anct, m)”.</change>
+      <change when="2026-10" type="checked">Liebermann’s German translation corrected against Gesetze I, p. 296: “BA)” → “B A)”.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="16a">
+        <head><ref type="lawCode" target="law:ICn">I Cn</ref> 16a</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="16a" corresp="#wit-g-a"><pb n="296" ed="#liebermann"/>And to s<hi rend="italic">anct</hi>a Marian mæssan ælcere ⁊ to ælces apostoles mæssan fæste<ptr type="liebermannNote" n="8" target="#ICn_16a.lnote.oe.8"/> man, butan<ptr type="liebermannNote" n="1" target="#ICn_16a.lnote.oe.1"/> to<ptr type="liebermannNote" n="9" target="#ICn_16a.lnote.oe.9"/> Philippi<ptr type="liebermannNote" n="10" target="#ICn_16a.lnote.oe.10"/> &amp; Iacobi<ptr type="liebermannNote" n="10" target="#ICn_16a.lnote.oe.10"/> mæssan<ptr type="liebermannNote" n="9" target="#ICn_16a.lnote.oe.9"/> we ne beodað nan fæsten, for þam easterlican freolse, ⁊ ælces Frigedæges<ptr type="liebermannNote" n="11" target="#ICn_16a.lnote.oe.11"/> fæsten, butan<ptr type="liebermannNote" n="1" target="#ICn_16a.lnote.oe.1"/> hit freols sig.<ptr type="liebermannNote" n="3" target="#ICn_16a.lnote.oe.3"/></ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="16a" corresp="#wit-b"><pb n="296" ed="#liebermann"/>⁊ to s<hi rend="italic">anct</hi>a Marian mæssan ælcere ⁊ to ælces apostoles mæssan fæstan, buton Philippi et Iacobi we ne beodað nan fæsten, for<ptr type="liebermannNote" n="4" target="#ICn_16a.lnote.oe.4"/> ðan eastorlicon freolse, ⁊ ælce<ptr type="liebermannNote" n="5" target="#ICn_16a.lnote.oe.5"/> Frígdæges fæston<ptr type="liebermannNote" n="5" target="#ICn_16a.lnote.oe.5"/>, buton hit freols sy.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="16a" corresp="#wit-a"><pb n="296" ed="#liebermann"/>⁊ to s<hi rend="italic">anct</hi>a Marian mæssan ælcere ⁊ to ælces apostoles mæssan fæsten, buton Philippi ⁊ Iacobi we ne beodað nan fæsten, for ða<hi rend="italic">m</hi> easterlican freolse, and ælces Frigdæges fæsten, buton hyt freols sy.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="16a" corresp="#wit-q"><pb n="297" ed="#liebermann"/>Et ad<ptr type="liebermannNote" n="2" target="#ICn_16a.lnote.oe.2"/> omnes beatę Marię festiuitates et sanctorum apostolorum omnium ieiunia uotiua preueniant, preter Philippi et Iacobi, pro sollempnitate paschali.</ab>
+        <ab type="editionText" xml:lang="ang" source="#robertson" n="16a" corresp="#wit-b"><pb n="166" ed="#robertson"/>And to Sancta Marian mæssan ælcere ⁊ to ælces apostoles mæssan fæstan<ptr type="editorNote" n="9" target="#ICn_16a.robnote.fn.9"/>, buton Philippi et Jacobi<ptr type="editorNote" n="10" target="#ICn_16a.robnote.fn.10"/> we ne beodað nan fæsten for ðan eastorlicon freolse, ⁊ ælce[s]<ptr type="editorNote" n="11" target="#ICn_16a.robnote.fn.11"/> Frígdæges fæston<ptr type="editorNote" n="12" target="#ICn_16a.robnote.fn.12"/>, buton hit freols sy.</ab>
+        <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-g-a"><pb n="246" ed="#rabin-doml"/>And to Sancta Marian mæssan ælcere and to ælces apostoles mæssan fæste man— butan to Philippi and Iacobi mæssan we ne beodað nan fæsten for þam Easterlican freolse—and ælces Frigedæges fæsten, butan hit freols sig.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="296" ed="#liebermann"/>Und vor jedem Feste<ptr type="liebermannNote" n="1" target="#ICn_16a.lnote.de.1"/> der heiligen Maria und vor jeden Apostels Tage faste man (Fasten<ptr type="liebermannNote" n="2" target="#ICn_16a.lnote.de.2"/> <hi rend="italic">B A</hi>) — nur vor Philippi und Jacobi Tag gebieten wir, wegen des österlichen Festes, kein Fasten — und Fasten jedes Freitags, ausser wenn es ein Feiertag ist.</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">And before every feast of St Mary and before every apostle's day let there be a fast (fasting, B A) — only before the day of Philip and James we command no fast, because of the Easter festival — and the fast of every Friday, unless it is a feast-day.</ab>
+        <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-b"><ptr type="editorNote" n="1" target="#ICn_16a.robnote.n.1"/><pb n="167" ed="#robertson"/>And at all the festivals of St Mary and at the festival of every apostle a fast [shall be observed]—except at the festival of St Philip and St James when we do not enjoin a fast because of the Easter festival—and a fast [shall be observed] every Friday, unless it be a festival.</ab>
+        <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-g-a"><pb n="247" ed="#rabin-doml"/>and a fast is to be held every Friday unless there is a feast.</ab>
+        <note type="comparison" source="#liebermann" n="296"><ref target="clause:VIAtr_22-2">VI Atr 22.2f.</ref>; <ref target="clause:VIAtr_24">VI Atr 24</ref></note>
+        <note type="comparisonPrinted" source="#liebermann">ebd. 22, 2 f. | * ebd. 24</note>
+        <note type="comparison" source="#wormald-mel" n="356"><label>source (roman)</label> <ref target="clause:VIAtr_22-2">VI Atr 22.2–3</ref> <quote>Table 5.4, I Cn 16a: Cn 1018 14:2-3  VI Atr 22:2-3, 24</quote></note>
+        <note type="comparison" source="#wormald-mel" n="356"><label>source (roman)</label> <ref target="clause:VIAtr_24">VI Atr 24</ref> <quote>Table 5.4, I Cn 16a: Cn 1018 14:2-3  VI Atr 22:2-3, 24</quote></note>
+        <note type="comparison" source="#wormald-mel" n="356"><label>source (roman)</label> <ref target="clause:Cn-1018_part-040">Cn 1018 14.2–3</ref> <quote>Table 5.4, I Cn 16a: Cn 1018 14:2-3  VI Atr 22:2-3, 24</quote></note>
+        <note type="comparedBy" source="#wormald-mel" n="314"><ref target="clause:IIEg_2-3">II Eg 2.3</ref></note>
+        <note type="comparedBy" source="#wormald-mel" n="314"><ref target="clause:IIEg_5-1">II Eg 5.1–3</ref></note>
+        <note type="comparedBy" source="#whitelock" n="435"><ref target="clause:IIEg_5-1">II Eg 5.1</ref></note>
+        <note type="comparedBy" source="#wormald-mel" n="314"><ref target="clause:IIIEg_8-1">III Eg 8.1–3</ref></note>
+        <note type="comparedBy" source="#kennedy" n="59"><ref target="clause:Cn-1018_part-040">Cn 1018 14.2–14.3</ref></note>
+        <note type="comparedBy" source="#kennedy" n="59"><ref target="clause:Cn-1018_part-045">Cn 1018 14.7</ref></note>
+        <note type="editorial">Liebermann compares VI Atr 22.2 f., 24, or II Eg 5.1.; Robertson (p. 139) takes I Cn from B, which begins at ‘mæssedæg’ in 14.2, the earlier clauses being supplied from G; AV: corrected against Rabin p. 246, October 2026 (was “And a fast is to be observed on all of the feasts of Saint Mary as well as on the feasts of each of the apostles—but we order no fast for the Feasts of Philip; James because of Easter—and”, now “∅; ∅”)</note>
+        <note type="liebermannNote" subtype="textual" xml:id="ICn_16a.lnote.oe.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">296</biblScope></bibl><seg type="original" xml:lang="de">fæsten, b. P. et I. we <hi rend="italic">Ld BA</hi>; <hi rend="italic">Homilet nach Wulfstan</hi> 117</seg><seg type="translation" xml:lang="en" source="#claude">fæsten, b. P. et I. we Ld BA; homilist after Wulfstan 117</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ICn_16a.lnote.oe.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">296</biblScope></bibl><seg type="original" xml:lang="de">buton <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">buton Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ICn_16a.lnote.oe.9" n="9" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">296</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ICn_16a.lnote.oe.10" n="10" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">296</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">dahinter</hi> ', <hi rend="italic">d. i. Sigle für Endung</hi> us [<hi rend="italic">die VI Atr.</hi> 22, 3 <hi rend="italic">steht</hi>]</seg><seg type="translation" xml:lang="en" source="#claude">after it ', i.e. the abbreviation sign for the ending us [which appears in VI Atr. 22, 3]</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ICn_16a.lnote.oe.11" n="11" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">296</biblScope></bibl><seg type="original" xml:lang="de">Frigd. <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">Frigd. Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ICn_16a.lnote.oe.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">296</biblScope></bibl><seg type="original" xml:lang="de">sy <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">sy Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ICn_16a.lnote.oe.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">297</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Dm</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Dm</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ICn_16a.lnote.oe.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">296</biblScope></bibl><seg type="original" xml:lang="de">f. ð. <hi rend="italic">doppelt, einmal unterstrichen</hi></seg><seg type="translation" xml:lang="en" source="#claude">f. ð. twice, once underlined</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ICn_16a.lnote.oe.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">296</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">so</hi></seg><seg type="translation" xml:lang="en" source="#claude">sic</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ICn_16a.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">200</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Vorabende betonen Inst Cons.—Heiligen-Ehrung befahl Cn 1020, 19</seg><seg type="translation" xml:lang="en" source="#claude">Inst Cons stress the eves.—Veneration of saints was ordered by Cn 1020, 19</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ICn_16a.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">200</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fæsten</hi> bevorzugt, <hi rend="italic">we beodað</hi> ergänzend, Napier <hi rend="italic">Über Wulfstan</hi> 70</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">fæsten</hi> preferred, <hi rend="italic">we beodað</hi> supplied, Napier <hi rend="italic">Über Wulfstan</hi> 70</seg></note>
+        <note type="editorNote" subtype="endnote" xml:id="ICn_16a.robnote.n.1" n="1" source="#robertson"><bibl><biblScope unit="page">350</biblScope></bibl><seg type="original" xml:lang="en">Cf. VI Atr. 22, 2 f.</seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="ICn_16a.robnote.fn.9" n="9" source="#robertson"><bibl><biblScope unit="page">166</biblScope></bibl><label>fæstan</label><seg type="original" xml:lang="en"><hi rend="italic">fæste man</hi> G; <hi rend="italic">fæsten</hi> A, Ld.</seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="ICn_16a.robnote.fn.10" n="10" source="#robertson"><bibl><biblScope unit="page">166</biblScope></bibl><label>Jacobi</label><seg type="original" xml:lang="en"><hi rend="italic">b. to P. et J. mæssan w.</hi> G.</seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="ICn_16a.robnote.fn.11" n="11" source="#robertson"><bibl><biblScope unit="page">166</biblScope></bibl><label>ælce[s</label><seg type="original" xml:lang="en">G, A; <hi rend="italic">ælce</hi> B.</seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="ICn_16a.robnote.fn.12" n="12" source="#robertson"><bibl><biblScope unit="page">166</biblScope></bibl><label>fæston</label><seg type="original" xml:lang="en"><hi rend="italic">-en</hi> G, A, Ld.</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>forg[ie]fnes</title>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">forg-ie-fnes</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, <biblScope unit="volume">2.1</biblScope> (Wörterbuch), <biblScope unit="page">76</biblScope>
+            <ptr type="facsimile" target="https://archive.org/details/diegesetzederang02liebuoft/page/76/mode/2up"/>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <revisionDesc>
+      <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
+      <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry xml:lang="ang">
+        <form type="lemma">
+          <orth>forg[ie]fnes</orth>
+        </form>
+        <dictScrap type="liebermann"><hi rend="bold">forg[ie]fnes</hi> <hi rend="italic">Vergebung, begnadigendes Erlassen von Strafe;</hi> ~gif~ <ref type="lawCode" target="law:IIIEg">III Eg</ref> 1,2 (y <ref type="lawCode" target="law:MsA">A</ref>). <ref type="lawCode" target="law:IVEg">IV</ref> 1,5 (y <ref type="lawCode" target="law:C">C</ref>); þæs [<hi rend="italic"><ref type="abbreviation" target="gram:Genitiv"><abbr>gn</abbr></ref></hi>] ‘<hi rend="italic"><ref type="abbreviation" target="gram:dafur"><abbr>dafür</abbr></ref></hi>’ 9; y <ref type="lawCode" target="law:C">C</ref>; ~gefnise <ref type="lawCode" target="law:IudDeiIV">Iud Dei IV</ref> 5, indulgentia <hi rend="italic"><ref type="abbreviation" target="gram:glossirend"><abbr>glossirend</abbr></ref></hi> | <hi rend="italic"><ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>:</hi> ~gyfnysse <hi rend="italic">Verzeihung</hi> <ref type="lawCode" target="law:IVEg">IV Eg</ref> 1,1; -fenesse <ref type="lawCode" target="law:C">C</ref>; sinna [<hi rend="italic"><ref type="abbreviation" target="gram:Genitiv"><abbr>gn</abbr></ref></hi>] ~gyfenesse <ref type="lawCode" target="law:AsAlm">As Alm</ref> Pro</dictScrap>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/11475">for-gifnes</ref></xr>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/45697">for-gifnes (Supplement)</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIIEg_1-2">III Eg 1,2</ref></xr>
+        <xr type="lawCode"><ref target="clause:IVEg_1-5">IV Eg 1,5</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiIV_5">Iud Dei IV 5</ref></xr>
+        <xr type="lawCode"><ref target="clause:IVEg_1-1">IV Eg 1,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:AsAlm_Prol">As Alm Pro</ref></xr>
+      </entry>
+    </body>
+  </text>
+</TEI>

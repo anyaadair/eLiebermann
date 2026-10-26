@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Duns_8-4">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Duns 8.4</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#unattributed">Translator not recorded</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">Duns_8-4</idno>
+        <idno type="citation">Duns 8.4</idno>
+        <idno type="lawCode">Duns</idno>
+        <idno type="lawCodeAnchor">Duns</idno>
+        <idno type="clause">8.4</idno>
+        <idno type="citationKey">Duns 8.4</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Dunsæte Ordinance</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">378</biblScope></bibl>
+          <bibl xml:id="unattributed" type="translation">Translation from the original OE Laws Database spreadsheet; the translator is not recorded</bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-b" rend="bold"><abbr>B</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383</note></witness>
+          <witness xml:id="wit-q"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 374">c.926–c.1000, c.935?</date><date source="#wormald-mel" n="MEL pp. 381–2">c.930</date><placeName source="#wormald-mel" n="MEL pp. 381–2">?Archenfield, on the Wye</placeName><note type="promulgation">c.926–c.1000, c.935? (Liebermann, I p. 374); c.930 (Wormald, MEL pp. 381–2); ?Archenfield, on the Wye (Wormald, MEL pp. 381–2)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Administrative directives</term><term>Boundaries</term><term>Legal procedure</term></keywords>
+        <keywords n="people"><term>Englishmen</term><term>Welshmen</term><term>All people</term></keywords>
+        <keywords n="locations"><term>Rivers</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 1939 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 378.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="8.4">
+        <head><ref type="lawCode" target="law:Duns">Duns</ref> 8.4</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="8.4" corresp="#wit-b"><pb n="378" ed="#liebermann"/>Gelice ðam<ptr type="liebermannNote" n="6" target="#Duns_8-4.lnote.oe.6"/> Ænglisc sceal Wyliscan riht<ptr type="liebermannNote" n="17" target="#Duns_8-4.lnote.oe.17"/> wyrcean.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="8.4" corresp="#wit-q"><pb n="379" ed="#liebermann"/>Similiter debet Anglico Waliscus rectum facere.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="379" ed="#liebermann"/>Diesem gleich soll der<ptr type="liebermannNote" n="1" target="#Duns_8-4.lnote.de.1"/> Engländer dem Wälschen Recht erfüllen.</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">In the same way the Englishman shall do justice to the Welshman.</ab>
+        <ab type="translation" xml:lang="en" source="#unattributed" corresp="#wit-b">Similarly, the Englishman should work to implement the rights of the Welshman.</ab>
+        <note type="editorial">U: translator unrecorded: check; The Quadripartitus reverses this: ‘Similiter debet Anglico Waliscus rectum facere’ (the Welshman to the Englishman).</note>
+        <note type="liebermannNote" subtype="textual" xml:id="Duns_8-4.lnote.oe.6" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">378</biblScope></bibl><seg type="original" xml:lang="de">ðæm <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">ðæm Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Duns_8-4.lnote.oe.17" n="17" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">378</biblScope></bibl><seg type="original" xml:lang="de">-te <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">-te Ld</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Duns_8-4.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">219</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">Q (danach Schmid) dreht das Subjekt unrichtig um; denn das Gesetz 8, 3 meinte mit ‘jenseits’ einen Walliser Beklagten.—Der Artikel fehlt archaisch</seg><seg type="translation" xml:lang="en" source="#claude">Q (and Schmid after him) wrongly reverses the subject; for the law 8, 3 meant by ‘across the river’ a Welsh defendant.—The article is absent, an archaism</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

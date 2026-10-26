@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="VIIIAtr_41">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>VIII Atr 41</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Cross-references to other clauses</resp><name ref="#kennedy">Kennedy</name></respStmt>
+        <respStmt><resp>Cross-references to other clauses</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Robertson’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">VIIIAtr_41</idno>
+        <idno type="citation">VIII Atr 41</idno>
+        <idno type="lawCode">VIII Atr</idno>
+        <idno type="lawCodeAnchor">VIIIAtr</idno>
+        <idno type="clause">41</idno>
+        <idno type="citationKey">VIIIAtr 41</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>VIII Æthelred</title> <note type="reign">Æthelred II, r. 978–1016</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">268</biblScope></bibl>
+          <bibl xml:id="robertson" type="edition">A. J. Robertson, <title>The Laws of the Kings of England from Edmund to Henry I</title> (Cambridge: Cambridge University Press, 1925), p. <biblScope unit="page">128</biblScope></bibl>
+          <bibl xml:id="rabin-doml" type="edition">Andrew Rabin, ed. and trans., <title>Old English Legal Writings: Wulfstan</title>, Dumbarton Oaks Medieval Library (Cambridge, MA: Harvard University Press, 2020), p. <biblScope unit="page">202</biblScope></bibl>
+          <bibl xml:id="whitelock" type="translation">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007), p. <biblScope unit="page">457</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="kennedy" type="study">A. G. Kennedy, ‘Cnut’s Law Code of 1018’, <title>Anglo-Saxon England</title> 11 (1983), 57–81</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-d" rend="bold"><abbr>D</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 201</note></witness>
+          <witness xml:id="wit-g-a-part"><abbr>G(A) (part)</abbr> <note type="manuscript">London, British Library, Cotton Nero A.i</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 263">1014, after Feb.</date><date source="#whitelock #wormald-mel" n="EHD p. 454|MEL p. 336">1014</date><note type="promulgation">1014, after Feb. (Liebermann, I p. 263); 1014 (Whitelock, EHD p. 454; Wormald, MEL p. 336)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Excommunication</term><term>Apostasy</term></keywords>
+        <keywords n="people"><term>Priest</term><term>Monk</term><term>Ecclesiastical orders</term><term>Rank</term><term>Apostate</term><term>All people</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 1473 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 268.</change>
+      <change when="2026-10" type="checked">Liebermann’s text added from <title>Die Gesetze der Angelsachsen</title> I, p. 268.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="41">
+        <head><ref type="lawCode" target="law:VIIIAtr">VIII Atr</ref> 41</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="41" corresp="#wit-d"><pb n="268" ed="#liebermann"/>Gif munuc oððe mæssepr<hi rend="italic">eost</hi> wiðersaca wurðe mid ealle, he sy amansumod æfre, buton he þe rædlicor gebuge to his þearfe.</ab>
+        <ab type="editionText" xml:lang="ang" source="#robertson" n="41" corresp="#wit-d"><pb n="128" ed="#robertson"/>Gif munuc oððe mæssepreost wiðersaca wurðe mid ealle, he sy amansumod æfre, buton he þe rædlicor gebuge to his þearfe.</ab>
+        <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-d"><pb n="202" ed="#rabin-doml"/>Gif munuc oððe mæssepreost wiðersaca wurðe mid ealle, he sy amansumod æfre, buton he þe rædlicor gebuge to his þearfe.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="268" ed="#liebermann"/>Wenn ein Mönch oder ein Priester gänzlich ein Abtrünniger<ptr type="liebermannNote" n="1" target="#VIIIAtr_41.lnote.de.1"/> wird, so werde er für immer excommunicirt, ausser wenn er um so bewusster sich dem, was ihm noth thut, unterwirft.</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">If a monk or a priest becomes a complete apostate, let him be excommunicated for ever, unless he submits all the more readily to what he needs to do.</ab>
+        <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-d"><ptr type="editorNote" n="1" target="#VIIIAtr_41.robnote.n.1"/><pb n="129" ed="#robertson"/>If a monk or a priest becomes an utter apostate, he shall be excommunicated for ever, unless he is wise enough to return to his duty.</ab>
+        <ab type="translation" xml:lang="en" source="#whitelock" corresp="#wit-d"><pb n="457" ed="#whitelock"/>And if a monk or a mass-priest becomes altogether an apostate, he is ever to be excommunicated, unless he more sensibly return to his duty.</ab>
+        <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-d"><pb n="203" ed="#rabin-doml"/>If a monk or a priest turns entirely to apostasy, he is to be excommunicated forever, unless he resumes his duty with greater prudence.</ab>
+        <note type="comparedBy" source="#liebermann"><ref target="clause:IICn_4-1">II Cn 4.1</ref></note>
+        <note type="comparedBy" source="#kennedy" n="59"><ref target="clause:Cn-1018_part-016">Cn 1018 8</ref></note>
+        <note type="comparedBy" source="#wormald-mel" n="357"><ref target="clause:IICn_4-1">II Cn 4.1</ref></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="VIIIAtr_41.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">185</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Vielleicht benutzt durch II Cn 4, 1, der aber Abtrünnige (<hi rend="italic">s. d. Gl</hi>; Exkommunikation 11) austreibt.—<hi rend="italic">Vgl. Wb wiðersaca</hi>, wofür auch Toller 1252 die Bed. <hi rend="italic">apostata</hi> belegt. Vermutlich sind nur die bewusst und fortgesetzt die Pflicht der Weihe bzw. Regel Ablehnenden gemeint, nicht Ketzer; <hi rend="italic">s. d. Gl</hi>; Geistliche 22</seg><seg type="translation" xml:lang="en" source="#claude">Perhaps used by II Cn 4, 1, which, however, expels apostates (<hi rend="italic">see</hi> that word in <hi rend="italic">Gl</hi>; Exkommunikation 11).—<hi rend="italic">Cf. Wb wiðersaca</hi>, for which Toller 1252 also attests the meaning <hi rend="italic">apostata</hi>. Presumably only those are meant who knowingly and persistently reject the duty of their orders or of their rule respectively, not heretics; <hi rend="italic">see</hi> that word in <hi rend="italic">Gl</hi>; Geistliche 22</seg></note>
+        <note type="editorNote" subtype="endnote" xml:id="VIIIAtr_41.robnote.n.1" n="1" source="#robertson"><bibl><biblScope unit="page">341</biblScope></bibl><seg type="original" xml:lang="en">Cf. II Cn. 4, 1.</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

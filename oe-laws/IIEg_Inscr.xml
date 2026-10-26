@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IIEg_Inscr">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>II Eg Inscr.</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Cross-references to other clauses</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Robertson’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">IIEg_Inscr</idno>
+        <idno type="citation">II Eg Inscr.</idno>
+        <idno type="lawCode">II Eg</idno>
+        <idno type="lawCodeAnchor">IIEg</idno>
+        <idno type="clause">Inscr.</idno>
+        <idno type="citationKey">IIEg inscr.</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>II Edgar (Andover)</title> <note type="reign">Edgar, r. 957/9–975</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">194</biblScope></bibl>
+          <bibl xml:id="robertson" type="edition">A. J. Robertson, <title>The Laws of the Kings of England from Edmund to Henry I</title> (Cambridge: Cambridge University Press, 1925), p. <biblScope unit="page">20</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="whitelock" type="study">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-d" rend="bold"><abbr>D</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 201</note></witness>
+          <witness xml:id="wit-g-a"><abbr>G(A)</abbr> <note type="manuscript">London, British Library, Cotton Nero A.i</note></witness>
+          <witness xml:id="wit-a"><abbr>A</abbr> <note type="manuscript">London, British Library, Harley 55</note></witness>
+          <witness xml:id="wit-q"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note></witness>
+          <witness xml:id="wit-ld"><abbr>Ld</abbr> <note type="manuscript">William Lambarde, Archaionomia (London, 1568) – printed from manuscripts now lost</note></witness>
+          <witness xml:id="wit-so"><abbr>So</abbr> <note type="manuscript">William Somner's transcript of Cotton Otho B.xi (made before the fire)</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 194">959–c.962</date><date source="#robertson">after IV Eg</date><date source="#whitelock" n="EHD p. 434">959–63</date><placeName>Andover</placeName><note type="promulgation">959–c.962 (Liebermann, I p. 194); after IV Eg (Robertson); 959–63 (Whitelock, EHD p. 434); Andover</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Written laws/decisions</term></keywords>
+        <keywords n="people"><term>King</term><term>Edward</term><term>All people</term><term>Named individuals</term><term>Secular classes</term><term>Rank</term><term>Nobles</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 933 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 194.</change>
+      <change when="2026-10" type="checked">Liebermann’s German translation corrected against Gesetze I, p. 194: “(Hier ist König Eadgars Verordnung. D)” → “(Hier ist König Eadgars Verordnung. D) (expanded letters in italics: D)”.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="Inscr.">
+        <head><ref type="lawCode" target="law:IIEg">II Eg</ref> Inscr.</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="Inscr." corresp="#wit-d"><pb n="194" ed="#liebermann"/>Her<ptr type="liebermannNote" n="1" target="#IIEg_Inscr.lnote.oe.1"/> is Eadgares cynincges gerædnes.</ab>
+        <ab type="editionText" xml:lang="ang" source="#robertson" corresp="#wit-d"><pb n="20" ed="#robertson"/>Her is Eadgares cynincges gerædnes<ptr type="editorNote" n="1" target="#IIEg_Inscr.robnote.fn.1"/>.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><ptr type="liebermannNote" n="1" target="#IIEg_Inscr.lnote.de.1"/><pb n="195" ed="#liebermann"/>(Hier<ptr type="liebermannNote" n="2" target="#IIEg_Inscr.lnote.de.2"/> ist König Eadgars Verordnung. <hi rend="italic">D</hi>)</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">(Here is King Edgar's ordinance. D)</ab>
+        <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-d"><pb n="21" ed="#robertson"/>Here is King Edgar's ordinance.</ab>
+        <note type="comparedBy" source="#wormald-mel" n="340"><ref target="clause:VIIIAtr_7">VIII Atr 7–8</ref></note>
+        <note type="comparedBy" source="#wormald-mel" n="355"><ref target="clause:Cn-1018_part-062">Cn 1018 25–27</ref></note>
+        <note type="editorial">Heading only in D (in red; added by the compiler, not in the archetype). Base text K = G (Cotton Nero A I f. 41, c. 1070); N = A (Harley 55, c. 1050); D (CCCC 201 p. 46, c. 1060) is also given here. II Eg is the ecclesiastical half, III Eg the secular half, of the Andover code (959–c. 962).; F: corrected against Liebermann, Gesetze I (date in the running heads), October 2026 (was “959–c.962; after IV Edg (Robertson); Andover; 959–63 (Whitelock)”, now “959–c.962 (Liebermann); after IV Eg (Robertson); 959–63 (Whitelock); Andover”); F: corrected against Liebermann, Gesetze I (date at the head of the text); Wormald, Making of English Law I; Whitelock, English Historical Documents I, October 2026 (was “959–c.962 (Liebermann); after IV Eg (Robertson); 959–63 (Whitelock); Andover”, now “959–c.962 (Liebermann, I p. 194); after IV Eg (Robertson); 959–63 (Whitelock, EHD p. 434); Andover”); BQ: page of each of Liebermann’s texts and of his German, checked against Liebermann, Gesetze I (our double-read transcription), October 2026 (e.g. was “(empty)”, now “D 194; German 195”; 18 rows of II Eg); V: page of the modern editor’s text / translation, checked against Robertson (translation on the facing page), October 2026 (e.g. was “20”, now “20 / 21”; 18 rows of II Eg)</note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIEg_Inscr.lnote.oe.star" n="*" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">194</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Hs. Cambridge Corpus</hi> 201, <hi rend="italic">p.</hi> 46, <hi rend="italic">um</hi> 1060. <hi rend="italic">Vorhergeht Northumbr. Priestergesetz</hi> (<hi rend="italic">Schmids App.</hi> II)</seg><seg type="translation" xml:lang="en" source="#claude">MS Cambridge Corpus 201, p. 46, c. 1060. Preceded by the Northumbrian Priests’ Law (Schmid’s App. II)</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIEg_Inscr.lnote.oe.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">194</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Überschrift roth</hi> [<hi rend="italic">vom Sammler, nicht archetyp</hi>].</seg><seg type="translation" xml:lang="en" source="#claude">Heading in red [by the compiler, not archetypal].</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="IIEg_Inscr.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">134</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de">Die Überschrift ist nicht archetyp; <hi rend="italic">s</hi>. Einl. 5</seg><seg type="translation" xml:lang="en" source="#claude">The heading is not archetypal; <hi rend="italic">see</hi> Introduction 5</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="IIEg_Inscr.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">134</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">her</hi> ‘im folgenden Text’; <hi rend="italic">s. Wb</hi></seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">her</hi> ‘in the following text’; <hi rend="italic">see Wb</hi></seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="IIEg_Inscr.robnote.fn.1" n="1" source="#robertson"><bibl><biblScope unit="page">20</biblScope></bibl><label>gerædnes</label><seg type="original" xml:lang="en">Om. G, A, Ld.</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

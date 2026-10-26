@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="VIIAtr_2-3">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>VII Atr 2.3</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Robertson’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">VIIAtr_2-3</idno>
+        <idno type="citation">VII Atr 2.3</idno>
+        <idno type="lawCode">VII Atr</idno>
+        <idno type="lawCodeAnchor">VIIAtr</idno>
+        <idno type="clause">2.3</idno>
+        <idno type="citationKey">VIIAtr 2.3</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>VII Æthelred (Bath)</title> <note type="reign">Æthelred II, r. 978–1016</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">260</biblScope></bibl>
+          <bibl xml:id="robertson" type="edition">A. J. Robertson, <title>The Laws of the Kings of England from Edmund to Henry I</title> (Cambridge: Cambridge University Press, 1925), p. <biblScope unit="page">110</biblScope></bibl>
+          <bibl xml:id="rabin-doml" type="edition">Andrew Rabin, ed. and trans., <title>Old English Legal Writings: Wulfstan</title>, Dumbarton Oaks Medieval Library (Cambridge, MA: Harvard University Press, 2020), p. <biblScope unit="page">182</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="whitelock" type="study">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007)</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-q"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note></witness>
+          <witness xml:id="wit-t"><abbr>T</abbr> <note type="manuscript">London, British Library, Cotton MS Titus A.xxvii, fol. 145r</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 260">992–1011</date><date source="#robertson">no evidence of exact date</date><date source="#whitelock" n="EHD p. 452">probably 1009</date><date source="#wormald-mel" n="MEL p. 331">1009</date><placeName>Bath</placeName><note type="promulgation">992–1011 (Liebermann, I p. 260); no evidence of exact date (Robertson); probably 1009 (Whitelock, EHD p. 452); 1009 (Wormald, MEL p. 331); Bath</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Slavery</term><term>Fasts</term><term>Ritual</term><term>Ecclesiastical directives</term></keywords>
+        <keywords n="people"><term>Slave</term><term>All people</term><term>Secular classes</term><term>Rank</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 1382 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text added from <title>Die Gesetze der Angelsachsen</title> I, p. 260.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="2.3">
+        <head><ref type="lawCode" target="law:VIIAtr">VII Atr</ref> 2.3</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="2.3" corresp="#wit-q"><pb n="260" ed="#liebermann"/>Et sit omnis seruus liber ab opere illis tribus diebus, quo melius ieiunare possit, et operetur sibimet quod uult.</ab>
+        <ab type="editionText" xml:lang="la" source="#robertson" n="2.3" corresp="#wit-q"><pb n="110" ed="#robertson"/>Et sit omnis servus liber ab opere illis tribus diebus, quo melius ieiunare possit, et operetur sibimet quod vult.</ab>
+        <ab type="editionText" xml:lang="la" source="#rabin-doml" corresp="#wit-t"><pb n="182" ed="#rabin-doml"/>Et sit omnis servus liber ab opere illis tribus diebus, quo melius ieiunare possit, et operetur sibimet quod vult.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="260" ed="#liebermann"/>Und jeder Sklav<ptr type="liebermannNote" n="1" target="#VIIAtr_2-3.lnote.de.1"/> sei frei von Arbeit an jenen drei Tagen, damit er besser fasten<ptr type="liebermannNote" n="2" target="#VIIAtr_2-3.lnote.de.2"/> könne, und arbeite<ptr type="liebermannNote" n="3" target="#VIIAtr_2-3.lnote.de.3"/> für sich, was er will.</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">And let every slave be free from work on those three days, so that he can fast better, and let him work for himself at what he wishes.</ab>
+        <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-q"><ptr type="editorNote" n="1" target="#VIIAtr_2-3.robnote.n.1"/><pb n="111" ed="#robertson"/>And all slaves shall be exempt from work on those three days, so that they can fast the better and may make<ptr type="editorNote" n="2" target="#VIIAtr_2-3.robnote.n.2"/> what they want for themselves.</ab>
+        <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-t"><pb n="183" ed="#rabin-doml"/>And all slaves are to be freed from work on those three days so that they will be able to fast better and make what they wish for themselves.</ab>
+        <note type="comparison" source="#liebermann" n="260"><ref target="clause:VIIaAtr_5-1">VIIa Atr 5.1</ref></note>
+        <note type="comparisonPrinted" source="#liebermann">ebd. 5, 1</note>
+        <note type="comparedBy" source="#liebermann"><ref target="clause:VIIaAtr_5-1">VIIa Atr 5.1</ref></note>
+        <note type="editorial">Liebermann compares VIIa Atr 5.1.; AZ: added from Rabin p. 182, October 2026 (Rabin’s note to the translation)</note>
+        <note type="translator" source="#rabin-doml">Feast of Saint Michael: September 29.</note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="VIIAtr_2-3.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">180</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">S. Gl</hi> unfrei 9. 22f.—<hi rend="italic">þeowe men</hi> VIIa; <hi rend="italic">þeowetlincgas</hi> Hom. 171. 173</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">See Gl</hi> unfrei 9. 22f.—<hi rend="italic">þeowe men</hi> VIIa; <hi rend="italic">þeowetlincgas</hi> Hom. 171. 173</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="VIIAtr_2-3.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">180</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de">‘und zwecks Kirchenbesuches’ VIIa; Hom. 171, aber nicht 173</seg><seg type="translation" xml:lang="en" source="#claude">‘and for the purpose of going to church’ VIIa; Hom. 171, but not 173</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="VIIAtr_2-3.lnote.de.3" n="3" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">180</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">wyrcan heom sylfum þæt þæt hy willan</hi>; Hom. 171. 173. Arbeitsverdienst an Feiertagen ermöglicht Unfreien, Almosen zu geben; Af 43</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">wyrcan heom sylfum þæt þæt hy willan</hi>; Hom. 171. 173. Earnings from work on holy days enable the unfree to give alms; Af 43</seg></note>
+        <note type="editorNote" subtype="endnote" xml:id="VIIAtr_2-3.robnote.n.1" n="1" source="#robertson"><bibl><biblScope unit="page">337</biblScope></bibl><seg type="original" xml:lang="en">Cf. Af. 43; Wulfstan, pp. 171, 173, 158 l. 16, note.</seg></note>
+        <note type="editorNote" subtype="endnote" xml:id="VIIAtr_2-3.robnote.n.2" n="2" source="#robertson"><bibl><biblScope unit="page">337</biblScope></bibl><seg type="original" xml:lang="en">This reason for exempting slaves from work is not given in the A.S. version.</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IIAtr_8-2">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>II Atr 8.2</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Robertson’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">IIAtr_8-2</idno>
+        <idno type="citation">II Atr 8.2</idno>
+        <idno type="lawCode">II Atr</idno>
+        <idno type="lawCodeAnchor">IIAtr</idno>
+        <idno type="clause">8.2</idno>
+        <idno type="citationKey">IIAtr 8.2</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>II Æthelred (Treaty with Olaf)</title> <note type="reign">Æthelred II, r. 978–1016</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">224</biblScope></bibl>
+          <bibl xml:id="robertson" type="edition">A. J. Robertson, <title>The Laws of the Kings of England from Edmund to Henry I</title> (Cambridge: Cambridge University Press, 1925), p. <biblScope unit="page">60</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="whitelock" type="study">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007)</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-b" rend="bold"><abbr>B</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383</note></witness>
+          <witness xml:id="wit-q"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note></witness>
+          <witness xml:id="wit-ld"><abbr>Ld</abbr> <note type="manuscript">William Lambarde, Archaionomia (London, 1568) – printed from manuscripts now lost</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 220">c.1000</date><date source="#whitelock" n="EHD p. 441">991 or 994</date><date source="#wormald-mel" n="MEL p. 321">mid-990s</date><note type="promulgation">c.1000 (Liebermann, I p. 220); 991 or 994 (Whitelock, EHD p. 441); mid-990s (Wormald, MEL p. 321)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Attachment</term><term>Legal procedure</term><term>Oath and pledge</term><term>Commerce</term></keywords>
+        <keywords n="people"><term>Travellers</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 1063 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked and corrected against <title>Die Gesetze der Angelsachsen</title> I, p. 224.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="8.2">
+        <head><ref type="lawCode" target="law:IIAtr">II Atr</ref> 8.2</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="8.2" corresp="#wit-b"><pb n="224" ed="#liebermann"/>Gif he tofeóht<ptr type="liebermannNote" n="26" target="#IIAtr_8-2.lnote.oe.26"/>, ðonne clænsnoð he ðene<ptr type="liebermannNote" n="27" target="#IIAtr_8-2.lnote.oe.27"/>, ðe hit ær æt befangen<ptr type="liebermannNote" n="28" target="#IIAtr_8-2.lnote.oe.28"/> wæs. Cenne he syððan, hwanan hit him<ptr type="liebermannNote" n="13" target="#IIAtr_8-2.lnote.oe.13"/> come.<ptr type="liebermannNote" n="29" target="#IIAtr_8-2.lnote.oe.29"/></ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="8.2" corresp="#wit-q"><pb n="224" ed="#liebermann"/>Si recipiat, tunc adquietat eum, cum quo fuerat deprehensum. Appellet deinceps, unde uenerit<ptr type="liebermannNote" n="15" target="#IIAtr_8-2.lnote.oe.15"/> ei.</ab>
+        <ab type="editionText" xml:lang="ang" source="#robertson" n="8.2" corresp="#wit-b"><pb n="60" ed="#robertson"/>Gif he tofeóht, ðonne clænsnoð he ðene ðe hit ær æt befangen wæs. Cenne he syððan hwanan hit him<ptr type="editorNote" n="4" target="#IIAtr_8-2.robnote.fn.4"/> come.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="225" ed="#liebermann"/>Wenn dieser [Bezogene den Schub] annimmt<ptr type="liebermannNote" n="1" target="#IIAtr_8-2.lnote.de.1"/>, dann reinigt er [hiermit] den [Besitzer<ptr type="liebermannNote" n="2" target="#IIAtr_8-2.lnote.de.2"/>], bei welchem es im Anefang vorhin gefasst worden war. Jener [Bezogene] erkläre sodann, woher<ptr type="liebermannNote" n="3" target="#IIAtr_8-2.lnote.de.3"/> es an ihn gekommen sei.</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">If that [person vouched] accepts [the vouching], then he [thereby] clears the [possessor] from whom it had previously been attached. Let that [person vouched] then declare where it came to him from.</ab>
+        <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-b"><pb n="61" ed="#robertson"/>If the latter accepts the charge, he [thereby] clears the man in whose possession it has been attached. He himself shall afterwards declare how it came to him.</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="IIAtr_8-2.lnote.oe.15" n="15" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">224</biblScope></bibl><seg type="original" xml:lang="de">uenit <hi rend="italic">R</hi></seg><seg type="translation" xml:lang="en" source="#claude">uenit R</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIAtr_8-2.lnote.oe.26" n="26" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">224</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">so BLd;</hi> -fehð <hi rend="italic">unten</hi> 9, 4; <hi rend="italic">aber vgl.</hi> Sievers <hi rend="italic">Gram.</hi> 374 <hi rend="italic">Anm.</hi></seg><seg type="translation" xml:lang="en" source="#claude">thus BLd; -fehð below 9, 4; but cf. Sievers <hi rend="italic">Gram.</hi> 374 n.</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIAtr_8-2.lnote.oe.27" n="27" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">224</biblScope></bibl><seg type="original" xml:lang="de">ðone <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">ðone Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIAtr_8-2.lnote.oe.28" n="28" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">224</biblScope></bibl><seg type="original" xml:lang="de">befangen <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">befangen Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIAtr_8-2.lnote.oe.13" n="13" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">224</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIAtr_8-2.lnote.oe.29" n="29" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">224</biblScope></bibl><seg type="original" xml:lang="de">cume <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">cume Ld</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="IIAtr_8-2.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">155</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Ähnliche Worte II As 24. <hi rend="italic">Vgl. ebd</hi>. 19</seg><seg type="translation" xml:lang="en" source="#claude">Similar words II As 24. <hi rend="italic">Cf. ibid</hi>. 19</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="IIAtr_8-2.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">155</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. u</hi>. 9, 2⁴. Es ist selbstverständlich, dass der beklagte, aber hiermit gereinigte Besitzer, falls der Anefang obsiegt, sein Kaufgeld statt des Gegenstandes vom Veräusserer zurückerhält</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf. below</hi> 9, 2⁴. It goes without saying that the possessor who was accused but is hereby cleared recovers from the seller, if the attachment succeeds, his purchase money instead of the object</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="IIAtr_8-2.lnote.de.3" n="3" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">155</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Wie <hi rend="italic">o</hi>. 8²</seg><seg type="translation" xml:lang="en" source="#claude">As <hi rend="italic">above</hi> 8²</seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="IIAtr_8-2.robnote.fn.4" n="4" source="#robertson"><bibl><biblScope unit="page">60</biblScope></bibl><label>sylle</label><seg type="original" xml:lang="en">Om. Ld.</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

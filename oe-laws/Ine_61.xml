@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Ine_61">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Ine 61</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Attenborough’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Whitelock’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">Ine_61</idno>
+        <idno type="citation">Ine 61</idno>
+        <idno type="lawCode">Ine</idno>
+        <idno type="lawCodeAnchor">Ine</idno>
+        <idno type="clause">61</idno>
+        <idno type="citationKey">Ine 61</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Ine’s Laws (in Alfred’s Domboc)</title> <note type="reign">Ine, r. 688–726</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">116</biblScope></bibl>
+          <bibl xml:id="jurasinski-and-oliver" type="edition">Stefan Jurasinski and Lisi Oliver, <title>The Laws of Alfred: The Domboc and the Making of Anglo-Saxon Law</title> (Cambridge: Cambridge University Press, 2021), p. <biblScope unit="page">422</biblScope></bibl>
+          <bibl xml:id="attenborough" type="edition">F. L. Attenborough, <title>The Laws of the Earliest English Kings</title> (Cambridge: Cambridge University Press, 1922), p. <biblScope unit="page">56</biblScope></bibl>
+          <bibl xml:id="whitelock" type="translation">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007), p. <biblScope unit="page">406</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-e" rend="bold"><abbr>E</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 173 (Parker Chronicle and Laws)</note></witness>
+          <witness xml:id="wit-h"><abbr>H</abbr> <note type="manuscript">Strood, Medway Archive and Local Studies Centre, MS DRc/R1 (Textus Roffensis; formerly Rochester, Cathedral Library, A.3.5), c. 1120–25</note></witness>
+          <witness xml:id="wit-b-no-prol"><abbr>B (no Prol.)</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383</note></witness>
+          <witness xml:id="wit-g-prol-only"><abbr>G (Prol. only)</abbr> <note type="manuscript">London, British Library, Cotton Nero A.i</note></witness>
+          <witness xml:id="wit-q"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note></witness>
+          <witness xml:id="wit-ld"><abbr>Ld</abbr> <note type="manuscript">William Lambarde, Archaionomia (London, 1568) – printed from manuscripts now lost</note></witness>
+          <witness xml:id="wit-bu"><abbr>Bu</abbr></witness>
+          <witness xml:id="wit-ot-frags"><abbr>Ot (frags.)</abbr> <note type="manuscript">London, British Library, Cotton Otho B.xi (damaged by fire, 1731)</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 88">688–95</date><date source="#whitelock" n="EHD p. 399">688–94</date><date source="#wormald-mel" n="MEL p. 103">688×92</date><note type="promulgation">688–95 (Liebermann, I p. 88); 688–94 (Whitelock, EHD p. 399); 688×92 (Wormald, MEL p. 103)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Taxes</term><term>Church dues</term></keywords>
+        <keywords n="people"><term>Householder</term></keywords>
+        <keywords n="locations"><term>Primary residence</term><term>Buildings</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 640 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked and corrected against <title>Die Gesetze der Angelsachsen</title> I, p. 116.</change>
+      <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 116: “CV. Ciricsceat mon sceal agifan to þam healme ⁊ to þam heorðe, þe se mon on bið to middum wintra.” → “CV. Ciricsceat mon sceal agifan to þam healme ⁊ to þam heorðe, þe se mon on bið to middum wintra. (expanded letters in italics: m)”.</change>
+      <change when="2026-10" type="checked">Liebermann’s text of MS B added from Gesetze I, p. 116.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="61">
+        <head><ref type="lawCode" target="law:Ine">Ine</ref> 61</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="61" corresp="#wit-e"><pb n="116" ed="#liebermann"/>CV. Ciricsceat<ptr type="liebermannNote" n="25" target="#Ine_61.lnote.oe.25"/> mon sceal agifan<ptr type="liebermannNote" n="13" target="#Ine_61.lnote.oe.13"/> to þa<hi rend="italic">m<ptr type="liebermannNote" n="26" target="#Ine_61.lnote.oe.26"/></hi> healme ⁊ to þam heorðe, þe se mon<ptr type="liebermannNote" n="27" target="#Ine_61.lnote.oe.27"/> on bið<ptr type="liebermannNote" n="2" target="#Ine_61.lnote.oe.2-2"/> to middum<ptr type="liebermannNote" n="28" target="#Ine_61.lnote.oe.28"/> wintra.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="61" corresp="#wit-h"><pb n="116" ed="#liebermann"/>CV. Cyricsceat mon<ptr type="liebermannNote" n="7" target="#Ine_61.lnote.oe.7"/> sceal agyfan<ptr type="liebermannNote" n="2" target="#Ine_61.lnote.oe.2"/> to ðam healme ⁊ to ðam heorðe<ptr type="liebermannNote" n="8" target="#Ine_61.lnote.oe.8"/>, þe se mon<ptr type="liebermannNote" n="7" target="#Ine_61.lnote.oe.7"/> on bið to middewintra.<ptr type="liebermannNote" n="9" target="#Ine_61.lnote.oe.9"/></ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="61" corresp="#wit-b-no-prol"><pb n="116" ed="#liebermann"/>Be ciricsceatte. Cyricsceat man sceal<ptr type="liebermannNote" n="5" target="#Ine_61.lnote.oe.5"/> agyfan to þa<hi rend="italic">m</hi> halme<ptr type="liebermannNote" n="6" target="#Ine_61.lnote.oe.6"/> ⁊ to ðam heorðe, ðe se man on bið to middan wintra.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="61" corresp="#wit-q"><pb n="117" ed="#liebermann"/>Cyricsceattum<ptr type="liebermannNote" n="18" target="#Ine_61.lnote.oe.18"/> debet homo<ptr type="liebermannNote" n="19" target="#Ine_61.lnote.oe.19"/> reddere a culmine et mansione, ubi residens erit in natali.</ab>
+        <ab type="editionText" xml:lang="ang" source="#attenborough" corresp="#wit-e"><pb n="56" ed="#attenborough"/>[Be ciricsceatte.] Ciricsceat mon sceal agifan to þam healme ⁊ to þam heorðe, þe se mon on bið to middum wintra.</ab>
+        <ab type="editionText" xml:lang="ang" source="#jurasinski-and-oliver" n="65" corresp="#wit-e"><pb n="422" ed="#jurasinski-and-oliver"/>{CV} Ciricsceat mon sceal agifan to þa<hi rend="italic">m</hi> healme ⁊ to þam heorðe, þe se mon on bið to middum wintra.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="117" ed="#liebermann"/>Kirchensteuer soll man zahlen von<ptr type="liebermannNote" n="1" target="#Ine_61.lnote.de.1"/> demjenigen Halm<ptr type="liebermannNote" n="2" target="#Ine_61.lnote.de.2"/> und Herd<ptr type="liebermannNote" n="3" target="#Ine_61.lnote.de.3"/>, auf welchem man zu Weihnachten<ptr type="liebermannNote" n="4" target="#Ine_61.lnote.de.4"/> sitzt.</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">Church dues are to be paid from the straw [roof] and hearth at which one is living at Christmas.</ab>
+        <ab type="translation" xml:lang="en" source="#attenborough" corresp="#wit-e"><pb n="57" ed="#attenborough"/>Church dues shall be paid from the estate<ptr type="editorNote" n="1" target="#Ine_61.attnote.n.1"/> and the house where a man is residing at midwinter.</ab>
+        <ab type="translation" xml:lang="en" source="#whitelock"><pb n="406" ed="#whitelock"/>Church-scot is to be paid from the haulm<ptr type="editorNote" n="1" target="#Ine_61.whinote.n.1"/> and the hearth where one resides at midwinter.<ptr type="editorNote" n="2" target="#Ine_61.whinote.n.2"/></ab>
+        <ab type="translation" xml:lang="en" source="#jurasinski-and-oliver" corresp="#wit-e"><pb n="423" ed="#jurasinski-and-oliver"/>Church tax shall be paid from that farmstead and that hearth where the man is dwelling in mid-winter.</ab>
+        <note type="comparison" source="#jurasinski-and-oliver" n="423"><label>cf.</label> <ref target="clause:Ine_4">Ine 4</ref> <quote>§4 states that the tax is to be paid on St. Martin's Day: November 11.</quote></note>
+        <note type="comparedBy" source="#jurasinski-and-oliver" n="375"><ref target="clause:Ine_4">Ine 4</ref></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_61.lnote.oe.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">116</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">im</hi> 16. <hi rend="italic">Jh. eingefügt</hi></seg><seg type="translation" xml:lang="en" source="#claude">inserted in the 16th cent.</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_61.lnote.oe.6" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">116</biblScope></bibl><seg type="original" xml:lang="de">l <hi rend="italic">auf Rasur</hi></seg><seg type="translation" xml:lang="en" source="#claude">l on an erasure</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_61.lnote.oe.18" n="18" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">117</biblScope></bibl><seg type="original" xml:lang="de">ciricsceatum <hi rend="italic">T;</hi> chirchscheat debeat <hi rend="italic">Co</hi></seg><seg type="translation" xml:lang="en" source="#claude">ciricsceatum T; chirchscheat debeat Co</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_61.lnote.oe.19" n="19" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">117</biblScope></bibl><seg type="original" xml:lang="de">r. h. <hi rend="italic">M Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">r. h. M Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_61.lnote.oe.7" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">116</biblScope></bibl><seg type="original" xml:lang="de">o <hi rend="italic">geänd. in</hi> a</seg><seg type="translation" xml:lang="en" source="#claude">o altered to a</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_61.lnote.oe.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">116</biblScope></bibl><seg type="original" xml:lang="de">y <hi rend="italic">auf Rasur</hi></seg><seg type="translation" xml:lang="en" source="#claude">y on an erasure</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_61.lnote.oe.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">116</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">erstes</hi> e <hi rend="italic">auf Rasur</hi></seg><seg type="translation" xml:lang="en" source="#claude">first e on an erasure</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_61.lnote.oe.9" n="9" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">116</biblScope></bibl><seg type="original" xml:lang="de">e <hi rend="italic">auf Rasur</hi></seg><seg type="translation" xml:lang="en" source="#claude">e on an erasure</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_61.lnote.oe.25" n="25" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">116</biblScope></bibl><seg type="original" xml:lang="de">cyr. <hi rend="italic">So;</hi> cyricsceatte <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">cyr. So; cyricsceatte Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_61.lnote.oe.13" n="13" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">116</biblScope></bibl><seg type="original" xml:lang="de">agyf. <hi rend="italic">So Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">agyf. So Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_61.lnote.oe.26" n="26" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">116</biblScope></bibl><seg type="original" xml:lang="de">ðæm hælme ⁊ to ðæm <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">ðæm hælme ⁊ to ðæm Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_61.lnote.oe.27" n="27" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">116</biblScope></bibl><seg type="original" xml:lang="de">man <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">man Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_61.lnote.oe.2-2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">116</biblScope></bibl><seg type="original" xml:lang="de">beoð <hi rend="italic">So</hi></seg><seg type="translation" xml:lang="en" source="#claude">beoð So</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_61.lnote.oe.28" n="28" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">116</biblScope></bibl><seg type="original" xml:lang="de">-dan <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">-dan Ld</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Ine_61.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">79</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Wb: to</hi> 14 ‘gemäss, nach Verhältnis von’</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf. Wb: to</hi> 14 ‘according to, in proportion to’</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Ine_61.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">79</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de">Nicht für ‘Strohdach, Hütte’ (wofür ja ‘Herd’ folgt), sondern für ‘Ernte’. <hi rend="italic">Vgl.</hi> ‘drei Halme’ = 3 (Ernte)-jahre; Grimm <hi rend="italic">DRA</hi> 128. — Q setzt <hi rend="italic">culmen</hi> für <hi rend="italic">culmus</hi> (wie ein anderer Normanne bei Ducange) oder meint (wie Lex Baiuwar. X 3, 7) ‘First, Haus’</seg><seg type="translation" xml:lang="en" source="#claude">Stands not for ‘thatched roof, hut’ (since ‘hearth’ follows for that, after all), but for ‘harvest’. <hi rend="italic">Cf.</hi> ‘three stalks’ = 3 (harvest) years; Grimm <hi rend="italic">DRA</hi> 128. — Q puts <hi rend="italic">culmen</hi> for <hi rend="italic">culmus</hi> (as does another Norman in Ducange) or means (like Lex Baiuwar. X 3, 7) ‘roof-ridge, house’</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Ine_61.lnote.de.3" n="3" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">79</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">S. Gl</hi> Herd; Kirchenpfennig 3</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">See Gl</hi> Herd; Kirchenpfennig 3</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Ine_61.lnote.de.4" n="4" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">79</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Zahltag ist 11. Nov. (<hi rend="italic">ebd.</hi> 9); also steht hier ‘Mittwinter’ vielleicht für Winterszeit allgemein</seg><seg type="translation" xml:lang="en" source="#claude">The day of payment is 11 Nov. (<hi rend="italic">ibid.</hi> 9); so ‘midwinter’ here perhaps stands for the winter season in general</seg></note>
+        <note type="editorNote" subtype="endnote" xml:id="Ine_61.attnote.n.1" n="1" source="#attenborough"><bibl><biblScope unit="page">192</biblScope></bibl><seg type="original" xml:lang="en">The meaning of <hi rend="italic">to þam healme</hi> is uncertain; <hi rend="italic">healm</hi> means lit. ‘stalk, straw,’ <hi rend="italic">i.e.</hi> ‘crop.’ Schmid and Liebermann (in his notes) translate <hi rend="italic">to</hi> by ‘nach Verhältnis von,’ <hi rend="italic">i.e.</hi> ‘in proportion to (the size of).’</seg></note>
+        <note type="editorNote" subtype="translationFootnote" xml:id="Ine_61.whinote.n.1" n="1" source="#whitelock"><bibl><biblScope unit="page">406</biblScope></bibl><label>haulm</label><seg type="original" xml:lang="en">The phrase <hi rend="italic">healme and heorðe</hi> is an alliterative formula to refer to the whole homestead, its dwelling-place and its cultivated land. The <hi rend="italic">healm</hi> “stubble” refers to the fields from which the harvest was garnered.</seg></note>
+        <note type="editorNote" subtype="translationFootnote" xml:id="Ine_61.whinote.n.2" n="2" source="#whitelock"><bibl><biblScope unit="page">406</biblScope></bibl><label>midwinter</label><seg type="original" xml:lang="en">This term usually means Christmas, but as church-scot was due at Martinmas (11 November), it probably has a wider meaning here.</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

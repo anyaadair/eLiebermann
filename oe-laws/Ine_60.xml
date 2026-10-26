@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Ine_60">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Ine 60</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Attenborough’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">Ine_60</idno>
+        <idno type="citation">Ine 60</idno>
+        <idno type="lawCode">Ine</idno>
+        <idno type="lawCodeAnchor">Ine</idno>
+        <idno type="clause">60</idno>
+        <idno type="citationKey">Ine 60</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Ine’s Laws (in Alfred’s Domboc)</title> <note type="reign">Ine, r. 688–726</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">116</biblScope></bibl>
+          <bibl xml:id="jurasinski-and-oliver" type="edition">Stefan Jurasinski and Lisi Oliver, <title>The Laws of Alfred: The Domboc and the Making of Anglo-Saxon Law</title> (Cambridge: Cambridge University Press, 2021), p. <biblScope unit="page">422</biblScope></bibl>
+          <bibl xml:id="attenborough" type="edition">F. L. Attenborough, <title>The Laws of the Earliest English Kings</title> (Cambridge: Cambridge University Press, 1922), p. <biblScope unit="page">56</biblScope></bibl>
+          <bibl xml:id="whitelock" type="translation">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007), p. <biblScope unit="page">406</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-e" rend="bold"><abbr>E</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 173 (Parker Chronicle and Laws)</note></witness>
+          <witness xml:id="wit-h"><abbr>H</abbr> <note type="manuscript">Strood, Medway Archive and Local Studies Centre, MS DRc/R1 (Textus Roffensis; formerly Rochester, Cathedral Library, A.3.5), c. 1120–25</note></witness>
+          <witness xml:id="wit-b-no-prol"><abbr>B (no Prol.)</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383</note></witness>
+          <witness xml:id="wit-g-prol-only"><abbr>G (Prol. only)</abbr> <note type="manuscript">London, British Library, Cotton Nero A.i</note></witness>
+          <witness xml:id="wit-q"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note></witness>
+          <witness xml:id="wit-ld"><abbr>Ld</abbr> <note type="manuscript">William Lambarde, Archaionomia (London, 1568) – printed from manuscripts now lost</note></witness>
+          <witness xml:id="wit-bu"><abbr>Bu</abbr></witness>
+          <witness xml:id="wit-ot-frags"><abbr>Ot (frags.)</abbr> <note type="manuscript">London, British Library, Cotton Otho B.xi (damaged by fire, 1731)</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 88">688–95</date><date source="#whitelock" n="EHD p. 399">688–94</date><date source="#wormald-mel" n="MEL p. 103">688×92</date><note type="promulgation">688–95 (Liebermann, I p. 88); 688–94 (Whitelock, EHD p. 399); 688×92 (Wormald, MEL p. 103)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Livestock</term><term>Lending/leasing</term><term>Goods</term></keywords>
+        <keywords n="people"><term>Leasee</term><term>Secular classes</term><term>Ceorl</term><term>Rank</term><term>Freemen</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 639 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked and corrected against <title>Die Gesetze der Angelsachsen</title> I, p. 116.</change>
+      <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 116: “CIIII. Se ceorl se ðe hæfð oðres geoht ahyrod, gif he hæbbe ealle on foðre to agifanne, gesceawige mon, agife ealle; gif he næbbe, agife healf on fodre, healfe on oþrum ceape.” → “CIIII. Se ceorl se ðe hæfð oðres geoht ahyrod, gif he hæbbe ealle on foðre to agifanne, gesceawige mon, agife ealle; gif he næbbe, agife healf on fodre, healfe on oþrum ceape. (expanded letters in italics: m)”.</change>
+      <change when="2026-10" type="checked">Liebermann’s text of MS B added from Gesetze I, p. 116.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="60">
+        <head><ref type="lawCode" target="law:Ine">Ine</ref> 60</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="60" corresp="#wit-e"><pb n="116" ed="#liebermann"/>CIIII. Se ceorl se<ptr type="liebermannNote" n="17" target="#Ine_60.lnote.oe.17-2"/> ðe hæfð oðres geoht<ptr type="liebermannNote" n="18" target="#Ine_60.lnote.oe.18"/> ahyrod<ptr type="liebermannNote" n="19" target="#Ine_60.lnote.oe.19"/>, gif he hæbbe ealle on foðre<ptr type="liebermannNote" n="20" target="#Ine_60.lnote.oe.20"/> to agifanne<ptr type="liebermannNote" n="13" target="#Ine_60.lnote.oe.13"/>, gesceawige mon<ptr type="liebermannNote" n="21" target="#Ine_60.lnote.oe.21"/>, agife<ptr type="liebermannNote" n="13" target="#Ine_60.lnote.oe.13"/> ealle<ptr type="liebermannNote" n="22" target="#Ine_60.lnote.oe.22"/>; gif he næbbe, agife<ptr type="liebermannNote" n="13" target="#Ine_60.lnote.oe.13"/> healf<ptr type="liebermannNote" n="23" target="#Ine_60.lnote.oe.23"/> on fodre<ptr type="liebermannNote" n="20" target="#Ine_60.lnote.oe.20"/>, healfe<ptr type="liebermannNote" n="24" target="#Ine_60.lnote.oe.24"/> on oþru<hi rend="italic">m</hi> ceape.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="60" corresp="#wit-h"><pb n="116" ed="#liebermann"/>CIIII. Se ciorl þe<ptr type="liebermannNote" n="3" target="#Ine_60.lnote.oe.3"/> hæbbe oðres geoht<ptr type="liebermannNote" n="4" target="#Ine_60.lnote.oe.4-2"/> ahyred, gif he hæbbe ealle on foðre to agyfanne<ptr type="liebermannNote" n="2" target="#Ine_60.lnote.oe.2"/>, gesceawige mon<ptr type="liebermannNote" n="5" target="#Ine_60.lnote.oe.5"/>; gif he næbbe<ptr type="liebermannNote" n="6" target="#Ine_60.lnote.oe.6"/>, agife healf on foðre, healf on oþrum ceape.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="60" corresp="#wit-b-no-prol"><pb n="116" ed="#liebermann"/>Be hyroxan. Se ceorl se ðe hæfð<ptr type="liebermannNote" n="4" target="#Ine_60.lnote.oe.4"/> oðres oxan ahýred, gyf he hæbbe ealle on foðre to agyfanne, gesceawige mon, agyfe ealle; gyf he næbbe, agyfe healf on foðre, healf on oðrum ceape.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="60" corresp="#wit-q"><pb n="117" ed="#liebermann"/>Si<ptr type="liebermannNote" n="14" target="#Ine_60.lnote.oe.14"/> uillanus alterius boues<ptr type="liebermannNote" n="15" target="#Ine_60.lnote.oe.15"/> locauerit, si totum<ptr type="liebermannNote" n="16" target="#Ine_60.lnote.oe.16"/> habeat in annona persoluere, uideatur hoc, et reddat; si non habeat, reddat<ptr type="liebermannNote" n="17" target="#Ine_60.lnote.oe.17"/> dimidium in annona, dimidium in alio captali.</ab>
+        <ab type="editionText" xml:lang="ang" source="#attenborough" corresp="#wit-e"><pb n="56" ed="#attenborough"/>[Be hyroxan.] Se ceorl se ðe hæfð<ptr type="editorNote" n="10" target="#Ine_60.attnote.fn.10"/> oðres geoht<ptr type="editorNote" n="11" target="#Ine_60.attnote.fn.11"/> ahyrod, gif he hæbbe ealle on foðre to agifanne, gesceawige mon, agife ealle; gif he næbbe, agife healf on fodre, healfe on oþrum ceape.</ab>
+        <ab type="editionText" xml:lang="ang" source="#jurasinski-and-oliver" n="64" corresp="#wit-e"><pb n="422" ed="#jurasinski-and-oliver"/>{CIIII} Se ceorl se ðe hæfð oðres geoht ahyrod, gif he hæbbe ealle on forðre to agifanne, gesceawege mon, agife ealle. Gif he næbbe, agife healf on fodre, healfe on oþru<hi rend="italic">m</hi> ceape.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="117" ed="#liebermann"/>Wenn der Bauer, welcher eines anderen Joch [Rinder<ptr type="liebermannNote" n="1" target="#Ine_60.lnote.de.1"/>] gemiethet<ptr type="liebermannNote" n="2" target="#Ine_60.lnote.de.2"/> hat, [die Miethe] ganz in Futter<ptr type="liebermannNote" n="3" target="#Ine_60.lnote.de.3"/> zu zahlen hat<ptr type="liebermannNote" n="4" target="#Ine_60.lnote.de.4"/>, sehe man<ptr type="liebermannNote" n="5" target="#Ine_60.lnote.de.5"/> zu, [dass er] sie ganz zahle; wenn er [das] nicht hat, zahle er halb in Futter, halb in anderem Werthe.</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">If the peasant who has hired another’s yoke [of oxen] has [the rent] to pay entirely in fodder, let it be seen to [that he] pays it in full; if he does not have [it], let him pay half in fodder, half in other goods.</ab>
+        <ab type="translation" xml:lang="en" source="#attenborough" corresp="#wit-e"><pb n="57" ed="#attenborough"/>If a commoner, who has hired another's yoke of oxen, is able to pay all the hire in fodder, care should be taken that he does pay it all [in this form]. If he is not able to do so, he shall pay half [the hire] in fodder, and half in other goods.</ab>
+        <ab type="translation" xml:lang="en" source="#whitelock"><pb n="406" ed="#whitelock"/>The <hi rend="italic">ceorl</hi> who has hired another’s yoke [of oxen], if he has enough to pay for it entirely in fodder—let one see that he pays in full; if he has not, he is to pay half in fodder, half in other goods.</ab>
+        <ab type="translation" xml:lang="en" source="#jurasinski-and-oliver" corresp="#wit-e"><pb n="423" ed="#jurasinski-and-oliver"/>A <hi rend="italic">ceorl</hi> who has hired another’s yoke, if he is able to pay it all in fodder, make sure he gives all. If he cannot, let him pay half in fodder and half in other goods.</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_60.lnote.oe.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">116</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">verbessert aus</hi> hæfh</seg><seg type="translation" xml:lang="en" source="#claude">corrected from hæfh</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_60.lnote.oe.14" n="14" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">117</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Cap.</hi> 60. 61 <hi rend="italic">fehlen Lond; am Rande [aus T?] Co</hi></seg><seg type="translation" xml:lang="en" source="#claude">Cap. 60. 61 lacking in Lond; in the margin [from T?] Co</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_60.lnote.oe.15" n="15" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">117</biblScope></bibl><seg type="original" xml:lang="de">boue <hi rend="italic">R</hi></seg><seg type="translation" xml:lang="en" source="#claude">boue R</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_60.lnote.oe.16" n="16" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">117</biblScope></bibl><seg type="original" xml:lang="de">h. t. <hi rend="italic">M Hk;</hi> h. totam <hi rend="italic">T Co; fehlt Br</hi></seg><seg type="translation" xml:lang="en" source="#claude">h. t. M Hk; h. totam T Co; lacking in Br</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_60.lnote.oe.17" n="17" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">117</biblScope></bibl><seg type="original" xml:lang="de">dimidiam r. <hi rend="italic">T Co</hi></seg><seg type="translation" xml:lang="en" source="#claude">dimidiam r. T Co</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_60.lnote.oe.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">116</biblScope></bibl><seg type="original" xml:lang="de">þ <hi rend="italic">auf Rasur</hi></seg><seg type="translation" xml:lang="en" source="#claude">þ on an erasure</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_60.lnote.oe.4-2" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">116</biblScope></bibl><seg type="original" xml:lang="de">e <hi rend="italic">übergeschr.</hi></seg><seg type="translation" xml:lang="en" source="#claude">e written above</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_60.lnote.oe.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">116</biblScope></bibl><seg type="original" xml:lang="de">y <hi rend="italic">auf Rasur</hi></seg><seg type="translation" xml:lang="en" source="#claude">y on an erasure</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_60.lnote.oe.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">116</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Punkt nachträglich</hi></seg><seg type="translation" xml:lang="en" source="#claude">point added later</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_60.lnote.oe.6" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">116</biblScope></bibl><seg type="original" xml:lang="de">næ <hi rend="italic">auf Rasur</hi></seg><seg type="translation" xml:lang="en" source="#claude">næ on an erasure</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_60.lnote.oe.17-2" n="17" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">116</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt So</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in So</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_60.lnote.oe.18" n="18" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">116</biblScope></bibl><seg type="original" xml:lang="de">geoc <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">geoc Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_60.lnote.oe.19" n="19" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">116</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">geänd. aus</hi> geh. <hi rend="italic">So;</hi> -red <hi rend="italic">So Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">altered from geh. So; -red So Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_60.lnote.oe.20" n="20" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">116</biblScope></bibl><seg type="original" xml:lang="de">foddre <hi rend="italic">So;</hi> fodre <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">foddre So; fodre Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_60.lnote.oe.13" n="13" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">116</biblScope></bibl><seg type="original" xml:lang="de">agyf. <hi rend="italic">So Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">agyf. So Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_60.lnote.oe.21" n="21" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">116</biblScope></bibl><seg type="original" xml:lang="de">⁊ þ<hi rend="italic">æt</hi> <hi rend="italic">fügt zu So</hi></seg><seg type="translation" xml:lang="en" source="#claude">⁊ þ<hi rend="italic">æt</hi> added by So</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_60.lnote.oe.22" n="22" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">116</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt So</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in So</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_60.lnote.oe.23" n="23" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">116</biblScope></bibl><seg type="original" xml:lang="de">healfe <hi rend="italic">So</hi></seg><seg type="translation" xml:lang="en" source="#claude">healfe So</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_60.lnote.oe.24" n="24" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">116</biblScope></bibl><seg type="original" xml:lang="de">healf <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">healf Ld</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Ine_60.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">79</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de">‘Ochsen’ (<hi rend="italic">s. d. Gl</hi> 3—4) B (auch Rb) und Q, jünger. <hi rend="italic">Vgl. Gl</hi> Pflug 3</seg><seg type="translation" xml:lang="en" source="#claude">‘oxen’ (<hi rend="italic">see</hi> that word in <hi rend="italic">Gl</hi> 3—4) B (also Rb) and Q, later. <hi rend="italic">Cf. Gl</hi> Pflug 3</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Ine_60.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">79</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Ebd.</hi> Miete 1</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Ibid.</hi> Miete 1</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Ine_60.lnote.de.3" n="3" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">79</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Ebd.</hi> Futter 1. 2</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Ibid.</hi> Futter 1. 2</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Ine_60.lnote.de.4" n="4" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">79</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de">= vermag</seg><seg type="translation" xml:lang="en" source="#claude">= is able</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Ine_60.lnote.de.5" n="5" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">79</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de">Ähnlich <hi rend="italic">locige</hi> (<hi rend="italic">s. Wb</hi> 6), das folgende Verb nur verstärkend</seg><seg type="translation" xml:lang="en" source="#claude">Similarly <hi rend="italic">locige</hi> (<hi rend="italic">see Wb</hi> 6), merely reinforcing the following verb</seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="Ine_60.attnote.fn.10" n="10" source="#attenborough"><bibl><biblScope unit="page">56</biblScope></bibl><label>hæfð</label><seg type="original" xml:lang="en"><hi rend="italic">hæbbe</hi>. H.</seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="Ine_60.attnote.fn.11" n="11" source="#attenborough"><bibl><biblScope unit="page">56</biblScope></bibl><label>geoht</label><seg type="original" xml:lang="en"><hi rend="italic">oxan</hi>. B.</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

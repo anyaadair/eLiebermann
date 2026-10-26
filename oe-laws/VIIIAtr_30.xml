@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="VIIIAtr_30">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>VIII Atr 30</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">VIIIAtr_30</idno>
+        <idno type="citation">VIII Atr 30</idno>
+        <idno type="lawCode">VIII Atr</idno>
+        <idno type="lawCodeAnchor">VIIIAtr</idno>
+        <idno type="clause">30</idno>
+        <idno type="citationKey">VIIIAtr 30</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>VIII Æthelred</title> <note type="reign">Æthelred II, r. 978–1016</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">266</biblScope></bibl>
+          <bibl xml:id="robertson" type="edition">A. J. Robertson, <title>The Laws of the Kings of England from Edmund to Henry I</title> (Cambridge: Cambridge University Press, 1925), p. <biblScope unit="page">126</biblScope></bibl>
+          <bibl xml:id="rabin-doml" type="edition">Andrew Rabin, ed. and trans., <title>Old English Legal Writings: Wulfstan</title>, Dumbarton Oaks Medieval Library (Cambridge, MA: Harvard University Press, 2020), p. <biblScope unit="page">200</biblScope></bibl>
+          <bibl xml:id="whitelock" type="translation">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007), p. <biblScope unit="page">456</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-d" rend="bold"><abbr>D</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 201</note></witness>
+          <witness xml:id="wit-g-a-part"><abbr>G(A) (part)</abbr> <note type="manuscript">London, British Library, Cotton Nero A.i</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 263">1014, after Feb.</date><date source="#whitelock #wormald-mel" n="EHD p. 454|MEL p. 336">1014</date><note type="promulgation">1014, after Feb. (Liebermann, I p. 263); 1014 (Whitelock, EHD p. 454; Wormald, MEL p. 336)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Marriage</term><term>Canon law</term><term>Legal principles</term><term>Ecclesiastical directives</term><term>Written laws/decisions</term></keywords>
+        <keywords n="people"><term>Priest</term><term>Ecclesiastical orders</term><term>Rank</term><term>God</term><term>All people</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 1461 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 266.</change>
+      <change when="2026-10" type="checked">Liebermann’s text added from <title>Die Gesetze der Angelsachsen</title> I, p. 266.</change>
+      <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 266: “þingc” → “þinge”.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="30">
+        <head><ref type="lawCode" target="law:VIIIAtr">VIII Atr</ref> 30</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="30" corresp="#wit-d"><pb n="266" ed="#liebermann"/>Wite, gif he wille: ne gebirað him nan<ptr type="liebermannNote" n="4" target="#VIIIAtr_30.lnote.oe.4"/> þinge ne to wife ne to worldwige, gif he Gode wile rihtlice hyran ⁊ Godes laga<ptr type="liebermannNote" n="1" target="#VIIIAtr_30.lnote.oe.1"/> healdan, swa swa his hade gedafenað mid rihte.</ab>
+        <ab type="editionText" xml:lang="ang" source="#robertson" n="30" corresp="#wit-d"><pb n="126" ed="#robertson"/>Wite, gif he wille, ne gebirað him nan þingc ne to wife ne to worldwige, gif he Gode wile rihtlice hyran ⁊ Godes laga healdan, swa swa his hade gedafenað mid rihte.</ab>
+        <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-d"><pb n="200" ed="#rabin-doml"/>Wite, gif he wille: ne gebirað him nan þingc ne to wife ne to worldwige, gif he Gode wile rihtlice hyran and Godes laga healdan, swa swa his hade gedafenað mid rihte.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="266" ed="#liebermann"/>Begreife er wenn er will: nicht ziemt sich für ihn ein Verhältniss zum Weibe oder weltlichem<ptr type="liebermannNote" n="1" target="#VIIIAtr_30.lnote.de.1"/> Kampfe, wenn er Gott gesetzmässig gehorchen und Gottes Gebote halten will, wie es seinem geistlichen Stande nach Recht ziemt.</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">Let him understand, if he will: neither a relationship with a woman nor worldly fighting befits him, if he will obey God rightly and keep God's laws, as rightly befits his order.</ab>
+        <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-d"><pb n="127" ed="#robertson"/>Let him understand, if he will, that it is not seemly for him to have anything to do either with marriage or with worldly strife, if he will duly obey God and observe his laws, as properly befits his estate.</ab>
+        <ab type="translation" xml:lang="en" source="#whitelock" corresp="#wit-d"><pb n="456" ed="#whitelock"/>Let him know, if he will, that he has no concern with a wife or with worldly warfare, if he wishes rightly to obey God and keep God’s laws, as it becomes his orders by rights.</ab>
+        <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-d"><pb n="201" ed="#rabin-doml"/>Let him understand, if he will do so, that it is not appropriate in any way for him to take a wife or to become involved in the warfare of this world, if he desires to obey God properly and heed his laws, as rightly befits his office.</ab>
+        <note type="comparison" source="#liebermann" n="266"><ref target="clause:VIAtr_5-1">VI Atr 5.1</ref></note>
+        <note type="comparisonPrinted" source="#liebermann">ebd. 5, 1</note>
+        <note type="comparisonIncomplete">Some of Liebermann’s notes here are cut off in the gutter of the scan used, and are still to be completed.</note>
+        <note type="liebermannNote" subtype="textual" xml:id="VIIIAtr_30.lnote.oe.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">266</biblScope></bibl><seg type="original" xml:lang="de">naðor <hi rend="italic">Ad. Eg.</hi></seg><seg type="translation" xml:lang="en" source="#claude">naðor Ad. Eg.</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="VIIIAtr_30.lnote.oe.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">267</biblScope></bibl><seg type="original" xml:lang="de">rihtlice h. <hi rend="italic">Ad. Eg.</hi></seg><seg type="translation" xml:lang="en" source="#claude">rihtlice h. Ad. Eg.</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="VIIIAtr_30.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">184</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Geistliche 29g ff.</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf. Gl</hi> Geistliche 29g ff.</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

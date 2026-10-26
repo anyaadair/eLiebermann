@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Ine_7">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Ine 7</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
+        <respStmt><resp>Cross-references to other clauses</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Cross-references to other clauses</resp><name ref="#wormald-ppmel">Wormald, Papers Preparatory</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Attenborough’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">Ine_7</idno>
+        <idno type="citation">Ine 7</idno>
+        <idno type="lawCode">Ine</idno>
+        <idno type="lawCodeAnchor">Ine</idno>
+        <idno type="clause">7</idno>
+        <idno type="citationKey">Ine 7</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Ine’s Laws (in Alfred’s Domboc)</title> <note type="reign">Ine, r. 688–726</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">92</biblScope></bibl>
+          <bibl xml:id="jurasinski-and-oliver" type="edition">Stefan Jurasinski and Lisi Oliver, <title>The Laws of Alfred: The Domboc and the Making of Anglo-Saxon Law</title> (Cambridge: Cambridge University Press, 2021), p. <biblScope unit="page">376</biblScope></bibl>
+          <bibl xml:id="attenborough" type="edition">F. L. Attenborough, <title>The Laws of the Earliest English Kings</title> (Cambridge: Cambridge University Press, 1922), p. <biblScope unit="page">38</biblScope></bibl>
+          <bibl xml:id="whitelock" type="translation">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007), p. <biblScope unit="page">400</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="wormald-ppmel" type="study">Patrick Wormald, <title>Papers Preparatory to The Making of English Law: King Alfred to the Twelfth Century, II: From God’s Law to Common Law</title>, ed. Stephen Baxter and John Hudson (London: University of London, 2014)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-e" rend="bold"><abbr>E</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 173 (Parker Chronicle and Laws)</note></witness>
+          <witness xml:id="wit-h"><abbr>H</abbr> <note type="manuscript">Strood, Medway Archive and Local Studies Centre, MS DRc/R1 (Textus Roffensis; formerly Rochester, Cathedral Library, A.3.5), c. 1120–25</note></witness>
+          <witness xml:id="wit-b-no-prol"><abbr>B (no Prol.)</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383</note></witness>
+          <witness xml:id="wit-g-prol-only"><abbr>G (Prol. only)</abbr> <note type="manuscript">London, British Library, Cotton Nero A.i</note></witness>
+          <witness xml:id="wit-q"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note></witness>
+          <witness xml:id="wit-ld"><abbr>Ld</abbr> <note type="manuscript">William Lambarde, Archaionomia (London, 1568) – printed from manuscripts now lost</note></witness>
+          <witness xml:id="wit-bu"><abbr>Bu</abbr> <note type="manuscript">London, British Library, Burney MS 277</note></witness>
+          <witness xml:id="wit-ot-frags"><abbr>Ot (frags.)</abbr> <note type="manuscript">London, British Library, Cotton Otho B.xi (damaged by fire, 1731)</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 88">688–95</date><date source="#whitelock" n="EHD p. 399">688–94</date><date source="#wormald-mel" n="MEL p. 103">688×92</date><note type="promulgation">688–95 (Liebermann, I p. 88); 688–94 (Whitelock, EHD p. 399); 688×92 (Wormald, MEL p. 103)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Theft</term><term>Fines</term><term>Marriage</term></keywords>
+        <keywords n="people"><term>Husband</term><term>Women</term><term>Wife</term><term>Children</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 555 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked and corrected against <title>Die Gesetze der Angelsachsen</title> I, p. 92.</change>
+      <change when="2026-10" type="checked">Liebermann’s text of MS Bu added from Gesetze I, p. 92.</change>
+      <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 92: “∅” → “LI.”.</change>
+      <change when="2026-10" type="checked">Liebermann’s text of MS B added from Gesetze I, p. 92.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="7">
+        <head><ref type="lawCode" target="law:Ine">Ine</ref> 7</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="7" corresp="#wit-e"><pb n="92" ed="#liebermann"/>LI. Gif hwa stalie<ptr type="liebermannNote" n="15" target="#Ine_7.lnote.oe.15-2"/>, swa his wíf nyte ⁊ his bearn, geselle<ptr type="liebermannNote" n="13" target="#Ine_7.lnote.oe.13-2"/> LX<ptr type="liebermannNote" n="16" target="#Ine_7.lnote.oe.16-2"/> scill. to wite.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="7" corresp="#wit-bu"><pb n="92" ed="#liebermann"/>Gif hwa sta . . ., . . selle LX scill. . . . . .</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="7" corresp="#wit-h"><pb n="92" ed="#liebermann"/>LI. Gif hwa stalige, swa his wif (hit<ptr type="liebermannNote" n="9" target="#Ine_7.lnote.oe.9"/>) nyte ⁊ his bearn, gesylle<ptr type="liebermannNote" n="3" target="#Ine_7.lnote.oe.3"/> LX scll' to wite.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="7" corresp="#wit-b-no-prol"><pb n="93" ed="#liebermann"/>Be stale. Gyf hwá stalige, swa his wif nyte ⁊ his bearn, gesylle syxti scill' to wite.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="7" corresp="#wit-q"><pb n="93" ed="#liebermann"/>Si quis furetur sic, ut uxor eius<ptr type="liebermannNote" n="13" target="#Ine_7.lnote.oe.13"/> nesciat (hoc<ptr type="liebermannNote" n="14" target="#Ine_7.lnote.oe.14"/>) et<ptr type="liebermannNote" n="15" target="#Ine_7.lnote.oe.15"/> pueri sui, reddat<ptr type="liebermannNote" n="16" target="#Ine_7.lnote.oe.16"/> wite LX sol.</ab>
+        <ab type="editionText" xml:lang="ang" source="#attenborough" corresp="#wit-e"><pb n="38" ed="#attenborough"/>[Be stale.] Gif hwa stalie, swa his wíf<ptr type="editorNote" n="12" target="#Ine_7.attnote.fn.12"/> nyte ⁊ his bearn, geselle LX scill. to wite.</ab>
+        <ab type="editionText" xml:lang="ang" source="#jurasinski-and-oliver" n="7" corresp="#wit-e"><pb n="376" ed="#jurasinski-and-oliver"/>{LI} Gif swa stalie, swa his wíf nyte ⁊ his bearn, geselle LX sciƚƚ to wite.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="93" ed="#liebermann"/>Wenn einer stiehlt<ptr type="liebermannNote" n="1" target="#Ine_7.lnote.de.1"/>, vorausgesetzt<ptr type="liebermannNote" n="2" target="#Ine_7.lnote.de.2"/>, sein Weib<ptr type="liebermannNote" n="3" target="#Ine_7.lnote.de.3"/> und seine Nachkommenschaft wissen [es] nicht, so gebe er 60 Schill.<ptr type="liebermannNote" n="4" target="#Ine_7.lnote.de.4"/> zur Strafe.</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">If someone steals, provided his wife and his offspring do not know [of it], let him give 60 shillings as a fine.</ab>
+        <ab type="translation" xml:lang="en" source="#attenborough" corresp="#wit-e"><pb n="39" ed="#attenborough"/>If anyone steals<ptr type="editorNote" n="1" target="#Ine_7.attnote.n.1"/> without the cognisance of his wife and children, he shall pay a fine of 60 shillings.</ab>
+        <ab type="translation" xml:lang="en" source="#whitelock"><pb n="400" ed="#whitelock"/>If anyone steals without his wife and his children knowing, he is to pay 60 shillings as a fine.</ab>
+        <ab type="translation" xml:lang="en" source="#jurasinski-and-oliver" corresp="#wit-e"><pb n="377" ed="#jurasinski-and-oliver"/>If someone steals, but his wife and his child(ren) do not know it, let him pay 60 shillings as a fine.</ab>
+        <note type="comparison" source="#jurasinski-and-oliver" n="377"><label>another instance</label> <ref target="clause:Wi_12-a">Wi 12</ref> <quote>For another instance of the separate culpability of husband and wife see Wihtred §9 [L12].</quote></note>
+        <note type="comparedBy" source="#wormald-mel" n="278"><ref target="clause:Af_9-2">Af 9.2</ref></note>
+        <note type="comparedBy" source="#wormald-ppmel" n="127"><ref target="clause:Ine_7-1">Ine 7.1</ref></note>
+        <note type="comparedBy" source="#jurasinski-and-oliver" n="421"><ref target="clause:Ine_57">Ine 57</ref></note>
+        <note type="comparedBy" source="#wormald-mel" n="305"><ref target="clause:IIAs_1">II As 1–1.5</ref></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_7.lnote.oe.13" n="13" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">93</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt K</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in K</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_7.lnote.oe.14" n="14" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">93</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Lond</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_7.lnote.oe.15" n="15" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">93</biblScope></bibl><seg type="original" xml:lang="de">neque <hi rend="italic">MHkBr</hi></seg><seg type="translation" xml:lang="en" source="#claude">neque MHkBr</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_7.lnote.oe.16" n="16" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">93</biblScope></bibl><seg type="original" xml:lang="de">-ant <hi rend="italic">T</hi></seg><seg type="translation" xml:lang="en" source="#claude">-ant T</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_7.lnote.oe.9" n="9" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">92</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">übergeschr.</hi></seg><seg type="translation" xml:lang="en" source="#claude">written above</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_7.lnote.oe.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">92</biblScope></bibl><seg type="original" xml:lang="de">y <hi rend="italic">auf Rasur</hi></seg><seg type="translation" xml:lang="en" source="#claude">y on an erasure</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_7.lnote.oe.15-2" n="15" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">92</biblScope></bibl><seg type="original" xml:lang="de">stalige <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">stalige Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_7.lnote.oe.13-2" n="13" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">92</biblScope></bibl><seg type="original" xml:lang="de">gesylle <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">gesylle Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_7.lnote.oe.16-2" n="16" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">92</biblScope></bibl><seg type="original" xml:lang="de">syxtig <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">syxtig Ld</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Ine_7.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">69</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Diebstahl 19</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf. Gl</hi> Diebstahl 19</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Ine_7.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">69</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Wb: swa</hi> III D [‘so dass’ Toller V 5] = <hi rend="italic">gif heo facnes gewita nære</hi> VI As 1, 1</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf. Wb: swa</hi> III D [‘so that’ Toller V 5] = <hi rend="italic">gif heo facnes gewita nære</hi> VI As 1, 1</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Ine_7.lnote.de.3" n="3" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">69</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Ehefrau 9—10d</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf. Gl</hi> Ehefrau 9—10d</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Ine_7.lnote.de.4" n="4" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">69</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">Die Tat ist nicht handhaft</seg><seg type="translation" xml:lang="en" source="#claude">The offence is not one caught in the act</seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="Ine_7.attnote.fn.12" n="12" source="#attenborough"><bibl><biblScope unit="page">38</biblScope></bibl><label>wíf</label><seg type="original" xml:lang="en"><hi rend="italic">wif</hi> (<hi rend="italic">hit</hi>). H*.</seg></note>
+        <note type="editorNote" subtype="endnote" xml:id="Ine_7.attnote.n.1" n="1" source="#attenborough"><bibl><biblScope unit="page">184</biblScope></bibl><seg type="original" xml:lang="en">There is an apparent contradiction between this law and Ine, cap. 12. Liebermann understands that in the latter case, in contradistinction to this, the reference is to a thief caught in the act (cf. Wiht. cap. 26; II As. cap. 1).</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

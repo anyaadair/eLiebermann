@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Rubrics-Ine_53">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Ine Rb 53</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">Rubrics-Ine_53</idno>
+        <idno type="citation">Ine Rb 53</idno>
+        <idno type="lawCode">Ine Rb</idno>
+        <idno type="clause">53</idno>
+        <idno type="citationKey">Ine Rb 53</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Rubrics to Ine’s Laws (in Alfred’s Domboc)</title> <note type="reign">Alfred, r. 871–899</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">24</biblScope></bibl>
+          <bibl xml:id="jurasinski-and-oliver" type="edition">Stefan Jurasinski and Lisi Oliver, <title>The Laws of Alfred: The Domboc and the Making of Anglo-Saxon Law</title> (Cambridge: Cambridge University Press, 2021), p. <biblScope unit="page">212</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-e" rend="bold"><abbr>E</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 173 (Parker Chronicle and Laws)</note></witness>
+          <witness xml:id="wit-h"><abbr>H</abbr> <note type="manuscript">Strood, Medway Archive and Local Studies Centre, MS DRc/R1 (Textus Roffensis; formerly Rochester, Cathedral Library, A.3.5), c. 1120–25</note></witness>
+          <witness xml:id="wit-q"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note></witness>
+          <witness xml:id="wit-g-prol"><abbr>G (Prol.)</abbr> <note type="manuscript">London, British Library, Cotton Nero A.i</note></witness>
+          <witness xml:id="wit-b"><abbr>B</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383</note></witness>
+          <witness xml:id="wit-ot-frag"><abbr>Ot (frag.)</abbr> <note type="manuscript">London, British Library, Cotton Otho B.xi (damaged by fire, 1731)</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 20">c.890–c.940</date><note type="promulgation">c.890–c.940 (Liebermann, I p. 20)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Slavery</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 292 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked and corrected against <title>Die Gesetze der Angelsachsen</title> I, p. 24.</change>
+      <change when="2026-10" type="checked">Liebermann’s text of MS G added from Gesetze I, p. 24.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="53">
+        <head>Ine Rb 53</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="53" corresp="#wit-e"><pb n="24" ed="#liebermann"/>XCVII. Be forstolenes monnes<ptr type="liebermannNote" n="11" target="#Rubrics-Ine_53.lnote.oe.11"/> forefonge.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="53" corresp="#wit-g-prol"><pb n="24" ed="#liebermann"/>XCVII. Be forstolenes mannes forefenge.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="53" corresp="#wit-h"><pb n="25" ed="#liebermann"/>XCVII. Be forstolenes monnes<ptr type="liebermannNote" n="2" target="#Rubrics-Ine_53.lnote.oe.2"/> forfenge.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="53" corresp="#wit-q"><pb n="25" ed="#liebermann"/>De forfangio<ptr type="liebermannNote" n="21" target="#Rubrics-Ine_53.lnote.oe.21"/> furtiui hominis.</ab>
+        <ab type="editionText" xml:lang="ang" source="#jurasinski-and-oliver" corresp="#wit-e"><pb n="212" ed="#jurasinski-and-oliver"/>XCVII Be forstolenes monnes forefonge</ab>
+        <ab type="editionText" xml:lang="ang" source="#jurasinski-and-oliver" corresp="#wit-b"><pb n="212" ed="#jurasinski-and-oliver"/>Be forstolenes mannes forfenge</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="25" ed="#liebermann"/>Von Anefang an einem gestohlenen [unfreien] Menschen.</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">Of attachment of a stolen [unfree] person.</ab>
+        <ab type="translation" xml:lang="en" source="#jurasinski-and-oliver" corresp="#wit-e"><pb n="213" ed="#jurasinski-and-oliver"/>Concerning capturing a stolen person [slave]</ab>
+        <ab type="translation" xml:lang="en" source="#jurasinski-and-oliver" corresp="#wit-b"><pb n="213" ed="#jurasinski-and-oliver"/></ab>
+        <note type="liebermannNote" subtype="textual" xml:id="Rubrics-Ine_53.lnote.oe.11" n="11" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">24</biblScope></bibl><seg type="original" xml:lang="de">man. forfenge <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">man. forfenge Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Rubrics-Ine_53.lnote.oe.21" n="21" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">25</biblScope></bibl><seg type="original" xml:lang="de">forisf. <hi rend="italic">Hk Br</hi></seg><seg type="translation" xml:lang="en" source="#claude">forisf. Hk Br</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Rubrics-Ine_53.lnote.oe.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">25</biblScope></bibl><seg type="original" xml:lang="de">o <hi rend="italic">geänd. in</hi> a</seg><seg type="translation" xml:lang="en" source="#claude">o altered to a</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

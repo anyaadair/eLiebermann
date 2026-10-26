@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Ine_21">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Ine 21</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Attenborough’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Whitelock’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">Ine_21</idno>
+        <idno type="citation">Ine 21</idno>
+        <idno type="lawCode">Ine</idno>
+        <idno type="lawCodeAnchor">Ine</idno>
+        <idno type="clause">21</idno>
+        <idno type="citationKey">Ine 21</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Ine’s Laws (in Alfred’s Domboc)</title> <note type="reign">Ine, r. 688–726</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">98</biblScope></bibl>
+          <bibl xml:id="jurasinski-and-oliver" type="edition">Stefan Jurasinski and Lisi Oliver, <title>The Laws of Alfred: The Domboc and the Making of Anglo-Saxon Law</title> (Cambridge: Cambridge University Press, 2021), p. <biblScope unit="page">384</biblScope></bibl>
+          <bibl xml:id="attenborough" type="edition">F. L. Attenborough, <title>The Laws of the Earliest English Kings</title> (Cambridge: Cambridge University Press, 1922), p. <biblScope unit="page">42</biblScope></bibl>
+          <bibl xml:id="whitelock" type="translation">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007), p. <biblScope unit="page">402</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-e" rend="bold"><abbr>E</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 173 (Parker Chronicle and Laws)</note></witness>
+          <witness xml:id="wit-h"><abbr>H</abbr> <note type="manuscript">Strood, Medway Archive and Local Studies Centre, MS DRc/R1 (Textus Roffensis; formerly Rochester, Cathedral Library, A.3.5), c. 1120–25</note></witness>
+          <witness xml:id="wit-b-no-prol"><abbr>B (no Prol.)</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383</note></witness>
+          <witness xml:id="wit-g-prol-only"><abbr>G (Prol. only)</abbr> <note type="manuscript">London, British Library, Cotton Nero A.i</note></witness>
+          <witness xml:id="wit-q"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note></witness>
+          <witness xml:id="wit-ld"><abbr>Ld</abbr> <note type="manuscript">William Lambarde, Archaionomia (London, 1568) – printed from manuscripts now lost</note></witness>
+          <witness xml:id="wit-bu"><abbr>Bu</abbr> <note type="manuscript">London, British Library, Burney MS 277</note></witness>
+          <witness xml:id="wit-ot-frags"><abbr>Ot (frags.)</abbr> <note type="manuscript">London, British Library, Cotton Otho B.xi (damaged by fire, 1731)</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 88">688–95</date><date source="#whitelock" n="EHD p. 399">688–94</date><date source="#wormald-mel" n="MEL p. 103">688×92</date><note type="promulgation">688–95 (Liebermann, I p. 88); 688–94 (Whitelock, EHD p. 399); 688×92 (Wormald, MEL p. 103)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Homicide</term><term>Theft</term><term>Boundaries</term><term>Legal procedure</term><term>Capital offences</term><term>Oath and pledge</term><term>Wergeld</term></keywords>
+        <keywords n="people"><term>Capital offenders</term><term>Thief</term><term>Associates</term><term>Nobles</term><term>All people</term><term>Secular classes</term><term>Rank</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 574 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 98.</change>
+      <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 98: “LXV. Gif mon ðonne þæs ófslægenan weres bidde, he mot gecyþan, þæt he hine for ðeof ofsloge, nalles þæs ofslegenan gegildan ne his hlaford.” → “LXV. Gif mon ðonne þæs ófslægenan weres bidde, he mot gecyþan, þæt he hine for ðeof ofsloge, nalles þæs ofslegenan gegildan ne his hlaford. (no italics)”.</change>
+      <change when="2026-10" type="checked">Liebermann’s text of MS Bu added from Gesetze I, p. 98.</change>
+      <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 98: “∅; þæs; þæt” → “LXV.; ðæs; ðæt”.</change>
+      <change when="2026-10" type="checked">Liebermann’s text of MS B added from Gesetze I, p. 98.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="21">
+        <head><ref type="lawCode" target="law:Ine">Ine</ref> 21</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="21" corresp="#wit-e"><pb n="98" ed="#liebermann"/>LXV. Gif mon ðonne þæs ófslægenan weres<ptr type="liebermannNote" n="5" target="#Ine_21.lnote.oe.5-2"/> bidde, he mot gecyþan, þæt he hine for ðeof ofsloge, nalles<ptr type="liebermannNote" n="6" target="#Ine_21.lnote.oe.6-2"/> þæs ofslegenan<ptr type="liebermannNote" n="7" target="#Ine_21.lnote.oe.7-2"/> gegildan ne his hlaford.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="21" corresp="#wit-bu"><pb n="98" ed="#liebermann"/>LXV. Gif mon ðon<hi rend="italic">ne</hi> þæs ofslægenan weres bidde, he mot gecyþan, þæt he hine for ðeofðe ofsloge, nalles þæs ofslægenan gegildan ne his hlaford.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="21" corresp="#wit-h"><pb n="98" ed="#liebermann"/>LXV. Gif mon<ptr type="liebermannNote" n="2" target="#Ine_21.lnote.oe.2"/> ðonne ðæs ofslægnan<ptr type="liebermannNote" n="4" target="#Ine_21.lnote.oe.4-3"/> weres bidde, he mot gecyþan, ðæt he hine for ðeof ofsloge, nallæs ðæs ofslagenon gegildan ne his hlaford.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="21" corresp="#wit-b-no-prol"><pb n="99" ed="#liebermann"/>Be swa ofslagenes mannes were. Gyf<ptr type="liebermannNote" n="4" target="#Ine_21.lnote.oe.4"/> man ðonne ðæs ofslægenan weres bidde, he mot gecyþan, þ<hi rend="italic">æt</hi> he hine for þeof ofsloge, nalæs ðæs ofslægenan gyldan ne his hlaford.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="21" corresp="#wit-q"><pb n="99" ed="#liebermann"/>Si quis ita<ptr type="liebermannNote" n="4" target="#Ine_21.lnote.oe.4-2"/> (sic) occisi weram exigat, licet<ptr type="liebermannNote" n="5" target="#Ine_21.lnote.oe.5"/> inueritari<ptr type="liebermannNote" n="6" target="#Ine_21.lnote.oe.6"/>, quod pro fure sit occisus, et non<ptr type="liebermannNote" n="7" target="#Ine_21.lnote.oe.7"/> respondeat<ptr type="liebermannNote" n="4" target="#Ine_21.lnote.oe.4-2"/> (soluatur) ipsius occisi congildonibus nec<ptr type="liebermannNote" n="8" target="#Ine_21.lnote.oe.8"/> domino suo.</ab>
+        <ab type="editionText" xml:lang="ang" source="#attenborough" corresp="#wit-e"><pb n="42" ed="#attenborough"/>[Be swa ofslagenes mannes were.] Gif mon ðonne þæs ófslægenan weres bidde, he mot gecyþan, þæt he hine for ðeof<ptr type="editorNote" n="9" target="#Ine_21.attnote.fn.9"/> ofsloge, nalles þæs ofslegenan gegildan<ptr type="editorNote" n="10" target="#Ine_21.attnote.fn.10"/> ne his hlaford.</ab>
+        <ab type="editionText" xml:lang="ang" source="#jurasinski-and-oliver" n="20.1" corresp="#wit-e"><pb n="384" ed="#jurasinski-and-oliver"/>{LXV} Gif mon ðonne þæs ófslægenan weres bidde, he mot gecyþan, þæt he hine for ðeof ofsloge, nalles þæs ofslegenan gegildan ne his hlaford.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><ptr type="liebermannNote" n="1" target="#Ine_21.lnote.de.1"/><pb n="99" ed="#liebermann"/>Wenn dann für diesen Erschlagenen Wergeld [gerichtlich] gefordert wird, so darf er [der des Todtschlags Angeklagte durch seinen Eid<ptr type="liebermannNote" n="2" target="#Ine_21.lnote.de.2"/>] beweisen, dass er jenen als einen Dieb erschlagen habe, keineswegs [gelangen zum Beweise<ptr type="liebermannNote" n="3" target="#Ine_21.lnote.de.3"/>] des Erschlagenen Gildegenossen noch dessen Herr.<ptr type="liebermannNote" n="4" target="#Ine_21.lnote.de.4"/></ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">If wergeld is then demanded [in court] for this slain man, he [the one accused of the killing] may prove [by his oath] that he slew him as a thief; by no means [do] the slain man’s guild-brothers or his lord [get to the proof].</ab>
+        <ab type="translation" xml:lang="en" source="#attenborough" corresp="#wit-e"><pb n="43" ed="#attenborough"/>If, however, anyone claims the slain man's wergeld, he [who slew him] shall be allowed to declare that he slew him, presuming him to be a thief; and neither the associates<ptr type="editorNote" n="1" target="#Ine_21.attnote.n.1"/> of the slain man, nor his lord, shall be allowed to proceed to an oath.</ab>
+        <ab type="translation" xml:lang="en" source="#whitelock"><pb n="402" ed="#whitelock"/>If anyone then asks for the wergild of the slain man, [the slayer] may declare that he slew him as a thief; by no means the associates or the lord of the slain man.<ptr type="editorNote" n="3" target="#Ine_21.whinote.n.3"/></ab>
+        <ab type="translation" xml:lang="en" source="#jurasinski-and-oliver" corresp="#wit-e"><pb n="385" ed="#jurasinski-and-oliver"/>If [some]one then claims the <hi rend="italic">wer</hi> of the slain man, [the killer] must declare that he slew him assuming he was a thief; neither the slain man’s associates nor his lord [have a further claim] in this regard.</ab>
+        <note type="comparison" source="#jurasinski-and-oliver" n="384"><label>compare</label> <ref target="clause:Ine_34">Ine 34</ref> <quote>Compare to §34.</quote></note>
+        <note type="comparison" source="#jurasinski-and-oliver" n="385"><label>compare</label> <ref target="clause:Ine_16">Ine 16</ref> <quote>For gegildan "associates" compare §16; for lack of culpability in slaying a thief compare §35.</quote></note>
+        <note type="comparison" source="#jurasinski-and-oliver" n="385"><label>compare</label> <ref target="clause:Ine_35">Ine 35</ref> <quote>For gegildan "associates" compare §16; for lack of culpability in slaying a thief compare §35.</quote></note>
+        <note type="comparison" source="#jurasinski-and-oliver" n="50"><label>restates</label> <ref target="clause:Ine_16">Ine 16</ref> <quote>After Ine §20 … the condition laid down in §16 must be stated again (§20.1)</quote></note>
+        <note type="comparedBy" source="#jurasinski-and-oliver" n="383"><ref target="clause:Ine_16">Ine 16</ref></note>
+        <note type="comparedBy" source="#jurasinski-and-oliver" n="400"><ref target="clause:Ine_35">Ine 35</ref></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_21.lnote.oe.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">99</biblScope></bibl><seg type="original" xml:lang="de">oððe to sleanne <hi rend="italic">überspringt B</hi></seg><seg type="translation" xml:lang="en" source="#claude">oððe to sleanne skipped by B</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_21.lnote.oe.4-2" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">99</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vor Klammer Lond;</hi> (<hi rend="italic">eingeklammertes</hi>) <hi rend="italic">übrige</hi></seg><seg type="translation" xml:lang="en" source="#claude">reading of Lond before the bracket; (the bracketed words) the others</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_21.lnote.oe.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">99</biblScope></bibl><seg type="original" xml:lang="de">oportet <hi rend="italic">Or</hi></seg><seg type="translation" xml:lang="en" source="#claude">oportet Or</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_21.lnote.oe.6" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">99</biblScope></bibl><seg type="original" xml:lang="de">in ueritate <hi rend="italic">Lond;</hi> probare <hi rend="italic">fügt zu Co</hi></seg><seg type="translation" xml:lang="en" source="#claude">in ueritate Lond; probare added by Co</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_21.lnote.oe.7" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">99</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Brti</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Brti</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_21.lnote.oe.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">99</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">so Lond;</hi> uel <hi rend="italic">übrige</hi></seg><seg type="translation" xml:lang="en" source="#claude">thus Lond; uel the others</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_21.lnote.oe.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">98</biblScope></bibl><seg type="original" xml:lang="de">o <hi rend="italic">geänd. in</hi> a</seg><seg type="translation" xml:lang="en" source="#claude">o altered to a</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_21.lnote.oe.4-3" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">98</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">geänd. in</hi> ofslægenan</seg><seg type="translation" xml:lang="en" source="#claude">altered to ofslægenan</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_21.lnote.oe.5-2" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">98</biblScope></bibl><seg type="original" xml:lang="de">wæres <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">wæres Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_21.lnote.oe.6-2" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">98</biblScope></bibl><seg type="original" xml:lang="de">na læs <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">na læs Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_21.lnote.oe.7-2" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">98</biblScope></bibl><seg type="original" xml:lang="de">ofslæg. gegyldan <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">ofslæg. gegyldan Ld</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Ine_21.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">71</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Zu 20 notwendig gehörig; <hi rend="italic">s. o.</hi> Wi 28¹</seg><seg type="translation" xml:lang="en" source="#claude">Belongs necessarily with 20; <hi rend="italic">see above</hi> Wi 28¹</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Ine_21.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">71</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">Beklagter geniesst Beweisnähe (<hi rend="italic">s. d. Gl</hi> 6), wenn er den Totschlag nicht verhehlte</seg><seg type="translation" xml:lang="en" source="#claude">The defendant enjoys the nearer right to proof (<hi rend="italic">see</hi> that word in <hi rend="italic">Gl</hi> 6) if he did not conceal the killing</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Ine_21.lnote.de.3" n="3" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">71</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">S. o.</hi> 16⁶</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">See above</hi> 16⁶</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Ine_21.lnote.de.4" n="4" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">71</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">Q erfindet <hi rend="italic">solvatur</hi> aus Zusammenhang oder Analogie mit 16. — Nicht ‘weder er noch sein Herr braucht zu zahlen’. — Thorpe meint irrig, der Herr bleibe vom Eide ausgeschlossen, weil Teilnehmer der Missetat, wie in 16 die Gilde. — Regelmässig also vertritt der Herr den Mann gerichtlich, auch den erschlagenen, indem er dessen Wergeld vom Totschläger einklagt; füge dies hinzu zu: <hi rend="italic">Gl</hi> Gefolge 16k</seg><seg type="translation" xml:lang="en" source="#claude">Q invents <hi rend="italic">solvatur</hi> from the context or by analogy with 16. — Not ‘neither he nor his lord need pay’. — Thorpe wrongly thinks that the lord remains excluded from the oath as a participant in the misdeed, like the guild in 16. — As a rule, then, the lord represents the man at law, even when he has been slain, by suing the slayer for his wergild; add this to <hi rend="italic">Gl</hi> Gefolge 16k</seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="Ine_21.attnote.fn.9" n="9" source="#attenborough"><bibl><biblScope unit="page">42</biblScope></bibl><label>ðeof</label><seg type="original" xml:lang="en"><hi rend="italic">for ðeofðe</hi>. Bu.</seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="Ine_21.attnote.fn.10" n="10" source="#attenborough"><bibl><biblScope unit="page">42</biblScope></bibl><label>gegildan</label><seg type="original" xml:lang="en"><hi rend="italic">gyldan</hi>. B.</seg></note>
+        <note type="editorNote" subtype="endnote" xml:id="Ine_21.attnote.n.1" n="1" source="#attenborough"><bibl><biblScope unit="page">185</biblScope></bibl><seg type="original" xml:lang="en">See note 1, cap. 16 above.</seg></note>
+        <note type="editorNote" subtype="translationFootnote" xml:id="Ine_21.whinote.n.3" n="3" source="#whitelock"><bibl><biblScope unit="page">402</biblScope></bibl><label>man</label><seg type="original" xml:lang="en">i.e. they arc not to have a prior right to produce an oath.</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

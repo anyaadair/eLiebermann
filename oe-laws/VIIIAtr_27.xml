@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="VIIIAtr_27">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>VIII Atr 27</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Cross-references to other clauses</resp><name ref="#wormald-ppmel">Wormald, Papers Preparatory</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Robertson’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">VIIIAtr_27</idno>
+        <idno type="citation">VIII Atr 27</idno>
+        <idno type="lawCode">VIII Atr</idno>
+        <idno type="lawCodeAnchor">VIIIAtr</idno>
+        <idno type="clause">27</idno>
+        <idno type="citationKey">VIIIAtr 27</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>VIII Æthelred</title> <note type="reign">Æthelred II, r. 978–1016</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">266</biblScope></bibl>
+          <bibl xml:id="robertson" type="edition">A. J. Robertson, <title>The Laws of the Kings of England from Edmund to Henry I</title> (Cambridge: Cambridge University Press, 1925), p. <biblScope unit="page">124</biblScope></bibl>
+          <bibl xml:id="rabin-doml" type="edition">Andrew Rabin, ed. and trans., <title>Old English Legal Writings: Wulfstan</title>, Dumbarton Oaks Medieval Library (Cambridge, MA: Harvard University Press, 2020), p. <biblScope unit="page">198</biblScope></bibl>
+          <bibl xml:id="whitelock" type="translation">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007), p. <biblScope unit="page">456</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="wormald-ppmel" type="study">Patrick Wormald, <title>Papers Preparatory to The Making of English Law: King Alfred to the Twelfth Century, II: From God’s Law to Common Law</title>, ed. Stephen Baxter and John Hudson (London: University of London, 2014)</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-d" rend="bold"><abbr>D</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 201</note></witness>
+          <witness xml:id="wit-g-a-part"><abbr>G(A) (part)</abbr> <note type="manuscript">London, British Library, Cotton Nero A.i</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 263">1014, after Feb.</date><date source="#whitelock #wormald-mel" n="EHD p. 454|MEL p. 336">1014</date><note type="promulgation">1014, after Feb. (Liebermann, I p. 263); 1014 (Whitelock, EHD p. 454; Wormald, MEL p. 336)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Perjury</term><term>Complicity</term><term>Forfeiture</term><term>Sacramental rites</term><term>Surety</term><term>Theft</term><term>Ecclesiastical directives</term><term>Legal principles</term><term>Mitigation</term><term>Oath and pledge</term></keywords>
+        <keywords n="people"><term>Priest</term><term>Witnesses</term><term>Ecclesiastical orders</term><term>Rank</term><term>Accomplices</term><term>Thief</term><term>Bishops</term><term>All people</term><term>Secular classes</term><term>Nobles</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 1457 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 266.</change>
+      <change when="2026-10" type="checked">Liebermann’s text added from <title>Die Gesetze der Angelsachsen</title> I, p. 266.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="27">
+        <head><ref type="lawCode" target="law:VIIIAtr">VIII Atr</ref> 27</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="27" corresp="#wit-d"><pb n="266" ed="#liebermann"/>Gif mæssepreost ahwar stande on leasre gewitnesse oððe on mǽnan aðe oððe þeofa gewita ⁊ geweorhta beo, þon<hi rend="italic">ne</hi> sy he aworpen of gehadodra gemanan ⁊ þolige ægðer ge geferscipes ge freondscipes ge æghwilces wurðscipes, buton he wið God ⁊ wið m<hi rend="italic">en</hi> þe deoplicor gebete, fullice swa biscop hi<hi rend="italic">m</hi> tæce, ⁊ hi<hi rend="italic">m</hi> borh finde, þ<hi rend="italic">æt</hi> he þanan forð æfre swilces geswice.</ab>
+        <ab type="editionText" xml:lang="ang" source="#robertson" n="27" corresp="#wit-d"><pb n="124" ed="#robertson"/>Gif mæssepreost ahwar stande on leasre gewitnesse oððe on mǽnan aðe, oððe þeofa gewita ⁊ geweorhta beo, þonne sy he aworpen of gehadodra gemanan ⁊ þolige ægðer ge geferscipes ge freondscipes ge æghwilces wurðscipes, buton he wið God ⁊ wið men þe deoplicor gebete, fullice swa biscop him tæce, ⁊ him borh finde þæt he þanan forð æfre swilces geswice.</ab>
+        <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-d"><pb n="198" ed="#rabin-doml"/>Gif mæssepreost ahwar stande on leasre gewitnesse oððe on mænan aðe oððe þeofa gewita and geweorhta beo, þonne sy he aworpen of gehadodra gemanan and þolige ægðer ge geferscipes, ge freondscipes, ge æghwilces wurðscipes, buton he wið God and wið men þe deoplicor gebete fullice swa biscop him tæce, and him borh finde, þæt he þanan forð æfre swilces geswice.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="266" ed="#liebermann"/>Wenn<ptr type="liebermannNote" n="1" target="#VIIIAtr_27.lnote.de.1"/> ein Priester irgendwo in falschem Zeugniss oder im Meineid<ptr type="liebermannNote" n="2" target="#VIIIAtr_27.lnote.de.2"/> [ertappt] dasteht, oder Mitwisser<ptr type="liebermannNote" n="3" target="#VIIIAtr_27.lnote.de.3"/> von Dieben und Mitwirker ist, dann sei er verstossen aus Gemeinschaft der Geistlichen und verliere sowohl [deren<ptr type="liebermannNote" n="4" target="#VIIIAtr_27.lnote.de.4"/>] Genossenschaft wie Freundschaft und jeden Ehrenrang, ausser wenn er gegenüber Gott und Weltlichen um so tiefer büsst — vollständig, wie [sein] Bischof ihm vorschreibt — und Bürgschaft für sich findet [dafür], dass er stets hinfort von solchem [Verbrechen] ablasse.</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">If a priest anywhere stands [convicted] of false witness or perjury, or is an accessory and accomplice of thieves, then let him be cast out of the fellowship of the clergy and lose both [their] fellowship and friendship and every honour, unless he makes all the deeper amends before God and men — in full, as [his] bishop prescribes for him — and finds surety [to the effect] that he will forever desist from such [crimes].</ab>
+        <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-d"><ptr type="editorNote" n="1" target="#VIIIAtr_27.robnote.n.1"/><pb n="125" ed="#robertson"/>If a priest anywhere be concerned in false witness or perjury<ptr type="editorNote" n="2" target="#VIIIAtr_27.robnote.n.2"/>, or be the accessory and accomplice of thieves, he shall be cast out from the fellowship of those in holy orders, and shall forfeit both their society and their friendship and every kind of privilege<ptr type="editorNote" n="3" target="#VIIIAtr_27.robnote.n.3"/>, unless he make full amends, both towards God and towards men, to the utmost of his ability, as the bishop shall prescribe for him, and find surety that henceforth he will cease for ever from all such [wrong-doing].</ab>
+        <ab type="translation" xml:lang="en" source="#whitelock" corresp="#wit-d"><pb n="456" ed="#whitelock"/>If anywhere a mass-priest takes part in false witness or perjury, or is the accessory and accomplice of thieves, he is then to be cast out from the fellowship of those in orders, and to forfeit both the society and friendship and every dignity, unless he atone for it deeply towards God and towards men, in full as the bishop instructs him, and find for himself surety that he will from that time forth ever desist from such things.</ab>
+        <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-d"><pb n="199" ed="#rabin-doml"/>If a priest is anywhere guilty of bearing false witness or committing perjury or being the aide or accomplice to thieves, then he is to be expelled from holy orders and deprived of companionship, friendship, and all entitlements unless he repents most deeply to God and the community entirely as the bishop instructs, and finds surety that he thenceforth will cease all wrongdoing.</ab>
+        <note type="comparison" source="#liebermann" n="266">EGu</note>
+        <note type="comparisonPrinted" source="#liebermann">Vgl. E G[u. ?]</note>
+        <note type="comparisonIncomplete">Some of Liebermann’s notes here are cut off in the gutter of the scan used, and are still to be completed.</note>
+        <note type="comparedBy" source="#liebermann"><ref target="clause:ICn_5-3">I Cn 5.3</ref></note>
+        <note type="comparedBy" source="#wormald-ppmel" n="93"><ref target="clause:ICn_5-3">I Cn 5.3</ref></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="VIIIAtr_27.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">184</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Wiederholt I Cn 5, 3f. = Northu 45</seg><seg type="translation" xml:lang="en" source="#claude">Repeated in I Cn 5, 3f. = Northu 45</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="VIIIAtr_27.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">184</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Einschliesslich Eideshilfe zu Falscheid; In Cn. <hi rend="italic">Vgl. Gl</hi> Zeuge 5; Meineid 4. 6 [Ämterverlust setzt das Festland als Strafe; Böhmer <hi rend="italic">Ki. u</hi>. <hi rend="italic">Staat</hi> 81; dem Laien droht Leibesstrafe II Cn 36]; Geistliches Gericht 9c</seg><seg type="translation" xml:lang="en" source="#claude">Including oath-helping to a false oath; In Cn. <hi rend="italic">Cf. Gl</hi> Zeuge 5; Meineid 4. 6 [on the Continent loss of office is laid down as the penalty; Böhmer <hi rend="italic">Ki. u</hi>. <hi rend="italic">Staat</hi> 81; the layman is threatened with corporal punishment II Cn 36]; Geistliches Gericht 9c</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="VIIIAtr_27.lnote.de.3" n="3" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">184</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Mitwissen Z. 1, n. 1; <hi rend="italic">vgl. o</hi>. 23 Anstiftung; Bürgschaft 6e</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf. Gl</hi> Mitwissen l. 1, n. 1; <hi rend="italic">cf. above</hi> 23 Anstiftung; Bürgschaft 6e</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="VIIIAtr_27.lnote.de.4" n="4" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">184</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">So Toller s. v. <hi rend="italic">geferscipe</hi>; auch <hi rend="italic">societate ordinatorum</hi> In Cn; aber <hi rend="italic">s. o</hi>. 19¹. Besass der Priester die Würde des Thegn (<hi rend="italic">s. d. Gl</hi> 10), so verliert er sie; <hi rend="italic">s. u</hi>. 28f.</seg><seg type="translation" xml:lang="en" source="#claude">So Toller s. v. <hi rend="italic">geferscipe</hi>; also <hi rend="italic">societate ordinatorum</hi> In Cn; but <hi rend="italic">see above</hi> 19¹. If the priest possessed the rank of thegn (<hi rend="italic">see</hi> that word in <hi rend="italic">Gl</hi> 10), he loses it; <hi rend="italic">see below</hi> 28f.</seg></note>
+        <note type="editorNote" subtype="endnote" xml:id="VIIIAtr_27.robnote.n.1" n="1" source="#robertson"><bibl><biblScope unit="page">341</biblScope></bibl><seg type="original" xml:lang="en">Cf. E. and G. 3; <hi rend="italic">N.P.L.</hi> 45.</seg></note>
+        <note type="editorNote" subtype="endnote" xml:id="VIIIAtr_27.robnote.n.2" n="2" source="#robertson"><bibl><biblScope unit="page">341</biblScope></bibl><seg type="original" xml:lang="en">Liebermann points out that, in the laws which show strong ecclesiastical influence, perjury is always regarded as one of the worst crimes, and is classed with murder and sorcery, cf. E. and G. 11; I Edm. 6; V Atr. 24 f.; VI, 7; 28, 2; 36; II Cn. 6.</seg></note>
+        <note type="editorNote" subtype="endnote" xml:id="VIIIAtr_27.robnote.n.3" n="3" source="#robertson"><bibl><biblScope unit="page">341</biblScope></bibl><seg type="original" xml:lang="en">Cf. cap. 28.</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

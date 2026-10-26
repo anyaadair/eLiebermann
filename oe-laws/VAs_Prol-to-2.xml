@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="VAs_Prol-to-2">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>V As Prol., 2</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Attenborough’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">VAs_Prol-to-2</idno>
+        <idno type="citation">V As Prol., 2</idno>
+        <idno type="lawCode">V As</idno>
+        <idno type="lawCodeAnchor">VAs</idno>
+        <idno type="clause">Prol., 2</idno>
+        <idno type="citationKey">VAs prol.</idno>
+        <idno type="citationKey">VAs 2</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>V Æthelstan (Exeter)</title> <note type="reign">Æthelstan, r. 924–939</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">166</biblScope></bibl>
+          <bibl xml:id="attenborough" type="edition">F. L. Attenborough, <title>The Laws of the Earliest English Kings</title> (Cambridge: Cambridge University Press, 1922), p. <biblScope unit="page">152</biblScope></bibl>
+          <bibl xml:id="whitelock" type="translation">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007), p. <biblScope unit="page">423</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-h" rend="bold"><abbr>H</abbr> <note type="manuscript">Strood, Medway Archive and Local Studies Centre, MS DRc/R1 (Textus Roffensis; formerly Rochester, Cathedral Library, A.3.5), c. 1120–25</note></witness>
+          <witness xml:id="wit-q"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note></witness>
+          <witness xml:id="wit-ld"><abbr>Ld</abbr> <note type="manuscript">William Lambarde, Archaionomia (London, 1568) – printed from manuscripts now lost</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 166">c.927–37</date><date source="#attenborough">before III, IV &amp; VI As</date><date source="#whitelock" n="EHD p. 423">before III and IV As</date><date source="#wormald-mel" n="MEL p. 439">Christmas 930, 931 or 934</date><placeName>Exeter</placeName><note type="promulgation">c.927–37 (Liebermann, I p. 166); before III, IV &amp; VI As (Attenborough); before III and IV As (Whitelock, EHD p. 423); Christmas 930, 931 or 934 (Wormald, MEL p. 439); Exeter</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Harbouring</term><term>Theft</term><term>Capital offences</term><term>Banishment</term></keywords>
+        <keywords n="people"><term>Thief</term><term>Harbourer</term><term>Capital offenders</term></keywords>
+        <keywords n="locations"><term>Native district</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 837 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked and corrected against <title>Die Gesetze der Angelsachsen</title> I, p. 166.</change>
+      <change when="2026-10" type="checked">The modern editor’s text corrected against Attenborough, p. 152: “sýn; gefongan” → “sýn; gefongen”.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="Prol., 2">
+        <head><ref type="lawCode" target="law:VAs">V As</ref> Prol., 2</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="Prol., 2" corresp="#wit-h"><pb n="166" ed="#liebermann"/>⁊ gif heo<ptr type="liebermannNote" n="11" target="#VAs_Prol-to-2.lnote.oe.11"/> man æfre eft on earde gemete, ðæt hy sýn swa scyldige<ptr type="liebermannNote" n="12" target="#VAs_Prol-to-2.lnote.oe.12-2"/>, swa se ðe æt hæbbendre handa gefongen<ptr type="liebermannNote" n="9" target="#VAs_Prol-to-2.lnote.oe.9"/> sy.<ptr type="liebermannNote" n="10" target="#VAs_Prol-to-2.lnote.oe.10"/></ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="Prol., 2" corresp="#wit-ld"><pb n="166" ed="#liebermann"/>And gif hi mon æfre eft on ðæm<ptr type="liebermannNote" n="1" target="#VAs_Prol-to-2.lnote.oe.1"/> eorda<ptr type="liebermannNote" n="1" target="#VAs_Prol-to-2.lnote.oe.1"/> gemitte, þ<hi rend="italic">æt</hi> hi syn swa scildig, swa se ðe æt hebbendra<ptr type="liebermannNote" n="1" target="#VAs_Prol-to-2.lnote.oe.1"/> handa gefongen syn.<ptr type="liebermannNote" n="1" target="#VAs_Prol-to-2.lnote.oe.1"/></ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Prol., 2" corresp="#wit-q"><pb n="167" ed="#liebermann"/>Et si unquam amplius inibi<ptr type="liebermannNote" n="12" target="#VAs_Prol-to-2.lnote.oe.12"/> compareant, sint ita culpabiles, sicut qui furtum habens<ptr type="liebermannNote" n="13" target="#VAs_Prol-to-2.lnote.oe.13"/> in manibus capietur.<ptr type="liebermannNote" n="14" target="#VAs_Prol-to-2.lnote.oe.14"/></ab>
+        <ab type="editionText" xml:lang="ang" source="#attenborough" n="§2" corresp="#wit-h"><pb n="152" ed="#attenborough"/>⁊ gif heo man æfre eft on earde gemete<ptr type="editorNote" n="14" target="#VAs_Prol-to-2.attnote.fn.14"/>, ðæt hy sýn swa scyldige, swa se ðe æt hæbbendre<ptr type="editorNote" n="15" target="#VAs_Prol-to-2.attnote.fn.15"/> handa gefongen<ptr type="editorNote" n="10" target="#VAs_Prol-to-2.attnote.fn.10"/> sy.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="167" ed="#liebermann"/>Und wenn<ptr type="liebermannNote" n="1" target="#VAs_Prol-to-2.lnote.de.1"/> man sie je wieder in der Heimathgegend trifft, dass sie als so<ptr type="liebermannNote" n="2" target="#VAs_Prol-to-2.lnote.de.2"/> schuldbelastet gelten, wie wer auf handhafter That gefasst wird.</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">And if they are ever met with again in the home country, that they be held as guilty as one who is caught in the act.</ab>
+        <ab type="translation" xml:lang="en" source="#attenborough" corresp="#wit-h"><pb n="153" ed="#attenborough"/>And if anyone ever meets them afterwards in their native district<ptr type="editorNote" n="1" target="#VAs_Prol-to-2.attnote.n.1"/>, they shall be liable to the same punishment as one who is taken in the act of thieving<ptr type="editorNote" n="2" target="#VAs_Prol-to-2.attnote.n.2"/>.</ab>
+        <ab type="translation" xml:lang="en" source="#whitelock"><pb n="423" ed="#whitelock"/>And if they are ever met with in the district, that they are to be liable [to the same penalty] as he who is caught with stolen goods.</ab>
+        <note type="comparedBy" source="#liebermann"><ref target="clause:IVAs_3">IV As 3</ref></note>
+        <note type="liebermannNote" subtype="textual" xml:id="VAs_Prol-to-2.lnote.oe.12" n="12" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">167</biblScope></bibl><seg type="original" xml:lang="de">ibi <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">ibi Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="VAs_Prol-to-2.lnote.oe.13" n="13" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">167</biblScope></bibl><seg type="original" xml:lang="de">-nt <hi rend="italic">Lond;</hi> in m. h. <hi rend="italic">TMHkBr</hi></seg><seg type="translation" xml:lang="en" source="#claude">-nt Lond; in m. h. TMHkBr</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="VAs_Prol-to-2.lnote.oe.14" n="14" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">167</biblScope></bibl><seg type="original" xml:lang="de">-entur <hi rend="italic">Lond;</hi> -iatur <hi rend="italic">MHk</hi></seg><seg type="translation" xml:lang="en" source="#claude">-entur Lond; -iatur MHk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="VAs_Prol-to-2.lnote.oe.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">166</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">so</hi></seg><seg type="translation" xml:lang="en" source="#claude">sic</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="VAs_Prol-to-2.lnote.oe.11" n="11" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">166</biblScope></bibl><seg type="original" xml:lang="de">eo <hi rend="italic">auf Rasur</hi></seg><seg type="translation" xml:lang="en" source="#claude">eo on an erasure</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="VAs_Prol-to-2.lnote.oe.12-2" n="12" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">166</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">geänd.</hi> scyldig</seg><seg type="translation" xml:lang="en" source="#claude">altered scyldig</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="VAs_Prol-to-2.lnote.oe.9" n="9" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">166</biblScope></bibl><seg type="original" xml:lang="de">o <hi rend="italic">geänd. in</hi> a</seg><seg type="translation" xml:lang="en" source="#claude">o altered to a</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="VAs_Prol-to-2.lnote.oe.10" n="10" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">166</biblScope></bibl><seg type="original" xml:lang="de">y <hi rend="italic">auf Rasur</hi></seg><seg type="translation" xml:lang="en" source="#claude">y on an erasure</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="VAs_Prol-to-2.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">108</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">Diesen und folg. Paragraphen wiederholt IV 3—3, 2</seg><seg type="translation" xml:lang="en" source="#claude">IV 3—3, 2 repeats this and the following section</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="VAs_Prol-to-2.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">108</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">Der der Verpflanzung Ungehorsame ist friedlos (<hi rend="italic">s. d. Gl</hi> 10 b), kann also straflos getötet werden, wie später der zurückkehrende Abschwörer (<hi rend="italic">s. d. Gl</hi> 3) des Reiches</seg><seg type="translation" xml:lang="en" source="#claude">The man who refuses to be removed is outlawed (<hi rend="italic">see</hi> that word in <hi rend="italic">Gl</hi> 10 b), and may therefore be killed with impunity, as later may the abjurer (<hi rend="italic">see</hi> that word in <hi rend="italic">Gl</hi> 3) of the realm who returns</seg></note>
+        <note type="editorNote" subtype="endnote" xml:id="VAs_Prol-to-2.attnote.n.1" n="1" source="#attenborough"><bibl><biblScope unit="page">211</biblScope></bibl><seg type="original" xml:lang="en">Cf. IV As. cap. 3.</seg></note>
+        <note type="editorNote" subtype="endnote" xml:id="VAs_Prol-to-2.attnote.n.2" n="2" source="#attenborough"><bibl><biblScope unit="page">211</biblScope></bibl><seg type="original" xml:lang="en">Cf. Wiht. cap. 26; Ine, cap. 29; II As. cap. 11, etc.</seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="VAs_Prol-to-2.attnote.fn.10" n="10" source="#attenborough"><bibl><biblScope unit="page">152</biblScope></bibl><label>wille</label><seg type="original" xml:lang="en"><hi rend="italic">o</hi> altered to <hi rend="italic">a</hi>. H.</seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="VAs_Prol-to-2.attnote.fn.14" n="14" source="#attenborough"><bibl><biblScope unit="page">152</biblScope></bibl><label>gemete</label><seg type="original" xml:lang="en"><hi rend="italic">on ðæm eorda gemitte</hi>.</seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="VAs_Prol-to-2.attnote.fn.15" n="15" source="#attenborough"><bibl><biblScope unit="page">152</biblScope></bibl><label>hæbbendre</label><seg type="original" xml:lang="en"><hi rend="italic">hebbendra</hi>.</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

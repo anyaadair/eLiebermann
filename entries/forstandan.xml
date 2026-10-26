@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>forstandan</title>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">forstandan</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, <biblScope unit="volume">2.1</biblScope> (Wörterbuch), <biblScope unit="page">79</biblScope>
+            <ptr type="facsimile" target="https://archive.org/details/diegesetzederang02liebuoft/page/79/mode/2up"/>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <revisionDesc>
+      <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry xml:lang="ang">
+        <form type="lemma">
+          <orth>forstandan</orth>
+        </form>
+        <dictScrap type="liebermann"><hi rend="bold">forstandan</hi> <ref type="lawCode" target="law:Ine">Ine</ref> 62 | 3: ~tent <ref type="lawCode" target="law:Ath">Að</ref> 1 | <hi rend="italic"><ref type="abbreviation" target="gram:Optativ"><abbr>op</abbr></ref></hi> 3: ~de <ref type="lawCode" target="law:IIAs">II As</ref> 1,5 <ref type="lawCode" target="law:B">B</ref> <ref type="lawCode" target="law:So">So</ref>. 10,1 <ref type="lawCode" target="law:Ld">Ld</ref> <ref type="lawCode" target="law:So">So</ref>. <ref type="lawCode" target="law:VIAs">VI As</ref> 1,4. 8,2. <ref type="lawCode" target="law:IAtr">I Atr</ref> 4,2 = <ref type="lawCode" target="law:IICn">II Cn</ref> 33,1a; ~tonde (<hi rend="italic"><ref type="abbreviation" target="gram:geandert"><abbr>geänd.</abbr></ref></hi> ~tande) <ref type="lawCode" target="law:IIAs">II As</ref> <ref type="lawCode" target="law:H">H</ref>: 1,5. 10,1 — <hi rend="italic"><ref type="abbreviation" target="gram:mitAccusativ"><abbr>m ac</abbr></ref></hi> <hi rend="bold">1</hi>) <hi rend="italic"><ref type="abbreviation" target="gram:furJemanden"><abbr>für jem.</abbr></ref> schützend eintreten</hi> <ref type="lawCode" target="law:Ine">Ine</ref> 62. <ref type="lawCode" target="law:IIAs">II As</ref> 1,5. <ref type="lawCode" target="law:VIAs">VI</ref> 1,4. 8,2 [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>. <ref type="abbreviation" target="gram:althochdeutsch"><abbr>ahd</abbr></ref>.</hi> ferstan, <hi rend="italic"><ref type="abbreviation" target="gram:friesisch"><abbr>fris.</abbr></ref></hi> urstonda]; foran, forene ~ <hi rend="italic">verteidigen</hi> <ref type="lawCode" target="law:IAtr">I Atr</ref> 4,2 = <ref type="lawCode" target="law:IICn">II Cn</ref> 33,1a; <hi rend="italic"><ref type="abbreviation" target="gram:ohne"><abbr>ohne</abbr></ref></hi> forene <ref type="lawCode" target="law:B">B</ref> <hi rend="bold">2</hi>) <hi rend="italic">an Wert aufwiegen</hi> <ref type="lawCode" target="law:Ath">Að</ref> 1; <hi rend="italic"><ref type="abbreviation" target="gram:ersetztDurch"><abbr>ersetzt durch</abbr></ref></hi> weorð beon <ref type="lawCode" target="law:Ld">Ld</ref> | noht ~ <hi rend="italic">nichts gelten</hi> <ref type="lawCode" target="law:IIAs">II As</ref> 10,1</dictScrap>
+        <dictScrap type="senses">
+          <sense n="1"><hi rend="italic"><ref type="abbreviation" target="gram:furJemanden"><abbr>für jem.</abbr></ref> schützend eintreten</hi> <ref type="lawCode" target="law:Ine">Ine</ref> 62. <ref type="lawCode" target="law:IIAs">II As</ref> 1,5. <ref type="lawCode" target="law:VIAs">VI</ref> 1,4. 8,2 [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>. <ref type="abbreviation" target="gram:althochdeutsch"><abbr>ahd</abbr></ref>.</hi> ferstan, <hi rend="italic"><ref type="abbreviation" target="gram:friesisch"><abbr>fris.</abbr></ref></hi> urstonda]; foran, forene ~ <hi rend="italic">verteidigen</hi> <ref type="lawCode" target="law:IAtr">I Atr</ref> 4,2 = <ref type="lawCode" target="law:IICn">II Cn</ref> 33,1a; <hi rend="italic"><ref type="abbreviation" target="gram:ohne"><abbr>ohne</abbr></ref></hi> forene <ref type="lawCode" target="law:B">B</ref></sense>
+          <sense n="2"><hi rend="italic">an Wert aufwiegen</hi> <ref type="lawCode" target="law:Ath">Að</ref> 1; <hi rend="italic"><ref type="abbreviation" target="gram:ersetztDurch"><abbr>ersetzt durch</abbr></ref></hi> weorð beon <ref type="lawCode" target="law:Ld">Ld</ref> | noht ~ <hi rend="italic">nichts gelten</hi> <ref type="lawCode" target="law:IIAs">II As</ref> 10,1</sense>
+        </dictScrap>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/11747">for-standan</ref></xr>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/45981">for-standan (Supplement)</ref></xr>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/11748">fór-standan</ref></xr>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/11757">for-stondan</ref></xr>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/11758">fór-stondan</ref></xr>
+        <xr type="lawCode"><ref target="clause:Ine_62">Ine 62</ref></xr>
+        <xr type="lawCode"><ref target="clause:Ath_1">Að 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIAs_1-5">II As 1,5</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIAs_10-1">II As 10,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:VIAs_1-4">VI As 1,4</ref></xr>
+        <xr type="lawCode"><ref target="clause:VIAs_8-2">VI As 8,2</ref></xr>
+        <xr type="lawCode"><ref target="clause:IAtr_4-2">I Atr 4,2</ref></xr>
+        <xr type="lawCode"><ref target="clause:IICn_33-1a">II Cn 33,1a</ref></xr>
+      </entry>
+    </body>
+  </text>
+</TEI>

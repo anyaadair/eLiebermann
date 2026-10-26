@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Ine_34">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Ine 34</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Attenborough’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Whitelock’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">Ine_34</idno>
+        <idno type="citation">Ine 34</idno>
+        <idno type="lawCode">Ine</idno>
+        <idno type="lawCodeAnchor">Ine</idno>
+        <idno type="clause">34</idno>
+        <idno type="citationKey">Ine 34</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Ine’s Laws (in Alfred’s Domboc)</title> <note type="reign">Ine, r. 688–726</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">102</biblScope></bibl>
+          <bibl xml:id="jurasinski-and-oliver" type="edition">Stefan Jurasinski and Lisi Oliver, <title>The Laws of Alfred: The Domboc and the Making of Anglo-Saxon Law</title> (Cambridge: Cambridge University Press, 2021), p. <biblScope unit="page">400</biblScope></bibl>
+          <bibl xml:id="attenborough" type="edition">F. L. Attenborough, <title>The Laws of the Earliest English Kings</title> (Cambridge: Cambridge University Press, 1922), p. <biblScope unit="page">46</biblScope></bibl>
+          <bibl xml:id="whitelock" type="translation">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007), p. <biblScope unit="page">403</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-e" rend="bold"><abbr>E</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 173 (Parker Chronicle and Laws)</note></witness>
+          <witness xml:id="wit-h"><abbr>H</abbr> <note type="manuscript">Strood, Medway Archive and Local Studies Centre, MS DRc/R1 (Textus Roffensis; formerly Rochester, Cathedral Library, A.3.5), c. 1120–25</note></witness>
+          <witness xml:id="wit-b-no-prol"><abbr>B (no Prol.)</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383</note></witness>
+          <witness xml:id="wit-g-prol-only"><abbr>G (Prol. only)</abbr> <note type="manuscript">London, British Library, Cotton Nero A.i</note></witness>
+          <witness xml:id="wit-q"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note></witness>
+          <witness xml:id="wit-ld"><abbr>Ld</abbr> <note type="manuscript">William Lambarde, Archaionomia (London, 1568) – printed from manuscripts now lost</note></witness>
+          <witness xml:id="wit-bu"><abbr>Bu</abbr></witness>
+          <witness xml:id="wit-ot-frags"><abbr>Ot (frags.)</abbr> <note type="manuscript">London, British Library, Cotton Otho B.xi (damaged by fire, 1731)</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 88">688–95</date><date source="#whitelock" n="EHD p. 399">688–94</date><date source="#wormald-mel" n="MEL p. 103">688×92</date><note type="promulgation">688–95 (Liebermann, I p. 88); 688–94 (Whitelock, EHD p. 399); 688×92 (Wormald, MEL p. 103)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Homicide</term><term>Oath and pledge</term><term>Compensation</term><term>Capital offences</term><term>Marauding</term><term>Wergeld</term></keywords>
+        <keywords n="people"><term>Capital offenders</term><term>Marauders</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 596 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked and corrected against <title>Die Gesetze der Angelsachsen</title> I, p. 102.</change>
+      <change when="2026-10" type="checked">Liebermann’s text of MS B added from Gesetze I, p. 102.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="34">
+        <head><ref type="lawCode" target="law:Ine">Ine</ref> 34</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="34" corresp="#wit-e"><pb n="102" ed="#liebermann"/>LXXVIII. Se ðe on ðære fore wære, þæt<ptr type="liebermannNote" n="24" target="#Ine_34.lnote.oe.24"/> mon monnan ofsloge, getriewe hine ðæs sleges ⁊ ða fore gebete be ðæs ofslegenan wergielde:</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="34" corresp="#wit-h"><pb n="102" ed="#liebermann"/>LXXVIII. Se (þe<ptr type="liebermannNote" n="1" target="#Ine_34.lnote.oe.1"/>) on þære fóre wære, ðæt mon<ptr type="liebermannNote" n="2" target="#Ine_34.lnote.oe.2"/> mon<ptr type="liebermannNote" n="14" target="#Ine_34.lnote.oe.14"/> ofsloge, getriwe hine þæs sleges ⁊ þa fore gebete be ðæs ofslægnan were:</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="34" corresp="#wit-b-no-prol"><pb n="102" ed="#liebermann"/>Be manslihte. Se ðe on ðere fore wære, ðær mon mon<ptr type="liebermannNote" n="5" target="#Ine_34.lnote.oe.5"/> ofsloge, getrywie<ptr type="liebermannNote" n="6" target="#Ine_34.lnote.oe.6"/> hine ðæs slæges oððe foregebete be þæs ofslægenan wergylde<ptr type="liebermannNote" n="7" target="#Ine_34.lnote.oe.7"/>:</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="34" corresp="#wit-q"><pb n="103" ed="#liebermann"/>Qui in collegio fuerit, ubi aliquis occisus sit, adcredulitet se, quod eum non percussit, uel<ptr type="liebermannNote" n="28" target="#Ine_34.lnote.oe.28"/> emendet secundum occisi weregildum:</ab>
+        <ab type="editionText" xml:lang="ang" source="#attenborough" corresp="#wit-e"><pb n="46" ed="#attenborough"/>[Be manslihte.] Se ðe on ðære fore wære, þæt<ptr type="editorNote" n="12" target="#Ine_34.attnote.fn.12"/> mon monnan<ptr type="editorNote" n="13" target="#Ine_34.attnote.fn.13"/> ofsloge, getriewe hine ðæs sleges ⁊ ða fore gebete<ptr type="editorNote" n="14" target="#Ine_34.attnote.fn.14"/> be ðæs ofslegenan wergielde<ptr type="editorNote" n="15" target="#Ine_34.attnote.fn.15"/>.</ab>
+        <ab type="editionText" xml:lang="ang" source="#jurasinski-and-oliver" n="34" corresp="#wit-e"><pb n="400" ed="#jurasinski-and-oliver"/>{LXXVIII} Se ðe on ðære fore wære þæt mon monnan ofsloge, getriewe hine ðæs sleges ⁊ ða fore gebete be ðæs ofslegenan wergielde.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="103" ed="#liebermann"/>Wer bei der Fahrt<ptr type="liebermannNote" n="1" target="#Ine_34.lnote.de.1"/> war, wo<ptr type="liebermannNote" n="2" target="#Ine_34.lnote.de.2"/> man einen Menschen<ptr type="liebermannNote" n="3" target="#Ine_34.lnote.de.3"/> erschlug, der schwöre sich von dem Todtschlag<ptr type="liebermannNote" n="4" target="#Ine_34.lnote.de.4"/> rein<ptr type="liebermannNote" n="5" target="#Ine_34.lnote.de.5"/> und büsse die [Theilnahme an der] Fahrt je nach dem Wergeld des Erschlagenen:</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">Whoever was on the expedition on which a person was slain, let him clear himself by oath of the slaying and pay compensation for [taking part in] the expedition according to the wergeld of the slain man:</ab>
+        <ab type="translation" xml:lang="en" source="#attenborough" corresp="#wit-e"><pb n="47" ed="#attenborough"/>He who has been on a foray, which has resulted in<ptr type="editorNote" n="1" target="#Ine_34.attnote.n.1"/> a man being slain, must clear himself of the homicide and pay compensation for his participation in the foray, in proportion to the wergeld of the slain man.</ab>
+        <ab type="translation" xml:lang="en" source="#whitelock"><pb n="403" ed="#whitelock"/>Whoever was present on the expedition made for the purpose of killing a man,<ptr type="editorNote" n="6" target="#Ine_34.whinote.n.6"/> is to clear himself of the killing and pay compensation for the expedition according to the wergild of the slain man.</ab>
+        <ab type="translation" xml:lang="en" source="#jurasinski-and-oliver" corresp="#wit-e"><pb n="401" ed="#jurasinski-and-oliver"/>He who was on a raid in which a man was killed, let him clear himself [by oath] of culpability for the death and compensate for his part in the raid according to the slain man’s wergild.</ab>
+        <note type="comparedBy" source="#jurasinski-and-oliver" n="309"><ref target="clause:Af_11-5">Af 11.5</ref></note>
+        <note type="comparedBy" source="#jurasinski-and-oliver" n="323"><ref target="clause:Af_29">Af 29</ref></note>
+        <note type="comparedBy" source="#jurasinski-and-oliver" n="384"><ref target="clause:Ine_21">Ine 21</ref></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_34.lnote.oe.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">102</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">geänd. in</hi> mann</seg><seg type="translation" xml:lang="en" source="#claude">altered to mann</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_34.lnote.oe.6" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">102</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">im</hi> 16. <hi rend="italic">Jh. verb. aus</hi> getwywie</seg><seg type="translation" xml:lang="en" source="#claude">corrected in the 16th cent. from getwywie</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_34.lnote.oe.7" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">102</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">verb. aus</hi> -gyrde</seg><seg type="translation" xml:lang="en" source="#claude">corrected from -gyrde</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_34.lnote.oe.28" n="28" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">103</biblScope></bibl><seg type="original" xml:lang="de">aut <hi rend="italic">Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">aut Lond</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_34.lnote.oe.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">102</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">übergeschr.</hi></seg><seg type="translation" xml:lang="en" source="#claude">written above</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_34.lnote.oe.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">102</biblScope></bibl><seg type="original" xml:lang="de">o <hi rend="italic">geänd. in</hi> a</seg><seg type="translation" xml:lang="en" source="#claude">o altered to a</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_34.lnote.oe.14" n="14" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">102</biblScope></bibl><seg type="original" xml:lang="de">o <hi rend="italic">geänd. in</hi> a; <hi rend="italic">hinter</hi> n <hi rend="italic">Rasur</hi></seg><seg type="translation" xml:lang="en" source="#claude">o altered to a; erasure after n</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_34.lnote.oe.24" n="24" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">102</biblScope></bibl><seg type="original" xml:lang="de">ðær m. man offl., getrywie h. be his were þæs slæges oþþe f. g. be ð. ofslag. wergylde <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">ðær m. man offl., getrywie h. be his were þæs slæges oþþe f. g. be ð. ofslag. wergylde Ld</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Ine_34.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">74</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de">Q dachte an <hi rend="italic">collecta</hi> Fränk. Rechts (<hi rend="italic">vgl.</hi> Brunner II 651); in Hn 87, 8 fügt er hinzu: <hi rend="italic">vel societate</hi></seg><seg type="translation" xml:lang="en" source="#claude">Q was thinking of the <hi rend="italic">collecta</hi> of Frankish law (<hi rend="italic">cf.</hi> Brunner II 651); in Hn 87, 8 he adds: <hi rend="italic">vel societate</hi></seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Ine_34.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">74</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de">Ine’s indeclin. Relativum (<hi rend="italic">s. d. Wb</hi> III) wird auch an anderer Stelle modernisiert</seg><seg type="translation" xml:lang="en" source="#claude">Ine’s indeclinable relative (<hi rend="italic">see</hi> that word in <hi rend="italic">Wb</hi> III) is modernised elsewhere too</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Ine_34.lnote.de.3" n="3" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">74</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de">H cor. B modernisieren</seg><seg type="translation" xml:lang="en" source="#claude">H cor. B modernise</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Ine_34.lnote.de.4" n="4" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">74</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Bande 5—8; Totschlag 6; gemeinschaftliche Missetat 1. 7</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf. Gl</hi> Bande 5—8; Totschlag 6; gemeinschaftliche Missetat 1. 7</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Ine_34.lnote.de.5" n="5" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">74</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de">Q’s <hi rend="italic">adcredulitare</hi> ‘reinigen’, sonst nicht belegt, ist vielleicht aus der anderen Bed. von <hi rend="italic">getriewan</hi> ‘vertrauen, glauben’ gebildet; <hi rend="italic">vgl. Wb: (in)credibilis</hi> für <hi rend="italic">(un)getriewe.</hi> — BQ missverstehen <hi rend="italic">foregebetan</hi> mit dem Totschlag als Objekt; daher müssen sie ‘und’ in ‘oder’ verderben</seg><seg type="translation" xml:lang="en" source="#claude">Q’s <hi rend="italic">adcredulitare</hi> ‘clear oneself’, not otherwise attested, is perhaps formed from the other meaning of <hi rend="italic">getriewan</hi>, ‘trust, believe’; <hi rend="italic">cf. Wb: (in)credibilis</hi> for <hi rend="italic">(un)getriewe.</hi> — BQ misunderstand <hi rend="italic">foregebetan</hi>, taking the homicide as its object; hence they are obliged to corrupt ‘and’ into ‘or’</seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="Ine_34.attnote.fn.12" n="12" source="#attenborough"><bibl><biblScope unit="page">46</biblScope></bibl><label>þæt</label><seg type="original" xml:lang="en"><hi rend="italic">þær</hi>. B.</seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="Ine_34.attnote.fn.13" n="13" source="#attenborough"><bibl><biblScope unit="page">46</biblScope></bibl><label>monnan</label><seg type="original" xml:lang="en"><hi rend="italic">mon</hi>. H &amp; B.</seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="Ine_34.attnote.fn.14" n="14" source="#attenborough"><bibl><biblScope unit="page">46</biblScope></bibl><label>gebete</label><seg type="original" xml:lang="en"><hi rend="italic">oððe foregebete</hi>. B. <hi rend="italic">uel emendet</hi>. Quad.</seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="Ine_34.attnote.fn.15" n="15" source="#attenborough"><bibl><biblScope unit="page">46</biblScope></bibl><label>wergielde</label><seg type="original" xml:lang="en"><hi rend="italic">were</hi>. H.</seg></note>
+        <note type="editorNote" subtype="endnote" xml:id="Ine_34.attnote.n.1" n="1" source="#attenborough"><bibl><biblScope unit="page">187</biblScope></bibl><seg type="original" xml:lang="en">Cf. Alf. cap. 29 and 31; <hi rend="italic">þæt</hi> is possibly final—‘for the purpose of.’</seg></note>
+        <note type="editorNote" subtype="translationFootnote" xml:id="Ine_34.whinote.n.6" n="6" source="#whitelock"><bibl><biblScope unit="page">403</biblScope></bibl><label>man</label><seg type="original" xml:lang="en">I take the subjunctive mood to suggest purpose rather than result.</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

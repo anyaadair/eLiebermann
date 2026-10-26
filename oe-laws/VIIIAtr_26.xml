@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="VIIIAtr_26">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>VIII Atr 26</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Cross-references to other clauses</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Robertson’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">VIIIAtr_26</idno>
+        <idno type="citation">VIII Atr 26</idno>
+        <idno type="lawCode">VIII Atr</idno>
+        <idno type="lawCodeAnchor">VIIIAtr</idno>
+        <idno type="clause">26</idno>
+        <idno type="citationKey">VIIIAtr 26</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>VIII Æthelred</title> <note type="reign">Æthelred II, r. 978–1016</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">266</biblScope></bibl>
+          <bibl xml:id="robertson" type="edition">A. J. Robertson, <title>The Laws of the Kings of England from Edmund to Henry I</title> (Cambridge: Cambridge University Press, 1925), p. <biblScope unit="page">124</biblScope></bibl>
+          <bibl xml:id="rabin-doml" type="edition">Andrew Rabin, ed. and trans., <title>Old English Legal Writings: Wulfstan</title>, Dumbarton Oaks Medieval Library (Cambridge, MA: Harvard University Press, 2020), p. <biblScope unit="page">198</biblScope></bibl>
+          <bibl xml:id="whitelock" type="translation">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007), p. <biblScope unit="page">456</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-d" rend="bold"><abbr>D</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 201</note></witness>
+          <witness xml:id="wit-g-a-part"><abbr>G(A) (part)</abbr> <note type="manuscript">London, British Library, Cotton Nero A.i</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 263">1014, after Feb.</date><date source="#whitelock #wormald-mel" n="EHD p. 454|MEL p. 336">1014</date><note type="promulgation">1014, after Feb. (Liebermann, I p. 263); 1014 (Whitelock, EHD p. 454; Wormald, MEL p. 336)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Homicide</term><term>Capital offences</term><term>Forfeiture</term><term>Banishment</term><term>Boundaries</term><term>Ecclesiastical directives</term></keywords>
+        <keywords n="people"><term>Priest</term><term>Pope</term><term>Nobles</term><term>Pilgrim</term><term>Ecclesiastical orders</term><term>Rank</term><term>Travellers</term><term>All people</term><term>Secular classes</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 1456 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 266.</change>
+      <change when="2026-10" type="checked">Liebermann’s text added from <title>Die Gesetze der Angelsachsen</title> I, p. 266.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="26">
+        <head><ref type="lawCode" target="law:VIIIAtr">VIII Atr</ref> 26</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="26" corresp="#wit-d"><pb n="266" ed="#liebermann"/>Gif mæssepreost manslaga wurðe oððe elles mánweorc to swiðe gewurce, þon<hi rend="italic">ne</hi> þolige he ægðres ge hádes gé<ptr type="liebermannNote" n="1" target="#VIIIAtr_26.lnote.oe.1"/> éardes ⁊ wræcnige swa wíde swa papa hi<hi rend="italic">m</hi> scrife ⁊ dædbete georne.</ab>
+        <ab type="editionText" xml:lang="ang" source="#robertson" n="26" corresp="#wit-d"><pb n="124" ed="#robertson"/>Gif mæssepreost manslaga wurðe oððe elles mánweorc to swiðe gewurce, þonne þolige he ægðres ge hádes gé éardes ⁊ wræcnige swa wíde swa papa him scrife ⁊ dædbete georne.</ab>
+        <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-d"><pb n="198" ed="#rabin-doml"/>Gif mæssepreost manslaga wurðe oððe elles manweorc to swiðe gewurce, þonne þolige he ægðres ge hades ge eardes, and wræcnige swa wide swa papa him scrife and dædbete georne.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="266" ed="#liebermann"/>Wenn<ptr type="liebermannNote" n="1" target="#VIIIAtr_26.lnote.de.1"/> ein Priester Todtschläger wird oder sonst zu arg Missethat verübt, dann verliere er beides, sowohl geistlichen Grad wie Heimath [sammt<ptr type="liebermannNote" n="2" target="#VIIIAtr_26.lnote.de.2"/> gesellschaftlicher Stellung] und pilgere elend verbannt, so weit wie der Papst ihm zur Absolution auferlegen wird und thue eifrig [geistliche] Busse.</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">If a priest becomes a slayer or otherwise commits too grievous a misdeed, then let him lose both his orders and his homeland [with his social standing], and go into exile on pilgrimage as far as the Pope prescribes for him, and do eager penance.</ab>
+        <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-d"><ptr type="editorNote" n="1" target="#VIIIAtr_26.robnote.n.1"/><pb n="125" ed="#robertson"/>If a priest commits homicide or perpetrates any other great crime, he shall be deprived of his ecclesiastical office and likewise banished, and shall travel as a pilgrim as far as the Pope appoints for him, and zealously make amends.</ab>
+        <ab type="translation" xml:lang="en" source="#whitelock" corresp="#wit-d"><pb n="456" ed="#whitelock"/>If a mass-priest becomes a homicide or otherwise commits too grave a crime, he is then to forfeit both his ecclesiastical orders and his country, and to go on pilgrimage as far as the pope may prescribe for him, and zealously to make atonement.</ab>
+        <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-d"><pb n="199" ed="#rabin-doml"/>If a priest commits murder or any other deeds of great wickedness, then he is to be deprived of his office and his home, and he is to go on a pilgrimage as far as the pope prescribes for him and he is to repent sincerely.</ab>
+        <note type="comparedBy" source="#liebermann"><ref target="clause:IICn_41">II Cn 41</ref></note>
+        <note type="comparison" source="#wormald-mel" n="342"><label>cf. (principle restated)</label> <ref target="clause:VAtr_9">V Atr 9–9.2</ref> <quote>the principle was then restated (n. 365: VIII Atr 28, and 26 – 27:1, 29 – 30; cf. V Atr 9 – 9:2 (VI 5:1-4, with new matter))</quote></note>
+        <note type="comparison" source="#wormald-mel" n="342"><label>cf. (principle restated)</label> <ref target="clause:VIAtr_5-1">VI Atr 5.1–4</ref> <quote>the principle was then restated (n. 365: VIII Atr 28, and 26 – 27:1, 29 – 30; cf. V Atr 9 – 9:2 (VI 5:1-4, with new matter))</quote></note>
+        <note type="comparedBy" source="#wormald-mel" n="359"><ref target="clause:IICn_41">II Cn 41</ref></note>
+        <note type="comparedBy" source="#whitelock" n="468"><ref target="clause:IICn_41">II Cn 41</ref></note>
+        <note type="editorial">The accents in D (‘gé éardes’) serve to separate words.</note>
+        <note type="liebermannNote" subtype="textual" xml:id="VIIIAtr_26.lnote.oe.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">266</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Die Accente bezwecken Worttrennung</hi></seg><seg type="translation" xml:lang="en" source="#claude">The accents are meant to mark word division</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="VIIIAtr_26.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">184</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Wiederholt II Cn 41 = Hn 66, 2. (Anders 68, 8. 73, 3ff. aus Bussbüchern). <hi rend="italic">Vgl. Gl</hi> Papst 3d; Pilgerfahrt 3; Verwandtenmord 6. a; Degradation 3</seg><seg type="translation" xml:lang="en" source="#claude">Repeated in II Cn 41 = Hn 66, 2. (Differently 68, 8. 73, 3ff., from penitentials.) <hi rend="italic">Cf. Gl</hi> Papst 3d; Pilgerfahrt 3; Verwandtenmord 6. a; Degradation 3</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="VIIIAtr_26.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">184</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Wohl synonym dafür: <hi rend="italic">eðeles</hi> Cn, was <hi rend="italic">dignitate, liberalitate</hi> ‘Thegnschaft’ übersetzt wird und wahrscheinlich ‘Erbsitz, Landgut’ neben ‘Vaterland’ bedeuten will. Die Busse an Verletzte scheint mir nicht (mit Schreuer <hi rend="italic">Verbrechenskonk</hi>. 241) absorbiert durch die Pilgerfahrt; denn diese ist nicht Friedlosigkeit; <hi rend="italic">s. d</hi>. 10b. Letztere tritt erst bei Unterlassung jener ein laut II Cn 41, 2. 39, 1</seg><seg type="translation" xml:lang="en" source="#claude">Probably a synonym for it: <hi rend="italic">eðeles</hi> Cn, which is rendered <hi rend="italic">dignitate, liberalitate</hi> ‘thegnship’ and probably means ‘hereditary seat, landed estate’ besides ‘fatherland’. The compensation to the injured party does not seem to me (pace Schreuer <hi rend="italic">Verbrechenskonk</hi>. 241) to be absorbed by the pilgrimage; for the latter is not outlawry; <hi rend="italic">see</hi> that word 10b. Outlawry ensues only if the pilgrimage is not undertaken, according to II Cn 41, 2. 39, 1</seg></note>
+        <note type="editorNote" subtype="endnote" xml:id="VIIIAtr_26.robnote.n.1" n="1" source="#robertson"><bibl><biblScope unit="page">341</biblScope></bibl><seg type="original" xml:lang="en">Cf. II Cn. 41.</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

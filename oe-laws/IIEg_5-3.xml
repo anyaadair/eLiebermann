@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IIEg_5-3">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>II Eg 5.3</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Robertson’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">IIEg_5-3</idno>
+        <idno type="citation">II Eg 5.3</idno>
+        <idno type="lawCode">II Eg</idno>
+        <idno type="lawCodeAnchor">IIEg</idno>
+        <idno type="clause">5.3</idno>
+        <idno type="citationKey">IIEg 5.3</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>II Edgar (Andover)</title> <note type="reign">Edgar, r. 957/9–975</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">200</biblScope></bibl>
+          <bibl xml:id="robertson" type="edition">A. J. Robertson, <title>The Laws of the Kings of England from Edmund to Henry I</title> (Cambridge: Cambridge University Press, 1925), p. <biblScope unit="page">22</biblScope></bibl>
+          <bibl xml:id="rabin-doml" type="edition">Andrew Rabin, ed. and trans., <title>Old English Legal Writings: Wulfstan</title>, Dumbarton Oaks Medieval Library (Cambridge, MA: Harvard University Press, 2020), p. <biblScope unit="page">354</biblScope></bibl>
+          <bibl xml:id="whitelock" type="translation">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007), p. <biblScope unit="page">435</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-d" rend="bold"><abbr>D</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 201</note></witness>
+          <witness xml:id="wit-g-a"><abbr>G(A)</abbr> <note type="manuscript">London, British Library, Cotton Nero A.i</note></witness>
+          <witness xml:id="wit-a"><abbr>A</abbr> <note type="manuscript">London, British Library, Harley 55</note></witness>
+          <witness xml:id="wit-q"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note></witness>
+          <witness xml:id="wit-ld"><abbr>Ld</abbr> <note type="manuscript">William Lambarde, Archaionomia (London, 1568) – printed from manuscripts now lost</note></witness>
+          <witness xml:id="wit-so"><abbr>So</abbr> <note type="manuscript">William Somner's transcript of Cotton Otho B.xi (made before the fire)</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 194">959–c.962</date><date source="#robertson">after IV Eg</date><date source="#whitelock" n="EHD p. 434">959–63</date><placeName>Andover</placeName><note type="promulgation">959–c.962 (Liebermann, I p. 194); after IV Eg (Robertson); 959–63 (Whitelock, EHD p. 434); Andover</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Church rights</term><term>Sanctuary</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 950 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 200.</change>
+      <change when="2026-10" type="checked">Liebermann’s text of MS D added from Gesetze I, p. 200.</change>
+      <change when="2026-10" type="checked">Liebermann’s German translation corrected against Gesetze I, p. 200: “(Und es bestehe jeder Kirchen-Sonderfriede so [weiter], wie er am besten bestanden hat. A D)” → “(Und es bestehe jeder Kirchen-Sonderfriede so [weiter], wie er am besten bestanden hat. A D) (expanded letters in italics: A D)”.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="5.3">
+        <head><ref type="lawCode" target="law:IIEg">II Eg</ref> 5.3</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="5.3" corresp="#wit-a"><pb n="200" ed="#liebermann"/>⁊ stande ælc cyricgrið swa swa hit betst stod.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="5.3" corresp="#wit-d"><pb n="200" ed="#liebermann"/>⁊ stande ælc ciricgrið swa swa hit betst stod.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="5.3"><pb n="200" ed="#liebermann"/>[Not in G]</ab>
+        <ab type="editionText" xml:lang="ang" source="#robertson" n="5.3" corresp="#wit-d"><ptr type="editorNote" n="13" target="#IIEg_5-3.robnote.fn.13"/><pb n="22" ed="#robertson"/>⁊ stande ælc ciricgrið swa swa hit betst stod.</ab>
+        <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-g-a"><pb n="354" ed="#rabin-doml"/>And stande ælc cyricgrið swa swa hit betst stod.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="201" ed="#liebermann"/>(Und<ptr type="liebermannNote" n="1" target="#IIEg_5-3.lnote.de.1"/> es bestehe jeder Kirchen-Sonderfriede so [weiter], wie er am besten bestanden hat. <hi rend="italic">A D</hi>)</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">(And let every church's special protection continue as it best stood. A D)</ab>
+        <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-d"><pb n="23" ed="#robertson"/>And every right of sanctuary possessed by the church<ptr type="editorNote" n="1" target="#IIEg_5-3.robnote.n.1"/> shall be maintained according to the highest standards of the past<ptr type="editorNote" n="2" target="#IIEg_5-3.robnote.n.2"/>.</ab>
+        <ab type="translation" xml:lang="en" source="#whitelock"><pb n="435" ed="#whitelock"/>And every right of sanctuary is to be maintained as it best has been.]</ab>
+        <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-g-a"><pb n="355" ed="#rabin-doml"/>And the right of holy sanctuary is to be upheld just as it was when it was most respected.</ab>
+        <note type="editorial">Not in G or Quadr.; in A and D only.</note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="IIEg_5-3.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">136</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de">Hinter detaillierte Kirchensteuer- und Fastengebote der Hierarchie an die Laien scheint diese vage allgemeine Zusicherung des Staats an die Kirche nicht ursprünglich zu gehören. Auch fehlt der Satz dem Gebot gleichen Inhalts und Zusammenhangs V Atr 10, 1 = VI 13 (= I Cn 2, 1), das vielmehr EGu 1 benutzt. <hi rend="italic">Vgl. Gl</hi> Kirchenfriede 1.—Der höchste Grad wird bestimmt durch den besten Zustand früherer Zeit auch in Urkk. und III Atr 1. V 15 = VI 22, 3; die <hi rend="italic">cynescipes gerihta</hi> der Zeit seines Vaters fordert IV Eg 2a. Die Redensart <hi rend="italic">swa god (wel) swa (man) betst . . . mæg</hi> für ‘möglichst gut’ steht auch IV Eg 2. 2, 1. 12. V Atr 6 (= VI 3, 1). 35. VIII 43, 1. I Cn 1 D. II 67f.</seg><seg type="translation" xml:lang="en" source="#claude">This vague general assurance by the State to the Church does not seem originally to belong after detailed commands of the hierarchy to the laity concerning church dues and fasts. The sentence is also lacking in the command of the same content and context in V Atr 10, 1 = VI 13 (= I Cn 2, 1), which rather uses EGu 1. <hi rend="italic">Cf. Gl</hi> Kirchenfriede 1. — The highest degree is determined by the best state of former times in charters too, and in III Atr 1. V 15 = VI 22, 3; IV Eg 2a demands the <hi rend="italic">cynescipes gerihta</hi> of his father's time. The phrase <hi rend="italic">swa god (wel) swa (man) betst . . . mæg</hi> for ‘as well as possible’ also occurs in IV Eg 2. 2, 1. 12. V Atr 6 (= VI 3, 1). 35. VIII 43, 1. I Cn 1 D. II 67f.</seg></note>
+        <note type="editorNote" subtype="endnote" xml:id="IIEg_5-3.robnote.n.1" n="1" source="#robertson"><bibl><biblScope unit="page">303</biblScope></bibl><seg type="original" xml:lang="en">Cf. E. and G. 1.</seg></note>
+        <note type="editorNote" subtype="endnote" xml:id="IIEg_5-3.robnote.n.2" n="2" source="#robertson"><bibl><biblScope unit="page">303</biblScope></bibl><seg type="original" xml:lang="en">Cf. III Atr. 1; V. 15.</seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="IIEg_5-3.robnote.fn.13" n="13" source="#robertson"><bibl><biblScope unit="page">22</biblScope></bibl><label>⁊</label><seg type="original" xml:lang="en">Om. G, Ld, Q.</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

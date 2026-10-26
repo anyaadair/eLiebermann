@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Af_El-to-37">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Af El. 37</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">Af_El-to-37</idno>
+        <idno type="citation">Af El. 37</idno>
+        <idno type="lawCode">Af</idno>
+        <idno type="lawCodeAnchor">Af</idno>
+        <idno type="clause">El. 37</idno>
+        <idno type="citationKey">Af el</idno>
+        <idno type="citationKey">Af 37</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Alfred’s Domboc</title> <note type="reign">Alfred, r. 871–899</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">40</biblScope></bibl>
+          <bibl xml:id="jurasinski-and-oliver" type="edition">Stefan Jurasinski and Lisi Oliver, <title>The Laws of Alfred: The Domboc and the Making of Anglo-Saxon Law</title> (Cambridge: Cambridge University Press, 2021), p. <biblScope unit="page">256</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="whitelock" type="study">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007)</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-e" rend="bold"><abbr>E</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 173 (Parker Chronicle and Laws)</note></witness>
+          <witness xml:id="wit-h"><abbr>H</abbr> <note type="manuscript">Strood, Medway Archive and Local Studies Centre, MS DRc/R1 (Textus Roffensis; formerly Rochester, Cathedral Library, A.3.5), c. 1120–25</note></witness>
+          <witness xml:id="wit-b-no-prol"><abbr>B (no Prol.)</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383</note></witness>
+          <witness xml:id="wit-g-prol-only"><abbr>G (Prol. only)</abbr> <note type="manuscript">London, British Library, Cotton Nero A.i</note></witness>
+          <witness xml:id="wit-q"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note></witness>
+          <witness xml:id="wit-ld"><abbr>Ld</abbr> <note type="manuscript">William Lambarde, Archaionomia (London, 1568) – printed from manuscripts now lost</note></witness>
+          <witness xml:id="wit-bu"><abbr>Bu</abbr></witness>
+          <witness xml:id="wit-ot-frags"><abbr>Ot (frags.)</abbr> <note type="manuscript">London, British Library, Cotton Otho B.xi (damaged by fire, 1731)</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 27">871 (after 890?)–901</date><date source="#whitelock" n="EHD p. 408">885–899</date><date source="#wormald-mel" n="MEL p. 286">after 893</date><note type="promulgation">871 (after 890?)–901 (Liebermann, I p. 27); 885–899 (Whitelock, EHD p. 408); after 893 (Wormald, MEL p. 286)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Blasphemy</term></keywords>
+        <keywords n="people"><term>God</term><term>Nobles</term><term>the People</term><term>Secular classes</term><term>Rank</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 353 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 40.</change>
+      <change when="2026-10" type="checked">Liebermann’s text of MS G added from Gesetze I, p. 40.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="El. 37">
+        <head><ref type="lawCode" target="law:Af">Af</ref> El. 37</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="El. 37" corresp="#wit-e"><pb n="40" ed="#liebermann"/>Ne tæl<ptr type="liebermannNote" n="1" target="#Af_El-to-37.lnote.oe.1"/> ðu ðinne Dryhten<ptr type="liebermannNote" n="2" target="#Af_El-to-37.lnote.oe.2"/>, ne<ptr type="liebermannNote" n="3" target="#Af_El-to-37.lnote.oe.3"/> ðone hlaford þæs folces ne werge<ptr type="liebermannNote" n="4" target="#Af_El-to-37.lnote.oe.4"/> þu.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="El. 37" corresp="#wit-g-prol-only"><pb n="40" ed="#liebermann"/>Ne tæl þu ðinne Drihten, ne ðone hlaford þæs folces ne wyrg ðu.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="El. 37" corresp="#wit-h"><pb n="41" ed="#liebermann"/>Ne tæl þu ðinne Drihten, ne þone hlaford þæs folces ne werig þu.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="El. 37" corresp="#wit-q"><pb n="41" ed="#liebermann"/>Diis non detrahes<ptr type="liebermannNote" n="1" target="#Af_El-to-37.lnote.oe.1-2"/> et principibus populi tui non maledices.</ab>
+        <ab type="editionText" xml:lang="ang" source="#jurasinski-and-oliver" n="MP 37" corresp="#wit-e"><pb n="256" ed="#jurasinski-and-oliver"/>Ne tæl ðu ðinne Dryhten, ne ðone hlaford þæs folces ne werge þu.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="41" ed="#liebermann"/>Lästre du nicht deinen Herrn<ptr type="liebermannNote" n="1" target="#Af_El-to-37.lnote.de.1"/>, noch verfluche du den Fürsten des Volkes.<ptr type="liebermannNote" n="2" target="#Af_El-to-37.lnote.de.2"/></ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">Do not slander your Lord, nor curse the prince of the people.</ab>
+        <ab type="translation" xml:lang="en" source="#jurasinski-and-oliver" corresp="#wit-e"><pb n="257" ed="#jurasinski-and-oliver"/>Do not blaspheme your Lord, nor may you curse the lord of the people.</ab>
+        <note type="passageSource">Exodus 22,28</note>
+        <note type="comparison" source="#liebermann" n="41">Exodus 22.28</note>
+        <note type="comparisonPrinted" source="#liebermann">[Exodus 22, 28]</note>
+        <note type="comparedBy" source="#jurasinski-and-oliver" n="233"><ref target="clause:Af_El-to-11">Af El 11</ref></note>
+        <note type="comparedBy" source="#jurasinski-and-oliver" n="271"><ref target="clause:Af_El-to-49-7">Af El 49.7</ref></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_El-to-37.lnote.oe.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">40</biblScope></bibl><seg type="original" xml:lang="de">al. tale <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">al. tale Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_El-to-37.lnote.oe.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">40</biblScope></bibl><seg type="original" xml:lang="de">drih. <hi rend="italic">So Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">drih. So Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_El-to-37.lnote.oe.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">40</biblScope></bibl><seg type="original" xml:lang="de">⁊ <hi rend="italic">So</hi></seg><seg type="translation" xml:lang="en" source="#claude">⁊ So</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_El-to-37.lnote.oe.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">40</biblScope></bibl><seg type="original" xml:lang="de">wyrige <hi rend="italic">So;</hi> wyrge <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">wyrige So; wyrge Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_El-to-37.lnote.oe.1-2" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">41</biblScope></bibl><seg type="original" xml:lang="de">-has <hi rend="italic">Hk;</hi> et principi <hi rend="italic">Vulg.</hi></seg><seg type="translation" xml:lang="en" source="#claude">-has Hk; et principi Vulg.</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Af_El-to-37.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">46</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">Die Vulg. meint mit <hi rend="italic">diis</hi> ‘Richter’, dagegen Ælfred versteht in Prosa unter <hi rend="italic">dryhten</hi> (<hi rend="italic">s. Wb</hi>): ‘Gott’; <hi rend="italic">s. d. Gl</hi> 5c; so Price-Thorpe, Schmid. [Allerdings poetisch einmal ‘Griechenherr’; Sedgefield <hi rend="italic">Alfred’s Boethius</hi> 228. So auch der poet. Preis Æthelstans in <hi rend="italic">Ann. Agsax.</hi>] Dieselbe Schwierigkeit <hi rend="italic">o.</hi> 11¹⁰. 28⁷. Und wo menschlicher Herr im <hi rend="italic">dominus</hi> der Vulg. gemeint ist, setzt Ælfric an vielen von mir geprüften Stellen durchweg <hi rend="italic">hlaford.</hi> Ich glaube daher nicht mit Lambarde und Wilkins, Af meine hier einen menschlichen Herrn, etwa, im Ggs. zu folg. Volksfürsten, den privaten Schutzherrn, obwohl er ja anderswo die Pflicht des Gefolges (<hi rend="italic">s. d. Gl</hi> 10c) oft einschärft und im <hi rend="italic">Gregor</hi> (ed. Sweet 40. 196) vor Tadel gegen die Obrigkeit warnt. Die Verbindung von <hi rend="italic">tælan</hi> mit Gott fällt nicht auf: Ælfred sagt <hi rend="italic">getælan þine wyrd ⁊ þine gesælða</hi> (Boeth. ed. Sedgefield 21), Cynewulf <hi rend="italic">his godu</hi> (Götter) <hi rend="italic">tælde</hi> (Júliana 598); und Ælfric übersetzt Num. 14, 11 durch <hi rend="italic">God cwæð: hu lange tælð þis folc me</hi></seg><seg type="translation" xml:lang="en" source="#claude">By <hi rend="italic">diis</hi> the Vulg. means ‘judges’, whereas Ælfred in prose understands by <hi rend="italic">dryhten</hi> (<hi rend="italic">see Wb</hi>) ‘God’; <hi rend="italic">see</hi> that word in <hi rend="italic">Gl</hi> 5c; so Price-Thorpe, Schmid. [In poetry, admittedly, it once means ‘lord of the Greeks’; Sedgefield <hi rend="italic">Alfred’s Boethius</hi> 228. So too in the poetic praise of Æthelstan in <hi rend="italic">Ann. Agsax.</hi>] The same difficulty <hi rend="italic">above</hi> 11¹⁰. 28⁷. And where a human lord is meant by the <hi rend="italic">dominus</hi> of the Vulg., Ælfric, in many passages I have examined, consistently uses <hi rend="italic">hlaford.</hi> I therefore do not believe, with Lambarde and Wilkins, that Af means a human lord here — say, in contrast to the people’s prince that follows, the private protector — although he does often urge the duty of the retinue (<hi rend="italic">see</hi> that word in <hi rend="italic">Gl</hi> 10c) elsewhere, and in the <hi rend="italic">Gregory</hi> (ed. Sweet 40. 196) warns against criticism of those in authority. The combination of <hi rend="italic">tælan</hi> with God is not surprising: Ælfred says <hi rend="italic">getælan þine wyrd ⁊ þine gesælða</hi> (Boeth. ed. Sedgefield 21), Cynewulf <hi rend="italic">his godu</hi> (gods) <hi rend="italic">tælde</hi> (Júliana 598); and Ælfric translates Num. 14, 11 by <hi rend="italic">God cwæð: hu lange tælð þis folc me</hi></seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Af_El-to-37.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">47</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de">Af meint den König, was <hi rend="italic">hlaford</hi> (<hi rend="italic">s. Wb</hi> 9) oft bedeutet. Vielleicht hatte <hi rend="italic">folc</hi> (<hi rend="italic">s. Wb</hi> 6, auch <hi rend="italic">folclage</hi>), wie öfter, den Sinn des Ggsatzes zu Gott. <hi rend="italic">Vgl. Gl</hi> Ehrenkränkung 4d</seg><seg type="translation" xml:lang="en" source="#claude">Af means the king, which <hi rend="italic">hlaford</hi> (<hi rend="italic">see Wb</hi> 9) often signifies. Perhaps <hi rend="italic">folc</hi> (<hi rend="italic">see Wb</hi> 6, also <hi rend="italic">folclage</hi>) had, as it often does, the sense of a contrast to God. <hi rend="italic">Cf. Gl</hi> Ehrenkränkung 4d</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

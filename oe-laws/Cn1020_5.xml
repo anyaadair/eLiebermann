@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Cn1020_5">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Cn 1020 5</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">Cn1020_5</idno>
+        <idno type="citation">Cn 1020 5</idno>
+        <idno type="lawCode">Cn 1020</idno>
+        <idno type="lawCodeAnchor">Cn1020</idno>
+        <idno type="clause">5</idno>
+        <idno type="citationKey">Cn1020 5</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Cnut’s Letter of 1020</title> <note type="reign">Cnut, r. 1016–1035</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">273</biblScope></bibl>
+          <bibl xml:id="robertson" type="edition">A. J. Robertson, <title>The Laws of the Kings of England from Edmund to Henry I</title> (Cambridge: Cambridge University Press, 1925), p. <biblScope unit="page">140</biblScope></bibl>
+          <bibl xml:id="rabin-doml" type="edition">Andrew Rabin, ed. and trans., <title>Old English Legal Writings: Wulfstan</title>, Dumbarton Oaks Medieval Library (Cambridge, MA: Harvard University Press, 2020), p. <biblScope unit="page">226</biblScope></bibl>
+          <bibl xml:id="whitelock" type="translation">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007), p. <biblScope unit="page">460</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-york-gospels"><abbr>York Gospels</abbr> <note type="manuscript">York, Minster Library, Add. 1 (York Gospels)</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 273">1020, Feb.–July</date><date source="#robertson #wormald-mel" n="|MEL p. 347">1019/1020</date><date source="#whitelock" n="EHD p. 459">end of 1019 or very beginning of 1020</date><placeName source="#robertson">England</placeName><placeName source="#whitelock" n="EHD p. 459">probably written from Denmark</placeName><note type="promulgation">1020, Feb.–July (Liebermann, I p. 273); 1019/1020 (Robertson; Wormald, MEL p. 347); end of 1019 or very beginning of 1020 (Whitelock, EHD p. 459); England (Robertson); probably written from Denmark (Whitelock, EHD p. 459)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Boundaries</term><term>Military operations</term></keywords>
+        <keywords n="people"><term>King</term><term>Cnut</term><term>God</term><term>All people</term><term>Named individuals</term><term>Nobles</term><term>Secular classes</term><term>Rank</term></keywords>
+        <keywords n="locations"><term>Denmark</term><term>Named kingdoms</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 1569 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 273.</change>
+      <change when="2026-10" type="checked">Robertson’s text checked and corrected against her edition, p. 140.</change>
+      <change when="2026-10" type="checked">Liebermann’s text added from <title>Die Gesetze der Angelsachsen</title> I, p. 273.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="5">
+        <head><ref type="lawCode" target="law:Cn1020">Cn 1020</ref> 5</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="5" corresp="#wit-york-gospels"><pb n="273" ed="#liebermann"/>Þa cydde man me, þ<hi rend="italic">æt</hi> us mara hearm to fundode, þon<hi rend="italic">ne</hi> us wel licode; ⁊ þa for ic me sylf mid þam mannum þe me mid foron into Denmearcon, þe eow mæst hearm of com; ⁊ þ<hi rend="italic">æt</hi> hæbbe mid Godes fultume forene forfangen, þ<hi rend="italic">æt</hi> eow næfre heonon forð þanon nan unfrið to ne cymð, þa hwile þe ge mé rihtlice healdað ⁊ min lif byð.</ab>
+        <ab type="editionText" xml:lang="ang" source="#robertson" n="5" corresp="#wit-york-gospels"><pb n="140" ed="#robertson"/>Þa cydde man me þæt us mara hearm to fundode þonne us wel licode; ⁊ þa for ic me sylf, mid þam mannum þe me mid foron, into Denmearcon þe eow mæst hearm of com; ⁊ þæt hæbbe [ic] mid Godes fultume forene forfangen, þæt eow næfre heonon forð þanon nan unfrið to ne cymð, þa hwile þe ge mé rihtlice healdað ⁊ min lif byð.</ab>
+        <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-york-gospels"><pb n="226" ed="#rabin-doml"/>Þa cydde man me þæt us mara hearm to fundode, þonne us wel licode; and þa for ic me sylf, mid þam mannum þe me mid foron, into Denmearcon, þe eow mæst hearm of com; and þæt hæbbe ic mid Godes fultume forene forfangen, þæt eow næfre heonon forð þanon nan unfrið to ne cymð þa hwile þe ge me rihtlice healdað and min lif byð.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="273" ed="#liebermann"/>Da ward mir gemeldet, dass uns grösserer Schaden drohte, als uns wohl behagte; und da fuhr ich selbst mit den Männen, die mit mir fuhren, nach Dänemark, wo euch der grösste Schaden hergekommen war; und das hab [ich] mit Gottes Hilfe vorweg gesichert, dass euch niemals hinfort dorther irgend eine Feindseligkeit geschehen wird, so lange als ihr an mir gesetzlich festhaltet, und mein Leben währt.</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">Then I was told that greater harm threatened us than we liked; and then I went myself, with the men who went with me, to Denmark, from where the greatest harm had come to you; and with God's help I have forestalled it, so that no hostility will ever come to you from there henceforth, as long as you hold to me rightly and my life lasts.</ab>
+        <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-york-gospels"><pb n="141" ed="#robertson"/>When I was informed that we were threatened with danger greater than we could regard with equanimity, I went in person, with those who accompanied me, to Denmark, which was the chief source of danger to you, and, with the help of God, I have taken measures to prevent hostility ever from this time forth coming upon you from that quarter, as long as you support me loyally and my life lasts.</ab>
+        <ab type="translation" xml:lang="en" source="#whitelock"><pb n="460" ed="#whitelock"/>Then I was informed that greater danger was approaching us than we liked at all; and then I went myself with the men who accompanied me to Denmark, from where the greatest injury had come to you, and with God’s help I have taken measures so that never henceforth shall hostility reach you from there as long as you support me rightly and my life lasts.</ab>
+        <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-york-gospels"><pb n="227" ed="#rabin-doml"/>At that time, it was made known to me that a danger approached us greater than we would have preferred; then I myself went, alongside those who traveled with me, to Denmark, from which the greatest danger threatened you; and with God’s help I have forestalled it, so that from now on hostility from there will never threaten you as long as you obey me faithfully and my life continues.</ab>
+        <note type="editorial">Liebermann supplies ‘ic’ before ‘hæbbe’. 1019.</note>
+        <note type="textual" source="#rabin-doml">[2] hæbbe ic mid: hæbbe mid Y</note>
+      </div>
+    </body>
+  </text>
+</TEI>

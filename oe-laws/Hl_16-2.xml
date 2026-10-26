@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Hl_16-2">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Hl 16.2</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#oliver">Oliver</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#oliver">Oliver</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Attenborough’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Oliver’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Whitelock’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">Hl_16-2</idno>
+        <idno type="citation">Hl 16.2</idno>
+        <idno type="lawCode">Hl</idno>
+        <idno type="lawCodeAnchor">Hl</idno>
+        <idno type="clause">16.2</idno>
+        <idno type="citationKey">Hl 16.2</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Hlothhere and Eadric’s Code</title> <note type="reign">Hlothhere, r. 673–685; Eadric, r. 685–686</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">11</biblScope></bibl>
+          <bibl xml:id="oliver" type="edition">Lisi Oliver, <title>The Beginnings of English Law</title> (Toronto: University of Toronto Press, 2002), p. <biblScope unit="page">132</biblScope></bibl>
+          <bibl xml:id="attenborough" type="edition">F. L. Attenborough, <title>The Laws of the Earliest English Kings</title> (Cambridge: Cambridge University Press, 1922), p. <biblScope unit="page">22</biblScope></bibl>
+          <bibl xml:id="whitelock" type="translation">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007), p. <biblScope unit="page">395</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-h"><abbr>H</abbr> <note type="manuscript">Strood, Medway Archive and Local Studies Centre, MS DRc/R1 (Textus Roffensis; formerly Rochester, Cathedral Library, A.3.5), c. 1120–25</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 9">685–6</date><date source="#whitelock" n="EHD p. 393">673–85?</date><note type="promulgation">685–6 (Liebermann, I p. 9); 673–85? (Whitelock, EHD p. 393)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Attachment</term><term>Commerce</term><term>Oath and pledge</term><term>Legal procedure</term><term>Ritual</term><term>Goods</term><term>Concealment</term></keywords>
+        <keywords n="people"><term>Kentishmen</term><term>Reeves</term><term>Witnesses</term><term>Weorcmen</term><term>All people</term><term>Secular classes</term></keywords>
+        <keywords n="locations"><term>London</term><term>Churches</term><term>Buildings</term><term>Named towns</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 152 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked and corrected against <title>Die Gesetze der Angelsachsen</title> I, p. 11.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="16.2">
+        <head><ref type="lawCode" target="law:Hl">Hl</ref> 16.2</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="16.2" corresp="#wit-h"><pb n="11" ed="#liebermann"/>Gif he þ<hi rend="italic">æt</hi> ne mæge, gekyþe ðanne in wiofode mid his gewitena anum oþþe mid cyninges wicgerefan, þ<hi rend="italic">æt</hi> he þ<hi rend="italic">æt</hi> feoh undeornunga his cuþan ceape in wic gebohte; ⁊ him man þanne his weorð agefe.</ab>
+        <ab type="editionText" xml:lang="ang" source="#attenborough" corresp="#wit-h"><pb n="22" ed="#attenborough"/>Gif he þæt ne mæge, gekyþe ðanne in wiofode mid his gewitena anum oþþe mid cyninges wicgerefan, þæt he þæt feoh undeornunga his cuþan ceape in wic gebohte; and him man þanne his weorð agefe.</ab>
+        <ab type="editionText" xml:lang="ang" source="#oliver" n="11.2" corresp="#wit-h"><pb n="132" ed="#oliver"/>Gif he þ<hi rend="italic">æt</hi> ne mæge, gekyþe ðanne in wiofode mid his gewitena anum oþþe mid cyninges wicgerefan þ<hi rend="italic">at</hi> he þ<hi rend="italic">at</hi> feoh undeornunga his cuþan ceape in wic gebohte, ⁊ him man þanne his weorð agefe.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="11" ed="#liebermann"/>Wenn<ptr type="liebermannNote" n="1" target="#Hl_16-2.lnote.de.1"/> er [der Verklagte] das nicht kann, dann erkläre er am Altar<ptr type="liebermannNote" n="2" target="#Hl_16-2.lnote.de.2"/> mit einem seiner Zeugen oder mit des Königs Stadtvogte [als seinem Eideshelfer], dass er jene Fahrhabe unverhohlen durch seinen offenkundigen Kauf<ptr type="liebermannNote" n="3" target="#Hl_16-2.lnote.de.3"/> in [dieser] Stadt kaufte; und jener [Kläger] gebe ihm dann deren Preis zurück.<ptr type="liebermannNote" n="4" target="#Hl_16-2.lnote.de.4"/></ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">If he [the accused] cannot do that, then let him declare at the altar with one of his witnesses or with the king’s town-reeve [as his oath-helper] that he bought those goods openly by his public purchase in [that] town; and let that [plaintiff] then give him back their price.</ab>
+        <ab type="translation" xml:lang="en" source="#attenborough" corresp="#wit-h"><pb n="23" ed="#attenborough"/>If he cannot do so, he shall declare on the altar, with one of his witnesses or with the reeve of the king’s estate<ptr type="editorNote" n="1" target="#Hl_16-2.attnote.n.1"/>, that he bought the property openly in London, and with goods known to be his<ptr type="editorNote" n="2" target="#Hl_16-2.attnote.n.2"/>, and the value [of the property] shall be returned to him.</ab>
+        <ab type="translation" xml:lang="en" source="#whitelock" corresp="#wit-h"><pb n="395" ed="#whitelock"/>If he cannot do that, he is then to declare at the altar with one of his witnesses or with the king’s town-reeve, that he bought that property openly by a public transaction<ptr type="editorNote" n="6" target="#Hl_16-2.whinote.n.6"/> in the town, and he is then to be given back his price.</ab>
+        <ab type="translation" xml:lang="en" source="#oliver" corresp="#wit-h"><pb n="133" ed="#oliver"/>If he is unable to do that, let him declare then at the altar with one of his witnesses or with the king’s town-reeve that he bought that property without secrecy by his public purchase in the town; and [the] one [who sold it to him] should then give him back the price of it.<ptr type="editorNote" n="d" target="#Hl_16-2.olinote.n.d"/></ab>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Hl_16-2.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">23</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Ebd.</hi> 16. a</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Ibid.</hi> 16. a</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Hl_16-2.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">23</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Eidesform 7. Es erhellt nicht, ob die anderen Kaufzeugen ohne Eid dabeistehen, wie <hi rend="italic">o.</hi> 5¹⁰, oder gar nicht erscheinen</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf. Gl</hi> Eidesform 7. It is not clear whether the other witnesses to the purchase stand by without swearing, as <hi rend="italic">above</hi> 5¹⁰, or do not appear at all</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Hl_16-2.lnote.de.3" n="3" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">23</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">Nicht ‘für sein eigen Geld’, wie Frühere verstanden (property known to be his; Toller <hi rend="italic">Suppl.</hi> 136). Der Ggs. ist vielmehr ‘heimlich verstohlener Handel’; <hi rend="italic">s. d.</hi> 6. 8e</seg><seg type="translation" xml:lang="en" source="#claude">Not ‘for his own money’, as earlier scholars understood it (property known to be his; Toller <hi rend="italic">Suppl.</hi> 136). The contrast is rather ‘secret, furtive trading’; <hi rend="italic">see</hi> that word 6. 8e</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Hl_16-2.lnote.de.4" n="4" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">23</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">Der gutgläubige Erwerber erhielt damit besonderen Schutz seines Handels; <hi rend="italic">s. d. Gl</hi> 11; hier zuerst wird der Preisersatz ihm zuerkannt; H. Meyer <hi rend="italic">Publizität</hi> 75. Dies Privileg sollte vielleicht Käufer zum Londoner Markt locken und Kents Herrschaft in London beliebt machen. Es bezeugt Londons kommerzielle Wichtigkeit; Pol Mai II 157</seg><seg type="translation" xml:lang="en" source="#claude">The purchaser in good faith thereby received special protection for his transaction; <hi rend="italic">see</hi> that word in <hi rend="italic">Gl</hi> 11; here for the first time reimbursement of the price is awarded to him; H. Meyer <hi rend="italic">Publizität</hi> 75. This privilege was perhaps meant to attract buyers to the London market and to make Kent’s rule in London popular. It testifies to London’s commercial importance; Pol Mai II 157</seg></note>
+        <note type="editorNote" subtype="endnote" xml:id="Hl_16-2.attnote.n.1" n="1" source="#attenborough"><bibl><biblScope unit="page">180</biblScope></bibl><seg type="original" xml:lang="en">Or perhaps ‘the king’s reeve in London.’</seg></note>
+        <note type="editorNote" subtype="endnote" xml:id="Hl_16-2.attnote.n.2" n="2" source="#attenborough"><bibl><biblScope unit="page">180</biblScope></bibl><seg type="original" xml:lang="en">Or rather, perhaps, ‘in a public transaction.’</seg></note>
+        <note type="editorNote" subtype="translationFootnote" xml:id="Hl_16-2.whinote.n.6" n="6" source="#whitelock"><bibl><biblScope unit="page">395</biblScope></bibl><label>transaction</label><seg type="original" xml:lang="en">or “with goods known to be his” (Attenborough)</seg></note>
+        <note type="editorNote" subtype="translationFootnote" xml:id="Hl_16-2.olinote.n.d" n="d" source="#oliver"><bibl><biblScope unit="page">133</biblScope></bibl><label>it.</label><seg type="original" xml:lang="en">Grammatically it is ambiguous as to whether <hi rend="italic">his</hi> refers to the owner or the object, but the verb <hi rend="italic">agifan</hi>, ‘restore,’ implies that the <hi rend="italic">weorþ</hi>, ‘price,’ must be the purchase price rather than a new fine assessed for the damage to the owner’s honour. If <hi rend="italic">his</hi> is taken to mean ‘the owner’s,’ the translation would read ‘give him back his [purchase]-price.’ As the next clause discusses the stolen property, it seems more logical to similarly relate <hi rend="italic">his</hi> in this clause to the purloined goods. The result would be the same under either reading.</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Home</title>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">Home</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Written for the site.</p>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <change when="2026-10-12">First draft, from the text of the earlier home page.</change>
+      <change when="2026-10-13">Added a section on the Dōmas Database (the laws), above the section on the dictionary.</change>
+      <change when="2026-10-14">Rewrote the text of the Dōmas Database and dictionary sections.</change>
+      <change when="2026-10-15">The whole site is now eLiebermann: the laws section no longer has a name of its own.</change>
+      <change when="2026-10-15">Added a section on the guides.</change>
+      <change when="2026-10-18">Added an introduction to the whole site as the page's main heading; the three section headings now link to the Laws, Dictionary and Guides pages.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="page">
+        <head>Early English Laws and Legal Language</head>
+        <p>eLiebermann is a digital resource for the study of the laws and legal language of England before the Norman Conquest. Its foundation is Felix Liebermann's <title>Die Gesetze der Angelsachsen</title> (1903–16), around which it gathers additional editions, translations and scholarship. It has three parts: a database of the law codes, giving Liebermann's texts and German translation according to his own clause divisions; a digital edition of Liebermann's dictionary of the language of the laws; and a guide to the abbreviations, sigla and apparatus of the <title>Gesetze</title>.</p>
+        <p>eLiebermann is produced and edited by Anya Adair (The University of Hong Kong), and its work has been supported by a General Research Fund grant from the Research Grants Council of Hong Kong (17604022). The principles on which the texts are edited are set out under <ref target="editorial.html">Editorial Principles</ref>; the history, methods and people of the project are described under <ref target="about.html">About</ref>.</p>
+        <p>eLiebermann is a work in progress: further data and additional links are being added, and corrections are being made, on an ongoing basis.</p>
+      </div>
+      <div type="page">
+        <head><ref target="laws.html">A database of early English lawcodes</ref></head>
+        <p>The eLiebermann Lawcodes Database brings together and makes searchable the law codes of early England. The core of the database consists of the Old English or Latin text, as printed in Felix Liebermann's <title>Die Gesetze der Angelsachsen</title>, with Liebermann's German translation and an LLM-generated English crib of his German. The text of additional MS variants, later editions and alternate translations are provided where available; for more recent editions not in the public domain, precise citations are given.</p>
+        <p>Every clause is further indexed by subject, so the laws can be searched by the people, offences, places and topics they deal with. Cross-references at the clause level collate possible connections between the different codes, gathering the suggestions of a range of scholars and editors. Liebermann's editorial notes and explanations are linked to each clause, and can be made to appear by clicking "Show Liebermann's notes" on the relevant clause.</p>
+      </div>
+      <div type="page">
+        <head><ref target="dictionary.html">A dictionary of early English law</ref></head>
+        <p>The eLiebermann Legal Dictionary is a digital edition of the <title>Wörterbuch</title>, the dictionary in Volume II of Felix Liebermann's <title>Die Gesetze der Angelsachsen</title>. Liebermann's dictionary covers the Old English, Latin and French words of the law codes he edited. This digital version provides links to explanations and translations of Liebermann's grammatical terms, abbreviations, and sigla, and to the law-code clauses (in the Laws Database) that Liebermann lists as containing the headword.</p>
+        <p>Where possible, headwords are linked to other dictionaries (e.g. Bosworth-Toller and the Dictionary of Old English); the work of adding and checking these external links is still in progress.</p>
+      </div>
+      <div type="page">
+        <head><ref target="abbreviations.html">A guide to Liebermann's <title><hi rend="bold">Die Gesetze der Angelsachsen</hi></title></ref></head>
+        <p>The eLiebermann Guide to the Gesetze aims to make <title>Die Gesetze der Angelsachsen</title> easier to use. Liebermann's academic German is often abbreviated, and his apparatus is dense. The guides expand and translate his MS sigla, system of abbreviations for lawcodes, and the grammatical terms and abbreviations of the dictionary.</p>
+        <p>The Guide to the Gesetze also gives an English translation of Liebermann's own account of how to read a dictionary entry (with further explanation where needed), and a key to his system for citing the laws. It contains in addition Liebermann's list of the manuscripts in which the laws survive, with their dates and contents (as Liebermann records them in the <title>Gesetze</title>). Additional or corrective information will continue to be added to this portion of the database.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

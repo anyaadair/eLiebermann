@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Af_El-to-17">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Af El. 17</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">Af_El-to-17</idno>
+        <idno type="citation">Af El. 17</idno>
+        <idno type="lawCode">Af</idno>
+        <idno type="lawCodeAnchor">Af</idno>
+        <idno type="clause">El. 17</idno>
+        <idno type="citationKey">Af el</idno>
+        <idno type="citationKey">Af 17</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Alfred’s Domboc</title> <note type="reign">Alfred, r. 871–899</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">32</biblScope></bibl>
+          <bibl xml:id="jurasinski-and-oliver" type="edition">Stefan Jurasinski and Lisi Oliver, <title>The Laws of Alfred: The Domboc and the Making of Anglo-Saxon Law</title> (Cambridge: Cambridge University Press, 2021), p. <biblScope unit="page">240</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="whitelock" type="study">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007)</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-e" rend="bold"><abbr>E</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 173 (Parker Chronicle and Laws)</note></witness>
+          <witness xml:id="wit-h"><abbr>H</abbr> <note type="manuscript">Strood, Medway Archive and Local Studies Centre, MS DRc/R1 (Textus Roffensis; formerly Rochester, Cathedral Library, A.3.5), c. 1120–25</note></witness>
+          <witness xml:id="wit-b-no-prol"><abbr>B (no Prol.)</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383</note></witness>
+          <witness xml:id="wit-g-prol-only"><abbr>G (Prol. only)</abbr> <note type="manuscript">London, British Library, Cotton Nero A.i</note></witness>
+          <witness xml:id="wit-q"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note></witness>
+          <witness xml:id="wit-ld"><abbr>Ld</abbr> <note type="manuscript">William Lambarde, Archaionomia (London, 1568) – printed from manuscripts now lost</note></witness>
+          <witness xml:id="wit-bu"><abbr>Bu</abbr></witness>
+          <witness xml:id="wit-ot-frags"><abbr>Ot (frags.)</abbr> <note type="manuscript">London, British Library, Cotton Otho B.xi (damaged by fire, 1731)</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 27">871 (after 890?)–901</date><date source="#whitelock" n="EHD p. 408">885–899</date><date source="#wormald-mel" n="MEL p. 286">after 893</date><note type="promulgation">871 (after 890?)–901 (Liebermann, I p. 27); 885–899 (Whitelock, EHD p. 408); after 893 (Wormald, MEL p. 286)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Assault</term><term>Homicide</term><term>Legal procedure</term><term>Legal responsibility</term><term>Slavery</term><term>Capital offences</term></keywords>
+        <keywords n="people"><term>Women</term><term>All people</term><term>Slave</term><term>Weorcmen</term><term>Secular classes</term><term>Rank</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 333 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked and corrected against <title>Die Gesetze der Angelsachsen</title> I, p. 32.</change>
+      <change when="2026-10" type="checked">Liebermann’s text of MS G added from Gesetze I, p. 32.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="El. 17">
+        <head><ref type="lawCode" target="law:Af">Af</ref> El. 17</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="El. 17" corresp="#wit-e"><pb n="32" ed="#liebermann"/>Se ðe slea his agenne<ptr type="liebermannNote" n="5" target="#Af_El-to-17.lnote.oe.5"/> þeowne esne oððe his<ptr type="liebermannNote" n="6" target="#Af_El-to-17.lnote.oe.6"/> mennen, ⁊ he ne sie<ptr type="liebermannNote" n="7" target="#Af_El-to-17.lnote.oe.7"/> idæges dead, ðeah he<ptr type="liebermannNote" n="8" target="#Af_El-to-17.lnote.oe.8"/> libbe twa niht oððe ðreo, ne bið he ealles<ptr type="liebermannNote" n="9" target="#Af_El-to-17.lnote.oe.9"/> swa scyldig, forþon þe hit wæs his agen fioh.<ptr type="liebermannNote" n="10" target="#Af_El-to-17.lnote.oe.10"/> Gif he ðon<hi rend="italic">ne</hi> sie<ptr type="liebermannNote" n="11" target="#Af_El-to-17.lnote.oe.11"/> idæges dead, ðon<hi rend="italic">ne</hi> sitte<ptr type="liebermannNote" n="12" target="#Af_El-to-17.lnote.oe.12"/> sio<ptr type="liebermannNote" n="13" target="#Af_El-to-17.lnote.oe.13"/> scyld on him.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="El. 17" corresp="#wit-g-prol-only"><pb n="32" ed="#liebermann"/>Se ðe slea his agenne þeowne esne oððe his mennen, ⁊ he ne sy idæges dead, ðeah he lybbe twa niht oððe þreo, ne bið he ealles swa scyldyg, forðan ðe hit wæs hys agen feoh. Gyf ðonne he idæges sie dead, þonne sitte seo scyld on him.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="El. 17" corresp="#wit-h"><pb n="33" ed="#liebermann"/>Se þe his agenne slea þeowne esne oððe his wifman, ⁊ he ne sy idæges dead, þeah he libbe twa nyht oððe þreo, ne byþ he ealles swa scyldig, forðam hit wæs his agen þeow. Gif he þonne byð idæges dead, þonne sitte seo scyld on him.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="El. 17" corresp="#wit-q"><pb n="33" ed="#liebermann"/>Qui percusserit seruum<ptr type="liebermannNote" n="2" target="#Af_El-to-17.lnote.oe.2"/> uel ancillam suam<ptr type="liebermannNote" n="3" target="#Af_El-to-17.lnote.oe.3"/> uirga, et mortui fuerint in manibus eius, criminis reus erit. Sin autem uno die superuixerit uel duobus, non subiacebit penæ, quia pecunia illius est.</ab>
+        <ab type="editionText" xml:lang="ang" source="#jurasinski-and-oliver" n="MP 17" corresp="#wit-e"><pb n="240" ed="#jurasinski-and-oliver"/>Se ðe slea his agenne þeowne esne oððe his mennen, ⁊ he ne sie idæges dead, ðeah he libbe twa niht oððe ðreo, ne bið he ealles swa scyldig, forþon þe hit wæs his agen fioh. Gif he ðonne sie idæges dead, ðonne sitte sio scyld on him.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="33" ed="#liebermann"/>Wer<ptr type="liebermannNote" n="1" target="#Af_El-to-17.lnote.de.1"/> seinen eigenen Sklavenknecht oder seine Sklavin<ptr type="liebermannNote" n="2" target="#Af_El-to-17.lnote.de.2"/> schlägt, und die Person ist nicht selbigen Tages todt, wenn sie noch zwei Nächte oder drei lebt<ptr type="liebermannNote" n="3" target="#Af_El-to-17.lnote.de.3"/>, so ist jener nicht ganz so schuldig, weil es seine eigene Fahrhabe<ptr type="liebermannNote" n="4" target="#Af_El-to-17.lnote.de.4"/> war. Wenn die Person aber selbigen Tages todt ist, dann liege die Schuld auf ihm.</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">Whoever strikes his own slave-servant or his slave woman, and the person is not dead the same day, if he still lives two nights or three, then he is not quite so guilty, because it was his own property. But if the person is dead the same day, then let the guilt lie upon him.</ab>
+        <ab type="translation" xml:lang="en" source="#jurasinski-and-oliver" corresp="#wit-e"><pb n="241" ed="#jurasinski-and-oliver"/>He who strikes his own slave or maidservant, and he [or she] is not dead on that same day, though [the servant] should live for two days or three, the master will not be entirely so guilty, because it was his own loss. If the servant, however, should die on the same day, then let the guilt rest on him [i.e., the master].</ab>
+        <note type="passageSource">Exodus 21,20–21</note>
+        <note type="comparison" source="#liebermann" n="33">Exodus 21.20; Exodus 21.21</note>
+        <note type="comparisonPrinted" source="#liebermann">[21, 20] | [21, 21]</note>
+        <note type="comparison" source="#jurasinski-and-oliver" n="240"><label>same phrase</label> <ref target="clause:Wi_23-a">Wi 23</ref> <quote>The phrase þeowne esne ("unfree servant") also occurs in Wihtred §18 [L23]</quote></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_El-to-17.lnote.oe.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">32</biblScope></bibl><seg type="original" xml:lang="de">agen <hi rend="italic">So</hi></seg><seg type="translation" xml:lang="en" source="#claude">agen So</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_El-to-17.lnote.oe.6" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">32</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_El-to-17.lnote.oe.7" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">32</biblScope></bibl><seg type="original" xml:lang="de">sy þy dæ. <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">sy þy dæ. Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_El-to-17.lnote.oe.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">32</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">doppelt So</hi></seg><seg type="translation" xml:lang="en" source="#claude">twice So</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_El-to-17.lnote.oe.9" n="9" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">32</biblScope></bibl><seg type="original" xml:lang="de">-le <hi rend="italic">So Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">-le So Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_El-to-17.lnote.oe.10" n="10" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">32</biblScope></bibl><seg type="original" xml:lang="de">feoh <hi rend="italic">So Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">feoh So Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_El-to-17.lnote.oe.11" n="11" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">32</biblScope></bibl><seg type="original" xml:lang="de">sy <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">sy Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_El-to-17.lnote.oe.12" n="12" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">32</biblScope></bibl><seg type="original" xml:lang="de">sette <hi rend="italic">So</hi></seg><seg type="translation" xml:lang="en" source="#claude">sette So</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_El-to-17.lnote.oe.13" n="13" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">32</biblScope></bibl><seg type="original" xml:lang="de">seo <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">seo Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_El-to-17.lnote.oe.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">33</biblScope></bibl><seg type="original" xml:lang="de">suum <hi rend="italic">fügt zu Hk Vulg.</hi></seg><seg type="translation" xml:lang="en" source="#claude">suum added by Hk Vulg.</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_El-to-17.lnote.oe.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">33</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Vulg.</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Vulg.</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Af_El-to-17.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">45</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> unfrei 13</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf. Gl</hi> unfrei 13</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Af_El-to-17.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">45</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de">H modernisiert</seg><seg type="translation" xml:lang="en" source="#claude">H modernizes</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Af_El-to-17.lnote.de.3" n="3" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">45</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de">Af weicht hier und El 21 von Vulg. vielleicht nur scheinbar ab, indem er Anfangs- und Endtag mitzählt</seg><seg type="translation" xml:lang="en" source="#claude">Af departs here and in El 21 from the Vulg. perhaps only apparently, by counting the first and last day</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Af_El-to-17.lnote.de.4" n="4" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">45</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de">Zu H’s Änderung <hi rend="italic">s. Gl</hi> unfrei 6b</seg><seg type="translation" xml:lang="en" source="#claude">On H’s alteration <hi rend="italic">see Gl</hi> unfrei 6b</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

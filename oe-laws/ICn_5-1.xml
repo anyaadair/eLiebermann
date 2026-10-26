@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ICn_5-1">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>I Cn 5.1</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ICn_5-1</idno>
+        <idno type="citation">I Cn 5.1</idno>
+        <idno type="lawCode">I Cn</idno>
+        <idno type="lawCodeAnchor">ICn</idno>
+        <idno type="clause">5.1</idno>
+        <idno type="citationKey">ICn 5.1</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>I Cnut (Winchester)</title> <note type="reign">Cnut, r. 1016–1035</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">286</biblScope></bibl>
+          <bibl xml:id="robertson" type="edition">A. J. Robertson, <title>The Laws of the Kings of England from Edmund to Henry I</title> (Cambridge: Cambridge University Press, 1925), p. <biblScope unit="page">160</biblScope></bibl>
+          <bibl xml:id="rabin-doml" type="edition">Andrew Rabin, ed. and trans., <title>Old English Legal Writings: Wulfstan</title>, Dumbarton Oaks Medieval Library (Cambridge, MA: Harvard University Press, 2020), p. <biblScope unit="page">238</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="whitelock" type="study">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007)</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-b" rend="bold"><abbr>B</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383</note></witness>
+          <witness xml:id="wit-g-a" rend="bold"><abbr>G(A)</abbr> <note type="manuscript">London, British Library, Cotton Nero A.i</note></witness>
+          <witness xml:id="wit-a"><abbr>A</abbr> <note type="manuscript">London, British Library, Harley 55</note></witness>
+          <witness xml:id="wit-ld"><abbr>Ld</abbr> <note type="manuscript">William Lambarde, Archaionomia (London, 1568) – printed from manuscripts now lost</note></witness>
+          <witness xml:id="wit-d-frags"><abbr>D (frags.)</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 201</note></witness>
+          <witness xml:id="wit-q"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note></witness>
+          <witness xml:id="wit-inst-cn"><abbr>Inst. Cn.</abbr> <note type="manuscript">Instituta Cnuti (Latin translation of Anglo-Saxon laws, c. 1100), as printed by Liebermann</note></witness>
+          <witness xml:id="wit-cons-cn"><abbr>Cons. Cn.</abbr> <note type="manuscript">Consiliatio Cnuti (Latin translation, early 12th c.)</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 278">25 Dec. 1027–34</date><date source="#whitelock" n="EHD p. 461">1020–23</date><date source="#wormald-mel" n="MEL p. 345">1020/21</date><placeName>Winchester</placeName><note type="promulgation">25 Dec. 1027–34 (Liebermann, I p. 278); 1020–23 (Whitelock, EHD p. 461); 1020/21 (Wormald, MEL p. 345); Winchester</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Accusations</term><term>Canon law</term><term>Oath and pledge</term><term>Written laws/decisions</term><term>Ritual</term></keywords>
+        <keywords n="people"><term>Deacons</term><term>Oath-helpers</term><term>Ecclesiastical orders</term><term>Rank</term><term>All people</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 1622 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 286.</change>
+      <change when="2026-10" type="checked">Liebermann’s text of MS In added from Gesetze I, p. 287.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="5.1">
+        <head><ref type="lawCode" target="law:ICn">I Cn</ref> 5.1</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="5.1" corresp="#wit-g-a"><pb n="286" ed="#liebermann"/>Gif man deacon tihtlige, þe regollice libbe, anfealdre spæce<ptr type="liebermannNote" n="1" target="#ICn_5-1.lnote.oe.1"/>, nime twegen his gehadan ⁊ ladige hine mid þam.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="5.1" corresp="#wit-a"><pb n="286" ed="#liebermann"/>Gif man diacon tihlige, þe reollice<ptr type="liebermannNote" n="1" target="#ICn_5-1.lnote.oe.1-3"/> libbe, anfealdre spræce, nime twegen his gehadan ⁊ ladige hine mid þam.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="5.1" corresp="#wit-q"><pb n="286" ed="#liebermann"/>Diaconus regularis in simplici<ptr type="liebermannNote" n="1" target="#ICn_5-1.lnote.oe.1-2"/> compellatione cum duobus<ptr type="liebermannNote" n="2" target="#ICn_5-1.lnote.oe.2"/>,</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="5.1" corresp="#wit-inst-cn"><pb n="287" ed="#liebermann"/>Si autem diaconus qui regulariter uiuit calumniatur simpla appellatione, acceptis duobus diaconibus secum, purget se.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="5.1" corresp="#wit-cons-cn"><pb n="287" ed="#liebermann"/>Quodsi diaconus regularis uite simplici causa accusatus fuerit, assumat duos suos pares et cum illis ipse tertius se purget;</ab>
+        <ab type="editionText" xml:lang="ang" source="#robertson" n="5a.1" corresp="#wit-g-a"><pb n="160" ed="#robertson"/>Gif man deacon tihtlige þe regollice libbe anfealdre spæce, nime twegen his gehadan ⁊ ladige hine mid þam.</ab>
+        <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-g-a"><pb n="238" ed="#rabin-doml"/>Gif man deacon tihtlige, þe regollice libbe, anfealdre spæce, nime twegen his gehadan and ladige hine mid þam.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="287" ed="#liebermann"/>Wenn ein Diakon, der kanonisch lebt, mit einfacher Anklage bezichtigt wird, so nehme er zwei seiner Standesgenossen und reinige sich mit denen.</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">If a deacon who lives according to a rule is charged with a simple accusation, let him take two of his fellow-clergy and clear himself with them.</ab>
+        <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-g-a"><pb n="161" ed="#robertson"/>If a simple accusation is brought against a deacon who lives according to a rule, he shall take two supporters of the same ecclesiastical rank and clear himself with their help.</ab>
+        <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-g-a"><pb n="239" ed="#rabin-doml"/>If a simple accusation is brought against a deacon who lives according to a rule, he is to take two clerics of his rank and exculpate himself with them.</ab>
+        <note type="comparison" source="#liebermann" n="287"><ref target="clause:VIIIAtr_20">VIII Atr 20</ref></note>
+        <note type="comparisonPrinted" source="#liebermann">Vgl. VIII Atr. 20</note>
+        <note type="editorial">Liebermann compares VIII Atr 20.; BR: added from Gesetze I p. 287, October 2026 (MS Cons)</note>
+        <note type="textual" source="#rabin-doml">tihtlige: thtlige A</note>
+        <note type="textual" source="#rabin-doml">mid: omitted A</note>
+        <note type="liebermannNote" subtype="textual" xml:id="ICn_5-1.lnote.oe.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">286</biblScope></bibl><seg type="original" xml:lang="de">spræce <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">spræce Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ICn_5-1.lnote.oe.1-2" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">286</biblScope></bibl><seg type="original" xml:lang="de">ordalio <hi rend="italic">fügt zu K</hi></seg><seg type="translation" xml:lang="en" source="#claude">ordalio added by K</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ICn_5-1.lnote.oe.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">286</biblScope></bibl><seg type="original" xml:lang="de">sui ordinis <hi rend="italic">fügt zu Hk Br;</hi> et <hi rend="italic">fügt zu T</hi></seg><seg type="translation" xml:lang="en" source="#claude">sui ordinis added by Hk Br; et added by T</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ICn_5-1.lnote.oe.1-3" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">286</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">so</hi></seg><seg type="translation" xml:lang="en" source="#claude">sic</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

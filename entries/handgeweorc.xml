@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>handgeweorc</title>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">handgeweorc</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, <biblScope unit="volume">2.1</biblScope> (Wörterbuch), <biblScope unit="page">110</biblScope>
+            <ptr type="facsimile" target="https://archive.org/details/diegesetzederang02liebuoft/page/110/mode/2up"/>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <revisionDesc>
+      <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry xml:lang="ang">
+        <form type="lemma">
+          <orth>handgeweorc</orth>
+        </form>
+        <dictScrap type="liebermann">Godes <hi rend="bold">handgeweorc</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>, Gottes Hände-Werk, <ref type="abbreviation" target="gram:von"><abbr>von</abbr></ref> G. selbst Erschaffenes</hi> <ref type="lawCode" target="law:VAtr">V Atr</ref> 3,1 = <ref type="lawCode" target="law:VIAtr">VI</ref> 10,1 = <ref type="lawCode" target="law:IICn">II Cn</ref> 2,1</dictScrap>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/18138">hand-geweorc</ref></xr>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/51731">hand-geweorc (Supplement)</ref></xr>
+        <xr type="lawCode"><ref target="clause:VAtr_3-1">V Atr 3,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:VIAtr_10-1">VI Atr 10,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IICn_2-1">II Cn 2,1</ref></xr>
+      </entry>
+    </body>
+  </text>
+</TEI>

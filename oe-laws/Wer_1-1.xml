@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Wer_1-1">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Wer 1.1</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#wormald">Wormald</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">Wer_1-1</idno>
+        <idno type="citation">Wer 1.1</idno>
+        <idno type="lawCode">Wer</idno>
+        <idno type="lawCodeAnchor">Wer</idno>
+        <idno type="clause">1.1</idno>
+        <idno type="citationKey">Wer 1.1</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Wergeld</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">392</biblScope></bibl>
+          <bibl xml:id="wormald" type="translation">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-h" rend="bold"><abbr>H</abbr> <note type="manuscript">Strood, Medway Archive and Local Studies Centre, MS DRc/R1 (Textus Roffensis; formerly Rochester, Cathedral Library, A.3.5), c. 1120–25</note></witness>
+          <witness xml:id="wit-b"><abbr>B</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383</note></witness>
+          <witness xml:id="wit-q"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 392">944–c.1060</date><date source="#wormald-mel" n="MEL pp. 374–8">c.945</date><note type="promulgation">944–c.1060 (Liebermann, I p. 392); c.945 (Wormald, MEL pp. 374–8)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Wergeld</term></keywords>
+        <keywords n="people"><term>200-wer man</term><term>Secular classes</term><term>Rank</term><term>All people</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 2048 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 392.</change>
+      <change when="2026-10" type="checked">Liebermann’s text of MS H added from Gesetze I, p. 392.</change>
+      <change when="2026-10" type="checked">Liebermann’s Latin text corrected against Gesetze I, p. 393: “Ƿihindi; ƿa” → “Tƿihindi; tƿa”.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="1.1">
+        <head><ref type="lawCode" target="law:Wer">Wer</ref> 1.1</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="1.1" corresp="#wit-h"><pb n="392" ed="#liebermann"/>Twyhyndes mannes wer is twa hund scill'.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="1.1" corresp="#wit-b"><pb n="392" ed="#liebermann"/>Twyhyndes mannes wer is twa hund scill'.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="1.1" corresp="#wit-q"><pb n="393" ed="#liebermann"/>Tƿihindi<ptr type="liebermannNote" n="4" target="#Wer_1-1.lnote.oe.4"/> hominis wera est tƿa hund<ptr type="liebermannNote" n="3" target="#Wer_1-1.lnote.oe.3"/> scill. (id est ducenti sol. ex<ptr type="liebermannNote" n="5" target="#Wer_1-1.lnote.oe.5"/> V<ptr type="liebermannNote" n="6" target="#Wer_1-1.lnote.oe.6"/> scilicet denariis<ptr type="liebermannNote" n="**" target="#Wer_1-1.lnote.oe.star2"/>, qui faciunt IIII libras et XL denarios).</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="393" ed="#liebermann"/>Wergeld eines 200-Menschen ist 200<ptr type="liebermannNote" n="1" target="#Wer_1-1.lnote.de.1"/> Schilling<ptr type="liebermannNote" n="2" target="#Wer_1-1.lnote.de.2"/>.</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">The wergild of a two-hundred man is 200 shillings.</ab>
+        <ab type="translation" xml:lang="en" source="#wormald" corresp="#wit-h">A two-hundred man's wergeld is 200 shillings</ab>
+        <note type="comparedBy" source="#liebermann"><ref target="clause:LeisWl_8">Leis Wl 8</ref></note>
+        <note type="editorial">U: translator probably Wormald, The Making of English Law (named in the original spreadsheet’s sub-header rows): check</note>
+        <note type="liebermannNote" subtype="textual" xml:id="Wer_1-1.lnote.oe.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">393</biblScope></bibl><seg type="original" xml:lang="de">Twifhyndi <hi rend="italic">T</hi></seg><seg type="translation" xml:lang="en" source="#claude">Twifhyndi T</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Wer_1-1.lnote.oe.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">393</biblScope></bibl><seg type="original" xml:lang="de">-hínd <hi rend="italic">MHk</hi></seg><seg type="translation" xml:lang="en" source="#claude">-hínd MHk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Wer_1-1.lnote.oe.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">393</biblScope></bibl><seg type="original" xml:lang="de">ex — den. <hi rend="italic">fehlt R</hi></seg><seg type="translation" xml:lang="en" source="#claude">ex — den. omitted in R</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Wer_1-1.lnote.oe.6" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">393</biblScope></bibl><seg type="original" xml:lang="de">XV <hi rend="italic">statt</hi> ex V <hi rend="italic">T</hi></seg><seg type="translation" xml:lang="en" source="#claude">XV instead of ex V T</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Wer_1-1.lnote.oe.star2" n="**" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">393</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Westsächsisch; vgl.</hi> Af. Rb. 31, <hi rend="italic">o. S.</hi> 19, <hi rend="italic">Sp.</hi> 2</seg><seg type="translation" xml:lang="en" source="#claude">West Saxon; cf. Af. Rb. 31, above p. 19, col. 2</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Wer_1-1.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">231</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Gl ebd</hi>. 4 ff.</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Gl ibid</hi>. 4 ff.</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Wer_1-1.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">231</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">Die <hi rend="italic">40 den</hi>. des Q lässt Hn fort; <hi rend="italic">ebd</hi>. 4b</seg><seg type="translation" xml:lang="en" source="#claude">Hn omits the <hi rend="italic">40 den</hi>. of Q; <hi rend="italic">ibid</hi>. 4b</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>gearwige</title>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">gearwige</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, <biblScope unit="volume">2.1</biblScope> (Wörterbuch), <biblScope unit="page">87</biblScope>
+            <ptr type="facsimile" target="https://archive.org/details/diegesetzederang02liebuoft/page/87/mode/2up"/>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <revisionDesc>
+      <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry xml:lang="ang">
+        <form type="lemma">
+          <orth>gearwige</orth>
+        </form>
+        <dictScrap type="liebermann"><hi rend="bold">gearwige</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Optativ"><abbr>op</abbr></ref></hi> 3 <hi rend="bold">1</hi>) <hi rend="italic"><ref type="abbreviation" target="gram:transitiv"><abbr>tr.</abbr></ref></hi> (<hi rend="italic">Schiffe</hi>) <hi rend="italic">herrichte</hi> <ref type="lawCode" target="law:VIAtr">VI Atr</ref> 33 <hi rend="bold">2</hi>) ~ to <hi rend="italic">sich vorbereite zu</hi> <ref type="lawCode" target="law:VAtr">V</ref> 22,1 = <ref type="lawCode" target="law:VIAtr">VI</ref> 27,1 (hine <hi rend="italic"><ref type="abbreviation" target="gram:setzt"><abbr>setzt</abbr></ref> <ref type="abbreviation" target="gram:spater"><abbr>später</abbr></ref> davor</hi> <ref type="lawCode" target="law:D">D</ref>) = hine ~ <ref type="lawCode" target="law:ICn">I Cn</ref> 19</dictScrap>
+        <dictScrap type="senses">
+          <sense n="1"><hi rend="italic"><ref type="abbreviation" target="gram:transitiv"><abbr>tr.</abbr></ref></hi> (<hi rend="italic">Schiffe</hi>) <hi rend="italic">herrichte</hi> <ref type="lawCode" target="law:VIAtr">VI Atr</ref> 33</sense>
+          <sense n="2">~ to <hi rend="italic">sich vorbereite zu</hi> <ref type="lawCode" target="law:VAtr">V</ref> 22,1 = <ref type="lawCode" target="law:VIAtr">VI</ref> 27,1 (hine <hi rend="italic"><ref type="abbreviation" target="gram:setzt"><abbr>setzt</abbr></ref> <ref type="abbreviation" target="gram:spater"><abbr>später</abbr></ref> davor</hi> <ref type="lawCode" target="law:D">D</ref>) = hine ~ <ref type="lawCode" target="law:ICn">I Cn</ref> 19</sense>
+        </dictScrap>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/13534">gearwian</ref></xr>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/15760">gerwan</ref></xr>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/17008">gierwan</ref></xr>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/17134">girwan</ref></xr>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/50837">girwan (Supplement)</ref></xr>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/17779">gyrwan</ref></xr>
+        <xr type="lawCode"><ref target="clause:VIAtr_33">VI Atr 33</ref></xr>
+        <xr type="lawCode"><ref target="clause:VAtr_22-1">V Atr 22,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:VIAtr_27-1">VI Atr 27,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:ICn_19">I Cn 19</ref></xr>
+      </entry>
+    </body>
+  </text>
+</TEI>

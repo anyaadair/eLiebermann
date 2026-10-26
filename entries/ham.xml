@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ham</title>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ham</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, <biblScope unit="volume">2.1</biblScope> (Wörterbuch), <biblScope unit="page">109</biblScope>
+            <ptr type="facsimile" target="https://archive.org/details/diegesetzederang02liebuoft/page/109/mode/2up"/>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="bib" matchPattern="(.+)" replacementPattern="bibAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <revisionDesc>
+      <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
+      <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry xml:lang="ang">
+        <form type="lemma">
+          <orth>ham</orth>
+        </form>
+        <dictScrap type="liebermann"><hi rend="bold">ham</hi> <hi rend="bold">I</hi>) <hi rend="italic">Heimstätte, Grundstück; <ref type="abbreviation" target="gram:Genitiv"><abbr>gn</abbr></ref>:</hi> hames <ref type="lawCode" target="law:Af">Af</ref> 21; <hi rend="italic">Grossgut</hi> <ref type="lawCode" target="law:Ger">Ger</ref> 18,2 | <hi rend="italic"><ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>:</hi> æt mannes ~ [<hi rend="italic"><ref type="abbreviation" target="gram:endungslos"><abbr>endungslos</abbr></ref>; <ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>. </hi><ref type="bibl" target="bib:CitSieversGr"><hi rend="italic">Sievers,</hi> Gr. § 237</ref>] <hi rend="italic">Hofstelle, Haus und Hof</hi> <ref type="lawCode" target="law:Abt">Abt</ref> 3; hame <ref type="lawCode" target="law:Hl">Hl</ref> 15; cyninges hame <hi rend="italic">Krondomäne</hi> <ref type="lawCode" target="law:Rect">Rect</ref> 1,1 <hi rend="bold">II</hi>) <hi rend="italic">adverbial</hi> <hi rend="bold">1</hi>) <hi rend="italic">ruhend:</hi> æt ~ <hi rend="italic">daheim, zu Hause</hi> <ref type="lawCode" target="law:Ine">Ine</ref> 50. <ref type="lawCode" target="law:IIEg">II Eg</ref> 2 <hi rend="bold">2</hi>) <hi rend="italic">zielend:</hi> <hi rend="bold">a</hi>) ef[t] æt <pb n="110"/>~ gebrenge <hi rend="italic">wieder nach</hi> (<hi rend="italic">ihrem Heimat-</hi>) <hi rend="italic">Hause</hi> <ref type="lawCode" target="law:Abt">Abt</ref> 77,1; oðrum æt ~ [<hi rend="italic"><ref type="abbreviation" target="gram:Hs"><abbr>Hs</abbr></ref>.</hi> þam] gebrenge <hi rend="italic">dem anderen eherechtlich heimführe</hi> 31 [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>. Aldhelmglosse</hi> nubentur: beoð ham brohte; Anglia 24, 528] <hi rend="bold">b</hi>) ~ [<hi rend="italic">allein</hi>] cuman <hi rend="italic">nach Hause</hi> <ref type="lawCode" target="law:VIAs">VI As</ref> 5. <ref type="lawCode" target="law:IIEg">II Eg</ref> 4,1 <ref type="abbreviation" target="gram:folgende"><abbr>f.</abbr></ref> <ref type="lawCode" target="law:IVEg">IV</ref> 7 <ref type="abbreviation" target="gram:folgende"><abbr>f.</abbr></ref>; <hi rend="italic">heimwärts</hi> <ref type="lawCode" target="law:VAtr">V Atr</ref> 28,1; bringan <ref type="lawCode" target="law:IICn">II Cn</ref> 76; eft ~ willan 73,2; begietan <ref type="lawCode" target="law:Duns">Duns</ref> 3; gæderian <hi rend="italic">einheimsen</hi> <ref type="lawCode" target="law:Ger">Ger</ref> 10. — <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> Fæfresham, mynsterham, Wærham; Berghamstyde; gehamettan</dictScrap>
+        <dictScrap type="senses">
+          <sense n="1"><hi rend="italic">ruhend:</hi> æt ~ <hi rend="italic">daheim, zu Hause</hi> <ref type="lawCode" target="law:Ine">Ine</ref> 50. <ref type="lawCode" target="law:IIEg">II Eg</ref> 2</sense>
+          <sense n="2"><hi rend="italic">zielend:</hi> <hi rend="bold">a</hi>) ef[t] æt <pb n="110"/>~ gebrenge <hi rend="italic">wieder nach</hi> (<hi rend="italic">ihrem Heimat-</hi>) <hi rend="italic">Hause</hi> <ref type="lawCode" target="law:Abt">Abt</ref> 77,1; oðrum æt ~ [<hi rend="italic"><ref type="abbreviation" target="gram:Hs"><abbr>Hs</abbr></ref>.</hi> þam] gebrenge <hi rend="italic">dem anderen eherechtlich heimführe</hi> 31 [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>. Aldhelmglosse</hi> nubentur: beoð ham brohte; Anglia 24, 528] <hi rend="bold">b</hi>) ~ [<hi rend="italic">allein</hi>] cuman <hi rend="italic">nach Hause</hi> <ref type="lawCode" target="law:VIAs">VI As</ref> 5. <ref type="lawCode" target="law:IIEg">II Eg</ref> 4,1 <ref type="abbreviation" target="gram:folgende"><abbr>f.</abbr></ref> <ref type="lawCode" target="law:IVEg">IV</ref> 7 <ref type="abbreviation" target="gram:folgende"><abbr>f.</abbr></ref>; <hi rend="italic">heimwärts</hi> <ref type="lawCode" target="law:VAtr">V Atr</ref> 28,1; bringan <ref type="lawCode" target="law:IICn">II Cn</ref> 76; eft ~ willan 73,2; begietan <ref type="lawCode" target="law:Duns">Duns</ref> 3; gæderian <hi rend="italic">einheimsen</hi> <ref type="lawCode" target="law:Ger">Ger</ref> 10. — <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> Fæfresham, mynsterham, Wærham; Berghamstyde; gehamettan</sense>
+        </dictScrap>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/18075">hám</ref></xr>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/51670">ham (Supplement)</ref></xr>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/51671">ham (Supplement)</ref></xr>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/51672">ham (Supplement)</ref></xr>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/51673">hám (Supplement)</ref></xr>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/18074">ham</ref></xr>
+        <xr type="lawCode"><ref target="clause:Af_21">Af 21</ref></xr>
+        <xr type="lawCode"><ref target="clause:Ger_18-2-to-19">Ger 18,2</ref></xr>
+        <xr type="lawCode"><ref target="clause:Abt_3">Abt 3</ref></xr>
+        <xr type="lawCode"><ref target="clause:Hl_15">Hl 15</ref></xr>
+        <xr type="lawCode"><ref target="clause:Rect_1-1">Rect 1,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:Ine_50">Ine 50</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIEg_2">II Eg 2</ref></xr>
+        <xr type="lawCode"><ref target="clause:Abt_77-1">Abt 77,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:VIAs_5">VI As 5</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIEg_4-1">II Eg 4,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IVEg_7">IV Eg 7</ref></xr>
+        <xr type="lawCode"><ref target="clause:VAtr_28-1">V Atr 28,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IICn_76">II Cn 76</ref></xr>
+        <xr type="lawCode"><ref target="clause:Duns_3">Duns 3</ref></xr>
+        <xr type="lawCode"><ref target="clause:Ger_10">Ger 10</ref></xr>
+      </entry>
+    </body>
+  </text>
+</TEI>

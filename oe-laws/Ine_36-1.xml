@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Ine_36-1">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Ine 36.1</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Attenborough’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">Ine_36-1</idno>
+        <idno type="citation">Ine 36.1</idno>
+        <idno type="lawCode">Ine</idno>
+        <idno type="lawCodeAnchor">Ine</idno>
+        <idno type="clause">36.1</idno>
+        <idno type="citationKey">Ine 36.1</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Ine’s Laws (in Alfred’s Domboc)</title> <note type="reign">Ine, r. 688–726</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">104</biblScope></bibl>
+          <bibl xml:id="jurasinski-and-oliver" type="edition">Stefan Jurasinski and Lisi Oliver, <title>The Laws of Alfred: The Domboc and the Making of Anglo-Saxon Law</title> (Cambridge: Cambridge University Press, 2021), p. <biblScope unit="page">402</biblScope></bibl>
+          <bibl xml:id="attenborough" type="edition">F. L. Attenborough, <title>The Laws of the Earliest English Kings</title> (Cambridge: Cambridge University Press, 1922), p. <biblScope unit="page">48</biblScope></bibl>
+          <bibl xml:id="whitelock" type="translation">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007), p. <biblScope unit="page">403</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-e" rend="bold"><abbr>E</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 173 (Parker Chronicle and Laws)</note></witness>
+          <witness xml:id="wit-h"><abbr>H</abbr> <note type="manuscript">Strood, Medway Archive and Local Studies Centre, MS DRc/R1 (Textus Roffensis; formerly Rochester, Cathedral Library, A.3.5), c. 1120–25</note></witness>
+          <witness xml:id="wit-b-no-prol"><abbr>B (no Prol.)</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383</note></witness>
+          <witness xml:id="wit-g-prol-only"><abbr>G (Prol. only)</abbr> <note type="manuscript">London, British Library, Cotton Nero A.i</note></witness>
+          <witness xml:id="wit-q"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note></witness>
+          <witness xml:id="wit-ld"><abbr>Ld</abbr> <note type="manuscript">William Lambarde, Archaionomia (London, 1568) – printed from manuscripts now lost</note></witness>
+          <witness xml:id="wit-bu"><abbr>Bu</abbr></witness>
+          <witness xml:id="wit-ot-frags"><abbr>Ot (frags.)</abbr> <note type="manuscript">London, British Library, Cotton Otho B.xi (damaged by fire, 1731)</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 88">688–95</date><date source="#whitelock" n="EHD p. 399">688–94</date><date source="#wormald-mel" n="MEL p. 103">688×92</date><note type="promulgation">688–95 (Liebermann, I p. 88); 688–94 (Whitelock, EHD p. 399); 688×92 (Wormald, MEL p. 103)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Theft</term><term>Concealment</term><term>Complicity</term><term>Custodial responsibility</term><term>Pardons</term><term>Law enforcement</term><term>Absconding</term><term>Compensation</term><term>Wergeld</term></keywords>
+        <keywords n="people"><term>Thief</term><term>Ealdormen</term><term>King</term><term>All people</term><term>Secular classes</term><term>Rank</term></keywords>
+        <keywords n="locations"><term>Shire</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 601 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked and corrected against <title>Die Gesetze der Angelsachsen</title> I, p. 104.</change>
+      <change when="2026-10" type="checked">Liebermann’s text of MS B added from Gesetze I, p. 104.</change>
+      <change when="2026-10" type="checked">The second translation corrected against Attenborough, p. None: “shire,” → “‘shire,’”.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="36.1">
+        <head><ref type="lawCode" target="law:Ine">Ine</ref> 36.1</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="36.1" corresp="#wit-e"><pb n="104" ed="#liebermann"/>Gif he ealdormon<ptr type="liebermannNote" n="19" target="#Ine_36-1.lnote.oe.19"/> sie, ðolie his scire, buton<ptr type="liebermannNote" n="20" target="#Ine_36-1.lnote.oe.20"/> him kyning arian wille.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="36.1" corresp="#wit-h"><pb n="104" ed="#liebermann"/>Gif he<ptr type="liebermannNote" n="9" target="#Ine_36-1.lnote.oe.9"/> ealdermon<ptr type="liebermannNote" n="14" target="#Ine_36-1.lnote.oe.14"/> sy<ptr type="liebermannNote" n="1" target="#Ine_36-1.lnote.oe.1"/>, þolige his scire, buton<ptr type="liebermannNote" n="4" target="#Ine_36-1.lnote.oe.4"/> him se cyning arian wille.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="36.1" corresp="#wit-b-no-prol"><pb n="104" ed="#liebermann"/>Gyf he ealdorman sy, ðolie his scire, buton him cyning arian wylle.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="36.1" corresp="#wit-q"><pb n="105" ed="#liebermann"/>Si aldermannus<ptr type="liebermannNote" n="24" target="#Ine_36-1.lnote.oe.24"/> sit, perdat comitatum suum, nisi rex<ptr type="liebermannNote" n="25" target="#Ine_36-1.lnote.oe.25"/> ei<ptr type="liebermannNote" n="26" target="#Ine_36-1.lnote.oe.26"/> parcere uelit.</ab>
+        <ab type="editionText" xml:lang="ang" source="#attenborough" corresp="#wit-e"><pb n="48" ed="#attenborough"/>Gif he ealdormon sie, ðolie his scire, buton him kyning<ptr type="editorNote" n="3" target="#Ine_36-1.attnote.fn.3"/> arian wille.</ab>
+        <ab type="editionText" xml:lang="ang" source="#jurasinski-and-oliver" n="37.1" corresp="#wit-e"><pb n="402" ed="#jurasinski-and-oliver"/>Gif he ealdormon sie, ðolie his scire, buton him kyning arian wille.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="105" ed="#liebermann"/>Wenn er Ealdorman<ptr type="liebermannNote" n="1" target="#Ine_36-1.lnote.de.1"/> ist, verliere er sein Amt, es sei denn, (der<ptr type="liebermannNote" n="2" target="#Ine_36-1.lnote.de.2"/>) König wolle ihn begnadigen.</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">If he is an ealdorman, let him lose his office, unless (the) king is willing to pardon him.</ab>
+        <ab type="translation" xml:lang="en" source="#attenborough" corresp="#wit-e"><pb n="49" ed="#attenborough"/>If he is an <hi rend="italic">ealdorman<ptr type="editorNote" n="1" target="#Ine_36-1.attnote.n.1"/></hi> he shall forfeit his ‘shire<ptr type="editorNote" n="2" target="#Ine_36-1.attnote.n.2"/>,’ unless the king is willing to pardon him.</ab>
+        <ab type="translation" xml:lang="en" source="#whitelock"><pb n="403" ed="#whitelock"/>If he is an ealdorman, he is to lose his office, unless the king wishes to pardon him.</ab>
+        <ab type="translation" xml:lang="en" source="#jurasinski-and-oliver" corresp="#wit-e"><pb n="403" ed="#jurasinski-and-oliver"/>If he is an <hi rend="italic">ealdorman</hi>, let him forfeit his shire, unless the king is willing to show him mercy.</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_36-1.lnote.oe.24" n="24" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">105</biblScope></bibl><seg type="original" xml:lang="de">aldrem. <hi rend="italic">R</hi></seg><seg type="translation" xml:lang="en" source="#claude">aldrem. R</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_36-1.lnote.oe.25" n="25" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">105</biblScope></bibl><seg type="original" xml:lang="de">ei rex <hi rend="italic">T</hi></seg><seg type="translation" xml:lang="en" source="#claude">ei rex T</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_36-1.lnote.oe.26" n="26" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">105</biblScope></bibl><seg type="original" xml:lang="de">pa. uel. ei <hi rend="italic">MHk</hi></seg><seg type="translation" xml:lang="en" source="#claude">pa. uel. ei MHk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_36-1.lnote.oe.9" n="9" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">104</biblScope></bibl><seg type="original" xml:lang="de">e <hi rend="italic">auf Rasur</hi></seg><seg type="translation" xml:lang="en" source="#claude">e on an erasure</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_36-1.lnote.oe.14" n="14" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">104</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">zweites</hi> e <hi rend="italic">auf Rasur;</hi> o <hi rend="italic">geänd. in</hi> a</seg><seg type="translation" xml:lang="en" source="#claude">second e on an erasure; o altered to a</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_36-1.lnote.oe.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">104</biblScope></bibl><seg type="original" xml:lang="de">y <hi rend="italic">auf Rasur</hi></seg><seg type="translation" xml:lang="en" source="#claude">y on an erasure</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_36-1.lnote.oe.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">104</biblScope></bibl><seg type="original" xml:lang="de">o <hi rend="italic">geänd. in</hi> a</seg><seg type="translation" xml:lang="en" source="#claude">o altered to a</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_36-1.lnote.oe.19" n="19" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">104</biblScope></bibl><seg type="original" xml:lang="de">-man sy þolige <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">-man sy þolige Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_36-1.lnote.oe.20" n="20" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">104</biblScope></bibl><seg type="original" xml:lang="de">butan h. cy. <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">butan h. cy. Ld</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Ine_36-1.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">74</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Fraglich bleibt 1. ob des Ealdorman Amtsbezirk bereits stets nur die spätere Grafschaft (<hi rend="italic">s. d. Gl</hi> 1. 3a) ist (so Corbett in <hi rend="italic">Cambridge mediæ. hist.</hi> I 5. 70), und 2., selbst wenn dies der Fall, ob [wie Kemble (<hi rend="italic">Saxons</hi> II 134), Schmid, Earle (<hi rend="italic">Anglo-S. liter.</hi> 152) verstehen] diese schon mit <hi rend="italic">scir</hi> von Ine gemeint ist; <hi rend="italic">s. o.</hi> Pro¹²·¹⁶; <hi rend="italic">Gl</hi> Amtsentsetzung 1</seg><seg type="translation" xml:lang="en" source="#claude">It remains doubtful, 1. whether the ealdorman's district was already always just the later shire (<hi rend="italic">see</hi> that word in <hi rend="italic">Gl</hi> 1. 3a) (so Corbett in <hi rend="italic">Cambridge mediæ. hist.</hi> I 5. 70), and 2., even if this was the case, whether [as Kemble (<hi rend="italic">Saxons</hi> II 134), Schmid and Earle (<hi rend="italic">Anglo-S. liter.</hi> 152) understand it] this is already what Ine means by <hi rend="italic">scir</hi>; <hi rend="italic">see above</hi> Pro¹²·¹⁶; <hi rend="italic">Gl</hi> Amtsentsetzung 1</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Ine_36-1.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">74</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">Artikel führt H modernisierend ein</seg><seg type="translation" xml:lang="en" source="#claude">H, modernising, introduces the article</seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="Ine_36-1.attnote.fn.3" n="3" source="#attenborough"><bibl><biblScope unit="page">48</biblScope></bibl><label>kyning</label><seg type="original" xml:lang="en"><hi rend="italic">se cyning</hi>. H.</seg></note>
+        <note type="editorNote" subtype="endnote" xml:id="Ine_36-1.attnote.n.1" n="1" source="#attenborough"><bibl><biblScope unit="page">187</biblScope></bibl><seg type="original" xml:lang="en">See note 2 to the preamble; note 2 to cap. 8.</seg></note>
+        <note type="editorNote" subtype="endnote" xml:id="Ine_36-1.attnote.n.2" n="2" source="#attenborough"><bibl><biblScope unit="page">187</biblScope></bibl><seg type="original" xml:lang="en">See note 2 to the preamble; note 2 to cap. 8.</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

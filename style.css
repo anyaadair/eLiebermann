@@ -1,0 +1,868 @@
+/*
+ * eLiebermann: one stylesheet for the whole site.
+ * Colours and fonts are set once here; pages use the classes below rather
+ * than their own <style> blocks.
+ */
+
+:root {
+    --ink: #212121;
+    --muted: #5f6368;
+    --paper: #fbfaf7;
+    --surface: #ffffff;
+    --rule: #dcd8cf;
+    --navy: #06417c;
+    --navy-dark: #1a2b3c;
+    --link: #06417c;
+    --link-hover: #0a5cad;
+    --powder: #4e7092;        /* the site's blue (--navy), less saturated: keyword bubbles */
+    --powder-tint: #e9eff5;
+    --highlight: #ffeeb3;
+    --ok: #1e6b35;
+    --warn: #8a5a00;
+    --error: #a12622;
+    --serif: 'EB Garamond', Georgia, 'Times New Roman', serif;
+    --sans: 'Source Sans 3', 'Segoe UI', Tahoma, sans-serif;
+    --mono: ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
+    --radius: 6px;
+    --measure: 72rem;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+/* ---------- Type ---------- */
+
+h1, h2, h3 {
+    font-family: var(--serif);
+    font-weight: 600;
+    color: var(--navy);
+    line-height: 1.25;
+}
+h1 { font-size: 2.2rem; margin: 0.4em 0 0.5em; }
+h2 { font-size: 1.55rem; margin: 1.6em 0 0.5em; }
+/* Home page: the section headings link to the Laws, Dictionary and Guides
+   pages, but keep the heading colour, underlined only on hover. */
+#site-page[data-page="Home"] h2 a { color: inherit; text-decoration: none; }
+#site-page[data-page="Home"] h2 a:hover,
+#site-page[data-page="Home"] h2 a:focus-visible { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+h3 { font-size: 1.2rem; margin: 1.4em 0 0.4em; }
+h2:target, h3:target { background: var(--highlight); }
+
+p { margin: 0 0 1em; }
+
+a { color: var(--link); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { color: var(--link-hover); }
+
+abbr { text-decoration: none; }
+abbr[title] { text-decoration: underline dotted; cursor: help; }
+
+code, pre, textarea.code { font-family: var(--mono); font-size: 0.9em; }
+
+.lede { font-size: 1.15rem; color: var(--muted); }
+.muted { color: var(--muted); }
+.small { font-size: 0.875rem; }
+
+.skip-link { position: absolute; left: -999px; }
+.skip-link:focus { left: 1rem; top: 1rem; background: var(--surface); padding: 0.5rem 1rem; z-index: 100; }
+
+/* ---------- Site frame ---------- */
+
+.site-header {
+    background: var(--paper);
+    padding: 1rem 1rem 0.5rem;
+    text-align: center;
+}
+/* Home page: the eLiebermann name, set large and centred. */
+.site-banner img { display: block; margin: 0.75rem auto 0.25rem; max-width: 100%; width: 34rem; height: auto; }
+/* Sized to fit within the width of the eLiebermann name above it. */
+.site-subtitle { margin: 0.25rem 0 0; font-family: var(--serif); font-size: 1.05rem; color: var(--navy-dark); }
+
+/* Inner pages: logo and name in one slim row instead of the full banner. */
+.site-header--slim {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.25rem 1.25rem;
+    text-align: left;
+    padding: 0.6rem max(1rem, calc((100% - var(--measure)) / 2 + 1rem));
+}
+.site-brand { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; }
+.site-logo { width: 3rem; height: 3rem; }
+.site-wordmark { height: 1.9rem; width: auto; }
+/* The eLiebermann logo (name over "legal dictionary" or "lawcodes database")
+   in the slim header of inner pages. */
+.site-lockup { display: block; height: 4rem; width: auto; }
+/* The name alone (About, Make a suggestion), at the same letter size as
+   the name in the two-line logos, with space below so the header is as
+   tall as on the other pages and the menu bar doesn't jump. */
+.site-lockup--name { height: 2.65rem; margin-bottom: 1.35rem; }
+/* On narrow phones the logo shrinks to fit rather than overflow. */
+@media (max-width: 26rem) {
+    .site-lockup { height: auto; width: auto; max-width: 100%; max-height: 4rem; }
+    .site-lockup--name { max-height: 2.65rem; margin-bottom: 0; }
+}
+.site-header--slim .site-subtitle { margin: 0; color: var(--muted); font-size: 1.05rem; }
+
+/* "Site under construction" tape, in both headers. */
+.construction {
+    display: inline-block;
+    margin: 0.5rem 0 0.25rem;
+    padding: 3px;
+    border-radius: 4px;
+    background: repeating-linear-gradient(-45deg, #f2b705 0 8px, var(--navy-dark) 8px 16px);
+}
+.construction span {
+    display: block;
+    padding: 0.15rem 0.75rem;
+    border-radius: 2px;
+    background: #fff3c4;
+    color: var(--navy-dark);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.site-header--slim .construction { margin: 0 0 0 auto; }
+
+.main-nav, .sub-nav { background: var(--navy-dark); }
+.main-nav ul, .sub-nav ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0 1rem;
+    max-width: var(--measure);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1.5rem;
+}
+.main-nav a, .sub-nav a {
+    display: block;
+    padding: 0.6rem 0;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 3px solid transparent;
+}
+.main-nav a:hover { border-bottom-color: rgba(255, 255, 255, 0.5); color: #fff; }
+.main-nav a[aria-current] { border-bottom-color: #fff; }
+
+.sub-nav { background: #e9edf2; border-bottom: 1px solid var(--rule); }
+.sub-nav a { color: var(--navy-dark); font-weight: 400; padding: 0.45rem 0; font-size: 0.95rem; }
+.sub-nav a:hover { color: var(--navy); }
+.sub-nav a[aria-current] { border-bottom-color: var(--navy); font-weight: 600; }
+
+.wip-badge {
+    display: inline-block;
+    background: var(--highlight);
+    color: var(--ink);
+    font-weight: 600;
+    font-size: 0.8rem;
+    padding: 0.05rem 0.5rem;
+    border-radius: 999px;
+    margin-right: 0.4rem;
+}
+
+.main-content {
+    max-width: var(--measure);
+    margin: 0 auto;
+    padding: 0.5rem 1rem 3rem;
+}
+.main-content:focus { outline: none; }
+
+.site-footer {
+    border-top: 1px solid var(--rule);
+    background: var(--surface);
+    padding: 1.5rem 1rem;
+    font-size: 0.9rem;
+    color: var(--muted);
+}
+.site-footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto 0.5rem;
+    max-width: var(--measure);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.25rem;
+}
+.site-footer p { max-width: var(--measure); margin: 0 auto; }
+.site-footer p + p { margin-top: 0.5rem; }
+.site-footer__rights { font-size: 0.82rem; }
+
+/* ---------- Building blocks ---------- */
+
+.card {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: var(--radius);
+    padding: 1.25rem 1.5rem;
+    margin: 0 0 1.5rem;
+}
+.card > :first-child { margin-top: 0; }
+.card > :last-child { margin-bottom: 0; }
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 1rem;
+    margin: 1rem 0 2rem;
+}
+.card-grid .card { margin: 0; }
+.card-grid--fill { grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr)); }
+.card-grid h3 { margin-top: 0; }
+.card-grid a.card { display: block; color: inherit; text-decoration: none; }
+.card-grid a.card:hover { border-color: var(--navy); }
+.card-grid a.card h3 { color: var(--navy); }
+
+.notice {
+    border-left: 4px solid var(--navy);
+    background: #eef3f8;
+    padding: 0.75rem 1rem;
+    border-radius: 0 var(--radius) var(--radius) 0;
+    margin: 0 0 1.5rem;
+}
+.notice > :last-child { margin-bottom: 0; }
+.notice.warn { border-color: var(--warn); background: #fbf3e2; }
+.notice.error { border-color: var(--error); background: #fbecea; }
+.notice.ok { border-color: var(--ok); background: #e9f4ec; }
+
+.loading { color: var(--muted); font-style: italic; }
+
+/* ---------- Forms ---------- */
+
+label { font-weight: 600; }
+input[type="text"], input[type="url"], input[type="number"], input[type="search"], select, textarea {
+    font: inherit;
+    font-size: 1rem;
+    padding: 0.45rem 0.6rem;
+    border: 1px solid #b9b4aa;
+    border-radius: 4px;
+    background: #fff;
+    color: var(--ink);
+    max-width: 100%;
+}
+textarea { width: 100%; }
+input:focus, select:focus, textarea:focus { outline: 2px solid var(--navy); outline-offset: 1px; }
+
+button, .button {
+    font: inherit;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 0.45rem 1rem;
+    border-radius: 4px;
+    border: 1px solid var(--navy);
+    background: var(--navy);
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+button:hover, .button:hover { background: var(--link-hover); color: #fff; }
+button.secondary, .button.secondary { background: #fff; color: var(--navy); }
+button.secondary:hover, .button.secondary:hover { background: #eef3f8; color: var(--navy); }
+button:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.field { margin: 0 0 1rem; }
+.field label { display: block; margin-bottom: 0.25rem; }
+.field .hint { display: block; font-size: 0.875rem; color: var(--muted); font-weight: 400; }
+
+.search-bar { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0 0 1rem; }
+.search-bar input[type="search"], .search-bar input[type="text"] { flex: 1 1 16rem; }
+/* Dictionary: Hide French / Hide Latin */
+.hide-langs { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: -0.25rem 0 1rem; }
+.hide-lang { font: inherit; font-size: 0.9rem; padding: 0.3rem 0.8rem; border: 1px solid var(--link); border-radius: 999px; background: transparent; color: var(--link); cursor: pointer; }
+.hide-lang[aria-pressed="true"] { background: var(--link); color: #fff; }
+.hide-lang[aria-pressed="false"]:hover { background: var(--powder-tint); color: var(--link); }
+.hide-lang[aria-pressed="true"]:hover { background: var(--link-hover); }
+.hide-lang:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+
+/* Headword suggestions (scripts/suggest.js) */
+.suggest-wrap { position: relative; flex: 1 1 16rem; }
+.suggest-wrap input { width: 100%; }
+.suggestions {
+    position: absolute; top: 100%; left: 0; right: 0; z-index: 20;
+    list-style: none; margin: 2px 0 0; padding: 0.25rem 0;
+    background: var(--surface); border: 1px solid var(--rule); border-radius: var(--radius);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+.suggestions a { display: flex; gap: 0.6rem; align-items: baseline; padding: 0.3rem 0.75rem; color: var(--ink); text-decoration: none; }
+.suggestions li[aria-selected="true"] a, .suggestions a:hover { background: var(--highlight); }
+.suggestions .headword { font-family: var(--serif); font-size: 1.1rem; font-weight: 600; color: var(--link); }
+.suggestions .gloss { color: var(--muted); font-size: 0.9rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+
+.filters {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    gap: 1rem;
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: var(--radius);
+    padding: 1rem;
+    margin: 0 0 1.5rem;
+}
+.facet-title {
+    display: block;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--muted);
+    margin-bottom: 0.35rem;
+}
+.filters select { width: 100%; }
+.range-inputs { display: flex; gap: 0.35rem; margin-bottom: 0.35rem; }
+.range-inputs input { width: 100%; min-width: 0; }
+
+/* ---------- Tables ---------- */
+
+.table-wrap { overflow-x: auto; margin: 0 0 1.5rem; }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--surface);
+    font-size: 0.95rem;
+}
+th, td { padding: 0.6rem 0.75rem; text-align: left; vertical-align: top; border-bottom: 1px solid #ebe8e1; }
+th {
+    background: var(--navy-dark);
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+tbody tr:nth-child(even) { background: #fafaf8; }
+tbody tr:hover { background: #f1f4f7; }
+td.term { font-weight: 600; color: var(--navy-dark); white-space: nowrap; }
+
+.highlight { background: var(--highlight); }
+
+/* ---------- Dictionary ---------- */
+
+.letter-index { display: flex; flex-wrap: wrap; gap: 0.25rem; margin: 0 0 1.5rem; padding: 0; list-style: none; }
+.letter-index a, .letter-index span {
+    display: inline-block;
+    min-width: 2rem;
+    text-align: center;
+    padding: 0.2rem 0.4rem;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    background: var(--surface);
+    text-decoration: none;
+    font-family: var(--serif);
+    font-size: 1.1rem;
+}
+.letter-index span { color: #bbb; }
+
+.entry-list { list-style: none; margin: 0 0 1rem; padding: 0; }
+.entry-list li { padding: 0.35rem 0; border-bottom: 1px solid #ebe8e1; display: flex; gap: 0.75rem; align-items: baseline; flex-wrap: wrap; }
+.entry-list .headword { font-family: var(--serif); font-size: 1.15rem; font-weight: 600; }
+.entry-list .gloss { color: var(--muted); font-size: 0.95rem; flex: 1 1 20rem; }
+
+.lang-badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.05rem 0.5rem;
+    border-radius: 999px;
+    background: #e9edf2;
+    color: var(--navy-dark);
+    white-space: nowrap;
+}
+.lang-badge.ang { background: #e6ecf5; }
+.lang-badge.la { background: #f3e8d6; }
+.lang-badge.fro { background: #e5efe4; }
+.lang-badge.de { background: #ece6f2; }
+.lang-badge.prop { background: #f7e0e5; }
+.lang-badge.spelling { background: #f4eccd; }
+.spelling-note { color: var(--muted); font-size: 0.95rem; margin: 0.6rem 0 1.2rem; }
+
+.entry-header h1 { margin-bottom: 0.2rem; }
+.entry-header .meta { color: var(--muted); margin-bottom: 1.5rem; display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: center; }
+
+.liebermann-text {
+    font-family: var(--serif);
+    font-size: 1.2rem;
+    line-height: 1.7;
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--navy);
+    border-radius: 0 var(--radius) var(--radius) 0;
+    padding: 1rem 1.25rem;
+    margin: 0 0 1.5rem;
+}
+.liebermann-text a { text-decoration: none; border-bottom: 1px dotted var(--link); }
+/* Links in entries have a colour for each kind of place they lead:
+   law codes (brown), clause numbers (a brighter red, solid underline),
+   manuscripts (purple), grammatical abbreviations (blue), authors and
+   works cited (green). */
+:root { --law-code: #7a2e0e; --clause: #b8401f; --manuscript: #5b3a8e; --abbreviation: var(--link); --work-cited: #2e6b45; }
+.liebermann-text a.ref-lawCode, .entry-section a.ref-lawCode { color: var(--law-code); border-bottom-color: var(--law-code); }
+.liebermann-text a.ref-manuscript, .entry-section a.ref-manuscript { color: var(--manuscript); border-bottom-color: var(--manuscript); }
+.liebermann-text a.ref-abbreviation { color: var(--abbreviation); border-bottom-color: var(--abbreviation); }
+/* The sic mark "!" is one narrow character: widen the area that opens its popup on hover, without moving the text. */
+.liebermann-text a.ref-abbreviation[href$="#sic"] { padding: 0 0.3em; margin: 0 -0.3em; position: relative; }
+.liebermann-text a.ref-bibl { color: var(--work-cited); border-bottom-color: var(--work-cited); }
+.link-key { white-space: nowrap; border-bottom: 1px dotted currentColor; }
+.link-key--law { color: var(--law-code); }
+.link-key--ms { color: var(--manuscript); }
+.link-key--gram { color: var(--abbreviation); }
+.link-key--bib { color: var(--work-cited); }
+.law-popup--law .law-popup-code { color: var(--law-code); }
+.law-popup--ms .law-popup-code { color: var(--manuscript); }
+.law-popup--gram .law-popup-code { color: var(--abbreviation); }
+.law-popup--bib .law-popup-code { color: var(--work-cited); }
+/* Authors and works cited (bibAbb.html) */
+.bib-work { margin: 0 0 1.5rem; }
+.bib-work h2 { font-size: 1.15rem; margin: 0 0 0.25rem; }
+.bib-work .bib-full { margin: 0 0 0.25rem; padding-left: 1.5rem; text-indent: -1.5rem; }
+.bib-work p.small { margin: 0 0 0.2rem; }
+.liebermann-text a.ref-clause { color: var(--clause); border-bottom: 1px solid currentColor; }
+.liebermann-text a.ref-clause:hover, .liebermann-text a.ref-clause:focus-visible { background: var(--highlight); }
+.link-key--clause { color: var(--clause); border-bottom-style: solid; }
+.liebermann-text .pb, .pb { font-family: var(--sans); font-size: 0.75rem; color: var(--muted); vertical-align: super; }
+.lang-marker { color: var(--navy); }
+
+.entry-section { margin: 0 0 1.5rem; }
+.entry-section h2 { font-size: 1.25rem; margin: 0 0 0.4rem; }
+.entry-section .def { font-family: var(--serif); font-size: 1.1rem; }
+.entry-section ol { padding-left: 1.5rem; }
+/* Links to the same word in other dictionaries, as cards. */
+.dict-group { margin-top: 1rem; }
+.dict-group__name { font-family: var(--serif); font-size: 1.1rem; font-weight: 600; color: var(--navy); margin: 0 0 0.3rem; }
+.dict-group__note { font-size: 0.78rem; color: var(--muted); margin: -0.15rem 0 0.4rem; }
+/* a quiet caution under the "Other dictionaries" heading */
+.dict-wip { display: inline-block; font-size: 0.78rem; line-height: 1.45; color: var(--muted); background: #fbf3e2; border: 1px solid #ecdcb8; border-radius: var(--radius); padding: 0.3rem 0.6rem; margin: 0 0 0.7rem; }
+.dict-wip__tag { font-weight: 600; color: #8a6418; margin-right: 0.25rem; }
+.dict-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr)); gap: 0.5rem; }
+.dict-card {
+    display: flex; flex-direction: column; gap: 0.05rem;
+    padding: 0.4rem 0.7rem; background: var(--surface);
+    border: 1px solid var(--rule); border-left: 3px solid var(--link); border-radius: var(--radius);
+    color: inherit; text-decoration: none;
+    transition: border-color 0.15s, box-shadow 0.15s;
+}
+a.dict-card:hover, a.dict-card:focus-visible { border-color: var(--link-hover); box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); color: inherit; }
+.dict-card__word { font-family: var(--serif); font-size: 1.1rem; font-weight: 600; color: var(--link); line-height: 1.25; }
+a.dict-card:hover .dict-card__word { color: var(--link-hover); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.dict-card__foot { font-family: var(--sans); font-size: 0.75rem; color: var(--muted); }
+.two-col { display: grid; grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); gap: 0 2rem; }
+
+.suggest-change {
+    display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.5rem 1rem;
+    margin: 2rem 0 1rem; padding: 0.75rem 1rem;
+    background: var(--surface); border: 1px solid var(--rule); border-radius: var(--radius);
+}
+.suggest-change p { margin: 0; }
+.source-line { font-size: 0.9rem; color: var(--muted); border-top: 1px solid var(--rule); padding-top: 1rem; }
+
+/* The printed page beside the entry; stacked under it on narrow screens. */
+.entry-with-scan { display: grid; grid-template-columns: minmax(0, 1fr) minmax(22rem, 30rem); gap: 2rem; align-items: start; }
+.entry-scan {
+    position: sticky;
+    top: 1rem;
+    display: flex;
+    flex-direction: column;
+    background: #2b2b2b;
+    border-radius: var(--radius);
+    padding: 0.5rem;
+}
+.entry-scan-bar { display: flex; justify-content: space-between; gap: 1rem; color: #fff; font-size: 0.85rem; padding: 0 0.25rem 0.5rem; }
+.entry-scan-bar a { color: #cfe2ff; }
+.entry-scan.loaded { height: calc(100vh - 2rem); min-height: 28rem; }
+.entry-scan iframe { flex: 1; width: 100%; border: 0; border-radius: 4px; background: #fff; }
+.entry-scan-load { text-align: center; padding: 2rem 1rem; color: #ddd; font-size: 0.85rem; }
+.entry-scan-load p { margin: 0.75rem 0 0; }
+@media (max-width: 60rem) {
+    .entry-with-scan { grid-template-columns: minmax(0, 1fr); }
+    .entry-scan { position: static; }
+    .entry-scan.loaded { height: 80vh; }
+}
+
+/* ---------- Contribution form ---------- */
+
+.editor { background: #fff; }
+.editor .ql-editor { font-family: var(--serif); font-size: 1.1rem; min-height: 8rem; }
+#editor-container .ql-editor { min-height: 14rem; }
+
+.link-row { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; margin: 0 0 0.5rem; }
+.link-row input { flex: 1 1 12rem; }
+
+.output-xml { height: 18rem; font-family: var(--mono); font-size: 0.85rem; background: #1e1e1e; color: #e4e4e4; border-radius: var(--radius); }
+
+.status-new { color: var(--ok); font-weight: 600; }
+.status-exists { color: var(--muted); }
+.status-warn { color: var(--warn); }
+
+/* ---------- Law code popups (scripts/lawpopup.js, entry pages) ---------- */
+
+.law-popup {
+    position: absolute;
+    z-index: 60;
+    width: min(23rem, calc(100vw - 1.5rem));
+    padding: 0.85rem 2.6rem 0.8rem 1.15rem;
+    background: var(--surface);
+    color: var(--ink);
+    border: 1px solid var(--rule);
+    border-top: 3px solid var(--navy);
+    border-radius: var(--radius);
+    box-shadow: 0 12px 32px rgba(26, 43, 60, 0.16), 0 2px 6px rgba(26, 43, 60, 0.08);
+    font-size: 0.95rem;
+    line-height: 1.45;
+}
+.law-popup:focus { outline: none; }
+/* The little pointer towards the link; --caret is set by the script. */
+.law-popup::before {
+    content: '';
+    position: absolute;
+    top: -9px;
+    left: var(--caret, 1.5rem);
+    margin-left: -6px;
+    border: 6px solid transparent;
+    border-top-width: 0;
+    border-bottom-color: var(--navy);
+}
+.law-popup.above::before {
+    top: auto;
+    bottom: -7px;
+    border-top-width: 6px;
+    border-bottom-width: 0;
+    border-top-color: var(--surface);
+    border-bottom-color: transparent;
+}
+.law-popup-code {
+    margin: 0 0 0.35rem;
+    font-family: var(--serif);
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--navy);
+}
+.law-popup dl { margin: 0; }
+.law-popup dt {
+    margin-top: 0.7rem;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+.law-popup dd {
+    margin: 0.1rem 0 0;
+    font-family: var(--serif);
+    font-size: 1.2rem;
+    line-height: 1.35;
+}
+.law-popup-more {
+    display: block;
+    margin-top: 0.85rem;
+    padding-top: 0.55rem;
+    border-top: 1px solid var(--rule);
+    font-size: 0.85rem;
+}
+.law-popup-close {
+    position: absolute;
+    top: 0.3rem;
+    right: 0.35rem;
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    border: 0;
+    border-radius: var(--radius);
+    background: transparent;
+    color: var(--muted);
+    font-size: 1.5rem;
+    line-height: 1;
+    cursor: pointer;
+}
+.law-popup-close:hover { color: var(--navy); background: #f1efe9; }
+.law-popup-close:focus-visible,
+.law-popup-more:focus-visible { outline: 2px solid var(--navy); outline-offset: 2px; }
+/* Notes on grammatical abbreviations can be long */
+.law-popup dd.law-popup-note { max-height: 11rem; overflow-y: auto; font-size: 0.9rem; }
+a.law-active { background: var(--highlight); border-radius: 2px; }
+@media (prefers-reduced-motion: no-preference) {
+    .law-popup { animation: law-popup-in 0.14s ease-out; }
+    @keyframes law-popup-in {
+        from { opacity: 0; transform: translateY(-3px); }
+        to { opacity: 1; transform: none; }
+    }
+}
+@media print { .law-popup { display: none; } }
+
+/* ---------- Full-width tools (Statutes of the Realm viewer) ---------- */
+
+body.full-width .main-content { max-width: none; padding: 0; }
+
+@media (max-width: 40rem) {
+    body { font-size: 16px; }
+    h1 { font-size: 1.8rem; }
+    .main-nav ul, .sub-nav ul { gap: 0 1rem; }
+    td.term { white-space: normal; }
+}
+
+/* Law code citations on an entry: one block per group of codes, each a
+   single column unless the group is long (then columns of short items) */
+.citation-groups { font-size: 0.9rem; }
+.citation-block { margin-bottom: 0.3rem; }
+ul.citations { padding-left: 1.2em; margin: 0.2rem 0 0; }
+ul.citations--cols { columns: 8em; column-gap: 1.5em; }
+/* the law code groups of laws.html, as quiet headings over the citations */
+.citation-group { font-family: var(--sans); font-size: 0.78rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); margin: 0.9rem 0 0; opacity: 0.85; break-after: avoid; }
+.citation-groups > .citation-block:first-child .citation-group { margin-top: 0.2rem; }
+ul.citations li { break-inside: avoid; }
+
+/* Law clause pages (law.html) */
+.clause-texts h3 { font-size: 0.95rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink); margin: 1.1rem 0 0.3rem; }
+.clause-texts p { margin: 0 0 0.4rem; }
+.clause-translation p { font-size: 1.05rem; }
+.clause-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 2rem; }
+@media (max-width: 760px) { .clause-grid { grid-template-columns: 1fr; } }
+.clause-grid--single { grid-template-columns: 1fr; }
+/* Clear space between the texts and translations and the Manuscripts heading below them. */
+.clause-texts-section { margin-bottom: 3rem; }
+.clause-reading { margin: 0 0 0.9rem; }
+.clause-source { margin: 0 0 0.1rem; font-size: 0.9rem; }
+.clause-source .source-name { font-weight: 600; }
+.clause-reading-text { font-family: var(--serif); font-size: 1.15rem; line-height: 1.45; margin: 0; }
+.clause-reading-notes { margin: .5rem 0 0; padding-left: 1.4rem; color: var(--muted, #666); line-height: 1.4; }
+.clause-reading-notes li + li { margin-top: .2rem; }
+/* EB Garamond has a rule for text marked as Latin that draws u, U and v as
+   classical V shapes. Liebermann prints u, so keep the ordinary letters. */
+:lang(la) { font-feature-settings: "locl" 0; font-language-override: "ENG"; }
+.clause-sources ul { list-style: none; padding-left: 0; }
+.clause-sources li { margin: 0 0 0.4rem; }
+/* Date and Place, each on its own line under the name of the law code */
+.entry-header .meta:has(+ .clause-dates) { margin-bottom: 0.35rem; }
+.clause-dates { color: var(--muted); margin-bottom: 1.5rem; }
+.clause-dates p { margin: 0.1rem 0; }
+.clause-dates__label { font-weight: 600; }
+.clause-dates__sep { color: var(--muted); }
+.clause-source .ms-label { cursor: help; border-bottom: 1px dotted currentColor; }
+.clause-note { margin: 0.3rem 0 0.6rem; color: var(--muted); }
+.clause-note strong { color: inherit; font-weight: 600; }
+/* Liebermann's cross-references ("Vgl.") and the clauses that point back here */
+.clause-compare { margin: 0.6rem 0; padding: 0.5rem 0.8rem; border-left: 3px solid var(--rule, #ccc); }
+.clause-compare p { margin: 0.2rem 0; }
+.clause-compare strong { font-weight: 600; }
+.clause-compare .muted { color: var(--muted); }
+.clause-compare__head { font-family: var(--sans); font-size: 0.85rem; font-weight: 600; margin: 0 0 0.3rem; }
+.clause-compare__quote { color: var(--muted); font-style: italic; }
+.ms-list { list-style: none; padding-left: 0; }
+.ms-list li { margin: 0.15rem 0; }
+.ms-list .ms-siglum { display: inline-block; min-width: 2.5rem; font-weight: 600; }
+.clause-texts h3.clause-subhead { margin-top: 1.4rem; }
+.clause-sources li:target { background: var(--highlight); }
+.clause-nav { display: flex; justify-content: space-between; gap: 1rem; margin: 1.5rem 0; }
+/* Entry pages: previous and next entries */
+.entry-nav { display: flex; justify-content: space-between; gap: 1rem; margin: 2rem 0 1.5rem; padding-top: 1rem; border-top: 1px solid var(--rule); }
+.entry-nav a { display: flex; flex-direction: column; text-decoration: none; max-width: 48%; }
+.entry-nav__next { text-align: right; margin-left: auto; }
+.entry-nav__label { font-family: var(--sans); font-size: 0.8rem; color: var(--muted); }
+.entry-nav__word { font-family: var(--serif); font-size: 1.25rem; font-weight: 600; overflow-wrap: anywhere; }
+.entry-nav a:hover .entry-nav__word, .entry-nav a:focus-visible .entry-nav__word { text-decoration: underline; text-underline-offset: 3px; }
+/* Laws page: the list of law codes */
+.code-group h2 { font-size: 1.35rem; margin: 1.6em 0 0.4em; }
+.code-group-reign { font-family: var(--sans, inherit); font-size: 0.9rem; font-weight: 400; color: var(--muted); margin-left: 0.4rem; }
+.code-list { list-style: none; margin: 0; padding: 0; }
+.code-list li { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0.2rem 1rem; padding: 0.45rem 0; border-bottom: 1px solid #ebe8e1; }
+.code-list a { text-decoration: none; }
+.code-list a:hover .code-name, .code-list a:focus-visible .code-name { text-decoration: underline; }
+.code-name { font-family: var(--serif); font-size: 1.15rem; }
+.code-abbr { display: inline-block; min-width: 4.5rem; font-size: 0.85rem; font-weight: 600; color: var(--muted); }
+.code-meta { font-size: 0.85rem; color: var(--muted); }
+h2.result-code .code-abbr { min-width: 0; margin-left: 0.4rem; }
+.entry-header .code-abbr { min-width: 0; }
+/* One law code, clause by clause */
+.breadcrumb { margin: 0 0 0.5rem; color: var(--muted); }
+.code-tools { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0 0.5rem; }
+.code-tools input { flex: 1 1 16rem; }
+.code-clauses { list-style: none; margin: 1rem 0; padding: 0; }
+.code-clauses li { display: grid; grid-template-columns: 6rem 1fr 1fr; gap: 0 1.5rem; padding: 0.6rem 0; border-bottom: 1px solid #ebe8e1; }
+.code-clauses li:target { background: var(--highlight); }
+.code-clause-no { font-family: var(--serif); font-weight: 600; font-size: 1.05rem; align-self: start; justify-self: start; padding: 0.05rem 0.5rem; border: 1px solid var(--link); border-radius: 4px; text-decoration: none; line-height: 1.35; max-width: 100%; }
+.code-clause-no:hover, .code-clause-no:focus-visible { background: var(--link); color: #fff; }
+.code-clause-more { grid-column: 3; justify-self: start; margin-top: 0.35rem; font-size: 0.85rem; }
+.code-callout { margin: 0 0 1rem; padding: 0.6rem 0.9rem; background: var(--powder-tint); border-radius: var(--radius); }
+.visually-hidden { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.code-clause-oe { font-family: var(--serif); font-size: 1.08rem; margin: 0; }
+.code-clause-en { margin: 0; color: #333; }
+.code-clauses-head { display: grid; grid-template-columns: 6rem 1fr 1fr; gap: 0 1.5rem; margin-top: 1rem; padding-bottom: 0.3rem; border-bottom: 2px solid #ebe8e1; font-size: 0.85rem; font-weight: 600; color: var(--muted); }
+.code-clauses-head + .code-clauses { margin-top: 0; }
+.code-clause-src { font-family: var(--sans, inherit); font-size: 0.75rem; color: var(--muted); border: 1px solid #ddd8cc; border-radius: 3px; padding: 0 0.3rem; white-space: nowrap; }
+@media (max-width: 760px) {
+    .code-clauses li { grid-template-columns: 1fr; }
+    .code-clause-more { grid-column: 1; }
+    .code-clause-en { margin-top: 0.3rem; color: var(--muted); }
+    .code-clauses-head { grid-template-columns: 1fr; }
+    .code-clauses-head span:empty { display: none; }
+}
+.whole-code h2 { font-size: 1.1rem; margin: 1.8rem 0 0.2rem; border-top: 1px solid var(--rule); padding-top: 1rem; }
+.whole-code h2.current a { background: rgba(255, 230, 120, 0.45); padding: 0 0.3rem; }
+
+/* Numbered meanings in Liebermann's entry, one paragraph each */
+.liebermann-text p { margin: 0 0 0.5em; }
+.liebermann-text p:last-child { margin-bottom: 0; }
+.liebermann-text p.sense { padding-left: 1.4em; text-indent: -1.4em; }
+/* Liebermann's outline: one step of indent per level (see splitOutline). */
+.liebermann-text p.sense--depth-1 { margin-left: 1.5em; }
+.liebermann-text p.sense--depth-2 { margin-left: 3em; }
+.liebermann-text p.sense--depth-3 { margin-left: 4.5em; }
+.liebermann-text p.sense--depth-4 { margin-left: 6em; }
+.liebermann-text p.sense--roman, .liebermann-text p.sense--upper { margin-top: 0.9em; }
+.liebermann-text p.sense--depth-0 + p.sense--depth-1, .liebermann-text p.sense--depth-1 + p.sense--depth-2 { margin-top: 0; }
+@media (max-width: 600px) {
+    .liebermann-text p.sense--depth-1 { margin-left: 0.9em; }
+    .liebermann-text p.sense--depth-2 { margin-left: 1.8em; }
+    .liebermann-text p.sense--depth-3 { margin-left: 2.7em; }
+    .liebermann-text p.sense--depth-4 { margin-left: 3.6em; }
+}
+
+/* Laws search page */
+.clause-list li { align-items: baseline; }
+.clause-list .gloss { flex: 1 1 24rem; }
+.chips { display: flex; flex-wrap: wrap; gap: 0.25rem; flex: 1 1 100%; }
+.chip { font: inherit; font-size: 0.78rem; padding: 0.05rem 0.55rem; border: 1px solid var(--rule); border-radius: 999px; background: transparent; color: var(--muted); cursor: pointer; }
+.chip:hover, .chip:focus-visible, .chip:active { color: var(--powder); border-color: var(--powder); background: var(--powder-tint); }
+.chip:focus-visible { outline: 2px solid var(--powder); outline-offset: 1px; }
+a.chip { text-decoration: none; display: inline-block; }
+/* Clause pages: keywords as bubbles, under their group's name */
+.kw-groups { display: grid; grid-template-columns: max-content 1fr; gap: 0.5rem 0.9rem; align-items: baseline; margin: 0.6rem 0 0; }
+.kw-groups dt { font-weight: 600; }
+.kw-groups dd { margin: 0; }
+.kw-groups .chips { gap: 0.35rem; }
+.kw-groups .chip { font-size: 0.9rem; padding: 0.1rem 0.7rem; color: var(--ink); }
+@media (max-width: 34rem) { .kw-groups { grid-template-columns: 1fr; gap: 0.2rem; } .kw-groups dd { margin-bottom: 0.5rem; } }
+
+/* How to read an entry */
+.guide-sections > li { margin: 0 0 1.2rem; }
+.guide-sections p[lang="de"] { margin-top: 0.3rem; }
+
+/* Liebermann's Forewords: German on the left, English on the right.
+   Each paragraph is a pair of grid cells in the same row, so the start of
+   every English paragraph lines up with the start of its German one. */
+.sperr { letter-spacing: 0.12em; }
+.fw-parallel {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    column-gap: 2.5rem;
+    align-items: start;
+}
+.fw-parallel > * { margin: 0 0 1rem; }
+.fw-parallel .fw-de { font-family: var(--serif); font-size: 1.12rem; line-height: 1.55; }
+.fw-parallel .fw-en { font-size: 0.98rem; line-height: 1.6; }
+.fw-parallel h2.fw-de, .fw-parallel h2.fw-en { margin: 0.6rem 0 1rem; }
+.fw-parallel h2.fw-en { font-family: var(--serif); color: var(--muted); }
+.fw-colhead {
+    font-family: var(--sans); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--muted); border-bottom: 1px solid var(--rule); padding-bottom: 0.25rem;
+}
+.fw-subheading { text-align: center; font-style: italic; }
+.fw-titlepage, .fw-dedication { text-align: center; line-height: 2; letter-spacing: 0.04em; }
+.fw-dedication { margin-top: 1.5rem; }
+.fw-epigraph { text-align: right; font-size: 0.95rem !important; }
+.fw-signoff { margin-top: 0.8rem; }
+.fw-parallel sup.fn a { text-decoration: none; font-family: var(--sans); font-size: 0.75em; padding: 0 0.1em; }
+.fw-parallel sup.fn a:target, .fw-parallel :target { background: var(--highlight); }
+.fw-notes { margin-top: 2.5rem; border-top: 1px solid var(--rule); }
+.fw-notes .fw-parallel .fw-de, .fw-notes .fw-parallel .fw-en { font-size: 0.9rem; line-height: 1.45; margin-bottom: 0.55rem; }
+.fw-notepage { grid-column: 1 / -1; font-family: var(--sans); font-size: 0.8rem; color: var(--muted); margin: 0.8rem 0 0.4rem !important; border-bottom: 1px dotted var(--rule); }
+.fw-noteno { font-family: var(--sans); font-weight: 600; text-decoration: none; margin-right: 0.2em; }
+.fw-prevnext { display: flex; justify-content: space-between; gap: 1rem; margin-top: 2.5rem; padding-top: 0.8rem; border-top: 1px solid var(--rule); }
+@media (max-width: 46rem) {
+    /* On a phone the columns stack: each German paragraph, then its English. */
+    .fw-parallel { grid-template-columns: minmax(0, 1fr); }
+    .fw-parallel > .fw-en { margin-bottom: 1.4rem; padding-left: 0.75rem; border-left: 3px solid var(--rule); }
+    .fw-parallel > .fw-de { margin-bottom: 0.4rem; }
+    .fw-colhead { display: none; }
+}
+
+/* Subjects: the index */
+.subject-tools { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; align-items: center; margin: 1rem 0 0.4rem; }
+.subject-tools input { flex: 1 1 18rem; }
+.subject-sort { display: flex; gap: 0.35rem; }
+.subject-jump { margin: 0.3rem 0 0.5rem; }
+.subject-section h2 { font-size: 1.5rem; margin: 1.8em 0 0.2em; border-bottom: 1px solid var(--rule); padding-bottom: 0.2em; }
+.subject-section-n { font-family: var(--sans); font-size: 0.9rem; font-weight: 400; color: var(--muted); margin-left: 0.4rem; }
+.subject-groups { display: grid; grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); gap: 1rem 1.6rem; margin-top: 0.8rem; }
+.subject-group h3 { font-size: 1.12rem; margin: 0 0 0.3rem; color: var(--navy-dark, var(--ink)); }
+.subject-broad { margin: 0 0 0.35rem; font-size: 0.9rem; color: var(--muted); }
+.subject-terms { list-style: none; margin: 0; padding: 0; }
+.subject-terms li { padding: 0.12rem 0; break-inside: avoid; }
+.subject-n { font-size: 0.8rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+/* Subjects: one subject */
+.subject-timeline { margin: 1.2rem 0 1rem; padding: 0.8rem 1rem 0.5rem; border: 1px solid var(--rule); border-radius: 6px; background: #fff; }
+.subject-timeline figcaption { margin-bottom: 0.6rem; font-size: 0.95rem; }
+.subject-timeline figcaption .muted { font-size: 0.85rem; }
+.timeline-scroll { overflow-x: auto; }
+.timeline { display: flex; gap: 0 8px; min-width: 40rem; align-items: stretch; }
+.timeline-king { display: flex; flex-direction: column; flex-basis: 0; min-width: 2.9rem; }
+.timeline-bars { display: flex; align-items: flex-end; gap: 2px; height: 7rem; border-bottom: 1px solid var(--muted); }
+.timeline-bar { flex: 1 1 0; height: 100%; display: flex; align-items: flex-end; min-width: 3px; }
+.timeline-bar > span { display: block; width: 100%; background: var(--link); border-radius: 4px 4px 0 0; }
+a.timeline-bar:hover > span, a.timeline-bar:focus-visible > span { background: var(--link-hover); }
+a.timeline-bar:focus-visible { outline: 2px solid var(--link-hover); outline-offset: 1px; }
+.timeline-empty > span { height: 2px; background: var(--rule); border-radius: 0; }
+.timeline-other .timeline-bars { border-bottom-style: dashed; }
+.timeline-other .timeline-bar > span { background: #7f93ad; }
+.timeline-label { font-size: 0.72rem; line-height: 1.25; color: var(--muted); padding: 0.3rem 0 0 3px; border-left: 1px solid var(--rule); }
+.subject-code-meta { font-family: var(--sans); font-size: 0.85rem; font-weight: 400; color: var(--muted); margin-left: 0.3rem; }
+.timeline-scale { margin: 0.4rem 0 0; }
+.subject-related { margin: 0 0 1rem; }
+.subject-list-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 0.5rem; margin-top: 1.5rem; }
+.subject-list-head h2 { margin: 0; }
+.subject-code h3 { font-size: 1.15rem; margin: 1.4rem 0 0.2rem; }
+.subject-code .code-clauses { margin-top: 0.3rem; }
+
+/* Liebermann's notes on a clause page: note numbers in the text (hidden until the button is pressed), and the notes */
+.lnote-ref { font-size: 0.68em; line-height: 0; vertical-align: super; font-family: var(--sans, inherit); }
+.lnote-ref a { color: var(--muted); text-decoration: none; padding: 0 0.05em; }
+.lnote-ref a:hover, .lnote-ref a:focus { color: var(--link); text-decoration: underline; }
+.lnotes-toggle { margin-left: 0.3rem; vertical-align: 0.05em; }
+.lnotes-toggle[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--surface, #fff); }
+.lnotes { margin: 0.5rem 0 0; padding: 0.45rem 0.8rem; border-left: 3px solid var(--rule); }
+.lnotes__intro { margin: 0 0 0.4rem; font-style: italic; }
+.lnotes__list { list-style: none; padding: 0; margin: 0; }
+.lnotes__list li { margin: 0 0 1.1rem; line-height: 1.45; scroll-margin-top: 5rem; }
+.lnotes__list li:target { background: var(--highlight, #fff3c4); }
+.lnotes__num { font-weight: 600; margin-right: 0.35rem; }
+.lnotes__de, .lnotes__en { display: block; }
+.lnotes__num + .lnotes__de { display: inline; }
+.lnotes__en { color: var(--muted); margin-top: 0.9em; }
+.lnotes__where { display: block; font-size: 0.85em; margin-top: 0.5em; }
+.spaced { letter-spacing: 0.14em; }
+.smallcaps { font-variant: small-caps; }
+
+.clause-parts { margin: 0.4rem 0 0; color: var(--muted); }
+.part-mark { font-family: var(--sans, inherit); font-size: 0.7em; line-height: 0; color: var(--muted); font-style: normal; font-weight: normal; vertical-align: super; white-space: nowrap; margin-right: 0.15em; }
+.part-active { background: var(--highlight, #fff3c4); border-radius: 2px; }
+
+/* Modern German spelling under Liebermann's form (abbreviation lists and popups) */
+.modern-german { display: block; font-size: 0.85em; color: var(--muted); }
+
+/* A note by the eLiebermann editors under Liebermann's entry */
+.editor-note { font-size: 0.95rem; margin: 0.6rem 0 1.2rem; padding: 0.5rem 0.75rem; border-left: 3px solid var(--muted); background: rgba(0,0,0,0.03); }
+.editor-note__label { font-weight: 600; }
+
+.fn-ref { cursor: help; text-decoration: underline dotted; text-underline-offset: 2px; }
+
+/* the two lines of reading help under Liebermann’s entry */
+.reading-help { margin-bottom: 0; }
+.reading-help--tilde { margin-top: 0.4em; }
+
+/* guide: the contents line under the lede, and Liebermann's explanation with the English in grey */
+.guide-toc { font-size: 1rem; margin: 0.4rem 0 2rem; }
+.guide-parallel .fw-en { color: var(--muted); }
+
+/* See also / Compare: a long list of headwords flows into columns */
+ul.link-columns { columns: 8em; column-gap: 1.5em; padding-left: 1.2em; }
+ul.link-columns li { break-inside: avoid; }

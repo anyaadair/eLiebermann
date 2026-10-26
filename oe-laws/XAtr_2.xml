@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="XAtr_2">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>X Atr 2</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Transcription of Robertson’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">XAtr_2</idno>
+        <idno type="citation">X Atr 2</idno>
+        <idno type="lawCode">X Atr</idno>
+        <idno type="lawCodeAnchor">XAtr</idno>
+        <idno type="clause">2</idno>
+        <idno type="citationKey">XAtr 2</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>X Æthelred</title> <note type="reign">Æthelred II, r. 978–1016</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">270</biblScope></bibl>
+          <bibl xml:id="robertson" type="edition">A. J. Robertson, <title>The Laws of the Kings of England from Edmund to Henry I</title> (Cambridge: Cambridge University Press, 1925), p. <biblScope unit="page">132</biblScope></bibl>
+          <bibl xml:id="rabin-doml" type="edition">Andrew Rabin, ed. and trans., <title>Old English Legal Writings: Wulfstan</title>, Dumbarton Oaks Medieval Library (Cambridge, MA: Harvard University Press, 2020), p. <biblScope unit="page">208</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-vr"><abbr>Vr</abbr> <note type="manuscript">Vatican, Biblioteca Apostolica, Reg. lat. 946</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 269">1009–16</date><date source="#wormald-mel" n="MEL pp. 336–7">?as for V &amp; VI Atr: 1008</date><placeName source="#wormald-mel" n="MEL pp. 336–7">?King’s Enham</placeName><note type="promulgation">1009–16 (Liebermann, I p. 269); ?as for V &amp; VI Atr: 1008 (Wormald, MEL pp. 336–7); ?King’s Enham (Wormald, MEL pp. 336–7)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Legal principles</term></keywords>
+        <keywords n="people"><term>Councillors</term><term>All people</term><term>Nobles</term><term>Secular classes</term><term>Rank</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 1486 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 270.</change>
+      <change when="2026-10" type="checked">Robertson’s text checked and corrected against her edition, p. 132.</change>
+      <change when="2026-10" type="checked">Liebermann’s text added from <title>Die Gesetze der Angelsachsen</title> I, p. 270.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="2">
+        <head><ref type="lawCode" target="law:XAtr">X Atr</ref> 2</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="2" corresp="#wit-vr"><pb n="270" ed="#liebermann"/>⁊ witena gerædnes is, þæt man rihte laga upp arære ⁊ ælce unlaga georne afylle, ⁊ þ<hi rend="italic">æt</hi> man læte beon æghwylcne man rihtes wyrðe.</ab>
+        <ab type="editionText" xml:lang="ang" source="#robertson" n="2" corresp="#wit-vr"><pb n="132" ed="#robertson"/>⁊ witena gerædnes is, þæt man rihte laga upp arære ⁊ ælce unlaga georne afylle, ⁊ þæt man læte beon æghwylcne man rihtes wyrðe.</ab>
+        <ab type="editionText" xml:lang="ang" source="#rabin-doml"><pb n="208" ed="#rabin-doml"/>And witena gerædnes is þæt man rihte laga upp arære and ælce unlaga georne afylle, and þæt man læte beon æghwylcne man rihtes wyrðe,</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="270" ed="#liebermann"/>Und Verordnung der Witan ist, dass man echte Rechtsordnungen aufrichte und jeden Rechtsmissbrauch eifrig abschaffe, und dass man jeden Menschen [sein] Recht geniessen lasse,</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">And it is the ordinance of the witan that just laws be set up and every abuse of law eagerly suppressed, and that every man be allowed to have his rights,</ab>
+        <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-vr"><ptr type="editorNote" n="1" target="#XAtr_2.robnote.n.1"/><pb n="133" ed="#robertson"/>And the decree of the councillors is, that justice be promoted and every injustice zealously suppressed, and that every man be allowed the benefit of the law.</ab>
+        <ab type="translation" xml:lang="en" source="#rabin-doml"><pb n="209" ed="#rabin-doml"/>And the judgment of the council is that just laws be upheld and each injustice zealously eradicated, and that each person be afforded their legal rights,</ab>
+        <note type="comparison" source="#liebermann" n="270"><ref target="clause:VAtr_1-1">V Atr 1.1</ref></note>
+        <note type="comparisonPrinted" source="#liebermann">ebd. 1, 1</note>
+        <note type="editorial">Liebermann compares V Atr 1.1.</note>
+        <note type="editorNote" subtype="endnote" xml:id="XAtr_2.robnote.n.1" n="1" source="#robertson"><bibl><biblScope unit="page">342</biblScope></bibl><seg type="original" xml:lang="en">Cf. V, 1, 1; VI, 8–8, 2.</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

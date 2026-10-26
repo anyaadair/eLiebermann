@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="VIAtr_2-1">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>VI Atr 2.1</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Cross-references to other clauses</resp><name ref="#kennedy">Kennedy</name></respStmt>
+        <respStmt><resp>Cross-references to other clauses</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">VIAtr_2-1</idno>
+        <idno type="citation">VI Atr 2.1</idno>
+        <idno type="lawCode">VI Atr</idno>
+        <idno type="lawCodeAnchor">VIAtr</idno>
+        <idno type="clause">2.1</idno>
+        <idno type="citationKey">VIAtr 2.1</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>VI Æthelred (Enham)</title> <note type="reign">Æthelred II, r. 978–1016</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">246</biblScope></bibl>
+          <bibl xml:id="robertson" type="edition">A. J. Robertson, <title>The Laws of the Kings of England from Edmund to Henry I</title> (Cambridge: Cambridge University Press, 1925), p. <biblScope unit="page">90</biblScope></bibl>
+          <bibl xml:id="rabin-doml" type="edition">Andrew Rabin, ed. and trans., <title>Old English Legal Writings: Wulfstan</title>, Dumbarton Oaks Medieval Library (Cambridge, MA: Harvard University Press, 2020), p. <biblScope unit="page">160</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="kennedy" type="study">A. G. Kennedy, ‘Cnut’s Law Code of 1018’, <title>Anglo-Saxon England</title> 11 (1983), 57–81</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-k" rend="bold"><abbr>K</abbr> <note type="manuscript">London, British Library, Cotton Claudius A.iii</note></witness>
+          <witness xml:id="wit-d-incomplete"><abbr>D (incomplete)</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 201</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 246">16 May 1008–13 May 1011</date><date source="#robertson #wormald-mel" n="|MEL pp. 332–5">1008</date><placeName>Enham</placeName><note type="promulgation">16 May 1008–13 May 1011 (Liebermann, I p. 246); 1008 (Robertson; Wormald, MEL pp. 332–5); Enham</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Ecclesiastical directives</term><term>Canon law</term><term>Administrative directives</term><term>Service</term><term>Written laws/decisions</term></keywords>
+        <keywords n="people"><term>Bishops</term><term>Abbot</term><term>Abbess</term><term>Nobles</term><term>Monk</term><term>Nun</term><term>Women</term><term>Canons</term><term>Christians</term><term>Ecclesiastical orders</term><term>Rank</term><term>All people</term><term>Secular classes</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 1215 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 246.</change>
+      <change when="2026-10" type="checked">Liebermann’s text of MS K added from Gesetze I, p. 246.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="2.1">
+        <head><ref type="lawCode" target="law:VIAtr">VI Atr</ref> 2.1</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="2.1"><pb n="246" ed="#liebermann"/>[Not in D]</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="2.1" corresp="#wit-k"><pb n="246" ed="#liebermann"/>⁊ þ<hi rend="italic">æt</hi> ælces hades men georne gebugan for Gode ⁊ for worolde, ælc to þam rihte þe him to gebyrige,</ab>
+        <ab type="editionText" xml:lang="ang" source="#robertson" n="2[b]" corresp="#wit-k"><pb n="90" ed="#robertson"/>⁊ þæt ælces hades men georne gebugan for Gode ⁊ for worolde, ælc to þam rihte þe him to gebyrige,</ab>
+        <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-k"><pb n="160" ed="#rabin-doml"/>And þæt ælces hades men georne gebugan for Gode and for worolde, ælc to þam rihte þe him to gebyrige.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="246" ed="#liebermann"/>und dass die Menschen jeglichen Standes, ein jeglicher der Rechtspflicht, die ihm gebührt, sich willig in Geistlichem und Weltlichem unterwerfen,</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">and that people of every order eagerly submit, each to the duty that belongs to him, in spiritual and in secular matters,</ab>
+        <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-k"><pb n="91" ed="#robertson"/>and that men of every estate shall readily submit in matters both religious and secular to the duty which befits them,</ab>
+        <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-k"><pb n="161" ed="#rabin-doml"/>And people of every rank shall faithfully submit before God and the world to the duty appropriate for them.</ab>
+        <note type="comparedBy" source="#liebermann"><ref target="clause:VIIIAtr_31">VIII Atr 31</ref></note>
+        <note type="comparedBy" source="#kennedy" n="59"><ref target="clause:Cn-1018_part-021">Cn 1018 11–11.2</ref></note>
+        <note type="comparedBy" source="#wormald-mel" n="356"><ref target="clause:ICn_6">I Cn 6–6a</ref></note>
+      </div>
+    </body>
+  </text>
+</TEI>

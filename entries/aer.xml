@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ær</title>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">aer</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, <biblScope unit="volume">2.1</biblScope> (Wörterbuch), <biblScope unit="page">7</biblScope>
+            <ptr type="facsimile" target="https://archive.org/details/diegesetzederang02liebuoft/page/7/mode/2up"/>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <revisionDesc>
+      <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
+      <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
+      <change when="2026-10-17">“Vgl.” (vergleiche, compare) linked to the abbreviations list.</change>
+      <change when="2026-10-19">“cpa” linked to the abbreviations list (printed bold italic, missed before).</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry xml:lang="ang">
+        <form type="lemma">
+          <orth>ær</orth>
+        </form>
+        <dictScrap type="liebermann"><hi rend="bold">ær</hi> <hi rend="bold">I</hi>) <hi rend="italic"><ref type="abbreviation" target="gram:adjektiv"><abbr>adj</abbr></ref>: frühe, ehemalig;</hi> <hi rend="bold"><hi rend="italic"><ref type="abbreviation" target="gram:comparativus"><abbr>cpa</abbr></ref></hi></hi> ærra, <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>:</hi> ærran <ref type="lawCode" target="law:IICn">II Cn</ref> 73a; erran <ref type="lawCode" target="law:MsA">A</ref> | <hi rend="italic"><ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref>:</hi> ærran <ref type="lawCode" target="law:VIAtr">VI Atr</ref> 43 | <hi rend="italic"><ref type="abbreviation" target="gram:femininum"><abbr>fm</abbr></ref> <ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref> <ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>:</hi> ærran <ref type="lawCode" target="law:ICn">I Cn</ref> Inscr <ref type="lawCode" target="law:D">D</ref> | <hi rend="italic"><ref type="abbreviation" target="gram:neutrum"><abbr>nt</abbr></ref> <ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref> <ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>:</hi> ærran <ref type="lawCode" target="law:IICn">II Cn</ref> 84,1a | <hi rend="bold"><hi rend="italic"><ref type="abbreviation" target="gram:superlativus"><abbr>spl</abbr></ref>:</hi></hi> <hi rend="italic">erster,</hi> ærest <hi rend="italic">als erster</hi> (<hi rend="italic"><ref type="abbreviation" target="gram:oder"><abbr>oder</abbr></ref> <ref type="abbreviation" target="gram:adverb"><abbr>adv</abbr></ref>. zuerst</hi>) <ref type="lawCode" target="law:Abt">Abt</ref> 17. <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:El">El</ref> 49,9. <ref type="lawCode" target="law:ICn">I Cn</ref> 22,2. <ref type="lawCode" target="law:Grith">Grið</ref> 24 [<hi rend="italic">und <ref type="abbreviation" target="gram:vielleicht"><abbr>vielleicht</abbr></ref> einige Fälle, die unten <ref type="abbreviation" target="gram:als"><abbr>als</abbr></ref> <ref type="abbreviation" target="gram:adverb"><abbr>adv</abbr></ref>. bemerkt sind</hi>] | æt ærestan <hi rend="italic">zuerst</hi> <ref type="lawCode" target="law:Af">Af</ref> 1 <hi rend="bold">II</hi>) <hi rend="italic"><ref type="abbreviation" target="gram:adverb"><abbr>adv</abbr></ref>. <ref type="abbreviation" target="gram:fruher"><abbr>früher</abbr></ref>, <ref type="abbreviation" target="gram:vorher"><abbr>vorher</abbr></ref>, zuvor</hi> <ref type="lawCode" target="law:Abt">Abt</ref> 78. <ref type="lawCode" target="law:Hl">Hl</ref> Pro. <ref type="lawCode" target="law:Wi">Wi</ref> Pro 1. <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:El">El</ref> 21. 25. <ref type="lawCode" target="law:Ine">Ine</ref> 35,1. 39. <ref type="lawCode" target="law:IEw">I Ew</ref> 2,1. <ref type="lawCode" target="law:IIEw">II</ref> 1. <ref type="lawCode" target="law:IIAs">II As</ref> 20. <ref type="lawCode" target="law:IICn">II Cn</ref> 15a. <ref type="lawCode" target="law:Rect">Rect</ref> 4,4; <hi rend="italic"><ref type="abbreviation" target="gram:fruher"><abbr>früher</abbr></ref> schon</hi> <ref type="lawCode" target="law:IAtr">I Atr</ref> 1,8; <hi rend="italic">schon, bereits</hi> <ref type="lawCode" target="law:Af">Af</ref> 1,6. <ref type="lawCode" target="law:Ine">Ine</ref> 48; <hi rend="italic">bisher</hi> <ref type="lawCode" target="law:Af">Af</ref> 37. 37,1. <ref type="lawCode" target="law:Hu">Hu</ref> 2; <hi rend="italic"><ref type="abbreviation" target="gram:obenImText"><abbr>oben im Text</abbr></ref></hi> <ref type="lawCode" target="law:Wi">Wi</ref> Pro. <ref type="lawCode" target="law:IIAs">II As</ref> 23,2; <hi rend="italic">soeben</hi> <ref type="lawCode" target="law:Ordal">Ordal</ref> 3; ær beforan <hi rend="italic">eben zuvor</hi> <ref type="lawCode" target="law:IIAs">II As</ref> 14,1. <ref type="lawCode" target="law:Rect">Rect</ref> 21. 21,1; ær oððe æfter <ref type="lawCode" target="law:VAtr">V Atr</ref> 20. <ref type="lawCode" target="law:VIAtr">VI</ref> 25,2. <ref type="lawCode" target="law:ICn">I Cn</ref> 17,3. <ref type="lawCode" target="law:Grith">Grið</ref> 26. [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>Vgl</abbr></ref>.</hi> her.] <hi rend="bold"><hi rend="italic"><ref type="abbreviation" target="gram:comparativus"><abbr>cpa</abbr></ref>:</hi></hi> æror <hi rend="italic">früherhin</hi> <ref type="lawCode" target="law:VIAs">VI As</ref> 12,3 | <hi rend="bold"><hi rend="italic"><ref type="abbreviation" target="gram:superlativus"><abbr>spl</abbr></ref>:</hi></hi> ærest <hi rend="italic">zuerst, erstens</hi> <ref type="lawCode" target="law:IAs">I As</ref> Pro. <ref type="lawCode" target="law:VIIIAtr">VIII Atr</ref> 4,1 [<hi rend="italic">und <ref type="abbreviation" target="gram:vielleicht"><abbr>vielleicht</abbr></ref> z. T. die Fälle <ref type="abbreviation" target="gram:oben"><abbr>oben</abbr></ref> unter</hi> <ref type="lawCode" target="law:I">I</ref>] | <hi rend="italic"><ref type="abbreviation" target="gram:als"><abbr>als</abbr></ref> erstes Glied einer Reihe <ref type="abbreviation" target="gram:vor"><abbr>vor</abbr></ref></hi> æfter (<ref type="lawCode" target="law:Abt">Abt</ref> 17?) <ref type="lawCode" target="law:Ine">Ine</ref> 1; <hi rend="italic"><ref type="abbreviation" target="gram:vor"><abbr>vor</abbr></ref></hi> eft <ref type="lawCode" target="law:Wif">Wif</ref> 1; <hi rend="italic"><ref type="abbreviation" target="gram:vor"><abbr>vor</abbr></ref></hi> syððan <ref type="lawCode" target="law:VAtr">V Atr</ref> 14. <ref type="lawCode" target="law:VIAtr">VI</ref> 22,2; <hi rend="italic"><ref type="abbreviation" target="gram:vor"><abbr>vor</abbr></ref></hi> þonne <ref type="lawCode" target="law:AGu">AGu</ref> 1 | þis ærest <ref type="lawCode" target="law:EGu">EGu</ref> Pro 1; þæt is ærest <ref type="lawCode" target="law:B">B</ref>. <ref type="lawCode" target="law:IEm">I Em</ref> 1 <ref type="lawCode" target="law:H">H</ref> (æres <ref type="lawCode" target="law:D">D</ref>). <ref type="lawCode" target="law:VIIIAtr">VIII Atr</ref> 1; þæt is þonon ærest <ref type="lawCode" target="law:EGu">EGu</ref> 1; þæt is þonne ærest <ref type="lawCode" target="law:VIIIAtr">VIII Atr</ref> 2. <ref type="lawCode" target="law:ICn">I Cn</ref> 1 (þonne is þæt ærest <ref type="lawCode" target="law:D">D</ref>). <ref type="lawCode" target="law:IICn">II Cn</ref> 1 | <hi rend="italic"><ref type="abbreviation" target="gram:als"><abbr>als</abbr></ref> erstes Glied <ref type="abbreviation" target="gram:vor"><abbr>vor</abbr></ref></hi> oðer .., þridde <ref type="lawCode" target="law:VIAs">VI As</ref> 1,1. <ref type="lawCode" target="law:SacrCor">Sacr cor</ref> 1,1; þæt syndon þonne ærest <ref type="lawCode" target="law:IIEg">II Eg</ref> 1; an ærest <ref type="lawCode" target="law:IIAs">II As</ref> 1 <ref type="lawCode" target="law:Ot">Ot</ref> (<hi rend="italic"><ref type="abbreviation" target="gram:nur"><abbr>nur</abbr></ref></hi> ærest <ref type="lawCode" target="law:H">H</ref> <ref type="lawCode" target="law:B">B</ref>). <ref type="lawCode" target="law:IXAtr">IX Atr</ref> 1; þæt is þonne an ærest .., oðer .., þridde <ref type="lawCode" target="law:VAtr">V Atr</ref> 32,1 <ref type="lawCode" target="law:D">D</ref> <hi rend="bold">III</hi>) <hi rend="italic">conj</hi> (<hi rend="italic"><ref type="abbreviation" target="gram:mitOptativ"><abbr>m op</abbr></ref></hi>) <hi rend="italic">ehe, bevor</hi> <ref type="lawCode" target="law:Ine">Ine</ref> <ref type="lawCode" target="law:Rb">Rb</ref> 9. <ref type="lawCode" target="law:Af">Af</ref> 42,3. <ref type="lawCode" target="law:Ine">Ine</ref> 48. <ref type="lawCode" target="law:IIEw">II Ew</ref> 7 <ref type="lawCode" target="law:B">B</ref> (hær <ref type="lawCode" target="law:H">H</ref>). <ref type="lawCode" target="law:IIAs">II As</ref> 3. 20. 23 (ær þe <ref type="lawCode" target="law:Ld">Ld</ref>). <ref type="lawCode" target="law:IIAtr">II Atr</ref> 6,1. <ref type="lawCode" target="law:IICn">II Cn</ref> 28,1 (ære <ref type="lawCode" target="law:Ld">Ld</ref>). 54,1 <ref type="lawCode" target="law:B">B</ref> <ref type="lawCode" target="law:MsA">A</ref> (ær þam <ref type="lawCode" target="law:G">G</ref>). <ref type="lawCode" target="law:Ger">Ger</ref> 10. ~ <hi rend="italic"><ref type="abbreviation" target="gram:fur"><abbr>für</abbr></ref></hi> ær þon <ref type="lawCode" target="law:Ine">Ine</ref> 9 <ref type="lawCode" target="law:H">H</ref> <hi rend="bold">IV</hi>) <hi rend="italic"><ref type="abbreviation" target="gram:PraepositionZeitlich"><abbr>prp zeitlich</abbr></ref>, ‘<ref type="abbreviation" target="gram:vor"><abbr>vor</abbr></ref>, binnen’</hi> <hi rend="bold">a</hi>) <hi rend="italic"><ref type="abbreviation" target="gram:mitDativ"><abbr>m dt</abbr></ref>: ‘<ref type="abbreviation" target="gram:vor"><abbr>vor</abbr></ref>’</hi> <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:El">El</ref> 36. <ref type="lawCode" target="law:Af">Af</ref> 1,6. 13. 43. <ref type="lawCode" target="law:VIIaAtr">VIIa Atr</ref> 1. <ref type="lawCode" target="law:IICn">II Cn</ref> 24,3. 46,1; <hi rend="italic">‘binnen, innerhalb’</hi> <ref type="lawCode" target="law:Af">Af</ref> 13. <ref type="lawCode" target="law:IVEg">IV Eg</ref> 8,1. <ref type="lawCode" target="law:IICn">II Cn</ref> 24,3; <hi rend="italic">‘<ref type="abbreviation" target="gram:vor"><abbr>vor</abbr></ref>’</hi> ~undern <ref type="lawCode" target="law:Romscot">Romscot</ref> 1. <hi rend="italic"><ref type="abbreviation" target="gram:Zusammensetzung"><abbr>Zuss.</abbr></ref></hi> <hi rend="bold">1</hi>) ~þam <hi rend="italic">α</hi>) <hi rend="italic"><ref type="abbreviation" target="gram:adverb"><abbr>adv</abbr></ref>: vordem, ehedem</hi> <ref type="lawCode" target="law:IIEw">II Ew</ref> 1. <ref type="lawCode" target="law:IIAtr">II Atr</ref> 6,1; oðeræfter <ref type="lawCode" target="law:IIAs">II As</ref> 1,2 <ref type="lawCode" target="law:B">B</ref> <ref type="lawCode" target="law:So">So</ref> <hi rend="italic">β</hi>) <hi rend="italic">conj: bevor</hi> <ref type="lawCode" target="law:IICn">II Cn</ref> 54,1; <hi rend="italic"><ref type="abbreviation" target="gram:bloss"><abbr>bloss</abbr></ref></hi> ær <ref type="lawCode" target="law:B">B</ref> <ref type="lawCode" target="law:MsA">A</ref> | ~ þam þe (<hi rend="italic">conj</hi>) <hi rend="italic">bevor</hi> <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:El">El</ref> 49,1 (~þon þe <ref type="lawCode" target="law:H">H</ref>). <ref type="lawCode" target="law:VIAtr">VI Atr</ref> 36 <hi rend="bold">2</hi>) ~ þyson <hi rend="italic">bisher</hi> <ref type="lawCode" target="law:IICn">II Cn</ref> 69 <hi rend="bold">b</hi>) <hi rend="italic">m <ref type="abbreviation" target="gram:Instrumental"><abbr>instr</abbr></ref>:</hi> ~þon (<hi rend="italic">conj</hi>) <hi rend="italic">bevor, ehe</hi> <ref type="lawCode" target="law:Ine">Ine</ref> 9; ar þan <ref type="lawCode" target="law:Quadr">Q</ref>; <hi rend="italic">blosses</hi> ær <ref type="lawCode" target="law:H">H</ref>; ~þon þe <hi rend="italic">dasselbe</hi> <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:El">El</ref> 49,1 <ref type="lawCode" target="law:H">H</ref>; ær þam þe <hi rend="italic"><ref type="abbreviation" target="gram:ubrigeHandschriften"><abbr>übr.</abbr></ref></hi></dictScrap>
+        <dictScrap type="senses">
+          <sense n="1">~þam <hi rend="italic">α</hi>) <hi rend="italic"><ref type="abbreviation" target="gram:adverb"><abbr>adv</abbr></ref>: vordem, ehedem</hi> <ref type="lawCode" target="law:IIEw">II Ew</ref> 1. <ref type="lawCode" target="law:IIAtr">II Atr</ref> 6,1; oðeræfter <ref type="lawCode" target="law:IIAs">II As</ref> 1,2 <ref type="lawCode" target="law:B">B</ref> <ref type="lawCode" target="law:So">So</ref> <hi rend="italic">β</hi>) <hi rend="italic">conj: bevor</hi> <ref type="lawCode" target="law:IICn">II Cn</ref> 54,1; <hi rend="italic"><ref type="abbreviation" target="gram:bloss"><abbr>bloss</abbr></ref></hi> ær <ref type="lawCode" target="law:B">B</ref> <ref type="lawCode" target="law:MsA">A</ref> | ~ þam þe (<hi rend="italic">conj</hi>) <hi rend="italic">bevor</hi> <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:El">El</ref> 49,1 (~þon þe <ref type="lawCode" target="law:H">H</ref>). <ref type="lawCode" target="law:VIAtr">VI Atr</ref> 36</sense>
+          <sense n="2">~ þyson <hi rend="italic">bisher</hi> <ref type="lawCode" target="law:IICn">II Cn</ref> 69 <hi rend="bold">b</hi>) <hi rend="italic">m <ref type="abbreviation" target="gram:Instrumental"><abbr>instr</abbr></ref>:</hi> ~þon (<hi rend="italic">conj</hi>) <hi rend="italic">bevor, ehe</hi> <ref type="lawCode" target="law:Ine">Ine</ref> 9; ar þan <ref type="lawCode" target="law:Quadr">Q</ref>; <hi rend="italic">blosses</hi> ær <ref type="lawCode" target="law:H">H</ref>; ~þon þe <hi rend="italic">dasselbe</hi> <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:El">El</ref> 49,1 <ref type="lawCode" target="law:H">H</ref>; ær þam þe <hi rend="italic"><ref type="abbreviation" target="gram:ubrigeHandschriften"><abbr>übr.</abbr></ref></hi></sense>
+        </dictScrap>
+        <xr type="compare"><ref target="entry:her">her</ref></xr>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/731">ǽr</ref></xr>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/37893">ǽr (Supplement)</ref></xr>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/61097">ǽr (Supplement)</ref></xr>
+        <xr type="lawCode"><ref target="clause:IICn_73a">II Cn 73a</ref></xr>
+        <xr type="lawCode"><ref target="clause:VIAtr_43">VI Atr 43</ref></xr>
+        <xr type="lawCode"><ref target="clause:ICn_Inscr">I Cn Inscr</ref></xr>
+        <xr type="lawCode"><ref target="clause:IICn_84-1a">II Cn 84,1a</ref></xr>
+        <xr type="lawCode"><ref target="clause:Abt_17">Abt 17</ref></xr>
+        <xr type="lawCode"><ref target="clause:Af_El-to-49-9">Af El 49,9</ref></xr>
+        <xr type="lawCode"><ref target="clause:ICn_22-2">I Cn 22,2</ref></xr>
+        <xr type="lawCode"><ref target="clause:Grith_24">Grið 24</ref></xr>
+        <xr type="lawCode"><ref target="clause:Af_1">Af 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:Abt_78">Abt 78</ref></xr>
+        <xr type="lawCode"><ref target="clause:Hl_Prolog">Hl Pro</ref></xr>
+        <xr type="lawCode"><ref target="clause:Wi_Prolog-to-3">Wi Pro</ref></xr>
+        <xr type="lawCode"><ref target="clause:Wi_1">Wi 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:Af_El-to-21">Af El 21</ref></xr>
+        <xr type="lawCode"><ref target="clause:Af_El-to-25">Af El 25</ref></xr>
+        <xr type="lawCode"><ref target="clause:Ine_35-1">Ine 35,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:Ine_39">Ine 39</ref></xr>
+        <xr type="lawCode"><ref target="clause:IEw_2-1">I Ew 2,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIEw_1-1">II Ew 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIAs_20">II As 20</ref></xr>
+        <xr type="lawCode"><ref target="clause:IICn_15a">II Cn 15a</ref></xr>
+        <xr type="lawCode"><ref target="clause:Rect_4-4">Rect 4,4</ref></xr>
+        <xr type="lawCode"><ref target="clause:IAtr_1-8">I Atr 1,8</ref></xr>
+        <xr type="lawCode"><ref target="clause:Af_1-6">Af 1,6</ref></xr>
+        <xr type="lawCode"><ref target="clause:Ine_48">Ine 48</ref></xr>
+        <xr type="lawCode"><ref target="clause:Af_37">Af 37</ref></xr>
+        <xr type="lawCode"><ref target="clause:Af_37-1">Af 37,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:Hu_2">Hu 2</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIAs_23-2">II As 23,2</ref></xr>
+        <xr type="lawCode"><ref target="clause:Ordal_3">Ordal 3</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIAs_14-1">II As 14,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:Rect_21-to-21-3">Rect 21</ref></xr>
+        <xr type="lawCode"><ref target="clause:Rect_21-to-21-3">Rect 21,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:VAtr_20">V Atr 20</ref></xr>
+        <xr type="lawCode"><ref target="clause:VIAtr_25-2">VI Atr 25,2</ref></xr>
+        <xr type="lawCode"><ref target="clause:ICn_17-3">I Cn 17,3</ref></xr>
+        <xr type="lawCode"><ref target="clause:Grith_26">Grið 26</ref></xr>
+        <xr type="lawCode"><ref target="clause:VIAs_12-3-a">VI As 12,3</ref></xr>
+        <xr type="lawCode"><ref target="clause:IAs_Prol">I As Pro</ref></xr>
+        <xr type="lawCode"><ref target="clause:VIIIAtr_4-1">VIII Atr 4,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:Ine_1">Ine 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:Wif_1">Wif 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:VAtr_14">V Atr 14</ref></xr>
+        <xr type="lawCode"><ref target="clause:VIAtr_22-2">VI Atr 22,2</ref></xr>
+        <xr type="lawCode"><ref target="clause:AGu_1">AGu 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:EGu_Prol">EGu Pro</ref></xr>
+        <xr type="lawCode"><ref target="clause:EGu_Prol-to-1">EGu 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IEm_1">I Em 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:VIIIAtr_1">VIII Atr 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:VIIIAtr_2">VIII Atr 2</ref></xr>
+        <xr type="lawCode"><ref target="clause:ICn_1">I Cn 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IICn_1">II Cn 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:VIAs_1-1">VI As 1,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:Prom-Reg_1-1">Sacr cor 1,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIEg_1">II Eg 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIAs_1">II As 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IXAtr_1">IX Atr 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:VAtr_32-1">V Atr 32,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:Rubrics-Ine_9">Ine Rb 9</ref></xr>
+        <xr type="lawCode"><ref target="clause:Af_42-3">Af 42,3</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIEw_7">II Ew 7</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIAs_3">II As 3</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIAs_23">II As 23</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIAtr_6-1">II Atr 6,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IICn_28-1">II Cn 28,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IICn_54-1">II Cn 54,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:Ger_10">Ger 10</ref></xr>
+        <xr type="lawCode"><ref target="clause:Ine_9">Ine 9</ref></xr>
+        <xr type="lawCode"><ref target="clause:Af_El-to-36">Af El 36</ref></xr>
+        <xr type="lawCode"><ref target="clause:Af_13">Af 13</ref></xr>
+        <xr type="lawCode"><ref target="clause:Af_43">Af 43</ref></xr>
+        <xr type="lawCode"><ref target="clause:VIIaAtr_1">VIIa Atr 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IICn_24-3">II Cn 24,3</ref></xr>
+        <xr type="lawCode"><ref target="clause:IICn_46-1">II Cn 46,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IVEg_8-1">IV Eg 8,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:Romscot_Romscot-1">Romscot 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIAs_1-2">II As 1,2</ref></xr>
+        <xr type="lawCode"><ref target="clause:Af_El-to-49-1">Af El 49,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:VIAtr_36">VI Atr 36</ref></xr>
+        <xr type="lawCode"><ref target="clause:IICn_69">II Cn 69</ref></xr>
+      </entry>
+    </body>
+  </text>
+</TEI>

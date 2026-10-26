@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Ine_27">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Ine 27</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Attenborough’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">Ine_27</idno>
+        <idno type="citation">Ine 27</idno>
+        <idno type="lawCode">Ine</idno>
+        <idno type="lawCodeAnchor">Ine</idno>
+        <idno type="clause">27</idno>
+        <idno type="citationKey">Ine 27</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Ine’s Laws (in Alfred’s Domboc)</title> <note type="reign">Ine, r. 688–726</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">100</biblScope></bibl>
+          <bibl xml:id="jurasinski-and-oliver" type="edition">Stefan Jurasinski and Lisi Oliver, <title>The Laws of Alfred: The Domboc and the Making of Anglo-Saxon Law</title> (Cambridge: Cambridge University Press, 2021), p. <biblScope unit="page">392</biblScope></bibl>
+          <bibl xml:id="attenborough" type="edition">F. L. Attenborough, <title>The Laws of the Earliest English Kings</title> (Cambridge: Cambridge University Press, 1922), p. <biblScope unit="page">44</biblScope></bibl>
+          <bibl xml:id="whitelock" type="translation">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007), p. <biblScope unit="page">402</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-e" rend="bold"><abbr>E</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 173 (Parker Chronicle and Laws)</note></witness>
+          <witness xml:id="wit-h"><abbr>H</abbr> <note type="manuscript">Strood, Medway Archive and Local Studies Centre, MS DRc/R1 (Textus Roffensis; formerly Rochester, Cathedral Library, A.3.5), c. 1120–25</note></witness>
+          <witness xml:id="wit-b-no-prol"><abbr>B (no Prol.)</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383</note></witness>
+          <witness xml:id="wit-g-prol-only"><abbr>G (Prol. only)</abbr> <note type="manuscript">London, British Library, Cotton Nero A.i</note></witness>
+          <witness xml:id="wit-q"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note></witness>
+          <witness xml:id="wit-ld"><abbr>Ld</abbr> <note type="manuscript">William Lambarde, Archaionomia (London, 1568) – printed from manuscripts now lost</note></witness>
+          <witness xml:id="wit-bu"><abbr>Bu</abbr></witness>
+          <witness xml:id="wit-ot-frags"><abbr>Ot (frags.)</abbr> <note type="manuscript">London, British Library, Cotton Otho B.xi (damaged by fire, 1731)</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 88">688–95</date><date source="#whitelock" n="EHD p. 399">688–94</date><date source="#wormald-mel" n="MEL p. 103">688×92</date><note type="promulgation">688–95 (Liebermann, I p. 88); 688–94 (Whitelock, EHD p. 399); 688×92 (Wormald, MEL p. 103)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Child maintenance</term><term>Legal responsibility</term><term>Inheritance</term><term>Concealment</term><term>Illicit unions</term><term>Wergeld</term></keywords>
+        <keywords n="people"><term>Children</term><term>Nobles</term><term>Father</term><term>King</term><term>Sexual offenders</term><term>All people</term><term>Secular classes</term><term>Rank</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 587 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked and corrected against <title>Die Gesetze der Angelsachsen</title> I, p. 100.</change>
+      <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 100: “∅” → “LXXI.”.</change>
+      <change when="2026-10" type="checked">Liebermann’s text of MS B added from Gesetze I, p. 100.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="27">
+        <head><ref type="lawCode" target="law:Ine">Ine</ref> 27</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="27" corresp="#wit-e"><pb n="100" ed="#liebermann"/>LXXI.<ptr type="liebermannNote" n="24" target="#Ine_27.lnote.oe.24"/> Se ðe dearnenga<ptr type="liebermannNote" n="25" target="#Ine_27.lnote.oe.25"/> bearn gestrieneð<ptr type="liebermannNote" n="26" target="#Ine_27.lnote.oe.26"/> ⁊ gehileð<ptr type="liebermannNote" n="27" target="#Ine_27.lnote.oe.27"/>, nah se his deaðes wer<ptr type="liebermannNote" n="28" target="#Ine_27.lnote.oe.28"/>, ac his hlaford ⁊ se cyning.<ptr type="liebermannNote" n="29" target="#Ine_27.lnote.oe.29"/></ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="27" corresp="#wit-h"><pb n="100" ed="#liebermann"/>LXXI. Se ðe dearnunga bearn gestrynð<ptr type="liebermannNote" n="8" target="#Ine_27.lnote.oe.8"/> ⁊ geheleþ, nah se his deaþes wer, ac his hlaford ⁊ se cyning.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="27" corresp="#wit-b-no-prol"><pb n="100" ed="#liebermann"/>Be ða<hi rend="italic">m</hi> þe dearnunge bearn stryneð. Se ðe dearnunga bearn gestreonað ⁊ geheleð, nah se his deaðes wér, ac his hlaford ⁊ se cyng.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="27" corresp="#wit-q"><pb n="101" ed="#liebermann"/>Qui in occulto puerum genuerit et celabit<ptr type="liebermannNote" n="21" target="#Ine_27.lnote.oe.21"/>, non habeat ipsius<ptr type="liebermannNote" n="22" target="#Ine_27.lnote.oe.22"/> pueri weram, si occidatur, sed rex et dominus suus.<ptr type="liebermannNote" n="23" target="#Ine_27.lnote.oe.23"/></ab>
+        <ab type="editionText" xml:lang="ang" source="#attenborough" corresp="#wit-e"><pb n="44" ed="#attenborough"/>[Be ðam þe dearnunge bearn stryneð.] Se ðe dearnenga bearn gestrieneð ⁊ gehileð, nah se his deaðes wer, ac his hlaford ⁊ se cyning.</ab>
+        <ab type="editionText" xml:lang="ang" source="#jurasinski-and-oliver" n="27" corresp="#wit-e"><pb n="392" ed="#jurasinski-and-oliver"/>{LXXI} Se ðe dearnenga bearn gestrieneð ⁊ gehileð, nah se his deaðes wer, ac his hlaford ⁊ se cyning.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="101" ed="#liebermann"/>Wer<ptr type="liebermannNote" n="1" target="#Ine_27.lnote.de.1"/> unehelich<ptr type="liebermannNote" n="2" target="#Ine_27.lnote.de.2"/> ein Kind zeugt und nicht anerkennt<ptr type="liebermannNote" n="3" target="#Ine_27.lnote.de.3"/>, erhält das Wergeld von dessen Tödtung nicht, sondern der Herr [des Unehelichen] und der König.</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">Whoever begets a child out of wedlock and does not acknowledge it does not receive the wergeld for its killing, but the lord [of the illegitimate child] and the king do.</ab>
+        <ab type="translation" xml:lang="en" source="#attenborough" corresp="#wit-e"><pb n="45" ed="#attenborough"/>He who begets an illegitimate child and disowns it shall not have the wergeld at its death, but its lord and<ptr type="editorNote" n="1" target="#Ine_27.attnote.n.1"/> the king shall [have it].</ab>
+        <ab type="translation" xml:lang="en" source="#whitelock"><pb n="402" ed="#whitelock"/>Whoever begets an illegitimate child and does not acknowledge it, has no right to the wergild at its death, but its lord and the king [have it].</ab>
+        <ab type="translation" xml:lang="en" source="#jurasinski-and-oliver" corresp="#wit-e"><pb n="393" ed="#jurasinski-and-oliver"/>He who conceives a child out of wedlock and hides it – he will not have its <hi rend="italic">wer</hi> upon its death, but [it goes to] his lord and the king.</ab>
+        <note type="comparison" source="#jurasinski-and-oliver" n="393"><label>compare</label> <ref target="clause:Ine_23-1">Ine 23.1</ref> <quote>but compare §22.1.</quote></note>
+        <note type="comparedBy" source="#jurasinski-and-oliver" n="229"><ref target="clause:Af_El-to-6">Af El 6</ref></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_27.lnote.oe.21" n="21" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">101</biblScope></bibl><seg type="original" xml:lang="de">celauerit <hi rend="italic">Br Hn</hi> 78, 4</seg><seg type="translation" xml:lang="en" source="#claude">celauerit Br Hn 78, 4</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_27.lnote.oe.22" n="22" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">101</biblScope></bibl><seg type="original" xml:lang="de">p. i. <hi rend="italic">M Hk Br;</hi> cognatio illius <hi rend="italic">Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">p. i. M Hk Br; cognatio illius Lond</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_27.lnote.oe.23" n="23" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">101</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt K; übergeschr. Co</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in K; written above Co</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_27.lnote.oe.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">100</biblScope></bibl><seg type="original" xml:lang="de">yn:ð <hi rend="italic">auf Rasur</hi></seg><seg type="translation" xml:lang="en" source="#claude">yn:ð on an erasure</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_27.lnote.oe.24" n="24" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">100</biblScope></bibl><seg type="original" xml:lang="de">28; 28, 1.2 <hi rend="italic">stellt vor</hi> 27 <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">Ld places 28; 28, 1.2 before 27</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_27.lnote.oe.25" n="25" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">100</biblScope></bibl><seg type="original" xml:lang="de">deornunga <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">deornunga Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_27.lnote.oe.26" n="26" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">100</biblScope></bibl><seg type="original" xml:lang="de">gestreonaþ <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">gestreonaþ Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_27.lnote.oe.27" n="27" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">100</biblScope></bibl><seg type="original" xml:lang="de">geheleþ <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">geheleþ Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_27.lnote.oe.28" n="28" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">100</biblScope></bibl><seg type="original" xml:lang="de">were <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">were Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_27.lnote.oe.29" n="29" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">100</biblScope></bibl><seg type="original" xml:lang="de">cyng <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">cyng Ld</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Ine_27.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">72</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">Diesen Satz benutzt Hn 78, 4. <hi rend="italic">Vgl. Gl</hi> Bastard 1; Sippe 9; König 14; Gefolge 22</seg><seg type="translation" xml:lang="en" source="#claude">Hn 78, 4 makes use of this sentence. <hi rend="italic">Cf. Gl</hi> Bastard 1; Sippe 9; König 14; Gefolge 22</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Ine_27.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">72</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">So, nicht ‘heimlich’; <hi rend="italic">s. o.</hi> S. 41 zur Rb</seg><seg type="translation" xml:lang="en" source="#claude">So, not ‘secretly’; <hi rend="italic">see above</hi> p. 41 on the Rb</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Ine_27.lnote.de.3" n="3" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">72</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl.</hi> auch Brunner <hi rend="italic">Ausserehel. Vaterschaft</hi> in <hi rend="italic">Savigny Zs. Rg.</hi> 17 (1896) 15. — Vermutlich heisst ‘und’ in letzter Zeile: ‘beziehungsweise, oder’, nämlich wenn kein Herr vorhanden [und keine Gilde; Ine 21] zum Einklagen des Wergeldes für den erschlagenen Bastard</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf.</hi> also Brunner <hi rend="italic">Ausserehel. Vaterschaft</hi> in <hi rend="italic">Savigny Zs. Rg.</hi> 17 (1896) 15. — ‘And’ in the last line presumably means ‘respectively, or’, namely when there is no lord [and no gild; Ine 21] to sue for the wergild for the slain bastard</seg></note>
+        <note type="editorNote" subtype="endnote" xml:id="Ine_27.attnote.n.1" n="1" source="#attenborough"><bibl><biblScope unit="page">186</biblScope></bibl><seg type="original" xml:lang="en">Liebermann suggests that <hi rend="italic">and</hi> should be translated ‘or,’ and that the king obtains the wergeld when there is no lord. It is possible, however, that the intention is to divide the sum, as in cap. 23 § 1, where (as against Liebermann’s view) <hi rend="italic">se gesið</hi> may correspond to <hi rend="italic">his hlaford</hi> here (cf. also note 1 to cap. 50 below).</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

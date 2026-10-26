@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>(-)ch-</title>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ch-3</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, <biblScope unit="volume">2.1</biblScope> (Wörterbuch), <biblScope unit="page">33</biblScope>
+            <ptr type="facsimile" target="https://archive.org/details/diegesetzederang02liebuoft/page/33/mode/2up"/>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <revisionDesc>
+      <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-10-13">Removed the "!" after sacu: it is in the print, but is an ink mark, not part of the text.</change>
+      <change when="2026-10-17">Marked as a spelling entry.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry xml:lang="ang">
+        <form type="lemma">
+          <orth>(-)ch-</orth>
+        </form>
+        <usg type="dom">spelling</usg>
+        <dictScrap type="liebermann"><hi rend="bold">(-)ch-</hi> <hi rend="italic"><ref type="abbreviation" target="gram:abweichend"><abbr>abweichend</abbr></ref></hi> <hi rend="bold">1</hi>) [<hi rend="italic"><ref type="abbreviation" target="gram:meist"><abbr>meist</abbr></ref> in <ref type="abbreviation" target="gram:Lateinisch"><abbr>lat.</abbr></ref> <ref type="abbreviation" target="gram:Hss"><abbr>Hss</abbr></ref>.</hi>] <hi rend="italic"><ref type="abbreviation" target="gram:fur"><abbr>für</abbr></ref></hi> c: <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> -bryce (<hi rend="italic">in</hi> æw-, borg-, burg-, grið-, hus-, mundbryce, pund-, stretbreche), ceap-, ceorl-, ciric-, Cnut, Crist(en), (un)cuð, cyning, Eorcanweald, folc(isc), folcriht, geascian, hlafordswice, holdlice, micel, Orcades, rice, sacu, soceman, socn, wæpntac, wicce(cræft), wracu [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>.</hi> sch] <hi rend="bold">2</hi>) <hi rend="italic"><ref type="abbreviation" target="gram:fur"><abbr>für</abbr></ref></hi> g: <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> agen, borg-, burgbryce <hi rend="bold">3</hi>) <hi rend="italic"><ref type="abbreviation" target="gram:fur"><abbr>für</abbr></ref></hi> h: <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> ælmesfeoh, Romfeoh, lahslit, neahgebur, niht, sulhælmesse, nawiht</dictScrap>
+        <dictScrap type="senses">
+          <sense n="1">[<hi rend="italic"><ref type="abbreviation" target="gram:meist"><abbr>meist</abbr></ref> in <ref type="abbreviation" target="gram:Lateinisch"><abbr>lat.</abbr></ref> <ref type="abbreviation" target="gram:Hss"><abbr>Hss</abbr></ref>.</hi>] <hi rend="italic"><ref type="abbreviation" target="gram:fur"><abbr>für</abbr></ref></hi> c: <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> -bryce (<hi rend="italic">in</hi> æw-, borg-, burg-, grið-, hus-, mundbryce, pund-, stretbreche), ceap-, ceorl-, ciric-, Cnut, Crist(en), (un)cuð, cyning, Eorcanweald, folc(isc), folcriht, geascian, hlafordswice, holdlice, micel, Orcades, rice, sacu, soceman, socn, wæpntac, wicce(cræft), wracu [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>.</hi> sch]</sense>
+          <sense n="2"><hi rend="italic"><ref type="abbreviation" target="gram:fur"><abbr>für</abbr></ref></hi> g: <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> agen, borg-, burgbryce</sense>
+          <sense n="3"><hi rend="italic"><ref type="abbreviation" target="gram:fur"><abbr>für</abbr></ref></hi> h: <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> ælmesfeoh, Romfeoh, lahslit, neahgebur, niht, sulhælmesse, nawiht</sense>
+        </dictScrap>
+        <xr type="see"><ref target="entry:bryce">bryce</ref></xr>
+        <xr type="see"><ref target="entry:agen">agen</ref></xr>
+        <xr type="see"><ref target="entry:borg">borg</ref></xr>
+        <xr type="see"><ref target="entry:burgbryce">burgbryce</ref></xr>
+        <xr type="see"><ref target="entry:aelmesfeoh">ælmesfeoh</ref></xr>
+        <xr type="see"><ref target="entry:Romfeoh">Romfeoh</ref></xr>
+        <xr type="see"><ref target="entry:lahslit">lahslit</ref></xr>
+        <xr type="see"><ref target="entry:neahgebur">neahgebur</ref></xr>
+        <xr type="see"><ref target="entry:niht">niht</ref></xr>
+        <xr type="see"><ref target="entry:sulhaelmesse">sulhælmesse</ref></xr>
+        <xr type="see"><ref target="entry:nawiht">nawiht</ref></xr>
+        <xr type="compare"><ref target="entry:sch">sch</ref></xr>
+      </entry>
+    </body>
+  </text>
+</TEI>

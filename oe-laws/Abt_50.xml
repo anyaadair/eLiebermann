@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Abt_50">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Abt 50</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#oliver">Oliver</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#oliver">Oliver</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">Abt_50</idno>
+        <idno type="citation">Abt 50</idno>
+        <idno type="lawCode">Abt</idno>
+        <idno type="lawCodeAnchor">Abt</idno>
+        <idno type="clause">50</idno>
+        <idno type="citationKey">Abt 50</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Æthelberht’s Code</title> <note type="reign">Æthelberht, r. ?584–616</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">6</biblScope></bibl>
+          <bibl xml:id="oliver" type="edition">Lisi Oliver, <title>The Beginnings of English Law</title> (Toronto: University of Toronto Press, 2002), p. <biblScope unit="page">70</biblScope></bibl>
+          <bibl xml:id="attenborough" type="edition">F. L. Attenborough, <title>The Laws of the Earliest English Kings</title> (Cambridge: Cambridge University Press, 1922), p. <biblScope unit="page">10</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="whitelock" type="study">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007)</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-h"><abbr>H</abbr> <note type="manuscript">Strood, Medway Archive and Local Studies Centre, MS DRc/R1 (Textus Roffensis; formerly Rochester, Cathedral Library, A.3.5), c. 1120–25</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 3">601–4</date><date source="#whitelock" n="EHD p. 390">597–616, perhaps 602–3</date><date source="#wormald-mel" n="MEL pp. 100–1">?614 or just after</date><note type="promulgation">601–4 (Liebermann, I p. 3); 597–616, perhaps 602–3 (Whitelock, EHD p. 390); ?614 or just after (Wormald, MEL pp. 100–1)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Compensation</term><term>Personal injury</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 65 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 6.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="50">
+        <head><ref type="lawCode" target="law:Abt">Abt</ref> 50</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="50" corresp="#wit-h"><pb n="6" ed="#liebermann"/>Se þe cinban forslæhð, mid XX scillingum forgelde.</ab>
+        <ab type="editionText" xml:lang="ang" source="#attenborough" corresp="#wit-h"><pb n="10" ed="#attenborough"/>Se þe cinban forslæhð, mid XX scillingum forgelde.</ab>
+        <ab type="editionText" xml:lang="ang" source="#oliver" n="47" corresp="#wit-h"><pb n="70" ed="#oliver"/>Se þe cinban forslæhð, mid XX scillingum forgelde.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="6" ed="#liebermann"/>Wer<ptr type="liebermannNote" n="1" target="#Abt_50.lnote.de.1"/> das Kinnbein<ptr type="liebermannNote" n="2" target="#Abt_50.lnote.de.2"/> zerschlägt, entgelte mit 20 Schillingen.<ptr type="liebermannNote" n="3" target="#Abt_50.lnote.de.3"/></ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">Whoever smashes the jawbone, let him pay 20 shillings.</ab>
+        <ab type="translation" xml:lang="en" source="#attenborough" corresp="#wit-h"><pb n="11" ed="#attenborough"/>He who smashes a chin bone, shall pay for it with 20 shillings.</ab>
+        <ab type="translation" xml:lang="en" source="#oliver" corresp="#wit-h"><pb n="71" ed="#oliver"/>He who breaks a jawbone, let him pay with 20 shillings.</ab>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Abt_50.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">11</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Viele Philologen schreiben neuerdings <hi rend="italic">seþe</hi> in 1 Wort. Handschriftlich ist dies nicht begründet</seg><seg type="translation" xml:lang="en" source="#claude">Many philologists have recently been writing <hi rend="italic">seþe</hi> as one word. There is no manuscript authority for this</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Abt_50.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">11</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Kinn. Nicht ‘Kinnbacken’; freilich glossiert und übersetzt das Wort auch <hi rend="italic">maxilla, mandibula;</hi> Toller <hi rend="italic">Suppl.</hi> Allein Af 50 trennt <hi rend="italic">ceacan</hi> von <hi rend="italic">cinban</hi> 50, 1, wofür Lateiner <hi rend="italic">mentum</hi> setzen, wie Kentische Glosse um 900 <hi rend="italic">mento : cinne;</hi> Sweet <hi rend="italic">Old. texts</hi> 172</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf. Gl</hi> Kinn. Not ‘jaw’; admittedly the word also glosses and translates <hi rend="italic">maxilla, mandibula;</hi> Toller <hi rend="italic">Suppl.</hi> But Af 50 distinguishes <hi rend="italic">ceacan</hi> from <hi rend="italic">cinban</hi> 50, 1, for which Latin writers put <hi rend="italic">mentum</hi>, as does a Kentish gloss of about 900: <hi rend="italic">mento : cinne;</hi> Sweet <hi rend="italic">Old. texts</hi> 172</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Abt_50.lnote.de.3" n="3" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">11</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Das Wort ist in der Hs. nicht abgekürzt</seg><seg type="translation" xml:lang="en" source="#claude">The word is not abbreviated in the MS</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

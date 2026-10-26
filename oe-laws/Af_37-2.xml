@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Af_37-2">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Af 37.2</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Attenborough’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">Af_37-2</idno>
+        <idno type="citation">Af 37.2</idno>
+        <idno type="lawCode">Af</idno>
+        <idno type="lawCodeAnchor">Af</idno>
+        <idno type="clause">37.2</idno>
+        <idno type="citationKey">Af 37.2</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Alfred’s Domboc</title> <note type="reign">Alfred, r. 871–899</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">70</biblScope></bibl>
+          <bibl xml:id="jurasinski-and-oliver" type="edition">Stefan Jurasinski and Lisi Oliver, <title>The Laws of Alfred: The Domboc and the Making of Anglo-Saxon Law</title> (Cambridge: Cambridge University Press, 2021), p. <biblScope unit="page">336</biblScope></bibl>
+          <bibl xml:id="attenborough" type="edition">F. L. Attenborough, <title>The Laws of the Earliest English Kings</title> (Cambridge: Cambridge University Press, 1922), p. <biblScope unit="page">80</biblScope></bibl>
+          <bibl xml:id="whitelock" type="translation">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007), p. <biblScope unit="page">415</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-e" rend="bold"><abbr>E</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 173 (Parker Chronicle and Laws)</note></witness>
+          <witness xml:id="wit-h"><abbr>H</abbr> <note type="manuscript">Strood, Medway Archive and Local Studies Centre, MS DRc/R1 (Textus Roffensis; formerly Rochester, Cathedral Library, A.3.5), c. 1120–25</note></witness>
+          <witness xml:id="wit-b-no-prol"><abbr>B (no Prol.)</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383</note></witness>
+          <witness xml:id="wit-g-prol-only"><abbr>G (Prol. only)</abbr> <note type="manuscript">London, British Library, Cotton Nero A.i</note></witness>
+          <witness xml:id="wit-q"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note></witness>
+          <witness xml:id="wit-ld"><abbr>Ld</abbr> <note type="manuscript">William Lambarde, Archaionomia (London, 1568) – printed from manuscripts now lost</note></witness>
+          <witness xml:id="wit-bu"><abbr>Bu</abbr></witness>
+          <witness xml:id="wit-ot-frags"><abbr>Ot (frags.)</abbr> <note type="manuscript">London, British Library, Cotton Otho B.xi (damaged by fire, 1731)</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 27">871 (after 890?)–901</date><date source="#whitelock" n="EHD p. 408">885–899</date><date source="#wormald-mel" n="MEL p. 286">after 893</date><note type="promulgation">871 (after 890?)–901 (Liebermann, I p. 27); 885–899 (Whitelock, EHD p. 408); after 893 (Wormald, MEL p. 286)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Service</term><term>Compensation</term><term>Prior offences</term><term>Freedom of movement</term><term>Legal responsibility</term></keywords>
+        <keywords n="people"><term>Prior offenders</term><term>King</term></keywords>
+        <keywords n="locations"><term>New district</term><term>Old district</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 463 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked and corrected against <title>Die Gesetze der Angelsachsen</title> I, p. 70.</change>
+      <change when="2026-10" type="checked">Liebermann’s text of MS B added from Gesetze I, p. 70.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="37.2">
+        <head><ref type="lawCode" target="law:Af">Af</ref> 37.2</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="37.2" corresp="#wit-e"><pb n="70" ed="#liebermann"/>Gif he hwæt yfla<ptr type="liebermannNote" n="26" target="#Af_37-2.lnote.oe.26"/> gedon<ptr type="liebermannNote" n="27" target="#Af_37-2.lnote.oe.27"/> hæbbe<ptr type="liebermannNote" n="28" target="#Af_37-2.lnote.oe.28"/> ðær<ptr type="liebermannNote" n="29" target="#Af_37-2.lnote.oe.29"/> he ær wæs, bete ðæt se ðe hine ðonne to men onfo<ptr type="liebermannNote" n="30" target="#Af_37-2.lnote.oe.30"/>, ⁊<ptr type="liebermannNote" n="**" target="#Af_37-2.lnote.oe.star2"/> cyninge<ptr type="liebermannNote" n="31" target="#Af_37-2.lnote.oe.31"/> CXX scill. to wite.<ptr type="liebermannNote" n="32" target="#Af_37-2.lnote.oe.32"/></ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="37.2" corresp="#wit-h"><pb n="70" ed="#liebermann"/>Gif he hwæt (to<ptr type="liebermannNote" n="11" target="#Af_37-2.lnote.oe.11"/>) yfele<ptr type="liebermannNote" n="12" target="#Af_37-2.lnote.oe.12"/> gedon hæfð þær he ær wæs, bete ðæt þonne<ptr type="liebermannNote" n="11" target="#Af_37-2.lnote.oe.11"/> se ðe hine to men onfó<ptr type="liebermannNote" n="13" target="#Af_37-2.lnote.oe.13"/>, ond<ptr type="liebermannNote" n="1" target="#Af_37-2.lnote.oe.1"/> cyninge CXX scll' to wite.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="37.2" corresp="#wit-b-no-prol"><pb n="70" ed="#liebermann"/>Gyf he hwǽt to yfele gedon hæfð<ptr type="liebermannNote" n="11" target="#Af_37-2.lnote.oe.11-2"/> ðær he ær wæs, bete þ<hi rend="italic">æt</hi> se ðe hine ðonnon to m<hi rend="italic">en</hi> underfó, ⁊ cyninge hundtwelftig scill' to wite.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="37.2" corresp="#wit-q"><pb n="71" ed="#liebermann"/>Si quid (etiam<ptr type="liebermannNote" n="14" target="#Af_37-2.lnote.oe.14"/>) malefecit<ptr type="liebermannNote" n="15" target="#Af_37-2.lnote.oe.15"/> ubi prius fuit, hoc emendet qui eum ad<ptr type="liebermannNote" n="16" target="#Af_37-2.lnote.oe.16"/> hominem receperit et regi centum uiginti sol. wite.</ab>
+        <ab type="editionText" xml:lang="ang" source="#attenborough" corresp="#wit-e"><pb n="80" ed="#attenborough"/>Gif he hwæt yfla<ptr type="editorNote" n="15" target="#Af_37-2.attnote.fn.15"/> gedon hæbbe<ptr type="editorNote" n="16" target="#Af_37-2.attnote.fn.16"/> ðær he ær wæs, bete ðæt se ðe hine ðonne<ptr type="editorNote" n="17" target="#Af_37-2.attnote.fn.17"/> to men onfo<ptr type="editorNote" n="18" target="#Af_37-2.attnote.fn.18"/>, ⁊ [sylle þam]<ptr type="editorNote" n="19" target="#Af_37-2.attnote.fn.19"/> cyninge CXX scill. to wite.</ab>
+        <ab type="editionText" xml:lang="ang" source="#jurasinski-and-oliver" n="38.2" corresp="#wit-e"><pb n="336" ed="#jurasinski-and-oliver"/>Gif he hwæt yfla gedon hæbbe ðær he ær wæs, bete ðæt se ðe hine ðonne to men onfo, ⁊ cy___ninge CXX scill to wite.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="71" ed="#liebermann"/>Wenn er etwas übles<ptr type="liebermannNote" n="1" target="#Af_37-2.lnote.de.1"/> gethan hatte, da wo er früher war, so büsse<ptr type="liebermannNote" n="2" target="#Af_37-2.lnote.de.2"/> dies der [Herr], welcher ihn nunmehr zum Manne annimmt<ptr type="liebermannNote" n="3" target="#Af_37-2.lnote.de.3"/> [an den Geschädigten], und<ptr type="liebermannNote" n="4" target="#Af_37-2.lnote.de.4"/> dem Könige<ptr type="liebermannNote" n="5" target="#Af_37-2.lnote.de.5"/> 120 Schill. zur Strafe.</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">If he had done anything evil where he was before, let the [lord] who now takes him on as his man make amends for it [to the injured party], and [pay] the king 120 shillings as a fine.</ab>
+        <ab type="translation" xml:lang="en" source="#attenborough" corresp="#wit-e"><pb n="81" ed="#attenborough"/>If he has committed any manner of offence in the place where he has been [residing], he who now takes him into his employment shall pay compensation for it, and a fine of 120 shillings to the king.</ab>
+        <ab type="translation" xml:lang="en" source="#whitelock"><pb n="415" ed="#whitelock"/>If he has committed any wrong where he was before, he who now receives him as his man is to pay compensation for it, and 120 shillings to the king as fine.</ab>
+        <ab type="translation" xml:lang="en" source="#jurasinski-and-oliver" corresp="#wit-e"><pb n="337" ed="#jurasinski-and-oliver"/>If he has commited some offense where he was before, let him who took him on as his man compensate for that, and 120 shillings to the king as fine.</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_37-2.lnote.oe.26" n="26" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">70</biblScope></bibl><seg type="original" xml:lang="de">to yfle <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">to yfle Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_37-2.lnote.oe.27" n="27" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">70</biblScope></bibl><seg type="original" xml:lang="de">gedón <hi rend="italic">So Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">gedón So Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_37-2.lnote.oe.28" n="28" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">70</biblScope></bibl><seg type="original" xml:lang="de">hæfþ <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">hæfþ Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_37-2.lnote.oe.29" n="29" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">70</biblScope></bibl><seg type="original" xml:lang="de">þære <hi rend="italic">So</hi></seg><seg type="translation" xml:lang="en" source="#claude">þære So</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_37-2.lnote.oe.30" n="30" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">70</biblScope></bibl><seg type="original" xml:lang="de">underfo <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">underfo Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_37-2.lnote.oe.star2" n="**" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">70</biblScope></bibl><seg type="original" xml:lang="de">sylle þam <hi rend="italic">fügt zu So</hi></seg><seg type="translation" xml:lang="en" source="#claude">sylle þam added by So</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_37-2.lnote.oe.31" n="31" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">70</biblScope></bibl><seg type="original" xml:lang="de">cyning mid <hi rend="spaced">hundtwelftigum</hi> <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">cyning mid <hi rend="italic">hundtwelftigum</hi> Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_37-2.lnote.oe.32" n="32" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">70</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">folgt</hi> Be gefeoht (<hi rend="italic">d. i. Rubrik für Af</hi> 38) <hi rend="italic">für das folgende Blatt vorgeschrieben, dann leere Seiten, dann II As, dann Ine</hi> 54 <hi rend="italic">So</hi></seg><seg type="translation" xml:lang="en" source="#claude">there follows Be gefeoht (i.e. the rubric for Af 38), written in advance for the following leaf, then blank pages, then II As, then Ine 54 So</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_37-2.lnote.oe.11" n="11" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">70</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">am Rande</hi></seg><seg type="translation" xml:lang="en" source="#claude">in the margin</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_37-2.lnote.oe.12" n="12" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">70</biblScope></bibl><seg type="original" xml:lang="de">le <hi rend="italic">auf Rasur</hi></seg><seg type="translation" xml:lang="en" source="#claude">le on an erasure</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_37-2.lnote.oe.13" n="13" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">70</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="spaced">under</hi> <hi rend="italic">über</hi> on <hi rend="italic">übergeschr.</hi></seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">under</hi> written above on</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_37-2.lnote.oe.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">70</biblScope></bibl><seg type="original" xml:lang="de">o <hi rend="italic">geänd. in</hi> a</seg><seg type="translation" xml:lang="en" source="#claude">o altered to a</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_37-2.lnote.oe.14" n="14" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">71</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Lond</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_37-2.lnote.oe.15" n="15" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">71</biblScope></bibl><seg type="original" xml:lang="de">-cerit <hi rend="italic">Brti</hi></seg><seg type="translation" xml:lang="en" source="#claude">-cerit Brti</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_37-2.lnote.oe.16" n="16" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">71</biblScope></bibl><seg type="original" xml:lang="de">receptat hom. <hi rend="italic">R;</hi> recepit ad h. <hi rend="italic">T Hk Br</hi></seg><seg type="translation" xml:lang="en" source="#claude">receptat hom. R; recepit ad h. T Hk Br</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_37-2.lnote.oe.11-2" n="11" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">70</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">über der Seite</hi> Ælfredes lage</seg><seg type="translation" xml:lang="en" source="#claude">at the top of the page Ælfredes lage</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Af_37-2.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">58</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">Gen. part. ‘an Missetaten’ E; ‘zu Bösem’ H cor. B</seg><seg type="translation" xml:lang="en" source="#claude">Partitive gen. ‘of misdeeds’ E; ‘to evil’ H cor. B</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Af_37-2.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">58</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Haftung 7d; Gefolge 19c</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf. Gl</hi> Haftung 7d; Gefolge 19c</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Af_37-2.lnote.de.3" n="3" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">58</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">B modernisiert</seg><seg type="translation" xml:lang="en" source="#claude">B modernises</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Af_37-2.lnote.de.4" n="4" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">58</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">‘gebe dem’ fügt So zu</seg><seg type="translation" xml:lang="en" source="#claude">So adds ‘let him give to the’</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Af_37-2.lnote.de.5" n="5" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">58</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">Neben den in Af 37, 1, also doppelten Ungehorsam (<hi rend="italic">s. d.</hi> 4. 16). Die Fürsorge für Rechtspflege würde dem Staate unmöglich, wenn Gefolgsleute durch den Vassallitätsherrn vor gerichtlicher Verfolgung gesichert würden.</seg><seg type="translation" xml:lang="en" source="#claude">In addition to that in Af 37, 1, thus a double disobedience (<hi rend="italic">see</hi> that word 4. 16). Care for the administration of justice would become impossible for the state if followers were protected from judicial prosecution by their lord in vassalage.</seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="Af_37-2.attnote.fn.15" n="15" source="#attenborough"><bibl><biblScope unit="page">80</biblScope></bibl><label>yfla</label><seg type="original" xml:lang="en"><hi rend="italic">(to) yfele</hi>. H*, B.</seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="Af_37-2.attnote.fn.16" n="16" source="#attenborough"><bibl><biblScope unit="page">80</biblScope></bibl><label>hæbbe</label><seg type="original" xml:lang="en"><hi rend="italic">hæfð</hi>. H, B.</seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="Af_37-2.attnote.fn.17" n="17" source="#attenborough"><bibl><biblScope unit="page">80</biblScope></bibl><label>ðonne</label><seg type="original" xml:lang="en"><hi rend="italic">ðonnon</hi>. B.</seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="Af_37-2.attnote.fn.18" n="18" source="#attenborough"><bibl><biblScope unit="page">80</biblScope></bibl><label>onfo</label><seg type="original" xml:lang="en"><hi rend="italic">underfo</hi>. B.</seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="Af_37-2.attnote.fn.19" n="19" source="#attenborough"><bibl><biblScope unit="page">80</biblScope></bibl><label>þam</label><seg type="original" xml:lang="en">So.</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

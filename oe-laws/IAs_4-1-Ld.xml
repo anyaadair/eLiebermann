@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IAs_4-1-Ld">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>I As 4.1[Ld]</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Attenborough’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">IAs_4-1-Ld</idno>
+        <idno type="citation">I As 4.1[Ld]</idno>
+        <idno type="lawCode">I As</idno>
+        <idno type="lawCodeAnchor">IAs</idno>
+        <idno type="clause">4.1[Ld]</idno>
+        <idno type="citationKey">IAs 4.1ld</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>I Æthelstan (Tithes)</title> <note type="reign">Æthelstan, r. 924–939</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">148</biblScope></bibl>
+          <bibl xml:id="attenborough" type="edition">F. L. Attenborough, <title>The Laws of the Earliest English Kings</title> (Cambridge: Cambridge University Press, 1922), p. <biblScope unit="page">124</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-g-b" rend="bold"><abbr>G(B)</abbr> <note type="manuscript">London, British Library, Cotton Nero A.i</note></witness>
+          <witness xml:id="wit-d"><abbr>D</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 201</note></witness>
+          <witness xml:id="wit-q"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note></witness>
+          <witness xml:id="wit-ld"><abbr>Ld</abbr> <note type="manuscript">William Lambarde, Archaionomia (London, 1568) – printed from manuscripts now lost</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 146">925–c.936</date><date source="#attenborough">before III As</date><date source="#wormald-mel" n="MEL p. 439">early in the reign, before II As</date><note type="promulgation">925–c.936 (Liebermann, I p. 146); before III As (Attenborough); early in the reign, before II As (Wormald, MEL p. 439)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Church dues</term><term>Taxes</term><term>Reward</term><term>Written laws/decisions</term><term>Legal principles</term><term>Church rights</term><term>Spiritual welfare</term></keywords>
+        <keywords n="people"><term>Reeves</term><term>King</term><term>Æthelstan</term><term>Weorcmen</term><term>All people</term><term>Named individuals</term><term>Secular classes</term><term>Rank</term><term>Nobles</term></keywords>
+        <keywords n="locations"><term>Heaven</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 732 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 148.</change>
+      <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 148: “Se godcunde lare us gemynaþ, þæt we ða heofonlica ðinga mid ðam eorþlicum ⁊ ða ecelic mid ðam hwilwendlicum geearniaþ.” → “Se godcunde lare us gemynaþ, þæt we ða heofonlica ðinga mid ðam eorþlicum ⁊ ða ecelic mid ðam hwilwendlicum geearniaþ. (expanded letters in italics: æt)”.</change>
+      <change when="2026-10" type="checked">Liebermann’s German translation corrected against Gesetze I, p. 148: “(Die göttliche Lehre ermahnt uns, dass wir die himmlischen Dinge durch die irdischen und die ewigen durch die zeitlichen verdienen lq.)” → “(Die göttliche Lehre ermahnt uns, dass wir die himmlischen Dinge durch die irdischen und die ewigen durch die zeitlichen verdienen lq.) (expanded letters in italics: lq)”.</change>
+      <change when="2026-10" type="checked">The modern editor’s text corrected against Attenborough, p. 124: “gemynað,; [Ld]” → “gemynaþ,; ∅”.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="4.1[Ld]">
+        <head><ref type="lawCode" target="law:IAs">I As</ref> 4.1[Ld]</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="4.1[Ld]" corresp="#wit-ld"><pb n="148" ed="#liebermann"/>Se<ptr type="liebermannNote" n="1" target="#IAs_4-1-Ld.lnote.oe.1"/> godcunde lare<ptr type="liebermannNote" n="1" target="#IAs_4-1-Ld.lnote.oe.1"/> us gemynaþ, þ<hi rend="italic">æt</hi> we ða heofonlica<ptr type="liebermannNote" n="1" target="#IAs_4-1-Ld.lnote.oe.1"/> ðinga<ptr type="liebermannNote" n="1" target="#IAs_4-1-Ld.lnote.oe.1"/> mid ðam eorþlicum ⁊ ða ecelic mid ðam hwilwendlicum geearniaþ.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="4.1[Ld]" corresp="#wit-q"><pb n="149" ed="#liebermann"/>Hortatur nos sermo diuinus eterna cum terrenis, celestia cum caducis promereri.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="4.1[Ld]"><pb n="148" ed="#liebermann"/>[Not in G, D]</ab>
+        <ab type="editionText" xml:lang="ang" source="#attenborough" n="4.1" corresp="#wit-g-b"><pb n="124" ed="#attenborough"/>[Se godcunde lare us gemynaþ, þæt we ða heofonlica ðinga mid ðam eorþlicum ⁊ ða ecelic mid ðam hwilwendlicum geearniaþ.]<ptr type="editorNote" n="2" target="#IAs_4-1-Ld.attnote.fn.2"/></ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="149" ed="#liebermann"/>(Die<ptr type="liebermannNote" n="1" target="#IAs_4-1-Ld.lnote.de.1"/> göttliche Lehre ermahnt uns, dass wir<ptr type="liebermannNote" n="2" target="#IAs_4-1-Ld.lnote.de.2"/> die himmlischen Dinge durch die irdischen und die ewigen durch die zeitlichen verdienen <hi rend="italic">lq</hi>.)</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">(The divine teaching exhorts us that we earn heavenly things through earthly ones and eternal things through temporal ones, lq.)</ab>
+        <ab type="translation" xml:lang="en" source="#attenborough" corresp="#wit-g-b"><pb n="125" ed="#attenborough"/>For the divine teaching instructs us that we gain the things of heaven by those of the earth, and the eternal by the temporal.</ab>
+        <note type="editorial">Only in Ld and Quadripartitus; not in D or G.</note>
+        <note type="liebermannNote" subtype="textual" xml:id="IAs_4-1-Ld.lnote.oe.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">148</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">so</hi></seg><seg type="translation" xml:lang="en" source="#claude">sic</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="IAs_4-1-Ld.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">98</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Der Satz reiht sich zwar besser 3 an, wie ihn Ld bietet; allein 4 ist offenbar archetyp. So scheint mir 4, 1 dem Bearbeiter lq zu gehören</seg><seg type="translation" xml:lang="en" source="#claude">The sentence, as Ld gives it, does indeed follow better on 3; but 4 evidently belongs to the archetype. 4, 1 therefore seems to me to belong to the redactor lq</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="IAs_4-1-Ld.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">98</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Der Gedanke (<hi rend="italic">vgl. Gl</hi> Himmel 4) kehrt in Urkk., auch Æthelstans, häufig wieder: <hi rend="italic">mercanda sunt æterna caducis</hi> a. 937 Bi 721; <hi rend="italic">mid þam gewytendlicum madmum þa unaleori</hi> <hi rend="italic">endlican madmas begitan sceolde</hi> a. 932 Bi 693. Schon Ælfred versteht Augustins Worte <hi rend="italic">Deus, per quem discimus, aliena esse quae aliquando nostra, et nostra quae aliquando aliena putabamus</hi> als <hi rend="italic">weoruldwela</hi> im Ggs. zu <hi rend="italic">heofonrice;</hi> ed. Hargrove p. 7</seg><seg type="translation" xml:lang="en" source="#claude">The idea (<hi rend="italic">cf. Gl</hi> Himmel 4) recurs frequently in charters, Æthelstan’s among them: <hi rend="italic">mercanda sunt æterna caducis</hi> a. 937 Bi 721; <hi rend="italic">mid þam gewytendlicum madmum þa unaleori</hi> <hi rend="italic">endlican madmas begitan sceolde</hi> a. 932 Bi 693. Ælfred already understands Augustine’s words <hi rend="italic">Deus, per quem discimus, aliena esse quae aliquando nostra, et nostra quae aliquando aliena putabamus</hi> as <hi rend="italic">weoruldwela</hi> in contrast to <hi rend="italic">heofonrice;</hi> ed. Hargrove p. 7</seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="IAs_4-1-Ld.attnote.fn.2" n="2" source="#attenborough"><bibl><biblScope unit="page">124</biblScope></bibl><label>geearniaþ</label><seg type="original" xml:lang="en">Ld. Omitted in G, D.</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

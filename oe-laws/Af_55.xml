@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Af_55">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Af 55</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Attenborough’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">Af_55</idno>
+        <idno type="citation">Af 55</idno>
+        <idno type="lawCode">Af</idno>
+        <idno type="lawCodeAnchor">Af</idno>
+        <idno type="clause">55</idno>
+        <idno type="citationKey">Af 55</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Alfred’s Domboc</title> <note type="reign">Alfred, r. 871–899</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">82</biblScope></bibl>
+          <bibl xml:id="jurasinski-and-oliver" type="edition">Stefan Jurasinski and Lisi Oliver, <title>The Laws of Alfred: The Domboc and the Making of Anglo-Saxon Law</title> (Cambridge: Cambridge University Press, 2021), p. <biblScope unit="page">354</biblScope></bibl>
+          <bibl xml:id="attenborough" type="edition">F. L. Attenborough, <title>The Laws of the Earliest English Kings</title> (Cambridge: Cambridge University Press, 1922), p. <biblScope unit="page">88</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="whitelock" type="study">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007)</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-e" rend="bold"><abbr>E</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 173 (Parker Chronicle and Laws)</note></witness>
+          <witness xml:id="wit-h"><abbr>H</abbr> <note type="manuscript">Strood, Medway Archive and Local Studies Centre, MS DRc/R1 (Textus Roffensis; formerly Rochester, Cathedral Library, A.3.5), c. 1120–25</note></witness>
+          <witness xml:id="wit-b-no-prol"><abbr>B (no Prol.)</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383</note></witness>
+          <witness xml:id="wit-g-prol-only"><abbr>G (Prol. only)</abbr> <note type="manuscript">London, British Library, Cotton Nero A.i</note></witness>
+          <witness xml:id="wit-q"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note></witness>
+          <witness xml:id="wit-ld"><abbr>Ld</abbr> <note type="manuscript">William Lambarde, Archaionomia (London, 1568) – printed from manuscripts now lost</note></witness>
+          <witness xml:id="wit-bu"><abbr>Bu</abbr></witness>
+          <witness xml:id="wit-ot-frags"><abbr>Ot (frags.)</abbr> <note type="manuscript">London, British Library, Cotton Otho B.xi (damaged by fire, 1731)</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 27">871 (after 890?)–901</date><date source="#whitelock" n="EHD p. 408">885–899</date><date source="#wormald-mel" n="MEL p. 286">after 893</date><note type="promulgation">871 (after 890?)–901 (Liebermann, I p. 27); 885–899 (Whitelock, EHD p. 408); after 893 (Wormald, MEL p. 286)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Personal injury</term><term>Compensation</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 501 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 82.</change>
+      <change when="2026-10" type="checked">Liebermann’s text of MS B added from Gesetze I, p. 82.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="55">
+        <head><ref type="lawCode" target="law:Af">Af</ref> 55</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="55" corresp="#wit-e"><pb n="82" ed="#liebermann"/>Gif ða earmscancan beoð<ptr type="liebermannNote" n="5" target="#Af_55.lnote.oe.5"/> begen forade, sio<ptr type="liebermannNote" n="6" target="#Af_55.lnote.oe.6"/> bot bið XXX scill.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="55" corresp="#wit-h"><pb n="82" ed="#liebermann"/>Gif ða earmsconcan<ptr type="liebermannNote" n="1" target="#Af_55.lnote.oe.1"/> beoð<ptr type="liebermannNote" n="4" target="#Af_55.lnote.oe.4"/> begen forode<ptr type="liebermannNote" n="5" target="#Af_55.lnote.oe.5-2"/>, seo<ptr type="liebermannNote" n="4" target="#Af_55.lnote.oe.4"/> bot bið XXX scll'.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="55" corresp="#wit-b-no-prol"><pb n="82" ed="#liebermann"/>Gyf ða earmscancan beoð begen forade, seo bot bið ðrittig scill'.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="55" corresp="#wit-q"><pb n="83" ed="#liebermann"/>Si utrumque<ptr type="liebermannNote" n="4" target="#Af_55.lnote.oe.4-2"/> os brachii fractum sit, emendatio est XXX solidi.</ab>
+        <ab type="editionText" xml:lang="ang" source="#attenborough" corresp="#wit-e"><pb n="88" ed="#attenborough"/>Gif ða earmscancan beoð begen forade, sio bot bið XXX scill.</ab>
+        <ab type="editionText" xml:lang="ang" source="#jurasinski-and-oliver" n="58.1" corresp="#wit-e"><pb n="354" ed="#jurasinski-and-oliver"/>Gif þa earmscancan beoð begen forade, sio bot bið XXX scill.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="83" ed="#liebermann"/>Wenn<ptr type="liebermannNote" n="1" target="#Af_55.lnote.de.1"/> die Armknochen beide<ptr type="liebermannNote" n="2" target="#Af_55.lnote.de.2"/> [der des Ober- und der<ptr type="liebermannNote" n="3" target="#Af_55.lnote.de.3"/> des Unterarms] gebrochen sind, ist die Busse 30 Schill.</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">If both arm-bones [that of the upper and that of the lower arm] are broken, the compensation is 30 shillings.</ab>
+        <ab type="translation" xml:lang="en" source="#attenborough" corresp="#wit-e"><pb n="89" ed="#attenborough"/>If both<ptr type="editorNote" n="1" target="#Af_55.attnote.n.1"/> bones in the arm are broken, the compensation [to be paid] shall be 30 shillings.</ab>
+        <ab type="translation" xml:lang="en" source="#jurasinski-and-oliver" corresp="#wit-e"><pb n="355" ed="#jurasinski-and-oliver"/>If the armbones both are broken, the compensation is 30 shillings.</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_55.lnote.oe.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">82</biblScope></bibl><seg type="original" xml:lang="de">biþ <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">biþ Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_55.lnote.oe.6" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">82</biblScope></bibl><seg type="original" xml:lang="de">seo bote <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">seo bote Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_55.lnote.oe.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">82</biblScope></bibl><seg type="original" xml:lang="de">o <hi rend="italic">geänd. in</hi> a</seg><seg type="translation" xml:lang="en" source="#claude">o altered to a</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_55.lnote.oe.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">82</biblScope></bibl><seg type="original" xml:lang="de">e <hi rend="italic">auf Rasur</hi></seg><seg type="translation" xml:lang="en" source="#claude">e on an erasure</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_55.lnote.oe.5-2" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">82</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">geänd. in</hi> forade</seg><seg type="translation" xml:lang="en" source="#claude">altered to forade</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_55.lnote.oe.4-2" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">83</biblScope></bibl><seg type="original" xml:lang="de">utrum <hi rend="italic">Or</hi></seg><seg type="translation" xml:lang="en" source="#claude">utrum Or</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Af_55.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">61</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">Inst. missverstehen ‘beide Arme’</seg><seg type="translation" xml:lang="en" source="#claude">Inst. misunderstand ‘both arms’</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Af_55.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">61</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">Wortstellung <hi rend="italic">s.</hi> Wülfing <hi rend="italic">Syntax</hi> 304</seg><seg type="translation" xml:lang="en" source="#claude">On word order <hi rend="italic">see</hi> Wülfing <hi rend="italic">Syntax</hi> 304</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Af_55.lnote.de.3" n="3" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">61</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">Wohl nicht ‘des Unterarms: Radius und Ulna’. Ob Af soviel Anatomie verstand? Und warum sollte Unterarm doppelt soviel wie Oberarm gelten und allein <hi rend="italic">sceanca</hi> heissen, das doch auch vom Bein gebraucht wird? Auch sondert Af beim Bein Ober- und Unterschenkel; 62f.</seg><seg type="translation" xml:lang="en" source="#claude">Probably not ‘of the forearm: radius and ulna’. Would Af have understood that much anatomy? And why should the forearm be valued at twice the upper arm and alone be called <hi rend="italic">sceanca</hi>, which is after all also used of the leg? Moreover, in the case of the leg Af distinguishes thigh and shank; 62f.</seg></note>
+        <note type="editorNote" subtype="endnote" xml:id="Af_55.attnote.n.1" n="1" source="#attenborough"><bibl><biblScope unit="page">199</biblScope></bibl><seg type="original" xml:lang="en">According to Liebermann, ‘both bones’ refers, not to the radius and the ulna, but to the bones both above and below the elbow.</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

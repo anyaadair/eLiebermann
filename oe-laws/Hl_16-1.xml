@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Hl_16-1">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Hl 16.1</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#oliver">Oliver</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#oliver">Oliver</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Attenborough’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Oliver’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Whitelock’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">Hl_16-1</idno>
+        <idno type="citation">Hl 16.1</idno>
+        <idno type="lawCode">Hl</idno>
+        <idno type="lawCodeAnchor">Hl</idno>
+        <idno type="clause">16.1</idno>
+        <idno type="citationKey">Hl 16.1</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Hlothhere and Eadric’s Code</title> <note type="reign">Hlothhere, r. 673–685; Eadric, r. 685–686</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">11</biblScope></bibl>
+          <bibl xml:id="oliver" type="edition">Lisi Oliver, <title>The Beginnings of English Law</title> (Toronto: University of Toronto Press, 2002), p. <biblScope unit="page">132</biblScope></bibl>
+          <bibl xml:id="attenborough" type="edition">F. L. Attenborough, <title>The Laws of the Earliest English Kings</title> (Cambridge: Cambridge University Press, 1922), p. <biblScope unit="page">22</biblScope></bibl>
+          <bibl xml:id="whitelock" type="translation">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007), p. <biblScope unit="page">395</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-h"><abbr>H</abbr> <note type="manuscript">Strood, Medway Archive and Local Studies Centre, MS DRc/R1 (Textus Roffensis; formerly Rochester, Cathedral Library, A.3.5), c. 1120–25</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 9">685–6</date><date source="#whitelock" n="EHD p. 393">673–85?</date><note type="promulgation">685–6 (Liebermann, I p. 9); 673–85? (Whitelock, EHD p. 393)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Attachment</term><term>Commerce</term><term>Goods</term><term>Oath and pledge</term><term>Legal procedure</term><term>Boundaries</term></keywords>
+        <keywords n="people"><term>Kentishmen</term><term>Witnesses</term><term>Owner of goods</term></keywords>
+        <keywords n="locations"><term>Kent</term><term>London</term><term>King's premises</term><term>Named kingdoms</term><term>Buildings</term><term>Named towns</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 151 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 11.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="16.1">
+        <head><ref type="lawCode" target="law:Hl">Hl</ref> 16.1</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="16.1" corresp="#wit-h"><pb n="11" ed="#liebermann"/>Gif hit man eft æt þam mæn in Cænt ætfó, þonne tæme he to wic to cyngæs sele to þam mæn ðe him sealde, gif he þane wite ⁊ æt þam teame gebrengen mæge.</ab>
+        <ab type="editionText" xml:lang="ang" source="#attenborough" corresp="#wit-h"><pb n="22" ed="#attenborough"/>Gif hit man eft æt þam mæn in Cænt ætfó, þonne tæme he to wic to cyngæs sele to þam mæn ðe him sealde, gif he þane wite ⁊ æt þam teame gebrengen mæge.</ab>
+        <ab type="editionText" xml:lang="ang" source="#oliver" n="11.1" corresp="#wit-h"><pb n="132" ed="#oliver"/>Gif hit man eft æt þam mæn in cænt ætfó, þonne tæme he to wic to cyngæs sele to þam mæn ðe him sealde, gif he þane wite ⁊ æt þam teame gebrengen mæge.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="11" ed="#liebermann"/>Wenn jemand sie nachher bei jenem Manne in Kent [im Anefang] fasst, dann ziehe dieser [verklagte Käufer die Gewähr<ptr type="liebermannNote" n="1" target="#Hl_16-1.lnote.de.1"/>] zu [jener] Stadt<ptr type="liebermannNote" n="2" target="#Hl_16-1.lnote.de.2"/> in Königshalle auf den [Gewährs]mann, der [sie] ihm verkauft hat, wenn er [nämlich] denselben kennt und zu dem Gewährzugsprocesse herbeibringen<ptr type="liebermannNote" n="3" target="#Hl_16-1.lnote.de.3"/> kann.</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">If someone afterwards seizes them [by attachment] from that man in Kent, then let this [accused buyer vouch to warranty] at [that] town at the king’s hall upon the [warrantor] who sold [them] to him, if [that is] he knows him and can bring him to the warranty proceedings.</ab>
+        <ab type="translation" xml:lang="en" source="#attenborough" corresp="#wit-h"><pb n="23" ed="#attenborough"/>If afterwards it is claimed<ptr type="editorNote" n="1" target="#Hl_16-1.attnote.n.1"/> from the man in Kent, he shall summon as witness, to the king’s residence in London<ptr type="editorNote" n="2" target="#Hl_16-1.attnote.n.2"/>, the man who sold it him, if he knows him and can produce him as warrant for the transaction.</ab>
+        <ab type="translation" xml:lang="en" source="#whitelock" corresp="#wit-h"><pb n="395" ed="#whitelock"/>If then it is attached in the possession of the man in Kent, he is to vouch to warranty the man who sold it to him, at the king’s<ptr type="editorNote" n="5" target="#Hl_16-1.whinote.n.5"/> hall in that town, if he knows him and can produce him at that vouching to warranty.</ab>
+        <ab type="translation" xml:lang="en" source="#oliver" corresp="#wit-h"><pb n="133" ed="#oliver"/>If a person afterwards claim possession of it from that man in Kent,<ptr type="editorNote" n="b" target="#Hl_16-1.olinote.n.b"/> then let him [the person who bought the goods] vouch in the king’s hall in that town that man who sold it to him, if he knows him and is able to bring him to that vouching.<ptr type="editorNote" n="c" target="#Hl_16-1.olinote.n.c"/></ab>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Hl_16-1.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">23</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Wie <hi rend="italic">o.</hi> 7¹</seg><seg type="translation" xml:lang="en" source="#claude">As <hi rend="italic">above</hi> 7¹</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Hl_16-1.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">23</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">London; siehe über solche Abkürzung des Namens <hi rend="italic">Wb: wic</hi></seg><seg type="translation" xml:lang="en" source="#claude">London; on such abbreviation of the name see <hi rend="italic">Wb: wic</hi></seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Hl_16-1.lnote.de.3" n="3" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">23</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Anefang 12</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf. Gl</hi> Anefang 12</seg></note>
+        <note type="editorNote" subtype="endnote" xml:id="Hl_16-1.attnote.n.1" n="1" source="#attenborough"><bibl><biblScope unit="page">180</biblScope></bibl><seg type="original" xml:lang="en">Liebermann suggests that London was under the king of Kent when this law was drawn up. We have no evidence elsewhere to this effect. For <hi rend="italic">ætfo</hi> see cap. 7 above, and note.</seg></note>
+        <note type="editorNote" subtype="endnote" xml:id="Hl_16-1.attnote.n.2" n="2" source="#attenborough"><bibl><biblScope unit="page">180</biblScope></bibl><seg type="original" xml:lang="en"><hi rend="italic">wic</hi>—an abbreviation for <hi rend="italic">Lundenwic</hi> (Liebermann).</seg></note>
+        <note type="editorNote" subtype="translationFootnote" xml:id="Hl_16-1.whinote.n.5" n="5" source="#whitelock"><bibl><biblScope unit="page">395</biblScope></bibl><label>king’s</label><seg type="original" xml:lang="en">It is normally assumed that this refers to the Kentish king.</seg></note>
+        <note type="editorNote" subtype="translationFootnote" xml:id="Hl_16-1.olinote.n.b" n="b" source="#oliver"><bibl><biblScope unit="page">133</biblScope></bibl><label>Kent,</label><seg type="original" xml:lang="en">In other words, a previous owner or his representative has tracked the purchaser down in Kent to claim that the sale was not legitimate.</seg></note>
+        <note type="editorNote" subtype="translationFootnote" xml:id="Hl_16-1.olinote.n.c" n="c" source="#oliver"><bibl><biblScope unit="page">133</biblScope></bibl><label>vouching.</label><seg type="original" xml:lang="en">See note c to §5 above.</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

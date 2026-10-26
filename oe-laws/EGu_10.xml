@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="EGu_10">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>EGu 10</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Cross-references to other clauses</resp><name ref="#wormald-ppmel">Wormald, Papers Preparatory</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Attenborough’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">EGu_10</idno>
+        <idno type="citation">EGu 10</idno>
+        <idno type="lawCode">EGu</idno>
+        <idno type="lawCodeAnchor">EGu</idno>
+        <idno type="clause">10</idno>
+        <idno type="citationKey">EGu 10</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Treaty of Edward and Guthrum</title> <note type="reign">Attributed to Edward the Elder, r. 899–924, and Guthrum, d. 890</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">132</biblScope></bibl>
+          <bibl xml:id="attenborough" type="edition">F. L. Attenborough, <title>The Laws of the Earliest English Kings</title> (Cambridge: Cambridge University Press, 1922), p. <biblScope unit="page">106</biblScope></bibl>
+          <bibl xml:id="rabin-doml" type="edition">Andrew Rabin, ed. and trans., <title>Old English Legal Writings: Wulfstan</title>, Dumbarton Oaks Medieval Library (Cambridge, MA: Harvard University Press, 2020), p. <biblScope unit="page">8</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="wormald-ppmel" type="study">Patrick Wormald, <title>Papers Preparatory to The Making of English Law: King Alfred to the Twelfth Century, II: From God’s Law to Common Law</title>, ed. Stephen Baxter and John Hudson (London: University of London, 2014)</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-h" rend="bold"><abbr>H</abbr> <note type="manuscript">Strood, Medway Archive and Local Studies Centre, MS DRc/R1 (Textus Roffensis; formerly Rochester, Cathedral Library, A.3.5), c. 1120–25</note></witness>
+          <witness xml:id="wit-b"><abbr>B</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383</note></witness>
+          <witness xml:id="wit-q"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note></witness>
+          <witness xml:id="wit-ld"><abbr>Ld</abbr> <note type="manuscript">William Lambarde, Archaionomia (London, 1568) – printed from manuscripts now lost</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 128">Nov. 921–938?</date><date source="#wormald-mel #rabin-doml" n="MEL pp. 389–91|">1002–4</date><note type="promulgation">Nov. 921–938? (Liebermann, I p. 128); 1002–4 (Wormald, MEL pp. 389–91; Rabin)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Corporal punishment</term><term>Legal principles</term><term>Treaty</term><term>Spiritual welfare</term><term>Danelaw</term><term>Boundaries</term></keywords>
+        <keywords n="people"><term>Bishops</term><term>Nobles</term><term>Ecclesiastical orders</term><term>Rank</term><term>All people</term><term>Secular classes</term></keywords>
+        <keywords n="locations"><term>Danish districts</term><term>English districts</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 697 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 132.</change>
+      <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 132: “man” → “mon”.</change>
+      <change when="2026-10" type="checked">Liebermann’s Latin text corrected against Gesetze I, p. 132: “limeþeo” → “límeþeo”.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="10">
+        <head><ref type="lawCode" target="law:EGu">EGu</ref> 10</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="10" corresp="#wit-h"><pb n="132" ed="#liebermann"/>Gif limlæweo<ptr type="liebermannNote" n="24" target="#EGu_10.lnote.oe.24"/> lama, þe forworht wære, weorþe forlæten, ⁊ he æfter þam<ptr type="liebermannNote" n="25" target="#EGu_10.lnote.oe.25"/> ðreo niht alibbe, siððan man mot hylpan be bisceopes leafe, se ðe wylle<ptr type="liebermannNote" n="1" target="#EGu_10.lnote.oe.1"/> beorgan sare ⁊ saule.<ptr type="liebermannNote" n="2" target="#EGu_10.lnote.oe.2"/></ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="10" corresp="#wit-b"><pb n="132" ed="#liebermann"/>Gyf limlǽpeo<ptr type="liebermannNote" n="**" target="#EGu_10.lnote.oe.star2"/> lama, ðe forworht wære, weorðe forlæten, ⁊ he æfter ðam ðreo niht alibbe, siððan mon mot hylpan be bisceopes leafe, se ðe wylle beorgan sare ⁊ saule.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="10" corresp="#wit-q"><pb n="133" ed="#liebermann"/>Si límeþeo lama, qui forisfactus esset, dimittatur et ipse uiuat tres noctes, potest ei deinceps subueniri per episcopi licentiam, si quis uelit.</ab>
+        <ab type="editionText" xml:lang="ang" source="#attenborough" n="10" corresp="#wit-h"><pb n="106" ed="#attenborough"/>Gif limlæweo<ptr type="editorNote" n="15" target="#EGu_10.attnote.fn.15"/> lama, þe forworht wære, weorþe forlæten, ⁊ he æfter þam ðreo niht<ptr type="editorNote" n="16" target="#EGu_10.attnote.fn.16"/> alibbe, siððan man mot hylpan be bisceopes leafe, se ðe wylle beorgan sare ⁊ saule.</ab>
+        <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-h"><pb n="8" ed="#rabin-doml"/>Gif limlæwed lama þe forworht wære weorþe forlæten and he æfter þam ðreo niht alibbe, siððan man mot hylpan be bisceopes leafe, se ðe wylle beorgan sare and saule.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="133" ed="#liebermann"/>Wenn<ptr type="liebermannNote" n="1" target="#EGu_10.lnote.de.1"/> ein an Gliedern verstümmelter<ptr type="liebermannNote" n="2" target="#EGu_10.lnote.de.2"/> Krüppel, der [zur Hinrichtung] verurtheilt<ptr type="liebermannNote" n="3" target="#EGu_10.lnote.de.3"/> war, verlassen wird und nach dem drei Tage überlebt<ptr type="liebermannNote" n="4" target="#EGu_10.lnote.de.4"/>, dann darf mit des Bischofs Erlaubniss jemand [ihm] helfen, wer der Wunde und der Seele Rettung bringen will.</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">If a cripple mutilated in his limbs, who had been condemned [to execution], is abandoned and survives three days after that, then anyone who wishes to bring help to the wound and the soul may help [him] with the bishop’s permission.</ab>
+        <ab type="translation" xml:lang="en" source="#attenborough" corresp="#wit-h"><pb n="107" ed="#attenborough"/>If a criminal who has been mutilated and maimed is abandoned, and three days later he is still alive, after this time [has elapsed] he who wishes to have regard to his wounds and his soul may help him with the permission of the bishop.</ab>
+        <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-h"><pb n="9" ed="#rabin-doml"/>If a mutilated man who might have been executed comes to be abandoned and he survives for three nights, afterward, with the bishop’s permission, anyone who wishes to heal his injuries and his soul might help him.</ab>
+        <note type="comparedBy" source="#wormald-ppmel" n="93"><ref target="clause:IICn_30-5">II Cn 30.5</ref></note>
+        <note type="textual" source="#rabin-doml">limlæwed: limlæweo H; limlæþeo B</note>
+        <note type="liebermannNote" subtype="textual" xml:id="EGu_10.lnote.oe.24" n="24" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">132</biblScope></bibl><seg type="original" xml:lang="de">lim læpeo <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">lim læpeo Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="EGu_10.lnote.oe.25" n="25" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">132</biblScope></bibl><seg type="original" xml:lang="de">ðæm ðreo nihte a., syþðan <hi rend="italic">ohne</hi> man <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">ðæm ðreo nihte a., syþðan without man Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="EGu_10.lnote.oe.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">134</biblScope></bibl><seg type="original" xml:lang="de">wille <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">wille Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="EGu_10.lnote.oe.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">134</biblScope></bibl><seg type="original" xml:lang="de">sawle <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">sawle Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="EGu_10.lnote.oe.star2" n="**" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">132</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">bessere</hi> limlæweo</seg><seg type="translation" xml:lang="en" source="#claude">read limlæweo</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="EGu_10.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">91</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Verstümmelung 4b. c. Hand- und Fussabhauen heisst <hi rend="italic">capitalis sententia;</hi> Will. Malm. <hi rend="italic">Pont.</hi> p. 27; <hi rend="italic">V. Dunstani</hi> ed. Stubbs 300</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf. Gl</hi> Verstümmelung 4b. c. Cutting off a hand and foot is called <hi rend="italic">capitalis sententia;</hi> Will. Malm. <hi rend="italic">Pont.</hi> p. 27; <hi rend="italic">V. Dunstani</hi> ed. Stubbs 300</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="EGu_10.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">91</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">Neben Fem. <hi rend="italic">limlæw</hi> ‘Verstümmelung’ setzen Toller und Sweet (dieser als aus *-<hi rend="italic">læwa</hi>), danach mein Wb., ein Adj. <hi rend="italic">læweo</hi> an. Die Endung, jedenfalls unnormal, drückt vielleicht nur den Instrum. jenes Fem. aus, so dass man das Adj. streichen und ‘durch Gliederverstümmelung lahm’ erklären dürfte. — Toller verbindet das Wort mit *<hi rend="italic">gelewed;</hi> dieses erschliesst er aus Ælfrics Übertragung von (<hi rend="italic">iumentum</hi>) <hi rend="italic">debilitatum</hi> zu <hi rend="italic">geleued</hi>, das Grein vielmehr als <hi rend="italic">gelefed</hi> druckt. Toller <hi rend="italic">Suppl.</hi> setzt mit <hi rend="italic">alefian</hi> ‘schwächen, schädigen, verstümmeln, verkrüppeln’ <hi rend="italic">alewian</hi> identisch; er zitiert <hi rend="italic">Agsä. Bened. regel</hi> ed. Schröer 51 <hi rend="italic">alewed</hi> für <hi rend="italic">debile</hi>, wofür eine späte Hs. <hi rend="italic">alyfed</hi> [vielleicht moderneres Synonym!] einführt. Sweet trennt den Stamm <hi rend="italic">lef</hi> (‘krank, schwach; Schaden’) von <hi rend="italic">læw</hi>. — Agsä. <hi rend="italic">þ</hi> ward oft als <hi rend="italic">p</hi> verlesen (<hi rend="italic">s. Wb</hi> 170 Z. 1); also keine Beziehung zu <hi rend="italic">læppa</hi> ‘Teil’!</seg><seg type="translation" xml:lang="en" source="#claude">Alongside the fem. <hi rend="italic">limlæw</hi> ‘mutilation’, Toller and Sweet (the latter as from *-<hi rend="italic">læwa</hi>), and following them my Wb., posit an adj. <hi rend="italic">læweo</hi>. The ending, abnormal in any case, perhaps expresses merely the instrumental of that fem., so that the adj. could be deleted and the meaning explained as ‘lamed by mutilation of the limbs’. — Toller connects the word with *<hi rend="italic">gelewed;</hi> he infers this from Ælfric’s rendering of (<hi rend="italic">iumentum</hi>) <hi rend="italic">debilitatum</hi> by <hi rend="italic">geleued</hi>, which Grein, however, prints as <hi rend="italic">gelefed</hi>. Toller <hi rend="italic">Suppl.</hi> treats <hi rend="italic">alewian</hi> as identical with <hi rend="italic">alefian</hi> ‘weaken, harm, mutilate, cripple’; he cites <hi rend="italic">Agsä. Bened. regel</hi> ed. Schröer 51 <hi rend="italic">alewed</hi> for <hi rend="italic">debile</hi>, for which a late MS introduces <hi rend="italic">alyfed</hi> [perhaps a more modern synonym!]. Sweet separates the stem <hi rend="italic">lef</hi> (‘sick, weak; harm’) from <hi rend="italic">læw</hi>. — A.-S. <hi rend="italic">þ</hi> was often misread as <hi rend="italic">p</hi> (<hi rend="italic">see Wb</hi> 170 l. 1); so there is no connection with <hi rend="italic">læppa</hi> ‘part’!</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="EGu_10.lnote.de.3" n="3" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">91</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">S. o.</hi> 4, 2. 9</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">See above</hi> 4, 2. 9</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="EGu_10.lnote.de.4" n="4" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">91</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">Zwei Tage lang war also verboten, ärztlich dem nach der Verstümmelung drohenden Tode vorzubeugen; d. h. wie durch ‘ein Orakel’ ward Gott befragt, ob Verbrecher leben solle; Schreuer <hi rend="italic">Verbrechenskonk.</hi> 130; <hi rend="italic">vgl. Gl</hi> Todesstrafe 1. 6. 7</seg><seg type="translation" xml:lang="en" source="#claude">For two days, therefore, it was forbidden to forestall by medical means the death threatening after the mutilation; i.e., God was consulted, as by ‘an oracle’, as to whether the criminal should live; Schreuer <hi rend="italic">Verbrechenskonk.</hi> 130; <hi rend="italic">cf. Gl</hi> Todesstrafe 1. 6. 7</seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="EGu_10.attnote.fn.15" n="15" source="#attenborough"><bibl><biblScope unit="page">106</biblScope></bibl><label>limlæweo</label><seg type="original" xml:lang="en"><hi rend="italic">limlæpeo</hi>. Ld, B.</seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="EGu_10.attnote.fn.16" n="16" source="#attenborough"><bibl><biblScope unit="page">106</biblScope></bibl><label>niht</label><seg type="original" xml:lang="en"><hi rend="italic">nihte</hi>. Ld.</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

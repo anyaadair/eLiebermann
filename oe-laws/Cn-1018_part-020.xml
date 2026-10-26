@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Cn-1018_part-020">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Cn 1018 10.1</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#kennedy">Kennedy</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#kennedy">Kennedy</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Cross-references to other clauses</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#whitelock">Whitelock</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">Cn-1018_part-020</idno>
+        <idno type="citation">Cn 1018 10.1</idno>
+        <idno type="lawCode">Cn 1018</idno>
+        <idno type="clause">10.1</idno>
+        <idno type="citationKey">Cn 1018 10.1</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Cnut’s Code of 1018 (Oxford)</title> <note type="reign">Cnut, r. 1016–1035</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903)</bibl>
+          <bibl xml:id="kennedy" type="edition">A. G. Kennedy, ‘Cnut’s Law Code of 1018’, <title>Anglo-Saxon England</title> 11 (1983), 57–81, p. <biblScope unit="page">74</biblScope></bibl>
+          <bibl xml:id="rabin-doml" type="edition">Andrew Rabin, ed. and trans., <title>Old English Legal Writings: Wulfstan</title>, Dumbarton Oaks Medieval Library (Cambridge, MA: Harvard University Press, 2020), p. <biblScope unit="page">214</biblScope></bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="whitelock" type="study">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-d"><abbr>D</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 201</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#whitelock #kennedy #wormald-mel" n="EHD p. 458||MEL p. 346">1018</date><placeName>Oxford</placeName><note type="promulgation">1018 (Whitelock, EHD p. 458; Kennedy; Wormald, MEL p. 346); Oxford</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Administrative directives</term><term>Ecclesiastical directives</term><term>Legal principles</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 1507 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="10.1">
+        <head>Cn 1018 10.1</head>
+        <ab type="editionText" xml:lang="ang" source="#kennedy" n="10.1" corresp="#wit-d"><pb n="74" ed="#kennedy"/>And se ðe eard wille rihtlice clænsian 7 unriht alecgan. 7 rihtwisnesse lufian. þonne mot he georne þillices styran. 7 þillic ascunian.</ab>
+        <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-d"><pb n="214" ed="#rabin-doml"/>And se ðe eard wille rihtlice clænsian and unriht alecgan and rihtwisnesse lufian, þonne mot he georne þillices styran and þillic ascunian.</ab>
+        <ab type="translation" xml:lang="en" source="#kennedy" corresp="#wit-d"><pb n="74" ed="#kennedy"/>And he who wishes rightly to cleanse the land and suppress wrongdoing, and love righteousness, must zealously prohibit and avoid such offences.</ab>
+        <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-d"><pb n="215" ed="#rabin-doml"/>And anyone who desires to properly purify the realm and eradicate injustice and embrace righteousness must diligently stamp out and condemn such crimes.</ab>
+        <note type="comparedBy" source="#wormald-mel" n="357"><ref target="clause:IICn_7-1">II Cn 7.1</ref></note>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Hl_3">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Hl 3</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#oliver">Oliver</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#oliver">Oliver</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Oliver’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">Hl_3</idno>
+        <idno type="citation">Hl 3</idno>
+        <idno type="lawCode">Hl</idno>
+        <idno type="lawCodeAnchor">Hl</idno>
+        <idno type="clause">3</idno>
+        <idno type="citationKey">Hl 3</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Hlothhere and Eadric’s Code</title> <note type="reign">Hlothhere, r. 673–685; Eadric, r. 685–686</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">9</biblScope></bibl>
+          <bibl xml:id="oliver" type="edition">Lisi Oliver, <title>The Beginnings of English Law</title> (Toronto: University of Toronto Press, 2002), p. <biblScope unit="page">126</biblScope></bibl>
+          <bibl xml:id="attenborough" type="edition">F. L. Attenborough, <title>The Laws of the Earliest English Kings</title> (Cambridge: Cambridge University Press, 1922), p. <biblScope unit="page">18</biblScope></bibl>
+          <bibl xml:id="whitelock" type="translation">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007), p. <biblScope unit="page">394</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-h"><abbr>H</abbr> <note type="manuscript">Strood, Medway Archive and Local Studies Centre, MS DRc/R1 (Textus Roffensis; formerly Rochester, Cathedral Library, A.3.5), c. 1120–25</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 9">685–6</date><date source="#whitelock" n="EHD p. 393">673–85?</date><note type="promulgation">685–6 (Liebermann, I p. 9); 673–85? (Whitelock, EHD p. 393)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Capital offences</term><term>Compensation</term><term>Homicide</term><term>Wergeld</term></keywords>
+        <keywords n="people"><term>Esne</term><term>Owner of esne</term><term>Capital offenders</term><term>Weorcmen</term><term>All people</term><term>Freemen</term><term>Secular classes</term><term>Rank</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 134 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 9.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="3">
+        <head><ref type="lawCode" target="law:Hl">Hl</ref> 3</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="3" corresp="#wit-h"><pb n="9" ed="#liebermann"/>Gif mannes esne frigne mannan ofslæhð, þane þe sie hund scillinga gelde, se agend þone banan agefe ⁊ oþer manwyrð þær tó.</ab>
+        <ab type="editionText" xml:lang="ang" source="#attenborough" corresp="#wit-h"><pb n="18" ed="#attenborough"/>Gif mannes esne frigne mannan ofslæhð þane þe sie hund scillinga gelde, se agend þone banan agefe ⁊ oþer manwyrð þær tó.</ab>
+        <ab type="editionText" xml:lang="ang" source="#oliver" n="2" corresp="#wit-h"><pb n="126" ed="#oliver"/>Gif mannes esne frigne mannan ofslæhð, þane þe sie hund scillinga gelde, se agend þone banan agefe ⁊ oþer manwyrð þær tó.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="9" ed="#liebermann"/>Wenn<ptr type="liebermannNote" n="1" target="#Hl_3.lnote.de.1"/> jemandes Knecht einen freien Menschen erschlägt, einen, welcher im 100 Schilling-Wergelde<ptr type="liebermannNote" n="2" target="#Hl_3.lnote.de.2"/> steht, [so] liefere der Eigenthümer den Todtschläger aus und einen zweiten<ptr type="liebermannNote" n="3" target="#Hl_3.lnote.de.3"/> Knechtspreis dazu.</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">If someone’s servant slays a free person, one who stands at a 100-shilling wergeld, [then] let the owner hand over the killer and a second slave-price in addition.</ab>
+        <ab type="translation" xml:lang="en" source="#attenborough" corresp="#wit-h"><pb n="19" ed="#attenborough"/>If a man’s servant slays a freeman whose wergeld is 100 shillings, his owner shall surrender the homicide and [pay] the value of another man in addition.</ab>
+        <ab type="translation" xml:lang="en" source="#whitelock" corresp="#wit-h"><pb n="394" ed="#whitelock"/>If a man’s servant kills a freeman, who has a wergild of 100 shillings, the owner is to give up the slayer, and the value of another man in addition.</ab>
+        <ab type="translation" xml:lang="en" source="#oliver" corresp="#wit-h"><pb n="127" ed="#oliver"/>If a person’s servant kills a free man, who should be compensated for with a hundred shillings,<ptr type="editorNote" n="c" target="#Hl_3.olinote.n.c"/> the owner should give up that killer and another man-worth in addition.</ab>
+        <note type="translator" source="#whitelock">esne. see p. 393, n. 8</note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Hl_3.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">19</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Gründe für diese Übersetzung gegen Frühere <hi rend="italic">s. o.</hi> 1⁴, mit dem der Satz in der Formel übereinstimmt</seg><seg type="translation" xml:lang="en" source="#claude">For the reasons for this translation as against earlier ones see above 1⁴, with which the sentence agrees in its formula</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Hl_3.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">19</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Des Gemeinfreien; <hi rend="italic">s. Gl</hi> Wergeld 3a</seg><seg type="translation" xml:lang="en" source="#claude">Of the common freeman; see <hi rend="italic">Gl</hi> Wergeld 3a</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Hl_3.lnote.de.3" n="3" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">19</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Statt des ersten gilt die Preisgebung. Auch Canones Wallici lassen einen zweiten Sklaven zum ausgelieferten Verbrecher hinzufügen; Seebohm <hi rend="italic">Tribal Agsax.</hi> 472</seg><seg type="translation" xml:lang="en" source="#claude">In place of the first, the surrender counts. The Canones Wallici too have a second slave added to the surrendered criminal; Seebohm <hi rend="italic">Tribal Agsax.</hi> 472</seg></note>
+        <note type="editorNote" subtype="translationFootnote" xml:id="Hl_3.olinote.n.c" n="c" source="#oliver"><bibl><biblScope unit="page">127</biblScope></bibl><label>shillings,</label><seg type="original" xml:lang="en">That is, his <hi rend="italic">wergild</hi> is 100 shillings.</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>super</title>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">super</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, <biblScope unit="volume">2.1</biblScope> (Wörterbuch), <biblScope unit="page">204</biblScope>
+            <ptr type="facsimile" target="https://archive.org/details/diegesetzederang02liebuoft/page/204/mode/2up"/>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <revisionDesc>
+      <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry xml:lang="la">
+        <form type="lemma">
+          <orth>super</orth>
+        </form>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">super</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:mitAccusativ"><abbr>m ac</abbr></ref></hi> <hi rend="bold">1</hi>) ~ aliquem interciare (invenire) <hi rend="italic"><ref type="abbreviation" target="gram:gerichtlich"><abbr>gerichtl.</abbr></ref> klagend gegen</hi> (<hi rend="italic">ertappen bei</hi>) <hi rend="italic"><ref type="abbreviation" target="gram:jemand"><abbr>jem.</abbr></ref></hi> <ref type="lawCode" target="law:IICn">II Cn</ref> 24,1 <ref type="lawCode" target="law:Quadr">Q</ref> (<ref type="lawCode" target="law:CHnCor">CHn cor</ref> 14) <hi rend="bold">2</hi>) ~ forisfacturam (witam) <hi rend="italic">unter Drohung <ref type="abbreviation" target="gram:von"><abbr>von</abbr></ref></hi> <ref type="lawCode" target="law:WlArt">Wl art</ref> 10. <ref type="lawCode" target="law:Quadr">Q</ref>: <ref type="lawCode" target="law:IIEg">II Eg</ref> 5. <ref type="lawCode" target="law:IICn">II Cn</ref> 17,1. 80,1 = <ref type="lawCode" target="law:Lond">Lond</ref> <ref type="lawCode" target="law:ECf">ECf</ref> 32 <ref type="lawCode" target="law:B">B</ref> 5 <hi rend="bold">3</hi>) <hi rend="italic">an, auf, teilhaft belastend:</hi> tertius denarius ~ forisfacturam <hi rend="superscript">1</hi>/<hi rend="subscript">3</hi> <hi rend="italic">des Strafertrags</hi> <ref type="lawCode" target="law:Lond">Lond</ref> <ref type="lawCode" target="law:ECf">ECf</ref> 12,10 <ref type="lawCode" target="law:MsA">A</ref> 1</dictScrap>
+        <dictScrap type="senses">
+          <sense n="1">~ aliquem interciare (invenire) <hi rend="italic"><ref type="abbreviation" target="gram:gerichtlich"><abbr>gerichtl.</abbr></ref> klagend gegen</hi> (<hi rend="italic">ertappen bei</hi>) <hi rend="italic"><ref type="abbreviation" target="gram:jemand"><abbr>jem.</abbr></ref></hi> <ref type="lawCode" target="law:IICn">II Cn</ref> 24,1 <ref type="lawCode" target="law:Quadr">Q</ref> (<ref type="lawCode" target="law:CHnCor">CHn cor</ref> 14)</sense>
+          <sense n="2">~ forisfacturam (witam) <hi rend="italic">unter Drohung <ref type="abbreviation" target="gram:von"><abbr>von</abbr></ref></hi> <ref type="lawCode" target="law:WlArt">Wl art</ref> 10. <ref type="lawCode" target="law:Quadr">Q</ref>: <ref type="lawCode" target="law:IIEg">II Eg</ref> 5. <ref type="lawCode" target="law:IICn">II Cn</ref> 17,1. 80,1 = <ref type="lawCode" target="law:Lond">Lond</ref> <ref type="lawCode" target="law:ECf">ECf</ref> 32 <ref type="lawCode" target="law:B">B</ref> 5</sense>
+          <sense n="3"><hi rend="italic">an, auf, teilhaft belastend:</hi> tertius denarius ~ forisfacturam <hi rend="superscript">1</hi>/<hi rend="subscript">3</hi> <hi rend="italic">des Strafertrags</hi> <ref type="lawCode" target="law:Lond">Lond</ref> <ref type="lawCode" target="law:ECf">ECf</ref> 12,10 <ref type="lawCode" target="law:MsA">A</ref> 1</sense>
+        </dictScrap>
+        <xr type="lawCode"><ref target="clause:IICn_24-1">II Cn 24,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:WlArt_10">Wl art 10</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIEg_5">II Eg 5</ref></xr>
+        <xr type="lawCode"><ref target="clause:IICn_17-1">II Cn 17,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IICn_80-1">II Cn 80,1</ref></xr>
+        <xr type="lawCode"><ref target="law:ECf">ECf 32</ref></xr>
+        <xr type="lawCode"><ref target="law:ECf">ECf 12,10</ref></xr>
+      </entry>
+    </body>
+  </text>
+</TEI>

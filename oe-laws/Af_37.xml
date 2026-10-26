@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Af_37">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Af 37</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
+        <respStmt><resp>Cross-references to other clauses</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Cross-references to other clauses</resp><name ref="#wormald-ppmel">Wormald, Papers Preparatory</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Attenborough’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Whitelock’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">Af_37</idno>
+        <idno type="citation">Af 37</idno>
+        <idno type="lawCode">Af</idno>
+        <idno type="lawCodeAnchor">Af</idno>
+        <idno type="clause">37</idno>
+        <idno type="citationKey">Af 37</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Alfred’s Domboc</title> <note type="reign">Alfred, r. 871–899</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">70</biblScope></bibl>
+          <bibl xml:id="jurasinski-and-oliver" type="edition">Stefan Jurasinski and Lisi Oliver, <title>The Laws of Alfred: The Domboc and the Making of Anglo-Saxon Law</title> (Cambridge: Cambridge University Press, 2021), p. <biblScope unit="page">334</biblScope></bibl>
+          <bibl xml:id="attenborough" type="edition">F. L. Attenborough, <title>The Laws of the Earliest English Kings</title> (Cambridge: Cambridge University Press, 1922), p. <biblScope unit="page">80</biblScope></bibl>
+          <bibl xml:id="whitelock" type="translation">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007), p. <biblScope unit="page">415</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="wormald-ppmel" type="study">Patrick Wormald, <title>Papers Preparatory to The Making of English Law: King Alfred to the Twelfth Century, II: From God’s Law to Common Law</title>, ed. Stephen Baxter and John Hudson (London: University of London, 2014)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-e" rend="bold"><abbr>E</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 173 (Parker Chronicle and Laws)</note></witness>
+          <witness xml:id="wit-h"><abbr>H</abbr> <note type="manuscript">Strood, Medway Archive and Local Studies Centre, MS DRc/R1 (Textus Roffensis; formerly Rochester, Cathedral Library, A.3.5), c. 1120–25</note></witness>
+          <witness xml:id="wit-b-no-prol"><abbr>B (no Prol.)</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383</note></witness>
+          <witness xml:id="wit-g-prol-only"><abbr>G (Prol. only)</abbr> <note type="manuscript">London, British Library, Cotton Nero A.i</note></witness>
+          <witness xml:id="wit-q"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note></witness>
+          <witness xml:id="wit-ld"><abbr>Ld</abbr> <note type="manuscript">William Lambarde, Archaionomia (London, 1568) – printed from manuscripts now lost</note></witness>
+          <witness xml:id="wit-bu"><abbr>Bu</abbr></witness>
+          <witness xml:id="wit-ot-frags"><abbr>Ot (frags.)</abbr> <note type="manuscript">London, British Library, Cotton Otho B.xi (damaged by fire, 1731)</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 27">871 (after 890?)–901</date><date source="#whitelock" n="EHD p. 408">885–899</date><date source="#wormald-mel" n="MEL p. 286">after 893</date><note type="promulgation">871 (after 890?)–901 (Liebermann, I p. 27); 885–899 (Whitelock, EHD p. 408); after 893 (Wormald, MEL p. 286)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Service</term><term>Boundaries</term><term>Legal responsibility</term><term>Freedom of movement</term></keywords>
+        <keywords n="people"><term>Ealdormen</term><term>Nobles</term><term>All people</term><term>Secular classes</term><term>Rank</term></keywords>
+        <keywords n="locations"><term>New district</term><term>Old district</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 461 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked and corrected against <title>Die Gesetze der Angelsachsen</title> I, p. 70.</change>
+      <change when="2026-10" type="checked">Liebermann’s text of MS B added from Gesetze I, p. 70.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="37">
+        <head><ref type="lawCode" target="law:Af">Af</ref> 37</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="37" corresp="#wit-e"><pb n="70" ed="#liebermann"/>XXXIIII. Gif mon wille of boldgetale<ptr type="liebermannNote" n="12" target="#Af_37.lnote.oe.12"/> in oðer boldgetæl<ptr type="liebermannNote" n="13" target="#Af_37.lnote.oe.13"/> hlaford secan, do<ptr type="liebermannNote" n="14" target="#Af_37.lnote.oe.14"/> ðæt mid ðæs<ptr type="liebermannNote" n="15" target="#Af_37.lnote.oe.15"/> ealdormonnes<ptr type="liebermannNote" n="16" target="#Af_37.lnote.oe.16"/> gewitnesse, þe he ær in<ptr type="liebermannNote" n="17" target="#Af_37.lnote.oe.17"/> his scire folgode.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="37" corresp="#wit-h"><pb n="70" ed="#liebermann"/>XXXIIII. Gif mon<ptr type="liebermannNote" n="1" target="#Af_37.lnote.oe.1"/> of boldgetale wille<ptr type="liebermannNote" n="5" target="#Af_37.lnote.oe.5"/> in oþer boldgetæl hlaford secan, dó ðæt mid ðæs ealdormonnes<ptr type="liebermannNote" n="6" target="#Af_37.lnote.oe.6"/> gewitnesse, ðe he ǽr on his scire<ptr type="liebermannNote" n="7" target="#Af_37.lnote.oe.7"/> folgode.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="37" corresp="#wit-b-no-prol"><pb n="70" ed="#liebermann"/>Be boldgetale. Gyf mon wylle of boldgetæle in oðer boldgetæl hlaford secan, do þ<hi rend="italic">æt</hi> mid ealdormannes gewitnysse, þe he ær in his scire folgode.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="37" corresp="#wit-q"><pb n="71" ed="#liebermann"/>Si quis ab una mansione in aliam transire uelit, faciat hoc testimonio aldermanni<ptr type="liebermannNote" n="7" target="#Af_37.lnote.oe.7-2"/>, in cuius comitatu prius folgauit.</ab>
+        <ab type="editionText" xml:lang="ang" source="#attenborough" corresp="#wit-e"><pb n="80" ed="#attenborough"/>[Be boldgetale.] Gif mon wille of boldgetale in oðer boldgetæl hlaford secan, do ðæt mid ðæs<ptr type="editorNote" n="9" target="#Af_37.attnote.fn.9"/> ealdormonnes gewitnesse, þe he ær in<ptr type="editorNote" n="10" target="#Af_37.attnote.fn.10"/> his scire folgode.</ab>
+        <ab type="editionText" xml:lang="ang" source="#jurasinski-and-oliver" n="38" corresp="#wit-e"><pb n="334" ed="#jurasinski-and-oliver"/>Gif mon wille of boldgetale in oðer boldgetæl hlaford secan, do ðæt mid ðæs ealdormonnes gewitnesse, þe he ær \in/ his scire folgode.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="71" ed="#liebermann"/>Wenn jemand von einer Hofgemeinde<ptr type="liebermannNote" n="1" target="#Af_37.lnote.de.1"/> fort in eine andere Hofgemeinde [hin sich] einen Herrn suchen will, so thue er das mit Zeugniss jenes Ealdorman<ptr type="liebermannNote" n="2" target="#Af_37.lnote.de.2"/>, welchem er bisher in dessen Grafschaft<ptr type="liebermannNote" n="3" target="#Af_37.lnote.de.3"/> untergeben war.<ptr type="liebermannNote" n="4" target="#Af_37.lnote.de.4"/></ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">If someone wishes to seek [himself] a lord away from one lordship-community into another, let him do so with the witness of that ealdorman to whom he was hitherto subject in his shire.</ab>
+        <ab type="translation" xml:lang="en" source="#attenborough" corresp="#wit-e"><pb n="81" ed="#attenborough"/>If a man wishes [to go] from one district<ptr type="editorNote" n="1" target="#Af_37.attnote.n.1"/>, to seek service<ptr type="editorNote" n="2" target="#Af_37.attnote.n.2"/> in another, he shall do it with the cognisance of the <hi rend="italic">ealdorman</hi>, to whose jurisdiction he has previously been subject.</ab>
+        <ab type="translation" xml:lang="en" source="#whitelock"><pb n="415" ed="#whitelock"/>If anyone from one district<ptr type="editorNote" n="3" target="#Af_37.whinote.n.3"/> wishes to seek a lord in another district, he is to do so with the witness of the ealdorman, in whose shire he previously served.</ab>
+        <ab type="translation" xml:lang="en" source="#jurasinski-and-oliver" corresp="#wit-e"><pb n="335" ed="#jurasinski-and-oliver"/>If someone wishes [to leave] from his district to seek a lord in another district, let him do so with the knowledge of the ealdorman, to whom he was subject before in his shire.</ab>
+        <note type="comparison" source="#wormald-mel" n="274"><label>modifies</label> <ref target="clause:Ine_39">Ine 39</ref> <quote>Alfred's law modified one of Ine where the word used had been scir (n. 35: Af 37, cf. Ine 39)</quote></note>
+        <note type="comparison" source="#wormald-mel" n="280"><label>revises</label> <ref target="clause:Ine_39">Ine 39</ref> <quote>When comparing his and Ine's laws on changing lords ... the sum payable was doubled (n. 81: Af 37 – 37:2; Ine 39)</quote></note>
+        <note type="comparison" source="#wormald-ppmel" n="193"><label>based on</label> <ref target="clause:Ine_39">Ine 39</ref> <quote>Alfred's law is clearly based on Ine's, yet Alfred has to find another word, boldgetal, for Ine's scir</quote></note>
+        <note type="comparison" source="#jurasinski-and-oliver" n="335"><label>see also</label> <ref target="clause:Af_1">Af 1</ref> <quote>Compare Ine §40. See also §1 and n. 14.</quote></note>
+        <note type="comparison" source="#jurasinski-and-oliver" n="335"><label>compare</label> <ref target="clause:Ine_39">Ine 39</ref> <quote>Compare Ine §40.</quote></note>
+        <note type="comparison" source="#jurasinski-and-oliver" n="405"><label>doubles the fine</label> <ref target="clause:Ine_39">Ine 39</ref> <quote>Alfred §38 doubles the fine.</quote></note>
+        <note type="comparedBy" source="#wormald-mel" n="268"><ref target="clause:IIEw_7">II Ew 7</ref></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_37.lnote.oe.12" n="12" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">70</biblScope></bibl><seg type="original" xml:lang="de">-tæle <hi rend="italic">So Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">-tæle So Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_37.lnote.oe.13" n="13" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">70</biblScope></bibl><seg type="original" xml:lang="de">-le <hi rend="italic">So Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">-le So Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_37.lnote.oe.14" n="14" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">70</biblScope></bibl><seg type="original" xml:lang="de">dó <hi rend="italic">So</hi></seg><seg type="translation" xml:lang="en" source="#claude">dó So</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_37.lnote.oe.15" n="15" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">70</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_37.lnote.oe.16" n="16" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">70</biblScope></bibl><seg type="original" xml:lang="de">aldorman. <hi rend="italic">So;</hi> -mannes gewitnysse <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">aldorman. So; -mannes gewitnysse Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_37.lnote.oe.17" n="17" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">70</biblScope></bibl><seg type="original" xml:lang="de">on <hi rend="italic">Ld; vom Schreiber übergeschr. E</hi></seg><seg type="translation" xml:lang="en" source="#claude">on Ld; written above by the scribe in E</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_37.lnote.oe.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">70</biblScope></bibl><seg type="original" xml:lang="de">o <hi rend="italic">geänd. in</hi> a</seg><seg type="translation" xml:lang="en" source="#claude">o altered to a</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_37.lnote.oe.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">70</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">erstes</hi> l <hi rend="italic">übergeschr.</hi></seg><seg type="translation" xml:lang="en" source="#claude">first l written above</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_37.lnote.oe.6" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">70</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">geändert in</hi> ealderman.</seg><seg type="translation" xml:lang="en" source="#claude">altered to ealderman.</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_37.lnote.oe.7" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">70</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">auf Rasur</hi></seg><seg type="translation" xml:lang="en" source="#claude">on an erasure</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_37.lnote.oe.7-2" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">71</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">so Lond;</hi> aldrem. <hi rend="italic">übrige</hi></seg><seg type="translation" xml:lang="en" source="#claude">thus Lond; aldrem. the others</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Af_37.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">58</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Bessere Übs.: ‘Wenn jemand von einer Grafschaft fort in andere Grafschaft’; <hi rend="italic">s. d. Gl</hi> 1b. 11—12. 18a. Q übertrug nur erste Hälfte des Wortes <hi rend="italic">boldgetæl,</hi> die ‘Herrschaftsgut, <hi rend="italic">manerium</hi>’ bedeuten kann [so in Engl. Ortsnamen; nddt. <hi rend="italic">büttel</hi> ‘Dorf’; Jellinghaus in <hi rend="italic">Anglia</hi> 20, 270]. Ich ziehe den Einfall im <hi rend="italic">Wb,</hi> es liege hier eine Vorstufe des Hundred vor, ausdrücklich zurück. ‘Haus, Wohnung’ übs. Jacobs <hi rend="italic">Namen der Gebäude</hi> (<hi rend="italic">Diss. Kiel</hi>) 71 falsch</seg><seg type="translation" xml:lang="en" source="#claude">Better translation: ‘If anyone from one shire away into another shire’; <hi rend="italic">see</hi> that word in <hi rend="italic">Gl</hi> 1b. 11—12. 18a. Q rendered only the first half of the word <hi rend="italic">boldgetæl,</hi> which can mean ‘lordship estate, <hi rend="italic">manerium</hi>’ [so in English place-names; Low German <hi rend="italic">büttel</hi> ‘village’; Jellinghaus in <hi rend="italic">Anglia</hi> 20, 270]. I expressly withdraw the suggestion in the <hi rend="italic">Wb</hi> that we have here a precursor of the hundred. Jacobs <hi rend="italic">Namen der Gebäude</hi> (<hi rend="italic">Diss. Kiel</hi>) 71 wrongly translates ‘house, dwelling’</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Af_37.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">58</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Lies ‘Ealdorman, in dessen Grafschaft er bisher Vassall gewesen ist’; <hi rend="italic">vgl. Wb:</hi> Relativum D</seg><seg type="translation" xml:lang="en" source="#claude">Read ‘ealdorman in whose shire he has hitherto been a vassal’; <hi rend="italic">cf. Wb:</hi> Relativum D</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Af_37.lnote.de.3" n="3" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">58</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">V As 1, 1 erfordert Zeugnis (‘behördliche Aufsicht’ wie <hi rend="italic">o.</hi> 34⁸) des Gerichts zur Herrensuche; <hi rend="italic">s. d. Gl</hi> 3. 7</seg><seg type="translation" xml:lang="en" source="#claude">V As 1, 1 requires the witness (‘official supervision’, as <hi rend="italic">above</hi> 34⁸) of the court for seeking a lord; <hi rend="italic">see</hi> that word in <hi rend="italic">Gl</hi> 3. 7</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Af_37.lnote.de.4" n="4" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">58</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Gefolge 8c. 26; Freizügigkeit 1. Gegenüber Ine 39 büsst bei Af nicht der abziehende Mann, sondern der aufnehmende Herr, empfängt diese Busse und gibt den Urlaub nicht der frühere Herr, sondern der Staat, und ist das Strafgeld vervielfacht: die Vassallität ist in zwei Jahrhunderten von einer mehr privaten zur politischen Einrichtung geworden. Q stellt sich alles Abwandern Abhängiger gemäss dem Zustande in Normannenzeit vor als Übertritt von einem Herrschaftsgut ins andere</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf. Gl</hi> Gefolge 8c. 26; Freizügigkeit 1. As against Ine 39, in Af it is not the departing man who pays compensation but the lord who receives him; it is not the former lord but the state that receives this compensation and grants leave; and the fine is multiplied: in two centuries vassalage has changed from a more private into a political institution. Q imagines all departure of dependants, in accordance with conditions in the Norman period, as a transfer from one lordship estate to another</seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="Af_37.attnote.fn.9" n="9" source="#attenborough"><bibl><biblScope unit="page">80</biblScope></bibl><label>ðæs</label><seg type="original" xml:lang="en">om. B.</seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="Af_37.attnote.fn.10" n="10" source="#attenborough"><bibl><biblScope unit="page">80</biblScope></bibl><label>in</label><seg type="original" xml:lang="en"><hi rend="italic">on</hi>. H.</seg></note>
+        <note type="editorNote" subtype="endnote" xml:id="Af_37.attnote.n.1" n="1" source="#attenborough"><bibl><biblScope unit="page">197</biblScope></bibl><seg type="original" xml:lang="en">Lit. ‘collection of habitations.’ Liebermann (<hi rend="smallcaps">iii</hi>. 58) understands <hi rend="italic">boldgetæl</hi> to mean ‘county.’ In Alfred’s time each county had an <hi rend="italic">ealdorman</hi> of its own. The word <hi rend="italic">ealdorman</hi> (like <hi rend="italic">scir</hi>) is sometimes used in a more general sense, but it is rather difficult to believe that Alfred would use the word in his laws, otherwise than in its technical meaning.</seg></note>
+        <note type="editorNote" subtype="endnote" xml:id="Af_37.attnote.n.2" n="2" source="#attenborough"><bibl><biblScope unit="page">198</biblScope></bibl><seg type="original" xml:lang="en">Lit. ‘a lord.’</seg></note>
+        <note type="editorNote" subtype="translationFootnote" xml:id="Af_37.whinote.n.3" n="3" source="#whitelock"><bibl><biblScope unit="page">415</biblScope></bibl><label>district</label><seg type="original" xml:lang="en"><hi rend="italic">boldgetale,</hi> literally “a number of houses”. Bishop Wasrferth uses it several times to translate <hi rend="italic">provincia</hi>.</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

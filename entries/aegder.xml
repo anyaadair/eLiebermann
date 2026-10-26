@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ægðer</title>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">aegder</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, <biblScope unit="volume">2.1</biblScope> (Wörterbuch), <biblScope unit="page">5</biblScope>
+            <ptr type="facsimile" target="https://archive.org/details/diegesetzederang02liebuoft/page/5/mode/2up"/>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <revisionDesc>
+      <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
+      <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
+      <change when="2026-10-19">“Für”, “nt”, “sbst”, “Fem.” and “Masc.” linked to the abbreviations list.</change>
+      <change when="2026-10-19">“bez.” (bezüglich) linked to the abbreviations list.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry xml:lang="ang">
+        <form type="lemma">
+          <orth>ægðer</orth>
+        </form>
+        <dictScrap type="liebermann"><hi rend="bold">ægðer</hi> <hi rend="bold">1</hi>) <hi rend="italic">jeder von beiden</hi> <hi rend="bold">a</hi>) <hi rend="italic"><ref type="abbreviation" target="gram:Substantiv"><abbr>subst</abbr></ref>:</hi> <ref type="lawCode" target="law:AGu">AGu</ref> 2 <hi rend="bold">b</hi>) <hi rend="italic"><ref type="abbreviation" target="gram:adjektiv"><abbr>adj</abbr></ref> <ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>:</hi> ~ðrum <ref type="lawCode" target="law:Af">Af</ref> 61,1 <ref type="lawCode" target="law:H">H</ref>; ~ðran <ref type="lawCode" target="law:B">B</ref> | <hi rend="italic"><ref type="abbreviation" target="gram:femininum"><abbr>fm</abbr></ref> <ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>:</hi> of ægðre healfe <hi rend="italic">von beiden Seiten, jeder Partei</hi> <ref type="lawCode" target="law:Ordal">Ordal</ref> 3. 4; of ~ere mægðe <ref type="lawCode" target="law:Wer">Wer</ref> 4; on ~ere sceale <pb n="6"/><ref type="lawCode" target="law:Iudex">Iudex</ref> 1; <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>:</hi> on ~ra [~re <ref type="lawCode" target="law:H">H</ref>] hond <hi rend="italic">beiderseits</hi> <ref type="lawCode" target="law:IIAs">II As</ref> 23,2 | <hi rend="bold"><hi rend="italic"><ref type="abbreviation" target="gram:neutrum"><abbr>nt</abbr></ref></hi></hi> <hi rend="italic"><ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>:</hi> of ægðran stæðe <ref type="lawCode" target="law:Duns">Duns</ref> 2,2 ‖ <hi rend="italic"><ref type="abbreviation" target="gram:neutrum"><abbr>nt</abbr></ref></hi> <hi rend="bold"><hi rend="italic"><ref type="abbreviation" target="gram:Substantiv"><abbr>sbst</abbr></ref></hi></hi> <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>:</hi> ~ <hi rend="italic">beides, <ref type="abbreviation" target="gram:bezuglich"><abbr>bez.</abbr></ref> <ref type="abbreviation" target="gram:auf"><abbr>auf</abbr></ref> 2 <ref type="abbreviation" target="gram:femininum"><abbr>Fem.</abbr></ref> <ref type="abbreviation" target="gram:und"><abbr>u.</abbr></ref> 2 <ref type="abbreviation" target="gram:masculin"><abbr>Masc.</abbr></ref>,</hi> <ref type="lawCode" target="law:IICn">II Cn</ref> 30,4. — <hi rend="italic"><ref type="abbreviation" target="gram:fur"><abbr>Für</abbr></ref></hi> gehwæðer <ref type="lawCode" target="law:Af">Af</ref> 61,1 <ref type="lawCode" target="law:H">H</ref> <ref type="lawCode" target="law:B">B</ref>. <hi rend="bold">2</hi>) ~ ge .. ge (<hi rend="italic">dreimal</hi> ge <ref type="lawCode" target="law:IVEg">IV Eg</ref> 2,2) <hi rend="italic">beides, nämlich sowohl .. <ref type="abbreviation" target="gram:alsAuch"><abbr>als auch</abbr></ref></hi> (<hi rend="italic">wie</hi>) <hi rend="bold">a</hi>) <hi rend="italic"><ref type="abbreviation" target="gram:flectiert"><abbr>flectirt</abbr></ref> <ref type="abbreviation" target="gram:Genitiv"><abbr>gn</abbr></ref>:</hi> þolige ægðres ge .. ge (<hi rend="italic"><ref type="abbreviation" target="gram:also"><abbr>also</abbr></ref> <ref type="abbreviation" target="gram:als"><abbr>als</abbr></ref></hi> utriusque <hi rend="italic">empfunden</hi>) <ref type="lawCode" target="law:VIIIAtr">VIII Atr</ref> 26 <hi rend="bold">b</hi>) <hi rend="italic">unflectirt, <ref type="abbreviation" target="gram:Partikel"><abbr>Partikel</abbr></ref></hi> [<hi rend="italic"><ref type="abbreviation" target="gram:Form"><abbr>Form</abbr></ref>:</hi> ægðær <ref type="lawCode" target="law:Swer">Swer</ref> 9 <ref type="lawCode" target="law:B">B</ref>. <ref type="lawCode" target="law:Ger">Ger</ref> 1; æðer <ref type="lawCode" target="law:IICn">II Cn</ref> 68,1c <ref type="lawCode" target="law:B">B</ref>; <hi rend="italic"><ref type="abbreviation" target="gram:sonst"><abbr>sonst</abbr></ref> <ref type="abbreviation" target="gram:stets"><abbr>stets</abbr></ref></hi> ~] (~ ge dæde ge dihtes <ref type="lawCode" target="law:Swer">Swer</ref> 5) <ref type="lawCode" target="law:IIEw">II Ew</ref> 1,1. <ref type="lawCode" target="law:IAs">I As</ref> Pro. 5. <ref type="lawCode" target="law:IEm">I Em</ref> Pro. <ref type="lawCode" target="law:IIEg">II Eg</ref> 1,1. <ref type="lawCode" target="law:IVEg">IV</ref> 15,1. <ref type="lawCode" target="law:VIIIAtr">VIII Atr</ref> 3. 27. <ref type="lawCode" target="law:Northu">Northu</ref> 45. — <hi rend="italic">Getrennt</hi> ~ <hi rend="italic">vom ersten</hi> ge <ref type="lawCode" target="law:IIIEg">III Eg</ref> 8,3. 5,2 = <ref type="lawCode" target="law:IICn">II Cn</ref> 18,1. 68,1c. <ref type="lawCode" target="law:Ger">Ger</ref> 1. <ref type="lawCode" target="law:Swer">Swer</ref> 9</dictScrap>
+        <dictScrap type="senses">
+          <sense n="1"><hi rend="italic">jeder von beiden</hi> <hi rend="bold">a</hi>) <hi rend="italic"><ref type="abbreviation" target="gram:Substantiv"><abbr>subst</abbr></ref>:</hi> <ref type="lawCode" target="law:AGu">AGu</ref> 2 <hi rend="bold">b</hi>) <hi rend="italic"><ref type="abbreviation" target="gram:adjektiv"><abbr>adj</abbr></ref> <ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>:</hi> ~ðrum <ref type="lawCode" target="law:Af">Af</ref> 61,1 <ref type="lawCode" target="law:H">H</ref>; ~ðran <ref type="lawCode" target="law:B">B</ref> | <hi rend="italic"><ref type="abbreviation" target="gram:femininum"><abbr>fm</abbr></ref> <ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>:</hi> of ægðre healfe <hi rend="italic">von beiden Seiten, jeder Partei</hi> <ref type="lawCode" target="law:Ordal">Ordal</ref> 3. 4; of ~ere mægðe <ref type="lawCode" target="law:Wer">Wer</ref> 4; on ~ere sceale <pb n="6"/><ref type="lawCode" target="law:Iudex">Iudex</ref> 1; <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>:</hi> on ~ra [~re <ref type="lawCode" target="law:H">H</ref>] hond <hi rend="italic">beiderseits</hi> <ref type="lawCode" target="law:IIAs">II As</ref> 23,2 | <hi rend="bold"><hi rend="italic"><ref type="abbreviation" target="gram:neutrum"><abbr>nt</abbr></ref></hi></hi> <hi rend="italic"><ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>:</hi> of ægðran stæðe <ref type="lawCode" target="law:Duns">Duns</ref> 2,2 ‖ <hi rend="italic"><ref type="abbreviation" target="gram:neutrum"><abbr>nt</abbr></ref></hi> <hi rend="bold"><hi rend="italic"><ref type="abbreviation" target="gram:Substantiv"><abbr>sbst</abbr></ref></hi></hi> <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>:</hi> ~ <hi rend="italic">beides, <ref type="abbreviation" target="gram:bezuglich"><abbr>bez.</abbr></ref> <ref type="abbreviation" target="gram:auf"><abbr>auf</abbr></ref> 2 <ref type="abbreviation" target="gram:femininum"><abbr>Fem.</abbr></ref> <ref type="abbreviation" target="gram:und"><abbr>u.</abbr></ref> 2 <ref type="abbreviation" target="gram:masculin"><abbr>Masc.</abbr></ref>,</hi> <ref type="lawCode" target="law:IICn">II Cn</ref> 30,4. — <hi rend="italic"><ref type="abbreviation" target="gram:fur"><abbr>Für</abbr></ref></hi> gehwæðer <ref type="lawCode" target="law:Af">Af</ref> 61,1 <ref type="lawCode" target="law:H">H</ref> <ref type="lawCode" target="law:B">B</ref>.</sense>
+          <sense n="2">~ ge .. ge (<hi rend="italic">dreimal</hi> ge <ref type="lawCode" target="law:IVEg">IV Eg</ref> 2,2) <hi rend="italic">beides, nämlich sowohl .. <ref type="abbreviation" target="gram:alsAuch"><abbr>als auch</abbr></ref></hi> (<hi rend="italic">wie</hi>) <hi rend="bold">a</hi>) <hi rend="italic"><ref type="abbreviation" target="gram:flectiert"><abbr>flectirt</abbr></ref> <ref type="abbreviation" target="gram:Genitiv"><abbr>gn</abbr></ref>:</hi> þolige ægðres ge .. ge (<hi rend="italic"><ref type="abbreviation" target="gram:also"><abbr>also</abbr></ref> <ref type="abbreviation" target="gram:als"><abbr>als</abbr></ref></hi> utriusque <hi rend="italic">empfunden</hi>) <ref type="lawCode" target="law:VIIIAtr">VIII Atr</ref> 26 <hi rend="bold">b</hi>) <hi rend="italic">unflectirt, <ref type="abbreviation" target="gram:Partikel"><abbr>Partikel</abbr></ref></hi> [<hi rend="italic"><ref type="abbreviation" target="gram:Form"><abbr>Form</abbr></ref>:</hi> ægðær <ref type="lawCode" target="law:Swer">Swer</ref> 9 <ref type="lawCode" target="law:B">B</ref>. <ref type="lawCode" target="law:Ger">Ger</ref> 1; æðer <ref type="lawCode" target="law:IICn">II Cn</ref> 68,1c <ref type="lawCode" target="law:B">B</ref>; <hi rend="italic"><ref type="abbreviation" target="gram:sonst"><abbr>sonst</abbr></ref> <ref type="abbreviation" target="gram:stets"><abbr>stets</abbr></ref></hi> ~] (~ ge dæde ge dihtes <ref type="lawCode" target="law:Swer">Swer</ref> 5) <ref type="lawCode" target="law:IIEw">II Ew</ref> 1,1. <ref type="lawCode" target="law:IAs">I As</ref> Pro. 5. <ref type="lawCode" target="law:IEm">I Em</ref> Pro. <ref type="lawCode" target="law:IIEg">II Eg</ref> 1,1. <ref type="lawCode" target="law:IVEg">IV</ref> 15,1. <ref type="lawCode" target="law:VIIIAtr">VIII Atr</ref> 3. 27. <ref type="lawCode" target="law:Northu">Northu</ref> 45. — <hi rend="italic">Getrennt</hi> ~ <hi rend="italic">vom ersten</hi> ge <ref type="lawCode" target="law:IIIEg">III Eg</ref> 8,3. 5,2 = <ref type="lawCode" target="law:IICn">II Cn</ref> 18,1. 68,1c. <ref type="lawCode" target="law:Ger">Ger</ref> 1. <ref type="lawCode" target="law:Swer">Swer</ref> 9</sense>
+        </dictScrap>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/538">ǽg-ðer</ref></xr>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/37742">ǽg-þer (Supplement)</ref></xr>
+        <xr type="lawCode"><ref target="clause:AGu_2">AGu 2</ref></xr>
+        <xr type="lawCode"><ref target="clause:Af_61-1">Af 61,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:Ordal_3">Ordal 3</ref></xr>
+        <xr type="lawCode"><ref target="clause:Ordal_4">Ordal 4</ref></xr>
+        <xr type="lawCode"><ref target="clause:Wer_4">Wer 4</ref></xr>
+        <xr type="lawCode"><ref target="law:Iudex">Iudex 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIAs_23-2">II As 23,2</ref></xr>
+        <xr type="lawCode"><ref target="clause:Duns_2-2">Duns 2,2</ref></xr>
+        <xr type="lawCode"><ref target="clause:IICn_30-4">II Cn 30,4</ref></xr>
+        <xr type="lawCode"><ref target="clause:IVEg_2-2">IV Eg 2,2</ref></xr>
+        <xr type="lawCode"><ref target="clause:VIIIAtr_26">VIII Atr 26</ref></xr>
+        <xr type="lawCode"><ref target="clause:Swer_9">Swer 9</ref></xr>
+        <xr type="lawCode"><ref target="clause:Ger_1">Ger 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IICn_68-1c">II Cn 68,1c</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIEw_1-1">II Ew 1,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IAs_Prol">I As Pro</ref></xr>
+        <xr type="lawCode"><ref target="clause:IAs_5">I As 5</ref></xr>
+        <xr type="lawCode"><ref target="clause:IEm_Prolog">I Em Pro</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIEg_1-1">II Eg 1,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IVEg_15-1">IV Eg 15,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:VIIIAtr_3">VIII Atr 3</ref></xr>
+        <xr type="lawCode"><ref target="clause:VIIIAtr_27">VIII Atr 27</ref></xr>
+        <xr type="lawCode"><ref target="clause:Northu_45">Northu 45</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIIEg_8-3">III Eg 8,3</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIIEg_5-2">III Eg 5,2</ref></xr>
+        <xr type="lawCode"><ref target="clause:IICn_18-1">II Cn 18,1</ref></xr>
+      </entry>
+    </body>
+  </text>
+</TEI>

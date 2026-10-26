@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="VIAtr_43-1">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>VI Atr 43.1</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">VIAtr_43-1</idno>
+        <idno type="citation">VI Atr 43.1</idno>
+        <idno type="lawCode">VI Atr</idno>
+        <idno type="lawCodeAnchor">VIAtr</idno>
+        <idno type="clause">43.1</idno>
+        <idno type="citationKey">VIAtr 43.1</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>VI Æthelred (Enham)</title> <note type="reign">Æthelred II, r. 978–1016</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">258</biblScope></bibl>
+          <bibl xml:id="robertson" type="edition">A. J. Robertson, <title>The Laws of the Kings of England from Edmund to Henry I</title> (Cambridge: Cambridge University Press, 1925), p. <biblScope unit="page">104</biblScope></bibl>
+          <bibl xml:id="rabin-doml" type="edition">Andrew Rabin, ed. and trans., <title>Old English Legal Writings: Wulfstan</title>, Dumbarton Oaks Medieval Library (Cambridge, MA: Harvard University Press, 2020), p. <biblScope unit="page">176</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-k" rend="bold"><abbr>K</abbr> <note type="manuscript">London, British Library, Cotton Claudius A.iii</note></witness>
+          <witness xml:id="wit-d-incomplete"><abbr>D (incomplete)</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 201</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 246">16 May 1008–13 May 1011</date><date source="#robertson #wormald-mel" n="|MEL pp. 332–5">1008</date><placeName>Enham</placeName><note type="promulgation">16 May 1008–13 May 1011 (Liebermann, I p. 246); 1008 (Robertson; Wormald, MEL pp. 332–5); Enham</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Church dues</term><term>Taxes</term><term>Ecclesiastical directives</term><term>Fasts</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 1294 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 258.</change>
+      <change when="2026-10" type="checked">Liebermann’s text of MS K added from Gesetze I, p. 258.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="43.1">
+        <head><ref type="lawCode" target="law:VIAtr">VI Atr</ref> 43.1</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="43.1" corresp="#wit-k"><pb n="258" ed="#liebermann"/>⁊ freolsa ⁊ fæstena rihtlice healdan.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="43.1" corresp="#wit-d-incomplete"><pb n="258" ed="#liebermann"/>⁊ freolsa ⁊ fæstena rihtlice healdan.</ab>
+        <ab type="editionText" xml:lang="ang" source="#robertson" n="43[b]" corresp="#wit-k"><pb n="104" ed="#robertson"/>⁊ freolsa ⁊ fæstena rihtlice healdan.</ab>
+        <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-k"><pb n="176" ed="#rabin-doml"/>and freolsa and fæstena rihtlice healdan.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="259" ed="#liebermann"/>und Feiertage und Fasten richtig halten.</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">and keep feasts and fasts rightly.</ab>
+        <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-k"><pb n="105" ed="#robertson"/>and duly observe festivals and fasts.</ab>
+        <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-k"><pb n="177" ed="#rabin-doml"/>and feasts and fasts properly kept.</ab>
+        <note type="comparison" source="#liebermann" n="259"><ref target="clause:VIAtr_22">VI Atr 22</ref></note>
+        <note type="comparisonPrinted" source="#liebermann">ebd. 22</note>
+      </div>
+    </body>
+  </text>
+</TEI>

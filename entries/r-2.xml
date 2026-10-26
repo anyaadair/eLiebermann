@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>-r-</title>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">r-2</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, <biblScope unit="volume">2.1</biblScope> (Wörterbuch), <biblScope unit="page">180</biblScope>
+            <ptr type="facsimile" target="https://archive.org/details/diegesetzederang02liebuoft/page/180/mode/2up"/>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="bib" matchPattern="(.+)" replacementPattern="bibAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <revisionDesc>
+      <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-10-17">Marked as a spelling entry.</change>
+      <change when="2026-10-17">“statt”, “regiert (von)”, “unsyntakt.” and the Accusativ terms linked to the abbreviations list.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry xml:lang="fro">
+        <form type="lemma">
+          <orth>-r-</orth>
+        </form>
+        <usg type="dom">spelling</usg>
+        <dictScrap type="liebermann"><lbl type="language">F</lbl> <hi rend="bold">-r-</hi> <hi rend="bold">1</hi>) <hi rend="italic"><ref type="abbreviation" target="gram:statt"><abbr>statt</abbr></ref></hi> -rr-: <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> duner, jurer, larecin, larun, quere, tere, traire <hi rend="bold">2</hi>) <hi rend="italic"><ref type="abbreviation" target="gram:geschwunden"><abbr>geschwu.</abbr></ref>:</hi> don[r]at <ref type="lawCode" target="law:WlArtFz">Wl art Fz</ref> 6,2 [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>. </hi><ref type="bibl" target="bib:CitStimmingBoeve"><hi rend="italic">Stimming</hi> Anglonorm. Boeve <hi rend="italic">S.</hi> 214 f.</ref>]; murd[r]e 4</dictScrap>
+        <dictScrap type="senses">
+          <sense n="1"><hi rend="italic"><ref type="abbreviation" target="gram:statt"><abbr>statt</abbr></ref></hi> -rr-: <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> duner, jurer, larecin, larun, quere, tere, traire</sense>
+          <sense n="2"><hi rend="italic"><ref type="abbreviation" target="gram:geschwunden"><abbr>geschwu.</abbr></ref>:</hi> don[r]at <ref type="lawCode" target="law:WlArtFz">Wl art Fz</ref> 6,2 [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>. </hi><ref type="bibl" target="bib:CitStimmingBoeve"><hi rend="italic">Stimming</hi> Anglonorm. Boeve <hi rend="italic">S.</hi> 214 f.</ref>]; murd[r]e 4</sense>
+        </dictScrap>
+        <xr type="see"><ref target="entry:duner">duner</ref></xr>
+        <xr type="see"><ref target="entry:jurer">jurer</ref></xr>
+        <xr type="see"><ref target="entry:larecin">larecin</ref></xr>
+        <xr type="see"><ref target="entry:larun">larun</ref></xr>
+        <xr type="see"><ref target="entry:tere">tere</ref></xr>
+        <xr type="see"><ref target="entry:trai-re">trai[re]</ref></xr>
+        <xr type="lawCode"><ref target="law:WlArtFz">Wl art Fz 6,2</ref></xr>
+      </entry>
+    </body>
+  </text>
+</TEI>

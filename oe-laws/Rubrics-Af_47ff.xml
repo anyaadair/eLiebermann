@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Rubrics-Af_47ff">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Af Rb 47ff</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">Rubrics-Af_47ff</idno>
+        <idno type="citation">Af Rb 47ff</idno>
+        <idno type="lawCode">Af Rb</idno>
+        <idno type="clause">47ff</idno>
+        <idno type="citationKey">Af Rb 47ff</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Rubrics to Alfred’s Domboc</title> <note type="reign">Alfred, r. 871–899</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">20</biblScope></bibl>
+          <bibl xml:id="jurasinski-and-oliver" type="edition">Stefan Jurasinski and Lisi Oliver, <title>The Laws of Alfred: The Domboc and the Making of Anglo-Saxon Law</title> (Cambridge: Cambridge University Press, 2021), p. <biblScope unit="page">198</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-e" rend="bold"><abbr>E</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 173 (Parker Chronicle and Laws)</note></witness>
+          <witness xml:id="wit-h"><abbr>H</abbr> <note type="manuscript">Strood, Medway Archive and Local Studies Centre, MS DRc/R1 (Textus Roffensis; formerly Rochester, Cathedral Library, A.3.5), c. 1120–25</note></witness>
+          <witness xml:id="wit-q"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note></witness>
+          <witness xml:id="wit-g-prol"><abbr>G (Prol.)</abbr> <note type="manuscript">London, British Library, Cotton Nero A.i</note></witness>
+          <witness xml:id="wit-b"><abbr>B</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383</note></witness>
+          <witness xml:id="wit-ot-frag"><abbr>Ot (frag.)</abbr> <note type="manuscript">London, British Library, Cotton Otho B.xi (damaged by fire, 1731)</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 16">c.890–c.940</date><note type="promulgation">c.890–c.940 (Liebermann, I p. 16)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Personal injury</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 238 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked and corrected against <title>Die Gesetze der Angelsachsen</title> I, p. 20.</change>
+      <change when="2026-10" type="checked">Liebermann’s text of MS Ot added from Gesetze I, p. 20.</change>
+      <change when="2026-10" type="checked">Liebermann’s text of MS G added from Gesetze I, p. 20.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="47ff">
+        <head>Af Rb 47ff</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="47ff" corresp="#wit-e"><pb n="20" ed="#liebermann"/>XLIII. Be monnes eagwunde ⁊ oðerra missenlicra lima.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="47ff" corresp="#wit-ot-frag"><pb n="20" ed="#liebermann"/>… nnes eagwunde ⁊ oððerra missen …</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="47ff" corresp="#wit-g-prol"><pb n="20" ed="#liebermann"/>XLIII. Be mannes eagwunde ⁊ oðra mislicra lima.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="47ff" corresp="#wit-h"><pb n="21" ed="#liebermann"/>XLIII. Be monnes<ptr type="liebermannNote" n="2" target="#Rubrics-Af_47ff.lnote.oe.2"/> eagwunde<ptr type="liebermannNote" n="3" target="#Rubrics-Af_47ff.lnote.oe.3"/> ⁊ oðre<ptr type="liebermannNote" n="4" target="#Rubrics-Af_47ff.lnote.oe.4"/> mislicra<ptr type="liebermannNote" n="5" target="#Rubrics-Af_47ff.lnote.oe.5"/> lima.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="47ff" corresp="#wit-q"><pb n="21" ed="#liebermann"/>De oculo<ptr type="liebermannNote" n="7" target="#Rubrics-Af_47ff.lnote.oe.7"/> et multorum plagis membrorum.</ab>
+        <ab type="editionText" xml:lang="ang" source="#jurasinski-and-oliver" corresp="#wit-e"><pb n="198" ed="#jurasinski-and-oliver"/>XLIII Be monnes eagwunde oðerra missenlicra lima</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="21" ed="#liebermann"/>Über Verwundung von jemandes Auge und anderen<ptr type="liebermannNote" n="1" target="#Rubrics-Af_47ff.lnote.de.1"/> verschiedenen Gliedern.</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">Concerning the wounding of a person’s eye and of other various limbs.</ab>
+        <ab type="translation" xml:lang="en" source="#jurasinski-and-oliver" corresp="#wit-e"><pb n="199" ed="#jurasinski-and-oliver"/>Concerning a person’s eye-wound and other various limbs</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="Rubrics-Af_47ff.lnote.oe.7" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">21</biblScope></bibl><seg type="original" xml:lang="de">oculorum <hi rend="italic">T</hi></seg><seg type="translation" xml:lang="en" source="#claude">oculorum T</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Rubrics-Af_47ff.lnote.oe.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">21</biblScope></bibl><seg type="original" xml:lang="de">o <hi rend="italic">geänd. in</hi> a</seg><seg type="translation" xml:lang="en" source="#claude">o altered to a</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Rubrics-Af_47ff.lnote.oe.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">21</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">geänd.</hi> eagena wunde</seg><seg type="translation" xml:lang="en" source="#claude">altered eagena wunde</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Rubrics-Af_47ff.lnote.oe.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">21</biblScope></bibl><seg type="original" xml:lang="de">re <hi rend="italic">auf Rasur</hi></seg><seg type="translation" xml:lang="en" source="#claude">re on an erasure</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Rubrics-Af_47ff.lnote.oe.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">21</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">geänd.</hi> mistl.</seg><seg type="translation" xml:lang="en" source="#claude">altered mistl.</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Rubrics-Af_47ff.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">41</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Der Gen. des Originals hängt von <hi rend="italic">wunde</hi> ab; <hi rend="italic">vgl.</hi> Wülfing <hi rend="italic">Syntax</hi> I 52</seg><seg type="translation" xml:lang="en" source="#claude">The genitive of the original depends on <hi rend="italic">wunde</hi>; <hi rend="italic">cf.</hi> Wülfing <hi rend="italic">Syntax</hi> I 52</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

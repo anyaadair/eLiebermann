@@ -1,0 +1,118 @@
+{%- assign root = page.root | default: "" -%}
+{%- comment -%}
+  The whole site is eLiebermann. Each section has its own logo: Laws
+  "lawcodes database", Guides "guide to the Gesetze", Dictionary
+  "legal dictionary"; Home, Editorial Principles, About and Make a suggestion show the name
+  alone.
+{%- endcomment -%}
+{%- assign brand = "eLiebermann" -%}
+{%- if page.section == "home" -%}
+{%- assign tagline = "A Database of Early English Laws and Legal Language, after Felix Liebermann" -%}
+{%- elsif page.section == "about" or page.section == "contribute" or page.section == "editorial" -%}
+{%- assign tagline = "A Database of Early English Laws and Legal Language, after Felix Liebermann" -%}
+{%- elsif page.section == "laws" -%}
+{%- assign tagline = "The Lawcodes of Early England: Texts and Translations" -%}
+{%- elsif page.section == "abbreviations" -%}
+{%- assign tagline = "A Guide to Felix Liebermann's Gesetze der Angelsachsen" -%}
+{%- else -%}
+{%- assign tagline = "A Dictionary of Early English Lawcodes" -%}
+{%- endif -%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title and page.title != "Home" %}{{ page.title }} · {% endif %}{{ brand }}: {{ tagline }}</title>
+    {%- if page.description %}
+    <meta name="description" content="{{ page.description }}">
+    {%- endif %}
+    <link rel="icon" href="{{ root }}favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="{{ root }}images/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ root }}style.css?v={{ site.time | date: '%s' }}">
+    {%- for sheet in page.stylesheets %}
+    <link rel="stylesheet" href="{{ sheet }}">
+    {%- endfor %}
+    <script>window.SITE_ROOT = "{{ root }}";</script>
+    {%- for script in page.scripts %}
+    {%- if script contains 'ROOT/' %}
+    <script src="{{ script | replace: 'ROOT/', root }}?v={{ site.time | date: '%s' }}"></script>
+    {%- else %}
+    <script src="{{ script }}"></script>
+    {%- endif %}
+    {%- endfor %}
+</head>
+<body class="{% if page.full_width %}full-width{% endif %}{% if page.section == "home" %} home{% endif %}">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    {%- if page.section == "home" %}
+    <header class="site-header">
+        <a class="site-banner" href="{{ root }}index.html">
+            <img src="{{ root }}images/eliebermann.svg" alt="eLiebermann" width="510" height="74">
+        </a>
+        <p class="site-subtitle">{{ tagline }}</p>
+        <p class="construction"><span>Site under construction</span></p>
+    </header>
+    {%- else %}
+    <header class="site-header site-header--slim">
+        {%- if page.section == "laws" %}
+        <a class="site-brand" href="{{ root }}laws.html">
+            <img class="site-lockup" src="{{ root }}images/eliebermann-lawcodes.svg" alt="eLiebermann: lawcodes database" width="511" height="110">
+        </a>
+        {%- elsif page.section == "abbreviations" %}
+        <a class="site-brand" href="{{ root }}abbreviations.html">
+            <img class="site-lockup" src="{{ root }}images/eliebermann-guides.svg" alt="eLiebermann: guide to the Gesetze" width="511" height="112">
+        </a>
+        {%- elsif page.section == "about" or page.section == "contribute" or page.section == "editorial" %}
+        <a class="site-brand" href="{{ root }}index.html">
+            <img class="site-lockup site-lockup--name" src="{{ root }}images/eliebermann.svg" alt="eLiebermann" width="510" height="74">
+        </a>
+        {%- else %}
+        <a class="site-brand" href="{{ root }}dictionary.html">
+            <img class="site-lockup" src="{{ root }}images/eliebermann-dictionary.svg" alt="eLiebermann: legal dictionary" width="511" height="112">
+        </a>
+        {%- endif %}
+        <p class="construction"><span>Site under construction</span></p>
+    </header>
+    {%- endif %}
+
+    <nav class="main-nav" aria-label="Main">
+        <ul>
+            {%- for item in site.data.navigation.main %}
+            <li><a href="{{ root }}{{ item.url }}"{% if page.section == item.section %} aria-current="page"{% endif %}>{{ item.title }}</a></li>
+            {%- endfor %}
+        </ul>
+    </nav>
+
+    {%- assign subnav = site.data.navigation.sections[page.section] %}
+    {%- if subnav %}
+    <nav class="sub-nav" aria-label="{{ page.section | capitalize }}">
+        <ul>
+            {%- for item in subnav %}
+            {%- assign here = page.url | remove_first: "/" | remove: "index.html" %}
+            {%- assign there = item.url | remove: "index.html" %}
+            <li><a href="{{ root }}{{ item.url }}"{% if here == there %} aria-current="page"{% endif %}>{{ item.title }}</a></li>
+            {%- endfor %}
+        </ul>
+    </nav>
+    {%- endif %}
+
+    <main id="main" class="main-content" tabindex="-1">
+        {{ content }}
+    </main>
+
+    <footer class="site-footer">
+        <ul>
+            {%- for item in site.data.navigation.main %}
+            <li><a href="{{ root }}{{ item.url }}">{{ item.title }}</a></li>
+            {%- endfor %}
+            <li><a href="https://github.com/anyaadair/eLiebermann">Code and data on GitHub</a></li>
+        </ul>
+        <p>Based on Felix Liebermann, ed. and trans., <cite>Die Gesetze der Angelsachsen</cite>, 3 vols (Halle: Niemeyer, 1903–16).</p>
+        <p class="site-footer__rights">© 2026 Anya Adair. Liebermann’s text, and those of other editors and translators included in the site, are in the public domain. Underlying research supported by the Research Grants Council of Hong Kong (GRF 17604022). Queries about the site and its data can be directed to Anya Adair (adair[at]hku.hk).</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Ine_54-2">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Ine 54.2</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Attenborough’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Whitelock’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">Ine_54-2</idno>
+        <idno type="citation">Ine 54.2</idno>
+        <idno type="lawCode">Ine</idno>
+        <idno type="lawCodeAnchor">Ine</idno>
+        <idno type="clause">54.2</idno>
+        <idno type="citationKey">Ine 54.2</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Ine’s Laws (in Alfred’s Domboc)</title> <note type="reign">Ine, r. 688–726</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">114</biblScope></bibl>
+          <bibl xml:id="jurasinski-and-oliver" type="edition">Stefan Jurasinski and Lisi Oliver, <title>The Laws of Alfred: The Domboc and the Making of Anglo-Saxon Law</title> (Cambridge: Cambridge University Press, 2021), p. <biblScope unit="page">418</biblScope></bibl>
+          <bibl xml:id="attenborough" type="edition">F. L. Attenborough, <title>The Laws of the Earliest English Kings</title> (Cambridge: Cambridge University Press, 1922), p. <biblScope unit="page">54</biblScope></bibl>
+          <bibl xml:id="whitelock" type="translation">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007), p. <biblScope unit="page">406</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-e" rend="bold"><abbr>E</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 173 (Parker Chronicle and Laws)</note></witness>
+          <witness xml:id="wit-h"><abbr>H</abbr> <note type="manuscript">Strood, Medway Archive and Local Studies Centre, MS DRc/R1 (Textus Roffensis; formerly Rochester, Cathedral Library, A.3.5), c. 1120–25</note></witness>
+          <witness xml:id="wit-b-no-prol"><abbr>B (no Prol.)</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383</note></witness>
+          <witness xml:id="wit-g-prol-only"><abbr>G (Prol. only)</abbr> <note type="manuscript">London, British Library, Cotton Nero A.i</note></witness>
+          <witness xml:id="wit-q"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note></witness>
+          <witness xml:id="wit-ld"><abbr>Ld</abbr> <note type="manuscript">William Lambarde, Archaionomia (London, 1568) – printed from manuscripts now lost</note></witness>
+          <witness xml:id="wit-bu"><abbr>Bu</abbr></witness>
+          <witness xml:id="wit-ot-frags"><abbr>Ot (frags.)</abbr> <note type="manuscript">London, British Library, Cotton Otho B.xi (damaged by fire, 1731)</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 88">688–95</date><date source="#whitelock" n="EHD p. 399">688–94</date><date source="#wormald-mel" n="MEL p. 103">688×92</date><note type="promulgation">688–95 (Liebermann, I p. 88); 688–94 (Whitelock, EHD p. 399); 688×92 (Wormald, MEL p. 103)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Slavery</term><term>Corporal punishment</term><term>Oath and pledge</term></keywords>
+        <keywords n="people"><term>Welshmen</term><term>Englishmen</term><term>Slave</term><term>All people</term><term>Secular classes</term><term>Rank</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 630 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 114.</change>
+      <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 114: “Witeðeowne monnan Wyliscne mon sceal bedrifan be XII hidum swa ðeowne to swingum, Engliscne be feower ⁊ XXX hida.” → “Witeðeowne monnan Wyliscne mon sceal bedrifan be XII hidum swa ðeowne to swingum, Engliscne be feower ⁊ XXX hida. (expanded letters in italics: m)”.</change>
+      <change when="2026-10" type="checked">Liebermann’s text of MS B added from Gesetze I, p. 114.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="54.2">
+        <head><ref type="lawCode" target="law:Ine">Ine</ref> 54.2</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="54.2" corresp="#wit-e"><pb n="114" ed="#liebermann"/>Witeðeowne monnan Wyliscne mon<ptr type="liebermannNote" n="11" target="#Ine_54-2.lnote.oe.11"/> sceal<ptr type="liebermannNote" n="12" target="#Ine_54-2.lnote.oe.12"/> bedrifan be XII<ptr type="liebermannNote" n="13" target="#Ine_54-2.lnote.oe.13"/> hidu<hi rend="italic">m<ptr type="liebermannNote" n="14" target="#Ine_54-2.lnote.oe.14"/></hi> swa ðeowne to swingum, Engliscne be feower ⁊ XXX<ptr type="liebermannNote" n="15" target="#Ine_54-2.lnote.oe.15"/><ptr type="liebermannNote" n="*" target="#Ine_54-2.lnote.oe.star"/> hida.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="54.2" corresp="#wit-h"><pb n="114" ed="#liebermann"/>Witeðeowne mon<ptr type="liebermannNote" n="8" target="#Ine_54-2.lnote.oe.8-2"/> Wiliscne mon<ptr type="liebermannNote" n="9" target="#Ine_54-2.lnote.oe.9-2"/> sceal bedrifan be XII hidum swa ðeowne to swingum<ptr type="liebermannNote" n="10" target="#Ine_54-2.lnote.oe.10"/>, Engliscne be XXXIIII hida.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="54.2" corresp="#wit-b-no-prol"><pb n="114" ed="#liebermann"/>Witeðeowne monnan Wyliscne man sceal bedrifan be twelf hyndum swa ðeowne to swincu<hi rend="italic">m<ptr type="liebermannNote" n="1" target="#Ine_54-2.lnote.oe.1"/></hi>, Engliscne be feowær<ptr type="liebermannNote" n="2" target="#Ine_54-2.lnote.oe.2"/> ⁊ ðrittig hida.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="54.2" corresp="#wit-q"><pb n="115" ed="#liebermann"/>Wita-(id<ptr type="liebermannNote" n="5" target="#Ine_54-2.lnote.oe.5"/> est forisfactura)-seruus<ptr type="liebermannNote" n="6" target="#Ine_54-2.lnote.oe.6"/> homo Waliscus debet superiurari<ptr type="liebermannNote" n="7" target="#Ine_54-2.lnote.oe.7"/> per duodecim hidas sic[ut<ptr type="liebermannNote" n="8" target="#Ine_54-2.lnote.oe.8"/>] seruus ad uerbera, Anglicus homo per triginta<ptr type="liebermannNote" n="9" target="#Ine_54-2.lnote.oe.9"/> quatuor hidas.</ab>
+        <ab type="editionText" xml:lang="ang" source="#attenborough" corresp="#wit-e"><pb n="54" ed="#attenborough"/>Witeðeowne monnan<ptr type="editorNote" n="14" target="#Ine_54-2.attnote.fn.14"/> Wyliscne mon sceal bedrifan be XII hidum<ptr type="editorNote" n="15" target="#Ine_54-2.attnote.fn.15"/> swa ðeowne to swingum<ptr type="editorNote" n="16" target="#Ine_54-2.attnote.fn.16"/>, Engliscne be feower ⁊ XXX hida.</ab>
+        <ab type="editionText" xml:lang="ang" source="#jurasinski-and-oliver" n="58" corresp="#wit-e"><pb n="418" ed="#jurasinski-and-oliver"/>Witeðeowne monnan wyliscne mon sceal bedrifan be XII hidu<hi rend="italic">m</hi> swa ðeowne to swingum, Engliscne be feower ⁊ XXX hida.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="115" ed="#liebermann"/>Einen strafhörigen Wälschen<ptr type="liebermannNote" n="1" target="#Ine_54-2.lnote.de.1"/> Mann soll [kann] man wie einen Sklaven<ptr type="liebermannNote" n="2" target="#Ine_54-2.lnote.de.2"/> durch [Eid von] 12 Hiden<ptr type="liebermannNote" n="3" target="#Ine_54-2.lnote.de.3"/> zur [Erleidung der] Prügelstrafe treiben<ptr type="liebermannNote" n="4" target="#Ine_54-2.lnote.de.4"/>, einen Englischen durch 34<ptr type="liebermannNote" n="5" target="#Ine_54-2.lnote.de.5"/> Hiden.</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">A Welshman who is a penalty-slave may be driven to [suffer] the flogging like a slave by [an oath of] 12 hides; an Englishman by 34 hides.</ab>
+        <ab type="translation" xml:lang="en" source="#attenborough" corresp="#wit-e"><pb n="55" ed="#attenborough"/>A Welshman, who has been reduced to penal slavery, shall be compelled to submit to a scourging, as a slave, by [an oath of] 12 hides; an Englishman, by [an oath of] 34<ptr type="editorNote" n="1" target="#Ine_54-2.attnote.n.1"/> hides.</ab>
+        <ab type="translation" xml:lang="en" source="#whitelock"><pb n="406" ed="#whitelock"/>A penally enslaved Welshman shall be compelled to [suffer] a flogging as a slave by [an oath of] 12 hides, an Englishman by [an oath of] 34 hides.<ptr type="editorNote" n="4" target="#Ine_54-2.whinote.n.4"/></ab>
+        <ab type="translation" xml:lang="en" source="#jurasinski-and-oliver" corresp="#wit-e"><pb n="419" ed="#jurasinski-and-oliver"/>A Welshman in the position of penal slave shall be forced to be lashed like a slave [by an oath of] twelve hides; an Englishman by [an oath of] thirty-four hides.1</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_54-2.lnote.oe.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">114</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">im</hi> 16. <hi rend="italic">Jh. verbessert</hi> swingum</seg><seg type="translation" xml:lang="en" source="#claude">corrected to swingum in the 16th cent.</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_54-2.lnote.oe.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">114</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">im</hi> 16. <hi rend="italic">Jh. geändert aus</hi> seo wær</seg><seg type="translation" xml:lang="en" source="#claude">altered from seo wær in the 16th cent.</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_54-2.lnote.oe.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">115</biblScope></bibl><seg type="original" xml:lang="de">i. e. f. <hi rend="italic">aus Lond; fehlt übrigen</hi></seg><seg type="translation" xml:lang="en" source="#claude">i. e. f. from Lond; lacking in the others</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_54-2.lnote.oe.6" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">115</biblScope></bibl><seg type="original" xml:lang="de">seruum Waliscum hominem oportet [<hi rend="italic">fehlt Infinitiv</hi>] sic seruum ad uerbera, Anglicum <hi rend="italic">Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">seruum Waliscum hominem oportet [infinitive missing] sic seruum ad uerbera, Anglicum Lond</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_54-2.lnote.oe.7" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">115</biblScope></bibl><seg type="original" xml:lang="de">-re <hi rend="italic">MHkBr</hi></seg><seg type="translation" xml:lang="en" source="#claude">-re MHkBr</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_54-2.lnote.oe.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">115</biblScope></bibl><seg type="original" xml:lang="de">sic <hi rend="italic">Hss.</hi></seg><seg type="translation" xml:lang="en" source="#claude">sic MSS</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_54-2.lnote.oe.9" n="9" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">115</biblScope></bibl><seg type="original" xml:lang="de">XX [<hi rend="italic">richtig</hi>] <hi rend="italic">Brti</hi></seg><seg type="translation" xml:lang="en" source="#claude">XX [correct] Brti</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_54-2.lnote.oe.8-2" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">114</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">geänd.</hi> man; <hi rend="italic">dahinter Rasur</hi></seg><seg type="translation" xml:lang="en" source="#claude">altered to man; erasure after it</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_54-2.lnote.oe.9-2" n="9" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">114</biblScope></bibl><seg type="original" xml:lang="de">o <hi rend="italic">geänd. in</hi> a</seg><seg type="translation" xml:lang="en" source="#claude">o altered to a</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_54-2.lnote.oe.10" n="10" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">114</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Rasur hinter</hi> n</seg><seg type="translation" xml:lang="en" source="#claude">erasure after n</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_54-2.lnote.oe.11" n="11" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">114</biblScope></bibl><seg type="original" xml:lang="de">man <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">man Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_54-2.lnote.oe.12" n="12" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">114</biblScope></bibl><seg type="original" xml:lang="de">sceall <hi rend="italic">So</hi></seg><seg type="translation" xml:lang="en" source="#claude">sceall So</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_54-2.lnote.oe.13" n="13" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">114</biblScope></bibl><seg type="original" xml:lang="de">twelf <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">twelf Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_54-2.lnote.oe.14" n="14" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">114</biblScope></bibl><seg type="original" xml:lang="de">hyd. <hi rend="italic">So Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">hyd. So Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_54-2.lnote.oe.15" n="15" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">114</biblScope></bibl><seg type="original" xml:lang="de">þrittig hyda <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">þrittig hyda Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_54-2.lnote.oe.star" n="*" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">114</biblScope></bibl><seg type="original" xml:lang="de">XXIIII <hi rend="italic">vielleicht zu bessern.</hi></seg><seg type="translation" xml:lang="en" source="#claude">perhaps emend to XXIIII.</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Ine_54-2.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">78</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">H modernisiert. — <hi rend="italic">Vgl. Gl</hi> Walliser 6. a</seg><seg type="translation" xml:lang="en" source="#claude">H modernises. — <hi rend="italic">Cf. Gl</hi> Walliser 6. a</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Ine_54-2.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">78</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Geborenen Unfreien; <hi rend="italic">s. d. Gl</hi> 2 c. 19</seg><seg type="translation" xml:lang="en" source="#claude">Those born unfree; <hi rend="italic">see</hi> that word in <hi rend="italic">Gl</hi> 2 c. 19</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Ine_54-2.lnote.de.3" n="3" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">78</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Also mehr als der Eid nur Eines, obwohl abendmahlfähigen, Gemeinfreien; <hi rend="italic">s.</hi> Eideshufen 9. — B, verschlechternd zu <hi rend="italic">hyndum,</hi> meint vielleicht den Eid eines 1200-Schilling-Mannes = 6 Gemeinfreier; B versteht jedenfalls die Eideshufen nicht mehr</seg><seg type="translation" xml:lang="en" source="#claude">Thus more than the oath of a single common freeman, even one admitted to communion; <hi rend="italic">see</hi> Eideshufen 9. — B, corrupting the text to <hi rend="italic">hyndum,</hi> perhaps means the oath of a 1200-shilling man = 6 common freemen; at any rate B no longer understands the oath-hides</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Ine_54-2.lnote.de.4" n="4" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">78</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">superiurare s. Wb:</hi> ‘durch Schwur aufbürden, unterwerfen’</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">superiurare see Wb:</hi> ‘to impose by oath, to subject’</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Ine_54-2.lnote.de.5" n="5" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">78</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">‘24’ bessert schon eine Hs. Q in spät. Rez. und so Neuere nach Analogie; <hi rend="italic">s. Gl</hi> Prügel 4 c. 6</seg><seg type="translation" xml:lang="en" source="#claude">‘24’ is already the emendation of one MS of Q in the later recension, and so of modern editors, by analogy; <hi rend="italic">see Gl</hi> Prügel 4 c. 6</seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="Ine_54-2.attnote.fn.14" n="14" source="#attenborough"><bibl><biblScope unit="page">54</biblScope></bibl><label>monnan</label><seg type="original" xml:lang="en"><hi rend="italic">man</hi>. H.</seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="Ine_54-2.attnote.fn.15" n="15" source="#attenborough"><bibl><biblScope unit="page">54</biblScope></bibl><label>hidum</label><seg type="original" xml:lang="en"><hi rend="italic">hyndum</hi>. B.</seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="Ine_54-2.attnote.fn.16" n="16" source="#attenborough"><bibl><biblScope unit="page">54</biblScope></bibl><label>swingum</label><seg type="original" xml:lang="en"><hi rend="italic">swincum</hi>. B.</seg></note>
+        <note type="editorNote" subtype="endnote" xml:id="Ine_54-2.attnote.n.1" n="1" source="#attenborough"><bibl><biblScope unit="page">191</biblScope></bibl><seg type="original" xml:lang="en">The figure is curious. One MS of Quadr. has <hi rend="italic">xx quatuor.</hi> The meaning is ‘shall not be compelled...by less than.’</seg></note>
+        <note type="editorNote" subtype="translationFootnote" xml:id="Ine_54-2.whinote.n.4" n="4" source="#whitelock"><bibl><biblScope unit="page">406</biblScope></bibl><label>hides</label><seg type="original" xml:lang="en">The original reading may have been 24, double the oath for a Welshman.</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

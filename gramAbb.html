@@ -1,0 +1,27 @@
+---
+title: Grammatical Terms and Abbreviations
+section: abbreviations
+scripts:
+  - "ROOT/scripts/abbreviations.js"
+---
+<h1>Grammatical Terms and Abbreviations</h1>
+
+<p class="lede">The German grammatical terms and abbreviations Liebermann uses in the Wörterbuch, expanded and translated. The German is given in Liebermann's own spelling (<i>Accusativ</i>, <i>flectirt</i>); where today's spelling differs, it follows underneath. The authors and works he cites have <a href="bibAbb.html">a list of their own</a>.</p>
+
+<div class="search-bar" role="search">
+    <input type="search" id="searchInput" placeholder="Search…" aria-label="Search">
+    <select id="searchScope" aria-label="Search in">
+        <option value="all">All fields</option>
+        <option value="Gesetze Text">As printed</option>
+        <option value="German Expansion">German expansion</option>
+        <option value="Modern German">Modern German</option>
+        <option value="English Translation">English</option>
+        <option value="Notes: Grammatical">Notes</option>
+    </select>
+</div>
+<p id="count" class="muted small"></p>
+
+<div id="content-container" data-source="data/markforward.json"><p class="loading">Loading…</p></div>
+
+<p class="small muted">The list comes from <a href="https://github.com/anyaadair/eLiebermann/blob/main/data/markforward.json">data/markforward.json</a>. To add a spelling that isn't linked yet, add a row there with the same Anchor as its main form.</p>
+

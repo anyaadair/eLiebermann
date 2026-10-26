@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>hengwite</title>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">hengwite</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, <biblScope unit="volume">2.1</biblScope> (Wörterbuch), <biblScope unit="page">113</biblScope>
+            <ptr type="facsimile" target="https://archive.org/details/diegesetzederang02liebuoft/page/113/mode/2up"/>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <revisionDesc>
+      <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-10-14">S. marked as Sanctus, not siehe.</change>
+      <change when="2026-10-17">L (Latin version) after VI Atr, IV Eg and Leis Wl citations linked.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry xml:lang="ang">
+        <form type="lemma">
+          <orth>hengwite</orth>
+        </form>
+        <dictScrap type="liebermann"><hi rend="bold">hengwite</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref></hi>, <hi rend="italic">Strafe <ref type="abbreviation" target="gram:fur"><abbr>für</abbr></ref> versäumte Verhaftungspflicht</hi> <ref type="lawCode" target="law:LeisWl">Leis Wl</ref> 4; henw~ <ref type="lawCode" target="law:LatVersion">L</ref> [<hi rend="italic">König Johann befreit</hi> 1200 <hi rend="italic"><ref type="abbreviation" target="gram:von"><abbr>von</abbr></ref></hi> hengwite <hi rend="italic">den Dom <ref type="abbreviation" target="gram:von"><abbr>von</abbr></ref> Salisbury</hi>; Registr. Saresber. <ref type="abbreviation" target="gram:sanctus"><abbr>s.</abbr></ref> Osmundi <ref type="lawCode" target="law:I">I</ref> 211]</dictScrap>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/18699">heng-wíte</ref></xr>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/52266">heng-wíte (Supplement)</ref></xr>
+        <xr type="lawCode"><ref target="clause:LeisWl_4">Leis Wl 4</ref></xr>
+      </entry>
+    </body>
+  </text>
+</TEI>

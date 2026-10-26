@@ -1,0 +1,173 @@
+---
+title: Manuscript description generator
+---
+<h1>Manuscript description generator</h1>
+
+<p class="lede">Turn a catalogue description of a <em>Statuta Vetera</em> manuscript into a TEI file for the <a href="index.html">manuscript search</a>.</p>
+
+<div class="card">
+    <h2>1. Paste the description</h2>
+    <textarea id="rawInput" rows="6" placeholder="Cambridge, Trinity College MS O.2.58…"></textarea>
+    <p><button type="button" onclick="extractData()">Fill in the form →</button></p>
+</div>
+
+<div class="card">
+    <h2>2. Check the details</h2>
+    <div class="two-col">
+        <div class="field"><label for="f_settlement">Place</label><input type="text" id="f_settlement"></div>
+        <div class="field"><label for="f_repository">Library</label><input type="text" id="f_repository"></div>
+        <div class="field"><label for="f_idno">Shelfmark</label><input type="text" id="f_idno"></div>
+        <div class="field"><label for="f_extent">Extent (ff.)</label><input type="text" id="f_extent"></div>
+    </div>
+    <div class="field"><label for="f_title">Contents</label><input type="text" id="f_title" style="width:100%"></div>
+    <div class="two-col">
+        <div class="field"><label for="f_lHeight">Leaf height (mm)</label><input type="text" id="f_lHeight"></div>
+        <div class="field"><label for="f_lWidth">Leaf width (mm)</label><input type="text" id="f_lWidth"></div>
+        <div class="field"><label for="f_tHeight">Written height (mm)</label><input type="text" id="f_tHeight"></div>
+        <div class="field"><label for="f_tWidth">Written width (mm)</label><input type="text" id="f_tWidth"></div>
+    </div>
+    <div class="field"><label for="f_provenance">Provenance</label><input type="text" id="f_provenance" style="width:100%"></div>
+    <div class="field"><label for="f_bibl">Bibliography</label><input type="text" id="f_bibl" style="width:100%"></div>
+    <p><button type="button" onclick="generateTEI()">Make the TEI file</button></p>
+</div>
+
+<div class="card">
+    <h2>3. The TEI file</h2>
+    <textarea id="output" class="output-xml" readonly aria-label="TEI XML"></textarea>
+    <p>Save it as <code id="filenameDisplay">…</code>, then <a href="https://github.com/anyaadair/eLiebermann/upload/main/tei" target="_blank" rel="noopener">upload it to the tei folder on GitHub</a>.</p>
+    <p>
+        <button type="button" onclick="downloadXML()">Download the file</button>
+        <button type="button" class="secondary" onclick="copyToClipboard(this)">Copy the XML</button>
+    </p>
+</div>
+
+<script>
+    function extractData() {
+        const text = document.getElementById('rawInput').value;
+        const setRep = text.match(/^([^,]+),\s*([^ \n]+ [^ \n]+)/);
+        const idno = text.match(/(MS\s[A-Z0-9\.]+)/);
+        const title = text.match(/\.\s*([^;.]+;[^.]+)\./);
+        const extent = text.match(/(\d+\s*ff)/);
+        const dims = [...text.matchAll(/(\d+)\s*x\s*(\d+)/g)];
+        const provMatch = text.match(/(Provenance:\s*.*)/i);
+        const biblMatch = text.match(/(Bibliography:\s*.*)/i);
+
+        if(setRep) {
+            document.getElementById('f_settlement').value = setRep[1].trim();
+            document.getElementById('f_repository').value = setRep[2].trim();
+        }
+        document.getElementById('f_idno').value = idno ? idno[1].trim() : '';
+        document.getElementById('f_title').value = title ? title[1].trim() : '';
+        document.getElementById('f_extent').value = extent ? extent[1].trim() : '';
+        if (dims.length > 0) { document.getElementById('f_lHeight').value = dims[0][1]; document.getElementById('f_lWidth').value = dims[0][2]; }
+        if (dims.length > 1) { document.getElementById('f_tHeight').value = dims[1][1]; document.getElementById('f_tWidth').value = dims[1][2]; }
+        document.getElementById('f_provenance').value = provMatch ? provMatch[1].trim() : 'Provenance: ';
+        document.getElementById('f_bibl').value = biblMatch ? biblMatch[1].trim() : 'Bibliography: ';
+    }
+
+    function generateTEI() {
+        const getV = (id) => document.getElementById(id).value;
+        const rawText = document.getElementById('rawInput').value;
+
+        // Create sanitized filename
+        const baseTitle = `${getV('f_settlement')}-${getV('f_repository')}-${getV('f_idno')}`;
+        const safeFilename = baseTitle
+            .toLowerCase()
+            .replace(/[^a-z0-9]/g, '-') // Replace non-alphanumeric with hyphens
+            .replace(/-+/g, '-')       // Remove double hyphens
+            .replace(/^-|-$/g, '')     // Trim hyphens from ends
+            + '.xml';
+        
+        document.getElementById('filenameDisplay').textContent = safeFilename;
+
+        const formattedBody = rawText.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').split('\n').join('<lb/>\n        ');
+        
+        const tei = `<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>${getV('f_settlement')}, ${getV('f_repository')}, ${getV('f_idno')}</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>Documented for TEI project.</p>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>${getV('f_settlement')}</settlement>
+            <repository>${getV('f_repository')}</repository>
+            <idno>${getV('f_idno')}</idno>
+          </msIdentifier>
+          <msContents>
+            <msItem>
+              <title>${getV('f_title')}</title>
+            </msItem>
+          </msContents>
+          <physDesc>
+            <objectDesc form="codex">
+              <supportDesc material="parchment">
+                <extent>${getV('f_extent')}
+                  <dimensions type="leaf" unit="mm">
+                    <height>${getV('f_lHeight')}</height>
+                    <width>${getV('f_lWidth')}</width>
+                  </dimensions>
+                </extent>
+              </supportDesc>
+              <layoutDesc>
+                <layout columns="1">
+                  <dimensions type="written" unit="mm">
+                    <height>${getV('f_tHeight')}</height>
+                    <width>${getV('f_tWidth')}</width>
+                  </dimensions>
+                  <p>Text block measuring ${getV('f_tHeight')} x ${getV('f_tWidth')} mm.</p>
+                </layout>
+              </layoutDesc>
+            </objectDesc>
+          </physDesc>
+          <history>
+            <provenance>${getV('f_provenance')}</provenance>
+          </history>
+          <additional>
+            <listBibl>
+              <bibl>${getV('f_bibl')}</bibl>
+            </listBibl>
+          </additional>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>
+        ${formattedBody}
+      </p>
+    </body>
+  </text>
+</TEI>`;
+
+        document.getElementById('output').value = tei;
+    }
+
+    function copyToClipboard(button) {
+        navigator.clipboard.writeText(document.getElementById('output').value).then(() => {
+            button.textContent = 'Copied';
+            setTimeout(() => { button.textContent = 'Copy the XML'; }, 2000);
+        });
+    }
+
+    function downloadXML() {
+        const text = document.getElementById('output').value;
+        const filename = document.getElementById('filenameDisplay').textContent;
+        if (!text) { alert("Please generate the TEI first!"); return; }
+        
+        const element = document.createElement('a');
+        element.setAttribute('href', 'data:text/xml;charset=utf-8,' + encodeURIComponent(text));
+        element.setAttribute('download', filename);
+        element.style.display = 'none';
+        document.body.appendChild(element);
+        element.click();
+        document.body.removeChild(element);
+    }
+</script>

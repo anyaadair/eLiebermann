@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Af_El-Prol">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Af El. Prol.</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
+        <respStmt><resp>Cross-references to other clauses</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Attenborough’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">Af_El-Prol</idno>
+        <idno type="citation">Af El. Prol.</idno>
+        <idno type="lawCode">Af</idno>
+        <idno type="lawCodeAnchor">Af</idno>
+        <idno type="clause">El. Prol.</idno>
+        <idno type="citationKey">Af el.prol.</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Alfred’s Domboc</title> <note type="reign">Alfred, r. 871–899</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">26</biblScope></bibl>
+          <bibl xml:id="jurasinski-and-oliver" type="edition">Stefan Jurasinski and Lisi Oliver, <title>The Laws of Alfred: The Domboc and the Making of Anglo-Saxon Law</title> (Cambridge: Cambridge University Press, 2021), p. <biblScope unit="page">224</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="whitelock" type="study">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+          <bibl xml:id="attenborough" type="translation">F. L. Attenborough, <title>The Laws of the Earliest English Kings</title> (Cambridge: Cambridge University Press, 1922)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-e" rend="bold"><abbr>E</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 173 (Parker Chronicle and Laws)</note></witness>
+          <witness xml:id="wit-h"><abbr>H</abbr> <note type="manuscript">Strood, Medway Archive and Local Studies Centre, MS DRc/R1 (Textus Roffensis; formerly Rochester, Cathedral Library, A.3.5), c. 1120–25</note></witness>
+          <witness xml:id="wit-b-no-prol"><abbr>B (no Prol.)</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383</note></witness>
+          <witness xml:id="wit-g-prol-only"><abbr>G (Prol. only)</abbr> <note type="manuscript">London, British Library, Cotton Nero A.i</note></witness>
+          <witness xml:id="wit-q"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note></witness>
+          <witness xml:id="wit-ld"><abbr>Ld</abbr> <note type="manuscript">William Lambarde, Archaionomia (London, 1568) – printed from manuscripts now lost</note></witness>
+          <witness xml:id="wit-bu"><abbr>Bu</abbr></witness>
+          <witness xml:id="wit-ot-frags"><abbr>Ot (frags.)</abbr> <note type="manuscript">London, British Library, Cotton Otho B.xi (damaged by fire, 1731)</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 27">871 (after 890?)–901</date><date source="#whitelock" n="EHD p. 408">885–899</date><date source="#wormald-mel" n="MEL p. 286">after 893</date><note type="promulgation">871 (after 890?)–901 (Liebermann, I p. 27); 885–899 (Whitelock, EHD p. 408); after 893 (Wormald, MEL p. 286)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Slavery</term><term>Boundaries</term><term>Land</term></keywords>
+        <keywords n="people"><term>God</term><term>Moses</term><term>Egyptians</term><term>Slave</term><term>All people</term><term>Named individuals</term><term>Secular classes</term><term>Rank</term></keywords>
+        <keywords n="locations"><term>Egypt</term><term>Named kingdoms</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 316 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 26.</change>
+      <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 26: “eam; Egypta” → “éam; Ęgypta”.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="El. Prol.">
+        <head><ref type="lawCode" target="law:Af">Af</ref> El. Prol.</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="Af. El. Prol." corresp="#wit-e"><pb n="26" ed="#liebermann"/>DRYHTEN<ptr type="liebermannNote" n="17" target="#Af_El-Prol.lnote.oe.17"/> WÆS SPRECENde<ptr type="liebermannNote" n="18" target="#Af_El-Prol.lnote.oe.18"/> ðas<ptr type="liebermannNote" n="19" target="#Af_El-Prol.lnote.oe.19"/> word to Moyse ⁊ þus cwæð: Ic éom dryhten<ptr type="liebermannNote" n="17" target="#Af_El-Prol.lnote.oe.17"/> ðin<ptr type="liebermannNote" n="20" target="#Af_El-Prol.lnote.oe.20"/> God. Ic ðe útgelædde of Egipta<ptr type="liebermannNote" n="21" target="#Af_El-Prol.lnote.oe.21"/> londe ⁊ of hiora<ptr type="liebermannNote" n="22" target="#Af_El-Prol.lnote.oe.22"/> ðeowdome.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="Af. El. Prol." corresp="#wit-g-prol-only"><pb n="26" ed="#liebermann"/>[D]rihten<ptr type="liebermannNote" n="4" target="#Af_El-Prol.lnote.oe.4"/> wæs sprecende ðas word to Moyse ⁊ þus cwæþ: Ic eom drihten þin God. Íc þé útgelædde of Egypta lande<ptr type="liebermannNote" n="5" target="#Af_El-Prol.lnote.oe.5"/> ⁊ of hyra<ptr type="liebermannNote" n="6" target="#Af_El-Prol.lnote.oe.6"/> þeowdome.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="Af. El. Prol." corresp="#wit-h"><pb n="27" ed="#liebermann"/>Dryhten wæs sprecende ðas word to Moyse and þus cwæð: Ic éam dryhten þin God; ic ðe uttgelæde<ptr type="liebermannNote" n="7" target="#Af_El-Prol.lnote.oe.7"/> of Ęgypta lande ⁊ of heora þeowdome.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Af. El. Prol." corresp="#wit-q"><ptr type="liebermannNote" n="20" target="#Af_El-Prol.lnote.oe.20-2"/><ptr type="liebermannNote" n="*" target="#Af_El-Prol.lnote.oe.star"/><pb n="27" ed="#liebermann"/>Locutus est Dominus ad Moysen dicens: Ego sum dominus Deus tuus qui eduxi te de terra Egypti<ptr type="liebermannNote" n="21" target="#Af_El-Prol.lnote.oe.21-2"/>, de domo<ptr type="liebermannNote" n="*" target="#Af_El-Prol.lnote.oe.star"/> seruitutis.</ab>
+        <ab type="editionText" xml:lang="ang" source="#jurasinski-and-oliver" n="Prologue" corresp="#wit-e"><pb n="224" ed="#jurasinski-and-oliver"/>[D]RYHTEN WÆS SPRECENde ðas word to Moyse ⁊ þus cwæð: Ic eóm Dryhten ðin God. Ic ðe utgelædde of Egipta londe ⁊ of hiora ðeowdome.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><ptr type="liebermannNote" n="*" target="#Af_El-Prol.lnote.de1.star"/><pb n="27" ed="#liebermann"/>Der<ptr type="liebermannNote" n="1" target="#Af_El-Prol.lnote.de.1"/> Herr sprach diese Worte zu Moses<ptr type="liebermannNote" n="2" target="#Af_El-Prol.lnote.de.2"/> und redete also: Ich bin der Herr, dein Gott. Ich geleitete dich heraus vom Lande der Aegypter<ptr type="liebermannNote" n="3" target="#Af_El-Prol.lnote.de.3"/> und aus ihrer<ptr type="liebermannNote" n="3" target="#Af_El-Prol.lnote.de.3"/> Knechtschaft.</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">The Lord spoke these words to Moses and said thus: I am the Lord, your God. I led you out from the land of the Egyptians and out of their bondage.</ab>
+        <ab type="translation" xml:lang="en" source="#jurasinski-and-oliver" corresp="#wit-e"><pb n="225" ed="#jurasinski-and-oliver"/>The lord was speaking these words to Moses and said as follows: I am the Lord your God. I led you out from the land of the Egyptians and from slavery to them.</ab>
+        <note type="passageSource">Exodus 20,1–2</note>
+        <note type="comparison" source="#liebermann" n="27">Exodus 20.1; Exodus 20.2</note>
+        <note type="comparisonPrinted" source="#liebermann">[Exodus 20, 1] | [20, 2]</note>
+        <note type="comparedBy" source="#wormald-mel" n="409"><ref target="clause:LeisWl_10-to-10a">Leis Wl 10–11.2</ref></note>
+        <note type="comparedBy" source="#wormald-mel" n="409"><ref target="clause:LeisWl_18">Leis Wl 18–19.1</ref></note>
+        <note type="editorial">F: corrected against Liebermann, Gesetze I (date in the running heads); Wormald, Making of English Law I, October 2026 (was “890–901; 885–899 (Whitelock)”, now “871 (after 890?)–901 (Liebermann); 885–899 (Whitelock); after 893 (Wormald)”); F: corrected against Liebermann, Gesetze I (date at the head of the text); Wormald, Making of English Law I; Whitelock, English Historical Documents I, October 2026 (was “871 (after 890?)–901 (Liebermann); 885–899 (Whitelock); after 893 (Wormald)”, now “871 (after 890?)–901 (Liebermann, I p. 27); 885–899 (Whitelock, EHD p. 408); after 893 (Wormald, MEL p. 286)”); BQ: page of each of Liebermann’s texts and of his German, checked against Liebermann, Gesetze I (our double-read transcription), October 2026 (e.g. was “(empty)”, now “E 26; G 26; H 27; Q 27; German 27”; 222 rows of Af); V: page of the modern editor’s text / translation, checked against Jurasinski and Oliver (translation on the facing page), October 2026 (e.g. was “224”, now “224 / 225”; 222 rows of Af)</note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_El-Prol.lnote.oe.17" n="17" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">26</biblScope></bibl><seg type="original" xml:lang="de">Drih. <hi rend="italic">So Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">Drih. So Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_El-Prol.lnote.oe.18" n="18" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">26</biblScope></bibl><seg type="original" xml:lang="de">spræc. <hi rend="italic">So</hi></seg><seg type="translation" xml:lang="en" source="#claude">spræc. So</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_El-Prol.lnote.oe.19" n="19" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">26</biblScope></bibl><seg type="original" xml:lang="de">ðæs <hi rend="italic">Ld;</hi> to Moses þas word <hi rend="italic">So</hi></seg><seg type="translation" xml:lang="en" source="#claude">ðæs Ld; to Moses þas word So</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_El-Prol.lnote.oe.20" n="20" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">26</biblScope></bibl><seg type="original" xml:lang="de">þín <hi rend="italic">So</hi></seg><seg type="translation" xml:lang="en" source="#claude">þín So</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_El-Prol.lnote.oe.21" n="21" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">26</biblScope></bibl><seg type="original" xml:lang="de">Egypta land <hi rend="italic">So;</hi> Æg. lond <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">Egypta land So; Æg. lond Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_El-Prol.lnote.oe.22" n="22" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">26</biblScope></bibl><seg type="original" xml:lang="de">heora <hi rend="italic">So Ld;</hi> -dom <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">heora So Ld; -dom Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_El-Prol.lnote.oe.7" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">27</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Rasur vor</hi> d</seg><seg type="translation" xml:lang="en" source="#claude">erasure before d</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_El-Prol.lnote.oe.20-2" n="20" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">27</biblScope></bibl><seg type="original" xml:lang="de">Lex Moysi <hi rend="italic">roth R; Af El. Prol. bis El.</hi> 48 <hi rend="italic">fehlt Br</hi></seg><seg type="translation" xml:lang="en" source="#claude">Lex Moysi in red R; Af El. Prol. to El. 48 lacking in Br</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_El-Prol.lnote.oe.star" n="*" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">27</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Stellen, an denen Quadr von Af abweicht und die Exodus abschreibt, bezeichne ich durch</hi> ᵉ.</seg><seg type="translation" xml:lang="en" source="#claude">Passages where Quadr departs from Af and copies Exodus I mark with ᵉ.</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_El-Prol.lnote.oe.21-2" n="21" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">27</biblScope></bibl><seg type="original" xml:lang="de">Egipti <hi rend="italic">R</hi></seg><seg type="translation" xml:lang="en" source="#claude">Egipti R</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_El-Prol.lnote.oe.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">26</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Raum für die farbig einzusetzende Initiale frei</hi></seg><seg type="translation" xml:lang="en" source="#claude">Space left free for the initial to be inserted in colour</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_El-Prol.lnote.oe.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">26</biblScope></bibl><seg type="original" xml:lang="de">o <hi rend="italic">über</hi> a <hi rend="italic">im</hi> 16. <hi rend="italic">Jh. übergeschr.</hi></seg><seg type="translation" xml:lang="en" source="#claude">o written above a in the 16th cent.</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_El-Prol.lnote.oe.6" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">26</biblScope></bibl><seg type="original" xml:lang="de">io <hi rend="italic">über</hi> y <hi rend="italic">im</hi> 16. <hi rend="italic">Jh. übergeschr. Diese Änderungen, meist aus E, bemerke ich fortan nicht.</hi></seg><seg type="translation" xml:lang="en" source="#claude">io written above y in the 16th cent. These alterations, mostly from E, I shall not note henceforth.</seg></note>
+        <note type="liebermannNote" subtype="translationFootnote" xml:id="Af_El-Prol.lnote.de1.star" n="*" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">27</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Aelfreds Zuthaten zur Exodus druckt meine Übersetzung gesperrt oder fett.</hi></seg><seg type="translation" xml:lang="en" source="#claude">My translation prints Aelfred’s additions to Exodus in spaced type or in bold.</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Af_El-Prol.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">42</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">Die früher ‘kirchlich’ genannte <hi rend="italic">Einleitung</hi> (<hi rend="italic">El</hi> von mir zitiert) ist, ausgenommen Dekalog und El 49, übersetzt aus Exodus 20—23 der Vulgata, nicht eines vor-Hieronymischen Textes (F. J. A. Hort bei Turk <hi rend="italic">Legal code</hi> 33f.). Das davon formell Abweichende <hi rend="spaced">sperr</hi> ich, sachliches Eigen Ælfreds druck ich <hi rend="bold">fett</hi></seg><seg type="translation" xml:lang="en" source="#claude">The <hi rend="italic">Introduction</hi> formerly called ‘ecclesiastical’ (cited by me as <hi rend="italic">El</hi>) is, except for the Decalogue and El 49, translated from Exodus 20—23 of the Vulgate, not from a pre-Hieronymian text (F. J. A. Hort in Turk <hi rend="italic">Legal code</hi> 33f.). What departs from it in form I print in <hi rend="italic">spaced type</hi>; what is Ælfred’s own in substance I print in <hi rend="bold">bold</hi></seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Af_El-Prol.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">42</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">Aus dem Exodus-Zusammenhange; wiederholt El 49</seg><seg type="translation" xml:lang="en" source="#claude">From the context of Exodus; repeated at El 49</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Af_El-Prol.lnote.de.3" n="3" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">42</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">Wo Quadr die Vulgata wiederholt, findet man deren Wortlaut in der Lateinischen Spalte; nur wo dies nicht der Fall ist, werde ich sie bei Ælfreds Abweichungen hier zitieren. — Af bewahrt hier und El 33 die nur für Hebräer passende Anrede, die er El 47 unterdrückt. Auch in der Übs. von Gregors <hi rend="italic">Cura pastoralis</hi> folgt er der Vulgata nicht immer genau; Cooke <hi rend="italic">Bibl. quotat. in Old Engl.</hi> I p. <hi rend="smallcaps">viii</hi></seg><seg type="translation" xml:lang="en" source="#claude">Where Quadr repeats the Vulgate, its wording will be found in the Latin column; only where this is not the case shall I quote it here at Ælfred’s departures. — Here and at El 33 Af keeps the form of address suited only to Hebrews, which he suppresses at El 47. In the translation of Gregory’s <hi rend="italic">Cura pastoralis</hi>, too, he does not always follow the Vulgate exactly; Cooke <hi rend="italic">Bibl. quotat. in Old Engl.</hi> I p. <hi rend="smallcaps">viii</hi></seg></note>
+        <note type="editorNote" subtype="endnote" xml:id="Af_El-Prol.attnote.n.0" n="0" source="#attenborough" rend="wholeClause"><bibl><biblScope unit="page">193</biblScope></bibl><seg type="original" xml:lang="en">The Laws of Alfred are preceded by a long introduction (cap. 1—48) which contains the ten commandments (cap. 1—10), and many other precepts from the Mosaic law (cap. 11—48). These are followed by a brief account of Apostolic history and of Church law, as laid down by ecclesiastical councils, both ecumenical and English (cap. 49 § 1—§ 7). The concluding words of cap. 49 § 8 state that compensations for misdeeds on the part of men were ordained at many councils, and written in their records, with varying provisions.</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

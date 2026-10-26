@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Cantuaria</title>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">Cantuaria</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, <biblScope unit="volume">2.1</biblScope> (Wörterbuch), <biblScope unit="page">30</biblScope>
+            <ptr type="facsimile" target="https://archive.org/details/diegesetzederang02liebuoft/page/30/mode/2up"/>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <revisionDesc>
+      <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-10-13">Corrected the superscript after Hn com Prot from * to a, checked against the print.</change>
+      <change when="2026-10-17">“Vgl.” (vergleiche, compare) linked to the abbreviations list.</change>
+      <change when="2026-10-17">“In Cn” and “In” (Instituta Cnuti) linked to the law codes list.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <entry xml:lang="la">
+        <form type="lemma">
+          <orth>Cantuaria</orth>
+        </form>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">Cantuaria</hi> <hi rend="italic">Canterbury</hi> [<hi rend="italic">Stadt</hi>] <ref type="lawCode" target="law:Ine">Ine</ref> 76,3 <ref type="lawCode" target="law:Quadr">Q</ref><hi rend="superscript">25</hi>. <ref type="lawCode" target="law:IIAs">II As</ref> 14,2 <ref type="lawCode" target="law:Quadr">Q</ref> ‖ Christes cyrican (<hi rend="italic"><ref type="abbreviation" target="gram:dasIst"><abbr>d. i.</abbr></ref> die Kathedrale</hi> Ęcclesia Christi) <ref type="lawCode" target="law:Grith">Grið</ref> 8; <hi rend="italic"><ref type="abbreviation" target="gram:daraus"><abbr>daraus</abbr></ref></hi> lex Cantia <ref type="lawCode" target="law:InCn">In Cn</ref> III 56 ‖ Sanctus Augustinus extra ~riam <hi rend="italic">Benedictiner-Abtei Saint Austin's bei Canterbury</hi> <ref type="lawCode" target="law:IIIEg">III Eg</ref> 8,3 <ref type="lawCode" target="law:Quadr">Q</ref><hi rend="superscript">7</hi>. <ref type="lawCode" target="law:Hn">Hn</ref> com Prot<hi rend="superscript">a</hi>; <hi rend="italic">dort Grab Augustin's</hi> <ref type="lawCode" target="law:ECf">ECf</ref> 8,3*. [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>Vgl</abbr></ref>.</hi> Cantwarabyrig]</dictScrap>
+        <xr type="lawCode"><ref target="clause:Ine_76-3">Ine 76,3</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIAs_14-2">II As 14,2</ref></xr>
+        <xr type="lawCode"><ref target="clause:Grith_8">Grið 8</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIIEg_8-3">III Eg 8,3</ref></xr>
+        <xr type="lawCode"><ref target="law:ECf">ECf 8,3</ref></xr>
+      </entry>
+    </body>
+  </text>
+</TEI>

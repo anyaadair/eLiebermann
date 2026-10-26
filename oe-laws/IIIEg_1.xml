@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="IIIEg_1">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>III Eg 1</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#robertson">Robertson</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Cross-references to other clauses</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Robertson’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Whitelock’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">IIIEg_1</idno>
+        <idno type="citation">III Eg 1</idno>
+        <idno type="lawCode">III Eg</idno>
+        <idno type="lawCodeAnchor">IIIEg</idno>
+        <idno type="clause">1</idno>
+        <idno type="citationKey">IIIEg 1</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>III Edgar (Andover)</title> <note type="reign">Edgar, r. 957/9–975</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">200</biblScope></bibl>
+          <bibl xml:id="robertson" type="edition">A. J. Robertson, <title>The Laws of the Kings of England from Edmund to Henry I</title> (Cambridge: Cambridge University Press, 1925), p. <biblScope unit="page">24</biblScope></bibl>
+          <bibl xml:id="rabin-doml" type="edition">Andrew Rabin, ed. and trans., <title>Old English Legal Writings: Wulfstan</title>, Dumbarton Oaks Medieval Library (Cambridge, MA: Harvard University Press, 2020), p. <biblScope unit="page">354</biblScope></bibl>
+          <bibl xml:id="whitelock" type="translation">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007), p. <biblScope unit="page">435</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-d" rend="bold"><abbr>D</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 201</note></witness>
+          <witness xml:id="wit-g-a"><abbr>G(A)</abbr> <note type="manuscript">London, British Library, Cotton Nero A.i</note></witness>
+          <witness xml:id="wit-a"><abbr>A</abbr> <note type="manuscript">London, British Library, Harley 55</note></witness>
+          <witness xml:id="wit-q"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note></witness>
+          <witness xml:id="wit-ld"><abbr>Ld</abbr> <note type="manuscript">William Lambarde, Archaionomia (London, 1568) – printed from manuscripts now lost</note></witness>
+          <witness xml:id="wit-so"><abbr>So</abbr> <note type="manuscript">William Somner's transcript of Cotton Otho B.xi (made before the fire)</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 200">959–c.962</date><date source="#robertson">after IV Eg</date><date source="#whitelock" n="EHD p. 434">959–63</date><placeName>Andover</placeName><note type="promulgation">959–c.962 (Liebermann, I p. 200); after IV Eg (Robertson); 959–63 (Whitelock, EHD p. 434); Andover</note></creation>
+      <textClass>
+        <keywords n="people"><term>King</term><term>Edgar</term><term>Nobles</term><term>Secular classes</term><term>Rank</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 952 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 200.</change>
+      <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 200: “Ðis is þonne seo woroldcunde gerædnes, þe ic wille, þæt man healde.” → “Ðis is þonne seo woroldcunde gerædnes, þe ic wille, þæt man healde. (expanded letters in italics: ne, æt)”.</change>
+      <change when="2026-10" type="checked">Liebermann’s text of MS D added from Gesetze I, p. 200.</change>
+      <change when="2026-10" type="checked">The modern editor’s text corrected against Robertson, p. 24: “[Ld]” → “∅”.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="1">
+        <head><ref type="lawCode" target="law:IIIEg">III Eg</ref> 1</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="1" corresp="#wit-g-a"><ptr type="liebermannNote" n="*" target="#IIIEg_1.lnote.oe.star"/><pb n="200" ed="#liebermann"/>Ðis is þon<hi rend="italic">ne</hi> seo woruldcunde<ptr type="liebermannNote" n="1" target="#IIIEg_1.lnote.oe.1"/> gerædnes<ptr type="liebermannNote" n="2" target="#IIIEg_1.lnote.oe.2"/>, þe ic wille, þ<hi rend="italic">æt</hi> man<ptr type="liebermannNote" n="3" target="#IIIEg_1.lnote.oe.3"/> ealde.<ptr type="liebermannNote" n="4" target="#IIIEg_1.lnote.oe.4"/></ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="1" corresp="#wit-a"><pb n="200" ed="#liebermann"/>Ðis is þon<hi rend="italic">ne</hi> seo woroldcunde gerædnes, þe ic wille, þ<hi rend="italic">æt</hi> man healde.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="1" corresp="#wit-d"><pb n="200" ed="#liebermann"/>Þis is ðon<hi rend="italic">ne</hi> seo worldcunde gerædnes, þe ic wille, þ<hi rend="italic">æt</hi> man healde.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="1" corresp="#wit-q"><pb n="201" ed="#liebermann"/>Hec est institutio secularis, quam uolo per omnia teneri.</ab>
+        <ab type="editionText" xml:lang="ang" source="#robertson" n="1" corresp="#wit-d"><pb n="24" ed="#robertson"/>[Weoruldcund gerædnysse.]<ptr type="editorNote" n="2" target="#IIIEg_1.robnote.fn.2"/> Þis is ðonne seo worldcunde gerædnes þe ic wille þæt man healde.</ab>
+        <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-g-a"><pb n="354" ed="#rabin-doml"/>Ðis is þonne seo woruldcunde gerædnes þe ic wille þæt man healde.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="201" ed="#liebermann"/>Dies<ptr type="liebermannNote" n="1" target="#IIIEg_1.lnote.de.1"/> ist nun die weltliche Verordnung, die ich will, dass man halte.</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">This, then, is the secular ordinance which I will that men keep.</ab>
+        <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-d"><pb n="25" ed="#robertson"/>My will is further<ptr type="editorNote" n="1" target="#IIIEg_1.robnote.n.1"/> that the following be observed as a secular ordinance.</ab>
+        <ab type="translation" xml:lang="en" source="#whitelock"><pb n="435" ed="#whitelock"/>This now is the secular ordinance which I wish to be observed.</ab>
+        <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-g-a"><pb n="355" ed="#rabin-doml"/>This is the secular decree that I command my subjects to obey.</ab>
+        <note type="comparedBy" source="#liebermann"><ref target="clause:VAtr_1-1">V Atr 1.1</ref>; <ref target="clause:IICn_Prol">II Cn Prol.</ref></note>
+        <note type="comparedBy" source="#wormald-mel" n="353"><ref target="clause:IICn_1">II Cn 1</ref></note>
+        <note type="editorial">G's ‘ealde’ had ‘h’ added later.</note>
+        <note type="textual" source="#rabin-doml">D adds rubric Eadgares cynincges gerædnes</note>
+        <note type="textual" source="#rabin-doml">healde: ealde G1</note>
+        <note type="translator" source="#rabin-doml">This is the secular decree: Although it is editorial convention to divide these texts into two separate pieces of legislation, no such division is indicated in the manuscripts, where 2 Edgar continues on to 3 Edgar without a break.</note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIIEg_1.lnote.oe.star" n="*" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">200</biblScope></bibl><seg type="original" xml:lang="de">Weoruldcund gerædnysse <hi rend="italic">Rb. Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">Weoruldcund gerædnysse rubric Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIIEg_1.lnote.oe.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">200</biblScope></bibl><seg type="original" xml:lang="de">-nd <hi rend="italic">So Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">-nd So Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIIEg_1.lnote.oe.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">200</biblScope></bibl><seg type="original" xml:lang="de">-esse <hi rend="italic">So;</hi> -nysse <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">-esse So; -nysse Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIIEg_1.lnote.oe.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">200</biblScope></bibl><seg type="original" xml:lang="de">mon <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">mon Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIIEg_1.lnote.oe.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">200</biblScope></bibl><seg type="original" xml:lang="de">h <hi rend="italic">vorgesetzt G;</hi> healde <hi rend="italic">So Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">h prefixed G; healde So Ld</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="IIIEg_1.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">136</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de">Ebenso beginnt II Cn</seg><seg type="translation" xml:lang="en" source="#claude">II Cn begins in the same way</seg></note>
+        <note type="editorNote" subtype="endnote" xml:id="IIIEg_1.robnote.n.1" n="1" source="#robertson"><bibl><biblScope unit="page">303</biblScope></bibl><seg type="original" xml:lang="en">In all the MSS there is no break between this code and the preceding one. That they were promulgated at the same meeting of the king and his councillors is apparent, as Liebermann points out, from the absence of any preamble or any mention of the king’s name, and from the use of the word <hi rend="italic">þonne</hi>. A similar arrangement is found in I and II Cn. where the secular part (II Cn.) opens with almost the same formula.</seg></note>
+        <note type="editorNote" subtype="footnote" xml:id="IIIEg_1.robnote.fn.2" n="2" source="#robertson"><bibl><biblScope unit="page">24</biblScope></bibl><label>gerædnysse</label><seg type="original" xml:lang="en">The rubrics are found in Ld only.</seg></note>
+        <note type="editorNote" subtype="endnote" xml:id="IIIEg_1.whinote.n.Introduction" n="Introduction" source="#whitelock" rend="wholeClause"><bibl><biblScope unit="page">434</biblScope></bibl><seg type="original" xml:lang="en">II and III Edgar are the ecclesiastical and secular sections of a single code. It survives complete in three manuscripts. Two, C.C.C.C., MS. 201 and B.L.Harley MS. 55, are connected with Archbishop Wulfstan, and there was once a version in the part of Nero A. 1 which has entries in his hand, though this has lost all up to III Edgar 3. Readings in these manuscripts alone are suspect as due to his influence. The third complete text is in Cott. Nero A. 1, but in a part which was originally distinct from the Wulfstan part, and which is in a mid-eleventh-century hand; there is also a fragment, Bodleian MS. Vet. A 3 c. 196, a late copy of a twelfth-century manuscript, and this, like the full text in Nero A. 1, is free from the Wulfstan influence. This code is not in the post-Conquest compilations, but it is in <hi rend="italic">Quadripartitus</hi>. The place of promulgation was Andover, if IV Edgar (No. 41) 1.4 refers to this code, and the date is not later than 963, the latest date for IV Edgar. The text is edited by Liebermann, I, 194–207; and with English translation by Robert son, pp. 20–9, and Thorpe, I, 262–71.</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

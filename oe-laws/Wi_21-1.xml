@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Wi_21-1">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Wi 21.1</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#oliver">Oliver</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#attenborough">Attenborough</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#oliver">Oliver</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Oliver’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">Wi_21-1</idno>
+        <idno type="citation">Wi 21.1</idno>
+        <idno type="lawCode">Wi</idno>
+        <idno type="lawCodeAnchor">Wi</idno>
+        <idno type="clause">21.1</idno>
+        <idno type="citationKey">Wi 21.1</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Wihtred’s Code</title> <note type="reign">Wihtred, r. 690/1–725</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">14</biblScope></bibl>
+          <bibl xml:id="oliver" type="edition">Lisi Oliver, <title>The Beginnings of English Law</title> (Toronto: University of Toronto Press, 2002), p. <biblScope unit="page">152</biblScope></bibl>
+          <bibl xml:id="attenborough" type="edition">F. L. Attenborough, <title>The Laws of the Earliest English Kings</title> (Cambridge: Cambridge University Press, 1922), p. <biblScope unit="page">28</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="whitelock" type="study">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007)</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-h"><abbr>H</abbr> <note type="manuscript">Strood, Medway Archive and Local Studies Centre, MS DRc/R1 (Textus Roffensis; formerly Rochester, Cathedral Library, A.3.5), c. 1120–25</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 12">695–6</date><date source="#attenborough #whitelock #wormald-mel" n="|EHD p. 396|MEL p. 102">6 Sept. 695</date><note type="promulgation">695–6 (Liebermann, I p. 12); 6 Sept. 695 (Attenborough; Whitelock, EHD p. 396; Wormald, MEL p. 102)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Legal principles</term><term>Church rights</term><term>Oath and pledge</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 184 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 14.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="21.1">
+        <head><ref type="lawCode" target="law:Wi">Wi</ref> 21.1</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="21.1" corresp="#wit-h"><pb n="14" ed="#liebermann"/>Ðanne is cirican canne riht:</ab>
+        <ab type="editionText" xml:lang="ang" source="#attenborough" corresp="#wit-h"><pb n="28" ed="#attenborough"/>Ðanne is cirican canne riht:</ab>
+        <ab type="editionText" xml:lang="ang" source="#oliver" corresp="#wit-h"><pb n="152" ed="#oliver"/>Ðanne is cirican canne riht.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="14" ed="#liebermann"/>Ferner<ptr type="liebermannNote" n="1" target="#Wi_21-1.lnote.de.1"/> ist der Kirche Reinigungsvorrecht<ptr type="liebermannNote" n="2" target="#Wi_21-1.lnote.de.2"/>:</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">Further, the Church’s privilege of exculpation is:</ab>
+        <ab type="translation" xml:lang="en" source="#attenborough" corresp="#wit-h"><pb n="29" ed="#attenborough"/>The Church has further prerogatives with regard to expurgation, [which are] as follows:</ab>
+        <ab type="translation" xml:lang="en" source="#oliver" corresp="#wit-h"><pb n="153" ed="#oliver"/>(This,)<ptr type="editorNote" n="e" target="#Wi_21-1.olinote.n.e"/> then is the church’s right of exculpation.</ab>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Wi_21-1.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">29</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Beginn neuen Unterabschnitts, der bis 24 reicht. <hi rend="italic">Vgl. Gl</hi> Reinigung 4</seg><seg type="translation" xml:lang="en" source="#claude">Beginning of a new subsection, which extends to 24. Cf. <hi rend="italic">Gl</hi> Reinigung 4</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Wi_21-1.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">29</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Die Missetat des Knechtes ist überall ohne des Herrn Mitwissen gedacht, da dieser erstens sonst nicht bloss Haftung (<hi rend="italic">s. d. Gl</hi> 6) trüge für Auslieferung desselben zur Strafe (bzw. für Zahlung an deren Stelle), sondern selbst strafbar würde, und zweitens in 23f. sogar ihn reinigen kann</seg><seg type="translation" xml:lang="en" source="#claude">The slave’s misdeed is throughout envisaged as committed without the lord’s knowledge, since otherwise, first, the lord would not merely bear liability (<hi rend="italic">see</hi> that word in <hi rend="italic">Gl</hi> 6) for handing him over for punishment (or for payment in lieu of it) but would himself be punishable, and secondly, in 23f. he can even clear him</seg></note>
+        <note type="editorNote" subtype="translationFootnote" xml:id="Wi_21-1.olinote.n.e" n="e" source="#oliver"><bibl><biblScope unit="page">159</biblScope></bibl><label>(This,)</label><seg type="original" xml:lang="en">As this statement seems to sum up the foregoing rather than introduce the following clauses, I have inserted the demonstrative in the translation for clarity.</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

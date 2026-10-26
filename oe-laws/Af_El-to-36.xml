@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Af_El-to-36">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Af El. 36</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">Af_El-to-36</idno>
+        <idno type="citation">Af El. 36</idno>
+        <idno type="lawCode">Af</idno>
+        <idno type="lawCodeAnchor">Af</idno>
+        <idno type="clause">El. 36</idno>
+        <idno type="citationKey">Af el</idno>
+        <idno type="citationKey">Af 36</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Alfred’s Domboc</title> <note type="reign">Alfred, r. 871–899</note></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">38</biblScope></bibl>
+          <bibl xml:id="jurasinski-and-oliver" type="edition">Stefan Jurasinski and Lisi Oliver, <title>The Laws of Alfred: The Domboc and the Making of Anglo-Saxon Law</title> (Cambridge: Cambridge University Press, 2021), p. <biblScope unit="page">254</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="whitelock" type="study">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007)</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-e" rend="bold"><abbr>E</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 173 (Parker Chronicle and Laws)</note></witness>
+          <witness xml:id="wit-h"><abbr>H</abbr> <note type="manuscript">Strood, Medway Archive and Local Studies Centre, MS DRc/R1 (Textus Roffensis; formerly Rochester, Cathedral Library, A.3.5), c. 1120–25</note></witness>
+          <witness xml:id="wit-b-no-prol"><abbr>B (no Prol.)</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383</note></witness>
+          <witness xml:id="wit-g-prol-only"><abbr>G (Prol. only)</abbr> <note type="manuscript">London, British Library, Cotton Nero A.i</note></witness>
+          <witness xml:id="wit-q"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note></witness>
+          <witness xml:id="wit-ld"><abbr>Ld</abbr> <note type="manuscript">William Lambarde, Archaionomia (London, 1568) – printed from manuscripts now lost</note></witness>
+          <witness xml:id="wit-bu"><abbr>Bu</abbr></witness>
+          <witness xml:id="wit-ot-frags"><abbr>Ot (frags.)</abbr> <note type="manuscript">London, British Library, Cotton Otho B.xi (damaged by fire, 1731)</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 27">871 (after 890?)–901</date><date source="#whitelock" n="EHD p. 408">885–899</date><date source="#wormald-mel" n="MEL p. 286">after 893</date><note type="promulgation">871 (after 890?)–901 (Liebermann, I p. 27); 885–899 (Whitelock, EHD p. 408); after 893 (Wormald, MEL p. 286)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Surety</term><term>Legal obligations</term><term>Legal principles</term><term>Prayer</term></keywords>
+        <keywords n="people"><term>God</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 352 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 38.</change>
+      <change when="2026-10" type="checked">Liebermann’s text of MS G added from Gesetze I, p. 38.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="El. 36">
+        <head><ref type="lawCode" target="law:Af">Af</ref> El. 36</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="El. 36" corresp="#wit-e"><pb n="38" ed="#liebermann"/>Gif mon næbbe buton<ptr type="liebermannNote" n="44" target="#Af_El-to-36.lnote.oe.44"/> anfeald hrægl<ptr type="liebermannNote" n="45" target="#Af_El-to-36.lnote.oe.45"/> hine mid to wreonne<ptr type="liebermannNote" n="46" target="#Af_El-to-36.lnote.oe.46"/> ⁊ to werianne, ⁊ he hit<ptr type="liebermannNote" n="47" target="#Af_El-to-36.lnote.oe.47"/> to wedde selle<ptr type="liebermannNote" n="48" target="#Af_El-to-36.lnote.oe.48"/>, ǽr sunnan setlgonge<ptr type="liebermannNote" n="49" target="#Af_El-to-36.lnote.oe.49"/> sie<ptr type="liebermannNote" n="50" target="#Af_El-to-36.lnote.oe.50"/> hit agifen.<ptr type="liebermannNote" n="51" target="#Af_El-to-36.lnote.oe.51"/> Gif ðu swa ne dest, þonne cleopað he to me, ⁊ ic hine gehiere<ptr type="liebermannNote" n="52" target="#Af_El-to-36.lnote.oe.52"/>, forðon ðe ic eom swiðe mildheort.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="El. 36" corresp="#wit-g-prol-only"><pb n="38" ed="#liebermann"/>Gif man næbbe butan anfeald hrægl hine mid to wreonne oððe to werianne, ⁊ he hit to wedde sylle, ær sunnan setlgange sy hyt agyfen. Gif ðu swa ne dest, ðon<hi rend="italic">ne</hi> cleopað he to me, ⁊ ic hyne gehiere, forðon ðe ic eom swiðe mildheort.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="El. 36" corresp="#wit-h"><pb n="39" ed="#liebermann"/>Gif man næbbe butan anfeald hrægl<ptr type="liebermannNote" n="5" target="#Af_El-to-36.lnote.oe.5"/> hine mid to wreonne oððe to werianne, and he hit to wedde sylle<ptr type="liebermannNote" n="4" target="#Af_El-to-36.lnote.oe.4"/>, ær sunnan setlgange sy hit agifen. Gif þu swa ne dest, þonne clypiað hy to me, and ic hy gehyre, forðam þe ic eam swyþe mildheort.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="El. 36" corresp="#wit-q"><pb n="39" ed="#liebermann"/>Si pignus<ptr type="liebermannNote" n="5" target="#Af_El-to-36.lnote.oe.5-2"/> a proximo tuo acceperis uestimentum, ante solis occasum redde illi. Ipsum enim est solum quo operitur indumentum carnis eius, nec habet aliud in quo dormiat. Si clamauerit ad me, exaudiam eum, quia misericors sum.</ab>
+        <ab type="editionText" xml:lang="ang" source="#jurasinski-and-oliver" n="MP 36" corresp="#wit-e"><pb n="254" ed="#jurasinski-and-oliver"/>Gif mon næbbe buton anfeald hrægl hine mid to wreonne ⁊ to werianne, ⁊ he hit to wedde selle, ær sunnan setlgonge sie hit agifen. Gif ðu swa ne dest, þonne cleopað he to me, ⁊ ic hine gehiere, forðon ðe ic eom swiðe mildheort.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="39" ed="#liebermann"/>Wenn jemand nur<ptr type="liebermannNote" n="1" target="#Af_El-to-36.lnote.de.1"/> ein einziges Gewand hat, sich damit zu verhüllen und<ptr type="liebermannNote" n="2" target="#Af_El-to-36.lnote.de.2"/> zu decken, und er es zu Pfand giebt<ptr type="liebermannNote" n="4" target="#Af_El-to-36.lnote.de.4"/>, werde es vor Sonnen-Untergang zurückgegeben. Wenn du<ptr type="liebermannNote" n="5" target="#Af_El-to-36.lnote.de.5"/> nicht so handelst, dann wird er<ptr type="liebermannNote" n="6" target="#Af_El-to-36.lnote.de.6"/> zu mir rufen, und ich erhöre ihn<ptr type="liebermannNote" n="6" target="#Af_El-to-36.lnote.de.6"/>, weil ich sehr barmherzig bin.</ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">If someone has only a single garment to wrap and cover himself with, and he gives it as a pledge, let it be given back before sunset. If you do not act so, then he will cry to me, and I will hear him, because I am very merciful.</ab>
+        <ab type="translation" xml:lang="en" source="#jurasinski-and-oliver" corresp="#wit-e"><pb n="255" ed="#jurasinski-and-oliver"/>If someone has but one article with which to cover and clothe himself, and he gives it to you in pledge, let it be returned to him before the setting of the sun. If you do not do so, then he will cry out to me, and I will hear him, because I am greatly merciful.</ab>
+        <note type="passageSource">Exodus 22,26–27</note>
+        <note type="comparison" source="#liebermann" n="39">Exodus 22.26f.</note>
+        <note type="comparisonPrinted" source="#liebermann">[22, 26 f.]</note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_El-to-36.lnote.oe.44" n="44" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">38</biblScope></bibl><seg type="original" xml:lang="de">butan <hi rend="italic">So</hi></seg><seg type="translation" xml:lang="en" source="#claude">butan So</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_El-to-36.lnote.oe.45" n="45" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">38</biblScope></bibl><seg type="original" xml:lang="de">-le <hi rend="italic">So Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">-le So Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_El-to-36.lnote.oe.46" n="46" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">38</biblScope></bibl><seg type="original" xml:lang="de">wreon ⁊ to werian <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">wreon ⁊ to werian Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_El-to-36.lnote.oe.47" n="47" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">38</biblScope></bibl><seg type="original" xml:lang="de">him <hi rend="italic">So</hi></seg><seg type="translation" xml:lang="en" source="#claude">him So</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_El-to-36.lnote.oe.48" n="48" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">38</biblScope></bibl><seg type="original" xml:lang="de">sylle <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">sylle Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_El-to-36.lnote.oe.49" n="49" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">38</biblScope></bibl><seg type="original" xml:lang="de">setlegong <hi rend="italic">So</hi></seg><seg type="translation" xml:lang="en" source="#claude">setlegong So</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_El-to-36.lnote.oe.50" n="50" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">38</biblScope></bibl><seg type="original" xml:lang="de">sy <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">sy Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_El-to-36.lnote.oe.51" n="51" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">38</biblScope></bibl><seg type="original" xml:lang="de">agyfen <hi rend="italic">So Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">agyfen So Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_El-to-36.lnote.oe.52" n="52" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">38</biblScope></bibl><seg type="original" xml:lang="de">gehyre <hi rend="italic">So Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">gehyre So Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_El-to-36.lnote.oe.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">39</biblScope></bibl><seg type="original" xml:lang="de">h <hi rend="italic">übergeschr.</hi></seg><seg type="translation" xml:lang="en" source="#claude">h written above</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_El-to-36.lnote.oe.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">39</biblScope></bibl><seg type="original" xml:lang="de">y <hi rend="italic">auf Rasur</hi></seg><seg type="translation" xml:lang="en" source="#claude">y on an erasure</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_El-to-36.lnote.oe.5-2" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">39</biblScope></bibl><seg type="original" xml:lang="de">pug. <hi rend="italic">R</hi></seg><seg type="translation" xml:lang="en" source="#claude">pug. R</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Af_El-to-36.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">46</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">Über diese Konstruktion <hi rend="italic">s. Wb: buton</hi> II 2b</seg><seg type="translation" xml:lang="en" source="#claude">On this construction <hi rend="italic">see Wb: buton</hi> II 2b</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Af_El-to-36.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">46</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">oððe</hi> G H heisst zwar öfter ‘und’; Klaeber in <hi rend="italic">Anglia</hi> 25, 269. Doch stand vielleicht <hi rend="italic">o. to w.</hi> ursprünglich über <hi rend="italic">wreonne</hi> als Glosse, so dass <hi rend="italic">oððe</hi> (für <hi rend="italic">vel</hi>) authentischer wäre</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">oððe</hi> G H does indeed often mean ‘and’; Klaeber in <hi rend="italic">Anglia</hi> 25, 269. But perhaps <hi rend="italic">o. to w.</hi> originally stood above <hi rend="italic">wreonne</hi> as a gloss, so that <hi rend="italic">oððe</hi> (for <hi rend="italic">vel</hi>) would be more authentic</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Af_El-to-36.lnote.de.4" n="4" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">46</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">Praktisch höchstens giltig als moralische Mahnung zur Milde fürs harte German. Pfandrecht</seg><seg type="translation" xml:lang="en" source="#claude">In practice valid at most as a moral exhortation to leniency, in view of the harsh Germanic law of pledge</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Af_El-to-36.lnote.de.5" n="5" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">46</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">Ähnlich El 34</seg><seg type="translation" xml:lang="en" source="#claude">Similarly El 34</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Af_El-to-36.lnote.de.6" n="6" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">46</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">Pl. ‘werden sie—sie’ H, nach El 34</seg><seg type="translation" xml:lang="en" source="#claude">Pl. ‘they will—they’ H, after El 34</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Af_El-to-36.lnote.de.3" n="3" source="#liebermann-erkl" rend="wholeClause"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">46</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">[Setze diese Anm.-Zahl zu ‘decken’]. <hi rend="italic">Vgl. Wb: werian</hi> II; ‘to wear’ Price-Thorpe; diesen Sinn hat Ælfred <hi rend="italic">Oros.</hi> ed. Sweet 190. Schmid 676 bevorzugt ‘schützen’</seg><seg type="translation" xml:lang="en" source="#claude">[Put this note number at ‘decken’]. <hi rend="italic">Cf. Wb: werian</hi> II; ‘to wear’ Price-Thorpe; Ælfred <hi rend="italic">Oros.</hi> ed. Sweet 190 has this sense. Schmid 676 prefers ‘protect’</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>
