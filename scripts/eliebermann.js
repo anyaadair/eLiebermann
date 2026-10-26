@@ -395,7 +395,7 @@
     // "sbj 3"): person and number, not a spelling followed by a clause.
     const GRAM_LABELS = new Set(['pl', 'sg', 'op', 'sbj', 'sbjf', 'ipf', 'pf', 'pc', 'ptt', 'pt', 'prs', 'prd', 'praes',
         'fut', 'inf', 'imp', 'no', 'nom', 'gn', 'dt', 'ac', 'instr', 'obl', 'voc', 'nt', 'fm', 'msc', 'm', 'f', 'st',
-        'praed', 'sbst', 'attr', 'adj', 'adv', 'spl', 'spla', 'cj', 'prp', 'prn', 'sb']);
+        'praed', 'sbst', 'attr', 'adj', 'adv', 'spl', 'spla', 'cj', 'prp', 'prn', 'sb', 'gen', 'akk', 'dat']);
     const SIGLA = new Set(['MsA', 'B', 'Bu', 'C', 'D', 'E', 'F', 'G', 'G2', 'H', 'Hk', 'I', 'K', 'Ld', 'O', 'Ot',
         'So', 'Vt', 'Io', 'Isp', 'Quadr', 'InCn', 'ConsCn', 'WlEdmr', 'Wb', 'LatVersion']);
     // "L" after a passage (msAbb: LatVersion) is the Latin version Liebermann prints
@@ -406,7 +406,12 @@
     const QUALIFIERS = new Set(['El', 'Rb', 'retr']);
     // A passage: 41, 2,1, 70,21a, Insc., Prol., or a line (Zeile) of a text
     // Liebermann numbers by lines, such as Nor grið Z. 6.
-    const PASSAGE = String.raw`(?:\d+[a-z]{0,2}(?:,\d+[a-z]{0,2})*|Inscr?\.?|Prol?\.?|Epil\.?|Z\.\s?\d+)`;
+    const PASSAGE = String.raw`(?:\d+[a-z]{0,2}(?:,\d+[a-z]{0,2})*|Inscr?\.?|Prol? \d+[a-z]?(?:,\d+[a-z]?)*(?![\d,])|Prol?\.?|Epil\.?|Z\.\s?\d+)`;
+    // A spelling (or phrase of up to three words) then a passage of the code already
+    // running: see scanCitations. Groups: 1 everything before the number, 2 the
+    // spelling, 3 the number. The number must end the citation.
+    const SPELLING_WORD = String.raw`[\p{Ll}~æðþǣ][\p{L}~\-]*`;
+    const SPELLING_PASSAGE = new RegExp(String.raw`^(\s*(?:;|\|(?:\s*[\p{L}\d .]{1,15}:)?|(?:\s*u\.\s*oft|\s*[;|]\s*` + SPELLING_WORD + String.raw`)?\s*\d{1,2}[a-z]?\)[^;|:()\[\]\u0001-\u0004]{0,40}:)\s*(` + SPELLING_WORD + String.raw`(?:\s+(?:\[[^\]\d]*\]\s+)?` + SPELLING_WORD + String.raw`){0,2}(?:\s+\[[^\]\d]*\])?)\s+)(` + PASSAGE + String.raw`)(?![\p{L}\d])(?=\s*(?:$|[;|‖=\[\u0001\u0004]|\.\s*(?:$|[\d;|‖(—\u0001\u0004])|\((?!\d)|ff?\.|—|,\s|u\.\s*(?:oft|öfter)|\d{1,2}[a-z]?\)|\p{L}\)|[IVX]+\)))`, 'u');
 
     /**
      * The law code passages cited in an entry's TEI text (the inside of
@@ -419,17 +424,28 @@
         const unescape = t => t.replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&amp;/g, '&');
         // Law code refs become \u0001anchor\u0002label\u0003; superscripts
         // (footnotes, variants) and line or page breaks become a stop (\u0004).
+        // A raised number straight after a citation ("ECf 20,3²") is the number of
+        // Liebermann's footnote there: it is kept as the citation's note.
+        const raised = [];
         const flat = String(teiText || '')
-            .replace(/<hi rend="superscript">[\s\S]*?<\/hi>/g, '\u0004')
+            .replace(/<hi rend="superscript">([\s\S]*?)<\/hi>/g, (m, t) => { raised.push(t.replace(/<[^>]*>/g, '').trim()); return '\u0004'; })
             .replace(/<(lb|pb)\b[^>]*\/>/g, ' ')
             .replace(/<ref type="lawCode" target="law:([^"]*)">([\s\S]*?)<\/ref>/g, (m, a, l) => `\u0001${a}\u0002${l.replace(/<[^>]*>/g, '')}\u0003`)
             .replace(/<[^>]*>/g, '');
+        const text0 = unescape(flat);
+        const noteAt = end => {
+            if (text0[end] !== '\u0004') return '';
+            const n = raised[(text0.slice(0, end).match(/\u0004/g) || []).length] || '';
+            return /^\d+$/.test(n) ? n : '';
+        };
         const out = [], seen = new Set();
         let lastNew = -1;   // where the last citation went in out, if it was new there
-        scanCitations(unescape(flat), (text, anchor, start, end, replaces) => {
-            if (replaces && lastNew >= 0) { out[lastNew] = { text, anchor }; seen.add(text); return; }
+        scanCitations(text0, (text, anchor, start, end, replaces) => {
+            const note = noteAt(end);
+            const c = note ? { text, anchor, note } : { text, anchor };
+            if (replaces && lastNew >= 0) { out[lastNew] = c; seen.add(text); return; }
             lastNew = -1;
-            if (!seen.has(text)) { seen.add(text); lastNew = out.push({ text, anchor }) - 1; }
+            if (!seen.has(text)) { seen.add(text); lastNew = out.push(c) - 1; }
         });
         return out;
     }
@@ -459,16 +475,22 @@
         const passages = (text, pos) => {
             let rest = text, at = pos, m;
             // The passage follows after a space (Af 41) or, for Liebermann's "Cn 1020,11"
-            // and "Iud Dei X,17", straight after a comma.
-            if (code && (m = new RegExp(`^(\\s+|,(?=\\d))(${PASSAGE})(?![\\p{L}\\d])(?<!(?:^|[^\\d,])\\d{1,2}[a-z]?(?=\\)))`, 'u').exec(rest)) && (!last || !open || last.anchor !== code.anchor || code.fresh)) {
+            // and "Iud Dei X,17", straight after a comma; "V As. Pro 2" has a full stop.
+            // A number before ")" is usually a sense number ("2)"), but not straight after
+            // a code inside an open bracket: "(? nihtæ Ine Rb 73)".
+            const inBracket = flat.lastIndexOf('(', at) > flat.lastIndexOf(')', at);
+            const sense = code && code.fresh && inBracket ? '' : '(?<!(?:^|[^\\d,(])\\d{1,2}[a-z]?(?=\\)))';
+            if (code && (m = new RegExp(`^(\\.?\\s+|,(?=\\d))(${PASSAGE})(?![\\p{L}\\d])${sense}`, 'u').exec(rest)) && (!last || !open || last.anchor !== code.anchor || code.fresh)) {
                 const n = m[2].replace(/\.$/, ''), s = at + m[1].length;
-                add(code.label + (m[1] === ',' ? ',' : ' ') + n, s, s + n.length);
+                add(code.label + (m[1] === ',' ? ',' : ' ') + n.replace(/^Prol?\.?\s*(?=\d)/, 'Pro '), s, s + n.length);
                 rest = rest.slice(m[0].length); at += m[0].length; code.fresh = false;
             } else if (code && code.fresh && !/^\s*$/.test(rest)) {
                 code = null;   // a code with no passage after it, e.g. "VI As" in a sentence
             }
             for (;;) {
-                while (code && last && (m = new RegExp(`^(?:\\s*\\([^()]*\\))?\\s*\\.?\\s+(${PASSAGE})(?![\\p{L}\\d])(?<!(?:^|[^\\d,])\\d{1,2}[a-z]?(?=\\)))`, 'u').exec(rest))) {
+                // "20,3²." (a superscript note number), "2 ff. 45", "14 f. 18 f.", "Abt 3. (73)"
+                while (code && last && (m = new RegExp(`^\\u0004?(?:\\s*ff?\\.)?(?:\\s*\\([^()]*\\))?\\s*\\.?(?:\\s+\\(?|\\s*\\()(${PASSAGE})(?![\\p{L}\\d])(?<!(?:^|[^\\d,(])\\d{1,2}[a-z]?(?=\\)))`, 'u').exec(rest))) {
+                    if (/\($/.test(m[0].slice(0, m[0].length - m[1].length)) && !/^\s*(?:$|\)|[.;=,]|\u0001|ff?\.)/.test(rest.slice(m[0].length))) break;
                     const n = m[1].replace(/\.$/, ''), s = at + m[0].length - m[1].length;
                     // after a line ("Z. 6. 9"), a bare number is another line
                     const line = /^\d+$/.test(n) && / Z\. ?\d+$/.test(last.text) ? 'Z. ' : '';
@@ -488,11 +510,14 @@
                 // spelling (lower case, one word) then a number is another passage of
                 // the same code. So too after "|" between grammatical forms, with or
                 // without a label: "Geþyncðo 2; sele 3 | hirede 3", "Rect 20 | dt: ~ce
-                // 18,1". A grammatical abbreviation is not a spelling ("| pl 1; we",
+                // 18,1"; and after a numbered meaning, which goes on with the code before it:
+                // "sacerdon 4,2 u. oft 2) -an für -um: lareowan 21". The spelling may be a
+                // phrase of up to three words ("of eardan 3", "gast þin halig 3,2", "þridde
+                // siðe [instr] 83,2"). A grammatical abbreviation is not a spelling ("| pl 1; we",
                 // "| pl 3: ~að"). The number must end the citation (punctuation, a
                 // manuscript letter, a sense number "2)", or the end), so "to 3 tunan",
                 // "ofer 5 ~", "im 12. Jh." and "an 7 (9) nihtum" are not read as passages.
-                if (code && last && last.anchor === code.anchor && (m = new RegExp(`^(\\s*(?:;|\\|(?:\\s*[\\p{L}\\d .]{1,15}:)?)\\s*([\\p{Ll}~æðþǣ][\\p{L}~\\-]*)\\s+)(${PASSAGE})(?![\\p{L}\\d])(?=\\s*(?:$|[;|‖=\\[\\u0001\\u0004]|\\.\\s*(?:$|[\\d;|‖(—\\u0001\\u0004])|\\((?!\\d)|ff?\\.|—|,\\s|\\d{1,2}[a-z]?\\)|\\p{L}\\)))`, 'u').exec(rest)) && !GRAM_LABELS.has(m[2])) {
+                if (code && last && last.anchor === code.anchor && (m = SPELLING_PASSAGE.exec(rest)) && !/north\./.test(m[1]) && !m[2].replace(/\[[^\]]*\]/g, ' ').split(/\s+/).some(w => GRAM_LABELS.has(w))) {
                     const n = m[3].replace(/\.$/, ''), s = at + m[1].length;
                     add(code.label + ' ' + n, s, s + n.length);
                     rest = rest.slice(m[0].length); at += m[0].length;
@@ -545,7 +570,12 @@
                 }
                 // keep the run going so "Af 41 B. 43" still reads as Af 43
                 open = attached && /^\s*$/.test(text);
-                if (code && last && /^\.\s+\d/.test(text)) { passages(text, pos); } else if (!/^\s*$/.test(text)) { code = code && /^[\s.]*$/.test(text) ? code : null; }
+                // "Ine Bu 21,1. 23": a manuscript between the code and its number.
+                // After a passage and its manuscript the run goes on with ". 43", "; rihtwere 53",
+                // "| folgæres 20a", "(58 B)" or "14 B ff."; the paren of a manuscript reading
+                // ("Had 3 O (~dran D). 4") has already become spaces.
+                if (code && code.fresh && /^\s+\d/.test(text)) { passages(text, pos); }
+                else if (code && last && /^\s*(?:\.\s*\(?\d|[;|]|\(\d|ff?\.)/.test(text)) { passages(text, pos); } else if (!/^\s*$/.test(text)) { code = code && /^[\s.]*$/.test(text) ? code : null; }
                 continue;
             }
             if (QUALIFIERS.has(anchor)) {
@@ -583,6 +613,7 @@
                     try { anchor = decodeURIComponent(n.getAttribute('href').split('#')[1] || ''); } catch (e) { /* keep '' */ }
                     return put('\u0001' + anchor + '\u0002' + n.textContent + '\u0003', null, 0);
                 }
+                if (n.localName === 'a' && n.classList.contains('ed-note-ref')) return;
                 if (n.localName === 'a') return put(n.textContent, null, 0);
                 if (n.localName === 'sup' && !n.classList.contains('lang-marker')) return put('\u0004', null, 0);
                 if (n.localName === 'br' || n.classList.contains('pb')) return put(' ', null, 0);
@@ -697,6 +728,52 @@
         return { head: text.slice(0, cuts[0].at), parts };
     }
 
+    /**
+     * Splits one division of a grammatical entry (HTML) where Liebermann's
+     * layout runs on but a new list begins: before "‖" (kind 'strong'), before
+     * a case heading after "|" ("| <em>Genetiv</em>") or after a bold Singular
+     * or Plural ("<strong><em>Plural</em></strong> <em>Nominativ</em>") (kind
+     * 'case'), and before a Greek sub-list "α)" (kind 'greek'). The "|" and "‖"
+     * at a break are dropped: the new line takes their place. Only breaks
+     * outside any element count. Returns [{ kind, html }], the first 'first'.
+     */
+    function splitBreaks(html) {
+        const text = String(html || '');
+        const CASE = String.raw`(?:<[^>]+>)*(?:Nominativ|Nomin\.|Genetiv|Gen\.|Dativ|Accusativ|Accus\.|Instrumental|Instr\.|Vocativ|Locativ)`;
+        const re = new RegExp(String.raw`‖\s*|\|\s*(?=<(?:em|i)>${CASE})|(?<=<(?:strong|b)><(?:em|i)>(?:Singular|Plural|Dual)</(?:em|i)></(?:strong|b)>)\s*(?=<(?:em|i)>${CASE})|(?<=^|[\s>])(?=(?:<(?:em|i)>)?[α-ω](?:<\/(?:em|i)>)?\))`, 'gu');
+        // The elements open at a position: a break inside italic or bold is
+        // allowed (it is closed before the break and opened again after it);
+        // inside anything else (a link, an abbreviation) it is not.
+        const openAt = pos => {
+            const stack = [];
+            for (const t of text.slice(0, pos).matchAll(/<(\/?)([A-Za-z]+)\b[^>]*?(\/?)>/g)) {
+                if (t[3] || /^(br|hr|img|wbr|input)$/i.test(t[2])) continue;
+                if (t[1]) stack.pop(); else stack.push(t[0]);
+            }
+            return stack;
+        };
+        const cuts = [];
+        let m;
+        while ((m = re.exec(text))) {
+            if (m[0] === '' && re.lastIndex === m.index) re.lastIndex++;
+            const open = openAt(m.index);
+            if (!open.every(t => /^<(em|i|strong|b)>$/.test(t))) continue;
+            const kind = m[0].startsWith('‖') ? 'strong' : !m[0].trim() && /^(?:<(?:em|i)>)?[α-ω]/.test(text.slice(m.index)) ? 'greek' : 'case';
+            if (cuts.length && cuts[cuts.length - 1].end > m.index) continue;
+            cuts.push({ at: m.index, end: m.index + m[0].length, kind, open });
+        }
+        const close = open => open.slice().reverse().map(t => '</' + t.slice(1, -1) + '>').join('');
+        const out = [];
+        let prevOpen = [];
+        [{ at: 0, end: 0, kind: 'first', open: [] }].concat(cuts).forEach((c, i, all) => {
+            const next = all[i + 1];
+            let body = text.slice(c.end, next ? next.at : text.length);
+            body = c.open.join('') + body + (next ? close(next.open) : '');
+            out.push({ kind: c.kind, html: body.replace(/<(em|i|strong|b)>\s*<\/\1>/g, '') });
+        });
+        return out.filter((p, i) => i === 0 || p.html.replace(/<[^>]+>/g, '').trim());
+    }
+
     /** The numbered meanings of an entry's TEI text as a <dictScrap type="senses">, or ''. */
     function sensesXml(entryTei, indent) {
         const { senses } = splitSenses(entryTei);
@@ -714,7 +791,8 @@
     function citationXr(entryTei, extra) {
         const found = extractCitations(entryTei);
         const have = new Set(found.map(c => c.text));
-        const xr = found.map(c => `<xr type="lawCode"><ref target="law:${escapeXml(c.anchor)}">${escapeXml(c.text)}</ref></xr>`);
+        // n: Liebermann's footnote at the passage ("ECf 20,3²"), shown as "note 2"
+        const xr = found.map(c => `<xr type="lawCode"${c.note ? ` n="${escapeXml(c.note)}"` : ''}><ref target="law:${escapeXml(c.anchor)}">${escapeXml(c.text)}</ref></xr>`);
         (extra || []).filter(l => l.text || l.url).forEach(l => {
             const text = (l.text || l.url).replace(/\s+/g, ' ').trim();
             if (!l.url && have.has(text)) return;
@@ -890,6 +968,12 @@ ${translation}
                 return `<a href="${escapeXml(target)}"${cls}${ext}>${inner()}</a>`;
             }
             case 'ptr': {
+                // <ptr type="editorNote" target="#edn-1"/> in Liebermann's text: a marker
+                // that takes the reader to the editor's note with that xml:id below.
+                if (attr('type') === 'editorNote') {
+                    const id = attr('target').replace(/^#/, '');
+                    return `<a class="ed-note-ref" href="#${escapeXml(id)}" id="${escapeXml(id)}-ref" title="See the editor’s note below">Editor’s note ↓</a>`;
+                }
                 const target = resolveTarget(attr('target'), root);
                 return `<a href="${escapeXml(target)}" target="_blank" rel="noopener">${escapeXml(target)}</a>`;
             }
@@ -985,7 +1069,7 @@ ${translation}
     const api = {
         TEI_NS, LANGUAGES, LANGUAGE_CODES, languageBadge, properNounBadge, isProperNoun, hiddenLanguages, setHiddenLanguages, isShown,
         useDom, slugify, sortKey, alphaKey, letterOf, ALPHABET, escapeXml, safeUrl,
-        linkAbbreviations, loadAbbreviations, extractCitations, linkClauseNumbers, citationXr, splitSenses, splitOutline, sensesXml, detectLanguage, detectHeadword,
+        linkAbbreviations, loadAbbreviations, extractCitations, linkClauseNumbers, citationXr, splitSenses, splitOutline, splitBreaks, sensesXml, detectLanguage, detectHeadword,
         inlineToTei, isEmptyHtml, buildEntryXml,
         renderTei, resolveTarget, readEntry
     };

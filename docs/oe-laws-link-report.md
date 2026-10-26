@@ -3,52 +3,38 @@
 Made by `tools/link-citations.py --letter ALL`. It is replaced each time the tool runs.
 
 ```
-All entries: 9091 (with a law code citation list: 6404)
-Citations in their lists: 30514
-  linked, exact            1231
-  linked, subclause          63
-  linked, and-following       2
-  linked, instituta           1
-  linked, already linked  27780
-  LINKED TO A CLAUSE:       29077  (95% of all citations; 99% of those with a clause number to a code in the database)
-  not linked, clause not found            355
-  not linked, code not in database       1076
-Entries changed: 114; entries whose whole list is linked: 5483
+All entries: 9091 (with a law code citation list: 6406)
+Citations in their lists: 31114
+  linked, correction          2
+  linked, already linked  29721
+  LINKED TO A CLAUSE:       29723  (96% of all citations; 99% of those with a clause number to a code in the database)
+  not linked, clause not found            294
+  not linked, code not in database       1097
+Entries changed: 1; entries whose whole list is linked: 5535
 ```
 
 ## The code is in the database but no clause file has that number
 
-By code: Ine (77), Ath (34), Ger (32), Rect (28), ICn (23), IICn (21), Af (20), Iudex (19), VAs (10), IIAs (6), IIAtr (5), Hn (5), VIAs (5), IVEg (4), LeisWl (4)
+By code: Ine (78), Ath (34), Ger (33), Iudex (19), Af (16), IICn (13), VAs (10), IIAs (7), ICn (6), Hn (6), IIAtr (5), Grith (4), IudDeiV (3), IIIEm (3), IIEg (3)
 
 Citations (with how many times each occurs):
 
 - Ine Pro ×66
 - Að 2 ×34
-- Rect 4a ×25
 - Ger 15,1 ×21
 - Iudex 1 ×19
-- Ger 18,1 ×9
+- Ger 18,1 ×10
 - V As 3,1 ×9
-- I Cn 1a ×6
-- I Cn 1b ×6
-- I Cn 1c ×5
 - Ine Insc ×4
-- Af El 49,9f ×3
 - Af Insc ×3
-- II Cn 80,1b ×3
+- Hn Pro 1 ×3
 - II Cn Insc ×3
 - Ine Rb Pro ×3
-- X Atr 3 ×3
-- Af El 11f ×2
 - Af El 42,1 ×2
 - Grið Insc ×2
-- Hn 2 ×2
-- Hn 8,1b ×2
-- II Cn 80,1a ×2
-- IV Eg 5a ×2
+- Hn Pro 2 ×2
 - Rect Insc ×2
 - V Atr 42,2 ×2
-- VI As 6,2b ×2
 - AGu 8
 - Abt 24,88
 - Abt 3,31
@@ -57,6 +43,7 @@ Citations (with how many times each occurs):
 - Af 49,7
 - Af 49,9
 - Af 7,2
+- Af El 28,1
 - Af El 37,1
 - Af El 42,3
 - Af El Rb 49,6
@@ -82,59 +69,69 @@ Citations (with how many times each occurs):
 - Hu 2,4
 - Hu 76,7g
 - I As 5,1
+- I Cn 10,3
+- I Cn 15,2
+- I Cn 28
+- I Cn 30,8
+- I Cn 36
+- I Cn 38
+- I Em 1,2
+- I Em 7
+- I Ew 4
+- II As 12,1
 
 ## The code has no clause files
 
-By code: ECf (642), WlArtFz (325), ECfRetr (52), Lond (46), ApAGu (11)
+By code: ECf (643), WlArtFz (343), ECfRetr (52), Lond (47), ApAGu (12)
 
 Citations (with how many times each occurs):
 
 - ECf 32 ×97
-- Wl art Fz 5 ×28
-- Wl art Fz 6 ×26
+- Wl art Fz 5 ×29
+- Wl art Fz 6 ×29
+- Wl art Fz 2 ×26
 - ECf 13,1 ×25
-- Wl art Fz 2 ×24
 - Wl art Fz 3,1 ×24
+- Wl art Fz 4 ×23
 - ECf 11,1 ×22
-- Wl art Fz 4 ×21
+- Wl art Fz 10 ×21
 - Wl art Fz 1 ×20
-- Wl art Fz 10 ×20
 - ECf 33 ×19
 - Wl art Fz 8 ×17
+- Wl art Fz 8,2 ×16
 - Wl art Fz Insc ×16
-- Wl art Fz 8,2 ×15
-- Wl art Fz 3 ×14
-- Wl art Fz 7 ×14
+- Wl art Fz 3 ×15
+- Wl art Fz 7 ×15
+- Wl art Fz 8a ×14
 - Wl art Fz 8,1 ×13
-- Wl art Fz 8a ×13
+- Wl art Fz 8,3 ×13
+- Wl art Fz 9 ×13
 - ECf 35,1 ×12
-- Wl art Fz 8,3 ×12
-- ECf Pro ×11
+- Wl art Fz 3,2 ×11
 - Wl art Fz 6,1 ×11
-- Wl art Fz 9 ×11
+- ECf 21 ×10
 - ECf 35,2 ×10
-- Wl art Fz 3,2 ×10
+- Lond retr 1 ×10
 - ECf 12,6 ×9
-- ECf 21 ×9
 - ECf 30 ×9
 - ECf 32,2 ×9
 - ECf 36,5 ×9
-- Lond retr 1 ×9
 - ECf 12 ×8
 - ECf 12,10 ×8
 - Wl art Fz 6,2 ×8
-- ECf 1 ×7
 - ECf 10 ×7
 - ECf 11,2 ×7
 - ECf 12,3 ×7
 - ECf 23,1 ×7
+- ECf 34 ×7
 - ECf 34,2e ×7
 - ECf 35 ×7
 - Wl art Fz 6,3 ×7
 - ECf 22,3 ×6
-- ECf 34 ×6
 - ECf 36,3 ×6
 - ECf 4 ×6
+- ECf Pro ×6
+- ECf Pro 1 ×6
 - Lond retr 9 ×6
 - ECf 12,5 ×5
 - ECf 15,1 ×5

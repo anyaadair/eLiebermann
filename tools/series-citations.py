@@ -47,7 +47,7 @@ ROMAN = r'(?:XIII|XII|XIV|XVI|XV|XI|X|IX|VIII|VIIa|VII|VI|V|IV|III|II|I)'
 PASSAGE = r'(?:\d+[a-z]{0,2}(?:,\d+[a-z]{0,2})*|Inscr?\.?|Prol?\.?|Epil\.?)'
 REF = re.compile(r'<ref type="lawCode" target="law:(?P<anchor>[^"]+)">(?P<text>[^<]*)</ref>')
 SCRAP = re.compile(r'(<dictScrap type="(?:liebermann|senses)">)(.*?)(</dictScrap>)', re.S)
-XR_LINE = re.compile(r'^(?P<pad>[ \t]*)<xr type="lawCode"><ref(?: target="[^"]*")?>(?P<text>[^<]*)</ref></xr>[ \t]*$', re.M)
+XR_LINE = re.compile(r'^(?P<pad>[ \t]*)<xr type="lawCode"(?: n="[^"]*")?><ref(?: target="[^"]*")?>(?P<text>[^<]*)</ref></xr>[ \t]*$', re.M)
 
 
 class Series:

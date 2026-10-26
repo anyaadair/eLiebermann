@@ -83,11 +83,43 @@ scripts:
 
     // Liebermann's outline: each division (A), I), 2), b)) starts a new
     // paragraph, indented one step for each level below the top.
-    function paragraphs(html) {
+    // In the grammatical entries (Declination, Conjugation…), a case or number
+    // heading after "|" or "‖" ("| Genetiv", "‖ Plural Nominativ") and a Greek
+    // sub-list (α), β)) also start a new line: see ELieb.splitBreaks.
+    function paragraphs(html, grammatical) {
         const { head, parts } = ELieb.splitOutline(html);
         if (!parts.length) return html;
-        return (head.trim() ? `<p>${head.trim()}</p>` : '') + parts.map(s =>
-            `<p class="sense sense--${s.kind} sense--depth-${Math.min(s.depth, 4)}"><strong>${esc(s.marker)}</strong>) ${s.body.trim()}</p>`).join('');
+        // "… Ld! [5) dt für … H]": a bracket opened just before a marker goes with it
+        parts.forEach((s, i) => {
+            const m = /\[\s*$/.exec(s.body);
+            if (m && parts[i + 1]) { s.body = s.body.slice(0, m.index); parts[i + 1].open = '['; }
+        });
+        const rows = [];
+        if (head.trim()) rows.push({ html: head.trim(), depth: 0, cls: '' });
+        parts.forEach(s => {
+            const pieces = grammatical ? ELieb.splitBreaks(s.body) : [{ kind: 'first', html: s.body }];
+            pieces.forEach((p, j) => {
+                if (j === 0) rows.push({ html: `${s.open || ''}<strong>${esc(s.marker)}</strong>) ${p.html.trim()}`, depth: s.depth, cls: `sense sense--${s.kind}`, kind: s.kind });
+                else rows.push({ html: p.html.trim(), depth: p.kind === 'greek' ? s.depth + 1 : s.depth, cls: `sense sense--${p.kind}`, kind: p.kind });
+            });
+        });
+        // A heading lines up with the numbered forms that follow it.
+        rows.forEach((r, i) => {
+            if (r.kind !== 'case' && r.kind !== 'strong') return;
+            const next = rows.slice(i + 1).find(x => x.kind === 'number');
+            const nextAny = rows[i + 1];
+            if (next && nextAny && (nextAny.kind === 'number' || nextAny.kind === 'case')) r.depth = next.depth;
+        });
+        return rows.filter(r => r.html).map(r => `<p class="${r.cls} sense--depth-${Math.min(r.depth, 4)}">${r.html}</p>`).join('');
+    }
+
+    // A note by the eLiebermann editors. One with an xml:id has a marker in
+    // Liebermann's text (<ptr type="editorNote" target="#edn-1"/>): the note
+    // gets that id, so the marker jumps to it, and a link back up to the marker.
+    function editorNote(n) {
+        const id = n.getAttributeNS('http://www.w3.org/XML/1998/namespace', 'id') || n.getAttribute('xml:id') || '';
+        const back = id ? ` <a class="editor-note__back" href="#${esc(id)}-ref" title="Back to the place in Liebermann’s entry">↑ back to the text</a>` : '';
+        return `<p class="editor-note"${id ? ` id="${esc(id)}"` : ''}><span class="editor-note__label">Editor’s note.</span> ${ELieb.renderTei(n, root)}${back}</p>`;
     }
 
     function xrList(e, type) {
@@ -141,9 +173,12 @@ scripts:
             }
             const at = codeIndex(raw, m);
             const rest = at >= 0 ? raw.slice(codeList[at].code.length).trim() : raw;
+            // Liebermann's footnote at the passage ("ECf 20,3²"): its number after the citation
+            const fn = x.getAttribute('n');
+            const note = fn ? ` <span class="citation-note" title="Liebermann’s footnote ${esc(fn)} at this passage, on the manuscript readings">(note ${esc(fn)})</span>` : '';
             const html = href
-                ? `<li><a href="${esc(href)}"${title ? ` title="${esc(title)}"` : ''}>${esc(raw)}</a></li>`
-                : `<li>${esc(raw)}</li>`;
+                ? `<li><a href="${esc(href)}"${title ? ` title="${esc(title)}"` : ''}>${esc(raw)}</a>${note}</li>`
+                : `<li>${esc(raw)}${note}</li>`;
             return { at, key: clauseKey(rest), n, html };
         });
         // In the order of the list of law codes (laws.html), under its headings;
@@ -216,6 +251,35 @@ scripts:
             if (m) clauses[ref.textContent.replace(/\s+/g, ' ').trim()] = root + 'law.html?id=' + encodeURIComponent(m[1]);
         });
         ELieb.linkClauseNumbers(target.querySelector('.liebermann-text'), clauses);
+        // The tooltip names the code in full: "Wihtred 6 in the laws database".
+        target.querySelectorAll('.liebermann-text a.ref-clause').forEach(a => {
+            const text = (a.title || '').replace(/ in the laws database$/, '');
+            let code = codeList.filter(c => text.startsWith(c.code + ' ') || text.startsWith(c.code + ','))
+                .sort((x, y) => y.code.length - x.code.length)[0];
+            let rest = code ? text.slice(code.code.length) : '';
+            if (!code) {
+                // spelled otherwise in the dictionary ("Norðleod 7,1", "Sacr cor Pro"):
+                // the code from the clause's address, the passage from the citation
+                const id = decodeURIComponent((a.getAttribute('href') || '').split('id=')[1] || '');
+                code = codeList.find(c => c.anchor && (id.startsWith(c.anchor + '_') || (c.first || '').split('_')[0] === id.split('_')[0]));
+                const m = /\s((?:El|Rb|Z\.)\s.*|Pro.*|Insc.*|[\d].*)$/.exec(text);
+                rest = m ? ' ' + m[1] : '';
+            }
+            if (code) a.title = codeTitle(code) + rest + ' in the laws database';
+        });
+    }
+
+    // A law code's name, short enough for a tooltip: no subtitle after the
+    // colon for the ordeal rituals and excommunications ("Iudicium Dei IV"),
+    // nothing in brackets ("II Cnut", "Be Blaserum"), and "Wihtred" rather
+    // than "Wihtred’s Code".
+    const CODE_TITLES = { WlArtRetr: 'Willelmi Articuli Retractati (revised)' };
+    function codeTitle(c) {
+        if (CODE_TITLES[c.anchor]) return CODE_TITLES[c.anchor];
+        let name = c.name || c.code;
+        if (/^(Iudicium Dei|Excommunicatio)\b/.test(name)) name = name.replace(/:.*$/, '');
+        name = name.replace(/\s*\([^()]*\)\s*$/, '').replace(/’s Code$/, '');
+        return name.trim() || c.code;
     }
 
     // An archive.org page link (…/details/ID/page/14/…) becomes the address
@@ -250,8 +314,8 @@ scripts:
 
         <section class="entry-section">
             <h2>Liebermann's entry</h2>
-            <div class="liebermann-text">${e.original ? paragraphs(ELieb.renderTei(e.original, root)) : ''}</div>
-            ${e.editorNotes.map(n => `<p class="editor-note"><span class="editor-note__label">Editor’s note.</span> ${ELieb.renderTei(n, root)}</p>`).join('')}
+            <div class="liebermann-text">${e.original ? paragraphs(ELieb.renderTei(e.original, root), e.lang === 'de') : ''}</div>
+            ${e.editorNotes.map(editorNote).join('')}
             ${e.spelling ? `<p class="spelling-note">This headword refers to a scribal spelling: the entry is Liebermann's note on how scribes of the legal MSS write a certain sound or letter combination.</p>` : ''}
             ${e.xref ? '' : `<p class="small muted reading-help">Click a <span class="link-key link-key--law">law code</span>, <span class="link-key link-key--ms">manuscript</span> or <span class="link-key link-key--gram">German term or abbreviation</span> or <span class="link-key link-key--bib">author or work cited</span> to see what it stands for, or a <span class="link-key link-key--clause">clause number</span> to read that clause.</p><p class="small muted reading-help reading-help--tilde">Liebermann's ~ repeats as much of the headword or preceding word as stays the same (e.g. under <i>abbod</i>, ~des is <i>abbodes</i>). <a href="${root}guide.html">How to read an entry</a>.</p>`}
         </section>

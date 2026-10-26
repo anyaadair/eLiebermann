@@ -28,6 +28,9 @@ A citation finds its clause in three steps, and the report says which:
   and-following  "Swer 7ff." or "7 f." (and following): to the first clause, Swer 7
   instituta   an I or II Cn clause that only the Instituta Cnuti has ("II Cn 15,1b
               In"): to the Instituta's clause file, In Cn II 15,1b
+  prologue    "I As Pro 3", a section of a prologue that has a single file: to it
+  parent clause  "I Cn 1c", a lettered subsection with no file: to its clause, I Cn 1
+  correction  a slip of Liebermann's, linked by hand in data/citation-corrections.json
 
 Writes docs/oe-laws-link-report.md (use --no-report to skip) and needs only
 Python 3.
@@ -45,7 +48,7 @@ from collections import Counter, defaultdict
 FOLD = {'æ': 'ae', 'Æ': 'Ae', 'þ': 'th', 'Þ': 'Th', 'ð': 'd', 'Ð': 'D', 'ƿ': 'w', 'Ƿ': 'W',
         'ȝ': 'g', 'Ȝ': 'G', 'ß': 'ss', 'œ': 'oe', 'Œ': 'Oe', '⁊': 'and', 'ꝥ': 'thaet', 'Ꝥ': 'Thaet'}
 
-XR = re.compile(r'<xr type="lawCode"><ref target="law:(?P<anchor>[^"]+)">(?P<text>[^<]*)</ref></xr>')
+XR = re.compile(r'<xr type="lawCode"(?P<n> n="[^"]*")?><ref target="law:(?P<anchor>[^"]+)">(?P<text>[^<]*)</ref></xr>')
 PREFIX_LAW = re.compile(r'^(?P<indent>[ \t]*)<prefixDef ident="law"[^>]*/>[ \t]*\n', re.M)
 PREFIX_CLAUSE = '<prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>'
 
@@ -93,7 +96,10 @@ def norm_clause(clause):
     compared: commas read as full stops, brackets, spaces, capitals and a
     final full stop ignored."""
     s = re.sub(r'[\s\[\]]+', '', clause.replace(',', '.')).lower().rstrip('.,')
-    return re.sub(r'^([a-z]+)\.', r'\1', s)   # "El. 49" and "El 49", "Prol. 1" and "Prol 1" are one thing
+    s = re.sub(r'^([a-z]+)\.', r'\1', s)   # "El. 49" and "El 49", "Prol. 1" and "Prol 1" are one thing
+    s = re.sub(r'(\d)\.([a-z])(?![a-z])', r'\1\2', s)   # the catalogue's "Rect 4.a" is Liebermann's "4a"
+    # Liebermann's "Pro 2" is the catalogue's "Prol. 2" or "Prolog"
+    return re.sub(r'^prol(?:og)?(?=[\d.]|$)', 'pro', s)
 
 
 class Clauses:
@@ -122,8 +128,11 @@ class Clauses:
                 # ("Af El. 49,1") or a prologue ("XAtr Prol. 1"): the catalogue
                 # splits "Prol. 1" into the keys "prol" and "1", and "1" would
                 # wrongly claim clause 1, so use the clause as printed instead,
-                # part by part ("Prol., 1" is the prologue and clause 1).
+                # part by part. "Prol., 2" (V As, EGu) is section 2 of the
+                # prologue, cited "Pro 2", not clause 2, which has a file of its own.
                 keys = [k for k in (k.strip() for k in c['clause'].split(',')) if k]
+                if len(keys) == 2 and re.match(r'^Prol', keys[0]) and re.match(r'^\d', keys[1]):
+                    keys = ['Prol. ' + keys[1]]
             for k in keys:
                 key = norm_clause(k)
                 if key and key not in self.by_anchor[c['anchor']]:
@@ -180,6 +189,13 @@ class Clauses:
         part = {'ICn': 'i', 'IICn': 'ii'}.get(anchor)
         if part and part + key in self.by_anchor.get('InCn', {}):
             return 'instituta', self.by_anchor['InCn'][part + key]
+        # "I As Pro 3": a section of a prologue that has one page for all of it
+        if re.match(r'^pro\d', key) and 'pro' in files:
+            return 'prologue', files['pro']
+        # "I Cn 1c": a lettered subsection with no page of its own is on its clause's page
+        parent = re.match(r'^(.*\d)[a-z]{1,2}$', key)
+        if parent and parent.group(1) in files:
+            return 'parent clause', files[parent.group(1)]
         return 'clause not found', None
 
 
@@ -194,9 +210,16 @@ def main():
     ap.add_argument('--mark-law', default='data/markLaw.json')
     ap.add_argument('--report', default='docs/oe-laws-link-report.md')
     ap.add_argument('--no-report', action='store_true')
+    ap.add_argument('--corrections', default='data/citation-corrections.json')
     args = ap.parse_args()
 
     clauses = Clauses(args.catalogue, args.mark_law)
+    # Liebermann's slips, linked by hand to the right clause: data/citation-corrections.json,
+    # one row per entry and citation as listed ({"entry", "citation", "clause", "why"})
+    corrections = {}
+    if os.path.exists(args.corrections):
+        for row in json.load(open(args.corrections, encoding='utf-8')):
+            corrections[(row['entry'], row['citation'])] = row['clause']
     outcome = Counter()
     missed = defaultdict(Counter)            # reason -> {"Anchor text": count}
     entries_seen = entries_changed = entries_with_citations = entries_fully_linked = 0
@@ -212,9 +235,12 @@ def main():
         changed_here = 0
         results_here = []
 
+        slug = os.path.basename(path)[:-4]
+
         def link(m):
             nonlocal changed_here
-            how, clause_id = clauses.find(m.group('anchor'), html.unescape(m.group('text')))
+            fixed = corrections.get((slug, html.unescape(m.group('text'))))
+            how, clause_id = ('correction', fixed) if fixed else clauses.find(m.group('anchor'), html.unescape(m.group('text')))
             outcome[how] += 1
             results_here.append(how)
             if clause_id is None:
@@ -223,18 +249,18 @@ def main():
             changed_here += 1
             if len(samples) < 12 and how != 'exact':
                 samples.append((how, m.group('text'), clause_id))
-            return '<xr type="lawCode"><ref target="clause:%s">%s</ref></xr>' % (clause_id, m.group('text'))
+            return '<xr type="lawCode"%s><ref target="clause:%s">%s</ref></xr>' % (m.group('n') or '', clause_id, m.group('text'))
 
         new = XR.sub(link, text)
         # a citation already linked (target="clause:...") is not matched by XR, so
         # count it as linked rather than leaving it out of the figures
-        already = len(re.findall(r'<xr type="lawCode"><ref target="clause:', text))
+        already = len(re.findall(r'<xr type="lawCode"(?: n="[^"]*")?><ref target="clause:', text))
         if already:
             outcome['already linked'] += already
             results_here += ['already linked'] * already
         if results_here:
             entries_with_citations += 1
-            if all(r in ('exact', 'ms-letter', 'subclause', 'and-following', 'instituta', 'already linked') for r in results_here):
+            if all(r in ('exact', 'ms-letter', 'subclause', 'and-following', 'instituta', 'prologue', 'parent clause', 'correction', 'already linked') for r in results_here):
                 entries_fully_linked += 1
         if changed_here:
             if 'ident="clause"' not in new:
@@ -249,14 +275,14 @@ def main():
                     f.write(new)
 
     total = sum(outcome.values())
-    linked = sum(outcome[k] for k in ('exact', 'ms-letter', 'subclause', 'and-following', 'instituta', 'already linked'))
+    linked = sum(outcome[k] for k in ('exact', 'ms-letter', 'subclause', 'and-following', 'instituta', 'prologue', 'parent clause', 'correction', 'already linked'))
     with_clause = linked + outcome['clause not found'] + outcome['citation not understood']
     lines = []
     out = lines.append
     scope = 'All entries' if args.letter.lower() == 'all' else 'Entries filed under %s' % args.letter.upper()
     out('%s: %d (with a law code citation list: %d)' % (scope, entries_seen, entries_with_citations))
     out('Citations in their lists: %d' % total)
-    for k in ('exact', 'ms-letter', 'subclause', 'and-following', 'instituta', 'already linked'):
+    for k in ('exact', 'ms-letter', 'subclause', 'and-following', 'instituta', 'prologue', 'parent clause', 'correction', 'already linked'):
         if outcome[k]:
             out('  linked, %-14s %6d' % (k, outcome[k]))
     out('  LINKED TO A CLAUSE:      %6d  (%.0f%% of all citations; %.0f%% of those with a clause number to a code in the database)'

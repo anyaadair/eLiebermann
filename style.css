@@ -719,6 +719,12 @@ h2.result-code .code-abbr { min-width: 0; margin-left: 0.4rem; }
 .liebermann-text p.sense--depth-3 { margin-left: 4.5em; }
 .liebermann-text p.sense--depth-4 { margin-left: 6em; }
 .liebermann-text p.sense--roman, .liebermann-text p.sense--upper { margin-top: 0.9em; }
+/* Grammatical entries: a case heading (Genetiv, Dativ…) after "|" starts a new
+   list with a little space; "‖" (e.g. before Plural) a bigger break. */
+.liebermann-text p.sense--case { margin-top: 1.1em; }
+.liebermann-text p.sense--strong { margin-top: 1.8em; padding-top: 0.6em; border-top: 1px solid rgba(0,0,0,0.08); }
+.liebermann-text p.sense--strong + p.sense--case { margin-top: 0.3em; border-top: 0; padding-top: 0; }
+.liebermann-text p.sense--greek { margin-top: 0.2em; }
 .liebermann-text p.sense--depth-0 + p.sense--depth-1, .liebermann-text p.sense--depth-1 + p.sense--depth-2 { margin-top: 0; }
 @media (max-width: 600px) {
     .liebermann-text p.sense--depth-1 { margin-left: 0.9em; }
@@ -852,6 +858,11 @@ a.timeline-bar:focus-visible { outline: 2px solid var(--link-hover); outline-off
 /* A note by the eLiebermann editors under Liebermann's entry */
 .editor-note { font-size: 0.95rem; margin: 0.6rem 0 1.2rem; padding: 0.5rem 0.75rem; border-left: 3px solid var(--muted); background: rgba(0,0,0,0.03); }
 .editor-note__label { font-weight: 600; }
+/* The marker in Liebermann's text that jumps to an editor's note below */
+.liebermann-text a.ed-note-ref, .ed-note-ref { display: inline; margin-left: 0.35em; padding: 0.05em 0.5em; border: 0; border-radius: 0.8em; font-family: var(--sans); font-size: 0.72rem; font-style: normal; font-weight: 600; white-space: nowrap; text-decoration: none; color: #fff; background: var(--powder); }
+.liebermann-text a.ed-note-ref:hover, .liebermann-text a.ed-note-ref:focus { background: var(--navy); color: #fff; }
+.editor-note:target { background: var(--highlight); }
+.editor-note__back { font-size: 0.85em; white-space: nowrap; }
 
 .fn-ref { cursor: help; text-decoration: underline dotted; text-underline-offset: 2px; }
 
@@ -866,3 +877,6 @@ a.timeline-bar:focus-visible { outline: 2px solid var(--link-hover); outline-off
 /* See also / Compare: a long list of headwords flows into columns */
 ul.link-columns { columns: 8em; column-gap: 1.5em; padding-left: 1.2em; }
 ul.link-columns li { break-inside: avoid; }
+
+/* Liebermann's footnote number after a citation in the list: "ECf 20,3 (note 2)" */
+.citation-note { color: var(--muted); font-size: 0.85em; }

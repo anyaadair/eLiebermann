@@ -27,7 +27,7 @@ const ELieb = require(path.join(repo, 'scripts/eliebermann.js'));
 ELieb.useDom(new JSDOM('<!doctype html><body></body>').window);
 
 const unescape = t => t.replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&amp;/g, '&');
-const XR = /^\s*<xr type="lawCode"><ref(?: target="([^"]*)")?>([\s\S]*?)<\/ref><\/xr>\s*$/;
+const XR = /^\s*<xr type="lawCode"(?: n="[^"]*")?><ref(?: target="([^"]*)")?>([\s\S]*?)<\/ref><\/xr>\s*$/;
 
 function update(xml) {
     const scrap = /<dictScrap type="liebermann">([\s\S]*?)<\/dictScrap>/.exec(xml);
