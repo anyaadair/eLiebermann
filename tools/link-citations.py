@@ -26,6 +26,8 @@ A citation finds its clause in three steps, and the report says which:
   subclause   the number has no file of its own but its parts do ("Abt 1" goes
               to 1[a]); it goes to the first part
   and-following  "Swer 7ff." or "7 f." (and following): to the first clause, Swer 7
+  instituta   an I or II Cn clause that only the Instituta Cnuti has ("II Cn 15,1b
+              In"): to the Instituta's clause file, In Cn II 15,1b
 
 Writes docs/oe-laws-link-report.md (use --no-report to skip) and needs only
 Python 3.
@@ -172,6 +174,12 @@ class Clauses:
         for k in self.order[anchor]:
             if k.startswith(key) and len(k) > len(key) and not k[len(key)].isdigit():
                 return 'subclause', files[k]
+        # "II Cn 15,1b In": a clause that only the Instituta Cnuti has, so the
+        # Old English code has no file for it; Liebermann prints it with the
+        # Instituta (I p. 612), filed as InCn "II 15.1b".
+        part = {'ICn': 'i', 'IICn': 'ii'}.get(anchor)
+        if part and part + key in self.by_anchor.get('InCn', {}):
+            return 'instituta', self.by_anchor['InCn'][part + key]
         return 'clause not found', None
 
 
@@ -226,7 +234,7 @@ def main():
             results_here += ['already linked'] * already
         if results_here:
             entries_with_citations += 1
-            if all(r in ('exact', 'ms-letter', 'subclause', 'and-following', 'already linked') for r in results_here):
+            if all(r in ('exact', 'ms-letter', 'subclause', 'and-following', 'instituta', 'already linked') for r in results_here):
                 entries_fully_linked += 1
         if changed_here:
             if 'ident="clause"' not in new:
@@ -241,14 +249,14 @@ def main():
                     f.write(new)
 
     total = sum(outcome.values())
-    linked = sum(outcome[k] for k in ('exact', 'ms-letter', 'subclause', 'and-following', 'already linked'))
+    linked = sum(outcome[k] for k in ('exact', 'ms-letter', 'subclause', 'and-following', 'instituta', 'already linked'))
     with_clause = linked + outcome['clause not found'] + outcome['citation not understood']
     lines = []
     out = lines.append
     scope = 'All entries' if args.letter.lower() == 'all' else 'Entries filed under %s' % args.letter.upper()
     out('%s: %d (with a law code citation list: %d)' % (scope, entries_seen, entries_with_citations))
     out('Citations in their lists: %d' % total)
-    for k in ('exact', 'ms-letter', 'subclause', 'and-following', 'already linked'):
+    for k in ('exact', 'ms-letter', 'subclause', 'and-following', 'instituta', 'already linked'):
         if outcome[k]:
             out('  linked, %-14s %6d' % (k, outcome[k]))
     out('  LINKED TO A CLAUSE:      %6d  (%.0f%% of all citations; %.0f%% of those with a clause number to a code in the database)'

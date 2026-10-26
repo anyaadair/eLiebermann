@@ -479,6 +479,17 @@
                     rest = rest.slice(m[0].length); at += m[0].length;
                     continue;
                 }
+                // Liebermann's "Hn 13,12. 70,21a; boclond 13,1": after a semicolon, a
+                // spelling (lower case, one word) then a number is another passage of
+                // the same code. The number must end the citation (punctuation, a
+                // manuscript letter, a sense number "2)", or the end), so "to 3 tunan",
+                // "ofer 5 ~", "im 12. Jh." and "an 7 (9) nihtum" are not read as passages.
+                if (code && last && last.anchor === code.anchor && (m = new RegExp(`^(\\s*;\\s*[\\p{Ll}~æðþǣ][\\p{L}~\\-]*\\s+)(${PASSAGE})(?![\\p{L}\\d])(?=\\s*(?:$|[;|‖=\\[\\u0001\\u0004]|\\.\\s*(?:$|[\\d;|‖(—\\u0001\\u0004])|\\((?!\\d)|ff?\\.|—|,\\s|\\d{1,2}[a-z]?\\)|\\p{L}\\)))`, 'u').exec(rest))) {
+                    const n = m[2].replace(/\.$/, ''), s = at + m[1].length;
+                    add(code.label + ' ' + n, s, s + n.length);
+                    rest = rest.slice(m[0].length); at += m[0].length;
+                    continue;
+                }
                 break;
             }
             open = !!last && !(code && code.fresh) && /^\s*$/.test(rest);
