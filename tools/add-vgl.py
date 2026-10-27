@@ -10,6 +10,8 @@ off in the gutter, made from a printed copy.
 Each reading is
     {"clause": "III As 4", "page": "170", "printed": "Vgl. II As. 23",
      "refs": ["II As 23"], "by": "Anya Adair", "date": "2026-10-27"}
+with optional "how" (how the note was read, for the clause's history; by default
+"read from a printed copy by <by>")
 with optional "link": {"V As 3.1": "VAs_3-b"} where a reference needs its
 clause file named. For the clause it writes, as laws-from-database.py does:
   <note type="comparison">         the references, linked to their clauses
@@ -67,7 +69,7 @@ def main():
             return links[ref]
         for s, a in spellings:
             if ref == s or ref.startswith(s + ' '):
-                rest = ref[len(s):].strip().replace('.', ',')
+                rest = re.sub(r'(?<=\d)\.(?=\d)', ',', ref[len(s):].strip())
                 rest = re.sub(r'^Pr,?\s*', 'Pro ', rest)
                 how, cid = clauses.find(a, (s + ' ' + rest).strip())
                 return cid
@@ -131,8 +133,10 @@ def main():
         else:
             n = re.search(r'[ \t]*<note type="(?:comparedBy|comparison|editorial|translator)"', x) or re.search(r'[ \t]*</div>', x)
             x = x[:n.start()] + block + x[n.start():]
-        change = '      <change when="%s">Liebermann’s marginal cross-reference (Gesetze I p. %s) read from a printed copy by %s: “%s”.</change>\n' % (
-            r['date'], r['page'], esc(r['by']), esc(r['printed']))
+        how = r.get('how') or 'read from a printed copy by %s' % r['by']
+        change = '      <change when="%s">Liebermann’s marginal cross-reference (Gesetze I p. %s) %s: “%s”.</change>\n' % (
+            r['date'], r['page'], esc(how), esc(r['printed']))
+        x = re.sub(r'[ \t]*<change when="[^"]*">Liebermann’s marginal cross-reference \(Gesetze I p\. [^)]*\) (?:read|confirmed)[^<]*</change>\n', '', x)
         if change.strip() not in x:
             x = x.replace('    </revisionDesc>', change + '    </revisionDesc>', 1)
         files[cid] = x

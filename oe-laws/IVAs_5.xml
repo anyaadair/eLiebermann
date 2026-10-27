@@ -52,6 +52,7 @@
       <change when="2026-10-19">Generated from row 820 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text added from <title>Die Gesetze der Angelsachsen</title> I, p. 172.</change>
       <change when="2026-10" type="checked">The modern editor’s text corrected against Attenborough, p. 148: “[Q/Br]” → “∅”.</change>
+      <change when="2026-10-27">Liebermann’s marginal cross-reference (Gesetze I p. 172) read by Claude from Anya Adair’s photograph of the page in a printed copy: “Vgl. III As. 4”.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -61,9 +62,8 @@
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="5" corresp="#wit-q"><pb n="172" ed="#liebermann"/>Et item, ne<ptr type="liebermannNote" n="a" target="#IVAs_5.lnote.oe.a"/> dominus libero<ptr type="liebermannNote" n="5" target="#IVAs_5.lnote.oe.5"/> homini hlafordsocnam<ptr type="liebermannNote" n="6" target="#IVAs_5.lnote.oe.6"/> prohibeat, qui ei<ptr type="liebermannNote" n="7" target="#IVAs_5.lnote.oe.7"/> per omnia rectum fecerit.</ab>
         <ab type="editionText" xml:lang="la" source="#attenborough" n="5" corresp="#wit-q"><pb n="148" ed="#attenborough"/>[Ne dominus libero homini ius prohibeat.] Et item, ne dominus libero homini hlafordsocnam prohibeat, qui ei per omnia rectum fecerit.</ab>
         <ab type="translation" xml:lang="en" source="#attenborough" corresp="#wit-q"><pb n="149" ed="#attenborough"/>And further, a freeman who has acted rightly in all respects to his lord, shall not be prevented from seeking a [new] lord<ptr type="editorNote" n="1" target="#IVAs_5.attnote.n.0"/>.</ab>
-        <note type="comparison" source="#liebermann" n="172">III As [?]</note>
-        <note type="comparisonPrinted" source="#liebermann">Vgl. III A[?]</note>
-        <note type="comparisonIncomplete">Some of Liebermann’s notes here are cut off in the gutter of the scan used, and are still to be completed.</note>
+        <note type="comparison" source="#liebermann" n="172"><ref target="clause:IIIAs_4">III As 4</ref></note>
+        <note type="comparisonPrinted" source="#liebermann">Vgl. III As. 4</note>
         <note type="editorial">Latin only; no German translation in Liebermann. Liebermann compares III As 4.1.</note>
         <note type="liebermannNote" subtype="textual" xml:id="IVAs_5.lnote.oe.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">172</biblScope></bibl><seg type="original" xml:lang="de">h. l. <hi rend="italic">RMHk</hi></seg><seg type="translation" xml:lang="en" source="#claude">h. l. RMHk</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IVAs_5.lnote.oe.6" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">172</biblScope></bibl><seg type="original" xml:lang="de">laf. <hi rend="italic">R;</hi> blaf. perh. <hi rend="italic">K;</hi> -sconam <hi rend="italic">MHk</hi></seg><seg type="translation" xml:lang="en" source="#claude">laf. R; blaf. perh. K; -sconam MHk</seg></note>
