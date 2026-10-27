@@ -40,6 +40,7 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-19">Generated from row 2556 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10-27">Liebermann’s marginal cross-reference (Gesetze I p. 394) read from a printed copy by Anya Adair (the scan cuts the last notes off; the others were transcribed before but not linked): “ebd. 15”.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -49,7 +50,7 @@
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="App AGu 2.4" corresp="#wit-q"><pb n="394" ed="#liebermann"/>Qui hereteames<ptr type="liebermannNote" n="22" target="#App-AGu_2-4.lnote.oe.22"/> fuerit accusatus, weregildo suo se redimat uel<ptr type="liebermannNote" n="23" target="#App-AGu_2-4.lnote.oe.23"/> sic neget.</ab>
         <ab type="translation" xml:lang="de" source="#liebermann"><pb n="394" ed="#liebermann"/>2, 4. Wer der [Theilnahme an] Heerplünderei bezichtigt ist, löse sich aus durch sein Wergeld oder leugne demgemäss.</ab>
         <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">2, 4. Whoever is accused of [participation in] army-plundering, let him redeem himself by his wergild or deny accordingly.</ab>
-        <note type="comparison" source="#liebermann"/>
+        <note type="comparison" source="#liebermann" n="394"><ref target="clause:Ine_15">Ine 15</ref></note>
         <note type="comparisonPrinted" source="#liebermann">ebd. 15</note>
         <note type="editorial">New row (October 2026): Liebermann’s text and German translation transcribed from Gesetze I p. 394 (two independent readings of the page images, differences settled against the page); Liebermann prints in smaller type: Wer der [Theilnahme an] Heerplünder | bezichtigt ist, löse sich aus durch sein Wergeld oder leugne</note>
         <note type="liebermannNote" subtype="textual" xml:id="App-AGu_2-4.lnote.oe.22" n="22" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">394</biblScope></bibl><seg type="original" xml:lang="de">herena. <hi rend="italic">MHkBr</hi></seg><seg type="translation" xml:lang="en" source="#claude">herena. MHkBr</seg></note>

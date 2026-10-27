@@ -40,6 +40,7 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-19">Generated from row 2558 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10-27">Liebermann’s marginal cross-reference (Gesetze I p. 394) read from a printed copy by Anya Adair (the scan cuts the last notes off; the others were transcribed before but not linked): “ebd. 39”.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -49,7 +50,7 @@
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="App AGu 4" corresp="#wit-q"><pb n="394" ed="#liebermann"/>Si quis recedat<ptr type="liebermannNote" n="28" target="#App-AGu_4.lnote.oe.28"/> a domino suo<ptr type="liebermannNote" n="27" target="#App-AGu_4.lnote.oe.27"/> sine<ptr type="liebermannNote" n="9" target="#App-AGu_4.lnote.oe.9"/> licentia (preter licentiam) uel in aliam<ptr type="liebermannNote" n="9" target="#App-AGu_4.lnote.oe.9"/> schiram (alium comitatum) se subducat, et inquiratur (ubi<ptr type="liebermannNote" n="29" target="#App-AGu_4.lnote.oe.29"/> sit), redeat ubi<ptr type="liebermannNote" n="30" target="#App-AGu_4.lnote.oe.30"/> prius fuit<ptr type="liebermannNote" n="31" target="#App-AGu_4.lnote.oe.31"/>, et emendet domino suo LX sol.</ab>
         <ab type="translation" xml:lang="de" source="#liebermann"><pb n="394" ed="#liebermann"/>4. Wenn jemand von seinem Herrn ohne Erlaubniss fortzieht oder in einen anderen Amtsbezirk sich fortstiehlt und erkundet wird, (wo er ist <hi rend="italic">Qu. II</hi>), kehre er zurück [dorthin], wo er früher war, und büsse seinem Herrn 60 Schill.</ab>
         <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">4. If anyone departs from his lord without permission or steals away into another official district and is discovered, (where he is <hi rend="italic">Qu. II</hi>), let him return [to the place] where he was before, and pay his lord 60 shill. compensation.</ab>
-        <note type="comparison" source="#liebermann"/>
+        <note type="comparison" source="#liebermann" n="394"><ref target="clause:Ine_39">Ine 39</ref></note>
         <note type="comparisonPrinted" source="#liebermann">ebd. 39</note>
         <note type="editorial">New row (October 2026): Liebermann’s text and German translation transcribed from Gesetze I p. 394 (two independent readings of the page images, differences settled against the page); Liebermann prints in smaller type: Wenn jemand von seinem Herrn ohne Erlaubniss fortzieht oder in einen anderen Amtsbezirk sich fortstiehlt und erkundet wird, | kehre er zurück [dorthin], wo er früher war, und | seinem Herrn 60 Schill.</note>
         <note type="liebermannNote" subtype="textual" xml:id="App-AGu_4.lnote.oe.9" n="9" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">394</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vor der Klammer Lond, eingeklammertes übr.</hi></seg><seg type="translation" xml:lang="en" source="#claude">the text before the brackets Lond; the bracketed text the others</seg></note>
