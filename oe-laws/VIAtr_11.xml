@@ -58,6 +58,7 @@
       <change when="2026-10-19">Generated from row 1237 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 250.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS K added from Gesetze I, p. 250.</change>
+      <change when="2026-10-27">Liebermann’s marginal cross-reference (Gesetze I p. 250) read by Claude from Anya Adair’s photograph of the page in a printed copy: “Vgl. V Atr. 10”.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -72,9 +73,8 @@
         <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">And we teach very earnestly that every Christian man eagerly avoid unlawful intercourse and keep the Christian law rightly.</ab>
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-k"><ptr type="editorNote" n="1" target="#VIAtr_11.robnote.n.1"/><pb n="95" ed="#robertson"/>And we very earnestly enjoin upon every Christian man carefully to avoid illicit unions and duly to observe the laws of the church.</ab>
         <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-k"><pb n="167" ed="#rabin-doml"/>And we very fervently charge each Christian to diligently avoid unlawful intercourse and rightly uphold the divine law.</ab>
-        <note type="comparison" source="#liebermann" n="250">[?]</note>
-        <note type="comparisonPrinted" source="#liebermann">Vgl. [?]</note>
-        <note type="comparisonIncomplete">Some of Liebermann’s notes here are cut off in the gutter of the scan used, and are still to be completed.</note>
+        <note type="comparison" source="#liebermann" n="250"><ref target="clause:VAtr_10">V Atr 10</ref></note>
+        <note type="comparisonPrinted" source="#liebermann">Vgl. V Atr. 10</note>
         <note type="comparedBy" source="#liebermann"><ref target="clause:VIAtr_28-2">VI Atr 28.2</ref></note>
         <note type="comparison" source="#wormald-mel" n="342"><label>expanded</label> <ref target="clause:VAtr_10">V Atr 10</ref> <quote>n. 366: V Atr 10, VI 11 – 12:2 (most of this not in V, nor VI lat.)</quote></note>
         <note type="comparedBy" source="#wormald-mel" n="373"><ref target="clause:VAtr_10">V Atr 10</ref></note>

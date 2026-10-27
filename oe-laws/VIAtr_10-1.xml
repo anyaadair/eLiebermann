@@ -57,6 +57,7 @@
       <change when="2026-10-19">Generated from row 1234 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 250.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS K added from Gesetze I, p. 250.</change>
+      <change when="2026-10-27">Liebermann’s marginal cross-reference (Gesetze I p. 250) read by Claude from Anya Adair’s photograph of the page in a printed copy: “ebd. 3, 1”.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -71,9 +72,8 @@
         <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">But let [life-]sparing punishments be decided on instead, for the benefit of the people, and let God's own handiwork and his own property, which he bought dearly, not be destroyed for small [offences].</ab>
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-k"><pb n="95" ed="#robertson"/>but, on the contrary, merciful punishments shall be determined upon, for the public good, that the handiwork of God and what he purchased for himself at a great price be not destroyed for trivial offences.</ab>
         <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-k"><pb n="165" ed="#rabin-doml"/>Instead, merciful penalties are to be established for the good of the people, and so that God’s handiwork, which he paid for himself at a high cost, not be destroyed.</ab>
-        <note type="comparison" source="#liebermann" n="250">[?]</note>
-        <note type="comparisonPrinted" source="#liebermann">ebd. [?]</note>
-        <note type="comparisonIncomplete">Some of Liebermann’s notes here are cut off in the gutter of the scan used, and are still to be completed.</note>
+        <note type="comparison" source="#liebermann" n="250"><ref target="clause:VAtr_3-1">V Atr 3.1</ref></note>
+        <note type="comparisonPrinted" source="#liebermann">ebd. 3, 1</note>
         <note type="comparedBy" source="#liebermann"><ref target="clause:IICn_2-1">II Cn 2.1</ref></note>
         <note type="comparedBy" source="#wormald-mel" n="340"><ref target="clause:VAtr_3-1">V Atr 3.1</ref></note>
         <note type="comparedBy" source="#kennedy" n="59"><ref target="clause:Cn-1018_part-009">Cn 1018 3–6</ref></note>

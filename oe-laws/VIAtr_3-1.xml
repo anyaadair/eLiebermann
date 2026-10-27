@@ -60,6 +60,7 @@
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 248.</change>
       <change when="2026-10" type="checked">Robertson’s translation checked and corrected against her edition, p. 93.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS K added from Gesetze I, p. 248.</change>
+      <change when="2026-10-27">Liebermann’s marginal cross-reference (Gesetze I p. 248) read by Claude from Anya Adair’s photograph of the page in a printed copy: “ebd. 6”.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -74,9 +75,8 @@
         <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">And a monk who has no monastery, let him come to the diocesan bishop and pledge himself before God and men that from then on he will keep at least three things, namely his chastity and his monastic dress, and to serve his Lord as well as he best can.</ab>
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-k"><ptr type="editorNote" n="1" target="#VIAtr_3-1.robnote.n.1"/><pb n="93" ed="#robertson"/>And the monk who has no monastery<ptr type="editorNote" n="2" target="#VIAtr_3-1.robnote.n.2"/> shall come to the bishop of the diocese, and shall vow to God and to men henceforth to observe three things at least, namely, celibacy, and the wearing of the monastic habit, and the service of his Lord to the best of his ability.</ab>
         <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-k"><pb n="163" ed="#rabin-doml"/>And the monk who does not have a monastery shall come to the bishop of the diocese and commit himself before God and men to especially observe three things thenceforth: that is, his celibacy, his monastic habit, and his service to God as best he can.</ab>
-        <note type="comparison" source="#liebermann" n="248">V Atr 6[?]</note>
-        <note type="comparisonPrinted" source="#liebermann">ebd. 6[?]</note>
-        <note type="comparisonIncomplete">Some of Liebermann’s notes here are cut off in the gutter of the scan used, and are still to be completed.</note>
+        <note type="comparison" source="#liebermann" n="248"><ref target="clause:VAtr_6">V Atr 6</ref></note>
+        <note type="comparisonPrinted" source="#liebermann">ebd. 6</note>
         <note type="comparedBy" source="#wormald-mel" n="340"><ref target="clause:VAtr_6">V Atr 6–6.1</ref></note>
         <note type="liebermannNote" subtype="textual" xml:id="VIAtr_3-1.lnote.oe.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">248</biblScope></bibl><seg type="original" xml:lang="de">e <hi rend="italic">übergeschr.; vgl.</hi> 15</seg><seg type="translation" xml:lang="en" source="#claude">e written above; cf. 15</seg></note>
         <note type="liebermannNote" subtype="erklaerung" xml:id="VIAtr_3-1.lnote.de.a" n="a" source="#liebermann-erkl" rend="wholeClause"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">175</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de">Der Untergang vieler Klöster (<hi rend="italic">s. d. Gl</hi> 3) in Dänenzeit wird häufig berichtet. Die später wieder hergestellten fielen mehrfach Weltgeistlichen oder dem anderen Geschlechte als bisher anheim</seg><seg type="translation" xml:lang="en" source="#claude">The destruction of many monasteries (<hi rend="italic">see</hi> that word in <hi rend="italic">Gl</hi> 3) in the Danish period is frequently reported. Those later restored fell in several cases to secular clergy or to the opposite sex from before</seg></note>

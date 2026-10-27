@@ -58,6 +58,7 @@
       <change when="2026-10-19">Generated from row 1575 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 274.</change>
       <change when="2026-10" type="checked">Liebermann’s text added from <title>Die Gesetze der Angelsachsen</title> I, p. 274.</change>
+      <change when="2026-10-27">Liebermann’s marginal cross-reference (Gesetze I p. 274) read by Claude from Anya Adair’s photograph of the page in a printed copy: “Vgl. I Ew. Pr. | Vgl. VI Atr. 10”.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -72,9 +73,8 @@
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-york-gospels"><pb n="143" ed="#robertson"/>And likewise I enjoin upon all my reeves, under pain of forfeiting my friendship and all that they possess and their own lives, to govern my people justly everywhere, and to pronounce just judgments with the cognisance of the bishops of the dioceses, and to inflict such mitigated penalties as the bishop may approve and the man himself may be able to bear.</ab>
         <ab type="translation" xml:lang="en" source="#whitelock"><pb n="460" ed="#whitelock"/>And also I charge all my reeves, on pain of losing my friendship and all that they possess and their own lives, that everywhere they maintain my people justly, and give just judgments with the witness of the bishops of the dioceses, and practise such mercy therein as seems just to the bishop of the diocese and can be supported.<ptr type="editorNote" n="1" target="#Cn1020_11.whinote.n.1"/></ab>
         <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-york-gospels"><pb n="229" ed="#rabin-doml"/>And further, I command all my reeves, for the sake of my friendship and all that they possess and their very lives, to govern my people with righteousness everywhere and to hand down just rulings with the oversight of the bishops of their shires, and to act with such mercy thereby that the bishop deems it just and the subject can abide by it.</ab>
-        <note type="comparison" source="#liebermann" n="274"/>
-        <note type="comparisonPrinted" source="#liebermann">Vgl. II[...] | Vgl. VI[...]</note>
-        <note type="comparisonIncomplete">Some of Liebermann’s notes here are cut off in the gutter of the scan used, and are still to be completed.</note>
+        <note type="comparison" source="#liebermann" n="274"><ref target="clause:IEw_Prol">I Ew Prol.</ref>; <ref target="clause:VIAtr_10">VI Atr 10</ref></note>
+        <note type="comparisonPrinted" source="#liebermann">Vgl. I Ew. Pr. | Vgl. VI Atr. 10</note>
         <note type="comparison" source="#whitelock" n="460"><label>same thing meant as</label> <ref target="clause:IIIEg_1-2">III Eg 1.2</ref> <quote>on the assumption that the same thing is meant as in III Edgar 1.2</quote></note>
         <note type="editorial">Liebermann corrects ‘se’ to ‘þe’.</note>
         <note type="textual" source="#rabin-doml">[5] þe man: se man Y</note>

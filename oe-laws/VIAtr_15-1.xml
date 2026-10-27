@@ -56,6 +56,7 @@
       <change when="2026-10-19">Generated from row 1244 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 250.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS K added from Gesetze I, p. 250.</change>
+      <change when="2026-10-27">Liebermann’s marginal cross-reference (Gesetze I p. 250) read by Claude from Anya Adair’s photograph of the page in a printed copy: “ebd.”.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -70,9 +71,8 @@
         <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">or expel the altar-priest without the bishop's consent.</ab>
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-k"><pb n="97" ed="#robertson"/>or turn out a minister of the church without the bishop's consent.</ab>
         <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-k"><pb n="167" ed="#rabin-doml"/>Nor may a cleric be expelled without the bishop’s permission.</ab>
-        <note type="comparison" source="#liebermann" n="250">[?]</note>
-        <note type="comparisonPrinted" source="#liebermann">ebd. [?]</note>
-        <note type="comparisonIncomplete">Some of Liebermann’s notes here are cut off in the gutter of the scan used, and are still to be completed.</note>
+        <note type="comparison" source="#liebermann" n="250"><ref target="clause:VAtr_10-2">V Atr 10.2</ref></note>
+        <note type="comparisonPrinted" source="#liebermann">ebd.</note>
         <note type="comparedBy" source="#liebermann"><ref target="clause:Northu_22">Northu 22</ref></note>
       </div>
     </body>

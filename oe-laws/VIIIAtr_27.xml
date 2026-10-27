@@ -62,6 +62,7 @@
       <change when="2026-10-19">Generated from row 1457 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 266.</change>
       <change when="2026-10" type="checked">Liebermann’s text added from <title>Die Gesetze der Angelsachsen</title> I, p. 266.</change>
+      <change when="2026-10-27">Liebermann’s marginal cross-reference (Gesetze I p. 266) read by Claude from Anya Adair’s photograph of the page in a printed copy: “Vgl. E Gu. 3”.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -76,9 +77,8 @@
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-d"><ptr type="editorNote" n="1" target="#VIIIAtr_27.robnote.n.1"/><pb n="125" ed="#robertson"/>If a priest anywhere be concerned in false witness or perjury<ptr type="editorNote" n="2" target="#VIIIAtr_27.robnote.n.2"/>, or be the accessory and accomplice of thieves, he shall be cast out from the fellowship of those in holy orders, and shall forfeit both their society and their friendship and every kind of privilege<ptr type="editorNote" n="3" target="#VIIIAtr_27.robnote.n.3"/>, unless he make full amends, both towards God and towards men, to the utmost of his ability, as the bishop shall prescribe for him, and find surety that henceforth he will cease for ever from all such [wrong-doing].</ab>
         <ab type="translation" xml:lang="en" source="#whitelock" corresp="#wit-d"><pb n="456" ed="#whitelock"/>If anywhere a mass-priest takes part in false witness or perjury, or is the accessory and accomplice of thieves, he is then to be cast out from the fellowship of those in orders, and to forfeit both the society and friendship and every dignity, unless he atone for it deeply towards God and towards men, in full as the bishop instructs him, and find for himself surety that he will from that time forth ever desist from such things.</ab>
         <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-d"><pb n="199" ed="#rabin-doml"/>If a priest is anywhere guilty of bearing false witness or committing perjury or being the aide or accomplice to thieves, then he is to be expelled from holy orders and deprived of companionship, friendship, and all entitlements unless he repents most deeply to God and the community entirely as the bishop instructs, and finds surety that he thenceforth will cease all wrongdoing.</ab>
-        <note type="comparison" source="#liebermann" n="266">EGu</note>
-        <note type="comparisonPrinted" source="#liebermann">Vgl. E G[u. ?]</note>
-        <note type="comparisonIncomplete">Some of Liebermann’s notes here are cut off in the gutter of the scan used, and are still to be completed.</note>
+        <note type="comparison" source="#liebermann" n="266"><ref target="clause:EGu_3">EGu 3</ref></note>
+        <note type="comparisonPrinted" source="#liebermann">Vgl. E Gu. 3</note>
         <note type="comparedBy" source="#liebermann"><ref target="clause:ICn_5-3">I Cn 5.3</ref></note>
         <note type="comparedBy" source="#wormald-ppmel" n="93"><ref target="clause:ICn_5-3">I Cn 5.3</ref></note>
         <note type="liebermannNote" subtype="erklaerung" xml:id="VIIIAtr_27.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">184</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Wiederholt I Cn 5, 3f. = Northu 45</seg><seg type="translation" xml:lang="en" source="#claude">Repeated in I Cn 5, 3f. = Northu 45</seg></note>

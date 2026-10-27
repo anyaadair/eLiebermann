@@ -10,7 +10,8 @@ off in the gutter, made from a printed copy.
 Each reading is
     {"clause": "III As 4", "page": "170", "printed": "Vgl. II As. 23",
      "refs": ["II As 23"], "by": "Anya Adair", "date": "2026-10-27"}
-with optional "how" (how the note was read, for the clause's history; by default
+with optional "remark" (an editor's remark, shown in square brackets after the
+references; clauses named in "link" are linked) and optional "how" (how the note was read, for the clause's history; by default
 "read from a printed copy by <by>")
 with optional "link": {"V As 3.1": "VAs_3-b"} where a reference needs its
 clause file named. For the clause it writes, as laws-from-database.py does:
@@ -70,7 +71,7 @@ def main():
         for s, a in spellings:
             if ref == s or ref.startswith(s + ' '):
                 rest = re.sub(r'(?<=\d)\.(?=\d)', ',', ref[len(s):].strip())
-                rest = re.sub(r'^Pr,?\s*', 'Pro ', rest)
+                rest = re.sub(r'^Pr\.?\s*(?=\d)', 'Pro ', rest)
                 how, cid = clauses.find(a, (s + ' ' + rest).strip())
                 return cid
         return None
@@ -120,16 +121,26 @@ def main():
             items.append('<ref target="clause:%s">%s</ref>' % (tid, esc(ref)) if tid else esc(ref))
             if tid:
                 new_targets.append(tid)
-        block = '        <note type="comparison" source="#liebermann" n="%s">%s</note>\n' % (r['page'], '; '.join(items))
+        remark = ''
+        if r.get('remark'):
+            # an eLiebermann editor's remark on the note, in square brackets, its clauses linked
+            remark = esc(r['remark'])
+            for t, tid in r.get('link', {}).items():
+                if esc(t) in remark:
+                    remark = remark.replace(esc(t), '<ref target="clause:%s">%s</ref>' % (tid, esc(t)))
+                    new_targets.append(tid)
+            remark = ' [%s]' % remark
+        block = '        <note type="comparison" source="#liebermann" n="%s">%s%s</note>\n' % (r['page'], '; '.join(items), remark)
         block += '        <note type="comparisonPrinted" source="#liebermann">%s</note>\n' % esc(r['printed'])
         if '[?]' in r['printed']:
             block += '        <note type="comparisonIncomplete">Some of Liebermann’s notes here are cut off in the gutter of the scan used, and are still to be completed.</note>\n'
-        # replace the old three notes (or put the new ones before the reverse links)
-        old_block = re.compile(r'(?:[ \t]*<note type="comparison" source="#liebermann"[^>]*>.*?</note>\n)?(?:[ \t]*<note type="comparisonPrinted" source="#liebermann">.*?</note>\n)?(?:[ \t]*<note type="comparisonIncomplete">.*?</note>\n)?')
-        m = re.search(r'[ \t]*<note type="comparison" source="#liebermann"', x) or re.search(r'[ \t]*<note type="comparisonPrinted" source="#liebermann"', x)
+        # replace the old notes (all of them, in whatever form) with the new ones, where the first stood
+        OLD = re.compile(r'[ \t]*<note type="comparison(?:Printed)?" source="#liebermann"(?:[^>]*/>|[^>]*>.*?</note>)\n|[ \t]*<note type="comparisonIncomplete">.*?</note>\n')
+        m = OLD.search(x)
         if m:
-            mm = old_block.match(x, m.start())
-            x = x[:mm.start()] + block + x[mm.end():]
+            at = m.start()
+            x = OLD.sub('', x)
+            x = x[:at] + block + x[at:]
         else:
             n = re.search(r'[ \t]*<note type="(?:comparedBy|comparison|editorial|translator)"', x) or re.search(r'[ \t]*</div>', x)
             x = x[:n.start()] + block + x[n.start():]

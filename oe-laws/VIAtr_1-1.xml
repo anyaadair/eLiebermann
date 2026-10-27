@@ -60,6 +60,7 @@
       <change when="2026-10-19">Generated from row 1213 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 246.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS K added from Gesetze I, p. 246.</change>
+      <change when="2026-10-27">Liebermann’s marginal cross-reference (Gesetze I p. 246) read by Claude from Anya Adair’s photograph of the page in a printed copy: “ebd. 1. 35”.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -74,9 +75,8 @@
         <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">and loyally obey one royal lord and willingly hold to him with true fidelity.</ab>
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-k"><pb n="91" ed="#robertson"/>and loyally obey one royal lord, and readily support him with due fidelity<ptr type="editorNote" n="4" target="#VIAtr_1-1.robnote.n.4"/>.</ab>
         <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-k"><pb n="161" ed="#rabin-doml"/>and loyally obey one royal lord, and willingly follow him with proper devotion.</ab>
-        <note type="comparison" source="#liebermann" n="246">V Atr 1[?]</note>
-        <note type="comparisonPrinted" source="#liebermann">ebd. 1[?]</note>
-        <note type="comparisonIncomplete">Some of Liebermann’s notes here are cut off in the gutter of the scan used, and are still to be completed.</note>
+        <note type="comparison" source="#liebermann" n="246"><ref target="clause:VAtr_1">V Atr 1</ref>; <ref target="clause:VAtr_35">V Atr 35</ref></note>
+        <note type="comparisonPrinted" source="#liebermann">ebd. 1. 35</note>
         <note type="comparedBy" source="#liebermann"><ref target="clause:VIIIAtr_44-1">VIII Atr 44.1</ref>; <ref target="clause:ICn_1">I Cn 1</ref></note>
         <note type="comparedBy" source="#kennedy" n="59"><ref target="clause:Cn-1018_part-002">Cn 1018 1</ref></note>
         <note type="liebermannNote" subtype="erklaerung" xml:id="VIAtr_1-1.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">175</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de">Plural sing. Bed.</seg><seg type="translation" xml:lang="en" source="#claude">Plural with singular meaning</seg></note>

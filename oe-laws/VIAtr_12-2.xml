@@ -61,6 +61,7 @@
       <change when="2026-10-19">Generated from row 1240 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 250.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS K added from Gesetze I, p. 250.</change>
+      <change when="2026-10-27">Liebermann’s marginal cross-reference (Gesetze I p. 250) read by Claude from Anya Adair’s photograph of the page in a printed copy: “Vgl. 5, 2”.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -75,9 +76,8 @@
         <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">nor let [him] have more wives than one; but let whoever will rightly heed God's law and preserve his soul from hell-fire stay with the one as long as she lives.</ab>
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-k"><pb n="95" ed="#robertson"/>and he shall never have more wives than one, but he who seeks to observe God's law aright and to save his soul from hell-fire<ptr type="editorNote" n="2" target="#VIAtr_12-2.robnote.n.2"/> shall remain with the one as long as she lives.</ab>
         <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-k"><pb n="167" ed="#rabin-doml"/>He may not have more than one wife; but he who desires to obey the law of God rightly and guard his soul from hellfire must stay with one wife as long as she lives.</ab>
-        <note type="comparison" source="#liebermann" n="250">[?]</note>
-        <note type="comparisonPrinted" source="#liebermann">Vgl. [?]</note>
-        <note type="comparisonIncomplete">Some of Liebermann’s notes here are cut off in the gutter of the scan used, and are still to be completed.</note>
+        <note type="comparison" source="#liebermann" n="250"><ref target="clause:VIAtr_5-2">VI Atr 5.2</ref></note>
+        <note type="comparisonPrinted" source="#liebermann">Vgl. 5, 2</note>
         <note type="comparedBy" source="#liebermann"><ref target="clause:ICn_7-3">I Cn 7.3</ref></note>
         <note type="comparedBy" source="#kennedy" n="59"><ref target="clause:Cn-1018_part-029">Cn 1018 12.4</ref></note>
         <note type="liebermannNote" subtype="erklaerung" xml:id="VIAtr_12-2.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">175</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">Die Wendung ist in Homilien häufig; z. B. Wulfstan 167; <hi rend="italic">vgl. Gl</hi> Hölle 2f.; Ehebruch 2ff.</seg><seg type="translation" xml:lang="en" source="#claude">The phrase is frequent in homilies; e.g. Wulfstan 167; <hi rend="italic">cf. Gl</hi> Hölle 2f.; Ehebruch 2ff.</seg></note>

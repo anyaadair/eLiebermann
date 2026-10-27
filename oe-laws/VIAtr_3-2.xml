@@ -56,6 +56,7 @@
       <change when="2026-10-19">Generated from row 1220 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 248.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS K added from Gesetze I, p. 248.</change>
+      <change when="2026-10-27">Liebermann’s marginal cross-reference (Gesetze I p. 248) read by Claude from Anya Adair’s photograph of the page in a printed copy: “ebd. 6, 1”.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -70,9 +71,8 @@
         <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">And if he does that, then he deserves to be all the better regarded, wherever he may live.</ab>
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-k"><pb n="93" ed="#robertson"/>And if he carries out this vow, he shall be entitled to be treated with greater consideration, wherever he may dwell.</ab>
         <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-k"><pb n="163" ed="#rabin-doml"/>And if he fulfills that, then he will be worthy of higher esteem, wherever he resides.</ab>
-        <note type="comparison" source="#liebermann" n="248">V Atr 6.[?]</note>
-        <note type="comparisonPrinted" source="#liebermann">ebd. 6,[?]</note>
-        <note type="comparisonIncomplete">Some of Liebermann’s notes here are cut off in the gutter of the scan used, and are still to be completed.</note>
+        <note type="comparison" source="#liebermann" n="248"><ref target="clause:VAtr_6-1">V Atr 6.1</ref></note>
+        <note type="comparisonPrinted" source="#liebermann">ebd. 6, 1</note>
         <note type="comparedBy" source="#wormald-mel" n="340"><ref target="clause:VAtr_6-1">V Atr 6.1</ref></note>
       </div>
     </body>

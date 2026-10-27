@@ -61,6 +61,7 @@
       <change when="2026-10-19">Generated from row 1230 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 250.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS K added from Gesetze I, p. 250.</change>
+      <change when="2026-10-27">Liebermann’s marginal cross-reference (Gesetze I p. 250) read by Claude from Anya Adair’s photograph of the page in a printed copy: “Vgl. III Eg. 1, 1”.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -75,9 +76,8 @@
         <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">and that henceforth every person, poor as well as rich, be allowed to share in folk-right,</ab>
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-k"><ptr type="editorNote" n="1" target="#VIAtr_8-1.robnote.n.1"/><pb n="95" ed="#robertson"/>and that henceforth all men, both rich and poor, shall be allowed the benefit of the law;</ab>
         <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-k"><pb n="165" ed="#rabin-doml"/>And that henceforth all people, rich and poor, shall be granted their legal rights.</ab>
-        <note type="comparison" source="#liebermann" n="250">[?]</note>
-        <note type="comparisonPrinted" source="#liebermann">Vgl. [?] 1[?]</note>
-        <note type="comparisonIncomplete">Some of Liebermann’s notes here are cut off in the gutter of the scan used, and are still to be completed.</note>
+        <note type="comparison" source="#liebermann" n="250"><ref target="clause:IIIEg_1-1">III Eg 1.1</ref></note>
+        <note type="comparisonPrinted" source="#liebermann">Vgl. III Eg. 1, 1</note>
         <note type="comparedBy" source="#liebermann"><ref target="clause:VIIAtr_6-1">VII Atr 6.1</ref>; <ref target="clause:IICn_1-1">II Cn 1.1</ref></note>
         <note type="comparedBy" source="#kennedy" n="59"><ref target="clause:Cn-1018_part-009">Cn 1018 3–6</ref></note>
         <note type="comparedBy" source="#whitelock" n="462"><ref target="clause:IICn_Prol">II Cn Prol.</ref></note>

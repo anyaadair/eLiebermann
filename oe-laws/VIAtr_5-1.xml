@@ -59,6 +59,7 @@
       <change when="2026-10-19">Generated from row 1223 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 248.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS K added from Gesetze I, p. 248.</change>
+      <change when="2026-10-27">Liebermann’s marginal cross-reference (Gesetze I p. 248) read by Claude from Anya Adair’s photograph of the page in a printed copy: “ebd. 9”.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -73,9 +74,8 @@
         <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">They know full well that they may not lawfully have intercourse with a woman.</ab>
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-k"><ptr type="editorNote" n="1" target="#VIAtr_5-1.robnote.n.1"/><pb n="93" ed="#robertson"/>They know full well that they have no right to marry.</ab>
         <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-k"><pb n="163" ed="#rabin-doml"/>They know full well that they may not rightfully engage in sexual relations with a woman.</ab>
-        <note type="comparison" source="#liebermann" n="248">V Atr 9[?]</note>
-        <note type="comparisonPrinted" source="#liebermann">ebd. 9[?]</note>
-        <note type="comparisonIncomplete">Some of Liebermann’s notes here are cut off in the gutter of the scan used, and are still to be completed.</note>
+        <note type="comparison" source="#liebermann" n="248"><ref target="clause:VAtr_9">V Atr 9</ref></note>
+        <note type="comparisonPrinted" source="#liebermann">ebd. 9</note>
         <note type="comparedBy" source="#liebermann"><ref target="clause:VIIIAtr_30">VIII Atr 30</ref></note>
         <note type="comparedBy" source="#wormald-mel" n="340"><ref target="clause:VAtr_9">V Atr 9–9.2</ref></note>
         <note type="comparedBy" source="#wormald-mel" n="342"><ref target="clause:VIIIAtr_26">VIII Atr 26–30</ref></note>

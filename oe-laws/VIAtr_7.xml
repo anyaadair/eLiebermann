@@ -64,6 +64,7 @@
       <change when="2026-10-19">Generated from row 1228 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 248.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS K added from Gesetze I, p. 248.</change>
+      <change when="2026-10-27">Liebermann’s marginal cross-reference (Gesetze I p. 248) read by Claude from Anya Adair’s photograph of the page in a printed copy: “Vgl. E Gu. 11”.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -78,10 +79,9 @@
         <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">And if witches or soothsayers, sorcerers or whores, murderers or perjurers are found anywhere in the country, let them be eagerly driven out of this country and this people be cleansed, or let them be utterly destroyed in the country, unless they desist [from evil] and atone all the more deeply.</ab>
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-k"><ptr type="editorNote" n="1" target="#VIAtr_7.robnote.n.1"/><pb n="93" ed="#robertson"/>And if wizards or sorcerers, magicians<ptr type="editorNote" n="2" target="#VIAtr_7.robnote.n.2"/> or prostitutes, those who secretly compass death or perjurers be met with anywhere in the land, they shall be zealously driven from this land and the nation shall be purified; otherwise they shall be utterly destroyed in the land, unless they cease from their wickedness and make amends to the utmost of their ability.</ab>
         <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-k"><pb n="165" ed="#rabin-doml"/>And if wizards or magicians, conjurors or prostitutes, murderers or perjurers be found anywhere in this land, they are to be zealously expelled from the realm and the people cleansed, or they shall be entirely abolished from the earth, unless they cease and most sincerely repent.</ab>
-        <note type="comparison" source="#liebermann" n="248">E[?]</note>
-        <note type="comparisonPrinted" source="#liebermann">Vgl. E[?]</note>
-        <note type="comparisonIncomplete">Some of Liebermann’s notes here are cut off in the gutter of the scan used, and are still to be completed.</note>
-        <note type="comparedBy" source="#liebermann"><ref target="clause:IICn_4a">II Cn 4a</ref></note>
+        <note type="comparison" source="#liebermann" n="248"><ref target="clause:EGu_11">EGu 11</ref></note>
+        <note type="comparisonPrinted" source="#liebermann">Vgl. E Gu. 11</note>
+        <note type="comparedBy" source="#liebermann"><ref target="clause:Cn1020_10">Cn 1020 10</ref>; <ref target="clause:IICn_4a">II Cn 4a</ref></note>
         <note type="comparison" source="#wormald-mel" n="334"><label>recurs in later code</label> <ref target="clause:Cn-1018_part-015">Cn 1018 7</ref> <quote>Almost all these additions recurred in codes later drafted by Wulfstan for Cnut (n. 332: VI Atr 7, Cn 1018 7, Cn 1018 9, II Cn 4a, II Cn 6)</quote></note>
         <note type="comparison" source="#wormald-mel" n="334"><label>recurs in later code</label> <ref target="clause:Cn-1018_part-018">Cn 1018 9</ref> <quote>Almost all these additions recurred in codes later drafted by Wulfstan for Cnut (n. 332: VI Atr 7, Cn 1018 7, Cn 1018 9, II Cn 4a, II Cn 6)</quote></note>
         <note type="comparison" source="#wormald-mel" n="334"><label>recurs in later code</label> <ref target="clause:IICn_4a">II Cn 4a</ref> <quote>Almost all these additions recurred in codes later drafted by Wulfstan for Cnut (n. 332: VI Atr 7, Cn 1018 7, Cn 1018 9, II Cn 4a, II Cn 6)</quote></note>

@@ -62,6 +62,7 @@
       <change when="2026-10-19">Generated from row 1232 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 250.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS K added from Gesetze I, p. 250.</change>
+      <change when="2026-10-27">Liebermann’s marginal cross-reference (Gesetze I p. 250) read by Claude from Anya Adair’s photograph of the page in a printed copy: “ebd. 2”.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -76,9 +77,8 @@
         <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">And it is the ordinance of the witan that Christian people who have not forfeited [their lives] are not to be sold out of the country, at least not to a heathen people; but let people take great care not to destroy those souls which Christ bought with his own life.</ab>
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-k"><ptr type="editorNote" n="1" target="#VIAtr_9.robnote.n.1"/><pb n="95" ed="#robertson"/>And it is the decree of the councillors that Christian men who are innocent of crime shall not be sold out of the land, least of all to the heathen, but care shall diligently be taken that the souls which Christ bought with his own life be not destroyed<ptr type="editorNote" n="2" target="#VIAtr_9.robnote.n.2"/>.</ab>
         <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-k"><pb n="165" ed="#rabin-doml"/>And the decree of the councilors is that those who are Christian and free of guilt shall not be sold out of this land, especially not to heathen people; but we must zealously ensure that the souls not be destroyed which Christ purchased with his own life.</ab>
-        <note type="comparison" source="#liebermann" n="250">[?]</note>
-        <note type="comparisonPrinted" source="#liebermann">ebd. [?]</note>
-        <note type="comparisonIncomplete">Some of Liebermann’s notes here are cut off in the gutter of the scan used, and are still to be completed.</note>
+        <note type="comparison" source="#liebermann" n="250"><ref target="clause:VAtr_2">V Atr 2</ref></note>
+        <note type="comparisonPrinted" source="#liebermann">ebd. 2</note>
         <note type="comparedBy" source="#liebermann"><ref target="clause:VIIAtr_5">VII Atr 5</ref>; <ref target="clause:ICn_18-3">I Cn 18.3</ref>; <ref target="clause:IICn_3">II Cn 3</ref></note>
         <note type="comparison" source="#jurasinski-and-oliver" n="379"><label>echoes</label> <ref target="clause:VAtr_2">V Atr 2</ref> <quote>In Æthelred v, §2 (echoed in vi, §9)</quote></note>
         <note type="comparedBy" source="#jurasinski-and-oliver" n="379"><ref target="clause:Ine_11">Ine 11</ref></note>

@@ -62,6 +62,7 @@
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 268.</change>
       <change when="2026-10" type="checked">Robertson’s text checked and corrected against her edition, p. 128.</change>
       <change when="2026-10" type="checked">Liebermann’s text added from <title>Die Gesetze der Angelsachsen</title> I, p. 268.</change>
+      <change when="2026-10-27">Liebermann’s marginal cross-reference (Gesetze I p. 268) read by Claude from Anya Adair’s photograph of the page in a printed copy: “Vgl. E Gu. 11”.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -76,9 +77,8 @@
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-d"><ptr type="editorNote" n="1" target="#VIIIAtr_40.robnote.n.1"/><pb n="129" ed="#robertson"/>And if the land is to be thoroughly purified, inquiry and search must be diligently made for the dwelling-places of the wicked who will not abstain [from evil] or make amends in the sight of God, and wherever they are found they shall be brought to justice, willingly or unwillingly, or they shall be utterly driven from the land, unless they submit and amend their ways.</ab>
         <ab type="translation" xml:lang="en" source="#whitelock" corresp="#wit-d"><pb n="457" ed="#whitelock"/>And if one wishes rightly to cleanse the country, one must inquire and eagerly investigate, where the criminals have their dwelling, who will not desist or make amends to God; but wherever they are found, they are to be compelled to do right, willingly or unwillingly, or be utterly expelled from the country, unless they submit and turn to what is right.</ab>
         <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-d"><pb n="203" ed="#rabin-doml"/>And if the land is to be cleansed properly, one must investigate and diligently seek out the dwelling places of the wicked who refuse to renounce their sins and repent before God; and they are to be brought to justice, willingly or unwillingly, wherever they are found, or they will be wholly expelled from this land, unless they yield and submit to the law.</ab>
-        <note type="comparison" source="#liebermann" n="268">EGu</note>
-        <note type="comparisonPrinted" source="#liebermann">Vgl. E Gu[. ?]</note>
-        <note type="comparisonIncomplete">Some of Liebermann’s notes here are cut off in the gutter of the scan used, and are still to be completed.</note>
+        <note type="comparison" source="#liebermann" n="268"><ref target="clause:EGu_11">EGu 11</ref></note>
+        <note type="comparisonPrinted" source="#liebermann">Vgl. E Gu. 11</note>
         <note type="comparedBy" source="#liebermann"><ref target="clause:IICn_4">II Cn 4</ref>; <ref target="clause:IICn_7-1">II Cn 7.1</ref></note>
         <note type="comparedBy" source="#kennedy" n="59"><ref target="clause:Cn-1018_part-015">Cn 1018 7</ref></note>
         <note type="comparedBy" source="#wormald-mel" n="357"><ref target="clause:IICn_4">II Cn 4</ref></note>

@@ -55,6 +55,7 @@
       <change when="2026-10-19">Generated from row 1226 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 248.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS K added from Gesetze I, p. 248.</change>
+      <change when="2026-10-27">Liebermann’s marginal cross-reference (Gesetze I p. 248) read by Claude from Anya Adair’s photograph of the page in a printed copy: “ebd. 9, 2”.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -69,9 +70,8 @@
         <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">But whoever refuses what befits his holy order: let his honour diminish both in the Church and in the world.</ab>
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-k"><pb n="93" ed="#robertson"/>And he who will not do what befits his order shall impair both his ecclesiastical and his civil status.</ab>
         <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-k"><pb n="163" ed="#rabin-doml"/>And he who will not act in a manner fitting for his order shall diminish his honor before God and the world.</ab>
-        <note type="comparison" source="#liebermann" n="248">V Atr 9.[?]</note>
-        <note type="comparisonPrinted" source="#liebermann">ebd. 9,[?]</note>
-        <note type="comparisonIncomplete">Some of Liebermann’s notes here are cut off in the gutter of the scan used, and are still to be completed.</note>
+        <note type="comparison" source="#liebermann" n="248"><ref target="clause:VAtr_9-2">V Atr 9.2</ref></note>
+        <note type="comparisonPrinted" source="#liebermann">ebd. 9, 2</note>
         <note type="comparedBy" source="#liebermann"><ref target="clause:VIIIAtr_29">VIII Atr 29</ref></note>
       </div>
     </body>
