@@ -41,6 +41,7 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-19">Generated from row 2562 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10-27">Liebermann’s marginal cross-reference (Gesetze I p. 395) transcribed earlier from the scan (p. 395 is legible); now linked: “*III Em. 2”.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -50,7 +51,7 @@
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="App AGu 7" corresp="#wit-q"><pb n="395" ed="#liebermann"/>Et qui furem dimittet.<ptr type="liebermannNote" n="12" target="#App-AGu_7.lnote.oe.12"/> uel ad capiendum eum<ptr type="liebermannNote" n="13" target="#App-AGu_7.lnote.oe.13"/> adiuuare<ptr type="liebermannNote" n="14" target="#App-AGu_7.lnote.oe.14"/> dissimulabit<ptr type="liebermannNote" n="**" target="#App-AGu_7.lnote.oe.star2"/>, emendet sicut supra dictum est.</ab>
         <ab type="translation" xml:lang="de" source="#liebermann"><pb n="395" ed="#liebermann"/>7. Und wer einen Dieb entkommen<ptr type="liebermannNote" n="1" target="#App-AGu_7.lnote.de.1"/> lässt oder zaudert zu helfen ihn zu fassen, büsse wie oben [c. 6, 1] gesagt ist.</ab>
         <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">7. And whoever lets a thief escape or hesitates to help to seize him, let him pay compensation as is said above [c. 6, 1].</ab>
-        <note type="comparison" source="#liebermann"/>
+        <note type="comparison" source="#liebermann" n="395"><ref target="clause:IIIEm_2">III Em 2</ref></note>
         <note type="comparisonPrinted" source="#liebermann">*III Em. 2</note>
         <note type="editorial">New row (October 2026): Liebermann’s text and German translation transcribed from Gesetze I p. 395 (two independent readings of the page images, differences settled against the page); Liebermann’s print has a stray full stop in ‘dimittet.’; transcribed as printed</note>
         <note type="liebermannNote" subtype="textual" xml:id="App-AGu_7.lnote.oe.star2" n="**" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">395</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">für</hi> wandie <hi rend="italic">I Ew Pr</hi></seg><seg type="translation" xml:lang="en" source="#claude">for wandie I Ew Pr</seg></note>
