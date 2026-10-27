@@ -60,6 +60,7 @@
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 266.</change>
       <change when="2026-10" type="checked">Liebermann’s text added from <title>Die Gesetze der Angelsachsen</title> I, p. 266.</change>
       <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 266: “þingc” → “þinge”.</change>
+      <change when="2026-10-27">Liebermann’s marginal cross-reference (Gesetze I p. 266) read by Claude from Anya Adair’s photograph of the page in a printed copy: “ebd. 5, 1”.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -76,7 +77,6 @@
         <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-d"><pb n="201" ed="#rabin-doml"/>Let him understand, if he will do so, that it is not appropriate in any way for him to take a wife or to become involved in the warfare of this world, if he desires to obey God properly and heed his laws, as rightly befits his office.</ab>
         <note type="comparison" source="#liebermann" n="266"><ref target="clause:VIAtr_5-1">VI Atr 5.1</ref></note>
         <note type="comparisonPrinted" source="#liebermann">ebd. 5, 1</note>
-        <note type="comparisonIncomplete">Some of Liebermann’s notes here are cut off in the gutter of the scan used, and are still to be completed.</note>
         <note type="liebermannNote" subtype="textual" xml:id="VIIIAtr_30.lnote.oe.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">266</biblScope></bibl><seg type="original" xml:lang="de">naðor <hi rend="italic">Ad. Eg.</hi></seg><seg type="translation" xml:lang="en" source="#claude">naðor Ad. Eg.</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="VIIIAtr_30.lnote.oe.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">267</biblScope></bibl><seg type="original" xml:lang="de">rihtlice h. <hi rend="italic">Ad. Eg.</hi></seg><seg type="translation" xml:lang="en" source="#claude">rihtlice h. Ad. Eg.</seg></note>
         <note type="liebermannNote" subtype="erklaerung" xml:id="VIIIAtr_30.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">184</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Geistliche 29g ff.</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf. Gl</hi> Geistliche 29g ff.</seg></note>

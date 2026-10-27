@@ -52,6 +52,7 @@
     <revisionDesc>
       <change when="2026-10-19">Generated from row 831 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text added from <title>Die Gesetze der Angelsachsen</title> I, p. 171.</change>
+      <change when="2026-10-27">Liebermann’s marginal cross-reference (Gesetze I p. 172) read by Claude from Anya Adair’s photograph of the page in a printed copy: “ebd.”.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -67,6 +68,8 @@
         <note type="liebermannNote" subtype="erklaerung" xml:id="IVAs_6-2a.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">113</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de">Der Ealdorman (<hi rend="italic">s. d. Gl</hi> 12. 14—17) steht oft dem Bischof, aber dem Thegn (<hi rend="italic">s. d.</hi> 7) sonst nur dann gleich, wenn dieser ‘adlig überhaupt’ bedeutet</seg><seg type="translation" xml:lang="en" source="#claude">The ealdorman (<hi rend="italic">see</hi> that word in <hi rend="italic">Gl</hi> 12. 14—17) is often equated with the bishop, but with the thegn (<hi rend="italic">see</hi> that word 7) otherwise only when the latter means ‘noble in general’</seg></note>
         <note type="liebermannNote" subtype="erklaerung" xml:id="IVAs_6-2a.lnote.de.3" n="3" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">113</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de">Auch die Pfarre (<hi rend="italic">s. d. Gl</hi> 4b) auf Kirchboden gewährt in Normannenzeit Asyl</seg><seg type="translation" xml:lang="en" source="#claude">The parsonage (<hi rend="italic">see</hi> that word in <hi rend="italic">Gl</hi> 4b) on church land also grants sanctuary in Norman times</seg></note>
         <note type="liebermannNote" subtype="erklaerung" xml:id="IVAs_6-2a.lnote.de.4" n="4" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">113</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de">Dagegen ‘VII’ Grið 5, vielleicht aus Af 5</seg><seg type="translation" xml:lang="en" source="#claude">On the other hand ‘VII’ Grið 5, perhaps from Af 5</seg></note>
+        <note type="comparison" source="#liebermann" n="172">Vor. S.</note>
+        <note type="comparisonPrinted" source="#liebermann">ebd.</note>
       </div>
     </body>
   </text>

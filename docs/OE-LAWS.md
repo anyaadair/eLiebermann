@@ -44,6 +44,8 @@ In the outer margin beside his German translation, Liebermann prints short notes
 - **BB** the references written out in full ("ebd." and bare numbers expanded: *I Em 3; II Em 4*);
 - **BC** the page in *Gesetze* I, and anything still to check. Notes cut off in the gutter of the archive.org scan say **TO COMPLETE**; the sheet *Vgl to complete* lists them, and the sheet *Liebermann Vgl* lists every note, including those beside texts that are not in the database.
 
+**Completing the cut-off notes (from October 2026).** Readings of the notes marked TO COMPLETE, made from a printed copy, are kept in `data/vgl-readings.json` (clause, page, the note as printed, the references written out). `python3 tools/add-vgl.py` writes them into the clause files: the comparison notes, the reverse links on the clauses compared, and a line in each clause's history, and it drops the “still to be completed” note. Copy these readings into the spreadsheet too, or a rebuild from it will undo them. The pages still to do are listed in the project note *marginal-notes-to-check*.
+
 `tools/laws-from-database.py` (`vgl_links`) resolves each reference in BB to a clause file and writes `<note type="comparison">` (the references, linked with `<ref target="clause:ID">`), `<note type="comparisonPrinted">` (BA) and, where needed, `<note type="comparisonIncomplete">`. It also collects the reverse links: a clause that other clauses compare with it gets `<note type="comparedBy">`. The clause page shows both, as *Compare (Liebermann, Gesetze I p. …)* and *Liebermann compares this clause at*.
 
 ## One page per Liebermann clause (October 2026)

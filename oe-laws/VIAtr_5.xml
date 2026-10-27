@@ -61,6 +61,7 @@
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 248.</change>
       <change when="2026-10" type="checked">Robertson’s translation checked and corrected against her edition, p. 93.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS K added from Gesetze I, p. 248.</change>
+      <change when="2026-10-27">Liebermann’s marginal cross-reference (Gesetze I p. 248) read by Claude from Anya Adair’s photograph of the page in a printed copy: “ebd. 8”.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -75,9 +76,8 @@
         <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">And we ask and instruct all servants of God, and above all priests, to obey God and cherish chastity and guard themselves against God's anger.</ab>
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-k"><ptr type="editorNote" n="1" target="#VIAtr_5.robnote.n.1"/><pb n="93" ed="#robertson"/>And we pray and enjoin all the servants of God, and priests above all, to obey God and practise celibacy and guard against incurring the wrath of God.</ab>
         <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-k"><pb n="163" ed="#rabin-doml"/>And we require and instruct that all servants of God, especially priests, obey God, embrace celibacy, and protect themselves against God’s wrath.</ab>
-        <note type="comparison" source="#liebermann" n="248">V Atr 8[?]</note>
-        <note type="comparisonPrinted" source="#liebermann">ebd. 8[?]</note>
-        <note type="comparisonIncomplete">Some of Liebermann’s notes here are cut off in the gutter of the scan used, and are still to be completed.</note>
+        <note type="comparison" source="#liebermann" n="248"><ref target="clause:VAtr_8">V Atr 8</ref></note>
+        <note type="comparisonPrinted" source="#liebermann">ebd. 8</note>
         <note type="comparedBy" source="#liebermann"><ref target="clause:VIAtr_41">VI Atr 41</ref>; <ref target="clause:ICn_6-1">I Cn 6.1</ref></note>
         <note type="comparedBy" source="#kennedy" n="59"><ref target="clause:Cn-1018_part-021">Cn 1018 11–11.2</ref></note>
         <note type="comparedBy" source="#wormald-mel" n="356"><ref target="clause:ICn_6-1">I Cn 6.1–2a</ref></note>

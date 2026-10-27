@@ -59,6 +59,7 @@
       <change when="2026-10-19">Generated from row 1460 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 266.</change>
       <change when="2026-10" type="checked">Liebermann’s text added from <title>Die Gesetze der Angelsachsen</title> I, p. 266.</change>
+      <change when="2026-10-27">Liebermann’s marginal cross-reference (Gesetze I p. 266) read by Claude from Anya Adair’s photograph of the page in a printed copy: “ebd. 5, 4”.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -75,7 +76,6 @@
         <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-d"><pb n="201" ed="#rabin-doml"/>And if he conducts his life wrongly, then his privileges are to be diminished according to the severity of his transgression.</ab>
         <note type="comparison" source="#liebermann" n="266"><ref target="clause:VIAtr_5-4">VI Atr 5.4</ref></note>
         <note type="comparisonPrinted" source="#liebermann">ebd. 5, 4</note>
-        <note type="comparisonIncomplete">Some of Liebermann’s notes here are cut off in the gutter of the scan used, and are still to be completed.</note>
         <note type="editorial">Liebermann compares VI Atr 5.4.</note>
         <note type="liebermannNote" subtype="erklaerung" xml:id="VIIIAtr_29.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">184</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">Statt VI kann auch V Atr 9, 1f. Quelle sein.—Zum Ausdruck <hi rend="italic">vgl.: boctæcing</hi> ‘Kanonistik’ II Cn 38, 2 und <hi rend="italic">ne ure ænig his lif ne fadode swaswa he scolde; Hom. n</hi>. Wulfstan 159</seg><seg type="translation" xml:lang="en" source="#claude">V Atr 9, 1f. may also be the source instead of VI.—For the expression <hi rend="italic">cf.: boctæcing</hi> ‘canon law’ II Cn 38, 2 and <hi rend="italic">ne ure ænig his lif ne fadode swaswa he scolde; Hom. n</hi>. Wulfstan 159</seg><note type="remark" resp="#claude">On several rubrics: VIII Atr 28—30</note></note>
       </div>

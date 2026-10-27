@@ -59,6 +59,7 @@
       <change when="2026-10-19">Generated from row 1243 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 250.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS K added from Gesetze I, p. 250.</change>
+      <change when="2026-10-27">Liebermann’s marginal cross-reference (Gesetze I p. 250) read by Claude from Anya Adair’s photograph of the page in a printed copy: “Vgl. V Atr. 10, 2”.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -73,9 +74,8 @@
         <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">And let no one henceforth subject a church to servitude, or unlawfully traffic in churches,</ab>
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-k"><ptr type="editorNote" n="1" target="#VIAtr_15.robnote.n.1"/><pb n="97" ed="#robertson"/>And no-one henceforth shall oppress the church, or make it an object of improper traffic,</ab>
         <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-k"><pb n="167" ed="#rabin-doml"/>And henceforth no one shall persecute the Church, nor wrongfully make it an object of exchange.</ab>
-        <note type="comparison" source="#liebermann" n="250">[?]</note>
-        <note type="comparisonPrinted" source="#liebermann">Vgl. [?] 10[?]</note>
-        <note type="comparisonIncomplete">Some of Liebermann’s notes here are cut off in the gutter of the scan used, and are still to be completed.</note>
+        <note type="comparison" source="#liebermann" n="250"><ref target="clause:VAtr_10-2">V Atr 10.2</ref></note>
+        <note type="comparisonPrinted" source="#liebermann">Vgl. V Atr. 10, 2</note>
         <note type="comparedBy" source="#liebermann"><ref target="clause:Northu_20">Northu 20</ref>; <ref target="clause:Northu_21">Northu 21</ref></note>
         <note type="editorial">K's ‘þowige’ should be corrected to ‘þeowige’.</note>
         <note type="textual" source="#rabin-doml">þeowige: þowige K</note>

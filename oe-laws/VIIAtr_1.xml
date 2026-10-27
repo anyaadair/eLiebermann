@@ -60,6 +60,7 @@
       <change when="2026-10-19">Generated from row 1373 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text added from <title>Die Gesetze der Angelsachsen</title> I, p. 260.</change>
       <change when="2026-10" type="checked">The modern editor’s translation corrected against Robertson, p. 109: “cooperate” → “co-operate”.</change>
+      <change when="2026-10-27">Liebermann’s marginal cross-reference (Gesetze I p. 260) read by Claude from Anya Adair’s photograph of a printed copy, completed by Anya Adair from the book: “Vgl. V Atr. 34 f.; VI 1, 1”.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -73,9 +74,8 @@
         <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">First, that one God be loved and honoured above all, and that all obey their king, as their predecessors best did, and defend his kingdom together with him.</ab>
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-q"><ptr type="editorNote" n="1" target="#VIIAtr_1.robnote.n.1"/><pb n="109" ed="#robertson"/>In the first place, one God shall be loved and honoured above all, and all men shall show obedience to their king in accordance with the best traditions of their ancestors<ptr type="editorNote" n="2" target="#VIIAtr_1.robnote.n.2"/>, and co-operate with him in defending his kingdom.</ab>
         <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-t"><pb n="181" ed="#rabin-doml"/>First, that the one God is to be praised and honored above all, and that all should obey their king according to the best customs of their ancestors, and together with him defend his kingdom.</ab>
-        <note type="comparison" source="#liebermann" n="260"><ref target="clause:VAtr_34">V Atr 34f.</ref>; VI Atr 1[?]</note>
-        <note type="comparisonPrinted" source="#liebermann">Vgl. V At[r.] 34 f.; VI 1[?]</note>
-        <note type="comparisonIncomplete">Some of Liebermann’s notes here are cut off in the gutter of the scan used, and are still to be completed.</note>
+        <note type="comparison" source="#liebermann" n="260"><ref target="clause:VAtr_34">V Atr 34f.</ref>; <ref target="clause:VIAtr_1-1">VI Atr 1.1</ref></note>
+        <note type="comparisonPrinted" source="#liebermann">Vgl. V Atr. 34 f.; VI 1, 1</note>
         <note type="comparison" source="#wormald-mel" n="331"><label>compare</label> <ref target="clause:VAtr_1">V Atr 1</ref> <quote>Compare the first clause with phrases from 'V' and 'VI' (n. 307: VII Atr 1, V Atr 1, 35)</quote></note>
         <note type="comparison" source="#wormald-mel" n="331"><label>compare</label> <ref target="clause:VAtr_35">V Atr 35</ref> <quote>Compare the first clause with phrases from 'V' and 'VI' (n. 307: VII Atr 1, V Atr 1, 35)</quote></note>
         <note type="editorial">Liebermann compares V Atr 34 f.</note>

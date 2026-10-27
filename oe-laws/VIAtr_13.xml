@@ -60,6 +60,7 @@
       <change when="2026-10-19">Generated from row 1241 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 250.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS K added from Gesetze I, p. 250.</change>
+      <change when="2026-10-27">Liebermann’s marginal cross-reference (Gesetze I p. 250) read by Claude from Anya Adair’s photograph of the page in a printed copy: “V Atr. 10, 1”.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -74,9 +75,8 @@
         <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">And let every church be under the protection of God and of the king and of all Christian people.</ab>
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-k"><ptr type="editorNote" n="1" target="#VIAtr_13.robnote.n.1"/><pb n="97" ed="#robertson"/>And every church shall be under the special protection of God and of the king and of all Christian people.</ab>
         <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-k"><pb n="167" ed="#rabin-doml"/>And each church shall be under the protection of God and of the king and of all Christian people.</ab>
-        <note type="comparison" source="#liebermann" n="250">V Atr [?]</note>
-        <note type="comparisonPrinted" source="#liebermann">V Atr[?]</note>
-        <note type="comparisonIncomplete">Some of Liebermann’s notes here are cut off in the gutter of the scan used, and are still to be completed.</note>
+        <note type="comparison" source="#liebermann" n="250"><ref target="clause:VAtr_10-1">V Atr 10.1</ref></note>
+        <note type="comparisonPrinted" source="#liebermann">V Atr. 10, 1</note>
         <note type="comparedBy" source="#liebermann"><ref target="clause:ICn_2-1">I Cn 2.1</ref>; <ref target="clause:Grith_31">Grið 31</ref></note>
         <note type="comparedBy" source="#wormald-mel" n="342"><ref target="clause:VIIIAtr_18">VIII Atr 18–25</ref></note>
         <note type="comparedBy" source="#kennedy" n="59"><ref target="clause:Cn-1018_part-007">Cn 1018 2.1–2.2</ref></note>

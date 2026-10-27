@@ -58,6 +58,7 @@
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 273.</change>
       <change when="2026-10" type="checked">Robertson’s text checked and corrected against her edition, p. 142.</change>
       <change when="2026-10" type="checked">Liebermann’s text added from <title>Die Gesetze der Angelsachsen</title> I, p. 273.</change>
+      <change when="2026-10-27">Liebermann’s marginal cross-reference (Gesetze I p. 274) read by Claude from Anya Adair’s photograph of the page in a printed copy: “Vgl. IV Eg. 1, 5”.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -72,9 +73,8 @@
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-york-gospels"><pb n="143" ed="#robertson"/>Now I pray my archbishops and all my diocesan bishops to be zealous with regard to the rights of the church—each one in the district which is entrusted to him; and likewise I enjoin upon my ealdormen to support the bishops in furthering the rights of the church and my royal authority and the well-being of the whole nation.</ab>
         <ab type="translation" xml:lang="en" source="#whitelock"><pb n="460" ed="#whitelock"/>Now I pray my archbishops and all my diocesan bishops, that they all may be zealous about God’s dues, each in the district which is entrusted to him; and also I charge my ealdormen that they help the bishops in furthering God’s rights and my royal dignity and the benefit of all the people.</ab>
         <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-york-gospels"><pb n="229" ed="#rabin-doml"/>I now charge my archbishops and all my subordinate bishops to be conscientious concerning the rights of the Church, each in the region assigned to him; and I also command my ealdormen to support the bishops in advancing the rights of the Church and my royal authority and the welfare of the whole people.</ab>
-        <note type="comparison" source="#liebermann" n="274"></note>
-        <note type="comparisonPrinted" source="#liebermann">Vgl. IV [...] 1, 8[?]</note>
-        <note type="comparisonIncomplete">Some of Liebermann’s notes here are cut off in the gutter of the scan used, and are still to be completed.</note>
+        <note type="comparison" source="#liebermann" n="274"><ref target="clause:IVEg_1-5">IV Eg 1.5</ref></note>
+        <note type="comparisonPrinted" source="#liebermann">Vgl. IV Eg. 1, 5</note>
         <note type="comparedBy" source="#liebermann"><ref target="clause:Cn1027_16">Cn 1027 16</ref></note>
         <note type="textual" source="#rabin-doml">[3] him: heom Y</note>
       </div>

@@ -59,6 +59,7 @@
       <change when="2026-10-19">Generated from row 1221 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 248.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS K added from Gesetze I, p. 248.</change>
+      <change when="2026-10-27">Liebermann’s marginal cross-reference (Gesetze I p. 248) read by Claude from Anya Adair’s photograph of the page in a printed copy: “ebd. 7”.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -73,9 +74,8 @@
         <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">And canons, where there is such church property that they can have a [common] refectory and dormitory, are to keep their foundation in chastity, as their rule prescribes; otherwise it is right that whoever will not do this lose the benefice.</ab>
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-k"><ptr type="editorNote" n="1" target="#VIAtr_4.robnote.n.1"/><pb n="93" ed="#robertson"/>And canons, wherever their property admits of their having a refectory and a dormitory, shall maintain celibacy in their foundation, as their rule prescribes; otherwise it is right that he who refuses to do so should forfeit his endowment<ptr type="editorNote" n="2" target="#VIAtr_4.robnote.n.2"/>.</ab>
         <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-k"><pb n="163" ed="#rabin-doml"/>And canons, when their holding is such that they possess a refectory and a dormitory, shall hold their monastery with propriety and celibacy, just as their rule instructs; or else he who will not do that must forfeit his holding.</ab>
-        <note type="comparison" source="#liebermann" n="248">V Atr 7[?]</note>
-        <note type="comparisonPrinted" source="#liebermann">ebd. 7[?]</note>
-        <note type="comparisonIncomplete">Some of Liebermann’s notes here are cut off in the gutter of the scan used, and are still to be completed.</note>
+        <note type="comparison" source="#liebermann" n="248"><ref target="clause:VAtr_7">V Atr 7</ref></note>
+        <note type="comparisonPrinted" source="#liebermann">ebd. 7</note>
         <note type="liebermannNote" subtype="erklaerung" xml:id="VIAtr_4.lnote.de.a" n="a" source="#liebermann-erkl" rend="wholeClause"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">175</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Horen 3</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf. Gl</hi> Horen 3</seg></note>
         <note type="editorNote" subtype="endnote" xml:id="VIAtr_4.robnote.n.1" n="1" source="#robertson"><bibl><biblScope unit="page">332</biblScope></bibl><seg type="original" xml:lang="en">Cf. V, 7.</seg></note>
         <note type="editorNote" subtype="endnote" xml:id="VIAtr_4.robnote.n.2" n="2" source="#robertson"><bibl><biblScope unit="page">332</biblScope></bibl><seg type="original" xml:lang="en">The Latin rendering is: <hi rend="italic">Dei hereditate careant</hi>.</seg></note>

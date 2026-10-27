@@ -62,6 +62,7 @@
       <change when="2026-10" type="checked">Liebermann’s text of MS K added from Gesetze I, p. 250.</change>
       <change when="2026-10" type="checked">Liebermann’s German translation corrected against Gesetze I, p. 250: “Und es bedenke recht ernstlich, wer anderen Urtheil spricht, was er selbst begehrt, wenn er folgendermassen spricht: Et dimitte nobis debita nostra u. s. w.” → “Und es bedenke recht ernstlich, wer anderen Urtheil spricht, was er selbst begehrt, wenn er folgendermassen spricht: Et dimitte nobis debita nostra u. s. w. (expanded letters in italics: Et dimitte nobis debita nostra)”.</change>
       <change when="2026-10" type="checked">The modern editor’s text corrected against Robertson, p. 94: “oðrum; "Et; nostra"” → “oþrum; “Et; nostra””.</change>
+      <change when="2026-10-27">Liebermann’s marginal cross-reference (Gesetze I p. 250) read by Claude from Anya Adair’s photograph of the page in a printed copy: “Matth. 6, 12”.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -77,9 +78,8 @@
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-k"><ptr type="editorNote" n="1" target="#VIAtr_10-3.robnote.n.1"/><pb n="95" ed="#robertson"/>And he who judges another shall earnestly consider what he himself desires when he says: "Forgive us our trespasses" etc.</ab>
         <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-k"><pb n="167" ed="#rabin-doml"/>And the person who judges another shall reflect sincerely upon his own motivations when he recites: <hi rend="italic">Forgive us our trespasses, etc</hi>.</ab>
         <note type="passageSource">Matt. 6:12</note>
-        <note type="comparison" source="#liebermann" n="250">Matth. [?]</note>
-        <note type="comparisonPrinted" source="#liebermann">Matt[h. ?]</note>
-        <note type="comparisonIncomplete">Some of Liebermann’s notes here are cut off in the gutter of the scan used, and are still to be completed.</note>
+        <note type="comparison" source="#liebermann" n="250">Matth. 6, 12</note>
+        <note type="comparisonPrinted" source="#liebermann">Matth. 6, 12</note>
         <note type="comparedBy" source="#liebermann"><ref target="clause:IICn_2a">II Cn 2a</ref></note>
         <note type="comparedBy" source="#kennedy" n="59"><ref target="clause:Cn-1018_part-009">Cn 1018 3–6</ref></note>
         <note type="comparedBy" source="#wormald-mel" n="357"><ref target="clause:IICn_2a">II Cn 2a</ref></note>

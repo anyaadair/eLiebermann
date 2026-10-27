@@ -60,6 +60,7 @@
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 266.</change>
       <change when="2026-10" type="checked">Liebermann’s text added from <title>Die Gesetze der Angelsachsen</title> I, p. 266.</change>
       <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 266: “Gif weofodþen be boca tæcincge his agen lif rihtlice fadige, þonne sy he fulles þegnweres ⁊ weorðscipes wurðe ge on life ge on legere.” → “Gif weofodþen be boca tæcincge his agen lif rihtlice fadige, þonne sy he fulles þegnweres ⁊ weorðscipes wurðe ge on life ge on legere. (expanded letters in italics: ne)”.</change>
+      <change when="2026-10-27">Liebermann’s marginal cross-reference (Gesetze I p. 266) read by Claude from Anya Adair’s photograph of the page in a printed copy: “Vgl. VI Atr. 5, 3”.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -75,8 +76,7 @@
         <ab type="translation" xml:lang="en" source="#whitelock" corresp="#wit-d"><pb n="456" ed="#whitelock"/>If a minister of the altar order his own life rightly according to the instruction of the books [of canon law], he is then to be entitled to the full wergild and dignity of a thegn, both in life and in the grave.</ab>
         <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-d"><pb n="199" ed="#rabin-doml"/>If a priest who serves at the altar conducts his life properly according to canon law, then he is to be deemed worthy of the full wergild and privileges of a thane, both in life and after death.</ab>
         <note type="comparison" source="#liebermann" n="266"><ref target="clause:VIAtr_5-3">VI Atr 5.3</ref></note>
-        <note type="comparisonPrinted" source="#liebermann">Vgl. VI [Atr.] 5, 3</note>
-        <note type="comparisonIncomplete">Some of Liebermann’s notes here are cut off in the gutter of the scan used, and are still to be completed.</note>
+        <note type="comparisonPrinted" source="#liebermann">Vgl. VI Atr. 5, 3</note>
         <note type="comparedBy" source="#wormald-mel" n="393"><ref target="clause:Northleoda_5">Norðleoda 5</ref></note>
         <note type="editorial">Chapters 28–30 form an 11th-c. ‘Additamentum’ to the Canons of Edgar 60 (ed. Thorpe, Ancient Laws 401). Liebermann compares VI Atr 5.3.</note>
         <note type="liebermannNote" subtype="textual" xml:id="VIIIAtr_28.lnote.oe.star2" n="**" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">266</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Cap.</hi> 28, 29, 30 <hi rend="italic">bilden ein Additamentum XI. Jhs. zu</hi> Can. Eadgari 60, <hi rend="italic">ed. Thorpe</hi> Ancient laws 401¹.</seg><seg type="translation" xml:lang="en" source="#claude">Cap. 28, 29, 30 form an 11th-cent. Additamentum to Can. Eadgari 60, ed. Thorpe Ancient laws 401¹.</seg></note>

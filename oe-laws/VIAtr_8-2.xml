@@ -55,6 +55,7 @@
       <change when="2026-10-19">Generated from row 1231 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 250.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS K added from Gesetze I, p. 250.</change>
+      <change when="2026-10-27">Liebermann’s marginal cross-reference (Gesetze I p. 250) read by Claude from Anya Adair’s photograph of the page in a printed copy: “Vgl. V Atr. 1, 2”.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -69,9 +70,8 @@
         <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">and that peace and friendship be lawfully kept in this country in spiritual and secular matters.</ab>
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-k"><ptr type="editorNote" n="1" target="#VIAtr_8-2.robnote.n.1"/><pb n="95" ed="#robertson"/>and that peace and goodwill shall be duly maintained within this land in matters both religious and secular.</ab>
         <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-k"><pb n="165" ed="#rabin-doml"/>And that peace and friendship shall be properly preserved throughout this land before God and the world.</ab>
-        <note type="comparison" source="#liebermann" n="250">V[?]</note>
-        <note type="comparisonPrinted" source="#liebermann">Vgl. V[?]</note>
-        <note type="comparisonIncomplete">Some of Liebermann’s notes here are cut off in the gutter of the scan used, and are still to be completed.</note>
+        <note type="comparison" source="#liebermann" n="250"><ref target="clause:VAtr_1-2">V Atr 1.2</ref></note>
+        <note type="comparisonPrinted" source="#liebermann">Vgl. V Atr. 1, 2</note>
         <note type="editorNote" subtype="endnote" xml:id="VIAtr_8-2.robnote.n.1" n="1" source="#robertson"><bibl><biblScope unit="page">332</biblScope></bibl><seg type="original" xml:lang="en">Cf. V, 1, 1.</seg></note>
       </div>
     </body>

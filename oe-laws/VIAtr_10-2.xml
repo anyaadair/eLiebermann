@@ -63,6 +63,7 @@
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 250.</change>
       <change when="2026-10" type="checked">Robertson’s text checked and corrected against her edition, p. 94.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS K added from Gesetze I, p. 250.</change>
+      <change when="2026-10-27">Liebermann’s marginal cross-reference (Gesetze I p. 250) read by Claude from Anya Adair’s photograph of the page in a printed copy: “Vgl. Can. Edg., Conf. 4 | Vgl. III Eg. 1, 2”.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -77,9 +78,8 @@
         <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">But let every deed be carefully distinguished, and the judgment moderated in proportion to the deed, as can be justified before God and tolerated in the world.</ab>
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-k"><ptr type="editorNote" n="1" target="#VIAtr_10-2.robnote.n.1"/><pb n="95" ed="#robertson"/>But every deed shall be carefully distinguished and judgment meted out in proportion to the offence, as shall be justifiable in the sight of God and acceptable in the eyes of men<ptr type="editorNote" n="2" target="#VIAtr_10-2.robnote.n.2"/>.</ab>
         <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-k"><pb n="165" ed="#rabin-doml"/>But each deed is to be carefully weighed and judgment appropriate to the deed handed down in such a way as shall be justifiable before God and acceptable to the community.</ab>
-        <note type="comparison" source="#liebermann" n="250">[?] Edg.[?]; [?]</note>
-        <note type="comparisonPrinted" source="#liebermann">Vg[l. ?] Edg.[?] | Vgl. [?]</note>
-        <note type="comparisonIncomplete">Some of Liebermann’s notes here are cut off in the gutter of the scan used, and are still to be completed.</note>
+        <note type="comparison" source="#liebermann" n="250">Can. Edg., Conf. 4; <ref target="clause:IIIEg_1-2">III Eg 1.2</ref></note>
+        <note type="comparisonPrinted" source="#liebermann">Vgl. Can. Edg., Conf. 4 | Vgl. III Eg. 1, 2</note>
         <note type="comparedBy" source="#liebermann"><ref target="clause:VIAtr_53">VI Atr 53</ref>; <ref target="clause:IICn_2">II Cn 2</ref></note>
         <note type="comparison" source="#wormald-mel" n="334"><label>recurs in later code</label> <ref target="clause:Cn-1018_part-011">Cn 1018 4–4.1</ref> <quote>Almost all these additions recurred in codes later drafted by Wulfstan for Cnut (n. 332: VI Atr 10.2–3, Cn 1018 4–4.1, II Cn 2a)</quote></note>
         <note type="comparison" source="#wormald-mel" n="334"><label>recurs in later code</label> <ref target="clause:IICn_2a">II Cn 2a</ref> <quote>Almost all these additions recurred in codes later drafted by Wulfstan for Cnut (n. 332: VI Atr 10.2–3, Cn 1018 4–4.1, II Cn 2a)</quote></note>

@@ -57,6 +57,7 @@
       <change when="2026-10-19">Generated from row 1225 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 248.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS K added from Gesetze I, p. 248.</change>
+      <change when="2026-10-27">Liebermann’s marginal cross-reference (Gesetze I p. 248) read by Claude from Anya Adair’s photograph of the page in a printed copy: “ebd. 9, 1”.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -71,9 +72,8 @@
         <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">And whoever will desist from this and keep chastity, let him have God's mercy and, in addition, as a worldly honour, that he be entitled to a thegn's wergild and a thegn's rights, both in life and in the grave.</ab>
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-k"><ptr type="editorNote" n="1" target="#missing"/><pb n="93" ed="#robertson"/>But he who will turn from marriage and observe celibacy shall obtain the favour of God, and in addition, as worldly honour, he shall enjoy the wergeld and the privileges of a thegn, both during his life and after his death.</ab>
         <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-k"><pb n="163" ed="#rabin-doml"/>And he who will renounce it and practice celibacy will have God’s favor, and also, as a privilege in this world, he shall be deemed worthy of a thane’s wergild and a thane’s rights, both in life and after death.</ab>
-        <note type="comparison" source="#liebermann" n="248">V Atr 9.[?]</note>
-        <note type="comparisonPrinted" source="#liebermann">ebd. 9,[?]</note>
-        <note type="comparisonIncomplete">Some of Liebermann’s notes here are cut off in the gutter of the scan used, and are still to be completed.</note>
+        <note type="comparison" source="#liebermann" n="248"><ref target="clause:VAtr_9-1">V Atr 9.1</ref></note>
+        <note type="comparisonPrinted" source="#liebermann">ebd. 9, 1</note>
         <note type="comparedBy" source="#liebermann"><ref target="clause:VIIIAtr_28">VIII Atr 28</ref></note>
         <note type="comparison" source="#wormald-mel" n="393"><label>parallel</label> <ref target="clause:VAtr_9-1">V Atr 9.1</ref> <quote>V Atr 9:1 (VI 5:3)</quote></note>
         <note type="comparedBy" source="#wormald-mel" n="340"><ref target="clause:VAtr_9">V Atr 9–9.2</ref></note>

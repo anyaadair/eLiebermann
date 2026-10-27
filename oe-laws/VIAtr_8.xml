@@ -58,6 +58,7 @@
       <change when="2026-10-19">Generated from row 1229 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 250.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS K added from Gesetze I, p. 250.</change>
+      <change when="2026-10-27">Liebermann’s marginal cross-reference (Gesetze I p. 250) read by Claude from Anya Adair’s photograph of the page in a printed copy: “Vgl. V Atr. 1, 1”.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -72,9 +73,8 @@
         <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">And it is the ordinance of the witan that just laws be set up in spiritual and in secular matters, and every abuse of law be eagerly suppressed,</ab>
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-k"><ptr type="editorNote" n="1" target="#VIAtr_8.robnote.n.1"/><pb n="95" ed="#robertson"/>And the decree of the councillors is, that justice shall be promoted in matters both religious and secular, and all injustice zealously suppressed;</ab>
         <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-k"><pb n="165" ed="#rabin-doml"/>And the decree of the councilors is that just laws shall be upheld before God and the world, and all that is unlawful zealously renounced.</ab>
-        <note type="comparison" source="#liebermann" n="250">V[?]</note>
-        <note type="comparisonPrinted" source="#liebermann">Vgl. V[?]</note>
-        <note type="comparisonIncomplete">Some of Liebermann’s notes here are cut off in the gutter of the scan used, and are still to be completed.</note>
+        <note type="comparison" source="#liebermann" n="250"><ref target="clause:VAtr_1-1">V Atr 1.1</ref></note>
+        <note type="comparisonPrinted" source="#liebermann">Vgl. V Atr. 1, 1</note>
         <note type="comparedBy" source="#kennedy" n="59"><ref target="clause:Cn-1018_part-009">Cn 1018 3–6</ref></note>
         <note type="comparedBy" source="#wormald-mel" n="357"><ref target="clause:IICn_1">II Cn 1</ref></note>
         <note type="editorNote" subtype="endnote" xml:id="VIAtr_8.robnote.n.1" n="1" source="#robertson"><bibl><biblScope unit="page">332</biblScope></bibl><seg type="original" xml:lang="en">Cf. V, 1, 1.</seg></note>

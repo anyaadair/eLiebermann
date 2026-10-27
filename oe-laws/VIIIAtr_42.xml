@@ -63,6 +63,7 @@
       <change when="2026-10" type="checked">Robertson’s text checked and corrected against her edition, p. 128.</change>
       <change when="2026-10" type="checked">Liebermann’s text added from <title>Die Gesetze der Angelsachsen</title> I, p. 268.</change>
       <change when="2026-10" type="checked">Liebermann’s German translation corrected against Gesetze I, p. 268: “Besitzstellung” → “Besitzerstellung”.</change>
+      <change when="2026-10-27">Liebermann’s marginal cross-reference (Gesetze I p. 268) read by Claude from Anya Adair’s photograph of the page in a printed copy: “*Vgl. o. 2, 1”.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -78,8 +79,7 @@
         <ab type="translation" xml:lang="en" source="#whitelock" corresp="#wit-d"><pb n="457" ed="#whitelock"/>And he who keeps under his protection God’s outlaw<ptr type="editorNote" n="2" target="#VIIIAtr_42.whinote.n.2"/> beyond the term which the king has set, let him put in peril himself and all his property, to the deputies of Christ, who maintain and control the Christian faith and the kingdom as long as God grants.</ab>
         <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-d"><pb n="203" ed="#rabin-doml"/>And the person who keeps an excommunicate under his protection beyond the period of time decreed by the king risks forfeiting his life and all his possessions to the representatives of Christ, who are to uphold and defend the Christian faith and royal authority for as long as God so permits.</ab>
         <note type="comparison" source="#liebermann" n="268"><ref target="clause:VIIIAtr_2-1">VIII Atr 2.1</ref></note>
-        <note type="comparisonPrinted" source="#liebermann">*Vgl. o. 2[, 1?]</note>
-        <note type="comparisonIncomplete">Some of Liebermann’s notes here are cut off in the gutter of the scan used, and are still to be completed.</note>
+        <note type="comparisonPrinted" source="#liebermann">*Vgl. o. 2, 1</note>
         <note type="comparedBy" source="#liebermann"><ref target="clause:IICn_66-1">II Cn 66.1</ref></note>
         <note type="comparedBy" source="#wormald-mel" n="359"><ref target="clause:IICn_66">II Cn 66–66.1</ref></note>
         <note type="comparedBy" source="#whitelock" n="471"><ref target="clause:IICn_66-1">II Cn 66.1</ref></note>

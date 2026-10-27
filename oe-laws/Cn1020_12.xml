@@ -56,6 +56,7 @@
       <change when="2026-10-19">Generated from row 1576 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 274.</change>
       <change when="2026-10" type="checked">Liebermann’s text added from <title>Die Gesetze der Angelsachsen</title> I, p. 274.</change>
+      <change when="2026-10-27">Liebermann’s marginal cross-reference (Gesetze I p. 274) read by Claude from Anya Adair’s photograph of the page in a printed copy: “Vgl. I Atr. 4, 2”.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -70,9 +71,8 @@
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-york-gospels"><pb n="143" ed="#robertson"/>And if anyone protects a thief or takes action on his behalf, he shall incur the same penalty at my hands as the thief was liable to, unless he can clear himself to my satisfaction with a full oath of exculpation.</ab>
         <ab type="translation" xml:lang="en" source="#whitelock"><pb n="460" ed="#whitelock"/>And if anyone gives asylum to a thief or interferes on his behalf, he is to be liable to the same penalty to me as the thief, unless he can clear himself of liability to me with the full process of exculpation.</ab>
         <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-york-gospels"><pb n="229" ed="#rabin-doml"/>Moreover, if anyone shelters a thief or intercedes on his behalf, he will be as deserving of punishment before me as the thief, unless he can be cleared by fully vindicating himself before me.</ab>
-        <note type="comparison" source="#liebermann" n="274"></note>
-        <note type="comparisonPrinted" source="#liebermann">Vgl. I A[...]</note>
-        <note type="comparisonIncomplete">Some of Liebermann’s notes here are cut off in the gutter of the scan used, and are still to be completed.</note>
+        <note type="comparison" source="#liebermann" n="274"><ref target="clause:IAtr_4-2">I Atr 4.2</ref></note>
+        <note type="comparisonPrinted" source="#liebermann">Vgl. I Atr. 4, 2</note>
       </div>
     </body>
   </text>
