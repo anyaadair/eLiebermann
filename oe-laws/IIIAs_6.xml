@@ -50,6 +50,7 @@
     <revisionDesc>
       <change when="2026-10-19">Generated from row 806 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text added from <title>Die Gesetze der Angelsachsen</title> I, p. 170.</change>
+      <change when="2026-10-27">Liebermann’s marginal cross-reference (Gesetze I p. 170) read from a printed copy by Anya Adair: “Vgl. V As. Pr. 1”.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -60,8 +61,7 @@
         <ab type="editionText" xml:lang="ang" source="#attenborough" n="6" corresp="#wit-q"><pb n="144" ed="#attenborough"/>Sextum, si aliquis homo sit adeo dives vel tantæ parentelæ ut<ptr type="editorNote" n="11" target="#IIIAs_6.attnote.fn.11"/> castigari non possit vel idem<ptr type="editorNote" n="12" target="#IIIAs_6.attnote.fn.12"/> cessare nolit, ut facias<ptr type="editorNote" n="13" target="#IIIAs_6.attnote.fn.13"/> qualiter abstrahatur in aliam aliquam partem regni tui, sicut dictum est in occiduis partibus, sit alterutrum quod sit, sic<ptr type="editorNote" n="14" target="#IIIAs_6.attnote.fn.14"/> comitum sic<ptr type="editorNote" n="14" target="#IIIAs_6.attnote.fn.14"/> villanorum.</ab>
         <ab type="translation" xml:lang="en" source="#attenborough" corresp="#wit-q"><pb n="145" ed="#attenborough"/>Sixthly, if any man is so rich<ptr type="editorNote" n="1" target="#IIIAs_6.attnote.n.1"/>, or belongs to so powerful a kindred that he cannot be punished, and moreover is not willing to desist [from his wrongdoing], you shall cause him to be removed to another part of your kingdom, as was declared in the west<ptr type="editorNote" n="2" target="#IIIAs_6.attnote.n.2"/>—whatever his station in life, whether he be noble or commoner.</ab>
         <note type="comparison" source="#liebermann" n="170"><ref target="clause:VAs_Prol-to-1">V As Pr. 1</ref></note>
-        <note type="comparisonPrinted" source="#liebermann">Vgl. V As[?] Pr. 1</note>
-        <note type="comparisonIncomplete">Some of Liebermann’s notes here are cut off in the gutter of the scan used, and are still to be completed.</note>
+        <note type="comparisonPrinted" source="#liebermann">Vgl. V As. Pr. 1</note>
         <note type="comparedBy" source="#liebermann"><ref target="clause:IVAs_3">IV As 3</ref></note>
         <note type="comparedBy" source="#wormald-mel" n="296"><ref target="clause:IVAs_3">IV As 3–3.2</ref></note>
         <note type="editorial">Latin only; no German translation in Liebermann. Liebermann compares V As Prol. 1.</note>
