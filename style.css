@@ -663,6 +663,7 @@ ul.citations li { break-inside: avoid; }
 .clause-texts h3.clause-subhead { margin-top: 1.4rem; }
 .clause-sources li:target { background: var(--highlight); }
 .clause-nav { display: flex; justify-content: space-between; gap: 1rem; margin: 1.5rem 0; }
+.clause-nav--top { margin: 0.8rem 0 0.6rem; }
 /* Entry pages: previous and next entries */
 .entry-nav { display: flex; justify-content: space-between; gap: 1rem; margin: 2rem 0 1.5rem; padding-top: 1rem; border-top: 1px solid var(--rule); }
 .entry-nav a { display: flex; flex-direction: column; text-decoration: none; max-width: 48%; }

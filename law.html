@@ -783,6 +783,15 @@ scripts:
         nav.appendChild(i > 0 ? link(sameCode[i - 1], '← ' + sameCode[i - 1].citation) : el('span'));
         nav.appendChild(i < sameCode.length - 1 ? link(sameCode[i + 1], sameCode[i + 1].citation + ' →') : el('span'));
         target.appendChild(nav);
+        // The same links higher up, just above the cross-references (or, with none,
+        // straight after the texts), so they can be used without scrolling to the foot.
+        const navTop = nav.cloneNode(true);
+        navTop.classList.add('clause-nav--top');
+        navTop.setAttribute('aria-label', 'Previous and next clause');
+        const textsBox = target.querySelector('.clause-texts');
+        const compareBox = target.querySelector('.clause-compare');
+        if (compareBox && textsBox && textsBox.contains(compareBox)) compareBox.parentNode.insertBefore(navTop, compareBox);
+        else if (textsBox) textsBox.parentNode.insertBefore(navTop, textsBox.nextSibling);
 
         const whole = el('section', 'entry-section');
         const btn = el('button', 'button', 'Show the whole of ' + row.code + ' (' + sameCode.length + ' clauses)');
