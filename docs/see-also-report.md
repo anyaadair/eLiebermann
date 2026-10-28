@@ -3,26 +3,26 @@
 Made by `tools/see-also.py`. It is replaced each time the tool runs.
 
 ```
-Entries: 9090; changed: 30; links added: 28; wrong links removed: 7
-  siehe           found  5359, linked  4479
+Entries: 9090; changed: 6; links added: 1; wrong links removed: 3
+  siehe           found  5359, linked  4480
   sieheDort       found   584, linked   441
   sieheOben       found    62, linked     0
   sieheUnten      found    24, linked     0
   sieheNummer     found    12, linked     0
   sieheDN         found    31, linked     0
   sieheDortUnter  found     5, linked     0
-  not linked, no entry with this headword (yet)               615
+  not linked, no entry with this headword (yet)               614
   linked, ~ filled in from the headword                       408
   not linked, no word found                                   156
   linked, linked to the word without the hyphen               143
   not linked, only the start or end of a word                 141
-  linked, the spelling entry for these letters, from a spelling entry   137
+  linked, the spelling entry for these letters, from a spelling entry   136
   linked, every word that begins so (a word ending in "-"), from an entry that only points   106
   not linked, part of a longer phrase, not a single headword    78
   linked, several entries have this headword, all linked       66
   linked, linked by a near spelling                            63
   linked, the first word that begins so (a word ending in "-")    50
-  linked, checked by hand                                      26
+  linked, checked by hand                                      28
   linked, a grammatical entry, linked to the abbreviations list in the text    11
   not linked, no entry with this headword                       9
   not linked, linked by a near spelling                         8
@@ -35,7 +35,7 @@ Entries: 9090; changed: 30; links added: 28; wrong links removed: 7
   linked, the prefix and this entry's word                      1
 ```
 
-## Not linked, no entry with this headword (yet) (615)
+## Not linked, no entry with this headword (yet) (614)
 
 - **Antithese**: s. unhæle
 - **Antithese**: s. godcund-woruldcund
@@ -186,7 +186,6 @@ Entries: 9090; changed: 30; links added: 28; wrong links removed: 7
 - **ad-2**: s. aver
 - **ae-4**: s. tosendan
 - **aed**: s. āð-
-- **aedel**: s. Æðelnoth
 - **aeden**: s. hæ-
 - **aeht-2**: s. eaht
 - **aeht-a**: s. eaht
@@ -708,7 +707,7 @@ Entries: 9090; changed: 30; links added: 28; wrong links removed: 7
 - **beraeccean**: s. bereccean
 - **bernet**: s. bærnet / bærning
 - **bete**: s. twibete
-- **bewepn-i-an**: s. bewæpnan / bewæpnian
+- **bewepn-i-an**: s. bewæpnian / bewæpnan
 - **bewerdian**: s. beweardian
 - **bewyddod**: s. beweddod
 - **bicgan**: s. bycgan
@@ -721,7 +720,7 @@ Entries: 9090; changed: 30; links added: 28; wrong links removed: 7
 - **camus**: s. chamus
 - **chascun**: s. cascun
 - **chiminus**: s. cheminus
-- **chyric**: s. cyric- / cyric
+- **chyric**: s. cyric / cyric-
 - **ciping**: s. cieping
 - **clips**: s. geclips
 - **commander**: s. comander
@@ -776,7 +775,7 @@ Entries: 9090; changed: 30; links added: 28; wrong links removed: 7
 - **feohtan**: s. gefeohtan
 - **fera**: s. gefera
 - **fierran**: s. afiersian
-- **filst-an**: s. fylstan / fylst
+- **filst-an**: s. fylst / fylstan
 - **foreceap**: s. forceap
 - **foreiurare**: s. forisiurare
 - **forfang**: s. forefang
@@ -915,7 +914,7 @@ Entries: 9090; changed: 30; links added: 28; wrong links removed: 7
 - **prunele**: s. purnele
 - **pup-p-licus**: s. publicus
 - **qualstow**: s. cwalstow
-- **ra-nhund**: s. hranhund / hrnhund
+- **ra-nhund**: s. hrnhund / hranhund
 - **rachater**: s. reachater
 - **raeda**: s. geræda
 - **raede**: s. anræde
@@ -1513,7 +1512,7 @@ Entries: 9090; changed: 30; links added: 28; wrong links removed: 7
 - **wreca**: s. ærendw~ (no entry for it)
 - **wyrhte**: s. ciesw~ (no entry for it)
 
-## Linked, the spelling entry for these letters, from a spelling entry (137)
+## Linked, the spelling entry for these letters, from a spelling entry (136)
 
 - **a-8**: s. ea
 - **a-8**: s. o
@@ -1594,7 +1593,6 @@ Entries: 9090; changed: 30; links added: 28; wrong links removed: 7
 - **i-4**: s. e
 - **i**: s. ig
 - **i**: s. y
-- **i**: s. æ
 - **ie-2**: s. e
 - **ie-2**: s. y
 - **ing**: s. -i
@@ -2031,7 +2029,7 @@ Entries: 9090; changed: 30; links added: 28; wrong links removed: 7
 - **wuna**: s. gew-
 - **yrf**: s. ierf-
 
-## Linked, checked by hand (26)
+## Linked, checked by hand (28)
 
 - **Abkurzungen**: s. m (m)
 - **Abkurzungen**: s. sanct (sancte)
@@ -2054,9 +2052,11 @@ Entries: 9090; changed: 30; links added: 28; wrong links removed: 7
 - **ae-4**: s. freondleast (freondleaste)
 - **ae-4**: s. sceapætere (sc-ea-paetere)
 - **ae-4**: s. unliegne (unl-ie-gen)
+- **aedel**: s. Æðelnoth (Aethelnothus)
 - **ea**: s. lafe (laf)
 - **ea**: s. botettan (boteatan)
 - **haelm**: s. healm (healme)
+- **i**: s. æ (ae-4)
 - **thaet-2**: s. for (for)
 - **thaet-2**: s. for (for)
 
