@@ -137,6 +137,8 @@ UNTER_BRACKET = re.compile(r'\s*[(\[](?:[^()\[\]]*?\s)?(?:unter|s\.)\s+([^\s()\[
 SECTION_IN_LIST = re.compile(r',?\s+n\.\s*(?:[IVX]+|\d+)[a-z]?(?=\s*,)')
 UNTER_FORMS = collections.defaultdict(set)
 KIND = ['']    # the kind of cross-reference being read ("siehe", "sieheDort" …), for resolve()
+SPELLING_ENTRY = [False]    # reading a spelling entry (<usg type="dom">spelling</usg>), for words()
+NODE_ENDS_ITEM = [False]    # what follows the plain text being read ends a list item (the end, a bold number, "|")
 
 
 def read(path):
@@ -422,6 +424,12 @@ def words(text, backwards=False):
                 # "ofa~; uta~", "midb~ | æðelboren": the list goes on
                 if re.match(r'\s*[;|]\s*(?=[^\W\d_~(])', rest):
                     rest = re.sub(r'^\s*[;|]', ',', rest)
+            # a spelling entry's examples: "-æi(g) für -æg s. hwæg; mæg(bot); (mæsse)dæg": the list goes on after ";"
+            # Only a single word after the ";", itself ended by ";" or the end of the item:
+            # "Ebreus; ę s. æ" is a new cross-reference, not more of the list.
+            nxt = re.match(r'\s*;\s*(\(?[^\W\d_~][^\s;,]*)\s*(;|$)', rest)
+            if SPELLING_ENTRY[0] and KIND[0] == 'siehe' and nxt and (nxt.group(2) == ';' or NODE_ENDS_ITEM[0]):
+                rest = re.sub(r'^\s*;', ',', rest)
             # "[vgl. æwe; æwum]": in a bracketed vgl. list, a last word after ";" belongs to it
             if COMPARE and re.match(r'\s*;\s*[^\W\d_][\w\-]*\s*(?:\]|$)', rest):
                 rest = re.sub(r'^\s*;', ',', rest)
@@ -571,17 +579,24 @@ def resolve(word, index, lang, numeral, heads, entry_id=''):
         ids = index.gram_text[word.rstrip('.')]
         pick = [i for i in ids if index.mark.get(i, '') == index.mark.get(entry_id, '')] or ids
         return pick[:1], 'a grammatical entry, linked to the abbreviations list in the text', word
-    if entry_id in index.spelling and KIND[0] == 'sieheDort' and re.fullmatch(r'[a-zæðþƿȝ]{1,3}', fold(word)):
+    if entry_id in index.spelling and KIND[0] == 'sieheDort' and re.fullmatch(r'-?[a-zæðþƿȝ]{1,3}-?', fold(word)):
         # From a spelling entry, "a, æ, e, eo s. d." are the spelling entries for those
         # letters in the same language ("a-", "-e", "-eo-"); of several, the one that lists
-        # spellings "von" (for) this entry's letters
-        forms = {word, word + '-', '-' + word, '-' + word + '-'}
+        # spellings "von" (for) this entry's letters. The hyphens and Liebermann's brackets
+        # do not count: "-æig- s. d." is the entry -æi(g).
+        bare = fold(word).strip('-')
+        # a word written with hyphens that is a headword as it stands ("a-", "-nb-") keeps
+        # its own entry; only one that is not ("-æig-") is looked for this way
+        hyphen_ok = '-' not in word or not index.lookup(word)
+        def letters(hw):
+            return {fold(f).strip('-') for x in re.split(r'[,\s]+', hw) if x for f in spellings(x) | {x}}
         cands = [i for i in index.spelling if i != entry_id and index.lang.get(i) == lang
-                 and fold(index.hw[i]).replace(',', ' ').split() and
-                 any(fold(f) in [fold(x) for x in re.split(r'[,\s]+', index.hw[i]) if x] for f in forms)]
+                 and bare in letters(index.hw[i])] if hyphen_ok else []
         if len(cands) > 1:
             own = re.sub(r'[^a-zæðþ]', '', fold(index.hw.get(entry_id, '')).split(',')[0])
             pick = [i for i in cands if re.search(r'\bvon\s+' + re.escape(own) + r'\b', fold(index.text.get(i, '')))]
+            # or the one that is "für" (instead of) this entry's letters: g "dafür ch" -> (-)ch- "für g"
+            pick = pick or [i for i in cands if re.search(r'\bfur\s+-?' + re.escape(own) + r'(?![\w(])', fold(index.text.get(i, '')))]
             if pick:
                 cands = pick
         if cands:
@@ -606,6 +621,7 @@ def targets(scrap, entry_id, index):
     # an editor's note marker in a list (<ptr type="editorNote"/>) is not part of the text
     scrap = re.sub(r'<ptr type="editorNote"[^>]*/>', '', scrap)
     heads = headwords(scrap, index, entry_id)
+    SPELLING_ENTRY[0] = entry_id in index.spelling
     for abbr_n, m in enumerate(ABBR.finditer(scrap)):
         kind = m.group('kind')
         KIND[0] = kind
@@ -630,6 +646,7 @@ def targets(scrap, entry_id, index):
             # an italic "unter" inside the list ("þas (<hi>unter</hi> þes)") does not end it
             tail = UNTER.sub(lambda m: re.sub(r'<[^>]+>', '', m.group(1) or m.group(2) or m.group(3)), tail)
             node = re.split(r'<', tail, maxsplit=1)[0]
+            NODE_ENDS_ITEM[0] = bool(re.match(r'\s*(?:$|<hi rend="bold">|\|)', tail[len(node):]))
             if not node[:1].isspace():
                 found.append((kind, '', [], 'nothing follows'))
                 continue
