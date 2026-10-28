@@ -222,6 +222,12 @@
             while ((m = regex.exec(text))) {
                 const term = lookup(m[1]);
                 if (!term) continue;
+                // "(von = æt)": von is the German for an Old English word, not an abbreviation
+                if (term.type === 'gram' && term.text === 'von') {
+                    const italic = node.parentElement.closest('em, i');
+                    const rest = text.slice(m.index + m[1].length) || ((italic && italic.nextSibling) ? italic.nextSibling.textContent : '');
+                    if (/^\s*=/.test(rest)) continue;
+                }
                 if (m.index > last) frag.appendChild(DOM.document.createTextNode(text.slice(last, m.index)));
                 const a = DOM.document.createElement('a');
                 if (term.type === 'law') {

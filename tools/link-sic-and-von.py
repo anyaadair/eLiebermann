@@ -7,7 +7,8 @@ Links two of Liebermann's signs to the list of grammatical abbreviations
     <ref type="abbreviation" target="gram:sic"><abbr>!</abbr></ref>.
     An "!" in his German (italic: "lasst uns!") is an ordinary exclamation
     mark and is left alone.
-  - "von" in his German (italic) is linked to gram:von.
+  - "von" in his German (italic) is linked to gram:von, except where it
+    translates an Old English word: "erholen (von = æt)".
 
 Text already inside a link is left alone, so it can be run again safely.
 New entries get the same links from the Suggest a change form and the import,
@@ -42,7 +43,11 @@ def fix(inner, counts):
             p, k = re.subn(r'!', SIC, p)
             counts['!'] += k
         parts[i] = p
-    return ''.join(parts)
+    out = ''.join(parts)
+    # "(von = æt)": von is the German for æt, not an abbreviation
+    out, k = re.subn(re.escape(VON) + r'(?=(?:</hi>)?\s*=)', 'von', out)
+    counts['von'] -= k
+    return out
 
 
 def main():
