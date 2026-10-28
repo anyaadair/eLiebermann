@@ -3,17 +3,14 @@
 Made by `tools/link-citations.py --letter ALL`. It is replaced each time the tool runs.
 
 ```
-All entries: 9091 (with a law code citation list: 6438)
-Citations in their lists: 31553
-  linked, exact              66
-  linked, subclause           2
-  linked, and-following       1
-  linked, already linked  30141
-  LINKED TO A CLAUSE:       30210  (96% of all citations; 99% of those with a clause number to a code in the database)
+All entries: 9090 (with a law code citation list: 6437)
+Citations in their lists: 31554
+  linked, already linked  30211
+  LINKED TO A CLAUSE:       30211  (96% of all citations; 99% of those with a clause number to a code in the database)
   not linked, clause not found            232
   not linked, citation not understood       1
   not linked, code not in database       1110
-Entries changed: 49; entries whose whole list is linked: 5613
+Entries changed: 38; entries whose whole list is linked: 5612
 ```
 
 ## The code is in the database but no clause file has that number
