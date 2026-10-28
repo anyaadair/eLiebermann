@@ -27,7 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
-      <change when="2026-10-28">“23,5 Hn” put in the right order, Hn 23,5 (consecucio is in Hn 23,5; Anya Adair).</change>
+      <change when="2026-10-28">“23,5 Hn” (as printed) linked by hand to Hn 23,5, where consecucio occurs (Anya Adair).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,7 +36,7 @@
         <form type="lemma">
           <orth>consecutio</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">consecutio</hi> <hi rend="italic">Verfolgung von Verbrechern</hi> <ref type="lawCode" target="law:Hn">Hn</ref> 23,5</dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">consecutio</hi> <hi rend="italic">Verfolgung von Verbrechern</hi> <ref type="clause" target="clause:Hn_23-5" n="Hn 23,5">23,5</ref> <ref type="lawCode" target="law:Hn">Hn</ref></dictScrap>
         <xr type="lawCode"><ref target="clause:Hn_23-5">Hn 23,5</ref></xr>
       </entry>
     </body>
