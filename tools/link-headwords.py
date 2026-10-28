@@ -98,8 +98,10 @@ def link(scrap, entry_id, index):
             kind = items[0][2]
             if kind == 'sieheDort':
                 # the words before "s. d.": the text after the last tag before it
-                start = plain.rfind('>', 0, m.start()) + 1
-                end = m.start()
+                # (past a translation in brackets: "habban (erhalten) s. d.")
+                gloss = sa.GLOSS.search(plain[:m.start()])
+                end = gloss.start() if gloss else m.start()
+                start = plain.rfind('>', 0, end) + 1
             else:
                 start = m.end()
                 if plain.startswith('.', start) and which == 'vgl':

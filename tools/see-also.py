@@ -15,7 +15,8 @@ in the text of an entry (the <dictScrap type="liebermann">):
                 ("læde s. lad", "Genetivus ... s. asittan, aslacian").
   ... s. d.     "siehe dort": the word or words just before it, in roman
                 type, between the italic German words ("ā geschrieben aa
-                s. d." sends the reader to aa).
+                s. d." sends the reader to aa), and past a translation in
+                brackets ("habban (erhalten) s. d." sends the reader to habban).
 
 Each one found becomes <xr type="see"><ref target="entry:ID">headword</ref></xr>.
 How a word is matched to an entry, in order:
@@ -97,6 +98,8 @@ FORMS = {
 }
 
 # "z. B." (zum Beispiel) straight after "s." or "vgl.": the list follows it
+# "habban (erhalten) s. d.": Liebermann's translation in brackets between the word and its s. d.
+GLOSS = re.compile(r'\s*\(<hi rend="italic">[^<>()]*</hi>\)\s*$')
 ZB = re.compile(r'\s*(?:</hi>\s*)?(?:<hi rend="italic">\s*)?<ref type="abbreviation" target="gram:zumBeispiel"><abbr>z\. B\.</abbr></ref>(?:</hi>)?')
 
 # What targets() found for each word it read, for linking the words in the
@@ -480,6 +483,9 @@ def targets(scrap, entry_id, index):
             after = words.right + tail[len(node):]
         else:
             head = scrap[:m.start()]
+            gloss = GLOSS.search(head)
+            if gloss:
+                head = head[:gloss.start()] + ' '
             node = re.split(r'>', head[::-1], maxsplit=1)[0][::-1] if '>' in head else head
             before = head[:len(head) - len(node)]
             # "pares [s. d.]": the bracket belongs to the s. d.

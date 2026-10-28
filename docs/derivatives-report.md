@@ -3,7 +3,7 @@
 Made by `tools/see-also.py`. It is replaced each time the tool runs.
 
 ```
-Entries: 9091; changed: 582; links added: 1058; wrong links removed: 0
+Entries: 9091; changed: 0; links added: 0; wrong links removed: 0
   Derivativ       found  1837, linked  1067
   linked, ~ filled in from the headword                       803
   not linked, only the start or end of a word                 605
@@ -115,8 +115,8 @@ Entries: 9091; changed: 582; links added: 1058; wrong links removed: 0
 - **ceaster**: Der. Wintanceaster
 - **cennan**: Der. gecennan
 - **cenned**: Der. ancenned
-- **ci-e-gan**: Der. geciegan / gecigan
-- **ci-e-rr**: Der. frumcierr / frumcirr
+- **ci-e-gan**: Der. gecigan / geciegan
+- **ci-e-rr**: Der. frumcirr / frumcierr
 - **cild**: Der. steopcild
 - **cirice**: Der. feldcirice
 - **clipian**: Der. beclipian
@@ -138,7 +138,7 @@ Entries: 9091; changed: 582; links added: 1058; wrong links removed: 0
 - **cynn**: Der. Angelcynn
 - **cynn**: Der. engelcynn
 - **cynn**: Der. manncynn
-- **d-y-nge**: Der. mixendnge / mixendynge
+- **d-y-nge**: Der. mixendynge / mixendnge
 - **daed**: Der. misdæd
 - **daeg**: Der. domdæg
 - **daeg**: Der. freolsdæg
@@ -176,9 +176,9 @@ Entries: 9091; changed: 582; links added: 1058; wrong links removed: 0
 - **endian**: Der. geendian
 - **endian**: Der. þurhendian
 - **engel**: Der. heahengel
-- **f-ie-llan**: Der. afellan / afiellan / afillan
-- **f-ie-llan**: Der. gefellan / gefiellan / gefillan
-- **f-ie-rdung**: Der. scipferdung / scipfierdung / scipfirdung
+- **f-ie-llan**: Der. afiellan / afillan / afellan
+- **f-ie-llan**: Der. gefiellan / gefillan / gefellan
+- **f-ie-rdung**: Der. scipfierdung / scipfirdung / scipferdung
 - **facne**: Der. unfacne
 - **faeder**: Der. godfæder
 - **faeder**: Der. heahfæder
@@ -246,12 +246,12 @@ Entries: 9091; changed: 582; links added: 1058; wrong links removed: 0
 - **full**: Der. hærfesthandful
 - **full**: Der. manful
 - **fylan**: Der. afylan
-- **g-ie-fan**: Der. agifan / agiefan
-- **g-ie-fan**: Der. forgifan / forgefan / forgiefan
-- **g-ie-fu**: Der. morgengefu / morgengifu / morgengiefu
+- **g-ie-fan**: Der. agiefan / agifan
+- **g-ie-fan**: Der. forgiefan / forgifan / forgefan
+- **g-ie-fu**: Der. morgengefu / morgengiefu / morgengifu
 - **g-ie-fu**: Der. rihtgifu
-- **g-ie-man**: Der. forgeman / forgieman / forgiman
-- **g-ie-rd**: Der. metgird / metgerd / metgierd
+- **g-ie-man**: Der. forgiman / forgeman / forgieman
+- **g-ie-rd**: Der. metgierd / metgerd / metgird
 - **gaderian**: Der. gegaderian
 - **gafol**: Der. ealugafol
 - **gafol**: Der. huniggafol
@@ -325,7 +325,7 @@ Entries: 9091; changed: 582; links added: 1058; wrong links removed: 0
 - **h-ie-rde**: Der. cuhyrde
 - **h-ie-rde**: Der. gathyrde
 - **h-ie-rde**: Der. sceaphyrde
-- **h-ie-rsumian**: Der. gehiersumian / gehirsumian / gehersumian
+- **h-ie-rsumian**: Der. gehirsumian / gehiersumian / gehersumian
 - **habban**: Der. gehabban
 - **habban**: Der. midhabban
 - **haelan**: Der. gehælan
@@ -718,7 +718,7 @@ Entries: 9091; changed: 582; links added: 1058; wrong links removed: 0
 - **tihtle**: Der. frumtihtle
 - **tihtle**: Der. stæltihtle
 - **tihtle**: Der. wertihtle
-- **tr-ie-we**: Der. ungetrewe / ungetriwe / ungetriewe
+- **tr-ie-we**: Der. ungetrewe / ungetriewe / ungetriwe
 - **tr-ie-we**: Der. getriewe
 - **treow**: Der. wægntreow
 - **trum**: Der. untrum
@@ -733,10 +733,10 @@ Entries: 9091; changed: 582; links added: 1058; wrong links removed: 0
 - **ufan**: Der. onufan
 - **unnan**: Der. geunnan
 - **w-ae-stm**: Der. eorðwæstm
-- **w-ie-ldan**: Der. gewildan / geweldan / gewieldan
-- **w-ie-rdan**: Der. awerdan / awirdan / awierdan
-- **w-ie-rdan**: Der. gewerdan / gewirdan / gewierdan
-- **w-ie-rnan**: Der. forwiernan / forwirnan / forwernan
+- **w-ie-ldan**: Der. geweldan / gewildan / gewieldan
+- **w-ie-rdan**: Der. awirdan / awierdan / awerdan
+- **w-ie-rdan**: Der. gewirdan / gewierdan / gewerdan
+- **w-ie-rnan**: Der. forwernan / forwirnan / forwiernan
 - **waed**: Der. ciricwæd
 - **waeter**: Der. haligwæter
 - **waru**: Der. burgwaru

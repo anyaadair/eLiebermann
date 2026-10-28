@@ -3,9 +3,9 @@
 Made by `tools/see-also.py`. It is replaced each time the tool runs.
 
 ```
-Entries: 9091; changed: 0; links added: 0; wrong links removed: 0
+Entries: 9091; changed: 5; links added: 4; wrong links removed: 0
   siehe           found  5252, linked  4191
-  sieheDort       found   584, linked   382
+  sieheDort       found   584, linked   386
   sieheOben       found    62, linked     0
   sieheUnten      found    24, linked     0
   sieheNummer     found    12, linked     0
@@ -13,7 +13,7 @@ Entries: 9091; changed: 0; links added: 0; wrong links removed: 0
   sieheDortUnter  found     5, linked     0
   not linked, no entry with this headword (yet)               808
   linked, ~ filled in from the headword                       404
-  not linked, no word found                                   174
+  not linked, no word found                                   170
   not linked, only the start or end of a word                 145
   linked, linked to the word without the hyphen               141
   linked, several entries have this headword, all linked       86
@@ -908,7 +908,7 @@ Entries: 9091; changed: 0; links added: 0; wrong links removed: 0
 - **camus**: s. chamus
 - **chascun**: s. cascun
 - **chiminus**: s. cheminus
-- **chyric**: s. cyric / cyric-
+- **chyric**: s. cyric- / cyric
 - **ciping**: s. cieping
 - **clips**: s. geclips
 - **commander**: s. comander
@@ -962,7 +962,7 @@ Entries: 9091; changed: 0; links added: 0; wrong links removed: 0
 - **feohtan**: s. gefeohtan
 - **fera**: s. gefera
 - **fierran**: s. afiersian
-- **filst-an**: s. fylstan / fylst
+- **filst-an**: s. fylst / fylstan
 - **foreceap**: s. forceap
 - **foreiurare**: s. forisiurare
 - **forfang**: s. forefang
@@ -1099,7 +1099,7 @@ Entries: 9091; changed: 0; links added: 0; wrong links removed: 0
 - **prunele**: s. purnele
 - **pup-p-licus**: s. publicus
 - **qualstow**: s. cwalstow
-- **ra-nhund**: s. hranhund / hrnhund
+- **ra-nhund**: s. hrnhund / hranhund
 - **rachater**: s. reachater
 - **raeda**: s. geræda
 - **raede**: s. anræde
@@ -1247,11 +1247,10 @@ Entries: 9091; changed: 0; links added: 0; wrong links removed: 0
 - **yglise**: s. eglise
 - **ymcyme**: s. ymbcyme
 
-## Not linked, no word found (174)
+## Not linked, no word found (170)
 
 - **Abkurzungen**: s. 
 - **Accusativ**: s. 
-- **Alliteration**: s. 
 - **Antithese**: s. 
 - **Antithese**: s. 
 - **Artikel**: s. 
@@ -1286,7 +1285,6 @@ Entries: 9091; changed: 0; links added: 0; wrong links removed: 0
 - **Wortstellung**: s. 
 - **Zahlwort**: s. 
 - **a-5**: s. 
-- **abiddan**: s. 
 - **aet**: s. 
 - **anaso**: s. 
 - **asente**: s. 
@@ -1314,7 +1312,6 @@ Entries: 9091; changed: 0; links added: 0; wrong links removed: 0
 - **ful-l-getreowe**: s. 
 - **ful-l-golden**: s. 
 - **fullgeorne**: s. 
-- **fyrdrian**: s. 
 - **gebringan**: s. 
 - **gebyrian**: s. 
 - **gedyrstlaecan**: s. 
@@ -1362,7 +1359,6 @@ Entries: 9091; changed: 0; links added: 0; wrong links removed: 0
 - **pening**: s. 
 - **qu**: s. 
 - **rad**: s. 
-- **riht**: s. 
 - **riht**: s. 
 - **riht**: s. 
 - **s-ie-xfeald**: s. 
