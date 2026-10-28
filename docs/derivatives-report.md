@@ -116,7 +116,7 @@ Entries: 9091; changed: 0; links added: 0; wrong links removed: 0
 - **cennan**: Der. gecennan
 - **cenned**: Der. ancenned
 - **ci-e-gan**: Der. geciegan / gecigan
-- **ci-e-rr**: Der. frumcirr / frumcierr
+- **ci-e-rr**: Der. frumcierr / frumcirr
 - **cild**: Der. steopcild
 - **cirice**: Der. feldcirice
 - **clipian**: Der. beclipian
@@ -138,7 +138,7 @@ Entries: 9091; changed: 0; links added: 0; wrong links removed: 0
 - **cynn**: Der. Angelcynn
 - **cynn**: Der. engelcynn
 - **cynn**: Der. manncynn
-- **d-y-nge**: Der. mixendynge / mixendnge
+- **d-y-nge**: Der. mixendnge / mixendynge
 - **daed**: Der. misdæd
 - **daeg**: Der. domdæg
 - **daeg**: Der. freolsdæg
@@ -176,9 +176,9 @@ Entries: 9091; changed: 0; links added: 0; wrong links removed: 0
 - **endian**: Der. geendian
 - **endian**: Der. þurhendian
 - **engel**: Der. heahengel
-- **f-ie-llan**: Der. afiellan / afellan / afillan
-- **f-ie-llan**: Der. gefiellan / gefellan / gefillan
-- **f-ie-rdung**: Der. scipfirdung / scipfierdung / scipferdung
+- **f-ie-llan**: Der. afellan / afillan / afiellan
+- **f-ie-llan**: Der. gefellan / gefillan / gefiellan
+- **f-ie-rdung**: Der. scipferdung / scipfierdung / scipfirdung
 - **facne**: Der. unfacne
 - **faeder**: Der. godfæder
 - **faeder**: Der. heahfæder
@@ -247,11 +247,11 @@ Entries: 9091; changed: 0; links added: 0; wrong links removed: 0
 - **full**: Der. manful
 - **fylan**: Der. afylan
 - **g-ie-fan**: Der. agiefan / agifan
-- **g-ie-fan**: Der. forgefan / forgiefan / forgifan
-- **g-ie-fu**: Der. morgengiefu / morgengifu / morgengefu
+- **g-ie-fan**: Der. forgiefan / forgefan / forgifan
+- **g-ie-fu**: Der. morgengifu / morgengefu / morgengiefu
 - **g-ie-fu**: Der. rihtgifu
-- **g-ie-man**: Der. forgeman / forgiman / forgieman
-- **g-ie-rd**: Der. metgierd / metgird / metgerd
+- **g-ie-man**: Der. forgieman / forgeman / forgiman
+- **g-ie-rd**: Der. metgierd / metgerd / metgird
 - **gaderian**: Der. gegaderian
 - **gafol**: Der. ealugafol
 - **gafol**: Der. huniggafol
@@ -325,7 +325,7 @@ Entries: 9091; changed: 0; links added: 0; wrong links removed: 0
 - **h-ie-rde**: Der. cuhyrde
 - **h-ie-rde**: Der. gathyrde
 - **h-ie-rde**: Der. sceaphyrde
-- **h-ie-rsumian**: Der. gehiersumian / gehirsumian / gehersumian
+- **h-ie-rsumian**: Der. gehersumian / gehirsumian / gehiersumian
 - **habban**: Der. gehabban
 - **habban**: Der. midhabban
 - **haelan**: Der. gehælan
@@ -385,7 +385,7 @@ Entries: 9091; changed: 0; links added: 0; wrong links removed: 0
 - **inne**: Der. þærinne
 - **isen**: Der. ordalisen
 - **l-ie-san**: Der. aliesan
-- **l-ie-san**: Der. geliesan / gelisan / gelesan
+- **l-ie-san**: Der. gelisan / gelesan / geliesan
 - **lacnian**: Der. gelacnian
 - **lade**: Der. cornlade
 - **lade**: Der. wudulade
@@ -540,7 +540,7 @@ Entries: 9091; changed: 0; links added: 0; wrong links removed: 0
 - **rihte**: Der. gerihte
 - **rihtwis**: Der. unrihtwis
 - **rinc**: Der. ladrinc
-- **s-i-fe**: Der. hærsfe / hærsife
+- **s-i-fe**: Der. hærsife / hærsfe
 - **sacan**: Der. ætsacan
 - **sacan**: Der. forsacan
 - **sacan**: Der. ofsacan
@@ -718,7 +718,7 @@ Entries: 9091; changed: 0; links added: 0; wrong links removed: 0
 - **tihtle**: Der. frumtihtle
 - **tihtle**: Der. stæltihtle
 - **tihtle**: Der. wertihtle
-- **tr-ie-we**: Der. ungetrewe / ungetriwe / ungetriewe
+- **tr-ie-we**: Der. ungetriwe / ungetrewe / ungetriewe
 - **tr-ie-we**: Der. getriewe
 - **treow**: Der. wægntreow
 - **trum**: Der. untrum
@@ -733,10 +733,10 @@ Entries: 9091; changed: 0; links added: 0; wrong links removed: 0
 - **ufan**: Der. onufan
 - **unnan**: Der. geunnan
 - **w-ae-stm**: Der. eorðwæstm
-- **w-ie-ldan**: Der. gewildan / geweldan / gewieldan
-- **w-ie-rdan**: Der. awierdan / awirdan / awerdan
-- **w-ie-rdan**: Der. gewierdan / gewirdan / gewerdan
-- **w-ie-rnan**: Der. forwirnan / forwernan / forwiernan
+- **w-ie-ldan**: Der. gewieldan / gewildan / geweldan
+- **w-ie-rdan**: Der. awerdan / awierdan / awirdan
+- **w-ie-rdan**: Der. gewerdan / gewierdan / gewirdan
+- **w-ie-rnan**: Der. forwernan / forwiernan / forwirnan
 - **waed**: Der. ciricwæd
 - **waeter**: Der. haligwæter
 - **waru**: Der. burgwaru
@@ -771,7 +771,7 @@ Entries: 9091; changed: 0; links added: 0; wrong links removed: 0
 - **werian**: Der. bewerian
 - **werian**: Der. gewerian
 - **wesan**: Der. midwesan
-- **wi-e-lm**: Der. æwielm / æwilm
+- **wi-e-lm**: Der. æwilm / æwielm
 - **wierde**: Der. arwyrðe
 - **wierde**: Der. aðwyrðe
 - **wierde**: Der. botwierðe

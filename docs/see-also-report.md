@@ -3,7 +3,7 @@
 Made by `tools/see-also.py`. It is replaced each time the tool runs.
 
 ```
-Entries: 9091; changed: 2; links added: 0; wrong links removed: 3
+Entries: 9091; changed: 2; links added: 0; wrong links removed: 0
   siehe           found  5252, linked  4192
   sieheDort       found   584, linked   388
   sieheOben       found    62, linked     0
@@ -17,7 +17,7 @@ Entries: 9091; changed: 2; links added: 0; wrong links removed: 3
   not linked, only the start or end of a word                 145
   linked, linked to the word without the hyphen               141
   linked, several entries have this headword, all linked       85
-  not linked, part of a longer phrase, not a single headword    77
+  not linked, part of a longer phrase, not a single headword    76
   linked, linked by a near spelling                            67
   not linked, no entry with this headword                      25
   not linked, linked by a near spelling                        19
@@ -25,8 +25,8 @@ Entries: 9091; changed: 2; links added: 0; wrong links removed: 3
   not linked, nothing follows                                   6
   not linked, this entry itself                                 3
   not linked, a number, not a headword                          3
+  not linked, checked and found wrong                           2
   not linked, linked to the word without the hyphen             2
-  not linked, checked and found wrong                           1
 ```
 
 ## Not linked, no entry with this headword (yet) (806)
@@ -906,7 +906,7 @@ Entries: 9091; changed: 2; links added: 0; wrong links removed: 3
 - **camus**: s. chamus
 - **chascun**: s. cascun
 - **chiminus**: s. cheminus
-- **chyric**: s. cyric / cyric-
+- **chyric**: s. cyric- / cyric
 - **ciping**: s. cieping
 - **clips**: s. geclips
 - **commander**: s. comander
@@ -960,7 +960,7 @@ Entries: 9091; changed: 2; links added: 0; wrong links removed: 3
 - **feohtan**: s. gefeohtan
 - **fera**: s. gefera
 - **fierran**: s. afiersian
-- **filst-an**: s. fylstan / fylst
+- **filst-an**: s. fylst / fylstan
 - **foreceap**: s. forceap
 - **foreiurare**: s. forisiurare
 - **forfang**: s. forefang
@@ -1797,7 +1797,7 @@ Entries: 9091; changed: 2; links added: 0; wrong links removed: 3
 - **y**: s. isen (isen-2, isen)
 - **ysen**: s. isen (isen-2, isen)
 
-## Not linked, part of a longer phrase, not a single headword (77)
+## Not linked, part of a longer phrase, not a single headword (76)
 
 - **Activ**: s. Unpersönliche
 - **Alliteration**: s. legere
@@ -1865,7 +1865,6 @@ Entries: 9091; changed: 2; links added: 0; wrong links removed: 3
 - **swa**: s. VI
 - **th**: s. mæðlfrið Hloðære elþeodig
 - **th**: s. þam
-- **thaet-2**: s. I
 - **the**: s. fernere
 - **theof**: s. þiefð
 - **theof**: s. locus
@@ -2025,12 +2024,13 @@ Entries: 9091; changed: 2; links added: 0; wrong links removed: 3
 - **Franceis**: s. 3
 - **mid**: s. 1
 
+## Not linked, checked and found wrong (2)
+
+- **Consonanten**: s. l
+- **thaet-2**: s. I
+
 ## Not linked, linked to the word without the hyphen (2)
 
 - **Fremdwort-Declination**: s. -tus
 - **fl-ea-x**: s. flex-
-
-## Not linked, checked and found wrong (1)
-
-- **Consonanten**: s. l
 

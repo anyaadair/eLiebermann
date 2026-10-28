@@ -128,7 +128,14 @@
         const rows = groups[kind] && groups[kind][anchorOf(link)];
         if (!rows || !rows.length) return null;
         const printed = norm(link.textContent);
-        return rows.find(r => norm(r['Gesetze Text']) === printed) || rows[0];
+        // A phrase with "…" ("gemäss welcher bezw. Flexion zu … eintritt") matches whatever stands for the "…"
+        const fits = r => {
+            const t = norm(r['Gesetze Text']);
+            if (t.indexOf('…') < 0) return false;
+            const re = new RegExp('^' + t.split('…').map(x => x.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('.+') + '$');
+            return re.test(printed);
+        };
+        return rows.find(r => norm(r['Gesetze Text']) === printed) || rows.find(fits) || rows[0];
     }
 
     // ------------------------------------------------------------------
