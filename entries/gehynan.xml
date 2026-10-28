@@ -25,11 +25,12 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-10-28">Marked as a cross-reference entry (it only points to another headword); links to other dictionaries removed.</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:lang="ang">
+      <entry xml:lang="ang" type="xref">
         <form type="lemma">
           <orth>gehynan</orth>
         </form>
@@ -37,11 +38,6 @@
         <xr type="see"><ref target="entry:geh-ie-nan">geh[ie]nan</ref></xr>
         <xr type="see"><ref target="entry:gehieran">gehieran</ref></xr>
         <xr type="see"><ref target="entry:geh-ie-rsumian">geh[ie]rsumian</ref></xr>
-        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/14835">ge-hýnan</ref></xr>
-        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/14647">ge-hénan</ref></xr>
-        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/14675">ge-hiénan</ref></xr>
-        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/14686">ge-hínan</ref></xr>
-        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/48298">ge-hínan (Supplement)</ref></xr>
       </entry>
     </body>
   </text>
