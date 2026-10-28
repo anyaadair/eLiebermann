@@ -25,6 +25,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-12">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-10-28">“verschr.” linked to the abbreviations list.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -33,7 +34,7 @@
         <form type="lemma">
           <orth>[Wiht]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[Wiht]</hi> <hi rend="italic">Insel Wight;</hi> Gurth <hi rend="italic">verschr. <ref type="abbreviation" target="gram:fur"><abbr>für</abbr></ref></hi> Guith <ref type="lawCode" target="law:ECf">ECf</ref> 33** <hi rend="italic">Interpol. Lond.</hi></dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[Wiht]</hi> <hi rend="italic">Insel Wight;</hi> Gurth <hi rend="italic"><ref type="abbreviation" target="gram:verschrieben"><abbr>verschr.</abbr></ref> <ref type="abbreviation" target="gram:fur"><abbr>für</abbr></ref></hi> Guith <ref type="lawCode" target="law:ECf">ECf</ref> 33** <hi rend="italic">Interpol. Lond.</hi></dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/35707">Wiht</ref></xr>
         <xr type="lawCode"><ref target="law:ECf">ECf 33</ref></xr>
       </entry>

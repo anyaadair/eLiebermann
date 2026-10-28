@@ -96,11 +96,44 @@ scripts:
         });
         const rows = [];
         if (head.trim()) rows.push({ html: head.trim(), depth: 0, cls: '' });
+        // "… b) þe Af El 49,1 | gn a) þæs …" (se): a bold label after "|" (a case, a
+        // gender) starts a new list, with its own a), b) …. The label gets a line of its
+        // own, a step out from the list under it; so does a bold label just before an a)
+        // ("…; msc no a) se …"). "| ac: þa …", a label with no list, also starts a line.
+        // a short bold label, which may hold a link to the abbreviations list: <strong><em><a>gn</a></em></strong>
+        const BOLD = String.raw`<(?:strong|b)>(?:(?!<\/?(?:strong|b)>)[\s\S]){1,400}?<\/(?:strong|b)>:?`;
+        const shortLabel = h => h.replace(/<[^>]+>/g, '').trim().length <= 25;
+        const LABEL = new RegExp(String.raw`(?:\|\s*|;\s*)(?=(` + BOLD + `))`, 'g');
+        const ENDS_WITH_LABEL = new RegExp(String.raw`(?:^|[|;\s])(` + BOLD + String.raw`)\s*$`);
+        const labelled = !grammatical && parts.some((s, i) => {
+            const next = parts[i + 1];
+            const m = ENDS_WITH_LABEL.exec(s.body);
+            return next && next.kind === 'lower' && next.marker === 'a' && m && shortLabel(m[1]);
+        });
+        const splitLabels = body => {
+            const out = [];
+            let last = 0, m;
+            LABEL.lastIndex = 0;
+            while ((m = LABEL.exec(body))) {
+                if (!shortLabel(m[1])) continue;
+                const before = body.slice(0, m.index);
+                const opened = (before.replace(/<(br|hr|img|wbr|input)\b[^>]*>/gi, '').match(/<[A-Za-z][^>]*[^/]>|<[A-Za-z]>/g) || []).length;
+                const closed = (before.match(/<\/[^>]+>/g) || []).length;
+                if (opened !== closed) continue;
+                // after ";" only a label that heads a list (at the end of the division)
+                const semi = m[0].startsWith(';');
+                if (semi && body.slice(m.index + m[0].length + m[1].length).trim()) continue;
+                out.push({ kind: out.length ? 'label' : 'first', html: body.slice(last, m.index) + (semi ? ';' : '') });
+                last = m.index + (semi ? m[0].length : 0);
+            }
+            out.push({ kind: out.length ? 'label' : 'first', html: body.slice(last) });
+            return out;
+        };
         parts.forEach(s => {
-            const pieces = grammatical ? ELieb.splitBreaks(s.body) : [{ kind: 'first', html: s.body }];
+            const pieces = grammatical ? ELieb.splitBreaks(s.body) : labelled ? splitLabels(s.body) : [{ kind: 'first', html: s.body }];
             pieces.forEach((p, j) => {
                 if (j === 0) rows.push({ html: `${s.open || ''}<strong>${esc(s.marker)}</strong>) ${p.html.trim()}`, depth: s.depth, cls: `sense sense--${s.kind}`, kind: s.kind });
-                else rows.push({ html: p.html.trim(), depth: p.kind === 'greek' ? s.depth + 1 : s.depth, cls: `sense sense--${p.kind}`, kind: p.kind });
+                else rows.push({ html: p.html.trim(), depth: p.kind === 'greek' ? s.depth + 1 : p.kind === 'label' && s.kind === 'lower' ? Math.max(0, s.depth - 1) : s.depth, cls: `sense sense--${p.kind}`, kind: p.kind });
             });
         });
         // A heading lines up with the numbered forms that follow it.

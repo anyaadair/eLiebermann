@@ -415,7 +415,8 @@
     // A spelling (or phrase of up to three words) then a passage of the code already
     // running: see scanCitations. Groups: 1 everything before the number, 2 the
     // spelling, 3 the number. The number must end the citation.
-    const SPELLING_WORD = String.raw`[\p{Ll}~æðþǣ][\p{L}~\-]*`;
+    // a word of the spelling, or Liebermann's "verschr." (miswritten) after it: "þæt verschr. 24,1 A"
+    const SPELLING_WORD = String.raw`(?:verschr\.|[\p{Ll}~æðþǣ][\p{L}~\-]*)`;
     const SPELLING_PASSAGE = new RegExp(String.raw`^(\s*(?:;|\|(?:\s*[\p{L}\d .]{1,15}:)?|(?:\s*u\.\s*oft|\s*[;|]\s*` + SPELLING_WORD + String.raw`)?\s*\d{1,2}[a-z]?\)[^;|:()\[\]\u0001-\u0004]{0,40}:)\s*(` + SPELLING_WORD + String.raw`(?:\s+(?:\[[^\]\d]*\]\s+)?` + SPELLING_WORD + String.raw`:?){0,5}(?:\s+\[[^\]\d]*\])?)\s+)(` + PASSAGE + String.raw`)(?![\p{L}\d])(?=\s*(?:$|[;|‖=\[\u0001\u0004]|\.\s*(?:$|[\d;|‖(—\u0001\u0004])|\((?!\d)|ff?\.|—|,\s|u\.\s*(?:oft|öfter)|\d{1,2}[a-z]?\)|\p{L}\)|[IVX]+\)))`, 'u');
 
     /**
@@ -739,7 +740,9 @@
             if (kind === 'upper') lastUpper = v;
             // A Roman numeral with nothing but a language label before it
             // numbers the headword (I) lac, II) lac).
-            if (kind === 'roman' && !before.replace(/<[^>]+>/g, '').replace(/^\s*[LF]?\s*$/, '').trim()) continue;
+            // But not when a II) follows in the same entry (se: I) se … II) se as relative).
+            if (kind === 'roman' && !before.replace(/<[^>]+>/g, '').replace(/^\s*[LF]?\s*$/, '').trim()
+                && !/<(strong|b)>II<\/\1>\)/.test(text.slice(m.index + m[0].length))) continue;
             cuts.push({ at: m.index, end: m.index + m[0].length, marker: v, kind });
         }
         if (!cuts.length) return { head: text, parts: [] };
