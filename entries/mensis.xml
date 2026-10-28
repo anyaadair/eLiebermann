@@ -33,8 +33,9 @@
         <form type="lemma">
           <orth>mensis</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">mensis</hi> et unus dies [<hi rend="italic">Gerichtsfrist</hi>] <ref type="lawCode" target="law:ECf">ECf</ref> 23,2 [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>.</hi> <ref type="entry" target="entry:dies">dies</ref>; annus]</dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">mensis</hi> et unus dies [<hi rend="italic">Gerichtsfrist</hi>] <ref type="lawCode" target="law:ECf">ECf</ref> 23,2 [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>.</hi> <ref type="entry" target="entry:dies">dies</ref>; <ref type="entry" target="entry:annus">annus</ref>]</dictScrap>
         <xr type="compare"><ref target="entry:dies">dies</ref></xr>
+        <xr type="compare"><ref target="entry:annus">annus</ref></xr>
         <xr type="lawCode"><ref target="law:ECf">ECf 23,2</ref></xr>
       </entry>
     </body>
