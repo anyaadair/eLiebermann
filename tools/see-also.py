@@ -91,6 +91,7 @@ FORMS = {
     ('a-6', 'heall'): 'healle',            # headword is the dative
     ('a-6', 'healm'): 'healme',            # headword is the dative
     ('a-6', 'Westsaxones'): 'Westseax-e',  # Latin form of the name
+    ('a-6', 'wealdes'): 'gewealdes',       # "(unge)wealdes": no entry wealdes; editor's note on the entry
 }
 
 # What targets() found for each word it read, for linking the words in the
@@ -434,6 +435,8 @@ def targets(scrap, entry_id, index):
     # text; for finding the word, that link is only the word.
     scrap = re.sub(r'<ref type="lawCode" target="[^"]*">([^<]*)</ref>', r'\1', scrap)
     scrap = strip_entry_links(scrap)
+    # an editor's note marker in a list (<ptr type="editorNote"/>) is not part of the text
+    scrap = re.sub(r'<ptr type="editorNote"[^>]*/>', '', scrap)
     heads = headwords(scrap, index, entry_id)
     for abbr_n, m in enumerate(ABBR.finditer(scrap)):
         kind = m.group('kind')
