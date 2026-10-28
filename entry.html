@@ -433,6 +433,7 @@ scripts:
         return `
         <div class="entry-with-scan">
             <div class="entry-main">${body}</div>
+            <div class="entry-scan-divider" role="separator" aria-orientation="vertical" aria-label="Drag to make the page scan wider or narrower" title="Drag to make the page scan wider or narrower (double-click to go back to the usual width)"></div>
             <aside class="entry-scan" aria-label="Page scan">
                 <div class="entry-scan-bar">
                     <span>${e.page ? `Printed page ${esc(e.page)}` : 'Page scan'}</span>
@@ -502,6 +503,60 @@ scripts:
             const aside = button.closest('.entry-scan');
             aside.classList.add('loaded');
             button.parentElement.replaceWith(frame);
+            document.body.classList.add('scan-open');
+            resizableScan(aside.closest('.entry-with-scan'));
+        });
+    }
+
+    // Dragging the bar between the entry and the scan (or its arrow keys)
+    // sets the scan's width; the width is remembered in this browser.
+    function resizableScan(grid) {
+        const bar = grid.querySelector('.entry-scan-divider');
+        const KEY = 'eLiebermann.scanWidth';
+        const rem = parseFloat(getComputedStyle(document.documentElement).fontSize) || 16;
+        const MIN = 18 * rem, TEXT_MIN = 20 * rem;
+        const apply = px => {
+            const max = Math.max(MIN, grid.clientWidth - 2 * rem - TEXT_MIN);
+            const w = Math.round(Math.min(max, Math.max(MIN, px)));
+            grid.style.setProperty('--scan-width', w + 'px');
+            bar.setAttribute('aria-valuenow', w);
+            return w;
+        };
+        const save = w => { try { localStorage.setItem(KEY, String(w)); } catch (e) { /* not kept */ } };
+        const current = () => grid.querySelector('.entry-scan').getBoundingClientRect().width;
+        grid.classList.add('scan-loaded');
+        bar.tabIndex = 0;
+        let saved = 0;
+        try { saved = parseFloat(localStorage.getItem(KEY)) || 0; } catch (e) { /* none */ }
+        // the first time, the scan takes a little under half the width
+        const start = () => apply(grid.clientWidth * 0.45);
+        if (saved) apply(saved); else start();
+        bar.addEventListener('pointerdown', ev => {
+            ev.preventDefault();
+            bar.setPointerCapture(ev.pointerId);
+            grid.classList.add('dragging');
+            const move = e => apply(grid.getBoundingClientRect().right - e.clientX - rem);
+            const up = () => {
+                grid.classList.remove('dragging');
+                bar.removeEventListener('pointermove', move);
+                bar.removeEventListener('pointerup', up);
+                bar.removeEventListener('pointercancel', up);
+                save(current());
+            };
+            bar.addEventListener('pointermove', move);
+            bar.addEventListener('pointerup', up);
+            bar.addEventListener('pointercancel', up);
+        });
+        bar.addEventListener('keydown', e => {
+            const step = e.shiftKey ? 8 * rem : 2 * rem;
+            if (e.key === 'ArrowLeft') save(apply(current() + step));
+            else if (e.key === 'ArrowRight') save(apply(current() - step));
+            else return;
+            e.preventDefault();
+        });
+        bar.addEventListener('dblclick', () => {
+            start();
+            try { localStorage.removeItem(KEY); } catch (e) { /* none */ }
         });
     }
 })();
