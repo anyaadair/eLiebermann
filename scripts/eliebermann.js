@@ -416,7 +416,7 @@
     // running: see scanCitations. Groups: 1 everything before the number, 2 the
     // spelling, 3 the number. The number must end the citation.
     const SPELLING_WORD = String.raw`[\p{Ll}~æðþǣ][\p{L}~\-]*`;
-    const SPELLING_PASSAGE = new RegExp(String.raw`^(\s*(?:;|\|(?:\s*[\p{L}\d .]{1,15}:)?|(?:\s*u\.\s*oft|\s*[;|]\s*` + SPELLING_WORD + String.raw`)?\s*\d{1,2}[a-z]?\)[^;|:()\[\]\u0001-\u0004]{0,40}:)\s*(` + SPELLING_WORD + String.raw`(?:\s+(?:\[[^\]\d]*\]\s+)?` + SPELLING_WORD + String.raw`){0,2}(?:\s+\[[^\]\d]*\])?)\s+)(` + PASSAGE + String.raw`)(?![\p{L}\d])(?=\s*(?:$|[;|‖=\[\u0001\u0004]|\.\s*(?:$|[\d;|‖(—\u0001\u0004])|\((?!\d)|ff?\.|—|,\s|u\.\s*(?:oft|öfter)|\d{1,2}[a-z]?\)|\p{L}\)|[IVX]+\)))`, 'u');
+    const SPELLING_PASSAGE = new RegExp(String.raw`^(\s*(?:;|\|(?:\s*[\p{L}\d .]{1,15}:)?|(?:\s*u\.\s*oft|\s*[;|]\s*` + SPELLING_WORD + String.raw`)?\s*\d{1,2}[a-z]?\)[^;|:()\[\]\u0001-\u0004]{0,40}:)\s*(` + SPELLING_WORD + String.raw`(?:\s+(?:\[[^\]\d]*\]\s+)?` + SPELLING_WORD + String.raw`:?){0,5}(?:\s+\[[^\]\d]*\])?)\s+)(` + PASSAGE + String.raw`)(?![\p{L}\d])(?=\s*(?:$|[;|‖=\[\u0001\u0004]|\.\s*(?:$|[\d;|‖(—\u0001\u0004])|\((?!\d)|ff?\.|—|,\s|u\.\s*(?:oft|öfter)|\d{1,2}[a-z]?\)|\p{L}\)|[IVX]+\)))`, 'u');
 
     /**
      * The law code passages cited in an entry's TEI text (the inside of
