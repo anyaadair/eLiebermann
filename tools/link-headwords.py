@@ -20,6 +20,9 @@ word that matches none, or several, stays plain text.
     python3 tools/link-headwords.py               # every entry
     python3 tools/link-headwords.py a-6 aa        # just these
 
+A word linked by hand, where Liebermann does not use "s." or "vgl."
+(<ref type="entry" subtype="manual" target="entry:ID">), is left as it is.
+
 Run it after tools/see-also.py (both kinds), and then tools/update-entries.js
 on the changed entries, so the numbered meanings get the links too. Running
 it again changes nothing.
