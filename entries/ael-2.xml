@@ -33,7 +33,9 @@
         <form type="lemma">
           <orth>æl-</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">æl-</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> el-</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">æl-</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:e-lcor">el-</ref><ptr type="editorNote" target="#edn-1"/></dictScrap>
+        <note type="editorial" xml:id="edn-1">“s. el-” sends the reader to the words beginning <hi rend="italic">el-</hi>: Liebermann lists words that the texts spell <hi rend="italic">æl-</hi> under <hi rend="italic">el-</hi>. The link goes to the first of them, <ref target="entry:e-lcor">[e]lcor</ref>; from there, “Next →” goes on through the <hi rend="italic">el-</hi> words.</note>
+        <xr type="see"><ref target="entry:e-lcor">[e]lcor</ref></xr>
       </entry>
     </body>
   </text>
