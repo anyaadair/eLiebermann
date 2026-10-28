@@ -873,7 +873,7 @@ a.timeline-bar:focus-visible { outline: 2px solid var(--link-hover); outline-off
 .editor-note:target { background: #fbf7e8; }
 .editor-note__back { font-size: 0.85em; white-space: nowrap; }
 
-.fn-ref { cursor: help; text-decoration: underline dotted; text-underline-offset: 2px; }
+.fn-ref { cursor: help; text-decoration: underline dotted #999; text-underline-offset: 2px; }
 
 /* the two lines of reading help under Liebermann’s entry */
 .reading-help { margin-bottom: 0; }

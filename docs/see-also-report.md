@@ -3,25 +3,25 @@
 Made by `tools/see-also.py`. It is replaced each time the tool runs.
 
 ```
-Entries: 9091; changed: 5; links added: 4; wrong links removed: 0
-  siehe           found  5252, linked  4191
-  sieheDort       found   584, linked   386
+Entries: 9091; changed: 2; links added: 0; wrong links removed: 3
+  siehe           found  5252, linked  4192
+  sieheDort       found   584, linked   388
   sieheOben       found    62, linked     0
   sieheUnten      found    24, linked     0
   sieheNummer     found    12, linked     0
   sieheDN         found    31, linked     0
   sieheDortUnter  found     5, linked     0
-  not linked, no entry with this headword (yet)               808
+  not linked, no entry with this headword (yet)               806
   linked, ~ filled in from the headword                       404
-  not linked, no word found                                   170
+  not linked, no word found                                   169
   not linked, only the start or end of a word                 145
   linked, linked to the word without the hyphen               141
-  linked, several entries have this headword, all linked       86
+  linked, several entries have this headword, all linked       85
   not linked, part of a longer phrase, not a single headword    77
-  linked, linked by a near spelling                            66
+  linked, linked by a near spelling                            67
   not linked, no entry with this headword                      25
   not linked, linked by a near spelling                        19
-  linked, checked by hand                                       8
+  linked, checked by hand                                      10
   not linked, nothing follows                                   6
   not linked, this entry itself                                 3
   not linked, a number, not a headword                          3
@@ -29,9 +29,8 @@ Entries: 9091; changed: 5; links added: 4; wrong links removed: 0
   not linked, checked and found wrong                           1
 ```
 
-## Not linked, no entry with this headword (yet) (808)
+## Not linked, no entry with this headword (yet) (806)
 
-- **Abkurzungen**: s. sanct
 - **Accusativ**: s. Genetiv
 - **Aead**: s. Ælf-
 - **Aelfe**: s. Ælfhe-
@@ -731,7 +730,6 @@ Entries: 9091; changed: 5; links added: 4; wrong links removed: 0
 - **thwaere**: s. -rnes
 - **thyf**: s. þief-
 - **ti**: s. iuditium
-- **tiende**: s. ngman
 - **tihl**: s. tihtl-
 - **tio-nd**: s. teo
 - **to**: s. tobyrian
@@ -908,7 +906,7 @@ Entries: 9091; changed: 5; links added: 4; wrong links removed: 0
 - **camus**: s. chamus
 - **chascun**: s. cascun
 - **chiminus**: s. cheminus
-- **chyric**: s. cyric- / cyric
+- **chyric**: s. cyric / cyric-
 - **ciping**: s. cieping
 - **clips**: s. geclips
 - **commander**: s. comander
@@ -962,7 +960,7 @@ Entries: 9091; changed: 5; links added: 4; wrong links removed: 0
 - **feohtan**: s. gefeohtan
 - **fera**: s. gefera
 - **fierran**: s. afiersian
-- **filst-an**: s. fylst / fylstan
+- **filst-an**: s. fylstan / fylst
 - **foreceap**: s. forceap
 - **foreiurare**: s. forisiurare
 - **forfang**: s. forefang
@@ -1247,9 +1245,8 @@ Entries: 9091; changed: 5; links added: 4; wrong links removed: 0
 - **yglise**: s. eglise
 - **ymcyme**: s. ymbcyme
 
-## Not linked, no word found (170)
+## Not linked, no word found (169)
 
-- **Abkurzungen**: s. 
 - **Accusativ**: s. 
 - **Antithese**: s. 
 - **Antithese**: s. 
@@ -1712,9 +1709,8 @@ Entries: 9091; changed: 5; links added: 4; wrong links removed: 0
 - **yfl**: s. yfel-
 - **ylc**: s. ilc-
 
-## Linked, several entries have this headword, all linked (86)
+## Linked, several entries have this headword, all linked (85)
 
-- **Abkurzungen**: s. m (m-2, m-3)
 - **Artikel**: s. an (an-2, an)
 - **Consonanten**: s. c (c-4, c)
 - **Consonanten**: s. m (m-2, m-3)
@@ -1881,7 +1877,7 @@ Entries: 9091; changed: 5; links added: 4; wrong links removed: 0
 - **veneris**: s. viridis
 - **witan**: s. Fälle
 
-## Linked, linked by a near spelling (66)
+## Linked, linked by a near spelling (67)
 
 - **Aed**: s. Ead- (Æad-)
 - **Alliteration**: s. twyhynde (twihynde)
@@ -1937,6 +1933,7 @@ Entries: 9091; changed: 5; links added: 4; wrong links removed: 0
 - **scot**: s. ciricsceat (ciricsceatt)
 - **t**: s. sceat (sceatt)
 - **th-2**: s. jetter (jeter)
+- **tiende**: s. teoðingman (teoðingmann)
 - **un-3**: s. ontynan (untynan)
 - **un**: s. hum (hom(me))
 - **w**: s. weo (we)
@@ -2000,8 +1997,10 @@ Entries: 9091; changed: 5; links added: 4; wrong links removed: 0
 - **tige**: s. tyge- ((-)tige-)
 - **yrf**: s. ierf- (yrf-)
 
-## Linked, checked by hand (8)
+## Linked, checked by hand (10)
 
+- **Abkurzungen**: s. m (m)
+- **Abkurzungen**: s. sanct (sancte)
 - **a-6**: s. ricsare (ricsares)
 - **a-6**: s. mæstan (maest)
 - **a-6**: s. tæcean (taecan)

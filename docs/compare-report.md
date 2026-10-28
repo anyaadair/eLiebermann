@@ -6,8 +6,8 @@ Made by `tools/see-also.py`. It is replaced each time the tool runs.
 Entries: 9091; changed: 0; links added: 0; wrong links removed: 0
   vergleiche      found  1359, linked   825
   not linked, no word found                                   211
-  not linked, no entry with this headword (yet)               175
-  not linked, part of a longer phrase, not a single headword    68
+  not linked, no entry with this headword (yet)               174
+  not linked, part of a longer phrase, not a single headword    69
   linked, ~ filled in from the headword                        33
   not linked, only the start or end of a word                  27
   not linked, a citation or a longer word, not a headword      25
@@ -234,7 +234,7 @@ Entries: 9091; changed: 0; links added: 0; wrong links removed: 0
 - **wulfesheved**: vgl. 
 - **ymb**: vgl. 
 
-## Not linked, no entry with this headword (yet) (175)
+## Not linked, no entry with this headword (yet) (174)
 
 - **Adjectiv**: vgl. Genetiv
 - **Cantuaria**: vgl. Cantwarabyrig
@@ -372,7 +372,6 @@ Entries: 9091; changed: 0; links added: 0; wrong links removed: 0
 - **plagiare**: vgl. plagare
 - **praecupere**: vgl. exopto
 - **r-i-d**: vgl. mengl
-- **recoverer**: vgl. Stadtrecht
 - **ref**: vgl. -rf
 - **rf**: vgl. ref
 - **riht**: vgl. gerihta
@@ -412,7 +411,7 @@ Entries: 9091; changed: 0; links added: 0; wrong links removed: 0
 - **y**: vgl. yo-
 - **y**: vgl. terranico
 
-## Not linked, part of a longer phrase, not a single headword (68)
+## Not linked, part of a longer phrase, not a single headword (69)
 
 - **Angelcynn**: vgl. mid
 - **Declination**: vgl. die
@@ -454,6 +453,7 @@ Entries: 9091; changed: 0; links added: 0; wrong links removed: 0
 - **onsprecan**: vgl. ic
 - **pestis**: vgl. Peior
 - **raed**: vgl. consiliatrix
+- **recoverer**: vgl. Stadtrecht
 - **regiae**: vgl. placita
 - **rihthamscyld**: vgl. meinen
 - **robaria**: vgl. die

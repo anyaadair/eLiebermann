@@ -402,7 +402,7 @@
         'fut', 'inf', 'imp', 'no', 'nom', 'gn', 'dt', 'ac', 'instr', 'obl', 'voc', 'nt', 'fm', 'msc', 'm', 'f', 'st',
         'praed', 'sbst', 'attr', 'adj', 'adv', 'spl', 'spla', 'cj', 'prp', 'prn', 'sb', 'gen', 'akk', 'dat']);
     const SIGLA = new Set(['MsA', 'B', 'Bu', 'C', 'D', 'E', 'F', 'G', 'G2', 'H', 'Hk', 'I', 'K', 'Ld', 'O', 'Ot',
-        'So', 'Vt', 'Io', 'Isp', 'Quadr', 'InCn', 'ConsCn', 'WlEdmr', 'Wb', 'LatVersion']);
+        'So', 'Vt', 'Io', 'Isp', 'Dm', 'R', 'Quadr', 'InCn', 'ConsCn', 'WlEdmr', 'Wb', 'LatVersion']);
     // "L" after a passage (msAbb: LatVersion) is the Latin version Liebermann prints
     // beside the text. Where the laws database has that version as a text of its
     // own, the citation goes to it: "VI Atr 2 L" is VI Atr Lat 2.
@@ -530,8 +530,10 @@
                 }
                 break;
             }
-            open = !!last && !(code && code.fresh) && /^\s*$/.test(rest);
-            if (!open && !(code && code.fresh)) code = code && /^[\s.]*$/.test(rest) ? code : null;
+            // a footnote mark after the last passage ("48⁵ A³. 61,1") does not end the run
+            const restS = /^\u0004\s*$/.test(rest) ? ' ' : rest;
+            open = !!last && !(code && code.fresh) && /^\s*$/.test(restS);
+            if (!open && !(code && code.fresh)) code = code && /^[\s.]*$/.test(restS) ? code : null;
         };
         const re = /\u0001([^\u0002]*)\u0002([^\u0003]*)\u0003/g;
         let m = re.exec(flat);
@@ -551,7 +553,7 @@
             if (anchor === 'Quadr' + label) label = 'Quadr ' + label;
             const pos = m.index + m[0].length;
             const next = re.exec(flat);
-            const text = flat.slice(pos, next ? next.index : flat.length);
+            let text = flat.slice(pos, next ? next.index : flat.length);
             m = next;
             if (anchor === 'LatVersion' && code && code.fresh) {
                 // "VI Atr L 3,1. 4", "Leis Wl L 21,3": L before the numbers, so they
@@ -562,6 +564,8 @@
                 continue;
             }
             if (SIGLA.has(anchor)) {
+                // a footnote mark on the manuscript ("A³. 61,1") is read as a space
+                text = text.replace(/^\u0004/, ' ');
                 // "Af 41 B": the reading of manuscript B. The citation list names the
                 // passage (Af 41), not the manuscript, so the letter is not added to it.
                 const attached = open && last && !/^\s*:/.test(text);
@@ -958,6 +962,17 @@ ${translation}
                         return `<sup class="frac" title="the fraction ${n}/${after.textContent.trim()}">` + inner() + '</sup>';
                     }
                     if (/^\d+$/.test(n)) return `<sup class="fn-ref" title="Liebermann’s footnote ${n} at this passage in vol. I, where he discusses the manuscript readings">` + inner() + '</sup>';
+                    // "A⁴·⁷", "S. 671⁶·⁸·⁴⁸": several of his footnotes at once
+                    if (/^\d+(?:\.\s*\d+)+$/.test(n)) {
+                        const ns = n.split(/\.\s*/);
+                        const list = ns.slice(0, -1).join(', ') + ' and ' + ns[ns.length - 1];
+                        return `<sup class="fn-ref" title="Liebermann’s footnotes ${list} at this passage in vol. I, where he discusses the manuscript readings">` + inner() + '</sup>';
+                    }
+                    // "Iud Dei I 23ᶜ", "Hn 7,7ᵇ": a lettered footnote, after a number
+                    const prev = node.previousSibling;
+                    if (/^[a-z]$/.test(n) && prev && prev.nodeType === 3 && /\d$/.test(prev.nodeValue)) {
+                        return `<sup class="fn-ref" title="Liebermann’s footnote ${n} at this passage in vol. I">` + inner() + '</sup>';
+                    }
                     return '<sup>' + inner() + '</sup>';
                 }
                 if (rend === 'subscript') return '<sub>' + inner() + '</sub>';
