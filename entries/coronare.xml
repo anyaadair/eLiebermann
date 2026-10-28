@@ -19,6 +19,7 @@
     <encodingDesc>
       <listPrefixDef>
         <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
         <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
         <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
       </listPrefixDef>
@@ -34,6 +35,8 @@
           <orth>coronare</orth>
         </form>
         <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">coronare</hi> <hi rend="italic">zum König krönen</hi> <ref type="lawCode" target="law:CHnCor">CHn cor</ref> Prot. 1. Dat. <ref type="lawCode" target="law:Lond">Lond</ref> <ref type="lawCode" target="law:ECf">ECf</ref> 11,1 <ref type="lawCode" target="law:MsA">A</ref> 9 = primum ~ [<hi rend="italic"><ref type="abbreviation" target="gram:Gegensatz"><abbr>Ggs.</abbr></ref>: späteres</hi> coronari <hi rend="italic">Krone tragen beim Feste</hi>] <ref type="lawCode" target="law:ECf">ECf</ref> 12. 27</dictScrap>
+        <xr type="lawCode"><ref target="clause:CHnCor_Prol">CHn cor Prot</ref></xr>
+        <xr type="lawCode"><ref target="clause:CHnCor_1">CHn cor 1</ref></xr>
         <xr type="lawCode"><ref target="law:ECf">ECf 11,1</ref></xr>
         <xr type="lawCode"><ref target="law:ECf">ECf 12</ref></xr>
         <xr type="lawCode"><ref target="law:ECf">ECf 27</ref></xr>

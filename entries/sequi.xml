@@ -19,6 +19,7 @@
     <encodingDesc>
       <listPrefixDef>
         <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
         <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
         <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
       </listPrefixDef>
@@ -26,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-13">Page corrected from 195 to 196 (the page turns inside senz), as in the team transcription (sadelican - singan.docx).</change>
+      <change when="2026-10-28">“Hn mon”, “Hn com” and “Hn cor” linked to their own law codes (Henry I’s decrees on the coinage and on the county and hundred courts; his coronation charter), not to the Leges Henrici.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -34,7 +36,8 @@
         <form type="lemma">
           <orth>sequi</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">sequi</hi> <hi rend="italic">Gerichtsfolge leisten</hi> <ref type="lawCode" target="law:Hn">Hn</ref> com 4</dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">sequi</hi> <hi rend="italic">Gerichtsfolge leisten</hi> <ref type="lawCode" target="law:HnComm">Hn com</ref> 4</dictScrap>
+        <xr type="lawCode"><ref target="clause:HnComm_4">Hn com 4</ref></xr>
       </entry>
     </body>
   </text>

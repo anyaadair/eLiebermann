@@ -19,6 +19,7 @@
     <encodingDesc>
       <listPrefixDef>
         <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
         <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
         <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
       </listPrefixDef>
@@ -26,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
+      <change when="2026-10-28">“Hn mon”, “Hn com” and “Hn cor” linked to their own law codes (Henry I’s decrees on the coinage and on the county and hundred courts; his coronation charter), not to the Leges Henrici.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -34,7 +36,8 @@
         <form type="lemma">
           <orth>revocare</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">revocare</hi> warant <hi rend="italic">anrufen</hi> (<hi rend="italic">sich berufen auf</hi>) <hi rend="italic">Gewährsmann</hi> <ref type="lawCode" target="law:Hn">Hn</ref> mon 2</dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">revocare</hi> warant <hi rend="italic">anrufen</hi> (<hi rend="italic">sich berufen auf</hi>) <hi rend="italic">Gewährsmann</hi> <ref type="lawCode" target="law:HnMon">Hn mon</ref> 2</dictScrap>
+        <xr type="lawCode"><ref target="clause:HnMon_2">Hn mon 2</ref></xr>
       </entry>
     </body>
   </text>

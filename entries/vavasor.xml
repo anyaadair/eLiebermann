@@ -28,6 +28,7 @@
       <change when="2026-10-12">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
       <change when="2026-10-28">“von” unlinked from the abbreviations list: here it is ordinary German, not an abbreviation (Anya Adair).</change>
+      <change when="2026-10-28">“Hn mon”, “Hn com” and “Hn cor” linked to their own law codes (Henry I’s decrees on the coinage and on the county and hundred courts; his coronation charter), not to the Leges Henrici.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,14 +37,16 @@
         <form type="lemma">
           <orth>vavasor</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">vavasor</hi> [-assor <ref type="lawCode" target="law:Hn">Hn</ref> com 3,2 <hi rend="italic"><ref type="abbreviation" target="gram:Variante"><abbr>Var.</abbr></ref></hi>] <hi rend="bold">1</hi>) <hi rend="italic">Lehnsträger mit Gerichtsherrlichkeit</hi> <ref type="lawCode" target="law:Hn">Hn</ref> 26,3. 27 <hi rend="bold">2</hi>) <hi rend="italic">Aftervasall</hi> 7,2 | <hi rend="italic">im <ref type="abbreviation" target="gram:Gegensatz"><abbr>Ggs.</abbr></ref> zum Kronvasall</hi> <ref type="lawCode" target="law:Hn">Hn</ref> com 3,1; 2 <hi rend="bold">3</hi>) <hi rend="italic">Kronvasall;</hi> de vavasoriis<ref type="abbreviation" target="gram:sic"><abbr>!</abbr></ref> <ref type="lawCode" target="law:Quadr">Q</ref> <hi rend="italic"><ref type="abbreviation" target="gram:Seite"><abbr>S.</abbr></ref></hi> 544, <ref type="lawCode" target="law:Rb">Rb</ref> <hi rend="italic">zu</hi> <ref type="lawCode" target="law:CHnCor">CHn cor</ref> 11 <hi rend="italic">von</hi> militibus qui per loricas terras deserviunt <hi rend="italic">unmittelbar unter der Krone</hi></dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">vavasor</hi> [-assor <ref type="lawCode" target="law:HnComm">Hn com</ref> 3,2 <hi rend="italic"><ref type="abbreviation" target="gram:Variante"><abbr>Var.</abbr></ref></hi>] <hi rend="bold">1</hi>) <hi rend="italic">Lehnsträger mit Gerichtsherrlichkeit</hi> <ref type="lawCode" target="law:Hn">Hn</ref> 26,3. 27 <hi rend="bold">2</hi>) <hi rend="italic">Aftervasall</hi> 7,2 | <hi rend="italic">im <ref type="abbreviation" target="gram:Gegensatz"><abbr>Ggs.</abbr></ref> zum Kronvasall</hi> <ref type="lawCode" target="law:HnComm">Hn com</ref> 3,1; 2 <hi rend="bold">3</hi>) <hi rend="italic">Kronvasall;</hi> de vavasoriis<ref type="abbreviation" target="gram:sic"><abbr>!</abbr></ref> <ref type="lawCode" target="law:Quadr">Q</ref> <hi rend="italic"><ref type="abbreviation" target="gram:Seite"><abbr>S.</abbr></ref></hi> 544, <ref type="lawCode" target="law:Rb">Rb</ref> <hi rend="italic">zu</hi> <ref type="lawCode" target="law:CHnCor">CHn cor</ref> 11 <hi rend="italic">von</hi> militibus qui per loricas terras deserviunt <hi rend="italic">unmittelbar unter der Krone</hi></dictScrap>
         <dictScrap type="senses">
           <sense n="1"><hi rend="italic">Lehnsträger mit Gerichtsherrlichkeit</hi> <ref type="lawCode" target="law:Hn">Hn</ref> 26,3. 27</sense>
-          <sense n="2"><hi rend="italic">Aftervasall</hi> 7,2 | <hi rend="italic">im <ref type="abbreviation" target="gram:Gegensatz"><abbr>Ggs.</abbr></ref> zum Kronvasall</hi> <ref type="lawCode" target="law:Hn">Hn</ref> com 3,1; 2</sense>
+          <sense n="2"><hi rend="italic">Aftervasall</hi> 7,2 | <hi rend="italic">im <ref type="abbreviation" target="gram:Gegensatz"><abbr>Ggs.</abbr></ref> zum Kronvasall</hi> <ref type="lawCode" target="law:HnComm">Hn com</ref> 3,1; 2</sense>
           <sense n="3"><hi rend="italic">Kronvasall;</hi> de vavasoriis<ref type="abbreviation" target="gram:sic"><abbr>!</abbr></ref> <ref type="lawCode" target="law:Quadr">Q</ref> <hi rend="italic"><ref type="abbreviation" target="gram:Seite"><abbr>S.</abbr></ref></hi> 544, <ref type="lawCode" target="law:Rb">Rb</ref> <hi rend="italic">zu</hi> <ref type="lawCode" target="law:CHnCor">CHn cor</ref> 11 <hi rend="italic">von</hi> militibus qui per loricas terras deserviunt <hi rend="italic">unmittelbar unter der Krone</hi></sense>
         </dictScrap>
+        <xr type="lawCode"><ref target="clause:HnComm_3-2">Hn com 3,2</ref></xr>
         <xr type="lawCode"><ref target="clause:Hn_26-3">Hn 26,3</ref></xr>
         <xr type="lawCode"><ref target="clause:Hn_27">Hn 27</ref></xr>
+        <xr type="lawCode"><ref target="clause:HnComm_3-1">Hn com 3,1</ref></xr>
         <xr type="lawCode"><ref target="clause:CHnCor_11">CHn cor 11</ref></xr>
       </entry>
     </body>

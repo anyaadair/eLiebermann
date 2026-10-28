@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-10-28">“Hn mon”, “Hn com” and “Hn cor” linked to their own law codes (Henry I’s decrees on the coinage and on the county and hundred courts; his coronation charter), not to the Leges Henrici.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -34,9 +35,10 @@
         <form type="lemma">
           <orth>duellum</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">duellum</hi> <hi rend="italic">gerichtlicher Zweikampf</hi> <ref type="lawCode" target="law:IudDeiX">Iud Dei X</ref> 21. <ref type="lawCode" target="law:Hn">Hn</ref> com 3,3. <ref type="lawCode" target="law:Duel">Duel</ref> Insc 2,2<hi rend="superscript">e</hi>. 4,1 | iudicium (ferri) aut ~ (bataille <hi rend="italic"><ref type="abbreviation" target="gram:franzosisch"><abbr>fz.</abbr></ref></hi>) <ref type="lawCode" target="law:WlArt">Wl art</ref> (6) 6,3 | <hi rend="italic"><ref type="abbreviation" target="gram:Variante"><abbr>Var.</abbr></ref> <ref type="abbreviation" target="gram:fur"><abbr>für</abbr></ref></hi> <ref type="entry" target="entry:bellum">bellum</ref> <hi rend="italic"><ref type="abbreviation" target="gram:sieheDort"><abbr>s. d.</abbr></ref></hi></dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">duellum</hi> <hi rend="italic">gerichtlicher Zweikampf</hi> <ref type="lawCode" target="law:IudDeiX">Iud Dei X</ref> 21. <ref type="lawCode" target="law:HnComm">Hn com</ref> 3,3. <ref type="lawCode" target="law:Duel">Duel</ref> Insc 2,2<hi rend="superscript">e</hi>. 4,1 | iudicium (ferri) aut ~ (bataille <hi rend="italic"><ref type="abbreviation" target="gram:franzosisch"><abbr>fz.</abbr></ref></hi>) <ref type="lawCode" target="law:WlArt">Wl art</ref> (6) 6,3 | <hi rend="italic"><ref type="abbreviation" target="gram:Variante"><abbr>Var.</abbr></ref> <ref type="abbreviation" target="gram:fur"><abbr>für</abbr></ref></hi> <ref type="entry" target="entry:bellum">bellum</ref> <hi rend="italic"><ref type="abbreviation" target="gram:sieheDort"><abbr>s. d.</abbr></ref></hi></dictScrap>
         <xr type="see"><ref target="entry:bellum">bellum</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiX_21">Iud Dei X 21</ref></xr>
+        <xr type="lawCode"><ref target="clause:HnComm_3-3">Hn com 3,3</ref></xr>
         <xr type="lawCode"><ref target="clause:Duel_Inscr">Duel Insc</ref></xr>
         <xr type="lawCode"><ref target="clause:Duel_2-2">Duel 2,2</ref></xr>
         <xr type="lawCode"><ref target="clause:Duel_4-1">Duel 4,1</ref></xr>

@@ -3,18 +3,18 @@
 Made by `tools/link-citations.py --letter ALL`. It is replaced each time the tool runs.
 
 ```
-All entries: 9091 (with a law code citation list: 6406)
-Citations in their lists: 31207
-  linked, exact             638
-  linked, subclause          21
-  linked, prologue            4
-  linked, parent clause       1
-  linked, correction          2
-  linked, already linked  29144
-  LINKED TO A CLAUSE:       29810  (96% of all citations; 99% of those with a clause number to a code in the database)
+All entries: 9091 (with a law code citation list: 6418)
+Citations in their lists: 31301
+  linked, exact             507
+  linked, subclause          18
+  linked, and-following       1
+  linked, prologue            1
+  linked, already linked  29376
+  LINKED TO A CLAUSE:       29903  (96% of all citations; 99% of those with a clause number to a code in the database)
   not linked, clause not found            292
+  not linked, citation not understood       1
   not linked, code not in database       1104
-Entries changed: 16; entries whose whole list is linked: 5537
+Entries changed: 61; entries whose whole list is linked: 5549
 ```
 
 ## The code is in the database but no clause file has that number
@@ -150,4 +150,12 @@ Citations (with how many times each occurs):
 - ECf 12,4 ×4
 - ECf 12,9 ×4
 - ECf 12c ×4
+
+## The citation text does not start with a spelling of its code
+
+By code: CHnCor (1)
+
+Citations (with how many times each occurs):
+
+- Hn cor 6
 

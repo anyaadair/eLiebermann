@@ -19,6 +19,7 @@
     <encodingDesc>
       <listPrefixDef>
         <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
         <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
         <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
       </listPrefixDef>
@@ -34,6 +35,7 @@
           <orth>coronatio</orth>
         </form>
         <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">coronatio</hi> <hi rend="italic">Königskrönung</hi> <ref type="lawCode" target="law:CHnCor">CHn cor</ref> Prot<hi rend="superscript">1</hi>. <ref type="lawCode" target="law:ECf">ECf</ref> 12,1 = <hi rend="bold">coronatus</hi> primus <hi rend="italic">erste</hi> (<hi rend="italic">staatsrechtliche</hi>) <hi rend="italic">Krönung zum König</hi> [<hi rend="italic"><ref type="abbreviation" target="gram:Gegensatz"><abbr>Ggs.</abbr></ref>: späteres Krone tragen an Festen</hi>] 27,2</dictScrap>
+        <xr type="lawCode" n="1"><ref target="clause:CHnCor_Prol">CHn cor Prot</ref></xr>
         <xr type="lawCode"><ref target="law:ECf">ECf 12,1</ref></xr>
       </entry>
     </body>
