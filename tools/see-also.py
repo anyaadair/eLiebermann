@@ -524,7 +524,8 @@ def targets(scrap, entry_id, index):
 
 
 def strip_entry_links(scrap):
-    """The text without the links on cross-referenced words (tools/link-headwords.py)."""
+    """The text without the links on cross-referenced words (tools/link-headwords.py).
+    A link made by hand (<ref type="entry" subtype="manual" …>) is kept."""
     return re.sub(r'<ref type="entry" target="[^"]*">(.*?)</ref>', r'\1', scrap)
 
 

@@ -407,9 +407,9 @@ td.term { font-weight: 600; color: var(--navy-dark); white-space: nowrap; }
    works cited (green). */
 :root { --law-code: #7a2e0e; --clause: #b8401f; --manuscript: #5b3a8e; --abbreviation: var(--link); --work-cited: #2e6b45; --headword: #454545; }
 /* A word Liebermann sends the reader to ("s. æcer"): a link to that entry (tools/link-headwords.py) */
-.liebermann-text a.ref-entry { color: var(--headword); border-bottom: 1px solid currentColor; }
+.liebermann-text a.ref-entry { color: var(--headword); border-bottom: 1px solid #d4d4d4; }
 .liebermann-text a.ref-entry:hover, .liebermann-text a.ref-entry:focus-visible { background: var(--highlight); }
-.link-key--entry { color: var(--headword); border-bottom-style: solid; }
+.link-key--entry { color: var(--headword); border-bottom: 1px solid #d4d4d4; }
 .law-popup--entry { border-top-color: var(--headword); }
 .law-popup--entry::before { border-bottom-color: var(--headword); }
 .law-popup--entry .law-popup-code { color: var(--headword); }
@@ -870,7 +870,7 @@ a.timeline-bar:focus-visible { outline: 2px solid var(--link-hover); outline-off
 /* The marker in Liebermann's text that jumps to an editor's note below */
 .liebermann-text a.ed-note-ref, .ed-note-ref { display: inline; margin-left: 0.35em; padding: 0.05em 0.5em; border: 0; border-radius: 0.8em; font-family: var(--sans); font-size: 0.72rem; font-style: normal; font-weight: 600; white-space: nowrap; text-decoration: none; color: #fff; background: var(--powder); }
 .liebermann-text a.ed-note-ref:hover, .liebermann-text a.ed-note-ref:focus { background: var(--navy); color: #fff; }
-.editor-note:target { background: var(--highlight); }
+.editor-note:target { background: #fbf7e8; }
 .editor-note__back { font-size: 0.85em; white-space: nowrap; }
 
 .fn-ref { cursor: help; text-decoration: underline dotted; text-underline-offset: 2px; }

@@ -976,7 +976,7 @@ ${translation}
                 // that takes the reader to the editor's note with that xml:id below.
                 if (attr('type') === 'editorNote') {
                     const id = attr('target').replace(/^#/, '');
-                    return `<a class="ed-note-ref" href="#${escapeXml(id)}" id="${escapeXml(id)}-ref" title="See the editor’s note below">Editor’s note ↓</a>`;
+                    return `<a class="ed-note-ref" href="#${escapeXml(id)}" id="${escapeXml(id)}-ref" title="See the editor’s note below">note</a>`;
                 }
                 const target = resolveTarget(attr('target'), root);
                 return `<a href="${escapeXml(target)}" target="_blank" rel="noopener">${escapeXml(target)}</a>`;
