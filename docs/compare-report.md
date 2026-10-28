@@ -5,12 +5,12 @@ Made by `tools/see-also.py`. It is replaced each time the tool runs.
 ```
 Entries: 9091; changed: 0; links added: 0; wrong links removed: 0
   vergleiche      found  1359, linked   825
-  not linked, no word found                                   211
+  not linked, no word found                                   212
   not linked, no entry with this headword (yet)               174
   not linked, part of a longer phrase, not a single headword    69
   linked, ~ filled in from the headword                        33
   not linked, only the start or end of a word                  27
-  not linked, a citation or a longer word, not a headword      25
+  not linked, a citation or a longer word, not a headword      24
   not linked, nothing follows                                  17
   linked, linked by a near spelling                            16
   not linked, a single letter, not a headword                   8
@@ -20,7 +20,7 @@ Entries: 9091; changed: 0; links added: 0; wrong links removed: 0
   not linked, no entry with this headword                       1
 ```
 
-## Not linked, no word found (211)
+## Not linked, no word found (212)
 
 - **Aegyptus**: vgl. 
 - **Artikel-2**: vgl. 
@@ -191,6 +191,7 @@ Entries: 9091; changed: 0; links added: 0; wrong links removed: 0
 - **th**: vgl. 
 - **th**: vgl. 
 - **th**: vgl. 
+- **thaet-2**: vgl. 
 - **thegn**: vgl. 
 - **thegnweres**: vgl. 
 - **thenden**: vgl. 
@@ -549,7 +550,7 @@ Entries: 9091; changed: 0; links added: 0; wrong links removed: 0
 - **undertheodd**: vgl. undergeþ~ (no entry for it)
 - **wanan**: vgl. gew~ (no entry for it)
 
-## Not linked, a citation or a longer word, not a headword (25)
+## Not linked, a citation or a longer word, not a headword (24)
 
 - **Conjugation**: vgl. do
 - **Dativ**: vgl. be
@@ -573,7 +574,6 @@ Entries: 9091; changed: 0; links added: 0; wrong links removed: 0
 - **merci**: vgl. misericordia
 - **nun**: vgl. si
 - **ofer**: vgl. A
-- **thaet-2**: vgl. oð
 - **undeornunga**: vgl. Beowulf
 - **wid-2**: vgl. C
 
