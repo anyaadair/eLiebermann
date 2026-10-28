@@ -34,8 +34,9 @@
         <form type="lemma">
           <orth>mon(n)-</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">mon(n)-</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> man(n)-</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">mon(n)-</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:man">man</ref>(<ref type="entry" target="entry:mann">n</ref>)-</dictScrap>
         <xr type="see"><ref target="entry:man">man</ref></xr>
+        <xr type="see"><ref target="entry:mann">mann</ref></xr>
       </entry>
     </body>
   </text>

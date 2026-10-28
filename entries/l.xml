@@ -35,10 +35,10 @@
           <orth>l</orth>
         </form>
         <usg type="dom">spelling</usg>
-        <dictScrap type="liebermann"><lbl type="language">FL</lbl> <hi rend="bold">l</hi> <hi rend="bold">1</hi>) <hi rend="italic"><ref type="abbreviation" target="gram:fur"><abbr>für</abbr></ref></hi> r: <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> Gerardus <hi rend="bold">2</hi>) <hi rend="italic"><ref type="abbreviation" target="gram:dafur"><abbr>dafür</abbr></ref></hi> n: <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> Lincoln</dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">FL</lbl> <hi rend="bold">l</hi> <hi rend="bold">1</hi>) <hi rend="italic"><ref type="abbreviation" target="gram:fur"><abbr>für</abbr></ref></hi> r: <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:Gerardus">Gerardus</ref> <hi rend="bold">2</hi>) <hi rend="italic"><ref type="abbreviation" target="gram:dafur"><abbr>dafür</abbr></ref></hi> n: <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:Lincoln">Lincoln</ref></dictScrap>
         <dictScrap type="senses">
-          <sense n="1"><hi rend="italic"><ref type="abbreviation" target="gram:fur"><abbr>für</abbr></ref></hi> r: <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> Gerardus</sense>
-          <sense n="2"><hi rend="italic"><ref type="abbreviation" target="gram:dafur"><abbr>dafür</abbr></ref></hi> n: <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> Lincoln</sense>
+          <sense n="1"><hi rend="italic"><ref type="abbreviation" target="gram:fur"><abbr>für</abbr></ref></hi> r: <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:Gerardus">Gerardus</ref></sense>
+          <sense n="2"><hi rend="italic"><ref type="abbreviation" target="gram:dafur"><abbr>dafür</abbr></ref></hi> n: <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:Lincoln">Lincoln</ref></sense>
         </dictScrap>
         <xr type="see"><ref target="entry:Gerardus">Gerardus</ref></xr>
         <xr type="see"><ref target="entry:Lincoln">Lincoln</ref></xr>

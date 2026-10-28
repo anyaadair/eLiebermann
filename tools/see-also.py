@@ -29,6 +29,11 @@ How a word is matched to an entry, in order:
   - where several entries share the headword: the one numbered by a following
     I or II ("s. ure n. II"), else the one in the same language or with the
     same F / L mark, else all of them, told apart by Liebermann's first gloss.
+A word in a list may have a part in round brackets, an optional part:
+(sulh)æcer stands for æcer and sulhæcer, healf(marc) for healf and healfmarc,
+þær(on, ~to) for þær, þæron and þærto; each word it stands for is linked.
+Words cited in another form than their headword (ricsare for ricsares) are
+matched by hand in FORMS.
 Links a person has checked and found wrong are listed in SKIP. The report says
 what was linked by a guess (to check) and what could not be linked, and why.
 An entry is never linked to itself.
@@ -70,6 +75,27 @@ SCRAP = re.compile(r'(<dictScrap type="liebermann">)(.*?)(</dictScrap>)', re.S)
 SEE = re.compile(r'^[ \t]*<xr type="see"><ref target="entry:([^"]*)">.*?</ref></xr>[ \t]*\n', re.M)
 SEE_ANY = re.compile(r'^[ \t]*<xr type="see"><ref target="entry:[^"]*">.*?</ref></xr>[ \t]*\n', re.M)
 WORD = re.compile(r"[^\s,;:|(){}\[\]*_«»⟦⟧<>=+/]+")
+# A word in a list after "s." or "vgl." may have a part in round brackets, which
+# Liebermann uses for an optional part: (sulh)æcer is æcer and sulhæcer;
+# healf(marc) is healf and healfmarc; þær(on, ~to) is þær, þæron and þærto.
+BRACKET = r"\((?:[^()\s,]+(?:,\s*[^()\s,]+)*)\)"
+TOKEN = re.compile(r"(?:" + BRACKET + r"|[^\s,;:|(){}\[\]*_«»⟦⟧<>=+/])+")
+
+# Words Liebermann cites in another form than their headword, checked by hand:
+# (entry, word as cited) -> the entry it means.
+FORMS = {
+    ('a-6', 'ricsare'): 'ricsares',        # headword is the plural
+    ('a-6', 'mæstan'): 'maest',            # weak form of mæst (which points on to micel)
+    ('a-6', 'tæcean'): 'taecan',           # a form listed under tæcan
+    ('a-6', 'healfmarc'): 'healfmearc',
+    ('a-6', 'heall'): 'healle',            # headword is the dative
+    ('a-6', 'healm'): 'healme',            # headword is the dative
+    ('a-6', 'Westsaxones'): 'Westseax-e',  # Latin form of the name
+}
+
+# What targets() found for each word it read, for linking the words in the
+# text (tools/link-headwords.py): [(kind, n-th abbreviation, raw token, [(segment, ids)])]
+INLINE = []
 
 
 def read(path):
@@ -253,12 +279,12 @@ def words(text, backwards=False):
     if not backwards:
         rest = text
         while True:
-            m = re.match(r'\s*(' + WORD.pattern + ')', rest)
-            if not m:
+            m = re.match(r'\s*(' + TOKEN.pattern + ')', rest)
+            if not m or not re.search(r'[^\W\d_~-]', re.sub(BRACKET, '', m.group(1)) or m.group(1)):
                 break
             out.append(m.group(1))
             rest = rest[m.end():]
-            if not re.match(r'\s*,\s*(?=\S)', rest) or re.match(r'\s*,\s*[(\[]', rest):
+            if not re.match(r'\s*,\s*(?=\S)', rest) or re.match(r'\s*,\s*[\[]', rest):
                 break
             rest = re.sub(r'^\s*,', '', rest)
         words.right = rest
@@ -276,6 +302,34 @@ def words(text, backwards=False):
             rest = rest[:m.start()]
         words.left = rest                           # what is in front of the list
     return out[::-1]
+
+
+def expand(word):
+    """The parts of a word as written, each with the word it stands for:
+    (sulh)æcer -> [('sulh', 'sulhæcer'), ('æcer', 'æcer')];
+    þær(on, ~to) -> [('þær', 'þær'), ('on', 'þæron'), ('~to', 'þærto')];
+    a word with no brackets -> [(word, word)]."""
+    parts = re.split('(' + BRACKET + ')', word)
+    if len(parts) == 1:
+        return [(word, word)]
+    plain = [p for p in parts if not re.fullmatch(BRACKET, p)]
+    base = ''.join(plain)
+    out = []
+    for n, p in enumerate(parts):
+        if not p:
+            continue
+        if not re.fullmatch(BRACKET, p):
+            out.append((p, base))
+            continue
+        before = ''.join(x for x in parts[:n] if not re.fullmatch(BRACKET, x))
+        after = ''.join(x for x in parts[n + 1:] if not re.fullmatch(BRACKET, x))
+        for alt in re.split(r',\s*', p[1:-1]):
+            if '~' in alt:
+                form = alt.replace('~', before) + after
+            else:
+                form = before + alt + after
+            out.append((alt, form))
+    return out
 
 
 def clean(token):
@@ -379,8 +433,9 @@ def targets(scrap, entry_id, index):
     # A headword that is also a law code (Ine, Wiht ...) is linked as one in the
     # text; for finding the word, that link is only the word.
     scrap = re.sub(r'<ref type="lawCode" target="[^"]*">([^<]*)</ref>', r'\1', scrap)
+    scrap = strip_entry_links(scrap)
     heads = headwords(scrap, index, entry_id)
-    for m in ABBR.finditer(scrap):
+    for abbr_n, m in enumerate(ABBR.finditer(scrap)):
         kind = m.group('kind')
         if kind in OTHER:
             found.append((kind, m.group('text'), [], 'not linked: ' + kind))
@@ -445,15 +500,29 @@ def targets(scrap, entry_id, index):
             if COMPARE and len(word.strip('-')) <= 1:
                 found.append((kind, word, [], 'a single letter, not a headword'))
                 continue
-            ids, why, shown = resolve(word, index, lang, numeral if i == len(toks) - 1 else '', heads, entry_id)
-            if any((entry_id, x) in SKIP for x in ids):
-                ids = [x for x in ids if (entry_id, x) not in SKIP]
-                why = why or 'checked and found wrong'
-            if entry_id in ids:
-                ids = [x for x in ids if x != entry_id]
-                why = why or 'this entry itself'
-            found.append((kind, shown, ids, why))
+            segments, seen_forms = [], {}
+            for seg, form in expand(word):
+                if form not in seen_forms:
+                    if (entry_id, form) in FORMS:
+                        ids, why, shown = [FORMS[(entry_id, form)]], 'checked by hand: ' + FORMS[(entry_id, form)], form
+                    else:
+                        ids, why, shown = resolve(form, index, lang, numeral if i == len(toks) - 1 else '', heads, entry_id)
+                    if any((entry_id, x) in SKIP for x in ids):
+                        ids = [x for x in ids if (entry_id, x) not in SKIP]
+                        why = why or 'checked and found wrong'
+                    if entry_id in ids:
+                        ids = [x for x in ids if x != entry_id]
+                        why = why or 'this entry itself'
+                    seen_forms[form] = ids
+                    found.append((kind, shown, ids, why))
+                segments.append((seg, seen_forms[form]))
+            INLINE.append((kind, abbr_n, tok, segments))
     return found
+
+
+def strip_entry_links(scrap):
+    """The text without the links on cross-referenced words (tools/link-headwords.py)."""
+    return re.sub(r'<ref type="entry" target="[^"]*">(.*?)</ref>', r'\1', scrap)
 
 
 def labels(final, index):

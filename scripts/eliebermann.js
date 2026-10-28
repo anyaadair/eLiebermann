@@ -348,6 +348,10 @@
                 } else if ((m = href.match(/gramAbb\.html#(.+)$/))) {
                     out += '<ref type="abbreviation" target="gram:' + escapeXml(decodeURIComponent(m[1])) + '"><abbr>';
                     out += escapeXml(node.textContent.replace(/ /g, ' ').trim()) + '</abbr></ref>';
+                } else if ((m = href.match(/entry\.html\?id=([^&#]+)/)) && node.classList.contains('ref-entry')) {
+                    // a word Liebermann refers to, linked to its entry (tools/link-headwords.py)
+                    out += '<ref type="entry" target="entry:' + escapeXml(decodeURIComponent(m[1])) + '">';
+                    flat(); out += '</ref>';
                 } else if (/^https?:/.test(href)) {
                     out += '<ref target="' + escapeXml(href) + '">'; flat(); out += '</ref>';
                 } else {

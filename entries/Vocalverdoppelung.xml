@@ -33,7 +33,7 @@
         <form type="lemma">
           <orth>Vocalverdoppelung</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold"><hi rend="italic">Vocalverdoppelung</hi></hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> aa, ee, ii, oo, uu</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold"><hi rend="italic">Vocalverdoppelung</hi></hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:aa">aa</ref>, <ref type="entry" target="entry:ee">ee</ref>, ii, oo, <ref type="entry" target="entry:uu">uu</ref></dictScrap>
         <xr type="see"><ref target="entry:aa">aa</ref></xr>
         <xr type="see"><ref target="entry:ee">ee</ref></xr>
         <xr type="see"><ref target="entry:uu">uu</ref></xr>

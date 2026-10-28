@@ -34,7 +34,14 @@
         <form type="lemma">
           <orth>ic</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">ic</hi> <hi rend="italic">ich</hi> <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:El">El</ref> Pro. 34. 49,9f. <ref type="lawCode" target="law:Ine">Ine</ref> Pro. <ref type="lawCode" target="law:IEw">I Ew</ref> 1. <ref type="lawCode" target="law:IAs">I As</ref> Pro <ref type="lawCode" target="law:G">G</ref>. 4. 5. <ref type="lawCode" target="law:IIEw">II Ew</ref> 8 [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>.</hi> me, min, unc(er), ure, us, we]</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">ic</hi> <hi rend="italic">ich</hi> <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:El">El</ref> Pro. 34. 49,9f. <ref type="lawCode" target="law:Ine">Ine</ref> Pro. <ref type="lawCode" target="law:IEw">I Ew</ref> 1. <ref type="lawCode" target="law:IAs">I As</ref> Pro <ref type="lawCode" target="law:G">G</ref>. 4. 5. <ref type="lawCode" target="law:IIEw">II Ew</ref> 8 [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>.</hi> <ref type="entry" target="entry:me">me</ref>, <ref type="entry" target="entry:min">min</ref>, <ref type="entry" target="entry:unc">unc</ref>(<ref type="entry" target="entry:uncer">er</ref>), <ref type="entry" target="entry:ure">ure</ref>, <ref type="entry" target="entry:us">us</ref>, <ref type="entry" target="entry:we">we</ref>]</dictScrap>
+        <xr type="compare"><ref target="entry:me">me</ref></xr>
+        <xr type="compare"><ref target="entry:min">min</ref></xr>
+        <xr type="compare"><ref target="entry:unc">unc</ref></xr>
+        <xr type="compare"><ref target="entry:uncer">uncer</ref></xr>
+        <xr type="compare"><ref target="entry:ure">ure</ref></xr>
+        <xr type="compare"><ref target="entry:us">us</ref></xr>
+        <xr type="compare"><ref target="entry:we">we</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/20420">ic</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/53798">ic (Supplement)</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_El-Prol">Af El Pro</ref></xr>

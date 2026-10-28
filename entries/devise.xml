@@ -34,10 +34,10 @@
         <form type="lemma">
           <orth>devise</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">F</lbl> <hi rend="bold">devise</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref></hi> <hi rend="bold">1</hi>) <hi rend="italic">Testament</hi> <ref type="lawCode" target="law:LeisWl">Leis Wl</ref> 34 <hi rend="bold">2</hi>) <hi rend="italic">Gerichtstag</hi> 4. 4,1 [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>.</hi> divisa]</dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">F</lbl> <hi rend="bold">devise</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref></hi> <hi rend="bold">1</hi>) <hi rend="italic">Testament</hi> <ref type="lawCode" target="law:LeisWl">Leis Wl</ref> 34 <hi rend="bold">2</hi>) <hi rend="italic">Gerichtstag</hi> 4. 4,1 [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>.</hi> <ref type="entry" target="entry:divisa">divisa</ref>]</dictScrap>
         <dictScrap type="senses">
           <sense n="1"><hi rend="italic">Testament</hi> <ref type="lawCode" target="law:LeisWl">Leis Wl</ref> 34</sense>
-          <sense n="2"><hi rend="italic">Gerichtstag</hi> 4. 4,1 [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>.</hi> divisa]</sense>
+          <sense n="2"><hi rend="italic">Gerichtstag</hi> 4. 4,1 [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>.</hi> <ref type="entry" target="entry:divisa">divisa</ref>]</sense>
         </dictScrap>
         <xr type="compare"><ref target="entry:divisa">divisa</ref></xr>
         <xr type="lawCode"><ref target="clause:LeisWl_34">Leis Wl 34</ref></xr>

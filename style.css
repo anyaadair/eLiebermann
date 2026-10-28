@@ -405,7 +405,15 @@ td.term { font-weight: 600; color: var(--navy-dark); white-space: nowrap; }
    law codes (brown), clause numbers (a brighter red, solid underline),
    manuscripts (purple), grammatical abbreviations (blue), authors and
    works cited (green). */
-:root { --law-code: #7a2e0e; --clause: #b8401f; --manuscript: #5b3a8e; --abbreviation: var(--link); --work-cited: #2e6b45; }
+:root { --law-code: #7a2e0e; --clause: #b8401f; --manuscript: #5b3a8e; --abbreviation: var(--link); --work-cited: #2e6b45; --headword: #0e6470; }
+/* A word Liebermann sends the reader to ("s. æcer"): a link to that entry (tools/link-headwords.py) */
+.liebermann-text a.ref-entry { color: var(--headword); border-bottom: 1px solid currentColor; }
+.liebermann-text a.ref-entry:hover, .liebermann-text a.ref-entry:focus-visible { background: var(--highlight); }
+.link-key--entry { color: var(--headword); border-bottom-style: solid; }
+.law-popup--entry { border-top-color: var(--headword); }
+.law-popup--entry::before { border-bottom-color: var(--headword); }
+.law-popup--entry .law-popup-code { color: var(--headword); }
+.law-popup-entry-text { margin: 0 0 0.6rem; font-family: var(--serif); font-size: 1rem; }
 .liebermann-text a.ref-lawCode, .entry-section a.ref-lawCode { color: var(--law-code); border-bottom-color: var(--law-code); }
 .liebermann-text a.ref-manuscript, .entry-section a.ref-manuscript { color: var(--manuscript); border-bottom-color: var(--manuscript); }
 .liebermann-text a.ref-abbreviation { color: var(--abbreviation); border-bottom-color: var(--abbreviation); }

@@ -25,7 +25,11 @@
 (function () {
     'use strict';
 
-    const LINK = 'a[href*="lawAbb.html#"], a[href*="msAbb.html#"], a[href*="gramAbb.html#"], a[href*="bibAbb.html#"]';
+    const LINK = 'a[href*="lawAbb.html#"], a[href*="msAbb.html#"], a[href*="gramAbb.html#"], a[href*="bibAbb.html#"], a.ref-entry';
+    // A word Liebermann sends the reader to ("s. æcer"), linked to its entry:
+    // resting the pointer on it previews that entry; a click goes there.
+    const isEntry = link => link.classList.contains('ref-entry');
+    const entries = {};         // entry id -> { hw, text } or null
     // The two lists: where the data is, and what the popup calls things.
     const KINDS = {
         law: { file: 'data/markLaw.json', list: 'lawAbb.html', noun: 'Law code', more: 'Full list of law codes' },
@@ -77,6 +81,7 @@
     // Loads what a link needs: for a law code link, the manuscripts too, since
     // manuscript sigla are linked to the law code list.
     function ready(link) {
+        if (isEntry(link)) return loadEntry(entryId(link));
         const href = link.getAttribute('href') || '';
         if (href.indexOf('gramAbb.html#') >= 0) return load('gram');
         if (href.indexOf('bibAbb.html#') >= 0) return load('bib');
@@ -90,7 +95,35 @@
 
     /** The row for this link: the spelling printed in the entry if the group
      *  has it (Q and Quadr share an anchor), otherwise the first row. */
+    function entryId(link) {
+        const m = (link.getAttribute('href') || '').match(/[?&]id=([^&#]+)/);
+        try { return m ? decodeURIComponent(m[1]) : ''; } catch (e) { return ''; }
+    }
+
+    // An entry's headword and the start of Liebermann's text, from its file.
+    function loadEntry(id) {
+        if (!(id in entries)) {
+            entries[id] = fetch(root() + 'entries/' + encodeURIComponent(id) + '.xml')
+                .then(r => { if (!r.ok) throw new Error(r.status); return r.text(); })
+                .then(xml => {
+                    const doc = new DOMParser().parseFromString(xml, 'application/xml');
+                    const orth = doc.getElementsByTagNameNS('*', 'orth')[0];
+                    const scrap = Array.from(doc.getElementsByTagNameNS('*', 'dictScrap')).find(d => d.getAttribute('type') === 'liebermann');
+                    const hw = norm(orth ? orth.textContent : id);
+                    let text = norm(scrap ? scrap.textContent : '');
+                    // the text starts with the headword, which the popup already shows
+                    const lead = text.match(/^[^\s,]+,?\s*/);
+                    if (lead && hw.replace(/[\[\]()]/g, '').indexOf(lead[0].replace(/[\s,\[\]()]/g, '')) === 0) text = text.slice(lead[0].length);
+                    if (text.length > 260) text = text.slice(0, 250).replace(/\s+\S*$/, '') + ' …';
+                    return { hw, text };
+                })
+                .catch(() => null);
+        }
+        return Promise.resolve(entries[id]);
+    }
+
     function rowFor(link) {
+        if (isEntry(link)) return null;
         const kind = kindOf(link);
         const rows = groups[kind] && groups[kind][anchorOf(link)];
         if (!rows || !rows.length) return null;
@@ -120,7 +153,25 @@
         return el;
     }
 
+    function buildEntry(link, data) {
+        const box = element('div', 'law-popup law-popup--entry');
+        box.setAttribute('role', 'dialog');
+        box.setAttribute('aria-label', 'Entry ' + data.hw);
+        box.tabIndex = -1;
+        box.appendChild(element('p', 'law-popup-code', data.hw));
+        const text = element('p', 'law-popup-entry-text', data.text);
+        text.lang = 'de';
+        box.appendChild(text);
+        const more = element('a', 'law-popup-more', 'Open the entry');
+        more.href = link.href;
+        box.appendChild(more);
+        box.addEventListener('mouseenter', () => clearTimeout(hideTimer));
+        box.addEventListener('mouseleave', () => { if (!pinned) scheduleHide(); });
+        return box;
+    }
+
     function build(link, row) {
+        if (isEntry(link)) return buildEntry(link, row);
         const printed = norm(link.textContent) || norm(row['Gesetze Text']);
         const box = element('div', 'law-popup law-popup--' + kindOf(link));
         box.setAttribute('role', 'dialog');
@@ -264,6 +315,7 @@
         }
         if (event.defaultPrevented || event.button !== 0 ||
             event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+        if (isEntry(link)) { hide(false); return; }
 
         event.preventDefault();
         const byKeyboard = event.detail === 0;
@@ -285,8 +337,8 @@
         clearTimeout(hideTimer);
         clearTimeout(showTimer);
         showTimer = setTimeout(() => {
-            ready(link).then(() => {
-                const row = rowFor(link);
+            ready(link).then(data => {
+                const row = isEntry(link) ? data : rowFor(link);
                 if (row && link.matches(':hover') && !pinned) show(link, row, false);
             });
         }, HOVER_DELAY);
