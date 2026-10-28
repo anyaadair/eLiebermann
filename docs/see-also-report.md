@@ -905,7 +905,7 @@ Entries: 9091; changed: 0; links added: 0; wrong links removed: 0
 - **camus**: s. chamus
 - **chascun**: s. cascun
 - **chiminus**: s. cheminus
-- **chyric**: s. cyric / cyric-
+- **chyric**: s. cyric- / cyric
 - **ciping**: s. cieping
 - **clips**: s. geclips
 - **commander**: s. comander
@@ -1096,7 +1096,7 @@ Entries: 9091; changed: 0; links added: 0; wrong links removed: 0
 - **prunele**: s. purnele
 - **pup-p-licus**: s. publicus
 - **qualstow**: s. cwalstow
-- **ra-nhund**: s. hranhund / hrnhund
+- **ra-nhund**: s. hrnhund / hranhund
 - **rachater**: s. reachater
 - **raeda**: s. geræda
 - **raede**: s. anræde
