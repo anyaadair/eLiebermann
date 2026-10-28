@@ -448,9 +448,11 @@
         };
         const out = [], seen = new Set();
         const newAt = new Map();   // where in out the citation found at a position went, if it was new there
-        scanCitations(text0, (text, anchor, start, end, replaces) => {
+        scanCitations(text0, (text, anchor, start, end, replaces, rangeFrom) => {
             const note = noteAt(end);
             const c = note ? { text, anchor, note } : { text, anchor };
+            // the end of a range ("Rect 4,1c—3"): the clauses between are filled in by tools/link-citations.py
+            if (rangeFrom) c.rangeFrom = rangeFrom;
             if (replaces) {
                 // "VI Atr 32. 32,1 L": a citation found earlier is the Latin version's
                 if (newAt.has(start)) {
@@ -489,11 +491,11 @@
         // run: the passages of the code just named, in a row ("VI Atr 32. 32,1"), so that an
         // "L" after them makes them all the Latin version's
         let run = [];
-        const add = (text, start, end, inRow = true) => {
+        const add = (text, start, end, inRow = true, rangeFrom = '') => {
             last = { text: text.replace(/\s+/g, ' ').trim(), anchor: code.anchor, start, end };
             if (code.fresh || !inRow) run = [];
             run.push(last);
-            found(last.text, last.anchor, start, end);
+            found(last.text, last.anchor, start, end, false, rangeFrom);
         };
         const passages = (text, pos) => {
             let rest = text, at = pos, m;
@@ -520,7 +522,7 @@
                     const n = rg[1].replace(/\.$/, ''), s = at + rg[0].length - rg[1].length;
                     const first = last.text.slice(code.label.length).trim();
                     const full = /,/.test(n) || !/,/.test(first) || !/^\d/.test(n) ? n : first.replace(/,[^,]*$/, '') + ',' + n;
-                    add(code.label + ' ' + full, s, s + n.length);
+                    add(code.label + ' ' + full, s, s + n.length, true, last.text);
                     rest = rest.slice(rg[0].length); at += rg[0].length;
                     continue;
                 }
@@ -649,6 +651,11 @@
      * citation list under the entry, and a number is linked only when that
      * list has a clause for it: clauses is { 'Ine 8': 'law.html?id=Ine_8' }.
      */
+    /** A small arrow link, after a word that has a link of its own: to the entry or clause it also points to. */
+    function jumpLink(href, title) {
+        return `<a class="jump-link" href="${escapeXml(href)}" title="${escapeXml(title)}" aria-label="${escapeXml(title)}">↗</a>`;
+    }
+
     function linkClauseNumbers(container, clauses) {
         if (!container || !clauses || !Object.keys(clauses).length) return 0;
         const isCode = el => el.localName === 'a' && /(?:lawAbb|msAbb)\.html#/.test(el.getAttribute('href') || '');
@@ -667,7 +674,7 @@
                     try { anchor = decodeURIComponent(n.getAttribute('href').split('#')[1] || ''); } catch (e) { /* keep '' */ }
                     return put('\u0001' + anchor + '\u0002' + n.textContent + '\u0003', null, 0);
                 }
-                if (n.localName === 'a' && n.classList.contains('ed-note-ref')) return;
+                if (n.localName === 'a' && (n.classList.contains('ed-note-ref') || n.classList.contains('jump-link'))) return;
                 if (n.localName === 'a') return put(n.textContent, null, 0);
                 if (n.localName === 'sup' && !n.classList.contains('lang-marker')) return put('\u0004', null, 0);
                 if (n.localName === 'br' || n.classList.contains('pb')) return put(' ', null, 0);
@@ -866,7 +873,7 @@
         const found = extractCitations(entryTei);
         const have = new Set(found.map(c => c.text));
         // n: Liebermann's footnote at the passage ("ECf 20,3²"), shown as "note 2"
-        const xr = found.map(c => `<xr type="lawCode"${c.note ? ` n="${escapeXml(c.note)}"` : ''}><ref target="law:${escapeXml(c.anchor)}">${escapeXml(c.text)}</ref></xr>`);
+        const xr = found.map(c => `<xr type="lawCode"${c.note ? ` n="${escapeXml(c.note)}"` : ''}${c.rangeFrom ? ` rend="range-from:${escapeXml(c.rangeFrom)}"` : ''}><ref target="law:${escapeXml(c.anchor)}">${escapeXml(c.text)}</ref></xr>`);
         (extra || []).filter(l => l.text || l.url).forEach(l => {
             const text = (l.text || l.url).replace(/\s+/g, ' ').trim();
             if (!l.url && have.has(text)) return;
@@ -1053,6 +1060,9 @@ ${translation}
                 const target = resolveTarget(attr('target'), root);
                 if (!target) return '<span class="ref">' + inner() + '</span>';
                 const ext = /^https?:/.test(target) ? ' target="_blank" rel="noopener"' : '';
+                // <ref type="entry" subtype="jump" target="entry:Declination"/>: after a word linked to the
+                // abbreviations list ("s. Decl."), a small arrow to the entry it also points to
+                if (attr('subtype') === 'jump') return jumpLink(target, 'Go to the entry');
                 const cls = attr('type') ? ` class="ref-${escapeXml(attr('type'))}"` : '';
                 return `<a href="${escapeXml(target)}"${cls}${ext}>${inner()}</a>`;
             }
@@ -1158,7 +1168,7 @@ ${translation}
     const api = {
         TEI_NS, LANGUAGES, LANGUAGE_CODES, languageBadge, properNounBadge, isProperNoun, hiddenLanguages, setHiddenLanguages, isShown,
         useDom, slugify, sortKey, alphaKey, letterOf, ALPHABET, escapeXml, safeUrl,
-        linkAbbreviations, loadAbbreviations, extractCitations, linkClauseNumbers, citationXr, splitSenses, splitOutline, splitBreaks, sensesXml, detectLanguage, detectHeadword,
+        linkAbbreviations, loadAbbreviations, extractCitations, linkClauseNumbers, jumpLink, citationXr, splitSenses, splitOutline, splitBreaks, sensesXml, detectLanguage, detectHeadword,
         inlineToTei, isEmptyHtml, buildEntryXml,
         renderTei, resolveTarget, readEntry
     };

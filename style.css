@@ -438,6 +438,9 @@ td.term { font-weight: 600; color: var(--navy-dark); white-space: nowrap; }
 .liebermann-text a.ref-clause { color: var(--clause); border-bottom: 1px solid currentColor; }
 .liebermann-text a.ref-clause:hover, .liebermann-text a.ref-clause:focus-visible { background: var(--highlight); }
 .link-key--clause { color: var(--clause); border-bottom-style: solid; }
+.jump-link { font-family: var(--sans); font-size: 0.72em; line-height: 1; vertical-align: super; margin-left: 0.1em; padding: 0 0.15em; border: 1px solid var(--rule, #d4d4d4); border-radius: 3px; color: var(--muted); text-decoration: none; }
+.liebermann-text a.jump-link { border-bottom: 1px solid var(--rule, #d4d4d4); }
+.jump-link:hover, .jump-link:focus-visible { color: var(--link); border-color: currentColor; }
 .link-key.link-key--entry { color: var(--headword); border-bottom: 1px solid currentColor; }
 .liebermann-text .pb, .pb { font-family: var(--sans); font-size: 0.75rem; color: var(--muted); vertical-align: super; }
 .lang-marker { color: var(--navy); }

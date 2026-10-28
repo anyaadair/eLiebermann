@@ -48,7 +48,11 @@ from collections import Counter, defaultdict
 FOLD = {'æ': 'ae', 'Æ': 'Ae', 'þ': 'th', 'Þ': 'Th', 'ð': 'd', 'Ð': 'D', 'ƿ': 'w', 'Ƿ': 'W',
         'ȝ': 'g', 'Ȝ': 'G', 'ß': 'ss', 'œ': 'oe', 'Œ': 'Oe', '⁊': 'and', 'ꝥ': 'thaet', 'Ꝥ': 'Thaet'}
 
-XR = re.compile(r'<xr type="lawCode"(?P<n> n="[^"]*")?><ref target="law:(?P<anchor>[^"]+)">(?P<text>[^<]*)</ref></xr>')
+XR = re.compile(r'<xr type="lawCode"(?P<n>(?: (?:n|rend)="[^"]*")*)><ref target="law:(?P<anchor>[^"]+)">(?P<text>[^<]*)</ref></xr>')
+# "Rect 4,1c—3": the end of a range (tools/update-entries.js marks it rend="range-from:…"), and the
+# clauses between its two ends that this script fills in (subtype="range")
+RANGE_END = re.compile(r'<xr type="lawCode"(?: n="[^"]*")? rend="range-from:(?P<start>[^"]*)"><ref target="clause:(?P<end>[^"]+)">')
+RANGE_FILL = re.compile(r'[ \t]*<xr type="lawCode" subtype="range"><ref target="clause:[^"]+">[^<]*</ref></xr>\n')
 PREFIX_LAW = re.compile(r'^(?P<indent>[ \t]*)<prefixDef ident="law"[^>]*/>[ \t]*\n', re.M)
 PREFIX_CLAUSE = '<prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>'
 
@@ -106,6 +110,8 @@ def norm_clause(clause):
 class Clauses:
     def __init__(self, catalogue_path, mark_law_path):
         self.by_anchor = defaultdict(dict)       # anchor -> {clause key: clause id}
+        self.ids = defaultdict(list)             # anchor -> clause ids in the database's order
+        self.citation = {}                       # clause id -> its citation ("Rect 4.2")
         self.order = defaultdict(list)           # anchor -> clause keys in file order
         # texts in the database that have no Anchor of their own in the catalogue
         CODE_ANCHOR = {'VI Atr Lat': 'VIAtrLat'}
@@ -126,6 +132,9 @@ class Clauses:
                 c['citationKeys'] = [c['code'].replace(' ', '') + ' ' + k[len(c['code']) + 1:] if k.startswith(c['code'] + ' ') else k for k in c['citationKeys']]
             if not c['anchor']:
                 continue
+            if c['id'] not in self.citation:
+                self.ids[c['anchor']].append(c['id'])
+                self.citation[c['id']] = c['citation']
             keys = [k[len(c['anchor']) + 1:] for k in c['citationKeys']]
             if re.match(r'^[A-Za-z]', c['clause']) and not c['clause'].startswith('Rb '):
                 # A clause numbered after a word, such as Alfred's Introduction
@@ -261,9 +270,32 @@ def main():
             return '<xr type="lawCode"%s><ref target="clause:%s">%s</ref></xr>' % (m.group('n') or '', clause_id, m.group('text'))
 
         new = XR.sub(link, text)
+        # the clauses between the two ends of a range, in the database's order
+        new = RANGE_FILL.sub('', new)
+        for rm in list(RANGE_END.finditer(new)):
+            end_id = rm.group('end')
+            sm = re.search(r'<ref target="clause:([^"]+)">%s</ref>' % re.escape(rm.group('start')), new)
+            anchor = next((a for a, ids in clauses.ids.items() if end_id in ids), None)
+            if not sm or not anchor:
+                continue
+            ids = clauses.ids[anchor]
+            if sm.group(1) not in ids:
+                continue
+            i, j = ids.index(sm.group(1)), ids.index(end_id)
+            have = set(re.findall(r'<ref target="clause:([^"]+)">', new))
+            fill = ''
+            for cid in ids[i + 1:j]:
+                if cid in have:
+                    continue
+                label = re.sub(r'(?<=\d)\.(?=\d)', ',', clauses.citation[cid]).rstrip('.')
+                fill += '        <xr type="lawCode" subtype="range"><ref target="clause:%s">%s</ref></xr>\n' % (cid, html.escape(label, quote=False))
+            if fill:
+                at = new.rfind('\n', 0, rm.start()) + 1
+                new = new[:at] + fill + new[at:]
+                changed_here += 1
         # a citation already linked (target="clause:...") is not matched by XR, so
         # count it as linked rather than leaving it out of the figures
-        already = len(re.findall(r'<xr type="lawCode"(?: n="[^"]*")?><ref target="clause:', text))
+        already = len(re.findall(r'<xr type="lawCode"(?: (?:n|rend)="[^"]*")*><ref target="clause:', text))
         if already:
             outcome['already linked'] += already
             results_here += ['already linked'] * already

@@ -37,7 +37,20 @@
         </form>
         <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">Paschalis</hi> (<hi rend="italic">II.</hi>) <hi rend="italic">Papst</hi> <ref type="lawCode" target="law:QuadrII">Quadr II</ref> 4—9</dictScrap>
         <xr type="lawCode"><ref target="clause:QuadrII_4">Quadr II 4</ref></xr>
-        <xr type="lawCode"><ref target="clause:QuadrII_9">Quadr II 9</ref></xr>
+        <xr type="lawCode" subtype="range"><ref target="clause:QuadrII_4-1">Quadr II 4,1</ref></xr>
+        <xr type="lawCode" subtype="range"><ref target="clause:QuadrII_5">Quadr II 5</ref></xr>
+        <xr type="lawCode" subtype="range"><ref target="clause:QuadrII_6">Quadr II 6</ref></xr>
+        <xr type="lawCode" subtype="range"><ref target="clause:QuadrII_7">Quadr II 7</ref></xr>
+        <xr type="lawCode" subtype="range"><ref target="clause:QuadrII_8">Quadr II 8</ref></xr>
+        <xr type="lawCode" subtype="range"><ref target="clause:QuadrII_8a">Quadr II 8a</ref></xr>
+        <xr type="lawCode" subtype="range"><ref target="clause:QuadrII_8b">Quadr II 8b</ref></xr>
+        <xr type="lawCode" subtype="range"><ref target="clause:QuadrII_8c">Quadr II 8c</ref></xr>
+        <xr type="lawCode" subtype="range"><ref target="clause:QuadrII_8d">Quadr II 8d</ref></xr>
+        <xr type="lawCode" subtype="range"><ref target="clause:QuadrII_8-1">Quadr II 8,1</ref></xr>
+        <xr type="lawCode" subtype="range"><ref target="clause:QuadrII_8-2">Quadr II 8,2</ref></xr>
+        <xr type="lawCode" subtype="range"><ref target="clause:QuadrII_8-3">Quadr II 8,3</ref></xr>
+        <xr type="lawCode" subtype="range"><ref target="clause:QuadrII_8-4">Quadr II 8,4</ref></xr>
+        <xr type="lawCode" rend="range-from:Quadr II 4"><ref target="clause:QuadrII_9">Quadr II 9</ref></xr>
       </entry>
     </body>
   </text>

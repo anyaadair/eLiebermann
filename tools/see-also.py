@@ -695,10 +695,22 @@ def unwrap_gram_xrefs(scrap, index):
 
 
 def rewrap_gram_xrefs(scrap, index):
-    """Undo unwrap_gram_xrefs() where the word did not become a link to its entry."""
+    """Undo unwrap_gram_xrefs(): the word links to the abbreviations list again. Where it
+    became a link to its entry, that link goes on a small arrow after it ("s. Decl.↗"),
+    so the reader has both."""
     index.gram_xrefs()
     if not index.gram_anchor:
         return scrap
+    prefix = r'(target="gram:(?:siehe|vergleiche|sieheDort)"><abbr>[^<]*</abbr></ref>\.?(?:</hi>)?\s*(?:<hi rend="italic">)?)'
+    def jump(m):
+        text = m.group(3) + m.group(4)
+        anchor = index.gram_anchor.get(text) or index.gram_anchor.get(m.group(3))
+        if not anchor:
+            return m.group(0)
+        shown = text if text in index.gram_anchor else m.group(3)
+        rest = m.group(4) if shown == m.group(3) else ''
+        return m.group(1) + '<ref type="abbreviation" target="gram:%s"><abbr>%s</abbr></ref>%s<ref type="entry" subtype="jump" target="entry:%s"/>' % (anchor, shown, rest, m.group(2))
+    scrap = re.sub(prefix + r'<ref type="entry" target="entry:([^"]+)">([^<]*)</ref>(\.?)', jump, scrap)
     words = '|'.join(sorted(map(re.escape, index.gram_anchor), key=len, reverse=True))
     pat = re.compile(r'(target="gram:(?:siehe|vergleiche|sieheDort)"><abbr>[^<]*</abbr></ref>\.?(?:</hi>)?\s*(?:<hi rend="italic">)?)(' + words + r')(?![\w.])')
     return pat.sub(lambda m: m.group(1) + '<ref type="abbreviation" target="gram:%s"><abbr>%s</abbr></ref>' % (index.gram_anchor[m.group(2)], m.group(2)), scrap)
@@ -707,6 +719,7 @@ def rewrap_gram_xrefs(scrap, index):
 def strip_entry_links(scrap):
     """The text without the links on cross-referenced words (tools/link-headwords.py).
     A link made by hand (<ref type="entry" subtype="manual" …>) is kept."""
+    scrap = re.sub(r'<ref type="entry" subtype="jump"[^>]*/>', '', scrap)
     return re.sub(r'<ref type="entry" target="[^"]*">(.*?)</ref>', r'\1', scrap)
 
 

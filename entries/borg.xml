@@ -104,7 +104,8 @@
         <xr type="lawCode"><ref target="clause:IVEg_3">IV Eg 3</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_33">II Cn 33</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_58">II Cn 58</ref></xr>
-        <xr type="lawCode"><ref target="clause:IICn_58-2">II Cn 58,2</ref></xr>
+        <xr type="lawCode" subtype="range"><ref target="clause:IICn_58-1">II Cn 58,1</ref></xr>
+        <xr type="lawCode" rend="range-from:II Cn 58"><ref target="clause:IICn_58-2">II Cn 58,2</ref></xr>
         <xr type="lawCode"><ref target="clause:Grith_11">Grið 11</ref></xr>
         <xr type="lawCode"><ref target="clause:IEw_1-5">I Ew 1,5</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAtr_25-2">VI Atr 25,2</ref></xr>

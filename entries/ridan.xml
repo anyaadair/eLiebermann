@@ -56,7 +56,8 @@
         <xr type="lawCode"><ref target="clause:IIAs_4">II As 4</ref></xr>
         <xr type="lawCode"><ref target="clause:ExcomVII_10">Excom VII 10</ref></xr>
         <xr type="lawCode"><ref target="clause:Gethyn_3">Geþyncðo 3</ref></xr>
-        <xr type="lawCode"><ref target="clause:IIAs_20-4">II As 20,4</ref></xr>
+        <xr type="lawCode" subtype="range"><ref target="clause:IIAs_20-3">II As 20,3</ref></xr>
+        <xr type="lawCode" rend="range-from:II As 20,1"><ref target="clause:IIAs_20-4">II As 20,4</ref></xr>
       </entry>
     </body>
   </text>
