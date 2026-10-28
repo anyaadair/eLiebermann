@@ -3,15 +3,15 @@
 Made by `tools/see-also.py`. It is replaced each time the tool runs.
 
 ```
-Entries: 9090; changed: 6; links added: 1; wrong links removed: 3
-  siehe           found  5359, linked  4480
+Entries: 9090; changed: 4; links added: 1; wrong links removed: 0
+  siehe           found  5359, linked  4481
   sieheDort       found   584, linked   441
   sieheOben       found    62, linked     0
   sieheUnten      found    24, linked     0
   sieheNummer     found    12, linked     0
   sieheDN         found    31, linked     0
   sieheDortUnter  found     5, linked     0
-  not linked, no entry with this headword (yet)               614
+  not linked, no entry with this headword (yet)               613
   linked, ~ filled in from the headword                       408
   not linked, no word found                                   156
   linked, linked to the word without the hyphen               143
@@ -22,7 +22,7 @@ Entries: 9090; changed: 6; links added: 1; wrong links removed: 3
   linked, several entries have this headword, all linked       66
   linked, linked by a near spelling                            63
   linked, the first word that begins so (a word ending in "-")    50
-  linked, checked by hand                                      28
+  linked, checked by hand                                      29
   linked, a grammatical entry, linked to the abbreviations list in the text    11
   not linked, no entry with this headword                       9
   not linked, linked by a near spelling                         8
@@ -35,7 +35,7 @@ Entries: 9090; changed: 6; links added: 1; wrong links removed: 3
   linked, the prefix and this entry's word                      1
 ```
 
-## Not linked, no entry with this headword (yet) (614)
+## Not linked, no entry with this headword (yet) (613)
 
 - **Antithese**: s. unhæle
 - **Antithese**: s. godcund-woruldcund
@@ -189,7 +189,6 @@ Entries: 9090; changed: 6; links added: 1; wrong links removed: 3
 - **aeden**: s. hæ-
 - **aeht-2**: s. eaht
 - **aeht-a**: s. eaht
-- **ael-2**: s. el-
 - **aet-2**: s. ætfæstan
 - **aet-2**: s. æthleapan
 - **aet-2**: s. ætwindan
@@ -775,7 +774,7 @@ Entries: 9090; changed: 6; links added: 1; wrong links removed: 3
 - **feohtan**: s. gefeohtan
 - **fera**: s. gefera
 - **fierran**: s. afiersian
-- **filst-an**: s. fylst / fylstan
+- **filst-an**: s. fylstan / fylst
 - **foreceap**: s. forceap
 - **foreiurare**: s. forisiurare
 - **forfang**: s. forefang
@@ -914,7 +913,7 @@ Entries: 9090; changed: 6; links added: 1; wrong links removed: 3
 - **prunele**: s. purnele
 - **pup-p-licus**: s. publicus
 - **qualstow**: s. cwalstow
-- **ra-nhund**: s. hrnhund / hranhund
+- **ra-nhund**: s. hranhund / hrnhund
 - **rachater**: s. reachater
 - **raeda**: s. geræda
 - **raede**: s. anræde
@@ -2029,7 +2028,7 @@ Entries: 9090; changed: 6; links added: 1; wrong links removed: 3
 - **wuna**: s. gew-
 - **yrf**: s. ierf-
 
-## Linked, checked by hand (28)
+## Linked, checked by hand (29)
 
 - **Abkurzungen**: s. m (m)
 - **Abkurzungen**: s. sanct (sancte)
@@ -2053,6 +2052,7 @@ Entries: 9090; changed: 6; links added: 1; wrong links removed: 3
 - **ae-4**: s. sceapætere (sc-ea-paetere)
 - **ae-4**: s. unliegne (unl-ie-gen)
 - **aedel**: s. Æðelnoth (Aethelnothus)
+- **ael-2**: s. el- (e-lcor)
 - **ea**: s. lafe (laf)
 - **ea**: s. botettan (boteatan)
 - **haelm**: s. healm (healme)

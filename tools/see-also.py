@@ -88,6 +88,7 @@ TOKEN = re.compile(r"(?:" + BRACKET + r"|[^\s,;:|(){}\[\]*_«»⟦⟧<>=+/])+")
 # Words Liebermann cites in another form than their headword, checked by hand:
 # (entry, word as cited) -> the entry it means.
 FORMS = {
+    ('ael-2', 'el-'): 'e-lcor',             # "æl- s. el-": the æl- words are under el-; the first of them (Anya)
     ('i', 'æ'): 'ae-4',                    # "dafür æ: s. d.": æ- (checked by Anya), not the other æ spelling entries
     ('aedel', 'Æðelnoth'): 'Aethelnothus', # headword spelt with th (Æthelnothus); Liebermann refers to it with ð
     ('a-6', 'ricsare'): 'ricsares',        # headword is the plural
