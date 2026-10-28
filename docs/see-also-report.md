@@ -3,29 +3,29 @@
 Made by `tools/see-also.py`. It is replaced each time the tool runs.
 
 ```
-Entries: 9091; changed: 12; links added: 0; wrong links removed: 0
-  siehe           found  5339, linked  4451
+Entries: 9091; changed: 12; links added: 18; wrong links removed: 0
+  siehe           found  5349, linked  4471
   sieheDort       found   584, linked   428
   sieheOben       found    62, linked     0
   sieheUnten      found    24, linked     0
   sieheNummer     found    12, linked     0
   sieheDN         found    31, linked     0
   sieheDortUnter  found     5, linked     0
-  not linked, no entry with this headword (yet)               631
+  not linked, no entry with this headword (yet)               623
   linked, ~ filled in from the headword                       408
   not linked, no word found                                   156
-  linked, linked to the word without the hyphen               142
+  linked, linked to the word without the hyphen               143
   not linked, only the start or end of a word                 141
   linked, the spelling entry for these letters, from a spelling entry   120
   linked, every word that begins so (a word ending in "-"), from an entry that only points   106
   not linked, part of a longer phrase, not a single headword    78
   linked, linked by a near spelling                            67
   linked, several entries have this headword, all linked       66
-  linked, the first word that begins so (a word ending in "-")    51
-  linked, checked by hand                                      15
+  linked, the first word that begins so (a word ending in "-")    50
+  linked, checked by hand                                      26
   not linked, no entry with this headword                      12
   linked, a grammatical entry, linked to the abbreviations list in the text    11
-  not linked, linked by a near spelling                        10
+  not linked, linked by a near spelling                         8
   linked, a grammatical headword, abbreviated                   7
   not linked, nothing follows                                   6
   not linked, this entry itself                                 3
@@ -35,7 +35,7 @@ Entries: 9091; changed: 12; links added: 0; wrong links removed: 0
   linked, the prefix and this entry's word                      1
 ```
 
-## Not linked, no entry with this headword (yet) (631)
+## Not linked, no entry with this headword (yet) (623)
 
 - **Antithese**: s. unhæle
 - **Antithese**: s. godcund-woruldcund
@@ -159,6 +159,7 @@ Entries: 9091; changed: 12; links added: 0; wrong links removed: 0
 - **Unpersonliche**: s. begelimpan
 - **Unpersonliche**: s. mistidan
 - **Unpersonliche**: s. geneodian
+- **Unpersonliche**: s. geþyncan
 - **Vocalverdoppelung**: s. ii
 - **Wortbildung**: s. middesumor
 - **Wortbildung**: s. rifwund
@@ -183,16 +184,7 @@ Entries: 9091; changed: 12; links added: 0; wrong links removed: 0
 - **a-10**: s. onwendan
 - **a-4**: s. aver
 - **ad-2**: s. aver
-- **ae-4**: s. ablendan
-- **ae-4**: s. lenden
-- **ae-4**: s. nemnan
 - **ae-4**: s. tosendan
-- **ae-4**: s. utoðberstan
-- **ae-4**: s. geeahtian
-- **ae-4**: s. freondleast
-- **ae-4**: s. sceapætere
-- **ae-4**: s. ofslæhð
-- **ae-4**: s. unliegne
 - **aed**: s. āð-
 - **aedel**: s. Æðelnoth
 - **aeden**: s. hæ-
@@ -737,7 +729,7 @@ Entries: 9091; changed: 12; links added: 0; wrong links removed: 0
 - **camus**: s. chamus
 - **chascun**: s. cascun
 - **chiminus**: s. cheminus
-- **chyric**: s. cyric- / cyric
+- **chyric**: s. cyric / cyric-
 - **ciping**: s. cieping
 - **clips**: s. geclips
 - **commander**: s. comander
@@ -1239,7 +1231,7 @@ Entries: 9091; changed: 12; links added: 0; wrong links removed: 0
 - **ymb**: s. 
 - **yr**: s. 
 
-## Linked, linked to the word without the hyphen (142)
+## Linked, linked to the word without the hyphen (143)
 
 - **Adel**: s. Æðel-
 - **Aegel**: s. Æðel-
@@ -1251,6 +1243,7 @@ Entries: 9091; changed: 12; links added: 0; wrong links removed: 0
 - **Midlesex**: s. middel-
 - **Myrc**: s. Mierc-
 - **Nicole**: s. Lincoln-
+- **Praefix**: s. mid-
 - **Suffix**: s. -burg
 - **Suffix**: s. -dom
 - **Suffix**: s. -fæst
@@ -1980,14 +1973,13 @@ Entries: 9091; changed: 12; links added: 0; wrong links removed: 0
 - **y**: s. isen (isen-2, isen)
 - **ysen**: s. isen (isen-2, isen)
 
-## Linked, the first word that begins so (a word ending in "-") (51)
+## Linked, the first word that begins so (a word ending in "-") (50)
 
 - **Alv**: s. Ælf-
 - **London**: s. Lunden-
 - **adc**: s. acc-
 - **adp**: s. app-
 - **adp**: s. acqu-
-- **ae-4**: s. lenden-
 - **alleg**: s. adl-
 - **bric**: s. brycg-
 - **cherc**: s. ciric-
@@ -2034,7 +2026,7 @@ Entries: 9091; changed: 12; links added: 0; wrong links removed: 0
 - **wuna**: s. gew-
 - **yrf**: s. ierf-
 
-## Linked, checked by hand (15)
+## Linked, checked by hand (26)
 
 - **Abkurzungen**: s. m (m)
 - **Abkurzungen**: s. sanct (sancte)
@@ -2047,8 +2039,19 @@ Entries: 9091; changed: 12; links added: 0; wrong links removed: 0
 - **a-6**: s. healm (healme)
 - **a-6**: s. wealdes (gewealdes)
 - **a-6**: s. Westsaxones (Westseax-e)
+- **ae-4**: s. ablendan (ablendad)
+- **ae-4**: s. lenden (lendenbraede)
+- **ae-4**: s. lenden- (lendenbraede)
+- **ae-4**: s. nemnan (nemne)
+- **ae-4**: s. utoðberstan (utodberste)
+- **ae-4**: s. healm (healme)
+- **ae-4**: s. geeahtian (geeahtige)
+- **ae-4**: s. freondleast (freondleaste)
+- **ae-4**: s. sceapætere (sc-ea-paetere)
+- **ae-4**: s. unliegne (unl-ie-gen)
 - **ea**: s. lafe (laf)
 - **ea**: s. botettan (boteatan)
+- **haelm**: s. healm (healme)
 - **thaet-2**: s. for (for)
 - **thaet-2**: s. for (for)
 
@@ -2081,17 +2084,15 @@ Entries: 9091; changed: 12; links added: 0; wrong links removed: 0
 - **tn**: s. Gleitlaut
 - **tr**: s. Gleitlaut
 
-## Not linked, linked by a near spelling (10)
+## Not linked, linked by a near spelling (8)
 
 - **Consonanten**: s. ll (l)
 - **Pars**: s. healm (helm)
-- **ae-4**: s. healm (helm)
 - **conge**: s. cunge (congé)
 - **cyric**: s. ciric (cyric(-))
 - **fiht**: s. feoht (f[re]ht)
 - **flym**: s. fliem (flym(-))
 - **fyht**: s. feoht (f[re]ht)
-- **haelm**: s. healm (helm)
 - **maector**: s. mæte (mete)
 
 ## Linked, a grammatical headword, abbreviated (7)
