@@ -411,9 +411,9 @@
     const QUALIFIERS = new Set(['El', 'Rb', 'retr']);
     // Texts that the laws database keeps as one clause: cited by name alone ("Pax"), they go to it.
     const SINGLE_CLAUSE = new Set(['Pax', 'Wal', 'Erc']);
-    // A passage: 41, 2,1, 70,21a, Insc., Prol., or a line (Zeile) of a text
+    // A passage: 41, 2,1, 70,21a, Insc., Prol., Test. (the witnesses at the end of a writ), or a line (Zeile) of a text
     // Liebermann numbers by lines, such as Nor grið Z. 6.
-    const PASSAGE = String.raw`(?:\d+[a-z]{0,2}(?:,\d+[a-z]{0,2})*|Inscr?\.?|Prol? \d+[a-z]?(?:,\d+[a-z]?)*(?![\d,])|Pro[lt]?\.?|Epil\.?|Z\.\s?\d+)`;
+    const PASSAGE = String.raw`(?:\d+[a-z]{0,2}(?:,\d+[a-z]{0,2})*|Inscr?\.?|Prol? \d+[a-z]?(?:,\d+[a-z]?)*(?![\d,])|Pro[lt]?\.?|Epil\.?|Test\.?|Z\.\s?\d+)`;
     // A spelling (or phrase of up to three words) then a passage of the code already
     // running: see scanCitations. Groups: 1 everything before the number, 2 the
     // spelling, 3 the number. The number must end the citation.
@@ -639,7 +639,7 @@
                 // "| folgæres 20a", "(58 B)", "14 B ff." or "Insc A. Pro."; the paren of a manuscript reading
                 // ("Had 3 O (~dran D). 4") has already become spaces.
                 if (code && code.fresh && /^\s+\d/.test(text)) { passages(text, pos); }
-                else if (code && last && /^\s*(?:\.\s*\(?(?:\d|Pro[lt]?\b|Insc|Epil)|[;|]|\(\d|ff?\.)/.test(text)) { passages(text, pos); } else if (!/^\s*$/.test(text)) { code = code && /^[\s.]*$/.test(text) ? code : null; }
+                else if (code && last && /^\s*(?:\.\s*\(?(?:\d|Pro[lt]?\b|Insc|Epil|Test\b)|[;|]|\(\d|ff?\.)/.test(text)) { passages(text, pos); } else if (!/^\s*$/.test(text)) { code = code && /^[\s.]*$/.test(text) ? code : null; }
                 continue;
             }
             if (QUALIFIERS.has(anchor)) {
