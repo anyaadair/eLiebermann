@@ -479,7 +479,25 @@ a.dict-card:hover .dict-card__word { color: var(--link-hover); text-decoration: 
 .source-line { font-size: 0.9rem; color: var(--muted); border-top: 1px solid var(--rule); padding-top: 1rem; }
 
 /* The printed page beside the entry; stacked under it on narrow screens. */
-.entry-with-scan { display: grid; grid-template-columns: minmax(0, 1fr) minmax(22rem, 30rem); gap: 2rem; align-items: start; }
+.entry-with-scan { display: grid; grid-template-columns: minmax(0, 1fr) 2rem var(--scan-width, minmax(22rem, 30rem)); align-items: start; }
+/* Once the scan is open the page uses the whole window, and the bar between
+   the entry and the scan can be dragged to make the scan wider or narrower. */
+body.scan-open .main-content { max-width: none; }
+.entry-scan-divider { grid-column: 2; align-self: stretch; }
+.entry-with-scan.scan-loaded .entry-scan-divider {
+    position: sticky; top: 1rem; height: calc(100vh - 2rem); align-self: start;
+    cursor: col-resize; touch-action: none; display: flex; justify-content: center;
+}
+.entry-with-scan.scan-loaded .entry-scan-divider::before {
+    content: ""; width: 4px; margin: 0 auto; border-radius: 2px; background: var(--rule);
+    transition: background 0.15s;
+}
+.entry-with-scan.scan-loaded .entry-scan-divider:hover::before,
+.entry-with-scan.scan-loaded .entry-scan-divider:focus-visible::before,
+.entry-with-scan.dragging .entry-scan-divider::before { background: var(--link); }
+.entry-scan-divider:focus { outline: none; }
+.entry-with-scan.dragging, .entry-with-scan.dragging * { user-select: none; cursor: col-resize; }
+.entry-with-scan.dragging iframe { pointer-events: none; }
 .entry-scan {
     position: sticky;
     top: 1rem;
@@ -496,7 +514,8 @@ a.dict-card:hover .dict-card__word { color: var(--link-hover); text-decoration: 
 .entry-scan-load { text-align: center; padding: 2rem 1rem; color: #ddd; font-size: 0.85rem; }
 .entry-scan-load p { margin: 0.75rem 0 0; }
 @media (max-width: 60rem) {
-    .entry-with-scan { grid-template-columns: minmax(0, 1fr); }
+    .entry-with-scan { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
+    .entry-scan-divider { display: none !important; }
     .entry-scan { position: static; }
     .entry-scan.loaded { height: 80vh; }
 }
