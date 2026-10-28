@@ -97,6 +97,9 @@ FORMS = {
     ('a-6', 'wealdes'): 'gewealdes',       # "(unge)wealdes": no entry wealdes; editor's note on the entry
     ('Abkurzungen', 'm'): 'm',             # "man(n) durch m s. d.": the OE abbreviation m̃, not Latin or French m
     ('Abkurzungen', 'sanct'): 'sancte',    # "sca, sce, scs s. sanct": the entry is sancte
+    ('thaet-2', 'for'): 'for',             # "s. be, for, to": the preposition, not for (denn)
+    ('thaet-2', 'oð'): 'od-3',             # "vgl. oð (n. I C) þæt": the preposition oð
+    ('Accusativ', 'Genetiv'): 'Genetivus', # "s. Genetiv, Dativ"
 }
 
 # "habban (erhalten) s. d.": Liebermann's translation in brackets between the word and its s. d.
@@ -130,6 +133,7 @@ SKIP = {
     ('cs', 'g-o-s'), ('gar', 'waru'),
     ('Abkurzungen', 'm-2'), ('Abkurzungen', 'm-3'),                # the Latin and French m, not the OE m̃
     ('thaet-2', 'i'),                                            # "se I [s. d.]": the numeral of se I (linked by hand), not the letter i
+    ('thaet-2', 'for-2'),                                        # "be, for, to": the preposition, not for (denn)
 }
 
 ROMAN = {'I': 1, 'II': 2, 'III': 3, 'IV': 4, 'V': 5}
