@@ -29,6 +29,7 @@
       <change when="2026-10-17">Marked as a spelling entry.</change>
       <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
       <change when="2026-10-17">L (Latin version) after VI Atr, IV Eg and Leis Wl citations linked.</change>
+      <change when="2026-10-28">VI Atr 22 linked to the Latin paraphrase of VI Æthelred (Liebermann’s “L” covers 22 and 25).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -48,7 +49,7 @@
         <xr type="lawCode"><ref target="clause:IICn_71-4">II Cn 71,4</ref></xr>
         <xr type="lawCode"><ref target="clause:IVEg_8">IV Eg 8</ref></xr>
         <xr type="lawCode"><ref target="clause:IVEg_7">IV Eg 7</ref></xr>
-        <xr type="lawCode"><ref target="clause:VIAtr_22">VI Atr 22</ref></xr>
+        <xr type="lawCode"><ref target="clause:VI-Atr-Latin-Paraphrase_22">VI Atr Lat 22</ref></xr>
         <xr type="lawCode"><ref target="clause:VI-Atr-Latin-Paraphrase_25">VI Atr Lat 25</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_12">II Cn 12</ref></xr>
       </entry>

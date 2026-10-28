@@ -444,15 +444,25 @@
             return /^\d+$/.test(n) ? n : '';
         };
         const out = [], seen = new Set();
-        let lastNew = -1;   // where the last citation went in out, if it was new there
+        const newAt = new Map();   // where in out the citation found at a position went, if it was new there
         scanCitations(text0, (text, anchor, start, end, replaces) => {
             const note = noteAt(end);
             const c = note ? { text, anchor, note } : { text, anchor };
-            if (replaces && lastNew >= 0) { out[lastNew] = c; seen.add(text); return; }
-            lastNew = -1;
-            if (!seen.has(text)) { seen.add(text); lastNew = out.push(c) - 1; }
+            if (replaces) {
+                // "VI Atr 32. 32,1 L": a citation found earlier is the Latin version's
+                if (newAt.has(start)) {
+                    const i = newAt.get(start);
+                    if (seen.has(text) && out[i].text !== text) out[i] = null; else out[i] = c;
+                    seen.add(text);
+                    return;
+                }
+                // the passage was cited before ("VI Atr 18 … VI Atr 18 L"): the earlier one stays
+                if (!seen.has(text)) { seen.add(text); out.push(c); }
+                return;
+            }
+            if (!seen.has(text)) { seen.add(text); newAt.set(start, out.push(c) - 1); }
         });
-        return out;
+        return out.filter(Boolean);
     }
 
     /**
@@ -473,8 +483,13 @@
             return codes.every(a => SIGLA.has(a)) ? ' '.repeat(m.length) : m;
         });
         let code = null, last = null, open = false;   // open: only spaces since the last passage
-        const add = (text, start, end) => {
+        // run: the passages of the code just named, in a row ("VI Atr 32. 32,1"), so that an
+        // "L" after them makes them all the Latin version's
+        let run = [];
+        const add = (text, start, end, inRow = true) => {
             last = { text: text.replace(/\s+/g, ' ').trim(), anchor: code.anchor, start, end };
+            if (code.fresh || !inRow) run = [];
+            run.push(last);
             found(last.text, last.anchor, start, end);
         };
         const passages = (text, pos) => {
@@ -507,7 +522,7 @@
                 const sub = code && last && last.anchor === code.anchor && /^(.* )(\d+[a-z]{0,2}),\d+[a-z]{0,2}$/.exec(last.text);
                 if (sub && (m = /^(\s*;\s*)(\d+[a-z]{0,2})(?![\p{L}\d,)])(?=\.?\s*(?:$|[.;|‖=(\[\u0001\u0004\d]|ff?\.))/u.exec(rest))) {
                     const n = m[2], s = at + m[1].length;
-                    add(sub[1] + sub[2] + ',' + n, s, s + n.length);
+                    add(sub[1] + sub[2] + ',' + n, s, s + n.length, false);
                     rest = rest.slice(m[0].length); at += m[0].length;
                     continue;
                 }
@@ -524,14 +539,14 @@
                 // "ofer 5 ~", "im 12. Jh." and "an 7 (9) nihtum" are not read as passages.
                 if (code && last && last.anchor === code.anchor && (m = SPELLING_PASSAGE.exec(rest)) && !/north\./.test(m[1]) && !m[2].replace(/\[[^\]]*\]/g, ' ').split(/\s+/).some(w => GRAM_LABELS.has(w))) {
                     const n = m[3].replace(/\.$/, ''), s = at + m[1].length;
-                    add(code.label + ' ' + n, s, s + n.length);
+                    add(code.label + ' ' + n, s, s + n.length, false);
                     rest = rest.slice(m[0].length); at += m[0].length;
                     continue;
                 }
                 break;
             }
             // a footnote mark after the last passage ("48⁵ A³. 61,1") does not end the run
-            const restS = /^\u0004\s*$/.test(rest) ? ' ' : rest;
+            const restS = /^\u0004\s*$/.test(rest) ? ' ' : /^\s*ff?\.\s*$/.test(rest) && last && LATIN_VERSION[last.anchor] ? ' ' : rest;
             open = !!last && !(code && code.fresh) && /^\s*$/.test(restS);
             if (!open && !(code && code.fresh)) code = code && /^[\s.]*$/.test(restS) ? code : null;
         };
@@ -570,12 +585,17 @@
                 // passage (Af 41), not the manuscript, so the letter is not added to it.
                 const attached = open && last && !/^\s*:/.test(text);
                 if (anchor === 'ConsCn' || anchor === 'Quadr' && /^\s*:/.test(text) || anchor === 'InCn' && /^\s*:/.test(text)) code = null;
-                // "VI Atr 2 L": the citation just found is the Latin version's (VI Atr Lat 2);
-                // found() is told it replaces the one before (fifth argument).
+                // "VI Atr 2 L", "VI Atr 32. 32,1 L": the citations just found, in a row, are the
+                // Latin version's (VI Atr Lat 2); found() is told each replaces the one found
+                // at that place (fifth argument).
                 const latin = anchor === 'LatVersion' && attached && LATIN_VERSION[last.anchor];
                 if (latin && last.text.startsWith(latin.of + ' ')) {
-                    last = { text: latin.label + last.text.slice(latin.of.length), anchor: latin.anchor, start: last.start, end: last.end };
-                    found(last.text, last.anchor, last.start, last.end, true);
+                    run.filter(r => r.anchor === last.anchor && r.text.startsWith(latin.of + ' ')).forEach(r => {
+                        const lat = { text: latin.label + r.text.slice(latin.of.length), anchor: latin.anchor, start: r.start, end: r.end };
+                        found(lat.text, lat.anchor, lat.start, lat.end, true);
+                        if (r === last) last = lat;
+                    });
+                    run = [];
                 }
                 // keep the run going so "Af 41 B. 43" still reads as Af 43
                 open = attached && /^\s*$/.test(text);
@@ -639,7 +659,7 @@
         const hits = [];
         scanCitations(flat, (text, anchor, start, end, replaces) => {
             // a citation that replaces the one just found (VI Atr 2 L): drop that one's link
-            if (replaces && hits.length && hits[hits.length - 1].text !== text && hits[hits.length - 1].flatStart === start) hits.pop();
+            if (replaces) { const i = hits.findIndex(h => h.flatStart === start && h.text !== text); if (i >= 0) hits.splice(i, 1); }
             const href = clauses[text];
             // "Z. 6" (line 6): "Z." keeps its own link; the number is linked.
             if (/^Z\./.test(flat.slice(start, end))) start += flat.slice(start, end).search(/\d/);
