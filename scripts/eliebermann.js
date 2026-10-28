@@ -409,6 +409,8 @@
     const LATIN_VERSION = { VIAtr: { of: 'VI Atr', anchor: 'VIAtrLat', label: 'VI Atr Lat' } };
     // Parts of a code: Af El 49 (Introduction), Af Rb 41 (rubric).
     const QUALIFIERS = new Set(['El', 'Rb', 'retr']);
+    // Texts that the laws database keeps as one clause: cited by name alone ("Pax"), they go to it.
+    const SINGLE_CLAUSE = new Set(['Pax', 'Wal', 'Erc']);
     // A passage: 41, 2,1, 70,21a, Insc., Prol., or a line (Zeile) of a text
     // Liebermann numbers by lines, such as Nor grið Z. 6.
     const PASSAGE = String.raw`(?:\d+[a-z]{0,2}(?:,\d+[a-z]{0,2})*|Inscr?\.?|Prol? \d+[a-z]?(?:,\d+[a-z]?)*(?![\d,])|Pro[lt]?\.?|Epil\.?|Z\.\s?\d+)`;
@@ -446,9 +448,11 @@
         };
         const out = [], seen = new Set();
         const newAt = new Map();   // where in out the citation found at a position went, if it was new there
-        scanCitations(text0, (text, anchor, start, end, replaces) => {
+        scanCitations(text0, (text, anchor, start, end, replaces, rangeFrom) => {
             const note = noteAt(end);
             const c = note ? { text, anchor, note } : { text, anchor };
+            // the end of a range ("Rect 4,1c—3"): the clauses between are filled in by tools/link-citations.py
+            if (rangeFrom) c.rangeFrom = rangeFrom;
             if (replaces) {
                 // "VI Atr 32. 32,1 L": a citation found earlier is the Latin version's
                 if (newAt.has(start)) {
@@ -487,11 +491,11 @@
         // run: the passages of the code just named, in a row ("VI Atr 32. 32,1"), so that an
         // "L" after them makes them all the Latin version's
         let run = [];
-        const add = (text, start, end, inRow = true) => {
+        const add = (text, start, end, inRow = true, rangeFrom = '') => {
             last = { text: text.replace(/\s+/g, ' ').trim(), anchor: code.anchor, start, end };
             if (code.fresh || !inRow) run = [];
             run.push(last);
-            found(last.text, last.anchor, start, end);
+            found(last.text, last.anchor, start, end, false, rangeFrom);
         };
         const passages = (text, pos) => {
             let rest = text, at = pos, m;
@@ -506,9 +510,22 @@
                 add(code.label + (m[1] === ',' ? ',' : ' ') + n.replace(/^Prol?\.?\s*(?=\d)/, 'Pro '), s, s + n.length);
                 rest = rest.slice(m[0].length); at += m[0].length; code.fresh = false;
             } else if (code && code.fresh && !/^\s*$/.test(rest)) {
+                // "Pax", "Wal": a text with a single clause in the laws database, cited without a number
+                if (SINGLE_CLAUSE.has(code.anchor)) { add(code.label, at, at); code.fresh = false; }
                 code = null;   // a code with no passage after it, e.g. "VI As" in a sentence
             }
             for (;;) {
+                // "Rect 4,1c—3", "II Cn 71a—71,4": a range; its end is cited too, written out
+                // (4,1c—3 ends at 4,3; 71a—71,4 at 71,4)
+                let rg;
+                if (code && last && last.anchor === code.anchor && (rg = new RegExp(`^\\s*[—–]\\s*(${PASSAGE})(?![\\p{L}\\d])`, 'u').exec(rest))) {
+                    const n = rg[1].replace(/\.$/, ''), s = at + rg[0].length - rg[1].length;
+                    const first = last.text.slice(code.label.length).trim();
+                    const full = /,/.test(n) || !/,/.test(first) || !/^\d/.test(n) ? n : first.replace(/,[^,]*$/, '') + ',' + n;
+                    add(code.label + ' ' + full, s, s + n.length, true, last.text);
+                    rest = rest.slice(rg[0].length); at += rg[0].length;
+                    continue;
+                }
                 // "20,3²." (a superscript note number), "2 ff. 45", "14 f. 18 f.", "Abt 3. (73)"
                 while (code && last && (m = new RegExp(`^\\u0004?(?:\\s*ff?\\.)?(?:\\s*\\([^()]*\\))?\\s*\\.?(?:\\s+\\(?|\\s*\\()(${PASSAGE})(?![\\p{L}\\d])(?<!(?:^|[^\\d,(])\\d{1,2}[a-z]?(?=\\)))`, 'u').exec(rest))) {
                     if (/\($/.test(m[0].slice(0, m[0].length - m[1].length)) && !/^\s*(?:$|\)|[.;=,]|\u0001|ff?\.)/.test(rest.slice(m[0].length))) break;
@@ -634,6 +651,11 @@
      * citation list under the entry, and a number is linked only when that
      * list has a clause for it: clauses is { 'Ine 8': 'law.html?id=Ine_8' }.
      */
+    /** A small arrow link, after a word that has a link of its own: to the entry or clause it also points to. */
+    function jumpLink(href, title) {
+        return `<a class="jump-link" href="${escapeXml(href)}" title="${escapeXml(title)}" aria-label="${escapeXml(title)}">↗</a>`;
+    }
+
     function linkClauseNumbers(container, clauses) {
         if (!container || !clauses || !Object.keys(clauses).length) return 0;
         const isCode = el => el.localName === 'a' && /(?:lawAbb|msAbb)\.html#/.test(el.getAttribute('href') || '');
@@ -652,7 +674,7 @@
                     try { anchor = decodeURIComponent(n.getAttribute('href').split('#')[1] || ''); } catch (e) { /* keep '' */ }
                     return put('\u0001' + anchor + '\u0002' + n.textContent + '\u0003', null, 0);
                 }
-                if (n.localName === 'a' && n.classList.contains('ed-note-ref')) return;
+                if (n.localName === 'a' && (n.classList.contains('ed-note-ref') || n.classList.contains('jump-link'))) return;
                 if (n.localName === 'a') return put(n.textContent, null, 0);
                 if (n.localName === 'sup' && !n.classList.contains('lang-marker')) return put('\u0004', null, 0);
                 if (n.localName === 'br' || n.classList.contains('pb')) return put(' ', null, 0);
@@ -851,7 +873,7 @@
         const found = extractCitations(entryTei);
         const have = new Set(found.map(c => c.text));
         // n: Liebermann's footnote at the passage ("ECf 20,3²"), shown as "note 2"
-        const xr = found.map(c => `<xr type="lawCode"${c.note ? ` n="${escapeXml(c.note)}"` : ''}><ref target="law:${escapeXml(c.anchor)}">${escapeXml(c.text)}</ref></xr>`);
+        const xr = found.map(c => `<xr type="lawCode"${c.note ? ` n="${escapeXml(c.note)}"` : ''}${c.rangeFrom ? ` rend="range-from:${escapeXml(c.rangeFrom)}"` : ''}><ref target="law:${escapeXml(c.anchor)}">${escapeXml(c.text)}</ref></xr>`);
         (extra || []).filter(l => l.text || l.url).forEach(l => {
             const text = (l.text || l.url).replace(/\s+/g, ' ').trim();
             if (!l.url && have.has(text)) return;
@@ -1038,6 +1060,9 @@ ${translation}
                 const target = resolveTarget(attr('target'), root);
                 if (!target) return '<span class="ref">' + inner() + '</span>';
                 const ext = /^https?:/.test(target) ? ' target="_blank" rel="noopener"' : '';
+                // <ref type="entry" subtype="jump" target="entry:Declination"/>: after a word linked to the
+                // abbreviations list ("s. Decl."), a small arrow to the entry it also points to
+                if (attr('subtype') === 'jump') return jumpLink(target, 'Go to the entry');
                 const cls = attr('type') ? ` class="ref-${escapeXml(attr('type'))}"` : '';
                 return `<a href="${escapeXml(target)}"${cls}${ext}>${inner()}</a>`;
             }
@@ -1143,7 +1168,7 @@ ${translation}
     const api = {
         TEI_NS, LANGUAGES, LANGUAGE_CODES, languageBadge, properNounBadge, isProperNoun, hiddenLanguages, setHiddenLanguages, isShown,
         useDom, slugify, sortKey, alphaKey, letterOf, ALPHABET, escapeXml, safeUrl,
-        linkAbbreviations, loadAbbreviations, extractCitations, linkClauseNumbers, citationXr, splitSenses, splitOutline, splitBreaks, sensesXml, detectLanguage, detectHeadword,
+        linkAbbreviations, loadAbbreviations, extractCitations, linkClauseNumbers, jumpLink, citationXr, splitSenses, splitOutline, splitBreaks, sensesXml, detectLanguage, detectHeadword,
         inlineToTei, isEmptyHtml, buildEntryXml,
         renderTei, resolveTarget, readEntry
     };

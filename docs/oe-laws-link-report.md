@@ -3,20 +3,21 @@
 Made by `tools/link-citations.py --letter ALL`. It is replaced each time the tool runs.
 
 ```
-All entries: 9091 (with a law code citation list: 6433)
-Citations in their lists: 31408
-  linked, exact             997
-  linked, subclause          22
-  linked, and-following       5
-  linked, instituta           2
-  linked, prologue            2
-  linked, parent clause       3
-  linked, already linked  29042
-  LINKED TO A CLAUSE:       30073  (96% of all citations; 99% of those with a clause number to a code in the database)
-  not linked, clause not found            228
+All entries: 9091 (with a law code citation list: 6437)
+Citations in their lists: 31552
+  linked, exact            3279
+  linked, subclause          72
+  linked, and-following       7
+  linked, instituta           1
+  linked, prologue            5
+  linked, parent clause       4
+  linked, correction          3
+  linked, already linked  26830
+  LINKED TO A CLAUSE:       30201  (96% of all citations; 99% of those with a clause number to a code in the database)
+  not linked, clause not found            232
   not linked, citation not understood       1
-  not linked, code not in database       1104
-Entries changed: 90; entries whose whole list is linked: 5609
+  not linked, code not in database       1110
+Entries changed: 101; entries whose whole list is linked: 5610
 ```
 
 ## The code is in the database but no clause file has that number
@@ -88,7 +89,7 @@ Citations (with how many times each occurs):
 
 ## The code has no clause files
 
-By code: ECf (648), WlArtFz (345), ECfRetr (52), Lond (47), ApAGu (12)
+By code: ECf (653), WlArtFz (346), ECfRetr (52), Lond (47), ApAGu (12)
 
 Citations (with how many times each occurs):
 
@@ -98,10 +99,10 @@ Citations (with how many times each occurs):
 - Wl art Fz 2 ×27
 - ECf 13,1 ×25
 - Wl art Fz 3,1 ×24
+- ECf 11,1 ×23
 - Wl art Fz 4 ×23
-- ECf 11,1 ×22
+- Wl art Fz 1 ×21
 - Wl art Fz 10 ×21
-- Wl art Fz 1 ×20
 - ECf 33 ×19
 - Wl art Fz 8 ×17
 - Wl art Fz 8,2 ×16

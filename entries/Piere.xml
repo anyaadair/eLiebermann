@@ -36,6 +36,10 @@
         </form>
         <dictScrap type="liebermann"><lbl type="language">F</lbl> dener <ref type="abbreviation" target="gram:Seite"><abbr>S.</abbr></ref> <hi rend="bold">Piere</hi> <hi rend="italic">Peterspfennig, Romschoss</hi> <ref type="lawCode" target="law:LeisWl">Leis Wl</ref> 17—17,2; Pere <ref type="lawCode" target="law:I">I</ref></dictScrap>
         <xr type="lawCode"><ref target="clause:LeisWl_17">Leis Wl 17</ref></xr>
+        <xr type="lawCode" subtype="range"><ref target="clause:LeisWl_17a">Leis Wl 17a</ref></xr>
+        <xr type="lawCode" subtype="range"><ref target="clause:LeisWl_17b">Leis Wl 17b</ref></xr>
+        <xr type="lawCode" subtype="range"><ref target="clause:LeisWl_17-1">Leis Wl 17,1</ref></xr>
+        <xr type="lawCode" rend="range-from:Leis Wl 17"><ref target="clause:LeisWl_17-2">Leis Wl 17,2</ref></xr>
       </entry>
     </body>
   </text>

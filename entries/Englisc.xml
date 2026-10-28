@@ -57,6 +57,12 @@
         <xr type="lawCode"><ref target="clause:Duns_6">Duns 6</ref></xr>
         <xr type="lawCode"><ref target="clause:Duns_8-4">Duns 8,4</ref></xr>
         <xr type="lawCode"><ref target="clause:WiLad_1-1">Wl lad 1,1</ref></xr>
+        <xr type="lawCode" subtype="range"><ref target="clause:WiLad_2-1">Wl lad 2,1</ref></xr>
+        <xr type="lawCode" subtype="range"><ref target="clause:WiLad_2-2">Wl lad 2,2</ref></xr>
+        <xr type="lawCode" subtype="range"><ref target="clause:WiLad_2-3">Wl lad 2,3</ref></xr>
+        <xr type="lawCode" subtype="range"><ref target="clause:WiLad_3">Wl lad 3</ref></xr>
+        <xr type="lawCode" subtype="range"><ref target="clause:WiLad_3-1">Wl lad 3,1</ref></xr>
+        <xr type="lawCode" rend="range-from:Wl lad 1,1"><ref target="clause:WiLad_3-2">Wl lad 3,2</ref></xr>
         <xr type="lawCode"><ref target="clause:Duns_4">Duns 4</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_54-2">Ine 54,2</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_74">Ine 74</ref></xr>

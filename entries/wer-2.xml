@@ -114,6 +114,10 @@
         <xr type="lawCode" n="3"><ref target="law:ECf">ECf 36,2</ref></xr>
         <xr type="lawCode"><ref target="clause:HnLond_7">Hn Lond 7</ref></xr>
         <xr type="lawCode"><ref target="clause:LeisWl_11">Leis Wl 11</ref></xr>
+        <xr type="lawCode" subtype="range"><ref target="clause:LeisWl_11-1">Leis Wl 11,1</ref></xr>
+        <xr type="lawCode" subtype="range"><ref target="clause:LeisWl_11-2">Leis Wl 11,2</ref></xr>
+        <xr type="lawCode" subtype="range"><ref target="clause:LeisWl_12">Leis Wl 12</ref></xr>
+        <xr type="lawCode" rend="range-from:Leis Wl 11"><ref target="clause:LeisWl_13">Leis Wl 13</ref></xr>
         <xr type="lawCode"><ref target="law:Lond">Lond retr 17</ref></xr>
         <xr type="lawCode"><ref target="clause:Hn_8-2">Hn 8,2</ref></xr>
         <xr type="lawCode"><ref target="clause:Hn_34-1c">Hn 34,1c</ref></xr>
@@ -122,10 +126,13 @@
         <xr type="lawCode"><ref target="clause:Hn_68-3a">Hn 68,3a</ref></xr>
         <xr type="lawCode"><ref target="clause:Hn_68-5">Hn 68,5</ref></xr>
         <xr type="lawCode"><ref target="clause:Hn_68-5a">Hn 68,5a</ref></xr>
+        <xr type="lawCode" subtype="range"><ref target="clause:LeisWl_8-1">Leis Wl 8,1</ref></xr>
+        <xr type="lawCode" subtype="range"><ref target="clause:LeisWl_9">Leis Wl 9</ref></xr>
         <xr type="lawCode"><ref target="clause:Rubrics-Af_31">Af Rb 31</ref></xr>
         <xr type="lawCode"><ref target="clause:Wer_1-1">Wer 1,1</ref></xr>
         <xr type="lawCode"><ref target="clause:Wer_7">Wer 7</ref></xr>
         <xr type="lawCode"><ref target="clause:LeisWl_8">Leis Wl 8</ref></xr>
+        <xr type="lawCode" rend="range-from:Leis Wl 8"><ref target="clause:LeisWl_9-1">Leis Wl 9,1</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_4-2">Af 4,2</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_6-1">Af 6,1</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_15">Ine 15</ref></xr>

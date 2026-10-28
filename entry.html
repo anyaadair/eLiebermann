@@ -320,6 +320,14 @@ scripts:
             if (m) clauses[ref.textContent.replace(/\s+/g, ' ').trim()] = root + 'law.html?id=' + encodeURIComponent(m[1]);
         });
         ELieb.linkClauseNumbers(target.querySelector('.liebermann-text'), clauses);
+        // "Pax": a text the laws database keeps as one clause, cited by name alone. The name keeps
+        // its link to the list of law codes; a small arrow after it goes to the clause.
+        target.querySelectorAll('.liebermann-text a[href*="lawAbb.html#"]').forEach(a => {
+            const href = clauses[a.textContent.replace(/\s+/g, ' ').trim()];
+            if (href && !(a.nextElementSibling && a.nextElementSibling.classList.contains('jump-link'))) {
+                a.insertAdjacentHTML('afterend', ELieb.jumpLink(href, 'Go to this text in the laws database'));
+            }
+        });
         // The tooltip names the code in full: "Wihtred 6 in the laws database".
         target.querySelectorAll('.liebermann-text a.ref-clause').forEach(a => {
             const text = (a.title || '').replace(/ in the laws database$/, '');
@@ -402,7 +410,7 @@ scripts:
         ${see ? `<section class="entry-section see-section"><h2>${e.xref || e.spelling ? 'See' : 'See also'}</h2><ul${linkCols(see)}>${see}</ul></section>` : ''}
         ${compare ? `<section class="entry-section"><h2>Compare</h2><ul${linkCols(compare)}>${compare}</ul></section>` : ''}
         ${derivatives ? `<section class="entry-section"><h2>Derivatives and Compounds</h2><ul${linkCols(derivatives)}>${derivatives}</ul></section>` : ''}
-        ${links ? `<section class="entry-section"><h2>Other dictionaries</h2><p class="dict-wip"><span class="dict-wip__tag">⚠ Under construction</span> The work of linking to external dictionaries is ongoing. A semi-automated process is used to guess Bosworth-Toller links in the first instance, so note that some words may be incorrectly linked to Bosworth-Toller entries until checked by the editor.</p>${links}</section>` : ''}
+        ${links ? `<section class="entry-section"><h2>Other dictionaries</h2><p class="dict-wip"><span class="dict-wip__tag">⚠ Under construction</span> The work of linking to external dictionaries is ongoing. A semi-automated process is used to generate initial Bosworth-Toller links, so note that some of these may be incorrect until checked.</p>${links}</section>` : ''}
         ${citations ? `<section class="entry-section"><h2>Law code citations</h2><div class="citation-groups">${citations}</div></section>` : ''}
 
         ${/* Editors' notes at the foot, above the previous / next links; the "note" bubbles in the text jump here. */ ''}

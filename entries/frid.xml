@@ -95,6 +95,11 @@
         <xr type="lawCode"><ref target="clause:Episc_4">Episc 4</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAtr_8-2">VI Atr 8,2</ref></xr>
         <xr type="lawCode"><ref target="clause:XAtr_2-1">X Atr 2,1</ref></xr>
+        <xr type="lawCode" subtype="range"><ref target="clause:IIAtr_2-1">II Atr 2,1</ref></xr>
+        <xr type="lawCode" subtype="range"><ref target="clause:IIAtr_3">II Atr 3</ref></xr>
+        <xr type="lawCode" subtype="range"><ref target="clause:IIAtr_3-1">II Atr 3,1</ref></xr>
+        <xr type="lawCode" subtype="range"><ref target="clause:IIAtr_3-2">II Atr 3,2</ref></xr>
+        <xr type="lawCode" rend="range-from:II Atr 2"><ref target="clause:IIAtr_3-3">II Atr 3,3</ref></xr>
       </entry>
     </body>
   </text>
