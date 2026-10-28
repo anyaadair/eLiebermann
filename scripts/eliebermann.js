@@ -723,7 +723,7 @@
         const text = String(html || '');
         const marker = /<(strong|b)>([^<]{1,5})<\/\1>\)/g;
         const cuts = [];
-        let lastUpper = '';
+        let lastUpper = '', lastLower = '', lastRoman = '';
         let m;
         while ((m = marker.exec(text))) {
             const before = text.slice(0, m.index);
@@ -736,8 +736,15 @@
             else if (/^[IVX]+$/.test(v) && !(v.length === 1 && lastUpper && String.fromCharCode(lastUpper.charCodeAt(0) + 1) === v)) kind = 'roman';
             else if (/^[A-Z]$/.test(v)) kind = 'upper';
             else if (/^[a-z]$/.test(v)) kind = 'lower';
+            // Liebermann's sub-letters: "a) … aa) … b)", "b) bb) bc)" (a point under a) or b)),
+            // "A) Ab) AA) B) Ba)", and "V) VA)": a step under the letter or numeral they start with
+            else if (/^[a-z]{2}$/.test(v) && v[0] === lastLower) kind = 'lower2';
+            else if (/^[A-Z][A-Za-z]$/.test(v) && v[0] === lastUpper) kind = 'upper2';
+            else if (/^[IVX]+[A-Z]$/.test(v) && v.slice(0, -1) === lastRoman) kind = 'roman2';
             if (!kind) continue;
             if (kind === 'upper') lastUpper = v;
+            if (kind === 'lower') lastLower = v;
+            if (kind === 'roman') lastRoman = v;
             // A Roman numeral with nothing but a language label before it
             // numbers the headword (I) lac, II) lac).
             // But not when a II) follows in the same entry (se: I) se … II) se as relative).
@@ -749,9 +756,19 @@
         // A coarser kind never goes below finer ones only: Wi[e]lisc lists
         // meanings a)–d) and then I) adj, II) sbst, which are not inside d).
         // I) and A) rank alike: Liebermann puts A) B) under IV) (þæt) and I) II) under A) (other entries).
-        const rank = { upper: 0, roman: 0, number: 2, lower: 3 };
+        const rank = { upper: 0, roman: 0, number: 2, lower: 3, upper2: 1, roman2: 1, lower2: 4 };
         const stack = [];
+        const PARENT = { lower2: 'lower', upper2: 'upper', roman2: 'roman' };
         const parts = cuts.map((c, i) => {
+            const body = text.slice(c.end, i + 1 < cuts.length ? cuts[i + 1].at : text.length);
+            if (PARENT[c.kind]) {
+                const at = stack.lastIndexOf(PARENT[c.kind]);
+                if (at >= 0) {
+                    stack.length = at + 1;
+                    stack.push(c.kind);
+                    return { marker: c.marker, kind: c.kind, depth: at + 1, body };
+                }
+            }
             let depth = stack.indexOf(c.kind);
             if (depth === -1 && stack.length && stack.every(k => rank[k] > rank[c.kind])) stack.length = 0;
             if (depth === -1) { stack.push(c.kind); depth = stack.length - 1; }
