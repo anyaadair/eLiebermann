@@ -19,6 +19,7 @@
     <encodingDesc>
       <listPrefixDef>
         <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
         <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
         <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
       </listPrefixDef>
@@ -37,7 +38,7 @@
         <dictScrap type="liebermann"><hi rend="bold">Cenred</hi> <hi rend="italic">Vater Ines, Königs d. Westsachsen; <ref type="abbreviation" target="gram:Genitiv"><abbr>gn</abbr></ref>:</hi> ~des <ref type="lawCode" target="law:Ine">Ine</ref> Pro; Cæn- <ref type="lawCode" target="law:H">H</ref>; Kerendes <ref type="lawCode" target="law:Quadr">Q</ref> <hi rend="italic"><ref type="abbreviation" target="gram:Variante"><abbr>Var.</abbr></ref></hi> [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>Vgl</abbr></ref>.</hi> <ref type="entry" target="entry:Cuonradus">Cuonradus</ref>]</dictScrap>
         <xr type="compare"><ref target="entry:Cuonradus">Cuonradus</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/6024">Cénréd</ref></xr>
-        <xr type="lawCode"><ref target="law:Ine">Ine Pro</ref></xr>
+        <xr type="lawCode"><ref target="clause:Ine_Ine-Prol">Ine Pro</ref></xr>
       </entry>
     </body>
   </text>

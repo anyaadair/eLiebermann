@@ -96,14 +96,19 @@ scripts:
         });
         const rows = [];
         if (head.trim()) rows.push({ html: head.trim(), depth: 0, cls: '' });
-        // "… b) þe Af El 49,1 | gn a) þæs …" (se): a bold label after "|" (a case, a
-        // gender) starts a new list, with its own a), b) …. The label gets a line of its
-        // own, a step out from the list under it; so does a bold label just before an a)
-        // ("…; msc no a) se …"). "| ac: þa …", a label with no list, also starts a line.
-        // a short bold label, which may hold a link to the abbreviations list: <strong><em><a>gn</a></em></strong>
-        const BOLD = String.raw`<(?:strong|b)>(?:(?!<\/?(?:strong|b)>)[\s\S]){1,400}?<\/(?:strong|b)>:?`;
-        const shortLabel = h => h.replace(/<[^>]+>/g, '').trim().length <= 25;
-        const LABEL = new RegExp(String.raw`(?:\|\s*|;\s*)(?=(` + BOLD + `))`, 'g');
+        // "… b) þe Af El 49,1 | gn a) þæs …" (se): a bold label after "|" starts a new list,
+        // with its own a), b) …. Liebermann's paradigms (se) go gender by gender, each after a
+        // (bold) "|": msc, fm, nt; then, after "‖", pl. Within each gender a case label (gn, dt,
+        // ac, instr) after "|" heads its own a), b) list. On the page a gender starts a line,
+        // its cases a step in, their a), b) a step further. "| ac: þa …", a label with no list,
+        // also starts a line; so does a bold label just before an a) ("…; msc no a) se …").
+        // a short bold label, which may hold a link to the abbreviations list: <strong><em><a>gn</a></em></strong>,
+        // and may be followed by an editor's note marker
+        const BOLD = String.raw`<(?:strong|b)>(?:(?!<\/?(?:strong|b)>)[\s\S]){1,400}?<\/(?:strong|b)>:?(?:\s*<a class="ed-note-ref"[^>]*>[^<]*<\/a>)?`;
+        const plain = h => h.replace(/<a class="ed-note-ref"[^>]*>[^<]*<\/a>/g, '').replace(/<[^>]+>/g, '').trim();
+        const shortLabel = h => plain(h).length <= 25;
+        const GENDER = /^(?:msc|fm|nt|pl)\b/;
+        const LABEL = new RegExp(String.raw`(?:\|\s*|;\s*|‖\s*)(?=(` + BOLD + `))`, 'g');
         const ENDS_WITH_LABEL = new RegExp(String.raw`(?:^|[|;\s])(` + BOLD + String.raw`)\s*$`);
         const labelled = !grammatical && parts.some((s, i) => {
             const next = parts[i + 1];
@@ -123,19 +128,45 @@ scripts:
                 // after ";" only a label that heads a list (at the end of the division)
                 const semi = m[0].startsWith(';');
                 if (semi && body.slice(m.index + m[0].length + m[1].length).trim()) continue;
-                out.push({ kind: out.length ? 'label' : 'first', html: body.slice(last, m.index) + (semi ? ';' : '') });
+                out.push({ html: body.slice(last, m.index) + (semi ? ';' : '') });
                 last = m.index + (semi ? m[0].length : 0);
+                out.push({ label: plain(m[1]).replace(/:$/, ''), big: m[0].startsWith('‖') });
             }
-            out.push({ kind: out.length ? 'label' : 'first', html: body.slice(last) });
-            return out;
+            out.push({ html: body.slice(last) });
+            // pair each label marker with the text after it
+            const pieces = [];
+            out.forEach((o, i) => {
+                if (o.label !== undefined) return;
+                const lab = out[i - 1] && out[i - 1].label !== undefined ? out[i - 1] : null;
+                if (!lab) return pieces.push({ kind: pieces.length ? 'label' : 'first', html: o.html });
+                let h = o.html.trim();
+                // the bar as Liebermann prints it: bold before a gender, "‖" before the plural
+                if (GENDER.test(lab.label)) h = `<strong class="gender-bar">${lab.big ? '‖' : '|'}</strong> ` + h.replace(/^[|‖]\s*/, '');
+                pieces.push({ kind: GENDER.test(lab.label) ? (lab.big ? 'gender gender--big' : 'gender') : 'label', html: h });
+            });
+            return pieces;
         };
         parts.forEach(s => {
             const pieces = grammatical ? ELieb.splitBreaks(s.body) : labelled ? splitLabels(s.body) : [{ kind: 'first', html: s.body }];
             pieces.forEach((p, j) => {
                 if (j === 0) rows.push({ html: `${s.open || ''}<strong>${esc(s.marker)}</strong>) ${p.html.trim()}`, depth: s.depth, cls: `sense sense--${s.kind}`, kind: s.kind });
-                else rows.push({ html: p.html.trim(), depth: p.kind === 'greek' ? s.depth + 1 : p.kind === 'label' && s.kind === 'lower' ? Math.max(0, s.depth - 1) : s.depth, cls: `sense sense--${p.kind}`, kind: p.kind });
+                else rows.push({ html: p.html.trim(), depth: p.kind === 'greek' ? s.depth + 1 : p.kind === 'label' && s.kind === 'lower' ? Math.max(0, s.depth - 1) : s.depth, cls: `sense ${p.kind.split(' ').map(k => 'sense--' + k).join(' ')}`, kind: p.kind.split(' ')[0] });
             });
         });
+        // In a paradigm, gender > case > a), b): each a step further in, from the Roman
+        // numeral (I) se) or the left margin.
+        if (labelled && rows.some(r => r.kind === 'gender')) {
+            let base = null, top = -1;
+            rows.forEach(r => {
+                if (r.kind === 'roman' || r.kind === 'upper') { base = null; top = r.depth; return; }
+                if (r.kind === 'gender') {
+                    if (base === null) base = top + 1;
+                    r.depth = base;
+                } else if (base !== null && r.kind === 'label') r.depth = base + 1;
+                else if (base !== null && r.kind === 'lower') r.depth = base + 2;
+                else if (base !== null && r.kind === 'lower2') r.depth = base + 3;
+            });
+        }
         // A heading lines up with the numbered forms that follow it.
         rows.forEach((r, i) => {
             if (r.kind !== 'case' && r.kind !== 'strong') return;
