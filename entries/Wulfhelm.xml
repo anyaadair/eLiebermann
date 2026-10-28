@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-12">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-10-28">“von” unlinked from the abbreviations list: here it is ordinary German, not an abbreviation (Anya Adair).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -34,7 +35,7 @@
         <form type="lemma">
           <orth>Wulfhelm</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">Wulfhelm</hi> <hi rend="italic">Erzbischof <ref type="abbreviation" target="gram:von"><abbr>von</abbr></ref> Canterbury; <ref type="abbreviation" target="gram:Nominativ"><abbr>no</abbr></ref>:</hi> ~me<ref type="abbreviation" target="gram:sic"><abbr>!</abbr></ref> <ref type="lawCode" target="law:IIAs">II As</ref> Epil <ref type="lawCode" target="law:Ld">Ld</ref>; Wlf- <ref type="lawCode" target="law:Quadr">Q</ref> <hi rend="italic"><ref type="abbreviation" target="gram:Variante"><abbr>Var.</abbr></ref></hi> | <hi rend="italic"><ref type="abbreviation" target="gram:Genitiv"><abbr>gn</abbr></ref>:</hi> ~mes <ref type="lawCode" target="law:I">I</ref> Pro (~lm<ref type="abbreviation" target="gram:sic"><abbr>!</abbr></ref> <ref type="lawCode" target="law:D">D</ref>). <ref type="lawCode" target="law:AsAlm">As Alm</ref> Pro. [III Pro]</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">Wulfhelm</hi> <hi rend="italic">Erzbischof von Canterbury; <ref type="abbreviation" target="gram:Nominativ"><abbr>no</abbr></ref>:</hi> ~me<ref type="abbreviation" target="gram:sic"><abbr>!</abbr></ref> <ref type="lawCode" target="law:IIAs">II As</ref> Epil <ref type="lawCode" target="law:Ld">Ld</ref>; Wlf- <ref type="lawCode" target="law:Quadr">Q</ref> <hi rend="italic"><ref type="abbreviation" target="gram:Variante"><abbr>Var.</abbr></ref></hi> | <hi rend="italic"><ref type="abbreviation" target="gram:Genitiv"><abbr>gn</abbr></ref>:</hi> ~mes <ref type="lawCode" target="law:I">I</ref> Pro (~lm<ref type="abbreviation" target="gram:sic"><abbr>!</abbr></ref> <ref type="lawCode" target="law:D">D</ref>). <ref type="lawCode" target="law:AsAlm">As Alm</ref> Pro. [III Pro]</dictScrap>
         <xr type="lawCode"><ref target="clause:IIAs_Epilog">II As Epil</ref></xr>
         <xr type="lawCode"><ref target="clause:AsAlm_Prol">As Alm Pro</ref></xr>
       </entry>

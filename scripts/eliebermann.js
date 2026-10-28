@@ -175,7 +175,8 @@
             .forEach(t => terms.push({ text: t['Gesetze Text'].trim(), anchor: t['Anchor'], type: 'law' }));
         // "Link automatically": "roman only" (the sic mark "!") is not linked in
         // Liebermann's German, where "!" is an ordinary exclamation mark.
-        (markforward || []).forEach(t => terms.push({ text: t['Gesetze Text'].trim(), anchor: t['Anchor'], type: 'gram', romanOnly: t['Link automatically'] === 'roman only' }));
+        // "Link automatically": "no" (von, which is mostly ordinary German) is linked by hand only.
+        (markforward || []).filter(t => t['Link automatically'] !== 'no').forEach(t => terms.push({ text: t['Gesetze Text'].trim(), anchor: t['Anchor'], type: 'gram', romanOnly: t['Link automatically'] === 'roman only' }));
         // Authors and works cited (data/bibliography.json). A bare name shared by
         // several works (Sweet, Thorpe) is marked "Link automatically": "no".
         (bibliography || []).filter(t => t['Link automatically'] !== 'no')
@@ -222,12 +223,6 @@
             while ((m = regex.exec(text))) {
                 const term = lookup(m[1]);
                 if (!term) continue;
-                // "(von = æt)": von is the German for an Old English word, not an abbreviation
-                if (term.type === 'gram' && term.text === 'von') {
-                    const italic = node.parentElement.closest('em, i');
-                    const rest = text.slice(m.index + m[1].length) || ((italic && italic.nextSibling) ? italic.nextSibling.textContent : '');
-                    if (/^\s*=/.test(rest)) continue;
-                }
                 if (m.index > last) frag.appendChild(DOM.document.createTextNode(text.slice(last, m.index)));
                 const a = DOM.document.createElement('a');
                 if (term.type === 'law') {

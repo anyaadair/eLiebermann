@@ -25,6 +25,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-12">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-10-28">“von” unlinked from the abbreviations list: here it is ordinary German, not an abbreviation (Anya Adair).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -33,7 +34,7 @@
         <form type="lemma">
           <orth>Westmonasterium</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">Westmonasterium</hi> <hi rend="italic">Westminster bei London; dort datirt</hi> <ref type="lawCode" target="law:CHnCor">CHn cor</ref> Test. <ref type="lawCode" target="law:Hn">Hn</ref> mon Test. <ref type="lawCode" target="law:HnLond">Hn Lond</ref> Test | <hi rend="italic">Abt <ref type="abbreviation" target="gram:von"><abbr>von</abbr></ref> W.:</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:Gilbertus">Gilbertus</ref></dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">Westmonasterium</hi> <hi rend="italic">Westminster bei London; dort datirt</hi> <ref type="lawCode" target="law:CHnCor">CHn cor</ref> Test. <ref type="lawCode" target="law:Hn">Hn</ref> mon Test. <ref type="lawCode" target="law:HnLond">Hn Lond</ref> Test | <hi rend="italic">Abt von W.:</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:Gilbertus">Gilbertus</ref></dictScrap>
         <xr type="see"><ref target="entry:Gilbertus">Gilbertus</ref></xr>
       </entry>
     </body>
