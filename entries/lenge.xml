@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-lenge]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-lenge]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> gelænge</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-lenge]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:gelaenge">gelænge</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:gelaenge">gelænge</ref></xr>
       </entry>
     </body>
   </text>

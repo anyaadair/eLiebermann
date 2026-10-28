@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-logian]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-logian]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> gel~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-logian]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:gelogian">gel~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:gelogian">gelogian</ref></xr>
       </entry>
     </body>
   </text>

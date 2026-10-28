@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[wiell]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[wiell]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> wæterwyllas</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[wiell]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:waeterwyllas">wæterwyllas</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:waeterwyllas">wæterwyllas</ref></xr>
       </entry>
     </body>
   </text>

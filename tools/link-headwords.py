@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
 Links the words in Liebermann's text that send the reader to another entry:
-the words after "s." (siehe), before "s. d." (siehe dort) and after "vgl."
-(vergleiche). Each becomes
+the words after "s." (siehe), before "s. d." (siehe dort), after "vgl."
+(vergleiche) and after "Der." (Derivativa und Composita). Each becomes
 
     <ref type="entry" target="entry:ID">word</ref>
 
@@ -23,7 +23,7 @@ word that matches none, or several, stays plain text.
 A word linked by hand, where Liebermann does not use "s." or "vgl."
 (<ref type="entry" subtype="manual" target="entry:ID">), is left as it is.
 
-Run it after tools/see-also.py (both kinds), and then tools/update-entries.js
+Run it after tools/see-also.py (all three kinds: plain, --compare, --derivatives), and then tools/update-entries.js
 on the changed entries, so the numbered meanings get the links too. Running
 it again changes nothing.
 """
@@ -41,16 +41,20 @@ spec.loader.exec_module(sa)
 
 SIEHE_ABBR = sa.ABBR
 VGL_ABBR = re.compile(r'(?P<open><hi rend="italic">)?<ref type="abbreviation" target="gram:(?P<kind>vergleiche)"><abbr>(?P<text>[^<]*)</abbr></ref>')
+DER_ABBR = re.compile(r'(?P<open><hi rend="italic">)?<ref type="abbreviation" target="gram:(?P<kind>Derivativ)"><abbr>(?P<text>[^<]*)</abbr></ref>')
 
 
-def mode(compare):
-    """Set see-also.py to read "vgl." (compare) or "s." (see)."""
-    if compare:
-        sa.SIEHE, sa.OTHER, sa.COMPARE, sa.ABBR = {'vergleiche': 'after'}, (), True, VGL_ABBR
+def mode(which):
+    """Set see-also.py to read "s." (see), "vgl." (compare) or "Der." (derivatives)."""
+    sa.COMPARE, sa.DERIV = which == 'vgl', which == 'der'
+    if which == 'vgl':
+        sa.SIEHE, sa.OTHER, sa.ABBR = {'vergleiche': 'after'}, (), VGL_ABBR
+    elif which == 'der':
+        sa.SIEHE, sa.OTHER, sa.ABBR = {'Derivativ': 'after'}, (), DER_ABBR
     else:
         sa.SIEHE = {'siehe': 'after', 'sieheDort': 'before'}
         sa.OTHER = ('sieheOben', 'sieheUnten', 'sieheNummer', 'sieheZu', 'sieheDN', 'sieheDortUnter')
-        sa.COMPARE, sa.ABBR = False, SIEHE_ABBR
+        sa.ABBR = SIEHE_ABBR
 
 
 def wrap_token(token, segments):
@@ -74,19 +78,19 @@ def link(scrap, entry_id, index):
     plain = sa.strip_entry_links(scrap)
     # what each abbreviation's words matched: (kind, n) -> [(token, segments)]
     found = {}
-    for compare in (False, True):
-        mode(compare)
+    for which in ('s', 'vgl', 'der'):
+        mode(which)
         sa.INLINE.clear()
         sa.targets(plain, entry_id, index)
         for kind, n, tok, segs in sa.INLINE:
-            found.setdefault(('vgl' if compare else 's', n), []).append((tok, segs, kind))
-    mode(False)
+            found.setdefault((which, n), []).append((tok, segs, kind))
+    mode('s')
     if not found:
         return plain, 0
     # Put the links in, abbreviation by abbreviation, from the end so that the
     # positions found earlier stay right.
     edits = []
-    for which, regex in (('s', SIEHE_ABBR), ('vgl', VGL_ABBR)):
+    for which, regex in (('s', SIEHE_ABBR), ('vgl', VGL_ABBR), ('der', DER_ABBR)):
         for n, m in enumerate(regex.finditer(plain)):
             items = found.get((which, n))
             if not items:
@@ -99,6 +103,8 @@ def link(scrap, entry_id, index):
             else:
                 start = m.end()
                 if plain.startswith('.', start) and which == 'vgl':
+                    start += 1
+                if plain.startswith(':', start) and which == 'der':
                     start += 1
                 zb = sa.ZB.match(plain, start)
                 if zb:

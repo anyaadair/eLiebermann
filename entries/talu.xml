@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-talu]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-talu]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> boct~, frumt~, tot~, tien-manna-tale?</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-talu]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> boct~, <ref type="entry" target="entry:frumtalu">frumt~</ref>, tot~, tien-manna-tale?</dictScrap>
+        <xr type="derivative"><ref target="entry:frumtalu">frumtalu</ref></xr>
       </entry>
     </body>
   </text>

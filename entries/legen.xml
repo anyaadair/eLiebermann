@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-legen]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-legen]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> unlægen</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-legen]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:unlaeg-en">unlægen</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:unlaeg-en">unlæg[en]</ref></xr>
       </entry>
     </body>
   </text>

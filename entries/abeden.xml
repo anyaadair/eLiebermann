@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-abeden]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-abeden]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> una~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-abeden]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:unabeden">una~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:unabeden">unabeden</ref></xr>
       </entry>
     </body>
   </text>

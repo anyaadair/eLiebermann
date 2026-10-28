@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-sufl]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-sufl]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> winters~; gesufelne</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-sufl]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> winters~; <ref type="entry" target="entry:gesufelne">gesufelne</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:gesufelne">gesufelne</ref></xr>
       </entry>
     </body>
   </text>

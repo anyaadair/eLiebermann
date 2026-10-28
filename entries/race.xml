@@ -34,7 +34,8 @@
         <form type="lemma">
           <orth>race</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">race</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>, Rechen</hi> <ref type="lawCode" target="law:Ger">Ger</ref> 15. — <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> ofenr~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">race</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>, Rechen</hi> <ref type="lawCode" target="law:Ger">Ger</ref> 15. — <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:of-e-nrace">ofenr~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:of-e-nrace">of[e]nrace</ref></xr>
         <xr type="lawCode"><ref target="clause:Ger_15">Ger 15</ref></xr>
       </entry>
     </body>

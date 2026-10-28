@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-fylan]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-fylan]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> af~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-fylan]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:afylan">af~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:afylan">afylan</ref></xr>
       </entry>
     </body>
   </text>

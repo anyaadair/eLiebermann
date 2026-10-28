@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-lyre]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-lyre]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> lifl~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-lyre]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:liflyre">lifl~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:liflyre">liflyre</ref></xr>
       </entry>
     </body>
   </text>

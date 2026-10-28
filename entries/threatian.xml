@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-þreatian]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-þreatian]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> geþ~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-þreatian]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:gethreatian">geþ~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:gethreatian">geþreatian</ref></xr>
       </entry>
     </body>
   </text>

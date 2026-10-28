@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-noð]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-noð]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> Æðeln~, Brihtn~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-noð]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> Æðeln~, <ref type="entry" target="entry:Brihtnod">Brihtn~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:Brihtnod">Brihtnoð</ref></xr>
       </entry>
     </body>
   </text>

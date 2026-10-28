@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-scad-]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-scad-]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> gescead-</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-scad-]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:gescead">gescead-</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:gescead">gescead</ref></xr>
       </entry>
     </body>
   </text>

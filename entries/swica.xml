@@ -34,7 +34,9 @@
         <form type="lemma">
           <orth>[-swica]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-swica]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> hlafords~, manns~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-swica]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:hlafordswic-a">hlafords~</ref>, <ref type="entry" target="entry:man-n-swica">manns~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:hlafordswic-a">hlafordswic[a]</ref></xr>
+        <xr type="derivative"><ref target="entry:man-n-swica">man[n]swica</ref></xr>
       </entry>
     </body>
   </text>

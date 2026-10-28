@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-beag]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-beag]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> dryhtenb~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-beag]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:dr-yhte-nbeag">dryhtenb~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:dr-yhte-nbeag">dr[yhte]nbeag</ref></xr>
       </entry>
     </body>
   </text>

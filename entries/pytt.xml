@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-pytt]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-pytt]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> wæterp~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-pytt]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:waeterpyt">wæterp~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:waeterpyt">wæterpyt</ref></xr>
       </entry>
     </body>
   </text>

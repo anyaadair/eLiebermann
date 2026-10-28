@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-boga]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-boga]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> elnb~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-boga]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:elnboga">elnb~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:elnboga">elnboga</ref></xr>
       </entry>
     </body>
   </text>

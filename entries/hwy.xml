@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-hwy]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-hwy]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> natestohwy</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-hwy]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:natestohwi">natestohwy</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:natestohwi">natestohwí</ref></xr>
       </entry>
     </body>
   </text>

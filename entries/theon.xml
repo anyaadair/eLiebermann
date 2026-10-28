@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-þeon]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-þeon]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> geþ~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-þeon]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:getheon">geþ~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:getheon">geþeon</ref></xr>
       </entry>
     </body>
   </text>

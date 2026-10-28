@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-apinedlic]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-apinedlic]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> una~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-apinedlic]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:unapinedlic">una~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:unapinedlic">unapinedlic</ref></xr>
       </entry>
     </body>
   </text>

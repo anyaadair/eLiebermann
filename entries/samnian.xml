@@ -34,7 +34,8 @@
         <form type="lemma">
           <orth>[-samnian]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-samnian]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> ges~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-samnian]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:gesamnian">ges~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:gesamnian">gesamnian</ref></xr>
       </entry>
     </body>
   </text>

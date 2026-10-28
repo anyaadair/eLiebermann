@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-rasian]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-rasian]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> ar~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-rasian]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:arasian">ar~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:arasian">arasian</ref></xr>
       </entry>
     </body>
   </text>

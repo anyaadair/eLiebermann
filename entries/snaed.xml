@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-snæd]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-snæd]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> cors~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-snæd]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:corsnaed">cors~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:corsnaed">corsnæd</ref></xr>
       </entry>
     </body>
   </text>

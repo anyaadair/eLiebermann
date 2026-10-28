@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-freogean]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-freogean]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> gef~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-freogean]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:gefreogean">gef~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:gefreogean">gefreogean</ref></xr>
       </entry>
     </body>
   </text>

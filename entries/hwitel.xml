@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-hwitel]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-hwitel]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> gafolh~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-hwitel]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:gafolhwitel">gafolh~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:gafolhwitel">gafolhwitel</ref></xr>
       </entry>
     </body>
   </text>

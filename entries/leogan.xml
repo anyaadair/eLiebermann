@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-leogan]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-leogan]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> al~, gel~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-leogan]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:aleogan">al~</ref>, gel~</dictScrap>
+        <xr type="derivative"><ref target="entry:aleogan">aleogan</ref></xr>
       </entry>
     </body>
   </text>

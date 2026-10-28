@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-beorglic]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-beorglic]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> geb~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-beorglic]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:gebeorglic">geb~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:gebeorglic">gebeorglic</ref></xr>
       </entry>
     </body>
   </text>

@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-besacen]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-besacen]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> unb~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-besacen]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:unbesacen">unb~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:unbesacen">unbesacen</ref></xr>
       </entry>
     </body>
   </text>

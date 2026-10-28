@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-lome]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-lome]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> gel~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-lome]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:gelome">gel~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:gelome">gelome</ref></xr>
       </entry>
     </body>
   </text>

@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-aceapian]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-aceapian]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref></hi> ofa~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-aceapian]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref></hi> <ref type="entry" target="entry:ofaceapian">ofa~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:ofaceapian">ofaceapian</ref></xr>
       </entry>
     </body>
   </text>

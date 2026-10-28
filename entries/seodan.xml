@@ -34,7 +34,8 @@
         <form type="lemma">
           <orth>seoðan</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">seoðan</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> as~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">seoðan</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:aseodan">as~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:aseodan">aseoðan</ref></xr>
       </entry>
     </body>
   </text>

@@ -34,7 +34,8 @@
         <form type="lemma">
           <orth>druncen</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">druncen</hi> <hi rend="italic">trunken</hi> <ref type="lawCode" target="law:Wi">Wi</ref> 6. <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> oferd~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">druncen</hi> <hi rend="italic">trunken</hi> <ref type="lawCode" target="law:Wi">Wi</ref> 6. <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:oferdruncen">oferd~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:oferdruncen">oferdruncen</ref></xr>
         <xr type="lawCode"><ref target="clause:Wi_6">Wi 6</ref></xr>
       </entry>
     </body>

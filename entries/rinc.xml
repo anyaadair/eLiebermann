@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-rinc]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-rinc]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> ladr~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-rinc]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:ladrinc">ladr~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:ladrinc">ladrinc</ref></xr>
       </entry>
     </body>
   </text>

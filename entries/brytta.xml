@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-brytta]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-brytta]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> bereb~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-brytta]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:berebrytta">bereb~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:berebrytta">berebrytta</ref></xr>
       </entry>
     </body>
   </text>

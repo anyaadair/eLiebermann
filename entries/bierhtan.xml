@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-bierhtan]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-bierhtan]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> geb~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-bierhtan]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:geb-ier-htan">geb~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:geb-ier-htan">geb[ier]htan</ref></xr>
       </entry>
     </body>
   </text>

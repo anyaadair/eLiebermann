@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-bald]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-bald]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> Eadb~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-bald]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:Eadbald">Eadb~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:Eadbald">Eadbald</ref></xr>
       </entry>
     </body>
   </text>

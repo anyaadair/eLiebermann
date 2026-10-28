@@ -33,8 +33,9 @@
         <form type="lemma">
           <orth>gecoren</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">gecoren</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:geceosan">geceosan</ref>. — <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> ung~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">gecoren</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:geceosan">geceosan</ref>. — <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:ungecoren">ung~</ref></dictScrap>
         <xr type="see"><ref target="entry:geceosan">geceosan</ref></xr>
+        <xr type="derivative"><ref target="entry:ungecoren">ungecoren</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/13890">ge-ceósan</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/47438">ge-ceósan (Supplement)</ref></xr>
       </entry>

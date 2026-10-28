@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-dwæscan]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-dwæscan]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> ad~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-dwæscan]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:adwaescan">ad~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:adwaescan">adwæscan</ref></xr>
       </entry>
     </body>
   </text>

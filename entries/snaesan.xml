@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-snæsan]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-snæsan]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> as~, on(a)s~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-snæsan]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:asnaesan">as~</ref>, on(a)s~</dictScrap>
+        <xr type="derivative"><ref target="entry:asnaesan">asnæsan</ref></xr>
       </entry>
     </body>
   </text>

@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-geriht]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-geriht]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:adjektiv"><abbr>adj</abbr></ref>. <ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> ung~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-geriht]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:adjektiv"><abbr>adj</abbr></ref>. <ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:ungeriht">ung~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:ungeriht">ungeriht</ref></xr>
       </entry>
     </body>
   </text>

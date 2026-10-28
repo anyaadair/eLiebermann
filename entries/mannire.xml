@@ -35,7 +35,8 @@
         <form type="lemma">
           <orth>mannire</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">mannire</hi> <hi rend="italic">vor Gericht laden</hi> <ref type="lawCode" target="law:Hn">Hn</ref> 50,2 — <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> adm~ [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>.</hi> submonere].</dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">mannire</hi> <hi rend="italic">vor Gericht laden</hi> <ref type="lawCode" target="law:Hn">Hn</ref> 50,2 — <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:admannire">adm~</ref> [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>.</hi> submonere].</dictScrap>
+        <xr type="derivative"><ref target="entry:admannire">admannire</ref></xr>
         <xr type="lawCode"><ref target="clause:Hn_50-2">Hn 50,2</ref></xr>
       </entry>
     </body>

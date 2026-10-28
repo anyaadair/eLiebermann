@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[mierran]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[mierran]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> am~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[mierran]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:am-ie-rran">am~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:am-ie-rran">am[ie]rran</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/22924">mirran</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/55481">mirran (Supplement)</ref></xr>
       </entry>

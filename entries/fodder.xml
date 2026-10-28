@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-fodder]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-fodder]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> sticf~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-fodder]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:sticfodder">sticf~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:sticfodder">sticfodder</ref></xr>
       </entry>
     </body>
   </text>

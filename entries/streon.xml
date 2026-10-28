@@ -33,9 +33,12 @@
         <form type="lemma">
           <orth>[-streon]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-streon]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> lands~, (woh)ges~, [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>.</hi> (<ref type="entry" target="entry:gestrienan">ge</ref>)<ref type="entry" target="entry:str-ie-nan">strienan</ref>]</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-streon]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:l-a-ndstr-eo-n">lands~</ref>, (<ref type="entry" target="entry:wohgestreon">woh</ref>)<ref type="entry" target="entry:gestreon">ges~</ref>, [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>.</hi> (<ref type="entry" target="entry:gestrienan">ge</ref>)<ref type="entry" target="entry:str-ie-nan">strienan</ref>]</dictScrap>
         <xr type="compare"><ref target="entry:gestrienan">gestrienan</ref></xr>
         <xr type="compare"><ref target="entry:str-ie-nan">str[ie]nan</ref></xr>
+        <xr type="derivative"><ref target="entry:l-a-ndstr-eo-n">l[a]ndstr[eo]n</ref></xr>
+        <xr type="derivative"><ref target="entry:wohgestreon">wohgestreon</ref></xr>
+        <xr type="derivative"><ref target="entry:gestreon">gestreon</ref></xr>
       </entry>
     </body>
   </text>

@@ -33,7 +33,10 @@
         <form type="lemma">
           <orth>[-geard]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-geard]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> friðg~, middang~, ortg~, wing~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-geard]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:fridgeard">friðg~</ref>, <ref type="entry" target="entry:middangeard">middang~</ref>, ortg~, <ref type="entry" target="entry:wingeard">wing~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:fridgeard">friðgeard</ref></xr>
+        <xr type="derivative"><ref target="entry:middangeard">middangeard</ref></xr>
+        <xr type="derivative"><ref target="entry:wingeard">wingeard</ref></xr>
       </entry>
     </body>
   </text>

@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-ford]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-ford]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> Bedanf~, Oxenaf~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-ford]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:Bedanford">Bedanf~</ref>, Oxenaf~</dictScrap>
+        <xr type="derivative"><ref target="entry:Bedanford">Bedanford</ref></xr>
       </entry>
     </body>
   </text>

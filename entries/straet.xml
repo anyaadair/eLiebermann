@@ -34,7 +34,10 @@
         <form type="lemma">
           <orth>stræt</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">stræt</hi> <hi rend="italic">Strasse, öffentlicher Weg; <ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>:</hi> on ~te <ref type="lawCode" target="law:VIAs">VI As</ref> 1,5; in via <ref type="lawCode" target="law:Quadr">Q</ref>. — <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> Eormens~, heres~, Icenildes~, Wætlingas~ [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>.</hi> strata regia]</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">stræt</hi> <hi rend="italic">Strasse, öffentlicher Weg; <ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>:</hi> on ~te <ref type="lawCode" target="law:VIAs">VI As</ref> 1,5; in via <ref type="lawCode" target="law:Quadr">Q</ref>. — <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:E-o-rmenstraet">Eormens~</ref>, <ref type="entry" target="entry:herestr-ae-t">heres~</ref>, Icenildes~, <ref type="entry" target="entry:Waetlingastraet">Wætlingas~</ref> [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>.</hi> strata regia]</dictScrap>
+        <xr type="derivative"><ref target="entry:E-o-rmenstraet">E[o]rmenstræt</ref></xr>
+        <xr type="derivative"><ref target="entry:herestr-ae-t">herestr[æ]t</ref></xr>
+        <xr type="derivative"><ref target="entry:Waetlingastraet">Wætlingastræt</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAs_1-5">VI As 1,5</ref></xr>
       </entry>
     </body>

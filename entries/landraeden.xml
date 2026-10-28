@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-landræden]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-landræden]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> ealdl~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-landræden]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:ealdlandraeden">ealdl~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:ealdlandraeden">ealdlandræden</ref></xr>
       </entry>
     </body>
   </text>

@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-box]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-box]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> sapbox</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-box]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:sapbox">sapbox</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:sapbox">sapbox</ref></xr>
       </entry>
     </body>
   </text>

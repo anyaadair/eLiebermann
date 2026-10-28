@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-geliegen]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-geliegen]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> ung~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-geliegen]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:ungel-ie-gen">ung~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:ungel-ie-gen">ungel[ie]gen</ref></xr>
       </entry>
     </body>
   </text>

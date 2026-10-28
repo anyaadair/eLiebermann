@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-stycce]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-stycce]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> hwils~, lands~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-stycce]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> hwils~, <ref type="entry" target="entry:landst-y-cce">lands~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:landst-y-cce">landst[y]cce</ref></xr>
       </entry>
     </body>
   </text>

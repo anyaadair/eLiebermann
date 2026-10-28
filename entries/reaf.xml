@@ -35,11 +35,13 @@
         <form type="lemma">
           <orth>reaf</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">reaf</hi> <hi rend="bold">1</hi>) <hi rend="italic">Kleidung, Gewand; <ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>:</hi> ~fe <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:El">El</ref> 11 <ref type="lawCode" target="law:H">H</ref>; hrægle <hi rend="italic"><ref type="abbreviation" target="gram:ubrigeHandschriften"><abbr>übr.</abbr></ref></hi> <hi rend="bold">2</hi>) [<hi rend="italic">Raub</hi>] <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> wælr~, wegr~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">reaf</hi> <hi rend="bold">1</hi>) <hi rend="italic">Kleidung, Gewand; <ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>:</hi> ~fe <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:El">El</ref> 11 <ref type="lawCode" target="law:H">H</ref>; hrægle <hi rend="italic"><ref type="abbreviation" target="gram:ubrigeHandschriften"><abbr>übr.</abbr></ref></hi> <hi rend="bold">2</hi>) [<hi rend="italic">Raub</hi>] <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:w-ae-lreaf">wælr~</ref>, <ref type="entry" target="entry:wegreaf">wegr~</ref></dictScrap>
         <dictScrap type="senses">
           <sense n="1"><hi rend="italic">Kleidung, Gewand; <ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>:</hi> ~fe <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:El">El</ref> 11 <ref type="lawCode" target="law:H">H</ref>; hrægle <hi rend="italic"><ref type="abbreviation" target="gram:ubrigeHandschriften"><abbr>übr.</abbr></ref></hi></sense>
-          <sense n="2">[<hi rend="italic">Raub</hi>] <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> wælr~, wegr~</sense>
+          <sense n="2">[<hi rend="italic">Raub</hi>] <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:w-ae-lreaf">wælr~</ref>, <ref type="entry" target="entry:wegreaf">wegr~</ref></sense>
         </dictScrap>
+        <xr type="derivative"><ref target="entry:w-ae-lreaf">w[æ]lreaf</ref></xr>
+        <xr type="derivative"><ref target="entry:wegreaf">wegreaf</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/25603">reáf</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_El-to-11">Af El 11</ref></xr>
       </entry>
