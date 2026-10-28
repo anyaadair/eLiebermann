@@ -3,7 +3,7 @@
 Made by `tools/see-also.py`. It is replaced each time the tool runs.
 
 ```
-Entries: 9091; changed: 94; links added: 177; wrong links removed: 0
+Entries: 9091; changed: 16; links added: 0; wrong links removed: 3
   siehe           found  5339, linked  4451
   sieheDort       found   584, linked   428
   sieheOben       found    62, linked     0

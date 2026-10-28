@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-10-28">Bosworth-Toller link corrected; “für” unlinked (part of the definition); Dictionary of Old English link added (Anya Adair).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -34,8 +35,9 @@
         <form type="lemma">
           <orth>æfesne</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">æfesne</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>, Abgabe <ref type="abbreviation" target="gram:fur"><abbr>für</abbr></ref> Schweinemast</hi> <ref type="lawCode" target="law:Ine">Ine</ref> 49,3; æbesne <ref type="lawCode" target="law:H">H</ref> <ref type="lawCode" target="law:B">B</ref></dictScrap>
-        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/37643">æfesne</ref></xr>
+        <dictScrap type="liebermann"><hi rend="bold">æfesne</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>, Abgabe für Schweinemast</hi> <ref type="lawCode" target="law:Ine">Ine</ref> 49,3; æbesne <ref type="lawCode" target="law:H">H</ref> <ref type="lawCode" target="law:B">B</ref></dictScrap>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/37642">æfesne</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E01660">æfesne</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_49-3">Ine 49,3</ref></xr>
       </entry>
     </body>

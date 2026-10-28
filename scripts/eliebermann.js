@@ -409,6 +409,8 @@
     const LATIN_VERSION = { VIAtr: { of: 'VI Atr', anchor: 'VIAtrLat', label: 'VI Atr Lat' } };
     // Parts of a code: Af El 49 (Introduction), Af Rb 41 (rubric).
     const QUALIFIERS = new Set(['El', 'Rb', 'retr']);
+    // Texts that the laws database keeps as one clause: cited by name alone ("Pax"), they go to it.
+    const SINGLE_CLAUSE = new Set(['Pax', 'Wal', 'Erc']);
     // A passage: 41, 2,1, 70,21a, Insc., Prol., or a line (Zeile) of a text
     // Liebermann numbers by lines, such as Nor grið Z. 6.
     const PASSAGE = String.raw`(?:\d+[a-z]{0,2}(?:,\d+[a-z]{0,2})*|Inscr?\.?|Prol? \d+[a-z]?(?:,\d+[a-z]?)*(?![\d,])|Pro[lt]?\.?|Epil\.?|Z\.\s?\d+)`;
@@ -506,9 +508,22 @@
                 add(code.label + (m[1] === ',' ? ',' : ' ') + n.replace(/^Prol?\.?\s*(?=\d)/, 'Pro '), s, s + n.length);
                 rest = rest.slice(m[0].length); at += m[0].length; code.fresh = false;
             } else if (code && code.fresh && !/^\s*$/.test(rest)) {
+                // "Pax", "Wal": a text with a single clause in the laws database, cited without a number
+                if (SINGLE_CLAUSE.has(code.anchor)) { add(code.label, at, at); code.fresh = false; }
                 code = null;   // a code with no passage after it, e.g. "VI As" in a sentence
             }
             for (;;) {
+                // "Rect 4,1c—3", "II Cn 71a—71,4": a range; its end is cited too, written out
+                // (4,1c—3 ends at 4,3; 71a—71,4 at 71,4)
+                let rg;
+                if (code && last && last.anchor === code.anchor && (rg = new RegExp(`^\\s*[—–]\\s*(${PASSAGE})(?![\\p{L}\\d])`, 'u').exec(rest))) {
+                    const n = rg[1].replace(/\.$/, ''), s = at + rg[0].length - rg[1].length;
+                    const first = last.text.slice(code.label.length).trim();
+                    const full = /,/.test(n) || !/,/.test(first) || !/^\d/.test(n) ? n : first.replace(/,[^,]*$/, '') + ',' + n;
+                    add(code.label + ' ' + full, s, s + n.length);
+                    rest = rest.slice(rg[0].length); at += rg[0].length;
+                    continue;
+                }
                 // "20,3²." (a superscript note number), "2 ff. 45", "14 f. 18 f.", "Abt 3. (73)"
                 while (code && last && (m = new RegExp(`^\\u0004?(?:\\s*ff?\\.)?(?:\\s*\\([^()]*\\))?\\s*\\.?(?:\\s+\\(?|\\s*\\()(${PASSAGE})(?![\\p{L}\\d])(?<!(?:^|[^\\d,(])\\d{1,2}[a-z]?(?=\\)))`, 'u').exec(rest))) {
                     if (/\($/.test(m[0].slice(0, m[0].length - m[1].length)) && !/^\s*(?:$|\)|[.;=,]|\u0001|ff?\.)/.test(rest.slice(m[0].length))) break;

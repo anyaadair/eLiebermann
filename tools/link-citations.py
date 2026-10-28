@@ -169,6 +169,9 @@ class Clauses:
         if rest is None:
             return 'citation not understood', None
         if not rest:
+            # "Pax": a text that the database keeps as a single clause
+            if len(files) == 1:
+                return 'the text\'s only clause', list(files.values())[0]
             return 'no clause number', None
         key = norm_clause(rest)
         if key in files:

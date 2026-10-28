@@ -145,6 +145,7 @@ SKIP = {
     ('cs', 'g-o-s'), ('gar', 'waru'),
     ('Abkurzungen', 'm-2'), ('Abkurzungen', 'm-3'),                # the Latin and French m, not the OE m̃
     ('thaet-2', 'i'),                                            # "se I [s. d.]": the numeral of se I (linked by hand), not the letter i
+    ('Aed', 'Aead'), ('Ed', 'Aead'), ('e-3', 'Aead'),                # "Ead-": the Ead- words, not the pointer Æad-
     ('thaet-2', 'for-2'),                                        # "be, for, to": the preposition, not for (denn)
 }
 
