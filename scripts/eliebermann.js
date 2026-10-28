@@ -435,6 +435,13 @@
         // A raised number straight after a citation ("ECf 20,3²") is the number of
         // Liebermann's footnote there: it is kept as the citation's note.
         const raised = [];
+        // A clause linked by hand where Liebermann's order defeats the rules ("23,5 Hn", consecutio):
+        // <ref type="clause" target="clause:Hn_23-5" n="Hn 23,5">23,5</ref>; n is the citation as listed
+        const byHand = [];
+        teiText = String(teiText || '').replace(/<ref type="clause" target="clause:([^"]+)" n="([^"]+)">([\s\S]*?)<\/ref>/g, (m, id, n, inner) => {
+            byHand.push({ text: unescape(n), anchor: id.split('_')[0] });
+            return inner.replace(/<[^>]*>/g, '').replace(/./g, ' ');
+        });
         const flat = String(teiText || '')
             .replace(/<hi rend="superscript">([\s\S]*?)<\/hi>/g, (m, t) => { raised.push(t.replace(/<[^>]*>/g, '').trim()); return '\u0004'; })
             .replace(/<(lb|pb)\b[^>]*\/>/g, ' ')
@@ -467,6 +474,7 @@
             }
             if (!seen.has(text)) { seen.add(text); newAt.set(start, out.push(c) - 1); }
         });
+        byHand.forEach(c => { if (!seen.has(c.text)) { seen.add(c.text); out.push(c); } });
         return out.filter(Boolean);
     }
 
