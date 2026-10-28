@@ -158,8 +158,7 @@ scripts:
     // database: to the clause where it has one ("clause:Ine_23-2"), otherwise
     // to the page of the whole code ("law:Ine"). They never open the
     // abbreviation popup; a code the database doesn't have yet is plain text.
-    const COLUMNS_FROM = 6;   // more links than this in a See also / Compare list: columns
-    const CITATION_COLUMNS_FROM = 2;   // law code citations: a group of 3 or more is spread into columns
+    const COLUMNS_FROM = 2;   // a list (See, See also, Compare, a group of law code citations) of 3 or more is spread into columns
     function citationList(e) {
         const items = e.xr.filter(x => x.getAttribute('type') === 'lawCode').map((x, n) => {
             const ref = [...x.children].find(c => c.localName === 'ref') || x;
@@ -197,7 +196,7 @@ scripts:
         });
         const out = groups.map(({ g, list }) =>
             `<div class="citation-block"><h3 class="citation-group">${esc(g)}</h3>`
-            + `<ul class="citations${list.length > CITATION_COLUMNS_FROM ? ' citations--cols' : ''}">${list.join('')}</ul></div>`);
+            + `<ul class="citations${list.length > COLUMNS_FROM ? ' citations--cols' : ''}">${list.join('')}</ul></div>`);
         return out.join('');
     }
 
