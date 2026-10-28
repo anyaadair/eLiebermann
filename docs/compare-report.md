@@ -3,8 +3,8 @@
 Made by `tools/see-also.py`. It is replaced each time the tool runs.
 
 ```
-Entries: 9091; changed: 0; links added: 0; wrong links removed: 0
-  vergleiche      found  1379, linked   858
+Entries: 9091; changed: 6; links added: 12; wrong links removed: 0
+  vergleiche      found  1391, linked   870
   not linked, no word found                                   208
   not linked, no entry with this headword (yet)               165
   not linked, part of a longer phrase, not a single headword    69
@@ -20,6 +20,7 @@ Entries: 9091; changed: 0; links added: 0; wrong links removed: 0
   linked, several entries have this headword, all linked        3
   linked, a grammatical headword, abbreviated                   3
   not linked, linked by a near spelling                         2
+  linked, checked by hand                                       1
   not linked, no entry with this headword                       1
 ```
 
@@ -285,6 +286,7 @@ Entries: 9091; changed: 0; links added: 0; wrong links removed: 0
 - **daeg**: vgl. daga
 - **de-2**: vgl. des
 - **decima**: vgl. freoborg
+- **decimalis**: vgl. -mus
 - **decimationarius**: vgl. -mus
 - **decimus**: vgl. vorvor
 - **decisio**: vgl. incisio
@@ -353,7 +355,6 @@ Entries: 9091; changed: 0; links added: 0; wrong links removed: 0
 - **ng**: vgl. cyngban
 - **niht**: vgl. trinoctium
 - **nox**: vgl. trinoctium
-- **numer**: vgl. nemnan
 - **numer**: vgl. -atio
 - **o**: vgl. -or
 - **ofer**: vgl. unten
@@ -662,6 +663,10 @@ Entries: 9091; changed: 0; links added: 0; wrong links removed: 0
 
 - **hw-ie-rfan**: vgl. hweorfan (hw[ie]rfan)
 - **ymbsp-r-ecan**: vgl. ymbsprécon (ymbsp[r]ecan)
+
+## Linked, checked by hand (1)
+
+- **numer**: vgl. nemnan (nemne)
 
 ## Not linked, no entry with this headword (1)
 

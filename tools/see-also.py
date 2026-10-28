@@ -103,6 +103,16 @@ FORMS = {
     ('Accusativ', 'Genetiv'): 'Genetivus', # "s. Genetiv, Dativ"
     ('ea', 'lafe'): 'laf',                 # "von ā: s. lafe": a form of laf
     ('ea', 'botettan'): 'boteatan',
+    ('ae-4', 'ablendan'): 'ablendad',      # the only form in the laws, ablendað
+    ('ae-4', 'lenden'): 'lendenbraede', ('ae-4', 'lenden-'): 'lendenbraede',
+    ('ae-4', 'nemnan'): 'nemne', ('numer', 'nemnan'): 'nemne',   # the verb, entered under its only form, nemne (op 3)
+    ('ae-4', 'utoðberstan'): 'utodberste',
+    ('ae-4', 'geeahtian'): 'geeahtige',
+    ('ae-4', 'freondleast'): 'freondleaste',
+    ('ae-4', 'sceapætere'): 'sc-ea-paetere',
+    ('ae-4', 'unliegne'): 'unl-ie-gen',
+    ('ae-4', 'healm'): 'healme', ('haelm', 'healm'): 'healme',   # no entry healm: the phrase to healme ⁊ to heorðe (editor's notes)
+    ('aefen', 'freolsæ~'): 'freolsaefenan',
 }
 
 # "habban (erhalten) s. d.": Liebermann's translation in brackets between the word and its s. d.
@@ -118,8 +128,13 @@ INLINE = []
 # the word after "unter" (under), where the form is entered. The list is read on past the bracket,
 # and the word after "unter" is linked instead of the form. UNTER is the italic "unter" in the
 # markup; UNTER_FORMS records, per entry, the forms so replaced, whose old links are taken off.
-UNTER = re.compile(r'<hi rend="italic">((?:[^<]|<(?!/?hi\b)[^>]*>){0,200}?\bunter)</hi>')
-UNTER_BRACKET = re.compile(r'\s*[(\[](?:[^()\[\]]*?\s)?unter\s+([^\s()\[\],;<]+)[)\]]|\s+unter\s+([^\s\[\],;<]+(?:\([^()\s]+\))?[^\s\[\],;<()]*)')
+UNTER = re.compile(r'<hi rend="italic">((?:[^<]|<(?!/?hi\b)[^>]*>){0,200}?\bunter)</hi>'
+                   # and, read through in the same way inside a list, "ofslæhð (s. ofslean)" and "eligere n. 2, …"
+                   r'|(?<=\()<hi rend="italic">(<ref type="abbreviation" target="gram:siehe"><abbr>s\.</abbr></ref>)</hi>(?=\s*[^\s()<]+\))'
+                   r'|<hi rend="italic">(<ref type="abbreviation" target="gram:Nummer"><abbr>n\.</abbr></ref>)</hi>(?=\s*(?:[IVX]+|\d+)[a-z]?\s*,)')
+UNTER_BRACKET = re.compile(r'\s*[(\[](?:[^()\[\]]*?\s)?(?:unter|s\.)\s+([^\s()\[\],;<]+)[)\]]|\s+unter\s+([^\s\[\],;<]+(?:\([^()\s]+\))?[^\s\[\],;<()]*)')
+# "eligere n. 2, electio": a pointer to a numbered meaning, after a word in a list
+SECTION_IN_LIST = re.compile(r',?\s+n\.\s*(?:[IVX]+|\d+)[a-z]?(?=\s*,)')
 UNTER_FORMS = collections.defaultdict(set)
 KIND = ['']    # the kind of cross-reference being read ("siehe", "sieheDort" …), for resolve()
 
@@ -379,6 +394,9 @@ def words(text, backwards=False):
                 break
             out.append(m.group(1))
             rest = rest[m.end():]
+            sm2 = SECTION_IN_LIST.match(rest)
+            if sm2:
+                rest = rest[sm2.end():]
             um = UNTER_BRACKET.match(rest)
             if um:
                 # "þas (unter þes)": the word after "unter" stands for the form
@@ -604,7 +622,7 @@ def targets(scrap, entry_id, index):
             if tail.startswith('</hi>'):
                 tail = tail[5:]
             # an italic "unter" inside the list ("þas (<hi>unter</hi> þes)") does not end it
-            tail = UNTER.sub(lambda m: re.sub(r'<[^>]+>', '', m.group(1)), tail)
+            tail = UNTER.sub(lambda m: re.sub(r'<[^>]+>', '', m.group(1) or m.group(2) or m.group(3)), tail)
             node = re.split(r'<', tail, maxsplit=1)[0]
             if not node[:1].isspace():
                 found.append((kind, '', [], 'nothing follows'))

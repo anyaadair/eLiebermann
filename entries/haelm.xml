@@ -25,6 +25,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-10-28">“healm” linked to the phrase entry to healme, with an editor’s note (Anya Adair).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -33,7 +34,9 @@
         <form type="lemma">
           <orth>hælm</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">hælm</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> healm</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">hælm</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:healme">healm</ref><ptr type="editorNote" target="#edn-1"/></dictScrap>
+        <note type="editorial" xml:id="edn-1">There is no entry <hi rend="italic">healm</hi>. The word occurs only in the phrase <hi rend="italic">to healme ⁊ to heorðe</hi> (Ine 61), entered as <ref target="entry:healme">to healme</ref>, and the link goes there.</note>
+        <xr type="see"><ref target="entry:healme">healme</ref></xr>
       </entry>
     </body>
   </text>
