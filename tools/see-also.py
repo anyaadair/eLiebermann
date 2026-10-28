@@ -88,6 +88,8 @@ TOKEN = re.compile(r"(?:" + BRACKET + r"|[^\s,;:|(){}\[\]*_«»⟦⟧<>=+/])+")
 # Words Liebermann cites in another form than their headword, checked by hand:
 # (entry, word as cited) -> the entry it means.
 FORMS = {
+    ('i', 'æ'): 'ae-4',                    # "dafür æ: s. d.": æ- (checked by Anya), not the other æ spelling entries
+    ('aedel', 'Æðelnoth'): 'Aethelnothus', # headword spelt with th (Æthelnothus); Liebermann refers to it with ð
     ('a-6', 'ricsare'): 'ricsares',        # headword is the plural
     ('a-6', 'mæstan'): 'maest',            # weak form of mæst (which points on to micel)
     ('a-6', 'tæcean'): 'taecan',           # a form listed under tæcan
@@ -163,6 +165,7 @@ SKIP = {
     ('Abkurzungen', 'm-2'), ('Abkurzungen', 'm-3'),                # the Latin and French m, not the OE m̃
     ('thaet-2', 'i'),                                            # "se I [s. d.]": the numeral of se I (linked by hand), not the letter i
     ('Aed', 'Aead'), ('Ed', 'Aead'), ('e-3', 'Aead'),                # "Ead-": the Ead- words, not the pointer Æad-
+    ('i', 'ae'), ('i', 'ae-5'), ('i', 'ae-6'), ('i', 'ae-7'),                 # "dafür æ": only æ- (ae-4), checked by Anya
     ('thaet-2', 'for-2'),                                        # "be, for, to": the preposition, not for (denn)
 }
 
