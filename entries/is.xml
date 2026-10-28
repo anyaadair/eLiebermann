@@ -31,6 +31,7 @@
       <change when="2026-10-17">Liebermann’s numbered sections joined into one entry, as in the print: the files is-2 (later sections) are now part of this entry.</change>
       <change when="2026-10-19">“op”, “pl” linked to the abbreviations list (printed bold italic, missed before).</change>
       <change when="2026-10-19">“msc” linked to the abbreviations list.</change>
+      <change when="2026-10-28">“Af Rb Pro” linked to the heading of the list of Alfred’s rubrics (identified by Anya Adair).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -72,7 +73,7 @@
         <xr type="lawCode"><ref target="clause:Had_1">Had 1</ref></xr>
         <xr type="lawCode"><ref target="clause:Abt_Inscr">Abt Insc</ref></xr>
         <xr type="lawCode"><ref target="clause:Hl_Inscr">Hl Insc</ref></xr>
-        <xr type="lawCode"><ref target="law:Af">Af Rb Pro</ref></xr>
+        <xr type="lawCode"><ref target="clause:Rubric-List_part-001">Af Rb Pro</ref></xr>
         <xr type="lawCode"><ref target="clause:EGu_Inscr">EGu Insc</ref></xr>
         <xr type="lawCode"><ref target="clause:EGu_9">EGu 9</ref></xr>
         <xr type="lawCode"><ref target="clause:Grith_21">Grið 21</ref></xr>
