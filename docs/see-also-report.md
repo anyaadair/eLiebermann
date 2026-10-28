@@ -3,17 +3,17 @@
 Made by `tools/see-also.py`. It is replaced each time the tool runs.
 
 ```
-Entries: 9091; changed: 70; links added: 542; wrong links removed: 0
-  siehe           found  5247, linked  4183
+Entries: 9091; changed: 0; links added: 0; wrong links removed: 0
+  siehe           found  5252, linked  4191
   sieheDort       found   584, linked   382
   sieheOben       found    62, linked     0
   sieheUnten      found    24, linked     0
   sieheNummer     found    12, linked     0
   sieheDN         found    31, linked     0
   sieheDortUnter  found     5, linked     0
-  not linked, no entry with this headword (yet)               809
+  not linked, no entry with this headword (yet)               808
   linked, ~ filled in from the headword                       404
-  not linked, no word found                                   176
+  not linked, no word found                                   174
   not linked, only the start or end of a word                 145
   linked, linked to the word without the hyphen               141
   linked, several entries have this headword, all linked       86
@@ -21,7 +21,7 @@ Entries: 9091; changed: 70; links added: 542; wrong links removed: 0
   linked, linked by a near spelling                            66
   not linked, no entry with this headword                      25
   not linked, linked by a near spelling                        19
-  linked, checked by hand                                       7
+  linked, checked by hand                                       8
   not linked, nothing follows                                   6
   not linked, this entry itself                                 3
   not linked, a number, not a headword                          3
@@ -29,7 +29,7 @@ Entries: 9091; changed: 70; links added: 542; wrong links removed: 0
   not linked, checked and found wrong                           1
 ```
 
-## Not linked, no entry with this headword (yet) (809)
+## Not linked, no entry with this headword (yet) (808)
 
 - **Abkurzungen**: s. sanct
 - **Accusativ**: s. Genetiv
@@ -201,7 +201,6 @@ Entries: 9091; changed: 70; links added: 542; wrong links removed: 0
 - **a-10**: s. ongiman
 - **a-10**: s. onwendan
 - **a-4**: s. aver
-- **a-6**: s. wealdes
 - **ad-2**: s. aver
 - **adc**: s. acc-
 - **adp**: s. app-
@@ -909,7 +908,7 @@ Entries: 9091; changed: 70; links added: 542; wrong links removed: 0
 - **camus**: s. chamus
 - **chascun**: s. cascun
 - **chiminus**: s. cheminus
-- **chyric**: s. cyric- / cyric
+- **chyric**: s. cyric / cyric-
 - **ciping**: s. cieping
 - **clips**: s. geclips
 - **commander**: s. comander
@@ -1248,7 +1247,7 @@ Entries: 9091; changed: 70; links added: 542; wrong links removed: 0
 - **yglise**: s. eglise
 - **ymcyme**: s. ymbcyme
 
-## Not linked, no word found (176)
+## Not linked, no word found (174)
 
 - **Abkurzungen**: s. 
 - **Accusativ**: s. 
@@ -1287,7 +1286,6 @@ Entries: 9091; changed: 70; links added: 542; wrong links removed: 0
 - **Wortstellung**: s. 
 - **Zahlwort**: s. 
 - **a-5**: s. 
-- **a-7**: s. 
 - **abiddan**: s. 
 - **aet**: s. 
 - **anaso**: s. 
@@ -1324,7 +1322,6 @@ Entries: 9091; changed: 70; links added: 542; wrong links removed: 0
 - **gemaene**: s. 
 - **gerefa**: s. 
 - **gesidcund**: s. 
-- **gi**: s. 
 - **gingra**: s. 
 - **habban**: s. 
 - **hamfare**: s. 
@@ -2007,7 +2004,7 @@ Entries: 9091; changed: 70; links added: 542; wrong links removed: 0
 - **tige**: s. tyge- ((-)tige-)
 - **yrf**: s. ierf- (yrf-)
 
-## Linked, checked by hand (7)
+## Linked, checked by hand (8)
 
 - **a-6**: s. ricsare (ricsares)
 - **a-6**: s. mæstan (maest)
@@ -2015,6 +2012,7 @@ Entries: 9091; changed: 70; links added: 542; wrong links removed: 0
 - **a-6**: s. healfmarc (healfmearc)
 - **a-6**: s. heall (healle)
 - **a-6**: s. healm (healme)
+- **a-6**: s. wealdes (gewealdes)
 - **a-6**: s. Westsaxones (Westseax-e)
 
 ## Not linked, nothing follows (6)

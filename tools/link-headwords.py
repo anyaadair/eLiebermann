@@ -100,6 +100,9 @@ def link(scrap, entry_id, index):
                 start = m.end()
                 if plain.startswith('.', start) and which == 'vgl':
                     start += 1
+                zb = sa.ZB.match(plain, start)
+                if zb:
+                    start = zb.end()
                 if plain.startswith('</hi>', start):
                     start += 5
                 # the list runs to the next tag, past an editor's note marker
