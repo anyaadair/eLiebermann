@@ -745,7 +745,8 @@
         if (!cuts.length) return { head: text, parts: [] };
         // A coarser kind never goes below finer ones only: Wi[e]lisc lists
         // meanings a)–d) and then I) adj, II) sbst, which are not inside d).
-        const rank = { upper: 0, roman: 1, number: 2, lower: 3 };
+        // I) and A) rank alike: Liebermann puts A) B) under IV) (þæt) and I) II) under A) (other entries).
+        const rank = { upper: 0, roman: 0, number: 2, lower: 3 };
         const stack = [];
         const parts = cuts.map((c, i) => {
             let depth = stack.indexOf(c.kind);
