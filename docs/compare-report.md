@@ -3,7 +3,7 @@
 Made by `tools/see-also.py`. It is replaced each time the tool runs.
 
 ```
-Entries: 9091; changed: 6; links added: 12; wrong links removed: 0
+Entries: 9090; changed: 0; links added: 0; wrong links removed: 0
   vergleiche      found  1391, linked   870
   not linked, no word found                                   208
   not linked, no entry with this headword (yet)               165

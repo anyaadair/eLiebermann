@@ -276,11 +276,17 @@ class Index:
             # Names that are not in the text of the laws are headed [Wiht]; a
             # reference to them has no brackets.
             plain = re.sub(r'^\[(.*)\]$', r'\1', hw)
-            self.exact[plain].append(id_)
-            self.folded[fold(plain)].append(id_)
-            for form in spellings(plain):
-                if form != plain and id_ not in self.variant[fold(form)]:
-                    self.variant[fold(form)].append(id_)
+            # one entry with two headwords ("æfwerdelsan, æfw[i]erdlan"): each
+            # headword is looked up on its own as well
+            heads = [plain] + ([h for h in re.split(r',\s*', plain) if h] if re.search(r'\w,\s+\w', plain) else [])
+            for head in heads:
+                if id_ not in self.exact[head]:
+                    self.exact[head].append(id_)
+                if id_ not in self.folded[fold(head)]:
+                    self.folded[fold(head)].append(id_)
+                for form in spellings(head):
+                    if form != head and id_ not in self.variant[fold(form)]:
+                        self.variant[fold(form)].append(id_)
 
     def gram_xrefs(self):
         """Grammatical headwords that Liebermann's abbreviations list also has, so that they

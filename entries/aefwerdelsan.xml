@@ -3,7 +3,7 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>æfwerdelsan</title>
+        <title>æfwerdelsan, æfw[i]erdlan</title>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -27,18 +27,21 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-13">Split: æfw[i]erdlan is now an entry of its own, as in the team transcription (A - boc.docx).</change>
+      <change when="2026-10-28">Joined again with æfw[i]erdlan: Liebermann prints the two as one entry, run on after “=” with no indent. The id aefw-i-erdlan now leads here.</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <entry xml:lang="ang">
         <form type="lemma">
-          <orth>æfwerdelsan</orth>
+          <orth>æfwerdelsan, æfw[i]erdlan</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">æfwerdelsan</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>, Schaden, Verlust</hi> <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:El">El</ref> 27; -wyr- <ref type="lawCode" target="law:Ld">Ld</ref>; æwyrdlan <ref type="lawCode" target="law:G">G</ref> <ref type="lawCode" target="law:H">H</ref> =</dictScrap>
-        <xr type="see"><ref target="entry:aefw-i-erdlan">æfw[i]erdlan</ref></xr>
+        <dictScrap type="liebermann"><hi rend="bold">æfwerdelsan</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>, Schaden, Verlust</hi> <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:El">El</ref> 27; -wyr- <ref type="lawCode" target="law:Ld">Ld</ref>; æwyrdlan <ref type="lawCode" target="law:G">G</ref> <ref type="lawCode" target="law:H">H</ref> = <hi rend="bold">æfw[i]erdlan</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>, Schaden, Verlust;</hi> æfwer~ <ref type="lawCode" target="law:Ine">Ine</ref> 40; æfwyrdlan <ref type="lawCode" target="law:H">H</ref>; æfwyrlan <ref type="lawCode" target="law:B">B</ref>; æwer~ <ref type="lawCode" target="law:Ine">Ine</ref> 42; æfwyrdlan <ref type="lawCode" target="law:H">H</ref> <ref type="lawCode" target="law:B">B</ref>; æwyrdlan <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:El">El</ref> 27 <ref type="lawCode" target="law:G">G</ref> <ref type="lawCode" target="law:H">H</ref> (æfwerdelsan <ref type="lawCode" target="law:E">E</ref>), damnum <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref></hi></dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/491">æf-werdelsa</ref></xr>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/492">æf-werdla</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_El-to-27">Af El 27</ref></xr>
+        <xr type="lawCode"><ref target="clause:Ine_40">Ine 40</ref></xr>
+        <xr type="lawCode"><ref target="clause:Ine_42">Ine 42</ref></xr>
       </entry>
     </body>
   </text>
