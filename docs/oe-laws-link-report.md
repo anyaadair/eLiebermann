@@ -5,20 +5,20 @@ Made by `tools/link-citations.py --letter ALL`. It is replaced each time the too
 ```
 All entries: 9091 (with a law code citation list: 6418)
 Citations in their lists: 31301
-  linked, exact             232
-  linked, subclause          10
-  linked, prologue            2
-  linked, already linked  29735
-  LINKED TO A CLAUSE:       29979  (96% of all citations; 99% of those with a clause number to a code in the database)
-  not linked, clause not found            217
+  linked, exact             119
+  linked, subclause           9
+  linked, correction          2
+  linked, already linked  29851
+  LINKED TO A CLAUSE:       29981  (96% of all citations; 99% of those with a clause number to a code in the database)
+  not linked, clause not found            215
   not linked, citation not understood       1
   not linked, code not in database       1104
-Entries changed: 1; entries whose whole list is linked: 5596
+Entries changed: 2; entries whose whole list is linked: 5598
 ```
 
 ## The code is in the database but no clause file has that number
 
-By code: Ath (34), Ger (33), Iudex (19), Af (16), IICn (13), VAs (10), Ine (8), IIAs (7), ICn (6), IIAtr (5), Grith (4), IudDeiV (3), IIIEm (3), IIEg (3), VIAs (3)
+By code: Ath (34), Ger (33), Iudex (19), Af (15), IICn (13), VAs (10), Ine (8), ICn (6), IIAs (6), IIAtr (5), Grith (4), IudDeiV (3), IIIEm (3), IIEg (3), VIAs (3)
 
 Citations (with how many times each occurs):
 
@@ -47,7 +47,6 @@ Citations (with how many times each occurs):
 - Af El 42,3
 - Af El Rb 49,6
 - Af Rb 13
-- Af Rb Pro
 - Duns 3,8
 - Duns Insc
 - Duns Rb 1
@@ -82,6 +81,7 @@ Citations (with how many times each occurs):
 - II As 34
 - II As 43,1
 - II As 44
+- II As 6,4
 
 ## The code has no clause files
 
