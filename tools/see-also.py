@@ -213,6 +213,7 @@ class Index:
         self.spelling = set()      # entries for a spelling (a letter or letters): <usg type="dom">spelling</usg>
         self.grammatical = set()   # Liebermann's grammatical entries (Declination, Genetivus …)
         self.text = {}             # each entry's text, plain
+        self.xref = {}             # an entry that only sends the reader to another (type="xref"): -> that entry's id
         for path in sorted(glob.glob(os.path.join(directory, '*.xml'))):
             text = read(path)
             m = ORTH.search(text)
@@ -226,6 +227,9 @@ class Index:
                 self.spelling.add(id_)
             if re.search(r'<entry [^>]*type="grammatical"', text):
                 self.grammatical.add(id_)
+            if re.search(r'<entry [^>]*type="xref"', text):
+                xm = re.search(r'<xr type="see"><ref target="entry:([^"]+)"', text)
+                self.xref[id_] = xm.group(1) if xm else ''
             self.text[id_] = html.unescape(re.sub(r'<[^>]+>', '', sm.group(2))) if sm else ''
             nm = SECTION.match(sm.group(2)) if sm else None
             # Liebermann's first italic word after the headword ("vb", "Recht"),
@@ -242,6 +246,8 @@ class Index:
             # an entry that is only a pointer elsewhere ("hwirfe s. hwier~")
             if sm:
                 body = re.sub(r'<hi rend="bold">.*?</hi>', '', sm.group(2), count=1)
+                # "Æad-, Æalf- s. …": a second headword after the first
+                body = re.sub(r'^(\s*,\s*<hi rend="bold">.*?</hi>)+', '', body)
                 body = html.unescape(re.sub(r'<[^>]+>', '', body)).strip(' ,')
                 if body.startswith('s.') and len(body) < 60:
                     self.pointer.add(id_)
@@ -318,6 +324,10 @@ class Index:
             starts = sorted((key(h), i) for i, h in self.hw.items()
                             if i not in self.pointer and key(h).startswith(pre) and self.lang.get(i) == lang
                             and re.sub(r'^[\[\(]+', '', h)[:1].isupper() == cap)
+            if starts and self_entry in self.pointer and len(starts) <= 12:
+                # an entry that only sends the reader on ("Æad-, Æalf- s. Ead-, Ælf-"): every
+                # word that begins so (Eadbald, Eadgar, Eadmund, Eadweard); the first in the text
+                return [i for _, i in starts], 'every word that begins so (a word ending in "-"), from an entry that only points'
             if starts:
                 return [starts[0][1]], 'the first word that begins so (a word ending in "-")'
         if not ids and re.fullmatch(r'[A-ZÄÖÜ][a-zäöü]{2,}\.?', word):
@@ -700,11 +710,18 @@ def strip_entry_links(scrap):
 
 
 def labels(final, index):
-    """The text of each link; where two would read the same, Liebermann's
-    first gloss is added: aveir (vb), aveir (sbst)."""
-    out = [index.label(i) for i in final]
-    for n, l in enumerate(out):
-        if out.count(l) > 1 or [index.label(i) for i in final].count(index.label(final[n])) > 1:
+    """The text of each link; where two would read the same, an entry that only sends
+    the reader on is named by where it sends him ("e for et"), and of the rest, if
+    more than one is left, each gets Liebermann's first gloss: aveir (vb), aveir (sbst)."""
+    base = [index.label(i) for i in final]
+    out = list(base)
+    for n, l in enumerate(base):
+        if base.count(l) < 2:
+            continue
+        same = [final[k] for k, x in enumerate(base) if x == l]
+        if final[n] in index.xref and index.xref[final[n]]:
+            out[n] = l + ' for ' + re.sub(r'^\[(.*)\]$', r'\1', index.hw.get(index.xref[final[n]], index.xref[final[n]]))
+        elif len([i for i in same if i not in index.xref]) > 1:
             g = index.gloss.get(final[n])
             out[n] = l + (' (' + g + ')' if g else '')
     return [esc(l) for l in out]

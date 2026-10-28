@@ -579,6 +579,15 @@
                 passages(text.replace(/^:/, ' '), pos);
                 continue;
             }
+            // "In Cn III 48": the Instituta Cnuti cited by its own book and chapter, not
+            // "In" after a passage of I or II Cnut (II Cn 15,1b In)
+            const book = anchor === 'InCn' && /^(\s+)(I{1,3})(\s+)(?=\d)/.exec(text);
+            if (book) {
+                code = { anchor, label: label + ' ' + book[2], fresh: true };
+                last = null;
+                passages(text.slice(book[0].length - 1), pos + book[0].length - 1);
+                continue;
+            }
             if (SIGLA.has(anchor)) {
                 // a footnote mark on the manuscript ("A³. 61,1") is read as a space
                 text = text.replace(/^\u0004/, ' ');

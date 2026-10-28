@@ -42,6 +42,8 @@ const entries = fs.readdirSync(dir)
             gloss: snippet,
             // a spelling, not a word (<usg type="dom">spelling</usg>): badged in the list
             spelling: /<usg type="dom">spelling<\/usg>/.test(xml),
+            // an entry that only sends the reader to another headword (type="xref"): badged too
+            xref: /<entry[^>]*type="xref"/.test(xml),
             text
         };
     })

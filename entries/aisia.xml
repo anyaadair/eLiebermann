@@ -19,6 +19,7 @@
     <encodingDesc>
       <listPrefixDef>
         <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
         <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
         <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
       </listPrefixDef>
@@ -35,6 +36,7 @@
           <orth>aisia</orth>
         </form>
         <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">aisia</hi>, commoditas <hi rend="italic">Nutzungsrecht an dem was nicht eigenes Land</hi> <ref type="lawCode" target="law:InCn">In Cn</ref> III 52 [<hi rend="italic"><ref type="abbreviation" target="gram:franzosisch"><abbr>fz.</abbr></ref></hi> aise, <hi rend="italic"><ref type="abbreviation" target="gram:english"><abbr>engl.</abbr></ref></hi> easement]</dictScrap>
+        <xr type="lawCode"><ref target="clause:InCn_III-52">In Cn III 52</ref></xr>
       </entry>
     </body>
   </text>
