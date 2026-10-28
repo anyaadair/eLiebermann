@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[wiðerwordian]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[wiðerwordian]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> gew-</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[wiðerwordian]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:gewaedu">gew-</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:gewaedu">-gewædu</ref></xr>
       </entry>
     </body>
   </text>

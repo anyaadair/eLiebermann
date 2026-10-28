@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>·N·</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">·N·</hi> = hine <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref> Abkürzung</hi></dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">·N·</hi> = hine <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref> <ref type="entry" target="entry:Abkurzungen">Abkürzung</ref></hi></dictScrap>
+        <xr type="see"><ref target="entry:Abkurzungen">Abkürzungen</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/23358">n</ref></xr>
       </entry>
     </body>

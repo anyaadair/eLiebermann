@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>gebig-</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">gebig-</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> gebycg-</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">gebig-</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:gebycgean">gebycg-</ref></dictScrap>
+        <xr type="see"><ref target="entry:gebycgean">gebycgean</ref></xr>
       </entry>
     </body>
   </text>

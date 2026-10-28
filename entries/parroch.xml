@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>parroch-</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">parroch-</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> paro-</dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">parroch-</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:parochia">paro-</ref></dictScrap>
+        <xr type="see"><ref target="entry:parochia">parochia</ref></xr>
       </entry>
     </body>
   </text>

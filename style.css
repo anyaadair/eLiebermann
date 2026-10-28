@@ -733,6 +733,9 @@ h2.result-code .code-abbr { min-width: 0; margin-left: 0.4rem; }
 .liebermann-text p.sense--case { margin-top: 1.1em; }
 /* A bold label after "|" (gn, dt, fm …) heading a new a), b) list: see paragraphs() in entry.html. */
 .liebermann-text p.sense--label { margin-top: 0.8em; }
+/* Under See (also): Liebermann's grammatical entries in a list of their own, after a small gap. */
+.see-grammatical { margin-top: 0.9em; }
+.see-section ul.see-grammatical { padding-left: 1.2em; }
 /* A gender in a paradigm (se: msc, fm, nt), after Liebermann's bold "|"; the plural after "‖". */
 .liebermann-text p.sense--gender { margin-top: 1.3em; }
 .liebermann-text p.sense--gender--big { margin-top: 1.8em; padding-top: 0.6em; border-top: 1px solid rgba(0,0,0,0.08); }

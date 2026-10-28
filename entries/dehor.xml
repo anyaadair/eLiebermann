@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>dehor-</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">dehor-</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> deor-</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">dehor-</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:deor">deor-</ref></dictScrap>
+        <xr type="see"><ref target="entry:deor">-deor</ref></xr>
       </entry>
     </body>
   </text>

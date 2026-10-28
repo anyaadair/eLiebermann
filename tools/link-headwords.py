@@ -85,7 +85,7 @@ def wrap_token(token, segments):
 
 def link(scrap, entry_id, index):
     """-> the text with the cross-referenced words linked, and the number of links."""
-    plain = sa.strip_entry_links(scrap)
+    plain = sa.unwrap_gram_xrefs(sa.strip_entry_links(scrap), index)
     # what each abbreviation's words matched: (kind, n) -> [(token, segments)]
     found = {}
     for which in ('s', 'vgl', 'der'):
@@ -96,7 +96,7 @@ def link(scrap, entry_id, index):
             found.setdefault((which, n), []).append((tok, segs, kind))
     mode('s')
     if not found:
-        return plain, 0
+        return sa.rewrap_gram_xrefs(plain, index), 0
     # Put the links in, abbreviation by abbreviation, from the end so that the
     # positions found earlier stay right.
     edits = []
@@ -160,7 +160,8 @@ def link(scrap, entry_id, index):
     for start, end, new in sorted(kept, reverse=True):
         count += new.count('<ref type="entry"')
         plain = plain[:start] + new + plain[end:]
-    return plain, count
+    # "s. Decl." not linked to its entry after all: its link to the abbreviations list again
+    return sa.rewrap_gram_xrefs(plain, index), count
 
 
 def main():

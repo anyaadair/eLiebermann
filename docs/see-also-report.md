@@ -3,39 +3,39 @@
 Made by `tools/see-also.py`. It is replaced each time the tool runs.
 
 ```
-Entries: 9091; changed: 24; links added: 96; wrong links removed: 8
-  siehe           found  5336, linked  4282
-  sieheDort       found   584, linked   388
+Entries: 9091; changed: 5; links added: 0; wrong links removed: 0
+  siehe           found  5339, linked  4451
+  sieheDort       found   584, linked   428
   sieheOben       found    62, linked     0
   sieheUnten      found    24, linked     0
   sieheNummer     found    12, linked     0
   sieheDN         found    31, linked     0
   sieheDortUnter  found     5, linked     0
-  not linked, no entry with this headword (yet)               804
+  not linked, no entry with this headword (yet)               631
   linked, ~ filled in from the headword                       408
-  not linked, no word found                                   169
+  linked, the first word that begins so (a word ending in "-")   157
+  not linked, no word found                                   156
   linked, linked to the word without the hyphen               142
   not linked, only the start or end of a word                 141
-  linked, several entries have this headword, all linked       83
-  linked, linked by a near spelling                            78
-  not linked, part of a longer phrase, not a single headword    76
-  not linked, no entry with this headword                      25
-  not linked, linked by a near spelling                        19
-  linked, checked by hand                                      13
+  linked, the spelling entry for these letters, from a spelling entry   120
+  not linked, part of a longer phrase, not a single headword    78
+  linked, linked by a near spelling                            67
+  linked, several entries have this headword, all linked       66
+  linked, checked by hand                                      15
+  not linked, no entry with this headword                      12
+  linked, a grammatical entry, linked to the abbreviations list in the text    11
+  not linked, linked by a near spelling                        10
+  linked, a grammatical headword, abbreviated                   7
   not linked, nothing follows                                   6
   not linked, this entry itself                                 3
   not linked, a number, not a headword                          3
   not linked, checked and found wrong                           2
   not linked, linked to the word without the hyphen             2
+  linked, the prefix and this entry's word                      1
 ```
 
-## Not linked, no entry with this headword (yet) (804)
+## Not linked, no entry with this headword (yet) (631)
 
-- **Aead**: s. Ælf-
-- **Aelfe**: s. Ælfhe-
-- **Aengl**: s. Engl-
-- **Alf**: s. Ælf-
-- **Alv**: s. Ælf-
 - **Antithese**: s. unhæle
 - **Antithese**: s. godcund-woruldcund
 - **Antithese**: s. dæde
@@ -47,20 +47,14 @@ Entries: 9091; changed: 24; links added: 96; wrong links removed: 8
 - **Consonanten**: s. cc
 - **Consonanten**: s. pp
 - **Consonanten**: s. þþ
-- **Dan**: s. Den-
 - **Declination**: s. greihounds
 - **Declination**: s. burgesmot
 - **Declination**: s. sciresmot
 - **Declination**: s. Schwund
 - **Declination**: s. Schwund
 - **Demonstrativum**: s. Relativ
-- **Ealf**: s. Ælf-
-- **Earningastraet**: s. Eormens-
 - **Ellipse**: s. wehe
 - **Ellipse**: s. wohl
-- **Elv**: s. Ælf-
-- **Erc**: s. Eorc-
-- **Ermin**: s. Eorm-
 - **Formelhafte**: s. gewiht
 - **Formeln**: s. Excommunicationes
 - **Fremdwort-Declination**: s. Iulius
@@ -103,7 +97,6 @@ Entries: 9091; changed: 24; links added: 96; wrong links removed: 8
 - **Gleitlaut**: s. deaðscyld
 - **Haedde**: s. Heddes
 - **Herefordensis**: s. Hertford
-- **Hykenild**: s. Ice-
 - **Imperativ**: s. opt
 - **Indefinitum**: s. æthwa
 - **Indefinitum**: s. nawuht
@@ -112,18 +105,12 @@ Entries: 9091; changed: 24; links added: 96; wrong links removed: 8
 - **Jaroslaw**: s. Malesclod
 - **Latein**: s. Wi
 - **Lewis**: s. Læwes
-- **London**: s. Lunden-
 - **Metathese**: s. gefer-
 - **Metathese**: s. geref-
-- **Mirc**: s. Mier-
 - **Modernisirung**: s. manige
 - **Modernisirung**: s. Genetiv
 - **Modernisirung**: s. Personale
-- **Montfichet**: s. Mun-
-- **N**: s. Abkürzung
 - **Nomen**: s. Genetiv
-- **Nomen**: s. Instrumental
-- **Nomen**: s. Plural
 - **Obliquus-2**: s. Genetivs
 - **Obliquus**: s. hominic
 - **Pars**: s. heorð
@@ -145,13 +132,11 @@ Entries: 9091; changed: 24; links added: 96; wrong links removed: 8
 - **Pluralis**: s. geþing
 - **Possessivprn**: s. Relativ
 - **Praefix**: s. in-
+- **Pronomen**: s. Demonstrativ
 - **Reflexives-Verb**: s. fürchten
 - **Relativum-generale**: s. ’
-- **Singular**: s. Plural
 - **Sirie**: s. Syrie
-- **Substantiv**: s. Fremdwort
 - **Substantiv**: s. Genetiv
-- **Substantiv**: s. Instrumental
 - **Sve**: s. Sue-
 - **Umlaut**: s. Denalagu
 - **Umlaut**: s. offiellan
@@ -197,12 +182,8 @@ Entries: 9091; changed: 24; links added: 96; wrong links removed: 8
 - **a-10**: s. onwendan
 - **a-4**: s. aver
 - **ad-2**: s. aver
-- **adc**: s. acc-
-- **adp**: s. app-
-- **adp**: s. acqu-
 - **ae-4**: s. ablendan
 - **ae-4**: s. lenden
-- **ae-4**: s. lenden-
 - **ae-4**: s. nemnan
 - **ae-4**: s. tosendan
 - **ae-4**: s. utoðberstan
@@ -215,7 +196,6 @@ Entries: 9091; changed: 24; links added: 96; wrong links removed: 8
 - **aedel**: s. Æðelnoth
 - **aeden**: s. hæ-
 - **aeg**: s. -æig-
-- **aeg**: s. ei
 - **aeht-2**: s. eaht
 - **aeht-a**: s. eaht
 - **ael-2**: s. el-
@@ -223,76 +203,45 @@ Entries: 9091; changed: 24; links added: 96; wrong links removed: 8
 - **aet-2**: s. æthleapan
 - **aet-2**: s. ætwindan
 - **agan**: s. Ld
-- **alleg**: s. adl-
-- **aly**: s. alie-
-- **amaensum**: s. aman-
-- **amyrr**: s. amierr-
 - **an-4**: s. -ain-
 - **an-5**: s. andswarian
 - **and-2**: s. andetla
 - **arat**: s. aver
-- **arcebisceop**: s. ærce-
 - **aun**: s. Grantebrigge
 - **aun**: s. granter
-- **awod**: s. aweod-
-- **awurp**: s. aweorp-
-- **awyr**: s. awier-
 - **b**: s. optare
 - **be-2**: s. weddod
 - **be-2**: s. betogenes
 - **be-2**: s. gebycgan
 - **bebycgan**: s. gebycgan
 - **beofad**: s. behofian
-- **beorm**: s. bearm-
 - **berht**: s. beorht
 - **bir-i-g**: s. byrg
-- **bir-i-g**: s. byrg-
-- **blauhornum**: s. blæsh-
-- **braec**: s. brec-
 - **bric**: s. brycg
-- **bric**: s. brycg-
 - **brord**: s. Wihtbord
 - **bycgan**: s. gebycgan
 - **byrd-3**: s. endebyrdnes
 - **byrig**: s. beri
-- **c-2**: s. cc
-- **c-3**: s. z
 - **c**: s. liccetere
 - **c**: s. ct
 - **c**: s. strudung
 - **cc**: s. formicel
 - **cc**: s. unric
 - **cc**: s. ric
-- **cc**: s. cch
 - **ceas**: s. ceosan
 - **cenegild**: s. cynegield
 - **cg**: s. hengenwitnung
-- **cg**: s. cc
-- **cg**: s. ccg
-- **cg**: s. cgc
 - **cg**: s. cgcg
-- **cg**: s. cgg
 - **cgg**: s. gebycgan
 - **ch**: s. hh
-- **cies**: s. cys-
-- **ciet**: s. cyt-
-- **ciet**: s. cief-
-- **ciet**: s. cieg-
-- **cirl**: s. cierl-
-- **clansung**: s. clæns-
-- **clen**: s. clæn-
-- **cleop**: s. clip-
 - **com**: s. -tire
 - **conclamatio**: s. Q
 - **cs**: s. -gs
 - **ct**: s. sehtan?
 - **cw**: s. qu-
 - **cwearterne**: s. carcerne
-- **cwyd-2**: s. cwid-
-- **cyrlisc**: s. cier-
 - **d-3**: s. deraisner
 - **d-6**: s. gehalre
-- **d-6**: s. heimel-
 - **d-6**: s. onlan
 - **d-6**: s. gildscipa
 - **d-6**: s. underþeodde
@@ -301,16 +250,9 @@ Entries: 9091; changed: 24; links added: 96; wrong links removed: 8
 - **d-6**: s. amyrdrede
 - **dd**: s. andetla
 - **deforc**: s. difforc-
-- **dehor**: s. deor-
 - **deoflic**: s. deofollic
-- **ding**: s. dyng-
-- **dirationare**: s. disr-
 - **disf**: s. diff-
-- **donc**: s. dun-
-- **dozime**: s. dudz-
 - **dux**: s. Apuliæ
-- **duzime**: s. dudz-
-- **dyr**: s. dier-
 - **e-3**: s. ast
 - **e-3**: s. widoban
 - **e-3**: s. gecyndelic
@@ -322,7 +264,6 @@ Entries: 9091; changed: 24; links added: 96; wrong links removed: 8
 - **e-3**: s. beweddad
 - **e-3**: s. biscep
 - **e-3**: s. motan
-- **e-3**: s. hran-
 - **e-3**: s. ælmesse
 - **e-3**: s. ærcebiscop
 - **e-3**: s. æmtig
@@ -334,7 +275,6 @@ Entries: 9091; changed: 24; links added: 96; wrong links removed: 8
 - **e-3**: s. teage
 - **e-3**: s. Leofwine
 - **e-3**: s. landfierd
-- **e-3**: s. twih-
 - **e**: s. sœinus
 - **e**: s. cascune
 - **e**: s. dreite
@@ -350,14 +290,8 @@ Entries: 9091; changed: 24; links added: 96; wrong links removed: 8
 - **e**: s. quanqu
 - **e**: s. quere
 - **e**: s. test
-- **ea**: s. lafe
-- **ea**: s. Aelf-
-- **ea**: s. botettan
 - **ea**: s. æa
-- **eadm**: s. eaðm-
-- **eala**: s. ealu-
 - **eat**: s. aver
-- **eg**: s. ei
 - **ei**: s. leidgrevei
 - **emtig**: s. æmtig
 - **en-3**: s. granter
@@ -365,50 +299,35 @@ Entries: 9091; changed: 24; links added: 96; wrong links removed: 8
 - **eo**: s. leadgeotan
 - **eo**: s. leafnesse
 - **eo**: s. tofeoht
-- **eo**: s. eu
-- **eo**: s. io
 - **eord**: s. he-
 - **er-2**: s. ær-
 - **erce**: s. ærce
 - **erist**: s. ær-
 - **excutere**: s. namium
 - **f**: s. -sma
-- **f**: s. flebo-
 - **federe**: s. fædere
-- **festre**: s. cildf-
 - **fong**: s. fang
 - **for-4**: s. formicel
 - **for-4**: s. foregenga
 - **for-4**: s. foristallum
 - **for**: s. forþonþe
 - **fore-5**: s. forþingian
-- **forgem**: s. forgiem-
-- **forgif**: s. forgief-
-- **forgif**: s. forgiel-
-- **forlet**: s. forlæt-
 - **forod**: s. unfored
 - **fors-2**: s. foris
-- **fors-2**: s. foris-
 - **freols**: s. freolsung
 - **frigild**: s. friðg-
-- **fyndan**: s. fin-
 - **g-3**: s. derai
 - **g**: s. -dnigontig
 - **g**: s. -dtwelftig
 - **g**: s. hunigafol
 - **g**: s. myrgð
 - **g**: s. ?gangan
-- **g**: s. þurhst-
 - **g**: s. wæpntac
 - **g**: s. leodbyggen
 - **g**: s. gealdor
 - **g**: s. cg
-- **g**: s. hg
 - **gaenga**: s. genga
 - **gaersierd**: s. -yrð
-- **galdor**: s. gealdor-
-- **gar**: s. war-
-- **ge-3**: s. gi
 - **ge-4**: s. gehwilc
 - **ge-4**: s. tobyrian
 - **ge-4**: s. byrian
@@ -421,48 +340,25 @@ Entries: 9091; changed: 24; links added: 96; wrong links removed: 8
 - **ge-4**: s. gebycgan
 - **geaehtie**: s. geeahtian
 - **geahtige**: s. geeahtian
-- **gebig**: s. gebycg-
 - **geburscipe**: s. vorvor
 - **gebyrian**: s. byrian
-- **geceorr**: s. gecier-
-- **gecwed**: s. gecwyd-
-- **geeald**: s. geheald-
-- **gehald**: s. geheald-
-- **gehynan**: s. gehie-
 - **gelanda**: s. gelonda
-- **geon-d-byrdan**: s. geandb-
-- **gered**: s. geræd-
 - **gerefa**: s. reve
 - **gescended**: s. sciendan
-- **gesom**: s. gesam-
-- **geswyc**: s. geswic-
 - **getan**: s. gietan
 - **geteme**: s. getieman
-- **getreowan**: s. getriew-
-- **getriow**: s. getreo-
-- **getriow**: s. getrie-
 - **getyhtlian**: s. getihtlian
-- **geweorcan**: s. gewyr-
-- **gewircan**: s. gewyr-
 - **gewundian**: s. wundian
-- **gewur**: s. geweor-
 - **gewyte**: s. -tnes
 - **gg**: s. ahredding
 - **gg**: s. þriþing-gerefa
-- **gg**: s. ng
 - **gie**: s. ængie
 - **gif**: s. Relativ
-- **gime**: s. gieme-
 - **gimeodumad**: s. gemedemian
-- **girn**: s. giern-
 - **giwidirworded**: s. gewiðer-
 - **glaencg**: s. gleng
 - **graf**: s. gravio
-- **greahund**: s. greih-
-- **grym**: s. grim-
 - **gu**: s. Norwigensis
-- **gyme**: s. gieme-
-- **gyrd**: s. giern-
 - **gyt-a**: s. gieta
 - **h-2**: s. habundare
 - **h-2**: s. Halleluia
@@ -477,7 +373,6 @@ Entries: 9091; changed: 24; links added: 96; wrong links removed: 8
 - **h**: s. Hrofeceastre
 - **h**: s. feo
 - **h**: s. leah
-- **h**: s. lah-
 - **h**: s. myrhð
 - **h**: s. betihtlian
 - **h**: s. withertihtla
@@ -490,28 +385,15 @@ Entries: 9091; changed: 24; links added: 96; wrong links removed: 8
 - **h**: s. morðwyrhta
 - **habban**: s. landhabbende
 - **hada**: s. gehada
-- **hald**: s. heald-
 - **halemot**: s. halimot
-- **halid**: s. haligd-
-- **hels**: s. heals-
-- **hemold**: s. heimel-
 - **heold**: s. heald
-- **herit**: s. erit-
-- **hernes**: s. hier-
-- **herteam**: s. heret-
 - **hg**: s. inborg
 - **hh**: s. Antiohhia
-- **hiled**: s. gehel-
-- **hir**: s. hier-
 - **hlistan**: s. hlystan
 - **hominic-a-edium**: s. latronicinium
 - **hs**: s. þerscan
-- **hs**: s. sh
-- **hs**: s. x
 - **hw**: s. h-
-- **hw**: s. wh
 - **hwa**: s. hwy
-- **hwyl**: s. hwil-
 - **hybride**: s. extoppare
 - **hybride**: s. forisfactoservus
 - **hybride**: s. landirectum
@@ -520,8 +402,6 @@ Entries: 9091; changed: 24; links added: 96; wrong links removed: 8
 - **hybride**: s. scyrehomo
 - **hybride**: s. werefactio
 - **hybride**: s. wereplegius
-- **hymbre**: s. Norðh-
-- **hyran**: s. hier-
 - **i**: s. landgemære
 - **i**: s. landgerihtu
 - **i**: s. heregeate
@@ -533,7 +413,6 @@ Entries: 9091; changed: 24; links added: 96; wrong links removed: 8
 - **i**: s. Syrie
 - **i**: s. þymele
 - **i**: s. þyrelian
-- **i**: s. ig
 - **ie-2**: s. midslæpan
 - **ig**: s. Epiphanige
 - **ig**: s. leorningcniht
@@ -544,19 +423,15 @@ Entries: 9091; changed: 24; links added: 96; wrong links removed: 8
 - **ing**: s. cenning
 - **ing**: s. fliemanfeorming
 - **inleg-i-are**: s. inlagian
-- **inp**: s. imp-
 - **io**: s. deorboren
 - **io**: s. hio
 - **io**: s. hiom
 - **io**: s. hiohiora
-- **io**: s. deor-
 - **ir**: s. yr
 - **iunior**: s. 'Unterbeamter'
 - **l-2**: s. cotsetl
 - **l-2**: s. motbell
 - **laege**: s. leah
-- **lag**: s. lah-
-- **landi**: s. landge-
 - **led**: s. læð
 - **lefed**: s. -liefed
 - **lestis**: s. læð
@@ -575,35 +450,27 @@ Entries: 9091; changed: 24; links added: 96; wrong links removed: 8
 - **lic**: s. laðlic
 - **lic**: s. mænelic
 - **lic**: s. untodælendlic
-- **lichfe**: s. læcef-
 - **licning**: s. ling
 - **m-3**: s. nb
 - **m-4**: s. wemming
 - **maca**: s. gemæcca
 - **mann**: s. Seite
 - **mb-2**: s. -nb-
-- **me-d-der**: s. medr-
 - **medle**: s. mæðel
-- **medm**: s. medem-
-- **mex**: s. meox-
 - **mide-2**: s. middan
-- **ministerium**: s. myst-
 - **mm-2**: s. somme
 - **n-3**: s. nb
-- **n**: s. Adj
 - **n**: s. cyricmangung
 - **n**: s. g-
 - **n**: s. cristene
 - **n**: s. orceapung
 - **n**: s. ceorliscne
-- **nc**: s. ng
 - **neat**: s. -tland
 - **neat**: s. -tman
 - **neat**: s. -triht
 - **ng**: s. þegen
 - **ng**: s. þegenscipe
 - **nn**: s. freonne
-- **nn**: s. ng
 - **o**: s. hafoð
 - **o**: s. oferhogdon
 - **o**: s. deoppor
@@ -616,7 +483,6 @@ Entries: 9091; changed: 24; links added: 96; wrong links removed: 8
 - **of-2**: s. ofdon
 - **ofer-2**: s. beginnende
 - **ofslea**: s. ofaslea
-- **oncecgan**: s. onse-
 - **orphanin**: s. orfenin
 - **p-3**: s. -b-
 - **p-3**: s. -ator
@@ -626,13 +492,11 @@ Entries: 9091; changed: 24; links added: 96; wrong links removed: 8
 - **p**: s. biswice
 - **p**: s. hleowe?
 - **p**: s. wæpn
-- **parroch**: s. paro-
 - **pitt**: s. pytt
 - **plegium**: s. synonym
 - **pondium**: s. Q
 - **praedicatives**: s. neodful
 - **praedicatives**: s. ranc
-- **pre**: s. prae-
 - **pur-2**: s. purpensed
 - **pur-2**: s. parsoldrad
 - **r-2**: s. quere
@@ -640,10 +504,6 @@ Entries: 9091; changed: 24; links added: 96; wrong links removed: 8
 - **r**: s. h-
 - **r**: s. -peca
 - **r**: s. behwo
-- **raest**: s. rest-
-- **raine**: s. hran-
-- **raine**: s. regn-
-- **ran**: s. samw-
 - **rode**: s. geþingod
 - **rr**: s. parrochia
 - **rr**: s. werlad
@@ -662,28 +522,19 @@ Entries: 9091; changed: 24; links added: 96; wrong links removed: 8
 - **s**: s. arfæstnes
 - **s**: s. onceignis
 - **s**: s. scyldignes
-- **sc**: s. hs
-- **sc**: s. ssh
 - **sceatt**: s. sawolscot
 - **scofl**: s. stumblum
 - **scs**: s. sanctus
 - **se**: s. Demonstr
 - **seint**: s. sanct
-- **seisi**: s. saisi-
 - **selesta**: s. selra
 - **servus**: s. wite-þeow
 - **servus**: s. wite-niedþeow
 - **siglas**: s. segl
 - **sl**: s. fædrencnosl
-- **slyfe**: s. slie-
-- **somhwelc**: s. sam-
-- **spaec**: s. spræ-
-- **spec**: s. spre-
 - **spraec**: s. gespræce
-- **spraece-nd**: s. sprec-
 - **ss-2**: s. miswisian
 - **ss-2**: s. þegnscipe
-- **ss-2**: s. st
 - **ssh**: s. þegnscipe
 - **st**: s. missendlic
 - **stryn**: s. streon
@@ -694,7 +545,6 @@ Entries: 9091; changed: 24; links added: 96; wrong links removed: 8
 - **sum-2**: s. willsum
 - **swa**: s. w.’
 - **swycn**: s. swicn
-- **syrw**: s. sier-
 - **t-2**: s. aput
 - **t**: s. þegnscipe
 - **t**: s. þryms
@@ -703,7 +553,6 @@ Entries: 9091; changed: 24; links added: 96; wrong links removed: 8
 - **t**: s. mild
 - **t**: s. wudubærnet
 - **t**: s. rih
-- **t**: s. Went-
 - **t**: s. Rodbert
 - **t**: s. hundrodest
 - **th-3**: s. -nearius
@@ -711,7 +560,6 @@ Entries: 9091; changed: 24; links added: 96; wrong links removed: 8
 - **th-4**: s. folkesmot
 - **th-4**: s. -agare
 - **th-4**: s. -ht
-- **th**: s. dh
 - **th**: s. fodder
 - **th**: s. foðer
 - **th**: s. Norðmandisc
@@ -724,22 +572,16 @@ Entries: 9091; changed: 24; links added: 96; wrong links removed: 8
 - **thiedan**: s. undergeþeoded
 - **thiof**: s. þiefe
 - **thwaere**: s. -rnes
-- **thyf**: s. þief-
 - **ti**: s. iuditium
-- **tihl**: s. tihtl-
 - **tio-nd**: s. teo
 - **to**: s. tobyrian
 - **to**: s. tosendan
 - **to**: s. tosendan
 - **trimes**: s. þryms
-- **tryw**: s. triew-
-- **tryw**: s. truw-
 - **tt**: s. hit
 - **tt**: s. hlutor
 - **tun**: s. -sman
-- **tungrav**: s. tunes-
 - **twelfhynde**: s. Note
-- **twy**: s. twi-
 - **u**: s. fulwiht
 - **u**: s. sawolsceatt
 - **u**: s. wulf
@@ -779,8 +621,6 @@ Entries: 9091; changed: 24; links added: 96; wrong links removed: 8
 - **unt**: s. aver
 - **uparaeran**: s. vorige
 - **urc**: s. -yrc-
-- **uthlah**: s. utl-
-- **utleapan**: s. uthl-
 - **v**: s. ceorfan
 - **v**: s. gafol-heorde
 - **v**: s. gafol-hwitel
@@ -792,15 +632,11 @@ Entries: 9091; changed: 24; links added: 96; wrong links removed: 8
 - **v**: s. -rseunessa
 - **verbum**: s. ‘unzerlegt’
 - **vetus**: s. necessarium
-- **vu**: s. wulf-
 - **w**: s. landhæfen
 - **w**: s. stodþeof
 - **w**: s. þingeman
-- **w**: s. wiern-
 - **w**: s. ungesawen
-- **ward**: s. weard-
 - **we-2**: s. -dsceame
-- **weal**: s. wæl-
 - **weard**: s. inweardlic
 - **wer-2**: s. -lis
 - **wer-2**: s. -litium
@@ -808,7 +644,6 @@ Entries: 9091; changed: 24; links added: 96; wrong links removed: 8
 - **wer-3**: s. -dþegn
 - **wer-3**: s. wyr
 - **widertihtlan**: s. bei
-- **wihte**: s. gew-
 - **woe**: s. yfelweorc
 - **woe**: s. wierdung
 - **worht-e**: s. unforworht
@@ -816,11 +651,8 @@ Entries: 9091; changed: 24; links added: 96; wrong links removed: 8
 - **wu**: s. uðwita
 - **wu**: s. u-
 - **wudwuto**: s. uðwito
-- **wuna**: s. woruldgew-
-- **wuna**: s. gew-
 - **wy**: s. gecwedræden
 - **wyca**: s. wicca
-- **wyld**: s. wild-
 - **wyrst**: s. wrist
 - **y-2**: s. ceapi
 - **y-2**: s. folcy
@@ -891,7 +723,7 @@ Entries: 9091; changed: 24; links added: 96; wrong links removed: 8
 - **beraeccean**: s. bereccean
 - **bernet**: s. bærnet / bærning
 - **bete**: s. twibete
-- **bewepn-i-an**: s. bewæpnian / bewæpnan
+- **bewepn-i-an**: s. bewæpnan / bewæpnian
 - **bewerdian**: s. beweardian
 - **bewyddod**: s. beweddod
 - **bicgan**: s. bycgan
@@ -959,7 +791,7 @@ Entries: 9091; changed: 24; links added: 96; wrong links removed: 8
 - **feohtan**: s. gefeohtan
 - **fera**: s. gefera
 - **fierran**: s. afiersian
-- **filst-an**: s. fylst / fylstan
+- **filst-an**: s. fylstan / fylst
 - **foreceap**: s. forceap
 - **foreiurare**: s. forisiurare
 - **forfang**: s. forefang
@@ -1098,7 +930,7 @@ Entries: 9091; changed: 24; links added: 96; wrong links removed: 8
 - **prunele**: s. purnele
 - **pup-p-licus**: s. publicus
 - **qualstow**: s. cwalstow
-- **ra-nhund**: s. hranhund / hrnhund
+- **ra-nhund**: s. hrnhund / hranhund
 - **rachater**: s. reachater
 - **raeda**: s. geræda
 - **raede**: s. anræde
@@ -1247,7 +1079,167 @@ Entries: 9091; changed: 24; links added: 96; wrong links removed: 8
 - **yglise**: s. eglise
 - **ymcyme**: s. ymbcyme
 
-## Not linked, no word found (169)
+## Linked, the first word that begins so (a word ending in "-") (157)
+
+- **Aead**: s. Ead-
+- **Aead**: s. Ælf-
+- **Aed**: s. Ead-
+- **Aelfe**: s. Ælfhe-
+- **Aengl**: s. Engl-
+- **Alf**: s. Ælf-
+- **Alv**: s. Ælf-
+- **Dan**: s. Den-
+- **Ealf**: s. Ælf-
+- **Earningastraet**: s. Eormens-
+- **Ed**: s. Ead-
+- **Elv**: s. Ælf-
+- **Erc**: s. Eorc-
+- **Ermin**: s. Eorm-
+- **Hykenild**: s. Ice-
+- **London**: s. Lunden-
+- **Mirc**: s. Mier-
+- **Montfichet**: s. Mun-
+- **adc**: s. acc-
+- **adp**: s. app-
+- **adp**: s. acqu-
+- **ae-4**: s. lenden-
+- **alleg**: s. adl-
+- **aly**: s. alie-
+- **amaensum**: s. aman-
+- **amyrr**: s. amierr-
+- **arcebisceop**: s. ærce-
+- **awod**: s. aweod-
+- **awurp**: s. aweorp-
+- **awyr**: s. awier-
+- **beorm**: s. bearm-
+- **bir-i-g**: s. byrg-
+- **blauhornum**: s. blæsh-
+- **braec**: s. brec-
+- **bric**: s. brycg-
+- **cherc**: s. ciric-
+- **cies**: s. cys-
+- **ciet**: s. cyt-
+- **ciet**: s. cief-
+- **ciet**: s. cieg-
+- **cine**: s. cyn-
+- **cirl**: s. cierl-
+- **clansung**: s. clæns-
+- **clen**: s. clæn-
+- **cleop**: s. clip-
+- **coun**: s. cun-
+- **cov**: s. cuv-
+- **cwyd-2**: s. cwid-
+- **cyp**: s. ciep-
+- **cyric**: s. ciric-
+- **cyrlisc**: s. cier-
+- **d-6**: s. heimel-
+- **dehor**: s. deor-
+- **ding**: s. dyng-
+- **dirationare**: s. disr-
+- **donc**: s. dun-
+- **dozime**: s. dudz-
+- **duzime**: s. dudz-
+- **dyr**: s. dier-
+- **e-3**: s. hran-
+- **e-3**: s. Ead-
+- **e-3**: s. twih-
+- **ea**: s. Aelf-
+- **eadm**: s. eaðm-
+- **eala**: s. ealu-
+- **f**: s. flebo-
+- **festre**: s. cildf-
+- **flem**: s. fliem-
+- **flym**: s. fliem-
+- **forgem**: s. forgiem-
+- **forgif**: s. forgief-
+- **forgif**: s. forgiel-
+- **forlet**: s. forlæt-
+- **fors-2**: s. foris-
+- **fyndan**: s. fin-
+- **g**: s. þurhst-
+- **galdor**: s. gealdor-
+- **gar**: s. war-
+- **gebig**: s. gebycg-
+- **geceorr**: s. gecier-
+- **gecwed**: s. gecwyd-
+- **geeald**: s. geheald-
+- **gehald**: s. geheald-
+- **gehynan**: s. gehie-
+- **geon-d-byrdan**: s. geandb-
+- **gered**: s. geræd-
+- **gesom**: s. gesam-
+- **geswyc**: s. geswic-
+- **getreowan**: s. getriew-
+- **getriow**: s. getreo-
+- **getriow**: s. getrie-
+- **geweorcan**: s. gewyr-
+- **gewircan**: s. gewyr-
+- **gewur**: s. geweor-
+- **gime**: s. gieme-
+- **girn**: s. giern-
+- **greahund**: s. greih-
+- **grym**: s. grim-
+- **gyme**: s. gieme-
+- **gyrd**: s. giern-
+- **h**: s. lah-
+- **hald**: s. heald-
+- **halid**: s. haligd-
+- **hels**: s. heals-
+- **hemold**: s. heimel-
+- **herit**: s. erit-
+- **hernes**: s. hier-
+- **herteam**: s. heret-
+- **hiled**: s. gehel-
+- **hir**: s. hier-
+- **hwyl**: s. hwil-
+- **hymbre**: s. Norðh-
+- **hyran**: s. hier-
+- **inp**: s. imp-
+- **io**: s. deor-
+- **kirch**: s. ciric-
+- **kirk**: s. ciric-
+- **lag**: s. lah-
+- **landi**: s. landge-
+- **lichfe**: s. læcef-
+- **me-d-der**: s. medr-
+- **medm**: s. medem-
+- **mex**: s. meox-
+- **ministerium**: s. myst-
+- **oncecgan**: s. onse-
+- **parroch**: s. paro-
+- **pre**: s. prae-
+- **raest**: s. rest-
+- **raine**: s. hran-
+- **raine**: s. regn-
+- **ran**: s. samw-
+- **seisi**: s. saisi-
+- **slyfe**: s. slie-
+- **somhwelc**: s. sam-
+- **spaec**: s. spræ-
+- **spec**: s. spre-
+- **spraece-nd**: s. sprec-
+- **syrw**: s. sier-
+- **t**: s. Went-
+- **thyf**: s. þief-
+- **tige**: s. tyge-
+- **tihl**: s. tihtl-
+- **tryw**: s. triew-
+- **tryw**: s. truw-
+- **tungrav**: s. tunes-
+- **twy**: s. twi-
+- **uthlah**: s. utl-
+- **utleapan**: s. uthl-
+- **vu**: s. wulf-
+- **w**: s. wiern-
+- **ward**: s. weard-
+- **weal**: s. wæl-
+- **wihte**: s. gew-
+- **wuna**: s. woruldgew-
+- **wuna**: s. gew-
+- **wyld**: s. wild-
+- **yrf**: s. ierf-
+
+## Not linked, no word found (156)
 
 - **Accusativ**: s. 
 - **Antithese**: s. 
@@ -1257,8 +1249,6 @@ Entries: 9091; changed: 24; links added: 96; wrong links removed: 8
 - **Declination**: s. 
 - **Declination**: s. 
 - **Declination**: s. 
-- **Declination**: s. 
-- **Demonstrativum**: s. 
 - **Denagild**: s. 
 - **Dene**: s. 
 - **Egypta**: s. 
@@ -1277,13 +1267,10 @@ Entries: 9091; changed: 24; links added: 96; wrong links removed: 8
 - **Nori**: s. 
 - **Optativ**: s. 
 - **Personalpronomen**: s. 
-- **Pronomen**: s. 
 - **Relativum**: s. 
 - **Romfeoh**: s. 
 - **Wintanceaster**: s. 
-- **Wortstellung**: s. 
 - **Zahlwort**: s. 
-- **a-5**: s. 
 - **aet**: s. 
 - **anaso**: s. 
 - **asente**: s. 
@@ -1293,11 +1280,8 @@ Entries: 9091; changed: 24; links added: 96; wrong links removed: 8
 - **consilium**: s. 
 - **cwencan**: s. 
 - **cyning**: s. 
-- **e-3**: s. 
-- **ea**: s. 
 - **ern**: s. 
 - **faere**: s. 
-- **fn**: s. 
 - **fon**: s. 
 - **for**: s. 
 - **for**: s. 
@@ -1330,7 +1314,6 @@ Entries: 9091; changed: 24; links added: 96; wrong links removed: 8
 - **hund**: s. 
 - **hundred**: s. 
 - **hundtwelftig**: s. 
-- **i**: s. 
 - **ig**: s. 
 - **implegiare**: s. 
 - **is**: s. 
@@ -1345,7 +1328,6 @@ Entries: 9091; changed: 24; links added: 96; wrong links removed: 8
 - **nanwiht**: s. 
 - **ne**: s. 
 - **noun**: s. 
-- **o**: s. 
 - **o**: s. 
 - **observare**: s. 
 - **od-3**: s. 
@@ -1371,7 +1353,6 @@ Entries: 9091; changed: 24; links added: 96; wrong links removed: 8
 - **status**: s. 
 - **sul-u-ng**: s. 
 - **t**: s. 
-- **t**: s. 
 - **teodung**: s. 
 - **teodung**: s. 
 - **teontig**: s. 
@@ -1386,9 +1367,7 @@ Entries: 9091; changed: 24; links added: 96; wrong links removed: 8
 - **thy**: s. 
 - **thy**: s. 
 - **thy**: s. 
-- **tn**: s. 
 - **to**: s. 
-- **tr**: s. 
 - **twelfhynde**: s. 
 - **twelfhynde**: s. 
 - **under**: s. 
@@ -1708,174 +1687,130 @@ Entries: 9091; changed: 24; links added: 96; wrong links removed: 8
 - **wreca**: s. ærendw~ (no entry for it)
 - **wyrhte**: s. ciesw~ (no entry for it)
 
-## Linked, several entries have this headword, all linked (83)
+## Linked, the spelling entry for these letters, from a spelling entry (120)
 
-- **Artikel**: s. an (an-2, an)
-- **Consonanten**: s. c (c-4, c)
-- **Consonanten**: s. m (m-2, m-3)
-- **Declination**: s. æht (aeht-2, aeht)
-- **Declination**: s. æht (aeht-2, aeht)
-- **Infinitif**: s. aveir (aveir-2, aveir)
-- **Instrumentalis**: s. for (for-2, for)
-- **Nomen**: s. Obliquus (Obliquus-2, Obliquus)
-- **Numerus-2**: s. aveir (aveir-2, aveir)
-- **Pluralis**: s. æht (aeht-2, aeht)
-- **Praefix**: s. a- (a-10, a-6, a-7)
-- **Praefix**: s. ge- (ge-3, ge-4)
-- **Relativum-generale**: s. beon (beon-2, beon)
-- **Substantiv**: s. Obliquus (Obliquus-2, Obliquus)
-- **Umlaut**: s. an (an-2, an)
-- **Wortschatz-variirt**: s. a- (a-10, a-6, a-7)
-- **Wortschatz-variirt**: s. ge- (ge-3, ge-4)
-- **Zahlwort-3**: s. a (a-3, a-4)
-- **Zahlwort**: s. á (a-2, a)
-- **Zahlwort**: s. ān (an-2, an)
-- **a-10**: s. ge- (ge-3, ge-4)
-- **a-9**: s. e (e-2, e)
-- **ae-2**: s. e (e-2, e)
-- **ae-7**: s. e (e-2, e)
-- **aew**: s. æ (ae-3, ae)
-- **ai-e-t**: s. aveir (aveir-2, aveir)
-- **al**: s. a (a-3, a-4)
-- **are**: s. an (an-2, an)
-- **as**: s. a (a-3, a-4)
-- **bid**: s. beon (beon-2, beon)
-- **bion**: s. beon (beon-2, beon)
-- **bist**: s. beon (beon-2, beon)
-- **byon**: s. beon (beon-2, beon)
-- **byst**: s. beon (beon-2, beon)
-- **c-3**: s. s (s-2, s)
-- **cc**: s. c (c-4, c)
-- **cg**: s. c (c-4, c)
-- **droit**: s. dreit (dreit-2, dreit)
-- **e-3**: s. æht (aeht-2, aeht)
-- **e-4**: s. æ (ae-3, ae)
-- **ea-2**: s. aveir (aveir-2, aveir)
-- **ea**: s. æ (ae-3, ae)
-- **ea**: s. e (e-2, e)
-- **eht**: s. æht (aeht-2, aeht)
-- **eht**: s. æht- (aeht-2, aeht)
-- **ei-2**: s. e (e-2, e)
-- **eit**: s. aveir (aveir-2, aveir)
-- **fald-a**: s. fald (fal-o-d, fald-a)
-- **fore**: s. for (for-2, for)
-- **fortham**: s. for (for-2, for)
-- **forthon**: s. for (for-2, for)
-- **forthythe**: s. for (for-2, for)
-- **g**: s. c (c-4, c)
-- **ge-4**: s. a- (a-10, a-6, a-7)
-- **h**: s. utlaga (utlaga-2, utlaga)
-- **h**: s. beon (beon-2, beon)
-- **h**: s. c (c-4, c)
-- **i-4**: s. e (e-2, e)
-- **i**: s. æ (ae-3, ae)
-- **ie-2**: s. e (e-2, e)
-- **io**: s. beon (beon-2, beon)
-- **io**: s. beon (beon-2, beon)
-- **iren**: s. isen (isen-2, isen)
-- **k**: s. c (c-4, c)
-- **n**: s. m (m-2, m-3)
-- **naes**: s. beon (beon-2, beon)
-- **o**: s. ān (an-2, an)
-- **o**: s. -a- (a-5, a-8)
-- **od**: s. aveir (aveir-2, aveir)
-- **on-3**: s. a- (a-10, a-6, a-7)
-- **oud**: s. aveir (aveir-2, aveir)
-- **r**: s. isen (isen-2, isen)
-- **sc**: s. c (c-4, c)
-- **spraec**: s. ge- (ge-3, ge-4)
-- **t-2**: s. Theophania (T-h-eophania-2, T-h-eophania)
-- **t-2**: s. th (th-2, th-4)
-- **the**: s. for (for-2, for)
-- **thon**: s. for (for-2, for)
-- **thy**: s. for (for-2, for)
-- **u**: s. e (e-2, e)
-- **wesan**: s. beon (beon-2, beon)
-- **y**: s. isen (isen-2, isen)
-- **ysen**: s. isen (isen-2, isen)
+- **a-8**: s. ea
+- **a-8**: s. o
+- **a-9**: s. e
+- **a**: s. aa
+- **ae-2**: s. e
+- **ae-7**: s. e
+- **ae-7**: s. ea
+- **aeg**: s. ei
+- **ain-2**: s. en
+- **an-6**: s. and
+- **b**: s. p
+- **c-2**: s. cc
+- **c-3**: s. ss
+- **c-3**: s. z
+- **c-4**: s. k
+- **cc**: s. c
+- **cc**: s. cch
+- **cc**: s. gc
+- **cg**: s. c
+- **cg**: s. cc
+- **cg**: s. ccg
+- **cg**: s. cgc
+- **cg**: s. cgg
+- **cg**: s. g
+- **cg**: s. gc
+- **ch**: s. c
+- **ch**: s. s
+- **d-6**: s. t
+- **d-6**: s. þ
+- **e-3**: s. ea
+- **e-3**: s. eo
+- **e-3**: s. i
+- **e-3**: s. u
+- **e-3**: s. y
+- **ea**: s. a
+- **ea**: s. æ
+- **ea**: s. e
+- **ea**: s. eo
+- **eg**: s. ei
+- **ei-2**: s. e
+- **ei-2**: s. i
+- **eo**: s. eu
+- **eo**: s. io
+- **eo**: s. o
+- **eo**: s. y
+- **f-2**: s. w
+- **g**: s. c
+- **g**: s. ch
+- **g**: s. gc
+- **g**: s. gg
+- **g**: s. gh
+- **g**: s. h
+- **g**: s. hg
+- **g**: s. hw
+- **g**: s. i
+- **g**: s. u
+- **ge-3**: s. gi
+- **ge-3**: s. i
+- **gg**: s. ng
+- **h**: s. c
+- **h**: s. ch
+- **h**: s. g
+- **h**: s. gh
+- **h**: s. þ
+- **hs**: s. gs
+- **hs**: s. sh
+- **hs**: s. x
+- **ht**: s. gt
+- **ht**: s. th
+- **hw**: s. wh
+- **i-4**: s. e
+- **i**: s. ig
+- **i**: s. y
+- **i**: s. æ
+- **ie-2**: s. e
+- **ie-2**: s. y
+- **io**: s. eo
+- **l-2**: s. ll
+- **m-2**: s. n
+- **n**: s. m
+- **n**: s. nn
+- **n**: s. r
+- **n**: s. w
+- **nc**: s. ng
+- **ng**: s. gg
+- **nn**: s. n
+- **nn**: s. ng
+- **o**: s. eo
+- **o**: s. u
+- **o**: s. oo
+- **p**: s. w
+- **r**: s. rr
+- **r**: s. h
+- **r**: s. n
+- **r**: s. p
+- **re**: s. er
+- **s-2**: s. c
+- **s-2**: s. ss
+- **s**: s. sc
+- **sc**: s. c
+- **sc**: s. hs
+- **sc**: s. s
+- **sc**: s. sch
+- **sc**: s. ss
+- **sc**: s. ssc
+- **sc**: s. ssh
+- **ss-2**: s. s
+- **ss-2**: s. st
+- **ss**: s. s
+- **t-2**: s. d
+- **t-2**: s. th
+- **t**: s. d
+- **t**: s. th
+- **t**: s. þ
+- **th**: s. dh
+- **u**: s. uu
+- **u**: s. e
+- **u**: s. i
+- **v-2**: s. b
+- **w**: s. y
 
-## Linked, linked by a near spelling (78)
-
-- **Aed**: s. Ead- (Æad-)
-- **Alliteration**: s. twyhynde (twihynde)
-- **Antithese**: s. scipfyrd (scipf[ie]rd)
-- **Ed**: s. Ead- (Æad-)
-- **Formelhafte**: s. Allitteration (Alliteration)
-- **Formelhafte**: s. getrywe (getriewe)
-- **Genetivus**: s. geswicean (geswican)
-- **Genetivus**: s. swicean (swican)
-- **Genetivus**: s. wyrcean (wyrcan)
-- **Pars**: s. flet (flett)
-- **Pluralis**: s. friðgegildum (friðgegyldum)
-- **Umlaut**: s. geornesse (geornnesse)
-- **Umlaut**: s. weorod (werod)
-- **Zahlwort**: s. sceat (sceatt)
-- **abutan**: s. onbuton ([on]butan)
-- **ae-4**: s. ettan (etan)
-- **ae-4**: s. feccean (feccan)
-- **ae-4**: s. geþencean (geþencan)
-- **ae-4**: s. þencean (þencan)
-- **ae-4**: s. gesecean (gesecan)
-- **byrden**: s. byrðen (byrðenn)
-- **ceap**: s. ceapgild (ceapgield)
-- **cherc**: s. ciric- (cyric(-))
-- **ciepemon**: s. ceapman (ceapmon)
-- **cine**: s. cyn (cynn)
-- **cine**: s. cyn- (cynn(-))
-- **coun**: s. cun- (con-)
-- **d-6**: s. byrðen (byrðenn)
-- **e-3**: s. mansliht (mannsli[e]ht)
-- **e-3**: s. Ead- (Æad-)
-- **e-3**: s. heonan (heonon)
-- **e-3**: s. ciepeman (ciepemon)
-- **ea**: s. wed (wæd)
-- **efen**: s. ealswa (eallswa)
-- **ei**: s. sceiðmann (sceiðman)
-- **eo**: s. wyrcean (wyrcan)
-- **eo**: s. weo (we)
-- **flem**: s. fliem- (flym(-))
-- **for-4**: s. forletan (forlætan)
-- **g**: s. heorðpening (heorðpæning)
-- **g**: s. þyncean (þyncan)
-- **gc**: s. þyncean (þyncan)
-- **gegod**: s. geoguð (geogoð)
-- **gewor-o-ht-e**: s. wy- (wie-)
-- **greve**: s. grefe (græfe)
-- **i-3**: s. tympan- (timpan-)
-- **i-rsebinn**: s. ryscbinn ([risc]binn)
-- **i**: s. drihtenbeag (dr[yhte]nbeag)
-- **ig**: s. heorðpening (heorðpæning)
-- **igilde**: s. ægielde (ægilde)
-- **io**: s. feoht (f[re]ht)
-- **io**: s. feoht (f[re]ht)
-- **kirch**: s. ciric- (cyric(-))
-- **kirk**: s. ciric- (cyric(-))
-- **lic**: s. woroldlic (woruldlic)
-- **maenio**: s. menigu (m[e]nigo)
-- **ng**: s. þyncean (þyncan)
-- **ngc**: s. þyncean (þyncan)
-- **ofer-2**: s. forhebbe (forhæbbe)
-- **re**: s. er (ær)
-- **s**: s. Wieliscmon (Wi[e]liscmonn)
-- **sch**: s. ciricsceat (ciricsceatt)
-- **scot**: s. ciricsceat (ciricsceatt)
-- **t**: s. sceat (sceatt)
-- **th-2**: s. jetter (jeter)
-- **tiende**: s. teoðingman (teoðingmann)
-- **un-3**: s. ontynan (untynan)
-- **un**: s. hum (hom(me))
-- **w**: s. weo (we)
-- **we-a**: s. wy- (wie-)
-- **weal-d**: s. -t (-tt(-))
-- **weo**: s. wi- (wie-)
-- **weo**: s. wy- (wie-)
-- **wi**: s. wy- (wie-)
-- **woe**: s. unawoerdedu (unawoerdedo)
-- **y**: s. sliehtswin (sl[ie]htswyn)
-- **y**: s. æryst ([æ]rist)
-- **y**: s. twelfhinde (twelfhynde)
-
-## Not linked, part of a longer phrase, not a single headword (76)
+## Not linked, part of a longer phrase, not a single headword (78)
 
 - **Activ**: s. Unpersönliche
 - **Alliteration**: s. legere
@@ -1921,6 +1856,7 @@ Entries: 9091; changed: 24; links added: 96; wrong links removed: 8
 - **c**: s. unter
 - **cyre**: s. cierr
 - **decima**: s. liberale
+- **e-3**: s. Gleitlaut
 - **faehde**: s. 1 2
 - **folc**: s. synonym
 - **foread**: s. As
@@ -1941,6 +1877,7 @@ Entries: 9091; changed: 24; links added: 96; wrong links removed: 8
 - **scll**: s. Casus
 - **ss-2**: s. of
 - **swa**: s. VI
+- **t**: s. spla
 - **th**: s. mæðlfrið Hloðære elþeodig
 - **th**: s. þam
 - **the**: s. fernere
@@ -1954,57 +1891,146 @@ Entries: 9091; changed: 24; links added: 96; wrong links removed: 8
 - **veneris**: s. viridis
 - **witan**: s. Fälle
 
-## Not linked, no entry with this headword (25)
+## Linked, linked by a near spelling (67)
 
-- **Consonanten**: s. dd (d-2, d-3, d-6)
-- **Consonanten**: s. mm (m-2, m-3)
-- **Consonanten**: s. tt (t, t-2)
-- **Relativum**: s. eal (eall, el)
-- **Vocalverdoppelung**: s. oo (ou, ou-2)
-- **a-8**: s. ea (e, e-2)
-- **ae-7**: s. ea (e, e-2)
-- **aelc**: s. eal (eall, el)
-- **cyp**: s. ciep (cip, cyp)
-- **e-3**: s. ea (e, e-2)
-- **e-3**: s. eo (e, e-2)
-- **e-3**: s. y (i, i-2, ie)
-- **ea**: s. eo (e, e-2)
-- **eo**: s. y (i, i-2, ie)
-- **ge-4**: s. i- (y-3, y-4)
-- **i**: s. y (i, i-2, ie)
-- **ie-2**: s. y (i, i-2, ie)
-- **ing**: s. -i (y, y-2)
-- **io**: s. eo (e, e-2)
-- **o**: s. eo (e, e-2)
-- **o**: s. oo (ou, ou-2)
-- **scheld**: s. scyld (sc-ie-ld, scild)
-- **t**: s. syn (sien-2, sin, sin-3, synn)
-- **t**: s. tt (t, t-2)
-- **w**: s. y (i, i-2, ie)
+- **Alliteration**: s. twyhynde (twihynde)
+- **Antithese**: s. scipfyrd (scipf[ie]rd)
+- **Formelhafte**: s. Allitteration (Alliteration)
+- **Formelhafte**: s. getrywe (getriewe)
+- **Genetivus**: s. geswicean (geswican)
+- **Genetivus**: s. swicean (swican)
+- **Genetivus**: s. wyrcean (wyrcan)
+- **Pars**: s. flet (flett)
+- **Pluralis**: s. friðgegildum (friðgegyldum)
+- **Umlaut**: s. geornesse (geornnesse)
+- **Umlaut**: s. weorod (werod)
+- **Zahlwort**: s. sceat (sceatt)
+- **abutan**: s. onbuton ([on]butan)
+- **ae-4**: s. ettan (etan)
+- **ae-4**: s. feccean (feccan)
+- **ae-4**: s. geþencean (geþencan)
+- **ae-4**: s. þencean (þencan)
+- **ae-4**: s. gesecean (gesecan)
+- **byrden**: s. byrðen (byrðenn)
+- **ceap**: s. ceapgild (ceapgield)
+- **ciepemon**: s. ceapman (ceapmon)
+- **cine**: s. cyn (cynn)
+- **d-6**: s. byrðen (byrðenn)
+- **e-3**: s. mansliht (mannsli[e]ht)
+- **e-3**: s. heonan (heonon)
+- **e-3**: s. ciepeman (ciepemon)
+- **ea**: s. wed (wæd)
+- **efen**: s. ealswa (eallswa)
+- **ei**: s. sceiðmann (sceiðman)
+- **eo**: s. wyrcean (wyrcan)
+- **eo**: s. weo (we)
+- **for-4**: s. forletan (forlætan)
+- **g**: s. heorðpening (heorðpæning)
+- **g**: s. þyncean (þyncan)
+- **gc**: s. þyncean (þyncan)
+- **gegod**: s. geoguð (geogoð)
+- **gewor-o-ht-e**: s. wy- (wie-)
+- **greve**: s. grefe (græfe)
+- **i-rsebinn**: s. ryscbinn ([risc]binn)
+- **i**: s. drihtenbeag (dr[yhte]nbeag)
+- **ig**: s. heorðpening (heorðpæning)
+- **igilde**: s. ægielde (ægilde)
+- **io**: s. feoht (f[re]ht)
+- **io**: s. feoht (f[re]ht)
+- **lic**: s. woroldlic (woruldlic)
+- **maenio**: s. menigu (m[e]nigo)
+- **ng**: s. þyncean (þyncan)
+- **ngc**: s. þyncean (þyncan)
+- **ofer-2**: s. forhebbe (forhæbbe)
+- **s**: s. Wieliscmon (Wi[e]liscmonn)
+- **sch**: s. ciricsceat (ciricsceatt)
+- **scot**: s. ciricsceat (ciricsceatt)
+- **t**: s. sceat (sceatt)
+- **th-2**: s. jetter (jeter)
+- **tiende**: s. teoðingman (teoðingmann)
+- **un-3**: s. ontynan (untynan)
+- **un**: s. hum (hom(me))
+- **w**: s. weo (we)
+- **we-a**: s. wy- (wie-)
+- **weal-d**: s. -t (-tt(-))
+- **weo**: s. wi- (wie-)
+- **weo**: s. wy- (wie-)
+- **wi**: s. wy- (wie-)
+- **woe**: s. unawoerdedu (unawoerdedo)
+- **y**: s. sliehtswin (sl[ie]htswyn)
+- **y**: s. æryst ([æ]rist)
+- **y**: s. twelfhinde (twelfhynde)
 
-## Not linked, linked by a near spelling (19)
+## Linked, several entries have this headword, all linked (66)
 
-- **Aead**: s. Ead- (Æad-)
-- **Consonanten**: s. ll (l)
-- **Pars**: s. healm (helm)
-- **ae-4**: s. healm (helm)
-- **conge**: s. cunge (congé)
-- **cov**: s. cuv- (cov-)
-- **cyp**: s. ciep- (cyp(-))
-- **cyric**: s. ciric (cyric(-))
-- **cyric**: s. ciric- (cyric(-))
-- **fiht**: s. feoht (f[re]ht)
-- **flym**: s. fliem (flym(-))
-- **flym**: s. fliem- (flym(-))
-- **fyht**: s. feoht (f[re]ht)
-- **haelm**: s. healm (helm)
-- **l-2**: s. ll (l)
-- **maector**: s. mæte (mete)
-- **sc**: s. ssc (sc)
-- **tige**: s. tyge- ((-)tige-)
-- **yrf**: s. ierf- (yrf-)
+- **Artikel**: s. an (an-2, an)
+- **Consonanten**: s. c (c-4, c)
+- **Consonanten**: s. m (m-2, m-3)
+- **Declination**: s. æht (aeht-2, aeht)
+- **Declination**: s. æht (aeht-2, aeht)
+- **Infinitif**: s. aveir (aveir-2, aveir)
+- **Instrumentalis**: s. for (for-2, for)
+- **Nomen**: s. Obliquus (Obliquus-2, Obliquus)
+- **Numerus-2**: s. aveir (aveir-2, aveir)
+- **Pluralis**: s. æht (aeht-2, aeht)
+- **Praefix**: s. a- (a-10, a-6, a-7)
+- **Praefix**: s. ge- (ge-3, ge-4)
+- **Relativum-generale**: s. beon (beon-2, beon)
+- **Substantiv**: s. Obliquus (Obliquus-2, Obliquus)
+- **Umlaut**: s. an (an-2, an)
+- **Wortschatz-variirt**: s. a- (a-10, a-6, a-7)
+- **Wortschatz-variirt**: s. ge- (ge-3, ge-4)
+- **Zahlwort-3**: s. a (a-3, a-4)
+- **Zahlwort**: s. á (a-2, a)
+- **Zahlwort**: s. ān (an-2, an)
+- **a-10**: s. ge- (ge-3, ge-4)
+- **aew**: s. æ (ae-3, ae)
+- **ai-e-t**: s. aveir (aveir-2, aveir)
+- **al**: s. a (a-3, a-4)
+- **are**: s. an (an-2, an)
+- **as**: s. a (a-3, a-4)
+- **bid**: s. beon (beon-2, beon)
+- **bion**: s. beon (beon-2, beon)
+- **bist**: s. beon (beon-2, beon)
+- **byon**: s. beon (beon-2, beon)
+- **byst**: s. beon (beon-2, beon)
+- **c-3**: s. s (s-2, s)
+- **droit**: s. dreit (dreit-2, dreit)
+- **e-3**: s. æht (aeht-2, aeht)
+- **e-4**: s. æ (ae-3, ae)
+- **ea-2**: s. aveir (aveir-2, aveir)
+- **eht**: s. æht (aeht-2, aeht)
+- **eht**: s. æht- (aeht-2, aeht)
+- **eit**: s. aveir (aveir-2, aveir)
+- **fald-a**: s. fald (fal-o-d, fald-a)
+- **fore**: s. for (for-2, for)
+- **fortham**: s. for (for-2, for)
+- **forthon**: s. for (for-2, for)
+- **forthythe**: s. for (for-2, for)
+- **ge-4**: s. a- (a-10, a-6, a-7)
+- **h**: s. utlaga (utlaga-2, utlaga)
+- **h**: s. beon (beon-2, beon)
+- **io**: s. beon (beon-2, beon)
+- **io**: s. beon (beon-2, beon)
+- **iren**: s. isen (isen-2, isen)
+- **k**: s. c (c-4, c)
+- **naes**: s. beon (beon-2, beon)
+- **o**: s. ān (an-2, an)
+- **o**: s. -a- (a-5, a-8)
+- **od**: s. aveir (aveir-2, aveir)
+- **on-3**: s. a- (a-10, a-6, a-7)
+- **oud**: s. aveir (aveir-2, aveir)
+- **r**: s. isen (isen-2, isen)
+- **spraec**: s. ge- (ge-3, ge-4)
+- **t-2**: s. Theophania (T-h-eophania-2, T-h-eophania)
+- **the**: s. for (for-2, for)
+- **thon**: s. for (for-2, for)
+- **thy**: s. for (for-2, for)
+- **wesan**: s. beon (beon-2, beon)
+- **y**: s. isen (isen-2, isen)
+- **ysen**: s. isen (isen-2, isen)
 
-## Linked, checked by hand (13)
+## Linked, checked by hand (15)
 
 - **Abkurzungen**: s. m (m)
 - **Abkurzungen**: s. sanct (sancte)
@@ -2017,8 +2043,62 @@ Entries: 9091; changed: 24; links added: 96; wrong links removed: 8
 - **a-6**: s. healm (healme)
 - **a-6**: s. wealdes (gewealdes)
 - **a-6**: s. Westsaxones (Westseax-e)
+- **ea**: s. lafe (laf)
+- **ea**: s. botettan (boteatan)
 - **thaet-2**: s. for (for)
 - **thaet-2**: s. for (for)
+
+## Not linked, no entry with this headword (12)
+
+- **Consonanten**: s. dd (d-2, d-3, d-6)
+- **Consonanten**: s. mm (m-2, m-3)
+- **Consonanten**: s. tt (t, t-2)
+- **Relativum**: s. eal (eall, el)
+- **Vocalverdoppelung**: s. oo (ou, ou-2)
+- **aelc**: s. eal (eall, el)
+- **cyp**: s. ciep (cip, cyp)
+- **ge-4**: s. i- (y-3, y-4)
+- **ing**: s. -i (y, y-2)
+- **scheld**: s. scyld (sc-ie-ld, scild)
+- **t**: s. syn (sien-2, sin, sin-3, synn)
+- **t**: s. tt (t, t-2)
+
+## Linked, a grammatical entry, linked to the abbreviations list in the text (11)
+
+- **Declination**: s. Gleitlaut
+- **Demonstrativum**: s. Artikel
+- **Pronomen**: s. Artikel
+- **Wortstellung**: s. Artikel
+- **a-5**: s. Gleitlaut
+- **ea**: s. Decl
+- **fn**: s. Gleitlaut
+- **i**: s. Gleitlaut
+- **o**: s. Gleitlaut
+- **tn**: s. Gleitlaut
+- **tr**: s. Gleitlaut
+
+## Not linked, linked by a near spelling (10)
+
+- **Consonanten**: s. ll (l)
+- **Pars**: s. healm (helm)
+- **ae-4**: s. healm (helm)
+- **conge**: s. cunge (congé)
+- **cyric**: s. ciric (cyric(-))
+- **fiht**: s. feoht (f[re]ht)
+- **flym**: s. fliem (flym(-))
+- **fyht**: s. feoht (f[re]ht)
+- **haelm**: s. healm (helm)
+- **maector**: s. mæte (mete)
+
+## Linked, a grammatical headword, abbreviated (7)
+
+- **N**: s. Abkürzung (Abkürzungen)
+- **Nomen**: s. Instrumental (Instrumentalis)
+- **Nomen**: s. Plural (Pluralis)
+- **Singular**: s. Plural (Pluralis)
+- **Substantiv**: s. Fremdwort (Fremdwort-Declination)
+- **Substantiv**: s. Instrumental (Instrumentalis)
+- **n**: s. Adj (Adjectiv)
 
 ## Not linked, nothing follows (6)
 

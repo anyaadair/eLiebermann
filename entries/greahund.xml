@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>greahund</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">greahund</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> greih-</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">greahund</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:greihund">greih-</ref></dictScrap>
+        <xr type="see"><ref target="entry:greihund">greihund</ref></xr>
       </entry>
     </body>
   </text>

@@ -3,10 +3,10 @@
 Made by `tools/see-also.py`. It is replaced each time the tool runs.
 
 ```
-Entries: 9091; changed: 18; links added: 18; wrong links removed: 0
-  vergleiche      found  1379, linked   843
-  not linked, no word found                                   212
-  not linked, no entry with this headword (yet)               176
+Entries: 9091; changed: 0; links added: 0; wrong links removed: 0
+  vergleiche      found  1379, linked   858
+  not linked, no word found                                   208
+  not linked, no entry with this headword (yet)               165
   not linked, part of a longer phrase, not a single headword    69
   linked, ~ filled in from the headword                        33
   not linked, only the start or end of a word                  27
@@ -15,19 +15,20 @@ Entries: 9091; changed: 18; links added: 18; wrong links removed: 0
   linked, linked by a near spelling                            16
   not linked, a single letter, not a headword                   8
   linked, linked to the word without the hyphen                 8
+  linked, the first word that begins so (a word ending in "-")     8
+  linked, a grammatical entry, linked to the abbreviations list in the text     4
   linked, several entries have this headword, all linked        3
+  linked, a grammatical headword, abbreviated                   3
   not linked, linked by a near spelling                         2
   not linked, no entry with this headword                       1
 ```
 
-## Not linked, no word found (212)
+## Not linked, no word found (208)
 
 - **Aegyptus**: vgl. 
 - **Artikel-2**: vgl. 
 - **Conjugation**: vgl. 
 - **Conjugation**: vgl. 
-- **Declination**: vgl. 
-- **Declination**: vgl. 
 - **Declination**: vgl. 
 - **Ellipse**: vgl. 
 - **Engle**: vgl. 
@@ -40,12 +41,10 @@ Entries: 9091; changed: 18; links added: 18; wrong links removed: 0
 - **Nordleoda**: vgl. 
 - **Particip**: vgl. 
 - **Pater-noster**: vgl. 
-- **Praeposition**: vgl. 
 - **Toteneis**: vgl. 
 - **Waerham**: vgl. 
 - **Wealh**: vgl. 
 - **Wilhelm**: vgl. 
-- **Wortbildung**: vgl. 
 - **Wortschatz-variirt**: vgl. 
 - **Zahlwort**: vgl. 
 - **aet-2**: vgl. 
@@ -235,7 +234,7 @@ Entries: 9091; changed: 18; links added: 18; wrong links removed: 0
 - **wulfesheved**: vgl. 
 - **ymb**: vgl. 
 
-## Not linked, no entry with this headword (yet) (176)
+## Not linked, no entry with this headword (yet) (165)
 
 - **Adjectiv**: vgl. Genetiv
 - **Cantuaria**: vgl. Cantwarabyrig
@@ -244,8 +243,6 @@ Entries: 9091; changed: 18; links added: 18; wrong links removed: 0
 - **Comparativ**: vgl. ähnlich
 - **Conjugation**: vgl. motan
 - **Cordubiensis**: vgl. Cornubia?
-- **Dativ**: vgl. Instr
-- **Dativ**: vgl. Instrumental
 - **Declination**: vgl. Neutra
 - **Dene**: vgl. Norðengle
 - **Engle**: vgl. Angolwitan
@@ -272,7 +269,6 @@ Entries: 9091; changed: 18; links added: 18; wrong links removed: 0
 - **awoh**: vgl. älter
 - **be-2**: vgl. befiod
 - **be-2**: vgl. benæmed
-- **biernan**: vgl. biorn-
 - **bocland**: vgl. haereditas
 - **bot**: vgl. witu
 - **botl**: vgl. bold
@@ -298,7 +294,6 @@ Entries: 9091; changed: 18; links added: 18; wrong links removed: 0
 - **essartum**: vgl. Turner
 - **exo-p-tare**: vgl. præcupio
 - **faehde**: vgl. werefactio
-- **feorcuman**: vgl. feorranc-
 - **flaesc**: vgl. geflæscnes
 - **fod-or**: vgl. fodder
 - **folcfry**: vgl. langobard
@@ -318,7 +313,6 @@ Entries: 9091; changed: 18; links added: 18; wrong links removed: 0
 - **gewitnes**: vgl. testes
 - **gu**: vgl. gw
 - **gw**: vgl. gu
-- **habundantia**: vgl. superhab-
 - **ham**: vgl. Aldhelmglosse
 - **hamfaest**: vgl. hamsittend
 - **hand**: vgl. Salomo
@@ -343,24 +337,19 @@ Entries: 9091; changed: 18; links added: 18; wrong links removed: 0
 - **lex**: vgl. geriht
 - **lex**: vgl. rihto
 - **m-e-nigo**: vgl. manung
-- **m-i-xend-y-nge**: vgl. meox-
 - **macholum**: vgl. machalum
-- **maere**: vgl. Urk
 - **mannire**: vgl. submonere
 - **manswican**: vgl. mansceaða
 - **manswican**: vgl. maansceaða
 - **manutenere**: vgl. maintenir
-- **me-o-xscofl**: vgl. mixen-
 - **midd**: vgl. middesumor
 - **middanwinter**: vgl. Natalis
 - **mortificator**: vgl. latro-homicida
 - **mustrer**: vgl. -abilis
 - **mynster**: vgl. ciricgriðbrece
 - **n-2**: vgl. nb
-- **n-ie-dmage**: vgl. neahm-
 - **natale**: vgl. -licium
 - **natale**: vgl. nativitas
-- **neahmagon**: vgl. niedm-
 - **ng**: vgl. cyngban
 - **niht**: vgl. trinoctium
 - **nox**: vgl. trinoctium
@@ -389,7 +378,6 @@ Entries: 9091; changed: 18; links added: 18; wrong links removed: 0
 - **theowman**: vgl. Ld
 - **thes**: vgl. Demonstrativ
 - **thiefe**: vgl. þeofe
-- **thingian**: vgl. geþ-
 - **thuma**: vgl. þymele
 - **thurfan**: vgl. þearfiend
 - **timplean**: vgl. tum
@@ -640,11 +628,35 @@ Entries: 9091; changed: 18; links added: 18; wrong links removed: 0
 - **profiteri**: vgl. -sor
 - **undergetheodedra**: vgl. underþeodd-
 
+## Linked, the first word that begins so (a word ending in "-") (8)
+
+- **biernan**: vgl. biorn-
+- **feorcuman**: vgl. feorranc-
+- **habundantia**: vgl. superhab-
+- **m-i-xend-y-nge**: vgl. meox-
+- **me-o-xscofl**: vgl. mixen-
+- **n-ie-dmage**: vgl. neahm-
+- **neahmagon**: vgl. niedm-
+- **thingian**: vgl. geþ-
+
+## Linked, a grammatical entry, linked to the abbreviations list in the text (4)
+
+- **Declination**: vgl. Fremdwörter-Decl
+- **Declination**: vgl. Gleitlaut
+- **Praeposition**: vgl. Praefix
+- **Wortbildung**: vgl. Gleitlaut
+
 ## Linked, several entries have this headword, all linked (3)
 
 - **Conjugation**: vgl. beon (beon-2, beon)
 - **Verbum**: vgl. beon (beon-2, beon)
 - **thaer**: vgl. beon (beon-2, beon)
+
+## Linked, a grammatical headword, abbreviated (3)
+
+- **Dativ**: vgl. Instr (Instrumentalis)
+- **Dativ**: vgl. Instrumental (Instrumentalis)
+- **maere**: vgl. Urk (Urkundenstil)
 
 ## Not linked, linked by a near spelling (2)
 

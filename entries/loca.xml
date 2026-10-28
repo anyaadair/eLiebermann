@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-loca]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-loca]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> cægl-</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-loca]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:caegloca">cægl-</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:caegloca">cægloca</ref></xr>
       </entry>
     </body>
   </text>

@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>gewur-</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">gewur-</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> geweor-;</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">gewur-</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:geweorc">geweor-</ref>;</dictScrap>
+        <xr type="see"><ref target="entry:geweorc">geweorc</ref></xr>
       </entry>
     </body>
   </text>

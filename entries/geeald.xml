@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>geeald-</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">geeald-</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> geheald-</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">geeald-</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:gehealdan">geheald-</ref></dictScrap>
+        <xr type="see"><ref target="entry:gehealdan">gehealdan</ref></xr>
       </entry>
     </body>
   </text>

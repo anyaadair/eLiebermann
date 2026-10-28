@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>hir-</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">hir-</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> hier-, <ref type="entry" target="entry:hyr">hyr-</ref></dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">hir-</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:hieran">hier-</ref>, <ref type="entry" target="entry:hyr">hyr-</ref></dictScrap>
+        <xr type="see"><ref target="entry:hieran">hieran</ref></xr>
         <xr type="see"><ref target="entry:hyr">hyr</ref></xr>
       </entry>
     </body>
