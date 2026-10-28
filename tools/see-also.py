@@ -129,6 +129,7 @@ SKIP = {
     ('Fremdwort-Declination', 'tu-sc'), ('Fremdwort-Declination', 'te'),
     ('cs', 'g-o-s'), ('gar', 'waru'),
     ('Abkurzungen', 'm-2'), ('Abkurzungen', 'm-3'),                # the Latin and French m, not the OE m̃
+    ('thaet-2', 'i'),                                            # "se I [s. d.]": the numeral of se I (linked by hand), not the letter i
 }
 
 ROMAN = {'I': 1, 'II': 2, 'III': 3, 'IV': 4, 'V': 5}
