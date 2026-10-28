@@ -94,6 +94,9 @@ FORMS = {
     ('a-6', 'wealdes'): 'gewealdes',       # "(unge)wealdes": no entry wealdes; editor's note on the entry
 }
 
+# "z. B." (zum Beispiel) straight after "s." or "vgl.": the list follows it
+ZB = re.compile(r'\s*(?:</hi>\s*)?(?:<hi rend="italic">\s*)?<ref type="abbreviation" target="gram:zumBeispiel"><abbr>z\. B\.</abbr></ref>(?:</hi>)?')
+
 # What targets() found for each word it read, for linking the words in the
 # text (tools/link-headwords.py): [(kind, n-th abbreviation, raw token, [(segment, ids)])]
 INLINE = []
@@ -450,6 +453,10 @@ def targets(scrap, entry_id, index):
             tail = scrap[m.end():]
             if COMPARE and tail.startswith('.'):
                 tail = tail[1:]                 # "vgl</abbr></ref>.": the full stop is outside the link
+            # "s. z. B. and, hand": the words come after Liebermann's "z. B." (for example)
+            zb = ZB.match(tail)
+            if zb:
+                tail = ' ' + tail[zb.end():]
             if tail.startswith('</hi>'):
                 tail = tail[5:]
             node = re.split(r'<', tail, maxsplit=1)[0]
