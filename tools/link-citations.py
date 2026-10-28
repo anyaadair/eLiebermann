@@ -207,6 +207,10 @@ class Clauses:
         part = {'ICn': 'i', 'IICn': 'ii'}.get(anchor)
         if part and part + key in self.by_anchor.get('InCn', {}):
             return 'instituta', self.by_anchor['InCn'][part + key]
+        # "Hn Lond Test": the witnesses (Testes) of a writ, which the laws database keeps
+        # at the end of its Epilog ("Test. … episcopo Wintoniensi …")
+        if key == 'test' and 'epil' in files:
+            return 'witnesses (in the Epilog)', files['epil']
         # "I As Pro 3": a section of a prologue that has one page for all of it
         if re.match(r'^pro\d', key) and 'pro' in files:
             return 'prologue', files['pro']

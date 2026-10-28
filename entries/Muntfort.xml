@@ -19,6 +19,7 @@
     <encodingDesc>
       <listPrefixDef>
         <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
         <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
         <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
       </listPrefixDef>
@@ -35,6 +36,7 @@
           <orth>Muntfort</orth>
         </form>
         <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">Muntfort</hi> <hi rend="italic">Montfort sur Rille</hi> (<hi rend="italic">Eure</hi>)<hi rend="italic">;</hi> Rodbertus de ~ <ref type="lawCode" target="law:CHnCor">CHn cor</ref> Test; <hi rend="italic"><ref type="abbreviation" target="gram:Variante"><abbr>Var.</abbr></ref></hi> Munforde, Mumf-, Monteforti</dictScrap>
+        <xr type="lawCode"><ref target="clause:CHnCor_Epil">CHn cor Test</ref></xr>
       </entry>
     </body>
   </text>

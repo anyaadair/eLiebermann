@@ -19,6 +19,7 @@
     <encodingDesc>
       <listPrefixDef>
         <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
         <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
         <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
       </listPrefixDef>
@@ -36,6 +37,8 @@
           <orth>Mellent</orth>
         </form>
         <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">Mellent</hi> <hi rend="italic">Meulan</hi> (<hi rend="italic">dép. Seine-et-Oise</hi>); <hi rend="italic">Graf Robert von, Staatsmann Heinrichs I.,</hi> <ref type="lawCode" target="law:HnMon">Hn mon</ref> Test. <ref type="lawCode" target="law:HnComm">Hn com</ref> Test</dictScrap>
+        <xr type="lawCode"><ref target="clause:HnMon_Epil">Hn mon Test</ref></xr>
+        <xr type="lawCode"><ref target="clause:HnComm_Epil">Hn com Test</ref></xr>
       </entry>
     </body>
   </text>

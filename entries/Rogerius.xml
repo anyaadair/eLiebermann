@@ -38,6 +38,8 @@
           <orth>Rogerius</orth>
         </form>
         <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">Rogerius</hi> <hi rend="bold">I</hi>) Bigod <ref type="lawCode" target="law:CHnCor">CHn cor</ref> Test <hi rend="bold">II</hi>) [<hi rend="italic">I.</hi>] episcopus Saresberiensis <ref type="lawCode" target="law:HnComm">Hn com</ref> Test. <ref type="lawCode" target="law:QuadrII">Quadr II</ref> 8d <hi rend="bold">III</hi>) Apuleie dux [<hi rend="italic"><ref type="abbreviation" target="gram:spater"><abbr>später</abbr></ref> König von Sicilien</hi>] 14</dictScrap>
+        <xr type="lawCode"><ref target="clause:CHnCor_Epil">CHn cor Test</ref></xr>
+        <xr type="lawCode"><ref target="clause:HnComm_Epil">Hn com Test</ref></xr>
         <xr type="lawCode"><ref target="clause:QuadrII_8d">Quadr II 8d</ref></xr>
       </entry>
     </body>
