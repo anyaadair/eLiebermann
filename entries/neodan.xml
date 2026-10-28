@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-neoðan]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-neoðan]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> ben~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-neoðan]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:beneodan">ben~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:beneodan">beneoðan</ref></xr>
       </entry>
     </body>
   </text>

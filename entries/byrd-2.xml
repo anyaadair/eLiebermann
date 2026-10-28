@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-byrd]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-byrd]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> mundb~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-byrd]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:mundbyrd">mundb~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:mundbyrd">mundbyrd</ref></xr>
       </entry>
     </body>
   </text>

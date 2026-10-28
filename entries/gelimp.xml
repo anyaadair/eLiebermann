@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-gelimp]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-gelimp]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> ung~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-gelimp]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:ungelimp">ung~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:ungelimp">ungelimp</ref></xr>
       </entry>
     </body>
   </text>

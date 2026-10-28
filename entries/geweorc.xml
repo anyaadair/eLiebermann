@@ -34,8 +34,10 @@
         <form type="lemma">
           <orth>geweorc</orth>
         </form>
-        <dictScrap type="liebermann">[<hi rend="bold">geweorc</hi> <hi rend="italic">Werk</hi>] <hi rend="italic">vermutet <ref type="abbreviation" target="gram:irrig"><abbr>irrig</abbr></ref> in</hi> <ref type="entry" target="entry:gewyrce">gewyrce</ref> [<hi rend="italic"><ref type="abbreviation" target="gram:sieheDort"><abbr>s. d.</abbr></ref></hi>] <ref type="lawCode" target="law:Rect">Rect</ref> 6,2 <ref type="lawCode" target="law:Quadr">Q</ref>, <hi rend="italic">da er</hi> opera <hi rend="italic"><ref type="abbreviation" target="gram:setzt"><abbr>setzt</abbr></ref>.</hi> — <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> brycgg~, handg~</dictScrap>
+        <dictScrap type="liebermann">[<hi rend="bold">geweorc</hi> <hi rend="italic">Werk</hi>] <hi rend="italic">vermutet <ref type="abbreviation" target="gram:irrig"><abbr>irrig</abbr></ref> in</hi> <ref type="entry" target="entry:gewyrce">gewyrce</ref> [<hi rend="italic"><ref type="abbreviation" target="gram:sieheDort"><abbr>s. d.</abbr></ref></hi>] <ref type="lawCode" target="law:Rect">Rect</ref> 6,2 <ref type="lawCode" target="law:Quadr">Q</ref>, <hi rend="italic">da er</hi> opera <hi rend="italic"><ref type="abbreviation" target="gram:setzt"><abbr>setzt</abbr></ref>.</hi> — <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:brycgeweorc">brycgg~</ref>, <ref type="entry" target="entry:handgeweorc">handg~</ref></dictScrap>
         <xr type="see"><ref target="entry:gewyrce">gewyrce</ref></xr>
+        <xr type="derivative"><ref target="entry:brycgeweorc">brycgeweorc</ref></xr>
+        <xr type="derivative"><ref target="entry:handgeweorc">handgeweorc</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/16784">ge-weorc</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/50438">ge-weorc (Supplement)</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/16794">ge-werc</ref></xr>

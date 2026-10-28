@@ -34,7 +34,8 @@
         <form type="lemma">
           <orth>[-adon]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-adon]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> ofadon</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-adon]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:ofadon">ofadon</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:ofadon">ófadon</ref></xr>
       </entry>
     </body>
   </text>

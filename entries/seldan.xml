@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-seldan]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-seldan]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> uns~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-seldan]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:unseldan">uns~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:unseldan">unseldan</ref></xr>
       </entry>
     </body>
   </text>

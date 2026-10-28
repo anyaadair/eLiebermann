@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-syndred]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-syndred]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> as~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-syndred]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:asyndred">as~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:asyndred">asyndred</ref></xr>
       </entry>
     </body>
   </text>

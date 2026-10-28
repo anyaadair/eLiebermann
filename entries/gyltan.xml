@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-gyltan]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-gyltan]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> ag~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-gyltan]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:agyltan">ag~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:agyltan">agyltan</ref></xr>
       </entry>
     </body>
   </text>

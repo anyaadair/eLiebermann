@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-note]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-note]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> æn~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-note]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:aenote">æn~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:aenote">ænote</ref></xr>
       </entry>
     </body>
   </text>

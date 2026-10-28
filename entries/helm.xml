@@ -35,7 +35,9 @@
         <form type="lemma">
           <orth>helm</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">helm</hi> <hi rend="italic">Helm</hi> <ref type="lawCode" target="law:IICn">II Cn</ref> 71,1 | <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>:</hi> ~ <ref type="lawCode" target="law:Northleoda">Norðleod</ref> 10 | <hi rend="italic"><ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref>:</hi> ~mas <ref type="lawCode" target="law:IICn">II Cn</ref> 71a. — <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> Wilh~, Wulfh~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">helm</hi> <hi rend="italic">Helm</hi> <ref type="lawCode" target="law:IICn">II Cn</ref> 71,1 | <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>:</hi> ~ <ref type="lawCode" target="law:Northleoda">Norðleod</ref> 10 | <hi rend="italic"><ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref>:</hi> ~mas <ref type="lawCode" target="law:IICn">II Cn</ref> 71a. — <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:Wilhelm">Wilh~</ref>, <ref type="entry" target="entry:Wulfhelm">Wulfh~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:Wilhelm">Wilhelm</ref></xr>
+        <xr type="derivative"><ref target="entry:Wulfhelm">Wulfhelm</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/18674">helm</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/52232">helm (Supplement)</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_71-1">II Cn 71,1</ref></xr>

@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-rica]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-rica]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> landr~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-rica]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:landrica">landr~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:landrica">landrica</ref></xr>
       </entry>
     </body>
   </text>

@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-trum]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-trum]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> unt~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-trum]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:untrum">unt~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:untrum">untrum</ref></xr>
       </entry>
     </body>
   </text>

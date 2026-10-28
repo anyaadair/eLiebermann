@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-iewan]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-iewan]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> æti~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-iewan]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:aetiewan">æti~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:aetiewan">ætiewan</ref></xr>
       </entry>
     </body>
   </text>

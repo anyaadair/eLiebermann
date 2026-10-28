@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-hnescian]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-hnescian]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> ah~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-hnescian]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:ahne-sc-ian">ah~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:ahne-sc-ian">ahne[sc]ian</ref></xr>
       </entry>
     </body>
   </text>

@@ -35,7 +35,8 @@
         <form type="lemma">
           <orth>cleofan</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">cleofan</hi> <hi rend="italic">spalten</hi> (<hi rend="italic">Holz</hi>) <ref type="lawCode" target="law:Ger">Ger</ref> 11. <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> toclofen</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">cleofan</hi> <hi rend="italic">spalten</hi> (<hi rend="italic">Holz</hi>) <ref type="lawCode" target="law:Ger">Ger</ref> 11. <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:toclofen">toclofen</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:toclofen">toclofen</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/6315">cleófan</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/6317">cleofian</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/6333">clífan</ref></xr>

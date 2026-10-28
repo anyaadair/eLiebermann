@@ -33,7 +33,9 @@
         <form type="lemma">
           <orth>endian</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">endian</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> gee~, þurhe~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">endian</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:geendian">gee~</ref>, <ref type="entry" target="entry:th-u-rhendian">þurhe~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:geendian">geendian</ref></xr>
+        <xr type="derivative"><ref target="entry:th-u-rhendian">þ[u]rhendian</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/9410">endian</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/44065">endian (Supplement)</ref></xr>
       </entry>

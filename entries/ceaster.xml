@@ -33,7 +33,10 @@
         <form type="lemma">
           <orth>[-ceaster]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-ceaster]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> Cissec~, Eaxanc~, Hæstingac~, Hrofec~, Wintanc~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-ceaster]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> Cissec~, <ref type="entry" target="entry:Eaxanceaster">Eaxanc~</ref>, Hæstingac~, <ref type="entry" target="entry:Hrofeceaster">Hrofec~</ref>, <ref type="entry" target="entry:Wintanceaster">Wintanc~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:Eaxanceaster">Eaxanceaster</ref></xr>
+        <xr type="derivative"><ref target="entry:Hrofeceaster">Hrofeceaster</ref></xr>
+        <xr type="derivative"><ref target="entry:Wintanceaster">Wintanceaster</ref></xr>
       </entry>
     </body>
   </text>

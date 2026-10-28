@@ -35,7 +35,9 @@
         <form type="lemma">
           <orth>sæd</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">I</hi>) <hi rend="bold">sæd</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>, Saat</hi> <ref type="lawCode" target="law:Rect">Rect</ref> 4,1b; ~ sawan 11. — <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> lins~, wads~ <hi rend="bold">II</hi>) <hi rend="bold">[-sæd]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> foresæd</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">I</hi>) <hi rend="bold">sæd</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>, Saat</hi> <ref type="lawCode" target="law:Rect">Rect</ref> 4,1b; ~ sawan 11. — <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:lins-ae-d">lins~</ref>, <ref type="entry" target="entry:wadsaed">wads~</ref> <hi rend="bold">II</hi>) <hi rend="bold">[-sæd]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> foresæd</dictScrap>
+        <xr type="derivative"><ref target="entry:lins-ae-d">lins[æ]d</ref></xr>
+        <xr type="derivative"><ref target="entry:wadsaed">wadsæd</ref></xr>
         <xr type="lawCode"><ref target="clause:Rect_4-a-to-4-2c">Rect 4,1b</ref></xr>
         <xr type="lawCode"><ref target="clause:Rect_11">Rect 11</ref></xr>
       </entry>

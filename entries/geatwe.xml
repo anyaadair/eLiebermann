@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-geatwe]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-geatwe]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> heregeat(u)</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-geatwe]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:heregeat">heregeat</ref>(u)</dictScrap>
+        <xr type="derivative"><ref target="entry:heregeat">heregeat</ref></xr>
       </entry>
     </body>
   </text>

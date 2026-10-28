@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-brec]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-brec]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> friðbrec</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-brec]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:fridbrec">friðbrec</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:fridbrec">friðbrec</ref></xr>
       </entry>
     </body>
   </text>

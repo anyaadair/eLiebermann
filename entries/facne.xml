@@ -34,7 +34,8 @@
         <form type="lemma">
           <orth>facne</orth>
         </form>
-        <dictScrap type="liebermann">hit <hi rend="bold">facne</hi> is <hi rend="italic">es trügerisch ist</hi> <ref type="lawCode" target="law:Abt">Abt</ref> 77,1. — <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> unf~</dictScrap>
+        <dictScrap type="liebermann">hit <hi rend="bold">facne</hi> is <hi rend="italic">es trügerisch ist</hi> <ref type="lawCode" target="law:Abt">Abt</ref> 77,1. — <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:unfacne">unf~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:unfacne">unfacne</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/9866">fácne</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/44298">fácne (Supplement)</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/9876">fǽcne</ref></xr>

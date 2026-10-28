@@ -33,7 +33,9 @@
         <form type="lemma">
           <orth>[-gietan]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-gietan]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> ag~, beg~, ong~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-gietan]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> ag~, <ref type="entry" target="entry:beg-ie-tan">beg~</ref>, <ref type="entry" target="entry:ong-ie-tan">ong~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:beg-ie-tan">beg[ie]tan</ref></xr>
+        <xr type="derivative"><ref target="entry:ong-ie-tan">ong[ie]tan</ref></xr>
       </entry>
     </body>
   </text>

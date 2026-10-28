@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-borgian]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-borgian]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> ab~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-borgian]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:aborgian">ab~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:aborgian">aborgian</ref></xr>
       </entry>
     </body>
   </text>

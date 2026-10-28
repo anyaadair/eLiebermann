@@ -34,7 +34,8 @@
         <form type="lemma">
           <orth>sceaða</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">sceaða</hi> <hi rend="italic">Verderber</hi> <ref type="lawCode" target="law:ICn">I Cn</ref> 26,2. — <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> þeods~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">sceaða</hi> <hi rend="italic">Verderber</hi> <ref type="lawCode" target="law:ICn">I Cn</ref> 26,2. — <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:theodsceada">þeods~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:theodsceada">þeodsceaða</ref></xr>
         <xr type="lawCode"><ref target="clause:ICn_26-2">I Cn 26,2</ref></xr>
       </entry>
     </body>

@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-hwænan]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-hwænan]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> ah~.</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-hwænan]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:ahwaenan">ah~</ref>.</dictScrap>
+        <xr type="derivative"><ref target="entry:ahwaenan">ahwænan</ref></xr>
       </entry>
     </body>
   </text>

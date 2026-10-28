@@ -33,7 +33,9 @@
         <form type="lemma">
           <orth>[-scunian]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-scunian]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> as~, ons~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-scunian]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:ascunian">as~</ref>, <ref type="entry" target="entry:onscunian">ons~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:ascunian">ascunian</ref></xr>
+        <xr type="derivative"><ref target="entry:onscunian">onscunian</ref></xr>
       </entry>
     </body>
   </text>

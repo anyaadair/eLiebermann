@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-steall]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-steall]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> winters~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-steall]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:wintersteal">winters~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:wintersteal">wintersteal</ref></xr>
       </entry>
     </body>
   </text>

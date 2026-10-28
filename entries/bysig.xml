@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-bysig]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-bysig]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> tihtb~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-bysig]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:tihtbysig">tihtb~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:tihtbysig">tihtbysig</ref></xr>
       </entry>
     </body>
   </text>

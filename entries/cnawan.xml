@@ -34,7 +34,9 @@
         <form type="lemma">
           <orth>[-cnawan]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-cnawan]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> gec~, onc~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-cnawan]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:gecnawan">gec~</ref>, <ref type="entry" target="entry:oncnawon">onc~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:gecnawan">gecnawan</ref></xr>
+        <xr type="derivative"><ref target="entry:oncnawon">oncnawon</ref></xr>
       </entry>
     </body>
   </text>

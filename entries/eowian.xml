@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[eowian]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[eowian]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> geeowde</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[eowian]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:geeowde">geeowde</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:geeowde">geeowde</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/9664">eówian</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/2705">áwian</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/8799">eáwan</ref></xr>

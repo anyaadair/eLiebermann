@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-spillan]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-spillan]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> fors~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-spillan]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:forspillan">fors~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:forspillan">forspillan</ref></xr>
       </entry>
     </body>
   </text>

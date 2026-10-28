@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[scægð]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[scægð]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> sceiðman</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[scægð]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:sceidman">sceiðman</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:sceidman">sceiðman</ref></xr>
       </entry>
     </body>
   </text>

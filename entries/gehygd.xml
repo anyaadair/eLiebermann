@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-gehygd]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-gehygd]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> ing~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-gehygd]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:ingehy-g-d">ing~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:ingehy-g-d">ingehy[g]d</ref></xr>
       </entry>
     </body>
   </text>

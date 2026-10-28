@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[nigontig]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[nigontig]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> hundn~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[nigontig]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:hundnigontig">hundn~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:hundnigontig">hundnigontig</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/23709">nigontig</ref></xr>
       </entry>
     </body>

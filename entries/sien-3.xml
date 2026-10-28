@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-sien]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-sien]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> ans~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-sien]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:ans-ie-n">ans~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:ans-ie-n">ans[ie]n</ref></xr>
       </entry>
     </body>
   </text>

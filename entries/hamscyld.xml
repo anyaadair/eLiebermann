@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-hamscyld]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-hamscyld]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> rihth~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-hamscyld]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:rihthamscyld">rihth~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:rihthamscyld">rihthamscyld</ref></xr>
       </entry>
     </body>
   </text>

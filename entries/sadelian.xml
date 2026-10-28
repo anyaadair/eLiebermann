@@ -34,7 +34,9 @@
         <form type="lemma">
           <orth>[-sadelian]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-sadelian]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> (un)gesadelod</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-sadelian]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> (<ref type="entry" target="entry:ungesadelod">un</ref>)<ref type="entry" target="entry:gesadelod">gesadelod</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:ungesadelod">ungesadelod</ref></xr>
+        <xr type="derivative"><ref target="entry:gesadelod">gesadelod</ref></xr>
       </entry>
     </body>
   </text>

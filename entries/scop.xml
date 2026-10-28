@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-scop]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-scop]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> ealos~, sealms~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-scop]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> ealos~, <ref type="entry" target="entry:sealmscop">sealms~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:sealmscop">sealmscop</ref></xr>
       </entry>
     </body>
   </text>

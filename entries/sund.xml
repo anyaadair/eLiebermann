@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-sund]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-sund]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> gesund(fulnes)</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-sund]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:gesund">gesund</ref>(fulnes)</dictScrap>
+        <xr type="derivative"><ref target="entry:gesund">gesund</ref></xr>
       </entry>
     </body>
   </text>

@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[gebrot]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[gebrot]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> corng~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[gebrot]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:corngebrot">corng~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:corngebrot">corngebrot</ref></xr>
       </entry>
     </body>
   </text>

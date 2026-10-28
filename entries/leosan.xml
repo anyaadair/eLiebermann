@@ -34,7 +34,8 @@
         <form type="lemma">
           <orth>leosan</orth>
         </form>
-        <dictScrap type="liebermann">lof <hi rend="bold">leosan</hi> <hi rend="italic">Ehre verlieren</hi> <ref type="lawCode" target="law:Rect">Rect</ref> 21,3. — <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> forl~</dictScrap>
+        <dictScrap type="liebermann">lof <hi rend="bold">leosan</hi> <hi rend="italic">Ehre verlieren</hi> <ref type="lawCode" target="law:Rect">Rect</ref> 21,3. — <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:forleosan">forl~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:forleosan">forleosan</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/62795">leósan</ref></xr>
         <xr type="lawCode"><ref target="clause:Rect_21-to-21-3">Rect 21,3</ref></xr>
       </entry>

@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-þennan]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-þennan]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> aþenedum</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-þennan]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:athenedum">aþenedum</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:athenedum">aþenedum</ref></xr>
       </entry>
     </body>
   </text>

@@ -33,8 +33,9 @@
         <form type="lemma">
           <orth>[-golden]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-golden]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:gieldan">gieldan</ref>. — <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> fullg~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-golden]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:gieldan">gieldan</ref>. — <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:ful-l-golden">fullg~</ref></dictScrap>
         <xr type="see"><ref target="entry:gieldan">gieldan</ref></xr>
+        <xr type="derivative"><ref target="entry:ful-l-golden">ful[l]golden</ref></xr>
       </entry>
     </body>
   </text>

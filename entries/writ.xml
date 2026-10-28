@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-writ]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-writ]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> (ærend-, frið-)gewrit, awrit</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-writ]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> (ærend-, frið-)<ref type="entry" target="entry:gewrit">gewrit</ref>, awrit</dictScrap>
+        <xr type="derivative"><ref target="entry:gewrit">gewrit</ref></xr>
       </entry>
     </body>
   </text>

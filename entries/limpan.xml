@@ -34,8 +34,11 @@
         <form type="lemma">
           <orth>[-limpan]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-limpan]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> (to)bel~, gel~; <hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>.</hi> <ref type="entry" target="entry:ungelimp">ungelimp</ref></dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-limpan]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> (<ref type="entry" target="entry:tobelimpan">to</ref>)<ref type="entry" target="entry:belimpan">bel~</ref>, <ref type="entry" target="entry:gelimpan">gel~</ref>; <hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>.</hi> <ref type="entry" target="entry:ungelimp">ungelimp</ref></dictScrap>
         <xr type="compare"><ref target="entry:ungelimp">ungelimp</ref></xr>
+        <xr type="derivative"><ref target="entry:tobelimpan">tobelimpan</ref></xr>
+        <xr type="derivative"><ref target="entry:belimpan">belimpan</ref></xr>
+        <xr type="derivative"><ref target="entry:gelimpan">gelimpan</ref></xr>
       </entry>
     </body>
   </text>

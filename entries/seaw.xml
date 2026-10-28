@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-seaw]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-seaw]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> liðs~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-seaw]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:lidseaw">liðs~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:lidseaw">liðseaw</ref></xr>
       </entry>
     </body>
   </text>

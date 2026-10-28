@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-giefa]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-giefa]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> freolsgefa, rædgifa</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-giefa]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:freolsgefa">freolsgefa</ref>, rædgifa</dictScrap>
+        <xr type="derivative"><ref target="entry:freolsgefa">freolsgefa</ref></xr>
       </entry>
     </body>
   </text>

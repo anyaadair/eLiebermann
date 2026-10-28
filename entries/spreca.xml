@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-spreca]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-spreca]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> ons~, fors~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-spreca]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> ons~, <ref type="entry" target="entry:forspreca">fors~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:forspreca">forspreca</ref></xr>
       </entry>
     </body>
   </text>

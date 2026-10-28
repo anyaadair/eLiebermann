@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-binn]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-binn]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> hunigb~, irseb~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-binn]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> hunigb~, <ref type="entry" target="entry:i-rsebinn">irseb~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:i-rsebinn">[i]rsebinn</ref></xr>
       </entry>
     </body>
   </text>

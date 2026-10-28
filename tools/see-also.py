@@ -70,10 +70,12 @@ OTHER = ('sieheOben', 'sieheUnten', 'sieheNummer', 'sieheZu', 'sieheDN', 'sieheD
 ABBR = re.compile(r'(?P<open><hi rend="italic">)?<ref type="abbreviation" target="gram:(?P<kind>siehe\w*)"><abbr>(?P<text>[^<]*)</abbr></ref>')
 XRTYPE = 'see'
 COMPARE = False
+DERIV = False      # --derivatives: Liebermann's "Der." (Derivativa und Composita)
 ORTH = re.compile(r'<orth>(.*?)</orth>', re.S)
 SCRAP = re.compile(r'(<dictScrap type="liebermann">)(.*?)(</dictScrap>)', re.S)
 SEE = re.compile(r'^[ \t]*<xr type="see"><ref target="entry:([^"]*)">.*?</ref></xr>[ \t]*\n', re.M)
 SEE_ANY = re.compile(r'^[ \t]*<xr type="see"><ref target="entry:[^"]*">.*?</ref></xr>[ \t]*\n', re.M)
+SEE_BEFORE = re.compile(r'^[ \t]*<xr type="(?:see|compare)"><ref target="entry:[^"]*">.*?</ref></xr>[ \t]*\n', re.M)
 WORD = re.compile(r"[^\s,;:|(){}\[\]*_«»⟦⟧<>=+/]+")
 # A word in a list after "s." or "vgl." may have a part in round brackets, which
 # Liebermann uses for an optional part: (sulh)æcer is æcer and sulhæcer;
@@ -288,6 +290,15 @@ def words(text, backwards=False):
                 break
             out.append(m.group(1))
             rest = rest[m.end():]
+            if DERIV:
+                # "aberan (aberendlic)": the word in brackets is a derivative too
+                pm = re.match(r'\s+\(([^()\s,]+)\)', rest)
+                if pm and re.search(r'[^\W\d_]', pm.group(1)):
+                    out.append(pm.group(1))
+                    rest = rest[pm.end():]
+                # "ofa~; uta~", "midb~ | æðelboren": the list goes on
+                if re.match(r'\s*[;|]\s*(?=[^\W\d_~(])', rest):
+                    rest = re.sub(r'^\s*[;|]', ',', rest)
             if not re.match(r'\s*,\s*(?=\S)', rest) or re.match(r'\s*,\s*[\[]', rest):
                 break
             rest = re.sub(r'^\s*,', '', rest)
@@ -453,6 +464,8 @@ def targets(scrap, entry_id, index):
             tail = scrap[m.end():]
             if COMPARE and tail.startswith('.'):
                 tail = tail[1:]                 # "vgl</abbr></ref>.": the full stop is outside the link
+            if DERIV and tail.startswith(':'):
+                tail = tail[1:]                 # "Der.</abbr></ref>:": the colon is outside the link
             # "s. z. B. and, hand": the words come after Liebermann's "z. B." (for example)
             zb = ZB.match(tail)
             if zb:
@@ -574,10 +587,10 @@ def update(path, index, write):
         return False, [], [], found
     block = ''.join('        <xr type="%s"><ref target="entry:%s">%s</ref></xr>\n' % (XRTYPE, i, l) for i, l in zip(final, labels(final, index)))
     new = SEE.sub('', text)
-    if COMPARE:
-        # after the See links, before the rest
-        sees = list(SEE_ANY.finditer(new))
-        first_xr = re.search(r'^[ \t]*<xr (?!type="see")', new[sees[-1].end():] if sees else new, re.M)
+    if COMPARE or DERIV:
+        # after the See links (and, for Der., the Compare links), before the rest
+        sees = list((SEE_BEFORE if DERIV else SEE_ANY).finditer(new))
+        first_xr = re.search(r'^[ \t]*<xr (?!type="(?:see|compare)")' if DERIV else r'^[ \t]*<xr (?!type="see")', new[sees[-1].end():] if sees else new, re.M)
         if first_xr and sees:
             at = sees[-1].end() + first_xr.start()
             new = new[:at] + block + new[at:]
@@ -618,6 +631,7 @@ def main():
     ap.add_argument('--no-report', action='store_true')
     ap.add_argument('--show', action='store_true', help='print what was found in each entry')
     ap.add_argument('--compare', action='store_true', help='make the Compare links from "vgl." instead of the See links')
+    ap.add_argument('--derivatives', action='store_true', help='make the Derivatives and Compounds links from "Der." instead of the See links')
     args = ap.parse_args()
     if args.compare:
         global SIEHE, OTHER, ABBR, SEE, XRTYPE, COMPARE
@@ -626,6 +640,13 @@ def main():
         SEE = re.compile(r'^[ \t]*<xr type="compare"><ref target="entry:([^"]*)">.*?</ref></xr>[ \t]*\n', re.M)
         if args.report == 'docs/see-also-report.md':
             args.report = 'docs/compare-report.md'
+    if args.derivatives:
+        global DERIV
+        SIEHE, OTHER, XRTYPE, DERIV = {'Derivativ': 'after'}, (), 'derivative', True
+        ABBR = re.compile(r'(?P<open><hi rend="italic">)?<ref type="abbreviation" target="gram:(?P<kind>Derivativ)"><abbr>(?P<text>[^<]*)</abbr></ref>')
+        SEE = re.compile(r'^[ \t]*<xr type="derivative"><ref target="entry:([^"]*)">.*?</ref></xr>[ \t]*\n', re.M)
+        if args.report == 'docs/see-also-report.md':
+            args.report = 'docs/derivatives-report.md'
 
     index = Index(args.entries)
     paths = [os.path.join(args.entries, i + '.xml') for i in args.only] if args.only else sorted(glob.glob(os.path.join(args.entries, '*.xml')))
@@ -659,7 +680,7 @@ def main():
 
     if not args.no_report and not args.only:
         with open(args.report, 'w', encoding='utf-8', newline='\n') as f:
-            f.write('# %s links made from Liebermann\'s cross-references\n\n' % ('Compare' if COMPARE else 'See also'))
+            f.write('# %s links made from Liebermann\'s cross-references\n\n' % ('Compare' if COMPARE else 'Derivatives and Compounds' if DERIV else 'See also'))
             f.write('Made by `tools/see-also.py`. It is replaced each time the tool runs.\n\n```\n%s\n```\n\n' % '\n'.join(lines))
             for key, items in sorted(problems.items(), key=lambda kv: -len(kv[1])):
                 if 'this entry' in key:
@@ -668,7 +689,7 @@ def main():
                 shown = items
                 for entry_id, word, why in shown:
                     extra = why.split(': ', 1)[1] if ': ' in why else ''
-                    f.write('- **%s**: %s %s%s\n' % (entry_id, 'vgl.' if COMPARE else 's.', word, ' (' + extra + ')' if extra else ''))
+                    f.write('- **%s**: %s %s%s\n' % (entry_id, 'vgl.' if COMPARE else 'Der.' if DERIV else 's.', word, ' (' + extra + ')' if extra else ''))
                 if len(shown) < len(items):
                     f.write('- … and %d more\n' % (len(items) - len(shown)))
                 f.write('\n')

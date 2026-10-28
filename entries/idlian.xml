@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-idlian]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-idlian]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> gei~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-idlian]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:g-e-idl-ian">gei~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:g-e-idl-ian">g[e]idl[ian]</ref></xr>
       </entry>
     </body>
   </text>

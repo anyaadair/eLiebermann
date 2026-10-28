@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-byrigan]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-byrigan]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> onb~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-byrigan]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:onbyrigan">onb~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:onbyrigan">onbyrigan</ref></xr>
       </entry>
     </body>
   </text>

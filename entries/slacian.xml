@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-slacian]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-slacian]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> as~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-slacian]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:a-sc-ian">as~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:a-sc-ian">a[sc]ian</ref></xr>
       </entry>
     </body>
   </text>

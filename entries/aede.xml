@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-æde]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-æde]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> cyningæde</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-æde]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:cyningaede">cyningæde</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:cyningaede">cyningæde</ref></xr>
       </entry>
     </body>
   </text>

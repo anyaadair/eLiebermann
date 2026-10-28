@@ -33,7 +33,12 @@
         <form type="lemma">
           <orth>[-cund]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-cund]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> eorlc~, feorc~, gesiðc~, godc~, woruldc~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-cund]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:eorlcund">eorlc~</ref>, <ref type="entry" target="entry:feorcund">feorc~</ref>, <ref type="entry" target="entry:gesidcund">gesiðc~</ref>, <ref type="entry" target="entry:godcund">godc~</ref>, <ref type="entry" target="entry:woruldcund">woruldc~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:eorlcund">eorlcund</ref></xr>
+        <xr type="derivative"><ref target="entry:feorcund">feorcund</ref></xr>
+        <xr type="derivative"><ref target="entry:gesidcund">gesiðcund</ref></xr>
+        <xr type="derivative"><ref target="entry:godcund">godcund</ref></xr>
+        <xr type="derivative"><ref target="entry:woruldcund">woruldcund</ref></xr>
       </entry>
     </body>
   </text>

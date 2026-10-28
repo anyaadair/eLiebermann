@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-copp]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-copp]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> hreacc~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-copp]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:hreaccopp">hreacc~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:hreaccopp">hreaccopp</ref></xr>
       </entry>
     </body>
   </text>

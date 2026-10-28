@@ -33,7 +33,9 @@
         <form type="lemma">
           <orth>[-helan]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-helan]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> forh~, geh~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-helan]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:forhelan">forh~</ref>, <ref type="entry" target="entry:gehelan">geh~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:forhelan">forhelan</ref></xr>
+        <xr type="derivative"><ref target="entry:gehelan">gehelan</ref></xr>
       </entry>
     </body>
   </text>

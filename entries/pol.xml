@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>[-pol]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-pol]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> fiscpol</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-pol]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:fiscpol">fiscpol</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:fiscpol">fiscpol</ref></xr>
       </entry>
     </body>
   </text>
