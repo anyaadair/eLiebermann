@@ -30,10 +30,10 @@
         </listBibl>
         <listWit>
           <witness xml:id="wit-flor-of-worcester-ed-thorpe" rend="bold"><abbr>Flor. of Worcester (ed. Thorpe)</abbr></witness>
-          <witness xml:id="wit-ox" rend="bold"><abbr>Ox</abbr></witness>
-          <witness xml:id="wit-bc"><abbr>Bc</abbr></witness>
+          <witness xml:id="wit-ox" rend="bold"><abbr>Ox</abbr> <note type="manuscript">Oxford, Corpus Christi College, MS 157</note></witness>
+          <witness xml:id="wit-bc"><abbr>Bc</abbr> <note type="manuscript">Pontifical of the abbey of Le Bec (known from Martène’s edition)</note></witness>
           <witness xml:id="wit-rd"><abbr>Rd</abbr></witness>
-          <witness xml:id="wit-ma"><abbr>Ma</abbr></witness>
+          <witness xml:id="wit-ma"><abbr>Ma</abbr> <note type="manuscript">Douai, Bibliothèque municipale, MS 67 (formerly 94/6), from Marchiennes</note></witness>
           <witness xml:id="wit-fl-ox"><abbr>Fl, Ox</abbr> <note type="manuscript">Florence (John) of Worcester, Chronicon, and Oxford, Corpus Christi College MS 157</note></witness>
         </listWit>
       </sourceDesc>

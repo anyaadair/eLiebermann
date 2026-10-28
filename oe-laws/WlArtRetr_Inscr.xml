@@ -26,7 +26,7 @@
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
         </listBibl>
         <listWit>
-          <witness xml:id="wit-lond"><abbr>Lond</abbr></witness>
+          <witness xml:id="wit-lond"><abbr>Lond</abbr> <note type="manuscript">The lost original of the London collection, Leges Anglorum Londoniis collectae (c. 1210)</note></witness>
           <witness xml:id="wit-guildhall"><abbr>Guildhall</abbr> <note type="manuscript">Guildhall version (London collection: MSS K2, Co, Or)</note></witness>
           <witness xml:id="wit-exchequer"><abbr>Exchequer</abbr> <note type="manuscript">Exchequer version (MS Sc, Red Book of the Exchequer, c. 1230)</note></witness>
           <witness xml:id="wit-rs"><abbr>Rs</abbr> <note type="manuscript">Manchester, John Rylands Library, MS Latin 155</note></witness>
