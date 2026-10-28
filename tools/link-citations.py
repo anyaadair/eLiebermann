@@ -99,8 +99,8 @@ def norm_clause(clause):
     s = re.sub(r'^([a-z]+)\.', r'\1', s)   # "El. 49" and "El 49", "Prol. 1" and "Prol 1" are one thing
     s = re.sub(r'(\d)\.([a-z])(?![a-z])', r'\1\2', s)   # the catalogue's "Rect 4.a" is Liebermann's "4a"
     # Liebermann's "Pro 2" is the catalogue's "Prol. 2" or "Prolog"; his "Prot" (Protokoll, the
-    # address at the head of a writ: Hn mon Prot) is its "Prol." too
-    return re.sub(r'^pro(?:l|log|t)?(?=[\d.]|$)', 'pro', s)
+    # address at the head of a writ: Hn mon Prot) is its "Prol." too, and his "Hn Pro 1" its "Prooem 1"
+    return re.sub(r'^pro(?:l|log|t|oem)?(?=[\d.]|$)', 'pro', s)
 
 
 class Clauses:
@@ -115,6 +115,9 @@ class Clauses:
         for c in json.load(open(catalogue_path, encoding='utf-8')):
             if not c['anchor'] and c.get('code') in RUBRICS:
                 c = dict(c, anchor=RUBRICS[c['code']])
+                if re.match(r'^Ine Prol', c['clause']):
+                    # the rubric to Ine's prologue, cited "Ine Rb Pro"
+                    c = dict(c, clause='Rb Prol.', citationKeys=['Ine Rb Prol.'])
                 if re.match(r'^Af Einl', c['clause']):
                     # the rubric to the Introduction (Af El 49,6), cited "Af Rb El 49,6"
                     c = dict(c, clause='Rb El 49.6', citationKeys=['Af Rb El 49.6'])
@@ -134,6 +137,8 @@ class Clauses:
                 keys = [k for k in (k.strip() for k in c['clause'].split(',')) if k]
                 if len(keys) == 2 and re.match(r'^Prol', keys[0]) and re.match(r'^\d', keys[1]):
                     keys = ['Prol. ' + keys[1]]
+            # "Ine Prol." (Ine's prologue, catalogued with the code's name again): Liebermann's "Ine Pro"
+            keys = [re.sub(r'^' + re.escape(c['anchor']) + r' (?=Prol)', '', k) for k in keys]
             for k in keys:
                 key = norm_clause(k)
                 if key and key not in self.by_anchor[c['anchor']]:

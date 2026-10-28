@@ -5,25 +5,23 @@ Made by `tools/link-citations.py --letter ALL`. It is replaced each time the too
 ```
 All entries: 9091 (with a law code citation list: 6418)
 Citations in their lists: 31301
-  linked, exact             507
-  linked, subclause          18
-  linked, and-following       1
-  linked, prologue            1
-  linked, already linked  29376
-  LINKED TO A CLAUSE:       29903  (96% of all citations; 99% of those with a clause number to a code in the database)
-  not linked, clause not found            292
+  linked, exact             232
+  linked, subclause          10
+  linked, prologue            2
+  linked, already linked  29735
+  LINKED TO A CLAUSE:       29979  (96% of all citations; 99% of those with a clause number to a code in the database)
+  not linked, clause not found            217
   not linked, citation not understood       1
   not linked, code not in database       1104
-Entries changed: 61; entries whose whole list is linked: 5549
+Entries changed: 1; entries whose whole list is linked: 5596
 ```
 
 ## The code is in the database but no clause file has that number
 
-By code: Ine (78), Ath (34), Ger (33), Iudex (19), Af (16), IICn (13), VAs (10), IIAs (7), ICn (6), Hn (6), IIAtr (5), Grith (4), IudDeiV (3), IIIEm (3), IIEg (3)
+By code: Ath (34), Ger (33), Iudex (19), Af (16), IICn (13), VAs (10), Ine (8), IIAs (7), ICn (6), IIAtr (5), Grith (4), IudDeiV (3), IIIEm (3), IIEg (3), VIAs (3)
 
 Citations (with how many times each occurs):
 
-- Ine Pro ×66
 - Að 2 ×34
 - Ger 15,1 ×21
 - Iudex 1 ×19
@@ -31,12 +29,9 @@ Citations (with how many times each occurs):
 - V As 3,1 ×9
 - Ine Insc ×4
 - Af Insc ×3
-- Hn Pro 1 ×3
 - II Cn Insc ×3
-- Ine Rb Pro ×3
 - Af El 42,1 ×2
 - Grið Insc ×2
-- Hn Pro 2 ×2
 - Rect Insc ×2
 - V Atr 42,2 ×2
 - AGu 8
@@ -83,6 +78,10 @@ Citations (with how many times each occurs):
 - I Em 7
 - I Ew 4
 - II As 12,1
+- II As 21,1
+- II As 34
+- II As 43,1
+- II As 44
 
 ## The code has no clause files
 

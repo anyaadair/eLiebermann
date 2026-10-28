@@ -19,6 +19,7 @@
     <encodingDesc>
       <listPrefixDef>
         <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
         <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
         <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
       </listPrefixDef>
@@ -36,7 +37,7 @@
         <dictScrap type="liebermann">us <hi rend="bold">undergeþeodedra</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref> <ref type="abbreviation" target="gram:Genitiv"><abbr>gn</abbr></ref>, uns Untergebener, unserer Untertanen</hi> <ref type="lawCode" target="law:Ine">Ine</ref> Pro; -dendra <ref type="lawCode" target="law:H">H</ref> <ref type="lawCode" target="law:B">B</ref> [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>.</hi> <ref type="entry" target="entry:undertheodd">underþeodd-</ref>]</dictScrap>
         <xr type="compare"><ref target="entry:undertheodd">underþeodd</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/32802">under-geþeóded</ref></xr>
-        <xr type="lawCode"><ref target="law:Ine">Ine Pro</ref></xr>
+        <xr type="lawCode"><ref target="clause:Ine_Ine-Prol">Ine Pro</ref></xr>
       </entry>
     </body>
   </text>
