@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>medm-</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">medm-</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> medem-</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">medm-</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:medeme">medem-</ref></dictScrap>
+        <xr type="see"><ref target="entry:medeme">medeme</ref></xr>
       </entry>
     </body>
   </text>

@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>geswyc-</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">geswyc-</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> geswic-</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">geswyc-</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:geswican">geswic-</ref></dictScrap>
+        <xr type="see"><ref target="entry:geswican">geswican</ref></xr>
       </entry>
     </body>
   </text>

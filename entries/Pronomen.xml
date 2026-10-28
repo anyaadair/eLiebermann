@@ -34,7 +34,10 @@
         <form type="lemma">
           <orth>Pronomen</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold"><hi rend="italic"><ref type="abbreviation" target="gram:Pronomen"><abbr>Pronomen</abbr></ref></hi></hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref> <ref type="abbreviation" target="gram:Artikel"><abbr>Artikel</abbr></ref>, Declination, Demonstrativ, Ellipse <ref type="abbreviation" target="gram:Nummer"><abbr>n.</abbr></ref></hi> 1 <ref type="abbreviation" target="gram:folgende"><abbr>f.</abbr></ref>, <hi rend="italic">Genus, Indefinitum, Interrogativum, Neutrum, Numerus, Personale, <ref type="abbreviation" target="gram:Possessiv"><abbr>Possessiv</abbr></ref>, Reflexiv, Relativ, Relativum generale</hi></dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold"><hi rend="italic"><ref type="abbreviation" target="gram:Pronomen"><abbr>Pronomen</abbr></ref></hi></hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref> <ref type="entry" target="entry:Artikel">Artikel</ref>, <ref type="entry" target="entry:Declination">Declination</ref>, Demonstrativ, <ref type="entry" target="entry:Ellipse">Ellipse</ref> <ref type="abbreviation" target="gram:Nummer"><abbr>n.</abbr></ref></hi> 1 <ref type="abbreviation" target="gram:folgende"><abbr>f.</abbr></ref>, <hi rend="italic">Genus, Indefinitum, Interrogativum, Neutrum, Numerus, Personale, <ref type="abbreviation" target="gram:Possessiv"><abbr>Possessiv</abbr></ref>, Reflexiv, Relativ, Relativum generale</hi></dictScrap>
+        <xr type="see"><ref target="entry:Artikel">Artikel</ref></xr>
+        <xr type="see"><ref target="entry:Declination">Declination</ref></xr>
+        <xr type="see"><ref target="entry:Ellipse">Ellipse</ref></xr>
       </entry>
     </body>
   </text>

@@ -399,7 +399,7 @@ scripts:
             <section class="entry-section"><h2>Liebermann's definition</h2>${senses(e.definition)}</section>
         </div>` : ''}
 
-        ${see ? `<section class="entry-section"><h2>${e.xref || e.spelling ? 'See' : 'See also'}</h2><ul${linkCols(see)}>${see}</ul></section>` : ''}
+        ${see ? `<section class="entry-section see-section"><h2>${e.xref || e.spelling ? 'See' : 'See also'}</h2><ul${linkCols(see)}>${see}</ul></section>` : ''}
         ${compare ? `<section class="entry-section"><h2>Compare</h2><ul${linkCols(compare)}>${compare}</ul></section>` : ''}
         ${derivatives ? `<section class="entry-section"><h2>Derivatives and Compounds</h2><ul${linkCols(derivatives)}>${derivatives}</ul></section>` : ''}
         ${links ? `<section class="entry-section"><h2>Other dictionaries</h2><p class="dict-wip"><span class="dict-wip__tag">⚠ Under construction</span> The work of linking to external dictionaries is ongoing. A semi-automated process is used to guess Bosworth-Toller links in the first instance, so note that some words may be incorrectly linked to Bosworth-Toller entries until checked by the editor.</p>${links}</section>` : ''}
@@ -447,6 +447,7 @@ scripts:
         fetch(root + 'data/entry-order.json')
             .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
             .then(list => {
+                splitGrammatical(list);
                 const order = list.map(([id, hw, lang]) => ({ id, hw, lang, key: ELieb.alphaKey(hw) }))
                     .sort((a, b) => (a.key < b.key ? -1 : a.key > b.key ? 1 : 0) || a.id.localeCompare(b.id, undefined, { numeric: true }));
                 const hidden = ELieb.hiddenLanguages();
@@ -462,6 +463,23 @@ scripts:
                 nav.hidden = false;
             })
             .catch(() => {});
+    }
+
+    // Under See (also), Liebermann's grammatical entries (Declination, Gleitlaut …, in
+    // German) get a list of their own below the words, after a small gap.
+    function splitGrammatical(list) {
+        const ul = target.querySelector('.see-section > ul');
+        if (!ul) return;
+        const lang = new Map(list.map(([id, , l]) => [id, l]));
+        const idOf = li => { const a = li.querySelector('a[href*="id="]'); try { return a ? decodeURIComponent(a.getAttribute('href').split('id=')[1].split('&')[0]) : ''; } catch (e) { return ''; } };
+        const items = [...ul.children];
+        const gram = items.filter(li => lang.get(idOf(li)) === 'de');
+        if (!gram.length || gram.length === items.length) return;
+        const second = document.createElement('ul');
+        second.className = 'see-grammatical' + (gram.length > 2 ? ' link-columns' : '');
+        gram.forEach(li => second.appendChild(li));
+        if ((ul.children.length) <= 2) ul.classList.remove('link-columns');
+        ul.after(second);
     }
 
     // The scan only loads from archive.org when the reader asks for it.

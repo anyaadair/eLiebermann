@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>grym-</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">grym-</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> grim-</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">grym-</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:grimm">grim-</ref></dictScrap>
+        <xr type="see"><ref target="entry:grimm">-grimm</ref></xr>
       </entry>
     </body>
   </text>

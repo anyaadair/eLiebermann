@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>Hykenild</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">Hykenild</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> Ice-</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">Hykenild</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:Icenild">Ice-</ref></dictScrap>
+        <xr type="see"><ref target="entry:Icenild">Icenild</ref></xr>
       </entry>
     </body>
   </text>

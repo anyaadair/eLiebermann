@@ -33,7 +33,8 @@
         <form type="lemma">
           <orth>spæc-</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">spæc-</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> spræ-</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">spæc-</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:spraec">spræ-</ref></dictScrap>
+        <xr type="see"><ref target="entry:spraec">spræc</ref></xr>
       </entry>
     </body>
   </text>

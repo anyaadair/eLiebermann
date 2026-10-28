@@ -58,6 +58,7 @@ Safe to run again.
 """
 import argparse
 import collections
+import json
 import glob
 import html
 import os
@@ -100,6 +101,8 @@ FORMS = {
     ('thaet-2', 'for'): 'for',             # "s. be, for, to": the preposition, not for (denn)
     ('thaet-2', 'oð'): 'od-3',             # "vgl. oð (n. I C) þæt": the preposition oð
     ('Accusativ', 'Genetiv'): 'Genetivus', # "s. Genetiv, Dativ"
+    ('ea', 'lafe'): 'laf',                 # "von ā: s. lafe": a form of laf
+    ('ea', 'botettan'): 'boteatan',
 }
 
 # "habban (erhalten) s. d.": Liebermann's translation in brackets between the word and its s. d.
@@ -118,6 +121,7 @@ INLINE = []
 UNTER = re.compile(r'<hi rend="italic">((?:[^<]|<(?!/?hi\b)[^>]*>){0,200}?\bunter)</hi>')
 UNTER_BRACKET = re.compile(r'\s*[(\[](?:[^()\[\]]*?\s)?unter\s+([^\s()\[\],;<]+)[)\]]|\s+unter\s+([^\s\[\],;<]+(?:\([^()\s]+\))?[^\s\[\],;<()]*)')
 UNTER_FORMS = collections.defaultdict(set)
+KIND = ['']    # the kind of cross-reference being read ("siehe", "sieheDort" …), for resolve()
 
 
 def read(path):
@@ -206,6 +210,9 @@ class Index:
         self.pointer = set()
         self.mark = {}
         self.gloss = {}
+        self.spelling = set()      # entries for a spelling (a letter or letters): <usg type="dom">spelling</usg>
+        self.grammatical = set()   # Liebermann's grammatical entries (Declination, Genetivus …)
+        self.text = {}             # each entry's text, plain
         for path in sorted(glob.glob(os.path.join(directory, '*.xml'))):
             text = read(path)
             m = ORTH.search(text)
@@ -215,6 +222,11 @@ class Index:
             lm = re.search(r'<entry xml:lang="([^"]*)"', text)
             self.lang[id_] = lm.group(1) if lm else ''
             sm = SCRAP.search(text)
+            if '<usg type="dom">spelling</usg>' in text:
+                self.spelling.add(id_)
+            if re.search(r'<entry [^>]*type="grammatical"', text):
+                self.grammatical.add(id_)
+            self.text[id_] = html.unescape(re.sub(r'<[^>]+>', '', sm.group(2))) if sm else ''
             nm = SECTION.match(sm.group(2)) if sm else None
             # Liebermann's first italic word after the headword ("vb", "Recht"),
             # to tell apart entries that share a headword
@@ -248,6 +260,26 @@ class Index:
                 if form != plain and id_ not in self.variant[fold(form)]:
                     self.variant[fold(form)].append(id_)
 
+    def gram_xrefs(self):
+        """Grammatical headwords that Liebermann's abbreviations list also has, so that they
+        are linked to it in the text: "s. Decl.", "vgl. Gleitlaut". -> {abbreviation anchor:
+        [entry ids]}, for the words of four letters or more (not the labels ac, pl, sg)."""
+        if hasattr(self, '_gx'):
+            return self._gx
+        self._gx, self.gram_text, self.gram_anchor = {}, {}, {}
+        override = {'FremdworterDeclination': 'Fremdwort-Declination'}
+        rows = json.load(open(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'data', 'markforward.json'), encoding='utf-8'))
+        for r in rows:
+            text, exp = r.get('Gesetze Text', '').strip(), (r.get('German Expansion') or '').strip()
+            if len(re.sub(r'\W', '', text)) < 4 or not exp:
+                continue
+            ids = sorted(i for i in self.grammatical if self.hw[i].lower() == exp.lower() or i == override.get(r['Anchor']))
+            if ids:
+                self._gx[r['Anchor']] = ids
+                self.gram_text[text.rstrip('.')] = ids
+                self.gram_anchor[text] = r['Anchor']
+        return self._gx
+
     def lookup(self, word):
         """Every entry with this headword (exactly, then ignoring accents, then
         as one of the spellings a bracketed headword stands for)."""
@@ -260,7 +292,7 @@ class Index:
         hw = re.sub(r'^\[(.*)\]$', r'\1', self.hw.get(id_, id_))
         return hw + (' ' + self.section[id_] if id_ in self.section else '')
 
-    def find(self, word, lang='', numeral='', mark=None):
+    def find(self, word, lang='', numeral='', mark=None, self_entry=''):
         """-> (list of ids, why not / how)"""
         ids = self.lookup(word)
         how = ''
@@ -271,6 +303,29 @@ class Index:
             if bare != word and len(bare) > 2:
                 ids = self.lookup(bare)
                 how = 'linked to the word without the hyphen' if ids else ''
+        if not ids and word.endswith('-') and not word.startswith('-') and len(re.sub(r'\W', '', word)) >= 3 and lang != 'de':
+            # "Aelf-": no entry of that name, but words beginning so; the first of them
+            # (Ælfgifu), from which the reader can go on with "Next". Only within the
+            # entry's own language, and a capital only finds names.
+            key = lambda h: re.sub(r'[\u0300-\u036f]', '', unicodedata.normalize('NFD', re.sub(r'[\[\]()\-~]', '', h))).lower().replace('æ', 'ae').replace('ð', 'þ')
+            pre = key(word)
+            cap = word.lstrip('[(')[:1].isupper()
+            # "(woruld)gew- " in the entry -wuna: the prefix and this entry's word (gewuna)
+            own = key(self.hw.get(self_entry, '')) if self_entry else ''
+            whole = [i for i, h in self.hw.items() if own and key(h) == pre + own and self.lang.get(i) == lang]
+            if len(whole) == 1:
+                return whole, 'the prefix and this entry\'s word'
+            starts = sorted((key(h), i) for i, h in self.hw.items()
+                            if i not in self.pointer and key(h).startswith(pre) and self.lang.get(i) == lang
+                            and re.sub(r'^[\[\(]+', '', h)[:1].isupper() == cap)
+            if starts:
+                return [starts[0][1]], 'the first word that begins so (a word ending in "-")'
+        if not ids and re.fullmatch(r'[A-ZÄÖÜ][a-zäöü]{2,}\.?', word):
+            # "s. Decl.": a grammatical headword abbreviated (Declination)
+            stem = word.rstrip('.')
+            g = [i for i in self.grammatical if self.hw[i].startswith(stem)]
+            if len(g) == 1:
+                return g, 'a grammatical headword, abbreviated: ' + self.hw[g[0]]
         if not ids:
             cands = sorted({i for r in respellings(fold(word)) for i in self.lookup(r) if i not in self.pointer})
             if len(cands) == 1:
@@ -474,7 +529,32 @@ def resolve(word, index, lang, numeral, heads, entry_id=''):
         return [], 'only the start or end of a word: no entry for it', word
     if re.search(r'\d', word):
         return [], 'a number, not a headword', word
-    ids, why = index.find(word, lang, numeral, index.mark.get(entry_id, ''))
+    index.gram_xrefs()
+    if word.rstrip('.') in index.gram_text:
+        # "s. Decl.", "vgl. Gleitlaut": the grammatical entry (of two, the one in the
+        # entry's own language: Artikel, not the French Artikel)
+        ids = index.gram_text[word.rstrip('.')]
+        pick = [i for i in ids if index.mark.get(i, '') == index.mark.get(entry_id, '')] or ids
+        return pick[:1], 'a grammatical entry, linked to the abbreviations list in the text', word
+    if entry_id in index.spelling and KIND[0] == 'sieheDort' and re.fullmatch(r'[a-zæðþƿȝ]{1,3}', fold(word)):
+        # From a spelling entry, "a, æ, e, eo s. d." are the spelling entries for those
+        # letters in the same language ("a-", "-e", "-eo-"); of several, the one that lists
+        # spellings "von" (for) this entry's letters
+        forms = {word, word + '-', '-' + word, '-' + word + '-'}
+        cands = [i for i in index.spelling if i != entry_id and index.lang.get(i) == lang
+                 and fold(index.hw[i]).replace(',', ' ').split() and
+                 any(fold(f) in [fold(x) for x in re.split(r'[,\s]+', index.hw[i]) if x] for f in forms)]
+        if len(cands) > 1:
+            own = re.sub(r'[^a-zæðþ]', '', fold(index.hw.get(entry_id, '')).split(',')[0])
+            pick = [i for i in cands if re.search(r'\bvon\s+' + re.escape(own) + r'\b', fold(index.text.get(i, '')))]
+            if pick:
+                cands = pick
+        if cands:
+            # what the word found before this rule (the word a, the French e …) comes off the list
+            UNTER_FORMS[entry_id].update(i for i in index.find(word, lang, numeral, index.mark.get(entry_id, ''))[0] if i not in cands)
+            UNTER_FORMS[entry_id].update(i for i in index.lookup(word) if i not in cands)
+            return cands, 'the spelling entry for these letters, from a spelling entry', word
+    ids, why = index.find(word, lang, numeral, index.mark.get(entry_id, ''), entry_id)
     return ids, why, word
 
 
@@ -487,11 +567,13 @@ def targets(scrap, entry_id, index):
     # text; for finding the word, that link is only the word.
     scrap = re.sub(r'<ref type="lawCode" target="[^"]*">([^<]*)</ref>', r'\1', scrap)
     scrap = strip_entry_links(scrap)
+    scrap = unwrap_gram_xrefs(scrap, index)
     # an editor's note marker in a list (<ptr type="editorNote"/>) is not part of the text
     scrap = re.sub(r'<ptr type="editorNote"[^>]*/>', '', scrap)
     heads = headwords(scrap, index, entry_id)
     for abbr_n, m in enumerate(ABBR.finditer(scrap)):
         kind = m.group('kind')
+        KIND[0] = kind
         if kind in OTHER:
             found.append((kind, m.group('text'), [], 'not linked: ' + kind))
             continue
@@ -589,6 +671,26 @@ def targets(scrap, entry_id, index):
                 segments.append((seg, seen_forms[form]))
             INLINE.append((kind, abbr_n, tok, segments))
     return found
+
+
+def unwrap_gram_xrefs(scrap, index):
+    """The text with a grammatical headword that is linked to the abbreviations list, straight
+    after "s.", "vgl." or "s. d." ("s. <ref …gram:Declination>Decl.</ref>"), as plain text, so
+    that it is read as a cross-reference to that entry."""
+    gx = index.gram_xrefs()
+    pat = re.compile(r'(target="gram:(?:siehe|vergleiche|sieheDort)"><abbr>[^<]*</abbr></ref>\.?(?:</hi>)?\s*(?:<hi rend="italic">)?)'
+                     r'<ref type="abbreviation" target="gram:([^"]+)"><abbr>([^<]*)</abbr></ref>')
+    return pat.sub(lambda m: m.group(1) + m.group(3) if m.group(2) in gx and m.group(3).rstrip('.') in index.gram_text else m.group(0), scrap)
+
+
+def rewrap_gram_xrefs(scrap, index):
+    """Undo unwrap_gram_xrefs() where the word did not become a link to its entry."""
+    index.gram_xrefs()
+    if not index.gram_anchor:
+        return scrap
+    words = '|'.join(sorted(map(re.escape, index.gram_anchor), key=len, reverse=True))
+    pat = re.compile(r'(target="gram:(?:siehe|vergleiche|sieheDort)"><abbr>[^<]*</abbr></ref>\.?(?:</hi>)?\s*(?:<hi rend="italic">)?)(' + words + r')(?![\w.])')
+    return pat.sub(lambda m: m.group(1) + '<ref type="abbreviation" target="gram:%s"><abbr>%s</abbr></ref>' % (index.gram_anchor[m.group(2)], m.group(2)), scrap)
 
 
 def strip_entry_links(scrap):
