@@ -26,17 +26,17 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-13">Page corrected from 43 to 45 (the page turns inside cyning), as in the team transcription (collarium - d.docx).</change>
+      <change when="2026-10-28">Marked as a cross-reference entry (it only points to another headword); links to other dictionaries removed.</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:lang="ang">
+      <entry xml:lang="ang" type="xref">
         <form type="lemma">
           <orth>cyric(-)</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">cyric</hi>(-) <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> ciric(-)</dictScrap>
         <xr type="see"><ref target="entry:ciricanmannes">ciricanmannes</ref></xr>
-        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/7205">cyric</ref></xr>
       </entry>
     </body>
   </text>

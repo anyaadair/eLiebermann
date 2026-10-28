@@ -32,7 +32,7 @@ import glob, re, sys, unicodedata, difflib, os
 from lxml import etree
 
 os.chdir(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
-TODAY = '2026-10-17'
+TODAY = '2026-10-28'
 ns={'t':'http://www.tei-c.org/ns/1.0'}
 ALLOWED={'s','d','für','geschrieben','geschr','dafür','auch','F','L','FL','I','II','III','IV','V','u','und','oder','vgl','ebd'}
 def norm(w):
@@ -45,6 +45,10 @@ def classify(f):
     if 'see' not in types: return None,'no see'
     if 'lawCode' in types: return False,'law citations'
     if e.find('t:sense',ns) is not None or e.find("t:dictScrap[@type='senses']",ns) is not None: return False,'senses'
+    # Liebermann's grammatical entries (Nomen, Singular …) keep type="grammatical"
+    if e.get('type')=='grammatical': return False,'grammatical entry'
+    # the whole text, abbreviations included ("ersetzt durch", "statt" are abbreviation links)
+    full=' '.join(e.find("t:dictScrap[@type='liebermann']",ns).itertext())
     sc=etree.fromstring(etree.tostring(e.find("t:dictScrap[@type='liebermann']",ns)))
     for b in list(sc.iter('{%s}hi'%ns['t'],'{%s}ref'%ns['t'])):
         if (b.get('rend')=='bold' and b.tag.endswith('hi')) or (b.tag.endswith('ref') and (b.get('target') or '').startswith('gram:') and (b.get('target') or '') not in ('gram:siehe','gram:sieheDort','gram:fur')):
@@ -65,7 +69,9 @@ def classify(f):
         elif any(t and (t.startswith(n[:2]) or difflib.SequenceMatcher(None,n,t).ratio()>=0.6) for t in targets): pass
         else: bad.append(w)
         prev=w
-    note=re.findall(r'\b(ersetzt|eingeführt|abweichend|statt|dafür|variirt|Praefix|Suffix|ausgedr\w*|gebildet)\b',txt)
+    note=re.findall(r'\b(ersetzt|eingeführt|abweichend|statt|dafür|variirt|Praefix|Suffix|ausgedr\w*|gebildet)\b',full)
+    # a spelling entry with examples ("ou für u: s. (un)cuð") is a spelling note, not a pointer
+    if not note and e.find('t:usg',ns) is not None and re.search(r'\bfür\b',full): note=['für']
     orthtxt=e.find('.//t:orth',ns).text or ''
     if note: return False,'spelling note: '+' '.join(note)
     if re.match(r'^\(?-.*-\)?$',orthtxt.strip()) and len(orthtxt.strip())<=6: return False,'spelling note (inner letters)'
