@@ -95,11 +95,13 @@ FORMS = {
     ('a-6', 'healm'): 'healme',            # headword is the dative
     ('a-6', 'Westsaxones'): 'Westseax-e',  # Latin form of the name
     ('a-6', 'wealdes'): 'gewealdes',       # "(unge)wealdes": no entry wealdes; editor's note on the entry
+    ('Abkurzungen', 'm'): 'm',             # "man(n) durch m s. d.": the OE abbreviation m̃, not Latin or French m
+    ('Abkurzungen', 'sanct'): 'sancte',    # "sca, sce, scs s. sanct": the entry is sancte
 }
 
-# "z. B." (zum Beispiel) straight after "s." or "vgl.": the list follows it
 # "habban (erhalten) s. d.": Liebermann's translation in brackets between the word and its s. d.
 GLOSS = re.compile(r'\s*\(<hi rend="italic">[^<>()]*</hi>\)\s*$')
+# "z. B." (zum Beispiel) straight after "s." or "vgl.": the list follows it
 ZB = re.compile(r'\s*(?:</hi>\s*)?(?:<hi rend="italic">\s*)?<ref type="abbreviation" target="gram:zumBeispiel"><abbr>z\. B\.</abbr></ref>(?:</hi>)?')
 
 # What targets() found for each word it read, for linking the words in the
@@ -126,6 +128,7 @@ SKIP = {
     ('fiht', 'f-re-ht'), ('fyht', 'f-re-ht'),                    # feoht is not freht
     ('Fremdwort-Declination', 'tu-sc'), ('Fremdwort-Declination', 'te'),
     ('cs', 'g-o-s'), ('gar', 'waru'),
+    ('Abkurzungen', 'm-2'), ('Abkurzungen', 'm-3'),                # the Latin and French m, not the OE m̃
 }
 
 ROMAN = {'I': 1, 'II': 2, 'III': 3, 'IV': 4, 'V': 5}
@@ -308,7 +311,9 @@ def words(text, backwards=False):
         words.right = rest
         return out
     rest = text.rstrip()
-    m = re.search('(' + WORD.pattern + r')[\s.;:,]*$', rest)
+    # "den[arius] s. d.": an abbreviation with Liebermann's expansion in square brackets
+    m = re.search(r'(?<![^\s|;,])([^\W\d_]+(?:\[[^\W\d_]+\][^\W\d_]*)+)[\s.;:,]*$', rest) or \
+        re.search('(' + WORD.pattern + r')[\s.;:,]*$', rest)
     if m:
         out.append(m.group(1))
         rest = rest[:m.start()]
@@ -530,7 +535,9 @@ def targets(scrap, entry_id, index):
                 found.append((kind, word, [], 'a single letter, not a headword'))
                 continue
             segments, seen_forms = [], {}
-            for seg, form in expand(word):
+            # "den[arius]": the word written out, linked as a whole
+            parts = [(word, word.replace('[', '').replace(']', ''))] if re.search(r'\w\[\w+\]', word) else expand(word)
+            for seg, form in parts:
                 if form not in seen_forms:
                     if (entry_id, form) in FORMS:
                         ids, why, shown = [FORMS[(entry_id, form)]], 'checked by hand: ' + FORMS[(entry_id, form)], form
@@ -586,7 +593,8 @@ def update(path, index, write):
                 want.append(id_)
     existing = SEE.findall(text)
     has_dort = any(k == 'sieheDort' for k, _, _, _ in found)
-    removed = [x for x in existing if x == 'd' and has_dort and x not in want]
+    # a link checked and found wrong (SKIP) is taken off, though it was there before
+    removed = [x for x in existing if (x == 'd' and has_dort and x not in want) or ((entry_id, x) in SKIP and x not in want)]
     kept = [x for x in existing if x not in removed]
     final = want + [x for x in kept if x not in want]
     if final == existing and block_labels_ok(text, final, index):
