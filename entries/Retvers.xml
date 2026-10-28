@@ -25,6 +25,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-10-28">“Hn mon”, “Hn com” and “Hn cor” linked to their own law codes (Henry I’s decrees on the coinage and on the county and hundred courts; his coronation charter), not to the Leges Henrici.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -33,7 +34,7 @@
         <form type="lemma">
           <orth>Retvers</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">Retvers</hi>, Ricardus de ~ <ref type="lawCode" target="law:Hn">Hn</ref> mon Test; <hi rend="italic"><ref type="abbreviation" target="gram:Variante"><abbr>Var.</abbr></ref></hi> Revers</dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">Retvers</hi>, Ricardus de ~ <ref type="lawCode" target="law:HnMon">Hn mon</ref> Test; <hi rend="italic"><ref type="abbreviation" target="gram:Variante"><abbr>Var.</abbr></ref></hi> Revers</dictScrap>
       </entry>
     </body>
   </text>

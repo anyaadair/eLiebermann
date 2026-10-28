@@ -411,7 +411,7 @@
     const QUALIFIERS = new Set(['El', 'Rb', 'retr']);
     // A passage: 41, 2,1, 70,21a, Insc., Prol., or a line (Zeile) of a text
     // Liebermann numbers by lines, such as Nor grið Z. 6.
-    const PASSAGE = String.raw`(?:\d+[a-z]{0,2}(?:,\d+[a-z]{0,2})*|Inscr?\.?|Prol? \d+[a-z]?(?:,\d+[a-z]?)*(?![\d,])|Prol?\.?|Epil\.?|Z\.\s?\d+)`;
+    const PASSAGE = String.raw`(?:\d+[a-z]{0,2}(?:,\d+[a-z]{0,2})*|Inscr?\.?|Prol? \d+[a-z]?(?:,\d+[a-z]?)*(?![\d,])|Pro[lt]?\.?|Epil\.?|Z\.\s?\d+)`;
     // A spelling (or phrase of up to three words) then a passage of the code already
     // running: see scanCitations. Groups: 1 everything before the number, 2 the
     // spelling, 3 the number. The number must end the citation.

@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-10-28">“Hn mon”, “Hn com” and “Hn cor” linked to their own law codes (Henry I’s decrees on the coinage and on the county and hundred courts; his coronation charter), not to the Leges Henrici.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -34,12 +35,13 @@
         <form type="lemma">
           <orth>cambire</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">cambire</hi> <hi rend="bold">1</hi>) <hi rend="italic">tauschen</hi> (<hi rend="italic">Vieh</hi>) <ref type="lawCode" target="law:IIAs">II As</ref> 10 <ref type="lawCode" target="law:Quadr">Q</ref> <hi rend="bold">2</hi>) <hi rend="italic">umwechseln, schadhafte Denare zu vollwertigen umschmelzen</hi> <ref type="lawCode" target="law:Hn">Hn</ref> mon 4</dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">cambire</hi> <hi rend="bold">1</hi>) <hi rend="italic">tauschen</hi> (<hi rend="italic">Vieh</hi>) <ref type="lawCode" target="law:IIAs">II As</ref> 10 <ref type="lawCode" target="law:Quadr">Q</ref> <hi rend="bold">2</hi>) <hi rend="italic">umwechseln, schadhafte Denare zu vollwertigen umschmelzen</hi> <ref type="lawCode" target="law:HnMon">Hn mon</ref> 4</dictScrap>
         <dictScrap type="senses">
           <sense n="1"><hi rend="italic">tauschen</hi> (<hi rend="italic">Vieh</hi>) <ref type="lawCode" target="law:IIAs">II As</ref> 10 <ref type="lawCode" target="law:Quadr">Q</ref></sense>
-          <sense n="2"><hi rend="italic">umwechseln, schadhafte Denare zu vollwertigen umschmelzen</hi> <ref type="lawCode" target="law:Hn">Hn</ref> mon 4</sense>
+          <sense n="2"><hi rend="italic">umwechseln, schadhafte Denare zu vollwertigen umschmelzen</hi> <ref type="lawCode" target="law:HnMon">Hn mon</ref> 4</sense>
         </dictScrap>
         <xr type="lawCode"><ref target="clause:IIAs_10">II As 10</ref></xr>
+        <xr type="lawCode"><ref target="clause:HnMon_4">Hn mon 4</ref></xr>
       </entry>
     </body>
   </text>

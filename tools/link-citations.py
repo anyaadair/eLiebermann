@@ -98,8 +98,9 @@ def norm_clause(clause):
     s = re.sub(r'[\s\[\]]+', '', clause.replace(',', '.')).lower().rstrip('.,')
     s = re.sub(r'^([a-z]+)\.', r'\1', s)   # "El. 49" and "El 49", "Prol. 1" and "Prol 1" are one thing
     s = re.sub(r'(\d)\.([a-z])(?![a-z])', r'\1\2', s)   # the catalogue's "Rect 4.a" is Liebermann's "4a"
-    # Liebermann's "Pro 2" is the catalogue's "Prol. 2" or "Prolog"
-    return re.sub(r'^prol(?:og)?(?=[\d.]|$)', 'pro', s)
+    # Liebermann's "Pro 2" is the catalogue's "Prol. 2" or "Prolog"; his "Prot" (Protokoll, the
+    # address at the head of a writ: Hn mon Prot) is its "Prol." too
+    return re.sub(r'^pro(?:l|log|t)?(?=[\d.]|$)', 'pro', s)
 
 
 class Clauses:

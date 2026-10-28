@@ -28,6 +28,7 @@
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
       <change when="2026-10-17">“In Cn” and “In” (Instituta Cnuti) linked to the law codes list.</change>
+      <change when="2026-10-28">“Hn mon”, “Hn com” and “Hn cor” linked to their own law codes (Henry I’s decrees on the coinage and on the county and hundred courts; his coronation charter), not to the Leges Henrici.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,9 +37,10 @@
         <form type="lemma">
           <orth>c[h]arta</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">c[h]arta</hi> <hi rend="italic">Freibrief</hi> <ref type="lawCode" target="law:Hn">Hn</ref> 89,2; 2a; cartæ transcriptum, <hi rend="italic"><ref type="abbreviation" target="gram:wo"><abbr>wo</abbr></ref> <ref type="abbreviation" target="gram:also"><abbr>also</abbr></ref></hi> ~ = <hi rend="italic">Freibrief-Original <ref type="abbreviation" target="gram:oder"><abbr>oder</abbr></ref> <ref type="abbreviation" target="gram:nur"><abbr>nur</abbr></ref> dessen authentischer Text</hi>, <ref type="lawCode" target="law:Hn">Hn</ref> com Prot<hi rend="superscript">a</hi> | ~tæ instrumentum <hi rend="italic">Briefurkunde über Land</hi> <ref type="lawCode" target="law:Hn">Hn</ref> 70,22; ~ alodii ad eternam hereditatem <hi rend="italic">Befugnis</hi>, boc, <hi rend="italic">wodurch Land</hi> bocland <hi rend="italic">wird, zu erteilen</hi> <ref type="lawCode" target="law:InCn">In Cn</ref> III 46 | <hi rend="italic">Königsurkunde in Abschrift</hi> <ref type="lawCode" target="law:WiLad">Wl lad</ref> Insc <ref type="lawCode" target="law:Quadr">Q</ref><hi rend="superscript">1</hi>. <ref type="lawCode" target="law:WlEp">Wl ep</ref> Add; <hi rend="italic">in Original</hi> <ref type="lawCode" target="law:WiLond">Wl Lond</ref> L 1<hi rend="superscript">b</hi></dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">c[h]arta</hi> <hi rend="italic">Freibrief</hi> <ref type="lawCode" target="law:Hn">Hn</ref> 89,2; 2a; cartæ transcriptum, <hi rend="italic"><ref type="abbreviation" target="gram:wo"><abbr>wo</abbr></ref> <ref type="abbreviation" target="gram:also"><abbr>also</abbr></ref></hi> ~ = <hi rend="italic">Freibrief-Original <ref type="abbreviation" target="gram:oder"><abbr>oder</abbr></ref> <ref type="abbreviation" target="gram:nur"><abbr>nur</abbr></ref> dessen authentischer Text</hi>, <ref type="lawCode" target="law:HnComm">Hn com</ref> Prot<hi rend="superscript">a</hi> | ~tæ instrumentum <hi rend="italic">Briefurkunde über Land</hi> <ref type="lawCode" target="law:Hn">Hn</ref> 70,22; ~ alodii ad eternam hereditatem <hi rend="italic">Befugnis</hi>, boc, <hi rend="italic">wodurch Land</hi> bocland <hi rend="italic">wird, zu erteilen</hi> <ref type="lawCode" target="law:InCn">In Cn</ref> III 46 | <hi rend="italic">Königsurkunde in Abschrift</hi> <ref type="lawCode" target="law:WiLad">Wl lad</ref> Insc <ref type="lawCode" target="law:Quadr">Q</ref><hi rend="superscript">1</hi>. <ref type="lawCode" target="law:WlEp">Wl ep</ref> Add; <hi rend="italic">in Original</hi> <ref type="lawCode" target="law:WiLond">Wl Lond</ref> L 1<hi rend="superscript">b</hi></dictScrap>
         <xr type="lawCode"><ref target="clause:Hn_89-2">Hn 89,2</ref></xr>
         <xr type="lawCode"><ref target="clause:Hn_89-2a">Hn 89,2a</ref></xr>
+        <xr type="lawCode"><ref target="clause:HnComm_Prol">Hn com Prot</ref></xr>
         <xr type="lawCode"><ref target="clause:Hn_70-22">Hn 70,22</ref></xr>
         <xr type="lawCode"><ref target="clause:WiLad_Inscr">Wl lad Insc</ref></xr>
       </entry>

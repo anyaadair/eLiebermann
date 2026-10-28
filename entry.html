@@ -303,6 +303,8 @@ scripts:
                 const m = /\s((?:El|Rb|Z\.)\s.*|Pro.*|Insc.*|[\d].*)$/.exec(text);
                 rest = m ? ' ' + m[1] : '';
             }
+            // Liebermann's "Prot" (Protokoll): the opening of a charter or writ, the king's greeting and address
+            rest = rest.replace(/^ Prot\.?$/, ' Prot (the opening address)');
             if (code) a.title = codeTitle(code) + rest + ' in the laws database';
         });
     }
