@@ -26,8 +26,8 @@
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
-          <witness xml:id="wit-cb"><abbr>Cb</abbr></witness>
-          <witness xml:id="wit-hr"><abbr>Hr</abbr></witness>
+          <witness xml:id="wit-cb"><abbr>Cb</abbr> <note type="manuscript">Paris, Bibliothèque nationale de France, Lat. 4771, formerly Colbert 3860</note></witness>
+          <witness xml:id="wit-hr"><abbr>Hr</abbr> <note type="manuscript">London, British Library, Harley MS 1704</note></witness>
         </listWit>
       </sourceDesc>
     </fileDesc>
