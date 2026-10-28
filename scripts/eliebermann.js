@@ -602,10 +602,10 @@
                 open = attached && /^\s*$/.test(text);
                 // "Ine Bu 21,1. 23": a manuscript between the code and its number.
                 // After a passage and its manuscript the run goes on with ". 43", "; rihtwere 53",
-                // "| folgæres 20a", "(58 B)" or "14 B ff."; the paren of a manuscript reading
+                // "| folgæres 20a", "(58 B)", "14 B ff." or "Insc A. Pro."; the paren of a manuscript reading
                 // ("Had 3 O (~dran D). 4") has already become spaces.
                 if (code && code.fresh && /^\s+\d/.test(text)) { passages(text, pos); }
-                else if (code && last && /^\s*(?:\.\s*\(?\d|[;|]|\(\d|ff?\.)/.test(text)) { passages(text, pos); } else if (!/^\s*$/.test(text)) { code = code && /^[\s.]*$/.test(text) ? code : null; }
+                else if (code && last && /^\s*(?:\.\s*\(?(?:\d|Pro[lt]?\b|Insc|Epil)|[;|]|\(\d|ff?\.)/.test(text)) { passages(text, pos); } else if (!/^\s*$/.test(text)) { code = code && /^[\s.]*$/.test(text) ? code : null; }
                 continue;
             }
             if (QUALIFIERS.has(anchor)) {
