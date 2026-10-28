@@ -99,8 +99,9 @@ def link(scrap, entry_id, index):
                     start += 1
                 if plain.startswith('</hi>', start):
                     start += 5
-                end = plain.find('<', start)
-                end = len(plain) if end < 0 else end
+                # the list runs to the next tag, past an editor's note marker
+                nxt = re.compile(r'<(?!ptr type="editorNote")').search(plain, start)
+                end = nxt.start() if nxt else len(plain)
             node = plain[start:end]
             new, at = '', 0
             for tok, segs, _ in items:
