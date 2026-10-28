@@ -75,6 +75,9 @@ def wrap_token(token, segments):
         if k < 0:
             continue
         out += token[at:k]
+        # "Ead-" in an entry that only points: every Ead- word is listed, the first is linked
+        if len(ids) > 1 and seg.endswith('-') and not seg.startswith('-'):
+            ids = ids[:1]
         if len(ids) == 1 and re.search(r'[^\W\d_]', seg):
             out += '<ref type="entry" target="entry:%s">%s</ref>' % (ids[0], seg)
         else:

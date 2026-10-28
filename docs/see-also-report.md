@@ -3,7 +3,7 @@
 Made by `tools/see-also.py`. It is replaced each time the tool runs.
 
 ```
-Entries: 9091; changed: 5; links added: 0; wrong links removed: 0
+Entries: 9091; changed: 94; links added: 177; wrong links removed: 0
   siehe           found  5339, linked  4451
   sieheDort       found   584, linked   428
   sieheOben       found    62, linked     0
@@ -13,14 +13,15 @@ Entries: 9091; changed: 5; links added: 0; wrong links removed: 0
   sieheDortUnter  found     5, linked     0
   not linked, no entry with this headword (yet)               631
   linked, ~ filled in from the headword                       408
-  linked, the first word that begins so (a word ending in "-")   157
   not linked, no word found                                   156
   linked, linked to the word without the hyphen               142
   not linked, only the start or end of a word                 141
   linked, the spelling entry for these letters, from a spelling entry   120
+  linked, every word that begins so (a word ending in "-"), from an entry that only points   106
   not linked, part of a longer phrase, not a single headword    78
   linked, linked by a near spelling                            67
   linked, several entries have this headword, all linked       66
+  linked, the first word that begins so (a word ending in "-")    51
   linked, checked by hand                                      15
   not linked, no entry with this headword                      12
   linked, a grammatical entry, linked to the abbreviations list in the text    11
@@ -723,7 +724,7 @@ Entries: 9091; changed: 5; links added: 0; wrong links removed: 0
 - **beraeccean**: s. bereccean
 - **bernet**: s. bærnet / bærning
 - **bete**: s. twibete
-- **bewepn-i-an**: s. bewæpnan / bewæpnian
+- **bewepn-i-an**: s. bewæpnian / bewæpnan
 - **bewerdian**: s. beweardian
 - **bewyddod**: s. beweddod
 - **bicgan**: s. bycgan
@@ -791,7 +792,7 @@ Entries: 9091; changed: 5; links added: 0; wrong links removed: 0
 - **feohtan**: s. gefeohtan
 - **fera**: s. gefera
 - **fierran**: s. afiersian
-- **filst-an**: s. fylstan / fylst
+- **filst-an**: s. fylst / fylstan
 - **foreceap**: s. forceap
 - **foreiurare**: s. forisiurare
 - **forfang**: s. forefang
@@ -1078,166 +1079,6 @@ Entries: 9091; changed: 5; links added: 0; wrong links removed: 0
 - **wyta**: s. witan / wite
 - **yglise**: s. eglise
 - **ymcyme**: s. ymbcyme
-
-## Linked, the first word that begins so (a word ending in "-") (157)
-
-- **Aead**: s. Ead-
-- **Aead**: s. Ælf-
-- **Aed**: s. Ead-
-- **Aelfe**: s. Ælfhe-
-- **Aengl**: s. Engl-
-- **Alf**: s. Ælf-
-- **Alv**: s. Ælf-
-- **Dan**: s. Den-
-- **Ealf**: s. Ælf-
-- **Earningastraet**: s. Eormens-
-- **Ed**: s. Ead-
-- **Elv**: s. Ælf-
-- **Erc**: s. Eorc-
-- **Ermin**: s. Eorm-
-- **Hykenild**: s. Ice-
-- **London**: s. Lunden-
-- **Mirc**: s. Mier-
-- **Montfichet**: s. Mun-
-- **adc**: s. acc-
-- **adp**: s. app-
-- **adp**: s. acqu-
-- **ae-4**: s. lenden-
-- **alleg**: s. adl-
-- **aly**: s. alie-
-- **amaensum**: s. aman-
-- **amyrr**: s. amierr-
-- **arcebisceop**: s. ærce-
-- **awod**: s. aweod-
-- **awurp**: s. aweorp-
-- **awyr**: s. awier-
-- **beorm**: s. bearm-
-- **bir-i-g**: s. byrg-
-- **blauhornum**: s. blæsh-
-- **braec**: s. brec-
-- **bric**: s. brycg-
-- **cherc**: s. ciric-
-- **cies**: s. cys-
-- **ciet**: s. cyt-
-- **ciet**: s. cief-
-- **ciet**: s. cieg-
-- **cine**: s. cyn-
-- **cirl**: s. cierl-
-- **clansung**: s. clæns-
-- **clen**: s. clæn-
-- **cleop**: s. clip-
-- **coun**: s. cun-
-- **cov**: s. cuv-
-- **cwyd-2**: s. cwid-
-- **cyp**: s. ciep-
-- **cyric**: s. ciric-
-- **cyrlisc**: s. cier-
-- **d-6**: s. heimel-
-- **dehor**: s. deor-
-- **ding**: s. dyng-
-- **dirationare**: s. disr-
-- **donc**: s. dun-
-- **dozime**: s. dudz-
-- **duzime**: s. dudz-
-- **dyr**: s. dier-
-- **e-3**: s. hran-
-- **e-3**: s. Ead-
-- **e-3**: s. twih-
-- **ea**: s. Aelf-
-- **eadm**: s. eaðm-
-- **eala**: s. ealu-
-- **f**: s. flebo-
-- **festre**: s. cildf-
-- **flem**: s. fliem-
-- **flym**: s. fliem-
-- **forgem**: s. forgiem-
-- **forgif**: s. forgief-
-- **forgif**: s. forgiel-
-- **forlet**: s. forlæt-
-- **fors-2**: s. foris-
-- **fyndan**: s. fin-
-- **g**: s. þurhst-
-- **galdor**: s. gealdor-
-- **gar**: s. war-
-- **gebig**: s. gebycg-
-- **geceorr**: s. gecier-
-- **gecwed**: s. gecwyd-
-- **geeald**: s. geheald-
-- **gehald**: s. geheald-
-- **gehynan**: s. gehie-
-- **geon-d-byrdan**: s. geandb-
-- **gered**: s. geræd-
-- **gesom**: s. gesam-
-- **geswyc**: s. geswic-
-- **getreowan**: s. getriew-
-- **getriow**: s. getreo-
-- **getriow**: s. getrie-
-- **geweorcan**: s. gewyr-
-- **gewircan**: s. gewyr-
-- **gewur**: s. geweor-
-- **gime**: s. gieme-
-- **girn**: s. giern-
-- **greahund**: s. greih-
-- **grym**: s. grim-
-- **gyme**: s. gieme-
-- **gyrd**: s. giern-
-- **h**: s. lah-
-- **hald**: s. heald-
-- **halid**: s. haligd-
-- **hels**: s. heals-
-- **hemold**: s. heimel-
-- **herit**: s. erit-
-- **hernes**: s. hier-
-- **herteam**: s. heret-
-- **hiled**: s. gehel-
-- **hir**: s. hier-
-- **hwyl**: s. hwil-
-- **hymbre**: s. Norðh-
-- **hyran**: s. hier-
-- **inp**: s. imp-
-- **io**: s. deor-
-- **kirch**: s. ciric-
-- **kirk**: s. ciric-
-- **lag**: s. lah-
-- **landi**: s. landge-
-- **lichfe**: s. læcef-
-- **me-d-der**: s. medr-
-- **medm**: s. medem-
-- **mex**: s. meox-
-- **ministerium**: s. myst-
-- **oncecgan**: s. onse-
-- **parroch**: s. paro-
-- **pre**: s. prae-
-- **raest**: s. rest-
-- **raine**: s. hran-
-- **raine**: s. regn-
-- **ran**: s. samw-
-- **seisi**: s. saisi-
-- **slyfe**: s. slie-
-- **somhwelc**: s. sam-
-- **spaec**: s. spræ-
-- **spec**: s. spre-
-- **spraece-nd**: s. sprec-
-- **syrw**: s. sier-
-- **t**: s. Went-
-- **thyf**: s. þief-
-- **tige**: s. tyge-
-- **tihl**: s. tihtl-
-- **tryw**: s. triew-
-- **tryw**: s. truw-
-- **tungrav**: s. tunes-
-- **twy**: s. twi-
-- **uthlah**: s. utl-
-- **utleapan**: s. uthl-
-- **vu**: s. wulf-
-- **w**: s. wiern-
-- **ward**: s. weard-
-- **weal**: s. wæl-
-- **wihte**: s. gew-
-- **wuna**: s. woruldgew-
-- **wuna**: s. gew-
-- **wyld**: s. wild-
-- **yrf**: s. ierf-
 
 ## Not linked, no word found (156)
 
@@ -1810,6 +1651,115 @@ Entries: 9091; changed: 5; links added: 0; wrong links removed: 0
 - **v-2**: s. b
 - **w**: s. y
 
+## Linked, every word that begins so (a word ending in "-"), from an entry that only points (106)
+
+- **Aead**: s. Ead-
+- **Aead**: s. Ælf-
+- **Aed**: s. Ead-
+- **Aelfe**: s. Ælfhe-
+- **Aengl**: s. Engl-
+- **Alf**: s. Ælf-
+- **Dan**: s. Den-
+- **Ealf**: s. Ælf-
+- **Earningastraet**: s. Eormens-
+- **Ed**: s. Ead-
+- **Elv**: s. Ælf-
+- **Erc**: s. Eorc-
+- **Ermin**: s. Eorm-
+- **Hykenild**: s. Ice-
+- **Mirc**: s. Mier-
+- **Montfichet**: s. Mun-
+- **aly**: s. alie-
+- **amaensum**: s. aman-
+- **amyrr**: s. amierr-
+- **arcebisceop**: s. ærce-
+- **awod**: s. aweod-
+- **awurp**: s. aweorp-
+- **awyr**: s. awier-
+- **beorm**: s. bearm-
+- **bir-i-g**: s. byrg-
+- **blauhornum**: s. blæsh-
+- **braec**: s. brec-
+- **cies**: s. cys-
+- **ciet**: s. cyt-
+- **ciet**: s. cief-
+- **ciet**: s. cieg-
+- **cine**: s. cyn-
+- **cirl**: s. cierl-
+- **clansung**: s. clæns-
+- **clen**: s. clæn-
+- **cleop**: s. clip-
+- **coun**: s. cun-
+- **cwyd-2**: s. cwid-
+- **dehor**: s. deor-
+- **ding**: s. dyng-
+- **dyr**: s. dier-
+- **eadm**: s. eaðm-
+- **eala**: s. ealu-
+- **festre**: s. cildf-
+- **forgem**: s. forgiem-
+- **forgif**: s. forgief-
+- **forgif**: s. forgiel-
+- **forlet**: s. forlæt-
+- **fyndan**: s. fin-
+- **galdor**: s. gealdor-
+- **gebig**: s. gebycg-
+- **geceorr**: s. gecier-
+- **gecwed**: s. gecwyd-
+- **geeald**: s. geheald-
+- **gehald**: s. geheald-
+- **gehynan**: s. gehie-
+- **geon-d-byrdan**: s. geandb-
+- **gered**: s. geræd-
+- **gesom**: s. gesam-
+- **geswyc**: s. geswic-
+- **getreowan**: s. getriew-
+- **getriow**: s. getreo-
+- **getriow**: s. getrie-
+- **geweorcan**: s. gewyr-
+- **gewircan**: s. gewyr-
+- **gewur**: s. geweor-
+- **gime**: s. gieme-
+- **girn**: s. giern-
+- **greahund**: s. greih-
+- **grym**: s. grim-
+- **gyme**: s. gieme-
+- **gyrd**: s. giern-
+- **hald**: s. heald-
+- **halid**: s. haligd-
+- **hels**: s. heals-
+- **hemold**: s. heimel-
+- **hernes**: s. hier-
+- **herteam**: s. heret-
+- **hiled**: s. gehel-
+- **hir**: s. hier-
+- **hwyl**: s. hwil-
+- **hymbre**: s. Norðh-
+- **hyran**: s. hier-
+- **lag**: s. lah-
+- **landi**: s. landge-
+- **lichfe**: s. læcef-
+- **medm**: s. medem-
+- **mex**: s. meox-
+- **oncecgan**: s. onse-
+- **raest**: s. rest-
+- **raine**: s. hran-
+- **raine**: s. regn-
+- **slyfe**: s. slie-
+- **spaec**: s. spræ-
+- **spec**: s. spre-
+- **spraece-nd**: s. sprec-
+- **syrw**: s. sier-
+- **thyf**: s. þief-
+- **tihl**: s. tihtl-
+- **tryw**: s. triew-
+- **tryw**: s. truw-
+- **tungrav**: s. tunes-
+- **twy**: s. twi-
+- **weal**: s. wæl-
+- **wuna**: s. woruldgew-
+- **wyld**: s. wild-
+
 ## Not linked, part of a longer phrase, not a single headword (78)
 
 - **Activ**: s. Unpersönliche
@@ -2029,6 +1979,60 @@ Entries: 9091; changed: 5; links added: 0; wrong links removed: 0
 - **wesan**: s. beon (beon-2, beon)
 - **y**: s. isen (isen-2, isen)
 - **ysen**: s. isen (isen-2, isen)
+
+## Linked, the first word that begins so (a word ending in "-") (51)
+
+- **Alv**: s. Ælf-
+- **London**: s. Lunden-
+- **adc**: s. acc-
+- **adp**: s. app-
+- **adp**: s. acqu-
+- **ae-4**: s. lenden-
+- **alleg**: s. adl-
+- **bric**: s. brycg-
+- **cherc**: s. ciric-
+- **cov**: s. cuv-
+- **cyp**: s. ciep-
+- **cyric**: s. ciric-
+- **cyrlisc**: s. cier-
+- **d-6**: s. heimel-
+- **dirationare**: s. disr-
+- **donc**: s. dun-
+- **dozime**: s. dudz-
+- **duzime**: s. dudz-
+- **e-3**: s. hran-
+- **e-3**: s. Ead-
+- **e-3**: s. twih-
+- **ea**: s. Aelf-
+- **f**: s. flebo-
+- **flem**: s. fliem-
+- **flym**: s. fliem-
+- **fors-2**: s. foris-
+- **g**: s. þurhst-
+- **gar**: s. war-
+- **h**: s. lah-
+- **herit**: s. erit-
+- **inp**: s. imp-
+- **io**: s. deor-
+- **kirch**: s. ciric-
+- **kirk**: s. ciric-
+- **me-d-der**: s. medr-
+- **ministerium**: s. myst-
+- **parroch**: s. paro-
+- **pre**: s. prae-
+- **ran**: s. samw-
+- **seisi**: s. saisi-
+- **somhwelc**: s. sam-
+- **t**: s. Went-
+- **tige**: s. tyge-
+- **uthlah**: s. utl-
+- **utleapan**: s. uthl-
+- **vu**: s. wulf-
+- **w**: s. wiern-
+- **ward**: s. weard-
+- **wihte**: s. gew-
+- **wuna**: s. gew-
+- **yrf**: s. ierf-
 
 ## Linked, checked by hand (15)
 

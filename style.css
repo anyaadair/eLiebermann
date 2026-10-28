@@ -384,6 +384,7 @@ td.term { font-weight: 600; color: var(--navy-dark); white-space: nowrap; }
 .lang-badge.de { background: #ece6f2; }
 .lang-badge.prop { background: #f7e0e5; }
 .lang-badge.spelling { background: #f4eccd; }
+.lang-badge.xref { background: #e4e8ef; }
 .spelling-note { color: var(--muted); font-size: 0.95rem; margin: 0.6rem 0 1.2rem; }
 
 .entry-header h1 { margin-bottom: 0.2rem; }

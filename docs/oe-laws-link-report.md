@@ -3,23 +3,25 @@
 Made by `tools/link-citations.py --letter ALL`. It is replaced each time the tool runs.
 
 ```
-All entries: 9091 (with a law code citation list: 6418)
-Citations in their lists: 31307
-  linked, exact             527
-  linked, subclause          16
-  linked, parent clause       1
-  linked, correction          2
-  linked, already linked  29440
-  LINKED TO A CLAUSE:       29986  (96% of all citations; 99% of those with a clause number to a code in the database)
-  not linked, clause not found            215
+All entries: 9091 (with a law code citation list: 6433)
+Citations in their lists: 31408
+  linked, exact             997
+  linked, subclause          22
+  linked, and-following       5
+  linked, instituta           2
+  linked, prologue            2
+  linked, parent clause       3
+  linked, already linked  29042
+  LINKED TO A CLAUSE:       30073  (96% of all citations; 99% of those with a clause number to a code in the database)
+  not linked, clause not found            228
   not linked, citation not understood       1
   not linked, code not in database       1104
-Entries changed: 34; entries whose whole list is linked: 5598
+Entries changed: 90; entries whose whole list is linked: 5609
 ```
 
 ## The code is in the database but no clause file has that number
 
-By code: Ath (34), Ger (33), Iudex (19), Af (15), IICn (13), VAs (10), Ine (8), ICn (6), IIAs (6), IIAtr (5), Grith (4), IudDeiV (3), IIIEm (3), IIEg (3), VIAs (3)
+By code: Ath (34), Ger (33), Iudex (19), Af (15), InCn (13), IICn (13), VAs (10), Ine (8), ICn (6), IIAs (6), IIAtr (5), Grith (4), IudDeiV (3), IIIEm (3), IIEg (3)
 
 Citations (with how many times each occurs):
 
@@ -33,6 +35,7 @@ Citations (with how many times each occurs):
 - II Cn Insc ×3
 - Af El 42,1 ×2
 - Grið Insc ×2
+- In Cn II 30,6 ×2
 - Rect Insc ×2
 - V Atr 42,2 ×2
 - AGu 8
@@ -82,7 +85,6 @@ Citations (with how many times each occurs):
 - II As 34
 - II As 43,1
 - II As 44
-- II As 6,4
 
 ## The code has no clause files
 
