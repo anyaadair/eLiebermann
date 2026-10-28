@@ -25,6 +25,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-10-28">“von” unlinked from the abbreviations list: here it is ordinary German, not an abbreviation (Anya Adair).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -33,7 +34,7 @@
         <form type="lemma">
           <orth>[-beri]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-beri]</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref> <ref type="abbreviation" target="gram:von"><abbr>von</abbr></ref></hi> burg; <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:Saresberiensis">Saresberiensis</ref>, <ref type="entry" target="entry:Sceaftesbyrig">Sceaftesbyrig</ref></dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-beri]</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref> von</hi> burg; <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:Saresberiensis">Saresberiensis</ref>, <ref type="entry" target="entry:Sceaftesbyrig">Sceaftesbyrig</ref></dictScrap>
         <xr type="derivative"><ref target="entry:Saresberiensis">Saresberiensis</ref></xr>
         <xr type="derivative"><ref target="entry:Sceaftesbyrig">Sceaftesbyrig</ref></xr>
       </entry>

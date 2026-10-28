@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-12">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-10-28">“von” unlinked from the abbreviations list: here it is ordinary German, not an abbreviation (Anya Adair).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -34,7 +35,7 @@
         <form type="lemma">
           <orth>þeodrede</orth>
         </form>
-        <dictScrap type="liebermann">be <hi rend="bold">þeodrede</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>, Bischof <ref type="abbreviation" target="gram:von"><abbr>von</abbr></ref> London, Beamter Aethelstans</hi> <ref type="lawCode" target="law:VIAs">VI As</ref> 12,1</dictScrap>
+        <dictScrap type="liebermann">be <hi rend="bold">þeodrede</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>, Bischof von London, Beamter Aethelstans</hi> <ref type="lawCode" target="law:VIAs">VI As</ref> 12,1</dictScrap>
         <xr type="lawCode"><ref target="clause:VIAs_12-1">VI As 12,1</ref></xr>
       </entry>
     </body>

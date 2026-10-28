@@ -1,13 +1,17 @@
 #!/usr/bin/env python3
 """
-Links two of Liebermann's signs to the list of grammatical abbreviations
+Links Liebermann's sic sign to the list of grammatical abbreviations
 (data/markforward.json), in Liebermann's text of every entry:
 
   - "!" straight after a form in roman type (gefearam!, ~!) is his "sic":
     <ref type="abbreviation" target="gram:sic"><abbr>!</abbr></ref>.
     An "!" in his German (italic: "lasst uns!") is an ordinary exclamation
     mark and is left alone.
-  - "von" in his German (italic) is linked to gram:von.
+
+"von" is no longer linked automatically: it is mostly ordinary German. It is
+linked by hand in the lists of spellings that differ from West Saxon ("-a-
+abweichend von ws. Lauten 1) von e"), where the list explains it, and is
+marked "Link automatically": "no" in data/markforward.json.
 
 Text already inside a link is left alone, so it can be run again safely.
 New entries get the same links from the Suggest a change form and the import,
@@ -20,7 +24,6 @@ import glob, os, re, sys
 os.chdir(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
 TOK = re.compile(r'(<[^>]+>)')
 SIC = '<ref type="abbreviation" target="gram:sic"><abbr>!</abbr></ref>'
-VON = '<ref type="abbreviation" target="gram:von"><abbr>von</abbr></ref>'
 
 
 def fix(inner, counts):
@@ -35,10 +38,7 @@ def fix(inner, counts):
         italic = any(n == 'hi' and 'italic' in t for n, t in stack)
         if any(n in ('ref', 'abbr') for n, t in stack):
             continue
-        if italic:
-            p, k = re.subn(r'(?<![\w-])von(?![\w-])', VON, p)
-            counts['von'] += k
-        else:
+        if not italic:
             p, k = re.subn(r'!', SIC, p)
             counts['!'] += k
         parts[i] = p
@@ -47,7 +47,7 @@ def fix(inner, counts):
 
 def main():
     dry = '--dry-run' in sys.argv
-    counts, files = {'!': 0, 'von': 0}, 0
+    counts, files = {'!': 0}, 0
     for f in sorted(glob.glob('entries/*.xml')):
         s = open(f, encoding='utf-8').read()
         new = re.sub(r'(<dictScrap type="(?:liebermann|senses)">)(.*?)(</dictScrap>)',
@@ -55,7 +55,7 @@ def main():
         if new != s:
             files += 1
             if not dry: open(f, 'w', encoding='utf-8').write(new)
-    print(f'{files} entries; "!" linked {counts["!"]}, "von" linked {counts["von"]}' + (' (dry run)' if dry else ''))
+    print(f'{files} entries; "!" linked {counts["!"]}' + (' (dry run)' if dry else ''))
 
 
 if __name__ == '__main__':
