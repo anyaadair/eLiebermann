@@ -300,7 +300,7 @@ scripts:
         const links = e.xref ? '' : dictionaryCards(e);
         const citations = e.xref ? '' : citationList(e);
         const page = e.page ? `Liebermann, <cite>Gesetze</cite> II.1, p. ${esc(e.page)}` : '';
-        const changes = e.changes.map(c => `${esc(c.when)}: ${esc(c.text.replace(/\.$/, ''))}`).join('; ');
+        // The history of changes (<revisionDesc>) stays in the entry file but is not shown on the page.
         const scan = scanEmbed(e.facsimile);
 
         const body = `
@@ -316,7 +316,7 @@ scripts:
             <h2>Liebermann's entry</h2>
             <div class="liebermann-text">${e.original ? paragraphs(ELieb.renderTei(e.original, root), e.lang === 'de') : ''}</div>
             ${e.editorNotes.map(editorNote).join('')}
-            ${e.spelling ? `<p class="spelling-note">This headword refers to a scribal spelling: the entry is Liebermann's note on how scribes of the legal MSS write a certain sound or letter combination.</p>` : ''}
+            ${e.spelling ? `<p class="spelling-note">Headword refers to a scribal spelling: Liebermann's note on how a certain sound or letter combination is written in the MSS.</p>` : ''}
             ${e.xref ? '' : `<p class="small muted reading-help">Click a <span class="link-key link-key--law">law code</span>, <span class="link-key link-key--ms">manuscript</span> or <span class="link-key link-key--gram">German term or abbreviation</span> or <span class="link-key link-key--bib">author or work cited</span> to see what it stands for, or a <span class="link-key link-key--clause">clause number</span> to read that clause.</p><p class="small muted reading-help reading-help--tilde">Liebermann's ~ repeats as much of the headword or preceding word as stays the same (e.g. under <i>abbod</i>, ~des is <i>abbodes</i>). <a href="${root}guide.html">How to read an entry</a>.</p>`}
         </section>
 
@@ -341,7 +341,7 @@ scripts:
         </div>
 
         <p class="source-line">
-            ${page ? page + '. ' : ''}${changes ? `History: ${changes}. ` : ''}
+            ${page ? page + '. ' : ''}
             <a href="${root}entries/${encodeURIComponent(slug)}.xml">View the TEI file</a> ·
             <a href="https://github.com/anyaadair/eLiebermann/blob/main/entries/${encodeURIComponent(slug)}.xml">Edit on GitHub</a>
         </p>`;
