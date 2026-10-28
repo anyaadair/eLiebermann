@@ -34,7 +34,7 @@
         <form type="lemma">
           <orth>els</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">F</lbl> <hi rend="bold">els</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> le, lui</dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">F</lbl> <hi rend="bold">els</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:le">le</ref>, <ref type="entry" target="entry:lui">lui</ref></dictScrap>
         <xr type="see"><ref target="entry:le">le</ref></xr>
         <xr type="see"><ref target="entry:lui">lui</ref></xr>
       </entry>

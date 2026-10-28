@@ -34,7 +34,9 @@
         <form type="lemma">
           <orth>[-mang]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-mang]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> (on)gem~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-mang]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> (<ref type="entry" target="entry:ongemang">on</ref>)<ref type="entry" target="entry:geman-g">gem~</ref></dictScrap>
+        <xr type="see"><ref target="entry:ongemang">ongemang</ref></xr>
+        <xr type="see"><ref target="entry:geman-g">geman[g]</ref></xr>
       </entry>
     </body>
   </text>

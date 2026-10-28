@@ -33,7 +33,9 @@
         <form type="lemma">
           <orth>[-wintred]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-wintred]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> (un)gew~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-wintred]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> (<ref type="entry" target="entry:ungewintred">un</ref>)<ref type="entry" target="entry:gewintred">gew~</ref></dictScrap>
+        <xr type="see"><ref target="entry:ungewintred">ungewintred</ref></xr>
+        <xr type="see"><ref target="entry:gewintred">gewintred</ref></xr>
       </entry>
     </body>
   </text>

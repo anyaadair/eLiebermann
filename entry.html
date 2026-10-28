@@ -122,9 +122,14 @@ scripts:
         return `<p class="editor-note"${id ? ` id="${esc(id)}"` : ''}><span class="editor-note__label">Editor’s note.</span> ${ELieb.renderTei(n, root)}${back}</p>`;
     }
 
+    // See and Compare lists in alphabetical order, as in the Dictionary.
     function xrList(e, type) {
-        return e.xr.filter(x => x.getAttribute('type') === type)
-            .map(x => `<li>${ELieb.renderTei(x, root)}</li>`).join('');
+        const list = e.xr.filter(x => x.getAttribute('type') === type);
+        if (type === 'see' || type === 'compare') {
+            const key = x => ELieb.alphaKey(x.textContent.replace(/\s+/g, ' ').trim().replace(/^[\[(-]+/, ''));
+            list.sort((a, b) => key(a) < key(b) ? -1 : key(a) > key(b) ? 1 : 0);
+        }
+        return list.map(x => `<li>${ELieb.renderTei(x, root)}</li>`).join('');
     }
 
     // Links to the same word in other dictionaries (Bosworth-Toller and so
@@ -317,7 +322,7 @@ scripts:
             <div class="liebermann-text">${e.original ? paragraphs(ELieb.renderTei(e.original, root), e.lang === 'de') : ''}</div>
             ${e.editorNotes.map(editorNote).join('')}
             ${e.spelling ? `<p class="spelling-note">Headword refers to a scribal spelling: Liebermann's note on how a certain sound or letter combination is written in the MSS.</p>` : ''}
-            ${e.xref ? '' : `<p class="small muted reading-help">Click a <span class="link-key link-key--law">law code</span>, <span class="link-key link-key--ms">manuscript</span> or <span class="link-key link-key--gram">German term or abbreviation</span> or <span class="link-key link-key--bib">author or work cited</span> to see what it stands for, or a <span class="link-key link-key--clause">clause number</span> to read that clause.</p><p class="small muted reading-help reading-help--tilde">Liebermann's ~ repeats as much of the headword or preceding word as stays the same (e.g. under <i>abbod</i>, ~des is <i>abbodes</i>). <a href="${root}guide.html">How to read an entry</a>.</p>`}
+            ${e.xref ? '' : `<p class="small muted reading-help">Click a <span class="link-key link-key--law">law code</span>, <span class="link-key link-key--ms">manuscript</span> or <span class="link-key link-key--gram">German term or abbreviation</span> or <span class="link-key link-key--bib">author or work cited</span> to see what it stands for, or a <span class="link-key link-key--clause">clause number</span> to read that clause, or a <span class="link-key link-key--entry">word Liebermann refers to</span> to go to its entry.</p><p class="small muted reading-help reading-help--tilde">Liebermann's ~ repeats as much of the headword or preceding word as stays the same (e.g. under <i>abbod</i>, ~des is <i>abbodes</i>). <a href="${root}guide.html">How to read an entry</a>.</p>`}
         </section>
 
         ${/* An English translation of the definition (<sense type="translation">)
@@ -328,7 +333,7 @@ scripts:
             <section class="entry-section"><h2>Liebermann's definition</h2>${senses(e.definition)}</section>
         </div>` : ''}
 
-        ${see ? `<section class="entry-section"><h2>${e.xref ? 'See' : 'See also'}</h2><ul${linkCols(see)}>${see}</ul></section>` : ''}
+        ${see ? `<section class="entry-section"><h2>${e.xref || e.spelling ? 'See' : 'See also'}</h2><ul${linkCols(see)}>${see}</ul></section>` : ''}
         ${compare ? `<section class="entry-section"><h2>Compare</h2><ul${linkCols(compare)}>${compare}</ul></section>` : ''}
         ${links ? `<section class="entry-section"><h2>Other dictionaries</h2><p class="dict-wip"><span class="dict-wip__tag">⚠ Under construction</span> The work of linking to external dictionaries is ongoing. A semi-automated process is used to guess Bosworth-Toller links in the first instance, so note that some words may be incorrectly linked to Bosworth-Toller entries until checked by the editor.</p>${links}</section>` : ''}
         ${citations ? `<section class="entry-section"><h2>Law code citations</h2><div class="citation-groups">${citations}</div></section>` : ''}

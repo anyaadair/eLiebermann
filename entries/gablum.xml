@@ -34,7 +34,7 @@
         <form type="lemma">
           <orth>gablum</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">gablum</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> gafol <ref type="lawCode" target="law:I">I</ref></dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">gablum</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:gafol">gafol</ref> <ref type="lawCode" target="law:I">I</ref></dictScrap>
         <xr type="see"><ref target="entry:gafol">gafol</ref></xr>
       </entry>
     </body>
