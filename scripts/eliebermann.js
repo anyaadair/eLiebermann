@@ -579,8 +579,14 @@
         const re = /\u0001([^\u0002]*)\u0002([^\u0003]*)\u0003/g;
         let m = re.exec(flat);
         passages(m ? flat.slice(0, m.index) : flat, 0);
+        // "Cons Cn: I 11. II 13,1": the Consiliatio Cnuti cited by its own parts, I and II
+        // (its versions of I and II Cnut), the numerals linked to I/II Cnut
+        let consNext = false;
         while (m) {
             const anchor = m[1];
+            const part = m[2].trim();
+            const cons = (consNext || (code && code.anchor === 'ConsCn')) && (anchor === 'ICn' || anchor === 'IICn') && /^I{1,2}$/.test(part);
+            consNext = false;
             // A code Liebermann gives by its numeral alone ("III Atr 3,2. IV 1",
             // linked to IVAtr by tools/series-citations.py) is written out in
             // full in the list: "IV Atr", "Iud Dei VII", "VIIa Atr".
@@ -620,6 +626,7 @@
                 // passage (Af 41), not the manuscript, so the letter is not added to it.
                 const attached = open && last && !/^\s*:/.test(text);
                 if (anchor === 'ConsCn' || anchor === 'Quadr' && /^\s*:/.test(text) || anchor === 'InCn' && /^\s*:/.test(text)) code = null;
+                if (anchor === 'ConsCn' && /^\s*:?\s*$/.test(text)) { consNext = true; open = false; continue; }
                 // "VI Atr 2 L", "VI Atr 32. 32,1 L": the citations just found, in a row, are the
                 // Latin version's (VI Atr Lat 2); found() is told each replaces the one found
                 // at that place (fifth argument).
@@ -647,7 +654,7 @@
                 passages(text, pos);
                 continue;
             }
-            code = { anchor, label, fresh: true };
+            code = cons ? { anchor: 'ConsCn', label: 'Cons Cn ' + part, fresh: true } : { anchor, label, fresh: true };
             passages(text, pos);
         }
     }

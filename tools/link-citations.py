@@ -185,6 +185,13 @@ class Clauses:
         key = norm_clause(rest)
         if key in files:
             return 'exact', files[key]
+        # "Cons Cn II 13,1": the Consiliatio's text of I and II Cnut is printed (and kept in
+        # the database) with I and II Cnut, so it is on the I/II Cn clause page; only
+        # passages that are its own (II 19,2a–d …) have a Cons Cn page, found above
+        cons = re.match(r'^(I{1,2})\s+(\S.*)$', rest) if anchor == 'ConsCn' else None
+        if cons:
+            how, cid = self.find({'I': 'ICn', 'II': 'IICn'}[cons.group(1)], cons.group(1) + ' Cn ' + cons.group(2))
+            return ('Cons Cn, on the ' + cons.group(1) + ' Cn page: ' + how if cid else how), cid
         ff = re.match(r'^(\S*?\d+[a-z]??)\s*ff?\.?$', rest)    # "Swer 7ff.", "7 f.": and following; to the first
         if ff and norm_clause(ff.group(1)) in files:
             return 'and-following', files[norm_clause(ff.group(1))]
