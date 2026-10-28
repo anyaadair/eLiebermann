@@ -112,7 +112,7 @@ const ENTRY_FILES = [{% for f in entry_files %}"{{ f.basename }}"{% unless forlo
             <ul class="entry-list">${byLetter[l].map(e => `
                 <li>
                     <a class="headword" href="${root}entry.html?id=${encodeURIComponent(e.id)}">${esc(e.hw)}</a>
-                    ${ELieb.languageBadge(e.lang, e.hw)}${e.spelling ? ' <span class="lang-badge spelling" title="A spelling, not a word">Spelling</span>' : ''}${e.xref ? ' <span class="lang-badge xref" title="This entry only sends you to another headword (Liebermann’s “s.”)">Cross-reference</span>' : ''}
+                    ${ELieb.languageBadge(e.lang, e.hw)}${e.spelling ? ' <span class="lang-badge spelling" title="A spelling, not a word">Spelling</span>' : ''}${e.xref ? ' <span class="lang-badge xref" title="This entry only sends you to another headword (Liebermann’s “s.”)">Cross-reference entry</span>' : ''}
                     <span class="gloss">${esc(e.gloss || '')}</span>
                 </li>`).join('')}
             </ul>`).join('');

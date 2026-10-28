@@ -379,7 +379,7 @@ scripts:
         <header class="entry-header">
             <h1>${esc(e.headword)}${e.n ? ` <sup>${esc(e.n)}</sup>` : ''}</h1>
             <div class="meta">
-                <span class="lang-badge ${esc(e.lang)}">${esc(e.language)}</span>${e.spelling ? '<span class="lang-badge spelling" title="A spelling, not a word">Spelling</span>' : ELieb.isProperNoun(e.headword, e.lang) ? ELieb.properNounBadge() : ''}${e.xref ? ' <span class="lang-badge xref" title="This entry only sends you to another headword (Liebermann’s “s.”): a variant spelling or a form entered elsewhere">Cross-reference</span>' : ''}
+                <span class="lang-badge ${esc(e.lang)}">${esc(e.language)}</span>${e.spelling ? '<span class="lang-badge spelling" title="A spelling, not a word">Spelling</span>' : ELieb.isProperNoun(e.headword, e.lang) ? ELieb.properNounBadge() : ''}${e.xref ? ' <span class="lang-badge xref" title="This entry only sends you to another headword (Liebermann’s “s.”): a variant spelling or a form entered elsewhere">Cross-reference entry</span>' : ''}
                 ${page ? `<span>${page}${e.facsimile ? ` · <a href="${esc(ELieb.safeUrl(e.facsimile))}" target="_blank" rel="noopener">page scan</a>` : ''}</span>` : ''}
             </div>
         </header>
