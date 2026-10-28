@@ -3,10 +3,10 @@
 Made by `tools/see-also.py`. It is replaced each time the tool runs.
 
 ```
-Entries: 9091; changed: 0; links added: 0; wrong links removed: 0
-  vergleiche      found  1359, linked   825
+Entries: 9091; changed: 18; links added: 18; wrong links removed: 0
+  vergleiche      found  1379, linked   843
   not linked, no word found                                   212
-  not linked, no entry with this headword (yet)               174
+  not linked, no entry with this headword (yet)               176
   not linked, part of a longer phrase, not a single headword    69
   linked, ~ filled in from the headword                        33
   not linked, only the start or end of a word                  27
@@ -235,7 +235,7 @@ Entries: 9091; changed: 0; links added: 0; wrong links removed: 0
 - **wulfesheved**: vgl. 
 - **ymb**: vgl. 
 
-## Not linked, no entry with this headword (yet) (174)
+## Not linked, no entry with this headword (yet) (176)
 
 - **Adjectiv**: vgl. Genetiv
 - **Cantuaria**: vgl. Cantwarabyrig
@@ -262,6 +262,7 @@ Entries: 9091; changed: 0; links added: 0; wrong links removed: 0
 - **Umlaut**: vgl. die
 - **Wortstellung**: vgl. ‘Praeposition’
 - **abjurare**: vgl. forisjurare
+- **aefter**: vgl. secundus
 - **aegilde**: vgl. insolutus
 - **aegilde**: vgl. inpersolutus
 - **aegilde**: vgl. -ubilis
@@ -309,6 +310,7 @@ Entries: 9091; changed: 0; links added: 0; wrong links removed: 0
 - **gafolraeden**: vgl. rædegafol
 - **geleod**: vgl. gelonda
 - **gelic**: vgl. heafodgemaca
+- **gelic**: vgl. pares
 - **geneat**: vgl. militans
 - **geogod**: vgl. iuventa
 - **gesid**: vgl. langob

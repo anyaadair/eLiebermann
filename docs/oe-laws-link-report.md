@@ -5,16 +5,15 @@ Made by `tools/link-citations.py --letter ALL`. It is replaced each time the too
 ```
 All entries: 9091 (with a law code citation list: 6418)
 Citations in their lists: 31307
-  linked, exact             140
-  linked, subclause           9
+  linked, exact             875
+  linked, subclause          20
   linked, parent clause       2
-  linked, correction          1
-  linked, already linked  29835
-  LINKED TO A CLAUSE:       29987  (96% of all citations; 99% of those with a clause number to a code in the database)
+  linked, already linked  29089
+  LINKED TO A CLAUSE:       29986  (96% of all citations; 99% of those with a clause number to a code in the database)
   not linked, clause not found            215
   not linked, citation not understood       1
   not linked, code not in database       1104
-Entries changed: 5; entries whose whole list is linked: 5598
+Entries changed: 37; entries whose whole list is linked: 5598
 ```
 
 ## The code is in the database but no clause file has that number

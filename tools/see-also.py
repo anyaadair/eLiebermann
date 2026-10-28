@@ -111,6 +111,14 @@ ZB = re.compile(r'\s*(?:</hi>\s*)?(?:<hi rend="italic">\s*)?<ref type="abbreviat
 # text (tools/link-headwords.py): [(kind, n-th abbreviation, raw token, [(segment, ids)])]
 INLINE = []
 
+# "þas (unter þes)", "mæn (unter mann)", "dæð (3. sg. unter don)", "eart [unter eom]": Liebermann sends the reader to
+# the word after "unter" (under), where the form is entered. The list is read on past the bracket,
+# and the word after "unter" is linked instead of the form. UNTER is the italic "unter" in the
+# markup; UNTER_FORMS records, per entry, the forms so replaced, whose old links are taken off.
+UNTER = re.compile(r'<hi rend="italic">((?:[^<]|<(?!/?hi\b)[^>]*>){0,200}?\bunter)</hi>')
+UNTER_BRACKET = re.compile(r'\s*[(\[](?:[^()\[\]]*?\s)?unter\s+([^\s()\[\],;<]+)[)\]]|\s+unter\s+([^\s\[\],;<]+(?:\([^()\s]+\))?[^\s\[\],;<()]*)')
+UNTER_FORMS = collections.defaultdict(set)
+
 
 def read(path):
     with open(path, encoding='utf-8', newline='') as f:
@@ -175,6 +183,9 @@ def respellings(word):
     for a, b in swaps:
         for m in re.finditer(re.escape(a), word):
             out.add(word[:m.start()] + b + word[m.end():])
+    # a verb in -cean, -gean: feccean / feccan, (ge)þencean / þencan
+    if re.search(r'[cg]ean$', word):
+        out.add(word[:-3] + 'an')
     out.discard(word)
     return out
 
@@ -293,6 +304,7 @@ def words(text, backwards=False):
     first thing that is not a word or comma; going backwards, at the last."""
     out = []
     words.left = words.right = ''
+    words.unter = []
     if not backwards:
         rest = text
         while True:
@@ -301,6 +313,16 @@ def words(text, backwards=False):
                 break
             out.append(m.group(1))
             rest = rest[m.end():]
+            um = UNTER_BRACKET.match(rest)
+            if um:
+                # "þas (unter þes)": the word after "unter" stands for the form
+                to = um.group(1) or um.group(2)
+                if re.search(r'\bauch\s+unter', um.group(0)):
+                    out.append(to)          # "man [auch unter manige]": both
+                else:
+                    words.unter.append((out[-1], to))
+                    out[-1] = to
+                rest = rest[um.end():]
             if DERIV:
                 # "aberan (aberendlic)": the word in brackets is a derivative too
                 pm = re.match(r'\s+\(([^()\s,]+)\)', rest)
@@ -310,6 +332,9 @@ def words(text, backwards=False):
                 # "ofa~; uta~", "midb~ | æðelboren": the list goes on
                 if re.match(r'\s*[;|]\s*(?=[^\W\d_~(])', rest):
                     rest = re.sub(r'^\s*[;|]', ',', rest)
+            # "[vgl. æwe; æwum]": in a bracketed vgl. list, a last word after ";" belongs to it
+            if COMPARE and re.match(r'\s*;\s*[^\W\d_][\w\-]*\s*(?:\]|$)', rest):
+                rest = re.sub(r'^\s*;', ',', rest)
             if not re.match(r'\s*,\s*(?=\S)', rest) or re.match(r'\s*,\s*[\[]', rest):
                 break
             rest = re.sub(r'^\s*,', '', rest)
@@ -485,11 +510,16 @@ def targets(scrap, entry_id, index):
                 tail = ' ' + tail[zb.end():]
             if tail.startswith('</hi>'):
                 tail = tail[5:]
+            # an italic "unter" inside the list ("þas (<hi>unter</hi> þes)") does not end it
+            tail = UNTER.sub(lambda m: re.sub(r'<[^>]+>', '', m.group(1)), tail)
             node = re.split(r'<', tail, maxsplit=1)[0]
             if not node[:1].isspace():
                 found.append((kind, '', [], 'nothing follows'))
                 continue
             toks = words(node)
+            for form, _ in words.unter:
+                ids, _, _ = resolve(clean(html.unescape(form)), index, lang, '', heads, entry_id)
+                UNTER_FORMS[entry_id].update(ids)
             after = words.right + tail[len(node):]
         else:
             head = scrap[:m.start()]
@@ -599,7 +629,8 @@ def update(path, index, write):
     existing = SEE.findall(text)
     has_dort = any(k == 'sieheDort' for k, _, _, _ in found)
     # a link checked and found wrong (SKIP) is taken off, though it was there before
-    removed = [x for x in existing if (x == 'd' and has_dort and x not in want) or ((entry_id, x) in SKIP and x not in want)]
+    removed = [x for x in existing if (x == 'd' and has_dort and x not in want) or ((entry_id, x) in SKIP and x not in want)
+               or (x in UNTER_FORMS[entry_id] and x not in want)]
     kept = [x for x in existing if x not in removed]
     final = want + [x for x in kept if x not in want]
     if final == existing and block_labels_ok(text, final, index):

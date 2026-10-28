@@ -59,6 +59,16 @@ def mode(which):
 
 def wrap_token(token, segments):
     """The token with each segment that matches one entry made a link."""
+    # "plener(e)", "test(e)": only the bracketed ending finds an entry (plenere); link the
+    # whole word rather than a lone letter
+    good = [(seg, ids) for seg, ids in segments if len(ids) == 1 and re.search(r'[^\W\d_]', seg)]
+    if len(good) == 1 and len(good[0][0]) <= 2 and len(segments) > 1:
+        return '<ref type="entry" target="entry:%s">%s</ref>' % (good[0][1][0], token)
+    # "(ge)treow(s)ian": several brackets cut the word into pieces; link it whole, to the
+    # entry most of its pieces point to (treowian)
+    if len(re.findall(r'\([^()]*\)', token)) >= 2 and good:
+        ids = [i[0] for _, i in good]
+        return '<ref type="entry" target="entry:%s">%s</ref>' % (max(ids, key=ids.count), token)
     out, at = '', 0
     for seg, ids in segments:
         k = token.find(seg, at)
@@ -113,13 +123,25 @@ def link(scrap, entry_id, index):
                     start = zb.end()
                 if plain.startswith('</hi>', start):
                     start += 5
-                # the list runs to the next tag, past an editor's note marker
-                nxt = re.compile(r'<(?!ptr type="editorNote")').search(plain, start)
-                end = nxt.start() if nxt else len(plain)
+                # the list runs to the next tag, past an editor's note marker and an
+                # italic "unter" in "þas (unter þes)"
+                end, pos = len(plain), start
+                while True:
+                    nxt = re.compile(r'<(?!ptr type="editorNote")').search(plain, pos)
+                    if not nxt:
+                        break
+                    um = sa.UNTER.match(plain, nxt.start())
+                    if um:
+                        pos = um.end()
+                        continue
+                    end = nxt.start()
+                    break
             node = plain[start:end]
             new, at = '', 0
             for tok, segs, _ in items:
-                k = node.find(tok, at)
+                # the token as a whole word ("wer(lad)" in "werra unter wer(lad)", not the "wer" of werra)
+                mk = re.compile(r'(?<![^\W_])' + re.escape(tok) + r'(?![^\W_])').search(node, at)
+                k = mk.start() if mk else node.find(tok, at)
                 if k < 0:
                     continue
                 new += node[at:k] + wrap_token(tok, segs)
