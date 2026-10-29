@@ -227,7 +227,9 @@ scripts:
     // database: to the clause where it has one ("clause:Ine_23-2"), otherwise
     // to the page of the whole code ("law:Ine"). They never open the
     // abbreviation popup; a code the database doesn't have yet is plain text.
-    const COLUMNS_FROM = 2;   // a list (See, See also, Compare, a group of law code citations) of 3 or more is spread into columns
+    // A list (See, See also, Compare, a group of law code citations): 1–3 items in one
+    // column, 4–6 in at most two, 7 or more in at most three (fewer if the space is narrow).
+    const columnClass = (n, base) => n <= 3 ? '' : base + (n <= 6 ? ' cols-2' : ' cols-3');
     function citationList(e) {
         const items = e.xr.filter(x => x.getAttribute('type') === 'lawCode').map((x, n) => {
             const ref = [...x.children].find(c => c.localName === 'ref') || x;
@@ -265,7 +267,7 @@ scripts:
         });
         const out = groups.map(({ g, list }) =>
             `<div class="citation-block"><h3 class="citation-group">${esc(g)}</h3>`
-            + `<ul class="citations${list.length > COLUMNS_FROM ? ' citations--cols' : ''}">${list.join('')}</ul></div>`);
+            + `<ul class="citations${list.length > 3 ? ' ' + columnClass(list.length, 'citations--cols') : ''}">${list.join('')}</ul></div>`);
         return out.join('');
     }
 
@@ -374,7 +376,7 @@ scripts:
         // and nothing else.
         const see = xrList(e, 'see');
         // a short list stays one column; a long one spreads into columns
-        const linkCols = html => (html.match(/<li[ >]/g) || []).length > COLUMNS_FROM ? ' class="link-columns"' : '';
+        const linkCols = html => { const c = columnClass((html.match(/<li[ >]/g) || []).length, 'link-columns'); return c ? ` class="${c}"` : ''; };
         const compare = e.xref ? '' : xrList(e, 'compare');
         const derivatives = e.xref ? '' : xrList(e, 'derivative');
         const links = e.xref ? '' : dictionaryCards(e);
@@ -485,9 +487,12 @@ scripts:
         const gram = items.filter(li => lang.get(idOf(li)) === 'de');
         if (!gram.length || gram.length === items.length) return;
         const second = document.createElement('ul');
-        second.className = 'see-grammatical' + (gram.length > 2 ? ' link-columns' : '');
+        second.className = ('see-grammatical ' + columnClass(gram.length, 'link-columns')).trim();
         gram.forEach(li => second.appendChild(li));
-        if ((ul.children.length) <= 2) ul.classList.remove('link-columns');
+        // the words left in the first list are counted again
+        ul.classList.remove('link-columns', 'cols-2', 'cols-3');
+        const c = columnClass(ul.children.length, 'link-columns');
+        if (c) ul.classList.add(...c.split(' '));
         ul.after(second);
     }
 
