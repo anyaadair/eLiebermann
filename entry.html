@@ -514,9 +514,9 @@ scripts:
         const bar = grid.querySelector('.entry-scan-divider');
         const KEY = 'eLiebermann.scanWidth';
         const rem = parseFloat(getComputedStyle(document.documentElement).fontSize) || 16;
-        const MIN = 18 * rem, TEXT_MIN = 20 * rem;
+        const MIN = 22 * rem, MAX = 64 * rem, TEXT_MIN = 24 * rem, START = 42 * rem;
         const apply = px => {
-            const max = Math.max(MIN, grid.clientWidth - 2 * rem - TEXT_MIN);
+            const max = Math.max(MIN, Math.min(MAX, grid.clientWidth - 2 * rem - TEXT_MIN));
             const w = Math.round(Math.min(max, Math.max(MIN, px)));
             grid.style.setProperty('--scan-width', w + 'px');
             bar.setAttribute('aria-valuenow', w);
@@ -528,14 +528,16 @@ scripts:
         bar.tabIndex = 0;
         let saved = 0;
         try { saved = parseFloat(localStorage.getItem(KEY)) || 0; } catch (e) { /* none */ }
-        // the first time, the scan takes a little under half the width
-        const start = () => apply(grid.clientWidth * 0.45);
+        // the usual width, until the reader drags the bar
+        const start = () => apply(START);
         if (saved) apply(saved); else start();
         bar.addEventListener('pointerdown', ev => {
             ev.preventDefault();
             bar.setPointerCapture(ev.pointerId);
             grid.classList.add('dragging');
-            const move = e => apply(grid.getBoundingClientRect().right - e.clientX - rem);
+            // the two columns stay centred, so the scan's right edge moves as it widens:
+            // a few rounds bring the bar under the pointer
+            const move = e => { for (let i = 0; i < 5; i++) apply(grid.querySelector('.entry-scan').getBoundingClientRect().right - e.clientX - rem); };
             const up = () => {
                 grid.classList.remove('dragging');
                 bar.removeEventListener('pointermove', move);

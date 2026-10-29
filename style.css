@@ -480,9 +480,12 @@ a.dict-card:hover .dict-card__word { color: var(--link-hover); text-decoration: 
 
 /* The printed page beside the entry; stacked under it on narrow screens. */
 .entry-with-scan { display: grid; grid-template-columns: minmax(0, 1fr) 2rem var(--scan-width, minmax(22rem, 30rem)); align-items: start; }
-/* Once the scan is open the page uses the whole window, and the bar between
-   the entry and the scan can be dragged to make the scan wider or narrower. */
+/* Once the scan is open, the entry keeps a readable width (at most 44rem) and
+   the scan starts at 42rem; the bar between them can be dragged to make the
+   scan wider (up to 64rem) or narrower. The two stay together in the middle
+   of the window, however wide it is. */
 body.scan-open .main-content { max-width: none; }
+.entry-with-scan.scan-loaded { grid-template-columns: minmax(24rem, 44rem) 2rem min(var(--scan-width, 42rem), calc(100% - 26rem)); justify-content: center; }
 .entry-scan-divider { grid-column: 2; align-self: stretch; }
 .entry-with-scan.scan-loaded .entry-scan-divider {
     position: sticky; top: 1rem; height: calc(100vh - 2rem); align-self: start;
@@ -514,7 +517,7 @@ body.scan-open .main-content { max-width: none; }
 .entry-scan-load { text-align: center; padding: 2rem 1rem; color: #ddd; font-size: 0.85rem; }
 .entry-scan-load p { margin: 0.75rem 0 0; }
 @media (max-width: 60rem) {
-    .entry-with-scan { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
+    .entry-with-scan, .entry-with-scan.scan-loaded { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
     .entry-scan-divider { display: none !important; }
     .entry-scan { position: static; }
     .entry-scan.loaded { height: 80vh; }
