@@ -63,11 +63,60 @@
         return first !== '' && first !== first.toLowerCase() && first === first.toUpperCase();
     }
 
-    // "prop" in the hidden set hides proper nouns ("Hide Proper Nouns").
-    const isShown = (lang, hidden, headword) => {
+    // "prop" in the hidden set hides proper nouns ("Hide Proper Nouns"). A spelling entry
+    // (<usg type="dom">spelling</usg>, of any language) counts as a spelling: "sp".
+    const isShown = (lang, hidden, headword, spelling) => {
         const h = hidden || hiddenLanguages();
+        if (spelling) return !h.has('sp');
         return !h.has(lang || 'ang') && !(h.has('prop') && isProperNoun(headword, lang));
     };
+
+    // The kinds of entry a reader can choose to see: the Dictionary page and the
+    // sidebar of the entry pages share them (and the choice, hiddenLanguages).
+    const KINDS = [['ang', 'Old English', 'Old English', 'OE'], ['la', 'Latin', 'Latin', 'L'], ['fro', 'French', 'French', 'F'],
+        ['de', 'Grammatical terms', 'Grammar', 'Gr'], ['sp', 'Spellings', 'Spellings', 'Sp']];
+
+    /**
+     * Bubbles for choosing which kinds of entry to see: "All", then one per kind. With
+     * All on, pressing a kind shows only that kind; after that, each press adds or
+     * takes away a kind (taking away the last one goes back to All). Remembered in
+     * this browser. short: the sidebar's shorter names. Returns { draw } to redraw.
+     */
+    function kindFilter(el, onChange, short) {
+        const draw = () => {
+            const h = hiddenLanguages();
+            const all = !KINDS.some(([k]) => h.has(k));
+            el.innerHTML = `<button type="button" class="kind-pill" data-kind="" aria-pressed="${all}">All</button>` +
+                KINDS.map(([k, name, shortName]) => `<button type="button" class="kind-pill" data-kind="${k}" aria-pressed="${!all && !h.has(k)}" title="${all ? 'Show only ' : 'Show or hide '}${escapeXml(name.toLowerCase())}">${escapeXml(short ? shortName : name)}</button>`).join('');
+        };
+        el.setAttribute('role', 'group');
+        if (!el.getAttribute('aria-label')) el.setAttribute('aria-label', 'Kinds of entry to show');
+        el.addEventListener('click', ev => {
+            const b = ev.target.closest('[data-kind]');
+            if (!b) return;
+            const k = b.dataset.kind;
+            let h = hiddenLanguages();
+            const all = !KINDS.some(([x]) => h.has(x));
+            if (!k) h = new Set();
+            else if (all) h = new Set(KINDS.map(([x]) => x).filter(x => x !== k));
+            else {
+                if (h.has(k)) h.delete(k); else h.add(k);
+                if (KINDS.every(([x]) => h.has(x))) h = new Set();
+            }
+            setHiddenLanguages(h);
+            draw();
+            if (onChange) onChange(h);
+        });
+        draw();
+        return { draw };
+    }
+
+    // The short tags after a headword in the sidebar: OE, L, F, Gr, and Sp for a spelling.
+    function kindTags(lang, spelling) {
+        const k = KINDS.find(([x]) => x === (lang || 'ang'));
+        const tag = k ? `<span class="kind-tag ${escapeXml(k[0])}" title="${escapeXml(k[1] === 'Grammatical terms' ? 'Grammatical term' : k[1])}">${k[3]}</span>` : '';
+        return tag + (spelling ? '<span class="kind-tag sp" title="A spelling, not a word">Sp</span>' : '');
+    }
 
     function properNounBadge() {
         return '<span class="lang-badge prop" title="Proper noun: a name of a person, place, people or day">Proper Noun</span>';
@@ -1181,7 +1230,7 @@ ${translation}
     }
 
     const api = {
-        TEI_NS, LANGUAGES, LANGUAGE_CODES, languageBadge, properNounBadge, isProperNoun, hiddenLanguages, setHiddenLanguages, isShown,
+        TEI_NS, LANGUAGES, LANGUAGE_CODES, languageBadge, properNounBadge, isProperNoun, hiddenLanguages, setHiddenLanguages, isShown, KINDS, kindFilter, kindTags,
         useDom, slugify, sortKey, alphaKey, letterOf, ALPHABET, escapeXml, safeUrl,
         linkAbbreviations, loadAbbreviations, extractCitations, linkClauseNumbers, jumpLink, citationXr, splitSenses, splitOutline, splitBreaks, sensesXml, detectLanguage, detectHeadword,
         inlineToTei, isEmptyHtml, buildEntryXml,
