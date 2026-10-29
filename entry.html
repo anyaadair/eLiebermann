@@ -17,11 +17,21 @@ scripts:
         <div class="kind-pills kind-pills--small" id="sidebar-kinds" aria-label="Kinds of entry to show in the list below and in Previous and Next"></div>
         <h2 class="sidebar-label">Nearby headwords</h2>
         <ol class="word-wheel" id="word-wheel"><li class="muted small">Loading…</li></ol>
-        <h2 class="sidebar-label">Go to</h2>
+        <h2 class="sidebar-label">Dictionary and guides</h2>
         <ul class="sidebar-links">
-            <li><a id="sidebar-dictionary" href="dictionary.html">Search the Dictionary</a></li>
-            <li><a id="sidebar-laws" href="laws.html" target="_blank" rel="noopener">Law codes by king and&nbsp;code&nbsp;<span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a data-href="dictionary.html" href="dictionary.html">Search the Dictionary</a></li>
+            <li><a data-href="guide.html" href="guide.html">How to read an entry</a></li>
+            <li><a data-href="lawAbb.html" href="lawAbb.html">Law code abbreviations</a></li>
+            <li><a data-href="msAbb.html" href="msAbb.html">Manuscripts</a></li>
+            <li><a data-href="gramAbb.html" href="gramAbb.html">Grammatical terms</a></li>
+            <li><a data-href="bibAbb.html" href="bibAbb.html">Authors and works cited</a></li>
         </ul>
+        <div class="sidebar-laws">
+            <h2 class="sidebar-label">The laws</h2>
+            <ul class="sidebar-links">
+                <li><a data-href="laws.html" href="laws.html" target="_blank" rel="noopener">Law codes by king and&nbsp;code&nbsp;<span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            </ul>
+        </div>
     </aside>
     <div class="entry-column">
         <button type="button" class="sidebar-open" id="sidebar-open" hidden aria-controls="entry-sidebar" aria-expanded="false"><span aria-hidden="true">☰</span> Browse the dictionary</button>
@@ -492,7 +502,7 @@ scripts:
     // The entries of the kinds the reader has chosen to see (this entry always).
     const shownOrder = order => {
         const hidden = ELieb.hiddenLanguages();
-        return order.filter(x => x.id === slug || ELieb.isShown(x.lang, hidden, x.hw, x.sp));
+        return order.filter(x => x.id === slug || ELieb.isShown(x.lang, hidden, x.hw));
     };
 
     // Links to the previous and next entries in Liebermann's order, skipping any
@@ -527,8 +537,7 @@ scripts:
         const open = document.getElementById('sidebar-open');
         if (!layout || !side) return;
         document.body.classList.add('has-sidebar');
-        document.getElementById('sidebar-dictionary').href = root + 'dictionary.html';
-        document.getElementById('sidebar-laws').href = root + 'laws.html';
+        side.querySelectorAll('a[data-href]').forEach(a => { a.href = root + a.dataset.href; });
         const KEY = 'eLiebermann.sidebar';
         const narrow = window.matchMedia('(max-width: 60rem)').matches;
         let closed = narrow;
@@ -610,7 +619,7 @@ scripts:
         const bar = grid.querySelector('.entry-scan-divider');
         const KEY = 'eLiebermann.scanWidth';
         const rem = parseFloat(getComputedStyle(document.documentElement).fontSize) || 16;
-        const MIN = 22 * rem, MAX = 64 * rem, TEXT_MIN = 24 * rem, START = 42 * rem;
+        const MIN = 22 * rem, MAX = 90 * rem, TEXT_MIN = 24 * rem, START = 48 * rem;
         const apply = px => {
             const max = Math.max(MIN, Math.min(MAX, grid.clientWidth - 2 * rem - TEXT_MIN));
             const w = Math.round(Math.min(max, Math.max(MIN, px)));
