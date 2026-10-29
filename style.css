@@ -651,6 +651,9 @@ body.full-width .main-content { max-width: none; padding: 0; }
 .citation-block { margin-bottom: 0.3rem; }
 ul.citations { padding-left: 1.2em; margin: 0.2rem 0 0; }
 ul.citations--cols { columns: 8em; column-gap: 1.5em; }
+/* at most two or three columns (entry.html columnClass): column-count with a width is a maximum */
+ul.citations--cols.cols-2, ul.link-columns.cols-2 { columns: 8em 2; }
+ul.citations--cols.cols-3, ul.link-columns.cols-3 { columns: 8em 3; }
 /* the law code groups of laws.html, as quiet headings over the citations */
 .citation-group { font-family: var(--sans); font-size: 0.78rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); margin: 0.9rem 0 0; opacity: 0.85; break-after: avoid; }
 .citation-groups > .citation-block:first-child .citation-group { margin-top: 0.2rem; }
