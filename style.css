@@ -964,13 +964,14 @@ body.scan-open .entry-column > article { max-width: none; }
     background: #f3f1eb; border-right: 1px solid var(--rule);
     padding: 1rem 1rem 1.5rem; font-size: 0.92rem;
 }
-.sidebar-head { display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; margin-bottom: 0.6rem; }
+.sidebar-head { display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; margin-bottom: 0.2rem; }
+.sidebar-label--first { margin-top: 0.6rem; }
 .sidebar-title { font-weight: 600; color: var(--navy-dark); }
 .sidebar-fold { font: inherit; font-size: 1.1rem; line-height: 1; width: 1.7rem; height: 1.7rem; border: 1px solid transparent; border-radius: 4px; background: transparent; color: var(--muted); cursor: pointer; }
 .sidebar-fold:hover, .sidebar-fold:focus-visible { border-color: var(--rule); background: var(--surface); color: var(--link); }
 .sidebar-search input { width: 100%; font: inherit; font-size: 0.9rem; padding: 0.35rem 0.55rem; border: 1px solid var(--rule); border-radius: 4px; background: var(--surface); }
 .sidebar-search .suggestions { font-size: 0.9rem; }
-.sidebar-label { font-family: var(--sans); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin: 1rem 0 0.4rem; }
+.sidebar-label { font-family: var(--sans); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin: 1rem 0 0.4rem; }
 .word-wheel { list-style: none; margin: 0 -0.4rem; padding: 0; }
 .word-wheel li > a, .word-wheel li > span { display: flex; align-items: baseline; justify-content: space-between; gap: 0.5rem; padding: 0.14rem 0.4rem; border-radius: 4px; text-decoration: none; color: var(--ink); }
 .word-wheel li > a:hover { background: var(--surface); color: var(--link); }

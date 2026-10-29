@@ -7,34 +7,36 @@ scripts:
   - "ROOT/scripts/suggest.js"
 ---
 <div class="entry-layout" id="entry-layout">
-    <aside class="entry-sidebar" id="entry-sidebar" aria-label="Browse the dictionary">
+    <aside class="entry-sidebar" id="entry-sidebar" aria-label="Search and links">
         <div class="sidebar-head">
-            <span class="sidebar-title">Browse the dictionary</span>
+            <span class="sidebar-title">Search and Links</span>
             <button type="button" class="sidebar-fold" id="sidebar-fold" title="Hide this panel" aria-label="Hide this panel" aria-controls="entry-sidebar" aria-expanded="true">‹</button>
         </div>
+        <h2 class="sidebar-label sidebar-label--first">Search the Dictionary</h2>
         <div class="sidebar-search"><input type="search" data-suggest="order" placeholder="Go to a headword…" aria-label="Go to a headword"></div>
-        <h2 class="sidebar-label">Show</h2>
+        <h2 class="sidebar-label">Show only</h2>
         <div class="kind-pills kind-pills--small" id="sidebar-kinds" aria-label="Kinds of entry to show in the list below and in Previous and Next"></div>
         <h2 class="sidebar-label">Nearby headwords</h2>
         <ol class="word-wheel" id="word-wheel"><li class="muted small">Loading…</li></ol>
-        <h2 class="sidebar-label">Dictionary and guides</h2>
+        <h2 class="sidebar-label">Dictionary and Guides</h2>
         <ul class="sidebar-links">
-            <li><a data-href="dictionary.html" href="dictionary.html">Search the Dictionary</a></li>
-            <li><a data-href="guide.html" href="guide.html">How to read an entry</a></li>
-            <li><a data-href="lawAbb.html" href="lawAbb.html">Law code abbreviations</a></li>
-            <li><a data-href="msAbb.html" href="msAbb.html">Manuscripts</a></li>
-            <li><a data-href="gramAbb.html" href="gramAbb.html">Grammatical terms</a></li>
-            <li><a data-href="bibAbb.html" href="bibAbb.html">Authors and works cited</a></li>
+            <li><a data-href="dictionary.html" href="dictionary.html">Return to search page</a></li>
+            <li><a data-href="guide.html" href="guide.html" target="_blank" rel="noopener">How to read an entry&nbsp;<span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a data-href="lawAbb.html" href="lawAbb.html" target="_blank" rel="noopener">Law code abbreviations&nbsp;<span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a data-href="msAbb.html" href="msAbb.html" target="_blank" rel="noopener">Manuscripts&nbsp;<span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a data-href="gramAbb.html" href="gramAbb.html" target="_blank" rel="noopener">Grammatical terms&nbsp;<span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a data-href="bibAbb.html" href="bibAbb.html" target="_blank" rel="noopener">Authors and works cited&nbsp;<span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></li>
         </ul>
         <div class="sidebar-laws">
-            <h2 class="sidebar-label">The laws</h2>
+            <h2 class="sidebar-label">The Laws</h2>
             <ul class="sidebar-links">
                 <li><a data-href="laws.html" href="laws.html" target="_blank" rel="noopener">Law codes by king and&nbsp;code&nbsp;<span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></li>
+                <li><a data-href="subjects.html" href="subjects.html" target="_blank" rel="noopener">Law codes by subject&nbsp;<span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></li>
             </ul>
         </div>
     </aside>
     <div class="entry-column">
-        <button type="button" class="sidebar-open" id="sidebar-open" hidden aria-controls="entry-sidebar" aria-expanded="false"><span aria-hidden="true">☰</span> Browse the dictionary</button>
+        <button type="button" class="sidebar-open" id="sidebar-open" hidden aria-controls="entry-sidebar" aria-expanded="false"><span aria-hidden="true">☰</span> Search and Links</button>
         <article id="entry"><p class="loading">Loading entry…</p></article>
     </div>
 </div>
@@ -526,7 +528,7 @@ scripts:
             .catch(() => {});
     }
 
-    // The sidebar: a headword search, which kinds of entry to see, the eight
+    // The sidebar ("Search and Links"): a headword search, which kinds of entry to see, the eight
     // headwords before and after this one ("word wheel"), and links. It can be
     // folded away (remembered in this browser); on a narrow screen it starts folded.
     const WHEEL = 8;
