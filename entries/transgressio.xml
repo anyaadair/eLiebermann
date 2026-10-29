@@ -35,8 +35,11 @@
         <form type="lemma">
           <orth>transgressio</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">transgressio</hi> <hi rend="italic">Überschreitung, Rechtsverletzung;</hi> mea ~ <hi rend="italic">gegen mich</hi> <ref type="lawCode" target="law:IAs">I As</ref> 5 <ref type="lawCode" target="law:Quadr">Q</ref>, mine oferhirnesse <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref></hi> | legis ~ <ref type="lawCode" target="law:ConsCn">Cons Cn</ref>: II 45,3. 46. 48, lahslit <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref>;</hi> <ref type="lawCode" target="law:I">I</ref> 24, æwbryce <hi rend="italic">‘Gesetzesbruch’ <ref type="abbreviation" target="gram:statt"><abbr>statt</abbr></ref> ‘Ehebruch’ missverstehend</hi></dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">transgressio</hi> <hi rend="italic">Überschreitung, Rechtsverletzung;</hi> mea ~ <hi rend="italic">gegen mich</hi> <ref type="lawCode" target="law:IAs">I As</ref> 5 <ref type="lawCode" target="law:Quadr">Q</ref>, mine oferhirnesse <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref></hi> | legis ~ <ref type="lawCode" target="law:ConsCn">Cons Cn</ref>: <ref type="lawCode" target="law:IICn">II</ref> 45,3. 46. 48, lahslit <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref>;</hi> <ref type="lawCode" target="law:I">I</ref> 24, æwbryce <hi rend="italic">‘Gesetzesbruch’ <ref type="abbreviation" target="gram:statt"><abbr>statt</abbr></ref> ‘Ehebruch’ missverstehend</hi></dictScrap>
         <xr type="lawCode"><ref target="clause:IAs_5">I As 5</ref></xr>
+        <xr type="lawCode"><ref target="clause:IICn_45-3">Cons Cn II 45,3</ref></xr>
+        <xr type="lawCode"><ref target="clause:IICn_46">Cons Cn II 46</ref></xr>
+        <xr type="lawCode"><ref target="clause:IICn_48">Cons Cn II 48</ref></xr>
       </entry>
     </body>
   </text>
