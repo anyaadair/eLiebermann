@@ -278,6 +278,15 @@ button:disabled { opacity: 0.5; cursor: not-allowed; }
 .search-bar { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0 0 1rem; }
 .search-bar input[type="search"], .search-bar input[type="text"] { flex: 1 1 16rem; }
 /* Dictionary: Hide French / Hide Latin */
+/* Bubbles for the kinds of entry to show (ELieb.kindFilter): the Dictionary page and the entry pages' sidebar */
+.kind-pills { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: -0.25rem 0 1rem; }
+.kind-pill { font: inherit; font-size: 0.9rem; padding: 0.3rem 0.8rem; border: 1px solid var(--link); border-radius: 999px; background: transparent; color: var(--link); cursor: pointer; }
+.kind-pill[aria-pressed="true"] { background: var(--link); color: #fff; }
+.kind-pill[aria-pressed="false"]:hover { background: var(--powder-tint); }
+.kind-pill[aria-pressed="true"]:hover { background: var(--link-hover); }
+.kind-pill:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+.kind-pills--small { gap: 0.3rem; margin: 0; }
+.kind-pills--small .kind-pill { font-size: 0.78rem; padding: 0.12rem 0.55rem; }
 .hide-langs { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: -0.25rem 0 1rem; }
 .hide-lang { font: inherit; font-size: 0.9rem; padding: 0.3rem 0.8rem; border: 1px solid var(--link); border-radius: 999px; background: transparent; color: var(--link); cursor: pointer; }
 .hide-lang[aria-pressed="true"] { background: var(--link); color: #fff; }
@@ -938,3 +947,46 @@ ul.link-columns li { break-inside: avoid; }
 
 /* Liebermann's footnote number after a citation in the list: "ECf 20,3 (note 2)" */
 .citation-note { color: var(--muted); font-size: 0.85em; }
+
+/* ---------- Entry pages: the sidebar (Browse the dictionary) ---------- */
+body.has-sidebar .main-content { max-width: calc(var(--measure) + 17.5rem); }
+.entry-layout { display: grid; grid-template-columns: 15rem minmax(0, 1fr); gap: 2.5rem; align-items: start; }
+.entry-layout.sidebar-closed { grid-template-columns: minmax(0, 1fr); }
+.entry-layout.sidebar-closed .entry-sidebar { display: none; }
+/* with the page scan open, the sidebar, entry and scan stay together in the middle */
+body.scan-open .entry-layout:not(.sidebar-closed) { grid-template-columns: 15rem auto; justify-content: center; }
+.entry-sidebar {
+    position: sticky; top: 1rem; max-height: calc(100vh - 2rem); overflow-y: auto;
+    background: #f3f1eb; border: 1px solid var(--rule); border-radius: var(--radius);
+    padding: 0.85rem 0.9rem 1rem; font-size: 0.92rem; margin-top: 0.5rem;
+}
+.sidebar-head { display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; margin-bottom: 0.6rem; }
+.sidebar-title { font-weight: 600; color: var(--navy-dark); }
+.sidebar-fold { font: inherit; font-size: 1.1rem; line-height: 1; width: 1.7rem; height: 1.7rem; border: 1px solid transparent; border-radius: 4px; background: transparent; color: var(--muted); cursor: pointer; }
+.sidebar-fold:hover, .sidebar-fold:focus-visible { border-color: var(--rule); background: var(--surface); color: var(--link); }
+.sidebar-search input { width: 100%; font: inherit; font-size: 0.9rem; padding: 0.35rem 0.55rem; border: 1px solid var(--rule); border-radius: 4px; background: var(--surface); }
+.sidebar-search .suggestions { font-size: 0.9rem; }
+.sidebar-label { font-family: var(--sans); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin: 1rem 0 0.4rem; }
+.word-wheel { list-style: none; margin: 0 -0.4rem; padding: 0; }
+.word-wheel li > a, .word-wheel li > span { display: flex; align-items: baseline; justify-content: space-between; gap: 0.5rem; padding: 0.14rem 0.4rem; border-radius: 4px; text-decoration: none; color: var(--ink); }
+.word-wheel li > a:hover { background: var(--surface); color: var(--link); }
+.word-wheel li > a:focus-visible { outline: 2px solid var(--link); outline-offset: -2px; }
+.word-wheel__hw { font-family: var(--serif); font-size: 1.05rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+.word-wheel__tags { display: flex; gap: 0.2rem; flex: none; }
+.word-wheel li.current > span { background: var(--surface); box-shadow: inset 3px 0 0 var(--link); font-weight: 600; color: var(--navy); margin: 0.15rem 0; padding-top: 0.25rem; padding-bottom: 0.25rem; }
+.kind-tag { font-family: var(--sans); font-size: 0.66rem; font-weight: 600; padding: 0 0.32rem; border-radius: 999px; background: #e9edf2; color: var(--navy-dark); line-height: 1.5; }
+.kind-tag.ang { background: #e6ecf5; }
+.kind-tag.la { background: #f3e8d6; }
+.kind-tag.fro { background: #e5efe4; }
+.kind-tag.de { background: #ece6f2; }
+.kind-tag.sp { background: #f4eccd; }
+.sidebar-links { list-style: none; margin: 0; padding: 0; }
+.sidebar-links li { margin: 0.2rem 0; }
+.sidebar-open { font: inherit; font-size: 0.85rem; margin: 0.5rem 0 0; padding: 0.25rem 0.7rem; border: 1px solid var(--rule); border-radius: 999px; background: #f3f1eb; color: var(--link); cursor: pointer; }
+.sidebar-open:hover { background: var(--powder-tint); }
+.sidebar-open[hidden] { display: none; }
+@media (max-width: 60rem) {
+    .entry-layout, body.scan-open .entry-layout:not(.sidebar-closed) { grid-template-columns: minmax(0, 1fr); gap: 1rem; }
+    .entry-sidebar { position: static; max-height: none; }
+}
+@media print { .entry-sidebar, .sidebar-open { display: none !important; } .entry-layout { display: block; } }

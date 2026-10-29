@@ -54,9 +54,10 @@ fs.writeFileSync(path.join(repo, 'data', 'entries.json'),
     '[\n' + entries.map(e => JSON.stringify(e)).join(',\n') + '\n]\n');
 console.log(`data/entries.json: ${entries.length} entries`);
 
-// A small list of every entry's id and headword, for the previous and next
-// links at the foot of each entry page (the page sorts it into Liebermann's
-// order, as the Dictionary page does).
+// A small list of every entry's id, headword and language (and 1 for a
+// spelling entry), for the previous and next links and the sidebar of each
+// entry page (the page sorts it into Liebermann's order, as the Dictionary
+// page does), and the sidebar's headword search.
 fs.writeFileSync(path.join(repo, 'data', 'entry-order.json'),
-    '[\n' + entries.map(e => JSON.stringify([e.id, e.hw, e.lang])).join(',\n') + '\n]\n');
+    '[\n' + entries.map(e => JSON.stringify(e.spelling ? [e.id, e.hw, e.lang, 1] : [e.id, e.hw, e.lang])).join(',\n') + '\n]\n');
 console.log(`data/entry-order.json: ${entries.length} entries`);

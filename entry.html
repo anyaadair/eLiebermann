@@ -4,8 +4,30 @@ section: dictionary
 scripts:
   - "ROOT/scripts/eliebermann.js"
   - "ROOT/scripts/lawpopup.js"
+  - "ROOT/scripts/suggest.js"
 ---
-<article id="entry"><p class="loading">Loading entry…</p></article>
+<div class="entry-layout" id="entry-layout">
+    <aside class="entry-sidebar" id="entry-sidebar" aria-label="Browse the dictionary">
+        <div class="sidebar-head">
+            <span class="sidebar-title">Browse the dictionary</span>
+            <button type="button" class="sidebar-fold" id="sidebar-fold" title="Hide this panel" aria-label="Hide this panel" aria-controls="entry-sidebar" aria-expanded="true">‹</button>
+        </div>
+        <div class="sidebar-search"><input type="search" data-suggest="order" placeholder="Go to a headword…" aria-label="Go to a headword"></div>
+        <h2 class="sidebar-label">Show</h2>
+        <div class="kind-pills kind-pills--small" id="sidebar-kinds" aria-label="Kinds of entry to show in the list below and in Previous and Next"></div>
+        <h2 class="sidebar-label">Nearby headwords</h2>
+        <ol class="word-wheel" id="word-wheel"><li class="muted small">Loading…</li></ol>
+        <h2 class="sidebar-label">Go to</h2>
+        <ul class="sidebar-links">
+            <li><a id="sidebar-dictionary" href="dictionary.html">Search the Dictionary</a></li>
+            <li><a id="sidebar-laws" href="laws.html" target="_blank" rel="noopener">Law codes by king and&nbsp;code&nbsp;<span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></li>
+        </ul>
+    </aside>
+    <div class="entry-column">
+        <button type="button" class="sidebar-open" id="sidebar-open" hidden aria-controls="entry-sidebar" aria-expanded="false"><span aria-hidden="true">☰</span> Browse the dictionary</button>
+        <article id="entry"><p class="loading">Loading entry…</p></article>
+    </div>
+</div>
 
 <script>
 (function () {
@@ -18,6 +40,7 @@ scripts:
 
     if (!slug) {
         target.innerHTML = `<h1>No entry chosen</h1><p>Find one in the <a href="${root}dictionary.html">Dictionary</a>.</p>`;
+        document.getElementById('entry-layout').classList.add('sidebar-closed');
         return;
     }
 
@@ -45,6 +68,7 @@ scripts:
             linkClauses(e);
             showScanOnClick();
             showNeighbours();
+            showSidebar();
         })
         .catch(err => {
             // A file joined into another entry (e.g. þæt IV, once thaet-5, is now
@@ -59,6 +83,7 @@ scripts:
         });
 
     function showError(err) {
+            showSidebar();
             if (err.message !== 'missing' && err.message !== 'parse') console.error(err);
             target.innerHTML = err.message === 'missing'
                 ? `<h1>${esc(id)}</h1>
@@ -449,22 +474,37 @@ scripts:
         </div>`;
     }
 
-    // Links to the previous and next entries in Liebermann's order, as the
-    // Dictionary page lists them, skipping any language the reader has hidden
-    // there. They are left out if the list can't load.
+    // Every entry in Liebermann's order (data/entry-order.json, as the Dictionary
+    // page sorts it), loaded once for the Previous / Next links and the sidebar.
+    let orderLoading = null;
+    function loadOrder() {
+        if (!orderLoading) {
+            orderLoading = fetch(root + 'data/entry-order.json')
+                .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+                .then(list => ({
+                    raw: list,
+                    order: list.map(([id, hw, lang, sp]) => ({ id, hw, lang, sp: !!sp, key: ELieb.alphaKey(hw) }))
+                        .sort((a, b) => (a.key < b.key ? -1 : a.key > b.key ? 1 : 0) || a.id.localeCompare(b.id, undefined, { numeric: true }))
+                }));
+        }
+        return orderLoading;
+    }
+    // The entries of the kinds the reader has chosen to see (this entry always).
+    const shownOrder = order => {
+        const hidden = ELieb.hiddenLanguages();
+        return order.filter(x => x.id === slug || ELieb.isShown(x.lang, hidden, x.hw, x.sp));
+    };
+
+    // Links to the previous and next entries in Liebermann's order, skipping any
+    // kind of entry the reader has hidden (in the sidebar or on the Dictionary
+    // page). They are left out if the list can't load.
     function showNeighbours() {
         const nav = target.querySelector('.entry-nav');
         if (!nav) return;
-        fetch(root + 'data/entry-order.json')
-            .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
-            .then(list => {
-                splitGrammatical(list);
-                const order = list.map(([id, hw, lang]) => ({ id, hw, lang, key: ELieb.alphaKey(hw) }))
-                    .sort((a, b) => (a.key < b.key ? -1 : a.key > b.key ? 1 : 0) || a.id.localeCompare(b.id, undefined, { numeric: true }));
-                const hidden = ELieb.hiddenLanguages();
-                const shown = order.filter(x => x.id === slug || ELieb.isShown(x.lang, hidden, x.hw));
-                order.length = 0;
-                order.push(...shown);
+        loadOrder()
+            .then(({ raw, order: all }) => {
+                splitGrammatical(raw);
+                const order = shownOrder(all);
                 const i = order.findIndex(x => x.id === slug);
                 if (i === -1) return;
                 const link = (x, dir) => x
@@ -474,6 +514,57 @@ scripts:
                 nav.hidden = false;
             })
             .catch(() => {});
+    }
+
+    // The sidebar: a headword search, which kinds of entry to see, the eight
+    // headwords before and after this one ("word wheel"), and links. It can be
+    // folded away (remembered in this browser); on a narrow screen it starts folded.
+    const WHEEL = 8;
+    function showSidebar() {
+        const layout = document.getElementById('entry-layout');
+        const side = document.getElementById('entry-sidebar');
+        const fold = document.getElementById('sidebar-fold');
+        const open = document.getElementById('sidebar-open');
+        if (!layout || !side) return;
+        document.body.classList.add('has-sidebar');
+        document.getElementById('sidebar-dictionary').href = root + 'dictionary.html';
+        document.getElementById('sidebar-laws').href = root + 'laws.html';
+        const KEY = 'eLiebermann.sidebar';
+        const narrow = window.matchMedia('(max-width: 60rem)').matches;
+        let closed = narrow;
+        if (!narrow) { try { closed = localStorage.getItem(KEY) === 'closed'; } catch (e) { /* open */ } }
+        const setClosed = c => {
+            layout.classList.toggle('sidebar-closed', c);
+            open.hidden = !c;
+            fold.setAttribute('aria-expanded', String(!c));
+            open.setAttribute('aria-expanded', String(!c));
+        };
+        setClosed(closed);
+        fold.addEventListener('click', () => {
+            setClosed(true);
+            try { if (!narrow) localStorage.setItem(KEY, 'closed'); } catch (e) { /* not kept */ }
+            open.focus();
+        });
+        open.addEventListener('click', () => {
+            setClosed(false);
+            try { localStorage.removeItem(KEY); } catch (e) { /* not kept */ }
+            side.querySelector('input').focus();
+        });
+        const wheel = document.getElementById('word-wheel');
+        const drawWheel = () => loadOrder().then(({ order: all }) => {
+            const order = shownOrder(all);
+            const i = order.findIndex(x => x.id === slug);
+            if (i === -1) { wheel.innerHTML = ''; return; }
+            wheel.innerHTML = order.slice(Math.max(0, i - WHEEL), i + WHEEL + 1).map(x => {
+                const here = x.id === slug;
+                const word = `<span class="word-wheel__hw">${esc(x.hw)}</span><span class="word-wheel__tags">${ELieb.kindTags(x.lang, x.sp)}</span>`;
+                return here
+                    ? `<li class="current"><span aria-current="page">${word}</span></li>`
+                    : `<li><a href="?id=${encodeURIComponent(x.id)}">${word}</a></li>`;
+            }).join('');
+        }).catch(() => { wheel.innerHTML = '<li class="muted small">The list could not be loaded.</li>'; });
+        ELieb.kindFilter(document.getElementById('sidebar-kinds'), () => { drawWheel(); showNeighbours(); }, true);
+        drawWheel();
     }
 
     // Under See (also), Liebermann's grammatical entries (Declination, Gleitlaut …, in
