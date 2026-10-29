@@ -489,12 +489,12 @@ a.dict-card:hover .dict-card__word { color: var(--link-hover); text-decoration: 
 
 /* The printed page beside the entry; stacked under it on narrow screens. */
 .entry-with-scan { display: grid; grid-template-columns: minmax(0, 1fr) 2rem var(--scan-width, minmax(22rem, 30rem)); align-items: start; }
-/* Once the scan is open, the entry keeps a readable width (at most 44rem) and
-   the scan starts at 42rem; the bar between them can be dragged to make the
-   scan wider (up to 64rem) or narrower. The two stay together in the middle
+/* Once the scan is open, the entry keeps a readable width (at most 46rem) and
+   the scan starts at 48rem; the bar between them can be dragged to make the
+   scan wider (up to 90rem, as far as the window allows) or narrower. The two stay together in the middle
    of the window, however wide it is. */
 body.scan-open .main-content { max-width: none; }
-.entry-with-scan.scan-loaded { grid-template-columns: minmax(24rem, 44rem) 2rem min(var(--scan-width, 42rem), calc(100% - 26rem)); justify-content: center; }
+.entry-with-scan.scan-loaded { grid-template-columns: minmax(24rem, 46rem) 2rem min(var(--scan-width, 48rem), calc(100% - 26rem)); justify-content: center; }
 .entry-scan-divider { grid-column: 2; align-self: stretch; }
 .entry-with-scan.scan-loaded .entry-scan-divider {
     position: sticky; top: 1rem; height: calc(100vh - 2rem); align-self: start;
@@ -949,16 +949,20 @@ ul.link-columns li { break-inside: avoid; }
 .citation-note { color: var(--muted); font-size: 0.85em; }
 
 /* ---------- Entry pages: the sidebar (Browse the dictionary) ---------- */
-body.has-sidebar .main-content { max-width: calc(var(--measure) + 17.5rem); }
-.entry-layout { display: grid; grid-template-columns: 15rem minmax(0, 1fr); gap: 2.5rem; align-items: start; }
+/* The sidebar sits against the left edge of the window (as on GitHub); the entry,
+   and the page scan when it is open, are centred in the rest of the width. */
+body.has-sidebar .main-content { max-width: none; padding: 0; }
+.entry-layout { display: grid; grid-template-columns: 16rem minmax(0, 1fr); align-items: start; }
 .entry-layout.sidebar-closed { grid-template-columns: minmax(0, 1fr); }
 .entry-layout.sidebar-closed .entry-sidebar { display: none; }
-/* with the page scan open, the sidebar, entry and scan stay together in the middle */
-body.scan-open .entry-layout:not(.sidebar-closed) { grid-template-columns: 15rem auto; justify-content: center; }
+.entry-column { min-width: 0; padding: 0.5rem 2rem 3rem; }
+.entry-column > article, .entry-column > .sidebar-open { max-width: calc(var(--measure) - 2rem); margin-left: auto; margin-right: auto; }
+.entry-column > .sidebar-open { display: block; width: max-content; margin-left: 0; }
+body.scan-open .entry-column > article { max-width: none; }
 .entry-sidebar {
-    position: sticky; top: 1rem; max-height: calc(100vh - 2rem); overflow-y: auto;
-    background: #f3f1eb; border: 1px solid var(--rule); border-radius: var(--radius);
-    padding: 0.85rem 0.9rem 1rem; font-size: 0.92rem; margin-top: 0.5rem;
+    position: sticky; top: 0; height: 100vh; overflow-y: auto;
+    background: #f3f1eb; border-right: 1px solid var(--rule);
+    padding: 1rem 1rem 1.5rem; font-size: 0.92rem;
 }
 .sidebar-head { display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; margin-bottom: 0.6rem; }
 .sidebar-title { font-weight: 600; color: var(--navy-dark); }
@@ -981,12 +985,16 @@ body.scan-open .entry-layout:not(.sidebar-closed) { grid-template-columns: 15rem
 .kind-tag.de { background: #ece6f2; }
 .kind-tag.sp { background: #f4eccd; }
 .sidebar-links { list-style: none; margin: 0; padding: 0; }
+/* the laws: a separate part of the site, set off from the dictionary links */
+.sidebar-laws { margin-top: 1.1rem; padding-top: 0.1rem; border-top: 1px solid var(--rule); }
+.sidebar-laws .sidebar-label { margin-top: 0.8rem; }
 .sidebar-links li { margin: 0.2rem 0; }
 .sidebar-open { font: inherit; font-size: 0.85rem; margin: 0.5rem 0 0; padding: 0.25rem 0.7rem; border: 1px solid var(--rule); border-radius: 999px; background: #f3f1eb; color: var(--link); cursor: pointer; }
 .sidebar-open:hover { background: var(--powder-tint); }
 .sidebar-open[hidden] { display: none; }
 @media (max-width: 60rem) {
-    .entry-layout, body.scan-open .entry-layout:not(.sidebar-closed) { grid-template-columns: minmax(0, 1fr); gap: 1rem; }
-    .entry-sidebar { position: static; max-height: none; }
+    .entry-layout { grid-template-columns: minmax(0, 1fr); }
+    .entry-sidebar { position: static; height: auto; border-right: 0; border-bottom: 1px solid var(--rule); }
+    .entry-column { padding: 0.5rem 1rem 3rem; }
 }
 @media print { .entry-sidebar, .sidebar-open { display: none !important; } .entry-layout { display: block; } }

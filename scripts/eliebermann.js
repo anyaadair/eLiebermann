@@ -34,7 +34,8 @@
     const HIDE_KEY = 'eliebermann.hiddenLanguages';
     function hiddenLanguages() {
         // ("prop", the old "Hide OE Proper Nouns" button, is no longer offered: a remembered choice is ignored)
-        try { return new Set(JSON.parse(localStorage.getItem(HIDE_KEY) || '[]').filter(l => l !== 'prop')); } catch (e) { return new Set(); }
+        // ("sp", spellings, was offered for a while: ignored too)
+        try { return new Set(JSON.parse(localStorage.getItem(HIDE_KEY) || '[]').filter(l => l !== 'prop' && l !== 'sp')); } catch (e) { return new Set(); }
     }
     function setHiddenLanguages(set) {
         try { localStorage.setItem(HIDE_KEY, JSON.stringify([...set])); } catch (e) { /* not remembered */ }
@@ -64,17 +65,16 @@
     }
 
     // "prop" in the hidden set hides proper nouns ("Hide Proper Nouns"). A spelling entry
-    // (<usg type="dom">spelling</usg>, of any language) counts as a spelling: "sp".
-    const isShown = (lang, hidden, headword, spelling) => {
+    // goes with its language.
+    const isShown = (lang, hidden, headword) => {
         const h = hidden || hiddenLanguages();
-        if (spelling) return !h.has('sp');
         return !h.has(lang || 'ang') && !(h.has('prop') && isProperNoun(headword, lang));
     };
 
     // The kinds of entry a reader can choose to see: the Dictionary page and the
     // sidebar of the entry pages share them (and the choice, hiddenLanguages).
     const KINDS = [['ang', 'Old English', 'Old English', 'OE'], ['la', 'Latin', 'Latin', 'L'], ['fro', 'French', 'French', 'F'],
-        ['de', 'Grammatical terms', 'Grammar', 'Gr'], ['sp', 'Spellings', 'Spellings', 'Sp']];
+        ['de', 'Grammatical terms', 'Grammar', 'Gr']];
 
     /**
      * Bubbles for choosing which kinds of entry to see: "All", then one per kind. With

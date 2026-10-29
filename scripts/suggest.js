@@ -30,7 +30,7 @@
         const starts = [], contains = [];
         const hidden = ELieb.hiddenLanguages();
         for (const e of entries) {
-            if (!ELieb.isShown(e.lang, hidden, e.hw, e.spelling)) continue;
+            if (!ELieb.isShown(e.lang, hidden, e.hw)) continue;
             const i = e.key.indexOf(term);
             if (i === 0) starts.push(e);
             else if (i > 0) contains.push(e);
