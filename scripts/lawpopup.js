@@ -218,7 +218,6 @@
         // details are on the list, where the link (and "Full list") goes.
         if (kindOf(link) === 'law' || kindOf(link) === 'ms') {
             const p = element('p', 'law-popup-expansion', english || german);
-            p.lang = english ? 'en' : 'de';
             box.appendChild(p);
             const moreLm = element('a', 'law-popup-more', kind.more);
             moreLm.href = root() + kind.list + '#' + encodeURIComponent(anchorOf(link));
