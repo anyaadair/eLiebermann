@@ -43,7 +43,7 @@
         ms: { noun: ['manuscript', 'manuscripts'], field: 'Gesetze Text', label: 'Siglum',
             fields: ['Gesetze Text', 'German Expansion', 'English Translation', 'Date (Liebermann)', 'Laws in it', 'Notes'],
             letter: r => (String(r['Gesetze Text']).match(/\p{L}/u) || ['#'])[0].toUpperCase() },
-        gram: { noun: ['term', 'terms'], field: 'Gesetze Text', label: 'Term',
+        gram: { noun: ['headword', 'headwords'], field: 'Gesetze Text', label: 'Term',
             fields: ['Gesetze Text', 'German Expansion', 'Modern German', 'English Translation', 'Notes: Grammatical'],
             letter: r => /^\d/.test(String(r['Gesetze Text']).trim()) ? '#' : (fold(r['Gesetze Text']).match(/[a-z]/) || ['#'])[0].toUpperCase() },
         works: { noun: ['work', 'works'], field: 'Short Title', label: 'Author or title',
@@ -121,11 +121,22 @@
                 // two lost "il" stay apart: each is its own manuscript)
                 const byAnchor = new Map();
                 rows.forEach((r, i) => {
+                    // a grammatical term filed under a headword (its "Group") goes with that headword
+                    if (kind === 'gram') { const k = r.Group || r.Anchor; if (!byAnchor.has(k)) byAnchor.set(k, []); byAnchor.get(k).push(r); return; }
                     const key = kind === 'ms' ? r.Anchor + (byAnchor.has(r.Anchor) && byAnchor.get(r.Anchor)[0]['German Expansion'] !== r['German Expansion'] ? '#' + i : '') : r.Anchor;
                     if (!byAnchor.has(key)) byAnchor.set(key, []);
                     byAnchor.get(key).push(r);
                 });
-                groups = [...byAnchor.entries()].map(([key, rs]) => ({ key, anchor: rs[0].Anchor, rows: rs, letter: K.letter(rs[0]) }));
+                groups = [...byAnchor.entries()].map(([key, rs]) => {
+                    if (kind === 'gram') {
+                        // the headword's own spellings first, then the terms under it, alphabetically
+                        const head = rs.filter(r => r.Anchor === key), under = rs.filter(r => r.Anchor !== key);
+                        const k = r => fold(r['German Expansion']);
+                        rs = head.concat(under.sort((a, b) => k(a).localeCompare(k(b), 'de') || (a.Anchor === b.Anchor ? 0 : a.Anchor < b.Anchor ? -1 : 1)));
+                        return { key, anchor: key, rows: rs, letter: K.letter(head[0] || rs[0]) };
+                    }
+                    return { key, anchor: rs[0].Anchor, rows: rs, letter: K.letter(rs[0]) };
+                });
                 // the grammatical terms in alphabetical order (the file is in no order); Ä under A
                 if (kind === 'gram') groups.sort((a, b) => fold(a.rows[0]['Gesetze Text']).replace(/[^a-z0-9]/g, '').localeCompare(fold(b.rows[0]['Gesetze Text']).replace(/[^a-z0-9]/g, ''), 'de', { numeric: true }));
                 if (kind === 'works') groups.sort((a, b) => fold(a.rows[0]['Short Title']) < fold(b.rows[0]['Short Title']) ? -1 : 1).forEach(g => { g.letter = K.letter(g.rows[0]); });
@@ -274,20 +285,30 @@
             }).join(''))}</tbody></table>`;
     }
 
-    // Grammatical terms: a group of spellings under a heading row; a term with one spelling is a
-    // single row (its term in bold is its heading). Notes in a row of their own under the group.
+    // Grammatical terms: a headword with its spellings and the related terms filed under it
+    // (data/markforward.json "Group"). A group of more than one row has a heading row; a term on its
+    // own is one row, set like a heading. A note opens from "Show note" under the English.
     function drawGram(list) {
+        const de = r => `<span lang="de">${esc(r['German Expansion'])}</span>${r['Modern German'] ? `<span class="modern-german">today: ${esc(r['Modern German'])}</span>` : ''}`;
         return `<table class="glossary glossary--gram">
             <colgroup><col class="c-abbr"><col class="c-de"><col class="c-en"></colgroup>
             <thead><tr><th scope="col">As printed</th><th scope="col">German</th><th scope="col">English</th></tr></thead>
             ${withLetters(list, 3, g => {
-                const notes = [...new Set(g.rows.map(r => r['Notes: Grammatical']).filter(Boolean))];
                 const multi = g.rows.length > 1;
-                const de = r => `<span lang="de">${esc(r['German Expansion'])}</span>${r['Modern German'] ? `<span class="modern-german">today: ${esc(r['Modern German'])}</span>` : ''}`;
-                return `<tbody class="gl-group${multi ? ' gl-group--multi' : ''}" id="${esc(g.anchor)}">
-                    ${multi ? `<tr class="gl-head"><th colspan="3" scope="rowgroup">${esc(g.rows[0]['German Expansion'])}<span class="gl-head-en">${esc(g.rows[0]['English Translation'])}</span></th></tr>` : ''}
-                    ${g.rows.map(r => `<tr><td class="gl-term">${esc(r['Gesetze Text'])}</td><td class="gl-de">${de(r)}</td><td class="gl-en">${esc(r['English Translation'])}</td></tr>`).join('')}
-                    ${notes.length ? `<tr class="gl-note"><td></td><td colspan="2">${notes.map(esc).join(' ')}</td></tr>` : ''}
+                const head = g.rows.find(r => r.Anchor === g.anchor) || g.rows[0];
+                const seen = new Set();
+                const rows = g.rows.map((r, i) => {
+                    // the note of a term goes under its last spelling
+                    const lastOfAnchor = !g.rows.slice(i + 1).some(x => x.Anchor === r.Anchor);
+                    const notes = lastOfAnchor ? [...new Set(g.rows.filter(x => x.Anchor === r.Anchor).map(x => x['Notes: Grammatical']).filter(Boolean))] : [];
+                    const id = r.Anchor !== g.anchor && !seen.has(r.Anchor) ? ` id="${esc(r.Anchor)}"` : '';
+                    seen.add(r.Anchor);
+                    const cls = r.Anchor === g.anchor ? 'gl-own' : 'gl-under';
+                    return `<tr class="${cls}"${id}><td class="gl-term">${esc(r['Gesetze Text'])}</td><td class="gl-de">${de(r)}</td><td class="gl-en">${esc(r['English Translation'])}${notes.length ? `<details class="gl-more"><summary>Show note</summary><p>${notes.map(esc).join(' ')}</p></details>` : ''}</td></tr>`;
+                }).join('');
+                return `<tbody class="gl-group${multi ? ' gl-group--multi' : ' gl-group--single'}" id="${esc(g.anchor)}">
+                    ${multi ? `<tr class="gl-head"><th colspan="3" scope="rowgroup"><span class="gl-head-de" lang="de">${esc(head['German Expansion'])}</span><span class="gl-head-en">${esc(head['English Translation'])}</span></th></tr>` : ''}
+                    ${rows}
                 </tbody>`;
             }).replace(/<tr class="gl-letter"([^>]*)>([\s\S]*?)<\/tr>/g, '<tbody class="gl-letter-body"><tr class="gl-letter"$1>$2</tr></tbody>')}
             </table>`;

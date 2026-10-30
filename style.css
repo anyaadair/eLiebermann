@@ -1174,12 +1174,18 @@ mark.find-hit--current { background: #ffc94d; outline: 2px solid #e0a100; }
 .gl-more summary { cursor: pointer; color: var(--link); font-family: var(--sans); font-size: 0.78rem; width: max-content; max-width: 100%; }
 .gl-more p { margin: 0.25rem 0 0.35rem; color: #4a4f57; }
 .gl-tag { display: inline-block; margin-left: 0.4rem; font-family: var(--sans); font-size: 0.68rem; font-weight: 600; padding: 0 0.4rem; border-radius: 999px; background: #eef0f3; color: var(--muted); vertical-align: 0.1em; }
-/* grammatical terms: a group of related spellings under a heading row */
-.glossary--gram tbody.gl-group--multi tr.gl-head th { text-align: left; padding: 0.7rem 0.75rem 0.15rem; font-family: var(--serif); font-size: 1.02rem; font-weight: 600; color: var(--navy-dark); }
-.glossary--gram tbody.gl-group--multi .gl-head-en { font-family: var(--sans); font-weight: 400; font-size: 0.8rem; color: var(--muted); margin-left: 0.6rem; }
-.glossary--gram tbody.gl-group--multi tr:not(.gl-head) td:first-child { padding-left: 1.5rem; }
-.glossary--gram tbody.gl-group--multi tr:last-child td { padding-bottom: 0.6rem; }
-.glossary--gram tr.gl-note td { font-size: 0.84rem; color: #4a4f57; padding-top: 0; padding-bottom: 0.6rem; }
+/* grammatical terms: a headword (heading row, tinted), with its spellings and the terms filed under it indented */
+.glossary--gram tbody.gl-group--multi tr.gl-head th { text-align: left; padding: 0.55rem 0.75rem 0.35rem; background: #f1efe8; border-top: 1px solid var(--rule); }
+.glossary--gram .gl-head-de { font-family: var(--serif); font-size: 1.12rem; font-weight: 700; color: var(--navy); }
+.glossary--gram .gl-head-en { font-family: var(--sans); font-weight: 400; font-size: 0.85rem; color: var(--muted); margin-left: 0.7rem; }
+.glossary--gram tbody.gl-group--multi tr td:first-child { padding-left: 1.6rem; }
+.glossary--gram tbody.gl-group--multi tr.gl-under td { font-size: 0.92rem; }
+.glossary--gram tbody.gl-group--multi tr.gl-under .gl-term { font-weight: 500; color: var(--ink); }
+.glossary--gram tbody.gl-group--multi tr:last-child td { padding-bottom: 0.7rem; }
+/* a term on its own: set like a headword */
+.glossary--gram tbody.gl-group--single td { padding-top: 0.5rem; padding-bottom: 0.5rem; border-top: 1px solid #ece9e1; }
+.glossary--gram tbody.gl-group--single .gl-term { font-family: var(--serif); font-size: 1.05rem; font-weight: 700; color: var(--navy); }
+.glossary--gram tbody.gl-letter-body + tbody td, .glossary--gram tbody.gl-letter-body + tbody th { border-top: 0; }
 /* the panel: letters to jump to */
 .letter-jump { display: grid; grid-template-columns: repeat(auto-fill, minmax(1.75rem, 1fr)); gap: 0.2rem; }
 .letter-jump a, .letter-jump span { display: block; text-align: center; font-family: var(--sans); font-size: 0.85rem; padding: 0.2rem 0; border-radius: 4px; }
