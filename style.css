@@ -622,6 +622,7 @@ body.scan-open .main-content { max-width: none; }
     color: var(--navy);
 }
 .law-popup dl { margin: 0; }
+.law-popup-expansion { margin: 0 0 0.2rem; font-size: 0.95rem; line-height: 1.45; }
 .law-popup dt {
     margin-top: 0.7rem;
     font-size: 0.72rem;
