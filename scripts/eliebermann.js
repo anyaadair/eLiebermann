@@ -40,6 +40,21 @@
     function setHiddenLanguages(set) {
         try { localStorage.setItem(HIDE_KEY, JSON.stringify([...set])); } catch (e) { /* not remembered */ }
     }
+    // Latin and French text (Anglo-Norman, Old French) is marked data-lang="la", never
+    // lang="la": EB Garamond draws u as V for text whose language is Latin, and some
+    // browsers treat other Romance tags the same way, while Liebermann prints u. Always
+    // use these two for a language from the TEI; tools/check-u-not-v.js stops a deploy
+    // that sets lang= on such text directly.
+    const NO_LANG = /^(?:la|lat|xno|fro|frm|fr|anglo-norman)(?:-|$)/i;
+    function langAttr(lang) {
+        if (!lang || lang === 'und') return '';
+        return NO_LANG.test(lang) ? ` data-lang="${escapeXml(lang)}"` : ` lang="${escapeXml(lang)}"`;   // check-u-not-v: ok
+    }
+    function setLang(el, lang) {
+        if (!lang || lang === 'und') return;
+        if (NO_LANG.test(lang)) el.dataset.lang = lang; else el.lang = lang;   // check-u-not-v: ok
+    }
+
     // An Old English headword that begins with a capital letter (after any
     // bracket or hyphen) is a proper noun: Ine, Cent, [E]aldred, Æðel-.
     // Capitalised by Liebermann but not proper nouns (decided by the editor,
@@ -1208,7 +1223,7 @@ ${translation}
             case 'title': return '<cite>' + inner() + '</cite>';
             case 'quote': return '<q>' + inner() + '</q>';
             case 'div': return '<section>' + inner() + '</section>';
-            case 'foreign': return `<i lang="${escapeXml(node.getAttribute('xml:lang') || '')}">` + inner() + '</i>';
+            case 'foreign': return `<i${langAttr(node.getAttribute('xml:lang') || '')}>` + inner() + '</i>';
             default: return inner();
         }
     }
@@ -1284,7 +1299,7 @@ ${translation}
     }
 
     const api = {
-        TEI_NS, LANGUAGES, LANGUAGE_CODES, languageBadge, properNounBadge, isProperNoun, hiddenLanguages, setHiddenLanguages, isShown, KINDS, kindFilter, kindTags,
+        TEI_NS, LANGUAGES, LANGUAGE_CODES, langAttr, setLang, languageBadge, properNounBadge, isProperNoun, hiddenLanguages, setHiddenLanguages, isShown, KINDS, kindFilter, kindTags,
         useDom, slugify, sortKey, alphaKey, letterOf, ALPHABET, escapeXml, safeUrl,
         linkAbbreviations, loadAbbreviations, extractCitations, linkClauseNumbers, jumpLink, citationXr, splitSenses, splitOutline, splitBreaks, sensesXml, detectLanguage, detectHeadword,
         inlineToTei, isEmptyHtml, buildEntryXml,

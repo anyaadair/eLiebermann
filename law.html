@@ -184,7 +184,7 @@ scripts:
             }
             const seg = type => kids.find(k => k.localName === 'seg' && k.getAttribute('type') === type);
             const de = seg('original'), en = seg('translation');
-            if (de) { const p = el('span', 'lnotes__de'); p.lang = de.getAttribute('xml:lang') || 'de'; p.appendChild(inline(de)); linkWorks(p); li.appendChild(p); }
+            if (de) { const p = el('span', 'lnotes__de'); ELieb.setLang(p, de.getAttribute('xml:lang') || 'de'); p.appendChild(inline(de)); linkWorks(p); li.appendChild(p); }
             if (en) { const p = el('span', 'lnotes__en'); p.lang = 'en'; p.appendChild(inline(en)); linkWorks(p, true); li.appendChild(p); }
             const bibl = kids.find(k => k.localName === 'bibl');
             const where = [];
@@ -370,7 +370,7 @@ scripts:
             box.appendChild(label);
             const p = el('p', 'clause-reading-text');
             const lang = a.getAttribute('xml:lang');
-            if (lang && lang !== 'und') p.lang = lang;
+            ELieb.setLang(p, lang);   // Latin and French as data-lang, so u is not drawn as V
             p.appendChild(inline(a));
             box.appendChild(p);
             // Liebermann's own notes, behind a button: textual notes on his texts (one button, on his first
