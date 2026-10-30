@@ -282,10 +282,15 @@ OE = set('and þæt ðæt se he man ne gif gyf ðe þe beo sy to his hit mid swa
          'scillinga is wið þam ðam'.split())
 
 
-FRENCH_CODES = {'Leis Wl'}
+# Codes in Anglo-Norman French. Their texts are marked xml:lang="xno" (Latin, "la",
+# for Liebermann's L column of Leis Wl), not guessed from the words: the guess below
+# only knows Latin and Old English, and French "se", "ne", "he" look like Old English.
+FRENCH_CODES = {'Leis Wl', 'Wl art Frz'}
 
 
-def language(text, code=''):
+def language(text, code='', sig=''):
+    if code in FRENCH_CODES:
+        return 'la' if sig_key(sig) == 'L' else 'xno'
     if code in PHASE2B:      # Latin with Old English terms (ƿere, þegen): always Latin
         return 'la'
     # the Latin ordeal and excommunication texts (October 2026) write 'æ' (aquæ, Ysaiæ): go by the words there
@@ -678,20 +683,20 @@ def build(row, today, source_name, refs):
     texts, translations = [], []      # (type, lang, source, xml, n, wit)
     shown = set()
     if row['kTextXml']:
-        texts.append(('liebermannText', language(row['kText'], code), lie, pb(lpage(row['kSig']), lie) + row['kTextXml'], row['liebermannNumber'],
+        texts.append(('liebermannText', language(row['kText'], code, row['kSig']), lie, pb(lpage(row['kSig']), lie) + row['kTextXml'], row['liebermannNumber'],
                       witness(row['kSig'], row['kName'])))
         shown.add(sig_key(row['kSig']))
     if row['nTextXml']:
-        texts.append(('liebermannText', language(row['nText'], code), lie, pb(lpage(row['nSig']), lie) + row['nTextXml'], row['liebermannNumber'],
+        texts.append(('liebermannText', language(row['nText'], code, row['nSig']), lie, pb(lpage(row['nSig']), lie) + row['nTextXml'], row['liebermannNumber'],
                       witness(row['nSig'], row['nName'])))
         shown.add(sig_key(row['nSig']))
     if row['afTextXml']:
-        texts.append(('liebermannText', language(row['afText'], code), lie, pb(lpage(row['afSig']), lie) + row['afTextXml'], row['liebermannNumber'],
+        texts.append(('liebermannText', language(row['afText'], code, row['afSig']), lie, pb(lpage(row['afSig']), lie) + row['afTextXml'], row['liebermannNumber'],
                       witness(row['afSig'], row['afName'])))
         shown.add(sig_key(row['afSig']))
     for t in ('bf', 'bi', 'br'):      # Liebermann's fourth, fifth and sixth texts (columns BF-BH, BI-BK, BR-BT; October 2026)
         if row[t + 'TextXml']:
-            texts.append(('liebermannText', language(row[t + 'Text'], code), lie, pb(lpage(row[t + 'Sig']), lie) + row[t + 'TextXml'], row['liebermannNumber'],
+            texts.append(('liebermannText', language(row[t + 'Text'], code, row[t + 'Sig']), lie, pb(lpage(row[t + 'Sig']), lie) + row[t + 'TextXml'], row['liebermannNumber'],
                           witness(row[t + 'Sig'], row[t + 'Name'])))
             shown.add(sig_key(row[t + 'Sig']))
     if row['latinXml']:
@@ -725,7 +730,7 @@ def build(row, today, source_name, refs):
                 row['bTranslationXml'] = pb(pages(row['editorPage'])[1], ed_src) + row['bTranslationXml']
     elif row['tTextXml'] and sig_key(row['tSig']) not in shown:
         # No modern editor: column T is Liebermann's text of another manuscript.
-        texts.append(('liebermannText', language(row['tText']), lie, pb(lpage(row['tSig']), lie) + row['tTextXml'], row['liebermannNumber'], t_wit))
+        texts.append(('liebermannText', language(row['tText'], code, row['tSig']), lie, pb(lpage(row['tSig']), lie) + row['tTextXml'], row['liebermannNumber'], t_wit))
 
     # Liebermann's texts (in the order of his columns: K, N, AF, O, T) before the modern edition.
     texts.sort(key=lambda t: t[0] == 'editionText')
