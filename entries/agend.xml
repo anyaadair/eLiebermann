@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
+      <change when="2026-10-30">Link to the Dictionary of Old English (agend, E01010) added, from a suggestion made on the website (eLiebermann-suggestions #4).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -44,6 +45,7 @@
         <xr type="derivative"><ref target="entry:landagende">landagende</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/1207">ágend</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/38262">ágend (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E01010">agend</ref></xr>
         <xr type="lawCode"><ref target="clause:Hl_1">Hl 1</ref></xr>
         <xr type="lawCode"><ref target="clause:Hl_3">Hl 3</ref></xr>
         <xr type="lawCode"><ref target="clause:Hl_7-a">Hl 7</ref></xr>
