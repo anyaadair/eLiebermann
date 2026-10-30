@@ -112,6 +112,8 @@ const clauses = catalogue.map(c => {
         oe: sum.oe,
         oeLabel: sum.oeLabel,
         oeLang: sum.oeLang,
+        // the languages of the clause's original texts (ang, la, xno), for the language filter
+        langs: [...new Set([...xml.matchAll(/<ab type="(?:liebermannText|editionText|selectedText|supplementaryText)"([^>]*)>/g)].map(m => attr(m[1], 'xml:lang')).filter(Boolean))],
         text: ab(xml, 'liebermannText').concat(ab(xml, 'editionText'), ab(xml, 'selectedText'), ab(xml, 'supplementaryText')).join(' '),
         gloss: sum.gloss,
         glossLabel: sum.glossLabel,
@@ -123,3 +125,40 @@ const clauses = catalogue.map(c => {
 fs.writeFileSync(path.join(repo, 'data', 'laws.json'),
     '[\n' + clauses.map(c => JSON.stringify(c)).join(',\n') + '\n]\n');
 console.log(`data/laws.json: ${clauses.length} clauses`);
+
+// data/laws-text.json: what the Laws page's word search looks in, clause by
+// clause, each text kept apart so the reader can choose where to look. Loaded
+// only when a word search is made. For each clause id:
+//   t: the original texts, [language, label ("Liebermann, MS H", "Robertson"), text]
+//   e: the English translations, [translator id, text] ("claude" is the English of Liebermann's German)
+//   g: Liebermann's German translation
+//   n: the notes (Liebermann's textual notes, Erklärungen and footnotes, in German and
+//      English; the modern editors' and translators' notes)
+const NOTE_TYPES = /^(?:liebermannNote|editorNote|translator|textual)$/;
+const textIndex = {};
+catalogue.forEach(c => {
+    const xml = fs.readFileSync(path.join(dir, c.file), 'utf8');
+    const wits = sigla(xml), eds = editors(xml);
+    const t = [], e = [], g = [], n = [];
+    for (const m of xml.matchAll(/<ab type="(liebermannText|editionText|selectedText|supplementaryText|translation|secondTranslation|supplementaryTranslation)"([^>]*)>([\s\S]*?)<\/ab>/g)) {
+        const text = decode(m[3]);
+        if (!text || /^[.\s…]+$/.test(text)) continue;
+        const lang = attr(m[2], 'xml:lang');
+        const src = attr(m[2], 'source').replace(/^#/, '');
+        if (/ranslation$/.test(m[1])) {
+            if (lang === 'de') g.push(text);
+            else e.push([src === 'rabin-doml' ? 'rabin' : src, text]);
+        } else {
+            const sig = wits[attr(m[2], 'corresp').replace(/^#/, '')];
+            t.push([lang, (eds[src] || src) + (sig ? (/^Q\b/.test(sig) ? ', ' : ', MS ') + sig : ''), text]);
+        }
+    }
+    for (const m of xml.matchAll(/<note type="(\w+)"[^>]*>([\s\S]*?)<\/note>/g)) {
+        if (!NOTE_TYPES.test(m[1])) continue;
+        const text = decode(m[2].replace(/<bibl>[\s\S]*?<\/bibl>/g, ' ').replace(/<\/seg>/g, ' · </seg>'));
+        if (text) n.push(text);
+    }
+    textIndex[c.id] = { t, e, g: g.join(' '), n: n.join(' ¶ ') };
+});
+fs.writeFileSync(path.join(repo, 'data', 'laws-text.json'), JSON.stringify(textIndex));
+console.log(`data/laws-text.json: ${Object.keys(textIndex).length} clauses`);

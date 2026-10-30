@@ -755,6 +755,30 @@ scripts:
             target.appendChild(s);
         }
 
+        // The dictionary entries whose citation lists cite this clause (data/dict-citations.json,
+        // written by tools/build-index.js): filled in when the list has loaded.
+        const dictSec = el('section', 'entry-section clause-dictionary');
+        dictSec.hidden = true;
+        target.appendChild(dictSec);
+        fetch(root + 'data/dict-citations.json').then(r => r.ok ? r.json() : {}).then(map => {
+            const hits = Object.entries(map).filter(([, v]) => v[2].includes(row.id)).map(([id, v]) => ({ id, hw: v[0], lang: v[1] }))
+                .sort((a, b) => { const x = ELieb.alphaKey(a.hw), y = ELieb.alphaKey(b.hw); return x < y ? -1 : x > y ? 1 : 0; });
+            if (!hits.length) return;
+            dictSec.appendChild(el('h2', null, 'In the dictionary'));
+            dictSec.appendChild(el('p', 'small muted', hits.length === 1 ? 'This entry of Liebermann’s Wörterbuch cites this clause:' : 'These ' + hits.length + ' entries of Liebermann’s Wörterbuch cite this clause:'));
+            const ul = el('ul', 'link-columns' + (hits.length <= 3 ? '' : hits.length <= 6 ? ' cols-2' : ' cols-3'));
+            hits.forEach(h => {
+                const li = el('li');
+                const a = el('a', null, h.hw);
+                a.href = root + 'entry.html?id=' + encodeURIComponent(h.id);
+                li.appendChild(a);
+                li.insertAdjacentHTML('beforeend', ' ' + ELieb.languageBadge(h.lang, h.hw));
+                ul.appendChild(li);
+            });
+            dictSec.appendChild(ul);
+            dictSec.hidden = false;
+        }).catch(() => {});
+
         // Editions and translations, then studies (only if there are any), without bullet points.
         const srcs = Object.values(allSrcs);
         // The LLM's English of Liebermann's German comes last.
