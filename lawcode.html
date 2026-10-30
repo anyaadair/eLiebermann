@@ -290,6 +290,7 @@ scripts:
     // dictionary headwords that cite this code
     LawPanel.suggestBox(kw, $('kw-list'), typed => {
         const t = fold(typed), n = new Map();
+        if (!t) return [];   // suggestions only once something is typed
         mine.forEach(c => keywords(c).forEach(k => n.set(k, (n.get(k) || 0) + 1)));
         return [...n.keys()].filter(k => !S.kws.includes(k) && (!t || fold(k).includes(t)))
             .sort((a, b) => (fold(b).startsWith(t) - fold(a).startsWith(t)) || n.get(b) - n.get(a) || a.localeCompare(b)).slice(0, 14)
