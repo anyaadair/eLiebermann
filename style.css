@@ -451,7 +451,9 @@ td.term { font-weight: 600; color: var(--navy-dark); white-space: nowrap; }
 .liebermann-text a.ref-clause { color: var(--clause); border-bottom: 1px solid currentColor; }
 .liebermann-text a.ref-clause:hover, .liebermann-text a.ref-clause:focus-visible { background: var(--highlight); }
 .link-key--clause { color: var(--clause); border-bottom-style: solid; }
-.jump-link { display: inline-block; font-family: var(--sans); font-size: 0.55em; line-height: 1; padding: 0 0.15em 0.05em; margin-left: 0.15em; border: 1px solid var(--rule, #d4d4d4); border-radius: 2px; color: var(--muted); text-decoration: none; vertical-align: -0.2em; }
+/* the small arrow after a linked word, drawn (not a font character, which in italic had no width and slid back over the word), centred in its box */
+.jump-link { display: inline-flex; align-items: center; justify-content: center; width: 0.95em; height: 0.95em; font-size: 0.75em; margin-left: 0.3em; border: 1px solid var(--rule, #d4d4d4); border-radius: 3px; color: var(--muted); text-decoration: none; vertical-align: 0.05em; font-style: normal; }
+.jump-link svg { width: 0.7em; height: 0.7em; display: block; }
 .liebermann-text a.jump-link { border-bottom: 1px solid var(--rule, #d4d4d4); }
 .jump-link:hover, .jump-link:focus-visible { color: var(--link); border-color: currentColor; }
 .link-key.link-key--entry { color: var(--headword); border-bottom: 1px solid currentColor; }
