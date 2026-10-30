@@ -168,19 +168,35 @@
     const loosen = word => word.replace(/ie|y/g, 'i').replace(/ea|eo|io|ae/g, 'e').replace(/k/g, 'c').replace(/([b-df-hj-np-tv-z])\1+/g, '$1');
     const WORD = /[\p{L}\p{N}⁊]+(?:['’][\p{L}]+)?/gu;
     const wordsCache = new Map();
-    // a text's words, folded (and loosened), with where each stands in the text
+    // A text's words, folded (and loosened), with where each stands in the text. Without
+    // loosening, each word also keeps where each of its folded letters came from (map), so
+    // that a match inside a word ("gyld" in "XIIgylde") can be marked by itself.
     function wordsOf(text, loose) {
         const key = (loose ? 'L' : 'S') + text;
         let r = wordsCache.get(key);
         if (!r) {
-            r = [...String(text).matchAll(WORD)].map(m => { let f = sfold(m[0]).replace(/[^a-z0-9]/g, ''); if (loose) f = loosen(f); return { f, at: m.index, len: m[0].length }; });
+            r = [...String(text).matchAll(WORD)].map(m => {
+                if (loose) return { f: loosen(sfold(m[0]).replace(/[^a-z0-9]/g, '')), at: m.index, len: m[0].length };
+                let f = '';
+                const map = [];
+                for (let i = 0; i < m[0].length; i++) {
+                    const piece = sfold(m[0][i]).replace(/[^a-z0-9]/g, '');
+                    for (let j = 0; j < piece.length; j++) map.push(i);
+                    f += piece;
+                }
+                map.push(m[0].length);
+                return { f, at: m.index, len: m[0].length, map };
+            });
             if (wordsCache.size > 60000) wordsCache.clear();
             wordsCache.set(key, r);
         }
         return r;
     }
     // "ceap*", "*bot", "\"on cyninges hand\"", plain words -> a list of terms, each a list of
-    // word tests. whole: plain words must be whole words (else: anywhere in a word).
+    // word tests. whole: plain words must be whole words, and ceap* / *bot must begin / end a
+    // word; otherwise ("parts of words") a word may be found anywhere inside a longer one
+    // ("gyld" and "gyld*" both find the gylde of XIIgylde). A test gives the part of the
+    // folded word that matches, [start, end], or null.
     function parseWords(text, loose, whole) {
         const terms = [];
         const norm = x => { let f = sfold(x).replace(/[^a-z0-9*]/g, ''); if (loose) f = loosen(f.replace(/\*/g, '\u0001')).replace(/\u0001/g, '*'); return f; };
@@ -188,10 +204,18 @@
             const t = norm(raw);
             if (!t.replace(/\*/g, '')) return null;
             const pre = t.endsWith('*'), suf = t.startsWith('*'), core = t.replace(/\*/g, '');
-            if (pre && suf) return f => f.includes(core);
-            if (pre) return f => f.startsWith(core);
-            if (suf) return f => f.endsWith(core);
-            return w ? f => f === core : f => f.includes(core);
+            if (!w) {
+                return f => {
+                    const i = suf && !pre ? f.lastIndexOf(core) : f.indexOf(core);
+                    if (i < 0) return null;
+                    // with a wildcard the rest of the word (after, or before) is part of the match
+                    return [suf ? (pre ? 0 : 0) : i, pre ? f.length : i + core.length];
+                };
+            }
+            if (pre && suf) return f => { const i = f.indexOf(core); return i < 0 ? null : [0, f.length]; };
+            if (pre) return f => f.startsWith(core) ? [0, f.length] : null;
+            if (suf) return f => f.endsWith(core) ? [0, f.length] : null;
+            return f => f === core ? [0, f.length] : null;
         };
         for (const m of String(text).matchAll(/"([^"]+)"|(\S+)/g)) {
             if (m[1]) {
@@ -211,9 +235,15 @@
         for (const seq of terms) {
             let found = false;
             for (let i = 0; i + seq.length <= ws.length; i++) {
-                if (seq.every((t, j) => t(ws[i + j].f))) {
-                    found = true;
-                    hits.push([ws[i].at, ws[i + seq.length - 1].at + ws[i + seq.length - 1].len]);
+                const parts = seq.map((t, j) => t(ws[i + j].f));
+                if (!parts.every(Boolean)) continue;
+                found = true;
+                const first = ws[i], last = ws[i + seq.length - 1];
+                // a single word matched in part: just that part, where the word keeps its letters' places
+                if (seq.length === 1 && first.map && (parts[0][0] > 0 || parts[0][1] < first.f.length)) {
+                    hits.push([first.at + first.map[parts[0][0]], first.at + first.map[parts[0][1]]]);
+                } else {
+                    hits.push([first.at, last.at + last.len]);
                 }
             }
             if (!found) hits.push(null);
