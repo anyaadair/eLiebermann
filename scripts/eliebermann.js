@@ -485,6 +485,9 @@
     const SPELLING_WORD = String.raw`(?:verschr\.|[\p{Ll}~æðþǣ][\p{L}~\-]*)`;
     const SPELLING_PASSAGE = new RegExp(String.raw`^(\s*(?:;|\|(?:\s*[\p{L}\d .]{1,15}:)?|(?:\s*u\.\s*oft|\s*[;|]\s*` + SPELLING_WORD + String.raw`)?\s*\d{1,2}[a-z]?\)[^;|:()\[\]\u0001-\u0004]{0,40}:)\s*(` + SPELLING_WORD + String.raw`(?:\s+(?:\[[^\]\d]*\]\s+)?` + SPELLING_WORD + String.raw`:?){0,5}(?:\s+\[[^\]\d]*\])?)\s+)(` + PASSAGE + String.raw`)(?![\p{L}\d])(?=\s*(?:$|[;|‖=\[\u0001\u0004]|\.\s*(?:$|[\d;|‖(—\u0001\u0004])|\((?!\d)|ff?\.|—|,\s|u\.\s*(?:oft|öfter)|\d{1,2}[a-z]?\)|\p{L}\)|[IVX]+\)))`, 'u');
 
+    // a remark in Liebermann's German between a semicolon and a passage (see scanCitations)
+    const GLOSS_PASSAGE = new RegExp(String.raw`^(\s*;\s*)(\p{L}[^;|:\u0001-\u0004\d()\[\]=]{1,60}?)\s+(` + PASSAGE + String.raw`)(?![\p{L}\d])(?=\s*(?:$|[;|‖=\[\u0001\u0004]|\.\s*(?:$|[\d;|‖(—\u0001\u0004])|\((?!\d)|ff?\.|—|,\s(?!\d)))`, 'u');
+
     /**
      * The law code passages cited in an entry's TEI text (the inside of
      * <dictScrap>), in order and without repeats: [{ text: 'Af 41 B', anchor: 'Af' }].
@@ -512,6 +515,18 @@
             .replace(/<ref type="lawCode" target="law:([^"]*)">([\s\S]*?)<\/ref>/g, (m, a, l) => `\u0001${a}\u0002${l.replace(/<[^>]*>/g, '')}\u0003`)
             .replace(/<[^>]*>/g, '');
         const text0 = unescape(flat);
+        // Which characters are italic (Liebermann's German): the same text with the letters of
+        // italic passages turned into \u0007, compared with text0. Used only when it lines up.
+        const italicFlat = unescape(String(teiText || '')
+            // a cited work ("vgl. Sievers 304") is not part of the German, even when its name is in italic
+            .replace(/<ref type="bibl"[^>]*>[\s\S]*?<\/ref>/g, m => m.replace(/<\/?hi\b[^>]*>/g, ''))
+            .replace(/<hi rend="italic">((?:(?!<\/?hi\b)[\s\S])*?)<\/hi>/g, (m, inner) => /<ref type="lawCode"/.test(inner) ? m
+                : inner.replace(/(^|>)([^<]*)/g, (x, gt, t) => gt + t.replace(/&[a-z]+;|\p{L}/gu, '\u0007')))
+            .replace(/<hi rend="superscript">([\s\S]*?)<\/hi>/g, '\u0004')
+            .replace(/<(lb|pb)\b[^>]*\/>/g, ' ')
+            .replace(/<ref type="lawCode" target="law:([^"]*)">([\s\S]*?)<\/ref>/g, (m, a, l) => `\u0001${a}\u0002${l.replace(/<[^>]*>/g, '')}\u0003`)
+            .replace(/<[^>]*>/g, ''));
+        const italic = italicFlat.length === text0.length ? [...italicFlat].map(c => c === '\u0007') : null;
         const noteAt = end => {
             if (text0[end] !== '\u0004') return '';
             const n = raised[(text0.slice(0, end).match(/\u0004/g) || []).length] || '';
@@ -537,7 +552,7 @@
                 return;
             }
             if (!seen.has(text)) { seen.add(text); newAt.set(start, out.push(c) - 1); }
-        });
+        }, italic);
         byHand.forEach(c => { if (!seen.has(c.text)) { seen.add(c.text); out.push(c); } });
         return out.filter(Boolean);
     }
@@ -548,7 +563,7 @@
      * found(text, anchor, start, end) for every passage, repeats included;
      * start and end are where its number stands in the flat text.
      */
-    function scanCitations(flat, found) {
+    function scanCitations(flat, found, italic) {
         // A bracket with no number in it, such as a manuscript reading
         // ("Af 5,4 (geänd. aus noman H). 43 B"), does not end a run of
         // citations: it is read as spaces, so "43" is still Af 43. (Its
@@ -687,6 +702,21 @@
                     rest = rest.slice(m[0].length); at += m[0].length;
                     continue;
                 }
+                // "Hl 1. 3. 7; im Ggs. zum ‘Besitzer’ 16,3": after a semicolon, a remark in
+                // Liebermann's German (all its words in italic) and then a number is another
+                // passage of the same code (Hl 16,3).
+                if (italic && code && last && last.anchor === code.anchor && (m = GLOSS_PASSAGE.exec(rest))) {
+                    const g0 = at + m[1].length, gloss = m[2];
+                    // not a page of a book ("dazu Rubr. S. 544")
+                    if (!/(?:^|\s)S\.?$/.test(gloss.trim()) && [...gloss].every((ch, i) => !/\p{L}/u.test(ch) || italic[g0 + i])) {
+                        const n = m[3].replace(/\.$/, ''), s = at + m[0].length - m[3].length;
+                        // "Cn 1020,4; Feindseligkeit 5": Cn 1020,5, written as the passage before it
+                        const sep = last.text.charAt(code.label.length) === ',' ? ',' : ' ';
+                        add(code.label + sep + n, s, s + n.length, false);
+                        rest = rest.slice(m[0].length); at += m[0].length;
+                        continue;
+                    }
+                }
                 break;
             }
             // a footnote mark after the last passage ("48⁵ A³. 61,1") does not end the run
@@ -795,8 +825,10 @@
         // The text as extractCitations() sees it, with where each character came from.
         let flat = '';
         const from = [];   // from[i] = [textNode, offset] or null
+        const ital = [];   // ital[i]: the character is in italic (Liebermann's German)
+        let inItalic = 0;
         const put = (str, node, offset) => {
-            for (let i = 0; i < str.length; i++) { flat += str[i]; from.push(node ? [node, offset + i] : null); }
+            for (let i = 0; i < str.length; i++) { flat += str[i]; from.push(node ? [node, offset + i] : null); ital.push(inItalic > 0); }
         };
         const walk = node => {
             node.childNodes.forEach(n => {
@@ -815,8 +847,11 @@
                 // at the end of one sense ran into the next sense's "2)" and
                 // was read as 20,52.
                 const block = /^(p|div|li|ol|ul)$/.test(n.localName);
+                const it = n.localName === 'em' || n.localName === 'i';
                 if (block) put(' ', null, 0);
+                if (it) inItalic++;
                 walk(n);
+                if (it) inItalic--;
                 if (block) put(' ', null, 0);
             });
         };
@@ -830,7 +865,7 @@
             if (/^Z\./.test(flat.slice(start, end))) start += flat.slice(start, end).search(/\d/);
             const a = from[start], b = from[end - 1];
             if (href && a && b && a[0] === b[0]) hits.push({ node: a[0], start: a[1], end: b[1] + 1, href, text, flatStart: start });
-        });
+        }, ital);
         // Wrap from the last to the first, so earlier offsets stay right.
         hits.reverse().forEach(h => {
             const tail = h.node.splitText(h.start);
