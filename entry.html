@@ -368,7 +368,7 @@ scripts:
             const m = /^clause:(.+)$/.exec(ref.getAttribute('target') || '');
             if (m) clauses[ref.textContent.replace(/\s+/g, ' ').trim()] = root + 'law.html?id=' + encodeURIComponent(m[1]);
         });
-        ELieb.linkClauseNumbers(target.querySelector('.liebermann-text'), clauses);
+        ELieb.linkClauseNumbers(target.querySelector('.liebermann-text'), clauses, { headword: e.headword });
         // "Pax": a text the laws database keeps as one clause, cited by name alone. The name keeps
         // its link to the list of law codes; a small arrow after it goes to the clause.
         target.querySelectorAll('.liebermann-text a[href*="lawAbb.html#"]').forEach(a => {
