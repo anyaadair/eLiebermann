@@ -13,8 +13,8 @@
     const ENDPOINT = 'https://eliebermann-suggest.notamargaret8.workers.dev/';
     const TURNSTILE_SITE_KEY = '0x4AAAAAAFsVIUpYsQELn2Q2';
 
-    const KINDS = [['missing-link', 'Missing link'], ['wrong-link', 'Wrong link'], ['not-ms', 'Not a manuscript / wrong law code'],
-        ['typo', 'Typo in the text'], ['other', 'Something else']];
+    // what the suggestion is about: one or more
+    const KINDS = [['link', 'Missing/wrong link(s)'], ['dict', 'Add/correct dictionary link(s)'], ['other', 'Something else']];
     const DICTS = [['bt', 'Bosworth–Toller', /^(www\.)?bosworthtoller\.com$|^bosworth\.ff\.cuni\.cz$/],
         ['doe', 'Dictionary of Old English', /^(doe\.artsci|tapor\.library|(www\.)?doe)\.utoronto\.ca$/]];
     const esc = s => ELieb.escapeXml(s);
@@ -36,7 +36,7 @@
                     <p class="small muted">Your suggestion goes to the editors, who check it before anything on the site changes.</p>
 
                     <fieldset class="suggest-form__part">
-                        <legend>What’s wrong?</legend>
+                        <legend>What is it about? <span class="muted">(choose one or more)</span></legend>
                         <div class="kind-pills kind-pills--small" role="group" aria-label="What kind of change">${KINDS.map(([k, label]) =>
                             `<button type="button" class="kind-pill" data-kind="${k}" aria-pressed="false">${esc(label)}</button>`).join('')}</div>
                         <label class="suggest-form__label" for="sg-text">Which word or number, and what should it be?</label>
@@ -93,7 +93,7 @@
             const status = form.querySelector('.suggest-form__status');
             form.addEventListener('submit', e => {
                 e.preventDefault();
-                const kinds = [...form.querySelectorAll('[data-kind][aria-pressed="true"]')].map(b => b.dataset.kind);
+                let kinds = [...form.querySelectorAll('[data-kind][aria-pressed="true"]')].map(b => b.dataset.kind);
                 const text = form.querySelector('#sg-text').value.trim();
                 const links = [], bad = [];
                 rows.querySelectorAll('.suggest-form__row').forEach(r => {
@@ -106,6 +106,7 @@
                 });
                 status.className = 'suggest-form__status';
                 if (bad.length) { status.classList.add('is-error'); status.textContent = `This doesn’t look like an address in the dictionary chosen beside it: ${bad[0]}`; return; }
+                if (links.length && !kinds.includes('dict')) kinds = kinds.concat('dict');
                 if (!text && !links.length) { status.classList.add('is-error'); status.textContent = 'Please describe the change, or add a dictionary link.'; return; }
                 if (TURNSTILE_SITE_KEY && !token) { status.classList.add('is-error'); status.textContent = 'Please wait for the robot check below to finish, then send again.'; return; }
                 const send = form.querySelector('[type=submit]');

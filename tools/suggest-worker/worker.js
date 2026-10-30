@@ -14,10 +14,8 @@
  *                               widget (the robot check); without it, no check is made
  */
 const KINDS = {
-    'missing-link': 'Missing link',
-    'wrong-link': 'Wrong link',
-    'not-ms': 'Not a manuscript / wrong law code',
-    'typo': 'Typo in the text',
+    'link': 'Missing/wrong link(s)',
+    'dict': 'Add/correct dictionary link(s)',
     'other': 'Something else'
 };
 // addresses accepted for a link to another dictionary
@@ -81,9 +79,9 @@ export default {
             `*Sent:* ${new Date().toISOString().slice(0, 16).replace('T', ' ')} UTC from the eLiebermann website`
         ].filter(x => x !== '');
         const labels = [d.section === 'laws' ? 'laws' : 'dictionary'];
-        if (links.length) labels.push('dictionary link');
-        if (text || kinds.length) labels.push('correction');
-        const title = `${headword}: ${links.length && !kinds.length ? 'dictionary link' : kinds.map(k => KINDS[k].toLowerCase()).join(', ') || 'suggestion'}`.slice(0, 200);
+        if (links.length || kinds.includes('dict')) labels.push('dictionary link');
+        if (kinds.includes('link') || kinds.includes('other') || (text && !kinds.length)) labels.push('correction');
+        const title = `${headword}: ${kinds.map(k => KINDS[k].toLowerCase()).join(', ') || (links.length ? 'dictionary link' : 'suggestion')}`.slice(0, 200);
 
         const gh = await fetch(`https://api.github.com/repos/${env.REPO}/issues`, {
             method: 'POST',
