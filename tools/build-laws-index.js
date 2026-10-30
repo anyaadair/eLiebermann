@@ -126,6 +126,12 @@ fs.writeFileSync(path.join(repo, 'data', 'laws.json'),
     '[\n' + clauses.map(c => JSON.stringify(c)).join(',\n') + '\n]\n');
 console.log(`data/laws.json: ${clauses.length} clauses`);
 
+// data/laws-brief.json: every clause's id, law code, citation and the opening of its
+// text, for the neighbouring clauses in the sidebar of a clause page.
+const brief = clauses.map(c => [c.id, c.code, c.citation, c.oe.length > 70 ? c.oe.slice(0, 70).replace(/\s+\S*$/, '') + '…' : c.oe]);
+fs.writeFileSync(path.join(repo, 'data', 'laws-brief.json'), JSON.stringify(brief));
+console.log(`data/laws-brief.json: ${brief.length} clauses`);
+
 // data/laws-text.json: what the Laws page's word search looks in, clause by
 // clause, each text kept apart so the reader can choose where to look. Loaded
 // only when a word search is made. For each clause id:

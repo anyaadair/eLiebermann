@@ -328,65 +328,9 @@ scripts:
     }
     d.addEventListener('focus', loadDict);
 
-    // ---- Word search ----
-    // Letters as the search compares them: lower case, accents off, æ as ae, þ and ð as th,
-    // ƿ as w, ȝ as g, ⁊ as "and"; with spelling tolerance also the usual variations of Old English.
-    const sfold = s => String(s || '').toLowerCase().replace(/⁊/g, ' and ').replace(/[æǣǽ]/g, 'ae').replace(/[þðꝥ]/g, 'th')
-        .replace(/ƿ/g, 'w').replace(/ȝ/g, 'g').replace(/ß/g, 'ss').replace(/œ/g, 'oe').normalize('NFD').replace(/[̀-ͯ]/g, '');
-    const loosen = word => word.replace(/ie|y/g, 'i').replace(/ea|eo|io|ae/g, 'e').replace(/k/g, 'c').replace(/([b-df-hj-np-tv-z])\1+/g, '$1');
-    const WORD = /[\p{L}\p{N}⁊]+(?:['’][\p{L}]+)?/gu;
-    // a field's words, folded (and loosened), with where each stands in the text
-    const wordsCache = new Map();
-    function wordsOf(text, loose) {
-        const key = (loose ? 'L' : 'S') + text;
-        let r = wordsCache.get(key);
-        if (!r) {
-            r = [...String(text).matchAll(WORD)].map(m => { let f = sfold(m[0]).replace(/[^a-z0-9]/g, ''); if (loose) f = loosen(f); return { f, at: m.index, len: m[0].length }; });
-            if (wordsCache.size > 60000) wordsCache.clear();
-            wordsCache.set(key, r);
-        }
-        return r;
-    }
-    // "ceap*", "*bot", "\"on cyninges hand\"", plain words -> a list of terms, each a list of word tests
-    function parseWords(text, loose) {
-        const terms = [];
-        const norm = x => { let f = sfold(x).replace(/[^a-z0-9*]/g, ''); if (loose) f = loosen(f.replace(/\*/g, '\u0001')).replace(/\u0001/g, '*'); return f; };
-        const test = (raw, whole) => {
-            const t = norm(raw);
-            if (!t.replace(/\*/g, '')) return null;
-            const pre = t.endsWith('*'), suf = t.startsWith('*'), core = t.replace(/\*/g, '');
-            if (pre && suf) return f => f.includes(core);
-            if (pre) return f => f.startsWith(core);
-            if (suf) return f => f.endsWith(core);
-            return whole ? f => f === core : f => f.includes(core);
-        };
-        for (const m of String(text).matchAll(/"([^"]+)"|(\S+)/g)) {
-            if (m[1]) {
-                const seq = m[1].split(/\s+/).map(x => test(x, true)).filter(Boolean);
-                if (seq.length) terms.push(seq);
-            } else {
-                const t = test(m[2], S.match === 'whole');
-                if (t) terms.push([t]);
-            }
-        }
-        return terms;
-    }
-    // where each term matches in a field: [[start, end] in the text], or null if a term is missing
-    function findIn(text, terms, loose) {
-        const ws = wordsOf(text, loose);
-        const hits = [];
-        for (const seq of terms) {
-            let found = false;
-            for (let i = 0; i + seq.length <= ws.length; i++) {
-                if (seq.every((t, j) => t(ws[i + j].f))) {
-                    found = true;
-                    hits.push([ws[i].at, ws[i + seq.length - 1].at + ws[i + seq.length - 1].len]);
-                }
-            }
-            if (!found) hits.push(null);
-        }
-        return hits;
-    }
+    // ---- Word search (the rules are in scripts/law-search.js, shared with the law code and clause pages) ----
+    const { sfold, parseWords: parseTerms, findIn } = LawSearch.words;
+    const parseWords = (text, loose) => parseTerms(text, loose, S.match === 'whole');
     // the fields of a clause that the reader is looking in: [label, text, language]
     const TR_NAME = Object.fromEntries(TRANSLATORS);
     function fields(c) {

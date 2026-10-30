@@ -1,25 +1,103 @@
 ---
 title: Law code
 section: laws
+full_width: true
 description: One law code of pre-Conquest England, clause by clause, with its text and an English translation.
 scripts:
   - "ROOT/scripts/eliebermann.js"
+  - "ROOT/scripts/law-search.js"
+  - "ROOT/scripts/law-panel.js"
 ---
+<div class="laws-layout">
+<aside class="laws-panel" id="panel" aria-label="Search this law code">
+    <h2 class="laws-panel__title">Search this law code</h2>
+    <p class="panel-help panel-intro" id="panel-code">&nbsp;</p>
+
+    <div class="panel-sec panel-sec--method" data-method="go">
+        <label class="sidebar-label" for="go">Go to a clause</label>
+        <input type="search" id="go" placeholder="Clause number, e.g. 23 or 23,2" autocomplete="off">
+        <p class="panel-help">The list moves to the clause as you type; Enter opens it.</p>
+    </div>
+
+    <div class="panel-sec panel-sec--method" data-method="w">
+        <label class="sidebar-label" for="w">Search by Word</label>
+        <input type="search" id="w" placeholder="e.g. ceap*, theft, &quot;gif mon&quot;" autocomplete="off">
+        <p class="panel-help">In this law code only. Several words: all must appear. <code>"…"</code> a phrase · <code>ceap*</code> words beginning <i>ceap-</i> · <code>*bot</code> words ending <i>-bot</i></p>
+        <div class="panel-sub">Look in</div>
+        <div class="kind-pills kind-pills--small" id="where" role="group" aria-label="Where to look for the words"></div>
+        <div class="panel-sub">Match</div>
+        <div class="kind-pills kind-pills--small" id="match" role="group" aria-label="How to match the words"></div>
+        <label class="panel-check"><input type="checkbox" id="tol"> Spelling tolerance <span class="muted">(i, y and ie; e, æ, ea and eo; single and double letters; c and k treated alike)</span></label>
+    </div>
+
+    <div class="panel-sec panel-sec--method" data-method="d">
+        <label class="sidebar-label" for="d">Search by Wörterbuch Headword</label>
+        <div class="suggest-wrap"><input type="search" id="d" placeholder="e.g. bot" autocomplete="off"><ul class="suggestions" id="d-list" hidden></ul></div>
+        <p class="panel-help">The clauses of this law code that the Wörterbuch cites for the word.</p>
+        <div id="d-chosen" class="chips"></div>
+    </div>
+
+    <div class="panel-sec panel-sec--method" data-method="kw">
+        <label class="sidebar-label" for="kw">Search by Indexed Keyword</label>
+        <div class="suggest-wrap"><input type="search" id="kw" placeholder="The keywords of this law code" autocomplete="off"><ul class="suggestions" id="kw-list" hidden></ul></div>
+        <p class="panel-help">The keyword index covers the pre-Conquest law codes only.</p>
+        <div id="kw-chosen" class="chips"></div>
+        <div class="kind-pills kind-pills--small" id="kwmode" role="group" aria-label="Several keywords" hidden></div>
+    </div>
+
+    <div class="panel-sec panel-sec--shared">
+        <div class="sidebar-label">Show in the list</div>
+        <div class="kind-pills kind-pills--small" id="show" role="group" aria-label="What the list shows"></div>
+    </div>
+
+    <div class="panel-sec">
+        <div class="sidebar-label">Read and compare</div>
+        <ul class="sidebar-links" id="panel-links"></ul>
+    </div>
+
+    <p><button type="button" class="button button--quiet" id="reset">Clear the search</button></p>
+</aside>
+
+<div class="laws-main">
 <article id="code"><p class="loading">Loading the law code…</p></article>
+</div>
+</div>
 
 <script>
 (function () {
     const root = window.SITE_ROOT || '';
-    const target = document.getElementById('code');
-    const wanted = new URLSearchParams(location.search).get('code') || '';
+    const $ = id => document.getElementById(id);
+    const target = $('code');
+    const params = new URLSearchParams(location.search);
+    const wanted = params.get('code') || '';
     const esc = ELieb.escapeXml;
     const clauseUrl = id => root + 'law.html?id=' + encodeURIComponent(id);
     const codeUrl = code => root + 'lawcode.html?code=' + encodeURIComponent(code);
     const fold = s => ELieb.slugify(s).toLowerCase().replace(/-/g, '');
+    const plural = (n, one, many) => n + ' ' + (n === 1 ? one : many);
+    const W = LawSearch.words;
+    const keywords = c => c.offences.concat(c.people, c.places);
 
-    function render(code, codes, clauses) {
+    // the search, as set in the panel (and kept in the address)
+    const S = {
+        where: new Set((params.get('in') || 'orig,en').split(',').filter(x => LawPanel.WHERE.some(([k]) => k === x))),
+        match: params.get('m') === 'part' ? 'part' : 'whole',
+        dict: params.get('d') || '',
+        kws: (params.get('kw') || '').split('|').filter(Boolean),
+        kwMode: params.get('kwm') === 'any' ? 'any' : 'all',
+        show: new Set((params.get('show') || 'text,en').split(',').filter(x => x === 'text' || x === 'en'))
+    };
+    if (!S.where.size) S.where = new Set(['orig', 'en']);
+    if (!S.show.size) S.show = new Set(['text', 'en']);
+    const w = $('w'), d = $('d'), kw = $('kw'), go = $('go'), tol = $('tol');
+    w.value = params.get('w') || '';
+    tol.checked = params.get('tol') === '1';
+
+    let code = null, codes = [], mine = [], texts = null, dict = null, tag = null, textLabel = '', enLabel = '';
+
+    function render(clauses) {
         const i = codes.indexOf(code);
-        const mine = clauses.filter(c => c.code === code.code);
+        mine = clauses.filter(c => c.code === code.code);
         document.title = code.name + ' · eLiebermann';
         const lawAbb = code.anchor ? `<a href="${root}lawAbb.html#${encodeURIComponent(code.anchor)}" title="On the list of law codes and manuscripts">${esc(code.code)}</a>` : esc(code.code);
         const bits = [
@@ -68,46 +146,184 @@ scripts:
                     plainLine('Clauses', String(mine.length))}</div>
             </header>
             <p class="code-callout">Below is the code in summary form: one text (the first in Liebermann’s edition) and one translation (an English crib of Liebermann’s German). Where either of these is unavailable, an alternative is shown and labelled. Each clause has its own page with all its texts, manuscripts, editions and translations, and its notes, cross-references and keywords. Click a clause number, or <em>All texts and translations</em> under any clause, to open it.</p>
-            <div class="code-tools">
-                <input type="search" id="find" placeholder="Find in this law code (clause number or words)" aria-label="Find in this law code">
-                <a class="button" href="${mine.length ? clauseUrl(mine[0].id) + '&all=1' : '#'}">Read with every text and translation</a>
-            </div>
+            <p id="list-count" class="muted small" aria-live="polite"></p>
             <div class="code-clauses-head">
                 <span></span>
-                <span>${esc(textHead)}</span>
-                <span>${esc(enHead)}</span>
+                <span class="col-text">${esc(textHead)}</span>
+                <span class="col-en">${esc(enHead)}</span>
             </div>
             <ol class="code-clauses" id="clauses"></ol>
             <nav class="clause-nav">
                 ${i > 0 ? `<a href="${codeUrl(codes[i - 1].code)}">← ${esc(codes[i - 1].name)}</a>` : '<span></span>'}
                 ${i < codes.length - 1 ? `<a href="${codeUrl(codes[i + 1].code)}">${esc(codes[i + 1].name)} →</a>` : '<span></span>'}
             </nav>`;
-        const ol = document.getElementById('clauses');
-        const draw = term => {
-            const t = fold(term || '');
-            const shown = !t ? mine : mine.filter(c => fold(c.clause).startsWith(t) || fold(c.oe + ' ' + c.gloss + ' ' + c.en).includes(t));
-            ol.innerHTML = shown.length ? shown.map(c => `
+        window.__tag = tag; window.__labels = [textLabel, enLabel];
+        // the panel: this law code, and links
+        $('panel-code').innerHTML = `<strong>${esc(code.name)}</strong> <span class="code-abbr">${esc(code.code)}</span> · ${plural(mine.length, 'clause', 'clauses')}`;
+        $('panel-links').innerHTML = [
+            mine.length ? `<li><a href="${clauseUrl(mine[0].id)}&all=1">Read the whole code, with every text and translation</a></li>` : '',
+            `<li><a href="${root}laws.html?codes=${encodeURIComponent(code.code)}">Search all the laws</a> <span class="muted">(this code chosen)</span></li>`,
+            `<li><a href="${root}laws.html">All law codes</a></li>`,
+            i > 0 ? `<li><a href="${codeUrl(codes[i - 1].code)}">← ${esc(codes[i - 1].name)}</a></li>` : '',
+            i < codes.length - 1 ? `<li><a href="${codeUrl(codes[i + 1].code)}">${esc(codes[i + 1].name)} →</a></li>` : ''
+        ].join('');
+    }
+
+    // ---- The list, narrowed by the search ----
+    function drawList() {
+        const ol = $('clauses');
+        if (!ol) return;
+        const tagOf = window.__tag, [tl, el] = window.__labels;
+        const words = w.value.trim();
+        if (words && !texts) { $('list-count').textContent = 'Loading the texts for the word search…'; LawPanel.loadTexts().then(t => { texts = t; drawList(); }); return; }
+        if (S.dict && !dict) { LawPanel.loadDict().then(m => { dict = m; drawPanel(); drawList(); }); return; }
+        const terms = words ? W.parseWords(words, tol.checked, S.match === 'whole') : [];
+        const loose = lang => tol.checked && !/^(en|de|notes)$/.test(lang || '');
+        const dictIds = S.dict && dict && dict[S.dict] ? new Set(dict[S.dict][2]) : null;
+        const kwF = S.kws.map(fold);
+        const other = new Map();   // matches found only in a text the list does not show
+        const shown = mine.filter(c => {
+            if (S.dict && !(dictIds && dictIds.has(c.id))) return false;
+            if (kwF.length) {
+                const ks = keywords(c).map(fold);
+                if (!(S.kwMode === 'any' ? kwF.some(k => ks.includes(k)) : kwF.every(k => ks.includes(k)))) return false;
+            }
+            if (terms.length) {
+                const seen = terms.map(() => false), extra = [];
+                let inShown = false;
+                LawPanel.fields(texts[c.id], S.where).forEach(([label, text, lang]) => {
+                    const hits = W.findIn(text, terms, loose(lang));
+                    hits.forEach((h, i) => { if (h) seen[i] = true; });
+                    const isShown = (S.show.has('text') && text === c.oe) || (S.show.has('en') && text === c.gloss);
+                    if (hits.some(Boolean)) { if (isShown) inShown = true; else extra.push([label, text, hits.filter(Boolean), lang]); }
+                });
+                if (!seen.every(Boolean)) return false;
+                // where the match is not in the texts the list shows, say where it is
+                if (extra.length && !inShown) other.set(c.id, extra);
+            }
+            return true;
+        });
+        const searching = words || S.dict || S.kws.length;
+        $('list-count').innerHTML = searching ? `${shown.length} of ${plural(mine.length, 'clause', 'clauses')} · <button type="button" class="link-button" id="clear-inline">Clear the search</button>` : '';
+        document.querySelectorAll('.code-clauses-head .col-text').forEach(x => { x.hidden = !S.show.has('text'); });
+        document.querySelectorAll('.code-clauses-head .col-en').forEach(x => { x.hidden = !S.show.has('en'); });
+        ol.className = 'code-clauses' + (S.show.size === 1 ? ' code-clauses--one' : '');
+        document.querySelectorAll('.code-clauses-head').forEach(h => { h.style.gridTemplateColumns = S.show.size === 1 ? '6rem 1fr' : ''; });
+        ol.innerHTML = shown.length ? shown.map(c => {
+            const ex = other.get(c.id);
+            return `
                 <li id="${esc(c.id)}">
                     <a class="code-clause-no" href="${clauseUrl(c.id)}" title="All texts, manuscripts and translations of ${esc(c.citation)}">${esc(c.clause || c.citation)}</a>
-                    <p class="code-clause-oe">${tag(c.oeLabel, textLabel)}${esc(c.oe)}</p>
-                    <p class="code-clause-en">${tag(c.glossLabel, enLabel)}${esc(c.gloss)}</p>
+                    ${S.show.has('text') ? `<p class="code-clause-oe"${ELieb.langAttr(c.oeLang)}>${tagOf(c.oeLabel, tl)}${esc(c.oe)}</p>` : ''}
+                    ${S.show.has('en') ? `<p class="code-clause-en">${tagOf(c.glossLabel, el)}${esc(c.gloss)}</p>` : ''}
+                    ${ex ? `<p class="code-clause-also small">${ex.slice(0, 2).map(([label, text, ranges, lang]) => `<span class="hit__label">${esc(label)}</span> ${LawPanel.kwic(text, ranges, lang)}`).join('<br>')}${ex.length > 2 ? ` <span class="muted">and ${ex.length - 2} more</span>` : ''}</p>` : ''}
                     <a class="code-clause-more" href="${clauseUrl(c.id)}">All texts and translations<span aria-hidden="true"> ›</span><span class="visually-hidden"> of ${esc(c.citation)}</span></a>
-                </li>`).join('') : '<li class="muted">Nothing in this law code matches.</li>';
-        };
-        draw('');
-        document.getElementById('find').addEventListener('input', e => draw(e.target.value.trim()));
-        if (location.hash) { const el = document.getElementById(decodeURIComponent(location.hash.slice(1))); if (el) el.scrollIntoView(); }
+                </li>`;
+        }).join('') : '<li class="muted">Nothing in this law code matches.</li>';
+        if (terms.length) W.mark(ol, terms, loose);
     }
+
+    // ---- The panel ----
+    function drawPanel() {
+        LawPanel.pills($('where'), LawPanel.WHERE, k => S.where.has(k), k => { if (S.where.has(k) && S.where.size > 1) S.where.delete(k); else S.where.add(k); changed(); });
+        LawPanel.pills($('match'), [['whole', 'Whole words'], ['part', 'Parts of words']], k => S.match === k, k => { S.match = k; changed(); });
+        LawPanel.pills($('kwmode'), [['all', 'All of them'], ['any', 'Any of them']], k => S.kwMode === k, k => { S.kwMode = k; changed(); });
+        $('kwmode').hidden = S.kws.length < 2;
+        $('kw-chosen').innerHTML = S.kws.map(k => `<button type="button" class="chip chip--on" data-del="${esc(k)}" title="Take this keyword away">${esc(k)} <span aria-hidden="true">✕</span></button>`).join('');
+        const de = S.dict && dict && dict[S.dict];
+        const inCode = de ? de[2].filter(id => mine.some(c => c.id === id)).length : 0;
+        $('d-chosen').innerHTML = S.dict ? `<button type="button" class="chip chip--on" data-deldict="1" title="Take this word away">${esc(de ? de[0] : S.dict)} ${de ? ELieb.languageBadge(de[1], de[0]) : ''} · ${de ? plural(inCode, 'clause', 'clauses') + ' here' : '…'} <span aria-hidden="true">✕</span></button>` : '';
+        LawPanel.pills($('show'), [['text', 'Text'], ['en', 'English']], k => S.show.has(k), k => { if (S.show.has(k) && S.show.size > 1) S.show.delete(k); else S.show.add(k); changed(); });
+        markPanel();
+    }
+    const markPanel = LawPanel.watch($('panel'), () => ({ go: !!go.value.trim(), w: !!w.value.trim(), d: !!S.dict || !!d.value.trim(), kw: S.kws.length > 0 || !!kw.value.trim() }));
+
+    function writeAddress() {
+        const p = new URLSearchParams();
+        p.set('code', code ? code.code : wanted);
+        if (w.value.trim()) {
+            p.set('w', w.value.trim());
+            if ([...S.where].sort().join(',') !== 'en,orig') p.set('in', [...S.where].join(','));
+            if (S.match === 'part') p.set('m', 'part');
+            if (tol.checked) p.set('tol', '1');
+        }
+        if (S.dict) p.set('d', S.dict);
+        if (S.kws.length) { p.set('kw', S.kws.join('|')); if (S.kwMode === 'any' && S.kws.length > 1) p.set('kwm', 'any'); }
+        if (S.show.size === 1) p.set('show', [...S.show][0]);
+        history.replaceState(null, '', location.pathname + '?' + p + location.hash);
+    }
+    let timer = null;
+    function changed(later) {
+        writeAddress();
+        drawPanel();
+        clearTimeout(timer);
+        if (later) timer = setTimeout(drawList, 200); else drawList();
+    }
+    w.addEventListener('input', () => changed(true));
+    tol.addEventListener('input', () => changed(true));
+    document.addEventListener('click', e => {
+        const del = e.target.closest('[data-del]');
+        if (del) { S.kws = S.kws.filter(k => k !== del.dataset.del); changed(); }
+        if (e.target.closest('[data-deldict]')) { S.dict = ''; changed(); }
+        if (e.target.id === 'clear-inline') reset();
+    });
+    function reset() {
+        w.value = d.value = kw.value = go.value = '';
+        tol.checked = false;
+        Object.assign(S, { where: new Set(['orig', 'en']), match: 'whole', dict: '', kws: [], kwMode: 'all', show: new Set(['text', 'en']) });
+        changed();
+    }
+    $('reset').addEventListener('click', reset);
+
+    // Go to a clause: the list moves to it as it is typed; Enter opens it.
+    const findClause = t => { const f = fold(t); return f ? mine.find(c => fold(c.clause) === f) || mine.find(c => fold(c.clause).startsWith(f)) : null; };
+    go.addEventListener('input', () => {
+        markPanel();
+        const c = findClause(go.value);
+        document.querySelectorAll('.code-clauses li.is-target').forEach(x => x.classList.remove('is-target'));
+        const li = c && document.getElementById(c.id);
+        if (li) { li.classList.add('is-target'); li.scrollIntoView({ block: 'center', behavior: 'smooth' }); }
+    });
+    go.addEventListener('keydown', e => { if (e.key === 'Enter') { const c = findClause(go.value); if (c) location.href = clauseUrl(c.id); } });
+
+    // suggestions: this code's keywords (with how many of its clauses have each), and the
+    // dictionary headwords that cite this code
+    LawPanel.suggestBox(kw, $('kw-list'), typed => {
+        const t = fold(typed), n = new Map();
+        mine.forEach(c => keywords(c).forEach(k => n.set(k, (n.get(k) || 0) + 1)));
+        return [...n.keys()].filter(k => !S.kws.includes(k) && (!t || fold(k).includes(t)))
+            .sort((a, b) => (fold(b).startsWith(t) - fold(a).startsWith(t)) || n.get(b) - n.get(a) || a.localeCompare(b)).slice(0, 14)
+            .map(k => ({ value: k, html: `<span class="headword">${esc(k)}</span> <span class="gloss">${n.get(k)}</span>` }));
+    }, k => { if (!S.kws.includes(k)) S.kws.push(k); kw.value = ''; changed(); });
+    const dBox = LawPanel.suggestBox(d, $('d-list'), typed => {
+        if (!dict) { LawPanel.loadDict().then(m => { dict = m; dBox.refresh(); }); return []; }
+        const t = W.sfold(typed);
+        const ids = new Set(mine.map(c => c.id));
+        const out = [];
+        Object.entries(dict).forEach(([id, [hw, lang, cl]]) => {
+            const f = W.sfold(hw);
+            if (t && !f.includes(t)) return;
+            const n = cl.filter(x => ids.has(x)).length;
+            if (n) out.push([id, hw, lang, n, f.startsWith(t)]);
+        });
+        return out.sort((a, b) => (b[4] - a[4]) || a[1].length - b[1].length || a[1].localeCompare(b[1])).slice(0, 14)
+            .map(([id, hw, lang, n]) => ({ value: id, html: `<span class="headword">${esc(hw)}</span> ${ELieb.languageBadge(lang, hw)} <span class="gloss">${plural(n, 'clause', 'clauses')}</span>` }));
+    }, id => { S.dict = id; d.value = ''; changed(); });
 
     Promise.all([
         fetch(root + 'oe-laws/codes.json').then(r => r.json()),
         fetch(root + 'data/laws.json').then(r => r.json())
-    ]).then(([codes, clauses]) => {
-        codes = codes.filter(c => clauses.some(x => x.code === c.code));
-        const code = codes.find(c => c.code === wanted) || codes.find(c => fold(c.code) === fold(wanted));
+    ]).then(([codeList, clauses]) => {
+        codes = codeList.filter(c => clauses.some(x => x.code === c.code));
+        code = codes.find(c => c.code === wanted) || codes.find(c => fold(c.code) === fold(wanted));
         if (!code) throw new Error('missing');
-        render(code, codes, clauses);
-    }).catch(() => {
+        render(clauses);
+        if (S.dict) LawPanel.loadDict().then(m => { dict = m; drawPanel(); });
+        drawPanel();
+        drawList();
+        if (location.hash) { const el = document.getElementById(decodeURIComponent(location.hash.slice(1))); if (el) { el.classList.add('is-target'); el.scrollIntoView({ block: 'center' }); } }
+    }).catch(err => {
+        if (err && err.message !== 'missing') console.error(err);
         target.innerHTML = `<h1>Law code not found</h1><p>There is no law code “${esc(wanted)}” in the database. <a href="${root}laws.html">See the list of law codes.</a></p>`;
     });
 })();

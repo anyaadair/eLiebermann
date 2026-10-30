@@ -1070,3 +1070,28 @@ body.scan-open .entry-column > article { max-width: none; }
 .link-button:hover, .link-button:focus-visible { background: none; color: var(--link-hover); }
 .button--quiet:hover { background: var(--powder-tint); color: var(--link); }
 .main-content:has(> .laws-layout) { max-width: none; padding: 0; }
+
+/* ---------- Law code page: the list as the search narrows it ---------- */
+.code-clause-also { grid-column: 2 / -1; margin: 0.35rem 0 0; color: var(--muted); line-height: 1.45; }
+.code-clause-also mark, .code-clauses mark.find-hit, .clause-page mark.find-hit { background: var(--highlight); color: inherit; padding: 0 0.05em; border-radius: 2px; }
+.code-clauses--one li { grid-template-columns: 6rem 1fr; }
+.code-clauses--one .code-clause-more { grid-column: 2; }
+.code-clauses li.is-target { background: var(--powder-tint); }
+.code-clauses-head [hidden] { display: none; }
+@media (max-width: 760px) { .code-clause-also, .code-clauses--one .code-clause-more { grid-column: 1; } }
+
+/* ---------- Clause page: the sidebar ---------- */
+.clause-wheel { list-style: none; margin: 0 -0.4rem; padding: 0; }
+.clause-wheel li > a, .clause-wheel li > span { display: block; padding: 0.22rem 0.4rem; border-radius: 4px; text-decoration: none; color: var(--ink); line-height: 1.3; }
+.clause-wheel li > a:hover { background: var(--surface); }
+.clause-wheel li > a:hover .clause-wheel__cit { color: var(--link); }
+.clause-wheel__cit { display: block; font-family: var(--serif); font-weight: 600; font-size: 0.98rem; color: var(--navy); }
+.clause-wheel__text { display: block; font-family: var(--serif); font-size: 0.88rem; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.clause-wheel li.current > span { background: var(--surface); box-shadow: inset 3px 0 0 var(--link); margin: 0.15rem 0; }
+.find-status { display: flex; align-items: center; gap: 0.35rem; margin-top: 0.45rem; font-size: 0.85rem; }
+.find-status #find-count { flex: 1; color: var(--muted); }
+.find-step { font: inherit; font-size: 0.9rem; line-height: 1; padding: 0.2rem 0.5rem; border: 1px solid var(--rule); border-radius: 4px; background: var(--surface); color: var(--link); cursor: pointer; }
+.find-step:hover { background: var(--powder-tint); color: var(--link); }
+mark.find-hit { background: var(--highlight); color: inherit; padding: 0 0.05em; border-radius: 2px; }
+mark.find-hit--current { background: #ffc94d; outline: 2px solid #e0a100; }
+#find-clauses { margin-top: 0.4rem; }
