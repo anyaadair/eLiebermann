@@ -554,8 +554,62 @@
             run.push(last);
             found(last.text, last.anchor, start, end, false, rangeFrom);
         };
+        // The London collection's additions to ECf (Leges Anglorum Londoniis collectae, s. XIII)
+        // are numbered by the clause they follow, a capital letter and a paragraph:
+        // "Lond ECf 32 B 4", "32 B 5a", "11,1 A". Liebermann goes on with the same clause
+        // after ";" ("32 A; A 7; C; E 2"), with the same section for a bare number after ";"
+        // or "." ("11,1 B 1 f.; 4; 8" is B 1, B 4, B 8; "32 B 5a. 10" is B 10), and with a new
+        // clause after "." when it has a comma or a letter ("11,1 A 5. 12,10 A. 32 A"). The letters are not manuscripts (they are not linked in the TEI).
+        const ECF_CLAUSE = String.raw`\d+[a-z]?(?:,\d+[a-z]?)?`;
+        const ECF_PARA = String.raw`\d+[a-z]?(?![\d)\p{L}]|,\d)`;
+        const ecfSections = (rest, at) => {
+            let m = new RegExp(String.raw`^(\.?\s+)(${ECF_CLAUSE})\s+([A-E])(?![\p{L}\d)])(?:\s+(${ECF_PARA}))?`, 'u').exec(rest);
+            if (!m) return null;
+            let clause = m[2], letter = m[3];
+            add(code.label + ' ' + clause + ' ' + letter + (m[4] ? ' ' + m[4] : ''), at + m[1].length, at + m[0].length, false);
+            let i = m[0].length;
+            const para = (n, from, to, rangeFrom) => add(code.label + ' ' + clause + ' ' + letter + ' ' + n, at + from, at + to, false, rangeFrom);
+            for (;;) {
+                let r = rest.slice(i);
+                // a spelling with its own paragraph in brackets: "B 1 (-tum 8). 10" is B 1, B 8, B 10
+                const br = /^\s*\([^()\d]*?\s(\d+[a-z]?)\)/.exec(r);
+                if (br && letter) { para(br[1], i, i + br[0].length); i += br[0].length; r = rest.slice(i); }
+                const sep = /^(?:\s*ff?\.)?\s*([;.—–-])\s*/.exec(r);
+                if (!sep) break;
+                const after = r.slice(sep[0].length);
+                let k;
+                // "32 A 3—6": a range of paragraphs (its end is cited too, as elsewhere)
+                if (/[—–]/.test(sep[1]) && letter && last && (k = new RegExp(String.raw`^(${ECF_PARA})`, 'u').exec(after))) {
+                    para(k[1], i + sep[0].length, i + sep[0].length + k[0].length, last.text);
+                    i += sep[0].length + k[0].length;
+                    continue;
+                }
+                if ((k = new RegExp(String.raw`^([A-E])(?![\p{L}\d)])(?:\s+(${ECF_PARA}))?`, 'u').exec(after))) {
+                    letter = k[1];
+                    add(code.label + ' ' + clause + ' ' + letter + (k[2] ? ' ' + k[2] : ''), at + i + sep[0].length, at + i + sep[0].length + k[0].length, false);
+                } else if (sep[1] === ';' && letter && (k = new RegExp(String.raw`^(${ECF_PARA})`, 'u').exec(after))) {
+                    add(code.label + ' ' + clause + ' ' + letter + ' ' + k[1], at + i + sep[0].length, at + i + sep[0].length + k[0].length, false);
+                } else if (sep[1] === '.' && (k = new RegExp(String.raw`^(${ECF_CLAUSE})(?:\s+([A-E])(?![\p{L}\d)])(?:\s+(${ECF_PARA}))?)?(?![\d)])`, 'u').exec(after))) {
+                    if (letter && !k[2] && /^\d+[a-z]?$/.test(k[1]) && parseInt(k[1], 10) <= 15) {
+                        // "32 B 5a. 10": a bare number (up to 15) after a section is its next
+                        // paragraph; a larger one is a clause of ECf ("32 A 8. 34")
+                        add(code.label + ' ' + clause + ' ' + letter + ' ' + k[1], at + i + sep[0].length, at + i + sep[0].length + k[0].length, false);
+                        i += sep[0].length + k[0].length;
+                        continue;
+                    }
+                    clause = k[1]; letter = k[2] || '';
+                    add(code.label + ' ' + clause + (letter ? ' ' + letter + (k[3] ? ' ' + k[3] : '') : ''), at + i + sep[0].length, at + i + sep[0].length + k[0].length, false);
+                } else break;
+                i += sep[0].length + k[0].length;
+            }
+            return i;
+        };
         const passages = (text, pos) => {
             let rest = text, at = pos, m;
+            if (code && code.anchor === 'ECf' && code.fresh) {
+                const used = ecfSections(rest, at);
+                if (used) { rest = rest.slice(used); at += used; code.fresh = false; }
+            }
             // The passage follows after a space (Af 41) or, for Liebermann's "Cn 1020,11"
             // and "Iud Dei X,17", straight after a comma; "V As. Pro 2" has a full stop.
             // A number before ")" is usually a sense number ("2)"), but not straight after

@@ -35,9 +35,10 @@
         <form type="lemma">
           <orth>Hibernia</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">Hibernia</hi> <hi rend="italic">Irland</hi> <ref type="lawCode" target="law:QuadrArg">Quadr Arg</ref> 18. <ref type="lawCode" target="law:Lond">Lond</ref> <ref type="lawCode" target="law:ECf">ECf</ref> 32 <ref type="lawCode" target="law:D">D</ref>. <ref type="lawCode" target="law:E">E</ref>; <hi rend="italic"><ref type="abbreviation" target="gram:Variante"><abbr>Var.</abbr></ref></hi> Hyb~</dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">Hibernia</hi> <hi rend="italic">Irland</hi> <ref type="lawCode" target="law:QuadrArg">Quadr Arg</ref> 18. <ref type="lawCode" target="law:Lond">Lond</ref> <ref type="lawCode" target="law:ECf">ECf</ref> 32 D. E; <hi rend="italic"><ref type="abbreviation" target="gram:Variante"><abbr>Var.</abbr></ref></hi> Hyb~</dictScrap>
         <xr type="lawCode"><ref target="clause:QuadrArg_18">Quadr Arg 18</ref></xr>
-        <xr type="lawCode"><ref target="law:ECf">ECf 32</ref></xr>
+        <xr type="lawCode"><ref target="law:ECf">ECf 32 D</ref></xr>
+        <xr type="lawCode"><ref target="law:ECf">ECf 32 E</ref></xr>
       </entry>
     </body>
   </text>

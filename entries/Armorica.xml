@@ -33,8 +33,8 @@
         <form type="lemma">
           <orth>Armorica</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">Armorica</hi> (<hi rend="italic"><ref type="abbreviation" target="gram:Variante"><abbr>Var.</abbr></ref></hi> ~cum) <hi rend="italic">Bretagne</hi> <ref type="lawCode" target="law:Lond">Lond</ref> <ref type="lawCode" target="law:ECf">ECf</ref> 32 <ref type="lawCode" target="law:C">C</ref></dictScrap>
-        <xr type="lawCode"><ref target="law:ECf">ECf 32</ref></xr>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">Armorica</hi> (<hi rend="italic"><ref type="abbreviation" target="gram:Variante"><abbr>Var.</abbr></ref></hi> ~cum) <hi rend="italic">Bretagne</hi> <ref type="lawCode" target="law:Lond">Lond</ref> <ref type="lawCode" target="law:ECf">ECf</ref> 32 C</dictScrap>
+        <xr type="lawCode"><ref target="law:ECf">ECf 32 C</ref></xr>
       </entry>
     </body>
   </text>
