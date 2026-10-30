@@ -10,42 +10,40 @@ scripts:
 <div class="laws-layout">
 <aside class="laws-panel" id="laws-panel" aria-label="Search the laws">
     <h2 class="laws-panel__title">Search the laws</h2>
+    <p class="panel-help panel-intro">Use one kind of search, or several together: each narrows the others. Law codes, language, date and order apply to all of them.</p>
 
-    <div class="panel-sec">
+    <div class="panel-sec panel-sec--method" data-method="q">
         <label class="sidebar-label" for="q">Go to a law code or clause</label>
         <input type="search" id="q" placeholder="e.g. Ine 23, Alfred 5, II Cnut 30,1" autocomplete="off">
     </div>
 
-    <div class="panel-sec">
-        <label class="sidebar-label" for="w">Words</label>
+    <div class="panel-sec panel-sec--method" data-method="w">
+        <label class="sidebar-label" for="w">Search by Word</label>
         <input type="search" id="w" placeholder="e.g. ceap*, theft, &quot;on cyninges hand&quot;" autocomplete="off">
         <p class="panel-help">Several words: all must appear. <code>"…"</code> a phrase · <code>ceap*</code> words beginning <i>ceap-</i> · <code>*bot</code> words ending <i>-bot</i></p>
         <div class="panel-sub">Look in</div>
         <div class="kind-pills kind-pills--small" id="where" role="group" aria-label="Where to look for the words"></div>
-        <details class="code-picker" id="tr-picker">
-            <summary id="tr-summary">English translations: all</summary>
-            <div class="kind-pills kind-pills--small" id="translators" role="group" aria-label="Which English translations"></div>
-        </details>
         <div class="panel-sub">Match</div>
         <div class="kind-pills kind-pills--small" id="match" role="group" aria-label="How to match the words"></div>
         <label class="panel-check"><input type="checkbox" id="tol"> Spelling tolerance <span class="muted">(i, y and ie; e, æ, ea and eo; single and double letters; c and k treated alike)</span></label>
     </div>
 
-    <div class="panel-sec">
-        <label class="sidebar-label" for="d">Dictionary word</label>
+    <div class="panel-sec panel-sec--method" data-method="d">
+        <label class="sidebar-label" for="d">Search by Wörterbuch Headword</label>
         <div class="suggest-wrap"><input type="search" id="d" placeholder="e.g. bocland" autocomplete="off"><ul class="suggestions" id="d-list" hidden></ul></div>
         <p class="panel-help">Every clause the Wörterbuch cites for the word, in all its forms.</p>
         <div id="d-chosen" class="chips"></div>
     </div>
 
-    <div class="panel-sec">
-        <label class="sidebar-label" for="kw">Keywords</label>
+    <div class="panel-sec panel-sec--method" data-method="kw">
+        <label class="sidebar-label" for="kw">Search by Indexed Keyword</label>
         <div class="suggest-wrap"><input type="search" id="kw" placeholder="e.g. Theft, Bishops, Churches" autocomplete="off"><ul class="suggestions" id="kw-list" hidden></ul></div>
+        <p class="panel-help">The keyword index covers the pre-Conquest law codes only.</p>
         <div id="kw-chosen" class="chips"></div>
         <div class="kind-pills kind-pills--small" id="kwmode" role="group" aria-label="Several keywords" hidden></div>
     </div>
 
-    <div class="panel-sec">
+    <div class="panel-sec panel-sec--shared">
         <div class="sidebar-label">Law codes</div>
         <div class="kind-pills kind-pills--small" id="presets" role="group" aria-label="Groups of law codes"></div>
         <details class="code-picker" id="code-picker">
@@ -55,17 +53,17 @@ scripts:
         <p class="panel-help" id="code-summary"></p>
     </div>
 
-    <div class="panel-sec">
+    <div class="panel-sec panel-sec--shared">
         <div class="sidebar-label">Language of the text</div>
         <div class="kind-pills kind-pills--small" id="langs" role="group" aria-label="Language of the text"></div>
     </div>
 
-    <div class="panel-sec">
+    <div class="panel-sec panel-sec--shared">
         <div class="sidebar-label">Date (Liebermann's suggested dates)</div>
         <div class="panel-dates"><label>from <input type="number" id="from" min="500" max="1300" step="10" placeholder="600"></label> <label>to <input type="number" id="to" min="500" max="1300" step="10" placeholder="1300"></label></div>
     </div>
 
-    <div class="panel-sec">
+    <div class="panel-sec panel-sec--shared">
         <div class="sidebar-label">Order of results</div>
         <div class="kind-pills kind-pills--small" id="sort" role="group" aria-label="Order of results"></div>
     </div>
@@ -118,15 +116,15 @@ scripts:
     const PRESETS = [
         ['kent', 'Kentish kings', ['Æthelberht of Kent', 'Hlothhere and Eadric of Kent', 'Wihtred of Kent', 'Earconberht of Kent']],
         ['wessex', 'Ine and Alfred', ['Ine of Wessex', 'Alfred the Great']],
-        ['tenth', 'Tenth century', ['Edward the Elder', 'Æthelstan', 'Edmund I', 'Edgar']],
+        ['tenth', 'Tenth century kings', ['Edward the Elder', 'Æthelstan', 'Edmund I', 'Edgar']],
         ['atr-cn', 'Æthelred and Cnut', ['Æthelred II', 'Cnut']],
+        ['other', 'Other pre-Conquest codes', ['Other laws and legal texts']],
         ['norman', 'Anglo-Norman', ['William I', 'Henry I']],
         ['latin', 'Latin law books', ['Anglo-Latin law books']],
-        ['rites', 'Ordeals and excommunications', ['Ordeal rituals (Iudicia Dei)', 'Excommunication formulae']],
-        ['other', 'Other', ['Other laws and legal texts']]
+        ['rites', 'Ordeals and excommunications', ['Ordeal rituals (Iudicia Dei)', 'Excommunication formulae']]
     ];
     const S = {
-        where: new Set(['orig', 'en']), translators: new Set(), match: 'whole',
+        where: new Set(['orig', 'en']), match: 'whole',
         dict: '', kws: [], kwMode: 'all', codes: new Set(), langs: new Set(), sort: 'law'
     };
 
@@ -135,7 +133,6 @@ scripts:
         q.value = p.get('q') || '';
         w.value = p.get('w') || '';
         if (p.get('in')) S.where = new Set(p.get('in').split(',').filter(x => WHERE.some(([k]) => k === x)));
-        if (p.get('tr')) S.translators = new Set(p.get('tr').split(','));
         S.match = p.get('m') === 'part' ? 'part' : 'whole';
         tol.checked = p.get('tol') === '1';
         S.dict = p.get('d') || '';
@@ -155,7 +152,6 @@ scripts:
         if (w.value.trim()) {
             p.set('w', w.value.trim());
             if ([...S.where].sort().join(',') !== 'en,orig') p.set('in', [...S.where].join(','));
-            if (S.translators.size) p.set('tr', [...S.translators].join(','));
             if (S.match === 'part') p.set('m', 'part');
             if (tol.checked) p.set('tol', '1');
         }
@@ -185,15 +181,30 @@ scripts:
             changed();
         });
     }
+    // The kind of search in use (typed in, or with the cursor in it) stands out, with the
+    // choices that apply to every search (law codes, language, date, order); the other kinds
+    // of search fade a little, though they can still be added.
+    let focused = '';
+    function markPanel() {
+        const used = { q: !!q.value.trim(), w: !!w.value.trim(), d: !!S.dict || !!d.value.trim(), kw: S.kws.length > 0 || !!kw.value.trim() };
+        const on = m => used[m] || focused === m;
+        const any = Object.keys(used).some(on);
+        document.querySelectorAll('.panel-sec--method').forEach(el => {
+            el.classList.toggle('is-active', on(el.dataset.method));
+            el.classList.toggle('is-idle', any && !on(el.dataset.method));
+        });
+        document.querySelectorAll('.panel-sec--shared').forEach(el => el.classList.toggle('is-shared', any));
+    }
+    document.querySelectorAll('.panel-sec--method').forEach(el => {
+        el.addEventListener('focusin', () => { focused = el.dataset.method; markPanel(); });
+        el.addEventListener('focusout', () => { setTimeout(() => { if (!el.contains(document.activeElement)) { if (focused === el.dataset.method) focused = ''; markPanel(); } }, 0); });
+    });
+
     function drawPanel() {
         pills($('where'), WHERE, k => S.where.has(k), k => {
             if (S.where.has(k) && S.where.size > 1) S.where.delete(k); else S.where.add(k);
             changed();
         });
-        $('tr-picker').hidden = !S.where.has('en');
-        if (S.translators.size) $('tr-picker').open = true;
-        $('tr-summary').textContent = 'English translations: ' + (S.translators.size ? TRANSLATORS.filter(([k]) => S.translators.has(k)).map(x => x[1]).join(', ') : 'all');
-        setPills($('translators'), TRANSLATORS.filter(([k]) => translatorsPresent.has(k)), S.translators, 'All');
         pills($('match'), [['whole', 'Whole words'], ['part', 'Parts of words']], k => S.match === k, k => { S.match = k; changed(); });
         pills($('kwmode'), [['all', 'All of them'], ['any', 'Any of them']], k => S.kwMode === k, k => { S.kwMode = k; changed(); });
         $('kwmode').hidden = S.kws.length < 2;
@@ -220,6 +231,7 @@ scripts:
             : `Searching all ${codes.length} law codes.`;
         setPills($('langs'), LANGS, S.langs, 'All');
         pills($('sort'), [['law', 'In the order of the laws'], ['date', 'By date']], k => S.sort === k, k => { S.sort = k; changed(); });
+        markPanel();
     }
     const presetCodes = k => { const p = PRESETS.find(x => x[0] === k); return p ? codes.filter(c => p[2].includes(c.group)).map(c => c.code) : []; };
     // the chosen codes, shortened by group: "Alfred the Great (all)", or the codes themselves
@@ -267,7 +279,7 @@ scripts:
     $('reset').addEventListener('click', () => {
         q.value = w.value = d.value = kw.value = from.value = to.value = '';
         tol.checked = false;
-        Object.assign(S, { where: new Set(['orig', 'en']), translators: new Set(), match: 'whole', dict: '', kws: [], kwMode: 'all', codes: new Set(), langs: new Set(), sort: 'law' });
+        Object.assign(S, { where: new Set(['orig', 'en']), match: 'whole', dict: '', kws: [], kwMode: 'all', codes: new Set(), langs: new Set(), sort: 'law' });
         changed();
     });
 
@@ -382,7 +394,7 @@ scripts:
         if (!t) return [];
         const out = [];
         if (S.where.has('orig')) t.t.forEach(([lang, label, text]) => { if (!S.langs.size || S.langs.has(lang)) out.push([label, text, lang]); });
-        if (S.where.has('en')) t.e.forEach(([src, text]) => { if (!S.translators.size || S.translators.has(src)) out.push([(TR_NAME[src] || src) + ' (English)', text, 'en']); });
+        if (S.where.has('en')) t.e.forEach(([src, text]) => out.push([(TR_NAME[src] || src) + ' (English)', text, 'en']));
         if (S.where.has('de') && t.g) out.push(['Liebermann (German)', t.g, 'de']);
         if (S.where.has('notes') && t.n) out.push(['Notes', t.n, 'notes']);
         return out;
@@ -600,8 +612,8 @@ scripts:
                 const body = m ? m.slice(0, 3).map(([label, text, ranges, lang]) =>
                     `<span class="hit"><span class="hit__label">${esc(label)}</span> ${kwic(text, ranges, lang)}</span>`).join('') +
                     (m.length > 3 ? `<span class="hit muted small">and ${m.length - 3} more</span>` : '') +
-                    (m.every(x => x[3] !== 'en') && c.gloss ? `<span class="hit hit--gloss"><span class="hit__label">${esc(c.glossLabel || 'English')}</span> ${esc(c.gloss.length > 220 ? c.gloss.slice(0, 220).replace(/\s+\S*$/, '') + '…' : c.gloss)}</span>` : '')
-                    : `<span class="gloss">${esc(snippet(c))}</span>`;
+                    (m.every(x => x[3] !== 'en') && c.gloss ? `<span class="hit hit--gloss"><span class="hit__label">${esc(c.glossLabel || 'English')}</span> ${esc(c.gloss)}</span>` : '')
+                    : `<span class="clause-text">${esc(c.gloss || c.en || c.oe || '')}</span>`;
                 return `
                 <li>
                     <a class="headword" href="${root}law.html?id=${encodeURIComponent(c.id)}">${esc(c.citation)}</a>

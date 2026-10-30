@@ -276,7 +276,7 @@ button:disabled { opacity: 0.5; cursor: not-allowed; }
 .field .hint { display: block; font-size: 0.875rem; color: var(--muted); font-weight: 400; }
 
 .search-bar { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0 0 1rem; }
-.search-bar input[type="search"], .search-bar input[type="text"] { flex: 1 1 16rem; }
+.search-bar input[type="search"], .search-bar input[type="text"] { flex: 1 1 24rem; }
 /* Dictionary: Hide French / Hide Latin */
 /* Bubbles for the kinds of entry to show (ELieb.kindFilter): the Dictionary page and the entry pages' sidebar */
 .kind-pills { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: -0.25rem 0 1rem; }
@@ -295,7 +295,7 @@ button:disabled { opacity: 0.5; cursor: not-allowed; }
 .hide-lang:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
 
 /* Headword suggestions (scripts/suggest.js) */
-.suggest-wrap { position: relative; flex: 1 1 16rem; }
+.suggest-wrap { position: relative; flex: 1 1 24rem; }
 .suggest-wrap input { width: 100%; }
 .suggestions {
     position: absolute; top: 100%; left: 0; right: 0; z-index: 20;
@@ -955,7 +955,7 @@ ul.link-columns li { break-inside: avoid; }
 /* The sidebar sits against the left edge of the window (as on GitHub); the entry,
    and the page scan when it is open, are centred in the rest of the width. */
 body.has-sidebar .main-content { max-width: none; padding: 0; }
-.entry-layout { display: grid; grid-template-columns: 16rem minmax(0, 1fr); align-items: start; }
+.entry-layout { display: grid; grid-template-columns: 17.5rem minmax(0, 1fr); align-items: start; }
 .entry-layout.sidebar-closed { grid-template-columns: minmax(0, 1fr); }
 .entry-layout.sidebar-closed .entry-sidebar { display: none; }
 .entry-column { min-width: 0; padding: 0.5rem 2rem 3rem; }
@@ -1005,16 +1005,22 @@ body.scan-open .entry-column > article { max-width: none; }
 .suggestions .also { color: var(--muted); font-size: 0.9em; font-style: italic; }
 
 /* ---------- Laws page: the search panel on the left ---------- */
-.laws-layout { display: grid; grid-template-columns: 20rem minmax(0, 1fr); align-items: start; }
+.laws-layout { display: grid; grid-template-columns: 23rem minmax(0, 1fr); align-items: start; }
 .laws-panel {
     position: sticky; top: 0; height: 100vh; overflow-y: auto;
     background: #f3f1eb; border-right: 1px solid var(--rule);
     padding: 1rem 1.1rem 2rem; font-size: 0.92rem;
 }
-.laws-panel__title { font-family: var(--sans); font-size: 1rem; font-weight: 600; color: var(--navy-dark); margin: 0 0 0.4rem; }
-.laws-panel .panel-sec { padding: 0.15rem 0 0.8rem; border-bottom: 1px solid var(--rule); }
+.laws-panel__title { font-family: var(--sans); font-size: 1.2rem; font-weight: 600; color: var(--navy-dark); margin: 0 0 0.3rem; }
+.laws-panel .panel-intro { margin: 0 0 0.6rem; }
+.laws-panel .panel-sec { padding: 0.35rem 0.6rem 0.8rem; margin: 0 -0.6rem; border-bottom: 1px solid var(--rule); border-radius: 6px; transition: background 0.15s, opacity 0.15s; }
+/* the kind of search in use, and the choices that apply to every search, stand out; other kinds fade */
+.laws-panel .panel-sec.is-active { background: var(--surface); box-shadow: inset 3px 0 0 var(--link); }
+.laws-panel .panel-sec.is-shared { background: #fbfaf6; }
+.laws-panel .panel-sec.is-idle { opacity: 0.6; }
+.laws-panel .panel-sec.is-idle:hover, .laws-panel .panel-sec.is-idle:focus-within { opacity: 1; }
 .laws-panel .panel-sec:last-of-type { border-bottom: 0; }
-.laws-panel .sidebar-label { display: block; }
+.laws-panel .sidebar-label { display: block; font-size: 0.9rem; letter-spacing: 0.04em; color: var(--navy-dark); margin: 0.5rem 0 0.45rem; }
 .laws-panel input[type=search], .laws-panel input[type=number] { width: 100%; font: inherit; font-size: 0.9rem; padding: 0.35rem 0.55rem; border: 1px solid var(--rule); border-radius: 4px; background: var(--surface); }
 .laws-panel .suggest-wrap { flex: none; }
 .laws-panel .suggestions { font-size: 0.88rem; }
@@ -1046,6 +1052,8 @@ body.scan-open .entry-column > article { max-width: none; }
 .law-tally__label { font-size: 0.82rem; color: var(--muted); margin-right: 0.2rem; }
 .law-tools { font-size: 0.85rem; margin-bottom: 0.8rem; }
 .clause-list .hits { display: flex; flex-direction: column; gap: 0.2rem; flex: 1 1 24rem; }
+.clause-list .hits > * { flex: none; }
+.clause-list .clause-text { color: var(--ink); font-size: 0.97rem; line-height: 1.5; }
 .clause-list .hit { font-size: 0.95rem; line-height: 1.45; }
 .clause-list .hit__label { font-family: var(--sans); font-size: 0.72rem; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.03em; margin-right: 0.3rem; }
 .clause-list .hit mark { background: var(--highlight); padding: 0 0.05em; border-radius: 2px; }
