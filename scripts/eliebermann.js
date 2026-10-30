@@ -816,7 +816,7 @@
      */
     /** A small arrow link, after a word that has a link of its own: to the entry or clause it also points to. */
     function jumpLink(href, title) {
-        return `<a class="jump-link" href="${escapeXml(href)}" title="${escapeXml(title)}" aria-label="${escapeXml(title)}">↗</a>`;
+        return `<a class="jump-link" href="${escapeXml(href)}" title="${escapeXml(title)}" aria-label="${escapeXml(title)}"><svg viewBox="0 0 10 10" width="1em" height="1em" aria-hidden="true" focusable="false"><path d="M2.5 7.5 7.5 2.5M3.8 2.5h3.7v3.7" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>`;
     }
 
     function linkClauseNumbers(container, clauses) {
