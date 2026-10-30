@@ -17,7 +17,7 @@ scripts:
     <div class="panel-sec panel-sec--method" data-method="f">
         <label class="sidebar-label" for="find" id="find-label">Find in this clause</label>
         <input type="search" id="find" placeholder="e.g. ceap*, theft, &quot;gif mon&quot;" autocomplete="off">
-        <p class="panel-help" id="find-help">Marks the words in every text, translation and note on this page. <code>"…"</code> a phrase · <code>ceap*</code> words beginning <i>ceap-</i> · <code>*bot</code> words ending <i>-bot</i></p>
+        <p class="panel-help" id="find-help"><code>"…"</code> a phrase · <code>ceap*</code> words beginning <i>ceap-</i> · <code>*bot</code> words ending <i>-bot</i></p>
         <div class="find-status" id="find-status" hidden>
             <span id="find-count" aria-live="polite"></span>
             <button type="button" class="find-step" id="find-prev" title="Previous match" aria-label="Previous match">↑</button>
@@ -745,34 +745,7 @@ scripts:
         sec.appendChild(t);
         target.appendChild(sec);
 
-        const wits = tei(doc, 'witness');
-        if (wits.length) {
-            const s = el('section', 'entry-section');
-            s.appendChild(el('h2', null, 'Manuscripts'));
-            const named = wits.some(w => tei(w, 'abbr').length);
-            if (named) {
-                const ul = el('ul', 'ms-list');
-                Object.values(witnesses(doc)).forEach(w => {
-                    const li = el('li');
-                    const sig = el('span', 'ms-siglum');
-                    sig.appendChild(siglumLinks(w.abbr));
-                    li.appendChild(sig);
-                    if (w.name) li.appendChild(document.createTextNode(' ' + w.name));
-                    ul.appendChild(li);
-                });
-                s.appendChild(ul);
-            } else {
-                const p = el('p');
-                wits.forEach((w, i) => {
-                    if (i) p.appendChild(document.createTextNode(', '));
-                    p.appendChild(el(w.getAttribute('rend') === 'bold' ? 'strong' : 'span', null, w.textContent.trim()));
-                });
-                s.appendChild(p);
-                s.appendChild(el('p', 'small muted', 'The manuscript in bold is the one the text above is taken from, where more than one is listed.'));
-            }
-            target.appendChild(s);
-        }
-
+        // Below the texts: Keywords, In the dictionary, Manuscripts, Editions and translations, Studies.
         const kw = tei(doc, 'keywords').filter(k => k.textContent.trim());
         if (kw.length) {
             const s = el('section', 'entry-section');
@@ -821,6 +794,34 @@ scripts:
             dictSec.appendChild(ul);
             dictSec.hidden = false;
         }).catch(() => {});
+
+        const wits = tei(doc, 'witness');
+        if (wits.length) {
+            const s = el('section', 'entry-section');
+            s.appendChild(el('h2', null, 'Manuscripts'));
+            const named = wits.some(w => tei(w, 'abbr').length);
+            if (named) {
+                const ul = el('ul', 'ms-list');
+                Object.values(witnesses(doc)).forEach(w => {
+                    const li = el('li');
+                    const sig = el('span', 'ms-siglum');
+                    sig.appendChild(siglumLinks(w.abbr));
+                    li.appendChild(sig);
+                    if (w.name) li.appendChild(document.createTextNode(' ' + w.name));
+                    ul.appendChild(li);
+                });
+                s.appendChild(ul);
+            } else {
+                const p = el('p');
+                wits.forEach((w, i) => {
+                    if (i) p.appendChild(document.createTextNode(', '));
+                    p.appendChild(el(w.getAttribute('rend') === 'bold' ? 'strong' : 'span', null, w.textContent.trim()));
+                });
+                s.appendChild(p);
+                s.appendChild(el('p', 'small muted', 'The manuscript in bold is the one the text above is taken from, where more than one is listed.'));
+            }
+            target.appendChild(s);
+        }
 
         // Editions and translations, then studies (only if there are any), without bullet points.
         const srcs = Object.values(allSrcs);
