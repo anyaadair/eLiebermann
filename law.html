@@ -1,11 +1,53 @@
 ---
 title: Law clause
 section: laws
+full_width: true
 scripts:
   - "ROOT/scripts/eliebermann.js"
   - "ROOT/scripts/lawpopup.js"
+  - "ROOT/scripts/law-search.js"
+  - "ROOT/scripts/law-panel.js"
 ---
-<article id="clause"><p class="loading">Loading clause…</p></article>
+<div class="laws-layout">
+<aside class="laws-panel" id="panel" aria-label="This clause">
+    <h2 class="laws-panel__title" id="p-title">This clause</h2>
+    <p class="panel-help panel-intro" id="p-code">&nbsp;</p>
+
+    <div class="panel-sec panel-sec--method" data-method="f">
+        <label class="sidebar-label" for="find" id="find-label">Find in this clause</label>
+        <input type="search" id="find" placeholder="e.g. ceap*, theft, &quot;gif mon&quot;" autocomplete="off">
+        <p class="panel-help" id="find-help">Marks the words in every text, translation and note on this page. <code>"…"</code> a phrase · <code>ceap*</code> words beginning <i>ceap-</i> · <code>*bot</code> words ending <i>-bot</i></p>
+        <div class="find-status" id="find-status" hidden>
+            <span id="find-count" aria-live="polite"></span>
+            <button type="button" class="find-step" id="find-prev" title="Previous match" aria-label="Previous match">↑</button>
+            <button type="button" class="find-step" id="find-next" title="Next match" aria-label="Next match">↓</button>
+        </div>
+        <div id="find-clauses" class="chips"></div>
+        <div class="panel-sub">Match</div>
+        <div class="kind-pills kind-pills--small" id="match" role="group" aria-label="How to match the words"></div>
+        <label class="panel-check"><input type="checkbox" id="tol"> Spelling tolerance <span class="muted">(i, y and ie; e, æ, ea and eo; single and double letters; c and k treated alike)</span></label>
+    </div>
+
+    <div class="panel-sec">
+        <div class="sidebar-label">Nearby clauses</div>
+        <ol class="clause-wheel" id="wheel"><li class="muted small">Loading…</li></ol>
+    </div>
+
+    <div class="panel-sec panel-sec--method" data-method="go">
+        <label class="sidebar-label" for="go" id="go-label">Go to a clause</label>
+        <input type="search" id="go" placeholder="Clause number, e.g. 23 or 23,2" autocomplete="off">
+        <p class="panel-help">Enter opens it.</p>
+    </div>
+
+    <div class="panel-sec">
+        <div class="sidebar-label">Read and compare</div>
+        <ul class="sidebar-links" id="p-links"></ul>
+    </div>
+</aside>
+<div class="laws-main">
+<article id="clause" class="clause-page"><p class="loading">Loading clause…</p></article>
+</div>
+</div>
 
 <script>
 (function () {
@@ -837,6 +879,7 @@ scripts:
                     btn.remove();
                     const cur = document.getElementById(row.id);
                     if (cur) cur.scrollIntoView();
+                    document.dispatchEvent(new CustomEvent('wholecode'));
                 });
         });
         whole.appendChild(btn);
@@ -856,6 +899,100 @@ scripts:
         target.appendChild(src);
     }
 
+    // ---- The sidebar: neighbouring clauses, find on this page, go to a clause, links ----
+    function sidebar(row) {
+        const $ = x => document.getElementById(x);
+        const W = LawSearch.words;
+        const esc = ELieb.escapeXml;
+        const sameCode = catalogue.filter(c => c.code === row.code);
+        const codeName = row.legalText || row.code;
+        $('p-title').textContent = row.citation;
+        $('p-code').innerHTML = `<a href="${root}lawcode.html?code=${encodeURIComponent(row.code)}#${encodeURIComponent(row.id)}">${esc(row.code)}</a>${codeName !== row.code ? ' (' + esc(codeName) + ')' : ''} · clause ${sameCode.findIndex(c => c.id === row.id) + 1} of ${sameCode.length}`;
+        $('go-label').textContent = 'Go to a clause of ' + row.code;
+        // the four clauses before and after, with the opening of their text
+        fetch(root + 'data/laws-brief.json').then(r => r.ok ? r.json() : []).then(list => {
+            const mine = list.filter(x => x[1] === row.code);
+            const i = mine.findIndex(x => x[0] === row.id);
+            const show = i < 0 ? [] : mine.slice(Math.max(0, i - 4), i + 5);
+            $('wheel').innerHTML = show.map(([cid, , cit, oe]) => {
+                const inner = `<span class="clause-wheel__cit">${esc(cit)}</span><span class="clause-wheel__text">${esc(oe)}</span>`;
+                return cid === row.id ? `<li class="current"><span aria-current="page">${inner}</span></li>` : `<li><a href="?id=${encodeURIComponent(cid)}">${inner}</a></li>`;
+            }).join('') || '<li class="muted small">No neighbouring clauses.</li>';
+        }).catch(() => { $('wheel').innerHTML = '<li class="muted small">The list could not be loaded.</li>'; });
+        // links
+        const drawLinks = () => {
+            const whole = !!document.querySelector('.whole-code h2');
+            const dictSec = document.querySelector('.clause-dictionary:not([hidden])');
+            $('p-links').innerHTML = [
+                `<li><a href="${root}lawcode.html?code=${encodeURIComponent(row.code)}#${encodeURIComponent(row.id)}">All clauses of ${esc(row.code)}, in summary</a></li>`,
+                whole ? '' : `<li><button type="button" class="link-button" id="show-whole">Show the whole of ${esc(row.code)} on this page</button></li>`,
+                dictSec ? `<li><a href="#" id="to-dict">In the dictionary</a> <span class="muted">(entries citing this clause)</span></li>` : '',
+                `<li><a href="${root}laws.html?codes=${encodeURIComponent(row.code)}">Search all the laws</a> <span class="muted">(this code chosen)</span></li>`,
+                `<li><a href="${root}laws.html">All law codes</a></li>`
+            ].join('');
+        };
+        drawLinks();
+        setTimeout(drawLinks, 1500);   // the dictionary list loads after the page
+        $('p-links').addEventListener('click', e => {
+            if (e.target.id === 'show-whole') { const b = document.querySelector('.whole-code') && document.querySelector('.whole-code').previousElementSibling; if (b && b.tagName === 'BUTTON') b.click(); }
+            if (e.target.id === 'to-dict') { e.preventDefault(); const sec = document.querySelector('.clause-dictionary'); if (sec) sec.scrollIntoView({ behavior: 'smooth' }); }
+        });
+        // go to a clause of this code
+        const fold = x => ELieb.slugify(x).toLowerCase().replace(/-/g, '');
+        $('go').addEventListener('keydown', e => {
+            if (e.key !== 'Enter') return;
+            const f = fold($('go').value);
+            const c = f && (sameCode.find(x => fold(x.clause) === f) || sameCode.find(x => fold(x.clause).startsWith(f)));
+            if (c) location.href = '?id=' + encodeURIComponent(c.id);
+        });
+        // find on this page (the clause, or the whole code when it is shown)
+        const find = $('find'), tol = $('tol');
+        let matchMode = 'whole', marks = [], at = -1;
+        const drawMatch = () => LawPanel.pills($('match'), [['whole', 'Whole words'], ['part', 'Parts of words']], k => matchMode === k, k => { matchMode = k; drawMatch(); run(); });
+        drawMatch();
+        const markPanel = LawPanel.watch($('panel'), () => ({ f: !!find.value.trim(), go: !!$('go').value.trim() }));
+        const step = d => {
+            const vis = marks.filter(m => m.offsetParent !== null);
+            if (!vis.length) return;
+            at = (at + d + vis.length) % vis.length;
+            marks.forEach(m => m.classList.remove('find-hit--current'));
+            vis[at].classList.add('find-hit--current');
+            vis[at].scrollIntoView({ block: 'center', behavior: 'smooth' });
+            $('find-count').textContent = `${at + 1} of ${vis.length}` + (marks.length > vis.length ? ` (and ${marks.length - vis.length} in notes not open)` : '');
+        };
+        function run() {
+            const whole = !!document.querySelector('.whole-code h2');
+            $('find-label').textContent = whole ? 'Find in the whole of ' + row.code : 'Find in this clause';
+            const terms = find.value.trim() ? W.parseWords(find.value, tol.checked, matchMode === 'whole') : [];
+            marks = W.mark(target, terms, lang => tol.checked && !/^(en|de)$/.test(lang || ''));
+            at = -1;
+            $('find-status').hidden = !terms.length;
+            const vis = marks.filter(m => m.offsetParent !== null);
+            $('find-count').textContent = !terms.length ? '' : vis.length ? `${vis.length} ${vis.length === 1 ? 'match' : 'matches'}` + (marks.length > vis.length ? ` (and ${marks.length - vis.length} in notes not open)` : '') : (marks.length ? `${marks.length} in notes not open` : 'No matches');
+            // in the whole code: the clauses with matches
+            const ids = [];
+            if (whole) marks.forEach(m => {
+                let el = m;
+                while (el && el.parentElement && !el.parentElement.classList.contains('whole-code')) el = el.parentElement;
+                // each clause is a block holding its heading (or a heading followed by its block)
+                let h = el && (el.tagName === 'H2' ? el : el.querySelector('h2[id]'));
+                while (!h && el) { el = el.previousElementSibling; h = el && (el.tagName === 'H2' ? el : el.querySelector('h2[id]')); }
+                el = h;
+                if (el && el.id && !ids.includes(el.id)) ids.push(el.id);
+            });
+            $('find-clauses').innerHTML = ids.length ? ids.map(x => `<a class="chip" href="#${esc(x)}">${esc((catalogue.find(c => c.id === x) || {}).citation || x)}</a>`).join('') : '';
+            markPanel();
+            if (vis.length && terms.length) step(1);
+        }
+        let timer = null;
+        find.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(run, 250); });
+        find.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); step(e.shiftKey ? -1 : 1); } });
+        tol.addEventListener('input', run);
+        $('find-prev').addEventListener('click', () => step(-1));
+        $('find-next').addEventListener('click', () => step(1));
+        document.addEventListener('wholecode', () => { drawLinks(); if (find.value.trim()) run(); else $('find-label').textContent = 'Find in the whole of ' + row.code; });
+    }
+
     if (!id) {
         target.innerHTML = '<h1>No clause chosen</h1><p>Clauses are reached from the law code citations at the foot of dictionary entries.</p>';
         return;
@@ -870,6 +1007,7 @@ scripts:
             const part = row.id === id ? '' : ((row.parts.find(p => p.id === id).clause.match(/\[([a-z])\]$/) || [])[1] || '');
             return Promise.all([fetchXml(row.file), loadSigla()]).then(([doc]) => {
                 render(row, doc);
+                sidebar(row);
                 if (part) {
                     const marked = target.querySelectorAll('.part-' + part);
                     marked.forEach(e => e.classList.add('part-active'));

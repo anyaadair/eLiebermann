@@ -159,7 +159,108 @@
         return { read };
     }
 
-    const api = { build, loose, clauseKey, clauseKeys, clauseMatches };
+    // ---- Word search (the Laws page, a law code's page, a clause page) ----
+    // Letters as the word search compares them: lower case, accents off, æ as ae, þ and ð as
+    // th, ƿ as w, ȝ as g, ⁊ as "and"; with spelling tolerance also the usual variations of
+    // Old English (i, y, ie; e, æ, ea, eo; single and double letters; c and k).
+    const sfold = s => String(s || '').toLowerCase().replace(/⁊/g, ' and ').replace(/[æǣǽ]/g, 'ae').replace(/[þðꝥ]/g, 'th')
+        .replace(/ƿ/g, 'w').replace(/ȝ/g, 'g').replace(/ß/g, 'ss').replace(/œ/g, 'oe').normalize('NFD').replace(/[̀-ͯ]/g, '');
+    const loosen = word => word.replace(/ie|y/g, 'i').replace(/ea|eo|io|ae/g, 'e').replace(/k/g, 'c').replace(/([b-df-hj-np-tv-z])\1+/g, '$1');
+    const WORD = /[\p{L}\p{N}⁊]+(?:['’][\p{L}]+)?/gu;
+    const wordsCache = new Map();
+    // a text's words, folded (and loosened), with where each stands in the text
+    function wordsOf(text, loose) {
+        const key = (loose ? 'L' : 'S') + text;
+        let r = wordsCache.get(key);
+        if (!r) {
+            r = [...String(text).matchAll(WORD)].map(m => { let f = sfold(m[0]).replace(/[^a-z0-9]/g, ''); if (loose) f = loosen(f); return { f, at: m.index, len: m[0].length }; });
+            if (wordsCache.size > 60000) wordsCache.clear();
+            wordsCache.set(key, r);
+        }
+        return r;
+    }
+    // "ceap*", "*bot", "\"on cyninges hand\"", plain words -> a list of terms, each a list of
+    // word tests. whole: plain words must be whole words (else: anywhere in a word).
+    function parseWords(text, loose, whole) {
+        const terms = [];
+        const norm = x => { let f = sfold(x).replace(/[^a-z0-9*]/g, ''); if (loose) f = loosen(f.replace(/\*/g, '\u0001')).replace(/\u0001/g, '*'); return f; };
+        const test = (raw, w) => {
+            const t = norm(raw);
+            if (!t.replace(/\*/g, '')) return null;
+            const pre = t.endsWith('*'), suf = t.startsWith('*'), core = t.replace(/\*/g, '');
+            if (pre && suf) return f => f.includes(core);
+            if (pre) return f => f.startsWith(core);
+            if (suf) return f => f.endsWith(core);
+            return w ? f => f === core : f => f.includes(core);
+        };
+        for (const m of String(text).matchAll(/"([^"]+)"|(\S+)/g)) {
+            if (m[1]) {
+                const seq = m[1].split(/\s+/).map(x => test(x, true)).filter(Boolean);
+                if (seq.length) terms.push(seq);
+            } else {
+                const t = test(m[2], whole !== false);
+                if (t) terms.push([t]);
+            }
+        }
+        return terms;
+    }
+    // where each term matches in a text: [start, end] for each term found, null for one missing
+    function findIn(text, terms, loose) {
+        const ws = wordsOf(text, loose);
+        const hits = [];
+        for (const seq of terms) {
+            let found = false;
+            for (let i = 0; i + seq.length <= ws.length; i++) {
+                if (seq.every((t, j) => t(ws[i + j].f))) {
+                    found = true;
+                    hits.push([ws[i].at, ws[i + seq.length - 1].at + ws[i + seq.length - 1].len]);
+                }
+            }
+            if (!found) hits.push(null);
+        }
+        return hits;
+    }
+    // Marks the words matching the terms in the text of an element (each text node on its
+    // own): <mark class="find-hit">. Returns the marks, in order. unmark() takes them away.
+    function unmark(root) {
+        root.querySelectorAll('mark.find-hit').forEach(m => { const t = document.createTextNode(m.textContent); m.replaceWith(t); });
+        root.normalize();
+    }
+    function mark(root, terms, looseFor) {
+        unmark(root);
+        const out = [];
+        if (!terms.length) return out;
+        const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+            acceptNode: n => n.data.trim() && !n.parentElement.closest('script, style, button, .no-find') ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT
+        });
+        const nodes = [];
+        while (walker.nextNode()) nodes.push(walker.currentNode);
+        nodes.forEach(n => {
+            const holder = n.parentElement.closest('[lang], [data-lang]');
+            const lang = holder ? (holder.getAttribute('data-lang') || holder.getAttribute('lang')) : '';
+            const loose = looseFor ? looseFor(lang) : false;
+            const ranges = findIn(n.data, terms, loose).filter(Boolean).sort((a, b) => a[0] - b[0]);
+            if (!ranges.length) return;
+            const frag = document.createDocumentFragment();
+            let at = 0;
+            ranges.forEach(([a, b]) => {
+                if (a < at) return;
+                frag.appendChild(document.createTextNode(n.data.slice(at, a)));
+                const m = document.createElement('mark');
+                m.className = 'find-hit';
+                m.textContent = n.data.slice(a, b);
+                frag.appendChild(m);
+                out.push(m);
+                at = b;
+            });
+            frag.appendChild(document.createTextNode(n.data.slice(at)));
+            n.replaceWith(frag);
+        });
+        return out;
+    }
+    const words = { sfold, loosen, wordsOf, parseWords, findIn, mark, unmark };
+
+    const api = { build, loose, clauseKey, clauseKeys, clauseMatches, words };
     if (typeof module !== 'undefined' && module.exports) module.exports = api;
     else root.LawSearch = api;
 })(typeof window !== 'undefined' ? window : this);
