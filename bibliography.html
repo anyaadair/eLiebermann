@@ -2,7 +2,7 @@
 title: Bibliography
 section: bibliography
 full_width: true
-description: The works cited in eLiebermann, and further reading on the Anglo-Saxon laws, searchable by author, title, subject and law code.
+description: The works cited in eLiebermann, and further reading on the Anglo-Saxon laws, searchable by author, title and subject.
 scripts:
   - "ROOT/scripts/eliebermann.js"
 ---
@@ -14,7 +14,7 @@ scripts:
     <div class="panel-sec">
         <label class="sidebar-label" for="q">Search the Bibliography</label>
         <input type="search" id="q" placeholder="e.g. Wulfstan, Textus Roffensis, feud" autocomplete="off">
-        <p class="panel-help">Finds every word you type, anywhere in the author, title, publication details or note; accents and æ, þ, ð can be typed plainly (ae, th).</p>
+        <p class="panel-help">Finds every word you type, anywhere in the citation; accents and æ, þ, ð can be typed plainly (ae, th).</p>
     </div>
 
     <div class="panel-sec">
@@ -23,16 +23,7 @@ scripts:
     </div>
 
     <div class="panel-sec">
-        <label class="sidebar-label" for="code">Works on a law code</label>
-        <select id="code" class="panel-select"><option value="">Any law code</option></select>
-        <p class="panel-help">Editions and studies used on that code’s clause pages, and further reading on it.</p>
-    </div>
-
-    <div class="panel-sec">
-        <div class="sidebar-label">Narrow to</div>
-        <label class="panel-check"><input type="checkbox" id="online"> Free online copy or website</label>
-        <label class="panel-check"><input type="checkbox" id="noted"> With a note on the work</label>
-        <div class="panel-sub">Kind of work</div>
+        <div class="sidebar-label">Kind of work</div>
         <div class="kind-pills kind-pills--small" id="kinds" role="group" aria-label="Kinds of work"></div>
     </div>
 
@@ -50,7 +41,7 @@ scripts:
     <h1>Bibliography</h1>
     <p class="lede">The works cited in eLiebermann, and further reading on the Anglo-Saxon laws.</p>
     <div class="notice warn">
-        <p><span class="wip-badge">Under construction</span> More works will be added. The short notes on the works are by the editors; first drafts were written with Claude, a large language model (LLM), and are being checked.</p>
+        <p><span class="wip-badge">Under construction</span> More works will be added.</p>
     </div>
     <p class="bib-status" id="status" aria-live="polite"></p>
     <div id="bib"><p class="loading">Loading…</p></div>
@@ -71,7 +62,7 @@ scripts:
     const get = f => fetch(root + f).then(r => (r.ok ? r.json() : null)).catch(() => null);
     // for searching: lower case, no accents, æ → ae, þ/ð → th
     const fold = s => String(s || '').toLowerCase().replace(/<[^>]+>/g, ' ').replace(/[æǣǽ]/g, 'ae').replace(/[þðꝥ]/g, 'th').replace(/ß/g, 'ss')
-        .normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/&amp;/g, '&');
+        .normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/&amp;/g, '&');
     const plain = s => { const d = document.createElement('div'); d.innerHTML = s; return d.textContent.replace(/\s+/g, ' ').trim(); };
 
     const KINDS = [['edition', 'Editions'], ['translation', 'Translations'], ['study', 'Studies'], ['facsimile', 'Facsimiles'], ['reference', 'Reference'], ['online', 'Websites']];
@@ -86,26 +77,15 @@ scripts:
         'RES': 'Review of English Studies', 'SEM': 'Studies in the Early Middle Ages'
     };
 
-    const state = { q: '', show: new Set(), code: '', online: false, noted: false, kinds: new Set(), order: 'arranged' };
-    let data, items = [], codeGroup = {}, groupCodes = {};
+    const state = { q: '', show: new Set(), kinds: new Set(), order: 'arranged' };
+    let data, items = [];
 
-    Promise.all([get('data/works.json'), get('data/bibliography.json'), get('data/bibliography-uses.json'), get('oe-laws/codes.json')]).then(([works, cites, uses, codes]) => {
+    Promise.all([get('data/works.json'), get('data/bibliography.json')]).then(([works, cites]) => {
         if (!works) { $('bib').innerHTML = '<p>The bibliography could not be loaded.</p>'; return; }
         data = works;
-        uses = uses || { works: {}, cited: {} };
-        (codes || []).forEach(c => { codeGroup[c.code] = c.group; (groupCodes[c.group] = groupCodes[c.group] || []).push(c.code); });
 
         // the hand-made list
-        works.works.forEach(w => {
-            const used = { clauses: 0, codes: {} };
-            (w.uses || []).forEach(u => {
-                const x = uses.works[u];
-                if (!x) return;
-                used.clauses += x.clauses;
-                Object.entries(x.codes).forEach(([c, n]) => { used.codes[c] = (used.codes[c] || 0) + n; });
-            });
-            items.push(Object.assign({}, w, { used, text: fold([w.citation, w.note].join(' ')) }));
-        });
+        works.works.forEach(w => { items.push(Object.assign({}, w, { text: fold(w.citation) })); });
         // Liebermann's own citations, one item per work
         const byAnchor = {};
         (cites || []).forEach(r => {
@@ -114,51 +94,32 @@ scripts:
         });
         Object.entries(byAnchor).forEach(([anchor, { rows }]) => {
             const r = rows[0];
-            const printed = [...new Set(rows.map(x => x['Gesetze Text']).filter(Boolean))];
-            const entries = uses.cited[anchor] || [];
             const yrs = (plain(r['Full Citation'] || '').match(/\b1[5-9]\d\d\b/g) || []);
             items.push({
                 id: 'cit-' + anchor, anchor, section: 'citations', group: 'cited',
-                citation: r['Full Citation'] || esc(r['Short Title'] || anchor), note: r.Notes ? esc(r.Notes) : '',
-                printed, entries, kind: 'cited', sort: fold(r['Short Title'] || ''), year: yrs.length ? +yrs[yrs.length - 1] : null,
-                used: { clauses: 0, codes: {} },
-                text: fold([r['Full Citation'], r['Short Title'], r.Notes, printed.join(' ')].join(' '))
+                citation: r['Full Citation'] || esc(r['Short Title'] || anchor),
+                kind: 'cited', sort: fold(r['Short Title'] || ''), year: yrs.length ? +yrs[yrs.length - 1] : null,
+                text: fold([r['Full Citation'], r['Short Title']].join(' '))
             });
         });
 
-        buildControls(codes || []);
+        buildControls();
         readUrl();
         syncControls();
         render();
     });
 
-    function buildControls(codes) {
+    function buildControls() {
         $('p-total').textContent = items.length + ' works';
         $('sections').innerHTML = data.sections.map(s => `<button type="button" class="kind-pill" data-sec="${s.id}" aria-pressed="false">${esc(s.title)}</button>`).join('');
         $('kinds').innerHTML = KINDS.map(([k, t]) => `<button type="button" class="kind-pill" data-kind="${k}" aria-pressed="false">${t}</button>`).join('');
         $('order').innerHTML = ORDERS.map(([k, t]) => `<button type="button" class="kind-pill" data-order="${k}" aria-pressed="false">${t}</button>`).join('');
-        // law codes, grouped by king as on the Laws page; each group can be chosen whole
-        const groups = [];
-        codes.forEach(c => { if (!groups.includes(c.group)) groups.push(c.group); });
-        $('code').insertAdjacentHTML('beforeend', groups.map(g => `<optgroup label="${esc(g)}"><option value="g:${esc(g)}">All of ${esc(g)}</option>${
-            codes.filter(c => c.group === g).map(c => `<option value="c:${esc(c.code)}">${esc(c.code)}${c.name && c.name !== c.code ? ' · ' + esc(c.name) : ''}</option>`).join('')}</optgroup>`).join(''));
 
         let t;
         $('q').addEventListener('input', () => { clearTimeout(t); t = setTimeout(() => { state.q = $('q').value; update(); }, 150); });
         $('sections').addEventListener('click', e => { const b = e.target.closest('[data-sec]'); if (!b) return; toggle(state.show, b.dataset.sec); update(); });
         $('kinds').addEventListener('click', e => { const b = e.target.closest('[data-kind]'); if (!b) return; toggle(state.kinds, b.dataset.kind); update(); });
         $('order').addEventListener('click', e => { const b = e.target.closest('[data-order]'); if (!b) return; state.order = b.dataset.order; update(); });
-        $('code').addEventListener('change', () => { state.code = $('code').value; update(); });
-        $('online').addEventListener('change', () => { state.online = $('online').checked; update(); });
-        $('noted').addEventListener('change', () => { state.noted = $('noted').checked; update(); });
-        $('bib').addEventListener('click', e => {
-            const b = e.target.closest('[data-copy]');
-            if (!b) return;
-            const it = items.find(x => x.id === b.dataset.copy);
-            const txt = plain(it.citation);
-            const done = () => { b.textContent = 'Copied'; setTimeout(() => { b.textContent = 'Copy citation'; }, 1500); };
-            if (navigator.clipboard) navigator.clipboard.writeText(txt).then(done, () => {}); else done();
-        });
     }
     const toggle = (set, k) => { if (set.has(k)) set.delete(k); else set.add(k); };
     // the search box is read afresh each time, so a change made while its short delay runs isn't lost
@@ -168,49 +129,30 @@ scripts:
         document.querySelectorAll('[data-sec]').forEach(b => b.setAttribute('aria-pressed', String(state.show.has(b.dataset.sec))));
         document.querySelectorAll('[data-kind]').forEach(b => b.setAttribute('aria-pressed', String(state.kinds.has(b.dataset.kind))));
         document.querySelectorAll('[data-order]').forEach(b => b.setAttribute('aria-pressed', String(state.order === b.dataset.order)));
-        $('code').value = state.code;
-        $('online').checked = state.online;
-        $('noted').checked = state.noted;
     }
-    // ?q=…&show=studies,further&code=c:Af&online=1&noted=1&kind=edition&order=date
+    // ?q=…&show=studies,further&kind=edition&order=date
     function readUrl() {
         const p = new URLSearchParams(location.search);
         state.q = p.get('q') || '';
         state.show = new Set((p.get('show') || '').split(',').filter(Boolean));
         state.kinds = new Set((p.get('kind') || '').split(',').filter(Boolean));
-        state.code = p.get('code') || '';
-        state.online = p.get('online') === '1';
-        state.noted = p.get('noted') === '1';
         state.order = ORDERS.some(o => o[0] === p.get('order')) ? p.get('order') : 'arranged';
     }
     function writeUrl() {
         const p = new URLSearchParams();
         if (state.q) p.set('q', state.q);
         if (state.show.size) p.set('show', [...state.show].join(','));
-        if (state.code) p.set('code', state.code);
-        if (state.online) p.set('online', '1');
-        if (state.noted) p.set('noted', '1');
         if (state.kinds.size) p.set('kind', [...state.kinds].join(','));
         if (state.order !== 'arranged') p.set('order', state.order);
         const s = p.toString();
         history.replaceState(null, '', location.pathname + (s ? '?' + s : '') + location.hash);
     }
 
-    function onCode(it) {
-        if (!state.code) return true;
-        const [type, val] = [state.code.slice(0, 1), state.code.slice(2)];
-        const codesOf = new Set([...(it.codes || []), ...Object.keys(it.used.codes)]);
-        if (type === 'g') return (it.kings || []).includes(val) || [...codesOf].some(c => codeGroup[c] === val);
-        return codesOf.has(val) || (it.kings || []).includes(codeGroup[val]);
-    }
     function visible() {
         const words = fold(state.q).split(/[^a-z0-9&]+/).filter(Boolean);
         return items.filter(it =>
             (!state.show.size || state.show.has(it.section)) &&
             (!state.kinds.size || state.kinds.has(it.kind || 'study')) &&
-            (!state.online || it.url) &&
-            (!state.noted || it.note) &&
-            onCode(it) &&
             words.every(w => it.text.includes(w)));
     }
 
@@ -250,27 +192,7 @@ scripts:
     }
 
     function item(it, sectionTag) {
-        const meta = [], more = [];
-        if (it.url) meta.push(`<a class="bib-online" href="${esc(it.url)}" target="_blank" rel="noopener">${it.kind === 'online' ? 'Website' : 'Online'}&nbsp;<span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a>`);
-        const codes = Object.entries(it.used.codes);
-        if (it.used.clauses) {
-            const list = codes.sort((a, b) => b[1] - a[1]).map(([c, n]) => `<a href="${root}lawcode.html?code=${encodeURIComponent(c)}" title="${n} clause${n === 1 ? '' : 's'}">${esc(c)}</a>`).join(', ');
-            more.push(`<details class="bib-uses"><summary>On ${it.used.clauses.toLocaleString('en-GB')} clause page${it.used.clauses === 1 ? '' : 's'}, in ${codes.length} law code${codes.length === 1 ? '' : 's'}</summary><p>${list}</p></details>`);
-        }
-        if (it.entries && it.entries.length) {
-            const list = it.entries.slice().sort((a, b) => (ELieb.alphaKey(a[1]) < ELieb.alphaKey(b[1]) ? -1 : 1))
-                .map(([id, hw, lang]) => `<a href="${root}entry.html?id=${encodeURIComponent(id)}"${ELieb.langAttr ? ELieb.langAttr(lang) : ''}>${esc(hw)}</a>`).join(', ');
-            more.push(`<details class="bib-uses"><summary>Cited in ${it.entries.length} dictionary entr${it.entries.length === 1 ? 'y' : 'ies'}</summary><p>${list}</p></details>`);
-        }
-        if (it.printed && it.printed.length) meta.push(`<span class="bib-printed">Liebermann prints: ${it.printed.map(p => `<span>${esc(p)}</span>`).join(' · ')}</span>`);
-        if (it.anchor) meta.push(`<a href="${root}bibAbb.html#${encodeURIComponent(it.anchor)}">In Authors and Works Cited</a>`);
-        meta.push(`<button type="button" class="link-button bib-copy" data-copy="${esc(it.id)}">Copy citation</button>`);
-        return `<li class="bib-item" id="${esc(it.id)}">
-            ${sectionTag ? `<span class="bib-tag">${esc(sectionTag)}</span>` : ''}
-            <div class="bib-cit">${it.citation}</div>
-            ${it.note ? `<p class="bib-note">${it.note}</p>` : ''}
-            <div class="bib-meta">${meta.join('')}${more.join('')}</div>
-        </li>`;
+        return `<li class="bib-item" id="${esc(it.id)}">${sectionTag ? `<span class="bib-tag">${esc(sectionTag)}</span>` : ''}<div class="bib-cit">${it.citation}</div></li>`;
     }
 
     function abbreviations(list) {

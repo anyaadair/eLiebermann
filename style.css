@@ -1122,30 +1122,22 @@ mark.find-hit--current { background: #ffc94d; outline: 2px solid #e0a100; }
 #find-clauses { margin-top: 0.4rem; }
 
 /* ---------- Bibliography page (bibliography.html): the Laws page layout, with a list of works ---------- */
-.panel-select { width: 100%; font: inherit; font-size: 0.88rem; padding: 0.3rem 0.4rem; border: 1px solid var(--rule); border-radius: 4px; background: var(--surface); }
 .bib-toc li { margin: 0.15rem 0; font-size: 0.88rem; }
 .bib-toc ul { list-style: none; margin: 0.1rem 0 0.35rem 0.9rem; padding: 0; }
 .bib-toc ul li { font-size: 0.82rem; }
 .bib-status { font-size: 0.85rem; color: var(--muted); margin: 0.5rem auto 0.3rem; }
-.bib-section { margin-top: 1.8rem; }
-.bib-section h2 { border-bottom: 1px solid var(--rule); padding-bottom: 0.25rem; }
-.bib-section h3 { font-size: 1.08rem; color: var(--navy-dark); margin: 1.4rem 0 0.4rem; }
+.bib-section { margin-top: 2.2rem; }
+.bib-section h2 { font-size: 1.75rem; border-bottom: 1px solid var(--rule); padding-bottom: 0.3rem; margin-bottom: 0.4rem; }
+.bib-section h3 { font-size: 1.3rem; color: var(--navy-dark); margin: 1.8rem 0 0.6rem; }
 .bib-count { font-family: var(--sans); font-size: 0.72rem; font-weight: 600; color: var(--muted); background: #eef0f3; border-radius: 999px; padding: 0.05rem 0.45rem; vertical-align: middle; }
 .bib-intro { font-size: 0.92rem; color: var(--muted); margin: 0.2rem 0 0.6rem; }
 .bib-list { list-style: none; margin: 0; padding: 0; }
-.bib-item { padding: 0.55rem 0 0.6rem; border-bottom: 1px solid #ece9e1; scroll-margin-top: 1rem; }
-.bib-item:last-child { border-bottom: 0; }
+.bib-item { padding: 0.3rem 0; scroll-margin-top: 1rem; }
 .bib-item:target { background: var(--powder-tint); }
-.bib-cit { padding-left: 1.6rem; text-indent: -1.6rem; line-height: 1.5; }
+.bib-cit { font-size: 0.95rem; padding-left: 1.6rem; text-indent: -1.6rem; line-height: 1.5; }
 .bib-cit a { overflow-wrap: anywhere; }
-.bib-note { margin: 0.3rem 0 0 1.6rem; font-size: 0.93rem; line-height: 1.45; color: #4a4f57; }
-.bib-meta { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.25rem 1rem; margin: 0.3rem 0 0 1.6rem; font-family: var(--sans); font-size: 0.78rem; color: var(--muted); }
-.bib-meta > a, .bib-copy { color: var(--link); font-size: inherit; }
-.bib-uses { flex-basis: 100%; }
-.bib-uses summary { cursor: pointer; color: var(--link); width: max-content; max-width: 100%; }
-.bib-uses p { margin: 0.25rem 0 0.2rem; font-size: 0.82rem; line-height: 1.55; }
-.bib-printed span { font-family: var(--serif); font-style: italic; font-size: 1.05em; color: var(--ink); }
-.bib-tag { display: inline-block; font-family: var(--sans); font-size: 0.68rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); margin-bottom: 0.15rem; }
+.bib-list--flat .bib-item { padding: 0.45rem 0; }
+.bib-tag { display: inline-block; font-family: var(--sans); font-size: 0.68rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); margin-bottom: 0.1rem; }
 .bib-abbr dl { display: grid; grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr)); gap: 0.15rem 1.5rem; font-size: 0.88rem; }
 .bib-abbr dl div { display: flex; gap: 0.6rem; }
 .bib-abbr dt { font-weight: 600; min-width: 4.5rem; }
