@@ -46,7 +46,7 @@ scripts:
         };
         const textLabel = commonest('oeLabel'), enLabel = commonest('glossLabel');
         const lang = commonest('oeLang');
-        const textHead = (lang === 'la' ? 'Latin' : lang === 'ang' ? 'Old English' : 'Text') + (textLabel ? ': ' + textLabel : '');
+        const textHead = (lang === 'la' ? 'Latin' : lang === 'ang' ? 'Old English' : lang === 'xno' ? 'Anglo-Norman French' : 'Text') + (textLabel ? ': ' + textLabel : '');
         // A Latin text Liebermann prints without a German translation has no English crib.
         const enHead = mine.some(c => c.gloss) ? 'English' + (enLabel ? ': ' + enLabel : '')
             : 'English: none (Liebermann gives no German translation of this text)';
