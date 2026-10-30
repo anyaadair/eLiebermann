@@ -156,6 +156,25 @@ scripts:
             words.every(w => it.text.includes(w)));
     }
 
+    // The author part of a citation ("Wormald, Patrick" in "Wormald, Patrick, ‘Quadripartitus’, …"); empty for a
+    // citation that begins with its title. In a list, a citation by the same author(s) as the one before it
+    // begins with a dash in place of the name(s).
+    const DASH = '——';
+    const authorOf = c => {
+        if (/^(<i>|‘|“|\[)/.test(c)) return '';
+        const m = /^(.+?), (?=‘|“|<i>|eds?\b|ed\.|trans\.|review|articles?\b|note\b|\[)/.exec(c);
+        return m ? m[1] : '';
+    };
+    const listOf = (arr, extra) => {
+        let prev = '';
+        return arr.map(it => {
+            const a = authorOf(it.citation);
+            const same = a && a === prev;
+            prev = a;
+            return item(it, extra ? extra(it).tag : '', extra ? extra(it).inner : '', same ? a : '');
+        }).join('');
+    };
+
     const bySort = (a, b) => (a.sort < b.sort ? -1 : a.sort > b.sort ? 1 : (a.year || 0) - (b.year || 0));
     const byDate = (a, b) => (a.year || 9999) - (b.year || 9999) || bySort(a, b);
 
@@ -182,16 +201,16 @@ scripts:
                     // a chapter whose book is not shown stands on its own
                     const shown = new Set(inG.map(it => it.id));
                     const kids = id => inG.filter(it => it.parent === id).sort((a, b) => a.order - b.order);
-                    html += `<ol class="bib-list">${inG.filter(it => !it.parent || !shown.has(it.parent)).map(it => {
+                    html += `<ol class="bib-list">${listOf(inG.filter(it => !it.parent || !shown.has(it.parent)), it => {
                         const ch = kids(it.id);
-                        return item(it, '', ch.length ? `<ol class="bib-list bib-chapters">${ch.map(c => item(c)).join('')}</ol>` : '');
-                    }).join('')}</ol>`;
+                        return { tag: '', inner: ch.length ? `<ol class="bib-list bib-chapters">${listOf(ch)}</ol>` : '' };
+                    })}</ol>`;
                 });
                 html += '</section>';
                 toc.push([`s-${s.id}`, s.title, inSec.length, sub]);
             });
         } else {
-            html = `<ol class="bib-list bib-list--flat">${list.slice().sort(state.order === 'date' ? byDate : bySort).map(it => item(it, secTitle(it.section))).join('')}</ol>`;
+            html = `<ol class="bib-list bib-list--flat">${listOf(list.slice().sort(state.order === 'date' ? byDate : bySort), it => ({ tag: secTitle(it.section), inner: '' }))}</ol>`;
         }
         $('bib').innerHTML = list.length ? html : '<p class="muted">No works match. Try fewer words, or clear the choices on the left.</p>';
         $('toc').innerHTML = toc.length
@@ -200,8 +219,9 @@ scripts:
         abbreviations(list);
     }
 
-    function item(it, sectionTag, inner) {
-        return `<li class="bib-item" id="${esc(it.id)}">${sectionTag ? `<span class="bib-tag">${esc(sectionTag)}</span>` : ''}<div class="bib-cit">${it.citation}</div>${inner || ''}</li>`;
+    function item(it, sectionTag, inner, dashFor) {
+        const cit = dashFor ? `<span title="${esc(plain(dashFor))}">${DASH}</span>` + it.citation.slice(dashFor.length) : it.citation;
+        return `<li class="bib-item" id="${esc(it.id)}">${sectionTag ? `<span class="bib-tag">${esc(sectionTag)}</span>` : ''}<div class="bib-cit">${cit}</div>${inner || ''}</li>`;
     }
 
     function abbreviations(list) {
