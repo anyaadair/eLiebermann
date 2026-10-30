@@ -1145,3 +1145,60 @@ mark.find-hit--current { background: #ffc94d; outline: 2px solid #e0a100; }
 .bib-abbr dl div { display: flex; gap: 0.6rem; }
 .bib-abbr dt { font-weight: 600; min-width: 4.5rem; }
 .bib-abbr dd { margin: 0; }
+
+/* ---------- Guides: the lists of law codes, manuscripts and grammatical terms (scripts/abbreviations.js) ---------- */
+/* One table a page, so every column starts in the same place all the way down. */
+.glossary { width: 100%; table-layout: fixed; border-collapse: collapse; background: transparent; font-size: 0.95rem; line-height: 1.45; margin: 0.5rem 0 2rem; }
+.glossary th, .glossary td { background: transparent; color: inherit; text-transform: none; letter-spacing: normal; font-size: inherit; font-weight: inherit; border-bottom: 0; overflow-wrap: anywhere; }
+.glossary tbody tr:nth-child(even), .glossary tbody tr:hover { background: transparent; }
+.glossary thead th { position: sticky; overflow-wrap: normal; top: 0; z-index: 1; background: var(--paper, #fbfaf6); text-align: left; font-family: var(--sans); font-size: 0.74rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); padding: 0.55rem 0.75rem 0.45rem; border-bottom: 2px solid var(--rule); }
+.glossary td { padding: 0.4rem 0.75rem; vertical-align: baseline; border: 0; }
+.glossary tbody tr:not(.gl-letter):not(.gl-head):not(.gl-note):hover td { background: #f3f1eb; }
+.glossary .num { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; color: var(--muted); }
+.glossary .gl-term { font-weight: 600; color: var(--navy-dark); overflow-wrap: normal; }
+.glossary .gl-de { font-style: italic; }
+.glossary .gl-also { display: block; font-weight: 400; font-size: 0.8rem; color: var(--muted); white-space: normal; }
+.glossary .gl-date, .glossary .gl-laws { font-size: 0.88rem; }
+.glossary tr.gl-letter th { text-align: left; font-family: var(--serif); font-size: 1.35rem; font-weight: 600; color: var(--navy); padding: 1.1rem 0.75rem 0.25rem; border-bottom: 1px solid var(--rule); scroll-margin-top: 2.5rem; }
+.glossary tr.is-target td, .glossary tbody.is-target td, .glossary tbody.is-target th { background: var(--powder-tint); }
+.glossary tr[id], .glossary tbody[id] { scroll-margin-top: 2.5rem; }
+.glossary--law .c-abbr, .glossary--ms .c-abbr { width: 7.5rem; }
+.glossary--law .c-de { width: 30%; }
+.glossary--law .c-page, .glossary--ms .c-page { width: 5.5rem; }
+.glossary thead th.num { white-space: normal; text-align: right; }
+.glossary--ms .c-date { width: 18%; }
+.glossary--ms .c-laws { width: 18%; }
+.glossary--gram .c-abbr { width: 9rem; }
+.glossary--gram .c-de { width: 40%; }
+.gl-more { margin-top: 0.15rem; font-size: 0.85rem; }
+.gl-more summary { cursor: pointer; color: var(--link); font-family: var(--sans); font-size: 0.78rem; width: max-content; max-width: 100%; }
+.gl-more p { margin: 0.25rem 0 0.35rem; color: #4a4f57; }
+.gl-tag { display: inline-block; margin-left: 0.4rem; font-family: var(--sans); font-size: 0.68rem; font-weight: 600; padding: 0 0.4rem; border-radius: 999px; background: #eef0f3; color: var(--muted); vertical-align: 0.1em; }
+/* grammatical terms: a group of related spellings under a heading row */
+.glossary--gram tbody.gl-group--multi tr.gl-head th { text-align: left; padding: 0.7rem 0.75rem 0.15rem; font-family: var(--serif); font-size: 1.02rem; font-weight: 600; color: var(--navy-dark); }
+.glossary--gram tbody.gl-group--multi .gl-head-en { font-family: var(--sans); font-weight: 400; font-size: 0.8rem; color: var(--muted); margin-left: 0.6rem; }
+.glossary--gram tbody.gl-group--multi tr:not(.gl-head) td:first-child { padding-left: 1.5rem; }
+.glossary--gram tbody.gl-group--multi tr:last-child td { padding-bottom: 0.6rem; }
+.glossary--gram tr.gl-note td { font-size: 0.84rem; color: #4a4f57; padding-top: 0; padding-bottom: 0.6rem; }
+/* the panel: letters to jump to */
+.letter-jump { display: grid; grid-template-columns: repeat(auto-fill, minmax(1.75rem, 1fr)); gap: 0.2rem; }
+.letter-jump a, .letter-jump span { display: block; text-align: center; font-family: var(--sans); font-size: 0.85rem; padding: 0.2rem 0; border-radius: 4px; }
+.letter-jump a { color: var(--link); border: 1px solid var(--rule); background: var(--surface); text-decoration: none; }
+.letter-jump a:hover, .letter-jump a:focus-visible { border-color: var(--link); background: var(--powder-tint); }
+.letter-jump span { color: #c3c0b8; border: 1px solid transparent; }
+.guides-layout .gl-letter-h { font-size: 1.35rem; border-bottom: 1px solid var(--rule); padding-bottom: 0.2rem; margin: 1.6rem 0 0.8rem; scroll-margin-top: 1rem; }
+.guides-layout .bib-work h3 { font-size: 1.05rem; margin: 0 0 0.2rem; }
+mark.gp-mark { background: var(--highlight); padding: 0 0.05em; border-radius: 2px; }
+mark.gp-mark.is-current { outline: 2px solid var(--link); }
+/* on a phone, each row of a list becomes a small block */
+@media (max-width: 40rem) {
+    .glossary thead { display: none; }
+    .glossary, .glossary tbody, .glossary tr, .glossary td, .glossary th { display: block; width: auto; }
+    .glossary colgroup { display: none; }
+    .glossary tr:not(.gl-letter):not(.gl-head) { padding: 0.45rem 0; border-bottom: 1px solid #ece9e1; }
+    .glossary td { padding: 0.05rem 0.25rem; }
+    .glossary .num { text-align: left; }
+    .glossary .num:not(:empty)::before { content: 'Gesetze I, p. '; }
+    .glossary--gram tbody.gl-group--multi tr:not(.gl-head) td:first-child { padding-left: 0.25rem; }
+    .glossary .gl-term { white-space: normal; }
+}
