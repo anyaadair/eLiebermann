@@ -17,8 +17,9 @@
             loading[file] = fetch(root + file)
                 .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
                 // entry-order.json: [id, headword, language, 1 for a spelling]
-                .then(list => list.map(e => Array.isArray(e) ? { id: e[0], hw: e[1], lang: e[2], spelling: !!e[3] } : e))
-                .then(list => list.map(e => Object.assign({ key: fold(e.hw) }, e)))
+                .then(list => list.map(e => Array.isArray(e) ? { id: e[0], hw: e[1], lang: e[2], spelling: !!e[3], also: e[4] } : e))
+                // the headword and any other spellings (data/headword-variants.json)
+                .then(list => list.map(e => Object.assign({ key: fold(e.hw), keys: [fold(e.hw)].concat((e.also || []).map(fold)) }, e)))
                 .catch(() => []);
         }
         return loading[file];
@@ -31,9 +32,9 @@
         const hidden = ELieb.hiddenLanguages();
         for (const e of entries) {
             if (!ELieb.isShown(e.lang, hidden, e.hw)) continue;
-            const i = e.key.indexOf(term);
-            if (i === 0) starts.push(e);
-            else if (i > 0) contains.push(e);
+            const at = e.keys.map(k => k.indexOf(term)).filter(i => i >= 0);
+            if (at.includes(0)) starts.push(e);
+            else if (at.length) contains.push(e);
         }
         const byKey = (a, b) => a.key.length - b.key.length || a.key.localeCompare(b.key);
         return starts.sort(byKey).concat(contains.sort(byKey)).slice(0, MAX);
@@ -91,7 +92,7 @@
                 list.innerHTML = items.map((e, i) => `
                     <li role="option" id="${list.id}-${i}" aria-selected="false">
                         <a href="${href(e)}" tabindex="-1">
-                            <span class="headword">${esc(e.hw)}</span>
+                            <span class="headword">${esc(e.hw)}</span>${(e.also || []).some(a => fold(a).includes(fold(typed))) ? ` <span class="also">(${esc(e.also.filter(a => fold(a).includes(fold(typed))).join(', '))})</span>` : ''}
                             ${ELieb.languageBadge(e.lang, e.hw)}
                             <span class="gloss">${esc(e.gloss || '')}</span>
                         </a>

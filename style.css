@@ -999,3 +999,4 @@ body.scan-open .entry-column > article { max-width: none; }
     .entry-column { padding: 0.5rem 1rem 3rem; }
 }
 @media print { .entry-sidebar, .sidebar-open { display: none !important; } .entry-layout { display: block; } }
+.suggestions .also { color: var(--muted); font-size: 0.9em; font-style: italic; }

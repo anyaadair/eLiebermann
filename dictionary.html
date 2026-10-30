@@ -71,7 +71,7 @@ const ENTRY_FILES = [{% for f in entry_files %}"{{ f.basename }}"{% unless forlo
         const list = entries.filter(e =>
             ELieb.isShown(e.lang, hidden, e.hw) &&
             (!lang.value || e.lang === lang.value) &&
-            (!term || fold(e.hw).includes(term) || (fulltext.checked && (e.text || '').toLowerCase().includes(raw))));
+            (!term || fold(e.hw).includes(term) || (e.also || []).some(a => fold(a).includes(term)) || (fulltext.checked && (e.text || '').toLowerCase().includes(raw))));
 
         const byLetter = {};
         list.forEach(e => { (byLetter[letterOf(e)] = byLetter[letterOf(e)] || []).push(e); });
