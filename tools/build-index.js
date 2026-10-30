@@ -68,3 +68,19 @@ console.log(`data/entries.json: ${entries.length} entries`);
 fs.writeFileSync(path.join(repo, 'data', 'entry-order.json'),
     '[\n' + entries.map(e => JSON.stringify(e.also ? [e.id, e.hw, e.lang, e.spelling ? 1 : 0, e.also] : e.spelling ? [e.id, e.hw, e.lang, 1] : [e.id, e.hw, e.lang])).join(',\n') + '\n]\n');
 console.log(`data/entry-order.json: ${entries.length} entries`);
+
+// data/dict-citations.json: which law clauses each dictionary entry cites (its
+// citation list, clause links only), for the Laws page's "Dictionary word" search
+// and the "Dictionary entries citing this clause" list on each clause page.
+// { entryId: [headword, language, [clause ids]] }
+const cites = {};
+fs.readdirSync(dir).filter(f => f.endsWith('.xml')).forEach(f => {
+    const xml = fs.readFileSync(path.join(dir, f), 'utf8');
+    const ids = [...new Set([...xml.matchAll(/<xr type="lawCode"[^>]*><ref target="clause:([^"]+)"/g)].map(m => m[1]))];
+    if (!ids.length) return;
+    const id = f.replace(/\.xml$/, '');
+    const e = entries.find(x => x.id === id);
+    cites[id] = [e ? e.hw : id, e ? e.lang : 'ang', ids];
+});
+fs.writeFileSync(path.join(repo, 'data', 'dict-citations.json'), JSON.stringify(cites));
+console.log(`data/dict-citations.json: ${Object.keys(cites).length} entries`);
