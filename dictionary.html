@@ -14,13 +14,6 @@ scripts:
 
 <div class="search-bar" role="search">
     <input type="search" id="q" data-suggest placeholder="Search headwords, e.g. bocland" aria-label="Search the dictionary">
-    <select id="lang" aria-label="Language">
-        <option value="">All languages</option>
-        <option value="ang">Old English</option>
-        <option value="la">Latin</option>
-        <option value="fro">French</option>
-        <option value="de">Grammatical terms</option>
-    </select>
     <label class="small" style="align-self:center; font-weight:400"><input type="checkbox" id="fulltext"> Also search Liebermann's text</label>
 </div>
 <div class="kind-pills" id="kinds" aria-label="Kinds of entry to show"></div>
@@ -38,26 +31,25 @@ const ENTRY_FILES = [{% for f in entry_files %}"{{ f.basename }}"{% unless forlo
     const root = window.SITE_ROOT || '';
     const results = document.getElementById('results');
     const q = document.getElementById('q');
-    const lang = document.getElementById('lang');
     const fulltext = document.getElementById('fulltext');
     const params = new URLSearchParams(location.search);
     q.value = params.get('q') || '';
-    lang.value = params.get('lang') || '';
     fulltext.checked = params.get('text') === '1';
     let entries = [];
     // Which kinds of entry to show (All, Old English, Latin, French, Grammatical terms):
     // remembered in this browser (see ELieb.hiddenLanguages), so the entry
     // pages' sidebar, Previous and Next links and the search suggestions follow them.
     let hidden = ELieb.hiddenLanguages();
+    // An old link with ?lang=la (the list of languages that used to be beside the box):
+    // show only that kind.
+    if (ELieb.KINDS.some(([k]) => k === params.get('lang'))) {
+        hidden = new Set(ELieb.KINDS.map(([k]) => k).filter(k => k !== params.get('lang')));
+        ELieb.setHiddenLanguages(hidden);
+    }
     const NAMES = { ang: 'Old English', la: 'Latin', fro: 'French', de: 'Grammatical Terms' };
     const kinds = ELieb.kindFilter(document.getElementById('kinds'), h => {
         hidden = h;
-        if (hidden.has(lang.value)) lang.value = '';   // hiding a language undoes choosing it
         update();
-    });
-    lang.addEventListener('input', () => {
-        // Choosing a language in the list shows it again.
-        if (hidden.delete(lang.value)) { ELieb.setHiddenLanguages(hidden); kinds.draw(); }
     });
     let present = new Set();      // the letters that have entries at all
 
@@ -70,7 +62,6 @@ const ENTRY_FILES = [{% for f in entry_files %}"{{ f.basename }}"{% unless forlo
         const raw = q.value.trim().toLowerCase();
         const list = entries.filter(e =>
             ELieb.isShown(e.lang, hidden, e.hw) &&
-            (!lang.value || e.lang === lang.value) &&
             (!term || fold(e.hw).includes(term) || (e.also || []).some(a => fold(a).includes(term)) || (fulltext.checked && (e.text || '').toLowerCase().includes(raw))));
 
         const byLetter = {};
@@ -105,13 +96,12 @@ const ENTRY_FILES = [{% for f in entry_files %}"{{ f.basename }}"{% unless forlo
     function update() {
         const p = new URLSearchParams();
         if (q.value.trim()) p.set('q', q.value.trim());
-        if (lang.value) p.set('lang', lang.value);
         if (fulltext.checked) p.set('text', '1');
         history.replaceState(null, '', location.pathname + (p.toString() ? '?' + p : ''));
         draw();
     }
 
-    [q, lang, fulltext].forEach(el => el.addEventListener('input', update));
+    [q, fulltext].forEach(el => el.addEventListener('input', update));
 
     fetch(root + 'data/entries.json')
         .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })

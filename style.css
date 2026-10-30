@@ -30,6 +30,10 @@
 * { box-sizing: border-box; }
 
 html { -webkit-text-size-adjust: 100%; }
+/* Keep room for the scroll bar on every page, so the page doesn't jump sideways when it
+   appears or goes (as when a list of search suggestions makes the page longer or shorter). */
+html { scrollbar-gutter: stable; }
+@supports not (scrollbar-gutter: stable) { html { overflow-y: scroll; } }
 
 body {
     margin: 0;
