@@ -38,8 +38,6 @@ jobs:
         run: node tools/build-index.js
       - name: List law clauses
         run: node tools/build-laws-index.js
-      - name: Count where each work in the Bibliography is used
-        run: node tools/build-bibliography.js
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:

@@ -76,7 +76,7 @@ Nothing is published until it is committed to `main`. GitHub Pages rebuilds the 
 | `index.html`, `about.html` | Home and About. Their text is in `pages/`. |
 | `dictionary.html` | A–Z list and search. |
 | `entry.html` | Shows one entry. |
-| `bibliography.html` | The Bibliography: Liebermann's volumes, his citations (`data/bibliography.json`), the editions, translations and studies used on the clause pages, and further reading (`data/works.json`), with search and filters. Where each work is used is counted on deploy by `tools/build-bibliography.js`. |
+| `bibliography.html` | The Bibliography: Liebermann's volumes, his citations (`data/bibliography.json`), the editions, translations and studies used on the clause pages, and further reading (`data/works.json`), with search and filters. |
 | `import.html` | Bulk import of a Word document in the browser. Not on the site for now (`published: false`); see [docs/IMPORT.md](docs/IMPORT.md). |
 | `abbreviations.html`, `lawAbb.html`, `msAbb.html`, `gramAbb.html`, `bibAbb.html` | The abbreviation lists: law codes, manuscripts, grammatical abbreviations, and authors and works cited (`scripts/abbreviations.js`). |
 | `guide.html` | How to read an entry: Liebermann's own explanation of the dictionary (vol. II.1, p. IV) in English, with a key to his citations. |

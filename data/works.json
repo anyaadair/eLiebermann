@@ -22,7 +22,7 @@
   {
    "id": "citations",
    "title": "Liebermann’s Citations",
-   "intro": "The works Liebermann cites in the Wörterbuch, with the entries that cite each. The same list, with every form in which he prints each title, is in <a href=\"bibAbb.html\">Authors and Works Cited</a>.",
+   "intro": "The works Liebermann cites in the Wörterbuch. The same list, with every form in which he prints each title, is in <a href=\"bibAbb.html\">Authors and Works Cited</a>.",
    "groups": [
     {
      "id": "cited",
@@ -114,11 +114,6 @@
    "section": "liebermann",
    "group": "gesetze",
    "citation": "Liebermann, Felix, ed. and trans., <i>Die Gesetze der Angelsachsen</i>, herausgegeben im Auftrage der Savigny-Stiftung, I: <i>Text und Übersetzung</i> (Halle: Niemeyer, 1903)",
-   "note": "The texts of all the laws, from Æthelberht to the Latin and French law books of the early twelfth century, with the readings of every manuscript (printed side by side where the versions differ) and a German translation. The texts and translations on this site’s clause pages are taken from it.",
-   "url": "https://archive.org/details/diegesetzederang01liebuoft",
-   "uses": [
-    "liebermann"
-   ],
    "kind": "edition",
    "sort": "liebermann 1",
    "year": 1903
@@ -128,8 +123,6 @@
    "section": "liebermann",
    "group": "gesetze",
    "citation": "Liebermann, Felix, <i>Die Gesetze der Angelsachsen</i>, II.1: <i>Wörterbuch</i> (Halle: Niemeyer, 1906)",
-   "note": "A dictionary of the words of the laws, Old English, Latin and French, with their occurrences cited by law code and clause. It is the source of this site’s Dictionary.",
-   "url": "https://archive.org/details/diegesetzederang02liebuoft",
    "kind": "reference",
    "sort": "liebermann 2",
    "year": 1906
@@ -139,8 +132,6 @@
    "section": "liebermann",
    "group": "gesetze",
    "citation": "Liebermann, Felix, <i>Die Gesetze der Angelsachsen</i>, II.2: <i>Rechts- und Sachglossar</i> (Halle: Niemeyer, 1912)",
-   "note": "An encyclopaedia of the legal and historical subjects of the laws, arranged under German headwords, summarizing and citing everything the laws say on each.",
-   "url": "https://archive.org/details/p2diegesetzedera02greauoft",
    "kind": "reference",
    "sort": "liebermann 3",
    "year": 1912
@@ -150,10 +141,6 @@
    "section": "liebermann",
    "group": "gesetze",
    "citation": "Liebermann, Felix, <i>Die Gesetze der Angelsachsen</i>, III: <i>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</i> (Halle: Niemeyer, 1916)",
-   "note": "An introduction to each text (its manuscripts, date and sources) and a commentary on individual passages, keyed to the numbered notes of the translation in vol. I. Shown on the clause pages as Liebermann’s explanatory notes.",
-   "uses": [
-    "liebermann-erkl"
-   ],
    "kind": "study",
    "sort": "liebermann 4",
    "year": 1916
@@ -163,13 +150,6 @@
    "section": "liebermann",
    "group": "other",
    "citation": "Liebermann, Felix, <i>Quadripartitus: ein englisches Rechtsbuch von 1114</i> (Halle: Niemeyer, 1892)",
-   "note": "His edition and study of the twelfth-century Latin translation of the Old English laws; its text was afterwards printed beside the Old English in the <i>Gesetze</i>.",
-   "url": "https://archive.org/details/quadripartitusei00liebuoft",
-   "kings": [
-    "William I",
-    "Henry I",
-    "Anglo-Latin law books"
-   ],
    "sort": "liebermann, felix, quadripartitus: ein englisches rechtsbuch von 1114 (halle: niemeyer, 1892)",
    "year": 1892
   },
@@ -178,12 +158,6 @@
    "section": "liebermann",
    "group": "other",
    "citation": "Liebermann, Felix, <i>Consiliatio Cnuti: eine Übertragung angelsächsischer Gesetze aus dem zwölften Jahrhundert</i> (Halle: Niemeyer, 1893)",
-   "note": "A study and text of the Consiliatio Cnuti, later printed in the <i>Gesetze</i>.",
-   "kings": [
-    "William I",
-    "Henry I",
-    "Anglo-Latin law books"
-   ],
    "sort": "liebermann, felix, consiliatio cnuti: eine übertragung angelsächsischer gesetze aus dem zwölften jahrhundert (halle: niemeyer, 1893)",
    "year": 1893
   },
@@ -192,11 +166,6 @@
    "section": "liebermann",
    "group": "other",
    "citation": "Liebermann, Felix, <i>Über Pseudo-Cnuts Constitutiones de foresta</i> (Halle: Niemeyer, 1894)",
-   "kings": [
-    "William I",
-    "Henry I",
-    "Anglo-Latin law books"
-   ],
    "sort": "liebermann, felix, über pseudo-cnuts constitutiones de foresta (halle: niemeyer, 1894)",
    "year": 1894
   },
@@ -205,12 +174,6 @@
    "section": "liebermann",
    "group": "other",
    "citation": "Liebermann, Felix, <i>Über die Leges Anglorum saeculo XIII. ineunte Londoniis collectae</i> (Halle: Niemeyer, 1894)",
-   "note": "On the London collection of laws of the early thirteenth century, cited in the Wörterbuch as “Lond”.",
-   "kings": [
-    "William I",
-    "Henry I",
-    "Anglo-Latin law books"
-   ],
    "sort": "liebermann, felix, über die leges anglorum saeculo xiii. ineunte londoniis collectae (halle: niemeyer, 1894)",
    "year": 1894
   },
@@ -219,11 +182,6 @@
    "section": "liebermann",
    "group": "other",
    "citation": "Liebermann, Felix, <i>Über die Leges Edwardi Confessoris</i> (Halle: Niemeyer, 1896)",
-   "kings": [
-    "William I",
-    "Henry I",
-    "Anglo-Latin law books"
-   ],
    "sort": "liebermann, felix, über die leges edwardi confessoris (halle: niemeyer, 1896)",
    "year": 1896
   },
@@ -232,12 +190,6 @@
    "section": "liebermann",
    "group": "other",
    "citation": "Liebermann, Felix, <i>Über das englische Rechtsbuch Leges Henrici</i> (Halle: Niemeyer, 1901)",
-   "url": "https://archive.org/details/ueberdasenglisch00liebuoft",
-   "kings": [
-    "William I",
-    "Henry I",
-    "Anglo-Latin law books"
-   ],
    "sort": "liebermann, felix, über das englische rechtsbuch leges henrici (halle: niemeyer, 1901)",
    "year": 1901
   },
@@ -246,8 +198,6 @@
    "section": "liebermann",
    "group": "other",
    "citation": "Liebermann, Felix, <i>The National Assembly in the Anglo-Saxon Period</i> (Halle: Niemeyer, 1913)",
-   "note": "Liebermann’s study, in English, of the witan and royal assemblies.",
-   "url": "https://archive.org/details/nationalassembly00liebuoft",
    "sort": "liebermann, felix, the national assembly in the anglo-saxon period (halle: niemeyer, 1913)",
    "year": 1913
   },
@@ -256,10 +206,6 @@
    "section": "liebermann",
    "group": "other",
    "citation": "Liebermann, Felix, ‘King Alfred and Mosaic Law’, <i>Transactions of the Jewish Historical Society</i>, 6 (1908–10), 21–31",
-   "note": "Liebermann’s study, in English, of the Mosaic law in the prologue to Alfred’s laws.",
-   "kings": [
-    "Alfred the Great"
-   ],
    "sort": "liebermann, felix, ‘king alfred and mosaic law’, transactions of the jewish historical society, 6 (1908–10), 21–31",
    "year": 1908
   },
@@ -268,7 +214,6 @@
    "section": "liebermann",
    "group": "about",
    "citation": "Jurasinski, Stefan, Lisi Oliver, and Andrew Rabin, eds, <i>English Law before Magna Carta: Felix Liebermann and ‘Die Gesetze der Angelsachsen’</i>, Medieval Law and Its Practice, 8 (Leiden: Brill, 2010)",
-   "note": "Essays on Liebermann, his edition, and the texts he edited.",
    "sort": "jurasinski, stefan, lisi oliver, and andrew rabin, eds, english law before magna carta: felix liebermann and ‘die gesetze der angelsachsen’, medieval law and its practice, 8 (leiden: brill, 2010)",
    "year": 2010
   },
@@ -277,7 +222,6 @@
    "section": "liebermann",
    "group": "about",
    "citation": "Dammery, Richard, ‘Editing the Anglo-Saxon Laws: Felix Liebermann and Beyond’, in <i>The Editing of Old English: Papers from the 1990 Manchester Conference</i>, ed. by Donald G. Scragg and Paul E. Szarmach (Cambridge: Brewer, 1994), pp. 251–61",
-   "note": "On Liebermann’s editorial method and what a new edition of the laws would need to do.",
    "sort": "dammery, richard, ‘editing the anglo-saxon laws: felix liebermann and beyond’, in the editing of old english: papers from the 1990 manchester conference, ed. by donald g. scragg and paul e. szarmach (cambridge: brewer, 1994), pp. 251–61",
    "year": 1994
   },
@@ -286,12 +230,6 @@
    "section": "liebermann",
    "group": "about",
    "citation": "Gobbitt, Thomas, ‘I Æthelred in Felix Liebermann’s <i>Die Gesetze der Angelsachsen</i> and in the <i>Mise-en-page</i> of Cambridge, Corpus Christi College 383’, in <i>English Law before Magna Carta: Felix Liebermann and ‘Die Gesetze der Angelsachsen’</i>, ed. by Stefan Jurasinski, Lisi Oliver and Andrew Rabin, Medieval Law and Its Practice, 8 (Leiden: Brill, 2010), pp. 119–35",
-   "kings": [
-    "Æthelred II"
-   ],
-   "codes": [
-    "I Atr"
-   ],
    "sort": "gobbitt, thomas, ‘i æthelred in felix liebermann’s die gesetze der angelsachsen and in the mise-en-page of cambridge, corpus christi college 383’, in english law before magna carta: felix liebermann and ‘die gesetze der angelsachsen’, ed. by stefan jurasinski, lisi oliver and andrew rabin, medieval law and its practice, 8 (leiden: brill, 2010), pp. 119–35",
    "year": 2010
   },
@@ -308,9 +246,6 @@
    "section": "liebermann",
    "group": "about",
    "citation": "Richards, Mary P., ‘I–II Cnut: Wulfstan’s <i>Summa</i>?’, in <i>English Law before Magna Carta: Felix Liebermann and ‘Die Gesetze der Angelsachsen’</i>, ed. by Stefan Jurasinski, Lisi Oliver, and Andrew Rabin, Medieval Law and Its Practice, 8 (Leiden: Brill, 2010), pp. 137–56",
-   "kings": [
-    "Cnut"
-   ],
    "sort": "richards, mary p., ‘i–ii cnut: wulfstan’s summa?’, in english law before magna carta: felix liebermann and ‘die gesetze der angelsachsen’, ed. by stefan jurasinski, lisi oliver, and andrew rabin, medieval law and its practice, 8 (leiden: brill, 2010), pp. 137–56",
    "year": 2010
   },
@@ -319,11 +254,6 @@
    "section": "liebermann",
    "group": "about",
    "citation": "Sharpe, Richard, ‘The Dating of <i>Quadripartitus</i> Again’, in <i>English Law before Magna Carta: Felix Liebermann and ‘Die Gesetze der Angelsachsen’</i>, ed. by Stefan Jurasinski, Lisi Oliver and Andrew Rabin, Medieval Law and Its Practice, 8 (Leiden: Brill, 2010), pp. 81–93",
-   "kings": [
-    "William I",
-    "Henry I",
-    "Anglo-Latin law books"
-   ],
    "sort": "sharpe, richard, ‘the dating of quadripartitus again’, in english law before magna carta: felix liebermann and ‘die gesetze der angelsachsen’, ed. by stefan jurasinski, lisi oliver and andrew rabin, medieval law and its practice, 8 (leiden: brill, 2010), pp. 81–93",
    "year": 2010
   },
@@ -332,11 +262,6 @@
    "section": "editions",
    "group": "used",
    "citation": "<i>The Laws of the Earliest English Kings</i>, ed. and trans. by Frederick Levi Attenborough (Cambridge: Cambridge University Press, 1922)",
-   "note": "Old English texts (following Liebermann) with facing English translation and notes, from Æthelberht to Æthelstan.",
-   "url": "https://archive.org/details/lawsofearliesten00grea",
-   "uses": [
-    "attenborough"
-   ],
    "kind": "edition",
    "sort": "laws of the earliest english kings, ed. and trans. by frederick levi attenborough (cambridge: cambridge university press, 1922)",
    "year": 1922
@@ -346,10 +271,6 @@
    "section": "editions",
    "group": "used",
    "citation": "<i>The Laws of the Kings of England from Edmund to Henry I</i>, ed. and trans. by Agnes Jane Robertson (Cambridge: Cambridge University Press, 1925)",
-   "note": "The sequel to Attenborough: texts with facing English translation and notes, from Edmund to Henry I.",
-   "uses": [
-    "robertson"
-   ],
    "kind": "edition",
    "sort": "laws of the kings of england from edmund to henry i, ed. and trans. by agnes jane robertson (cambridge: cambridge university press, 1925)",
    "year": 1925
@@ -359,10 +280,6 @@
    "section": "editions",
    "group": "used",
    "citation": "<i>English Historical Documents</i>, I: <i>c. 500–1042</i>, ed. by Dorothy Whitelock, 2nd edn (London: Eyre Methuen, 1979)",
-   "note": "Translations of the principal laws and of many other sources (charters, chronicles, letters), each with a short introduction. The clause pages cite the 2nd edition; page numbers are those of the Taylor &amp; Francis e-Library edition (2007).",
-   "uses": [
-    "whitelock"
-   ],
    "kind": "translation",
    "sort": "english historical documents, i: c. 500–1042, ed. by dorothy whitelock, 2nd edn (london: eyre methuen, 1979)",
    "year": 1979
@@ -372,15 +289,6 @@
    "section": "editions",
    "group": "used",
    "citation": "<i>The Beginnings of English Law</i>, ed. and trans. by Lisi Oliver (Toronto: University of Toronto Press, 2002)",
-   "note": "A new edition of the Kentish laws of Æthelberht, Hlothhere and Eadric, and Wihtred, with translation and commentary.",
-   "kings": [
-    "Æthelberht of Kent",
-    "Hlothhere and Eadric of Kent",
-    "Wihtred of Kent"
-   ],
-   "uses": [
-    "oliver"
-   ],
    "kind": "edition",
    "sort": "beginnings of english law, ed. and trans. by lisi oliver (toronto: university of toronto press, 2002)",
    "year": 2002
@@ -390,14 +298,6 @@
    "section": "editions",
    "group": "used",
    "citation": "<i>The Laws of Alfred: The Domboc and the Making of Anglo-Saxon Law</i>, ed. and trans. by Stefan Jurasinski and Lisi Oliver (Cambridge: Cambridge University Press, 2021)",
-   "note": "A new edition and translation of Alfred’s Domboc, including the laws of Ine as transmitted with it, with chapters on its manuscripts, sources and law.",
-   "kings": [
-    "Alfred the Great",
-    "Ine of Wessex"
-   ],
-   "uses": [
-    "jurasinski-and-oliver"
-   ],
    "kind": "edition",
    "sort": "laws of alfred: the domboc and the making of anglo-saxon law, ed. and trans. by stefan jurasinski and lisi oliver (cambridge: cambridge university press, 2021)",
    "year": 2021
@@ -407,26 +307,6 @@
    "section": "editions",
    "group": "used",
    "citation": "Wulfstan II of York, <i>Old English Legal Writings</i>, ed. and trans. by Andrew Rabin, DOML, 66 (Cambridge, MA: Harvard University Press, 2020)",
-   "note": "The laws and other legal texts drafted by Archbishop Wulfstan for Æthelred II and Cnut, with facing translation.",
-   "kings": [
-    "Æthelred II",
-    "Cnut"
-   ],
-   "codes": [
-    "EGu",
-    "Northu",
-    "Geþyncðo",
-    "Norðleoda",
-    "Mirce",
-    "Að",
-    "Had",
-    "Grið",
-    "Episc",
-    "Iudex"
-   ],
-   "uses": [
-    "rabin-doml"
-   ],
    "kind": "edition",
    "sort": "wulfstan ii of york, old english legal writings, ed. and trans. by andrew rabin, doml, 66 (cambridge, ma: harvard university press, 2020)",
    "year": 2020
@@ -436,14 +316,6 @@
    "section": "editions",
    "group": "used",
    "citation": "Wulfstan II of York, <i>The Political Writings of Archbishop Wulfstan of York</i>, trans. and ed. by Andrew Rabin (Manchester: Manchester University Press, 2015)",
-   "note": "Translations, with an introduction, of Wulfstan’s laws, homilies and the Institutes of Polity.",
-   "kings": [
-    "Æthelred II",
-    "Cnut"
-   ],
-   "uses": [
-    "rabin"
-   ],
    "kind": "translation",
    "sort": "wulfstan ii of york, the political writings of archbishop wulfstan of york, trans. and ed. by andrew rabin (manchester: manchester university press, 2015)",
    "year": 2015
@@ -453,16 +325,6 @@
    "section": "editions",
    "group": "used",
    "citation": "Kennedy, Alan, ‘Cnut’s Law Code of 1018’, <i>ASE</i>, 11 (1983), 57–81",
-   "note": "An edition, translation and discussion of Cnut’s code issued at Oxford in 1018 (Cn 1018), which survives in a single manuscript.",
-   "kings": [
-    "Cnut"
-   ],
-   "codes": [
-    "Cn 1018"
-   ],
-   "uses": [
-    "kennedy"
-   ],
    "kind": "edition",
    "sort": "kennedy, alan, ‘cnut’s law code of 1018’, ase, 11 (1983), 57–81",
    "year": 1983
@@ -472,15 +334,6 @@
    "section": "editions",
    "group": "used",
    "citation": "Gobbitt, Thom, ed., ‘<i>Rectitudines singularum personarum</i>’ and ‘<i>Gerefa</i>’, Early English Laws, &lt;<a href=\"https://earlyenglishlaws.ac.uk/\">https://earlyenglishlaws.ac.uk/</a>&gt;",
-   "note": "Online editions of the two estate-management texts on the duties of the people of an estate and of its reeve.",
-   "url": "https://earlyenglishlaws.ac.uk/",
-   "codes": [
-    "Rect",
-    "Ger"
-   ],
-   "uses": [
-    "gobbitt"
-   ],
    "kind": "edition",
    "sort": "gobbitt, thom, ed., ‘rectitudines singularum personarum’ and ‘gerefa’, early english laws, &lt;https://earlyenglishlaws.ac.uk/&gt;",
    "year": 2013
@@ -490,10 +343,6 @@
    "section": "editions",
    "group": "used",
    "citation": "English crib of Liebermann’s German translation, made for eLiebermann with Claude, a large language model (LLM) made by Anthropic (2026)",
-   "note": "A semi-literal English rendering of Liebermann’s German, to help readers with his translation; not a separate translation of the Old English, Latin or French.",
-   "uses": [
-    "claude"
-   ],
    "kind": "translation",
    "sort": "zz llm",
    "year": 2026
@@ -503,10 +352,6 @@
    "section": "editions",
    "group": "used",
    "citation": "Translations from the original OE Laws Database spreadsheet (translator not recorded)",
-   "note": "Translations kept from the original OE Laws Database, where the translator was not recorded.",
-   "uses": [
-    "unattributed"
-   ],
    "kind": "translation",
    "sort": "zz unattributed"
   },
@@ -515,11 +360,6 @@
    "section": "studies",
    "group": "used",
    "citation": "Wormald, Patrick, <i>The Making of English Law: King Alfred to the Twelfth Century</i> (Oxford: Blackwell, 1999)",
-   "note": "The fundamental modern study of the Anglo-Saxon laws: their manuscripts, their makers, and what written law meant to the kings who issued it. The clause pages cite its dates and discussions of each code. Only this first volume appeared in Wormald’s lifetime.",
-   "uses": [
-    "wormald-mel",
-    "wormald"
-   ],
    "kind": "study",
    "sort": "wormald, patrick, the making of english law: king alfred to the twelfth century (oxford: blackwell, 1999)",
    "year": 1999
@@ -529,10 +369,6 @@
    "section": "studies",
    "group": "used",
    "citation": "Wormald, Patrick, <i>Papers Preparatory to</i> The Making of English Law: King Alfred to the Twelfth Century, ed. by Stephen Baxter and John Hudson, II: <i>From God’s Law to Common Law</i> (London: University of London, 2014)",
-   "note": "Draft chapters for the unfinished second volume of <i>The Making of English Law</i>, edited after Wormald’s death (2004) and published online.",
-   "uses": [
-    "wormald-ppmel"
-   ],
    "kind": "study",
    "sort": "wormald, patrick, papers preparatory to the making of english law: king alfred to the twelfth century, ed. by stephen baxter and john hudson, ii: from god’s law to common law (london: university of london, 2014)",
    "year": 2014
@@ -542,7 +378,6 @@
    "section": "further",
    "group": "general",
    "citation": "Godden, Malcolm, ‘Apocalypse and Invasion in Late Anglo-Saxon England’, in <i>From Anglo-Saxon to Early Middle English: Studies Presented to E. G. Stanley</i>, ed. by Malcolm Godden, Douglas Gray, and Terry Hoad (Oxford: Clarendon Press, 1994), pp. 130–62",
-   "note": "The classic history of English law to the accession of Edward I (1272); its opening chapters deal with the Anglo-Saxon period.",
    "sort": "godden, malcolm, ‘apocalypse and invasion in late anglo-saxon england’, in from anglo-saxon to early middle english: studies presented to e. g. stanley, ed. by malcolm godden, douglas gray, and terry hoad (oxford: clarendon press, 1994), pp. 130–62",
    "year": 1994
   },
@@ -559,7 +394,6 @@
    "section": "further",
    "group": "general",
    "citation": "Maitland, Frederic William, <i>Why the History of English Law Is Not Written: An Inaugural Lecture Delivered in the Arts School at Cambridge on 13 October 1888</i> (London: C. J. Clay &amp; Sons, 1888)",
-   "note": "Maitland’s Cambridge inaugural lecture on the state of English legal history.",
    "sort": "maitland, frederic william, why the history of english law is not written: an inaugural lecture delivered in the arts school at cambridge on 13 october 1888 (london: c. j. clay &amp; sons, 1888)",
    "year": 1888
   },
@@ -568,7 +402,6 @@
    "section": "further",
    "group": "general",
    "citation": "Maitland, Frederic William, <i>Domesday Book and Beyond: Three Essays in the Early History of England</i> (Cambridge: Cambridge University Press, 1897)",
-   "note": "Three essays working back from Domesday Book to the land law and society of the Anglo-Saxon period, with much on bookland and the hide.",
    "sort": "maitland, frederic william, domesday book and beyond: three essays in the early history of england (cambridge: cambridge university press, 1897)",
    "year": 1897
   },
@@ -577,7 +410,6 @@
    "section": "further",
    "group": "general",
    "citation": "Kemble, John Mitchell, <i>The Saxons in England: A History of the English Commonwealth Till the Period of the Norman Conquest</i>, 2 vols (London: Longman, 1849)",
-   "note": "An early history of Anglo-Saxon institutions, drawing heavily on the laws and charters.",
    "sort": "kemble, john mitchell, the saxons in england: a history of the english commonwealth till the period of the norman conquest, 2 vols (london: longman, 1849)",
    "year": 1849
   },
@@ -586,7 +418,6 @@
    "section": "further",
    "group": "general",
    "citation": "Richardson, Henry Gerald, and George Osborne Sayles, <i>Law and Legislation from Æthelberht to Magna Carta</i> (Edinburgh: Edinburgh University Press, 1966)",
-   "note": "A survey of English legislation from the first written laws to Magna Carta.",
    "sort": "richardson, henry gerald, and george osborne sayles, law and legislation from æthelberht to magna carta (edinburgh: edinburgh university press, 1966)",
    "year": 1966
   },
@@ -595,7 +426,6 @@
    "section": "further",
    "group": "general",
    "citation": "Hudson, John, <i>The Oxford History of the Laws of England, Volume II: 871–1216</i> (Oxford: Oxford University Press, 2012)",
-   "note": "The standard modern account of English law from Alfred to 1216; the first part covers the Anglo-Saxon period in detail.",
    "sort": "hudson, john, the oxford history of the laws of england, volume ii: 871–1216 (oxford: oxford university press, 2012)",
    "year": 2012
   },
@@ -604,12 +434,6 @@
    "section": "further",
    "group": "general",
    "citation": "Hudson, John, <i>The Formation of English Common Law: Law and Society in England from the Norman Conquest to Magna Carta</i>, 2nd edn (New York: Routledge, 2018)",
-   "note": "An introduction to law and society from the Norman Conquest to Magna Carta.",
-   "kings": [
-    "William I",
-    "Henry I",
-    "Anglo-Latin law books"
-   ],
    "sort": "hudson, john, the formation of english common law: law and society in england from the norman conquest to magna carta, 2nd edn (new york: routledge, 2018)",
    "year": 2018
   },
@@ -626,7 +450,6 @@
    "section": "further",
    "group": "general",
    "citation": "Lambert, Tom, <i>Law and Order in Anglo-Saxon England</i> (Oxford: Oxford University Press, 2017)",
-   "note": "A study of legal practice and of ideas of order from the seventh century to the Conquest, reading the law codes alongside other evidence.",
    "sort": "lambert, tom, law and order in anglo-saxon england (oxford: oxford university press, 2017)",
    "year": 2017
   },
@@ -635,12 +458,6 @@
    "section": "further",
    "group": "general",
    "citation": "Oliver, Lisi, <i>The Body Legal in Barbarian Law</i> (Toronto: University of Toronto Press, 2011)",
-   "note": "Compensation for bodily injury compared across the early medieval (“barbarian”) law codes, the English ones among them.",
-   "kings": [
-    "Æthelberht of Kent",
-    "Hlothhere and Eadric of Kent",
-    "Wihtred of Kent"
-   ],
    "sort": "oliver, lisi, the body legal in barbarian law (toronto: university of toronto press, 2011)",
    "year": 2011
   },
@@ -681,7 +498,6 @@
    "section": "further",
    "group": "general",
    "citation": "Wormald, Patrick, <i>Legal Culture in the Early Medieval West: Law as Text, Image and Experience</i> (London: Hambledon, 1999)",
-   "note": "Wormald’s collected essays on early medieval law, including several of those listed here.",
    "sort": "wormald, patrick, legal culture in the early medieval west: law as text, image and experience (london: hambledon, 1999)",
    "year": 1999
   },
@@ -690,7 +506,6 @@
    "section": "further",
    "group": "general",
    "citation": "Wormald, Patrick, ‘<i>Lex scripta</i> and <i>verbum regis</i>: Legislation and Germanic Kingship from Euric to Cnut’, in <i>Legal Culture in the Early Medieval West: Law as Text, Image and Experience</i> (London: Hambledon, 1999), pp. 1–43 [First published in <i>Early Medieval Kingship</i>, ed. by P. H. Sawyer and I. N. Wood (Leeds: The Editors, 1977), pp. 105–38]",
-   "note": "A comparison of written law across the early medieval West, arguing that law-making in writing expressed royal ideology more than practical need.",
    "sort": "wormald, patrick, ‘lex scripta and verbum regis: legislation and germanic kingship from euric to cnut’, in legal culture in the early medieval west: law as text, image and experience (london: hambledon, 1999), pp. 1–43 [first published in early medieval kingship, ed. by p. h. sawyer and i. n. wood (leeds: the editors, 1977), pp. 105–38]",
    "year": 1977
   },
@@ -699,11 +514,6 @@
    "section": "further",
    "group": "general",
    "citation": "Wormald, Patrick, ‘“Inter Cetera Bona Genti Suae”: Law-Making and Peace-Keeping in the Earliest English Kingdoms’, in <i>Legal Culture in the Early Medieval West: Law as Text, Image and Experience</i> (London: Hambledon, 1999), pp. 179–99 [First published in Settimane di studio del Centro italiano di studi sull’alto medioevo, 42 (Spoleto, 1995), pp. 963–96]",
-   "kings": [
-    "Æthelberht of Kent",
-    "Hlothhere and Eadric of Kent",
-    "Wihtred of Kent"
-   ],
    "sort": "wormald, patrick, ‘“inter cetera bona genti suae”: law-making and peace-keeping in the earliest english kingdoms’, in legal culture in the early medieval west: law as text, image and experience (london: hambledon, 1999), pp. 179–99 [first published in settimane di studio del centro italiano di studi sull’alto medioevo, 42 (spoleto, 1995), pp. 963–96]",
    "year": 1995
   },
@@ -752,7 +562,6 @@
    "section": "further",
    "group": "general",
    "citation": "Keynes, Simon, ‘Royal Government and the Written Word in Late Anglo-Saxon England’, in <i>The Uses of Literacy in Early Mediaeval Europe</i>, ed. by Rosamond McKitterick (Cambridge: Cambridge University Press, 1990), pp. 226–57",
-   "note": "On the use of writing in late Anglo-Saxon royal government, including the laws.",
    "sort": "keynes, simon, ‘royal government and the written word in late anglo-saxon england’, in the uses of literacy in early mediaeval europe, ed. by rosamond mckitterick (cambridge: cambridge university press, 1990), pp. 226–57",
    "year": 1990
   },
@@ -761,7 +570,6 @@
    "section": "further",
    "group": "general",
    "citation": "Campbell, James, <i>The Anglo-Saxon State</i>, 2nd edn (London: Hambledon, 2001)",
-   "note": "Essays arguing for a strong and sophisticated late Anglo-Saxon state.",
    "sort": "campbell, james, the anglo-saxon state, 2nd edn (london: hambledon, 2001)",
    "year": 2001
   },
@@ -786,7 +594,6 @@
    "section": "further",
    "group": "general",
    "citation": "Fleming, Robin, <i>Domesday Book and the Law: Society and Legal Custom in Early Medieval England</i> (Cambridge: Cambridge University Press, 1998)",
-   "note": "Collects and translates the entries in Domesday Book that record legal disputes and customs.",
    "sort": "fleming, robin, domesday book and the law: society and legal custom in early medieval england (cambridge: cambridge university press, 1998)",
    "year": 1998
   },
@@ -811,14 +618,6 @@
    "section": "further",
    "group": "general",
    "citation": "Roach, Levi, <i>Kingship and Consent in Anglo-Saxon England, 871–978</i> (Cambridge: Cambridge University Press, 2013)",
-   "note": "Royal assemblies and their part in government and law-making, 871–978.",
-   "kings": [
-    "Alfred the Great",
-    "Edward the Elder",
-    "Æthelstan",
-    "Edmund I",
-    "Edgar"
-   ],
    "sort": "roach, levi, kingship and consent in anglo-saxon england, 871–978 (cambridge: cambridge university press, 2013)",
    "year": 2013
   },
@@ -859,7 +658,6 @@
    "section": "further",
    "group": "general",
    "citation": "Grimm, Jacob, <i>Deutsche Rechtsalterthümer</i> (Göttingen: Dieterich, 1828)",
-   "note": "Jacob Grimm’s great collection of Germanic legal antiquities, a standard reference in Liebermann’s day.",
    "sort": "grimm, jacob, deutsche rechtsalterthümer (göttingen: dieterich, 1828)",
    "year": 1828
   },
@@ -876,9 +674,6 @@
    "section": "further",
    "group": "general",
    "citation": "Discenza, Nicole G., and Paul E. Szarmach, eds, <i>A Companion to Alfred the Great</i>, Brill’s Companions to the Christian Tradition, 58 (Leiden: Brill, 2015)",
-   "kings": [
-    "Alfred the Great"
-   ],
    "sort": "discenza, nicole g., and paul e. szarmach, eds, a companion to alfred the great, brill’s companions to the christian tradition, 58 (leiden: brill, 2015)",
    "year": 2015
   },
@@ -927,7 +722,6 @@
    "section": "further",
    "group": "crime",
    "citation": "Hyams, Paul R., <i>Rancor and Reconciliation in Medieval England</i> (Ithaca, NY: Cornell University Press, 2003)",
-   "note": "Feud, anger and the settlement of disputes in England from the late Anglo-Saxon period to the thirteenth century.",
    "sort": "hyams, paul r., rancor and reconciliation in medieval england (ithaca, ny: cornell university press, 2003)",
    "year": 2003
   },
@@ -936,7 +730,6 @@
    "section": "further",
    "group": "crime",
    "citation": "Niles, John D., ‘The Myth of the Feud in Anglo-Saxon England’, <i>JEGP</i>, 114 (2015), 163–200",
-   "note": "Questions how far “feud” describes Anglo-Saxon practice.",
    "sort": "niles, john d., ‘the myth of the feud in anglo-saxon england’, jegp, 114 (2015), 163–200",
    "year": 2015
   },
@@ -961,12 +754,6 @@
    "section": "further",
    "group": "crime",
    "citation": "Fruscione, Daniela, ‘Beginnings and Legitimation of Punishment in Early Anglo-Saxon Legislation from the Seventh to the Ninth Century’, in <i>Capital and Corporal Punishment in Anglo-Saxon England</i>, ed. by Jay Paul Gates and Nicole Marafioti (Woodbridge: Boydell, 2014), pp. 34–47",
-   "kings": [
-    "Æthelberht of Kent",
-    "Hlothhere and Eadric of Kent",
-    "Wihtred of Kent",
-    "Ine of Wessex"
-   ],
    "sort": "fruscione, daniela, ‘beginnings and legitimation of punishment in early anglo-saxon legislation from the seventh to the ninth century’, in capital and corporal punishment in anglo-saxon england, ed. by jay paul gates and nicole marafioti (woodbridge: boydell, 2014), pp. 34–47",
    "year": 2014
   },
@@ -999,7 +786,6 @@
    "section": "further",
    "group": "crime",
    "citation": "Jurasinski, Stefan, <i>The Old English Penitentials and Anglo-Saxon Law</i> (Cambridge: Cambridge University Press, 2015)",
-   "note": "How the Old English penitentials drew on, and fed into, the secular laws.",
    "sort": "jurasinski, stefan, the old english penitentials and anglo-saxon law (cambridge: cambridge university press, 2015)",
    "year": 2015
   },
@@ -1024,9 +810,6 @@
    "section": "further",
    "group": "crime",
    "citation": "Whitman, James Q., <i>The Origins of Reasonable Doubt: Theological Roots of the Criminal Trial</i> (New Haven: Yale University Press, 2008)",
-   "codes": [
-    "Ordal"
-   ],
    "sort": "whitman, james q., the origins of reasonable doubt: theological roots of the criminal trial (new haven: yale university press, 2008)",
    "year": 2008
   },
@@ -1035,7 +818,6 @@
    "section": "further",
    "group": "crime",
    "citation": "Boethius, <i>Philosophiae consolatio</i>, ed. by Ludwig Bieler, 2nd edn, CCSL, 94 (Turnhout: Brepols, 1984)",
-   "note": "A nineteenth-century edition of the penitentials of the Western Church.",
    "kind": "edition",
    "sort": "boethius, philosophiae consolatio, ed. by ludwig bieler, 2nd edn, ccsl, 94 (turnhout: brepols, 1984)",
    "year": 1984
@@ -1045,12 +827,6 @@
    "section": "further",
    "group": "kent",
    "citation": "Brooks, Nicholas, ‘The Laws of King Æthelberht of Kent: Preservation, Content, and Composition’, in <i>Textus Roffensis: Law, Language, and Libraries in Early Medieval England</i>, ed. by Bruce O’Brien and Barbara Bombi, SEM, 30 (Turnhout: Brepols, 2015), pp. 105–36",
-   "note": "On how Æthelberht’s laws were preserved, what they contain, and how they were composed.",
-   "kings": [
-    "Æthelberht of Kent",
-    "Hlothhere and Eadric of Kent",
-    "Wihtred of Kent"
-   ],
    "sort": "brooks, nicholas, ‘the laws of king æthelberht of kent: preservation, content, and composition’, in textus roffensis: law, language, and libraries in early medieval england, ed. by bruce o’brien and barbara bombi, sem, 30 (turnhout: brepols, 2015), pp. 105–36",
    "year": 2015
   },
@@ -1059,12 +835,6 @@
    "section": "further",
    "group": "kent",
    "citation": "Jurasinski, Stefan, ‘Royal Law in Wessex and Kent at the Close of the Seventh Century’, in <i>Languages of the Law in Early Medieval England: Essays in Memory of Lisi Oliver</i>, ed. by Stefan Jurasinski and Andrew Rabin, Mediaevalia Groningana New Series, 22 (Leuven: Peeters, 2019), pp. 25–44",
-   "kings": [
-    "Æthelberht of Kent",
-    "Hlothhere and Eadric of Kent",
-    "Wihtred of Kent",
-    "Ine of Wessex"
-   ],
    "sort": "jurasinski, stefan, ‘royal law in wessex and kent at the close of the seventh century’, in languages of the law in early medieval england: essays in memory of lisi oliver, ed. by stefan jurasinski and andrew rabin, mediaevalia groningana new series, 22 (leuven: peeters, 2019), pp. 25–44",
    "year": 2019
   },
@@ -1073,10 +843,6 @@
    "section": "further",
    "group": "kent",
    "citation": "Ivarsen, Ingrid, ‘King Ine (688–726) and the Writing of English Law in Latin’, <i>EHR</i>, 137 (2022), 1–46",
-   "note": "Argues that Ine’s laws were first written in Latin.",
-   "kings": [
-    "Ine of Wessex"
-   ],
    "sort": "ivarsen, ingrid, ‘king ine (688–726) and the writing of english law in latin’, ehr, 137 (2022), 1–46",
    "year": 2022
   },
@@ -1085,12 +851,6 @@
    "section": "further",
    "group": "kent",
    "citation": "Ivarsen, Ingrid, ‘A Vernacular Genre? Latin and the Early English Laws’, <i>Journal of Medieval History</i>, 47 (2021), 497–508",
-   "kings": [
-    "Æthelberht of Kent",
-    "Hlothhere and Eadric of Kent",
-    "Wihtred of Kent",
-    "Ine of Wessex"
-   ],
    "sort": "ivarsen, ingrid, ‘a vernacular genre? latin and the early english laws’, journal of medieval history, 47 (2021), 497–508",
    "year": 2021
   },
@@ -1099,11 +859,6 @@
    "section": "further",
    "group": "kent",
    "citation": "Rauer, Christine, ‘The Earliest English Prose’, <i>Journal of Medieval History</i>, 47 (2021), 485–96",
-   "kings": [
-    "Æthelberht of Kent",
-    "Hlothhere and Eadric of Kent",
-    "Wihtred of Kent"
-   ],
    "sort": "rauer, christine, ‘the earliest english prose’, journal of medieval history, 47 (2021), 485–96",
    "year": 2021
   },
@@ -1112,12 +867,6 @@
    "section": "further",
    "group": "kent",
    "citation": "Fruscione, Daniela, ‘<i>Riht</i> in Earlier Anglo-Saxon Legislation: A Semasiological Approach’, <i>Historical Research</i>, 86 (2013), 498–504",
-   "kings": [
-    "Æthelberht of Kent",
-    "Hlothhere and Eadric of Kent",
-    "Wihtred of Kent",
-    "Ine of Wessex"
-   ],
    "sort": "fruscione, daniela, ‘riht in earlier anglo-saxon legislation: a semasiological approach’, historical research, 86 (2013), 498–504",
    "year": 2013
   },
@@ -1126,11 +875,6 @@
    "section": "further",
    "group": "kent",
    "citation": "Adair, Anya, ‘Narratives of Authority: The Earliest Old English Law-Code Prefaces’, <i>Law and Humanities</i>, 15 (2021), 4–24",
-   "kings": [
-    "Æthelberht of Kent",
-    "Hlothhere and Eadric of Kent",
-    "Wihtred of Kent"
-   ],
    "sort": "adair, anya, ‘narratives of authority: the earliest old english law-code prefaces’, law and humanities, 15 (2021), 4–24",
    "year": 2021
   },
@@ -1139,13 +883,6 @@
    "section": "further",
    "group": "kent",
    "citation": "Rabin, Andrew, ‘The Reception of Kentish Law in the Eleventh Century: Archbishop Wulfstan as Legal Historian’, in <i>Languages of the Law in Early Medieval England: Essays in Memory of Lisi Oliver</i>, ed. by Stefan Jurasinski and Andrew Rabin, Mediaevalia Groningana New Series, 22 (Leuven: Peeters, 2019), pp. 225–39",
-   "kings": [
-    "Æthelberht of Kent",
-    "Hlothhere and Eadric of Kent",
-    "Wihtred of Kent",
-    "Æthelred II",
-    "Cnut"
-   ],
    "sort": "rabin, andrew, ‘the reception of kentish law in the eleventh century: archbishop wulfstan as legal historian’, in languages of the law in early medieval england: essays in memory of lisi oliver, ed. by stefan jurasinski and andrew rabin, mediaevalia groningana new series, 22 (leuven: peeters, 2019), pp. 225–39",
    "year": 2019
   },
@@ -1154,11 +891,6 @@
    "section": "further",
    "group": "kent",
    "citation": "Yorke, Barbara, ‘Joint Kingship in Kent c. 560 to 785’, <i>Archaeologia Cantiana</i>, 99 (1983), 1–19",
-   "kings": [
-    "Æthelberht of Kent",
-    "Hlothhere and Eadric of Kent",
-    "Wihtred of Kent"
-   ],
    "sort": "yorke, barbara, ‘joint kingship in kent c. 560 to 785’, archaeologia cantiana, 99 (1983), 1–19",
    "year": 1983
   },
@@ -1167,11 +899,6 @@
    "section": "further",
    "group": "kent",
    "citation": "Brookes, Stuart, and Sue Harrington, <i>The Kingdom and People of Kent, AD 400–1066</i> (Stroud: The History Press, 2010)",
-   "kings": [
-    "Æthelberht of Kent",
-    "Hlothhere and Eadric of Kent",
-    "Wihtred of Kent"
-   ],
    "sort": "brookes, stuart, and sue harrington, the kingdom and people of kent, ad 400–1066 (stroud: the history press, 2010)",
    "year": 2010
   },
@@ -1180,10 +907,6 @@
    "section": "further",
    "group": "alfred",
    "citation": "Pratt, David, <i>The Political Thought of King Alfred the Great</i> (Cambridge: Cambridge University Press, 2007)",
-   "note": "A study of Alfred’s ideas of kingship and government across his writings and his laws.",
-   "kings": [
-    "Alfred the Great"
-   ],
    "sort": "pratt, david, the political thought of king alfred the great (cambridge: cambridge university press, 2007)",
    "year": 2007
   },
@@ -1192,11 +915,6 @@
    "section": "further",
    "group": "alfred",
    "citation": "Richards, Mary P., ‘The Laws of Alfred and Ine’, in <i>A Companion to Alfred the Great</i>, ed. by Nicole G. Discenza and Paul E. Szarmach, Brill’s Companions to the Christian Tradition, 58 (Leiden: Brill, 2015), pp. 282–309",
-   "note": "An introduction to the Domboc and to Ine’s laws.",
-   "kings": [
-    "Alfred the Great",
-    "Ine of Wessex"
-   ],
    "sort": "richards, mary p., ‘the laws of alfred and ine’, in a companion to alfred the great, ed. by nicole g. discenza and paul e. szarmach, brill’s companions to the christian tradition, 58 (leiden: brill, 2015), pp. 282–309",
    "year": 2015
   },
@@ -1205,9 +923,6 @@
    "section": "further",
    "group": "alfred",
    "citation": "Oliver, Lisi, ‘Who Wrote Alfred’s Laws?’, in <i>Textus Roffensis: Law, Language, and Libraries in Early Medieval England</i>, ed. by Bruce O’Brien and Barbara Bombi, SEM, 30 (Turnhout: Brepols, 2015), pp. 231–54",
-   "kings": [
-    "Alfred the Great"
-   ],
    "sort": "oliver, lisi, ‘who wrote alfred’s laws?’, in textus roffensis: law, language, and libraries in early medieval england, ed. by bruce o’brien and barbara bombi, sem, 30 (turnhout: brepols, 2015), pp. 231–54",
    "year": 2015
   },
@@ -1216,9 +931,6 @@
    "section": "further",
    "group": "alfred",
    "citation": "Stanley, Eric Gerald, ‘On the Laws of King Alfred: The End of the Preface and the Beginning of the Laws’, in <i>Alfred the Wise: Studies in Honour of Janet Bately on the Occasion of Her Sixty-Fifth Birthday</i>, ed. by Jane Roberts, Janet L. Nelson and Malcolm Godden (Cambridge: Brewer, 1997), pp. 211–21",
-   "kings": [
-    "Alfred the Great"
-   ],
    "sort": "stanley, eric gerald, ‘on the laws of king alfred: the end of the preface and the beginning of the laws’, in alfred the wise: studies in honour of janet bately on the occasion of her sixty-fifth birthday, ed. by jane roberts, janet l. nelson and malcolm godden (cambridge: brewer, 1997), pp. 211–21",
    "year": 1997
   },
@@ -1227,9 +939,6 @@
    "section": "further",
    "group": "alfred",
    "citation": "Stanley, Eric Gerald, ‘King Alfred’s Prefaces’, <i>RES</i>, 39 (1988), 349–64",
-   "kings": [
-    "Alfred the Great"
-   ],
    "sort": "stanley, eric gerald, ‘king alfred’s prefaces’, res, 39 (1988), 349–64",
    "year": 1988
   },
@@ -1238,9 +947,6 @@
    "section": "further",
    "group": "alfred",
    "citation": "Carella, Bryan [now publishing as Kristen], ‘The Source of the Prologue to the Laws of Alfred’, <i>Peritia: Journal of the Medieval Academy of Ireland</i>, 19 (2005), 91–118",
-   "kings": [
-    "Alfred the Great"
-   ],
    "sort": "carella, bryan [now publishing as kristen], ‘the source of the prologue to the laws of alfred’, peritia: journal of the medieval academy of ireland, 19 (2005), 91–118",
    "year": 2005
   },
@@ -1249,9 +955,6 @@
    "section": "further",
    "group": "alfred",
    "citation": "Carella, Bryan [now publishing as Kristen], ‘Evidence for Hiberno-Latin Thought in the Prologue to the Laws of Alfred’, <i>Studies in Philology</i>, 108 (2011), 1–26",
-   "kings": [
-    "Alfred the Great"
-   ],
    "sort": "carella, bryan [now publishing as kristen], ‘evidence for hiberno-latin thought in the prologue to the laws of alfred’, studies in philology, 108 (2011), 1–26",
    "year": 2011
   },
@@ -1260,9 +963,6 @@
    "section": "further",
    "group": "alfred",
    "citation": "Carella, Bryan [now publishing as Kristen], ‘Asser’s Bible and the Prologue to the Laws of Alfred’, <i>Anglia</i>, 130 (2012), 195–206",
-   "kings": [
-    "Alfred the Great"
-   ],
    "sort": "carella, bryan [now publishing as kristen], ‘asser’s bible and the prologue to the laws of alfred’, anglia, 130 (2012), 195–206",
    "year": 2012
   },
@@ -1271,10 +971,6 @@
    "section": "further",
    "group": "alfred",
    "citation": "Treschow, Michael, ‘The Prologue to Alfred’s Law Code: Instruction in the Spirit of Mercy’, <i>Florilegium</i>, 13 (1994), 79–110",
-   "note": "Reads the Mosaic prologue to Alfred’s laws as instruction in the spirit of mercy.",
-   "kings": [
-    "Alfred the Great"
-   ],
    "sort": "treschow, michael, ‘the prologue to alfred’s law code: instruction in the spirit of mercy’, florilegium, 13 (1994), 79–110",
    "year": 1994
   },
@@ -1283,9 +979,6 @@
    "section": "further",
    "group": "alfred",
    "citation": "Jurasinski, Stefan, ‘Sanctuary, House-Peace, and the Traditionalism of Alfred’s Laws’, <i>The Journal of Legal History</i>, 31 (2010), 129–47",
-   "kings": [
-    "Alfred the Great"
-   ],
    "sort": "jurasinski, stefan, ‘sanctuary, house-peace, and the traditionalism of alfred’s laws’, the journal of legal history, 31 (2010), 129–47",
    "year": 2010
   },
@@ -1294,9 +987,6 @@
    "section": "further",
    "group": "alfred",
    "citation": "Jurasinski, Stefan, ‘Slavery, Learning and the Law of Marriage in Alfred’s Mosaic Prologue’, in <i>Secular Learning in Anglo-Saxon England</i>, ed. by László Sándor Chardonnens and Bryan Carella (Amsterdam: Rodopi, 2012), pp. 45–64",
-   "kings": [
-    "Alfred the Great"
-   ],
    "sort": "jurasinski, stefan, ‘slavery, learning and the law of marriage in alfred’s mosaic prologue’, in secular learning in anglo-saxon england, ed. by lászló sándor chardonnens and bryan carella (amsterdam: rodopi, 2012), pp. 45–64",
    "year": 2012
   },
@@ -1305,9 +995,6 @@
    "section": "further",
    "group": "alfred",
    "citation": "Jurasinski, Stefan, ‘Violence, Penance, and Secular Law in Alfred’s Mosaic Prologue’, <i>The Haskins Society Journal</i>, 22 (2012), 25–42",
-   "kings": [
-    "Alfred the Great"
-   ],
    "sort": "jurasinski, stefan, ‘violence, penance, and secular law in alfred’s mosaic prologue’, the haskins society journal, 22 (2012), 25–42",
    "year": 2012
   },
@@ -1316,9 +1003,6 @@
    "section": "further",
    "group": "alfred",
    "citation": "Adair, Anya, ‘A Troublesome Source: The <i>Liber ex lege Moysi</i> and the Mosaic Prologue to King Alfred’s Domboc’, <i>ANQ</i>, 35 (2022), 213–17",
-   "kings": [
-    "Alfred the Great"
-   ],
    "sort": "adair, anya, ‘a troublesome source: the liber ex lege moysi and the mosaic prologue to king alfred’s domboc’, anq, 35 (2022), 213–17",
    "year": 2022
   },
@@ -1327,9 +1011,6 @@
    "section": "further",
    "group": "alfred",
    "citation": "Frantzen, Allen J., ‘The Form and Function of the Preface in the Poetry and Prose of Alfred’s Reign’, in <i>Alfred the Great: Papers from the Eleventh-Centenary Conferences</i>, ed. by Timothy Reuter (Aldershot: Ashgate, 2003), pp. 121–36",
-   "kings": [
-    "Alfred the Great"
-   ],
    "sort": "frantzen, allen j., ‘the form and function of the preface in the poetry and prose of alfred’s reign’, in alfred the great: papers from the eleventh-centenary conferences, ed. by timothy reuter (aldershot: ashgate, 2003), pp. 121–36",
    "year": 2003
   },
@@ -1338,9 +1019,6 @@
    "section": "further",
    "group": "alfred",
    "citation": "Irvine, Susan, ‘The Alfredian Prefaces and Epilogues’, in <i>A Companion to Alfred the Great</i>, ed. by Nicole G. Discenza and Paul E. Szarmach, Brill’s Companions to the Christian Tradition, 58 (Leiden: Brill, 2015), pp. 143–70",
-   "kings": [
-    "Alfred the Great"
-   ],
    "sort": "irvine, susan, ‘the alfredian prefaces and epilogues’, in a companion to alfred the great, ed. by nicole g. discenza and paul e. szarmach, brill’s companions to the christian tradition, 58 (leiden: brill, 2015), pp. 143–70",
    "year": 2015
   },
@@ -1349,9 +1027,6 @@
    "section": "further",
    "group": "alfred",
    "citation": "Godden, Malcolm, ‘Did King Alfred Write Anything?’, <i>MÆ</i>, 76 (2007), 1–23",
-   "kings": [
-    "Alfred the Great"
-   ],
    "sort": "godden, malcolm, ‘did king alfred write anything?’, mæ, 76 (2007), 1–23",
    "year": 2007
   },
@@ -1360,9 +1035,6 @@
    "section": "further",
    "group": "alfred",
    "citation": "Pauli, Reinhold, <i>König Ælfred und seine Stelle in der Geschichte Englands</i> (Berlin: W. Hertz, 1851)",
-   "kings": [
-    "Alfred the Great"
-   ],
    "sort": "pauli, reinhold, könig ælfred und seine stelle in der geschichte englands (berlin: w. hertz, 1851)",
    "year": 1851
   },
@@ -1371,10 +1043,6 @@
    "section": "further",
    "group": "alfred",
    "citation": "<i>The Legal Code of Ælfred the Great</i>, ed. and trans. by Milton Haight Turk (Boston: Ginn and Company, 1893)",
-   "note": "An early edition of Alfred’s laws with their Mosaic prologue.",
-   "kings": [
-    "Alfred the Great"
-   ],
    "kind": "edition",
    "sort": "legal code of ælfred the great, ed. and trans. by milton haight turk (boston: ginn and company, 1893)",
    "year": 1893
@@ -1384,10 +1052,6 @@
    "section": "further",
    "group": "alfred",
    "citation": "‘The Law-Code of King Alfred the Great: A Study, Edition and Translation’, ed. by Richard Dammery, 2 vols (unpublished doctoral dissertation, University of Cambridge, 1991)",
-   "note": "An unpublished edition and study of Alfred’s laws, much cited in later work.",
-   "kings": [
-    "Alfred the Great"
-   ],
    "kind": "edition",
    "sort": "law-code of king alfred the great: a study, edition and translation’, ed. by richard dammery, 2 vols (unpublished doctoral dissertation, university of cambridge, 1991)",
    "year": 1991
@@ -1397,10 +1061,6 @@
    "section": "further",
    "group": "alfred",
    "citation": "Preston, Todd, <i>King Alfred’s Book of Laws: A Study of the Domboc and Its Influence on English Identity, with a Complete Translation</i> (Jefferson, NC: McFarland, 2012)",
-   "note": "A study of the Domboc and its later reception, with a complete translation.",
-   "kings": [
-    "Alfred the Great"
-   ],
    "kind": "translation",
    "sort": "preston, todd, king alfred’s book of laws: a study of the domboc and its influence on english identity, with a complete translation (jefferson, nc: mcfarland, 2012)",
    "year": 2012
@@ -1410,10 +1070,6 @@
    "section": "further",
    "group": "alfred",
    "citation": "<i>Alfred the Great: Asser’s Life of King Alfred and Other Contemporary Sources</i>, trans. by Simon Keynes and Michael Lapidge (Harmondsworth: Penguin, 1983)",
-   "note": "Translations of Asser’s Life of Alfred and of Alfred’s own writings, with a full introduction.",
-   "kings": [
-    "Alfred the Great"
-   ],
    "kind": "translation",
    "sort": "alfred the great: asser’s life of king alfred and other contemporary sources, trans. by simon keynes and michael lapidge (harmondsworth: penguin, 1983)",
    "year": 1983
@@ -1423,10 +1079,6 @@
    "section": "further",
    "group": "alfred",
    "citation": "<i>Alfredian Prologues and Epilogues</i>, ed. and trans. by Susan Irvine (Oxford: Oxford University Press, 2023)",
-   "note": "The prefaces and epilogues of the Alfredian texts, edited with translation and commentary.",
-   "kings": [
-    "Alfred the Great"
-   ],
    "kind": "edition",
    "sort": "alfredian prologues and epilogues, ed. and trans. by susan irvine (oxford: oxford university press, 2023)",
    "year": 2023
@@ -1436,9 +1088,6 @@
    "section": "further",
    "group": "tenth",
    "citation": "Keynes, Simon, ‘Edgar, <i>Rex Admirabilis</i>’, in <i>Edgar, King of the English, 959–975: New Interpretations</i>, ed. by Donald Scragg (Woodbridge: Boydell, 2008), pp. 3–59",
-   "kings": [
-    "Edgar"
-   ],
    "sort": "keynes, simon, ‘edgar, rex admirabilis’, in edgar, king of the english, 959–975: new interpretations, ed. by donald scragg (woodbridge: boydell, 2008), pp. 3–59",
    "year": 2008
   },
@@ -1447,9 +1096,6 @@
    "section": "further",
    "group": "tenth",
    "citation": "Pratt, David, ‘The Voice of the King in “King Edgar’s Establishment of Monasteries”’, <i>ASE</i>, 41 (2013), 145–204",
-   "kings": [
-    "Edgar"
-   ],
    "sort": "pratt, david, ‘the voice of the king in “king edgar’s establishment of monasteries”’, ase, 41 (2013), 145–204",
    "year": 2013
   },
@@ -1458,9 +1104,6 @@
    "section": "further",
    "group": "tenth",
    "citation": "Lund, Arendse, ‘<i>Cynescipe</i>, Bishop Æthelwold, and the Spread of Legal Language’, in <i>Law, Literature, and Social Regulation in Early Medieval England</i>, ed. by Anya Adair and Andrew Rabin, Anglo-Saxon Studies, 47 (Woodbridge: Boydell, 2023), pp. 54–63",
-   "kings": [
-    "Edgar"
-   ],
    "sort": "lund, arendse, ‘cynescipe, bishop æthelwold, and the spread of legal language’, in law, literature, and social regulation in early medieval england, ed. by anya adair and andrew rabin, anglo-saxon studies, 47 (woodbridge: boydell, 2023), pp. 54–63",
    "year": 2023
   },
@@ -1469,10 +1112,6 @@
    "section": "further",
    "group": "tenth",
    "citation": "Clayton, Mary, ‘The Old English <i>Promissio regis</i>’, <i>ASE</i>, 37 (2008), 91–150",
-   "note": "An edition and study of the Old English coronation oath.",
-   "codes": [
-    "Prom. Reg."
-   ],
    "kind": "edition",
    "sort": "clayton, mary, ‘the old english promissio regis’, ase, 37 (2008), 91–150",
    "year": 2008
@@ -1482,9 +1121,6 @@
    "section": "further",
    "group": "tenth",
    "citation": "Roberts, Edward, ‘Bishops, Canon Law and Governance in Tenth-Century England: The <i>Constitutiones</i> of Oda of Canterbury’, <i>Journal of Ecclesiastical History</i>, 76 (2025), 25–54",
-   "kings": [
-    "Edmund I"
-   ],
    "sort": "roberts, edward, ‘bishops, canon law and governance in tenth-century england: the constitutiones of oda of canterbury’, journal of ecclesiastical history, 76 (2025), 25–54",
    "year": 2025
   },
@@ -1493,9 +1129,6 @@
    "section": "further",
    "group": "tenth",
    "citation": "Schoebe, G., ‘The Chapters of Archbishop Oda (942/6) and the Canons of the Legatine Councils of 786’, <i>Bulletin of the Institute of Historical Research</i>, 35 (1962), 75–83",
-   "kings": [
-    "Edmund I"
-   ],
    "sort": "schoebe, g., ‘the chapters of archbishop oda (942/6) and the canons of the legatine councils of 786’, bulletin of the institute of historical research, 35 (1962), 75–83",
    "year": 1962
   },
@@ -1504,9 +1137,6 @@
    "section": "further",
    "group": "tenth",
    "citation": "Halloran, Kevin, ‘A Murder at Pucklechurch: The Death of King Edmund, 26 May 946’, <i>Midland History</i>, 40 (2015), 120–29",
-   "kings": [
-    "Edmund I"
-   ],
    "sort": "halloran, kevin, ‘a murder at pucklechurch: the death of king edmund, 26 may 946’, midland history, 40 (2015), 120–29",
    "year": 2015
   },
@@ -1515,15 +1145,6 @@
    "section": "further",
    "group": "tenth",
    "citation": "Bethurum, Dorothy, ‘Six Anonymous Old English Codes’, <i>JEGP</i>, 49 (1950), 449–63",
-   "note": "On six short anonymous legal texts and their connection with Wulfstan.",
-   "codes": [
-    "Geþyncðo",
-    "Norðleoda",
-    "Mirce",
-    "Að",
-    "Had",
-    "Grið"
-   ],
    "sort": "bethurum, dorothy, ‘six anonymous old english codes’, jegp, 49 (1950), 449–63",
    "year": 1950
   },
@@ -1532,10 +1153,6 @@
    "section": "further",
    "group": "wulfstan",
    "citation": "Whitelock, Dorothy, ‘Wulfstan and the So-Called Laws of Edward and Guthrum’, <i>EHR</i>, 56 (1941), 1–21",
-   "note": "Shows that the so-called Laws of Edward and Guthrum (EGu) were drafted by Wulfstan.",
-   "codes": [
-    "EGu"
-   ],
    "sort": "whitelock, dorothy, ‘wulfstan and the so-called laws of edward and guthrum’, ehr, 56 (1941), 1–21",
    "year": 1941
   },
@@ -1544,10 +1161,6 @@
    "section": "further",
    "group": "wulfstan",
    "citation": "Whitelock, Dorothy, ‘Wulfstan and the Laws of Cnut’, <i>EHR</i>, 63 (1948), 433–52",
-   "note": "The first of Whitelock’s articles identifying Wulfstan as the draftsman of Cnut’s laws (see also her article of 1955).",
-   "kings": [
-    "Cnut"
-   ],
    "sort": "whitelock, dorothy, ‘wulfstan and the laws of cnut’, ehr, 63 (1948), 433–52",
    "year": 1948
   },
@@ -1556,9 +1169,6 @@
    "section": "further",
    "group": "wulfstan",
    "citation": "Whitelock, Dorothy, ‘Wulfstan’s Authorship of Cnut’s Laws’, <i>EHR</i>, 70 (1955), 72–85",
-   "kings": [
-    "Cnut"
-   ],
    "sort": "whitelock, dorothy, ‘wulfstan’s authorship of cnut’s laws’, ehr, 70 (1955), 72–85",
    "year": 1955
   },
@@ -1575,10 +1185,6 @@
    "section": "further",
    "group": "wulfstan",
    "citation": "Wormald, Patrick, ‘Æthelred the Lawmaker’, in <i>Ethelred the Unready: Papers from the Millenary Conference</i>, ed. by David Hill, BAR British Series, 59 (Oxford: [British Archaeological Reports], 1978), pp. 47–80",
-   "note": "A study of Æthelred II’s codes and of Wulfstan’s part in them.",
-   "kings": [
-    "Æthelred II"
-   ],
    "sort": "wormald, patrick, ‘æthelred the lawmaker’, in ethelred the unready: papers from the millenary conference, ed. by david hill, bar british series, 59 (oxford: [british archaeological reports], 1978), pp. 47–80",
    "year": 1978
   },
@@ -1611,10 +1217,6 @@
    "section": "further",
    "group": "wulfstan",
    "citation": "Lawson, M. K., ‘Archbishop Wulfstan and the Homiletic Element in the Laws of Æthelred II and Cnut’, <i>EHR</i>, 107 (1992), 565–86",
-   "kings": [
-    "Æthelred II",
-    "Cnut"
-   ],
    "sort": "lawson, m. k., ‘archbishop wulfstan and the homiletic element in the laws of æthelred ii and cnut’, ehr, 107 (1992), 565–86",
    "year": 1992
   },
@@ -1623,9 +1225,6 @@
    "section": "further",
    "group": "wulfstan",
    "citation": "Lawson, M. K., <i>Cnut: The Danes in England in the Early Eleventh Century</i> (New York: Longman, 1993)",
-   "kings": [
-    "Cnut"
-   ],
    "sort": "lawson, m. k., cnut: the danes in england in the early eleventh century (new york: longman, 1993)",
    "year": 1993
   },
@@ -1634,9 +1233,6 @@
    "section": "further",
    "group": "wulfstan",
    "citation": "Bolton, Timothy, <i>Cnut the Great</i> (New Haven: Yale University Press, 2017)",
-   "kings": [
-    "Cnut"
-   ],
    "sort": "bolton, timothy, cnut the great (new haven: yale university press, 2017)",
    "year": 2017
   },
@@ -1645,9 +1241,6 @@
    "section": "further",
    "group": "wulfstan",
    "citation": "Keynes, Simon, ‘Crime and Punishment in the Reign of King Aethelred the Unready’, in <i>People and Places in Northern Europe</i>, ed. by Ian Wood and Niels Lund (Woodbridge: Boydell, 1991), pp. 67–81",
-   "kings": [
-    "Æthelred II"
-   ],
    "sort": "keynes, simon, ‘crime and punishment in the reign of king aethelred the unready’, in people and places in northern europe, ed. by ian wood and niels lund (woodbridge: boydell, 1991), pp. 67–81",
    "year": 1991
   },
@@ -1656,10 +1249,6 @@
    "section": "further",
    "group": "wulfstan",
    "citation": "Keynes, Simon, <i>The Diplomas of King Æthelred ‘the Unready’, 978–1016: A Study in their Use as Historical Evidence</i>, Cambridge Studies in Medieval Life and Thought, 3rd ser., 13 (Cambridge: Cambridge University Press, 1980)",
-   "note": "The fundamental study of Æthelred II’s royal diplomas, essential for the government of the reign.",
-   "kings": [
-    "Æthelred II"
-   ],
    "sort": "keynes, simon, the diplomas of king æthelred ‘the unready’, 978–1016: a study in their use as historical evidence, cambridge studies in medieval life and thought, 3rd ser., 13 (cambridge: cambridge university press, 1980)",
    "year": 1980
   },
@@ -1668,10 +1257,6 @@
    "section": "further",
    "group": "wulfstan",
    "citation": "Neff, Charlotte, ‘Scandinavian Elements in the Wantage Code of Æthelred II’, <i>Journal of Legal History</i>, 10 (1989), 285–316",
-   "note": "On the Scandinavian terms and procedures in III Æthelred (the Wantage code).",
-   "codes": [
-    "III Atr"
-   ],
    "sort": "neff, charlotte, ‘scandinavian elements in the wantage code of æthelred ii’, journal of legal history, 10 (1989), 285–316",
    "year": 1989
   },
@@ -1680,9 +1265,6 @@
    "section": "further",
    "group": "wulfstan",
    "citation": "Stattel, Jake A., ‘Legal Culture in the Danelaw: A Study of III Æthelred’, <i>ASE</i>, 48 (2019), 163–203",
-   "codes": [
-    "III Atr"
-   ],
    "sort": "stattel, jake a., ‘legal culture in the danelaw: a study of iii æthelred’, ase, 48 (2019), 163–203",
    "year": 2019
   },
@@ -1691,9 +1273,6 @@
    "section": "further",
    "group": "wulfstan",
    "citation": "Naismith, Rory, ‘The Laws of London? IV Æthelred in Context’, <i>The London Journal</i>, 44 (2019), 1–16",
-   "codes": [
-    "IV Atr"
-   ],
    "sort": "naismith, rory, ‘the laws of london? iv æthelred in context’, the london journal, 44 (2019), 1–16",
    "year": 2019
   },
@@ -1702,9 +1281,6 @@
    "section": "further",
    "group": "wulfstan",
    "citation": "Schwartz, Nicholas P., ‘Wulfstan the Forger: The “Laws of Edward and Guthrum”’, <i>ASE</i>, 47 (2018), 219–46",
-   "codes": [
-    "EGu"
-   ],
    "sort": "schwartz, nicholas p., ‘wulfstan the forger: the “laws of edward and guthrum”’, ase, 47 (2018), 219–46",
    "year": 2018
   },
@@ -1713,9 +1289,6 @@
    "section": "further",
    "group": "wulfstan",
    "citation": "Rabin, Andrew, ‘Wulfstan at London: Episcopal Politics in the Reign of Æthelred’, <i>ES</i>, 97 (2016), 186–206",
-   "kings": [
-    "Æthelred II"
-   ],
    "sort": "rabin, andrew, ‘wulfstan at london: episcopal politics in the reign of æthelred’, es, 97 (2016), 186–206",
    "year": 2016
   },
@@ -1724,9 +1297,6 @@
    "section": "further",
    "group": "wulfstan",
    "citation": "Rabin, Andrew, ‘Evidence for Wulfstan’s Authorship of the Old English <i>Að</i>’, <i>NM</i>, 111 (2010), 43–54",
-   "codes": [
-    "Að"
-   ],
    "sort": "rabin, andrew, ‘evidence for wulfstan’s authorship of the old english að’, nm, 111 (2010), 43–54",
    "year": 2010
   },
@@ -1735,11 +1305,6 @@
    "section": "further",
    "group": "wulfstan",
    "citation": "Marafioti, Nicole, ‘The Legacy of King Edgar in the Laws of Archbishop Wulfstan’, in <i>Remembering the Medieval Present: Generative Uses of England’s Pre-Conquest Past, 10th to 15th Centuries</i>, ed. by Jay Paul Gates and Brian O’Camb, Explorations in Medieval Culture, 11 (Leiden: Brill, 2019), pp. 21–50",
-   "kings": [
-    "Edgar",
-    "Æthelred II",
-    "Cnut"
-   ],
    "sort": "marafioti, nicole, ‘the legacy of king edgar in the laws of archbishop wulfstan’, in remembering the medieval present: generative uses of england’s pre-conquest past, 10th to 15th centuries, ed. by jay paul gates and brian o’camb, explorations in medieval culture, 11 (leiden: brill, 2019), pp. 21–50",
    "year": 2019
   },
@@ -1748,7 +1313,6 @@
    "section": "further",
    "group": "wulfstan",
    "citation": "Townend, Matthew, ed., <i>Wulfstan, Archbishop of York: The Proceedings of the Second Alcuin Conference</i>, SEM, 10 (Turnhout: Brepols, 2004)",
-   "note": "Essays on Wulfstan’s laws, homilies, language and career.",
    "sort": "townend, matthew, ed., wulfstan, archbishop of york: the proceedings of the second alcuin conference, sem, 10 (turnhout: brepols, 2004)",
    "year": 2004
   },
@@ -1821,7 +1385,6 @@
    "section": "further",
    "group": "wulfstan",
    "citation": "Ker, Neil R., ‘The Handwriting of Archbishop Wulfstan’, in <i>England before the Conquest: Studies in Primary Sources Presented to Dorothy Whitelock</i>, ed. by Peter Clemoes and Kathleen Hughes (Cambridge: Cambridge University Press, 1971), pp. 315–31",
-   "note": "Identifies Wulfstan’s own handwriting in several manuscripts.",
    "sort": "ker, neil r., ‘the handwriting of archbishop wulfstan’, in england before the conquest: studies in primary sources presented to dorothy whitelock, ed. by peter clemoes and kathleen hughes (cambridge: cambridge university press, 1971), pp. 315–31",
    "year": 1971
   },
@@ -1830,7 +1393,6 @@
    "section": "further",
    "group": "wulfstan",
    "citation": "Wulfstan II of York, <i>Die ‘Institutes of Polity, Civil and Ecclesiastical’: Ein Werk Erzbischof Wulfstans von York</i>, ed. by Karl Jost, Schweizer anglistische Arbeiten, 47 (Bern: Francke, 1959)",
-   "note": "The edition of Wulfstan’s Institutes of Polity.",
    "kind": "edition",
    "sort": "wulfstan ii of york, die ‘institutes of polity, civil and ecclesiastical’: ein werk erzbischof wulfstans von york, ed. by karl jost, schweizer anglistische arbeiten, 47 (bern: francke, 1959)",
    "year": 1959
@@ -1840,7 +1402,6 @@
    "section": "further",
    "group": "wulfstan",
    "citation": "<i>Wulfstan’s Canons of Edgar</i>, ed. by Roger Fowler, EETS OS, 266 (London: Oxford University Press, 1972)",
-   "note": "An edition of the “Canons of Edgar”, ecclesiastical regulations drafted by Wulfstan.",
    "kind": "edition",
    "sort": "wulfstan’s canons of edgar, ed. by roger fowler, eets os, 266 (london: oxford university press, 1972)",
    "year": 1972
@@ -1850,7 +1411,6 @@
    "section": "further",
    "group": "wulfstan",
    "citation": "Wulfstan II of York, <i>Sermo Lupi ad Anglos</i>, ed. by Dorothy Whitelock, 2nd edn (London: Methuen, 1952)",
-   "note": "An edition of Wulfstan’s Sermon of the Wolf to the English.",
    "kind": "edition",
    "sort": "wulfstan ii of york, sermo lupi ad anglos, ed. by dorothy whitelock, 2nd edn (london: methuen, 1952)",
    "year": 1952
@@ -1860,7 +1420,6 @@
    "section": "further",
    "group": "wulfstan",
    "citation": "Wulfstan II of York, <i>The Homilies of Wulfstan</i>, ed. by Dorothy Bethurum (Oxford: Clarendon Press, 1957)",
-   "note": "The standard edition of Wulfstan’s homilies.",
    "kind": "edition",
    "sort": "wulfstan ii of york, the homilies of wulfstan, ed. by dorothy bethurum (oxford: clarendon press, 1957)",
    "year": 1957
@@ -1870,12 +1429,6 @@
    "section": "further",
    "group": "post",
    "citation": "O’Brien, Bruce, <i>God’s Peace and King’s Peace: The Laws of Edward the Confessor</i> (Philadelphia: University of Pennsylvania Press, 1999)",
-   "note": "An edition, translation and study of the Leges Edwardi Confessoris.",
-   "kings": [
-    "William I",
-    "Henry I",
-    "Anglo-Latin law books"
-   ],
    "kind": "edition",
    "sort": "o’brien, bruce, god’s peace and king’s peace: the laws of edward the confessor (philadelphia: university of pennsylvania press, 1999)",
    "year": 1999
@@ -1885,12 +1438,6 @@
    "section": "further",
    "group": "post",
    "citation": "Wormald, Patrick, ‘<i>Quadripartitus</i>’, in <i>Law and Government in Medieval England and Normandy: Essays Presented to Sir James Holt</i>, ed. by George Garnett and John Hudson (Cambridge: Cambridge University Press, 1994), pp. 111–47",
-   "note": "A study of Quadripartitus, the early-twelfth-century Latin translation and collection of the Old English laws, and of its author.",
-   "kings": [
-    "William I",
-    "Henry I",
-    "Anglo-Latin law books"
-   ],
    "sort": "wormald, patrick, ‘quadripartitus’, in law and government in medieval england and normandy: essays presented to sir james holt, ed. by george garnett and john hudson (cambridge: cambridge university press, 1994), pp. 111–47",
    "year": 1994
   },
@@ -1899,11 +1446,6 @@
    "section": "further",
    "group": "post",
    "citation": "Karn, Nicholas, ‘<i>Quadripartitus</i>, <i>Leges Henrici Primi</i> and the Scholarship of English Law in the Early Twelfth Century’, in <i>Proceedings of the Battle Conference 2014</i>, ed. by Elisabeth M. C. van Houts, Anglo-Norman Studies, 37 (Woodbridge: Boydell, 2015), pp. 149–60",
-   "kings": [
-    "William I",
-    "Henry I",
-    "Anglo-Latin law books"
-   ],
    "sort": "karn, nicholas, ‘quadripartitus, leges henrici primi and the scholarship of english law in the early twelfth century’, in proceedings of the battle conference 2014, ed. by elisabeth m. c. van houts, anglo-norman studies, 37 (woodbridge: boydell, 2015), pp. 149–60",
    "year": 2015
   },
@@ -1912,11 +1454,6 @@
    "section": "further",
    "group": "post",
    "citation": "Wormald, Patrick, ‘<i>Laga Eadwardi</i>: The <i>Textus Roffensis</i> and Its Context’, <i>Anglo-Norman Studies</i>, 17 (1995), 243–66",
-   "kings": [
-    "William I",
-    "Henry I",
-    "Anglo-Latin law books"
-   ],
    "sort": "wormald, patrick, ‘laga eadwardi: the textus roffensis and its context’, anglo-norman studies, 17 (1995), 243–66",
    "year": 1995
   },
@@ -1925,11 +1462,6 @@
    "section": "further",
    "group": "post",
    "citation": "Garnett, George, <i>Conquered England: Kingship, Succession, and Tenure 1066–1166</i> (Oxford: Oxford University Press, 2007)",
-   "kings": [
-    "William I",
-    "Henry I",
-    "Anglo-Latin law books"
-   ],
    "sort": "garnett, george, conquered england: kingship, succession, and tenure 1066–1166 (oxford: oxford university press, 2007)",
    "year": 2007
   },
@@ -1938,7 +1470,6 @@
    "section": "further",
    "group": "manuscripts",
    "citation": "Richards, Mary P., ‘The Manuscript Contexts of the Old English Laws: Tradition and Innovation’, in <i>Studies in Earlier Old English Prose</i>, ed. by Paul E. Szarmach (Albany: State University of New York Press, 1986), pp. 171–92",
-   "note": "How the laws were copied, and alongside what, in their manuscripts.",
    "sort": "richards, mary p., ‘the manuscript contexts of the old english laws: tradition and innovation’, in studies in earlier old english prose, ed. by paul e. szarmach (albany: state university of new york press, 1986), pp. 171–92",
    "year": 1986
   },
@@ -1947,12 +1478,6 @@
    "section": "further",
    "group": "manuscripts",
    "citation": "Richards, Mary P., <i>Texts and Their Traditions in the Medieval Library of Rochester Cathedral Priory</i> (Philadelphia: American Philosophical Society, 1988)",
-   "note": "The medieval library of Rochester, with full treatment of the Textus Roffensis.",
-   "kings": [
-    "Æthelberht of Kent",
-    "Hlothhere and Eadric of Kent",
-    "Wihtred of Kent"
-   ],
    "sort": "richards, mary p., texts and their traditions in the medieval library of rochester cathedral priory (philadelphia: american philosophical society, 1988)",
    "year": 1988
   },
@@ -1961,11 +1486,6 @@
    "section": "further",
    "group": "manuscripts",
    "citation": "Richards, Mary P., ‘The <i>Textus Roffensis</i>: Keystone of the Medieval Library at Rochester’, in <i>Textus Roffensis: Law, Language, and Libraries in Early Medieval England</i>, ed. by Bruce O’Brien and Barbara Bombi, SEM, 30 (Turnhout: Brepols, 2015), pp. 19–48",
-   "kings": [
-    "Æthelberht of Kent",
-    "Hlothhere and Eadric of Kent",
-    "Wihtred of Kent"
-   ],
    "sort": "richards, mary p., ‘the textus roffensis: keystone of the medieval library at rochester’, in textus roffensis: law, language, and libraries in early medieval england, ed. by bruce o’brien and barbara bombi, sem, 30 (turnhout: brepols, 2015), pp. 19–48",
    "year": 2015
   },
@@ -1974,12 +1494,6 @@
    "section": "further",
    "group": "manuscripts",
    "citation": "O’Brien, Bruce, and Barbara Bombi, eds, <i>Textus Roffensis: Law, Language, and Libraries in Early Medieval England</i>, SEM, 30 (Turnhout: Brepols, 2015)",
-   "note": "Essays on the Textus Roffensis, the Rochester manuscript of laws and charters that alone preserves the Kentish laws.",
-   "kings": [
-    "Æthelberht of Kent",
-    "Hlothhere and Eadric of Kent",
-    "Wihtred of Kent"
-   ],
    "sort": "o’brien, bruce, and barbara bombi, eds, textus roffensis: law, language, and libraries in early medieval england, sem, 30 (turnhout: brepols, 2015)",
    "year": 2015
   },
@@ -1988,11 +1502,6 @@
    "section": "further",
    "group": "manuscripts",
    "citation": "O’Brien, Bruce, ‘<i>Textus Roffensis</i>: An Introduction’, in <i>Textus Roffensis: Law, Language, and Libraries in Early Medieval England</i>, ed. by Bruce O’Brien and Barbara Bombi, SEM, 30 (Turnhout: Brepols, 2015), pp. 1–16",
-   "kings": [
-    "Æthelberht of Kent",
-    "Hlothhere and Eadric of Kent",
-    "Wihtred of Kent"
-   ],
    "sort": "o’brien, bruce, ‘textus roffensis: an introduction’, in textus roffensis: law, language, and libraries in early medieval england, ed. by bruce o’brien and barbara bombi, sem, 30 (turnhout: brepols, 2015), pp. 1–16",
    "year": 2015
   },
@@ -2001,11 +1510,6 @@
    "section": "further",
    "group": "manuscripts",
    "citation": "Karn, Nicholas, ‘<i>Textus Roffensis</i> and Its Uses’, in <i>Textus Roffensis: Law, Language, and Libraries in Early Medieval England</i>, ed. by Bruce O’Brien and Barbara Bombi, SEM, 30 (Turnhout: Brepols, 2015), pp. 49–67",
-   "kings": [
-    "Æthelberht of Kent",
-    "Hlothhere and Eadric of Kent",
-    "Wihtred of Kent"
-   ],
    "sort": "karn, nicholas, ‘textus roffensis and its uses’, in textus roffensis: law, language, and libraries in early medieval england, ed. by bruce o’brien and barbara bombi, sem, 30 (turnhout: brepols, 2015), pp. 49–67",
    "year": 2015
   },
@@ -2014,11 +1518,6 @@
    "section": "further",
    "group": "manuscripts",
    "citation": "Hough, Carole, ‘Palaeographical Evidence for the Compilation of <i>Textus Roffensis</i>’, in <i>‘An Ald Reht’: Essays on Anglo-Saxon Law</i> (Newcastle upon Tyne: Cambridge Scholars Publishing, 2014), pp. 216–50",
-   "kings": [
-    "Æthelberht of Kent",
-    "Hlothhere and Eadric of Kent",
-    "Wihtred of Kent"
-   ],
    "sort": "hough, carole, ‘palaeographical evidence for the compilation of textus roffensis’, in ‘an ald reht’: essays on anglo-saxon law (newcastle upon tyne: cambridge scholars publishing, 2014), pp. 216–50",
    "year": 2014
   },
@@ -2027,11 +1526,6 @@
    "section": "further",
    "group": "manuscripts",
    "citation": "Arnold, A. A., ‘The <i>Textus Roffensis</i> in Chancery, A.D. 1633’, <i>Archaeologia Cantiana</i>, 30 (1914), 225–32",
-   "kings": [
-    "Æthelberht of Kent",
-    "Hlothhere and Eadric of Kent",
-    "Wihtred of Kent"
-   ],
    "sort": "arnold, a. a., ‘the textus roffensis in chancery, a.d. 1633’, archaeologia cantiana, 30 (1914), 225–32",
    "year": 1914
   },
@@ -2040,12 +1534,6 @@
    "section": "further",
    "group": "manuscripts",
    "citation": "<i>Textus Roffensis: Rochester Cathedral Library Manuscript A. 3. 5</i>, ed. by Peter Sawyer, 2 vols, EEMF, 7, 11 (Copenhagen: Rosenkilde and Bagger, 1957–62)",
-   "note": "A facsimile of the Textus Roffensis.",
-   "kings": [
-    "Æthelberht of Kent",
-    "Hlothhere and Eadric of Kent",
-    "Wihtred of Kent"
-   ],
    "kind": "facsimile",
    "sort": "textus roffensis: rochester cathedral library manuscript a. 3. 5, ed. by peter sawyer, 2 vols, eemf, 7, 11 (copenhagen: rosenkilde and bagger, 1957–62)",
    "year": 1957
@@ -2055,13 +1543,6 @@
    "section": "further",
    "group": "manuscripts",
    "citation": "<i>Textus Roffensis</i> [digital facsimile], University of Manchester Library, &lt;<a href=\"https://luna.manchester.ac.uk/luna/servlet/media/book/showBook/Man4MedievalVC~4~4~990378~142729\">https://luna.manchester.ac.uk/luna/servlet/media/book/showBook/Man4MedievalVC~4~4~990378~142729</a>&gt; [accessed 20 January 2026]",
-   "note": "A complete digital facsimile of the Textus Roffensis.",
-   "url": "https://luna.manchester.ac.uk/luna/servlet/media/book/showBook/Man4MedievalVC~4~4~990378~142729",
-   "kings": [
-    "Æthelberht of Kent",
-    "Hlothhere and Eadric of Kent",
-    "Wihtred of Kent"
-   ],
    "kind": "facsimile",
    "sort": "textus roffensis [digital facsimile], university of manchester library, &lt;https://luna.manchester.ac.uk/luna/servlet/media/book/showbook/man4medievalvc~4~4~990378~142729&gt; [accessed 20 january 2026]",
    "year": 2026
@@ -2071,10 +1552,6 @@
    "section": "further",
    "group": "manuscripts",
    "citation": "<i>The Parker Chronicle and Laws</i>, ed. by Robin Flower and Hugh Smith, EETS OS, 208 (London: Oxford University Press, 1941)",
-   "note": "A facsimile of the Parker manuscript (Cambridge, Corpus Christi College 173), which contains the Chronicle and Alfred’s laws.",
-   "kings": [
-    "Alfred the Great"
-   ],
    "kind": "facsimile",
    "sort": "parker chronicle and laws, ed. by robin flower and hugh smith, eets os, 208 (london: oxford university press, 1941)",
    "year": 1941
@@ -2084,9 +1561,6 @@
    "section": "further",
    "group": "manuscripts",
    "citation": "Parkes, Malcolm B., ‘The Palaeography of the Parker Manuscript of the <i>Chronicle</i>, Laws and Sedulius, and Historiography at Winchester in the Late Ninth and Tenth Centuries’, <i>ASE</i>, 5 (1976), 149–71",
-   "kings": [
-    "Alfred the Great"
-   ],
    "sort": "parkes, malcolm b., ‘the palaeography of the parker manuscript of the chronicle, laws and sedulius, and historiography at winchester in the late ninth and tenth centuries’, ase, 5 (1976), 149–71",
    "year": 1976
   },
@@ -2095,11 +1569,6 @@
    "section": "further",
    "group": "manuscripts",
    "citation": "<i>A Wulfstan Manuscript Containing Institutes, Laws and Homilies: British Museum Cotton Nero A. I</i>, ed. by Henry R. Loyn, EEMF, 17 (Copenhagen: Rosenkilde and Bagger, 1971)",
-   "note": "A facsimile of a manuscript associated with Wulfstan.",
-   "kings": [
-    "Æthelred II",
-    "Cnut"
-   ],
    "kind": "facsimile",
    "sort": "wulfstan manuscript containing institutes, laws and homilies: british museum cotton nero a. i, ed. by henry r. loyn, eemf, 17 (copenhagen: rosenkilde and bagger, 1971)",
    "year": 1971
@@ -2109,7 +1578,6 @@
    "section": "further",
    "group": "manuscripts",
    "citation": "Gobbitt, Thomas, ‘The Twelfth-Century Rubrication of Anglo-Saxon Legal Texts in Cambridge, Corpus Christi College, MS. 383’, <i>Historical Research</i>, 86 (2013), 536–49",
-   "note": "On the twelfth-century rubrics added to the laws in Cambridge, Corpus Christi College 383.",
    "sort": "gobbitt, thomas, ‘the twelfth-century rubrication of anglo-saxon legal texts in cambridge, corpus christi college, ms. 383’, historical research, 86 (2013), 536–49",
    "year": 2013
   },
@@ -2159,7 +1627,6 @@
    "section": "further",
    "group": "manuscripts",
    "citation": "<i>Archaionomia,</i> <i>siue de priscis anglorum legibus libri</i>, ed. by William Lambarde (London: John Day, 1568)",
-   "note": "The first printed edition of the Old English laws, with a Latin translation. Some of its texts depend on manuscripts now lost, and their authenticity has long been debated (see Sisam; Wormald, “The Lambarde Problem”).",
    "kind": "edition",
    "sort": "archaionomia, siue de priscis anglorum legibus libri, ed. by william lambarde (london: john day, 1568)",
    "year": 1568
@@ -2169,7 +1636,6 @@
    "section": "further",
    "group": "manuscripts",
    "citation": "Sisam, Kenneth, ‘The Authenticity of Certain Texts in Lambarde’s <i>Archaionomia</i> 1568’, in <i>Studies in the History of Old English Literature</i> (Oxford: Clarendon Press, 1953), pp. 232–58",
-   "note": "Sisam’s study of whether the Old English texts in Lambarde’s edition are genuine.",
    "sort": "sisam, kenneth, ‘the authenticity of certain texts in lambarde’s archaionomia 1568’, in studies in the history of old english literature (oxford: clarendon press, 1953), pp. 232–58",
    "year": 1953
   },
@@ -2178,7 +1644,6 @@
    "section": "further",
    "group": "manuscripts",
    "citation": "Wormald, Patrick, ‘The Lambarde Problem: Eighty Years On’, in <i>Alfred the Wise: Studies in Honour of</i> Janet Bately <i>on the Occasion of Her Sixty-Fifth Birthday</i>, ed. by Jane Roberts and Janet Nelson (Cambridge: Brewer, 1997), pp. 237–75",
-   "note": "Revisits the long debate over the texts known only from Lambarde’s <i>Archaionomia</i>.",
    "sort": "wormald, patrick, ‘the lambarde problem: eighty years on’, in alfred the wise: studies in honour of janet bately on the occasion of her sixty-fifth birthday, ed. by jane roberts and janet nelson (cambridge: brewer, 1997), pp. 237–75",
    "year": 1997
   },
@@ -2187,7 +1652,6 @@
    "section": "further",
    "group": "manuscripts",
    "citation": "Ker, Neil R., <i>Catalogue of Manuscripts Containing Anglo-Saxon</i> (Oxford: Clarendon Press, 1957)",
-   "note": "The standard catalogue of manuscripts containing Old English; manuscripts are often cited by their number in it.",
    "kind": "reference",
    "sort": "ker, neil r., catalogue of manuscripts containing anglo-saxon (oxford: clarendon press, 1957)",
    "year": 1957
@@ -2215,7 +1679,6 @@
    "section": "further",
    "group": "manuscripts",
    "citation": "Da Rold, Orietta, Takako Kato, Mary Swan, and Elaine Treharne, eds, <i>The Production and Use of English Manuscripts 1060 to 1220</i> (Leicester: University of Leicester, 2010; last updated 2013), &lt;<a href=\"https://em1060.stanford.edu/\">https://em1060.stanford.edu/</a>&gt; [accessed 20 January 2026]",
-   "url": "https://em1060.stanford.edu/",
    "kind": "reference",
    "sort": "da rold, orietta, takako kato, mary swan, and elaine treharne, eds, the production and use of english manuscripts 1060 to 1220 (leicester: university of leicester, 2010; last updated 2013), &lt;https://em1060.stanford.edu/&gt; [accessed 20 january 2026]",
    "year": 2026
@@ -2249,7 +1712,6 @@
    "section": "further",
    "group": "language",
    "citation": "Fischer, Andreas, ‘Lexical Change in Late Old English: From <i>ǣ</i> to <i>lagu</i>’, in <i>The History and the Dialects of English: Festschrift for Eduard Kolb</i>, ed. by Andreas Fischer (Heidelberg: C. Winter, 1989), pp. 103–14",
-   "note": "On the replacement of Old English <i>ǣ</i> “law” by the Norse loanword <i>lagu</i>.",
    "sort": "fischer, andreas, ‘lexical change in late old english: from ǣ to lagu’, in the history and the dialects of english: festschrift for eduard kolb, ed. by andreas fischer (heidelberg: c. winter, 1989), pp. 103–14",
    "year": 1989
   },
@@ -2258,10 +1720,6 @@
    "section": "further",
    "group": "language",
    "citation": "Fischer, Andreas, <i>Engagement, Wedding and Marriage in Old English</i>, Anglistische Forschungen, 176 (Heidelberg: C. Winter, 1986)",
-   "note": "The vocabulary, and the law, of betrothal and marriage in Old English.",
-   "codes": [
-    "Wif"
-   ],
    "sort": "fischer, andreas, engagement, wedding and marriage in old english, anglistische forschungen, 176 (heidelberg: c. winter, 1986)",
    "year": 1986
   },
@@ -2270,7 +1728,6 @@
    "section": "further",
    "group": "language",
    "citation": "Pons-Sanz, Sara M., <i>Norse-Derived Vocabulary in Late Old English Texts: Wulfstan’s Works, a Case Study</i> (Amsterdam: John Benjamins Publishing, 2007)",
-   "note": "Norse loanwords in Wulfstan’s writings, including his legal vocabulary.",
    "sort": "pons-sanz, sara m., norse-derived vocabulary in late old english texts: wulfstan’s works, a case study (amsterdam: john benjamins publishing, 2007)",
    "year": 2007
   },
@@ -2287,12 +1744,6 @@
    "section": "further",
    "group": "language",
    "citation": "O’Brien, Bruce, ‘Translating Technical Terms in Law-Codes from Alfred to the Angevins’, in <i>Conceptualizing Multilingualism in England, 800–1250</i>, ed. by Elizabeth Tyler, SEM, 27 (Turnhout: Brepols, 2011), pp. 57–76",
-   "note": "How later translators rendered Old English legal terms in Latin and French.",
-   "kings": [
-    "William I",
-    "Henry I",
-    "Anglo-Latin law books"
-   ],
    "sort": "o’brien, bruce, ‘translating technical terms in law-codes from alfred to the angevins’, in conceptualizing multilingualism in england, 800–1250, ed. by elizabeth tyler, sem, 27 (turnhout: brepols, 2011), pp. 57–76",
    "year": 2011
   },
@@ -2365,7 +1816,6 @@
    "section": "further",
    "group": "litlaw",
    "citation": "Jurasinski, Stefan, <i>Ancient Privileges: Beowulf, Law and the Making of Germanic Antiquity</i> (Morgantown: West Virginia University Press, 2006)",
-   "note": "On how nineteenth-century scholarship read Beowulf as evidence for early Germanic law.",
    "sort": "jurasinski, stefan, ancient privileges: beowulf, law and the making of germanic antiquity (morgantown: west virginia university press, 2006)",
    "year": 2006
   },
@@ -2462,7 +1912,6 @@
    "section": "further",
    "group": "litlaw",
    "citation": "Alford, John A., and Dennis P. Seniff, <i>Literature and Law in the Middle Ages: A Bibliography of Scholarship</i> (New York: Garland Publishing, 1984)",
-   "note": "A bibliography of scholarship on law and literature in the Middle Ages.",
    "kind": "reference",
    "sort": "alford, john a., and dennis p. seniff, literature and law in the middle ages: a bibliography of scholarship (new york: garland publishing, 1984)",
    "year": 1984
@@ -2472,7 +1921,6 @@
    "section": "further",
    "group": "editions",
    "citation": "<i>Ancient Laws and Institutes of England</i>, ed. by Benjamin Thorpe (London: Eyre and Spottiswoode, 1840)",
-   "note": "The standard edition before Liebermann, with English translation; it also prints ecclesiastical texts and penitentials.",
    "kind": "edition",
    "sort": "ancient laws and institutes of england, ed. by benjamin thorpe (london: eyre and spottiswoode, 1840)",
    "year": 1840
@@ -2482,7 +1930,6 @@
    "section": "further",
    "group": "editions",
    "citation": "<i>Die Gesetze der Angelsachsen: In der Ursprache mit Uebersetzung, Erläuterungen und einem antiquarischen Glossar</i>, ed. and trans. by Reinhold Schmid, 2nd edn (Leipzig: F. A. Brockhaus, 1858)",
-   "note": "The main German edition before Liebermann, with a translation and an “antiquarian glossary” of legal terms.",
    "kind": "edition",
    "sort": "gesetze der angelsachsen: in der ursprache mit uebersetzung, erläuterungen und einem antiquarischen glossar, ed. and trans. by reinhold schmid, 2nd edn (leipzig: f. a. brockhaus, 1858)",
    "year": 1858
@@ -2492,7 +1939,6 @@
    "section": "further",
    "group": "editions",
    "citation": "Whitelock, Dorothy, Martin Brett, and Christopher N. L. Brooke, eds, <i>Councils and Synods with Other Documents Relating to the English Church</i>, I: <i>A.D. 871–1204</i>, 2 vols (Oxford: Clarendon Press, 1981)",
-   "note": "Church councils and related texts, including the ecclesiastical laws and much of Wulfstan’s legal writing.",
    "kind": "edition",
    "sort": "whitelock, dorothy, martin brett, and christopher n. l. brooke, eds, councils and synods with other documents relating to the english church, i: a.d. 871–1204, 2 vols (oxford: clarendon press, 1981)",
    "year": 1981
@@ -2502,7 +1948,6 @@
    "section": "further",
    "group": "editions",
    "citation": "<i>The Anglo-Saxon Chronicle: A Collaborative Edition,</i> VIII: <i>MS F</i>, ed. by Peter Baker (Cambridge: Brewer, 2000)",
-   "note": "An edition, translation and commentary of the Old English writs, the short sealed letters of the late Anglo-Saxon kings.",
    "kind": "edition",
    "sort": "anglo-saxon chronicle: a collaborative edition, viii: ms f, ed. by peter baker (cambridge: brewer, 2000)",
    "year": 2000
@@ -2512,7 +1957,6 @@
    "section": "further",
    "group": "editions",
    "citation": "<i>Anglo-Saxon Charters</i>, ed. and trans. by Agnes Jane Robertson, 2nd edn (Cambridge: Cambridge University Press, 1956)",
-   "note": "Old English charters with translation and notes, many recording lawsuits and agreements.",
    "kind": "edition",
    "sort": "anglo-saxon charters, ed. and trans. by agnes jane robertson, 2nd edn (cambridge: cambridge university press, 1956)",
    "year": 1956
@@ -2522,8 +1966,6 @@
    "section": "further",
    "group": "reference",
    "citation": "Bosworth, Joseph, and T. Northcote Toller, <i>An Anglo-Saxon Dictionary</i> (Oxford: Clarendon Press, 1898), with T. Northcote Toller, <i>Supplement</i> (1921), and Alistair Campbell, <i>Enlarged Addenda and Corrigenda</i> (1972); online at &lt;<a href=\"https://bosworthtoller.com/\">https://bosworthtoller.com/</a>&gt;",
-   "note": "The standard complete dictionary of Old English, linked from this site’s entries.",
-   "url": "https://bosworthtoller.com/",
    "kind": "reference",
    "sort": "bosworth, joseph, and t. northcote toller, an anglo-saxon dictionary (oxford: clarendon press, 1898), with t. northcote toller, supplement (1921), and alistair campbell, enlarged addenda and corrigenda (1972); online at &lt;https://bosworthtoller.com/&gt;",
    "year": 1898
@@ -2533,8 +1975,6 @@
    "section": "further",
    "group": "reference",
    "citation": "<i>The Dictionary of Old English: A to Le</i>, ed. by Angus Cameron, Ashley Crandell Amos, Antonette diPaolo Healey <i>et al.</i> (Toronto: Dictionary of Old English Project, 2018), <a href=\"https://tapor.library.utoronto.ca/doe/\">https://tapor.library.utoronto.ca/doe/</a> [accessed 20 January 2026]",
-   "note": "Published so far for A to Le; online by subscription, and linked from this site’s entries where available.",
-   "url": "https://doe.artsci.utoronto.ca/",
    "kind": "reference",
    "sort": "dictionary of old english: a to le, ed. by angus cameron, ashley crandell amos, antonette dipaolo healey et al. (toronto: dictionary of old english project, 2018), https://tapor.library.utoronto.ca/doe/ [accessed 20 january 2026]",
    "year": 2026
@@ -2544,7 +1984,6 @@
    "section": "further",
    "group": "reference",
    "citation": "<i>A Thesaurus of Old English</i>, ed. by Jane Roberts and Christian Kay with Lynne Grundy (Glasgow: University of Glasgow, 2017), <a href=\"http://oldenglishthesaurus.arts.gla.ac.uk/\">http://oldenglishthesaurus.arts.gla.ac.uk/</a> [accessed 20 January 2026]",
-   "url": "http://oldenglishthesaurus.arts.gla.ac.uk/",
    "kind": "reference",
    "sort": "thesaurus of old english, ed. by jane roberts and christian kay with lynne grundy (glasgow: university of glasgow, 2017), http://oldenglishthesaurus.arts.gla.ac.uk/ [accessed 20 january 2026]",
    "year": 2026
@@ -2554,7 +1993,6 @@
    "section": "further",
    "group": "reference",
    "citation": "Sawyer, P. H., <i>Anglo-Saxon Charters: An Annotated List and Bibliography</i> (London: Royal Historical Society, 1968)",
-   "note": "The catalogue of Anglo-Saxon charters, which are cited by their “S” number in it. Revised and expanded online as the Electronic Sawyer.",
    "kind": "reference",
    "sort": "sawyer, p. h., anglo-saxon charters: an annotated list and bibliography (london: royal historical society, 1968)",
    "year": 1968
@@ -2564,8 +2002,6 @@
    "section": "further",
    "group": "reference",
    "citation": "<i>The Electronic Sawyer: Online Catalogue of Anglo-Saxon Charters</i>, &lt;<a href=\"https://esawyer.lib.cam.ac.uk/\">https://esawyer.lib.cam.ac.uk/</a>&gt;",
-   "note": "The online, revised version of Sawyer’s catalogue, with texts and bibliography for each charter.",
-   "url": "https://esawyer.lib.cam.ac.uk/",
    "kind": "online",
    "sort": "electronic sawyer"
   },
@@ -2574,8 +2010,6 @@
    "section": "further",
    "group": "reference",
    "citation": "<i>Early English Laws</i>, Institute of Historical Research and King’s College London, &lt;<a href=\"https://earlyenglishlaws.ac.uk/\">https://earlyenglishlaws.ac.uk/</a>&gt;",
-   "note": "A register of English legal texts to Magna Carta, with their manuscripts, new online editions and a bibliography.",
-   "url": "https://earlyenglishlaws.ac.uk/",
    "kind": "online",
    "sort": "early english laws"
   },
@@ -2584,8 +2018,6 @@
    "section": "further",
    "group": "reference",
    "citation": "<i>Parker Library on the Web</i>, Corpus Christi College, Cambridge, and Stanford University Libraries, &lt;<a href=\"https://parker.stanford.edu/\">https://parker.stanford.edu/</a>&gt;",
-   "note": "Images of the Parker Library manuscripts, among them the law manuscripts Cambridge, Corpus Christi College 173, 201 and 383.",
-   "url": "https://parker.stanford.edu/",
    "kind": "online",
    "sort": "parker library on the web"
   }
