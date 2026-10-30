@@ -4,6 +4,10 @@
  * Issue in the private repository anyaadair/eLiebermann-suggestions.
  *
  *   SuggestChange.attach(box, { headword, page, section: 'dictionary' })
+ *   SuggestChange.attach(box, { headword: 'Ine 23,2', page, section: 'laws', simple: true })
+ *
+ * With simple: true (the law clause pages) the form is just one box of text, "What is the
+ * problem?": no kinds and no dictionary links.
  *
  * Needs scripts/eliebermann.js.
  */
@@ -31,11 +35,12 @@
         const intro = box.innerHTML;
         const open = () => {
             box.classList.add('suggest-change--open');
-            box.innerHTML = `
-                <form class="suggest-form" novalidate>
-                    <h2 class="suggest-form__title">Suggest a change to <em>${esc(info.headword)}</em></h2>
-                    <p class="small muted">Your suggestion goes to the editors, who check it before anything on the site changes.</p>
-
+            const parts = info.simple ? `
+                    <fieldset class="suggest-form__part">
+                        <legend class="visually-hidden">The problem</legend>
+                        <label class="suggest-form__label" for="sg-text">What is the problem? Please say where on the page it is.</label>
+                        <textarea id="sg-text" rows="6" maxlength="4000" placeholder="For example: a word in the text that differs from the printed page; a mistake in the English of Liebermann’s German; a manuscript reading that is missing; something that looks wrong on the page."></textarea>
+                    </fieldset>` : `
                     <fieldset class="suggest-form__part">
                         <legend>What is it about? <span class="muted">(choose one or more)</span></legend>
                         <div class="kind-pills kind-pills--small" role="group" aria-label="What kind of change">${KINDS.map(([k, label]) =>
@@ -49,7 +54,12 @@
                         <p class="small muted">Find the word in <a href="https://bosworthtoller.com/search?q=${encodeURIComponent(info.headword.replace(/[\[\]()]/g, ''))}" target="_blank" rel="noopener">Bosworth–Toller</a> or the <a href="https://doe.artsci.utoronto.ca/" target="_blank" rel="noopener">Dictionary of Old English</a>, and paste the address of its page here. (In the DOE, open the entry in a tab of its own to get its address, e.g. https://indiv.dictionary.doe.utoronto.ca/doe/?E00946.)</p>
                         <div class="suggest-form__rows"></div>
                         <button type="button" class="link-button" data-add-link>+ Add another link</button>
-                    </fieldset>
+                    </fieldset>`;
+            box.innerHTML = `
+                <form class="suggest-form" novalidate>
+                    <h2 class="suggest-form__title">${info.simple ? `Report a problem with <em>${esc(info.headword)}</em>` : `Suggest a change to <em>${esc(info.headword)}</em>`}</h2>
+                    <p class="small muted">${info.simple ? 'Your report' : 'Your suggestion'} goes to the editors, who check it before anything on the site changes.</p>
+${parts}
 
                     <fieldset class="suggest-form__part suggest-form__who">
                         <legend>About you <span class="muted">(optional)</span></legend>
@@ -62,7 +72,7 @@
 
                     <p class="suggest-form__status" aria-live="polite"></p>
                     <div class="suggest-form__buttons">
-                        <button type="submit" class="button">Send the suggestion</button>
+                        <button type="submit" class="button">${info.simple ? 'Send the report' : 'Send the suggestion'}</button>
                         <button type="button" class="button button--quiet" data-cancel>Cancel</button>
                     </div>
                 </form>`;
@@ -76,7 +86,7 @@
                     <button type="button" class="link-button" data-remove title="Take this link away" aria-label="Take this link away">✕</button>`;
                 rows.appendChild(row);
             };
-            addRow();
+            if (rows) addRow();
             form.addEventListener('click', e => {
                 const k = e.target.closest('[data-kind]');
                 if (k) k.setAttribute('aria-pressed', String(k.getAttribute('aria-pressed') !== 'true'));
@@ -97,7 +107,7 @@
                 let kinds = [...form.querySelectorAll('[data-kind][aria-pressed="true"]')].map(b => b.dataset.kind);
                 const text = form.querySelector('#sg-text').value.trim();
                 const links = [], bad = [];
-                rows.querySelectorAll('.suggest-form__row').forEach(r => {
+                (rows ? [...rows.querySelectorAll('.suggest-form__row')] : []).forEach(r => {
                     const url = r.querySelector('input').value.trim();
                     if (!url) return;
                     const dict = DICTS.find(x => x[0] === r.querySelector('select').value);
@@ -108,7 +118,7 @@
                 status.className = 'suggest-form__status';
                 if (bad.length) { status.classList.add('is-error'); status.textContent = `This doesn’t look like an address in the dictionary chosen beside it: ${bad[0]}`; return; }
                 if (links.length && !kinds.includes('dict')) kinds = kinds.concat('dict');
-                if (!text && !links.length) { status.classList.add('is-error'); status.textContent = 'Please describe the change, or add a dictionary link.'; return; }
+                if (!text && !links.length) { status.classList.add('is-error'); status.textContent = info.simple ? 'Please describe the problem.' : 'Please describe the change, or add a dictionary link.'; return; }
                 if (TURNSTILE_SITE_KEY && !token) { status.classList.add('is-error'); status.textContent = 'Please wait for the robot check below to finish, then send again.'; return; }
                 const send = form.querySelector('[type=submit]');
                 send.disabled = true;
@@ -125,7 +135,7 @@
                 }).then(r => r.json().catch(() => ({})).then(d => ({ ok: r.ok && d.ok, d })))
                     .then(({ ok, d }) => {
                         if (!ok) throw new Error(d.error || 'The suggestion could not be sent.');
-                        box.innerHTML = `<div class="suggest-thanks"><p><strong>Thank you!</strong> Your suggestion has reached the editors.</p><button type="button" class="button button--quiet" data-again>Suggest something else</button></div>`;
+                        box.innerHTML = `<div class="suggest-thanks"><p><strong>Thank you!</strong> Your ${info.simple ? 'report' : 'suggestion'} has reached the editors.</p><button type="button" class="button button--quiet" data-again>${info.simple ? 'Report something else' : 'Suggest something else'}</button></div>`;
                         box.querySelector('[data-again]').addEventListener('click', open);
                     })
                     .catch(err => {
@@ -135,7 +145,7 @@
                         if (window.turnstile && TURNSTILE_SITE_KEY) { try { window.turnstile.reset(); token = ''; } catch (x) { /* none */ } }
                     });
             });
-            form.querySelector('[data-kind]').focus();
+            (form.querySelector('[data-kind]') || form.querySelector('#sg-text')).focus();
         };
         const close = () => { box.classList.remove('suggest-change--open'); box.innerHTML = intro; bind(); };
         const bind = () => { const b = box.querySelector('[data-open-suggest]'); if (b) b.addEventListener('click', open); };

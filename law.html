@@ -7,6 +7,7 @@ scripts:
   - "ROOT/scripts/lawpopup.js"
   - "ROOT/scripts/law-search.js"
   - "ROOT/scripts/law-panel.js"
+  - "ROOT/scripts/suggest-change.js"
 ---
 <div class="laws-layout">
 <aside class="laws-panel" id="panel" aria-label="This clause">
@@ -849,6 +850,12 @@ scripts:
         nav.appendChild(i > 0 ? link(sameCode[i - 1], '← ' + sameCode[i - 1].citation) : el('span'));
         nav.appendChild(i < sameCode.length - 1 ? link(sameCode[i + 1], sameCode[i + 1].citation + ' →') : el('span'));
         target.appendChild(nav);
+
+        // "Report a problem": a simpler form than the dictionary's, just text (scripts/suggest-change.js).
+        const report = el('div', 'suggest-change');
+        report.innerHTML = '<p>Spotted a problem on this page: a mistranscription, a mistake in the translation, a missing manuscript reading, something wrong with the layout?</p><button type="button" class="button" data-open-suggest>Report a problem</button>';
+        target.appendChild(report);
+        if (window.SuggestChange) SuggestChange.attach(report, { headword: row.citation, page: location.href.split('#')[0], section: 'laws', simple: true });
         // The same links higher up, just above the cross-references (or, with none,
         // straight after the texts), so they can be used without scrolling to the foot.
         const navTop = nav.cloneNode(true);
