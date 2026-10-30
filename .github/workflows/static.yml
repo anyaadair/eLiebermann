@@ -32,6 +32,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
+      - name: Check that u is not drawn as V (Latin and French)
+        run: node tools/check-u-not-v.js
       - name: List dictionary entries
         run: node tools/build-index.js
       - name: List law clauses
