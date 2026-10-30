@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Linked gen (Genetiv) and geschrieben to the abbreviations list.</change>
+      <change when="2026-10-30">Link to the Dictionary of Old English (abbod, E00946) added, from a suggestion made on the website (eLiebermann-suggestions #1).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -39,6 +40,7 @@
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/28">abbod</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/22">abbad</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/33">abbud</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E00946">abbod</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_23-2">Ine 23,2</ref></xr>
         <xr type="lawCode"><ref target="clause:IIAs_14-2">II As 14,2</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAtr_2">VI Atr 2</ref></xr>
