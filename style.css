@@ -1137,6 +1137,9 @@ mark.find-hit--current { background: #ffc94d; outline: 2px solid #e0a100; }
 .bib-cit { font-size: 0.95rem; padding-left: 1.6rem; text-indent: -1.6rem; line-height: 1.5; }
 .bib-cit a { overflow-wrap: anywhere; }
 .bib-list--flat .bib-item { padding: 0.45rem 0; }
+/* the chapters of a book, under it */
+.bib-chapters { margin: 0.25rem 0 0.2rem 1.6rem; padding-left: 0.9rem; border-left: 2px solid var(--rule); }
+.bib-chapters .bib-item { padding: 0.2rem 0; }
 .bib-tag { display: inline-block; font-family: var(--sans); font-size: 0.68rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); margin-bottom: 0.1rem; }
 .bib-abbr dl { display: grid; grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr)); gap: 0.15rem 1.5rem; font-size: 0.88rem; }
 .bib-abbr dl div { display: flex; gap: 0.6rem; }

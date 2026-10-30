@@ -74,7 +74,7 @@ scripts:
         'EEMF': 'Early English Manuscripts in Facsimile', 'EETS OS': 'Early English Text Society, Original Series', 'EETS SS': 'Early English Text Society, Supplementary Series',
         'EHR': 'English Historical Review', 'ES': 'English Studies', 'JEGP': 'Journal of English and Germanic Philology', 'MÆ': 'Medium Ævum',
         'N&Q': 'Notes and Queries', 'NM': 'Neuphilologische Mitteilungen', 'PBA': 'Proceedings of the British Academy', 'PMLA': 'Publications of the Modern Language Association of America',
-        'RES': 'Review of English Studies', 'SEM': 'Studies in the Early Middle Ages'
+        'RES': 'Review of English Studies', 'SEM': 'Studies in the Early Middle Ages', 'TRHS': 'Transactions of the Royal Historical Society'
     };
 
     const state = { q: '', show: new Set(), kinds: new Set(), order: 'arranged' };
@@ -173,10 +173,19 @@ scripts:
                 html += `<section class="bib-section" id="s-${s.id}"><h2>${esc(s.title)} <span class="bib-count">${inSec.length}</span></h2>${s.intro ? `<p class="bib-intro">${s.intro}</p>` : ''}`;
                 const sub = [];
                 s.groups.forEach(g => {
-                    const inG = inSec.filter(it => it.group === g.id).sort(s.id === 'liebermann' && g.id === 'gesetze' ? (a, b) => (a.sort < b.sort ? -1 : 1) : bySort);
+                    // Liebermann's volumes in order, and his other writings by date
+                    const order = s.id === 'liebermann' && g.id === 'gesetze' ? (a, b) => (a.sort < b.sort ? -1 : 1) : s.id === 'liebermann' && g.id === 'other' ? byDate : bySort;
+                    const inG = inSec.filter(it => it.group === g.id).sort(order);
                     if (!inG.length) return;
                     if (g.title) { html += `<h3 id="g-${s.id}-${g.id}">${esc(g.title)} <span class="bib-count">${inG.length}</span></h3>`; sub.push([`g-${s.id}-${g.id}`, g.title, inG.length]); }
-                    html += `<ol class="bib-list">${inG.map(it => item(it)).join('')}</ol>`;
+                    // the chapters of a book (parent: the book's id) are listed under it, in the book's order;
+                    // a chapter whose book is not shown stands on its own
+                    const shown = new Set(inG.map(it => it.id));
+                    const kids = id => inG.filter(it => it.parent === id).sort((a, b) => a.order - b.order);
+                    html += `<ol class="bib-list">${inG.filter(it => !it.parent || !shown.has(it.parent)).map(it => {
+                        const ch = kids(it.id);
+                        return item(it, '', ch.length ? `<ol class="bib-list bib-chapters">${ch.map(c => item(c)).join('')}</ol>` : '');
+                    }).join('')}</ol>`;
                 });
                 html += '</section>';
                 toc.push([`s-${s.id}`, s.title, inSec.length, sub]);
@@ -191,8 +200,8 @@ scripts:
         abbreviations(list);
     }
 
-    function item(it, sectionTag) {
-        return `<li class="bib-item" id="${esc(it.id)}">${sectionTag ? `<span class="bib-tag">${esc(sectionTag)}</span>` : ''}<div class="bib-cit">${it.citation}</div></li>`;
+    function item(it, sectionTag, inner) {
+        return `<li class="bib-item" id="${esc(it.id)}">${sectionTag ? `<span class="bib-tag">${esc(sectionTag)}</span>` : ''}<div class="bib-cit">${it.citation}</div>${inner || ''}</li>`;
     }
 
     function abbreviations(list) {
