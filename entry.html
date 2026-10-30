@@ -437,15 +437,14 @@ scripts:
             <h1>${esc(e.headword)}${e.n ? ` <sup>${esc(e.n)}</sup>` : ''}</h1>
             <div class="meta">
                 <span class="lang-badge ${esc(e.lang)}">${esc(e.language)}</span>${e.spelling ? '<span class="lang-badge spelling" title="A spelling, not a word">Spelling</span>' : ELieb.isProperNoun(e.headword, e.lang) ? ELieb.properNounBadge() : ''}${e.xref ? ' <span class="lang-badge xref" title="This entry only sends you to another headword (Liebermann’s “s.”): a variant spelling or a form entered elsewhere">Cross-reference entry</span>' : ''}
-                ${page ? `<span>${page}${e.facsimile ? ` · <a href="${esc(ELieb.safeUrl(e.facsimile))}" target="_blank" rel="noopener">page scan</a>` : ''}</span>` : ''}
+                ${page ? `<span>${page}</span>` : ''}
             </div>
         </header>
 
         <section class="entry-section">
-            <h2>Liebermann's entry</h2>
             <div class="liebermann-text">${e.original ? paragraphs(ELieb.renderTei(e.original, root), e.lang === 'de') : ''}</div>
             ${e.spelling ? `<p class="spelling-note">Headword refers to a scribal spelling: Liebermann's note on how a certain sound or letter combination is written in the MSS.</p>` : ''}
-            ${e.xref ? '' : `<p class="small muted reading-help">Click a <span class="link-key link-key--law">law code</span>, <span class="link-key link-key--ms">manuscript</span>, <span class="link-key link-key--gram">technical term</span> or <span class="link-key link-key--bib">cited work</span> to see what it stands for.<br>Click a <span class="link-key link-key--clause">clause number</span> to see that clause (with all its MS variants) in the laws database.<br>Click a <span class="link-key link-key--entry">linked headword</span> to see that entry in the dictionary.</p><p class="small muted reading-help reading-help--tilde">Liebermann's ~ repeats as much of the headword or preceding word as stays the same (e.g. under <i>abbod</i>, ~des is <i>abbodes</i>). <a href="${root}guide.html">How to read an entry</a>.</p>`}
+            ${e.xref ? '' : `<p class="small muted reading-help">Click a <span class="link-key link-key--law">law code</span>, <span class="link-key link-key--ms">manuscript</span>, <span class="link-key link-key--gram">technical term</span> or <span class="link-key link-key--bib">cited work</span> to see what it stands for.<br>Click a <span class="link-key link-key--clause">clause number</span> to see that clause (with all its MS variants) in the laws database.<br>Click a <span class="link-key link-key--entry">linked headword</span> to see that entry in the dictionary.</p><p class="small muted reading-help reading-help--tilde"><a href="${root}guide.html">How to read an entry</a></p>`}
         </section>
 
         ${/* An English translation of the definition (<sense type="translation">)
