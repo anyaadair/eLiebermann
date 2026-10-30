@@ -4,17 +4,17 @@ Made by `tools/link-citations.py --letter ALL`. It is replaced each time the too
 
 ```
 All entries: 9090 (with a law code citation list: 6466)
-Citations in their lists: 31647
-  linked, exact             138
-  linked, subclause           3
+Citations in their lists: 31716
+  linked, exact             516
+  linked, subclause          19
   linked, and-following       1
-  linked, instituta           2
-  linked, already linked  30140
-  LINKED TO A CLAUSE:       30284  (96% of all citations; 99% of those with a clause number to a code in the database)
+  linked, parent clause       2
+  linked, already linked  29756
+  LINKED TO A CLAUSE:       30294  (96% of all citations; 99% of those with a clause number to a code in the database)
   not linked, clause not found            232
   not linked, citation not understood       1
-  not linked, code not in database       1110
-Entries changed: 49; entries whose whole list is linked: 5637
+  not linked, code not in database       1176
+Entries changed: 105; entries whose whole list is linked: 5641
 ```
 
 ## The code is in the database but no clause file has that number
@@ -86,21 +86,20 @@ Citations (with how many times each occurs):
 
 ## The code has no clause files
 
-By code: ECf (653), WlArtFz (346), ECfRetr (52), Lond (47), ApAGu (12)
+By code: ECf (719), WlArtFz (346), ECfRetr (52), Lond (47), ApAGu (12)
 
 Citations (with how many times each occurs):
 
-- ECf 32 ×97
 - Wl art Fz 5 ×29
 - Wl art Fz 6 ×29
 - Wl art Fz 2 ×27
-- ECf 13,1 ×25
 - Wl art Fz 3,1 ×24
-- ECf 11,1 ×23
 - Wl art Fz 4 ×23
 - Wl art Fz 1 ×21
 - Wl art Fz 10 ×21
+- ECf 32 E ×19
 - ECf 33 ×19
+- ECf 13,1 A ×18
 - Wl art Fz 8 ×17
 - Wl art Fz 8,2 ×16
 - Wl art Fz Insc ×16
@@ -110,33 +109,39 @@ Citations (with how many times each occurs):
 - Wl art Fz 8,1 ×13
 - Wl art Fz 8,3 ×13
 - Wl art Fz 9 ×13
-- ECf 35,1 ×12
 - Wl art Fz 6,1 ×12
+- ECf 32 ×11
 - Wl art Fz 3,2 ×11
 - ECf 21 ×10
 - ECf 35,2 ×10
 - Lond retr 1 ×10
 - ECf 12,6 ×9
 - ECf 30 ×9
+- ECf 32 B ×9
 - ECf 32,2 ×9
 - ECf 36,5 ×9
 - ECf 12 ×8
-- ECf 12,10 ×8
+- ECf 13,1 ×8
+- ECf 34 ×8
 - Wl art Fz 6,2 ×8
 - ECf 10 ×7
 - ECf 11,2 ×7
 - ECf 12,3 ×7
 - ECf 23,1 ×7
-- ECf 34 ×7
+- ECf 32 A 3 ×7
 - ECf 34,2e ×7
 - ECf 35 ×7
 - ECf 4 ×7
 - Wl art Fz 6,3 ×7
+- ECf 11,1 A 1 ×6
 - ECf 22,3 ×6
+- ECf 35,1 ×6
+- ECf 35,1 A 2 ×6
 - ECf 36,3 ×6
 - ECf Pro ×6
 - ECf Pro 1 ×6
 - Lond retr 9 ×6
+- ECf 11,1 A 5 ×5
 - ECf 12,5 ×5
 - ECf 15,1 ×5
 - ECf 20 ×5
@@ -144,12 +149,7 @@ Citations (with how many times each occurs):
 - ECf 21,1 ×5
 - ECf 27 ×5
 - ECf 28 ×5
-- ECf 36 ×5
-- Lond retr 6 ×5
-- Lond retr Insc ×5
-- ECf 12,4 ×4
-- ECf 12,9 ×4
-- ECf 12c ×4
+- ECf 32 A ×5
 
 ## The citation text does not start with a spelling of its code
 
