@@ -79,7 +79,7 @@ const ENTRY_FILES = [{% for f in entry_files %}"{{ f.basename }}"{% unless forlo
         if (!list.length) {
             results.innerHTML = hidden.size
                 ? `<p>No entries match. Some kinds of entry are hidden: press <strong>All</strong> above to include them.</p>`
-                : `<p>No entries match. <a href="${root}contribute.html">Suggest an entry</a> if it's missing.</p>`;
+                : `<p>No entries match.</p>`;
             return;
         }
         results.innerHTML = letters.map(l => `

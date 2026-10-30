@@ -8,7 +8,8 @@
 >
 > - **Look up a word:** [Dictionary](https://anyaadair.github.io/eLiebermann/dictionary.html)
 > - **Abbreviations:** [Law codes and manuscripts](https://anyaadair.github.io/eLiebermann/lawAbb.html) · [Grammatical abbreviations](https://anyaadair.github.io/eLiebermann/gramAbb.html) · [Authors and works cited](https://anyaadair.github.io/eLiebermann/bibAbb.html)
-> - **Suggest an entry or a change:** [Suggest an entry](https://anyaadair.github.io/eLiebermann/contribute.html), or *Suggest a change* at the foot of any entry
+> - **Bibliography:** [works cited and further reading](https://anyaadair.github.io/eLiebermann/bibliography.html)
+> - **Suggest a change:** *Suggest a change* at the foot of any entry, or *Report a problem* at the foot of any law clause
 
 ---
 
@@ -33,7 +34,7 @@ eLiebermann is a digital edition of the *Wörterbuch*, the dictionary in Felix L
 It is a static website hosted on **GitHub Pages** and built with **Jekyll**, using the `jekyll-theme-cayman` theme with a custom layout. It has no server or database of its own:
 
 - **Entries** are TEI XML files in `entries/`, one per headword. The browser fetches them and renders them on the fly. The format is in [docs/SCHEMA.md](docs/SCHEMA.md).
-- **New entries and changes** are suggested in the browser with the [Suggest an entry](contribute.html) form, which makes a TEI file for an editor to add to `entries/` on GitHub. Whole Word documents are imported with `tools/import-docx.js` (the browser import page is kept in the code but is not on the site for now). Sending submissions straight to the site is on the [roadmap](#roadmap).
+- **Changes** are suggested with the *Suggest a change* box on each entry page and the *Report a problem* box on each law clause page (`scripts/suggest-change.js`); each suggestion arrives as an issue in the private repository `anyaadair/eLiebermann-suggestions` (through the Cloudflare Worker in `tools/suggest-worker/`). New entries are added as TEI files in `entries/`. Whole Word documents are imported with `tools/import-docx.js` (the browser import page is kept in the code but is not on the site for now). Sending submissions straight to the site is on the [roadmap](#roadmap).
 
 The project is deliberately a **perpetual work in progress**. Entries that don't exist yet are invitations to contribute, not defects.
 
@@ -50,10 +51,9 @@ Nothing is published until it is committed to `main`. GitHub Pages rebuilds the 
            built on deploy)      rendered in the
                                  browser)
 
- Contributor ──▶ contribute.html (suggest an entry, or ?id= a change to one)
-                   │  builds TEI with scripts/eliebermann.js, links law codes and abbreviations
+ Reader ──▶ "Suggest a change" / "Report a problem" ──▶ Cloudflare Worker ──▶ issue in eLiebermann-suggestions
                    ▼
-                 TEI file(s) downloaded ──▶ editor uploads to entries/ on GitHub ──▶ site rebuilds
+                 editor changes the TEI file in entries/ (or oe-laws/) on GitHub ──▶ site rebuilds
 ```
 
 - **Entry pages** (`entry.html?id=abbod`) fetch `entries/abbod.xml` and render it with `ELieb.renderTei()`. The `id` can also be a headword (`entry.html?id=æbære`). If there is no file, the page offers to start one.
@@ -76,7 +76,7 @@ Nothing is published until it is committed to `main`. GitHub Pages rebuilds the 
 | `index.html`, `about.html` | Home and About. Their text is in `pages/`. |
 | `dictionary.html` | A–Z list and search. |
 | `entry.html` | Shows one entry. |
-| `contribute.html` | *Suggest an entry*: makes, previews and downloads one entry's TEI file. `?id=` suggests a change to an existing entry, with the form filled in from its file. |
+| `bibliography.html` | The Bibliography: Liebermann's volumes, his citations (`data/bibliography.json`), the editions, translations and studies used on the clause pages, and further reading (`data/works.json`), with search and filters. Where each work is used is counted on deploy by `tools/build-bibliography.js`. |
 | `import.html` | Bulk import of a Word document in the browser. Not on the site for now (`published: false`); see [docs/IMPORT.md](docs/IMPORT.md). |
 | `abbreviations.html`, `lawAbb.html`, `msAbb.html`, `gramAbb.html`, `bibAbb.html` | The abbreviation lists: law codes, manuscripts, grammatical abbreviations, and authors and works cited (`scripts/abbreviations.js`). |
 | `guide.html` | How to read an entry: Liebermann's own explanation of the dictionary (vol. II.1, p. IV) in English, with a key to his citations. |
@@ -105,7 +105,7 @@ Nothing is published until it is committed to `main`. GitHub Pages rebuilds the 
 
 ## Adding entries
 
-**One entry:** fill in [Suggest an entry](https://anyaadair.github.io/eLiebermann/contribute.html), download the file, and upload it to [`entries/`](https://github.com/anyaadair/eLiebermann/upload/main/entries).
+**One entry:** write its TEI file (see [docs/SCHEMA.md](docs/SCHEMA.md)) and upload it to [`entries/`](https://github.com/anyaadair/eLiebermann/upload/main/entries).
 
 **A Word document of entries:** run `node tools/import-docx.js` (see [docs/IMPORT.md](docs/IMPORT.md)). Entries already on the site are kept unless you ask to replace them.
 

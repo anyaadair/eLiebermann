@@ -2,7 +2,7 @@
 
 Each dictionary entry is one TEI XML file in `entries/`, named after its headword (see [File names](#file-names)). The site reads these files in the browser; nothing else needs updating when one is added.
 
-The files are made by the [Suggest an entry](../contribute.html) form, the bulk import (`import.html` or `tools/import-docx.js`), all of which use `ELieb.buildEntryXml()` in `scripts/eliebermann.js`. If you edit a file by hand, keep to the shape below.
+The files were made by the former *Suggest an entry* form and the bulk import (`import.html` or `tools/import-docx.js`), all of which use `ELieb.buildEntryXml()` in `scripts/eliebermann.js`. If you edit a file by hand, keep to the shape below.
 
 ## Example
 
