@@ -214,6 +214,19 @@
         }
         const german = norm(row['German Expansion']);
         const english = norm(row['English Translation']);
+        // A law code or manuscript: just its standard (English) name, unlabelled; the full
+        // details are on the list, where the link (and "Full list") goes.
+        if (kindOf(link) === 'law' || kindOf(link) === 'ms') {
+            const p = element('p', 'law-popup-expansion', english || german);
+            p.lang = english ? 'en' : 'de';
+            box.appendChild(p);
+            const moreLm = element('a', 'law-popup-more', kind.more);
+            moreLm.href = root() + kind.list + '#' + encodeURIComponent(anchorOf(link));
+            box.appendChild(moreLm);
+            box.addEventListener('mouseenter', () => clearTimeout(hideTimer));
+            box.addEventListener('mouseleave', () => { if (!pinned) scheduleHide(); });
+            return box;
+        }
         if (german) {
             list.appendChild(element('dt', null, 'German'));
             const dd = element('dd', null, german);
