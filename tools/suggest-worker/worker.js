@@ -21,7 +21,8 @@ const KINDS = {
 // addresses accepted for a link to another dictionary
 const DICTIONARIES = {
     bt: { name: 'Bosworth–Toller', hosts: ['bosworthtoller.com', 'www.bosworthtoller.com', 'bosworth.ff.cuni.cz'] },
-    doe: { name: 'Dictionary of Old English', hosts: ['doe.artsci.utoronto.ca', 'tapor.library.utoronto.ca', 'www.doe.utoronto.ca', 'doe.utoronto.ca'] }
+    // any address of the DOE: an entry opened in its own tab is https://indiv.dictionary.doe.utoronto.ca/doe/?E00946
+    doe: { name: 'Dictionary of Old English', hosts: ['doe.artsci.utoronto.ca', 'tapor.library.utoronto.ca'], suffix: '.doe.utoronto.ca' }
 };
 
 export default {
@@ -63,7 +64,8 @@ export default {
             const dict = DICTIONARIES[l && l.dict];
             let url = clip(l && l.url, 500), host = '';
             try { host = new URL(url).hostname; } catch (e) { return null; }
-            return dict && dict.hosts.includes(host) ? { name: dict.name, url, word: clip(l.word, 120) } : null;
+            const ok = dict && (dict.hosts.includes(host) || (dict.suffix && (host.endsWith(dict.suffix) || host === dict.suffix.slice(1))));
+            return ok ? { name: dict.name, url, word: clip(l.word, 120) } : null;
         }).filter(Boolean);
         const name = clip(d.name, 120), email = clip(d.email, 200);
         if (!text && !links.length) return reply({ ok: false, error: 'Please describe the change, or add a dictionary link.' }, 400);

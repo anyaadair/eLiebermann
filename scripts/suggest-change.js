@@ -16,7 +16,8 @@
     // what the suggestion is about: one or more
     const KINDS = [['link', 'Missing/wrong link(s)'], ['dict', 'Add/correct dictionary link(s)'], ['other', 'Something else']];
     const DICTS = [['bt', 'Bosworth–Toller', /^(www\.)?bosworthtoller\.com$|^bosworth\.ff\.cuni\.cz$/],
-        ['doe', 'Dictionary of Old English', /^(doe\.artsci|tapor\.library|(www\.)?doe)\.utoronto\.ca$/]];
+        // any address of the DOE, e.g. https://indiv.dictionary.doe.utoronto.ca/doe/?E00946 (an entry opened in its own tab)
+        ['doe', 'Dictionary of Old English', /(^|\.)doe\.utoronto\.ca$|^doe\.artsci\.utoronto\.ca$|^tapor\.library\.utoronto\.ca$/]];
     const esc = s => ELieb.escapeXml(s);
     let turnstileLoading = null;
     const loadTurnstile = () => turnstileLoading || (turnstileLoading = new Promise((ok, fail) => {
@@ -45,7 +46,7 @@
 
                     <fieldset class="suggest-form__part suggest-form__links">
                         <legend>Add a link to another dictionary</legend>
-                        <p class="small muted">Find the word in <a href="https://bosworthtoller.com/search?q=${encodeURIComponent(info.headword.replace(/[\[\]()]/g, ''))}" target="_blank" rel="noopener">Bosworth–Toller</a> or the <a href="https://doe.artsci.utoronto.ca/" target="_blank" rel="noopener">Dictionary of Old English</a>, and paste the address of its page here.</p>
+                        <p class="small muted">Find the word in <a href="https://bosworthtoller.com/search?q=${encodeURIComponent(info.headword.replace(/[\[\]()]/g, ''))}" target="_blank" rel="noopener">Bosworth–Toller</a> or the <a href="https://doe.artsci.utoronto.ca/" target="_blank" rel="noopener">Dictionary of Old English</a>, and paste the address of its page here. (In the DOE, open the entry in a tab of its own to get its address, e.g. https://indiv.dictionary.doe.utoronto.ca/doe/?E00946.)</p>
                         <div class="suggest-form__rows"></div>
                         <button type="button" class="link-button" data-add-link>+ Add another link</button>
                     </fieldset>
@@ -84,7 +85,7 @@
                 if (e.target.closest('[data-cancel]')) close();
             });
             form.addEventListener('change', e => {
-                if (e.target.matches('select')) e.target.nextElementSibling.placeholder = e.target.value === 'bt' ? 'https://bosworthtoller.com/…' : 'https://doe.artsci.utoronto.ca/…';
+                if (e.target.matches('select')) e.target.nextElementSibling.placeholder = e.target.value === 'bt' ? 'https://bosworthtoller.com/…' : 'https://indiv.dictionary.doe.utoronto.ca/doe/?E…';
             });
             let token = '';
             if (TURNSTILE_SITE_KEY) loadTurnstile().then(() => {
