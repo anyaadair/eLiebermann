@@ -489,6 +489,32 @@ a.dict-card:hover .dict-card__word { color: var(--link-hover); text-decoration: 
     background: var(--surface); border: 1px solid var(--rule); border-radius: var(--radius);
 }
 .suggest-change p { margin: 0; }
+/* the box opened into the form */
+.suggest-change--open { display: block; padding: 1rem 1.2rem 1.2rem; }
+.suggest-form__title { font-size: 1.25rem; margin: 0 0 0.2rem; }
+.suggest-form__part { border: 0; padding: 0; margin: 1rem 0 0; }
+.suggest-form__part legend { font-family: var(--sans); font-weight: 600; font-size: 0.95rem; color: var(--navy-dark); padding: 0; margin-bottom: 0.4rem; }
+.suggest-form__label { display: block; font-size: 0.9rem; margin: 0.7rem 0 0.25rem; }
+.suggest-form textarea, .suggest-form input[type=text], .suggest-form input[type=email], .suggest-form input[type=url], .suggest-form select {
+    font: inherit; font-size: 0.95rem; padding: 0.4rem 0.55rem; border: 1px solid var(--rule); border-radius: 4px; background: var(--paper); width: 100%; }
+.suggest-form textarea { resize: vertical; min-height: 5rem; }
+.suggest-form__links { background: var(--powder-tint); border: 1px solid #d3dfeb; border-radius: var(--radius); padding: 0.75rem 0.9rem 0.8rem; }
+.suggest-form__links legend { float: left; width: 100%; margin-bottom: 0.2rem; }
+.suggest-form__links legend + * { clear: both; }
+.suggest-form__links p { margin: 0 0 0.5rem; }
+.suggest-form__row { display: grid; grid-template-columns: 13rem minmax(0, 1fr) auto; gap: 0.4rem; align-items: center; margin-bottom: 0.4rem; }
+.suggest-form__row input, .suggest-form__row select { background: var(--surface); }
+.suggest-form__who label { display: block; font-size: 0.9rem; margin-bottom: 0.5rem; }
+.suggest-form__who input { margin-top: 0.2rem; }
+.suggest-form__who p { margin: 0; }
+.suggest-form__hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.suggest-form__robot { margin-top: 0.8rem; }
+.suggest-form__status { min-height: 1.2em; margin: 0.7rem 0 0.4rem; font-size: 0.92rem; }
+.suggest-form__status.is-error { color: var(--error); }
+.suggest-form__buttons { display: flex; gap: 0.6rem; flex-wrap: wrap; }
+.suggest-thanks { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.5rem 1rem; }
+.suggest-thanks p { margin: 0; }
+@media (max-width: 40rem) { .suggest-form__row { grid-template-columns: minmax(0, 1fr) auto; } .suggest-form__row select { grid-column: 1 / -1; } }
 .source-line { font-size: 0.9rem; color: var(--muted); border-top: 1px solid var(--rule); padding-top: 1rem; }
 
 /* The printed page beside the entry; stacked under it on narrow screens. */

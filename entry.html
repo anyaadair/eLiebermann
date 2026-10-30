@@ -5,6 +5,7 @@ scripts:
   - "ROOT/scripts/eliebermann.js"
   - "ROOT/scripts/lawpopup.js"
   - "ROOT/scripts/suggest.js"
+  - "ROOT/scripts/suggest-change.js"
 ---
 <div class="entry-layout" id="entry-layout">
     <aside class="entry-sidebar" id="entry-sidebar" aria-label="Search and links">
@@ -81,6 +82,8 @@ scripts:
             showScanOnClick();
             showNeighbours();
             showSidebar();
+            const box = document.getElementById('suggest-change');
+            if (box && window.SuggestChange) SuggestChange.attach(box, { headword: e.headword, page: location.href.split('#')[0], section: 'dictionary' });
         })
         .catch(err => {
             // A file joined into another entry (e.g. þæt IV, once thaet-5, is now
@@ -457,9 +460,9 @@ scripts:
 
         <nav class="entry-nav" aria-label="Previous and next entries" hidden></nav>
 
-        <div class="suggest-change">
-            <p>Spotted a mistake, or have a translation or link to add?</p>
-            <a class="button" href="${root}contribute.html?id=${encodeURIComponent(slug)}">Suggest a change</a>
+        <div class="suggest-change" id="suggest-change">
+            <p>Spotted a mistake, a missing link, or a link to Bosworth–Toller or the DOE to add?</p>
+            <button type="button" class="button" data-open-suggest>Suggest a change</button>
         </div>
 
         <p class="source-line">
