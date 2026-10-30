@@ -33,7 +33,7 @@ The site is built with Jekyll and GitHub Pages, on the model of [Common Ground](
 | No About page | `about.html`, text in `pages/About.xml`. |
 | 18 HTML entries, not linked | 977 TEI entries in `entries/`: all 976 in *A - boc.docx* plus *bocland*. The hand-added definition on *Accusativ* and translation and links on *bocland* were carried over. |
 | No way to browse entries | `dictionary.html`: A–Z list with search and a language filter. `entry.html?id=…` shows one entry. |
-| Editor made HTML | `contribute.html` makes a TEI file, previews it, checks whether the entry already exists, and can open an existing entry for correction. |
+| Editor made HTML | `contribute.html` (removed October 2026) made a TEI file, previews it, checks whether the entry already exists, and can open an existing entry for correction. |
 | Entries pasted one at a time | `import.html` (and `tools/import-docx.js`) turns a whole Word document into TEI files. See [IMPORT.md](IMPORT.md). |
 | `lawAbb.html`, `gramAbb.html` | Same addresses, so old links still work; now one shared script (`scripts/abbreviations.js`) and the site layout. |
 | Test files (`markdownTest.md`, `citations/adair.html`, `commentary5/`) | Deleted. |
