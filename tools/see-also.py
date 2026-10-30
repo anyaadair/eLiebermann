@@ -91,6 +91,7 @@ FORMS = {
     ('ael-2', 'el-'): 'e-lcor',             # "æl- s. el-": the æl- words are under el-; the first of them (Anya)
     ('i', 'æ'): 'ae-4',                    # "dafür æ: s. d.": æ- (checked by Anya), not the other æ spelling entries
     ('aedel', 'Æðelnoth'): 'Aethelnothus', # headword spelt with th (Æthelnothus); Liebermann refers to it with ð
+    ('agend', 'unlanda~'): 'unlandagende', ('agend', 'landa~'): 'landagende',   # "(un)landa~": the entries end in -e (suggestion #4)
     ('a-6', 'ricsare'): 'ricsares',        # headword is the plural
     ('a-6', 'mæstan'): 'maest',            # weak form of mæst (which points on to micel)
     ('a-6', 'tæcean'): 'taecan',           # a form listed under tæcan
