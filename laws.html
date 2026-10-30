@@ -58,16 +58,6 @@ scripts:
         <div class="kind-pills kind-pills--small" id="langs" role="group" aria-label="Language of the text"></div>
     </div>
 
-    <div class="panel-sec panel-sec--shared">
-        <div class="sidebar-label">Date (Liebermann's suggested dates)</div>
-        <div class="panel-dates"><label>from <input type="number" id="from" min="500" max="1300" step="10" placeholder="600"></label> <label>to <input type="number" id="to" min="500" max="1300" step="10" placeholder="1300"></label></div>
-    </div>
-
-    <div class="panel-sec panel-sec--shared">
-        <div class="sidebar-label">Order of results</div>
-        <div class="kind-pills kind-pills--small" id="sort" role="group" aria-label="Order of results"></div>
-    </div>
-
     <p><button type="button" class="button button--quiet" id="reset">Clear the search</button></p>
 </aside>
 
@@ -90,7 +80,7 @@ scripts:
     const root = window.SITE_ROOT || '';
     const $ = id => document.getElementById(id);
     const results = $('results'), count = $('count'), tally = $('tally'), tools = $('tools');
-    const q = $('q'), w = $('w'), d = $('d'), kw = $('kw'), tol = $('tol'), from = $('from'), to = $('to');
+    const q = $('q'), w = $('w'), d = $('d'), kw = $('kw'), tol = $('tol');
     const LIMIT = 300;
     let showAll = false;
     let clauses = [], codes = [], searcher = null, allTerms = [], termCount = {};
@@ -111,7 +101,7 @@ scripts:
     const TRANSLATORS = [['robertson', 'Robertson'], ['whitelock', 'Whitelock'], ['attenborough', 'Attenborough'], ['rabin', 'Rabin'],
         ['jurasinski-and-oliver', 'Jurasinski and Oliver'], ['oliver', 'Oliver'], ['kennedy', 'Kennedy'], ['gobbitt', 'Gobbitt'],
         ['wormald', 'Wormald'], ['claude', 'English of Liebermann’s German'], ['unattributed', 'Not recorded']];
-    const LANGS = [['ang', 'Old English'], ['la', 'Latin'], ['xno', 'Anglo-Norman French']];
+    const LANGS = [['ang', 'Old English'], ['la', 'Latin'], ['xno', 'French', 'Anglo-Norman French']];
     // Groups of law codes, by the groups of the list of law codes (oe-laws/codes.json)
     const PRESETS = [
         ['kent', 'Kentish kings', ['Æthelberht of Kent', 'Hlothhere and Eadric of Kent', 'Wihtred of Kent', 'Earconberht of Kent']],
@@ -125,7 +115,7 @@ scripts:
     ];
     const S = {
         where: new Set(['orig', 'en']), match: 'whole',
-        dict: '', kws: [], kwMode: 'all', codes: new Set(), langs: new Set(), sort: 'law'
+        dict: '', kws: [], kwMode: 'all', codes: new Set(), langs: new Set()
     };
 
     function readAddress() {
@@ -140,9 +130,6 @@ scripts:
         S.kwMode = p.get('kwm') === 'any' ? 'any' : 'all';
         S.codes = new Set((p.get('codes') || p.get('law') || '').split('|').filter(Boolean));
         S.langs = new Set((p.get('lang') || '').split(',').filter(Boolean));
-        from.value = p.get('from') || '';
-        to.value = p.get('to') || '';
-        S.sort = p.get('sort') === 'date' ? 'date' : 'law';
         // the old "Also search the texts and translations" box: the words box now
         if (p.get('text') === '1' && q.value && !w.value && !(searcher && searcher.read(q.value))) { w.value = q.value; q.value = ''; }
     }
@@ -159,9 +146,6 @@ scripts:
         if (S.kws.length) { p.set('kw', S.kws.join('|')); if (S.kwMode === 'any' && S.kws.length > 1) p.set('kwm', 'any'); }
         if (S.codes.size) p.set('codes', [...S.codes].join('|'));
         if (S.langs.size) p.set('lang', [...S.langs].join(','));
-        if (from.value) p.set('from', from.value);
-        if (to.value) p.set('to', to.value);
-        if (S.sort === 'date') p.set('sort', 'date');
         history.replaceState(null, '', location.pathname + (p.toString() ? '?' + p : ''));
     }
 
@@ -230,7 +214,6 @@ scripts:
             ? `Searching ${plural(S.codes.size, 'law code', 'law codes')}: ${esc(codeNames().join(', '))} <button type="button" class="link-button" id="codes-all" title="Search all law codes again">✕ all law codes</button>`
             : `Searching all ${codes.length} law codes.`;
         setPills($('langs'), LANGS, S.langs, 'All');
-        pills($('sort'), [['law', 'In the order of the laws'], ['date', 'By date']], k => S.sort === k, k => { S.sort = k; changed(); });
         markPanel();
     }
     const presetCodes = k => { const p = PRESETS.find(x => x[0] === k); return p ? codes.filter(c => p[2].includes(c.group)).map(c => c.code) : []; };
@@ -277,9 +260,9 @@ scripts:
         if (e.target.closest('[data-deldict]')) { S.dict = ''; changed(); }
     });
     $('reset').addEventListener('click', () => {
-        q.value = w.value = d.value = kw.value = from.value = to.value = '';
+        q.value = w.value = d.value = kw.value = '';
         tol.checked = false;
-        Object.assign(S, { where: new Set(['orig', 'en']), match: 'whole', dict: '', kws: [], kwMode: 'all', codes: new Set(), langs: new Set(), sort: 'law' });
+        Object.assign(S, { where: new Set(['orig', 'en']), match: 'whole', dict: '', kws: [], kwMode: 'all', codes: new Set(), langs: new Set() });
         changed();
     });
 
@@ -308,6 +291,7 @@ scripts:
     }
     suggestBox(kw, $('kw-list'), typed => {
         const t = fold(typed);
+        if (!t) return [];
         const starts = [], has = [];
         allTerms.forEach(k => { if (S.kws.includes(k)) return; const f = fold(k); if (!t || f.startsWith(t)) starts.push(k); else if (f.includes(t)) has.push(k); });
         return starts.concat(has).slice(0, 12).map(k => ({ value: k, html: `<span class="headword">${esc(k)}</span> <span class="gloss">${termCount[k] || 0}</span>` }));
@@ -376,25 +360,6 @@ scripts:
         return textsLoading;
     }
 
-    // ---- Dates: Liebermann's suggested dates of each law code, as years ----
-    function codeYears(c) {
-        if (c._years) return c._years;
-        const lieb = (c.date || '').split(';').find(p => /Liebermann/.test(p)) || (c.date || '').split(';')[0] || '';
-        const t = lieb.replace(/\([^)]*\)/g, ' ');
-        let lo = Infinity, hi = -Infinity;
-        for (const m of t.matchAll(/(\d{1,2})(?:st|nd|rd|th) century/g)) { lo = Math.min(lo, (m[1] - 1) * 100); hi = Math.max(hi, m[1] * 100 - 1); }
-        for (const m of t.replace(/(\d{1,2})(?:st|nd|rd|th) century/g, '').matchAll(/\d{3,4}/g)) { const y = +m[0]; if (y >= 500 && y <= 1400) { lo = Math.min(lo, y); hi = Math.max(hi, y); } }
-        if (lo === Infinity && c.reign) for (const m of c.reign.matchAll(/\d{3,4}/g)) { lo = Math.min(lo, +m[0]); hi = Math.max(hi, +m[0]); }
-        if (/before/.test(t) && lo === hi) lo = 500;
-        c._years = lo === Infinity ? null : [lo, hi];
-        return c._years;
-    }
-    const inDates = c => {
-        const f = +from.value || 0, t = +to.value || 9999;
-        if (!from.value && !to.value) return true;
-        const y = codeYears(byCode[c.code] || {});
-        return y ? y[1] >= f && y[0] <= t : false;
-    };
 
 
     // The law codes in groups (by king), in the order of the database.
@@ -466,7 +431,7 @@ scripts:
 
     // ---- The list of law codes (no search, or only a choice of codes, language or dates) ----
     function drawCodes() {
-        const ok = c => (!S.codes.size || S.codes.has(c.code)) && inDates({ code: c.code }) &&
+        const ok = c => (!S.codes.size || S.codes.has(c.code)) &&
             (!S.langs.size || clauses.some(x => x.code === c.code && x.langs.some(l => S.langs.has(l))));
         const gs = groups().map(g => Object.assign({}, g, { items: g.items.filter(ok) })).filter(g => g.items.length);
         const n = gs.reduce((a, g) => a + g.items.length, 0);
@@ -506,7 +471,6 @@ scripts:
         let list = clauses.filter(c => {
             if (S.codes.size && !S.codes.has(c.code)) return false;
             if (S.langs.size && !c.langs.some(l => S.langs.has(l))) return false;
-            if (!inDates(c)) return false;
             if (term && !byCite(c)) return false;
             if (kwFold.length && !(S.kwMode === 'any' ? kwFold.some(k => c._kwList.includes(k)) : kwFold.every(k => c._kwList.includes(k)))) return false;
             if (S.dict && !(dictIds && dictIds.has(c.id))) return false;
@@ -517,10 +481,6 @@ scripts:
             }
             return true;
         });
-        if (S.sort === 'date') {
-            const y = c => (codeYears(byCode[c.code] || {}) || [9999])[0];
-            list = list.map((c, i) => [c, i]).sort((a, b) => y(a[0]) - y(b[0]) || a[1] - b[1]).map(x => x[0]);
-        }
         lastList = list;
 
         const readAs = reading && reading.exact
@@ -557,7 +517,11 @@ scripts:
                     `<span class="hit"><span class="hit__label">${esc(label)}</span> ${kwic(text, ranges, lang)}</span>`).join('') +
                     (m.length > 3 ? `<span class="hit muted small">and ${m.length - 3} more</span>` : '') +
                     (m.every(x => x[3] !== 'en') && c.gloss ? `<span class="hit hit--gloss"><span class="hit__label">${esc(c.glossLabel || 'English')}</span> ${esc(c.gloss)}</span>` : '')
-                    : `<span class="clause-text">${esc(c.gloss || c.en || c.oe || '')}</span>`;
+                    : S.dict && c.oe
+                        // the Wörterbuch cites the clause for a word of its text: the text, then the crib
+                        ? `<span class="hit"><span class="hit__label">${esc(c.oeLabel || 'Text')}</span> <span${ELieb.langAttr(c.oeLang)}>${esc(c.oe)}</span></span>` +
+                          (c.gloss ? `<span class="hit hit--gloss"><span class="hit__label">${esc(c.glossLabel || 'English')}</span> ${esc(c.gloss)}</span>` : '')
+                        : `<span class="clause-text">${esc(c.gloss || c.en || c.oe || '')}</span>`;
                 return `
                 <li>
                     <a class="headword" href="${root}law.html?id=${encodeURIComponent(c.id)}">${esc(c.citation)}</a>
@@ -607,7 +571,7 @@ scripts:
     }
     q.addEventListener('input', () => changed(false));
     w.addEventListener('input', () => changed(false));
-    [tol, from, to].forEach(el => el.addEventListener('input', () => changed(false)));
+    tol.addEventListener('input', () => changed(false));
     results.addEventListener('click', e => {
         const chip = e.target.closest('.chip[data-kw]');
         if (chip) { if (!S.kws.includes(chip.dataset.kw)) S.kws.push(chip.dataset.kw); changed(); window.scrollTo(0, 0); return; }
