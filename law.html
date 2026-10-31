@@ -26,7 +26,8 @@ scripts:
         <div id="find-clauses" class="chips"></div>
         <div class="panel-sub">Match</div>
         <div class="kind-pills kind-pills--small" id="match" role="group" aria-label="How to match the words"></div>
-        <label class="panel-check"><input type="checkbox" id="tol"> Spelling tolerance <span class="muted">(i, y and ie; e, æ, ea and eo; single and double letters; c and k treated alike)</span></label>
+        <div class="panel-check tol-row"><label><input type="checkbox" id="tol"> Spelling tolerance</label> <button type="button" class="info-tip" data-info="tol-info" aria-expanded="false" aria-controls="tol-info" aria-label="What spelling tolerance does" title="Treated alike: i, y and ie · e, æ, ea, eo and io · u and v · c and k · single and double consonants">i</button></div>
+        <p class="panel-help" id="tol-info" hidden>Treated alike: <i>i</i>, <i>y</i> and <i>ie</i> · <i>e</i>, <i>æ</i>, <i>ea</i>, <i>eo</i> and <i>io</i> · <i>u</i> and <i>v</i> · <i>c</i> and <i>k</i> · single and double consonants.</p>
     </div>
 
     <div class="panel-sec">
@@ -956,7 +957,10 @@ scripts:
         // find on this page (the clause, or the whole code when it is shown)
         const find = $('find'), tol = $('tol');
         let matchMode = 'whole', marks = [], at = -1;
-        const drawMatch = () => LawPanel.pills($('match'), [['whole', 'Whole words'], ['part', 'Parts of words']], k => matchMode === k, k => { matchMode = k; drawMatch(); run(); });
+        // fromLink: the box was filled from a dictionary entry (?find=), and is looked for with the
+        // links' own spelling tolerance (law-search.js), not the reader's, until the reader changes it
+        let fromLink = false;
+        const drawMatch = () => LawPanel.pills($('match'), [['whole', 'Whole words'], ['part', 'Parts of words']], k => matchMode === k, k => { matchMode = k; fromLink = false; drawMatch(); run(); });
         drawMatch();
         const markPanel = LawPanel.watch($('panel'), () => ({ f: !!find.value.trim(), go: !!$('go').value.trim() }));
         const step = d => {
@@ -971,8 +975,9 @@ scripts:
         function run() {
             const whole = !!document.querySelector('.whole-code h2');
             $('find-label').textContent = whole ? 'Find in the whole of ' + row.code : 'Find in this clause';
-            const terms = find.value.trim() ? W.parseWords(find.value, tol.checked, matchMode === 'whole') : [];
-            marks = W.mark(target, terms, lang => tol.checked && !/^(en|de)$/.test(lang || ''));
+            const loose = fromLink ? 'link' : tol.checked;
+            const terms = find.value.trim() ? W.parseWords(find.value, loose, matchMode === 'whole') : [];
+            marks = W.mark(target, terms, lang => !/^(en|de)$/.test(lang || '') && loose);
             at = -1;
             $('find-status').hidden = !terms.length;
             const vis = marks.filter(m => m.offsetParent !== null);
@@ -993,9 +998,9 @@ scripts:
             if (vis.length && terms.length) step(1);
         }
         let timer = null;
-        find.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(run, 250); });
+        find.addEventListener('input', () => { fromLink = false; clearTimeout(timer); timer = setTimeout(run, 250); });
         find.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); step(e.shiftKey ? -1 : 1); } });
-        tol.addEventListener('input', run);
+        tol.addEventListener('input', () => { fromLink = false; run(); });
         $('find-prev').addEventListener('click', () => step(-1));
         $('find-next').addEventListener('click', () => step(1));
         document.addEventListener('wholecode', () => { drawLinks(); if (find.value.trim()) run(); else $('find-label').textContent = 'Find in the whole of ' + row.code; });
@@ -1006,6 +1011,7 @@ scripts:
         const wanted = (new URLSearchParams(location.search).get('find') || '').split(',').map(w => w.trim()).filter(w => w && !/\s/.test(w));
         if (wanted.length) {
             tol.checked = true;
+            fromLink = true;
             const letters = [...wanted[0]];
             const stems = letters.length <= 4 ? [wanted[0] + '*']
                 : [...new Set([letters.length - 2, letters.length - 3, Math.ceil(letters.length * 0.6)].map(n => Math.max(4, n)))].map(n => letters.slice(0, n).join('') + '*');
@@ -1014,7 +1020,18 @@ scripts:
                 run();
                 if (marks.length) break;
             }
-            if (!marks.length) { find.value = ''; run(); }
+            if (!marks.length) { find.value = ''; fromLink = false; run(); }
+            // found only in notes that are closed ("II Cn 54,1¹ A": the reading is in Liebermann's
+            // note 1): open those notes, so the form can be seen
+            else if (!marks.some(m => m.offsetParent !== null)) {
+                const toggles = new Set();
+                marks.forEach(m => {
+                    const shut = m.closest('[hidden]');
+                    const btn = shut && shut.parentElement && shut.parentElement.querySelector('.lnotes-toggle[aria-pressed="false"]');
+                    if (btn) toggles.add(btn);
+                });
+                if (toggles.size) { toggles.forEach(b => b.click()); run(); }
+            }
         }
     }
 

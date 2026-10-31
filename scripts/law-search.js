@@ -162,21 +162,34 @@
     // ---- Word search (the Laws page, a law code's page, a clause page) ----
     // Letters as the word search compares them: lower case, accents off, æ as ae, þ and ð as
     // th, ƿ as w, ȝ as g, ⁊ as "and"; with spelling tolerance also the usual variations of
-    // Old English (i, y, ie; e, æ, ea, eo; single and double letters; c and k).
+    // Old English (i, y, ie; e, æ, ea, eo; single and double letters; c and k; u and v).
+    // There are two kinds of tolerance, kept apart on purpose:
+    //  - 'user' (or true): what a reader gets by ticking "Spelling tolerance";
+    //  - 'link': what is used to mark the form a dictionary entry's citation is for, when a
+    //    clause is opened from the entry (law.html?find=). Liebermann gives the spelling as it
+    //    stands, so this one is conservative: change it only for differences that are certain.
+    // For now the two are the same; they may part as the reader's tolerance grows.
     const sfold = s => String(s || '').toLowerCase().replace(/⁊/g, ' and ').replace(/[æǣǽ]/g, 'ae').replace(/[þðꝥ]/g, 'th')
         .replace(/ƿ/g, 'w').replace(/ȝ/g, 'g').replace(/ß/g, 'ss').replace(/œ/g, 'oe').normalize('NFD').replace(/[̀-ͯ]/g, '');
-    const loosen = word => word.replace(/ie|y/g, 'i').replace(/ea|eo|io|ae/g, 'e').replace(/k/g, 'c').replace(/([b-df-hj-np-tv-z])\1+/g, '$1');
+    const LOOSEN = {
+        // Liebermann prints v where the editions have u (ævre, æure)
+        user: word => word.replace(/v/g, 'u').replace(/ie|y/g, 'i').replace(/ea|eo|io|ae/g, 'e').replace(/k/g, 'c').replace(/([b-df-hj-np-tv-z])\1+/g, '$1'),
+        link: word => word.replace(/v/g, 'u').replace(/ie|y/g, 'i').replace(/ea|eo|io|ae/g, 'e').replace(/k/g, 'c').replace(/([b-df-hj-np-tv-z])\1+/g, '$1')
+    };
+    const looseMode = loose => loose === 'link' ? 'link' : loose ? 'user' : '';
+    const loosen = (word, loose = 'user') => LOOSEN[looseMode(loose) || 'user'](word);
     const WORD = /[\p{L}\p{N}⁊]+(?:['’][\p{L}]+)?/gu;
     const wordsCache = new Map();
     // A text's words, folded (and loosened), with where each stands in the text. Without
     // loosening, each word also keeps where each of its folded letters came from (map), so
     // that a match inside a word ("gyld" in "XIIgylde") can be marked by itself.
     function wordsOf(text, loose) {
-        const key = (loose ? 'L' : 'S') + text;
+        const mode = looseMode(loose);
+        const key = (mode === 'link' ? 'K' : mode ? 'L' : 'S') + text;
         let r = wordsCache.get(key);
         if (!r) {
             r = [...String(text).matchAll(WORD)].map(m => {
-                if (loose) return { f: loosen(sfold(m[0]).replace(/[^a-z0-9]/g, '')), at: m.index, len: m[0].length };
+                if (mode) return { f: loosen(sfold(m[0]).replace(/[^a-z0-9]/g, ''), mode), at: m.index, len: m[0].length };
                 let f = '';
                 const map = [];
                 for (let i = 0; i < m[0].length; i++) {
@@ -199,7 +212,7 @@
     // folded word that matches, [start, end], or null.
     function parseWords(text, loose, whole) {
         const terms = [];
-        const norm = x => { let f = sfold(x).replace(/[^a-z0-9*]/g, ''); if (loose) f = loosen(f.replace(/\*/g, '\u0001')).replace(/\u0001/g, '*'); return f; };
+        const norm = x => { let f = sfold(x).replace(/[^a-z0-9*]/g, ''); if (loose) f = loosen(f.replace(/\*/g, '\u0001'), loose).replace(/\u0001/g, '*'); return f; };
         const test = (raw, w) => {
             const t = norm(raw);
             if (!t.replace(/\*/g, '')) return null;
@@ -288,6 +301,16 @@
         });
         return out;
     }
+    // The small "i" beside "Spelling tolerance": its title shows the list on mouseover; a click
+    // (or a tap, on a phone) shows or hides it under the box.
+    document.addEventListener('click', e => {
+        const b = e.target.closest && e.target.closest('.info-tip[data-info]');
+        if (!b) return;
+        const box = document.getElementById(b.dataset.info);
+        if (!box) return;
+        box.hidden = !box.hidden;
+        b.setAttribute('aria-expanded', String(!box.hidden));
+    });
     const words = { sfold, loosen, wordsOf, parseWords, findIn, mark, unmark };
 
     const api = { build, loose, clauseKey, clauseKeys, clauseMatches, words };
