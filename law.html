@@ -370,7 +370,10 @@ scripts:
         // The Quadripartitus, the Instituta Cnuti and the Consiliatio Cnuti are Latin translations known from
         // several manuscripts, not one manuscript: just "Q", "Inst. Cn.", "Cons. Cn.".
         const isQuad = LATIN_VERSION.test(abbr);
-        const s = el('span', 'ms-label', (isQuad ? (prefix ? 'of ' : '') : (prefix || 'MS ')) + abbr);
+        // where Liebermann prints two forms of the Quadripartitus side by side (EGu 10–11: Lond, the earlier
+        // form, and R, the later), the form is kept: "Q (Lond)", "Q (R)"
+        const form = isQuad && w ? (/\((Lond|R)\)\s*$/.exec(w.abbr) || [])[0] : '';
+        const s = el('span', 'ms-label', (isQuad ? (prefix ? 'of ' : '') : (prefix || 'MS ')) + abbr + (form ? ' ' + form : ''));
         if (w && w.name) s.title = w.name;
         return s;
     }
