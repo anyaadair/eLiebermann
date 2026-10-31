@@ -462,6 +462,11 @@ td.term { font-weight: 600; color: var(--navy-dark); white-space: nowrap; }
 
 .entry-section { margin: 0 0 1.5rem; }
 .entry-section h2 { font-size: 1.25rem; margin: 0 0 0.4rem; }
+/* Clause pages: the sections below the clause (Keywords, In the dictionary, Manuscripts, Editions
+   and translations, Studies): a slightly larger heading, and what follows it set in a little */
+.clause-section h2 { font-size: 1.4rem; margin: 0 0 0.5rem; }
+.clause-section > :not(h2) { margin-left: 1.25rem; }
+@media (max-width: 40rem) { .clause-section > :not(h2) { margin-left: 0.6rem; } }
 .entry-section .def { font-family: var(--serif); font-size: 1.1rem; }
 .entry-section ol { padding-left: 1.5rem; }
 /* Links to the same word in other dictionaries, as cards. */
@@ -723,7 +728,8 @@ ul.citations--cols.cols-3, ul.link-columns.cols-3 { columns: 3; }
 ul.citations li { break-inside: avoid; }
 
 /* Law clause pages (law.html) */
-.clause-texts h3 { font-size: 1.15rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink); margin: 1.4rem 0 0.4rem; }
+/* Only the texts and translations are in black: the headings and labels around them are grey. */
+.clause-texts h3 { font-size: 1.15rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #55595e; margin: 1.4rem 0 0.75rem; }
 .clause-texts p { margin: 0 0 0.4rem; }
 .clause-translation p { font-size: 1.05rem; }
 .clause-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 2rem; }
@@ -751,15 +757,15 @@ ul.citations li { break-inside: avoid; }
 .clause-dates p { margin: 0.1rem 0; }
 .clause-dates__label { font-weight: 600; }
 .clause-dates__sep { color: var(--muted); }
-.clause-source .ms-label { cursor: help; border-bottom: 1px dotted currentColor; }
+.clause-source .ms-label { cursor: help; border-bottom: 1px dotted currentColor; color: #45484c; }
 .clause-note { margin: 0.3rem 0 0.6rem; color: var(--muted); }
 .clause-note strong { color: inherit; font-weight: 600; }
 /* Liebermann's cross-references ("Vgl.") and the clauses that point back here */
-.clause-compare { margin: 0.6rem 0; padding: 0.5rem 0.8rem; border-left: 3px solid var(--rule, #ccc); }
+.clause-compare { margin: 0.6rem 0; padding: 0.25rem 0.8rem 0.4rem; border-left: 3px solid var(--rule, #ccc); }
 .clause-compare p { margin: 0.2rem 0; }
 .clause-compare strong { font-weight: 600; }
 .clause-compare .muted { color: var(--muted); }
-.clause-compare__head { font-family: var(--sans); font-size: 0.85rem; font-weight: 600; margin: 0 0 0.3rem; }
+.clause-compare__head, .clause-texts h3.clause-compare__head { font-family: var(--sans); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.06em; color: #55595e; margin: 0 0 0.35rem; }
 .clause-compare__quote { color: var(--muted); font-style: italic; }
 .ms-list { list-style: none; padding-left: 0; }
 .ms-list li { margin: 0.15rem 0; }
@@ -767,6 +773,9 @@ ul.citations li { break-inside: avoid; }
 .clause-texts h3.clause-subhead { margin-top: 1.4rem; }
 .clause-sources li:target { background: var(--highlight); }
 .clause-nav { display: flex; justify-content: space-between; gap: 1rem; margin: 1.5rem 0; }
+/* previous and next clause as small bubbles, so they don't read as part of the text */
+.clause-nav a { font-family: var(--sans); font-size: 0.85rem; text-decoration: none; padding: 0.25rem 0.85rem; border: 1px solid var(--rule); border-radius: 999px; background: var(--surface); color: var(--link); }
+.clause-nav a:hover, .clause-nav a:focus-visible { border-color: var(--link); background: var(--powder-tint); }
 .clause-nav--top { margin: 0.8rem 0 0.6rem; }
 /* Entry pages: previous and next entries */
 .entry-nav { display: flex; justify-content: space-between; gap: 1rem; margin: 2rem 0 1.5rem; padding-top: 1rem; border-top: 1px solid var(--rule); }
@@ -857,7 +866,7 @@ h2.result-code .code-abbr { min-width: 0; margin-left: 0.4rem; }
 a.chip { text-decoration: none; display: inline-block; }
 /* Clause pages: keywords as bubbles, under their group's name */
 .kw-groups { display: grid; grid-template-columns: max-content 1fr; gap: 0.5rem 0.9rem; align-items: baseline; margin: 0.6rem 0 0; }
-.kw-groups dt { font-weight: 600; }
+.kw-groups dt { font-weight: 600; color: #55595e; }
 .kw-groups dd { margin: 0; }
 .kw-groups .chips { gap: 0.35rem; }
 .kw-groups .chip { font-size: 0.9rem; padding: 0.1rem 0.7rem; color: var(--ink); }

@@ -748,7 +748,7 @@ scripts:
         // Below the texts: Keywords, In the dictionary, Manuscripts, Editions and translations, Studies.
         const kw = tei(doc, 'keywords').filter(k => k.textContent.trim());
         if (kw.length) {
-            const s = el('section', 'entry-section');
+            const s = el('section', 'entry-section clause-section');
             s.appendChild(el('h2', null, 'Keywords'));
             s.appendChild(el('p', 'small muted', 'Click a keyword to see every clause indexed with it in the pre-1066 codes.'));
             // Each keyword is a bubble, linking to its page under Subjects.
@@ -773,7 +773,7 @@ scripts:
 
         // The dictionary entries whose citation lists cite this clause (data/dict-citations.json,
         // written by tools/build-index.js): filled in when the list has loaded.
-        const dictSec = el('section', 'entry-section clause-dictionary');
+        const dictSec = el('section', 'entry-section clause-section clause-dictionary');
         dictSec.hidden = true;
         target.appendChild(dictSec);
         fetch(root + 'data/dict-citations.json').then(r => r.ok ? r.json() : {}).then(map => {
@@ -797,7 +797,7 @@ scripts:
 
         const wits = tei(doc, 'witness');
         if (wits.length) {
-            const s = el('section', 'entry-section');
+            const s = el('section', 'entry-section clause-section');
             s.appendChild(el('h2', null, 'Manuscripts'));
             const named = wits.some(w => tei(w, 'abbr').length);
             if (named) {
@@ -829,7 +829,7 @@ scripts:
         [['Editions and translations', srcs.filter(x => x.type !== 'study' && x.id !== 'claude').concat(srcs.filter(x => x.id === 'claude'))],
          ['Studies', srcs.filter(x => x.type === 'study')]].forEach(([title, list]) => {
             if (!list.length) return;
-            const s = el('section', 'entry-section clause-sources');
+            const s = el('section', 'entry-section clause-section clause-sources');
             s.appendChild(el('h2', null, title));
             const ul = el('ul');
             list.forEach(x => {
