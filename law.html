@@ -968,7 +968,9 @@ scripts:
             at = (at + d + vis.length) % vis.length;
             marks.forEach(m => m.classList.remove('find-hit--current'));
             vis[at].classList.add('find-hit--current');
-            vis[at].scrollIntoView({ block: 'center', behavior: 'smooth' });
+            // the page moves only when the match is off the screen
+            const r = vis[at].getBoundingClientRect();
+            if (r.top < 0 || r.bottom > window.innerHeight) vis[at].scrollIntoView({ block: 'center', behavior: 'smooth' });
             $('find-count').textContent = `${at + 1} of ${vis.length}` + (marks.length > vis.length ? ` (and ${marks.length - vis.length} in notes not open)` : '');
         };
         function run() {
@@ -1018,6 +1020,8 @@ scripts:
                 if (marks.length) break;
             }
             if (!marks.length) { find.value = ''; fromLink = false; run(); }
+            // with a mouse (not on a phone, where it would bring up the keyboard), the cursor is put
+            // in the box, so Enter and Shift+Enter step through the matches straight away
             // found only in notes that are closed ("II Cn 54,1¹ A": the reading is in Liebermann's
             // note 1): open those notes, so the form can be seen
             else if (!marks.some(m => m.offsetParent !== null)) {
@@ -1029,6 +1033,7 @@ scripts:
                 });
                 if (toggles.size) { toggles.forEach(b => b.click()); run(); }
             }
+            if (marks.length && window.matchMedia('(pointer: fine)').matches) find.focus({ preventScroll: true });
         }
     }
 
