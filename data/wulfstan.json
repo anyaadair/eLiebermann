@@ -1,0 +1,495 @@
+{
+ "_about": "Wulfstan's part in each law code, with whose view it is. 'codes': by law code (as in oe-laws/codes.json); 'clauses': single clauses by id (as in oe-laws/index.json). Each is a list, so other scholars' views can be added beside Rabin's. kind: composed, reworked or disputed. Shown on the law-code and clause pages and in the Laws search (scripts/wulfstan.js).",
+ "kinds": {
+  "composed": "Composed by Wulfstan",
+  "reworked": "Edited or Reworked by Wulfstan",
+  "disputed": "Attributed to Wulfstan (disputed)"
+ },
+ "sources": {
+  "Rabin": "Andrew Rabin, ed. and trans., Old English Legal Writings: Wulfstan, DOML 66 (2020)"
+ },
+ "codes": {
+  "EGu": [
+   {
+    "kind": "composed",
+    "by": "Rabin",
+    "page": "xiv–xv",
+    "note": "“Manifestly a forgery”: written by Wulfstan, probably between 1002 and 1004 (a later date has also been suggested), as a treaty of Edward the Elder and Guthrum."
+   }
+  ],
+  "Geþyncðo": [
+   {
+    "kind": "composed",
+    "by": "Rabin",
+    "page": "xv",
+    "note": "Written by Wulfstan as the opening text of his Compilation on Status (Rabin’s “On the Ranks of People and Law”)."
+   }
+  ],
+  "Norðleoda": [
+   {
+    "kind": "reworked",
+    "by": "Rabin",
+    "page": "xv; p. 405",
+    "note": "An older text (the first half probably ninth-century) that Wulfstan took into his Compilation on Status. He added the second half (clauses 7–12) and removed some of its regional references: an earlier version is titled “The Law of the Northern People”."
+   }
+  ],
+  "Mirce": [
+   {
+    "kind": "reworked",
+    "by": "Rabin",
+    "page": "xv",
+    "note": "An older (probably ninth-century) text that Wulfstan took into his Compilation on Status (Rabin’s “On the Law of the Mercians”)."
+   }
+  ],
+  "Að": [
+   {
+    "kind": "reworked",
+    "by": "Rabin",
+    "page": "xv",
+    "note": "An older (probably ninth-century) text that Wulfstan took into his Compilation on Status (Rabin’s “On the Mercian Oath”)."
+   }
+  ],
+  "Had": [
+   {
+    "kind": "composed",
+    "by": "Rabin",
+    "page": "xv",
+    "note": "Written by Wulfstan as the closing text of his Compilation on Status (Rabin’s “On Priests’ Oaths”)."
+   }
+  ],
+  "Grið": [
+   {
+    "kind": "composed",
+    "by": "Rabin",
+    "page": "xv–xvi",
+    "note": "Wulfstan’s “most extended argument for the inviolability of ecclesiastical protection”, probably written with the Compilation on Status, perhaps 1006–8."
+   }
+  ],
+  "Nor Grið": [
+   {
+    "kind": "composed",
+    "by": "Rabin",
+    "page": "xvi–xvii",
+    "note": "By Wulfstan; probably written about the same time as VIII Æthelred, around 1012–14."
+   }
+  ],
+  "Prom. Reg.": [
+   {
+    "kind": "composed",
+    "by": "Rabin",
+    "page": "xvii",
+    "note": "Once dated to Edgar’s reign; recently shown to be Wulfstan’s work, possibly written for a royal assembly late in Æthelred’s reign (1014–16)."
+   }
+  ],
+  "Episc": [
+   {
+    "kind": "composed",
+    "by": "Rabin",
+    "page": "xxi–xxii",
+    "note": "One of Wulfstan’s earliest tracts on Church governance, perhaps 1002–8."
+   }
+  ],
+  "V Atr": [
+   {
+    "kind": "composed",
+    "by": "Rabin",
+    "page": "xxvi–xxvii",
+    "note": "Council of Enham, 16 May 1008: Wulfstan’s first known royal legislation."
+   }
+  ],
+  "VI Atr": [
+   {
+    "kind": "composed",
+    "by": "Rabin",
+    "page": "xxvii",
+    "note": "Probably not an official enactment but Wulfstan’s draft of V Æthelred."
+   }
+  ],
+  "VI Atr Lat": [
+   {
+    "kind": "composed",
+    "by": "Rabin",
+    "page": "xxvii",
+    "note": "The Latin version of VI Æthelred; its last clause names Wulfstan as its author."
+   }
+  ],
+  "VII Atr": [
+   {
+    "kind": "composed",
+    "by": "Rabin",
+    "page": "xxvii–xxviii",
+    "note": "Wulfstan’s laws from the council at Bath, 1009. The Old English original is lost; this Latin version (Quadripartitus) is “likely a reasonably close approximation”."
+   }
+  ],
+  "VIIa Atr": [
+   {
+    "kind": "composed",
+    "by": "Rabin",
+    "page": "xxviii",
+    "note": "Wulfstan’s Old English draft of the 1009 laws, probably made between the law code and his later reworking of it as a homily."
+   }
+  ],
+  "VIII Atr": [
+   {
+    "kind": "composed",
+    "by": "Rabin",
+    "page": "xxviii–xxix",
+    "note": "Wulfstan’s laws of 1014; they borrow whole clauses from his Compilation on Status."
+   }
+  ],
+  "IX Atr": [
+   {
+    "kind": "composed",
+    "by": "Rabin",
+    "page": "xxix",
+    "note": "A fragment of Wulfstan’s laws from a council at Woodstock, probably 1009–16."
+   }
+  ],
+  "X Atr": [
+   {
+    "kind": "composed",
+    "by": "Rabin",
+    "page": "xxix",
+    "note": "A fragment of Wulfstan’s laws; perhaps another version of the Enham codes of 1008 (V and VI Æthelred)."
+   }
+  ],
+  "Cn 1018": [
+   {
+    "kind": "composed",
+    "by": "Rabin",
+    "page": "xxx",
+    "note": "“The earliest set of laws authored by Wulfstan on behalf of the new king”, Cnut, probably in a version Wulfstan revised for his own use."
+   }
+  ],
+  "Cn 1020": [
+   {
+    "kind": "reworked",
+    "by": "Rabin",
+    "page": "xxx–xxxi",
+    "note": "Cnut’s proclamation of 1019–20, which Wulfstan afterwards revised in large part (especially clauses 3–7 and 14–20) for further circulation or reading aloud."
+   }
+  ],
+  "I Cn": [
+   {
+    "kind": "composed",
+    "by": "Rabin",
+    "page": "xxxi",
+    "note": "Wulfstan’s law code for Cnut, 1020–23; one copy is in a manuscript owned and annotated by Wulfstan himself."
+   }
+  ],
+  "II Cn": [
+   {
+    "kind": "composed",
+    "by": "Rabin",
+    "page": "xxxi–xxxii",
+    "note": "Wulfstan’s longest law code. Over half is drawn from his earlier writings; more than a third has no known source, and is probably his own."
+   }
+  ],
+  "I As": [
+   {
+    "kind": "reworked",
+    "by": "Rabin",
+    "page": "xxxiv–xxxv",
+    "note": "The Old English version survives in two manuscripts linked with Wulfstan; its differences from the Latin suggest he recast the text, especially on Church dues."
+   }
+  ],
+  "I Em": [
+   {
+    "kind": "reworked",
+    "by": "Rabin",
+    "page": "xxxv",
+    "note": "The versions in two manuscripts linked with Wulfstan differ in style and content, suggesting he reworked the text."
+   }
+  ],
+  "II Eg": [
+   {
+    "kind": "reworked",
+    "by": "Rabin",
+    "page": "xxxv–xxxvi",
+    "note": "Shows “even more evidence of Wulfstanian intervention” than I Æthelstan and I Edmund, including clauses that repeat almost word for word his laws for Æthelred and Cnut."
+   }
+  ],
+  "III Eg": [
+   {
+    "kind": "reworked",
+    "by": "Rabin",
+    "page": "xxxv–xxxvi",
+    "note": "Shows “even more evidence of Wulfstanian intervention” than I Æthelstan and I Edmund, including clauses that repeat almost word for word his laws for Æthelred and Cnut."
+   }
+  ],
+  "Northu": [
+   {
+    "kind": "disputed",
+    "by": "Rabin",
+    "page": "xxxiii",
+    "note": "Attributed to Wulfstan for much of the twentieth century; more recently thought to be by one of his successors at York (Ælfric Puttoc or Cynesige). It draws heavily on Wulfstan’s Canons of Edgar."
+   }
+  ],
+  "Rect": [
+   {
+    "kind": "disputed",
+    "by": "Rabin",
+    "page": "xxxiii–xxxiv",
+    "note": "It has been suggested, mainly on grounds of style, that Wulfstan adapted Rectitudines and Gerefa and joined them; more recent scholarship finds the likeness to his writing not enough to say so."
+   }
+  ],
+  "Ger": [
+   {
+    "kind": "disputed",
+    "by": "Rabin",
+    "page": "xxxiii–xxxiv",
+    "note": "It has been suggested, mainly on grounds of style, that Wulfstan adapted Rectitudines and Gerefa and joined them; more recent scholarship finds the likeness to his writing not enough to say so."
+   }
+  ]
+ },
+ "clauses": {
+  "Northleoda_7": [
+   {
+    "kind": "composed",
+    "by": "Rabin",
+    "page": "406",
+    "note": "One of the clauses (7–12) that Rabin says “are all composed by Archbishop Wulfstan”."
+   }
+  ],
+  "Northleoda_7-1": [
+   {
+    "kind": "composed",
+    "by": "Rabin",
+    "page": "406",
+    "note": "One of the clauses (7–12) that Rabin says “are all composed by Archbishop Wulfstan”."
+   }
+  ],
+  "Northleoda_8": [
+   {
+    "kind": "composed",
+    "by": "Rabin",
+    "page": "406",
+    "note": "One of the clauses (7–12) that Rabin says “are all composed by Archbishop Wulfstan”."
+   }
+  ],
+  "Northleoda_9": [
+   {
+    "kind": "composed",
+    "by": "Rabin",
+    "page": "406",
+    "note": "One of the clauses (7–12) that Rabin says “are all composed by Archbishop Wulfstan”."
+   }
+  ],
+  "Northleoda_10": [
+   {
+    "kind": "composed",
+    "by": "Rabin",
+    "page": "406",
+    "note": "One of the clauses (7–12) that Rabin says “are all composed by Archbishop Wulfstan”."
+   }
+  ],
+  "Northleoda_11": [
+   {
+    "kind": "composed",
+    "by": "Rabin",
+    "page": "406",
+    "note": "One of the clauses (7–12) that Rabin says “are all composed by Archbishop Wulfstan”."
+   }
+  ],
+  "Northleoda_12": [
+   {
+    "kind": "composed",
+    "by": "Rabin",
+    "page": "406",
+    "note": "One of the clauses (7–12) that Rabin says “are all composed by Archbishop Wulfstan”."
+   }
+  ],
+  "IAs_2": [
+   {
+    "kind": "composed",
+    "by": "Rabin",
+    "page": "428",
+    "note": "The rewording of Exodus on tithes is “likely” Wulfstan’s substitution."
+   }
+  ],
+  "IAs_4": [
+   {
+    "kind": "composed",
+    "by": "Rabin",
+    "page": "429",
+    "note": "The dues for the souls of the dead and the plow dues, and the closing sentence (“Whoever refuses to do this …”), are likely Wulfstan’s additions."
+   }
+  ],
+  "IEm_2": [
+   {
+    "kind": "composed",
+    "by": "Rabin",
+    "page": "429",
+    "note": "The dues to Rome and the plow dues (not in the other manuscripts) are likely Wulfstan’s addition."
+   }
+  ],
+  "IEm_6": [
+   {
+    "kind": "composed",
+    "by": "Rabin",
+    "page": "429",
+    "note": "“embark … all the more zealously” (not in the other manuscripts) is likely Wulfstan’s addition."
+   }
+  ],
+  "IIEg_2-3": [
+   {
+    "kind": "composed",
+    "by": "Rabin",
+    "page": "430",
+    "note": "“This clause was likely added by Wulfstan.”"
+   }
+  ],
+  "IIEg_5-1": [
+   {
+    "kind": "composed",
+    "by": "Rabin",
+    "page": "430",
+    "note": "Clauses 5.1–5.3 “were likely added by Wulfstan”."
+   }
+  ],
+  "IIEg_5-2": [
+   {
+    "kind": "composed",
+    "by": "Rabin",
+    "page": "430",
+    "note": "Clauses 5.1–5.3 “were likely added by Wulfstan”."
+   }
+  ],
+  "IIEg_5-3": [
+   {
+    "kind": "composed",
+    "by": "Rabin",
+    "page": "430",
+    "note": "Clauses 5.1–5.3 “were likely added by Wulfstan”."
+   }
+  ],
+  "IIIEg_8": [
+   {
+    "kind": "composed",
+    "by": "Rabin",
+    "page": "430",
+    "note": "Clauses 8–8.3: “Likely an addition by Wulfstan.”"
+   }
+  ],
+  "IIIEg_8-1": [
+   {
+    "kind": "composed",
+    "by": "Rabin",
+    "page": "430",
+    "note": "Clauses 8–8.3: “Likely an addition by Wulfstan.”"
+   }
+  ],
+  "IIIEg_8-2": [
+   {
+    "kind": "composed",
+    "by": "Rabin",
+    "page": "430",
+    "note": "Clauses 8–8.3: “Likely an addition by Wulfstan.”"
+   }
+  ],
+  "IIIEg_8-3": [
+   {
+    "kind": "composed",
+    "by": "Rabin",
+    "page": "430",
+    "note": "Clauses 8–8.3: “Likely an addition by Wulfstan.”"
+   }
+  ],
+  "Cn1020_3": [
+   {
+    "kind": "reworked",
+    "by": "Rabin",
+    "page": "xxx–xxxi",
+    "note": "One of the passages (clauses 3–7 and 14–20) that Wulfstan revised in large part."
+   }
+  ],
+  "Cn1020_4": [
+   {
+    "kind": "reworked",
+    "by": "Rabin",
+    "page": "xxx–xxxi",
+    "note": "One of the passages (clauses 3–7 and 14–20) that Wulfstan revised in large part."
+   }
+  ],
+  "Cn1020_5": [
+   {
+    "kind": "reworked",
+    "by": "Rabin",
+    "page": "xxx–xxxi",
+    "note": "One of the passages (clauses 3–7 and 14–20) that Wulfstan revised in large part."
+   }
+  ],
+  "Cn1020_6": [
+   {
+    "kind": "reworked",
+    "by": "Rabin",
+    "page": "xxx–xxxi",
+    "note": "One of the passages (clauses 3–7 and 14–20) that Wulfstan revised in large part."
+   }
+  ],
+  "Cn1020_7": [
+   {
+    "kind": "reworked",
+    "by": "Rabin",
+    "page": "xxx–xxxi",
+    "note": "One of the passages (clauses 3–7 and 14–20) that Wulfstan revised in large part."
+   }
+  ],
+  "Cn1020_14": [
+   {
+    "kind": "reworked",
+    "by": "Rabin",
+    "page": "xxx–xxxi",
+    "note": "One of the passages (clauses 3–7 and 14–20) that Wulfstan revised in large part."
+   }
+  ],
+  "Cn1020_15": [
+   {
+    "kind": "reworked",
+    "by": "Rabin",
+    "page": "xxx–xxxi",
+    "note": "One of the passages (clauses 3–7 and 14–20) that Wulfstan revised in large part."
+   }
+  ],
+  "Cn1020_16": [
+   {
+    "kind": "reworked",
+    "by": "Rabin",
+    "page": "xxx–xxxi",
+    "note": "One of the passages (clauses 3–7 and 14–20) that Wulfstan revised in large part."
+   }
+  ],
+  "Cn1020_17": [
+   {
+    "kind": "reworked",
+    "by": "Rabin",
+    "page": "xxx–xxxi",
+    "note": "One of the passages (clauses 3–7 and 14–20) that Wulfstan revised in large part."
+   }
+  ],
+  "Cn1020_18": [
+   {
+    "kind": "reworked",
+    "by": "Rabin",
+    "page": "xxx–xxxi",
+    "note": "One of the passages (clauses 3–7 and 14–20) that Wulfstan revised in large part."
+   }
+  ],
+  "Cn1020_19": [
+   {
+    "kind": "reworked",
+    "by": "Rabin",
+    "page": "xxx–xxxi",
+    "note": "One of the passages (clauses 3–7 and 14–20) that Wulfstan revised in large part."
+   }
+  ],
+  "Cn1020_20": [
+   {
+    "kind": "reworked",
+    "by": "Rabin",
+    "page": "xxx–xxxi",
+    "note": "One of the passages (clauses 3–7 and 14–20) that Wulfstan revised in large part."
+   }
+  ]
+ }
+}
