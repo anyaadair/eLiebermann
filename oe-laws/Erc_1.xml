@@ -5,6 +5,7 @@
       <titleStmt>
         <title>Erc 1</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#adair">Adair</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
       </titleStmt>
       <publicationStmt>
@@ -20,6 +21,7 @@
         <bibl type="legalText"><title>Earconberht: Bede’s notice of his laws</title> <note type="reign">Earconberht, r. 640–664</note></bibl>
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">9</biblScope></bibl>
+          <bibl xml:id="adair" type="translation">Anya Adair, English translation made for this edition (eLiebermann, 2026)</bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
         </listBibl>
         <listWit>
@@ -38,6 +40,7 @@
       <creation><date source="#liebermann" n="I p. 9">640–664</date><note type="promulgation">640–664 (Liebermann, I p. 9)</note></creation>
     </profileDesc>
     <revisionDesc>
+      <change when="2026-10-31">English translation by Anya Adair added.</change>
       <change when="2026-10-19">Generated from row 2549 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
     </revisionDesc>
   </teiHeader>
@@ -46,6 +49,7 @@
       <div type="clause" n="1">
         <head><ref type="lawCode" target="law:Erc">Erc</ref> 1</head>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Erc 1" corresp="#wit-lat"><pb n="9" ed="#liebermann"/>. . . ‘Anno<ptr type="liebermannNote" n="1" target="#Erc_1.lnote.oe.1"/> dominicae incarnationis DCXL Eadbald rex Cantuariorum transiens ex hac uita Earconbercto<ptr type="liebermannNote" n="2" target="#Erc_1.lnote.oe.2"/> filio regni gubernacula reliquit, quae ille suscepta XXIIII annis et aliquot mensibus nobilissime tenuit. Hic primus regum Anglorum in toto regno suo idola relinqui ac destrui, simul et ieiunium XL dierum obseruari, principali auctoritate praecepit. Quae ne facile a quopiam posset contemni, in transgressores dignas et competentes punitiones proposuit.’ . . .</ab>
+        <ab type="translation" xml:lang="en" source="#adair" corresp="#wit-lat">In the year of the Lord’s incarnation 640, Eadbald, king of the people of Kent, passing from this life, left the helm of the kingdom to his son Earconberht; and he, having taken it up, held it most nobly for twenty-four years and some months. He was the first of the kings of the English to command, by his sovereign authority, that idols be abandoned and destroyed throughout his whole kingdom, and at the same time that the fast of forty days be observed. And that this might not easily be scorned by anyone, he laid down deserved and suitable punishments against transgressors.</ab>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 9 (two independent readings of the page images, differences settled against the page); Liebermann’s heading: EARCONBERHT.; Source as Liebermann gives it: Aus Baedae Historia ecclesiastica gentis Anglorum III 8.; F: corrected against Liebermann, Gesetze I (date at the head of the text); Wormald, Making of English Law I; Whitelock, English Historical Documents I, October 2026 (was “640–664 (Liebermann)”, now “640–664 (Liebermann, I p. 9)”)</note>
         <note type="liebermannNote" subtype="textual" xml:id="Erc_1.lnote.oe.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">9</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Text aus A. Holder’s 2. Ausgabe, welche der Hs. Cambridge Univ. Kk V 16, um 737 geschrieben, folgt. Keine Variante ergab der Vergleich mit J. Stevenson’s Ausgabe</hi> (1838) <hi rend="italic">und mit der H. Petrie’s in Monum. hist. Britann.</hi> (1848).</seg><seg type="translation" xml:lang="en" source="#claude">Text from A. Holder’s 2nd edition, which follows the MS Cambridge Univ. Kk V 16, written c. 737. Comparison with J. Stevenson’s edition (1838) and with H. Petrie’s in Monum. hist. Britann. (1848) yielded no variant.</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Erc_1.lnote.oe.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">9</biblScope></bibl><seg type="original" xml:lang="de">-brecto <hi rend="italic">Hs. Namur 8. Jhs., fränkisch;</hi> -berhto <hi rend="italic">Hs. Tiber. C II, Ende 8. Jhs. Laut Sweet, Oldest Engl. texts, p.</hi> 138.</seg><seg type="translation" xml:lang="en" source="#claude">-brecto MS Namur, 8th cent., Frankish; -berhto MS Tiber. C II, end of the 8th cent. According to Sweet, Oldest Engl. texts, p. 138.</seg></note>
