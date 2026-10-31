@@ -1263,4 +1263,14 @@ def main():
 
 
 if __name__ == '__main__':
+    # RETIRED (October 2026). The clause files in oe-laws/ are now the master copy of the laws database: much
+    # has been added to them since the spreadsheet was last used (joined clauses, Rabin's divisions, scholars'
+    # cross-references and their words, Liebermann's printed order, the second Quadripartitus text at EGu 10–11 …),
+    # and the spreadsheet is no longer kept. Building from a spreadsheet would overwrite all of that. The script is
+    # kept for the record (and other tools use its functions); it runs only when asked for explicitly.
+    if '--rebuild-from-spreadsheet' not in sys.argv:
+        sys.exit('This tool is retired: the clause files in oe-laws/ are the master copy, and building them from a '
+                 'spreadsheet would overwrite later work. See docs/OE-LAWS.md, "The clause files are the master copy". '
+                 'To run it anyway (on a copy of the repository), add --rebuild-from-spreadsheet.')
+    sys.argv.remove('--rebuild-from-spreadsheet')
     sys.exit(main())

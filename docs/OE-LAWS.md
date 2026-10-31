@@ -4,6 +4,13 @@
 
 Since October 2026 the files are made from the full, checked spreadsheet *OE_Laws_Database - Updated by Claude.xlsx* (columns A–AO) with `tools/laws-from-database.py`. Every law code now has the layout that Æthelberht had first, with more texts. The one exception is **Cn 1018**, which is waiting for a decision and is left as it was (see "Law codes that need a decision").
 
+
+## The clause files are the master copy
+
+Since October 2026 the clause files in `oe-laws/` are the master copy of the laws database. The spreadsheets they were first built from are obsolete and no longer kept, and much has been added to the files since (see "Added to the files by hand" below, and the Rabin, cross-reference, clause-order and joined-clause sections). Corrections are made in the files themselves; every earlier version is kept in the repository's history.
+
+The tools that built the files from a spreadsheet (`tools/laws-from-database.py`, `tools/laws-from-xlsx.py`, `tools/law-code-from-xlsx.py`, `tools/liebermann-notes.py`) are retired: they stop with a message unless run with `--rebuild-from-spreadsheet`, since running them would overwrite later work. They are kept for the record, and other tools still use some of their functions. Nothing on the site depends on them: the deploy builds only the indexes (`tools/build-index.js`, `tools/build-laws-index.js`) from the files. What the rest of this document says about spreadsheet columns describes how the files were first made.
+
 ## What is in a file
 
 Take `oe-laws/Had_10.xml`, the clause *Had 10*. Its header says where the clause comes from; its body holds the texts.
@@ -117,6 +124,19 @@ A file is named after its law code and clause number, joined by an underscore: `
 - A row with the same code and clause number as an earlier row gets `_dup2` on the end (`IVAs_6-1_dup2.xml`). There are 6 of these.
 - A row that covers several numbers, such as *3, 3.1, 3.2, 3.3, 3.4*, is named `Rect_3-to-3-4.xml`, and every number in it is a citation key.
 
+## Clauses out of numerical order
+
+Liebermann keeps his predecessors' clause numbers even where he prints the clauses in a different order: in Alfred, 25,1 is followed by 29, 30, 31, 31,1 and then 26–28, because he keeps Thorpe's and Schmid's numbers but follows the manuscripts' order (Gesetze I, p. 64, n. *); H alone has 25–25,1 after 31,1. The site shows the clauses in his printed order, the order of oe-laws/index.json.
+
+`data/clause-order.json` records that order for every code whose order is not simply numerical (Af, Af Rb, IV As, Had, VI Atr Lat, Iud Dei VII, and codes with labels such as Epilog or Rubriken). `tools/laws-from-database.py` (now retired) never sorted these codes by number. The same file has the short notes shown to readers, each headed "Editor's note": `notes` on a clause's page, `codeNotes` in the whole-code views just before the clause named in `before`, and `codeIntros`, the text behind the "About the numbering" button on a law code's page.
+
+## Added to the files by hand
+
+Things added to the files after they were built from the spreadsheet, for the record.
+
+- **EGu 10–11, the two forms of the Quadripartitus** (Gesetze I, 133–135). Liebermann prints the Latin in two columns: *Lond (frühere Quadr.-Form)* and *R (spätere Quadr.-Form)*, the two forms joining again at "de patria" in 11. The spreadsheet had only Lond. Added October 2026 (PR #106): R's text of 10 and 11 as a second Q text (witness `wit-q-r`, shown as "Q (R)"; Lond is `wit-q-lond`, "Q (Lond)"), and Liebermann's notes 34–37 (p. 133) and 5–10 (p. 135) to them. In 11 the print has the note number 9 twice (*uel⁹ mortem* and *compareant⁹*); both point to note 9.
+- Jurasinski's cross-references (2010), added with `tools/add-cross-references.py` from `data/cross-references/jurasinski-sanctuary.csv` (PR #99).
+
 ## Linking to dictionary entries
 
 Each file has one or more `<idno type="citationKey">`, in the form `Ine 23.2`: the law code's Anchor, a space, and the clause number with a comma read as a full stop (Liebermann prints 23,2) and with brackets and capitals ignored. The same keys are listed in `index.json` as `citationKeys`. A dictionary citation such as `<ref target="law:Ine">Ine 23,2</ref>` can be turned into the same key, and so matched to its clause file.
@@ -154,6 +174,8 @@ Results for A and Æ together: 82% of all citations are linked, and 97% of those
 **Alfred's Introduction.** The catalogue's `citationKeys` for these clauses (*Af El. 1*) are wrong: they give the keys *Af el* and *Af 1*, so *Af 1* would also point at the Introduction. `link-citations.py` works round this by using the clause as printed; `laws-from-xlsx.py` should be fixed to give *Af el.1*.
 
 ## Making the files again
+
+*Retired (October 2026): the clause files are now the master copy, and the tools below refuse to run without `--rebuild-from-spreadsheet` (see "The clause files are the master copy"). This section records how the files were made.*
 
 Correct the spreadsheet, then, from the repository folder (you need Python 3 and `pip install openpyxl`):
 
