@@ -98,6 +98,28 @@ scripts:
         return pb ? pb.getAttribute('n') : (src && src.page) || '';
     }
 
+    // the editor's clause number (p.dataset.num) as a bubble at the start of a text, after a chapter number in
+    // braces ("{XXIIII}") if the text begins with one
+    function placeNum(p) {
+        const num = p.dataset.num;
+        if (!num) return;
+        p.querySelectorAll('.part-mark--lead').forEach(x => x.remove());
+        const mark = el('span', 'part-mark part-mark--lead', num);
+        mark.title = p.dataset.numTitle || '';
+        const walker = document.createTreeWalker(p, NodeFilter.SHOW_TEXT);
+        let t = walker.nextNode();
+        while (t && !t.nodeValue.trim()) t = walker.nextNode();
+        const m = t && /^\s*\{[^}]*\}\s*/.exec(t.nodeValue);
+        if (m) {
+            const rest = t.splitText(m[0].length);
+            rest.parentNode.insertBefore(mark, rest);
+        } else if (t) {
+            t.parentNode.insertBefore(mark, t);
+        } else {
+            p.insertBefore(mark, p.firstChild);
+        }
+    }
+
     function inline(node, opts) {
         const frag = document.createDocumentFragment();
         node.childNodes.forEach(n => {
@@ -268,7 +290,7 @@ scripts:
             btn.setAttribute('aria-pressed', on ? 'true' : 'false');
             btn.textContent = (on ? 'Hide ' : 'Show ') + who + ' notes';
             list.hidden = !on;
-            texts.forEach(([p, a]) => { p.textContent = ''; p.appendChild(inline(a, { notes: on })); });
+            texts.forEach(([p, a]) => { p.textContent = ''; p.appendChild(inline(a, { notes: on })); placeNum(p); });
         };
         btn.addEventListener('click', () => {
             const on = btn.getAttribute('aria-pressed') !== 'true';
@@ -405,8 +427,10 @@ scripts:
         const left = col(hasOE ? 'Old English text' : hasFrench ? 'Anglo-Norman French text' : 'Latin text', 'clause-col--text');
         const right = col('Translations', 'clause-col--translation');
         const liebTexts = [];
-        // an editor's own clause number, where it differs from Liebermann's and is not already shown inside
-        // the text (a divided clause has a number on each part)
+        // an editor's own clause number, not already shown inside the text (a divided clause has a number on
+        // each part): always for the editors with a numbering of their own (OWN_NUMBERING), for the others
+        // only where it differs from Liebermann's
+        const OWN_NUMBERING = new Set(['jurasinski-and-oliver', 'oliver', 'gobbitt']);
         const editorNumber = (a, id) => {
             if (!id || id === 'liebermann' || id === 'claude') return '';
             const hasParts = x => tei(x, 'seg').some(sg => sg.getAttribute('type') === 'part' && sg.getAttribute('n'));
@@ -421,7 +445,7 @@ scripts:
                     if (nums.length) return nums.length > 1 ? nums[0] + '–' + nums[nums.length - 1] : nums[0];
                 }
             }
-            if (!n || n === div.getAttribute('n') || hasParts(a)) return '';
+            if (!n || hasParts(a) || (n === div.getAttribute('n') && !OWN_NUMBERING.has(id))) return '';
             return n;
         };
         const add = (column, a, bits, cls) => {
@@ -439,12 +463,12 @@ scripts:
             const lang = a.getAttribute('xml:lang');
             ELieb.setLang(p, lang);   // Latin and French as data-lang, so u is not drawn as V
             p.appendChild(inline(a));
-            // A modern editor who numbers this clause differently: the editor's number at the start of the
-            // text (and of the same editor's translation), in the same grey bubble as the numbers inside a
-            // divided clause, so that readers citing that edition use its numbers. Drawn by CSS from
-            // data-num, so it stays when the notes are shown or hidden (the text is drawn again).
+            // The editor's own clause number at the start of the text (and of the same editor's translation),
+            // in the same grey bubble as the numbers inside a divided clause, so that readers citing that
+            // edition use its numbers; after the chapter number in braces where the edition has one
+            // ("{XXIIII} 30 Gif mon …"), as the edition prints it. Put back when the notes are shown or hidden.
             const edNum = editorNumber(a, id);
-            if (edNum) { p.dataset.num = edNum; p.classList.add('has-editor-num'); p.title = src.name + '’s clause ' + edNum; }
+            if (edNum) { p.dataset.num = edNum; p.dataset.numTitle = src.name + '’s clause ' + edNum; placeNum(p); }
             box.appendChild(p);
             // Liebermann's own notes, behind a button: textual notes on his texts (one button, on his first
             // text, for the numbers in all of them), Erklärungen on his German.
