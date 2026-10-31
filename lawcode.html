@@ -136,6 +136,8 @@ scripts:
             const short = label.startsWith(ed + ', ') ? label.slice(ed.length + 2) : label;
             return `<span class="code-clause-src">${esc(short)}</span> `;
         };
+        // "About the numbering" and the like, behind a button (data/clause-order.json codeIntros; written for the site)
+        const intro = ((window.__clauseOrder || {}).codeIntros || {})[code.code];
         target.innerHTML = `
             <p class="breadcrumb small"><a href="${root}laws.html">Laws</a> › ${esc(code.group)}</p>
             <header class="entry-header">
@@ -146,6 +148,7 @@ scripts:
                     plainLine('Editions and translations', sources.map(esc).join(', '))}${
                     plainLine('Clauses', String(mine.length))}</div>
             </header>
+            ${intro ? `<details class="code-intro"><summary>${esc(intro.title)}</summary><div class="code-intro__body">${intro.html}</div></details>` : ''}
             <p class="code-callout">Below is the code in summary form: one text (the first in Liebermann’s edition) and one translation (an English crib of Liebermann’s German). Where either of these is unavailable, an alternative is shown and labelled. Each clause has its own page with all its texts, manuscripts, editions and translations, and its notes, cross-references and keywords. Click a clause number, or <em>All texts and translations</em> under any clause, to open it.</p>
             <p id="list-count" class="muted small" aria-live="polite"></p>
             <div class="code-clauses-head">
@@ -214,7 +217,7 @@ scripts:
         const orderNotes = searching ? [] : ((window.__clauseOrder || {}).codeNotes || {})[code.code] || [];
         ol.innerHTML = shown.length ? shown.map(c => {
             const ex = other.get(c.id);
-            return orderNotes.filter(x => x.before === c.clause).map(x => `<li class="code-order-note small"><strong>Order of the clauses:</strong> ${esc(x.text)}</li>`).join('') + `
+            return orderNotes.filter(x => x.before === c.clause).map(x => `<li class="code-order-note small"><strong>Editor’s note:</strong> ${esc(x.text)}</li>`).join('') + `
                 <li id="${esc(c.id)}">
                     <a class="code-clause-no" href="${clauseUrl(c.id)}" title="All texts, manuscripts and translations of ${esc(c.citation)}">${esc(c.clause || c.citation)}</a>
                     ${S.show.has('text') ? `<p class="code-clause-oe"${ELieb.langAttr(c.oeLang)}>${tagOf(c.oeLabel, tl)}${esc(c.oe)}</p>` : ''}
