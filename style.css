@@ -1019,8 +1019,14 @@ body.scan-open .entry-column > article { max-width: none; }
 .sidebar-head .laws-panel__title { margin: 0; }
 .sidebar-label--first { margin-top: 0.6rem; }
 .sidebar-title { font-weight: 600; color: var(--navy-dark); }
-.sidebar-fold { font: inherit; font-size: 1.1rem; line-height: 1; width: 1.7rem; height: 1.7rem; border: 1px solid transparent; border-radius: 4px; background: transparent; color: var(--muted); cursor: pointer; }
-.sidebar-fold:hover, .sidebar-fold:focus-visible { border-color: var(--rule); background: var(--surface); color: var(--link); }
+.sidebar-fold { flex: none; font: inherit; font-size: 1.3rem; font-weight: 600; line-height: 1; width: 1.9rem; height: 1.9rem; padding: 0 0 0.12em; border: 1px solid var(--rule); border-radius: 5px; background: var(--surface); color: var(--link); cursor: pointer; box-shadow: 0 1px 2px rgba(0,0,0,0.06); }
+.sidebar-fold:hover, .sidebar-fold:focus-visible { border-color: var(--link); background: var(--powder-tint); }
+/* the Laws, Guides and Bibliography panels: the same "‹" at the top right */
+.laws-panel > .panel-fold { float: right; margin: 0 0 0.3rem 0.5rem; }
+.laws-layout.panel-closed { grid-template-columns: minmax(0, 1fr); }
+.laws-layout.panel-closed > .laws-panel { display: none; }
+.laws-main > .panel-open { display: block; width: max-content; margin: 0.5rem 0 0; }
+.laws-main > .panel-open[hidden] { display: none; }
 .sidebar-search input { width: 100%; font: inherit; font-size: 0.9rem; padding: 0.35rem 0.55rem; border: 1px solid var(--rule); border-radius: 4px; background: var(--surface); }
 .sidebar-search .suggestions { font-size: 0.9rem; }
 .sidebar-label { font-family: var(--sans); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin: 1rem 0 0.4rem; }
@@ -1044,11 +1050,11 @@ body.scan-open .entry-column > article { max-width: none; }
 .sidebar-open:hover { background: var(--powder-tint); }
 .sidebar-open[hidden] { display: none; }
 @media (max-width: 60rem) {
-    .entry-layout { grid-template-columns: minmax(0, 1fr); }
-    .entry-sidebar { position: static; height: auto; border-right: 0; border-bottom: 1px solid var(--rule); }
+    .entry-layout, body.scan-open .entry-layout:not(.sidebar-closed) { grid-template-columns: minmax(0, 1fr); }
+    .entry-sidebar { position: fixed; top: 0; left: 0; bottom: 0; height: auto; width: min(22rem, 88vw); z-index: 70; box-shadow: 0 0 0 100vmax rgba(20, 24, 32, 0.28); }
     .entry-column { padding: 0.5rem 1rem 3rem; }
 }
-@media print { .entry-sidebar, .sidebar-open { display: none !important; } .entry-layout { display: block; } }
+@media print { .entry-sidebar, .sidebar-open, .laws-panel, .panel-fold { display: none !important; } .entry-layout { display: block; } }
 .suggestions .also { color: var(--muted); font-size: 0.9em; font-style: italic; }
 
 /* ---------- Laws page: the search panel on the left ---------- */
@@ -1107,7 +1113,7 @@ body.scan-open .entry-column > article { max-width: none; }
 .clause-list .hit--gloss { color: var(--muted); }
 @media (max-width: 60rem) {
     .laws-layout { grid-template-columns: minmax(0, 1fr); }
-    .laws-panel { position: static; height: auto; border-right: 0; border-bottom: 1px solid var(--rule); }
+    .laws-panel { position: fixed; top: 0; left: 0; bottom: 0; height: auto; width: min(22rem, 88vw); z-index: 70; box-shadow: 0 0 0 100vmax rgba(20, 24, 32, 0.28); }
     .laws-main { padding: 0.5rem 1rem 3rem; }
 }
 .link-button:hover, .link-button:focus-visible { background: none; color: var(--link-hover); }
