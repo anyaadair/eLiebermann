@@ -381,15 +381,34 @@ scripts:
         return out;
     }
 
-    // The suggested dates of a law code, short, for the list: the "Place and
-    // date of promulgation" text without scholars' names (in brackets), places,
-    // or remarks with no date in them. The law code's own page has it in full.
+    // The suggested dates of a law code, short, for the list: each date from the
+    // "Place and date of promulgation" text with the scholars who give it, in
+    // brackets ("601–4 (Liebermann, I p. 3)"), but without places or remarks with
+    // no date in them. The law code's own page has it in full.
     function summaryDates(text) {
         const SEASON = /^(Easter|Christmas|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sept?|Oct|Nov|Dec)/;
-        const seen = new Set();
+        // A scholar: "Whitelock", "Whitelock, EHD p. 390", "Liebermann, I p. 3".
+        const SCHOLAR = /^[A-Z][a-zé]+(?: and [A-Z][a-zé]+)?(?:,.*)?$/;
+        // Split at ";" outside brackets, so "(Liebermann, I p. 192; Robertson)" stays whole.
+        const parts = [];
+        let depth = 0, cur = '';
+        for (const ch of (text || '')) {
+            if (ch === '(') depth++;
+            if (ch === ')') depth = Math.max(0, depth - 1);
+            if (ch === ';' && depth === 0) { parts.push(cur); cur = ''; } else cur += ch;
+        }
+        parts.push(cur);
         const out = [];
-        for (let part of (text || '').split(';')) {
-            part = part.replace(/\([^)\d]*(\)|$)/g, ' ')          // (Whitelock), (Robertson, Wormald), but not (1030?)
+        for (let part of parts) {
+            // The scholars in a closing bracket, set aside and put back after the date.
+            let who = [];
+            part = part.replace(/\s*\(([^()]*)\)\s*$/, (m, inner) => {
+                const names = inner.split(';').map(x => x.trim());
+                if (!names.every(x => SCHOLAR.test(x))) return m;
+                who = names;
+                return '';
+            });
+            part = part.replace(/\([^)\d]*(\)|$)/g, ' ')          // a remark in brackets, but not (1030?)
                 .replace(/^\s*\?Date:\s*/, '')
                 .replace(/,\s*probably written from .*/, '')
                 .replace(/\s+/g, ' ').trim();
@@ -401,15 +420,16 @@ scripts:
                 const word = m.replace(/^,\s*\??/, '');
                 return SEASON.test(word) || /^[IVX]+\b/.test(word) ? m : '';   // a month, or "III, IV & VI As"
             });
-            part = part.replace(/\s*–\s*/g, '–').trim();
+            part = part.replace(/(?<=[\d?.])\s*–\s*/g, '–').trim();   // "925 – 40", but not "or –c.1000"
             // Keep dates, and dates relative to other codes ("before III As").
             if (!/\d/.test(part) && !/^\??(before|after|same time|as for|Easter|Christmas)\b/i.test(part)) continue;
+            // The same date from several scholars: one entry, with all their names.
             const key = part.replace(/[\s,.]/g, '');
-            if (seen.has(key)) continue;
-            seen.add(key);
-            out.push(part);
+            const same = out.find(o => o.key === key);
+            if (same) { who.forEach(w => { if (!same.who.includes(w)) same.who.push(w); }); continue; }
+            out.push({ key, date: part, who });
         }
-        return out.join('; ');
+        return out.map(o => o.date + (o.who.length ? ' (' + o.who.join('; ') + ')' : '')).join('; ');
     }
 
 
