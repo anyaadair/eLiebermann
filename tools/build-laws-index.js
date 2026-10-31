@@ -82,6 +82,13 @@ const summary = xml => {
     }
     return { oe, oeLabel, oeLang, gloss, glossLabel };
 };
+// Liebermann prints the clause number at the head of his German in some codes ("2, 1. Wer einen …",
+// "App. AGu. 1. Wenn …"), and the English crib copies it: left out of the summary when it is this clause's number.
+const LEAD_NUMBER = /^\s*(?:[A-Z][A-Za-z.\s]{0,20}?\.\s*)?(\d+[a-z]?(?:\s*,\s*\d+[a-z]?)*)\.\s+/;
+const withoutNumber = (text, clause) => {
+    const m = LEAD_NUMBER.exec(text || '');
+    return m && m[1].replace(/\s*,\s*/g, '.') === String(clause || '').trim() ? text.slice(m[0].length) : text;
+};
 const terms = (xml, n) => {
     const k = xml.match(new RegExp('<keywords n="' + n + '">([\\s\\S]*?)</keywords>'));
     return k ? [...k[1].matchAll(/<term>([^<]*)<\/term>/g)].map(m => decode(m[1])).filter(Boolean) : [];
@@ -115,7 +122,7 @@ const clauses = catalogue.map(c => {
         // the languages of the clause's original texts (ang, la, xno), for the language filter
         langs: [...new Set([...xml.matchAll(/<ab type="(?:liebermannText|editionText|selectedText|supplementaryText)"([^>]*)>/g)].map(m => attr(m[1], 'xml:lang')).filter(Boolean))],
         text: ab(xml, 'liebermannText').concat(ab(xml, 'editionText'), ab(xml, 'selectedText'), ab(xml, 'supplementaryText')).join(' '),
-        gloss: sum.gloss,
+        gloss: withoutNumber(sum.gloss, c.clause),
         glossLabel: sum.glossLabel,
         en: english(xml).concat(ab(xml, 'secondTranslation'), ab(xml, 'supplementaryTranslation')).join(' '),
         row: c.sheetRow

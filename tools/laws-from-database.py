@@ -289,12 +289,14 @@ OE = set('and þæt ðæt se he man ne gif gyf ðe þe beo sy to his hit mid swa
 # for Liebermann's L column of Leis Wl), not guessed from the words: the guess below
 # only knows Latin and Old English, and French "se", "ne", "he" look like Old English.
 FRENCH_CODES = {'Leis Wl', 'Wl art Frz'}
+# texts known only from the Quadripartitus, whose Latin keeps Old English words (hlóþ, hereteam)
+ALWAYS_LATIN = {'App AGu'}
 
 
 def language(text, code='', sig=''):
     if code in FRENCH_CODES:
         return 'la' if sig_key(sig) == 'L' else 'xno'
-    if code in PHASE2B:      # Latin with Old English terms (ƿere, þegen): always Latin
+    if code in PHASE2B or code in ALWAYS_LATIN:      # Latin with Old English terms (ƿere, þegen, hlóþ): always Latin
         return 'la'
     # the Latin ordeal and excommunication texts (October 2026) write 'æ' (aquæ, Ysaiæ): go by the words there
     if re.search('[⁊þðÞÐƿ]' if code in OWN_MS_NAMES else '[⁊þðæÞÐÆƿ]', text):
