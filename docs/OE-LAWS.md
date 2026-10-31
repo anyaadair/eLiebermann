@@ -124,6 +124,19 @@ A file is named after its law code and clause number, joined by an underscore: `
 - A row with the same code and clause number as an earlier row gets `_dup2` on the end (`IVAs_6-1_dup2.xml`). There are 6 of these.
 - A row that covers several numbers, such as *3, 3.1, 3.2, 3.3, 3.4*, is named `Rect_3-to-3-4.xml`, and every number in it is a citation key.
 
+## Clauses out of numerical order
+
+Liebermann keeps his predecessors' clause numbers even where he prints the clauses in a different order: in Alfred, 25,1 is followed by 29, 30, 31, 31,1 and then 26–28, because he keeps Thorpe's and Schmid's numbers but follows the manuscripts' order (Gesetze I, p. 64, n. *); H alone has 25–25,1 after 31,1. The site shows the clauses in his printed order, the order of oe-laws/index.json.
+
+`data/clause-order.json` records that order for every code whose order is not simply numerical (Af, Af Rb, IV As, Had, VI Atr Lat, Iud Dei VII, and codes with labels such as Epilog or Rubriken). `tools/laws-from-database.py` (now retired) never sorted these codes by number. The same file has the short notes shown to readers, each headed "Editor's note": `notes` on a clause's page, `codeNotes` in the whole-code views just before the clause named in `before`, and `codeIntros`, the text behind the "About the numbering" button on a law code's page.
+
+## Added to the files by hand
+
+Things added to the files after they were built from the spreadsheet, for the record.
+
+- **EGu 10–11, the two forms of the Quadripartitus** (Gesetze I, 133–135). Liebermann prints the Latin in two columns: *Lond (frühere Quadr.-Form)* and *R (spätere Quadr.-Form)*, the two forms joining again at "de patria" in 11. The spreadsheet had only Lond. Added October 2026 (PR #106): R's text of 10 and 11 as a second Q text (witness `wit-q-r`, shown as "Q (R)"; Lond is `wit-q-lond`, "Q (Lond)"), and Liebermann's notes 34–37 (p. 133) and 5–10 (p. 135) to them. In 11 the print has the note number 9 twice (*uel⁹ mortem* and *compareant⁹*); both point to note 9.
+- Jurasinski's cross-references (2010), added with `tools/add-cross-references.py` from `data/cross-references/jurasinski-sanctuary.csv` (PR #99).
+
 ## Linking to dictionary entries
 
 Each file has one or more `<idno type="citationKey">`, in the form `Ine 23.2`: the law code's Anchor, a space, and the clause number with a comma read as a full stop (Liebermann prints 23,2) and with brackets and capitals ignored. The same keys are listed in `index.json` as `citationKeys`. A dictionary citation such as `<ref target="law:Ine">Ine 23,2</ref>` can be turned into the same key, and so matched to its clause file.
