@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Ger_7">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Ger 7</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#gobbitt">Gobbitt</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#gobbitt">Gobbitt</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">Ger_7</idno>
+        <idno type="citation">Ger 7</idno>
+        <idno type="lawCode">Ger</idno>
+        <idno type="lawCodeAnchor">Ger</idno>
+        <idno type="clause">7</idno>
+        <idno type="citationKey">Ger 7</idno>
+        <idno type="citationKey">Ger 7a</idno>
+        <idno type="citationKey">Ger 7b</idno>
+        <idno type="citationKey">Ger 7c</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Gerefa (The Reeve)</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">454</biblScope></bibl>
+          <bibl xml:id="gobbitt" type="edition">Thom Gobbitt, ed., ‘Rectitudines singularum personarum’ and ‘Gerefa’, <title>Early English Laws</title> (earlyenglishlaws.ac.uk)</bibl>
+          <bibl xml:id="rabin-doml" type="edition">Andrew Rabin, ed. and trans., <title>Old English Legal Writings: Wulfstan</title>, Dumbarton Oaks Medieval Library (Cambridge, MA: Harvard University Press, 2020), p. <biblScope unit="page">334</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-b"><abbr>B</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 453">960 (c.1025)–1060</date><placeName source="#wormald-mel">?Bath Abbey</placeName><note type="promulgation">960 (c.1025)–1060 (Liebermann, I p. 453); ?Bath Abbey (Wormald)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Service</term><term>Administrative directives</term></keywords>
+        <keywords n="people"><term>Reeves</term><term>Weorcmen</term><term>Nobles</term><term>All people</term><term>Secular classes</term><term>Rank</term></keywords>
+        <keywords n="locations"><term>Estates</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 2132 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 454.</change>
+      <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 454: “7” → “⁊”.</change>
+    <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 454.</change>
+    <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 454: “[7[c]] ne bið hit hlaforde ræd, þæt he þæt ðafige.” → “[7[c]] ne bið hit hlaforde ræd, þæt he þæt ðafige. (expanded letters in italics: æt, æt)”.</change>
+      <change when="2026-10" type="checked">Liebermann’s German translation corrected against Gesetze I, p. 454: “[der Vogt, oder der Gutsherr?]” → “∅”.</change>
+    <change when="2026-10-19">Joined from the files of its parts 7[a], 7[b], 7[c] (rows of the spreadsheet), to give Liebermann’s clause on one page.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="7">
+        <head><ref type="lawCode" target="law:Ger">Ger</ref> 7</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" corresp="#wit-b"><seg type="part" corresp="#part-a"><pb n="454" ed="#liebermann"/>[7[a]] Ne læte he næfre his hyrmen hyne oferwealdan, ac wille he ælcne mid hlafordes creafte<ptr type="liebermannNote" n="1" target="#Ger_7-a.lnote.oe.1"/> ⁊ mid folcrihte:</seg> <seg type="part" corresp="#part-b"><pb n="454" ed="#liebermann"/>[7[b]] selre him his<ptr type="liebermannNote" n="1*" target="#Ger_7-b.lnote.oe.1_"/> æfre of folgoðe ðonne on, gyf hine magan wyldan ða ðe he scolde<ptr type="liebermannNote" n="1" target="#Ger_7-b.lnote.oe.1"/> wealdan;</seg> <seg type="part" corresp="#part-c"><pb n="454" ed="#liebermann"/>[7[c]] ne bið hit hlaforde ræd, þ<hi rend="italic">æt</hi> he þ<hi rend="italic">æt</hi> ðafige<ptr type="liebermannNote" n="2" target="#Ger_7-c.lnote.oe.2"/>.</seg></ab>
+        <ab type="editionText" xml:lang="ang" source="#gobbitt" corresp="#wit-b" n="22.1–22.12"><seg type="part" n="22.1" corresp="#part-a">Ne læte he næfre his hyrmen hyne of|erwealdan . ac wille he ælcne mid hlafor|des creafte . 7 mid folcrihte .</seg> <seg type="part" n="22.11" corresp="#part-b">Selre him his æfre of folgoðe ðonne on . gyf hine magan wyldan ða ðe he scolde wealdan .</seg> <seg type="part" n="22.12" corresp="#part-c">Ne bið hit hlaforde ræd þæt he þæt ðafige .</seg></ab>
+        <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-b"><seg type="part" corresp="#part-a"><pb n="334" ed="#rabin-doml"/>Ne læte he næfre his hyrmen hyne oferwealdan, ac wille he ælcne mid hlafordes creafte and mid folcrihte:</seg> <seg type="part" corresp="#part-b"><pb n="334" ed="#rabin-doml"/>selre him is æfre of folgoðe ðonne on, gyf hine magan wyldan ða ðe he scolde wealdan.</seg> <seg type="part" corresp="#part-c"><pb n="334" ed="#rabin-doml"/>Ne bið hit hlaforde ræd, þæt he þæt ðafige.</seg></ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><seg type="part" corresp="#part-a"><pb n="454" ed="#liebermann"/>Nicht lasse er jemals über sich seine [Guts-]unterthanen regieren, sondern er wolle jeden durch Herrenmacht<ptr type="liebermannNote" n="1" target="#Ger_7-a.lnote.de.1"/> und nach Volksrecht [regieren]:</seg> <seg type="part" corresp="#part-b"><pb n="454" ed="#liebermann"/>besser für ihn ist, stets ausser Amte als darin [sein<ptr type="liebermannNote" n="f" target="#Ger_7-b.lnote.de1.f"/>], wenn ihn díe beherrschen können, die er regieren sollte;</seg> <seg type="part" corresp="#part-c"><pb n="454" ed="#liebermann"/>noch auch ist es dem Gutsherrn<ptr type="liebermannNote" n="g" target="#Ger_7-c.lnote.de1.g"/> ein vortheilhafter Plan, dass er<ptr type="liebermannNote" n="h" target="#Ger_7-c.lnote.de1.h"/> das erlaube.</seg></ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman"><seg type="part" corresp="#part-a">Let him never let his [estate] dependants rule over him, but let him [rule] each one with the lord's authority and according to folk-right:</seg> <seg type="part" corresp="#part-b">it is better for him always [to be] out of office than in it, if those whom he should rule can rule him;</seg> <seg type="part" corresp="#part-c">nor is it an advantageous plan for the lord that he [the reeve, or the lord?] should allow it.</seg></ab>
+        <ab type="translation" xml:lang="en" source="#gobbitt" corresp="#wit-b"><seg type="part" corresp="#part-a">He should never let his retainers wield power over him, but he should direct each with the lord’s might and with folk custom.</seg> <seg type="part" corresp="#part-b">[It is] better [use of] him if he is always out labouring than in [his position], if those whom he should govern would rule him.</seg> <seg type="part" corresp="#part-c">It will not be the wise lord that endures this.</seg></ab>
+        <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-b"><seg type="part" corresp="#part-a"><pb n="335" ed="#rabin-doml"/>Nor must he ever permit his subordinates to manipulate him, but he should govern each of them according to his lord’s rule and the laws of the people;</seg> <seg type="part" corresp="#part-b"><pb n="335" ed="#rabin-doml"/>it would always be better for him to be out of service than in if he would be governed by those whom he should govern.</seg> <seg type="part" corresp="#part-c"><pb n="335" ed="#rabin-doml"/>The lord is not wise who tolerates this.</seg></ab>
+        <note type="concordance"><seg type="edition">Gobbitt 22.1, 22.11, 22.12</seg></note>
+        <note type="editorial" target="#part-a">B's ‘creafte’ stands so. Liebermann's 7 is split here into three rows.; AX: pages in Rabin (text / translation), checked against Rabin (translation on the facing page), October 2026 (e.g. was “334”, now “334 / 335”; 11 rows of Ger)</note>
+        <note type="translator" source="#rabin-doml" target="#part-a">Rabin’s 7 covers the rows 7[a], 7[b], 7[c]; it is given here, in the first.</note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ger_7-a.lnote.oe.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">454</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">so</hi></seg><seg type="translation" xml:lang="en" source="#claude">sic</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Ger_7-a.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">253</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de">Verf. stellt in <hi rend="italic">cræft</hi> und <hi rend="italic">riht</hi> vermutlich polizeiliche Exekutive des Herrn und allgemeines Landrecht als einander ergänzend, vielleicht beschränkend, nebeneinander. Nicht etwa gilt <hi rend="italic">cræft</hi> gegen Unfreie, <hi rend="italic">riht</hi> über Freie</seg><seg type="translation" xml:lang="en" source="#claude">In <hi rend="italic">cræft</hi> and <hi rend="italic">riht</hi> the author presumably sets side by side the lord’s executive police power and the general law of the land as complementing, perhaps limiting, each other. It is not, say, that <hi rend="italic">cræft</hi> applies to the unfree and <hi rend="italic">riht</hi> to the free</seg></note>
+        <note type="editorial" target="#part-b">B's ‘his’ stands for ‘is’ (so also in B at II Cn 75 f.). B's ‘scolde’ stands so.</note>
+        <note type="textual" source="#rabin-doml" target="#part-b">is: his B</note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ger_7-b.lnote.oe.1_" n="1*" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">454</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">für</hi> is; <hi rend="italic">in B ebenso II Cn.</hi> 75. 76; hreaferas <hi rend="italic">II</hi> ⁊</seg><seg type="translation" xml:lang="en" source="#claude">for is; likewise in B II Cn. 75. 76; hreaferas II ⁊</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ger_7-b.lnote.oe.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">454</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">so</hi></seg><seg type="translation" xml:lang="en" source="#claude">sic</seg></note>
+        <note type="liebermannNote" subtype="translationFootnote" xml:id="Ger_7-b.lnote.de1.f" n="f" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">454</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Ellipse des Infinitivs</hi></seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">ellipsis of the infinitive</hi></seg></note>
+        <note type="editorial" target="#part-c">B's ‘ðafige’ stands so.</note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ger_7-c.lnote.oe.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">454</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Zeile leer</hi></seg><seg type="translation" xml:lang="en" source="#claude">line blank</seg></note>
+        <note type="liebermannNote" subtype="translationFootnote" xml:id="Ger_7-c.lnote.de1.g" n="g" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">454</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vgl. o.</hi> 2, 1</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">cf. above</hi> 2, 1</seg></note>
+        <note type="liebermannNote" subtype="translationFootnote" xml:id="Ger_7-c.lnote.de1.h" n="h" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">454</biblScope></bibl><seg type="original" xml:lang="de">der Vogt (<hi rend="italic">oder</hi> der Gutsherr<hi rend="italic">?</hi>)</seg><seg type="translation" xml:lang="en" source="#claude">the bailiff (<hi rend="italic">or</hi> the lord of the manor<hi rend="italic">?</hi>)</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

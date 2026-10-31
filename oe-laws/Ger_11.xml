@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Ger_11">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Ger 11</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#gobbitt">Gobbitt</name></respStmt>
+        <respStmt><resp>Edition of the text</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#gobbitt">Gobbitt</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#rabin-doml">Rabin</name></respStmt>
+        <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">Ger_11</idno>
+        <idno type="citation">Ger 11</idno>
+        <idno type="lawCode">Ger</idno>
+        <idno type="lawCodeAnchor">Ger</idno>
+        <idno type="clause">11</idno>
+        <idno type="citationKey">Ger 11</idno>
+        <idno type="citationKey">Ger 11a</idno>
+        <idno type="citationKey">Ger 11b</idno>
+        <idno type="citationKey">Ger 11c</idno>
+        <idno type="citationKey">Ger 11d</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Gerefa (The Reeve)</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">454</biblScope></bibl>
+          <bibl xml:id="gobbitt" type="edition">Thom Gobbitt, ed., ‘Rectitudines singularum personarum’ and ‘Gerefa’, <title>Early English Laws</title> (earlyenglishlaws.ac.uk)</bibl>
+          <bibl xml:id="rabin-doml" type="edition">Andrew Rabin, ed. and trans., <title>Old English Legal Writings: Wulfstan</title>, Dumbarton Oaks Medieval Library (Cambridge, MA: Harvard University Press, 2020), p. <biblScope unit="page">336</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+        </listBibl>
+        <listWit>
+          <witness xml:id="wit-b"><abbr>B</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383</note></witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date source="#liebermann" n="I p. 453">960 (c.1025)–1060</date><placeName source="#wormald-mel">?Bath Abbey</placeName><note type="promulgation">960 (c.1025)–1060 (Liebermann, I p. 453); ?Bath Abbey (Wormald)</note></creation>
+      <textClass>
+        <keywords n="offence-legal-event"><term>Service</term><term>Administrative directives</term></keywords>
+        <keywords n="people"><term>Reeves</term><term>Weorcmen</term><term>All people</term><term>Secular classes</term><term>Rank</term></keywords>
+        <keywords n="locations"><term>Estates</term><term>Orchard</term></keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-10-19">Generated from row 2139 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 454.</change>
+      <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 454: “7” → “⁊”.</change>
+    <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 454: “–” → “—”.</change>
+    <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 454: “7; 7; –” → “⁊; ⁊; —”.</change>
+    <change when="2026-10-19">Joined from the files of its parts 11[a], 11[b], 11[c], 11[d] (rows of the spreadsheet), to give Liebermann’s clause on one page.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="11">
+        <head><ref type="lawCode" target="law:Ger">Ger</ref> 11</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" corresp="#wit-b"><seg type="part" corresp="#part-a"><pb n="454" ed="#liebermann"/>[11[a]] on wintra erian ⁊ in miclu<hi rend="italic">m</hi> gefyrstu<hi rend="italic">m</hi> timber cleofan,</seg> <seg type="part" corresp="#part-b"><pb n="454" ed="#liebermann"/>[11[b]] orceard ræran ⁊ mænige inweorc wyrcean, ðerhsan, wudu cleofan, hryðeran styllan, swyn stigian,</seg> <seg type="part" corresp="#part-c"><pb n="454" ed="#liebermann"/>[11[c]] on odene cylne macian —</seg> <seg type="part" corresp="#part-d"><pb n="454" ed="#liebermann"/>[11[d]] ofn ⁊ aste<ptr type="liebermannNote" n="6" target="#Ger_11-d.lnote.oe.6"/> ⁊ fela ðinga sceal to tune — ge eac henna hrost;</seg></ab>
+        <ab type="editionText" xml:lang="la" source="#gobbitt" corresp="#wit-b" n="26"><seg type="part" n="26" corresp="#part-a">On wintra erian 7 in miclum gefyrstum . tim|ber cleofan.</seg></ab>
+        <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-b"><seg type="part" corresp="#part-a"><pb n="336" ed="#rabin-doml"/>On wintra erian and in miclum gefyrstum timber cleofan,</seg> <seg type="part" corresp="#part-b"><pb n="336" ed="#rabin-doml"/>orceard ræran and mænige inweorc wyrcean, ðerhsan, wudu cleofan, hryðeran styllan, swyn stician,</seg> <seg type="part" corresp="#part-c"><pb n="336" ed="#rabin-doml"/>on odene cylne macian,</seg> <seg type="part" corresp="#part-d"><pb n="336" ed="#rabin-doml"/>ofn and aste and fela ðinga sceal to tune, ge eac henna hrost.</seg></ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><seg type="part" corresp="#part-a"><pb n="454" ed="#liebermann"/>im Winter pflügen und in grossen Frösten<ptr type="liebermannNote" n="1" target="#Ger_11-a.lnote.de.1"/> Bauholz spalten<ptr type="liebermannNote" n="2" target="#Ger_11-a.lnote.de.2"/>,</seg> <seg type="part" corresp="#part-b"><pb n="454" ed="#liebermann"/>Garten<ptr type="liebermannNote" n="3" target="#Ger_11-b.lnote.de.3"/> bauen und viele Arbeiten innerhalb [des Gehöfts] thun, dreschen, Holz<ptr type="liebermannNote" n="2" target="#Ger_11-b.lnote.de.2"/> spalten, den Rindern<ptr type="liebermannNote" n="t" target="#Ger_11-b.lnote.de1.t"/> Stall machen, Schweine einpferchen<ptr type="liebermannNote" n="s" target="#Ger_11-b.lnote.de1.s"/>,</seg> <seg type="part" corresp="#part-c"><pb n="454" ed="#liebermann"/>auf dem Dreschplatz<ptr type="liebermannNote" n="u" target="#Ger_11-c.lnote.de1.u"/> eine Darre<ptr type="liebermannNote" n="4" target="#Ger_11-c.lnote.de.4"/> machen —</seg> <seg type="part" corresp="#part-d"><pb n="454" ed="#liebermann"/>Ofen und Trockenofen und viele Dinge gehören zum Gutsgehöft — wie auch Hühnersteige;</seg></ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman"><seg type="part" corresp="#part-a">in winter plough, and in hard frosts split timber,</seg> <seg type="part" corresp="#part-b">lay out an orchard and do many indoor tasks, thresh, split wood, make stalls for the cattle, pen the pigs,</seg> <seg type="part" corresp="#part-c">make a kiln on the threshing-floor —</seg> <seg type="part" corresp="#part-d">an oven and a drying-kiln and many things belong to the estate — and also a hen-roost;</seg></ab>
+        <ab type="translation" xml:lang="en" source="#gobbitt" corresp="#wit-b"><seg type="part" corresp="#part-a">During the winter to plough and during the great frost to cleave timber.</seg> <seg type="part" corresp="#part-b">To tend the orchard and to undertake many indoor duties, threshing, to cleave wood, put cattle in stalls, slaughter pigs.</seg> <seg type="part" corresp="#part-c">To make a kiln on the threshing-floor.</seg> <seg type="part" corresp="#part-d">[To make] an oven and a kiln, and many things must [be done] about the estate, likewise [to make] chicken roosts.</seg></ab>
+        <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-b"><seg type="part" corresp="#part-a"><pb n="337" ed="#rabin-doml"/>During the winter, one is to plow, fell trees during the great frost,</seg> <seg type="part" corresp="#part-b"><pb n="337" ed="#rabin-doml"/>tend to the orchard, carry out indoor tasks, thresh, chop wood, put cattle in stalls, put pigs in their sty,</seg> <seg type="part" corresp="#part-c"><pb n="337" ed="#rabin-doml"/>construct a kiln on the threshing floor and an oven and an oast,</seg> <seg type="part" corresp="#part-d"><pb n="337" ed="#rabin-doml"/>and do many other things on the estate such as building chicken roosts.</seg></ab>
+        <ab type="editionText" xml:lang="ang" source="#gobbitt" corresp="#wit-b" n="26.1–26.3"><seg type="part" n="26.1" corresp="#part-b">Orceard ræran . 7 mænige inweorc wyrcean. ðerhsan . wudu cleofan . hryðeran styllan. swyn stygian .</seg> <seg type="part" n="26.2" corresp="#part-c">On odene cylne macian .</seg> <seg type="part" n="26.3" corresp="#part-d">Ofn . 7 aste . 7 fela ðinga sceal|to tune ge eac henna hrost .</seg></ab>
+        <note type="concordance"><seg type="edition">Gobbitt 26, 26.1, 26.2, 26.3</seg></note>
+        <note type="editorial" target="#part-a">Liebermann's 11 is split here into four rows.</note>
+        <note type="translator" source="#rabin-doml" target="#part-a">Rabin’s 11 covers the rows 11[a], 11[b], 11[c], 11[d]; it is given here, in the first.</note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Ger_11-a.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">253</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">So Sweet, Kluge</seg><seg type="translation" xml:lang="en" source="#claude">Thus Sweet, Kluge</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Ger_11-a.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">253</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Jede Hufe zu Stoke liefert dem Herrn 4 <hi rend="italic">foðera aclofenas gavolwyda</hi>; Bi 594. Das <hi rend="italic">wudu</hi> nächster Z. ist also Brennholz</seg><seg type="translation" xml:lang="en" source="#claude">Each hide at Stoke supplies the lord with 4 <hi rend="italic">foðera aclofenas gavolwyda</hi>; Bi 594. The <hi rend="italic">wudu</hi> of the next l. is therefore firewood</seg></note>
+        <note type="editorial" target="#part-b">Liebermann compares Gerefa 13 and Rect 7.</note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Ger_11-b.lnote.de.3" n="3" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">253</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Garten; dazu Hoops in <hi rend="italic">Reallex. Germ. Altt</hi>. 113</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf. Gl</hi> Garten; also Hoops in <hi rend="italic">Reallex. Germ. Altt</hi>. 113</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Ger_11-b.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">253</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Jede Hufe zu Stoke liefert dem Herrn 4 <hi rend="italic">foðera aclofenas gavolwyda</hi>; Bi 594. Das <hi rend="italic">wudu</hi> nächster Z. ist also Brennholz</seg><seg type="translation" xml:lang="en" source="#claude">Each hide at Stoke supplies the lord with 4 <hi rend="italic">foðera aclofenas gavolwyda</hi>; Bi 594. The <hi rend="italic">wudu</hi> of the next l. is therefore firewood</seg></note>
+        <note type="liebermannNote" subtype="translationFootnote" xml:id="Ger_11-b.lnote.de1.t" n="t" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">454</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vgl. u.</hi> 13</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">cf. below</hi> 13</seg></note>
+        <note type="liebermannNote" subtype="translationFootnote" xml:id="Ger_11-b.lnote.de1.s" n="s" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">454</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vgl.</hi> Rect. 7</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">cf.</hi> Rect. 7</seg></note>
+        <note type="editorial" target="#part-c">Liebermann compares Gerefa 3.1.</note>
+        <note type="translator" source="#rabin-doml" target="#part-c">a kiln on the threshing floor and an oven and an oast: The kiln and the oven were used to dry the harvest for preservation. An oast was a kiln specially designed for drying hops.</note>
+        <note type="liebermannNote" subtype="translationFootnote" xml:id="Ger_11-c.lnote.de1.u" n="u" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">454</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">o.</hi> 3, 1</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">above</hi> 3, 1</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Ger_11-c.lnote.de.4" n="4" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">253</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">Nicht gemäss heutigem <hi rend="italic">kiln</hi> ‘Ziegelei’, die gewiss nicht auf dem Domänenplatz lag; ‘Ofen’ Sweet, Kluge, ‘Feuerherd’ Sk-Wi zu weit; Ælfric glossiert <hi rend="italic">siccatorium</hi>; bei Mätzner <hi rend="italic">ustrina, torral</hi> (<hi rend="italic">s</hi>. Ducange s. v.), also für Korn und Malz.—Zu folg. Z. <hi rend="italic">ofn</hi> ‘Backofen’ Sk-Wi; zu <hi rend="italic">ast</hi>: provinziell lebt noch <hi rend="italic">oast</hi> ‘Gerstendarre zur Malzbereitung’; Wright <hi rend="italic">Dial. dict.</hi>; ‘Dörrofen’ Sk-Wi</seg><seg type="translation" xml:lang="en" source="#claude">Not in the sense of present-day <hi rend="italic">kiln</hi> ‘brickworks’, which certainly did not stand in the demesne yard; ‘oven’ Sweet, Kluge, ‘hearth’ Sk-Wi too wide; Ælfric glosses <hi rend="italic">siccatorium</hi>; in Mätzner <hi rend="italic">ustrina, torral</hi> (<hi rend="italic">see</hi> Ducange s. v.), thus for grain and malt.—On the following l.: <hi rend="italic">ofn</hi> ‘bake-oven’ Sk-Wi; on <hi rend="italic">ast</hi>: <hi rend="italic">oast</hi> ‘barley-kiln for malting’ still survives in provincial use; Wright <hi rend="italic">Dial. dict.</hi>; ‘drying-oven’ Sk-Wi</seg></note>
+        <note type="editorial" target="#part-d">B's ‘aste’ stands for ‘ast’ (compare Rect 6).</note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ger_11-d.lnote.oe.6" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">454</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">für</hi> ast; <hi rend="italic">vgl.</hi> Rect. 6<hi rend="italic">ᵉ</hi></seg><seg type="translation" xml:lang="en" source="#claude">for ast; cf. Rect. 6ᵉ</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

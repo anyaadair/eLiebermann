@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Wi_27-a">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Wi_27">
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Wi 27[a]</title>
+        <title>Wi 27</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Edition of the text</resp><name ref="#attenborough">Attenborough</name></respStmt>
         <respStmt><resp>Edition of the text</resp><name ref="#oliver">Oliver</name></respStmt>
@@ -17,15 +17,19 @@
         <respStmt><resp>Transcription of Attenborough’s notes</resp><name ref="#claude">Claude</name></respStmt>
         <respStmt><resp>Transcription of Oliver’s notes</resp><name ref="#claude">Claude</name></respStmt>
         <respStmt><resp>Transcription of Whitelock’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      <respStmt><resp>Date and place</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Transcription of Oliver’s notes</resp><name ref="#claude">Claude</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
-        <idno type="slug">Wi_27-a</idno>
-        <idno type="citation">Wi 27[a]</idno>
+        <idno type="slug">Wi_27</idno>
+        <idno type="citation">Wi 27</idno>
         <idno type="lawCode">Wi</idno>
         <idno type="lawCodeAnchor">Wi</idno>
-        <idno type="clause">27[a]</idno>
+        <idno type="clause">27</idno>
+        <idno type="citationKey">Wi 27</idno>
         <idno type="citationKey">Wi 27a</idno>
+        <idno type="citationKey">Wi 27b</idno>
       </publicationStmt>
       <sourceDesc>
         <bibl type="legalText"><title>Wihtred’s Code</title> <note type="reign">Wihtred, r. 690/1–725</note></bibl>
@@ -53,27 +57,29 @@
     <profileDesc>
       <creation><date source="#liebermann" n="I p. 12">695–6</date><date source="#attenborough #whitelock #wormald-mel" n="|EHD p. 396|MEL p. 102">6 Sept. 695</date><note type="promulgation">695–6 (Liebermann, I p. 12); 6 Sept. 695 (Attenborough; Whitelock, EHD p. 396; Wormald, MEL p. 102)</note></creation>
       <textClass>
-        <keywords n="offence-legal-event"><term>Theft</term><term>Slavery</term><term>Fines</term><term>Mitigation</term></keywords>
-        <keywords n="people"><term>Thief</term><term>Slave</term><term>King</term><term>All people</term><term>Secular classes</term><term>Rank</term></keywords>
+        <keywords n="offence-legal-event"><term>Theft</term><term>Slavery</term><term>Fines</term><term>Mitigation</term><term>Compensation</term><term>Capital offences</term></keywords>
+        <keywords n="people"><term>Thief</term><term>Slave</term><term>King</term><term>All people</term><term>Secular classes</term><term>Rank</term><term>Owner of slave</term></keywords>
       </textClass>
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-19">Generated from row 192 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 14.</change>
+    <change when="2026-10-19">Joined from the files of its parts 27[a], 27[b] (rows of the spreadsheet), to give Liebermann’s clause on one page.</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
-      <div type="clause" n="27[a]">
-        <head><ref type="lawCode" target="law:Wi">Wi</ref> 27[a]</head>
-        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="27[a]" corresp="#wit-h"><pb n="14" ed="#liebermann"/>Gif þeuw stele ⁊ hi<ptr type="liebermannNote" n="**" target="#Wi_27-a.lnote.oe.star2"/> man alese: LXX scll', swa hweder swa cyning wille;</ab>
-        <ab type="editionText" xml:lang="ang" source="#attenborough" corresp="#wit-h"><pb n="30" ed="#attenborough"/>Gif þeuw stele ⁊ hine<ptr type="editorNote" n="1" target="#Wi_27-a.attnote.fn.1"/> man alese, LXX scll', swa hweder swa cyning wille;</ab>
-        <ab type="editionText" xml:lang="ang" source="#oliver" n="22" corresp="#wit-h"><pb n="162" ed="#oliver"/>Gif þeuw stele ⁊ hi[ne] man<ptr type="editorNote" n="c" target="#Wi_27-a.olinote.fn.c"/> alese: LXX scƚƚ, swa hweder swa cyning wille.</ab>
-        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="14" ed="#liebermann"/>Wenn ein Sklav stiehlt<ptr type="liebermannNote" n="1" target="#Wi_27-a.lnote.de.1"/> und man<ptr type="liebermannNote" n="2" target="#Wi_27-a.lnote.de.2"/> ihn<ptr type="liebermannNote" n="3" target="#Wi_27-a.lnote.de.3"/> auslöst, [koste dies] 70 Schll., je wie<ptr type="liebermannNote" n="4" target="#Wi_27-a.lnote.de.4"/> der König entscheidet<ptr type="liebermannNote" n="5" target="#Wi_27-a.lnote.de.5"/>;</ab>
-        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">If a slave steals and he is redeemed, [this costs] 70 shillings, as the king decides;</ab>
-        <ab type="translation" xml:lang="en" source="#attenborough" corresp="#wit-h"><pb n="31" ed="#attenborough"/>If a slave steals, and is released, 70 shillings [shall be paid]—whichever the king wishes<ptr type="editorNote" n="1" target="#Wi_27-a.attnote.n.1"/>.</ab>
-        <ab type="translation" xml:lang="en" source="#whitelock" corresp="#wit-h"><pb n="399" ed="#whitelock"/>If a slave steals and is redeemed, [this is to be at] 70 shillings, whichever the king wishes.<ptr type="editorNote" n="3" target="#Wi_27-a.whinote.n.3"/> If he is killed, half is to be paid for him to the possessor.<ptr type="editorNote" n="4" target="#Wi_27-a.whinote.n.4"/></ab>
-        <ab type="translation" xml:lang="en" source="#oliver" corresp="#wit-h"><pb n="163" ed="#oliver"/>If a slave steals and a person redeems him: 70 shillings, whichever the king wants.<ptr type="editorNote" n="c" target="#Wi_27-a.olinote.n.c"/></ab>
+      <div type="clause" n="27">
+        <head><ref type="lawCode" target="law:Wi">Wi</ref> 27</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" corresp="#wit-h"><seg type="part" corresp="#part-a"><pb n="14" ed="#liebermann"/>Gif þeuw stele ⁊ hi<ptr type="liebermannNote" n="**" target="#Wi_27-a.lnote.oe.star2"/> man alese: LXX scll', swa hweder swa cyning wille;</seg> <seg type="part" corresp="#part-b"><pb n="14" ed="#liebermann"/>gif hine man acwelle, þam agende hi<ptr type="liebermannNote" n="**" target="#Wi_27-b.lnote.oe.star2"/> man healfne agelde.</seg></ab>
+        <ab type="editionText" xml:lang="ang" source="#attenborough" corresp="#wit-h"><seg type="part" corresp="#part-a"><pb n="30" ed="#attenborough"/>Gif þeuw stele ⁊ hine<ptr type="editorNote" n="1" target="#Wi_27-a.attnote.fn.1"/> man alese, LXX scll', swa hweder swa cyning wille;</seg> <seg type="part" corresp="#part-b"><pb n="30" ed="#attenborough"/>gif hine man acwelle, þam agende hine<ptr type="editorNote" n="1" target="#Wi_27-b.attnote.fn.1"/> man healfne agelde.</seg></ab>
+        <ab type="editionText" xml:lang="ang" source="#oliver" corresp="#wit-h" n="22–22.1"><seg type="part" n="22" corresp="#part-a"><pb n="162" ed="#oliver"/>Gif þeuw stele ⁊ hi[ne] man<ptr type="editorNote" n="c" target="#Wi_27-a.olinote.fn.c"/> alese: LXX scƚƚ, swa hweder swa cyning wille.</seg> <seg type="part" n="22.1" corresp="#part-b"><pb n="162" ed="#oliver"/>Gif hine man acwelle, þam agende hi[ne] man healfne agelde.</seg></ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><seg type="part" corresp="#part-a"><pb n="14" ed="#liebermann"/>Wenn ein Sklav stiehlt<ptr type="liebermannNote" n="1" target="#Wi_27-a.lnote.de.1"/> und man<ptr type="liebermannNote" n="2" target="#Wi_27-a.lnote.de.2"/> ihn<ptr type="liebermannNote" n="3" target="#Wi_27-a.lnote.de.3"/> auslöst, [koste dies] 70 Schll., je wie<ptr type="liebermannNote" n="4" target="#Wi_27-a.lnote.de.4"/> der König entscheidet<ptr type="liebermannNote" n="5" target="#Wi_27-a.lnote.de.5"/>;</seg> <seg type="part" corresp="#part-b"><pb n="14" ed="#liebermann"/>wenn man<ptr type="liebermannNote" n="6" target="#Wi_27-b.lnote.de.6"/> jenen [Dieb] tödtet, entgelte man<ptr type="liebermannNote" n="2" target="#Wi_27-b.lnote.de.2"/> ihn dem Inhaber<ptr type="liebermannNote" n="7" target="#Wi_27-b.lnote.de.7"/> zur Hälfte.</seg></ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman"><seg type="part" corresp="#part-a">If a slave steals and he is redeemed, [this costs] 70 shillings, as the king decides;</seg> <seg type="part" corresp="#part-b">if that [thief] is killed, let him be paid for to his owner at half.</seg></ab>
+        <ab type="translation" xml:lang="en" source="#attenborough" corresp="#wit-h"><seg type="part" corresp="#part-a"><pb n="31" ed="#attenborough"/>If a slave steals, and is released, 70 shillings [shall be paid]—whichever the king wishes<ptr type="editorNote" n="1" target="#Wi_27-a.attnote.n.1"/>.</seg> <seg type="part" corresp="#part-b"><pb n="31" ed="#attenborough"/>If he is put to death, half his value shall be paid to the man who has him in his power<ptr type="editorNote" n="2" target="#Wi_27-b.attnote.n.2"/>.</seg></ab>
+        <ab type="translation" xml:lang="en" source="#whitelock" corresp="#wit-h"><seg type="part" corresp="#part-a"><pb n="399" ed="#whitelock"/>If a slave steals and is redeemed, [this is to be at] 70 shillings, whichever the king wishes.<ptr type="editorNote" n="3" target="#Wi_27-a.whinote.n.3"/> If he is killed, half is to be paid for him to the possessor.<ptr type="editorNote" n="4" target="#Wi_27-a.whinote.n.4"/></seg></ab>
+        <ab type="translation" xml:lang="en" source="#oliver" corresp="#wit-h"><seg type="part" corresp="#part-a"><pb n="163" ed="#oliver"/>If a slave steals and a person redeems him: 70 shillings, whichever the king wants.<ptr type="editorNote" n="c" target="#Wi_27-a.olinote.n.c"/></seg> <seg type="part" corresp="#part-b"><pb n="163" ed="#oliver"/>If he [the slave] is put to death, one should pay the owner<ptr type="editorNote" n="d" target="#Wi_27-b.olinote.n.d"/> half his [the slave’s] value.</seg></ab>
+        <note type="concordance"><seg type="edition">Oliver 22, 22.1</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Wi_27-a.lnote.oe.star2" n="**" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">14</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">bessere</hi> hine</seg><seg type="translation" xml:lang="en" source="#claude">read hine</seg></note>
         <note type="liebermannNote" subtype="erklaerung" xml:id="Wi_27-a.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">30</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Aus der möglichen Todesstrafe und dem Zusammenhang folgt Handhaftigkeit auch hierfür</seg><seg type="translation" xml:lang="en" source="#claude">That the thief was caught in the act here too follows from the possible death penalty and from the context</seg></note>
         <note type="liebermannNote" subtype="erklaerung" xml:id="Wi_27-a.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">30</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Der Zahlende ist der Herr; denn der Sklave hat weder Sippe noch 70 Schilling, über diese <hi rend="italic">s. Gl</hi> unfrei 7</seg><seg type="translation" xml:lang="en" source="#claude">The one who pays is the lord; for the slave has neither kindred nor 70 shillings; on the latter see <hi rend="italic">Gl</hi> unfrei 7</seg></note>
@@ -86,6 +92,12 @@
         <note type="editorNote" subtype="translationFootnote" xml:id="Wi_27-a.whinote.n.4" n="4" source="#whitelock"><bibl><biblScope unit="page">399</biblScope></bibl><label>possessor</label><seg type="original" xml:lang="en">Presumably the man who captured him.</seg></note>
         <note type="editorNote" subtype="footnote" xml:id="Wi_27-a.olinote.fn.c" n="c" source="#oliver"><bibl><biblScope unit="page">162</biblScope></bibl><label>man</label><seg type="original" xml:lang="en">Both here and in §22.1, <hi rend="italic">himan</hi> is run together, eliminating the ending on the pronoun. Liebermann, <hi rend="italic">Gesetze</hi>, 3:30, restores both of these as the accusative <hi rend="italic">hine</hi>, and suggests that perhaps originally there was a ~ nasal extension mark over the <hi rend="italic">hi</hi> which the copyist overlooked. We might also emend the last phrase <hi rend="italic">þam agende him man healfne agelde</hi>, ‘one should pay the owner half for him,’ which grammatically is far preferable. But see the parallel (without the awkward intrusion) in §21; the double accusative construction, however, works better with <hi rend="italic">age</hi> than with <hi rend="italic">agelde</hi>.</seg></note>
         <note type="editorNote" subtype="translationFootnote" xml:id="Wi_27-a.olinote.n.c" n="c" source="#oliver"><bibl><biblScope unit="page">163</biblScope></bibl><label>wants.</label><seg type="original" xml:lang="en">That is, fine or death. See under ‘Theft’ in Commentary.</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Wi_27-b.lnote.oe.star2" n="**" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">14</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">bessere</hi> hine</seg><seg type="translation" xml:lang="en" source="#claude">read hine</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Wi_27-b.lnote.de.6" n="6" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">30</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">Das Gericht, nachdem der König die Begnadigung ablehnte</seg><seg type="translation" xml:lang="en" source="#claude">The court, after the king had refused pardon</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Wi_27-b.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">30</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Der Zahlende ist der Herr; denn der Sklave hat weder Sippe noch 70 Schilling, über diese <hi rend="italic">s. Gl</hi> unfrei 7</seg><seg type="translation" xml:lang="en" source="#claude">The one who pays is the lord; for the slave has neither kindred nor 70 shillings; on the latter see <hi rend="italic">Gl</hi> unfrei 7</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Wi_27-b.lnote.de.7" n="7" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">30</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">Einfänger, regelmässig mit bestohlenem Kläger identisch; <hi rend="italic">vgl. o.</hi> 26, 1². Den Eigentümer des Sklaven verstanden Frühere gemäss Hl 1. Aber dieser kann doch nicht vom Gericht auf Staatskosten oder vom Kläger dáfür bezahlt werden, dass er ein gemeinschädliches Wertstück nicht gehörig bewacht hat. Auch Hl 1. 3 lässt ihn neben dessen Auslieferung büssen</seg><seg type="translation" xml:lang="en" source="#claude">The captor, as a rule identical with the robbed plaintiff; <hi rend="italic">cf. above</hi> 26, 1². Earlier editors understood the owner of the slave, in accordance with Hl 1. But he can surely not be paid by the court at public expense, or by the plaintiff, for having failed to guard properly a valuable piece of property that was a danger to the community. Hl 1. 3, too, makes him pay compensation in addition to handing the slave over</seg></note>
+        <note type="editorNote" subtype="endnote" xml:id="Wi_27-b.attnote.n.2" n="2" source="#attenborough"><bibl><biblScope unit="page">182</biblScope></bibl><seg type="original" xml:lang="en">The word properly means ‘owner’; but, as Liebermann points out, the context here requires that the man who possesses his person at the moment must be meant.</seg></note>
+        <note type="editorNote" subtype="translationFootnote" xml:id="Wi_27-b.olinote.n.d" n="d" source="#oliver"><bibl><biblScope unit="page">163</biblScope></bibl><label>owner</label><seg type="original" xml:lang="en">It is not clear what ‘the owner’ refers to here. It seems unlikely that it is the owner of the slave (who should have overseen his property better). Liebermann and Attenborough both assume that it is the man who currently holds the slave in his power. But I think it most likely that the payment goes to the man whose property was stolen.</seg></note>
       </div>
     </body>
   </text>

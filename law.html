@@ -115,7 +115,8 @@ scripts:
                 const letters = (n.getAttribute('corresp') || '').split(/\s+/).map(x => x.replace(/^#part-/, '')).filter(x => /^[a-z]$/.test(x));
                 const span = el('span', ['part'].concat(letters.map(x => 'part-' + x)).join(' '));
                 const num = n.getAttribute('n') || '';
-                if (num) span.appendChild(el('sup', 'part-mark', num));
+                // in a small grey bubble, so it is not taken for a footnote number
+                if (num) { const m = el('span', 'part-mark', num); m.title = 'This edition’s clause ' + num; span.appendChild(m); }
                 span.appendChild(inline(n, opts));
                 frag.appendChild(span);
                 return;
