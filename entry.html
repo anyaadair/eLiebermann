@@ -289,8 +289,10 @@ scripts:
                 href = root + 'lawcode.html?code=' + encodeURIComponent(lawCodes[m[2]]);
                 title = 'This clause is not yet in the laws database; this opens the whole of ' + lawCodes[m[2]];
             }
-            const at = codeIndex(raw, m);
-            const rest = at >= 0 ? raw.slice(codeList[at].code.length).trim() : raw;
+            // a citation with no clause in the laws database goes under "Not yet in the laws database"
+            const found = codeIndex(raw, m);
+            const at = m && m[1] === 'clause' ? found : -1;
+            const rest = found >= 0 ? raw.slice(codeList[found].code.length).trim() : raw;
             // Liebermann's footnote at the passage ("ECf 20,3²"): its number after the citation
             const fn = x.getAttribute('n');
             const note = fn ? ` <span class="citation-note" title="Liebermann’s footnote ${esc(fn)} at this passage, on the manuscript readings">(note ${esc(fn)})</span>` : '';
