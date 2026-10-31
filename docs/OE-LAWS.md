@@ -175,6 +175,8 @@ Results for A and Æ together: 82% of all citations are linked, and 97% of those
 
 ## Making the files again
 
+*Retired (October 2026): the clause files are now the master copy, and the tools below refuse to run without `--rebuild-from-spreadsheet` (see "The clause files are the master copy"). This section records how the files were made.*
+
 Correct the spreadsheet, then, from the repository folder (you need Python 3 and `pip install openpyxl`):
 
 ```
