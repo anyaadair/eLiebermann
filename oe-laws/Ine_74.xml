@@ -13,6 +13,7 @@
         <respStmt><resp>Translation</resp><name ref="#whitelock">Whitelock</name></respStmt>
         <respStmt><resp>Translation</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
         <respStmt><resp>Cross-references to other clauses</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Cross-references to other clauses</resp><name ref="#jurasinski-sanctuary">Jurasinski, Sanctuary</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
         <respStmt><resp>Transcription of Attenborough’s notes</resp><name ref="#claude">Claude</name></respStmt>
       </titleStmt>
@@ -35,6 +36,7 @@
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
           <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
           <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+          <bibl xml:id="jurasinski-sanctuary" type="study">Stefan Jurasinski, ‘Sanctuary, House-Peace, and the Traditionalism of Alfred’s Laws’, <title>The Journal of Legal History</title> 31 (2010), 129–47</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-e" rend="bold"><abbr>E</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 173 (Parker Chronicle and Laws)</note></witness>
@@ -91,6 +93,7 @@
         <note type="comparedBy" source="#jurasinski-and-oliver" n="325"><label>cf.</label> <ref target="clause:Af_27">Af 27</ref> <quote>he fleo ("let him flee") is unclear. Ine §75 states that if a Welsh slave kills an English man [...] Perhaps this is what the guilty party here is fleeing.</quote></note>
         <note type="comparedBy" source="#jurasinski-and-oliver" n="391"><label>cf.</label> <ref target="clause:Ine_23-3">Ine 23.3</ref> <quote>It is true that §75 requires the owner of a Welsh slave who has killed an Englishman to pay 60 shillings</quote></note>
         <note type="comparedBy" source="#wormald-mel" n="290"><label>covered by</label> <ref target="clause:IIEw_6">II Ew 6</ref> <quote>Penal slaves and the obligations of their kin (if any) had also been covered by Ine (n. 126)</quote></note>
+        <note type="comparedBy" source="#jurasinski-sanctuary" n="144"><label>contrast</label> <ref target="clause:Af_42-1">Af 42.1</ref> <quote>Chapter 74, for example, concerning what is to be done with a Welsh slave who commits homicide, furnishes the most obvious case; after being placed in the hands of those he has wronged, he is presumably not meant to survive. Yet the Alfredian clauses mentioned earlier are concerned neither with those already in servitude nor those reduced to penal slavery</quote></note>
         <note type="liebermannNote" subtype="textual" xml:id="Ine_74.lnote.oe.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">121</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">im</hi> 16. <hi rend="italic">Jh. geänd. in</hi> mann</seg><seg type="translation" xml:lang="en" source="#claude">altered in the 16th cent. to mann</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Ine_74.lnote.oe.10" n="10" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">121</biblScope></bibl><seg type="original" xml:lang="de">-derit <hi rend="italic">T</hi></seg><seg type="translation" xml:lang="en" source="#claude">-derit T</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Ine_74.lnote.oe.11" n="11" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">121</biblScope></bibl><seg type="original" xml:lang="de">c. e. <hi rend="italic">fehlt K</hi></seg><seg type="translation" xml:lang="en" source="#claude">c. e. lacking in K</seg></note>

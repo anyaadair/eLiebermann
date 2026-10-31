@@ -105,7 +105,11 @@ Places where other scholars say that one clause repeats, revises, derives from, 
 
 The spreadsheet's sheet **Cross-references** has one line per link (scholar, work, page, clause, linked clause, the relation in the scholar's terms, the scholar's words, a remark), and column **BD** of Sheet1 has the same in short. `read_cross_references` and `xr_links` in `tools/laws-from-database.py` read that sheet and write, on the clause a link starts from, `<note type="comparison" source="#wormald-mel" n="PAGE"><label>relation</label> <ref target="clause:ID">…</ref> <quote>…</quote></note>`, and on the linked clause `<note type="comparedBy" source="#…" n="PAGE">`. The scholar's work is added to the file's sources. The clause page lists them under the scholar's name: *Compare (Wormald, MEL): …* and *Compared with this clause (Wormald, MEL): …*.
 
-## File names and identifiers
+### Adding a scholar's links later
+
+Links from a work read after the files were built (the first: Jurasinski, ‘Sanctuary, House-Peace, and the Traditionalism of Alfred’s Laws’, 2010) are kept as a CSV in `data/cross-references/`, in the columns of the sheet Cross-references (Scholar, Work, Page, Clause, Linked clause, Relation, Words, Remark), and added to the files with `python3 tools/add-cross-references.py data/cross-references/FILE.csv`. Unlike the first collection, these may link to texts outside the laws database (penitentials, sagas, Exodus): those are written as plain text, with no back-link. The work must be listed in WORKS in that tool and in XR_WORKS in `tools/laws-from-database.py`; the same rows pasted into the spreadsheet then give the same notes when the files are rebuilt. How each wording is shown (compare, contrast, source) is in `data/comparison-terms.json`.
+
+
 
 A file is named after its law code and clause number, joined by an underscore: `Abt_1-a.xml`, `Ine_23-2.xml`. The code part is the code's **Anchor** on the law code list where there is one (so `IICn` for *II Cn*), otherwise the abbreviation with plain letters. In names, þ is *th*, æ is *ae* and ð is *d*, as for dictionary entries. The same text is the file's `xml:id`.
 

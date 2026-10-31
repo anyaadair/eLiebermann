@@ -13,6 +13,7 @@
         <respStmt><resp>Translation</resp><name ref="#whitelock">Whitelock</name></respStmt>
         <respStmt><resp>Translation</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
         <respStmt><resp>Cross-references to other clauses</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Cross-references to other clauses</resp><name ref="#jurasinski-sanctuary">Jurasinski, Sanctuary</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
         <respStmt><resp>Transcription of Attenborough’s notes</resp><name ref="#claude">Claude</name></respStmt>
         <respStmt><resp>Transcription of Whitelock’s notes</resp><name ref="#claude">Claude</name></respStmt>
@@ -36,6 +37,7 @@
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
           <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
           <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+          <bibl xml:id="jurasinski-sanctuary" type="study">Stefan Jurasinski, ‘Sanctuary, House-Peace, and the Traditionalism of Alfred’s Laws’, <title>The Journal of Legal History</title> 31 (2010), 129–47</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-e" rend="bold"><abbr>E</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 173 (Parker Chronicle and Laws)</note></witness>
@@ -93,6 +95,7 @@
         <note type="comparison" source="#wormald-mel" n="272"><label>cross-reference</label> <ref target="clause:Af_44">Af 44–77</ref> <quote>42:4 (c) (ref. 39 – 39:2, 44 – 77)</quote></note>
         <note type="comparison" source="#jurasinski-and-oliver" n="345"><label>parallel usage</label> <ref target="clause:Ine_74-2">Ine 74.2</ref> <quote>As discussed in n. 198 to Ine §76, we accept Liebermann's hypothesis that this phrase includes a shift in meaning for mæg</quote></note>
         <note type="comparedBy" source="#jurasinski-and-oliver" n="435"><label>same usage (mæg)</label> <ref target="clause:Ine_74-2">Ine 74.2</ref> <quote>the only other example that Liebermann adduces is Alfred §44.4 [...] hæbbe his mæg forworht</quote></note>
+        <note type="comparison" source="#jurasinski-sanctuary" n="135–136"><label>repeats the injunction of</label> <ref target="clause:Af_42-1">Af 42.1</ref> <quote>The injunction is repeated twice within a later subsection of this chapter</quote></note>
         <note type="liebermannNote" subtype="textual" xml:id="Af_42-4.lnote.oe.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">76</biblScope></bibl><seg type="original" xml:lang="de">swylce <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">swylce Ld</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Af_42-4.lnote.oe.9" n="9" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">76</biblScope></bibl><seg type="original" xml:lang="de">-tene <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">-tene Ld</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Af_42-4.lnote.oe.10" n="10" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">76</biblScope></bibl><seg type="original" xml:lang="de">-pne syllan <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">-pne syllan Ld</seg></note>

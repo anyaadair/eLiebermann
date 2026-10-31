@@ -16,6 +16,7 @@
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
         <respStmt><resp>Transcription of Attenborough’s notes</resp><name ref="#claude">Claude</name></respStmt>
         <respStmt><resp>Transcription of Whitelock’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Cross-references to other clauses</resp><name ref="#jurasinski-sanctuary">Jurasinski, Sanctuary</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -36,6 +37,7 @@
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
           <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
           <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+          <bibl xml:id="jurasinski-sanctuary" type="study">Stefan Jurasinski, ‘Sanctuary, House-Peace, and the Traditionalism of Alfred’s Laws’, <title>The Journal of Legal History</title> 31 (2010), 129–47</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-e" rend="bold"><abbr>E</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 173 (Parker Chronicle and Laws)</note></witness>
@@ -85,6 +87,10 @@
         <ab type="translation" xml:lang="en" source="#whitelock"><pb n="411" ed="#whitelock"/>If he himself will hand out his weapons to his foes, they are to keep him for 30<ptr type="editorNote" n="2" target="#Af_5-3.whinote.n.2"/> days, and send notice about him to his kinsmen.</ab>
         <ab type="translation" xml:lang="en" source="#jurasinski-and-oliver" corresp="#wit-e"><pb n="299" ed="#jurasinski-and-oliver"/>If he himself is willing to hand over his weapons to his foes, let them hold him for 30 nights and let them announce this to his kinsmen.</ab>
         <note type="comparedBy" source="#jurasinski-and-oliver" n="237"><label>cf. (inward disposition of offender)</label> <ref target="clause:Af_El-to-13">Af El 13</ref> <quote>For Alfred, it is the inward disposition of the offender that is crucial ... cf. MP §16; Alfred §5.3 and §44.1 [L 42.1].</quote></note>
+        <note type="comparison" source="#jurasinski-sanctuary" n="135"><label>contrast</label> <ref target="clause:Ine_5">Ine 5–5.1</ref> <quote>Comparison of this law (which Wormald suggested served as a model for Alfred’s) with the laws on church sanctuary in the domboc makes clear that Alfred’s innovations, insofar as Ine’s laws may be held representative, are substantial.</quote></note>
+        <note type="comparedBy" source="#jurasinski-sanctuary" n="135"><label>compare</label> <ref target="clause:Af_42-1">Af 42.1</ref> <quote>Requirements of this sort are imposed not only on those seeking the protection of churches (where one would expect them given concerns about the defilement of a consecrated building with blood), but even on those attacked while within their own dwellings.</quote></note>
+        <note type="comparison" source="#jurasinski-sanctuary" n="147, n. 75"><label>analogue</label> Penitential of Theodore I.iv.4–5 <quote>the injunction to abandon one’s weapons, which is a stereotypical element of penances imposed for homicide</quote></note>
+        <note type="comparedBy" source="#jurasinski-sanctuary" n="147"><label>compare</label> <ref target="clause:Af_1-8">Af 1.8</ref> <quote>the other instance of self-abandonment in Alfred’s laws … (cap. 1.8) … suggests that this and hence the similar clauses were conceived of with penance in mind</quote></note>
         <note type="liebermannNote" subtype="textual" xml:id="Af_5-3.lnote.oe.15" n="15" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">52</biblScope></bibl><seg type="original" xml:lang="de">sylf <hi rend="italic">So Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">sylf So Ld</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Af_5-3.lnote.oe.16" n="16" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">52</biblScope></bibl><seg type="original" xml:lang="de">-nu <hi rend="italic">So Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">-nu So Ld</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Af_5-3.lnote.oe.17" n="17" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">52</biblScope></bibl><seg type="original" xml:lang="de">-dan <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">-dan Ld</seg></note>

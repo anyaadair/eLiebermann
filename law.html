@@ -556,7 +556,7 @@ scripts:
                 parts.forEach((x, k) => {
                     if (k) p.appendChild(document.createTextNode('; '));
                     x.refs.forEach((r, m) => { if (m) p.appendChild(document.createTextNode(', ')); p.appendChild(r); });
-                    if (x.page) p.appendChild(el('span', 'muted', ' (' + (id === 'liebermann' ? 'Gesetze I, p. ' : 'p. ') + x.page + ')'));
+                    if (x.page) p.appendChild(el('span', 'muted', ' (' + (id === 'liebermann' ? 'Gesetze I, ' : '') + (/^\d+[–-]\d+/.test(x.page) ? 'pp. ' : 'p. ') + x.page + ')'));
                     if (usefulQuote(x.quote)) {
                         p.appendChild(document.createTextNode(' '));
                         p.appendChild(el('span', 'clause-compare__quote', '“' + x.quote + '”'));
