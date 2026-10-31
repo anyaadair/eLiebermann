@@ -116,7 +116,7 @@ scripts:
     // Groups of law codes, by the groups of the list of law codes (oe-laws/codes.json)
     const PRESETS = [
         ['kent', 'Kentish kings', ['Æthelberht of Kent', 'Hlothhere and Eadric of Kent', 'Wihtred of Kent', 'Earconberht of Kent']],
-        ['wessex', 'Ine and Alfred', ['Ine of Wessex', 'Alfred the Great']],
+        ['wessex', 'Ine and Alfred', ['Ine of Wessex and Alfred the Great']],
         ['tenth', 'Tenth century kings', ['Edward the Elder', 'Æthelstan', 'Edmund I', 'Edgar']],
         ['atr-cn', 'Æthelred and Cnut', ['Æthelred II', 'Cnut']],
         ['other', 'Other pre-Conquest codes', ['Other laws and legal texts']],
@@ -377,6 +377,9 @@ scripts:
 
 
     // The law codes in groups (by king), in the order of the database.
+    // Ine's laws stay with Alfred's, as in the manuscripts and in Liebermann (part of the Domboc),
+    // in Liebermann's order: Af Rb, Ine Rb, Af, Ine, AGu (then App AGu)
+    const GROUP_REIGN = { 'Ine of Wessex and Alfred the Great': 'Ine, r. 688–726; Alfred, r. 871–899' };
     function groups() {
         const out = [];
         codes.forEach(c => {
@@ -391,6 +394,8 @@ scripts:
                 g.joint = / and /.test(c.king) && !/^Hlothhere/.test(c.king);
             }
         });
+        // A group of two kings: both reigns
+        out.forEach(g => { if (GROUP_REIGN[g.name]) g.reign = GROUP_REIGN[g.name]; });
         return out;
     }
 
