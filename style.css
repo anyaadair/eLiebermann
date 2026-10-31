@@ -1081,6 +1081,12 @@ body.scan-open .entry-column > article { max-width: none; }
 .panel-help { font-size: 0.78rem; color: var(--muted); margin: 0.3rem 0 0; line-height: 1.4; }
 .panel-help code { font-size: 0.95em; background: var(--surface); padding: 0 0.2em; border-radius: 3px; }
 .panel-check { display: block; font-size: 0.82rem; margin-top: 0.5rem; line-height: 1.35; color: var(--muted); }
+.tol-row { display: flex; align-items: center; gap: 0.4rem; }
+.info-tip {
+    flex: none; font: italic 600 0.8rem/1 var(--serif); width: 1.2rem; height: 1.2rem; padding: 0;
+    border: 1px solid var(--rule); border-radius: 50%; background: var(--surface); color: var(--link); cursor: pointer;
+}
+.info-tip:hover, .info-tip:focus-visible, .info-tip[aria-expanded="true"] { border-color: var(--link); background: var(--powder-tint); }
 .panel-dates { display: flex; gap: 0.6rem; }
 .panel-dates label { display: flex; align-items: center; gap: 0.3rem; font-size: 0.85rem; }
 .panel-dates input[type=number] { width: 5.2rem; }

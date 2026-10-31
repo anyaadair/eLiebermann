@@ -878,11 +878,20 @@
      * "|" (a new grammatical form) with no form found, nothing; at the start of a numbered sense
      * or of the entry, the headword itself.
      */
+    // Liebermann's passages in square brackets, of more than one word ("[ævre II Atr 8,4 allemal; æfra
+    // Ger 4 je; afre I Cn 1 A]"): [start, end] of each. Brackets inside a word (m[i]ht, [-aboht]) are not.
+    const bracketPassages = flat => [...flat.matchAll(/(?<![\p{L}])\[([^\[\]]*\s[^\[\]]*)\]/gu)].map(m => [m.index, m.index + m[0].length]);
     function formBefore(flat, i, ital, bold, breaks, hw) {
         const toks = [...flat.slice(0, i).matchAll(/\u0001[^\u0003]*\u0003|[\p{L}~'’\[\]\-]*[\p{L}~][\p{L}~'’\[\]\-]*|\d+|[()|‖]/gu)];
+        // A citation inside a bracketed passage is for a form inside it (or else the headword); one
+        // outside it reads past the whole passage, as if it were not there.
+        const groups = bracketPassages(flat);
+        const inside = groups.find(([a, b]) => a < i && i < b);
         let depth = 0, last = i;
         for (let k = toks.length - 1; k >= 0; k--) {
             const t = toks[k][0], at = toks[k].index;
+            if (inside && at < inside[0]) return hw;
+            if (!inside && groups.some(([a, b]) => a <= at && at < b)) continue;
             // a new paragraph (a numbered sense set on its own line) between here and the last word read
             for (const b of breaks) if (b > at && b <= last) return hw;
             last = at;
@@ -895,6 +904,9 @@
             if (bold[at]) return t.length > 1 ? expandTilde(t, hw) : hw;   // the headword, or "a)" of a sense
             if (ital[at]) continue;
             if (t.includes('~')) return expandTilde(t, hw);
+            // in a bracketed passage of spellings, the word before the citation is the spelling
+            // cited, whatever it looks like ("ævre II Atr 8,4", "afre I Cn 1 A")
+            if (inside) return t.replace(/[\[\]\-]/g, '');
             if (relatedForm(t, hw)) return t.replace(/[\[\]\-]/g, '');
         }
         return hw;
