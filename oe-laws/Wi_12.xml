@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Wi_12-a">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Wi_12">
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Wi 12[a]</title>
+        <title>Wi 12</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Edition of the text</resp><name ref="#attenborough">Attenborough</name></respStmt>
         <respStmt><resp>Edition of the text</resp><name ref="#oliver">Oliver</name></respStmt>
@@ -17,15 +17,20 @@
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
         <respStmt><resp>Transcription of Oliver’s notes</resp><name ref="#claude">Claude</name></respStmt>
         <respStmt><resp>Transcription of Whitelock’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      <respStmt><resp>Date and place</resp><name ref="#whitelock">Whitelock</name></respStmt>
+        <respStmt><resp>Transcription of Attenborough’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Transcription of Oliver’s notes</resp><name ref="#claude">Claude</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
-        <idno type="slug">Wi_12-a</idno>
-        <idno type="citation">Wi 12[a]</idno>
+        <idno type="slug">Wi_12</idno>
+        <idno type="citation">Wi 12</idno>
         <idno type="lawCode">Wi</idno>
         <idno type="lawCodeAnchor">Wi</idno>
-        <idno type="clause">12[a]</idno>
+        <idno type="clause">12</idno>
+        <idno type="citationKey">Wi 12</idno>
         <idno type="citationKey">Wi 12a</idno>
+        <idno type="citationKey">Wi 12b</idno>
       </publicationStmt>
       <sourceDesc>
         <bibl type="legalText"><title>Wihtred’s Code</title> <note type="reign">Wihtred, r. 690/1–725</note></bibl>
@@ -61,20 +66,22 @@
     <revisionDesc>
       <change when="2026-10-19">Generated from row 171 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 13.</change>
+    <change when="2026-10-19">Joined from the files of its parts 12[a], 12[b] (rows of the spreadsheet), to give Liebermann’s clause on one page.</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
-      <div type="clause" n="12[a]">
-        <head><ref type="lawCode" target="law:Wi">Wi</ref> 12[a]</head>
-        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="12[a]" corresp="#wit-h"><pb n="13" ed="#liebermann"/>Gif ceorl buton wifes wisdome deoflum gelde, he sie ealra his æhtan scyldig ⁊ healsfange.</ab>
-        <ab type="editionText" xml:lang="ang" source="#attenborough" corresp="#wit-h"><pb n="26" ed="#attenborough"/>Gif ceorl buton wifes wisdome deoflum gelde, he sie ealra his æhtan scyldig ⁊ healsfange.</ab>
-        <ab type="editionText" xml:lang="ang" source="#oliver" n="9" corresp="#wit-h"><pb n="156" ed="#oliver"/>Gif ceorl buton wifes wisdome deoflum gelde, he sie ealra his æhtan scyldig ⁊ healsfange.</ab>
-        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="13" ed="#liebermann"/>Wenn ein Ehemann<ptr type="liebermannNote" n="1" target="#Wi_12-a.lnote.de.1"/> ohne Wissen seiner Frau Götzen<ptr type="liebermannNote" n="2" target="#Wi_12-a.lnote.de.2"/> opfert<ptr type="liebermannNote" n="3" target="#Wi_12-a.lnote.de.3"/>, sei er [dem König<ptr type="liebermannNote" n="4" target="#Wi_12-a.lnote.de.4"/>] all seine [Fahr]habe<ptr type="liebermannNote" n="5" target="#Wi_12-a.lnote.de.5"/> schuldig und Halsfang.</ab>
-        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">If a husband sacrifices to idols without his wife’s knowledge, let him be liable [to the king] for all his [movable] goods and his healsfang.</ab>
-        <ab type="translation" xml:lang="en" source="#attenborough" corresp="#wit-h"><pb n="27" ed="#attenborough"/>If a husband, without his wife’s knowledge, makes offerings to devils, he shall forfeit all his goods or his <hi rend="italic">healsfang</hi>.</ab>
-        <ab type="translation" xml:lang="en" source="#whitelock" corresp="#wit-h"><pb n="398" ed="#whitelock"/>If a husband sacrifice to devils without his wife’s knowledge, he is to be liable to pay all his goods and<ptr type="editorNote" n="7" target="#Wi_12-a.whinote.n.7"/> <hi rend="italic">healsfang</hi>; if they both sacrifice to devils, they are to be liable to pay healsfang and all their goods.</ab>
-        <ab type="translation" xml:lang="en" source="#oliver" corresp="#wit-h"><pb n="157" ed="#oliver"/>If a freeman<ptr type="editorNote" n="h" target="#Wi_12-a.olinote.n.h"/> without his wife’s knowledge makes offering to devils, he shall be liable for all his possessions or<ptr type="editorNote" n="i" target="#Wi_12-a.olinote.n.i"/> <hi rend="italic">healsfang</hi>.<ptr type="editorNote" n="j" target="#Wi_12-a.olinote.n.j"/></ab>
+      <div type="clause" n="12">
+        <head><ref type="lawCode" target="law:Wi">Wi</ref> 12</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" corresp="#wit-h"><seg type="part" corresp="#part-a"><pb n="13" ed="#liebermann"/>Gif ceorl buton wifes wisdome deoflum gelde, he sie ealra his æhtan scyldig ⁊ healsfange.</seg> <seg type="part" corresp="#part-b"><pb n="13" ed="#liebermann"/>Gif butwu deoflum geldaþ, sion hio<ptr type="liebermannNote" n="1" target="#Wi_12-b.lnote.oe.1"/> healsfange scyldigo ⁊ ealra æhtan.</seg></ab>
+        <ab type="editionText" xml:lang="ang" source="#attenborough" corresp="#wit-h"><seg type="part" corresp="#part-a"><pb n="26" ed="#attenborough"/>Gif ceorl buton wifes wisdome deoflum gelde, he sie ealra his æhtan scyldig ⁊ healsfange.</seg> <seg type="part" corresp="#part-b"><pb n="26" ed="#attenborough"/>Gif butwu deoflum geldaþ, sion hio healsfange scyldigo ⁊ ealra æhtan.</seg></ab>
+        <ab type="editionText" xml:lang="ang" source="#oliver" corresp="#wit-h" n="9–9.1"><seg type="part" n="9" corresp="#part-a"><pb n="156" ed="#oliver"/>Gif ceorl buton wifes wisdome deoflum gelde, he sie ealra his æhtan scyldig ⁊ healsfange.</seg> <seg type="part" n="9.1" corresp="#part-b"><pb n="156" ed="#oliver"/>Gif butwu deoflum geldaþ, sion hio healsfange scyldigo ⁊ ealra æhtan.</seg></ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><seg type="part" corresp="#part-a"><pb n="13" ed="#liebermann"/>Wenn ein Ehemann<ptr type="liebermannNote" n="1" target="#Wi_12-a.lnote.de.1"/> ohne Wissen seiner Frau Götzen<ptr type="liebermannNote" n="2" target="#Wi_12-a.lnote.de.2"/> opfert<ptr type="liebermannNote" n="3" target="#Wi_12-a.lnote.de.3"/>, sei er [dem König<ptr type="liebermannNote" n="4" target="#Wi_12-a.lnote.de.4"/>] all seine [Fahr]habe<ptr type="liebermannNote" n="5" target="#Wi_12-a.lnote.de.5"/> schuldig und Halsfang.</seg> <seg type="part" corresp="#part-b"><pb n="13" ed="#liebermann"/>Wenn beide Götzen opfern, seien sie [beide] Halsfang schuldig<ptr type="liebermannNote" n="6" target="#Wi_12-b.lnote.de.6"/> und alle [Fahr]habe.</seg></ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman"><seg type="part" corresp="#part-a">If a husband sacrifices to idols without his wife’s knowledge, let him be liable [to the king] for all his [movable] goods and his healsfang.</seg> <seg type="part" corresp="#part-b">If both sacrifice to idols, let them [both] be liable for healsfang and all their [movable] goods.</seg></ab>
+        <ab type="translation" xml:lang="en" source="#attenborough" corresp="#wit-h"><seg type="part" corresp="#part-a"><pb n="27" ed="#attenborough"/>If a husband, without his wife’s knowledge, makes offerings to devils, he shall forfeit all his goods or his <hi rend="italic">healsfang</hi>.</seg> <seg type="part" corresp="#part-b"><pb n="27" ed="#attenborough"/>If both [of them] make offerings to devils they shall forfeit their <hi rend="italic">healsfangs</hi> or<ptr type="editorNote" n="1" target="#Wi_12-b.attnote.n.1"/> all their goods.</seg></ab>
+        <ab type="translation" xml:lang="en" source="#whitelock" corresp="#wit-h"><seg type="part" corresp="#part-a"><pb n="398" ed="#whitelock"/>If a husband sacrifice to devils without his wife’s knowledge, he is to be liable to pay all his goods and<ptr type="editorNote" n="7" target="#Wi_12-a.whinote.n.7"/> <hi rend="italic">healsfang</hi>; if they both sacrifice to devils, they are to be liable to pay healsfang and all their goods.</seg></ab>
+        <ab type="translation" xml:lang="en" source="#oliver" corresp="#wit-h"><seg type="part" corresp="#part-a"><pb n="157" ed="#oliver"/>If a freeman<ptr type="editorNote" n="h" target="#Wi_12-a.olinote.n.h"/> without his wife’s knowledge makes offering to devils, he shall be liable for all his possessions or<ptr type="editorNote" n="i" target="#Wi_12-a.olinote.n.i"/> <hi rend="italic">healsfang</hi>.<ptr type="editorNote" n="j" target="#Wi_12-a.olinote.n.j"/></seg> <seg type="part" corresp="#part-b"><pb n="157" ed="#oliver"/>If both make offering to devils, they are [both] liable for <hi rend="italic">healsfang<ptr type="editorNote" n="j" target="#Wi_12-b.olinote.n.j"/></hi> or all possessions.</seg></ab>
+        <note type="concordance"><seg type="edition">Oliver 9, 9.1</seg></note>
         <note type="comparedBy" source="#jurasinski-and-oliver" n="377"><label>another instance</label> <ref target="clause:Ine_7">Ine 7</ref> <quote>For another instance of the separate culpability of husband and wife see Wihtred §9 [L12].</quote></note>
         <note type="liebermannNote" subtype="erklaerung" xml:id="Wi_12-a.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">28</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Ein ‘Freier’ ist zwar, laut des Gegensatzes zum Sklaven in Wi 13, auch gemeint, aber ein Ehemann laut des folgenden <hi rend="italic">wif</hi>. Dass ein Gemeinfreier im Ggs. zum Adel gemeint sei, und dass also Heidentum unter höheren Klassen nicht mehr vorkam, braucht deshalb nicht herausgelesen zu werden. Offenbar wird ein Heide mit einer Christin, nicht ein Christ mit einer Heidin verheiratet gedacht; <hi rend="italic">vgl. Gl</hi> Bekehrung 3a</seg><seg type="translation" xml:lang="en" source="#claude">A ‘freeman’ is indeed also meant, given the contrast with the slave in Wi 13, but a husband, given the following <hi rend="italic">wif</hi>. It need not therefore be inferred that a common freeman, as opposed to the nobility, is meant, and thus that heathenism no longer occurred among the higher classes. Evidently a heathen husband is envisaged as married to a Christian wife, not a Christian husband to a heathen wife; cf. <hi rend="italic">Gl</hi> Bekehrung 3a</seg></note>
         <note type="liebermannNote" subtype="erklaerung" xml:id="Wi_12-a.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">28</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">‘Teufel’ lebendiger Kraft sah zwar frühes Christentum in den Göttern der Heiden. Doch braucht dieser Aberglaube nicht überall vorzuliegen, wo das Wort <hi rend="italic">deofol</hi> steht; dies kann ‘Götze’ heissen (<hi rend="italic">s.</hi> Wb: <hi rend="italic">deofolgield</hi>), ohne dass Sprechender diesen als wirklich betrachtete</seg><seg type="translation" xml:lang="en" source="#claude">Early Christianity did indeed see in the gods of the heathen ‘devils’ of living power. But this superstition need not be present wherever the word <hi rend="italic">deofol</hi> occurs; it can mean ‘idol’ (<hi rend="italic">see</hi> Wb: <hi rend="italic">deofolgield</hi>) without the speaker regarding the idol as real</seg></note>
@@ -85,6 +92,10 @@
         <note type="editorNote" subtype="translationFootnote" xml:id="Wi_12-a.olinote.n.h" n="h" source="#oliver"><bibl><biblScope unit="page">157</biblScope></bibl><label>freeman</label><seg type="original" xml:lang="en"><hi rend="italic">ceorl</hi> can also mean ‘husband.’</seg></note>
         <note type="editorNote" subtype="translationFootnote" xml:id="Wi_12-a.olinote.n.i" n="i" source="#oliver"><bibl><biblScope unit="page">157</biblScope></bibl><label>or</label><seg type="original" xml:lang="en">Here and in the next clause, Whitelock takes ⁊ as ‘or.’ Although the meaning of ‘and’ is more common, ⁊ appears elsewhere with adversative meaning in the Kentish laws. See e.g., Æbt §§15, 30, and 80, and compare the previous clause. If the possessions were forfeit anyway, one would have nothing with which to pay <hi rend="italic">healsfang</hi>.</seg></note>
         <note type="editorNote" subtype="translationFootnote" xml:id="Wi_12-a.olinote.n.j" n="j" source="#oliver"><bibl><biblScope unit="page">157</biblScope></bibl><label>healsfang.</label><seg type="original" xml:lang="en">See note f to §8.2.</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Wi_12-b.lnote.oe.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">13</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">geändert aus</hi> hie</seg><seg type="translation" xml:lang="en" source="#claude">altered from hie</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Wi_12-b.lnote.de.6" n="6" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">28</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">‘und’ = ‘beziehungsweise’ wie Abt 9⁵. Die Ehefrau hat also eigenes Vermögen, wenigstens in Fahrhabe; <hi rend="italic">vgl. Gl</hi> eheliches Güterrecht 7</seg><seg type="translation" xml:lang="en" source="#claude">‘and’ = ‘or, as the case may be’, as in Abt 9⁵. The wife therefore has property of her own, at least in movables; cf. <hi rend="italic">Gl</hi> eheliches Güterrecht 7</seg></note>
+        <note type="editorNote" subtype="endnote" xml:id="Wi_12-b.attnote.n.1" n="1" source="#attenborough"><bibl><biblScope unit="page">181</biblScope></bibl><seg type="original" xml:lang="en">(With Liebermann) <hi rend="italic">and</hi> is to be understood as ‘or’ (cf. Abt. cap. 9, etc.).</seg></note>
+        <note type="editorNote" subtype="translationFootnote" xml:id="Wi_12-b.olinote.n.j" n="j" source="#oliver"><bibl><biblScope unit="page">157</biblScope></bibl><label>healsfang</label><seg type="original" xml:lang="en">See note f to §8.2.</seg><note type="remark" resp="#claude">The same note as on row 171 (the letter is printed twice).</note></note>
       </div>
     </body>
   </text>

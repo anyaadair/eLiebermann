@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Ger_16-a">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Ger_16">
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Ger 16[a]</title>
+        <title>Ger 16</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Edition of the text</resp><name ref="#gobbitt">Gobbitt</name></respStmt>
         <respStmt><resp>Edition of the text</resp><name ref="#rabin-doml">Rabin</name></respStmt>
@@ -16,12 +16,14 @@
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
-        <idno type="slug">Ger_16-a</idno>
-        <idno type="citation">Ger 16[a]</idno>
+        <idno type="slug">Ger_16</idno>
+        <idno type="citation">Ger 16</idno>
         <idno type="lawCode">Ger</idno>
         <idno type="lawCodeAnchor">Ger</idno>
-        <idno type="clause">16[a]</idno>
+        <idno type="clause">16</idno>
+        <idno type="citationKey">Ger 16</idno>
         <idno type="citationKey">Ger 16a</idno>
+        <idno type="citationKey">Ger 16b</idno>
       </publicationStmt>
       <sourceDesc>
         <bibl type="legalText"><title>Gerefa (The Reeve)</title></bibl>
@@ -57,25 +59,32 @@
       <change when="2026-10-19">Generated from row 2147 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text checked and corrected against <title>Die Gesetze der Angelsachsen</title> I, p. 455.</change>
       <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 455: “7; –” → “⁊; —”.</change>
+    <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 455.</change>
+      <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 455: “[16[b]] ælc weorc sylf wisað, hwæt him to gebyreð; nis ænig man, þæt atellan mæge ða tol ealle, ðe man habban sceal.” → “[16[b]] ælc weorc sylf wisað, hwæt him to gebyreð; nis ænig man, þæt atellan mæge ða tol ealle, ðe man habban sceal. (expanded letters in italics: æt)”.</change>
+    <change when="2026-10-19">Joined from the files of its parts 16[a], 16[b] (rows of the spreadsheet), to give Liebermann’s clause on one page.</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
-      <div type="clause" n="16[a]">
-        <head><ref type="lawCode" target="law:Ger">Ger</ref> 16[a]</head>
-        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="16[a]" corresp="#wit-b"><pb n="455" ed="#liebermann"/>[16[a]] And gif he smeawyrhtan hæfð, ðam he sceal to tolan fylstan: mylewerde, sutere, leodgotan ⁊ oðran wyrhtan —</ab>
-        <ab type="editionText" xml:lang="ang" source="#gobbitt" n="29" corresp="#wit-b">And gif he smeawyrhtan hæfð . ðam he sceal to tolan fylstan . Mylewerde, Sutere . Leodgotan. 7 oðran wyrhtan.</ab>
-        <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-b"><pb n="338" ed="#rabin-doml"/>And gif he smeawyrhtan hæfð, ðam he sceal to tolan fylstan—mylewerde, sutere, leodgotan and oðran wyrhtan.</ab>
-        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="455" ed="#liebermann"/>Und wenn er Feinarbeiter [Handwerker<ptr type="liebermannNote" n="1" target="#Ger_16-a.lnote.de.1"/>] hat, denen muss er zu Werkzeugen<ptr type="liebermannNote" n="2" target="#Ger_16-a.lnote.de.2"/> verhelfen, dem Müller<ptr type="liebermannNote" n="3" target="#Ger_16-a.lnote.de.3"/>, Schuster, Bleigiesser<ptr type="liebermannNote" n="4" target="#Ger_16-a.lnote.de.4"/> [Klempner] und anderen Arbeitern —</ab>
-        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">And if he has skilled workmen [craftsmen], he must help them to tools, the miller, the shoemaker, the lead-worker [plumber] and other workmen —</ab>
-        <ab type="translation" xml:lang="en" source="#gobbitt" corresp="#wit-b">And if he has skilled artisans, he must supply tools to them, miller, shoe maker, plumber and other workers.</ab>
-        <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-b"><pb n="339" ed="#rabin-doml"/>And if he has skilled workmen, then he must provide them with tools—miller, shoemaker, plumber, and other laborers.</ab>
-        <note type="editorial">Liebermann's 16 is split here into two rows. K: a stray bracket removed. B's ‘mylewerde’ is unclear (n or u). Liebermann compares Gerefa 9.</note>
-        <note type="translator" source="#rabin-doml">Rabin’s 16 covers the rows 16[a], 16[b]; it is given here, in the first.</note>
+      <div type="clause" n="16">
+        <head><ref type="lawCode" target="law:Ger">Ger</ref> 16</head>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" corresp="#wit-b"><seg type="part" corresp="#part-a"><pb n="455" ed="#liebermann"/>[16[a]] And gif he smeawyrhtan hæfð, ðam he sceal to tolan fylstan: mylewerde, sutere, leodgotan ⁊ oðran wyrhtan —</seg> <seg type="part" corresp="#part-b"><pb n="455" ed="#liebermann"/>[16[b]] ælc weorc sylf wisað, hwæt him to gebyreð; nis ænig man, þ<hi rend="italic">æt<ptr type="liebermannNote" n="a" target="#Ger_16-b.lnote.oe.a"/></hi> atellan mæge ða tol ealle, ðe man habban sceal.</seg></ab>
+        <ab type="editionText" xml:lang="ang" source="#gobbitt" corresp="#wit-b" n="29–29.1"><seg type="part" n="29" corresp="#part-a">And gif he smeawyrhtan hæfð . ðam he sceal to tolan fylstan . Mylewerde, Sutere . Leodgotan. 7 oðran wyrhtan.</seg> <seg type="part" n="29.1" corresp="#part-b">Ælc weorc sylf wisað hwæt him to gebyreð . nis ænig man þæt atellan mæge ða tol ealle ðe man habban sceal .</seg></ab>
+        <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-b"><seg type="part" corresp="#part-a"><pb n="338" ed="#rabin-doml"/>And gif he smeawyrhtan hæfð, ðam he sceal to tolan fylstan—mylewerde, sutere, leodgotan and oðran wyrhtan.</seg> <seg type="part" corresp="#part-b"><pb n="338" ed="#rabin-doml"/>Ælc weorc sylf wisað, hwæt him to gebyreð; nis ænig man, þæt atellan mæge ða tol ealle, ðe man habban sceal.</seg></ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><seg type="part" corresp="#part-a"><pb n="455" ed="#liebermann"/>Und wenn er Feinarbeiter [Handwerker<ptr type="liebermannNote" n="1" target="#Ger_16-a.lnote.de.1"/>] hat, denen muss er zu Werkzeugen<ptr type="liebermannNote" n="2" target="#Ger_16-a.lnote.de.2"/> verhelfen, dem Müller<ptr type="liebermannNote" n="3" target="#Ger_16-a.lnote.de.3"/>, Schuster, Bleigiesser<ptr type="liebermannNote" n="4" target="#Ger_16-a.lnote.de.4"/> [Klempner] und anderen Arbeitern —</seg> <seg type="part" corresp="#part-b"><pb n="455" ed="#liebermann"/>jede Arbeit zeigt [von] selbst, was für sie passt; niemand lebt, dass er herzählen<ptr type="liebermannNote" n="g" target="#Ger_16-b.lnote.de1.g"/> könne die Werkzeuge alle, die man halten muss.</seg></ab>
+        <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman"><seg type="part" corresp="#part-a">And if he has skilled workmen [craftsmen], he must help them to tools, the miller, the shoemaker, the lead-worker [plumber] and other workmen —</seg> <seg type="part" corresp="#part-b">each task shows of itself what belongs to it; there is no one living who could recount all the tools that one must keep.</seg></ab>
+        <ab type="translation" xml:lang="en" source="#gobbitt" corresp="#wit-b"><seg type="part" corresp="#part-a">And if he has skilled artisans, he must supply tools to them, miller, shoe maker, plumber and other workers.</seg> <seg type="part" corresp="#part-b">He must know himself what each type of work entails, [as] there is not any man who may recount all the tools a man must have.</seg></ab>
+        <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-b"><seg type="part" corresp="#part-a"><pb n="339" ed="#rabin-doml"/>And if he has skilled workmen, then he must provide them with tools—miller, shoemaker, plumber, and other laborers.</seg> <seg type="part" corresp="#part-b"><pb n="339" ed="#rabin-doml"/>Each type of work demonstrates the tools most appropriate for it; there is no one who can list all the tools that a worker must have.</seg></ab>
+        <note type="concordance"><seg type="edition">Gobbitt 29, 29.1</seg></note>
+        <note type="editorial" target="#part-a">Liebermann's 16 is split here into two rows. K: a stray bracket removed. B's ‘mylewerde’ is unclear (n or u). Liebermann compares Gerefa 9.</note>
+        <note type="translator" source="#rabin-doml" target="#part-a">Rabin’s 16 covers the rows 16[a], 16[b]; it is given here, in the first.</note>
         <note type="liebermannNote" subtype="erklaerung" xml:id="Ger_16-a.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">254</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Handwerker. Die im Domesday vorkommenden nennt Ellis <hi rend="italic">Introd. to Dom</hi>. I 92. Über die auf Herrschaftsgütern <hi rend="italic">s</hi>. Leo <hi rend="italic">Rect</hi>. 131; Andrews <hi rend="italic">Manor</hi> 236. Nur Unfreie scheinen gemeint, da die Herrschaft ihnen das Handwerkzeug liefert</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf. Gl</hi> Handwerker. Ellis <hi rend="italic">Introd. to Dom</hi>. I 92 lists those occurring in Domesday. On those on lords' estates <hi rend="italic">see</hi> Leo <hi rend="italic">Rect</hi>. 131; Andrews <hi rend="italic">Manor</hi> 236. Only unfree men seem to be meant, since the lordship supplies them with their tools</seg></note>
         <note type="liebermannNote" subtype="erklaerung" xml:id="Ger_16-a.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">254</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">Besondere, im Ggs. zu den allgemeinen des Ackers und Hauses Rect 4, 3a</seg><seg type="translation" xml:lang="en" source="#claude">Special ones, in contrast to the general ones of field and house, Rect 4, 3a</seg></note>
         <note type="liebermannNote" subtype="erklaerung" xml:id="Ger_16-a.lnote.de.3" n="3" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">254</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">‘Mühlknecht’ Kluge, ‘Mühlenbauer’ falsch Sk-Wi; das Wort beweist, dass die Mühle (<hi rend="italic">s. d. Gl</hi>) dem Herrn gehört. Der Müller ist ursprünglich nur ihr Hüter; Köhne <hi rend="italic">Gewerberechtl. im Sprichwort</hi> 31. Die Glossen: <hi rend="italic">mol(end)inarius</hi> verraten das nicht.—Zum Mühlenzwang 1067—87 <hi rend="italic">vgl</hi>. Davis <hi rend="italic">Reg. Anglonorm</hi>. n. 48. 56</seg><seg type="translation" xml:lang="en" source="#claude">‘mill-servant’ Kluge, ‘millwright’ wrongly Sk-Wi; the word proves that the mill (<hi rend="italic">see</hi> that word in <hi rend="italic">Gl</hi>) belongs to the lord. The miller is originally only its keeper; Köhne <hi rend="italic">Gewerberechtl. im Sprichwort</hi> 31. The glosses <hi rend="italic">mol(end)inarius</hi> do not reveal this.—On mill-soke 1067—87 <hi rend="italic">cf</hi>. Davis <hi rend="italic">Reg. Anglonorm</hi>. n. 48. 56</seg></note>
         <note type="liebermannNote" subtype="erklaerung" xml:id="Ger_16-a.lnote.de.4" n="4" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">254</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">‘plumber’ Sweet, ‘Bleigiesser’ Kluge; <hi rend="italic">leod</hi> für <hi rend="italic">lead</hi> auch bei Layamon. <hi rend="italic">Vgl. Gl</hi> Blei(klempner)</seg><seg type="translation" xml:lang="en" source="#claude">‘plumber’ Sweet, ‘lead-caster’ Kluge; <hi rend="italic">leod</hi> for <hi rend="italic">lead</hi> also in Layamon. <hi rend="italic">Cf. Gl</hi> Blei(klempner)</seg></note>
+        <note type="editorial" target="#part-b">‘þæt’ is a conjunction, with ellipsis of the pronoun after it (Pogatscher). Liebermann compares Gerefa 12 and 17 f.</note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ger_16-b.lnote.oe.a" n="a" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">455</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Conjunction, danach Ellipse des Pron.; Pogatscher</hi> Anglia 23, 270. 275. 277</seg><seg type="translation" xml:lang="en" source="#claude">conjunction, followed by ellipsis of the pronoun; Pogatscher Anglia 23, 270. 275. 277</seg></note>
+        <note type="liebermannNote" subtype="translationFootnote" xml:id="Ger_16-b.lnote.de1.g" n="g" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">455</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">s. o.</hi> 12; <hi rend="italic">u.</hi> 17 <hi rend="italic">f.</hi></seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">see above</hi> 12; <hi rend="italic">below</hi> 17 <hi rend="italic">f.</hi></seg></note>
       </div>
     </body>
   </text>
