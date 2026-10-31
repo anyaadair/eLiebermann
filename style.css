@@ -760,6 +760,9 @@ ul.citations li { break-inside: avoid; }
 .clause-source .ms-label { cursor: help; border-bottom: 1px dotted currentColor; color: #45484c; }
 .clause-note { margin: 0.3rem 0 0.6rem; color: var(--muted); }
 .clause-note strong { color: inherit; font-weight: 600; }
+/* Liebermann's out-of-order numbers (data/clause-order.json): a short note, set off by a line */
+.clause-order-note { border-left: 3px solid var(--rule); padding: 0.2rem 0.8rem; margin: 0.4rem 0 1rem; }
+.code-order-note { list-style: none; color: var(--muted); border-left: 3px solid var(--rule); padding: 0.3rem 0.8rem; margin: 0.6rem 0; display: block !important; }
 /* Liebermann's cross-references ("Vgl.") and the clauses that point back here */
 .clause-compare { margin: 0.6rem 0; padding: 0.25rem 0.8rem 0.4rem; border-left: 3px solid var(--rule, #ccc); }
 /* the same space above the box (below the previous/next bubbles) as below it (above Keywords) */

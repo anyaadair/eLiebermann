@@ -426,7 +426,9 @@ def read_rows(path, only=None):
             # not in Liebermann: Kennedy's numbering (column S), which Rabin follows
             row['clause'] = {'Prologue': 'Prol.'}.get(row['editorNumber'], row['editorNumber'])
         rows.append(row)
-    return in_clause_order(rows)
+    rows = in_clause_order(rows)
+    check_printed_order(rows)
+    return rows
 
 
 def clause_order_key(clause):
@@ -445,9 +447,52 @@ def clause_order_key(clause):
     return (0, key)
 
 
+# The order in which Liebermann prints the codes whose order is not simply numerical (Alfred keeps Thorpe's and
+# Schmid's numbers out of order: 25.1, 29, 30, 31, 31.1, 26 …). These codes are kept in this order, never sorted
+# by number; a rebuild that comes out differently is reported (check_printed_order).
+try:
+    PRINTED_ORDER = json.load(open(os.path.join(HERE, '..', 'data', 'clause-order.json'), encoding='utf-8'))['orders']
+except (OSError, ValueError, KeyError):
+    PRINTED_ORDER = {}
+
+
+def printed_position(code, clause, after=0):
+    """Where a clause stands in Liebermann's printed order (a part "36.2[a]" with its clause), or None. A number
+    printed twice (IV As 6.1) is looked for first from position `after` on."""
+    order = PRINTED_ORDER.get(code)
+    if not order:
+        return None
+    for c in (clause, re.sub(r'\[[a-z]\]$', '', clause or '')):
+        if c in order[after:]:
+            return order.index(c, after)
+        if c in order:
+            return order.index(c)
+    return None
+
+
+def printed_positions(code, rs):
+    """printed_position for each of a code's rows in turn (so repeated numbers are told apart)."""
+    out, last = [], 0
+    for r in rs:
+        p = printed_position(code, r['clause'], last)
+        out.append(p)
+        if p is not None:
+            last = p
+    return out
+
+
+def check_printed_order(rows):
+    """Warns if a code in data/clause-order.json comes out in a different order from the one recorded."""
+    for code in PRINTED_ORDER:
+        pos = [p for p in printed_positions(code, [r for r in rows if r['code'] == code]) if p is not None]
+        if pos != sorted(pos):
+            print('WARNING: %s is not in Liebermann\'s printed order (data/clause-order.json); check the rows of Sheet1' % code)
+
+
 def in_clause_order(rows):
     """Rows added at the end of Sheet1 for a code that is already higher up (October 2026: clauses Liebermann prints
-    that the edition the rows were made from leaves out) are put among that code's rows, in clause order."""
+    that the edition the rows were made from leaves out) are put among that code's rows, in clause order: for a code
+    in data/clause-order.json, Liebermann's printed order (new clauses by number after the clause before them)."""
     first, by_code, seen_end = {}, {}, {}
     for i, r in enumerate(rows):
         first.setdefault(r['code'], i); by_code.setdefault(r['code'], []).append(r)
@@ -458,7 +503,21 @@ def in_clause_order(rows):
         if r['code'] in split:
             if r['code'] in seen_end: continue
             seen_end[r['code']] = True
-            out.extend(sorted(by_code[r['code']], key=lambda x: clause_order_key(x['clause'])))
+            code = r['code']
+            if code in PRINTED_ORDER:
+                # recorded clauses in their printed order; a clause not recorded goes after the recorded one
+                # that comes just before it by number
+                rs = by_code[code]
+                pos = printed_positions(code, rs)
+                known = [x for _, x in sorted([(p, i) for i, p in enumerate(pos) if p is not None])]
+                known = [rs[i] for i in known]
+                for x in [x for x, p in zip(rs, pos) if p is None]:
+                    k = clause_order_key(x['clause'])
+                    before = [(clause_order_key(y['clause']), i) for i, y in enumerate(known) if clause_order_key(y['clause']) <= k]
+                    known.insert(max(before)[1] + 1 if before else 0, x)
+                out.extend(known)
+            else:
+                out.extend(sorted(by_code[code], key=lambda x: clause_order_key(x['clause'])))
         else:
             out.append(r)
     return out
