@@ -762,6 +762,14 @@ ul.citations li { break-inside: avoid; }
 .clause-note strong { color: inherit; font-weight: 600; }
 /* Liebermann's out-of-order numbers (data/clause-order.json): a short note, set off by a line */
 .clause-order-note { border-left: 3px solid var(--rule); padding: 0.2rem 0.8rem; margin: 0.4rem 0 1rem; }
+/* "About the numbering" on a law code's page: a button that opens the editor's introduction */
+.code-intro { margin: 0 0 1rem; }
+.code-intro > summary { display: inline-block; cursor: pointer; list-style: none; font-family: var(--sans); font-size: 0.85rem; padding: 0.25rem 0.85rem; border: 1px solid var(--rule); border-radius: 999px; background: var(--surface); color: var(--link); }
+.code-intro > summary::-webkit-details-marker { display: none; }
+.code-intro > summary::before { content: "ⓘ "; }
+.code-intro[open] > summary { border-color: var(--link); background: var(--powder-tint); }
+.code-intro__body { max-width: var(--measure); margin: 0.7rem 0 0; padding: 0.2rem 0 0.2rem 1rem; border-left: 3px solid var(--rule); }
+.code-intro__body p { margin: 0 0 0.7rem; }
 .code-order-note { list-style: none; color: var(--muted); border-left: 3px solid var(--rule); padding: 0.3rem 0.8rem; margin: 0.6rem 0; display: block !important; }
 /* Liebermann's cross-references ("Vgl.") and the clauses that point back here */
 .clause-compare { margin: 0.6rem 0; padding: 0.25rem 0.8rem 0.4rem; border-left: 3px solid var(--rule, #ccc); }

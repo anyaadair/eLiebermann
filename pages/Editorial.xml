@@ -16,6 +16,7 @@
     <revisionDesc>
       <change when="2026-10-17">First draft: general principles, the Legal Dictionary (abbreviations and technical terms, works cited, cross-reference and spelling entries, other dictionaries) and the Lawcodes Database.</change>
       <change when="2026-10-19">Reorganised: the account of how the texts are made (transcription and collation, typography, encoding and linking, compilation of the database, review and checking) moved here from About and merged with the existing sections; light revision of wording throughout.</change>
+      <change when="2026-10-31">Clause numbers: why Liebermann's numbering is kept, its faults, and how to cite.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -83,6 +84,12 @@
 
         <head rend="sub">Clause division</head>
         <p>Liebermann's division of the laws into clauses is followed throughout, so that every citation of the form used by Liebermann and by the scholarship that depends on him leads to a single clause. The texts of later editions are divided at Liebermann's clause breaks, including those printed by their editors as continuous prose. Where a later editor divides a clause more finely, the clause is kept whole and the editor's divisions are marked within it by that editor's own numbers.</p>
+
+        <head rend="sub">Clause numbers</head>
+        <p>This edition divides and numbers the laws as Liebermann does in <title>Die Gesetze der Angelsachsen</title>. These are the citations he uses throughout his <title>Wörterbuch</title>, and in all the notes throughout his edition. They are also the citations used in a century of scholarship, and keeping them means that every citation in the dictionary, and in most of the secondary literature, leads to the right clause.</p>
+        <p>The numbers, and the editorial divisions upon which they are based, have well-known faults. For the earlier codes Liebermann adopted the divisions of Schmid and Thorpe, which follow the manuscript rubrics, and are often at odds with the sense. He kept them even where he disagreed, and in places recorded where he would have divided otherwise. Later scholars have expressed increasing frustration with the flaws of this system. Wormald called the continued use of the received numbering of Æthelstan’s laws, “that everyone at least since 1858 has known to be wrong”, a sign of “the enslavement of early English legal studies to traditional practice” (<title>The Making of English Law</title>, p. 291 n. 129). Richard Dammery’s doctoral edition of Alfred and Ine (1990) kept the old numbers but offered alternatives. Lisi Oliver’s edition of the Kentish laws (2002) and Jurasinski and Oliver’s of Alfred and Ine (2021) – now the standard texts of their respective codes – renumber outright.</p>
+        <p>The divisions are not a merely technical matter; they affect how the codes are to be read and understood. The decision to keep to Liebermann’s system here is nonetheless a technical one, and implies no judgement in its favour. eLiebermann is built around Liebermann’s <title>Wörterbuch</title>, whose many thousands of citations give his numbers; the links from each dictionary entry to the clauses it cites, Liebermann’s own cross-references and notes, and the cross-references collected from later scholarship all depend on a single, stable set of numbers, and that set can only be his.</p>
+        <p>Where a modern editor divides one of Liebermann’s clauses, the clause is kept whole here and the editor’s divisions are marked within it, with the editor’s own numbers. Wherever an editor numbers a clause differently, that number is shown in a grey bubble at the start of the editor’s text. Readers citing a modern edition should use its numbers. Readers citing this site, or Liebermann, should use his.</p>
 
         <head rend="sub">Manuscripts</head>
         <p>Every text is identified by the manuscript from which it is taken, under Liebermann's siglum. Where Liebermann prints the text from more than one manuscript, his main text (taken to be that in his leftmost column) is given first.</p>

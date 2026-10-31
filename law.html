@@ -552,7 +552,7 @@ scripts:
         const orderNote = ((clauseOrder.notes || {})[idno('lawCode')] || {})[idno('clause')];
         if (orderNote) {
             const p = el('p', 'clause-note clause-order-note small');
-            p.appendChild(el('strong', null, 'Order of the clauses: '));
+            p.appendChild(el('strong', null, 'Editor’s note: '));
             p.appendChild(document.createTextNode(orderNote));
             wrap.insertBefore(p, grid);
         }
@@ -985,7 +985,7 @@ scripts:
                     items.forEach(({ c, d }) => {
                         codeNotes.filter(x => x.before === c.clause).forEach(x => {
                             const p = el('p', 'clause-note clause-order-note small');
-                            p.appendChild(el('strong', null, 'Order of the clauses: '));
+                            p.appendChild(el('strong', null, 'Editor’s note: '));
                             p.appendChild(document.createTextNode(x.text));
                             out.appendChild(p);
                         });
