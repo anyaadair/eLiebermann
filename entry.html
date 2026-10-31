@@ -437,7 +437,7 @@ scripts:
             <h1>${esc(e.headword)}${e.n ? ` <sup>${esc(e.n)}</sup>` : ''}</h1>
             <div class="meta">
                 <span class="lang-badge ${esc(e.lang)}">${esc(e.language)}</span>${e.spelling ? '<span class="lang-badge spelling" title="A spelling, not a word">Spelling</span>' : ELieb.isProperNoun(e.headword, e.lang) ? ELieb.properNounBadge() : ''}${e.xref ? ' <span class="lang-badge xref" title="This entry only sends you to another headword (Liebermann’s “s.”): a variant spelling or a form entered elsewhere">Cross-reference entry</span>' : ''}
-                ${page ? `<span>${page}</span>` : ''}
+                ${page ? `<span>${page}</span>` : ''}${scanEmbed(e.facsimile) ? `<button type="button" class="scan-toggle" data-scan-toggle aria-expanded="false" aria-controls="entry-scan">Show page scan</button>` : ''}
             </div>
         </header>
 
@@ -482,14 +482,11 @@ scripts:
         <div class="entry-with-scan">
             <div class="entry-main">${body}</div>
             <div class="entry-scan-divider" role="separator" aria-orientation="vertical" aria-label="Drag to make the page scan wider or narrower" title="Drag to make the page scan wider or narrower (double-click to go back to the usual width)"></div>
-            <aside class="entry-scan" aria-label="Page scan">
+            <aside class="entry-scan" id="entry-scan" aria-label="Page scan" data-scan="${esc(scan)}" data-title="Liebermann, Gesetze II.1${e.page ? `, p. ${esc(e.page)}` : ''}, on archive.org">
                 <div class="entry-scan-bar">
                     <span>${e.page ? `Printed page ${esc(e.page)}` : 'Page scan'}</span>
                     <a href="${esc(ELieb.safeUrl(e.facsimile))}" target="_blank" rel="noopener">Open on archive.org</a>
-                </div>
-                <div class="entry-scan-load">
-                    <button type="button" data-scan="${esc(scan)}" data-title="Liebermann, Gesetze II.1${e.page ? `, p. ${esc(e.page)}` : ''}, on archive.org">Show page scan</button>
-                    <p>The scan loads from archive.org.</p>
+                    <button type="button" class="entry-scan-close" data-scan-close title="Hide the page scan" aria-label="Hide the page scan">×</button>
                 </div>
             </aside>
         </div>`;
@@ -607,21 +604,36 @@ scripts:
         ul.after(second);
     }
 
-    // The scan only loads from archive.org when the reader asks for it.
+    // The page scan takes no room until the reader asks for it ("Show page scan", by the page
+    // number); it then opens beside the entry and can be hidden again (× or "Hide page scan").
+    // Whether it is open is remembered in this browser, so it stays open from entry to entry.
     function showScanOnClick() {
-        const button = target.querySelector('[data-scan]');
-        if (!button) return;
-        button.addEventListener('click', () => {
-            const frame = document.createElement('iframe');
-            frame.src = button.dataset.scan;
-            frame.title = button.dataset.title;
-            frame.allowFullscreen = true;
-            const aside = button.closest('.entry-scan');
-            aside.classList.add('loaded');
-            button.parentElement.replaceWith(frame);
-            document.body.classList.add('scan-open');
-            resizableScan(aside.closest('.entry-with-scan'));
-        });
+        const grid = target.querySelector('.entry-with-scan');
+        const aside = grid && grid.querySelector('.entry-scan');
+        if (!aside) return;
+        const KEY = 'eLiebermann.scanOpen';
+        const toggles = [...target.querySelectorAll('[data-scan-toggle]')];
+        let sized = false;
+        const set = open => {
+            if (open && !aside.querySelector('iframe')) {
+                const frame = document.createElement('iframe');
+                frame.src = aside.dataset.scan;
+                frame.title = aside.dataset.title;
+                frame.allowFullscreen = true;
+                aside.appendChild(frame);
+                aside.classList.add('loaded');
+            }
+            grid.classList.toggle('scan-loaded', open);
+            document.body.classList.toggle('scan-open', open);
+            toggles.forEach(b => { b.textContent = open ? 'Hide page scan' : 'Show page scan'; b.setAttribute('aria-expanded', String(open)); });
+            if (open && !sized) { resizableScan(grid); sized = true; }
+            try { if (open) localStorage.setItem(KEY, '1'); else localStorage.removeItem(KEY); } catch (e) { /* not kept */ }
+        };
+        toggles.forEach(b => b.addEventListener('click', () => set(!grid.classList.contains('scan-loaded'))));
+        aside.querySelector('[data-scan-close]').addEventListener('click', () => { set(false); if (toggles[0]) toggles[0].focus(); });
+        let keep = false;
+        try { keep = localStorage.getItem(KEY) === '1'; } catch (e) { /* closed */ }
+        if (keep) set(true);
     }
 
     // Dragging the bar between the entry and the scan (or its arrow keys)
@@ -630,7 +642,7 @@ scripts:
         const bar = grid.querySelector('.entry-scan-divider');
         const KEY = 'eLiebermann.scanWidth';
         const rem = parseFloat(getComputedStyle(document.documentElement).fontSize) || 16;
-        const MIN = 22 * rem, MAX = 90 * rem, TEXT_MIN = 24 * rem, START = 48 * rem;
+        const MIN = 16 * rem, MAX = 90 * rem, TEXT_MIN = 22 * rem;
         const apply = px => {
             const max = Math.max(MIN, Math.min(MAX, grid.clientWidth - 2 * rem - TEXT_MIN));
             const w = Math.round(Math.min(max, Math.max(MIN, px)));
@@ -640,12 +652,11 @@ scripts:
         };
         const save = w => { try { localStorage.setItem(KEY, String(w)); } catch (e) { /* not kept */ } };
         const current = () => grid.querySelector('.entry-scan').getBoundingClientRect().width;
-        grid.classList.add('scan-loaded');
         bar.tabIndex = 0;
         let saved = 0;
         try { saved = parseFloat(localStorage.getItem(KEY)) || 0; } catch (e) { /* none */ }
-        // the usual width, until the reader drags the bar
-        const start = () => apply(START);
+        // the usual width: under half the room beside the entry, at most 48rem
+        const start = () => apply(Math.min(48 * rem, Math.max(MIN, 0.42 * (grid.clientWidth - 2 * rem))));
         if (saved) apply(saved); else start();
         bar.addEventListener('pointerdown', ev => {
             ev.preventDefault();

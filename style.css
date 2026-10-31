@@ -519,14 +519,26 @@ a.dict-card:hover .dict-card__word { color: var(--link-hover); text-decoration: 
 @media (max-width: 40rem) { .suggest-form__row { grid-template-columns: minmax(0, 1fr) auto; } .suggest-form__row select { grid-column: 1 / -1; } }
 .source-line { font-size: 0.9rem; color: var(--muted); border-top: 1px solid var(--rule); padding-top: 1rem; }
 
-/* The printed page beside the entry; stacked under it on narrow screens. */
-.entry-with-scan { display: grid; grid-template-columns: minmax(0, 1fr) 2rem var(--scan-width, minmax(22rem, 30rem)); align-items: start; }
-/* Once the scan is open, the entry keeps a readable width (at most 46rem) and
-   the scan starts at 48rem; the bar between them can be dragged to make the
-   scan wider (up to 90rem, as far as the window allows) or narrower. The two stay together in the middle
-   of the window, however wide it is. */
+/* The printed page beside the entry. It takes no room until the reader opens it
+   ("Show page scan" by the page number); it then sits beside the entry at under half
+   the room (at most 48rem), and the bar between them can be dragged to make it wider
+   or narrower (16rem to 90rem). The entry always keeps at least 22rem.
+   It stacks under the entry on narrow screens. */
+.entry-with-scan { display: grid; grid-template-columns: minmax(0, 1fr); align-items: start; }
+.entry-with-scan:not(.scan-loaded) > .entry-scan-divider,
+.entry-with-scan:not(.scan-loaded) > .entry-scan { display: none; }
 body.scan-open .main-content { max-width: none; }
-.entry-with-scan.scan-loaded { grid-template-columns: minmax(24rem, 46rem) 2rem min(var(--scan-width, 48rem), calc(100% - 26rem)); justify-content: center; }
+.entry-with-scan.scan-loaded { grid-template-columns: minmax(22rem, 46rem) 2rem min(var(--scan-width, 32rem), calc(100% - 24rem)); justify-content: center; }
+.scan-toggle {
+    font: inherit; font-size: 0.85em; color: var(--link); background: none; cursor: pointer;
+    border: 1px solid var(--rule); border-radius: 999px; padding: 0.05em 0.7em; margin-left: 0.6em;
+}
+.scan-toggle:hover, .scan-toggle[aria-expanded="true"] { border-color: var(--link); }
+.entry-scan-close {
+    font: inherit; font-size: 1.1rem; line-height: 1; color: #fff; background: none; border: 0;
+    cursor: pointer; padding: 0 0.3rem; margin-left: auto; border-radius: 3px;
+}
+.entry-scan-close:hover, .entry-scan-close:focus-visible { background: #555; }
 .entry-scan-divider { grid-column: 2; align-self: stretch; }
 .entry-with-scan.scan-loaded .entry-scan-divider {
     position: sticky; top: 1rem; height: calc(100vh - 2rem); align-self: start;
@@ -551,14 +563,13 @@ body.scan-open .main-content { max-width: none; }
     border-radius: var(--radius);
     padding: 0.5rem;
 }
-.entry-scan-bar { display: flex; justify-content: space-between; gap: 1rem; color: #fff; font-size: 0.85rem; padding: 0 0.25rem 0.5rem; }
-.entry-scan-bar a { color: #cfe2ff; }
+.entry-scan-bar { display: flex; align-items: center; gap: 1rem; color: #fff; font-size: 0.85rem; padding: 0 0.25rem 0.5rem; }
+.entry-scan-bar a { color: #cfe2ff; margin-left: auto; }
+.entry-scan-bar a + .entry-scan-close { margin-left: 0; }
 .entry-scan.loaded { height: calc(100vh - 2rem); min-height: 28rem; }
 .entry-scan iframe { flex: 1; width: 100%; border: 0; border-radius: 4px; background: #fff; }
-.entry-scan-load { text-align: center; padding: 2rem 1rem; color: #ddd; font-size: 0.85rem; }
-.entry-scan-load p { margin: 0.75rem 0 0; }
 @media (max-width: 60rem) {
-    .entry-with-scan, .entry-with-scan.scan-loaded { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
+    .entry-with-scan.scan-loaded { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
     .entry-scan-divider { display: none !important; }
     .entry-scan { position: static; }
     .entry-scan.loaded { height: 80vh; }
@@ -988,7 +999,11 @@ ul.link-columns li { break-inside: avoid; }
 /* The sidebar sits against the left edge of the window (as on GitHub); the entry,
    and the page scan when it is open, are centred in the rest of the width. */
 body.has-sidebar .main-content { max-width: none; padding: 0; }
-.entry-layout { display: grid; grid-template-columns: 23rem minmax(0, 1fr); align-items: start; }
+/* The sidebars are 23rem at most and give up room as the window narrows (to about
+   14rem), so the entry or clause keeps a fair share. With the page scan open, the
+   entry's sidebar gives up a little more. */
+.entry-layout { display: grid; grid-template-columns: clamp(14rem, 24vw, 23rem) minmax(0, 1fr); align-items: start; }
+body.scan-open .entry-layout:not(.sidebar-closed) { grid-template-columns: clamp(13rem, 17vw, 20rem) minmax(0, 1fr); }
 .entry-layout.sidebar-closed { grid-template-columns: minmax(0, 1fr); }
 .entry-layout.sidebar-closed .entry-sidebar { display: none; }
 .entry-column { min-width: 0; padding: 0.5rem 2rem 3rem; }
@@ -1037,7 +1052,7 @@ body.scan-open .entry-column > article { max-width: none; }
 .suggestions .also { color: var(--muted); font-size: 0.9em; font-style: italic; }
 
 /* ---------- Laws page: the search panel on the left ---------- */
-.laws-layout { display: grid; grid-template-columns: 23rem minmax(0, 1fr); align-items: start; }
+.laws-layout { display: grid; grid-template-columns: clamp(14rem, 24vw, 23rem) minmax(0, 1fr); align-items: start; }
 .laws-panel {
     position: sticky; top: 0; height: 100vh; overflow-y: auto;
     background: #f3f1eb; border-right: 1px solid var(--rule);
