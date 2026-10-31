@@ -482,8 +482,15 @@
     // running: see scanCitations. Groups: 1 everything before the number, 2 the
     // spelling, 3 the number. The number must end the citation.
     // a word of the spelling, or Liebermann's "verschr." (miswritten) after it: "þæt verschr. 24,1 A"
-    const SPELLING_WORD = String.raw`(?:verschr\.|[\p{Ll}~æðþǣ][\p{L}~\-]*)`;
+    // (an apostrophe within a word, as in Old French "l’ewe", is part of it)
+    const SPELLING_WORD = String.raw`(?:verschr\.|[\p{Ll}~æðþǣ][\p{L}~\-]*(?:[’'][\p{L}~\-]+)*)`;
     const SPELLING_PASSAGE = new RegExp(String.raw`^(\s*(?:;|\|(?:\s*[\p{L}\d .]{1,15}:)?|(?:\s*u\.\s*oft|\s*[;|]\s*` + SPELLING_WORD + String.raw`)?\s*\d{1,2}[a-z]?\)[^;|:()\[\]\u0001-\u0004]{0,40}:)\s*(` + SPELLING_WORD + String.raw`(?:\s+(?:\[[^\]\d]*\]\s+)?` + SPELLING_WORD + String.raw`:?){0,5}(?:\s+\[[^\]\d]*\])?)\s+)(` + PASSAGE + String.raw`)(?![\p{L}\d])(?=\s*(?:$|[;|‖=\[\u0001\u0004]|\.\s*(?:$|[\d;|‖(—\u0001\u0004])|\((?!\d)|ff?\.|—|,\s|u\.\s*(?:oft|öfter)|\d{1,2}[a-z]?\)|\p{L}\)|[IVX]+\)))`, 'u');
+
+    // a numbered meaning, its German (in italic) and a spelling (not in italic), then a passage
+    // of the code already running: "4) Zeit bei, zu, an a la tierce fiee 44,1" (see scanCitations)
+    const SENSE_GLOSS_PASSAGE = new RegExp(String.raw`^(\s*\d{1,2}[a-z]?\)\s*)(\p{L}[^;|:\u0001-\u0004\d()\[\]=]{1,80}?)\s+(` + PASSAGE + String.raw`)(?![\p{L}\d])(?=\s*(?:$|[;|‖=\[\u0001\u0004]|\.\s*(?:$|[\d;|‖(—\u0001\u0004])|\((?!\d)|ff?\.|—|,\s(?!\d)|\d{1,2}[a-z]?\)))`, 'u');
+
+    const SENSE_SPELLING = new RegExp(String.raw`^` + SPELLING_WORD + String.raw`(?:\s+` + SPELLING_WORD + String.raw`){0,5}$`, 'u');
 
     // a remark in Liebermann's German between a semicolon and a passage (see scanCitations)
     const GLOSS_PASSAGE = new RegExp(String.raw`^(\s*;\s*)(\p{L}[^;|:\u0001-\u0004\d()\[\]=]{1,60}?)\s+(` + PASSAGE + String.raw`)(?![\p{L}\d])(?=\s*(?:$|[;|‖=\[\u0001\u0004]|\.\s*(?:$|[\d;|‖(—\u0001\u0004])|\((?!\d)|ff?\.|—|,\s(?!\d)))`, 'u');
@@ -717,6 +724,22 @@
                         continue;
                     }
                 }
+                // "4) Zeit bei, zu, an a la tierce fiee 44,1": after a numbered meaning, its German
+                // (in italic) and then a spelling (not in italic) and a number: a passage of the
+                // same code (Leis Wl 44,1). The German comes first and the spelling after it.
+                if (italic && code && last && last.anchor === code.anchor && (m = SENSE_GLOSS_PASSAGE.exec(rest))) {
+                    const g0 = at + m[1].length, chars = [...m[2]];
+                    const letters = chars.map((ch, i) => /\p{L}/u.test(ch) ? i : -1).filter(i => i >= 0);
+                    const k = letters.findIndex(i => !italic[g0 + i]);
+                    // the spelling: words in lower case, as elsewhere (not "III 13,3", a code by its numeral)
+                    const spelling = k > 0 ? chars.slice(letters[k]).join('').trim() : '';
+                    if (k > 0 && letters.slice(k).every(i => !italic[g0 + i]) && SENSE_SPELLING.test(spelling)) {
+                        const n = m[3].replace(/\.$/, ''), s = at + m[0].length - m[3].length;
+                        add(code.label + ' ' + n, s, s + n.length, false);
+                        rest = rest.slice(m[0].length); at += m[0].length;
+                        continue;
+                    }
+                }
                 break;
             }
             // a footnote mark after the last passage ("48⁵ A³. 61,1") does not end the run
@@ -794,7 +817,7 @@
                 // "| folgæres 20a", "(58 B)", "14 B ff." or "Insc A. Pro."; the paren of a manuscript reading
                 // ("Had 3 O (~dran D). 4") has already become spaces.
                 if (code && code.fresh && /^\s+\d/.test(text)) { passages(text, pos); }
-                else if (code && last && /^\s*(?:\.\s*\(?(?:\d|Pro[lt]?\b|Insc|Epil|Test\b)|[;|]|\(\d|ff?\.)/.test(text)) { passages(text, pos); } else if (!/^\s*$/.test(text)) { code = code && /^[\s.]*$/.test(text) ? code : null; }
+                else if (code && last && /^\s*(?:\.\s*\(?(?:\d|Pro[lt]?\b|Insc|Epil|Test\b)|[;|]|\(\d|ff?\.|\d{1,2}[a-z]?\)\s)/.test(text)) { passages(text, pos); } else if (!/^\s*$/.test(text)) { code = code && /^[\s.]*$/.test(text) ? code : null; }
                 continue;
             }
             if (QUALIFIERS.has(anchor)) {
