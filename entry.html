@@ -445,7 +445,6 @@ scripts:
 
         <section class="entry-section">
             <div class="liebermann-text">${e.original ? paragraphs(ELieb.renderTei(e.original, root), e.lang === 'de') : ''}</div>
-            ${e.spelling ? `<p class="spelling-note">Headword refers to a scribal spelling: Liebermann's note on how a certain sound or letter combination is written in the MSS.</p>` : ''}
             ${e.xref ? '' : `<p class="small muted reading-help">Click a <span class="link-key link-key--law">law code</span>, <span class="link-key link-key--ms">manuscript</span>, <span class="link-key link-key--gram">technical term</span> or <span class="link-key link-key--bib">cited work</span> to see what it stands for.<br>Click a <span class="link-key link-key--clause">clause number</span> to see that clause (with all its MS variants) in the laws database.<br>Click a <span class="link-key link-key--entry">linked headword</span> to see that entry in the dictionary.</p><p class="small muted reading-help reading-help--tilde"><a href="${root}guide.html">How to read an entry</a></p>`}
         </section>
 
