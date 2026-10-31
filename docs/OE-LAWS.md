@@ -130,6 +130,14 @@ Liebermann keeps his predecessors' clause numbers even where he prints the claus
 
 `data/clause-order.json` records that order for every code whose order is not simply numerical (Af, Af Rb, IV As, Had, VI Atr Lat, Iud Dei VII, and codes with labels such as Epilog or Rubriken). `tools/laws-from-database.py` (now retired) never sorted these codes by number. The same file has the short notes shown to readers, each headed "Editor's note": `notes` on a clause's page, `codeNotes` in the whole-code views just before the clause named in `before`, and `codeIntros`, the text behind the "About the numbering" button on a law code's page.
 
+## Wulfstan's part in the law codes
+
+`data/wulfstan.json` records which texts Archbishop Wulfstan of York (d. 1023) composed, edited or reworked, or has been said to have written, and whose view that is. So far it follows Rabin, *Old English Legal Writings: Wulfstan* (DOML 66, 2020): his introduction for whole codes, and his notes for single clauses he thinks Wulfstan added to an earlier law (I As 2, 4; I Em 2, 6; II Eg 2.3, 5.1–5.3; III Eg 8–8.3; Norðleoda 7–12; the revised passages of Cn 1020).
+
+- `kinds`: `composed` ("Composed by Wulfstan"), `reworked` ("Edited or Reworked by Wulfstan"), `disputed` ("Attributed to Wulfstan (disputed)").
+- `codes` (by law-code abbreviation) and `clauses` (by clause id): each a list of views `{kind, by, page, note}`, so another scholar's view can be added beside Rabin's (add the scholar's work to `sources`).
+- scripts/wulfstan.js shows them: a badge that opens to the scholar's words and page, on the law-code page and the clause page; a small badge by the clause number in the law-code list and in the whole-code view; and beside each code on the Laws page. The Laws search panel has an "Archbishop Wulfstan" choice (address `wulf=composed,reworked,disputed`): a clause counts if its law code or the clause itself has that kind.
+
 ## Added to the files by hand
 
 Things added to the files after they were built from the spreadsheet, for the record.

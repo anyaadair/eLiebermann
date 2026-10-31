@@ -6,6 +6,7 @@ description: Search the clauses of the Old English laws, by law code, clause num
 scripts:
   - "ROOT/scripts/eliebermann.js"
   - "ROOT/scripts/law-search.js"
+  - "ROOT/scripts/wulfstan.js"
 ---
 <div class="laws-layout">
 <aside class="laws-panel" id="laws-panel" aria-label="Search the laws">
@@ -52,6 +53,12 @@ scripts:
             <div id="code-tree"></div>
         </details>
         <p class="panel-help" id="code-summary"></p>
+    </div>
+
+    <div class="panel-sec panel-sec--shared">
+        <div class="sidebar-label">Archbishop Wulfstan</div>
+        <div class="kind-pills kind-pills--small" id="wulf" role="group" aria-label="Archbishop Wulfstan’s part in the text"></div>
+        <p class="panel-help">Texts Wulfstan (d. 1023) wrote, edited or reworked, or that have been attributed to him, as Rabin sees it. A clause he probably added to an earlier law counts as composed by him.</p>
     </div>
 
     <div class="panel-sec panel-sec--shared">
@@ -103,6 +110,9 @@ scripts:
         ['jurasinski-and-oliver', 'Jurasinski and Oliver'], ['oliver', 'Oliver'], ['kennedy', 'Kennedy'], ['gobbitt', 'Gobbitt'],
         ['wormald', 'Wormald'], ['claude', 'English of Liebermann’s German'], ['unattributed', 'Not recorded']];
     const LANGS = [['ang', 'Old English'], ['la', 'Latin'], ['xno', 'French', 'Anglo-Norman French']];
+    // Archbishop Wulfstan's part (data/wulfstan.json, scripts/wulfstan.js)
+    const WULF = [['composed', 'Composed by Wulfstan'], ['reworked', 'Edited or Reworked', 'Edited or Reworked by Wulfstan'], ['disputed', 'Attributed (disputed)', 'Attributed to Wulfstan (disputed)']];
+    const wulfOk = c => !S.wulf.size || [...Wulfstan.kindsOf(c.code, c.id)].some(k => S.wulf.has(k));
     // Groups of law codes, by the groups of the list of law codes (oe-laws/codes.json)
     const PRESETS = [
         ['kent', 'Kentish kings', ['Æthelberht of Kent', 'Hlothhere and Eadric of Kent', 'Wihtred of Kent', 'Earconberht of Kent']],
@@ -116,7 +126,7 @@ scripts:
     ];
     const S = {
         where: new Set(['orig', 'en']), match: 'whole',
-        dict: '', kws: [], kwMode: 'all', codes: new Set(), langs: new Set()
+        dict: '', kws: [], kwMode: 'all', codes: new Set(), langs: new Set(), wulf: new Set()
     };
 
     function readAddress() {
@@ -131,6 +141,7 @@ scripts:
         S.kwMode = p.get('kwm') === 'any' ? 'any' : 'all';
         S.codes = new Set((p.get('codes') || p.get('law') || '').split('|').filter(Boolean));
         S.langs = new Set((p.get('lang') || '').split(',').filter(Boolean));
+        S.wulf = new Set((p.get('wulf') || '').split(',').filter(k => WULF.some(([x]) => x === k)));
         // the old "Also search the texts and translations" box: the words box now
         if (p.get('text') === '1' && q.value && !w.value && !(searcher && searcher.read(q.value))) { w.value = q.value; q.value = ''; }
     }
@@ -147,6 +158,7 @@ scripts:
         if (S.kws.length) { p.set('kw', S.kws.join('|')); if (S.kwMode === 'any' && S.kws.length > 1) p.set('kwm', 'any'); }
         if (S.codes.size) p.set('codes', [...S.codes].join('|'));
         if (S.langs.size) p.set('lang', [...S.langs].join(','));
+        if (S.wulf.size) p.set('wulf', [...S.wulf].join(','));
         history.replaceState(null, '', location.pathname + (p.toString() ? '?' + p : ''));
     }
 
@@ -215,6 +227,7 @@ scripts:
             ? `Searching ${plural(S.codes.size, 'law code', 'law codes')}: ${esc(codeNames().join(', '))} <button type="button" class="link-button" id="codes-all" title="Search all law codes again">✕ all law codes</button>`
             : `Searching all ${codes.length} law codes.`;
         setPills($('langs'), LANGS, S.langs, 'All');
+        setPills($('wulf'), WULF, S.wulf, 'All texts');
         markPanel();
     }
     const presetCodes = k => { const p = PRESETS.find(x => x[0] === k); return p ? codes.filter(c => p[2].includes(c.group)).map(c => c.code) : []; };
@@ -263,7 +276,7 @@ scripts:
     $('reset').addEventListener('click', () => {
         q.value = w.value = d.value = kw.value = '';
         tol.checked = false;
-        Object.assign(S, { where: new Set(['orig', 'en']), match: 'whole', dict: '', kws: [], kwMode: 'all', codes: new Set(), langs: new Set() });
+        Object.assign(S, { where: new Set(['orig', 'en']), match: 'whole', dict: '', kws: [], kwMode: 'all', codes: new Set(), langs: new Set(), wulf: new Set() });
         changed();
     });
 
@@ -451,9 +464,20 @@ scripts:
 
 
     // ---- The list of law codes (no search, or only a choice of codes, language or dates) ----
+    // With a choice under "Archbishop Wulfstan" that fits only some of a code's clauses (I As 2, 4):
+    // those clauses, linked.
+    function wulfPart(c) {
+        if (!S.wulf.size) return '';
+        const mine = clauses.filter(x => x.code === c.code);
+        const hit = mine.filter(wulfOk);
+        if (hit.length === mine.length) return '';
+        return `<span class="code-meta code-meta--wulf">Wulfstan: ${hit.length === 1 ? 'clause' : 'clauses'} ${hit.map(x =>
+            `<a href="${root}law.html?id=${encodeURIComponent(x.id)}">${esc(x.clause || x.citation)}</a>`).join(', ')}</span>`;
+    }
     function drawCodes() {
         const ok = c => (!S.codes.size || S.codes.has(c.code)) &&
-            (!S.langs.size || clauses.some(x => x.code === c.code && x.langs.some(l => S.langs.has(l))));
+            (!S.langs.size || clauses.some(x => x.code === c.code && x.langs.some(l => S.langs.has(l)))) &&
+            (!S.wulf.size || clauses.some(x => x.code === c.code && wulfOk(x)));
         const gs = groups().map(g => Object.assign({}, g, { items: g.items.filter(ok) })).filter(g => g.items.length);
         const n = gs.reduce((a, g) => a + g.items.length, 0);
         count.textContent = n === codes.length ? `${codes.length} law codes, ${clauses.length} clauses` : `${plural(n, 'law code', 'law codes')} of ${codes.length}`;
@@ -463,8 +487,8 @@ scripts:
                 <h2>${esc(g.name)}${g.reign && g.items[0].king ? ` <span class="code-group-reign">${esc(g.reign)}</span>` : ''}</h2>
                 <ul class="code-list">${g.items.map(c => `
                     <li>
-                        <a href="${codeUrl(c.code)}"><span class="code-abbr">${esc(c.code)}</span> <span class="code-name">${esc(c.name)}</span></a>
-                        <span class="code-meta">${esc(plural(c.clauses, 'clause', 'clauses'))}${summaryDates(c.date) ? ' · Suggested dates: ' + esc(summaryDates(c.date)) : ''}</span>
+                        <a href="${codeUrl(c.code)}"><span class="code-abbr">${esc(c.code)}</span> <span class="code-name">${esc(c.name)}</span></a>${Wulfstan.codeBadges(c.code) ? ' ' + Wulfstan.codeBadges(c.code) : ''}
+                        <span class="code-meta">${esc(plural(c.clauses, 'clause', 'clauses'))}${summaryDates(c.date) ? ' · Suggested dates: ' + esc(summaryDates(c.date)) : ''}</span>${wulfPart(c)}
                     </li>`).join('')}
                 </ul>
             </section>`).join('') || '<p>No law codes match these choices.</p>';
@@ -492,6 +516,7 @@ scripts:
         let list = clauses.filter(c => {
             if (S.codes.size && !S.codes.has(c.code)) return false;
             if (S.langs.size && !c.langs.some(l => S.langs.has(l))) return false;
+            if (!wulfOk(c)) return false;
             if (term && !byCite(c)) return false;
             if (kwFold.length && !(S.kwMode === 'any' ? kwFold.some(k => c._kwList.includes(k)) : kwFold.every(k => c._kwList.includes(k)))) return false;
             if (S.dict && !(dictIds && dictIds.has(c.id))) return false;
@@ -606,7 +631,8 @@ scripts:
     let translatorsPresent = new Set();
     Promise.all([
         fetch(root + 'data/laws.json').then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }),
-        fetch(root + 'oe-laws/codes.json').then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+        fetch(root + 'oe-laws/codes.json').then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }),
+        Wulfstan.load(root)
     ]).then(([list, codeList]) => {
         codes = codeList.filter(c => list.some(x => x.code === c.code));
         codes.forEach(c => { byCode[c.code] = c; });

@@ -8,6 +8,7 @@ scripts:
   - "ROOT/scripts/law-search.js"
   - "ROOT/scripts/law-panel.js"
   - "ROOT/scripts/suggest-change.js"
+  - "ROOT/scripts/wulfstan.js"
 ---
 <div class="laws-layout">
 <aside class="laws-panel" id="panel" aria-label="This clause">
@@ -389,7 +390,7 @@ scripts:
     const LATIN_VERSION = /^(Q|Lat|In|Inst\.? ?Cn\.?|Cons\.?(?: ?Cn\.?)?)(?![\w])/;
     function loadSigla() {
         const get = f => fetch(root + 'data/' + f).then(r => r.json()).catch(() => []);
-        return Promise.all([get('manuscripts.json'), get('markLaw.json'), get('bibliography.json'), get('comparison-terms.json'), get('clause-order.json')]).then(([ms, law, bib, terms, order]) => {
+        return Promise.all([get('manuscripts.json'), get('markLaw.json'), get('bibliography.json'), get('comparison-terms.json'), get('clause-order.json'), Wulfstan.load(root)]).then(([ms, law, bib, terms, order]) => {
             clauseOrder = order && !Array.isArray(order) ? order : {};
             bibliography = bib || [];
             relTerms = terms && !Array.isArray(terms) ? terms : {};
@@ -868,6 +869,8 @@ scripts:
             meta.appendChild(s);
         }
         header.appendChild(meta);
+        // Wulfstan's part in the law code or in this clause (data/wulfstan.json), as badges that open
+        header.insertAdjacentHTML('beforeend', Wulfstan.badges(row.code, row.id));
         const dated = datePlace(doc, allSrcs);
         if (dated) header.appendChild(dated);
         const parts = partsNote(row, doc);
@@ -1023,6 +1026,8 @@ scripts:
                         const a = el('a', null, c.citation);
                         a.href = '?id=' + encodeURIComponent(c.id);
                         h.appendChild(a);
+                        const wb = Wulfstan.clauseBadges(c.id);
+                        if (wb) h.insertAdjacentHTML('beforeend', ' ' + wb);
                         if (d) out.appendChild(texts(d, h)); else { out.appendChild(h); out.appendChild(el('p', 'muted', 'This clause could not be loaded.')); }
                     });
                     btn.remove();
