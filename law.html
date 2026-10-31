@@ -542,21 +542,28 @@ scripts:
                 if (srcs[id]) a.href = '#src-' + id;
                 return a;
             };
-            const line = (id, term, label, refs, page, quote, count) => {
+            // One line per scholar and kind: the name and the term once, then each of the scholar's
+            // comments in turn (its clauses, page and words), separated by semicolons.
+            const line = (id, term, parts, count) => {
                 const p = el('p', 'clause-compare__line');
                 p.appendChild(who(id));
-                const verb = VERBS[term][/ and /.test(scholar(id)) ? 1 : 0].replace('C', (count || refs.length) > 1 ? 'clauses' : 'clause');
+                const n = count || parts.reduce((a, x) => a + x.refs.length, 0);
+                const verb = VERBS[term][/ and /.test(scholar(id)) ? 1 : 0].replace('C', n > 1 ? 'clauses' : 'clause');
                 const v = el('span', 'clause-compare__term', ' ' + verb + ': ');
-                if (label) v.title = scholar(id) + '’s wording: ' + label;
+                const labels = [...new Set(parts.map(x => x.label).filter(Boolean))];
+                if (labels.length) v.title = scholar(id) + '’s wording: ' + labels.join('; ');
                 p.appendChild(v);
-                refs.forEach((r, k) => { if (k) p.appendChild(document.createTextNode(', ')); p.appendChild(r); });
-                if (page) p.appendChild(el('span', 'muted', ' (' + (id === 'liebermann' ? 'Gesetze I, p. ' : 'p. ') + page + ')'));
-                if (usefulQuote(quote)) {
-                    p.appendChild(document.createTextNode(' '));
-                    p.appendChild(el('span', 'clause-compare__quote', '“' + quote + '”'));
-                } else if (label && !PLAIN.test(label)) {
-                    p.appendChild(el('span', 'muted', ' [' + label + ']'));
-                }
+                parts.forEach((x, k) => {
+                    if (k) p.appendChild(document.createTextNode('; '));
+                    x.refs.forEach((r, m) => { if (m) p.appendChild(document.createTextNode(', ')); p.appendChild(r); });
+                    if (x.page) p.appendChild(el('span', 'muted', ' (' + (id === 'liebermann' ? 'Gesetze I, p. ' : 'p. ') + x.page + ')'));
+                    if (usefulQuote(x.quote)) {
+                        p.appendChild(document.createTextNode(' '));
+                        p.appendChild(el('span', 'clause-compare__quote', '“' + x.quote + '”'));
+                    } else if (x.label && !PLAIN.test(x.label)) {
+                        p.appendChild(el('span', 'muted', ' [' + x.label + ']'));
+                    }
+                });
                 return p;
             };
             const refNode = n => {
@@ -566,24 +573,26 @@ scripts:
                 a.href = 'law.html?id=' + encodeURIComponent((ref.getAttribute('target') || '').replace(/^clause:/, ''));
                 return a;
             };
-            // one scholar's notes: those with the same term, page and words go on one line
+            // a scholar's notes: one line for each kind; within it, notes with the same page and
+            // words share their part ("Af 2–2.1, Af 5–5.4 (p. 280) …")
             const lines = (ns, isBack) => {
                 const out = [];
                 const bySource = {};
                 ns.forEach(n => (bySource[srcId(n)] = bySource[srcId(n)] || []).push(n));
                 Object.entries(bySource).forEach(([id, list]) => {
-                    const groups = [];
+                    const kinds = [];
                     list.forEach(n => {
                         const label = childOf(n, 'label') ? plainText(childOf(n, 'label')) : '';
                         const quote = childOf(n, 'quote') ? plainText(childOf(n, 'quote')) : '';
                         const term = termOf(label, isBack);
-                        // lines that would read the same are one line
-                        const key = [term, PLAIN.test(label) ? '' : label, n.getAttribute('n') || '', usefulQuote(quote) ? quote : ''].join('|');
-                        let g = groups.find(x => x.key === key);
-                        if (!g) groups.push(g = { key, term, label, quote, page: n.getAttribute('n'), refs: [] });
+                        let k = kinds.find(x => x.term === term);
+                        if (!k) kinds.push(k = { term, parts: [] });
+                        const key = [PLAIN.test(label) ? '' : label, n.getAttribute('n') || '', usefulQuote(quote) ? quote : ''].join('|');
+                        let g = k.parts.find(x => x.key === key);
+                        if (!g) k.parts.push(g = { key, label, quote, page: n.getAttribute('n'), refs: [] });
                         g.refs.push(refNode(n));
                     });
-                    groups.forEach(g => out.push(line(id, g.term, g.label, g.refs, g.page, g.quote)));
+                    kinds.forEach(k => out.push(line(id, k.term, k.parts)));
                 });
                 return out;
             };
@@ -599,13 +608,13 @@ scripts:
                 const refs = [];
                 if (plainText(cmp)) { const sp = el('span'); sp.appendChild(inline(cmp)); refs.push(sp); }
                 else if (printed) refs.push(document.createTextNode(plainText(printed)));
-                liebOut.push(line('liebermann', 'compare', '', refs, cmp.getAttribute('n'), ''));
+                liebOut.push(line('liebermann', 'compare', [{ label: '', refs, page: cmp.getAttribute('n'), quote: '' }]));
                 const inc = noteOf('comparisonIncomplete');
                 if (inc) liebOut.push(el('p', 'muted', plainText(inc)));
             }
             part('This clause linked to another', liebOut.concat(lines(others, false)));
             const liebBack = [];
-            if (back) { const sp = el('span'); sp.appendChild(inline(back)); liebBack.push(line('liebermann', 'compareBack', '', [sp], '', '', tei(back, 'ref').length)); }
+            if (back) { const sp = el('span'); sp.appendChild(inline(back)); liebBack.push(line('liebermann', 'compareBack', [{ label: '', refs: [sp], page: '', quote: '' }], tei(back, 'ref').length)); }
             part('Another clause linked to this', liebBack.concat(lines(othersBack, true)));
             wrap.appendChild(box);
         }
