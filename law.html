@@ -120,6 +120,27 @@ scripts:
         }
     }
 
+    // Liebermann prints the clause number at the head of his German in some codes ("2, 1. Wer einen …",
+    // "App. AGu. 1. Wenn …"), and the English crib copies it: left out where it is the clause's own number
+    // (p.dataset.dropLead), since the page already says which clause it is; done again when the text is redrawn.
+    const LEAD_NUMBER = /^\s*(?:[A-Z][A-Za-z.\s]{0,20}?\.\s*)?(\d+[a-z]?(?:\s*,\s*\d+[a-z]?)*)\.\s+/;
+    function dropLead(p) {
+        const clause = p.dataset.dropLead;
+        const m = clause && LEAD_NUMBER.exec(p.textContent);
+        if (!m || m[1].replace(/\s*,\s*/g, '.') !== clause) return;
+        let left = m[0].length;
+        const walker = document.createTreeWalker(p, NodeFilter.SHOW_TEXT);
+        const nodes = [];
+        while (walker.nextNode()) nodes.push(walker.currentNode);
+        for (const t of nodes) {
+            if (left <= 0) break;
+            const take = Math.min(left, t.nodeValue.length);
+            t.nodeValue = t.nodeValue.slice(take);
+            left -= take;
+        }
+        p.querySelectorAll('em, i').forEach(e => { if (!e.textContent) e.remove(); });
+    }
+
     function inline(node, opts) {
         const frag = document.createDocumentFragment();
         node.childNodes.forEach(n => {
@@ -290,7 +311,7 @@ scripts:
             btn.setAttribute('aria-pressed', on ? 'true' : 'false');
             btn.textContent = (on ? 'Hide ' : 'Show ') + who + ' notes';
             list.hidden = !on;
-            texts.forEach(([p, a]) => { p.textContent = ''; p.appendChild(inline(a, { notes: on })); placeNum(p); });
+            texts.forEach(([p, a]) => { p.textContent = ''; p.appendChild(inline(a, { notes: on })); placeNum(p); dropLead(p); });
         };
         btn.addEventListener('click', () => {
             const on = btn.getAttribute('aria-pressed') !== 'true';
@@ -424,7 +445,8 @@ scripts:
         const quad = texts.filter(a => hasOE && isQ(a));
         const byEditor = list => list.filter(a => a.getAttribute('type') === 'liebermannText')
             .concat(list.filter(a => a.getAttribute('type') !== 'liebermannText'));
-        const left = col(hasOE ? 'Old English text' : hasFrench ? 'Anglo-Norman French text' : 'Latin text', 'clause-col--text');
+        // a text known only from the Quadripartitus (App AGu …): its Latin, under one heading
+        const left = col(hasOE ? 'Old English text' : hasFrench ? 'Anglo-Norman French text' : texts.length && onlyQ(texts) ? 'Latin text (Quadripartitus)' : 'Latin text', 'clause-col--text');
         const right = col('Translations', 'clause-col--translation');
         const liebTexts = [];
         // an editor's own clause number, not already shown inside the text (a divided clause has a number on
@@ -447,6 +469,10 @@ scripts:
             }
             if (!n || hasParts(a) || (n === div.getAttribute('n') && !OWN_NUMBERING.has(id))) return '';
             return n;
+        };
+        const dropNumber = box => {
+            const p = box && box.querySelector('.clause-reading-text');
+            if (p) { p.dataset.dropLead = (div.getAttribute('n') || '').trim(); dropLead(p); }
         };
         const add = (column, a, bits, cls) => {
             const id = (a.getAttribute('source') || '').replace(/^#/, '');
@@ -537,8 +563,8 @@ scripts:
         const trans = abs.filter(a => a.getAttribute('type') === 'translation');
         const isGerman = a => a.getAttribute('xml:lang') === 'de' || a.getAttribute('ana') === '#fromGerman';
         // Liebermann's German first, then the LLM's English of it (made with Claude), then the other translations.
-        trans.filter(a => a.getAttribute('xml:lang') === 'de').forEach(a => add(right, a, ['German translation', pageOf(a) ? 'Gesetze I, p. ' + pageOf(a) : '']));
-        trans.filter(a => a.getAttribute('ana') === '#fromGerman').forEach(a => add(right, a, ['English of Liebermann’s German']));
+        trans.filter(a => a.getAttribute('xml:lang') === 'de').forEach(a => { add(right, a, ['German translation', pageOf(a) ? 'Gesetze I, p. ' + pageOf(a) : '']); dropNumber(right.lastChild); });
+        trans.filter(a => a.getAttribute('ana') === '#fromGerman').forEach(a => { add(right, a, ['English of Liebermann’s German']); dropNumber(right.lastChild); });
         trans.filter(a => !isGerman(a)).forEach(a => {
             const id = (a.getAttribute('source') || '').replace(/^#/, '');
             const src = srcs[id] || {};
