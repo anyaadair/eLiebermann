@@ -514,15 +514,24 @@ scripts:
         if (cmp || back || others.length || othersBack.length) {
             const box = el('div', 'clause-compare small');
             box.appendChild(el('h3', 'clause-compare__head', 'Cross-references'));
+            // Three kinds: compare, contrast, source. "source" is said the right way round: the other
+            // clause is this one's source (source), or this one is the other's (usedIn). In "Another
+            // clause linked to this" the verbs name the clauses that follow: "clause" or "clauses" (C).
             const VERBS = {
-                compare: ['compares to', 'compare to'], compareBack: ['compares from', 'compare from'],
-                similar: ['notes it is similar to', 'note it is similar to'], contrast: ['contrasts with', 'contrast with'],
-                source: ['gives as source', 'give as source'], usedIn: ['notes it is used in', 'note it is used in']
+                compare: ['compares to', 'compare to'],
+                contrast: ['contrasts with', 'contrast with'],
+                source: ['gives as source', 'give as source'],
+                usedIn: ['gives this clause as source for', 'give this clause as source for'],
+                compareBack: ['compares the following C to this one', 'compare the following C to this one'],
+                contrastBack: ['contrasts the following C with this one', 'contrast the following C with this one'],
+                sourceBack: ['gives the following C as source for this one', 'give the following C as source for this one'],
+                usedInBack: ['gives this clause as source for the following C', 'give this clause as source for the following C']
             };
+            // the kind, from this clause's side: a back-link's source and usedIn are the other way round
             const termOf = (label, isBack) => {
-                const t = VERBS[relTerms[label]] ? relTerms[label] : 'compare';
-                if (!isBack) return t;
-                return { source: 'usedIn', usedIn: 'source', compare: 'compareBack' }[t] || t;
+                let t = { contrast: 'contrast', source: 'source', usedIn: 'usedIn' }[relTerms[label]] || 'compare';
+                if (isBack) t = ({ source: 'usedIn', usedIn: 'source' }[t] || t) + 'Back';
+                return t;
             };
             // wordings that say no more than the term (or describe the layout of a printed table)
             const PLAIN = /^(cf\.|compare|see|see also|cross-reference|source|from|parallel|=|echoes?|contrast|similar|resembles|recalls|used in I–II Cnut|recurs in later code|source in V–VIII Æthelred)$|table|roman|bold|parenthes|brackets/i;
@@ -533,10 +542,11 @@ scripts:
                 if (srcs[id]) a.href = '#src-' + id;
                 return a;
             };
-            const line = (id, term, label, refs, page, quote) => {
+            const line = (id, term, label, refs, page, quote, count) => {
                 const p = el('p', 'clause-compare__line');
                 p.appendChild(who(id));
-                const v = el('span', 'clause-compare__term', ' ' + VERBS[term][/ and /.test(scholar(id)) ? 1 : 0] + ': ');
+                const verb = VERBS[term][/ and /.test(scholar(id)) ? 1 : 0].replace('C', (count || refs.length) > 1 ? 'clauses' : 'clause');
+                const v = el('span', 'clause-compare__term', ' ' + verb + ': ');
                 if (label) v.title = scholar(id) + '’s wording: ' + label;
                 p.appendChild(v);
                 refs.forEach((r, k) => { if (k) p.appendChild(document.createTextNode(', ')); p.appendChild(r); });
@@ -595,7 +605,7 @@ scripts:
             }
             part('This clause linked to another', liebOut.concat(lines(others, false)));
             const liebBack = [];
-            if (back) { const sp = el('span'); sp.appendChild(inline(back)); liebBack.push(line('liebermann', 'compareBack', '', [sp], '', '')); }
+            if (back) { const sp = el('span'); sp.appendChild(inline(back)); liebBack.push(line('liebermann', 'compareBack', '', [sp], '', '', tei(back, 'ref').length)); }
             part('Another clause linked to this', liebBack.concat(lines(othersBack, true)));
             wrap.appendChild(box);
         }
