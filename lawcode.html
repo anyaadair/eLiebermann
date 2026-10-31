@@ -210,9 +210,11 @@ scripts:
         document.querySelectorAll('.code-clauses-head .col-en').forEach(x => { x.hidden = !S.show.has('en'); });
         ol.className = 'code-clauses' + (S.show.size === 1 ? ' code-clauses--one' : '');
         document.querySelectorAll('.code-clauses-head').forEach(h => { h.style.gridTemplateColumns = S.show.size === 1 ? '6rem 1fr' : ''; });
+        // where Liebermann's numbers go out of numerical order (data/clause-order.json): a note before that clause
+        const orderNotes = searching ? [] : ((window.__clauseOrder || {}).codeNotes || {})[code.code] || [];
         ol.innerHTML = shown.length ? shown.map(c => {
             const ex = other.get(c.id);
-            return `
+            return orderNotes.filter(x => x.before === c.clause).map(x => `<li class="code-order-note small"><strong>Order of the clauses:</strong> ${esc(x.text)}</li>`).join('') + `
                 <li id="${esc(c.id)}">
                     <a class="code-clause-no" href="${clauseUrl(c.id)}" title="All texts, manuscripts and translations of ${esc(c.citation)}">${esc(c.clause || c.citation)}</a>
                     ${S.show.has('text') ? `<p class="code-clause-oe"${ELieb.langAttr(c.oeLang)}>${tagOf(c.oeLabel, tl)}${esc(c.oe)}</p>` : ''}
@@ -314,8 +316,10 @@ scripts:
 
     Promise.all([
         fetch(root + 'oe-laws/codes.json').then(r => r.json()),
-        fetch(root + 'data/laws.json').then(r => r.json())
-    ]).then(([codeList, clauses]) => {
+        fetch(root + 'data/laws.json').then(r => r.json()),
+        fetch(root + 'data/clause-order.json').then(r => r.json()).catch(() => ({}))
+    ]).then(([codeList, clauses, order]) => {
+        window.__clauseOrder = order;
         codes = codeList.filter(c => clauses.some(x => x.code === c.code));
         code = codes.find(c => c.code === wanted) || codes.find(c => fold(c.code) === fold(wanted));
         if (!code) throw new Error('missing');

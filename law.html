@@ -336,13 +336,15 @@ scripts:
     // other Latin versions, to the list of law codes (lawAbb.html).
     let siglumIndex = null;
     let bibliography = [];    // authors and works Liebermann cites (data/bibliography.json), linked in his notes
+    let clauseOrder = {};     // Liebermann's printed order and the notes on it (data/clause-order.json)
     let relTerms = {};        // a scholar's wording of a cross-reference -> one of five terms (data/comparison-terms.json)
     const sigKey = s => s.replace(/[\s.]/g, '');
     const SIGLUM_ALIASES = { 'InstCn': 'In(Cn)' };
     const LATIN_VERSION = /^(Q|Lat|In|Inst\.? ?Cn\.?|Cons\.?(?: ?Cn\.?)?)(?![\w])/;
     function loadSigla() {
         const get = f => fetch(root + 'data/' + f).then(r => r.json()).catch(() => []);
-        return Promise.all([get('manuscripts.json'), get('markLaw.json'), get('bibliography.json'), get('comparison-terms.json')]).then(([ms, law, bib, terms]) => {
+        return Promise.all([get('manuscripts.json'), get('markLaw.json'), get('bibliography.json'), get('comparison-terms.json'), get('clause-order.json')]).then(([ms, law, bib, terms, order]) => {
+            clauseOrder = order && !Array.isArray(order) ? order : {};
             bibliography = bib || [];
             relTerms = terms && !Array.isArray(terms) ? terms : {};
             siglumIndex = {};
@@ -520,6 +522,16 @@ scripts:
         });
         if (!trans.length) { right.remove(); grid.classList.add('clause-grid--single'); }
         wrap.appendChild(grid);
+        // Where Liebermann's numbers are out of numerical order (Alfred 25.1, 29 … 31.1, 26), or a manuscript
+        // has the clause elsewhere: a short note above the texts (data/clause-order.json)
+        const idno = t => (tei(doc, 'idno').find(x => x.getAttribute('type') === t) || {}).textContent || '';
+        const orderNote = ((clauseOrder.notes || {})[idno('lawCode')] || {})[idno('clause')];
+        if (orderNote) {
+            const p = el('p', 'clause-note clause-order-note small');
+            p.appendChild(el('strong', null, 'Order of the clauses: '));
+            p.appendChild(document.createTextNode(orderNote));
+            wrap.insertBefore(p, grid);
+        }
         // Cross-references to other clauses: Liebermann's marginal notes ("Vgl."), then other scholars'
         // (Whitelock, Rabin, Wormald, Jurasinski and Oliver), each under the scholar's name; then the
         // clauses that each of them compares with this one.
@@ -945,7 +957,14 @@ scripts:
             btn.textContent = 'Loading…';
             Promise.all(sameCode.map(c => fetchXml(c.file).then(d => ({ c, d })).catch(() => ({ c, d: null }))))
                 .then(items => {
+                    const codeNotes = (clauseOrder.codeNotes || {})[row.code] || [];
                     items.forEach(({ c, d }) => {
+                        codeNotes.filter(x => x.before === c.clause).forEach(x => {
+                            const p = el('p', 'clause-note clause-order-note small');
+                            p.appendChild(el('strong', null, 'Order of the clauses: '));
+                            p.appendChild(document.createTextNode(x.text));
+                            out.appendChild(p);
+                        });
                         const h = el('h2', c.id === row.id ? 'current' : null);
                         h.id = c.id;
                         const a = el('a', null, c.citation);
