@@ -514,22 +514,24 @@ scripts:
         if (cmp || back || others.length || othersBack.length) {
             const box = el('div', 'clause-compare small');
             box.appendChild(el('h3', 'clause-compare__head', 'Cross-references'));
-            // Three kinds: compare, contrast, source. "source" is said the right way round: the other
+            // Four kinds: compare, contrast, analogue (the same practice elsewhere, without borrowing), source. "source" is said the right way round: the other
             // clause is this one's source (source), or this one is the other's (usedIn). In "Another
             // clause linked to this" the verbs name the clauses that follow: "clause" or "clauses" (C).
             const VERBS = {
                 compare: ['compares to', 'compare to'],
                 contrast: ['contrasts with', 'contrast with'],
+                analogue: ['gives as analogue', 'give as analogue'],
                 source: ['gives as source', 'give as source'],
                 usedIn: ['gives this clause as source for', 'give this clause as source for'],
                 compareBack: ['compares the following C to this one', 'compare the following C to this one'],
                 contrastBack: ['contrasts the following C with this one', 'contrast the following C with this one'],
+                analogueBack: ['gives the following C as analogue to this one', 'give the following C as analogue to this one'],
                 sourceBack: ['gives the following C as source for this one', 'give the following C as source for this one'],
                 usedInBack: ['gives this clause as source for the following C', 'give this clause as source for the following C']
             };
             // the kind, from this clause's side: a back-link's source and usedIn are the other way round
             const termOf = (label, isBack) => {
-                let t = { contrast: 'contrast', source: 'source', usedIn: 'usedIn' }[relTerms[label]] || 'compare';
+                let t = { contrast: 'contrast', analogue: 'analogue', source: 'source', usedIn: 'usedIn' }[relTerms[label]] || 'compare';
                 if (isBack) t = ({ source: 'usedIn', usedIn: 'source' }[t] || t) + 'Back';
                 return t;
             };
