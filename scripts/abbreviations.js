@@ -75,10 +75,9 @@
                 <p class="panel-help" id="gp-help"></p>` : `
                 <div class="find-status" id="gp-status" hidden>
                     <span id="gp-found" aria-live="polite"></span>
-                    <button type="button" class="find-step" id="gp-prev" title="Previous match" aria-label="Previous match">↑</button>
-                    <button type="button" class="find-step" id="gp-next" title="Next match" aria-label="Next match">↓</button>
+                    <span class="find-keys">Enter: next · Shift+Enter: back</span>
                 </div>
-                <p class="panel-help">Marks the words on the page; Enter or ↓ goes to the next.</p>`}
+                <p class="panel-help">Marks the words on the page.</p>`}
             </div>
             ${listPage && listPage.filters ? `<div class="panel-sec">${listPage.filters}</div>` : ''}
             <div class="panel-sec">
@@ -391,8 +390,6 @@
         };
         $('gp-q').addEventListener('input', () => { clearTimeout(t); t = setTimeout(find, 200); });
         $('gp-q').addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); go(e.shiftKey ? at - 1 : at + 1); } });
-        $('gp-next').addEventListener('click', () => go(at + 1));
-        $('gp-prev').addEventListener('click', () => go(at - 1));
     }
 
     document.addEventListener('DOMContentLoaded', () => {

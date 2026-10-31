@@ -20,8 +20,7 @@ scripts:
         <p class="panel-help" id="find-help"><code>"…"</code> a phrase · <code>ceap*</code> words beginning <i>ceap-</i> · <code>*bot</code> words ending <i>-bot</i></p>
         <div class="find-status" id="find-status" hidden>
             <span id="find-count" aria-live="polite"></span>
-            <button type="button" class="find-step" id="find-prev" title="Previous match" aria-label="Previous match">↑</button>
-            <button type="button" class="find-step" id="find-next" title="Next match" aria-label="Next match">↓</button>
+            <span class="find-keys">Enter: next · Shift+Enter: back</span>
         </div>
         <div id="find-clauses" class="chips"></div>
         <div class="panel-sub">Match</div>
@@ -1001,8 +1000,6 @@ scripts:
         find.addEventListener('input', () => { fromLink = false; clearTimeout(timer); timer = setTimeout(run, 250); });
         find.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); step(e.shiftKey ? -1 : 1); } });
         tol.addEventListener('input', () => { fromLink = false; run(); });
-        $('find-prev').addEventListener('click', () => step(-1));
-        $('find-next').addEventListener('click', () => step(1));
         document.addEventListener('wholecode', () => { drawLinks(); if (find.value.trim()) run(); else $('find-label').textContent = 'Find in the whole of ' + row.code; });
         // From a dictionary entry: the form the citation is for (law.html?id=Rect_4-1c&find=gærses), or
         // several likely spellings of it, best first ("forheolde,forhealdolde…"). Each is looked for in
