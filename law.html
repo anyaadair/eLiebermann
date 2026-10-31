@@ -1031,6 +1031,25 @@ scripts:
                         if (d) out.appendChild(texts(d, h)); else { out.appendChild(h); out.appendChild(el('p', 'muted', 'This clause could not be loaded.')); }
                     });
                     btn.remove();
+                    // The page becomes the whole code: each clause with its texts and cross-references,
+                    // straight under the heading, and the reader is put at this clause among them. This
+                    // clause's own texts go (they are in the list); its keywords, dictionary entries,
+                    // manuscripts and editions stay below the whole code.
+                    const header = target.querySelector('.entry-header');
+                    const own = target.querySelector('.clause-texts-section');
+                    if (own) own.hidden = true;
+                    if (header) {
+                        header.after(whole);
+                        const h1 = header.querySelector('h1');
+                        if (h1) { h1.textContent = ''; h1.appendChild(codeLink(row)); h1.appendChild(document.createTextNode(': the whole code')); }
+                        const wb = header.querySelector('.wulf-badges');
+                        if (wb) wb.outerHTML = Wulfstan.badges(row.code, '');
+                    }
+                    const after = el('p', 'whole-code-after small muted', 'Below: keywords, dictionary entries, manuscripts and editions for ' + row.citation + '.');
+                    whole.appendChild(after);
+                    const p = new URLSearchParams(location.search);
+                    p.set('all', '1');
+                    history.replaceState(null, '', '?' + p + '#' + encodeURIComponent(row.id));
                     const cur = document.getElementById(row.id);
                     if (cur) cur.scrollIntoView();
                     document.dispatchEvent(new CustomEvent('wholecode'));
@@ -1079,7 +1098,7 @@ scripts:
             const dictSec = document.querySelector('.clause-dictionary:not([hidden])');
             $('p-links').innerHTML = [
                 `<li><a href="${root}lawcode.html?code=${encodeURIComponent(row.code)}#${encodeURIComponent(row.id)}">All clauses of ${esc(row.code)}, in summary</a></li>`,
-                whole ? '' : `<li><button type="button" class="link-button" id="show-whole">Show the whole of ${esc(row.code)} on this page</button></li>`,
+                whole ? `<li><a href="?id=${encodeURIComponent(row.id)}">Show only ${esc(row.citation)}</a></li>` : `<li><button type="button" class="link-button" id="show-whole">Show the whole of ${esc(row.code)} on this page</button></li>`,
                 dictSec ? `<li><a href="#" id="to-dict">In the dictionary</a> <span class="muted">(entries citing this clause)</span></li>` : '',
                 `<li><a href="${root}laws.html?codes=${encodeURIComponent(row.code)}">Search all the laws</a> <span class="muted">(this code chosen)</span></li>`,
                 `<li><a href="${root}laws.html">All law codes</a></li>`

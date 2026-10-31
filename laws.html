@@ -487,7 +487,7 @@ scripts:
                 <h2>${esc(g.name)}${g.reign && g.items[0].king ? ` <span class="code-group-reign">${esc(g.reign)}</span>` : ''}</h2>
                 <ul class="code-list">${g.items.map(c => `
                     <li>
-                        <a href="${codeUrl(c.code)}"><span class="code-abbr">${esc(c.code)}</span> <span class="code-name">${esc(c.name)}</span></a>${Wulfstan.codeBadges(c.code) ? ' ' + Wulfstan.codeBadges(c.code) : ''}
+                        <span class="code-title"><a href="${codeUrl(c.code)}"><span class="code-abbr">${esc(c.code)}</span> <span class="code-name">${esc(c.name)}</span></a>${Wulfstan.codeBadges(c.code) ? ' ' + Wulfstan.codeBadges(c.code) : ''}</span>
                         <span class="code-meta">${esc(plural(c.clauses, 'clause', 'clauses'))}${summaryDates(c.date) ? ' · Suggested dates: ' + esc(summaryDates(c.date)) : ''}</span>${wulfPart(c)}
                     </li>`).join('')}
                 </ul>
