@@ -999,6 +999,23 @@ scripts:
         $('find-prev').addEventListener('click', () => step(-1));
         $('find-next').addEventListener('click', () => step(1));
         document.addEventListener('wholecode', () => { drawLinks(); if (find.value.trim()) run(); else $('find-label').textContent = 'Find in the whole of ' + row.code; });
+        // From a dictionary entry: the form the citation is for (law.html?id=Rect_4-1c&find=gærses), or
+        // several likely spellings of it, best first ("forheolde,forhealdolde…"). Each is looked for in
+        // turn as a whole word, with spelling tolerance; then shorter and shorter beginnings of the first
+        // (gærs*), down to four letters. If nothing is found, the box is left empty.
+        const wanted = (new URLSearchParams(location.search).get('find') || '').split(',').map(w => w.trim()).filter(w => w && !/\s/.test(w));
+        if (wanted.length) {
+            tol.checked = true;
+            const letters = [...wanted[0]];
+            const stems = letters.length <= 4 ? [wanted[0] + '*']
+                : [...new Set([letters.length - 2, letters.length - 3, Math.ceil(letters.length * 0.6)].map(n => Math.max(4, n)))].map(n => letters.slice(0, n).join('') + '*');
+            for (const w of wanted.concat(stems)) {
+                find.value = w;
+                run();
+                if (marks.length) break;
+            }
+            if (!marks.length) { find.value = ''; run(); }
+        }
     }
 
     if (!id) {

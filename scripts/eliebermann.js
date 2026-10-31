@@ -819,16 +819,77 @@
         return `<a class="jump-link" href="${escapeXml(href)}" title="${escapeXml(title)}" aria-label="${escapeXml(title)}"><svg viewBox="0 0 10 10" width="1em" height="1em" aria-hidden="true" focusable="false"><path d="M2.5 7.5 7.5 2.5M3.8 2.5h3.7v3.7" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>`;
     }
 
-    function linkClauseNumbers(container, clauses) {
+    // ---- The form a citation is for ("gn: ~ses Rect 4,1c" → gærses), so that the clause page can mark it ----
+    const foldForm = w => String(w || '').toLowerCase().replace(/[æǣǽ]/g, 'ae').replace(/[þðꝥ]/g, 'th').normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    // the headword as a word: "m[i]ht" → miht, "[-blendan]" → blendan, "æfwerdelsan, æfw[i]erdlan" → æfwerdelsan
+    const plainHeadword = h => String(h || '').split(',')[0].replace(/[\[\]()\-\d¹²³⁴⁵⁶⁷⁸⁹⁰\s]/g, '');
+    // Liebermann's ~ is the headword, or as much of it as stays the same: a letter shared at the join is
+    // written once (under gærs, ~ses is gærses; under abbod, ~des is abbodes)
+    // -> the likeliest spellings, best first, joined by commas ("~olde" under forhealde: forhealdeolde,
+    // forhealdolde, forhealolde, forheaolde); the clause page tries each in turn
+    function expandTilde(tok, hw) {
+        const t = tok.replace(/[\[\]()\-]/g, '');
+        const at = t.indexOf('~');
+        if (at < 0 || !hw) return t;
+        let pre = t.slice(0, at), post = t.slice(at + 1).replace(/~/g, '');
+        if (pre && pre.slice(-1).toLowerCase() === hw[0].toLowerCase()) pre = pre.slice(0, -1);
+        if (!post) return pre + hw;
+        const out = [];
+        if (hw.slice(-1).toLowerCase() === post[0].toLowerCase()) out.push(pre + hw + post.slice(1));
+        // the ending may replace the last letters of the headword
+        for (let k = 0; k <= Math.min(2, hw.length - 3); k++) out.push(pre + hw.slice(0, hw.length - k) + post);
+        return [...new Set(out)].join(',');
+    }
+    // a word that is a form of the headword: it begins with the same letters (a ge- aside)
+    function relatedForm(tok, hw) {
+        const a = foldForm(tok).replace(/[^a-z]/g, ''), b = foldForm(hw).replace(/[^a-z]/g, '');
+        if (a.length < 2 || !b) return false;
+        const strip = w => (w.length > 4 && w.startsWith('ge') ? w.slice(2) : w);
+        const n = Math.min(3, b.length);
+        return a.slice(0, n) === b.slice(0, n) || strip(a).slice(0, n) === strip(b).slice(0, n);
+    }
+    /**
+     * Reading back from a citation (at flat[i]) to the form it is cited for: past other citations,
+     * law codes and sigla, numbers, Liebermann's German (italic) and anything in brackets (a
+     * manuscript's reading), to the first word with a ~ or that is a form of the headword. At a
+     * "|" (a new grammatical form) with no form found, nothing; at the start of a numbered sense
+     * or of the entry, the headword itself.
+     */
+    function formBefore(flat, i, ital, bold, breaks, hw) {
+        const toks = [...flat.slice(0, i).matchAll(/\u0001[^\u0003]*\u0003|[\p{L}~'’\[\]\-]*[\p{L}~][\p{L}~'’\[\]\-]*|\d+|[()|‖]/gu)];
+        let depth = 0, last = i;
+        for (let k = toks.length - 1; k >= 0; k--) {
+            const t = toks[k][0], at = toks[k].index;
+            // a new paragraph (a numbered sense set on its own line) between here and the last word read
+            for (const b of breaks) if (b > at && b <= last) return hw;
+            last = at;
+            if (t[0] === '\u0001') continue;
+            if (t === ')') { depth++; continue; }
+            if (t === '(') { depth = Math.max(0, depth - 1); continue; }
+            if (depth) continue;
+            if (t === '|' || t === '‖') return '';
+            if (/^\d+$/.test(t)) { if (bold[at]) return hw; continue; }
+            if (bold[at]) return t.length > 1 ? expandTilde(t, hw) : hw;   // the headword, or "a)" of a sense
+            if (ital[at]) continue;
+            if (t.includes('~')) return expandTilde(t, hw);
+            if (relatedForm(t, hw)) return t.replace(/[\[\]\-]/g, '');
+        }
+        return hw;
+    }
+
+    function linkClauseNumbers(container, clauses, opts) {
+        const hw = plainHeadword((opts || {}).headword);
         if (!container || !clauses || !Object.keys(clauses).length) return 0;
         const isCode = el => el.localName === 'a' && /(?:lawAbb|msAbb)\.html#/.test(el.getAttribute('href') || '');
         // The text as extractCitations() sees it, with where each character came from.
         let flat = '';
         const from = [];   // from[i] = [textNode, offset] or null
         const ital = [];   // ital[i]: the character is in italic (Liebermann's German)
-        let inItalic = 0;
+        const bold = [];   // bold[i]: in bold (the headword, the numbers of the senses)
+        const breaks = []; // where a paragraph begins
+        let inItalic = 0, inBold = 0;
         const put = (str, node, offset) => {
-            for (let i = 0; i < str.length; i++) { flat += str[i]; from.push(node ? [node, offset + i] : null); ital.push(inItalic > 0); }
+            for (let i = 0; i < str.length; i++) { flat += str[i]; from.push(node ? [node, offset + i] : null); ital.push(inItalic > 0); bold.push(inBold > 0); }
         };
         const walk = node => {
             node.childNodes.forEach(n => {
@@ -848,10 +909,13 @@
                 // was read as 20,52.
                 const block = /^(p|div|li|ol|ul)$/.test(n.localName);
                 const it = n.localName === 'em' || n.localName === 'i';
-                if (block) put(' ', null, 0);
+                const bd = n.localName === 'strong' || n.localName === 'b';
+                if (block) { put(' ', null, 0); breaks.push(flat.length); }
                 if (it) inItalic++;
+                if (bd) inBold++;
                 walk(n);
                 if (it) inItalic--;
+                if (bd) inBold--;
                 if (block) put(' ', null, 0);
             });
         };
@@ -866,6 +930,11 @@
             const a = from[start], b = from[end - 1];
             if (href && a && b && a[0] === b[0]) hits.push({ node: a[0], start: a[1], end: b[1] + 1, href, text, flatStart: start });
         }, ital);
+        // each clause link carries the form it is cited for (law.html?id=…&find=gærses)
+        if (hw) hits.forEach(h => {
+            const form = formBefore(flat, h.flatStart, ital, bold, breaks, hw);
+            if (form && /\p{L}.*\p{L}/u.test(form.split(',')[0])) h.href += (h.href.includes('?') ? '&' : '?') + 'find=' + encodeURIComponent(form);
+        });
         // Wrap from the last to the first, so earlier offsets stay right.
         hits.reverse().forEach(h => {
             const tail = h.node.splitText(h.start);
@@ -1336,7 +1405,7 @@ ${translation}
     const api = {
         TEI_NS, LANGUAGES, LANGUAGE_CODES, langAttr, setLang, languageBadge, properNounBadge, isProperNoun, hiddenLanguages, setHiddenLanguages, isShown, KINDS, kindFilter, kindTags,
         useDom, slugify, sortKey, alphaKey, letterOf, ALPHABET, escapeXml, safeUrl,
-        linkAbbreviations, loadAbbreviations, extractCitations, linkClauseNumbers, jumpLink, citationXr, splitSenses, splitOutline, splitBreaks, sensesXml, detectLanguage, detectHeadword,
+        linkAbbreviations, loadAbbreviations, extractCitations, linkClauseNumbers, formBefore, expandTilde, jumpLink, citationXr, splitSenses, splitOutline, splitBreaks, sensesXml, detectLanguage, detectHeadword,
         inlineToTei, isEmptyHtml, buildEntryXml,
         renderTei, resolveTarget, readEntry
     };
