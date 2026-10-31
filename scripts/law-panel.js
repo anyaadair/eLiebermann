@@ -79,7 +79,7 @@
 
     const TRANSLATORS = { robertson: 'Robertson', whitelock: 'Whitelock', attenborough: 'Attenborough', rabin: 'Rabin',
         'jurasinski-and-oliver': 'Jurasinski and Oliver', oliver: 'Oliver', kennedy: 'Kennedy', gobbitt: 'Gobbitt',
-        wormald: 'Wormald', claude: 'English of Liebermann’s German', unattributed: 'Translator not recorded' };
+        wormald: 'Wormald', adair: 'Adair', claude: 'English of Liebermann’s German', unattributed: 'Translator not recorded' };
     const WHERE = [['orig', 'Original texts'], ['en', 'English translations'], ['de', 'Liebermann’s German'], ['notes', 'Notes']];
     function fields(t, where) {
         const out = [];
