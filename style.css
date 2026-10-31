@@ -409,7 +409,8 @@ span.wulf-badge { cursor: help; font-size: 0.72rem; padding: 0.02rem 0.5rem; ver
 .wulf-badge > summary::-webkit-details-marker { display: none; }
 .wulf-badge > summary::after { content: " ▾"; font-weight: 400; opacity: 0.6; }
 .wulf-badge[open] > summary::after { content: " ▴"; }
-.wulf-badge--composed > summary, span.wulf-badge--composed { background: #e3dcf0; }
+/* composed and reworked look alike (Anya); disputed is dashed */
+.wulf-badge--composed > summary, span.wulf-badge--composed,
 .wulf-badge--reworked > summary, span.wulf-badge--reworked { background: #efe7f7; border-color: #cdbfe3; }
 .wulf-badge--disputed > summary, span.wulf-badge--disputed { background: #fff; border: 1px dashed #a597bd; }
 .wulf-by { font-weight: 400; color: var(--muted); margin-left: 0.2rem; }
@@ -418,7 +419,9 @@ span.wulf-badge { cursor: help; font-size: 0.72rem; padding: 0.02rem 0.5rem; ver
 .wulf-badge__body p { margin: 0 0 0.35rem; font-size: 0.9rem; }
 .wulf-badge__body p:last-child { margin-bottom: 0; }
 .wulf-src { color: var(--muted); font-size: 0.85em; }
-.code-list .wulf-badge { margin-left: 0.35rem; }
+.code-list .wulf-badge { margin-left: 0.5rem; }
+.code-title { display: inline; }   /* the title and its badge stay together, on the left */
+.whole-code-after { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--rule); }
 .code-meta--wulf { flex-basis: 100%; text-align: left; }
 .spelling-note { color: var(--muted); font-size: 0.95rem; margin: 0.6rem 0 1.2rem; }
 
