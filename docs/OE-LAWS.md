@@ -4,6 +4,13 @@
 
 Since October 2026 the files are made from the full, checked spreadsheet *OE_Laws_Database - Updated by Claude.xlsx* (columns A–AO) with `tools/laws-from-database.py`. Every law code now has the layout that Æthelberht had first, with more texts. The one exception is **Cn 1018**, which is waiting for a decision and is left as it was (see "Law codes that need a decision").
 
+
+## The clause files are the master copy
+
+Since October 2026 the clause files in `oe-laws/` are the master copy of the laws database. The spreadsheets they were first built from are obsolete and no longer kept, and much has been added to the files since (see "Added to the files by hand" below, and the Rabin, cross-reference, clause-order and joined-clause sections). Corrections are made in the files themselves; every earlier version is kept in the repository's history.
+
+The tools that built the files from a spreadsheet (`tools/laws-from-database.py`, `tools/laws-from-xlsx.py`, `tools/law-code-from-xlsx.py`, `tools/liebermann-notes.py`) are retired: they stop with a message unless run with `--rebuild-from-spreadsheet`, since running them would overwrite later work. They are kept for the record, and other tools still use some of their functions. Nothing on the site depends on them: the deploy builds only the indexes (`tools/build-index.js`, `tools/build-laws-index.js`) from the files. What the rest of this document says about spreadsheet columns describes how the files were first made.
+
 ## What is in a file
 
 Take `oe-laws/Had_10.xml`, the clause *Had 10*. Its header says where the clause comes from; its body holds the texts.
