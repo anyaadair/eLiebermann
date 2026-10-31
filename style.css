@@ -736,7 +736,7 @@ ul.citations li { break-inside: avoid; }
 @media (max-width: 760px) { .clause-grid { grid-template-columns: 1fr; } }
 .clause-grid--single { grid-template-columns: 1fr; }
 /* Clear space between the texts and translations and the Manuscripts heading below them. */
-.clause-texts-section { margin-bottom: 3rem; }
+.clause-texts-section { margin-bottom: 2.5rem; }
 .clause-reading { margin: 0 0 0.9rem; }
 .clause-source { margin: 0 0 0.1rem; font-size: 0.9rem; }
 .clause-source .source-name { font-weight: 600; }
@@ -762,6 +762,8 @@ ul.citations li { break-inside: avoid; }
 .clause-note strong { color: inherit; font-weight: 600; }
 /* Liebermann's cross-references ("Vgl.") and the clauses that point back here */
 .clause-compare { margin: 0.6rem 0; padding: 0.25rem 0.8rem 0.4rem; border-left: 3px solid var(--rule, #ccc); }
+/* the same space above the box (below the previous/next bubbles) as below it (above Keywords) */
+.clause-nav--top + .clause-compare { margin: 2.5rem 0 0; }
 .clause-compare p { margin: 0.2rem 0; }
 .clause-compare strong { font-weight: 600; }
 .clause-compare .muted { color: var(--muted); }
