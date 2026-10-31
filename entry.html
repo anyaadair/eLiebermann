@@ -547,25 +547,36 @@ scripts:
         document.body.classList.add('has-sidebar');
         side.querySelectorAll('a[data-href]').forEach(a => { a.href = root + a.dataset.href; });
         const KEY = 'eLiebermann.sidebar';
-        const narrow = window.matchMedia('(max-width: 60rem)').matches;
-        let closed = narrow;
-        if (!narrow) { try { closed = localStorage.getItem(KEY) === 'closed'; } catch (e) { /* open */ } }
+        // On a narrow screen (under 60rem) the entry always comes first: the panel folds
+        // away, and when brought back it slides in over the entry rather than pushing it
+        // down the page (Escape or a click outside folds it again).
+        const narrow = window.matchMedia('(max-width: 60rem)');
+        const savedClosed = () => { try { return localStorage.getItem(KEY) === 'closed'; } catch (e) { return false; } };
+        const isClosed = () => layout.classList.contains('sidebar-closed');
         const setClosed = c => {
             layout.classList.toggle('sidebar-closed', c);
             open.hidden = !c;
             fold.setAttribute('aria-expanded', String(!c));
             open.setAttribute('aria-expanded', String(!c));
         };
-        setClosed(closed);
+        setClosed(narrow.matches || savedClosed());
+        narrow.addEventListener('change', () => setClosed(narrow.matches || savedClosed()));
         fold.addEventListener('click', () => {
             setClosed(true);
-            try { if (!narrow) localStorage.setItem(KEY, 'closed'); } catch (e) { /* not kept */ }
+            try { if (!narrow.matches) localStorage.setItem(KEY, 'closed'); } catch (e) { /* not kept */ }
             open.focus();
         });
-        open.addEventListener('click', () => {
+        open.addEventListener('click', e => {
+            e.stopPropagation();
             setClosed(false);
-            try { localStorage.removeItem(KEY); } catch (e) { /* not kept */ }
+            try { if (!narrow.matches) localStorage.removeItem(KEY); } catch (e) { /* not kept */ }
             side.querySelector('input').focus();
+        });
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Escape' && narrow.matches && !isClosed()) { setClosed(true); open.focus(); }
+        });
+        document.addEventListener('click', e => {
+            if (narrow.matches && !isClosed() && !side.contains(e.target)) setClosed(true);
         });
         const wheel = document.getElementById('word-wheel');
         const drawWheel = () => loadOrder().then(({ order: all }) => {
