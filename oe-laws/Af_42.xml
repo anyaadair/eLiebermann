@@ -16,6 +16,7 @@
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
         <respStmt><resp>Transcription of Attenborough’s notes</resp><name ref="#claude">Claude</name></respStmt>
         <respStmt><resp>Transcription of Whitelock’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Cross-references to other clauses</resp><name ref="#jurasinski-sanctuary">Jurasinski, Sanctuary</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -36,6 +37,7 @@
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
           <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
           <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+          <bibl xml:id="jurasinski-sanctuary" type="study">Stefan Jurasinski, ‘Sanctuary, House-Peace, and the Traditionalism of Alfred’s Laws’, <title>The Journal of Legal History</title> 31 (2010), 129–47</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-e" rend="bold"><abbr>E</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 173 (Parker Chronicle and Laws)</note></witness>
@@ -86,6 +88,11 @@
         <ab type="translation" xml:lang="en" source="#whitelock"><pb n="415" ed="#whitelock"/>Moreover we command: that the man who knows his opponent<ptr type="editorNote" n="2" target="#Af_42.whinote.n.2"/> to be dwelling at home is not to fight before he asks justice for himself.</ab>
         <ab type="translation" xml:lang="en" source="#jurasinski-and-oliver" corresp="#wit-e"><pb n="343" ed="#jurasinski-and-oliver"/>Likewise we command: for the man who knows that his enemy is sitting at home, that he not fight him before he offers to settle according to law.</ab>
         <note type="comparedBy" source="#liebermann"><ref target="clause:IVAtr_4-1">IV Atr 4.1</ref></note>
+        <note type="comparison" source="#jurasinski-sanctuary" n="134"><label>broadens the scope of asylum beyond</label> <ref target="clause:Ine_5">Ine 5</ref> <quote>the domboc broadens the scope of asylum to include residences affiliated with the royal household (cap. 1) and even, in some instances, those that are not (caps. 2 and 42)</quote></note>
+        <note type="comparison" source="#jurasinski-sanctuary" n="138"><label>contrast</label> Lex Saxonum c. 27 <quote>‘Qui hominem propter faidam in propria domo occiderit, capite puniatur’ … None of the burdens Alfred’s code imposes on those assaulted within their homes is apparent in this or any other Frankish legislation of which I am aware.</quote></note>
+        <note type="comparison" source="#jurasinski-sanctuary" n="138"><label>compare</label> <ref target="clause:Hn_80-11a">Hn 80.11a</ref> <quote>an offence that appears little removed from what codes of the tenth- and eleventh-century term hamsocn, defined by the twelfth-century Leges Henrici Primi as an offence occurring ‘if anyone goes with premeditation to a house where he knows his enemy to be and attacks him there’</quote></note>
+        <note type="comparison" source="#jurasinski-sanctuary" n="138, n. 43"><label>contrast</label> <ref target="clause:IVAtr_4">IV Atr 4</ref> <quote>The subsequent laws of Edmund, Æthelred and Cnut condemn husbryce and hamsocn – two terms that refer to attacking someone in his home – with unqualified severity</quote></note>
+        <note type="comparison" source="#jurasinski-sanctuary" n="138"><label>contrast</label> <ref target="clause:IICn_62">II Cn 62–62.1</ref> <quote>Cnut’s code (II 62.1) stipulates that the kin of a man slain while invading another’s home should expect no compensation. That Alfred’s laws require penalties for this offence only if the person slain has previously abandoned himself and his weapons to his enemies is thus particularly striking.</quote></note>
         <note type="liebermannNote" subtype="textual" xml:id="Af_42.lnote.oe.14" n="14" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">74</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Ld</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Af_42.lnote.oe.15" n="15" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">74</biblScope></bibl><seg type="original" xml:lang="de">-de <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">-de Ld</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Af_42.lnote.oe.16" n="16" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">74</biblScope></bibl><seg type="original" xml:lang="de">þon <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">þon Ld</seg></note>

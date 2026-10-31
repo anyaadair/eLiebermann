@@ -12,6 +12,7 @@
         <respStmt><resp>Date and place</resp><name ref="#whitelock">Whitelock</name></respStmt>
         <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Cross-references to other clauses</resp><name ref="#jurasinski-sanctuary">Jurasinski, Sanctuary</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -32,6 +33,7 @@
           <bibl xml:id="whitelock" type="study">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007)</bibl>
           <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
           <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+          <bibl xml:id="jurasinski-sanctuary" type="study">Stefan Jurasinski, ‘Sanctuary, House-Peace, and the Traditionalism of Alfred’s Laws’, <title>The Journal of Legal History</title> 31 (2010), 129–47</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-e" rend="bold"><abbr>E</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 173 (Parker Chronicle and Laws)</note></witness>
@@ -88,6 +90,8 @@
         <note type="comparison" source="#jurasinski-and-oliver" n="237"><label>parallel idiom</label> <ref target="clause:Ine_5">Ine 5</ref> <quote>The idiom is paralleled in Ine §5, which shows Alfred to have read this portion of Exodus in light of the sanctuary norms of his own day</quote></note>
         <note type="comparedBy" source="#jurasinski-and-oliver" n="333"><label>foreshadowed in</label> <ref target="clause:Af_36">Af 36</ref> <quote>the relevance of intent or its absence is foreshadowed in MP §13</quote></note>
         <note type="comparedBy" source="#jurasinski-and-oliver" n="375"><label>compare</label> <ref target="clause:Ine_5">Ine 5</ref> <quote>Compare MP §13 and Alfred §5.</quote></note>
+        <note type="comparison" source="#jurasinski-sanctuary" n="137, n. 36"><label>rewrites</label> Exodus 21:12–14 <quote>Alfred substantially rewrites two clauses (21:12–14) concerned with remedies for homicide … It is plain that the Alfredian version shows a greater concern than its source with the motives that prompted the slaying.</quote></note>
+        <note type="comparison" source="#jurasinski-sanctuary" n="137, n. 36"><label>conventional in</label> Frankish penitentials (unintentional homicide) <quote>the three categories of unintentional homicide added by Alfred to the language of his source are conventional in the penitentials that circulated in Francia in the years prior to Alfred’s reign</quote></note>
         <note type="liebermannNote" subtype="textual" xml:id="Af_El-to-13.lnote.oe.23" n="23" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">30</biblScope></bibl><seg type="original" xml:lang="de">swelt <hi rend="italic">So</hi></seg><seg type="translation" xml:lang="en" source="#claude">swelt So</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Af_El-to-13.lnote.oe.24" n="24" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">30</biblScope></bibl><seg type="original" xml:lang="de">deaþ <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">deaþ Ld</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Af_El-to-13.lnote.oe.25" n="25" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">30</biblScope></bibl><seg type="original" xml:lang="de">ðo. h. <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">ðo. h. Ld</seg></note>

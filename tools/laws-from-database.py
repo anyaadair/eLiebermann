@@ -165,6 +165,8 @@ WORMALD_PPMEL = ('Patrick Wormald, <title>Papers Preparatory to The Making of En
 JO_REF = ('Stefan Jurasinski and Lisi Oliver, <title>The Laws of Alfred: The Domboc and the Making of Anglo-Saxon Law</title> '
           '(Cambridge: Cambridge University Press, 2021)')
 KENNEDY_REF = 'A. G. Kennedy, ‘Cnut’s Law Code of 1018’, <title>Anglo-Saxon England</title> 11 (1983), 57–81'
+JURASINSKI_SANCTUARY_REF = ('Stefan Jurasinski, ‘Sanctuary, House-Peace, and the Traditionalism of Alfred’s Laws’, '
+                            '<title>The Journal of Legal History</title> 31 (2010), 129–47')
 XR_WORKS = {   # 'Work' on the Cross-references sheet (start of it) -> (source id, name, reference)
     'Whitelock': ('whitelock', 'Whitelock', WHITELOCK_EHD),
     'Rabin': ('rabin-doml', 'Rabin', RABIN_DOML),
@@ -172,6 +174,7 @@ XR_WORKS = {   # 'Work' on the Cross-references sheet (start of it) -> (source i
     'Wormald, Papers': ('wormald-ppmel', 'Wormald, Papers Preparatory', WORMALD_PPMEL),
     'Jurasinski and Oliver': ('jurasinski-and-oliver', 'Jurasinski and Oliver', JO_REF),
     'Kennedy': ('kennedy', 'Kennedy', KENNEDY_REF),
+    'Jurasinski, Sanctuary': ('jurasinski-sanctuary', 'Jurasinski, Sanctuary', JURASINSKI_SANCTUARY_REF),
 }
 EDITOR_OVERRIDE = {'Grið': ('Rabin', 'rabin-doml', RABIN_DOML), 'Nor Grið': ('Rabin', 'rabin-doml', RABIN_DOML)}
 

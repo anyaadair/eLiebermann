@@ -10,6 +10,7 @@
         <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
         <respStmt><resp>Translation</resp><name ref="#robertson">Robertson</name></respStmt>
         <respStmt><resp>Cross-references to other clauses</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
+        <respStmt><resp>Cross-references to other clauses</resp><name ref="#jurasinski-sanctuary">Jurasinski, Sanctuary</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
         <respStmt><resp>Transcription of Robertson’s notes</resp><name ref="#claude">Claude</name></respStmt>
       </titleStmt>
@@ -30,6 +31,7 @@
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
           <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
           <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+          <bibl xml:id="jurasinski-sanctuary" type="study">Stefan Jurasinski, ‘Sanctuary, House-Peace, and the Traditionalism of Alfred’s Laws’, <title>The Journal of Legal History</title> 31 (2010), 129–47</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-q"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note></witness>
@@ -69,6 +71,7 @@
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-q"><pb n="75" ed="#robertson"/>And we<ptr type="editorNote" n="1" target="#IVAtr_4.robnote.n.1"/> have decreed that a man who, within the town, makes forcible entry into another man’s house without permission and commits a breach of the peace<ptr type="editorNote" n="2" target="#IVAtr_4.robnote.n.2"/> of the worst kind…<ptr type="editorNote" n="3" target="#IVAtr_4.robnote.n.3"/> and he who assaults an innocent person on the king’s highway<ptr type="editorNote" n="4" target="#IVAtr_4.robnote.n.4"/>, if he is slain, shall lie in an unhonoured grave<ptr type="editorNote" n="5" target="#IVAtr_4.robnote.n.5"/>.</ab>
         <note type="comparedBy" source="#liebermann"><ref target="clause:IICn_62-1">II Cn 62.1</ref></note>
         <note type="comparedBy" source="#wormald-mel" n="359"><label>source (roman)</label> <ref target="clause:IICn_62">II Cn 62–62.1</ref> <quote>Table 5.4, II Cn 62-62:1: IV Atr 4-4:1</quote></note>
+        <note type="comparedBy" source="#jurasinski-sanctuary" n="138, n. 43"><label>contrast</label> <ref target="clause:Af_42">Af 42</ref> <quote>The subsequent laws of Edmund, Æthelred and Cnut condemn husbryce and hamsocn – two terms that refer to attacking someone in his home – with unqualified severity</quote></note>
         <note type="editorial">‘ungebendeo’ should perhaps be corrected to ‘rihtes ungebedene’ (Liebermann).</note>
         <note type="liebermannNote" subtype="textual" xml:id="IVAtr_4.lnote.oe.37" n="37" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">234</biblScope></bibl><seg type="original" xml:lang="de">faciat inter <hi rend="italic">R</hi></seg><seg type="translation" xml:lang="en" source="#claude">faciat inter R</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IVAtr_4.lnote.oe.38" n="38" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">234</biblScope></bibl><seg type="original" xml:lang="de">age <hi rend="italic">Hk;</hi> agat <hi rend="italic">Br</hi></seg><seg type="translation" xml:lang="en" source="#claude">age Hk; agat Br</seg></note>

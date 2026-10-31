@@ -15,6 +15,7 @@
         <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
         <respStmt><resp>Transcription of Attenborough’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>Cross-references to other clauses</resp><name ref="#jurasinski-sanctuary">Jurasinski, Sanctuary</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -35,6 +36,7 @@
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
           <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
           <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+          <bibl xml:id="jurasinski-sanctuary" type="study">Stefan Jurasinski, ‘Sanctuary, House-Peace, and the Traditionalism of Alfred’s Laws’, <title>The Journal of Legal History</title> 31 (2010), 129–47</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-e" rend="bold"><abbr>E</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 173 (Parker Chronicle and Laws)</note></witness>
@@ -87,6 +89,7 @@
         <ab type="translation" xml:lang="en" source="#attenborough" corresp="#wit-e"><pb n="71" ed="#attenborough"/>If one man kills another unintentionally, [by allowing a tree to fall on him] while they are engaged on a common task, the tree shall be given to the [dead man’s] kindred, and they shall remove it within 30 days from the locality. Otherwise, it shall be taken by him who owns the wood.</ab>
         <ab type="translation" xml:lang="en" source="#whitelock"><pb n="412" ed="#whitelock"/>If at a common task a man unintentionally kills another [by letting a tree fall on him] the tree is to be given to the kinsmen, and they are to have it from that estate within 30 days, or else he who owns the wood is to have the right to it.</ab>
         <ab type="translation" xml:lang="en" source="#jurasinski-and-oliver" corresp="#wit-e"><pb n="309" ed="#jurasinski-and-oliver"/>If someone kills another accidentally [by felling a tree on him] while working together, let the tree be given to the kin [of the slain man], and they must take it from the land before 30 nights, or let the owner take it.</ab>
+        <note type="comparedBy" source="#jurasinski-sanctuary" n="142"><label>same construction</label> <ref target="clause:Af_21">Af 21</ref> <quote>mon is not in all likelihood the object of weorpe but the agent of the transfer of property, as is made most obvious in the case of a fallen tree that crushes a man to death and is given to his kindred (cap. 13)</quote></note>
         <note type="liebermannNote" subtype="textual" xml:id="Af_13.lnote.oe.33" n="33" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">56</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">neues Cap., überschrieben ähnlich der zweiten Hälfte der Rubrik B’s zu</hi> 12, <hi rend="italic">nur Ld; vielleicht also nur Lambarde’s und sicher nicht ursprüngliche Abtheilung</hi></seg><seg type="translation" xml:lang="en" source="#claude">new cap., with a heading similar to the second half of B’s rubric to 12, only in Ld; thus perhaps a division made only by Lambarde, and certainly not original</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Af_13.lnote.oe.34" n="34" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">56</biblScope></bibl><seg type="original" xml:lang="de">-rc <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">-rc Ld</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Af_13.lnote.oe.35" n="35" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">56</biblScope></bibl><seg type="original" xml:lang="de">offylleð <hi rend="italic">So Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">offylleð So Ld</seg></note>
