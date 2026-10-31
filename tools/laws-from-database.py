@@ -621,7 +621,7 @@ def read_cross_references(path):
 
 def xr_links(rows, links):
     """Attach other scholars' cross-references to the clauses: row['xr'] = [(work, page, relation, text, id, said)],
-    row['xrBack'] = [(work, page, relation, citation, id)]."""
+    row['xrBack'] = [(work, page, relation, citation, id, said)]."""
     find = clause_finder(rows)
     by_id = {r['id']: r for r in rows}
     for r in rows:
@@ -638,7 +638,7 @@ def xr_links(rows, links):
         n += 1
         if tid:
             back = by_id[tid]['xrBack']
-            item = (l['work'], l['page'], l['relation'], l['from'], fid)
+            item = (l['work'], l['page'], l['relation'], l['from'], fid, l['said'])
             if not any(b[0] == item[0] and b[4] == fid for b in back):
                 back.append(item)
     return n
@@ -950,9 +950,12 @@ def build(row, today, source_name, refs):
             sid, (' n="%s"' % attr(page)) if page else '', ('<label>%s</label> ' % esc(rel)) if rel else '',
             ('<ref target="clause:%s">%s</ref>' % (attr(tid), esc(text))) if tid else esc(text),
             (' <quote>%s</quote>' % esc(said)) if said else ''))
-    for work, page, rel, text, fid in row.get('xrBack', []):
-        w('        <note type="comparedBy" source="#%s"%s><ref target="clause:%s">%s</ref></note>' % (
-            XR_WORKS[work][0], (' n="%s"' % attr(page)) if page else '', attr(fid), esc(text)))
+    # the scholar's words, as at the clause where they were written (so a clause page need not open
+    # the other clause; tools/comparison-backlinks.py does the same for files already made)
+    for work, page, rel, text, fid, said in row.get('xrBack', []):
+        w('        <note type="comparedBy" source="#%s"%s>%s<ref target="clause:%s">%s</ref>%s</note>' % (
+            XR_WORKS[work][0], (' n="%s"' % attr(page)) if page else '', ('<label>%s</label> ' % esc(rel)) if rel else '',
+            attr(fid), esc(text), (' <quote>%s</quote>' % esc(said)) if said else ''))
     if notes:
         w('        <note type="editorial">%s</note>' % esc(notes))
     if row['translatorNotes'] and 'whitelock' in srcs.items:

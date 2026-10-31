@@ -79,9 +79,9 @@
         <note type="comparison" source="#liebermann" n="250"><ref target="clause:IIIEg_1-1">III Eg 1.1</ref></note>
         <note type="comparisonPrinted" source="#liebermann">Vgl. III Eg. 1, 1</note>
         <note type="comparedBy" source="#liebermann"><ref target="clause:VIIAtr_6-1">VII Atr 6.1</ref>; <ref target="clause:IICn_1-1">II Cn 1.1</ref></note>
-        <note type="comparedBy" source="#kennedy" n="59"><ref target="clause:Cn-1018_part-009">Cn 1018 3–6</ref></note>
-        <note type="comparedBy" source="#whitelock" n="462"><ref target="clause:IICn_Prol">II Cn Prol.</ref></note>
-        <note type="comparedBy" source="#wormald-mel" n="319"><ref target="clause:IICn_1-1">II Cn 1.1</ref></note>
+        <note type="comparedBy" source="#kennedy" n="59"><label>source in V–VIII Æthelred</label> <ref target="clause:Cn-1018_part-009">Cn 1018 3–6</ref> <quote>Kennedy’s table: VI Æthelred 8, VI Æthelred 8.1, VI Æthelred 10.2, VI Æthelred 10.3, VI Æthelred 10, VI Æthelred 10.1, VI Æthelred 9 | D 3–6 | II Cnut 1–3</quote></note>
+        <note type="comparedBy" source="#whitelock" n="462"><label>drawn from</label> <ref target="clause:IICn_Prol">II Cn Prol.</ref> <quote>clauses drawn mainly from VI Ethelred, 8.1–9, since they differ little from V Ethelred, 1.1–1.2, though the source of this, III Edgar, has been used also</quote></note>
+        <note type="comparedBy" source="#wormald-mel" n="319"><label>=</label> <ref target="clause:IICn_1-1">II Cn 1.1</ref> <quote>VI Atr 8:1 = II Cn 1:1</quote></note>
         <note type="liebermannNote" subtype="erklaerung" xml:id="VIAtr_8-1.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">175</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Wiederholt II Cn 1, 1.—Der Paraphrast denkt unter <hi rend="italic">ius civile</hi> nicht etwa an Römisches Recht, obwohl der Name allerdings darauf zurückgeht</seg><seg type="translation" xml:lang="en" source="#claude">Repeated II Cn 1, 1.—By <hi rend="italic">ius civile</hi> the paraphrast is not, say, thinking of Roman law, although the term does indeed derive from it</seg></note>
         <note type="editorNote" subtype="endnote" xml:id="VIAtr_8-1.robnote.n.1" n="1" source="#robertson"><bibl><biblScope unit="page">332</biblScope></bibl><seg type="original" xml:lang="en">Cf. III Edg. 1, 1; VII Atr. 6, 1; II Cn. 1, 1.</seg></note>
       </div>
