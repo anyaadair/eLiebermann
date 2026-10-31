@@ -403,6 +403,25 @@ scripts:
         const left = col(hasOE ? 'Old English text' : hasFrench ? 'Anglo-Norman French text' : 'Latin text', 'clause-col--text');
         const right = col('Translations', 'clause-col--translation');
         const liebTexts = [];
+        // an editor's own clause number, where it differs from Liebermann's and is not already shown inside
+        // the text (a divided clause has a number on each part)
+        const editorNumber = (a, id) => {
+            if (!id || id === 'liebermann' || id === 'claude') return '';
+            const hasParts = x => tei(x, 'seg').some(sg => sg.getAttribute('type') === 'part' && sg.getAttribute('n'));
+            let n = a.getAttribute('n') || '';
+            if (!n && a.getAttribute('type') === 'translation') {
+                const text = abs.find(x => x.getAttribute('type') === 'editionText' && x.getAttribute('source') === '#' + id && x.getAttribute('n'));
+                if (text && !hasParts(text)) n = text.getAttribute('n');
+                // a divided clause whose translation is not divided: the first and last of the text's numbers
+                const parted = abs.find(x => x.getAttribute('type') === 'editionText' && x.getAttribute('source') === '#' + id && hasParts(x));
+                if (parted && !hasParts(a)) {
+                    const nums = tei(parted, 'seg').filter(sg => sg.getAttribute('type') === 'part' && sg.getAttribute('n')).map(sg => sg.getAttribute('n'));
+                    if (nums.length) return nums.length > 1 ? nums[0] + '–' + nums[nums.length - 1] : nums[0];
+                }
+            }
+            if (!n || n === div.getAttribute('n') || hasParts(a)) return '';
+            return n;
+        };
         const add = (column, a, bits, cls) => {
             const id = (a.getAttribute('source') || '').replace(/^#/, '');
             const src = srcs[id] || { id, name: id || 'Unknown', bibl: a, page: '' };
@@ -418,6 +437,12 @@ scripts:
             const lang = a.getAttribute('xml:lang');
             ELieb.setLang(p, lang);   // Latin and French as data-lang, so u is not drawn as V
             p.appendChild(inline(a));
+            // A modern editor who numbers this clause differently: the editor's number at the start of the
+            // text (and of the same editor's translation), in the same grey bubble as the numbers inside a
+            // divided clause, so that readers citing that edition use its numbers. Drawn by CSS from
+            // data-num, so it stays when the notes are shown or hidden (the text is drawn again).
+            const edNum = editorNumber(a, id);
+            if (edNum) { p.dataset.num = edNum; p.classList.add('has-editor-num'); p.title = src.name + '’s clause ' + edNum; }
             box.appendChild(p);
             // Liebermann's own notes, behind a button: textual notes on his texts (one button, on his first
             // text, for the numbers in all of them), Erklärungen on his German.
