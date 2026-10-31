@@ -767,6 +767,12 @@ ul.citations li { break-inside: avoid; }
 .clause-compare .muted { color: var(--muted); }
 .clause-compare__head, .clause-texts h3.clause-compare__head { font-family: var(--sans); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.06em; color: #55595e; margin: 0 0 0.35rem; }
 .clause-compare__quote { color: var(--muted); font-style: italic; }
+.clause-compare__sub { font-family: var(--sans); font-size: 0.78rem; font-weight: 600; color: #55595e; margin: 0.55rem 0 0.15rem !important; }
+.clause-compare__head + .clause-compare__sub { margin-top: 0.1rem !important; }
+.clause-compare__line { margin: 0.15rem 0 0.15rem 0.6rem !important; }
+.clause-compare__who { font-weight: 600; color: #33373b; text-decoration: none; }
+a.clause-compare__who:hover, a.clause-compare__who:focus-visible { text-decoration: underline; }
+.clause-compare__term[title] { cursor: help; }
 .ms-list { list-style: none; padding-left: 0; }
 .ms-list li { margin: 0.15rem 0; }
 .ms-list .ms-siglum { display: inline-block; min-width: 2.5rem; font-weight: 600; }

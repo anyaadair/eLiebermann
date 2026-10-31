@@ -104,9 +104,9 @@
         <note type="comparison" source="#wormald-ppmel" n="93"><label>=</label> <ref target="clause:EGu_11">EGu 11</ref> <quote>EGu 11 = VI Atr 7 = Cn 1018 7 = II Cn 4a</quote></note>
         <note type="comparison" source="#wormald-ppmel" n="93"><label>=</label> <ref target="clause:VIAtr_7">VI Atr 7</ref> <quote>EGu 11 = VI Atr 7 = Cn 1018 7 = II Cn 4a</quote></note>
         <note type="comparison" source="#wormald-ppmel" n="93"><label>=</label> <ref target="clause:Cn-1018_part-015">Cn 1018 7</ref> <quote>EGu 11 = VI Atr 7 = Cn 1018 7 = II Cn 4a</quote></note>
-        <note type="comparedBy" source="#wormald-mel" n="334"><ref target="clause:VIAtr_7">VI Atr 7</ref></note>
-        <note type="comparedBy" source="#kennedy" n="59"><ref target="clause:Cn-1018_part-015">Cn 1018 7</ref></note>
-        <note type="comparedBy" source="#wormald-mel" n="397"><ref target="clause:Northu_48">Northu 48</ref></note>
+        <note type="comparedBy" source="#wormald-mel" n="334"><label>recurs in later code</label> <ref target="clause:VIAtr_7">VI Atr 7</ref> <quote>Almost all these additions recurred in codes later drafted by Wulfstan for Cnut (n. 332: VI Atr 7, Cn 1018 7, Cn 1018 9, II Cn 4a, II Cn 6)</quote></note>
+        <note type="comparedBy" source="#kennedy" n="59"><label>used in I–II Cnut</label> <ref target="clause:Cn-1018_part-015">Cn 1018 7</ref> <quote>Kennedy’s table: VI Æthelred 7 (VIII Æthelred 40) | D 7 | II Cnut 4, II Cnut 4a</quote></note>
+        <note type="comparedBy" source="#wormald-mel" n="397"><label>contrast</label> <ref target="clause:Northu_48">Northu 48</ref> <quote>II Cn 4a, 5:1; Northu. 48</quote></note>
         <note type="editorial">G's ‘forfaran’ should be corrected to ‘forfare’ from the other MSS and EGu 11; G's ‘oððon’ is less original than ‘oððe’. A's ‘morðwytan’ should perhaps be ‘-wyrhtan’, or understood as ‘morð[ge]witan’ (accessories to murder). Liebermann compares EGu 11; VI Atr 7.; BR: added from Gesetze I p. 311, October 2026 (MS Cons)</note>
         <note type="textual" source="#rabin-doml">forfare: forfaran G</note>
         <note type="liebermannNote" subtype="textual" xml:id="IICn_4a.lnote.oe.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">311</biblScope></bibl><seg type="original" xml:lang="de">-die <hi rend="italic">Hr; viell.</hi> la. homicidii</seg><seg type="translation" xml:lang="en" source="#claude">-die Hr; perhaps la. homicidii</seg></note>

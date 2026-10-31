@@ -65,7 +65,7 @@
         <note type="comparison" source="#liebermann" n="172">Vor. S.</note>
         <note type="comparisonPrinted" source="#liebermann">ebd.</note>
         <note type="comparedBy" source="#liebermann"><ref target="clause:VIAs_1-2">VI As 1.2</ref>; <ref target="clause:VIAs_1-4">VI As 1.4</ref>; <ref target="clause:IICn_29">II Cn 29</ref></note>
-        <note type="comparedBy" source="#wormald-mel" n="358"><ref target="clause:IICn_29">II Cn 29</ref></note>
+        <note type="comparedBy" source="#wormald-mel" n="358"><label>loose/partial source (in parentheses)</label> <ref target="clause:IICn_29">II Cn 29</ref> <quote>Table 5.4, II Cn 29: (IV As 6:3)</quote></note>
         <note type="editorial">Latin only; no German translation in Liebermann. Old English of the last part in H (row 852).</note>
         <note type="liebermannNote" subtype="textual" xml:id="IVAs_6-3.lnote.oe.29" n="29" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">172</biblScope></bibl><seg type="original" xml:lang="de">auf. <hi rend="italic">statt</hi> aut. f. <hi rend="italic">RTMHk</hi></seg><seg type="translation" xml:lang="en" source="#claude">auf. instead of aut. f. RTMHk</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IVAs_6-3.lnote.oe.30" n="30" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">172</biblScope></bibl><seg type="original" xml:lang="de">perseq. <hi rend="italic">RTMHk</hi></seg><seg type="translation" xml:lang="en" source="#claude">perseq. RTMHk</seg></note>

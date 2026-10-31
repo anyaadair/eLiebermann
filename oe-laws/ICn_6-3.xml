@@ -90,9 +90,9 @@
         <note type="comparisonPrinted" source="#liebermann">ebd. 10</note>
         <note type="comparison" source="#wormald-mel" n="356"><label>source (roman)</label> <ref target="clause:VIAtr_11">VI Atr 11</ref> <quote>Table 5.4, I Cn 6:3: Cn 1018 11:3  VI Atr 11</quote></note>
         <note type="comparison" source="#wormald-mel" n="356"><label>quoted verbatim (bold in Wormald's table)</label> <ref target="clause:Cn-1018_part-024">Cn 1018 11.3</ref> <quote>Table 5.4, I Cn 6:3: Cn 1018 11:3  VI Atr 11</quote></note>
-        <note type="comparedBy" source="#wormald-mel" n="346"><ref target="clause:Cn-1018_part-024">Cn 1018 11.3</ref></note>
-        <note type="comparedBy" source="#kennedy" n="59"><ref target="clause:Cn-1018_part-024">Cn 1018 11.3–12.2</ref></note>
-        <note type="comparedBy" source="#wormald-mel" n="373"><ref target="clause:Ymb-Aewbricas_Not-known-to-Liebermann">Ymb Æwbricas</ref></note>
+        <note type="comparedBy" source="#wormald-mel" n="346"><label>more like</label> <ref target="clause:Cn-1018_part-024">Cn 1018 11.3</ref> <quote>Cn 1018 11:3 is more like V Atr 10 than VI Atr 11 (and yet more like I Cn 6:3)</quote></note>
+        <note type="comparedBy" source="#kennedy" n="59"><label>used in I–II Cnut</label> <ref target="clause:Cn-1018_part-024">Cn 1018 11.3–12.2</ref> <quote>Kennedy’s table: VI Æthelred 11–12.1 | D 11.3–12.2 | I Cnut 6.3–7.1</quote></note>
+        <note type="comparedBy" source="#wormald-mel" n="373"><label>cf.</label> <ref target="clause:Ymb-Aewbricas_Not-known-to-Liebermann">Ymb Æwbricas</ref> <quote>EGu 4; cf. V Atr 10 (VI 11 – 12:2), Cn 1018 11:3 – 12:4, I Cn 6:3 – 7:3, II 50 – 55</quote></note>
         <note type="editorial">Liebermann compares V Atr 10.; BR: added from Gesetze I p. 291, October 2026 (MS Cons)</note>
         <note type="liebermannNote" subtype="textual" xml:id="ICn_6-3.lnote.oe.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">290</biblScope></bibl><seg type="original" xml:lang="de">-wilc <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">-wilc Ld</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ICn_6-3.lnote.oe.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">290</biblScope></bibl><seg type="original" xml:lang="de">man <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">man Ld</seg></note>

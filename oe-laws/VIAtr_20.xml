@@ -78,8 +78,8 @@
         <note type="comparison" source="#liebermann" n="253"><ref target="clause:VAtr_12">V Atr 12</ref></note>
         <note type="comparisonPrinted" source="#liebermann">ebd. 12</note>
         <note type="comparedBy" source="#liebermann"><ref target="clause:VIIIAtr_13">VIII Atr 13</ref>; <ref target="clause:ICn_13">I Cn 13</ref></note>
-        <note type="comparedBy" source="#wormald-mel" n="356"><ref target="clause:ICn_13">I Cn 13</ref></note>
-        <note type="comparedBy" source="#wormald-ppmel" n="24"><ref target="clause:ICn_13">I Cn 13–13.1</ref></note>
+        <note type="comparedBy" source="#wormald-mel" n="356"><label>quoted verbatim (bold in Wormald's table)</label> <ref target="clause:ICn_13">I Cn 13</ref> <quote>Table 5.4, I Cn 13: Cn 1018 13:6  VIII Atr 13, VI Atr 20</quote></note>
+        <note type="comparedBy" source="#wormald-ppmel" n="24"><label>parallel versions</label> <ref target="clause:ICn_13">I Cn 13–13.1</ref> <quote>the apparently chronological order of the laws of Æthelred and Cnut as cited above may conceal the stages whereby Wulfstan's ideas evolved</quote></note>
         <note type="liebermannNote" subtype="erklaerung" xml:id="VIAtr_20.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">176</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">aa</hi> nur V Atr Hs. G 2</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">aa</hi> only in V Atr MS G 2</seg></note>
         <note type="editorNote" subtype="endnote" xml:id="VIAtr_20.robnote.n.1" n="1" source="#robertson"><bibl><biblScope unit="page">333</biblScope></bibl><seg type="original" xml:lang="en">Cf. V, 12.</seg></note>
         <note type="editorNote" subtype="footnote" xml:id="VIAtr_20.robnote.fn.3" n="3" source="#robertson"><bibl><biblScope unit="page">96</biblScope></bibl><label>⁊</label><seg type="original" xml:lang="en">Om. D.</seg></note>

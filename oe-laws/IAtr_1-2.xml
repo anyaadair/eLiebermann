@@ -80,10 +80,10 @@
         <note type="comparison" source="#liebermann" n="217"><ref target="clause:IIIAtr_4">III Atr 4</ref></note>
         <note type="comparisonPrinted" source="#liebermann">Vgl. III Atr. 4</note>
         <note type="comparedBy" source="#liebermann"><ref target="clause:IIIAtr_4">III Atr 4</ref>; <ref target="clause:IICn_30-1">II Cn 30.1</ref></note>
-        <note type="comparedBy" source="#wormald-mel" n="321"><ref target="clause:IICn_30-1">II Cn 30.1</ref></note>
-        <note type="comparedBy" source="#whitelock" n="466"><ref target="clause:IICn_30-1">II Cn 30.1</ref></note>
-        <note type="comparedBy" source="#rabin-doml" n="425"><ref target="clause:IICn_30-1">II Cn 30.1</ref></note>
-        <note type="comparedBy" source="#wormald-mel" n="321"><ref target="clause:IICn_30-3b">II Cn 30.3b</ref></note>
+        <note type="comparedBy" source="#wormald-mel" n="321"><label>fuller version of</label> <ref target="clause:IICn_30-1">II Cn 30.1</ref> <quote>I Atr 1:2, 1:5 (II Cn 30:1,3b has phrases one might expect to find there too)</quote></note>
+        <note type="comparedBy" source="#whitelock" n="466"><label>repeats</label> <ref target="clause:IICn_30-1">II Cn 30.1</ref> <quote>This chapter repeats I Ethelred, 1.2 (cf. also III Ethelred, 4), except that Winchester is substituted for Bromdun</quote></note>
+        <note type="comparedBy" source="#rabin-doml" n="425"><label>earlier version</label> <ref target="clause:IICn_30-1">II Cn 30.1</ref> <quote>An earlier version of this clause appears in 1 Æthelred 1.2, with Bromdun cited as the relevant assembly rather than Winchester.</quote></note>
+        <note type="comparedBy" source="#wormald-mel" n="321"><label>fuller version of</label> <ref target="clause:IICn_30-3b">II Cn 30.3b</ref> <quote>I Atr 1:2, 1:5 (II Cn 30:1,3b has phrases one might expect to find there too)</quote></note>
         <note type="editorial">H lacks ‘ne ordal’ after ‘að ne burste’; Liebermann supplies it from II Cn 30.1. Liebermann compares III Atr 4.</note>
         <note type="liebermannNote" subtype="textual" xml:id="IAtr_1-2.lnote.oe.star2" n="**" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">216</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">ergänze</hi> ne ordal <hi rend="italic">aus II Cnut</hi> 30, 1.</seg><seg type="translation" xml:lang="en" source="#claude">supply ne ordal from II Cnut 30, 1.</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IAtr_1-2.lnote.oe.6" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">217</biblScope></bibl><seg type="original" xml:lang="de">ordel <hi rend="italic">MHk</hi></seg><seg type="translation" xml:lang="en" source="#claude">ordel MHk</seg></note>

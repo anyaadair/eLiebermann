@@ -79,7 +79,7 @@
         <note type="comparison" source="#liebermann" n="181"><ref target="clause:VIAs_1-4">VI As 1.4</ref></note>
         <note type="comparisonPrinted" source="#liebermann">Vgl. VI As. 1, 4</note>
         <note type="comparedBy" source="#liebermann"><ref target="clause:Duns_8-1">Duns 8.1</ref></note>
-        <note type="comparedBy" source="#wormald-ppmel" n="76"><ref target="clause:VIAs_1-4">VI As 1.4</ref></note>
+        <note type="comparedBy" source="#wormald-ppmel" n="76"><label>cf.</label> <ref target="clause:VIAs_1-4">VI As 1.4</ref> <quote>VI As 1:4 (and cf. 9)</quote></note>
         <note type="editorial">Liebermann compares VI As 1.4.</note>
         <note type="liebermannNote" subtype="textual" xml:id="VIAs_9.lnote.oe.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">181</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Lond</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="VIAs_9.lnote.oe.15" n="15" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">181</biblScope></bibl><seg type="original" xml:lang="de">re. <hi rend="italic">R;</hi> -dige <hi rend="italic">Or TMHk</hi></seg><seg type="translation" xml:lang="en" source="#claude">re. R; -dige Or TMHk</seg></note>

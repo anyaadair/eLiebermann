@@ -335,13 +335,15 @@ scripts:
     // other Latin versions, to the list of law codes (lawAbb.html).
     let siglumIndex = null;
     let bibliography = [];    // authors and works Liebermann cites (data/bibliography.json), linked in his notes
+    let relTerms = {};        // a scholar's wording of a cross-reference -> one of five terms (data/comparison-terms.json)
     const sigKey = s => s.replace(/[\s.]/g, '');
     const SIGLUM_ALIASES = { 'InstCn': 'In(Cn)' };
     const LATIN_VERSION = /^(Q|Lat|In|Inst\.? ?Cn\.?|Cons\.?(?: ?Cn\.?)?)(?![\w])/;
     function loadSigla() {
         const get = f => fetch(root + 'data/' + f).then(r => r.json()).catch(() => []);
-        return Promise.all([get('manuscripts.json'), get('markLaw.json'), get('bibliography.json')]).then(([ms, law, bib]) => {
+        return Promise.all([get('manuscripts.json'), get('markLaw.json'), get('bibliography.json'), get('comparison-terms.json')]).then(([ms, law, bib, terms]) => {
             bibliography = bib || [];
+            relTerms = terms && !Array.isArray(terms) ? terms : {};
             siglumIndex = {};
             law.forEach(r => { if (r['Gesetze Text']) siglumIndex[sigKey(r['Gesetze Text'])] = 'lawAbb.html#' + encodeURIComponent(r.Anchor); });
             ms.forEach(r => { if (r['Gesetze Text']) siglumIndex[sigKey(r['Gesetze Text'])] = 'msAbb.html#' + encodeURIComponent(r.Anchor); });
@@ -503,78 +505,98 @@ scripts:
         const others = cmpAll.filter(n => srcId(n) !== 'liebermann'), othersBack = backAll.filter(n => srcId(n) !== 'liebermann');
         const scholar = id => (srcs[id] || {}).name || id;
         const childOf = (n, name) => Array.from(n.childNodes).find(c => c.localName === name);
+        // Two parts, each only when it has something: "This clause linked to another" (what each
+        // scholar, Liebermann among them, says at this clause) and "Another clause linked to this"
+        // (what they say at another clause about this one). Each line begins with the scholar's name
+        // (a link to the list below), then one of a few plain terms, read from this clause
+        // (data/comparison-terms.json sorts the scholars' wordings into them; their own wording is
+        // in the term's tooltip), the clauses, the page, and the scholar's words where they say more.
         if (cmp || back || others.length || othersBack.length) {
             const box = el('div', 'clause-compare small');
             box.appendChild(el('h3', 'clause-compare__head', 'Cross-references'));
-            if (cmp) {
-                const p = el('p');
-                p.appendChild(el('strong', null, 'Compare (Liebermann' + (cmp.getAttribute('n') ? ', Gesetze I p. ' + cmp.getAttribute('n') : '') + '): '));
-                const printed = noteOf('comparisonPrinted');
-                if (plainText(cmp)) {
-                    p.appendChild(inline(cmp));
-                    if (printed) p.appendChild(el('span', 'muted', ' — as printed: ' + plainText(printed)));
-                } else if (printed) {
-                    p.appendChild(document.createTextNode(plainText(printed)));
+            const VERBS = {
+                compare: ['compares to', 'compare to'], compareBack: ['compares from', 'compare from'],
+                similar: ['notes it is similar to', 'note it is similar to'], contrast: ['contrasts with', 'contrast with'],
+                source: ['gives as source', 'give as source'], usedIn: ['notes it is used in', 'note it is used in']
+            };
+            const termOf = (label, isBack) => {
+                const t = VERBS[relTerms[label]] ? relTerms[label] : 'compare';
+                if (!isBack) return t;
+                return { source: 'usedIn', usedIn: 'source', compare: 'compareBack' }[t] || t;
+            };
+            // wordings that say no more than the term (or describe the layout of a printed table)
+            const PLAIN = /^(cf\.|compare|see|see also|cross-reference|source|from|parallel|=|echoes?|contrast|similar|resembles|recalls|used in I–II Cnut|recurs in later code|source in V–VIII Æthelred)$|table|roman|bold|parenthes|brackets/i;
+            const usefulQuote = q => q && !/^(Table\b|Kennedy[’']s table)/.test(q);
+            const who = id => {
+                // "Wormald, MEL" reads "Wormald (MEL)" before a verb
+                const a = el(srcs[id] ? 'a' : 'span', 'clause-compare__who', scholar(id).replace(/^([^,]+), (.+)$/, '$1 ($2)'));
+                if (srcs[id]) a.href = '#src-' + id;
+                return a;
+            };
+            const line = (id, term, label, refs, page, quote) => {
+                const p = el('p', 'clause-compare__line');
+                p.appendChild(who(id));
+                const v = el('span', 'clause-compare__term', ' ' + VERBS[term][/ and /.test(scholar(id)) ? 1 : 0] + ': ');
+                if (label) v.title = scholar(id) + '’s wording: ' + label;
+                p.appendChild(v);
+                refs.forEach((r, k) => { if (k) p.appendChild(document.createTextNode(', ')); p.appendChild(r); });
+                if (page) p.appendChild(el('span', 'muted', ' (' + (id === 'liebermann' ? 'Gesetze I, p. ' : 'p. ') + page + ')'));
+                if (usefulQuote(quote)) {
+                    p.appendChild(document.createTextNode(' '));
+                    p.appendChild(el('span', 'clause-compare__quote', '“' + quote + '”'));
+                } else if (label && !PLAIN.test(label)) {
+                    p.appendChild(el('span', 'muted', ' [' + label + ']'));
                 }
-                box.appendChild(p);
-                const inc = noteOf('comparisonIncomplete');
-                if (inc) box.appendChild(el('p', 'muted', plainText(inc)));
-            }
-            // Other scholars: one line per scholar. Links made in the same words on the same page are
-            // given together: relation, clauses, page, then the scholar's words.
-            const bySource = {};
-            others.forEach(n => (bySource[srcId(n)] = bySource[srcId(n)] || []).push(n));
-            Object.entries(bySource).forEach(([id, ns]) => {
-                const groups = [];
-                ns.forEach(n => {
-                    const label = childOf(n, 'label'), quote = childOf(n, 'quote');
-                    const key = [label ? plainText(label) : '', n.getAttribute('n') || '', quote ? plainText(quote) : ''].join('|');
-                    let g = groups.find(x => x.key === key);
-                    if (!g) groups.push(g = { key, label, quote, page: n.getAttribute('n'), notes: [] });
-                    g.notes.push(n);
-                });
-                const p = el('p');
-                p.appendChild(el('strong', null, 'Compare (' + scholar(id) + '): '));
-                groups.forEach((g, i) => {
-                    if (i) p.appendChild(document.createTextNode('; '));
-                    if (g.label) p.appendChild(el('span', 'muted', plainText(g.label) + ' '));
-                    g.notes.forEach((n, j) => {
-                        if (j) p.appendChild(document.createTextNode(', '));
-                        const ref = childOf(n, 'ref');
-                        if (ref) {
-                            const a = el('a', null, plainText(ref));
-                            a.href = 'law.html?id=' + encodeURIComponent((ref.getAttribute('target') || '').replace(/^clause:/, ''));
-                            p.appendChild(a);
-                        } else {
-                            p.appendChild(document.createTextNode(Array.from(n.childNodes).filter(c => c.nodeType === 3).map(c => c.textContent).join('').trim()));
-                        }
+                return p;
+            };
+            const refNode = n => {
+                const ref = childOf(n, 'ref');
+                if (!ref) return document.createTextNode(Array.from(n.childNodes).filter(c => c.nodeType === 3).map(c => c.textContent).join('').trim());
+                const a = el('a', null, plainText(ref));
+                a.href = 'law.html?id=' + encodeURIComponent((ref.getAttribute('target') || '').replace(/^clause:/, ''));
+                return a;
+            };
+            // one scholar's notes: those with the same term, page and words go on one line
+            const lines = (ns, isBack) => {
+                const out = [];
+                const bySource = {};
+                ns.forEach(n => (bySource[srcId(n)] = bySource[srcId(n)] || []).push(n));
+                Object.entries(bySource).forEach(([id, list]) => {
+                    const groups = [];
+                    list.forEach(n => {
+                        const label = childOf(n, 'label') ? plainText(childOf(n, 'label')) : '';
+                        const quote = childOf(n, 'quote') ? plainText(childOf(n, 'quote')) : '';
+                        const term = termOf(label, isBack);
+                        // lines that would read the same are one line
+                        const key = [term, PLAIN.test(label) ? '' : label, n.getAttribute('n') || '', usefulQuote(quote) ? quote : ''].join('|');
+                        let g = groups.find(x => x.key === key);
+                        if (!g) groups.push(g = { key, term, label, quote, page: n.getAttribute('n'), refs: [] });
+                        g.refs.push(refNode(n));
                     });
-                    if (g.page) p.appendChild(el('span', 'muted', ' (p. ' + g.page + ')'));
-                    if (g.quote) {
-                        p.appendChild(document.createTextNode(' '));
-                        p.appendChild(el('span', 'clause-compare__quote', '“' + plainText(g.quote) + '”'));
-                    }
+                    groups.forEach(g => out.push(line(id, g.term, g.label, g.refs, g.page, g.quote)));
                 });
-                box.appendChild(p);
-            });
-            if (back) {
-                const p = el('p');
-                p.appendChild(el('strong', null, 'Liebermann compares this clause at: '));
-                p.appendChild(inline(back));
-                box.appendChild(p);
+                return out;
+            };
+            const part = (title, ps) => {
+                if (!ps.length) return;
+                box.appendChild(el('p', 'clause-compare__sub', title));
+                ps.forEach(p => box.appendChild(p));
+            };
+            // Liebermann's own margin note ("Vgl. …"): its clauses, as he gives them
+            const liebOut = [];
+            if (cmp) {
+                const printed = noteOf('comparisonPrinted');
+                const refs = [];
+                if (plainText(cmp)) { const sp = el('span'); sp.appendChild(inline(cmp)); refs.push(sp); }
+                else if (printed) refs.push(document.createTextNode(plainText(printed)));
+                liebOut.push(line('liebermann', 'compare', '', refs, cmp.getAttribute('n'), ''));
+                const inc = noteOf('comparisonIncomplete');
+                if (inc) liebOut.push(el('p', 'muted', plainText(inc)));
             }
-            const backBySource = {};
-            othersBack.forEach(n => (backBySource[srcId(n)] = backBySource[srcId(n)] || []).push(n));
-            Object.entries(backBySource).forEach(([id, ns]) => {
-                const p = el('p');
-                p.appendChild(el('strong', null, 'Compared with this clause (' + scholar(id) + '): '));
-                ns.forEach((n, i) => {
-                    if (i) p.appendChild(document.createTextNode('; '));
-                    p.appendChild(inline(n));
-                    if (n.getAttribute('n')) p.appendChild(el('span', 'muted', ' (p. ' + n.getAttribute('n') + ')'));
-                });
-                box.appendChild(p);
-            });
+            part('This clause linked to another', liebOut.concat(lines(others, false)));
+            const liebBack = [];
+            if (back) { const sp = el('span'); sp.appendChild(inline(back)); liebBack.push(line('liebermann', 'compareBack', '', [sp], '', '')); }
+            part('Another clause linked to this', liebBack.concat(lines(othersBack, true)));
             wrap.appendChild(box);
         }
         // The clause notes (<note type="editorial">, spreadsheet column AI) are kept in the files but not

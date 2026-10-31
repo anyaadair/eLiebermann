@@ -77,10 +77,10 @@
         <note type="comparison" source="#liebermann" n="248"><ref target="clause:VAtr_9">V Atr 9</ref></note>
         <note type="comparisonPrinted" source="#liebermann">ebd. 9</note>
         <note type="comparedBy" source="#liebermann"><ref target="clause:VIIIAtr_30">VIII Atr 30</ref></note>
-        <note type="comparedBy" source="#wormald-mel" n="340"><ref target="clause:VAtr_9">V Atr 9–9.2</ref></note>
-        <note type="comparedBy" source="#wormald-mel" n="342"><ref target="clause:VIIIAtr_26">VIII Atr 26–30</ref></note>
-        <note type="comparedBy" source="#kennedy" n="59"><ref target="clause:Cn-1018_part-021">Cn 1018 11–11.2</ref></note>
-        <note type="comparedBy" source="#wormald-mel" n="397"><ref target="clause:Northu_35">Northu 35</ref></note>
+        <note type="comparedBy" source="#wormald-mel" n="340"><label>parallel (VI version)</label> <ref target="clause:VAtr_9">V Atr 9–9.2</ref> <quote>n. 350: V Atr 9–9.2 (VI 5.1, 5.3–4)</quote></note>
+        <note type="comparedBy" source="#wormald-mel" n="342"><label>cf. (principle restated)</label> <ref target="clause:VIIIAtr_26">VIII Atr 26–30</ref> <quote>the principle was then restated (n. 365: VIII Atr 28, and 26 – 27:1, 29 – 30; cf. V Atr 9 – 9:2 (VI 5:1-4, with new matter))</quote></note>
+        <note type="comparedBy" source="#kennedy" n="59"><label>source in V–VIII Æthelred</label> <ref target="clause:Cn-1018_part-021">Cn 1018 11–11.2</ref> <quote>Kennedy’s table: VI Æthelred 2.1, VI Æthelred 2.2, VI Æthelred 5, VI Æthelred 5.1, VI Æthelred 5.3 | D 11–11.2 | I Cnut 6–6.2a</quote></note>
+        <note type="comparedBy" source="#wormald-mel" n="397"><label>contrast</label> <ref target="clause:Northu_35">Northu 35</ref> <quote>Northu. 35; compare (e.g.) VI Atr 5:1-2 ... where it is an aggravation of an already serious offence that priests have more than one wife</quote></note>
         <note type="liebermannNote" subtype="textual" xml:id="VIAtr_5-1.lnote.oe.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">248</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">spät geändert</hi> hy</seg><seg type="translation" xml:lang="en" source="#claude">altered late to hy</seg></note>
         <note type="editorNote" subtype="endnote" xml:id="VIAtr_5-1.robnote.n.1" n="1" source="#robertson"><bibl><biblScope unit="page">332</biblScope></bibl><seg type="original" xml:lang="en">Cf. V, 9.</seg></note>
       </div>

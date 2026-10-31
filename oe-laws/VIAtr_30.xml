@@ -78,9 +78,9 @@
         <note type="comparison" source="#liebermann" n="255"><ref target="clause:VAtr_26">V Atr 26</ref></note>
         <note type="comparisonPrinted" source="#liebermann">ebd. 26</note>
         <note type="comparedBy" source="#liebermann"><ref target="clause:ICn_19-3">I Cn 19.3</ref></note>
-        <note type="comparedBy" source="#wormald-mel" n="340"><ref target="clause:VAtr_26">V Atr 26</ref></note>
-        <note type="comparedBy" source="#kennedy" n="59"><ref target="clause:Cn-1018_part-054">Cn 1018 19</ref></note>
-        <note type="comparedBy" source="#wormald-mel" n="357"><ref target="clause:ICn_19-3">I Cn 19.3</ref></note>
+        <note type="comparedBy" source="#wormald-mel" n="340"><label>parallel (VI version)</label> <ref target="clause:VAtr_26">V Atr 26</ref> <quote>n. 350: V Atr 26 (VI 30)</quote></note>
+        <note type="comparedBy" source="#kennedy" n="59"><label>source in V–VIII Æthelred</label> <ref target="clause:Cn-1018_part-054">Cn 1018 19</ref> <quote>Kennedy’s table: VI Æthelred 28.1, VI Æthelred 30 | D 19 | I Cnut 19.2, I Cnut 19.3</quote></note>
+        <note type="comparedBy" source="#wormald-mel" n="357"><label>source (roman)</label> <ref target="clause:ICn_19-3">I Cn 19.3</ref> <quote>Table 5.4, I Cn 19:3: Cn 1018 19  VI Atr 30</quote></note>
         <note type="liebermannNote" subtype="erklaerung" xml:id="VIAtr_30.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">176</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Benutzt durch I Cn 19, 3 und <hi rend="italic">Hom. n</hi>. Wulfstan 271. D schweift hier zu Cnuts Texte hin</seg><seg type="translation" xml:lang="en" source="#claude">Used by I Cn 19, 3 and <hi rend="italic">Hom. n</hi>. Wulfstan 271. D strays here towards Cnut’s text</seg></note>
         <note type="editorNote" subtype="endnote" xml:id="VIAtr_30.robnote.n.1" n="1" source="#robertson"><bibl><biblScope unit="page">334</biblScope></bibl><seg type="original" xml:lang="en">Cf. V, 26; I Cn. 19, 3.</seg></note>
         <note type="editorNote" subtype="footnote" xml:id="VIAtr_30.robnote.fn.2" n="2" source="#robertson"><bibl><biblScope unit="page">100</biblScope></bibl><label>Ac</label><seg type="original" xml:lang="en">⁊ D.</seg></note>
