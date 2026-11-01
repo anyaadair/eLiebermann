@@ -135,7 +135,10 @@ class Clauses:
             if c['id'] not in self.citation:
                 self.ids[c['anchor']].append(c['id'])
                 self.citation[c['id']] = c['citation']
-            keys = [k[len(c['anchor']) + 1:] for k in c['citationKeys']]
+            # a key begins with the anchor ("IAs 2"), or with the code as the database spells it
+            # ("Wl art Frz 1", where Liebermann's abbreviation is Wl art Fz, anchor WlArtFz)
+            keys = [k[len(c['code']) + 1:] if c.get('code') and k.startswith(c['code'] + ' ') and not k.startswith(c['anchor'] + ' ')
+                    else k[len(c['anchor']) + 1:] for k in c['citationKeys']]
             if re.match(r'^[A-Za-z]', c['clause']) and not c['clause'].startswith('Rb '):
                 # A clause numbered after a word, such as Alfred's Introduction
                 # ("Af El. 49,1") or a prologue ("XAtr Prol. 1"): the catalogue

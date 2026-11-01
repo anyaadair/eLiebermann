@@ -19,6 +19,7 @@
     <encodingDesc>
       <listPrefixDef>
         <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
         <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
         <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
       </listPrefixDef>
@@ -34,8 +35,8 @@
           <orth>hors</orth>
         </form>
         <dictScrap type="liebermann"><lbl type="language">F</lbl> <hi rend="bold">hors</hi> <hi rend="italic">ausserhalb;</hi> de Engleterre <ref type="lawCode" target="law:WlArtFz">Wl art Fz</ref> 2; del pais 9</dictScrap>
-        <xr type="lawCode"><ref target="law:WlArtFz">Wl art Fz 2</ref></xr>
-        <xr type="lawCode"><ref target="law:WlArtFz">Wl art Fz 9</ref></xr>
+        <xr type="lawCode"><ref target="clause:Wl-art-Frz_2">Wl art Fz 2</ref></xr>
+        <xr type="lawCode"><ref target="clause:Wl-art-Frz_9">Wl art Fz 9</ref></xr>
       </entry>
     </body>
   </text>
