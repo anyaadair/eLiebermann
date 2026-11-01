@@ -51,6 +51,7 @@
     <revisionDesc>
       <change when="2026-10-19">Generated from row 2264 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 476.</change>
+      <change when="2026-11-01">Manuscript sigla that Liebermann prints run together in his notes (“MHkBr”, “HB”) spaced for reading (“M Hk Br”, “H B”).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -65,7 +66,7 @@
         <note type="comparison" source="#liebermann" n="476">Isidor, Sent. III 52.15f.</note>
         <note type="comparisonPrinted" source="#liebermann">52, 15 f.</note>
         <note type="editorial">U: translator unrecorded: check; Isidore, Sent. III 52.15 f.</note>
-        <note type="liebermannNote" subtype="textual" xml:id="Iudex_14.lnote.oe.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">476</biblScope></bibl><seg type="original" xml:lang="de">aut <hi rend="italic">RT</hi></seg><seg type="translation" xml:lang="en" source="#claude">aut <hi rend="italic">RT</hi></seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Iudex_14.lnote.oe.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">476</biblScope></bibl><seg type="original" xml:lang="de">aut <hi rend="italic">R T</hi></seg><seg type="translation" xml:lang="en" source="#claude">aut <hi rend="italic">R T</hi></seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Iudex_14.lnote.oe.9" n="9" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">476</biblScope></bibl><seg type="original" xml:lang="de">percipit <hi rend="italic">Br-Ti</hi></seg><seg type="translation" xml:lang="en" source="#claude">percipit <hi rend="italic">Br-Ti</hi></seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Iudex_14.lnote.oe.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">476</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">so</hi></seg><seg type="translation" xml:lang="en" source="#claude">sic</seg></note>
       </div>

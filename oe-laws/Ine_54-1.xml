@@ -67,6 +67,7 @@
       <change when="2026-10-19">Generated from row 629 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text checked and corrected against <title>Die Gesetze der Angelsachsen</title> I, p. 114.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS B added from Gesetze I, p. 114.</change>
+      <change when="2026-11-01">Manuscript sigla that Liebermann prints run together in his notes (“MHkBr”, “HB”) spaced for reading (“M Hk Br”, “H B”).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -88,7 +89,7 @@
         <note type="comparison" source="#jurasinski-and-oliver" n="419"><label>see</label> <ref target="clause:Ine_32">Ine 32</ref> <quote>The value of a Welsh slave was 50 shillings (see §32 and note)</quote></note>
         <note type="comparedBy" source="#jurasinski-and-oliver" n="313"><label>contrast</label> <ref target="clause:Af_18-1">Af 18.1</ref> <quote>Ine §57.1 allows a slave to be given as part of a wergild payment.</quote></note>
         <note type="liebermannNote" subtype="textual" xml:id="Ine_54-1.lnote.oe.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">115</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">aus Lond; fehlt übrigen</hi></seg><seg type="translation" xml:lang="en" source="#claude">from Lond; lacking in the others</seg></note>
-        <note type="liebermannNote" subtype="textual" xml:id="Ine_54-1.lnote.oe.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">115</biblScope></bibl><seg type="original" xml:lang="de">dare <hi rend="italic">MHkBr</hi></seg><seg type="translation" xml:lang="en" source="#claude">dare MHkBr</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_54-1.lnote.oe.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">115</biblScope></bibl><seg type="original" xml:lang="de">dare <hi rend="italic">M Hk Br</hi></seg><seg type="translation" xml:lang="en" source="#claude">dare M Hk Br</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Ine_54-1.lnote.oe.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">115</biblScope></bibl><seg type="original" xml:lang="de">s. i. <hi rend="italic">Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">s. i. Lond</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Ine_54-1.lnote.oe.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">115</biblScope></bibl><seg type="original" xml:lang="de">quibuscumque hominibus <hi rend="italic">Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">quibuscumque hominibus Lond</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Ine_54-1.lnote.oe.2-2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">114</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">übergeschr.</hi></seg><seg type="translation" xml:lang="en" source="#claude">written above</seg></note>

@@ -52,6 +52,7 @@
       <change when="2026-10-19">Generated from row 2263 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 476.</change>
       <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 476: “Yfelra gerefena þeaw ýs, þæt hí nymað ælcwiht ⁊ uneaðe hí þam þearfiendum lytles hwæt læfa[ð].” → “Yfelra gerefena þeaw ýs, þæt hí nymað ælcwiht ⁊ uneaðe hí þam þearfiendum lytles hwæt læfa[ð]. (expanded letters in italics: æt)”.</change>
+      <change when="2026-11-01">Manuscript sigla that Liebermann prints run together in his notes (“MHkBr”, “HB”) spaced for reading (“M Hk Br”, “H B”).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -64,7 +65,7 @@
         <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">It is the custom of bad reeves that they take away everything and scarcely leave a little to the needy [tenants of their district].</ab>
         <ab type="translation" xml:lang="en" source="#unattributed" corresp="#wit-g-a">It is the custom of evil officials that they take everything and unwillingly leave little for the poor</ab>
         <note type="editorial">U: translator unrecorded: check; The ‘ð’ of ‘læfa[ð]’ was cut off in binding.</note>
-        <note type="liebermannNote" subtype="textual" xml:id="Iudex_13.lnote.oe.6" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">476</biblScope></bibl><seg type="original" xml:lang="de">-arium <hi rend="italic">TMBr</hi></seg><seg type="translation" xml:lang="en" source="#claude">-arium <hi rend="italic">TMBr</hi></seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Iudex_13.lnote.oe.6" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">476</biblScope></bibl><seg type="original" xml:lang="de">-arium <hi rend="italic">T M Br</hi></seg><seg type="translation" xml:lang="en" source="#claude">-arium <hi rend="italic">T M Br</hi></seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Iudex_13.lnote.oe.7" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">476</biblScope></bibl><seg type="original" xml:lang="de">-ni <hi rend="italic">Br</hi></seg><seg type="translation" xml:lang="en" source="#claude">-ni <hi rend="italic">Br</hi></seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Iudex_13.lnote.oe.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">476</biblScope></bibl><seg type="original" xml:lang="de">ð <hi rend="italic">beim Binden durchschnitten</hi></seg><seg type="translation" xml:lang="en" source="#claude">ð cut through in binding</seg></note>
         <note type="liebermannNote" subtype="translationFootnote" xml:id="Iudex_13.lnote.de1.b" n="b" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">476</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">gleich</hi> deman 8. 10</seg><seg type="translation" xml:lang="en" source="#claude">equivalent to deman 8. 10</seg></note>

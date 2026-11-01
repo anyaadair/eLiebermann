@@ -39,6 +39,7 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-19">Generated from row 3731 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-11-01">Manuscript sigla that Liebermann prints run together in his notes (“MHkBr”, “HB”) spaced for reading (“M Hk Br”, “H B”).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -49,9 +50,9 @@
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 545 (two independent readings of the page images, differences settled against the page)</note>
         <note type="liebermannNote" subtype="textual" xml:id="QuadrII_8d.lnote.oe.ff" n="ff" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">545</biblScope></bibl><seg type="original" xml:lang="de">Staat und Kirche</seg><seg type="translation" xml:lang="en" source="#claude">State and Church</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="QuadrII_8d.lnote.oe.9" n="9" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">545</biblScope></bibl><seg type="original" xml:lang="de">-rus <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">-rus Hk</seg></note>
-        <note type="liebermannNote" subtype="textual" xml:id="QuadrII_8d.lnote.oe.10" n="10" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">545</biblScope></bibl><seg type="original" xml:lang="de">Salebir. <hi rend="italic">TM</hi></seg><seg type="translation" xml:lang="en" source="#claude">Salebir. TM</seg></note>
-        <note type="liebermannNote" subtype="textual" xml:id="QuadrII_8d.lnote.oe.11" n="11" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">545</biblScope></bibl><seg type="original" xml:lang="de">benedictionem <hi rend="italic">MHk</hi></seg><seg type="translation" xml:lang="en" source="#claude">benedictionem MHk</seg></note>
-        <note type="liebermannNote" subtype="textual" xml:id="QuadrII_8d.lnote.oe.12" n="12" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">545</biblScope></bibl><seg type="original" xml:lang="de">redditum <hi rend="italic">MHk</hi></seg><seg type="translation" xml:lang="en" source="#claude">redditum MHk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="QuadrII_8d.lnote.oe.10" n="10" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">545</biblScope></bibl><seg type="original" xml:lang="de">Salebir. <hi rend="italic">T M</hi></seg><seg type="translation" xml:lang="en" source="#claude">Salebir. T M</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="QuadrII_8d.lnote.oe.11" n="11" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">545</biblScope></bibl><seg type="original" xml:lang="de">benedictionem <hi rend="italic">M Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">benedictionem M Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="QuadrII_8d.lnote.oe.12" n="12" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">545</biblScope></bibl><seg type="original" xml:lang="de">redditum <hi rend="italic">M Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">redditum M Hk</seg></note>
       </div>
     </body>
   </text>

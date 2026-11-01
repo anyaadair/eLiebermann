@@ -59,6 +59,7 @@
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 226.</change>
       <change when="2026-10" type="checked">Robertson’s translation checked and corrected against her edition, p. 63.</change>
       <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 226: “[þæt]” → “∅”.</change>
+      <change when="2026-11-01">Manuscript sigla that Liebermann prints run together in his notes (“MHkBr”, “HB”) spaced for reading (“M Hk Br”, “H B”).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -75,7 +76,7 @@
         <note type="editorial">‘þæt’ is supplied by editors.</note>
         <note type="liebermannNote" subtype="textual" xml:id="IIAtr_9-1.lnote.oe.6" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">226</biblScope></bibl><seg type="original" xml:lang="de">-oueat <hi rend="italic">R</hi></seg><seg type="translation" xml:lang="en" source="#claude">-oueat R</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IIAtr_9-1.lnote.oe.7" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">226</biblScope></bibl><seg type="original" xml:lang="de">eum et <hi rend="italic">T</hi></seg><seg type="translation" xml:lang="en" source="#claude">eum et T</seg></note>
-        <note type="liebermannNote" subtype="textual" xml:id="IIAtr_9-1.lnote.oe.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">226</biblScope></bibl><seg type="original" xml:lang="de">iuste <hi rend="italic">fügt zu MHkBr</hi></seg><seg type="translation" xml:lang="en" source="#claude">iuste added by MHkBr</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIAtr_9-1.lnote.oe.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">226</biblScope></bibl><seg type="original" xml:lang="de">iuste <hi rend="italic">fügt zu M Hk Br</hi></seg><seg type="translation" xml:lang="en" source="#claude">iuste added by M Hk Br</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IIAtr_9-1.lnote.oe.9" n="9" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">226</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">verbessert aus</hi> -rit <hi rend="italic">R</hi></seg><seg type="translation" xml:lang="en" source="#claude">corrected from -rit R</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IIAtr_9-1.lnote.oe.11" n="11" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">226</biblScope></bibl><seg type="original" xml:lang="de">Parige, <hi rend="italic">am Rande: ‘al.</hi> parige <hi rend="italic">et rectius quidem’ Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">Parige, in the margin: ‘al. parige et rectius quidem’ Ld</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IIAtr_9-1.lnote.oe.12" n="12" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">226</biblScope></bibl><seg type="original" xml:lang="de">agen <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">agen Ld</seg></note>

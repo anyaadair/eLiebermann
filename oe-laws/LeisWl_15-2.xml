@@ -50,6 +50,7 @@
       <change when="2026-10" type="checked">Liebermann’s text of MS Hk added from Gesetze I, p. 502–503.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS I added from Gesetze I, p. 502–503.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS L added from Gesetze I, p. 502–503.</change>
+      <change when="2026-11-01">Manuscript sigla that Liebermann prints run together in his notes (“MHkBr”, “HB”) spaced for reading (“M Hk Br”, “H B”).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -64,7 +65,7 @@
         <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">15, 2. And if he cannot obtain these [36], he shall proceed to the threefold [iron] ordeal, just as he should have [proceeded] to the threefold oath.</ab>
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-hk"><pb n="261" ed="#robertson"/>And if he cannot find them, he shall go to the triple ordeal, just as he had [to produce] a triple oath.</ab>
         <note type="editorial">Added October 2026 from Robertson pp. 260–261 (text and translation); Liebermann’s text and German translation added from Gesetze I p. 502–503, October 2026 (two independent readings of the page images)</note>
-        <note type="liebermannNote" subtype="textual" xml:id="LeisWl_15-2.lnote.oe.f" n="f" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">502</biblScope></bibl><seg type="original" xml:lang="de">alt <hi rend="italic">bessert BA.</hi></seg><seg type="translation" xml:lang="en" source="#claude">alt emended by BA.</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="LeisWl_15-2.lnote.oe.f" n="f" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">502</biblScope></bibl><seg type="original" xml:lang="de">alt <hi rend="italic">bessert B A.</hi></seg><seg type="translation" xml:lang="en" source="#claude">alt emended by B A.</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="LeisWl_15-2.lnote.oe.24" n="24" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">502</biblScope></bibl><seg type="original" xml:lang="de">auer <hi rend="italic">Isp</hi></seg><seg type="translation" xml:lang="en" source="#claude">auer <hi rend="italic">Isp</hi></seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="LeisWl_15-2.lnote.oe.25" n="25" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">502</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Im</hi></seg><seg type="translation" xml:lang="en" source="#claude">omitted in Im</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="LeisWl_15-2.lnote.oe.26" n="26" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">502</biblScope></bibl><seg type="original" xml:lang="de">dubles <hi rend="italic">Io Isp</hi></seg><seg type="translation" xml:lang="en" source="#claude">dubles <hi rend="italic">Io Isp</hi></seg></note>

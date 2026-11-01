@@ -39,6 +39,7 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-19">Generated from row 3732 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-11-01">Manuscript sigla that Liebermann prints run together in his notes (“MHkBr”, “HB”) spaced for reading (“M Hk Br”, “H B”).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -52,7 +53,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="QuadrII_8-1.lnote.oe.13" n="13" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">545</biblScope></bibl><seg type="original" xml:lang="de">XIX. <hi rend="italic">roth am Rande Hk; Br</hi> 1000 <hi rend="italic">zieht den Quadr. hier nur aus</hi></seg><seg type="translation" xml:lang="en" source="#claude">XIX. in red in the margin Hk; Br 1000 merely excerpts the Quadr. here</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="QuadrII_8-1.lnote.oe.14" n="14" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">545</biblScope></bibl><seg type="original" xml:lang="de">reddi. <hi rend="italic">T</hi></seg><seg type="translation" xml:lang="en" source="#claude">reddi. T</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="QuadrII_8-1.lnote.oe.15" n="15" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">545</biblScope></bibl><seg type="original" xml:lang="de">Lund. <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">Lund. Hk</seg></note>
-        <note type="liebermannNote" subtype="textual" xml:id="QuadrII_8-1.lnote.oe.16" n="16" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">545</biblScope></bibl><seg type="original" xml:lang="de">publicæ <hi rend="italic">MHk</hi></seg><seg type="translation" xml:lang="en" source="#claude">publicæ MHk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="QuadrII_8-1.lnote.oe.16" n="16" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">545</biblScope></bibl><seg type="original" xml:lang="de">publicæ <hi rend="italic">M Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">publicæ M Hk</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="QuadrII_8-1.lnote.oe._" n="-" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">312</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Cölibat 6; Vogt 7f; mündig 14; Päderastie 2</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf. Gl</hi> Cölibat 6; Vogt 7f; mündig 14; Päderastie 2</seg></note>
       </div>
     </body>

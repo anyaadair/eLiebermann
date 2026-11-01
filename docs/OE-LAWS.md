@@ -143,6 +143,7 @@ Liebermann keeps his predecessors' clause numbers even where he prints the claus
 Things added to the files after they were built from the spreadsheet, for the record.
 
 - **EGu 10–11, the two forms of the Quadripartitus** (Gesetze I, 133–135). Liebermann prints the Latin in two columns: *Lond (frühere Quadr.-Form)* and *R (spätere Quadr.-Form)*, the two forms joining again at "de patria" in 11. The spreadsheet had only Lond. Added October 2026 (PR #106): R's text of 10 and 11 as a second Q text (witness `wit-q-r`, shown as "Q (R)"; Lond is `wit-q-lond`, "Q (Lond)"), and Liebermann's notes 34–37 (p. 133) and 5–10 (p. 135) to them. In 11 the print has the note number 9 twice (*uel⁹ mortem* and *compareant⁹*); both point to note 9.
+- **Manuscript sigla spaced** (November 2026, PRs #143 and the one after). Liebermann prints groups of sigla in his notes run together (“MHkBr”, “HRlDi”, “HB”); they are spaced (“M Hk Br”, “H Rl Di”, “H B”) so each manuscript can be read, by `tools/space-sigla.py`, which takes the sigla from `data/manuscripts.json` and skips forms that only look like sigla (MS, EHR, BT, Roman numerals, OHG, ME…). Only the notes are changed, never the texts; each file records it in its history. Doubtful forms were left as printed: QC, EF, AC, AIC, BC, DG, AG, GG (II–III Eg, V Atr, I–II Cn), the AB-Klasse, and TO in Leis Wl.
 - Jurasinski's cross-references (2010), added with `tools/add-cross-references.py` from `data/cross-references/jurasinski-sanctuary.csv` (PR #99).
 
 ## Linking to dictionary entries

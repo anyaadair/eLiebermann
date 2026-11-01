@@ -39,6 +39,7 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-19">Generated from row 3724 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-11-01">Manuscript sigla that Liebermann prints run together in his notes (“MHkBr”, “HB”) spaced for reading (“M Hk Br”, “H B”).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -49,7 +50,7 @@
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 544 (two independent readings of the page images, differences settled against the page)</note>
         <note type="liebermannNote" subtype="textual" xml:id="QuadrII_5.lnote.oe.d" n="d" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">544</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">aus Bromton ed. Twysden</hi> Hist. Angl. SS. X 999 <hi rend="italic">bei Rymer</hi> Foed. I 8; <hi rend="italic">vgl. Schmitz</hi> Engl. Investiturstreit 18</seg><seg type="translation" xml:lang="en" source="#claude">from Bromton ed. Twysden Hist. Angl. SS. X 999, in Rymer Foed. I 8; cf. Schmitz Engl. Investiturstreit 18</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="QuadrII_5.lnote.oe.12" n="12" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">544</biblScope></bibl><seg type="original" xml:lang="de">Pascali <hi rend="italic">T</hi></seg><seg type="translation" xml:lang="en" source="#claude">Pascali <hi rend="italic">T</hi></seg></note>
-        <note type="liebermannNote" subtype="textual" xml:id="QuadrII_5.lnote.oe.18" n="18" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">544</biblScope></bibl><seg type="original" xml:lang="de">uenerabili <hi rend="italic">MBr</hi></seg><seg type="translation" xml:lang="en" source="#claude">uenerabili <hi rend="italic">MBr</hi></seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="QuadrII_5.lnote.oe.18" n="18" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">544</biblScope></bibl><seg type="original" xml:lang="de">uenerabili <hi rend="italic">M Br</hi></seg><seg type="translation" xml:lang="en" source="#claude">uenerabili <hi rend="italic">M Br</hi></seg></note>
       </div>
     </body>
   </text>

@@ -53,6 +53,7 @@
     <revisionDesc>
       <change when="2026-10-19">Generated from row 1139 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text added from <title>Die Gesetze der Angelsachsen</title> I, p. 236.</change>
+      <change when="2026-11-01">Manuscript sigla that Liebermann prints run together in his notes (“MHkBr”, “HB”) spaced for reading (“M Hk Br”, “H B”).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -70,7 +71,7 @@
         <note type="comparedBy" source="#wormald-mel" n="358"><label>source (roman)</label> <ref target="clause:IICn_8-2">II Cn 8.2</ref> <quote>Table 5.4, II Cn 8:2: IV Atr 7:3</quote></note>
         <note type="editorial">Liebermann compares IV Atr 5.2.</note>
         <note type="liebermannNote" subtype="textual" xml:id="IVAtr_7-3.lnote.oe.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">236</biblScope></bibl><seg type="original" xml:lang="de">sunt <hi rend="italic">R</hi></seg><seg type="translation" xml:lang="en" source="#claude">sunt R</seg></note>
-        <note type="liebermannNote" subtype="textual" xml:id="IVAtr_7-3.lnote.oe.9" n="9" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">236</biblScope></bibl><seg type="original" xml:lang="de">-sit <hi rend="italic">RT</hi></seg><seg type="translation" xml:lang="en" source="#claude">-sit RT</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IVAtr_7-3.lnote.oe.9" n="9" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">236</biblScope></bibl><seg type="original" xml:lang="de">-sit <hi rend="italic">R T</hi></seg><seg type="translation" xml:lang="en" source="#claude">-sit R T</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IVAtr_7-3.lnote.oe.10" n="10" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">236</biblScope></bibl><seg type="original" xml:lang="de">cir. <hi rend="italic">R;</hi> syrað <hi rend="italic">MHk;</hi> sirath <hi rend="italic">Br</hi></seg><seg type="translation" xml:lang="en" source="#claude">cir. R; syrað MHk; sirath Br</seg></note>
         <note type="liebermannNote" subtype="erklaerung" xml:id="IVAtr_7-3.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">166</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">Hieraus II Cn 8, 2, allgemeiner: <hi rend="italic">gerefan</hi></seg><seg type="translation" xml:lang="en" source="#claude">From this II Cn 8, 2, more generally: <hi rend="italic">gerefan</hi></seg></note>
         <note type="liebermannNote" subtype="erklaerung" xml:id="IVAtr_7-3.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">166</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">þæs ilcan domes weorðe</hi> las Original. <hi rend="italic">Vgl. Gl</hi> Mitwissen 8; Amtsvergehen 4; Begünstigung 8c</seg><seg type="translation" xml:lang="en" source="#claude">The original read <hi rend="italic">þæs ilcan domes weorðe</hi>. <hi rend="italic">Cf. Gl</hi> Mitwissen 8; Amtsvergehen 4; Begünstigung 8c</seg></note>

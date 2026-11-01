@@ -55,6 +55,7 @@
       <change when="2026-10-19">Generated from row 2030 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 387.</change>
       <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 387: “7” → “⁊”.</change>
+      <change when="2026-11-01">Manuscript sigla that Liebermann prints run together in his notes (“MHkBr”, “HB”) spaced for reading (“M Hk Br”, “H B”).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -69,7 +70,7 @@
         <ab type="translation" xml:lang="en" source="#attenborough" corresp="#wit-h">and no other words shall be spoken in the church, except that God be earnestly prayed to make clear the whole truth.</ab>
         <note type="liebermannNote" subtype="textual" xml:id="Ordal_4-3.lnote.oe.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">387</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Lond</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Ordal_4-3.lnote.oe.7" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">387</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vor der Klammer Lond; eingeklammertes übr.</hi></seg><seg type="translation" xml:lang="en" source="#claude">what precedes the bracket Lond; what is bracketed the rest</seg></note>
-        <note type="liebermannNote" subtype="textual" xml:id="Ordal_4-3.lnote.oe.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">387</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt MHk</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in MHk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ordal_4-3.lnote.oe.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">387</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt M Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in M Hk</seg></note>
         <note type="liebermannNote" subtype="erklaerung" xml:id="Ordal_4-3.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">227</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">In der Kirche; grundlos figürlich: ‘trete dazwischen’ Schmid.—Die Wahrheit zu offenbaren, bittet Gott (<hi rend="italic">s. d. Gl</hi> 6b) das Ritual Iud Dei XII 17, 1. XVI 7</seg><seg type="translation" xml:lang="en" source="#claude">In the church; without grounds taken figuratively, ‘intervene’, by Schmid.—The ritual Iud Dei XII 17, 1. XVI 7 asks God (<hi rend="italic">see</hi> that word in <hi rend="italic">Gl</hi> 6b) to reveal the truth</seg></note>
       </div>
     </body>

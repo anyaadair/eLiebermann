@@ -53,6 +53,7 @@
     <revisionDesc>
       <change when="2026-10-19">Generated from row 1128 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text added from <title>Die Gesetze der Angelsachsen</title> I, p. 234.</change>
+      <change when="2026-11-01">Manuscript sigla that Liebermann prints run together in his notes (“MHkBr”, “HB”) spaced for reading (“M Hk Br”, “H B”).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -67,7 +68,7 @@
         <note type="comparison" source="#liebermann" n="235"><ref target="clause:Af_42">Af 42</ref></note>
         <note type="comparisonPrinted" source="#liebermann">Vgl. Af. 42</note>
         <note type="editorial">Liebermann compares Af 42.</note>
-        <note type="liebermannNote" subtype="textual" xml:id="IVAtr_4-1.lnote.oe.44" n="44" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">234</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt MHkBr</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in MHkBr</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IVAtr_4-1.lnote.oe.44" n="44" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">234</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt M Hk Br</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in M Hk Br</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IVAtr_4-1.lnote.oe.45" n="45" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">234</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt T</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in T</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IVAtr_4-1.lnote.oe.46" n="46" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">234</biblScope></bibl><seg type="original" xml:lang="de">-eche <hi rend="italic">M</hi></seg><seg type="translation" xml:lang="en" source="#claude">-eche M</seg></note>
         <note type="liebermannNote" subtype="erklaerung" xml:id="IVAtr_4-1.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">165</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Original hatte <hi rend="italic">gif he feohte, ærþamþe he him rihtes bidde</hi> laut Af 42. II As 3. <hi rend="italic">Vgl. Gl</hi> Selbsthilfe 2; Blutrache 14d</seg><seg type="translation" xml:lang="en" source="#claude">The original had <hi rend="italic">gif he feohte, ærþamþe he him rihtes bidde</hi>, to judge by Af 42. II As 3. <hi rend="italic">Cf. Gl</hi> Selbsthilfe 2; Blutrache 14d</seg></note>
