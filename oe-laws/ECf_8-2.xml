@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECf_8-2">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf 8.2</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECf_8-2</idno>
+        <idno type="citation">ECf 8.2</idno>
+        <idno type="lawCode">ECf</idno>
+        <idno type="lawCodeAnchor">ECf</idno>
+        <idno type="clause">8.2</idno>
+        <idno type="citationKey">ECf 8.2</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">632</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>1115–50, probably 1130–35 (Liebermann, I p. 627)</date><note type="promulgation">1115–50, probably 1130–35 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="8.2">
+        <head><ref type="lawCode" target="law:ECf">ECf</ref> 8.2</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 8.2"><pb n="632" ed="#liebermann"/>Quin etiam de boscis et<ptr type="liebermannNote" n="25" target="#ECf_8-2.lnote.la.25"/> pratis<ptr type="liebermannNote" n="26" target="#ECf_8-2.lnote.la.26"/>, aquis<ptr type="liebermannNote" n="27" target="#ECf_8-2.lnote.la.27"/>, molendinis, parcis<ptr type="liebermannNote" n="28" target="#ECf_8-2.lnote.la.28"/>, uiuariis, piscariis, uirgultis, <ptr type="liebermannNote" n="27" target="#ECf_8-2.lnote.la.27"/>hortis, <ptr type="liebermannNote" n="29" target="#ECf_8-2.lnote.la.29"/>negotiationibus<ptr type="liebermannNote" n="c" target="#ECf_8-2.lnote.la.fn.c"/> et <ptr type="liebermannNote" n="30" target="#ECf_8-2.lnote.la.30"/>omnibus similiter<ptr type="liebermannNote" n="31" target="#ECf_8-2.lnote.la.31"/> rebus, quas<ptr type="liebermannNote" n="32" target="#ECf_8-2.lnote.la.32"/> dederit Dominus, decima<ptr type="liebermannNote" n="33" target="#ECf_8-2.lnote.la.33"/> reddenda est.</ab>
+        <note type="comparison" source="#liebermann" n="632"><label>printed alongside</label> <ref target="clause:ECfRetr_8-2">ECf retr 8.2</ref></note>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 632 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
+        <note type="editorial">Liebermann’s upright (roman) letter a after “boscis” refers to his explanatory notes, the Erklärungen (printed as Gesetze III; his note on p. 627 calls it “Band II”), which are not yet added here.</note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_8-2.lnote.la.fn.c" n="c" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">632</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Handel</hi> (<hi rend="italic">und Gewerbe?</hi>)</seg><seg type="translation" xml:lang="en" source="#claude">trade (and crafts?)</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_8-2.lnote.la.25" n="25" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">632</biblScope></bibl><seg type="original" xml:lang="de">de <hi rend="italic">fügt zu Hk;</hi> parcis, pr., a., m., uiu. <hi rend="italic">Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">Hk adds de; parcis, pr., a., m., uiu. Hr</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_8-2.lnote.la.26" n="26" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">632</biblScope></bibl><seg type="original" xml:lang="de">et <hi rend="italic">fügt zu Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">Hk adds et</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_8-2.lnote.la.27" n="27" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">632</biblScope></bibl><seg type="original" xml:lang="de">et <hi rend="italic">fügt zu Rl Ad</hi></seg><seg type="translation" xml:lang="en" source="#claude">Rl Ad add et</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_8-2.lnote.la.28" n="28" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">632</biblScope></bibl><seg type="original" xml:lang="de">et <hi rend="italic">fügt zu Hk;</hi> porcis <hi rend="italic">Rl</hi></seg><seg type="translation" xml:lang="en" source="#claude">Hk adds et; porcis Rl</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_8-2.lnote.la.29" n="29" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">632</biblScope></bibl><seg type="original" xml:lang="de">et <hi rend="italic">fügt zu Rl Hr Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">Rl Hr Do add et</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_8-2.lnote.la.30" n="30" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">632</biblScope></bibl><seg type="original" xml:lang="de">de <hi rend="italic">fügt zu Hr Pl S;</hi> apibus et <hi rend="italic">fügt hier zu Rl</hi></seg><seg type="translation" xml:lang="en" source="#claude">Hr Pl S add de; Rl adds apibus et here</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_8-2.lnote.la.31" n="31" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">632</biblScope></bibl><seg type="original" xml:lang="de">siml’ <hi rend="italic">Rl;</hi> simul <hi rend="italic">Hr S Ad;</hi> aliis r. s. q. <hi rend="italic">Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">siml’ Rl; simul Hr S Ad; aliis r. s. q. Hr</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_8-2.lnote.la.32" n="32" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">632</biblScope></bibl><seg type="original" xml:lang="de">q. d. D. <hi rend="italic">fehlt Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">q. d. D. lacking in Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_8-2.lnote.la.33" n="33" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">632</biblScope></bibl><seg type="original" xml:lang="de">est de. re. <hi rend="italic">Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">est de. re. Hr</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>
