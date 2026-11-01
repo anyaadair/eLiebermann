@@ -19,6 +19,7 @@
     <encodingDesc>
       <listPrefixDef>
         <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
         <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
         <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
       </listPrefixDef>
@@ -34,8 +35,8 @@
           <orth>quarante</orth>
         </form>
         <dictScrap type="liebermann"><lbl type="language">F</lbl> <hi rend="bold">quarante</hi> <hi rend="italic">vierzig, <ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>,</hi> <ref type="lawCode" target="law:WlArtFz">Wl art Fz</ref> 3,1. 6,2.</dictScrap>
-        <xr type="lawCode"><ref target="law:WlArtFz">Wl art Fz 3,1</ref></xr>
-        <xr type="lawCode"><ref target="law:WlArtFz">Wl art Fz 6,2</ref></xr>
+        <xr type="lawCode"><ref target="clause:Wl-art-Frz_3-1">Wl art Fz 3,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:Wl-art-Frz_6-2">Wl art Fz 6,2</ref></xr>
       </entry>
     </body>
   </text>
