@@ -68,6 +68,7 @@
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 352.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS B added from Gesetze I, p. 352.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS In added from Gesetze I, p. 353.</change>
+      <change when="2026-11-01" type="incn-type">Liebermann’s bold, spaced and smaller type in the Instituta Cnuti text marked by Claude from the page images; to be checked against the print.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -78,7 +79,7 @@
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="66.1" corresp="#wit-b"><pb n="352" ed="#liebermann"/>Gyf hwa amansodne<ptr type="liebermannNote" n="5" target="#IICn_66-1.lnote.oe.5"/> man oððon<ptr type="liebermannNote" n="6" target="#IICn_66-1.lnote.oe.6"/> utlagene hæbbe ⁊ healde, plihte him sylfum ⁊ ealre his are.</ab>
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="66.1" corresp="#wit-a"><pb n="352" ed="#liebermann"/>Gif hwa amansodne oððe utlahne habbe ⁊ healde, plihte him sylfum ⁊ ealre his are.</ab>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="66.1" corresp="#wit-q"><pb n="353" ed="#liebermann"/>Si quis excommunicatum uel utlagam habeat et manuteneat, dispereat<ptr type="liebermannNote" n="25" target="#IICn_66-1.lnote.oe.25"/> idem et omnis eius uenia (desperatio sibi et omni [quę<ptr type="liebermannNote" n="26" target="#IICn_66-1.lnote.oe.26"/> possidet] uenię suę).</ab>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="66.1" corresp="#wit-inst-cn"><pb n="353" ed="#liebermann"/>Si quis secum tenuerit excommunicatum aut exulem clamatum, careat omnibus bonis<ptr type="liebermannNote" n="10" target="#IICn_66-1.lnote.oe.10"/> suis et uita, nisi ei<ptr type="liebermannNote" n="11" target="#IICn_66-1.lnote.oe.11"/> rex parcat.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="66.1" corresp="#wit-inst-cn"><pb n="353" ed="#liebermann"/>Si quis secum tenuerit excommunicatum aut exulem <hi rend="spaced">clamatum, careat omnibus</hi> bonis<ptr type="liebermannNote" n="10" target="#IICn_66-1.lnote.oe.10"/> suis et uita, <hi rend="bold">nisi ei</hi><ptr type="liebermannNote" n="11" target="#IICn_66-1.lnote.oe.11"/><hi rend="bold"> rex parcat.</hi></ab>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="66.1" corresp="#wit-cons-cn"><pb n="353" ed="#liebermann"/>Si quis excommunicatum tenet et seruat, caueat sibimet et uniuerse substantie sue.</ab>
         <ab type="editionText" xml:lang="ang" source="#robertson" n="66.1" corresp="#wit-b"><pb n="206" ed="#robertson"/>Gyf hwa amansodne<ptr type="editorNote" n="9" target="#IICn_66-1.robnote.fn.9"/> man oððon utlagene hæbbe ⁊ healde, plihte him sylfum ⁊ ealre his are.</ab>
         <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-g-a"><pb n="286" ed="#rabin-doml"/>Gif hwa amansodne man oððe utlahne hæbbe and healde, plihte him sylfum and ealre his are.</ab>
