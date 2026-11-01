@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-01">Editor’s note on a misprinted citation (unlinked citations, November 2026).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -34,13 +35,14 @@
         <form type="lemma">
           <orth>geleafan</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">geleafan</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref></hi> <hi rend="bold">1</hi>) <hi rend="italic">kirchlichen Glauben</hi> <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:El">El</ref> 49,7. <ref type="lawCode" target="law:VAtr">V Atr</ref> 42,2. <ref type="lawCode" target="law:ICn">I Cn</ref> 22,1; gehl~ <ref type="lawCode" target="law:B">B</ref>; ~ habban to (on <ref type="lawCode" target="law:MsA">A</ref> <ref type="lawCode" target="law:B">B</ref>) 22,4 <hi rend="bold">2</hi>) <hi rend="italic">Glaubensbekenntnis</hi> 22, Credo <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref></hi></dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">geleafan</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref></hi> <hi rend="bold">1</hi>) <hi rend="italic">kirchlichen Glauben</hi> <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:El">El</ref> 49,7. <ref type="lawCode" target="law:VAtr">V Atr</ref> 42,2<ptr type="editorNote" target="#edn-1"/>. <ref type="lawCode" target="law:ICn">I Cn</ref> 22,1; gehl~ <ref type="lawCode" target="law:B">B</ref>; ~ habban to (on <ref type="lawCode" target="law:MsA">A</ref> <ref type="lawCode" target="law:B">B</ref>) 22,4 <hi rend="bold">2</hi>) <hi rend="italic">Glaubensbekenntnis</hi> 22, Credo <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref></hi></dictScrap>
         <dictScrap type="senses">
-          <sense n="1"><hi rend="italic">kirchlichen Glauben</hi> <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:El">El</ref> 49,7. <ref type="lawCode" target="law:VAtr">V Atr</ref> 42,2. <ref type="lawCode" target="law:ICn">I Cn</ref> 22,1; gehl~ <ref type="lawCode" target="law:B">B</ref>; ~ habban to (on <ref type="lawCode" target="law:MsA">A</ref> <ref type="lawCode" target="law:B">B</ref>) 22,4</sense>
+          <sense n="1"><hi rend="italic">kirchlichen Glauben</hi> <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:El">El</ref> 49,7. <ref type="lawCode" target="law:VAtr">V Atr</ref> 42,2<ptr type="editorNote" target="#edn-1"/>. <ref type="lawCode" target="law:ICn">I Cn</ref> 22,1; gehl~ <ref type="lawCode" target="law:B">B</ref>; ~ habban to (on <ref type="lawCode" target="law:MsA">A</ref> <ref type="lawCode" target="law:B">B</ref>) 22,4</sense>
           <sense n="2"><hi rend="italic">Glaubensbekenntnis</hi> 22, Credo <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref></hi></sense>
         </dictScrap>
+        <note type="editorial" xml:id="edn-1">“V Atr 42,2” appears to be a misprint for VI Atr 42,2, where <hi rend="italic">geleafan</hi> occurs (<ref target="clause:VIAtr_42-2">VI Atr 42,2</ref>); V Æthelred has no 42. The link follows VI Atr 42,2.</note>
         <xr type="lawCode"><ref target="clause:Af_El-to-49-7">Af El 49,7</ref></xr>
-        <xr type="lawCode"><ref target="law:VAtr">V Atr 42,2</ref></xr>
+        <xr type="lawCode"><ref target="clause:VIAtr_42-2">V Atr 42,2</ref></xr>
         <xr type="lawCode"><ref target="clause:ICn_22-1">I Cn 22,1</ref></xr>
       </entry>
     </body>

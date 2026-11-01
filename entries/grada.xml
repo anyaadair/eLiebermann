@@ -19,12 +19,14 @@
     <encodingDesc>
       <listPrefixDef>
         <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
         <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
         <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
       </listPrefixDef>
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-01">Editor’s note on a misprinted citation (unlinked citations, November 2026).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -33,10 +35,11 @@
         <form type="lemma">
           <orth>grada</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">grada</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref> <ref type="abbreviation" target="gram:Genitiv"><abbr>gn</abbr></ref>;</hi> seofon stapas ciriclicra ~ <hi rend="italic">7 Stufen kirchlicher Grade</hi> <ref type="lawCode" target="law:Had">Had</ref> 19</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">grada</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref> <ref type="abbreviation" target="gram:Genitiv"><abbr>gn</abbr></ref>;</hi> seofon stapas ciriclicra ~ <hi rend="italic">7 Stufen kirchlicher Grade</hi> <ref type="lawCode" target="law:Had">Had</ref> 19<ptr type="editorNote" target="#edn-1"/></dictScrap>
+        <note type="editorial" xml:id="edn-1">“Had 19” appears to be a misprint for Had 1, where <hi rend="italic">seofon stapas … ciriclicra grada</hi> occurs (<ref target="clause:Had_1">Had 1</ref>); Hadbot has only 11 chapters. The link follows Had 1.</note>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/17416">grad</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/51115">grad (Supplement)</ref></xr>
-        <xr type="lawCode"><ref target="law:Had">Had 19</ref></xr>
+        <xr type="lawCode"><ref target="clause:Had_1">Had 19</ref></xr>
       </entry>
     </body>
   </text>
