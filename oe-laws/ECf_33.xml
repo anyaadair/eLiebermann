@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECf_33">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf 33</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECf_33</idno>
+        <idno type="citation">ECf 33</idno>
+        <idno type="lawCode">ECf</idno>
+        <idno type="lawCodeAnchor">ECf</idno>
+        <idno type="clause">33</idno>
+        <idno type="citationKey">ECf 33</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">660</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>1115–50, probably 1130–35 (Liebermann, I p. 627)</date><note type="promulgation">1115–50, probably 1130–35 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="33">
+        <head><ref type="lawCode" target="law:ECf">ECf</ref> 33</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 33"><pb n="660" ed="#liebermann"/>Erat<ptr type="liebermannNote" n="1" target="#ECf_33.lnote.la.1"/> etiam<ptr type="liebermannNote" n="a" target="#ECf_33.lnote.la.fn.a"/><ptr type="liebermannNote" n="2" target="#ECf_33.lnote.la.2"/> lex<ptr type="liebermannNote" n="*" target="#ECf_33.lnote.la.star"/> Danorum Norþfolc<ptr type="liebermannNote" n="3" target="#ECf_33.lnote.la.3"/>, Suþfolc, Grantebriggescyre<ptr type="liebermannNote" n="4" target="#ECf_33.lnote.la.4"/><ptr type="liebermannNote" n="**" target="#ECf_33.lnote.la.star2"/>, que habebant<ptr type="liebermannNote" n="5" target="#ECf_33.lnote.la.5"/> in emendationem<ptr type="liebermannNote" n="6" target="#ECf_33.lnote.la.6"/> forisfacture, ubi<ptr type="liebermannNote" n="7" target="#ECf_33.lnote.la.7"/> supradicti comitatus habebant X et<ptr type="liebermannNote" n="8" target="#ECf_33.lnote.la.8"/> VIII hundreda, isti X et dimidium; et hoc affinitate Saxonum, quia<ptr type="liebermannNote" n="9" target="#ECf_33.lnote.la.9"/> tunc temporis maior<ptr type="liebermannNote" n="10" target="#ECf_33.lnote.la.10"/> emendatio forisfacture Saxonum erat<ptr type="liebermannNote" n="11" target="#ECf_33.lnote.la.11"/> quater<ptr type="liebermannNote" n="12" target="#ECf_33.lnote.la.12"/> XX lib.<ptr type="liebermannNote" n="10" target="#ECf_33.lnote.la.10"/> et IIII<ptr type="liebermannNote" n="b" target="#ECf_33.lnote.la.fn.b"/>.</ab>
+        <note type="comparison" source="#liebermann" n="660"><label>printed alongside</label> <ref target="clause:ECfRetr_33">ECf retr 33</ref></note>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 660 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
+        <note type="editorial">The notes to Liebermann’s asterisks (* and **) record Lond’s additions here; the asterisk notes are given under keys * and **.</note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_33.lnote.la.fn.a" n="a" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">660</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">ausser den</hi> 13 <hi rend="italic">Grafschaften oben</hi> 30; <hi rend="italic">vgl.</hi> 27, 1. <hi rend="italic">Der südöstliche Theil der Denalagu gesondert steht auch im damaligen Verzeichniss der Rechtsgebiete, hinter dem Durhamer</hi> Liber reg. Sax. <hi rend="italic">in</hi> Symeon Dun. <hi rend="italic">ed. Hinde</hi> 222</seg><seg type="translation" xml:lang="en" source="#claude">besides the 13 shires above, 30; cf. 27, 1. The south-eastern part of the Danelaw stands separately also in the contemporary list of legal areas, after the Durham Liber reg. Sax. in Symeon Dun., ed. Hinde 222</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_33.lnote.la.fn.b" n="b" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">660</biblScope></bibl><seg type="original" xml:lang="de">10½ × 8 £ = £ 84, <hi rend="italic">eine weder für Ostanglien noch</hi> Sachsen (<hi rend="italic">d. h. wohl wie</hi> 35, 1d Süd-England) <hi rend="italic">bezeugte Busssumme</hi></seg><seg type="translation" xml:lang="en" source="#claude">10½ × £8 = £84, a sum of compensation attested neither for East Anglia nor for the Saxons (i.e. probably, as at 35, 1d, southern England)</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_33.lnote.la.star" n="*" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">660</biblScope></bibl><seg type="original" xml:lang="de">Norwygensium et <hi rend="italic">fügt zu Lond; vgl.</hi> 32 E 2—6</seg><seg type="translation" xml:lang="en" source="#claude">Lond adds Norwygensium et; cf. 32 E 2–6</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_33.lnote.la.star2" n="**" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">660</biblScope></bibl><seg type="original" xml:lang="de">Deira{13} et insularum, scilicet Cathenensium, Mannensium, Murefensium et Orchadum et Enchegalensium et Ordasensium et de Gurth <hi rend="italic">interpolirt Lond</hi>{f:c}</seg><seg type="translation" xml:lang="en" source="#claude">Lond interpolates Deira{13} et insularum, scilicet Cathenensium, Mannensium, Murefensium et Orchadum et Enchegalensium et Ordasensium et de Gurth{f:c}</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_33.lnote.la.fn.c" n="c" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">660</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">der Londoner zählt auch an zwei anderen Stellen seines Werkes ebenso wirr als Theile Englands wie hier auf</hi> Deira, Caithness, Man, Moray, Orkney, Inch-Gal (<hi rend="italic">Hebriden</hi>), <hi rend="italic">nochmals</hi> Orkney, Wight: <hi rend="italic">England soll dadurch als Grossbritannien erscheinen. Nordschottland gilt als Insel, vielleicht weil es damals dem Jarl der Orkneys unterthan war; Man huldigte</hi> 1205, 1212 <hi rend="italic">England. Benutzt ist</hi> Galfr. Monm. IX 12; <hi rend="italic">vgl. mein</hi> Leg. Angl. <hi rend="italic">S.</hi> 4. 26</seg><seg type="translation" xml:lang="en" source="#claude">in two other places of his work too the Londoner lists as parts of England, just as confusedly as here, Deira, Caithness, Man, Moray, Orkney, Inch-Gal (the Hebrides), Orkney again, Wight: England is thereby to appear as Great Britain. Northern Scotland counts as an island, perhaps because it was then subject to the Jarl of Orkney; Man did homage to England in 1205 and 1212. Geoffrey of Monmouth IX 12 is used; cf. my Leg. Angl. pp. 4. 26</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_33.lnote.la.13" n="13" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">660</biblScope></bibl><seg type="original" xml:lang="de">Deyra <hi rend="italic">Co</hi></seg><seg type="translation" xml:lang="en" source="#claude">Deyra Co</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_33.lnote.la.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">660</biblScope></bibl><seg type="original" xml:lang="de">Erant <hi rend="italic">Rl</hi></seg><seg type="translation" xml:lang="en" source="#claude">Erant Rl</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_33.lnote.la.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">660</biblScope></bibl><seg type="original" xml:lang="de">enim <hi rend="italic">S Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">enim S Ad Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_33.lnote.la.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">660</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">so Ad;</hi> Nortfolca, Sudfolca <hi rend="italic">Rl;</hi> -thf. <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">so Ad; Nortfolca, Sudfolca Rl; -thf. Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_33.lnote.la.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">660</biblScope></bibl><seg type="original" xml:lang="de">-brugeshire <hi rend="italic">Ad;</hi> Grauntebriggesire <hi rend="italic">Hr;</hi> Cantebrugescire <hi rend="italic">S;</hi> Kantebrigesire. Scire oportet quid h. <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">-brugeshire Ad; Grauntebriggesire Hr; Cantebrugescire S; Kantebrigesire. Scire oportet quid h. Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_33.lnote.la.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">660</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">so Ad Do;</hi> -bat <hi rend="italic">übr.</hi></seg><seg type="translation" xml:lang="en" source="#claude">so Ad Do; -bat the others</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_33.lnote.la.6" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">660</biblScope></bibl><seg type="original" xml:lang="de">-ne <hi rend="italic">Rl Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">-ne Rl Hr</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_33.lnote.la.7" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">660</biblScope></bibl><seg type="original" xml:lang="de">ut <hi rend="italic">S Ad</hi></seg><seg type="translation" xml:lang="en" source="#claude">ut S Ad</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_33.lnote.la.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">660</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt S</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in S</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_33.lnote.la.9" n="9" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">660</biblScope></bibl><seg type="original" xml:lang="de">quia—Sax. <hi rend="italic">überspringt Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">Do skips quia—Sax.</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_33.lnote.la.10" n="10" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">660</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Ad</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Ad</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_33.lnote.la.11" n="11" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">660</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt S Ad</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in S Ad</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_33.lnote.la.12" n="12" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">660</biblScope></bibl><seg type="original" xml:lang="de">VII <hi rend="italic">Rl;</hi> XXIII et IIII <hi rend="italic">Ad</hi></seg><seg type="translation" xml:lang="en" source="#claude">VII Rl; XXIII et IIII Ad</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

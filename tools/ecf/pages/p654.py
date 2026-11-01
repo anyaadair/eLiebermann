@@ -1,0 +1,66 @@
+# Liebermann, Gesetze I p. 654: ECf and ECf retr 31,2–32,2
+D = lambda de, en: (de, en)
+FAA = D('<i>vom Angelsächs.</i> gerefa <i>schwindet</i> ge <i>schon um</i> 1210 <i>u.</i> 32, 3¹, <i>doch sind noch heute</i> moorgrieve, fieldgrieve <i>Gemeindeämter; vgl. Gomme</i> Index of munic. offices 30. 32', 'the ge of Anglo-Saxon gerefa disappears already around 1210 and at 32, 3¹, but moorgrieve, fieldgrieve are still parish offices today; cf. Gomme, Index of munic. offices 30. 32')
+FB = D('<i>vgl. o.</i> 24, 2. 30, 2 <i>und zum Retr. o.</i> 31, 2; <i>ergänze laut</i> 31a þrihinge?', 'cf. above, 24, 2. 30, 2 and, for the Retr., above 31, 2; supply þrihinge, according to 31a?')
+FD = D('tungerefa, <i>nicht, wie Retr. meint,</i> Dorfherr', 'tungerefa, not, as the Retr. thinks, the lord of the village')
+FG = D('Markgraf <i>erlischt als Titel in Flandern</i> 1119 <i>und kommt in Frisland</i> 1046—1103 <i>vor</i> (<i>Warnkönig</i> Flandr. RG. I 256; <i>Waitz</i> Dt. Verf.-G. VII 79). <i>Retr. schlimmbessert, als wären</i> Frisones et Fl. <i>nicht</i> Teutonici, <i>und als hätten die Deutschen nicht auch</i> Grafen',
+       'Markgraf dies out as a title in Flanders in 1119 and occurs in Frisia 1046–1103 (Warnkönig, Flandr. RG. I 256; Waitz, Dt. Verf.-G. VII 79). The Retr. makes it worse in correcting it, as if the Frisians and Flemings were not Teutonici, and as if the Germans did not also have counts')
+FH = D('<i>Verf. identificirt falsch in</i> Markgraf, <i>das er in Franz. Aussprache hörte,</i> graf <i>mit</i> gerefa <i>und die erste Silbe mit Engl.</i> (<i>oder ähnlichem Niederdeutschen</i>) mare (maior) <i>oder mit</i> mære, <i>welches aber eher</i> berühmt, hehr <i>als</i> gut <i>bedeutet</i>',
+       'in Markgraf, which he heard in French pronunciation, the author wrongly identifies graf with gerefa, and the first syllable with English (or similar Low German) mare (maior) or with mære, which however means famous, exalted rather than good')
+FE = D('<i>Retr. weist diesen Unsinn von sich: also anderer Autor. ECf. überhörte nach Romanischer Art die auslautende Dentale, wie schon Domesday</i> gribryce <i>schreibt, und das</i> 12. <i>Jh.</i> fri- (<i>frei</i>) <i>und</i> frið (<i>Friede</i>) <i>verwechselt</i>',
+       'the Retr. rejects this nonsense: so a different author. ECf., in the Romance manner, failed to hear the final dental, as Domesday already writes gribryce, and the 12th century confuses fri- (free) and frið (peace)')
+RA = D('<i>Retr.</i> 32 <i>stellt eher</i> lathe — <i>im Domesday und jetzt nur in Kent bekannt — und</i> wapentake <i>gleich. Ebenso Cb</i> 22, 5. <i>Er vollzieht hier den Vergleich mit</i> riding <i>nur der Symmetrie wegen. Heinrich I. befreite S. Trinity zu London</i> de omnibus sectis de syris et hundredis et lethis et hustingis [<i>vgl.</i> Hn Lond 9]; <i>ed. Sharpe</i> Calendar of letterbooks of London C <i>p.</i> 74',
+                     'at 32 the Retr. rather equates lathe — in Domesday and now known only in Kent — with wapentake. So too Cb at 22, 5. He makes the comparison with riding here only for symmetry. Henry I freed Holy Trinity, London, de omnibus sectis de syris et hundredis et lethis et hustingis [cf. Hn Lond 9]; ed. Sharpe, Calendar of letterbooks of London C p. 74')
+CLAUSES = [
+ {'code': 'ECf', 'n': '31.2', 'page': 654,
+  'text': 'Et{1} quod in{2} [þ]rehingis{3} non{4} poterat diffiniri, in scyra{5} seruabatur.',
+  'notes': {1: D('<i>fehlt Hk</i>', 'lacking in Hk'), 2: D('<i>fehlt S</i>', 'lacking in S'), 3: D('-ngge <i>S;</i> threhiggis <i>Hr;</i> tþrihinga <i>Ad;</i> tr. <i>übrige</i>', '-ngge S; threhiggis Hr; tþrihinga Ad; tr. the others'),
+            4: D('d. n. p. <i>Hk</i>', 'd. n. p. Hk'), 5: D('syra <i>Hk;</i> scira <i>S;</i> shira <i>Ad;</i> sciriā <i>Hr</i>', 'syra Hk; scira S; shira Ad; sciriā Hr')}},
+ {'code': 'ECf', 'n': '32', 'page': 654,
+  'text': 'Greue{f:aa} autem{6} nomen{7} potestatis{8} apud nos{9} nichil melius uidetur{10} esse quam prefectura; est enim multiplex{11} nomen: greue enim dicitur de{6} scyra{13}, de wapentagiis{f:b}, de hundredis{f:b}{14}, de burgis{f:c}{15}, de uillis{f:d}.',
+  'notes': {'f:aa': FAA, 'f:b': FB, 'f:c': D('portgerefa', 'portgerefa'), 'f:d': FD,
+            6: D('<i>fehlt Ad</i>', 'lacking in Ad'), 7: D('est <i>fügt zu Hk S;</i> est nomen <i>Ad Do;</i> n. pot. est <i>Hr</i>', 'Hk S add est; est nomen Ad Do; n. pot. est Hr'), 8: D('cum illis <i>fügt zu Ad;</i> quod <i>fügt zu Rl</i>', 'Ad adds cum illis; Rl adds quod'),
+            9: D('autem <i>fügt zu Hk S</i>', 'Hk S add autem'), 10: D('e. u. <i>Hr;</i> putatur <i>Ad; fehlt Do</i>', 'e. u. Hr; putatur Ad; lacking in Do'), 11: D('n. m. <i>Hr</i>', 'n. m. Hr'),
+            13: D('syra <i>Hk;</i> scira <i>S;</i> shire <i>Ad</i>', 'syra Hk; scira S; shire Ad'), 14: D('-do <i>S</i>', '-do S'), 15: D('ui., de bu. <i>Ad Do</i>', 'ui., de bu. Ad Do')},
+  'editorial': ['There is no note 12 in the ECf column of this page: Liebermann’s numbering goes from 11 to 13.']},
+ {'code': 'ECf', 'n': '32.1', 'page': 654,
+  'text': 'Et uidetur nobis{f:e} compositum esse ex{16} ‘grith’{17} Anglico{18}, quod est pax Latine, et ‘ue’ Latino{19}, scilicet{20} quod{21} debet{22} facere grith{23}, i. e. pacem, ex illis qui{24} inferunt{25} in terram ue, i. e. miseriam uel{26} dolorem ({f:f}summa{27} auctoritate domini nostri Ihesu Christi dicentis: ‘Ue tibi Bethsaida{28}, ue{29} tibi Corozaim!’)',
+  'margin': ['Matth. 11, 21'],
+  'notes': {'f:e': FE, 'f:f': D('<i>nur</i> uæ <i>verführt pedantisch zu citiren</i>', 'only uæ leads him, pedantically, to quote'),
+            16: D('e <i>Hk S;</i> a <i>Ad</i>', 'e Hk S; a Ad'), 17: D('grid <i>S;</i> grit <i>Hk;</i> griht <i>Ad</i>', 'grid S; grit Hk; griht Ad'), 18: D('-ce <i>Hk S Ad</i>', '-ce Hk S Ad'), 19: D('-ne <i>Hk S Ad;</i> -n’ <i>Hr</i>', '-ne Hk S Ad; -n’ Hr'),
+            20: D('uidelicet <i>S Ad Do; fehlt Hr</i>', 'uidelicet S Ad Do; lacking in Hr'), 21: D('<i>fehlt Hk;</i> qde <i>Hr</i>', 'lacking in Hk; qde Hr'), 22: D('<i>fehlt Rl;</i> debeat <i>Ad Do</i>', 'lacking in Rl; debeat Ad Do'),
+            23: D('griutha <i>Rl;</i> grit <i>Hk;</i> grid <i>S;</i> griht <i>Ad</i>', 'griutha Rl; grit Hk; grid S; griht Ad'), 24: D('que <i>Hr</i>', 'que Hr'), 25: D('insurgunt <i>Ad</i>', 'insurgunt Ad'), 26: D('et <i>Hk Ad Do</i>', 'et Hk Ad Do'),
+            27: D('sententia (<i>statt</i> s. a.) <i>Ad;</i> si nam autem <i>Do</i>', 'sententia (instead of s. a.) Ad; si nam autem Do'), 28: D('B. ue t. <i>fehlt Hr</i>', 'B. ue t. lacking in Hr'), 29: D('etc. (<i>statt</i> ue t. C.) <i>Ad Do</i>', 'etc. (instead of ue t. C.) Ad Do')}},
+ {'code': 'ECf', 'n': '32.2', 'page': 654,
+  'text': 'Frisones{30} etiam{31} et Flandrenses{f:g} comites suos{32} maregraue{33}, quasi maiores{f:h} uel bonos pacificos, uocant{1}.',
+  'notes': {'f:g': FG, 'f:h': FH, 30: D('Frisiones <i>Hk</i>', 'Frisiones Hk'), 31: D('<i>fehlt Hk S Ad Wo Do</i>', 'lacking in Hk S Ad Wo Do'), 32: D('uocant <i>schon hier fügt zu Hr Ad Do; hinter</i> mer. <i>S</i>', 'Hr Ad Do already add uocant here; after mer. S'),
+            33: D('mer. <i>Hk S Hr;</i> meng. <i>Ad Do;</i> maragreues <i>Rl</i>', 'mer. Hk S Hr; meng. Ad Do; maragreues Rl'), 1: D('<i>fehlt Hk</i>', 'lacking in Hk')}},
+
+ {'code': 'ECfRetr', 'n': '31.2', 'page': 654,
+  'text': 'In quibusdam uero prouinciis Anglice{1} uocabatur {f:a}leð{2}, quod isti{3} dicunt þrihinge{4}. Quodque{5} in þrehingis{6} diffiniri{7} non poterat, <b>ferebatur</b> in sciram{8}.',
+  'notes': {'f:a': RA,
+            1: D('Anglici uocant <i>Hv</i>', 'Anglici uocant Hv'), 2: D('<i>so L;</i> leþ <i>Ld;</i> lede <i>Hv;</i> led <i>Cb Lb Lond Ph;</i> Sed <i>Va</i>', 'so L; leþ Ld; lede Hv; led Cb Lb Lond Ph; Sed Va'), 3: D('<i>fehlt Cb</i>', 'lacking in Cb'),
+            4: D('þinge di. <i>Hv;</i> tr. <i>Lond Ld;</i> treh. <i>Lb Va;</i> triehing <i>Cb;</i> tith. <i>L;</i> þreinges <i>Franz. Übers.</i>', 'þinge di. Hv; tr. Lond Ld; treh. Lb Va; triehing Cb; tith. L; þreinges French transl.'),
+            5: D('Quod quoque <i>Hv;</i> Quod autem <i>Ld</i>', 'Quod quoque Hv; Quod autem Ld'), 6: D('þinges <i>Hv;</i> þrihinge <i>Ld;</i> tr. <i>übr.</i>', 'þinges Hv; þrihinge Ld; tr. the others'), 7: D('defin. <i>Va Ld</i>', 'defin. Va Ld'),
+            8: D('schi. <i>Hv;</i> siram <i>Lb Va;</i> scyr. <i>Ld</i>', 'schi. Hv; siram Lb Va; scyr. Ld')},
+  'editorial': ['Liebermann prints the first sentence, which ECf lacks, in the larger type of the ECf column.']},
+ {'code': 'ECfRetr', 'n': '32', 'page': 654,
+  'text': '{9}<b><sp>Quid sit prepositus et</sp></b>{10} <b><sp>prefectura et quid alderman</sp></b>{11}<b><sp>, quod</sp></b>{12} <b><sp>Latine senior populi sonat; et quam multipliciter uocabulum</sp></b>{13} <b><sp>prepositi distenditur.</sp></b> Greue <b>quidem</b>{14} nomen <b>est</b> potestatis; <b>Latinorum lingua</b> nichil{15} <b>expressius</b>{*} <b>sonat</b> quam prefectura; <b>quoniam hoc uocabulum adeo</b>{16} multipliciter <b>distenditur, quod</b> de scira{17}, de wapentagiis{18}, quod{19} est et leð{f:a}{20}, de hundretis{21}, de burgis, de uillis <b>etiam</b> greue <b>uocetur</b>{22}<b>, in quo</b>{23} <b>idem</b>{24} <b>sonare uidetur et significare quod dominus</b>{f:d}.',
+  'notes': {'f:aa': FAA, 'f:d': FD, 'f:a': RA, '*': D('<i>vgl.</i> 35, 1d', 'cf. 35, 1d'),
+            9: D('De greuis et aldermannis <i>Lond;</i> Quid est hec potestas greue <i>Cb; Rubrik erst vor</i> 32, 1 <i>Hv</i>', 'De greuis et aldermannis Lond; Quid est hec potestas greue Cb; the rubric only before 32, 1 Hv'), 10: D('et pr. et <i>fehlt Db</i>', 'et pr. et lacking in Db'),
+            11: D('eldeman <i>Pl</i>', 'eldeman Pl'), 12: D('quia <i>Pl;</i> qui <i>S;</i> quod—dist. <i>fehlt Db</i>', 'quia Pl; qui S; quod—dist. lacking in Db'), 13: D('nomen <i>Hv</i>', 'nomen Hv'), 14: D('quod <i>Cb;</i> quoque <i>Lond;</i> quoddam <i>Db</i>', 'quod Cb; quoque Lond; quoddam Db'),
+            15: D('uel expresse idem quod pref. <i>Hv</i>', 'uel expresse idem quod pref. Hv'), 16: D('tam <i>Hv;</i> ab eo <i>K</i>', 'tam Hv; ab eo K'), 17: D('sira <i>Va;</i> schira <i>Hv</i>', 'sira Va; schira Hv'), 18: D('-achiis <i>Lond</i>', '-achiis Lond'),
+            19: D('et quod etiam <i>Hv;</i> q. etiam est <i>Cb Db Ph Lond;</i> est <i>fehlt Lb Hv Lond</i>', 'et quod etiam Hv; q. etiam est Cb Db Ph Lond; est lacking in Lb Hv Lond'), 20: D('ledh <i>Lb Va Db;</i> lede <i>ohne</i> de <i>Hv;</i> leid <i>Lond</i>', 'ledh Lb Va Db; lede without de Hv; leid Lond'),
+            21: D('-edum <i>Hv;</i> -edis <i>Cb;</i> -edis, de b., et. de u. greiue <i>Lond</i>', '-edum Hv; -edis Cb; -edis, de b., et. de u. greiue Lond'), 22: D('uocatur <i>Cb</i>', 'uocatur Cb'), 23: D('qua i. so. et si. ui. <i>Hv</i>', 'qua i. so. et si. ui. Hv'), 24: D('uel <i>Lond</i>', 'uel Lond')},
+  'editorial': ['Liebermann prints “quod est et leð” in the larger type of the ECf column.']},
+ {'code': 'ECfRetr', 'n': '32.1', 'page': 654,
+  'text': '{25}Uidetur etiam <b>quibusdam</b>{26} <b>greue</b>{27} <b>uocabulum</b> esse{28} <b>nomen</b> compositum{29} ex Anglico ‘grith’{30} et ‘ue’ Latino. Grith{30} <b>enim</b> pax est, ue <b>uero</b>{31} miseria <b>(ipso</b>{32} Domino <b>attestante qui</b> dixit{33}: ‘Ue{34} tibi Bethsaida, ue tibi Corozaim!’{35}) <b>Greue</b>{36} <b>igitur ideo dicitur,</b> quod <b>iure</b> debeat{37} grith{38}, id est pacem, ex illis facere qui <b>patrie</b> inferunt ue, id est miseriam uel <b>malum.</b>',
+  'notes': {'f:e': FE, 25: D('<i>Rubrik</i> (<i>s. vor</i> 32) <i>Hv</i>', 'rubric (see before 32) Hv'), 26: D('quod <i>fügt zu Hv;</i> etiam <i>fügt zu Co</i>', 'Hv adds quod; Co adds etiam'), 27: D('greiue <i>Hv Lond;</i> graue <i>Cb</i>', 'greiue Hv Lond; graue Cb'),
+            28: D('nomen est <i>Hv;</i> n. <i>fehlt Va</i>', 'nomen est Hv; n. lacking in Va'), 29: D('-tiuum <i>K</i>', '-tiuum K'), 30: D('gridh <i>Cb;</i> grit <i>Lb Ph</i>', 'gridh Cb; grit Lb Ph'), 31: D('ergo <i>Lb Ph</i>', 'ergo Lb Ph'),
+            32: D('i. test. <i>ohne</i> D. <i>Hv</i>', 'i. test. without D. Hv'), 33: D('ait <i>Lb Va Ph;</i> dicit <i>Lond</i>', 'ait Lb Va Ph; dicit Lond'), 34: D('Ue t. B. <i>fehlt Hv</i>', 'Ue t. B. lacking in Hv'), 35: D('Corroz. <i>Lb;</i> -in <i>Hv;</i> Coraz. <i>übr.</i>', 'Corroz. Lb; -in Hv; Coraz. the others'),
+            36: D('Greiue <i>Hv Lond;</i> græue <i>Cb; aber</i> æ <i>auf Rasur</i>', 'Greiue Hv Lond; græue Cb; but æ over an erasure'), 37: D('debebat <i>Lond</i>', 'debebat Lond'), 38: D('gridh <i>Cb;</i> grit <i>Ph</i>', 'gridh Cb; grit Ph')}},
+ {'code': 'ECfRetr', 'n': '32.2', 'page': 654,
+  'text': '{f:g}<b>Teutonici</b>{39} <b>et</b>{40} Frisones et Flandrenses <b>consules</b> suos maregraue{41}, quasi maiores <b>dominos</b> uel bonos pacificos, uocare <b>consuescunt.</b>',
+  'notes': {'f:g': FG, 'f:h': FH, 39: D('Theut. <i>Lond</i>', 'Theut. Lond'), 40: D('etiam <i>Cb Lb Ph Lond;</i> et etiam <i>Hv</i>', 'etiam Cb Lb Ph Lond; et etiam Hv'),
+            41: D('mer. <i>Hv Lond;</i> mer. <i>geändert</i> meir. <i>Cb;</i> -greue <i>Lb Db;</i> margreue <i>Va</i>', 'mer. Hv Lond; mer. altered to meir. Cb; -greue Lb Db; margreue Va')}},
+]

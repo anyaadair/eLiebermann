@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECfRetr_33">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf retr 33</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECfRetr_33</idno>
+        <idno type="citation">ECf retr 33</idno>
+        <idno type="lawCode">ECf retr</idno>
+        <idno type="lawCodeAnchor">ECfRetr</idno>
+        <idno type="clause">33</idno>
+        <idno type="citationKey">ECfRetr 33</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris: retractatus</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), pp. <biblScope unit="page">660–661</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>c. 1140–59 (Liebermann, I p. 627)</date><note type="promulgation">c. 1140–59 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="33">
+        <head><ref type="lawCode" target="law:ECfRetr">ECf retr</ref> 33</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf retr 33"><pb n="660" ed="#liebermann"/><hi rend="bold"><hi rend="spaced">Lex Danorum.</hi></hi><ptr type="liebermannNote" n="1" target="#ECfRetr_33.lnote.la.1"/> <hi rend="bold"><hi rend="spaced">(Quomodo uel qua de causa rex Willelmus leges Anglorum uoluit dimittere et leges Danorum tenere; et qualiter postea per totam Angliam constitute sunt et confirmate, que per LXVIII</hi></hi><ptr type="liebermannNote" n="2" target="#ECfRetr_33.lnote.la.2"/> <hi rend="bold"><hi rend="spaced">annos erant pretermisse.)</hi></hi> Erat etiam<ptr type="liebermannNote" n="3" target="#ECfRetr_33.lnote.la.3"/> lex<ptr type="liebermannNote" n="*" target="#ECfRetr_33.lnote.la.star"/> Danorum<ptr type="liebermannNote" n="4" target="#ECfRetr_33.lnote.la.4"/> Northfolc<ptr type="liebermannNote" n="5" target="#ECfRetr_33.lnote.la.5"/> et Suthfolc<ptr type="liebermannNote" n="6" target="#ECfRetr_33.lnote.la.6"/> et<ptr type="liebermannNote" n="7" target="#ECfRetr_33.lnote.la.7"/> Grantebriggescire<ptr type="liebermannNote" n="8" target="#ECfRetr_33.lnote.la.8"/><ptr type="liebermannNote" n="**" target="#ECfRetr_33.lnote.la.star2"/>, que habebant<ptr type="liebermannNote" n="9" target="#ECfRetr_33.lnote.la.9"/> in emendationem forisfacture, ubi supradicti comitatus habebant <pb n="661" ed="#liebermann"/>decem<ptr type="liebermannNote" n="1" target="#ECfRetr_33.lnote.la.1-p661"/> et octo hundreda<ptr type="liebermannNote" n="2" target="#ECfRetr_33.lnote.la.2-p661"/>, isti decem et dimidium; et hoc<ptr type="liebermannNote" n="3" target="#ECfRetr_33.lnote.la.3-p661"/> affinitate Saxonum, quia<ptr type="liebermannNote" n="4" target="#ECfRetr_33.lnote.la.4-p661"/> tunc temporis maior emendatio forisfacture Saxonum quater<ptr type="liebermannNote" n="5" target="#ECfRetr_33.lnote.la.5-p661"/> uiginti libre<ptr type="liebermannNote" n="6" target="#ECfRetr_33.lnote.la.6-p661"/> et quatuor.</ab>
+        <note type="comparison" source="#liebermann" n="660"><label>printed alongside</label> <ref target="clause:ECf_33">ECf 33</ref></note>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 660–661 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page; the words in bold are the Retractator’s changes to ECf, as Liebermann prints them.</note>
+        <note type="editorial">Liebermann’s numbering of the notes starts again at 1 on p. 661: the notes 1–6 to the part of this clause on p. 661 are distinct from the notes 1–9 on p. 660.</note>
+        <note type="editorial">The notes on the London collection’s interpolations (* and **) are printed under the ECf column on p. 660; they are given here as well.</note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_33.lnote.la.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">660</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">keine Überschrift Cb; nur</hi> L. (Leges <hi rend="italic">S</hi>) D. <hi rend="italic">Pl S;</hi> Lex Norichorum et Danorum in regno Britannie, quod modo Anglia uocatur <hi rend="italic">Lond;</hi> Quomodo <hi rend="italic">u. s. w. übr.</hi></seg><seg type="translation" xml:lang="en" source="#claude">no heading Cb; only L. (Leges S) D. Pl S; Lex Norichorum et Danorum in regno Britannie, quod modo Anglia uocatur Lond; Quomodo etc. the others</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_33.lnote.la.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">660</biblScope></bibl><seg type="original" xml:lang="de">LXVI <hi rend="italic">Hv</hi></seg><seg type="translation" xml:lang="en" source="#claude">LXVI Hv</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_33.lnote.la.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">660</biblScope></bibl><seg type="original" xml:lang="de">autem <hi rend="italic">Dc</hi></seg><seg type="translation" xml:lang="en" source="#claude">autem Dc</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_33.lnote.la.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">660</biblScope></bibl><seg type="original" xml:lang="de">in <hi rend="italic">fügt zu Hv Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">Hv Lond add in</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_33.lnote.la.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">660</biblScope></bibl><seg type="original" xml:lang="de">Norffolkie <hi rend="italic">Lond;</hi> Norfulc <hi rend="italic">Cb;</hi> Norfolc <hi rend="italic">Lb</hi></seg><seg type="translation" xml:lang="en" source="#claude">Norffolkie Lond; Norfulc Cb; Norfolc Lb</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_33.lnote.la.6" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">660</biblScope></bibl><seg type="original" xml:lang="de">Sufulc <hi rend="italic">Cb;</hi> Sudf. <hi rend="italic">Lb;</hi> Suffolkie <hi rend="italic">K Co</hi></seg><seg type="translation" xml:lang="en" source="#claude">Sufulc Cb; Sudf. Lb; Suffolkie K Co</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_33.lnote.la.7" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">660</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt K Co</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in K Co</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_33.lnote.la.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">660</biblScope></bibl><seg type="original" xml:lang="de">Cantebrigesire quod <hi rend="italic">Hv;</hi> -bruges. <hi rend="italic">Cb;</hi> -schire <hi rend="italic">Va</hi></seg><seg type="translation" xml:lang="en" source="#claude">Cantebrigesire quod Hv; -bruges. Cb; -schire Va</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_33.lnote.la.9" n="9" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">660</biblScope></bibl><seg type="original" xml:lang="de">-bat <hi rend="italic">Lb Va Lond;</hi> habeant <hi rend="italic">Hv;</hi> habent <hi rend="italic">ohne</hi> in—habebant <hi rend="italic">Cb</hi></seg><seg type="translation" xml:lang="en" source="#claude">-bat Lb Va Lond; habeant Hv; habent without in—habebant Cb</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_33.lnote.la.star" n="*" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">660</biblScope></bibl><seg type="original" xml:lang="de">Norwygensium et <hi rend="italic">fügt zu Lond; vgl.</hi> 32 E 2—6</seg><seg type="translation" xml:lang="en" source="#claude">Lond adds Norwygensium et; cf. 32 E 2–6</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_33.lnote.la.star2" n="**" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">660</biblScope></bibl><seg type="original" xml:lang="de">Deira et insularum, scilicet Cathenensium, Mannensium, Murefensium et Orchadum et Enchegalensium et Ordasensium et de Gurth <hi rend="italic">interpolirt Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">Lond interpolates Deira et insularum, scilicet Cathenensium, Mannensium, Murefensium et Orchadum et Enchegalensium et Ordasensium et de Gurth</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_33.lnote.la.1-p661" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">660</biblScope></bibl><seg type="original" xml:lang="de">octodecim <hi rend="italic">Hv</hi></seg><seg type="translation" xml:lang="en" source="#claude">octodecim Hv</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_33.lnote.la.2-p661" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">660</biblScope></bibl><seg type="original" xml:lang="de">-eta <hi rend="italic">Cb;</hi> et <hi rend="italic">fügt zu Va Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">-eta Cb; Va Lond add et</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_33.lnote.la.3-p661" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">660</biblScope></bibl><seg type="original" xml:lang="de">ex <hi rend="italic">fügt zu Hv</hi></seg><seg type="translation" xml:lang="en" source="#claude">Hv adds ex</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_33.lnote.la.4-p661" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">660</biblScope></bibl><seg type="original" xml:lang="de">q. t. <hi rend="italic">fehlt Hv</hi></seg><seg type="translation" xml:lang="en" source="#claude">q. t. lacking in Hv</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_33.lnote.la.5-p661" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">660</biblScope></bibl><seg type="original" xml:lang="de">XLIIII <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">XLIIII Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_33.lnote.la.6-p661" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">660</biblScope></bibl><seg type="original" xml:lang="de">libras <hi rend="italic">Lb</hi></seg><seg type="translation" xml:lang="en" source="#claude">libras Lb</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

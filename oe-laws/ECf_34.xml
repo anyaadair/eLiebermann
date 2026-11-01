@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECf_34">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf 34</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECf_34</idno>
+        <idno type="citation">ECf 34</idno>
+        <idno type="lawCode">ECf</idno>
+        <idno type="lawCodeAnchor">ECf</idno>
+        <idno type="clause">34</idno>
+        <idno type="citationKey">ECf 34</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">661</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>1115–50, probably 1130–35 (Liebermann, I p. 627)</date><note type="promulgation">1115–50, probably 1130–35 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="34">
+        <head><ref type="lawCode" target="law:ECf">ECf</ref> 34</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 34"><pb n="661" ed="#liebermann"/><ptr type="liebermannNote" n="3" target="#ECf_34.lnote.la.3"/>Quam<ptr type="liebermannNote" n="b" target="#ECf_34.lnote.la.fn.b"/> cum ipse rex<ptr type="liebermannNote" n="4" target="#ECf_34.lnote.la.4"/> Willelmus audiuit et alias leges de regno, maxime appreciatus est eam<ptr type="liebermannNote" n="5" target="#ECf_34.lnote.la.5"/>; et uoluit, ut ipsa<ptr type="liebermannNote" n="6" target="#ECf_34.lnote.la.6"/> obseruaretur per totum regnum; quia dicebat<ptr type="liebermannNote" n="7" target="#ECf_34.lnote.la.7"/>, quod antecessores sui et fere<ptr type="liebermannNote" n="8" target="#ECf_34.lnote.la.8"/> omnium baronum<ptr type="liebermannNote" n="9" target="#ECf_34.lnote.la.9"/> de<ptr type="liebermannNote" n="c" target="#ECf_34.lnote.la.fn.c"/><ptr type="liebermannNote" n="10" target="#ECf_34.lnote.la.10"/> Normannia de Norwegia<ptr type="liebermannNote" n="11" target="#ECf_34.lnote.la.11"/> uenerunt<ptr type="liebermannNote" n="12" target="#ECf_34.lnote.la.12"/>; et legem eorum, cum honesta<ptr type="liebermannNote" n="13" target="#ECf_34.lnote.la.13"/> erat, bene<ptr type="liebermannNote" n="1" target="#ECf_34.lnote.la.1"/> deberent<ptr type="liebermannNote" n="14" target="#ECf_34.lnote.la.14"/> sequi<ptr type="liebermannNote" n="15" target="#ECf_34.lnote.la.15"/>, cum profundior<ptr type="liebermannNote" n="16" target="#ECf_34.lnote.la.16"/> et honestior omnibus<ptr type="liebermannNote" n="17" target="#ECf_34.lnote.la.17"/> aliis esset, scilicet<ptr type="liebermannNote" n="18" target="#ECf_34.lnote.la.18"/> Britonum<ptr type="liebermannNote" n="19" target="#ECf_34.lnote.la.19"/>, Anglorum<ptr type="liebermannNote" n="*" target="#ECf_34.lnote.la.star"/>, Pictorum<ptr type="liebermannNote" n="d" target="#ECf_34.lnote.la.fn.d"/>.</ab>
+        <note type="comparison" source="#liebermann" n="661"><label>printed alongside</label> <ref target="clause:ECfRetr_34">ECf retr 34</ref></note>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 661 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
+        <note type="editorial">Liebermann’s upright (roman) letter a after “appreciatus” refers to his explanatory notes, the Erklärungen (printed as Gesetze III; his note on p. 627 calls it “Band II”), which are not yet added here.</note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34.lnote.la.fn.b" n="b" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">661</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Wilhelms Gefühl der Verwandtschaft mit Dänemark, das auch</hi> Henr. Huntingd. <hi rend="italic">zu</hi> 1066 <hi rend="italic">meldet, passt kaum dazu, dass</hi> 1066 <hi rend="italic">gegen ihn</hi> auxilia miserat [Anglis] cognata terra Danorum, <hi rend="italic">und dass diese ihm später England entreissen wollte. Doch drangen unter Wilhelm I.</hi> (<hi rend="italic">Will. Pictav. p.</hi> 132) <hi rend="italic">Formalien der Dena lagu ins Englische Recht; Steenstrup</hi> Danelag 388. <hi rend="italic">Diese Stelle scheint benutzt von Wace</hi> Roman de Rou 9023—36</seg><seg type="translation" xml:lang="en" source="#claude">William’s feeling of kinship with Denmark, which Henry of Huntingdon also reports under 1066, hardly fits with the fact that in 1066 cognata terra Danorum auxilia miserat [Anglis] against him, and that the Danes later wanted to wrest England from him. But under William I (Will. Pictav. p. 132) formalities of the Danelaw did enter English law; Steenstrup, Danelag 388. This passage seems to be used by Wace, Roman de Rou 9023–36</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34.lnote.la.fn.c" n="c" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">661</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Gallicismus statt Genetivs; s. o.</hi> 24, 1<hi rend="italic">e</hi></seg><seg type="translation" xml:lang="en" source="#claude">a Gallicism instead of the genitive; see above, 24, 1, note e</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34.lnote.la.fn.d" n="d" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">661</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">diese plumpe Erfindung macht den ganzen Satz verdächtig. Verf. ist beeinflusst von</hi> linguis Anglorum, Brittonum, Pictorum (<hi rend="italic">Bæda</hi> I 1), <hi rend="italic">deren letzte</hi> Henr. Huntingd. <hi rend="italic">erstorben nennt</hi></seg><seg type="translation" xml:lang="en" source="#claude">this clumsy invention makes the whole sentence suspect. The author is influenced by linguis Anglorum, Brittonum, Pictorum (Bede I 1), the last of which Henry of Huntingdon calls extinct</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34.lnote.la.star" n="*" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">661</biblScope></bibl><seg type="original" xml:lang="de">Scotorum <hi rend="italic">Rl;</hi> A. et P. et Scotorum <hi rend="italic">Lond; vielleicht beide aus</hi> Bæda I 1</seg><seg type="translation" xml:lang="en" source="#claude">Scotorum Rl; A. et P. et Scotorum Lond; perhaps both from Bede I 1</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34.lnote.la.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">661</biblScope></bibl><seg type="original" xml:lang="de">Quod a rege Anglorum Willelmo auctorizata (-ritate <hi rend="italic">statt</hi> a. est <hi rend="italic">Pl</hi>) est lex regis Eadwardi (Ed. <hi rend="italic">S</hi>) <hi rend="italic">überschreibt Pl S</hi></seg><seg type="translation" xml:lang="en" source="#claude">Pl S head it Quod a rege Anglorum Willelmo auctorizata (-ritate instead of a. est Pl) est lex regis Eadwardi (Ed. S)</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34.lnote.la.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">661</biblScope></bibl><seg type="original" xml:lang="de">W. r. <hi rend="italic">S</hi></seg><seg type="translation" xml:lang="en" source="#claude">W. r. S</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34.lnote.la.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">661</biblScope></bibl><seg type="original" xml:lang="de">eas <hi rend="italic">Hk; fehlt Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">eas Hk; lacking in Ad Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34.lnote.la.6" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">661</biblScope></bibl><seg type="original" xml:lang="de">ipse -rentur <hi rend="italic">Hk; fehlt Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">ipse -rentur Hk; lacking in Ad Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34.lnote.la.7" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">661</biblScope></bibl><seg type="original" xml:lang="de">-bant <hi rend="italic">Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">-bant Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34.lnote.la.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">661</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt S Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in S Ad Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34.lnote.la.9" n="9" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">661</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt S</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in S</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34.lnote.la.10" n="10" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">661</biblScope></bibl><seg type="original" xml:lang="de">Normannie <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">Normannie Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34.lnote.la.11" n="11" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">661</biblScope></bibl><seg type="original" xml:lang="de">-gya <hi rend="italic">Hr;</hi> Norgue. <hi rend="italic">Rl;</hi> -wagia <hi rend="italic">Hk;</hi> -weia <hi rend="italic">S Ad</hi></seg><seg type="translation" xml:lang="en" source="#claude">-gya Hr; Norgue. Rl; -wagia Hk; -weia S Ad</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34.lnote.la.12" n="12" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">661</biblScope></bibl><seg type="original" xml:lang="de">uerunt <hi rend="italic">Ad</hi></seg><seg type="translation" xml:lang="en" source="#claude">uerunt Ad</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34.lnote.la.13" n="13" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">661</biblScope></bibl><seg type="original" xml:lang="de">esset ho. <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">esset ho. Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34.lnote.la.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">661</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Ad Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34.lnote.la.14" n="14" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">661</biblScope></bibl><seg type="original" xml:lang="de">-ret <hi rend="italic">Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">-ret Hr</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34.lnote.la.15" n="15" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">661</biblScope></bibl><seg type="original" xml:lang="de">et tenere <hi rend="italic">fügt zu Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">Ad Do add et tenere</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34.lnote.la.16" n="16" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">661</biblScope></bibl><seg type="original" xml:lang="de">esset <hi rend="italic">fügt zu Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">Hr adds esset</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34.lnote.la.17" n="17" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">661</biblScope></bibl><seg type="original" xml:lang="de">es. om. al. <hi rend="italic">Hk Ad Do;</hi> sit o. a. <hi rend="italic">S</hi></seg><seg type="translation" xml:lang="en" source="#claude">es. om. al. Hk Ad Do; sit o. a. S</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34.lnote.la.18" n="18" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">661</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34.lnote.la.19" n="19" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">661</biblScope></bibl><seg type="original" xml:lang="de">Britannie <hi rend="italic">Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">Britannie Do</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

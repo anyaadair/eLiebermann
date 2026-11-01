@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECfRetr_39">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf retr 39</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECfRetr_39</idno>
+        <idno type="citation">ECf retr 39</idno>
+        <idno type="lawCode">ECf retr</idno>
+        <idno type="lawCodeAnchor">ECfRetr</idno>
+        <idno type="clause">39</idno>
+        <idno type="citationKey">ECfRetr 39</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris: retractatus</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">669</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>c. 1140–59 (Liebermann, I p. 627)</date><note type="promulgation">c. 1140–59 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="39">
+        <head><ref type="lawCode" target="law:ECfRetr">ECf retr</ref> 39</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf retr 39"><pb n="669" ed="#liebermann"/>De<ptr type="liebermannNote" n="19" target="#ECfRetr_39.lnote.la.19"/> <hi rend="bold">emptoribus et macerariis</hi><ptr type="liebermannNote" n="20" target="#ECfRetr_39.lnote.la.20"/><hi rend="bold">. (Qualiter quaue necessitate hoc decretum fuit postea ex parte mutatum.)</hi> Cum autem dictum est, quod <hi rend="bold">nullus hominum</hi> <hi rend="spaced">emeret</hi><ptr type="liebermannNote" n="21" target="#ECfRetr_39.lnote.la.21"/> <hi rend="bold">absque</hi> plegiis animal <hi rend="bold">uiuum,</hi> clamauerunt macherarii<ptr type="liebermannNote" n="22" target="#ECfRetr_39.lnote.la.22"/> de ciuitatibus<ptr type="liebermannNote" n="23" target="#ECfRetr_39.lnote.la.23"/> et<ptr type="liebermannNote" n="24" target="#ECfRetr_39.lnote.la.24"/> <hi rend="bold">(de</hi><ptr type="liebermannNote" n="25" target="#ECfRetr_39.lnote.la.25"/><hi rend="bold">)</hi> burgis, quos<ptr type="liebermannNote" n="26" target="#ECfRetr_39.lnote.la.26"/> Angli uocant<ptr type="liebermannNote" n="27" target="#ECfRetr_39.lnote.la.27"/> flesmongeres<ptr type="liebermannNote" n="28" target="#ECfRetr_39.lnote.la.28"/>, quod <hi rend="bold">una</hi>quaque die oportebat<ptr type="liebermannNote" n="29" target="#ECfRetr_39.lnote.la.29"/> eos animalia <hi rend="bold">uiua</hi> emere<ptr type="liebermannNote" n="30" target="#ECfRetr_39.lnote.la.30"/>, occidere et uendere; <hi rend="bold">nam in occisione animalium erat uita eorum.</hi></ab>
+        <note type="comparison" source="#liebermann" n="669"><label>printed alongside</label> <ref target="clause:ECf_39">ECf 39</ref></note>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 669 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page; the words in bold are the Retractator’s changes to ECf, as Liebermann prints them.</note>
+        <note type="editorial">The heading has two parts: “De emptoribus et macerariis”, found only in Lond, and “Qualiter … mutatum”, in Lb Va Hv (note 19); Liebermann prints the second in brackets.</note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_39.lnote.la.fn.ff" n="ff" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">669</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">C.</hi> 38</seg><seg type="translation" xml:lang="en" source="#claude">c. 38</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_39.lnote.la.fn.g" n="g" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">669</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">eine</hi> Flæscmangara stræt <hi rend="italic">hat Winchester</hi> 996 (<hi rend="italic">Earle</hi> Landchar. 364), banci in macello <hi rend="italic">York im</hi> 11. <hi rend="italic">Jh.</hi> (Domesday), <hi rend="italic">das Wort</hi> mangara <hi rend="italic">manche Nordische Kaufstadt, wie Dublin</hi></seg><seg type="translation" xml:lang="en" source="#claude">Winchester has a Flæscmangara stræt in 996 (Earle, Landchar. 364), York banci in macello in the 11th century (Domesday), and many northern trading towns, such as Dublin, the word mangara</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_39.lnote.la.19" n="19" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">669</biblScope></bibl><seg type="original" xml:lang="de">De e. et m. <hi rend="italic">nur Lond;</hi> De occisionibus animalium contra natale <hi rend="italic">Pl S;</hi> De murmure ementium <hi rend="italic">Cb;</hi> Modificatio precedentium decretorum <hi rend="italic">Db;</hi> Qualiter—mutatum <hi rend="italic">Lb Va Hv</hi></seg><seg type="translation" xml:lang="en" source="#claude">De e. et m. only Lond; De occisionibus animalium contra natale Pl S; De murmure ementium Cb; Modificatio precedentium decretorum Db; Qualiter—mutatum Lb Va Hv</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_39.lnote.la.20" n="20" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">669</biblScope></bibl><seg type="original" xml:lang="de">macecra. <hi rend="italic">K</hi></seg><seg type="translation" xml:lang="en" source="#claude">macecra. K</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_39.lnote.la.21" n="21" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">669</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Va;</hi> abs. pl. u. an. em., cl. <hi rend="italic">Hv</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Va; abs. pl. u. an. em., cl. Hv</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_39.lnote.la.22" n="22" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">669</biblScope></bibl><seg type="original" xml:lang="de">de ciu. macecrini, <hi rend="italic">umgestellt in</hi> m. de c. <hi rend="italic">Cb;</hi> machecrarii <hi rend="italic">Lb;</hi> marchetrarii <hi rend="italic">Va;</hi> macecra. <hi rend="italic">K</hi></seg><seg type="translation" xml:lang="en" source="#claude">de ciu. macecrini, transposed to m. de c. Cb; machecrarii Lb; marchetrarii Va; macecra. K</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_39.lnote.la.23" n="23" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">669</biblScope></bibl><seg type="original" xml:lang="de">-tate <hi rend="italic">Va</hi></seg><seg type="translation" xml:lang="en" source="#claude">-tate Va</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_39.lnote.la.24" n="24" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">669</biblScope></bibl><seg type="original" xml:lang="de">et—flesm. <hi rend="italic">fehlt Hv</hi></seg><seg type="translation" xml:lang="en" source="#claude">et—flesm. lacking in Hv</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_39.lnote.la.25" n="25" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">669</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Cb Lb Co</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Cb Lb Co</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_39.lnote.la.26" n="26" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">669</biblScope></bibl><seg type="original" xml:lang="de">quod <hi rend="italic">K</hi></seg><seg type="translation" xml:lang="en" source="#claude">quod K</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_39.lnote.la.27" n="27" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">669</biblScope></bibl><seg type="original" xml:lang="de">f. u. <hi rend="italic">Co</hi></seg><seg type="translation" xml:lang="en" source="#claude">f. u. Co</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_39.lnote.la.28" n="28" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">669</biblScope></bibl><seg type="original" xml:lang="de">-gares <hi rend="italic">Va</hi></seg><seg type="translation" xml:lang="en" source="#claude">-gares Va</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_39.lnote.la.29" n="29" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">669</biblScope></bibl><seg type="original" xml:lang="de">-teret <hi rend="italic">Va;</hi> -tet eos u. a. e., uen. et oc. <hi rend="italic">Hv</hi></seg><seg type="translation" xml:lang="en" source="#claude">-teret Va; -tet eos u. a. e., uen. et oc. Hv</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_39.lnote.la.30" n="30" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">669</biblScope></bibl><seg type="original" xml:lang="de">et <hi rend="italic">fügt zu K</hi></seg><seg type="translation" xml:lang="en" source="#claude">K adds et</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

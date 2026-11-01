@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECfRetr_36-1">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf retr 36.1</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECfRetr_36-1</idno>
+        <idno type="citation">ECf retr 36.1</idno>
+        <idno type="lawCode">ECf retr</idno>
+        <idno type="lawCodeAnchor">ECfRetr</idno>
+        <idno type="clause">36.1</idno>
+        <idno type="citationKey">ECfRetr 36.1</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris: retractatus</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">666</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>c. 1140–59 (Liebermann, I p. 627)</date><note type="promulgation">c. 1140–59 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="36.1">
+        <head><ref type="lawCode" target="law:ECfRetr">ECf retr</ref> 36.1</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf retr 36.1"><pb n="666" ed="#liebermann"/><hi rend="bold">Tunc</hi> detur ei terminus<ptr type="liebermannNote" n="29" target="#ECfRetr_36-1.lnote.la.29"/> unius mensis, ut <hi rend="bold">tunc</hi> habeat parentes interfecti ex utraque parte generis sui, scilicet<ptr type="liebermannNote" n="30" target="#ECfRetr_36-1.lnote.la.30"/> ex parte patris duodecim et ex parte matris sex<ptr type="liebermannNote" n="31" target="#ECfRetr_36-1.lnote.la.31"/>.</ab>
+        <note type="comparison" source="#liebermann" n="666"><label>printed alongside</label> <ref target="clause:ECf_36-1">ECf 36.1</ref></note>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 666 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page; the words in bold are the Retractator’s changes to ECf, as Liebermann prints them.</note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_36-1.lnote.la.fn.g" n="g" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">666</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Englishry eines Ermordeten erweisen zwei väterliche, ein mütterlicher Verwandter; Maitland</hi> Pleas of the crown for Gloucesters. <hi rend="italic">p.</hi> 1</seg><seg type="translation" xml:lang="en" source="#claude">the Englishry of a murdered man is proved by two kinsmen on the father’s side and one on the mother’s; Maitland, Pleas of the crown for Gloucesters. p. 1</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_36-1.lnote.la.29" n="29" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">666</biblScope></bibl><seg type="original" xml:lang="de">me. u. ter. <hi rend="italic">Cb Lb Va Ph;</hi> m. et unius diei ter. <hi rend="italic">Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">me. u. ter. Cb Lb Va Ph; m. et unius diei ter. Lond</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_36-1.lnote.la.30" n="30" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">666</biblScope></bibl><seg type="original" xml:lang="de">ex patre et matre eius <hi rend="italic">fügt zu Hv</hi></seg><seg type="translation" xml:lang="en" source="#claude">Hv adds ex patre et matre eius</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_36-1.lnote.la.31" n="31" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">666</biblScope></bibl><seg type="original" xml:lang="de">septem <hi rend="italic">Hv</hi></seg><seg type="translation" xml:lang="en" source="#claude">septem Hv</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECf_36-5">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf 36.5</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECf_36-5</idno>
+        <idno type="citation">ECf 36.5</idno>
+        <idno type="lawCode">ECf</idno>
+        <idno type="lawCodeAnchor">ECf</idno>
+        <idno type="clause">36.5</idno>
+        <idno type="citationKey">ECf 36.5</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), pp. <biblScope unit="page">667–668</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>1115–50, probably 1130–35 (Liebermann, I p. 627)</date><note type="promulgation">1115–50, probably 1130–35 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="36.5">
+        <head><ref type="lawCode" target="law:ECf">ECf</ref> 36.5</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 36.5"><pb n="667" ed="#liebermann"/>Et postea iusticia episcopi faciat uenire processionem<ptr type="liebermannNote" n="19" target="#ECf_36-5.lnote.la.19"/> cum sacerdote induto alba<ptr type="liebermannNote" n="g" target="#ECf_36-5.lnote.la.fn.g"/> et stola et clericis<ptr type="liebermannNote" n="20" target="#ECf_36-5.lnote.la.20"/> in superpelliciis<ptr type="liebermannNote" n="21" target="#ECf_36-5.lnote.la.21"/> cum aqua benedicta et cruce et candelabris et thuribulo<ptr type="liebermannNote" n="22" target="#ECf_36-5.lnote.la.22"/> cum igne et incenso; et sic extrahant<ptr type="liebermannNote" n="23" target="#ECf_36-5.lnote.la.23"/> mortuum a terra, ponentes in feretro<ptr type="liebermannNote" n="h" target="#ECf_36-5.lnote.la.fn.h"/> et deportent eum ad ecclesiam; cantata missa et facto<ptr type="liebermannNote" n="24" target="#ECf_36-5.lnote.la.24"/> seruitio, interrent eum sicut Christianum. Et ab ipso die in XVI<ptr type="liebermannNote" n="25" target="#ECf_36-5.lnote.la.25"/> diebus reddat<ptr type="liebermannNote" n="26" target="#ECf_36-5.lnote.la.26"/> episcopo forisfacturas<ptr type="liebermannNote" n="27" target="#ECf_36-5.lnote.la.27"/> tres: unam<ptr type="liebermannNote" n="28" target="#ECf_36-5.lnote.la.28"/> quia legalem<ptr type="liebermannNote" n="i" target="#ECf_36-5.lnote.la.fn.i"/> iniuste pro latrone interfecit; alteram<ptr type="liebermannNote" n="29" target="#ECf_36-5.lnote.la.29"/> <pb n="668" ed="#liebermann"/>quia fratrem suum pro latrone interrauit<ptr type="liebermannNote" n="1" target="#ECf_36-5.lnote.la.1"/>, quod<ptr type="liebermannNote" n="2" target="#ECf_36-5.lnote.la.2"/> Angli dicunt his emcristen<ptr type="liebermannNote" n="a" target="#ECf_36-5.lnote.la.fn.a-p668"/><ptr type="liebermannNote" n="3" target="#ECf_36-5.lnote.la.3"/>; terciam<ptr type="liebermannNote" n="4" target="#ECf_36-5.lnote.la.4"/> quia uadimonium dedit<ptr type="liebermannNote" n="5" target="#ECf_36-5.lnote.la.5"/> ad disrationandum<ptr type="liebermannNote" n="6" target="#ECf_36-5.lnote.la.6"/> se, et non potuit.</ab>
+        <note type="comparison" source="#liebermann" n="667"><label>printed alongside</label> <ref target="clause:ECfRetr_36-5">ECf retr 36.5</ref></note>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 667–668 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
+        <note type="editorial">Liebermann’s lettering of the notes starts again at a on p. 668: the note a to “emcristen” is distinct from the notes g–i on p. 667.</note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_36-5.lnote.la.fn.g" n="g" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">667</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">der Zusatz des Retr. ist nicht jünger: den Manipel trug der Priester längst; Braun</hi> Priesterl. Gewänder 55. 75</seg><seg type="translation" xml:lang="en" source="#claude">the Retr.’s addition is not later: the priest had long worn the maniple; Braun, Priesterl. Gewänder 55. 75</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_36-5.lnote.la.fn.h" n="h" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">667</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vom</hi> sterquilinium in cimiterium <hi rend="italic">ward ein nach dem Tode unschuldig Befundener</hi> 1259 <hi rend="italic">übertragen;</hi> Math. Paris. V 739</seg><seg type="translation" xml:lang="en" source="#claude">in 1259 a man found innocent after his death was moved from the sterquilinium into the cimiterium; Math. Paris. V 739</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_36-5.lnote.la.fn.i" n="i" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">667</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Strafgeld hierfür gehört doch dem weltlichen Gerichtsherrn; dazu kommen Wergeld an die Sippe und Mannbusse an den Herrn des Erschlagenen</hi></seg><seg type="translation" xml:lang="en" source="#claude">yet the fine for this belongs to the secular lord of the court; in addition there are the wergeld to the kin and the manbot to the lord of the slain man</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_36-5.lnote.la.fn.a-p668" n="a" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">668</biblScope></bibl><seg type="original" xml:lang="de">Nebenchristen</seg><seg type="translation" xml:lang="en" source="#claude">fellow Christians</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_36-5.lnote.la.19" n="19" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">667</biblScope></bibl><seg type="original" xml:lang="de">sacerdotem c. processione, indutum <hi rend="italic">Cl</hi></seg><seg type="translation" xml:lang="en" source="#claude">sacerdotem c. processione, indutum Cl</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_36-5.lnote.la.20" n="20" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">667</biblScope></bibl><seg type="original" xml:lang="de">-cos <hi rend="italic">Cl</hi></seg><seg type="translation" xml:lang="en" source="#claude">-cos Cl</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_36-5.lnote.la.21" n="21" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">667</biblScope></bibl><seg type="original" xml:lang="de">suppell. <hi rend="italic">Rl S</hi></seg><seg type="translation" xml:lang="en" source="#claude">suppell. Rl S</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_36-5.lnote.la.22" n="22" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">667</biblScope></bibl><seg type="original" xml:lang="de">-lis <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">-lis Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_36-5.lnote.la.23" n="23" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">667</biblScope></bibl><seg type="original" xml:lang="de">-traant <hi rend="italic">Rl;</hi> -hent <hi rend="italic">Cl</hi></seg><seg type="translation" xml:lang="en" source="#claude">-traant Rl; -hent Cl</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_36-5.lnote.la.24" n="24" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">667</biblScope></bibl><seg type="original" xml:lang="de">sancto <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">sancto Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_36-5.lnote.la.25" n="25" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">667</biblScope></bibl><seg type="original" xml:lang="de">VI <hi rend="italic">S;</hi> XV <hi rend="italic">Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">VI S; XV Hr</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_36-5.lnote.la.26" n="26" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">667</biblScope></bibl><seg type="original" xml:lang="de">-det <hi rend="italic">S</hi></seg><seg type="translation" xml:lang="en" source="#claude">-det S</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_36-5.lnote.la.27" n="27" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">667</biblScope></bibl><seg type="original" xml:lang="de">t. f. <hi rend="italic">Hk Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">t. f. Hk Hr</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_36-5.lnote.la.28" n="28" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">667</biblScope></bibl><seg type="original" xml:lang="de">unum pro latrone interfecto <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">unum pro latrone interfecto Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_36-5.lnote.la.29" n="29" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">667</biblScope></bibl><seg type="original" xml:lang="de">-rum <hi rend="italic">Hk;</hi> secundam <hi rend="italic">Cl</hi></seg><seg type="translation" xml:lang="en" source="#claude">-rum Hk; secundam Cl</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_36-5.lnote.la.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">667</biblScope></bibl><seg type="original" xml:lang="de">interfecit <hi rend="italic">Cl</hi></seg><seg type="translation" xml:lang="en" source="#claude">interfecit Cl</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_36-5.lnote.la.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">667</biblScope></bibl><seg type="original" xml:lang="de">q. A. d. h. e. <hi rend="italic">fehlt Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">q. A. d. h. e. lacking in Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_36-5.lnote.la.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">667</biblScope></bibl><seg type="original" xml:lang="de">euencr. <hi rend="italic">Cl;</hi> eumcristin <hi rend="italic">Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">euencr. Cl; eumcristin Hr</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_36-5.lnote.la.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">667</biblScope></bibl><seg type="original" xml:lang="de">-cium <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">-cium Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_36-5.lnote.la.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">667</biblScope></bibl><seg type="original" xml:lang="de">ad dir. se de. <hi rend="italic">S;</hi> ad disr. de. nec p. <hi rend="italic">Cl</hi></seg><seg type="translation" xml:lang="en" source="#claude">ad dir. se de. S; ad disr. de. nec p. Cl</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_36-5.lnote.la.6" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">667</biblScope></bibl><seg type="original" xml:lang="de">dir. et non poterat <hi rend="italic">Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">dir. et non poterat Hr</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

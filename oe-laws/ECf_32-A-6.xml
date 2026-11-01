@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECf_32-A-6">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf 32 A 6</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECf_32-A-6</idno>
+        <idno type="citation">ECf 32 A 6</idno>
+        <idno type="lawCode">ECf</idno>
+        <idno type="lawCodeAnchor">ECf</idno>
+        <idno type="clause">32 A 6</idno>
+        <idno type="citationKey">ECf 32 A 6</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">655</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>1115–50, probably 1130–35 (Liebermann, I p. 627)</date><note type="promulgation">1115–50, probably 1130–35 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="32 A 6">
+        <head><ref type="lawCode" target="law:ECf">ECf</ref> 32 A 6</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 32 A 6"><pb n="655" ed="#liebermann"/>Ita debent facere omnes principes et comites, et simul iurare coram episcopis regni in folkesmoth<ptr type="liebermannNote" n="15" target="#ECf_32-A-6.lnote.la.15"/>; et similiter omnes proceres regni et milites et liberi homines uniuersi totius regni Britannie<ptr type="liebermannNote" n="1" target="#ECf_32-A-6.lnote.la.1"/> facere debent in pleno folkesmot<ptr type="liebermannNote" n="16" target="#ECf_32-A-6.lnote.la.16"/> fidelitatem<ptr type="liebermannNote" n="l" target="#ECf_32-A-6.lnote.la.fn.l"/> domino regi, ut predictum est, coram episcopis regni.</ab>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 655 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
+        <note type="editorial">This passage is not part of ECf or ECf retr: it is one of the additions of the London collection (Leges Anglorum s. XIII in. Londoniis collectae), which Liebermann prints in smaller type across the page as an insertion into ECf retr. 32 (32 A–E, pp. 655–660). The dictionary cites it as “ECf 32 A …”, so it is kept with ECf here.</note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_32-A-6.lnote.la.fn.l" n="l" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">655</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">ähnlich</hi> Wl art. retr. 2</seg><seg type="translation" xml:lang="en" source="#claude">similarly Wl art. retr. 2</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_32-A-6.lnote.la.15" n="15" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">655</biblScope></bibl><seg type="original" xml:lang="de">folcmote <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">folcmote Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_32-A-6.lnote.la.16" n="16" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">655</biblScope></bibl><seg type="original" xml:lang="de">-oth <hi rend="italic">K;</hi> folcmote <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">-oth K; folcmote Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_32-A-6.lnote.la.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">655</biblScope></bibl><seg type="original" xml:lang="de">Bryt. <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">Bryt. Ld</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

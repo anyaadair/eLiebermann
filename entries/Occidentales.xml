@@ -19,6 +19,7 @@
     <encodingDesc>
       <listPrefixDef>
         <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
         <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
         <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
       </listPrefixDef>
@@ -36,7 +37,7 @@
         </form>
         <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">Occidentales</hi> Saxonici <hi rend="italic">Leute von Wessex, darunter Exeters Bewohner</hi> <ref type="lawCode" target="law:ECf">ECf</ref> 35,1e [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>.</hi> <ref type="entry" target="entry:Westseax-e">Westseaxe</ref>]</dictScrap>
         <xr type="compare"><ref target="entry:Westseax-e">Westseax[e]</ref></xr>
-        <xr type="lawCode"><ref target="law:ECf">ECf 35,1e</ref></xr>
+        <xr type="lawCode"><ref target="clause:ECf_35-1e">ECf 35,1e</ref></xr>
       </entry>
     </body>
   </text>

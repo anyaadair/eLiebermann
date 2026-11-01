@@ -1,0 +1,68 @@
+# Liebermann, Gesetze I p. 653: ECf and ECf retr 30,3–31,1
+D = lambda de, en: (de, en)
+FA = D('lanceam figere <i>symbolisirt Friedensbeginn</i> (<i>Ducange</i>); <i>in Steiermark gelobt dem neuen Markrichter die Bürgerschaft</i> Gehorsamb mit Anrierung des Gerichtsstabes (<i>Siegel</i> Handschlag 35); <i>Engländer schwören und geloben Frieden auf eine Waffe</i> (<i>oben S.</i> 392, <i>c.</i> 4): <i>also aus echten Reminiscenzen erwuchs diese Phantasie. Vgl.</i> gairethinx <i>bei Bruckner</i> Sprache der Langobarden, <i>Gloss.</i>',
+       'lanceam figere symbolizes the beginning of peace (Ducange); in Styria the citizens pledge obedience to the new march judge by touching the staff of justice (Siegel, Handschlag 35); Englishmen swear and pledge peace on a weapon (above, p. 392, c. 4): so this fancy grew out of genuine reminiscences. Cf. gairethinx in Bruckner, Sprache der Langobarden, Gloss.')
+FB = D('confirma[tio] <i>ward bezeugt durch</i> vapnatak, <i>Nordisch ‘Waffenanrühren der Versammlung’;</i> tac <i>heisst Nordisch ‘Griff, Fassen, Nehmen’. Schon</i> Ann. Anglosax. <i>seit</i> 1075 <i>braucht aber das Lehnwort</i> tacan; <i>Verf. meint also vielleicht irrig</i> Angelsachsen <i>nicht allein Nordischer Herkunft. — Den Retr.</i> (<i>vgl.</i> 35, 1c: expressius dicimus) <i>verführt Gleichklang mit dem Lateinischen zum Irrthum, es gebe ein *</i>tac: Berührung',
+       'confirma[tio] was attested by vapnatak, Norse ‘touching of weapons by the assembly’; tac in Norse means ‘grip, grasping, taking’. But the Anglo-Saxon annals already use the loanword tacan from 1075; so the author perhaps wrongly means Anglo-Saxons not solely of Norse origin. — Similarity of sound with the Latin leads the Retractator (cf. 35, 1c: expressius dicimus) into the error that there is a *tac: touch')
+FC = D('<i>Aspiration der Initiale, aus Nord.</i> þriðjungr, <i>in einigen Hss. an mehreren Stellen, stand im Orig. vielleicht stets</i>', 'the aspiration of the initial, from Norse þriðjungr, in some MSS in several places, perhaps stood always in the original')
+FD = D('<i>Grafschaft; vgl.</i> 5, 3. 9', 'shire; cf. 5, 3. 9')
+FE = D('<i>wiederholt aus</i> 30, 1', 'repeated from 30, 1')
+FF = D('<i>nicht etwa ein fester District</i>', 'not, say, a fixed district')
+HV = D('<i>fehlt Hv</i>', 'lacking in Hv')
+CLAUSES = [
+ {'code': 'ECf', 'n': '30.3', 'page': 653, 'erkl': ['hastam'],
+  'text': 'Et ipse erigebat lanceam{f:a} suam in altum, et{1} omnes de{2} lanceis suis tangebant hastam eius, et sic confirmabant se sibi etiam{3} de armis:',
+  'notes': {'f:a': FA, 1: D('tunc <i>fügt zu Ad Do</i>', 'Ad Do add tunc'), 2: D('tang. ha. e. de l. su. <i>Ad Do</i>', 'tang. ha. e. de l. su. Ad Do'), 3: D('et <i>S Ad</i>', 'et S Ad')}},
+ {'code': 'ECf', 'n': '30.4', 'page': 653,
+  'text': 'quia arma uocant{4} ipsi{5} wap[n]a{6} et{7} taccare{8}: confirmare{f:b}.',
+  'notes': {'f:b': FB, 4: D('uocabant <i>Hk</i>', 'uocabant Hk'), 5: D('<i>fehlt Hk S Ad Do</i>', 'lacking in Hk S Ad Do'),
+            6: D('wapa <i>Hk;</i> wepnen <i>Ad;</i> wepne <i>Do;</i> wappa <i>Rl; vielleicht las Or</i> wapā = wapan <i>oder</i> wępne', 'wapa Hk; wepnen Ad; wepne Do; wappa Rl; perhaps Or read wapā = wapan or wępne'),
+            7: D('<i>fehlt Ad</i>', 'lacking in Ad'), 8: D('tractare et <i>Ad;</i> tactare quod est <i>S</i>', 'tractare et Ad; tactare quod est S')},
+  'editorial': ['Liebermann leaves the ECf column empty at 30, 4a and 30, 4b: these sentences are only in ECf retr.']},
+ {'code': 'ECf', 'n': '31', 'page': 653, 'erkl': ['terciam'],
+  'text': 'Erant etiam{9} alie potestates super wapentagiis{10}, quas {f:c}trehingas{11} uocabant{12}, scilicet super{13} terciam partem prouincie{f:d}.',
+  'notes': {'f:c': FC, 'f:d': FD, 9: D('et <i>Hr</i>', 'et Hr'), 10: D('-gias <i>Rl;</i> -tagia <i>Hk;</i> -tachia <i>Hr</i>', '-gias Rl; -tagia Hk; -tachia Hr'),
+            11: D('-higgas <i>Rl S;</i> tres higgas <i>Hr;</i> tringas <i>Ad;</i> dingas <i>Do</i>', '-higgas Rl S; tres higgas Hr; tringas Ad; dingas Do'), 12: D('uocant <i>Hk</i>', 'uocant Hk'), 13: D('<i>fehlt Hk Ad Do</i>', 'lacking in Hk Ad Do')}},
+ {'code': 'ECf', 'n': '31a', 'page': 653, 'erkl': ['[þ]rehinggrefes'],
+  'text': 'Et qui super ipsam dominabantur, uocabantur{14} [þ]rehinggrefes{15}, ad quos deferebantur cause que{16} non poterant diffiniri in wapentagiis.',
+  'notes': {14: D('<i>fehlt S</i>', 'lacking in S'), 15: D('trehiggreues <i>Rl;</i> trehiggres <i>S;</i> threhiggres <i>Hr;</i> trehinghef <i>Hk</i> [f <i>wohl ursprünglich, vgl. Retr. Lond</i>]; tþringe <i>Ad</i>', 'trehiggreues Rl; trehiggres S; threhiggres Hr; trehinghef Hk [f probably original, cf. Retr. Lond]; tþringe Ad'),
+            16: D('quando <i>S</i>', 'quando S')}},
+ {'code': 'ECf', 'n': '31.1', 'page': 653,
+  'text': 'Et quod Angli{17} uocabant hundredum{18}, isti{19}: wapentagium{f:e}; et quod illi{20} uocabant tria{21} hundreda{f:f} uel{22} IIII uel{23} plurima{24}, isti uocabant{25} [þ]rehing{26}.',
+  'notes': {'f:e': FE, 'f:f': FF, 17: D('alii <i>zu emendiren lehnt ab Steenstrup</i> Danelag 96 <i>mit Recht</i>', 'Steenstrup, Danelag 96, rightly declines to emend to alii'), 18: D('-da <i>Hk Hr</i>', '-da Hk Hr'),
+            19: D('uocant <i>fügt zu S Hr Do;</i> uocabant <i>Ad</i>', 'S Hr Do add uocant; uocabant Ad'), 20: D('ipsi <i>Ad Do</i>', 'ipsi Ad Do'), 21: D('duo h. uel tria uel plur. <i>Hk</i>', 'duo h. uel tria uel plur. Hk'), 22: D('u. IIII <i>fehlt Ad Do</i>', 'u. IIII lacking in Ad Do'),
+            23: D('<i>fehlt Rl</i>', 'lacking in Rl'), 24: D('plura <i>Ad Do</i>', 'plura Ad Do'), 25: D('uocant <i>S</i>', 'uocant S'), 26: D('tþrihingam <i>Ad;</i> tr. <i>übr.;</i> treigg <i>S;</i> trydinge <i>Do</i>', 'tþrihingam Ad; tr. the others; treigg S; trydinge Do')}},
+
+ {'code': 'ECfRetr', 'n': '30.3', 'page': 653,
+  'text': 'Ipse <b>uero,</b> erecta lancea sua{1}, <b>ab omnibus secundum morem fedus</b>{1} <b>accipiebat.</b> Omnes <b>enim</b>{2}<b>, quotquot uenissent, cum</b> lanceis suis <b>ipsius</b> hastam tangebant, et <b>ita</b> se confirmabant <b>per contactum</b>{3} armorum, <b>pace palam concessa.</b>',
+  'notes': {'f:a': FA, 1: HV, 2: D('uero <i>Hv</i>', 'uero Hv'), 3: D('con <i>übergeschr. Cb;</i> tactum <i>Hv</i>', 'con written above Cb; tactum Hv')}},
+ {'code': 'ECfRetr', 'n': '30.4', 'page': 653,
+  'text': '<b>Anglice uero</b>{4} arma uocantur wepne{5} et taccare{6}: confirmare{7}, <b>quasi armorum confirmacio.</b>',
+  'notes': {4: D('autem <i>Hv;</i> enim <i>Cb Lond Ld</i>', 'autem Hv; enim Cb Lond Ld'), 5: D('<i>so Cb;</i> -pene <i>K;</i> wapne <i>Hv;</i> ƿæpnu <i>Ld</i> [<i>archaisirend</i>]; wapen <i>übr.</i>', 'so Cb; -pene K; wapne Hv; ƿæpnu Ld [archaizing]; wapen the others'),
+            6: D('tactare <i>Lb;</i> tractare <i>Va</i>', 'tactare Lb; tractare Va'), 7: D('-ri <i>Hv</i>', '-ri Hv')}},
+ {'code': 'ECfRetr', 'n': '30.4a', 'page': 653,
+  'text': 'Uel{f:b}, ut{8} magis expresse{9} secundum linguam{10} Anglicam dicamus, wapentac{11}: armorum tactus; wapen{12} enim arma sonat, tac tactus est.',
+  'notes': {'f:b': FB, 8: D('m. ut <i>Hv</i>', 'm. ut Hv'), 9: D('-sce <i>Va</i>', '-sce Va'), 10: D('A. l. <i>Hv</i>', 'A. l. Hv'), 11: D('id est <i>fügt zu Lb Va Ph L;</i> wep. <i>Lond Ld</i>', 'Lb Va Ph L add id est; wep. Lond Ld'),
+            12: D('est; ƿepnu <i>Ld;</i> wapen—est <i>fehlt Hv</i>', 'est; ƿepnu Ld; wapen—est lacking in Hv')},
+  'editorial': ['Liebermann prints 30, 4a and 30, 4b, which ECf lacks, in the larger type of the ECf column.']},
+ {'code': 'ECfRetr', 'n': '30.4b', 'page': 653,
+  'text': 'Quamobrem potest conici{14}, quod hac{1} de{15} causa totus ille{16} conuentus dicitur wapentac, eo{1} quod per tactum{17} armorum suorum ad{18} inuicem confederati sunt{19}.',
+  'notes': {1: HV, 14: D('coñici <i>Lb;</i> coniici <i>Va;</i> cognosci <i>Lond Ld</i>', 'coñici Lb; coniici Va; cognosci Lond Ld'), 15: D('<i>fehlt Cb</i>', 'lacking in Cb'), 16: D('c. i. <i>Cb</i>', 'c. i. Cb'),
+            17: D('-tus <i>Hv;</i> conta. (<i>geänd. aus</i> tactum <i>Cb</i>) <i>Cb Va</i>', '-tus Hv; conta. (altered from tactum Cb) Cb Va'), 18: D('conf. s. ad inu. <i>Hv</i>', 'conf. s. ad inu. Hv'), 19: D('sint <i>Cb</i>', 'sint Cb')},
+  'editorial': ['Liebermann prints 30, 4a and 30, 4b, which ECf lacks, in the larger type of the ECf column.', 'There is no note 13 in the ECf retr column of this page: Liebermann’s numbering goes from 12 to 14.']},
+ {'code': 'ECfRetr', 'n': '31', 'page': 653,
+  'text': '<b><sp>De</sp></b>{20} <b><sp>trehingis</sp></b>{21} <b><sp>et wapentagiis</sp></b>{22} <b><sp>et hundredis. (Quid sit</sp></b>{23} <b><sp>wapentagium et</sp></b>{24} <b><sp>trihingum</sp></b>{25} <b><sp>et hundredum.)</sp></b> Erant etiam{26} alie potestates super wapentagia{27}, quas trehingas{28} <b>dicebant, quod erat</b> tertia{29} pars{15} prouincie.',
+  'notes': {'f:c': FC, 'f:d': FD,
+            20: D('<i>so Pl S;</i> De t. et ledis <i>Lond;</i> De aliis potestatibus <i>Cb;</i> Quid—hundr. <i>übr.</i>', 'so Pl S; De t. et ledis Lond; De aliis potestatibus Cb; Quid—hundr. the others'),
+            21: D('-ges <i>Lond;</i> -gges <i>Pl;</i> treinges <i>S;</i> trihingis <i>Ld</i>', '-ges Lond; -gges Pl; treinges S; trihingis Ld'), 22: D('-achiis <i>Pl</i>', '-achiis Pl'), 23: D('inter <i>fügt zu Lb Va Hv</i>', 'Lb Va Hv add inter'),
+            24: D('quid thenges, quid hu. <i>Db</i>', 'quid thenges, quid hu. Db'), 25: D('-gam <i>Hv;</i> trihengum <i>Lb Va</i>', '-gam Hv; trihengum Lb Va'), 26: D('enim, <i>am Rande Corrector:</i> etiam <i>Cb;</i> et <i>fügt zu Cb Lb Va Lond Ld</i>', 'enim, in the margin a corrector: etiam Cb; Cb Lb Va Lond Ld add et'),
+            27: D('-ium <i>Hv;</i> -chia <i>Ld</i>', '-ium Hv; -chia Ld'), 28: D('trihinges <i>Va;</i> uocabant ðrihinges <i>Ld;</i> trihenges <i>Lb Ph</i>', 'trihinges Va; uocabant ðrihinges Ld; trihenges Lb Ph'), 29: D('quarta <i>Cb</i>', 'quarta Cb'), 15: D('<i>fehlt Cb</i>', 'lacking in Cb')}},
+ {'code': 'ECfRetr', 'n': '31a', 'page': 653,
+  'text': 'Qui <b>uero</b> super <b>eas</b>{1} dominabantur: trehingreues{30}; ad <b>hos</b> deferebantur{31} cause{32} que non poterant diffiniri{33} in wapentagiis.',
+  'notes': {1: HV, 30: D('<i>fehlt Hv;</i> -greue <i>Cb;</i> -grefe <i>Lond;</i> ðrihingerefas <i>Ld</i> [<i>archaisirend?</i>]; trihengr. <i>Ph</i>', 'lacking in Hv; -greue Cb; -grefe Lond; ðrihingerefas Ld [archaizing?]; trihengr. Ph'),
+            31: D('diff. <i>K</i>', 'diff. K'), 32: D('ēē (<i>d. h.</i> esse) qui <i>Lb;</i> esse <i>Ph;</i> trihinguie <i>fügt zu Hv</i>', 'ēē (i.e. esse) qui Lb; esse Ph; Hv adds trihinguie'), 33: D('defi. <i>Va Lond Ld</i>', 'defi. Va Lond Ld')}},
+ {'code': 'ECfRetr', 'n': '31.1', 'page': 653,
+  'text': '<b>Sicque</b>{1} quod Angli uocabant hundredum{34}, isti: wapentagium{35}; et quod{36} <b>Anglice</b> uocabantur{37} tria uel quatuor uel plura hundreda{38}, isti uocabant{39} þrihinga{40}.',
+  'notes': {'f:e': FE, 'f:f': FF, 1: HV, 34: D('-etum <i>Cb Va</i>', '-etum Cb Va'), 35: D('-tag <i>Va Hv;</i> -tachium <i>Ld</i>', '-tag Va Hv; -tachium Ld'), 36: D('<i>fehlt Ph</i>', 'lacking in Ph'), 37: D('-bant <i>Ld</i>', '-bant Ld'),
+            38: D('-eta <i>Cb Va</i>', '-eta Cb Va'), 39: D('uocant <i>Cb</i>', 'uocant Cb'), 40: D('<i>so Cb Lb Db Lond;</i> ðr. <i>Ld;</i> dr. <i>Va;</i> tr. <i>Hv</i>', 'so Cb Lb Db Lond; ðr. Ld; dr. Va; tr. Hv')}},
+]

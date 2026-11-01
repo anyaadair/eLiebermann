@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECf_35-1d">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf 35.1d</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECf_35-1d</idno>
+        <idno type="citation">ECf 35.1d</idno>
+        <idno type="lawCode">ECf</idno>
+        <idno type="lawCodeAnchor">ECf</idno>
+        <idno type="clause">35.1d</idno>
+        <idno type="citationKey">ECf 35.1d</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">665</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>1115–50, probably 1130–35 (Liebermann, I p. 627)</date><note type="promulgation">1115–50, probably 1130–35 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="35.1d">
+        <head><ref type="lawCode" target="law:ECf">ECf</ref> 35.1d</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 35.1d"><pb n="665" ed="#liebermann"/>Quodsi expressius<ptr type="liebermannNote" n="ff" target="#ECf_35-1d.lnote.la.fn.ff"/> uolumus dicere, dicemus<ptr type="liebermannNote" n="21" target="#ECf_35-1d.lnote.la.21"/>, quod in quadam parte Saxoniæ<ptr type="liebermannNote" n="g" target="#ECf_35-1d.lnote.la.fn.g"/><ptr type="liebermannNote" n="22" target="#ECf_35-1d.lnote.la.22"/> ‘ling’<ptr type="liebermannNote" n="23" target="#ECf_35-1d.lnote.la.23"/> ymago<ptr type="liebermannNote" n="h" target="#ECf_35-1d.lnote.la.fn.h"/> dicebatur<ptr type="liebermannNote" n="24" target="#ECf_35-1d.lnote.la.24"/>, ‘aþel’<ptr type="liebermannNote" n="25" target="#ECf_35-1d.lnote.la.25"/> Anglice<ptr type="liebermannNote" n="26" target="#ECf_35-1d.lnote.la.26"/>: nobilis; quod coniunctum<ptr type="liebermannNote" n="27" target="#ECf_35-1d.lnote.la.27"/> ‘aþeling’<ptr type="liebermannNote" n="28" target="#ECf_35-1d.lnote.la.28"/>, id est<ptr type="liebermannNote" n="29" target="#ECf_35-1d.lnote.la.29"/> nobilis ymago dicitur<ptr type="liebermannNote" n="30" target="#ECf_35-1d.lnote.la.30"/>.</ab>
+        <note type="comparison" source="#liebermann" n="665"><label>printed alongside</label> <ref target="clause:ECfRetr_35-1d">ECf retr 35.1d</ref></note>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 665 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_35-1d.lnote.la.fn.ff" n="ff" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">665</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vgl. Retr.</hi> 30, 4<hi rend="italic">a</hi></seg><seg type="translation" xml:lang="en" source="#claude">cf. Retr. 30, 4a</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_35-1d.lnote.la.fn.g" n="g" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">665</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">wohl</hi> Südengland (<hi rend="italic">nicht mit Coenwulf von Mercien</hi> ganz England; <hi rend="italic">Birch</hi> Cart. Sax. 288), <hi rend="italic">wie o.</hi> 33</seg><seg type="translation" xml:lang="en" source="#claude">probably southern England (not, as with Coenwulf of Mercia, all England; Birch, Cart. Sax. 288), as above, 33</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_35-1d.lnote.la.fn.h" n="h" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">665</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">das Suffix ist in</hi> æþeling <hi rend="italic">nur</hi> -ing <hi rend="italic">nicht (wie in</hi> hinderling) -ling; <hi rend="italic">den Irrthum des Verfassers veranlasste vielleicht</hi> [ge]lic: similitudo <hi rend="italic">oder</hi> likning: Abbild. <hi rend="italic">Da Verf. damaliges</hi> hinderling (entartet, niedrig, unecht), <hi rend="italic">das auch bei Orm vorkommt, aus Exeter citirt, so hörte er dort Gebürtige; es lebt noch in Devonshire.</hi></seg><seg type="translation" xml:lang="en" source="#claude">the suffix in æþeling is only -ing, not (as in hinderling) -ling; the author’s error was perhaps caused by [ge]lic: similitudo, or likning: image. Since the author quotes the hinderling of his day (degenerate, base, spurious), which also occurs in Orm, from Exeter, he heard people born there; it still lives in Devonshire.</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_35-1d.lnote.la.21" n="21" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">665</biblScope></bibl><seg type="original" xml:lang="de">dicimus <hi rend="italic">Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">dicimus Hr</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_35-1d.lnote.la.22" n="22" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">665</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">so, ausnahmsweise Diphthong bewahrend, Rl;</hi> Saxonice terre, <hi rend="italic">aber</hi> terre <hi rend="italic">unterstrichen und am Rande dafür</hi> lingue <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">so Rl, which exceptionally keeps the diphthong; Saxonice terre Hk, but with terre underlined and lingue in the margin instead</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_35-1d.lnote.la.23" n="23" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">665</biblScope></bibl><seg type="original" xml:lang="de">linx <hi rend="italic">Rl</hi></seg><seg type="translation" xml:lang="en" source="#claude">linx Rl</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_35-1d.lnote.la.24" n="24" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">665</biblScope></bibl><seg type="original" xml:lang="de">dicitur <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">dicitur Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_35-1d.lnote.la.25" n="25" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">665</biblScope></bibl><seg type="original" xml:lang="de">adþel <hi rend="italic">Rl;</hi> adela <hi rend="italic">Hk Hr;</hi> adelā <hi rend="italic">Cl;</hi> ældela <hi rend="italic">S</hi></seg><seg type="translation" xml:lang="en" source="#claude">adþel Rl; adela Hk Hr; adelā Cl; ældela S</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_35-1d.lnote.la.26" n="26" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">665</biblScope></bibl><seg type="original" xml:lang="de">Anglie <hi rend="italic">Cl</hi></seg><seg type="translation" xml:lang="en" source="#claude">Anglie Cl</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_35-1d.lnote.la.27" n="27" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">665</biblScope></bibl><seg type="original" xml:lang="de">sonat <hi rend="italic">fügt zu Cl;</hi> scilicet <hi rend="italic">Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">Cl adds sonat; scilicet Hr</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_35-1d.lnote.la.28" n="28" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">665</biblScope></bibl><seg type="original" xml:lang="de">ade. <hi rend="italic">Hk;</hi> adþ. <hi rend="italic">Rl;</hi> adl. <hi rend="italic">Hr;</hi> eþel. <hi rend="italic">Cl S</hi></seg><seg type="translation" xml:lang="en" source="#claude">ade. Hk; adþ. Rl; adl. Hr; eþel. Cl S</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_35-1d.lnote.la.29" n="29" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">665</biblScope></bibl><seg type="original" xml:lang="de">quod <hi rend="italic">fügt zu Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">Hr adds quod</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_35-1d.lnote.la.30" n="30" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">665</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">aus Rl</hi></seg><seg type="translation" xml:lang="en" source="#claude">from Rl</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

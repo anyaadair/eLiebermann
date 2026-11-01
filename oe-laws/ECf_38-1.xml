@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECf_38-1">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf 38.1</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECf_38-1</idno>
+        <idno type="citation">ECf 38.1</idno>
+        <idno type="lawCode">ECf</idno>
+        <idno type="lawCodeAnchor">ECf</idno>
+        <idno type="clause">38.1</idno>
+        <idno type="citationKey">ECf 38.1</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">668</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>1115–50, probably 1130–35 (Liebermann, I p. 627)</date><note type="promulgation">1115–50, probably 1130–35 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="38.1">
+        <head><ref type="lawCode" target="law:ECf">ECf</ref> 38.1</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 38.1"><pb n="668" ed="#liebermann"/>— <ptr type="liebermannNote" n="e" target="#ECf_38-1.lnote.la.fn.e"/>Et si fuerit aliquod opus<ptr type="liebermannNote" n="†" target="#ECf_38-1.lnote.la.dagger"/> aureum uel argenteum, unde uenditor debeat dubitari<ptr type="liebermannNote" n="23" target="#ECf_38-1.lnote.la.23"/>, non ematur preter aurifabros<ptr type="liebermannNote" n="f" target="#ECf_38-1.lnote.la.fn.f"/> et monetarios. Et ipsi<ptr type="liebermannNote" n="24" target="#ECf_38-1.lnote.la.24"/> si uiderint, quod sit de ecclesia uel de thesauris<ptr type="liebermannNote" n="g" target="#ECf_38-1.lnote.la.fn.g"/>, non ematur sine plegio<ptr type="liebermannNote" n="25" target="#ECf_38-1.lnote.la.25"/> —.</ab>
+        <note type="comparison" source="#liebermann" n="668"><label>printed alongside</label> <ref target="clause:ECfRetr_38-1">ECf retr 38.1</ref></note>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 668 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
+        <note type="editorial">Liebermann prints his note on “opus” (†: uas Rl) at the foot of the ECf text, above the numbered notes.</note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_38-1.lnote.la.fn.e" n="e" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">668</biblScope></bibl><seg type="original" xml:lang="de">38, 1 <hi rend="italic">ist Parenthese, da</hi> 38 <hi rend="italic">in</hi> 38, 1<hi rend="italic">a fortgesetzt wird</hi></seg><seg type="translation" xml:lang="en" source="#claude">38, 1 is a parenthesis, since 38 is continued in 38, 1a</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_38-1.lnote.la.fn.f" n="f" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">668</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">wohl nicht die wenigen</hi> aurifabri regis (<hi rend="italic">s.</hi> Domesday <hi rend="italic">Indices</hi> 545), <hi rend="italic">sondern eine ganze Zunft scheint gemeint, die der Ausführung von Staatsgesetzen zu dienen (sonst zuerst</hi> 1300) <hi rend="italic">schien; Cunningham</hi> Growth of industry 263. <hi rend="italic">Die Münzer sind königlich</hi></seg><seg type="translation" xml:lang="en" source="#claude">probably not the few aurifabri regis (see Domesday, Indices 545): a whole guild seems to be meant, which appeared to serve the carrying out of the laws of the state (otherwise first in 1300); Cunningham, Growth of industry 263. The moneyers are royal</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_38-1.lnote.la.fn.g" n="g" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">668</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">des Königs, zu Winchester und London</hi></seg><seg type="translation" xml:lang="en" source="#claude">the king’s, at Winchester and London</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_38-1.lnote.la.dagger" n="†" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">668</biblScope></bibl><seg type="original" xml:lang="de">uas <hi rend="italic">Rl</hi></seg><seg type="translation" xml:lang="en" source="#claude">uas Rl</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_38-1.lnote.la.23" n="23" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">668</biblScope></bibl><seg type="original" xml:lang="de">-are <hi rend="italic">Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">-are Hr</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_38-1.lnote.la.24" n="24" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">668</biblScope></bibl><seg type="original" xml:lang="de">si i. <hi rend="italic">S</hi></seg><seg type="translation" xml:lang="en" source="#claude">si i. S</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_38-1.lnote.la.25" n="25" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">668</biblScope></bibl><seg type="original" xml:lang="de">-giis <hi rend="italic">S</hi></seg><seg type="translation" xml:lang="en" source="#claude">-giis S</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECf_35-1-A-1">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf 35.1 A 1</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECf_35-1-A-1</idno>
+        <idno type="citation">ECf 35.1 A 1</idno>
+        <idno type="lawCode">ECf</idno>
+        <idno type="lawCodeAnchor">ECf</idno>
+        <idno type="clause">35.1 A 1</idno>
+        <idno type="citationKey">ECf 35, 1 A 1</idno>
+        <idno type="citationKey">ECf 35,1 A 1</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">664</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>1115–50, probably 1130–35 (Liebermann, I p. 627)</date><note type="promulgation">1115–50, probably 1130–35 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="35.1 A 1">
+        <head><ref type="lawCode" target="law:ECf">ECf</ref> 35.1 A 1</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 35.1 A 1"><pb n="664" ed="#liebermann"/>Erat enim de iure post decessum Eadgari<ptr type="liebermannNote" n="6" target="#ECf_35-1-A-1.lnote.la.6"/> æðeling, fratris sui, uerus heres ultimi† regis Edwardi de corona tocius regni predicti<ptr type="liebermannNote" n="7" target="#ECf_35-1-A-1.lnote.la.7"/>. Sed instinctu<ptr type="liebermannNote" n="8" target="#ECf_35-1-A-1.lnote.la.8"/>, petitione et uoluntate boni regis Edwardi, propinqui<ptr type="liebermannNote" n="f" target="#ECf_35-1-A-1.lnote.la.fn.f"/> [ue]stri<ptr type="liebermannNote" n="9" target="#ECf_35-1-A-1.lnote.la.9"/>, aliter mutatum est: qui uobis<ptr type="liebermannNote" n="10" target="#ECf_35-1-A-1.lnote.la.10"/> coronam tocius regni predicti dedit et regnum predictum uobis<ptr type="liebermannNote" n="11" target="#ECf_35-1-A-1.lnote.la.11"/> iurare fecit; qui peroptime equitatem et scientiam et<ptr type="liebermannNote" n="12" target="#ECf_35-1-A-1.lnote.la.12"/> iustitiam probitatemque uestram<ptr type="liebermannNote" n="13" target="#ECf_35-1-A-1.lnote.la.13"/> nouit.</ab>
+        <note type="comparisonPrinted" source="#liebermann">ebd. 34, 2e</note>
+        <note type="comparisonPrinted" source="#liebermann">34, 1a</note>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 664 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
+        <note type="editorial">This passage is not part of ECf or ECf retr: it is one of the additions of the London collection (Leges Anglorum s. XIII in. Londoniis collectae), which Liebermann prints across the page after ECf 35, 1 as an insertion into ECf retr. 35, 1 (35, 1 A). The dictionary cites it as “ECf 35,1 A …”, so it is kept with ECf here.</note>
+        <note type="editorial">Liebermann prints some words here in smaller type (“Eadgari æðeling”, “ultimi regis Edwardi”, “regis Edwardi”, “coronam”, “regni”); they are taken over from ECf retr 34, 2e and 34, 1a, which his margin names (ebd. 34, 2e; 34, 1a).</note>
+        <note type="editorial">The dagger after “ultimi” refers to Liebermann’s marginal reference “ebd. 34, 2e” (ECf retr 34, 2e).</note>
+        <note type="editorial">In “[ue]stri” the square brackets are Liebermann’s: the manuscripts read “nostri” (note 9).</note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_35-1-A-1.lnote.la.fn.f" n="f" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">664</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">wie o.</hi> 32 A 8</seg><seg type="translation" xml:lang="en" source="#claude">as above, 32 A 8</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_35-1-A-1.lnote.la.6" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">664</biblScope></bibl><seg type="original" xml:lang="de">Ed. ad. <hi rend="italic">K;</hi> Ed. athelinge <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">Ed. ad. K; Ed. athelinge Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_35-1-A-1.lnote.la.7" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">664</biblScope></bibl><seg type="original" xml:lang="de">dedit <hi rend="italic">fügt zu Co Or</hi></seg><seg type="translation" xml:lang="en" source="#claude">Co Or add dedit</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_35-1-A-1.lnote.la.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">664</biblScope></bibl><seg type="original" xml:lang="de">et <hi rend="italic">fügt zu K</hi></seg><seg type="translation" xml:lang="en" source="#claude">K adds et</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_35-1-A-1.lnote.la.9" n="9" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">664</biblScope></bibl><seg type="original" xml:lang="de">nostri <hi rend="italic">Hss.</hi></seg><seg type="translation" xml:lang="en" source="#claude">nostri MSS</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_35-1-A-1.lnote.la.10" n="10" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">664</biblScope></bibl><seg type="original" xml:lang="de">c. nobis <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">c. nobis Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_35-1-A-1.lnote.la.11" n="11" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">664</biblScope></bibl><seg type="original" xml:lang="de">nobis <hi rend="italic">Or Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">nobis Or Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_35-1-A-1.lnote.la.12" n="12" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">664</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_35-1-A-1.lnote.la.13" n="13" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">664</biblScope></bibl><seg type="original" xml:lang="de">nostram <hi rend="italic">Co Or Ld;</hi> ueram <hi rend="italic">K</hi></seg><seg type="translation" xml:lang="en" source="#claude">nostram Co Or Ld; ueram K</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

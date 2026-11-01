@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECf_35-2">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf 35.2</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECf_35-2</idno>
+        <idno type="citation">ECf 35.2</idno>
+        <idno type="lawCode">ECf</idno>
+        <idno type="lawCodeAnchor">ECf</idno>
+        <idno type="clause">35.2</idno>
+        <idno type="citationKey">ECf 35.2</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">666</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>1115–50, probably 1130–35 (Liebermann, I p. 627)</date><note type="promulgation">1115–50, probably 1130–35 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="35.2">
+        <head><ref type="lawCode" target="law:ECf">ECf</ref> 35.2</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 35.2"><pb n="666" ed="#liebermann"/>Rex autem Eadwardus<ptr type="liebermannNote" n="a" target="#ECf_35-2.lnote.la.fn.a"/><ptr type="liebermannNote" n="1" target="#ECf_35-2.lnote.la.1"/>, quia<ptr type="liebermannNote" n="2" target="#ECf_35-2.lnote.la.2"/> cognouit<ptr type="liebermannNote" n="b" target="#ECf_35-2.lnote.la.fn.b"/> nequitiam gentis sue et maxime filiorum Godwini, scilicet Haroldi, Tosti, Gurthi<ptr type="liebermannNote" n="3" target="#ECf_35-2.lnote.la.3"/>, Leofwini<ptr type="liebermannNote" n="4" target="#ECf_35-2.lnote.la.4"/>, comperit<ptr type="liebermannNote" n="5" target="#ECf_35-2.lnote.la.5"/>, quod non posset<ptr type="liebermannNote" n="6" target="#ECf_35-2.lnote.la.6"/> esse stabile uel firmum de Eadgaro<ptr type="liebermannNote" n="7" target="#ECf_35-2.lnote.la.7"/>, et<ptr type="liebermannNote" n="8" target="#ECf_35-2.lnote.la.8"/> adoptauit Willelmum ducem Normannorum<ptr type="liebermannNote" n="9" target="#ECf_35-2.lnote.la.9"/>, filium Rodberti<ptr type="liebermannNote" n="10" target="#ECf_35-2.lnote.la.10"/>, auunculi<ptr type="liebermannNote" n="c" target="#ECf_35-2.lnote.la.fn.c"/> sui, qui postea, auxiliante Deo<ptr type="liebermannNote" n="11" target="#ECf_35-2.lnote.la.11"/>, conquisiuit rectum suum bello contra supradictum Haroldum<ptr type="liebermannNote" n="12" target="#ECf_35-2.lnote.la.12"/>.†</ab>
+        <note type="comparison" source="#liebermann" n="666"><label>printed alongside</label> <ref target="clause:ECfRetr_35-2">ECf retr 35.2</ref></note>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 666 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
+        <note type="editorial">Liebermann prints a dagger after “Haroldum”; in the outer margin of the ECf retr column, beside “regnum inuasit†”, he gives the date †1066.</note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_35-2.lnote.la.fn.a" n="a" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">666</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vgl. Will. Malmesbur.</hi> II 228: Rex Edwardus, quod Godwini uideret inualescere filios, . . Willelmo successionem Angliae dedit; erat ille consanguineus, filius Roberti; <hi rend="italic">vielleicht Quelle für ECf. oder aus derselben Vorlage; doch sagte Eadward Wilhelmen die Thronfolge <hi rend="spaced">vor</hi></hi> 1057 <hi rend="italic">zu; Verf. irrt also in der Begründung.</hi> Harold II. <hi rend="italic">nennt er gemäss Normannischem Kanzleibrauche nicht</hi> rex. <hi rend="italic">Dessen drei Brüder stehen auch</hi> Ann. Anglosax. 1066; <hi rend="italic">die Zufügung des Retr. irrt, da Swen todt, Wulfnoth Geisel bei Wilhelm I. war</hi></seg><seg type="translation" xml:lang="en" source="#claude">cf. Will. Malmesbur. II 228: Rex Edwardus, quod Godwini uideret inualescere filios, . . Willelmo successionem Angliae dedit; erat ille consanguineus, filius Roberti; perhaps the source of ECf, or from the same exemplar; but Edward promised William the succession before 1057, so the author errs in the reason he gives. In keeping with Norman chancery usage he does not call Harold II rex. Harold’s three brothers also appear in the Ann. Anglosax. 1066; the Retr.’s addition is wrong, since Swein was dead and Wulfnoth a hostage with William I</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_35-2.lnote.la.fn.b" n="b" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">666</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vgl. Matth.</hi> 22, 18</seg><seg type="translation" xml:lang="en" source="#claude">cf. Matth. 22, 18</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_35-2.lnote.la.fn.c" n="c" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">666</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vielmehr Vetters; s. o.</hi> 34, 2<hi rend="italic">e</hi><hi rend="superscript">e</hi></seg><seg type="translation" xml:lang="en" source="#claude">rather of his cousin; see above, 34, 2e, note e</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_35-2.lnote.la.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">666</biblScope></bibl><seg type="original" xml:lang="de">Ed. <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">Ed. Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_35-2.lnote.la.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">666</biblScope></bibl><seg type="original" xml:lang="de">qui <hi rend="italic">Cl</hi></seg><seg type="translation" xml:lang="en" source="#claude">qui Cl</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_35-2.lnote.la.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">666</biblScope></bibl><seg type="original" xml:lang="de">Guiti <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">Guiti Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_35-2.lnote.la.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">666</biblScope></bibl><seg type="original" xml:lang="de">Lif. <hi rend="italic">Rl;</hi> Lef. <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">Lif. Rl; Lef. Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_35-2.lnote.la.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">666</biblScope></bibl><seg type="original" xml:lang="de">-riit <hi rend="italic">Rl S</hi></seg><seg type="translation" xml:lang="en" source="#claude">-riit Rl S</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_35-2.lnote.la.6" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">666</biblScope></bibl><seg type="original" xml:lang="de">st. e. p. <hi rend="italic">Cl</hi></seg><seg type="translation" xml:lang="en" source="#claude">st. e. p. Cl</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_35-2.lnote.la.7" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">666</biblScope></bibl><seg type="original" xml:lang="de">Ad. <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">Ad. Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_35-2.lnote.la.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">666</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt besser Cl</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking, better, in Cl</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_35-2.lnote.la.9" n="9" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">666</biblScope></bibl><seg type="original" xml:lang="de">-nnie <hi rend="italic">Cl</hi></seg><seg type="translation" xml:lang="en" source="#claude">-nnie Cl</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_35-2.lnote.la.10" n="10" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">666</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="spaced">Ricardi</hi> <hi rend="italic">Hk Ed 2</hi></seg><seg type="translation" xml:lang="en" source="#claude">Ricardi Hk Ed 2</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_35-2.lnote.la.11" n="11" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">666</biblScope></bibl><seg type="original" xml:lang="de">Domino <hi rend="italic">Cl</hi></seg><seg type="translation" xml:lang="en" source="#claude">Domino Cl</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_35-2.lnote.la.12" n="12" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">666</biblScope></bibl><seg type="original" xml:lang="de">Herald. <hi rend="italic">Rl;</hi> Harald. <hi rend="italic">S; endet Ed 2</hi></seg><seg type="translation" xml:lang="en" source="#claude">Herald. Rl; Harald. S; Ed 2 ends here</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

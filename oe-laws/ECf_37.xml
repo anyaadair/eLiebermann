@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECf_37">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf 37</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECf_37</idno>
+        <idno type="citation">ECf 37</idno>
+        <idno type="lawCode">ECf</idno>
+        <idno type="lawCodeAnchor">ECf</idno>
+        <idno type="clause">37</idno>
+        <idno type="citationKey">ECf 37</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">668</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>1115–50, probably 1130–35 (Liebermann, I p. 627)</date><note type="promulgation">1115–50, probably 1130–35 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="37">
+        <head><ref type="lawCode" target="law:ECf">ECf</ref> 37</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 37"><pb n="668" ed="#liebermann"/><ptr type="liebermannNote" n="7" target="#ECf_37.lnote.la.7"/><hi rend="spaced">De usurariis.</hi> Usurarios<ptr type="liebermannNote" n="8" target="#ECf_37.lnote.la.8"/> etiam defendit<ptr type="liebermannNote" n="b" target="#ECf_37.lnote.la.fn.b"/> rex<ptr type="liebermannNote" n="9" target="#ECf_37.lnote.la.9"/> Eadwardus<ptr type="liebermannNote" n="10" target="#ECf_37.lnote.la.10"/>, ne<ptr type="liebermannNote" n="11" target="#ECf_37.lnote.la.11"/> esset aliquis in regno<ptr type="liebermannNote" n="12" target="#ECf_37.lnote.la.12"/> suo; et si aliquis inde probatus esset, omnes possessiones suas<ptr type="liebermannNote" n="13" target="#ECf_37.lnote.la.13"/> perderet et pro exlege<ptr type="liebermannNote" n="14" target="#ECf_37.lnote.la.14"/> haberetur<ptr type="liebermannNote" n="15" target="#ECf_37.lnote.la.15"/>.</ab>
+        <note type="comparison" source="#liebermann" n="668"><label>printed alongside</label> <ref target="clause:ECfRetr_37">ECf retr 37</ref></note>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 668 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_37.lnote.la.fn.b" n="b" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">668</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Eadward III., nach der Legende Verächter des Geldes, erscheint nirgends als Bekämpfer des Wuchers, ebensowenig wie Robert oder Heinrich I. von Frankreich, oder als häufiger Besucher letzterer. Um</hi> 1031 <hi rend="italic">bezeugt Edward eine Urkunde Roberts von der Normandie neben König Heinrich,</hi> qui tunc profugus in hac terra; <hi rend="italic">Round</hi> Cal. of doc. in France I n. 1422. — <hi rend="italic">Kronrecht</hi> 12. <hi rend="italic">Jahrhs. in Normandie und England confiscirte den nicht der Kirche legirten Nachlass der Wucherer; bei Lebzeiten aber strafte diese nur die Kirche; vgl. mein</hi> Über Edw. Conf. 38. 106; <hi rend="italic">Madox</hi> Hist. Exchequer 237; <hi rend="italic">Hughes</hi> Dial. de Scacc. by Rich. son of Nigel 224</seg><seg type="translation" xml:lang="en" source="#claude">Edward III, by the legend a despiser of money, nowhere appears as a fighter against usury, any more than Robert or Henry I of France do, nor as a frequent visitor of the latter. About 1031 Edward witnesses a charter of Robert of Normandy beside King Henry, qui tunc profugus in hac terra; Round, Cal. of doc. in France I no. 1422. — The crown law of the 12th century in Normandy and England confiscated usurers’ estates not bequeathed to the Church; but in their lifetime only the Church punished them; cf. my Über Edw. Conf. 38. 106; Madox, Hist. Exchequer 237; Hughes, Dial. de Scacc. by Rich. son of Nigel 224</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_37.lnote.la.7" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">668</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">im Text Rl</hi></seg><seg type="translation" xml:lang="en" source="#claude">in the text Rl</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_37.lnote.la.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">668</biblScope></bibl><seg type="original" xml:lang="de">-rius <hi rend="italic">Rl</hi></seg><seg type="translation" xml:lang="en" source="#claude">-rius Rl</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_37.lnote.la.9" n="9" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">668</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt S Hr Cl</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in S Hr Cl</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_37.lnote.la.10" n="10" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">668</biblScope></bibl><seg type="original" xml:lang="de">Edw. <hi rend="italic">Hk S;</hi> Æad. <hi rend="italic">Rl</hi></seg><seg type="translation" xml:lang="en" source="#claude">Edw. Hk S; Æad. Rl</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_37.lnote.la.11" n="11" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">668</biblScope></bibl><seg type="original" xml:lang="de">ut non <hi rend="italic">Cl</hi></seg><seg type="translation" xml:lang="en" source="#claude">ut non Cl</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_37.lnote.la.12" n="12" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">668</biblScope></bibl><seg type="original" xml:lang="de">terra sua <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">terra sua Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_37.lnote.la.13" n="13" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">668</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Rl</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Rl</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_37.lnote.la.14" n="14" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">668</biblScope></bibl><seg type="original" xml:lang="de">lege <hi rend="italic">Rl S Cl</hi></seg><seg type="translation" xml:lang="en" source="#claude">lege Rl S Cl</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_37.lnote.la.15" n="15" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">668</biblScope></bibl><seg type="original" xml:lang="de">-rentur <hi rend="italic">Rl Cl</hi></seg><seg type="translation" xml:lang="en" source="#claude">-rentur Rl Cl</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECfRetr_34-1">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf retr 34.1</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECfRetr_34-1</idno>
+        <idno type="citation">ECf retr 34.1</idno>
+        <idno type="lawCode">ECf retr</idno>
+        <idno type="lawCodeAnchor">ECfRetr</idno>
+        <idno type="clause">34.1</idno>
+        <idno type="citationKey">ECfRetr 34.1</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris: retractatus</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">661</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>c. 1140–59 (Liebermann, I p. 627)</date><note type="promulgation">c. 1140–59 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="34.1">
+        <head><ref type="lawCode" target="law:ECfRetr">ECf retr</ref> 34.1</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf retr 34.1"><pb n="661" ed="#liebermann"/><hi rend="bold">Quo audito, mox uniuersi</hi> compatriote<ptr type="liebermannNote" n="26" target="#ECfRetr_34-1.lnote.la.26"/>, qui<ptr type="liebermannNote" n="27" target="#ECfRetr_34-1.lnote.la.27"/> leges <hi rend="bold">edixerant</hi><ptr type="liebermannNote" n="28" target="#ECfRetr_34-1.lnote.la.28"/><hi rend="bold">, tristes effecti</hi><ptr type="liebermannNote" n="29" target="#ECfRetr_34-1.lnote.la.29"/><hi rend="bold">, unanimiter</hi> precati<ptr type="liebermannNote" n="30" target="#ECfRetr_34-1.lnote.la.30"/> sunt, <hi rend="bold">quatinus</hi> permitteret<ptr type="liebermannNote" n="31" target="#ECfRetr_34-1.lnote.la.31"/> sibi<ptr type="liebermannNote" n="32" target="#ECfRetr_34-1.lnote.la.32"/> leges <hi rend="bold">proprias</hi> et consuetudines <hi rend="bold">antiquas</hi> habere, <hi rend="bold">in</hi> quibus uixerant <hi rend="bold">patres</hi> eorum<ptr type="liebermannNote" n="33" target="#ECfRetr_34-1.lnote.la.33"/> (et ipsi <hi rend="bold">in eis</hi> nati <hi rend="bold">et nutriti</hi> sunt): quia durum <hi rend="bold">ualde foret</hi><ptr type="liebermannNote" n="34" target="#ECfRetr_34-1.lnote.la.34"/> <hi rend="bold">sibi</hi> suscipere leges <hi rend="bold">ignotas</hi> et iudicare de eis<ptr type="liebermannNote" n="35" target="#ECfRetr_34-1.lnote.la.35"/>, quas nesciebant.</ab>
+        <note type="comparison" source="#liebermann" n="661"><label>printed alongside</label> <ref target="clause:ECf_34-1">ECf 34.1</ref></note>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 661 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page; the words in bold are the Retractator’s changes to ECf, as Liebermann prints them.</note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_34-1.lnote.la.fn.e" n="e" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">661</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">die</hi> 384 <hi rend="italic">gaben laut Prolog</hi> g <hi rend="italic">selbst Auskunft über das Recht, das sie sich nun verbitten: Selbstwiderspruch!</hi></seg><seg type="translation" xml:lang="en" source="#claude">according to the Prologue, note g, the 384 themselves gave information about the law that they now decline: a self-contradiction!</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_34-1.lnote.la.fn.f" n="f" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">661</biblScope></bibl><seg type="original" xml:lang="de">Urtheil finden gemäss (aus)</seg><seg type="translation" xml:lang="en" source="#claude">to find judgement according to (from)</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_34-1.lnote.la.26" n="26" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">661</biblScope></bibl><seg type="original" xml:lang="de">regni <hi rend="italic">fügt zu K Co</hi></seg><seg type="translation" xml:lang="en" source="#claude">K Co add regni</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_34-1.lnote.la.27" n="27" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">661</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Lb Va Ph</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Lb Va Ph</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_34-1.lnote.la.28" n="28" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">661</biblScope></bibl><seg type="original" xml:lang="de">-runt <hi rend="italic">Lb Va Ph</hi></seg><seg type="translation" xml:lang="en" source="#claude">-runt Lb Va Ph</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_34-1.lnote.la.29" n="29" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">661</biblScope></bibl><seg type="original" xml:lang="de">sunt <hi rend="italic">fügt zu Lond;</hi> effici <hi rend="italic">Hv</hi></seg><seg type="translation" xml:lang="en" source="#claude">Lond adds sunt; effici Hv</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_34-1.lnote.la.30" n="30" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">661</biblScope></bibl><seg type="original" xml:lang="de">deprec. <hi rend="italic">Cb Lb Hv Ph Dc K Co</hi></seg><seg type="translation" xml:lang="en" source="#claude">deprec. Cb Lb Hv Ph Dc K Co</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_34-1.lnote.la.31" n="31" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">661</biblScope></bibl><seg type="original" xml:lang="de">promit. <hi rend="italic">Co</hi></seg><seg type="translation" xml:lang="en" source="#claude">promit. Co</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_34-1.lnote.la.32" n="32" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">661</biblScope></bibl><seg type="original" xml:lang="de">l. s. <hi rend="italic">Va Hv</hi></seg><seg type="translation" xml:lang="en" source="#claude">l. s. Va Hv</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_34-1.lnote.la.33" n="33" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">661</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Hv</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Hv</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_34-1.lnote.la.34" n="34" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">661</biblScope></bibl><seg type="original" xml:lang="de">s. f. <hi rend="italic">Hv;</hi> erat eis l. i. su. <hi rend="italic">Dc</hi></seg><seg type="translation" xml:lang="en" source="#claude">s. f. Hv; erat eis l. i. su. Dc</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_34-1.lnote.la.35" n="35" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">661</biblScope></bibl><seg type="original" xml:lang="de">hiis <hi rend="italic">Cb</hi></seg><seg type="translation" xml:lang="en" source="#claude">hiis Cb</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

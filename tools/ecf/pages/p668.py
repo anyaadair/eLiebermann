@@ -1,0 +1,83 @@
+# Liebermann, Gesetze I pp. 667–668: ECf and ECf retr 36,5 (begins p. 667) – 38,1a
+D = lambda de, en: (de, en)
+FA = D('Nebenchristen', 'fellow Christians')
+FB = D('<i>Eadward III., nach der Legende Verächter des Geldes, erscheint nirgends als Bekämpfer des Wuchers, ebensowenig wie Robert oder Heinrich I. von Frankreich, oder als häufiger Besucher letzterer. Um</i> 1031 <i>bezeugt Edward eine Urkunde Roberts von der Normandie neben König Heinrich,</i> qui tunc profugus in hac terra; <i>Round</i> Cal. of doc. in France I n. 1422. — <i>Kronrecht</i> 12. <i>Jahrhs. in Normandie und England confiscirte den nicht der Kirche legirten Nachlass der Wucherer; bei Lebzeiten aber strafte diese nur die Kirche; vgl. mein</i> Über Edw. Conf. 38. 106; <i>Madox</i> Hist. Exchequer 237; <i>Hughes</i> Dial. de Scacc. by Rich. son of Nigel 224',
+       'Edward III, by the legend a despiser of money, nowhere appears as a fighter against usury, any more than Robert or Henry I of France do, nor as a frequent visitor of the latter. About 1031 Edward witnesses a charter of Robert of Normandy beside King Henry, qui tunc profugus in hac terra; Round, Cal. of doc. in France I no. 1422. — The crown law of the 12th century in Normandy and England confiscated usurers’ estates not bequeathed to the Church; but in their lifetime only the Church punished them; cf. my Über Edw. Conf. 38. 106; Madox, Hist. Exchequer 237; Hughes, Dial. de Scacc. by Rich. son of Nigel 224')
+FC = D('<i>vielmehr</i> cupiditas: <i>I Tim.</i> 6, 10', 'rather cupiditas: I Tim. 6, 10')
+FDd = D('<i>über den wohl nicht allgemein Angelsächs. Gewährbürgen vgl.</i> Wl art. 5; Leis Wl 21; <i>mein</i> Über Edw. Conf. 104', 'on the warrantor-surety, probably not general Anglo-Saxon practice, cf. Wl art. 5; Leis Wl 21; my Über Edw. Conf. 104')
+FE = D('38, 1 <i>ist Parenthese, da</i> 38 <i>in</i> 38, 1<i>a fortgesetzt wird</i>', '38, 1 is a parenthesis, since 38 is continued in 38, 1a')
+FF = D('<i>wohl nicht die wenigen</i> aurifabri regis (<i>s.</i> Domesday <i>Indices</i> 545), <i>sondern eine ganze Zunft scheint gemeint, die der Ausführung von Staatsgesetzen zu dienen (sonst zuerst</i> 1300) <i>schien; Cunningham</i> Growth of industry 263. <i>Die Münzer sind königlich</i>',
+       'probably not the few aurifabri regis (see Domesday, Indices 545): a whole guild seems to be meant, which appeared to serve the carrying out of the laws of the state (otherwise first in 1300); Cunningham, Growth of industry 263. The moneyers are royal')
+FG = D('<i>des Königs, zu Winchester und London</i>', 'the king’s, at Winchester and London')
+FH = D('Fahrhabe, <i>zunächst</i> Vieh, <i>was Retr. in</i> censu (Geld) <i>zu eng fasst</i>', 'movable goods, in the first place cattle, which the Retr. takes too narrowly as censu (money)')
+STAR = D('<b>De emptionibus sine fideiussoribus, quod Anglice dicitur fastermannes</b> <i>Rubr. Lond; vgl.</i> festermen <i>Northu.</i> 2, 3', 'rubric in Lond: De emptionibus sine fideiussoribus, quod Anglice dicitur fastermannes; cf. festermen Northu. 2, 3')
+NP = lambda ks: {k: 668 for k in ks}
+CLAUSES = [
+ {'code': 'ECf', 'n': '36.5', 'page': 667, 'pages': [668],
+  'text': 'Et postea iusticia episcopi faciat uenire processionem{19} cum sacerdote induto alba{f:g} et stola et clericis{20} in superpelliciis{21} cum aqua benedicta et cruce et candelabris et thuribulo{22} cum igne et incenso; et sic extrahant{23} mortuum a terra, ponentes in feretro{f:h} et deportent eum ad ecclesiam; cantata missa et facto{24} seruitio, interrent eum sicut Christianum. Et ab ipso die in XVI{25} diebus reddat{26} episcopo forisfacturas{27} tres: unam{28} quia legalem{f:i} iniuste pro latrone interfecit; alteram{29} [[pb:668]]quia fratrem suum pro latrone interrauit{1}, quod{2} Angli dicunt his emcristen{f:a/668}{3}; terciam{4} quia uadimonium dedit{5} ad disrationandum{6} se, et non potuit.',
+  'notepages': NP(['f:a/668'] + list(range(1, 7))),
+  'notes': {'f:g': D('<i>der Zusatz des Retr. ist nicht jünger: den Manipel trug der Priester längst; Braun</i> Priesterl. Gewänder 55. 75', 'the Retr.’s addition is not later: the priest had long worn the maniple; Braun, Priesterl. Gewänder 55. 75'),
+            'f:h': D('<i>vom</i> sterquilinium in cimiterium <i>ward ein nach dem Tode unschuldig Befundener</i> 1259 <i>übertragen;</i> Math. Paris. V 739', 'in 1259 a man found innocent after his death was moved from the sterquilinium into the cimiterium; Math. Paris. V 739'),
+            'f:i': D('<i>Strafgeld hierfür gehört doch dem weltlichen Gerichtsherrn; dazu kommen Wergeld an die Sippe und Mannbusse an den Herrn des Erschlagenen</i>', 'yet the fine for this belongs to the secular lord of the court; in addition there are the wergeld to the kin and the manbot to the lord of the slain man'),
+            'f:a/668': FA,
+            19: D('sacerdotem c. processione, indutum <i>Cl</i>', 'sacerdotem c. processione, indutum Cl'), 20: D('-cos <i>Cl</i>', '-cos Cl'), 21: D('suppell. <i>Rl S</i>', 'suppell. Rl S'), 22: D('-lis <i>Hk</i>', '-lis Hk'),
+            23: D('-traant <i>Rl;</i> -hent <i>Cl</i>', '-traant Rl; -hent Cl'), 24: D('sancto <i>Hk</i>', 'sancto Hk'), 25: D('VI <i>S;</i> XV <i>Hr</i>', 'VI S; XV Hr'), 26: D('-det <i>S</i>', '-det S'), 27: D('t. f. <i>Hk Hr</i>', 't. f. Hk Hr'),
+            28: D('unum pro latrone interfecto <i>Hk</i>', 'unum pro latrone interfecto Hk'), 29: D('-rum <i>Hk;</i> secundam <i>Cl</i>', '-rum Hk; secundam Cl'),
+            1: D('interfecit <i>Cl</i>', 'interfecit Cl'), 2: D('q. A. d. h. e. <i>fehlt Hk</i>', 'q. A. d. h. e. lacking in Hk'), 3: D('euencr. <i>Cl;</i> eumcristin <i>Hr</i>', 'euencr. Cl; eumcristin Hr'), 4: D('-cium <i>Hk</i>', '-cium Hk'),
+            5: D('ad dir. se de. <i>S;</i> ad disr. de. nec p. <i>Cl</i>', 'ad dir. se de. S; ad disr. de. nec p. Cl'), 6: D('dir. et non poterat <i>Hr</i>', 'dir. et non poterat Hr')},
+  'editorial': ['Liebermann’s lettering of the notes starts again at a on p. 668: the note a to “emcristen” is distinct from the notes g–i on p. 667.']},
+ {'code': 'ECf', 'n': '37', 'page': 668,
+  'text': '{7}<sp>De usurariis.</sp> Usurarios{8} etiam defendit{f:b} rex{9} Eadwardus{10}, ne{11} esset aliquis in regno{12} suo; et si aliquis inde probatus esset, omnes possessiones suas{13} perderet et pro exlege{14} haberetur{15}.',
+  'notes': {'f:b': FB, 7: D('<i>im Text Rl</i>', 'in the text Rl'), 8: D('-rius <i>Rl</i>', '-rius Rl'), 9: D('<i>fehlt S Hr Cl</i>', 'lacking in S Hr Cl'), 10: D('Edw. <i>Hk S;</i> Æad. <i>Rl</i>', 'Edw. Hk S; Æad. Rl'),
+            11: D('ut non <i>Cl</i>', 'ut non Cl'), 12: D('terra sua <i>Hk</i>', 'terra sua Hk'), 13: D('<i>fehlt Rl</i>', 'lacking in Rl'), 14: D('lege <i>Rl S Cl</i>', 'lege Rl S Cl'), 15: D('-rentur <i>Rl Cl</i>', '-rentur Rl Cl')}},
+ {'code': 'ECf', 'n': '37.1', 'page': 668,
+  'text': 'Hoc autem dicebat, sepe{16} se audisse{17} in curia regis Francorum{18}, dum ibi moratus esset; nec immerito: usura{f:c} enim summa{19} radix omnium{20} uiciorum interpretatur{21}.',
+  'notes': {'f:c': FC, 16: D('se sepe <i>Hk Hr</i>', 'se sepe Hk Hr'), 17: D('uidisse <i>Cl</i>', 'uidisse Cl'), 18: D('Francho. <i>Hk</i>', 'Francho. Hk'), 19: D('<i>fehlt Hk</i>', 'lacking in Hk'),
+            20: D('<i>so Rl; fehlt übr.</i>', 'so Rl; lacking in the others'), 21: D('<i>endet mit Schluss einer Lage Cl</i>', 'Cl ends here, at the end of a gathering')}},
+ {'code': 'ECf', 'n': '38', 'page': 668,
+  'text': '{*}Defensum erat{22} etiam{19} in lege{f:d}, ne aliquis emat uiuum animal uel pannum usatum sine plegiis et bonis testibus.',
+  'notes': {'*': STAR, 'f:d': FDd, 19: D('<i>fehlt Hk</i>', 'lacking in Hk'), 22: D('et. er. <i>Hr</i>', 'et. er. Hr')}},
+ {'code': 'ECf', 'n': '38.1', 'page': 668,
+  'text': '— {f:e}Et si fuerit aliquod opus{†} aureum uel argenteum, unde uenditor debeat dubitari{23}, non ematur preter aurifabros{f:f} et monetarios. Et ipsi{24} si uiderint, quod sit de ecclesia uel de thesauris{f:g}, non ematur sine plegio{25} —.',
+  'notes': {'f:e': FE, 'f:f': FF, 'f:g': FG, '†': D('uas <i>Rl</i>', 'uas Rl'), 23: D('-are <i>Hr</i>', '-are Hr'), 24: D('si i. <i>S</i>', 'si i. S'), 25: D('-giis <i>S</i>', '-giis S')},
+  'editorial': ['Liebermann prints his note on “opus” (†: uas Rl) at the foot of the ECf text, above the numbered notes.']},
+ {'code': 'ECf', 'n': '38.1a', 'page': 668,
+  'text': 'Et si{26} uenditor non potest{27} habere plegios, retineatur cum pecunia{f:h}, donec ueniat aut{28} dominus eius aut quilibet alius qui iuste possit{29} eum warantizare.',
+  'notes': {'f:h': FH, 26: D('<i>fehlt Rl</i>', 'lacking in Rl'), 27: D('poterit <i>Hk;</i> poterat <i>Hr</i>', 'poterit Hk; poterat Hr'), 28: D('<i>fehlt Hk S</i>', 'lacking in Hk S'), 29: D('e. p. guar. <i>Hk</i>', 'e. p. guar. Hk')}},
+
+ {'code': 'ECfRetr', 'n': '36.5', 'page': 667, 'pages': [668],
+  'text': '<b>Deinde</b> iusticia episcopi faciat uenire processionem cum sacerdote induto alba <b>et manipulo</b>{f:g} et stola et clericis in superpelliciis{26} cum aqua benedicta et cruce, <b>precedentibus</b> candelabris et{27} thuribulo cum igne et incenso; et <b>amici</b> extrahant{28} mortuum, <sp>deponentes</sp>{29} in feretrum, <sp>portantes</sp> eum ad ecclesiam; <b>ibi</b>{30} missa <b>pro</b>{31} <b>defuncto celebrata,</b> et <b>cetero</b>{32} <b>peracto officio</b>{33}, interrent eum, <b>ut decet</b> Christianum. Ab ipso <b>uero</b> die in XVI{34} diebus{35} reddat <b>interfector</b>{36} episcopo tres forisfacturas: unam quia legalem pro{37} latrone interfecit{38}; alteram{39} quia fratrem suum pro{40} [[pb:668]]latrone interrauit, quod Angli dicunt his emcristene{1}; tertiam <b>eo</b>{2} <b>quod</b> uadimonium{3} dedit ad dirationandum{4} se, et non potuit{5}.',
+  'notepages': NP(['f:a/668'] + list(range(1, 6))),
+  'notes': {'f:g': D('<i>der Zusatz des Retr. ist nicht jünger: den Manipel trug der Priester längst; Braun</i> Priesterl. Gewänder 55. 75', 'the Retr.’s addition is not later: the priest had long worn the maniple; Braun, Priesterl. Gewänder 55. 75'),
+            'f:h': D('<i>vom</i> sterquilinium in cimiterium <i>ward ein nach dem Tode unschuldig Befundener</i> 1259 <i>übertragen;</i> Math. Paris. V 739', 'in 1259 a man found innocent after his death was moved from the sterquilinium into the cimiterium; Math. Paris. V 739'),
+            'f:i': D('<i>Strafgeld hierfür gehört doch dem weltlichen Gerichtsherrn; dazu kommen Wergeld an die Sippe und Mannbusse an den Herrn des Erschlagenen</i>', 'yet the fine for this belongs to the secular lord of the court; in addition there are the wergeld to the kin and the manbot to the lord of the slain man'),
+            'f:a/668': FA,
+            26: D('-pelitiis <i>Cb;</i> suppel. <i>Lond</i>', '-pelitiis Cb; suppel. Lond'), 27: D('cum t. et i. <i>Cb</i>', 'cum t. et i. Cb'), 28: D('extrahentes m. ponant <i>Hv</i>', 'extrahentes m. ponant Hv'), 29: D('deferentes <i>Lond</i>', 'deferentes Lond'),
+            30: D('ubi <i>Hv</i>', 'ubi Hv'), 31: D('p. d. <i>übergeschr. Cb</i>', 'p. d. written above the line Cb'), 32: D('alio o. p. <i>Hv</i>', 'alio o. p. Hv'), 33: D('<sp>seruicio</sp> <i>Db</i>', 'seruicio Db'), 34: D('quindecim <i>Hv</i>', 'quindecim Hv'),
+            35: D('dies <i>Va Hv K</i>', 'dies Va Hv K'), 36: D('illius <i>fügt zu Hv</i>', 'Hv adds illius'), 37: D('int. pro la. <i>Cb</i>', 'int. pro la. Cb'), 38: D('-cerit <i>K</i>', '-cerit K'), 39: D('aliam <i>Hv</i>', 'aliam Hv'), 40: D('p. l. <i>fehlt Hv</i>', 'p. l. lacking in Hv'),
+            1: D('<i>so Cb Co;</i> emcristine <i>K;</i> euin(eunic. <i>Va</i>)cr. <i>Lb Va;</i> euencristen <i>Hv;</i> enenec. <i>Db</i>', 'so Cb Co; emcristine K; euin(eunic. Va)cr. Lb Va; euencristen Hv; enenec. Db'),
+            2: D('<i>fehlt Cb</i>', 'lacking in Cb'), 3: D('uadium <i>Hv</i>', 'uadium Hv'), 4: D('disra. <i>Cb</i>', 'disra. Cb'), 5: D('<i>folgt c.</i> 15 <i>Lond</i>', 'c. 15 follows in Lond')}},
+ {'code': 'ECfRetr', 'n': '37', 'page': 668,
+  'text': '<b>(Decretum</b>{6} <b>regis)</b> de usurariis. Usurarios <b>quoque</b> defendit rex Eadwardus, ne <b>remaneret</b>{7} aliquis in <b>toto</b>{8} regno suo{8}; et si quis inde <b>conuictus</b> esset{9}, <b>quod fenus exigeret,</b> omni <b>substantia propria careret</b> et{10} pro exlege haberetur{11}.',
+  'notes': {'f:b': FB, 6: D('D. r. <i>aus Lb Va Hv; nur</i> De u. <i>Cb Db Lond;</i> 37 <i>folgt auf</i> 13 <i>Lond</i>', 'D. r. from Lb Va Hv; only De u. Cb Db Lond; 37 follows 13 in Lond'), 7: D('-rent, <i>ohne</i> al., <i>Hv</i>', '-rent, without al., Hv'),
+            8: D('<i>fehlt Hv</i>', 'lacking in Hv'), 9: D('fuerit <i>Hv</i>', 'fuerit Hv'), 10: D('postea <i>fügt zu Cb Db Ph Sp Lond</i>', 'Cb Db Ph Sp Lond add postea'),
+            11: D('<i>in Dc folgt</i> De successione regum Anglie, <i>d. i. Geneal. Norm.</i>', 'in Dc there follows De successione regum Anglie, i.e. the Geneal. Norm.')}},
+ {'code': 'ECfRetr', 'n': '37.1', 'page': 668,
+  'text': 'Hoc autem <b>asserebat ipse</b>{12} <b>rex</b> se{13} audisse{14} in curia regis Francorum, dum <sp>ibidem moraretur</sp>, <b>quod</b> usura summa{15} radix <b>omnium</b>{16} uitiorum{17} <b>est.</b>',
+  'notes': {'f:c': FC, 12: D('ille <i>Lb Ph Sp</i>', 'ille Lb Ph Sp'), 13: D('in cu. r. Fr. se audisse, dum <i>Hv</i>', 'in cu. r. Fr. se audisse, dum Hv'), 14: D('audiuisse <i>Lb Va</i>', 'audiuisse Lb Va'), 15: D('<i>fehlt K</i>', 'lacking in K'),
+            16: D('est o. u. <i>Hv</i>', 'est o. u. Hv'), 17: D('malorum <i>Cb</i>', 'malorum Cb')}},
+ {'code': 'ECfRetr', 'n': '38', 'page': 668,
+  'text': '{*}{18}<b>Quod nullus homo</b>{19} <b>uiuum</b>{8} <b>animal uel pannum usatum emeret siue aliud sine plegiis et bonis testibus, opusque aureum uel argenteum absque aurifabris uel monetariis. Prohibitum</b>{20} etiam{21} erat in <b>eadem</b> lege, ne quis <sp>emeret</sp> uiuum animal uel pannum usatum sine plegiis et bonis testibus.',
+  'notes': {'*': STAR, 'f:d': FDd, 8: D('<i>fehlt Hv</i>', 'lacking in Hv'),
+            18: D('Ne quis emeret aliquid sine testibus <i>Cb;</i> De animalibus uiuis et pannis ueteribus emendis <i>Pl S;</i> Quod animal u. pa. u. nullus emat s. test. uel opus auri uel argenti sine aurif. (<i>ohne</i> u. m.) <i>Db</i>',
+                  'Ne quis emeret aliquid sine testibus Cb; De animalibus uiuis et pannis ueteribus emendis Pl S; Quod animal u. pa. u. nullus emat s. test. uel opus auri uel argenti sine aurif. (without u. m.) Db'),
+            19: D('hominum <i>Hv</i>', 'hominum Hv'), 20: D('<i>geändert in</i> prohibiti <i>Cb</i>', 'altered to prohibiti Cb'), 21: D('est et. <i>Hv</i>', 'est et. Hv')},
+  'editorial': ['The bold opening, “Quod nullus homo … monetariis”, is the heading of the chapter in the Retractator.', 'The starred note (*) is printed under the ECf column; it is given here as well, since Lond is a manuscript of the Retractator.']},
+ {'code': 'ECfRetr', 'n': '38.1', 'page': 668,
+  'text': 'Et{22} si <b>esset</b>{23} opus aureum uel argenteum, unde <b>emptor</b> <sp>dubitare</sp> <b>posset,</b> non{24} <sp>emeret</sp> <b>absque</b>{25} <sp>aurifabris</sp> <b>uel</b> <sp>monetariis</sp>. <b>Qui</b> si <sp>uidissent</sp>, quod <sp>esset</sp> de ecclesia uel de{26} <sp>thesauro</sp>, non <sp>emisset</sp> sine plegio{27}.',
+  'notes': {'f:e': FE, 'f:f': FF, 'f:g': FG, 22: D('<i>fehlt Cb Lb Va Db K;</i> Set <i>st.</i> Et si <i>Ph</i>', 'lacking in Cb Lb Va Db K; Set instead of Et si Ph'), 23: D('fieret <i>Hv</i>', 'fieret Hv'),
+            24: D('n. e. <i>fehlt Lb Va Ph</i>', 'n. e. lacking in Lb Va Ph'), 25: D('sine <i>Hv</i>', 'sine Hv'), 26: D('<i>fehlt Va</i>', 'lacking in Va'), 27: D('-iis <i>Hv</i>', '-iis Hv')}},
+ {'code': 'ECfRetr', 'n': '38.1a', 'page': 668,
+  'text': 'Si uenditor <b>careret</b> plegiis{28}, <sp>retineretur</sp> cum <b>censu</b>{f:h}, donec <sp>uenisset</sp> dominus eius <b>uel</b> alius{29} qui posset{30} <b>bene</b>{31} eum warantizare.',
+  'notes': {'f:h': FH, 28: D('-gio <i>Cb</i>', '-gio Cb'), 29: D('alter <i>Cb Lb Va Ph Lond</i>', 'alter Cb Lb Va Ph Lond'), 30: D('b. p. <i>Cb Lond</i>', 'b. p. Cb Lond'), 31: D('eum b. <i>Hv;</i> e. w. b. <i>Lb Ph</i>', 'eum b. Hv; e. w. b. Lb Ph')}},
+]

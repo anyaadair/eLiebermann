@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECf_31">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf 31</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECf_31</idno>
+        <idno type="citation">ECf 31</idno>
+        <idno type="lawCode">ECf</idno>
+        <idno type="lawCodeAnchor">ECf</idno>
+        <idno type="clause">31</idno>
+        <idno type="citationKey">ECf 31</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">653</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>1115–50, probably 1130–35 (Liebermann, I p. 627)</date><note type="promulgation">1115–50, probably 1130–35 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="31">
+        <head><ref type="lawCode" target="law:ECf">ECf</ref> 31</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 31"><pb n="653" ed="#liebermann"/>Erant etiam<ptr type="liebermannNote" n="9" target="#ECf_31.lnote.la.9"/> alie potestates super wapentagiis<ptr type="liebermannNote" n="10" target="#ECf_31.lnote.la.10"/>, quas <ptr type="liebermannNote" n="c" target="#ECf_31.lnote.la.fn.c"/>trehingas<ptr type="liebermannNote" n="11" target="#ECf_31.lnote.la.11"/> uocabant<ptr type="liebermannNote" n="12" target="#ECf_31.lnote.la.12"/>, scilicet super<ptr type="liebermannNote" n="13" target="#ECf_31.lnote.la.13"/> terciam partem prouincie<ptr type="liebermannNote" n="d" target="#ECf_31.lnote.la.fn.d"/>.</ab>
+        <note type="comparison" source="#liebermann" n="653"><label>printed alongside</label> <ref target="clause:ECfRetr_31">ECf retr 31</ref></note>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 653 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
+        <note type="editorial">Liebermann’s upright (roman) letter a after “terciam” refers to his explanatory notes, the Erklärungen (printed as Gesetze III; his note on p. 627 calls it “Band II”), which are not yet added here.</note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_31.lnote.la.fn.c" n="c" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">653</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Aspiration der Initiale, aus Nord.</hi> þriðjungr, <hi rend="italic">in einigen Hss. an mehreren Stellen, stand im Orig. vielleicht stets</hi></seg><seg type="translation" xml:lang="en" source="#claude">the aspiration of the initial, from Norse þriðjungr, in some MSS in several places, perhaps stood always in the original</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_31.lnote.la.fn.d" n="d" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">653</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Grafschaft; vgl.</hi> 5, 3. 9</seg><seg type="translation" xml:lang="en" source="#claude">shire; cf. 5, 3. 9</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_31.lnote.la.9" n="9" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">653</biblScope></bibl><seg type="original" xml:lang="de">et <hi rend="italic">Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">et Hr</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_31.lnote.la.10" n="10" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">653</biblScope></bibl><seg type="original" xml:lang="de">-gias <hi rend="italic">Rl;</hi> -tagia <hi rend="italic">Hk;</hi> -tachia <hi rend="italic">Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">-gias Rl; -tagia Hk; -tachia Hr</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_31.lnote.la.11" n="11" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">653</biblScope></bibl><seg type="original" xml:lang="de">-higgas <hi rend="italic">Rl S;</hi> tres higgas <hi rend="italic">Hr;</hi> tringas <hi rend="italic">Ad;</hi> dingas <hi rend="italic">Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">-higgas Rl S; tres higgas Hr; tringas Ad; dingas Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_31.lnote.la.12" n="12" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">653</biblScope></bibl><seg type="original" xml:lang="de">uocant <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">uocant Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_31.lnote.la.13" n="13" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">653</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Hk Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Hk Ad Do</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

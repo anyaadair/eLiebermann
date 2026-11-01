@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECf_32-B-13">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf 32 B 13</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECf_32-B-13</idno>
+        <idno type="citation">ECf 32 B 13</idno>
+        <idno type="lawCode">ECf</idno>
+        <idno type="lawCodeAnchor">ECf</idno>
+        <idno type="clause">32 B 13</idno>
+        <idno type="citationKey">ECf 32 B 13</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">657</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>1115–50, probably 1130–35 (Liebermann, I p. 627)</date><note type="promulgation">1115–50, probably 1130–35 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="32 B 13">
+        <head><ref type="lawCode" target="law:ECf">ECf</ref> 32 B 13</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 32 B 13"><pb n="657" ed="#liebermann"/>In qua<ptr type="liebermannNote" n="32" target="#ECf_32-B-13.lnote.la.32"/> itaque supersint<ptr type="liebermannNote" n="33" target="#ECf_32-B-13.lnote.la.33"/> ardua compota<ptr type="liebermannNote" n="q" target="#ECf_32-B-13.lnote.la.fn.q"/> et ambigua placita corone et curie domini regis tocius regni predicti; que usus<ptr type="liebermannNote" n="34" target="#ECf_32-B-13.lnote.la.34"/> et consuetudines suas una semper inuiolabilitate conseruat<ptr type="liebermannNote" n="35" target="#ECf_32-B-13.lnote.la.35"/>, ubicunque ipse rex fuerit, siue in expeditione siue alibi, propter fatigationes<ptr type="liebermannNote" n="36" target="#ECf_32-B-13.lnote.la.36"/> gentium et populorum regni, iuxta ueteres consuetudines bonorum<ptr type="liebermannNote" n="r" target="#ECf_32-B-13.lnote.la.fn.r"/> patrum<ptr type="liebermannNote" n="37" target="#ECf_32-B-13.lnote.la.37"/> et predecessorum et omnium principum et procerum et sapientum seniorum tocius regni predicti.</ab>
+        <note type="comparisonPrinted" source="#liebermann">Hn. 9, 10a</note>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 657 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
+        <note type="editorial">This passage is not part of ECf or ECf retr: it is one of the additions of the London collection (Leges Anglorum s. XIII in. Londoniis collectae), which Liebermann prints across the page as an insertion into ECf retr. 32 (32 A–E, pp. 655–660). The dictionary cites it as “ECf 32 B …”, so it is kept with ECf here.</note>
+        <note type="editorial">Liebermann prints the words borrowed from Hn 9, 10a in smaller type; his margin names the source (Hn. 9, 10a).</note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_32-B-13.lnote.la.fn.q" n="q" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">657</biblScope></bibl><seg type="original" xml:lang="de">Exchequer <hi rend="italic">und</hi> Reichsgerichte <hi rend="italic">sitzen erst seit Richard I. ständig zu Westminster; vgl. Hughes</hi> Dial. de scacc. <hi rend="italic">p.</hi> 43; <hi rend="italic">Pollock-Maitland</hi> HEL. I 148</seg><seg type="translation" xml:lang="en" source="#claude">the Exchequer and the courts of the realm sit permanently at Westminster only from Richard I; cf. Hughes, Dial. de scacc. p. 43; Pollock–Maitland, HEL. I 148</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_32-B-13.lnote.la.fn.r" n="r" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">657</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vgl. o.</hi> 32 A 2<hi rend="italic">e</hi></seg><seg type="translation" xml:lang="en" source="#claude">cf. above, 32 A 2, note e</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_32-B-13.lnote.la.32" n="32" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">657</biblScope></bibl><seg type="original" xml:lang="de">ea <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">ea Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_32-B-13.lnote.la.33" n="33" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">657</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">so K;</hi> supersunt (<hi rend="italic">geänd.</hi> -fuit <hi rend="italic">Or</hi>) <hi rend="italic">Or Ld;</hi> semper <hi rend="italic">empfiehlt Riley zu Liber albus, was gemäss</hi> 32 B 12; <hi rend="italic">aber Hn hat</hi> super</seg><seg type="translation" xml:lang="en" source="#claude">so K; supersunt (altered -fuit Or) Or Ld; Riley, on the Liber albus, recommends semper, which accords with 32 B 12; but Hn has super</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_32-B-13.lnote.la.34" n="34" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">657</biblScope></bibl><seg type="original" xml:lang="de">hucusque <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">hucusque Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_32-B-13.lnote.la.35" n="35" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">657</biblScope></bibl><seg type="original" xml:lang="de">immobil. seruat ubique <hi rend="italic">Hn;</hi> ubique <hi rend="italic">fügt zu K Co L. alb.</hi></seg><seg type="translation" xml:lang="en" source="#claude">immobil. seruat ubique Hn; K Co L. alb. add ubique</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_32-B-13.lnote.la.36" n="36" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">657</biblScope></bibl><seg type="original" xml:lang="de">-nem <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">-nem Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_32-B-13.lnote.la.37" n="37" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">657</biblScope></bibl><seg type="original" xml:lang="de">priorum <hi rend="italic">L. alb.</hi></seg><seg type="translation" xml:lang="en" source="#claude">priorum L. alb.</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

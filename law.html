@@ -168,6 +168,12 @@ scripts:
             if (name === 'pb') return;      // the page the text begins on: shown in its label (pageOf)
             if (name === 'lb') { frag.appendChild(el('br')); if (n.getAttribute('type') === 'paragraph') frag.appendChild(el('br')); return; }
             const rend = name === 'hi' ? (n.getAttribute('rend') || '') : '';
+            if (/superscript/.test(rend)) {
+                const out = el('sup');
+                out.appendChild(inline(n, opts));
+                frag.appendChild(out);
+                return;
+            }
             if (/bold|spaced|smallcaps/.test(rend)) {
                 const out = el(/bold/.test(rend) ? 'strong' : 'span', /spaced/.test(rend) ? 'spaced' : /smallcaps/.test(rend) ? 'smallcaps' : null);
                 out.appendChild(inline(n, opts));

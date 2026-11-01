@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECf_34-2e">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf 34.2e</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECf_34-2e</idno>
+        <idno type="citation">ECf 34.2e</idno>
+        <idno type="lawCode">ECf</idno>
+        <idno type="lawCodeAnchor">ECf</idno>
+        <idno type="clause">34.2e</idno>
+        <idno type="citationKey">ECf 34.2e</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">663</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>1115–50, probably 1130–35 (Liebermann, I p. 627)</date><note type="promulgation">1115–50, probably 1130–35 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="34.2e">
+        <head><ref type="lawCode" target="law:ECf">ECf</ref> 34.2e</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 34.2e"><pb n="663" ed="#liebermann"/><ptr type="liebermannNote" n="23" target="#ECf_34-2e.lnote.la.23"/>Post quem<ptr type="liebermannNote" n="24" target="#ECf_34-2e.lnote.la.24"/> Hardecnutus<ptr type="liebermannNote" n="25" target="#ECf_34-2e.lnote.la.25"/>, filius Chnuti<ptr type="liebermannNote" n="2" target="#ECf_34-2e.lnote.la.2"/> ex<ptr type="liebermannNote" n="27" target="#ECf_34-2e.lnote.la.27"/> Alueua<ptr type="liebermannNote" n="28" target="#ECf_34-2e.lnote.la.28"/>-Emma<ptr type="liebermannNote" n="29" target="#ECf_34-2e.lnote.la.29"/>, sorore<ptr type="liebermannNote" n="30" target="#ECf_34-2e.lnote.la.30"/> Rodberti<ptr type="liebermannNote" n="e" target="#ECf_34-2e.lnote.la.fn.e"/><ptr type="liebermannNote" n="31" target="#ECf_34-2e.lnote.la.31"/> comitis Normannorum<ptr type="liebermannNote" n="32" target="#ECf_34-2e.lnote.la.32"/> et matre<ptr type="liebermannNote" n="33" target="#ECf_34-2e.lnote.la.33"/> Eadwardi<ptr type="liebermannNote" n="34" target="#ECf_34-2e.lnote.la.34"/> regis<ptr type="liebermannNote" n="35" target="#ECf_34-2e.lnote.la.35"/>, duobus<ptr type="liebermannNote" n="f" target="#ECf_34-2e.lnote.la.fn.f"/> annis XII ebdomadibus minus regnauit†. Et sic completi sunt LX<ptr type="liebermannNote" n="36" target="#ECf_34-2e.lnote.la.36"/> et VIII anni<ptr type="liebermannNote" n="g" target="#ECf_34-2e.lnote.la.fn.g"/> dimissis legibus.</ab>
+        <note type="comparison" source="#liebermann" n="663"><label>printed alongside</label> <ref target="clause:ECfRetr_34-2e">ECf retr 34.2e</ref></note>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 663 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
+        <note type="editorial">After “Chnuti” Liebermann prints the note number 2 (“Can. Hk”, as for “Chnuto” in 34, 2b), and there is no note 26 in the ECf column of this page; it is linked here as printed.</note>
+        <note type="editorial">Liebermann prints “†” and gives in the outer margin of the ECf retr column the dates †1039–42. Beside the end of this sentence in the ECf retr column he gives the dates 975–1042, for the 68 years.</note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34-2e.lnote.la.fn.e" n="e" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">663</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">nicht (mit Hk und einer Retr.-Classe)</hi> Ricardi [II.] <hi rend="italic">zu bessern, laut des Irrthums auch</hi> 35, 2. Ducem <hi rend="italic">setzt Retr., weil im</hi> 12. <hi rend="italic">Jh. der Grafentitel für die Normandie verschwand.</hi></seg><seg type="translation" xml:lang="en" source="#claude">not to be corrected (with Hk and one class of the Retr.) to Ricardi [II], given the same error also at 35, 2. The Retr. puts ducem because in the 12th century the title of count for Normandy disappeared.</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34-2e.lnote.la.fn.f" n="f" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">663</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vielmehr</hi> III</seg><seg type="translation" xml:lang="en" source="#claude">rather III</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34-2e.lnote.la.fn.g" n="g" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">663</biblScope></bibl><seg type="original" xml:lang="de">4 + 38 + 1 + 18 + 5 + 2 = 68</seg><seg type="translation" xml:lang="en" source="#claude">4 + 38 + 1 + 18 + 5 + 2 = 68</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34-2e.lnote.la.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">663</biblScope></bibl><seg type="original" xml:lang="de">Can. <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">Can. Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34-2e.lnote.la.23" n="23" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">663</biblScope></bibl><seg type="original" xml:lang="de">Regnum Hardechnuti, filii Chnuti regis <hi rend="italic">überschr. Pl S</hi></seg><seg type="translation" xml:lang="en" source="#claude">Pl S head it Regnum Hardechnuti, filii Chnuti regis</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34-2e.lnote.la.24" n="24" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">663</biblScope></bibl><seg type="original" xml:lang="de">quam <hi rend="italic">S</hi></seg><seg type="translation" xml:lang="en" source="#claude">quam S</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34-2e.lnote.la.25" n="25" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">663</biblScope></bibl><seg type="original" xml:lang="de">-chn. <hi rend="italic">Rl S;</hi> Chuti Aluene etiam sororis <hi rend="italic">Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">-chn. Rl S; Chuti Aluene etiam sororis Hr</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34-2e.lnote.la.27" n="27" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">663</biblScope></bibl><seg type="original" xml:lang="de">et <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">et Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34-2e.lnote.la.28" n="28" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">663</biblScope></bibl><seg type="original" xml:lang="de">Alfu. <hi rend="italic">S;</hi> Alueue <hi rend="italic">Hk; fehlt Rl</hi></seg><seg type="translation" xml:lang="en" source="#claude">Alfu. S; Alueue Hk; lacking in Rl</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34-2e.lnote.la.29" n="29" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">663</biblScope></bibl><seg type="original" xml:lang="de">Emme <hi rend="italic">Hk;</hi> Iunia <hi rend="italic">S</hi> [<hi rend="italic">statt</hi> Imma]</seg><seg type="translation" xml:lang="en" source="#claude">Emme Hk; Iunia S [instead of Imma]</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34-2e.lnote.la.30" n="30" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">663</biblScope></bibl><seg type="original" xml:lang="de">sororis <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">sororis Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34-2e.lnote.la.31" n="31" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">663</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="spaced">Ricardi</hi> <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">Ricardi Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34-2e.lnote.la.32" n="32" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">663</biblScope></bibl><seg type="original" xml:lang="de">-nnie <hi rend="italic">Rl S</hi></seg><seg type="translation" xml:lang="en" source="#claude">-nnie Rl S</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34-2e.lnote.la.33" n="33" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">663</biblScope></bibl><seg type="original" xml:lang="de">matris <hi rend="italic">Rl Hk Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">matris Rl Hk Hr</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34-2e.lnote.la.34" n="34" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">663</biblScope></bibl><seg type="original" xml:lang="de">r. Ædw. <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">r. Ædw. Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34-2e.lnote.la.35" n="35" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">663</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Hr</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34-2e.lnote.la.36" n="36" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">663</biblScope></bibl><seg type="original" xml:lang="de">XLVII a. et fere duo menses <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">XLVII a. et fere duo menses Hk</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

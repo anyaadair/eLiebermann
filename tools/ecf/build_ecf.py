@@ -32,11 +32,12 @@ def inline(s):
     s = s.replace('<i>', '<hi rend="italic">').replace('</i>', '</hi>')
     s = s.replace('<b>', '<hi rend="bold">').replace('</b>', '</hi>')
     s = s.replace('<sp>', '<hi rend="spaced">').replace('</sp>', '</hi>')
+    s = s.replace('<sup>', '<hi rend="superscript">').replace('</sup>', '</hi>')
     return s
 
 def note_id(cid, key):
-    k = {'*': 'star'}.get(key, key)
-    k = k.replace('f:', 'fn.')
+    k = {'*': 'star', '**': 'star2', '†': 'dagger'}.get(key, key)
+    k = k.replace('f:', 'fn.').replace('/', '-p')
     return f'{cid}.lnote.la.{k}'
 
 def build(cl, all_ids):
@@ -46,7 +47,7 @@ def build(cl, all_ids):
     text = cl['text']
     def mark(m):
         key = m.group(1)
-        shown = key[2:] if key.startswith('f:') else key
+        shown = (key[2:] if key.startswith('f:') else key).split('/')[0]
         return f'<ptr type="liebermannNote" n="{shown}" target="#{note_id(cid, key)}"/>'
     body = re.sub(r'\{([^}]+)\}', mark, inline(text))
     body = body.replace('[[pb]]', '')
@@ -54,8 +55,8 @@ def build(cl, all_ids):
     notes = []
     for key, (de, en) in cl['notes'].items():
         key = str(key)
-        sub = 'erklaerung' if key.startswith('f:') else 'textual'
-        shown = key[2:] if key.startswith('f:') else key
+        sub = 'textual'   # lettered footnotes too, as in Hn: the site shows only 'textual' notes for an untranslated Latin text
+        shown = (key[2:] if key.startswith('f:') else key).split('/')[0]
         pg = cl.get('notepages', {}).get(key, page)
         notes.append(f'<note type="liebermannNote" subtype="{sub}" xml:id="{note_id(cid, key)}" n="{shown}" source="#liebermann">'
                      f'<bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">{pg}</biblScope></bibl>'
