@@ -19,6 +19,7 @@
     <encodingDesc>
       <listPrefixDef>
         <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
         <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
         <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
       </listPrefixDef>
@@ -36,7 +37,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">taccare</hi>: confirmare <ref type="lawCode" target="law:ECf">ECf</ref> 30,4 [<hi rend="italic"><ref type="abbreviation" target="gram:irrig"><abbr>irrig</abbr></ref>, <ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:tac">tac</ref>; <hi rend="italic"><ref type="abbreviation" target="gram:vielleicht"><abbr>viell.</abbr></ref></hi> tæcan <hi rend="italic"><ref type="abbreviation" target="gram:Nummer"><abbr>n.</abbr></ref></hi> 3 <hi rend="italic">meinend, <ref type="abbreviation" target="gram:oder"><abbr>oder</abbr></ref></hi> tæcnian <hi rend="italic">als ‘anweisen, vorschreiben’</hi>]; <hi rend="italic"><ref type="abbreviation" target="gram:Variante"><abbr>Var.</abbr></ref>:</hi> tactare, tractare</dictScrap>
         <xr type="see"><ref target="entry:tac">tac</ref></xr>
-        <xr type="lawCode"><ref target="law:ECf">ECf 30,4</ref></xr>
+        <xr type="lawCode"><ref target="clause:ECf_30-4">ECf 30,4</ref></xr>
       </entry>
     </body>
   </text>

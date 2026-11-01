@@ -19,6 +19,7 @@
     <encodingDesc>
       <listPrefixDef>
         <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
         <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
         <prefixDef ident="bib" matchPattern="(.+)" replacementPattern="bibAbb.html#$1"/>
         <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
@@ -36,7 +37,7 @@
           <orth>Gurthus</orth>
         </form>
         <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">Gurthus</hi>, <hi rend="italic">Bruder Haralds II.,</hi> <ref type="lawCode" target="law:ECf">ECf</ref> 35,2; <hi rend="italic"><ref type="abbreviation" target="gram:Variante"><abbr>Var.</abbr></ref></hi> ~tus. [<hi rend="italic"><ref type="lawCode" target="law:InCn">In</ref> <ref type="bibl" target="bib:CitASC">Ags. Annalen</ref></hi> Gyrð, Gerð; <hi rend="italic">im <ref type="bibl" target="bib:CitDomesday">Domesday</ref></hi> Gurt, Guert, Guerd]</dictScrap>
-        <xr type="lawCode"><ref target="law:ECf">ECf 35,2</ref></xr>
+        <xr type="lawCode"><ref target="clause:ECf_35-2">ECf 35,2</ref></xr>
       </entry>
     </body>
   </text>

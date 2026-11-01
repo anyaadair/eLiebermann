@@ -19,6 +19,7 @@
     <encodingDesc>
       <listPrefixDef>
         <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
         <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
         <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
       </listPrefixDef>
@@ -35,7 +36,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">Humbre</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Genitiv"><abbr>gn</abbr></ref></hi>, <hi rend="italic">Fluss Humber</hi> <ref type="lawCode" target="law:Lond">Lond</ref> <ref type="lawCode" target="law:ECf">ECf</ref> 32 D 4; <hi rend="italic"><ref type="abbreviation" target="gram:Variante"><abbr>Var.</abbr></ref></hi> ~ri. — <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> Norðhymbre</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/19913">Humbre</ref></xr>
-        <xr type="lawCode"><ref target="law:ECf">ECf 32 D 4</ref></xr>
+        <xr type="lawCode"><ref target="clause:ECf_32-D-4">ECf 32 D 4</ref></xr>
       </entry>
     </body>
   </text>

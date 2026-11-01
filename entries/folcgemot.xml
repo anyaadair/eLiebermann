@@ -47,8 +47,10 @@
         <xr type="lawCode"><ref target="clause:Northu_55">Northu 55</ref></xr>
         <xr type="lawCode"><ref target="clause:VAtr_13-1">V Atr 13,1</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAtr_22-1">VI Atr 22,1</ref></xr>
-        <xr type="lawCode"><ref target="law:ECf">ECf 32 A 3</ref></xr>
-        <xr type="lawCode" rend="range-from:ECf 32 A 3"><ref target="law:ECf">ECf 32 A 6</ref></xr>
+        <xr type="lawCode"><ref target="clause:ECf_32-A-3">ECf 32 A 3</ref></xr>
+        <xr type="lawCode" subtype="range"><ref target="clause:ECf_32-A-4">ECf 32 A 4</ref></xr>
+        <xr type="lawCode" subtype="range"><ref target="clause:ECf_32-A-5">ECf 32 A 5</ref></xr>
+        <xr type="lawCode" rend="range-from:ECf 32 A 3"><ref target="clause:ECf_32-A-6">ECf 32 A 6</ref></xr>
       </entry>
     </body>
   </text>

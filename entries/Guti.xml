@@ -19,6 +19,7 @@
     <encodingDesc>
       <listPrefixDef>
         <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
         <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
         <prefixDef ident="bib" matchPattern="(.+)" replacementPattern="bibAbb.html#$1"/>
         <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
@@ -36,7 +37,7 @@
           <orth>Guti</orth>
         </form>
         <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">Guti</hi> <hi rend="italic">Jüten, als Vertreter der Dänen?</hi> <ref type="lawCode" target="law:Lond">Lond</ref> <ref type="lawCode" target="law:ECf">ECf</ref> 32 C 1 [<hi rend="italic">dagegen <ref type="abbreviation" target="gram:nach"><abbr>nach</abbr></ref> </hi><ref type="bibl" target="bib:CitStevensonAsser"><hi rend="italic">Stevenson</hi> Asser 170<hi rend="superscript">6</hi></ref>: <hi rend="italic">Bewohner der Insel Gotland</hi>]</dictScrap>
-        <xr type="lawCode"><ref target="law:ECf">ECf 32 C 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:ECf_32-C-1">ECf 32 C 1</ref></xr>
       </entry>
     </body>
   </text>

@@ -19,6 +19,7 @@
     <encodingDesc>
       <listPrefixDef>
         <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
         <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
         <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
       </listPrefixDef>
@@ -34,7 +35,7 @@
           <orth>Cadvalladrius</orth>
         </form>
         <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">Cadvalladrius</hi> rex Britanniae <ref type="lawCode" target="law:Lond">Lond</ref> <ref type="lawCode" target="law:ECf">ECf</ref> 32 C 3; <hi rend="italic"><ref type="abbreviation" target="gram:Variante"><abbr>Var.</abbr></ref></hi> Cadwaladrus</dictScrap>
-        <xr type="lawCode"><ref target="law:ECf">ECf 32 C 3</ref></xr>
+        <xr type="lawCode"><ref target="clause:ECf_32-C-3">ECf 32 C 3</ref></xr>
       </entry>
     </body>
   </text>
