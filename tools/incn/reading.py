@@ -84,9 +84,28 @@ def witnesses(path):
     return [abbr.get(w, w) for w in re.findall(r'<ab type="liebermannText"[^>]*corresp="#([^"]+)"', s)]
 
 def clean(x):
-    x = re.sub(r'<ptr [^>]*/>', '', x)
+    """the passage's TEI, without page breaks; Liebermann's note numbers (<ptr>) are kept, as <ptr n= target=>"""
     x = re.sub(r'<pb [^>]*/>', '', x)
+    x = re.sub(r'<ptr type="(?:liebermannNote|editorNote)" n="([^"]*)" target="#([^"]+)"/>', r'<ptr n="\1" target="\2"/>', x)
+    x = re.sub(r'<ptr (?!n=)[^>]*/>', '', x)
     return x.strip()
+
+_files = {}
+def notes_of(path, text):
+    """Liebermann's notes whose numbers stand in the passage, in order: [{n, page, de, en}]"""
+    if path not in _files:
+        s = open(path, encoding='utf-8').read()
+        _files[path] = {m.group(1): m.group(0) for m in re.finditer(r'<note type="liebermannNote"[^>]*xml:id="([^"]+)".*?</note>', s, re.S)}
+    out, seen = [], set()
+    for n, t in re.findall(r'<ptr n="([^"]*)" target="([^"]+)"/>', text):
+        note = _files[path].get(t)
+        if not note or t in seen:
+            continue
+        seen.add(t)
+        seg = lambda kind: (re.search(r'<seg type="' + kind + r'"[^>]*>(.*?)</seg>', note, re.S) or [None, ''])[1]
+        pg = re.search(r'<biblScope unit="page">(\d+)</biblScope>', note)
+        out.append({'n': n, 't': t, 'page': pg.group(1) if pg else '', 'de': seg('original'), 'en': seg('translation')})
+    return out
 
 def main():
     rows = [json.loads(l.strip().rstrip(',')) for l in open(os.path.join(LAWS, 'index.json'), encoding='utf-8') if l.strip().startswith('{')]
@@ -111,7 +130,8 @@ def main():
                 abs_ = ab_of(os.path.join(LAWS, c['file']), True)
                 for x in abs_:
                     out.append({'incn': r['clause'].replace('—', '–'), 'id': c['id'], 'source': c['citation'], 'printed': 'beside',
-                                'page': (re.search(r'<pb n="(\d+)"', x) or [None, ''])[1], 'text': clean(x)})
+                                'page': (re.search(r'<pb n="(\d+)"', x) or [None, ''])[1], 'text': clean(x),
+                                'notes': notes_of(os.path.join(LAWS, c['file']), clean(x))})
                     got += 1
             if not got:
                 print('nothing found for', r['id'], anchor, a, b)
@@ -124,12 +144,13 @@ def main():
             else:
                 text = clean(xs[0]) if xs else ''
             out.append({'incn': r['clause'], 'id': r['id'], 'source': '', 'printed': 'list',
-                        'page': (re.search(r'<pb n="(\d+)"', xs[0]) or [None, ''])[1] if xs else '', 'text': text})
+                        'page': (re.search(r'<pb n="(\d+)"', xs[0]) or [None, ''])[1] if xs else '', 'text': text,
+                        'notes': notes_of(os.path.join(LAWS, r['file']), text)})
     rub = []
     for r in by_anchor['InCn']:
         if r['clause'].startswith('Rb'):
             for x in ab_of(os.path.join(LAWS, r['file']), False)[:1]:
-                rub.append({'incn': r['clause'], 'id': r['id'], 'text': clean(x)})
+                rub.append({'incn': r['clause'], 'id': r['id'], 'text': clean(x), 'notes': notes_of(os.path.join(LAWS, r['file']), clean(x))})
     try:
         crib = json.load(open(os.path.join(ROOT, 'data', 'incn-crib.json'), encoding='utf-8'))['crib']
     except OSError:
