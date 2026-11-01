@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECf_16-2">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf 16.2</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECf_16-2</idno>
+        <idno type="citation">ECf 16.2</idno>
+        <idno type="lawCode">ECf</idno>
+        <idno type="lawCodeAnchor">ECf</idno>
+        <idno type="clause">16.2</idno>
+        <idno type="citationKey">ECf 16.2</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">642</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>1115–50, probably 1130–35 (Liebermann, I p. 627)</date><note type="promulgation">1115–50, probably 1130–35 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="16.2">
+        <head><ref type="lawCode" target="law:ECf">ECf</ref> 16.2</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 16.2"><pb n="642" ed="#liebermann"/>ita<ptr type="liebermannNote" n="12" target="#ECf_16-2.lnote.la.12"/> quod, si quis de Anglis<ptr type="liebermannNote" n="d" target="#ECf_16-2.lnote.la.fn.d"/> aliquem ipsorum<ptr type="liebermannNote" n="13" target="#ECf_16-2.lnote.la.13"/> interficeret<ptr type="liebermannNote" n="14" target="#ECf_16-2.lnote.la.14"/>, si non posset defendere<ptr type="liebermannNote" n="e" target="#ECf_16-2.lnote.la.fn.e"/> se iudicio Dei, ferro<ptr type="liebermannNote" n="15" target="#ECf_16-2.lnote.la.15"/> uel aqua, fieret iusticia<ptr type="liebermannNote" n="16" target="#ECf_16-2.lnote.la.16"/> de eo; si autem aufugeret<ptr type="liebermannNote" n="17" target="#ECf_16-2.lnote.la.17"/>, solueretur<ptr type="liebermannNote" n="f" target="#ECf_16-2.lnote.la.fn.f"/>, ut supra dictum est.</ab>
+        <note type="comparison" source="#liebermann" n="642"><label>printed alongside</label> <ref target="clause:ECfRetr_16-2">ECf retr 16.2</ref></note>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 642 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_16-2.lnote.la.fn.d" n="d" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">642</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">des Thäters Nationalität stand nach Bisherigem nicht in Frage</hi></seg><seg type="translation" xml:lang="en" source="#claude">from what has gone before, the slayer’s nationality was not in question</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_16-2.lnote.la.fn.e" n="e" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">642</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">das Ordal reinigt vom Verdacht des heimlichen Todtschlags</hi> (<hi rend="italic">nicht des offenen zur Abwehr oder Rache, dem Widerrechtlichkeit vorgeworfen</hi>)</seg><seg type="translation" xml:lang="en" source="#claude">the ordeal clears of the suspicion of secret homicide (not of open homicide in self-defence or revenge, of which unlawfulness is alleged)</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_16-2.lnote.la.fn.f" n="f" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">642</biblScope></bibl><seg type="original" xml:lang="de">murdrum <hi rend="italic">laut</hi> 15, 2</seg><seg type="translation" xml:lang="en" source="#claude">murdrum, according to 15, 2</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_16-2.lnote.la.12" n="12" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">642</biblScope></bibl><seg type="original" xml:lang="de">Itaque si <hi rend="italic">Rl S Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">Itaque si Rl S Ad Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_16-2.lnote.la.13" n="13" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">642</biblScope></bibl><seg type="original" xml:lang="de">illorum <hi rend="italic">Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">illorum Hr</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_16-2.lnote.la.14" n="14" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">642</biblScope></bibl><seg type="original" xml:lang="de">-fecerit <hi rend="italic">Ad;</hi> et <hi rend="italic">fügt zu Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">-fecerit Ad; Do adds et</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_16-2.lnote.la.15" n="15" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">642</biblScope></bibl><seg type="original" xml:lang="de">scilicet <hi rend="italic">fügt zu Hr Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">Hr Ad Do add scilicet</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_16-2.lnote.la.16" n="16" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">642</biblScope></bibl><seg type="original" xml:lang="de">de eo iu. <hi rend="italic">Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">de eo iu. Ad Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_16-2.lnote.la.17" n="17" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">642</biblScope></bibl><seg type="original" xml:lang="de">affug. <hi rend="italic">Hk;</hi> fug. <hi rend="italic">Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">affug. Hk; fug. Ad Do</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>
