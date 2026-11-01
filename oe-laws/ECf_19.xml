@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECf_19">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf 19</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECf_19</idno>
+        <idno type="citation">ECf 19</idno>
+        <idno type="lawCode">ECf</idno>
+        <idno type="lawCodeAnchor">ECf</idno>
+        <idno type="clause">19</idno>
+        <idno type="citationKey">ECf 19</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">644</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>1115–50, probably 1130–35 (Liebermann, I p. 627)</date><note type="promulgation">1115–50, probably 1130–35 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="19">
+        <head><ref type="lawCode" target="law:ECf">ECf</ref> 19</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 19"><pb n="644" ed="#liebermann"/><ptr type="liebermannNote" n="29" target="#ECf_19.lnote.la.29"/>Et<ptr type="liebermannNote" n="30" target="#ECf_19.lnote.la.30"/> si ipsi rei uxores habuerint, et remanserint in terra<ptr type="liebermannNote" n="k" target="#ECf_19.lnote.la.fn.k"/>, et dixerit aliquis parentum illorum<ptr type="liebermannNote" n="31" target="#ECf_19.lnote.la.31"/>, quos<ptr type="liebermannNote" n="32" target="#ECf_19.lnote.la.32"/> ipsi<ptr type="liebermannNote" n="33" target="#ECf_19.lnote.la.33"/> murdrierunt uel tradiderunt, eas consiliatrices<ptr type="liebermannNote" n="l" target="#ECf_19.lnote.la.fn.l"/> uel<ptr type="liebermannNote" n="m" target="#ECf_19.lnote.la.fn.m"/> adiutrices<ptr type="liebermannNote" n="34" target="#ECf_19.lnote.la.34"/> fuisse<ptr type="liebermannNote" n="35" target="#ECf_19.lnote.la.35"/>, expurgent se, si poterint<ptr type="liebermannNote" n="36" target="#ECf_19.lnote.la.36"/>, iudicio Dei.</ab>
+        <note type="comparison" source="#liebermann" n="644"><label>printed alongside</label> <ref target="clause:ECfRetr_19">ECf retr 19</ref></note>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 644 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_19.lnote.la.fn.k" n="k" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">644</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">ohne den Reichs-Abschwörer zu begleiten</hi></seg><seg type="translation" xml:lang="en" source="#claude">without accompanying the one who abjures the realm</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_19.lnote.la.fn.l" n="l" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">644</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vgl.</hi> Ine 7. 57</seg><seg type="translation" xml:lang="en" source="#claude">cf. Ine 7. 57</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_19.lnote.la.fn.m" n="m" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">644</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vgl.</hi> 23a</seg><seg type="translation" xml:lang="en" source="#claude">cf. 23a</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_19.lnote.la.29" n="29" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">644</biblScope></bibl><seg type="original" xml:lang="de">De uxoribus reorum <hi rend="italic">überschreibt Pl S Cl</hi></seg><seg type="translation" xml:lang="en" source="#claude">Pl S Cl head it De uxoribus reorum</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_19.lnote.la.30" n="30" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">644</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt S Ad Wo Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in S Ad Wo Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_19.lnote.la.31" n="31" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">644</biblScope></bibl><seg type="original" xml:lang="de">eorum <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">eorum Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_19.lnote.la.32" n="32" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">644</biblScope></bibl><seg type="original" xml:lang="de">quod <hi rend="italic">Hk S Ad;</hi> murdriti fuerint <hi rend="italic">statt</hi> quos—trad. <hi rend="italic">Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">quod Hk S Ad; murdriti fuerint instead of quos—trad. Hr</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_19.lnote.la.33" n="33" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">644</biblScope></bibl><seg type="original" xml:lang="de">qui <hi rend="italic">fügt zu Hk S;</hi> ipsis qui murdrauerunt <hi rend="italic">Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">Hk S add qui; ipsis qui murdrauerunt Ad Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_19.lnote.la.34" n="34" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">644</biblScope></bibl><seg type="original" xml:lang="de">murdriti <hi rend="italic">fügt zu Hr;</hi> adiuuatr. <hi rend="italic">Ad</hi></seg><seg type="translation" xml:lang="en" source="#claude">Hr adds murdriti; adiuuatr. Ad</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_19.lnote.la.35" n="35" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">644</biblScope></bibl><seg type="original" xml:lang="de">fuerunt, expurgare se poterunt <hi rend="italic">Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">fuerunt, expurgare se poterunt Ad Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_19.lnote.la.36" n="36" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">644</biblScope></bibl><seg type="original" xml:lang="de">-runt <hi rend="italic">S</hi></seg><seg type="translation" xml:lang="en" source="#claude">-runt S</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>
