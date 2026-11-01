@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECf_30-4">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf 30.4</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECf_30-4</idno>
+        <idno type="citation">ECf 30.4</idno>
+        <idno type="lawCode">ECf</idno>
+        <idno type="lawCodeAnchor">ECf</idno>
+        <idno type="clause">30.4</idno>
+        <idno type="citationKey">ECf 30.4</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">653</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>1115–50, probably 1130–35 (Liebermann, I p. 627)</date><note type="promulgation">1115–50, probably 1130–35 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="30.4">
+        <head><ref type="lawCode" target="law:ECf">ECf</ref> 30.4</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 30.4"><pb n="653" ed="#liebermann"/>quia arma uocant<ptr type="liebermannNote" n="4" target="#ECf_30-4.lnote.la.4"/> ipsi<ptr type="liebermannNote" n="5" target="#ECf_30-4.lnote.la.5"/> wap[n]a<ptr type="liebermannNote" n="6" target="#ECf_30-4.lnote.la.6"/> et<ptr type="liebermannNote" n="7" target="#ECf_30-4.lnote.la.7"/> taccare<ptr type="liebermannNote" n="8" target="#ECf_30-4.lnote.la.8"/>: confirmare<ptr type="liebermannNote" n="b" target="#ECf_30-4.lnote.la.fn.b"/>.</ab>
+        <note type="comparison" source="#liebermann" n="653"><label>printed alongside</label> <ref target="clause:ECfRetr_30-4">ECf retr 30.4</ref></note>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 653 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
+        <note type="editorial">Liebermann leaves the ECf column empty at 30, 4a and 30, 4b: these sentences are only in ECf retr.</note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_30-4.lnote.la.fn.b" n="b" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">653</biblScope></bibl><seg type="original" xml:lang="de">confirma[tio] <hi rend="italic">ward bezeugt durch</hi> vapnatak, <hi rend="italic">Nordisch ‘Waffenanrühren der Versammlung’;</hi> tac <hi rend="italic">heisst Nordisch ‘Griff, Fassen, Nehmen’. Schon</hi> Ann. Anglosax. <hi rend="italic">seit</hi> 1075 <hi rend="italic">braucht aber das Lehnwort</hi> tacan; <hi rend="italic">Verf. meint also vielleicht irrig</hi> Angelsachsen <hi rend="italic">nicht allein Nordischer Herkunft. — Den Retr.</hi> (<hi rend="italic">vgl.</hi> 35, 1c: expressius dicimus) <hi rend="italic">verführt Gleichklang mit dem Lateinischen zum Irrthum, es gebe ein *</hi>tac: Berührung</seg><seg type="translation" xml:lang="en" source="#claude">confirma[tio] was attested by vapnatak, Norse ‘touching of weapons by the assembly’; tac in Norse means ‘grip, grasping, taking’. But the Anglo-Saxon annals already use the loanword tacan from 1075; so the author perhaps wrongly means Anglo-Saxons not solely of Norse origin. — Similarity of sound with the Latin leads the Retractator (cf. 35, 1c: expressius dicimus) into the error that there is a *tac: touch</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_30-4.lnote.la.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">653</biblScope></bibl><seg type="original" xml:lang="de">uocabant <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">uocabant Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_30-4.lnote.la.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">653</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Hk S Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Hk S Ad Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_30-4.lnote.la.6" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">653</biblScope></bibl><seg type="original" xml:lang="de">wapa <hi rend="italic">Hk;</hi> wepnen <hi rend="italic">Ad;</hi> wepne <hi rend="italic">Do;</hi> wappa <hi rend="italic">Rl; vielleicht las Or</hi> wapā = wapan <hi rend="italic">oder</hi> wępne</seg><seg type="translation" xml:lang="en" source="#claude">wapa Hk; wepnen Ad; wepne Do; wappa Rl; perhaps Or read wapā = wapan or wępne</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_30-4.lnote.la.7" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">653</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Ad</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Ad</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_30-4.lnote.la.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">653</biblScope></bibl><seg type="original" xml:lang="de">tractare et <hi rend="italic">Ad;</hi> tactare quod est <hi rend="italic">S</hi></seg><seg type="translation" xml:lang="en" source="#claude">tractare et Ad; tactare quod est S</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>
