@@ -1033,7 +1033,10 @@
         const spelling = !!(opts || {}).spelling;
         const affix = spelling || /^\s*-|-\s*$/.test(String((opts || {}).headword || '').split(',')[0]);
         const oneLetter = /^\p{L}$/u.test(hw.normalize('NFC'));
-        if (hw) hits.forEach(h => {
+        // Liebermann's grammatical entries (Accent, Declination …) cite hundreds of forms, each the
+        // word before its citation and often not clearly marked off: their links open the clause
+        // without marking a word (the entry page says so)
+        if (hw && !(opts || {}).noFind) hits.forEach(h => {
             let form = formBefore(flat, h.flatStart, ital, bold, breaks, hw, affix);
             if (spelling && form === hw) form = '';
             const sep = () => (h.href.includes('?') ? '&' : '?');
