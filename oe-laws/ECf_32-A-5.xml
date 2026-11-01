@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECf_32-A-5">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf 32 A 5</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECf_32-A-5</idno>
+        <idno type="citation">ECf 32 A 5</idno>
+        <idno type="lawCode">ECf</idno>
+        <idno type="lawCodeAnchor">ECf</idno>
+        <idno type="clause">32 A 5</idno>
+        <idno type="citationKey">ECf 32 A 5</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">655</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>1115–50, probably 1130–35 (Liebermann, I p. 627)</date><note type="promulgation">1115–50, probably 1130–35 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="32 A 5">
+        <head><ref type="lawCode" target="law:ECf">ECf</ref> 32 A 5</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 32 A 5"><pb n="655" ed="#liebermann"/>Statutum est enim, quod ibi debent populi<ptr type="liebermannNote" n="13" target="#ECf_32-A-5.lnote.la.13"/> omnes et gentes uniuerse singulis annis, semel in anno scilicet, conuenire, scilicet in capite kalendarum Maii, et se fide<ptr type="liebermannNote" n="h" target="#ECf_32-A-5.lnote.la.fn.h"/> et sacramento non<ptr type="liebermannNote" n="i" target="#ECf_32-A-5.lnote.la.fn.i"/> fracto ibi in unum et insimul<ptr type="liebermannNote" n="14" target="#ECf_32-A-5.lnote.la.14"/> confederare et consolidare sicut coniurati<ptr type="liebermannNote" n="k" target="#ECf_32-A-5.lnote.la.fn.k"/> fratres ad defendendum regnum contra alienigenas et contra inimicos, una cum domino suo rege, et terras et honores illius omni fidelitate cum eo seruare, et quod illi ut domino suo regi intra et extra regnum uniuersum Britannie<ptr type="liebermannNote" n="1" target="#ECf_32-A-5.lnote.la.1"/> fideles esse uolunt.</ab>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 655 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
+        <note type="editorial">This passage is not part of ECf or ECf retr: it is one of the additions of the London collection (Leges Anglorum s. XIII in. Londoniis collectae), which Liebermann prints in smaller type across the page as an insertion into ECf retr. 32 (32 A–E, pp. 655–660). The dictionary cites it as “ECf 32 A …”, so it is kept with ECf here.</note>
+        <note type="editorial">Liebermann’s letter a after “Maii” is his upright a (Erklärungen).</note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_32-A-5.lnote.la.fn.h" n="h" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">655</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">ähnlich ebd.</hi> 2. 9. <hi rend="italic">Der Treu- und Friedenseid, in der Grafschaft</hi> 1166, 1181, 1195, 1199, 1205 <hi rend="italic">neu verordnet, kommt auch im Londoner Folcesmot vor</hi></seg><seg type="translation" xml:lang="en" source="#claude">similarly ibid. 2. 9. The oath of fealty and peace, newly ordained in the shire in 1166, 1181, 1195, 1199, 1205, also occurs in the London folkmoot</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_32-A-5.lnote.la.fn.i" n="i" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">655</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">entnommen wohl technischer Rechtssprache, in der es</hi> ungestabten Eid <hi rend="italic">bedeutet; der Londoner meint aber</hi> unverbrüchlich</seg><seg type="translation" xml:lang="en" source="#claude">probably taken from technical legal language, in which it means an oath not sworn with the staff; but the Londoner means unbreakable</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_32-A-5.lnote.la.fn.k" n="k" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">655</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">nicht</hi> Eidbrüder, <hi rend="italic">sondern</hi> geschworene Volksgenossen, <hi rend="italic">auch u.</hi> 32 C 1; <hi rend="italic">vgl. o. S.</hi> 490<hi rend="italic">n</hi></seg><seg type="translation" xml:lang="en" source="#claude">not sworn brothers, but sworn fellow-countrymen, also below 32 C 1; cf. above, p. 490, note n</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_32-A-5.lnote.la.13" n="13" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">655</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">so Co Ld;</hi> o. p. <hi rend="italic">K</hi></seg><seg type="translation" xml:lang="en" source="#claude">so Co Ld; o. p. K</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_32-A-5.lnote.la.14" n="14" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">655</biblScope></bibl><seg type="original" xml:lang="de">simul <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">simul Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_32-A-5.lnote.la.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">655</biblScope></bibl><seg type="original" xml:lang="de">Bryt. <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">Bryt. Ld</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>
