@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECfRetr_35-1a">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf retr 35.1a</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECfRetr_35-1a</idno>
+        <idno type="citation">ECf retr 35.1a</idno>
+        <idno type="lawCode">ECf retr</idno>
+        <idno type="lawCodeAnchor">ECfRetr</idno>
+        <idno type="clause">35.1a</idno>
+        <idno type="citationKey">ECfRetr 35.1a</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris: retractatus</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">665</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>c. 1140–59 (Liebermann, I p. 627)</date><note type="promulgation">c. 1140–59 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="35.1a">
+        <head><ref type="lawCode" target="law:ECfRetr">ECf retr</ref> 35.1a</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf retr 35.1a"><pb n="665" ed="#liebermann"/>Cui<ptr type="liebermannNote" n="1" target="#ECfRetr_35-1a.lnote.la.1"/> Cristine<ptr type="liebermannNote" n="2" target="#ECfRetr_35-1a.lnote.la.2"/> rex Eadwardus dedit terram quam habuit postea Radulfus de Limesi<ptr type="liebermannNote" n="3" target="#ECfRetr_35-1a.lnote.la.3"/>.</ab>
+        <note type="comparison" source="#liebermann" n="665"><label>printed alongside</label> <ref target="clause:ECf_35-1a">ECf 35.1a</ref></note>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 665 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECfRetr_35-1a.lnote.la.fn.a" n="a" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">665</biblScope></bibl><seg type="original" xml:lang="de">35, 1<hi rend="italic">a muss, da</hi> quem <hi rend="italic">in</hi> 35, 1<hi rend="italic">b den Aetheling meint, Parenthese sein und bezeugt, weil ohne Zusammenhang mit</hi> Leges <hi rend="italic">oder dem Bekenner, des Verfs. Interesse für diese</hi> terram <hi rend="italic">oder</hi> Limézy. <hi rend="italic">Christine erhielt alle oder die meisten Güter (nicht</hi> 1058—65, <hi rend="italic">wie Verf. meint) von Wilhelm I. und starb</hi> 1095—1100. <hi rend="italic">Ihre Güter erhielt Limézy</hi> 1086—93. <hi rend="italic">Sie liegen (ausser Bradwell, Oxfordshire) in Warwickshire, und dorthin, nach Coventry, verlegte Bischof Robert von Limézy</hi> 1102 <hi rend="italic">seine Kathedrale. Rudolf starb nach</hi> 1114 <hi rend="italic">und vor</hi> 1131. <hi rend="italic">Vgl. mein</hi> Über Edw. Conf. 10 <hi rend="italic">ff.</hi> 21; <hi rend="italic">dazu Round</hi> Hist. of Hamps. I 410; Cal. of doc. in France I <hi rend="italic">n.</hi> 1278, <hi rend="italic">wo eine von Rudolf bezeugte Urkunde a.</hi> 1102—28 <hi rend="italic">steht</hi></seg><seg type="translation" xml:lang="en" source="#claude">35, 1a must be a parenthesis, since quem in 35, 1b means the Ætheling; and, having no connection with the Leges or the Confessor, it attests the author’s interest in this terram or in Limésy. Christine received all or most of her estates (not 1058–65, as the author thinks) from William I and died 1095–1100. Her estates went to Limésy 1086–93. They lie (except Bradwell, Oxfordshire) in Warwickshire, and it was there, to Coventry, that Bishop Robert of Limésy moved his cathedral in 1102. Rudolf died after 1114 and before 1131. Cf. my Über Edw. Conf. 10 ff. 21; also Round, Hist. of Hamps. I 410; Cal. of doc. in France I no. 1278, where there is a charter of 1102–28 witnessed by Rudolf</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_35-1a.lnote.la.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">665</biblScope></bibl><seg type="original" xml:lang="de">Item <hi rend="spaced">bonus</hi> rex Edw. dedit C. predicte te. <hi rend="italic">Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">Item bonus rex Edw. dedit C. predicte te. Lond</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_35-1a.lnote.la.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">665</biblScope></bibl><seg type="original" xml:lang="de">Christiane <hi rend="italic">Hv</hi></seg><seg type="translation" xml:lang="en" source="#claude">Christiane Hv</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_35-1a.lnote.la.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">665</biblScope></bibl><seg type="original" xml:lang="de">Lindeseye <hi rend="italic">Dc;</hi> Limiseia. Fuit enim predicta Christiana soror Edgari Aedeling. Item propter quem Edwardum (Edgarum <hi rend="italic">Co</hi>) predictum misit r. E. <hi rend="italic">Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">Lindeseye Dc; Limiseia. Fuit enim predicta Christiana soror Edgari Aedeling. Item propter quem Edwardum (Edgarum Co) predictum misit r. E. Lond</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>
