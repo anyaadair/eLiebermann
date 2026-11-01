@@ -788,6 +788,10 @@ ul.citations li { break-inside: avoid; }
 /* Liebermann's out-of-order numbers (data/clause-order.json): a short note, set off by a line */
 .clause-order-note { border-left: 3px solid var(--rule); padding: 0.2rem 0.8rem; margin: 0.4rem 0 1rem; }
 /* "About the numbering" on a law code's page: a button that opens the editor's introduction */
+.code-introduction { margin: 0 0 1.25rem; padding: 0.9rem 1.1rem; border-left: 3px solid var(--rule); background: var(--surface); max-width: 52rem; }
+.code-introduction__head { font-size: 0.8rem; font-family: var(--sans); text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin: 0 0 0.5rem; }
+.code-introduction p { margin: 0 0 0.6rem; }
+.code-introduction p:last-child { margin-bottom: 0; }
 .code-intro { margin: 0 0 1rem; }
 .code-intro > summary { display: inline-block; cursor: pointer; list-style: none; font-family: var(--sans); font-size: 0.85rem; padding: 0.25rem 0.85rem; border: 1px solid var(--rule); border-radius: 999px; background: var(--surface); color: var(--link); }
 .code-intro > summary::-webkit-details-marker { display: none; }

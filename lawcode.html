@@ -139,17 +139,20 @@ scripts:
         };
         // "About the numbering" and the like, behind a button (data/clause-order.json codeIntros; written for the site)
         const intro = ((window.__clauseOrder || {}).codeIntros || {})[code.code];
+        // An editorial introduction to the text, shown open at the top (data/clause-order.json codeIntroductions)
+        const introduction = ((window.__clauseOrder || {}).codeIntroductions || {})[code.code];
         target.innerHTML = `
             <p class="breadcrumb small"><a href="${root}laws.html">Laws</a> › ${esc(code.group)}</p>
             <header class="entry-header">
                 <h1>${esc(code.name)}</h1>
                 <div class="meta">${bits.map(b => `<span>${b}</span>`).join('')}</div>
                 ${Wulfstan.badges(code.code, '')}
-                <div class="clause-dates">${dates}${
+                <div class="clause-dates">${code.liebermannTitle ? plainLine('Liebermann’s title', `<span lang="de">${esc(code.liebermannTitle[0])}</span>${code.liebermannTitle[1] ? ` (<i>Gesetze</i> I, p. ${esc(code.liebermannTitle[1])})` : ''}`) : ''}${dates}${
                     code.manuscripts && code.manuscripts.length ? plainLine('Manuscripts', code.manuscripts.map(esc).join(', ')) : ''}${
                     plainLine('Editions and translations', sources.map(esc).join(', '))}${
                     plainLine('Clauses', String(mine.length))}</div>
             </header>
+            ${introduction ? `<div class="code-introduction"><h2 class="code-introduction__head">Editor’s introduction</h2>${introduction}</div>` : ''}
             ${intro ? `<details class="code-intro"><summary>${esc(intro.title)}</summary><div class="code-intro__body">${intro.html}</div></details>` : ''}
             <p class="code-callout">Below is the code in summary form: one text (the first in Liebermann’s edition) and one translation (an English crib of Liebermann’s German). Where either of these is unavailable, an alternative is shown and labelled. Each clause has its own page with all its texts, manuscripts, editions and translations, and its notes, cross-references and keywords. Click a clause number, or <em>All texts and translations</em> under any clause, to open it.</p>
             <p id="list-count" class="muted small" aria-live="polite"></p>
