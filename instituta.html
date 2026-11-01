@@ -170,7 +170,7 @@ scripts:
             const label = p.incn === last ? '' : 'In Cn ' + esc(p.incn);
             last = p.incn;
             const where = p.source ? 'beside ' + esc(p.source) : 'Liebermann’s list';
-            html += `<div class="incn-passage"><div class="incn-label">${label}<a class="incn-src" href="${root}law.html?id=${encodeURIComponent(p.id)}" title="The clause page, with the Old English beside it">${where}${p.page ? ', p. ' + esc(p.page) : ''}</a>${(p.translates || []).length ? '<span class="incn-from small muted">translates ' + p.translates.map(t => `<a href="${root}law.html?id=${encodeURIComponent(t.id)}">${esc(t.label)}</a>`).join(', ') + '</span>' : ''}${notesButton(p)}</div>`
+            html += `<div class="incn-passage"><div class="incn-label">${label}<a class="incn-src" href="${root}law.html?id=${encodeURIComponent(p.id)}" title="The clause page, with the Old English beside it">${where}${p.page ? ', p. ' + esc(p.page) : ''}</a>${(p.translates || []).length ? '<span class="incn-from small muted">' + (p.verb || 'translates') + ' ' + p.translates.map(t => `${t.perhaps ? 'perhaps ' : ''}<a href="${root}law.html?id=${encodeURIComponent(t.id)}">${esc(t.label)}</a>`).join(', ') + '</span>' : ''}${notesButton(p)}</div>`
                 + `<p class="incn-text-p clause-reading-text lt"${ELieb.langAttr('la')}>${render(p.text)}</p>`
                 + `<p class="incn-en lt" lang="en">${p.en ? render(p.en) : ''}</p>${notesList(p)}</div>`;
         });

@@ -160,5 +160,197 @@
    }
   ],
   "page": "616"
+ },
+ "InCn_III-56": {
+  "translates": [
+   {
+    "id": "Grith_6",
+    "label": "Grið 6"
+   },
+   {
+    "id": "Grith_8",
+    "label": "Grið 8"
+   }
+  ],
+  "verb": "draws on",
+  "page": "615"
+ },
+ "Grith_8": {
+  "list": [
+   {
+    "id": "InCn_III-56",
+    "label": "In Cn III 56",
+    "page": "615"
+   }
+  ],
+  "verb": "draws on",
+  "alsoWith": {
+   "id": "Grith_6",
+   "label": "Grið 6",
+   "page": "470"
+  }
+ },
+ "InCn_III-56-1": {
+  "translates": [
+   {
+    "id": "Grith_7",
+    "label": "Grið 7"
+   }
+  ],
+  "verb": "draws on",
+  "page": "615"
+ },
+ "Grith_7": {
+  "list": [
+   {
+    "id": "InCn_III-56-1",
+    "label": "In Cn III 56,1",
+    "page": "615"
+   }
+  ],
+  "verb": "draws on",
+  "alsoWith": {
+   "id": "Grith_6",
+   "label": "Grið 6",
+   "page": "470"
+  }
+ },
+ "InCn_III-56-2": {
+  "translates": [
+   {
+    "id": "Grith_11",
+    "label": "Grið 11"
+   },
+   {
+    "id": "Grith_4",
+    "label": "Grið 4"
+   },
+   {
+    "id": "Northleoda_2",
+    "label": "Norðleod 2",
+    "perhaps": true
+   }
+  ],
+  "verb": "draws on",
+  "page": "615",
+  "perhaps": true
+ },
+ "Grith_11": {
+  "list": [
+   {
+    "id": "InCn_III-56-2",
+    "label": "In Cn III 56,2",
+    "page": "615"
+   }
+  ],
+  "verb": "draws on",
+  "alsoWith": {
+   "id": "Grith_6",
+   "label": "Grið 6",
+   "page": "470",
+   "part": true
+  }
+ },
+ "Grith_4": {
+  "list": [
+   {
+    "id": "InCn_III-56-2",
+    "label": "In Cn III 56,2",
+    "page": "615"
+   }
+  ],
+  "verb": "draws on",
+  "alsoWith": {
+   "id": "Grith_6",
+   "label": "Grið 6",
+   "page": "470",
+   "part": true
+  }
+ },
+ "Northleoda_2": {
+  "list": [
+   {
+    "id": "InCn_III-56-2",
+    "label": "In Cn III 56,2",
+    "page": "615"
+   }
+  ],
+  "verb": "draws on",
+  "alsoWith": {
+   "id": "Grith_6",
+   "label": "Grið 6",
+   "page": "470",
+   "part": true
+  },
+  "perhaps": true
+ },
+ "InCn_III-57": {
+  "translates": [
+   {
+    "id": "Grith_5",
+    "label": "Grið 5"
+   },
+   {
+    "id": "Grith_12",
+    "label": "Grið 12"
+   },
+   {
+    "id": "Northleoda_3",
+    "label": "Norðleod 3",
+    "perhaps": true
+   }
+  ],
+  "verb": "draws on",
+  "page": "615",
+  "perhaps": true
+ },
+ "Grith_5": {
+  "list": [
+   {
+    "id": "InCn_III-57",
+    "label": "In Cn III 57",
+    "page": "615"
+   }
+  ],
+  "verb": "draws on",
+  "alsoWith": {
+   "id": "Grith_6",
+   "label": "Grið 6",
+   "page": "470",
+   "part": true
+  }
+ },
+ "Grith_12": {
+  "list": [
+   {
+    "id": "InCn_III-57",
+    "label": "In Cn III 57",
+    "page": "615"
+   }
+  ],
+  "verb": "draws on",
+  "alsoWith": {
+   "id": "Grith_6",
+   "label": "Grið 6",
+   "page": "470",
+   "part": true
+  }
+ },
+ "Northleoda_3": {
+  "list": [
+   {
+    "id": "InCn_III-57",
+    "label": "In Cn III 57",
+    "page": "615"
+   }
+  ],
+  "verb": "draws on",
+  "alsoWith": {
+   "id": "Grith_6",
+   "label": "Grið 6",
+   "page": "470",
+   "part": true
+  },
+  "perhaps": true
  }
 }
