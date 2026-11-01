@@ -24,7 +24,7 @@
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
-          <witness xml:id="wit-hdi"><abbr>HDi</abbr></witness>
+          <witness xml:id="wit-hdi"><abbr>H Di</abbr></witness>
           <witness xml:id="wit-iphunt"><abbr>IpHunt</abbr></witness>
         </listWit>
       </sourceDesc>
@@ -42,6 +42,7 @@
     <revisionDesc>
       <change when="2026-10-19">Generated from row 3783 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-11-01" type="incn-type">Liebermann’s bold, spaced and smaller type in the Instituta Cnuti text marked by Claude from the page images; to be checked against the print.</change>
+      <change when="2026-11-01">Manuscript sigla that Liebermann prints run together in his notes to the Instituta Cnuti (“HRlDi”, “CbLb”) spaced for reading (“H Rl Di”, “Cb Lb”).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -51,8 +52,8 @@
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="In Cn III 40" corresp="#wit-lat"><pb n="613" ed="#liebermann"/><hi rend="small">Si quis alii</hi><ptr type="liebermannNote" n="22" target="#InCn_III-40.lnote.oe.22"/><hi rend="small"> arma sua pręstiterit, et ille, <hi rend="spaced">cui pręstita sunt</hi>, inde hominem occiderit, ipse</hi><ptr type="liebermannNote" n="g" target="#InCn_III-40.lnote.oe.g"/><hi rend="small"> qui arma pręstitit</hi><ptr type="liebermannNote" n="23" target="#InCn_III-40.lnote.oe.23"/><hi rend="small"> tertiam partem pretii et forisfacturę persoluat; aut se</hi><ptr type="liebermannNote" n="24" target="#InCn_III-40.lnote.oe.24"/><hi rend="small"> purget, quod non fuit <hi rend="spaced">consilium nec uoluntas eius</hi>.</hi></ab>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 613 (two independent readings of the page images, differences settled against the page)</note>
         <note type="liebermannNote" subtype="textual" xml:id="InCn_III-40.lnote.oe.g" n="g" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">613</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Verf. lässt die Vereinigung von Ver- und Entleiher zur Wergeldzahlung fort</hi></seg><seg type="translation" xml:lang="en" source="#claude">The author omits the joining of lender and borrower in the payment of the wergild</seg></note>
-        <note type="liebermannNote" subtype="textual" xml:id="InCn_III-40.lnote.oe.22" n="22" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">613</biblScope></bibl><seg type="original" xml:lang="de">alicui <hi rend="italic">LbS</hi></seg><seg type="translation" xml:lang="en" source="#claude">alicui LbS</seg></note>
-        <note type="liebermannNote" subtype="textual" xml:id="InCn_III-40.lnote.oe.23" n="23" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">613</biblScope></bibl><seg type="original" xml:lang="de">-terit <hi rend="italic">LbS</hi></seg><seg type="translation" xml:lang="en" source="#claude">-terit LbS</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="InCn_III-40.lnote.oe.22" n="22" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">613</biblScope></bibl><seg type="original" xml:lang="de">alicui <hi rend="italic">Lb S</hi></seg><seg type="translation" xml:lang="en" source="#claude">alicui Lb S</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="InCn_III-40.lnote.oe.23" n="23" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">613</biblScope></bibl><seg type="original" xml:lang="de">-terit <hi rend="italic">Lb S</hi></seg><seg type="translation" xml:lang="en" source="#claude">-terit Lb S</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="InCn_III-40.lnote.oe.24" n="24" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">613</biblScope></bibl><seg type="original" xml:lang="de">p. se <hi rend="italic">Cb</hi></seg><seg type="translation" xml:lang="en" source="#claude">p. se Cb</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="InCn_III-40.lnote.oe._" n="-" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">332</biblScope></bibl><seg type="original" xml:lang="de">Wahrscheinlich Worte des Agnorm. Gefährdeeides; <hi rend="italic">s. d. Gl</hi> 1a. 2</seg><seg type="translation" xml:lang="en" source="#claude">Probably the words of the Anglo-Norman oath of calumny; <hi rend="italic">see</hi> that word in <hi rend="italic">Gl</hi> 1a. 2</seg></note>
       </div>

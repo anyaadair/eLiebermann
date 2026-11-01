@@ -26,7 +26,7 @@
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
-          <witness xml:id="wit-hdi"><abbr>HDi</abbr></witness>
+          <witness xml:id="wit-hdi"><abbr>H Di</abbr></witness>
           <witness xml:id="wit-iphunt"><abbr>IpHunt</abbr></witness>
         </listWit>
       </sourceDesc>
@@ -43,6 +43,7 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-19">Generated from row 3789 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-11-01">Manuscript sigla that Liebermann prints run together (“HDi”, “HRl”, “PlS”, “THk”) spaced for reading (“H Di”, “H Rl”, “Pl S”, “T Hk”).</change>
     </revisionDesc>
   </teiHeader>
   <text>

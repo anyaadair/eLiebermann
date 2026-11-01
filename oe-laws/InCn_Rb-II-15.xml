@@ -24,7 +24,7 @@
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
-          <witness xml:id="wit-hdi"><abbr>HDi</abbr></witness>
+          <witness xml:id="wit-hdi"><abbr>H Di</abbr></witness>
           <witness xml:id="wit-iphunt"><abbr>IpHunt</abbr></witness>
         </listWit>
       </sourceDesc>
@@ -41,6 +41,7 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-19">Generated from row 3851 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-11-01">Manuscript sigla that Liebermann prints run together in his notes to the Instituta Cnuti (“HRlDi”, “CbLb”) spaced for reading (“H Rl Di”, “Cb Lb”).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -49,7 +50,7 @@
         <head><ref type="lawCode" target="law:InCn">In Cn</ref> Rb II 15</head>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="In Cn Rb II 15" corresp="#wit-lat"><pb n="616" ed="#liebermann"/>Secundum<ptr type="liebermannNote" n="5" target="#InCn_Rb-II-15.lnote.oe.5"/> legem Danorum rex habet has consuetudines.</ab>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 616 (two independent readings of the page images, differences settled against the page)</note>
-        <note type="liebermannNote" subtype="textual" xml:id="InCn_Rb-II-15.lnote.oe.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">616</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">nur Cb; fehlt HRl T</hi></seg><seg type="translation" xml:lang="en" source="#claude">only <hi rend="italic">Cb</hi>; missing in <hi rend="italic">HRl T</hi></seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="InCn_Rb-II-15.lnote.oe.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">616</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">nur Cb; fehlt H Rl T</hi></seg><seg type="translation" xml:lang="en" source="#claude">only <hi rend="italic">Cb</hi>; missing in <hi rend="italic">H Rl T</hi></seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="InCn_Rb-II-15.lnote.oe.5-2" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">616</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">diese Zeile zwar roth, ist aber Texttheil; s. o. S.</hi> 319</seg><seg type="translation" xml:lang="en" source="#claude">this line, although in red, is part of the text; see above p. 319</seg></note>
       </div>
     </body>

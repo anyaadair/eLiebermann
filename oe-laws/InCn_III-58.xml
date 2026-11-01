@@ -26,7 +26,7 @@
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
-          <witness xml:id="wit-hdi"><abbr>HDi</abbr></witness>
+          <witness xml:id="wit-hdi"><abbr>H Di</abbr></witness>
           <witness xml:id="wit-iphunt"><abbr>IpHunt</abbr></witness>
         </listWit>
       </sourceDesc>
@@ -45,6 +45,7 @@
       <change when="2026-10-19">Generated from row 3806 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-11-01">Liebermann’s round brackets in the Instituta Cnuti text marked as the second recension (&lt;seg type="recension"&gt;; Vorrede p. V); brackets marked by Claude.</change>
       <change when="2026-11-01" type="incn-type">Liebermann’s bold, spaced and smaller type in the Instituta Cnuti text marked by Claude from the page images; to be checked against the print.</change>
+      <change when="2026-11-01">Manuscript sigla that Liebermann prints run together in his notes to the Instituta Cnuti (“HRlDi”, “CbLb”) spaced for reading (“H Rl Di”, “Cb Lb”).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -62,7 +63,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="InCn_III-58.lnote.oe._" n="-" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">332</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">be weres mæðe</hi> wohl um 1100 Rechtsterminus; <hi rend="italic">s</hi>. Einl. 7</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">be weres mæðe</hi> probably a legal term c. 1100; <hi rend="italic">see</hi> Introduction 7</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="InCn_III-58.lnote.oe.o" n="o" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">615</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">auch</hi> 58 <hi rend="italic">f. floss aus Angelsächs. Vorlage laut Angelsächs. Wörter, unkanonistischer Form und des <hi rend="spaced">vor</hi></hi> Wl ep. <hi rend="italic">zu datirenden Inhalts</hi></seg><seg type="translation" xml:lang="en" source="#claude">58 f. too derived from an Anglo-Saxon original, as shown by the Anglo-Saxon words, the uncanonistic form and the content, which is to be dated <hi rend="italic">before</hi> Wl ep.</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="InCn_III-58.lnote.oe.p" n="p" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">615</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">hier aus</hi> Cnut <hi rend="italic">Benutztes liess Verf. o. S.</hi> 367{14} <hi rend="italic">fort</hi></seg><seg type="translation" xml:lang="en" source="#claude">what is used here from Cnut the author omitted above p. 367{14}</seg></note>
-        <note type="liebermannNote" subtype="textual" xml:id="InCn_III-58.lnote.oe.15" n="15" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">615</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">in anderer Tinte übergeschr. Cb; fehlt HRl T</hi></seg><seg type="translation" xml:lang="en" source="#claude">written above in different ink <hi rend="italic">Cb</hi>; missing in <hi rend="italic">HRl T</hi></seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="InCn_III-58.lnote.oe.15" n="15" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">615</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">in anderer Tinte übergeschr. Cb; fehlt H Rl T</hi></seg><seg type="translation" xml:lang="en" source="#claude">written above in different ink <hi rend="italic">Cb</hi>; missing in <hi rend="italic">H Rl T</hi></seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="InCn_III-58.lnote.oe._-2" n="-" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">333</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Ebd</hi>. Geistliches Gericht 20; Bischof 8. 9c. g</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Ibid</hi>. Geistliches Gericht 20; Bischof 8. 9c. g</seg></note>
       </div>
     </body>

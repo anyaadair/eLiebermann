@@ -24,7 +24,7 @@
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
-          <witness xml:id="wit-hdi"><abbr>HDi</abbr></witness>
+          <witness xml:id="wit-hdi"><abbr>H Di</abbr></witness>
           <witness xml:id="wit-iphunt"><abbr>IpHunt</abbr></witness>
         </listWit>
       </sourceDesc>
@@ -41,6 +41,7 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-19">Generated from row 3760 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-11-01">Manuscript sigla that Liebermann prints run together in his notes to the Instituta Cnuti (“HRlDi”, “CbLb”) spaced for reading (“H Rl Di”, “Cb Lb”).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -49,7 +50,7 @@
         <head><ref type="lawCode" target="law:InCn">In Cn</ref> I 19</head>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="In Cn I 19" corresp="#wit-lat"><pb n="612" ed="#liebermann"/>Faciamus — — Domini<ptr type="liebermannNote" n="3" target="#InCn_I-19.lnote.oe.3"/>; <hi rend="italic">o. S</hi>. 301†</ab>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 612 (two independent readings of the page images, differences settled against the page)</note>
-        <note type="liebermannNote" subtype="textual" xml:id="InCn_I-19.lnote.oe.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">612</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">hier folgt I Cn.</hi> 17, 1, <hi rend="italic">o. S.</hi> 299†, <hi rend="italic">in HRl</hi></seg><seg type="translation" xml:lang="en" source="#claude">here I Cn. 17, 1, above p. 299†, follows in HRl</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="InCn_I-19.lnote.oe.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">612</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">hier folgt I Cn.</hi> 17, 1, <hi rend="italic">o. S.</hi> 299†, <hi rend="italic">in H Rl</hi></seg><seg type="translation" xml:lang="en" source="#claude">here I Cn. 17, 1, above p. 299†, follows in H Rl</seg></note>
       </div>
     </body>
   </text>

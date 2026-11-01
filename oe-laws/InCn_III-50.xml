@@ -24,7 +24,7 @@
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
-          <witness xml:id="wit-hdi"><abbr>HDi</abbr></witness>
+          <witness xml:id="wit-hdi"><abbr>H Di</abbr></witness>
           <witness xml:id="wit-iphunt"><abbr>IpHunt</abbr></witness>
         </listWit>
       </sourceDesc>
@@ -41,6 +41,7 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-19">Generated from row 3794 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-11-01">Manuscript sigla that Liebermann prints run together in his notes to the Instituta Cnuti (“HRlDi”, “CbLb”) spaced for reading (“H Rl Di”, “Cb Lb”).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -50,7 +51,7 @@
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="In Cn III 50" corresp="#wit-lat"><pb n="614" ed="#liebermann"/>Fractionem<ptr type="liebermannNote" n="e" target="#InCn_III-50.lnote.oe.e"/> etiam pacis, quod dicitur grithbrece<ptr type="liebermannNote" n="5" target="#InCn_III-50.lnote.oe.5"/>: si<ptr type="liebermannNote" n="6" target="#InCn_III-50.lnote.oe.6"/> pax ex parte regis pręcipitur in comitatu uel in hundredo, qui post<ptr type="liebermannNote" n="7" target="#InCn_III-50.lnote.oe.7"/> illam fregerit, regi emendabit.</ab>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 614 (two independent readings of the page images, differences settled against the page)</note>
         <note type="liebermannNote" subtype="textual" xml:id="InCn_III-50.lnote.oe.e" n="e" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">614</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vgl. II Cn.</hi> 15; <hi rend="italic">Hn</hi> 10, 1</seg><seg type="translation" xml:lang="en" source="#claude">cf. II Cn. 15; Hn 10, 1</seg></note>
-        <note type="liebermannNote" subtype="textual" xml:id="InCn_III-50.lnote.oe.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">614</biblScope></bibl><seg type="original" xml:lang="de">gridbreche <hi rend="italic">CbT</hi></seg><seg type="translation" xml:lang="en" source="#claude">gridbreche CbT</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="InCn_III-50.lnote.oe.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">614</biblScope></bibl><seg type="original" xml:lang="de">gridbreche <hi rend="italic">Cb T</hi></seg><seg type="translation" xml:lang="en" source="#claude">gridbreche Cb T</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="InCn_III-50.lnote.oe.6" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">614</biblScope></bibl><seg type="original" xml:lang="de">[si] pax ex <hi rend="italic">fehlt Text, am Rande Corrector Cb</hi></seg><seg type="translation" xml:lang="en" source="#claude">[si] pax ex missing in the text, in the margin by the corrector Cb</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="InCn_III-50.lnote.oe.7" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">614</biblScope></bibl><seg type="original" xml:lang="de">postea <hi rend="italic">Cb</hi></seg><seg type="translation" xml:lang="en" source="#claude">postea Cb</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="InCn_III-50.lnote.oe._" n="-" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">333</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Ebd</hi>. Gericht 12e; Hundred 18a; Grafschaft 17b; Königsfrieden 7; Königsschutz 1d</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Ibid</hi>. Gericht 12e; Hundred 18a; Grafschaft 17b; Königsfrieden 7; Königsschutz 1d</seg></note>

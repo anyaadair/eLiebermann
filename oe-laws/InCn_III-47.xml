@@ -24,7 +24,7 @@
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
-          <witness xml:id="wit-hdi"><abbr>HDi</abbr></witness>
+          <witness xml:id="wit-hdi"><abbr>H Di</abbr></witness>
           <witness xml:id="wit-iphunt"><abbr>IpHunt</abbr></witness>
         </listWit>
       </sourceDesc>
@@ -42,6 +42,7 @@
     <revisionDesc>
       <change when="2026-10-19">Generated from row 3791 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-11-01">Liebermann’s round brackets in the Instituta Cnuti text marked as the second recension (&lt;seg type="recension"&gt;; Vorrede p. V); brackets marked by Claude.</change>
+      <change when="2026-11-01">Manuscript sigla that Liebermann prints run together in his notes to the Instituta Cnuti (“HRlDi”, “CbLb”) spaced for reading (“H Rl Di”, “Cb Lb”).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -53,7 +54,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="InCn_III-47.lnote.oe.p" n="p" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">613</biblScope></bibl><seg type="original" xml:lang="de">feorm <hi rend="italic">bot die Quelle</hi></seg><seg type="translation" xml:lang="en" source="#claude">the source had feorm</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="InCn_III-47.lnote.oe.u" n="u" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">613</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vgl. oben zu II Cn.</hi> 13, 2 gecydne</seg><seg type="translation" xml:lang="en" source="#claude">cf. above on II Cn. 13, 2 gecydne</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="InCn_III-47.lnote.oe.v" n="v" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">613</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">dieser Genetiv passt grammatisch nicht, weshalb Cb</hi> beboden <hi rend="italic">bessert; in der Quelle hing er von</hi> feorm <hi rend="italic">ab</hi></seg><seg type="translation" xml:lang="en" source="#claude">this genitive does not fit grammatically, which is why Cb corrects it to beboden; in the source it depended on feorm</seg></note>
-        <note type="liebermannNote" subtype="textual" xml:id="InCn_III-47.lnote.oe.45" n="45" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">613</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">nur</hi> di. <hi rend="italic">HRl; nur</hi> uo. <hi rend="italic">CbT</hi></seg><seg type="translation" xml:lang="en" source="#claude">only di. HRl; only uo. CbT</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="InCn_III-47.lnote.oe.45" n="45" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">613</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">nur</hi> di. <hi rend="italic">H Rl; nur</hi> uo. <hi rend="italic">Cb T</hi></seg><seg type="translation" xml:lang="en" source="#claude">only di. H Rl; only uo. Cb T</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="InCn_III-47.lnote.oe.46" n="46" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">613</biblScope></bibl><seg type="original" xml:lang="de">-den <hi rend="italic">Cb</hi></seg><seg type="translation" xml:lang="en" source="#claude">-den Cb</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="InCn_III-47.lnote.oe._" n="-" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">333</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Ebd</hi>. friedlos 1s. 3d. e; Begünstigung 14</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Ibid</hi>. friedlos 1s. 3d. e; Begünstigung 14</seg></note>
       </div>
