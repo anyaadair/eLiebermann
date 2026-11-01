@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECf_10">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf 10</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECf_10</idno>
+        <idno type="citation">ECf 10</idno>
+        <idno type="lawCode">ECf</idno>
+        <idno type="lawCodeAnchor">ECf</idno>
+        <idno type="clause">10</idno>
+        <idno type="citationKey">ECf 10</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">634</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>1115–50, probably 1130–35 (Liebermann, I p. 627)</date><note type="promulgation">1115–50, probably 1130–35 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="10">
+        <head><ref type="lawCode" target="law:ECf">ECf</ref> 10</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 10"><pb n="634" ed="#liebermann"/><hi rend="spaced">De denariis<ptr type="liebermannNote" n="1" target="#ECf_10.lnote.la.1"/> Sancti Petri<ptr type="liebermannNote" n="a" target="#ECf_10.lnote.la.fn.a"/>.</hi> Omnis<ptr type="liebermannNote" n="2" target="#ECf_10.lnote.la.2"/> qui habuerit<ptr type="liebermannNote" n="3" target="#ECf_10.lnote.la.3"/> triginta denariatas uiue<ptr type="liebermannNote" n="4" target="#ECf_10.lnote.la.4"/> pecunie de<ptr type="liebermannNote" n="5" target="#ECf_10.lnote.la.5"/> suo proprio in domo sua, lege Anglorum dabit<ptr type="liebermannNote" n="6" target="#ECf_10.lnote.la.6"/> denarium Sancti Petri; et lege Danorum<ptr type="liebermannNote" n="b" target="#ECf_10.lnote.la.fn.b"/> dimidiam marcatam<ptr type="liebermannNote" n="7" target="#ECf_10.lnote.la.7"/>.</ab>
+        <note type="comparison" source="#liebermann" n="634"><label>printed alongside</label> <ref target="clause:ECfRetr_10">ECf retr 10</ref></note>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 634 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
+        <note type="editorial">Liebermann’s upright (roman) letter a after “pecunie” refers to his explanatory notes, the Erklärungen (printed as Gesetze III; his note on p. 627 calls it “Band II”), which are not yet added here.</note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_10.lnote.la.fn.a" n="a" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">634</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Verf. folgt derselben Quelle wie</hi> Leis Wl 17; <hi rend="italic">zum Worte</hi> Romescot <hi rend="italic">vgl. o. S.</hi> 474. <hi rend="italic">Der päpstliche Steuersammler Sinicius brachte c.</hi> 10 <hi rend="italic">der Retr.</hi> 1267 <hi rend="italic">in den</hi> Liber censuum eccl. Rom. <hi rend="italic">ed. Fabre p.</hi> 135</seg><seg type="translation" xml:lang="en" source="#claude">the author follows the same source as Leis Wl 17; on the word Romescot cf. above, p. 474. The papal tax collector Sinicius put c. 10 of the Retractator into the Liber censuum eccl. Rom. in 1267, ed. Fabre p. 135</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_10.lnote.la.fn.b" n="b" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">634</biblScope></bibl><seg type="original" xml:lang="de">qui habuerit <hi rend="italic">hinzuzudenken;</hi> ½ <hi rend="italic">Mark</hi> = 80 <hi rend="italic">Denare; vgl.</hi> 12, 4</seg><seg type="translation" xml:lang="en" source="#claude">qui habuerit is to be understood; ½ mark = 80 pence; cf. 12, 4</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_10.lnote.la.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">634</biblScope></bibl><seg type="original" xml:lang="de">-rio <hi rend="italic">Hr Cl</hi></seg><seg type="translation" xml:lang="en" source="#claude">-rio Hr Cl</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_10.lnote.la.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">634</biblScope></bibl><seg type="original" xml:lang="de">Omnes <hi rend="italic">Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">Omnes Ad Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_10.lnote.la.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">634</biblScope></bibl><seg type="original" xml:lang="de">habet <hi rend="italic">Hk;</hi> habent <hi rend="italic">Ad;</hi> habuerint <hi rend="italic">Do Wo</hi></seg><seg type="translation" xml:lang="en" source="#claude">habet Hk; habent Ad; habuerint Do Wo</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_10.lnote.la.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">634</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Hr</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_10.lnote.la.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">634</biblScope></bibl><seg type="original" xml:lang="de">in do. sua de suo pro. <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">in do. sua de suo pro. Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_10.lnote.la.6" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">634</biblScope></bibl><seg type="original" xml:lang="de">dabunt <hi rend="italic">Ad;</hi> debent <hi rend="italic">Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">dabunt Ad; debent Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_10.lnote.la.7" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">634</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">so Rl;</hi> marcam <hi rend="italic">übr.</hi></seg><seg type="translation" xml:lang="en" source="#claude">so Rl; marcam the others</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>
