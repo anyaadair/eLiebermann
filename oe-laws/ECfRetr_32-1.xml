@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECfRetr_32-1">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf retr 32.1</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECfRetr_32-1</idno>
+        <idno type="citation">ECf retr 32.1</idno>
+        <idno type="lawCode">ECf retr</idno>
+        <idno type="lawCodeAnchor">ECfRetr</idno>
+        <idno type="clause">32.1</idno>
+        <idno type="citationKey">ECfRetr 32.1</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris: retractatus</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">654</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>c. 1140–59 (Liebermann, I p. 627)</date><note type="promulgation">c. 1140–59 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="32.1">
+        <head><ref type="lawCode" target="law:ECfRetr">ECf retr</ref> 32.1</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf retr 32.1"><pb n="654" ed="#liebermann"/><ptr type="liebermannNote" n="25" target="#ECfRetr_32-1.lnote.la.25"/>Uidetur etiam <hi rend="bold">quibusdam</hi><ptr type="liebermannNote" n="26" target="#ECfRetr_32-1.lnote.la.26"/> <hi rend="bold">greue</hi><ptr type="liebermannNote" n="27" target="#ECfRetr_32-1.lnote.la.27"/> <hi rend="bold">uocabulum</hi> esse<ptr type="liebermannNote" n="28" target="#ECfRetr_32-1.lnote.la.28"/> <hi rend="bold">nomen</hi> compositum<ptr type="liebermannNote" n="29" target="#ECfRetr_32-1.lnote.la.29"/> ex Anglico ‘grith’<ptr type="liebermannNote" n="30" target="#ECfRetr_32-1.lnote.la.30"/> et ‘ue’ Latino. Grith<ptr type="liebermannNote" n="30" target="#ECfRetr_32-1.lnote.la.30"/> <hi rend="bold">enim</hi> pax est, ue <hi rend="bold">uero</hi><ptr type="liebermannNote" n="31" target="#ECfRetr_32-1.lnote.la.31"/> miseria <hi rend="bold">(ipso</hi><ptr type="liebermannNote" n="32" target="#ECfRetr_32-1.lnote.la.32"/> Domino <hi rend="bold">attestante qui</hi> dixit<ptr type="liebermannNote" n="33" target="#ECfRetr_32-1.lnote.la.33"/>: ‘Ue<ptr type="liebermannNote" n="34" target="#ECfRetr_32-1.lnote.la.34"/> tibi Bethsaida, ue tibi Corozaim!’<ptr type="liebermannNote" n="35" target="#ECfRetr_32-1.lnote.la.35"/>) <hi rend="bold">Greue</hi><ptr type="liebermannNote" n="36" target="#ECfRetr_32-1.lnote.la.36"/> <hi rend="bold">igitur ideo dicitur,</hi> quod <hi rend="bold">iure</hi> debeat<ptr type="liebermannNote" n="37" target="#ECfRetr_32-1.lnote.la.37"/> grith<ptr type="liebermannNote" n="38" target="#ECfRetr_32-1.lnote.la.38"/>, id est pacem, ex illis facere qui <hi rend="bold">patrie</hi> inferunt ue, id est miseriam uel <hi rend="bold">malum.</hi></ab>
+        <note type="comparison" source="#liebermann" n="654"><label>printed alongside</label> <ref target="clause:ECf_32-1">ECf 32.1</ref></note>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 654 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page; the words in bold are the Retractator’s changes to ECf, as Liebermann prints them.</note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECfRetr_32-1.lnote.la.fn.e" n="e" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">654</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Retr. weist diesen Unsinn von sich: also anderer Autor. ECf. überhörte nach Romanischer Art die auslautende Dentale, wie schon Domesday</hi> gribryce <hi rend="italic">schreibt, und das</hi> 12. <hi rend="italic">Jh.</hi> fri- (<hi rend="italic">frei</hi>) <hi rend="italic">und</hi> frið (<hi rend="italic">Friede</hi>) <hi rend="italic">verwechselt</hi></seg><seg type="translation" xml:lang="en" source="#claude">the Retr. rejects this nonsense: so a different author. ECf., in the Romance manner, failed to hear the final dental, as Domesday already writes gribryce, and the 12th century confuses fri- (free) and frið (peace)</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_32-1.lnote.la.25" n="25" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">654</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Rubrik</hi> (<hi rend="italic">s. vor</hi> 32) <hi rend="italic">Hv</hi></seg><seg type="translation" xml:lang="en" source="#claude">rubric (see before 32) Hv</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_32-1.lnote.la.26" n="26" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">654</biblScope></bibl><seg type="original" xml:lang="de">quod <hi rend="italic">fügt zu Hv;</hi> etiam <hi rend="italic">fügt zu Co</hi></seg><seg type="translation" xml:lang="en" source="#claude">Hv adds quod; Co adds etiam</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_32-1.lnote.la.27" n="27" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">654</biblScope></bibl><seg type="original" xml:lang="de">greiue <hi rend="italic">Hv Lond;</hi> graue <hi rend="italic">Cb</hi></seg><seg type="translation" xml:lang="en" source="#claude">greiue Hv Lond; graue Cb</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_32-1.lnote.la.28" n="28" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">654</biblScope></bibl><seg type="original" xml:lang="de">nomen est <hi rend="italic">Hv;</hi> n. <hi rend="italic">fehlt Va</hi></seg><seg type="translation" xml:lang="en" source="#claude">nomen est Hv; n. lacking in Va</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_32-1.lnote.la.29" n="29" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">654</biblScope></bibl><seg type="original" xml:lang="de">-tiuum <hi rend="italic">K</hi></seg><seg type="translation" xml:lang="en" source="#claude">-tiuum K</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_32-1.lnote.la.30" n="30" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">654</biblScope></bibl><seg type="original" xml:lang="de">gridh <hi rend="italic">Cb;</hi> grit <hi rend="italic">Lb Ph</hi></seg><seg type="translation" xml:lang="en" source="#claude">gridh Cb; grit Lb Ph</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_32-1.lnote.la.31" n="31" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">654</biblScope></bibl><seg type="original" xml:lang="de">ergo <hi rend="italic">Lb Ph</hi></seg><seg type="translation" xml:lang="en" source="#claude">ergo Lb Ph</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_32-1.lnote.la.32" n="32" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">654</biblScope></bibl><seg type="original" xml:lang="de">i. test. <hi rend="italic">ohne</hi> D. <hi rend="italic">Hv</hi></seg><seg type="translation" xml:lang="en" source="#claude">i. test. without D. Hv</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_32-1.lnote.la.33" n="33" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">654</biblScope></bibl><seg type="original" xml:lang="de">ait <hi rend="italic">Lb Va Ph;</hi> dicit <hi rend="italic">Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">ait Lb Va Ph; dicit Lond</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_32-1.lnote.la.34" n="34" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">654</biblScope></bibl><seg type="original" xml:lang="de">Ue t. B. <hi rend="italic">fehlt Hv</hi></seg><seg type="translation" xml:lang="en" source="#claude">Ue t. B. lacking in Hv</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_32-1.lnote.la.35" n="35" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">654</biblScope></bibl><seg type="original" xml:lang="de">Corroz. <hi rend="italic">Lb;</hi> -in <hi rend="italic">Hv;</hi> Coraz. <hi rend="italic">übr.</hi></seg><seg type="translation" xml:lang="en" source="#claude">Corroz. Lb; -in Hv; Coraz. the others</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_32-1.lnote.la.36" n="36" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">654</biblScope></bibl><seg type="original" xml:lang="de">Greiue <hi rend="italic">Hv Lond;</hi> græue <hi rend="italic">Cb; aber</hi> æ <hi rend="italic">auf Rasur</hi></seg><seg type="translation" xml:lang="en" source="#claude">Greiue Hv Lond; græue Cb; but æ over an erasure</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_32-1.lnote.la.37" n="37" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">654</biblScope></bibl><seg type="original" xml:lang="de">debebat <hi rend="italic">Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">debebat Lond</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_32-1.lnote.la.38" n="38" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">654</biblScope></bibl><seg type="original" xml:lang="de">gridh <hi rend="italic">Cb;</hi> grit <hi rend="italic">Ph</hi></seg><seg type="translation" xml:lang="en" source="#claude">gridh Cb; grit Ph</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>
