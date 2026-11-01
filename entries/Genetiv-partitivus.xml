@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-01">Grammatical entry labelled by the language it concerns (Latin): Liebermann marks French (F) and Latin (L); unmarked ones concern Old English.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -34,6 +35,7 @@
         <form type="lemma">
           <orth>Genetiv partitivus</orth>
         </form>
+        <usg type="lang" n="la">Latin</usg>
         <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold"><hi rend="italic">Genetiv partitivus</hi></hi>; per hamsocnam et similium <ref type="lawCode" target="law:Hn">Hn</ref> 80,9b; per homicidium et similium 87,6a</dictScrap>
         <xr type="lawCode"><ref target="clause:Hn_80-9b">Hn 80,9b</ref></xr>
         <xr type="lawCode"><ref target="clause:Hn_87-6a">Hn 87,6a</ref></xr>

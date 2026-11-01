@@ -137,11 +137,18 @@
         return '<span class="lang-badge prop" title="Proper noun: a name of a person, place, people or day">Proper Noun</span>';
     }
 
+    // A grammatical entry's language (Old English, Latin, French): what its grammar is about.
+    function grammarLangBadge(code, short) {
+        const name = LANGUAGES[code] || code;
+        return `<span class="lang-badge ${escapeXml(code)}" title="${escapeXml('A grammatical entry on ' + name)}">${escapeXml(short && code === 'ang' ? 'OE' : name)}</span>`;
+    }
+
     // The language tag, then "Proper Noun" for an Old English name.
-    function languageBadge(lang, headword) {
+    function languageBadge(lang, headword, grammarLang) {
         const name = LANGUAGES[lang] || lang;
         const text = lang === 'ang' ? 'OE' : name;
         return `<span class="lang-badge ${escapeXml(lang)}" title="${escapeXml(name)}">${escapeXml(text)}</span>` +
+            (lang === 'de' && grammarLang ? ' ' + grammarLangBadge(grammarLang, true) : '') +
             (isProperNoun(headword, lang) ? ' ' + properNounBadge() : '');
     }
 
@@ -1478,6 +1485,9 @@ ${translation}
             slug: idno ? idno.textContent.trim() : '',
             lang,
             language: LANGUAGES[lang] || lang,
+            // a grammatical entry: the language it is about (<usg type="lang" n="ang|la|fro">);
+            // Liebermann marks French (F) and Latin (L); the others are about Old English
+            grammarLang: (childrenNamed(entry, 'usg').find(u => u.getAttribute('type') === 'lang') || { getAttribute: () => '' }).getAttribute('n') || '',
             entry,
             original: childrenNamed(entry, 'dictScrap').find(d => d.getAttribute('type') !== 'senses') || null,
             definition,
@@ -1512,7 +1522,7 @@ ${translation}
     }
 
     const api = {
-        TEI_NS, LANGUAGES, LANGUAGE_CODES, langAttr, setLang, languageBadge, properNounBadge, isProperNoun, hiddenLanguages, setHiddenLanguages, isShown, KINDS, kindFilter, kindTags,
+        TEI_NS, LANGUAGES, LANGUAGE_CODES, langAttr, setLang, languageBadge, grammarLangBadge, properNounBadge, isProperNoun, hiddenLanguages, setHiddenLanguages, isShown, KINDS, kindFilter, kindTags,
         useDom, slugify, sortKey, alphaKey, letterOf, ALPHABET, escapeXml, safeUrl,
         linkAbbreviations, loadAbbreviations, extractCitations, linkClauseNumbers, formBefore, expandTilde, jumpLink, citationXr, splitSenses, splitOutline, splitBreaks, sensesXml, detectLanguage, detectHeadword,
         inlineToTei, isEmptyHtml, buildEntryXml,

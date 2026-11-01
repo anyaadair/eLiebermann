@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-12">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-01">Grammatical entry labelled by the language it concerns (Old English): Liebermann marks French (F) and Latin (L); unmarked ones concern Old English.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -34,6 +35,7 @@
         <form type="lemma">
           <orth>Tautologie</orth>
         </form>
+        <usg type="lang" n="ang">Old English</usg>
         <dictScrap type="liebermann"><hi rend="bold"><hi rend="italic">Tautologie:</hi></hi> gif se hlyst oðstande, þæt he ne mæge gehieran <ref type="lawCode" target="law:Af">Af</ref> 46,1; <hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>. <ref type="entry" target="entry:Hendiadyoin">Hendiadyoin</ref></hi></dictScrap>
         <xr type="compare"><ref target="entry:Hendiadyoin">Hendiadyoin</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_46-1">Af 46,1</ref></xr>

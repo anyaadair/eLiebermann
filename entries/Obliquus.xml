@@ -26,6 +26,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-28">“von” unlinked from the abbreviations list: here it is ordinary German, not an abbreviation (Anya Adair).</change>
+      <change when="2026-11-01">Grammatical entry labelled by the language it concerns (Latin): Liebermann marks French (F) and Latin (L); unmarked ones concern Old English.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -34,6 +35,7 @@
         <form type="lemma">
           <orth>Obliquus</orth>
         </form>
+        <usg type="lang" n="la">Latin</usg>
         <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold"><hi rend="italic">Obliquus</hi></hi> <hi rend="italic">dient dem Verf. von</hi> <ref type="lawCode" target="law:Quadr">Q</ref> <hi rend="italic">und</hi> <ref type="lawCode" target="law:Hn">Hn</ref> <hi rend="italic">zur Wortbildung; <ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:cupidinitas">cupidinitas</ref>, hominic[a]edium, hominiplagium, latronicinium</dictScrap>
         <xr type="see"><ref target="entry:cupidinitas">cupidinitas</ref></xr>
       </entry>

@@ -437,7 +437,7 @@ scripts:
         <header class="entry-header">
             <h1>${esc(e.headword)}${e.n ? ` <sup>${esc(e.n)}</sup>` : ''}</h1>
             <div class="meta">
-                <span class="lang-badge ${esc(e.lang)}">${esc(e.language)}</span>${e.spelling ? '<span class="lang-badge spelling" title="A spelling, not a word">Spelling</span>' : ELieb.isProperNoun(e.headword, e.lang) ? ELieb.properNounBadge() : ''}${e.xref ? ' <span class="lang-badge xref" title="This entry only sends you to another headword (Liebermann’s “s.”): a variant spelling or a form entered elsewhere">Cross-reference entry</span>' : ''}
+                <span class="lang-badge ${esc(e.lang)}">${esc(e.language)}</span>${e.grammarLang ? ELieb.grammarLangBadge(e.grammarLang) : ''}${e.spelling ? '<span class="lang-badge spelling" title="A spelling, not a word">Spelling</span>' : ELieb.isProperNoun(e.headword, e.lang) ? ELieb.properNounBadge() : ''}${e.xref ? ' <span class="lang-badge xref" title="This entry only sends you to another headword (Liebermann’s “s.”): a variant spelling or a form entered elsewhere">Cross-reference entry</span>' : ''}
                 ${page ? `<span>${page}</span>` : ''}${scanEmbed(e.facsimile) ? `<button type="button" class="scan-toggle" data-scan-toggle aria-expanded="false" aria-controls="entry-scan">Show page scan</button>` : ''}
             </div>
         </header>
