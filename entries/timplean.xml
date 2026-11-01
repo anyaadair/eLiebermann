@@ -19,6 +19,7 @@
     <encodingDesc>
       <listPrefixDef>
         <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
         <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
         <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
       </listPrefixDef>
@@ -36,7 +37,7 @@
         <dictScrap type="liebermann"><hi rend="bold">timplean</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>, ein Weberwerkzeug</hi> [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>.</hi> tum <hi rend="italic">Wolle karden</hi>] <ref type="lawCode" target="law:Ger">Ger</ref> 15,1</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/30524">timple</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/59086">timple (Supplement)</ref></xr>
-        <xr type="lawCode"><ref target="law:Ger">Ger 15,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:Ger_15-1">Ger 15,1</ref></xr>
       </entry>
     </body>
   </text>
