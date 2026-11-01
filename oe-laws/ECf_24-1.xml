@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECf_24-1">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf 24.1</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECf_24-1</idno>
+        <idno type="citation">ECf 24.1</idno>
+        <idno type="lawCode">ECf</idno>
+        <idno type="lawCodeAnchor">ECf</idno>
+        <idno type="clause">24.1</idno>
+        <idno type="citationKey">ECf 24.1</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">649</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>1115–50, probably 1130–35 (Liebermann, I p. 627)</date><note type="promulgation">1115–50, probably 1130–35 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="24.1">
+        <head><ref type="lawCode" target="law:ECf">ECf</ref> 24.1</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 24.1"><pb n="649" ed="#liebermann"/>Et prefectus de<ptr type="liebermannNote" n="e" target="#ECf_24-1.lnote.la.fn.e"/> uilla mittat<ptr type="liebermannNote" n="19" target="#ECf_24-1.lnote.la.19"/> ad quatuor uillas<ptr type="liebermannNote" n="24" target="#ECf_24-1.lnote.la.24"/> propinquiores<ptr type="liebermannNote" n="h" target="#ECf_24-1.lnote.la.fn.h"/> eis<ptr type="liebermannNote" n="25" target="#ECf_24-1.lnote.la.25"/> propter sacerdotes et prefectos<ptr type="liebermannNote" n="26" target="#ECf_24-1.lnote.la.26"/> de<ptr type="liebermannNote" n="e" target="#ECf_24-1.lnote.la.fn.e"/> uillis<ptr type="liebermannNote" n="27" target="#ECf_24-1.lnote.la.27"/>, et ipsi prefecti adducant<ptr type="liebermannNote" n="28" target="#ECf_24-1.lnote.la.28"/> secum<ptr type="liebermannNote" n="29" target="#ECf_24-1.lnote.la.29"/> quisque<ptr type="liebermannNote" n="30" target="#ECf_24-1.lnote.la.30"/> tres uel quatuor de melioribus de<ptr type="liebermannNote" n="31" target="#ECf_24-1.lnote.la.31"/> uillis; et ipsis<ptr type="liebermannNote" n="32" target="#ECf_24-1.lnote.la.32"/> ostendant<ptr type="liebermannNote" n="33" target="#ECf_24-1.lnote.la.33"/> totum inuentum.</ab>
+        <note type="comparison" source="#liebermann" n="649"><label>printed alongside</label> <ref target="clause:ECfRetr_24-1">ECf retr 24.1</ref></note>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 649 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
+        <note type="editorial">There is no note 23 in the ECf column of this page: Liebermann’s numbering goes from 22 to 24.</note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_24-1.lnote.la.fn.e" n="e" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">649</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">diese Gallicismen ersetzen Abschreiber durch Genitive</hi></seg><seg type="translation" xml:lang="en" source="#claude">copyists replace these Gallicisms with genitives</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_24-1.lnote.la.fn.h" n="h" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">649</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vgl.</hi> 20, 3</seg><seg type="translation" xml:lang="en" source="#claude">cf. 20, 3</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_24-1.lnote.la.19" n="19" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">649</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_24-1.lnote.la.24" n="24" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">649</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Ad Do;</hi> propinq. sacerd. et pref. <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Ad Do; propinq. sacerd. et pref. Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_24-1.lnote.la.25" n="25" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">649</biblScope></bibl><seg type="original" xml:lang="de">uel <hi rend="italic">S</hi></seg><seg type="translation" xml:lang="en" source="#claude">uel S</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_24-1.lnote.la.26" n="26" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">649</biblScope></bibl><seg type="original" xml:lang="de">prepositos <hi rend="italic">S</hi></seg><seg type="translation" xml:lang="en" source="#claude">prepositos S</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_24-1.lnote.la.27" n="27" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">649</biblScope></bibl><seg type="original" xml:lang="de">et ipsis ostendant totum inuentum quicquid sit <hi rend="italic">fügt aus folg. u. vor. Zeile zu, aber unterstreicht Rl</hi></seg><seg type="translation" xml:lang="en" source="#claude">Rl adds et ipsis ostendant totum inuentum quicquid sit, from the following and preceding lines, but underlines it</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_24-1.lnote.la.28" n="28" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">649</biblScope></bibl><seg type="original" xml:lang="de">aduocant <hi rend="italic">Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">aduocant Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_24-1.lnote.la.29" n="29" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">649</biblScope></bibl><seg type="original" xml:lang="de">q. s. <hi rend="italic">Ad</hi> (<hi rend="italic">nicht Do</hi>)</seg><seg type="translation" xml:lang="en" source="#claude">q. s. Ad (not Do)</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_24-1.lnote.la.30" n="30" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">649</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">unterstrichen als auszulassen, und</hi> (<hi rend="italic">statt</hi> tres) quinque uiros <hi rend="italic">Rl</hi></seg><seg type="translation" xml:lang="en" source="#claude">underlined to be left out, and (instead of tres) quinque uiros Rl</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_24-1.lnote.la.31" n="31" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">649</biblScope></bibl><seg type="original" xml:lang="de">hominibus uillarum <hi rend="italic">Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">hominibus uillarum Ad Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_24-1.lnote.la.32" n="32" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">649</biblScope></bibl><seg type="original" xml:lang="de">ipsi <hi rend="italic">Rl</hi></seg><seg type="translation" xml:lang="en" source="#claude">ipsi Rl</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_24-1.lnote.la.33" n="33" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">649</biblScope></bibl><seg type="original" xml:lang="de">-dent <hi rend="italic">ohne</hi> inu. <hi rend="italic">Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">-dent without inu. Do</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>
