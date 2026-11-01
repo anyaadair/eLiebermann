@@ -698,12 +698,22 @@ scripts:
                 p.appendChild(link(incn.with, incn.label));
                 p.appendChild(document.createTextNode('.'));
             } else if (incn.list) {
+                // "draws on": a chapter made from several clauses (In Cn III 56–57 from Grið and perhaps Norðleod);
+                // "perhaps": Liebermann's own query in his margin
+                const many = incn.list.length > 1;
+                const verb = incn.verb === 'draws on' ? (many ? ' draw on' : ' draws on') : (many ? ' translate' : ' translates');
                 join(incn.list, x => link(x.id, x.label));
-                p.appendChild(document.createTextNode((incn.list.length > 1 ? ' translate' : ' translates') + ' this clause; Liebermann prints ' + (incn.list.length > 1 ? 'them' : 'it') + ' in full in his list of the Instituta’s chapters (Gesetze I, p. ' + incn.list[0].page + '), not beside this clause.'));
+                p.appendChild(document.createTextNode((incn.perhaps ? ' perhaps' : '') + verb + ' this clause' + (incn.perhaps ? ' (Liebermann’s query)' : '') + '; Liebermann prints ' + (many ? 'them' : 'it') + ' in full in his list of the Instituta’s chapters (Gesetze I, p. ' + incn.list[0].page + ')'));
+                if (incn.alsoWith) {
+                    p.appendChild(document.createTextNode(incn.alsoWith.part ? ', and in part below ' : ', and below '));
+                    p.appendChild(link(incn.alsoWith.id, incn.alsoWith.label));
+                    p.appendChild(document.createTextNode(' (p. ' + incn.alsoWith.page + ')'));
+                }
+                p.appendChild(document.createTextNode(', not beside this clause.'));
             } else if (incn.translates) {
-                p.appendChild(document.createTextNode('this chapter translates '));
-                join(incn.translates, x => link(x.id, x.label));
-                p.appendChild(document.createTextNode(' (in Liebermann’s margin, Gesetze I, p. ' + (incn.page || '613') + ').'));
+                p.appendChild(document.createTextNode('this chapter ' + (incn.verb || 'translates') + ' '));
+                join(incn.translates, x => { const f = document.createDocumentFragment(); if (x.perhaps) f.appendChild(document.createTextNode('perhaps ')); f.appendChild(link(x.id, x.label)); return f; });
+                p.appendChild(document.createTextNode(' (in Liebermann’s margin, Gesetze I, p. ' + (incn.page || '613') + (incn.perhaps ? '; “perhaps” is his query' : '') + ').'));
             }
             wrap.insertBefore(p, grid);
         }
