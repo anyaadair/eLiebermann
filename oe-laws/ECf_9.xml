@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECf_9">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf 9</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECf_9</idno>
+        <idno type="citation">ECf 9</idno>
+        <idno type="lawCode">ECf</idno>
+        <idno type="lawCodeAnchor">ECf</idno>
+        <idno type="clause">9</idno>
+        <idno type="citationKey">ECf 9</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">633</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>1115–50, probably 1130–35 (Liebermann, I p. 627)</date><note type="promulgation">1115–50, probably 1130–35 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="9">
+        <head><ref type="lawCode" target="law:ECf">ECf</ref> 9</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 9"><pb n="633" ed="#liebermann"/><hi rend="spaced"><ptr type="liebermannNote" n="4" target="#ECf_9.lnote.la.4"/>De hiis qui ad iudicium aque uel ferri iudicati sunt á iusticia regis.</hi> Die<ptr type="liebermannNote" n="5" target="#ECf_9.lnote.la.5"/> illo<ptr type="liebermannNote" n="6" target="#ECf_9.lnote.la.6"/> quo<ptr type="liebermannNote" n="7" target="#ECf_9.lnote.la.7"/> iudicium<ptr type="liebermannNote" n="8" target="#ECf_9.lnote.la.8"/> fiet<ptr type="liebermannNote" n="9" target="#ECf_9.lnote.la.9"/>, assit<ptr type="liebermannNote" n="a" target="#ECf_9.lnote.la.fn.a"/> ad iudicium minister<ptr type="liebermannNote" n="b" target="#ECf_9.lnote.la.fn.b"/> episcopi cum clericis suis et<ptr type="liebermannNote" n="10" target="#ECf_9.lnote.la.10"/> iusticia regis cum legalibus hominibus prouincie<ptr type="liebermannNote" n="c" target="#ECf_9.lnote.la.fn.c"/> illius, ut uideant et audiant, quod eque<ptr type="liebermannNote" n="11" target="#ECf_9.lnote.la.11"/> omnia fiant.</ab>
+        <note type="comparison" source="#liebermann" n="633"><label>printed alongside</label> <ref target="clause:ECfRetr_9">ECf retr 9</ref></note>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 633 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
+        <note type="editorial">“á iusticia”: Liebermann prints the accent as in his manuscript.</note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_9.lnote.la.fn.a" n="a" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">633</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">im öffentlichen Gericht</hi> (<hi rend="italic">im Gegensatz zu</hi> 9, 1), <hi rend="italic">hier der Shire; vgl. jedoch</hi> 9, 3</seg><seg type="translation" xml:lang="en" source="#claude">in the public court (as opposed to 9, 1), here the shire court; but cf. 9, 3</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_9.lnote.la.fn.b" n="b" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">633</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vielleicht aus</hi> Wl episc. 4, 1: non sine iustitia episcopi ad iudicium (<hi rend="italic">vgl. o.</hi> 3; <hi rend="italic">u.</hi> 27, 2 decanus). <hi rend="italic">Er ist nicht identisch mit dem amtirenden Priester. In die Gerichtsstadt, das Grafschaftscentrum, verlegt das Ordal</hi> III Atr. 6, 1; <hi rend="italic">den Bischof erklärt dazu nöthig</hi> Episc. 5; Iud. Dei IX<hi rend="italic">b</hi></seg><seg type="translation" xml:lang="en" source="#claude">perhaps from Wl episc. 4, 1: non sine iustitia episcopi ad iudicium (cf. above, 3; below, 27, 2 decanus). He is not the same as the officiating priest. III Atr. 6, 1 moves the ordeal to the court town, the centre of the shire; Episc. 5 and Iud. Dei IXb declare the bishop necessary for it</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_9.lnote.la.fn.c" n="c" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">633</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vgl.</hi> 5, 3</seg><seg type="translation" xml:lang="en" source="#claude">cf. 5, 3</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_9.lnote.la.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">633</biblScope></bibl><seg type="original" xml:lang="de">Quando aliquis adire debet iud. Dei <hi rend="italic">Hr;</hi> De illo quo iudicium fiet <hi rend="italic">überschreibt Cl</hi></seg><seg type="translation" xml:lang="en" source="#claude">Quando aliquis adire debet iud. Dei Hr; Cl heads it De illo quo iudicium fiet</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_9.lnote.la.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">633</biblScope></bibl><seg type="original" xml:lang="de">De <hi rend="italic">Hk Wo;</hi> Die—fiet <hi rend="italic">fehlt S;</hi> Quando de aliquo <hi rend="italic">Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">De Hk Wo; Die—fiet lacking in S; Quando de aliquo Hr</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_9.lnote.la.6" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">633</biblScope></bibl><seg type="original" xml:lang="de">de <hi rend="italic">fügt zu Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">Hk adds de</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_9.lnote.la.7" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">633</biblScope></bibl><seg type="original" xml:lang="de">aque uel ferri <hi rend="italic">fügt zu Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">Hk adds aque uel ferri</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_9.lnote.la.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">633</biblScope></bibl><seg type="original" xml:lang="de">fi. iu. <hi rend="italic">Ad Do Wo</hi></seg><seg type="translation" xml:lang="en" source="#claude">fi. iu. Ad Do Wo</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_9.lnote.la.9" n="9" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">633</biblScope></bibl><seg type="original" xml:lang="de">diuinum <hi rend="italic">fügt zu Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">Hr adds diuinum</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_9.lnote.la.10" n="10" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">633</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">von späterer Hand S</hi></seg><seg type="translation" xml:lang="en" source="#claude">in a later hand S</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_9.lnote.la.11" n="11" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">633</biblScope></bibl><seg type="original" xml:lang="de">o. e. <hi rend="italic">S</hi></seg><seg type="translation" xml:lang="en" source="#claude">o. e. S</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

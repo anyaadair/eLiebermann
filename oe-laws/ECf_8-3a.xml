@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECf_8-3a">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf 8.3a</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECf_8-3a</idno>
+        <idno type="citation">ECf 8.3a</idno>
+        <idno type="lawCode">ECf</idno>
+        <idno type="lawCodeAnchor">ECf</idno>
+        <idno type="clause">8.3a</idno>
+        <idno type="citationKey">ECf 8.3a</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), pp. <biblScope unit="page">632–633</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>1115–50, probably 1130–35 (Liebermann, I p. 627)</date><note type="promulgation">1115–50, probably 1130–35 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="8.3a">
+        <head><ref type="lawCode" target="law:ECf">ECf</ref> 8.3a</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 8.3a"><pb n="632" ed="#liebermann"/>Sed postea instigante diabolo ea<ptr type="liebermannNote" n="43" target="#ECf_8-3a.lnote.la.43"/> detinuerunt; et sacerdotes, quia<ptr type="liebermannNote" n="44" target="#ECf_8-3a.lnote.la.44"/> diuites<ptr type="liebermannNote" n="f" target="#ECf_8-3a.lnote.la.fn.f"/> erant, non erant<ptr type="liebermannNote" n="45" target="#ECf_8-3a.lnote.la.45"/> <pb n="633" ed="#liebermann"/>multum curiosi ad perquirendas eas<ptr type="liebermannNote" n="1" target="#ECf_8-3a.lnote.la.1"/> — quia in multis locis sunt modo IIII ecclesie uel<ptr type="liebermannNote" n="2" target="#ECf_8-3a.lnote.la.2"/> III, ubi tunc temporis non erat nisi una —; et sic inceperunt<ptr type="liebermannNote" n="3" target="#ECf_8-3a.lnote.la.3"/> minui.</ab>
+        <note type="comparison" source="#liebermann" n="632"><label>printed alongside</label> <ref target="clause:ECfRetr_8-3a">ECf retr 8.3a</ref></note>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 632–633 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
+        <note type="editorial">Liebermann’s upright (roman) letter a after “sacerdotes” refers to his explanatory notes, the Erklärungen (printed as Gesetze III; his note on p. 627 calls it “Band II”), which are not yet added here.</note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_8-3a.lnote.la.43" n="43" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">632</biblScope></bibl><seg type="original" xml:lang="de">ei <hi rend="italic">Ad;</hi> plures <hi rend="italic">fügt zu S</hi></seg><seg type="translation" xml:lang="en" source="#claude">ei Ad; S adds plures</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_8-3a.lnote.la.44" n="44" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">632</biblScope></bibl><seg type="original" xml:lang="de">qui <hi rend="italic">Hk Hr S Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">qui Hk Hr S Ad Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_8-3a.lnote.la.45" n="45" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">632</biblScope></bibl><seg type="original" xml:lang="de">m. c. e. <hi rend="italic">S Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">m. c. e. S Ad Do</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_8-3a.lnote.la.fn.f" n="f" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">632</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">die Begründung des Retr. entschuldigt die Priester mehr; der Verf. freut sich nicht über die Vermehrung der Pfarreien, war wohl also selbst Empfänger von Pfarrzehnten. Vgl. über ungenügende Zahl der Pfarren im</hi> 8. <hi rend="italic">Jahrh.</hi> Bæda <hi rend="italic">ed. Plummer</hi> II 290. 380, <hi rend="italic">über Kirchengründung</hi> 1070—1120 <hi rend="italic">Böhmer</hi> Kirche und Staat 91⁴</seg><seg type="translation" xml:lang="en" source="#claude">the Retractator’s explanation excuses the priests more; the author is not pleased at the increase in the number of parishes, so was probably himself a recipient of parish tithes. On the insufficient number of parishes in the 8th century cf. Bæda, ed. Plummer II 290. 380; on the founding of churches 1070–1120, Böhmer, Kirche und Staat 91⁴</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_8-3a.lnote.la.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">632</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Hr</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_8-3a.lnote.la.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">632</biblScope></bibl><seg type="original" xml:lang="de">u. III <hi rend="italic">fehlt Hk;</hi> u. III e. <hi rend="italic">S Ad</hi></seg><seg type="translation" xml:lang="en" source="#claude">u. III lacking in Hk; u. III e. S Ad</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_8-3a.lnote.la.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">632</biblScope></bibl><seg type="original" xml:lang="de">ceperunt <hi rend="italic">Hr Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">ceperunt Hr Ad Do</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>
