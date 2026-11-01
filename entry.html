@@ -249,8 +249,7 @@ scripts:
         // One group per dictionary, in this order, each with its own heading.
         const dictionaries = [
             ['doe', 'The Dictionary of Old English', 'University of Toronto', 'DOE is subscription access. If you are logged in, this link will open the full entry for the headword.'],
-            ['bosworthToller', 'Bosworth-Toller', 'An Anglo-Saxon Dictionary', ''],
-            ['wiktionary', 'Wiktionary', 'The free dictionary', '']
+            ['bosworthToller', 'Bosworth-Toller', 'An Anglo-Saxon Dictionary', '']
         ];
         return dictionaries.map(([type, name, sub, note]) => {
             const cards = e.xr.filter(x => x.getAttribute('type') === type).map(x => {
@@ -370,7 +369,7 @@ scripts:
             const m = /^clause:(.+)$/.exec(ref.getAttribute('target') || '');
             if (m) clauses[ref.textContent.replace(/\s+/g, ' ').trim()] = root + 'law.html?id=' + encodeURIComponent(m[1]);
         });
-        ELieb.linkClauseNumbers(target.querySelector('.liebermann-text'), clauses, { headword: e.headword });
+        ELieb.linkClauseNumbers(target.querySelector('.liebermann-text'), clauses, { headword: e.headword, spelling: !!e.spelling });
         // "Pax": a text the laws database keeps as one clause, cited by name alone. The name keeps
         // its link to the list of law codes; a small arrow after it goes to the clause.
         target.querySelectorAll('.liebermann-text a[href*="lawAbb.html#"]').forEach(a => {

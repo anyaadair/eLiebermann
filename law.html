@@ -450,7 +450,12 @@ scripts:
         const byEditor = list => list.filter(a => a.getAttribute('type') === 'liebermannText')
             .concat(list.filter(a => a.getAttribute('type') !== 'liebermannText'));
         // a text known only from the Quadripartitus (App AGu …): its Latin, under one heading
-        const left = col(hasOE ? 'Old English text' : hasFrench ? 'Anglo-Norman French text' : texts.length && onlyQ(texts) ? 'Latin text (Quadripartitus)' : 'Latin text', 'clause-col--text');
+        // The column is headed by the language of Liebermann's first (main) text; texts in another language
+        // (MS L's Latin in Leis Wl, the Old English gloss of an ordeal ritual) follow under their own subheading.
+        const LANG_HEAD = { ang: 'Old English text', xno: 'Anglo-Norman French text', la: 'Latin text' };
+        const langOf = a => a.getAttribute('xml:lang') || '';
+        const headLang = (byEditor(main)[0] && langOf(byEditor(main)[0])) || (hasOE ? 'ang' : hasFrench ? 'xno' : 'la');
+        const left = col(texts.length && onlyQ(texts) ? 'Latin text (Quadripartitus)' : LANG_HEAD[headLang] || 'Text', 'clause-col--text');
         const right = col('Translations', 'clause-col--translation');
         const liebTexts = [];
         // an editor's own clause number, not already shown inside the text (a divided clause has a number on
@@ -550,7 +555,11 @@ scripts:
                 !lieb && pageOf(a, src) ? 'p. ' + pageOf(a, src) : '',
                 showLatin && a.getAttribute('xml:lang') === 'la' ? 'Latin' : '']);
         };
-        byEditor(main).forEach(a => addText(a, hasOE));
+        byEditor(main).filter(a => langOf(a) === headLang || !LANG_HEAD[langOf(a)]).forEach(a => addText(a, false));
+        [...new Set(byEditor(main).map(langOf))].filter(l => l !== headLang && LANG_HEAD[l]).forEach(l => {
+            left.appendChild(el('h3', 'clause-subhead', LANG_HEAD[l]));
+            byEditor(main).filter(a => langOf(a) === l).forEach(a => addText(a, false));
+        });
         if (quad.length) {
             left.appendChild(el('h3', 'clause-subhead', onlyQ(quad) ? 'Quadripartitus' : 'Latin versions'));
             byEditor(quad).forEach(a => addText(a, false));
@@ -1143,7 +1152,10 @@ scripts:
             $('find-label').textContent = whole ? 'Find in the whole of ' + row.code : 'Find in this clause';
             const loose = fromLink ? 'link' : tol.checked;
             const terms = find.value.trim() ? W.parseWords(find.value, loose, matchMode === 'whole') : [];
-            marks = W.mark(target, terms, lang => !/^(en|de)$/.test(lang || '') && loose);
+            // a one-letter word from a dictionary link ("a"): only in the texts themselves, not in
+            // the translations, notes or labels, where it would be everywhere
+            const oneLetter = fromLink && find.value.trim().split(/\s+/).every(w => w.replace(/\*/g, '').length === 1);
+            marks = W.mark(target, terms, lang => oneLetter && !/^(ang|la|xno)$/.test(lang || '') ? null : !/^(en|de)$/.test(lang || '') && loose);
             at = -1;
             $('find-status').hidden = !terms.length;
             const vis = marks.filter(m => m.offsetParent !== null);
@@ -1173,16 +1185,31 @@ scripts:
         // turn as a whole word, with spelling tolerance; then shorter and shorter beginnings of the first
         // (gærs*), down to four letters. If nothing is found, the box is left empty.
         const wanted = (new URLSearchParams(location.search).get('find') || '').split(',').map(w => w.trim()).filter(w => w && !/\s/.test(w));
-        if (wanted.length) {
+        // other manuscripts' spellings of the same word, given by Liebermann after the citation
+        // ("Ine 23,2; abbud H B"): each one found is marked too, with the form cited (abbod abbud)
+        const also = (new URLSearchParams(location.search).get('also') || '').split(',').map(w => w.trim()).filter(w => w && !/\s/.test(w));
+        if (wanted.length || also.length) {
             tol.checked = true;
             fromLink = true;
             const letters = [...wanted[0]];
             const stems = letters.length <= 4 ? [wanted[0] + '*']
                 : [...new Set([letters.length - 2, letters.length - 3, Math.ceil(letters.length * 0.6)].map(n => Math.max(4, n)))].map(n => letters.slice(0, n).join('') + '*');
-            for (const w of wanted.concat(stems)) {
+            for (const w of wanted.length ? wanted.concat(stems) : []) {
                 find.value = w;
                 run();
                 if (marks.length) break;
+            }
+            if (also.length) {
+                const found = marks.length ? [find.value] : [];
+                // the spellings are the likeliest forms of one reading, best first: the first found is enough
+                for (const w of also) {
+                    if (found.includes(w)) break;
+                    find.value = w;
+                    run();
+                    if (marks.length) { found.push(w); break; }
+                }
+                find.value = found.join(' ');
+                run();
             }
             if (!marks.length) { find.value = ''; fromLink = false; run(); }
             // with a mouse (not on a phone, where it would bring up the keyboard), the cursor is put

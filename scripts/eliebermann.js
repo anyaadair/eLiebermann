@@ -855,18 +855,30 @@
         const at = t.indexOf('~');
         if (at < 0 || !hw) return t;
         let pre = t.slice(0, at), post = t.slice(at + 1).replace(/~/g, '');
-        if (pre && pre.slice(-1).toLowerCase() === hw[0].toLowerCase()) pre = pre.slice(0, -1);
-        if (!post) return pre + hw;
+        const lc = s => s.toLowerCase();
         const out = [];
+        // "abr~" under aberendlic: the beginning written out, joining the headword at a letter it shares
+        // (abr + endlic = abrendlic); "abb~" under abatissa: abbatissa
+        if (pre && !post) {
+            const last = lc(pre.slice(-1)), lead = lc(pre.slice(0, -1));
+            for (let j = 1; j <= hw.length - 2; j++) if (lc(hw[j]) === last && lc(hw[0]) === lc(pre[0]) && lead.length <= j + 1 && pre.length + hw.length - j - 1 >= hw.length - 2) out.push(pre + hw.slice(j + 1));
+        }
+        if (pre && pre.slice(-1).toLowerCase() === hw[0].toLowerCase()) pre = pre.slice(0, -1);
+        if (!post) { out.push(pre + hw); return [...new Set(out)].join(','); }
         if (hw.slice(-1).toLowerCase() === post[0].toLowerCase()) out.push(pre + hw + post.slice(1));
         // the ending may replace the last letters of the headword
         for (let k = 0; k <= Math.min(2, hw.length - 3); k++) out.push(pre + hw.slice(0, hw.length - k) + post);
+        // "~dissan" under abbodesse: the ending joins the headword at a letter further in (abbo + dissan)
+        for (let j = hw.length - 2; j >= 3; j--) if (lc(hw[j]) === lc(post[0]) && pre.length + j + post.length >= hw.length - 2) out.push(pre + hw.slice(0, j) + post);
         return [...new Set(out)].join(',');
     }
     // a word that is a form of the headword: it begins with the same letters (a ge- aside)
     function relatedForm(tok, hw) {
         const a = foldForm(tok).replace(/[^a-z]/g, ''), b = foldForm(hw).replace(/[^a-z]/g, '');
-        if (a.length < 2 || !b) return false;
+        if (!b) return false;
+        // a one-letter headword (a, á): the word itself, or a short form of it (al, as, aa), nothing longer
+        if (b.length === 1 && /^\p{L}$/u.test(String(hw).normalize('NFC'))) return a === b || (a.length <= 3 && a.startsWith(b) && a.length > 1 && /^[a-z]+$/.test(a));
+        if (a.length < 2) return false;
         const strip = w => (w.length > 4 && w.startsWith('ge') ? w.slice(2) : w);
         const n = Math.min(3, b.length);
         return a.slice(0, n) === b.slice(0, n) || strip(a).slice(0, n) === strip(b).slice(0, n);
@@ -881,13 +893,15 @@
     // Liebermann's passages in square brackets, of more than one word ("[ævre II Atr 8,4 allemal; æfra
     // Ger 4 je; afre I Cn 1 A]"): [start, end] of each. Brackets inside a word (m[i]ht, [-aboht]) are not.
     const bracketPassages = flat => [...flat.matchAll(/(?<![\p{L}])\[([^\[\]]*\s[^\[\]]*)\]/gu)].map(m => [m.index, m.index + m[0].length]);
-    function formBefore(flat, i, ital, bold, breaks, hw) {
+    // affix: an entry for a letter, a spelling or an ending ("-a", "a-", "-cc"): the example word just
+    // before a citation is the cited form ("handhabbenda IV As 6 Q")
+    function formBefore(flat, i, ital, bold, breaks, hw, affix) {
         const toks = [...flat.slice(0, i).matchAll(/\u0001[^\u0003]*\u0003|[\p{L}~'’\[\]\-]*[\p{L}~][\p{L}~'’\[\]\-]*|\d+|[()|‖]/gu)];
         // A citation inside a bracketed passage is for a form inside it (or else the headword); one
         // outside it reads past the whole passage, as if it were not there.
         const groups = bracketPassages(flat);
         const inside = groups.find(([a, b]) => a < i && i < b);
-        let depth = 0, last = i;
+        let depth = 0, last = i, plain = 0;   // plain: words of the text read past so far
         for (let k = toks.length - 1; k >= 0; k--) {
             const t = toks[k][0], at = toks[k].index;
             if (inside && at < inside[0]) return hw;
@@ -899,17 +913,54 @@
             if (t === ')') { depth++; continue; }
             if (t === '(') { depth = Math.max(0, depth - 1); continue; }
             if (depth) continue;
-            if (t === '|' || t === '‖') return '';
+            // "|" starts a new grammatical form ("| gen: ~des") or a new meaning ("| jedesmal VI Atr 20"):
+            // with no form found, a new meaning is for the headword itself; a form with a label, nothing
+            if (t === '|' || t === '‖') return /:/.test(flat.slice(at, i)) ? '' : hw;
             if (/^\d+$/.test(t)) { if (bold[at]) return hw; continue; }
             if (bold[at]) return t.length > 1 ? expandTilde(t, hw) : hw;   // the headword, or "a)" of a sense
             if (ital[at]) continue;
             if (t.includes('~')) return expandTilde(t, hw);
+            // the word just before the citation, when it follows a grammatical label ("ptt pc: aboren",
+            // "dt: …"; short abbreviations, not a German meaning such as "kaufen:"), whatever it looks like
+            if (!plain && labelBefore(toks, k, flat, ital, at)) return t.replace(/[\[\]\-]/g, '');
+            if (!plain && affix && t.length > 1 && !/^[IVXLC]+$/.test(t)) return t.replace(/[\[\]\-]/g, '');   // not a numeral (III)
             // in a bracketed passage of spellings, the word before the citation is the spelling
             // cited, whatever it looks like ("ævre II Atr 8,4", "afre I Cn 1 A")
             if (inside) return t.replace(/[\[\]\-]/g, '');
             if (relatedForm(t, hw)) return t.replace(/[\[\]\-]/g, '');
+            plain++;
         }
         return hw;
+    }
+    // Is the word toks[k] (at flat[at]) straight after a grammatical label such as "dt:", "pl ac:", "ptt pc:"?
+    function labelBefore(toks, k, flat, ital, at) {
+        const prev = toks[k - 1];
+        if (!prev || !ital[prev.index] || !/^\s*:\s*$/.test(flat.slice(prev.index + prev[0].length, at))) return false;
+        // the label's words: the italic words before the colon, each a short abbreviation
+        for (let j = k - 1; j >= 0 && ital[toks[j].index]; j--) {
+            if (toks[j][0].length > 5) return false;
+            if (j > 0 && !ital[toks[j - 1].index]) break;
+        }
+        return true;
+    }
+
+    // Another manuscript's spelling given straight after a citation: a word (or ~word) followed only by
+    // manuscript sigla, then ";", "|", ")" or the end: "Ine 23,2; abbud H B", "III Eg 6,1 (beran D G 2)",
+    // "Leis Wl 18,1; ~te I", "II Cn 2; abr~ A". -> its spellings, joined by commas, or ''
+    const CODE_TOKEN = '\u0001[^\u0002\u0003]*\u0002[^\u0003]*\u0003';
+    const VARIANT = new RegExp('^(?:\\s*' + CODE_TOKEN + ')*\\s*[;(]\\s*([\\p{L}~\'’\\[\\]\\-]*[\\p{L}~][\\p{L}~\'’\\[\\]\\-]*)((?:\\s*' + CODE_TOKEN + ')+)\\s*(?=$|[;|)‖.,])', 'du');
+    function variantAfter(flat, end, ital, hw) {
+        if (end == null) return '';
+        const m = VARIANT.exec(flat.slice(end));
+        if (!m || ital[end + m.indices[1][0]]) return '';
+        let w = m[1];
+        if (/^-/.test(w)) return '';   // an ending ("-ige"), not a word
+        if (w.includes('~')) return expandTilde(w, hw);
+        // "Wyl-": the beginning of a spelling, looked for as a beginning (four letters or more)
+        if (/-$/.test(w)) { w = w.replace(/[\[\]\-]/g, ''); return w.length >= 4 ? w + '*' : ''; }
+        w = w.replace(/[\[\]\-]/g, '');
+        // a word, not a stray letter or ending ("c", "te")
+        return w.length >= 3 || hw.length === 1 ? w : '';
     }
 
     function linkClauseNumbers(container, clauses, opts) {
@@ -963,12 +1014,22 @@
             // "Z. 6" (line 6): "Z." keeps its own link; the number is linked.
             if (/^Z\./.test(flat.slice(start, end))) start += flat.slice(start, end).search(/\d/);
             const a = from[start], b = from[end - 1];
-            if (href && a && b && a[0] === b[0]) hits.push({ node: a[0], start: a[1], end: b[1] + 1, href, text, flatStart: start });
+            if (href && a && b && a[0] === b[0]) hits.push({ node: a[0], start: a[1], end: b[1] + 1, href, text, flatStart: start, flatEnd: end });
         }, ital);
-        // each clause link carries the form it is cited for (law.html?id=…&find=gærses)
+        // each clause link carries the form it is cited for (law.html?id=…&find=gærses), and other
+        // manuscripts' spellings Liebermann gives straight after it (&also=abbud)
+        // an entry for a letter, a spelling or an ending: the example word before a citation is the
+        // form cited, and the headword itself (a letter) is never looked for
+        const spelling = !!(opts || {}).spelling;
+        const affix = spelling || /^\s*-|-\s*$/.test(String((opts || {}).headword || '').split(',')[0]);
+        const oneLetter = /^\p{L}$/u.test(hw.normalize('NFC'));
         if (hw) hits.forEach(h => {
-            const form = formBefore(flat, h.flatStart, ital, bold, breaks, hw);
-            if (form && /\p{L}.*\p{L}/u.test(form.split(',')[0])) h.href += (h.href.includes('?') ? '&' : '?') + 'find=' + encodeURIComponent(form);
+            let form = formBefore(flat, h.flatStart, ital, bold, breaks, hw, affix);
+            if (spelling && form === hw) form = '';
+            const sep = () => (h.href.includes('?') ? '&' : '?');
+            if (form && (oneLetter ? /\p{L}/u : /\p{L}.*\p{L}/u).test(form.split(',')[0])) h.href += sep() + 'find=' + encodeURIComponent(form);
+            const also = variantAfter(flat, h.flatEnd, ital, hw);
+            if (also) h.href += sep() + 'also=' + encodeURIComponent(also);
         });
         // Wrap from the last to the first, so earlier offsets stay right.
         hits.reverse().forEach(h => {
