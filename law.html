@@ -209,6 +209,30 @@ scripts:
                 frag.appendChild(out);
                 return;
             }
+            // Two (or more) versions of the same passage, printed by Liebermann side by side, each headed by its
+            // manuscripts (<seg type="parallel"><label>Cb</label>…</seg>): set off as indented blocks under a short lead-in
+            if (name === 'seg' && n.getAttribute('type') === 'parallel') {
+                let group = frag.lastChild && frag.lastChild.classList && frag.lastChild.classList.contains('parallel-group') ? frag.lastChild : null;
+                if (!group) {
+                    group = el('span', 'parallel-group');
+                    const sibs = [...node.childNodes].filter(x => x.nodeType === 1 && x.localName === 'seg' && x.getAttribute('type') === 'parallel').length;
+                    group.appendChild(el('span', 'parallel-intro', 'The manuscripts differ here, and Liebermann prints ' + (sibs === 2 ? 'the two versions' : 'the ' + sibs + ' versions') + ' side by side:'));
+                    frag.appendChild(group);
+                }
+                const out = el('span', 'parallel');
+                const lab = [...n.childNodes].find(x => x.nodeType === 1 && x.localName === 'label');
+                if (lab) {
+                    const sig = lab.textContent.trim();
+                    const head = el('span', 'parallel__label', /^[A-Z][A-Za-z]{0,2}\d?$/.test(sig) ? 'MS ' : /^([A-Z][A-Za-z]{0,2}\d?\s*)+$/.test(sig) ? 'MSS ' : '');
+                    head.appendChild(inline(lab, opts));
+                    out.appendChild(head);
+                }
+                const body = el('span', 'parallel__text');
+                [...n.childNodes].filter(x => x !== lab).forEach(x => { const f = document.createElement('span'); const tmp = x.cloneNode(true); const holder = n.ownerDocument.createElementNS(NS, 'x'); holder.appendChild(tmp); f.appendChild(inline(holder, opts)); while (f.firstChild) body.appendChild(f.firstChild); });
+                out.appendChild(body);
+                group.appendChild(out);
+                return;
+            }
             // Liebermann's round brackets in Instituta Cnuti and Quadripartitus: the author's other version
             // of the same words, both authentic (Vorrede p. V)
             if (name === 'seg' && n.getAttribute('type') === 'recension') {
@@ -608,7 +632,7 @@ scripts:
             const lieb = a.getAttribute('type') === 'liebermannText';
             const n = a.getAttribute('n');
             add(left, a, [msLabel(a, wits),
-                a.getAttribute('corresp') === '#wit-inst-cn' && /^I{1,3}\b/.test(n || '') ? 'In Cn ' + n : '',
+                a.getAttribute('corresp') === '#wit-inst-cn' && /^I{1,3} \d/.test(n || '') ? 'In Cn ' + n : '',
                 lieb ? (pageOf(a, src) ? 'Gesetze I, p. ' + pageOf(a, src) : '') : (n && n !== div.getAttribute('n') ? '§ ' + n : ''),
                 !lieb && pageOf(a, src) ? 'p. ' + pageOf(a, src) : '',
                 showLatin && a.getAttribute('xml:lang') === 'la' ? 'Latin' : '']);

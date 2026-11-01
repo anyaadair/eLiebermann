@@ -1302,3 +1302,10 @@ mark.gp-mark.is-current { outline: 2px solid var(--link); }
     .glossary--gram tbody.gl-group--multi tr:not(.gl-head) td:first-child { padding-left: 0.25rem; }
     .glossary .gl-term { white-space: normal; }
 }
+
+/* Liebermann's parallel versions of one passage (two columns for different manuscripts in the print):
+   indented blocks, each headed by its sigla, under a one-line lead-in */
+.parallel-group { display: block; margin: 0.7em 0 0.2em; }
+.parallel-intro { display: block; font-family: var(--sans); font-size: 0.78rem; color: var(--muted); margin-bottom: 0.45em; }
+.parallel { display: block; margin: 0 0 0.7em 0.9rem; padding: 0.15em 0 0.2em 0.85rem; border-left: 2px solid var(--rule); }
+.parallel__label { display: block; font-family: var(--sans); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.02em; color: var(--powder); margin-bottom: 0.15em; }

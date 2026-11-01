@@ -57,6 +57,17 @@ scripts:
                 if (/superscript/.test(rend)) return '<sup>' + inner + '</sup>';
                 return inner;
             }
+            if (n.localName === 'label') return '';
+            if (n.localName === 'seg' && n.getAttribute('type') === 'parallel') {
+                const lab = [...n.childNodes].find(x => x.nodeType === 1 && x.localName === 'label');
+                const sig = lab ? lab.textContent.trim() : '';
+                const first = !(n.previousSibling && n.previousSibling.nodeType === 1 && n.previousSibling.localName === 'seg' && n.previousSibling.getAttribute('type') === 'parallel');
+                const last = !(n.nextSibling && n.nextSibling.nodeType === 1 && n.nextSibling.localName === 'seg' && n.nextSibling.getAttribute('type') === 'parallel');
+                const count = [...n.parentNode.childNodes].filter(x => x.nodeType === 1 && x.localName === 'seg' && x.getAttribute('type') === 'parallel').length;
+                return (first ? '<span class="parallel-group"><span class="parallel-intro">The manuscripts differ here, and Liebermann prints ' + (count === 2 ? 'the two versions' : 'the ' + count + ' versions') + ' side by side:</span>' : '')
+                    + '<span class="parallel"><span class="parallel__label">' + (sig ? (/^[A-Z][A-Za-z]{0,2}\d?$/.test(sig) ? 'MS ' : /^([A-Z][A-Za-z]{0,2}\d?\s*)+$/.test(sig) ? 'MSS ' : '') + esc(sig) : '') + '</span><span class="parallel__text">' + inner + '</span></span>'
+                    + (last ? '</span>' : '');
+            }
             if (n.localName === 'seg' && n.getAttribute('type') === 'recension')
                 return '<span class="recension" title="Liebermann’s round brackets: the other version of these words">' + inner + '</span>';
             return inner;
