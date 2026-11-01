@@ -917,6 +917,8 @@
             // with no form found, a new meaning is for the headword itself; a form with a label, nothing
             if (t === '|' || t === '‖') return /:/.test(flat.slice(at, i)) ? '' : hw;
             if (/^\d+$/.test(t)) { if (bold[at]) return hw; continue; }
+            // a bold italic label ("sg:", "pl:", "op:") with no form after it: the headword itself is cited
+            if (bold[at] && ital[at]) return hw;
             if (bold[at]) return t.length > 1 ? expandTilde(t, hw) : hw;   // the headword, or "a)" of a sense
             if (ital[at]) continue;
             if (t.includes('~')) return expandTilde(t, hw);
