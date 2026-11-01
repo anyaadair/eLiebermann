@@ -729,6 +729,24 @@ scripts:
         }
         // The clause notes (<note type="editorial">, spreadsheet column AI) are kept in the files but not
         // shown, for a cleaner page (decided October 2026); only the source of a passage is shown here.
+        // Exception (Anya, Nov 2026): the Leges Edwardi Confessoris, transcribed for this edition, show their
+        // editor's notes (on Liebermann's numbering, misprints, marginal dates) and Liebermann's marginal
+        // references, under the text. The standard note on the transcription itself is left out.
+        if (/^ECf( retr)?$/.test(idno('lawCode'))) {
+            const margin = notesOf('comparisonPrinted').map(n => plainText(n)).filter(Boolean);
+            if (margin.length) {
+                const p = el('p', 'clause-note small');
+                p.appendChild(el('strong', null, 'In Liebermann’s margin: '));
+                p.appendChild(document.createTextNode(margin.join('; ')));
+                wrap.insertBefore(p, grid.nextSibling);
+            }
+            notesOf('editorial').filter(n => !/^Liebermann’s text transcribed from Gesetze/.test(plainText(n).trim())).reverse().forEach(n => {
+                const p = el('p', 'clause-note small');
+                p.appendChild(el('strong', null, 'Editor’s note: '));
+                p.appendChild(inline(n));
+                wrap.insertBefore(p, grid.nextSibling);
+            });
+        }
         tei(div, 'note').forEach(n => {
             const type = n.getAttribute('type');
             if (type !== 'passageSource') return;
