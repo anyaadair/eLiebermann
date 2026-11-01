@@ -47,7 +47,7 @@
         <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 629 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
         <note type="editorial">Liebermann prints this sentence, which ECf lacks, in the larger type of the ECf column; his note z stands beside it rather than at the foot of the page.</note>
         <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_2-6a.lnote.la.6*" n="6*" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">629</biblScope></bibl><seg type="original" xml:lang="de">et <hi rend="italic">fügt zu Cb Va;</hi> Item etiam 2, 6a <hi rend="italic">vor</hi> 2, 6 <hi rend="italic">K</hi></seg><seg type="translation" xml:lang="en" source="#claude">Cb Va add et; Item etiam 2, 6a before 2, 6 K</seg></note>
-        <note type="liebermannNote" subtype="erklaerung" xml:id="ECfRetr_2-6a.lnote.la.fn.z" n="z" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">629</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vgl.</hi> 2, 8</seg><seg type="translation" xml:lang="en" source="#claude">cf. 2, 8</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_2-6a.lnote.la.fn.z" n="z" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">629</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vgl.</hi> 2, 8</seg><seg type="translation" xml:lang="en" source="#claude">cf. 2, 8</seg></note>
       </div>
     </body>
   </text>

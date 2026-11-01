@@ -32,6 +32,7 @@ def inline(s):
     s = s.replace('<i>', '<hi rend="italic">').replace('</i>', '</hi>')
     s = s.replace('<b>', '<hi rend="bold">').replace('</b>', '</hi>')
     s = s.replace('<sp>', '<hi rend="spaced">').replace('</sp>', '</hi>')
+    s = s.replace('<sup>', '<hi rend="superscript">').replace('</sup>', '</hi>')
     return s
 
 def note_id(cid, key):
@@ -54,7 +55,7 @@ def build(cl, all_ids):
     notes = []
     for key, (de, en) in cl['notes'].items():
         key = str(key)
-        sub = 'erklaerung' if key.startswith('f:') else 'textual'
+        sub = 'textual'   # lettered footnotes too, as in Hn: the site shows only 'textual' notes for an untranslated Latin text
         shown = (key[2:] if key.startswith('f:') else key).split('/')[0]
         pg = cl.get('notepages', {}).get(key, page)
         notes.append(f'<note type="liebermannNote" subtype="{sub}" xml:id="{note_id(cid, key)}" n="{shown}" source="#liebermann">'
