@@ -130,6 +130,17 @@ def main():
         if r['clause'].startswith('Rb'):
             for x in ab_of(os.path.join(LAWS, r['file']), False)[:1]:
                 rub.append({'incn': r['clause'], 'id': r['id'], 'text': clean(x)})
+    try:
+        crib = json.load(open(os.path.join(ROOT, 'data', 'incn-crib.json'), encoding='utf-8'))['crib']
+    except OSError:
+        crib = {}
+    for p in out:
+        p['en'] = crib.get(p['id'] + '|' + p['incn'], '')
+    for r in rub:
+        r['en'] = crib.get(r['id'], '')
+    missing = [p['id'] for p in out if not p['en']] + [r['id'] for r in rub if not r['en']]
+    if missing:
+        print('no English crib for', len(missing), 'passages, e.g.', missing[:5])
     json.dump({'_about': 'The Instituta Cnuti in the translator’s order, assembled by tools/incn/reading.py from the clause files '
                '(“beside”: printed by Liebermann beside the law it translates; “list”: printed in his list, Gesetze I pp. 612–615).',
                'passages': out, 'rubrics': rub},
