@@ -69,6 +69,10 @@ def build(cl, all_ids):
     ed = ['Liebermann’s text transcribed from Gesetze I p. ' + '–'.join(map(str, [pages[0], pages[-1]] if len(pages) > 1 else pages)) +
           ' (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page' +
           ('; the words in bold are the Retractator’s changes to ECf, as Liebermann prints them' if code == 'ECfRetr' and '<b>' in text else '') + '.']
+    if cl.get('erkl'):
+        ws = cl['erkl']
+        q = ', '.join('“' + w + '”' for w in ws)
+        ed.append(f'Liebermann’s upright (roman) letter a after {q} refers to his explanatory notes, the Erklärungen (printed as Gesetze III; his note on p. 627 calls it “Band II”), which are not yet added here.')
     ed += cl.get('editorial', [])
     for e in ed:
         extra.append(f'<note type="editorial">{inline(e)}</note>')

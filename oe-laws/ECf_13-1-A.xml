@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECf_13-1-A">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf 13.1 A</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECf_13-1-A</idno>
+        <idno type="citation">ECf 13.1 A</idno>
+        <idno type="lawCode">ECf</idno>
+        <idno type="lawCodeAnchor">ECf</idno>
+        <idno type="clause">13.1 A</idno>
+        <idno type="citationKey">ECf 13.1 A</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">640</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>1115–50, probably 1130–35 (Liebermann, I p. 627)</date><note type="promulgation">1115–50, probably 1130–35 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="13.1 A">
+        <head><ref type="lawCode" target="law:ECf">ECf</ref> 13.1 A</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 13.1 A"><pb n="640" ed="#liebermann"/><ptr type="liebermannNote" n="1" target="#ECf_13-1-A.lnote.la.1"/><hi rend="spaced">De regibus Norwicorum et Danorum post mortem Aluredi regis.</hi> Iste uero Knutus<ptr type="liebermannNote" n="2" target="#ECf_13-1-A.lnote.la.2"/>, prefatus rex, et Swennus<ptr type="liebermannNote" n="f" target="#ECf_13-1-A.lnote.la.fn.f"/><ptr type="liebermannNote" n="3" target="#ECf_13-1-A.lnote.la.3"/> rex Danorum, pater suus<ptr type="liebermannNote" n="4" target="#ECf_13-1-A.lnote.la.4"/>, et Lachman<ptr type="liebermannNote" n="5" target="#ECf_13-1-A.lnote.la.5"/> rex Sueuorum et Olauus rex Norwegie<ptr type="liebermannNote" n="6" target="#ECf_13-1-A.lnote.la.6"/> et Haraldus<ptr type="liebermannNote" n="g" target="#ECf_13-1-A.lnote.la.fn.g"/> Harefote<ptr type="liebermannNote" n="7" target="#ECf_13-1-A.lnote.la.7"/> rex Danorum, filius Chnuti predicti et Elwyne<ptr type="liebermannNote" n="h" target="#ECf_13-1-A.lnote.la.fn.h"/>, et Hardechnutus rex Danorum, frater suus, filius Knuti<ptr type="liebermannNote" n="8" target="#ECf_13-1-A.lnote.la.8"/> predicti et Emme<ptr type="liebermannNote" n="g" target="#ECf_13-1-A.lnote.la.fn.g"/>, sororis Roberti Normannorum ducis et matris ultimi<ptr type="liebermannNote" n="i" target="#ECf_13-1-A.lnote.la.fn.i"/> Edwardi<ptr type="liebermannNote" n="g" target="#ECf_13-1-A.lnote.la.fn.g"/>, multa<ptr type="liebermannNote" n="k" target="#ECf_13-1-A.lnote.la.fn.k"/> iura et dignitates et terras et insulas a corona regni huius alienauerunt et dilapidauerunt<ptr type="liebermannNote" n="l" target="#ECf_13-1-A.lnote.la.fn.l"/> et Dacis suis et Norwigensibus<ptr type="liebermannNote" n="9" target="#ECf_13-1-A.lnote.la.9"/> suis<ptr type="liebermannNote" n="10" target="#ECf_13-1-A.lnote.la.10"/> illas dederunt, qui regnum illud<ptr type="liebermannNote" n="10" target="#ECf_13-1-A.lnote.la.10"/> infestantes destruxerunt.</ab>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 640 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
+        <note type="editorial">This passage is not part of ECf or ECf retr: it is one of the additions of the London collection (Leges Anglorum s. XIII in. Londoniis collectae), which Liebermann prints in smaller type across the page, under ECf retr. 13, 1, and numbers 13, 1 A ff. The dictionary cites it as “ECf 13, 1 A …”, so it is kept with ECf here.</note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_13-1-A.lnote.la.fn.f" n="f" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">640</biblScope></bibl><seg type="original" xml:lang="de">Sw.—Olau. rex No. <hi rend="italic">aus</hi> Geneal. Norm. 4, <hi rend="italic">ed. Liebermann</hi> Über ECf. <hi rend="italic">p.</hi> 135</seg><seg type="translation" xml:lang="en" source="#claude">Sw.—Olau. rex No. from Geneal. Norm. 4, ed. Liebermann, Über ECf. p. 135</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_13-1-A.lnote.la.fn.g" n="g" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">640</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">aus</hi> ECf. 34, 2<hi rend="italic">d; e</hi></seg><seg type="translation" xml:lang="en" source="#claude">from ECf. 34, 2, notes d; e</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_13-1-A.lnote.la.fn.h" n="h" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">640</biblScope></bibl><seg type="original" xml:lang="de">Elwine, <hi rend="italic">al.</hi> Elfgiue <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">Elwine, al. Elfgiue Ld</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_13-1-A.lnote.la.fn.i" n="i" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">640</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">den Bekenner nennen</hi> ultimus Edwardus <hi rend="italic">nochmals</hi> Leges Angl. <hi rend="italic">S.</hi> 69: <hi rend="italic">sicher bevor</hi> 1239 <hi rend="italic">wiederum ein Thronerbe so hiess</hi></seg><seg type="translation" xml:lang="en" source="#claude">Leges Angl. p. 69 again calls the Confessor ultimus Edwardus: certainly before 1239, when an heir to the throne was again so named</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_13-1-A.lnote.la.fn.k" n="k" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">640</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">ähnlich</hi> 11, 1 A 2 <hi rend="italic">f.;</hi> 6</seg><seg type="translation" xml:lang="en" source="#claude">similarly 11, 1 A 2 f.; 6</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_13-1-A.lnote.la.fn.l" n="l" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">640</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">ähnliches fabeln</hi> Leges Angl. <hi rend="italic">S.</hi> 24 <hi rend="italic">ff.</hi></seg><seg type="translation" xml:lang="en" source="#claude">Leges Angl. p. 24 ff. tell similar fables</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_13-1-A.lnote.la.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">640</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">hinter c.</hi> 16 [<hi rend="italic">richtiger, weil</hi> prefatus Cnut <hi rend="italic">auf</hi> 16 <hi rend="italic">Bezug nimmt</hi>], <hi rend="italic">ohne Überschrift Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">after c. 16 [more correctly, since prefatus Cnut refers to 16], without heading Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_13-1-A.lnote.la.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">640</biblScope></bibl><seg type="original" xml:lang="de">Chn. <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">Chn. Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_13-1-A.lnote.la.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">640</biblScope></bibl><seg type="original" xml:lang="de">Sueinus <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">Sueinus Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_13-1-A.lnote.la.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">640</biblScope></bibl><seg type="original" xml:lang="de">eius <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">eius Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_13-1-A.lnote.la.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">640</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">so Ld;</hi> La.—et Ol. r. N. <hi rend="italic">fehlt Ce;</hi> Lachmam r. Swedno. <hi rend="italic">Hss.</hi></seg><seg type="translation" xml:lang="en" source="#claude">so Ld; La.—et Ol. r. N. lacking in Ce; Lachmam r. Swedno. MSS</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_13-1-A.lnote.la.6" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">640</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">so Ld;</hi> -wece <hi rend="italic">K;</hi> -wete <hi rend="italic">Co</hi></seg><seg type="translation" xml:lang="en" source="#claude">so Ld; -wece K; -wete Co</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_13-1-A.lnote.la.7" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">640</biblScope></bibl><seg type="original" xml:lang="de">Herewot <hi rend="italic">K Co;</hi> Hereskot <hi rend="italic">Or;</hi> Harol. Harefote <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">Herewot K Co; Hereskot Or; Harol. Harefote Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_13-1-A.lnote.la.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">640</biblScope></bibl><seg type="original" xml:lang="de">Chn. <hi rend="italic">Co Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">Chn. Co Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_13-1-A.lnote.la.9" n="9" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">640</biblScope></bibl><seg type="original" xml:lang="de">-wegiens. <hi rend="italic">Ld;</hi> -wyg. <hi rend="italic">K</hi></seg><seg type="translation" xml:lang="en" source="#claude">-wegiens. Ld; -wyg. K</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_13-1-A.lnote.la.10" n="10" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">640</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Ld</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

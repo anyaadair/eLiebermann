@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECf_15">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf 15</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECf_15</idno>
+        <idno type="citation">ECf 15</idno>
+        <idno type="lawCode">ECf</idno>
+        <idno type="lawCodeAnchor">ECf</idno>
+        <idno type="clause">15</idno>
+        <idno type="citationKey">ECf 15</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">641</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>1115–50, probably 1130–35 (Liebermann, I p. 627)</date><note type="promulgation">1115–50, probably 1130–35 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="15">
+        <head><ref type="lawCode" target="law:ECf">ECf</ref> 15</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 15"><pb n="641" ed="#liebermann"/><ptr type="liebermannNote" n="1" target="#ECf_15.lnote.la.1"/><hi rend="spaced">Lex murdrorum<ptr type="liebermannNote" n="2" target="#ECf_15.lnote.la.2"/>.</hi> Quando aliquis alicubi murdratus<ptr type="liebermannNote" n="3" target="#ECf_15.lnote.la.3"/> reperiebatur, querebatur apud uillam, ubi<ptr type="liebermannNote" n="4" target="#ECf_15.lnote.la.4"/> inueniebatur<ptr type="liebermannNote" n="5" target="#ECf_15.lnote.la.5"/>, interfector illius; et si inueniri poterat<ptr type="liebermannNote" n="6" target="#ECf_15.lnote.la.6"/>, iusticie<ptr type="liebermannNote" n="7" target="#ECf_15.lnote.la.7"/> regis infra<ptr type="liebermannNote" n="8" target="#ECf_15.lnote.la.8"/> octo<ptr type="liebermannNote" n="a" target="#ECf_15.lnote.la.fn.a"/> dies interfectionis<ptr type="liebermannNote" n="9" target="#ECf_15.lnote.la.9"/> tradebatur.</ab>
+        <note type="comparison" source="#liebermann" n="641"><label>printed alongside</label> <ref target="clause:ECfRetr_15">ECf retr 15</ref></note>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 641 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
+        <note type="editorial">Liebermann’s upright (roman) letter a after “aliquis” refers to his explanatory notes, the Erklärungen (printed as Gesetze III; his note on p. 627 calls it “Band II”), which are not yet added here.</note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_15.lnote.la.fn.a" n="a" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">641</biblScope></bibl><seg type="original" xml:lang="de">eine Woche (<hi rend="italic">gegen</hi> Wl art. 3, 1) <hi rend="italic">auch</hi> Leis Wl 22 <hi rend="italic">und</hi> Hn 13, 2. 75, 6a. 91, 1. 92, 3; 5</seg><seg type="translation" xml:lang="en" source="#claude">one week (against Wl art. 3, 1) also Leis Wl 22 and Hn 13, 2. 75, 6a. 91, 1. 92, 3; 5</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_15.lnote.la.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">641</biblScope></bibl><seg type="original" xml:lang="de">De interfect.’ et lege murdrorum <hi rend="italic">Hr; Rb. fehlt Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">De interfect.’ et lege murdrorum Hr; the rubric is lacking in Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_15.lnote.la.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">641</biblScope></bibl><seg type="original" xml:lang="de">-drar. <hi rend="italic">Rl</hi></seg><seg type="translation" xml:lang="en" source="#claude">-drar. Rl</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_15.lnote.la.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">641</biblScope></bibl><seg type="original" xml:lang="de">-dritus <hi rend="italic">S</hi></seg><seg type="translation" xml:lang="en" source="#claude">-dritus S</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_15.lnote.la.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">641</biblScope></bibl><seg type="original" xml:lang="de">nisi <hi rend="italic">S;</hi> ut inueniretur <hi rend="italic">Rl</hi></seg><seg type="translation" xml:lang="en" source="#claude">nisi S; ut inueniretur Rl</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_15.lnote.la.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">641</biblScope></bibl><seg type="original" xml:lang="de">int. il. reperiebatur <hi rend="italic">Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">int. il. reperiebatur Ad Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_15.lnote.la.6" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">641</biblScope></bibl><seg type="original" xml:lang="de">-rit <hi rend="italic">Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">-rit Ad Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_15.lnote.la.7" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">641</biblScope></bibl><seg type="original" xml:lang="de">domini <hi rend="italic">fügt zu Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">Ad Do add domini</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_15.lnote.la.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">641</biblScope></bibl><seg type="original" xml:lang="de">post <hi rend="italic">Hk;</hi> ipsos <hi rend="italic">fügt zu Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">post Hk; Hr adds ipsos</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_15.lnote.la.9" n="9" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">641</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Hr Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Hr Ad Do</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

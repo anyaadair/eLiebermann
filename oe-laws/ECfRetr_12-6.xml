@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECfRetr_12-6">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf retr 12.6</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECfRetr_12-6</idno>
+        <idno type="citation">ECf retr 12.6</idno>
+        <idno type="lawCode">ECf retr</idno>
+        <idno type="lawCodeAnchor">ECfRetr</idno>
+        <idno type="clause">12.6</idno>
+        <idno type="citationKey">ECfRetr 12.6</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris: retractatus</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), pp. <biblScope unit="page">638–639</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>c. 1140–59 (Liebermann, I p. 627)</date><note type="promulgation">c. 1140–59 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="12.6">
+        <head><ref type="lawCode" target="law:ECfRetr">ECf retr</ref> 12.6</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf retr 12.6"><pb n="638" ed="#liebermann"/>Parentibus <hi rend="bold">occisi fiat</hi> emendatio, uel guerra<ptr type="liebermannNote" n="39" target="#ECfRetr_12-6.lnote.la.39"/> <hi rend="bold">eorum portetur,</hi> unde Anglice prouerbium habetur: ‘Begge<ptr type="liebermannNote" n="40" target="#ECfRetr_12-6.lnote.la.40"/> <pb n="639" ed="#liebermann"/>spere of<ptr type="liebermannNote" n="1" target="#ECfRetr_12-6.lnote.la.1"/> side oðe<ptr type="liebermannNote" n="2" target="#ECfRetr_12-6.lnote.la.2"/> bere!’ <hi rend="bold">hoc</hi> est: ‘Eme lanceam <hi rend="bold">a</hi><ptr type="liebermannNote" n="3" target="#ECfRetr_12-6.lnote.la.3"/> latere aut<ptr type="liebermannNote" n="4" target="#ECfRetr_12-6.lnote.la.4"/> fer!’</ab>
+        <note type="comparison" source="#liebermann" n="638"><label>printed alongside</label> <ref target="clause:ECf_12-6">ECf 12.6</ref></note>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 638–639 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page; the words in bold are the Retractator’s changes to ECf, as Liebermann prints them.</note>
+        <note type="editorial">Liebermann’s footnote a, to “of” in the ECf column, is given here as well.</note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_12-6.lnote.la.39" n="39" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">638</biblScope></bibl><seg type="original" xml:lang="de">gueria <hi rend="italic">Va</hi></seg><seg type="translation" xml:lang="en" source="#claude">gueria Va</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_12-6.lnote.la.40" n="40" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">638</biblScope></bibl><seg type="original" xml:lang="de">Bige <hi rend="italic">Hv;</hi> Bigge <hi rend="italic">Ph</hi></seg><seg type="translation" xml:lang="en" source="#claude">Bige Hv; Bigge Ph</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECfRetr_12-6.lnote.la.fn.a" n="a" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">638</biblScope></bibl><seg type="original" xml:lang="de">von <hi rend="italic">deinem durch die Bluträcher gefährdeten</hi> Körper ab, oder trage (<hi rend="italic">d. i.</hi> leide) die Lanze (<hi rend="italic">d. i.</hi> Fehde); <hi rend="italic">als dies Sprichwort aufkam, war noch nicht das Schwert die Hauptwaffe; vgl.</hi> 30, 3</seg><seg type="translation" xml:lang="en" source="#claude">away from your body, endangered by the avengers of blood, or bear (i.e. suffer) the spear (i.e. the feud); when this proverb arose, the sword was not yet the chief weapon; cf. 30, 3</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_12-6.lnote.la.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">638</biblScope></bibl><seg type="original" xml:lang="de">osside <hi rend="italic">Hv;</hi> syde <hi rend="italic">Ph</hi></seg><seg type="translation" xml:lang="en" source="#claude">osside Hv; syde Ph</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_12-6.lnote.la.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">638</biblScope></bibl><seg type="original" xml:lang="de">ohthei <hi rend="italic">Lb Ra Kn;</hi> othei <hi rend="italic">Va;</hi> other <hi rend="italic">Hv K Co;</hi> ohther <hi rend="italic">Ph</hi></seg><seg type="translation" xml:lang="en" source="#claude">ohthei Lb Ra Kn; othei Va; other Hv K Co; ohther Ph</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_12-6.lnote.la.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">638</biblScope></bibl><seg type="original" xml:lang="de">elixe (<hi rend="italic">statt</hi> e latere?) <hi rend="italic">K Co</hi></seg><seg type="translation" xml:lang="en" source="#claude">elixe (instead of e latere?) K Co</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_12-6.lnote.la.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">638</biblScope></bibl><seg type="original" xml:lang="de">au <hi rend="italic">Va</hi></seg><seg type="translation" xml:lang="en" source="#claude">au Va</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

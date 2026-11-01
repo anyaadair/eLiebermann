@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECfRetr_22-1">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf retr 22.1</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECfRetr_22-1</idno>
+        <idno type="citation">ECf retr 22.1</idno>
+        <idno type="lawCode">ECf retr</idno>
+        <idno type="lawCodeAnchor">ECfRetr</idno>
+        <idno type="clause">22.1</idno>
+        <idno type="citationKey">ECfRetr 22.1</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris: retractatus</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">647</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>c. 1140–59 (Liebermann, I p. 627)</date><note type="promulgation">c. 1140–59 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="22.1">
+        <head><ref type="lawCode" target="law:ECfRetr">ECf retr</ref> 22.1</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf retr 22.1"><pb n="647" ed="#liebermann"/><ptr type="liebermannNote" n="31" target="#ECfRetr_22-1.lnote.la.31"/><hi rend="bold"><hi rend="spaced">Quid sit</hi></hi><ptr type="liebermannNote" n="32" target="#ECfRetr_22-1.lnote.la.32"/> <hi rend="bold"><hi rend="spaced">sacha</hi></hi><ptr type="liebermannNote" n="33" target="#ECfRetr_22-1.lnote.la.33"/><hi rend="bold"><hi rend="spaced">.</hi></hi> Sacha<ptr type="liebermannNote" n="34" target="#ECfRetr_22-1.lnote.la.34"/> <hi rend="bold">est</hi> quod, si qui<hi rend="bold">libet</hi><ptr type="liebermannNote" n="35" target="#ECfRetr_22-1.lnote.la.35"/> aliquem nominatim de aliquo calumniatus fuerit, et <hi rend="bold">ille</hi> negauerit, forisfactura probationis uel negationis, si euenerit, sua erit.</ab>
+        <note type="comparison" source="#liebermann" n="647"><label>printed alongside</label> <ref target="clause:ECf_22-1">ECf 22.1</ref></note>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 647 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page; the words in bold are the Retractator’s changes to ECf, as Liebermann prints them.</note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_22-1.lnote.la.31" n="31" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">647</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Retractator stellt</hi> 22, 1 <hi rend="italic">vor</hi> 22</seg><seg type="translation" xml:lang="en" source="#claude">the Retractator puts 22, 1 before 22</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_22-1.lnote.la.32" n="32" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">647</biblScope></bibl><seg type="original" xml:lang="de">est <hi rend="italic">Db</hi></seg><seg type="translation" xml:lang="en" source="#claude">est Db</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_22-1.lnote.la.33" n="33" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">647</biblScope></bibl><seg type="original" xml:lang="de">sacca <hi rend="italic">Hv;</hi> De sacha <hi rend="italic">Lond;</hi> soke et sake (soche et sache <hi rend="italic">S</hi>) et tol et theam (them <hi rend="italic">Pl</hi>) et infangenethef (infrangenehef <hi rend="italic">S</hi>) <hi rend="italic">Pl S</hi></seg><seg type="translation" xml:lang="en" source="#claude">sacca Hv; De sacha Lond; soke et sake (soche et sache S) et tol et theam (them Pl) et infangenethef (infrangenehef S) Pl S</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_22-1.lnote.la.34" n="34" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">647</biblScope></bibl><seg type="original" xml:lang="de">Sacca <hi rend="italic">Hv</hi></seg><seg type="translation" xml:lang="en" source="#claude">Sacca Hv</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_22-1.lnote.la.35" n="35" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">647</biblScope></bibl><seg type="original" xml:lang="de">quisl. n. a. <hi rend="italic">Hv</hi></seg><seg type="translation" xml:lang="en" source="#claude">quisl. n. a. Hv</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

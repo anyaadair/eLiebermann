@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECf_12-9">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf 12.9</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECf_12-9</idno>
+        <idno type="citation">ECf 12.9</idno>
+        <idno type="lawCode">ECf</idno>
+        <idno type="lawCodeAnchor">ECf</idno>
+        <idno type="clause">12.9</idno>
+        <idno type="citationKey">ECf 12.9</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">639</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>1115–50, probably 1130–35 (Liebermann, I p. 627)</date><note type="promulgation">1115–50, probably 1130–35 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="12.9">
+        <head><ref type="lawCode" target="law:ECf">ECf</ref> 12.9</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 12.9"><pb n="639" ed="#liebermann"/>Ceteri<ptr type="liebermannNote" n="f" target="#ECf_12-9.lnote.la.fn.f"/> chimini<ptr type="liebermannNote" n="22" target="#ECf_12-9.lnote.la.22"/> de ciuitatibus<ptr type="liebermannNote" n="23" target="#ECf_12-9.lnote.la.23"/> ad ciuitates<ptr type="liebermannNote" n="24" target="#ECf_12-9.lnote.la.24"/>, de burgis ad burgos, per quos homines uadunt<ptr type="liebermannNote" n="25" target="#ECf_12-9.lnote.la.25"/> ad mercata uel<ptr type="liebermannNote" n="26" target="#ECf_12-9.lnote.la.26"/> alia negotia sua<ptr type="liebermannNote" n="27" target="#ECf_12-9.lnote.la.27"/>, sub lege<ptr type="liebermannNote" n="g" target="#ECf_12-9.lnote.la.fn.g"/> comitatus sunt<ptr type="liebermannNote" n="28" target="#ECf_12-9.lnote.la.28"/>.</ab>
+        <note type="comparison" source="#liebermann" n="639"><label>printed alongside</label> <ref target="clause:ECfRetr_12-9">ECf retr 12.9</ref></note>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 639 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
+        <note type="editorial">Liebermann’s upright (roman) letter a after “comitatus” refers to his explanatory notes, the Erklärungen (printed as Gesetze III; his note on p. 627 calls it “Band II”), which are not yet added here.</note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_12-9.lnote.la.fn.f" n="f" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">639</biblScope></bibl><seg type="original" xml:lang="de">Hauptstrassen (minores <hi rend="italic">in Retr. und</hi> 12, 11), <hi rend="italic">ausgenommen die vier in</hi> 12c. 12, 7. <hi rend="italic">Auch Normannisches Recht scheidet Haupt- und Nebenstrassen; Pollock-Maitland</hi> HEL. II 453 (<hi rend="italic">letztere unterstehen dem Gutseigner bei den Angelsachsen: Kemble</hi> Saxons II 94). <hi rend="italic">Anders nennt</hi> Hn 80, 3 <hi rend="italic">jede zu Städten führende Strasse</hi> uia regia</seg><seg type="translation" xml:lang="en" source="#claude">main roads (minores in the Retr. and 12, 11), except the four in 12c. 12, 7. Norman law too distinguishes main and minor roads; Pollock–Maitland, HEL. II 453 (among the Anglo-Saxons the latter are subject to the owner of the estate: Kemble, Saxons II 94). Hn 80, 3, on the other hand, calls every road leading to towns uia regia</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_12-9.lnote.la.fn.g" n="g" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">639</biblScope></bibl><seg type="original" xml:lang="de">lex, iudicium: <hi rend="italic">Zuständigkeit und Ungehorsamsbusse</hi></seg><seg type="translation" xml:lang="en" source="#claude">lex, iudicium: jurisdiction and the fine for disobedience</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_12-9.lnote.la.22" n="22" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">639</biblScope></bibl><seg type="original" xml:lang="de">chem. <hi rend="italic">stets Ad</hi></seg><seg type="translation" xml:lang="en" source="#claude">chem. always Ad</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_12-9.lnote.la.23" n="23" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">639</biblScope></bibl><seg type="original" xml:lang="de">-tate <hi rend="italic">Rl S;</hi> communitate <hi rend="italic">Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">-tate Rl S; communitate Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_12-9.lnote.la.24" n="24" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">639</biblScope></bibl><seg type="original" xml:lang="de">-tatem <hi rend="italic">Ad;</hi> uniuersitatem <hi rend="italic">Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">-tatem Ad; uniuersitatem Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_12-9.lnote.la.25" n="25" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">639</biblScope></bibl><seg type="original" xml:lang="de">uadant <hi rend="italic">Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">uadant Hr</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_12-9.lnote.la.26" n="26" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">639</biblScope></bibl><seg type="original" xml:lang="de">ad <hi rend="italic">fügt zu Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">Do adds ad</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_12-9.lnote.la.27" n="27" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">639</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_12-9.lnote.la.28" n="28" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">639</biblScope></bibl><seg type="original" xml:lang="de">sint <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">sint Hk</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

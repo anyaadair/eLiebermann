@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECf_24-2">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf 24.2</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECf_24-2</idno>
+        <idno type="citation">ECf 24.2</idno>
+        <idno type="lawCode">ECf</idno>
+        <idno type="lawCodeAnchor">ECf</idno>
+        <idno type="clause">24.2</idno>
+        <idno type="citationKey">ECf 24.2</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">649</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>1115–50, probably 1130–35 (Liebermann, I p. 627)</date><note type="promulgation">1115–50, probably 1130–35 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="24.2">
+        <head><ref type="lawCode" target="law:ECf">ECf</ref> 24.2</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 24.2"><pb n="649" ed="#liebermann"/>Et post<ptr type="liebermannNote" n="34" target="#ECf_24-2.lnote.la.34"/> testimonium<ptr type="liebermannNote" n="35" target="#ECf_24-2.lnote.la.35"/> ipsorum prefectus, de cuius dominio inuentor est, custodiat inuentum<ptr type="liebermannNote" n="36" target="#ECf_24-2.lnote.la.36"/> usque in crastinum diem; et in crastino die<ptr type="liebermannNote" n="15" target="#ECf_24-2.lnote.la.15"/> cum aliquibus<ptr type="liebermannNote" n="37" target="#ECf_24-2.lnote.la.37"/> uicinis suis, qui inuentum uideant<ptr type="liebermannNote" n="38" target="#ECf_24-2.lnote.la.38"/>, eat<ptr type="liebermannNote" n="39" target="#ECf_24-2.lnote.la.39"/> ad prefectum hundredi<ptr type="liebermannNote" n="i" target="#ECf_24-2.lnote.la.fn.i"/>, in quo sua<ptr type="liebermannNote" n="40" target="#ECf_24-2.lnote.la.40"/> uilla est, et ostendat ei<ptr type="liebermannNote" n="41" target="#ECf_24-2.lnote.la.41"/> totum.</ab>
+        <note type="comparison" source="#liebermann" n="649"><label>printed alongside</label> <ref target="clause:ECfRetr_24-2">ECf retr 24.2</ref></note>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 649 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
+        <note type="editorial">Liebermann’s upright (roman) letter a after “hundredi” refers to his explanatory notes, the Erklärungen (printed as Gesetze III; his note on p. 627 calls it “Band II”), which are not yet added here.</note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_24-2.lnote.la.fn.i" n="i" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">649</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vgl. mein</hi> Über Edw. Conf. <hi rend="italic">S.</hi> 64</seg><seg type="translation" xml:lang="en" source="#claude">cf. my Über Edw. Conf. p. 64</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_24-2.lnote.la.34" n="34" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">649</biblScope></bibl><seg type="original" xml:lang="de">postea <hi rend="italic">Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">postea Hr</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_24-2.lnote.la.35" n="35" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">649</biblScope></bibl><seg type="original" xml:lang="de">-nio <hi rend="italic">S;</hi> -nio illorum p. domini, cu. i. <hi rend="italic">statt</hi> de c. do. <hi rend="italic">Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">-nio S; -nio illorum p. domini, cu. i. instead of de c. do. Ad Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_24-2.lnote.la.36" n="36" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">649</biblScope></bibl><seg type="original" xml:lang="de">-ntionem <hi rend="italic">Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">-ntionem Ad Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_24-2.lnote.la.15" n="15" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">649</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Ad Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_24-2.lnote.la.37" n="37" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">649</biblScope></bibl><seg type="original" xml:lang="de">de <hi rend="italic">fügt zu Hr Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">Hr Ad Do add de</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_24-2.lnote.la.38" n="38" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">649</biblScope></bibl><seg type="original" xml:lang="de">uiderunt <hi rend="italic">Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">uiderunt Ad Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_24-2.lnote.la.39" n="39" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">649</biblScope></bibl><seg type="original" xml:lang="de">eant <hi rend="italic">S</hi></seg><seg type="translation" xml:lang="en" source="#claude">eant S</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_24-2.lnote.la.40" n="40" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">649</biblScope></bibl><seg type="original" xml:lang="de">u. s. <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">u. s. Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_24-2.lnote.la.41" n="41" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">649</biblScope></bibl><seg type="original" xml:lang="de">illi <hi rend="italic">S</hi></seg><seg type="translation" xml:lang="en" source="#claude">illi S</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECf_20">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf 20</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECf_20</idno>
+        <idno type="citation">ECf 20</idno>
+        <idno type="lawCode">ECf</idno>
+        <idno type="lawCodeAnchor">ECf</idno>
+        <idno type="clause">20</idno>
+        <idno type="citationKey">ECf 20</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">645</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>1115–50, probably 1130–35 (Liebermann, I p. 627)</date><note type="promulgation">1115–50, probably 1130–35 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="20">
+        <head><ref type="lawCode" target="law:ECf">ECf</ref> 20</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 20"><pb n="645" ed="#liebermann"/><ptr type="liebermannNote" n="10" target="#ECf_20.lnote.la.10"/>Alia est<ptr type="liebermannNote" n="11" target="#ECf_20.lnote.la.11"/> pax maxima, per quam omnes<ptr type="liebermannNote" n="c" target="#ECf_20.lnote.la.fn.c"/> firmiori statu sustentantur<ptr type="liebermannNote" n="12" target="#ECf_20.lnote.la.12"/>, scilicet sub<ptr type="liebermannNote" n="13" target="#ECf_20.lnote.la.13"/> fideiussionis stabilitate, quam Angli<ptr type="liebermannNote" n="d" target="#ECf_20.lnote.la.fn.d"/> uocant <ptr type="liebermannNote" n="e" target="#ECf_20.lnote.la.fn.e"/>friborgas<ptr type="liebermannNote" n="14" target="#ECf_20.lnote.la.14"/>, preter Eboracenses<ptr type="liebermannNote" n="f" target="#ECf_20.lnote.la.fn.f"/>, qui uocant eam tyen<ptr type="liebermannNote" n="15" target="#ECf_20.lnote.la.15"/> manna<ptr type="liebermannNote" n="16" target="#ECf_20.lnote.la.16"/> tale, hoc est numerum<ptr type="liebermannNote" n="g" target="#ECf_20.lnote.la.fn.g"/> X hominum.</ab>
+        <note type="comparison" source="#liebermann" n="645"><label>printed alongside</label> <ref target="clause:ECfRetr_20">ECf retr 20</ref></note>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 645 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
+        <note type="editorial">Liebermann’s upright (roman) letter a after “fideiussionis” refers to his explanatory notes, the Erklärungen (printed as Gesetze III; his note on p. 627 calls it “Band II”), which are not yet added here.</note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_20.lnote.la.fn.c" n="c" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">645</biblScope></bibl><seg type="original" xml:lang="de">Hochfreie, Kleriker, Sklaven u. v. a. <hi rend="italic">standen aussen</hi></seg><seg type="translation" xml:lang="en" source="#claude">the high-born free, clergy, slaves and many others stood outside</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_20.lnote.la.fn.d" n="d" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">645</biblScope></bibl><seg type="original" xml:lang="de">heute Englisch Redende; <hi rend="italic">nicht</hi> Angelsachsen vor 1066</seg><seg type="translation" xml:lang="en" source="#claude">those speaking English today; not Anglo-Saxons before 1066</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_20.lnote.la.fn.e" n="e" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">645</biblScope></bibl><seg type="original" xml:lang="de">friborg <hi rend="italic">entspricht</hi> francum plegium; <hi rend="italic">seit Mitte</hi> 12. <hi rend="italic">Jhs. begegnet daneben</hi> friðborh, <hi rend="italic">erklärbar durch das Verstummen auslautender Dentale im Französischen;</hi> pacem <hi rend="italic">bezweckt die Einrichtung auch nach Wil. Malm.</hi> Reg. II 122; <hi rend="italic">vgl. mein</hi> Über Ed. Conf. <hi rend="italic">S.</hi> 28—31; 79—82</seg><seg type="translation" xml:lang="en" source="#claude">friborg corresponds to francum plegium; from the middle of the 12th century friðborh also occurs, explicable by the silencing of final dentals in French; the institution aims at pacem according to Wil. Malm., Reg. II 122, too; cf. my Über Ed. Conf. pp. 28–31; 79–82</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_20.lnote.la.fn.f" n="f" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">645</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vielleicht</hi> die im Erzbisthum York, <hi rend="italic">also</hi> Northumbrer</seg><seg type="translation" xml:lang="en" source="#claude">perhaps those in the archdiocese of York, so Northumbrians</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_20.lnote.la.fn.g" n="g" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">645</biblScope></bibl><seg type="original" xml:lang="de">computationem <hi rend="italic">übersetzt</hi> Registr. Richmond. <hi rend="italic">ed. Gale</hi> 22; sermo <hi rend="italic">ist Irrthum des zweiten Rubricators zur Retr.</hi></seg><seg type="translation" xml:lang="en" source="#claude">Registr. Richmond., ed. Gale 22, translates computationem; sermo is an error of the second Rubricator to the Retr.</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_20.lnote.la.10" n="10" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">645</biblScope></bibl><seg type="original" xml:lang="de">De fridborgis <hi rend="italic">überschreibt Cl;</hi> De pace quod dicitur frithborwis <hi rend="italic">Hr; Überschrift fehlt übr.;</hi> fridb. <hi rend="italic">stets Cl, meist S;</hi> frithb. <hi rend="italic">stets Pl</hi></seg><seg type="translation" xml:lang="en" source="#claude">Cl heads it De fridborgis; De pace quod dicitur frithborwis Hr; no heading in the others; fridb. always Cl, mostly S; frithb. always Pl</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_20.lnote.la.11" n="11" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">645</biblScope></bibl><seg type="original" xml:lang="de">p. m. est <hi rend="italic">Hk S;</hi> p. e. <hi rend="italic">Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">p. m. est Hk S; p. e. Ad Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_20.lnote.la.12" n="12" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">645</biblScope></bibl><seg type="original" xml:lang="de">-tatur <hi rend="italic">Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">-tatur Hr</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_20.lnote.la.13" n="13" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">645</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Hk S</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Hk S</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_20.lnote.la.14" n="14" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">645</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">so Hk;</hi> -ghas <hi rend="italic">Rl;</hi> fridb. <hi rend="italic">S;</hi> friþborges <hi rend="italic">Ad;</hi> fridburgages <hi rend="italic">Cl</hi></seg><seg type="translation" xml:lang="en" source="#claude">so Hk; -ghas Rl; fridb. S; friþborges Ad; fridburgages Cl</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_20.lnote.la.15" n="15" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">645</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">so Rl;</hi> then <hi rend="italic">S;</hi> ten <hi rend="italic">Hk Hr Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">so Rl; then S; ten Hk Hr Ad Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_20.lnote.la.16" n="16" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">645</biblScope></bibl><seg type="original" xml:lang="de">-ne <hi rend="italic">Hk Ad;</hi> mane <hi rend="italic">S</hi></seg><seg type="translation" xml:lang="en" source="#claude">-ne Hk Ad; mane S</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

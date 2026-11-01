@@ -19,6 +19,7 @@
     <encodingDesc>
       <listPrefixDef>
         <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
         <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
         <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
       </listPrefixDef>
@@ -37,7 +38,7 @@
         <xr type="compare"><ref target="entry:hand">hand</ref></xr>
         <xr type="compare"><ref target="entry:windfylled">windfylled</ref></xr>
         <xr type="compare"><ref target="entry:handgrid">handgrið</ref></xr>
-        <xr type="lawCode"><ref target="law:ECf">ECf 12</ref></xr>
+        <xr type="lawCode"><ref target="clause:ECf_12">ECf 12</ref></xr>
       </entry>
     </body>
   </text>

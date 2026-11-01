@@ -15,7 +15,7 @@ CLAUSES = [
  {'code': 'ECf', 'n': 'Inscr.', 'page': 627,
   'text': '{f:a}[Leges{f:b} Edwardi Confessoris.]',
   'notes': {'f:a': FN_A, 'f:b': FN_B},
-  'editorial': [UPRIGHT_A.format(w='Edwardi'), 'Liebermann prints this title in square brackets: it is his, not the manuscripts’ (see his note b).']},
+  'erkl': ['Edwardi'], 'editorial': ['Liebermann prints this title in square brackets: it is his, not the manuscripts’ (see his note b).']},
  {'code': 'ECf', 'n': 'Prol.', 'page': 627,
   'text': '{f:c}Post quartum annum{f:d} adquisitionis regis Willelmi istius{1} terre{2}, consilio baronum suorum fecit submoniri{3} per uniuersos{4} patrie{5} comitatus Anglos{6} nobiles{7}, sapientes{f:e} et{8} lege sua{9} eruditos{f:f}, ut eorum consuetudines ab ipsis{10} audiret{11}.',
   'notes': {
@@ -35,7 +35,7 @@ CLAUSES = [
    10: ('eis <i>Ad Do Wo Ck No Ed</i>', 'eis Ad Do Wo Ck No Ed'),
    11: ('erud. <i>No</i>', 'erud. No'),
   },
-  'editorial': [UPRIGHT_A.format(w='Post')]},
+  'erkl': ['Post']},
  {'code': 'ECf', 'n': 'Prol. 1', 'page': 627, 'keys': ['ECf Prol. 1', 'ECf Prol 1'],
   'text': 'Electis{12} igitur de singulis{f:g} totius{14} patrie comitatibus{f:h} duodecim, iureiurando inprimis coram{15} eo sanxerunt, ut quoad possent, recto tramite incedentes, legum suarum ac{16} consuetudinum sancita{17} edicerent, nil{18} pretermittentes{19}, nil{20} preuaricando commutantes{21}{*}.',
   'notes': {
@@ -52,7 +52,7 @@ CLAUSES = [
    21: ('<i>so Cl;</i> comu. <i>Hr;</i> committentes <i>Rl;</i> mut. <i>Pl S;</i> comitatus <i>übr.</i>', 'so Cl; comu. Hr; committentes Rl; mut. Pl S; comitatus the others'),
    '*': FN_STAR,
   },
-  'editorial': [UPRIGHT_A.format(w='duodecim'), 'There is no note 13 on this page: after note 12 Liebermann’s numbering goes on at 14, and “singulis” carries his footnote g.']},
+  'erkl': ['duodecim'], 'editorial': ['There is no note 13 on this page: after note 12 Liebermann’s numbering goes on at 14, and “singulis” carries his footnote g.']},
 
  {'code': 'ECfRetr', 'n': 'Inscr.', 'page': 627,
   'text': '<b>Incipiunt{1} leges{2} Edwardi regis{4}, quas{5} Willelmus{6} postea confirmauit{7} (in{8} Anglia).</b>',

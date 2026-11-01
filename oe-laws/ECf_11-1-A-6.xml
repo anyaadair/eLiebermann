@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECf_11-1-A-6">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf 11.1 A 6</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECf_11-1-A-6</idno>
+        <idno type="citation">ECf 11.1 A 6</idno>
+        <idno type="lawCode">ECf</idno>
+        <idno type="lawCodeAnchor">ECf</idno>
+        <idno type="clause">11.1 A 6</idno>
+        <idno type="citationKey">ECf 11.1 A 6</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">635</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>1115–50, probably 1130–35 (Liebermann, I p. 627)</date><note type="promulgation">1115–50, probably 1130–35 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="11.1 A 6">
+        <head><ref type="lawCode" target="law:ECf">ECf</ref> 11.1 A 6</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 11.1 A 6"><pb n="635" ed="#liebermann"/>Debet etiam rex omnia rite facere in regno et per iudicium procerum regni<ptr type="liebermannNote" n="h" target="#ECf_11-1-A-6.lnote.la.fn.h"/>. Debet enim ius et iustitia magis regnare in regno quam uoluntas praua; lex<ptr type="liebermannNote" n="i" target="#ECf_11-1-A-6.lnote.la.fn.i"/> est semper quod ius facit<ptr type="liebermannNote" n="17" target="#ECf_11-1-A-6.lnote.la.17"/>; uoluntas uero<ptr type="liebermannNote" n="11" target="#ECf_11-1-A-6.lnote.la.11"/> et uiolentia et uis non est ius.</ab>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 635 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
+        <note type="editorial">This passage is not part of ECf or ECf retr: it is one of the additions of the London collection (Leges Anglorum s. XIII in. Londoniis collectae), which Liebermann prints in smaller type across the page, under ECf retr. 11, 1, and numbers 11, 1 A ff. The dictionary cites it as “ECf 11, 1 A …”, so it is kept with ECf here.</note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_11-1-A-6.lnote.la.fn.h" n="h" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">635</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vgl.</hi> 11, 1 A 8. B 2; <hi rend="italic">dass Adel mitregiere und mitrichte, ohne Willkür der Krone, fordert</hi> Lond <hi rend="italic">auch sonst: ebd. S.</hi> 54. 99. <hi rend="italic">Die Französische Eidesformel in Anm.</hi> c <hi rend="italic">spricht von den Gesetzen,</hi> que les gentes de people averont faitz, <hi rend="italic">entzieht also der Krone die Gesetzgebung noch mehr</hi></seg><seg type="translation" xml:lang="en" source="#claude">cf. 11, 1 A 8. B 2; Lond elsewhere too demands that the nobility share in ruling and judging, without arbitrariness on the part of the Crown: ibid. pp. 54. 99. The French form of oath in note c speaks of the laws que les gentes de people averont faitz, so withdraws legislation from the Crown still further</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_11-1-A-6.lnote.la.fn.i" n="i" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">635</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vielleicht im Widerspruch zu Sätzen der Absolutie Justinians, die Heinrichs II. Kronjuristen gedient hatten; vgl. ebd. S.</hi> 42</seg><seg type="translation" xml:lang="en" source="#claude">perhaps in contradiction of the tenets of Justinian’s absolutism, which had served the Crown lawyers of Henry II; cf. ibid. p. 42</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_11-1-A-6.lnote.la.17" n="17" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">635</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">so Ld Ce;</hi> faciat <hi rend="italic">übr.</hi></seg><seg type="translation" xml:lang="en" source="#claude">so Ld Ce; faciat the others</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_11-1-A-6.lnote.la.11" n="11" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">635</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">so Ce;</hi> autem <hi rend="italic">Ld;</hi> enim <hi rend="italic">übr.</hi></seg><seg type="translation" xml:lang="en" source="#claude">so Ce; autem Ld; enim the others</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

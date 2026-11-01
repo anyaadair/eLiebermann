@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECf_21">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf 21</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECf_21</idno>
+        <idno type="citation">ECf 21</idno>
+        <idno type="lawCode">ECf</idno>
+        <idno type="lawCodeAnchor">ECf</idno>
+        <idno type="clause">21</idno>
+        <idno type="citationKey">ECf 21</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">647</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>1115–50, probably 1130–35 (Liebermann, I p. 627)</date><note type="promulgation">1115–50, probably 1130–35 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="21">
+        <head><ref type="lawCode" target="law:ECf">ECf</ref> 21</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 21"><pb n="647" ed="#liebermann"/>Barones etiam<ptr type="liebermannNote" n="1" target="#ECf_21.lnote.la.1"/> milites suos et proprios<ptr type="liebermannNote" n="2" target="#ECf_21.lnote.la.2"/> seruientes suos, scilicet dapiferos, pincernas, camerarios, cocos, pistores<ptr type="liebermannNote" n="3" target="#ECf_21.lnote.la.3"/>, sub suo<ptr type="liebermannNote" n="4" target="#ECf_21.lnote.la.4"/> friborgo<ptr type="liebermannNote" n="5" target="#ECf_21.lnote.la.5"/> habebant<ptr type="liebermannNote" n="6" target="#ECf_21.lnote.la.6"/>; et<ptr type="liebermannNote" n="7" target="#ECf_21.lnote.la.7"/> ipsi suos armigeros uel<ptr type="liebermannNote" n="8" target="#ECf_21.lnote.la.8"/> alios seruientes suos sub suo<ptr type="liebermannNote" n="9" target="#ECf_21.lnote.la.9"/> friborgo<ptr type="liebermannNote" n="10" target="#ECf_21.lnote.la.10"/>.</ab>
+        <note type="comparison" source="#liebermann" n="647"><label>printed alongside</label> <ref target="clause:ECfRetr_21">ECf retr 21</ref></note>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 647 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
+        <note type="editorial">Liebermann’s upright (roman) letter a after “Barones”, “milites” refers to his explanatory notes, the Erklärungen (printed as Gesetze III; his note on p. 627 calls it “Band II”), which are not yet added here.</note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_21.lnote.la.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">647</biblScope></bibl><seg type="original" xml:lang="de">et. milites, mil. su. <hi rend="italic">S; fehlt Ad Do Wo;</hi> et. m. s. et <hi rend="italic">fehlt Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">et. milites, mil. su. S; lacking in Ad Do Wo; et. m. s. et lacking in Hr</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_21.lnote.la.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">647</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Ad Do Wo</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Ad Do Wo</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_21.lnote.la.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">647</biblScope></bibl><seg type="original" xml:lang="de">et alios <hi rend="italic">fügt zu Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">Ad Do add et alios</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_21.lnote.la.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">647</biblScope></bibl><seg type="original" xml:lang="de">una <hi rend="italic">Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">una Ad Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_21.lnote.la.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">647</biblScope></bibl><seg type="original" xml:lang="de">-gho <hi rend="italic">Rl;</hi> fridb. <hi rend="italic">S;</hi> friþborga <hi rend="italic">Ad</hi></seg><seg type="translation" xml:lang="en" source="#claude">-gho Rl; fridb. S; friþborga Ad</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_21.lnote.la.6" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">647</biblScope></bibl><seg type="original" xml:lang="de">habeant <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">habeant Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_21.lnote.la.7" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">647</biblScope></bibl><seg type="original" xml:lang="de">et—friborgo <hi rend="italic">fehlt Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">et—friborgo lacking in Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_21.lnote.la.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">647</biblScope></bibl><seg type="original" xml:lang="de">et <hi rend="italic">Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">et Hr</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_21.lnote.la.9" n="9" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">647</biblScope></bibl><seg type="original" xml:lang="de">una friþborga <hi rend="italic">Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">una friþborga Ad Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_21.lnote.la.10" n="10" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">647</biblScope></bibl><seg type="original" xml:lang="de">-gho <hi rend="italic">Rl;</hi> fridb. <hi rend="italic">S</hi></seg><seg type="translation" xml:lang="en" source="#claude">-gho Rl; fridb. S</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

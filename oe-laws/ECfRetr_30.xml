@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECfRetr_30">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf retr 30</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECfRetr_30</idno>
+        <idno type="citation">ECf retr 30</idno>
+        <idno type="lawCode">ECf retr</idno>
+        <idno type="lawCodeAnchor">ECfRetr</idno>
+        <idno type="clause">30</idno>
+        <idno type="citationKey">ECfRetr 30</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris: retractatus</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">652</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>c. 1140–59 (Liebermann, I p. 627)</date><note type="promulgation">c. 1140–59 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="30">
+        <head><ref type="lawCode" target="law:ECfRetr">ECf retr</ref> 30</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf retr 30"><pb n="652" ed="#liebermann"/><hi rend="bold"><hi rend="spaced">De</hi></hi><ptr type="liebermannNote" n="21" target="#ECfRetr_30.lnote.la.21"/> <hi rend="bold"><hi rend="spaced">hundredis et wapentagiis</hi></hi><ptr type="liebermannNote" n="22" target="#ECfRetr_30.lnote.la.22"/><hi rend="bold"><hi rend="spaced">, et quare wapentac uocatur. (Quid sit wapentagium, et qualiter se agebant qui wapentagium accipiebant.)</hi></hi> Euerwichescire<ptr type="liebermannNote" n="23" target="#ECfRetr_30.lnote.la.23"/>, Nicolescire<ptr type="liebermannNote" n="24" target="#ECfRetr_30.lnote.la.24"/>, Notingehamscire<ptr type="liebermannNote" n="25" target="#ECfRetr_30.lnote.la.25"/>, Leircestrescire<ptr type="liebermannNote" n="26" target="#ECfRetr_30.lnote.la.26"/>, Norhamtunescire<ptr type="liebermannNote" n="27" target="#ECfRetr_30.lnote.la.27"/>, usque<ptr type="liebermannNote" n="28" target="#ECfRetr_30.lnote.la.28"/> ad Watlingestret<ptr type="liebermannNote" n="29" target="#ECfRetr_30.lnote.la.29"/> et VIII <hi rend="bold">(miliaria</hi><ptr type="liebermannNote" n="30" target="#ECfRetr_30.lnote.la.30"/><hi rend="bold">)</hi> ultra Watlingastret<ptr type="liebermannNote" n="31" target="#ECfRetr_30.lnote.la.31"/> sub lege Anglorum.</ab>
+        <note type="comparison" source="#liebermann" n="652"><label>printed alongside</label> <ref target="clause:ECf_30">ECf 30</ref></note>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 652 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page; the words in bold are the Retractator’s changes to ECf, as Liebermann prints them.</note>
+        <note type="editorial">Liebermann’s footnote e (Anglorum for Danorum) is printed under the ECf column; it is given here in part.</note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECfRetr_30.lnote.la.fn.e" n="e" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">652</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">bessere</hi> Danorum: <hi rend="italic">Verf. meint</hi> Denalagu.</seg><seg type="translation" xml:lang="en" source="#claude">read Danorum: the author means the Danelaw.</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_30.lnote.la.21" n="21" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">652</biblScope></bibl><seg type="original" xml:lang="de">De—uoc. <hi rend="italic">Pl S; nur</hi> De h. et w. <hi rend="italic">Lond;</hi> Quid—accip. <hi rend="italic">Lb Va Hv;</hi> Quid fatiebant magistratibus suis <hi rend="italic">Cb;</hi> De lege Anglorum et quid faciebant qui wapentagium accipiebant <hi rend="italic">Db</hi></seg><seg type="translation" xml:lang="en" source="#claude">De—uoc. Pl S; only De h. et w. Lond; Quid—accip. Lb Va Hv; Quid fatiebant magistratibus suis Cb; De lege Anglorum et quid faciebant qui wapentagium accipiebant Db</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_30.lnote.la.22" n="22" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">652</biblScope></bibl><seg type="original" xml:lang="de">-achiis <hi rend="italic">Pl K</hi></seg><seg type="translation" xml:lang="en" source="#claude">-achiis Pl K</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_30.lnote.la.23" n="23" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">652</biblScope></bibl><seg type="original" xml:lang="de">Warewichschire <hi rend="italic">Hv;</hi> Warewych(-wike <hi rend="italic">Co;</hi> Warrewyk- <hi rend="italic">Or</hi>)schire <hi rend="italic">Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">Warewichschire Hv; Warewych(-wike Co; Warrewyk- Or)schire Lond</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_30.lnote.la.24" n="24" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">652</biblScope></bibl><seg type="original" xml:lang="de">Lincolneschire <hi rend="italic">Hv;</hi> Nicho. <hi rend="italic">Va</hi></seg><seg type="translation" xml:lang="en" source="#claude">Lincolneschire Hv; Nicho. Va</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_30.lnote.la.25" n="25" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">652</biblScope></bibl><seg type="original" xml:lang="de">-ghamschire <hi rend="italic">Hv Lond;</hi> -ghamscire <hi rend="italic">Va</hi></seg><seg type="translation" xml:lang="en" source="#claude">-ghamschire Hv Lond; -ghamscire Va</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_30.lnote.la.26" n="26" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">652</biblScope></bibl><seg type="original" xml:lang="de">-schire <hi rend="italic">Hv;</hi> Leic. <hi rend="italic">Cb Va;</hi> Leycestreschire <hi rend="italic">K Co</hi></seg><seg type="translation" xml:lang="en" source="#claude">-schire Hv; Leic. Cb Va; Leycestreschire K Co</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_30.lnote.la.27" n="27" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">652</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Hv Ph;</hi> -amptoneschire <hi rend="italic">K</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Hv Ph; -amptoneschire K</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_30.lnote.la.28" n="28" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">652</biblScope></bibl><seg type="original" xml:lang="de">ultra W. <hi rend="italic">Co</hi></seg><seg type="translation" xml:lang="en" source="#claude">ultra W. Co</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_30.lnote.la.29" n="29" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">652</biblScope></bibl><seg type="original" xml:lang="de">Wathl. <hi rend="italic">Hv;</hi> Wal. <hi rend="italic">Va;</hi> -strete <hi rend="italic">Lb Hv K</hi></seg><seg type="translation" xml:lang="en" source="#claude">Wathl. Hv; Wal. Va; -strete Lb Hv K</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_30.lnote.la.30" n="30" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">652</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">so falsch Lb Va Ph Hv Db; fehlt Cb Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">so, wrongly, Lb Va Ph Hv Db; lacking in Cb Lond</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_30.lnote.la.31" n="31" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">652</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">so Cb;</hi> -ges. <hi rend="italic">übrige;</hi> Wathl. <hi rend="italic">Hv;</hi> Wal. <hi rend="italic">Va;</hi> -strete <hi rend="italic">Hv Va;</hi> Wadi. <hi rend="italic">K;</hi> Walengestrete <hi rend="italic">Ph</hi></seg><seg type="translation" xml:lang="en" source="#claude">so Cb; -ges. the others; Wathl. Hv; Wal. Va; -strete Hv Va; Wadi. K; Walengestrete Ph</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

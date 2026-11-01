@@ -52,14 +52,17 @@
         <xr type="lawCode"><ref target="clause:IIIEm_6">III Em 6</ref></xr>
         <xr type="lawCode"><ref target="clause:AsAlm_2">As Alm 2</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_69-1">II Cn 69,1</ref></xr>
-        <xr type="lawCode"><ref target="law:ECf">ECf 15</ref></xr>
-        <xr type="lawCode" rend="range-from:ECf 15"><ref target="law:ECf">ECf 15,4</ref></xr>
+        <xr type="lawCode"><ref target="clause:ECf_15">ECf 15</ref></xr>
+        <xr type="lawCode" subtype="range"><ref target="clause:ECf_15-1">ECf 15,1</ref></xr>
+        <xr type="lawCode" subtype="range"><ref target="clause:ECf_15-2">ECf 15,2</ref></xr>
+        <xr type="lawCode" subtype="range"><ref target="clause:ECf_15-3">ECf 15,3</ref></xr>
+        <xr type="lawCode" rend="range-from:ECf 15"><ref target="clause:ECf_15-4">ECf 15,4</ref></xr>
         <xr type="lawCode"><ref target="clause:HnLond_12">Hn Lond 12</ref></xr>
-        <xr type="lawCode"><ref target="law:ECf">ECf 18,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:ECf_18-1">ECf 18,1</ref></xr>
         <xr type="lawCode"><ref target="clause:Hn_7-7">Hn 7,7</ref></xr>
         <xr type="lawCode"><ref target="clause:LeisWl_6">Leis Wl 6</ref></xr>
         <xr type="lawCode"><ref target="clause:Hn_83-6a">Hn 83,6a</ref></xr>
-        <xr type="lawCode"><ref target="law:ECf">ECf 20,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:ECf_20-1">ECf 20,1</ref></xr>
       </entry>
     </body>
   </text>

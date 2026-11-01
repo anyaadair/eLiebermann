@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECf_6a">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf 6a</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECf_6a</idno>
+        <idno type="citation">ECf 6a</idno>
+        <idno type="lawCode">ECf</idno>
+        <idno type="lawCodeAnchor">ECf</idno>
+        <idno type="clause">6a</idno>
+        <idno type="citationKey">ECf 6a</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">631</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>1115–50, probably 1130–35 (Liebermann, I p. 627)</date><note type="promulgation">1115–50, probably 1130–35 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="6a">
+        <head><ref type="lawCode" target="law:ECf">ECf</ref> 6a</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 6a"><pb n="631" ed="#liebermann"/>Et si<ptr type="liebermannNote" n="9" target="#ECf_6a.lnote.la.9"/> eorum<ptr type="liebermannNote" n="10" target="#ECf_6a.lnote.la.10"/> sententiam<ptr type="liebermannNote" n="d" target="#ECf_6a.lnote.la.fn.d"/><ptr type="liebermannNote" n="11" target="#ECf_6a.lnote.la.11"/> defugiendo<ptr type="liebermannNote" n="12" target="#ECf_6a.lnote.la.12"/> uel superbe<ptr type="liebermannNote" n="e" target="#ECf_6a.lnote.la.fn.e"/><ptr type="liebermannNote" n="13" target="#ECf_6a.lnote.la.13"/> contempnendo paruipenderit, ad regem<ptr type="liebermannNote" n="f" target="#ECf_6a.lnote.la.fn.f"/> de eo clamor<ptr type="liebermannNote" n="14" target="#ECf_6a.lnote.la.14"/> deferetur post dies XL; et iusticia<ptr type="liebermannNote" n="e" target="#ECf_6a.lnote.la.fn.e"/> regis mittet<ptr type="liebermannNote" n="15" target="#ECf_6a.lnote.la.15"/> eum per uadimonium<ptr type="liebermannNote" n="g" target="#ECf_6a.lnote.la.fn.g"/><ptr type="liebermannNote" n="16" target="#ECf_6a.lnote.la.16"/> et per<ptr type="liebermannNote" n="17" target="#ECf_6a.lnote.la.17"/> plegios<ptr type="liebermannNote" n="18" target="#ECf_6a.lnote.la.18"/>, si habere poterit<ptr type="liebermannNote" n="19" target="#ECf_6a.lnote.la.19"/>, usque dum Deo primitus<ptr type="liebermannNote" n="h" target="#ECf_6a.lnote.la.fn.h"/> et regi<ptr type="liebermannNote" n="20" target="#ECf_6a.lnote.la.20"/> postea<ptr type="liebermannNote" n="21" target="#ECf_6a.lnote.la.21"/> satisfaciat.</ab>
+        <note type="comparison" source="#liebermann" n="631"><label>printed alongside</label> <ref target="clause:ECfRetr_6a">ECf retr 6a</ref></note>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 631 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
+        <note type="editorial">Liebermann’s upright (roman) letter a after “satisfaciat” refers to his explanatory notes, the Erklärungen (printed as Gesetze III; his note on p. 627 calls it “Band II”), which are not yet added here.</note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_6a.lnote.la.fn.d" n="d" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">631</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Excommunication; vgl.</hi> Const. Clarendon. 10</seg><seg type="translation" xml:lang="en" source="#claude">excommunication; cf. Const. Clarendon. 10</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_6a.lnote.la.fn.e" n="e" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">631</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">diese Wörter vielleicht aus</hi> Wl episc.; <hi rend="italic">vgl. o. S.</hi> 629<hi rend="italic">b</hi></seg><seg type="translation" xml:lang="en" source="#claude">these words perhaps from Wl episc.; cf. above, p. 629, note b</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_6a.lnote.la.fn.f" n="f" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">631</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vgl.</hi> 2, 9. 10, 2</seg><seg type="translation" xml:lang="en" source="#claude">cf. 2, 9. 10, 2</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_6a.lnote.la.fn.g" n="g" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">631</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vgl.</hi> 36</seg><seg type="translation" xml:lang="en" source="#claude">cf. 36</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_6a.lnote.la.fn.h" n="h" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">631</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vgl.</hi> 2, 9a <hi rend="italic">Retr.</hi></seg><seg type="translation" xml:lang="en" source="#claude">cf. 2, 9a Retr.</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_6a.lnote.la.9" n="9" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">631</biblScope></bibl><seg type="original" xml:lang="de">quis <hi rend="italic">fügt zu Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">Hk adds quis</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_6a.lnote.la.10" n="10" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">631</biblScope></bibl><seg type="original" xml:lang="de">eius <hi rend="italic">Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">eius Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_6a.lnote.la.11" n="11" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">631</biblScope></bibl><seg type="original" xml:lang="de">-nci., <hi rend="italic">meist</hi> c <hi rend="italic">statt</hi> t <hi rend="italic">vor</hi> i + <hi rend="italic">Vocal Rl</hi></seg><seg type="translation" xml:lang="en" source="#claude">-nci., mostly c for t before i + vowel Rl</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_6a.lnote.la.12" n="12" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">631</biblScope></bibl><seg type="original" xml:lang="de">diffug. <hi rend="italic">Hr;</hi> cont. uel def. <hi rend="italic">Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">diffug. Hr; cont. uel def. Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_6a.lnote.la.13" n="13" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">631</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Ad Do No</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Ad Do No</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_6a.lnote.la.14" n="14" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">631</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Ad</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Ad</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_6a.lnote.la.15" n="15" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">631</biblScope></bibl><seg type="original" xml:lang="de">adm. <hi rend="italic">Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">adm. Ad Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_6a.lnote.la.16" n="16" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">631</biblScope></bibl><seg type="original" xml:lang="de">uadium <hi rend="italic">Hk Ad</hi></seg><seg type="translation" xml:lang="en" source="#claude">uadium Hk Ad</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_6a.lnote.la.17" n="17" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">631</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Hk Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Hk Ad Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_6a.lnote.la.18" n="18" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">631</biblScope></bibl><seg type="original" xml:lang="de">plegium <hi rend="italic">Ad</hi></seg><seg type="translation" xml:lang="en" source="#claude">plegium Ad</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_6a.lnote.la.19" n="19" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">631</biblScope></bibl><seg type="original" xml:lang="de">potuerit <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">potuerit Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_6a.lnote.la.20" n="20" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">631</biblScope></bibl><seg type="original" xml:lang="de">p. r. <hi rend="italic">Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">p. r. Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_6a.lnote.la.21" n="21" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">631</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Hk</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

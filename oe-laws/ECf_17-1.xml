@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECf_17-1">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf 17.1</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECf_17-1</idno>
+        <idno type="citation">ECf 17.1</idno>
+        <idno type="lawCode">ECf</idno>
+        <idno type="lawCodeAnchor">ECf</idno>
+        <idno type="clause">17.1</idno>
+        <idno type="citationKey">ECf 17.1</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">643</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>1115–50, probably 1130–35 (Liebermann, I p. 627)</date><note type="promulgation">1115–50, probably 1130–35 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="17.1">
+        <head><ref type="lawCode" target="law:ECf">ECf</ref> 17.1</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 17.1"><pb n="643" ed="#liebermann"/>Sin<ptr type="liebermannNote" n="1" target="#ECf_17-1.lnote.la.1"/> autem, nomen<ptr type="liebermannNote" n="2" target="#ECf_17-1.lnote.la.2"/> regis perdit<ptr type="liebermannNote" n="a" target="#ECf_17-1.lnote.la.fn.a"/>, testante Iohanne<ptr type="liebermannNote" n="b" target="#ECf_17-1.lnote.la.fn.b"/> papa. Cui<ptr type="liebermannNote" n="c" target="#ECf_17-1.lnote.la.fn.c"/> Pipinus<ptr type="liebermannNote" n="3" target="#ECf_17-1.lnote.la.3"/> et Karolus, filius eius, necdum<ptr type="liebermannNote" n="4" target="#ECf_17-1.lnote.la.4"/> reges, sed principes sub rege<ptr type="liebermannNote" n="d" target="#ECf_17-1.lnote.la.fn.d"/> Francorum<ptr type="liebermannNote" n="5" target="#ECf_17-1.lnote.la.5"/> stulto<ptr type="liebermannNote" n="6" target="#ECf_17-1.lnote.la.6"/>, scripserunt, querentes<ptr type="liebermannNote" n="7" target="#ECf_17-1.lnote.la.7"/>, si ita deberent manere<ptr type="liebermannNote" n="e" target="#ECf_17-1.lnote.la.fn.e"/> reges<ptr type="liebermannNote" n="8" target="#ECf_17-1.lnote.la.8"/> Francorum<ptr type="liebermannNote" n="5" target="#ECf_17-1.lnote.la.5"/>, solo<ptr type="liebermannNote" n="9" target="#ECf_17-1.lnote.la.9"/> regio<ptr type="liebermannNote" n="10" target="#ECf_17-1.lnote.la.10"/> nomine contenti? A quo responsum est: ‘Illos<ptr type="liebermannNote" n="11" target="#ECf_17-1.lnote.la.11"/> decet uocari reges qui uigilanter<ptr type="liebermannNote" n="12" target="#ECf_17-1.lnote.la.12"/> defendunt et regunt ecclesiam Dei et populum eius’<ptr type="liebermannNote" n="13" target="#ECf_17-1.lnote.la.13"/>, imitati<ptr type="liebermannNote" n="14" target="#ECf_17-1.lnote.la.14"/> regem psalmigraphum<ptr type="liebermannNote" n="15" target="#ECf_17-1.lnote.la.15"/> dicentem: ‘Non habitabit<ptr type="liebermannNote" n="16" target="#ECf_17-1.lnote.la.16"/> in medio domus mee qui<ptr type="liebermannNote" n="17" target="#ECf_17-1.lnote.la.17"/> facit superbiam’ etc.</ab>
+        <note type="comparison" source="#liebermann" n="643"><label>printed alongside</label> <ref target="clause:ECfRetr_17-1">ECf retr 17.1</ref></note>
+        <note type="comparisonPrinted" source="#liebermann">Ado Vienn.</note>
+        <note type="comparisonPrinted" source="#liebermann">Ps. 100, 7</note>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 643 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
+        <note type="editorial">Liebermann prints the words taken from Ado of Vienne (“si ita deberent … populum eius”) in smaller type; his margin names the source, “Ado Vienn.”.</note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_17-1.lnote.la.fn.a" n="a" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">643</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Thronverlust bestimmt dem pflichtvergessenen Herrscher Gregor VII.; vgl. Böhmer</hi> Staat und Kirche 416; <hi rend="italic">vielleicht dachte Verf. an Robert von der Normandie</hi> 1106 <hi rend="italic">und der Retractor an Stephan</hi> 1141 <hi rend="italic">oder</hi> 1154</seg><seg type="translation" xml:lang="en" source="#claude">Gregory VII decrees loss of the throne for a ruler forgetful of his duty; cf. Böhmer, Staat und Kirche 416; perhaps the author was thinking of Robert of Normandy in 1106, and the Retractator of Stephen in 1141 or 1154</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_17-1.lnote.la.fn.b" n="b" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">643</biblScope></bibl><seg type="original" xml:lang="de">Zacharias (751—52), <hi rend="italic">wie im</hi> 16. <hi rend="italic">Jahrh. Va in Retr. bessert; vgl. S.</hi> 635<hi rend="italic">b</hi></seg><seg type="translation" xml:lang="en" source="#claude">Zacharias (751–52), as Va corrects in the Retr. in the 16th century; cf. p. 635, note b</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_17-1.lnote.la.fn.c" n="c" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">643</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">aus Ado, ed.</hi> Maxima bibl. vet. patr. (<hi rend="italic">Lugd.</hi> 1677) XVI 804</seg><seg type="translation" xml:lang="en" source="#claude">from Ado, ed. Maxima bibl. vet. patr. (Lyon 1677) XVI 804</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_17-1.lnote.la.fn.d" n="d" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">643</biblScope></bibl><seg type="original" xml:lang="de">Childerich III.; <hi rend="italic">vgl. Va zu Retr.</hi></seg><seg type="translation" xml:lang="en" source="#claude">Childeric III; cf. Va on the Retr.</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_17-1.lnote.la.fn.e" n="e" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">643</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">so Ado;</hi> permanere <hi rend="italic">Willkür des Retr.</hi></seg><seg type="translation" xml:lang="en" source="#claude">so Ado; permanere is the Retractator’s arbitrary change</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_17-1.lnote.la.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">643</biblScope></bibl><seg type="original" xml:lang="de">Si <hi rend="italic">Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">Si Ad Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_17-1.lnote.la.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">643</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt, Lücke Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking, a gap Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_17-1.lnote.la.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">643</biblScope></bibl><seg type="original" xml:lang="de">Pep. <hi rend="italic">Hk Ad;</hi> Pipp. <hi rend="italic">Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">Pep. Hk Ad; Pipp. Hr</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_17-1.lnote.la.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">643</biblScope></bibl><seg type="original" xml:lang="de">nondum <hi rend="italic">Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">nondum Ad Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_17-1.lnote.la.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">643</biblScope></bibl><seg type="original" xml:lang="de">Franchor. <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">Franchor. Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_17-1.lnote.la.6" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">643</biblScope></bibl><seg type="original" xml:lang="de">Karolo <hi rend="italic">fügt zu Rl</hi> [<hi rend="italic">falsch</hi>]</seg><seg type="translation" xml:lang="en" source="#claude">Rl adds Karolo [wrong]</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_17-1.lnote.la.7" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">643</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">später übergeschr. Hk;</hi> -te se <hi rend="italic">Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">written above later Hk; -te se Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_17-1.lnote.la.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">643</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Ad Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_17-1.lnote.la.9" n="9" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">643</biblScope></bibl><seg type="original" xml:lang="de">sub <hi rend="italic">S</hi></seg><seg type="translation" xml:lang="en" source="#claude">sub S</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_17-1.lnote.la.10" n="10" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">643</biblScope></bibl><seg type="original" xml:lang="de">n. r. <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">n. r. Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_17-1.lnote.la.11" n="11" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">643</biblScope></bibl><seg type="original" xml:lang="de">-las <hi rend="italic">Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">-las Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_17-1.lnote.la.12" n="12" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">643</biblScope></bibl><seg type="original" xml:lang="de">-lant <hi rend="italic">S</hi></seg><seg type="translation" xml:lang="en" source="#claude">-lant S</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_17-1.lnote.la.13" n="13" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">643</biblScope></bibl><seg type="original" xml:lang="de">Dei <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">Dei Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_17-1.lnote.la.14" n="14" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">643</biblScope></bibl><seg type="original" xml:lang="de">-tari <hi rend="italic">Ad</hi></seg><seg type="translation" xml:lang="en" source="#claude">-tari Ad</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_17-1.lnote.la.15" n="15" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">643</biblScope></bibl><seg type="original" xml:lang="de">spal. <hi rend="italic">Rl;</hi> -mogr. <hi rend="italic">Ad</hi></seg><seg type="translation" xml:lang="en" source="#claude">spal. Rl; -mogr. Ad</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_17-1.lnote.la.16" n="16" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">643</biblScope></bibl><seg type="original" xml:lang="de">hereditauit <hi rend="italic">Do, dessen sinnlose Fehler ich fortan nicht notire</hi></seg><seg type="translation" xml:lang="en" source="#claude">hereditauit Do, whose senseless errors I shall not record from now on</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_17-1.lnote.la.17" n="17" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">643</biblScope></bibl><seg type="original" xml:lang="de">q. f. s. <hi rend="italic">fehlt Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">q. f. s. lacking in Hk</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

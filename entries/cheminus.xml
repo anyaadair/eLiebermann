@@ -19,6 +19,7 @@
     <encodingDesc>
       <listPrefixDef>
         <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
         <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
         <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
       </listPrefixDef>
@@ -34,13 +35,13 @@
           <orth>cheminus</orth>
         </form>
         <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">cheminus</hi> <hi rend="italic">Strasse</hi> [= via regalis] <ref type="lawCode" target="law:ECf">ECf</ref> 12<hi rend="superscript">18</hi>. 12,1<hi rend="superscript">14</hi>. 12,7<hi rend="superscript">10</hi>. 12,8<hi rend="superscript">18</hi>. 12,9<hi rend="superscript">22</hi>. <ref type="lawCode" target="law:retr">retr</ref> 12. 13; chim~ <ref type="lawCode" target="law:ECf">ECf</ref> 12,1; 7; 8; 9; 10; 11; 13. <ref type="lawCode" target="law:retr">retr</ref> 12<hi rend="superscript">7</hi></dictScrap>
-        <xr type="lawCode" n="18"><ref target="law:ECf">ECf 12</ref></xr>
-        <xr type="lawCode" n="14"><ref target="law:ECf">ECf 12,1</ref></xr>
-        <xr type="lawCode" n="10"><ref target="law:ECf">ECf 12,7</ref></xr>
-        <xr type="lawCode" n="18"><ref target="law:ECf">ECf 12,8</ref></xr>
-        <xr type="lawCode" n="22"><ref target="law:ECf">ECf 12,9</ref></xr>
-        <xr type="lawCode"><ref target="law:ECf">ECf 12,10</ref></xr>
-        <xr type="lawCode"><ref target="law:ECf">ECf 12,11</ref></xr>
+        <xr type="lawCode" n="18"><ref target="clause:ECf_12">ECf 12</ref></xr>
+        <xr type="lawCode" n="14"><ref target="clause:ECf_12-1">ECf 12,1</ref></xr>
+        <xr type="lawCode" n="10"><ref target="clause:ECf_12-7">ECf 12,7</ref></xr>
+        <xr type="lawCode" n="18"><ref target="clause:ECf_12-8">ECf 12,8</ref></xr>
+        <xr type="lawCode" n="22"><ref target="clause:ECf_12-9">ECf 12,9</ref></xr>
+        <xr type="lawCode"><ref target="clause:ECf_12-10">ECf 12,10</ref></xr>
+        <xr type="lawCode"><ref target="clause:ECf_12-11">ECf 12,11</ref></xr>
         <xr type="lawCode"><ref target="law:ECf">ECf 12,13</ref></xr>
       </entry>
     </body>

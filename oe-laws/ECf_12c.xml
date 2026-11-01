@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECf_12c">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf 12c</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECf_12c</idno>
+        <idno type="citation">ECf 12c</idno>
+        <idno type="lawCode">ECf</idno>
+        <idno type="lawCodeAnchor">ECf</idno>
+        <idno type="clause">12c</idno>
+        <idno type="citationKey">ECf 12c</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), pp. <biblScope unit="page">637–638</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>1115–50, probably 1130–35 (Liebermann, I p. 627)</date><note type="promulgation">1115–50, probably 1130–35 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="12c">
+        <head><ref type="lawCode" target="law:ECf">ECf</ref> 12c</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 12c"><pb n="637" ed="#liebermann"/><ptr type="liebermannNote" n="16" target="#ECf_12c.lnote.la.16"/>alia quam habent quatuor<ptr type="liebermannNote" n="17" target="#ECf_12c.lnote.la.17"/> chimini<ptr type="liebermannNote" n="18" target="#ECf_12c.lnote.la.18"/>, id<ptr type="liebermannNote" n="19" target="#ECf_12c.lnote.la.19"/> est Watlingestrete<ptr type="liebermannNote" n="20" target="#ECf_12c.lnote.la.20"/>, Fosse<ptr type="liebermannNote" n="21" target="#ECf_12c.lnote.la.21"/>, Hikenildestret<ptr type="liebermannNote" n="22" target="#ECf_12c.lnote.la.22"/>, Ermingestret<ptr type="liebermannNote" n="23" target="#ECf_12c.lnote.la.23"/>, quorum <pb n="638" ed="#liebermann"/>duo in longitudinem<ptr type="liebermannNote" n="1" target="#ECf_12c.lnote.la.1"/> regni, alii uero<ptr type="liebermannNote" n="2" target="#ECf_12c.lnote.la.2"/> in latitudinem<ptr type="liebermannNote" n="3" target="#ECf_12c.lnote.la.3"/> distenduntur;</ab>
+        <note type="comparison" source="#liebermann" n="637"><label>printed alongside</label> <ref target="clause:ECfRetr_12c">ECf retr 12c</ref></note>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 637–638 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
+        <note type="editorial">Liebermann’s upright (roman) letter a after “chimini” refers to his explanatory notes, the Erklärungen (printed as Gesetze III; his note on p. 627 calls it “Band II”), which are not yet added here.</note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_12c.lnote.la.16" n="16" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">637</biblScope></bibl><seg type="original" xml:lang="de">Pax quatuor chiminorum <hi rend="italic">überschreibt Wo</hi></seg><seg type="translation" xml:lang="en" source="#claude">Wo heads it Pax quatuor chiminorum</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_12c.lnote.la.17" n="17" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">637</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Ad Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_12c.lnote.la.18" n="18" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">637</biblScope></bibl><seg type="original" xml:lang="de">chem. <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">chem. Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_12c.lnote.la.19" n="19" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">637</biblScope></bibl><seg type="original" xml:lang="de">scilicet <hi rend="italic">S</hi></seg><seg type="translation" xml:lang="en" source="#claude">scilicet S</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_12c.lnote.la.20" n="20" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">637</biblScope></bibl><seg type="original" xml:lang="de">Wathl. <hi rend="italic">Rl;</hi> -strate <hi rend="italic">Ad;</hi> -gst. <hi rend="italic">Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">Wathl. Rl; -strate Ad; -gst. Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_12c.lnote.la.21" n="21" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">637</biblScope></bibl><seg type="original" xml:lang="de">Hyk., Erni., Fo. <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">Hyk., Erni., Fo. Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_12c.lnote.la.22" n="22" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">637</biblScope></bibl><seg type="original" xml:lang="de">Hyk. <hi rend="italic">Hk;</hi> Hichen. <hi rend="italic">Rl;</hi> -strete <hi rend="italic">S;</hi> -strate <hi rend="italic">Ad;</hi> -dst. <hi rend="italic">Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">Hyk. Hk; Hichen. Rl; -strete S; -strate Ad; -dst. Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_12c.lnote.la.23" n="23" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">637</biblScope></bibl><seg type="original" xml:lang="de">Erni. <hi rend="italic">Rl Hk;</hi> -strete <hi rend="italic">S;</hi> Herningestrate <hi rend="italic">Ad;</hi> Hundesstr. <hi rend="italic">Do;</hi> qu. d. in l. r. Er. <hi rend="italic">Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">Erni. Rl Hk; -strete S; Herningestrate Ad; Hundesstr. Do; qu. d. in l. r. Er. Hr</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_12c.lnote.la.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">637</biblScope></bibl><seg type="original" xml:lang="de">-ne <hi rend="italic">Rl Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">-ne Rl Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_12c.lnote.la.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">637</biblScope></bibl><seg type="original" xml:lang="de">duo <hi rend="italic">Hk Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">duo Hk Ad Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_12c.lnote.la.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">637</biblScope></bibl><seg type="original" xml:lang="de">-ne <hi rend="italic">Rl S Do;</hi> regni <hi rend="italic">fügt zu Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">-ne Rl S Do; Hk adds regni</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

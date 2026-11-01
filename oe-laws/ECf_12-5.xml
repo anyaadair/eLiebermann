@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECf_12-5">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf 12.5</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECf_12-5</idno>
+        <idno type="citation">ECf 12.5</idno>
+        <idno type="lawCode">ECf</idno>
+        <idno type="lawCodeAnchor">ECf</idno>
+        <idno type="clause">12.5</idno>
+        <idno type="citationKey">ECf 12.5</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">638</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>1115–50, probably 1130–35 (Liebermann, I p. 627)</date><note type="promulgation">1115–50, probably 1130–35 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="12.5">
+        <head><ref type="lawCode" target="law:ECf">ECf</ref> 12.5</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 12.5"><pb n="638" ed="#liebermann"/>Manbote in<ptr type="liebermannNote" n="31" target="#ECf_12-5.lnote.la.31"/> lege Anglorum regi<ptr type="liebermannNote" n="m" target="#ECf_12-5.lnote.la.fn.m"/> et archiepiscopo<ptr type="liebermannNote" n="n" target="#ECf_12-5.lnote.la.fn.n"/> III<ptr type="liebermannNote" n="32" target="#ECf_12-5.lnote.la.32"/> marc. de hominibus suis<ptr type="liebermannNote" n="33" target="#ECf_12-5.lnote.la.33"/>, episcopo<ptr type="liebermannNote" n="o" target="#ECf_12-5.lnote.la.fn.o"/> comitatus<ptr type="liebermannNote" n="34" target="#ECf_12-5.lnote.la.34"/>, comiti<ptr type="liebermannNote" n="p" target="#ECf_12-5.lnote.la.fn.p"/> comitatus et dapifero<ptr type="liebermannNote" n="35" target="#ECf_12-5.lnote.la.35"/> regis uiginti<ptr type="liebermannNote" n="36" target="#ECf_12-5.lnote.la.36"/> sol.; baronibus ceteris X sol.</ab>
+        <note type="comparison" source="#liebermann" n="638"><label>printed alongside</label> <ref target="clause:ECfRetr_12-5">ECf retr 12.5</ref></note>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 638 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
+        <note type="editorial">Liebermann’s upright (roman) letter a after “Manbote” refers to his explanatory notes, the Erklärungen (printed as Gesetze III; his note on p. 627 calls it “Band II”), which are not yet added here.</note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_12-5.lnote.la.fn.m" n="m" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">638</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vgl. o. S.</hi> 601<hi rend="italic">q</hi></seg><seg type="translation" xml:lang="en" source="#claude">cf. above, p. 601, note q</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_12-5.lnote.la.fn.n" n="n" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">638</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vielleicht aus gleicher Vorlage wie</hi> Leis Wl 16</seg><seg type="translation" xml:lang="en" source="#claude">perhaps from the same source as Leis Wl 16</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_12-5.lnote.la.fn.o" n="o" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">638</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">aus Angelsächs.</hi> scirbiscop</seg><seg type="translation" xml:lang="en" source="#claude">from Anglo-Saxon scirbiscop</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_12-5.lnote.la.fn.p" n="p" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">638</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">die Grafschaft ist noch Provinzialamt, nicht leerer Titel</hi></seg><seg type="translation" xml:lang="en" source="#claude">the earldom is still a provincial office, not an empty title</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_12-5.lnote.la.31" n="31" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">638</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_12-5.lnote.la.32" n="32" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">638</biblScope></bibl><seg type="original" xml:lang="de">de hom. s. III m. <hi rend="italic">Hk;</hi> IIII <hi rend="italic">S;</hi> XL sol. de liberis ho. <hi rend="italic">Ad No</hi> [<hi rend="italic">wie</hi> 12, 4]; de l. h. XL sol. <hi rend="italic">Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">de hom. s. III m. Hk; IIII S; XL sol. de liberis ho. Ad No [as 12, 4]; de l. h. XL sol. Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_12-5.lnote.la.33" n="33" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">638</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Hr Ad</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Hr Ad</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_12-5.lnote.la.34" n="34" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">638</biblScope></bibl><seg type="original" xml:lang="de">et <hi rend="italic">fügt zu Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">Hk adds et</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_12-5.lnote.la.35" n="35" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">638</biblScope></bibl><seg type="original" xml:lang="de">dampno regni <hi rend="italic">Ad;</hi> de dampno regni <hi rend="italic">Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">dampno regni Ad; de dampno regni Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_12-5.lnote.la.36" n="36" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">638</biblScope></bibl><seg type="original" xml:lang="de">XXX <hi rend="italic">Hk;</hi> XXI <hi rend="italic">Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">XXX Hk; XXI Hr</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

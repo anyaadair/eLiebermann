@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECf_30-2">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf 30.2</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECf_30-2</idno>
+        <idno type="citation">ECf 30.2</idno>
+        <idno type="lawCode">ECf</idno>
+        <idno type="lawCodeAnchor">ECf</idno>
+        <idno type="clause">30.2</idno>
+        <idno type="citationKey">ECf 30.2</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">652</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>1115–50, probably 1130–35 (Liebermann, I p. 627)</date><note type="promulgation">1115–50, probably 1130–35 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="30.2">
+        <head><ref type="lawCode" target="law:ECf">ECf</ref> 30.2</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 30.2"><pb n="652" ed="#liebermann"/>Et hoc<ptr type="liebermannNote" n="g" target="#ECf_30-2.lnote.la.fn.g"/> non sine causa: Cum enim aliquis accipiebat<ptr type="liebermannNote" n="27" target="#ECf_30-2.lnote.la.27"/> prefecturam<ptr type="liebermannNote" n="h" target="#ECf_30-2.lnote.la.fn.h"/> wapentagii<ptr type="liebermannNote" n="28" target="#ECf_30-2.lnote.la.28"/>, die constituto<ptr type="liebermannNote" n="29" target="#ECf_30-2.lnote.la.29"/> conueniebant omnes maiores contra eum in<ptr type="liebermannNote" n="30" target="#ECf_30-2.lnote.la.30"/> loco, ubi soliti erant<ptr type="liebermannNote" n="i" target="#ECf_30-2.lnote.la.fn.i"/> congregare<ptr type="liebermannNote" n="31" target="#ECf_30-2.lnote.la.31"/>; et, descendente eo de<ptr type="liebermannNote" n="32" target="#ECf_30-2.lnote.la.32"/> equo<ptr type="liebermannNote" n="33" target="#ECf_30-2.lnote.la.33"/> suo, omnes assurgebant contra eum.</ab>
+        <note type="comparison" source="#liebermann" n="652"><label>printed alongside</label> <ref target="clause:ECfRetr_30-2">ECf retr 30.2</ref></note>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 652 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_30-2.lnote.la.fn.g" n="g" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">652</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">wie</hi> 27, 2</seg><seg type="translation" xml:lang="en" source="#claude">as at 27, 2</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_30-2.lnote.la.fn.h" n="h" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">652</biblScope></bibl><seg type="original" xml:lang="de">prefectus <hi rend="italic">sagt ECf. meist für</hi> gerefa: 24, 2</seg><seg type="translation" xml:lang="en" source="#claude">ECf. mostly says prefectus for gerefa: 24, 2</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_30-2.lnote.la.fn.i" n="i" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">652</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Amtsübernahme im Gericht auch im Norden: Herzberg in</hi> Arkiv før nord. Filol. V (1889) 356</seg><seg type="translation" xml:lang="en" source="#claude">taking up office in the court in the North too: Herzberg in Arkiv før nord. Filol. V (1889) 356</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_30-2.lnote.la.27" n="27" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">652</biblScope></bibl><seg type="original" xml:lang="de">incip. <hi rend="italic">Hk;</hi> p. w. a. <hi rend="italic">Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">incip. Hk; p. w. a. Ad Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_30-2.lnote.la.28" n="28" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">652</biblScope></bibl><seg type="original" xml:lang="de">-tochii <hi rend="italic">Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">-tochii Hr</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_30-2.lnote.la.29" n="29" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">652</biblScope></bibl><seg type="original" xml:lang="de">statuto <hi rend="italic">Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">statuto Ad Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_30-2.lnote.la.30" n="30" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">652</biblScope></bibl><seg type="original" xml:lang="de">ad locum <hi rend="italic">Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">ad locum Ad Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_30-2.lnote.la.31" n="31" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">652</biblScope></bibl><seg type="original" xml:lang="de">-ri <hi rend="italic">S</hi></seg><seg type="translation" xml:lang="en" source="#claude">-ri S</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_30-2.lnote.la.32" n="32" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">652</biblScope></bibl><seg type="original" xml:lang="de">ab <hi rend="italic">Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">ab Ad Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_30-2.lnote.la.33" n="33" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">652</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Hr</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECf_5-1">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf 5.1</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECf_5-1</idno>
+        <idno type="citation">ECf 5.1</idno>
+        <idno type="lawCode">ECf</idno>
+        <idno type="lawCodeAnchor">ECf</idno>
+        <idno type="clause">5.1</idno>
+        <idno type="citationKey">ECf 5.1</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">630</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>1115–50, probably 1130–35 (Liebermann, I p. 627)</date><note type="promulgation">1115–50, probably 1130–35 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="5.1">
+        <head><ref type="lawCode" target="law:ECf">ECf</ref> 5.1</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 5.1"><pb n="630" ed="#liebermann"/>Et si in<ptr type="liebermannNote" n="20" target="#ECf_5-1.lnote.la.20"/> fugiendo ad domum<ptr type="liebermannNote" n="d" target="#ECf_5-1.lnote.la.fn.d"/> sacerdotis uel ad curiam eius diuerterit, eandem securitatem et libertatem ibidem<ptr type="liebermannNote" n="21" target="#ECf_5-1.lnote.la.21"/> inueniat quam<ptr type="liebermannNote" n="22" target="#ECf_5-1.lnote.la.22"/> apud ecclesiam, dum<ptr type="liebermannNote" n="23" target="#ECf_5-1.lnote.la.23"/> tamen<ptr type="liebermannNote" n="24" target="#ECf_5-1.lnote.la.24"/> sacerdotis<ptr type="liebermannNote" n="25" target="#ECf_5-1.lnote.la.25"/> domus et curia in<ptr type="liebermannNote" n="e" target="#ECf_5-1.lnote.la.fn.e"/> feudo<ptr type="liebermannNote" n="26" target="#ECf_5-1.lnote.la.26"/> ecclesie<ptr type="liebermannNote" n="27" target="#ECf_5-1.lnote.la.27"/> consistant.</ab>
+        <note type="comparison" source="#liebermann" n="630"><label>printed alongside</label> <ref target="clause:ECfRetr_5-1">ECf retr 5.1</ref></note>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 630 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_5-1.lnote.la.fn.d" n="d" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">630</biblScope></bibl><seg type="original" xml:lang="de">domus uel curia: <hi rend="italic">Haus und Hof; vgl.</hi> In Cn II 12; <hi rend="italic">für Frankreich bot das Priesterhaus Asyl</hi> (<hi rend="italic">Brunner</hi> DRG. II 284. 610); <hi rend="italic">und so wohl auch bei den Angelsachsen, indem der Priester dem Thegn auch hierin gleich galt</hi></seg><seg type="translation" xml:lang="en" source="#claude">domus uel curia: house and yard; cf. In Cn II 12; in France the priest’s house gave asylum (Brunner, DRG. II 284. 610); and so probably among the Anglo-Saxons too, the priest counting as equal to the thegn in this as well</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_5-1.lnote.la.fn.e" n="e" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">630</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">nicht auf weltlich erworbenem</hi> (<hi rend="italic">z. B. ererbtem</hi>) <hi rend="italic">Boden</hi></seg><seg type="translation" xml:lang="en" source="#claude">not on land acquired in the secular way (e.g. inherited)</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_5-1.lnote.la.20" n="20" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">630</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Ad Do No</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Ad Do No</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_5-1.lnote.la.21" n="21" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">630</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Hk;</hi> inu. ib. <hi rend="italic">Ad Do No</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Hk; inu. ib. Ad Do No</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_5-1.lnote.la.22" n="22" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">630</biblScope></bibl><seg type="original" xml:lang="de">et <hi rend="italic">fügt zu Hk Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">Hk Hr add et</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_5-1.lnote.la.23" n="23" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">630</biblScope></bibl><seg type="original" xml:lang="de">domus enim s. in feodo e. consistat <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">domus enim s. in feodo e. consistat Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_5-1.lnote.la.24" n="24" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">630</biblScope></bibl><seg type="original" xml:lang="de">cum <hi rend="italic">Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">cum Hr</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_5-1.lnote.la.25" n="25" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">630</biblScope></bibl><seg type="original" xml:lang="de">do. et cu. sa. <hi rend="italic">Ad; ohne</hi> sa. <hi rend="italic">Do No</hi></seg><seg type="translation" xml:lang="en" source="#claude">do. et cu. sa. Ad; without sa. Do No</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_5-1.lnote.la.26" n="26" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">630</biblScope></bibl><seg type="original" xml:lang="de">fundo <hi rend="italic">Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">fundo Hr</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_5-1.lnote.la.27" n="27" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">630</biblScope></bibl><seg type="original" xml:lang="de">ecclesiastico <hi rend="italic">Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">ecclesiastico Ad Do</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

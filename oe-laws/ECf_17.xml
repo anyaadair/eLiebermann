@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECf_17">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf 17</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECf_17</idno>
+        <idno type="citation">ECf 17</idno>
+        <idno type="lawCode">ECf</idno>
+        <idno type="lawCodeAnchor">ECf</idno>
+        <idno type="clause">17</idno>
+        <idno type="citationKey">ECf 17</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">642</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>1115–50, probably 1130–35 (Liebermann, I p. 627)</date><note type="promulgation">1115–50, probably 1130–35 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="17">
+        <head><ref type="lawCode" target="law:ECf">ECf</ref> 17</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 17"><pb n="642" ed="#liebermann"/><ptr type="liebermannNote" n="18" target="#ECf_17.lnote.la.18"/>Rex<ptr type="liebermannNote" n="g" target="#ECf_17.lnote.la.fn.g"/> autem<ptr type="liebermannNote" n="3" target="#ECf_17.lnote.la.3"/> qui<ptr type="liebermannNote" n="19" target="#ECf_17.lnote.la.19"/> uicarius summi<ptr type="liebermannNote" n="20" target="#ECf_17.lnote.la.20"/> Regis est, ad hoc constitutus est<ptr type="liebermannNote" n="21" target="#ECf_17.lnote.la.21"/>, ut regnum et populum Domini<ptr type="liebermannNote" n="22" target="#ECf_17.lnote.la.22"/> et super omnia sanctam ecclesiam<ptr type="liebermannNote" n="23" target="#ECf_17.lnote.la.23"/> regat et defendat ab<ptr type="liebermannNote" n="24" target="#ECf_17.lnote.la.24"/> iniuriosis, maleficos<ptr type="liebermannNote" n="25" target="#ECf_17.lnote.la.25"/> autem destruat<ptr type="liebermannNote" n="26" target="#ECf_17.lnote.la.26"/> et euellat.</ab>
+        <note type="comparison" source="#liebermann" n="642"><label>printed alongside</label> <ref target="clause:ECfRetr_17">ECf retr 17</ref></note>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 642 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
+        <note type="editorial">Liebermann’s upright a after “uicarius” refers to his Erklärungen, which are not yet added here.</note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_17.lnote.la.fn.g" n="g" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">642</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">benutzt in</hi> 11, 1 A <hi rend="italic">ff., o. S.</hi> 635*</seg><seg type="translation" xml:lang="en" source="#claude">used in 11, 1 A ff., above, p. 635*</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_17.lnote.la.18" n="18" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">642</biblScope></bibl><seg type="original" xml:lang="de">De rege <hi rend="italic">überschreibt Cl</hi></seg><seg type="translation" xml:lang="en" source="#claude">Cl heads it De rege</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_17.lnote.la.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">642</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Ad Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_17.lnote.la.19" n="19" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">642</biblScope></bibl><seg type="original" xml:lang="de">quia <hi rend="italic">Hk Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">quia Hk Hr</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_17.lnote.la.20" n="20" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">642</biblScope></bibl><seg type="original" xml:lang="de">est s. R. <hi rend="italic">Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">est s. R. Ad Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_17.lnote.la.21" n="21" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">642</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Rl Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Rl Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_17.lnote.la.22" n="22" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">642</biblScope></bibl><seg type="original" xml:lang="de">Dei omnem <hi rend="italic">Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">Dei omnem Ad Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_17.lnote.la.23" n="23" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">642</biblScope></bibl><seg type="original" xml:lang="de">r. e. <hi rend="italic">Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">r. e. Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_17.lnote.la.24" n="24" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">642</biblScope></bibl><seg type="original" xml:lang="de">omnibus <hi rend="italic">fügt zu Ad</hi></seg><seg type="translation" xml:lang="en" source="#claude">Ad adds omnibus</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_17.lnote.la.25" n="25" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">642</biblScope></bibl><seg type="original" xml:lang="de">-iciis, <hi rend="italic">darüber</hi> [-ic]a <hi rend="italic">Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">-iciis, with [-ic]a above Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_17.lnote.la.26" n="26" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">642</biblScope></bibl><seg type="original" xml:lang="de">distraat <hi rend="italic">Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">distraat Hr</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

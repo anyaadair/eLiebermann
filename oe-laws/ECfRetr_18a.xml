@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECfRetr_18a">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf retr 18a</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECfRetr_18a</idno>
+        <idno type="citation">ECf retr 18a</idno>
+        <idno type="lawCode">ECf retr</idno>
+        <idno type="lawCodeAnchor">ECfRetr</idno>
+        <idno type="clause">18a</idno>
+        <idno type="citationKey">ECfRetr 18a</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris: retractatus</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">643</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>c. 1140–59 (Liebermann, I p. 627)</date><note type="promulgation">c. 1140–59 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="18a">
+        <head><ref type="lawCode" target="law:ECfRetr">ECf retr</ref> 18a</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf retr 18a"><pb n="643" ed="#liebermann"/>Ipse <hi rend="bold">tamen malefactor</hi><ptr type="liebermannNote" n="19" target="#ECfRetr_18a.lnote.la.19"/> faciat<ptr type="liebermannNote" n="20" target="#ECfRetr_18a.lnote.la.20"/> rectum in quantumcunque<ptr type="liebermannNote" n="21" target="#ECfRetr_18a.lnote.la.21"/> poterit quibus forisfecit<ptr type="liebermannNote" n="22" target="#ECfRetr_18a.lnote.la.22"/>, et <hi rend="bold">tradat</hi> fideiussores de pace et legalitate tenenda.</ab>
+        <note type="comparison" source="#liebermann" n="643"><label>printed alongside</label> <ref target="clause:ECf_18a">ECf 18a</ref></note>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 643 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page; the words in bold are the Retractator’s changes to ECf, as Liebermann prints them.</note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_18a.lnote.la.19" n="19" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">643</biblScope></bibl><seg type="original" xml:lang="de">-torum <hi rend="italic">Hv</hi></seg><seg type="translation" xml:lang="en" source="#claude">-torum Hv</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_18a.lnote.la.20" n="20" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">643</biblScope></bibl><seg type="original" xml:lang="de">r. f. <hi rend="italic">Hv Cb Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">r. f. Hv Cb Lond</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_18a.lnote.la.21" n="21" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">643</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">verbessert aus</hi> quantumque <hi rend="italic">Cb</hi></seg><seg type="translation" xml:lang="en" source="#claude">corrected from quantumque Cb</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_18a.lnote.la.22" n="22" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">643</biblScope></bibl><seg type="original" xml:lang="de">foref. <hi rend="italic">Lb Va;</hi> forisfactum fuerit et f. t. <hi rend="italic">Hv</hi></seg><seg type="translation" xml:lang="en" source="#claude">foref. Lb Va; forisfactum fuerit et f. t. Hv</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

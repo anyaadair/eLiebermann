@@ -19,6 +19,7 @@
     <encodingDesc>
       <listPrefixDef>
         <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
         <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
         <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
       </listPrefixDef>
@@ -37,7 +38,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">interciebatur</hi> aliquis aliquid super aliquem <hi rend="italic">einer schob etwas auf einen Gewährsmann</hi> [<hi rend="italic">von</hi> cieo?] <ref type="lawCode" target="law:ECf">ECf</ref> 22,3; <hi rend="italic"><ref type="abbreviation" target="gram:Variante"><abbr>Var.</abbr></ref></hi> ~ciab~; <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:intertiare">intertiare</ref></dictScrap>
         <xr type="see"><ref target="entry:intertiare">intertiare</ref></xr>
-        <xr type="lawCode"><ref target="law:ECf">ECf 22,3</ref></xr>
+        <xr type="lawCode"><ref target="clause:ECf_22-3">ECf 22,3</ref></xr>
       </entry>
     </body>
   </text>

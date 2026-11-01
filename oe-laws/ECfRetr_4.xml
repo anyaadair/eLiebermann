@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECfRetr_4">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf retr 4</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECfRetr_4</idno>
+        <idno type="citation">ECf retr 4</idno>
+        <idno type="lawCode">ECf retr</idno>
+        <idno type="lawCodeAnchor">ECfRetr</idno>
+        <idno type="clause">4</idno>
+        <idno type="citationKey">ECfRetr 4</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris: retractatus</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">630</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>c. 1140–59 (Liebermann, I p. 627)</date><note type="promulgation">c. 1140–59 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="4">
+        <head><ref type="lawCode" target="law:ECfRetr">ECf retr</ref> 4</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf retr 4"><pb n="630" ed="#liebermann"/><hi rend="spaced">De <hi rend="bold">uniuersis</hi> tenentibus<ptr type="liebermannNote" n="1" target="#ECfRetr_4.lnote.la.1"/> <hi rend="bold">de</hi> ecclesia.</hi> Quicunque de ecclesia <hi rend="bold">aliquid</hi> tenuerit uel in <hi rend="bold">fundo</hi><ptr type="liebermannNote" n="2" target="#ECfRetr_4.lnote.la.2"/> ecclesie mansionem <hi rend="bold">habuerit,</hi> extra curiam ecclesiasticam <hi rend="bold">coactus</hi> non placitabit, <hi rend="bold">quamuis</hi> forisfe<hi rend="bold">cerit</hi><ptr type="liebermannNote" n="c" target="#ECfRetr_4.lnote.la.fn.c"/><hi rend="bold">, nisi</hi> — quod absit! — in curia ecclesiastica rectum<ptr type="liebermannNote" n="3" target="#ECfRetr_4.lnote.la.3"/> defecerit.</ab>
+        <note type="comparison" source="#liebermann" n="630"><label>printed alongside</label> <ref target="clause:ECf_4">ECf 4</ref></note>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 630 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page; the words in bold are the Retractator’s changes to ECf, as Liebermann prints them.</note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECfRetr_4.lnote.la.fn.c" n="c" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">630</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Retr. latinisirt das barbarisch durch Hilfszeitwort gebildete Perfect</hi></seg><seg type="translation" xml:lang="en" source="#claude">the Retractator latinizes the perfect, barbarously formed with an auxiliary verb</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_4.lnote.la.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">630</biblScope></bibl><seg type="original" xml:lang="de">de ecclesia (-iis <hi rend="italic">Lond</hi>) tenentibus <hi rend="italic">Lond</hi> [<hi rend="italic">ursprünglicher</hi>]; De libertate eorum qui de feodis e. tenuerint <hi rend="italic">Pl S</hi></seg><seg type="translation" xml:lang="en" source="#claude">de ecclesia (-iis Lond) tenentibus Lond [more original]; De libertate eorum qui de feodis e. tenuerint Pl S</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_4.lnote.la.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">630</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">darüber</hi> feudo <hi rend="italic">Co</hi></seg><seg type="translation" xml:lang="en" source="#claude">feudo above it Co</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_4.lnote.la.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">630</biblScope></bibl><seg type="original" xml:lang="de">de recto <hi rend="italic">Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">de recto Lond</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>
