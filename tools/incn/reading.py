@@ -75,6 +75,14 @@ def ab_of(path, inst):
         m = re.findall(r'<ab type="liebermannText"[^>]*>(.*?)</ab>', s, re.S)
     return m
 
+SIGLA = {'HDi': 'H Di', 'IpHunt': 'Ip Hunt (Interpolator of Henry of Huntingdon)'}
+
+def witnesses(path):
+    """the sigla of Liebermann's texts in a clause file, in order"""
+    s = open(path, encoding='utf-8').read()
+    abbr = dict(re.findall(r'<witness xml:id="([^"]+)"><abbr>([^<]*)</abbr>', s))
+    return [abbr.get(w, w) for w in re.findall(r'<ab type="liebermannText"[^>]*corresp="#([^"]+)"', s)]
+
 def clean(x):
     x = re.sub(r'<ptr [^>]*/>', '', x)
     x = re.sub(r'<pb [^>]*/>', '', x)
@@ -108,9 +116,15 @@ def main():
             if not got:
                 print('nothing found for', r['id'], anchor, a, b)
         else:
-            for x in ab_of(os.path.join(LAWS, r['file']), False)[:1]:
-                out.append({'incn': r['clause'], 'id': r['id'], 'source': '', 'printed': 'list',
-                            'page': (re.search(r'<pb n="(\d+)"', x) or [None, ''])[1], 'text': clean(x)})
+            xs = ab_of(os.path.join(LAWS, r['file']), False)
+            if len(xs) > 1:
+                # several manuscripts' versions printed side by side (In Cn Inscr.: H Di | Ip Hunt)
+                sig = witnesses(os.path.join(LAWS, r['file']))
+                text = ''.join(f'<seg type="parallel"><label>{SIGLA.get(w, w)}</label>{clean(x)}</seg>' for w, x in zip(sig, xs))
+            else:
+                text = clean(xs[0]) if xs else ''
+            out.append({'incn': r['clause'], 'id': r['id'], 'source': '', 'printed': 'list',
+                        'page': (re.search(r'<pb n="(\d+)"', xs[0]) or [None, ''])[1] if xs else '', 'text': text})
     rub = []
     for r in by_anchor['InCn']:
         if r['clause'].startswith('Rb'):
