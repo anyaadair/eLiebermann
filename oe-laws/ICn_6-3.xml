@@ -68,6 +68,7 @@
       <change when="2026-10-19">Generated from row 1636 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 290.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS In added from Gesetze I, p. 291.</change>
+      <change when="2026-11-01" type="incn-type">Liebermann’s bold, spaced and smaller type in the Instituta Cnuti text marked by Claude from the page images; to be checked against the print.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -78,7 +79,7 @@
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="6.3" corresp="#wit-a"><pb n="290" ed="#liebermann"/>And æghwylc Cristen man eac for<ptr type="liebermannNote" n="1" target="#ICn_6-3.lnote.oe.1"/> his Drihtnes ege unrihthamed georne forbuge ⁊ godcunda lage rihtlice healdæn.<ptr type="liebermannNote" n="2" target="#ICn_6-3.lnote.oe.2"/></ab>
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="6.3" corresp="#wit-d-frags"><pb n="290" ed="#liebermann"/>And æghwilc Cristen man eac for his Drihtenes ege unrihthæmed georne forbuge ⁊ godcunde laga rihtlice healde.</ab>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="6.3" corresp="#wit-q"><pb n="290" ed="#liebermann"/>Et omnis Christianus pro timore sui Creatoris iniustum concubitum uitet et Dei<ptr type="liebermannNote" n="6" target="#ICn_6-3.lnote.oe.6-2"/> legem teneat.</ab>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="6.3" corresp="#wit-inst-cn"><pb n="291" ed="#liebermann"/>Omnem etiam Christianum obnixe precamur, fornicationem deuitare, leges et praecepta Dei diligenter custodire.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="6.3" corresp="#wit-inst-cn"><pb n="291" ed="#liebermann"/>Omnem etiam Christianum obnixe <hi rend="spaced">precamur</hi>, fornicationem deuitare, leges et <hi rend="spaced">praecepta</hi> Dei diligenter custodire.</ab>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="6.3" corresp="#wit-cons-cn"><pb n="291" ed="#liebermann"/>Omnis etiam Christianus pro timore Domini iniustum coitum diligenter uitet et diuinam legem recte custodiat.</ab>
         <ab type="editionText" xml:lang="ang" source="#robertson" n="6a.3" corresp="#wit-g-a"><pb n="162" ed="#robertson"/>And æghwylc Cristen mann eac for his Drihtenes ege unrihthæmed georne forbuge ⁊ godcunde lage rihtlice healde.</ab>
         <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-g-a"><pb n="240" ed="#rabin-doml"/>And æghwylc Cristen mann eac for his Drihtenes ege unrihthæmed georne forbuge and godcunde lage rihtlice healde.</ab>
