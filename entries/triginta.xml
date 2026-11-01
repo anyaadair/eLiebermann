@@ -19,6 +19,7 @@
     <encodingDesc>
       <listPrefixDef>
         <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
         <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
         <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
       </listPrefixDef>
@@ -34,7 +35,7 @@
           <orth>triginta</orth>
         </form>
         <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">triginta</hi> et unus dies <hi rend="italic"><ref type="abbreviation" target="gram:fur"><abbr>für</abbr></ref>: Monat und Tag</hi> <ref type="lawCode" target="law:ECf">ECf</ref> 6,1. 20,1a [<hi rend="italic">Zugabezahl zur Frist</hi>]</dictScrap>
-        <xr type="lawCode"><ref target="law:ECf">ECf 6,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:ECf_6-1">ECf 6,1</ref></xr>
         <xr type="lawCode"><ref target="law:ECf">ECf 20,1a</ref></xr>
       </entry>
     </body>
