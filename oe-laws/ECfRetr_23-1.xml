@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECfRetr_23-1">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf retr 23.1</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECfRetr_23-1</idno>
+        <idno type="citation">ECf retr 23.1</idno>
+        <idno type="lawCode">ECf retr</idno>
+        <idno type="lawCodeAnchor">ECfRetr</idno>
+        <idno type="clause">23.1</idno>
+        <idno type="citationKey">ECfRetr 23.1</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris: retractatus</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">648</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>c. 1140–59 (Liebermann, I p. 627)</date><note type="promulgation">c. 1140–59 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="23.1">
+        <head><ref type="lawCode" target="law:ECfRetr">ECf retr</ref> 23.1</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf retr 23.1"><pb n="648" ed="#liebermann"/>Quodsi<ptr type="liebermannNote" n="36" target="#ECfRetr_23-1.lnote.la.36"/> tertia nocte hospitatus fuerit, et alicui forisfecerit, habeat eum<ptr type="liebermannNote" n="13" target="#ECfRetr_23-1.lnote.la.13"/> ad rectum tanquam de propria<ptr type="liebermannNote" n="37" target="#ECfRetr_23-1.lnote.la.37"/> familia, quod Anglice dicitur<ptr type="liebermannNote" n="8" target="#ECfRetr_23-1.lnote.la.8"/>: Tƿa<ptr type="liebermannNote" n="38" target="#ECfRetr_23-1.lnote.la.38"/> niht<ptr type="liebermannNote" n="39" target="#ECfRetr_23-1.lnote.la.39"/> gest, þridde<ptr type="liebermannNote" n="40" target="#ECfRetr_23-1.lnote.la.40"/> niht<ptr type="liebermannNote" n="41" target="#ECfRetr_23-1.lnote.la.41"/> agen<ptr type="liebermannNote" n="42" target="#ECfRetr_23-1.lnote.la.42"/> heƿe<ptr type="liebermannNote" n="43" target="#ECfRetr_23-1.lnote.la.43"/>.</ab>
+        <note type="comparison" source="#liebermann" n="648"><label>printed alongside</label> <ref target="clause:ECf_23-1">ECf 23.1</ref></note>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 648 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECfRetr_23-1.lnote.la.fn.e" n="e" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">648</biblScope></bibl><seg type="original" xml:lang="de">zwei Nächte Gast, dritte Nacht [<hi rend="italic">vgl.</hi> 18, 3a] eigener Hausverband <hi rend="italic">Rl adow</hi> [Familiengenoss <hi rend="italic">übrige</hi>]. <hi rend="italic">Provinziell lebt noch</hi> hyne, hind; <hi rend="italic">Earle</hi> Landchar. 470</seg><seg type="translation" xml:lang="en" source="#claude">two nights a guest, the third night one’s own household Rl adow [member of the family, the others]. Regionally hyne, hind still lives on; Earle, Landchar. 470</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_23-1.lnote.la.36" n="36" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">648</biblScope></bibl><seg type="original" xml:lang="de">Quem si <hi rend="italic">Cb Ph Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">Quem si Cb Ph Lond</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_23-1.lnote.la.13" n="13" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">648</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Hv</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Hv</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_23-1.lnote.la.37" n="37" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">648</biblScope></bibl><seg type="original" xml:lang="de">prima <hi rend="italic">Cb</hi></seg><seg type="translation" xml:lang="en" source="#claude">prima Cb</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_23-1.lnote.la.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">648</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Ph</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Ph</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_23-1.lnote.la.38" n="38" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">648</biblScope></bibl><seg type="original" xml:lang="de">tua <hi rend="italic">Lb Va Ra Rc Ph;</hi> tuain <hi rend="italic">Hv;</hi> two <hi rend="italic">Lond;</hi> tƿam <hi rend="italic">Db</hi></seg><seg type="translation" xml:lang="en" source="#claude">tua Lb Va Ra Rc Ph; tuain Hv; two Lond; tƿam Db</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_23-1.lnote.la.39" n="39" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">648</biblScope></bibl><seg type="original" xml:lang="de">nihcte <hi rend="italic">Lb Rc;</hi> nihte <hi rend="italic">Va;</hi> nihicte <hi rend="italic">Ph;</hi> nicthe <hi rend="italic">Hv;</hi> nyght <hi rend="italic">K;</hi> nith <hi rend="italic">Co;</hi> nete <hi rend="italic">Db</hi></seg><seg type="translation" xml:lang="en" source="#claude">nihcte Lb Rc; nihte Va; nihicte Ph; nicthe Hv; nyght K; nith Co; nete Db</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_23-1.lnote.la.40" n="40" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">648</biblScope></bibl><seg type="original" xml:lang="de">bridde <hi rend="italic">Va;</hi> thredde <hi rend="italic">Ph Lond;</hi> thridde <hi rend="italic">Hv;</hi> þriddem <hi rend="italic">Db</hi></seg><seg type="translation" xml:lang="en" source="#claude">bridde Va; thredde Ph Lond; thridde Hv; þriddem Db</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_23-1.lnote.la.41" n="41" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">648</biblScope></bibl><seg type="original" xml:lang="de">nihct <hi rend="italic">Lb Ra;</hi> nihcte geste <hi rend="italic">Ph;</hi> nicht <hi rend="italic">Hv;</hi> het <hi rend="italic">Db;</hi> nyght <hi rend="italic">Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">nihct Lb Ra; nihcte geste Ph; nicht Hv; het Db; nyght Lond</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_23-1.lnote.la.42" n="42" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">648</biblScope></bibl><seg type="original" xml:lang="de">oghen <hi rend="italic">K;</hi> oghene <hi rend="italic">Co;</hi> hogen <hi rend="italic">Bra</hi>[<hi rend="italic">cton</hi>]; ayen <hi rend="italic">Ph;</hi> awen <hi rend="italic">Ra;</hi> hawen man (<hi rend="italic">statt</hi> a. h.) <hi rend="italic">Hv</hi></seg><seg type="translation" xml:lang="en" source="#claude">oghen K; oghene Co; hogen Bra[cton]; ayen Ph; awen Ra; hawen man (instead of a. h.) Hv</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_23-1.lnote.la.43" n="43" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">648</biblScope></bibl><seg type="original" xml:lang="de">hyne <hi rend="italic">Lond Bra;</hi> hine <hi rend="italic">Va Ph Ra Hv Cu;</hi> hinen <hi rend="italic">Lb;</hi> man <hi rend="italic">fügt zu Hv Va;</hi> men <hi rend="italic">fügt zu Ra</hi> [hina man: <hi rend="italic">domesticorum aliquis</hi>]</seg><seg type="translation" xml:lang="en" source="#claude">hyne Lond Bra; hine Va Ph Ra Hv Cu; hinen Lb; Hv Va add man; Ra adds men [hina man: domesticorum aliquis]</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>
