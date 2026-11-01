@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECfRetr_34-2c">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf retr 34.2c</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECfRetr_34-2c</idno>
+        <idno type="citation">ECf retr 34.2c</idno>
+        <idno type="lawCode">ECf retr</idno>
+        <idno type="lawCodeAnchor">ECfRetr</idno>
+        <idno type="clause">34.2c</idno>
+        <idno type="citationKey">ECfRetr 34.2c</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris: retractatus</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">663</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>c. 1140–59 (Liebermann, I p. 627)</date><note type="promulgation">c. 1140–59 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="34.2c">
+        <head><ref type="lawCode" target="law:ECfRetr">ECf retr</ref> 34.2c</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf retr 34.2c"><pb n="663" ed="#liebermann"/><ptr type="liebermannNote" n="11" target="#ECfRetr_34-2c.lnote.la.11"/>Cnutus totum<ptr type="liebermannNote" n="13" target="#ECfRetr_34-2c.lnote.la.13"/> <hi rend="bold">deinde</hi> suscepit<ptr type="liebermannNote" n="14" target="#ECfRetr_34-2c.lnote.la.14"/> Anglie principatum; regnauitque fere <hi rend="spaced">octodecim</hi> annis†.</ab>
+        <note type="comparison" source="#liebermann" n="663"><label>printed alongside</label> <ref target="clause:ECf_34-2c">ECf 34.2c</ref></note>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 663 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page; the words in bold are the Retractator’s changes to ECf, as Liebermann prints them.</note>
+        <note type="editorial">There is no note 12 in the ECf retr column of this page: Liebermann’s numbering goes from 11 to 13.</note>
+        <note type="editorial">Liebermann prints “†” and gives in the outer margin of the ECf retr column the dates †1016–35.</note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_34-2c.lnote.la.11" n="11" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">663</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">roth Cb;</hi> Chn. <hi rend="italic">Va Co;</hi> Chn. uero inde to. <hi rend="italic">Hv</hi></seg><seg type="translation" xml:lang="en" source="#claude">in red Cb; Chn. Va Co; Chn. uero inde to. Hv</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_34-2c.lnote.la.13" n="13" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">663</biblScope></bibl><seg type="original" xml:lang="de">d. t. <hi rend="italic">Cb;</hi> dei. su. to. <hi rend="italic">Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">d. t. Cb; dei. su. to. Lond</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_34-2c.lnote.la.14" n="14" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">663</biblScope></bibl><seg type="original" xml:lang="de">regnum su. A.; regnauitque <hi rend="italic">Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">regnum su. A.; regnauitque Hr</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECfRetr_34-2d">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf retr 34.2d</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECfRetr_34-2d</idno>
+        <idno type="citation">ECf retr 34.2d</idno>
+        <idno type="lawCode">ECf retr</idno>
+        <idno type="lawCodeAnchor">ECfRetr</idno>
+        <idno type="clause">34.2d</idno>
+        <idno type="citationKey">ECfRetr 34.2d</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris: retractatus</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">663</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>c. 1140–59 (Liebermann, I p. 627)</date><note type="promulgation">c. 1140–59 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="34.2d">
+        <head><ref type="lawCode" target="law:ECfRetr">ECf retr</ref> 34.2d</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf retr 34.2d"><pb n="663" ed="#liebermann"/>Quo <hi rend="bold">defuncto,</hi> Haraldus<ptr type="liebermannNote" n="15" target="#ECfRetr_34-2d.lnote.la.15"/><ptr type="liebermannNote" n="*" target="#ECfRetr_34-2d.lnote.la.star"/>, falso<ptr type="liebermannNote" n="16" target="#ECfRetr_34-2d.lnote.la.16"/> pene<ptr type="liebermannNote" n="17" target="#ECfRetr_34-2d.lnote.la.17"/> ab omnibus putatus filius<ptr type="liebermannNote" n="18" target="#ECfRetr_34-2d.lnote.la.18"/>, successit<ptr type="liebermannNote" n="19" target="#ECfRetr_34-2d.lnote.la.19"/> et quinque annis regnauit††.</ab>
+        <note type="comparison" source="#liebermann" n="663"><label>printed alongside</label> <ref target="clause:ECf_34-2d">ECf 34.2d</ref></note>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 663 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page; the words in bold are the Retractator’s changes to ECf, as Liebermann prints them.</note>
+        <note type="editorial">Liebermann prints “††” and gives in the outer margin of the ECf retr column the dates ††1035–39.</note>
+        <note type="editorial">The note (*) is printed across the whole page; given with both columns.</note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_34-2d.lnote.la.star" n="*" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">663</biblScope></bibl><seg type="original" xml:lang="de">Harefot (Herewod <hi rend="italic">K</hi>), filius Chnuti et Elwyne <hi rend="italic">Lond;</hi> Haral. <hi rend="italic">S Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">Harefot (Herewod K), filius Chnuti et Elwyne Lond; Haral. S Hr</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECfRetr_34-2d.lnote.la.fn.c" n="c" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">663</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Cnuts Vaterschaft bezweifeln</hi> Ann. Anglosax., Flor., Encom. Emmae</seg><seg type="translation" xml:lang="en" source="#claude">Cnut’s paternity is doubted by the Ann. Anglosax., Florence, and the Encom. Emmae</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECfRetr_34-2d.lnote.la.fn.d" n="d" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">663</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vielmehr</hi> IV</seg><seg type="translation" xml:lang="en" source="#claude">rather IV</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_34-2d.lnote.la.15" n="15" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">663</biblScope></bibl><seg type="original" xml:lang="de">Harol. <hi rend="italic">Cb</hi></seg><seg type="translation" xml:lang="en" source="#claude">Harol. Cb</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_34-2d.lnote.la.16" n="16" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">663</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Lond;</hi> f. p. <hi rend="italic">fehlt Hv, wo</hi> illius</seg><seg type="translation" xml:lang="en" source="#claude">lacking in Lond; f. p. lacking in Hv, where illius</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_34-2d.lnote.la.17" n="17" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">663</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">so Cb;</hi> fi. (pius <hi rend="italic">Lb Va Ph</hi>) pe. ab o. pu. s. <hi rend="italic">übr.</hi></seg><seg type="translation" xml:lang="en" source="#claude">so Cb; fi. (pius Lb Va Ph) pe. ab o. pu. s. the others</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_34-2d.lnote.la.18" n="18" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">663</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">aus K Co; fehlt Lb</hi></seg><seg type="translation" xml:lang="en" source="#claude">from K Co; lacking in Lb</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_34-2d.lnote.la.19" n="19" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">663</biblScope></bibl><seg type="original" xml:lang="de">regnum suscepit <hi rend="italic">Hv</hi></seg><seg type="translation" xml:lang="en" source="#claude">regnum suscepit Hv</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>
