@@ -98,11 +98,59 @@ def apply(col):
     s = s[:i] + chg + s[i:]
     open(path, 'w', encoding='utf-8').write(s)
 
+def editorial(cols):
+    """A column's 'editorial' sentences become the clause's visible editor's note (data/clause-order.json
+    'notes', shown on the clause page); added once, after any note already there."""
+    import json
+    p = os.path.join(ROOT, 'data', 'clause-order.json')
+    s = open(p, encoding='utf-8').read()
+    data = json.loads(s)
+    changed = False
+    changes = []
+    for col in cols:
+        for e in col.get('editorial', []):
+            code, clause = col['clause'].split('_', 1)
+            m = re.search(r'<idno type="lawCode">([^<]*)</idno>.*?<idno type="clause">([^<]*)</idno>',
+                          open(os.path.join(ROOT, 'oe-laws', col['clause'] + '.xml'), encoding='utf-8').read(), re.S)
+            code, clause = m.group(1), m.group(2)
+            notes = data.setdefault('notes', {}).setdefault(code, {})
+            old = notes.get(clause, '')
+            if e in old:
+                continue
+            notes[clause] = (old + ' ' + e).strip()
+            changed = True
+            changes.append((code, clause))
+    if changed:
+        # write only the changed lines, keeping the file's layout (one line per clause under each code)
+        for code, clause in changes:
+                text = data['notes'][code][clause]
+                line = '   ' + json.dumps(clause, ensure_ascii=False) + ': ' + json.dumps(text, ensure_ascii=False)
+                blk = s.index('"notes": {')
+                cstart = s.find('\n  ' + json.dumps(code, ensure_ascii=False) + ': {', blk)
+                if cstart < 0:
+                    s = s[:blk + len('"notes": {')] + '\n  ' + json.dumps(code, ensure_ascii=False) + ': {\n' + line + '\n  },' + s[blk + len('"notes": {'):]
+                    continue
+                cend = s.index('\n  }', cstart + 1)
+                if cstart < s.find('\n  ' + json.dumps(code, ensure_ascii=False) + ': {"', blk) < cend:
+                    raise SystemExit('one-line note block for ' + code + ': add the note by hand')
+                block = s[cstart:cend]
+                m = re.search(r'\n   ' + re.escape(json.dumps(clause, ensure_ascii=False)) + r': "(?:[^"\\]|\\.)*"', block)
+                if m:
+                    block = block[:m.start()] + '\n' + line + block[m.end():]
+                else:
+                    first = block.index('\n', 1)
+                    block = block[:first] + '\n' + line + ',' + block[first:]
+                s = s[:cstart] + block + s[cend:]
+        json.loads(s)
+        open(p, 'w', encoding='utf-8').write(s)
+
 def main():
     n = 0
+    cols = []
     for f in sorted(glob.glob(os.path.join(ROOT, 'tools', 'incn', 'pages', 'p*.py'))):
         for col in runpy.run_path(f)['COLUMNS']:
-            apply(col); n += 1
+            apply(col); n += 1; cols.append(col)
+    editorial(cols)
     print(n, 'columns')
 
 if __name__ == '__main__':
