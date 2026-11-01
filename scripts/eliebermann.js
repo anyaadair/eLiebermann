@@ -1374,6 +1374,7 @@ ${translation}
                 const rend = attr('rend');
                 if (rend === 'bold') return '<strong>' + inner() + '</strong>';
                 if (rend === 'italic') return '<em>' + inner() + '</em>';
+                if (rend === 'spaced') return '<span class="spaced">' + inner() + '</span>';
                 if (rend === 'superscript') {
                     // A raised number after a citation ("Hn 29,4³⁹") is the number of
                     // Liebermann's footnote at that passage in vol. I, usually a manuscript reading.
@@ -1434,7 +1435,10 @@ ${translation}
             case 'pb': return `<span class="pb" title="Page ${escapeXml(attr('n'))} of the printed volume">[p. ${escapeXml(attr('n'))}]</span>`;
             case 'p': return '<p>' + inner() + '</p>';
             // <head rend="sub"> is a subheading within a section (site pages).
-            case 'head': return attr('rend') === 'sub' ? '<h3>' + inner() + '</h3>' : '<h2>' + inner() + '</h2>';
+            case 'head': {
+                const hid = node.getAttribute('xml:id') ? ' id="' + node.getAttribute('xml:id') + '"' : '';   // a heading others link to
+                return attr('rend') === 'sub' ? '<h3' + hid + '>' + inner() + '</h3>' : '<h2' + hid + '>' + inner() + '</h2>';
+            }
             case 'list': {
                 const tag = attr('rend') === 'numbered' ? 'ol' : 'ul';
                 return `<${tag}>` + inner() + `</${tag}>`;

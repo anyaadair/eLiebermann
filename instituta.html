@@ -1,0 +1,94 @@
+---
+title: Instituta Cnuti, read in order
+section: laws
+description: The Instituta Cnuti aliorumque regum Anglorum, read in the translator's own order, assembled from the places where Liebermann prints it.
+scripts:
+  - "ROOT/scripts/eliebermann.js"
+---
+<article class="incn-reading">
+<h1>Instituta Cnuti, read in order</h1>
+<p class="lede">The <i>Instituta Cnuti aliorumque regum Anglorum</i>, a Latin translation of Old English laws made soon after the Conquest (Liebermann: 1095–1135, probably 1103–20), read from beginning to end.</p>
+
+<details class="incn-about" open>
+  <summary>About this text and this page</summary>
+  <p>Liebermann never prints the <i>Instituta</i> as one continuous text. Most of it translates the laws of Cnut, of Alfred and Ine, of Edgar, and a group of short texts on rank and oaths (Mirce, Að, Hadbot, Geþyncðo, Grið), and he prints each passage once only, as a Latin column beside the Old English it translates. His list of the work’s chapters (Gesetze I, pp. 612–615) gives in full only what has no Old English source, and points with a short quotation (“Si quis latro — — librum pęnitentialem; o. S. 343–47”) to the rest. This page puts the passages back together in the translator’s order, following that list. Each passage is labelled with its chapter of the <i>Instituta</i> and links to the clause page where Liebermann prints it, with his notes and the Old English beside it.</p>
+  <p><strong>Numbering.</strong> The three books are Liebermann’s division. Books I and II translate I and II Cnut and are numbered to match them, so that In Cn II 54 translates II Cnut 54; the translator’s additions from other laws carry letters (In Cn I 12c is the third addition after Cnut’s I 12). Book III is a patchwork of Ine, Alfred, the texts on rank, and about a dozen chapters (III 45,4–55, 57–59) whose Old English source is lost. The rubrics are not the author’s and are given separately at the end.</p>
+  <p><strong>Liebermann’s type.</strong> In the columns he prints beside the Old English, <strong>bold</strong> marks what differs from the source in content, <span class="spaced">spaced</span> type what is reworded on purpose; <span class="small-type">smaller type</span> marks words taken word for word from a source. Round brackets give a second version of the same words that Liebermann thought was also the author’s (<a href="editorial.html#liebermann-type">more</a>). These signs are being restored to the database text by text; some passages do not yet show them.</p>
+  <p><strong>A caution.</strong> Liebermann’s edition of the <i>Instituta</i> has been criticised. Bruce O’Brien (‘The <i>Instituta Cnuti</i> and the Translation of English Law’, <i>Anglo-Norman Studies</i> 25 (2003), 177–97) found 54 errors of transcription in the title, prologue and first three chapters alone; showed that the manuscript Rl is only a copy of the Textus Roffensis (H), and that Cb is a reviser’s text which Liebermann trusted too far; and noted that Liebermann marks only the larger additions in bold, and never what the translator leaves out. He called for a new edition, which has not yet appeared. The text here is Liebermann’s, and should be read with that in mind.</p>
+</details>
+
+<p class="incn-jump" id="incn-jump"></p>
+<div id="incn-text"><p class="loading">Loading…</p></div>
+</article>
+
+<style>
+.incn-reading { max-width: 46rem; margin: 0 auto; }
+.incn-about { margin: 1rem 0 1.5rem; padding: .75rem 1rem; border-left: 3px solid var(--rule, #ddd); background: var(--panel, rgba(0,0,0,.02)); }
+.incn-about summary { cursor: pointer; font-weight: 600; }
+.incn-about p { font-size: .95rem; }
+.incn-jump a { margin-right: .75rem; }
+.incn-book { margin-top: 2rem; }
+.incn-passage { display: grid; grid-template-columns: 7.5rem 1fr; gap: .25rem 1rem; margin: .55rem 0; }
+.incn-label { font-size: .85rem; color: var(--muted); padding-top: .2rem; }
+.incn-label a { color: inherit; }
+.incn-label .incn-src { display: block; font-size: .8rem; }
+.incn-text-p { margin: 0; font-size: 1.08rem; }
+.incn-rubrics { margin-top: 2rem; }
+@media (max-width: 40rem) { .incn-passage { grid-template-columns: 1fr; } }
+</style>
+
+<script>
+(function () {
+    const root = window.SITE_ROOT || '';
+    const box = document.getElementById('incn-text');
+    const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+    // the TEI inline markup of a passage as HTML: Liebermann's kinds of type, his round brackets
+    function render(xml) {
+        const doc = new DOMParser().parseFromString('<x xmlns="http://www.tei-c.org/ns/1.0">' + xml + '</x>', 'application/xml');
+        const walk = node => [...node.childNodes].map(n => {
+            if (n.nodeType === 3) return esc(n.nodeValue);
+            if (n.nodeType !== 1) return '';
+            const inner = walk(n), rend = n.getAttribute('rend') || '';
+            if (n.localName === 'hi') {
+                if (/bold/.test(rend)) return '<strong title="Liebermann’s bold type: differs in content from the source">' + inner + '</strong>';
+                if (/spaced/.test(rend)) return '<span class="spaced" title="Liebermann’s spaced type: reworded on purpose">' + inner + '</span>';
+                if (/\bsmall\b/.test(rend)) return '<span class="small-type" title="Liebermann’s smaller type: word for word from the source">' + inner + '</span>';
+                if (/italic/.test(rend)) return '<em>' + inner + '</em>';
+                if (/superscript/.test(rend)) return '<sup>' + inner + '</sup>';
+                return inner;
+            }
+            if (n.localName === 'seg' && n.getAttribute('type') === 'recension')
+                return '<span class="recension" title="Liebermann’s round brackets: the other version of these words">' + inner + '</span>';
+            return inner;
+        }).join('');
+        return walk(doc.documentElement);
+    }
+    const bookOf = c => (/^(I{1,3})\b/.exec(c) || [])[1] || '';
+    fetch(root + 'data/incn-reading.json').then(r => r.json()).then(data => {
+        let html = '', book = null, last = '';
+        const jump = [];
+        data.passages.forEach(p => {
+            const b = bookOf(p.incn);
+            if (b && b !== book) {
+                book = b;
+                jump.push(`<a href="#book-${b}">Book ${b}</a>`);
+                html += `<h2 class="incn-book" id="book-${b}">Book ${b}</h2>`;
+            }
+            const label = p.incn === last ? '' : 'In Cn ' + esc(p.incn);
+            last = p.incn;
+            const where = p.source ? 'beside ' + esc(p.source) : 'Liebermann’s list';
+            html += `<div class="incn-passage"><div class="incn-label">${label}<a class="incn-src" href="${root}law.html?id=${encodeURIComponent(p.id)}" title="The clause page, with Liebermann’s notes">${where}${p.page ? ', p. ' + esc(p.page) : ''}</a></div>`
+                + `<p class="incn-text-p clause-reading-text"${ELieb.langAttr('la')}>${render(p.text)}</p></div>`;
+        });
+        jump.push('<a href="#rubrics">Rubrics</a>');
+        html += '<section class="incn-rubrics" id="rubrics"><h2>Rubrics</h2><p class="muted small">The chapter headings found in some manuscripts (H, Cb, T and others). Liebermann prints them separately (Gesetze I, pp. 616–617); they are not the author’s.</p>';
+        data.rubrics.forEach(r => {
+            html += `<div class="incn-passage"><div class="incn-label"><a href="${root}law.html?id=${encodeURIComponent(r.id)}">${esc(r.incn)}</a></div><p class="incn-text-p clause-reading-text"${ELieb.langAttr('la')}>${render(r.text)}</p></div>`;
+        });
+        html += '</section>';
+        box.innerHTML = html;
+        document.getElementById('incn-jump').innerHTML = 'Go to: ' + jump.join('');
+        box.querySelectorAll('[data-lang]').forEach(p => window.ELieb && ELieb.setLang && ELieb.setLang(p, 'la'));
+    }).catch(() => { box.innerHTML = '<p class="notice error">The text couldn’t be loaded.</p>'; });
+})();
+</script>

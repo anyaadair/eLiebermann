@@ -47,6 +47,7 @@
           <witness xml:id="wit-bu"><abbr>Bu</abbr> <note type="manuscript">London, British Library, Burney MS 277</note></witness>
           <witness xml:id="wit-ot-frags"><abbr>Ot (frags.)</abbr> <note type="manuscript">London, British Library, Cotton Otho B.xi (damaged by fire, 1731)</note></witness>
           <witness xml:id="wit-so"><abbr>So</abbr> <note type="manuscript">William Somner's transcript of Cotton Otho B.xi (made before the fire)</note></witness>
+          <witness xml:id="wit-inst-cn"><abbr>Inst. Cn.</abbr> <note type="manuscript">Instituta Cnuti (Latin translation of Anglo-Saxon laws, c. 1100), as printed by Liebermann</note></witness>
         </listWit>
       </sourceDesc>
     </fileDesc>
@@ -69,6 +70,7 @@
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 62.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS B added from Gesetze I, p. 62.</change>
       <change when="2026-10" type="checked">Liebermann’s Latin text corrected against Gesetze I, p. 62: “hec” → “hęc”.</change>
+      <change when="2026-11-01" type="incn">Liebermann’s Instituta Cnuti column (Gesetze I p. 63) added by Claude, with his notes and his kinds of type; read from the page images; to be checked against the print.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -79,6 +81,7 @@
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="23.1" corresp="#wit-h"><pb n="62" ed="#liebermann"/>Gif æt ðissa misdæda hwylcre<ptr type="liebermannNote" n="9" target="#Af_23-1.lnote.oe.9"/> se hund losige, ga ðeos bot hweþre<ptr type="liebermannNote" n="10" target="#Af_23-1.lnote.oe.10"/> forþ.</ab>
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="23.1" corresp="#wit-b-no-prol"><pb n="62" ed="#liebermann"/>Gyf<ptr type="liebermannNote" n="5" target="#Af_23-1.lnote.oe.5"/> æt ðisra misdæda hwylcere se hund losige, ga ðeos bót ðeah hwæðere forð.</ab>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="23.1" corresp="#wit-q"><pb n="63" ed="#liebermann"/>Si in his forisfactis aliquibus<ptr type="liebermannNote" n="14" target="#Af_23-1.lnote.oe.14"/> canis perdatur, procedat tamen<ptr type="liebermannNote" n="15" target="#Af_23-1.lnote.oe.15"/> hęc emendatio.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="III 41" corresp="#wit-inst-cn"><pb n="63" ed="#liebermann"/>Et <hi rend="spaced">quamuis</hi> canis in tali facto perierit, tamen emendatio <hi rend="spaced">persoluatur</hi>.</ab>
         <ab type="editionText" xml:lang="ang" source="#attenborough" corresp="#wit-e"><pb n="74" ed="#attenborough"/>Gif æt ðissa<ptr type="editorNote" n="14" target="#Af_23-1.attnote.fn.14"/> misdæda hwelcere se hund losige, ga ðeos bót hwæðre<ptr type="editorNote" n="15" target="#Af_23-1.attnote.fn.15"/> forð.</ab>
         <ab type="editionText" xml:lang="ang" source="#jurasinski-and-oliver" n="27.1" corresp="#wit-e"><pb n="318" ed="#jurasinski-and-oliver"/>Gif æt ðissa misdæda hwelcere se hund losige, ga ðeos bót hwæðre forð.</ab>
         <ab type="translation" xml:lang="de" source="#liebermann"><pb n="63" ed="#liebermann"/>Wenn[gleich<ptr type="liebermannNote" n="1" target="#Af_23-1.lnote.de.1"/>] bei einer dieser Missethaten der Hund verloren geht, so trete diese Busse dennoch<ptr type="liebermannNote" n="2" target="#Af_23-1.lnote.de.2"/> ein.</ab>

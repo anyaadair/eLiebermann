@@ -41,13 +41,14 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-19">Generated from row 3798 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-11-01">Liebermann’s round brackets in the Instituta Cnuti text marked as the second recension (&lt;seg type="recension"&gt;; Vorrede p. V); brackets marked by Claude.</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="III 52">
         <head><ref type="lawCode" target="law:InCn">In Cn</ref> III 52</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="In Cn III 52" corresp="#wit-lat"><ptr type="liebermannNote" n="l" target="#InCn_III-52.lnote.oe.l"/><pb n="614" ed="#liebermann"/>Qui diuisionem<ptr type="liebermannNote" n="m" target="#InCn_III-52.lnote.oe.m"/> habet iuxta terram regis, claudat<ptr type="liebermannNote" n="n" target="#InCn_III-52.lnote.oe.n"/> contra regem aut custodiat aut dilectione aut prętio adquirat, si uoluerit aliquam (commoditatem<ptr type="liebermannNote" n="9" target="#InCn_III-52.lnote.oe.9"/>) in terra illa aisiam<ptr type="liebermannNote" n="o" target="#InCn_III-52.lnote.oe.o"/> habere.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="In Cn III 52" corresp="#wit-lat"><ptr type="liebermannNote" n="l" target="#InCn_III-52.lnote.oe.l"/><pb n="614" ed="#liebermann"/>Qui diuisionem<ptr type="liebermannNote" n="m" target="#InCn_III-52.lnote.oe.m"/> habet iuxta terram regis, claudat<ptr type="liebermannNote" n="n" target="#InCn_III-52.lnote.oe.n"/> contra regem aut custodiat aut dilectione aut prętio adquirat, si uoluerit aliquam <seg type="recension">(commoditatem<ptr type="liebermannNote" n="9" target="#InCn_III-52.lnote.oe.9"/>)</seg> in terra illa aisiam<ptr type="liebermannNote" n="o" target="#InCn_III-52.lnote.oe.o"/> habere.</ab>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 614 (two independent readings of the page images, differences settled against the page)</note>
         <note type="liebermannNote" subtype="textual" xml:id="InCn_III-52.lnote.oe.l" n="l" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">614</biblScope></bibl><seg type="original" xml:lang="de">III 52 <hi rend="italic">gehört vielleicht auch inhaltlich dem Verf.: er schilt Übergriffe königlicher Beamter auch</hi> II 69, 1, <hi rend="italic">o. S.</hi> 357</seg><seg type="translation" xml:lang="en" source="#claude">III 52 perhaps belongs to the author in its content as well: he also censures encroachments by royal officials in II 69, 1, above p. 357</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="InCn_III-52.lnote.oe.m" n="m" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">614</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Stück Land</hi></seg><seg type="translation" xml:lang="en" source="#claude">piece of land</seg></note>

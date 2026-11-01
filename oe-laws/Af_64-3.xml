@@ -45,6 +45,7 @@
           <witness xml:id="wit-bu"><abbr>Bu</abbr> <note type="manuscript">London, British Library, Burney MS 277</note></witness>
           <witness xml:id="wit-ot-frags"><abbr>Ot (frags.)</abbr> <note type="manuscript">London, British Library, Cotton Otho B.xi (damaged by fire, 1731)</note></witness>
           <witness xml:id="wit-so"><abbr>So</abbr> <note type="manuscript">William Somner's transcript of Cotton Otho B.xi (made before the fire)</note></witness>
+          <witness xml:id="wit-inst-cn"><abbr>Inst. Cn.</abbr> <note type="manuscript">Instituta Cnuti (Latin translation of Anglo-Saxon laws, c. 1100), as printed by Liebermann</note></witness>
         </listWit>
       </sourceDesc>
     </fileDesc>
@@ -65,6 +66,7 @@
       <change when="2026-10-19">Generated from row 517 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 84.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS B added from Gesetze I, p. 84.</change>
+      <change when="2026-11-01" type="incn">Liebermann’s Instituta Cnuti column (Gesetze I p. 85) added by Claude, with his notes and his kinds of type; read from the page images; to be checked against the print.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -75,6 +77,7 @@
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="64.3" corresp="#wit-h"><pb n="84" ed="#liebermann"/>Gif hit bið seo<ptr type="liebermannNote" n="5" target="#Af_64-3.lnote.oe.5"/> feorðe tá, ðær sculon VI scll' to bote.</ab>
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="64.3" corresp="#wit-b-no-prol"><pb n="84" ed="#liebermann"/>Gyf hit bið seo feorðe tá, ðar sculon syx scill' to bote.</ab>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="64.3" corresp="#wit-q"><pb n="85" ed="#liebermann"/>si quartus, VI sol.;</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="III 28" corresp="#wit-inst-cn"><pb n="85" ed="#liebermann"/>quartus VI sol.,</ab>
         <ab type="editionText" xml:lang="ang" source="#attenborough" corresp="#wit-e"><pb n="90" ed="#attenborough"/>Gif hit bið sio feorþe ta, ðær<ptr type="editorNote" n="4" target="#Af_64-3.attnote.fn.4"/> sculon VI scill. to bote.</ab>
         <ab type="editionText" xml:lang="ang" source="#jurasinski-and-oliver" n="67.3" corresp="#wit-e"><pb n="358" ed="#jurasinski-and-oliver"/>Gif hit bið sio feorþe ta, ðær sculon VI scill to bote.</ab>
         <ab type="translation" xml:lang="de" source="#liebermann"><pb n="85" ed="#liebermann"/>Wenn es die vierte Zehe ist, da gehören 6 Schill. zur Busse.</ab>

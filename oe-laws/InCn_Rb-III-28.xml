@@ -41,13 +41,14 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-19">Generated from row 3951 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-11-01">Liebermann’s round brackets in the Instituta Cnuti text marked as the second recension (&lt;seg type="recension"&gt;; Vorrede p. V); brackets marked by Claude.</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="Rb III 28">
         <head><ref type="lawCode" target="law:InCn">In Cn</ref> Rb III 28</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="In Cn Rb III 28" corresp="#wit-lat"><pb n="617" ed="#liebermann"/>De primo digito pedis (et<ptr type="liebermannNote" n="4" target="#InCn_Rb-III-28.lnote.oe.4"/> aliis).</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="In Cn Rb III 28" corresp="#wit-lat"><pb n="617" ed="#liebermann"/>De primo digito pedis <seg type="recension">(et<ptr type="liebermannNote" n="4" target="#InCn_Rb-III-28.lnote.oe.4"/> aliis)</seg>.</ab>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 617 (two independent readings of the page images, differences settled against the page)</note>
         <note type="liebermannNote" subtype="textual" xml:id="InCn_Rb-III-28.lnote.oe.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">617</biblScope></bibl><seg type="original" xml:lang="de">et a. <hi rend="italic">am Rande Corrector</hi></seg><seg type="translation" xml:lang="en" source="#claude">et a. in the margin, by a corrector</seg></note>
       </div>

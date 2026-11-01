@@ -41,13 +41,14 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-19">Generated from row 3791 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-11-01">Liebermann’s round brackets in the Instituta Cnuti text marked as the second recension (&lt;seg type="recension"&gt;; Vorrede p. V); brackets marked by Claude.</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="III 47">
         <head><ref type="lawCode" target="law:InCn">In Cn</ref> III 47</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="In Cn III 47" corresp="#wit-lat"><pb n="613" ed="#liebermann"/>pastio<ptr type="liebermannNote" n="p" target="#InCn_III-47.lnote.oe.p"/> proclamati<ptr type="liebermannNote" n="u" target="#InCn_III-47.lnote.oe.u"/> exulis, quod Angli dicunt (uocant<ptr type="liebermannNote" n="45" target="#InCn_III-47.lnote.oe.45"/>) bebodenes<ptr type="liebermannNote" n="v" target="#InCn_III-47.lnote.oe.v"/><ptr type="liebermannNote" n="46" target="#InCn_III-47.lnote.oe.46"/> utlage;</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="In Cn III 47" corresp="#wit-lat"><pb n="613" ed="#liebermann"/>pastio<ptr type="liebermannNote" n="p" target="#InCn_III-47.lnote.oe.p"/> proclamati<ptr type="liebermannNote" n="u" target="#InCn_III-47.lnote.oe.u"/> exulis, quod Angli dicunt <seg type="recension">(uocant<ptr type="liebermannNote" n="45" target="#InCn_III-47.lnote.oe.45"/>)</seg> bebodenes<ptr type="liebermannNote" n="v" target="#InCn_III-47.lnote.oe.v"/><ptr type="liebermannNote" n="46" target="#InCn_III-47.lnote.oe.46"/> utlage;</ab>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 613 (two independent readings of the page images, differences settled against the page)</note>
         <note type="liebermannNote" subtype="textual" xml:id="InCn_III-47.lnote.oe.p" n="p" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">613</biblScope></bibl><seg type="original" xml:lang="de">feorm <hi rend="italic">bot die Quelle</hi></seg><seg type="translation" xml:lang="en" source="#claude">the source had feorm</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="InCn_III-47.lnote.oe.u" n="u" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">613</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vgl. oben zu II Cn.</hi> 13, 2 gecydne</seg><seg type="translation" xml:lang="en" source="#claude">cf. above on II Cn. 13, 2 gecydne</seg></note>

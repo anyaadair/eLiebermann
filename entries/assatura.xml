@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">“In Cn” and “In” (Instituta Cnuti) linked to the law codes list.</change>
+      <change when="2026-11-01">Editor’s note: “In Cn III 61” is a slip for III 31 (Af 67); citation linked to Af 67, where the Instituta column now is.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,8 +36,9 @@
         <form type="lemma">
           <orth>assatura</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">assatura</hi> renum <hi rend="italic">Lendenbraten</hi> <ref type="lawCode" target="law:InCn">In Cn</ref> III 61 <hi rend="italic"><ref type="abbreviation" target="gram:fur"><abbr>für</abbr></ref></hi> lendenbræde <hi rend="italic">Lende</hi> <ref type="lawCode" target="law:Af">Af</ref> 67 [<hi rend="italic"><ref type="abbreviation" target="gram:verwechseltMit"><abbr>verwechselt mit</abbr></ref></hi> bræde <hi rend="italic">Braten</hi>]</dictScrap>
-        <xr type="lawCode"><ref target="law:InCn">In Cn III 61</ref></xr>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">assatura</hi> renum <hi rend="italic">Lendenbraten</hi> <ref type="lawCode" target="law:InCn">In Cn</ref> III 61<ptr type="editorNote" target="#edn-1"/> <hi rend="italic"><ref type="abbreviation" target="gram:fur"><abbr>für</abbr></ref></hi> lendenbræde <hi rend="italic">Lende</hi> <ref type="lawCode" target="law:Af">Af</ref> 67 [<hi rend="italic"><ref type="abbreviation" target="gram:verwechseltMit"><abbr>verwechselt mit</abbr></ref></hi> bræde <hi rend="italic">Braten</hi>]</dictScrap>
+        <note type="editorial" xml:id="edn-1">Liebermann’s “In Cn III 61” should be In Cn III 31: <hi rend="italic">assatura renum</hi> translates <hi rend="italic">lendenbræde</hi> of Alfred 67, and Liebermann prints it beside <ref target="clause:Af_67">Af 67</ref> (Gesetze I, p. 85).</note>
+        <xr type="lawCode"><ref target="clause:Af_67">In Cn III 61</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_67">Af 67</ref></xr>
       </entry>
     </body>
