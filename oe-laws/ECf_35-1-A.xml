@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECf_35-1-A">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf 35.1 A</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECf_35-1-A</idno>
+        <idno type="citation">ECf 35.1 A</idno>
+        <idno type="lawCode">ECf</idno>
+        <idno type="lawCodeAnchor">ECf</idno>
+        <idno type="clause">35.1 A</idno>
+        <idno type="citationKey">ECf 35, 1 A</idno>
+        <idno type="citationKey">ECf 35,1 A</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">664</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>1115–50, probably 1130–35 (Liebermann, I p. 627)</date><note type="promulgation">1115–50, probably 1130–35 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="35.1 A">
+        <head><ref type="lawCode" target="law:ECf">ECf</ref> 35.1 A</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 35.1 A"><pb n="664" ed="#liebermann"/>Fuitque<ptr type="liebermannNote" n="1" target="#ECf_35-1-A.lnote.la.1"/> predicta Margareta generosa<ptr type="liebermannNote" n="d" target="#ECf_35-1-A.lnote.la.fn.d"/> ualde et optima, scilicet ex parte patris ex nobili genere et sanguine regum Anglorum-Britonum<ptr type="liebermannNote" n="e" target="#ECf_35-1-A.lnote.la.fn.e"/><ptr type="liebermannNote" n="2" target="#ECf_35-1-A.lnote.la.2"/>, ex parte uero matris ex genere et sanguine regum Rugorum; sanctissimisque<ptr type="liebermannNote" n="3" target="#ECf_35-1-A.lnote.la.3"/> antecessoribus suis in bonis et laudabilibus et<ptr type="liebermannNote" n="4" target="#ECf_35-1-A.lnote.la.4"/> insignibus<ptr type="liebermannNote" n="5" target="#ECf_35-1-A.lnote.la.5"/> actibus consimilis, preclara effulsit.</ab>
+        <note type="comparisonPrinted" source="#liebermann">ECf. retr. 35. 35, 1</note>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 664 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
+        <note type="editorial">This passage is not part of ECf or ECf retr: it is one of the additions of the London collection (Leges Anglorum s. XIII in. Londoniis collectae), which Liebermann prints across the page after ECf 35, 1 as an insertion into ECf retr. 35, 1 (35, 1 A). The dictionary cites it as “ECf 35,1 A …”, so it is kept with ECf here.</note>
+        <note type="editorial">Liebermann prints some words here in smaller type (“ex genere”, “Rugorum”); they are taken over from ECf retr 35 and 35, 1, which his margin names (ECf. retr. 35. 35, 1).</note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_35-1-A.lnote.la.fn.d" n="d" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">664</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">ausser Margaretens Heiligkeit weiss der Londoner hier nichts Eigenes; er verficht weibliche Thronfolge: Eleonore von Bretagne, nicht Johann, hätte</hi> de iure <hi rend="italic">England erben müssen; der Schottenkönig sei</hi> uerus heres ultimi Edwardi; <hi rend="italic">mein</hi> Über Leg. Angl. <hi rend="italic">S.</hi> 66. 69</seg><seg type="translation" xml:lang="en" source="#claude">apart from Margaret’s sanctity the Londoner knows nothing of his own here; he champions female succession: Eleanor of Brittany, not John, ought de iure to have inherited England; the King of Scots, he says, is uerus heres ultimi Edwardi; my Über Leg. Angl. pp. 66. 69</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_35-1-A.lnote.la.fn.e" n="e" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">664</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">der Chronist von Lewes componirt</hi> Norm(an)-Angli; <hi rend="italic">hinter</hi> Liber de Hyda <hi rend="italic">p.</hi> 296</seg><seg type="translation" xml:lang="en" source="#claude">the chronicler of Lewes composes Norm(an)-Angli; after Liber de Hyda p. 296</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_35-1-A.lnote.la.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">664</biblScope></bibl><seg type="original" xml:lang="de">Fuit autem M. p. <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">Fuit autem M. p. Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_35-1-A.lnote.la.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">664</biblScope></bibl><seg type="original" xml:lang="de">et Bryt. <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">et Bryt. Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_35-1-A.lnote.la.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">664</biblScope></bibl><seg type="original" xml:lang="de">-mis <hi rend="italic">Co Or Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">-mis Co Or Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_35-1-A.lnote.la.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">664</biblScope></bibl><seg type="original" xml:lang="de">ac <hi rend="italic">Co;</hi> et i. <hi rend="italic">fehlt Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">ac Co; et i. lacking in Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_35-1-A.lnote.la.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">664</biblScope></bibl><seg type="original" xml:lang="de">-gnis <hi rend="italic">K</hi></seg><seg type="translation" xml:lang="en" source="#claude">-gnis K</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>
