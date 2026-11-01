@@ -43,6 +43,7 @@
       <change when="2026-10-19">Generated from row 3787 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-11-01">Liebermann’s round brackets in the Instituta Cnuti text marked as the second recension (&lt;seg type="recension"&gt;; Vorrede p. V); brackets marked by Claude.</change>
       <change when="2026-11-01" type="incn-type">Liebermann’s bold, spaced and smaller type in the Instituta Cnuti text marked by Claude from the page images; to be checked against the print.</change>
+      <change when="2026-11-01">Manuscript sigla that Liebermann prints run together in his notes to the Instituta Cnuti (“HRlDi”, “CbLb”) spaced for reading (“H Rl Di”, “Cb Lb”).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -53,7 +54,7 @@
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 613 (two independent readings of the page images, differences settled against the page)</note>
         <note type="liebermannNote" subtype="textual" xml:id="InCn_III-45.lnote.oe.l" n="l" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">613</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Verf. begünstigt den Priestercölibat öfters</hi></seg><seg type="translation" xml:lang="en" source="#claude">The author frequently favours clerical celibacy</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="InCn_III-45.lnote.oe.36" n="36" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">613</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Tinte wechselt H</hi></seg><seg type="translation" xml:lang="en" source="#claude">change of ink in H</seg></note>
-        <note type="liebermannNote" subtype="textual" xml:id="InCn_III-45.lnote.oe.37" n="37" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">613</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">aus HRlT; fehlt besser Cb</hi></seg><seg type="translation" xml:lang="en" source="#claude">from HRlT; better omitted, as in Cb</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="InCn_III-45.lnote.oe.37" n="37" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">613</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">aus H Rl T; fehlt besser Cb</hi></seg><seg type="translation" xml:lang="en" source="#claude">from H Rl T; better omitted, as in Cb</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="InCn_III-45.lnote.oe.l-2" n="l" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">332</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl</hi>. Einl. 9; <hi rend="italic">s. Gl</hi> Cölibat 4a. 5b; Geistliche 18</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf</hi>. Introduction 9; <hi rend="italic">see Gl</hi> Cölibat 4a. 5b; Geistliche 18</seg></note>
       </div>
     </body>
