@@ -19,6 +19,7 @@
     <encodingDesc>
       <listPrefixDef>
         <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
         <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
         <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
       </listPrefixDef>
@@ -35,7 +36,7 @@
           <orth>inventio</orth>
         </form>
         <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">inventio</hi> <hi rend="italic">Finden von Fahrhabe</hi> [<hi rend="italic"><ref type="abbreviation" target="gram:oder"><abbr>oder</abbr></ref> 'Fundstück'</hi>] <ref type="lawCode" target="law:ECf">ECf</ref> 24<hi rend="superscript">12</hi></dictScrap>
-        <xr type="lawCode" n="12"><ref target="law:ECf">ECf 24</ref></xr>
+        <xr type="lawCode" n="12"><ref target="clause:ECf_24">ECf 24</ref></xr>
       </entry>
     </body>
   </text>
