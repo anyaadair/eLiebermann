@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECf_34-1a">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf 34.1a</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECf_34-1a</idno>
+        <idno type="citation">ECf 34.1a</idno>
+        <idno type="lawCode">ECf</idno>
+        <idno type="lawCodeAnchor">ECf</idno>
+        <idno type="clause">34.1a</idno>
+        <idno type="citationKey">ECf 34.1a</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), pp. <biblScope unit="page">661–662</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>1115–50, probably 1130–35 (Liebermann, I p. 627)</date><note type="promulgation">1115–50, probably 1130–35 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="34.1a">
+        <head><ref type="lawCode" target="law:ECf">ECf</ref> 34.1a</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 34.1a"><pb n="661" ed="#liebermann"/>Et hoc<ptr type="liebermannNote" n="1" target="#ECf_34-1a.lnote.la.1"/> etiam<ptr type="liebermannNote" n="29" target="#ECf_34-1a.lnote.la.29"/> precati sunt eum<ptr type="liebermannNote" n="30" target="#ECf_34-1a.lnote.la.30"/> pro anima regis Eadwardi<ptr type="liebermannNote" n="31" target="#ECf_34-1a.lnote.la.31"/>, qui sibi concesserat regnum, et cuius erant leges, nec<ptr type="liebermannNote" n="32" target="#ECf_34-1a.lnote.la.32"/> aliorum exterorum. Tan<pb n="662" ed="#liebermann"/>dem consilio et precatu<ptr type="liebermannNote" n="a" target="#ECf_34-1a.lnote.la.fn.a"/> baronum<ptr type="liebermannNote" n="1" target="#ECf_34-1a.lnote.la.1-p662"/> adquieuit.<ptr type="liebermannNote" n="*" target="#ECf_34-1a.lnote.la.star"/> Et sic<ptr type="liebermannNote" n="2" target="#ECf_34-1a.lnote.la.2-p662"/> auctorizate sunt leges regis Eadwardi<ptr type="liebermannNote" n="3" target="#ECf_34-1a.lnote.la.3-p662"/>. [<hi rend="italic">Ad Do Wo Ck No Ed 1:</hi> auctoritate leges sunt confirmate in Eo qui uiuit et regnat per infinita seculorum<ptr type="liebermannNote" n="4" target="#ECf_34-1a.lnote.la.4-p662"/> secula. Amen!<ptr type="liebermannNote" n="5" target="#ECf_34-1a.lnote.la.5-p662"/>]</ab>
+        <note type="comparison" source="#liebermann" n="661"><label>printed alongside</label> <ref target="clause:ECfRetr_34-1a">ECf retr 34.1a</ref></note>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 661–662 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
+        <note type="editorial">Liebermann’s numbering of the notes in the ECf column starts again at 1 on p. 662: the notes 1–5 to the part of this clause on p. 662 are distinct from the notes 1 and 29–32 on p. 661.</note>
+        <note type="editorial">After “Et sic” Liebermann prints the rest of the sentence in two columns side by side: on the left “auctorizate sunt leges regis Eadwardi”, and on the right, headed “Ad Do Wo Ck No Ed 1”, the ending of those manuscripts. The right-hand column is given here in square brackets after the left-hand one.</note>
+        <note type="editorial">The note on the London collection’s interpolation (*) is printed across the whole page; it is given with both columns.</note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34-1a.lnote.la.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">661</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Ad Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34-1a.lnote.la.29" n="29" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">661</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Hk Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Hk Ad Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34-1a.lnote.la.30" n="30" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">661</biblScope></bibl><seg type="original" xml:lang="de">ut <hi rend="italic">fügt zu S</hi></seg><seg type="translation" xml:lang="en" source="#claude">S adds ut</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34-1a.lnote.la.31" n="31" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">661</biblScope></bibl><seg type="original" xml:lang="de">Ædw. <hi rend="italic">Hk S</hi></seg><seg type="translation" xml:lang="en" source="#claude">Ædw. Hk S</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34-1a.lnote.la.32" n="32" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">661</biblScope></bibl><seg type="original" xml:lang="de">ut non legibus al. suas permutaret leges. Tandem <hi rend="italic">Ad Do Ed 1</hi></seg><seg type="translation" xml:lang="en" source="#claude">ut non legibus al. suas permutaret leges. Tandem Ad Do Ed 1</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_34-1a.lnote.la.fn.a" n="a" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">662</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Barone, um</hi> 1070 <hi rend="italic">wesentlich Normannen, bitten ihren Normannischen Herrn um Angelsächsisches Recht!</hi></seg><seg type="translation" xml:lang="en" source="#claude">barons, around 1070 essentially Normans, ask their Norman lord for Anglo-Saxon law!</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34-1a.lnote.la.star" n="*" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">662</biblScope></bibl><seg type="original" xml:lang="de">Thomas uero archiepiscopus§ et Mauricius episcopus scripserunt propriis manibus omnia ista predicta per preceptum predicti regis Willelmi <hi rend="italic">interpolirt Lond.</hi> — §) Cantuariensis <hi rend="italic">fügt zu Ld</hi> [<hi rend="italic">fehlerhaft</hi>]; <hi rend="italic">die beiden Namen beginnen die Zeugenliste einer Urkunde Wilhelms I., die in der Gildhalle copirt war</hi> (Lib. custum. 28); <hi rend="italic">daher wohl bringt sie der Londoner hier anachronistisch: Thomas von York sass</hi> 1070—1100, <hi rend="italic">Morix von London</hi> 1086—1107. <hi rend="italic">Diess verschlimmert der Lichfielder o. S.</hi> 627*</seg><seg type="translation" xml:lang="en" source="#claude">Lond interpolates Thomas uero archiepiscopus§ et Mauricius episcopus scripserunt propriis manibus omnia ista predicta per preceptum predicti regis Willelmi. — §) Ld adds Cantuariensis [wrongly]; the two names begin the witness list of a charter of William I which had been copied in the Guildhall (Lib. custum. 28); that is probably why the Londoner brings them in here, anachronistically: Thomas of York sat 1070–1100, Maurice of London 1086–1107. The Lichfield man makes this worse, above p. 627*</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34-1a.lnote.la.1-p662" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">662</biblScope></bibl><seg type="original" xml:lang="de">suorum <hi rend="italic">fügt zu Ad Do Wo</hi></seg><seg type="translation" xml:lang="en" source="#claude">Ad Do Wo add suorum</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34-1a.lnote.la.2-p662" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">662</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Hr</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34-1a.lnote.la.3-p662" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">662</biblScope></bibl><seg type="original" xml:lang="de">Ædw. <hi rend="italic">Hk S</hi></seg><seg type="translation" xml:lang="en" source="#claude">Ædw. Hk S</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34-1a.lnote.la.4-p662" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">662</biblScope></bibl><seg type="original" xml:lang="de">secula seculorum <hi rend="italic">Do No</hi></seg><seg type="translation" xml:lang="en" source="#claude">secula seculorum Do No</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34-1a.lnote.la.5-p662" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">662</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">enden Ad Do.</hi> Explicit <hi rend="italic">fügt zu Wo;</hi> Finitur (finito <hi rend="italic">em.</hi>) libro, reddatur gratia Christo <hi rend="italic">fügt zu No</hi></seg><seg type="translation" xml:lang="en" source="#claude">Ad Do end here. Wo adds Explicit; No adds Finitur (finito emended) libro, reddatur gratia Christo</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>
