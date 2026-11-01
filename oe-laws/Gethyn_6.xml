@@ -54,6 +54,7 @@
       <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 458: “7” → “⁊”.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS In added from Gesetze I, p. 459.</change>
       <change when="2026-11-01">The Instituta Cnuti text marked as Latin (it had been taken for Old English because of the English words it keeps).</change>
+      <change when="2026-11-01" type="incn-type">Liebermann’s bold, spaced and smaller type in the Instituta Cnuti text marked by Claude from the page images; to be checked against the print.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -62,7 +63,7 @@
         <head><ref type="lawCode" target="law:Gethinctho">Geþyncðo</ref> 6</head>
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="6" corresp="#wit-h"><pb n="458" ed="#liebermann"/>⁊ gif mássere geþeah, þ<hi rend="italic">æt</hi> he ferde þrige ofer wíd sǽ be his agenum cræfte, se wæs þonne syððan þegenrihtes weorðe.</ab>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="6" corresp="#wit-q"><pb n="459" ed="#liebermann"/>Et si massere<ptr type="liebermannNote" n="2" target="#Gethyn_6.lnote.oe.2"/> ascenderet, ut ter magnum<ptr type="liebermannNote" n="3" target="#Gethyn_6.lnote.oe.3-2"/> mare<ptr type="liebermannNote" n="4" target="#Gethyn_6.lnote.oe.4-2"/> transfretaret per<ptr type="liebermannNote" n="5" target="#Gethyn_6.lnote.oe.5-2"/> proprium negotium suum, fuit deinde taini dignus rectitudine.</ab>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="6" corresp="#wit-in"><pb n="459" ed="#liebermann"/>[62] Si mercator ter mare transisset suo proprio sumptu, talis deinde erat liberalitate<ptr type="liebermannNote" n="3" target="#Gethyn_6.lnote.oe.3"/> dignus, quod dicunt þegenrihtes<ptr type="liebermannNote" n="4" target="#Gethyn_6.lnote.oe.4"/> þurðe<ptr type="liebermannNote" n="5" target="#Gethyn_6.lnote.oe.5"/>.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="6" corresp="#wit-in"><pb n="459" ed="#liebermann"/>[62] Si mercator ter mare transisset suo proprio sumptu, talis deinde erat liberalitate<ptr type="liebermannNote" n="3" target="#Gethyn_6.lnote.oe.3"/> dignus, <hi rend="spaced">quod dicunt</hi> þegenrihtes<ptr type="liebermannNote" n="4" target="#Gethyn_6.lnote.oe.4"/> þurðe<ptr type="liebermannNote" n="5" target="#Gethyn_6.lnote.oe.5"/>.</ab>
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="6" corresp="#wit-d"><pb n="458" ed="#liebermann"/>….</ab>
         <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-h"><pb n="10" ed="#rabin-doml"/>And gif massere geþeah þæt he ferde þrige ofer widsæ be his agenum cræfte, se wæs þonne syððan þegenrihtes weorðe.</ab>
         <ab type="translation" xml:lang="de" source="#liebermann"><ptr type="liebermannNote" n="a" target="#Gethyn_6.lnote.de1.a"/><pb n="459" ed="#liebermann"/>Und wenn ein Kaufmann [so] emporkam, dass er dreimal vermöge seiner eigenen Geschäftskraft<ptr type="liebermannNote" n="1" target="#Gethyn_6.lnote.de.1"/> übers offene Meer<ptr type="liebermannNote" n="2" target="#Gethyn_6.lnote.de.2"/> fuhr<ptr type="liebermannNote" n="3" target="#Gethyn_6.lnote.de.3"/>, der genoss dann fortan Thegnberechtigung.</ab>

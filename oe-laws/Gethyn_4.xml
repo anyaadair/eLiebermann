@@ -58,6 +58,7 @@
       <change when="2026-10" type="checked">Liebermann’s text of MS D added from Gesetze I, p. 456.</change>
       <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 456: “7; rihte,” → “⁊; rihte”.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS In added from Gesetze I, p. 457.</change>
+      <change when="2026-11-01" type="incn-type">Liebermann’s bold, spaced and smaller type in the Instituta Cnuti text marked by Claude from the page images; to be checked against the print.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -67,7 +68,7 @@
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="4" corresp="#wit-d"><pb n="456" ed="#liebermann"/>And se ðe swa geþogene forwyrhtan næfde, swore for silfne æft<hi rend="italic">er</hi> his rihte, oððe his þolode.</ab>
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="4" corresp="#wit-h"><pb n="456" ed="#liebermann"/>⁊ se þe swa geþogenne forwyrhtan næfde, swore for sylfne æfter his rihte oððe his þolode.</ab>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="4" corresp="#wit-q"><pb n="457" ed="#liebermann"/>Et qui sic promotum<ptr type="liebermannNote" n="12" target="#Gethyn_4.lnote.oe.12"/> hominem non habet, ipse causam suam superiuret uel amittat<ptr type="liebermannNote" n="13" target="#Gethyn_4.lnote.oe.13"/>.</ab>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="4" corresp="#wit-in"><pb n="457" ed="#liebermann"/>[61, 1] Qui autem talem<ptr type="liebermannNote" n="18" target="#Gethyn_4.lnote.oe.18"/> non haberet, per semetipsum id faceret aut caréret.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="4" corresp="#wit-in"><pb n="457" ed="#liebermann"/>[61, 1] Qui autem talem<ptr type="liebermannNote" n="18" target="#Gethyn_4.lnote.oe.18"/> non haberet, per semetipsum id <hi rend="spaced">faceret aut</hi> caréret.</ab>
         <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-h"><pb n="10" ed="#rabin-doml"/>And se þe swa geþogenne forwyrhtan næfde swore for sylfne æfter his rihte oððe his þolode.</ab>
         <ab type="translation" xml:lang="de" source="#liebermann"><pb n="457" ed="#liebermann"/>Und wer einen so hochgestiegenen Vertreter<ptr type="liebermannNote" n="1" target="#Gethyn_4.lnote.de.1"/> nicht hatte, der musste<ptr type="liebermannNote" n="2" target="#Gethyn_4.lnote.de.2"/> für sich selbst, um<ptr type="liebermannNote" n="3" target="#Gethyn_4.lnote.de.3"/> sein Recht [zu erstreiten,] schwören oder verlor es [seinen Process].</ab>
         <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">And whoever did not have so high-risen a representative had to swear for himself to [win] his right, or lost it [his suit].</ab>

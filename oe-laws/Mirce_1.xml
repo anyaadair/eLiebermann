@@ -63,6 +63,7 @@
       <change when="2026-10" type="checked">Liebermann’s text of MS Ld added from Gesetze I, p. 463.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS In added from Gesetze I, p. 463.</change>
       <change when="2026-10" type="checked">The modern editor’s translation corrected against Whitelock, p. 477: “In the law of the Mercians a ceorl's wergild is 200 shillings.” → “In the law of the Mercians a ceorl's wergild is 200 shillings. (expanded letters in italics: ceorl's)”.</change>
+      <change when="2026-11-01" type="incn-type">Liebermann’s bold, spaced and smaller type in the Instituta Cnuti text marked by Claude from the page images; to be checked against the print.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -74,7 +75,7 @@
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="1" corresp="#wit-h"><pb n="462" ed="#liebermann"/>Ceorles wergyld is on Myrcna lage CC scill'.</ab>
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="1" corresp="#wit-ld"><pb n="463" ed="#liebermann"/>Ceorles weregyld on Mercna land<ptr type="liebermannNote" n="b" target="#Mirce_1.lnote.oe.b"/><ptr type="liebermannNote" n="*" target="#Mirce_1.lnote.oe.star"/> biþ CC scill.</ab>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="1" corresp="#wit-q"><pb n="463" ed="#liebermann"/>Ceorles<ptr type="liebermannNote" n="2" target="#Mirce_1.lnote.oe.2"/> weregildum est in Mircenorum<ptr type="liebermannNote" n="3" target="#Mirce_1.lnote.oe.3"/> laga CC sol.</ab>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="1" corresp="#wit-in"><pb n="463" ed="#liebermann"/>Prętium hominis<ptr type="liebermannNote" n="1" target="#Mirce_1.lnote.oe.1-2"/>, quem superius<ptr type="liebermannNote" n="a" target="#Mirce_1.lnote.oe.a"/><ptr type="liebermannNote" n="2" target="#Mirce_1.lnote.oe.2-2"/> nominauimus ceorlman<ptr type="liebermannNote" n="3" target="#Mirce_1.lnote.oe.3-2"/>, secundum legem Merciorum sunt CC solidi.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="1" corresp="#wit-in"><pb n="463" ed="#liebermann"/>Prętium <hi rend="spaced">hominis</hi><ptr type="liebermannNote" n="1" target="#Mirce_1.lnote.oe.1-2"/>, <hi rend="bold">quem superius</hi><ptr type="liebermannNote" n="a" target="#Mirce_1.lnote.oe.a"/><ptr type="liebermannNote" n="2" target="#Mirce_1.lnote.oe.2-2"/><hi rend="bold"> nominauimus</hi> <hi rend="bold">ceorlman</hi><ptr type="liebermannNote" n="3" target="#Mirce_1.lnote.oe.3-2"/>, secundum legem Merciorum sunt CC solidi.</ab>
         <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-h"><pb n="14" ed="#rabin-doml"/>Ceorles wergyld is on Myrcna lage CC scillinga.</ab>
         <ab type="translation" xml:lang="de" source="#liebermann"><pb n="462" ed="#liebermann"/>Eines Gemeinfreien Wergeld ist in Mercier-Recht (Land <hi rend="italic">Ld</hi>) 200 Schill. [3¹/₃ Pfund].</ab>
         <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">A ceorl's wergild is by Mercian law (in the Mercian land, Ld) 200 shillings [3⅓ pounds].</ab>
