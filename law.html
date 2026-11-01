@@ -142,6 +142,39 @@ scripts:
         p.querySelectorAll('em, i').forEach(e => { if (!e.textContent) e.remove(); });
     }
 
+    // Liebermann's kinds of type in the Instituta Cnuti (Vorrede pp. V–VI): what each means, on hover and in a
+    // short key under the text, listing only the kinds that occur in it.
+    const TYPE_MEANING = {
+        bold: ['bold', 'differs in content from the source'],
+        spaced: ['spaced', 'reworded on purpose'],
+        small: ['smaller type', 'taken word for word from the source'],
+        recension: ['(round brackets, dotted underline)', 'the other version of the same words; Liebermann thinks both are the author’s']
+    };
+    function typeKey(a, p, box) {
+        const code = (tei(a.ownerDocument, 'idno').find(x => x.getAttribute('type') === 'lawCode') || {}).textContent || '';
+        if (a.getAttribute('corresp') !== '#wit-inst-cn' && code !== 'In Cn') return;
+        const found = [];
+        p.querySelectorAll('strong').forEach(x => { x.title = 'Liebermann’s bold type: ' + TYPE_MEANING.bold[1]; found.push('bold'); });
+        p.querySelectorAll('.spaced').forEach(x => { x.title = 'Liebermann’s spaced type: ' + TYPE_MEANING.spaced[1]; found.push('spaced'); });
+        if (p.querySelector('.small-type')) found.push('small');
+        if (p.querySelector('.recension')) found.push('recension');
+        const kinds = Object.keys(TYPE_MEANING).filter(k => found.includes(k));
+        if (!kinds.length) return;
+        const key = el('p', 'type-key small muted');
+        key.appendChild(el('strong', null, 'Liebermann’s type: '));
+        kinds.forEach((k, i) => {
+            if (i) key.appendChild(document.createTextNode('; '));
+            const w = el(k === 'bold' ? 'strong' : 'span', k === 'spaced' ? 'spaced' : k === 'small' ? 'small-type' : null, TYPE_MEANING[k][0]);
+            key.appendChild(w);
+            key.appendChild(document.createTextNode(' = ' + TYPE_MEANING[k][1]));
+        });
+        key.appendChild(document.createTextNode('. '));
+        const more = el('a', null, 'More');
+        more.href = (window.SITE_ROOT || '') + 'editorial.html#liebermann-type';
+        key.appendChild(more);
+        box.appendChild(key);
+    }
+
     function inline(node, opts) {
         const frag = document.createDocumentFragment();
         node.childNodes.forEach(n => {
@@ -168,6 +201,23 @@ scripts:
             if (name === 'pb') return;      // the page the text begins on: shown in its label (pageOf)
             if (name === 'lb') { frag.appendChild(el('br')); if (n.getAttribute('type') === 'paragraph') frag.appendChild(el('br')); return; }
             const rend = name === 'hi' ? (n.getAttribute('rend') || '') : '';
+            // Liebermann's smaller type: words taken over word for word from the source (Vorrede p. VI)
+            if (/\bsmall\b/.test(rend)) {
+                const out = el('span', 'small-type');
+                out.title = 'Liebermann prints this in smaller type: taken word for word from the source';
+                out.appendChild(inline(n, opts));
+                frag.appendChild(out);
+                return;
+            }
+            // Liebermann's round brackets in Instituta Cnuti and Quadripartitus: the author's other version
+            // of the same words, both authentic (Vorrede p. V)
+            if (name === 'seg' && n.getAttribute('type') === 'recension') {
+                const out = el('span', 'recension');
+                out.title = 'Liebermann’s round brackets: the other version of these words in the manuscripts (both, he thinks, the author’s own)';
+                out.appendChild(inline(n, opts));
+                frag.appendChild(out);
+                return;
+            }
             if (/superscript/.test(rend)) {
                 const out = el('sup');
                 out.appendChild(inline(n, opts));
@@ -511,6 +561,7 @@ scripts:
             const edNum = editorNumber(a, id);
             if (edNum) { p.dataset.num = edNum; p.dataset.numTitle = src.name + '’s clause ' + edNum; placeNum(p); }
             box.appendChild(p);
+            typeKey(a, p, box);
             // Liebermann's own notes, behind a button: textual notes on his texts (one button, on his first
             // text, for the numbers in all of them), Erklärungen on his German.
             if (a.getAttribute('type') === 'liebermannText') liebTexts.push([box, label, p, a]);
@@ -557,6 +608,7 @@ scripts:
             const lieb = a.getAttribute('type') === 'liebermannText';
             const n = a.getAttribute('n');
             add(left, a, [msLabel(a, wits),
+                a.getAttribute('corresp') === '#wit-inst-cn' && /^I{1,3}\b/.test(n || '') ? 'In Cn ' + n : '',
                 lieb ? (pageOf(a, src) ? 'Gesetze I, p. ' + pageOf(a, src) : '') : (n && n !== div.getAttribute('n') ? '§ ' + n : ''),
                 !lieb && pageOf(a, src) ? 'p. ' + pageOf(a, src) : '',
                 showLatin && a.getAttribute('xml:lang') === 'la' ? 'Latin' : '']);

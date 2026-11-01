@@ -1021,6 +1021,8 @@ a.timeline-bar:focus-visible { outline: 2px solid var(--link-hover); outline-off
 .lnotes__where { display: block; font-size: 0.85em; margin-top: 0.5em; }
 .spaced { letter-spacing: 0.14em; }
 .smallcaps { font-variant: small-caps; }
+.small-type { font-size: 0.84em; }
+.recension { text-decoration: underline dotted var(--muted); text-underline-offset: 0.2em; }
 
 .clause-parts { margin: 0.4rem 0 0; color: var(--muted); }
 /* A later editor's clause number inside one of Liebermann's clauses (tools/merge-parts.py): a small
