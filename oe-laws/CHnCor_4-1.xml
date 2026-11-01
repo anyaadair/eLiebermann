@@ -48,6 +48,7 @@
     <revisionDesc>
       <change when="2026-10-19">Generated from row 2490 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS Lat added from Gesetze I, p. 522.</change>
+      <change when="2026-11-01">Manuscript sigla that Liebermann prints run together (“HDi”, “HRl”, “PlS”, “THk”) spaced for reading (“H Di”, “H Rl”, “Pl S”, “T Hk”).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -60,7 +61,7 @@
         <note type="editorial">Added October 2026 from Robertson pp. 278–279 (text and translation); Liebermann’s text added from Gesetze I p. 522, October 2026 (two independent readings of the page images)</note>
         <note type="liebermannNote" subtype="textual" xml:id="CHnCor_4-1.lnote.oe.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">522</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt</hi> [<hi rend="italic">falsch</hi>] <hi rend="italic">Alb Haug Gl Co Or</hi></seg><seg type="translation" xml:lang="en" source="#claude">omitted [wrong] Alb Haug Gl Co Or</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="CHnCor_4-1.lnote.oe.6" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">522</biblScope></bibl><seg type="original" xml:lang="de">-quarius <hi rend="italic">HRl;</hi> -quior <hi rend="italic">Alb Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">-quarius HRl; -quior Alb Lond</seg></note>
-        <note type="liebermannNote" subtype="textual" xml:id="CHnCor_4-1.lnote.oe.7" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">522</biblScope></bibl><seg type="original" xml:lang="de">† debet <hi rend="italic">Alb;</hi> debeat <hi rend="italic">HRl</hi></seg><seg type="translation" xml:lang="en" source="#claude">† debet Alb; debeat HRl</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="CHnCor_4-1.lnote.oe.7" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">522</biblScope></bibl><seg type="original" xml:lang="de">† debet <hi rend="italic">Alb;</hi> debeat <hi rend="italic">H Rl</hi></seg><seg type="translation" xml:lang="en" source="#claude">† debet Alb; debeat H Rl</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="CHnCor_4-1.lnote.oe.a" n="a" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">297</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Vormund 5. a; Sippe 14d</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf. Gl</hi> Vormund 5. a; Sippe 14d</seg></note>
       </div>
     </body>

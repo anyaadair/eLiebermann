@@ -39,6 +39,7 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-19">Generated from row 4065 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-11-01">Manuscript sigla that Liebermann prints run together (“HDi”, “HRl”, “PlS”, “THk”) spaced for reading (“H Di”, “H Rl”, “Pl S”, “T Hk”).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -49,7 +50,7 @@
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 673 (two independent readings of the page images, differences settled against the page)</note>
         <note type="liebermannNote" subtype="textual" xml:id="LibLond_3-1.lnote.oe.26" n="26" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">673</biblScope></bibl><seg type="original" xml:lang="de">Sciendum itaque est, quod si quis ciuium for. <hi rend="italic">Horn</hi></seg><seg type="translation" xml:lang="en" source="#claude">Sciendum itaque est, quod si quis ciuium for. Horn</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="LibLond_3-1.lnote.oe.27" n="27" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">673</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">so Ai;</hi> forisf. <hi rend="italic">übr.</hi></seg><seg type="translation" xml:lang="en" source="#claude">thus Ai; forisf. the others</seg></note>
-        <note type="liebermannNote" subtype="textual" xml:id="LibLond_3-1.lnote.oe.28" n="28" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">673</biblScope></bibl><seg type="original" xml:lang="de">werre <hi rend="italic">PlS Co</hi></seg><seg type="translation" xml:lang="en" source="#claude">werre PlS Co</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="LibLond_3-1.lnote.oe.28" n="28" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">673</biblScope></bibl><seg type="original" xml:lang="de">werre <hi rend="italic">Pl S Co</hi></seg><seg type="translation" xml:lang="en" source="#claude">werre Pl S Co</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="LibLond_3-1.lnote.oe.29" n="29" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">673</biblScope></bibl><seg type="original" xml:lang="de">s. C. s. <hi rend="italic">fehlt Horn Alb</hi></seg><seg type="translation" xml:lang="en" source="#claude">s. C. s. missing in Horn Alb</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="LibLond_3-1.lnote.oe._" n="-" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">351</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Ebd</hi>. 58; busslos 3; Strafgeldfixum 1a. 17; Wergeld 27</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Ibid</hi>. 58; busslos 3; Strafgeldfixum 1a. 17; Wergeld 27</seg></note>
       </div>

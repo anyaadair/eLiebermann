@@ -48,6 +48,7 @@
     <revisionDesc>
       <change when="2026-10-19">Generated from row 2489 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS Lat added from Gesetze I, p. 522.</change>
+      <change when="2026-11-01">Manuscript sigla that Liebermann prints run together (“HDi”, “HRl”, “PlS”, “THk”) spaced for reading (“H Di”, “H Rl”, “Pl S”, “T Hk”).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -61,7 +62,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="CHnCor_4.lnote.oe.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">522</biblScope></bibl><seg type="original" xml:lang="de">† <hi rend="italic">fehlt Alb</hi></seg><seg type="translation" xml:lang="en" source="#claude">† omitted Alb</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="CHnCor_4.lnote.oe.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">522</biblScope></bibl><seg type="original" xml:lang="de">† su. et m. h. <hi rend="italic">Alb Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">† su. et m. h. Alb Lond</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="CHnCor_4.lnote.oe.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">522</biblScope></bibl><seg type="original" xml:lang="de">maritagium <hi rend="italic">Alb S</hi></seg><seg type="translation" xml:lang="en" source="#claude">maritagium Alb S</seg></note>
-        <note type="liebermannNote" subtype="textual" xml:id="CHnCor_4.lnote.oe.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">522</biblScope></bibl><seg type="original" xml:lang="de">* <hi rend="italic">fehlt HRl Gl; übergeschr. Sc 2; im Text Hg</hi></seg><seg type="translation" xml:lang="en" source="#claude">* omitted HRl Gl; written above Sc 2; in the text Hg</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="CHnCor_4.lnote.oe.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">522</biblScope></bibl><seg type="original" xml:lang="de">* <hi rend="italic">fehlt H Rl Gl; übergeschr. Sc 2; im Text Hg</hi></seg><seg type="translation" xml:lang="en" source="#claude">* omitted H Rl Gl; written above Sc 2; in the text Hg</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="CHnCor_4.lnote.oe.a" n="a" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">297</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl ebd</hi>.—Die Frau wird befragt im Ggs. zu <hi rend="italic">o</hi>. 3{a}</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf. Gl ibid</hi>.—The woman is consulted, in contrast to <hi rend="italic">above</hi> 3{a}</seg></note>
       </div>
     </body>

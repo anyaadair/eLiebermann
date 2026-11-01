@@ -74,6 +74,7 @@
       <change when="2026-10" type="checked">Liebermann’s text of MS In added from Gesetze I, p. 341.</change>
       <change when="2026-11-01">The Instituta Cnuti text marked as Latin (it had been taken for Old English because of the English words it keeps).</change>
       <change when="2026-11-01" type="incn-type">Liebermann’s bold, spaced and smaller type in the Instituta Cnuti text marked by Claude from the page images; to be checked against the print.</change>
+      <change when="2026-11-01">Manuscript sigla that Liebermann prints run together (“HDi”, “HRl”, “PlS”, “THk”) spaced for reading (“H Di”, “H Rl”, “Pl S”, “T Hk”).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -98,7 +99,7 @@
         <note type="textual" source="#rabin-doml">geladige hine: ladige B</note>
         <note type="liebermannNote" subtype="textual" xml:id="IICn_39.lnote.oe.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">341</biblScope></bibl><seg type="original" xml:lang="de">perim. sic i. <hi rend="italic">Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">perim. sic i. Hr</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IICn_39.lnote.oe.1-2" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">341</biblScope></bibl><seg type="original" xml:lang="de">m. a. <hi rend="italic">R</hi></seg><seg type="translation" xml:lang="en" source="#claude">m. a. R</seg></note>
-        <note type="liebermannNote" subtype="textual" xml:id="IICn_39.lnote.oe.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">341</biblScope></bibl><seg type="original" xml:lang="de">werel. <hi rend="italic">THk</hi></seg><seg type="translation" xml:lang="en" source="#claude">werel. THk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IICn_39.lnote.oe.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">341</biblScope></bibl><seg type="original" xml:lang="de">werel. <hi rend="italic">T Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">werel. T Hk</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IICn_39.lnote.oe.1-3" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">340</biblScope></bibl><seg type="original" xml:lang="de">Gif <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">Gif Ld</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IICn_39.lnote.oe.2-2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">340</biblScope></bibl><seg type="original" xml:lang="de">-ðegn <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">-ðegn Ld</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IICn_39.lnote.oe.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">340</biblScope></bibl><seg type="original" xml:lang="de">buton <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">buton Ld</seg></note>

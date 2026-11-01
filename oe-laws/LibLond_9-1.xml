@@ -39,6 +39,7 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-19">Generated from row 4079 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-11-01">Manuscript sigla that Liebermann prints run together (“HDi”, “HRl”, “PlS”, “THk”) spaced for reading (“H Di”, “H Rl”, “Pl S”, “T Hk”).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -56,7 +57,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="LibLond_9-1.lnote.oe.27" n="27" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">675</biblScope></bibl><seg type="original" xml:lang="de">facere <hi rend="italic">Horn</hi></seg><seg type="translation" xml:lang="en" source="#claude">facere Horn</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="LibLond_9-1.lnote.oe.28" n="28" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">675</biblScope></bibl><seg type="original" xml:lang="de">-dum. Nequid <hi rend="italic">Ai</hi></seg><seg type="translation" xml:lang="en" source="#claude">-dum. Nequid Ai</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="LibLond_9-1.lnote.oe.29" n="29" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">675</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Horn</hi></seg><seg type="translation" xml:lang="en" source="#claude">missing in Horn</seg></note>
-        <note type="liebermannNote" subtype="textual" xml:id="LibLond_9-1.lnote.oe.30" n="30" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">675</biblScope></bibl><seg type="original" xml:lang="de">quam <hi rend="italic">bis Ende fehlt PlS</hi></seg><seg type="translation" xml:lang="en" source="#claude">quam to the end omitted in PlS</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="LibLond_9-1.lnote.oe.30" n="30" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">675</biblScope></bibl><seg type="original" xml:lang="de">quam <hi rend="italic">bis Ende fehlt Pl S</hi></seg><seg type="translation" xml:lang="en" source="#claude">quam to the end omitted in Pl S</seg></note>
       </div>
     </body>
   </text>

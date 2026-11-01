@@ -39,6 +39,7 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-19">Generated from row 4077 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-11-01">Manuscript sigla that Liebermann prints run together (“HDi”, “HRl”, “PlS”, “THk”) spaced for reading (“H Di”, “H Rl”, “Pl S”, “T Hk”).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -56,8 +57,8 @@
         <note type="liebermannNote" subtype="textual" xml:id="LibLond_8-6.lnote.oe.13" n="13" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">675</biblScope></bibl><seg type="original" xml:lang="de">-id <hi rend="italic">Ai</hi></seg><seg type="translation" xml:lang="en" source="#claude">-id Ai</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="LibLond_8-6.lnote.oe.14" n="14" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">675</biblScope></bibl><seg type="original" xml:lang="de">p. m. <hi rend="italic">PlS;</hi> moiste drap <hi rend="italic">Ord</hi></seg><seg type="translation" xml:lang="en" source="#claude">p. m. PlS; moiste drap Ord</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="LibLond_8-6.lnote.oe.15" n="15" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">675</biblScope></bibl><seg type="original" xml:lang="de">nec opus aliquod <hi rend="italic">Horn Alb;</hi> opera aliqua <hi rend="italic">Cons Douai</hi></seg><seg type="translation" xml:lang="en" source="#claude">nec opus aliquod Horn Alb; opera aliqua Cons Douai</seg></note>
-        <note type="liebermannNote" subtype="textual" xml:id="LibLond_8-6.lnote.oe.16" n="16" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">675</biblScope></bibl><seg type="original" xml:lang="de">que <hi rend="italic">PlS Cons Douai</hi></seg><seg type="translation" xml:lang="en" source="#claude">que PlS Cons Douai</seg></note>
-        <note type="liebermannNote" subtype="textual" xml:id="LibLond_8-6.lnote.oe.17" n="17" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">675</biblScope></bibl><seg type="original" xml:lang="de">-neat <hi rend="italic">PlS Cons;</hi> o. p. <hi rend="italic">S;</hi> -nent <hi rend="italic">Douai</hi></seg><seg type="translation" xml:lang="en" source="#claude">-neat PlS Cons; o. p. S; -nent Douai</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="LibLond_8-6.lnote.oe.16" n="16" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">675</biblScope></bibl><seg type="original" xml:lang="de">que <hi rend="italic">Pl S Cons Douai</hi></seg><seg type="translation" xml:lang="en" source="#claude">que Pl S Cons Douai</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="LibLond_8-6.lnote.oe.17" n="17" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">675</biblScope></bibl><seg type="original" xml:lang="de">-neat <hi rend="italic">Pl S Cons;</hi> o. p. <hi rend="italic">S;</hi> -nent <hi rend="italic">Douai</hi></seg><seg type="translation" xml:lang="en" source="#claude">-neat Pl S Cons; o. p. S; -nent Douai</seg></note>
       </div>
     </body>
   </text>
