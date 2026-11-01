@@ -19,6 +19,7 @@
     <encodingDesc>
       <listPrefixDef>
         <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
         <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
         <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
       </listPrefixDef>
@@ -35,7 +36,7 @@
           <orth>astiged</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">astiged</hi> [<ref type="abbreviation" target="gram:sic"><abbr>!</abbr></ref>] 3, <hi rend="italic">steigt</hi> [<hi rend="italic"><ref type="abbreviation" target="gram:bildlich"><abbr>bildlich</abbr></ref></hi>]; seofon endebyrdnyssum preost up~ <ref type="lawCode" target="law:Ath">Að</ref> 2 <ref type="lawCode" target="law:Ld">Ld</ref>; geþeah <hi rend="italic"><ref type="abbreviation" target="gram:ubrigeHandschriften"><abbr>übr.</abbr></ref></hi></dictScrap>
-        <xr type="lawCode"><ref target="law:Ath">Að 2</ref></xr>
+        <xr type="lawCode"><ref target="clause:Ath_2">Að 2</ref></xr>
       </entry>
     </body>
   </text>

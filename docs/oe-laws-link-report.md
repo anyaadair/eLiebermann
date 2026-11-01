@@ -5,21 +5,21 @@ Made by `tools/link-citations.py --letter ALL`. It is replaced each time the too
 ```
 All entries: 9090 (with a law code citation list: 6466)
 Citations in their lists: 31791
+  linked, exact              34
   linked, already linked  30740
-  LINKED TO A CLAUSE:       30740  (97% of all citations; 99% of those with a clause number to a code in the database)
-  not linked, clause not found            231
+  LINKED TO A CLAUSE:       30774  (97% of all citations; 99% of those with a clause number to a code in the database)
+  not linked, clause not found            197
   not linked, citation not understood       1
   not linked, code not in database        819
-Entries changed: 38; entries whose whole list is linked: 5834
+Entries changed: 70; entries whose whole list is linked: 5857
 ```
 
 ## The code is in the database but no clause file has that number
 
-By code: Ath (34), Ger (33), Iudex (19), Af (15), InCn (13), IICn (13), VAs (10), Ine (8), ICn (6), IIAs (6), IIAtr (5), Grith (4), IudDeiV (3), IIIEm (3), IIEg (3)
+By code: Ger (33), Iudex (19), Af (15), InCn (13), IICn (13), VAs (10), Ine (8), ICn (6), IIAs (6), IIAtr (5), Grith (4), IudDeiV (3), IIIEm (3), IIEg (3), VIAs (3)
 
 Citations (with how many times each occurs):
 
-- Að 2 ×34
 - Ger 15,1 ×21
 - Iudex 1 ×19
 - Ger 18,1 ×10
@@ -79,6 +79,7 @@ Citations (with how many times each occurs):
 - II As 34
 - II As 43,1
 - II As 44
+- II As 6,4
 
 ## The code has no clause files
 
