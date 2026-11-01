@@ -39,6 +39,7 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-19">Generated from row 3725 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-11-01">Manuscript sigla that Liebermann prints run together in his notes (“MHkBr”, “HB”) spaced for reading (“M Hk Br”, “H B”).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -50,8 +51,8 @@
         <note type="liebermannNote" subtype="textual" xml:id="QuadrII_6.lnote.oe.e" n="e" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">544</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">den vorigen Brief hatte vielmehr Wilhelm Warelwast, später Bischof von Exeter, bestellt</hi></seg><seg type="translation" xml:lang="en" source="#claude">the previous letter had in fact been delivered by William Warelwast, later bishop of Exeter</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="QuadrII_6.lnote.oe.f" n="f" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">544</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vielmehr über die Verleihung des Pallium</hi></seg><seg type="translation" xml:lang="en" source="#claude">rather about the grant of the pallium</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="QuadrII_6.lnote.oe.19" n="19" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">544</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">am Rande roth</hi> XVI <hi rend="italic">Hk; Br kürzt</hi></seg><seg type="translation" xml:lang="en" source="#claude">in the margin in red XVI Hk; Br abridges</seg></note>
-        <note type="liebermannNote" subtype="textual" xml:id="QuadrII_6.lnote.oe.20" n="20" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">544</biblScope></bibl><seg type="original" xml:lang="de">Rob. <hi rend="italic">TM</hi></seg><seg type="translation" xml:lang="en" source="#claude">Rob. TM</seg></note>
-        <note type="liebermannNote" subtype="textual" xml:id="QuadrII_6.lnote.oe.21" n="21" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">544</biblScope></bibl><seg type="original" xml:lang="de">Licef. <hi rend="italic">MHk</hi></seg><seg type="translation" xml:lang="en" source="#claude">Licef. MHk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="QuadrII_6.lnote.oe.20" n="20" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">544</biblScope></bibl><seg type="original" xml:lang="de">Rob. <hi rend="italic">T M</hi></seg><seg type="translation" xml:lang="en" source="#claude">Rob. T M</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="QuadrII_6.lnote.oe.21" n="21" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">544</biblScope></bibl><seg type="original" xml:lang="de">Licef. <hi rend="italic">M Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">Licef. M Hk</seg></note>
       </div>
     </body>
   </text>

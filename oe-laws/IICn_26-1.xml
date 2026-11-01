@@ -67,6 +67,7 @@
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 328.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS B added from Gesetze I, p. 328.</change>
       <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 328: “. . .” → “∅”.</change>
+      <change when="2026-11-01">Manuscript sigla that Liebermann prints run together in his notes (“MHkBr”, “HB”) spaced for reading (“M Hk Br”, “H B”).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -87,7 +88,7 @@
         <note type="editorial">A skips a line here, so only its end survives.</note>
         <note type="textual" source="#rabin-doml">And . . . ne: omitted A</note>
         <note type="liebermannNote" subtype="textual" xml:id="IICn_26-1.lnote.oe.17" n="17" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">329</biblScope></bibl><seg type="original" xml:lang="de">-batur <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">-batur Hk</seg></note>
-        <note type="liebermannNote" subtype="textual" xml:id="IICn_26-1.lnote.oe.18" n="18" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">329</biblScope></bibl><seg type="original" xml:lang="de">q. q. <hi rend="italic">überspringen RHk</hi></seg><seg type="translation" xml:lang="en" source="#claude">q. q. skipped by RHk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IICn_26-1.lnote.oe.18" n="18" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">329</biblScope></bibl><seg type="original" xml:lang="de">q. q. <hi rend="italic">überspringen R Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">q. q. skipped by R Hk</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IICn_26-1.lnote.oe.19" n="19" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">329</biblScope></bibl><seg type="original" xml:lang="de">requirat <hi rend="italic">K</hi></seg><seg type="translation" xml:lang="en" source="#claude">requirat K</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IICn_26-1.lnote.oe.20" n="20" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">329</biblScope></bibl><seg type="original" xml:lang="de">de f. p. <hi rend="italic">nur Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">de f. p. only Lond</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IICn_26-1.lnote.oe.21" n="21" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">329</biblScope></bibl><seg type="original" xml:lang="de">nisi predicto <hi rend="italic">fügt zu K</hi></seg><seg type="translation" xml:lang="en" source="#claude">nisi predicto added by K</seg></note>

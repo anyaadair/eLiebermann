@@ -39,6 +39,7 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-19">Generated from row 3729 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-11-01">Manuscript sigla that Liebermann prints run together in his notes (“MHkBr”, “HB”) spaced for reading (“M Hk Br”, “H B”).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -50,8 +51,8 @@
         <note type="liebermannNote" subtype="textual" xml:id="QuadrII_8b.lnote.oe.b" n="b" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">545</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Paschal II. bannte</hi> 12. <hi rend="italic">Dec.</hi> 1102 <hi rend="italic">die Gesandten, weil sie seine mündliche Investiturerlaubniss nur erlogen hätten</hi></seg><seg type="translation" xml:lang="en" source="#claude">Paschal II excommunicated the envoys on 12 Dec. 1102 because they had merely invented his oral permission for investiture</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="QuadrII_8b.lnote.oe.c" n="c" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">545</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Gerhard beabsichtigte solchen Eingriff schon Ende</hi> 1102 <hi rend="italic">vor Anselms Abreise. Er leugnet unten</hi> II 10 <hi rend="italic">die Absicht nur für</hi> 1105</seg><seg type="translation" xml:lang="en" source="#claude">Gerard intended such an encroachment as early as the end of 1102, before Anselm’s departure. Below, II 10, he denies the intention only for 1105</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="QuadrII_8b.lnote.oe.d" n="d" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">545</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Roger für Salisbury, Reinhelm für Hereford, Wilhelm für Winchester</hi></seg><seg type="translation" xml:lang="en" source="#claude">Roger for Salisbury, Reinhelm for Hereford, William for Winchester</seg></note>
-        <note type="liebermannNote" subtype="textual" xml:id="QuadrII_8b.lnote.oe.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">545</biblScope></bibl><seg type="original" xml:lang="de">spiritualem <hi rend="italic">MHk</hi></seg><seg type="translation" xml:lang="en" source="#claude">spiritualem MHk</seg></note>
-        <note type="liebermannNote" subtype="textual" xml:id="QuadrII_8b.lnote.oe.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">545</biblScope></bibl><seg type="original" xml:lang="de">blasfem. <hi rend="italic">MHk</hi></seg><seg type="translation" xml:lang="en" source="#claude">blasfem. MHk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="QuadrII_8b.lnote.oe.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">545</biblScope></bibl><seg type="original" xml:lang="de">spiritualem <hi rend="italic">M Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">spiritualem M Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="QuadrII_8b.lnote.oe.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">545</biblScope></bibl><seg type="original" xml:lang="de">blasfem. <hi rend="italic">M Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">blasfem. M Hk</seg></note>
       </div>
     </body>
   </text>

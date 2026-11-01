@@ -53,6 +53,7 @@
     <revisionDesc>
       <change when="2026-10-19">Generated from row 1119 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text added from <title>Die Gesetze der Angelsachsen</title> I, p. 234.</change>
+      <change when="2026-11-01">Manuscript sigla that Liebermann prints run together in his notes (“MHkBr”, “HB”) spaced for reading (“M Hk Br”, “H B”).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -65,7 +66,7 @@
         <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">Besides unloaded wool and rendered fat, they were also allowed to buy three live pigs [to take] onto their ships.</ab>
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-q"><pb n="73" ed="#robertson"/>Besides wool, which had been unloaded<ptr type="editorNote" n="1" target="#IVAtr_2-9.robnote.n.1"/>, and melted fat<ptr type="editorNote" n="2" target="#IVAtr_2-9.robnote.n.2"/>, they were also permitted to buy three live pigs<ptr type="editorNote" n="3" target="#IVAtr_2-9.robnote.n.3"/> for their ships.</ab>
         <note type="editorial">Thorpe corrects ‘dissutum’ to ‘dissolutum’.</note>
-        <note type="liebermannNote" subtype="textual" xml:id="IVAtr_2-9.lnote.oe.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">234</biblScope></bibl><seg type="original" xml:lang="de">Preter — ui. li. eis <hi rend="italic">überspringt MHkBr</hi></seg><seg type="translation" xml:lang="en" source="#claude">Preter — ui. li. eis omitted by MHkBr</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IVAtr_2-9.lnote.oe.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">234</biblScope></bibl><seg type="original" xml:lang="de">Preter — ui. li. eis <hi rend="italic">überspringt M Hk Br</hi></seg><seg type="translation" xml:lang="en" source="#claude">Preter — ui. li. eis omitted by M Hk Br</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IVAtr_2-9.lnote.oe.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">234</biblScope></bibl><seg type="original" xml:lang="de">discartat. <hi rend="italic">T</hi></seg><seg type="translation" xml:lang="en" source="#claude">discartat. T</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IVAtr_2-9.lnote.oe.star" n="*" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">234</biblScope></bibl><seg type="original" xml:lang="de">dissolutum <hi rend="italic">bessert Thorpe</hi></seg><seg type="translation" xml:lang="en" source="#claude">dissolutum emendation by Thorpe</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IVAtr_2-9.lnote.oe.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">234</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Absatz R</hi></seg><seg type="translation" xml:lang="en" source="#claude">new paragraph R</seg></note>

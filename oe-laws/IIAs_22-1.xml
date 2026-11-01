@@ -61,6 +61,7 @@
       <change when="2026-10-19">Generated from row 784 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text checked and corrected against <title>Die Gesetze der Angelsachsen</title> I, p. 162.</change>
       <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 162: “…, ..” → “. . ., . .”.</change>
+      <change when="2026-11-01">Manuscript sigla that Liebermann prints run together in his notes (“MHkBr”, “HB”) spaced for reading (“M Hk Br”, “H B”).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -79,7 +80,7 @@
         <note type="comparedBy" source="#liebermann"><ref target="clause:VAs_1">V As 1</ref>; <ref target="clause:App-AGu_6-1">App AGu 6.1</ref></note>
         <note type="liebermannNote" subtype="textual" xml:id="IIAs_22-1.lnote.oe.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">162</biblScope></bibl><seg type="original" xml:lang="de">o <hi rend="italic">geänd. in</hi> a</seg><seg type="translation" xml:lang="en" source="#claude">o altered to a</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IIAs_22-1.lnote.oe.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">162</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">auf Rasur</hi></seg><seg type="translation" xml:lang="en" source="#claude">on an erasure</seg></note>
-        <note type="liebermannNote" subtype="textual" xml:id="IIAs_22-1.lnote.oe.15" n="15" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">163</biblScope></bibl><seg type="original" xml:lang="de">-her- <hi rend="italic">KM</hi></seg><seg type="translation" xml:lang="en" source="#claude">-her- KM</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IIAs_22-1.lnote.oe.15" n="15" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">163</biblScope></bibl><seg type="original" xml:lang="de">-her- <hi rend="italic">K M</hi></seg><seg type="translation" xml:lang="en" source="#claude">-her- K M</seg></note>
         <note type="liebermannNote" subtype="erklaerung" xml:id="IIAs_22-1.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">106</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">S. Gl</hi> Gefolge 8 d</seg><seg type="translation" xml:lang="en" source="#claude">See <hi rend="italic">Gl</hi> Gefolge 8 d</seg></note>
         <note type="editorNote" subtype="endnote" xml:id="IIAs_22-1.attnote.n.1" n="1" source="#attenborough"><bibl><biblScope unit="page">208</biblScope></bibl><seg type="original" xml:lang="en">See note to cap. 20, above.</seg></note>
         <note type="editorNote" subtype="footnote" xml:id="IIAs_22-1.attnote.fn.14" n="14" source="#attenborough"><bibl><biblScope unit="page">138</biblScope></bibl><label>þone</label><seg type="original" xml:lang="en"><hi rend="italic">he ðone</hi>. Ld.</seg></note>

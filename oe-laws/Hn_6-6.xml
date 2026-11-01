@@ -39,6 +39,7 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-19">Generated from row 4179 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-11-01">Manuscript sigla that Liebermann prints run together in his notes (“MHkBr”, “HB”) spaced for reading (“M Hk Br”, “H B”).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -52,7 +53,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="Hn_6-6.lnote.oe.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">553</biblScope></bibl><seg type="original" xml:lang="de">soli. <hi rend="italic">Sc</hi></seg><seg type="translation" xml:lang="en" source="#claude">soli. <hi rend="italic">Sc</hi></seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_6-6.lnote.oe.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">553</biblScope></bibl><seg type="original" xml:lang="de">uitam de <hi rend="italic">Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">uitam de <hi rend="italic">Lond</hi></seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_6-6.lnote.oe.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">553</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">von and. Hand übergeschr. K</hi></seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">written above by another hand K</hi></seg></note>
-        <note type="liebermannNote" subtype="textual" xml:id="Hn_6-6.lnote.oe.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">553</biblScope></bibl><seg type="original" xml:lang="de">alia <hi rend="italic">KOr</hi></seg><seg type="translation" xml:lang="en" source="#claude">alia <hi rend="italic">KOr</hi></seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Hn_6-6.lnote.oe.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">553</biblScope></bibl><seg type="original" xml:lang="de">alia <hi rend="italic">K Or</hi></seg><seg type="translation" xml:lang="en" source="#claude">alia <hi rend="italic">K Or</hi></seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_6-6.lnote.oe._" n="-" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">315</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">S. Gl</hi> Gerechtigkeit 10—<hi rend="italic">uitam de</hi>{2} <hi rend="italic">po</hi>. Rs</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">See Gl</hi> Gerechtigkeit 10—<hi rend="italic">uitam de</hi>{2} <hi rend="italic">po</hi>. Rs</seg></note>
       </div>
     </body>

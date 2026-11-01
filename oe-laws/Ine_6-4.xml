@@ -69,6 +69,7 @@
       <change when="2026-10" type="checked">Liebermann’s text of MS Bu added from Gesetze I, p. 92.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS B added from Gesetze I, p. 92.</change>
       <change when="2026-10" type="checked">Liebermann’s German translation corrected against Gesetze I, p. 92: “120 [30]” → “120[30]”.</change>
+      <change when="2026-11-01">Manuscript sigla that Liebermann prints run together in his notes (“MHkBr”, “HB”) spaced for reading (“M Hk Br”, “H B”).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -87,7 +88,7 @@
         <ab type="translation" xml:lang="en" source="#attenborough" corresp="#wit-e"><pb n="39" ed="#attenborough"/>And even if it [the fight] takes place in the open, a fine of 120 shillings shall be paid.</ab>
         <ab type="translation" xml:lang="en" source="#whitelock"><pb n="400" ed="#whitelock"/>And even if the fighting is in the midst of the open country, 120 shillings is to be given as a fine.</ab>
         <ab type="translation" xml:lang="en" source="#jurasinski-and-oliver" corresp="#wit-e"><pb n="377" ed="#jurasinski-and-oliver"/>And even if the fight takes place in an open field, 120 shillings shall be paid as fine.</ab>
-        <note type="liebermannNote" subtype="textual" xml:id="Ine_6-4.lnote.oe.10" n="10" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">93</biblScope></bibl><seg type="original" xml:lang="de">in m. c. sit <hi rend="italic">MHkBr</hi></seg><seg type="translation" xml:lang="en" source="#claude">in m. c. sit MHkBr</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Ine_6-4.lnote.oe.10" n="10" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">93</biblScope></bibl><seg type="original" xml:lang="de">in m. c. sit <hi rend="italic">M Hk Br</hi></seg><seg type="translation" xml:lang="en" source="#claude">in m. c. sit M Hk Br</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Ine_6-4.lnote.oe.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">92</biblScope></bibl><seg type="original" xml:lang="de">y <hi rend="italic">auf Rasur</hi></seg><seg type="translation" xml:lang="en" source="#claude">y on an erasure</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Ine_6-4.lnote.oe.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">92</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">geänd. in</hi> gefeohten</seg><seg type="translation" xml:lang="en" source="#claude">altered to gefeohten</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Ine_6-4.lnote.oe.7" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">92</biblScope></bibl><seg type="original" xml:lang="de">sy <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">sy Ld</seg></note>

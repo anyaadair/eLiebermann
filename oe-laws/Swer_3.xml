@@ -57,6 +57,7 @@
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 396.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS H added from Gesetze I, p. 396.</change>
       <change when="2026-10" type="checked">Liebermann’s German translation corrected against Gesetze I, p. 397: “…,” → “. . .,”.</change>
+      <change when="2026-11-01">Manuscript sigla that Liebermann prints run together in his notes (“MHkBr”, “HB”) spaced for reading (“M Hk Br”, “H B”).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -72,7 +73,7 @@
         <note type="comparedBy" source="#jurasinski-and-oliver" n="383"><label>sample oath</label> <ref target="clause:Ine_17">Ine 17</ref> <quote>Swerian §3 provides a sample oath.</quote></note>
         <note type="comparedBy" source="#jurasinski-and-oliver" n="392"><label>compare</label> <ref target="clause:Ine_25-1">Ine 25.1</ref> <quote>Compare to Swerian §3 (ne gewita ne gewyrhta).</quote></note>
         <note type="editorial">U: translator unrecorded: check; Here the Quadripartitus read ‘oððe facne’ (compare VI As 1.1 f.). ‘Rath oder That’ and ‘weder … noch’ are alliterating and rhyming pairs.</note>
-        <note type="liebermannNote" subtype="textual" xml:id="Swer_3.lnote.oe.11" n="11" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">397</biblScope></bibl><seg type="original" xml:lang="de">acta <hi rend="italic">MHk</hi></seg><seg type="translation" xml:lang="en" source="#claude">acta MHk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Swer_3.lnote.oe.11" n="11" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">397</biblScope></bibl><seg type="original" xml:lang="de">acta <hi rend="italic">M Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">acta M Hk</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Swer_3.lnote.oe.12" n="12" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">397</biblScope></bibl><seg type="original" xml:lang="de">iniustiam <hi rend="italic">R</hi></seg><seg type="translation" xml:lang="en" source="#claude">iniustiam R</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Swer_3.lnote.oe.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">396</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Platz für Überschrift frei</hi></seg><seg type="translation" xml:lang="en" source="#claude">Space left free for a heading</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Swer_3.lnote.oe.dagger2" n="††" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">396</biblScope></bibl><seg type="original" xml:lang="de">oððe facne <hi rend="italic">las hier Quadr.; vgl.</hi> facnes : facinoris <hi rend="italic">VI As.</hi> 1, 1 <hi rend="italic">f.</hi></seg><seg type="translation" xml:lang="en" source="#claude">oððe facne was read here by Quadr.; cf. facnes : facinoris VI As. 1, 1 f.</seg></note>

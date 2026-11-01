@@ -39,6 +39,7 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-19">Generated from row 3734 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-11-01">Manuscript sigla that Liebermann prints run together in his notes (“MHkBr”, “HB”) spaced for reading (“M Hk Br”, “H B”).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -47,7 +48,7 @@
         <head><ref type="lawCode" target="law:QuadrII">Quadr II</ref> 8.3</head>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Quadr II 8.3" corresp="#wit-lat"><pb n="545" ed="#liebermann"/>Post hoc concilium<ptr type="liebermannNote" n="21" target="#QuadrII_8-3.lnote.oe.21"/> pro datione baculorum beatus Anselmus de Anglia profectus est.</ab>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 545 (two independent readings of the page images, differences settled against the page)</note>
-        <note type="liebermannNote" subtype="textual" xml:id="QuadrII_8-3.lnote.oe.21" n="21" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">545</biblScope></bibl><seg type="original" xml:lang="de">consi. probat. bacul. <hi rend="italic">MHk</hi></seg><seg type="translation" xml:lang="en" source="#claude">consi. probat. bacul. MHk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="QuadrII_8-3.lnote.oe.21" n="21" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">545</biblScope></bibl><seg type="original" xml:lang="de">consi. probat. bacul. <hi rend="italic">M Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">consi. probat. bacul. M Hk</seg></note>
       </div>
     </body>
   </text>

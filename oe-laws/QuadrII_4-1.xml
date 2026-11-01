@@ -39,6 +39,7 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-19">Generated from row 3723 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-11-01">Manuscript sigla that Liebermann prints run together in his notes (“MHkBr”, “HB”) spaced for reading (“M Hk Br”, “H B”).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -49,7 +50,7 @@
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 544 (two independent readings of the page images, differences settled against the page)</note>
         <note type="liebermannNote" subtype="textual" xml:id="QuadrII_4-1.lnote.oe.14" n="14" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">544</biblScope></bibl><seg type="original" xml:lang="de">Syon <hi rend="italic">T</hi></seg><seg type="translation" xml:lang="en" source="#claude">Syon <hi rend="italic">T</hi></seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="QuadrII_4-1.lnote.oe.15" n="15" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">544</biblScope></bibl><seg type="original" xml:lang="de">leticie <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">leticie <hi rend="italic">Hk</hi></seg></note>
-        <note type="liebermannNote" subtype="textual" xml:id="QuadrII_4-1.lnote.oe.16" n="16" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">544</biblScope></bibl><seg type="original" xml:lang="de">clin. <hi rend="italic">MHk</hi></seg><seg type="translation" xml:lang="en" source="#claude">clin. <hi rend="italic">MHk</hi></seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="QuadrII_4-1.lnote.oe.16" n="16" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">544</biblScope></bibl><seg type="original" xml:lang="de">clin. <hi rend="italic">M Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">clin. <hi rend="italic">M Hk</hi></seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="QuadrII_4-1.lnote.oe.17" n="17" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">544</biblScope></bibl><seg type="original" xml:lang="de">inuoluci. prepediuit <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">inuoluci. prepediuit <hi rend="italic">Hk</hi></seg></note>
       </div>
     </body>

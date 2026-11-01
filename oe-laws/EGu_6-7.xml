@@ -62,6 +62,7 @@
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 132.</change>
       <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 132: “[þe] he; ægylde.” → “hine man; ǽgylde.”.</change>
       <change when="2026-10" type="checked">The modern editor’s text corrected against Attenborough, p. 106: “ǽgylde.” → “ǽgylde.”.</change>
+      <change when="2026-11-01">Manuscript sigla that Liebermann prints run together in his notes (“MHkBr”, “HB”) spaced for reading (“M Hk Br”, “H B”).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -79,7 +80,7 @@
         <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-h"><pb n="7" ed="#rabin-doml"/>And if he acts in such a way as to cause his own death through resistance to God’s justice or the king’s, and if that is shown to be true, no compensation need be paid for him.</ab>
         <note type="comparedBy" source="#liebermann"><ref target="clause:VAtr_31-1">V Atr 31.1</ref>; <ref target="clause:IICn_48-3">II Cn 48.3</ref></note>
         <note type="textual" source="#rabin-doml">he ongean: hine man gean H</note>
-        <note type="liebermannNote" subtype="textual" xml:id="EGu_6-7.lnote.oe.11" n="11" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">133</biblScope></bibl><seg type="original" xml:lang="de">faciat <hi rend="italic">TMHkBr</hi></seg><seg type="translation" xml:lang="en" source="#claude">faciat TMHkBr</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="EGu_6-7.lnote.oe.11" n="11" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">133</biblScope></bibl><seg type="original" xml:lang="de">faciat <hi rend="italic">T M Hk Br</hi></seg><seg type="translation" xml:lang="en" source="#claude">faciat T M Hk Br</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="EGu_6-7.lnote.oe.12" n="12" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">133</biblScope></bibl><seg type="original" xml:lang="de">ægilde <hi rend="italic">T;</hi> egilde <hi rend="italic">MHk;</hi> ælgylde <hi rend="italic">KOr;</hi> orgilde <hi rend="italic">Br</hi></seg><seg type="translation" xml:lang="en" source="#claude">ægilde T; egilde MHk; ælgylde KOr; orgilde Br</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="EGu_6-7.lnote.oe.7" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">132</biblScope></bibl><seg type="original" xml:lang="de">mon <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">mon Ld</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="EGu_6-7.lnote.oe.star2" n="**" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">132</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">bessere</hi> he ongean (<hi rend="italic">st.</hi> h. m. g.) <hi rend="italic">aus BLd; II Cnut</hi> 48, 3</seg><seg type="translation" xml:lang="en" source="#claude">read he ongean (instead of h. m. g.) from BLd; II Cnut 48, 3</seg></note>

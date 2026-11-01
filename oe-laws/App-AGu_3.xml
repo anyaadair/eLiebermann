@@ -42,6 +42,7 @@
     <revisionDesc>
       <change when="2026-10-19">Generated from row 2557 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10-27">Liebermann’s marginal cross-reference (Gesetze I p. 394) read from a printed copy by Anya Adair (the scan cuts the last notes off; the others were transcribed before but not linked): “ebd. 22”.</change>
+      <change when="2026-11-01">Manuscript sigla that Liebermann prints run together in his notes (“MHkBr”, “HB”) spaced for reading (“M Hk Br”, “H B”).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -56,7 +57,7 @@
         <note type="editorial">New row (October 2026): Liebermann’s text and German translation transcribed from Gesetze I p. 394 (two independent readings of the page images, differences settled against the page); Liebermann prints in smaller type: Wenn dein Gefolgsmann [Hausgenosse], | stiehlt und entkommt, mahne, falls du einen Bürgen [für ihn] hast, diesen um den Ersatz; wenn | [einen solchen Bürgen] nicht | so zahle du den Ersatz; jedoch für jenen sei in nichts [die Schuld] gesühnter.</note>
         <note type="liebermannNote" subtype="textual" xml:id="App-AGu_3.lnote.oe.9" n="9" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">394</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vor der Klammer Lond, eingeklammertes übr.</hi></seg><seg type="translation" xml:lang="en" source="#claude">the text before the brackets Lond; the bracketed text the others</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="App-AGu_3.lnote.oe.24" n="24" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">394</biblScope></bibl><seg type="original" xml:lang="de">geneoth <hi rend="italic">Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">geneoth Lond</seg></note>
-        <note type="liebermannNote" subtype="textual" xml:id="App-AGu_3.lnote.oe.25" n="25" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">394</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt TMHkBr</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in TMHkBr</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="App-AGu_3.lnote.oe.25" n="25" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">394</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt T M Hk Br</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in T M Hk Br</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="App-AGu_3.lnote.oe.26" n="26" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">394</biblScope></bibl><seg type="original" xml:lang="de">-at <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">-at Hk</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="App-AGu_3.lnote.oe.27" n="27" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">394</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt T</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in T</seg></note>
       </div>

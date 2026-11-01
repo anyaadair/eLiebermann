@@ -73,6 +73,7 @@
       <change when="2026-10" type="checked">Liebermann’s text of MS In added from Gesetze I, p. 319.</change>
       <change when="2026-11-01" type="incn-type">Liebermann’s bold, spaced and smaller type in the Instituta Cnuti text marked by Claude from the page images; to be checked against the print.</change>
       <change when="2026-11-01">The Instituta Cnuti text marked as Latin (it had been taken for Old English because of the English words it keeps).</change>
+      <change when="2026-11-01">Manuscript sigla that Liebermann prints run together in his notes (“MHkBr”, “HB”) spaced for reading (“M Hk Br”, “H B”).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -100,7 +101,7 @@
         <note type="textual" source="#rabin-doml">þæt: omitted B</note>
         <note type="textual" source="#rabin-doml">ær: omitted B</note>
         <note type="liebermannNote" subtype="textual" xml:id="IICn_15a.lnote.oe.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">318</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vgl. A</hi></seg><seg type="translation" xml:lang="en" source="#claude">cf. A</seg></note>
-        <note type="liebermannNote" subtype="textual" xml:id="IICn_15a.lnote.oe.10" n="10" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">319</biblScope></bibl><seg type="original" xml:lang="de">15<hi rend="italic">a fehlt KR</hi></seg><seg type="translation" xml:lang="en" source="#claude">15a lacking in KR</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="IICn_15a.lnote.oe.10" n="10" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">319</biblScope></bibl><seg type="original" xml:lang="de">15<hi rend="italic">a fehlt K R</hi></seg><seg type="translation" xml:lang="en" source="#claude">15a lacking in K R</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IICn_15a.lnote.oe.11" n="11" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">319</biblScope></bibl><seg type="original" xml:lang="de">proprii <hi rend="italic">T</hi></seg><seg type="translation" xml:lang="en" source="#claude">proprii T</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IICn_15a.lnote.oe.12" n="12" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">319</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">verbessert aus</hi> exhil. <hi rend="italic">Dm</hi></seg><seg type="translation" xml:lang="en" source="#claude">corrected from exhil. Dm</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IICn_15a.lnote.oe.10-2" n="10" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">318</biblScope></bibl><seg type="original" xml:lang="de">gif h. ðonne fryþl. <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">gif h. ðonne fryþl. Ld</seg></note>

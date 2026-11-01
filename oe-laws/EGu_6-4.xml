@@ -60,6 +60,7 @@
       <change when="2026-10-19">Generated from row 687 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 132.</change>
       <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 132: “Gif hwá ænigra godcundra gerihto forwyrne, gylde lahslit mid Denum, wíte mid Englum.” → “Gif hwá ænigra godcundra gerihto forwyrne, gylde lahslit mid Denum, wíte mid Englum. (expanded letters in italics: m, m)”.</change>
+      <change when="2026-11-01">Manuscript sigla that Liebermann prints run together in his notes (“MHkBr”, “HB”) spaced for reading (“M Hk Br”, “H B”).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -78,7 +79,7 @@
         <note type="comparedBy" source="#liebermann"><ref target="clause:IICn_48">II Cn 48</ref></note>
         <note type="comparedBy" source="#wormald-mel" n="359"><label>source (roman)</label> <ref target="clause:IICn_48">II Cn 48–48.3</ref> <quote>Table 5.4, II Cn 48-48:3: EGu 6:4-7</quote></note>
         <note type="comparedBy" source="#wormald-mel" n="391"><label>cf.</label> <ref target="clause:Grith_13">Grið 13–14</ref> <quote>But the question of the Church's security from attack was precisely the concern of 'Edward–Guthrum''s first clause, and is probably behind a pair of clauses about assaults on clergy</quote></note>
-        <note type="liebermannNote" subtype="textual" xml:id="EGu_6-4.lnote.oe.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">133</biblScope></bibl><seg type="original" xml:lang="de">disforciet <hi rend="italic">TMHkBr</hi></seg><seg type="translation" xml:lang="en" source="#claude">disforciet TMHkBr</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="EGu_6-4.lnote.oe.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">133</biblScope></bibl><seg type="original" xml:lang="de">disforciet <hi rend="italic">T M Hk Br</hi></seg><seg type="translation" xml:lang="en" source="#claude">disforciet T M Hk Br</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="EGu_6-4.lnote.oe.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">132</biblScope></bibl><seg type="original" xml:lang="de">-ta <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">-ta Ld</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="EGu_6-4.lnote.oe.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">132</biblScope></bibl><seg type="original" xml:lang="de">-ite <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">-ite Ld</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="EGu_6-4.lnote.oe.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">132</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">so</hi></seg><seg type="translation" xml:lang="en" source="#claude">sic</seg></note>

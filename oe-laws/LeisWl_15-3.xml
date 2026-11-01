@@ -50,6 +50,7 @@
       <change when="2026-10" type="checked">Liebermann’s text of MS Hk added from Gesetze I, p. 502–503.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS I added from Gesetze I, p. 502–503.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS L added from Gesetze I, p. 502–503.</change>
+      <change when="2026-11-01">Manuscript sigla that Liebermann prints run together in his notes (“MHkBr”, “HB”) spaced for reading (“M Hk Br”, “H B”).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -66,7 +67,7 @@
         <note type="comparison" source="#liebermann" n="503"><ref target="clause:IICn_30-1">II Cn 30.1</ref></note>
         <note type="comparisonPrinted" source="#liebermann">vgl. II Cn. 30, 1</note>
         <note type="editorial">Added October 2026 from Robertson pp. 260–261 (text and translation); Liebermann’s text and German translation added from Gesetze I p. 502–503, October 2026 (two independent readings of the page images)</note>
-        <note type="liebermannNote" subtype="textual" xml:id="LeisWl_15-3.lnote.oe.g" n="g" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">502</biblScope></bibl><seg type="original" xml:lang="de">ad ewe <hi rend="italic">ändert BA.</hi></seg><seg type="translation" xml:lang="en" source="#claude">ad ewe altered by BA.</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="LeisWl_15-3.lnote.oe.g" n="g" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">502</biblScope></bibl><seg type="original" xml:lang="de">ad ewe <hi rend="italic">ändert B A.</hi></seg><seg type="translation" xml:lang="en" source="#claude">ad ewe altered by B A.</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="LeisWl_15-3.lnote.oe.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">502</biblScope></bibl><seg type="original" xml:lang="de">en nariere <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">en nariere <hi rend="italic">Hk</hi></seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="LeisWl_15-3.lnote.oe.17" n="17" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">502</biblScope></bibl><seg type="original" xml:lang="de">arer <hi rend="italic">Io Isp</hi></seg><seg type="translation" xml:lang="en" source="#claude">arer <hi rend="italic">Io Isp</hi></seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="LeisWl_15-3.lnote.oe.29" n="29" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">502</biblScope></bibl><seg type="original" xml:lang="de">ew <hi rend="italic">Isp</hi></seg><seg type="translation" xml:lang="en" source="#claude">ew <hi rend="italic">Isp</hi></seg></note>
