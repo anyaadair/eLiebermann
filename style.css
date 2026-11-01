@@ -776,7 +776,7 @@ ul.citations li { break-inside: avoid; }
 .clause-texts h3 { font-size: 1.15rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #55595e; margin: 1.4rem 0 0.75rem; }
 .clause-texts p { margin: 0 0 0.4rem; }
 .clause-translation p { font-size: 1.05rem; }
-.clause-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 2rem; }
+.clause-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0 2rem; }   /* always two equal columns, whatever is in them */
 @media (max-width: 760px) { .clause-grid { grid-template-columns: 1fr; } }
 .clause-grid--single { grid-template-columns: 1fr; }
 /* Clear space between the texts and translations and the Manuscripts heading below them. */

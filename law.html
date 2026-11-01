@@ -159,11 +159,13 @@ scripts:
             item.appendChild(el('span', cls, TYPE_MEANING[name][4] || word.toLowerCase()));
             item.appendChild(document.createTextNode(' ' + meaning));
             k.appendChild(item);
+            k.appendChild(document.createTextNode(' '));   // a place to wrap: without it the key is one unbreakable line that widens its column
         });
         const plain = el('span', 'lt-key__item');
         plain.appendChild(el('span', 'lt-sample--plain', 'plain'));
         plain.appendChild(document.createTextNode(': faithful translation'));
         k.appendChild(plain);
+        k.appendChild(document.createTextNode(' '));
         const more = el('a', null, 'About Liebermann’s marks');
         more.href = (window.SITE_ROOT || '') + 'editorial.html#liebermann-type';
         k.appendChild(more);
