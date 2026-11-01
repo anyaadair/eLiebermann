@@ -497,6 +497,14 @@
     // of the code already running: "4) Zeit bei, zu, an a la tierce fiee 44,1" (see scanCitations)
     const SENSE_GLOSS_PASSAGE = new RegExp(String.raw`^(\s*\d{1,2}[a-z]?\)\s*)(\p{L}[^;|:\u0001-\u0004\d()\[\]=]{1,80}?)\s+(` + PASSAGE + String.raw`)(?![\p{L}\d])(?=\s*(?:$|[;|‖=\[\u0001\u0004]|\.\s*(?:$|[\d;|‖(—\u0001\u0004])|\((?!\d)|ff?\.|—|,\s(?!\d)|\d{1,2}[a-z]?\)))`, 'u');
 
+    // after ";", "|" or a numbered meaning (each perhaps followed by a German remark and ";"), a
+    // phrase mixing a spelling (not in italic) and Liebermann's German (in italic), then a passage of
+    // the code already running: "| ~ pour de mort aus Todesfurcht 37", "2) wegen; ~ ço deshalb 38",
+    // "| bezüglich, betreffend; manbote ~ franc, ~ serf 7" (see scanCitations, which checks the italic)
+    const MIXED_PASSAGE = new RegExp(String.raw`^(\s*(?:;|\||\d{1,2}[a-z]?\))(?:\s*([^;|\u0001-\u0004\d()\[\]=]{1,40});)?\s*)((?:[^;|:\u0001-\u0004\d()\[\]=]|\[[^\]\d;|\u0001-\u0004]*\]){1,120}?)\s+(` + PASSAGE + String.raw`)(?![\p{L}\d])(?=\s*(?:$|[;|‖=\[\u0001\u0004]|\.\s*(?:$|[\d;|‖(—\u0001\u0004])|\((?!\d)|ff?\.|—|,\s(?!\d)|\d{1,2}[a-z]?\)))`, 'u');
+    // a spelling just before a manuscript's siglum, after a passage: "38; per Io": the run goes on
+    const SPELLING_BEFORE_SIGLUM = new RegExp(String.raw`^\s*[;|]\s*` + SPELLING_WORD + String.raw`(?:\s+` + SPELLING_WORD + String.raw`){0,2}\s*$`, 'u');
+
     const SENSE_SPELLING = new RegExp(String.raw`^` + SPELLING_WORD + String.raw`(?:\s+` + SPELLING_WORD + String.raw`){0,5}$`, 'u');
 
     // a remark in Liebermann's German between a semicolon and a passage (see scanCitations)
@@ -722,7 +730,8 @@
                 if (italic && code && last && last.anchor === code.anchor && (m = GLOSS_PASSAGE.exec(rest))) {
                     const g0 = at + m[1].length, gloss = m[2];
                     // not a page of a book ("dazu Rubr. S. 544")
-                    if (!/(?:^|\s)S\.?$/.test(gloss.trim()) && [...gloss].every((ch, i) => !/\p{L}/u.test(ch) || italic[g0 + i])) {
+                    // nor a section of another entry ("s. u. n. 6": see below, section 6)
+                    if (!/(?:^|\s)S\.?$/.test(gloss.trim()) && !/(?:^|\s)n\.(?:\s|$)/.test(gloss) && [...gloss].every((ch, i) => !/\p{L}/u.test(ch) || italic[g0 + i])) {
                         const n = m[3].replace(/\.$/, ''), s = at + m[0].length - m[3].length;
                         // "Cn 1020,4; Feindseligkeit 5": Cn 1020,5, written as the passage before it
                         const sep = last.text.charAt(code.label.length) === ',' ? ',' : ' ';
@@ -747,12 +756,39 @@
                         continue;
                     }
                 }
+                // "| ~ pour de mort aus Todesfurcht 37. 37,1", "2) wegen; ~ ço deshalb 38": a spelling
+                // and Liebermann's German, in either order, then a passage of the same code (Leis Wl 38).
+                // Every word not in italic must be a spelling (lower case or ~, not a grammatical label),
+                // there must be at least one, and a German remark before ";" must be all italic.
+                if (italic && code && last && last.anchor === code.anchor && (m = MIXED_PASSAGE.exec(rest))) {
+                    const pre = m[2] || '', p0 = at + (pre ? m[1].lastIndexOf(pre) : 0);
+                    const body = m[3], b0 = at + m[1].length;
+                    const words = [...body.matchAll(/[\p{L}~][\p{L}~’'\-.]*/gu)].map(w => ({ w: w[0], i: w.index, it: [...w[0]].every((ch, j) => !/\p{L}/u.test(ch) || italic[b0 + w.index + j]) }));
+                    const plain = words.filter(w => !w.it);
+                    const preItalic = [...pre].every((ch, j) => !/\p{L}/u.test(ch) || italic[p0 + j]);
+                    // not a section of another entry ("s. up n. 3": see up, section 3)
+                    // (one inside square brackets is an aside: "[s. fz. cunseil] 46,5" is Hn 46,5), nor a part of
+                    // the passage just cited ("Rect 16; ~te ebd. Insc": the heading of Rect 16)
+                    const inBrackets = i => body.lastIndexOf('[', i) > body.lastIndexOf(']', i);
+                    const ok = plain.length && preItalic
+                        && !words.some(w => w.w === 'n.' || w.w === 'ebd.' || (/^(?:s|vgl|Vgl|o|u)\.$/.test(w.w) && !inBrackets(w.i)))
+                        && plain.every(w => new RegExp('^' + SPELLING_WORD + '[,]?$', 'u').test(w.w.replace(/[.,]$/, '')) && !GRAM_LABELS.has(w.w.replace(/[.,:]$/, '')))
+                        // a word partly in italic is not a spelling
+                        && words.every(w => w.it || [...w.w].every((ch, j) => !/\p{L}/u.test(ch) || !italic[b0 + w.i + j]));
+                    // not a page ("S. 375") or a year ("um 1200"): no clause is numbered so high
+                    if (ok && (!/^\d/.test(m[4]) || parseInt(m[4], 10) <= 120) && !/(?:^|\s)S\.?$/.test(body.trim())) {
+                        const n = m[4].replace(/\.$/, ''), s = at + m[0].length - m[4].length;
+                        add(code.label + ' ' + n, s, s + n.length, false);
+                        rest = rest.slice(m[0].length); at += m[0].length;
+                        continue;
+                    }
+                }
                 break;
             }
             // a footnote mark after the last passage ("48⁵ A³. 61,1") does not end the run
             const restS = /^\u0004\s*$/.test(rest) ? ' ' : /^\s*ff?\.\s*$/.test(rest) && last && LATIN_VERSION[last.anchor] ? ' ' : rest;
             open = !!last && !(code && code.fresh) && /^\s*$/.test(restS);
-            if (!open && !(code && code.fresh)) code = code && /^[\s.]*$/.test(restS) ? code : null;
+            if (!open && !(code && code.fresh)) code = code && (/^[\s.]*$/.test(restS) || (last && last.anchor === code.anchor && SPELLING_BEFORE_SIGLUM.test(restS))) ? code : null;
         };
         const re = /\u0001([^\u0002]*)\u0002([^\u0003]*)\u0003/g;
         let m = re.exec(flat);
@@ -1418,7 +1454,10 @@ ${translation}
                 // abbreviations list ("s. Decl."), a small arrow to the entry it also points to
                 if (attr('subtype') === 'jump') return jumpLink(target, 'Go to the entry');
                 const cls = attr('type') ? ` class="ref-${escapeXml(attr('type'))}"` : '';
-                return `<a href="${escapeXml(target)}"${cls}${ext}>${inner()}</a>`;
+                // a clause linked by hand (<ref type="clause" … n="Ine 70,1">) is named like the
+                // links the rules make, so the entry page treats both alike
+                const tip = attr('type') === 'clause' && attr('n') ? ` title="${escapeXml(attr('n'))} in the laws database"` : '';
+                return `<a href="${escapeXml(target)}"${cls}${tip}${ext}>${inner()}</a>`;
             }
             case 'ptr': {
                 // <ptr type="editorNote" target="#edn-1"/> in Liebermann's text: a marker

@@ -74,11 +74,19 @@ scripts:
         .then(r => r.ok ? r.json() : [])
         .then(list => { codeList = list; list.forEach(c => { if (c.anchor) lawCodes[c.anchor] = c.code; }); })
         .catch(() => {});
+    // Words to highlight added by hand to a clause link of an entry, where the rules can't tell
+    // (data/link-highlights.json): { entry id: { citation: { find: "form", mark: ["other", …] } } }.
+    let linkHighlights = {};
+    const highlightsLoaded = fetch(root + 'data/link-highlights.json')
+        .then(r => r.ok ? r.json() : {})
+        .then(map => { linkHighlights = map || {}; })
+        .catch(() => {});
 
     Promise.all([
         fetch(root + 'entries/' + encodeURIComponent(slug) + '.xml')
             .then(r => { if (!r.ok) throw new Error('missing'); return r.text(); }),
-        codesLoaded
+        codesLoaded,
+        highlightsLoaded
     ])
         .then(([text]) => {
             const doc = new DOMParser().parseFromString(text, 'application/xml');
@@ -370,6 +378,18 @@ scripts:
             if (m) clauses[ref.textContent.replace(/\s+/g, ' ').trim()] = root + 'law.html?id=' + encodeURIComponent(m[1]);
         });
         ELieb.linkClauseNumbers(target.querySelector('.liebermann-text'), clauses, { headword: e.headword, spelling: !!e.spelling, noFind: e.lang === 'de' });
+        // Highlight words added by hand (data/link-highlights.json), on the links found by the rules and
+        // on those made by hand (<ref type="clause" … n="Ine 70,1">): "find" replaces the form the rules
+        // chose; every word in "mark" is marked as well, wherever it is found in the clause.
+        const extra = linkHighlights[slug] || {};
+        target.querySelectorAll('.liebermann-text a.ref-clause').forEach(a => {
+            const rule = extra[(a.title || '').replace(/ in the laws database$/, '')];
+            if (!rule) return;
+            const url = new URL(a.getAttribute('href'), location.href);
+            if (rule.find) url.searchParams.set('find', rule.find);
+            if (rule.mark && rule.mark.length) url.searchParams.set('mark', rule.mark.join(','));
+            a.setAttribute('href', url.pathname.split('/').pop() + url.search);
+        });
         // "Pax": a text the laws database keeps as one clause, cited by name alone. The name keeps
         // its link to the list of law codes; a small arrow after it goes to the clause.
         target.querySelectorAll('.liebermann-text a[href*="lawAbb.html#"]').forEach(a => {

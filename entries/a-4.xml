@@ -34,8 +34,8 @@
         <form type="lemma">
           <orth>a</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">F</lbl> <hi rend="bold">a</hi> (<hi rend="italic">habet</hi>) <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> aver 3</dictScrap>
-        <note type="editorial">Liebermann’s <hi rend="italic">aver</hi> is the verb <ref target="entry:aveir">aveir</ref>; <hi rend="italic">aver</hi> is the spelling of MS Hk. “3” means the third-person forms, listed under “3:” in that entry.</note>
+        <dictScrap type="liebermann"><lbl type="language">F</lbl> <hi rend="bold">a</hi> (<hi rend="italic">habet</hi>) <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:aveir">aver</ref> 3</dictScrap>
+        <note type="editorial">Liebermann’s <hi rend="italic">aver</hi> is the verb <ref target="entry:aveir">aveir</ref>; <hi rend="italic">aver</hi> is the spelling of MS Hk.</note>
         <xr type="see"><ref target="entry:aveir">aveir</ref></xr>
       </entry>
     </body>
