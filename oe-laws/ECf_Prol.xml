@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECf_Prol">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf Prol.</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECf_Prol</idno>
+        <idno type="citation">ECf Prol.</idno>
+        <idno type="lawCode">ECf</idno>
+        <idno type="lawCodeAnchor">ECf</idno>
+        <idno type="clause">Prol.</idno>
+        <idno type="citationKey">ECf Prol.</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">627</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>1115–50, probably 1130–35 (Liebermann, I p. 627)</date><note type="promulgation">1115–50, probably 1130–35 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="Prol.">
+        <head><ref type="lawCode" target="law:ECf">ECf</ref> Prol.</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf Prol."><pb n="627" ed="#liebermann"/><ptr type="liebermannNote" n="c" target="#ECf_Prol.lnote.la.fn.c"/>Post quartum annum<ptr type="liebermannNote" n="d" target="#ECf_Prol.lnote.la.fn.d"/> adquisitionis regis Willelmi istius<ptr type="liebermannNote" n="1" target="#ECf_Prol.lnote.la.1"/> terre<ptr type="liebermannNote" n="2" target="#ECf_Prol.lnote.la.2"/>, consilio baronum suorum fecit submoniri<ptr type="liebermannNote" n="3" target="#ECf_Prol.lnote.la.3"/> per uniuersos<ptr type="liebermannNote" n="4" target="#ECf_Prol.lnote.la.4"/> patrie<ptr type="liebermannNote" n="5" target="#ECf_Prol.lnote.la.5"/> comitatus Anglos<ptr type="liebermannNote" n="6" target="#ECf_Prol.lnote.la.6"/> nobiles<ptr type="liebermannNote" n="7" target="#ECf_Prol.lnote.la.7"/>, sapientes<ptr type="liebermannNote" n="e" target="#ECf_Prol.lnote.la.fn.e"/> et<ptr type="liebermannNote" n="8" target="#ECf_Prol.lnote.la.8"/> lege sua<ptr type="liebermannNote" n="9" target="#ECf_Prol.lnote.la.9"/> eruditos<ptr type="liebermannNote" n="f" target="#ECf_Prol.lnote.la.fn.f"/>, ut eorum consuetudines ab ipsis<ptr type="liebermannNote" n="10" target="#ECf_Prol.lnote.la.10"/> audiret<ptr type="liebermannNote" n="11" target="#ECf_Prol.lnote.la.11"/>.</ab>
+        <note type="comparison" source="#liebermann" n="627"><label>printed alongside</label> <ref target="clause:ECfRetr_Prol">ECf retr Prol.</ref></note>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 627 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
+        <note type="editorial">Liebermann’s upright (roman) letter a after “Post” refers to his explanatory notes, the Erklärungen (printed as Gesetze III; his note on this page calls it “Band II”), which are not yet added here.</note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_Prol.lnote.la.fn.c" n="c" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">627</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">diese Erzählung von einem Weisthum leidet an Unmöglichkeiten und widerspricht der Erwähnung jüngerer Einrichtungen und Thatsachen; vgl. Anm.</hi> a</seg><seg type="translation" xml:lang="en" source="#claude">this story of a Weisthum (a declaration of the law by sworn men) suffers from impossibilities, and contradicts the mention of later institutions and events; cf. note a</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_Prol.lnote.la.fn.d" n="d" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">627</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">seit</hi> 16. <hi rend="italic">October</hi> 1069 <hi rend="italic">oder</hi> (<hi rend="italic">wenn, mit Retr., seit der Krönung gerechnet</hi>) <hi rend="italic">seit</hi> 25. <hi rend="italic">December</hi> 1069</seg><seg type="translation" xml:lang="en" source="#claude">from 16 October 1069 or (if reckoned, as the Retractator does, from the coronation) from 25 December 1069</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_Prol.lnote.la.fn.e" n="e" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">627</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Erinnerung an</hi> witan? <hi rend="italic">Ob identisch gedacht mit den</hi> electi <hi rend="italic">in</hi> Prol., 1 <hi rend="italic">oder eine grössere Versammlung, aus der diese erwählt wurden? Verf. vergisst, sie als theilweise geistlich zu schildern</hi></seg><seg type="translation" xml:lang="en" source="#claude">a memory of the witan? Are they thought of as the same as the electi in Prol., 1, or as a larger assembly from which these were chosen? The author forgets to describe them as partly clerical</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_Prol.lnote.la.fn.f" n="f" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">627</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vgl.</hi> 34, 1</seg><seg type="translation" xml:lang="en" source="#claude">cf. 34, 1</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_Prol.lnote.la.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">627</biblScope></bibl><seg type="original" xml:lang="de">Anglie, communi con. <hi rend="italic">ohne</hi> i. t. <hi rend="italic">Cl</hi></seg><seg type="translation" xml:lang="en" source="#claude">Anglie, communi con. without i. t. Cl</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_Prol.lnote.la.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">627</biblScope></bibl><seg type="original" xml:lang="de">scilicet Anglie <hi rend="italic">fügt zu Pl S</hi></seg><seg type="translation" xml:lang="en" source="#claude">Pl S add scilicet Anglie</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_Prol.lnote.la.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">627</biblScope></bibl><seg type="original" xml:lang="de">-man. <hi rend="italic">Rl;</hi> summ. <hi rend="italic">S;</hi> summoneri <hi rend="italic">übr.</hi></seg><seg type="translation" xml:lang="en" source="#claude">-man. Rl; summ. S; summoneri the others</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_Prol.lnote.la.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">627</biblScope></bibl><seg type="original" xml:lang="de">-rse <hi rend="italic">Hk;</hi> tocius <hi rend="italic">Ck</hi></seg><seg type="translation" xml:lang="en" source="#claude">-rse Hk; tocius Ck</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_Prol.lnote.la.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">627</biblScope></bibl><seg type="original" xml:lang="de">c. p. <hi rend="italic">Do No;</hi> Anglie <hi rend="italic">Hk;</hi> co. Anglie <hi rend="italic">Cl</hi></seg><seg type="translation" xml:lang="en" source="#claude">c. p. Do No; Anglie Hk; co. Anglie Cl</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_Prol.lnote.la.6" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">627</biblScope></bibl><seg type="original" xml:lang="de">-lie <hi rend="italic">Pl; fehlt Cl</hi></seg><seg type="translation" xml:lang="en" source="#claude">-lie Pl; lacking in Cl</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_Prol.lnote.la.7" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">627</biblScope></bibl><seg type="original" xml:lang="de">et <hi rend="italic">fügt zu Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">Hk adds et</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_Prol.lnote.la.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">627</biblScope></bibl><seg type="original" xml:lang="de">in <hi rend="italic">Do;</hi> in <hi rend="italic">fügt zu Pl S</hi></seg><seg type="translation" xml:lang="en" source="#claude">in Do; Pl S add in</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_Prol.lnote.la.9" n="9" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">627</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_Prol.lnote.la.10" n="10" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">627</biblScope></bibl><seg type="original" xml:lang="de">eis <hi rend="italic">Ad Do Wo Ck No Ed</hi></seg><seg type="translation" xml:lang="en" source="#claude">eis Ad Do Wo Ck No Ed</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_Prol.lnote.la.11" n="11" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">627</biblScope></bibl><seg type="original" xml:lang="de">erud. <hi rend="italic">No</hi></seg><seg type="translation" xml:lang="en" source="#claude">erud. No</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>
