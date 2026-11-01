@@ -46,6 +46,7 @@
           <witness xml:id="wit-bu"><abbr>Bu</abbr> <note type="manuscript">London, British Library, Burney MS 277</note></witness>
           <witness xml:id="wit-ot-frags"><abbr>Ot (frags.)</abbr> <note type="manuscript">London, British Library, Cotton Otho B.xi (damaged by fire, 1731)</note></witness>
           <witness xml:id="wit-so"><abbr>So</abbr> <note type="manuscript">William Somner's transcript of Cotton Otho B.xi (made before the fire)</note></witness>
+          <witness xml:id="wit-inst-cn"><abbr>Inst. Cn.</abbr> <note type="manuscript">Instituta Cnuti (Latin translation of Anglo-Saxon laws, c. 1100), as printed by Liebermann</note></witness>
         </listWit>
       </sourceDesc>
     </fileDesc>
@@ -63,6 +64,7 @@
       <change when="2026-10-19">Generated from row 529 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 86.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS B added from Gesetze I, p. 86.</change>
+      <change when="2026-11-01" type="incn">Liebermann’s Instituta Cnuti column (Gesetze I p. 87) added by Claude, with his notes and his kinds of type; read from the page images; to be checked against the print.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -73,6 +75,7 @@
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="70.1" corresp="#wit-h"><pb n="86" ed="#liebermann"/>Gif seo<ptr type="liebermannNote" n="5" target="#Af_70-1.lnote.oe.5"/> hyd sy<ptr type="liebermannNote" n="2" target="#Af_70-1.lnote.oe.2-2"/> tobrocen ⁊ mon<ptr type="liebermannNote" n="1" target="#Af_70-1.lnote.oe.1"/> bán ofadó, gesylle<ptr type="liebermannNote" n="2" target="#Af_70-1.lnote.oe.2-2"/> XV scll' to bote.</ab>
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="70.1" corresp="#wit-b-no-prol"><pb n="86" ed="#liebermann"/>Gyf seo hyd sy tobrocen, ⁊ man ban ofadó, gesylle fiftyne scill'.</ab>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="70.1" corresp="#wit-q"><pb n="87" ed="#liebermann"/>Si<ptr type="liebermannNote" n="3" target="#Af_70-1.lnote.oe.3"/> cutis aperta sit, et os extrahatur, det XV sol. ad emendationem.<ptr type="liebermannNote" n="4" target="#Af_70-1.lnote.oe.4"/></ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="III 34" corresp="#wit-inst-cn"><pb n="87" ed="#liebermann"/>Quodsi cutis fracta fuerit<ptr type="liebermannNote" n="6" target="#Af_70-1.lnote.incn.6"/>, et os inde <hi rend="spaced">extrahatur</hi>, quindecim sol.<ptr type="liebermannNote" n="7" target="#Af_70-1.lnote.incn.7"/></ab>
         <ab type="editionText" xml:lang="ang" source="#attenborough" corresp="#wit-e"><pb n="90" ed="#attenborough"/>Gif sio hyd sie tobrocen, ⁊ mon ban ófádo, geselle XV scill. to bote.</ab>
         <ab type="editionText" xml:lang="ang" source="#jurasinski-and-oliver" corresp="#wit-e"><pb n="360" ed="#jurasinski-and-oliver"/>Gif sio hyd sie tobrocen ⁊ mon bán ófádo, geselle XV scill to bote.</ab>
         <ab type="translation" xml:lang="de" source="#liebermann"><pb n="87" ed="#liebermann"/>Wenn die Haut zerbrochen ist, und jemand einen Knochen herausreisst<ptr type="liebermannNote" n="1" target="#Af_70-1.lnote.de.1"/>, gebe er 15 Schill. zur Busse.</ab>
@@ -88,6 +91,8 @@
         <note type="liebermannNote" subtype="textual" xml:id="Af_70-1.lnote.oe.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">86</biblScope></bibl><seg type="original" xml:lang="de">o <hi rend="italic">geändert in</hi> a</seg><seg type="translation" xml:lang="en" source="#claude">o altered to a</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Af_70-1.lnote.oe.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">87</biblScope></bibl><seg type="original" xml:lang="de">70, 1 <hi rend="italic">überspringt Br</hi></seg><seg type="translation" xml:lang="en" source="#claude">Br omits 70, 1</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Af_70-1.lnote.oe.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">87</biblScope></bibl><seg type="original" xml:lang="de">emendam <hi rend="italic">T;</hi> emendandam <hi rend="italic">Lond;</hi> ad e. <hi rend="italic">fehlt Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">emendam T; emendandam Lond; ad e. lacking in Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_70-1.lnote.incn.6" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">87</biblScope></bibl><seg type="original" xml:lang="de">erit <hi rend="italic">Lb S</hi></seg><seg type="translation" xml:lang="en" source="#claude">erit Lb S</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_70-1.lnote.incn.7" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">87</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt H</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in H</seg></note>
         <note type="liebermannNote" subtype="erklaerung" xml:id="Af_70-1.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">62</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">S. Gl</hi> Gliederbussen 8H. 9a; <hi rend="italic">u.</hi> 74</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">See Gl</hi> Gliederbussen 8H. 9a; <hi rend="italic">below</hi> 74</seg></note>
         <note type="editorNote" subtype="endnote" xml:id="Af_70-1.attnote.n.1" n="1" source="#attenborough"><bibl><biblScope unit="page">200</biblScope></bibl><seg type="original" xml:lang="en">‘Taken out,’ Thorpe; ‘herausreisst,’ Liebermann; cf. cap. 74, below.</seg></note>
       </div>

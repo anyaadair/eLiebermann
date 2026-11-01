@@ -45,6 +45,7 @@
           <witness xml:id="wit-bu"><abbr>Bu</abbr> <note type="manuscript">London, British Library, Burney MS 277</note></witness>
           <witness xml:id="wit-ot-frags"><abbr>Ot (frags.)</abbr> <note type="manuscript">London, British Library, Cotton Otho B.xi (damaged by fire, 1731)</note></witness>
           <witness xml:id="wit-so"><abbr>So</abbr> <note type="manuscript">William Somner's transcript of Cotton Otho B.xi (made before the fire)</note></witness>
+          <witness xml:id="wit-inst-cn"><abbr>Inst. Cn.</abbr> <note type="manuscript">Instituta Cnuti (Latin translation of Anglo-Saxon laws, c. 1100), as printed by Liebermann</note></witness>
         </listWit>
       </sourceDesc>
     </fileDesc>
@@ -65,6 +66,7 @@
       <change when="2026-10-19">Generated from row 486 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 78.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS B added from Gesetze I, p. 78.</change>
+      <change when="2026-11-01" type="incn">Liebermann’s Instituta Cnuti column (Gesetze I p. 79) added by Claude, with his notes and his kinds of type; read from the page images; to be checked against the print.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -75,6 +77,7 @@
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="45.1" corresp="#wit-h"><pb n="78" ed="#liebermann"/>Gif beforan feaxe bið wund ynces<ptr type="liebermannNote" n="2" target="#Af_45-1.lnote.oe.2"/> long<ptr type="liebermannNote" n="4" target="#Af_45-1.lnote.oe.4"/>, II scll' to bote.</ab>
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="45.1" corresp="#wit-b-no-prol"><pb n="78" ed="#liebermann"/>Gyf he beforan feaxe bið wund ynces lang, twegen scillingas to bote.</ab>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="45.1" corresp="#wit-q"><pb n="79" ed="#liebermann"/>Si ante fexh<ptr type="liebermannNote" n="18" target="#Af_45-1.lnote.oe.18"/> (cesariem) sit uulnus unciam habens longitudinis, II sol. emendetur.<ptr type="liebermannNote" n="21" target="#Af_45-1.lnote.oe.21"/></ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="III 10" corresp="#wit-inst-cn"><pb n="79" ed="#liebermann"/>Si extra capillos fuerit<ptr type="liebermannNote" n="8" target="#Af_45-1.lnote.incn.8"/> <hi rend="spaced">et eiusdem magnitudinis, duo</hi><ptr type="liebermannNote" n="9" target="#Af_45-1.lnote.incn.9"/> solidi <hi rend="spaced">sint</hi><ptr type="liebermannNote" n="10" target="#Af_45-1.lnote.incn.10"/> emendatio.</ab>
         <ab type="editionText" xml:lang="ang" source="#attenborough" corresp="#wit-e"><pb n="86" ed="#attenborough"/>Gif<ptr type="editorNote" n="2" target="#Af_45-1.attnote.fn.2"/> beforan feaxe bið wund inces lang, twegen scill. to bote.</ab>
         <ab type="editionText" xml:lang="ang" source="#jurasinski-and-oliver" n="48.1" corresp="#wit-e"><pb n="350" ed="#jurasinski-and-oliver"/>Gif beforan feaxe bið wund inces lang, twegen scill to bote.</ab>
         <ab type="translation" xml:lang="de" source="#liebermann"><pb n="79" ed="#liebermann"/>Wenn vor dem Haupthaar eine Wunde ist, einen Zoll lang, 2 Schill. zur Busse.</ab>
@@ -88,6 +91,9 @@
         <note type="liebermannNote" subtype="textual" xml:id="Af_45-1.lnote.oe.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">78</biblScope></bibl><seg type="original" xml:lang="de">o <hi rend="italic">geänd. in</hi> a</seg><seg type="translation" xml:lang="en" source="#claude">o altered to a</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Af_45-1.lnote.oe.18" n="18" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">79</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">nur Co übergeschr.; fehlt übrigen</hi></seg><seg type="translation" xml:lang="en" source="#claude">written above only in Co; lacking in the others</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Af_45-1.lnote.oe.21" n="21" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">79</biblScope></bibl><seg type="original" xml:lang="de">ei <hi rend="italic">fügt zu Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">ei added by Lond</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_45-1.lnote.incn.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">79</biblScope></bibl><seg type="original" xml:lang="de">f. et <hi rend="italic">fehlt Cb</hi></seg><seg type="translation" xml:lang="en" source="#claude">f. et lacking in Cb</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_45-1.lnote.incn.9" n="9" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">79</biblScope></bibl><seg type="original" xml:lang="de">duos sol. <hi rend="italic">Cb</hi></seg><seg type="translation" xml:lang="en" source="#claude">duos sol. Cb</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Af_45-1.lnote.incn.10" n="10" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">79</biblScope></bibl><seg type="original" xml:lang="de">sit <hi rend="italic">T;</hi> s. e. <hi rend="italic">fehlt Cb Lb S</hi></seg><seg type="translation" xml:lang="en" source="#claude">sit T; s. e. lacking in Cb Lb S</seg></note>
         <note type="editorNote" subtype="footnote" xml:id="Af_45-1.attnote.fn.2" n="2" source="#attenborough"><bibl><biblScope unit="page">86</biblScope></bibl><label>Gif</label><seg type="original" xml:lang="en"><hi rend="italic">Gif he</hi>. B. <hi rend="italic">Gif hit</hi>. Ld.</seg></note>
       </div>
     </body>
