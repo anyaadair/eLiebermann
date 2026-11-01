@@ -13,16 +13,39 @@ scripts:
   <summary>About this text and this page</summary>
   <p>Liebermann never prints the <i>Instituta</i> as one continuous text. Most of it translates the laws of Cnut, of Alfred and Ine, of Edgar, and a group of short texts on rank and oaths (Mirce, Að, Hadbot, Geþyncðo, Grið), and he prints each passage once only, as a Latin column beside the Old English it translates. His list of the work’s chapters (Gesetze I, pp. 612–615) gives in full only what has no Old English source, and points with a short quotation (“Si quis latro — — librum pęnitentialem; o. S. 343–47”) to the rest. This page puts the passages back together in the translator’s order, following that list. Each passage is labelled with its chapter of the <i>Instituta</i> and links to the clause page where Liebermann prints it, with his notes and the Old English beside it.</p>
   <p><strong>Numbering.</strong> The three books are Liebermann’s division. Books I and II translate I and II Cnut and are numbered to match them, so that In Cn II 54 translates II Cnut 54; the translator’s additions from other laws carry letters (In Cn I 12c is the third addition after Cnut’s I 12). Book III is a patchwork of Ine, Alfred, the texts on rank, and about a dozen chapters (III 45,4–55, 57–59) whose Old English source is lost. The rubrics are not the author’s and are given separately at the end.</p>
-  <p><strong>Liebermann’s type.</strong> In the columns he prints beside the Old English, <strong>bold</strong> marks what differs from the source in content, <span class="spaced">spaced</span> type what is reworded on purpose; <span class="small-type">smaller type</span> marks words taken word for word from a source. Round brackets give a second version of the same words that Liebermann thought was also the author’s (<a href="editorial.html#liebermann-type">more</a>). These signs are being restored to the database text by text; some passages do not yet show them.</p>
+  <p><strong>Liebermann’s marks.</strong> Liebermann uses the look of his print to tell the reader how the translation relates to the Old English beside it: bold type for what is changed in content, spaced type for what is reworded on purpose, smaller type for words taken over word for word, and round brackets for a second version of the same words that he thought was also the author’s. Here these are shown quietly, so that the text reads easily: plain black type is a faithful translation, and against it a <span class="lt-sample--changed">pale wash</span> marks what is changed, a <span class="lt-sample--reworded">fine underline</span> what is reworded, <span class="lt-sample--source">grey type</span> what is word for word from the source, and a <span class="lt-sample--alt">dotted underline</span> in brackets the other version. Hovering over a marked word gives a one-word reminder; the key above the text repeats them (<a href="editorial.html#liebermann-type">more</a>). Liebermann marks only the larger changes, and never what the translator leaves out.</p>
+  <p><strong>The English crib.</strong> Beside the Latin is a relatively literal English crib, made with the help of an LLM (Claude, 2026) for this page. It is meant to help the reader through the Latin, not to replace it, and has not been checked line by line. Liebermann’s marks are carried over onto the English words that render the marked Latin, so that what the translator changed, reworded or took over can be followed in English too; where Latin and English word order differ, the match is approximate.</p>
   <p><strong>A caution.</strong> Liebermann’s edition of the <i>Instituta</i> has been criticised. Bruce O’Brien (‘The <i>Instituta Cnuti</i> and the Translation of English Law’, <i>Anglo-Norman Studies</i> 25 (2003), 177–97) found 54 errors of transcription in the title, prologue and first three chapters alone; showed that the manuscript Rl is only a copy of the Textus Roffensis (H), and that Cb is a reviser’s text which Liebermann trusted too far; and noted that Liebermann marks only the larger additions in bold, and never what the translator leaves out. He called for a new edition, which has not yet appeared. The text here is Liebermann’s, and should be read with that in mind.</p>
 </details>
 
-<p class="incn-jump" id="incn-jump"></p>
+<div class="incn-tools"><p class="incn-jump" id="incn-jump"></p>
+<div class="incn-view kind-pills kind-pills--small" role="group" aria-label="Show">
+  <button type="button" class="kind-pill" data-view="both" aria-pressed="true">Latin and English</button>
+  <button type="button" class="kind-pill" data-view="la" aria-pressed="false">Latin</button>
+  <button type="button" class="kind-pill" data-view="en" aria-pressed="false">English</button>
+</div></div>
+<div class="incn-key-wrap"><p class="lt-key" id="incn-key">
+  <span class="lt-key__item"><span class="lt-sample--changed">changed</span> in content from the source</span>
+  <span class="lt-key__item"><span class="lt-sample--reworded">reworded</span> on purpose</span>
+  <span class="lt-key__item"><span class="lt-sample--source">from source</span> word for word</span>
+  <span class="lt-key__item"><span class="lt-sample--alt">(other version)</span> also the author’s</span>
+  <span class="lt-key__item">plain: faithful translation</span>
+</p></div>
 <div id="incn-text"><p class="loading">Loading…</p></div>
 </article>
 
 <style>
 .incn-reading { max-width: 46rem; margin: 0 auto; }
+.incn-reading.with-en { max-width: 74rem; }
+.incn-tools { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; align-items: baseline; margin: 0 0 .75rem; }
+.incn-view { margin: 0; }
+.incn-key-wrap { position: sticky; top: 0; z-index: 2; background: var(--paper); padding: .35rem 0 .1rem; border-bottom: 1px solid var(--rule); margin-bottom: .5rem; }
+.with-en .incn-passage { grid-template-columns: 7.5rem 1fr 1fr; }
+.incn-en { margin: 0; font-family: var(--serif); font-size: 1.02rem; line-height: 1.45; color: #34332f; }
+.incn-only-en .incn-text-p { display: none; }
+.incn-only-en .incn-passage { grid-template-columns: 7.5rem 1fr; }
+.incn-only-la .incn-en { display: none; }
+@media (max-width: 52rem) { .with-en .incn-passage { grid-template-columns: 7.5rem 1fr; } .with-en .incn-en { grid-column: 2; } }
 .incn-about { margin: 1rem 0 1.5rem; padding: .75rem 1rem; border-left: 3px solid var(--rule, #ddd); background: var(--panel, rgba(0,0,0,.02)); }
 .incn-about summary { cursor: pointer; font-weight: 600; }
 .incn-about p { font-size: .95rem; }
@@ -34,7 +57,7 @@ scripts:
 .incn-label .incn-src { display: block; font-size: .8rem; }
 .incn-text-p { margin: 0; font-size: 1.08rem; }
 .incn-rubrics { margin-top: 2rem; }
-@media (max-width: 40rem) { .incn-passage { grid-template-columns: 1fr; } }
+@media (max-width: 40rem) { .incn-passage, .with-en .incn-passage { grid-template-columns: 1fr; } .with-en .incn-en { grid-column: 1; } }
 </style>
 
 <script>
@@ -50,9 +73,9 @@ scripts:
             if (n.nodeType !== 1) return '';
             const inner = walk(n), rend = n.getAttribute('rend') || '';
             if (n.localName === 'hi') {
-                if (/bold/.test(rend)) return '<strong title="Liebermann’s bold type: differs in content from the source">' + inner + '</strong>';
-                if (/spaced/.test(rend)) return '<span class="spaced" title="Liebermann’s spaced type: reworded on purpose">' + inner + '</span>';
-                if (/\bsmall\b/.test(rend)) return '<span class="small-type" title="Liebermann’s smaller type: word for word from the source">' + inner + '</span>';
+                if (/bold/.test(rend)) return '<strong title="Changed">' + inner + '</strong>';
+                if (/spaced/.test(rend)) return '<span class="spaced" title="Reworded">' + inner + '</span>';
+                if (/\bsmall\b/.test(rend)) return '<span class="small-type" title="From source">' + inner + '</span>';
                 if (/italic/.test(rend)) return '<em>' + inner + '</em>';
                 if (/superscript/.test(rend)) return '<sup>' + inner + '</sup>';
                 return inner;
@@ -69,11 +92,24 @@ scripts:
                     + (last ? '</span>' : '');
             }
             if (n.localName === 'seg' && n.getAttribute('type') === 'recension')
-                return '<span class="recension" title="Liebermann’s round brackets: the other version of these words">' + inner + '</span>';
+                return '<span class="recension" title="Other version">' + inner + '</span>';
             return inner;
         }).join('');
         return walk(doc.documentElement);
     }
+    // which texts to show: Latin and English side by side (the default), or one of them; remembered
+    const art = document.querySelector('.incn-reading');
+    function setView(v) {
+        art.classList.toggle('with-en', v === 'both');
+        art.classList.toggle('incn-only-la', v === 'la');
+        art.classList.toggle('incn-only-en', v === 'en');
+        document.querySelectorAll('.incn-view button').forEach(b => b.setAttribute('aria-pressed', b.dataset.view === v ? 'true' : 'false'));
+        try { localStorage.setItem('eLiebermann.incnView', v); } catch (e) {}
+    }
+    let view = 'both';
+    try { view = localStorage.getItem('eLiebermann.incnView') || 'both'; } catch (e) {}
+    setView(view);
+    document.querySelectorAll('.incn-view button').forEach(b => b.addEventListener('click', () => setView(b.dataset.view)));
     const bookOf = c => (/^(I{1,3})\b/.exec(c) || [])[1] || '';
     fetch(root + 'data/incn-reading.json').then(r => r.json()).then(data => {
         let html = '', book = null, last = '';
@@ -89,17 +125,17 @@ scripts:
             last = p.incn;
             const where = p.source ? 'beside ' + esc(p.source) : 'Liebermann’s list';
             html += `<div class="incn-passage"><div class="incn-label">${label}<a class="incn-src" href="${root}law.html?id=${encodeURIComponent(p.id)}" title="The clause page, with Liebermann’s notes">${where}${p.page ? ', p. ' + esc(p.page) : ''}</a></div>`
-                + `<p class="incn-text-p clause-reading-text"${ELieb.langAttr('la')}>${render(p.text)}</p></div>`;
+                + `<p class="incn-text-p clause-reading-text lt"${ELieb.langAttr('la')}>${render(p.text)}</p>`
+                + `<p class="incn-en lt" lang="en">${p.en ? render(p.en) : ''}</p></div>`;
         });
         jump.push('<a href="#rubrics">Rubrics</a>');
         html += '<section class="incn-rubrics" id="rubrics"><h2>Rubrics</h2><p class="muted small">The chapter headings found in some manuscripts (H, Cb, T and others). Liebermann prints them separately (Gesetze I, pp. 616–617); they are not the author’s.</p>';
         data.rubrics.forEach(r => {
-            html += `<div class="incn-passage"><div class="incn-label"><a href="${root}law.html?id=${encodeURIComponent(r.id)}">${esc(r.incn)}</a></div><p class="incn-text-p clause-reading-text"${ELieb.langAttr('la')}>${render(r.text)}</p></div>`;
+            html += `<div class="incn-passage"><div class="incn-label"><a href="${root}law.html?id=${encodeURIComponent(r.id)}">${esc(r.incn)}</a></div><p class="incn-text-p clause-reading-text lt"${ELieb.langAttr('la')}>${render(r.text)}</p><p class="incn-en lt" lang="en">${r.en ? render(r.en) : ''}</p></div>`;
         });
         html += '</section>';
         box.innerHTML = html;
         document.getElementById('incn-jump').innerHTML = 'Go to: ' + jump.join('');
-        box.querySelectorAll('[data-lang]').forEach(p => window.ELieb && ELieb.setLang && ELieb.setLang(p, 'la'));
     }).catch(() => { box.innerHTML = '<p class="notice error">The text couldn’t be loaded.</p>'; });
 })();
 </script>
