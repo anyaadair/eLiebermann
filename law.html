@@ -470,14 +470,16 @@ scripts:
     let siglumIndex = null;
     let bibliography = [];    // authors and works Liebermann cites (data/bibliography.json), linked in his notes
     let clauseOrder = {};     // Liebermann's printed order and the notes on it (data/clause-order.json)
+    let incnElsewhere = {};   // where the Instituta Cnuti's Latin for a clause is printed, if not on its page (data/incn-elsewhere.json)
     let relTerms = {};        // a scholar's wording of a cross-reference -> one of five terms (data/comparison-terms.json)
     const sigKey = s => s.replace(/[\s.]/g, '');
     const SIGLUM_ALIASES = { 'InstCn': 'In(Cn)' };
     const LATIN_VERSION = /^(Q|Lat|In|Inst\.? ?Cn\.?|Cons\.?(?: ?Cn\.?)?)(?![\w])/;
     function loadSigla() {
         const get = f => fetch(root + 'data/' + f).then(r => r.json()).catch(() => []);
-        return Promise.all([get('manuscripts.json'), get('markLaw.json'), get('bibliography.json'), get('comparison-terms.json'), get('clause-order.json'), Wulfstan.load(root)]).then(([ms, law, bib, terms, order]) => {
+        return Promise.all([get('manuscripts.json'), get('markLaw.json'), get('bibliography.json'), get('comparison-terms.json'), get('clause-order.json'), Wulfstan.load(root), get('incn-elsewhere.json')]).then(([ms, law, bib, terms, order, , incn]) => {
             clauseOrder = order && !Array.isArray(order) ? order : {};
+            incnElsewhere = incn && !Array.isArray(incn) ? incn : {};
             bibliography = bib || [];
             relTerms = terms && !Array.isArray(terms) ? terms : {};
             siglumIndex = {};
@@ -681,6 +683,28 @@ scripts:
             const p = el('p', 'clause-note clause-order-note small');
             p.appendChild(el('strong', null, 'Editor’s note: '));
             p.appendChild(document.createTextNode(orderNote));
+            wrap.insertBefore(p, grid);
+        }
+        // The Instituta Cnuti's Latin for this clause, where it is not on this page: in a passage printed
+        // beside a neighbouring clause, or as a chapter Liebermann prints in full in his list (data/incn-elsewhere.json)
+        const incn = incnElsewhere[(doc.documentElement && doc.documentElement.getAttribute('xml:id')) || idno('slug')];
+        if (incn) {
+            const p = el('p', 'clause-note clause-incn-note small');
+            p.appendChild(el('strong', null, incn.translates ? 'Source: ' : 'Instituta Cnuti: '));
+            const link = (cid, label) => { const a = el('a', null, label); a.href = 'law.html?id=' + encodeURIComponent(cid); return a; };
+            const join = (items, make) => items.forEach((x, i) => { if (i) p.appendChild(document.createTextNode(i === items.length - 1 ? ' and ' : ', ')); p.appendChild(make(x)); });
+            if (incn.with) {
+                p.appendChild(document.createTextNode('its Latin for this clause is part of the passage Liebermann prints beside '));
+                p.appendChild(link(incn.with, incn.label));
+                p.appendChild(document.createTextNode('.'));
+            } else if (incn.list) {
+                join(incn.list, x => link(x.id, x.label));
+                p.appendChild(document.createTextNode((incn.list.length > 1 ? ' translate' : ' translates') + ' this clause; Liebermann prints ' + (incn.list.length > 1 ? 'them' : 'it') + ' in full in his list of the Instituta’s chapters (Gesetze I, p. ' + incn.list[0].page + '), not beside this clause.'));
+            } else if (incn.translates) {
+                p.appendChild(document.createTextNode('this chapter translates '));
+                join(incn.translates, x => link(x.id, x.label));
+                p.appendChild(document.createTextNode(' (in Liebermann’s margin, Gesetze I, p. ' + (incn.page || '613') + ').'));
+            }
             wrap.insertBefore(p, grid);
         }
         // Cross-references to other clauses: Liebermann's marginal notes ("Vgl."), then other scholars'

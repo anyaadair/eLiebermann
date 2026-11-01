@@ -11,7 +11,7 @@ scripts:
 
 <details class="incn-about" open>
   <summary>About this text and this page</summary>
-  <p>Liebermann never prints the <i>Instituta</i> as one continuous text. Most of it translates the laws of Cnut, of Alfred and Ine, of Edgar, and a group of short texts on rank and oaths (Mirce, Að, Hadbot, Geþyncðo, Grið), and he prints each passage once only, as a Latin column beside the Old English it translates. His list of the work’s chapters (Gesetze I, pp. 612–615) gives in full only what has no Old English source, and points with a short quotation (“Si quis latro — — librum pęnitentialem; o. S. 343–47”) to the rest. This page puts the passages back together in the translator’s order, following that list. Each passage is labelled with its chapter of the <i>Instituta</i> and links to the clause page where Liebermann prints it, with his notes and the Old English beside it.</p>
+  <p>Liebermann never prints the <i>Instituta</i> as one continuous text. Most of it translates the laws of Cnut, of Alfred and Ine, of Edgar, and a group of short texts on rank and oaths (Mirce, Að, Hadbot, Geþyncðo, Grið), and he prints each passage once only, as a Latin column beside the Old English it translates. His list of the work’s chapters (Gesetze I, pp. 612–616) gives in full only what he has not printed beside its source (chiefly what has no surviving Old English source, and a few chapters from Ine), and points with a short quotation (“Si quis latro — — librum pęnitentialem; o. S. 343–47”) to the rest. This page puts the passages back together in the translator’s order, following that list. Each passage is labelled with its chapter of the <i>Instituta</i> and links to the clause page where Liebermann prints it, with his notes and the Old English beside it.</p>
   <p><strong>Numbering.</strong> The three books are Liebermann’s division. Books I and II translate I and II Cnut and are numbered to match them, so that In Cn II 54 translates II Cnut 54; the translator’s additions from other laws carry letters (In Cn I 12c is the third addition after Cnut’s I 12). Book III is a patchwork of Ine, Alfred, the texts on rank, and about a dozen chapters (III 45,4–55, 57–59) whose Old English source is lost. The rubrics are not the author’s and are given separately at the end.</p>
   <section class="incn-mss" id="manuscripts" aria-labelledby="incn-mss-h">
   <p id="incn-mss-h"><strong>The manuscripts.</strong> The <i>Instituta</i> survives in two forms: a full text, running to III 64, and a short one that stops in the middle of III 44 (in the translation of Að). Liebermann (‘On the Instituta Cnuti’, 1893, §§ 24–27, and <i>Gesetze</i> I, p. 612) and Bruce O’Brien (2003) agree on the groups but not on every link between them. Each siglum below links to its entry in the <a href="msAbb.html">list of manuscripts</a>, which gives Liebermann’s description and O’Brien’s comments.</p>
@@ -66,6 +66,7 @@ scripts:
 .incn-about { margin: 1rem 0 1.5rem; padding: .75rem 1rem; border-left: 3px solid var(--rule, #ddd); background: var(--panel, rgba(0,0,0,.02)); }
 .incn-about summary { cursor: pointer; font-weight: 600; }
 .incn-about p { font-size: .95rem; }
+.incn-from { display: block; }
 .incn-mss__list { font-size: .95rem; margin: .25rem 0 .75rem; }
 .incn-mss__list dt { font-weight: 600; margin-top: .6rem; }
 .incn-mss__list dd { margin: .2rem 0 0 1.25rem; }
@@ -169,7 +170,7 @@ scripts:
             const label = p.incn === last ? '' : 'In Cn ' + esc(p.incn);
             last = p.incn;
             const where = p.source ? 'beside ' + esc(p.source) : 'Liebermann’s list';
-            html += `<div class="incn-passage"><div class="incn-label">${label}<a class="incn-src" href="${root}law.html?id=${encodeURIComponent(p.id)}" title="The clause page, with the Old English beside it">${where}${p.page ? ', p. ' + esc(p.page) : ''}</a>${notesButton(p)}</div>`
+            html += `<div class="incn-passage"><div class="incn-label">${label}<a class="incn-src" href="${root}law.html?id=${encodeURIComponent(p.id)}" title="The clause page, with the Old English beside it">${where}${p.page ? ', p. ' + esc(p.page) : ''}</a>${(p.translates || []).length ? '<span class="incn-from small muted">translates ' + p.translates.map(t => `<a href="${root}law.html?id=${encodeURIComponent(t.id)}">${esc(t.label)}</a>`).join(', ') + '</span>' : ''}${notesButton(p)}</div>`
                 + `<p class="incn-text-p clause-reading-text lt"${ELieb.langAttr('la')}>${render(p.text)}</p>`
                 + `<p class="incn-en lt" lang="en">${p.en ? render(p.en) : ''}</p>${notesList(p)}</div>`;
         });

@@ -11,6 +11,8 @@ passages it points to, taken from the clause files where they are printed.
 """
 import json, os, re
 
+ELSEWHERE = json.load(open(os.path.join(os.path.dirname(__file__), '..', '..', 'data', 'incn-elsewhere.json'), encoding='utf-8'))
+
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 LAWS = os.path.join(ROOT, 'oe-laws')
 
@@ -144,6 +146,7 @@ def main():
             else:
                 text = clean(xs[0]) if xs else ''
             out.append({'incn': r['clause'], 'id': r['id'], 'source': '', 'printed': 'list',
+                        'translates': ELSEWHERE.get(r['id'], {}).get('translates', []),
                         'page': (re.search(r'<pb n="(\d+)"', xs[0]) or [None, ''])[1] if xs else '', 'text': text,
                         'notes': notes_of(os.path.join(LAWS, r['file']), text)})
     rub = []
