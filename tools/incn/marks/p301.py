@@ -5,5 +5,5 @@ MARKS = [
  ('ICn_22-3', 'sp', 'Pater noster'),
  ('ICn_22-5', 'sp', 'Oportet ergo'), ('ICn_22-5', 'sp', 'Credo in Deum'), ('ICn_22-5', 'sp', 'ut ostendat se Christi fidem habere'),
  ('ICn_22-5', 'sp', 'nec est dignus'), ('ICn_22-5', 'sp', 'confirmandum'),
- ('ICn_22-5', 'sp', 'quem tenere, et uere non est dignus, ut corpus eius inter corpora Christianorum sepeliatur'), ('ICn_22-5', 'sp', 'duo'),
+ ('ICn_22-5', 'sp', '-quem tenere, et uere non est dignus, ut corpus eius inter corpora Christianorum sepeliatur'), ('ICn_22-5', 'sp', 'duo'),
 ]

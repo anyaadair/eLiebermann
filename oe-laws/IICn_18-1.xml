@@ -68,6 +68,7 @@
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 320.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS B added from Gesetze I, p. 320.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS In added from Gesetze I, p. 321.</change>
+      <change when="2026-11-01" type="incn-type">Liebermann’s bold, spaced and smaller type in the Instituta Cnuti text marked by Claude from the page images; to be checked against the print.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -78,7 +79,7 @@
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="18.1" corresp="#wit-b"><pb n="320" ed="#liebermann"/>⁊ þær beo on ðære scire bisceop ⁊ se ealdorman, ⁊ þær ægðer tæcan ge Godes riht ge woruldriht.</ab>
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="18.1" corresp="#wit-a"><pb n="320" ed="#liebermann"/>⁊ þær beo on ðare scyre biscop ⁊ se ealdorman, ⁊ þær ægðer teacean ge Godes riht ge weoruldriht.</ab>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="18.1" corresp="#wit-q"><pb n="321" ed="#liebermann"/>Et intersit episcopus et aldremannus<ptr type="liebermannNote" n="17" target="#IICn_18-1.lnote.oe.17"/>, et doceant ibi Dei rectum et seculi.</ab>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="18.1" corresp="#wit-inst-cn"><pb n="321" ed="#liebermann"/>Et in illo comitatu sint episcopus<ptr type="liebermannNote" n="17" target="#IICn_18-1.lnote.oe.17-2"/> et comes, qui ostendant populo et iusticias Dei et rectitudines saeculi.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="18.1" corresp="#wit-inst-cn"><pb n="321" ed="#liebermann"/>Et in illo <hi rend="spaced">comitatu</hi> sint episcopus<ptr type="liebermannNote" n="17" target="#IICn_18-1.lnote.oe.17-2"/> et comes, qui <hi rend="spaced">ostendant</hi> populo et iusticias Dei et rectitudines saeculi.</ab>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="18.1" corresp="#wit-cons-cn"><pb n="321" ed="#liebermann"/>In illo autem conuentu comitatus assint episcopus et preses, ibique doceant tam Dei quam seculi iusticiam.</ab>
         <ab type="editionText" xml:lang="ang" source="#robertson" n="18.1" corresp="#wit-b"><pb n="182" ed="#robertson"/>⁊ þær beo on ðære scire bisceop ⁊ se ealdorman ⁊ þær ægðer tæcan ge Godes riht ge woruldriht.</ab>
         <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-g-a"><pb n="262" ed="#rabin-doml"/>And þær beo on þære scire bisceop and se ealdorman, and þær ægþer tæcan ge Godes riht ge woruldriht.</ab>

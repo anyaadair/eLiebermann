@@ -67,6 +67,7 @@
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 358.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS B added from Gesetze I, p. 358.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS In added from Gesetze I, p. 359.</change>
+      <change when="2026-11-01">The Instituta Cnuti text marked as Latin (it had been taken for Old English because of the English words it keeps).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -77,7 +78,7 @@
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="71.3" corresp="#wit-b"><pb n="358" ed="#liebermann"/>And kyncges ðegnes heregeata inne mid Denum, ðe his socne hæbbe: IIII pund.</ab>
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="71.3" corresp="#wit-a"><pb n="358" ed="#liebermann"/>⁊ cyninges þegnes heregeata<ptr type="liebermannNote" n="3" target="#IICn_71-3.lnote.oe.3-2"/> inne mid Denum, þe his socne habbe: IIII pund.</ab>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="71.3" corresp="#wit-q"><pb n="359" ed="#liebermann"/>Et<ptr type="liebermannNote" n="10" target="#IICn_71-3.lnote.oe.10"/> táini regis<ptr type="liebermannNote" n="11" target="#IICn_71-3.lnote.oe.11"/> releuatio cum Dacis, qui sócnam<ptr type="liebermannNote" n="12" target="#IICn_71-3.lnote.oe.12"/> habet: IIII<ptr type="liebermannNote" n="13" target="#IICn_71-3.lnote.oe.13"/> lib.</ab>
-        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="71.3" corresp="#wit-inst-cn"><ptr type="liebermannNote" n="3" target="#IICn_71-3.lnote.oe.3-3"/><pb n="359" ed="#liebermann"/>Liberalis hominis<ptr type="liebermannNote" n="4" target="#IICn_71-3.lnote.oe.4"/> qui habet consuetudines suas<ptr type="liebermannNote" n="5" target="#IICn_71-3.lnote.oe.5"/>, quem Angli dicunt kinges þegen, debitum post mortem eius, quod supra nominauimus heregeat: IIII librę<ptr type="liebermannNote" n="6" target="#IICn_71-3.lnote.oe.6-2"/>;</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="71.3" corresp="#wit-inst-cn"><ptr type="liebermannNote" n="3" target="#IICn_71-3.lnote.oe.3-3"/><pb n="359" ed="#liebermann"/>Liberalis hominis<ptr type="liebermannNote" n="4" target="#IICn_71-3.lnote.oe.4"/> qui habet consuetudines suas<ptr type="liebermannNote" n="5" target="#IICn_71-3.lnote.oe.5"/>, quem Angli dicunt kinges þegen, debitum post mortem eius, quod supra nominauimus heregeat: IIII librę<ptr type="liebermannNote" n="6" target="#IICn_71-3.lnote.oe.6-2"/>;</ab>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="71.3" corresp="#wit-cons-cn"><pb n="359" ed="#liebermann"/>Et uirronis excercitualia apud Danos, qui suum priuilegium habeat: quatuor libre.</ab>
         <ab type="editionText" xml:lang="ang" source="#robertson" n="71a.3" corresp="#wit-b"><pb n="210" ed="#robertson"/>And kyncges ðegnes heregeata inne mid Denum ðe his socne hæbbe—IIII pund.</ab>
         <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-g-a"><pb n="290" ed="#rabin-doml"/>And cingces þegnes heregeata inne mid Denum, þe his socne hæbbe: IIII pund.</ab>

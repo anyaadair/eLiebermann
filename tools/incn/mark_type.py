@@ -4,7 +4,7 @@
 tools/incn/marks/pNNN.py (one per printed page) hold a list MARKS of
     (clause id, kind, phrase)            kind: 'b' bold, 'sp' spaced, 'sm' smaller type
     (clause id, kind, phrase, n)         n: the n-th occurrence of the phrase (1 = first; default 1)
-The phrase is the printed words, without Liebermann's note numbers; it is found in the clause's In Cn
+The phrase is the printed words (a leading '-' when it starts inside a word broken at a line end), without Liebermann's note numbers; it is found in the clause's In Cn
 text (ab corresp #wit-inst-cn or #wit-in; in an InCn_ file, Liebermann's text) with markup and note
 pointers ignored, and each stretch of text inside it is wrapped in <hi rend="…">. Marks already
 there are left alone, so the script is safe to re-run.
@@ -30,8 +30,9 @@ def mark_ab(ab, kind, phrase, nth):
         for ci, ch in enumerate(t):
             plain.append(ch); where.append((ti, ci))
     text = ''.join(plain)
-    words = phrase.split()
-    pat = r'\s*'.join(re.escape(norm(w)) for w in words)
+    inner = phrase.startswith('-')        # '-rant …': starts inside a word (a word broken at the line end)
+    words = phrase.lstrip('-').split()
+    pat = ('' if inner else r'(?<![\w])') + r'\s*'.join(re.escape(norm(w)) for w in words) + (r'(?![\w])' if re.match(r'\w', words[-1][-1]) else '')
     ms = list(re.finditer(pat, norm(text)))
     if len(ms) < nth:
         return None

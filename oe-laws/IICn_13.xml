@@ -70,6 +70,8 @@
       <change when="2026-10" type="checked">Liebermann’s text of MS B added from Gesetze I, p. 316.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS In added from Gesetze I, p. 317.</change>
       <change when="2026-10" type="checked">Liebermann’s German translation corrected against Gesetze I, p. 317: “(Friedloser. B) Und wer Friedlosenwerk verübt: [da] verfüge der König über den Frieden [den jener sich wiederkaufe].” → “(Friedloser. B) Und wer Friedlosenwerk verübt: [da] verfüge der König über den Frieden [den jener sich wiederkaufe]. (expanded letters in italics: B)”.</change>
+      <change when="2026-11-01" type="incn-type">Liebermann’s bold, spaced and smaller type in the Instituta Cnuti text marked by Claude from the page images; to be checked against the print.</change>
+      <change when="2026-11-01">The Instituta Cnuti text marked as Latin (it had been taken for Old English because of the English words it keeps).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -80,7 +82,7 @@
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="13" corresp="#wit-b"><pb n="316" ed="#liebermann"/>Utlaga. Se ðe útlages weorc gewyrce, wealde se cyng ðæs friðes.</ab>
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="13" corresp="#wit-a"><pb n="316" ed="#liebermann"/>And se ðe útlages weorc gewyrce, wealde se cyningc þæs friðes.</ab>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="13" corresp="#wit-q"><pb n="317" ed="#liebermann"/>Et qui opus útlagii fecerit, eius<ptr type="liebermannNote" n="9" target="#IICn_13.lnote.oe.9"/> reuocatio sit in misericordia regis (pacis<ptr type="liebermannNote" n="10" target="#IICn_13.lnote.oe.10"/> emendatio in solius regis consistat imperio).</ab>
-        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="13" corresp="#wit-inst-cn"><pb n="317" ed="#liebermann"/>Si quis fecerit opus expulsi, quod Angli uocant útlages ƿeorc<ptr type="liebermannNote" n="14" target="#IICn_13.lnote.oe.14"/>, uideat rex de pace.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="13" corresp="#wit-inst-cn"><pb n="317" ed="#liebermann"/>Si quis <hi rend="spaced">fecerit</hi> opus expulsi, <hi rend="spaced">quod Angli uocant</hi> útlages ƿeorc<ptr type="liebermannNote" n="14" target="#IICn_13.lnote.oe.14"/>, uideat rex de pace.</ab>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="13" corresp="#wit-cons-cn"><pb n="317" ed="#liebermann"/>Et si quis exlegis factum fecerit, consideret rex de pace.</ab>
         <ab type="editionText" xml:lang="ang" source="#robertson" n="13" corresp="#wit-b"><pb n="180" ed="#robertson"/>Utlaga. Se ðe útlages weorc gewyrce wealde se cyng ðæs friðes.</ab>
         <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-g-a"><pb n="260" ed="#rabin-doml"/>And se ðe utlages weorc gewyrce, wealde se cingc þæs friþes.</ab>
