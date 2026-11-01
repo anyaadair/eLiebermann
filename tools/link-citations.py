@@ -109,6 +109,7 @@ def norm_clause(clause):
 
 class Clauses:
     def __init__(self, catalogue_path, mark_law_path):
+        self.dir = os.path.dirname(catalogue_path) or '.'
         self.by_anchor = defaultdict(dict)       # anchor -> {clause key: clause id}
         self.ids = defaultdict(list)             # anchor -> clause ids in the database's order
         self.citation = {}                       # clause id -> its citation ("Rect 4.2")
@@ -228,7 +229,25 @@ class Clauses:
         parent = re.match(r'^(.*\d)[a-z]{1,2}$', key)
         if parent and parent.group(1) in files:
             return 'parent clause', files[parent.group(1)]
+        # "V As 3,1": a numbered paragraph that the database keeps inside its chapter's row (V As 3
+        # holds 3 and 3,1). Only when Liebermann's German in that row carries the paragraph's
+        # number ("(3, 1. Und jedermann …"), so the paragraph is really there.
+        num = re.match(r'^(.*\d)\.(\d+[a-z]?)$', key)
+        if num and num.group(1) in files:
+            cid = files[num.group(1)]
+            if self.holds_paragraph(cid, num.group(1), num.group(2)):
+                return 'paragraph in its chapter', cid
         return 'clause not found', None
+
+    def holds_paragraph(self, cid, chapter, para):
+        try:
+            with open(os.path.join(self.dir, cid + '.xml'), encoding='utf-8') as f:
+                s = f.read()
+        except OSError:
+            return False
+        de = ' '.join(re.findall(r'<ab type="translation" xml:lang="de"[^>]*>(.*?)</ab>', s, re.S))
+        de = re.sub(r'<[^>]+>', '', de)
+        return re.search(r'(?<![\d,])' + re.escape(chapter) + r',\s?' + re.escape(para) + r'(?![\d])', de) is not None
 
 
 # ---- main -------------------------------------------------------------------
@@ -315,7 +334,7 @@ def main():
             results_here += ['already linked'] * already
         if results_here:
             entries_with_citations += 1
-            if all(r in ('exact', 'ms-letter', 'subclause', 'and-following', 'instituta', 'prologue', 'parent clause', 'correction', 'already linked') for r in results_here):
+            if all(r in ('exact', 'ms-letter', 'subclause', 'and-following', 'instituta', 'prologue', 'parent clause', 'paragraph in its chapter', 'correction', 'already linked') for r in results_here):
                 entries_fully_linked += 1
         if changed_here:
             if 'ident="clause"' not in new:
@@ -330,14 +349,14 @@ def main():
                     f.write(new)
 
     total = sum(outcome.values())
-    linked = sum(outcome[k] for k in ('exact', 'ms-letter', 'subclause', 'and-following', 'instituta', 'prologue', 'parent clause', 'correction', 'already linked'))
+    linked = sum(outcome[k] for k in ('exact', 'ms-letter', 'subclause', 'and-following', 'instituta', 'prologue', 'parent clause', 'paragraph in its chapter', 'correction', 'already linked'))
     with_clause = linked + outcome['clause not found'] + outcome['citation not understood']
     lines = []
     out = lines.append
     scope = 'All entries' if args.letter.lower() == 'all' else 'Entries filed under %s' % args.letter.upper()
     out('%s: %d (with a law code citation list: %d)' % (scope, entries_seen, entries_with_citations))
     out('Citations in their lists: %d' % total)
-    for k in ('exact', 'ms-letter', 'subclause', 'and-following', 'instituta', 'prologue', 'parent clause', 'correction', 'already linked'):
+    for k in ('exact', 'ms-letter', 'subclause', 'and-following', 'instituta', 'prologue', 'parent clause', 'paragraph in its chapter', 'correction', 'already linked'):
         if outcome[k]:
             out('  linked, %-14s %6d' % (k, outcome[k]))
     out('  LINKED TO A CLAUSE:      %6d  (%.0f%% of all citations; %.0f%% of those with a clause number to a code in the database)'

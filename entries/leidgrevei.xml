@@ -19,6 +19,7 @@
     <encodingDesc>
       <listPrefixDef>
         <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
         <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
         <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
       </listPrefixDef>
@@ -26,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
+      <change when="2026-11-01">Editor’s note on a misprinted citation (unlinked citations, November 2026).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -34,9 +36,10 @@
         <form type="lemma">
           <orth>leidgrevei!</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">leidgrevei<ref type="abbreviation" target="gram:sic"><abbr>!</abbr></ref></hi> <hi rend="italic">Amtsvögte über je</hi> 1 <hi rend="italic">Lathe</hi> <ref type="lawCode" target="law:Hn">Hn</ref> 7,28 [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>.</hi> <ref type="entry" target="entry:laedes">læðes</ref>]</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">leidgrevei<ref type="abbreviation" target="gram:sic"><abbr>!</abbr></ref></hi> <hi rend="italic">Amtsvögte über je</hi> 1 <hi rend="italic">Lathe</hi> <ref type="lawCode" target="law:Hn">Hn</ref> 7,28<ptr type="editorNote" target="#edn-1"/> [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>.</hi> <ref type="entry" target="entry:laedes">læðes</ref>]</dictScrap>
+        <note type="editorial" xml:id="edn-1">“Hn 7,28” appears to be a misprint for Hn 7,2, where <hi rend="italic">leidgrevei</hi> occurs (<ref target="clause:Hn_7-2">Hn 7,2</ref>); the link follows 7,2.</note>
         <xr type="compare"><ref target="entry:laedes">læðes</ref></xr>
-        <xr type="lawCode"><ref target="law:Hn">Hn 7,28</ref></xr>
+        <xr type="lawCode"><ref target="clause:Hn_7-2">Hn 7,28</ref></xr>
       </entry>
     </body>
   </text>

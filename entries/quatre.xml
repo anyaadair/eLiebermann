@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-01">Editor’s note on a misprinted citation (unlinked citations, November 2026).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -34,8 +35,9 @@
         <form type="lemma">
           <orth>quatre</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">F</lbl> <hi rend="bold">quatre</hi> <hi rend="italic">vier;</hi> 140 livres et ~: 144 <ref type="lawCode" target="law:LeisWl">Leis Wl</ref> 22,2; de ~ chemins 26. 28</dictScrap>
-        <xr type="lawCode"><ref target="law:LeisWl">Leis Wl 22,2</ref></xr>
+        <dictScrap type="liebermann"><lbl type="language">F</lbl> <hi rend="bold">quatre</hi> <hi rend="italic">vier;</hi> 140 livres et ~: 144 <ref type="lawCode" target="law:LeisWl">Leis Wl</ref> 22,2<ptr type="editorNote" target="#edn-1"/>; de ~ chemins 26. 28</dictScrap>
+        <note type="editorial" xml:id="edn-1">“Leis Wl 22,2” appears to be a misprint for Leis Wl 2,2, where <hi rend="italic">quatre</hi> occurs (<ref target="clause:LeisWl_2-2">Leis Wl 2,2</ref>); Leis Wl 22 has no 22,2. The link follows 2,2.</note>
+        <xr type="lawCode"><ref target="clause:LeisWl_2-2">Leis Wl 22,2</ref></xr>
         <xr type="lawCode"><ref target="clause:LeisWl_26">Leis Wl 26</ref></xr>
         <xr type="lawCode"><ref target="clause:LeisWl_28">Leis Wl 28</ref></xr>
       </entry>

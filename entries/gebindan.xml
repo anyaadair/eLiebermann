@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-01">Editor’s note on a misprinted citation (unlinked citations, November 2026).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -34,16 +35,18 @@
         <form type="lemma">
           <orth>gebindan</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">gebindan</hi> <hi rend="italic">binden, fesseln;</hi> 3: ~deð <ref type="lawCode" target="law:Abt">Abt</ref> 24,88 | <hi rend="italic"><ref type="abbreviation" target="gram:Optativ"><abbr>op</abbr></ref></hi> 3: ~de <ref type="lawCode" target="law:Af">Af</ref> 1,4. 35. 35,6. <ref type="lawCode" target="law:IICn">II Cn</ref> 60</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">gebindan</hi> <hi rend="italic">binden, fesseln;</hi> 3: ~deð <ref type="lawCode" target="law:Abt">Abt</ref> <ref type="clause" target="clause:Abt_24" n="Abt 24">24</ref>,<ref type="clause" target="clause:Abt_88" n="Abt 88">88</ref><ptr type="editorNote" target="#edn-1"/> | <hi rend="italic"><ref type="abbreviation" target="gram:Optativ"><abbr>op</abbr></ref></hi> 3: ~de <ref type="lawCode" target="law:Af">Af</ref> 1,4. 35. 35,6. <ref type="lawCode" target="law:IICn">II Cn</ref> 60</dictScrap>
+        <note type="editorial" xml:id="edn-1">Liebermann prints “Abt 24,88”; the comma appears to be a misprint for a semicolon: these are two citations, <ref target="clause:Abt_24">Abt 24</ref> and <ref target="clause:Abt_88">Abt 88</ref>, both of which have <hi rend="italic">gebindeð</hi>.</note>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/13679">ge-bindan</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/13566">ge-bændan</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/13619">ge-bendan</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/47201">ge-bendan (Supplement)</ref></xr>
-        <xr type="lawCode"><ref target="law:Abt">Abt 24,88</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_1-4">Af 1,4</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_35">Af 35</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_35-6">Af 35,6</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_60">II Cn 60</ref></xr>
+        <xr type="lawCode"><ref target="clause:Abt_24">Abt 24</ref></xr>
+        <xr type="lawCode"><ref target="clause:Abt_88">Abt 88</ref></xr>
       </entry>
     </body>
   </text>
