@@ -69,6 +69,7 @@
       <change when="2026-10" type="checked">Liebermann’s text of MS B added from Gesetze I, p. 362.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS In added from Gesetze I, p. 363.</change>
       <change when="2026-10" type="checked">Liebermann’s German translation corrected against Gesetze I, p. 363: “Und wenn es nicht unter des Eheweibes Verschluss (Schlösser? so A) gebracht worden ist, stehe sie rein da.” → “Und wenn es nicht unter des Eheweibes Verschluss (Schlösser? so A) gebracht worden ist, stehe sie rein da. (expanded letters in italics: ? so A)”.</change>
+      <change when="2026-11-01" type="incn-type">Liebermann’s bold, spaced and smaller type in the Instituta Cnuti text marked by Claude from the page images; to be checked against the print.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -79,7 +80,7 @@
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="76.1" corresp="#wit-b"><pb n="362" ed="#liebermann"/>⁊ buton hit under ðæs wifes cæglocan gebroht wære, sy heo clæne.</ab>
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="76.1" corresp="#wit-a"><pb n="362" ed="#liebermann"/>⁊ buton hit under þes wifes cæglocum gebroht wære, syo heo clæne.</ab>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="76.1" corresp="#wit-q"><pb n="363" ed="#liebermann"/>Et nisi<ptr type="liebermannNote" n="17" target="#IICn_76-1.lnote.oe.17"/> sub custodia uxoris suę positum<ptr type="liebermannNote" n="18" target="#IICn_76-1.lnote.oe.18"/> sit, ipsa<ptr type="liebermannNote" n="19" target="#IICn_76-1.lnote.oe.19"/> innocens habeatur.</ab>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="76.1" corresp="#wit-inst-cn"><pb n="363" ed="#liebermann"/>Et nisi illud furtum inuentum fuerit<ptr type="liebermannNote" n="14" target="#IICn_76-1.lnote.oe.14"/> sub clauibus mulieris, sit<ptr type="liebermannNote" n="15" target="#IICn_76-1.lnote.oe.15"/> illa immunis.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="76.1" corresp="#wit-inst-cn"><pb n="363" ed="#liebermann"/>Et nisi illud <hi rend="spaced">furtum inuentum</hi> fuerit<ptr type="liebermannNote" n="14" target="#IICn_76-1.lnote.oe.14"/> sub clauibus mulieris, sit<ptr type="liebermannNote" n="15" target="#IICn_76-1.lnote.oe.15"/> illa immunis.</ab>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="76.1" corresp="#wit-cons-cn"><pb n="363" ed="#liebermann"/>[76, 1] Et nisi sub seris marite locatum sit, immunis a crimine habeatur.</ab>
         <ab type="editionText" xml:lang="ang" source="#robertson" n="76.1" corresp="#wit-b"><pb n="212" ed="#robertson"/>⁊ buton hit under ðæs wifes cæglocan gebroht wære, sy heo clæne.</ab>
         <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-g-a"><pb n="294" ed="#rabin-doml"/>And butan hit under þæs wifes cæglocan gebroht wære, si heo clæne.</ab>

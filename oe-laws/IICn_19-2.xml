@@ -70,6 +70,7 @@
       <change when="2026-10" type="checked">Liebermann’s text of MS In added from Gesetze I, p. 323.</change>
       <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 322: “heonan” → “heonon”.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS B added from Gesetze I, p. 322.</change>
+      <change when="2026-11-01" type="incn-type">Liebermann’s bold, spaced and smaller type in the Instituta Cnuti text marked by Claude from the page images; to be checked against the print.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -80,7 +81,7 @@
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="19.2" corresp="#wit-b"><pb n="322" ed="#liebermann"/>And gyf se<ptr type="liebermannNote" n="1" target="#IICn_19-2.lnote.oe.1-2"/> ðonne byrste, nime ðonne leafe ge heonan ge ðeonan<ptr type="liebermannNote" n="2" target="#IICn_19-2.lnote.oe.2"/>, þ<hi rend="italic">æt</hi> he mote hæ<hi rend="italic">n</hi>tan æfter is<ptr type="liebermannNote" n="2" target="#IICn_19-2.lnote.oe.2"/> agan.</ab>
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="19.2" corresp="#wit-a"><pb n="322" ed="#liebermann"/>Gyf se þanne berste, nime þanne geleafe ge heonon ge þanon, þæt he mote hemtan<ptr type="liebermannNote" n="1" target="#IICn_19-2.lnote.oe.1-3"/> æfter his ágenan.</ab>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="19.2" corresp="#wit-q"><pb n="323" ed="#liebermann"/>Qui si fallat, tunc licentiam accipiat, ut abhinc et inde suum audeat perquirere.</ab>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="19.2" corresp="#wit-inst-cn"><pb n="323" ed="#liebermann"/>Quodsi dies statutus fractus fuerit, accepta<ptr type="liebermannNote" n="6" target="#IICn_19-2.lnote.oe.6"/> licentia a comitatu in eundo et in<ptr type="liebermannNote" n="7" target="#IICn_19-2.lnote.oe.7"/> redeundo, ut possit accipere náme, quousque habeat sua.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="19.2" corresp="#wit-inst-cn"><pb n="323" ed="#liebermann"/>Quodsi <hi rend="spaced">dies statutus</hi> fractus fuerit, accepta<ptr type="liebermannNote" n="6" target="#IICn_19-2.lnote.oe.6"/> licentia a comitatu in <hi rend="spaced">eundo</hi> et in<ptr type="liebermannNote" n="7" target="#IICn_19-2.lnote.oe.7"/> redeundo, ut possit <hi rend="bold">accipere náme,</hi> quousque habeat sua.</ab>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="19.2" corresp="#wit-cons-cn"><pb n="323" ed="#liebermann"/>Qui si defecerit, accipiat licentiam utrimque et hinc et inde suum (ius) perquirendi.</ab>
         <ab type="editionText" xml:lang="ang" source="#robertson" n="19.2" corresp="#wit-b"><pb n="182" ed="#robertson"/>And gyf se<ptr type="editorNote" n="14" target="#IICn_19-2.robnote.fn.14"/> ðonne byrste, nime ðonne leafe ge heonan ge ðeonan þæt he mote hæntan æfter [h]is<ptr type="editorNote" n="15" target="#IICn_19-2.robnote.fn.15"/> agan<ptr type="editorNote" n="16" target="#IICn_19-2.robnote.fn.16"/>.</ab>
         <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-g-a"><pb n="262" ed="#rabin-doml"/>Gyf se þonne berste, nime þonne leafe ægþer ge heonon ge þanan þæt he mote hentan æfter his agenan.</ab>

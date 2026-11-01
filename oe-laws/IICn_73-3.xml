@@ -68,6 +68,8 @@
       <change when="2026-10" type="checked">Liebermann’s text of MS B added from Gesetze I, p. 360.</change>
       <change when="2026-10" type="checked">Liebermann’s Latin text corrected against Gesetze I, p. 361: “uidue” → “uiduę”.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS In added from Gesetze I, p. 361.</change>
+      <change when="2026-11-01">The Instituta Cnuti text marked as Latin (it had been taken for Old English because of the English words it keeps).</change>
+      <change when="2026-11-01" type="incn-type">Liebermann’s bold, spaced and smaller type in the Instituta Cnuti text marked by Claude from the page images; to be checked against the print.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -78,7 +80,7 @@
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="73.3" corresp="#wit-b"><pb n="360" ed="#liebermann"/>And ne hadige man næfre wuduwan to hrædlice.</ab>
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="73.3" corresp="#wit-a"><pb n="360" ed="#liebermann"/>And ne hadige man æfre wudewan to hrædlice.</ab>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="73.3" corresp="#wit-q"><pb n="361" ed="#liebermann"/>Et uiduę numquam uelentur nimis cito.</ab>
-        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="73.3" corresp="#wit-inst-cn"><pb n="361" ed="#liebermann"/>Et tamen interdicimus, ne uidua ultra modum cito ueletur.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="73.3" corresp="#wit-inst-cn"><pb n="361" ed="#liebermann"/>Et tamen <hi rend="spaced">interdicimus</hi>, ne uidua ultra modum cito ueletur.</ab>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="73.3" corresp="#wit-cons-cn"><pb n="361" ed="#liebermann"/>Nec uidua aliqua nimium cito sacretur.</ab>
         <ab type="editionText" xml:lang="ang" source="#robertson" n="73a.3" corresp="#wit-b"><pb n="212" ed="#robertson"/>And ne hadige man næfre<ptr type="editorNote" n="2" target="#IICn_73-3.robnote.fn.2"/> wuduwan to hrædlice.</ab>
         <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-g-a"><pb n="292" ed="#rabin-doml"/>And na hadige man æfre wudewan to hrædlice.</ab>

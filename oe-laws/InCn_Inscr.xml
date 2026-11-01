@@ -43,14 +43,15 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-19">Generated from row 3750 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-11-01" type="incn-type">Liebermann’s bold, spaced and smaller type in the Instituta Cnuti text marked by Claude from the page images; to be checked against the print.</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="Inscr.">
         <head><ref type="lawCode" target="law:InCn">In Cn</ref> Inscr.</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="In Cn Inscr." corresp="#wit-hdi"><ptr type="liebermannNote" n="2" target="#InCn_Inscr.lnote.oe.2"/><pb n="612" ed="#liebermann"/>Incipiunt quędam instituta de legibus regum Anglorum (<hi rend="italic">H</hi>; instituta secundum Cnud regem Anglorum <hi rend="italic">Di</hi>).</ab>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="In Cn Inscr." corresp="#wit-iphunt"><pb n="612" ed="#liebermann"/>Incipit lex que Anglice Danelage<ptr type="liebermannNote" n="c" target="#InCn_Inscr.lnote.oe.c"/> est uocata, Latine uero lex Dacorum est interpretata, ab inuictissimo et glorioso rege Anglorum, Dacorum, Norwagenorum, Sueuorum<ptr type="liebermannNote" n="d" target="#InCn_Inscr.lnote.oe.d"/> Cnuto instituta et diligenter custodita.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="In Cn Inscr." corresp="#wit-hdi"><ptr type="liebermannNote" n="2" target="#InCn_Inscr.lnote.oe.2"/><pb n="612" ed="#liebermann"/>Incipiunt <hi rend="spaced">quędam</hi> instituta de legibus regum Anglorum (<hi rend="italic">H</hi>; <hi rend="spaced">instituta secundum Cnud regem</hi> Anglorum <hi rend="italic">Di</hi>).</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="In Cn Inscr." corresp="#wit-iphunt"><pb n="612" ed="#liebermann"/>Incipit <hi rend="spaced">lex que Anglice Danelage</hi><ptr type="liebermannNote" n="c" target="#InCn_Inscr.lnote.oe.c"/><hi rend="spaced"> est uocata, Latine uero lex Dacorum est interpretata, ab inuictissimo et glorioso</hi> <hi rend="small">rege Anglorum, Dacorum, Norwagenorum, Sueuorum</hi><ptr type="liebermannNote" n="d" target="#InCn_Inscr.lnote.oe.d"/> Cnuto instituta et diligenter custodita.</ab>
         <note type="comparison" source="#wormald-mel" n="404"><label>inserts</label> <ref target="clause:Af_15">Af 15–17</ref> <quote>Af 15-17 and 38 – 39:2 came in after II Cn 58 – 59</quote></note>
         <note type="comparison" source="#wormald-mel" n="404"><label>inserts</label> <ref target="clause:Af_20">Af 20</ref> <quote>Af 20 was inserted after I Cn 5:2d, clearly enough prompted by its content</quote></note>
         <note type="comparison" source="#wormald-mel" n="404"><label>inserts</label> <ref target="clause:Af_38">Af 38–39.2</ref> <quote>Af 15-17 and 38 – 39:2 came in after II Cn 58 – 59</quote></note>

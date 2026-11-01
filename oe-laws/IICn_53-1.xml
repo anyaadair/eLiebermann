@@ -68,6 +68,7 @@
       <change when="2026-10" type="checked">Liebermann’s text of MS B added from Gesetze I, p. 348.</change>
       <change when="2026-10" type="checked">Liebermann’s Latin text corrected against Gesetze I, p. 349: “misceueniat” → “miseueniat”.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS In added from Gesetze I, p. 349.</change>
+      <change when="2026-11-01" type="incn-type">Liebermann’s bold, spaced and smaller type in the Instituta Cnuti text marked by Claude from the page images; to be checked against the print.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -78,7 +79,7 @@
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="53.1" corresp="#wit-b"><pb n="348" ed="#liebermann"/>And gyf hit tihtla beo, ⁊ lad forbersta, ðonne wealde se bisceop ⁊ stiðlice deme.</ab>
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="53.1" corresp="#wit-a"><pb n="348" ed="#liebermann"/>And gif hit tihtle sy, ⁊ lad forberste, biscop þonne wealde ⁊ stiðlice deme.</ab>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="53.1" corresp="#wit-q"><pb n="349" ed="#liebermann"/>Et si compellatio sit, et in emundando<ptr type="liebermannNote" n="6" target="#IICn_53-1.lnote.oe.6"/> miseueniat (<ptr type="liebermannNote" n="7" target="#IICn_53-1.lnote.oe.7"/>probata<ptr type="liebermannNote" n="8" target="#IICn_53-1.lnote.oe.8"/> fuerit), sit in episcopi potestate, et<ptr type="liebermannNote" n="9" target="#IICn_53-1.lnote.oe.9"/> ipse grauiter iudicet.</ab>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="53.1" corresp="#wit-inst-cn"><pb n="349" ed="#liebermann"/>Si autem negauerit et purgare se uoluerit, et in iudicio ceciderit, episcopus uideat et districte iudicet<ptr type="liebermannNote" n="3" target="#IICn_53-1.lnote.oe.3"/>.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="53.1" corresp="#wit-inst-cn"><pb n="349" ed="#liebermann"/>Si autem <hi rend="spaced">negauerit</hi> et pur<hi rend="spaced">gare se uoluerit</hi>, et in <hi rend="bold">iudicio</hi> ceciderit, episcopus <hi rend="spaced">uideat</hi> et districte iudicet<ptr type="liebermannNote" n="3" target="#IICn_53-1.lnote.oe.3"/>.</ab>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="53.1" corresp="#wit-cons-cn"><pb n="349" ed="#liebermann"/>[53, 1] Quodsi inficiata fuerit et purgamine defecerit, cadat in manus episcopi, qui inde acriter iudicet.</ab>
         <ab type="editionText" xml:lang="ang" source="#robertson" n="53.1" corresp="#wit-b"><pb n="202" ed="#robertson"/>And gyf hit tihtla beo ⁊ lad forbersta, ðonne wealde se<ptr type="editorNote" n="3" target="#IICn_53-1.robnote.fn.3"/> bisceop ⁊ stiðlice deme.</ab>
         <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-g-a"><pb n="282" ed="#rabin-doml"/>And gif hit tihtle sig and lad forberste, bisceop þonne wealde and stiðlice deme.</ab>

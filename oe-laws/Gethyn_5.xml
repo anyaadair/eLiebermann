@@ -54,6 +54,7 @@
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 458.</change>
       <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 458: “7” → “⁊”.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS In added from Gesetze I, p. 459.</change>
+      <change when="2026-11-01" type="incn-type">Liebermann’s bold, spaced and smaller type in the Instituta Cnuti text marked by Claude from the page images; to be checked against the print.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -62,7 +63,7 @@
         <head><ref type="lawCode" target="law:Gethinctho">Geþyncðo</ref> 5</head>
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="5" corresp="#wit-h"><pb n="458" ed="#liebermann"/>⁊ gif þegen geþeah, þ<hi rend="italic">æt</hi> he wearð to eorle, þonne wæs he syððan eorlrihtes weorðe.</ab>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="5" corresp="#wit-q"><pb n="459" ed="#liebermann"/>Et si tainus prouehatur<ptr type="liebermannNote" n="1" target="#Gethyn_5.lnote.oe.1-2"/> ad consulatum, sit postea dignus rectitudine comitis et honore.</ab>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="5" corresp="#wit-in"><pb n="459" ed="#liebermann"/>[61, 2] Et si liberalis homo ita<ptr type="liebermannNote" n="1" target="#Gethyn_5.lnote.oe.1"/> ascendisset, ut comes fieret, habebat<ptr type="liebermannNote" n="2" target="#Gethyn_5.lnote.oe.2"/> omnes rectitudines suas sicut comes.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="5" corresp="#wit-in"><pb n="459" ed="#liebermann"/>[61, 2] Et si liberalis homo ita<ptr type="liebermannNote" n="1" target="#Gethyn_5.lnote.oe.1"/> ascendisset, ut comes fieret, habebat<ptr type="liebermannNote" n="2" target="#Gethyn_5.lnote.oe.2"/> <hi rend="spaced">omnes rectitudines suas sicut</hi> comes.</ab>
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="5" corresp="#wit-d"><pb n="458" ed="#liebermann"/>….</ab>
         <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-h"><pb n="10" ed="#rabin-doml"/>And gif þegen geþeah þæt he wearð to eorle, þonne wæs he syððan eorlrihtes weorðe.</ab>
         <ab type="translation" xml:lang="de" source="#liebermann"><ptr type="liebermannNote" n="a" target="#Gethyn_5.lnote.de1.a"/><pb n="459" ed="#liebermann"/>Und wenn ein Thegn emporstieg, dass er zum Grafen<ptr type="liebermannNote" n="1" target="#Gethyn_5.lnote.de.1"/> wurde<ptr type="liebermannNote" n="2" target="#Gethyn_5.lnote.de.2"/>, dann genoss er fortan Grafenberechtigung<ptr type="liebermannNote" n="3" target="#Gethyn_5.lnote.de.3"/>.</ab>

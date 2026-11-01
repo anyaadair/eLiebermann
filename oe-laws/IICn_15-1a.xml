@@ -73,6 +73,7 @@
       <change when="2026-10" type="checked">Liebermann’s text of MS D added from Gesetze I, p. 318.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS In added from Gesetze I, p. 319.</change>
       <change when="2026-10" type="checked">Liebermann’s German translation corrected against Gesetze I, p. 319: “BA)” → “B A)”.</change>
+      <change when="2026-11-01" type="incn-type">Liebermann’s bold, spaced and smaller type in the Instituta Cnuti text marked by Claude from the page images; to be checked against the print.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -84,7 +85,7 @@
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="15.1a" corresp="#wit-a"><pb n="318" ed="#liebermann"/>⁊ on Dena laga lahslites scyldig, buton he hine geladige, þ<hi rend="italic">æt</hi> he na bet ne cuðe.</ab>
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="15.1a" corresp="#wit-d-frags"><pb n="318" ed="#liebermann"/>buton he geladige, þ<hi rend="italic">æt</hi> he na bet ne cuðe.</ab>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="15.1a" corresp="#wit-q"><pb n="319" ed="#liebermann"/>In Denalaga<ptr type="liebermannNote" n="25" target="#IICn_15-1a.lnote.oe.25"/> láhslichtes<ptr type="liebermannNote" n="26" target="#IICn_15-1a.lnote.oe.26"/> reus<ptr type="liebermannNote" n="27" target="#IICn_15-1a.lnote.oe.27"/> sit, nisi<ptr type="liebermannNote" n="28" target="#IICn_15-1a.lnote.oe.28"/> se allegiet (si non iuret), quod melius nesciuit.</ab>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="15.1a" corresp="#wit-inst-cn"><pb n="319" ed="#liebermann"/>In lege Danorum erit reus forisfacturę, quam Dani uocant lahslit . . .<ptr type="liebermannNote" n="*" target="#IICn_15-1a.lnote.oe.star"/></ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="15.1a" corresp="#wit-inst-cn"><pb n="319" ed="#liebermann"/>In lege Danorum erit reus forisfacturę, <hi rend="spaced">quam</hi> <hi rend="bold">Dani</hi> <hi rend="spaced">uocant</hi> lahslit . . .<ptr type="liebermannNote" n="*" target="#IICn_15-1a.lnote.oe.star"/></ab>
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="15.1a" corresp="#wit-cons-cn"><pb n="319" ed="#liebermann"/>Secundum legem uero Danorum legis fracture reus, nisi iurauerit, se melius nescisse.</ab>
         <ab type="editionText" xml:lang="ang" source="#robertson" n="15a.1a" corresp="#wit-b"><pb n="182" ed="#robertson"/>⁊ on Dena laga lahslites scyldig, buton he híne<ptr type="editorNote" n="1" target="#IICn_15-1a.robnote.fn.1"/> geladige, þæt he na bet ne cuðe.</ab>
         <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-g-a"><pb n="260" ed="#rabin-doml"/>And on Dena lage lahslites scyldig, butan he geladige þæt he na bet ne cuðe.</ab>

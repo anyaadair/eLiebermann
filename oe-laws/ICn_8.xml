@@ -68,6 +68,7 @@
       <change when="2026-10-19">Generated from row 1641 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 290.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS In added from Gesetze I, p. 291.</change>
+      <change when="2026-11-01" type="incn-type">Liebermann’s bold, spaced and smaller type in the Instituta Cnuti text marked by Claude from the page images; to be checked against the print.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -77,7 +78,7 @@
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="8" corresp="#wit-g-a"><pb n="290" ed="#liebermann"/>And gelæste mann<ptr type="liebermannNote" n="4" target="#ICn_8.lnote.oe.4"/> Godes gerihta æghwylce<ptr type="liebermannNote" n="23" target="#ICn_8.lnote.oe.23"/> geare rihtlice georne.</ab>
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="8" corresp="#wit-a"><pb n="290" ed="#liebermann"/>And gelæste man Godes gerihta æghwilce geare rihtlice georne.</ab>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="8" corresp="#wit-q"><pb n="290" ed="#liebermann"/>Et reddantur Deo debitę rectitudines annis singulis:</ab>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="8" corresp="#wit-inst-cn"><pb n="291" ed="#liebermann"/>Sollicite quoque<ptr type="liebermannNote" n="7" target="#ICn_8.lnote.oe.7"/> studeamus rectitudines Dei persoluere:</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="8" corresp="#wit-inst-cn"><pb n="291" ed="#liebermann"/>Sollicite <hi rend="spaced">quoque</hi><ptr type="liebermannNote" n="7" target="#ICn_8.lnote.oe.7"/> studeamus rectitudines Dei persoluere:</ab>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="8" corresp="#wit-cons-cn"><pb n="291" ed="#liebermann"/>Statuimus etiam, ut rectitudines Dei quoquo anno soluantur:</ab>
         <ab type="editionText" xml:lang="ang" source="#robertson" n="8" corresp="#wit-g-a"><pb n="164" ed="#robertson"/>And gelæste mann Godes gerihta æghwylce geare rihtlice georne.</ab>
         <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-g-a"><pb n="242" ed="#rabin-doml"/>And gelæste mann Godes gerihta æghwylce geare rihtlice georne.</ab>

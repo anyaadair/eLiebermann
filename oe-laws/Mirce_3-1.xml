@@ -62,6 +62,7 @@
       <change when="2026-10" type="checked">Liebermann’s text of MS Ld added from Gesetze I, p. 463.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS In added from Gesetze I, p. 463.</change>
       <change when="2026-10" type="checked">Liebermann’s German translation corrected against Gesetze I, p. 463: “[die staatliche Königsbusse wird diesem hinzugenommen noch einmal so viel bei K. lq]” → “∅”.</change>
+      <change when="2026-11-01" type="incn-type">Liebermann’s bold, spaced and smaller type in the Instituta Cnuti text marked by Claude from the page images; to be checked against the print.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -73,7 +74,7 @@
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="3.1" corresp="#wit-h"><pb n="462" ed="#liebermann"/>And for þa<hi rend="italic">m</hi> cynedome gebyrað oþer swilc to bote on cynegylde.</ab>
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="3.1" corresp="#wit-ld"><pb n="463" ed="#liebermann"/>Ac<ptr type="liebermannNote" n="d" target="#Mirce_3-1.lnote.oe.d"/> for ðæs rices cynebot<ptr type="liebermannNote" n="e" target="#Mirce_3-1.lnote.oe.e"/> biþ to ðissum genume<hi rend="italic">n<ptr type="liebermannNote" n="*" target="#Mirce_3-1.lnote.oe.star"/></hi> eft swa micle on cynegyld.</ab>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="3.1" corresp="#wit-q"><pb n="463" ed="#liebermann"/>Set pro regni<ptr type="liebermannNote" n="13" target="#Mirce_3-1.lnote.oe.13"/> emendatione (dignitate) debet addi tantumdem in cynegildo<ptr type="liebermannNote" n="14" target="#Mirce_3-1.lnote.oe.14"/>.</ab>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="3.1" corresp="#wit-in"><pb n="463" ed="#liebermann"/>[43, 3] Sed propter excellentiam regię dignitatis conuenit iterum tantundem<ptr type="liebermannNote" n="15" target="#Mirce_3-1.lnote.oe.15"/> dare.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="3.1" corresp="#wit-in"><pb n="463" ed="#liebermann"/>[43, 3] Sed propter <hi rend="spaced">excellentiam</hi> regię dignitatis conuenit iterum tantundem<ptr type="liebermannNote" n="15" target="#Mirce_3-1.lnote.oe.15"/> <hi rend="spaced">dare</hi>.</ab>
         <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-h"><pb n="14" ed="#rabin-doml"/>And for ðam cynedome gebyrað oðer swilc to bote on cynegylde.</ab>
         <ab type="translation" xml:lang="de" source="#liebermann"><pb n="463" ed="#liebermann"/>Jedoch für die Königswürde<ptr type="liebermannNote" n="a" target="#Mirce_3-1.lnote.de1.a"/> gebührt als Busse bei Königs-Entgeltung eine zweite<ptr type="liebermannNote" n="1" target="#Mirce_3-1.lnote.de.1"/> solche [Summe].</ab>
         <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">But for the kingship a second such [sum] is due as compensation in the king's payment [the public king-compensation is added to it, as much again, lq].</ab>

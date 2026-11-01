@@ -68,6 +68,7 @@
       <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 328: “Gif he ne mage, þonne gewylde man hine, swa hwæðer man mage, swa cucne swa deadne, ⁊ niman eall þæt he age.” → “Gif he ne mage, þonne gewylde man hine, swa hwæðer man mage, swa cucne swa deadne, ⁊ niman eall þæt he age. (expanded letters in italics: æt)”.</change>
       <change when="2026-10" type="checked">Liebermann’s German translation corrected against Gesetze I, p. 328: “man sich seiner,; ∅” → “man,; sich seiner”.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS In added from Gesetze I, p. 329.</change>
+      <change when="2026-11-01" type="incn-type">Liebermann’s bold, spaced and smaller type in the Instituta Cnuti text marked by Claude from the page images; to be checked against the print.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -78,7 +79,7 @@
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="25a" corresp="#wit-b"><pb n="328" ed="#liebermann"/>Gyf he ðonne ne mæge, gewylde man hine, swa hwæðer swa man mæge, swa cwicne swa deadne, ⁊ nimen eall þ<hi rend="italic">æt</hi> he ah.<ptr type="liebermannNote" n="5" target="#IICn_25a.lnote.oe.5"/></ab>
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="25a" corresp="#wit-a"><pb n="328" ed="#liebermann"/>Gif he ne mage, þonne gewylde man hine, swa hwæðer<ptr type="liebermannNote" n="5" target="#IICn_25a.lnote.oe.5-2"/> man mage, swa cucne swa deadne, ⁊ niman eall þ<hi rend="italic">æt</hi> he age.</ab>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="25a" corresp="#wit-q"><pb n="329" ed="#liebermann"/>Si non possit, exuperetur, sicut alterutrum poterit, siue uiuus siue mortuus, et capiatur omne quod habebit.</ab>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="25a" corresp="#wit-inst-cn"><pb n="329" ed="#liebermann"/>Quodsi non potuerit aut noluerit, capiatur aut<ptr type="liebermannNote" n="6" target="#IICn_25a.lnote.oe.6"/> uiuus aut mortuus et omnia quę habet.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="25a" corresp="#wit-inst-cn"><pb n="329" ed="#liebermann"/>Quodsi non <hi rend="spaced">potuerit aut noluerit</hi>, capiatur aut<ptr type="liebermannNote" n="6" target="#IICn_25a.lnote.oe.6"/> uiuus aut mortuus et omnia quę habet.</ab>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="25a" corresp="#wit-cons-cn"><pb n="329" ed="#liebermann"/>Quodsi fideiussores inuenire nequiuerint, uincant illum utrum poterunt, siue uiuum siue mortuum, et accipiant quicquid habet.</ab>
         <ab type="editionText" xml:lang="ang" source="#robertson" n="25a" corresp="#wit-b"><pb n="186" ed="#robertson"/>Gyf he ðonne ne mæge, gewylde man hine swa hwæðer swa man mæge, swa cwicne swa deadne, ⁊ nimen eall þæt he ah<ptr type="editorNote" n="14" target="#IICn_25a.robnote.fn.14"/>.</ab>
         <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-g-a"><pb n="266" ed="#rabin-doml"/>Gif he þonne ne mage, gewylde man hine swa hwæðer swa man mæge, swa cucne swa deadne, and niman eall þæt he ahte.</ab>

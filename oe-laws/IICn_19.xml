@@ -69,6 +69,7 @@
       <change when="2026-10" type="checked">Liebermann’s text of MS In added from Gesetze I, p. 323.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS B added from Gesetze I, p. 320.</change>
       <change when="2026-10" type="checked">Liebermann’s German translation corrected against Gesetze I, p. 321: “(Vom Pfand. B) Und niemand nehme ein Pfand [für Urtheilserfüllung dem Processgegner fort], weder innerhalb des Grafschaftsgerichts noch aussergerichtlich, bevor er im Hundertschafts[gericht] sein Recht dreimal [vergeblich] gefordert hat.” → “(Vom Pfand. B) Und niemand nehme ein Pfand [für Urtheilserfüllung dem Processgegner fort], weder innerhalb des Grafschaftsgerichts noch aussergerichtlich, bevor er im Hundertschafts[gericht] sein Recht dreimal [vergeblich] gefordert hat. (expanded letters in italics: B)”.</change>
+      <change when="2026-11-01" type="incn-type">Liebermann’s bold, spaced and smaller type in the Instituta Cnuti text marked by Claude from the page images; to be checked against the print.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -79,7 +80,7 @@
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="19" corresp="#wit-b"><pb n="320" ed="#liebermann"/>Be nááme. ⁊ ne nime nan man nane náme ne inne scire ne ut of scire, ær man hæbbe rihtes gebeden.</ab>
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="19" corresp="#wit-a"><pb n="320" ed="#liebermann"/>And ne nime nan man náme ne innan scyran ne ut of scyre, ær man habbe þrywa on hundrode his rihtes gebedan.</ab>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="19" corresp="#wit-q"><pb n="323" ed="#liebermann"/>quam ter<ptr type="liebermannNote" n="1" target="#IICn_19.lnote.oe.1-2"/> in hundreto suo rectum sibi perquisierit. Et nemo námum capiat in comitatu uel extra comitatum, prius-</ab>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="19" corresp="#wit-inst-cn"><pb n="323" ed="#liebermann"/>uocant náme nec infra comitatum nec extra, antequam ter iusticiam in hundredo requirat. Nullus accipiat pro aliqua forisfactura quicquam quod Angli</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="19" corresp="#wit-inst-cn"><pb n="323" ed="#liebermann"/><hi rend="spaced">uocant</hi> náme nec infra comitatum nec extra, antequam ter iusticiam in hundredo requirat. Nullus accipiat pro aliqua forisfactura quicquam quod Angli</ab>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="19" corresp="#wit-cons-cn"><pb n="323" ed="#liebermann"/>extra comitatum, nisi primum ter postulauerit suum rectum in suo centenario. Neque capiat quisquam captionem neque intra comitatum neque</ab>
         <ab type="editionText" xml:lang="ang" source="#robertson" n="19" corresp="#wit-b"><pb n="182" ed="#robertson"/>Be nááme. ⁊ ne nime nan man nane<ptr type="editorNote" n="11" target="#IICn_19.robnote.fn.11"/> náme ne inne scire ne ut of scire, ær man hæbbe [þriwa on hundrede his]<ptr type="editorNote" n="12" target="#IICn_19.robnote.fn.12"/> rihtes gebeden.</ab>
         <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-g-a"><pb n="262" ed="#rabin-doml"/>And ne nime nan man nane næme, ne innan scire ne ut of scire, ær mann hæbbe þriwa on hundrede his rihtes gebeden.</ab>

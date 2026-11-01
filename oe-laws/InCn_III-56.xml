@@ -43,13 +43,14 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-19">Generated from row 3802 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-11-01" type="incn-type">Liebermann’s bold, spaced and smaller type in the Instituta Cnuti text marked by Claude from the page images; to be checked against the print.</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="III 56">
         <head><ref type="lawCode" target="law:InCn">In Cn</ref> III 56</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="In Cn III 56" corresp="#wit-lat"><pb n="615" ed="#liebermann"/>In lege Cantia<ptr type="liebermannNote" n="4" target="#InCn_III-56.lnote.oe.4"/> Ęcclesia Christi et rex et archiepiscopus habent similem et ęque carum despectum, quod Angli dicunt mundbrecc<ptr type="liebermannNote" n="5" target="#InCn_III-56.lnote.oe.5"/>.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="In Cn III 56" corresp="#wit-lat"><pb n="615" ed="#liebermann"/><hi rend="small">In lege Cantia</hi><ptr type="liebermannNote" n="4" target="#InCn_III-56.lnote.oe.4"/><hi rend="small"> Ęcclesia Christi et rex et archiepiscopus habent similem et ęque carum despectum, </hi><hi rend="spaced"><hi rend="small">quod Angli dicunt</hi></hi><hi rend="small"> mundbrecc</hi><ptr type="liebermannNote" n="5" target="#InCn_III-56.lnote.oe.5"/><hi rend="small">.</hi></ab>
         <note type="comparison" source="#wormald-mel" n="394"><label>derives from</label> <ref target="clause:Grith_Grid-Inscr">Grið</ref> <quote>although it was perhaps associated with it in the source of Instituta Cnuti. [n.] Inst. Cn III 56 – 56:2</quote></note>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 615 (two independent readings of the page images, differences settled against the page)</note>
         <note type="liebermannNote" subtype="textual" xml:id="InCn_III-56.lnote.oe.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">615</biblScope></bibl><seg type="original" xml:lang="de">-ica <hi rend="italic">T</hi></seg><seg type="translation" xml:lang="en" source="#claude">-ica <hi rend="italic">T</hi></seg></note>

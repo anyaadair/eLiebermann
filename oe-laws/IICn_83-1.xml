@@ -65,6 +65,7 @@
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 366.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS B added from Gesetze I, p. 366.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS In added from Gesetze I, p. 367.</change>
+      <change when="2026-11-01" type="incn-type">Liebermann’s bold, spaced and smaller type in the Instituta Cnuti text marked by Claude from the page images; to be checked against the print.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -75,7 +76,7 @@
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="83.1" corresp="#wit-b"><pb n="366" ed="#liebermann"/>And gyf he hit eft wyrde, gylde twywa<ptr type="liebermannNote" n="8" target="#IICn_83-1.lnote.oe.8"/> his were.</ab>
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="83.1" corresp="#wit-a"><pb n="366" ed="#liebermann"/>⁊ gif he hit eft wyrde, gylde twuga his were.</ab>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="83.1" corresp="#wit-q"><pb n="367" ed="#liebermann"/>Et si secundo id<ptr type="liebermannNote" n="13" target="#IICn_83-1.lnote.oe.13"/> faciat, reddat bis wéram suam.</ab>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="83.1" corresp="#wit-inst-cn"><pb n="367" ed="#liebermann"/>Si secundo hoc idem fecerit, dupliciter<ptr type="liebermannNote" n="12" target="#IICn_83-1.lnote.oe.12"/> secundum superiorem rationem emendet.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="83.1" corresp="#wit-inst-cn"><pb n="367" ed="#liebermann"/>Si secundo <hi rend="spaced">hoc idem fecerit</hi>, dupliciter<ptr type="liebermannNote" n="12" target="#IICn_83-1.lnote.oe.12"/> <hi rend="spaced">secundum superiorem rationem</hi> emendet.</ab>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="83.1" corresp="#wit-cons-cn"><pb n="367" ed="#liebermann"/>[83, 1] Quodsi secundo, bis persoluat censum sue redempcionis.</ab>
         <ab type="editionText" xml:lang="ang" source="#robertson" n="83.1" corresp="#wit-b"><pb n="216" ed="#robertson"/>And gyf he hit eft wyrde, gylde twywa his were.</ab>
         <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-g-a"><pb n="296" ed="#rabin-doml"/>And gif he hit eft wyrde, gylde tuwa his were.</ab>

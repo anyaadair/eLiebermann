@@ -69,6 +69,7 @@
       <change when="2026-10" type="checked">Liebermann’s text of MS B added from Gesetze I, p. 366.</change>
       <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 366: “⁊ gif he þonne swa dyrstig sy, þæt he þridde syðe wyrde, þolige ealles þæs þe he age.” → “⁊ gif he þonne swa dyrstig sy, þæt he þridde syðe wyrde, þolige ealles þæs þe he age. (expanded letters in italics: æt)”.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS In added from Gesetze I, p. 367.</change>
+      <change when="2026-11-01" type="incn-type">Liebermann’s bold, spaced and smaller type in the Instituta Cnuti text marked by Claude from the page images; to be checked against the print.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -79,7 +80,7 @@
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="83.2" corresp="#wit-b"><pb n="366" ed="#liebermann"/>And gyf he ðonne swa dyrstig sy, þ<hi rend="italic">æt</hi> he hi ðridde siðe abrece, ðolige ealles ðæs ðe he age.</ab>
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="83.2" corresp="#wit-a"><pb n="366" ed="#liebermann"/>⁊ gif he þonne swa dyrstig sy, þ<hi rend="italic">æt</hi> he þridde syðe wyrde, þolige ealles þæs þe he age.</ab>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="83.2" corresp="#wit-q"><pb n="367" ed="#liebermann"/>Et si quis addat<ptr type="liebermannNote" n="14" target="#IICn_83-2.lnote.oe.14"/> tertio, reus sit omnium quę habebit.</ab>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="83.2" corresp="#wit-inst-cn"><pb n="367" ed="#liebermann"/>Quod si audendo tertio<ptr type="liebermannNote" n="13" target="#IICn_83-2.lnote.oe.13"/> hoc presumpserit, perdat omnia sua. . . . . . .<ptr type="liebermannNote" n="14" target="#IICn_83-2.lnote.oe.14-2"/></ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="83.2" corresp="#wit-inst-cn"><pb n="367" ed="#liebermann"/>Quod si <hi rend="spaced">audendo</hi> tertio<ptr type="liebermannNote" n="13" target="#IICn_83-2.lnote.oe.13"/> hoc presumpserit, perdat omnia sua. . . . . . .<ptr type="liebermannNote" n="14" target="#IICn_83-2.lnote.oe.14-2"/></ab>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="83.2" corresp="#wit-cons-cn"><pb n="367" ed="#liebermann"/>[83, 2] Quodsi adeo audax si[t], ut illam tertio temeret, amittat quicquid possidet.</ab>
         <ab type="editionText" xml:lang="ang" source="#robertson" n="83.2" corresp="#wit-b"><pb n="216" ed="#robertson"/>And gyf he ðonne swa dyrstig sy þæt he hi<ptr type="editorNote" n="4" target="#IICn_83-2.robnote.fn.4"/> ðridde siðe abrece<ptr type="editorNote" n="5" target="#IICn_83-2.robnote.fn.5"/>, ðolige ealles ðæs ðe he age.</ab>
         <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-g-a"><pb n="296" ed="#rabin-doml"/>And gyf he þonne swa dyrstig sig, þæt he hit þriddan syðe wyrde, þolige ealles þæs þe he age.</ab>

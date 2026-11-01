@@ -68,6 +68,7 @@
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 342.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS B added from Gesetze I, p. 342.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS In added from Gesetze I, p. 343.</change>
+      <change when="2026-11-01" type="incn-type">Liebermann’s bold, spaced and smaller type in the Instituta Cnuti text marked by Claude from the page images; to be checked against the print.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -78,7 +79,7 @@
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="44" corresp="#wit-b"><pb n="342" ed="#liebermann"/>Gyf deaðscyldig man scriftspréce<ptr type="liebermannNote" n="3" target="#IICn_44.lnote.oe.3"/> gyrne, ne wyrne him nan man næfre.</ab>
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="44" corresp="#wit-a"><pb n="342" ed="#liebermann"/>Gif deoðscyldig<ptr type="liebermannNote" n="1" target="#IICn_44.lnote.oe.1"/> man sriftsprace<ptr type="liebermannNote" n="1" target="#IICn_44.lnote.oe.1"/> georne, ne wirne man him æfre.</ab>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="44" corresp="#wit-q"><pb n="343" ed="#liebermann"/>Si quis morti dampnatus confessionem facere<ptr type="liebermannNote" n="3" target="#IICn_44.lnote.oe.3-2"/> (habere) desideret<ptr type="liebermannNote" n="4" target="#IICn_44.lnote.oe.4"/>, numquam negetur<ptr type="liebermannNote" n="5" target="#IICn_44.lnote.oe.5"/> (defendatur) ei.</ab>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="44" corresp="#wit-inst-cn"><pb n="343" ed="#liebermann"/>Si quis latro aut alius<ptr type="liebermannNote" n="5" target="#IICn_44.lnote.oe.5-2"/> condemnatus ad mortem quęrit confessionem, nullo modo ei denegetur.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="44" corresp="#wit-inst-cn"><pb n="343" ed="#liebermann"/>Si quis latro <hi rend="spaced">aut alius</hi><ptr type="liebermannNote" n="5" target="#IICn_44.lnote.oe.5-2"/> condemnatus ad mortem quęrit confessionem, nullo modo ei denegetur.</ab>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="44" corresp="#wit-cons-cn"><pb n="343" ed="#liebermann"/>[44] Si morte dampnatus confessionis colloquium petat, nemo prohibeat.</ab>
         <ab type="editionText" xml:lang="ang" source="#robertson" n="44" corresp="#wit-b"><pb n="198" ed="#robertson"/>Gyf deaðscyldig man scriftspréce gyrne, ne wyrne him nan<ptr type="editorNote" n="1" target="#IICn_44.robnote.fn.1"/> man næfre<ptr type="editorNote" n="2" target="#IICn_44.robnote.fn.2"/>.</ab>
         <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-g-a"><pb n="278" ed="#rabin-doml"/>Gif deaðscyldig man scriftspæce gyrne, ne wyrne him man æfre.</ab>
