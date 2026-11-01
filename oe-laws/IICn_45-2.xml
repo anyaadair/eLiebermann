@@ -70,6 +70,7 @@
       <change when="2026-10" type="checked">Liebermann’s text of MS B added from Gesetze I, p. 342.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS In added from Gesetze I, p. 343.</change>
       <change when="2026-10" type="checked">Liebermann’s German translation corrected against Gesetze I, p. 343: “Hautgeld,” → “Hautgold,”.</change>
+      <change when="2026-11-01" type="incn-type">Liebermann’s bold, spaced and smaller type in the Instituta Cnuti text marked by Claude from the page images; to be checked against the print.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -80,7 +81,7 @@
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="45.2" corresp="#wit-b"><pb n="342" ed="#liebermann"/>Ðeowman gyf he wyrce, ðolie his hyde oððon hydgyldes, be ðam ðe seo dæd sy.</ab>
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="45.2" corresp="#wit-a"><pb n="342" ed="#liebermann"/>Þeowman gif he weorce, þolige his hyde oððe hydgyldes, be<ptr type="liebermannNote" n="4" target="#IICn_45-2.lnote.oe.4"/> þam seo dæd sy.</ab>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="45.2" corresp="#wit-q"><pb n="343" ed="#liebermann"/>Si seruus operetur, corium amittat<ptr type="liebermannNote" n="7" target="#IICn_45-2.lnote.oe.7"/> (suum perdat) — aut<ptr type="liebermannNote" n="11" target="#IICn_45-2.lnote.oe.11"/> solutionem corii sui pro modo facti — uel XXX denariis redimat<ptr type="liebermannNote" n="12" target="#IICn_45-2.lnote.oe.12"/>, secundum<ptr type="liebermannNote" n="13" target="#IICn_45-2.lnote.oe.13"/> quod factum erit.</ab>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="45.2" corresp="#wit-inst-cn"><pb n="343" ed="#liebermann"/>Si seruus hoc faciat, careat corio suo aut emendet secundum modum operis.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="45.2" corresp="#wit-inst-cn"><pb n="343" ed="#liebermann"/>Si seruus <hi rend="spaced">hoc faciat</hi>, careat corio suo aut emendet secundum modum operis.</ab>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="45.2" corresp="#wit-cons-cn"><pb n="343" ed="#liebermann"/>[45, 2] Si uero seruus, amittat cutem aut cutis redempcionem iuxta operis qualitatem.</ab>
         <ab type="editionText" xml:lang="ang" source="#robertson" n="45.2" corresp="#wit-b"><pb n="198" ed="#robertson"/>Ðeowman, gyf he<ptr type="editorNote" n="9" target="#IICn_45-2.robnote.fn.9"/> wyrce, ðolie his hyde oððon hydgyldes, be ðam ðe seo dæd sy.</ab>
         <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-g-a"><pb n="278" ed="#rabin-doml"/>Þeowman gif wyrce, þolige his hyde oððon hydgyldes, be þam seo dæd sy.</ab>
