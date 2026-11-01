@@ -34,11 +34,21 @@ scripts:
 
     function drawIndex(data, clauses) {
         document.title = 'Subjects · eLiebermann';
-        const count = {};   // field -> term -> clauses
-        FIELDS.forEach(f => { count[f] = {}; });
-        clauses.forEach(c => FIELDS.forEach(f => c[f].forEach(k => { count[f][k] = (count[f][k] || 0) + 1; })));
+        // in[f][k]: whether term k is used in section f (legal matters, people, places).
+        // n[k]: the clauses indexed with k in any section, each counted once, so a subject
+        // listed in two sections (Danelaw: legal matter and place) shows the same number
+        // in both, the number its own page gives.
+        const used = {}, n = {};
+        FIELDS.forEach(f => { used[f] = {}; });
+        clauses.forEach(c => {
+            const mine = new Set();
+            FIELDS.forEach(f => c[f].forEach(k => { used[f][k] = true; mine.add(k); }));
+            mine.forEach(k => { n[k] = (n[k] || 0) + 1; });
+        });
+        const count = {};   // field -> term -> clauses (in any section), for the terms used in that section
+        FIELDS.forEach(f => { count[f] = {}; Object.keys(used[f]).forEach(k => { count[f][k] = n[k]; }); });
         const tagged = clauses.filter(c => FIELDS.some(f => c[f].length)).length;
-        const total = FIELDS.reduce((n, f) => n + Object.keys(count[f]).length, 0);
+        const total = Object.keys(n).length;
 
         const term = (k, n) => `<li data-k="${esc(fold(k))}"><a href="${subjectUrl(k)}">${esc(k)}</a> <span class="subject-n">${n}</span></li>`;
         const sorted = (terms, f) => terms.filter(k => count[f][k])
