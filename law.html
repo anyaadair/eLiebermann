@@ -1330,10 +1330,13 @@ scripts:
         // other manuscripts' spellings of the same word, given by Liebermann after the citation
         // ("Ine 23,2; abbud H B"): each one found is marked too, with the form cited (abbod abbud)
         const also = (new URLSearchParams(location.search).get('also') || '').split(',').map(w => w.trim()).filter(w => w && !/\s/.test(w));
-        if (wanted.length || also.length) {
+        // words added by hand to the link (data/link-highlights.json, e.g. the spellings of other
+        // manuscripts): every one found is marked too, not only the first
+        const extra = (new URLSearchParams(location.search).get('mark') || '').split(',').map(w => w.trim()).filter(w => w && !/\s/.test(w));
+        if (wanted.length || also.length || extra.length) {
             tol.checked = true;
             fromLink = true;
-            const letters = [...wanted[0]];
+            const letters = [...(wanted[0] || '')];   // a link may carry only also= or mark=
             const stems = letters.length <= 4 ? [wanted[0] + '*']
                 : [...new Set([letters.length - 2, letters.length - 3, Math.ceil(letters.length * 0.6)].map(n => Math.max(4, n)))].map(n => letters.slice(0, n).join('') + '*');
             for (const w of wanted.length ? wanted.concat(stems) : []) {
@@ -1349,6 +1352,17 @@ scripts:
                     find.value = w;
                     run();
                     if (marks.length) { found.push(w); break; }
+                }
+                find.value = found.join(' ');
+                run();
+            }
+            if (extra.length) {
+                const found = marks.length ? find.value.split(' ') : [];
+                for (const w of extra) {
+                    if (found.includes(w)) continue;
+                    find.value = w;
+                    run();
+                    if (marks.length) found.push(w);
                 }
                 find.value = found.join(' ');
                 run();

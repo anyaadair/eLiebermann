@@ -1,0 +1,25 @@
+{
+  "_about": "Words to highlight on a dictionary entry's clause links, added by hand where the rules can't tell. Keyed by entry id, then by the citation as listed under the entry. 'find' replaces the form the rules choose; every word in 'mark' is marked too, wherever it is found in the clause (other manuscripts' spellings). Read by entry.html; law.html marks them (its mark= parameter).",
+  "pundwaega": {
+    "Ine 59,1": {
+      "find": "pundwæga",
+      "mark": [
+        "wæga"
+      ]
+    },
+    "Ine 70,1": {
+      "find": "pundwæga",
+      "mark": [
+        "pundwega",
+        "pundwaga",
+        "waga",
+        "wæga"
+      ]
+    }
+  },
+  "purgamen": {
+    "II Cn 39": {
+      "find": "purgamen"
+    }
+  }
+}

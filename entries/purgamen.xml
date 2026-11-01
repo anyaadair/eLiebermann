@@ -35,8 +35,9 @@
         <form type="lemma">
           <orth>purgamen</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">purgamen</hi> <hi rend="italic">gerichtlicher Reinigungsbeweis</hi> <ref type="lawCode" target="law:IICn">II Cn</ref> 8,2 <ref type="lawCode" target="law:InCn">In</ref>. Cons, lad <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref>;</hi> ~ virile 39 Cons, werelad <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref></hi></dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">purgamen</hi> <hi rend="italic">gerichtlicher Reinigungsbeweis</hi> <ref type="lawCode" target="law:IICn">II Cn</ref> 8,2 <ref type="lawCode" target="law:InCn">In</ref>. <ref type="lawCode" target="law:ConsCn">Cons</ref>, lad <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref>;</hi> ~ virile <ref type="clause" target="clause:IICn_39" n="II Cn 39">39</ref> <ref type="lawCode" target="law:ConsCn">Cons</ref>, werelad <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref></hi></dictScrap>
         <xr type="lawCode"><ref target="clause:IICn_8-2">II Cn 8,2</ref></xr>
+        <xr type="lawCode"><ref target="clause:IICn_39">II Cn 39</ref></xr>
       </entry>
     </body>
   </text>

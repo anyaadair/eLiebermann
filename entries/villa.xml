@@ -46,6 +46,10 @@
           <sense n="3"><hi rend="italic">Dorf, geschlossener Bezirk, worin Zoll erhebbar, neben</hi> burgus <ref type="lawCode" target="law:HnLond">Hn Lond</ref> 12; <hi rend="italic"><ref type="abbreviation" target="gram:imGegensatzZu"><abbr>im Ggs. zu</abbr></ref></hi> burgus <hi rend="italic">und</hi> comitatus 14 | in civitatem, burgum, ~am, viam <ref type="lawCode" target="law:ECf">ECf</ref> 18,1 | meliores ~ae [<hi rend="italic"><ref type="abbreviation" target="gram:oder"><abbr>oder</abbr></ref> zu <ref type="abbreviation" target="gram:Nummer"><abbr>n.</abbr></ref></hi> 4] <hi rend="italic">oberste der Bauern</hi> <ref type="lawCode" target="law:Hn">Hn</ref> 7,7<hi rend="superscript">b</hi></sense>
           <sense n="4"><hi rend="italic">Dorfbewohnerschaft, Bauerngemeinde</hi> <ref type="lawCode" target="law:LeisWl">Leis Wl</ref> <ref type="lawCode" target="law:LatVersion">L</ref> 6. <ref type="lawCode" target="law:Hn">Hn</ref> 83,6a. <ref type="lawCode" target="law:ECf">ECf</ref> 20,1</sense>
         </dictScrap>
+        <xr type="lawCode" subtype="range"><ref target="clause:ECf_15-1">ECf 15,1</ref></xr>
+        <xr type="lawCode" subtype="range"><ref target="clause:ECf_15-2">ECf 15,2</ref></xr>
+        <xr type="lawCode" subtype="range"><ref target="clause:ECf_15-3">ECf 15,3</ref></xr>
+        <xr type="lawCode" rend="range-from:ECf 15"><ref target="clause:ECf_15-4">ECf 15,4</ref></xr>
         <xr type="lawCode"><ref target="clause:ExcomVI_7">Excom VI 7</ref></xr>
         <xr type="lawCode"><ref target="clause:InCn_III-55">In Cn III 55</ref></xr>
         <xr type="lawCode"><ref target="law:ExcomII">Excom II 8,2</ref></xr>
@@ -53,11 +57,9 @@
         <xr type="lawCode"><ref target="clause:AsAlm_2">As Alm 2</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_69-1">II Cn 69,1</ref></xr>
         <xr type="lawCode"><ref target="clause:ECf_15">ECf 15</ref></xr>
-        <xr type="lawCode" subtype="range"><ref target="clause:ECf_15-1">ECf 15,1</ref></xr>
-        <xr type="lawCode" subtype="range"><ref target="clause:ECf_15-2">ECf 15,2</ref></xr>
-        <xr type="lawCode" subtype="range"><ref target="clause:ECf_15-3">ECf 15,3</ref></xr>
         <xr type="lawCode" rend="range-from:ECf 15"><ref target="clause:ECf_15-4">ECf 15,4</ref></xr>
         <xr type="lawCode"><ref target="clause:HnLond_12">Hn Lond 12</ref></xr>
+        <xr type="lawCode"><ref target="clause:HnLond_14">Hn Lond 14</ref></xr>
         <xr type="lawCode"><ref target="clause:ECf_18-1">ECf 18,1</ref></xr>
         <xr type="lawCode"><ref target="clause:Hn_7-7">Hn 7,7</ref></xr>
         <xr type="lawCode"><ref target="clause:LeisWl_6">Leis Wl 6</ref></xr>
