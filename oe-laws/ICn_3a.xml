@@ -66,6 +66,7 @@
       <change when="2026-10-19">Generated from row 1613 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 282.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS In added from Gesetze I, p. 283.</change>
+      <change when="2026-11-01">Liebermann’s round brackets in the Instituta Cnuti text marked as the second recension (&lt;seg type="recension"&gt;; Vorrede p. V); brackets marked by Claude.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -75,7 +76,7 @@
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="3a" corresp="#wit-g-a"><pb n="282" ed="#liebermann"/>Bete man<ptr type="liebermannNote" n="13" target="#ICn_3a.lnote.oe.13"/> ærest þone<ptr type="liebermannNote" n="14" target="#ICn_3a.lnote.oe.14"/> griðbryce into þære<ptr type="liebermannNote" n="15" target="#ICn_3a.lnote.oe.15"/> cyrican, be þam þe seo dæd<ptr type="liebermannNote" n="16" target="#ICn_3a.lnote.oe.16"/> sy ⁊ be þam þe ðære cyricean<ptr type="liebermannNote" n="17" target="#ICn_3a.lnote.oe.17"/> mæð sy.</ab>
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="3a" corresp="#wit-a"><pb n="282" ed="#liebermann"/>Bete man arost þonne<ptr type="liebermannNote" n="2" target="#ICn_3a.lnote.oe.2-2"/> gryðbryce into þare cyrican, be þam þe syo dæde sy ⁊ be þam þe þare cyricean mæð sy.</ab>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="3a" corresp="#wit-q"><pb n="282" ed="#liebermann"/>Emendetur prius<ptr type="liebermannNote" n="2" target="#ICn_3a.lnote.oe.2"/> (primitus) infractio pacis in<ptr type="liebermannNote" n="1" target="#ICn_3a.lnote.oe.1"/> ipsam ęcclesiam, iuxta quod culpa fuerit et ipsius ęcclesię dignitas;</ab>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="3a" corresp="#wit-inst-cn"><pb n="283" ed="#liebermann"/>imprimis semper<ptr type="liebermannNote" n="23" target="#ICn_3a.lnote.oe.23"/> fiat emendatio ęcclesię secundum qualitatem (et<ptr type="liebermannNote" n="24" target="#ICn_3a.lnote.oe.24"/> dignitatem) eius.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="3a" corresp="#wit-inst-cn"><pb n="283" ed="#liebermann"/>imprimis semper<ptr type="liebermannNote" n="23" target="#ICn_3a.lnote.oe.23"/> fiat emendatio ęcclesię secundum qualitatem <seg type="recension">(et<ptr type="liebermannNote" n="24" target="#ICn_3a.lnote.oe.24"/> dignitatem)</seg> eius.</ab>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="3a" corresp="#wit-cons-cn"><pb n="283" ed="#liebermann"/>primum autem ecclesie pacis infracturam iuxta modum ipsius malefacti et iuxta modum dignitatis ipsius ecclesie.</ab>
         <ab type="editionText" xml:lang="ang" source="#robertson" n="3a" corresp="#wit-g-a"><pb n="156" ed="#robertson"/>Bete man ærest þone<ptr type="editorNote" n="6" target="#ICn_3a.robnote.fn.6"/> griðbryce into þære cyrican be þam þe seo dæd sy ⁊ be þam þe ðære cyricean mæð sy.</ab>
         <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-g-a"><pb n="234" ed="#rabin-doml"/>Bete man ærest þone griðbryce into þære cyrican, be þam þe seo dæd sy and be þam þe ðære cyricean mæð sy.</ab>
