@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-01">Grammatical entry labelled by the language it concerns (Old English): Liebermann marks French (F) and Latin (L); unmarked ones concern Old English.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -34,6 +35,7 @@
         <form type="lemma">
           <orth>Dittographie</orth>
         </form>
+        <usg type="lang" n="ang">Old English</usg>
         <dictScrap type="liebermann"><hi rend="bold"><hi rend="italic">Dittographie</hi></hi>: sacene ne <ref type="lawCode" target="law:Becwaeth">Becwæð</ref> 3,2 <ref type="lawCode" target="law:B">B</ref> | hegegian? <ref type="lawCode" target="law:Rect">Rect</ref> 2 | for neode mete neade <ref type="lawCode" target="law:Northu">Northu</ref> 56.</dictScrap>
         <xr type="lawCode"><ref target="clause:Becwaeth_3-2">Becwæð 3,2</ref></xr>
         <xr type="lawCode"><ref target="clause:Rect_2">Rect 2</ref></xr>

@@ -25,6 +25,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-01">Grammatical entry labelled by the language it concerns (Old English): Liebermann marks French (F) and Latin (L); unmarked ones concern Old English.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -33,6 +34,7 @@
         <form type="lemma">
           <orth>Pars</orth>
         </form>
+        <usg type="lang" n="ang">Old English</usg>
         <dictScrap type="liebermann"><hi rend="bold"><hi rend="italic">Pars</hi></hi> <hi rend="italic">pro toto <ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:crocca">crocca</ref>, <ref type="entry" target="entry:flett">flet</ref>, <ref type="entry" target="entry:hand">hand</ref>, healm, heorð, hlafæta, <ref type="entry" target="entry:side">side</ref>, <ref type="entry" target="entry:lorica">lorica</ref></dictScrap>
         <xr type="see"><ref target="entry:crocca">crocca</ref></xr>
         <xr type="see"><ref target="entry:flett">flett</ref></xr>

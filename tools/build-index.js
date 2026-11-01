@@ -43,6 +43,8 @@ const entries = fs.readdirSync(dir)
             id: f.replace(/\.xml$/, ''),
             hw,
             lang: pick(xml, /<entry[^>]*xml:lang="([^"]+)"/) || 'ang',
+            // a grammatical entry: the language it is about (<usg type="lang" n="ang">)
+            glang: pick(xml, /<usg type="lang" n="([^"]+)"/) || undefined,
             page: pick(xml, /<biblScope unit="page">([^<]*)<\/biblScope>/),
             gloss: snippet,
             // a spelling, not a word (<usg type="dom">spelling</usg>): badged in the list

@@ -25,6 +25,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-01">Grammatical entry labelled by the language it concerns (French): Liebermann marks French (F) and Latin (L); unmarked ones concern Old English.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -33,6 +34,7 @@
         <form type="lemma">
           <orth>Numerus</orth>
         </form>
+        <usg type="lang" n="fro">French</usg>
         <dictScrap type="liebermann"><lbl type="language">F</lbl> <hi rend="bold"><hi rend="italic">Numerus</hi></hi>: <hi rend="italic">plurales Verb <ref type="abbreviation" target="gram:nach"><abbr>nach</abbr></ref> sing. Collectiv: <ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> aveir <hi rend="italic">Vieh</hi></dictScrap>
         <xr type="see"><ref target="entry:aveir-2">aveir (sbst; obl)</ref></xr>
         <xr type="see"><ref target="entry:aveir">aveir (vb)</ref></xr>

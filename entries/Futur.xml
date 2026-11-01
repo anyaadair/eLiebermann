@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
+      <change when="2026-11-01">Grammatical entry labelled by the language it concerns (French): Liebermann marks French (F) and Latin (L); unmarked ones concern Old English.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,7 @@
         <form type="lemma">
           <orth>Futur</orth>
         </form>
+        <usg type="lang" n="fro">French</usg>
         <dictScrap type="liebermann"><lbl type="language">F</lbl> <hi rend="bold"><hi rend="italic">Futur</hi></hi> <hi rend="bold">1</hi>) <hi rend="italic">imperativisch: <ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:comencrat">comencrat</ref>; defendrat <ref type="lawCode" target="law:WlArtFz">Wl art Fz</ref> 6, defendat <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref></hi> <hi rend="bold">2</hi>) <hi rend="italic">potential: <ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:eslevera">eslevera</ref>; ço ke (<hi rend="italic">was immer</hi>) ert chalengé <ref type="lawCode" target="law:WlArtFz">Wl art Fz</ref> 8a <hi rend="bold">3</hi>) <hi rend="italic">conditional: <ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:f-ailir">failir</ref></dictScrap>
         <dictScrap type="senses">
           <sense n="1"><hi rend="italic">imperativisch: <ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:comencrat">comencrat</ref>; defendrat <ref type="lawCode" target="law:WlArtFz">Wl art Fz</ref> 6, defendat <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref></hi></sense>

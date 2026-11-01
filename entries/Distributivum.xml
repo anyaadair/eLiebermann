@@ -26,6 +26,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-19">“Fz” linked to the abbreviations list.</change>
+      <change when="2026-11-01">Grammatical entry labelled by the language it concerns (Old English): Liebermann marks French (F) and Latin (L); unmarked ones concern Old English.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -34,6 +35,7 @@
         <form type="lemma">
           <orth>Distributivum</orth>
         </form>
+        <usg type="lang" n="ang">Old English</usg>
         <dictScrap type="liebermann"><hi rend="bold"><hi rend="italic">Distributivum</hi></hi> <hi rend="italic"><ref type="abbreviation" target="gram:ersetztDurch"><abbr>ersetzt durch</abbr></ref></hi> <ref type="entry" target="entry:a-2">a</ref>, <ref type="entry" target="entry:aefre">æfre</ref>, <ref type="entry" target="entry:aet">æt</ref> <hi rend="italic"><ref type="abbreviation" target="gram:sieheDort"><abbr>s. d.</abbr></ref></hi> — <hi rend="italic"><ref type="abbreviation" target="gram:franzosisch"><abbr>Fz</abbr></ref>:</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:a-2">a</ref> <hi rend="italic"><ref type="abbreviation" target="gram:Nummer"><abbr>n.</abbr></ref></hi> 9</dictScrap>
         <xr type="see"><ref target="entry:a-2">a</ref></xr>
         <xr type="see"><ref target="entry:aefre">æfre</ref></xr>

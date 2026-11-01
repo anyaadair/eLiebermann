@@ -26,6 +26,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-13">Page corrected from 3 to 4 (the page turns inside acquietare), as in the team transcription (A - boc.docx).</change>
+      <change when="2026-11-01">Grammatical entry labelled by the language it concerns (Old English): Liebermann marks French (F) and Latin (L); unmarked ones concern Old English.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -34,6 +35,7 @@
         <form type="lemma">
           <orth>Activ</orth>
         </form>
+        <usg type="lang" n="ang">Old English</usg>
         <dictScrap type="liebermann"><hi rend="bold"><hi rend="italic">Activ</hi></hi> <hi rend="italic">in medialer Bedeutung <ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref> Unpersönliche Verba</hi></dictScrap>
       </entry>
     </body>

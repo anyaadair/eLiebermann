@@ -26,6 +26,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
+      <change when="2026-11-01">Grammatical entry labelled by the language it concerns (Old English): Liebermann marks French (F) and Latin (L); unmarked ones concern Old English.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -34,6 +35,7 @@
         <form type="lemma">
           <orth>Suffix</orth>
         </form>
+        <usg type="lang" n="ang">Old English</usg>
         <dictScrap type="liebermann"><hi rend="bold"><hi rend="italic">Suffix</hi></hi> <hi rend="italic">und zum ~ geschwächtes Nomen; Beispiele <ref type="abbreviation" target="gram:und"><abbr>u.</abbr></ref> Bemerkungen <ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:baere">-bære</ref>, <ref type="entry" target="entry:bete">-bete</ref>, <ref type="entry" target="entry:burg">-burg</ref>, <ref type="entry" target="entry:cund">-cund</ref>, <ref type="entry" target="entry:dom">-dom</ref>, <ref type="entry" target="entry:faest">-fæst</ref>, <ref type="entry" target="entry:feald-2">-feald</ref>, <ref type="entry" target="entry:full">-full</ref> [<hi rend="italic">ergänze</hi> geornf-, gesundf-, wohf-], -gielde, -had, -ig, -ing [æðeling, cyning, feorðing, liesing, niðing, pening, scilling], -lac, -leas [<hi rend="italic"><ref type="abbreviation" target="gram:auch"><abbr>auch</abbr></ref></hi> arl-], -lic [<hi rend="italic"><ref type="abbreviation" target="gram:auch"><abbr>auch</abbr></ref></hi> ealdorlic, gastlic, gearlic, munuclic, ungedafenlic], -lice [<hi rend="italic"><ref type="abbreviation" target="gram:auch"><abbr>auch</abbr></ref></hi> fæstl-, scandl-, synderl-], -ling [<hi rend="italic"><ref type="abbreviation" target="gram:auch"><abbr>auch</abbr></ref></hi> niedl-, þeowetl-], -ræde, -ræden, -sceatte, -scipe [<hi rend="italic"><ref type="abbreviation" target="gram:auch"><abbr>auch</abbr></ref></hi> cynes-, geburhs-, hæðens-, þeows-], -sl, -sp, -stre, -sum, -ung, -wis, -ware, -weard</dictScrap>
         <xr type="see"><ref target="entry:baere">-bære</ref></xr>
         <xr type="see"><ref target="entry:bete">-bete</ref></xr>

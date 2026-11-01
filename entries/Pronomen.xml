@@ -26,6 +26,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-19">“Pronomen” linked to the abbreviations list (printed bold italic, missed before).</change>
+      <change when="2026-11-01">Grammatical entry labelled by the language it concerns (Old English): Liebermann marks French (F) and Latin (L); unmarked ones concern Old English.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -34,6 +35,7 @@
         <form type="lemma">
           <orth>Pronomen</orth>
         </form>
+        <usg type="lang" n="ang">Old English</usg>
         <dictScrap type="liebermann"><hi rend="bold"><hi rend="italic"><ref type="abbreviation" target="gram:Pronomen"><abbr>Pronomen</abbr></ref></hi></hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref> <ref type="abbreviation" target="gram:Artikel"><abbr>Artikel</abbr></ref><ref type="entry" subtype="jump" target="entry:Artikel"/>, <ref type="entry" target="entry:Declination">Declination</ref>, Demonstrativ, <ref type="entry" target="entry:Ellipse">Ellipse</ref> <ref type="abbreviation" target="gram:Nummer"><abbr>n.</abbr></ref></hi> 1 <ref type="abbreviation" target="gram:folgende"><abbr>f.</abbr></ref>, <hi rend="italic">Genus, Indefinitum, Interrogativum, Neutrum, Numerus, Personale, <ref type="abbreviation" target="gram:Possessiv"><abbr>Possessiv</abbr></ref>, Reflexiv, Relativ, Relativum generale</hi></dictScrap>
         <xr type="see"><ref target="entry:Artikel">Artikel</ref></xr>
         <xr type="see"><ref target="entry:Declination">Declination</ref></xr>
