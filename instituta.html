@@ -23,13 +23,14 @@ scripts:
   <button type="button" class="kind-pill" data-view="both" aria-pressed="true">Latin and English</button>
   <button type="button" class="kind-pill" data-view="la" aria-pressed="false">Latin</button>
   <button type="button" class="kind-pill" data-view="en" aria-pressed="false">English</button>
-</div></div>
+</div>
+<button type="button" class="chip lnotes-toggle" id="incn-all-notes" aria-pressed="false">Show all Liebermann’s notes</button></div>
 <div class="incn-key-wrap"><p class="lt-key" id="incn-key">
-  <span class="lt-key__item"><span class="lt-sample--changed">changed</span> in content from the source</span>
+  <span class="lt-key__item"><span class="lt-sample--changed">changed</span> in content from the Old English source</span>
   <span class="lt-key__item"><span class="lt-sample--reworded">reworded</span> on purpose</span>
-  <span class="lt-key__item"><span class="lt-sample--source">from source</span> word for word</span>
-  <span class="lt-key__item"><span class="lt-sample--alt">(other version)</span> also the author’s</span>
-  <span class="lt-key__item">plain: faithful translation</span>
+  <span class="lt-key__item"><span class="lt-sample--source">from Old English source</span> word for word</span>
+  <span class="lt-key__item"><span class="lt-sample--alt">(alternative version)</span> also the author’s</span>
+  <span class="lt-key__item"><span class="lt-sample--plain">plain</span>: faithful translation</span>
 </p></div>
 <div id="incn-text"><p class="loading">Loading…</p></div>
 </article>
@@ -51,7 +52,17 @@ scripts:
 .incn-about p { font-size: .95rem; }
 .incn-jump a { margin-right: .75rem; }
 .incn-book { margin-top: 2rem; }
-.incn-passage { display: grid; grid-template-columns: 7.5rem 1fr; gap: .25rem 1rem; margin: .55rem 0; }
+.incn-passage { display: grid; grid-template-columns: 7.5rem 1fr; gap: .25rem 1rem; margin: 0; padding: .8rem 0 .85rem; border-top: 1px solid var(--rule); }
+.incn-book + .incn-passage, .incn-rubrics > p + .incn-passage { border-top: 0; }
+.incn-label .lnotes-toggle { display: inline-block; margin: .4rem 0 0; font-size: .74rem; padding: .08rem .5rem; }
+.incn-passage .lnotes__de { display: inline; }
+.incn-passage .lnotes__en { display: inline; margin: 0; }
+.incn-passage .lnotes__en::before { content: ' — '; }
+.incn-passage .lnotes__where { display: inline; margin: 0 0 0 .4em; }
+.incn-passage .lnote-ref { display: none; }
+.incn-passage.notes-open .lnote-ref { display: inline; }
+.incn-passage .lnotes { grid-column: 2 / -1; margin: .35rem 0 0; }
+.incn-passage .lnotes__list li { margin-bottom: .7rem; }
 .incn-label { font-size: .85rem; color: var(--muted); padding-top: .2rem; }
 .incn-label a { color: inherit; }
 .incn-label .incn-src { display: block; font-size: .8rem; }
@@ -81,6 +92,7 @@ scripts:
                 return inner;
             }
             if (n.localName === 'label') return '';
+            if (n.localName === 'ptr') return '<sup class="lnote-ref"><a href="#n-' + esc(n.getAttribute('target')) + '">' + esc(n.getAttribute('n')) + '</a></sup>';
             if (n.localName === 'seg' && n.getAttribute('type') === 'parallel') {
                 const lab = [...n.childNodes].find(x => x.nodeType === 1 && x.localName === 'label');
                 const sig = lab ? lab.textContent.trim() : '';
@@ -92,7 +104,7 @@ scripts:
                     + (last ? '</span>' : '');
             }
             if (n.localName === 'seg' && n.getAttribute('type') === 'recension')
-                return '<span class="recension" title="Other version">' + inner + '</span>';
+                return '<span class="recension" title="Alternative version">' + inner + '</span>';
             return inner;
         }).join('');
         return walk(doc.documentElement);
@@ -110,6 +122,20 @@ scripts:
     try { view = localStorage.getItem('eLiebermann.incnView') || 'both'; } catch (e) {}
     setView(view);
     document.querySelectorAll('.incn-view button').forEach(b => b.addEventListener('click', () => setView(b.dataset.view)));
+    // Liebermann's notes to a passage, behind a button as on the clause pages: his German, then the English crib
+    const plainOf = x => String(x || '').replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();   // the English only where it says more than the German
+    const plural = n => n === 1 ? 'note' : 'notes';
+    const notesButton = p => p.notes && p.notes.length ? `<button type="button" class="chip lnotes-toggle incn-notes-btn" aria-pressed="false" title="Show or hide Liebermann’s notes to this passage">Notes (${p.notes.length})</button>` : '';
+    const notesList = p => !(p.notes && p.notes.length) ? '' : '<div class="lnotes small" hidden><ol class="lnotes__list">' + p.notes.map(n =>
+        `<li id="n-${esc(n.t)}"><span class="lnotes__num">${esc(n.n)})</span><span class="lnotes__de" lang="de">${render(n.de)}</span>${plainOf(n.en) && plainOf(n.en) !== plainOf(n.de) ? `<span class="lnotes__en" lang="en">${render(n.en)}</span>` : ''}${n.page && n.page !== p.page ? `<span class="lnotes__where muted">(p. ${esc(n.page)})</span>` : ''}</li>`).join('') + '</ol></div>';
+    function toggleNotes(pass, on) {
+        const list = pass.querySelector('.lnotes'), btn = pass.querySelector('.incn-notes-btn');
+        if (!list) return;
+        list.hidden = !on;
+        pass.classList.toggle('notes-open', on);
+        btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+        btn.textContent = (on ? 'Hide notes' : 'Notes') + ' (' + list.querySelectorAll('li').length + ')';
+    }
     const bookOf = c => (/^(I{1,3})\b/.exec(c) || [])[1] || '';
     fetch(root + 'data/incn-reading.json').then(r => r.json()).then(data => {
         let html = '', book = null, last = '';
@@ -124,18 +150,35 @@ scripts:
             const label = p.incn === last ? '' : 'In Cn ' + esc(p.incn);
             last = p.incn;
             const where = p.source ? 'beside ' + esc(p.source) : 'Liebermann’s list';
-            html += `<div class="incn-passage"><div class="incn-label">${label}<a class="incn-src" href="${root}law.html?id=${encodeURIComponent(p.id)}" title="The clause page, with Liebermann’s notes">${where}${p.page ? ', p. ' + esc(p.page) : ''}</a></div>`
+            html += `<div class="incn-passage"><div class="incn-label">${label}<a class="incn-src" href="${root}law.html?id=${encodeURIComponent(p.id)}" title="The clause page, with the Old English beside it">${where}${p.page ? ', p. ' + esc(p.page) : ''}</a>${notesButton(p)}</div>`
                 + `<p class="incn-text-p clause-reading-text lt"${ELieb.langAttr('la')}>${render(p.text)}</p>`
-                + `<p class="incn-en lt" lang="en">${p.en ? render(p.en) : ''}</p></div>`;
+                + `<p class="incn-en lt" lang="en">${p.en ? render(p.en) : ''}</p>${notesList(p)}</div>`;
         });
         jump.push('<a href="#rubrics">Rubrics</a>');
         html += '<section class="incn-rubrics" id="rubrics"><h2>Rubrics</h2><p class="muted small">The chapter headings found in some manuscripts (H, Cb, T and others). Liebermann prints them separately (Gesetze I, pp. 616–617); they are not the author’s.</p>';
         data.rubrics.forEach(r => {
-            html += `<div class="incn-passage"><div class="incn-label"><a href="${root}law.html?id=${encodeURIComponent(r.id)}">${esc(r.incn)}</a></div><p class="incn-text-p clause-reading-text lt"${ELieb.langAttr('la')}>${render(r.text)}</p><p class="incn-en lt" lang="en">${r.en ? render(r.en) : ''}</p></div>`;
+            html += `<div class="incn-passage"><div class="incn-label"><a href="${root}law.html?id=${encodeURIComponent(r.id)}">${esc(r.incn)}</a>${notesButton(r)}</div><p class="incn-text-p clause-reading-text lt"${ELieb.langAttr('la')}>${render(r.text)}</p><p class="incn-en lt" lang="en">${r.en ? render(r.en) : ''}</p>${notesList(r)}</div>`;
         });
         html += '</section>';
         box.innerHTML = html;
         document.getElementById('incn-jump').innerHTML = 'Go to: ' + jump.join('');
+        box.addEventListener('click', e => {
+            const btn = e.target.closest('.incn-notes-btn');
+            if (btn) { const pass = btn.closest('.incn-passage'); toggleNotes(pass, btn.getAttribute('aria-pressed') !== 'true'); }
+            const ref = e.target.closest('.lnote-ref a');
+            if (ref) {
+                e.preventDefault();
+                const li = document.getElementById(ref.getAttribute('href').slice(1));
+                if (li) { li.scrollIntoView({ block: 'nearest' }); li.style.background = 'var(--highlight)'; setTimeout(() => { li.style.background = ''; }, 1200); }
+            }
+        });
+        const all = document.getElementById('incn-all-notes');
+        all.addEventListener('click', () => {
+            const on = all.getAttribute('aria-pressed') !== 'true';
+            all.setAttribute('aria-pressed', on ? 'true' : 'false');
+            all.textContent = (on ? 'Hide' : 'Show') + ' all Liebermann’s notes';
+            box.querySelectorAll('.incn-passage').forEach(pass => toggleNotes(pass, on));
+        });
     }).catch(() => { box.innerHTML = '<p class="notice error">The text couldn’t be loaded.</p>'; });
 })();
 </script>

@@ -146,20 +146,24 @@ scripts:
     // black roman (style.css, class "lt"): a one- or two-word reminder on hover, and a key above the text
     // listing only the kinds that occur in it. The fuller account is in Editorial Principles.
     const TYPE_MEANING = {
-        changed: ['strong', 'Changed', 'lt-sample--changed', 'in content from the source'],
-        reworded: ['.spaced', 'Reworded', 'lt-sample--reworded', 'reworded on purpose'],
-        source: ['.small-type', 'From source', 'lt-sample--source', 'word for word'],
-        alt: ['.recension', 'Other version', 'lt-sample--alt', 'also the author’s']
+        changed: ['strong', 'Changed', 'lt-sample--changed', 'in content from the Old English source'],
+        reworded: ['.spaced', 'Reworded', 'lt-sample--reworded', 'on purpose'],
+        source: ['.small-type', 'From source', 'lt-sample--source', 'word for word', 'from Old English source'],
+        alt: ['.recension', 'Alternative version', 'lt-sample--alt', 'also the author’s', '(alternative version)']
     };
     function typeKeyHtml(kinds) {
         const k = el('p', 'lt-key');
         kinds.forEach(name => {
             const [, word, cls, meaning] = TYPE_MEANING[name];
             const item = el('span', 'lt-key__item');
-            item.appendChild(el('span', cls, name === 'alt' ? '(' + word.toLowerCase() + ')' : word.toLowerCase()));
+            item.appendChild(el('span', cls, TYPE_MEANING[name][4] || word.toLowerCase()));
             item.appendChild(document.createTextNode(' ' + meaning));
             k.appendChild(item);
         });
+        const plain = el('span', 'lt-key__item');
+        plain.appendChild(el('span', 'lt-sample--plain', 'plain'));
+        plain.appendChild(document.createTextNode(': faithful translation'));
+        k.appendChild(plain);
         const more = el('a', null, 'About Liebermann’s marks');
         more.href = (window.SITE_ROOT || '') + 'editorial.html#liebermann-type';
         k.appendChild(more);

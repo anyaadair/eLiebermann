@@ -1323,3 +1323,4 @@ mark.gp-mark.is-current { outline: 2px solid var(--link); }
 .lt-key__item { white-space: nowrap; margin-right: 0.9em; }
 .lt-key__item > span:first-child { font-family: var(--serif); font-size: 1.02rem; color: var(--ink); }
 .lt-key__item > span.lt-sample--source { color: #6e6c68; }
+.lt-sample--plain { color: var(--ink); }
