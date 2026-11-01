@@ -69,6 +69,7 @@
       <change when="2026-10" type="checked">Liebermann’s text of MS B added from Gesetze I, p. 336.</change>
       <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 336: “An[d] æt þam oðrum cerre ne sy þær nan bot buton þæt heafod.” → “An[d] æt þam oðrum cerre ne sy þær nan bot buton þæt heafod. (expanded letters in italics: m, m, æt)”.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS In added from Gesetze I, p. 337.</change>
+      <change when="2026-11-01" type="incn-type">Liebermann’s bold, spaced and smaller type in the Instituta Cnuti text marked by Claude from the page images; to be checked against the print.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -79,7 +80,7 @@
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="32.1" corresp="#wit-b"><pb n="336" ed="#liebermann"/>⁊ æt ðam oðran cyrran<ptr type="liebermannNote" n="6" target="#IICn_32-1.lnote.oe.6-2"/> ne sy ðær nan bot buton þ<hi rend="italic">æt</hi> heafod.</ab>
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="32.1" corresp="#wit-a"><pb n="336" ed="#liebermann"/>An[d<ptr type="liebermannNote" n="4" target="#IICn_32-1.lnote.oe.4"/>] æt þa<hi rend="italic">m</hi> oðru<hi rend="italic">m</hi> cerre ne sy þær nan bot buton þ<hi rend="italic">æt</hi> heafod.</ab>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="32.1" corresp="#wit-q"><pb n="337" ed="#liebermann"/>Secunda<ptr type="liebermannNote" n="9" target="#IICn_32-1.lnote.oe.9"/> uice nulla sit<ptr type="liebermannNote" n="10" target="#IICn_32-1.lnote.oe.10"/> emendatio nisi caput.</ab>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="32.1" corresp="#wit-inst-cn"><pb n="337" ed="#liebermann"/>Si secundo ceciderit, nichil<ptr type="liebermannNote" n="5" target="#IICn_32-1.lnote.oe.5"/> aliud emendationis accipiatur, nisi ut ei<ptr type="liebermannNote" n="6" target="#IICn_32-1.lnote.oe.6-4"/> caput abscidatur.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="32.1" corresp="#wit-inst-cn"><pb n="337" ed="#liebermann"/>Si secundo ceciderit, nichil<ptr type="liebermannNote" n="5" target="#IICn_32-1.lnote.oe.5"/> aliud <hi rend="spaced">emendationis</hi> accipiatur, nisi ut ei<ptr type="liebermannNote" n="6" target="#IICn_32-1.lnote.oe.6-4"/> caput <hi rend="spaced">abscidatur</hi>.</ab>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="32.1" corresp="#wit-cons-cn"><pb n="337" ed="#liebermann"/>Secunda autem uice nulla redempcio sit nisi caput.</ab>
         <ab type="editionText" xml:lang="ang" source="#robertson" n="32.1" corresp="#wit-b"><pb n="192" ed="#robertson"/>⁊ æt ðam oðran cyrran ne sy ðær nan bot<ptr type="editorNote" n="11" target="#IICn_32-1.robnote.fn.11"/> buton þæt heafod.</ab>
         <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-g-a"><pb n="272" ed="#rabin-doml"/>And æt þam oðran cyrre ne si þær nan oðer bot butan þæt heafod.</ab>
