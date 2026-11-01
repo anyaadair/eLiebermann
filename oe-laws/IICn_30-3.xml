@@ -67,6 +67,7 @@
       <change when="2026-10" type="checked">Liebermann’s text of MS B added from Gesetze I, p. 332.</change>
       <change when="2026-10" type="checked">Liebermann’s German translation corrected against Gesetze I, p. 332: “(Vom Ordal. B) Wenn sie [Herr und Helfer] jedoch den Eid nicht zu leisten wagen, schreite [Verklagt]er zum dreifachen Ordal.” → “(Vom Ordal. B) Wenn sie [Herr und Helfer] jedoch den Eid nicht zu leisten wagen, schreite [Verklagt]er zum dreifachen Ordal. (expanded letters in italics: B)”.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS In added from Gesetze I, p. 333.</change>
+      <change when="2026-11-01" type="incn-type">Liebermann’s bold, spaced and smaller type in the Instituta Cnuti text marked by Claude from the page images; to be checked against the print.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -77,7 +78,7 @@
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="30.3" corresp="#wit-b"><pb n="332" ed="#liebermann"/>Be ordale. ⁊ gyf hi ðonne<ptr type="liebermannNote" n="2" target="#IICn_30-3.lnote.oe.2"/> að syllan ne durran, gange he to ðam ðrifealdan ordale.</ab>
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="30.3" corresp="#wit-a"><pb n="332" ed="#liebermann"/>⁊ gif hig þonne<ptr type="liebermannNote" n="1" target="#IICn_30-3.lnote.oe.1"/> að syllan ne durren, gange he to þan þryfea[l]dan<ptr type="liebermannNote" n="3" target="#IICn_30-3.lnote.oe.3"/> ordale.</ab>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="30.3" corresp="#wit-q"><pb n="333" ed="#liebermann"/>Et si iurare non<ptr type="liebermannNote" n="4" target="#IICn_30-3.lnote.oe.4"/> audeant<ptr type="liebermannNote" n="5" target="#IICn_30-3.lnote.oe.5"/>, eat ad triplex ordalium (id<ptr type="liebermannNote" n="6" target="#IICn_30-3.lnote.oe.6"/> est iudicium uel examen).</ab>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="30.3" corresp="#wit-inst-cn"><pb n="333" ed="#liebermann"/>Quodsi non audent<ptr type="liebermannNote" n="7" target="#IICn_30-3.lnote.oe.7"/> sacramentum facere, eat<ptr type="liebermannNote" n="8" target="#IICn_30-3.lnote.oe.8"/> ad triplex iudicium.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="30.3" corresp="#wit-inst-cn"><pb n="333" ed="#liebermann"/>Quodsi non <hi rend="spaced">audent</hi><ptr type="liebermannNote" n="7" target="#IICn_30-3.lnote.oe.7"/> sacramentum facere, eat<ptr type="liebermannNote" n="8" target="#IICn_30-3.lnote.oe.8"/> ad triplex iudicium.</ab>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="30.3" corresp="#wit-cons-cn"><pb n="333" ed="#liebermann"/>Quodsi ipsi illud iuramentum facere non audeant, calumpniatus triplex Dei iudicium adeat.</ab>
         <ab type="editionText" xml:lang="ang" source="#robertson" n="30.3" corresp="#wit-b"><pb n="190" ed="#robertson"/>Be ordale. ⁊ gyf hi ðonne<ptr type="editorNote" n="4" target="#IICn_30-3.robnote.fn.4"/> að syllan ne durran, gange he to ðam ðrifealdan ordale.</ab>
         <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-g-a"><pb n="270" ed="#rabin-doml"/>And gif heo þone að syllan ne durren, gange he to þam þryfealdan ordale.</ab>
