@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECf_11-1-A-5">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf 11.1 A 5</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECf_11-1-A-5</idno>
+        <idno type="citation">ECf 11.1 A 5</idno>
+        <idno type="lawCode">ECf</idno>
+        <idno type="lawCodeAnchor">ECf</idno>
+        <idno type="clause">11.1 A 5</idno>
+        <idno type="citationKey">ECf 11.1 A 5</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">635</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>1115–50, probably 1130–35 (Liebermann, I p. 627)</date><note type="promulgation">1115–50, probably 1130–35 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="11.1 A 5">
+        <head><ref type="lawCode" target="law:ECf">ECf</ref> 11.1 A 5</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 11.1 A 5"><pb n="635" ed="#liebermann"/>Tales enim metas et fines, ut predicte sunt, constituit et imposuit corone regni huius<ptr type="liebermannNote" n="12" target="#ECf_11-1-A-5.lnote.la.12"/> dominus Eleutherius<ptr type="liebermannNote" n="13" target="#ECf_11-1-A-5.lnote.la.13"/> papa<ptr type="liebermannNote" n="f" target="#ECf_11-1-A-5.lnote.la.fn.f"/> sententia sua — anno scilicet<ptr type="liebermannNote" n="12" target="#ECf_11-1-A-5.lnote.la.12"/> CXXXVII<ptr type="liebermannNote" n="14" target="#ECf_11-1-A-5.lnote.la.14"/> post passionem Christi<ptr type="liebermannNote" n="g" target="#ECf_11-1-A-5.lnote.la.fn.g"/> —, qui primo destinauit coronam benedictam Britannie et Christianitatem, Deo inspirante, Lucio<ptr type="liebermannNote" n="15" target="#ECf_11-1-A-5.lnote.la.15"/> regi Britonum<ptr type="liebermannNote" n="16" target="#ECf_11-1-A-5.lnote.la.16"/>.</ab>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 635 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
+        <note type="editorial">This passage is not part of ECf or ECf retr: it is one of the additions of the London collection (Leges Anglorum s. XIII in. Londoniis collectae), which Liebermann prints in smaller type across the page, under ECf retr. 11, 1, and numbers 11, 1 A ff. The dictionary cites it as “ECf 11, 1 A …”, so it is kept with ECf here.</note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_11-1-A-5.lnote.la.fn.f" n="f" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">635</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">aus</hi> Galfrid von Monmouth IV 19; <hi rend="italic">vgl. u.</hi> 11, 1 B</seg><seg type="translation" xml:lang="en" source="#claude">from Geoffrey of Monmouth IV 19; cf. below, 11, 1 B</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_11-1-A-5.lnote.la.fn.g" n="g" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">635</biblScope></bibl><seg type="original" xml:lang="de">CLXVII. [post incarnationem] <hi rend="italic">Beda</hi> V 24</seg><seg type="translation" xml:lang="en" source="#claude">CLXVII. [post incarnationem] Bede V 24</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_11-1-A-5.lnote.la.12" n="12" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">635</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Ld</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_11-1-A-5.lnote.la.13" n="13" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">635</biblScope></bibl><seg type="original" xml:lang="de">Euleth. <hi rend="italic">K Co Or</hi></seg><seg type="translation" xml:lang="en" source="#claude">Euleth. K Co Or</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_11-1-A-5.lnote.la.14" n="14" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">635</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">so Ce;</hi> LXVII <hi rend="italic">übr., gegen</hi> 11, 1 B; <hi rend="italic">s. geändert in</hi> C, <hi rend="italic">also</hi> 167 <hi rend="italic">Co</hi></seg><seg type="translation" xml:lang="en" source="#claude">so Ce; LXVII the others, against 11, 1 B; altered to C, so 167, Co</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_11-1-A-5.lnote.la.15" n="15" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">635</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt K</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in K</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_11-1-A-5.lnote.la.16" n="16" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">635</biblScope></bibl><seg type="original" xml:lang="de">Bryt. <hi rend="italic">stets Ld;</hi> Bretorum <hi rend="italic">K Co</hi></seg><seg type="translation" xml:lang="en" source="#claude">Bryt. always Ld; Bretorum K Co</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>

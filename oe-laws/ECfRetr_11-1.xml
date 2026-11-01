@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECfRetr_11-1">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf retr 11.1</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECfRetr_11-1</idno>
+        <idno type="citation">ECf retr 11.1</idno>
+        <idno type="lawCode">ECf retr</idno>
+        <idno type="lawCodeAnchor">ECfRetr</idno>
+        <idno type="clause">11.1</idno>
+        <idno type="citationKey">ECfRetr 11.1</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris: retractatus</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), pp. <biblScope unit="page">634–635</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>c. 1140–59 (Liebermann, I p. 627)</date><note type="promulgation">c. 1140–59 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="11.1">
+        <head><ref type="lawCode" target="law:ECfRetr">ECf retr</ref> 11.1</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf retr 11.1"><pb n="634" ed="#liebermann"/>De hoc quoque Denegeldo<ptr type="liebermannNote" n="43" target="#ECfRetr_11-1.lnote.la.43"/> libera<ptr type="liebermannNote" n="44" target="#ECfRetr_11-1.lnote.la.44"/> et quieta erat<ptr type="liebermannNote" n="45" target="#ECfRetr_11-1.lnote.la.45"/> omnis <hi rend="bold">ecclesia, et etiam</hi><ptr type="liebermannNote" n="46" target="#ECfRetr_11-1.lnote.la.46"/> omnis terra que <hi rend="bold">in</hi> proprio <pb n="635" ed="#liebermann"/>dominico<ptr type="liebermannNote" n="1" target="#ECfRetr_11-1.lnote.la.1"/> ecclesie erat, <hi rend="bold">ubicunque iacebat,</hi> nichil <hi rend="bold">prorsus</hi> in<ptr type="liebermannNote" n="2" target="#ECfRetr_11-1.lnote.la.2"/> <hi rend="bold">tali</hi> redditione<ptr type="liebermannNote" n="3" target="#ECfRetr_11-1.lnote.la.3"/> <hi rend="bold">persoluens,</hi> quia <hi rend="bold">magis</hi> in ecclesie <hi rend="bold">confidebant</hi> orationibus quam in armorum<ptr type="liebermannNote" n="4" target="#ECfRetr_11-1.lnote.la.4"/> defensionibus.<ptr type="liebermannNote" n="*" target="#ECfRetr_11-1.lnote.la.star"/></ab>
+        <note type="comparison" source="#liebermann" n="634"><label>printed alongside</label> <ref target="clause:ECf_11-1">ECf 11.1</ref></note>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 634–635 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page; the words in bold are the Retractator’s changes to ECf, as Liebermann prints them.</note>
+        <note type="editorial">Liebermann prints the Retractator’s “confidebant” with “con” in bold.</note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_11-1.lnote.la.43" n="43" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">634</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">so Cb;</hi> Dan. <hi rend="italic">übr.;</hi> Danegaldo <hi rend="italic">Hv</hi></seg><seg type="translation" xml:lang="en" source="#claude">so Cb; Dan. the others; Danegaldo Hv</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_11-1.lnote.la.44" n="44" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">634</biblScope></bibl><seg type="original" xml:lang="de">fuit <hi rend="italic">fügt zu</hi> (<hi rend="italic">übergeschr.</hi>) <hi rend="italic">Cb;</hi> o. ec. l. est et q. <hi rend="italic">Hv</hi></seg><seg type="translation" xml:lang="en" source="#claude">Cb adds fuit (written above the line); o. ec. l. est et q. Hv</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_11-1.lnote.la.45" n="45" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">634</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Cb;</hi> erit <hi rend="italic">K</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Cb; erit K</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_11-1.lnote.la.46" n="46" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">634</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Hv Db</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Hv Db</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_11-1.lnote.la.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">634</biblScope></bibl><seg type="original" xml:lang="de">dominio <hi rend="italic">Cb Lb Va Ph Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">dominio Cb Lb Va Ph Lond</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_11-1.lnote.la.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">634</biblScope></bibl><seg type="original" xml:lang="de">hac <hi rend="italic">fügt zu Lb Ph Sp</hi></seg><seg type="translation" xml:lang="en" source="#claude">Lb Ph Sp add hac</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_11-1.lnote.la.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">634</biblScope></bibl><seg type="original" xml:lang="de">redemptione <hi rend="italic">Hv</hi></seg><seg type="translation" xml:lang="en" source="#claude">redemptione Hv</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_11-1.lnote.la.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">634</biblScope></bibl><seg type="original" xml:lang="de">armatorum <hi rend="italic">Cb</hi> (<hi rend="italic">aus</hi> armtor. <hi rend="italic">verbessert</hi>); <hi rend="italic">Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">armatorum Cb (corrected from armtor.); Lond</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_11-1.lnote.la.star" n="*" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">634</biblScope></bibl><seg type="original" xml:lang="de">11, 2; 3 <hi rend="italic">lässt hier Lond aus Retr. fort und stellt sie hinter</hi> Geneal. Norm. 15 (<hi rend="italic">ed. Liebermann</hi> Über Edw. Conf. <hi rend="italic">p.</hi> 139**). [<hi rend="italic">Zwar stehen</hi> 11, 2—3 <hi rend="italic">hier am Rande von Co und im Texte von Or, aber meist aus</hi> ECf., <hi rend="italic">nicht aus Retr.-Form, also auch nicht aus Lond.</hi>] <hi rend="italic">Hier schaltet Lond in die Retr. ein</hi> (<hi rend="italic">was Ld willkürlich in</hi> 17 <hi rend="italic">versetzt</hi>):</seg><seg type="translation" xml:lang="en" source="#claude">Lond here leaves out 11, 2; 3 of the Retr. and puts them after Geneal. Norm. 15 (ed. Liebermann, Über Edw. Conf. p. 139**). [11, 2–3 do stand here in the margin of Co and in the text of Or, but mostly from ECf., not in the Retr. form, so not from Lond either.] Here Lond inserts into the Retr. (which Ld arbitrarily moves to 17):</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>
