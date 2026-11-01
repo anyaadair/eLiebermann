@@ -1,4 +1,4 @@
-# Liebermann, Gesetze I pp. 635–636: ECf 11,2–2a, ECf retr 11,2–2a; Lond 11,1 A 7–B 2 (B 3 runs on: see p637.py)
+# Liebermann, Gesetze I pp. 635–636: ECf 11,2–2a, ECf retr 11,2–2a; Lond 11,1 A 7–B 2 
 D = lambda de, en: (de, en)
 LOND_ED = 'This passage is not part of ECf or ECf retr: it is one of the additions of the London collection (Leges Anglorum s. XIII in. Londoniis collectae), which Liebermann prints in smaller type across the page, under ECf retr. 11, 1, and numbers 11, 1 A ff. The dictionary cites it as “ECf 11, 1 A …”, so it is kept with ECf here.'
 FA = D('<i>die Beinamen des</i> Rothen <i>und</i> Kurzhose, <i>die Retr. Wilhelm II. und Robert giebt, sind im</i> 12. <i>Jh. allgemein. Die Steuer von Mitte</i> 1096 (<i>vgl. Freeman</i> Wil. Rufus I 556; <i>Chronologie widerspricht also Prolog</i> c) <i>heisst beim Angelsächsischen Annalisten</i> geld (<i>welcher Name auch das Dänengeld und im</i> 12. <i>Jh. Staatssteuer allgemein bezeichnet</i>), <i>aber nicht</i> Denageld. <i>Vier Schill., auch für die Stiftsdomäne, sagt</i> Chron. Abingdon II 38; <i>vgl. Round</i> Domesday stud. I 83; <i>dass die Steuer</i> uillanos, agricolas <i>drückte, bestätigen</i> Flor. Wig., Will. Malmesb., <i>der</i> (Reg. IV 318, Pont. V 271) <i>auch den Protest meldet, wie</i> Abingdon., Flor. <i>den Jammer der Kirche.</i>',
@@ -56,4 +56,9 @@ CLAUSES = [
  {'code': 'ECf', 'n': '11.1 B 2', 'page': 636, 'keys': ['ECf 11.1 B 2'],
   'text': 'Suscepistis enim nuper miseratione diuina in regno Britannie legem et fidem Christi, habetis penes uos in regno utramque paginam, ex illis Dei gratia per consilium{f:k} regni uestri sume legem, et per illam Dei{14} patientia uestrum rege{15} Britannie regnum!',
   'notes': {'f:k': D('<i>vgl.</i> 11, 1 A 6', 'cf. 11, 1 A 6'), 14: D('de <i>K Or</i>', 'de K Or'), 15: D('reges <i>Ld</i>', 'reges Ld')}, 'editorial': [LOND_ED]},
+ {'code': 'ECf', 'n': '11.1 B 3', 'page': 636, 'keys': ['ECf 11.1 B 3'],
+  'text': 'Uicarius{f:l} uero Dei estis in regno iuxta psalmistam{16} regem: ‘Domini est terra et plenitudo eius orbis terrarum et uniuersi qui habitant{17} in eo’; et rursum iuxta psalmistam{16} regem: ‘Dilexisti iustitiam et odisti iniquitatem; propterea unxit te Deus{18} Deus tuus oleo letitie pre consortibus{19} tuis’; et rursum iuxta psalmistam{16} regem: ‘Deus, iudicium tuum’ etc. Non enim dixit{20}: ‘iudicium neque iustitiam Cesaris’.',
+  'margin': ['Ps. 23, 1', 'Ps. 44, 8', 'Ps. 71, 2'],
+  'notes': {'f:l': D('<i>vgl.</i> 11, 1 A (<i>aus</i> ECf. 17)', 'cf. 11, 1 A (from ECf. 17)'), 16: P16, 17: D('inhabitant <i>Ld</i>', 'inhabitant Ld'), 18: D('<i>fehlt Ld</i>', 'lacking in Ld'),
+            19: D('co[mitantibus] te <i>K</i> [<i>Riley</i>]', 'co[mitantibus] te K [Riley]'), 20: D('<i>fehlt Co Or Ld</i>', 'lacking in Co Or Ld')}, 'editorial': [LOND_ED]},
 ]

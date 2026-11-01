@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="ECf_12">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>ECf 12</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">ECf_12</idno>
+        <idno type="citation">ECf 12</idno>
+        <idno type="lawCode">ECf</idno>
+        <idno type="lawCodeAnchor">ECf</idno>
+        <idno type="clause">12</idno>
+        <idno type="citationKey">ECf 12</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Leges Edwardi Confessoris</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">637</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="clause" matchPattern="(.+)" replacementPattern="law.html?id=$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>1115–50, probably 1130–35 (Liebermann, I p. 627)</date><note type="promulgation">1115–50, probably 1130–35 (Liebermann, I p. 627)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="12">
+        <head><ref type="lawCode" target="law:ECf">ECf</ref> 12</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 12"><pb n="637" ed="#liebermann"/><hi rend="spaced">De multiplici<ptr type="liebermannNote" n="3" target="#ECf_12.lnote.la.3"/> pace regis<ptr type="liebermannNote" n="4" target="#ECf_12.lnote.la.4"/>.</hi> Pax<ptr type="liebermannNote" n="b" target="#ECf_12.lnote.la.fn.b"/> regis<ptr type="liebermannNote" n="5" target="#ECf_12.lnote.la.5"/> multiplex est: Alia data manu sua, quam Angli<ptr type="liebermannNote" n="6" target="#ECf_12.lnote.la.6"/> uocant<ptr type="liebermannNote" n="c" target="#ECf_12.lnote.la.fn.c"/> kinges<ptr type="liebermannNote" n="7" target="#ECf_12.lnote.la.7"/> hand<ptr type="liebermannNote" n="8" target="#ECf_12.lnote.la.8"/> s[ea]lde<ptr type="liebermannNote" n="9" target="#ECf_12.lnote.la.9"/> grið<ptr type="liebermannNote" n="10" target="#ECf_12.lnote.la.10"/>;</ab>
+        <note type="comparison" source="#liebermann" n="637"><label>printed alongside</label> <ref target="clause:ECfRetr_12">ECf retr 12</ref></note>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 637 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_12.lnote.la.fn.b" n="b" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">637</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">wiederholt</hi> 27; <hi rend="italic">vgl.</hi> Hn 10, 1<hi rend="italic">h</hi></seg><seg type="translation" xml:lang="en" source="#claude">repeated at 27; cf. Hn 10, 1, note h</seg></note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="ECf_12.lnote.la.fn.c" n="c" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">637</biblScope></bibl><seg type="original" xml:lang="de">grið, þæt he mid his agenre [<hi rend="italic">daraus Rl</hi>] hand sylð <hi rend="italic">III Atr.</hi> 1</seg><seg type="translation" xml:lang="en" source="#claude">grið, þæt he mid his agenre [whence Rl] hand sylð, III Atr. 1</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_12.lnote.la.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">637</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Hr Cl</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Hr Cl</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_12.lnote.la.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">637</biblScope></bibl><seg type="original" xml:lang="de">regia <hi rend="italic">Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">regia Hr</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_12.lnote.la.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">637</biblScope></bibl><seg type="original" xml:lang="de">regia <hi rend="italic">Rl S Ad Do Wo</hi></seg><seg type="translation" xml:lang="en" source="#claude">regia Rl S Ad Do Wo</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_12.lnote.la.6" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">637</biblScope></bibl><seg type="original" xml:lang="de">Anglici <hi rend="italic">S Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">Anglici S Ad Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_12.lnote.la.7" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">637</biblScope></bibl><seg type="original" xml:lang="de">chingis <hi rend="italic">Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">chingis Hr</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_12.lnote.la.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">637</biblScope></bibl><seg type="original" xml:lang="de">han <hi rend="italic">Hr;</hi> hanȝ <hi rend="italic">Ad;</hi> achan [<hi rend="italic">d. i.</hi> aghen: <hi rend="italic">eigen</hi>] <hi rend="italic">Rl;</hi> hauwes <hi rend="italic">Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">han Hr; hanȝ Ad; achan [i.e. aghen: own] Rl; hauwes Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_12.lnote.la.9" n="9" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">637</biblScope></bibl><seg type="original" xml:lang="de">selde <hi rend="italic">Rl;</hi> salde <hi rend="italic">Hk;</hi> shalde <hi rend="italic">Hr;</hi> alde <hi rend="italic">S;</hi> s. g. <hi rend="italic">fehlt Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">selde Rl; salde Hk; shalde Hr; alde S; s. g. lacking in Ad Do</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_12.lnote.la.10" n="10" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">637</biblScope></bibl><seg type="original" xml:lang="de">grid <hi rend="italic">Rl Hk S</hi></seg><seg type="translation" xml:lang="en" source="#claude">grid Rl Hk S</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>
