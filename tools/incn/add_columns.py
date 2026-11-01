@@ -151,6 +151,18 @@ def main():
         for col in runpy.run_path(f)['COLUMNS']:
             apply(col); n += 1; cols.append(col)
     editorial(cols)
+    # where each Instituta chapter is printed: for tools/link-citations.py and the reading view
+    import json
+    where = {}
+    for col in cols:
+        if col.get('incn'):
+            where.setdefault(col['incn'], [])
+            if col['clause'] not in where[col['incn']]:
+                where[col['incn']].append(col['clause'])
+    out = os.path.join(ROOT, 'data', 'incn-columns.json')
+    json.dump({'_about': 'Where Liebermann prints each chapter of the Instituta Cnuti as a column beside the law it translates '
+               '(written by tools/incn/add_columns.py from tools/incn/pages/): In Cn chapter -> clause files, in order.',
+               'columns': where}, open(out, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     print(n, 'columns')
 
 if __name__ == '__main__':

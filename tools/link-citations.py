@@ -30,6 +30,8 @@ A citation finds its clause in three steps, and the report says which:
               In"): to the Instituta's clause file, In Cn II 15,1b
   prologue    "I As Pro 3", a section of a prologue that has a single file: to it
   parent clause  "I Cn 1c", a lettered subsection with no file: to its clause, I Cn 1
+  Instituta column  "In Cn II 30,6": books I and II of the Instituta follow Cnut's numbers, so to
+              the I or II Cn clause, whose page has the Instituta column (II 59a–i, I 5,2e: Alfred)
   correction  a slip of Liebermann's, linked by hand in data/citation-corrections.json
 
 Writes docs/oe-laws-link-report.md (use --no-report to skip) and needs only
@@ -114,6 +116,13 @@ class Clauses:
         self.ids = defaultdict(list)             # anchor -> clause ids in the database's order
         self.citation = {}                       # clause id -> its citation ("Rect 4.2")
         self.order = defaultdict(list)           # anchor -> clause keys in file order
+        # Instituta Cnuti chapters printed beside the law they translate (data/incn-columns.json)
+        self.incn_columns = {}
+        try:
+            cols = json.load(open(os.path.join(self.dir, '..', 'data', 'incn-columns.json'), encoding='utf-8'))['columns']
+            self.incn_columns = {norm_clause(k): v[0] for k, v in cols.items()}
+        except OSError:
+            pass
         # texts in the database that have no Anchor of their own in the catalogue
         CODE_ANCHOR = {'VI Atr Lat': 'VIAtrLat'}
         # the rubrics of Alfred and Ine: catalogued as "Af Rb" / "Ine Rb" with no
@@ -187,8 +196,25 @@ class Clauses:
                 return 'the text\'s only clause', list(files.values())[0]
             return 'no clause number', None
         key = norm_clause(rest)
+        # "In Cn III 31": a chapter printed as a column beside the law it translates (Alfred …):
+        # to that clause, where the Latin is, rather than to the pointer in the Instituta's own list
+        if anchor == 'InCn' and key in self.incn_columns:
+            return 'Instituta column', self.incn_columns[key]
         if key in files:
             return 'exact', files[key]
+        # "In Cn II 30,6": books I and II of the Instituta are numbered to match I and II Cnut
+        # (Liebermann, TRHS 1893, § 5), and the Latin is printed as a column on the I or II Cn page.
+        # Interpolations from Alfred are printed on the Alfred page (I p. 612).
+        if anchor == 'InCn':
+            book = re.match(r'^(ii?)(\d.*)$', key)
+            if book:
+                ALFRED = {'i5.2e': '20', 'ii59a': '15', 'ii59b': '16', 'ii59c': '17', 'ii59d': '38', 'ii59e': '38.1',
+                          'ii59f': '38.2', 'ii59g': '39', 'ii59h': '39.1', 'ii59i': '39.2'}
+                if key in ALFRED and ALFRED[key] in self.by_anchor.get('Af', {}):
+                    return 'Instituta column on the Alfred page', self.by_anchor['Af'][ALFRED[key]]
+                cn = self.by_anchor.get({'i': 'ICn', 'ii': 'IICn'}[book.group(1)], {})
+                if book.group(2) in cn:
+                    return 'Instituta column on the ' + book.group(1).upper() + ' Cn page', cn[book.group(2)]
         # "Cons Cn II 13,1": the Consiliatio's text of I and II Cnut is printed (and kept in
         # the database) with I and II Cnut, so it is on the I/II Cn clause page; only
         # passages that are its own (II 19,2a–d …) have a Cons Cn page, found above
