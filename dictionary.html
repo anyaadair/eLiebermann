@@ -21,6 +21,7 @@ scripts:
 <ul class="letter-index" id="letters"></ul>
 <p id="count" class="muted small"></p>
 <div id="results"><p class="loading">Loading entries…</p></div>
+<button type="button" class="to-top" id="to-top" aria-label="Back to the search box at the top of the page"><span aria-hidden="true">↑</span> Back to search</button>
 
 <script>
 // File names in entries/, listed when the site was built. Used if
@@ -102,6 +103,32 @@ const ENTRY_FILES = [{% for f in entry_files %}"{{ f.basename }}"{% unless forlo
     }
 
     [q, fulltext].forEach(el => el.addEventListener('input', update));
+
+    // "Back to search": shown once the search box and the letters have scrolled
+    // out of view (e.g. down in R or S); takes you back to the top and puts the
+    // cursor in the search box (only with a mouse, so a phone's keyboard does not pop up).
+    const toTop = document.getElementById('to-top');
+    const searchBar = document.querySelector('.search-bar');
+    const letterIndex = document.getElementById('letters');
+    if ('IntersectionObserver' in window) {
+        const seen = new Set();
+        const watch = new IntersectionObserver(items => {
+            items.forEach(i => { if (i.isIntersecting) seen.add(i.target); else seen.delete(i.target); });
+            const past = searchBar.getBoundingClientRect().bottom < 0;
+            toTop.classList.toggle('is-shown', !seen.size && past);
+        });
+        [searchBar, letterIndex].forEach(el => watch.observe(el));
+    } else {
+        const check = () => toTop.classList.toggle('is-shown', letterIndex.getBoundingClientRect().bottom < 0);
+        addEventListener('scroll', check, { passive: true });
+    }
+    toTop.addEventListener('click', () => {
+        const smooth = !matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (location.hash) history.replaceState(null, '', location.pathname + location.search);
+        window.scrollTo({ top: 0, behavior: smooth ? 'smooth' : 'auto' });
+        if (matchMedia('(pointer: fine)').matches) q.focus({ preventScroll: true });
+        else toTop.blur();
+    });
 
     fetch(root + 'data/entries.json')
         .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
