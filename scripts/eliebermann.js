@@ -846,8 +846,8 @@
     const foldForm = w => String(w || '').toLowerCase().replace(/[æǣǽ]/g, 'ae').replace(/[þðꝥ]/g, 'th').normalize('NFD').replace(/[\u0300-\u036f]/g, '');
     // the headword as a word: "m[i]ht" → miht, "[-blendan]" → blendan, "æfwerdelsan, æfw[i]erdlan" → æfwerdelsan
     const plainHeadword = h => String(h || '').split(',')[0].replace(/[\[\]()\-\d¹²³⁴⁵⁶⁷⁸⁹⁰\s]/g, '');
-    // Liebermann's ~ is the headword, or as much of it as stays the same: a letter shared at the join is
-    // written once (under gærs, ~ses is gærses; under abbod, ~des is abbodes)
+    // Liebermann's ~ is the headword, or as much of it as stays the same: the last letter of that part is
+    // repeated after the ~ and written once (under gærs, ~ses is gærses; under abbod, ~des is abbodes)
     // -> the likeliest spellings, best first, joined by commas ("~olde" under forhealde: forhealdeolde,
     // forhealdolde, forhealolde, forheaolde); the clause page tries each in turn
     function expandTilde(tok, hw) {
@@ -865,11 +865,19 @@
         }
         if (pre && pre.slice(-1).toLowerCase() === hw[0].toLowerCase()) pre = pre.slice(0, -1);
         if (!post) { out.push(pre + hw); return [...new Set(out)].join(','); }
+        // Liebermann repeats the last letter of the part of the word that stays the same: the ending
+        // begins with it, and it is written once (under abbod, ~des = abbodes; under abatre, ~te = abate;
+        // under abbodesse, ~dissan = abbodissan). These readings come first, nearest the end first.
         if (hw.slice(-1).toLowerCase() === post[0].toLowerCase()) out.push(pre + hw + post.slice(1));
-        // the ending may replace the last letters of the headword
+        // (an ending that begins with a double letter joins at the first of a double: under gesettan, ~tte = gesette)
+        const dbl = post.length > 1 && lc(post[0]) === lc(post[1]);
+        for (let j = hw.length - 2; j >= 3; j--) {
+            if (lc(hw[j]) !== lc(post[0]) || pre.length + j + post.length < hw.length - 2) continue;
+            if (dbl && lc(hw[j - 1]) === lc(hw[j])) continue;
+            out.push(pre + hw.slice(0, j) + post);
+        }
+        // otherwise the ending is added, or replaces the last letters of the headword
         for (let k = 0; k <= Math.min(2, hw.length - 3); k++) out.push(pre + hw.slice(0, hw.length - k) + post);
-        // "~dissan" under abbodesse: the ending joins the headword at a letter further in (abbo + dissan)
-        for (let j = hw.length - 2; j >= 3; j--) if (lc(hw[j]) === lc(post[0]) && pre.length + j + post.length >= hw.length - 2) out.push(pre + hw.slice(0, j) + post);
         return [...new Set(out)].join(',');
     }
     // a word that is a form of the headword: it begins with the same letters (a ge- aside)
