@@ -36,7 +36,7 @@ def inline(s):
 
 def note_id(cid, key):
     k = {'*': 'star', '**': 'star2'}.get(key, key)
-    k = k.replace('f:', 'fn.')
+    k = k.replace('f:', 'fn.').replace('/', '-p')
     return f'{cid}.lnote.la.{k}'
 
 def build(cl, all_ids):
@@ -46,7 +46,7 @@ def build(cl, all_ids):
     text = cl['text']
     def mark(m):
         key = m.group(1)
-        shown = key[2:] if key.startswith('f:') else key
+        shown = (key[2:] if key.startswith('f:') else key).split('/')[0]
         return f'<ptr type="liebermannNote" n="{shown}" target="#{note_id(cid, key)}"/>'
     body = re.sub(r'\{([^}]+)\}', mark, inline(text))
     body = body.replace('[[pb]]', '')
@@ -55,7 +55,7 @@ def build(cl, all_ids):
     for key, (de, en) in cl['notes'].items():
         key = str(key)
         sub = 'erklaerung' if key.startswith('f:') else 'textual'
-        shown = key[2:] if key.startswith('f:') else key
+        shown = (key[2:] if key.startswith('f:') else key).split('/')[0]
         pg = cl.get('notepages', {}).get(key, page)
         notes.append(f'<note type="liebermannNote" subtype="{sub}" xml:id="{note_id(cid, key)}" n="{shown}" source="#liebermann">'
                      f'<bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">{pg}</biblScope></bibl>'
