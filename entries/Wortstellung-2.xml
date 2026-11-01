@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-12">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-01">Grammatical entry labelled by the language it concerns (French): Liebermann marks French (F) and Latin (L); unmarked ones concern Old English.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -34,6 +35,7 @@
         <form type="lemma">
           <orth>Wortstellung</orth>
         </form>
+        <usg type="lang" n="fro">French</usg>
         <dictScrap type="liebermann"><lbl type="language">F</lbl> <hi rend="bold"><hi rend="italic">Wortstellung</hi></hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref> Personalprn; <ref type="abbreviation" target="gram:auch"><abbr>auch</abbr></ref></hi> aver les pot <ref type="lawCode" target="law:LeisWl">Leis Wl</ref> 14,1 <ref type="lawCode" target="law:I">I</ref>; les pot aver <ref type="lawCode" target="law:Hk">Hk</ref></dictScrap>
         <xr type="lawCode"><ref target="clause:LeisWl_14-1">Leis Wl 14,1</ref></xr>
       </entry>

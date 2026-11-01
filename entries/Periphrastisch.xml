@@ -26,6 +26,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Marked as a cross-reference entry (it only points to another headword).</change>
+      <change when="2026-11-01">Grammatical entry labelled by the language it concerns (Old English): Liebermann marks French (F) and Latin (L); unmarked ones concern Old English.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -34,6 +35,7 @@
         <form type="lemma">
           <orth>Periphrastisch</orth>
         </form>
+        <usg type="lang" n="ang">Old English</usg>
         <dictScrap type="liebermann"><hi rend="bold"><hi rend="italic">Periphrastisch</hi></hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref> <ref type="entry" target="entry:Particip">Particip</ref> <ref type="abbreviation" target="gram:Nummer"><abbr>n.</abbr></ref></hi> 5</dictScrap>
         <xr type="see"><ref target="entry:Particip">Particip</ref></xr>
       </entry>

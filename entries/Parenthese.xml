@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-01">Grammatical entry labelled by the language it concerns (Old English): Liebermann marks French (F) and Latin (L); unmarked ones concern Old English.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -34,6 +35,7 @@
         <form type="lemma">
           <orth>Parenthese</orth>
         </form>
+        <usg type="lang" n="ang">Old English</usg>
         <dictScrap type="liebermann"><hi rend="bold"><hi rend="italic">Parenthese</hi></hi>; gehwelc, we willað, sie <ref type="lawCode" target="law:Af">Af</ref> 5,5 | mæg, we witon, ahebban <ref type="lawCode" target="law:IICn">II Cn</ref> 68,1a; <hi rend="italic">aufgehoben:</hi> we w-, þæt <ref type="lawCode" target="law:B">B</ref></dictScrap>
         <xr type="lawCode"><ref target="clause:Af_5-5">Af 5,5</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_68-1a">II Cn 68,1a</ref></xr>

@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
+      <change when="2026-11-01">Grammatical entry labelled by the language it concerns (Old English): Liebermann marks French (F) and Latin (L); unmarked ones concern Old English.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,7 @@
         <form type="lemma">
           <orth>Comparativ</orth>
         </form>
+        <usg type="lang" n="ang">Old English</usg>
         <dictScrap type="liebermann"><hi rend="bold"><hi rend="italic">Comparativ</hi></hi> <hi rend="bold">1</hi>) <hi rend="italic"><ref type="abbreviation" target="gram:Form"><abbr>Form</abbr></ref> <ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref> <ref type="entry" target="entry:Adjectiv">Adjectiv</ref></hi> <hi rend="bold">2</hi>) <hi rend="italic">Contrast verschärfend</hi> [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>. ähnlich</hi> þy <hi rend="italic"><ref type="abbreviation" target="gram:Nummer"><abbr>n.</abbr></ref></hi> 2] ne dem oðerne dom þam liofran, oðerne þam laðran <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:El">El</ref> 43; leofan ... laðan <ref type="lawCode" target="law:H">H</ref> <hi rend="bold">3</hi>) <hi rend="italic">verneint, um das <ref type="abbreviation" target="gram:hinter"><abbr>hinter</abbr></ref></hi> þonne <hi rend="italic">Folgende als Gegenteil des Comparirten zu bezeichnen:</hi> nanum leohtran þinge þonne him aceorfe þa tungon <ref type="lawCode" target="law:Af">Af</ref> 32; na undeorran weorðe lesan þonne be were <hi rend="italic"><ref type="abbreviation" target="gram:ebenda"><abbr>ebd.</abbr></ref></hi> <hi rend="bold">4</hi>) nys nanwiht unrihtlycre þonne = <hi rend="italic"><ref type="abbreviation" target="gram:superlativus"><abbr>spl</abbr></ref> des Comparirten: am unsittlichsten ist</hi> <ref type="lawCode" target="law:Iudex">Iudex</ref> 4</dictScrap>
         <dictScrap type="senses">
           <sense n="1"><hi rend="italic"><ref type="abbreviation" target="gram:Form"><abbr>Form</abbr></ref> <ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref> <ref type="entry" target="entry:Adjectiv">Adjectiv</ref></hi></sense>

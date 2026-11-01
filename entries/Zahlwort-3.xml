@@ -26,6 +26,7 @@
     <revisionDesc>
       <change when="2026-10-12">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-28">“von” unlinked from the abbreviations list: here it is ordinary German, not an abbreviation (Anya Adair).</change>
+      <change when="2026-11-01">Grammatical entry labelled by the language it concerns (French): Liebermann marks French (F) and Latin (L); unmarked ones concern Old English.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -34,6 +35,7 @@
         <form type="lemma">
           <orth>Zahlwort</orth>
         </form>
+        <usg type="lang" n="fro">French</usg>
         <dictScrap type="liebermann"><lbl type="language">F</lbl> <hi rend="bold"><hi rend="italic">Zahlwort</hi></hi> <hi rend="bold">1</hi>) <hi rend="italic">gebildet <ref type="abbreviation" target="gram:durch"><abbr>durch</abbr></ref> Multiplicirung von</hi> <ref type="entry" target="entry:vint">vint</ref>: <hi rend="italic"><ref type="abbreviation" target="gram:sieheDort"><abbr>s. d.</abbr></ref></hi> <hi rend="bold">2</hi>) <hi rend="italic"><ref type="abbreviation" target="gram:distributiv"><abbr>distributiv</abbr></ref>: <ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> a, <hi rend="italic"><ref type="abbreviation" target="gram:Praeposition"><abbr>prp</abbr></ref> <ref type="abbreviation" target="gram:Nummer"><abbr>n.</abbr></ref></hi> 9; cascun; tuteveies</dictScrap>
         <dictScrap type="senses">
           <sense n="1"><hi rend="italic">gebildet <ref type="abbreviation" target="gram:durch"><abbr>durch</abbr></ref> Multiplicirung von</hi> <ref type="entry" target="entry:vint">vint</ref>: <hi rend="italic"><ref type="abbreviation" target="gram:sieheDort"><abbr>s. d.</abbr></ref></hi></sense>
