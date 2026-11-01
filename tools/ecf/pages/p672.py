@@ -1,7 +1,7 @@
 # Liebermann, Gesetze I pp. 670–672: Anhang, 'Rubricator II' to ECf retr (the list of chapter headings), 1163–1189
 D = lambda de, en: (de, en)
 RB_ED = ('This is one of the chapter headings (rubrics) that a later writer, whom Liebermann calls “Rubricator II” and dates 1163–1189, '
-         'made for the Retractator’s text. Liebermann prints them on pp. 670–672 as an appendix (Anhang) to ECf retr; they are numbered here “Rb” with his Roman numerals. '
+         'made for the Retractator’s text; so the date given for ECf retr (c. 1140–59) does not apply to it. Liebermann prints them on pp. 670–672 as an appendix (Anhang) to ECf retr; they are numbered here “Rb” with his Roman numerals. '
          'He prints in small type what is taken from the text of ECf retr, so the words in bold are the Rubricator’s own.')
 FA = D('<i>hinter</i> Wl art., <i>o. S.</i> 488<sup>60</sup>, <i>aus</i> Lb <i>f.</i> 195 Hv (<i>der die Rubriken je vor ihr Capitel in den Text setzt</i>) Ra Vi Gr (<i>wo Zahlen fehlen</i>) Rc La Ph Lond (<i>d. i.</i> K Co Or); <i>vgl. o. S.</i> 627<sup>a</sup>, <i>Sp.</i> 2<sup>7</sup>; <i>ich drucke klein, was aus dem Texte des</i> ECf. retr. <i>fliesst. — Der Rubr. II. schreibt nach Eadwards Heiligsprechung und vor Heinrichs II. Tod. Vgl. o. S.</i> 664<sup>a</sup>',
        'after Wl art., above p. 488, note 60, from Lb f. 195, Hv (which puts each rubric in the text before its chapter), Ra Vi Gr (where the numbers are lacking), Rc La Ph Lond (i.e. K Co Or); cf. above p. 627, note a, col. 2, note 7; I print in small type what comes from the text of ECf retr. — Rubricator II writes after Edward’s canonisation and before the death of Henry II. Cf. above p. 664, note a')
