@@ -282,6 +282,7 @@
             const holder = n.parentElement.closest('[lang], [data-lang]');
             const lang = holder ? (holder.getAttribute('data-lang') || holder.getAttribute('lang')) : '';
             const loose = looseFor ? looseFor(lang) : false;
+            if (loose === null) return;   // not looked for in this language
             const ranges = findIn(n.data, terms, loose).filter(Boolean).sort((a, b) => a[0] - b[0]);
             if (!ranges.length) return;
             const frag = document.createDocumentFragment();

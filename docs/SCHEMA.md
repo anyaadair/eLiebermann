@@ -81,7 +81,7 @@ Inside it, in this order:
 | `sense type="translation" xml:lang="en"` | no | The English translation, in the same shape. |
 | `note type="editorial"` | no | A note by the eLiebermann editors, shown under Liebermann's entry as "Editor's note": for example where his pointer names a headword the dictionary doesn't have (*s. aver* for *aveir*). May hold links: `<ref target="entry:aveir">aveir</ref>`. The form keeps it when a change is suggested. |
 | `xr type="see"` | no | A cross-reference to another entry: `<ref target="entry:aebaere">æbære</ref>`. |
-| `xr type="bosworthToller"`, `"doe"`, `"wiktionary"` | no | Links to the Bosworth-Toller Anglo-Saxon Dictionary, the Dictionary of Old English and Wiktionary: `<ref target="https://…">boc-land</ref>`. One `xr` per link. |
+| `xr type="bosworthToller"`, `"doe"` (Wiktionary links were removed in November 2026) | no | Links to the Bosworth-Toller Anglo-Saxon Dictionary, the Dictionary of Old English and Wiktionary: `<ref target="https://…">boc-land</ref>`. One `xr` per link. |
 | `xr type="lawCode"` | no | A law code citation. One is made for every passage cited in the entry, such as `<ref target="law:VIAs">VI As 1,1</ref>`, linked to the code on the law code list; the form and `tools/update-entries.js` remake these from the text, so don't edit them by hand. Citations added by hand have no `law:` target, or a `target` to the passage online, and are kept. A citation an editor adds that the text implies but doesn't print, such as the clauses after Liebermann's "Swer 7ff.", is `<xr type="lawCode" subtype="added"><ref target="clause:Swer_8">Swer 8</ref></xr>`: the tools leave it alone, and the page lists it after the last citation of the same law code. |
 
 ## Liebermann's text

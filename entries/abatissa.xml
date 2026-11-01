@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">L (Latin version) after VI Atr, IV Eg and Leis Wl citations linked.</change>
+      <change when="2026-11-01">Editor’s note: the print of VI Atr Lat 2 has abbatissis (suggestion #22).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,7 +36,8 @@
         <form type="lemma">
           <orth>abatissa</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">abatissa</hi> <hi rend="italic"><ref type="abbreviation" target="gram:fur"><abbr>für</abbr></ref></hi> abb~ <ref type="lawCode" target="law:VIAtr">VI Atr</ref> 2 <ref type="lawCode" target="law:LatVersion">L</ref></dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">abatissa</hi> <hi rend="italic"><ref type="abbreviation" target="gram:fur"><abbr>für</abbr></ref></hi> abb~ <ref type="lawCode" target="law:VIAtr">VI Atr</ref> 2 <ref type="lawCode" target="law:LatVersion">L</ref><ptr type="editorNote" target="#edn-1"/></dictScrap>
+        <note type="editorial" xml:id="edn-1">Liebermann’s text of the Latin paraphrase of VI Æthelred (<hi rend="italic">Gesetze</hi> I, p. 247) reads <hi rend="italic">abbatissis</hi>, with two b’s, in <ref target="clause:VI-Atr-Latin-Paraphrase_2">VI Atr Lat 2</ref>; the spelling with one b has not been found there or elsewhere in <hi rend="italic">Gesetze</hi> I.</note>
         <xr type="lawCode"><ref target="clause:VI-Atr-Latin-Paraphrase_2">VI Atr Lat 2</ref></xr>
       </entry>
     </body>
