@@ -36,7 +36,7 @@ def inline(s):
     return s
 
 def note_id(cid, key):
-    k = {'*': 'star', '**': 'star2'}.get(key, key)
+    k = {'*': 'star', '**': 'star2', '†': 'dagger'}.get(key, key)
     k = k.replace('f:', 'fn.').replace('/', '-p')
     return f'{cid}.lnote.la.{k}'
 
