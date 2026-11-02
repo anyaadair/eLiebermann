@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">“In Cn” and “In” (Instituta Cnuti) linked to the law codes list.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E02640; guessed from the DOE headword list, spelling variant (i/y/ie, double letters, -ian/-an); not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -37,6 +38,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">behætian</hi> <hi rend="italic">skalpiren</hi> <ref type="lawCode" target="law:IICn">II Cn</ref> 30,5 <ref type="lawCode" target="law:InCn">In</ref> (<hi rend="italic"><ref type="abbreviation" target="gram:Variante"><abbr>Var.</abbr></ref></hi> behætt-, be[bi-]hedian); hættian <hi rend="italic">Cnut</hi></dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/39797">be-hættian</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E02640">be-hættian</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_30-5">II Cn 30,5</ref></xr>
       </entry>
     </body>

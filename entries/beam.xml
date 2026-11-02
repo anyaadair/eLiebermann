@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E03120; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,7 @@
           <orth>beam</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">beam</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref></hi>, <hi rend="italic">Baum</hi> <ref type="lawCode" target="law:Ine">Ine</ref> 43</dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E03120">bēam</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_43">Ine 43</ref></xr>
       </entry>
     </body>

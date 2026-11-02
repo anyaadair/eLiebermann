@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E02285; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
           <orth>[bat]</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">[bat]</hi> <hi rend="italic">Boot lag vor <ref type="abbreviation" target="gram:fur"><abbr>für</abbr></ref> <ref type="abbreviation" target="gram:Lateinisch"><abbr>lat.</abbr></ref> <ref type="abbreviation" target="gram:ablativus"><abbr>abl</abbr></ref></hi> bato <ref type="lawCode" target="law:IVAtr">IV Atr</ref> 2,4</dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E02285">bāt</ref></xr>
         <xr type="lawCode"><ref target="clause:IVAtr_2-4">IV Atr 2,4</ref></xr>
       </entry>
     </body>

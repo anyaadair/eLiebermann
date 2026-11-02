@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E03591; guessed from the DOE headword list, spelling variant (i/y/ie, double letters, -ian/-an); not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,7 @@
           <orth>bodan</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">bodan</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref></hi> [<hi rend="italic">wohl <ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref></hi>] <hi rend="italic">Boten</hi> <ref type="lawCode" target="law:ICn">I Cn</ref> 26,4; præceptis [<hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref> 3 <ref type="abbreviation" target="gram:ZeileVorher"><abbr>Z. vorher</abbr></ref></hi>] <ref type="lawCode" target="law:Quadr">Q</ref>; nuncio Cons</dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E03591">bodian</ref></xr>
         <xr type="lawCode"><ref target="clause:ICn_26-4">I Cn 26,4</ref></xr>
       </entry>
     </body>

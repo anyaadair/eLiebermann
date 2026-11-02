@@ -29,6 +29,7 @@
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
       <change when="2026-10-17">“statt”, “regiert (von)”, “unsyntakt.” and the Accusativ terms linked to the abbreviations list.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E03707; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -58,6 +59,7 @@
         <xr type="derivative"><ref target="entry:godborg">godborg</ref></xr>
         <xr type="derivative"><ref target="entry:werborg">werborg</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/4862">borg</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E03707">borg</ref></xr>
         <xr type="lawCode" subtype="range"><ref target="clause:IICn_58-1">II Cn 58,1</ref></xr>
         <xr type="lawCode" rend="range-from:II Cn 58"><ref target="clause:IICn_58-2">II Cn 58,2</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_1-8">Af 1,8</ref></xr>

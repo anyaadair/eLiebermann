@@ -28,6 +28,7 @@
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E03663; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -45,6 +46,7 @@
         <xr type="see"><ref target="entry:gebeorgan">gebeorgan</ref></xr>
         <xr type="see"><ref target="entry:warnian">warnian</ref></xr>
         <xr type="derivative"><ref target="entry:gebeorgan">gebeorgan</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E03663">beorgan</ref></xr>
         <xr type="lawCode"><ref target="clause:EGu_10">EGu 10</ref></xr>
         <xr type="lawCode"><ref target="clause:VAtr_12-2">V Atr 12,2</ref></xr>
         <xr type="lawCode"><ref target="clause:ICn_7-3">I Cn 7,3</ref></xr>

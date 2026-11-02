@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E04129; guessed from the DOE headword list, spelling variant (i/y/ie, double letters, -ian/-an); not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">bi[e]sting</hi> <hi rend="italic">Biestmilch</hi> (<hi rend="italic">einer Kuh</hi>); <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>:</hi> bystinge <ref type="lawCode" target="law:Rect">Rect</ref> 13; bistinguium <ref type="lawCode" target="law:Quadr">Q</ref></dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/40448">bísting</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E04129">bȳsting</ref></xr>
         <xr type="lawCode"><ref target="clause:Rect_13-to-13-1">Rect 13</ref></xr>
       </entry>
     </body>

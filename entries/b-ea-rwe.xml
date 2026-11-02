@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E04072; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">b[ea]rwe</hi> <hi rend="italic">Tragbahre; <ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>:</hi> bærwan <ref type="lawCode" target="law:Ger">Ger</ref> 15</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/39586">bearwe</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E04072">bearwe</ref></xr>
         <xr type="lawCode"><ref target="clause:Ger_15">Ger 15</ref></xr>
       </entry>
     </body>

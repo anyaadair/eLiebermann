@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E03557; guessed from the DOE headword list, same as the Bosworth-Toller headword; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">boctæcinge</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>, kanonistischer Bücher Anweisung</hi> <ref type="lawCode" target="law:IICn">II Cn</ref> 38,2; <hi rend="italic"><ref type="abbreviation" target="gram:dafur"><abbr>dafür</abbr></ref></hi> <hi rend="bold">boctale</hi> <ref type="lawCode" target="law:B">B</ref>. <ref type="lawCode" target="law:MsA">A</ref></dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/4789">bóc-tǽcing</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E03557">bōc-tǣcing</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_38-2">II Cn 38,2</ref></xr>
       </entry>
     </body>
