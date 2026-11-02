@@ -24,14 +24,14 @@ About 3,170 clauses had no translation at all, nearly all Latin. An English crib
 - [x] Excommunication formulas (Excom I–XIII), ordeal rituals (Iud Dei I–XVI), Duel: 723 texts, Latin and Old English (November 2026).
 - [x] Instituta Cnuti: the existing crib (`data/incn-crib.json`) put on its 207 clause pages. The 31 In Cn clauses that are only Liebermann's pointers ("Si quis … — — …; o. S. 295") have none.
 - [x] Ps. Cnut de foresta, Libertas Londoniensis, VI Atr Latin paraphrase, Wl art (French and retractatus), Wl Edmr, Cons Cn, App AGu, and the stray Old English rubrics (CHn cor, Af Rb).
-- [ ] Quadripartitus (Dedicatio, Argumentum, Liber I titles and rubrics, Liber II).
+- [x] Quadripartitus (Dedicatio, Argumentum, Liber I titles and rubrics, Liber II).
 - [ ] Leges Edwardi Confessoris and its retractatus.
 - [ ] Leges Henrici Primi.
 
 **For Anya: doubtful readings in the crib.**
 
 <!-- crib-doubtful -->
-45 clauses have a crib that marks a doubtful reading with “[?]”, mostly a corrupt or unusual word in the Latin; a look at the scan may settle some.
+70 clauses have a crib that marks a doubtful reading with “[?]”, mostly a corrupt or unusual word in the Latin; a look at the scan may settle some.
 
 - [ ] **Æthelred II** (2): [VI Atr Lat 2](https://anyaadair.github.io/eLiebermann/law.html?id=VI-Atr-Latin-Paraphrase_2), [VI Atr Lat 5.3](https://anyaadair.github.io/eLiebermann/law.html?id=VI-Atr-Latin-Paraphrase_5-3)
 - [ ] **Attributed to William I** (6): [Wl art retr 10](https://anyaadair.github.io/eLiebermann/law.html?id=WlArtRetr_10), [Wl art retr 14.2](https://anyaadair.github.io/eLiebermann/law.html?id=WlArtRetr_14-2), [Wl art Frz 3.1](https://anyaadair.github.io/eLiebermann/law.html?id=Wl-art-Frz_3-1), [Wl art Frz 5](https://anyaadair.github.io/eLiebermann/law.html?id=Wl-art-Frz_5), [Wl art Frz 8.2](https://anyaadair.github.io/eLiebermann/law.html?id=Wl-art-Frz_8-2), [Wl art Frz 10](https://anyaadair.github.io/eLiebermann/law.html?id=Wl-art-Frz_10)
@@ -51,6 +51,12 @@ About 3,170 clauses had no translation at all, nearly all Latin. An English crib
 - [ ] **Excommunicatio IV: formula of excommunication** (1): [Excom IV 12](https://anyaadair.github.io/eLiebermann/law.html?id=ExcomIV_12)
 - [ ] **Excommunicatio VI: formula of excommunication** (1): [Excom VI 15](https://anyaadair.github.io/eLiebermann/law.html?id=ExcomVI_15)
 - [ ] **Excommunicatio VIII: formula of excommunication** (1): [Excom VIII 25](https://anyaadair.github.io/eLiebermann/law.html?id=ExcomVIII_25)
+- [ ] **Quadripartitus: Dedicatio** (10): [Quadr Ded 1](https://anyaadair.github.io/eLiebermann/law.html?id=QuadrDed_1), [Quadr Ded 11](https://anyaadair.github.io/eLiebermann/law.html?id=QuadrDed_11), [Quadr Ded 13](https://anyaadair.github.io/eLiebermann/law.html?id=QuadrDed_13), [Quadr Ded 14](https://anyaadair.github.io/eLiebermann/law.html?id=QuadrDed_14), [Quadr Ded 16](https://anyaadair.github.io/eLiebermann/law.html?id=QuadrDed_16), [Quadr Ded 20](https://anyaadair.github.io/eLiebermann/law.html?id=QuadrDed_20), [Quadr Ded 21](https://anyaadair.github.io/eLiebermann/law.html?id=QuadrDed_21), [Quadr Ded 27](https://anyaadair.github.io/eLiebermann/law.html?id=QuadrDed_27), [Quadr Ded 30](https://anyaadair.github.io/eLiebermann/law.html?id=QuadrDed_30), [Quadr Ded 34](https://anyaadair.github.io/eLiebermann/law.html?id=QuadrDed_34)
+- [ ] **Quadripartitus: Argumentum** (5): [Quadr Arg 5](https://anyaadair.github.io/eLiebermann/law.html?id=QuadrArg_5), [Quadr Arg 11](https://anyaadair.github.io/eLiebermann/law.html?id=QuadrArg_11), [Quadr Arg 12](https://anyaadair.github.io/eLiebermann/law.html?id=QuadrArg_12), [Quadr Arg 15](https://anyaadair.github.io/eLiebermann/law.html?id=QuadrArg_15), [Quadr Arg 22](https://anyaadair.github.io/eLiebermann/law.html?id=QuadrArg_22)
+- [ ] **Quadripartitus, Liber I: titles of the laws** (1): [Quadr I IV Atr](https://anyaadair.github.io/eLiebermann/law.html?id=Quadr-I_IV-Atr)
+- [ ] **Quadripartitus, Liber I: rubric lists** (5): [Quadr Rb II Cn 51](https://anyaadair.github.io/eLiebermann/law.html?id=Quadr-Rb_II-Cn-51), [Quadr Rb Hundred 8](https://anyaadair.github.io/eLiebermann/law.html?id=Quadr-Rb_Hundred-8), [Quadr Rb VI As 8](https://anyaadair.github.io/eLiebermann/law.html?id=Quadr-Rb_VI-As-8), [Quadr Rb VI As 8.9](https://anyaadair.github.io/eLiebermann/law.html?id=Quadr-Rb_VI-As-8-9), [Quadr Rb EGu 12](https://anyaadair.github.io/eLiebermann/law.html?id=Quadr-Rb_EGu-12)
+- [ ] **Quadripartitus, Liber II: Praefatio** (3): [Quadr II Praef 4](https://anyaadair.github.io/eLiebermann/law.html?id=Quadr-II-Praef_4), [Quadr II Praef 11](https://anyaadair.github.io/eLiebermann/law.html?id=Quadr-II-Praef_11), [Quadr II Praef 13](https://anyaadair.github.io/eLiebermann/law.html?id=Quadr-II-Praef_13)
+- [ ] **Quadripartitus, Liber II** (1): [Quadr II 17.4](https://anyaadair.github.io/eLiebermann/law.html?id=QuadrII_17-4)
 - [ ] **Consiliatio Cnuti** (2): [Cons Cn II 22.1b](https://anyaadair.github.io/eLiebermann/law.html?id=ConsCn_II-22-1b), [Cons Cn III 1](https://anyaadair.github.io/eLiebermann/law.html?id=ConsCn_III-1)
 - [ ] **Pseudo-Cnut, Constitutiones de foresta** (4): [Ps Cn for 6](https://anyaadair.github.io/eLiebermann/law.html?id=PsCnFor_6), [Ps Cn for 13](https://anyaadair.github.io/eLiebermann/law.html?id=PsCnFor_13), [Ps Cn for 13.1](https://anyaadair.github.io/eLiebermann/law.html?id=PsCnFor_13-1), [Ps Cn for 33](https://anyaadair.github.io/eLiebermann/law.html?id=PsCnFor_33)
 - [ ] **Libertas Londoniensis** (2): [Lib Lond 8.1](https://anyaadair.github.io/eLiebermann/law.html?id=LibLond_8-1), [Lib Lond 8.3](https://anyaadair.github.io/eLiebermann/law.html?id=LibLond_8-3)

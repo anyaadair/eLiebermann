@@ -6,6 +6,7 @@
         <title>Quadr Ded 28</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">531</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -48,6 +50,7 @@
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Quadr Ded 28" corresp="#wit-lat"><pb n="531" ed="#liebermann"/>Nec iam uereor indignantis animi turbidis seditionibus Eusebio sociari sub opere multiplici, quod intendit omnibus penam uitiis, pretium uirtutibus, et tanto difficiliores consummatæ diligentiæ reddit accessus, quanto prauis cupiditatibus fomentisque disparibus rerum ueritas oppugnatur, quot negotiis, tot sententiis et errore dubiis altercationibus infirmata.</ab>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 531 (two independent readings of the page images, differences settled against the page)</note>
         <note type="liebermannNote" subtype="textual" xml:id="QuadrDed_28.lnote.oe.a" n="a" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">311</biblScope></bibl><seg type="original" xml:lang="de">Anspielung auf <hi rend="italic">De operibus bonis et malis</hi> unter den <hi rend="italic">Scripta dubia</hi> des Eusebius von Caesarea?</seg><seg type="translation" xml:lang="en" source="#claude">An allusion to <hi rend="italic">De operibus bonis et malis</hi> among the <hi rend="italic">Scripta dubia</hi> of Eusebius of Caesarea?</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">Nor do I now fear, with the turbulent seditions of an indignant mind, to be associated with Eusebius in a manifold work, which aims at punishment for all vices, reward for virtues, and makes the approaches to completed diligence the more difficult, the more the truth of things is assailed by depraved desires and unequal incitements, weakened by as many opinions as there are affairs and by doubtful disputes in error.</ab>
       </div>
     </body>
   </text>

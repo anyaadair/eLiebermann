@@ -6,6 +6,7 @@
         <title>Quadr Arg 29</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">535</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -53,6 +55,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="QuadrArg_29.lnote.oe.7" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">535</biblScope></bibl><seg type="original" xml:lang="de">sid. <hi rend="italic">T</hi></seg><seg type="translation" xml:lang="en" source="#claude">sid. <hi rend="italic">T</hi></seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="QuadrArg_29.lnote.oe.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">535</biblScope></bibl><seg type="original" xml:lang="de">saluat. <hi rend="italic">Dm Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">saluat. <hi rend="italic">Dm Hk</hi></seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="QuadrArg_29.lnote.oe.b" n="b" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">312</biblScope></bibl><seg type="original" xml:lang="de">[lies dafur: {a}] Diese mythologische Anspielung war mir nicht klar. W. H. <hi rend="spaced">Roscher</hi> antwortet auf meine Frage freundlich, Ganymed sei gemeint, den Zeus nahe Sidene, wofür auch Sidonia vorkommt, entführte; ihn Tänzer zu nennen, veranlasste der Umstand, dass die von Knabenliebe begehrten Jünglinge oft den Mimenberuf ergriffen, auch den Ganymed pantomimisch darstellten.—Der Vergleich will also bedeuten: ‘Mein unvollkommenes Werk möge gefallen, wie einst sogar dem höchsten Gotte ein blosser Hirtenknabe gefiel’. Ist dies gemeint, so ist es ein neuer Beweis zu vielen anderen, wie dieser pedantische Verfasser platte Gedanken durch weit hergeholte nur halb passende Zitate belegen und sich als klassischen Gelehrten aufspielen möchte</seg><seg type="translation" xml:lang="en" source="#claude">[read instead: {a}] This mythological allusion was not clear to me. W. H. <hi rend="italic">Roscher</hi>, in reply to my question, kindly tells me that Ganymede is meant, whom Zeus carried off near Sidene (for which Sidonia also occurs); that he is called a dancer arises from the fact that the youths desired in pederasty often took up the profession of mime, and also represented Ganymede in pantomime.—The comparison is thus meant to say: ‘May my imperfect work please, as once even a mere shepherd boy pleased the highest god’. If this is what is meant, it is one more proof, besides many others, of how this pedantic author likes to support commonplace thoughts with far-fetched, only half-fitting quotations and to pose as a classical scholar</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">Even if I do not aspire to such abundance of things to be said, yet I have resolved to show the affection of good will, mindful that the Sidonian dancer once pleased Jupiter.</ab>
       </div>
     </body>
   </text>

@@ -6,6 +6,7 @@
         <title>Quadr Arg 22</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">534</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -55,6 +57,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="QuadrArg_22.lnote.oe.10" n="10" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">534</biblScope></bibl><seg type="original" xml:lang="de">suscepimus <hi rend="italic">T</hi></seg><seg type="translation" xml:lang="en" source="#claude">suscepimus T</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="QuadrArg_22.lnote.oe.11" n="11" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">534</biblScope></bibl><seg type="original" xml:lang="de">uel tranorum <hi rend="italic">Dm</hi></seg><seg type="translation" xml:lang="en" source="#claude">uel tranorum Dm</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="QuadrArg_22.lnote.oe._" n="-" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">312</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Begünstigung 14c; Fremder 12ff.; Jagd; Hund 1B; Forst 9a. 12; über Falkenbeize <hi rend="italic">s</hi>. Röder bei Hoops <hi rend="italic">Reallex. Germ. Altt</hi>. II 6. 8.—<hi rend="italic">torcias</hi> {w} ist nicht aus <hi rend="italic">tortio</hi> zu erklären, das bei Firmicus (ed. Kroll II p. <hi rend="smallcaps">v</hi>) nicht vorkommt; vielleicht <hi rend="italic">forcias</hi>, das Verf. Hn 86, 3 für ‘Gewalttat’ braucht</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf. Gl</hi> Begünstigung 14c; Fremder 12ff.; Jagd; Hund 1B; Forst 9a. 12; on falconry <hi rend="italic">see</hi> Röder in Hoops <hi rend="italic">Reallex. Germ. Altt</hi>. II 6. 8.—<hi rend="italic">torcias</hi> {w} cannot be explained from <hi rend="italic">tortio</hi>, which does not occur in Firmicus (ed. Kroll II p. <hi rend="smallcaps">v</hi>); perhaps <hi rend="italic">forcias</hi>, which the author uses in Hn 86, 3 for ‘act of violence’</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">Now we receive a guest without loss; now, by God's mercy, with security that will last, we do not fear the monsters of the keepers of hounds, the circlings [?] of the falcons, the torches [?] of the decurions and the furies of good-for-nothings and infinite perils of evils.</ab>
       </div>
     </body>
   </text>

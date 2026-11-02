@@ -6,6 +6,7 @@
         <title>Quadr Ded 18</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">530</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -52,6 +54,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="QuadrDed_18.lnote.oe.9" n="9" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">530</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">verbessert aus</hi> planti <hi rend="italic">Dm</hi></seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">corrected from</hi> planti <hi rend="italic">Dm</hi></seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="QuadrDed_18.lnote.oe.10" n="10" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">530</biblScope></bibl><seg type="original" xml:lang="de">-tes <hi rend="italic">Dm</hi></seg><seg type="translation" xml:lang="en" source="#claude">-tes <hi rend="italic">Dm</hi></seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="QuadrDed_18.lnote.oe.a" n="a" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">311</biblScope></bibl><seg type="original" xml:lang="de">Kirchenämterkauf durch Geistliche (<hi rend="italic">s. d. Gl</hi> 12) scheint Verf. treffen zu wollen, da er beklagt, dass keusche, gelehrte Kandidaten reichen nachgesetzt werden, und da man jene Tugenden vom Laien nicht forderte. Eadmer beklagte damals, der Tüchtige Angelsächs. Blutes komme nicht empor, Verf. dagegen tritt nur für die ohne Geld und Adel Geborenen ein. Das Schweigen über jene nationale Zurücksetzung bezeichnet die Abstammung aus nicht Englischem Blute</seg><seg type="translation" xml:lang="en" source="#claude">The author seems to be aiming at the purchase of church offices by clergy (<hi rend="italic">see</hi> that word in <hi rend="italic">Gl</hi> 12), since he laments that chaste, learned candidates are passed over in favour of rich ones, and since those virtues were not demanded of laymen. Eadmer complained at that time that the able man of Anglo-Saxon blood did not rise; the author, by contrast, speaks up only for those born without money or nobility. His silence about that national discrimination indicates descent from non-English blood</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">And — O how much evil the enemy has done in the sanctuary! — men deformed with the foulness of all vices, so long as they have money, are preferred in the seeking of honour to those raised up by whatever grace of probity. Sober morals and the truth of divine and immortal substance and the ever-blessed palm of innocence, the nobility of knowledge and the splendour of eloquence and the abundant adornment of eternal felicity are reproaches to those who have them, if the condemned burden of poverty lies upon them.</ab>
       </div>
     </body>
   </text>

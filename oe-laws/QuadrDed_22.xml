@@ -6,6 +6,7 @@
         <title>Quadr Ded 22</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">531</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -55,6 +57,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="QuadrDed_22.lnote.oe.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">531</biblScope></bibl><seg type="original" xml:lang="de">lucatu <hi rend="italic">Dm</hi></seg><seg type="translation" xml:lang="en" source="#claude">lucatu <hi rend="italic">Dm</hi></seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="QuadrDed_22.lnote.oe.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">531</biblScope></bibl><seg type="original" xml:lang="de">seper <hi rend="italic">Dm</hi></seg><seg type="translation" xml:lang="en" source="#claude">seper <hi rend="italic">Dm</hi></seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="QuadrDed_22.lnote.oe.a" n="a" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">311</biblScope></bibl><seg type="original" xml:lang="de">Dieses Eintreten zugunsten der Geistlichen in Amtsmacht und Reichtum erklärt sich nur, wenn Verf. ihnen zugehörte oder sozial nahe stand</seg><seg type="translation" xml:lang="en" source="#claude">This advocacy on behalf of the clergy in official power and wealth can only be explained if the author belonged to them or stood socially close to them</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">If they look at others advanced in the golden mean of comforts, who do not shrink from following a more elegant life or some grades of dignity and suitable increases of promotion, and rejoice rather to be of use and dare to be found to be something among men, these they pollute with the brand of infamy and prejudge them to be assigned to eternal torments, as though a rich God could not have rich servants, if he desires only those who sustain a lost life in grief and miseries by base beggary and who always seek the food of daily necessity with laborious toil.</ab>
       </div>
     </body>
   </text>

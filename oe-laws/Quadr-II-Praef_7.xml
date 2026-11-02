@@ -5,6 +5,7 @@
       <titleStmt>
         <title>Quadr II Praef 7</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -18,6 +19,7 @@
         <bibl type="legalText"><title>Quadripartitus, Liber II: Praefatio</title></bibl>
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">543</biblScope></bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -44,6 +46,7 @@
         <head>Quadr II Praef 7</head>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Quadr II Praef 7" corresp="#wit-lat"><pb n="543" ed="#liebermann"/>Regem quippe non faciunt uulgi de fascibus fabulosa commenta uel furentes insanie uel infinita iugera uel amica putredinis ingeniosa crapula uel de lamentis [pauperum] conuulsa pecunia; regem non faciunt uestes Tyrie, non auro nitide trabes, non color frontis uel nota regia; sed rex est qui posuit metus et diri mala pectoris, quem non ambitio inpotens et numquam stabilis fauor uulgi precipitis mouet; rex est qui se diri pectoris fetoribus euacuat et prodesse singulis benigne desiderat: quales nuper ad fastigium huius culminis non ambicio popularis, sed spectata inter bonos moderatio prouexit: iuxta quod Oratianum ‘Sutorem natura frustra regem dixeris’.</ab>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 543 (two independent readings of the page images, differences settled against the page)</note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">For it is not the fabulous fictions of the mob about the fasces that make a king, nor raging madnesses, nor endless acres, nor ingenious gluttony, friend of rottenness, nor money wrenched from the laments [of the poor]; Tyrian garments do not make a king, nor beams shining with gold, nor the colour of the brow or the royal mark; but he is king who has laid aside fears and the evils of a dire breast, whom unbridled ambition and the never stable favour of the headlong mob does not move; he is king who empties himself of the stenches of a dire breast and kindly desires to profit each one: such as, of late, not popular ambition but moderation proved among the good has raised to the summit of this height; according to that of Horace: ‘By nature you would call the cobbler king in vain’.</ab>
       </div>
     </body>
   </text>

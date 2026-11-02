@@ -6,6 +6,7 @@
         <title>Quadr II 17.1</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">546</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -49,6 +51,7 @@
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 546 (two independent readings of the page images, differences settled against the page)</note>
         <note type="liebermannNote" subtype="textual" xml:id="QuadrII_17-1.lnote.oe.a" n="a" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">546</biblScope></bibl><seg type="original" xml:lang="de">Girardus ecclesias nostras et homines et ipsum dominium nostrum multum pauperauit <hi rend="italic">klagt Thomas, Gerhards Nachfolger, Anselmen, etwa August</hi> 1108 <hi rend="italic">bei Eadmer</hi> Nov. IV, <hi rend="italic">ed. Rule p.</hi> 200. <hi rend="italic">Über die Feindschaft des Domcapitels aus finanziellen Gründen vgl. Will. Neuburg.</hi> I 3: in emungendis per indecoras etiam occasiones subditorum marsupiis callidus. <hi rend="italic">Doch verzeichnet Hugo Sotovagina</hi> (<hi rend="italic">ed. Raine p.</hi> 111 <hi rend="italic">f.</hi>) <hi rend="italic">Gerhards Verdienste um das Bistumsgut. Vgl. u. Anm. l</hi></seg><seg type="translation" xml:lang="en" source="#claude">Girardus ecclesias nostras et homines et ipsum dominium nostrum multum pauperauit, complains Thomas, Gerard’s successor, to Anselm, about August 1108, in Eadmer Nov. IV, ed. Rule p. 200. On the hostility of the cathedral chapter for financial reasons cf. Will. Neuburg. I 3: in emungendis per indecoras etiam occasiones subditorum marsupiis callidus. Hugo Sotovagina (ed. Raine p. 111 f.), however, records Gerard’s services to the property of the see. Cf. below note l</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="QuadrII_17-1.lnote.oe.b" n="b" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">546</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">‘faseln’ von</hi> inerguminus <hi rend="italic">statt</hi> energumenus</seg><seg type="translation" xml:lang="en" source="#claude">‘to babble’, from inerguminus instead of energumenus</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">For which he had collected a little money as provision for the journey; and the Lord Jesus himself had a purse, whatever the magnificent vanity of the men of York and the ever-evil spite of envy may rave.</ab>
       </div>
     </body>
   </text>

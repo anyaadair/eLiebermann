@@ -6,6 +6,7 @@
         <title>Quadr II 2</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">544</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -57,6 +59,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="QuadrII_2.lnote.oe.6" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">544</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">bessere</hi> captis, <hi rend="italic">da</hi> CHn cor. 14: cepit</seg><seg type="translation" xml:lang="en" source="#claude">read captis, since CHn cor. 14: cepit</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="QuadrII_2.lnote.oe.7" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">544</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">dies zählt Hk im Text als</hi> XVIII.</seg><seg type="translation" xml:lang="en" source="#claude">Hk counts this in the text as XVIII.</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="QuadrII_2.lnote.oe.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">544</biblScope></bibl><seg type="original" xml:lang="de">canonis <hi rend="italic">M Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">canonis <hi rend="italic">M Hk</hi></seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">(Chapters. I. On the liberty of the Church. II. On reliefs. III. On girls not to be married without the licence of their lords. IIII. On heirs. V. On widows with children or without children. VI. On moneyage; and on false money. VII. Which pleas or customs are to be pardoned, which excepted. VIII. On the distribution of the money of a man who is sick or overtaken by death. IX. On forfeitures. X. On <hi rend="italic">murdra</hi> (murder-fines). XI. On forests. XII. On vavassors. XIII. On the restoration of the law of Edward. XIIII. On things seized after the death of King William. XV. Letter to the Pope, which deals with the investitures of churches and the giving of staffs. XVI. Another letter to the same Pope on the enthronement of Gerard archbishop of York. XVII. On the reception with joy and sending back of the king's envoys by the lord pope. And on the exile and bringing back of Archbishop Anselm. XVIII. On the famous council held at London after the return of the envoys. XIX. On archdeacons, priests, canons. XX. On hundreds and shires, and in what place each plea ought to be held.)</ab>
       </div>
     </body>
   </text>
