@@ -269,12 +269,15 @@
         root.querySelectorAll('mark.find-hit').forEach(m => { const t = document.createTextNode(m.textContent); m.replaceWith(t); });
         root.normalize();
     }
+    // Not looked in: the page's labels and lists of sources, manuscripts and notes' introductions
+    // (else "liber*" would mark every "Liebermann")
+    const NO_FIND = 'script, style, button, .no-find, .entry-header, .clause-section, .clause-compare__who, .clause-source, .lnotes__intro, .lnotes__where, .source-line';
     function mark(root, terms, looseFor) {
         unmark(root);
         const out = [];
         if (!terms.length) return out;
         const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
-            acceptNode: n => n.data.trim() && !n.parentElement.closest('script, style, button, .no-find') ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT
+            acceptNode: n => n.data.trim() && !n.parentElement.closest(NO_FIND) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT
         });
         const nodes = [];
         while (walker.nextNode()) nodes.push(walker.currentNode);
