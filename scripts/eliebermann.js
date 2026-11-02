@@ -232,13 +232,13 @@
     // Linking law codes and abbreviations
     // ------------------------------------------------------------------
 
-    /**
-     * Wraps known law codes (markLaw), abbreviations (markforward) and the
-     * authors and works Liebermann cites (bibliography) in links. Works on text only, so it never links inside an existing link,
-     * never nests links, and leaves the superscript language marker (L, F)
-     * at the start of an entry alone.
-     */
-    function linkAbbreviations(html, markLaw, markforward, bibliography) {
+    // The terms and their patterns, made once for each set of lists: a page links many
+    // passages with the same lists (a clause page: each of Liebermann's notes).
+    const termCache = [];
+    function abbreviationTerms(markLaw, markforward, bibliography) {
+        const key = [markLaw, markforward, bibliography].map(a => a && a.length ? a : null);
+        const hit = termCache.find(c => c.key.every((k, i) => k === key[i]));
+        if (hit) return hit;
         const terms = [];
         // Sigla marked "Link automatically": "no" (single letters such as L or S, and sigla spelled like a
         // law code, e.g. Wi) are linked by hand only: in running text they are mostly something else.
@@ -255,24 +255,49 @@
         const byText = new Map();
         terms.filter(t => t.text).forEach(t => { if (!byText.has(t.text)) byText.set(t.text, t); });
         const sorted = [...byText.values()].sort((a, b) => b.text.length - a.text.length);
-        if (!sorted.length) return html;
+        if (!sorted.length) return null;
 
         // A term that begins and ends with a letter or digit must stand as a
         // word of its own; a sign such as "!" (sic) follows a word directly.
-        const makeRegex = list => list.length ? new RegExp('(' + list
-            .map(t => {
+        // Neighbouring terms (in the longest-first order) that need the same checks share
+        // them, B(?:one|two)A for BoneA|BtwoA, which matches the same: the browser builds
+        // a pattern with a check on every term (each a table of all the world's letters)
+        // several times more slowly, and on a clause page that was most of its loading time.
+        const BEFORE = '(?<![\\p{L}\\p{N}])', AFTER = '(?![\\p{L}\\p{N}])';
+        const makeRegex = list => {
+            if (!list.length) return null;
+            const runs = [];
+            list.forEach(t => {
                 const body = t.text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/\s+/g, '\\s+');
-                const before = /^[\p{L}\p{N}]/u.test(t.text) ? '(?<![\\p{L}\\p{N}])' : '';
-                const after = /[\p{L}\p{N}]$/u.test(t.text) ? '(?![\\p{L}\\p{N}])' : '';
-                return before + body + after;
-            })
-            .join('|') + ')', 'gu') : null;
+                const before = /^[\p{L}\p{N}]/u.test(t.text), after = /[\p{L}\p{N}]$/u.test(t.text);
+                const last = runs[runs.length - 1];
+                if (last && last.before === before && last.after === after) last.bodies.push(body);
+                else runs.push({ before, after, bodies: [body] });
+            });
+            return new RegExp('(' + runs.map(r => (r.before ? BEFORE : '') + '(?:' + r.bodies.join('|') + ')' + (r.after ? AFTER : '')).join('|') + ')', 'gu');
+        };
         // Law codes and manuscript sigla are printed in roman type; italic is
         // Liebermann's German, where "Abt" means abbot, not Æthelberht.
         const allTerms = makeRegex(sorted);
         // Author names are often in italic too.
         const italicTerms = makeRegex(sorted.filter(t => (t.type === 'gram' && !t.romanOnly) || t.type === 'bib'));
         const lookup = text => byText.get(text.replace(/\s+/g, ' '));
+        const made = { key, allTerms, italicTerms, lookup };
+        termCache.push(made);
+        if (termCache.length > 4) termCache.shift();
+        return made;
+    }
+
+    /**
+     * Wraps known law codes (markLaw), abbreviations (markforward) and the
+     * authors and works Liebermann cites (bibliography) in links. Works on text only, so it never links inside an existing link,
+     * never nests links, and leaves the superscript language marker (L, F)
+     * at the start of an entry alone.
+     */
+    function linkAbbreviations(html, markLaw, markforward, bibliography) {
+        const made = abbreviationTerms(markLaw, markforward, bibliography);
+        if (!made) return html;
+        const { allTerms, italicTerms, lookup } = made;
 
         const container = parseHtml(html);
         const languageMarker = findLanguageMarker(container);
