@@ -137,6 +137,9 @@ scripts:
             const short = label.startsWith(ed + ', ') ? label.slice(ed.length + 2) : label;
             return `<span class="code-clause-src">${esc(short)}</span> `;
         };
+        // Liebermann's title for the text, from his table of contents (Gesetze I, pp. IX–X), and the running head
+        // over the text where it says something different (oe-laws/codes.json liebermannTitle; tools/titles)
+        const lieb = code.liebermannTitle;
         // "About the numbering" and the like, behind a button (data/clause-order.json codeIntros; written for the site)
         const intro = ((window.__clauseOrder || {}).codeIntros || {})[code.code];
         // An editorial introduction to the text, shown open at the top (data/clause-order.json codeIntroductions)
@@ -147,7 +150,7 @@ scripts:
                 <h1>${esc(code.name)}</h1>
                 <div class="meta">${bits.map(b => `<span>${b}</span>`).join('')}</div>
                 ${Wulfstan.badges(code.code, '')}
-                <div class="clause-dates">${code.liebermannTitle ? plainLine('Liebermann’s title', `<span lang="de">${esc(code.liebermannTitle[0])}</span>${code.liebermannTitle[1] ? ` (<i>Gesetze</i> I, p. ${esc(code.liebermannTitle[1])})` : ''}`) : ''}${dates}${
+                <div class="clause-dates">${dateLine('Titles', code.titles)}${dates}${
                     code.manuscripts && code.manuscripts.length ? plainLine('Manuscripts', code.manuscripts.map(esc).join(', ')) : ''}${
                     plainLine('Editions and translations', sources.map(esc).join(', '))}${
                     plainLine('Clauses', String(mine.length))}</div>
@@ -155,6 +158,7 @@ scripts:
             ${introduction ? `<div class="code-introduction"><h2 class="code-introduction__head">Editor’s introduction</h2>${introduction}</div>` : ''}
             ${intro ? `<details class="code-intro"><summary>${esc(intro.title)}</summary><div class="code-intro__body">${intro.html}</div></details>` : ''}
             <p class="code-callout">Below is the code in summary form: one text (the first in Liebermann’s edition) and one translation (an English crib of Liebermann’s German). Where either of these is unavailable, an alternative is shown and labelled. Each clause has its own page with all its texts, manuscripts, editions and translations, and its notes, cross-references and keywords. Click a clause number, or <em>All texts and translations</em> under any clause, to open it.</p>
+            ${lieb ? `<div class="clause-dates code-lieb-title"><p><span class="clause-dates__label">Liebermann’s title: </span><span lang="de">${esc(lieb[0])}</span> (<i>Gesetze</i> I, p. ${esc(lieb[1])})${lieb[2] ? `; running head: <span lang="de">${esc(lieb[2])}</span>` : ''}</p></div>` : ''}
             <p id="list-count" class="muted small" aria-live="polite"></p>
             <div class="code-clauses-head">
                 <span></span>
