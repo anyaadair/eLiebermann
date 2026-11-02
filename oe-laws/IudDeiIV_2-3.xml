@@ -25,8 +25,7 @@
           <bibl xml:id="claude-crib" type="translation">An English crib of the Latin and Old English texts, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
-          <witness xml:id="wit-du"><abbr>Du</abbr> <note type="manuscript">Durham, Cathedral Library, MS A. IV. 19 (Durham Ritual), f. 48v</note></witness>
-          <witness xml:id="wit-gl"><abbr>Gl</abbr> <note type="manuscript">Old English interlinear gloss in Du (Durham, Cathedral Library, MS A. IV. 19)</note></witness>
+          <witness xml:id="wit-du"><abbr>Du</abbr> <note type="manuscript">Durham, Cathedral Library, MS A. IV. 19 (Durham Ritual), f. 48v, with its Old English interlinear gloss</note></witness>
         </listWit>
       </sourceDesc>
     </fileDesc>
@@ -42,20 +41,19 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-19">Generated from row 2686 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-11-02">The Old English gloss set over the Latin words it glosses, as Liebermann prints it (Gesetze I pp. 409–412), instead of as a separate text; its English crib removed (the crib of the Latin serves for both).</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="2.3">
         <head><ref type="lawCode" target="law:IudDeiIV">Iud Dei IV</ref> 2.3</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Iud Dei IV 2.3" corresp="#wit-du"><pb n="409" ed="#liebermann"/>ut omnis homo timeat et contremescat nomen sanctum gloriae Domini nostri, qui uiuit.</ab>
-        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="Iud Dei IV 2.3" corresp="#wit-gl"><pb n="409" ed="#liebermann"/>þ<hi rend="italic">æt</hi>te ælc <hi rend="italic">monn<ptr type="liebermannNote" n="33" target="#IudDeiIV_2-3.lnote.oe.33"/></hi> ondrede ⁊ gifyrhtia<ptr type="liebermannNote" n="37" target="#IudDeiIV_2-3.lnote.oe.37"/> nome `halig wvld<hi rend="italic">res</hi> Driht<hi rend="italic">nes</hi> vs[<hi rend="italic">cs<ptr type="liebermannNote" n="38" target="#IudDeiIV_2-3.lnote.oe.38"/></hi>], se ðe liof<hi rend="italic">as</hi>.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Iud Dei IV 2.3" corresp="#wit-du" ana="#glossed"><pb n="409" ed="#liebermann"/><seg type="glossed"><seg type="base">ut</seg><gloss xml:lang="ang">þ<hi rend="italic">æt</hi>te</gloss></seg> <seg type="glossed"><seg type="base">omnis</seg><gloss xml:lang="ang">ælc</gloss></seg> <seg type="glossed"><seg type="base">homo</seg><gloss xml:lang="ang"><hi rend="italic">monn<ptr type="liebermannNote" n="33" target="#IudDeiIV_2-3.lnote.oe.33"/></hi></gloss></seg> <seg type="glossed"><seg type="base">timeat</seg><gloss xml:lang="ang">ondrede</gloss></seg> <seg type="glossed"><seg type="base">et</seg><gloss xml:lang="ang">⁊</gloss></seg> <seg type="glossed"><seg type="base">contremescat</seg><gloss xml:lang="ang">gifyrhtia<ptr type="liebermannNote" n="37" target="#IudDeiIV_2-3.lnote.oe.37"/></gloss></seg> <seg type="glossed"><seg type="base">nomen</seg><gloss xml:lang="ang">nome</gloss></seg> <seg type="glossed"><seg type="base">sanctum</seg><gloss xml:lang="ang">`halig</gloss></seg> <seg type="glossed"><seg type="base">gloriae</seg><gloss xml:lang="ang">wvld<hi rend="italic">res</hi></gloss></seg> <seg type="glossed"><seg type="base">Domini</seg><gloss xml:lang="ang">Driht<hi rend="italic">nes</hi></gloss></seg> <seg type="glossed"><seg type="base">nostri,</seg><gloss xml:lang="ang">vs[<hi rend="italic">cs<ptr type="liebermannNote" n="38" target="#IudDeiIV_2-3.lnote.oe.38"/></hi>],</gloss></seg> <seg type="glossed"><seg type="base">qui</seg><gloss xml:lang="ang">se ðe</gloss></seg> <seg type="glossed"><seg type="base">uiuit.</seg><gloss xml:lang="ang">liof<hi rend="italic">as</hi>.</gloss></seg></ab>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 409 (two independent readings of the page images, differences settled against the page)</note>
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiIV_2-3.lnote.oe.33" n="33" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">409</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Rune</hi> ᛞ</seg><seg type="translation" xml:lang="en" source="#claude">rune ᛞ</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiIV_2-3.lnote.oe.37" n="37" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">409</biblScope></bibl><seg type="original" xml:lang="de">-tiga <hi rend="italic">Stev.; beides möglich: Lind. S.</hi> 80</seg><seg type="translation" xml:lang="en" source="#claude">-tiga Stev.; both possible: Lind. p. 80</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiIV_2-3.lnote.oe.38" n="38" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">409</biblScope></bibl><seg type="original" xml:lang="de">vs <hi rend="italic">Du</hi> [<hi rend="italic">Stev. las</hi> us']</seg><seg type="translation" xml:lang="en" source="#claude">vs Du [Stev. read us’]</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-du">so that every man may fear and tremble at the holy name of the glory of our Lord, who lives …</ab>
-        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromOldEnglish" corresp="#wit-gl">that every man may dread and be afraid of the holy name of the glory of [our] Lord, he who lives.</ab>
       </div>
     </body>
   </text>

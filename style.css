@@ -1368,3 +1368,8 @@ mark.gp-mark.is-current { outline: 2px solid var(--link); }
 
 /* Section numbers on Editorial Principles (scripts/site-page.js, data-numbered). */
 .section-number { font-variant-numeric: tabular-nums; margin-right: 0.35em; }
+
+/* Interlinear gloss (Iud Dei IV, V): the Old English gloss in smaller type over the Latin word it glosses */
+.clause-reading-text:has(ruby.gloss-pair) { line-height: 2.6; }
+ruby.gloss-pair { ruby-position: over; ruby-align: center; margin-right: 0.15em; }
+ruby.gloss-pair rt.gloss-word { font-size: 0.68em; line-height: 1.1; color: #4a4843; letter-spacing: 0; font-style: normal; }
