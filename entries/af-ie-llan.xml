@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-11-01">Abbreviations “unfl.” and “Für” linked to the abbreviations list.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E00342; chosen by the editor on the review page).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -43,6 +44,7 @@
         </dictScrap>
         <xr type="see"><ref target="entry:alecgan">alecgan</ref></xr>
         <xr type="see"><ref target="entry:f-ie-llan">f[ie]llan</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E00342">a-fȳlan</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAtr_40">VI Atr 40</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_11">II Cn 11</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_36-1">Af 36,1</ref></xr>

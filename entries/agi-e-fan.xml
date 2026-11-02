@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-11-01">Abbreviations “unfl.” and “Für” linked to the abbreviations list.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E00011, E00006; chosen by the editor on the review page).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -49,6 +50,8 @@
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/1225">a-geofan</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/1232">a-giefan</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/1284">a-gyfan</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E00011">a-gyfan</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E00006">a-gyfian</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_59-1">Ine 59,1</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_61">Ine 61</ref></xr>
         <xr type="lawCode"><ref target="clause:IAs_2">I As 2</ref></xr>
