@@ -399,6 +399,8 @@ td.term { font-weight: 600; color: var(--navy-dark); white-space: nowrap; }
 .entry-list li { padding: 0.35rem 0; border-bottom: 1px solid #ebe8e1; display: flex; gap: 0.75rem; align-items: baseline; flex-wrap: wrap; }
 .entry-list .headword { font-family: var(--serif); font-size: 1.15rem; font-weight: 600; }
 .entry-list .gloss { color: var(--muted); font-size: 0.95rem; flex: 1 1 20rem; }
+/* Dictionary page: a letter is laid out only when it scrolls into view, so the 9,000 entries draw quickly */
+.dict-letter { content-visibility: auto; contain-intrinsic-size: auto 3000px; }
 
 .lang-badge {
     display: inline-block;

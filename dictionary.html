@@ -37,6 +37,16 @@ const ENTRY_FILES = [{% for f in entry_files %}"{{ f.basename }}"{% unless forlo
     q.value = params.get('q') || '';
     fulltext.checked = params.get('text') === '1';
     let entries = [];
+    // Liebermann's text of each entry (data/entries-text.json), loaded the first time
+    // "Also search Liebermann's text" is ticked
+    let texts = null, textsLoading = null;
+    function loadTexts() {
+        if (!textsLoading) textsLoading = fetch(root + 'data/entries-text.json')
+            .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+            .catch(() => ({}))
+            .then(m => { texts = m; draw(); });
+        return textsLoading;
+    }
     // Which kinds of entry to show (All, Old English, Latin, French, Grammatical terms):
     // remembered in this browser (see ELieb.hiddenLanguages), so the entry
     // pages' sidebar, Previous and Next links and the search suggestions follow them.
@@ -61,9 +71,14 @@ const ENTRY_FILES = [{% for f in entry_files %}"{{ f.basename }}"{% unless forlo
     function draw() {
         const term = fold(q.value.trim());
         const raw = q.value.trim().toLowerCase();
+        if (term && fulltext.checked && !texts) {
+            loadTexts();
+            document.getElementById('count').textContent = 'Loading Liebermann’s text for the search…';
+            return;
+        }
         const list = entries.filter(e =>
             ELieb.isShown(e.lang, hidden, e.hw) &&
-            (!term || fold(e.hw).includes(term) || (e.also || []).some(a => fold(a).includes(term)) || (fulltext.checked && (e.text || '').toLowerCase().includes(raw))));
+            (!term || e.fold.includes(term) || (e.also || []).some(a => fold(a).includes(term)) || (fulltext.checked && (texts[e.id] || '').toLowerCase().includes(raw))));
 
         const byLetter = {};
         list.forEach(e => { (byLetter[letterOf(e)] = byLetter[letterOf(e)] || []).push(e); });
@@ -83,7 +98,9 @@ const ENTRY_FILES = [{% for f in entry_files %}"{{ f.basename }}"{% unless forlo
                 : `<p>No entries match.</p>`;
             return;
         }
-        results.innerHTML = letters.map(l => `
+        // Each letter is a section the browser lays out only when it comes into view
+        // (content-visibility in style.css), so the whole list draws quickly.
+        results.innerHTML = letters.map(l => `<section class="dict-letter">
             <h2 id="letter-${l}">${l}</h2>
             <ul class="entry-list">${byLetter[l].map(e => `
                 <li>
@@ -91,7 +108,7 @@ const ENTRY_FILES = [{% for f in entry_files %}"{{ f.basename }}"{% unless forlo
                     ${ELieb.languageBadge(e.lang, e.hw, e.glang)}${e.spelling ? ' <span class="lang-badge spelling" title="A spelling, not a word">Spelling</span>' : ''}${e.xref ? ' <span class="lang-badge xref" title="This entry only sends you to another headword (Liebermann’s “s.”)">Cross-reference</span>' : ''}
                     <span class="gloss">${esc(e.gloss || '')}</span>
                 </li>`).join('')}
-            </ul>`).join('');
+            </ul></section>`).join('');
     }
 
     function update() {
@@ -102,7 +119,10 @@ const ENTRY_FILES = [{% for f in entry_files %}"{{ f.basename }}"{% unless forlo
         draw();
     }
 
-    [q, fulltext].forEach(el => el.addEventListener('input', update));
+    // Typing redraws once it pauses, not at every letter.
+    let timer = null;
+    q.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(update, 150); });
+    fulltext.addEventListener('input', update);
 
     // "Back to search": shown once the search box and the letters have scrolled
     // out of view (e.g. down in R or S); takes you back to the top and puts the
@@ -135,7 +155,7 @@ const ENTRY_FILES = [{% for f in entry_files %}"{{ f.basename }}"{% unless forlo
         .catch(() => ENTRY_FILES.map(id => ({ id, hw: id, lang: 'ang', gloss: '' })))
         .then(list => {
             // Liebermann's order (þ after t); keys are plain ASCII, so compare code points.
-            list.forEach(e => { e.key = ELieb.alphaKey(e.hw); });
+            list.forEach(e => { e.key = ELieb.alphaKey(e.hw); e.fold = fold(e.hw); });
             present = new Set(list.map(e => ELieb.letterOf(e.hw)));
             entries = list.sort((a, b) => (a.key < b.key ? -1 : a.key > b.key ? 1 : 0) || a.id.localeCompare(b.id, undefined, { numeric: true }));
             draw();
