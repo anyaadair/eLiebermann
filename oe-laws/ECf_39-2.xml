@@ -23,6 +23,7 @@
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">670</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
           <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
         </listBibl>
       </sourceDesc>
     </fileDesc>
@@ -39,13 +40,14 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+      <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="39.2">
         <head><ref type="lawCode" target="law:ECf">ECf</ref> 39.2</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 39.2"><pb n="670" ed="#liebermann"/>Quas consuetudines iustas et sapienter ductas non auferimus<ptr type="liebermannNote" n="b" target="#ECf_39-2.lnote.la.fn.b"/> eis: tantum<ptr type="liebermannNote" n="3" target="#ECf_39-2.lnote.la.3"/> in<ptr type="liebermannNote" n="c" target="#ECf_39-2.lnote.la.fn.c"/> mercatis emant<ptr type="liebermannNote" n="4" target="#ECf_39-2.lnote.la.4"/> cum testibus et<ptr type="liebermannNote" n="5" target="#ECf_39-2.lnote.la.5"/> cognitione uenditorum.<ptr type="liebermannNote" n="6" target="#ECf_39-2.lnote.la.6"/></ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 39.2"><pb n="670" ed="#liebermann"/><ptr type="liebermannNote" n="*" target="#ECf_39-2.lnote.oe.erkl-clause"/>Quas consuetudines iustas et sapienter ductas non auferimus<ptr type="liebermannNote" n="b" target="#ECf_39-2.lnote.la.fn.b"/> eis: tantum<ptr type="liebermannNote" n="3" target="#ECf_39-2.lnote.la.3"/> in<ptr type="liebermannNote" n="c" target="#ECf_39-2.lnote.la.fn.c"/> mercatis emant<ptr type="liebermannNote" n="4" target="#ECf_39-2.lnote.la.4"/> cum testibus et<ptr type="liebermannNote" n="5" target="#ECf_39-2.lnote.la.5"/> cognitione uenditorum.<ptr type="liebermannNote" n="6" target="#ECf_39-2.lnote.la.6"/></ab>
         <note type="comparison" source="#liebermann" n="670"><label>printed alongside</label> <ref target="clause:ECfRetr_39-2">ECf retr 39.2</ref></note>
         <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 670 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
         <note type="editorial">This is the last clause of ECf.</note>
@@ -56,6 +58,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_39-2.lnote.la.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">670</biblScope></bibl><seg type="original" xml:lang="de">et c. u. <hi rend="italic">fehlt Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">et c. u. lacking in Hr</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_39-2.lnote.la.6" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">670</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">enden Rl Hk;</hi> Expliciunt leges Edwardi et Willelmi regum Anglie <hi rend="italic">fügt zu Hr; folgt gleich wie ferneres Capitel</hi> Libertas ciuitatum, <hi rend="italic">d. i.</hi> Lib. Lond <hi rend="italic">u. S.</hi> 673, <hi rend="italic">Pl S</hi></seg><seg type="translation" xml:lang="en" source="#claude">Rl Hk end here; Hr adds Expliciunt leges Edwardi et Willelmi regum Anglie; in Pl S there follows at once, as if a further chapter, Libertas ciuitatum, i.e. Lib. Lond, below p. 673</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">These customs, just and wisely established, we do not take away from them: only let them buy in markets with witnesses and with the knowledge of the sellers.</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_39-2.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">350</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Ebd.</hi> Handel 8a.e.g; Markt 2a. 7 — folgt c. 36 Rs</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Ibid.</hi> Handel 8a.e.g; Markt 2a. 7 — c. 36 follows, Rs</seg></note>
       </div>
     </body>
   </text>

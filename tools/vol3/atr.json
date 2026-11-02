@@ -1,0 +1,38 @@
+[
+ {
+  "file": "NorGrith_6",
+  "n": "1",
+  "after": "mit",
+  "occurrence": 1,
+  "page": 267,
+  "column": 2,
+  "de": "Eintritt war Weibern untersagt nur zum Altar (<i>Can. Edg.</i> 45) oder zu Cuthberts Reliquien (Sim. Dunelm. ed. Arnold). Im Frankenreiche und in der von Ælfric geschilderten Kirche bedienten Weiber den Priester bei der Messe; <i>vgl. Hirtenbri. Ælfrics</i> ed. Fehr S. xxxvij. 4. 62 = 174. Die Ergänzung ‘Priester’ scheint nötig, denn Bewaffneten oder Ehepaaren stand der Kirchenbesuch frei. Dem Priester verbietet mit Waffen in die Kirche zu kommen Northu 37, Waffen zu tragen manches Zitat <i>Gl</i> Geistliche 29g, aus Ps-Egb. <i>Exc.</i> auch Ælfric <i>ebd.</i> S. xl. 18. 55. 134. 225",
+  "en": "Women were forbidden entry only to the altar (<i>Can. Edg.</i> 45) or to Cuthbert's relics (Sim. Dunelm. ed. Arnold). In the Frankish kingdom and in the church described by Ælfric, women served the priest at mass; <i>cf. Hirtenbri. Ælfrics</i> ed. Fehr p. xxxvij. 4. 62 = 174. The supplement ‘priest’ seems necessary, for armed men or married couples were free to go to church. The priest is forbidden to come into church with weapons by Northu 37, and to bear arms by many a citation in <i>Gl</i> Geistliche 29g, from Ps-Egb. <i>Exc.</i>, also Ælfric <i>ibid.</i> p. xl. 18. 55. 134. 225",
+  "doubt": "Vol. III heads this 'Nor grið 3] 1)' (clause [3] of the text, whose German is in this file). The same note is at present in NorGrith_3.xml as a wholeClause note (n=1), while the mark here points to #missing; the copy in NorGrith_3 should probably be moved here rather than duplicated.",
+  "text": "de"
+ },
+ {
+  "file": "VI-Atr-Latin-Paraphrase_28-2f",
+  "n": "a",
+  "after": "blasphemię",
+  "occurrence": 1,
+  "page": 176,
+  "column": 2,
+  "de": "Die hinzugefügten Vergehen sind fast lauter geistliche: bezeichnend für des Lateiners Sinn; <i>s. o.</i> Einl. 19",
+  "en": "The added offences are almost all ecclesiastical: characteristic of the Latin writer's way of thinking; <i>see above</i> Einl. 19",
+  "doubt": "Vol. III prints it under 'VI Atr 28, 3] a)' (letter notes refer to the Latin paraphrase); in vol. I the only letter a in the Latin of 28,2–3 is after 'blasphemię', where the file already has a pointer to #missing. The same note is already in VIAtr_28-3.xml as a wholeClause note n=a; it belongs to the Latin file.",
+  "text": "la"
+ },
+ {
+  "file": "VIIIAtr_10-1",
+  "n": "1",
+  "after": "Pfennig",
+  "occurrence": 1,
+  "page": 183,
+  "column": 3,
+  "de": "Wiederholt I Cn 9; <i>Hom. n.</i> Wulfstan 272 = 311",
+  "en": "Repeated in I Cn 9; <i>Hom. n.</i> Wulfstan 272 = 311",
+  "doubt": "Vol. III has one head note 'VIII Atr 10. 10, 1] Wiederholt …' (no number) followed by '2)'; vol. I has Und¹ Romgeld² in 10 and Pfennig¹ in 10,1. The head note is already in VIIIAtr_10.xml as n=1; this gives the same text for the mark ¹ in 10,1 (pointer currently #missing).",
+  "text": "de"
+ }
+]

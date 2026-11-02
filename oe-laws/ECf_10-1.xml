@@ -23,6 +23,7 @@
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">634</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
           <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
         </listBibl>
       </sourceDesc>
     </fileDesc>
@@ -39,16 +40,16 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+      <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="10.1">
         <head><ref type="lawCode" target="law:ECf">ECf</ref> 10.1</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 10.1"><pb n="634" ed="#liebermann"/>Iste uero denarius<ptr type="liebermannNote" n="8" target="#ECf_10-1.lnote.la.8"/> submoniri<ptr type="liebermannNote" n="9" target="#ECf_10-1.lnote.la.9"/> debet in festiuitate<ptr type="liebermannNote" n="10" target="#ECf_10-1.lnote.la.10"/> sanctorum apostolorum Petri et Pauli<ptr type="liebermannNote" n="c" target="#ECf_10-1.lnote.la.fn.c"/> et ultra festiuitatem<ptr type="liebermannNote" n="11" target="#ECf_10-1.lnote.la.11"/> sancti Petri ad uincula<ptr type="liebermannNote" n="d" target="#ECf_10-1.lnote.la.fn.d"/> non detineatur.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 10.1"><pb n="634" ed="#liebermann"/>Iste uero denarius<ptr type="liebermannNote" n="8" target="#ECf_10-1.lnote.la.8"/> submoniri<ptr type="liebermannNote" n="9" target="#ECf_10-1.lnote.la.9"/> debet in festiuitate<ptr type="liebermannNote" n="10" target="#ECf_10-1.lnote.la.10"/> sanctorum apostolorum Petri et Pauli<ptr type="liebermannNote" n="c" target="#ECf_10-1.lnote.la.fn.c"/> et ultra festiuitatem<ptr type="liebermannNote" n="11" target="#ECf_10-1.lnote.la.11"/> sancti Petri<ptr type="liebermannNote" n="a" target="#ECf_10-1.lnote.oe.erkl-a"/> ad uincula<ptr type="liebermannNote" n="d" target="#ECf_10-1.lnote.la.fn.d"/> non detineatur.</ab>
         <note type="comparison" source="#liebermann" n="634"><label>printed alongside</label> <ref target="clause:ECfRetr_10-1">ECf retr 10.1</ref></note>
         <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 634 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
-        <note type="editorial">Liebermann’s upright (roman) letter a after “Petri” refers to his explanatory notes, the Erklärungen (printed as Gesetze III; his note on p. 627 calls it “Band II”), which are not yet added here.</note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_10-1.lnote.la.fn.c" n="c" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">634</biblScope></bibl><seg type="original" xml:lang="de">29. <hi rend="italic">Juni; Zahlung nach</hi> VI Atr. Lat. 18</seg><seg type="translation" xml:lang="en" source="#claude">29 June; payment according to VI Atr. Lat. 18</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_10-1.lnote.la.fn.d" n="d" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">634</biblScope></bibl><seg type="original" xml:lang="de">1. <hi rend="italic">August</hi></seg><seg type="translation" xml:lang="en" source="#claude">1 August</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_10-1.lnote.la.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">634</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Hk</seg></note>
@@ -56,6 +57,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_10-1.lnote.la.10" n="10" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">634</biblScope></bibl><seg type="original" xml:lang="de">festis <hi rend="italic">Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">festis Ad Do</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_10-1.lnote.la.11" n="11" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">634</biblScope></bibl><seg type="original" xml:lang="de">festum <hi rend="italic">S Hr; fehlt Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">festum S Hr; lacking in Ad Do</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">This penny ought to be called for at the feast of the holy apostles Peter and Paul, and let it not be withheld beyond the feast of St Peter ad Vincula.</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_10-1.lnote.oe.erkl-a" n="a" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">345</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Gl ebd.</hi> 15; 1. Aug. als Zahltag auch <hi rend="italic">Custum. Battle</hi> p. 43; Mat. Paris in <hi rend="italic">Mon. Germ.</hi> 28, 434</seg><seg type="translation" xml:lang="en" source="#claude">Gl ibid. 15; 1 August as day of payment also in <hi rend="italic">Custum. Battle</hi> p. 43; Mat. Paris in <hi rend="italic">Mon. Germ.</hi> 28, 434</seg></note>
       </div>
     </body>
   </text>

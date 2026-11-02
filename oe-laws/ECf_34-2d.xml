@@ -23,6 +23,7 @@
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">663</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
           <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
         </listBibl>
       </sourceDesc>
     </fileDesc>
@@ -39,13 +40,14 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+      <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="34.2d">
         <head><ref type="lawCode" target="law:ECf">ECf</ref> 34.2d</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 34.2d"><pb n="663" ed="#liebermann"/><ptr type="liebermannNote" n="19" target="#ECf_34-2d.lnote.la.19"/>Quo mortuo, Haroldus<ptr type="liebermannNote" n="*" target="#ECf_34-2d.lnote.la.star"/>, falso<ptr type="liebermannNote" n="c" target="#ECf_34-2d.lnote.la.fn.c"/> pene ab omnibus putatus<ptr type="liebermannNote" n="20" target="#ECf_34-2d.lnote.la.20"/> filius<ptr type="liebermannNote" n="21" target="#ECf_34-2d.lnote.la.21"/> eius, successit et<ptr type="liebermannNote" n="22" target="#ECf_34-2d.lnote.la.22"/> quinque<ptr type="liebermannNote" n="d" target="#ECf_34-2d.lnote.la.fn.d"/> annis regnauit††.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 34.2d"><pb n="663" ed="#liebermann"/><ptr type="liebermannNote" n="*" target="#ECf_34-2d.lnote.oe.erkl-clause"/><ptr type="liebermannNote" n="19" target="#ECf_34-2d.lnote.la.19"/>Quo mortuo, Haroldus<ptr type="liebermannNote" n="*" target="#ECf_34-2d.lnote.la.star"/>, falso<ptr type="liebermannNote" n="c" target="#ECf_34-2d.lnote.la.fn.c"/> pene ab omnibus putatus<ptr type="liebermannNote" n="20" target="#ECf_34-2d.lnote.la.20"/> filius<ptr type="liebermannNote" n="21" target="#ECf_34-2d.lnote.la.21"/> eius, successit et<ptr type="liebermannNote" n="22" target="#ECf_34-2d.lnote.la.22"/> quinque<ptr type="liebermannNote" n="d" target="#ECf_34-2d.lnote.la.fn.d"/> annis regnauit††.</ab>
         <note type="comparison" source="#liebermann" n="663"><label>printed alongside</label> <ref target="clause:ECfRetr_34-2d">ECf retr 34.2d</ref></note>
         <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 663 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
         <note type="editorial">Liebermann prints “††” and gives in the outer margin of the ECf retr column the dates ††1035–39.</note>
@@ -58,6 +60,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_34-2d.lnote.la.21" n="21" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">663</biblScope></bibl><seg type="original" xml:lang="de">f. e. <hi rend="italic">fehlt S</hi></seg><seg type="translation" xml:lang="en" source="#claude">f. e. lacking in S</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_34-2d.lnote.la.22" n="22" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">663</biblScope></bibl><seg type="original" xml:lang="de">ei annisque XV r. <hi rend="italic">Hr;</hi> et <hi rend="italic">fehlt S</hi></seg><seg type="translation" xml:lang="en" source="#claude">ei annisque XV r. Hr; et lacking in S</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">When he was dead, Harold, falsely thought by almost everyone to be his son, succeeded and reigned five years††.</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34-2d.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">349</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Haraldus</hi><hi rend="superscript">15</hi> <hi rend="italic">Herewod, f. C. et Eluiue</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Haraldus</hi><hi rend="superscript">15</hi> <hi rend="italic">Herewod, f. C. et Eluiue</hi> Rs</seg></note>
       </div>
     </body>
   </text>

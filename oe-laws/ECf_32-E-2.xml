@@ -23,6 +23,7 @@
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">660</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
           <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
         </listBibl>
       </sourceDesc>
     </fileDesc>
@@ -39,13 +40,14 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+      <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="32 E 2">
         <head><ref type="lawCode" target="law:ECf">ECf</ref> 32 E 2</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 32 E 2"><pb n="660" ed="#liebermann"/>Ceperuntque<ptr type="liebermannNote" n="5" target="#ECf_32-E-2.lnote.la.5"/> uniuersi proceres Norwegie<ptr type="liebermannNote" n="6" target="#ECf_32-E-2.lnote.la.6"/> uxores<ptr type="liebermannNote" n="f" target="#ECf_32-E-2.lnote.la.fn.f"/> suas de nobili genere<ptr type="liebermannNote" n="7" target="#ECf_32-E-2.lnote.la.7"/> Britonum<ptr type="liebermannNote" n="8" target="#ECf_32-E-2.lnote.la.8"/> regni huius tempore illo, unde Norwegienses dicunt, se exisse<ptr type="liebermannNote" n="9" target="#ECf_32-E-2.lnote.la.9"/> de genere<ptr type="liebermannNote" n="7" target="#ECf_32-E-2.lnote.la.7"/> et sanguine regni huius.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 32 E 2"><pb n="660" ed="#liebermann"/><ptr type="liebermannNote" n="*" target="#ECf_32-E-2.lnote.oe.erkl-clause"/>Ceperuntque<ptr type="liebermannNote" n="5" target="#ECf_32-E-2.lnote.la.5"/> uniuersi proceres Norwegie<ptr type="liebermannNote" n="6" target="#ECf_32-E-2.lnote.la.6"/> uxores<ptr type="liebermannNote" n="f" target="#ECf_32-E-2.lnote.la.fn.f"/> suas de nobili genere<ptr type="liebermannNote" n="7" target="#ECf_32-E-2.lnote.la.7"/> Britonum<ptr type="liebermannNote" n="8" target="#ECf_32-E-2.lnote.la.8"/> regni huius tempore illo, unde Norwegienses dicunt, se exisse<ptr type="liebermannNote" n="9" target="#ECf_32-E-2.lnote.la.9"/> de genere<ptr type="liebermannNote" n="7" target="#ECf_32-E-2.lnote.la.7"/> et sanguine regni huius.</ab>
         <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 660 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
         <note type="editorial">This passage is not part of ECf or ECf retr: it is one of the additions of the London collection (Leges Anglorum s. XIII in. Londoniis collectae), which Liebermann prints across the page as an insertion into ECf retr. 32 (32 A–E, pp. 655–660). The dictionary cites it as “ECf 32 E …”, so it is kept with ECf here.</note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_32-E-2.lnote.la.fn.f" n="f" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">660</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">wie</hi> 32 C 4</seg><seg type="translation" xml:lang="en" source="#claude">as at 32 C 4</seg></note>
@@ -55,6 +57,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_32-E-2.lnote.la.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">660</biblScope></bibl><seg type="original" xml:lang="de">Bryt. <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">Bryt. Ld</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_32-E-2.lnote.la.9" n="9" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">660</biblScope></bibl><seg type="original" xml:lang="de">exiisse <hi rend="italic">K Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">exiisse K Ld</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">And all the nobles of Norway at that time took their wives from the noble race of the Britons of this kingdom, whence the Norwegians say that they have come from the race and blood of this kingdom.</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_32-E-2.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">349</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Dänen 16—18</seg><seg type="translation" xml:lang="en" source="#claude">Cf. <hi rend="italic">Gl</hi> Dänen 16—18</seg></note>
       </div>
     </body>
   </text>

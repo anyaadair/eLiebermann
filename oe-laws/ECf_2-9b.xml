@@ -23,6 +23,7 @@
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">629</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
           <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
         </listBibl>
       </sourceDesc>
     </fileDesc>
@@ -39,20 +40,21 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+      <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="2.9b">
         <head><ref type="lawCode" target="law:ECf">ECf</ref> 2.9b</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 2.9b"><pb n="629" ed="#liebermann"/>Et<ptr type="liebermannNote" n="25" target="#ECf_2-9b.lnote.la.25"/> sic iuste<ptr type="liebermannNote" n="26" target="#ECf_2-9b.lnote.la.26"/> gladius gladium iuuabit<ptr type="liebermannNote" n="d" target="#ECf_2-9b.lnote.la.fn.d"/>.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 2.9b"><pb n="629" ed="#liebermann"/>Et<ptr type="liebermannNote" n="25" target="#ECf_2-9b.lnote.la.25"/> sic iuste<ptr type="liebermannNote" n="26" target="#ECf_2-9b.lnote.la.26"/> gladius<ptr type="liebermannNote" n="a" target="#ECf_2-9b.lnote.oe.erkl-a"/> gladium iuuabit<ptr type="liebermannNote" n="d" target="#ECf_2-9b.lnote.la.fn.d"/>.</ab>
         <note type="comparison" source="#liebermann" n="629"><label>printed alongside</label> <ref target="clause:ECfRetr_2-9b">ECf retr 2.9b</ref></note>
         <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 629 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
-        <note type="editorial">Liebermann’s upright (roman) letter a after “gladius” refers to his explanatory notes, the Erklärungen (printed as Gesetze III; his note on p. 627 calls it “Band II”), which are not yet added here.</note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_2-9b.lnote.la.fn.d" n="d" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">629</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vgl. u.</hi> 17</seg><seg type="translation" xml:lang="en" source="#claude">cf. below, 17</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_2-9b.lnote.la.25" n="25" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">629</biblScope></bibl><seg type="original" xml:lang="de">Et—iuuabit <hi rend="italic">fehlt Pl</hi></seg><seg type="translation" xml:lang="en" source="#claude">Et—iuuabit lacking in Pl</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_2-9b.lnote.la.26" n="26" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">629</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Hr</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">And thus justly sword shall help sword.</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_2-9b.lnote.oe.erkl-a" n="a" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">344</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Ebd.</hi> Zwei Schwerter; <hi rend="italic">vgl.</hi> auch Holtzendorff-Kohler <hi rend="italic">Enzyklop. Rechtswiss.</hi><hi rend="superscript">7</hi> (1913) I 50. V 323; Schröder <hi rend="italic">DRG.</hi><hi rend="superscript">5</hi> 490. 495. Die Theorie auf dem Festlande 1076 <hi rend="italic">s. Mon. Germ., Leg.</hi> IV. 1, 113; <hi rend="italic">vgl.</hi> Waitz <hi rend="italic">Dt. Verf. G.</hi> VI 377; Neukirch <hi rend="italic">Petrus Damiani</hi> 86, welch letzterer dem König auch das geistliche Schwert zuweist</seg><seg type="translation" xml:lang="en" source="#claude">Ibid. Zwei Schwerter; cf. also Holtzendorff-Kohler <hi rend="italic">Enzyklop. Rechtswiss.</hi><hi rend="superscript">7</hi> (1913) I 50. V 323; Schröder <hi rend="italic">DRG.</hi><hi rend="superscript">5</hi> 490. 495. For the theory on the Continent in 1076 see <hi rend="italic">Mon. Germ., Leg.</hi> IV. 1, 113; cf. Waitz <hi rend="italic">Dt. Verf. G.</hi> VI 377; Neukirch <hi rend="italic">Petrus Damiani</hi> 86, the last of whom assigns the spiritual sword too to the king</seg></note>
       </div>
     </body>
   </text>

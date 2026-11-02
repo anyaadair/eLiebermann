@@ -23,6 +23,7 @@
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">640</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
           <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
         </listBibl>
       </sourceDesc>
     </fileDesc>
@@ -39,13 +40,14 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+      <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="13">
         <head><ref type="lawCode" target="law:ECf">ECf</ref> 13</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 13"><pb n="640" ed="#liebermann"/>Diuisiones<ptr type="liebermannNote" n="b" target="#ECf_13.lnote.la.fn.b"/><ptr type="liebermannNote" n="5" target="#ECf_13.lnote.la.5"/> scirarum<ptr type="liebermannNote" n="6" target="#ECf_13.lnote.la.6"/> regis<ptr type="liebermannNote" n="7" target="#ECf_13.lnote.la.7"/> proprie<ptr type="liebermannNote" n="8" target="#ECf_13.lnote.la.8"/> cum<ptr type="liebermannNote" n="c" target="#ECf_13.lnote.la.fn.c"/> iudicio IIII chiminorum regalium<ptr type="liebermannNote" n="9" target="#ECf_13.lnote.la.9"/> sunt.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 13"><pb n="640" ed="#liebermann"/><ptr type="liebermannNote" n="*" target="#ECf_13.lnote.oe.erkl-clause"/>Diuisiones<ptr type="liebermannNote" n="b" target="#ECf_13.lnote.la.fn.b"/><ptr type="liebermannNote" n="5" target="#ECf_13.lnote.la.5"/> scirarum<ptr type="liebermannNote" n="6" target="#ECf_13.lnote.la.6"/> regis<ptr type="liebermannNote" n="7" target="#ECf_13.lnote.la.7"/> proprie<ptr type="liebermannNote" n="8" target="#ECf_13.lnote.la.8"/> cum<ptr type="liebermannNote" n="c" target="#ECf_13.lnote.la.fn.c"/> iudicio IIII chiminorum regalium<ptr type="liebermannNote" n="9" target="#ECf_13.lnote.la.9"/> sunt.</ab>
         <note type="comparison" source="#liebermann" n="640"><label>printed alongside</label> <ref target="clause:ECfRetr_13">ECf retr 13</ref></note>
         <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 640 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_13.lnote.la.fn.b" n="b" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">640</biblScope></bibl><seg type="original" xml:lang="de">Gerichte; <hi rend="italic">vgl.</hi> Leis Wl 4; Hn 9, 4. 57, 1; 8</seg><seg type="translation" xml:lang="en" source="#claude">courts; cf. Leis Wl 4; Hn 9, 4. 57, 1; 8</seg></note>
@@ -56,6 +58,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_13.lnote.la.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">640</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Ad Do</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_13.lnote.la.9" n="9" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">640</biblScope></bibl><seg type="original" xml:lang="de">s. reg. <hi rend="italic">Hk; fehlt Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">s. reg. Hk; lacking in Ad Do</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">The boundaries of the shires are the king's own, under the judgment of the four royal highways.</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_13.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">345</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl.</hi> Grafschaftsgericht 9a; Handfrieden 5. — <hi rend="italic">Diuisiones</hi><hi rend="superscript">4</hi> <hi rend="italic">s.</hi> überschr. — <hi rend="italic">regis</hi><hi rend="superscript">7</hi> <hi rend="italic">et regni</hi> — hinter <hi rend="italic">sunt</hi><hi rend="superscript">9</hi> folgt 16—16, 2 Rs</seg><seg type="translation" xml:lang="en" source="#claude">Cf. Grafschaftsgericht 9a; Handfrieden 5. — <hi rend="italic">Diuisiones</hi><hi rend="superscript">4</hi> <hi rend="italic">s.</hi> as heading — <hi rend="italic">regis</hi><hi rend="superscript">7</hi> <hi rend="italic">et regni</hi> — after <hi rend="italic">sunt</hi><hi rend="superscript">9</hi> follows 16—16, 2 in Rs</seg></note>
       </div>
     </body>
   </text>

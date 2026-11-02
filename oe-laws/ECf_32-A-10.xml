@@ -23,6 +23,7 @@
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">656</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
           <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
         </listBibl>
       </sourceDesc>
     </fileDesc>
@@ -39,17 +40,19 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+      <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="32 A 10">
         <head><ref type="lawCode" target="law:ECf">ECf</ref> 32 A 10</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 32 A 10"><pb n="656" ed="#liebermann"/>Non debent illa inuadiare nec extra regnum uendere, sed heredibus suis in extremis legare, ad seruitium tenementorum suorum dominis suis explendum, cum opus affuerit.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 32 A 10"><pb n="656" ed="#liebermann"/><ptr type="liebermannNote" n="*" target="#ECf_32-A-10.lnote.oe.erkl-clause"/>Non debent illa inuadiare nec extra regnum uendere, sed heredibus suis in extremis legare, ad seruitium tenementorum suorum dominis suis explendum, cum opus affuerit.</ab>
         <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 656 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
         <note type="editorial">This passage is not part of ECf or ECf retr: it is one of the additions of the London collection (Leges Anglorum s. XIII in. Londoniis collectae), which Liebermann prints across the page as an insertion into ECf retr. 32 (32 A–E, pp. 655–660). The dictionary cites it as “ECf 32 A …”, so it is kept with ECf here.</note>
         <note type="editorial">Liebermann prints some words here in smaller type (inuadiare, extra, uendere, heredibus); they are taken over from the Assize of Arms of 1181, which his margin names.</note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">They must not pledge them, nor sell them outside the kingdom, but bequeath them at their end to their heirs, for fulfilling the service of their tenements to their lords when need arises.</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_32-A-10.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">348</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">S. Gl</hi> Pfand 3; Erbgang 22 — <hi rend="italic">adfuerit</hi> Rs, ebenso wie B 1 Ende</seg><seg type="translation" xml:lang="en" source="#claude">See <hi rend="italic">Gl</hi> Pfand 3; Erbgang 22 — <hi rend="italic">adfuerit</hi> Rs, as also at the end of B 1</seg></note>
       </div>
     </body>
   </text>

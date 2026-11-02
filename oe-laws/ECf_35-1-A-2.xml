@@ -24,6 +24,7 @@
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">664</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
           <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
         </listBibl>
       </sourceDesc>
     </fileDesc>
@@ -40,13 +41,14 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+      <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="35.1 A 2">
         <head><ref type="lawCode" target="law:ECf">ECf</ref> 35.1 A 2</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 35.1 A 2"><pb n="664" ed="#liebermann"/>Princeps uero Albanie duxit eam in uxorem casu fortuito. Picti enim Albanie<ptr type="liebermannNote" n="12" target="#ECf_35-1-A-2.lnote.la.12"/> a Picto† duce uocantur, Scotti uero Albanie a Scotto<ptr type="liebermannNote" n="g" target="#ECf_35-1-A-2.lnote.la.fn.g"/> duce nuncupantur<ptr type="liebermannNote" n="12" target="#ECf_35-1-A-2.lnote.la.12"/>. Est enim Albania pars†† monarchie regni huius, quod olim uocabatur regnum Britannie. Dicuntur<ptr type="liebermannNote" n="14" target="#ECf_35-1-A-2.lnote.la.14"/> enim et uocantur Britones a Bruto rege, qui Troianus fuit, ex quo regnum uniuersum nomen suscepit. Britones enim quasi<ptr type="liebermannNote" n="15" target="#ECf_35-1-A-2.lnote.la.15"/> Bruti Troiani sunt; et uenerunt et exierunt olim a Troia<ptr type="liebermannNote" n="h" target="#ECf_35-1-A-2.lnote.la.fn.h"/> magna.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 35.1 A 2"><pb n="664" ed="#liebermann"/><ptr type="liebermannNote" n="*" target="#ECf_35-1-A-2.lnote.oe.erkl-clause"/>Princeps uero Albanie duxit eam in uxorem casu fortuito. Picti enim Albanie<ptr type="liebermannNote" n="12" target="#ECf_35-1-A-2.lnote.la.12"/> a Picto† duce uocantur, Scotti uero Albanie a Scotto<ptr type="liebermannNote" n="g" target="#ECf_35-1-A-2.lnote.la.fn.g"/> duce nuncupantur<ptr type="liebermannNote" n="12" target="#ECf_35-1-A-2.lnote.la.12"/>. Est enim Albania pars†† monarchie regni huius, quod olim uocabatur regnum Britannie. Dicuntur<ptr type="liebermannNote" n="14" target="#ECf_35-1-A-2.lnote.la.14"/> enim et uocantur Britones a Bruto rege, qui Troianus fuit, ex quo regnum uniuersum nomen suscepit. Britones enim quasi<ptr type="liebermannNote" n="15" target="#ECf_35-1-A-2.lnote.la.15"/> Bruti Troiani sunt; et uenerunt et exierunt olim a Troia<ptr type="liebermannNote" n="h" target="#ECf_35-1-A-2.lnote.la.fn.h"/> magna.</ab>
         <note type="comparisonPrinted" source="#liebermann">Galf. Mon. VI 5</note>
         <note type="comparisonPrinted" source="#liebermann">I 16</note>
         <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 664 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
@@ -59,6 +61,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_35-1-A-2.lnote.la.14" n="14" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">664</biblScope></bibl><seg type="original" xml:lang="de">Di.—magna <hi rend="italic">fehlt Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">Di.—magna lacking in Ld</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_35-1-A-2.lnote.la.15" n="15" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">664</biblScope></bibl><seg type="original" xml:lang="de">qui <hi rend="italic">K</hi></seg><seg type="translation" xml:lang="en" source="#claude">qui K</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">But the prince of Albany married her by chance. For the Picts of Albany are called after Pictus†, [their] leader, and the Scots of Albany are named after Scottus, [their] leader. For Albany is part†† of the monarchy of this kingdom, which was once called the kingdom of Britain. For they are said and called Britons after King Brutus, who was a Trojan, from whom the whole kingdom took its name. For the Britons are as it were the Trojans of Brutus; and they came and went out long ago from great Troy.</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_35-1-A-2.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">350</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Britannien 4; Schottland 3—4; Troja <hi rend="italic">s. o.</hi> 32 B 12<hi rend="italic">a</hi></seg><seg type="translation" xml:lang="en" source="#claude">Cf. <hi rend="italic">Gl</hi> Britannien 4; Schottland 3—4; Troja; see above, 32 B 12<hi rend="italic">a</hi></seg></note>
       </div>
     </body>
   </text>

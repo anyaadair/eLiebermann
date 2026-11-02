@@ -20,6 +20,8 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">542</biblScope></bibl>
           <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+          <bibl xml:id="claude" type="translation">English renderings of Liebermann’s German notes, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -38,15 +40,17 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-19">Generated from row 3703 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="Inscr.">
         <head>Quadr II Praef Inscr.</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Quadr II Praef Inscr." corresp="#wit-lat"><pb n="542" ed="#liebermann"/>Incipit prefatio super decretales emendationes Henrici regis.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Quadr II Praef Inscr." corresp="#wit-lat"><pb n="542" ed="#liebermann"/><ptr type="liebermannNote" n="*" target="#Quadr-II-Praef_Inscr.lnote.oe.erkl-clause"/>Incipit prefatio super decretales emendationes Henrici regis.</ab>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 542 (two independent readings of the page images, differences settled against the page)</note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">Here begins the preface on the decretal amendments of King Henry.</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="Quadr-II-Praef_Inscr.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">312</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Stubbs <hi rend="italic">Lect. early hist.</hi> 146 gibt freie Übersetzung der Præfatio. Auf meine Anm. <hi rend="italic">o.</hi> I 542ff. verweisend, korrigiere ich jene hier nur, wo sie irreführen könnte</seg><seg type="translation" xml:lang="en" source="#claude">Stubbs, <hi rend="italic">Lect. early hist.</hi> 146, gives a free translation of the Præfatio. Referring to my notes <hi rend="italic">above</hi> I 542ff., I correct it here only where it might mislead</seg></note>
       </div>
     </body>
   </text>

@@ -23,6 +23,7 @@
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">634</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
           <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
         </listBibl>
       </sourceDesc>
     </fileDesc>
@@ -39,21 +40,22 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+      <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="11">
         <head><ref type="lawCode" target="law:ECf">ECf</ref> 11</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 11"><pb n="634" ed="#liebermann"/><hi rend="spaced">De Denegeldo<ptr type="liebermannNote" n="22" target="#ECf_11.lnote.la.22"/>.</hi> Denegeldi<ptr type="liebermannNote" n="23" target="#ECf_11.lnote.la.23"/> redditio propter piratas<ptr type="liebermannNote" n="*" target="#ECf_11.lnote.la.star"/> primitus statuta<ptr type="liebermannNote" n="24" target="#ECf_11.lnote.la.24"/> est.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 11"><pb n="634" ed="#liebermann"/><hi rend="spaced">De Denegeldo<ptr type="liebermannNote" n="22" target="#ECf_11.lnote.la.22"/><ptr type="liebermannNote" n="a" target="#ECf_11.lnote.oe.erkl-a"/>.</hi> Denegeldi<ptr type="liebermannNote" n="23" target="#ECf_11.lnote.la.23"/> redditio propter piratas<ptr type="liebermannNote" n="*" target="#ECf_11.lnote.la.star"/> primitus statuta<ptr type="liebermannNote" n="24" target="#ECf_11.lnote.la.24"/> est.</ab>
         <note type="comparison" source="#liebermann" n="634"><label>printed alongside</label> <ref target="clause:ECfRetr_11">ECf retr 11</ref></note>
         <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 634 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
-        <note type="editorial">Liebermann’s upright (roman) letter a after “Denegeldo” refers to his explanatory notes, the Erklärungen (printed as Gesetze III; his note on p. 627 calls it “Band II”), which are not yet added here.</note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_11.lnote.la.22" n="22" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">634</biblScope></bibl><seg type="original" xml:lang="de">Dan. <hi rend="italic">Hr;</hi> -ld <hi rend="italic">Cl</hi></seg><seg type="translation" xml:lang="en" source="#claude">Dan. Hr; -ld Cl</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_11.lnote.la.23" n="23" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">634</biblScope></bibl><seg type="original" xml:lang="de">-gald. <hi rend="italic">meist S;</hi> Deng. <hi rend="italic">Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">-gald. mostly S; Deng. Do</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_11.lnote.la.24" n="24" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">634</biblScope></bibl><seg type="original" xml:lang="de">fuit stat. <hi rend="italic">Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">fuit stat. Ad Do</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_11.lnote.la.star" n="*" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">634</biblScope></bibl><seg type="original" xml:lang="de">utlages <hi rend="italic">von gleicher Hand übergeschr. Rl, unter Seeräubern</hi> Friedlose <hi rend="italic">statt äusserer Feinde missverstehend</hi></seg><seg type="translation" xml:lang="en" source="#claude">utlages written above in the same hand Rl, misunderstanding the pirates as outlaws instead of foreign enemies</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">Of Danegeld. The payment of Danegeld was first established because of pirates.</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_11.lnote.oe.erkl-a" n="a" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">345</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Dänengeld 5b, welcher Name erst im 12. Jh. technisch die staatliche Jahressteuer bezeichnet; Pipe roll a. 1130. 1155ff. — <hi rend="italic">De Danegendo</hi><hi rend="superscript">35</hi>, ohne <hi rend="italic">Quid</hi> bis <hi rend="italic">const.</hi>, Rs</seg><seg type="translation" xml:lang="en" source="#claude">Cf. Gl Dänengeld 5b, a name which only in the 12th century technically designates the annual state tax; Pipe roll 1130. 1155ff. — <hi rend="italic">De Danegendo</hi><hi rend="superscript">35</hi>, without <hi rend="italic">Quid</hi> to <hi rend="italic">const.</hi>, Rs</seg></note>
       </div>
     </body>
   </text>

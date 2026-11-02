@@ -21,6 +21,8 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">623</biblScope></bibl>
           <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+          <bibl xml:id="claude" type="translation">English renderings of Liebermann’s German notes, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -39,15 +41,17 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-19">Generated from row 4038 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="21.1">
         <head><ref type="lawCode" target="law:PsCnFor">Ps Cn for</ref> 21.1</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Ps Cn for 21.1" corresp="#wit-lat"><pb n="623" ed="#liebermann"/>nec una eademque erit causarum tum ciuilium tum criminalium, ferarum foreste et ferarum regalium, uiridis et ueneris tractatio:</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Ps Cn for 21.1" corresp="#wit-lat"><pb n="623" ed="#liebermann"/>nec una eademque erit causarum tum ciuilium tum criminalium, ferarum foreste<ptr type="liebermannNote" n="n" target="#PsCnFor_21-1.lnote.oe.erkl-n"/> et ferarum regalium, uiridis et ueneris tractatio:</ab>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 623 (two independent readings of the page images, differences settled against the page)</note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">nor shall the handling be one and the same of cases civil and criminal, of beasts of the forest and royal beasts, of vert and of venison:</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="PsCnFor_21-1.lnote.oe.erkl-n" n="n" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">339</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Forst 11. 20. Über Einteilung des Wildes im 14. Jh. <hi rend="italic">vgl.</hi> Sahlender <hi rend="italic">Engl. Jagdwesen</hi> 12. Das Wort <hi rend="italic">warenne</hi> ist Französisch schon in Karolingerzeit, in der Normandie vielleicht nicht vor 1066 nachweisbar. Hirsch und Eber stellt Karolingerzeit (neben Reh die Normandie) in Ggs. zu Hase, Fuchs, Katze; Petit (<hi rend="italic">o.</hi> 2<hi rend="superscript">q</hi>) 64. 68f.; Wilhelm I. verleiht Wald an Abtei Caen, <hi rend="italic">retentis in meo dominio ceruis, capreolis, apris</hi>; Davis n. 105</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf. Gl</hi> Forst 11. 20. On the classification of game in the 14th century <hi rend="italic">cf.</hi> Sahlender <hi rend="italic">Engl. Jagdwesen</hi> 12. The word <hi rend="italic">warenne</hi> is French already in the Carolingian period; in Normandy perhaps not attested before 1066. The Carolingian period (and Normandy, adding the roe-deer) sets stag and boar against hare, fox, cat; Petit (<hi rend="italic">above</hi> 2<hi rend="superscript">q</hi>) 64. 68f.; William I grants woodland to the abbey of Caen, <hi rend="italic">retentis in meo dominio ceruis, capreolis, apris</hi>; Davis n. 105</seg></note>
       </div>
     </body>
   </text>

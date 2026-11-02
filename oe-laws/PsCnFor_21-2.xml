@@ -21,6 +21,8 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">623</biblScope></bibl>
           <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+          <bibl xml:id="claude" type="translation">English renderings of Liebermann’s German notes, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -39,15 +41,17 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-19">Generated from row 4039 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="21.2">
         <head><ref type="lawCode" target="law:PsCnFor">Ps Cn for</ref> 21.2</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Ps Cn for 21.2" corresp="#wit-lat"><pb n="623" ed="#liebermann"/>nam crimen ueneris ab antiquo inter maiora et non immerito numerabatur, uiridis uero, fractione chacee nostre regalis excepta, ita pusillum et exiguum est, quod uix ea respicit nostra constitutio; qui in hoc tamen deliquerit, sit criminis foreste reus.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Ps Cn for 21.2" corresp="#wit-lat"><pb n="623" ed="#liebermann"/>nam crimen ueneris ab antiquo inter maiora et non immerito numerabatur, uiridis uero, fractione<ptr type="liebermannNote" n="r" target="#PsCnFor_21-2.lnote.oe.erkl-r"/> chacee nostre regalis excepta, ita pusillum et exiguum est, quod uix ea respicit nostra constitutio; qui in hoc tamen deliquerit, sit criminis foreste reus.</ab>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 623 (two independent readings of the page images, differences settled against the page)</note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">for the crime of venison was from of old, and not undeservedly, counted among the greater [crimes], but [that] of vert, except for breach of our royal chase, is so small and slight that our ordinance scarcely regards it; yet whoever offends in this, let him be guilty of a forest crime.</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="PsCnFor_21-2.lnote.oe.erkl-r" n="r" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">339</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de">Im 13. Jh. hat <hi rend="italic">chacea</hi> die technische Bed.: ‘Privaten überlassener Forst’ (Turner p. cix), hier offenbar noch nicht. — Nur vor <hi rend="italic">viridarii</hi> und <hi rend="italic">forestarii</hi>, aber nicht vor die Reiserichter kamen die Klagen wegen Holzschlag im Forst im 13. Jh.; Turner p. xxxiii ff.</seg><seg type="translation" xml:lang="en" source="#claude">In the 13th century <hi rend="italic">chacea</hi> has the technical meaning ‘forest left to private persons’ (Turner p. cix), here evidently not yet. — In the 13th century complaints about felling wood in the forest came only before the <hi rend="italic">viridarii</hi> and <hi rend="italic">forestarii</hi>, not before the itinerant justices; Turner p. xxxiii ff.</seg></note>
       </div>
     </body>
   </text>

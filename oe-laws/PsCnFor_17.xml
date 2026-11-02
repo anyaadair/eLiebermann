@@ -21,6 +21,8 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">623</biblScope></bibl>
           <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+          <bibl xml:id="claude" type="translation">English renderings of Liebermann’s German notes, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -39,15 +41,17 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-19">Generated from row 4033 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="17">
         <head><ref type="lawCode" target="law:PsCnFor">Ps Cn for</ref> 17</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Ps Cn for 17" corresp="#wit-lat"><pb n="623" ed="#liebermann"/>Si quis autem co[ram] primarium pugnauerit in placito, emendet secundum pretium sui ipsius, quod Angli ƿere et ƿite dicunt, et soluat primario quadraginta solidos.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Ps Cn for 17" corresp="#wit-lat"><pb n="623" ed="#liebermann"/><ptr type="liebermannNote" n="*" target="#PsCnFor_17.lnote.oe.erkl-clause"/>Si quis autem co[ram] primarium pugnauerit in placito, emendet secundum pretium sui ipsius, quod Angli ƿere et ƿite dicunt, et soluat primario quadraginta solidos.</ab>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 623 (two independent readings of the page images, differences settled against the page)</note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">But if anyone fights in a plea [befo]re a chief man, let him pay compensation according to his own price, which the English call <hi rend="italic">ƿere</hi> and <hi rend="italic">ƿite</hi> (wergild and wite), and let him pay the chief man forty shillings.</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="PsCnFor_17.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">339</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de">Verf. missversteht die Vorlage, die nur <hi rend="italic">wer</hi> mit <hi rend="italic">pretium</hi> übersetzt, und stellt den Primar offenbar ganz willkürlich statt des <hi rend="italic">comes</hi> ein</seg><seg type="translation" xml:lang="en" source="#claude">The author misunderstands his source, which merely translates <hi rend="italic">wer</hi> by <hi rend="italic">pretium</hi>, and puts in the primarius, evidently quite arbitrarily, instead of the <hi rend="italic">comes</hi></seg></note>
       </div>
     </body>
   </text>

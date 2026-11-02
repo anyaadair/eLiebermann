@@ -23,6 +23,7 @@
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">644</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
           <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
         </listBibl>
       </sourceDesc>
     </fileDesc>
@@ -39,13 +40,14 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+      <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="18.3">
         <head><ref type="lawCode" target="law:ECf">ECf</ref> 18.3</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 18.3"><pb n="644" ed="#liebermann"/>Quodsi periuri<ptr type="liebermannNote" n="18" target="#ECf_18-3.lnote.la.18"/> remanserint in terra, quicumque<ptr type="liebermannNote" n="19" target="#ECf_18-3.lnote.la.19"/> eos inuenire<ptr type="liebermannNote" n="20" target="#ECf_18-3.lnote.la.20"/> poterit, faciat<ptr type="liebermannNote" n="21" target="#ECf_18-3.lnote.la.21"/> de eis iustitiam<ptr type="liebermannNote" n="g" target="#ECf_18-3.lnote.la.fn.g"/>.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 18.3"><pb n="644" ed="#liebermann"/><ptr type="liebermannNote" n="*" target="#ECf_18-3.lnote.oe.erkl-clause"/>Quodsi periuri<ptr type="liebermannNote" n="18" target="#ECf_18-3.lnote.la.18"/> remanserint in terra, quicumque<ptr type="liebermannNote" n="19" target="#ECf_18-3.lnote.la.19"/> eos inuenire<ptr type="liebermannNote" n="20" target="#ECf_18-3.lnote.la.20"/> poterit, faciat<ptr type="liebermannNote" n="21" target="#ECf_18-3.lnote.la.21"/> de eis iustitiam<ptr type="liebermannNote" n="g" target="#ECf_18-3.lnote.la.fn.g"/>.</ab>
         <note type="comparison" source="#liebermann" n="644"><label>printed alongside</label> <ref target="clause:ECfRetr_18-3">ECf retr 18.3</ref></note>
         <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 644 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_18-3.lnote.la.fn.g" n="g" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">644</biblScope></bibl><seg type="original" xml:lang="de">‘<hi rend="italic">vollstrecke die Hinrichtung</hi> (‘<hi rend="italic">ohne</hi> [<hi rend="italic">weiteren</hi>] <hi rend="italic">Process</hi>’; <hi rend="italic">Retr.</hi>)’; <hi rend="italic">Tödtung Geächteter war zwar erlaubt</hi> (<hi rend="italic">s. o.</hi> 6, 2), <hi rend="italic">aber im XII. Jahrh. kaum mehr, wie bei den alten Germanen, Pflicht</hi></seg><seg type="translation" xml:lang="en" source="#claude">‘let him carry out the execution (‘without [further] process’; Retr.)’; the killing of outlaws was indeed permitted (see above, 6, 2), but in the 12th century hardly still a duty, as among the ancient Germans</seg></note>
@@ -54,6 +56,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_18-3.lnote.la.20" n="20" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">644</biblScope></bibl><seg type="original" xml:lang="de">inu.—eos <hi rend="italic">überspringt Rl</hi></seg><seg type="translation" xml:lang="en" source="#claude">Rl skips inu.—eos</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_18-3.lnote.la.21" n="21" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">644</biblScope></bibl><seg type="original" xml:lang="de">fiat (fiet <hi rend="italic">Do</hi>) de e. iusticia <hi rend="italic">S Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">fiat (fiet Do) de e. iusticia S Ad Do</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">But if they remain in the land as perjurers, whoever can find them, let him do justice on them.</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_18-3.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">346</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Polizei 1 G; friedlos 10a. 11a</seg><seg type="translation" xml:lang="en" source="#claude">Cf. Gl Polizei 1 G; friedlos 10a. 11a</seg></note>
       </div>
     </body>
   </text>

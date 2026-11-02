@@ -23,6 +23,7 @@
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">662</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
           <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
         </listBibl>
       </sourceDesc>
     </fileDesc>
@@ -39,13 +40,14 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+      <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="34.1b">
         <head><ref type="lawCode" target="law:ECf">ECf</ref> 34.1b</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 34.1b"><pb n="662" ed="#liebermann"/>Que prius adinuente et<ptr type="liebermannNote" n="6" target="#ECf_34-1b.lnote.la.6"/> constitute fuerunt tempore regis Eadgari<ptr type="liebermannNote" n="b" target="#ECf_34-1b.lnote.la.fn.b"/><ptr type="liebermannNote" n="7" target="#ECf_34-1b.lnote.la.7"/>, aui sui; sed post mortem eius dimisse sunt annis<ptr type="liebermannNote" n="c" target="#ECf_34-1b.lnote.la.fn.c"/> LX<ptr type="liebermannNote" n="8" target="#ECf_34-1b.lnote.la.8"/> et VIII†.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 34.1b"><pb n="662" ed="#liebermann"/><ptr type="liebermannNote" n="*" target="#ECf_34-1b.lnote.oe.erkl-clause"/>Que prius adinuente et<ptr type="liebermannNote" n="6" target="#ECf_34-1b.lnote.la.6"/> constitute fuerunt tempore regis Eadgari<ptr type="liebermannNote" n="b" target="#ECf_34-1b.lnote.la.fn.b"/><ptr type="liebermannNote" n="7" target="#ECf_34-1b.lnote.la.7"/>, aui sui; sed post mortem eius dimisse sunt annis<ptr type="liebermannNote" n="c" target="#ECf_34-1b.lnote.la.fn.c"/> LX<ptr type="liebermannNote" n="8" target="#ECf_34-1b.lnote.la.8"/> et VIII†.</ab>
         <note type="comparison" source="#liebermann" n="662"><label>printed alongside</label> <ref target="clause:ECfRetr_34-1b">ECf retr 34.1b</ref></note>
         <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 662 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
         <note type="editorial">Liebermann prints “†” after “VIII” and gives in the outer margin of the ECf retr column the dates 975–10… (the last figures are cut off in the scan used here).</note>
@@ -55,6 +57,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_34-1b.lnote.la.7" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">662</biblScope></bibl><seg type="original" xml:lang="de">Ædg. <hi rend="italic">Hk S</hi></seg><seg type="translation" xml:lang="en" source="#claude">Ædg. Hk S</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_34-1b.lnote.la.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">662</biblScope></bibl><seg type="original" xml:lang="de">XLVII <hi rend="italic">Hk Ed. 2;</hi> XLVIII <hi rend="italic">Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">XLVII Hk Ed. 2; XLVIII Hr</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">Which had previously been devised and established in the time of King Edgar, his grandfather; but after his death they were set aside for sixty-eight years†.</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34-1b.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">349</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl.</hi> Eadgar 9; Eadwardi laga 4b — <hi rend="italic">demisse</hi><hi rend="superscript">18</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude">Cf. <hi rend="italic">Gl</hi> Eadgar 9; Eadwardi laga 4b — <hi rend="italic">demisse</hi><hi rend="superscript">18</hi> Rs</seg></note>
       </div>
     </body>
   </text>
