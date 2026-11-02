@@ -225,11 +225,23 @@ let codeSources = {};
                 type: attr(attrs, 'type'), bibl: inner.trim(), first: page, last: page });
             else if (page) { if (!s.first) s.first = page; s.last = page; }
         }
+        // Each manuscript's part on these pages: "text" if a text on a clause page is from it (corresp on an
+        // <ab>), else "notes" if Liebermann's notes cite it; one the files only list is left out.
+        const withText = new Set();
+        for (const m of xml.matchAll(/<ab [^>]*corresp="([^"]+)"/g)) m[1].split(/\s+/).forEach(x => withText.add(x.replace(/^#/, '')));
+        const notesText = [...xml.matchAll(/<note type="liebermannNote"[^>]*>[\s\S]*?<seg type="original"[^>]*>([\s\S]*?)<\/seg>/g)].map(m => m[1].replace(/<[^>]+>/g, ' ')).join(' ');
         for (const m of xml.matchAll(/<witness xml:id="([^"]+)"[^>]*>([\s\S]*?)<\/witness>/g)) {
             const abbr = decode((m[2].match(/<abbr>([\s\S]*?)<\/abbr>/) || [])[1] || m[2]);
             const name = decode((m[2].match(/<note[^>]*>([\s\S]*?)<\/note>/) || [])[1] || '');
-            if (!k.mss.has(abbr)) k.mss.set(abbr, { abbr, name, parts: siglumParts(abbr) });
-            else if (!k.mss.get(abbr).name && name) k.mss.get(abbr).name = name;
+            const base = abbr.replace(/\s*\(.*$/, '').trim();
+            const role = withText.has(m[1]) ? 'text'
+                : base && new RegExp('(^|[^\\p{L}])' + base.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '(?![\\p{L}])', 'u').test(notesText) ? 'notes' : '';
+            if (!k.mss.has(abbr)) k.mss.set(abbr, { abbr, name, parts: siglumParts(abbr), role });
+            else {
+                const x = k.mss.get(abbr);
+                if (!x.name && name) x.name = name;
+                if (role === 'text' || (role === 'notes' && !x.role)) x.role = role;
+            }
         }
         // "Whitelock, EHD p. 390" in the dates: the clause files say which work (source="#whitelock" n="EHD p. 390")
         for (const m of xml.matchAll(/<(?:date|placeName) source="([^"]*)"(?: n="([^"]*)")?/g)) {
@@ -291,7 +303,9 @@ let codeSources = {};
             if (!src && (src = match(label, allSources))) sources.push(src);
             if (src) link[label] = src.id; else unlinked.push(code.code + ': ' + label);
         });
-        out[code.code] = { sources, mss: [...k.mss.values()], link };
+        // a manuscript cited in the notes that is already named in a text's label ("Fl, Ox") is not listed twice
+        const inText = new Set([...k.mss.values()].filter(m => m.role === 'text').flatMap(m => m.abbr.split(/,\s*/).map(x => x.replace(/\s*\(.*$/, '').trim())));
+        out[code.code] = { sources, mss: [...k.mss.values()].filter(m => m.role === 'text' || (m.role === 'notes' && !inText.has(m.abbr.replace(/\s*\(.*$/, '').trim()))), link };
     });
     codeSources = out;
     fs.writeFileSync(path.join(repo, 'data', 'code-sources.json'), JSON.stringify(out));
