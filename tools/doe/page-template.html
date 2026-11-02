@@ -69,6 +69,7 @@ button:disabled { opacity: 0.5; cursor: default; }
 .decided { font-size: 0.85rem; font-weight: 600; }
 .decided.ok { color: var(--ok); } .decided.no { color: var(--bad); }
 .err { color: var(--bad); font-size: 0.85rem; }
+.add .hint { font-size: 0.8rem; color: var(--muted); }
 .more { margin: 1rem auto 0; display: block; font: inherit; padding: 0.5rem 1.2rem; border-radius: var(--radius); border: 1px solid var(--link); background: var(--surface); color: var(--link); cursor: pointer; }
 .empty { color: var(--muted); padding: 2rem 0; text-align: center; }
 @media (max-width: 520px) { .opt { grid-template-columns: 1fr; } h1 { font-size: 1.6rem; } }
@@ -149,6 +150,7 @@ button:disabled { opacity: 0.5; cursor: default; }
         <label for="add-${esc(r.e)}">Other DOE entry</label>
         <input id="add-${esc(r.e)}" placeholder="E01234" autocomplete="off" ${canWrite ? '' : 'disabled'}>
         <button type="submit" ${canWrite ? '' : 'disabled'}>Link it</button>
+        <span class="hint">Saves when you leave the box.</span>
         ${errors[r.e] ? `<span class="err">${esc(errors[r.e])}</span>` : ''}
       </form>
       ${acts ? `<div class="actions">${acts}</div>` : ''}
@@ -205,6 +207,11 @@ button:disabled { opacity: 0.5; cursor: default; }
     const id = 'E' + m[1].padStart(5, '0');
     const set = linked(ROWS.find(x => x.e === e)); set.add(id);
     save(e, { ids: [...set] });
+  });
+  // A number typed in the box saves when the reader leaves the box, without "Link it".
+  $('list').addEventListener('change', ev => {
+    const inp = ev.target.closest('.add input');
+    if (inp && inp.value.trim()) inp.form.requestSubmit();
   });
   document.querySelectorAll('.tabs button').forEach(b => b.addEventListener('click', () => {
     group = b.dataset.g; shown = PAGE;
