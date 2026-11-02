@@ -187,7 +187,10 @@ scripts:
             </header>
             ${introduction ? `<div class="code-introduction"><h2 class="code-introduction__head">Editor’s introduction</h2>${introduction}</div>` : ''}
             ${intro ? `<details class="code-intro"><summary>${esc(intro.title)}</summary><div class="code-intro__body">${intro.html}</div></details>` : ''}
-            <p class="code-callout">Below is a single text of the code (the first in Liebermann’s edition) and one translation (an English crib of Liebermann’s German). Where either of these is unavailable, an alternative is shown and labelled. Each clause has its own page with all its texts, manuscripts, editions and translations, and its notes, cross-references and keywords. Click a clause number, or <em>All texts and translations</em> under any clause, to open it.</p>
+            <div class="code-callout">
+                <p>Below is a single text of the code (the first in Liebermann’s edition) and one translation (an English crib of Liebermann’s German). Where either of these is unavailable, an alternative is shown and labelled.</p>
+                <p>Each clause has its own page with all texts, editions, translations, notes, cross-references, and keywords. Click a clause number, or <em>All texts and translations</em> under any clause, to open it.</p>
+            </div>
             <p id="list-count" class="muted small" aria-live="polite"></p>
             <div class="code-clauses-head">
                 <span></span>
