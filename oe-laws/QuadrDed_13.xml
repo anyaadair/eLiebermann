@@ -6,6 +6,7 @@
         <title>Quadr Ded 13</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">530</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -51,6 +53,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="QuadrDed_13.lnote.oe.c" n="c" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">530</biblScope></bibl><seg type="original" xml:lang="de">su., de., co. <hi rend="italic">auch Cnut Rb.</hi> I 18</seg><seg type="translation" xml:lang="en" source="#claude">su., de., co. <hi rend="italic">also Cnut Rb.</hi> I 18</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="QuadrDed_13.lnote.oe.d" n="d" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">530</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Eccli.</hi> 10, 14 <hi rend="italic">f.</hi></seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Eccli.</hi> 10, 14 <hi rend="italic">f.</hi></seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="QuadrDed_13.lnote.oe.e" n="e" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">530</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Paulus,</hi> Timoth. 1, 6, 10: radix malorum est cupiditas</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Paul,</hi> Timoth. 1, 6, 10: radix malorum est cupiditas</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">They put it about that times were happier and not in need of so many extras through pernicious curiosity, as though time — which is a certain extension of the year [?] (perhaps for <hi rend="italic">animi</hi>, of the mind), which is distinguished by attention to present things, by memory of past things, by expectation of future things — should hinder the pure will to do good, and as though whatever estranges a man from God through disobedience and the unlikeness of transgression, by suggestion, delight, consent, were not rather to be imputed to depraved morals, or [?] to the eight principal vices, which are gastrimargia (that is, gluttony of the belly), fornication, sadness, vainglory, envy, anger, pride (the beginning of God's wrath), the root of evils and the ancient enemy of our race, which, since it never desires what is fitting, never sees what is expedient.</ab>
       </div>
     </body>
   </text>

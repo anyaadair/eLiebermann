@@ -6,6 +6,7 @@
         <title>Quadr Arg 27</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">535</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -51,6 +53,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="QuadrArg_27.lnote.oe.d" n="d" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">535</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">ausser</hi> CHn cor. <hi rend="italic">meint Verf. wohl</hi> Hn com., <hi rend="italic">o. S.</hi> 524, <hi rend="italic">u.</hi> II 19, <hi rend="italic">S.</hi> 546</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">besides</hi> CHn cor. <hi rend="italic">the author probably means</hi> Hn com., <hi rend="italic">above p.</hi> 524, <hi rend="italic">below</hi> II 19, <hi rend="italic">p.</hi> 546</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="QuadrArg_27.lnote.oe.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">535</biblScope></bibl><seg type="original" xml:lang="de">Edw. <hi rend="italic">Hk T</hi></seg><seg type="translation" xml:lang="en" source="#claude">Edw. <hi rend="italic">Hk T</hi></seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="QuadrArg_27.lnote.oe._" n="-" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">312</biblScope></bibl><seg type="original" xml:lang="de">Hier fühlt Verfasser sich als Engländer, so dass die Laga Eadwardi (<hi rend="italic">s. d. Gl</hi>. 2; Wilhelm I. 7e) auch ihm zurückgegeben scheint, während er <hi rend="italic">o</hi>. 11{k} sie als nur von <hi rend="italic">Angligenis</hi> ersehnt hinstellte</seg><seg type="translation" xml:lang="en" source="#claude">Here the author feels himself an Englishman, so that the Laga Eadwardi (<hi rend="italic">see</hi> that word in <hi rend="italic">Gl</hi>. 2; Wilhelm I. 7e) seems to have been given back to him too, whereas <hi rend="italic">above</hi> 11{k} he represented it as longed for only by the <hi rend="italic">Angligenis</hi></seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">Who has not only given back to us the <hi rend="italic">laga</hi> (law) of King Edward, which we received with every delight of joys, but, strengthened by the amendments of his blessed father, has adorned it with his own institutions in all things that are of God and of life or of virtue.</ab>
       </div>
     </body>
   </text>

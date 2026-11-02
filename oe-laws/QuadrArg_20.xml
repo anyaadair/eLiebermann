@@ -6,6 +6,7 @@
         <title>Quadr Arg 20</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">534</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -53,6 +55,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="QuadrArg_20.lnote.oe.s" n="s" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">534</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Heinrich I. schlug seinen Bruder</hi> 1106; <hi rend="italic">vgl. o. Anm. c</hi></seg><seg type="translation" xml:lang="en" source="#claude">Henry I defeated his brother in 1106; cf. above note c</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="QuadrArg_20.lnote.oe.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">534</biblScope></bibl><seg type="original" xml:lang="de">Mar. <hi rend="italic">T</hi></seg><seg type="translation" xml:lang="en" source="#claude">Mar. T</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="QuadrArg_20.lnote.oe.a" n="a" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">312</biblScope></bibl><seg type="original" xml:lang="de">Nur ein denkender Zeitgenoss der Jahre 1101—06 konnte die Charaktere der Normannischen Adligen und städtischen Gegner Heinrichs so in Einer kurzen Bezeichnung treffen, während die Nationallaster der auswärtigen Länder <hi rend="italic">o</hi>. in 18 eher konventionell aus Büchern oder Überlieferung stammen mögen</seg><seg type="translation" xml:lang="en" source="#claude">Only a thoughtful contemporary of the years 1101—06 could capture the characters of Henry’s Norman noble and urban opponents so aptly in a single brief designation, whereas the national vices of the foreign countries <hi rend="italic">above</hi> in 18 may derive rather conventionally from books or tradition</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">Why should I recall the ill-fated voyages of Robert, his brother, why the presumptuous rebellions of Robert of Bellême, why the notorious undertakings of the bold Mortain, why the formidable support of so many princely men, why the burnings of Bayeux, the wickedness of Caen, the constancy of Falaise, the torments of the men of Dives, the concord of Rouen, why the truth of the few, why the depravity of the many, why — O — that brothers' battle-lines fought it out?</ab>
       </div>
     </body>
   </text>

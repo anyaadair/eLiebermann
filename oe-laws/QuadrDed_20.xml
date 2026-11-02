@@ -6,6 +6,7 @@
         <title>Quadr Ded 20</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">530–531</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -51,6 +53,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="QuadrDed_20.lnote.oe.a" n="a" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">531</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">II Petri</hi> 2, 22</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">II Petri</hi> 2, 22</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="QuadrDed_20.lnote.oe.b" n="b" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">531</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">ergänze</hi> fauorem a <hi rend="italic">oder verstehe</hi> reg. m.: <hi rend="italic">‘in fürstlichem Glanz’, wie</hi> 23</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">supply</hi> fauorem a <hi rend="italic">or understand</hi> reg. m.: <hi rend="italic">‘in princely splendour’, as in</hi> 23</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="QuadrDed_20.lnote.oe.a-2" n="a" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">311</biblScope></bibl><seg type="original" xml:lang="de">Diese Schmähung auf Neid und Missgunst scheint auf Intrigen am Königshofe gemünzt</seg><seg type="translation" xml:lang="en" source="#claude">This invective against envy and ill will seems aimed at intrigues at the royal court</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">I add besides the altogether malignant spite of envy and the detestable custom of detractors or of filth of that kind, whereby the lamentable falls of all miseries pass over [?] in unwearied succession, and they are weighed down by the burden of all unhappiness and by every punishment of damnation. They think it their own praise if they revile others; through zeal for contradiction, like a stirred-up wallow of mud, they corrupt everything nearby with the heaviest stench, and they are inflamed beyond measure by depraved hatreds of disparagement, as though defaming others with constant rumours would perpetuate them in royal majesty or award them the insignia of the consular fasces.</ab>
       </div>
     </body>
   </text>
