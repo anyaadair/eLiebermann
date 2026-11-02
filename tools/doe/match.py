@@ -39,6 +39,9 @@ def lieb_variants(hw):
     """g[e]aldor -> {galdor, gealdor}; (ge)witnes."""
     parts = re.split(r'(\[[^\]]*\]|\([^)]*\))', hw.strip())
     opts = [['', p[1:-1]] if p[:1] in '[(' and p[-1:] in '])' else [p] for p in parts]
+    # A bracket at the very start ([on]butan, [risc]binn) is part of the word: keep it.
+    if not parts[0] and len(opts) > 1:
+        opts[1] = [opts[1][-1]]
     return {''.join(c) for c in itertools.islice(itertools.product(*opts), 64)}
 
 
@@ -53,6 +56,13 @@ def verb_guesses(f):
         if f.endswith(end) and len(f) - len(end) >= 3:
             for r in reps:
                 out.add(f[:-len(end)] + r)
+    return out
+
+
+def small_variants(f):
+    out = {re.sub(r'rg(?=[^aeiouyæ]|$)', 'rh', f), re.sub(r'rh', 'rg', f),
+           re.sub(r'([cg])ean$', r'\1an', f)}
+    out.discard(f)
     return out
 
 
@@ -161,6 +171,7 @@ for path in sorted(glob.glob(os.path.join(ENTRIES, '*.xml'))):
         ('without ge-', by_base, {k[2:] for k in keys if k.startswith('ge') and len(k) > 5}),
         ('x / cs / sc (acsian = āxian)', by_x, {xform(k) for k in keys}),
         ('æw- written for ǣ- (æwbryce = ǣ-bryce)', by_base, {'æ' + k[2:] for k in keys if re.match(r'æw[^aeiouyæ]', k)}),
+        ('rg / rh, -cean / -can (burg = burh, borh = borg, bereccean = be-reccan)', by_loose, {loose(v) for k in keys for v in small_variants(k)}),
         ('inflected noun/adjective form', by_base, set().union(*[noun_guesses(k) for k in keys])),
     ]
     for i, (label, table, ks) in enumerate(steps):
@@ -171,13 +182,16 @@ for path in sorted(glob.glob(os.path.join(ENTRIES, '*.xml'))):
                 grade = 'unsure'
             elif i == 0:
                 grade = 'sure'
-            elif i <= 8:  # the Bosworth-Toller links are guesses too: never more than likely
+            elif i <= 9:  # the Bosworth-Toller links are guesses too: never more than likely
                 grade = 'likely'
             else:
                 grade = 'unsure'
             break
     body = re.search(r'<entry[^>]*>(.*?)</entry>', xml, re.S)
     body = re.sub(r'<(orth|xr)\b.*?</\1>', ' ', body.group(1), flags=re.S) if body else ''
+    # A capitalised headword may be a name (Bocland, the place): the editor decides.
+    if grade in ('sure', 'likely') and hw.lstrip('[(').strip()[:1].isupper():
+        grade = 'unsure'
     results.append({'id': eid, 'headword': hw, 'xref': is_xref, 'bt': bt, 'existing': has, 'snippet': text(body)[:160],
                     'grade': grade, 'how': how,
                     'candidates': [{'id': k, 'headword': v} for k, v in found.items()]})

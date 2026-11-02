@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E04082; guessed from the DOE headword list, spelling variant (i/y/ie, double letters, -ian/-an); not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,7 @@
           <orth>bisii</orth>
         </form>
         <dictScrap type="liebermann">eft þu <hi rend="bold">bisii</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Optativ"><abbr>op</abbr></ref></hi> 2, <hi rend="italic">du berücksichtigst</hi> <ref type="lawCode" target="law:IudDeiIV">Iud Dei IV</ref> 3,4, respicias <hi rend="italic"><ref type="abbreviation" target="gram:glossirend"><abbr>glossirend</abbr></ref></hi></dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E04082">bysig</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiIV_3-4">Iud Dei IV 3,4</ref></xr>
       </entry>
     </body>

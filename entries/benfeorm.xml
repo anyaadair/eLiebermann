@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E04267; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -38,6 +39,7 @@
         <dictScrap type="liebermann"><hi rend="bold">[benfeorm]</hi> <hi rend="italic">Kost bei Geheissfron</hi> [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>.</hi> <ref type="entry" target="entry:ben">ben</ref> <hi rend="italic"><ref type="abbreviation" target="gram:Nummer"><abbr>n.</abbr></ref></hi> 2] <hi rend="italic">lag vor <ref type="abbreviation" target="gram:fur"><abbr>für</abbr></ref></hi> firma precum <ref type="lawCode" target="law:Rect">Rect</ref> 21,4 <ref type="lawCode" target="law:Quadr">Q</ref>; bendform <hi rend="italic"><ref type="abbreviation" target="gram:angelsächsisch"><abbr>ags.</abbr></ref> <ref type="abbreviation" target="gram:Hs"><abbr>Hs</abbr></ref></hi></dictScrap>
         <xr type="compare"><ref target="entry:ben">ben</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/3663">bén-feorm</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E04267">bēn-feorm</ref></xr>
         <xr type="lawCode"><ref target="clause:Rect_21-4">Rect 21,4</ref></xr>
       </entry>
     </body>

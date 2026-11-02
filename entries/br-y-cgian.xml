@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E03387; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,7 @@
           <orth>br[y]cgian</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">br[y]cgian</hi>; bricgian <hi rend="italic">pflastern</hi> [<hi rend="italic"><ref type="abbreviation" target="gram:mit"><abbr>mit</abbr></ref> Bohlen <ref type="abbreviation" target="gram:oder"><abbr>oder</abbr></ref> Steinen?</hi>] <ref type="lawCode" target="law:Ger">Ger</ref> 13</dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E03387">brycgian</ref></xr>
         <xr type="lawCode"><ref target="clause:Ger_13">Ger 13</ref></xr>
       </entry>
     </body>

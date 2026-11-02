@@ -28,6 +28,7 @@
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
       <change when="2026-10-18">Abbreviations and law code (Norðleod) linked; see the pull request “þæt: indecl., Einl., Folg., Urkk.-Sprache, Norðleod”.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E02751; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -46,6 +47,7 @@
         <xr type="derivative"><ref target="entry:tobelimpan">tobelimpan</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/3608">be-limpan</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/39901">be-limpan (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E02751">be-limpan</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_6">Af 6</ref></xr>
         <xr type="lawCode"><ref target="clause:Ger_3">Ger 3</ref></xr>
         <xr type="lawCode"><ref target="clause:Ger_3-1">Ger 3,1</ref></xr>

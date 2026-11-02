@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E03370; guessed from the DOE headword list, spelling variant (i/y/ie, double letters, -ian/-an); not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,7 @@
           <orth>brycgeweorc</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">brycgeweorc</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>, Brückenarbeit, Strassenbau</hi> <ref type="lawCode" target="law:Rect">Rect</ref> 1</dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E03370">brycg-ge·weorc</ref></xr>
         <xr type="lawCode"><ref target="clause:Rect_1">Rect 1</ref></xr>
       </entry>
     </body>

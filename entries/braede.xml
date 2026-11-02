@@ -28,6 +28,7 @@
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">“In Cn” and “In” (Instituta Cnuti) linked to the law codes list.</change>
       <change when="2026-10-17">Liebermann’s numbered sections joined into one entry, as in the print: the files braede-2 (later sections) are now part of this entry.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E03849; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -38,6 +39,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">bræde</hi> <hi rend="bold">I</hi>) æcera~ <hi rend="italic">Ackerbreite</hi> [<hi rend="superscript">1</hi>/<hi rend="subscript">10</hi> <hi rend="italic">Ackerlänge, etwa</hi> 66 <hi rend="italic">Fuss</hi>] <ref type="lawCode" target="law:Pax">Pax</ref>. — <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:lendenbraede">lendenb~</ref>, <hi rend="italic">was</hi> <ref type="lawCode" target="law:InCn">In Cn</ref> <hi rend="italic"><ref type="abbreviation" target="gram:verwechseltMit"><abbr>verwechselt mit</abbr></ref></hi> <hi rend="bold">II</hi>) <hi rend="italic">Braten</hi>, assatura renum <hi rend="italic">setzend</hi></dictScrap>
         <xr type="derivative"><ref target="entry:lendenbraede">lendenbræde</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E03849">brǣde</ref></xr>
         <xr type="lawCode"><ref target="clause:Pax_part-001">Pax</ref></xr>
       </entry>
     </body>

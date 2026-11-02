@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E02936; guessed from the DOE headword list, same as the Bosworth-Toller headword; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">beweddunge</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref></hi>, <hi rend="italic">Verlobung</hi> <ref type="lawCode" target="law:Wif">Wif</ref> Insc</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/4153">be-weddung</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E02936">be-weddung</ref></xr>
         <xr type="lawCode"><ref target="clause:Wif_Inscr">Wif Insc</ref></xr>
       </entry>
     </body>

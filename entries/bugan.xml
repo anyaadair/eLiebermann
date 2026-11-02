@@ -28,6 +28,7 @@
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E03059; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -43,6 +44,7 @@
         </dictScrap>
         <xr type="derivative"><ref target="entry:forbugan">forbugan</ref></xr>
         <xr type="derivative"><ref target="entry:gebugan">gebugan</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E03059">būgan</ref></xr>
         <xr type="lawCode"><ref target="clause:Abt_79">Abt 79</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_84">II Cn 84</ref></xr>
         <xr type="lawCode"><ref target="clause:VIIaAtr_7">VIIa Atr 7</ref></xr>

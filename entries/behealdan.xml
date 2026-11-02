@@ -28,6 +28,7 @@
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E02256; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -41,6 +42,7 @@
           <sense n="1"><hi rend="italic">beobachten, festhalten</hi> <ref type="lawCode" target="law:VAtr">V Atr</ref> 6 <ref type="lawCode" target="law:D">D</ref>; healdan <hi rend="italic"><ref type="abbreviation" target="gram:ubrigeHandschriften"><abbr>übr.</abbr></ref></hi></sense>
           <sense n="2"><hi rend="italic">im Auge behalten, sehen auf</hi> <ref type="lawCode" target="law:Iudex">Iudex</ref> 14 | <hi rend="italic"><ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref></hi> 3: ~dað <hi rend="italic">berücksichtigen</hi> 16</sense>
         </dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E02256">be-healdan</ref></xr>
         <xr type="lawCode"><ref target="clause:VAtr_6">V Atr 6</ref></xr>
         <xr type="lawCode"><ref target="clause:Iudex_14">Iudex 14</ref></xr>
         <xr type="lawCode"><ref target="clause:Iudex_16">Iudex 16</ref></xr>

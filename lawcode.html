@@ -12,7 +12,6 @@ scripts:
 <div class="laws-layout">
 <aside class="laws-panel" id="panel" aria-label="Search this law code">
     <h2 class="laws-panel__title">Search this law code</h2>
-    <p class="panel-help panel-intro" id="panel-code">&nbsp;</p>
 
     <div class="panel-sec panel-sec--method" data-method="go">
         <label class="sidebar-label" for="go">Go to a clause</label>
@@ -22,12 +21,11 @@ scripts:
 
     <div class="panel-sec panel-sec--method" data-method="w">
         <label class="sidebar-label" for="w">Search by Word</label>
-        <input type="search" id="w" placeholder="e.g. ceap*, theft, &quot;gif mon&quot;" autocomplete="off">
-        <p class="panel-help">In this law code only. Several words: all must appear. <code>"…"</code> a phrase · <code>ceap*</code> words beginning <i>ceap-</i> · <code>*bot</code> words ending <i>-bot</i></p>
-        <div class="panel-sub">Look in</div>
-        <div class="kind-pills kind-pills--small" id="where" role="group" aria-label="Where to look for the words"></div>
+        <input type="search" id="w" placeholder="e.g. ceape · ceap* · &quot;gif mon&quot;" autocomplete="off">
         <div class="panel-sub">Match</div>
         <div class="kind-pills kind-pills--small" id="match" role="group" aria-label="How to match the words"></div>
+        <div class="panel-sub">Look in</div>
+        <div class="kind-pills kind-pills--small" id="where" role="group" aria-label="Where to look for the words"></div>
         <div class="panel-check tol-row"><label><input type="checkbox" id="tol"> Spelling tolerance</label> <button type="button" class="info-tip" data-info="tol-info" aria-expanded="false" aria-controls="tol-info" aria-label="What spelling tolerance does" title="Treated alike: i, y and ie · e, æ, ea, eo and io · u and v · c and k · single and double consonants">i</button></div>
         <p class="panel-help" id="tol-info" hidden>Treated alike: <i>i</i>, <i>y</i> and <i>ie</i> · <i>e</i>, <i>æ</i>, <i>ea</i>, <i>eo</i> and <i>io</i> · <i>u</i> and <i>v</i> · <i>c</i> and <i>k</i> · single and double consonants.</p>
     </div>
@@ -35,7 +33,7 @@ scripts:
     <div class="panel-sec panel-sec--method" data-method="d">
         <label class="sidebar-label" for="d">Search by Wörterbuch Headword</label>
         <div class="suggest-wrap"><input type="search" id="d" placeholder="e.g. bot" autocomplete="off"><ul class="suggestions" id="d-list" hidden></ul></div>
-        <p class="panel-help">The clauses of this law code that the Wörterbuch cites for the word.</p>
+        <p class="panel-help">The clauses of this code that the Wörterbuch entry cites.</p>
         <div id="d-chosen" class="chips"></div>
     </div>
 
@@ -82,14 +80,14 @@ scripts:
 
     // the search, as set in the panel (and kept in the address)
     const S = {
-        where: new Set((params.get('in') || 'orig,en').split(',').filter(x => LawPanel.WHERE.some(([k]) => k === x))),
+        where: new Set((params.get('in') || 'orig').split(',').filter(x => LawPanel.WHERE.some(([k]) => k === x))),
         match: params.get('m') === 'part' ? 'part' : 'whole',
         dict: params.get('d') || '',
         kws: (params.get('kw') || '').split('|').filter(Boolean),
         kwMode: params.get('kwm') === 'any' ? 'any' : 'all',
         show: new Set((params.get('show') || 'text,en').split(',').filter(x => x === 'text' || x === 'en'))
     };
-    if (!S.where.size) S.where = new Set(['orig', 'en']);
+    if (!S.where.size) S.where = new Set(['orig']);
     if (!S.show.size) S.show = new Set(['text', 'en']);
     const w = $('w'), d = $('d'), kw = $('kw'), go = $('go'), tol = $('tol');
     w.value = params.get('w') || '';
@@ -204,7 +202,6 @@ scripts:
             </nav>`;
         window.__tag = tag; window.__labels = [textLabel, enLabel];
         // the panel: this law code, and links
-        $('panel-code').innerHTML = `<strong>${esc(code.name)}</strong> <span class="code-abbr">${esc(code.code)}</span> · ${plural(mine.length, 'clause', 'clauses')}`;
         $('panel-links').innerHTML = [
             mine.length ? `<li><a href="${clauseUrl(mine[0].id)}&all=1">Read the whole code, with every text and translation</a></li>` : '',
             `<li><a href="${root}laws.html?codes=${encodeURIComponent(code.code)}">Search all the laws</a> <span class="muted">(this code chosen)</span></li>`,
@@ -312,7 +309,7 @@ scripts:
         p.set('code', code ? code.code : wanted);
         if (w.value.trim()) {
             p.set('w', w.value.trim());
-            if ([...S.where].sort().join(',') !== 'en,orig') p.set('in', [...S.where].join(','));
+            if ([...S.where].join(',') !== 'orig') p.set('in', [...S.where].join(','));
             if (S.match === 'part') p.set('m', 'part');
             if (tol.checked) p.set('tol', '1');
         }
@@ -339,7 +336,7 @@ scripts:
     function reset() {
         w.value = d.value = kw.value = go.value = '';
         tol.checked = false;
-        Object.assign(S, { where: new Set(['orig', 'en']), match: 'whole', dict: '', kws: [], kwMode: 'all', show: new Set(['text', 'en']) });
+        Object.assign(S, { where: new Set(['orig']), match: 'whole', dict: '', kws: [], kwMode: 'all', show: new Set(['text', 'en']) });
         changed();
     }
     $('reset').addEventListener('click', reset);

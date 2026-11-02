@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E04278; guessed from the DOE headword list, same as the Bosworth-Toller headword; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">beoceorle</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>, Bienenmann</hi> <ref type="lawCode" target="law:Rect">Rect</ref> 5; bocherus <ref type="lawCode" target="law:Quadr">Q</ref> = <hi rend="bold">beocere</hi> <ref type="lawCode" target="law:Rect">Rect</ref> 6,4 | <hi rend="italic"><ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>:</hi> ~cere 6,3</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/3686">beó-ceorl</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E04278">bēo-ceorl</ref></xr>
         <xr type="lawCode"><ref target="clause:Rect_5">Rect 5</ref></xr>
         <xr type="lawCode"><ref target="clause:Rect_6-2-to-6-4">Rect 6,4</ref></xr>
         <xr type="lawCode"><ref target="clause:Rect_6-2-to-6-4">Rect 6,3</ref></xr>

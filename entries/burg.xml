@@ -34,6 +34,7 @@
       <change when="2026-10-19">“Fz.” linked to the abbreviations list.</change>
       <change when="2026-10-28">“von” unlinked from the abbreviations list: here it is ordinary German, not an abbreviation (Anya Adair).</change>
       <change when="2026-10-28">“Hn mon”, “Hn com” and “Hn cor” linked to their own law codes (Henry I’s decrees on the coinage and on the county and hundred courts; his coronation charter), not to the Leges Henrici.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E03237; guessed from the DOE headword list, rg / rh, -cean / -can (burg = burh, borh = borg, bereccean = be-reccan); not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -56,6 +57,7 @@
         <xr type="derivative"><ref target="entry:Searesbiry">Searesbiry</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/5400">burg</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/41108">burg (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E03237">burh</ref></xr>
         <xr type="lawCode"><ref target="clause:IIAs_13">II As 13</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_18">II Cn 18</ref></xr>
         <xr type="lawCode"><ref target="clause:IIAs_20-1">II As 20,1</ref></xr>

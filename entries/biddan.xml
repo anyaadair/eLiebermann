@@ -29,6 +29,7 @@
       <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E02490; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -45,6 +46,7 @@
         </dictScrap>
         <xr type="derivative"><ref target="entry:abiddan">abiddan</ref></xr>
         <xr type="derivative"><ref target="entry:gebiddan">gebiddan</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E02490">biddan</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAs_8-8">VI As 8,8</ref></xr>
         <xr type="lawCode"><ref target="clause:VAtr_35">V Atr 35</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAtr_6">VI Atr 6</ref></xr>
