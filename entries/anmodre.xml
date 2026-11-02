@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E01147, E01148; chosen by the editor on the review page).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,8 @@
           <orth>anmodre</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">anmodre</hi> heortan, <hi rend="italic"><ref type="abbreviation" target="gram:Genitiv"><abbr>gn</abbr></ref></hi>, <hi rend="italic">einmütigen</hi> <ref type="lawCode" target="law:IICn">II Cn</ref> 84,3</dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E01147">an-mōd</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E01148">ān-mōd</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_84-3">II Cn 84,3</ref></xr>
       </entry>
     </body>

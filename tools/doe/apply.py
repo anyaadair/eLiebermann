@@ -24,6 +24,12 @@ if dec_dir:
         dec[os.path.basename(f)[:-5]] = d.get('data', d)
 today = datetime.date.today().isoformat()
 heads = {}
+# Labels for E-numbers typed in on the review page: the DOE's own headword.
+for f in glob.glob(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'lists', '*.txt')):
+    for line in open(f, encoding='utf-8'):
+        if '\t' in line:
+            i, h = line.rstrip('\n').split('\t', 1)
+            heads[i.strip()] = h.strip()
 for r in R:
     for c in r['candidates']:
         heads[c['id']] = c['headword']

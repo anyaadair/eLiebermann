@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-28">“von” unlinked from the abbreviations list: here it is ordinary German, not an abbreviation (Anya Adair).</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E00433; chosen by the editor on the review page).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
           <orth>ahret</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">ahret</hi>, 3, <hi rend="italic">rettet</hi> <ref type="lawCode" target="law:IVEg">IV Eg</ref> 14; æt handa <hi rend="italic">von</hi> (<hi rend="italic">Diebes</hi>) <hi rend="italic">Hand entreisst</hi> <ref type="lawCode" target="law:Forf">Forf</ref> 3,1</dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E00433">a-hreddan</ref></xr>
         <xr type="lawCode"><ref target="clause:IVEg_14">IV Eg 14</ref></xr>
         <xr type="lawCode"><ref target="clause:Forf_3-1">Forf 3,1</ref></xr>
       </entry>

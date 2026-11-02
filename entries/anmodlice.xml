@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E01149, E01150; chosen by the editor on the review page).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,8 @@
           <orth>anmodlice</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">anmodlice</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:adverb"><abbr>adv</abbr></ref></hi>, <hi rend="italic">einmütig</hi> <ref type="lawCode" target="law:Wi">Wi</ref> Pro 2</dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E01149">an-mōdlīce</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E01150">ān-mōdlīce</ref></xr>
         <xr type="lawCode"><ref target="clause:Wi_Prolog-to-3">Wi Pro 2</ref></xr>
       </entry>
     </body>
