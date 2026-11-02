@@ -4,6 +4,8 @@
     <fileDesc>
       <titleStmt>
         <title>Cn 1027 11</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription of Liebermann’s text and notes</resp><name ref="#claude">Claude</name></respStmt>
         <respStmt><resp>Edition of the text</resp><name ref="#robertson">Robertson</name></respStmt>
         <respStmt><resp>Translation</resp><name ref="#robertson">Robertson</name></respStmt>
         <respStmt><resp>Translation</resp><name ref="#whitelock">Whitelock</name></respStmt>
@@ -26,8 +28,10 @@
           <bibl xml:id="robertson" type="edition">A. J. Robertson, <title>The Laws of the Kings of England from Edmund to Henry I</title> (Cambridge: Cambridge University Press, 1925), p. <biblScope unit="page">150</biblScope></bibl>
           <bibl xml:id="whitelock" type="translation">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007), p. <biblScope unit="page">487</biblScope></bibl>
           <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="claude" type="translation">English renderings of Liebermann’s German notes, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic</bibl>
         </listBibl>
         <listWit>
+          <witness xml:id="wit-fl" rend="bold"><abbr>Fl</abbr> <note type="manuscript">Florence (John) of Worcester, Chronicon, ed. MGH SS XIII 126: Liebermann’s text</note></witness>
           <witness xml:id="wit-flor-of-worcester-ed-thorpe" rend="bold"><abbr>Flor. of Worcester (ed. Thorpe)</abbr></witness>
           <witness xml:id="wit-ox" rend="bold"><abbr>Ox</abbr> <note type="manuscript">Oxford, Corpus Christi College, MS 157</note></witness>
           <witness xml:id="wit-bc"><abbr>Bc</abbr> <note type="manuscript">Pontifical of the abbey of Le Bec (known from Martène’s edition)</note></witness>
@@ -54,16 +58,22 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-19">Generated from row 1596 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-11-02">Liebermann’s Latin text, footnotes and marginal references added from Gesetze I pp. 276–277; Robertson’s text marked as Latin.</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="11">
         <head><ref type="lawCode" target="law:Cn1027">Cn 1027</ref> 11</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" corresp="#wit-fl"><pb n="277" ed="#liebermann"/>Idcirco<ptr type="liebermannNote" n="7" target="#Cn1027_11.lnote.oe.7"/> obtestor et precipio meis consiliariis, quibus regni consilia credidi, ne ullo modo aut propter meum timorem aut alicuius potentis personę fauorem aliquam iuiustitiam amodo consentiant uel patiantur<ptr type="liebermannNote" n="8" target="#Cn1027_11.lnote.oe.8"/> pullulare in omni regno meo.</ab>
         <ab type="editionText" xml:lang="la" source="#robertson" n="11" corresp="#wit-fl-ox"><pb n="150" ed="#robertson"/>Idcirco obtestor et praecipio meis consiliariis quibus regni consilia credidi, ne ullo modo aut propter meum timorem aut alicuius potentis personae favorem aliquam iniustitiam amodo consentiant vel patiantur pullulare in omni regno meo.</ab>
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-fl-ox"><pb n="151" ed="#robertson"/>I therefore entreat and enjoin upon all my counsellors, to whom I have entrusted the administration of the kingdom, that they shall in no way, whether through fear of me or to gain the favour of any powerful person, henceforth countenance or suffer any form of injustice to flourish in any part of my kingdom.</ab>
         <ab type="translation" xml:lang="en" source="#whitelock"><pb n="487" ed="#whitelock"/>For this reason I implore and command my councillors, to whom I have entrusted the councils of the kingdom, that from now on they shall not in any way, either for fear of me or for the favour of any powerful person, consent to any injustice, or suffer it to flourish in any part of my kingdom.</ab>
         <note type="editorial">Latin only (Cnut's letter of 1027, c. May; Latin translation c. 1070–1100, the Old English original is lost). Liebermann's text is from Florence of Worcester (ed. MGH SS XIII 126), compared with Ox (Oxford, Corpus 157 p. 329) and William of Malmesbury II 183; text in column T. Liebermann gives no German translation.</note>
+        <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 277 (November 2026; read twice from the page images and against the text layer). His superscript letters, which refer to his Erklärungen, are left out.</note>
+        <note type="editorial">Liebermann prints “iuiustitiam”, a misprint for iniustitiam.</note>
+        <note type="liebermannNote" subtype="textual" xml:id="Cn1027_11.lnote.oe.7" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">277</biblScope></bibl><seg type="original" xml:lang="de">Icc. <hi rend="italic">Ma</hi></seg><seg type="translation" xml:lang="en" source="#claude">Icc. <hi rend="italic">Ma</hi></seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Cn1027_11.lnote.oe.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">277</biblScope></bibl><seg type="original" xml:lang="de">faciant <hi rend="italic">Ma</hi></seg><seg type="translation" xml:lang="en" source="#claude">faciant <hi rend="italic">Ma</hi></seg></note>
       </div>
     </body>
   </text>
