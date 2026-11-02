@@ -16,6 +16,16 @@ document.addEventListener('DOMContentLoaded', () => {
             // The first heading is the page title.
             html = html.replace(/<h2>(.*?)<\/h2>/, '<h1>$1</h1>');
             el.innerHTML = html;
+            // data-numbered: number the sections 1, 2 … and their subheadings
+            // 1.1, 1.2 … (Editorial Principles), so a new section needs no renumbering.
+            if (el.hasAttribute('data-numbered')) {
+                let sec = 0, sub = 0;
+                el.querySelectorAll('h2, h3').forEach(h => {
+                    const n = h.tagName === 'H2' ? `${++sec}` : `${sec}.${++sub}`;
+                    if (h.tagName === 'H2') sub = 0;
+                    h.insertAdjacentHTML('afterbegin', `<span class="section-number">${n}</span> `);
+                });
+            }
             // Elements marked data-section="N" (e.g. a search box) belong at
             // the end of the Nth section of the page text.
             const sections = el.querySelectorAll('section');
