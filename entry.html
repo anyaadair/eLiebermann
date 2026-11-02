@@ -377,7 +377,7 @@ scripts:
             const m = /^clause:(.+)$/.exec(ref.getAttribute('target') || '');
             if (m) clauses[ref.textContent.replace(/\s+/g, ' ').trim()] = root + 'law.html?id=' + encodeURIComponent(m[1]);
         });
-        ELieb.linkClauseNumbers(target.querySelector('.liebermann-text'), clauses, { headword: e.headword, spelling: !!e.spelling, noFind: e.lang === 'de' });
+        ELieb.linkClauseNumbers(target.querySelector('.liebermann-text'), clauses, { headword: e.headword, spelling: !!e.spelling, noFind: e.lang === 'de', lang: e.lang });
         // Highlight words added by hand (data/link-highlights.json), on the links found by the rules and
         // on those made by hand (<ref type="clause" … n="Ine 70,1">): "find" replaces the form the rules
         // chose; every word in "mark" is marked as well, wherever it is found in the clause.

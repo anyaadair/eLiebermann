@@ -974,8 +974,29 @@
     const bracketPassages = flat => [...flat.matchAll(/(?<![\p{L}])\[([^\[\]]*\s[^\[\]]*)\]/gu)].map(m => [m.index, m.index + m[0].length]);
     // affix: an entry for a letter, a spelling or an ending ("-a", "a-", "-cc"): the example word just
     // before a citation is the cited form ("handhabbenda IV As 6 Q")
-    function formBefore(flat, i, ital, bold, breaks, hw, affix) {
+    // Liebermann's words for "translated / explained as" before the Latin of the Quadripartitus, the Instituta
+    // etc. ("übersetzt terra testamentalis Q: Af 41", "Erklärt als allodium II Cn 15,1b In"): after one of
+    // these, the cited form is the Latin word or words just before the citation, not an English form further back
+    const GLOSS_MARK = /^(?:übersetzt|übs|erklärt|Erklärt|glossirt|glossiert)$/;   // not "übsnd" (übersetzend), which follows the Latin
+    // words that belong to a citation, not to the text ("I Atr Insc. 1,14", "Pro 3", "Rb 41")
+    const CLAUSE_WORD = /^(?:Insc|Inscr|Pro|Prol|Prolog|Rb|El|Epil|Epilog|Test|Cons)$/;
+    // words that end a run of Latin but are not themselves the translation (sigla, numerals, "id est")
+    const NOT_GLOSS = /^(?:[IVXLC]+|id|est|vel|sc|scil|Ip|Hunt|Var|Lond|Quadr|Inst|Hs|Hss|ff?|Z)$/;
+    // glosses: look for the Latin translation of an Old English headword (not in Latin or French entries)
+    function formBefore(flat, i, ital, bold, breaks, hw, affix, glosses) {
         const toks = [...flat.slice(0, i).matchAll(/\u0001[^\u0003]*\u0003|[\p{L}~'’\[\]\-]*[\p{L}~][\p{L}~'’\[\]\-]*|\d+|[()|‖]/gu)];
+        // the plain words nearest the citation ("terra testamentalis"), in case a GLOSS_MARK comes before them
+        const gloss = []; let glossDone = false;
+        const endGloss = () => { if (gloss.length) glossDone = true; };
+        const glossForm = () => {
+            const words = gloss.map(w => w.replace(/[\[\]\-]/g, '')).filter(Boolean);
+            const long = [...words].filter(w => w.length > 3).sort((x, y) => y.length - x.length);
+            // Latin is inflected (libera terra Q, the clause has liberas terras): after the words themselves,
+            // their beginnings, without the last letter or two (not shorter than five letters)
+            const stems = long.flatMap(w => [w.length > 6 ? w.slice(0, -2) : '', w.length > 5 ? w.slice(0, -1) : '']).filter(x => x.length >= 5).map(x => x + '*');
+            // last, the headword itself, in case the clause has the Old English but not this Latin
+            return [...new Set([words.length > 1 ? '"' + words.join(' ') + '"' : '', ...long, words.length === 1 ? words[0] : '', ...stems, hw, hw.length > 4 ? hw.slice(0, -1) + '*' : hw.length > 2 ? hw + '*' : ''].filter(Boolean))].join(',');
+        };
         // A citation inside a bracketed passage is for a form inside it (or else the headword); one
         // outside it reads past the whole passage, as if it were not there.
         const groups = bracketPassages(flat);
@@ -988,14 +1009,20 @@
             // a new paragraph (a numbered sense set on its own line) between here and the last word read
             for (const b of breaks) if (b > at && b <= last) return hw;
             last = at;
-            if (t[0] === '\u0001') continue;
-            if (t === ')') { depth++; continue; }
+            if (t[0] === '\u0001') { endGloss(); continue; }
+            if (t === ')') { depth++; endGloss(); continue; }
             if (t === '(') { depth = Math.max(0, depth - 1); continue; }
             if (depth) continue;
             // "|" starts a new grammatical form ("| gen: ~des") or a new meaning ("| jedesmal VI Atr 20"):
             // with no form found, a new meaning is for the headword itself; a form with a label, nothing
             if (t === '|' || t === '‖') return /:/.test(flat.slice(at, i)) ? '' : hw;
-            if (/^\d+$/.test(t)) { if (bold[at]) return hw; continue; }
+            if (/^\d+$/.test(t)) { if (bold[at]) return hw; endGloss(); continue; }
+            if (!ital[at] && !bold[at] && CLAUSE_WORD.test(t)) { endGloss(); plain++; continue; }
+            if (!ital[at] && NOT_GLOSS.test(t)) endGloss();
+            if (glosses && ital[at] && gloss.length && GLOSS_MARK.test(t)) return glossForm();
+            // Liebermann's German between the Latin and the word before it (a meaning, "Katholicismus"):
+            // not a list of translations; only "als" ("erklärt als") may stand between
+            if (ital[at] && gloss.length && !/^(?:als|durch)$/.test(t)) { gloss.length = 0; glossDone = true; }
             // a bold italic label ("sg:", "pl:", "op:") with no form after it: the headword itself is cited
             if (bold[at] && ital[at]) return hw;
             if (bold[at]) return t.length > 1 ? expandTilde(t, hw) : hw;   // the headword, or "a)" of a sense
@@ -1009,6 +1036,8 @@
             // cited, whatever it looks like ("ævre II Atr 8,4", "afre I Cn 1 A")
             if (inside) return t.replace(/[\[\]\-]/g, '');
             if (relatedForm(t, hw)) return t.replace(/[\[\]\-]/g, '');
+            // (Latin words only: an Old English spelling given after "übs" is not a translation)
+            if (!glossDone && gloss.length < 4 && t.length > 1 && !/[þðæƿäöüß]/i.test(t) && !NOT_GLOSS.test(t)) gloss.unshift(t); else endGloss();
             plain++;
         }
         return hw;
@@ -1108,7 +1137,7 @@
         // word before its citation and often not clearly marked off: their links open the clause
         // without marking a word (the entry page says so)
         if (hw && !(opts || {}).noFind) hits.forEach(h => {
-            let form = formBefore(flat, h.flatStart, ital, bold, breaks, hw, affix);
+            let form = formBefore(flat, h.flatStart, ital, bold, breaks, hw, affix, (opts || {}).lang === 'ang');
             if (spelling && form === hw) form = '';
             const sep = () => (h.href.includes('?') ? '&' : '?');
             if (form && (oneLetter ? /\p{L}/u : /\p{L}.*\p{L}/u).test(form.split(',')[0])) h.href += sep() + 'find=' + encodeURIComponent(form);
