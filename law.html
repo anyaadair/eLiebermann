@@ -16,12 +16,10 @@ scripts:
     <p class="panel-help panel-intro" id="p-code">&nbsp;</p>
 
     <div class="panel-sec panel-sec--method" data-method="f">
-        <label class="sidebar-label" for="find" id="find-label">Find in this clause</label>
-        <input type="search" id="find" placeholder="e.g. ceap*, theft, &quot;gif mon&quot;" autocomplete="off">
-        <p class="panel-help" id="find-help"><code>"…"</code> a phrase · <code>ceap*</code> words beginning <i>ceap-</i> · <code>*bot</code> words ending <i>-bot</i></p>
+        <label class="sidebar-label" for="find" id="find-label">Search by Word</label>
+        <input type="search" id="find" placeholder="e.g. ceape · ceap* · &quot;gif mon&quot;" autocomplete="off">
         <div class="find-status" id="find-status" hidden>
             <span id="find-count" aria-live="polite"></span>
-            <span class="find-keys">Enter: next · Shift+Enter: back</span>
         </div>
         <div id="find-clauses" class="chips"></div>
         <div class="panel-sub">Match</div>
@@ -1302,7 +1300,7 @@ scripts:
         };
         function run() {
             const whole = !!document.querySelector('.whole-code h2');
-            $('find-label').textContent = whole ? 'Find in the whole of ' + row.code : 'Find in this clause';
+            $('find-label').textContent = whole ? 'Search by Word in the whole of ' + row.code : 'Search by Word';
             const loose = fromLink ? 'link' : tol.checked;
             const terms = find.value.trim() ? W.parseWords(find.value, loose, matchMode === 'whole') : [];
             // a one-letter word from a dictionary link ("a"): only in the texts themselves, not in
@@ -1332,7 +1330,7 @@ scripts:
         find.addEventListener('input', () => { fromLink = false; clearTimeout(timer); timer = setTimeout(run, 250); });
         find.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); step(e.shiftKey ? -1 : 1); } });
         tol.addEventListener('input', () => { fromLink = false; run(); });
-        document.addEventListener('wholecode', () => { drawLinks(); if (find.value.trim()) run(); else $('find-label').textContent = 'Find in the whole of ' + row.code; });
+        document.addEventListener('wholecode', () => { drawLinks(); if (find.value.trim()) run(); else $('find-label').textContent = 'Search by Word in the whole of ' + row.code; });
         // From a dictionary entry: the form the citation is for (law.html?id=Rect_4-1c&find=gærses), or
         // several likely spellings of it, best first ("forheolde,forhealdolde…"). Each is looked for in
         // turn as a whole word, with spelling tolerance; then shorter and shorter beginnings of the first
