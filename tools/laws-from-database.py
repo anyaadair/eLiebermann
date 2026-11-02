@@ -50,6 +50,16 @@ old = _load('laws_from_xlsx', 'laws-from-xlsx.py')       # slugify, clause keys,
 abt = _load('law_code_from_xlsx', 'law-code-from-xlsx.py')  # italic runs
 rubrics = _load('rubric_split', 'rubric_split.py')         # J&O's E and B rubrics, apart
 promulgation = _load('promulgation', 'promulgation.py')  # date and place, with their scholars
+# A scholar's statement that gives no date at all ("no evidence of exact date (Robertson)") is left out
+# of the dates, the note and codes.json (Anya, November 2026); relative dates ("after IV Eg") are kept.
+NO_DATE = re.compile(r'^no (?:clear )?evidence of (?:exact )?date$')
+NO_DATE_IN_TEXT = re.compile(r';\s*no (?:clear )?evidence of (?:exact )?date \([^)]*\)')
+
+
+def parsed_dates(text):
+    """promulgation.parse(text), without the dates that give no date."""
+    dates, places = promulgation.parse(text)
+    return [d for d in dates if not NO_DATE.match(d[0])], places
 
 SKIP = set()
 
@@ -545,7 +555,7 @@ DATE_SCHOLARS = {
 
 def date_place(text, srcs):
     """The code's dates and places as [(kind, text, [source ids])], adding the scholars' works to srcs."""
-    dates, places = promulgation.parse(text)
+    dates, places = parsed_dates(text)
     out = []
     for kind, items in (('date', dates), ('placeName', places)):
         for what, who in items:
@@ -941,7 +951,7 @@ def build(row, today, source_name, refs):
     kws = [('offence-legal-event', row['offence']), ('people', row['people']), ('locations', row['locations'])]
     w('    <profileDesc>')
     if row['promulgation']:
-        w('      <creation>%s<note type="promulgation">%s</note></creation>' % (creation_xml(dated), esc(row['promulgation'])))
+        w('      <creation>%s<note type="promulgation">%s</note></creation>' % (creation_xml(dated), esc(NO_DATE_IN_TEXT.sub('', row['promulgation']))))
     if any(t for _, t in kws):
         w('      <textClass>')
         for name, terms in kws:
@@ -1140,9 +1150,9 @@ def write_codes(rows, catalogue, find_anchor, path):
                 'code': r['code'], 'anchor': find_anchor(r['code'])[0], 'name': r['codeName'] or r['code'],
                 'king': ' and '.join(p[0] for p in parts), 'reign': r['king'],
                 'group': GROUP_OVERRIDE.get(r['code']) or (GROUPS.get(key, key) if key else OTHER),
-                'date': r['promulgation'], 'clauses': counts[r['code']], 'first': first_ids.get(r['code'], ''),
+                'date': NO_DATE_IN_TEXT.sub('', r['promulgation']), 'clauses': counts[r['code']], 'first': first_ids.get(r['code'], ''),
                 # the suggested dates and places, each with the scholars who propose it (the first date is the database's)
-                'dates': [[d, who] for d, who in promulgation.parse(r['promulgation'])[0]],
+                'dates': [[d, who] for d, who in parsed_dates(r['promulgation'])[0]],
                 'places': [[p, who] for p, who in promulgation.parse(r['promulgation'])[1]],
                 'editors': [], 'manuscripts': [],
             }
