@@ -6,6 +6,7 @@
         <title>Hn 7.4</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">553</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -61,6 +63,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="Hn_7-4.lnote.oe.32" n="32" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">553</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">so Sc;</hi> d. r. <hi rend="italic">Co Or</hi></seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">so Sc;</hi> d. r. <hi rend="italic">Co Or</hi></seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_7-4.lnote.oe._" n="-" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">316</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Hundred 17. 30. 31—<hi rend="italic">et</hi>{26} <hi rend="italic">bu</hi>. fehlt—<hi rend="italic">hu. et</hi> {28} <hi rend="italic">wa</hi>. Rs.—Die Vorladung (<hi rend="italic">s. d. Gl</hi> 1d; <hi rend="italic">h</hi>.{r} <hi rend="italic">v. w. d</hi>. ist Nachtrag) erging nur an Parteien und Urteilfinder, nicht an alle Mitglieder, nach Stubbs <hi rend="italic">Lect</hi>. 167</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf. Gl</hi> Hundred 17. 30. 31—<hi rend="italic">et</hi>{26} <hi rend="italic">bu</hi>. omitted—<hi rend="italic">hu. et</hi> {28} <hi rend="italic">wa</hi>. Rs.—According to Stubbs <hi rend="italic">Lect</hi>. 167, the summons (<hi rend="italic">see</hi> that word in <hi rend="italic">Gl</hi> 1d; <hi rend="italic">h</hi>.{r} <hi rend="italic">v. w. d</hi>. is an addition) went out only to the parties and the doomsmen, not to all members</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_7-4.lnote.oe.t-2" n="t" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">316</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">efficiencia</hi> besser zu erklären als ‘Wirksamkeit, Arbeitsverrichtung’. Die folg. Worte <hi rend="italic">regis dom. nec</hi>. schöpft Verf. aus Hn com 2, 1</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">efficiencia</hi> is better explained as ‘effectiveness, performance of work’. The following words <hi rend="italic">regis dom. nec</hi>. the author draws from Hn com 2, 1</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">The <hi rend="italic">scyregemot</hi> and the <hi rend="italic">burgemot</hi> (borough court) ought to meet twice a year, the hundreds or wapentakes twelve times a year, and be summoned seven days beforehand, unless the public advantage or the king's own pressing need [?] anticipates the term.</ab>
       </div>
     </body>
   </text>

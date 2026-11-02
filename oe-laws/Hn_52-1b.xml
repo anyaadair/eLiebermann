@@ -6,6 +6,7 @@
         <title>Hn 52.1b</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">573–574</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -52,6 +54,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="Hn_52-1b.lnote.oe.58" n="58" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">573</biblScope></bibl><seg type="original" xml:lang="de">emend. <hi rend="italic">Hss.; gebessert aus</hi> 48, 2 [<hi rend="italic">dieselbe Verderbniss</hi> 59, 4<hi rend="italic">a.</hi> 66, 7]</seg><seg type="translation" xml:lang="en" source="#claude">emend. MSS; corrected from 48, 2 [the same corruption 59, 4a. 66, 7]</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_52-1b.lnote.oe.a" n="a" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">574</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">behufs Rathsertheilung; vgl.</hi> 61, 14</seg><seg type="translation" xml:lang="en" source="#claude">for the purpose of giving counsel; cf. 61, 14</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_52-1b.lnote.oe._" n="-" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">323</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Vassallität 18a; Ungehorsam 18—<hi rend="italic">emend</hi>.{58}—52, 1c <hi rend="italic">iust. negauerit</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf. Gl</hi> Vassallität 18a; Ungehorsam 18—<hi rend="italic">emend</hi>.{58}—52, 1c <hi rend="italic">iust. negauerit</hi> Rs</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">If he had been lawfully summoned for it, and a day of compensation or of clearance set, on that very day he must, if the justice compels, answer or lose, whether he has his lord [with him] or has not.</ab>
       </div>
     </body>
   </text>

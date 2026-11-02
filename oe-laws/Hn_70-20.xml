@@ -6,6 +6,7 @@
         <title>Hn 70.20</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">589</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -53,6 +55,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="Hn_70-20.lnote.oe.31" n="31" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">589</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">so K;</hi> aut <hi rend="italic">übrige</hi></seg><seg type="translation" xml:lang="en" source="#claude">so K; aut the rest</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_70-20.lnote.oe.32" n="32" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">589</biblScope></bibl><seg type="original" xml:lang="de">desinunt <hi rend="italic">Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">desinunt Lond</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_70-20.lnote.oe.a" n="a" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">325</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Ebd</hi>. Erbgang 23. a; Aszendentenfolge ist nicht im Normann. Rechte und noch bei Glanvilla nicht kraft festen Grundsatzes ausgeschlossen; Brunner <hi rend="italic">Agnorm. Erbfolge</hi> 22; in den Nachlass Kinderloser sukzedieren Aszendenten unter Ausschluss der ihnen erst nachstehenden Geschwister im Schwed. Rechte; Fritz <hi rend="italic">Gesetzl. Verwandt</hi>. in <hi rend="italic">Sav. Zs. RG., Germ</hi>. 36, 149</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Ibid</hi>. Erbgang 23. a; succession by ascendants is not excluded by any fixed principle in Norman law, nor yet in Glanvilla; Brunner <hi rend="italic">Agnorm. Erbfolge</hi> 22; in Swedish law ascendants succeed to the estate of the childless, to the exclusion of the brothers and sisters, who rank only after them; Fritz <hi rend="italic">Gesetzl. Verwandt</hi>. in <hi rend="italic">Sav. Zs. RG., Germ</hi>. 36, 149</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">If anyone dies without children, let his father or mother succeed to the inheritance, or his brother or sister, if father and mother are lacking.</ab>
       </div>
     </body>
   </text>

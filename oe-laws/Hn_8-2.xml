@@ -6,6 +6,7 @@
         <title>Hn 8.2</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">554</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -58,6 +60,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="Hn_8-2.lnote.oe.16" n="16" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">554</biblScope></bibl><seg type="original" xml:lang="de">pleggio <hi rend="italic">Or</hi></seg><seg type="translation" xml:lang="en" source="#claude">pleggio Or</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_8-2.lnote.oe.17" n="17" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">554</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">verb. vom Corr. aus</hi> uuete <hi rend="italic">Sc</hi></seg><seg type="translation" xml:lang="en" source="#claude">corrected by the corrector from uuete Sc</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_8-2.lnote.oe._" n="-" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">316</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Co. q. causa comm</hi>. Rs, scheint mir besser.—Am Rande: <hi rend="italic">Ut unusquisque XII annorum sit in plegio decim</hi>[<hi rend="italic">ae</hi> oder <hi rend="italic">-ationis</hi>]—<hi rend="italic">et</hi>{15} fehlt besser—<hi rend="italic">uel</hi>{4} fehlt—<hi rend="italic">curat</hi> fehlt Rs.—In Note {<hi rend="italic">ee</hi>} bessere: 6, 1<hi rend="italic">b</hi></seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Co. q. causa comm</hi>. Rs, which seems to me better.—In the margin: <hi rend="italic">Ut unusquisque XII annorum sit in plegio decim</hi>[<hi rend="italic">ae</hi> or <hi rend="italic">-ationis</hi>]—<hi rend="italic">et</hi>{15} omitted, which is better—<hi rend="italic">uel</hi>{4} omitted—<hi rend="italic">curat</hi> omitted Rs.—In note {<hi rend="italic">ee</hi>} correct to: 6, 1<hi rend="italic">b</hi></seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">For it has been established by provident arrangement for the common good that from the twelfth year of his age everyone who cares to be reckoned worthy of wergild or wite or the right of a free man should be both in a hundred and in a tithing or free pledge.</ab>
       </div>
     </body>
   </text>

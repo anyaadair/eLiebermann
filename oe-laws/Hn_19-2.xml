@@ -6,6 +6,7 @@
         <title>Hn 19.2</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">559–560</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -54,6 +56,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="Hn_19-2.lnote.oe.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">560</biblScope></bibl><seg type="original" xml:lang="de">et — dedit <hi rend="italic">überspringt Sc Hg; ohne Hss. setzen nur</hi> sing. et com. <hi rend="italic">hinter</hi> retin. <hi rend="italic">Edd.</hi></seg><seg type="translation" xml:lang="en" source="#claude">Sc Hg skip et — dedit; Edd., without MS authority, place only sing. et com. after retin.</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_19-2.lnote.oe.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">560</biblScope></bibl><seg type="original" xml:lang="de">et comu. <hi rend="italic">Co Or</hi></seg><seg type="translation" xml:lang="en" source="#claude">et comu. Co Or</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_19-2.lnote.oe.a-2" n="a" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">319</biblScope></bibl><seg type="original" xml:lang="de">‘hohe und niedere Gerichtsbarkeit’ Maitland <hi rend="italic">Domesday</hi> 82; auch 21. 25, 1f. steht <hi rend="italic">communis causa</hi> in Ggs. zu Kriminaljustiz. Streiche I S. 560 Anm. <hi rend="italic">a</hi>, obwohl ihrem Inhalt auch Stubbs (<hi rend="italic">Lect</hi>. 158) beistimmt.—<hi rend="italic">et</hi>{3} <hi rend="italic">socnam simul</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude">‘high and low jurisdiction’ Maitland <hi rend="italic">Domesday</hi> 82; in 21. 25, 1f. too, <hi rend="italic">communis causa</hi> stands in contrast to criminal justice. Delete I p. 560 n. <hi rend="italic">a</hi>, although Stubbs (<hi rend="italic">Lect</hi>. 158) also agrees with its content.—<hi rend="italic">et</hi>{3} <hi rend="italic">socnam simul</hi> Rs</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">Of all the lands which the king has in his demesne he likewise has the soke; but of certain (of his) lands he has given the manors, and the soke together, single or joint; of certain lands he has given the manors, but retained the soke for himself.</ab>
       </div>
     </body>
   </text>

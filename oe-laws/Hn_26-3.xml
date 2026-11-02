@@ -6,6 +6,7 @@
         <title>Hn 26.3</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">562</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -57,6 +59,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="Hn_26-3.lnote.oe.24" n="24" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">562</biblScope></bibl><seg type="original" xml:lang="de">-sterio <hi rend="italic">Sc Hg</hi></seg><seg type="translation" xml:lang="en" source="#claude">-sterio Sc Hg</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_26-3.lnote.oe.25" n="25" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">562</biblScope></bibl><seg type="original" xml:lang="de">sais. <hi rend="italic">Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">sais. Lond</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_26-3.lnote.oe.a" n="a" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">320</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vavassor</hi> hier ‘Lehnträger allgemein’; <hi rend="italic">s. Gl</hi> Vassallität 2.—<hi rend="italic">nel</hi>{19} <hi rend="italic">semel</hi>—<hi rend="italic">sais</hi>.{25}—26, 4 <hi rend="italic">sit, si lex an</hi>{26} [für <hi rend="italic">ante?</hi>] <hi rend="italic">r. m. c. fuerit</hi> Rs, als seien zwei fernere Hypothesen der ersten <hi rend="italic">si quis</hi> zu Ende 26, 3 koordiniert</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Vavassor</hi> here ‘holder of a fief in general’; <hi rend="italic">see Gl</hi> Vassallität 2.—<hi rend="italic">nel</hi>{19} <hi rend="italic">semel</hi>—<hi rend="italic">sais</hi>.{25}—26, 4 <hi rend="italic">sit, si lex an</hi>{26} [for <hi rend="italic">ante?</hi>] <hi rend="italic">r. m. c. fuerit</hi> Rs, as though two further hypotheses were coordinated with the first <hi rend="italic">si quis</hi> at the end of 26, 3</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">It is plain, finally, that for such a case a fixed day may not be postponed even once with the vavassor's court left unharmed, nor ought an action of this kind be ended without an officer of the royal power: which [things] are the more to be avoided if anyone has been seised of theft.</ab>
       </div>
     </body>
   </text>

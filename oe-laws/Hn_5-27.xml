@@ -6,6 +6,7 @@
         <title>Hn 5.27</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">551</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -55,6 +57,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="Hn_5-27.lnote.oe.20" n="20" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">551</biblScope></bibl><seg type="original" xml:lang="de">si fuerit <hi rend="italic">ergänzt</hi> [<hi rend="italic">unnöthig</hi>] <hi rend="italic">Thorpe aus Gregor</hi></seg><seg type="translation" xml:lang="en" source="#claude">si fuerit supplied [unnecessarily] by Thorpe from Gregory</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_5-27.lnote.oe.21" n="21" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">551</biblScope></bibl><seg type="original" xml:lang="de">certa <hi rend="italic">Sc;</hi> cerita <hi rend="italic">Hg</hi></seg><seg type="translation" xml:lang="en" source="#claude">certa Sc; cerita Hg</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_5-27.lnote.oe.a" n="a" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">315</biblScope></bibl><seg type="original" xml:lang="de">Aus diesem Zitat schloss man früher, Verf. wolle hiermit Gratian anführen. Schon Somner (bei Wilkins <hi rend="italic">Leg. Anglosax</hi>. 239) bemerkte dagegen, Lanfranc (<hi rend="italic">Epist. ad Herbert</hi>. ed. 1648 p. 313) zitiere Bonifaz III <hi rend="italic">in decretis</hi>. Später verweist Henr. Huntingdon. (III 5 ed. Arnold p. 69) für Augustin und Gregor I. auf <hi rend="italic">decreta</hi>, womit er Gratian nicht meinen kann</seg><seg type="translation" xml:lang="en" source="#claude">It was formerly concluded from this citation that the author meant to cite Gratian here. Somner (in Wilkins <hi rend="italic">Leg. Anglosax</hi>. 239), however, already objected that Lanfranc (<hi rend="italic">Epist. ad Herbert</hi>. ed. 1648 p. 313) cites Boniface III <hi rend="italic">in decretis</hi>. Later Henr. Huntingdon. (III 5 ed. Arnold p. 69) refers, for Augustine and Gregory I, to <hi rend="italic">decreta</hi>, by which he cannot mean Gratian</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">Gregory in the decretals: A priest or deacon or any cleric accused by the people, if there are no certain witnesses to prove the truth of the charge brought, let there be an oath in the midst, and let them bring forward as witness of the purity of his innocence Him to whom all things are naked and open.</ab>
       </div>
     </body>
   </text>

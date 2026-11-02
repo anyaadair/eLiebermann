@@ -6,6 +6,7 @@
         <title>Hn 61.12</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">582</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -49,6 +51,7 @@
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 582 (two independent readings of the page images, differences settled against the page)</note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_61-12.lnote.oe.a" n="a" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">582</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Englisch</hi> 61, 13<hi rend="italic">b</hi></seg><seg type="translation" xml:lang="en" source="#claude">English 61, 13<hi rend="italic">b</hi></seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_61-12.lnote.oe._" n="-" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">324</biblScope></bibl><seg type="original" xml:lang="de">Ergänze laut der folg. sechs Zeilen <hi rend="italic">de feodo; vgl. Gl</hi> Vertreter 11; Grundbesitz 15e—61, 13 <hi rend="italic">potius</hi>{5} fehlt—<hi rend="italic">feudum</hi>—<hi rend="italic">eciam</hi>{7} <hi rend="italic">pl. aliquo c</hi>.—61, 13a <hi rend="italic">est</hi>{11}—61, 13b <hi rend="italic">feudo</hi>—<hi rend="italic">forspecen</hi>{13} <hi rend="italic">n. forspillen</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude">Supply <hi rend="italic">de feodo</hi> in accordance with the following six lines; <hi rend="italic">cf. Gl</hi> Vertreter 11; Grundbesitz 15e—61, 13 <hi rend="italic">potius</hi>{5} missing—<hi rend="italic">feudum</hi>—<hi rend="italic">eciam</hi>{7} <hi rend="italic">pl. aliquo c</hi>.—61, 13a <hi rend="italic">est</hi>{11}—61, 13b <hi rend="italic">feudo</hi>—<hi rend="italic">forspecen</hi>{13} <hi rend="italic">n. forspillen</hi> Rs</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">And no one can rightly lose irrecoverably or forfeit his lord's plea; so let him with whom the case is being pursued see to it, if his opposing party does not come, whom he sends in his place.</ab>
       </div>
     </body>
   </text>

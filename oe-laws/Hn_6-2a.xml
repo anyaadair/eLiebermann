@@ -6,6 +6,7 @@
         <title>Hn 6.2a</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">552</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -55,6 +57,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="Hn_6-2a.lnote.oe.26" n="26" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">552</biblScope></bibl><seg type="original" xml:lang="de">legimus <hi rend="italic">Lond Edd.</hi></seg><seg type="translation" xml:lang="en" source="#claude">legimus Lond edd.</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_6-2a.lnote.oe.27" n="27" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">552</biblScope></bibl><seg type="original" xml:lang="de">fr. <hi rend="italic">Co Or Gi;</hi> frequenteramus <hi rend="italic">K;</hi> cel. <hi rend="italic">Sc Hg</hi></seg><seg type="translation" xml:lang="en" source="#claude">fr. Co Or Gi; frequenteramus K; cel. Sc Hg</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_6-2a.lnote.oe.a" n="a" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">315</biblScope></bibl><seg type="original" xml:lang="de">‘Banngewalt, Befehl im Verwaltungswege’ des Königs (<hi rend="italic">s. d. Gl</hi> 15; Königsgericht 13), nicht bloss (mit Pol Mai I 85f.) Billigkeitsjustiz der Curia regis.—<hi rend="italic">hec</hi>{28}—<hi rend="italic">fr</hi>.{27} <hi rend="italic">adu</hi>. ohne <hi rend="italic">ecl</hi>. Rs</seg><seg type="translation" xml:lang="en" source="#claude">The king’s ‘power of ban, command by administrative process’ (<hi rend="italic">see</hi> that word in <hi rend="italic">Gl</hi> 15; Königsgericht 13), not merely (with Pol Mai I 85f.) equitable jurisdiction of the Curia regis.—<hi rend="italic">hec</hi>{28}—<hi rend="italic">fr</hi>.{27} <hi rend="italic">adu</hi>. without <hi rend="italic">ecl</hi>. Rs</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">besides [this] we name the dread authority of the royal majesty, which we repeatedly (proclaim) is to be heeded as presiding continually and wholesomely over the laws [?].</ab>
       </div>
     </body>
   </text>

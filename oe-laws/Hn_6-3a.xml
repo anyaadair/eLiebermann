@@ -6,6 +6,7 @@
         <title>Hn 6.3a</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">552</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -56,6 +58,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="Hn_6-3a.lnote.oe.30" n="30" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">552</biblScope></bibl><seg type="original" xml:lang="de">-tatis <hi rend="italic">Sc Hg;</hi> -tate <hi rend="italic">Wi</hi></seg><seg type="translation" xml:lang="en" source="#claude">-tatis <hi rend="italic">Sc Hg;</hi> -tate <hi rend="italic">Wi</hi></seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_6-3a.lnote.oe.31" n="31" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">552</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">geänd. vom Corr.</hi> statutibus <hi rend="italic">Sc;</hi> -tutibus <hi rend="italic">Hg</hi></seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">altered by the corrector</hi> statutibus <hi rend="italic">Sc;</hi> -tutibus <hi rend="italic">Hg</hi></seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_6-3a.lnote.oe._" n="-" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">315</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Diversorum comit</hi>[<hi rend="italic">atuum</hi>] <hi rend="italic">sunt iura diuersa</hi> am Rande, spät im 13. Jh.—<hi rend="italic">cupiditatis</hi>{30}—Zu <hi rend="italic">professor</hi>{9} <hi rend="italic">vgl. Gl</hi> Jurist 3b; Gerechtigkeit 10—<hi rend="italic">leg. statibus</hi>: ‘Rechtsverfassung, Gesetzesstand’, nicht (mit Stubbs <hi rend="italic">Lect</hi>. 152) ‘statutes’</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Diversorum comit</hi>[<hi rend="italic">atuum</hi>] <hi rend="italic">sunt iura diuersa</hi> in the margin, late 13th cent.—<hi rend="italic">cupiditatis</hi>{30}—On <hi rend="italic">professor</hi>{9} <hi rend="italic">cf. Gl</hi> Jurist 3b; Gerechtigkeit 10—<hi rend="italic">leg. statibus</hi>: ‘legal constitution, state of the laws’, not (with Stubbs <hi rend="italic">Lect</hi>. 152) ‘statutes’</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">The laws of the shires themselves also often differ from province to province, according as the greed and the detestable malicious efforts of those who profess the law have added more grievous kinds of harm to the legal order.</ab>
       </div>
     </body>
   </text>

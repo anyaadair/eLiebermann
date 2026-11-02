@@ -6,6 +6,7 @@
         <title>Hn 64.6</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">584</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -57,6 +59,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="Hn_64-6.lnote.oe.31" n="31" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">584</biblScope></bibl><seg type="original" xml:lang="de">utrum. sunt <hi rend="italic">Wh Wi</hi></seg><seg type="translation" xml:lang="en" source="#claude">utrum. sunt Wh Wi</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_64-6.lnote.oe.32" n="32" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">584</biblScope></bibl><seg type="original" xml:lang="de">proprior <hi rend="italic">K</hi></seg><seg type="translation" xml:lang="en" source="#claude">proprior K</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_64-6.lnote.oe._" n="-" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">325</biblScope></bibl><seg type="original" xml:lang="de">Anders als <hi rend="italic">o. Gl</hi> Anefang 25. 26 fasst die eine Partei H. Meyer <hi rend="italic">Publizität</hi> 53{8} auf, nämlich als beklagten Besitzer: aber von ihm würde nicht <hi rend="italic">res furtiva dicatur</hi>—<hi rend="italic">sibi</hi>{30} fehlt—64, 6a <hi rend="italic">quaque</hi>{34}—<hi rend="italic">we</hi>.{36} Rs</seg><seg type="translation" xml:lang="en" source="#claude">Unlike <hi rend="italic">Gl</hi> Anefang 25. 26 above, H. Meyer <hi rend="italic">Publizität</hi> 53{8} takes the one party to be the defendant possessor: but of him one would not say <hi rend="italic">res furtiva dicatur</hi>—<hi rend="italic">sibi</hi>{30} missing—64, 6a <hi rend="italic">quaque</hi>{34}—<hi rend="italic">we</hi>.{36} Rs</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">If any persons wish to claim as their own a thing in common, and there are witnesses on both sides, and it is said to be stolen: whoever has the better testimony, let him be nearer to the proof and alone prove with a broken oath that it is his; and let his witnesses confirm it plainly.</ab>
       </div>
     </body>
   </text>

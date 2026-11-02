@@ -6,6 +6,7 @@
         <title>Hn 70.3</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">588</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -56,6 +58,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="Hn_70-3.lnote.oe.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">588</biblScope></bibl><seg type="original" xml:lang="de">cau. <hi rend="italic">Sc Hg</hi>; grau. <hi rend="italic">Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">cau. Sc Hg; grau. Lond</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_70-3.lnote.oe.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">588</biblScope></bibl><seg type="original" xml:lang="de">ueniat <hi rend="italic">Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">ueniat Lond</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_70-3.lnote.oe.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">588</biblScope></bibl><seg type="original" xml:lang="de">re. <hi rend="italic">Sc Hg K; dafür</hi> pa. [<hi rend="italic">wie</hi> 70, 5] <hi rend="italic">Co Or Gi</hi></seg><seg type="translation" xml:lang="en" source="#claude">re. Sc Hg K; instead pa. [as 70, 5] Co Or Gi</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">If the killer's lord neither pays for him, nor has the slave anything to pay with, the lord can let him go, to look out for himself: unless perhaps he is charged while he is with him: if that happens, let him hand him over to those who claim him (the kinsmen) or pay compensation for it.</ab>
       </div>
     </body>
   </text>

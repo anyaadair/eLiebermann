@@ -6,6 +6,7 @@
         <title>Hn 29.1</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">563</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -54,6 +56,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="Hn_29-1.lnote.oe.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">563</biblScope></bibl><seg type="original" xml:lang="de">-ne <hi rend="italic">Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">-ne Lond</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_29-1.lnote.oe.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">563</biblScope></bibl><seg type="original" xml:lang="de">tenent <hi rend="italic">fügt ein, aber vom Corr. unterpunctirt Sc</hi></seg><seg type="translation" xml:lang="en" source="#claude">tenent inserted, but subpuncted by the corrector, Sc</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_29-1.lnote.oe.a-2" n="a" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">320</biblScope></bibl><seg type="original" xml:lang="de">Nicht blosse Freeholders, sondern laut <hi rend="italic">barones</hi>, höhere Klasse; <hi rend="italic">libera</hi> ist (27) mit Gerichtsbarkeit privilegierte <hi rend="italic">terra</hi>; auch spricht von <hi rend="italic">terrarum domini</hi> 29, 1c im selben Sinne: also ‘privilegierte Lehnsträger’.—Stubbs (<hi rend="italic">Lect</hi>. 168) sieht in den Urteilfindern die Vorgänger der Grundbesitzer, auf deren Land später Gerichtsfolge lastete [?], und verbindet sie genetisch [was mir unzulässig scheint] mit der Rügejury in Æthelreds Denalagu. Adams <hi rend="italic">Origin Engl. const</hi>. 353{0} meint grundlos, es handle sich hier nur um ausserordentl. Grafschaftsgericht vor königlichem Reiserichter</seg><seg type="translation" xml:lang="en" source="#claude">Not mere freeholders but, according to <hi rend="italic">barones</hi>, a higher class; <hi rend="italic">libera</hi> (27) is <hi rend="italic">terra</hi> privileged with jurisdiction; 29, 1c also speaks of <hi rend="italic">terrarum domini</hi> in the same sense: hence ‘privileged feudal tenants’. — Stubbs (<hi rend="italic">Lect</hi>. 168) sees in the doomsmen the predecessors of the landowners on whose land suit of court later lay [?], and connects them genetically [which seems to me inadmissible] with the jury of presentment in Æthelred’s Danelaw. Adams <hi rend="italic">Origin Engl. const</hi>. 353{0} holds without grounds that only an extraordinary shire court before a royal itinerant justice is in question here</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">Let the king's judges be the barons of the shire who have free lands in them, by whom the cases of individuals ought to be dealt with by alternate pleading.</ab>
       </div>
     </body>
   </text>

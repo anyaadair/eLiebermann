@@ -6,6 +6,7 @@
         <title>Hn 91.2</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">607</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -56,6 +58,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="Hn_91-2.lnote.oe.19" n="19" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">607</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Punkt Edd.</hi></seg><seg type="translation" xml:lang="en" source="#claude">full stop edd.</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_91-2.lnote.oe.20" n="20" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">607</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">so nochmals</hi></seg><seg type="translation" xml:lang="en" source="#claude">thus again</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_91-2.lnote.oe._" n="-" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">329</biblScope></bibl><seg type="original" xml:lang="de">Am Rande spät: <hi rend="italic">Quoddam genus mirabile de murdro</hi>, wegen Pfändung (<hi rend="italic">Gl</hi> 4b) unreifen Getreides; anders <hi rend="italic">Gl</hi> Ernte 2—<hi rend="italic">et</hi>{14} fehlt—91, 2a <hi rend="italic">et</hi>{21} fehlt—<hi rend="italic">exigatur</hi>—<hi rend="italic">ab hundreto</hi> besser Rs</seg><seg type="translation" xml:lang="en" source="#claude">In the margin, in a late hand: <hi rend="italic">Quoddam genus mirabile de murdro</hi>, on account of the distraint (<hi rend="italic">Gl</hi> 4b) of unripe grain; a different view in <hi rend="italic">Gl</hi> Ernte 2—<hi rend="italic">et</hi>{14} missing—91, 2a <hi rend="italic">et</hi>{21} missing—<hi rend="italic">exigatur</hi>—<hi rend="italic">ab hundreto</hi> better Rs</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">If the murdrum is found in a house or in a courtyard or in an enclosure, when it comes to the aforesaid payment of forty-six marks, first whatever is in that manor, in green and dry corn, in animals and in absolutely everything, let it first be sold, down to the vegetables.</ab>
       </div>
     </body>
   </text>

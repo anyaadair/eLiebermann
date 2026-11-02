@@ -6,6 +6,7 @@
         <title>Hn 48.2</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">571</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -54,6 +56,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="Hn_48-2.lnote.oe.25" n="25" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">571</biblScope></bibl><seg type="original" xml:lang="de">d <hi rend="italic">fügt ein, vom Schreiber unterpunctirt Sc</hi></seg><seg type="translation" xml:lang="en" source="#claude">d inserted by Sc, dotted for deletion by the scribe</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_48-2.lnote.oe.26" n="26" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">571</biblScope></bibl><seg type="original" xml:lang="de">emu. u. <hi rend="italic">nur</hi> [<hi rend="italic">vgl.</hi> 52, 1<hi rend="italic">b.</hi> 59, 4<hi rend="italic">a</hi>] <hi rend="italic">Sc Hg; fehlt übr.;</hi> emu. uel e. sit <hi rend="italic">fehlt Gi</hi></seg><seg type="translation" xml:lang="en" source="#claude">emu. u. only [cf. 52, 1<hi rend="italic">b.</hi> 59, 4<hi rend="italic">a</hi>] Sc Hg; lacking in the rest; emu. uel e. sit lacking Gi</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_48-2.lnote.oe._" n="-" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">323</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Grafschaft 21; Hundred 21a; Vertreter 4f.—<hi rend="italic">seplē</hi> (verlesen aus <hi rend="italic">sepatī</hi>, wie ich emendierte)—<hi rend="italic">spũalit'</hi> (d. i. <hi rend="italic">spiritualiter</hi>) <hi rend="italic">uel sing</hi>.—<hi rend="italic">emu</hi>.{26} <hi rend="italic">uel</hi> fehlt Rs</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf. Gl</hi> Grafschaft 21; Hundred 21a; Vertreter 4f.—<hi rend="italic">seplē</hi> (misread from <hi rend="italic">sepatī</hi>, as I emended)—<hi rend="italic">spũalit'</hi> (i.e. <hi rend="italic">spiritualiter</hi>) <hi rend="italic">uel sing</hi>.—<hi rend="italic">emu</hi>.{26} <hi rend="italic">uel</hi> lacking Rs</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">If a whole shire or hundreds separately are impleaded concerning any matters, and the charge is directed against someone specially or singly, let him ask that he be allowed to have his shire — which is said to be [involved] in the same [charge] — and answer with it, so that, as the charge of all is one, there may be one clearance or compensation.</ab>
       </div>
     </body>
   </text>

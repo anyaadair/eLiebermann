@@ -6,6 +6,7 @@
         <title>Hn 21</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">560</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -60,6 +62,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="Hn_21.lnote.oe.49" n="49" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">560</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">so Sl Tw;</hi> aze. <hi rend="italic">Lond;</hi> acefa. <hi rend="italic">Sc Hg</hi></seg><seg type="translation" xml:lang="en" source="#claude">thus Sl Tw; aze. Lond; acefa. Sc Hg</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_21.lnote.oe.50" n="50" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">560</biblScope></bibl><seg type="original" xml:lang="de">socham <hi rend="italic">Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">socham Lond</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_21.lnote.oe._" n="-" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">319</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Kronprozess 2. 14 ff.; Justizertrag 7a; Halbteilung 1. 2.—Spät. am Rande: <hi rend="italic">Nota, regem correctiones pro transgressionibus factis tam ecclesiasticis personis quam laicis pro parte sibi reservandas</hi> (lies <hi rend="italic">-vare</hi>)—<hi rend="italic">g. a pr̃</hi>. ohne <hi rend="italic">caus</hi>.{47}—<hi rend="italic">socam</hi>{50}—22 <hi rend="italic">De grindeb. et hamsochna</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf. Gl</hi> Kronprozess 2. 14 ff.; Justizertrag 7a; Halbteilung 1. 2.—Later, in the margin: <hi rend="italic">Nota, regem correctiones pro transgressionibus factis tam ecclesiasticis personis quam laicis pro parte sibi reservandas</hi> (read <hi rend="italic">-vare</hi>)—<hi rend="italic">g. a pr̃</hi>. without <hi rend="italic">caus</hi>.{47}—<hi rend="italic">socam</hi>{50}—22 <hi rend="italic">De grindeb. et hamsochna</hi> Rs</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">Of the kinds of cases. There are also, as we have said, certain kinds of cases, dealt with more freely than the singularity set out above [?], in whose compensations the king shares in part, wherever they happen, in divine or secular [matters], over the king's and the church's and the barons' men and masterless men and the poor, whether he has the soke wholly or in part: among which are adultery; homicide done in a church; breach of the peace or of [holy] orders or of Christianity or of lawfulness, if it is necessary to compel by worldly power that right be done.</ab>
       </div>
     </body>
   </text>

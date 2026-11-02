@@ -6,6 +6,7 @@
         <title>Hn 9.4a</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">555</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -59,6 +61,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="Hn_9-4a.lnote.oe.25" n="25" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">555</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">verb. vom Corr. aus</hi> quidem <hi rend="italic">Sc</hi></seg><seg type="translation" xml:lang="en" source="#claude">corrected by the corrector from quidem Sc</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_9-4a.lnote.oe.26" n="26" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">555</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">übergeschr. vom Corr. Sc</hi></seg><seg type="translation" xml:lang="en" source="#claude">written above by the corrector in Sc</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_9-4a.lnote.oe.a" n="a" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">317</biblScope></bibl><seg type="original" xml:lang="de">Übertragung des Prozesses an anderes Gericht vermutet Maitland <hi rend="italic">Domesday</hi> 292 schon in Mercischen Urkk. 9. Jhs. hinter dem Worte <hi rend="italic">vicissitudo</hi>, das ich aber = <hi rend="italic">vicis</hi> ‘Mal’ übersetze.—Vielleicht ist der ‘äussere Umstand’ hier die Zuständigkeit der privaten Gerichtsbarkeit (<hi rend="italic">s. d. Gl</hi> 37 ff.), der ‘innere’ das Benehmen der Parteien im Prozess.—<hi rend="italic">multis a. intrincecis</hi>{20} <hi rend="italic">a. extrincecis</hi> ohne <hi rend="italic">modis</hi>—<hi rend="italic">causancium</hi>{22} Rs</seg><seg type="translation" xml:lang="en" source="#claude">Maitland (<hi rend="italic">Domesday</hi> 292) suspects the transfer of a case to another court already in Mercian charters of the 9th cent., behind the word <hi rend="italic">vicissitudo</hi>, which, however, I translate = <hi rend="italic">vicis</hi> ‘time, occasion’.—Perhaps the ‘external circumstance’ here is the competence of private jurisdiction (<hi rend="italic">see</hi> that word in <hi rend="italic">Gl</hi> 37 ff.), the ‘internal’ one the conduct of the parties in the suit.—<hi rend="italic">multis a. intrincecis</hi>{20} <hi rend="italic">a. extrincecis</hi> without <hi rend="italic">modis</hi>—<hi rend="italic">causancium</hi>{22} Rs</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">They pass, however, in many ways, some by intrinsic, some by extrinsic accidents, according to the diligence or ignorance of the parties, according to the soke of the lords, which some have on their own land over their own men, some over their own men and strangers, whether in all or in certain cases.</ab>
       </div>
     </body>
   </text>

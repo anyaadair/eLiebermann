@@ -6,6 +6,7 @@
         <title>Hn 24.1</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">561</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -54,6 +56,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="Hn_24-1.lnote.oe.47" n="47" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">561</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">besser zu streichen;</hi> et si quid <hi rend="italic">Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">better deleted; et si quid Lond</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_24-1.lnote.oe.48" n="48" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">561</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">so Co Or;</hi> habuit <hi rend="italic">übr.</hi></seg><seg type="translation" xml:lang="en" source="#claude">so Co Or; habuit the others</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_24-1.lnote.oe._" n="-" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">320</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. o</hi>. 20, 3; <hi rend="italic">fortasse</hi>: ‘eventuell’—<hi rend="italic">fischalis</hi>{46}—<hi rend="italic">et</hi>{47} <hi rend="italic">si quid p</hi>.—<hi rend="italic">n</hi>.{37} <hi rend="italic">f</hi>. ohne <hi rend="italic">enim</hi>—<hi rend="italic">habuit</hi>{48} Rs</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf. above</hi> 20, 3; <hi rend="italic">fortasse</hi>: ‘possibly’—<hi rend="italic">fischalis</hi>{46}—<hi rend="italic">et</hi>{47} <hi rend="italic">si quid p</hi>.—<hi rend="italic">n</hi>.{37} <hi rend="italic">f</hi>. without <hi rend="italic">enim</hi>—<hi rend="italic">habuit</hi>{48} Rs</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">Over barons having their soke the judge of fiscal justice has the observance of the law, and whatever wrong is done against their person; for no one will have the forfeiture of [an offence against] himself, but perhaps his lord.</ab>
       </div>
     </body>
   </text>

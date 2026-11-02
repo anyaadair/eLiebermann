@@ -6,6 +6,7 @@
         <title>Hn 11.3</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">557</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -49,6 +51,7 @@
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 557 (two independent readings of the page images, differences settled against the page)</note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_11-3.lnote.oe.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">557</biblScope></bibl><seg type="original" xml:lang="de">Romescot <hi rend="italic">im</hi> 13. <hi rend="italic">Jh. am Rande Sc, roth am Rande Hg</hi></seg><seg type="translation" xml:lang="en" source="#claude">Romescot <hi rend="italic">in the margin in the</hi> 13th <hi rend="italic">cent. Sc, in red in the margin Hg</hi></seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_11-3.lnote.oe.6" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">557</biblScope></bibl><seg type="original" xml:lang="de">Romfeac <hi rend="italic">Lond;</hi> Romfeath <hi rend="italic">Wh;</hi> Romfeoh <hi rend="italic">Wi;</hi> Romfeah <hi rend="italic">Sp.</hi></seg><seg type="translation" xml:lang="en" source="#claude">Romfeac <hi rend="italic">Lond;</hi> Romfeath <hi rend="italic">Wh;</hi> Romfeoh <hi rend="italic">Wi;</hi> Romfeah <hi rend="italic">Sp.</hi></seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat"><hi rend="italic">Romefech</hi> (Rome-fee, Peter's Pence) ought to be paid on the feast of St Peter ad Vincula.</ab>
       </div>
     </body>
   </text>
