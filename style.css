@@ -982,6 +982,15 @@ a.chip { text-decoration: none; display: inline-block; }
 .fw-dedication { margin-top: 1.5rem; }
 .fw-epigraph { text-align: right; font-size: 0.95rem !important; }
 .fw-centred { text-align: center; }
+/* a verse set as in the print: the block centred on the page, its lines flush left, the attribution
+   on the line below, starting where the last line ends (foreword-vol3-widmung.html) */
+.fw-poem { text-align: center; }
+.fw-poem__block { display: inline-block; text-align: left; }
+.fw-poem__block p { margin: 0 0 0.6rem; }
+.fw-poem__date { text-align: center; }
+.fw-poem__spacer { visibility: hidden; }
+.fw-poem__by { white-space: nowrap; }
+.fw-poem__note { text-align: left; font-size: 0.9rem; color: var(--muted); margin-top: 1rem !important; }
 .fw-signoff { margin-top: 0.8rem; }
 .fw-parallel sup.fn a { text-decoration: none; font-family: var(--sans); font-size: 0.75em; padding: 0 0.1em; }
 .fw-parallel sup.fn a:target, .fw-parallel :target { background: var(--highlight); }
