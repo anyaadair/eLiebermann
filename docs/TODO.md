@@ -79,3 +79,7 @@ Waiting for Anya's go-ahead (see the comment on suggestion #31).
 ## "Cons" unlinked in about 180 entries
 
 - [ ] Liebermann's "Cons" after a citation (for example "Hu 8 Cons", "II Cn 45,3 Cons") means the Consiliatio Cnuti's text of that passage. It is linked in *purgamen* (pull request #152) but is plain text in about 180 other entries, while "In" (Instituta) is linked everywhere. Link them all to the Consiliatio Cnuti, as "In" is, and check that the citations around them still link.
+
+## Leges Henrici: manuscript list
+
+- [ ] The Hn clause files list only "Lat" as a witness, so the law-code page shows no Leges Henrici manuscripts, though Liebermann's notes cite many. Add his Hn manuscripts (Gesetze I p. 547 and his notes) to the files' witness lists, so they appear on the page (pull request #189 shows only manuscripts the files list).
