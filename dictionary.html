@@ -1,6 +1,7 @@
 ---
 title: Dictionary
 section: dictionary
+full_width: true
 description: Browse and search the entries of Liebermann's Wörterbuch.
 scripts:
   - "ROOT/scripts/eliebermann.js"
@@ -8,20 +9,49 @@ scripts:
 ---
 {%- assign entry_files = site.static_files | where_exp: "f", "f.path contains '/entries/'" | where: "extname", ".xml" -%}
 
+<div class="laws-layout">
+<aside class="laws-panel" id="dict-panel" aria-label="Search the dictionary">
+    <h2 class="laws-panel__title">Search the dictionary</h2>
+
+    <div class="panel-sec" role="search">
+        <label class="sidebar-label" for="q">Search by Headword</label>
+        <div class="sidebar-search"><input type="search" id="q" data-suggest placeholder="e.g. bocland" autocomplete="off"></div>
+        <div class="panel-check"><label><input type="checkbox" id="fulltext"> Also search Liebermann's text</label></div>
+    </div>
+
+    <div class="panel-sec">
+        <h2 class="sidebar-label">Dictionary and Guides</h2>
+        <ul class="sidebar-links">
+            <li><a href="guide.html" target="_blank" rel="noopener">How to read an entry&nbsp;<span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="lawAbb.html" target="_blank" rel="noopener">Law code abbreviations&nbsp;<span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="msAbb.html" target="_blank" rel="noopener">Manuscripts&nbsp;<span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="gramAbb.html" target="_blank" rel="noopener">Grammatical terms&nbsp;<span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="bibAbb.html" target="_blank" rel="noopener">Authors and works cited&nbsp;<span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></li>
+        </ul>
+    </div>
+
+    <div class="panel-sec">
+        <h2 class="sidebar-label">The Laws</h2>
+        <ul class="sidebar-links">
+            <li><a href="laws.html" target="_blank" rel="noopener">Law codes by king and&nbsp;code&nbsp;<span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="subjects.html" target="_blank" rel="noopener">Law codes by subject&nbsp;<span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></li>
+        </ul>
+    </div>
+</aside>
+
+<div class="laws-main">
 <h1>Dictionary</h1>
 
-<p class="lede">Entries from the <em>Wörterbuch</em>, volume 2 of Liebermann's <cite>Die Gesetze der Angelsachsen</cite>. Search headwords and Liebermann's text, or browse by letter.</p>
+<p class="lede">Entries from the <em>Wörterbuch</em>, volume 2 of Liebermann's <cite>Die Gesetze der Angelsachsen</cite>. Search headwords and Liebermann's text with the panel on the left, or browse by letter.</p>
 
-<div class="search-bar" role="search">
-    <input type="search" id="q" data-suggest placeholder="Search headwords, e.g. bocland" aria-label="Search the dictionary">
-    <label class="small" style="align-self:center; font-weight:400"><input type="checkbox" id="fulltext"> Also search Liebermann's text</label>
-</div>
 <div class="kind-pills" id="kinds" aria-label="Kinds of entry to show"></div>
 
 <ul class="letter-index" id="letters"></ul>
 <p id="count" class="muted small"></p>
 <div id="results"><p class="loading">Loading entries…</p></div>
-<button type="button" class="to-top" id="to-top" aria-label="Back to the search box at the top of the page"><span aria-hidden="true">↑</span> Back to search</button>
+<button type="button" class="to-top" id="to-top" aria-label="Back to the letters at the top of the page"><span aria-hidden="true">↑</span> Back to top</button>
+</div>
+</div>
 
 <script>
 // File names in entries/, listed when the site was built. Used if
@@ -124,20 +154,15 @@ const ENTRY_FILES = [{% for f in entry_files %}"{{ f.basename }}"{% unless forlo
     q.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(update, 150); });
     fulltext.addEventListener('input', update);
 
-    // "Back to search": shown once the search box and the letters have scrolled
-    // out of view (e.g. down in R or S); takes you back to the top and puts the
-    // cursor in the search box (only with a mouse, so a phone's keyboard does not pop up).
+    // "Back to top": shown once the letters have scrolled out of view (e.g. down in R or S);
+    // takes you back to the top of the list. (The search box is in the panel on the left.)
     const toTop = document.getElementById('to-top');
-    const searchBar = document.querySelector('.search-bar');
     const letterIndex = document.getElementById('letters');
     if ('IntersectionObserver' in window) {
-        const seen = new Set();
         const watch = new IntersectionObserver(items => {
-            items.forEach(i => { if (i.isIntersecting) seen.add(i.target); else seen.delete(i.target); });
-            const past = searchBar.getBoundingClientRect().bottom < 0;
-            toTop.classList.toggle('is-shown', !seen.size && past);
+            items.forEach(i => toTop.classList.toggle('is-shown', !i.isIntersecting && i.boundingClientRect.bottom < 0));
         });
-        [searchBar, letterIndex].forEach(el => watch.observe(el));
+        watch.observe(letterIndex);
     } else {
         const check = () => toTop.classList.toggle('is-shown', letterIndex.getBoundingClientRect().bottom < 0);
         addEventListener('scroll', check, { passive: true });
@@ -146,8 +171,7 @@ const ENTRY_FILES = [{% for f in entry_files %}"{{ f.basename }}"{% unless forlo
         const smooth = !matchMedia('(prefers-reduced-motion: reduce)').matches;
         if (location.hash) history.replaceState(null, '', location.pathname + location.search);
         window.scrollTo({ top: 0, behavior: smooth ? 'smooth' : 'auto' });
-        if (matchMedia('(pointer: fine)').matches) q.focus({ preventScroll: true });
-        else toTop.blur();
+        toTop.blur();
     });
 
     fetch(root + 'data/entries.json')
