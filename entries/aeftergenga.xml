@@ -28,6 +28,7 @@
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
       <change when="2026-10-18">Abbreviations and law code (Norðleod) linked; see the pull request “þæt: indecl., Einl., Folg., Urkk.-Sprache, Norðleod”.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E01747; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -43,6 +44,7 @@
         </dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/465">æfter-genga</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/37690">æfter-genga (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E01747">æfter-genga</ref></xr>
         <xr type="lawCode"><ref target="clause:Northleoda_11">Norðleod 11</ref></xr>
         <xr type="lawCode"><ref target="clause:VAtr_32-3">V Atr 32,3</ref></xr>
       </entry>

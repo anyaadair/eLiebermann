@@ -29,6 +29,7 @@
       <change when="2026-10-17">Marked as a spelling entry.</change>
       <change when="2026-10-28">Bosworth-Toller link added (Anya Adair).</change>
       <change when="2026-10-28">Links: ablendan, lenden(-), nemnan, utoðberstan, geeahtian, freondleast, sceapætere, wiernan, wiernung, unliegne, healm; editor’s note on healm (Anya Adair).</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E01603; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -133,6 +134,7 @@
         <xr type="see"><ref target="entry:tieman">tieman</ref></xr>
         <xr type="compare"><ref target="entry:Umlaut">Umlaut</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/306">æ</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E01603">ǣ-</ref></xr>
       </entry>
     </body>
   </text>

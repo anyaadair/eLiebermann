@@ -29,6 +29,7 @@
       <change when="2026-10-13">Corrected the typing slip “Espisc” to Episc, as in the team transcription (A - boc.docx).</change>
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
       <change when="2026-10-17">“statt”, “regiert (von)”, “unsyntakt.” and the Accusativ terms linked to the abbreviations list.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E00040; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -48,6 +49,7 @@
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/39180">áþ (Supplement)</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/61314">áþ (Supplement)</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/11">aaþ</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E00040">āþ</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_35">Ine 35</ref></xr>
         <xr type="lawCode"><ref target="clause:Wi_21">Wi 21</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_15-1">Ine 15,1</ref></xr>

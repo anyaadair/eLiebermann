@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E01946; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,7 @@
           <orth>ærende</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">ærende</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>, Auftrag</hi> <ref type="lawCode" target="law:Gethinctho">Geþyncðo</ref> 3 <ref type="lawCode" target="law:H">H</ref> | <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>:</hi> ~ <hi rend="italic">Geschäft</hi> <ref type="lawCode" target="law:IICn">II Cn</ref> 75 | <hi rend="italic"><ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref> <ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>:</hi> ~dan <ref type="lawCode" target="law:Gethinctho">Geþyncðo</ref> 3</dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E01946">ǣrende</ref></xr>
         <xr type="lawCode"><ref target="clause:Gethyn_3">Geþyncðo 3</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_75">II Cn 75</ref></xr>
       </entry>

@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E01998; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,7 @@
           <orth>ætbregdan</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">ætbregdan</hi> <hi rend="italic">wegnehmen;</hi> 3: þe (<hi rend="italic"><ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref></hi>) mon orf ~ryideð <ref type="lawCode" target="law:Swer">Swer</ref> 3 <ref type="lawCode" target="law:Rb">Rb</ref> <ref type="lawCode" target="law:B">B</ref> | <hi rend="italic"><ref type="abbreviation" target="gram:Praeteritum"><abbr>ptt</abbr></ref> <ref type="abbreviation" target="gram:Particip"><abbr>pc</abbr></ref> <ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref>:</hi> dælas bið ~rædene <ref type="lawCode" target="law:IAs">I As</ref> 3 <ref type="lawCode" target="law:Ld">Ld</ref>; beniman <ref type="lawCode" target="law:D">D</ref> <ref type="lawCode" target="law:G">G</ref></dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E01998">æt-bregdan</ref></xr>
         <xr type="lawCode"><ref target="clause:Swer_3">Swer 3</ref></xr>
         <xr type="lawCode"><ref target="clause:IAs_3">I As 3</ref></xr>
       </entry>

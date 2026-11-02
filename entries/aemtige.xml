@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E01880; guessed from the DOE headword list, same as the Bosworth-Toller headword; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -37,6 +38,7 @@
         <dictScrap type="liebermann"><hi rend="bold">æmtige</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:adjektiv"><abbr>adj</abbr></ref> <ref type="abbreviation" target="gram:femininum"><abbr>fm</abbr></ref> <ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>, Ledige</hi> <ref type="lawCode" target="law:IICn">II Cn</ref> 50,1; em~ <ref type="lawCode" target="law:B">B</ref> <ref type="lawCode" target="law:MsA">A</ref></dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/670">æmtig</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/9376">emtig</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E01880">ǣmtig</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_50-1">II Cn 50,1</ref></xr>
       </entry>
     </body>

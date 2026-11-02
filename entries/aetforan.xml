@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E02026; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -41,6 +42,7 @@
           <sense n="2"><hi rend="italic">in Gegenwart von</hi> hlaforde <ref type="lawCode" target="law:IICn">II Cn</ref> 78; tof~ <ref type="lawCode" target="law:Ld">Ld</ref></sense>
         </dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/916">æt-foran</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E02026">æt-foran</ref></xr>
         <xr type="lawCode"><ref target="clause:Wi_18">Wi 18</ref></xr>
         <xr type="lawCode"><ref target="clause:VIIaAtr_6-3">VIIa Atr 6,3</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_78">II Cn 78</ref></xr>

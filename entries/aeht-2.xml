@@ -25,6 +25,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E01805; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -34,6 +35,7 @@
           <orth>æht</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">æht</hi> <hi rend="italic">Schätzung <ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> eaht</dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E01805">ǣht</ref></xr>
       </entry>
     </body>
   </text>

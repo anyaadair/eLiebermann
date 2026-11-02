@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">“In Cn” and “In” (Instituta Cnuti) linked to the law codes list.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E01750; guessed from the DOE headword list, spelling variant (i/y/ie, double letters, -ian/-an); not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -40,6 +41,7 @@
         <xr type="compare"><ref target="entry:prosoluta">prosoluta</ref></xr>
         <xr type="compare"><ref target="entry:parsoudrad">parsoudrad</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/467">æfter-gild</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E01750">æfter-gyld</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_24-1">II Cn 24,1</ref></xr>
         <xr type="lawCode"><ref target="clause:ECf_26-2">ECf 26,2</ref></xr>
       </entry>

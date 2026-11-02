@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E01602; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,7 @@
           <orth>ænote</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">ænote</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:neutrum"><abbr>nt</abbr></ref> <ref type="abbreviation" target="gram:praedicativ"><abbr>praed</abbr></ref>, unbrauchbar</hi> <ref type="lawCode" target="law:VIAtr">VI Atr</ref> 34</dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E01602">ǣ-note</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAtr_34">VI Atr 34</ref></xr>
       </entry>
     </body>

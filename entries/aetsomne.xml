@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E02070; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">ætsomne</hi> <hi rend="italic">beisammen</hi> <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:El">El</ref> 49,1.</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/1001">æt-somne</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E02070">æt-somne</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_El-to-49-1">Af El 49,1</ref></xr>
       </entry>
     </body>

@@ -3,18 +3,23 @@
 python3 tools/doe/build.py out.json tools/doe/page-template.html doe-matches.html
 
 Cross-reference entries are left out: they only point to another headword,
-which carries the links (as with Bosworth-Toller).
+which carries the links (as with Bosworth-Toller). Entries that already
+have a DOE link are left out too.
 """
 import json, sys
-R = json.load(open(sys.argv[1], encoding='utf-8'))['results']
+D = json.load(open(sys.argv[1], encoding='utf-8'))
+R = D['results']
 rows = []
 for r in R:
-    if r['xref']:
-        continue
+    if r['xref'] or r['existing']:
+        continue  # already linked on the site (by hand, or in an earlier round)
+    if r['grade'] == 'none' and r['headword'].lstrip('[(').strip()[:1].isupper():
+        continue  # names: the DOE has no entries for them (Anya, Nov 2026)
     rows.append({'e': r['id'], 'hw': r['headword'], 's': r['snippet'], 'g': r['grade'], 't': r['how'],
                  'x': r['existing'], 'b': sorted(set(r['bt']))[:6],
                  'o': [{'id': c['id'], 'hw': c['headword']} for c in r['candidates']][:8]})
 d = json.dumps(rows, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
 t = open(sys.argv[2], encoding='utf-8').read()
+t = t.replace('__FROM__', D['span'][0]).replace('__TO__', D['span'][1])
 open(sys.argv[3], 'w', encoding='utf-8').write(t.replace('__DATA__', d))
 print(len(rows), 'rows,', len(d) // 1000, 'KB')

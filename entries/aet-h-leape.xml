@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E02045; guessed from the DOE headword list, same as the Bosworth-Toller headword; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">æt[h]leape</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Optativ"><abbr>op</abbr></ref></hi> 3, ut ætleape <hi rend="italic">entflieht, entspringt</hi> <ref type="lawCode" target="law:IICn">II Cn</ref> 31,1 <ref type="lawCode" target="law:B">B</ref>; oðhl~ <ref type="lawCode" target="law:G">G</ref>; hleape <ref type="lawCode" target="law:MsA">A</ref></dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/961">æt-hleápan</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E02045">æt-hlēapan</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_31-1">II Cn 31,1</ref></xr>
       </entry>
     </body>
