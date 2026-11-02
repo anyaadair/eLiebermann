@@ -6,6 +6,7 @@
         <title>Duel 3.1</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">431</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr> <note type="manuscript">Latin text as edited by Liebermann from several manuscripts (see his notes) (Tr, Mg, Hm)</note></witness>
@@ -52,6 +54,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="Duel_3-1.lnote.oe.6" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">431</biblScope></bibl><seg type="original" xml:lang="de">t. c. <hi rend="italic">Tr Mg</hi></seg><seg type="translation" xml:lang="en" source="#claude">t. c. Tr Mg</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Duel_3-1.lnote.oe.7" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">431</biblScope></bibl><seg type="original" xml:lang="de">et f. et S. s. A. <hi rend="italic">fehlt Ta Gl</hi></seg><seg type="translation" xml:lang="en" source="#claude">et f. et S. s. A. missing in Ta Gl</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Duel_3-1.lnote.oe.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">431</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Mg</hi></seg><seg type="translation" xml:lang="en" source="#claude">omitted in Mg</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">Receive this shield for the protection of your body, in the name of the Father and of the Son and of the Holy Spirit! Amen.</ab>
       </div>
     </body>
   </text>

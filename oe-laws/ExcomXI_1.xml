@@ -6,6 +6,7 @@
         <title>Excom XI 1</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">441</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-vu"><abbr>Vu</abbr> <note type="manuscript">London, British Library, Cotton MS Vitellius E XVII, f. 252v, 14th century</note></witness>
@@ -54,6 +56,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ExcomXI_1.lnote.oe.g" n="g" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">441</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">diese kommt erst in den spätesten Angelsächsischen Kalendern vor; Piper</hi> Kalend. 68. 78. 82</seg><seg type="translation" xml:lang="en" source="#claude">she appears only in the latest Anglo-Saxon calendars; Piper Kalend. 68. 78. 82</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ExcomXI_1.lnote.oe.h" n="h" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">441</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vgl.</hi> VI 1, 5</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">cf.</hi> VI 1, 5</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ExcomXI_1.lnote.oe.i" n="i" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">441</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vgl.</hi> I 11, 1 <hi rend="italic">f.</hi></seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">cf.</hi> I 11, 1 <hi rend="italic">f.</hi></seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-vu">By the authority of God, the Father and the Son and the Holy Spirit, and also of Saint Mary, Mother of God and of our Lord Jesus Christ, and of Saint Michael and of the holy angels and archangels, and of Saint Peter and Paul and of the holy apostles, and of Saint Stephen and of the holy martyrs, and of Saint Martin and of the holy confessors, and of Saint Mary Magdalene and of Saint Katherine and of all the holy virgins, and of all the saints of God</ab>
       </div>
     </body>
   </text>

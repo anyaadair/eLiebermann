@@ -7,6 +7,7 @@
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Cross-references to other clauses</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -23,6 +24,7 @@
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">612</biblScope></bibl>
           <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Instituta Cnuti, relatively literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. Liebermann’s kinds of type (bold, spaced, smaller type, round brackets) are carried over onto the English words that render the marked Latin. It is an aid to reading the Latin, not a published translation</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -68,6 +70,8 @@
         <note type="liebermannNote" subtype="textual" xml:id="InCn_Inscr.lnote.oe.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">612</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Überschrift von mir erfunden</hi></seg><seg type="translation" xml:lang="en" source="#claude">Heading invented by me</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="InCn_Inscr.lnote.oe.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">612</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Inscriptio fehlt Rl T; statt des Anfangs setzt den Prolog der</hi> Consiliatio Cnuti (<hi rend="italic">s. o. Anm. a</hi>) <hi rend="italic">Cb</hi></seg><seg type="translation" xml:lang="en" source="#claude">Inscriptio missing in Rl T; in place of the beginning Cb puts the prologue of the Consiliatio Cnuti (see above note a)</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="InCn_Inscr.lnote.oe._" n="-" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">332</biblScope></bibl><seg type="original" xml:lang="de">Zur Überschrift des Ip Hunt <hi rend="italic">s. Gl</hi> Denalagu 3; <hi rend="italic">o</hi>. Einl. 5. 8</seg><seg type="translation" xml:lang="en" source="#claude">On the heading of the Ip Hunt see <hi rend="italic">Gl</hi> Denalagu 3; <hi rend="italic">above</hi> Introduction 5. 8</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-hdi">Here begin <hi rend="spaced">certain</hi> institutes concerning the laws of the kings of the English (<hi rend="italic">H</hi>; <hi rend="spaced">institutes according to King Cnut</hi> of the English <hi rend="italic">Di</hi>).</ab>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-iphunt">Here begins <hi rend="spaced">the law which in English is called <hi rend="italic">Danelage</hi>, but in Latin is rendered as the law of the Danes,</hi> instituted and diligently kept <hi rend="spaced">by the most invincible and glorious</hi> <hi rend="small">king of the English, Danes, Norwegians, Swedes</hi>, Cnut.</ab>
       </div>
     </body>
   </text>

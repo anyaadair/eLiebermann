@@ -6,6 +6,7 @@
         <title>Iud Dei VII 13A</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">413–414</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Old English text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -67,6 +69,8 @@
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiVII_13A.lnote.oe.3-3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">414</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">folgt Lateinisch</hi> De reliquiis <hi rend="italic">Vt</hi></seg><seg type="translation" xml:lang="en" source="#claude">followed by the Latin De reliquiis Vt</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiVII_13A.lnote.oe.4-2" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">414</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">übergeschr.</hi></seg><seg type="translation" xml:lang="en" source="#claude">written above</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiVII_13A.lnote.oe.5-2" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">414</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">für</hi> drihtnes <hi rend="italic">auch</hi> 23, 2 <hi rend="italic">A; Sievers</hi> § 196, 3</seg><seg type="translation" xml:lang="en" source="#claude">for drihtnes; also 23, 2 A; Sievers § 196, 3</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromOldEnglish" corresp="#wit-ci">I adjure you (pl.) by the Father and Son and the Holy Spirit, and by your (pl.) Christianity which you received (pl.), and by the only-begotten Son of God, and by the holy Trinity, and by the holy gospel of God, and by the holy relics which are within this church, and by the baptism by which the mass-priest regenerated you (pl.), that you (pl.) in no way presume (pl.) to go to this housel, nor even to approach this altar, if you (pl.) did this (pl.) which we are concerned with, or if you (pl.) consented (pl.) to it or knew (pl.) who (who it [?]) did it.</ab>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromOldEnglish" corresp="#wit-vt">I adjure you (pl.) by the Father and by the . . . and by the holy . . . and by your Chri . . ., . . you received (pl.), and by the only-begot . . . . . . and by the holy . . . . . and by the holy gospel of God and by the h . . . . . . ., which are within this church, and b . . . . . baptism by which the mass-priest regenerated you, that you (pl.) in no way presume (pl.) to go to this housel, nor even approach (pl.) this altar, if you (pl.; or sg.) did this (pl.; or sg.) which we are concerned with, or if you (pl.) knew (pl.) who did it.</ab>
       </div>
     </body>
   </text>

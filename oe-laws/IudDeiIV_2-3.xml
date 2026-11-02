@@ -6,6 +6,7 @@
         <title>Iud Dei IV 2.3</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">409</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin and Old English texts, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-du"><abbr>Du</abbr> <note type="manuscript">Durham, Cathedral Library, MS A. IV. 19 (Durham Ritual), f. 48v</note></witness>
@@ -52,6 +54,8 @@
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiIV_2-3.lnote.oe.33" n="33" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">409</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Rune</hi> ᛞ</seg><seg type="translation" xml:lang="en" source="#claude">rune ᛞ</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiIV_2-3.lnote.oe.37" n="37" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">409</biblScope></bibl><seg type="original" xml:lang="de">-tiga <hi rend="italic">Stev.; beides möglich: Lind. S.</hi> 80</seg><seg type="translation" xml:lang="en" source="#claude">-tiga Stev.; both possible: Lind. p. 80</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiIV_2-3.lnote.oe.38" n="38" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">409</biblScope></bibl><seg type="original" xml:lang="de">vs <hi rend="italic">Du</hi> [<hi rend="italic">Stev. las</hi> us']</seg><seg type="translation" xml:lang="en" source="#claude">vs Du [Stev. read us’]</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-du">so that every man may fear and tremble at the holy name of the glory of our Lord, who lives …</ab>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromOldEnglish" corresp="#wit-gl">that every man may dread and be afraid of the holy name of the glory of [our] Lord, he who lives.</ab>
       </div>
     </body>
   </text>

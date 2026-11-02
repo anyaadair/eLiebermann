@@ -6,6 +6,7 @@
         <title>Excom III 2</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">434</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-o"><abbr>O</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 190, p. 364, 11th century</note></witness>
@@ -55,6 +57,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ExcomIII_2.lnote.oe.h" n="h" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">434</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vgl.</hi> V 6. VI 4. X 7. XI 8. <hi rend="italic">Alet Leo Rot;</hi> æterno anathematis vinculo .. Iudæ traditori (<hi rend="italic">vgl.</hi> VII 5) sociatus <hi rend="italic">Engl. Synode a.</hi> 786 <hi rend="italic">c.</hi> 12; Iudas proditor <hi rend="italic">in diesem Zusammenhang auch</hi> Formulæ Flaviniac. II 482</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">cf.</hi> V 6. VI 4. X 7. XI 8. <hi rend="italic">Alet Leo Rot;</hi> æterno anathematis vinculo .. Iudæ traditori (<hi rend="italic">cf.</hi> VII 5) sociatus <hi rend="italic">English synod a.</hi> 786 <hi rend="italic">c.</hi> 12; Iudas proditor <hi rend="italic">in this context also</hi> Formulæ Flaviniac. II 482</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ExcomIII_2.lnote.oe.i" n="i" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">434</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vgl.</hi> V 6. XI 8 <hi rend="italic">Rot</hi></seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">cf.</hi> V 6. XI 8 <hi rend="italic">Rot</hi></seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ExcomIII_2.lnote.oe.k" n="k" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">434</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vgl.</hi> V 6. XI 8</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">cf.</hi> V 6. XI 8</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-o">And may Dathan and Abiram, Herod, Pilate, Judas, Caiaphas, Barabbas, Nero and Simon Magus be their companions in hell,</ab>
       </div>
     </body>
   </text>

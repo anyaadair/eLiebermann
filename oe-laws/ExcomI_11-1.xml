@@ -6,6 +6,7 @@
         <title>Excom I 11.1</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">433</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-ti"><abbr>Ti</abbr> <note type="manuscript">London, British Library, Cotton MS Tiberius C I, f. 197, c. 1075</note></witness>
@@ -57,6 +59,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ExcomI_11-1.lnote.oe.21" n="21" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">433</biblScope></bibl><seg type="original" xml:lang="de">excommunicatoribusque, <hi rend="italic">ohne</hi> et <hi rend="italic">und</hi> fautoribus <hi rend="italic">Ti</hi></seg><seg type="translation" xml:lang="en" source="#claude">excommunicatoribusque, without et and fautoribus Ti</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ExcomI_11-1.lnote.oe.22" n="22" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">433</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Reg</hi></seg><seg type="translation" xml:lang="en" source="#claude">missing in Reg</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ExcomI_11-1.lnote.oe.23" n="23" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">433</biblScope></bibl><seg type="original" xml:lang="de">a. p. <hi rend="italic">Mart</hi></seg><seg type="translation" xml:lang="en" source="#claude">a. p. Mart</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-ti">therefore we, him together with all his accomplices and those who communicate with him and his abettors, by the judgment of God almighty, of the Father and of the Son and of the Holy Spirit, and of blessed Peter, prince of the apostles, and of all the saints, and also by the authority of our lowliness and by the power of binding and loosing in heaven and on earth divinely conferred on us,</ab>
       </div>
     </body>
   </text>

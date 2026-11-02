@@ -6,6 +6,7 @@
         <title>Iud Dei II 3</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">406</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr> <note type="manuscript">Latin text as edited by Liebermann from several manuscripts (see his notes); the manuscripts as for Iudicium Dei I (his note b on p. 401)</note></witness>
@@ -52,6 +54,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiII_3.lnote.oe.49" n="49" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">406</biblScope></bibl><seg type="original" xml:lang="de">Item a. <hi rend="italic">Rj;</hi> a. oratio <hi rend="italic">Ch Co;</hi> Oratio <hi rend="italic">Tr</hi></seg><seg type="translation" xml:lang="en" source="#claude">Item a. Rj; a. oratio Ch Co; Oratio Tr</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiII_3.lnote.oe.50" n="50" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">406</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">c.</hi> 3 <hi rend="italic">stückweise gleich Zeu.</hi> 700 (12). 604. 605. 611<hi rend="italic">d</hi>; <hi rend="italic">unten</hi> IV 4; <hi rend="italic">Vorlage für</hi> X 19—19, 6</seg><seg type="translation" xml:lang="en" source="#claude">c. 3 identical in parts with Zeu. 700 (12). 604. 605. 611<hi rend="italic">d</hi>; below IV 4; model for X 19—19, 6</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiII_3.lnote.oe.51" n="51" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">406</biblScope></bibl><seg type="original" xml:lang="de">mi.—iustum <hi rend="italic">fehlt Ca</hi></seg><seg type="translation" xml:lang="en" source="#claude">mi.—iustum omitted in Ca</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">Another. O God, just judge, strong, author and lover of peace, patient and very merciful, who judge what is just, and your judgment is right;</ab>
       </div>
     </body>
   </text>

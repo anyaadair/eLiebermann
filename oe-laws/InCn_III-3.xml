@@ -6,6 +6,7 @@
         <title>In Cn III 3</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">613</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Instituta Cnuti, relatively literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. Liebermann’s kinds of type (bold, spaced, smaller type, round brackets) are carried over onto the English words that render the marked Latin. It is an aid to reading the Latin, not a published translation</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -58,6 +60,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="InCn_III-3.lnote.oe.15" n="15" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">613</biblScope></bibl><seg type="original" xml:lang="de">-umpn. <hi rend="italic">Cb und spätere Hss. stets;</hi> -tus est <hi rend="italic">S Ct</hi></seg><seg type="translation" xml:lang="en" source="#claude">-umpn. Cb and later M S S throughout; -tus est S Ct</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="InCn_III-3.lnote.oe.16" n="16" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">613</biblScope></bibl><seg type="original" xml:lang="de">ei det p. f. <hi rend="italic">S;</hi> p. f. <hi rend="italic">fehlt Cb</hi></seg><seg type="translation" xml:lang="en" source="#claude">ei det p. f. S; p. f. missing in Cb</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="InCn_III-3.lnote.oe._" n="-" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">332</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Ebd</hi>. Eideshufen 9; Strafgeldfixum 14b; die Busse an den Kläger wechselt nach der Höhe des Schutzes (<hi rend="italic">Gl</hi> 2. 5. 15c), die seinem Stande gebührt</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Ibid</hi>. Eideshufen 9; Strafgeldfixum 14b; the compensation to the plaintiff varies according to the level of protection (<hi rend="italic">Gl</hi> 2. 5. 15c) due to his rank</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat"><hi rend="small">Whoever is accused of <hi rend="italic">hloth</hi> [band], if he denies it, shall clear himself thus:</hi> having taken eleven men, he himself being the twelfth; or he shall pay the accuser's contempt [fine] and give two pounds as forfeiture to him who has his customs.</ab>
       </div>
     </body>
   </text>

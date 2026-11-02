@@ -6,6 +6,7 @@
         <title>Iud Dei XIII 2.1</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">422</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr> <note type="manuscript">Latin text as edited by Liebermann from several manuscripts (see his notes) (Vt2, Tr, Mg)</note></witness>
@@ -53,6 +55,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiXIII_2-1.lnote.oe.10" n="10" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">422</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">aus Mg; fehlt Tr Vt2</hi></seg><seg type="translation" xml:lang="en" source="#claude">from Mg; omitted in Tr Vt2</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiXIII_2-1.lnote.oe.11" n="11" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">422</biblScope></bibl><seg type="original" xml:lang="de">Deo <hi rend="italic">Zeu.</hi> 648</seg><seg type="translation" xml:lang="en" source="#claude">Deo Zeu. 648</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiXIII_2-1.lnote.oe.12" n="12" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">422</biblScope></bibl><seg type="original" xml:lang="de">Sperant <hi rend="italic">ebd.</hi></seg><seg type="translation" xml:lang="en" source="#claude">Sperant ibid.</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">Psalm. <hi rend="italic">Beati immaculati</hi> (‘Blessed are the undefiled’, Ps. 118). <hi rend="italic">In Domino sperauit</hi> (‘He has hoped in the Lord’). Alleluia. <hi rend="italic">Domine Deus salutis</hi> (‘O Lord, the God of my salvation’, Ps. 87). <hi rend="italic">Sperent in te omnes</hi> (‘Let all hope in you’, Ps. 9). <hi rend="italic">Intellige</hi> (‘Understand my cry’, Ps. 5).</ab>
       </div>
     </body>
   </text>

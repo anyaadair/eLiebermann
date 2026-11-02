@@ -6,6 +6,7 @@
         <title>In Cn III 53</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">614</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Instituta Cnuti, relatively literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. Liebermann’s kinds of type (bold, spaced, smaller type, round brackets) are carried over onto the English words that render the marked Latin. It is an aid to reading the Latin, not a published translation</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -53,6 +55,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="InCn_III-53.lnote.oe.g" n="g" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">614</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">d. h. vor</hi> 1066; <hi rend="italic">vgl.</hi> III 53. 57. 60</seg><seg type="translation" xml:lang="en" source="#claude">i.e. before 1066; cf. III 53. 57. 60</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="InCn_III-53.lnote.oe.q" n="q" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">614</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">meint Verf.:</hi> gemischt kirchlich-staatlich <hi rend="italic">wie</hi> III 51, <hi rend="italic">bei Heidenthum</hi> EGu. Pr. 2, <hi rend="italic">Incest</hi> EGu. 4, <hi rend="italic">bei Zehntweigerung</hi> II Eg. 3, 1 (<hi rend="italic">daraus</hi> VIII Atr. 8. 15. 36), adulterium Hn 11, 5? <hi rend="italic">Jedenfalls ist</hi> omnis <hi rend="italic">übertrieben wie</hi> omnia III 57</seg><seg type="translation" xml:lang="en" source="#claude">does the author mean mixed ecclesiastical and secular, as in III 51, in cases of heathenism EGu. Pr. 2, incest EGu. 4, refusal of tithe II Eg. 3, 1 (whence VIII Atr. 8. 15. 36), adulterium Hn 11, 5? In any case omnis is an exaggeration, like omnia III 57</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="InCn_III-53.lnote.oe._" n="-" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">333</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">S. o</hi>. 51; Einl. 14</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">See above</hi> 51; Introduction 14</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">It was an ancient custom that every ecclesiastical and secular amends was common to the king and the bishop.</ab>
       </div>
     </body>
   </text>

@@ -6,6 +6,7 @@
         <title>Iud Dei IV 2.1</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">409</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin and Old English texts, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-du"><abbr>Du</abbr> <note type="manuscript">Durham, Cathedral Library, MS A. IV. 19 (Durham Ritual), f. 48v</note></witness>
@@ -52,6 +54,8 @@
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiIV_2-1.lnote.oe.32" n="32" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">409</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Glossator missversteht</hi> hīc</seg><seg type="translation" xml:lang="en" source="#claude">the glossator misunderstands hīc</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiIV_2-1.lnote.oe.33" n="33" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">409</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Rune</hi> ᛞ</seg><seg type="translation" xml:lang="en" source="#claude">rune ᛞ</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiIV_2-1.lnote.oe.34" n="34" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">409</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">oft</hi> v <hi rend="italic">für</hi> u</seg><seg type="translation" xml:lang="en" source="#claude">often v for u</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-du">that, if this man, who is about to put his hand into you, is innocent of that of which he is accused, the mercy of God almighty may free him;</ab>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromOldEnglish" corresp="#wit-gl">that, if this (lit. 'here') man, [who] is about to send his hand into you, is guiltless of that of which he is accused, the goodness of God almighty may free him;</ab>
       </div>
     </body>
   </text>

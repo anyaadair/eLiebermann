@@ -6,6 +6,7 @@
         <title>Iud Dei V 2.2</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">411–412</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin and Old English texts, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-du"><abbr>Du</abbr> <note type="manuscript">Durham, Cathedral Library, MS A. IV. 19 (Durham Ritual), f. 54</note></witness>
@@ -51,6 +53,8 @@
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 411–412 (two independent readings of the page images, differences settled against the page)</note>
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiV_2-2.lnote.oe.40" n="40" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">411</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">so</hi></seg><seg type="translation" xml:lang="en" source="#claude">sic</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiV_2-2.lnote.oe.41" n="41" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">411</biblScope></bibl><seg type="original" xml:lang="de">uel si <hi rend="italic">fehlt besser I</hi></seg><seg type="translation" xml:lang="en" source="#claude">uel si omitted in I, better</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-du">I adjure you by the holy catholic Church and by the communion of saints and by their resurrection, that you may become exorcised, adjured and made firm against the enemy of man, the devil, and against the man — or if anyone, led astray by him, committed this theft about which inquiry is being made, or was privy to it when committed, or in any way gave consent;</ab>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromOldEnglish" corresp="#wit-gl">I adjure you by the holy faithful (catholic) church and by the communion of the saints and by their resurrection, that you may become removed (i.e. exorcised), adjured and strengthened against the fiend of man, the devil, and against the man, or if anyone, deceived by him, carried out this theft about which inquiry (lit. 'righteousness') is being made, or was aware of it when carried out, or granted consent in any way (or);</ab>
       </div>
     </body>
   </text>

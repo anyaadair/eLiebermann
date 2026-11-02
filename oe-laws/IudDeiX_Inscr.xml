@@ -6,6 +6,7 @@
         <title>Iud Dei X Inscr.</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">417</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr> <note type="manuscript">Latin text as edited by Liebermann from several manuscripts (see his notes) (Al, Ma, Bc)</note></witness>
@@ -50,6 +52,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiX_Inscr.lnote.oe.a" n="a" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">417</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Aus Al Ma Bc. Das Stück ist nicht Angelsächsisch (laut S.</hi> 418{df}), <hi rend="italic">zeigt aber Englische Besonderheiten: vom Festland Abweichendes (vgl.</hi> 21) <hi rend="italic">und mit</hi> I. II. VI <hi rend="italic">Übereinstimmendes; auch gehörte Hs.</hi> Ma <hi rend="italic">im</hi> 12. <hi rend="italic">Jh. England, und</hi> Al <hi rend="italic">schöpfte dorther; s. o. S.</hi> 401{b}. <hi rend="italic">Gedruckt von Zeumer</hi> 717, <hi rend="italic">der</hi> 601{4} <hi rend="italic">diesen Ordo ‘Anglicanum’ nennt.</hi></seg><seg type="translation" xml:lang="en" source="#claude">From Al Ma Bc. The piece is not Anglo-Saxon (according to p. 418{df}), but shows English peculiarities: features departing from Continental usage (cf. 21) and features agreeing with I. II. VI; moreover MS Ma belonged to England in the 12th cent., and Al drew on it from there; see above p. 401{b}. Printed by Zeumer 717, who 601{4} calls this Ordo ‘Anglicanum’.</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiX_Inscr.lnote.oe.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">417</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Zeu.</hi> 650: Cum al. infamatus fuerit pro f. et i. neg.</seg><seg type="translation" xml:lang="en" source="#claude">Cf. Zeu. 650: Cum al. infamatus fuerit pro f. et i. neg.</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiX_Inscr.lnote.oe.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">417</biblScope></bibl><seg type="original" xml:lang="de">aquae <hi rend="italic">fügt zu Ma</hi></seg><seg type="translation" xml:lang="en" source="#claude">Ma adds aquae</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">Here begins the order for performing the judgment.</ab>
       </div>
     </body>
   </text>

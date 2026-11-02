@@ -6,6 +6,7 @@
         <title>Iud Dei XIII 8</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">423</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr> <note type="manuscript">Latin text as edited by Liebermann from several manuscripts (see his notes) (Vt2, Tr, Mg)</note></witness>
@@ -52,6 +54,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiXIII_8.lnote.oe.20" n="20" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">423</biblScope></bibl><seg type="original" xml:lang="de">q. in t. n. b. <hi rend="italic">fehlt Zeu</hi> 702&lt;sub&gt;26&lt;/sub&gt;</seg><seg type="translation" xml:lang="en" source="#claude">q. in t. n. b. omitted in Zeu 702&lt;sub&gt;26&lt;/sub&gt;</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiXIII_8.lnote.oe.21" n="21" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">423</biblScope></bibl><seg type="original" xml:lang="de">est, <hi rend="italic">darüber roth</hi> [re]i sunt, <hi rend="italic">und so oft Plural übergeschr. Tr</hi></seg><seg type="translation" xml:lang="en" source="#claude">est, above it in red [re]i sunt, and the plural is often written above in this way Tr</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiXIII_8.lnote.oe.22" n="22" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">423</biblScope></bibl><seg type="original" xml:lang="de">susc. <hi rend="italic">Tr und einige Hss. Zeu.’s</hi></seg><seg type="translation" xml:lang="en" source="#claude">susc. Tr and some of Zeu.’s MSS</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">(Prayer.) Lord God almighty, who commanded baptism to be made in water and through the washing of regeneration deigned to grant the human race remission of sins, sanctify, we beseech you, this water, which we bless in your name, and discern a just judgment in it, you who alone are the just and strong judge, so that, if this man is guilty of the aforenamed matter, the water which received him in baptism may not now receive him.</ab>
       </div>
     </body>
   </text>

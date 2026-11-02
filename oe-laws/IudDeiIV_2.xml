@@ -6,6 +6,7 @@
         <title>Iud Dei IV 2</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">409</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin and Old English texts, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-du"><abbr>Du</abbr> <note type="manuscript">Durham, Cathedral Library, MS A. IV. 19 (Durham Ritual), f. 48v</note></witness>
@@ -55,6 +57,8 @@
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiIV_2.lnote.oe.29" n="29" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">409</biblScope></bibl><seg type="original" xml:lang="de">Iesus <hi rend="italic">glossirt durch ‘Heiland’</hi> 3. 4, 6. V 2, 1. VII 23 <hi rend="italic">A</hi></seg><seg type="translation" xml:lang="en" source="#claude">Iesus glossed by ‘Saviour’ 3. 4, 6. V 2, 1. VII 23 A</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiIV_2.lnote.oe.30" n="30" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">409</biblScope></bibl><seg type="original" xml:lang="de">ihū xp̄e <hi rend="italic">Du</hi></seg><seg type="translation" xml:lang="en" source="#claude">ihū xp̄e Du</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiIV_2.lnote.oe.31" n="31" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">409</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">so</hi></seg><seg type="translation" xml:lang="en" source="#claude">sic</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-du">Exorcism of water for seeking out a theft. I exorcise you, creature of water, in the name of God, the Father almighty, and in the name of Jesus [Christ], his Son, our Lord, that you may become exorcised water for putting to flight every power of the enemy and every phantasm of the devil,</ab>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromOldEnglish" corresp="#wit-gl">I adjure you, creature and also [?], in the name of God, the Father almighty, and the name of the Saviour Christ, his Son, our Lord, that [you] may become water adjured for putting to flight every might of the fiend and every phantasm of the devil,</ab>
       </div>
     </body>
   </text>

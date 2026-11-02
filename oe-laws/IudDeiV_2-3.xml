@@ -6,6 +6,7 @@
         <title>Iud Dei V 2.3</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">412</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin and Old English texts, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-du"><abbr>Du</abbr> <note type="manuscript">Durham, Cathedral Library, MS A. IV. 19 (Durham Ritual), f. 54</note></witness>
@@ -54,6 +56,8 @@
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiV_2-3.lnote.oe.6" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">412</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">‘und zu’, nicht</hi> atque</seg><seg type="translation" xml:lang="en" source="#claude">‘and to’, not atque</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiV_2-3.lnote.oe.7" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">412</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">statt des</hi> aduerseris <hi rend="italic">zu bessernden Lateins missversteht Glossator</hi> aduersariis eius</seg><seg type="translation" xml:lang="en" source="#claude">where the Latin should be emended to aduerseris, the glossator misunderstands aduersariis eius</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiV_2-3.lnote.oe.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">412</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">statt des</hi> Creatori <hi rend="italic">zu bessernden Lateins missversteht Glossator</hi> creature; <hi rend="italic">vgl. IV</hi> 2</seg><seg type="translation" xml:lang="en" source="#claude">where the Latin should be emended to Creatori, the glossator misunderstands creature; cf. IV 2</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-du">and do not allow yourself to be carried by her [?] with impunity, but in the name of the Lord and by the command of his power may you become a burning to him, and against [his] piety [?] and a showing forth of his wickedness; and also be adverse to him, because he has been adverse to your Creator;</ab>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromOldEnglish" corresp="#wit-gl">nor also suffer you that [you] be carried by her unpunished, but in the name of the Lord and with the command of his might may you be made a burning to him, and against piety and also a showing of his wickedness, no less harming him, because [he], opposed, is to your creature [?];</ab>
       </div>
     </body>
   </text>

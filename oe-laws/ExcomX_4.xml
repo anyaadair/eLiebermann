@@ -6,6 +6,7 @@
         <title>Excom X 4</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">440</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-vd"><abbr>Vd</abbr> <note type="manuscript">London, British Library, Cotton MS Vespasian D XI, f. 108v, c. 1200</note></witness>
@@ -45,7 +47,7 @@
     <body>
       <div type="clause" n="4">
         <head><ref type="lawCode" target="law:ExcomX">Excom X</ref> 4</head>
-        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="Excom X 4" corresp="#wit-vd"><pb n="440" ed="#liebermann"/>Maledicti sint ambulando<ptr type="liebermannNote" n="i" target="#ExcomX_4.lnote.oe.i"/>, sedendo<ptr type="liebermannNote" n="h" target="#ExcomX_4.lnote.oe.h"/>, stando, laborando<ptr type="liebermannNote" n="i" target="#ExcomX_4.lnote.oe.i"/>, comedendo<ptr type="liebermannNote" n="k" target="#ExcomX_4.lnote.oe.k"/>, bibendo, uigilando, quiescendo, dormiendo, uigilando<ptr type="liebermannNote" n="1" target="#ExcomX_4.lnote.oe.1"/>, nauigando<ptr type="liebermannNote" n="l" target="#ExcomX_4.lnote.oe.l"/>, loquendo<ptr type="liebermannNote" n="m" target="#ExcomX_4.lnote.oe.m"/>, tacendo.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Excom X 4" corresp="#wit-vd"><pb n="440" ed="#liebermann"/>Maledicti sint ambulando<ptr type="liebermannNote" n="i" target="#ExcomX_4.lnote.oe.i"/>, sedendo<ptr type="liebermannNote" n="h" target="#ExcomX_4.lnote.oe.h"/>, stando, laborando<ptr type="liebermannNote" n="i" target="#ExcomX_4.lnote.oe.i"/>, comedendo<ptr type="liebermannNote" n="k" target="#ExcomX_4.lnote.oe.k"/>, bibendo, uigilando, quiescendo, dormiendo, uigilando<ptr type="liebermannNote" n="1" target="#ExcomX_4.lnote.oe.1"/>, nauigando<ptr type="liebermannNote" n="l" target="#ExcomX_4.lnote.oe.l"/>, loquendo<ptr type="liebermannNote" n="m" target="#ExcomX_4.lnote.oe.m"/>, tacendo.</ab>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 440 (two independent readings of the page images, differences settled against the page)</note>
         <note type="liebermannNote" subtype="textual" xml:id="ExcomX_4.lnote.oe.h" n="h" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">440</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vgl.</hi> V 4</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">cf.</hi> V 4</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ExcomX_4.lnote.oe.i" n="i" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">440</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vgl.</hi> VI 6</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">cf.</hi> VI 6</seg></note>
@@ -53,6 +55,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ExcomX_4.lnote.oe.l" n="l" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">440</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vgl.</hi> VII 10</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">cf.</hi> VII 10</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ExcomX_4.lnote.oe.m" n="m" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">440</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vgl.</hi> VII 8</seg><seg type="translation" xml:lang="en" source="#claude">cf. VII 8</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ExcomX_4.lnote.oe.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">440</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">ausgestrichen (als doppelt) Vd; fehlt Maskell</hi></seg><seg type="translation" xml:lang="en" source="#claude">struck through (as a duplicate) Vd; omitted by Maskell</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-vd">May they be cursed walking, sitting, standing, labouring, eating, drinking, waking, resting, sleeping, waking, sailing, speaking, keeping silent.</ab>
       </div>
     </body>
   </text>

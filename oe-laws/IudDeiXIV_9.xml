@@ -6,6 +6,7 @@
         <title>Iud Dei XIV 9</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">426</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr> <note type="manuscript">Latin text as edited by Liebermann from several manuscripts (see his notes) (Vt2, Tr, Mg, Ma)</note></witness>
@@ -52,6 +54,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiXIV_9.lnote.oe.60" n="60" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">426</biblScope></bibl><seg type="original" xml:lang="de">dicens <hi rend="italic">statt</hi> et d. <hi rend="italic">Tr</hi></seg><seg type="translation" xml:lang="en" source="#claude">dicens instead of et d. Tr</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiXIV_9.lnote.oe.61" n="61" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">426</biblScope></bibl><seg type="original" xml:lang="de">dices <hi rend="italic">Ma Ei Bb</hi></seg><seg type="translation" xml:lang="en" source="#claude">dices Ma Ei Bb</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiXIV_9.lnote.oe.62" n="62" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">426</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">nur Tr</hi></seg><seg type="translation" xml:lang="en" source="#claude">only Tr</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">After this sprinkle him with holy water and say to him: May this water be to you today for a proof. (Amen.)</ab>
       </div>
     </body>
   </text>

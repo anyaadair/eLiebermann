@@ -77,7 +77,9 @@ const summary = xml => {
         if (other) {
             gloss = decode(other[2]);
             const ed = attr(other[1], 'source').replace(/^#/, '');
-            glossLabel = eds[ed] || ed || 'Translator not recorded';
+            // The LLM's crib of a text with no other translation (tools/add-crib.py)
+            const crib = { '#fromLatin': 'Latin', '#fromOldEnglish': 'Old English', '#fromFrench': 'French' }[attr(other[1], 'ana')];
+            glossLabel = crib ? 'LLM (Claude, 2026), crib of the ' + crib : eds[ed] || ed || 'Translator not recorded';
         }
     }
     return { oe, oeLabel, oeLang, gloss, glossLabel };

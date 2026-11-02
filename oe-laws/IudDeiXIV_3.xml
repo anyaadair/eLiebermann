@@ -6,6 +6,7 @@
         <title>Iud Dei XIV 3</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">425</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr> <note type="manuscript">Latin text as edited by Liebermann from several manuscripts (see his notes) (Vt2, Tr, Mg, Ma)</note></witness>
@@ -55,6 +57,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiXIV_3.lnote.oe.34" n="34" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">425</biblScope></bibl><seg type="original" xml:lang="de">-ctu <hi rend="italic">Tr</hi></seg><seg type="translation" xml:lang="en" source="#claude">-ctu Tr</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiXIV_3.lnote.oe.35" n="35" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">425</biblScope></bibl><seg type="original" xml:lang="de">-nte <hi rend="italic">Mg</hi></seg><seg type="translation" xml:lang="en" source="#claude">-nte Mg</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiXIV_3.lnote.oe.36" n="36" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">425</biblScope></bibl><seg type="original" xml:lang="de">grabb. <hi rend="italic">Ma;</hi> -atto <hi rend="italic">Bb</hi></seg><seg type="translation" xml:lang="en" source="#claude">grabb. Ma; -atto Bb</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">Prayer. O God, who delivered Moses from the land of Egypt, David from the hand of king Saul, Jonah from the belly of the whale, Peter from his chains, Paul from the waves, Susanna from the false charge, the three children from the furnace of burning fire, Daniel from the lions' den, the paralytic from his bed, Lazarus from the tomb,</ab>
       </div>
     </body>
   </text>
