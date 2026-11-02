@@ -32,6 +32,7 @@
           <bibl xml:id="whitelock" type="translation">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007), p. <biblScope unit="page">460</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
           <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-york-gospels"><abbr>York Gospels</abbr> <note type="manuscript">York, Minster Library, Add. 1 (York Gospels)</note></witness>
@@ -56,6 +57,7 @@
       <change when="2026-10-19">Generated from row 1571 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 273.</change>
       <change when="2026-10" type="checked">Liebermann’s text added from <title>Die Gesetze der Angelsachsen</title> I, p. 273.</change>
+      <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -65,11 +67,12 @@
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="7" corresp="#wit-york-gospels"><pb n="273" ed="#liebermann"/>Nu wylle ic, þ<hi rend="italic">æt</hi> we ealle eadmodlice Gode ælmihtigum þancian þære mildheortnesse, þe he us to fultume gedon hæfð.</ab>
         <ab type="editionText" xml:lang="ang" source="#robertson" n="7" corresp="#wit-york-gospels"><pb n="140" ed="#robertson"/>Nu wylle ic þæt we ealle eadmodlice Gode ælmihtigum þancian þære mildheortnesse þe he us to fultume gedon hæfð.</ab>
         <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-york-gospels"><pb n="226" ed="#rabin-doml"/>Nu wylle ic þæt we ealle eadmodlice Gode ælmihtigum þancian þære milds heortnesse, þe he us to fultume gedon hæfð.</ab>
-        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="273" ed="#liebermann"/>Nun wünsch ich, dass wir alle demüthig Gott dem Allmächtigen danken ob dieser Gnade, die Er uns zur Hilfe erwiesen hat.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="273" ed="#liebermann"/><ptr type="liebermannNote" n="1" target="#Cn1020_7.lnote.de.1"/>Nun wünsch ich, dass wir alle demüthig Gott dem Allmächtigen danken ob dieser Gnade, die Er uns zur Hilfe erwiesen hat.</ab>
         <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">Now I wish that we all humbly thank God Almighty for the mercy which he has shown in helping us.</ab>
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-york-gospels"><pb n="141" ed="#robertson"/>Now it is my desire that we all humbly thank God Almighty for the mercy which he has shown in aiding us.</ab>
         <ab type="translation" xml:lang="en" source="#whitelock"><pb n="460" ed="#whitelock"/>Now it is my will, that we all thank Almighty God humbly for the mercy which he has shown for our help.</ab>
         <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-york-gospels"><pb n="227" ed="#rabin-doml"/>Now it is my will that we all humbly thank almighty God for his favor, which through his assistance he has granted to us.</ab>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="Cn1020_7.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">188</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Ebd.</hi> Gott 1a</seg><seg type="translation" xml:lang="en" source="#claude">Ibid. [i.e. <hi rend="italic">Gl</hi>] Gott 1a</seg></note>
       </div>
     </body>
   </text>
