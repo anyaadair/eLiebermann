@@ -6,6 +6,7 @@
         <title>ECf 26.2</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">650</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
       </sourceDesc>
     </fileDesc>
@@ -54,6 +56,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_26-2.lnote.la.26" n="26" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">650</biblScope></bibl><seg type="original" xml:lang="de">tandem <hi rend="italic">Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">tandem Do</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_26-2.lnote.la.27" n="27" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">650</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt im Text,</hi> ersthigelt hechta <hi rend="italic">am Rande Rl;</hi> atrihilthet <hi rend="italic">Hk;</hi> astrikibthet <hi rend="italic">S;</hi> alst’kibthet <hi rend="italic">Hr;</hi> bote per f. <hi rend="italic">Ad Do;</hi> astrikebbet <hi rend="italic">Cl;</hi> a twifeld bot <hi rend="italic">schlägt vor Somner bei Wilkins</hi> Leg. Anglosax. 398; a threefold bot <hi rend="italic">Stubbs</hi> Rog. Hoved. IV 193</seg><seg type="translation" xml:lang="en" source="#claude">lacking in the text, ersthigelt hechta in the margin Rl; atrihilthet Hk; astrikibthet S; alst’kibthet Hr; bote per f. Ad Do; astrikebbet Cl; Somner in Wilkins, Leg. Anglosax. 398, suggests a twifeld bot; a threefold bot Stubbs, Rog. Hoved. IV 193</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_26-2.lnote.la.28" n="28" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">650</biblScope></bibl><seg type="original" xml:lang="de">foref. <hi rend="italic">Rl;</hi> dñt <hi rend="italic">fügt zu Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">foref. Rl; Hk adds dñt</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">But if, trusting in the peace that he has, he commits an offence against anyone through pride, let him make good the damage and as much again, which the English call <hi rend="italic">a[f]trigelt [b]et[e]</hi> (repayment-compensation); the fine!</ab>
       </div>
     </body>
   </text>

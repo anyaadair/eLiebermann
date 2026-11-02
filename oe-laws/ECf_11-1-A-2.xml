@@ -6,6 +6,7 @@
         <title>ECf 11.1 A 2</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">635</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
       </sourceDesc>
     </fileDesc>
@@ -47,6 +49,7 @@
         <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 635 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
         <note type="editorial">This passage is not part of ECf or ECf retr: it is one of the additions of the London collection (Leges Anglorum s. XIII in. Londoniis collectae), which Liebermann prints in smaller type across the page, under ECf retr. 11, 1, and numbers 11, 1 A ff. The dictionary cites it as “ECf 11, 1 A …”, so it is kept with ECf here.</note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_11-1-A-2.lnote.la.fn.c" n="c" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">635</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">wörtlich deckt sich dies, wie</hi> 11, 1 A 9 <hi rend="italic">citirt, mit einem Krönungseid</hi> [‘<hi rend="italic">possibly that of Edward I.</hi>’ (<hi rend="italic">Stubbs</hi> Constit. hist. II 105, <hi rend="italic">ebenso Pollock and Maitland</hi> HEL. I 366)]: Il gardera toutez ses terres, honours et dignitees droitturelx et franks del coron du roialme d’Englitere en tout maner d’entierte sans nul maner d’amenusement; et les droites disperges, dilapides ou perdus de la corone a son pouoir reappeller en l’auncien estate. <hi rend="italic">Vgl. auch Lond in</hi> 13, 1 A 1 <hi rend="italic">ff. und</hi> Fleta I 8: antiqua maneria uel iura coronæ annexa regi non licebit alienare, sed omnis rex coronæ suæ alienata reuocare tenetur. <hi rend="italic">Vielleicht stand die Forderung im Programm der Staatsreformer nach Richards I. Zeit, in dessen Eid sie noch fehlt</hi></seg><seg type="translation" xml:lang="en" source="#claude">this corresponds word for word, as 11, 1 A 9 cites it, with a coronation oath [‘possibly that of Edward I.’ (Stubbs, Constit. hist. II 105; likewise Pollock and Maitland, HEL. I 366)]: Il gardera toutez ses terres … en l’auncien estate. Cf. also Lond at 13, 1 A 1 ff. and Fleta I 8: antiqua maneria … reuocare tenetur. Perhaps the demand stood in the programme of the reformers of the state after the time of Richard I, in whose oath it is still missing</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">By right the king ought to keep and defend all the lands and honours, all the dignities and rights and liberties of the crown of this kingdom whole, with all integrity and without diminution, and with all his strength to recall the scattered, squandered and lost rights of the kingdom to their former and due state.</ab>
       </div>
     </body>
   </text>

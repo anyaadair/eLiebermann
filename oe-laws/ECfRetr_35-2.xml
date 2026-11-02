@@ -6,6 +6,7 @@
         <title>ECf retr 35.2</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">666</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
       </sourceDesc>
     </fileDesc>
@@ -74,6 +76,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_35-2.lnote.la.21" n="21" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">666</biblScope></bibl><seg type="original" xml:lang="de">Herald. <hi rend="italic">Cb;</hi> supradictum <hi rend="italic">fügt zu Lb</hi></seg><seg type="translation" xml:lang="en" source="#claude">Herald. Cb; Lb adds supradictum</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_35-2.lnote.la.22" n="22" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">666</biblScope></bibl><seg type="original" xml:lang="de">H. h. <hi rend="italic">fehlt Hv</hi></seg><seg type="translation" xml:lang="en" source="#claude">H. h. lacking in Hv</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_35-2.lnote.la.23" n="23" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">666</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">folgt</hi> Genealogia Norman. <hi rend="italic">Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">Genealogia Norman. follows in Lond</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">How the holy King Edward, because of the iniquity and wickedness of his people and especially because of the insolence and pride of the sons of Earl Godwine, made Duke William heir of the kingdom, because he could not do so with Edgar. But King Edward, when he knew the wickedness of his people and especially the pride of the sons of Godwine, namely of Harold, who afterwards invaded the kingdom†, Tostig, Gyrth, Leofwine and their other brothers, found that what he had proposed concerning Edgar could not be stable or ratified, [and] adopted William, duke of the Normans, into the kingdom, William, I say, <hi rend="italic">nothus</hi>, that is, the bastard, son of Robert, his uncle, namely his mother's brother, a vigorous and warlike and brave man. Who† afterwards, with God's assent, defeating the aforesaid Harold, son of Godwine, victoriously obtained the kingdom of the English. So much for this.</ab>
       </div>
     </body>
   </text>

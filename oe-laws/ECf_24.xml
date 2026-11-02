@@ -6,6 +6,7 @@
         <title>ECf 24</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">649</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
       </sourceDesc>
     </fileDesc>
@@ -63,6 +65,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_24.lnote.la.20" n="20" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">649</biblScope></bibl><seg type="original" xml:lang="de">subm. <hi rend="italic">Rl;</hi> ipsius <hi rend="italic">fügt zu Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">subm. Rl; Ad Do add ipsius</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_24.lnote.la.21" n="21" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">649</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Hk Hr S Ad</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Hk Hr S Ad</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_24.lnote.la.22" n="22" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">649</biblScope></bibl><seg type="original" xml:lang="de">-derat <hi rend="italic">Rl</hi></seg><seg type="translation" xml:lang="en" source="#claude">-derat Rl</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">If anyone has brought something into the vill, either led in an animal or carried in any goods, and says that he found it, before he brings it into his own house or another's, let him lead it before the church and have the priest of the church and the reeve of the vill come, and as many of the better men of the vill as he can have by the reeve's summons; and when they are assembled, let him show them the whole find, whatever it may be.</ab>
       </div>
     </body>
   </text>

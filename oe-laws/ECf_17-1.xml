@@ -6,6 +6,7 @@
         <title>ECf 17.1</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">643</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
       </sourceDesc>
     </fileDesc>
@@ -71,6 +73,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_17-1.lnote.la.15" n="15" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">643</biblScope></bibl><seg type="original" xml:lang="de">spal. <hi rend="italic">Rl;</hi> -mogr. <hi rend="italic">Ad</hi></seg><seg type="translation" xml:lang="en" source="#claude">spal. Rl; -mogr. Ad</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_17-1.lnote.la.16" n="16" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">643</biblScope></bibl><seg type="original" xml:lang="de">hereditauit <hi rend="italic">Do, dessen sinnlose Fehler ich fortan nicht notire</hi></seg><seg type="translation" xml:lang="en" source="#claude">hereditauit Do, whose senseless errors I shall not record from now on</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_17-1.lnote.la.17" n="17" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">643</biblScope></bibl><seg type="original" xml:lang="de">q. f. s. <hi rend="italic">fehlt Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">q. f. s. lacking in Hk</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">Otherwise he loses the name of king, as Pope John bears witness. To whom Pippin and Charles his son, not yet kings but princes under the foolish king of the Franks, wrote, asking whether the kings of the Franks ought to remain so, content with the royal name alone? By whom it was answered: 'It is fitting that those be called kings who vigilantly defend and rule the Church of God and his people', imitating the king and psalm-writer saying: 'He shall not dwell in the midst of my house who works pride' etc.</ab>
       </div>
     </body>
   </text>
