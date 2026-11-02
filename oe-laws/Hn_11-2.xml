@@ -6,6 +6,7 @@
         <title>Hn 11.2</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">556</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -51,6 +53,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="Hn_11-2.lnote.oe.za" n="za" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">556</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">ferner ab von</hi> 11, 2 <hi rend="italic">ff. steht</hi> II Eg. 3 <hi rend="italic">f.</hi>; VIII Atr. 8. 10 <hi rend="italic">f.</hi></seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">more remote from</hi> 11, 2 <hi rend="italic">ff. is</hi> II Eg. 3 <hi rend="italic">f.</hi>; VIII Atr. 8. 10 <hi rend="italic">f.</hi></seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_11-2.lnote.oe.54" n="54" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">556</biblScope></bibl><seg type="original" xml:lang="de">-quat, <hi rend="italic">geänd. vom Corr.</hi> -tur <hi rend="italic">Sc</hi></seg><seg type="translation" xml:lang="en" source="#claude">-quat, <hi rend="italic">altered by the corrector to</hi> -tur <hi rend="italic">Sc</hi></seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_11-2.lnote.oe.55" n="55" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">556</biblScope></bibl><seg type="original" xml:lang="de">partem <hi rend="italic">fügt zu Co Or</hi></seg><seg type="translation" xml:lang="en" source="#claude">partem <hi rend="italic">added by Co Or</hi></seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">If anyone withholds the right tithe, let the reeve of the king and of the bishop and of the lord of the land go with the priest, and let them take it away even against his will, and give it to the church to which it shall belong, and leave the ninth part to him who would not pay the tithe.</ab>
       </div>
     </body>
   </text>

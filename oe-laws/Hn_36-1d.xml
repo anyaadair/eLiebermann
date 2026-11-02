@@ -6,6 +6,7 @@
         <title>Hn 36.1d</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">566</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -51,6 +53,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="Hn_36-1d.lnote.oe.u" n="u" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">566</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vgl.</hi> Leis Wl 10, 2</seg><seg type="translation" xml:lang="en" source="#claude">cf. Leis Wl 10, 2</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_36-1d.lnote.oe.39" n="39" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">566</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">verb. Corr. aus</hi> pacc. <hi rend="italic">Sc;</hi> plac. <hi rend="italic">Co Or Wi</hi></seg><seg type="translation" xml:lang="en" source="#claude">corrected by the corrector from pacc. Sc; plac. Co Or Wi</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_36-1d.lnote.oe._" n="-" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">321</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Ebd</hi>. Gleichheitseid 5.—<hi rend="italic">obtent</hi>.—36, 2 <hi rend="italic">quod</hi>{42} <hi rend="italic">t. r., non etiam con</hi>.—36, 2a—<hi rend="italic">eff</hi>.{45} Rs</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Ibid</hi>. Gleichheitseid 5.—<hi rend="italic">obtent</hi>.—36, 2 <hi rend="italic">quod</hi>{42} <hi rend="italic">t. r., non etiam con</hi>.—36, 2a—<hi rend="italic">eff</hi>.{45} Rs</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">But if an oath of settlement is demanded, let him swear — as the present case shall dictate in the circumstances, whether of poverty or with those who are present requesting [it] [?] —: that, if he were so [placed] in respect of such an offence, he would accept this or remit [it] in this way.</ab>
       </div>
     </body>
   </text>

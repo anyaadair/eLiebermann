@@ -6,6 +6,7 @@
         <title>Hn 34.1a</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">565</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -52,6 +54,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="Hn_34-1a.lnote.oe.27" n="27" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">565</biblScope></bibl><seg type="original" xml:lang="de">r. et m. <hi rend="italic">Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">r. et m. <hi rend="italic">Lond</hi></seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_34-1a.lnote.oe.28" n="28" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">565</biblScope></bibl><seg type="original" xml:lang="de">utrique <hi rend="italic">Sc Hg;</hi> utique sit interdum <hi rend="italic">Wh</hi></seg><seg type="translation" xml:lang="en" source="#claude">utrique <hi rend="italic">Sc Hg;</hi> utique sit interdum <hi rend="italic">Wh</hi></seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_34-1a.lnote.oe._" n="-" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">321</biblScope></bibl><seg type="original" xml:lang="de">Am Rande spät: <hi rend="italic">Nota, ignoranciam posse excusare iusticiariis</hi> [!] <hi rend="italic">super voluntariis iudiciis</hi> Rs. Notiere als Quelle rechts: <hi rend="italic">ebd</hi>. 15, 1a und bessere die Interpunktion: setze <hi rend="italic">In Den</hi>. bis <hi rend="italic">nescivit</hi> als Parenthese.—<hi rend="italic">Vgl. Gl</hi> Gerechtigkeit 6; Gericht 11b.—<hi rend="italic">lahlites</hi>{26}—<hi rend="italic">re. et me</hi>.{27} Rs</seg><seg type="translation" xml:lang="en" source="#claude">In the margin, in a late hand: <hi rend="italic">Nota, ignoranciam posse excusare iusticiariis</hi> [!] <hi rend="italic">super voluntariis iudiciis</hi> Rs. Note as the source, on the right: <hi rend="italic">ibid</hi>. 15, 1a, and correct the punctuation: put <hi rend="italic">In Den</hi>. to <hi rend="italic">nescivit</hi> in parentheses.—<hi rend="italic">Cf. Gl</hi> Gerechtigkeit 6; Gericht 11b.—<hi rend="italic">lahlites</hi>{26}—<hi rend="italic">re. et me</hi>.{27} Rs</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">In the Danelaw: <hi rend="italic">lahslite</hi> (fine for breach of law), unless he can swear on the relics that he knew no better and no more rightly; whether it happens in the shire or in any plea of the king, about his own or another's case, or between equals in courts or at boundaries or in their own places, or between a lord and his man: let it be forbidden everywhere.</ab>
       </div>
     </body>
   </text>

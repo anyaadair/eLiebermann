@@ -6,6 +6,7 @@
         <title>Hn 34</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">565</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -49,6 +51,7 @@
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 565 (two independent readings of the page images, differences settled against the page)</note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_34.lnote.oe.18" n="18" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">565</biblScope></bibl><seg type="original" xml:lang="de">De placito tractando [<hi rend="italic">irrig aus Rubrik</hi> 33] in ius. iud. <hi rend="italic">Sc Hg Edd.;</hi> C. XXXV De f. iu. in. <hi rend="italic">K Co Or Gi</hi></seg><seg type="translation" xml:lang="en" source="#claude">De placito tractando [<hi rend="italic">wrongly taken from rubric</hi> 33] in ius. iud. <hi rend="italic">Sc Hg Edd.;</hi> C. XXXV De f. iu. in. <hi rend="italic">K Co Or Gi</hi></seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_34.lnote.oe._" n="-" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">321</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> falsches Urteil 1f.; Gerichtsbarkeit 33.—Am Rande spät: <hi rend="italic">De iudicio</hi>.—<hi rend="italic">De f. ini. iud</hi>.—34, 1 <hi rend="italic">am. uel ti</hi>.{19}—<hi rend="italic">quocumque</hi>{20}—<hi rend="italic">ð</hi>.{22} ohne <hi rend="italic">ho</hi>.—<hi rend="italic">di. iu</hi>.{24} Rs</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf. Gl</hi> falsches Urteil 1f.; Gerichtsbarkeit 33.—In the margin, in a late hand: <hi rend="italic">De iudicio</hi>.—<hi rend="italic">De f. ini. iud</hi>.—34, 1 <hi rend="italic">am. uel ti</hi>.{19}—<hi rend="italic">quocumque</hi>{20}—<hi rend="italic">ð</hi>.{22} without <hi rend="italic">ho</hi>.—<hi rend="italic">di. iu</hi>.{24} Rs</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">Of (the offence of) unjust judgment.</ab>
       </div>
     </body>
   </text>

@@ -6,6 +6,7 @@
         <title>Hn 46.5</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">570</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -56,6 +58,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="Hn_46-5.lnote.oe.34" n="34" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">570</biblScope></bibl><seg type="original" xml:lang="de">emi. <hi rend="italic">Co;</hi> emers. <hi rend="italic">Ko Or</hi></seg><seg type="translation" xml:lang="en" source="#claude">emi. Co; emers. Ko Or</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_46-5.lnote.oe.35" n="35" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">570</biblScope></bibl><seg type="original" xml:lang="de">-ri <hi rend="italic">Co Or</hi></seg><seg type="translation" xml:lang="en" source="#claude">-ri Co Or</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_46-5.lnote.oe._" n="-" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">323</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">S. Gl</hi> Missesprechen 3b; Vorsprech 3a; <hi rend="italic">vgl</hi>. Pol Mai I 199—<hi rend="italic">-ri</hi>{35}—46, 6 <hi rend="italic">et</hi>{3} <hi rend="italic">in o. a</hi>. fehlt Rs</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">See Gl</hi> Missesprechen 3b; Vorsprech 3a; <hi rend="italic">cf</hi>. Pol Mai I 199—<hi rend="italic">-ri</hi>{35}—46, 6 <hi rend="italic">et</hi>{3} <hi rend="italic">in o. a</hi>. lacking Rs</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">It is good, moreover, that when anyone's counsel is delivered in a plea, it be declared beforehand that it is to be spoken subject to amendment: so that, if perchance the pleader either adds anything or omits anything, he may be allowed to amend it.</ab>
       </div>
     </body>
   </text>

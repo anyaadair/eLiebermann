@@ -6,6 +6,7 @@
         <title>Hn 31.8</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">564</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -56,6 +58,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="Hn_31-8.lnote.oe.19" n="19" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">564</biblScope></bibl><seg type="original" xml:lang="de">prep. <hi rend="italic">K Co</hi></seg><seg type="translation" xml:lang="en" source="#claude">prep. <hi rend="italic">K Co</hi></seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_31-8.lnote.oe.20" n="20" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">564</biblScope></bibl><seg type="original" xml:lang="de">-sunt <hi rend="italic">Sc Hg</hi></seg><seg type="translation" xml:lang="en" source="#claude">-sunt <hi rend="italic">Sc Hg</hi></seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_31-8.lnote.oe.a" n="a" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">321</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Auswahleid 16. Hälftig (<hi rend="italic">s. Gl</hi> Lagamen 2) zu ernennende Urteiler zeigt das Nord. <hi rend="italic">skiladomr</hi>; Amira{3} 160.—{16}<hi rend="italic">eius</hi>—<hi rend="italic">co. al</hi>.{17}—32 <hi rend="italic">Ne quis</hi>{27} <hi rend="italic">i</hi>. Rs</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf. Gl</hi> Auswahleid 16. Judgment-finders to be appointed half by each side (<hi rend="italic">see Gl</hi> Lagamen 2) are found in the Norse <hi rend="italic">skiladomr</hi>; Amira{3} 160.—{16}<hi rend="italic">eius</hi>—<hi rend="italic">co. al</hi>.{17}—32 <hi rend="italic">Ne quis</hi>{27} <hi rend="italic">i</hi>. Rs</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">In certain places judgment is chosen from both sides, half by those whose business it is, and there witnesses named and chosen are to be had, unless hatred or anything fitting is put forward at the naming why they cannot be had.</ab>
       </div>
     </body>
   </text>

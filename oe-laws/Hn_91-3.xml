@@ -6,6 +6,7 @@
         <title>Hn 91.3</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">607</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -50,6 +52,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="Hn_91-3.lnote.oe.g" n="g" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">607</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">wie Bauern auf Krondomäne manches andere Vorrecht geniessen, so bringen sie Murdrumbusse nicht allein, sondern unterstützt von Nachbarorten auf</hi></seg><seg type="translation" xml:lang="en" source="#claude">just as peasants on the royal demesne enjoy many another privilege, so they do not raise the murdrum-fine alone, but with the support of neighbouring places</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_91-3.lnote.oe.23" n="23" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">607</biblScope></bibl><seg type="original" xml:lang="de">inuen. — murdrum <hi rend="italic">überspringt K Co Or Gi</hi></seg><seg type="translation" xml:lang="en" source="#claude">inuen. — murdrum skipped K Co Or Gi</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_91-3.lnote.oe._" n="-" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">329</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Ebd</hi>. Königsdemäne 9; Herrschaftsgut 8a; Murdrum 11d—<hi rend="italic">-nitur</hi>{23}—91, 4 <hi rend="italic">uia</hi> geänd. aus <hi rend="italic">uiua</hi>—92 <hi rend="italic">De murdro</hi> ohne <hi rend="italic">sol</hi>.—92, 1 <hi rend="italic">et</hi>{21} fehlt—<hi rend="italic">ibi</hi>{28} Rs</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Ibid</hi>. Königsdemäne 9; Herrschaftsgut 8a; Murdrum 11d—<hi rend="italic">-nitur</hi>{23}—91, 4 <hi rend="italic">uia</hi> altered from <hi rend="italic">uiua</hi>—92 <hi rend="italic">De murdro</hi> without <hi rend="italic">sol</hi>.—92, 1 <hi rend="italic">et</hi>{21} missing—<hi rend="italic">ibi</hi>{28} Rs</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">If moreover the manor in which the murdrum is found is of the king's demesne and farm, and the king so commands, compensation shall be made for it by the whole hundred.</ab>
       </div>
     </body>
   </text>

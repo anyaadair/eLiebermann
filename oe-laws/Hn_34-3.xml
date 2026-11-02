@@ -6,6 +6,7 @@
         <title>Hn 34.3</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">565</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -59,6 +61,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="Hn_34-3.lnote.oe.41" n="41" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">565</biblScope></bibl><seg type="original" xml:lang="de">XX duo den. <hi rend="italic">K Co Or Gi</hi></seg><seg type="translation" xml:lang="en" source="#claude">XX duo den. <hi rend="italic">K Co Or Gi</hi></seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_34-3.lnote.oe.42" n="42" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">565</biblScope></bibl><seg type="original" xml:lang="de">-senn. <hi rend="italic">Co;</hi> seun. <hi rend="italic">Or;</hi> -se <hi rend="italic">Wh</hi></seg><seg type="translation" xml:lang="en" source="#claude">-senn. <hi rend="italic">Co;</hi> seun. <hi rend="italic">Or;</hi> -se <hi rend="italic">Wh</hi></seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_34-3.lnote.oe._" n="-" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">321</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Urteilschelte 3a; Ungehorsam 24.—<hi rend="italic">ordinaliter</hi>{37}—<hi rend="italic">XL</hi>{8}—<hi rend="italic">XXII den</hi>.{41}—<hi rend="italic">euer</hi>.{42} Rs</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf. Gl</hi> Urteilschelte 3a; Ungehorsam 24.—<hi rend="italic">ordinaliter</hi>{37}—<hi rend="italic">XL</hi>{8}—<hi rend="italic">XXII den</hi>.{41}—<hi rend="italic">euer</hi>.{42} Rs</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">He who rejects a just judgment duly held and lawfully rendered, if it is the king's action, let <hi rend="italic">ouerseunesse</hi> (the fine for contempt) be adjudged, that is 50 shillings in Wessex — if against an earl, [60] shillings, against the hundred 30 shillings of 5 pence, which make 5 mancuses —, so that the shilling is reckoned at 12 pence; and thereafter in the others let it be assessed as their <hi rend="italic">ouerseunesse</hi> will be.</ab>
       </div>
     </body>
   </text>

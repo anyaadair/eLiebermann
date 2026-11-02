@@ -6,6 +6,7 @@
         <title>Hn 7.7</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">553</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -50,6 +52,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="Hn_7-7.lnote.oe.x" n="x" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">553</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">auch</hi> hundreto 7, 8</seg><seg type="translation" xml:lang="en" source="#claude">also hundreto 7, 8</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_7-7.lnote.oe.y" n="y" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">553</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">hier nicht bloss</hi> unausgeliehenes Land, <hi rend="italic">sondern</hi> Herrschaft überhaupt mitsammt Bauerndorf, <hi rend="italic">laut</hi> 7, 7<hi rend="italic">b. Vgl. Maitland</hi> Select pleas man. I <hi rend="italic">p.</hi> xxxiij</seg><seg type="translation" xml:lang="en" source="#claude">here not merely land not granted out, but the lordship as a whole together with the peasant village, according to 7, 7b. Cf. Maitland Select pleas man. I p. xxxiij</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_7-7.lnote.oe.43" n="43" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">553</biblScope></bibl><seg type="original" xml:lang="de">-nico <hi rend="italic">Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">-nico Lond</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">If any of the king's barons or of others has attended the shire according to law, he can acquit all the land which he has there in his demesne.</ab>
       </div>
     </body>
   </text>

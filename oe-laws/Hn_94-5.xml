@@ -6,6 +6,7 @@
         <title>Hn 94.5</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">611</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -55,6 +57,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="Hn_94-5.lnote.oe.33" n="33" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">611</biblScope></bibl><seg type="original" xml:lang="de">-ade <hi rend="italic">Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">-ade Lond</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_94-5.lnote.oe.34" n="34" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">611</biblScope></bibl><seg type="original" xml:lang="de">-rant <hi rend="italic">Hg;</hi> -rint <hi rend="italic">Lond. Es folgen zwei leere Zeilen, dann von derselben Hand</hi> [M]yrcheneland [<hi rend="italic">d. i.</hi> ‘Tribal hidage’; <hi rend="italic">vgl. Maitland</hi> Domesday 506] <hi rend="italic">Sc Hg; folgt</hi> (<hi rend="italic">nach leerer halber Spalte K</hi>) <hi rend="italic">in derselben Hand</hi> Cui [<hi rend="italic">nämlich</hi> Henrico I.] successit Stephanus <hi rend="italic">Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">-rant Hg; -rint Lond. There follow two blank lines, then in the same hand [M]yrcheneland [i.e. the ‘Tribal hidage’; cf. Maitland Domesday 506] Sc Hg; there follows (after an empty half column K) in the same hand Cui [namely Henrico I.] successit Stephanus Lond</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_94-5.lnote.oe._" n="-" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">329</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Ebd</hi>. Klageeid 4—<hi rend="italic">forade</hi>{33} <hi rend="italic">p. Expliciunt leges gloriosi Henrici regis primi</hi> Rs, Worte wahrscheinlich des Londoners um 1200.</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Ibid</hi>. Klageeid 4—<hi rend="italic">forade</hi>{33} <hi rend="italic">p. Expliciunt leges gloriosi Henrici regis primi</hi> Rs, words probably of the Londoner c. 1200.</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">If a wound is done to anyone, and the accused denies it, let him swear as one of six: without fore-oath, because the blood and the wound have anticipated the <hi rend="italic">forað</hi> (fore-oath) itself.</ab>
       </div>
     </body>
   </text>

@@ -6,6 +6,7 @@
         <title>Hn 48.10</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">571</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -54,6 +56,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="Hn_48-10.lnote.oe.48" n="48" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">571</biblScope></bibl><seg type="original" xml:lang="de">et <hi rend="italic">Wh</hi></seg><seg type="translation" xml:lang="en" source="#claude">et Wh</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_48-10.lnote.oe.49" n="49" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">571</biblScope></bibl><seg type="original" xml:lang="de">adu. <hi rend="italic">Lond;</hi> -tos <hi rend="italic">gegen Hss., Edd.</hi></seg><seg type="translation" xml:lang="en" source="#claude">adu. Lond; -tos against MSS, edd.</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_48-10.lnote.oe.a" n="a" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">323</biblScope></bibl><seg type="original" xml:lang="de">Der Ggs. ist, dass hier nur Vassallen desselben Lehns, in 48, 11 auch andere Freie zeugen dürfen—<hi rend="italic">aduocatus</hi>{48}—48, 11 <hi rend="italic">feodo h. quinque l. si n. possunt</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude">The contrast is that here only vassals of the same fief may act as witnesses, but in 48, 11 other free men too—<hi rend="italic">aduocatus</hi>{48}—48, 11 <hi rend="italic">feodo h. quinque l. si n. possunt</hi> Rs</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">And concerning an increase of a fee a witness of the same lordship ought to be had, even if called on either from his own side or from the lord's.</ab>
       </div>
     </body>
   </text>

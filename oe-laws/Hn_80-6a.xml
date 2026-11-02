@@ -6,6 +6,7 @@
         <title>Hn 80.6a</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">596</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -56,6 +58,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="Hn_80-6a.lnote.oe.40" n="40" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">596</biblScope></bibl><seg type="original" xml:lang="de">-ant <hi rend="italic">Co Or</hi></seg><seg type="translation" xml:lang="en" source="#claude">-ant Co Or</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_80-6a.lnote.oe.41" n="41" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">596</biblScope></bibl><seg type="original" xml:lang="de">-wyt. <hi rend="italic">Co Or;</hi> fityyt. <hi rend="italic">Sc;</hi> fytyyt. <hi rend="italic">Hg;</hi> -twit. <hi rend="italic">Sl Tw;</hi> fightwy. <hi rend="italic">K</hi></seg><seg type="translation" xml:lang="en" source="#claude">-wyt. Co Or; fityyt. Sc; fytyyt. Hg; -twit. Sl Tw; fightwy. K</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_80-6a.lnote.oe._" n="-" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">327</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> gemeinschaftliche Missetat 11; Mannbusse 4. 5f. Zu ergänzen scheint <hi rend="italic">unam</hi> vor <hi rend="italic">manbotam</hi>—<hi rend="italic">-rint</hi>{38}—<hi rend="italic">ad huc</hi>{37} <hi rend="italic">modo a qui ius</hi> [dies gehört als richtig in den Text] <hi rend="italic">h</hi>.—<hi rend="italic">fit</hi>.{41}—80, 7 <hi rend="italic">homip</hi>.{43} Rs</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf. Gl</hi> gemeinschaftliche Missetat 11; Mannbusse 4. 5f. <hi rend="italic">unam</hi> seems to need supplying before <hi rend="italic">manbotam</hi>—<hi rend="italic">-rint</hi>{38}—<hi rend="italic">ad huc</hi>{37} <hi rend="italic">modo a qui ius</hi> [this belongs in the text as correct] <hi rend="italic">h</hi>.—<hi rend="italic">fit</hi>.{41}—80, 7 <hi rend="italic">homip</hi>.{43} Rs</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">If several were present with the lord or the reeve, or he has a claim against them in some way of [this] kind [?], if the slain man and the place belong to one lord who has his soke, let him have the manbot and the <hi rend="italic">fihtwite</hi>.</ab>
       </div>
     </body>
   </text>

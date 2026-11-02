@@ -6,6 +6,7 @@
         <title>Hn 77.2a</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">594</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -54,6 +56,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="Hn_77-2a.lnote.oe.19" n="19" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">594</biblScope></bibl><seg type="original" xml:lang="de">uid's <hi rend="italic">Sc Hg;</hi> uidetur <hi rend="italic">Wh</hi></seg><seg type="translation" xml:lang="en" source="#claude">uid's <hi rend="italic">Sc Hg;</hi> uidetur <hi rend="italic">Wh</hi></seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_77-2a.lnote.oe.20" n="20" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">594</biblScope></bibl><seg type="original" xml:lang="de">eius <hi rend="italic">Sc Hg</hi></seg><seg type="translation" xml:lang="en" source="#claude">eius Sc Hg</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_77-2a.lnote.oe.a" n="a" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">327</biblScope></bibl><seg type="original" xml:lang="de">Offenbar verstand ein mächtiger Dynast, den Status (<hi rend="italic">s. u</hi>. 78, 2b) nach Belieben festzusetzen, wenn des Betreffenden Vater oder Mutter unfrei war. Dass es sich um Uneheliche handelt, wie Kemble <hi rend="italic">Saxons</hi> I 207 meint, nehmen Graf und Dietherr <hi rend="italic">Dt. Rechtssprichw</hi>. 61 und Pol Mai I 405f. nicht an.—Aber auch dass allgemein das Kind der ärgeren Hand folge, lese ich nicht mit Pol Mai aus Hn heraus. Glanvilla oder gar späteres MA. (<hi rend="italic">ebd</hi>.) darf man nicht mit Allen (bei Thorpe <hi rend="italic">Anc. laws</hi> 273) zur Erklärung heranziehen</seg><seg type="translation" xml:lang="en" source="#claude">Evidently a powerful magnate knew how to fix the status (<hi rend="italic">see below</hi> 78, 2b) at will when the father or mother of the person concerned was unfree. That illegitimate children are meant, as Kemble <hi rend="italic">Saxons</hi> I 207 thinks, is not accepted by Graf and Dietherr <hi rend="italic">Dt. Rechtssprichw</hi>. 61 or by Pol Mai I 405f.—But neither do I read out of Hn, with Pol Mai, that in general the child follows the worse hand. One may not, with Allen (in Thorpe <hi rend="italic">Anc. laws</hi> 273), draw on Glanvilla, or even the later Middle Ages (<hi rend="italic">ibid</hi>.), to explain it</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">Sometimes, however, it will be as his lord wishes: 'but the calf is the mother's, whosever bull has sported with her'.</ab>
       </div>
     </body>
   </text>

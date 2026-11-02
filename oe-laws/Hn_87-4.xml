@@ -6,6 +6,7 @@
         <title>Hn 87.4</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">601</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -60,6 +62,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="Hn_87-4.lnote.oe.47" n="47" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">601</biblScope></bibl><seg type="original" xml:lang="de">XI <hi rend="italic">K Co Or;</hi> XL <hi rend="italic">Gi Edd.</hi> [<hi rend="italic">falsch</hi>]</seg><seg type="translation" xml:lang="en" source="#claude">XI K Co Or; XL Gi edd. [wrong]</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_87-4.lnote.oe.48" n="48" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">601</biblScope></bibl><seg type="original" xml:lang="de">t. man CL s. <hi rend="italic">K Co Or Gi</hi></seg><seg type="translation" xml:lang="en" source="#claude">t. man CL s. K Co Or Gi</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_87-4.lnote.oe._" n="-" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">328</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Ebd</hi>. Mannbusse 15a—<hi rend="italic">-rint blodb</hi>.{43} <hi rend="italic">s. e. tpyfhyndem</hi>. ohne <hi rend="italic">ut</hi>—<hi rend="italic">t</hi>.{48} <hi rend="italic">man</hi>—87, 4a <hi rend="italic">l. i. an</hi>{49} <hi rend="italic">p. s</hi>.—87, 5 <hi rend="italic">uel</hi>{52}—<hi rend="italic">mance</hi>{32} <hi rend="italic">in Westsexe</hi> (<hi rend="italic">s. Gl</hi> Wessex 3) Rs</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Ibid</hi>. Mannbusse 15a—<hi rend="italic">-rint blodb</hi>.{43} <hi rend="italic">s. e. tpyfhyndem</hi>. without <hi rend="italic">ut</hi>—<hi rend="italic">t</hi>.{48} <hi rend="italic">man</hi>—87, 4a <hi rend="italic">l. i. an</hi>{49} <hi rend="italic">p. s</hi>.—87, 5 <hi rend="italic">uel</hi>{52}—<hi rend="italic">mance</hi>{32} <hi rend="italic">in Westsexe</hi> (<hi rend="italic">see Gl</hi> Wessex 3) Rs</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">If anyone is killed in a <hi rend="italic">hloþ</hi> (band of men), let the slayer pay the wergild to the kinsmen and the manbot to the lord, and all who were present the <hi rend="italic">hlo[ð]bot</hi> (compensation for taking part in a band), so that they pay for a <hi rend="italic">tƿihindeman</hi> (man of 200-shilling wergild) thirty shillings, for a <hi rend="italic">sixhinde</hi> (man of 600-shilling wergild) sixty shillings, for a <hi rend="italic">tƿelfhinde</hi> (man of 1200-shilling wergild) 120 shillings.</ab>
       </div>
     </body>
   </text>

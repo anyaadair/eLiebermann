@@ -6,6 +6,7 @@
         <title>Hn 9.2</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">555</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -56,6 +58,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="Hn_9-2.lnote.oe._" n="-" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">317</biblScope></bibl><seg type="original" xml:lang="de">Am Rande selbe Hd: <hi rend="italic">aut plures unum uel plures</hi> (<hi rend="italic">unum</hi> radiert) Rs</seg><seg type="translation" xml:lang="en" source="#claude">In the margin, same hand: <hi rend="italic">aut plures unum uel plures</hi> (<hi rend="italic">unum</hi> erased) Rs</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_9-2.lnote.oe.a" n="a" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">317</biblScope></bibl><seg type="original" xml:lang="de">Vielleicht gehört Zeile 1 schon hinter 9, 1<hi rend="italic">a</hi> (d. h. ‘eines der Einteilungsprinzipien der Prozesse sei Ein- oder Mehrheit der Partei’), so dass hinter <hi rend="italic">compellati</hi> Punkt stehen und <hi rend="italic">Aliquando</hi>{6} neuen Satz beginnen sollte</seg><seg type="translation" xml:lang="en" source="#claude">Perhaps line 1 already belongs after 9, 1<hi rend="italic">a</hi> (i.e. ‘one of the principles for classifying lawsuits is whether the party is one person or several’), so that there should be a full stop after <hi rend="italic">compellati</hi> and <hi rend="italic">Aliquando</hi>{6} should begin a new sentence</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_9-2.lnote.oe.b-2" n="b" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">317</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">S. Gl</hi> Klage 18e; Rechtsgang 17a b</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">See Gl</hi> Klage 18e; Rechtsgang 17a b</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">And whether one accuses one or several, or several one, or there are several accusers and accused, sometimes it is necessary to answer the charges at once, sometimes at a fitting term, sometimes at none.</ab>
       </div>
     </body>
   </text>

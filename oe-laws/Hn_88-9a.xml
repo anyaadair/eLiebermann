@@ -6,6 +6,7 @@
         <title>Hn 88.9a</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">603</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -60,6 +62,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="Hn_88-9a.lnote.oe.28" n="28" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">603</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Co Or</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Co Or</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_88-9a.lnote.oe.29" n="29" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">603</biblScope></bibl><seg type="original" xml:lang="de">-runt <hi rend="italic">Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">-runt Lond</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_88-9a.lnote.oe._" n="-" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">328</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Ebd</hi>. Gefährdeeid 2; Gefolge 22c—<hi rend="italic">-ate</hi>{21}—<hi rend="italic">c. eo r</hi>.{22}—<hi rend="italic">-runt</hi>{29}—88, 9b <hi rend="italic">super his iudic</hi>.{33}—88, 10 <hi rend="italic">assalliat</hi>{31} <hi rend="italic">c. ut p</hi>. Rs</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Ibid</hi>. Gefährdeeid 2; Gefolge 22c—<hi rend="italic">-ate</hi>{21}—<hi rend="italic">c. eo r</hi>.{22}—<hi rend="italic">-runt</hi>{29}—88, 9b <hi rend="italic">super his iudic</hi>.{33}—88, 10 <hi rend="italic">assalliat</hi>{31} <hi rend="italic">c. ut p</hi>. Rs</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">If however he can prove on oath that he came with him unasked, if any enemies of his slay him, who is joined to him neither by blood nor by marriage, it is just that they pay as they have sinned, and that vengeance be taken on them by the kinsmen and lords; or let them pay compensation for it:</ab>
       </div>
     </body>
   </text>

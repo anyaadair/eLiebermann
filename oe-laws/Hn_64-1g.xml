@@ -6,6 +6,7 @@
         <title>Hn 64.1g</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">584</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -51,6 +53,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="Hn_64-1g.lnote.oe.7" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">584</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">bessere</hi> sua [<hi rend="italic">vgl.</hi> 66, 8] <hi rend="italic">oder</hi> manu undecima [<hi rend="italic">vgl.</hi> 66, 5 <hi rend="italic">f. trotz</hi> 67, 1<hi rend="italic">c</hi>]</seg><seg type="translation" xml:lang="en" source="#claude">read sua [cf. 66, 8] or manu undecima [cf. 66, 5 f. despite 67, 1<hi rend="italic">c</hi>]</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_64-1g.lnote.oe.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">584</biblScope></bibl><seg type="original" xml:lang="de">si <hi rend="italic">Hss. Edd.; vielleicht zu streichen oder</hi> ad simplex [<hi rend="italic">vgl.</hi> 67, 1<hi rend="italic">b</hi>]</seg><seg type="translation" xml:lang="en" source="#claude">si MSS edd.; perhaps to be deleted, or ad simplex [cf. 67, 1<hi rend="italic">b</hi>]</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_64-1g.lnote.oe._" n="-" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">325</biblScope></bibl><seg type="original" xml:lang="de">Stubbs <hi rend="italic">eb.</hi>: ‘with ten compurgators’; allein diese Zahl kommt bei Eideshelfern (<hi rend="italic">s. d. Gl</hi> 21. 33) und <hi rend="italic">una decima</hi> für <hi rend="italic">decem</hi> beim Verf. nicht vor. <hi rend="italic">Vgl. Gl</hi> Zehnerschaft 27b; Auswahleid 17f.; Eisenordal 12.—In Anm. <hi rend="italic">h</hi> bessere 67, 9f. in 66, 9a—<hi rend="italic">si</hi>{8}—64, 1h <hi rend="italic">tripodum</hi>{10} Rs</seg><seg type="translation" xml:lang="en" source="#claude">Stubbs <hi rend="italic">ibid.</hi>: ‘with ten compurgators’; but this number does not occur with oath-helpers (<hi rend="italic">see</hi> that word in <hi rend="italic">Gl</hi> 21. 33), nor does <hi rend="italic">una decima</hi> for <hi rend="italic">decem</hi> occur in the author. <hi rend="italic">Cf. Gl</hi> Zehnerschaft 27b; Auswahleid 17f.; Eisenordal 12.—In note <hi rend="italic">h</hi> correct 67, 9f. to 66, 9a—<hi rend="italic">si</hi>{8}—64, 1h <hi rend="italic">tripodum</hi>{10} Rs</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">And in a matter in which the accused would clear himself with one tithing by selection and by lot, thus let him go to the ordeal of hot iron.</ab>
       </div>
     </body>
   </text>

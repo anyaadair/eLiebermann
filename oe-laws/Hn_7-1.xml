@@ -6,6 +6,7 @@
         <title>Hn 7.1</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">553</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -58,6 +60,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="Hn_7-1.lnote.oe.13" n="13" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">553</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">so Sc;</hi> A. pr. <hi rend="italic">übr.</hi></seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">so Sc;</hi> A. pr. <hi rend="italic">the rest</hi></seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_7-1.lnote.oe.14" n="14" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">553</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">verb. vom Corr. aus</hi> fagitari nec <hi rend="italic">Sc</hi></seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">corrected by the corrector from</hi> fagitari nec <hi rend="italic">Sc</hi></seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_7-1.lnote.oe._" n="-" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">316</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Grafschaft 13; Grafschaftsgericht 6. 7. 10. Wendungen zweiter Z. wie Quadr Arg 12{n}.—<hi rend="italic">si. Anglie prou</hi>.{13} <hi rend="italic">co</hi>.—<hi rend="italic">commodum</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf. Gl</hi> Grafschaft 13; Grafschaftsgericht 6. 7. 10. Phrases of the second l. as in Quadr Arg 12{n}.—<hi rend="italic">si. Anglie prou</hi>.{13} <hi rend="italic">co</hi>.—<hi rend="italic">commodum</hi> Rs</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">As had been established by ancient ordinance, it has lately been confirmed by the salutary command of the king, with true recollection, that the general pleas of the shires ought to meet in fixed places and at fixed turns and at a defined time throughout each province of England, and not be troubled by any further vexations, unless the king's own need or the common advantage of the kingdom adds more frequent ones.</ab>
       </div>
     </body>
   </text>

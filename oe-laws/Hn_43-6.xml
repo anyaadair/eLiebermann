@@ -6,6 +6,7 @@
         <title>Hn 43.6</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">569</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -52,6 +54,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="Hn_43-6.lnote.oe.23" n="23" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">569</biblScope></bibl><seg type="original" xml:lang="de">de <hi rend="italic">Co Or</hi></seg><seg type="translation" xml:lang="en" source="#claude">de Co Or</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_43-6.lnote.oe.24" n="24" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">569</biblScope></bibl><seg type="original" xml:lang="de">lig. <hi rend="italic">Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">lig. Lond</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_43-6.lnote.oe._" n="-" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">322</biblScope></bibl><seg type="original" xml:lang="de">Am Rande spät: <hi rend="italic">Cui de diversis dominis maior reverencia seu fidelitas debetur</hi> Rs.—<hi rend="italic">Vgl. Gl</hi> ligius. Wilhelm II. datiert 1093 von <hi rend="italic">die crastina qua Anselmus meus ligeus homo factus est</hi>; Davis <hi rend="italic">Reg. Agnorm</hi>. n. 337.—Zu <hi rend="italic">residens</hi> vgl. den Ausgang des Begriffes <hi rend="italic">ligius</hi> aus ‘Muntmann im Hause des Herrn wohnhaft’; E. Mayer <hi rend="italic">Dt. Fz. Vfg</hi>. II 116.—<hi rend="italic">Quantumcum-</hi> <hi rend="italic">que</hi>{22}—<hi rend="italic">lig</hi>.{24} Rs.—Statt <hi rend="italic">cuius</hi>{a} bessere <hi rend="italic">cuius</hi>{kk}</seg><seg type="translation" xml:lang="en" source="#claude">In the margin, in a late hand: <hi rend="italic">Cui de diversis dominis maior reverencia seu fidelitas debetur</hi> Rs.—<hi rend="italic">Cf. Gl</hi> ligius. William II dates a writ in 1093 <hi rend="italic">die crastina qua Anselmus meus ligeus homo factus est</hi>; Davis <hi rend="italic">Reg. Agnorm</hi>. n. 337.—On <hi rend="italic">residens</hi> cf. the origin of the concept <hi rend="italic">ligius</hi> in ‘a man under mund living in the lord’s house’; E. Mayer <hi rend="italic">Dt. Fz. Vfg</hi>. II 116.—<hi rend="italic">Quantumcum-</hi> <hi rend="italic">que</hi>{22}—<hi rend="italic">lig</hi>.{24} Rs.—Instead of <hi rend="italic">cuius</hi>{a} read <hi rend="italic">cuius</hi>{kk}</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">However many lords anyone has, or however much he holds of others, he is more bound to him, and ought to be resident with him, whose liege man he is.</ab>
       </div>
     </body>
   </text>

@@ -6,6 +6,7 @@
         <title>Hn 72.3</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">590</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -50,6 +52,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="Hn_72-3.lnote.oe.p" n="p" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">590</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vielleicht rechtfertigt</hi> 72, 3 <hi rend="italic">grundsätzlich die in Angelsächs. und Fränk. Kirche herrschende Redemtionspraxis</hi> (<hi rend="italic">Wasserschleben</hi> 50; <hi rend="italic">Schmitz</hi> 147 <hi rend="italic">f.</hi> 237. 326), <hi rend="italic">nach der es Tarife für Fasten gab, und scheint nicht Hn’s Eigen</hi></seg><seg type="translation" xml:lang="en" source="#claude">perhaps 72, 3 justifies in principle the practice of redemption prevailing in the Anglo-Saxon and Frankish Church (Wasserschleben 50; Schmitz 147 f. 237. 326), under which there were tariffs for fasting, and it seems not to be Hn’s own</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_72-3.lnote.oe.46" n="46" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">590</biblScope></bibl><seg type="original" xml:lang="de">iei.—elem. <hi rend="italic">fehlt K Co Or Gi</hi> [<hi rend="italic">wohl wegen</hi> 72, 3<hi rend="italic">a</hi>]</seg><seg type="translation" xml:lang="en" source="#claude">iei.—elem. missing in K Co Or Gi [probably because of 72, 3a]</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_72-3.lnote.oe._" n="-" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">326</biblScope></bibl><seg type="original" xml:lang="de">Ein Prediger um 1000 in Agsächs. Sprache erklärt, Fasten (<hi rend="italic">s. d. Gl</hi> 13) ohne Almosen sei nutzlos; ed. M. Förster in <hi rend="italic">Morsbach Festschr</hi>. 82. Zugrunde liegt Vulgata Ecclesiasticus III 33: <hi rend="italic">elemosyna resistit peccatis</hi>.—Am Rande spät: <hi rend="italic">Peccatum curari posse elemosina absque ieiunio, et non e con</hi>[<hi rend="italic">verso?</hi>]—72, 3b <hi rend="italic">habeat</hi>{2} Rs</seg><seg type="translation" xml:lang="en" source="#claude">A preacher writing in Anglo-Saxon c. 1000 declares that fasting (<hi rend="italic">see</hi> that word in <hi rend="italic">Gl</hi> 13) without alms is useless; ed. M. Förster in <hi rend="italic">Morsbach Festschr</hi>. 82. Underlying this is the Vulgate, Ecclesiasticus III 33: <hi rend="italic">elemosyna resistit peccatis</hi>.—In the margin, in a late hand: <hi rend="italic">Peccatum curari posse elemosina absque ieiunio, et non e con</hi>[<hi rend="italic">verso?</hi>]—72, 3b <hi rend="italic">habeat</hi>{2} Rs</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">He who cannot cure his sins by fasting can redeem them with alms: alms suffice without fasting; fasting does not suffice without alms.</ab>
       </div>
     </body>
   </text>

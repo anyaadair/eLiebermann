@@ -6,6 +6,7 @@
         <title>Hn 46.2</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">570</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -52,6 +54,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="Hn_46-2.lnote.oe.u" n="u" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">570</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">s. o. Anm. n</hi></seg><seg type="translation" xml:lang="en" source="#claude">see above note n</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_46-2.lnote.oe.22" n="22" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">570</biblScope></bibl><seg type="original" xml:lang="de">fon. <hi rend="italic">Sc Hg</hi></seg><seg type="translation" xml:lang="en" source="#claude">fon. Sc Hg</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_46-2.lnote.oe.a" n="a" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">322</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Rechtsgang 14a ff.; Beweistermin 2. Agsächs. heisst <hi rend="italic">fandian</hi> ‘prüfen, untersuchen, erforschen’ (jetzt <hi rend="italic">to fand</hi>, unser ‘<hi rend="italic">fahnden</hi>’), <hi rend="italic">fandung</hi> ‘Beweis, Probe’, <hi rend="italic">fandere</hi> ‘temptor’ (Napier <hi rend="italic">Lex</hi>. 92), <hi rend="italic">fanding</hi> mengl. ‘Versuchung’. Die Phrase ist ἓν διὰ δυοῖν: ‘Beweisfrist’.—<hi rend="italic">Vgl</hi>. Opet <hi rend="italic">Processeinl</hi>. 6—<hi rend="italic">nominetur ei p., et i. a VII</hi>—46, 2a <hi rend="italic">Cum a</hi>. Rs</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf. Gl</hi> Rechtsgang 14a ff.; Beweistermin 2. In Anglo-Saxon <hi rend="italic">fandian</hi> means ‘to test, examine, investigate’ (now <hi rend="italic">to fand</hi>, German ‘<hi rend="italic">fahnden</hi>’), <hi rend="italic">fandung</hi> ‘proof, trial’, <hi rend="italic">fandere</hi> ‘temptor’ (Napier <hi rend="italic">Lex</hi>. 92), and Middle English <hi rend="italic">fanding</hi> ‘temptation’. The phrase is ἓν διὰ δυοῖν: ‘term for proof’.—<hi rend="italic">Cf</hi>. Opet <hi rend="italic">Processeinl</hi>. 6—<hi rend="italic">nominetur ei p., et i. a VII</hi>—46, 2a <hi rend="italic">Cum a</hi>. Rs</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">Whatever anyone is impleaded about, let him have <hi rend="italic">furst</hi> and <hi rend="italic">fandung</hi> (respite and time for inquiry); and let the pleas be named to him, and let him answer on them what he will in seven days.</ab>
       </div>
     </body>
   </text>

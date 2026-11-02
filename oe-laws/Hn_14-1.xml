@@ -6,6 +6,7 @@
         <title>Hn 14.1</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">559</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -54,6 +56,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="Hn_14-1.lnote.oe.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">559</biblScope></bibl><seg type="original" xml:lang="de">sine sella <hi rend="italic">Sc Hg</hi></seg><seg type="translation" xml:lang="en" source="#claude">sine sella Sc Hg</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_14-1.lnote.oe.6" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">559</biblScope></bibl><seg type="original" xml:lang="de">gallee <hi rend="italic">Co Or</hi></seg><seg type="translation" xml:lang="en" source="#claude">gallee Co Or</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_14-1.lnote.oe.7" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">559</biblScope></bibl><seg type="original" xml:lang="de">Quid sit manca <hi rend="italic">am Rande Corr. Sc; am Rande roth Hg</hi></seg><seg type="translation" xml:lang="en" source="#claude">Quid sit manca in the margin, by the corrector, Sc; in the margin in red Hg</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">Let the reliefs of each be according to what the measure is: [that] of an earl, 8 horses, 4 saddled and 4 unsaddled, and 4 helmets and 4 coats of mail with 8 lances and as many shields, and 4 swords and 100 mancuses of gold.</ab>
       </div>
     </body>
   </text>

@@ -6,6 +6,7 @@
         <title>Hn 3</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">547</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -60,6 +62,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="Hn_3.lnote.oe.27" n="27" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">547</biblScope></bibl><seg type="original" xml:lang="de">ami. <hi rend="italic">Co Or</hi></seg><seg type="translation" xml:lang="en" source="#claude">ami. Co Or</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_3.lnote.oe.28" n="28" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">547</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Lond</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_3.lnote.oe._" n="-" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">315</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Schiedsgericht 7.—<hi rend="italic">pertractione</hi>{21}—<hi rend="italic">discernende</hi>{26}—<hi rend="italic">acceptione</hi>—<hi rend="italic">pace</hi>{28} <hi rend="italic">potius</hi>—4, 2 <hi rend="italic">compellens</hi>{1}—4, 3 <hi rend="italic">aminirab</hi>.{2}—4, 5 <hi rend="italic">augmentum</hi>{10}, was auch Sinn ergibt—4, 7 {18}<hi rend="italic">diducat</hi>—4, 7<hi rend="italic">a</hi> <hi rend="italic">sensa</hi>{21}</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf. Gl</hi> Schiedsgericht 7.—<hi rend="italic">pertractione</hi>{21}—<hi rend="italic">discernende</hi>{26}—<hi rend="italic">acceptione</hi>—<hi rend="italic">pace</hi>{28} <hi rend="italic">potius</hi>—4, 2 <hi rend="italic">compellens</hi>{1}—4, 3 <hi rend="italic">aminirab</hi>.{2}—4, 5 <hi rend="italic">augmentum</hi>{10}, which also makes sense—4, 7 {18}<hi rend="italic">diducat</hi>—4, 7<hi rend="italic">a</hi> <hi rend="italic">sensa</hi>{21}</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">On the handling and determination or description of cases. All cases are to be examined by the judges by the true reasoning of counsel, and decided with equality, without respect of persons, or, if opportunity allows, rather to be honourably settled by peace.</ab>
       </div>
     </body>
   </text>
