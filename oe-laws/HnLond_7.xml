@@ -46,13 +46,14 @@
     <revisionDesc>
       <change when="2026-10-19">Generated from row 2539 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS Lat added from Gesetze I, p. 525.</change>
+      <change when="2026-11-02">Liebermann’s marks for his Erklärungen (Gesetze III) placed in the text, from the page images of vol. I.</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="7">
         <head><ref type="lawCode" target="law:HnLond">Hn Lond</ref> 7</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" corresp="#wit-lat"><pb n="525" ed="#liebermann"/>Et homo Londoñ.<ptr type="liebermannNote" n="24" target="#HnLond_7.lnote.oe.24"/> non iudicetur in misericordia pecunie nisi a<ptr type="liebermannNote" n="25" target="#HnLond_7.lnote.oe.25"/> sa<ptr type="liebermannNote" n="26" target="#HnLond_7.lnote.oe.26"/> were, scilicet ad C solidos: dico de placito quod ad pecuniam pertineat.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" corresp="#wit-lat"><pb n="525" ed="#liebermann"/>Et<ptr type="liebermannNote" n="a" target="#HnLond_7.lnote.oe.a"/> homo Londoñ.<ptr type="liebermannNote" n="24" target="#HnLond_7.lnote.oe.24"/> non iudicetur in misericordia<ptr type="liebermannNote" n="b" target="#HnLond_7.lnote.oe.b"/> pecunie nisi a<ptr type="liebermannNote" n="25" target="#HnLond_7.lnote.oe.25"/> sa<ptr type="liebermannNote" n="26" target="#HnLond_7.lnote.oe.26"/> were<ptr type="liebermannNote" n="c" target="#HnLond_7.lnote.oe.c"/>, scilicet ad C solidos: dico de placito quod ad pecuniam<ptr type="liebermannNote" n="d" target="#HnLond_7.lnote.oe.d"/> pertineat.</ab>
         <ab type="editionText" xml:lang="la" source="#robertson" n="7" corresp="#wit-rs"><pb n="290" ed="#robertson"/>Et homo Lond. non iudicetur in misericordia pecuniae nisi ad sa were, scilicet ad C solidos; dico de placito quod ad pecuniam pertineat.</ab>
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-rs"><pb n="291" ed="#robertson"/>And a citizen of London shall not be sentenced to forfeiture of a sum greater than his wergeld, namely 100 shillings, that is to say in a case concerned with monetary compensation.</ab>
         <note type="editorial">Added October 2026 from Robertson pp. 290–291 (text and translation); Liebermann’s text added from Gesetze I p. 525, October 2026 (two independent readings of the page images)</note>

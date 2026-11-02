@@ -50,13 +50,14 @@
     <revisionDesc>
       <change when="2026-10-19">Generated from row 2503 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS Lat added from Gesetze I, p. 522.</change>
+      <change when="2026-11-02">Liebermann’s marks for his Erklärungen (Gesetze III) placed in the text, from the page images of vol. I.</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="12">
         <head><ref type="lawCode" target="law:CHnCor">CHn cor</ref> 12</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" corresp="#wit-lat"><ptr type="liebermannNote" n="48" target="#CHnCor_12.lnote.oe.48"/><pb n="522" ed="#liebermann"/>Pacem firmam in<ptr type="liebermannNote" n="49" target="#CHnCor_12.lnote.oe.49"/> toto regno meo pono et teneri amodo præcipio.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" corresp="#wit-lat"><ptr type="liebermannNote" n="48" target="#CHnCor_12.lnote.oe.48"/><pb n="522" ed="#liebermann"/>Pacem<ptr type="liebermannNote" n="a" target="#CHnCor_12.lnote.oe.a"/> firmam in<ptr type="liebermannNote" n="49" target="#CHnCor_12.lnote.oe.49"/> toto regno meo pono et teneri amodo præcipio.</ab>
         <ab type="editionText" xml:lang="la" source="#robertson" n="12" corresp="#wit-h"><pb n="280" ed="#robertson"/>Pacem firmam in toto regno meo pono et teneri amodo praecipio.</ab>
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-h"><pb n="281" ed="#robertson"/>I establish lasting peace throughout the whole of my realm and enjoin that it be maintained henceforth.</ab>
         <note type="comparison" source="#wormald-mel" n="401"><label>compare (formulae)</label> <ref target="clause:IICn_69-1">II Cn 69.1</ref> <quote>The Charter's 'praecipio', 'defendo', 'condono', 'concedo' and 'reddo' compare with Cnut's 'ic bebeode', 'ic lete riht', 'ic forbeode' and 'ic wylle'</quote></note>

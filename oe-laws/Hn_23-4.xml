@@ -41,13 +41,14 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-19">Generated from row 4305 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-11-02">Liebermann’s marks for his Erklärungen (Gesetze III) placed in the text, from the page images of vol. I.</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="23.4">
         <head><ref type="lawCode" target="law:Hn">Hn</ref> 23.4</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Hn 23.4" corresp="#wit-lat"><pb n="561" ed="#liebermann"/>De monacho quem obedienciarium<ptr type="liebermannNote" n="m" target="#Hn_23-4.lnote.oe.m"/><ptr type="liebermannNote" n="38" target="#Hn_23-4.lnote.oe.38"/> fecerit<ptr type="liebermannNote" n="39" target="#Hn_23-4.lnote.oe.39"/>, respondeat abbas eius per omnia, sicut rectum sit.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Hn 23.4" corresp="#wit-lat"><pb n="561" ed="#liebermann"/>De monacho quem obedienciarium<ptr type="liebermannNote" n="m" target="#Hn_23-4.lnote.oe.m"/><ptr type="liebermannNote" n="38" target="#Hn_23-4.lnote.oe.38"/> fecerit<ptr type="liebermannNote" n="39" target="#Hn_23-4.lnote.oe.39"/>, respondeat<ptr type="liebermannNote" n="a" target="#Hn_23-4.lnote.oe.a"/> abbas eius per omnia, sicut rectum sit.</ab>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 561 (two independent readings of the page images, differences settled against the page)</note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_23-4.lnote.oe.m" n="m" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">561</biblScope></bibl><seg type="original" xml:lang="de">Klosterbeamten (Kellner <hi rend="italic">u. s. w.</hi>)</seg><seg type="translation" xml:lang="en" source="#claude">monastic officials (cellarer etc.)</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_23-4.lnote.oe.38" n="38" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">561</biblScope></bibl><seg type="original" xml:lang="de">-rum <hi rend="italic">Co Or</hi></seg><seg type="translation" xml:lang="en" source="#claude">-rum Co Or</seg></note>

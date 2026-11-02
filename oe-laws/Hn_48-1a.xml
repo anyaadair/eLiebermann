@@ -41,13 +41,14 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-19">Generated from row 4465 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-11-02">Liebermann’s marks for his Erklärungen (Gesetze III) placed in the text, from the page images of vol. I.</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="48.1a">
         <head><ref type="lawCode" target="law:Hn">Hn</ref> 48.1a</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Hn 48.1a" corresp="#wit-lat"><pb n="571" ed="#liebermann"/>Si quis enim a iusticia regis inplacitatus ad consilium exierit et<ptr type="liebermannNote" n="16" target="#Hn_48-1a.lnote.oe.16"/> ad inculpacionem<ptr type="liebermannNote" n="f" target="#Hn_48-1a.lnote.oe.f"/> non responderit, XX ma[n]ce<ptr type="liebermannNote" n="17" target="#Hn_48-1a.lnote.oe.17"/> uel ouerseunesse<ptr type="liebermannNote" n="18" target="#Hn_48-1a.lnote.oe.18"/> regis<ptr type="liebermannNote" n="ff" target="#Hn_48-1a.lnote.oe.ff"/> culpa sit.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Hn 48.1a" corresp="#wit-lat"><pb n="571" ed="#liebermann"/>Si quis enim a iusticia regis inplacitatus ad consilium exierit<ptr type="liebermannNote" n="a" target="#Hn_48-1a.lnote.oe.a"/> et<ptr type="liebermannNote" n="16" target="#Hn_48-1a.lnote.oe.16"/> ad inculpacionem<ptr type="liebermannNote" n="f" target="#Hn_48-1a.lnote.oe.f"/> non responderit, XX ma[n]ce<ptr type="liebermannNote" n="17" target="#Hn_48-1a.lnote.oe.17"/> uel ouerseunesse<ptr type="liebermannNote" n="18" target="#Hn_48-1a.lnote.oe.18"/> regis<ptr type="liebermannNote" n="ff" target="#Hn_48-1a.lnote.oe.ff"/> culpa sit.</ab>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 571 (two independent readings of the page images, differences settled against the page)</note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_48-1a.lnote.oe.f" n="f" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">571</biblScope></bibl><seg type="original" xml:lang="de">sofort auf die Klage</seg><seg type="translation" xml:lang="en" source="#claude">immediately upon the complaint</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_48-1a.lnote.oe.ff" n="ff" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">571</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vgl.</hi> 34, 3&lt;sup&gt;r&lt;/sup&gt;</seg><seg type="translation" xml:lang="en" source="#claude">cf. 34, 3&lt;sup&gt;r&lt;/sup&gt;</seg></note>

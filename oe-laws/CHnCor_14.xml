@@ -49,13 +49,14 @@
       <change when="2026-10-19">Generated from row 2505 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS Lat added from Gesetze I, p. 522.</change>
       <change when="2026-11-01">Manuscript sigla that Liebermann prints run together (“HDi”, “HRl”, “PlS”, “THk”) spaced for reading (“H Di”, “H Rl”, “Pl S”, “T Hk”).</change>
+      <change when="2026-11-02">Liebermann’s marks for his Erklärungen (Gesetze III) placed in the text, from the page images of vol. I.</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="14">
         <head><ref type="lawCode" target="law:CHnCor">CHn cor</ref> 14</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" corresp="#wit-lat"><pb n="522" ed="#liebermann"/>Si quis aliquid de meo<ptr type="liebermannNote" n="51" target="#CHnCor_14.lnote.oe.51"/> uel de rebus alicuius post obitum regis<ptr type="liebermannNote" n="52" target="#CHnCor_14.lnote.oe.52"/> Willelmi<ptr type="liebermannNote" n="53" target="#CHnCor_14.lnote.oe.53"/>, fratris mei, cepit, totum cito reddatur<ptr type="liebermannNote" n="54" target="#CHnCor_14.lnote.oe.54"/> absque emendatione.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" corresp="#wit-lat"><pb n="522" ed="#liebermann"/>Si quis aliquid de meo<ptr type="liebermannNote" n="51" target="#CHnCor_14.lnote.oe.51"/> uel de rebus alicuius post obitum<ptr type="liebermannNote" n="a" target="#CHnCor_14.lnote.oe.a"/> regis<ptr type="liebermannNote" n="52" target="#CHnCor_14.lnote.oe.52"/> Willelmi<ptr type="liebermannNote" n="53" target="#CHnCor_14.lnote.oe.53"/>, fratris mei, cepit, totum cito reddatur<ptr type="liebermannNote" n="54" target="#CHnCor_14.lnote.oe.54"/> absque emendatione<ptr type="liebermannNote" n="b" target="#CHnCor_14.lnote.oe.b"/>.</ab>
         <ab type="editionText" xml:lang="la" source="#robertson" n="14" corresp="#wit-h"><pb n="282" ed="#robertson"/>Si quis aliquid de rebus meis vel de rebus alicuius post obitum Willelmi regis, fratris mei, cepit, totum cito sine emendatione reddatur.</ab>
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-h"><pb n="283" ed="#robertson"/>If anyone, after the death of King William my brother, took possession of anything belonging to me or to any [other] person, it shall be restored immediately in full but without payment of compensation.</ab>
         <note type="editorial">Added October 2026 from Robertson pp. 282–283 (text and translation); Liebermann’s text added from Gesetze I p. 522, October 2026 (two independent readings of the page images)</note>

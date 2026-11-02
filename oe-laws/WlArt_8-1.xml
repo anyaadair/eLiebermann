@@ -45,13 +45,14 @@
     <revisionDesc>
       <change when="2026-10-19">Generated from row 2337 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS H added from Gesetze I, p. 488.</change>
+      <change when="2026-11-02">Liebermann’s marks for his Erklärungen (Gesetze III) placed in the text, from the page images of vol. I.</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="8.1">
         <head><ref type="lawCode" target="law:WlArt">Wl art</ref> 8.1</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" corresp="#wit-h"><pb n="488" ed="#liebermann"/>Requiratur<ptr type="liebermannNote" n="21" target="#WlArt_8-1.lnote.oe.21"/> hundred<ptr type="liebermannNote" n="22" target="#WlArt_8-1.lnote.oe.22"/> et comitatus, sicut antecessores nostri<ptr type="liebermannNote" n="23" target="#WlArt_8-1.lnote.oe.23"/><ptr type="liebermannNote" n="e" target="#WlArt_8-1.lnote.oe.e"/> statuerunt<ptr type="liebermannNote" n="24" target="#WlArt_8-1.lnote.oe.24"/>.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" corresp="#wit-h"><pb n="488" ed="#liebermann"/><ptr type="liebermannNote" n="a" target="#WlArt_8-1.lnote.oe.a"/>Requiratur<ptr type="liebermannNote" n="21" target="#WlArt_8-1.lnote.oe.21"/> hundred<ptr type="liebermannNote" n="22" target="#WlArt_8-1.lnote.oe.22"/> et comitatus, sicut antecessores nostri<ptr type="liebermannNote" n="23" target="#WlArt_8-1.lnote.oe.23"/><ptr type="liebermannNote" n="e" target="#WlArt_8-1.lnote.oe.e"/> statuerunt<ptr type="liebermannNote" n="24" target="#WlArt_8-1.lnote.oe.24"/>.</ab>
         <ab type="editionText" xml:lang="la" source="#robertson" n="8.1" corresp="#wit-h"><pb n="240" ed="#robertson"/>Requiratur hundred et comitatus, sicut antecessores nostri statuerunt.</ab>
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-h"><pb n="241" ed="#robertson"/>The hundred and county courts shall be attended in accordance with the decrees of our predecessors.</ab>
         <note type="comparedBy" source="#liebermann"><ref target="clause:WlArtRetr_7">Wl art retr 7</ref>; <ref target="clause:LeisWl_43">Leis Wl 43</ref></note>

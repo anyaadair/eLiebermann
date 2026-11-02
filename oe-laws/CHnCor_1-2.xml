@@ -48,13 +48,14 @@
     <revisionDesc>
       <change when="2026-10-19">Generated from row 2483 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS Lat added from Gesetze I, p. 521.</change>
+      <change when="2026-11-02">Liebermann’s marks for his Erklärungen (Gesetze III) placed in the text, from the page images of vol. I.</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="1.2">
         <head><ref type="lawCode" target="law:CHnCor">CHn cor</ref> 1.2</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" corresp="#wit-lat"><pb n="521" ed="#liebermann"/>Et omnes malas consuetudines, quibus regnum Angliæ iniuste opprimebatur, inde aufero: quas malas consuetudines ex parte hic<ptr type="liebermannNote" n="21" target="#CHnCor_1-2.lnote.oe.21"/> pono.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" corresp="#wit-lat"><pb n="521" ed="#liebermann"/>Et omnes malas<ptr type="liebermannNote" n="a" target="#CHnCor_1-2.lnote.oe.a"/> consuetudines, quibus regnum Angliæ iniuste opprimebatur, inde aufero: quas malas consuetudines ex parte hic<ptr type="liebermannNote" n="21" target="#CHnCor_1-2.lnote.oe.21"/> pono.</ab>
         <ab type="editionText" xml:lang="la" source="#robertson" n="1.2" corresp="#wit-h"><pb n="276" ed="#robertson"/>Et omnes malas consuetudines quibus regnum Angliae iniuste opprimebatur inde aufero, quas malas consuetudines ex parte hic pono.</ab>
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-h"><pb n="277" ed="#robertson"/>And I abolish all the evil practices with which the realm of England was unjustly oppressed, and these evil practices I herewith set down in part.</ab>
         <note type="editorial">Added October 2026 from Robertson pp. 276–277 (text and translation); Liebermann’s text added from Gesetze I p. 521, October 2026 (two independent readings of the page images)</note>

@@ -47,13 +47,14 @@
     <revisionDesc>
       <change when="2026-10-19">Generated from row 2321 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS Lp added from Gesetze I, p. 485.</change>
+      <change when="2026-11-02">Liebermann’s marks for his Erklärungen (Gesetze III) placed in the text, from the page images of vol. I.</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="Epil.">
         <head><ref type="lawCode" target="law:WlEp">Wl ep</ref> Epil.</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" corresp="#wit-lp"><pb n="485" ed="#liebermann"/>(<hi rend="italic">Aus Lp<ptr type="liebermannNote" n="26" target="#WlEp_Epil.lnote.oe.26"/></hi>: In hac eadem carta ponuntur eadem uerba Anglico sermone uerbo ad uerbum.)</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" corresp="#wit-lp"><pb n="485" ed="#liebermann"/>(<hi rend="italic">Aus Lp<ptr type="liebermannNote" n="26" target="#WlEp_Epil.lnote.oe.26"/></hi>: In hac eadem carta ponuntur eadem uerba Anglico<ptr type="liebermannNote" n="a" target="#WlEp_Epil.lnote.oe.a"/> sermone uerbo ad uerbum.)</ab>
         <ab type="editionText" xml:lang="la" source="#robertson" n="Epil." corresp="#wit-lp"><pb n="236" ed="#robertson"/>In hac eadem carta ponuntur eadem verba Anglico sermone verbo ad verbum.</ab>
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-lp"><pb n="237" ed="#robertson"/>In this same document the same words are put in the English tongue, word for word.</ab>
         <note type="editorial">Added October 2026 from Robertson pp. 236–237 (text and translation); In ... verbum: only in Lp (Robertson).; Liebermann’s text added from Gesetze I p. 485, October 2026 (two independent readings of the page images)</note>
