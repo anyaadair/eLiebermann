@@ -26,6 +26,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-11-01">Grammatical entry labelled by the language it concerns (Old English): Liebermann marks French (F) and Latin (L); unmarked ones concern Old English.</change>
+      <change when="2026-11-02">Grammatical entry labelled by every language it treats (Old English, Latin), not only Old English (suggestion #40).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -34,7 +35,7 @@
         <form type="lemma">
           <orth>Sprichwörter</orth>
         </form>
-        <usg type="lang" n="ang">Old English</usg>
+        <usg type="lang" n="ang la">Old English, Latin</usg>
         <dictScrap type="liebermann"><hi rend="bold"><hi rend="italic">Sprichwörter:</hi></hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:aex">æx</ref>; andsæc; brecan; fyr; gewealdes; giest; spere; unlaga; <hi rend="italic">Alliteration:</hi> laga. — <hi rend="italic"><ref type="abbreviation" target="gram:Lateinisch"><abbr>Lat.</abbr></ref>:</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:compendium">compendium</ref>; furari; gladius; pactum; pax; pestis; quod tibi; unus; vitulus</dictScrap>
         <xr type="see"><ref target="entry:aex">æx</ref></xr>
         <xr type="see"><ref target="entry:compendium">compendium</ref></xr>
