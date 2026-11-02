@@ -7,6 +7,7 @@
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -23,6 +24,7 @@
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">249</biblScope></bibl>
           <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-k"><abbr>K</abbr> <note type="manuscript">London, British Library, Cotton Claudius A.iii</note></witness>
@@ -60,6 +62,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="VI-Atr-Latin-Paraphrase_3.lnote.oe.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">249</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Ezech.</hi> 34, 4</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Ezech.</hi> 34, 4</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="VI-Atr-Latin-Paraphrase_3.lnote.oe.a" n="a" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">175</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de">Aus einem Befehl des Reichstags an die Mönche macht Paraphrast einen des Episkopats an die Klostervorsteher. Dem Worte <hi rend="italic">deliquium</hi> gibt er die Bed. von <hi rend="italic">delictum</hi></seg><seg type="translation" xml:lang="en" source="#claude">The paraphraser turns a command of the national assembly to the monks into one of the episcopate to the heads of monasteries. He gives the word <hi rend="italic">deliquium</hi> the meaning of <hi rend="italic">delictum</hi></seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="VI-Atr-Latin-Paraphrase_3.lnote.oe.b" n="b" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">175</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">S. o</hi>. 1, 3{c}</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">See above</hi> 1, 3{c}</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-k">K. The archbishops also, together with the consent of the other bishops and of the orthodox then present, inspired from heaven, chose and delivered this wholesome and pious counsel: that if any of the monks or any of the nuns from the monastery of any abbot or abbess (namely in the time of the rule of that abbot or abbess or of the predecessors), having gone out in apostate fashion of their own will or having been expelled for the guilt of their own offence, are found anywhere, they shall return again to the monastery and be received without any contradiction. For let the abbots and also the abbesses beware lest that prophetic word be said of them: ‘That which was weak you have not strengthened, and that which was sick you have not healed, nor have you sought that which was lost’.</ab>
       </div>
     </body>
   </text>

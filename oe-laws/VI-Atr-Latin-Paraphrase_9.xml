@@ -7,6 +7,7 @@
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -24,6 +25,7 @@
           <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
           <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-k"><abbr>K</abbr> <note type="manuscript">London, British Library, Cotton Claudius A.iii</note></witness>
@@ -58,6 +60,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="VI-Atr-Latin-Paraphrase_9.lnote.oe.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">251</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">verbessert aus</hi> domino</seg><seg type="translation" xml:lang="en" source="#claude">corrected from domino</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="VI-Atr-Latin-Paraphrase_9.lnote.oe.a" n="a" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">175</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Juden 4</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf. Gl</hi> Juden 4</seg></note>
         <note type="liebermannNote" subtype="erklaerung" xml:id="VI-Atr-Latin-Paraphrase_9.lnote.de.0" n="0" source="#liebermann-erkl" rend="wholeClause"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">175</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Wie dieser Text, so liest <hi rend="italic">þeode</hi> nur Hs. D in V Atr 2, wo die übr. Hss. <hi rend="italic">leode</hi> haben: mir scheint dies zufällig gleiche Änderung durch zwei Schreiber</seg><seg type="translation" xml:lang="en" source="#claude">Like this text, only MS D in V Atr 2 reads <hi rend="italic">þeode</hi>, where the other MSS have <hi rend="italic">leode</hi>: this seems to me an identical alteration made by two scribes by chance</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-k">K. For let no one, for the exchange of any money, cast any innocent Christian out of the country, nor subject him to the dominion of the heathen: for it is wrong that those whom Christ redeemed by the shedding of his blood should be ensnared in the bonds of Jews or Gentiles.</ab>
       </div>
     </body>
   </text>

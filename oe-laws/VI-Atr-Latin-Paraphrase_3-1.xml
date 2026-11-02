@@ -7,6 +7,7 @@
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -23,6 +24,7 @@
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">249</biblScope></bibl>
           <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-k"><abbr>K</abbr> <note type="manuscript">London, British Library, Cotton Claudius A.iii</note></witness>
@@ -57,6 +59,7 @@
         <note type="editorial">Latin paraphrase of VI Atr (early 11th c.; K = Cotton Claudius A III f. 30, perhaps by Archbishop Wulfstan), text in column K (Liebermann’s text; until October 2026 in column T). Liebermann gives no German translation for it: for the meaning see the matching Old English chapter of VI Atr above, which it paraphrases (Liebermann prints in small type the words that correspond exactly to the Old English).; T: corrected against Gesetze I, October 2026 (was “(Liebermann’s Latin Paraphrase)”, now “∅ (moved to K)”)</note>
         <note type="liebermannNote" subtype="textual" xml:id="VI-Atr-Latin-Paraphrase_3-1.lnote.oe.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">249</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">so</hi></seg><seg type="translation" xml:lang="en" source="#claude">sic</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="VI-Atr-Latin-Paraphrase_3-1.lnote.oe.a" n="a" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">175</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de">Der Untergang vieler Klöster (<hi rend="italic">s. d. Gl</hi> 3) in Dänenzeit wird häufig berichtet. Die später wieder hergestellten fielen mehrfach Weltgeistlichen oder dem anderen Geschlechte als bisher anheim</seg><seg type="translation" xml:lang="en" source="#claude">The destruction of many monasteries (<hi rend="italic">see</hi> that word in <hi rend="italic">Gl</hi> 3) in the Danish period is frequently reported. Those later restored passed on several occasions to secular clergy, or to the opposite sex from that which had held them before</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-k">If, however, the monastery of any monk, in which he offered himself to the Lord almighty through the vow of profession and through receiving the spiritual habit, has been settled (as often happens with the changing vicissitude of the times) with canons or with nuns, and he has nevertheless devoted himself in the service of Christ to some church or small monastery, let that same man go very promptly to the bishop to whose diocese that church or small monastery over which he presides belongs, and let him vow, giving his right hand, that he will always keep these three things: namely chastity, and the monastic habit, and perpetual perseverance in the service of Christ.</ab>
       </div>
     </body>
   </text>
