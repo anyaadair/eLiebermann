@@ -158,7 +158,7 @@ def main():
             s = s.replace('        <listWit>\n', '        <listWit>\n          <witness xml:id="wit-fl" rend="bold"><abbr>Fl</abbr> <note type="manuscript">Florence (John) of Worcester, Chronicon, ed. MGH SS XIII 126: Liebermann’s text</note></witness>\n', 1)
         s = s.replace('<respStmt><resp>Edition of the text</resp>', '<respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>\n        <respStmt><resp>Transcription of Liebermann’s text and notes</resp><name ref="#claude">Claude</name></respStmt>\n        <respStmt><resp>Edition of the text</resp>', 1)
         if 'xml:id="claude"' not in s:
-            s = s.replace('        </listBibl>', '          <bibl xml:id="claude" type="translation">English renderings of Liebermann’s German notes, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic</bibl>\n        </listBibl>', 1)
+            s = s.replace('        </listBibl>', '          <bibl xml:id="claude" type="translation">English renderings of Liebermann’s German notes, created for this database in 2026 with Claude, a large language model made by Anthropic. They are cribs to help the reader with Liebermann’s German, and should not be treated as separate translations</bibl>\n        </listBibl>', 1)
         s = s.replace('    </revisionDesc>', '      <change when="2026-11-02">Liebermann’s Latin text, footnotes and marginal references added from Gesetze I pp. 276–277; Robertson’s text marked as Latin.</change>\n    </revisionDesc>', 1)
         open(p, 'w', encoding='utf-8').write(s)
         print('added', cid)

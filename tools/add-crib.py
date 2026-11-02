@@ -4,7 +4,7 @@
 The crib of each text goes into its clause file as
     <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-…">…</ab>
 beside the text it renders (same corresp, i.e. the same manuscript), and the file's header names it:
-a respStmt (LLM (Claude, 2026)) and a bibl xml:id="claude-crib" saying what it is.
+a respStmt ("LLM (Latin)", by the language) and a bibl xml:id="claude-crib" saying what it is.
 ana is #fromLatin, #fromOldEnglish or #fromFrench: law.html labels the crib "English crib of the Latin" etc.
 
 Input: JSON files of the form { "ClauseId#k": {"en": "…", "lang": "la"|"ang"|"xno"} }, where k counts the
@@ -28,22 +28,29 @@ LAWS = os.path.join(ROOT, 'oe-laws')
 FROM = {'la': '#fromLatin', 'ang': '#fromOldEnglish', 'xno': '#fromFrench'}
 LANG_NAME = {'la': 'Latin', 'ang': 'Old English', 'xno': 'Anglo-Norman French'}
 TEXT_AB = re.compile(r'<ab type="(?:liebermannText|editionText)"([^>]*)>.*?</ab>', re.S)
-RESP = '<respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>'
+RESP_TMPL = '<respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM ({})</name></respStmt>'
+SHORT = {'la': 'Latin', 'ang': 'Old English', 'xno': 'French'}
+TAIL = ' Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading'
+
+
+def resp(langs):
+    """The crib's name, by the language it renders: "LLM (Latin)" (Anya, Nov 2026)."""
+    return RESP_TMPL.format(' and '.join(SHORT[l] for l in ('la', 'ang', 'xno') if l in langs))
 
 
 def bibl(langs, incn):
+    def say(literal, of, short, extra):
+        return (f'A {literal} English rendering of the {of}, created for this database in 2026 with Claude, a large '
+                f'language model made by Anthropic. It is a crib to help the reader with the {short}, and should not be '
+                'treated as a separate translation. ' + extra)
     if incn:
-        what = ('An English crib of the Instituta Cnuti, relatively literal, made for this database in 2026 with '
-                'Claude, a large language model (LLM) made by Anthropic. Liebermann’s kinds of type (bold, spaced, '
-                'smaller type, round brackets) are carried over onto the English words that render the marked Latin. '
-                'It is an aid to reading the Latin, not a published translation')
+        what = say('relatively literal', 'Latin text of the Instituta Cnuti', 'Latin',
+                   'Liebermann’s kinds of type (bold, spaced, smaller type, round brackets) are carried over onto the English words that render the marked Latin')
     else:
         names = [LANG_NAME[l] for l in ('la', 'ang', 'xno') if l in langs]
         of = names[0] if len(names) == 1 else ', '.join(names[:-1]) + ' and ' + names[-1]
-        what = ('An English crib of the ' + of + (' texts' if len(names) > 1 else ' text') + ', semi-literal, made for this database in 2026 with Claude, '
-                'a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and '
-                'uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid '
-                'to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading')
+        short = ' and '.join(SHORT[l] for l in ('la', 'ang', 'xno') if l in langs)
+        what = say('semi-literal', of + (' texts' if len(names) > 1 else ' text'), short, TAIL.strip())
     return '<bibl xml:id="claude-crib" type="translation">' + what + '</bibl>'
 
 
@@ -82,7 +89,7 @@ def add(fid, items, incn=False):
     if t < 0:
         raise SystemExit(fid + ': no respStmt')
     t += len('</respStmt>')
-    s = s[:t] + '\n        ' + RESP + s[t:]
+    s = s[:t] + '\n        ' + resp(langs) + s[t:]
     lb = s.find('</listBibl>')
     if lb < 0:
         raise SystemExit(fid + ': no listBibl')

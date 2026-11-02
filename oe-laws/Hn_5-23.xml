@@ -6,7 +6,7 @@
         <title>Hn 5.23</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
-        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Latin)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,8 +21,8 @@
         <bibl type="legalText"><title>Leges Henrici Primi</title></bibl>
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">550</biblScope></bibl>
-          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
-          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, created for this database in 2026 with Claude, a large language model made by Anthropic. It is a crib to help the reader with Liebermann’s German, and should not be treated as a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">A semi-literal English rendering of the Latin text, created for this database in 2026 with Claude, a large language model made by Anthropic. It is a crib to help the reader with the Latin, and should not be treated as a separate translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
