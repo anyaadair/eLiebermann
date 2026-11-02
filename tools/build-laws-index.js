@@ -87,7 +87,7 @@ const summary = xml => {
             const ed = attr(other[1], 'source').replace(/^#/, '');
             // The LLM's crib of a text with no other translation (tools/add-crib.py)
             const crib = { '#fromLatin': 'Latin', '#fromOldEnglish': 'Old English', '#fromFrench': 'French' }[attr(other[1], 'ana')];
-            glossLabel = crib ? 'LLM (Claude, 2026), crib of the ' + crib : eds[ed] || ed || 'Translator not recorded';
+            glossLabel = crib ? 'LLM (' + crib + ')' : eds[ed] || ed || 'Translator not recorded';
         }
     }
     return { oe, oeLabel, oeLang, gloss, glossLabel };
@@ -227,6 +227,8 @@ let codeSources = {};
         const names = editors(xml);
         for (const m of xml.matchAll(/<bibl xml:id="([^"]+)"([^>]*)>([\s\S]*?)<\/bibl>/g)) {
             const [, id, attrs, inner] = m;
+            // the LLM's English of Liebermann's German only where a text is from it (not for notes alone)
+            if (id === 'claude' && !/<ab [^>]*source="#claude"/.test(xml)) continue;
             const page = (inner.match(/<biblScope unit="page">([^<]*)<\/biblScope>/) || [])[1] || '';
             const s = k.sources.get(id);
             if (!s) k.sources.set(id, { id, name: id === 'claude' ? 'LLM' : names[id] || SOURCE_NAMES[id] || id.charAt(0).toUpperCase() + id.slice(1),

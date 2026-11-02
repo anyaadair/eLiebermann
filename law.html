@@ -1135,7 +1135,9 @@ scripts:
         }
 
         // Editions and translations, then studies (only if there are any), without bullet points.
-        const srcs = Object.values(allSrcs);
+        // The LLM's English of Liebermann's German ('claude') only where the clause gives it (an <ab> from it).
+        const usesClaude = tei(doc, 'ab').some(a => a.getAttribute('source') === '#claude');
+        const srcs = Object.values(allSrcs).filter(x => x.id !== 'claude' || usesClaude);
         // The LLM's English of Liebermann's German comes last.
         [['Editions and translations', srcs.filter(x => x.type !== 'study' && x.id !== 'claude').concat(srcs.filter(x => x.id === 'claude'))],
          ['Studies', srcs.filter(x => x.type === 'study')]].forEach(([title, list]) => {
@@ -1235,11 +1237,7 @@ scripts:
         if (new URLSearchParams(location.search).get('all') === '1') btn.click();
 
         const src = el('p', 'source-line');
-        const changes = tei(doc, 'change');
-        const checked = changes.filter(c => c.getAttribute('type') === 'checked');
-        const made = changes.find(c => c.getAttribute('type') !== 'checked');
-        src.appendChild(document.createTextNode((made ? plainText(made) : 'Made from the OE Laws spreadsheet, not yet checked against the print.') + ' '));
-        checked.forEach(c => src.appendChild(document.createTextNode(plainText(c) + ' ')));
+        // Where the file was made from and its list of changes (<change>) stay in the file, private (Anya, Nov 2026).
         const a = el('a', null, 'View the TEI file');
         a.href = root + 'oe-laws/' + encodeURIComponent(row.file);
         src.appendChild(a);
