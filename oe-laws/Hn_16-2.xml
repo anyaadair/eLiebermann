@@ -41,13 +41,14 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-19">Generated from row 4284 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-11-02">Liebermann’s marks for his Erklärungen (Gesetze III) placed in the text, from the page images of vol. I.</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="16.2">
         <head><ref type="lawCode" target="law:Hn">Hn</ref> 16.2</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Hn 16.2" corresp="#wit-lat"><pb n="559" ed="#liebermann"/>Multus<ptr type="liebermannNote" n="37" target="#Hn_16-2.lnote.oe.37"/> sane respectus esse debet ac multa<ptr type="liebermannNote" n="38" target="#Hn_16-2.lnote.oe.38"/> diligencia, ne quis pacem regis infringat, maxime in eius uicinia.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Hn 16.2" corresp="#wit-lat"><pb n="559" ed="#liebermann"/>Multus<ptr type="liebermannNote" n="37" target="#Hn_16-2.lnote.oe.37"/> sane respectus esse debet ac multa<ptr type="liebermannNote" n="38" target="#Hn_16-2.lnote.oe.38"/> diligencia, ne quis pacem regis infringat, maxime<ptr type="liebermannNote" n="a" target="#Hn_16-2.lnote.oe.a"/> in eius uicinia.</ab>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 559 (two independent readings of the page images, differences settled against the page)</note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_16-2.lnote.oe.37" n="37" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">559</biblScope></bibl><seg type="original" xml:lang="de">-tis <hi rend="italic">Sc Hg</hi></seg><seg type="translation" xml:lang="en" source="#claude">-tis Sc Hg</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_16-2.lnote.oe.38" n="38" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">559</biblScope></bibl><seg type="original" xml:lang="de">-ti <hi rend="italic">Co Or</hi></seg><seg type="translation" xml:lang="en" source="#claude">-ti Co Or</seg></note>

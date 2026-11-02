@@ -50,13 +50,14 @@
     <revisionDesc>
       <change when="2026-10-19">Generated from row 2500 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS Lat added from Gesetze I, p. 522.</change>
+      <change when="2026-11-02">Liebermann’s marks for his Erklärungen (Gesetze III) placed in the text, from the page images of vol. I.</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="9">
         <head><ref type="lawCode" target="law:CHnCor">CHn cor</ref> 9</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" corresp="#wit-lat"><ptr type="liebermannNote" n="33" target="#CHnCor_9.lnote.oe.33"/><pb n="522" ed="#liebermann"/>Murdra etiam retro ab illa die qua in regem coronatus fui omnia<ptr type="liebermannNote" n="34" target="#CHnCor_9.lnote.oe.34"/> condono; et ea quæ amodo facta fuerint iuste emendentur secundum lagam regis Eadwardi<ptr type="liebermannNote" n="11" target="#CHnCor_9.lnote.oe.11"/>.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" corresp="#wit-lat"><ptr type="liebermannNote" n="33" target="#CHnCor_9.lnote.oe.33"/><pb n="522" ed="#liebermann"/>Murdra<ptr type="liebermannNote" n="a" target="#CHnCor_9.lnote.oe.a"/> etiam retro ab illa<ptr type="liebermannNote" n="b" target="#CHnCor_9.lnote.oe.b"/> die qua in regem coronatus fui omnia<ptr type="liebermannNote" n="34" target="#CHnCor_9.lnote.oe.34"/> condono; et ea quæ amodo facta fuerint iuste emendentur secundum lagam<ptr type="liebermannNote" n="c" target="#CHnCor_9.lnote.oe.c"/> regis Eadwardi<ptr type="liebermannNote" n="11" target="#CHnCor_9.lnote.oe.11"/>.</ab>
         <ab type="editionText" xml:lang="la" source="#robertson" n="9" corresp="#wit-h"><pb n="280" ed="#robertson"/>Murdra etiam retro ab illa die qua in regem coronatus fui omnia condono; et ea quae amodo facta fuerint iuste emendentur secundum lagam regis Edwardi.</ab>
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-h"><pb n="281" ed="#robertson"/>I likewise remit all murder fines incurred before the day on which I was crowned king, and for those which have been committed since then amends shall duly be made in accordance with the law of King Edward.</ab>
         <note type="comparison" source="#wormald-mel" n="401"><label>compare (formulae)</label> <ref target="clause:IICn_69-1">II Cn 69.1</ref> <quote>The Charter's 'praecipio', 'defendo', 'condono', 'concedo' and 'reddo' compare with Cnut's 'ic bebeode', 'ic lete riht', 'ic forbeode' and 'ic wylle'</quote></note>

@@ -10913,8 +10913,15 @@
 "translates": [],
 "verb": "translates",
 "page": "613",
-"text": "<hi rend=\"small\">Sacramentum liberalis</hi><ptr n=\"i\" target=\"InCn_III-44.lnote.oe.i\"/><hi rend=\"small\"> hominis, <hi rend=\"spaced\">quem</hi></hi><ptr n=\"25\" target=\"InCn_III-44.lnote.oe.25\"/><hi rend=\"small\"><hi rend=\"spaced\"> quidem</hi></hi><ptr n=\"26\" target=\"InCn_III-44.lnote.oe.26\"/><hi rend=\"small\"><hi rend=\"spaced\"> Angli</hi></hi><ptr n=\"27\" target=\"InCn_III-44.lnote.oe.27\"/><hi rend=\"small\"><hi rend=\"spaced\"> uocant</hi></hi><ptr n=\"28\" target=\"InCn_III-44.lnote.oe.28\"/><hi rend=\"small\"> tƿelfhende</hi><ptr n=\"29\" target=\"InCn_III-44.lnote.oe.29\"/> <seg type=\"recension\"><hi rend=\"small\">(man</hi><ptr n=\"30\" target=\"InCn_III-44.lnote.oe.30\"/><hi rend=\"small\">)</hi></seg><hi rend=\"small\">, <hi rend=\"spaced\">debet stare et</hi> ualere iuramentum sex</hi><ptr n=\"31\" target=\"InCn_III-44.lnote.oe.31\"/><hi rend=\"small\"> uillanorum, quia</hi><ptr n=\"32\" target=\"InCn_III-44.lnote.oe.32\"/><hi rend=\"small\"> prętium eius est</hi><ptr n=\"33\" target=\"InCn_III-44.lnote.oe.33\"/><hi rend=\"small\">, id est ƿeregeld</hi><ptr n=\"k\" target=\"InCn_III-44.lnote.oe.k\"/><ptr n=\"34\" target=\"InCn_III-44.lnote.oe.34\"/><hi rend=\"small\">, sex</hi><ptr n=\"35\" target=\"InCn_III-44.lnote.oe.35\"/><hi rend=\"small\"> uillanorum.</hi>",
+"text": "<hi rend=\"small\">Sacramentum liberalis<ptr n=\"i\" target=\"InCn_III-44.lnote.oe.i-2\"/></hi><ptr n=\"i\" target=\"InCn_III-44.lnote.oe.i\"/><hi rend=\"small\"> hominis, <hi rend=\"spaced\">quem</hi></hi><ptr n=\"25\" target=\"InCn_III-44.lnote.oe.25\"/><hi rend=\"small\"><hi rend=\"spaced\"> quidem</hi></hi><ptr n=\"26\" target=\"InCn_III-44.lnote.oe.26\"/><hi rend=\"small\"><hi rend=\"spaced\"> Angli</hi></hi><ptr n=\"27\" target=\"InCn_III-44.lnote.oe.27\"/><hi rend=\"small\"><hi rend=\"spaced\"> uocant</hi></hi><ptr n=\"28\" target=\"InCn_III-44.lnote.oe.28\"/><hi rend=\"small\"> tƿelfhende</hi><ptr n=\"29\" target=\"InCn_III-44.lnote.oe.29\"/> <seg type=\"recension\"><hi rend=\"small\">(man</hi><ptr n=\"30\" target=\"InCn_III-44.lnote.oe.30\"/><hi rend=\"small\">)</hi></seg><hi rend=\"small\">, <hi rend=\"spaced\">debet stare et</hi> ualere iuramentum sex</hi><ptr n=\"31\" target=\"InCn_III-44.lnote.oe.31\"/><hi rend=\"small\"> uillanorum, quia</hi><ptr n=\"32\" target=\"InCn_III-44.lnote.oe.32\"/><hi rend=\"small\"> prętium eius est</hi><ptr n=\"33\" target=\"InCn_III-44.lnote.oe.33\"/><hi rend=\"small\">, id est ƿeregeld<ptr n=\"k\" target=\"InCn_III-44.lnote.oe.k-2\"/></hi><ptr n=\"k\" target=\"InCn_III-44.lnote.oe.k\"/><ptr n=\"34\" target=\"InCn_III-44.lnote.oe.34\"/><hi rend=\"small\">, sex</hi><ptr n=\"35\" target=\"InCn_III-44.lnote.oe.35\"/><hi rend=\"small\"> uillanorum.</hi>",
 "notes": [
+{
+"n": "i",
+"t": "InCn_III-44.lnote.oe.i-2",
+"page": "332",
+"de": "<hi rend=\"italic\">S. Gl</hi> Thegn 1i; Adel 1f. g; <hi rend=\"italic\">Wb: liber(alis, -alitas)</hi>",
+"en": "<hi rend=\"italic\">See Gl</hi> Thegn 1i; Adel 1f. g; <hi rend=\"italic\">Wb: liber(alis, -alitas)</hi>"
+},
 {
 "n": "i",
 "t": "InCn_III-44.lnote.oe.i",
@@ -10987,6 +10994,13 @@
 },
 {
 "n": "k",
+"t": "InCn_III-44.lnote.oe.k-2",
+"page": "332",
+"de": "Kein Verfasserwechsel; <hi rend=\"italic\">s. o</hi>. Einl. 4",
+"en": "No change of author; <hi rend=\"italic\">see above</hi> Introduction 4"
+},
+{
+"n": "k",
 "t": "InCn_III-44.lnote.oe.k",
 "page": "613",
 "de": "<hi rend=\"italic\">endet Di und Ip Hunt, nämlich Lb Rc S Pl Ct Jo Va;</hi> Expliciunt (-cit <hi rend=\"italic\">Pl</hi>) hic institutiones (-ucio <hi rend=\"italic\">Pl;</hi> const. <hi rend=\"italic\">Jo</hi>) Cnuti regis <hi rend=\"italic\">fügen zu Pl S Jo Va</hi>",
@@ -11017,7 +11031,7 @@
 "translates": [],
 "verb": "translates",
 "page": "613",
-"text": "<ptr n=\"36\" target=\"InCn_III-45.lnote.oe.36\"/><hi rend=\"small\">Sacramentum presbiteri</hi> regulariter<ptr n=\"l\" target=\"InCn_III-45.lnote.oe.l\"/> <hi rend=\"small\">uiuentis tantundem ualet </hi><seg type=\"recension\"><hi rend=\"small\">(scilicet</hi><ptr n=\"37\" target=\"InCn_III-45.lnote.oe.37\"/><hi rend=\"small\">)</hi></seg><hi rend=\"small\"> sicut liberalis hominis, propter septem ęcclesiasticos ordines.</hi>",
+"text": "<ptr n=\"36\" target=\"InCn_III-45.lnote.oe.36\"/><hi rend=\"small\">Sacramentum presbiteri</hi> regulariter<ptr n=\"l\" target=\"InCn_III-45.lnote.oe.l\"/><ptr n=\"l\" target=\"InCn_III-45.lnote.oe.l-2\"/> <hi rend=\"small\">uiuentis tantundem ualet </hi><seg type=\"recension\"><hi rend=\"small\">(scilicet</hi><ptr n=\"37\" target=\"InCn_III-45.lnote.oe.37\"/><hi rend=\"small\">)</hi></seg><hi rend=\"small\"> sicut liberalis hominis, propter septem ęcclesiasticos ordines.</hi>",
 "notes": [
 {
 "n": "36",
@@ -11032,6 +11046,13 @@
 "page": "613",
 "de": "<hi rend=\"italic\">Verf. begünstigt den Priestercölibat öfters</hi>",
 "en": "The author frequently favours clerical celibacy"
+},
+{
+"n": "l",
+"t": "InCn_III-45.lnote.oe.l-2",
+"page": "332",
+"de": "<hi rend=\"italic\">Vgl</hi>. Einl. 9; <hi rend=\"italic\">s. Gl</hi> Cölibat 4a. 5b; Geistliche 18",
+"en": "<hi rend=\"italic\">Cf</hi>. Introduction 9; <hi rend=\"italic\">see Gl</hi> Cölibat 4a. 5b; Geistliche 18"
 },
 {
 "n": "37",
@@ -11547,7 +11568,7 @@
 "translates": [],
 "verb": "translates",
 "page": "614",
-"text": "<ptr n=\"l\" target=\"InCn_III-52.lnote.oe.l\"/>Qui diuisionem<ptr n=\"m\" target=\"InCn_III-52.lnote.oe.m\"/> habet iuxta terram regis, claudat<ptr n=\"n\" target=\"InCn_III-52.lnote.oe.n\"/> contra regem aut custodiat aut dilectione aut prętio adquirat, si uoluerit aliquam <seg type=\"recension\">(commoditatem<ptr n=\"9\" target=\"InCn_III-52.lnote.oe.9\"/>)</seg> in terra illa aisiam<ptr n=\"o\" target=\"InCn_III-52.lnote.oe.o\"/> habere.",
+"text": "<ptr n=\"l\" target=\"InCn_III-52.lnote.oe.l\"/>Qui diuisionem<ptr n=\"m\" target=\"InCn_III-52.lnote.oe.m\"/> habet iuxta terram regis, claudat<ptr n=\"n\" target=\"InCn_III-52.lnote.oe.n\"/><ptr n=\"n\" target=\"InCn_III-52.lnote.oe.n-2\"/> contra regem aut custodiat aut dilectione aut prętio adquirat, si uoluerit aliquam <seg type=\"recension\">(commoditatem<ptr n=\"9\" target=\"InCn_III-52.lnote.oe.9\"/>)</seg> in terra illa aisiam<ptr n=\"o\" target=\"InCn_III-52.lnote.oe.o\"/> habere.",
 "notes": [
 {
 "n": "l",
@@ -11569,6 +11590,13 @@
 "page": "614",
 "de": "<hi rend=\"italic\">Verf. warnt nicht vor Schaden durch eindringendes Vieh</hi> (Ine 40. 42, <hi rend=\"italic\">welche Gefahr jeder Nachbar bot</hi>), <hi rend=\"italic\">noch denkt er an Servitut auf Königsboden, sondern warnt vor der Chicane des mit Processvorrecht privilegirten Fiscalvogts, der wegen Schädigung der Königsdomäne an Ernte, Vieh, Wald oder Wild oder wegen Überfang klagen mochte gegen den nachbarlichen Grundbesitzer, wenn dieser nicht sein Gut deutlich einhegte</hi>",
 "en": "The author is not warning against damage from intruding cattle (Ine 40. 42, a danger that any neighbour posed), nor is he thinking of a servitude on royal land; rather he warns against the chicanery of the fiscal reeve, privileged with procedural prerogative, who might sue the neighbouring landowner for damage to the royal demesne in crops, cattle, woodland or game, or for encroachment, if the latter did not clearly fence in his estate"
+},
+{
+"n": "n",
+"t": "InCn_III-52.lnote.oe.n-2",
+"page": "333",
+"de": "Diese Anm. bessere man nach <hi rend=\"italic\">Gl</hi> Königsdomäne 8; Servitut. Gottfried von Anjou Herzog der Normandie schenkt Montebourg <hi rend=\"italic\">terram que est in suo aisimento inter suam terram et forestam</hi>; ed. <hi rend=\"italic\">EHR</hi> 1912, 430. Wilhelm II. befiehlt Sheriff und Baronen Kents: <hi rend=\"italic\">clausuras faciatis contra abbatem de Bello ad manerium de Wi</hi>; Davis <hi rend=\"italic\">Reg. Agnorm</hi>. n. 458",
+"en": "This note should be corrected in accordance with <hi rend=\"italic\">Gl</hi> Königsdomäne 8; Servitut. Geoffrey of Anjou, Duke of Normandy, grants Montebourg <hi rend=\"italic\">terram que est in suo aisimento inter suam terram et forestam</hi>; ed. <hi rend=\"italic\">EHR</hi> 1912, 430. William II orders the sheriff and barons of Kent: <hi rend=\"italic\">clausuras faciatis contra abbatem de Bello ad manerium de Wi</hi>; Davis <hi rend=\"italic\">Reg. Agnorm</hi>. n. 458"
 },
 {
 "n": "9",
@@ -11877,7 +11905,7 @@
 ],
 "verb": "draws on",
 "page": "615",
-"text": "<hi rend=\"small\">Ali[a]s</hi><ptr n=\"7\" target=\"InCn_III-56-2.lnote.oe.7\"/><hi rend=\"small\"> archiepiscopus et <hi rend=\"spaced\">filius regis</hi></hi><ptr n=\"g\" target=\"InCn_III-56-2.lnote.oe.g\"/><hi rend=\"small\"> <hi rend=\"spaced\">de legali coniuge habent similem secularem rectitudinem</hi></hi> in multis rebus, <hi rend=\"small\">hoc est in despectu</hi><ptr n=\"h\" target=\"InCn_III-56-2.lnote.oe.h\"/><hi rend=\"small\">,</hi> in<ptr n=\"8\" target=\"InCn_III-56-2.lnote.oe.8\"/> emendatione hominis occisi, quod dicitur manbote<ptr n=\"d\" target=\"InCn_III-56-2.lnote.oe.d\"/>, et in multis aliis diuersis<ptr n=\"9\" target=\"InCn_III-56-2.lnote.oe.9\"/> rebus, id est þere prętio<ptr n=\"i\" target=\"InCn_III-56-2.lnote.oe.i\"/> reddendo et forisfactura<seg type=\"recension\">(m)</seg><ptr n=\"k\" target=\"InCn_III-56-2.lnote.oe.k\"/><ptr n=\"10\" target=\"InCn_III-56-2.lnote.oe.10\"/>, utroque<ptr n=\"11\" target=\"InCn_III-56-2.lnote.oe.11\"/> ęque magnum et carum.",
+"text": "<hi rend=\"small\">Ali[a]s</hi><ptr n=\"7\" target=\"InCn_III-56-2.lnote.oe.7\"/><hi rend=\"small\"> archiepiscopus et <hi rend=\"spaced\">filius regis</hi></hi><ptr n=\"g\" target=\"InCn_III-56-2.lnote.oe.g\"/><hi rend=\"small\"> <hi rend=\"spaced\">de legali coniuge habent similem secularem rectitudinem</hi></hi> in multis rebus, <hi rend=\"small\">hoc est in despectu<ptr n=\"h\" target=\"InCn_III-56-2.lnote.oe.h-2\"/></hi><ptr n=\"h\" target=\"InCn_III-56-2.lnote.oe.h\"/><hi rend=\"small\">,</hi> in<ptr n=\"8\" target=\"InCn_III-56-2.lnote.oe.8\"/> emendatione hominis occisi, quod dicitur manbote<ptr n=\"d\" target=\"InCn_III-56-2.lnote.oe.d\"/>, et in multis aliis diuersis<ptr n=\"9\" target=\"InCn_III-56-2.lnote.oe.9\"/> rebus, id est þere prętio<ptr n=\"i\" target=\"InCn_III-56-2.lnote.oe.i\"/> reddendo et forisfactura<seg type=\"recension\">(m)</seg><ptr n=\"k\" target=\"InCn_III-56-2.lnote.oe.k\"/><ptr n=\"10\" target=\"InCn_III-56-2.lnote.oe.10\"/>, utroque<ptr n=\"11\" target=\"InCn_III-56-2.lnote.oe.11\"/> ęque magnum et carum.",
 "notes": [
 {
 "n": "7",
@@ -11892,6 +11920,13 @@
 "page": "615",
 "de": "æþeling <hi rend=\"italic\">stand in des Verfassers Quelle. Er verengt den Begriff (zum Unterschiede von Heinrichs I. Bastarden und im Hinblick auf den Thronfolger</hi> Wilhelm Æþeling) <hi rend=\"italic\">zu sehr; denn</hi> Eadgar Æþeling, <hi rend=\"italic\">der Bruder der Königin, war kein Königssohn</hi>",
 "en": "æþeling stood in the author's source. He narrows the concept too much (to distinguish it from Henry I's bastards and with an eye to the heir to the throne, William Æþeling); for Eadgar Æþeling, the queen's brother, was no king's son"
+},
+{
+"n": "h",
+"t": "InCn_III-56-2.lnote.oe.h-2",
+"page": "333",
+"de": "durch <hi rend=\"italic\">despectus</hi> scheint <hi rend=\"italic\">mundbryce</hi> übersetzt; <hi rend=\"italic\">ebd</hi>. Schutz 14; Mannbusse 16b; Wergeld 10a; Ungehorsam 25b",
+"en": "<hi rend=\"italic\">despectus</hi> seems to translate <hi rend=\"italic\">mundbryce</hi>; <hi rend=\"italic\">ibid</hi>. Schutz 14; Mannbusse 16b; Wergeld 10a; Ungehorsam 25b"
 },
 {
 "n": "h",

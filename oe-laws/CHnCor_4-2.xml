@@ -50,13 +50,14 @@
     <revisionDesc>
       <change when="2026-10-19">Generated from row 2491 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS Lat added from Gesetze I, p. 522.</change>
+      <change when="2026-11-02">Liebermann’s marks for his Erklärungen (Gesetze III) placed in the text, from the page images of vol. I.</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="4.2">
         <head><ref type="lawCode" target="law:CHnCor">CHn cor</ref> 4.2</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" corresp="#wit-lat"><pb n="522" ed="#liebermann"/>Et præcipio ut barones mei similiter se contineant erga filios et<ptr type="liebermannNote" n="8" target="#CHnCor_4-2.lnote.oe.8"/> filias uel uxores hominum suorum.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" corresp="#wit-lat"><pb n="522" ed="#liebermann"/>Et præcipio ut barones<ptr type="liebermannNote" n="a" target="#CHnCor_4-2.lnote.oe.a"/> mei similiter se contineant erga filios et<ptr type="liebermannNote" n="8" target="#CHnCor_4-2.lnote.oe.8"/> filias uel uxores hominum suorum.</ab>
         <ab type="editionText" xml:lang="la" source="#robertson" n="4.2" corresp="#wit-h"><pb n="278" ed="#robertson"/>Et praecipio ut barones mei similiter se contineant erga filios et filias vel uxores hominum suorum.</ab>
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-h"><pb n="279" ed="#robertson"/>And I enjoin upon my barons to act with like moderation towards the sons and daughters and the wives of their vassals.</ab>
         <note type="comparison" source="#wormald-mel" n="401"><label>compare (formulae)</label> <ref target="clause:IICn_69-1">II Cn 69.1</ref> <quote>The Charter's 'praecipio', 'defendo', 'condono', 'concedo' and 'reddo' compare with Cnut's 'ic bebeode', 'ic lete riht', 'ic forbeode' and 'ic wylle'</quote></note>

@@ -41,13 +41,14 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-19">Generated from row 4331 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-11-02">Liebermann’s marks for his Erklärungen (Gesetze III) placed in the text, from the page images of vol. I.</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="29.1a">
         <head><ref type="lawCode" target="law:Hn">Hn</ref> 29.1a</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Hn 29.1a" corresp="#wit-lat"><pb n="563" ed="#liebermann"/>Uillani uero uel cotseti<ptr type="liebermannNote" n="6" target="#Hn_29-1a.lnote.oe.6"/> uel ferdingi<ptr type="liebermannNote" n="7" target="#Hn_29-1a.lnote.oe.7"/> uel<ptr type="liebermannNote" n="8" target="#Hn_29-1a.lnote.oe.8"/> qui sunt huiusmodi<ptr type="liebermannNote" n="9" target="#Hn_29-1a.lnote.oe.9"/> uiles et<ptr type="liebermannNote" n="10" target="#Hn_29-1a.lnote.oe.10"/> inopes persone non sunt inter legum iudices<ptr type="liebermannNote" n="a" target="#Hn_29-1a.lnote.oe.a"/> numerandi.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Hn 29.1a" corresp="#wit-lat"><pb n="563" ed="#liebermann"/>Uillani uero uel cotseti<ptr type="liebermannNote" n="6" target="#Hn_29-1a.lnote.oe.6"/> uel ferdingi<ptr type="liebermannNote" n="7" target="#Hn_29-1a.lnote.oe.7"/><ptr type="liebermannNote" n="a" target="#Hn_29-1a.lnote.oe.a-2"/> uel<ptr type="liebermannNote" n="8" target="#Hn_29-1a.lnote.oe.8"/> qui sunt huiusmodi<ptr type="liebermannNote" n="9" target="#Hn_29-1a.lnote.oe.9"/> uiles et<ptr type="liebermannNote" n="10" target="#Hn_29-1a.lnote.oe.10"/> inopes persone non sunt inter legum iudices<ptr type="liebermannNote" n="a" target="#Hn_29-1a.lnote.oe.a"/> numerandi.</ab>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 563 (two independent readings of the page images, differences settled against the page)</note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_29-1a.lnote.oe.a" n="a" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">563</biblScope></bibl><seg type="original" xml:lang="de">Urtheilsfinder für den Iustitiam regis (29, 1<hi rend="italic">b</hi>) sind die vollfreien Grundeigner (<hi rend="italic">vgl.</hi> 9, 9) je in der Grafschaft, wo das Gericht sitzt</seg><seg type="translation" xml:lang="en" source="#claude">The doomsmen for the Iustitiam regis (29, 1<hi rend="italic">b</hi>) are the fully free landowners (cf. 9, 9) in each case in the shire where the court sits</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_29-1a.lnote.oe.6" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">563</biblScope></bibl><seg type="original" xml:lang="de">cocs. <hi rend="italic">Wh</hi></seg><seg type="translation" xml:lang="en" source="#claude">cocs. Wh</seg></note>

@@ -46,13 +46,14 @@
     <revisionDesc>
       <change when="2026-10-19">Generated from row 2537 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS Lat added from Gesetze I, p. 525.</change>
+      <change when="2026-11-02">Liebermann’s marks for his Erklärungen (Gesetze III) placed in the text, from the page images of vol. I.</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="5">
         <head><ref type="lawCode" target="law:HnLond">Hn Lond</ref> 5</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" corresp="#wit-lat"><pb n="525" ed="#liebermann"/>Et omnes homines Londoñ. sint quieti et liberi et omnes eorum<ptr type="liebermannNote" n="12" target="#HnLond_5.lnote.oe.12"/> res et<ptr type="liebermannNote" n="13" target="#HnLond_5.lnote.oe.13"/> per totam Angliam et per portus maris de theolonio<ptr type="liebermannNote" n="14" target="#HnLond_5.lnote.oe.14"/> et passagio et lestagio<ptr type="liebermannNote" n="15" target="#HnLond_5.lnote.oe.15"/> et omnibus aliis consuetudinibus.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" corresp="#wit-lat"><pb n="525" ed="#liebermann"/>Et<ptr type="liebermannNote" n="a" target="#HnLond_5.lnote.oe.a"/> omnes homines Londoñ. sint quieti et liberi et omnes eorum<ptr type="liebermannNote" n="12" target="#HnLond_5.lnote.oe.12"/> res et<ptr type="liebermannNote" n="13" target="#HnLond_5.lnote.oe.13"/> per totam Angliam et per portus maris de theolonio<ptr type="liebermannNote" n="14" target="#HnLond_5.lnote.oe.14"/> et passagio<ptr type="liebermannNote" n="b" target="#HnLond_5.lnote.oe.b"/> et lestagio<ptr type="liebermannNote" n="15" target="#HnLond_5.lnote.oe.15"/><ptr type="liebermannNote" n="c" target="#HnLond_5.lnote.oe.c"/> et omnibus aliis consuetudinibus.</ab>
         <ab type="editionText" xml:lang="la" source="#robertson" n="5" corresp="#wit-rs"><pb n="290" ed="#robertson"/>Et omnes homines Londoniarum sint quieti et liberi et omnes res eorum, et per totam Angliam et per portus maris, de theloneo et passagio et lestagio et omnibus aliis consuetudinibus.</ab>
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-rs"><pb n="291" ed="#robertson"/>And all the citizens of London and all their effects shall be exempt and free, both throughout England and in the seaports, from toll and fees for transit and market fees and all other dues.</ab>
         <note type="editorial">Added October 2026 from Robertson pp. 290–291 (text and translation); Liebermann’s text added from Gesetze I p. 525, October 2026 (two independent readings of the page images)</note>

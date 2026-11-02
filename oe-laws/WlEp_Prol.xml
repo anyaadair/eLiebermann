@@ -48,13 +48,14 @@
       <change when="2026-10-19">Generated from row 2312 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS Lp added from Gesetze I, p. 485.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS Lc added from Gesetze I, p. 485.</change>
+      <change when="2026-11-02">Liebermann’s marks for his Erklärungen (Gesetze III) placed in the text, from the page images of vol. I.</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="Prol.">
         <head><ref type="lawCode" target="law:WlEp">Wl ep</ref> Prol.</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" corresp="#wit-lp"><ptr type="liebermannNote" n="5" target="#WlEp_Prol.lnote.oe.5"/><pb n="485" ed="#liebermann"/>W[illelmus] Dei gratia rex Anglorum R[adulfo] Bainardo et G[osfrido<ptr type="liebermannNote" n="9" target="#WlEp_Prol.lnote.oe.9"/>] de Magnauilla, <ptr type="liebermannNote" n="10" target="#WlEp_Prol.lnote.oe.10"/>P[etro] de Ualoines ceterisque meis fidelibus de Essex<ptr type="liebermannNote" n="a" target="#WlEp_Prol.lnote.oe.a"/> et de Hertfordschire et de Middelsexe salutem.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" corresp="#wit-lp"><ptr type="liebermannNote" n="5" target="#WlEp_Prol.lnote.oe.5"/><ptr type="liebermannNote" n="a" target="#WlEp_Prol.lnote.oe.a-2"/><pb n="485" ed="#liebermann"/>W[illelmus] Dei gratia rex Anglorum R[adulfo] Bainardo<ptr type="liebermannNote" n="b" target="#WlEp_Prol.lnote.oe.b"/> et G[osfrido<ptr type="liebermannNote" n="9" target="#WlEp_Prol.lnote.oe.9"/>] de Magnauilla, <ptr type="liebermannNote" n="10" target="#WlEp_Prol.lnote.oe.10"/>P[etro] de Ualoines ceterisque meis fidelibus de Essex<ptr type="liebermannNote" n="a" target="#WlEp_Prol.lnote.oe.a"/> et de Hertfordschire et de Middelsexe salutem.</ab>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" corresp="#wit-lc"><pb n="485" ed="#liebermann"/>Willelmus<ptr type="liebermannNote" n="6" target="#WlEp_Prol.lnote.oe.6"/> gratia Dei rex Angl'<ptr type="liebermannNote" n="7" target="#WlEp_Prol.lnote.oe.7"/> comitibus<ptr type="liebermannNote" n="8" target="#WlEp_Prol.lnote.oe.8"/> uicecomitibus et omnibus Francigenis et Anglis, qui in episcopatu Remigii<ptr type="liebermannNote" n="aa" target="#WlEp_Prol.lnote.oe.aa"/> episcopi terras habent, salutem.</ab>
         <ab type="editionText" xml:lang="la" source="#robertson" n="Prol." corresp="#wit-lp"><pb n="234" ed="#robertson"/>W[illelmus], Dei gratia rex Anglorum, R[adulfo] Bainardo et G[osfrido] de Magnavilla, P[etro] de Valoines ceterisque meis fidelibus de Essex et de Hertfordschire et de Middelsexe—salutem.</ab>
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-lp"><pb n="235" ed="#robertson"/>William, by the grace of God King of England, to Ralph Bainard and Geoffrey de Maundeville and Peter de Valognes and the rest of my loyal subjects in Essex, Hertfordshire and Middlesex—greeting.</ab>

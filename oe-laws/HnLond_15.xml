@@ -46,13 +46,14 @@
     <revisionDesc>
       <change when="2026-10-19">Generated from row 2547 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS Lat added from Gesetze I, p. 526.</change>
+      <change when="2026-11-02">Liebermann’s marks for his Erklärungen (Gesetze III) placed in the text, from the page images of vol. I.</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="15">
         <head><ref type="lawCode" target="law:HnLond">Hn Lond</ref> 15</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" corresp="#wit-lat"><pb n="526" ed="#liebermann"/>Et ciues<ptr type="liebermannNote" n="1" target="#HnLond_15.lnote.oe.1"/> habeant fugationes suas ad fugandum, sicut melius et plenius habuerunt antecessores eorum, scilicet in<ptr type="liebermannNote" n="2" target="#HnLond_15.lnote.oe.2"/> Chiltre<ptr type="liebermannNote" n="3" target="#HnLond_15.lnote.oe.3"/> et Middelsexe<ptr type="liebermannNote" n="4" target="#HnLond_15.lnote.oe.4"/> et Sureie<ptr type="liebermannNote" n="5" target="#HnLond_15.lnote.oe.5"/>.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" corresp="#wit-lat"><pb n="526" ed="#liebermann"/>Et ciues<ptr type="liebermannNote" n="1" target="#HnLond_15.lnote.oe.1"/> habeant fugationes<ptr type="liebermannNote" n="a" target="#HnLond_15.lnote.oe.a"/> suas ad fugandum, sicut melius et plenius habuerunt antecessores eorum, scilicet in<ptr type="liebermannNote" n="2" target="#HnLond_15.lnote.oe.2"/> Chiltre<ptr type="liebermannNote" n="3" target="#HnLond_15.lnote.oe.3"/><ptr type="liebermannNote" n="b" target="#HnLond_15.lnote.oe.b"/> et Middelsexe<ptr type="liebermannNote" n="4" target="#HnLond_15.lnote.oe.4"/> et Sureie<ptr type="liebermannNote" n="5" target="#HnLond_15.lnote.oe.5"/>.</ab>
         <ab type="editionText" xml:lang="la" source="#robertson" n="15" corresp="#wit-rs"><pb n="292" ed="#robertson"/>Et cives habeant fugationes suas ad fugandum sicut melius et plenius habuerunt antecessores eorum, scilicet [Ch]iltre e Middelsexe e Sureie.</ab>
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-rs"><pb n="293" ed="#robertson"/>And the citizens shall enjoy as good and full hunting-rights as their ancestors ever did, namely, in the Chilterns, Middlesex and Surrey.</ab>
         <note type="editorial">Added October 2026 from Robertson pp. 292–293 (text and translation); Liebermann’s text added from Gesetze I p. 526, October 2026 (two independent readings of the page images)</note>

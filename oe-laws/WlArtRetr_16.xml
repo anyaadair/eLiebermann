@@ -46,13 +46,14 @@
     <revisionDesc>
       <change when="2026-10-19">Generated from row 2354 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS Lond added from Gesetze I, p. 491.</change>
+      <change when="2026-11-02">Liebermann’s marks for his Erklärungen (Gesetze III) placed in the text, from the page images of vol. I.</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="16">
         <head><ref type="lawCode" target="law:WlArtRetr">Wl art retr</ref> 16</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" corresp="#wit-lond"><ptr type="liebermannNote" n="54" target="#WlArtRetr_16.lnote.oe.54"/><pb n="491" ed="#liebermann"/>Item<ptr type="liebermannNote" n="e" target="#WlArtRetr_16.lnote.oe.e"/> si serui permanserint sine callumpnia per annum et diem in ciuitatibus nostris uel in burgis nostris<ptr type="liebermannNote" n="55" target="#WlArtRetr_16.lnote.oe.55"/> muro uallatis uel in castellis<ptr type="liebermannNote" n="56" target="#WlArtRetr_16.lnote.oe.56"/> nostris, a die illa liberi homines<ptr type="liebermannNote" n="57" target="#WlArtRetr_16.lnote.oe.57"/> efficiuntur<ptr type="liebermannNote" n="58" target="#WlArtRetr_16.lnote.oe.58"/> et liberi a iugo seruitutis sue sint in perpetuum.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" corresp="#wit-lond"><ptr type="liebermannNote" n="54" target="#WlArtRetr_16.lnote.oe.54"/><pb n="491" ed="#liebermann"/>Item<ptr type="liebermannNote" n="e" target="#WlArtRetr_16.lnote.oe.e"/> si serui permanserint sine callumpnia per annum et diem in ciuitatibus<ptr type="liebermannNote" n="a" target="#WlArtRetr_16.lnote.oe.a"/> nostris uel in burgis nostris<ptr type="liebermannNote" n="55" target="#WlArtRetr_16.lnote.oe.55"/> muro uallatis uel in castellis<ptr type="liebermannNote" n="56" target="#WlArtRetr_16.lnote.oe.56"/> nostris, a die illa liberi homines<ptr type="liebermannNote" n="57" target="#WlArtRetr_16.lnote.oe.57"/> efficiuntur<ptr type="liebermannNote" n="58" target="#WlArtRetr_16.lnote.oe.58"/> et liberi a iugo seruitutis sue sint in perpetuum.</ab>
         <ab type="editionText" xml:lang="la" source="#robertson" n="16" corresp="#wit-rs"><pb n="250" ed="#robertson"/>Item si servi permanserint sine callumpnia per annum et diem in civitatibus nostris vel in burgis nostris muro vallatis vel in castellis nostris, a die illa liberi homines efficiuntur, et liberi a iugo servitutis suae sint in perpetuum.</ab>
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-rs"><pb n="251" ed="#robertson"/>Likewise, if slaves have remained for a year and a day, without being claimed, in our cities or in our walled boroughs or in our castles, from that day they shall become free men and shall remain for ever free from the yoke of slavery.</ab>
         <note type="comparison" source="#liebermann" n="491">Glanvilla V 5; <ref target="clause:WlArtRetr_11">Wl art retr 11</ref></note>

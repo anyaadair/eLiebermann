@@ -46,13 +46,14 @@
     <revisionDesc>
       <change when="2026-10-19">Generated from row 2540 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS Lat added from Gesetze I, p. 525.</change>
+      <change when="2026-11-02">Liebermann’s marks for his Erklärungen (Gesetze III) placed in the text, from the page images of vol. I.</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="8">
         <head><ref type="lawCode" target="law:HnLond">Hn Lond</ref> 8</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" corresp="#wit-lat"><pb n="525" ed="#liebermann"/>Et amplius non sit miskenninga<ptr type="liebermannNote" n="27" target="#HnLond_8.lnote.oe.27"/> in hustenge<ptr type="liebermannNote" n="28" target="#HnLond_8.lnote.oe.28"/> neque in folkesmote<ptr type="liebermannNote" n="29" target="#HnLond_8.lnote.oe.29"/> neque in aliis placitis infra ciuitatem.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" corresp="#wit-lat"><pb n="525" ed="#liebermann"/>Et<ptr type="liebermannNote" n="a" target="#HnLond_8.lnote.oe.a"/> amplius non sit miskenninga<ptr type="liebermannNote" n="27" target="#HnLond_8.lnote.oe.27"/><ptr type="liebermannNote" n="b" target="#HnLond_8.lnote.oe.b"/> in hustenge<ptr type="liebermannNote" n="28" target="#HnLond_8.lnote.oe.28"/><ptr type="liebermannNote" n="c" target="#HnLond_8.lnote.oe.c"/> neque in folkesmote<ptr type="liebermannNote" n="29" target="#HnLond_8.lnote.oe.29"/><ptr type="liebermannNote" n="d" target="#HnLond_8.lnote.oe.d"/> neque in aliis placitis infra ciuitatem.</ab>
         <ab type="editionText" xml:lang="la" source="#robertson" n="8" corresp="#wit-rs"><pb n="290" ed="#robertson"/>Et amplius non sit meskenninge in hustinge neque in folkesimote neque in aliis placitis infra civitatem.</ab>
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-rs"><pb n="291" ed="#robertson"/>And further there shall be no "miskenning" in a husting or a public meeting or in any other courts inside the city.</ab>
         <note type="editorial">Added October 2026 from Robertson pp. 290–291 (text and translation); Liebermann’s text added from Gesetze I p. 525, October 2026 (two independent readings of the page images)</note>

@@ -43,13 +43,14 @@
     <revisionDesc>
       <change when="2026-10-19">Generated from row 2517 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS Sc added from Gesetze I, p. 523.</change>
+      <change when="2026-11-02">Liebermann’s marks for his Erklärungen (Gesetze III) placed in the text, from the page images of vol. I.</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="Epil.">
         <head><ref type="lawCode" target="law:HnMon">Hn mon</ref> Epil.</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" corresp="#wit-sc"><pb n="523" ed="#liebermann"/>Teste Willelmo<ptr type="liebermannNote" n="22" target="#HnMon_Epil.lnote.oe.22"/> cancellario et Roberto comite de Mellent et R[odberto] filio Hamonis et R[icardo] de Retuers<ptr type="liebermannNote" n="23" target="#HnMon_Epil.lnote.oe.23"/>. Apud Westmonasterium in natale Domini.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" corresp="#wit-sc"><pb n="523" ed="#liebermann"/>Teste Willelmo<ptr type="liebermannNote" n="22" target="#HnMon_Epil.lnote.oe.22"/><ptr type="liebermannNote" n="a" target="#HnMon_Epil.lnote.oe.a"/> cancellario et Roberto comite de Mellent<ptr type="liebermannNote" n="b" target="#HnMon_Epil.lnote.oe.b"/> et R[odberto]<ptr type="liebermannNote" n="c" target="#HnMon_Epil.lnote.oe.c"/> filio Hamonis et R[icardo]<ptr type="liebermannNote" n="c" target="#HnMon_Epil.lnote.oe.c"/> de Retuers<ptr type="liebermannNote" n="23" target="#HnMon_Epil.lnote.oe.23"/>. Apud Westmonasterium in natale Domini.</ab>
         <ab type="editionText" xml:lang="la" source="#robertson" n="Epil." corresp="#wit-sc"><pb n="284" ed="#robertson"/>Teste Willelmo cancellario et Roberto Comite de Mellent et R[odberto] filio Hamonis et R[icardo] de Retuers. Apud Westmonasterium in natale Domini.</ab>
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-sc"><pb n="285" ed="#robertson"/>Witnesses: Chancellor William and Earl Robert de Meulan and Robert FitzHamo and Richard de Retuers. At Westminster at Christmas.</ab>
         <note type="editorial">Added October 2026 from Robertson pp. 284–285 (text and translation); Liebermann’s text added from Gesetze I p. 523, October 2026 (two independent readings of the page images)</note>

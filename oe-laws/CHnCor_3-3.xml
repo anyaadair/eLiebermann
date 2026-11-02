@@ -48,13 +48,14 @@
     <revisionDesc>
       <change when="2026-10-19">Generated from row 2488 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS Lat added from Gesetze I, p. 521.</change>
+      <change when="2026-11-02">Liebermann’s marks for his Erklärungen (Gesetze III) placed in the text, from the page images of vol. I.</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="3.3">
         <head><ref type="lawCode" target="law:CHnCor">CHn cor</ref> 3.3</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" corresp="#wit-lat"><pb n="521" ed="#liebermann"/>Et si, mortuo marito<ptr type="liebermannNote" n="33" target="#CHnCor_3-3.lnote.oe.33"/>, uxor eius<ptr type="liebermannNote" n="34" target="#CHnCor_3-3.lnote.oe.34"/> remanserit et sine liberis fuerit, dotem suam<ptr type="liebermannNote" n="35" target="#CHnCor_3-3.lnote.oe.35"/> et maritationem<ptr type="liebermannNote" n="36" target="#CHnCor_3-3.lnote.oe.36"/> habebit; et eam non dabo marito nisi secundum uelle suum.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" corresp="#wit-lat"><pb n="521" ed="#liebermann"/>Et si, mortuo marito<ptr type="liebermannNote" n="33" target="#CHnCor_3-3.lnote.oe.33"/>, uxor eius<ptr type="liebermannNote" n="34" target="#CHnCor_3-3.lnote.oe.34"/> remanserit et sine liberis fuerit, dotem<ptr type="liebermannNote" n="a" target="#CHnCor_3-3.lnote.oe.a"/> suam<ptr type="liebermannNote" n="35" target="#CHnCor_3-3.lnote.oe.35"/> et maritationem<ptr type="liebermannNote" n="36" target="#CHnCor_3-3.lnote.oe.36"/> habebit; et eam non dabo marito nisi secundum uelle suum.</ab>
         <ab type="editionText" xml:lang="la" source="#robertson" n="3.2" corresp="#wit-h"><pb n="278" ed="#robertson"/>Et si, mortuo viro, uxor eius remanserit et sine liberis fuerit, dotem suam et maritationem habebit, et eam non dabo marito nisi secundum velle suum.</ab>
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-h"><pb n="279" ed="#robertson"/>And if, on the death of her husband, a wife is left and has no children, she shall have her marriage-settlement and dowry, and I shall not bestow her in marriage except in accordance with her wishes.</ab>
         <note type="editorial">Added October 2026 from Robertson pp. 278–279 (text and translation); Robertson's 3 § 2 (Liebermann's 3,3).; Liebermann’s text added from Gesetze I p. 521, October 2026 (two independent readings of the page images)</note>

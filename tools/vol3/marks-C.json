@@ -1,0 +1,1410 @@
+[
+ {
+  "id": "Episc_2.lnote.de.1",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Vol. I p. 477: no number in German 2."
+ },
+ {
+  "id": "Episc_7.lnote.de.1",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Vol. I p. 477: no number in German 7."
+ },
+ {
+  "id": "Episc_8.lnote.de.0",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Unnumbered note to the whole clause in vol. III."
+ },
+ {
+  "id": "Ger_1.lnote.de.4",
+  "text": "de",
+  "ab": null,
+  "after": "Landgütern",
+  "occurrence": 1,
+  "none": false,
+  "doubt": "Mark stands in clause 1,1, i.e. in file Ger_1-1's German block (not Ger_1). Ger_1-1 already has <ptr n=\"4\" target=\"#missing\"/> after this word: retarget it to #Ger_1.lnote.de.4 (or move the note into Ger_1-1).",
+  "file": "Ger_1-1"
+ },
+ {
+  "id": "Ger_1.lnote.de.5",
+  "text": "de",
+  "ab": null,
+  "after": "frühzeitiger",
+  "occurrence": 1,
+  "none": false,
+  "doubt": "Mark stands in clause 1,1, i.e. in file Ger_1-1's German block (not Ger_1). Ger_1-1 already has <ptr n=\"5\" target=\"#missing\"/> after this word: retarget it to #Ger_1.lnote.de.5 (or move the note into Ger_1-1).",
+  "file": "Ger_1-1"
+ },
+ {
+  "id": "Ger_1.lnote.de.6",
+  "text": "de",
+  "ab": null,
+  "after": "Winterhügel",
+  "occurrence": 1,
+  "none": false,
+  "doubt": "Mark stands in clause 1,1, i.e. in file Ger_1-1's German block (not Ger_1). Ger_1-1 already has <ptr n=\"6\" target=\"#missing\"/> after this word: retarget it to #Ger_1.lnote.de.6 (or move the note into Ger_1-1).",
+  "file": "Ger_1-1"
+ },
+ {
+  "id": "Ger_Inscr.lnote.de.0",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Unnumbered note to the whole clause in vol. III."
+ },
+ {
+  "id": "IAtr_1-9.lnote.de.0",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Unnumbered note to the whole clause in vol. III."
+ },
+ {
+  "id": "IAtr_4-3.lnote.de.0",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Unnumbered note to the whole clause in vol. III."
+ },
+ {
+  "id": "IVAtr_6.lnote.de.0",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Unnumbered note to the whole clause in vol. III."
+ },
+ {
+  "id": "IVAtr_8.lnote.de.3",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Vol. I p. 237: only 1 (empfiehlt) and 2 (Earls) printed in 8; logically after 'Dänen'."
+ },
+ {
+  "id": "IVAtr_9.lnote.de.1",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Vol. I p. 237: no number in 9 (only an asterisk after 'bisher' for the margin)."
+ },
+ {
+  "id": "Northu_3.lnote.de.1",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Vol. I p. 380: no number in German 3."
+ },
+ {
+  "id": "Northu_36.lnote.de.0",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Unnumbered note to the whole clause in vol. III."
+ },
+ {
+  "id": "Northu_61.lnote.de.0",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Unnumbered note to the whole clause in vol. III."
+ },
+ {
+  "id": "Prom-Reg_1-2.lnote.de.0",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Unnumbered note to the whole clause in vol. III."
+ },
+ {
+  "id": "Prom-Reg_1-3.lnote.de.0",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Unnumbered note to the whole clause in vol. III."
+ },
+ {
+  "id": "Prom-Reg_Sacr-cor-Prol.lnote.de.1-2",
+  "text": "de",
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": false,
+  "doubt": "Vol. I p. 215: '¹Versprechen² des Königs' (Inscr.) — mark 1 stands at the very START of the German block, before 'Versprechen'. The file already has a ptr there, but it targets #Prom-Reg_Sacr-cor-Prol.lnote.de.1 (the Prolog note 1, which belongs after 'Kingston'); retarget that first ptr to this note.",
+  "before": "Versprechen"
+ },
+ {
+  "id": "Prom-Reg_Sacr-cor-Prol.lnote.de.2-2",
+  "text": "de",
+  "ab": null,
+  "after": "Versprechen",
+  "occurrence": 1,
+  "none": false,
+  "doubt": "Inscr. mark 2. The file already has a ptr after the 1st 'Versprechen' targeting #Prom-Reg_Sacr-cor-Prol.lnote.de.2 (Prolog note 2, which belongs after the 2nd 'Versprechen'); retarget that ptr to this note."
+ },
+ {
+  "id": "Rect_1.lnote.de.1-2",
+  "text": "de",
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": false,
+  "doubt": "PROBLEM: this is vol. III 'Rect Insc] 1)'. In vol. I p. 444 the mark stands after 'Insc.' before the German heading 'Gerechtsame der Leute [des Edelguts]' — that heading is not in Rect_1's German block (it starts 'Recht und Pflicht des Thegn') and there is no Rect_Inscr file. Either add the heading or treat as unplaceable."
+ },
+ {
+  "id": "Rect_10-to-10-1.lnote.de.1-2",
+  "text": "de",
+  "ab": null,
+  "after": "Wenn",
+  "occurrence": 1,
+  "none": false,
+  "doubt": "The file ALREADY has <ptr n=\"1\"> right after this word, but it targets #Rect_10-to-10-1.lnote.de.1 (the first clause's note 1); retarget that ptr to this note instead of adding a second mark."
+ },
+ {
+  "id": "Rect_18-to-18-1.lnote.de.1-2",
+  "text": "de",
+  "ab": null,
+  "after": "Stück",
+  "occurrence": 1,
+  "none": false,
+  "doubt": "The file ALREADY has <ptr n=\"1\"> right after this word, but it targets #Rect_18-to-18-1.lnote.de.1 (the first clause's note 1); retarget that ptr to this note instead of adding a second mark."
+ },
+ {
+  "id": "Rect_20-to-20-2.lnote.de.1-2",
+  "text": "de",
+  "ab": null,
+  "after": "gewährt",
+  "occurrence": 1,
+  "none": false,
+  "doubt": "The file ALREADY has <ptr n=\"1\"> right after this word, but it targets #Rect_20-to-20-2.lnote.de.1 (the first clause's note 1); retarget that ptr to this note instead of adding a second mark."
+ },
+ {
+  "id": "Rect_20-to-20-2.lnote.de.2-2",
+  "text": "de",
+  "ab": null,
+  "after": "Gutsherrn",
+  "occurrence": 1,
+  "none": false,
+  "doubt": "The file ALREADY has <ptr n=\"2\"> right after this word, but it targets #Rect_20-to-20-2.lnote.de.2 (the first clause's note 2); retarget that ptr to this note instead of adding a second mark."
+ },
+ {
+  "id": "Rect_21-to-21-3.lnote.de.1-2",
+  "text": "de",
+  "ab": null,
+  "after": "Gegend",
+  "occurrence": 1,
+  "none": false,
+  "doubt": "The file ALREADY has <ptr n=\"1\"> right after this word, but it targets #Rect_21-to-21-3.lnote.de.1 (the first clause's note 1); retarget that ptr to this note instead of adding a second mark."
+ },
+ {
+  "id": "Rect_21-to-21-3.lnote.de.1-3",
+  "text": "de",
+  "ab": null,
+  "after": "Ehre",
+  "occurrence": 1,
+  "none": false,
+  "doubt": "The file ALREADY has <ptr n=\"1\"> right after this word, but it targets #Rect_21-to-21-3.lnote.de.1 (the first clause's note 1); retarget that ptr to this note instead of adding a second mark."
+ },
+ {
+  "id": "Rect_3-to-3-4.lnote.de.1-2",
+  "text": "de",
+  "ab": null,
+  "after": "Acker",
+  "occurrence": 1,
+  "none": false,
+  "doubt": "The file ALREADY has <ptr n=\"1\"> right after this word, but it targets #Rect_3-to-3-4.lnote.de.1 (the first clause's note 1); retarget that ptr to this note instead of adding a second mark."
+ },
+ {
+  "id": "Rect_3-to-3-4.lnote.de.2-2",
+  "text": "de",
+  "ab": null,
+  "after": "Garbe",
+  "occurrence": 1,
+  "none": false,
+  "doubt": "The file ALREADY has <ptr n=\"2\"> right after this word, but it targets #Rect_3-to-3-4.lnote.de.2 (the first clause's note 2); retarget that ptr to this note instead of adding a second mark."
+ },
+ {
+  "id": "Rect_3-to-3-4.lnote.de.1-3",
+  "text": "de",
+  "ab": null,
+  "after": "Grundzins",
+  "occurrence": 1,
+  "none": false,
+  "doubt": "The file ALREADY has <ptr n=\"1\"> right after this word, but it targets #Rect_3-to-3-4.lnote.de.1 (the first clause's note 1); retarget that ptr to this note instead of adding a second mark."
+ },
+ {
+  "id": "Rect_3-to-3-4.lnote.de.1-4",
+  "text": "de",
+  "ab": null,
+  "after": "Äcker",
+  "occurrence": 1,
+  "none": false,
+  "doubt": "The file ALREADY has <ptr n=\"1\"> right after this word, but it targets #Rect_3-to-3-4.lnote.de.1 (the first clause's note 1); retarget that ptr to this note instead of adding a second mark."
+ },
+ {
+  "id": "Rect_3-to-3-4.lnote.de.1-5",
+  "text": "de",
+  "ab": null,
+  "after": "Herdpfennig",
+  "occurrence": 1,
+  "none": false,
+  "doubt": "The file ALREADY has <ptr n=\"1\"> right after this word, but it targets #Rect_3-to-3-4.lnote.de.1 (the first clause's note 1); retarget that ptr to this note instead of adding a second mark."
+ },
+ {
+  "id": "Rect_3-to-3-4.lnote.de.2-3",
+  "text": "de",
+  "ab": null,
+  "after": "freien",
+  "occurrence": 1,
+  "none": false,
+  "doubt": "The file ALREADY has <ptr n=\"2\"> right after this word, but it targets #Rect_3-to-3-4.lnote.de.2 (the first clause's note 2); retarget that ptr to this note instead of adding a second mark."
+ },
+ {
+  "id": "Rect_4-3-to-4-3c.lnote.de.1-2",
+  "text": "de",
+  "ab": null,
+  "after": "nach",
+  "occurrence": 1,
+  "none": false,
+  "doubt": "The file ALREADY has <ptr n=\"1\"> right after this word, but it targets #Rect_4-3-to-4-3c.lnote.de.1 (the first clause's note 1); retarget that ptr to this note instead of adding a second mark."
+ },
+ {
+  "id": "Rect_4-3-to-4-3c.lnote.de.1-3",
+  "text": "de",
+  "ab": null,
+  "after": "gebe",
+  "occurrence": 1,
+  "none": false,
+  "doubt": "The file ALREADY has <ptr n=\"1\"> right after this word, but it targets #Rect_4-3-to-4-3c.lnote.de.1 (the first clause's note 1); retarget that ptr to this note instead of adding a second mark."
+ },
+ {
+  "id": "Rect_4-3-to-4-3c.lnote.de.1-4",
+  "text": "de",
+  "ab": null,
+  "after": "sich",
+  "occurrence": 1,
+  "none": false,
+  "doubt": "The file ALREADY has <ptr n=\"1\"> right after this word, but it targets #Rect_4-3-to-4-3c.lnote.de.1 (the first clause's note 1); retarget that ptr to this note instead of adding a second mark."
+ },
+ {
+  "id": "Rect_4-a-to-4-2c.lnote.de.1-2",
+  "text": "de",
+  "ab": null,
+  "after": "Zinspfennig",
+  "occurrence": 1,
+  "none": false,
+  "doubt": "The file ALREADY has <ptr n=\"1\"> right after this word, but it targets #Rect_4-a-to-4-2c.lnote.de.1 (the first clause's note 1); retarget that ptr to this note instead of adding a second mark."
+ },
+ {
+  "id": "Rect_4-a-to-4-2c.lnote.de.2-2",
+  "text": "de",
+  "ab": null,
+  "after": "Festtag",
+  "occurrence": 2,
+  "none": false,
+  "doubt": "The file ALREADY has <ptr n=\"2\"> right after this word, but it targets #Rect_4-a-to-4-2c.lnote.de.2 (the first clause's note 2); retarget that ptr to this note instead of adding a second mark."
+ },
+ {
+  "id": "Rect_4-a-to-4-2c.lnote.de.3-2",
+  "text": "de",
+  "ab": null,
+  "after": "Ostern",
+  "occurrence": 2,
+  "none": false,
+  "doubt": "The file ALREADY has <ptr n=\"3\"> right after this word, but it targets #Rect_4-a-to-4-2c.lnote.de.3 (the first clause's note 3); retarget that ptr to this note instead of adding a second mark."
+ },
+ {
+  "id": "Rect_4-a-to-4-2c.lnote.de.1-3",
+  "text": "de",
+  "ab": null,
+  "after": "[Vieh]hürde",
+  "occurrence": 1,
+  "none": false,
+  "doubt": "The file ALREADY has <ptr n=\"1\"> right after this word, but it targets #Rect_4-a-to-4-2c.lnote.de.1 (the first clause's note 1); retarget that ptr to this note instead of adding a second mark."
+ },
+ {
+  "id": "Rect_4-a-to-4-2c.lnote.de.1-4",
+  "text": "de",
+  "ab": null,
+  "after": "Herrn",
+  "occurrence": 2,
+  "none": false,
+  "doubt": "The file ALREADY has <ptr n=\"1\"> right after this word, but it targets #Rect_4-a-to-4-2c.lnote.de.1 (the first clause's note 1); retarget that ptr to this note instead of adding a second mark."
+ },
+ {
+  "id": "Rect_4-a-to-4-2c.lnote.de.2-3",
+  "text": "de",
+  "ab": null,
+  "after": "erholen",
+  "occurrence": 1,
+  "none": false,
+  "doubt": "The file ALREADY has <ptr n=\"2\"> right after this word, but it targets #Rect_4-a-to-4-2c.lnote.de.2 (the first clause's note 2); retarget that ptr to this note instead of adding a second mark."
+ },
+ {
+  "id": "Rect_4-a-to-4-2c.lnote.de.1-5",
+  "text": "de",
+  "ab": null,
+  "after": "pflügen",
+  "occurrence": 2,
+  "none": false,
+  "doubt": "The file ALREADY has <ptr n=\"1\"> right after this word, but it targets #Rect_4-a-to-4-2c.lnote.de.1 (the first clause's note 1); retarget that ptr to this note instead of adding a second mark."
+ },
+ {
+  "id": "Rect_4-a-to-4-2c.lnote.de.2-4",
+  "text": "de",
+  "ab": null,
+  "after": "Pflügen",
+  "occurrence": 1,
+  "none": false,
+  "doubt": "The file ALREADY has <ptr n=\"2\"> right after this word, but it targets #Rect_4-a-to-4-2c.lnote.de.2 (the first clause's note 2); retarget that ptr to this note instead of adding a second mark."
+ },
+ {
+  "id": "Rect_4-a-to-4-2c.lnote.de.1-6",
+  "text": "de",
+  "ab": null,
+  "after": "Pachtpflügen",
+  "occurrence": 1,
+  "none": false,
+  "doubt": "The file ALREADY has <ptr n=\"1\"> right after this word, but it targets #Rect_4-a-to-4-2c.lnote.de.1 (the first clause's note 1); retarget that ptr to this note instead of adding a second mark."
+ },
+ {
+  "id": "Rect_4-a-to-4-2c.lnote.de.1-7",
+  "text": "de",
+  "ab": null,
+  "after": "zwei",
+  "occurrence": 3,
+  "none": false,
+  "doubt": "The file ALREADY has <ptr n=\"1\"> right after this word, but it targets #Rect_4-a-to-4-2c.lnote.de.1 (the first clause's note 1); retarget that ptr to this note instead of adding a second mark."
+ },
+ {
+  "id": "Rect_4-a-to-4-2c.lnote.de.2-5",
+  "text": "de",
+  "ab": null,
+  "after": "Hochjagdhund",
+  "occurrence": 1,
+  "none": false,
+  "doubt": "The file ALREADY has <ptr n=\"2\"> right after this word, but it targets #Rect_4-a-to-4-2c.lnote.de.2 (the first clause's note 2); retarget that ptr to this note instead of adding a second mark."
+ },
+ {
+  "id": "Rect_4-a-to-4-2c.lnote.de.3-3",
+  "text": "de",
+  "ab": null,
+  "after": "füttern",
+  "occurrence": 1,
+  "none": false,
+  "doubt": "The file ALREADY has <ptr n=\"3\"> right after this word, but it targets #Rect_4-a-to-4-2c.lnote.de.3 (the first clause's note 3); retarget that ptr to this note instead of adding a second mark."
+ },
+ {
+  "id": "Rect_4-a-to-4-2c.lnote.de.1-8",
+  "text": "de",
+  "ab": null,
+  "after": "Domänen-Schweinehirten",
+  "occurrence": 1,
+  "none": false,
+  "doubt": "The file ALREADY has <ptr n=\"1\"> right after this word, but it targets #Rect_4-a-to-4-2c.lnote.de.1 (the first clause's note 1); retarget that ptr to this note instead of adding a second mark."
+ },
+ {
+  "id": "Rect_5-2-to-5-5.lnote.de.1-2",
+  "text": "de",
+  "ab": null,
+  "after": "ausgestattet",
+  "occurrence": 1,
+  "none": false,
+  "doubt": "The file ALREADY has <ptr n=\"1\"> right after this word, but it targets #Rect_5-2-to-5-5.lnote.de.1 (the first clause's note 1); retarget that ptr to this note instead of adding a second mark."
+ },
+ {
+  "id": "Rect_5-2-to-5-5.lnote.de.2-2",
+  "text": "de",
+  "ab": null,
+  "after": "welches",
+  "occurrence": 1,
+  "none": false,
+  "doubt": "The file ALREADY has <ptr n=\"2\"> right after this word, but it targets #Rect_5-2-to-5-5.lnote.de.2 (the first clause's note 2); retarget that ptr to this note instead of adding a second mark."
+ },
+ {
+  "id": "Rect_5-2-to-5-5.lnote.de.1-3",
+  "text": "de",
+  "ab": null,
+  "after": "gestellter",
+  "occurrence": 1,
+  "none": false,
+  "doubt": "The file ALREADY has <ptr n=\"1\"> right after this word, but it targets #Rect_5-2-to-5-5.lnote.de.1 (the first clause's note 1); retarget that ptr to this note instead of adding a second mark."
+ },
+ {
+  "id": "Rect_5-2-to-5-5.lnote.de.2-3",
+  "text": "de",
+  "ab": null,
+  "after": "ich",
+  "occurrence": 1,
+  "none": false,
+  "doubt": "The file ALREADY has <ptr n=\"2\"> right after this word, but it targets #Rect_5-2-to-5-5.lnote.de.2 (the first clause's note 2); retarget that ptr to this note instead of adding a second mark."
+ },
+ {
+  "id": "Rect_5-2-to-5-5.lnote.de.1-4",
+  "text": "de",
+  "ab": null,
+  "after": "bemächtige",
+  "occurrence": 1,
+  "none": false,
+  "doubt": "The file ALREADY has <ptr n=\"1\"> right after this word, but it targets #Rect_5-2-to-5-5.lnote.de.1 (the first clause's note 1); retarget that ptr to this note instead of adding a second mark."
+ },
+ {
+  "id": "Rect_6-2-to-6-4.lnote.de.1-2",
+  "text": "de",
+  "ab": null,
+  "after": "oft",
+  "occurrence": 1,
+  "none": false,
+  "doubt": "The file ALREADY has <ptr n=\"1\"> right after this word, but it targets #Rect_6-2-to-6-4.lnote.de.1 (the first clause's note 1); retarget that ptr to this note instead of adding a second mark."
+ },
+ {
+  "id": "Rect_6-2-to-6-4.lnote.de.1-3",
+  "text": "de",
+  "ab": null,
+  "after": "unfreier",
+  "occurrence": 1,
+  "none": false,
+  "doubt": "The file ALREADY has <ptr n=\"1\"> right after this word, but it targets #Rect_6-2-to-6-4.lnote.de.1 (the first clause's note 1); retarget that ptr to this note instead of adding a second mark."
+ },
+ {
+  "id": "Rect_9-to-9-1.lnote.de.1-2",
+  "text": "de",
+  "ab": null,
+  "after": "ein",
+  "occurrence": 3,
+  "none": false,
+  "doubt": "The file ALREADY has <ptr n=\"1\"> right after this word, but it targets #Rect_9-to-9-1.lnote.de.1 (the first clause's note 1); retarget that ptr to this note instead of adding a second mark."
+ },
+ {
+  "id": "Rect_9-to-9-1.lnote.de.2-2",
+  "text": "de",
+  "ab": null,
+  "after": "Acker",
+  "occurrence": 1,
+  "none": false,
+  "doubt": "The file ALREADY has <ptr n=\"2\"> right after this word, but it targets #Rect_9-to-9-1.lnote.de.2 (the first clause's note 2); retarget that ptr to this note instead of adding a second mark."
+ },
+ {
+  "id": "Rect_9-to-9-1.lnote.de.3-2",
+  "text": "de",
+  "ab": null,
+  "after": "Korn",
+  "occurrence": 2,
+  "none": false,
+  "doubt": "The file ALREADY has <ptr n=\"3\"> right after this word, but it targets #Rect_9-to-9-1.lnote.de.3 (the first clause's note 3); retarget that ptr to this note instead of adding a second mark."
+ },
+ {
+  "id": "Rect_9-to-9-1.lnote.de.4-2",
+  "text": "de",
+  "ab": null,
+  "after": "[Mindest]gebühr",
+  "occurrence": 1,
+  "none": false,
+  "doubt": "The file ALREADY has <ptr n=\"4\"> right after this word, but it targets #Rect_9-to-9-1.lnote.de.4 (the first clause's note 4); retarget that ptr to this note instead of adding a second mark."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_1-1.lnote.de.1",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Copy of VI Atr's numbered note (mark printed in VI Atr's German only); the superscript numbers in the Latin paraphrase are vol. I textual footnotes."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_1-2.lnote.de.a",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Vol. III 'VI Atr 1,2] a) S. o. Einl. 19a. E.' but vol. I p. 247 prints no letter a in the Latin 1,2 (only textual footnotes 1, 2); the a after 'diligerę' belongs to 1,1 and 'paganorum a' to 1,3."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_1.lnote.de.1",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Copy of VI Atr's numbered note (mark printed in VI Atr's German only); the superscript numbers in the Latin paraphrase are vol. I textual footnotes."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_1.lnote.de.2",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Copy of VI Atr's numbered note (mark printed in VI Atr's German only); the superscript numbers in the Latin paraphrase are vol. I textual footnotes."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_1.lnote.de.3",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Copy of VI Atr's numbered note (mark printed in VI Atr's German only); the superscript numbers in the Latin paraphrase are vol. I textual footnotes."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_1.lnote.de.4",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Copy of VI Atr's numbered note (mark printed in VI Atr's German only); the superscript numbers in the Latin paraphrase are vol. I textual footnotes."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_1.lnote.de.5",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Copy of VI Atr's numbered note (mark printed in VI Atr's German only); the superscript numbers in the Latin paraphrase are vol. I textual footnotes."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_10.lnote.de.1",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Copy of VI Atr's numbered note (mark printed in VI Atr's German only); the superscript numbers in the Latin paraphrase are vol. I textual footnotes."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_13.lnote.de.1",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Copy of VI Atr's numbered note (mark printed in VI Atr's German only); the superscript numbers in the Latin paraphrase are vol. I textual footnotes."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_15.lnote.de.0",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Unnumbered clause note in vol. III; copy of VI Atr's note."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_16.lnote.de.1",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Copy of VI Atr's numbered note (mark printed in VI Atr's German only); the superscript numbers in the Latin paraphrase are vol. I textual footnotes."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_18-1.lnote.de.0",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Unnumbered clause note in vol. III; copy of VI Atr's note."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_2.lnote.de.1",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Copy of VI Atr's numbered note (mark printed in VI Atr's German only); the superscript numbers in the Latin paraphrase are vol. I textual footnotes."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_20.lnote.de.1",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Copy of VI Atr's numbered note (mark printed in VI Atr's German only); the superscript numbers in the Latin paraphrase are vol. I textual footnotes."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_22-2.lnote.de.0",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Unnumbered clause note in vol. III; copy of VI Atr's note."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_22-2.lnote.de.1",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Copy of VI Atr's numbered note (mark printed in VI Atr's German only); the superscript numbers in the Latin paraphrase are vol. I textual footnotes."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_22.lnote.de.0",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Unnumbered clause note in vol. III; copy of VI Atr's note."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_22.lnote.de.1",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Copy of VI Atr's numbered note (mark printed in VI Atr's German only); the superscript numbers in the Latin paraphrase are vol. I textual footnotes."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_23.lnote.de.1",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Copy of VI Atr's numbered note (mark printed in VI Atr's German only); the superscript numbers in the Latin paraphrase are vol. I textual footnotes."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_23.lnote.de.2",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Copy of VI Atr's numbered note (mark printed in VI Atr's German only); the superscript numbers in the Latin paraphrase are vol. I textual footnotes."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_25.lnote.de.1",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Copy of VI Atr's numbered note (mark printed in VI Atr's German only); the superscript numbers in the Latin paraphrase are vol. I textual footnotes."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_26.lnote.de.1",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Copy of VI Atr's numbered note (mark printed in VI Atr's German only); the superscript numbers in the Latin paraphrase are vol. I textual footnotes."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_27.lnote.de.1",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Copy of VI Atr's numbered note (mark printed in VI Atr's German only); the superscript numbers in the Latin paraphrase are vol. I textual footnotes."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_28.lnote.de.1",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Copy of VI Atr's numbered note (mark printed in VI Atr's German only); the superscript numbers in the Latin paraphrase are vol. I textual footnotes."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_29-30.lnote.de.0",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Unnumbered clause note in vol. III; copy of VI Atr's note."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_29-30.lnote.de.1",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Copy of VI Atr's numbered note (mark printed in VI Atr's German only); the superscript numbers in the Latin paraphrase are vol. I textual footnotes."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_32-3.lnote.de.1",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Copy of VI Atr's numbered note (mark printed in VI Atr's German only); the superscript numbers in the Latin paraphrase are vol. I textual footnotes."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_32-3.lnote.de.2",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Copy of VI Atr's numbered note (mark printed in VI Atr's German only); the superscript numbers in the Latin paraphrase are vol. I textual footnotes."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_32.lnote.de.0",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Unnumbered clause note in vol. III; copy of VI Atr's note."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_32.lnote.de.1",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Copy of VI Atr's numbered note (mark printed in VI Atr's German only); the superscript numbers in the Latin paraphrase are vol. I textual footnotes."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_32.lnote.de.2",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Copy of VI Atr's numbered note (mark printed in VI Atr's German only); the superscript numbers in the Latin paraphrase are vol. I textual footnotes."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_34.lnote.de.1",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Copy of VI Atr's numbered note (mark printed in VI Atr's German only); the superscript numbers in the Latin paraphrase are vol. I textual footnotes."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_34.lnote.de.2",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Copy of VI Atr's numbered note (mark printed in VI Atr's German only); the superscript numbers in the Latin paraphrase are vol. I textual footnotes."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_34.lnote.de.3",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Copy of VI Atr's numbered note (mark printed in VI Atr's German only); the superscript numbers in the Latin paraphrase are vol. I textual footnotes."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_35.lnote.de.1",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Copy of VI Atr's numbered note (mark printed in VI Atr's German only); the superscript numbers in the Latin paraphrase are vol. I textual footnotes."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_36.lnote.de.1",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Copy of VI Atr's numbered note (mark printed in VI Atr's German only); the superscript numbers in the Latin paraphrase are vol. I textual footnotes."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_36.lnote.de.2",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Copy of VI Atr's numbered note (mark printed in VI Atr's German only); the superscript numbers in the Latin paraphrase are vol. I textual footnotes."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_36.lnote.de.3",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Copy of VI Atr's numbered note (mark printed in VI Atr's German only); the superscript numbers in the Latin paraphrase are vol. I textual footnotes."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_37.lnote.de.1",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Copy of VI Atr's numbered note (mark printed in VI Atr's German only); the superscript numbers in the Latin paraphrase are vol. I textual footnotes."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_37.lnote.de.2",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Copy of VI Atr's numbered note (mark printed in VI Atr's German only); the superscript numbers in the Latin paraphrase are vol. I textual footnotes."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_37.lnote.de.3",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Copy of VI Atr's numbered note (mark printed in VI Atr's German only); the superscript numbers in the Latin paraphrase are vol. I textual footnotes."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_37.lnote.de.4",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Copy of VI Atr's numbered note (mark printed in VI Atr's German only); the superscript numbers in the Latin paraphrase are vol. I textual footnotes."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_37.lnote.de.5",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Copy of VI Atr's numbered note (mark printed in VI Atr's German only); the superscript numbers in the Latin paraphrase are vol. I textual footnotes."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_38.lnote.de.1",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Copy of VI Atr's numbered note (mark printed in VI Atr's German only); the superscript numbers in the Latin paraphrase are vol. I textual footnotes."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_39.lnote.de.1",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Copy of VI Atr's numbered note (mark printed in VI Atr's German only); the superscript numbers in the Latin paraphrase are vol. I textual footnotes."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_39.lnote.de.2",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Copy of VI Atr's numbered note (mark printed in VI Atr's German only); the superscript numbers in the Latin paraphrase are vol. I textual footnotes."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_39.lnote.de.3",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Copy of VI Atr's numbered note (mark printed in VI Atr's German only); the superscript numbers in the Latin paraphrase are vol. I textual footnotes."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_40.lnote.de.1",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Copy of VI Atr's numbered note (mark printed in VI Atr's German only); the superscript numbers in the Latin paraphrase are vol. I textual footnotes."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_5.lnote.de.1",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Copy of VI Atr's numbered note (mark printed in VI Atr's German only); the superscript numbers in the Latin paraphrase are vol. I textual footnotes."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_5.lnote.de.2",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Copy of VI Atr's numbered note (mark printed in VI Atr's German only); the superscript numbers in the Latin paraphrase are vol. I textual footnotes."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_6.lnote.de.0",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Unnumbered clause note in vol. III; copy of VI Atr's note."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_6.lnote.de.1",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Copy of VI Atr's numbered note (mark printed in VI Atr's German only); the superscript numbers in the Latin paraphrase are vol. I textual footnotes."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_6.lnote.de.2",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Copy of VI Atr's numbered note (mark printed in VI Atr's German only); the superscript numbers in the Latin paraphrase are vol. I textual footnotes."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_7.lnote.de.1",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Copy of VI Atr's numbered note (mark printed in VI Atr's German only); the superscript numbers in the Latin paraphrase are vol. I textual footnotes."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_7.lnote.de.2",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Copy of VI Atr's numbered note (mark printed in VI Atr's German only); the superscript numbers in the Latin paraphrase are vol. I textual footnotes."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_7.lnote.de.3",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Copy of VI Atr's numbered note (mark printed in VI Atr's German only); the superscript numbers in the Latin paraphrase are vol. I textual footnotes."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_8-1.lnote.de.1",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Copy of VI Atr's numbered note (mark printed in VI Atr's German only); the superscript numbers in the Latin paraphrase are vol. I textual footnotes."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_9.lnote.de.0",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Unnumbered clause note in vol. III; copy of VI Atr's note."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_Prol.lnote.de.1",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Copy of VI Atr's numbered note (mark printed in VI Atr's German only); the superscript numbers in the Latin paraphrase are vol. I textual footnotes."
+ },
+ {
+  "id": "VI-Atr-Latin-Paraphrase_part-001.lnote.de.1__2",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Copy of VI Atr's numbered note (mark printed in VI Atr's German only); the superscript numbers in the Latin paraphrase are vol. I textual footnotes."
+ },
+ {
+  "id": "VIAtr_1-1.lnote.de.a",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Letter note belongs to the Latin paraphrase (vol. III: 'Die Buchstabennoten beziehen sich auf die Lateinische Paraphrase'); the letter is printed in the Latin text (file VI-Atr-Latin-Paraphrase_1-1), not in this file's German."
+ },
+ {
+  "id": "VIAtr_1.lnote.de.a",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Letter note belongs to the Latin paraphrase (vol. III: 'Die Buchstabennoten beziehen sich auf die Lateinische Paraphrase'); the letter is printed in the Latin text (file VI-Atr-Latin-Paraphrase_1), not in this file's German."
+ },
+ {
+  "id": "VIAtr_16.lnote.de.1",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Vol. I p. 253: no 1 printed in German 16 (note concerns 'spätestens' = huru)."
+ },
+ {
+  "id": "VIAtr_16.lnote.de.a",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Letter note belongs to the Latin paraphrase (vol. III: 'Die Buchstabennoten beziehen sich auf die Lateinische Paraphrase'); the letter is printed in the Latin text (file VI-Atr-Latin-Paraphrase_16), not in this file's German."
+ },
+ {
+  "id": "VIAtr_18-1.lnote.de.0",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Unnumbered note to the whole clause in vol. III."
+ },
+ {
+  "id": "VIAtr_18.lnote.de.a__b",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Letter note belongs to the Latin paraphrase (vol. III: 'Die Buchstabennoten beziehen sich auf die Lateinische Paraphrase'); the letter is printed in the Latin text (file VI-Atr-Latin-Paraphrase_18), not in this file's German."
+ },
+ {
+  "id": "VIAtr_2.lnote.de.a",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Letter note belongs to the Latin paraphrase (vol. III: 'Die Buchstabennoten beziehen sich auf die Lateinische Paraphrase'); the letter is printed in the Latin text (file VI-Atr-Latin-Paraphrase_2), not in this file's German."
+ },
+ {
+  "id": "VIAtr_22-2.lnote.de.0",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Unnumbered note to the whole clause in vol. III."
+ },
+ {
+  "id": "VIAtr_22.lnote.de.0",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Unnumbered note to the whole clause in vol. III."
+ },
+ {
+  "id": "VIAtr_22.lnote.de.a",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Letter note belongs to the Latin paraphrase (vol. III: 'Die Buchstabennoten beziehen sich auf die Lateinische Paraphrase'); the letter is printed in the Latin text (file VI-Atr-Latin-Paraphrase_22), not in this file's German."
+ },
+ {
+  "id": "VIAtr_23.lnote.de.a",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Letter note belongs to the Latin paraphrase (vol. III: 'Die Buchstabennoten beziehen sich auf die Lateinische Paraphrase'); the letter is printed in the Latin text (file VI-Atr-Latin-Paraphrase_23), not in this file's German."
+ },
+ {
+  "id": "VIAtr_25.lnote.de.a",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Letter note belongs to the Latin paraphrase (vol. III: 'Die Buchstabennoten beziehen sich auf die Lateinische Paraphrase'); the letter is printed in the Latin text (file VI-Atr-Latin-Paraphrase_25), not in this file's German."
+ },
+ {
+  "id": "VIAtr_26.lnote.de.a",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Letter note belongs to the Latin paraphrase (vol. III: 'Die Buchstabennoten beziehen sich auf die Lateinische Paraphrase'); the letter is printed in the Latin text (file VI-Atr-Latin-Paraphrase_26), not in this file's German."
+ },
+ {
+  "id": "VIAtr_29.lnote.de.0",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Unnumbered note to the whole clause in vol. III."
+ },
+ {
+  "id": "VIAtr_3-1.lnote.de.a",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Letter note belongs to the Latin paraphrase (vol. III: 'Die Buchstabennoten beziehen sich auf die Lateinische Paraphrase'); the letter is printed in the Latin text (file VI-Atr-Latin-Paraphrase_3-1), not in this file's German."
+ },
+ {
+  "id": "VIAtr_3.lnote.de.a",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Letter note belongs to the Latin paraphrase (vol. III: 'Die Buchstabennoten beziehen sich auf die Lateinische Paraphrase'); the letter is printed in the Latin text (file VI-Atr-Latin-Paraphrase_3), not in this file's German."
+ },
+ {
+  "id": "VIAtr_3.lnote.de.b",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Letter note belongs to the Latin paraphrase (vol. III: 'Die Buchstabennoten beziehen sich auf die Lateinische Paraphrase'); the letter is printed in the Latin text (file VI-Atr-Latin-Paraphrase_3), not in this file's German."
+ },
+ {
+  "id": "VIAtr_34.lnote.de.a",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Letter note belongs to the Latin paraphrase (vol. III: 'Die Buchstabennoten beziehen sich auf die Lateinische Paraphrase'); the letter is printed in the Latin text (file VI-Atr-Latin-Paraphrase_34), not in this file's German."
+ },
+ {
+  "id": "VIAtr_38.lnote.de.1",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Vol. I p. 257: no 1 printed in German 38 (note concerns text after 'Strafgeld' = wite)."
+ },
+ {
+  "id": "VIAtr_4.lnote.de.a",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Letter note belongs to the Latin paraphrase (vol. III: 'Die Buchstabennoten beziehen sich auf die Lateinische Paraphrase'); the letter is printed in the Latin text (file VI-Atr-Latin-Paraphrase_4), not in this file's German."
+ },
+ {
+  "id": "VIAtr_45.lnote.de.1",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Vol. I p. 259: no 1 printed in 45."
+ },
+ {
+  "id": "VIAtr_46.lnote.de.1",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Vol. I p. 259: no 1 printed in 46."
+ },
+ {
+  "id": "VIAtr_49.lnote.de.0",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Unnumbered note to the whole clause in vol. III."
+ },
+ {
+  "id": "VIAtr_6.lnote.de.0",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Unnumbered note to the whole clause in vol. III."
+ },
+ {
+  "id": "VIAtr_6.lnote.de.a",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Letter note belongs to the Latin paraphrase (vol. III: 'Die Buchstabennoten beziehen sich auf die Lateinische Paraphrase'); the letter is printed in the Latin text (file VI-Atr-Latin-Paraphrase_6), not in this file's German."
+ },
+ {
+  "id": "VIAtr_7.lnote.de.a",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Letter note belongs to the Latin paraphrase (vol. III: 'Die Buchstabennoten beziehen sich auf die Lateinische Paraphrase'); the letter is printed in the Latin text (file VI-Atr-Latin-Paraphrase_7), not in this file's German."
+ },
+ {
+  "id": "VIAtr_9.lnote.de.0",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Unnumbered note to the whole clause in vol. III."
+ },
+ {
+  "id": "VIAtr_9.lnote.de.a",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Letter note belongs to the Latin paraphrase (vol. III: 'Die Buchstabennoten beziehen sich auf die Lateinische Paraphrase'); the letter is printed in the Latin text (file VI-Atr-Latin-Paraphrase_9), not in this file's German."
+ },
+ {
+  "id": "VIAtr_Inscr.lnote.de.a",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Letter note belongs to the Latin paraphrase (vol. III: 'Die Buchstabennoten beziehen sich auf die Lateinische Paraphrase'); the letter is printed in the Latin text (file VI-Atr-Latin-Paraphrase_Inscr), not in this file's German."
+ },
+ {
+  "id": "VIAtr_Prol.lnote.de.a",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Letter note belongs to the Latin paraphrase (vol. III: 'Die Buchstabennoten beziehen sich auf die Lateinische Paraphrase'); the letter is printed in the Latin text (file VI-Atr-Latin-Paraphrase_Prol), not in this file's German."
+ },
+ {
+  "id": "VIAtr_Prol.lnote.de.b__d",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Letter note belongs to the Latin paraphrase (vol. III: 'Die Buchstabennoten beziehen sich auf die Lateinische Paraphrase'); the letter is printed in the Latin text (file VI-Atr-Latin-Paraphrase_Prol), not in this file's German."
+ },
+ {
+  "id": "VIAtr_Prol.lnote.de.c",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Letter note belongs to the Latin paraphrase (vol. III: 'Die Buchstabennoten beziehen sich auf die Lateinische Paraphrase'); the letter is printed in the Latin text (file VI-Atr-Latin-Paraphrase_Prol), not in this file's German."
+ },
+ {
+  "id": "VIIAtr_6-1.lnote.de.1",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Vol. I p. 261: no number in 6,1; note corrects the marginal 'ebd. 8,1'."
+ },
+ {
+  "id": "VIIAtr_6.lnote.de.0",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Unnumbered note to the whole clause in vol. III."
+ },
+ {
+  "id": "VIIIAtr_27-1.lnote.de.0",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Unnumbered note to the whole clause in vol. III."
+ },
+ {
+  "id": "VIIIAtr_31.lnote.de.1",
+  "text": null,
+  "ab": null,
+  "after": null,
+  "occurrence": null,
+  "none": true,
+  "doubt": "Vol. I p. 267: no number in 31; note concerns the marginal source citation."
+ },
+ {
+  "id": "VIIIAtr_5-1.lnote.de.4",
+  "text": "de",
+  "ab": null,
+  "after": "mittleren",
+  "occurrence": 1,
+  "none": false,
+  "doubt": "Vol. I prints no 4 in 5,1; vol. III itself says '[setze die Zahl zu mittleren]' — placed per that instruction."
+ }
+]

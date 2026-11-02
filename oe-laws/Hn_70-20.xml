@@ -41,13 +41,14 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-19">Generated from row 4784 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-11-02">Liebermann’s marks for his Erklärungen (Gesetze III) placed in the text, from the page images of vol. I.</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="70.20">
         <head><ref type="lawCode" target="law:Hn">Hn</ref> 70.20</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Hn 70.20" corresp="#wit-lat"><pb n="589" ed="#liebermann"/>Si quis sine liberis decesserit<ptr type="liebermannNote" n="28" target="#Hn_70-20.lnote.oe.28"/>, pater aut mater eius in hereditatem succedant<ptr type="liebermannNote" n="29" target="#Hn_70-20.lnote.oe.29"/>, uel frater aut<ptr type="liebermannNote" n="30" target="#Hn_70-20.lnote.oe.30"/> soror, si pater et<ptr type="liebermannNote" n="31" target="#Hn_70-20.lnote.oe.31"/> mater desint<ptr type="liebermannNote" n="32" target="#Hn_70-20.lnote.oe.32"/>.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Hn 70.20" corresp="#wit-lat"><pb n="589" ed="#liebermann"/>Si quis sine liberis decesserit<ptr type="liebermannNote" n="28" target="#Hn_70-20.lnote.oe.28"/>, pater<ptr type="liebermannNote" n="a" target="#Hn_70-20.lnote.oe.a"/> aut mater eius in hereditatem succedant<ptr type="liebermannNote" n="29" target="#Hn_70-20.lnote.oe.29"/>, uel frater aut<ptr type="liebermannNote" n="30" target="#Hn_70-20.lnote.oe.30"/> soror, si pater et<ptr type="liebermannNote" n="31" target="#Hn_70-20.lnote.oe.31"/> mater desint<ptr type="liebermannNote" n="32" target="#Hn_70-20.lnote.oe.32"/>.</ab>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 589 (two independent readings of the page images, differences settled against the page)</note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_70-20.lnote.oe.28" n="28" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">589</biblScope></bibl><seg type="original" xml:lang="de">dessess. <hi rend="italic">Sc;</hi> disc. <hi rend="italic">Hg</hi></seg><seg type="translation" xml:lang="en" source="#claude">dessess. Sc; disc. Hg</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_70-20.lnote.oe.29" n="29" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">589</biblScope></bibl><seg type="original" xml:lang="de">-at <hi rend="italic">Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">-at Lond</seg></note>

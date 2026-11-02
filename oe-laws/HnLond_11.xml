@@ -46,13 +46,14 @@
     <revisionDesc>
       <change when="2026-10-19">Generated from row 2543 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS Lat added from Gesetze I, p. 525.</change>
+      <change when="2026-11-02">Liebermann’s marks for his Erklärungen (Gesetze III) placed in the text, from the page images of vol. I.</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="11">
         <head><ref type="lawCode" target="law:HnLond">Hn Lond</ref> 11</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" corresp="#wit-lat"><pb n="525" ed="#liebermann"/>Et de terris, de quibus ad me clamauerint, rectum eis tenebo lege ciuitatis.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" corresp="#wit-lat"><pb n="525" ed="#liebermann"/>Et<ptr type="liebermannNote" n="a" target="#HnLond_11.lnote.oe.a"/> de terris<ptr type="liebermannNote" n="b" target="#HnLond_11.lnote.oe.b"/>, de quibus ad me clamauerint, rectum eis tenebo lege ciuitatis.</ab>
         <ab type="editionText" xml:lang="la" source="#robertson" n="11" corresp="#wit-rs"><pb n="290" ed="#robertson"/>Et de terris de quibus ad me clamaverint rectum eis tenebo lege civitatis.</ab>
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-rs"><pb n="291" ed="#robertson"/>And with regard to lands about which they have appealed to me, I shall maintain justice on their behalf, according to the law of the city.</ab>
         <note type="editorial">Added October 2026 from Robertson pp. 290–291 (text and translation); Liebermann’s text added from Gesetze I p. 525, October 2026 (two independent readings of the page images)</note>

@@ -41,13 +41,14 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-19">Generated from row 4302 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-11-02">Liebermann’s marks for his Erklärungen (Gesetze III) placed in the text, from the page images of vol. I.</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="23.1">
         <head><ref type="lawCode" target="law:Hn">Hn</ref> 23.1</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Hn 23.1" corresp="#wit-lat"><pb n="561" ed="#liebermann"/>Si quis blodwitam<ptr type="liebermannNote" n="27" target="#Hn_23-1.lnote.oe.27"/>, fightwitam<ptr type="liebermannNote" n="28" target="#Hn_23-1.lnote.oe.28"/>, legerwitam et huiusmodi forisfaciat, et inde ueniat<ptr type="liebermannNote" n="g" target="#Hn_23-1.lnote.oe.g"/> sine diu[a]diacione<ptr type="liebermannNote" n="29" target="#Hn_23-1.lnote.oe.29"/> uel calumpnia, placitum domini sui est.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Hn 23.1" corresp="#wit-lat"><pb n="561" ed="#liebermann"/>Si quis blodwitam<ptr type="liebermannNote" n="27" target="#Hn_23-1.lnote.oe.27"/>, fightwitam<ptr type="liebermannNote" n="28" target="#Hn_23-1.lnote.oe.28"/>, legerwitam<ptr type="liebermannNote" n="a" target="#Hn_23-1.lnote.oe.a"/> et huiusmodi forisfaciat, et inde ueniat<ptr type="liebermannNote" n="g" target="#Hn_23-1.lnote.oe.g"/> sine diu[a]diacione<ptr type="liebermannNote" n="29" target="#Hn_23-1.lnote.oe.29"/> uel calumpnia, placitum domini sui est<ptr type="liebermannNote" n="b" target="#Hn_23-1.lnote.oe.b"/>.</ab>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 561 (two independent readings of the page images, differences settled against the page)</note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_23-1.lnote.oe.g" n="g" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">561</biblScope></bibl><seg type="original" xml:lang="de">vom Thatort dieser minora forisfacta (81, 3), ohne gepfändet oder dort verklagt zu sein, entkommt, so gehört Process sammt Strafgeld dem Herrn des Thäters</seg><seg type="translation" xml:lang="en" source="#claude">escapes from the scene of these minora forisfacta (81, 3) without having been distrained or sued there, then the proceedings together with the fine belong to the offender’s lord</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_23-1.lnote.oe.27" n="27" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">561</biblScope></bibl><seg type="original" xml:lang="de">-wyt. <hi rend="italic">Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">-wyt. Lond</seg></note>

@@ -41,13 +41,14 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-19">Generated from row 4887 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-11-02">Liebermann’s marks for his Erklärungen (Gesetze III) placed in the text, from the page images of vol. I.</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="78.1">
         <head><ref type="lawCode" target="law:Hn">Hn</ref> 78.1</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Hn 78.1" corresp="#wit-lat"><pb n="594" ed="#liebermann"/>Qui<ptr type="liebermannNote" n="k" target="#Hn_78-1.lnote.oe.k"/> seruum suum liberat in ecclesia uel<ptr type="liebermannNote" n="24" target="#Hn_78-1.lnote.oe.24"/> mercato uel comitatu uel hundreto, coram testibus et palam faciat et liberas ei<ptr type="liebermannNote" n="25" target="#Hn_78-1.lnote.oe.25"/> uias et portas conscribat<ptr type="liebermannNote" n="26" target="#Hn_78-1.lnote.oe.26"/> apertas et lanceam et gladium uel que liberorum<ptr type="liebermannNote" n="l" target="#Hn_78-1.lnote.oe.l"/> arma sunt in manibus ei ponat.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Hn 78.1" corresp="#wit-lat"><pb n="594" ed="#liebermann"/>Qui<ptr type="liebermannNote" n="k" target="#Hn_78-1.lnote.oe.k"/> seruum suum liberat in ecclesia<ptr type="liebermannNote" n="a" target="#Hn_78-1.lnote.oe.a"/> uel<ptr type="liebermannNote" n="24" target="#Hn_78-1.lnote.oe.24"/> mercato uel comitatu uel hundreto, coram testibus et palam faciat et liberas ei<ptr type="liebermannNote" n="25" target="#Hn_78-1.lnote.oe.25"/> uias et portas conscribat<ptr type="liebermannNote" n="26" target="#Hn_78-1.lnote.oe.26"/> apertas et lanceam et gladium uel que liberorum<ptr type="liebermannNote" n="l" target="#Hn_78-1.lnote.oe.l"/> arma sunt in manibus ei ponat.</ab>
         <note type="comparedBy" source="#liebermann"><ref target="clause:WlArtRetr_15-1">Wl art retr 15.1</ref></note>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 594 (two independent readings of the page images, differences settled against the page)</note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_78-1.lnote.oe.k" n="k" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">594</biblScope></bibl><seg type="original" xml:lang="de">78, 1 <hi rend="italic">f. benutzt in</hi> Wl art. Lond. retr. 15, 1, <hi rend="italic">o. S.</hi> 491</seg><seg type="translation" xml:lang="en" source="#claude">78, 1 <hi rend="italic">f. used in</hi> Wl art. Lond. retr. 15, 1, <hi rend="italic">above p.</hi> 491</seg></note>

@@ -41,13 +41,14 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-19">Generated from row 4919 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-11-02">Liebermann’s marks for his Erklärungen (Gesetze III) placed in the text, from the page images of vol. I.</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="80.5a">
         <head><ref type="lawCode" target="law:Hn">Hn</ref> 80.5a</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Hn 80.5a" corresp="#wit-lat"><pb n="596" ed="#liebermann"/>Stre[t]breche<ptr type="liebermannNote" n="30" target="#Hn_80-5a.lnote.oe.30"/> est, si quis uiam frangat concludendo uel auertendo<ptr type="liebermannNote" n="k" target="#Hn_80-5a.lnote.oe.k"/> uel fodiendo.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Hn 80.5a" corresp="#wit-lat"><pb n="596" ed="#liebermann"/>Stre[t]breche<ptr type="liebermannNote" n="30" target="#Hn_80-5a.lnote.oe.30"/> est, si quis uiam frangat concludendo uel auertendo<ptr type="liebermannNote" n="k" target="#Hn_80-5a.lnote.oe.k"/> uel fodiendo<ptr type="liebermannNote" n="a" target="#Hn_80-5a.lnote.oe.a"/>.</ab>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 596 (two independent readings of the page images, differences settled against the page)</note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_80-5a.lnote.oe.k" n="k" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">596</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vgl.</hi> 80, 3<hi rend="italic">a</hi></seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">cf.</hi> 80, 3<hi rend="italic">a</hi></seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_80-5a.lnote.oe.30" n="30" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">596</biblScope></bibl><seg type="original" xml:lang="de">Stredb. <hi rend="italic">Sc Hg;</hi> Sterb. <hi rend="italic">Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">Stredb. Sc Hg; Sterb. Lond</seg></note>

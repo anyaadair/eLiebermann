@@ -41,13 +41,14 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-19">Generated from row 4892 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-11-02">Liebermann’s marks for his Erklärungen (Gesetze III) placed in the text, from the page images of vol. I.</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="78.3">
         <head><ref type="lawCode" target="law:Hn">Hn</ref> 78.3</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Hn 78.3" corresp="#wit-lat"><pb n="595" ed="#liebermann"/>Si quis de seruitute redeat in liberum, in testem manumissionis cum<ptr type="liebermannNote" n="a" target="#Hn_78-3.lnote.oe.a"/> testibus reddicionis domino suo XXX denarios reddat, scilicet<ptr type="liebermannNote" n="1" target="#Hn_78-3.lnote.oe.1"/> precium<ptr type="liebermannNote" n="b" target="#Hn_78-3.lnote.oe.b"/> corii sui in signum, quod eo<ptr type="liebermannNote" n="2" target="#Hn_78-3.lnote.oe.2"/> dignus sit in eternum.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Hn 78.3" corresp="#wit-lat"><pb n="595" ed="#liebermann"/>Si quis de seruitute redeat in liberum, in testem manumissionis cum<ptr type="liebermannNote" n="a" target="#Hn_78-3.lnote.oe.a"/> testibus reddicionis domino suo XXX denarios reddat<ptr type="liebermannNote" n="a" target="#Hn_78-3.lnote.oe.a-2"/>, scilicet<ptr type="liebermannNote" n="1" target="#Hn_78-3.lnote.oe.1"/> precium<ptr type="liebermannNote" n="b" target="#Hn_78-3.lnote.oe.b"/> corii sui in signum, quod eo<ptr type="liebermannNote" n="2" target="#Hn_78-3.lnote.oe.2"/> dignus sit in eternum.</ab>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 595 (two independent readings of the page images, differences settled against the page)</note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_78-3.lnote.oe.a" n="a" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">595</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vgl.</hi> 78, 1</seg><seg type="translation" xml:lang="en" source="#claude">cf. 78, 1</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Hn_78-3.lnote.oe.b" n="b" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">595</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vielleicht aus Quadr. II Cn.</hi> 45, 2: seruus corium XXX denariis redimat; <hi rend="italic">vgl. Wi.</hi> 13. 15</seg><seg type="translation" xml:lang="en" source="#claude">perhaps from Quadr. II Cn. 45, 2: seruus corium XXX denariis redimat; cf. Wi. 13. 15</seg></note>
