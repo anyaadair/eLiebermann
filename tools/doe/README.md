@@ -19,7 +19,7 @@ Paste the result into a plain-text file and save it in `lists/` (`A.txt`, `Æ.tx
     - *likely*: a spelling variant (i/y/ie, double letters, -ian/-an), Liebermann's verb form traced to the infinitive (-að/-eð → -an/-ian, Anya's rule), x/cs/sc (acsian = āxian), or the headword of the entry's Bosworth-Toller link (those are guesses too, so never more than likely);
     - *unsure*: more than one DOE entry fits (ac / āc), or only an inflected noun form matches;
     - *none*.
-   Word-parts ("and-") are matched only to DOE word-parts ("an-").
+   Word-parts ("and-") are matched only to DOE word-parts ("an-"). Cross-reference and spelling entries are never matched: they get no dictionary links. Run all the lists together, so that a word can match in another letter (ærcediacon → arce-dīacon); each list's first and last word set its range, compared in the DOE's alphabet (æ after a, þ after t).
 2. **Review page**: `python3 tools/doe/build.py out.json tools/doe/page-template.html doe-matches.html`, published on claude.ai as *DOE Matches* with the `db` capability. The editor's choices are saved in the collection `decisions` (one document per entry: `{"ids": [...]}`; an empty list means no link). An E-number can be typed in when no guess is right.
 3. **Apply**: save the choices with ArtifactData `list` (`out_dir`), then `python3 -I tools/doe/apply.py out.json <folder with decisions/*.json>` from the repository root. Adds links for sure and likely matches and for every entry with a saved choice (which wins), with a line in the entry's revision history. It only adds links; removing one is done by hand. Cross-reference entries are skipped.
 

@@ -2,9 +2,8 @@
 
 python3 tools/doe/build.py out.json tools/doe/page-template.html doe-matches.html
 
-Cross-reference entries are left out: they only point to another headword,
-which carries the links (as with Bosworth-Toller). Entries that already
-have a DOE link are left out too.
+Cross-reference and spelling entries get no links (match.py leaves them
+out). Entries that already have a DOE link are left out too.
 """
 import json, sys
 D = json.load(open(sys.argv[1], encoding='utf-8'))

@@ -117,6 +117,9 @@ for path in sorted(glob.glob(os.path.join(ENTRIES, '*.xml'))):
     xml = open(path, encoding='utf-8').read()
     if not re.search(r'<entry[^>]*xml:lang="ang"', xml):
         continue
+    # Cross-reference and spelling entries get no dictionary links (Anya, Nov 2026).
+    if re.search(r'<entry[^>]*type="xref"', xml) or '<usg type="dom">spelling</usg>' in xml:
+        continue
     eid = os.path.basename(path)[:-4]
     orths = [text(o) for o in re.findall(r'<orth[^>]*>(.*?)</orth>', xml, re.S)[:1]]
     if not orths:
