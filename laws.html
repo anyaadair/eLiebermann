@@ -11,7 +11,7 @@ scripts:
 <div class="laws-layout">
 <aside class="laws-panel" id="laws-panel" aria-label="Search the laws">
     <h2 class="laws-panel__title">Search the laws</h2>
-    <p class="panel-help panel-intro">Use one kind of search, or several together: each narrows the others. Law codes, language, date and order apply to all of them.</p>
+    <p class="panel-help panel-intro">Use one kind of search, or several together.</p>
 
     <div class="panel-sec panel-sec--method" data-method="q">
         <label class="sidebar-label" for="q">Go to a law code or clause</label>
@@ -20,12 +20,11 @@ scripts:
 
     <div class="panel-sec panel-sec--method" data-method="w">
         <label class="sidebar-label" for="w">Search by Word</label>
-        <input type="search" id="w" placeholder="e.g. ceap*, theft, &quot;on cyninges hand&quot;" autocomplete="off">
-        <p class="panel-help">Several words: all must appear. <code>"…"</code> a phrase · <code>ceap*</code> words beginning <i>ceap-</i> · <code>*bot</code> words ending <i>-bot</i></p>
-        <div class="panel-sub">Look in</div>
-        <div class="kind-pills kind-pills--small" id="where" role="group" aria-label="Where to look for the words"></div>
+        <input type="search" id="w" placeholder="e.g. ceape · ceap* · &quot;gif mon&quot;" autocomplete="off">
         <div class="panel-sub">Match</div>
         <div class="kind-pills kind-pills--small" id="match" role="group" aria-label="How to match the words"></div>
+        <div class="panel-sub">Look in</div>
+        <div class="kind-pills kind-pills--small" id="where" role="group" aria-label="Where to look for the words"></div>
         <div class="panel-check tol-row"><label><input type="checkbox" id="tol"> Spelling tolerance</label> <button type="button" class="info-tip" data-info="tol-info" aria-expanded="false" aria-controls="tol-info" aria-label="What spelling tolerance does" title="Treated alike: i, y and ie · e, æ, ea, eo and io · u and v · c and k · single and double consonants">i</button></div>
         <p class="panel-help" id="tol-info" hidden>Treated alike: <i>i</i>, <i>y</i> and <i>ie</i> · <i>e</i>, <i>æ</i>, <i>ea</i>, <i>eo</i> and <i>io</i> · <i>u</i> and <i>v</i> · <i>c</i> and <i>k</i> · single and double consonants.</p>
     </div>
@@ -33,7 +32,7 @@ scripts:
     <div class="panel-sec panel-sec--method" data-method="d">
         <label class="sidebar-label" for="d">Search by Wörterbuch Headword</label>
         <div class="suggest-wrap"><input type="search" id="d" placeholder="e.g. bocland" autocomplete="off"><ul class="suggestions" id="d-list" hidden></ul></div>
-        <p class="panel-help">Every clause the Wörterbuch cites for the word, in all its forms.</p>
+        <p class="panel-help">Every clause that the Wörterbuch entry cites.</p>
         <div id="d-chosen" class="chips"></div>
     </div>
 
@@ -53,12 +52,6 @@ scripts:
             <div id="code-tree"></div>
         </details>
         <p class="panel-help" id="code-summary"></p>
-    </div>
-
-    <div class="panel-sec panel-sec--shared">
-        <div class="sidebar-label">Archbishop Wulfstan</div>
-        <div class="kind-pills kind-pills--small" id="wulf" role="group" aria-label="Archbishop Wulfstan’s part in the text"></div>
-        <p class="panel-help">Texts Wulfstan (d. 1023) wrote, edited or reworked, or that have been attributed to him, as Rabin sees it. A clause he probably added to an earlier law counts as composed by him.</p>
     </div>
 
     <div class="panel-sec panel-sec--shared">
@@ -111,23 +104,20 @@ scripts:
         ['jurasinski-and-oliver', 'Jurasinski and Oliver'], ['oliver', 'Oliver'], ['kennedy', 'Kennedy'], ['gobbitt', 'Gobbitt'],
         ['wormald', 'Wormald'], ['adair', 'Adair'], ['claude', 'English of Liebermann’s German'], ['unattributed', 'Not recorded']];
     const LANGS = [['ang', 'Old English'], ['la', 'Latin'], ['xno', 'French', 'Anglo-Norman French']];
-    // Archbishop Wulfstan's part (data/wulfstan.json, scripts/wulfstan.js)
-    const WULF = [['composed', 'Composed by Wulfstan'], ['reworked', 'Edited or Reworked', 'Edited or Reworked by Wulfstan'], ['disputed', 'Attributed (disputed)', 'Attributed to Wulfstan (disputed)']];
-    const wulfOk = c => !S.wulf.size || [...Wulfstan.kindsOf(c.code, c.id)].some(k => S.wulf.has(k));
     // Groups of law codes, by the groups of the list of law codes (oe-laws/codes.json)
     const PRESETS = [
         ['kent', 'Kentish kings', ['Æthelberht of Kent', 'Hlothhere and Eadric of Kent', 'Wihtred of Kent', 'Earconberht of Kent']],
         ['wessex', 'Ine and Alfred', ['Ine of Wessex and Alfred the Great']],
-        ['tenth', 'Tenth century kings', ['Edward the Elder', 'Æthelstan', 'Edmund I', 'Edgar']],
-        ['atr-cn', 'Æthelred and Cnut', ['Æthelred II', 'Cnut']],
+        ['kings', '10th and 11th c. Kings', ['Edward the Elder', 'Æthelstan', 'Edmund I', 'Edgar', 'Æthelred II', 'Cnut']],
         ['other', 'Other pre-Conquest codes', ['Other laws and legal texts']],
-        ['norman', 'Anglo-Norman', ['William I', 'Henry I']],
-        ['latin', 'Latin law books', ['Anglo-Latin law books']],
-        ['rites', 'Ordeals and excommunications', ['Ordeal rituals (Iudicia Dei)', 'Excommunication formulae']]
+        // every code Wulfstan (d. 1023) composed, edited or reworked, or that has been attributed to him
+        // (disputed), as Rabin sees it (data/wulfstan.json, scripts/wulfstan.js)
+        ['wulfstan', 'Associated with Wulfstan', null]
     ];
+    const wulfstanCodes = () => codes.filter(c => Wulfstan.kindsOf(c.code).size).map(c => c.code);
     const S = {
-        where: new Set(['orig', 'en']), match: 'whole',
-        dict: '', kws: [], kwMode: 'all', codes: new Set(), langs: new Set(), wulf: new Set()
+        where: new Set(['orig']), match: 'whole',
+        dict: '', kws: [], kwMode: 'all', codes: new Set(), langs: new Set()
     };
 
     function readAddress() {
@@ -142,7 +132,8 @@ scripts:
         S.kwMode = p.get('kwm') === 'any' ? 'any' : 'all';
         S.codes = new Set((p.get('codes') || p.get('law') || '').split('|').filter(Boolean));
         S.langs = new Set((p.get('lang') || '').split(',').filter(Boolean));
-        S.wulf = new Set((p.get('wulf') || '').split(',').filter(k => WULF.some(([x]) => x === k)));
+        // an old link with the Archbishop Wulfstan choice (?wulf=…): the codes associated with him
+        if (p.get('wulf')) wulfstanCodes().forEach(c => S.codes.add(c));
         // the old "Also search the texts and translations" box: the words box now
         if (p.get('text') === '1' && q.value && !w.value && !(searcher && searcher.read(q.value))) { w.value = q.value; q.value = ''; }
     }
@@ -151,7 +142,7 @@ scripts:
         if (q.value.trim()) p.set('q', q.value.trim());
         if (w.value.trim()) {
             p.set('w', w.value.trim());
-            if ([...S.where].sort().join(',') !== 'en,orig') p.set('in', [...S.where].join(','));
+            if ([...S.where].join(',') !== 'orig') p.set('in', [...S.where].join(','));
             if (S.match === 'part') p.set('m', 'part');
             if (tol.checked) p.set('tol', '1');
         }
@@ -159,7 +150,6 @@ scripts:
         if (S.kws.length) { p.set('kw', S.kws.join('|')); if (S.kwMode === 'any' && S.kws.length > 1) p.set('kwm', 'any'); }
         if (S.codes.size) p.set('codes', [...S.codes].join('|'));
         if (S.langs.size) p.set('lang', [...S.langs].join(','));
-        if (S.wulf.size) p.set('wulf', [...S.wulf].join(','));
         history.replaceState(null, '', location.pathname + (p.toString() ? '?' + p : ''));
     }
 
@@ -228,10 +218,9 @@ scripts:
             ? `Searching ${plural(S.codes.size, 'law code', 'law codes')}: ${esc(codeNames().join(', '))} <button type="button" class="link-button" id="codes-all" title="Search all law codes again">✕ all law codes</button>`
             : `Searching all ${codes.length} law codes.`;
         setPills($('langs'), LANGS, S.langs, 'All');
-        setPills($('wulf'), WULF, S.wulf, 'All texts');
         markPanel();
     }
-    const presetCodes = k => { const p = PRESETS.find(x => x[0] === k); return p ? codes.filter(c => p[2].includes(c.group)).map(c => c.code) : []; };
+    const presetCodes = k => { const p = PRESETS.find(x => x[0] === k); return !p ? [] : p[2] ? codes.filter(c => p[2].includes(c.group)).map(c => c.code) : wulfstanCodes(); };
     // the chosen codes, shortened by group: "Alfred the Great (all)", or the codes themselves
     function codeNames() {
         const out = [];
@@ -277,7 +266,7 @@ scripts:
     $('reset').addEventListener('click', () => {
         q.value = w.value = d.value = kw.value = '';
         tol.checked = false;
-        Object.assign(S, { where: new Set(['orig', 'en']), match: 'whole', dict: '', kws: [], kwMode: 'all', codes: new Set(), langs: new Set(), wulf: new Set() });
+        Object.assign(S, { where: new Set(['orig']), match: 'whole', dict: '', kws: [], kwMode: 'all', codes: new Set(), langs: new Set() });
         changed();
     });
 
@@ -426,20 +415,9 @@ scripts:
 
 
     // ---- The list of law codes (no search, or only a choice of codes, language or dates) ----
-    // With a choice under "Archbishop Wulfstan" that fits only some of a code's clauses (I As 2, 4):
-    // those clauses, linked.
-    function wulfPart(c) {
-        if (!S.wulf.size) return '';
-        const mine = clauses.filter(x => x.code === c.code);
-        const hit = mine.filter(wulfOk);
-        if (hit.length === mine.length) return '';
-        return `<span class="code-meta code-meta--wulf">Wulfstan: ${hit.length === 1 ? 'clause' : 'clauses'} ${hit.map(x =>
-            `<a href="${root}law.html?id=${encodeURIComponent(x.id)}">${esc(x.clause || x.citation)}</a>`).join(', ')}</span>`;
-    }
     function drawCodes() {
         const ok = c => (!S.codes.size || S.codes.has(c.code)) &&
-            (!S.langs.size || clauses.some(x => x.code === c.code && x.langs.some(l => S.langs.has(l)))) &&
-            (!S.wulf.size || clauses.some(x => x.code === c.code && wulfOk(x)));
+            (!S.langs.size || clauses.some(x => x.code === c.code && x.langs.some(l => S.langs.has(l))));
         const gs = groups().map(g => Object.assign({}, g, { items: g.items.filter(ok) })).filter(g => g.items.length);
         const n = gs.reduce((a, g) => a + g.items.length, 0);
         count.textContent = n === codes.length ? `${codes.length} law codes, ${clauses.length} clauses` : `${plural(n, 'law code', 'law codes')} of ${codes.length}`;
@@ -450,7 +428,7 @@ scripts:
                 <ul class="code-list">${g.items.map(c => `
                     <li>
                         <span class="code-title"><a href="${codeUrl(c.code)}"><span class="code-abbr">${esc(c.code)}</span> <span class="code-name">${esc(c.name)}</span></a>${Wulfstan.codeBadges(c.code) ? ' ' + Wulfstan.codeBadges(c.code) : ''}</span>
-                        <span class="code-meta">${esc(plural(c.clauses, 'clause', 'clauses'))}</span>${wulfPart(c)}
+                        <span class="code-meta">${esc(plural(c.clauses, 'clause', 'clauses'))}</span>
                     </li>`).join('')}
                 </ul>
             </section>`).join('') || '<p>No law codes match these choices.</p>';
@@ -481,7 +459,6 @@ scripts:
         let list = clauses.filter(c => {
             if (S.codes.size && !S.codes.has(c.code)) return false;
             if (S.langs.size && !c.langs.some(l => S.langs.has(l))) return false;
-            if (!wulfOk(c)) return false;
             if (term && !byCite(c)) return false;
             if (kwFold.length && !(S.kwMode === 'any' ? kwFold.some(k => c._kwList.includes(k)) : kwFold.every(k => c._kwList.includes(k)))) return false;
             if (S.dict && !(dictIds && dictIds.has(c.id))) return false;
