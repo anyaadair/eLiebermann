@@ -6,6 +6,7 @@
         <title>ECf 32 A 2</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">655</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
       </sourceDesc>
     </fileDesc>
@@ -48,6 +50,7 @@
         <note type="editorial">This passage is not part of ECf or ECf retr: it is one of the additions of the London collection (Leges Anglorum s. XIII in. Londoniis collectae), which Liebermann prints in smaller type across the page as an insertion into ECf retr. 32 (32 A–E, pp. 655–660). The dictionary cites it as “ECf 32 A …”, so it is kept with ECf here.</note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_32-A-2.lnote.la.fn.e" n="e" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">655</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">ähnlich ebd.</hi> 1. 7. 11; <hi rend="italic">u.</hi> 32 B 13</seg><seg type="translation" xml:lang="en" source="#claude">similarly ibid. 1. 7. 11; below 32 B 13</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_32-A-2.lnote.la.6" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">655</biblScope></bibl><seg type="original" xml:lang="de">et <hi rend="italic">fügt zu Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">Ld adds et</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">For they must keep the laws and liberties and rights and the king's peace and the just and ancient customs of the kingdom, approved by good predecessors, inviolably and without guile and without delay, in every way to the best of their power.</ab>
       </div>
     </body>
   </text>

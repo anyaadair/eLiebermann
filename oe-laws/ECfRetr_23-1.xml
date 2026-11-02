@@ -6,6 +6,7 @@
         <title>ECf retr 23.1</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">648</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
       </sourceDesc>
     </fileDesc>
@@ -57,6 +59,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_23-1.lnote.la.41" n="41" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">648</biblScope></bibl><seg type="original" xml:lang="de">nihct <hi rend="italic">Lb Ra;</hi> nihcte geste <hi rend="italic">Ph;</hi> nicht <hi rend="italic">Hv;</hi> het <hi rend="italic">Db;</hi> nyght <hi rend="italic">Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">nihct Lb Ra; nihcte geste Ph; nicht Hv; het Db; nyght Lond</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_23-1.lnote.la.42" n="42" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">648</biblScope></bibl><seg type="original" xml:lang="de">oghen <hi rend="italic">K;</hi> oghene <hi rend="italic">Co;</hi> hogen <hi rend="italic">Bra</hi>[<hi rend="italic">cton</hi>]; ayen <hi rend="italic">Ph;</hi> awen <hi rend="italic">Ra;</hi> hawen man (<hi rend="italic">statt</hi> a. h.) <hi rend="italic">Hv</hi></seg><seg type="translation" xml:lang="en" source="#claude">oghen K; oghene Co; hogen Bra[cton]; ayen Ph; awen Ra; hawen man (instead of a. h.) Hv</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_23-1.lnote.la.43" n="43" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">648</biblScope></bibl><seg type="original" xml:lang="de">hyne <hi rend="italic">Lond Bra;</hi> hine <hi rend="italic">Va Ph Ra Hv Cu;</hi> hinen <hi rend="italic">Lb;</hi> man <hi rend="italic">fügt zu Hv Va;</hi> men <hi rend="italic">fügt zu Ra</hi> [hina man: <hi rend="italic">domesticorum aliquis</hi>]</seg><seg type="translation" xml:lang="en" source="#claude">hyne Lond Bra; hine Va Ph Ra Hv Cu; hinen Lb; Hv Va add man; Ra adds men [hina man: domesticorum aliquis]</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">But if he has been lodged for a third night, and commits an offence against anyone, let him have him to right as of his own household, as is said in English: <hi rend="italic">Tƿa niht gest, þridde niht agen heƿe</hi> ('Two nights a guest, the third night one's own household-man').</ab>
       </div>
     </body>
   </text>

@@ -6,6 +6,7 @@
         <title>ECf 18b</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">643</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
       </sourceDesc>
     </fileDesc>
@@ -48,6 +50,7 @@
         <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 643 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_18b.lnote.la.fn.k" n="k" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">643</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Verf. meint nicht Ächtung Abwesender, also Landes-Abschwörung</hi> (<hi rend="italic">s.</hi> 18, 2), <hi rend="italic">und da Bürgen davon befreien, nicht den</hi> murdritor <hi rend="italic">und</hi> traditor. <hi rend="italic">Vgl. a.</hi> 1235: quia non potuit inuenire plegios, regnum abiurauit; <hi rend="italic">Palgrave</hi> Rise II <hi rend="italic">p.</hi> clxxxviii.</seg><seg type="translation" xml:lang="en" source="#claude">the author means not the outlawing of the absent, so abjuration of the realm (see 18, 2), and, since sureties free a man from that, not the murdritor and traditor. Cf. a. 1235: quia non potuit inuenire plegios, regnum abiurauit; Palgrave, Rise II p. clxxxviii.</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_18b.lnote.la.31" n="31" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">643</biblScope></bibl><seg type="original" xml:lang="de">-bit <hi rend="italic">Hk S Ad</hi></seg><seg type="translation" xml:lang="en" source="#claude">-bit Hk S Ad</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">But if he cannot, he shall be exiled from the country.</ab>
       </div>
     </body>
   </text>

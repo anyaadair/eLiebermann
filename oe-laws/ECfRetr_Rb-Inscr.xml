@@ -6,6 +6,7 @@
         <title>ECf retr Rb Inscr</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -22,6 +23,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">670</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
       </sourceDesc>
     </fileDesc>
@@ -51,6 +53,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_Rb-Inscr.lnote.la.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">670</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vorhergeht</hi> [<hi rend="italic">auf</hi> Wl art. <hi rend="italic">mit bezüglich</hi>]: Hec sunt capitula de legibus s. Edwardi, quas Willelmus bastard confirmauit. I. Decreta Willelmi bastardi et emendaciones, quas posuit in Anglia <hi rend="italic">Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">preceded [referring to Wl art.] by: Hec sunt capitula de legibus s. Edwardi, quas Willelmus bastard confirmauit. I. Decreta Willelmi bastardi et emendaciones, quas posuit in Anglia Lond</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_Rb-Inscr.lnote.la.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">670</biblScope></bibl><seg type="original" xml:lang="de">Hic—est <hi rend="italic">roth Lb, grösser Ra, am Rande Ph, fehlt Hv Vi Gr Lond;</hi> Inc. capitula l. s. <hi rend="italic">Vi</hi></seg><seg type="translation" xml:lang="en" source="#claude">Hic—est in red Lb, larger Ra, in the margin Ph, lacking in Hv Vi Gr Lond; Inc. capitula l. s. Vi</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_Rb-Inscr.lnote.la.fn.a" n="a" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">670</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">hinter</hi> Wl art., <hi rend="italic">o. S.</hi> 488<hi rend="superscript">60</hi>, <hi rend="italic">aus</hi> Lb <hi rend="italic">f.</hi> 195 Hv (<hi rend="italic">der die Rubriken je vor ihr Capitel in den Text setzt</hi>) Ra Vi Gr (<hi rend="italic">wo Zahlen fehlen</hi>) Rc La Ph Lond (<hi rend="italic">d. i.</hi> K Co Or); <hi rend="italic">vgl. o. S.</hi> 627<hi rend="superscript">a</hi>, <hi rend="italic">Sp.</hi> 2<hi rend="superscript">7</hi>; <hi rend="italic">ich drucke klein, was aus dem Texte des</hi> ECf. retr. <hi rend="italic">fliesst. — Der Rubr. II. schreibt nach Eadwards Heiligsprechung und vor Heinrichs II. Tod. Vgl. o. S.</hi> 664<hi rend="superscript">a</hi></seg><seg type="translation" xml:lang="en" source="#claude">after Wl art., above p. 488, note 60, from Lb f. 195, Hv (which puts each rubric in the text before its chapter), Ra Vi Gr (where the numbers are lacking), Rc La Ph Lond (i.e. K Co Or); cf. above p. 627, note a, col. 2, note 7; I print in small type what comes from the text of ECf retr. — Rubricator II writes after Edward’s canonisation and before the death of Henry II. Cf. above p. 664, note a</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">Here begin the chapters of the laws written below.</ab>
       </div>
     </body>
   </text>

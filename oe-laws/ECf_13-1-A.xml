@@ -6,6 +6,7 @@
         <title>ECf 13.1 A</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">640</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
       </sourceDesc>
     </fileDesc>
@@ -62,6 +64,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_13-1-A.lnote.la.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">640</biblScope></bibl><seg type="original" xml:lang="de">Chn. <hi rend="italic">Co Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">Chn. Co Ld</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_13-1-A.lnote.la.9" n="9" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">640</biblScope></bibl><seg type="original" xml:lang="de">-wegiens. <hi rend="italic">Ld;</hi> -wyg. <hi rend="italic">K</hi></seg><seg type="translation" xml:lang="en" source="#claude">-wegiens. Ld; -wyg. K</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_13-1-A.lnote.la.10" n="10" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">640</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Ld</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">Of the kings of the Norwegians and of the Danes after the death of King Alfred. But this Cnut, the aforesaid king, and Swein king of the Danes, his father, and Lachman king of the Swedes [?] (<hi rend="italic">Sueuorum</hi>), and Olaf king of Norway, and Harold Harefoot king of the Danes, son of the aforesaid Cnut and of Ælfgifu (<hi rend="italic">Elwyne</hi>), and Harthacnut king of the Danes, his brother, son of the aforesaid Cnut and of Emma, sister of Robert duke of the Normans and mother of the last Edward, alienated and squandered many rights and dignities and lands and islands from the crown of this kingdom and gave them to their Danes and their Norwegians, who, harrying that kingdom, destroyed it.</ab>
       </div>
     </body>
   </text>

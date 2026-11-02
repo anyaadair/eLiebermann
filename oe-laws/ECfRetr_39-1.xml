@@ -6,6 +6,7 @@
         <title>ECf retr 39.1</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), pp. <biblScope unit="page">669–670</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
       </sourceDesc>
     </fileDesc>
@@ -55,6 +57,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_39-1.lnote.la.32" n="32" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">669</biblScope></bibl><seg type="original" xml:lang="de">circiter <hi rend="italic">Hv</hi></seg><seg type="translation" xml:lang="en" source="#claude">circiter Hv</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_39-1.lnote.la.1-p670" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">670</biblScope></bibl><seg type="original" xml:lang="de">-iis <hi rend="italic">Hv</hi></seg><seg type="translation" xml:lang="en" source="#claude">-iis Hv</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_39-1.lnote.la.2-p670" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">670</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Hv</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Hv</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">The citizens and burgesses and the people also clamoured on behalf of their customs, because around the feast of St Martin† they had been accustomed to purchase animals in the market without a pledge to make their slaughterings against the Nativity† of the Lord.</ab>
       </div>
     </body>
   </text>

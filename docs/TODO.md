@@ -25,13 +25,13 @@ About 3,170 clauses had no translation at all, nearly all Latin. An English crib
 - [x] Instituta Cnuti: the existing crib (`data/incn-crib.json`) put on its 207 clause pages. The 31 In Cn clauses that are only Liebermann's pointers ("Si quis … — — …; o. S. 295") have none.
 - [x] Ps. Cnut de foresta, Libertas Londoniensis, VI Atr Latin paraphrase, Wl art (French and retractatus), Wl Edmr, Cons Cn, App AGu, and the stray Old English rubrics (CHn cor, Af Rb).
 - [x] Quadripartitus (Dedicatio, Argumentum, Liber I titles and rubrics, Liber II).
-- [ ] Leges Edwardi Confessoris and its retractatus.
+- [x] Leges Edwardi Confessoris and its retractatus.
 - [ ] Leges Henrici Primi.
 
 **For Anya: doubtful readings in the crib.**
 
 <!-- crib-doubtful -->
-70 clauses have a crib that marks a doubtful reading with “[?]”, mostly a corrupt or unusual word in the Latin; a look at the scan may settle some.
+85 clauses have a crib that marks a doubtful reading with “[?]”, mostly a corrupt or unusual word in the Latin; a look at the scan may settle some.
 
 - [ ] **Æthelred II** (2): [VI Atr Lat 2](https://anyaadair.github.io/eLiebermann/law.html?id=VI-Atr-Latin-Paraphrase_2), [VI Atr Lat 5.3](https://anyaadair.github.io/eLiebermann/law.html?id=VI-Atr-Latin-Paraphrase_5-3)
 - [ ] **Attributed to William I** (6): [Wl art retr 10](https://anyaadair.github.io/eLiebermann/law.html?id=WlArtRetr_10), [Wl art retr 14.2](https://anyaadair.github.io/eLiebermann/law.html?id=WlArtRetr_14-2), [Wl art Frz 3.1](https://anyaadair.github.io/eLiebermann/law.html?id=Wl-art-Frz_3-1), [Wl art Frz 5](https://anyaadair.github.io/eLiebermann/law.html?id=Wl-art-Frz_5), [Wl art Frz 8.2](https://anyaadair.github.io/eLiebermann/law.html?id=Wl-art-Frz_8-2), [Wl art Frz 10](https://anyaadair.github.io/eLiebermann/law.html?id=Wl-art-Frz_10)
@@ -60,6 +60,8 @@ About 3,170 clauses had no translation at all, nearly all Latin. An English crib
 - [ ] **Consiliatio Cnuti** (2): [Cons Cn II 22.1b](https://anyaadair.github.io/eLiebermann/law.html?id=ConsCn_II-22-1b), [Cons Cn III 1](https://anyaadair.github.io/eLiebermann/law.html?id=ConsCn_III-1)
 - [ ] **Pseudo-Cnut, Constitutiones de foresta** (4): [Ps Cn for 6](https://anyaadair.github.io/eLiebermann/law.html?id=PsCnFor_6), [Ps Cn for 13](https://anyaadair.github.io/eLiebermann/law.html?id=PsCnFor_13), [Ps Cn for 13.1](https://anyaadair.github.io/eLiebermann/law.html?id=PsCnFor_13-1), [Ps Cn for 33](https://anyaadair.github.io/eLiebermann/law.html?id=PsCnFor_33)
 - [ ] **Libertas Londoniensis** (2): [Lib Lond 8.1](https://anyaadair.github.io/eLiebermann/law.html?id=LibLond_8-1), [Lib Lond 8.3](https://anyaadair.github.io/eLiebermann/law.html?id=LibLond_8-3)
+- [ ] **Leges Edwardi Confessoris** (10): [ECf 13.1 A](https://anyaadair.github.io/eLiebermann/law.html?id=ECf_13-1-A), [ECf 26](https://anyaadair.github.io/eLiebermann/law.html?id=ECf_26), [ECf 32 B 5](https://anyaadair.github.io/eLiebermann/law.html?id=ECf_32-B-5), [ECf 32 B 11](https://anyaadair.github.io/eLiebermann/law.html?id=ECf_32-B-11), [ECf 32 B 13](https://anyaadair.github.io/eLiebermann/law.html?id=ECf_32-B-13), [ECf 32 C 1](https://anyaadair.github.io/eLiebermann/law.html?id=ECf_32-C-1), [ECf 32 D 3](https://anyaadair.github.io/eLiebermann/law.html?id=ECf_32-D-3), [ECf 32 D 5](https://anyaadair.github.io/eLiebermann/law.html?id=ECf_32-D-5), [ECf 33](https://anyaadair.github.io/eLiebermann/law.html?id=ECf_33), [ECf 34.2b](https://anyaadair.github.io/eLiebermann/law.html?id=ECf_34-2b)
+- [ ] **Leges Edwardi Confessoris: retractatus** (5): [ECf retr 8.2a](https://anyaadair.github.io/eLiebermann/law.html?id=ECfRetr_8-2a), [ECf retr 33](https://anyaadair.github.io/eLiebermann/law.html?id=ECfRetr_33), [ECf retr 38.1a](https://anyaadair.github.io/eLiebermann/law.html?id=ECfRetr_38-1a), [ECf retr 39.1a](https://anyaadair.github.io/eLiebermann/law.html?id=ECfRetr_39-1a), [ECf retr 39.2](https://anyaadair.github.io/eLiebermann/law.html?id=ECfRetr_39-2)
 <!-- /crib-doubtful -->
 
 ## bocland: Latin translations (suggestion #31)

@@ -6,6 +6,7 @@
         <title>ECf retr 39.2</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">670</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
       </sourceDesc>
     </fileDesc>
@@ -53,6 +55,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_39-2.lnote.la.fn.d" n="d" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">670</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Ablat. absol.:</hi> wenn nur ihr Einkauf auf öffentlichem Markt gekauft war</seg><seg type="translation" xml:lang="en" source="#claude">ablative absolute: provided only that their purchase was bought in the public market</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_39-2.lnote.la.star" n="*" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">670</biblScope></bibl><seg type="original" xml:lang="de">Et concessum est <hi rend="italic">fügt Texthand nachträglich zu Cb; folgt</hi> De latronibus, <hi rend="italic">oben c.</hi> 36, <hi rend="italic">Lond; folgt</hi> Geneal. Normann. <hi rend="italic">Cb Oh Pe Hy Ld 1 Cu Hv Lb Ra Vi Rc Va La Ba Ph; über Gr vgl. u. S.</hi> 672<hi rend="italic">b</hi>; Expliciunt leges sancti Edwardi, primo adinuente per Edgarum, auum suum, et per Willelmum conquestorem Anglie confirmate et prius tempore Cnutonis regis approbate <hi rend="italic">fügt zu Db L</hi> [<hi rend="italic">Erwähnung Cnuts widerspricht</hi> ECf. 34, 1<hi rend="italic">b</hi>; 3, <hi rend="italic">aber vgl. S.</hi> 618<hi rend="italic">f</hi>]</seg><seg type="translation" xml:lang="en" source="#claude">the text hand adds Et concessum est later in Cb; De latronibus, above c. 36, follows in Lond; the Geneal. Normann. follows in Cb Oh Pe Hy Ld 1 Cu Hv Lb Ra Vi Rc Va La Ba Ph; on Gr cf. below, p. 672, note b; Db L add Expliciunt leges sancti Edwardi, primo adinuente per Edgarum, auum suum, et per Willelmum conquestorem Anglie confirmate et prius tempore Cnutonis regis approbate [the mention of Cnut contradicts ECf 34, 1b; 3, but cf. p. 618, note f]</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_39-2.lnote.la.16" n="16" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">670</biblScope></bibl><seg type="original" xml:lang="de">auferet <hi rend="italic">Cb</hi></seg><seg type="translation" xml:lang="en" source="#claude">auferet Cb</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">And it was recommended to the king that he should not take away from them the customs, just and wisely derived, only [that] their purchase be bought [?] in the royal market with witnesses and with the knowledge of the sellers.</ab>
       </div>
     </body>
   </text>

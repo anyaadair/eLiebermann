@@ -6,6 +6,7 @@
         <title>ECf 11.1 A 7</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), pp. <biblScope unit="page">635–636</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
       </sourceDesc>
     </fileDesc>
@@ -49,6 +51,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_11-1-A-7.lnote.la.fn.k" n="k" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">635</biblScope></bibl><seg type="original" xml:lang="de">il gardera et meinteynera les droites et les fraunchises de seynt esglise, grauntes auncienment des droitz roys Christiens d’Englitere; <hi rend="italic">Eid in Anm.</hi> c</seg><seg type="translation" xml:lang="en" source="#claude">il gardera et meinteynera les droites et les fraunchises de seynt esglise, grauntes auncienment des droitz roys Christiens d’Englitere; the oath in note c (to 11, 1 A 2)</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_11-1-A-7.lnote.la.fn.l" n="l" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">635</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">ebenso spricht</hi> Lond <hi rend="italic">o. S.</hi> 490<hi rend="italic">k</hi>. 491 <hi rend="italic">Z.</hi> 7</seg><seg type="translation" xml:lang="en" source="#claude">Lond speaks in the same way above, p. 490, note k, and p. 491, line 7</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_11-1-A-7.lnote.la.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">635</biblScope></bibl><seg type="original" xml:lang="de">custodire <hi rend="italic">Ce</hi></seg><seg type="translation" xml:lang="en" source="#claude">custodire Ce</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">The king ought to fear and love God above all things and keep his commandments throughout his whole kingdom. He ought also to keep, cherish, maintain, rule and defend against enemies the holy Church of his kingdom with all integrity and liberty according to the constitutions of the fathers and predecessors, so that God may be honoured before all else and always kept before the eyes.</ab>
       </div>
     </body>
   </text>

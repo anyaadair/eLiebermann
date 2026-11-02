@@ -6,6 +6,7 @@
         <title>ECf 33</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">660</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
       </sourceDesc>
     </fileDesc>
@@ -65,6 +67,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_33.lnote.la.10" n="10" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">660</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Ad</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Ad</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_33.lnote.la.11" n="11" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">660</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt S Ad</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in S Ad</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_33.lnote.la.12" n="12" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">660</biblScope></bibl><seg type="original" xml:lang="de">VII <hi rend="italic">Rl;</hi> XXIII et IIII <hi rend="italic">Ad</hi></seg><seg type="translation" xml:lang="en" source="#claude">VII Rl; XXIII et IIII Ad</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">There was also the law of the Danes [in] Norfolk, Suffolk, Cambridgeshire, which [shires] had in compensation for a forfeiture, where the aforesaid shires had eighteen hundreds [?], these [had] ten and a half; and this by affinity with the Saxons, because at that time the greater compensation for a forfeiture of the Saxons was four score pounds and four.</ab>
       </div>
     </body>
   </text>

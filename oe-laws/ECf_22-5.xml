@@ -6,6 +6,7 @@
         <title>ECf 22.5</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">648</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
       </sourceDesc>
     </fileDesc>
@@ -54,6 +56,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_22-5.lnote.la.7" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">648</biblScope></bibl><seg type="original" xml:lang="de">-dis <hi rend="italic">Hr;</hi> uel in comitatibus <hi rend="italic">fügt zu Hr Ad</hi> (<hi rend="italic">nicht Do</hi>)</seg><seg type="translation" xml:lang="en" source="#claude">-dis Hr; Hr Ad add uel in comitatibus (not Do)</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_22-5.lnote.la.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">648</biblScope></bibl><seg type="original" xml:lang="de">wapintachiis <hi rend="italic">Hr;</hi> wantapen., <hi rend="italic">aber</hi> nta <hi rend="italic">unterstrichen Rl</hi></seg><seg type="translation" xml:lang="en" source="#claude">wapintachiis Hr; wantapen., but nta underlined Rl</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_22-5.lnote.la.9" n="9" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">648</biblScope></bibl><seg type="original" xml:lang="de">schiris <hi rend="italic">S;</hi> shiris <hi rend="italic">Ad;</hi> siris <hi rend="italic">Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">schiris S; shiris Ad; siris Hr</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">And those who do not have the customs which we have spoken of above, let them do right before the king's justice in the hundred or in the wapentakes or in the shires.</ab>
       </div>
     </body>
   </text>

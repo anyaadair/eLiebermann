@@ -6,6 +6,7 @@
         <title>ECf 35.1 A</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -22,6 +23,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">664</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
       </sourceDesc>
     </fileDesc>
@@ -56,6 +58,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_35-1-A.lnote.la.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">664</biblScope></bibl><seg type="original" xml:lang="de">-mis <hi rend="italic">Co Or Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">-mis Co Or Ld</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_35-1-A.lnote.la.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">664</biblScope></bibl><seg type="original" xml:lang="de">ac <hi rend="italic">Co;</hi> et i. <hi rend="italic">fehlt Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">ac Co; et i. lacking in Ld</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_35-1-A.lnote.la.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">664</biblScope></bibl><seg type="original" xml:lang="de">-gnis <hi rend="italic">K</hi></seg><seg type="translation" xml:lang="en" source="#claude">-gnis K</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">And the aforesaid Margaret was very well born and most excellent, namely on her father's side of noble family and of the blood of the kings of the English-Britons, but on her mother's side of the family and blood of the kings of the Rugians; and, very like her most holy ancestors in good and praiseworthy and distinguished deeds, she shone forth illustrious.</ab>
       </div>
     </body>
   </text>

@@ -6,6 +6,7 @@
         <title>ECf Prol. 1</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription of the text, and transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -22,6 +23,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">627</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
       </sourceDesc>
     </fileDesc>
@@ -61,6 +63,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_Prol-1.lnote.la.20" n="20" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">627</biblScope></bibl><seg type="original" xml:lang="de">uideri <hi rend="italic">Ad Wo Ck Ed</hi></seg><seg type="translation" xml:lang="en" source="#claude">uideri Ad Wo Ck Ed</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_Prol-1.lnote.la.21" n="21" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">627</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">so Cl;</hi> comu. <hi rend="italic">Hr;</hi> committentes <hi rend="italic">Rl;</hi> mut. <hi rend="italic">Pl S;</hi> comitatus <hi rend="italic">übr.</hi></seg><seg type="translation" xml:lang="en" source="#claude">so Cl; comu. Hr; committentes Rl; mut. Pl S; comitatus the others</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_Prol-1.lnote.la.star" n="*" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">627</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">hier fügt zu</hi> Ce, <hi rend="italic">vergeblich</hi> Lond, <hi rend="italic">u.</hi> 34, 1a, <hi rend="italic">zu bessern versuchend, und</hi> (<hi rend="italic">da</hi> Ealdred 1069 <hi rend="italic">starb,</hi> Hugo <hi rend="italic">erst</hi> 1075 <hi rend="italic">geweiht ward</hi>) <hi rend="italic">in sich widersprechend:</hi> Aldredus autem Eboracensis archiepiscopus, qui regem Willelmum coronauerat, et Hugo Londoniensis episcopus per preceptum regis scripserunt propriis manibus omnia que predicti iurati dixerunt.</seg><seg type="translation" xml:lang="en" source="#claude">here Ce adds, trying in vain to improve on Lond (below, 34, 1a), and contradicting itself (since Ealdred died in 1069 and Hugh was only consecrated in 1075): Aldredus autem Eboracensis archiepiscopus, qui regem Willelmum coronauerat, et Hugo Londoniensis episcopus per preceptum regis scripserunt propriis manibus omnia que predicti iurati dixerunt.</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">Twelve, therefore, having been chosen from each of the shires of the whole country, they first affirmed by oath before him that, as far as they could, proceeding by the right path, they would declare the ordinances of their laws and customs, omitting nothing, changing nothing by prevarication.</ab>
       </div>
     </body>
   </text>
