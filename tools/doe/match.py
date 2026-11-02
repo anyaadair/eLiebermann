@@ -75,12 +75,17 @@ for path in lists:
             continue
         eid, hw = line.split('\t', 1)
         doe.append((eid.strip(), hw.strip()))
-by_base, by_loose = collections.defaultdict(list), collections.defaultdict(list)
+def xform(s):
+    return re.sub(r'cs|sc|x', 'x', loose(s))
+
+
+by_base, by_loose, by_x = (collections.defaultdict(list) for _ in range(3))
 for eid, hw in doe:
     b = base(hw)
     if b:
         by_base[b].append((eid, hw))
         by_loose[loose(hw)].append((eid, hw))
+        by_x[xform(hw)].append((eid, hw))
 lo, hi = min(base(h) for _, h in doe if base(h)), max(base(h) for _, h in doe if base(h))
 # The lists are in the DOE's order, not strict alphabetical; take the span from first and last.
 first, last = base(doe[0][1]), base(doe[-1][1])
@@ -140,6 +145,7 @@ for path in sorted(glob.glob(os.path.join(ENTRIES, '*.xml'))):
         ('verb form (-að/-eð → -an/-ian …)', by_base, set().union(*[verb_guesses(k) for k in keys])),
         ('verb form, spelling variant', by_loose, {loose(g) for k in keys for g in verb_guesses(k)}),
         ('without ge-', by_base, {k[2:] for k in keys if k.startswith('ge') and len(k) > 5}),
+        ('x / cs / sc (acsian = āxian)', by_x, {xform(k) for k in keys}),
         ('inflected noun/adjective form', by_base, set().union(*[noun_guesses(k) for k in keys])),
     ]
     for i, (label, table, ks) in enumerate(steps):
@@ -148,14 +154,16 @@ for path in sorted(glob.glob(os.path.join(ENTRIES, '*.xml'))):
             how = label
             if len(found) > 1:
                 grade = 'unsure'
-            elif i in (0, 2):
+            elif i == 0:
                 grade = 'sure'
-            elif i <= 5:
+            elif i <= 7:  # the Bosworth-Toller links are guesses too: never more than likely
                 grade = 'likely'
             else:
                 grade = 'unsure'
             break
-    results.append({'id': eid, 'headword': hw, 'xref': is_xref, 'bt': bt, 'existing': has,
+    body = re.search(r'<entry[^>]*>(.*?)</entry>', xml, re.S)
+    body = re.sub(r'<(orth|xr)\b.*?</\1>', ' ', body.group(1), flags=re.S) if body else ''
+    results.append({'id': eid, 'headword': hw, 'xref': is_xref, 'bt': bt, 'existing': has, 'snippet': text(body)[:160],
                     'grade': grade, 'how': how,
                     'candidates': [{'id': k, 'headword': v} for k, v in found.items()]})
 

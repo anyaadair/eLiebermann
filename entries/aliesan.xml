@@ -30,6 +30,7 @@
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
       <change when="2026-10-28">“von” unlinked from the abbreviations list: here it is ordinary German, not an abbreviation (Anya Adair).</change>
       <change when="2026-11-01">Abbreviations “unfl.” and “Für” linked to the abbreviations list.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E00017; guessed from the DOE headword list, spelling variant (i/y/ie, double letters, -ian/-an); not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -47,6 +48,7 @@
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/1486">aliésan</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/1468">a-lésan</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/38457">á-lesan (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E00017">a-lȳsan</ref></xr>
         <xr type="lawCode"><ref target="clause:Grith_15">Grið 15</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_20">Ine 20</ref></xr>
         <xr type="lawCode"><ref target="clause:Wi_28">Wi 28</ref></xr>

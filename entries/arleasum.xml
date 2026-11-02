@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E01372; guessed from the DOE headword list, same as the Bosworth-Toller headword; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -37,6 +38,7 @@
         <dictScrap type="liebermann">þam <hi rend="bold">arleasum</hi> scieldan, <hi rend="italic"><ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref> <ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref></hi>, <hi rend="italic">Unredlichen</hi> <ref type="lawCode" target="law:Iudex">Iudex</ref> 16</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/2133">ár-leás</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/38931">ár-leás (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E01372">ār-lēas</ref></xr>
         <xr type="lawCode"><ref target="clause:Iudex_16">Iudex 16</ref></xr>
       </entry>
     </body>

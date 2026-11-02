@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E01071; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,7 @@
           <orth>amen</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">amen</hi> [<hi rend="italic">Gebetschluss</hi>] <ref type="lawCode" target="law:VAtr">V Atr</ref> 33,1 <ref type="lawCode" target="law:G2">G 2</ref>. <ref type="lawCode" target="law:VIIaAtr">VIIa</ref> Epil. <ref type="lawCode" target="law:Cn1020">Cn 1020</ref>,20. <ref type="lawCode" target="law:IICn">II Cn</ref> 11,1. 84,5 <ref type="abbreviation" target="gram:folgende"><abbr>f.</abbr></ref> <ref type="lawCode" target="law:IudDeiV">Iud Dei V</ref> 2,5. <ref type="lawCode" target="law:IudDeiVIII">VIII</ref> 2,4.</dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E01071">āmen</ref></xr>
         <xr type="lawCode"><ref target="clause:VAtr_33-1">V Atr 33,1</ref></xr>
         <xr type="lawCode"><ref target="clause:VIIaAtr_Epil">VIIa Atr Epil</ref></xr>
         <xr type="lawCode"><ref target="clause:Cn1020_20">Cn 1020,20</ref></xr>

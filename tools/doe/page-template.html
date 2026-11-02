@@ -1,0 +1,236 @@
+<title>DOE Matches</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+/* Layout: one reading column of match cards under a sticky filter bar, in eLiebermann's own palette and faces (as the Bosworth-Toller review page). */
+:root {
+  --bg: #fbfaf7; --surface: #ffffff; --ink: #212121; --muted: #5f6368; --rule: #dcd8cf;
+  --link: #06417c; --ok: #1e6b35; --ok-bg: #e4f1e7; --bad: #a12622; --bad-bg: #f8e3e1;
+  --warn: #8a5a00; --warn-bg: #f7ecd4; --chip: #eef1f5;
+  --serif: 'EB Garamond', Georgia, 'Times New Roman', serif;
+  --sans: 'Source Sans 3', 'Segoe UI', Tahoma, sans-serif;
+  --radius: 6px;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #16191d; --surface: #1f2328; --ink: #e8e6e1; --muted: #a2a8b0; --rule: #363b42;
+  --link: #8fbcf0; --ok: #7fd197; --ok-bg: #1d3325; --bad: #f19a92; --bad-bg: #3a2220;
+  --warn: #e7c06b; --warn-bg: #362c17; --chip: #2a3038; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #16191d; --surface: #1f2328; --ink: #e8e6e1; --muted: #a2a8b0; --rule: #363b42;
+  --link: #8fbcf0; --ok: #7fd197; --ok-bg: #1d3325; --bad: #f19a92; --bad-bg: #3a2220;
+  --warn: #e7c06b; --warn-bg: #362c17; --chip: #2a3038; color-scheme: dark }
+body { background: var(--bg); color: var(--ink); font-family: var(--sans); font-size: 16px; line-height: 1.45; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
+.wrap { max-width: 52rem; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 1.5rem 3rem; }
+h1 { font-family: var(--serif); font-weight: 600; font-size: 2rem; margin: 0 0 0.3rem; text-wrap: balance; }
+.lede { color: var(--muted); margin: 0 0 1rem; max-width: 42rem; }
+a { color: var(--link); text-underline-offset: 2px; }
+.summary { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; margin: 0 0 1rem; font-variant-numeric: tabular-nums; }
+.summary div { display: flex; flex-direction: column; }
+.summary b { font-size: 1.4rem; font-weight: 600; }
+.summary span { font-size: 0.8rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+.bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 2; background: var(--bg); padding-block: 0.6rem; border-bottom: 1px solid var(--rule); display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; align-items: center; }
+.tabs { display: flex; gap: 0.25rem; flex-wrap: wrap; }
+.tabs button { font: inherit; font-size: 0.9rem; border: 1px solid var(--rule); background: var(--surface); color: var(--ink); padding: 0.3rem 0.7rem; border-radius: 999px; cursor: pointer; }
+.tabs button[aria-pressed="true"] { background: var(--link); border-color: var(--link); color: var(--bg); }
+.bar label { font-size: 0.9rem; color: var(--muted); display: flex; gap: 0.35rem; align-items: center; }
+#q { font: inherit; font-size: 0.95rem; padding: 0.3rem 0.6rem; border: 1px solid var(--rule); border-radius: var(--radius); background: var(--surface); color: var(--ink); width: 11rem; max-width: 100%; }
+.status { font-size: 0.85rem; color: var(--muted); margin: 0.6rem 0 0; min-height: 1.2em; }
+.list { display: flex; flex-direction: column; gap: 0.75rem; margin-top: 0.75rem; }
+.card { background: var(--surface); border: 1px solid var(--rule); border-radius: var(--radius); padding: 0.8rem 1rem; display: grid; gap: 0.5rem; }
+.card.is-right { border-color: var(--ok); }
+.card.is-wrong { border-color: var(--bad); }
+.head { display: flex; flex-wrap: wrap; gap: 0.25rem 0.75rem; align-items: baseline; }
+.hw { font-family: var(--serif); font-size: 1.45rem; font-weight: 600; text-decoration: none; }
+.hw:hover { text-decoration: underline; }
+.how { font-size: 0.8rem; color: var(--muted); }
+.pill { font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; padding: 0.05rem 0.5rem; border-radius: 999px; }
+.pill.sure { background: var(--ok-bg); color: var(--ok); }
+.pill.likely { background: var(--chip); color: var(--link); }
+.pill.unsure { background: var(--warn-bg); color: var(--warn); }
+.pill.none { background: var(--chip); color: var(--muted); }
+.snip { font-family: var(--serif); font-size: 1.02rem; color: var(--muted); margin: 0; overflow-wrap: anywhere; }
+.bthint { font-size: 0.82rem; color: var(--muted); margin: 0; }
+.opts { display: grid; gap: 0.4rem; }
+.opt { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 0.3rem 0.75rem; align-items: center; padding: 0.45rem 0.6rem; border-radius: var(--radius); border: 1px solid var(--rule); }
+.opt.picked { border-color: var(--ok); background: var(--ok-bg); }
+.opt.own { border-style: dashed; }
+.doe { min-width: 0; }
+.doe a { font-family: var(--serif); font-size: 1.15rem; font-weight: 600; }
+.doe .id { font-size: 0.8rem; color: var(--muted); margin-left: 0.35rem; font-variant-numeric: tabular-nums; }
+.add { display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; font-size: 0.85rem; color: var(--muted); }
+.add input { font: inherit; font-size: 0.9rem; width: 7.5rem; padding: 0.25rem 0.5rem; border: 1px solid var(--rule); border-radius: var(--radius); background: var(--surface); color: var(--ink); }
+.actions { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.actions button, .opt button, .add button { font: inherit; font-size: 0.85rem; padding: 0.3rem 0.7rem; border-radius: var(--radius); border: 1px solid var(--rule); background: var(--surface); color: var(--ink); cursor: pointer; white-space: nowrap; }
+button:focus-visible, input:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+button.wrong[aria-pressed="true"] { background: var(--bad); border-color: var(--bad); color: var(--surface); }
+.opt button[aria-pressed="true"] { background: var(--ok); border-color: var(--ok); color: var(--surface); }
+button:disabled { opacity: 0.5; cursor: default; }
+.decided { font-size: 0.85rem; font-weight: 600; }
+.decided.ok { color: var(--ok); } .decided.no { color: var(--bad); }
+.err { color: var(--bad); font-size: 0.85rem; }
+.more { margin: 1rem auto 0; display: block; font: inherit; padding: 0.5rem 1.2rem; border-radius: var(--radius); border: 1px solid var(--link); background: var(--surface); color: var(--link); cursor: pointer; }
+.empty { color: var(--muted); padding: 2rem 0; text-align: center; }
+@media (max-width: 520px) { .opt { grid-template-columns: 1fr; } h1 { font-size: 1.6rem; } }
+@media (prefers-reduced-motion: no-preference) { .card { transition: border-color 0.15s; } }
+</style>
+
+<div class="wrap">
+  <h1>DOE Matches</h1>
+  <p class="lede">Each Old English entry in eLiebermann from <strong>a</strong> to <strong>ayþan</strong>, with the Dictionary of Old English entry it most probably matches. <strong>Sure</strong> and <strong>likely</strong> matches will be linked unless you mark them wrong. <strong>Unsure</strong> ones (several DOE entries fit) are linked only if you choose. Where no guess is right, type the E-number from the DOE address. The DOE links here open the version for individual subscribers. Your choices save as you go.</p>
+  <div class="summary" id="summary"></div>
+  <div class="bar">
+    <div class="tabs" role="group" aria-label="Which matches to show">
+      <button type="button" data-g="unsure" aria-pressed="true">Unsure</button>
+      <button type="button" data-g="likely" aria-pressed="false">Likely</button>
+      <button type="button" data-g="sure" aria-pressed="false">Sure</button>
+      <button type="button" data-g="none" aria-pressed="false">No match</button>
+    </div>
+    <label><input type="checkbox" id="hide"> Hide ones I've decided</label>
+    <input type="search" id="q" placeholder="Find a headword" aria-label="Find a headword">
+  </div>
+  <p class="status" id="status">Connecting to saved choices…</p>
+  <div class="list" id="list"></div>
+  <button type="button" class="more" id="more" hidden>Show more</button>
+</div>
+
+<script id="data" type="application/json">__DATA__</script>
+<script>
+(function () {
+  const ROWS = JSON.parse(document.getElementById('data').textContent);
+  const DOE = id => 'https://indiv.dictionary.doe.utoronto.ca/doe/?' + id;
+  const PAGE = 40;
+  let group = 'unsure', shown = PAGE, decisions = {}, col = null, canWrite = false;
+  const errors = {};
+  const $ = id => document.getElementById(id);
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const norm = s => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+
+  function summary() {
+    const n = g => ROWS.filter(r => r.g === g).length;
+    $('summary').innerHTML = [['sure', 'Sure'], ['likely', 'Likely'], ['unsure', 'Unsure'], ['none', 'No match']]
+      .map(([g, l]) => `<div><b>${n(g).toLocaleString()}</b><span>${l}</span></div>`).join('') +
+      `<div><b>${Object.keys(decisions).length.toLocaleString()}</b><span>Decided by you</span></div>`;
+  }
+
+  // The DOE entries linked for a row: the saved choice, or else the suggestion.
+  function linked(r) {
+    const d = decisions[r.e];
+    if (d) return new Set(d.ids || []);
+    return new Set(r.g === 'sure' || r.g === 'likely' ? r.o.map(o => o.id) : []);
+  }
+  // Options shown: the guesses, then any E-numbers typed in by hand.
+  function options(r) {
+    const known = new Set(r.o.map(o => o.id));
+    const own = [...linked(r)].filter(id => !known.has(id)).map(id => ({ id, hw: '', own: true }));
+    return r.o.concat(own);
+  }
+
+  function option(o, set) {
+    const on = set.has(o.id);
+    return `<div class="opt${o.own ? ' own' : ''}${on ? ' picked' : ''}">
+      <div class="doe"><a href="${DOE(o.id)}" target="_blank" rel="noopener">${o.own ? 'Entry typed in' : esc(o.hw)}</a><span class="id">${o.id}</span></div>
+      <button type="button" data-act="toggle" data-id="${o.id}" aria-pressed="${on}" ${canWrite ? '' : 'disabled'}>${on ? 'Linked' : 'Link'}</button></div>`;
+  }
+
+  function card(r) {
+    const d = decisions[r.e], set = linked(r), opts = options(r);
+    const wrong = d && !(d.ids || []).length;
+    const label = d ? (wrong ? '<span class="decided no">No link</span>' : `<span class="decided ok">${set.size} linked</span>`) : '';
+    const acts = (r.o.length ? `<button type="button" class="wrong" data-act="none" aria-pressed="${!!wrong}" ${canWrite ? '' : 'disabled'}>${r.g === 'unsure' ? 'None of these' : 'Wrong'}</button>` : '') +
+      (d ? `<button type="button" data-act="undo" ${canWrite ? '' : 'disabled'}>Back to suggestion</button>` : '');
+    return `<article class="card${d && !wrong ? ' is-right' : ''}${wrong ? ' is-wrong' : ''}" data-e="${esc(r.e)}">
+      <div class="head"><a class="hw" href="https://anyaadair.github.io/eLiebermann/entry.html?id=${encodeURIComponent(r.e)}" target="_blank" rel="noopener">${esc(r.hw)}</a>
+        <span class="pill ${r.g}">${r.g === 'none' ? 'no match' : r.g}</span><span class="how">${esc(r.t)}${r.x.length ? ' · already linked on the site: ' + r.x.join(', ') : ''}</span> ${label}</div>
+      <p class="snip">${esc(r.s)}</p>
+      ${r.b.length ? `<p class="bthint">Bosworth-Toller link on the site: ${esc(r.b.join(', '))}</p>` : ''}
+      ${opts.length ? `<div class="opts">${opts.map(o => option(o, set)).join('')}</div>` : ''}
+      <form class="add" data-act="add">
+        <label for="add-${esc(r.e)}">Other DOE entry</label>
+        <input id="add-${esc(r.e)}" placeholder="E01234" autocomplete="off" ${canWrite ? '' : 'disabled'}>
+        <button type="submit" ${canWrite ? '' : 'disabled'}>Link it</button>
+        ${errors[r.e] ? `<span class="err">${esc(errors[r.e])}</span>` : ''}
+      </form>
+      ${acts ? `<div class="actions">${acts}</div>` : ''}
+    </article>`;
+  }
+
+  function visible() {
+    const q = norm($('q').value.trim());
+    return ROWS.filter(r => r.g === group && (!q || norm(r.hw).includes(q)) && !($('hide').checked && decisions[r.e]));
+  }
+
+  function draw() {
+    const v = visible();
+    $('list').innerHTML = v.length ? v.slice(0, shown).map(card).join('') : '<p class="empty">Nothing to show here.</p>';
+    $('more').hidden = v.length <= shown;
+    $('more').textContent = `Show more (${(v.length - shown).toLocaleString()} left)`;
+    summary();
+  }
+
+  async function save(e, data) {
+    if (!col) return;
+    const prev = decisions[e];
+    if (data) decisions[e] = data; else delete decisions[e];
+    draw();
+    try {
+      if (data) await col.doc(e).set(data); else await col.doc(e).delete();
+      $('status').textContent = 'Saved.';
+    } catch (err) {
+      if (prev) decisions[e] = prev; else delete decisions[e];
+      draw();
+      $('status').textContent = 'That choice could not be saved: ' + (err && err.message || 'unknown error') + '. Try again in a moment.';
+    }
+  }
+
+  $('list').addEventListener('click', ev => {
+    const b = ev.target.closest('button[data-act]'); if (!b) return;
+    const e = b.closest('.card').dataset.e;
+    const r = ROWS.find(x => x.e === e);
+    const act = b.dataset.act;
+    if (act === 'undo') return save(e, null);
+    if (act === 'none') return save(e, { ids: [] });
+    const set = linked(r);
+    set.has(b.dataset.id) ? set.delete(b.dataset.id) : set.add(b.dataset.id);
+    save(e, { ids: [...set] });
+  });
+  $('list').addEventListener('submit', ev => {
+    ev.preventDefault();
+    const f = ev.target, e = f.closest('.card').dataset.e;
+    const raw = f.querySelector('input').value.trim();
+    // Accept "E01234", "1234" or a whole DOE address.
+    const m = /E?(\d{1,5})\s*$/i.exec(raw.replace(/^.*\?/, ''));
+    if (!m) { errors[e] = 'Type an E-number such as E01234, or paste the DOE address.'; draw(); return; }
+    delete errors[e];
+    const id = 'E' + m[1].padStart(5, '0');
+    const set = linked(ROWS.find(x => x.e === e)); set.add(id);
+    save(e, { ids: [...set] });
+  });
+  document.querySelectorAll('.tabs button').forEach(b => b.addEventListener('click', () => {
+    group = b.dataset.g; shown = PAGE;
+    document.querySelectorAll('.tabs button').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+    draw();
+  }));
+  $('q').addEventListener('input', () => { shown = PAGE; draw(); });
+  $('hide').addEventListener('change', () => { shown = PAGE; draw(); });
+  $('more').addEventListener('click', () => { shown += PAGE; draw(); });
+  draw();
+
+  (async () => {
+    const db = window.claude ? await window.claude.use('db') : null;
+    if (!db) { $('status').textContent = 'Choices can only be saved when you are signed in to Claude. You can still look through the matches.'; return; }
+    col = db.collection('decisions');
+    canWrite = true;
+    draw();
+    const timer = setTimeout(() => { $('status').textContent = 'Saved choices are taking a while to load. Reload the page if they do not appear.'; }, 10000);
+    col.onSnapshot(snap => {
+      clearTimeout(timer);
+      const next = {};
+      snap.docs.forEach(d => { next[d.id] = d.data(); });
+      decisions = next;
+      $('status').textContent = Object.keys(next).length ? 'Your choices are saved.' : 'No choices yet. Start with the unsure matches.';
+      draw();
+    }, err => { clearTimeout(timer); $('status').textContent = 'Saved choices could not be loaded (' + (err && err.code || 'error') + '). Reload the page to try again.'; });
+  })();
+})();
+</script>

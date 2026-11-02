@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E00203; guessed from the DOE headword list, same as the Bosworth-Toller headword; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -37,6 +38,7 @@
         <dictScrap type="liebermann"><hi rend="bold">aceorfe</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Optativ"><abbr>op</abbr></ref></hi> 3, <hi rend="italic">abhaue</hi> <ref type="lawCode" target="law:Ine">Ine</ref> 44. <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> ofa~</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/164">a-ceorfan</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/37429">á-ceorfan (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E00203">a-ceorfan</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_44">Ine 44</ref></xr>
       </entry>
     </body>
