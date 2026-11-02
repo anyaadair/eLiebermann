@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E03207; chosen by the editor on the review page).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -38,6 +39,7 @@
         <dictScrap type="liebermann"><hi rend="bold">bur</hi> <hi rend="italic">Bauer</hi> <ref type="lawCode" target="law:Ine">Ine</ref> 6,3 <ref type="lawCode" target="law:Bu">Bu</ref>; gebur <hi rend="italic"><ref type="abbreviation" target="gram:ubrigeHandschriften"><abbr>übr.</abbr></ref></hi> — <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> (<ref type="entry" target="entry:neahgebur">neah</ref>)<ref type="entry" target="entry:gebur">gebur</ref></dictScrap>
         <xr type="derivative"><ref target="entry:neahgebur">neahgebur</ref></xr>
         <xr type="derivative"><ref target="entry:gebur">gebur</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E03207">būr</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_6-3">Ine 6,3</ref></xr>
       </entry>
     </body>

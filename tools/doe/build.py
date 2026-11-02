@@ -1,17 +1,24 @@
 """Make the DOE review page from match.py's output.
 
-python3 tools/doe/build.py out.json tools/doe/page-template.html doe-matches.html
+python3 tools/doe/build.py out.json tools/doe/page-template.html doe-matches.html [decisions-folder]
 
 Cross-reference and spelling entries get no links (match.py leaves them
-out). Entries that already have a DOE link are left out too.
+out). Entries that already have a DOE link are left out too, and so are
+entries with a saved choice (decisions-folder, as for apply.py), including
+"no link", so the page shows only what is still to decide.
 """
-import json, sys
+import json, sys, glob, os
 D = json.load(open(sys.argv[1], encoding='utf-8'))
 R = D['results']
+decided = set()
+if len(sys.argv) > 4:
+    decided = {os.path.basename(f)[:-5] for f in glob.glob(os.path.join(sys.argv[4], '**', '*.json'), recursive=True)}
 rows = []
 for r in R:
     if r['xref'] or r['existing']:
         continue  # already linked on the site (by hand, or in an earlier round)
+    if r['id'] in decided:
+        continue  # the editor has already chosen (a link, or none)
     if r['grade'] == 'none' and r['headword'].lstrip('[(').strip()[:1].isupper():
         continue  # names: the DOE has no entries for them (Anya, Nov 2026)
     rows.append({'e': r['id'], 'hw': r['headword'], 's': r['snippet'], 'g': r['grade'], 't': r['how'],
