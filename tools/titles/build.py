@@ -11,7 +11,8 @@ ROOT = os.path.join(HERE, '..', '..')
 P = os.path.join(ROOT, 'oe-laws', 'codes.json')
 ED = json.load(open(os.path.join(HERE, 'editions.json'), encoding='utf-8'))
 WHO = {'Attenborough': ('Attenborough, p. ', 1922), 'Robertson': ('Robertson, p. ', 1925), 'Whitelock': ('Whitelock, EHD p. ', 1979),
-       'Rabin 2015': ('Rabin, Political Writings p. ', 2015), 'Rabin': ('Rabin, Legal Writings p. ', 2020)}
+       'Rabin 2015': ('Rabin, Political Writings p. ', 2015), 'Rabin': ('Rabin, Legal Writings p. ', 2020),
+       'Jurasinski and Oliver': ('Jurasinski and Oliver, p. ', 2021)}
 codes = json.load(open(P, encoding='utf-8'))
 for c in codes:
     t = TOC.get(c['code'])
