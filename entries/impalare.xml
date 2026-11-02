@@ -27,15 +27,17 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-02">Marked as Latin (the print has no L before the headword); editor’s note added.</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:lang="ang">
+      <entry xml:lang="la">
         <form type="lemma">
           <orth>impalare</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">impalare</hi> <hi rend="italic">sich aufspiessen;</hi> inp~ <ref type="lawCode" target="law:Hn">Hn</ref> 90,4 [<hi rend="italic"><ref type="abbreviation" target="gram:aus"><abbr>aus</abbr></ref> <ref type="bibl" target="bib:CitLexRibuaria">Lex Ribuar.</ref></hi>]</dictScrap>
+        <note type="editorial">Latin; Liebermann omits the L.</note>
         <xr type="lawCode"><ref target="clause:Hn_90-4">Hn 90,4</ref></xr>
       </entry>
     </body>
