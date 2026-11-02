@@ -41,6 +41,7 @@
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
       <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
+      <change when="2026-11-02">Readings of MS Rs moved from this note to ECf retr 38, the text they are variants of (Gesetze III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -55,7 +56,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_38.lnote.la.19" n="19" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">668</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Hk</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_38.lnote.la.22" n="22" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">668</biblScope></bibl><seg type="original" xml:lang="de">et. er. <hi rend="italic">Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">et. er. Hr</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">It was also forbidden in the law that anyone should buy a living animal or used cloth without pledges and good witnesses.</ab>
-        <note type="liebermannNote" subtype="textual" xml:id="ECf_38.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">350</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Handel 8a. h. 10 B; Gewährbürge 1. 5. 6; Kaufzeugen. — *<hi rend="italic">De empt.</hi> bis <hi rend="italic">fastermannes</hi> [zu diesem Worte <hi rend="italic">s. o.</hi> II 333. 485 n. 12a], ohne <hi rend="superscript">15</hi><hi rend="italic">Quod</hi> bis <hi rend="italic">mon.</hi>, Rs</seg><seg type="translation" xml:lang="en" source="#claude">Cf. <hi rend="italic">Gl</hi> Handel 8a. h. 10 B; Gewährbürge 1. 5. 6; Kaufzeugen. — *<hi rend="italic">De empt.</hi> to <hi rend="italic">fastermannes</hi> [on this word see above, II 333. 485 n. 12a], without <hi rend="superscript">15</hi><hi rend="italic">Quod</hi> to <hi rend="italic">mon.</hi>, Rs</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_38.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">350</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Handel 8a. h. 10 B; Gewährbürge 1. 5. 6; Kaufzeugen.</seg><seg type="translation" xml:lang="en" source="#claude">Cf. <hi rend="italic">Gl</hi> Handel 8a. h. 10 B; Gewährbürge 1. 5. 6; Kaufzeugen.</seg></note>
       </div>
     </body>
   </text>

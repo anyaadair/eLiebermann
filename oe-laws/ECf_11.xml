@@ -41,6 +41,7 @@
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
       <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
+      <change when="2026-11-02">Readings of MS Rs moved from this note to ECf retr 11, the text they are variants of (Gesetze III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -55,7 +56,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_11.lnote.la.24" n="24" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">634</biblScope></bibl><seg type="original" xml:lang="de">fuit stat. <hi rend="italic">Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">fuit stat. Ad Do</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_11.lnote.la.star" n="*" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">634</biblScope></bibl><seg type="original" xml:lang="de">utlages <hi rend="italic">von gleicher Hand übergeschr. Rl, unter Seeräubern</hi> Friedlose <hi rend="italic">statt äusserer Feinde missverstehend</hi></seg><seg type="translation" xml:lang="en" source="#claude">utlages written above in the same hand Rl, misunderstanding the pirates as outlaws instead of foreign enemies</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">Of Danegeld. The payment of Danegeld was first established because of pirates.</ab>
-        <note type="liebermannNote" subtype="textual" xml:id="ECf_11.lnote.oe.erkl-a" n="a" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">345</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Dänengeld 5b, welcher Name erst im 12. Jh. technisch die staatliche Jahressteuer bezeichnet; Pipe roll a. 1130. 1155ff. — <hi rend="italic">De Danegendo</hi><hi rend="superscript">35</hi>, ohne <hi rend="italic">Quid</hi> bis <hi rend="italic">const.</hi>, Rs</seg><seg type="translation" xml:lang="en" source="#claude">Cf. Gl Dänengeld 5b, a name which only in the 12th century technically designates the annual state tax; Pipe roll 1130. 1155ff. — <hi rend="italic">De Danegendo</hi><hi rend="superscript">35</hi>, without <hi rend="italic">Quid</hi> to <hi rend="italic">const.</hi>, Rs</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_11.lnote.oe.erkl-a" n="a" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">345</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Dänengeld 5b, welcher Name erst im 12. Jh. technisch die staatliche Jahressteuer bezeichnet; Pipe roll a. 1130. 1155ff.</seg><seg type="translation" xml:lang="en" source="#claude">Cf. Gl Dänengeld 5b, a name which only in the 12th century technically designates the annual state tax; Pipe roll 1130. 1155ff.</seg></note>
       </div>
     </body>
   </text>

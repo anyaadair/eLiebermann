@@ -41,6 +41,7 @@
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
       <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
+      <change when="2026-11-02">Readings of MS Rs moved from this note to ECf retr 13, the text they are variants of (Gesetze III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -58,7 +59,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_13.lnote.la.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">640</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Ad Do</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_13.lnote.la.9" n="9" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">640</biblScope></bibl><seg type="original" xml:lang="de">s. reg. <hi rend="italic">Hk; fehlt Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">s. reg. Hk; lacking in Ad Do</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">The boundaries of the shires are the king's own, under the judgment of the four royal highways.</ab>
-        <note type="liebermannNote" subtype="textual" xml:id="ECf_13.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">345</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl.</hi> Grafschaftsgericht 9a; Handfrieden 5. — <hi rend="italic">Diuisiones</hi><hi rend="superscript">4</hi> <hi rend="italic">s.</hi> überschr. — <hi rend="italic">regis</hi><hi rend="superscript">7</hi> <hi rend="italic">et regni</hi> — hinter <hi rend="italic">sunt</hi><hi rend="superscript">9</hi> folgt 16—16, 2 Rs</seg><seg type="translation" xml:lang="en" source="#claude">Cf. Grafschaftsgericht 9a; Handfrieden 5. — <hi rend="italic">Diuisiones</hi><hi rend="superscript">4</hi> <hi rend="italic">s.</hi> as heading — <hi rend="italic">regis</hi><hi rend="superscript">7</hi> <hi rend="italic">et regni</hi> — after <hi rend="italic">sunt</hi><hi rend="superscript">9</hi> follows 16—16, 2 in Rs</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_13.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">345</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl.</hi> Grafschaftsgericht 9a; Handfrieden 5.</seg><seg type="translation" xml:lang="en" source="#claude">Cf. Grafschaftsgericht 9a; Handfrieden 5.</seg></note>
       </div>
     </body>
   </text>

@@ -23,6 +23,7 @@
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">654</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
           <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
         </listBibl>
       </sourceDesc>
     </fileDesc>
@@ -39,6 +40,7 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+      <change when="2026-11-02">Readings of MS Rs (Liebermann, Gesetze III, notes to ECf) moved here: they are variants against the retractatus (III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -70,6 +72,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_32.lnote.la.23" n="23" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">654</biblScope></bibl><seg type="original" xml:lang="de">qua i. so. et si. ui. <hi rend="italic">Hv</hi></seg><seg type="translation" xml:lang="en" source="#claude">qua i. so. et si. ui. Hv</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_32.lnote.la.24" n="24" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">654</biblScope></bibl><seg type="original" xml:lang="de">uel <hi rend="italic">Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">uel Lond</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">What a reeve is, and a reeveship, and what an alderman is, which in Latin means 'elder of the people'; and in how many ways the word reeve extends. <hi rend="italic">Greue</hi> indeed is the name of an authority; in the tongue of the Latins nothing expresses it better than <hi rend="italic">prefectura</hi> (reeveship); since this word extends in so many ways that <hi rend="italic">greue</hi> is said also of the shire, of the wapentakes, which is also <hi rend="italic">leð</hi>, of hundreds, of boroughs, even of vills, in which it seems to mean and signify the same as 'lord'.</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_32.lnote.oe.erkl-rs" n="Rs" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">348</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">De</hi><hi rend="superscript">8</hi> <hi rend="italic">greuis et aldermannis</hi> (ohne <hi rend="superscript">8</hi><hi rend="italic">Quid</hi> bis <hi rend="italic">distenditur</hi>). <hi rend="italic">G. quoque</hi><hi rend="superscript">14</hi> — <hi rend="italic">syra</hi><hi rend="superscript">17</hi> — <hi rend="italic">q.</hi><hi rend="superscript">18</hi> <hi rend="italic">etiam est et leid</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">De</hi><hi rend="superscript">8</hi> <hi rend="italic">greuis et aldermannis</hi> (without <hi rend="superscript">8</hi><hi rend="italic">Quid</hi> to <hi rend="italic">distenditur</hi>). <hi rend="italic">G. quoque</hi><hi rend="superscript">14</hi> — <hi rend="italic">syra</hi><hi rend="superscript">17</hi> — <hi rend="italic">q.</hi><hi rend="superscript">18</hi> <hi rend="italic">etiam est et leid</hi> Rs</seg></note>
       </div>
     </body>
   </text>

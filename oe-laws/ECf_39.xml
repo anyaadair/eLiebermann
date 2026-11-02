@@ -41,6 +41,7 @@
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
       <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
+      <change when="2026-11-02">Readings of MS Rs moved from this note to ECf retr 39, the text they are variants of (Gesetze III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -59,7 +60,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_39.lnote.la.28" n="28" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">669</biblScope></bibl><seg type="original" xml:lang="de">quadam <hi rend="italic">Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">quadam Hr</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_39.lnote.la.29" n="29" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">669</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Hk</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">But when, as has been said, it had been forbidden that they should buy animals except with pledges, the butchers, whom the English call <hi rend="italic">flaismangeres</hi> (flesh-mongers), of the cities and boroughs complained that every day they had to buy animals, slaughter and sell [them].</ab>
-        <note type="liebermannNote" subtype="textual" xml:id="ECf_39.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">350</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Gewährbürge 5; Fleischer 2. — <hi rend="italic">Item de</hi><hi rend="superscript">19</hi> <hi rend="italic">c. et m.</hi>, ohne <hi rend="italic">Q.</hi> bis <hi rend="italic">mut.</hi> — <hi rend="italic">de</hi><hi rend="superscript">25</hi> fehlt [besser] — <hi rend="italic">fleismang.</hi><hi rend="superscript">28</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude">Cf. <hi rend="italic">Gl</hi> Gewährbürge 5; Fleischer 2. — <hi rend="italic">Item de</hi><hi rend="superscript">19</hi> <hi rend="italic">c. et m.</hi>, without <hi rend="italic">Q.</hi> to <hi rend="italic">mut.</hi> — <hi rend="italic">de</hi><hi rend="superscript">25</hi> lacking [better] — <hi rend="italic">fleismang.</hi><hi rend="superscript">28</hi> Rs</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_39.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">350</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Gewährbürge 5; Fleischer 2.</seg><seg type="translation" xml:lang="en" source="#claude">Cf. <hi rend="italic">Gl</hi> Gewährbürge 5; Fleischer 2.</seg></note>
       </div>
     </body>
   </text>

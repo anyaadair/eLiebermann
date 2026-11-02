@@ -41,6 +41,7 @@
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
       <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
+      <change when="2026-11-02">Readings of MS Rs moved from this note to ECf retr 34,1b, the text they are variants of (Gesetze III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -57,7 +58,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_34-1b.lnote.la.7" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">662</biblScope></bibl><seg type="original" xml:lang="de">Ædg. <hi rend="italic">Hk S</hi></seg><seg type="translation" xml:lang="en" source="#claude">Ædg. Hk S</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_34-1b.lnote.la.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">662</biblScope></bibl><seg type="original" xml:lang="de">XLVII <hi rend="italic">Hk Ed. 2;</hi> XLVIII <hi rend="italic">Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">XLVII Hk Ed. 2; XLVIII Hr</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">Which had previously been devised and established in the time of King Edgar, his grandfather; but after his death they were set aside for sixty-eight years†.</ab>
-        <note type="liebermannNote" subtype="textual" xml:id="ECf_34-1b.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">349</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl.</hi> Eadgar 9; Eadwardi laga 4b — <hi rend="italic">demisse</hi><hi rend="superscript">18</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude">Cf. <hi rend="italic">Gl</hi> Eadgar 9; Eadwardi laga 4b — <hi rend="italic">demisse</hi><hi rend="superscript">18</hi> Rs</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34-1b.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">349</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl.</hi> Eadgar 9; Eadwardi laga 4b</seg><seg type="translation" xml:lang="en" source="#claude">Cf. <hi rend="italic">Gl</hi> Eadgar 9; Eadwardi laga 4b</seg></note>
       </div>
     </body>
   </text>

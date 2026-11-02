@@ -23,6 +23,7 @@
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">651</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
           <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
         </listBibl>
       </sourceDesc>
     </fileDesc>
@@ -39,6 +40,7 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+      <change when="2026-11-02">Readings of MS Rs (Liebermann, Gesetze III, notes to ECf) moved here: they are variants against the retractatus (III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -67,6 +69,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_28.lnote.la.44" n="44" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">651</biblScope></bibl><seg type="original" xml:lang="de">h. e. <hi rend="italic">fehlt Va;</hi> i. e. <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">h. e. lacking in Va; i. e. Ld</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_28.lnote.la.45" n="45" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">651</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Cb</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Cb</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">What counsel the wise men took concerning those who scorned to keep these laws. But when it happened that certain fools and wicked men committed offences against their neighbours wantonly and all too habitually, the wise men began to take counsel together about this; and they set justiciars over every ten frankpledges, whom we can call deans; but in English they were called <hi rend="italic">tenðe heued</hi>, that is, head of ten.</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_28.lnote.oe.erkl-rs" n="Rs" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">347</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">De</hi><hi rend="superscript">30</hi> <hi rend="italic">cent. et de ca. fr. sc. tiendeheueddes</hi> überschr. — <hi rend="italic">friborgos</hi><hi rend="superscript">40</hi> <hi rend="italic">q. decanus</hi> — <hi rend="italic">tiende</hi><hi rend="superscript">42</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude">Rs heads it <hi rend="italic">De</hi><hi rend="superscript">30</hi> <hi rend="italic">cent. et de ca. fr. sc. tiendeheueddes</hi> — <hi rend="italic">friborgos</hi><hi rend="superscript">40</hi> <hi rend="italic">q. decanus</hi> — <hi rend="italic">tiende</hi><hi rend="superscript">42</hi> Rs</seg></note>
       </div>
     </body>
   </text>

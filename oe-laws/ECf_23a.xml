@@ -41,6 +41,7 @@
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
       <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
+      <change when="2026-11-02">Readings of MS Rs moved from this note to ECf retr 23a, the text they are variants of (Gesetze III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -59,7 +60,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_23a.lnote.la.20" n="20" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">648</biblScope></bibl><seg type="original" xml:lang="de">hominibus <hi rend="italic">fügt zu Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">Hr adds hominibus</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_23a.lnote.la.21" n="21" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">648</biblScope></bibl><seg type="original" xml:lang="de">p. de <hi rend="italic">fehlt Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">p. de lacking in Do</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">But if he against whom he had offended makes a complaint to the justice about him, that the offence was done by his counsel, he shall clear himself by oath with two lawful neighbours of his, if he can, of counsel and deed.</ab>
-        <note type="liebermannNote" subtype="textual" xml:id="ECf_23a.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">347</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Gefährdeeid; Begünstigung 14c; Eideshelfer 11c — <hi rend="italic">et</hi><hi rend="superscript">31</hi> fehlt Rs</seg><seg type="translation" xml:lang="en" source="#claude">Cf. <hi rend="italic">Gl</hi> Gefährdeeid; Begünstigung 14c; Eideshelfer 11c — <hi rend="italic">et</hi><hi rend="superscript">31</hi> lacking Rs</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_23a.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">347</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Gefährdeeid; Begünstigung 14c; Eideshelfer 11c</seg><seg type="translation" xml:lang="en" source="#claude">Cf. <hi rend="italic">Gl</hi> Gefährdeeid; Begünstigung 14c; Eideshelfer 11c</seg></note>
       </div>
     </body>
   </text>

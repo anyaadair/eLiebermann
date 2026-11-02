@@ -41,6 +41,7 @@
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
       <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
+      <change when="2026-11-02">Readings of MS Rs moved from this note to ECf retr 9,1, the text they are variants of (Gesetze III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -60,7 +61,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_9-1.lnote.la.29" n="29" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">633</biblScope></bibl><seg type="original" xml:lang="de">re. e. D. <hi rend="italic">Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">re. e. D. Ad Do</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_9-1.lnote.la.30" n="30" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">633</biblScope></bibl><seg type="original" xml:lang="de">Dominum <hi rend="italic">S Ad</hi></seg><seg type="translation" xml:lang="en" source="#claude">Dominum S Ad</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">But barons who have their courts over their men, let them see that they so act concerning them that they do not incur guilt towards God nor offend the king.</ab>
-        <note type="liebermannNote" subtype="textual" xml:id="ECf_9-1.lnote.oe.erkl-a" n="a" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">344</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Gerichtsbarkeit 33. 38; Instanzenzug 7ff. — <hi rend="italic">Dominum</hi><hi rend="superscript">30</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude">Cf. Gl Gerichtsbarkeit 33. 38; Instanzenzug 7ff. — <hi rend="italic">Dominum</hi><hi rend="superscript">30</hi> Rs</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_9-1.lnote.oe.erkl-a" n="a" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">344</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Gerichtsbarkeit 33. 38; Instanzenzug 7ff.</seg><seg type="translation" xml:lang="en" source="#claude">Cf. Gl Gerichtsbarkeit 33. 38; Instanzenzug 7ff.</seg></note>
       </div>
     </body>
   </text>

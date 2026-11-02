@@ -41,6 +41,7 @@
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
       <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
+      <change when="2026-11-02">Readings of MS Rs moved from this note to ECf retr 38,2, the text they are variants of (Gesetze III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -66,7 +67,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_38-2.lnote.la.11" n="11" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">669</biblScope></bibl><seg type="original" xml:lang="de">-rint <hi rend="italic">Hk S Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">-rint Hk S Hr</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_38-2.lnote.la.12" n="12" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">669</biblScope></bibl><seg type="original" xml:lang="de">eum <hi rend="italic">fügt nochmals zu Rl</hi></seg><seg type="translation" xml:lang="en" source="#claude">Rl adds eum again</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">But if anyone buys otherwise, let him lose what he foolishly bought; and [pay] the forfeiture! And afterwards the justice shall inquire through the lawmen and through the better men of the borough or of the hundred or village where the buyer himself lives, of what sort of life he is, and whether they have previously heard him accused of lawlessness.</ab>
-        <note type="liebermannNote" subtype="textual" xml:id="ECf_38-2.lnote.oe.erkl-a" n="a" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">350</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Anefang 17; Lagamanni 3; bescholten Z. 8ff.; Leumund 2 — <hi rend="italic">de</hi><hi rend="superscript">8. 9</hi> fehlt Rs</seg><seg type="translation" xml:lang="en" source="#claude">Cf. <hi rend="italic">Gl</hi> Anefang 17; Lagamanni 3; bescholten l. 8ff.; Leumund 2 — <hi rend="italic">de</hi><hi rend="superscript">8. 9</hi> lacking Rs</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_38-2.lnote.oe.erkl-a" n="a" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">350</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Anefang 17; Lagamanni 3; bescholten Z. 8ff.; Leumund 2</seg><seg type="translation" xml:lang="en" source="#claude">Cf. <hi rend="italic">Gl</hi> Anefang 17; Lagamanni 3; bescholten l. 8ff.; Leumund 2</seg></note>
       </div>
     </body>
   </text>

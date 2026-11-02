@@ -41,6 +41,7 @@
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
       <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
+      <change when="2026-11-02">Readings of MS Rs moved from this note to ECf retr 35,1d, the text they are variants of (Gesetze III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -64,7 +65,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_35-1d.lnote.la.29" n="29" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">665</biblScope></bibl><seg type="original" xml:lang="de">quod <hi rend="italic">fügt zu Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">Hr adds quod</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_35-1d.lnote.la.30" n="30" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">665</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">aus Rl</hi></seg><seg type="translation" xml:lang="en" source="#claude">from Rl</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">But if we wish to say it more explicitly, we shall say that in a certain part of Saxony <hi rend="italic">ling</hi> meant image, <hi rend="italic">aþel</hi> in English: noble; which joined together, <hi rend="italic">aþeling</hi>, means noble image.</ab>
-        <note type="liebermannNote" subtype="textual" xml:id="ECf_35-1d.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">350</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">adela</hi><hi rend="superscript">21</hi> — <hi rend="italic">eadeling</hi><hi rend="superscript">23</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">adela</hi><hi rend="superscript">21</hi> — <hi rend="italic">eadeling</hi><hi rend="superscript">23</hi> Rs</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_35-1d.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">350</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">adela</hi><hi rend="superscript">21</hi></seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">adela</hi><hi rend="superscript">21</hi></seg></note>
       </div>
     </body>
   </text>

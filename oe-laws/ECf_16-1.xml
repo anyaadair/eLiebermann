@@ -41,6 +41,7 @@
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
       <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
+      <change when="2026-11-02">Readings of MS Rs moved from this note to ECf retr 16,1, the text they are variants of (Gesetze III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -55,7 +56,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_16-1.lnote.la.10" n="10" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">642</biblScope></bibl><seg type="original" xml:lang="de">-rent <hi rend="italic">Hr Ad;</hi> -nent <hi rend="italic">Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">-rent Hr Ad; -nent Do</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_16-1.lnote.la.11" n="11" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">642</biblScope></bibl><seg type="original" xml:lang="de">terram et hab. f. p. <hi rend="italic">Ad;</hi> terram reddet f. p. <hi rend="italic">Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">terram et hab. f. p. Ad; terram reddet f. p. Do</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">And they were sureties towards the king that those whom he retained in the land should have firm peace:</ab>
-        <note type="liebermannNote" subtype="textual" xml:id="ECf_16-1.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">346</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Bürgschaft 3. s; Fremde 4a. 7 — <hi rend="italic">ext.</hi><hi rend="superscript">18</hi> <hi rend="italic">fi. contra r.</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude">Cf. Gl Bürgschaft 3. s; Fremde 4a. 7 — <hi rend="italic">ext.</hi><hi rend="superscript">18</hi> <hi rend="italic">fi. contra r.</hi> Rs</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_16-1.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">346</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Bürgschaft 3. s; Fremde 4a. 7</seg><seg type="translation" xml:lang="en" source="#claude">Cf. Gl Bürgschaft 3. s; Fremde 4a. 7</seg></note>
       </div>
     </body>
   </text>

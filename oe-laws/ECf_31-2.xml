@@ -41,6 +41,7 @@
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
       <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
+      <change when="2026-11-02">Readings of MS Rs moved from this note to ECf retr 31,2, the text they are variants of (Gesetze III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -56,7 +57,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_31-2.lnote.la.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">654</biblScope></bibl><seg type="original" xml:lang="de">d. n. p. <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">d. n. p. Hk</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_31-2.lnote.la.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">654</biblScope></bibl><seg type="original" xml:lang="de">syra <hi rend="italic">Hk;</hi> scira <hi rend="italic">S;</hi> shira <hi rend="italic">Ad;</hi> sciriā <hi rend="italic">Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">syra Hk; scira S; shira Ad; sciriā Hr</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">And what could not be determined in the <hi rend="italic">[þ]rehingis</hi> was reserved for the shire.</ab>
-        <note type="liebermannNote" subtype="textual" xml:id="ECf_31-2.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">348</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de">Zur Retr. <hi rend="italic">vgl. Gl</hi> Lathe 1 und zum Worte Wilmanns <hi rend="italic">Westfäl. Urkb.</hi> III 602 — <hi rend="italic">trihing.</hi><hi rend="superscript">4</hi> <hi rend="italic">Q. in trihingis defin.</hi> — <hi rend="italic">siram</hi><hi rend="superscript">8</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude">On the Retr. cf. <hi rend="italic">Gl</hi> Lathe 1 and on the word Wilmanns <hi rend="italic">Westfäl. Urkb.</hi> III 602 — <hi rend="italic">trihing.</hi><hi rend="superscript">4</hi> <hi rend="italic">Q. in trihingis defin.</hi> — <hi rend="italic">siram</hi><hi rend="superscript">8</hi> Rs</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_31-2.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">348</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de">Zur Retr. <hi rend="italic">vgl. Gl</hi> Lathe 1 und zum Worte Wilmanns <hi rend="italic">Westfäl. Urkb.</hi> III 602</seg><seg type="translation" xml:lang="en" source="#claude">On the Retr. cf. <hi rend="italic">Gl</hi> Lathe 1 and on the word Wilmanns <hi rend="italic">Westfäl. Urkb.</hi> III 602</seg></note>
       </div>
     </body>
   </text>

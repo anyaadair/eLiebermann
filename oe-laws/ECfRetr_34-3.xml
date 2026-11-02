@@ -23,6 +23,7 @@
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), pp. <biblScope unit="page">663–664</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
           <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
         </listBibl>
       </sourceDesc>
     </fileDesc>
@@ -39,6 +40,7 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+      <change when="2026-11-02">Readings of MS Rs (Liebermann, Gesetze III, notes to ECf) moved here: they are variants against the retractatus (III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -79,6 +81,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_34-3.lnote.la.7-p664" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">664</biblScope></bibl><seg type="original" xml:lang="de">conseru. <hi rend="italic">Cb</hi></seg><seg type="translation" xml:lang="en" source="#claude">conseru. Cb</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_34-3.lnote.la.8-p664" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">664</biblScope></bibl><seg type="original" xml:lang="de">trad. <hi rend="italic">Hv</hi></seg><seg type="translation" xml:lang="en" source="#claude">trad. Hv</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">But after King Edward came to the kingdom, by the counsel of the barons of England he awakened the law that had slept for sixty-eight years, restored it once awakened, adorned it once restored, confirmed it once adorned; and once confirmed it was called the law of King Edward, not because he himself had first devised it, but because, when it had been passed over and entirely consigned to oblivion from the days of his grandfather King Edgar, who is said to have been its first inventor, until his own time, namely, as has been said before, for sixty-eight years after the days of this Edgar†, this Edward, because it was just and honourable, drew it out of the deep abyss and renewed it and handed it over to be observed as his own.</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_34-3.lnote.oe.erkl-rs" n="Rs" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">349</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">r. Ea.</hi><hi rend="superscript">38</hi> — <hi rend="italic">de-dita<hi rend="superscript">39</hi> — Eadgari, qui XVI annis regnavit et primus</hi><hi rend="superscript">39</hi> — <hi rend="italic">ab. eam extrait</hi><hi rend="superscript">5</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">r. Ea.</hi><hi rend="superscript">38</hi> — <hi rend="italic">dedita</hi><hi rend="superscript">39</hi> — <hi rend="italic">Eadgari, qui XVI annis regnavit et primus</hi><hi rend="superscript">39</hi> — <hi rend="italic">ab. eam extrait</hi><hi rend="superscript">5</hi> Rs</seg></note>
       </div>
     </body>
   </text>

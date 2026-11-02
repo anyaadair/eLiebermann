@@ -23,6 +23,7 @@
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">668</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
           <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
         </listBibl>
       </sourceDesc>
     </fileDesc>
@@ -39,6 +40,7 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+      <change when="2026-11-02">Readings of MS Rs (Liebermann, Gesetze III, notes to ECf) moved here: they are variants against the retractatus (III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -54,6 +56,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_38-1a.lnote.la.30" n="30" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">668</biblScope></bibl><seg type="original" xml:lang="de">b. p. <hi rend="italic">Cb Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">b. p. Cb Lond</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_38-1a.lnote.la.31" n="31" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">668</biblScope></bibl><seg type="original" xml:lang="de">eum b. <hi rend="italic">Hv;</hi> e. w. b. <hi rend="italic">Lb Ph</hi></seg><seg type="translation" xml:lang="en" source="#claude">eum b. Hv; e. w. b. Lb Ph</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">If the seller lacked pledges, he should be detained with the money [?], until his lord came or another who could well warrant him.</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_38-1a.lnote.oe.erkl-rs" n="Rs" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">350</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">alter</hi><hi rend="superscript">29</hi> <hi rend="italic">q. b. p. e.</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">alter</hi><hi rend="superscript">29</hi> <hi rend="italic">q. b. p. e.</hi> Rs</seg></note>
       </div>
     </body>
   </text>

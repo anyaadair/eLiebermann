@@ -41,6 +41,7 @@
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
       <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
+      <change when="2026-11-02">Readings of MS Rs moved from this note to ECf retr 35,1e, the text they are variants of (Gesetze III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -57,7 +58,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_35-1e.lnote.la.34" n="34" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">665</biblScope></bibl><seg type="original" xml:lang="de">uo. alter alt. <hi rend="italic">Cl</hi></seg><seg type="translation" xml:lang="en" source="#claude">uo. alter alt. Cl</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_35-1e.lnote.la.35" n="35" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">665</biblScope></bibl><seg type="original" xml:lang="de">hoc ad al. hindling <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">hoc ad al. hindling Hk</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">Whence also the West Saxons, namely the men of Exeter, have it as a proverb of the utmost contempt, that one, moved by the utmost anger, calls another <hi rend="italic">hinderling</hi>, that is, one cast down from all honour.</ab>
-        <note type="liebermannNote" subtype="textual" xml:id="ECf_35-1e.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">350</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de">Wright <hi rend="italic">Dial. dict.</hi> erklärt <hi rend="italic">hinderling</hi> auch als 'niederer Diener'; <hi rend="italic">hinder</hi> adj. 'lästig'; M. Förster <hi rend="italic">Morsbach Festschr.</hi> 166 — <hi rend="italic">Saxonidi</hi><hi rend="superscript">25</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude">Wright <hi rend="italic">Dial. dict.</hi> also explains <hi rend="italic">hinderling</hi> as 'low servant'; <hi rend="italic">hinder</hi> adj. 'troublesome'; M. Förster <hi rend="italic">Morsbach Festschr.</hi> 166 — <hi rend="italic">Saxonidi</hi><hi rend="superscript">25</hi> Rs</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_35-1e.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">350</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de">Wright <hi rend="italic">Dial. dict.</hi> erklärt <hi rend="italic">hinderling</hi> auch als 'niederer Diener'; <hi rend="italic">hinder</hi> adj. 'lästig'; M. Förster <hi rend="italic">Morsbach Festschr.</hi> 166</seg><seg type="translation" xml:lang="en" source="#claude">Wright <hi rend="italic">Dial. dict.</hi> also explains <hi rend="italic">hinderling</hi> as 'low servant'; <hi rend="italic">hinder</hi> adj. 'troublesome'; M. Förster <hi rend="italic">Morsbach Festschr.</hi> 166</seg></note>
       </div>
     </body>
   </text>

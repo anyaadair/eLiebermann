@@ -41,6 +41,7 @@
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
       <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
+      <change when="2026-11-02">Readings of MS Rs moved from this note to ECf retr 24,2, the text they are variants of (Gesetze III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -61,7 +62,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_24-2.lnote.la.40" n="40" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">649</biblScope></bibl><seg type="original" xml:lang="de">u. s. <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">u. s. Hk</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_24-2.lnote.la.41" n="41" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">649</biblScope></bibl><seg type="original" xml:lang="de">illi <hi rend="italic">S</hi></seg><seg type="translation" xml:lang="en" source="#claude">illi S</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">And after their testimony, let the reeve in whose lordship the finder is keep the find until the next day; and on the next day, with some of his neighbours who are to see the find, let him go to the reeve of the hundred in which his vill is, and show him all.</ab>
-        <note type="liebermannNote" subtype="textual" xml:id="ECf_24-2.lnote.oe.erkl-a" n="a" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">347</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">S. Gl</hi> Nachbarn 3a; Hundred 27c. 33c — <hi rend="italic">hundredo</hi><hi rend="superscript">4</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude">See <hi rend="italic">Gl</hi> Nachbarn 3a; Hundred 27c. 33c — <hi rend="italic">hundredo</hi><hi rend="superscript">4</hi> Rs</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_24-2.lnote.oe.erkl-a" n="a" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">347</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">S. Gl</hi> Nachbarn 3a; Hundred 27c. 33c</seg><seg type="translation" xml:lang="en" source="#claude">See <hi rend="italic">Gl</hi> Nachbarn 3a; Hundred 27c. 33c</seg></note>
       </div>
     </body>
   </text>

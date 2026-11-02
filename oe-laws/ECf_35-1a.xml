@@ -41,6 +41,7 @@
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
       <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
+      <change when="2026-11-02">Readings of MS Rs moved from this note to ECf retr 35,1a, the text they are variants of (Gesetze III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -56,7 +57,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_35-1a.lnote.la.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">665</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Cl</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Cl</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_35-1a.lnote.la.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">665</biblScope></bibl><seg type="original" xml:lang="de">Limeseia <hi rend="italic">Hk S;</hi> Limes’ <hi rend="italic">Hr;</hi> Lyndesey <hi rend="italic">Cl</hi></seg><seg type="translation" xml:lang="en" source="#claude">Limeseia Hk S; Limes’ Hr; Lyndesey Cl</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">— To this Christina King Edward gave the land which Ralph de Limisei afterwards held —.</ab>
-        <note type="liebermannNote" subtype="textual" xml:id="ECf_35-1a.lnote.oe.erkl-a" n="a" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">350</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de">Zu Coventry <hi rend="italic">vgl.</hi> Harris <hi rend="italic">Life in Cov.</hi> 22. — <hi rend="italic">Item</hi><hi rend="superscript">1</hi> <hi rend="italic">bonus rex Ead. dedit C. predicte ter.</hi> — <hi rend="italic">Limiseia.</hi><hi rend="superscript">8</hi> <hi rend="italic">Fuit e. p. Christina s. E. Adeling. Item p. q. Eadw. p. m. r. E. a.</hi><hi rend="superscript">4</hi> Rs wie Lond</seg><seg type="translation" xml:lang="en" source="#claude">On Coventry cf. Harris <hi rend="italic">Life in Cov.</hi> 22. — <hi rend="italic">Item</hi><hi rend="superscript">1</hi> <hi rend="italic">bonus rex Ead. dedit C. predicte ter.</hi> — <hi rend="italic">Limiseia.</hi><hi rend="superscript">8</hi> <hi rend="italic">Fuit e. p. Christina s. E. Adeling. Item p. q. Eadw. p. m. r. E. a.</hi><hi rend="superscript">4</hi> Rs, as Lond</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_35-1a.lnote.oe.erkl-a" n="a" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">350</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de">Zu Coventry <hi rend="italic">vgl.</hi> Harris <hi rend="italic">Life in Cov.</hi> 22.</seg><seg type="translation" xml:lang="en" source="#claude">On Coventry cf. Harris <hi rend="italic">Life in Cov.</hi> 22.</seg></note>
       </div>
     </body>
   </text>

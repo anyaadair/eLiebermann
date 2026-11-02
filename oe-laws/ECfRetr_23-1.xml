@@ -23,6 +23,7 @@
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">648</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
           <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
         </listBibl>
       </sourceDesc>
     </fileDesc>
@@ -39,6 +40,7 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+      <change when="2026-11-02">Readings of MS Rs (Liebermann, Gesetze III, notes to ECf) moved here: they are variants against the retractatus (III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -60,6 +62,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_23-1.lnote.la.42" n="42" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">648</biblScope></bibl><seg type="original" xml:lang="de">oghen <hi rend="italic">K;</hi> oghene <hi rend="italic">Co;</hi> hogen <hi rend="italic">Bra</hi>[<hi rend="italic">cton</hi>]; ayen <hi rend="italic">Ph;</hi> awen <hi rend="italic">Ra;</hi> hawen man (<hi rend="italic">statt</hi> a. h.) <hi rend="italic">Hv</hi></seg><seg type="translation" xml:lang="en" source="#claude">oghen K; oghene Co; hogen Bra[cton]; ayen Ph; awen Ra; hawen man (instead of a. h.) Hv</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_23-1.lnote.la.43" n="43" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">648</biblScope></bibl><seg type="original" xml:lang="de">hyne <hi rend="italic">Lond Bra;</hi> hine <hi rend="italic">Va Ph Ra Hv Cu;</hi> hinen <hi rend="italic">Lb;</hi> man <hi rend="italic">fügt zu Hv Va;</hi> men <hi rend="italic">fügt zu Ra</hi> [hina man: <hi rend="italic">domesticorum aliquis</hi>]</seg><seg type="translation" xml:lang="en" source="#claude">hyne Lond Bra; hine Va Ph Ra Hv Cu; hinen Lb; Hv Va add man; Ra adds men [hina man: domesticorum aliquis]</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">But if he has been lodged for a third night, and commits an offence against anyone, let him have him to right as of his own household, as is said in English: <hi rend="italic">Tƿa niht gest, þridde niht agen heƿe</hi> ('Two nights a guest, the third night one's own household-man').</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_23-1.lnote.oe.erkl-rs" n="Rs" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">347</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Quem</hi><hi rend="superscript">36</hi> <hi rend="italic">si</hi> — <hi rend="italic">twa</hi><hi rend="superscript">38</hi> — <hi rend="italic">hinen</hi><hi rend="superscript">43</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Quem</hi><hi rend="superscript">36</hi> <hi rend="italic">si</hi> — <hi rend="italic">twa</hi><hi rend="superscript">38</hi> — <hi rend="italic">hinen</hi><hi rend="superscript">43</hi> Rs</seg></note>
       </div>
     </body>
   </text>

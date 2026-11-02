@@ -41,6 +41,7 @@
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
       <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
+      <change when="2026-11-02">Readings of MS Rs moved from this note to ECf retr 6, the text they are variants of (Gesetze III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -57,7 +58,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_6.lnote.la.7" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">631</biblScope></bibl><seg type="original" xml:lang="de">p. s. e. <hi rend="italic">Ad</hi></seg><seg type="translation" xml:lang="en" source="#claude">p. s. e. Ad</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_6.lnote.la.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">631</biblScope></bibl><seg type="original" xml:lang="de">ipsi tamen <hi rend="italic">Do;</hi> episcopi tantum <hi rend="italic">S Ad</hi></seg><seg type="translation" xml:lang="en" source="#claude">ipsi tamen Do; episcopi tantum S Ad</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">Of breach of the Church's peace. If anyone breaks the peace of holy Church, justice belongs to the bishops.</ab>
-        <note type="liebermannNote" subtype="textual" xml:id="ECf_6.lnote.oe.erkl-b" n="b" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">344</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Mitgemeint ist auch die Treuga Dei; <hi rend="italic">vgl. Gl</hi> Geistliches Gericht 27. — <hi rend="italic">s. p.</hi><hi rend="superscript">6</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude">The Truce of God is also meant; cf. Gl Geistliches Gericht 27. — <hi rend="italic">s. p.</hi><hi rend="superscript">6</hi> Rs</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_6.lnote.oe.erkl-b" n="b" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">344</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Mitgemeint ist auch die Treuga Dei; <hi rend="italic">vgl. Gl</hi> Geistliches Gericht 27.</seg><seg type="translation" xml:lang="en" source="#claude">The Truce of God is also meant; cf. Gl Geistliches Gericht 27.</seg></note>
       </div>
     </body>
   </text>

@@ -41,6 +41,7 @@
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
       <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
+      <change when="2026-11-02">Readings of MS Rs moved from this note to ECf retr 30,4, the text they are variants of (Gesetze III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -58,7 +59,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_30-4.lnote.la.7" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">653</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Ad</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Ad</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_30-4.lnote.la.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">653</biblScope></bibl><seg type="original" xml:lang="de">tractare et <hi rend="italic">Ad;</hi> tactare quod est <hi rend="italic">S</hi></seg><seg type="translation" xml:lang="en" source="#claude">tractare et Ad; tactare quod est S</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">for they call arms <hi rend="italic">wap[n]a</hi>, and <hi rend="italic">taccare</hi>: to confirm.</ab>
-        <note type="liebermannNote" subtype="textual" xml:id="ECf_30-4.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">348</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">enim</hi><hi rend="superscript">4</hi> — <hi rend="italic">wepene</hi><hi rend="superscript">5</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">enim</hi><hi rend="superscript">4</hi> — <hi rend="italic">wepene</hi><hi rend="superscript">5</hi> Rs</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_30-4.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">348</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">enim</hi><hi rend="superscript">4</hi></seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">enim</hi><hi rend="superscript">4</hi></seg></note>
       </div>
     </body>
   </text>

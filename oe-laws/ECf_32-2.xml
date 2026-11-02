@@ -41,6 +41,7 @@
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
       <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
+      <change when="2026-11-02">Readings of MS Rs moved from this note to ECf retr 32,2, the text they are variants of (Gesetze III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -58,7 +59,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_32-2.lnote.la.33" n="33" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">654</biblScope></bibl><seg type="original" xml:lang="de">mer. <hi rend="italic">Hk S Hr;</hi> meng. <hi rend="italic">Ad Do;</hi> maragreues <hi rend="italic">Rl</hi></seg><seg type="translation" xml:lang="en" source="#claude">mer. Hk S Hr; meng. Ad Do; maragreues Rl</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_32-2.lnote.la.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">654</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Hk</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">The Frisians also and the Flemings call their earls <hi rend="italic">maregraue</hi>, as it were greater or good peacemakers.</ab>
-        <note type="liebermannNote" subtype="textual" xml:id="ECf_32-2.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">348</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">etiam</hi><hi rend="superscript">40</hi> — <hi rend="italic">mer.</hi><hi rend="superscript">41</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">etiam</hi><hi rend="superscript">40</hi> — <hi rend="italic">mer.</hi><hi rend="superscript">41</hi> Rs</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_32-2.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">348</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">etiam</hi><hi rend="superscript">40</hi></seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">etiam</hi><hi rend="superscript">40</hi></seg></note>
       </div>
     </body>
   </text>

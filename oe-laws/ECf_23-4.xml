@@ -41,6 +41,7 @@
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
       <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
+      <change when="2026-11-02">Readings of MS Rs moved from this note to ECf retr 23,4, the text they are variants of (Gesetze III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -54,7 +55,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_23-4.lnote.la.10" n="10" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">649</biblScope></bibl><seg type="original" xml:lang="de">habeat <hi rend="italic">Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">habeat Hr</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_23-4.lnote.la.11" n="11" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">649</biblScope></bibl><seg type="original" xml:lang="de">schire <hi rend="italic">S;</hi> sire <hi rend="italic">Hr;</hi> shire <hi rend="italic">Ad</hi></seg><seg type="translation" xml:lang="en" source="#claude">schire S; sire Hr; shire Ad</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">And if the justice holds him suspect, he shall clear himself by the judgment of the hundred or of the shire.</ab>
-        <note type="liebermannNote" subtype="textual" xml:id="ECf_23-4.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">347</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Das Beweisrecht bestimmen Urteilsfinder (<hi rend="italic">s. d. Gl</hi> 15a), nicht Richter; <hi rend="italic">s. d. Gl</hi> 8; Grafschaftsgericht 7. — <hi rend="italic">hundredi u. syre</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude">The right of proof is determined by the doomsmen (see that word in <hi rend="italic">Gl</hi> 15a), not by judges; see that word in <hi rend="italic">Gl</hi> 8; Grafschaftsgericht 7. — <hi rend="italic">hundredi u. syre</hi> Rs</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_23-4.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">347</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Das Beweisrecht bestimmen Urteilsfinder (<hi rend="italic">s. d. Gl</hi> 15a), nicht Richter; <hi rend="italic">s. d. Gl</hi> 8; Grafschaftsgericht 7.</seg><seg type="translation" xml:lang="en" source="#claude">The right of proof is determined by the doomsmen (see that word in <hi rend="italic">Gl</hi> 15a), not by judges; see that word in <hi rend="italic">Gl</hi> 8; Grafschaftsgericht 7.</seg></note>
       </div>
     </body>
   </text>

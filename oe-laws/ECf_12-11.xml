@@ -41,6 +41,7 @@
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
       <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
+      <change when="2026-11-02">Readings of MS Rs moved from this note to ECf retr 12,11, the text they are variants of (Gesetze III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -58,7 +59,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_12-11.lnote.la.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">639</biblScope></bibl><seg type="original" xml:lang="de">sunt <hi rend="italic">Rl Hr Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">sunt Rl Hr Ad Do</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_12-11.lnote.la.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">639</biblScope></bibl><seg type="original" xml:lang="de">et e. e. <hi rend="italic">fehlt Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">et e. e. lacking in Ad Do</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">Likewise concerning the lesser waters, which carry ships with the things which are necessary for cities and boroughs, namely wood and the like: let their compensation also be with the law of the lesser highways.</ab>
-        <note type="liebermannNote" subtype="textual" xml:id="ECf_12-11.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">345</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">rebus</hi><hi rend="superscript">34</hi> allein fehlt Rs, also = ECf orig. — S. 640<hi rend="superscript">2</hi> <hi rend="italic">sunt</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">rebus</hi><hi rend="superscript">34</hi> alone is lacking in Rs, thus = ECf original. — p. 640<hi rend="superscript">2</hi> <hi rend="italic">sunt</hi> Rs</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_12-11.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">345</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">rebus</hi><hi rend="superscript">34</hi> allein fehlt Rs, also = ECf orig.</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">rebus</hi><hi rend="superscript">34</hi> alone is lacking in Rs, thus = ECf original.</seg></note>
       </div>
     </body>
   </text>

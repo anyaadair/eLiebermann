@@ -41,6 +41,7 @@
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
       <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
+      <change when="2026-11-02">Readings of MS Rs moved from this note to ECf retr 18, the text they are variants of (Gesetze III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -60,7 +61,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_18.lnote.la.23" n="23" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">643</biblScope></bibl><seg type="original" xml:lang="de">leg’ s. dignitati <hi rend="italic">Hk;</hi> legi <hi rend="italic">Rl</hi></seg><seg type="translation" xml:lang="en" source="#claude">leg’ s. dignitati Hk; legi Rl</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_18.lnote.la.24" n="24" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">643</biblScope></bibl><seg type="original" xml:lang="de">d. s. <hi rend="italic">Ad</hi></seg><seg type="translation" xml:lang="en" source="#claude">d. s. Ad</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">Yet if anyone who has committed an offence asks his mercy, in fear of death or of limbs, for his offence, he can pardon him, if he pleases, by the law of his dignity.</ab>
-        <note type="liebermannNote" subtype="textual" xml:id="ECf_18.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">346</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Bessere Z. 2 <hi rend="italic">mis. eius</hi><hi rend="superscript">20</hi>, <hi rend="italic">ti.</hi> <hi rend="italic">Vgl. Gl</hi> Begnadigung 1. 6. a — <hi rend="superscript">15</hi><hi rend="italic">Lex de mi.</hi> bis <hi rend="italic">pecc. etc.</hi> hinter 15, 7 — <hi rend="italic">quisnam</hi><hi rend="superscript">17</hi> — <hi rend="italic">rex ei</hi><hi rend="superscript">18</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude">Correct line 2 to <hi rend="italic">mis. eius</hi><hi rend="superscript">20</hi>, <hi rend="italic">ti.</hi> Cf. Gl Begnadigung 1. 6. a — <hi rend="superscript">15</hi><hi rend="italic">Lex de mi.</hi> to <hi rend="italic">pecc. etc.</hi> after 15, 7 — <hi rend="italic">quisnam</hi><hi rend="superscript">17</hi> — <hi rend="italic">rex ei</hi><hi rend="superscript">18</hi> Rs</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_18.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">346</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Bessere Z. 2 <hi rend="italic">mis. eius</hi><hi rend="superscript">20</hi>, <hi rend="italic">ti.</hi> <hi rend="italic">Vgl. Gl</hi> Begnadigung 1. 6. a</seg><seg type="translation" xml:lang="en" source="#claude">Correct line 2 to <hi rend="italic">mis. eius</hi><hi rend="superscript">20</hi>, <hi rend="italic">ti.</hi> Cf. Gl Begnadigung 1. 6. a</seg></note>
       </div>
     </body>
   </text>

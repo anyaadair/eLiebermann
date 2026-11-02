@@ -41,6 +41,7 @@
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
       <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
+      <change when="2026-11-02">Readings of MS Rs moved from this note to ECf retr 12,1, the text they are variants of (Gesetze III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -62,7 +63,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_12-1.lnote.la.14" n="14" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">638</biblScope></bibl><seg type="original" xml:lang="de">chem. <hi rend="italic">Hk Ad</hi></seg><seg type="translation" xml:lang="en" source="#claude">chem. Hk Ad</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_12-1.lnote.la.15" n="15" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">638</biblScope></bibl><seg type="original" xml:lang="de">et <hi rend="italic">fügt zu Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">Ad Do add et</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">But that peace of his hand, of the days of the coronation and of the writ, is under the judgment of one forfeiture (likewise that of the four highways and of the greater waters): for assault;</ab>
-        <note type="liebermannNote" subtype="textual" xml:id="ECf_12-1.lnote.oe.erkl-a" n="a" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">345</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Strasse 11b. 12; Handfrieden 5—c; Angriff 7 — <hi rend="italic">for.</hi><hi rend="superscript">15</hi> <hi rend="italic">un.</hi> — <hi rend="italic">assultu</hi><hi rend="superscript">20</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude">Cf. Gl Strasse 11b. 12; Handfrieden 5—c; Angriff 7 — <hi rend="italic">for.</hi><hi rend="superscript">15</hi> <hi rend="italic">un.</hi> — <hi rend="italic">assultu</hi><hi rend="superscript">20</hi> Rs</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_12-1.lnote.oe.erkl-a" n="a" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">345</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Strasse 11b. 12; Handfrieden 5—c; Angriff 7</seg><seg type="translation" xml:lang="en" source="#claude">Cf. Gl Strasse 11b. 12; Handfrieden 5—c; Angriff 7</seg></note>
       </div>
     </body>
   </text>
