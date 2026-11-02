@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E02412; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">banweorc</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>, Totschlag</hi> <ref type="lawCode" target="law:VAtr">V Atr</ref> 32,4 <ref type="lawCode" target="law:D">D</ref></dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/61357">ban-weorc</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E02412">ban-weorc</ref></xr>
         <xr type="lawCode"><ref target="clause:VAtr_32-4">V Atr 32,4</ref></xr>
       </entry>
     </body>

@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E03338; guessed from the DOE headword list, rg / rh, -cean / -can (burg = burh, borh = borg, bereccean = be-reccan); not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">bur[g]gemet</hi> <hi rend="italic">Stadtmaass;</hi> burhg~ <ref type="lawCode" target="law:Episc">Episc</ref> 6; burgi mensura <ref type="lawCode" target="law:Quadr">Q</ref></dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/41116">burg-gemet</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E03338">burh-ge·met</ref></xr>
         <xr type="lawCode"><ref target="clause:Episc_6">Episc 6</ref></xr>
       </entry>
     </body>

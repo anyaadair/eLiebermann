@@ -29,6 +29,7 @@
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
       <change when="2026-10-19">“cpa”, “spla” linked to the abbreviations list (printed bold italic, missed before).</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E14239; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -47,6 +48,7 @@
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/4042">betera</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/40215">betera (Supplement)</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/61489">betera (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E14239">betera</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAs_7">VI As 7</ref></xr>
         <xr type="lawCode"><ref target="clause:Cn1020_10">Cn 1020,10</ref></xr>
         <xr type="lawCode"><ref target="clause:IIEw_1-1">II Ew 1</ref></xr>

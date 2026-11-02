@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Liebermann’s numbered sections joined into one entry, as in the print: the files bry-g-de-2 (later sections) are now part of this entry.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E03374; guessed from the DOE headword list, same as the Bosworth-Toller headword; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -37,6 +38,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">I</hi>) <hi rend="bold">bry[g]de</hi>; <hi rend="italic"><ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>:</hi> wæpnes bryde <hi rend="italic">Waffenzücken</hi> <ref type="lawCode" target="law:Af">Af</ref> 38,1 <hi rend="bold">II</hi>) <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:br-ae-gd">brægd</ref></dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/5274">bryd</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E03374">brȳd</ref></xr>
         <xr type="see"><ref target="entry:br-ae-gd">br[æ]gd</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_38-1">Af 38,1</ref></xr>
       </entry>

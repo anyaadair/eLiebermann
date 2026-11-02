@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E02542; guessed from the DOE headword list, verb form (-að/-eð → -an/-ian …); not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,7 @@
           <orth>berype</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">berype</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Optativ"><abbr>op</abbr></ref></hi> 3, <hi rend="italic">plündere</hi> <ref type="lawCode" target="law:Grith">Grið</ref> 26</dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E02542">be-rȳpan</ref></xr>
         <xr type="lawCode"><ref target="clause:Grith_26">Grið 26</ref></xr>
       </entry>
     </body>

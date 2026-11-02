@@ -28,6 +28,7 @@
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">L (Latin version) after VI Atr, IV Eg and Leis Wl citations linked.</change>
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E03629; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -39,6 +40,7 @@
         <dictScrap type="liebermann"><hi rend="bold">beodern</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>, Speisesaal</hi> <ref type="lawCode" target="law:VIAtr">VI Atr</ref> 4 (refectorium <ref type="lawCode" target="law:LatVersion">L</ref>) = beoddern <ref type="lawCode" target="law:VAtr">V</ref> 7</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/3694">beód-ern</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/39957">beód-ern (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E03629">bēod-ern</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAtr_4">VI Atr 4</ref></xr>
         <xr type="lawCode"><ref target="clause:VAtr_7">V Atr 7</ref></xr>
       </entry>

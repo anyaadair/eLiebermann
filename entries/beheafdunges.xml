@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E02738; guessed from the DOE headword list, same as the Bosworth-Toller headword; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -37,6 +38,7 @@
         <dictScrap type="liebermann"><hi rend="bold">beheafdunges</hi> [<ref type="abbreviation" target="gram:sic"><abbr>!</abbr></ref>], <hi rend="italic"><ref type="abbreviation" target="gram:Genitiv"><abbr>gn</abbr></ref></hi>, <hi rend="italic">Enthauptung</hi> <ref type="lawCode" target="law:IAs">I As</ref> 1 <ref type="lawCode" target="law:Ld">Ld</ref></dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/3481">be-heáfdung</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/39805">be-heáfdung (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E02738">be-hēafdung</ref></xr>
         <xr type="lawCode"><ref target="clause:IAs_1">I As 1</ref></xr>
       </entry>
     </body>

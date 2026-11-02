@@ -29,6 +29,7 @@
       <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
       <change when="2026-10-18">Abbreviations and law code (Norðleod) linked; see the pull request “þæt: indecl., Einl., Folg., Urkk.-Sprache, Norðleod”.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E02253; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -45,6 +46,7 @@
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/61530">bisceop (Supplement)</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/4440">biscep</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/4446">biscop</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E02253">bisceop</ref></xr>
         <xr type="lawCode"><ref target="clause:Cn1020_11">Cn 1020,11</ref></xr>
         <xr type="lawCode"><ref target="clause:Wi_Prolog-to-3">Wi Pro 1</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_1-2">Af 1,2</ref></xr>

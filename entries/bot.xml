@@ -28,6 +28,7 @@
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E02493; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -65,6 +66,7 @@
         <xr type="derivative"><ref target="entry:weofod">weofod</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/4887">bót</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/40755">bót (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E02493">bōt</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_11-3">Af 11,3</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_26">Af 26</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_52">Af 52</ref></xr>

@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E03566; guessed from the DOE headword list, spelling variant (i/y/ie, double letters, -ian/-an); not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">belflys</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref></hi>, <hi rend="italic">Glockenflies, Wollfell eines Glockenträgers</hi> [<hi rend="italic">Leitschafs</hi>] <ref type="lawCode" target="law:Rect">Rect</ref> 14; ~lis <ref type="lawCode" target="law:Quadr">Q</ref></dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/3595">bel-flýs</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E03566">bell-flȳs</ref></xr>
         <xr type="lawCode"><ref target="clause:Rect_14">Rect 14</ref></xr>
       </entry>
     </body>

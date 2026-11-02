@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E02924; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,7 @@
           <orth>beweardian</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">beweardian</hi> <hi rend="italic">beschützen; <ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref></hi> 3: ~iað <ref type="lawCode" target="law:ICn">I Cn</ref> 4,2; bewerdiað <ref type="lawCode" target="law:MsA">A</ref>; ~deað <ref type="lawCode" target="law:Ld">Ld</ref><ref type="abbreviation" target="gram:sic"><abbr>!</abbr></ref></dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E02924">be-weardian</ref></xr>
         <xr type="lawCode"><ref target="clause:ICn_4-2">I Cn 4,2</ref></xr>
       </entry>
     </body>

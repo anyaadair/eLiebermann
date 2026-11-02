@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E03373; guessed from the DOE headword list, verb form (-að/-eð → -an/-ian …); not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,7 @@
           <orth>blisse</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">blisse</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref></hi>, <hi rend="italic">Freudigkeit</hi> <ref type="lawCode" target="law:IVEg">IV Eg</ref> 1,4. 1,5a</dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E03373">blissian</ref></xr>
         <xr type="lawCode"><ref target="clause:IVEg_1-4">IV Eg 1,4</ref></xr>
         <xr type="lawCode"><ref target="clause:IVEg_1-5a">IV Eg 1,5a</ref></xr>
       </entry>
