@@ -101,6 +101,8 @@ Nothing is published until it is committed to `main`. GitHub Pages rebuilds the 
 | `tools/build-index.js` | Writes `data/entries.json`. Runs on every deploy. |
 | `tools/update-entries.js` | Rewrites the parts of each entry made from Liebermann's text: the numbered meanings and the law code citation list. Run it after adding or changing entries outside the form. |
 | `.github/workflows/static.yml` | Builds and deploys the site on every push to `main`. |
+| `.github/workflows/check.yml` | Runs the same checks and builds on every pull request, without deploying, so a change that would break the site shows as a red cross on the pull request before it is merged. |
+| `tools/check-files.py` | Checks that every XML and JSON file can be read, that `oe-laws/index.json` and the clause files agree, and that every `entry:` and `clause:` link has a target. Runs on every pull request and deploy. |
 | `docs/` | Entry format, import rules, the latest import report, the stock-take of October 2026, and the cross-checks against the team's Word transcriptions (`crosscheck-*.md`). |
 
 ## Adding entries

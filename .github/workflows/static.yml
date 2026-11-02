@@ -34,6 +34,8 @@ jobs:
           node-version: 20
       - name: Check that u is not drawn as V (Latin and French)
         run: node tools/check-u-not-v.js
+      - name: Check that every file can be read and every link has a target
+        run: python3 tools/check-files.py
       - name: List dictionary entries
         run: node tools/build-index.js
       - name: List law clauses
