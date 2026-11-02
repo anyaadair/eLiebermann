@@ -41,6 +41,7 @@
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
       <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
+      <change when="2026-11-02">Readings of MS Rs moved from this note to ECf retr 12d, the text they are variants of (Gesetze III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -56,7 +57,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_12d.lnote.la.6" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">638</biblScope></bibl><seg type="original" xml:lang="de">-runt <hi rend="italic">S Ad;</hi> afferunt <hi rend="italic">Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">-runt S Ad; afferunt Do</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_12d.lnote.la.7" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">638</biblScope></bibl><seg type="original" xml:lang="de">et <hi rend="italic">Hr S Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">et Hr S Ad Do</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">another, which the waters have, by whose navigation provisions are carried from various parts to cities or boroughs.</ab>
-        <note type="liebermannNote" subtype="textual" xml:id="ECf_12d.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">345</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Wasser 4; Stadt 3. a. In Deutschland heisst jedes fliessende Wasser Reichsstrasse; Graf u. Dietherr <hi rend="italic">Dt. Rechtssprichw.</hi> 510. 512. — <hi rend="italic">aliam</hi><hi rend="superscript">11</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude">Cf. Gl Wasser 4; Stadt 3. a. In Germany every flowing water is called an imperial highway; Graf and Dietherr <hi rend="italic">Dt. Rechtssprichw.</hi> 510. 512. — <hi rend="italic">aliam</hi><hi rend="superscript">11</hi> Rs</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_12d.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">345</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Wasser 4; Stadt 3. a. In Deutschland heisst jedes fliessende Wasser Reichsstrasse; Graf u. Dietherr <hi rend="italic">Dt. Rechtssprichw.</hi> 510. 512.</seg><seg type="translation" xml:lang="en" source="#claude">Cf. Gl Wasser 4; Stadt 3. a. In Germany every flowing water is called an imperial highway; Graf and Dietherr <hi rend="italic">Dt. Rechtssprichw.</hi> 510. 512.</seg></note>
       </div>
     </body>
   </text>

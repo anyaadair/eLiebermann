@@ -41,6 +41,7 @@
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
       <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
+      <change when="2026-11-02">Readings of MS Rs moved from this note to ECf retr 28,1, the text they are variants of (Gesetze III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -59,7 +60,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_28-1.lnote.la.7" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">652</biblScope></bibl><seg type="original" xml:lang="de">certat. <hi rend="italic">Hk Hr S;</hi> commutacionibus <hi rend="italic">Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">certat. Hk Hr S; commutacionibus Do</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_28-1.lnote.la.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">652</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Ad</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Ad</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">These dealt with cases between vills, between neighbours, and, according as the offences were, compensations and settlements, namely concerning pastures, meadows, harvests, quarrels between neighbours and many things of this kind which frequently arise.</ab>
-        <note type="liebermannNote" subtype="textual" xml:id="ECf_28-1.lnote.oe.erkl-a" n="a" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">347</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">S. Gl</hi> Gericht 11b H—M; Dorfgericht 3ff. — <hi rend="italic">casulas</hi><hi rend="superscript">2</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude">See <hi rend="italic">Gl</hi> Gericht 11b H—M; Dorfgericht 3ff. — <hi rend="italic">casulas</hi><hi rend="superscript">2</hi> Rs</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_28-1.lnote.oe.erkl-a" n="a" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">347</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">S. Gl</hi> Gericht 11b H—M; Dorfgericht 3ff.</seg><seg type="translation" xml:lang="en" source="#claude">See <hi rend="italic">Gl</hi> Gericht 11b H—M; Dorfgericht 3ff.</seg></note>
       </div>
     </body>
   </text>

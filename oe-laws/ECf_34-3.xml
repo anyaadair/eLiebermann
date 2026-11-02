@@ -41,6 +41,7 @@
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
       <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
+      <change when="2026-11-02">Readings of MS Rs moved from this note to ECf retr 34,3, the text they are variants of (Gesetze III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -64,7 +65,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_34-3.lnote.la.43" n="43" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">663</biblScope></bibl><seg type="original" xml:lang="de">Edg. <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">Edg. Hk</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_34-3.lnote.la.44" n="44" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">663</biblScope></bibl><seg type="original" xml:lang="de">t. s. <hi rend="italic">S</hi></seg><seg type="translation" xml:lang="en" source="#claude">t. s. S</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">But after King Edward came to the kingdom, by the counsel of the barons of the kingdom he had the law that had been set aside restored and confirmed, because it seemed honourable to them, and because his grandfather had established it; and so it was called the law of King Edward, which had been set aside from the death of Edgar, his grandfather, until his own time.</ab>
-        <note type="liebermannNote" subtype="textual" xml:id="ECf_34-3.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">349</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl Eadwardi laga</hi> 4b; Reichsrat 1b — <hi rend="italic">r. Ea.</hi><hi rend="superscript">38</hi> — <hi rend="italic">de-dita<hi rend="superscript">39</hi> — Eadgari, qui XVI annis regnavit et primus</hi><hi rend="superscript">39</hi> — <hi rend="italic">ab. eam extrait</hi><hi rend="superscript">5</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude">Cf. <hi rend="italic">Gl</hi> <hi rend="italic">Eadwardi laga</hi> 4b; Reichsrat 1b — <hi rend="italic">r. Ea.</hi><hi rend="superscript">38</hi> — <hi rend="italic">dedita</hi><hi rend="superscript">39</hi> — <hi rend="italic">Eadgari, qui XVI annis regnavit et primus</hi><hi rend="superscript">39</hi> — <hi rend="italic">ab. eam extrait</hi><hi rend="superscript">5</hi> Rs</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34-3.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">349</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl Eadwardi laga</hi> 4b; Reichsrat 1b</seg><seg type="translation" xml:lang="en" source="#claude">Cf. <hi rend="italic">Gl</hi> <hi rend="italic">Eadwardi laga</hi> 4b; Reichsrat 1b</seg></note>
       </div>
     </body>
   </text>

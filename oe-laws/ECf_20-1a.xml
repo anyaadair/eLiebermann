@@ -41,6 +41,7 @@
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
       <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
+      <change when="2026-11-02">Readings of MS Rs moved from this note to ECf retr 20,1a, the text they are variants of (Gesetze III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -61,7 +62,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_20-1a.lnote.la.28" n="28" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">645</biblScope></bibl><seg type="original" xml:lang="de">spatium <hi rend="italic">fügt zu S</hi></seg><seg type="translation" xml:lang="en" source="#claude">S adds spatium</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_20-1a.lnote.la.29" n="29" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">645</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Hk Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Hk Hr</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">But if he fled, and they said that they could not have him to right, a term of thirty days and one day should be given them by the king's justice.</ab>
-        <note type="liebermannNote" subtype="textual" xml:id="ECf_20-1a.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">346</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Ebd.</hi> Zehnerschaft 26d. 31; Dorf 3c — <hi rend="italic">lege t. eis</hi><hi rend="superscript">35</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Ibid.</hi> Zehnerschaft 26d. 31; Dorf 3c — <hi rend="italic">lege t. eis</hi><hi rend="superscript">35</hi> Rs</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_20-1a.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">346</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Ebd.</hi> Zehnerschaft 26d. 31; Dorf 3c</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Ibid.</hi> Zehnerschaft 26d. 31; Dorf 3c</seg></note>
       </div>
     </body>
   </text>

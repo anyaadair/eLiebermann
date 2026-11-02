@@ -41,6 +41,7 @@
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
       <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
+      <change when="2026-11-02">Readings of MS Rs moved from this note to ECf retr 34,1, the text they are variants of (Gesetze III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -63,7 +64,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_34-1.lnote.la.27" n="27" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">661</biblScope></bibl><seg type="original" xml:lang="de">quas n. et i. de eis <hi rend="italic">Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">quas n. et i. de eis Hr</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_34-1.lnote.la.28" n="28" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">661</biblScope></bibl><seg type="original" xml:lang="de">hiis, que <hi rend="italic">Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">hiis, que Ad Do</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">But all the compatriots who had recited the laws besought him most earnestly that he would permit them to have the laws and customs with which their ancestors had lived, and [in which] they themselves were born: because it was hard for them to take up laws and to judge by them which they did not know.</ab>
-        <note type="liebermannNote" subtype="textual" xml:id="ECf_34-1.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">349</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Ebd.</hi> Eadwardi laga 4d; Urteilfinder 13; sie sollen <hi rend="italic">diiudicare per legem provinciae;</hi> Hn 9,9 — <hi rend="italic">co.</hi><hi rend="superscript">28</hi> <hi rend="italic">regni</hi> — <hi rend="italic">eff.</hi><hi rend="superscript">29</hi> <hi rend="italic">sunt u. depr.</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Ibid.</hi> Eadwardi laga 4d; Urteilfinder 13; they are to <hi rend="italic">diiudicare per legem provinciae</hi>; Hn 9,9 — <hi rend="italic">co.</hi><hi rend="superscript">28</hi> <hi rend="italic">regni</hi> — <hi rend="italic">eff.</hi><hi rend="superscript">29</hi> <hi rend="italic">sunt u. depr.</hi> Rs</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34-1.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">349</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Ebd.</hi> Eadwardi laga 4d; Urteilfinder 13; sie sollen <hi rend="italic">diiudicare per legem provinciae;</hi> Hn 9,9</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Ibid.</hi> Eadwardi laga 4d; Urteilfinder 13; they are to <hi rend="italic">diiudicare per legem provinciae</hi>; Hn 9,9</seg></note>
       </div>
     </body>
   </text>

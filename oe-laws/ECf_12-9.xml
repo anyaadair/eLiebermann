@@ -41,6 +41,7 @@
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
       <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
+      <change when="2026-11-02">Readings of MS Rs moved from this note to ECf retr 12,9, the text they are variants of (Gesetze III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -60,7 +61,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_12-9.lnote.la.27" n="27" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">639</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Hk</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_12-9.lnote.la.28" n="28" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">639</biblScope></bibl><seg type="original" xml:lang="de">sint <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">sint Hk</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">The other highways, from cities to cities, from boroughs to boroughs, by which men go to markets or their other business, are under the law of the shire.</ab>
-        <note type="liebermannNote" subtype="textual" xml:id="ECf_12-9.lnote.oe.erkl-a" n="a" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">345</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Grafschaft 17a. b; die 2 ₤ gelten als Grafschaftsbusse in Kent um 1160 [Pol Mai II 513], d. i. ‘Ungehorsam in Mercischer Währung’. — <hi rend="italic">fuerunt</hi><hi rend="superscript">28</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude">Cf. Gl Grafschaft 17a. b; the 2 ₤ count as the shire’s penalty in Kent about 1160 [Pol Mai II 513], i.e. ‘oferhyrnes in Mercian currency’. — <hi rend="italic">fuerunt</hi><hi rend="superscript">28</hi> Rs</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_12-9.lnote.oe.erkl-a" n="a" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">345</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Grafschaft 17a. b; die 2 ₤ gelten als Grafschaftsbusse in Kent um 1160 [Pol Mai II 513], d. i. ‘Ungehorsam in Mercischer Währung’.</seg><seg type="translation" xml:lang="en" source="#claude">Cf. Gl Grafschaft 17a. b; the 2 ₤ count as the shire’s penalty in Kent about 1160 [Pol Mai II 513], i.e. ‘oferhyrnes in Mercian currency’.</seg></note>
       </div>
     </body>
   </text>

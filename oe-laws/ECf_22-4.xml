@@ -41,6 +41,7 @@
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
       <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
+      <change when="2026-11-02">Readings of MS Rs moved from this note to ECf retr 22,4, the text they are variants of (Gesetze III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -56,7 +57,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_22-4.lnote.la.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">648</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">so nur Rl;</hi> suo, si <hi rend="italic">Hk Hr S Ad Do Retr.</hi></seg><seg type="translation" xml:lang="en" source="#claude">so only Rl; suo, si Hk Hr S Ad Do Retr.</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_22-4.lnote.la.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">648</biblScope></bibl><seg type="original" xml:lang="de">erit <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">erit Hk</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">Of infangentheof: the justice of a thief who confesses is his, concerning a man who has been taken on his land.</ab>
-        <note type="liebermannNote" subtype="textual" xml:id="ECf_22-4.lnote.oe.erkl-a" n="a" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">347</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Ebd.</hi> Infangenþeof 1—2. 9f. (auch über Beschränkung auf <hi rend="italic">suus</hi>, des Privilegierten Vassallen); handhaft 5. — <hi rend="italic">De infangeneþief</hi> überschr., ohne <hi rend="italic">omnis</hi><hi rend="superscript">2</hi> bis <hi rend="italic">cons.</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Ibid.</hi> Infangenþeof 1—2. 9f. (also on the restriction to <hi rend="italic">suus</hi>, the privileged man's vassal); handhaft 5. — Rs heads it <hi rend="italic">De infangeneþief</hi>, without <hi rend="italic">omnis</hi><hi rend="superscript">2</hi> to <hi rend="italic">cons.</hi></seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_22-4.lnote.oe.erkl-a" n="a" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">347</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Ebd.</hi> Infangenþeof 1—2. 9f. (auch über Beschränkung auf <hi rend="italic">suus</hi>, des Privilegierten Vassallen); handhaft 5.</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Ibid.</hi> Infangenþeof 1—2. 9f. (also on the restriction to <hi rend="italic">suus</hi>, the privileged man's vassal); handhaft 5.</seg></note>
       </div>
     </body>
   </text>

@@ -41,6 +41,7 @@
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
       <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
+      <change when="2026-11-02">Readings of MS Rs moved from this note to ECf retr 38,1a, the text they are variants of (Gesetze III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -56,7 +57,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_38-1a.lnote.la.28" n="28" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">668</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Hk S</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Hk S</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_38-1a.lnote.la.29" n="29" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">668</biblScope></bibl><seg type="original" xml:lang="de">e. p. guar. <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">e. p. guar. Hk</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">And if the seller cannot have pledges, let him be detained with the goods, until either his lord comes or anyone else who can justly warrant him.</ab>
-        <note type="liebermannNote" subtype="textual" xml:id="ECf_38-1a.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">350</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Vassallität 18a. 19a; Gefolge 16f.; Bürgschaft 13 — <hi rend="italic">alter</hi><hi rend="superscript">29</hi> <hi rend="italic">q. b. p. e.</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude">Cf. <hi rend="italic">Gl</hi> Vassallität 18a. 19a; Gefolge 16f.; Bürgschaft 13 — <hi rend="italic">alter</hi><hi rend="superscript">29</hi> <hi rend="italic">q. b. p. e.</hi> Rs</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_38-1a.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">350</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Vassallität 18a. 19a; Gefolge 16f.; Bürgschaft 13</seg><seg type="translation" xml:lang="en" source="#claude">Cf. <hi rend="italic">Gl</hi> Vassallität 18a. 19a; Gefolge 16f.; Bürgschaft 13</seg></note>
       </div>
     </body>
   </text>

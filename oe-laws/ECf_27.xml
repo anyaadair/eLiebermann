@@ -41,6 +41,7 @@
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
       <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
+      <change when="2026-11-02">Readings of MS Rs moved from this note to ECf retr 27, the text they are variants of (Gesetze III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -62,7 +63,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_27.lnote.la.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">651</biblScope></bibl><seg type="original" xml:lang="de">syra <hi rend="italic">Hk;</hi> scira <hi rend="italic">S;</hi> sua <hi rend="italic">Hr;</hi> shira <hi rend="italic">Ad</hi></seg><seg type="translation" xml:lang="en" source="#claude">syra Hk; scira S; sua Hr; shira Ad</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_27.lnote.la.9" n="9" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">651</biblScope></bibl><seg type="original" xml:lang="de">ut si <hi rend="italic">Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">ut si Ad Do</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">(Again concerning the king's peace.) The peace given by the king's hand, and that of the eight days on which he was first crowned, and the peace of the above-mentioned feasts, and the peace by the king's writ have one measure of compensation, and that by the judgment which is held the greater in the shire where the peace has been broken</ab>
-        <note type="liebermannNote" subtype="textual" xml:id="ECf_27.lnote.oe.erkl-a" n="a" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">347</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Ebd.</hi> Handfrieden 7; Grafschaft 17. Zweite Rubrik <hi rend="italic">Quom.</hi> bis <hi rend="italic">infr.</hi> fehlt — <hi rend="italic">unde</hi><hi rend="superscript">2</hi> — <hi rend="italic">schira</hi><hi rend="superscript">8</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Ibid.</hi> Handfrieden 7; Grafschaft 17. The second rubric <hi rend="italic">Quom.</hi> to <hi rend="italic">infr.</hi> lacking — <hi rend="italic">unde</hi><hi rend="superscript">2</hi> — <hi rend="italic">schira</hi><hi rend="superscript">8</hi> Rs</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_27.lnote.oe.erkl-a" n="a" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">347</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Ebd.</hi> Handfrieden 7; Grafschaft 17. Zweite Rubrik <hi rend="italic">Quom.</hi> bis <hi rend="italic">infr.</hi> fehlt</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Ibid.</hi> Handfrieden 7; Grafschaft 17. The second rubric <hi rend="italic">Quom.</hi> to <hi rend="italic">infr.</hi> lacking</seg></note>
       </div>
     </body>
   </text>

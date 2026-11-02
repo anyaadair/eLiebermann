@@ -41,6 +41,7 @@
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
       <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
+      <change when="2026-11-02">Readings of MS Rs moved from this note to ECf retr 34,2e, the text they are variants of (Gesetze III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -70,7 +71,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_34-2e.lnote.la.35" n="35" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">663</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Hr</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_34-2e.lnote.la.36" n="36" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">663</biblScope></bibl><seg type="original" xml:lang="de">XLVII a. et fere duo menses <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">XLVII a. et fere duo menses Hk</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">After him Harthacnut, son of Cnut by Ælfgifu-Emma, sister of Robert, count of the Normans, and mother of King Edward, reigned two years less twelve weeks†. And thus were completed the sixty-eight years with the laws set aside.</ab>
-        <note type="liebermannNote" subtype="textual" xml:id="ECf_34-2e.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">349</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Eluiue</hi><hi rend="superscript">21</hi> fehlt — <hi rend="italic">leges</hi> [so Druckfehler zu bessern] <hi rend="italic">p.</hi><hi rend="superscript">28</hi> <hi rend="italic">fuerunt</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Eluiue</hi><hi rend="superscript">21</hi> lacking — <hi rend="italic">leges</hi> [the misprint should be corrected thus] <hi rend="italic">p.</hi><hi rend="superscript">28</hi> <hi rend="italic">fuerunt</hi> Rs</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34-2e.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">349</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Eluiue</hi><hi rend="superscript">21</hi> fehlt</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Eluiue</hi><hi rend="superscript">21</hi> lacking</seg></note>
       </div>
     </body>
   </text>

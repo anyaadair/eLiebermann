@@ -41,6 +41,7 @@
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
       <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
+      <change when="2026-11-02">Readings of MS Rs moved from this note to ECf retr 12, the text they are variants of (Gesetze III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -61,7 +62,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_12.lnote.la.9" n="9" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">637</biblScope></bibl><seg type="original" xml:lang="de">selde <hi rend="italic">Rl;</hi> salde <hi rend="italic">Hk;</hi> shalde <hi rend="italic">Hr;</hi> alde <hi rend="italic">S;</hi> s. g. <hi rend="italic">fehlt Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">selde Rl; salde Hk; shalde Hr; alde S; s. g. lacking in Ad Do</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_12.lnote.la.10" n="10" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">637</biblScope></bibl><seg type="original" xml:lang="de">grid <hi rend="italic">Rl Hk S</hi></seg><seg type="translation" xml:lang="en" source="#claude">grid Rl Hk S</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">Of the manifold peace of the king. The king's peace is manifold: one, given by his own hand, which the English call <hi rend="italic">kinges hand s[ea]lde grið</hi> (peace given by the king's hand);</ab>
-        <note type="liebermannNote" subtype="textual" xml:id="ECf_12.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">345</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Ebd.</hi> Schutz 9c II; Handfrieden 2. 3a. 7; verbinde <hi rend="italic">handsealde</hi> zu einem Wort. — Zweite Rubrik <hi rend="italic">De m.</hi><hi rend="superscript">5</hi> bis <hi rend="italic">deferuntur</hi> fehlt — <hi rend="italic">grid</hi><hi rend="superscript">16</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude">Ibid. Schutz 9c II; Handfrieden 2. 3a. 7; join <hi rend="italic">handsealde</hi> into one word. — Second rubric <hi rend="italic">De m.</hi><hi rend="superscript">5</hi> to <hi rend="italic">deferuntur</hi> lacking — <hi rend="italic">grid</hi><hi rend="superscript">16</hi> Rs</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_12.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">345</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Ebd.</hi> Schutz 9c II; Handfrieden 2. 3a. 7; verbinde <hi rend="italic">handsealde</hi> zu einem Wort.</seg><seg type="translation" xml:lang="en" source="#claude">Ibid. Schutz 9c II; Handfrieden 2. 3a. 7; join <hi rend="italic">handsealde</hi> into one word.</seg></note>
       </div>
     </body>
   </text>

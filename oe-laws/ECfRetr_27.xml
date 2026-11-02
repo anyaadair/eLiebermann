@@ -23,6 +23,7 @@
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">651</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
           <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
         </listBibl>
       </sourceDesc>
     </fileDesc>
@@ -39,6 +40,7 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+      <change when="2026-11-02">Readings of MS Rs (Liebermann, Gesetze III, notes to ECf) moved here: they are variants against the retractatus (III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -58,6 +60,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_27.lnote.la.7" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">651</biblScope></bibl><seg type="original" xml:lang="de">et <hi rend="italic">K</hi></seg><seg type="translation" xml:lang="en" source="#claude">et K</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_27.lnote.la.8" n="8" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">651</biblScope></bibl><seg type="original" xml:lang="de">sira <hi rend="italic">Lb Va;</hi> schira <hi rend="italic">Hv K</hi></seg><seg type="translation" xml:lang="en" source="#claude">sira Lb Va; schira Hv K</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">Again concerning the king's peace. (How or what they used to pay in compensation, what they gave to the king, what to the dean, who broke the king's peace.) The peace given by the king's hand, and that of the eight days on which he was first crowned, and the peace of the aforesaid feasts, and the peace by the king's writ have one manner of compensation, and that by the judgment which is held the greater in the shire where the peace has been broken</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_27.lnote.oe.erkl-rs" n="Rs" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">347</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">unde</hi><hi rend="superscript">2</hi> — <hi rend="italic">schira</hi><hi rend="superscript">8</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">unde</hi><hi rend="superscript">2</hi> — <hi rend="italic">schira</hi><hi rend="superscript">8</hi> Rs</seg></note>
       </div>
     </body>
   </text>

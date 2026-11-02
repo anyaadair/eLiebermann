@@ -41,6 +41,7 @@
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
       <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
+      <change when="2026-11-02">Readings of MS Rs moved from this note to ECf retr 7, the text they are variants of (Gesetze III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -53,7 +54,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_7.lnote.la.fn.n" n="n" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">631</biblScope></bibl><seg type="original" xml:lang="de">of eorðwæstmum I As. Pr.; II Eg. 3; V Atr. 11 (= VI 17); VIII 9; I Cn. 8; Hn. 11, 2</seg><seg type="translation" xml:lang="en" source="#claude">of eorðwæstmum I As. Pr.; II Eg. 3; V Atr. 11 (= VI 17); VIII 9; I Cn. 8; Hn. 11, 2</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_7.lnote.la.42" n="42" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">631</biblScope></bibl><seg type="original" xml:lang="de">De dec. e. r. <hi rend="italic">Hr; nur</hi> De d. ecclesiarum <hi rend="italic">Cl</hi></seg><seg type="translation" xml:lang="en" source="#claude">De dec. e. r. Hr; only De d. ecclesiarum Cl</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">Of tithes to be rendered to holy Church. Of all grain the tenth sheaf is to be rendered to holy Church.</ab>
-        <note type="liebermannNote" subtype="textual" xml:id="ECf_7.lnote.oe.erkl-a" n="a" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">344</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Zehnt 15. a ff. — <hi rend="italic">De d. e. r.</hi><hi rend="superscript">33</hi> <hi rend="italic">et de ovibus et purcellis</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude">Cf. Gl Zehnt 15. a ff. — <hi rend="italic">De d. e. r.</hi><hi rend="superscript">33</hi> <hi rend="italic">et de ovibus et purcellis</hi> Rs</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_7.lnote.oe.erkl-a" n="a" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">344</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Zehnt 15. a ff.</seg><seg type="translation" xml:lang="en" source="#claude">Cf. Gl Zehnt 15. a ff.</seg></note>
       </div>
     </body>
   </text>

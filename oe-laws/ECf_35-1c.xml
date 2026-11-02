@@ -41,6 +41,7 @@
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
       <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
+      <change when="2026-11-02">Readings of MS Rs moved from this note to ECf retr 35,1c, the text they are variants of (Gesetze III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -64,7 +65,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_35-1c.lnote.la.19" n="19" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">665</biblScope></bibl><seg type="original" xml:lang="de">filium <hi rend="italic">Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">filium Hr</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_35-1c.lnote.la.20" n="20" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">665</biblScope></bibl><seg type="original" xml:lang="de">regis <hi rend="italic">Cl;</hi> uocant <hi rend="italic">fügt zu S</hi></seg><seg type="translation" xml:lang="en" source="#claude">regis Cl; S adds uocant</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">And because he thought to make him heir, he named [him] <hi rend="italic">aþeling</hi>, which we call <hi rend="italic">domicellus</hi> (young lord), but we [say it] of more people, because we call the sons of barons <hi rend="italic">domicelli</hi>, but the English [call] no one [so] except the sons of kings.</ab>
-        <note type="liebermannNote" subtype="textual" xml:id="ECf_35-1c.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">350</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Ebd.</hi> Adoption 2; Ætheling — <hi rend="italic">suum</hi><hi rend="superscript">12</hi> fehlt Rs</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Ibid.</hi> Adoption 2; Ætheling — <hi rend="italic">suum</hi><hi rend="superscript">12</hi> lacking Rs</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_35-1c.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">350</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Ebd.</hi> Adoption 2; Ætheling</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Ibid.</hi> Adoption 2; Ætheling</seg></note>
       </div>
     </body>
   </text>

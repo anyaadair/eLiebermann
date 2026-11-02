@@ -41,6 +41,7 @@
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
       <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
+      <change when="2026-11-02">Readings of MS Rs moved from this note to ECf retr 3, the text they are variants of (Gesetze III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -65,7 +66,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_3.lnote.la.35" n="35" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">629</biblScope></bibl><seg type="original" xml:lang="de">p. r. <hi rend="italic">S</hi></seg><seg type="translation" xml:lang="en" source="#claude">p. r. S</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_3.lnote.la.36" n="36" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">629</biblScope></bibl><seg type="original" xml:lang="de">illa <hi rend="italic">Ad Do;</hi> ipso <hi rend="italic">Cl;</hi> eo <hi rend="italic">S</hi></seg><seg type="translation" xml:lang="en" source="#claude">illa Ad Do; ipso Cl; eo S</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">Wherever the king's justice or any other justice, whoever's it may be, holds pleas of justice, if the bishop's officer is there and sets forth a case of holy Church, let it first be brought to whatever conclusion it most reasonably can that same day.</ab>
-        <note type="liebermannNote" subtype="textual" xml:id="ECf_3.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">344</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Priorität 6; Geistl. Gericht 3. 12; Klage 16. — <hi rend="italic">sancte</hi><hi rend="superscript">28</hi> fehlt Rs</seg><seg type="translation" xml:lang="en" source="#claude">Cf. Gl Priorität 6; Geistl. Gericht 3. 12; Klage 16. — <hi rend="italic">sancte</hi><hi rend="superscript">28</hi> lacking in Rs</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_3.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">344</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Priorität 6; Geistl. Gericht 3. 12; Klage 16.</seg><seg type="translation" xml:lang="en" source="#claude">Cf. Gl Priorität 6; Geistl. Gericht 3. 12; Klage 16.</seg></note>
       </div>
     </body>
   </text>

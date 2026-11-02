@@ -41,6 +41,7 @@
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
       <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
+      <change when="2026-11-02">Readings of MS Rs moved from this note to ECf retr 34,2a, the text they are variants of (Gesetze III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -58,7 +59,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_34-2a.lnote.la.18" n="18" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">662</biblScope></bibl><seg type="original" xml:lang="de">Ad. <hi rend="italic">Rl;</hi> Ældr. <hi rend="italic">S</hi></seg><seg type="translation" xml:lang="en" source="#claude">Ad. Rl; Ældr. S</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_34-2a.lnote.la.19" n="19" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">662</biblScope></bibl><seg type="original" xml:lang="de">s. r. <hi rend="italic">Hk Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">s. r. Hk Hr</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">After him Æthelred, his brother, took up the kingdom, and reigned amid many dangers thirty-eight years†.</ab>
-        <note type="liebermannNote" subtype="textual" xml:id="ECf_34-2a.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">349</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Ebd.</hi> Æthelred II. 4 — <hi rend="italic">Aldr.</hi><hi rend="superscript">28</hi> <hi rend="italic">Unrad</hi> [<hi rend="italic">s. d. Wb</hi>] Rs</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Ibid.</hi> Æthelred II. 4 — <hi rend="italic">Aldr.</hi><hi rend="superscript">28</hi> <hi rend="italic">Unrad</hi> [see that word in <hi rend="italic">Wb</hi>] Rs</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_34-2a.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">349</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Ebd.</hi> Æthelred II. 4</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Ibid.</hi> Æthelred II. 4</seg></note>
       </div>
     </body>
   </text>

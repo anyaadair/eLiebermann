@@ -23,6 +23,7 @@
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">661</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
           <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
         </listBibl>
       </sourceDesc>
     </fileDesc>
@@ -39,6 +40,7 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+      <change when="2026-11-02">Readings of MS Rs (Liebermann, Gesetze III, notes to ECf) moved here: they are variants against the retractatus (III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -61,6 +63,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_34-1.lnote.la.34" n="34" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">661</biblScope></bibl><seg type="original" xml:lang="de">s. f. <hi rend="italic">Hv;</hi> erat eis l. i. su. <hi rend="italic">Dc</hi></seg><seg type="translation" xml:lang="en" source="#claude">s. f. Hv; erat eis l. i. su. Dc</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_34-1.lnote.la.35" n="35" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">661</biblScope></bibl><seg type="original" xml:lang="de">hiis <hi rend="italic">Cb</hi></seg><seg type="translation" xml:lang="en" source="#claude">hiis Cb</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">When this was heard, at once all the compatriots who had declared the laws, made sad, unanimously besought [him] that he would permit them to have their own laws and ancient customs, in which their fathers had lived (and they themselves had been born and brought up in them): because it would be very hard for them to take up unknown laws and to judge by them which they did not know.</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="ECfRetr_34-1.lnote.oe.erkl-rs" n="Rs" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">349</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">co.</hi><hi rend="superscript">28</hi> <hi rend="italic">regni</hi> — <hi rend="italic">eff.</hi><hi rend="superscript">29</hi> <hi rend="italic">sunt u. depr.</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">co.</hi><hi rend="superscript">28</hi> <hi rend="italic">regni</hi> — <hi rend="italic">eff.</hi><hi rend="superscript">29</hi> <hi rend="italic">sunt u. depr.</hi> Rs</seg></note>
       </div>
     </body>
   </text>

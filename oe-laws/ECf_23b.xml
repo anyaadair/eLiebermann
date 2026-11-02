@@ -41,6 +41,7 @@
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
       <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
+      <change when="2026-11-02">Readings of MS Rs moved from this note to ECf retr 23b, the text they are variants of (Gesetze III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -52,7 +53,7 @@
         <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 648 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_23b.lnote.la.22" n="22" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">648</biblScope></bibl><seg type="original" xml:lang="de">foref. <hi rend="italic">Rl;</hi> -ctum, <hi rend="italic">darüber</hi> -turam <hi rend="italic">Ad</hi></seg><seg type="translation" xml:lang="en" source="#claude">foref. Rl; -ctum, with -turam above Ad</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">If not, let him pay compensation for the damage and the forfeiture.</ab>
-        <note type="liebermannNote" subtype="textual" xml:id="ECf_23b.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">347</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Ebd.</hi> Haftung 7h; Ersatz Z. 18 — <hi rend="italic">Quos</hi><hi rend="superscript">34</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Ibid.</hi> Haftung 7h; Ersatz l. 18 — <hi rend="italic">Quos</hi><hi rend="superscript">34</hi> Rs</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_23b.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">347</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Ebd.</hi> Haftung 7h; Ersatz Z. 18</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Ibid.</hi> Haftung 7h; Ersatz l. 18</seg></note>
       </div>
     </body>
   </text>

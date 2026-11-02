@@ -41,6 +41,7 @@
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
       <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
+      <change when="2026-11-02">Readings of MS Rs moved from this note to ECf retr 12,2, the text they are variants of (Gesetze III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -54,7 +55,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_12-2.lnote.la.fn.g" n="g" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">638</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">d. h. halb so viel wie beim</hi> assaltus</seg><seg type="translation" xml:lang="en" source="#claude">i.e. half as much as for assaltus</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_12-2.lnote.la.16" n="16" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">638</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt S;</hi> unius <hi rend="italic">Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in S; unius Do</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">(But as to a work: the work shall be destroyed, and half of the compensation shall be given)</ab>
-        <note type="liebermannNote" subtype="textual" xml:id="ECf_12-2.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">345</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Strasse 9f — <hi rend="italic">fiat</hi><hi rend="superscript">21</hi>, <hi rend="italic">opus des.</hi> so interpungiert richtig Rs</seg><seg type="translation" xml:lang="en" source="#claude">Cf. Gl Strasse 9f — <hi rend="italic">fiat</hi><hi rend="superscript">21</hi>, <hi rend="italic">opus des.</hi> so Rs, correctly punctuated</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_12-2.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">345</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Strasse 9f</seg><seg type="translation" xml:lang="en" source="#claude">Cf. Gl Strasse 9f</seg></note>
       </div>
     </body>
   </text>

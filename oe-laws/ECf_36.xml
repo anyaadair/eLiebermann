@@ -41,6 +41,7 @@
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
       <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
+      <change when="2026-11-02">Readings of MS Rs moved from this note to ECf retr 36, the text they are variants of (Gesetze III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -64,7 +65,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_36.lnote.la.22" n="22" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">666</biblScope></bibl><seg type="original" xml:lang="de">ut <hi rend="italic">Cl</hi></seg><seg type="translation" xml:lang="en" source="#claude">ut Cl</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_36.lnote.la.23" n="23" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">666</biblScope></bibl><seg type="original" xml:lang="de">-geos <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">-geos Hk</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">Of thieves killed for theft. If, after justice has been done, anyone makes a complaint to the justiciar that [a man] was killed unjustly and that he lies unjustly among thieves, and if he says that he wishes to deraign (prove) it, let him give a gage and pledges.</ab>
-        <note type="liebermannNote" subtype="textual" xml:id="ECf_36.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">350</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Hingerichtete 5; Grab 3.a; Prozessualpfand 8. 9 — c. 36 steht hinter 39,2 Rs</seg><seg type="translation" xml:lang="en" source="#claude">Cf. <hi rend="italic">Gl</hi> Hingerichtete 5; Grab 3.a; Prozessualpfand 8. 9 — c. 36 stands after 39,2 in Rs</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_36.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">350</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Hingerichtete 5; Grab 3.a; Prozessualpfand 8. 9</seg><seg type="translation" xml:lang="en" source="#claude">Cf. <hi rend="italic">Gl</hi> Hingerichtete 5; Grab 3.a; Prozessualpfand 8. 9</seg></note>
       </div>
     </body>
   </text>

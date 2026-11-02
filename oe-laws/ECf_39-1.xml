@@ -41,6 +41,7 @@
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
       <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
+      <change when="2026-11-02">Readings of MS Rs moved from this note to ECf retr 39,1, the text they are variants of (Gesetze III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -59,7 +60,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_39-1.lnote.la.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">669</biblScope></bibl><seg type="original" xml:lang="de">-iis <hi rend="italic">Hk S</hi></seg><seg type="translation" xml:lang="en" source="#claude">-iis Hk S</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_39-1.lnote.la.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">669</biblScope></bibl><seg type="original" xml:lang="de">-lem <hi rend="italic">Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">-lem Hr</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">The citizens and burgesses also complained on behalf of their customs, that around the feast of St Martin† they bought animals without a pledge to do their slaughterings against the Nativity of the Lord†.</ab>
-        <note type="liebermannNote" subtype="textual" xml:id="ECf_39-1.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">350</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Martin 2c.d — <hi rend="italic">e. natalis D.</hi> — <hi rend="italic">multus</hi><hi rend="superscript">3</hi> — <hi rend="italic">queratur</hi><hi rend="superscript">4</hi> <hi rend="italic">i., ut sit</hi><hi rend="superscript">6</hi> — <hi rend="italic">c.</hi><hi rend="superscript">9</hi>: <hi rend="italic">'placet?'</hi> [besser] <hi rend="italic">s.</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude">Cf. <hi rend="italic">Gl</hi> Martin 2c.d — <hi rend="italic">e. natalis D.</hi> — <hi rend="italic">multus</hi><hi rend="superscript">3</hi> — <hi rend="italic">queratur</hi><hi rend="superscript">4</hi> <hi rend="italic">i., ut sit</hi><hi rend="superscript">6</hi> — <hi rend="italic">c.</hi><hi rend="superscript">9</hi>: <hi rend="italic">'placet?'</hi> [better] <hi rend="italic">s.</hi> Rs</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_39-1.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">350</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Martin 2c.d — <hi rend="italic">e. natalis D.</hi></seg><seg type="translation" xml:lang="en" source="#claude">Cf. <hi rend="italic">Gl</hi> Martin 2c.d — <hi rend="italic">e. natalis D.</hi></seg></note>
       </div>
     </body>
   </text>

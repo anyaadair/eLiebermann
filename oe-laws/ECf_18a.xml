@@ -41,6 +41,7 @@
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
       <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
+      <change when="2026-11-02">Readings of MS Rs moved from this note to ECf retr 18a, the text they are variants of (Gesetze III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -59,7 +60,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_18a.lnote.la.29" n="29" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">643</biblScope></bibl><seg type="original" xml:lang="de">foref. <hi rend="italic">Rl</hi></seg><seg type="translation" xml:lang="en" source="#claude">foref. Rl</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_18a.lnote.la.30" n="30" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">643</biblScope></bibl><seg type="original" xml:lang="de">potuerit <hi rend="italic">S</hi></seg><seg type="translation" xml:lang="en" source="#claude">potuerit S</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">And let him to whom he has shown mercy do right to the one against whom he had before offended, as far as he can fulfil it, and let him find sureties for keeping the peace and lawfulness.</ab>
-        <note type="liebermannNote" subtype="textual" xml:id="ECf_18a.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">346</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Bürgschaft 6b; Verbannung — <hi rend="italic">r.</hi><hi rend="superscript">20</hi> <hi rend="italic">f.</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude">Cf. Gl Bürgschaft 6b; Verbannung — <hi rend="italic">r.</hi><hi rend="superscript">20</hi> <hi rend="italic">f.</hi> Rs</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_18a.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">346</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Bürgschaft 6b; Verbannung</seg><seg type="translation" xml:lang="en" source="#claude">Cf. Gl Bürgschaft 6b; Verbannung</seg></note>
       </div>
     </body>
   </text>

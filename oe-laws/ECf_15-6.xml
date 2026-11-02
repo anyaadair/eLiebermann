@@ -41,6 +41,7 @@
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
       <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
+      <change when="2026-11-02">Readings of MS Rs moved from this note to ECf retr 15,6, the text they are variants of (Gesetze III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -56,7 +57,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_15-6.lnote.la.31" n="31" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">641</biblScope></bibl><seg type="original" xml:lang="de">-driti <hi rend="italic">Hk Hr;</hi> -dreti <hi rend="italic">S</hi></seg><seg type="translation" xml:lang="en" source="#claude">-driti Hk Hr; -dreti S</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_15-6.lnote.la.32" n="32" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">641</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Do</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">But if within the year he could not be found, the kinsmen of the murdered man should have six marks.</ab>
-        <note type="liebermannNote" subtype="textual" xml:id="ECf_15-6.lnote.oe.erkl-a" n="a" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">346</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Ebd.</hi> Murdrum 5c. 14a; Sippe 24ff.; Wergeld 4b. — <hi rend="italic">Sin</hi><hi rend="superscript">26</hi> <hi rend="italic">i. t. a. p. teneri</hi><hi rend="superscript">29</hi>, ohne <hi rend="italic">non</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude">Ibid. Murdrum 5c. 14a; Sippe 24ff.; Wergeld 4b. — <hi rend="italic">Sin</hi><hi rend="superscript">26</hi> <hi rend="italic">i. t. a. p. teneri</hi><hi rend="superscript">29</hi>, without <hi rend="italic">non</hi> Rs</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_15-6.lnote.oe.erkl-a" n="a" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">346</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Ebd.</hi> Murdrum 5c. 14a; Sippe 24ff.; Wergeld 4b.</seg><seg type="translation" xml:lang="en" source="#claude">Ibid. Murdrum 5c. 14a; Sippe 24ff.; Wergeld 4b.</seg></note>
       </div>
     </body>
   </text>

@@ -41,6 +41,7 @@
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
       <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
+      <change when="2026-11-02">Readings of MS Rs moved from this note to ECf retr 23,1, the text they are variants of (Gesetze III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -64,7 +65,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_23-1.lnote.la.32" n="32" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">648</biblScope></bibl><seg type="original" xml:lang="de">oyen <hi rend="italic">Hk;</hi> oghan <hi rend="italic">Rl;</hi> ogene <hi rend="italic">Ad No;</hi> agen <hi rend="italic">S;</hi> ouine <hi rend="italic">Hr;</hi> age <hi rend="italic">Cl</hi></seg><seg type="translation" xml:lang="en" source="#claude">oyen Hk; oghan Rl; ogene Ad No; agen S; ouine Hr; age Cl</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_23-1.lnote.la.33" n="33" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">648</biblScope></bibl><seg type="original" xml:lang="de">hy þen <hi rend="italic">Rl;</hi> he þen <hi rend="italic">Ad Do No;</hi> hine <hi rend="italic">Hk Hr S;</hi> hyne <hi rend="italic">Cl</hi></seg><seg type="translation" xml:lang="en" source="#claude">hy þen Rl; he þen Ad Do No; hine Hk Hr S; hyne Cl</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">But if he has been lodged for a third night, and he commits an offence against anyone, let him have him to right as of his own household, as the English say: <hi rend="italic">Tƿa niht gest, þridde niht ogen hyþen</hi> ('Two nights a guest, the third night one's own household').</ab>
-        <note type="liebermannNote" subtype="textual" xml:id="ECf_23-1.lnote.oe.erkl-a" n="a" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">347</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Ebd.</hi> Haushalt 2 — <hi rend="italic">Quem</hi><hi rend="superscript">36</hi> <hi rend="italic">si</hi> — <hi rend="italic">twa</hi><hi rend="superscript">38</hi> — <hi rend="italic">hinen</hi><hi rend="superscript">43</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Ibid.</hi> Haushalt 2 — <hi rend="italic">Quem</hi><hi rend="superscript">36</hi> <hi rend="italic">si</hi> — <hi rend="italic">twa</hi><hi rend="superscript">38</hi> — <hi rend="italic">hinen</hi><hi rend="superscript">43</hi> Rs</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_23-1.lnote.oe.erkl-a" n="a" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">347</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Ebd.</hi> Haushalt 2</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Ibid.</hi> Haushalt 2</seg></note>
       </div>
     </body>
   </text>

@@ -41,6 +41,7 @@
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
       <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
+      <change when="2026-11-02">Readings of MS Rs moved from this note to ECf retr 5,2, the text they are variants of (Gesetze III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -55,7 +56,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_5-2.lnote.la.29" n="29" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">630</biblScope></bibl><seg type="original" xml:lang="de">-rat <hi rend="italic">Hr;</hi> cepit <hi rend="italic">S Ad Do</hi></seg><seg type="translation" xml:lang="en" source="#claude">-rat Hr; cepit S Ad Do</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_5-2.lnote.la.30" n="30" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">630</biblScope></bibl><seg type="original" xml:lang="de">quod <hi rend="italic">S</hi></seg><seg type="translation" xml:lang="en" source="#claude">quod S</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">If he is a thief or robber, let him return what he wrongly took, if it is at hand.</ab>
-        <note type="liebermannNote" subtype="textual" xml:id="ECf_5-2.lnote.oe.erkl-f" n="f" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">344</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Asyl 4. 18; Diebstahl 13. — <hi rend="italic">v.</hi><hi rend="superscript">17</hi> <hi rend="italic">r. est</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude">Cf. Gl Asyl 4. 18; Diebstahl 13. — <hi rend="italic">v.</hi><hi rend="superscript">17</hi> <hi rend="italic">r. est</hi> Rs</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_5-2.lnote.oe.erkl-f" n="f" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">344</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Asyl 4. 18; Diebstahl 13.</seg><seg type="translation" xml:lang="en" source="#claude">Cf. Gl Asyl 4. 18; Diebstahl 13.</seg></note>
       </div>
     </body>
   </text>

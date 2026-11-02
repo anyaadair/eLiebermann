@@ -41,6 +41,7 @@
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
       <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
+      <change when="2026-11-02">Readings of MS Rs moved from this note to ECf retr 27,1, the text they are variants of (Gesetze III p. 340).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -59,7 +60,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_27-1.lnote.la.12" n="12" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">651</biblScope></bibl><seg type="original" xml:lang="de">foref. <hi rend="italic">Rl</hi></seg><seg type="translation" xml:lang="en" source="#claude">foref. Rl</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_27-1.lnote.la.13" n="13" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">651</biblScope></bibl><seg type="original" xml:lang="de">Norgue. <hi rend="italic">Rl;</hi> Norwice. <hi rend="italic">S</hi></seg><seg type="translation" xml:lang="en" source="#claude">Norgue. Rl; Norwice. S</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">— for example, in the Danelaw by ten and eight 'hundreds', which number makes up seven times twenty pounds and four (for the Danes and Norwegians called the forfeiture of a 'hundred' eight pounds;</ab>
-        <note type="liebermannNote" subtype="textual" xml:id="ECf_27-1.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">347</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> hundert 6; Dänen 2a. 8; Denalagu 11l; Strafgeldfixum 24ff. — <hi rend="italic">Norwegienses</hi><hi rend="superscript">20</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude">Cf. <hi rend="italic">Gl</hi> hundert 6; Dänen 2a. 8; Denalagu 11l; Strafgeldfixum 24ff. — <hi rend="italic">Norwegienses</hi><hi rend="superscript">20</hi> Rs</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_27-1.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">347</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> hundert 6; Dänen 2a. 8; Denalagu 11l; Strafgeldfixum 24ff.</seg><seg type="translation" xml:lang="en" source="#claude">Cf. <hi rend="italic">Gl</hi> hundert 6; Dänen 2a. 8; Denalagu 11l; Strafgeldfixum 24ff.</seg></note>
       </div>
     </body>
   </text>
