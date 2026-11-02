@@ -6,6 +6,7 @@
         <title>Iud Dei III 2.3</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">408</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr> <note type="manuscript">Latin text as edited by Liebermann from several manuscripts (see his notes); the manuscripts as for Iudicium Dei I (his note b on p. 401)</note></witness>
@@ -55,6 +57,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiIII_2-3.lnote.oe.53" n="53" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">408</biblScope></bibl><seg type="original" xml:lang="de">si caseum hunc gustauerit, tremulet <hi rend="italic">Zeu.</hi> 643; palleat, tremiscat 646; contremiscat 681</seg><seg type="translation" xml:lang="en" source="#claude">si caseum hunc gustauerit, tremulet Zeu. 643; palleat, tremiscat 646; contremiscat 681</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiIII_2-3.lnote.oe.54" n="54" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">408</biblScope></bibl><seg type="original" xml:lang="de">-n <hi rend="italic">übergeschr. Rj H</hi></seg><seg type="translation" xml:lang="en" source="#claude">-n written above in Rj H</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiIII_2-3.lnote.oe.55" n="55" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">408</biblScope></bibl><seg type="original" xml:lang="de">mut. <hi rend="italic">Ch Par;</hi> -i <hi rend="italic">übergeschr. Rj H</hi></seg><seg type="translation" xml:lang="en" source="#claude">mut. Ch Par; -i written above in Rj H</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">but that he who is guilty and conscious of the aforesaid matter, at this food of sanctified bread or cheese, and especially through the communion of the Lord's body and blood which he has received, may tremble, and in trembling grow pale, and appear tottering in all his limbs;</ab>
       </div>
     </body>
   </text>

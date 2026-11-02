@@ -6,6 +6,7 @@
         <title>In Cn III 1</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">613</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Instituta Cnuti, relatively literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. Liebermann’s kinds of type (bold, spaced, smaller type, round brackets) are carried over onto the English words that render the marked Latin. It is an aid to reading the Latin, not a published translation</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -64,6 +66,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="InCn_III-1.lnote.oe.7" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">613</biblScope></bibl><seg type="original" xml:lang="de">qui h. <hi rend="italic">fehlt Cb</hi></seg><seg type="translation" xml:lang="en" source="#claude">qui h. missing in Cb</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="InCn_III-1.lnote.oe.9" n="9" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">613</biblScope></bibl><seg type="original" xml:lang="de">-ni sui <hi rend="italic">Lb S Ct</hi></seg><seg type="translation" xml:lang="en" source="#claude">-ni sui Lb S Ct</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="InCn_III-1.lnote.oe._" n="-" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">332</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Ebd</hi>. Selbsthilfe 4. a; Ungehorsam 20; das Wergeld (<hi rend="italic">s. d. Gl</hi> 30n) als Strafe an den Herrn neben dem Strafgeld an private Gerichtsbarkeit (<hi rend="italic">s. d. Gl</hi> 20 u. 22ff.) ist beispiellos und kaum glaublich</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Ibid</hi>. Selbsthilfe 4. a; Ungehorsam 20; wergild (<hi rend="italic">see</hi> that word in <hi rend="italic">Gl</hi> 30n) as a penalty payable to the lord alongside the fine payable to a private jurisdiction (<hi rend="italic">see</hi> that word in <hi rend="italic">Gl</hi> 20 and 22ff.) is unparalleled and scarcely credible</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat"><hi rend="small">If anyone takes something <hi rend="spaced">for some forfeiture</hi> before he justly seeks right, he shall give back what he took and pay a second time; and</hi> <seg type="recension">(to the king)</seg> <hi rend="small">shall pay forty shillings</hi> <seg type="recension">(or to him)</seg> who has his sake and soke; and in addition his price to his lord.</ab>
       </div>
     </body>
   </text>

@@ -6,6 +6,7 @@
         <title>In Cn III 64.1</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">616</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Instituta Cnuti, relatively literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. Liebermann’s kinds of type (bold, spaced, smaller type, round brackets) are carried over onto the English words that render the marked Latin. It is an aid to reading the Latin, not a published translation</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -62,6 +64,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="InCn_III-64-1.lnote.oe.b-2" n="b" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">616</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic"><hi rend="spaced">gesperrt</hi> drucke ich die Wörter, die von Cb’s <hi rend="spaced">Texte</hi> der</hi> In Cn <hi rend="italic">abweichen</hi></seg><seg type="translation" xml:lang="en" source="#claude">I print in <hi rend="italic">spaced type</hi> the words that differ from Cb's <hi rend="italic">text</hi> of the In Cn</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="InCn_III-64-1.lnote.oe.5-2" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">616</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">diese Zeile zwar roth, ist aber Texttheil; s. o. S.</hi> 319</seg><seg type="translation" xml:lang="en" source="#claude">this line, although in red, is part of the text; see above p. 319</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="InCn_III-64-1.lnote.oe.6-2" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">616</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">verb.</hi> uicto, <hi rend="italic">gemäss dem Texte</hi></seg><seg type="translation" xml:lang="en" source="#claude">emend to uicto, in accordance with the text</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat"><hi rend="small">the tail </hi><seg type="recension"><hi rend="small">(however)</hi></seg><hi rend="small"> of an ox </hi><seg type="recension"><hi rend="small">(is paid for)</hi></seg><hi rend="small"> with one shilling and of a cow </hi><seg type="recension"><hi rend="small">(is paid for)</hi></seg><hi rend="small"> with five pence; the eye of an ox </hi><seg type="recension"><hi rend="small">(is paid for)</hi></seg><hi rend="small"> with five pence and of a cow</hi> four <seg type="recension">(pence)</seg>.</ab>
       </div>
     </body>
   </text>

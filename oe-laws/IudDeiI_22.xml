@@ -6,6 +6,7 @@
         <title>Iud Dei I 22</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">405</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr> <note type="manuscript">Latin text as edited by Liebermann from several manuscripts (see his notes); the manuscripts are listed in his note b on p. 401</note></witness>
@@ -63,6 +65,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiI_22.lnote.oe.24" n="24" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">405</biblScope></bibl><seg type="original" xml:lang="de">et <hi rend="italic">Ci</hi></seg><seg type="translation" xml:lang="en" source="#claude">et Ci</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiI_22.lnote.oe.25" n="25" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">405</biblScope></bibl><seg type="original" xml:lang="de">s. mi. <hi rend="italic">Co</hi></seg><seg type="translation" xml:lang="en" source="#claude">s. mi. Co</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiI_22.lnote.oe.26" n="26" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">405</biblScope></bibl><seg type="original" xml:lang="de">co. et ui. <hi rend="italic">Ch Vt;</hi> co. atque ui. <hi rend="italic">Ci Co</hi></seg><seg type="translation" xml:lang="en" source="#claude">co. et ui. Ch Vt; co. atque ui. Ci Co</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">Another. I adjure you, creature of water, by God the Father and the Son and the Holy Spirit, and by the dread day of judgment, and by the twelve apostles, and by the seventy-two disciples, and by the twelve prophets, and by the twenty-four elders who continually praise the Lord, and by the hundred and forty-four thousand who follow the Lamb, and by all the hosts of the holy angels, archangels, thrones, dominions, principalities, powers, virtues, Cherubim and Seraphim, and by all the thousands of holy martyrs, virgins and confessors.</ab>
       </div>
     </body>
   </text>

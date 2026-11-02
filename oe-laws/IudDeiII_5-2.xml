@@ -6,6 +6,7 @@
         <title>Iud Dei II 5.2</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">407</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr> <note type="manuscript">Latin text as edited by Liebermann from several manuscripts (see his notes); the manuscripts as for Iudicium Dei I (his note b on p. 401)</note></witness>
@@ -52,6 +54,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiII_5-2.lnote.oe.71" n="71" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">407</biblScope></bibl><seg type="original" xml:lang="de">in diem 3. <hi rend="italic">Zeu.</hi> 614. 653, <hi rend="italic">s. Anm. c</hi></seg><seg type="translation" xml:lang="en" source="#claude">in diem 3. Zeu. 614. 653, see note c</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiII_5-2.lnote.oe.72" n="72" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">407</biblScope></bibl><seg type="original" xml:lang="de">-ietur <hi rend="italic">Vt</hi></seg><seg type="translation" xml:lang="en" source="#claude">-ietur Vt</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiII_5-2.lnote.oe.a" n="a" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">239</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Feuerordal 5. Dass die zum Ordal um 1098 <hi rend="italic">condemnatos tertio iudicii die inustis manibus apparuisse</hi>, behauptet Eadmer <hi rend="italic">o</hi>. I 4, 1{a}</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf. Gl</hi> Feuerordal 5. That those put to the ordeal c. 1098 <hi rend="italic">condemnatos tertio iudicii die inustis manibus apparuisse</hi> is asserted by Eadmer <hi rend="italic">above</hi> I 4, 1{a}</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">Let the hand be sealed, kept under seal, and opened after three nights.</ab>
       </div>
     </body>
   </text>

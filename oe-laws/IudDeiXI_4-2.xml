@@ -5,6 +5,7 @@
       <titleStmt>
         <title>Iud Dei XI 4.2</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -19,6 +20,7 @@
         <bibl type="legalText"><title>Iudicium Dei XI: iron ordeal ritual</title></bibl>
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">419</biblScope></bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr> <note type="manuscript">Latin text as edited by Liebermann from several manuscripts (see his notes) (Ll, Tb, Vt2, Tr, Mg)</note></witness>
@@ -45,6 +47,7 @@
         <head><ref type="lawCode" target="law:IudDeiXI">Iud Dei XI</ref> 4.2</head>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Iud Dei XI 4.2" corresp="#wit-lat"><pb n="419" ed="#liebermann"/>Unde rogamus té, Domine, iudicem uniuersorum, ut mittere digneris sanctam et ueram benedictionem tuam super hoc ferrum,</ab>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 419 (two independent readings of the page images, differences settled against the page)</note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">Wherefore we ask you, O Lord, judge of all, that you deign to send your holy and true blessing upon this iron,</ab>
       </div>
     </body>
   </text>

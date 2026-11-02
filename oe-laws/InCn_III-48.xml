@@ -6,6 +6,7 @@
         <title>In Cn III 48</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">613–614</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Instituta Cnuti, relatively literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. Liebermann’s kinds of type (bold, spaced, smaller type, round brackets) are carried over onto the English words that render the marked Latin. It is an aid to reading the Latin, not a published translation</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -59,6 +61,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="InCn_III-48.lnote.oe.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">614</biblScope></bibl><seg type="original" xml:lang="de">flæman <hi rend="italic">T;</hi> flemen <hi rend="italic">Rl Cb</hi></seg><seg type="translation" xml:lang="en" source="#claude">flæman T; flemen Rl Cb</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="InCn_III-48.lnote.oe.3" n="3" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">614</biblScope></bibl><seg type="original" xml:lang="de">ita <hi rend="italic">Cb</hi></seg><seg type="translation" xml:lang="en" source="#claude">ita Cb</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="InCn_III-48.lnote.oe._" n="-" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">333</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Ebd</hi>. Wald 5a; <hi rend="italic">infangenþeof</hi> 3b. 11a; handhaft 7b. 13; Wergeld 29. 30u</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Ibid</hi>. Wald 5a; <hi rend="italic">infangenþeof</hi> 3b. 11a; handhaft 7b. 13; Wergeld 29. 30u</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">also the feeding of robbers hiding in the woods who plunder and kill others <seg type="recension">(men)</seg> — whom the English call <hi rend="italic">fléman</hi> [fugitives] —; every robber proclaimed outside [the law]; the life or the price of a public robber.</ab>
       </div>
     </body>
   </text>

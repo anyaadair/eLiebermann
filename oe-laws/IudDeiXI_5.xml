@@ -6,6 +6,7 @@
         <title>Iud Dei XI 5</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">419</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr> <note type="manuscript">Latin text as edited by Liebermann from several manuscripts (see his notes) (Ll, Tb, Vt2, Tr, Mg)</note></witness>
@@ -50,6 +52,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiXI_5.lnote.oe.31" n="31" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">419</biblScope></bibl><seg type="original" xml:lang="de">Alia <hi rend="italic">fügt zu Tr Vt2;</hi> Sequitur alia <hi rend="italic">fügt zu Mg</hi></seg><seg type="translation" xml:lang="en" source="#claude">Tr Vt2 add Alia; Mg adds Sequitur alia</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiXI_5.lnote.oe.32" n="32" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">419</biblScope></bibl><seg type="original" xml:lang="de">5—5, 2 = <hi rend="italic">Zeu.</hi> 700 (13); <hi rend="italic">oben</hi> IX 2. 2, 1</seg><seg type="translation" xml:lang="en" source="#claude">5—5, 2 = Zeu. 700 (13); above IX 2. 2, 1</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiXI_5.lnote.oe.33" n="33" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">419</biblScope></bibl><seg type="original" xml:lang="de">es omnium rerum <hi rend="italic">Zeu.</hi> 649</seg><seg type="translation" xml:lang="en" source="#claude">es omnium rerum Zeu. 649</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">Prayer. O God, just judge, who are the author of peace and judge equity, we humbly ask you that you deign to bless and sanctify this iron, ordained for making a just examination of any doubt whatsoever,</ab>
       </div>
     </body>
   </text>

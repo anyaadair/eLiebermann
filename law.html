@@ -674,10 +674,15 @@ scripts:
         // Liebermann's German first, then the LLM's English of it (made with Claude), then the other translations.
         trans.filter(a => a.getAttribute('xml:lang') === 'de').forEach(a => { add(right, a, ['German translation', pageOf(a) ? 'Gesetze I, p. ' + pageOf(a) : '']); dropNumber(right.lastChild); });
         trans.filter(a => a.getAttribute('ana') === '#fromGerman').forEach(a => { add(right, a, ['English of Liebermann’s German']); dropNumber(right.lastChild); });
+        // The LLM's English crib of a text with no other translation (tools/add-crib.py): "English crib of the Latin".
+        const textCount = abs.filter(a => /^(liebermannText|editionText)$/.test(a.getAttribute('type'))).length;
+        const CRIB_OF = { '#fromLatin': 'English crib of the Latin', '#fromOldEnglish': 'English crib of the Old English', '#fromFrench': 'English crib of the French' };
         trans.filter(a => !isGerman(a)).forEach(a => {
             const id = (a.getAttribute('source') || '').replace(/^#/, '');
             const src = srcs[id] || {};
-            add(right, a, [msLabel(a, wits, 'of MS '), pageOf(a, src) ? 'p. ' + pageOf(a, src) : '']);
+            // A crib names its manuscript only where the clause has more than one text to choose between.
+            const crib = CRIB_OF[a.getAttribute('ana')];
+            add(right, a, [crib || '', crib && textCount < 2 ? '' : msLabel(a, wits, 'of MS '), pageOf(a, src) ? 'p. ' + pageOf(a, src) : '']);
         });
         if (!trans.length) { right.remove(); grid.classList.add('clause-grid--single'); }
         wrap.appendChild(grid);

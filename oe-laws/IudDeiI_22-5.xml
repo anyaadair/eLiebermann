@@ -6,6 +6,7 @@
         <title>Iud Dei I 22.5</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">405</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr> <note type="manuscript">Latin text as edited by Liebermann from several manuscripts (see his notes); the manuscripts are listed in his note b on p. 401</note></witness>
@@ -52,6 +54,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiI_22-5.lnote.oe.46" n="46" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">405</biblScope></bibl><seg type="original" xml:lang="de">innocuę <hi rend="italic">Ch Ci Ca H Co</hi></seg><seg type="translation" xml:lang="en" source="#claude">innocuę Ch Ci Ca H Co</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiI_22-5.lnote.oe.47" n="47" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">405</biblScope></bibl><seg type="original" xml:lang="de">d. n. <hi rend="italic">fehlt Ci;</hi> uirtutem domini nostri Iesu Christi (<hi rend="italic">Ch Co</hi>), qui uenturus est <hi rend="italic">Ch</hi></seg><seg type="translation" xml:lang="en" source="#claude">d. n. omitted in Ci; uirtutem domini nostri Iesu Christi (Ch Co), qui uenturus est Ch</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiI_22-5.lnote.oe.48" n="48" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">405</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt H;</hi> Iesum Christum filium tuum, qui tecum. Amen <hi rend="italic">fügt zu Rj. Hier schiebt Ca ein:</hi> Iud. Dei VIII; <hi rend="italic">in Co folgt unten</hi> XV</seg><seg type="translation" xml:lang="en" source="#claude">omitted in H; Iesum Christum filium tuum, qui tecum. Amen added by Rj. Here Ca inserts: Iud. Dei VIII; in Co there follows XV below</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">But those innocent of the aforesaid crime may you receive into yourself after the manner of water and draw them down unharmed into the depth. Through our Lord.</ab>
       </div>
     </body>
   </text>

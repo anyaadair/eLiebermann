@@ -6,6 +6,7 @@
         <title>Iud Dei XVI 1</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">427</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-co"><abbr>Co</abbr> <note type="manuscript">MS Co, p. 31 (Liebermann’s siglum; see his note a on p. 427)</note></witness>
@@ -51,6 +53,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiXVI_1.lnote.oe.d" n="d" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">427</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">S. o.</hi> I 1</seg><seg type="translation" xml:lang="en" source="#claude">See above I 1</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiXVI_1.lnote.oe.e" n="e" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">427</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Abgebildet Zeumer Tab.</hi> 3</seg><seg type="translation" xml:lang="en" source="#claude">Illustrated in Zeumer Tab. 3</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiXVI_1.lnote.oe.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">427</biblScope></bibl><seg type="original" xml:lang="de">excepta casula <hi rend="italic">Zeu.</hi> 650. 703, <hi rend="italic">dagegen</hi> et casula 678</seg><seg type="translation" xml:lang="en" source="#claude">excepta casula Zeu. 650. 703, but et casula 678</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-co">After the accusation has been lawfully made, and three days have been completed in fasting and prayer, let the priest, clothed in the sacred vestments except the chasuble, take with tongs the iron placed before the altar</ab>
       </div>
     </body>
   </text>

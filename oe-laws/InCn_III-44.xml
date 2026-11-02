@@ -6,6 +6,7 @@
         <title>In Cn III 44</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">613</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Instituta Cnuti, relatively literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. Liebermann’s kinds of type (bold, spaced, smaller type, round brackets) are carried over onto the English words that render the marked Latin. It is an aid to reading the Latin, not a published translation</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -67,6 +69,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="InCn_III-44.lnote.oe.35" n="35" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">613</biblScope></bibl><seg type="original" xml:lang="de">s. u. <hi rend="italic">aus H Rl</hi></seg><seg type="translation" xml:lang="en" source="#claude">s. u. from H Rl</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="InCn_III-44.lnote.oe.i-2" n="i" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">332</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">S. Gl</hi> Thegn 1i; Adel 1f. g; <hi rend="italic">Wb: liber(alis, -alitas)</hi></seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">See Gl</hi> Thegn 1i; Adel 1f. g; <hi rend="italic">Wb: liber(alis, -alitas)</hi></seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="InCn_III-44.lnote.oe.k-2" n="k" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">332</biblScope></bibl><seg type="original" xml:lang="de">Kein Verfasserwechsel; <hi rend="italic">s. o</hi>. Einl. 4</seg><seg type="translation" xml:lang="en" source="#claude">No change of author; <hi rend="italic">see above</hi> Introduction 4</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat"><hi rend="small">The oath of a noble, <hi rend="spaced">whom</hi><hi rend="spaced"> indeed</hi><hi rend="spaced"> the English</hi><hi rend="spaced"> call</hi> <hi rend="italic">tƿelfhende</hi></hi> <seg type="recension"><hi rend="small">(man)</hi></seg><hi rend="small">, <hi rend="spaced">ought to stand and</hi> be worth the oath of six villeins, because his price, that is <hi rend="italic">ƿeregeld</hi> [wergeld], is [that] of six villeins.</hi></ab>
       </div>
     </body>
   </text>

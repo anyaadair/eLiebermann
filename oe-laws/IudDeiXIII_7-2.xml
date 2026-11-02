@@ -6,6 +6,7 @@
         <title>Iud Dei XIII 7.2</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">423</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr> <note type="manuscript">Latin text as edited by Liebermann from several manuscripts (see his notes) (Vt2, Tr, Mg)</note></witness>
@@ -51,6 +53,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiXIII_7-2.lnote.oe.15" n="15" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">423</biblScope></bibl><seg type="original" xml:lang="de">Itemque <hi rend="italic">Zeu.</hi> 649&lt;sub&gt;4&lt;/sub&gt;</seg><seg type="translation" xml:lang="en" source="#claude">Itemque Zeu. 649&lt;sub&gt;4&lt;/sub&gt;</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiXIII_7-2.lnote.oe.16" n="16" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">423</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Mg</hi></seg><seg type="translation" xml:lang="en" source="#claude">omitted in Mg</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiXIII_7-2.lnote.oe.17" n="17" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">423</biblScope></bibl><seg type="original" xml:lang="de">et r. <hi rend="italic">aus Tr</hi></seg><seg type="translation" xml:lang="en" source="#claude">et r. from Tr</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">And likewise, if he is guilty of the matter already mentioned above, and, the devil fattening it, has a hardened heart, or wishes to conceal his sin by some sorcery, may the most bountiful right hand of your Son, our Lord Jesus Christ, deign to make it manifest in his body. Who lives (and reigns) with you.</ab>
       </div>
     </body>
   </text>

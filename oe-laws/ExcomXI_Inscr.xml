@@ -6,6 +6,7 @@
         <title>Excom XI Inscr.</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">441</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-vu"><abbr>Vu</abbr> <note type="manuscript">London, British Library, Cotton MS Vitellius E XVII, f. 252v, 14th century</note></witness>
@@ -49,6 +51,7 @@
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 441 (two independent readings of the page images, differences settled against the page); Liebermann’s heading: [XI. aus Vu]; F: corrected against Liebermann, Gesetze I (date at the head of the text); Wormald, Making of English Law I; Whitelock, English Historical Documents I, October 2026 (was “c. 1000–c. 1300 (Liebermann)”, now “c. 1000–c. 1300 (Liebermann, I p. 441)”)</note>
         <note type="liebermannNote" subtype="textual" xml:id="ExcomXI_Inscr.lnote.oe.a" n="a" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">441</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Steht</hi> Excom. X <hi rend="italic">zunächst.</hi></seg><seg type="translation" xml:lang="en" source="#claude">Is closest to Excom. X.</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ExcomXI_Inscr.lnote.oe.b" n="b" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">441</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Hs. Cotton Vitellius E</hi> 17 <hi rend="italic">f.</hi> 252<hi rend="italic">b, Schmutzblatt</hi> 14. <hi rend="italic">Jhs., jetzt halb verbrannt, bei Collier</hi> Eccles. hist. of Great Britain I 352 (<hi rend="italic">ed. Lathbury</hi> 1852, II 257)</seg><seg type="translation" xml:lang="en" source="#claude">MS Cotton Vitellius E 17 f. 252b, a 14th-cent. flyleaf, now half burnt; in Collier Eccles. hist. of Great Britain I 352 (ed. Lathbury 1852, II 257)</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-vu">Form of solemn excommunication.</ab>
       </div>
     </body>
   </text>

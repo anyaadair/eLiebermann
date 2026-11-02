@@ -6,6 +6,7 @@
         <title>Iud Dei IV 4.3</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">410</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin and Old English texts, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-du"><abbr>Du</abbr> <note type="manuscript">Durham, Cathedral Library, MS A. IV. 19 (Durham Ritual), f. 48v</note></witness>
@@ -53,6 +55,8 @@
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiIV_4-3.lnote.oe.35" n="35" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">410</biblScope></bibl><seg type="original" xml:lang="de">y <hi rend="italic">für</hi> u <hi rend="italic">auch Note</hi> 1</seg><seg type="translation" xml:lang="en" source="#claude">y for u, also note 1</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiIV_4-3.lnote.oe.36" n="36" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">410</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vgl. Note</hi> 7; <hi rend="italic">Lind. S.</hi> 117; vætre: <hi rend="italic">o. S.</hi> 409{31}</seg><seg type="translation" xml:lang="en" source="#claude">cf. note 7; Lind. p. 117; vætre: above p. 409³¹</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiIV_4-3.lnote.oe.37" n="37" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">410</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">d. i.</hi> mittit</seg><seg type="translation" xml:lang="en" source="#claude">i.e. mittit</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-du">so also let him who is innocent of this theft and puts his hand into this water draw it out safe and unharmed:</ab>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromOldEnglish" corresp="#wit-gl">so also he who, guiltless of this theft, sends [his] hand into this water, may draw it out whole and unharmed:</ab>
       </div>
     </body>
   </text>

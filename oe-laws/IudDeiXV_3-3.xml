@@ -5,6 +5,7 @@
       <titleStmt>
         <title>Iud Dei XV 3.3</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -19,6 +20,7 @@
         <bibl type="legalText"><title>Iudicium Dei XV: cold-water ordeal ritual</title></bibl>
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">427</biblScope></bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-co"><abbr>Co</abbr> <note type="manuscript">MS Co, p. 36 (Liebermann’s siglum; see his note a on p. 427)</note></witness>
@@ -47,6 +49,7 @@
         <note type="comparison" source="#liebermann"/>
         <note type="comparisonPrinted" source="#liebermann">Ioan. 15, 26</note>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 427 (two independent readings of the page images, differences settled against the page)</note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-co">Gospel: <hi rend="italic">Cum uenerit Paraclitus</hi> (‘When the Paraclete comes’, John 15:26). L[ook for it] at the Sunday after the Ascension of the Lord.</ab>
       </div>
     </body>
   </text>

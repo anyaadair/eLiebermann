@@ -5,6 +5,7 @@
       <titleStmt>
         <title>Iud Dei XVI 31</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -19,6 +20,7 @@
         <bibl type="legalText"><title>Iudicium Dei XVI: iron ordeal ritual</title></bibl>
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">429</biblScope></bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-co"><abbr>Co</abbr> <note type="manuscript">MS Co, p. 31 (Liebermann’s siglum; see his note a on p. 427)</note></witness>
@@ -47,6 +49,7 @@
         <note type="comparison" source="#liebermann"/>
         <note type="comparisonPrinted" source="#liebermann">57, 2.; * 71, 1; ** 93, 1; *** 102, 22</note>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 429 (two independent readings of the page images, differences settled against the page)</note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-co">After the litany let him say these psalms: <hi rend="italic">Si uere</hi> (‘If in very deed you speak justice’, Ps. 57). <hi rend="italic">Deus, iudicium</hi> (‘Give to the king your judgment, O God’, Ps. 71). <hi rend="italic">Deus ulcionum</hi> (‘The Lord is the God of vengeance’, Ps. 93). <hi rend="italic">Benedicite omnia</hi> (‘All you works of the Lord, bless the Lord’, Dan. 3:57).</ab>
       </div>
     </body>
   </text>

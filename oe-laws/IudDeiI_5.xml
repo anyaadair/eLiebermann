@@ -6,6 +6,7 @@
         <title>Iud Dei I 5</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">402</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr> <note type="manuscript">Latin text as edited by Liebermann from several manuscripts (see his notes); the manuscripts are listed in his note b on p. 401</note></witness>
@@ -63,6 +65,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiI_5.lnote.oe.40" n="40" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">402</biblScope></bibl><seg type="original" xml:lang="de">d. n. <hi rend="italic">fehlt Ci</hi></seg><seg type="translation" xml:lang="en" source="#claude">d. n. omitted in Ci</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiI_5.lnote.oe.41" n="41" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">402</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Ch Ca H Tr;</hi> Iesum Christum filium tuum <hi rend="italic">fügt zu Pt</hi></seg><seg type="translation" xml:lang="en" source="#claude">omitted in Ch Ca H Tr; Iesum Christum filium tuum added by Pt</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiI_5.lnote.oe._" n="-" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">239</biblScope></bibl><seg type="original" xml:lang="de">Zum weiblichen Geschlechte der Prüflinge <hi rend="italic">vgl. Gl</hi> Ordal 20</seg><seg type="translation" xml:lang="en" source="#claude">On persons of the female sex undergoing the ordeal cf. <hi rend="italic">Gl</hi> Ordal 20</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">Prayer. Absolve, we beseech you, O Lord, the offences of your servants, that by your kindness they may be freed from the bonds of their sins, which they have contracted through their frailty, and that in this judgment, as they have deserved, with your justice going before, they may deserve to come to the verdict of truth. Through our Lord.</ab>
       </div>
     </body>
   </text>

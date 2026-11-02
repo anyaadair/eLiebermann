@@ -6,6 +6,7 @@
         <title>Iud Dei I 21.3</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">404</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr> <note type="manuscript">Latin text as edited by Liebermann from several manuscripts (see his notes); the manuscripts are listed in his note b on p. 401</note></witness>
@@ -57,6 +59,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiI_21-3.lnote.oe.70" n="70" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">404</biblScope></bibl><seg type="original" xml:lang="de">per illud <hi rend="italic">fügt zu Tr Vt2 Zeu.</hi> 664; Israheliticus per illud s. uestigiis tr. <hi rend="italic">Zeu.</hi> 694; <hi rend="italic">doch stimmt jede unserer Varianten zu einer oder der anderen festländischen Hs.;</hi> uestigiis <hi rend="italic">ohne</hi> st. <hi rend="italic">auch</hi> XIII</seg><seg type="translation" xml:lang="en" source="#claude">per illud added by Tr Vt2 Zeu. 664; Israheliticus per illud s. uestigiis tr. Zeu. 694; yet each of our variants agrees with one or other of the Continental MSS; uestigiis without st. also XIII</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiI_21-3.lnote.oe.71" n="71" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">404</biblScope></bibl><seg type="original" xml:lang="de">Helias XIII <hi rend="italic">Zeu.</hi> 665</seg><seg type="translation" xml:lang="en" source="#claude">Helias XIII Zeu. 665</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiI_21-3.lnote.oe.72" n="72" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">404</biblScope></bibl><seg type="original" xml:lang="de">fecit <hi rend="italic">Vt2 Mg</hi></seg><seg type="translation" xml:lang="en" source="#claude">fecit Vt2 Mg</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">I adjure you by the holy name also [?] of the undivided Godhead, by whose will the element of waters was divided, and the people of Israel at once passed over with dry feet, at whose invocation also Elisha had made the iron, which had come off the handle, float upon the water,</ab>
       </div>
     </body>
   </text>

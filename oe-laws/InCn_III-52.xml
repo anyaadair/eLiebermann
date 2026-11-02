@@ -6,6 +6,7 @@
         <title>In Cn III 52</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">614</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Instituta Cnuti, relatively literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. Liebermann’s kinds of type (bold, spaced, smaller type, round brackets) are carried over onto the English words that render the marked Latin. It is an aid to reading the Latin, not a published translation</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -57,6 +59,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="InCn_III-52.lnote.oe.o" n="o" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">614</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">altfranz.</hi> aise, <hi rend="italic">mittelengl.</hi> eise: ‘<hi rend="italic">behagliche Ruhe</hi>’</seg><seg type="translation" xml:lang="en" source="#claude">Old French aise, Middle English eise: ‘comfortable rest’</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="InCn_III-52.lnote.oe.9" n="9" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">614</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">so H Rl statt Cb T's</hi> aisiam, <hi rend="italic">das fehlt;</hi> co. <hi rend="italic">fehlt Cb T</hi> [<hi rend="italic">offenbar nachträgliche Latinisirung</hi>]</seg><seg type="translation" xml:lang="en" source="#claude">thus H Rl instead of Cb T’s aisiam, which is missing; co. missing in Cb T [evidently a later Latinization]</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="InCn_III-52.lnote.oe.n-2" n="n" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">333</biblScope></bibl><seg type="original" xml:lang="de">Diese Anm. bessere man nach <hi rend="italic">Gl</hi> Königsdomäne 8; Servitut. Gottfried von Anjou Herzog der Normandie schenkt Montebourg <hi rend="italic">terram que est in suo aisimento inter suam terram et forestam</hi>; ed. <hi rend="italic">EHR</hi> 1912, 430. Wilhelm II. befiehlt Sheriff und Baronen Kents: <hi rend="italic">clausuras faciatis contra abbatem de Bello ad manerium de Wi</hi>; Davis <hi rend="italic">Reg. Agnorm</hi>. n. 458</seg><seg type="translation" xml:lang="en" source="#claude">This note should be corrected in accordance with <hi rend="italic">Gl</hi> Königsdomäne 8; Servitut. Geoffrey of Anjou, Duke of Normandy, grants Montebourg <hi rend="italic">terram que est in suo aisimento inter suam terram et forestam</hi>; ed. <hi rend="italic">EHR</hi> 1912, 430. William II orders the sheriff and barons of Kent: <hi rend="italic">clausuras faciatis contra abbatem de Bello ad manerium de Wi</hi>; Davis <hi rend="italic">Reg. Agnorm</hi>. n. 458</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">Whoever has a boundary next to the king's land, let him fence against the king or keep watch, or acquire it by goodwill or by price, if he wishes to have any <seg type="recension">(advantage)</seg> easement in that land.</ab>
       </div>
     </body>
   </text>

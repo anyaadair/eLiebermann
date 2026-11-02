@@ -5,6 +5,7 @@
       <titleStmt>
         <title>Excom IV 10</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -19,6 +20,7 @@
         <bibl type="legalText"><title>Excommunicatio IV: formula of excommunication</title></bibl>
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">435</biblScope></bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-ci"><abbr>Ci</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 146, p. 329, end of the 11th century</note></witness>
@@ -47,6 +49,7 @@
         <note type="comparison" source="#liebermann"/>
         <note type="comparisonPrinted" source="#liebermann">Psalm 58, 12</note>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 435 (two independent readings of the page images, differences settled against the page)</note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-ci">Verse. Scatter them by your power, for there is not …</ab>
       </div>
     </body>
   </text>
