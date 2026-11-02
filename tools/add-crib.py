@@ -43,7 +43,7 @@ def bibl(langs, incn):
         what = ('An English crib of the ' + of + (' texts' if len(names) > 1 else ' text') + ', semi-literal, made for this database in 2026 with Claude, '
                 'a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and '
                 'uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid '
-                'to reading the original, not a published translation; “[?]” marks a doubtful reading')
+                'to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading')
     return '<bibl xml:id="claude-crib" type="translation">' + what + '</bibl>'
 
 

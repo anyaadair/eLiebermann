@@ -6,6 +6,7 @@
         <title>Wl art Frz 6</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">489</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Anglo-Norman French text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-cu"><abbr>Cu</abbr> <note type="manuscript">Cambridge, University Library, MS Ee.1.1 (from Luffield), f. 3, c. 1300</note></witness>
@@ -48,6 +50,7 @@
         <ab type="liebermannText" xml:lang="xno" source="#liebermann" corresp="#wit-cu"><pb n="489" ed="#liebermann"/>Ensement fu establi, ke, si F<hi rend="italic">r</hi>anceis apelast aucun Engleis de fei menti u de murdre u de larcin u de hume ocis, de k'il apelent ap<hi rend="italic">er</hi>te roberie u ravine, u<ptr type="liebermannNote" n="c" target="#Wl-art-Frz_6.lnote.oe.c"/> ke li hume ne pot nent nier, li Engleis sei defendrat par que ke il meuz vodrat, u par chaut fer u par bataille.</ab>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 489 (two independent readings of the page images, differences settled against the page)</note>
         <note type="liebermannNote" subtype="textual" xml:id="Wl-art-Frz_6.lnote.oe.c" n="c" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">489</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">zu streichen</hi></seg><seg type="translation" xml:lang="en" source="#claude">to be deleted</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromFrench" corresp="#wit-cu">Likewise it was established that, if a Frenchman accused any Englishman of perjury (literally 'lied faith') or of murder or of theft or of homicide, of what they call open robbery or rapine, or what the man could not deny, the Englishman shall defend himself by whichever he prefers, either by hot iron or by battle.</ab>
       </div>
     </body>
   </text>

@@ -7,6 +7,7 @@
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -24,6 +25,7 @@
           <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
           <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-k"><abbr>K</abbr> <note type="manuscript">London, British Library, Cotton Claudius A.iii</note></witness>
@@ -59,6 +61,7 @@
         <note type="liebermannNote" subtype="erklaerung" xml:id="VI-Atr-Latin-Paraphrase_6.lnote.de.0" n="0" source="#liebermann-erkl" rend="wholeClause"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">175</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Bis 10, 3 Zusatz; <hi rend="italic">s</hi> Einl. 2 C. 4.</seg><seg type="translation" xml:lang="en" source="#claude">Up to 10, 3 an addition; <hi rend="italic">see</hi> Introduction 2 C. 4.</seg></note>
         <note type="liebermannNote" subtype="erklaerung" xml:id="VI-Atr-Latin-Paraphrase_6.lnote.de.1" n="1" source="#liebermann-erkl" rend="wholeClause"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">175</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Hier ‘lieber Landsmann’; <hi rend="italic">s. Gl freond</hi> 5</seg><seg type="translation" xml:lang="en" source="#claude">Here ‘dear fellow-countryman’; <hi rend="italic">see Gl freond</hi> 5</seg></note>
         <note type="liebermannNote" subtype="erklaerung" xml:id="VI-Atr-Latin-Paraphrase_6.lnote.de.2" n="2" source="#liebermann-erkl" rend="wholeClause"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">175</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">S. o</hi>. 1. Auch aus EGu Pro 1?</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">See above</hi> 1. Also from EGu Pro 1?</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-k">K. After this, then, the aforesaid archbishops, the multitude of the assembled people having been called together, by the edict of the above-named king and with the consent of all catholics, preached to all in common that one God ought to be worshipped — namely the Father and the Son and the Holy Spirit: the Father indeed unbegotten, but the Son begotten of the Father before time, born in time of a mother, and the Holy Spirit proceeding from both; a Trinity indeed in persons, a unity in substance, coequal in Godhead, coeternal in honour and glory. ‘One God’, they say, ‘and one hope and one faith and one baptism we ought to worship, and despise all heathen superstitions.’</ab>
       </div>
     </body>
   </text>

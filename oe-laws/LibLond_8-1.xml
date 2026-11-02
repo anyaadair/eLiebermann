@@ -6,6 +6,7 @@
         <title>Lib Lond 8.1</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -21,6 +22,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">674–675</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -54,6 +56,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="LibLond_8-1.lnote.oe.53" n="53" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">674</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">so Ai;</hi> -ctos <hi rend="italic">Co;</hi> fuscotinctus <hi rend="italic">Pl;</hi> fulcotinctos <hi rend="italic">S;</hi> fuscotinctum <hi rend="italic">Cons;</hi> fustotinctos <hi rend="italic">Alb;</hi> fustaneum <hi rend="italic">Douai;</hi> fusteyns <hi rend="italic">Ord</hi></seg><seg type="translation" xml:lang="en" source="#claude">so Ai; -ctos Co; fuscotinctus Pl; fulcotinctos S; fuscotinctum Cons; fustotinctos Alb; fustaneum Douai; fusteyns Ord</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="LibLond_8-1.lnote.oe.a" n="a" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">675</biblScope></bibl><seg type="original" xml:lang="de">pecia fustiani consistit ex 13 ulnis; <hi rend="italic">Fleta</hi> II 12, 8. <hi rend="italic">Vgl. Bateson</hi> 499: generally 28 yards</seg><seg type="translation" xml:lang="en" source="#claude">pecia fustiani consistit ex 13 ulnis; Fleta II 12, 8. Cf. Bateson 499: generally 28 yards</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="LibLond_8-1.lnote.oe._" n="-" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">351</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Ebd</hi>. Einzelverkauf; Barchent [<hi rend="italic">fustagni</hi> auch Schulte <hi rend="italic">Gesch. malt. Handels</hi> I 140]; Fell 3</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Ibid</hi>. Einzelverkauf; Barchent [<hi rend="italic">fustagni</hi> also Schulte <hi rend="italic">Gesch. malt. Handels</hi> I 140]; Fell 3</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">But let him see to it that he does not sell his wares by the cut: so that if he brings dark-dyed [cloths] [?], let him sell not less than a dozen at once.</ab>
       </div>
     </body>
   </text>

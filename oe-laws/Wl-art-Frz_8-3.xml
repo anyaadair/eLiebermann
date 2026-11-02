@@ -5,6 +5,7 @@
       <titleStmt>
         <title>Wl art Frz 8.3</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -19,6 +20,7 @@
         <bibl type="legalText"><title>The Ten Articles of William I: French translation</title> <note type="reign">Attributed to William I, r. 1066–1087</note></bibl>
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">489</biblScope></bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Anglo-Norman French text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-cu"><abbr>Cu</abbr> <note type="manuscript">Cambridge, University Library, MS Ee.1.1 (from Luffield), f. 3, c. 1300</note></witness>
@@ -45,6 +47,7 @@
         <head>Wl art Frz 8.3</head>
         <ab type="liebermannText" xml:lang="xno" source="#liebermann" corresp="#wit-cu"><pb n="489" ed="#liebermann"/>e si il a la quarte feis ne venent, seit rendu de lur chatel ce ke fut chalengé, ke li Engleis apelent chapgield; e ensurketut la forfeture.</ab>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 489 (two independent readings of the page images, differences settled against the page)</note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromFrench" corresp="#wit-cu">and if they do not come the fourth time, let what was claimed be paid from their chattels, which the English call <hi rend="italic">chapgield</hi> (payment of the value); and over and above that the forfeiture.</ab>
       </div>
     </body>
   </text>

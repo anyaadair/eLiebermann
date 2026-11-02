@@ -7,6 +7,7 @@
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -23,6 +24,7 @@
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">247</biblScope></bibl>
           <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-k"><abbr>K</abbr> <note type="manuscript">London, British Library, Cotton Claudius A.iii</note></witness>
@@ -58,6 +60,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="VI-Atr-Latin-Paraphrase_1-3.lnote.oe.a" n="a" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">175</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">S. Gl</hi> Heidentum 7; <hi rend="italic">o</hi>. Einl. 7. 19</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">See Gl</hi> Heidentum 7; <hi rend="italic">above</hi> Introduction 7. 19</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="VI-Atr-Latin-Paraphrase_1-3.lnote.oe.b" n="b" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">175</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de">Diese Wörter <hi rend="italic">a tramite religionis per anfractus</hi> kehren in 2 wieder</seg><seg type="translation" xml:lang="en" source="#claude">These words <hi rend="italic">a tramite religionis per anfractus</hi> recur in 2</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="VI-Atr-Latin-Paraphrase_1-3.lnote.oe.c" n="c" source="#liebermann"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">175</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de">Eine Stelle Neuen Testaments wird mit einer des Alten vermengt; die letzterer Stelle folgenden Zeilen benutzt Paraphrast <hi rend="italic">u</hi>. 3</seg><seg type="translation" xml:lang="en" source="#claude">A passage of the New Testament is conflated with one of the Old; the lines following the latter passage are used by the paraphraser <hi rend="italic">below</hi> 3</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-k">There, therefore, the bishops were constrained by earnest admonitions to be very watchful for the salvation of the people entrusted to them — who, while the incursions or irruptions of the heathen and the other hardships of manifold calamities oppressed them, were straying from the right path of religion in wandering windings — and to minister to them carefully and urgently the pastures or nourishment of life, by which they might be restored to the worship of the catholic faith. For they were admonished to be mindful of the prophet saying: ‘Feed the flock of God which is among you’.</ab>
       </div>
     </body>
   </text>

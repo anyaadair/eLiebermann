@@ -7,6 +7,7 @@
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Claude, 2026)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -24,6 +25,7 @@
           <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
           <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-k"><abbr>K</abbr> <note type="manuscript">London, British Library, Cotton Claudius A.iii</note></witness>
@@ -59,6 +61,7 @@
         <note type="liebermannNote" subtype="erklaerung" xml:id="VI-Atr-Latin-Paraphrase_32.lnote.de.0" n="0" source="#liebermann-erkl" rend="wholeClause"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">176</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">benutzt durch II Cn 8—10; und 31—32, 2 durch <hi rend="italic">Hom. n</hi>. Wulfstan 271f.</seg><seg type="translation" xml:lang="en" source="#claude">used by II Cn 8—10; and 31—32, 2 by <hi rend="italic">Hom. n</hi>. Wulfstan 271f.</seg></note>
         <note type="liebermannNote" subtype="erklaerung" xml:id="VI-Atr-Latin-Paraphrase_32.lnote.de.1" n="1" source="#liebermann-erkl" rend="wholeClause"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">176</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Bessere Druckfehler: ‘-reform’.—Herstellung öffentlicher Sicherheit, nicht bloss ‘peace of private householders’ (Pollock <hi rend="italic">Oxford lect</hi>. 72) ist gemeint, laut der Lat. Übersetzer zu II Cn 8; <hi rend="italic">vgl. Gl</hi> Frieden 1b</seg><seg type="translation" xml:lang="en" source="#claude">Correct the misprint: ‘-reform’. — What is meant is the restoration of public security, not merely the ‘peace of private householders’ (Pollock <hi rend="italic">Oxford lect</hi>. 72), according to the Latin translators of II Cn 8; <hi rend="italic">cf. Gl</hi> Frieden 1b</seg></note>
         <note type="liebermannNote" subtype="erklaerung" xml:id="VI-Atr-Latin-Paraphrase_32.lnote.de.2" n="2" source="#liebermann-erkl" rend="wholeClause"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">176</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">pauperibus</hi> versteht ein Übersetzer von Cnut, unrichtig die späte Pluralendung und Bedeutungsentwicklung hineintragend. Zu <hi rend="italic">bonda s. o</hi>. Einl. 20a. E.</seg><seg type="translation" xml:lang="en" source="#claude">One translator of Cnut understands it as <hi rend="italic">pauperibus</hi>, wrongly reading into it the late plural ending and development of meaning. On <hi rend="italic">bonda</hi> <hi rend="italic">see above</hi> Introduction 20, at the end.</seg></note>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-k">K. But let thefts and all robberies cease utterly, or those perpetrating them shall be punished with manifold penalties.</ab>
       </div>
     </body>
   </text>
