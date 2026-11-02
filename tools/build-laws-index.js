@@ -218,7 +218,7 @@ let codeSources = {};
         return linkable.map(p => [p, siglumHref(p) || null]);
     };
     // Names for works a clause file lists without naming (as law.html SOURCE_NAMES)
-    const SOURCE_NAMES = { liebermann: 'Liebermann', 'liebermann-erkl': 'Liebermann', 'wormald-mel': 'Wormald', 'wormald-ppmel': 'Wormald', 'rabin-doml': 'Rabin', 'whitelock-cs': 'Whitelock' };
+    const SOURCE_NAMES = { liebermann: 'Liebermann', 'liebermann-erkl': 'Liebermann', 'wormald-mel': 'Wormald', 'wormald-ppmel': 'Wormald', 'rabin-doml': 'Rabin', 'whitelock-cs': 'Whitelock', 'jurasinski-and-oliver': 'Jurasinski and Oliver' };
     const pageNo = s => /^\d+$/.test(s) ? parseInt(s, 10) : null;
     const byCode = {};
     catalogue.forEach(c => {
