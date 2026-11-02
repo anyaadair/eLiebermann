@@ -29,6 +29,7 @@
           <bibl xml:id="whitelock" type="translation">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007), p. <biblScope unit="page">487</biblScope></bibl>
           <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
           <bibl xml:id="claude" type="translation">English renderings of Liebermann’s German notes, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-fl" rend="bold"><abbr>Fl</abbr> <note type="manuscript">Florence (John) of Worcester, Chronicon, ed. MGH SS XIII 126: Liebermann’s text</note></witness>
@@ -58,13 +59,14 @@
     <revisionDesc>
       <change when="2026-10-19">Generated from row 1602 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-11-02">Liebermann’s Latin text, footnotes and marginal references added from Gesetze I pp. 276–277; Robertson’s text marked as Latin.</change>
+      <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="17">
         <head><ref type="lawCode" target="law:Cn1027">Cn 1027</ref> 17</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" corresp="#wit-fl"><pb n="277" ed="#liebermann"/>Hec et his<ptr type="liebermannNote" n="41" target="#Cn1027_17.lnote.oe.41"/> similia si, dum uenero, non erunt<ptr type="liebermannNote" n="42" target="#Cn1027_17.lnote.oe.42"/> persoluta, regia exactio<ptr type="liebermannNote" n="43" target="#Cn1027_17.lnote.oe.43"/> secundum leges, in quem culpa cadit, districte absque uenia comparabit. Ualete.<ptr type="liebermannNote" n="5" target="#Cn1027_17.lnote.oe.5"/></ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" corresp="#wit-fl"><pb n="277" ed="#liebermann"/>Hec et his<ptr type="liebermannNote" n="41" target="#Cn1027_17.lnote.oe.41"/> similia si, dum uenero, non erunt<ptr type="liebermannNote" n="42" target="#Cn1027_17.lnote.oe.42"/> persoluta, regia exactio<ptr type="liebermannNote" n="43" target="#Cn1027_17.lnote.oe.43"/> secundum<ptr type="liebermannNote" n="a" target="#Cn1027_17.lnote.oe.erkl-a"/> leges, in quem culpa cadit, districte absque<ptr type="liebermannNote" n="b" target="#Cn1027_17.lnote.oe.erkl-b"/> uenia comparabit. Ualete.<ptr type="liebermannNote" n="5" target="#Cn1027_17.lnote.oe.5"/></ab>
         <ab type="editionText" xml:lang="la" source="#robertson" n="17" corresp="#wit-fl-ox"><pb n="152" ed="#robertson"/>Haec et his similia si, dum venero, non erunt persoluta, regia exactio secundum leges in quem culpa cadit, districte absque venia comparabit. Valete.</ab>
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-fl-ox"><pb n="153" ed="#robertson"/>If, when I come, these and other similar dues have not been paid, they shall be exacted by the royal officials in accordance with the laws, sternly and without remission, from him who is found to be in fault. [Farewell.]</ab>
         <ab type="translation" xml:lang="en" source="#whitelock"><pb n="487" ed="#whitelock"/>If these dues, and others like them, have not been paid in full when I come, the royal collectors are to obtain them according to the laws, sternly and without remission, from him who is in fault. Farewell.</ab>
@@ -76,6 +78,8 @@
         <note type="liebermannNote" subtype="textual" xml:id="Cn1027_17.lnote.oe.42" n="42" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">277</biblScope></bibl><seg type="original" xml:lang="de">fuerint <hi rend="italic">eine Fl.-Hs.</hi></seg><seg type="translation" xml:lang="en" source="#claude">fuerint <hi rend="italic">one MS of Fl</hi></seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Cn1027_17.lnote.oe.43" n="43" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">277</biblScope></bibl><seg type="original" xml:lang="de">-ione <hi rend="italic">Ox Ma</hi></seg><seg type="translation" xml:lang="en" source="#claude">-ione <hi rend="italic">Ox Ma</hi></seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Cn1027_17.lnote.oe.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">277</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Ma</hi></seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">lacking in Ma</hi></seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Cn1027_17.lnote.oe.erkl-a" n="a" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">192</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">S. o.</hi> 16<hi rend="superscript">b</hi></seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">See above</hi> 16<hi rend="superscript">b</hi></seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Cn1027_17.lnote.oe.erkl-b" n="b" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">192</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">nan forgifnes</hi> IV Eg 1, 5</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">nan forgifnes</hi> IV Eg 1, 5</seg></note>
       </div>
     </body>
   </text>
