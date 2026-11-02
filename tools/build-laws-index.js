@@ -53,6 +53,14 @@ const firstAb = (xml, types) => {
     }
     return null;
 };
+// An interlinear gloss (<seg type="glossed"> in Iud Dei IV, V): for the index, the Latin alone, and the gloss as an
+// Old English text of its own (so that its words are found by a search)
+const unGloss = xml => {
+    if (!xml.includes('type="glossed"')) return xml;
+    const gloss = [];
+    const out = xml.replace(/<seg type="glossed"><seg type="base">([\s\S]*?)<\/seg><gloss xml:lang="ang">([\s\S]*?)<\/gloss><\/seg>/g, (m, base, gl) => { gloss.push(gl); return base; });
+    return out.replace(/(<ab type="liebermannText" xml:lang="la"[^>]*>[\s\S]*?<\/ab>)/, '$1<ab type="supplementaryText" xml:lang="ang">' + gloss.join(' ') + '</ab>');
+};
 const attr = (attrs, name) => { const m = attrs.match(new RegExp(name + '="([^"]*)"')); return m ? m[1] : ''; };
 const summary = xml => {
     const wits = sigla(xml), eds = editors(xml);
@@ -102,7 +110,7 @@ const codesFile = path.join(dir, 'codes.json');
 const codeNames = {};
 if (fs.existsSync(codesFile)) JSON.parse(fs.readFileSync(codesFile, 'utf8')).forEach(c => { codeNames[c.code] = c.name; });
 const clauses = catalogue.map(c => {
-    const xml = fs.readFileSync(path.join(dir, c.file), 'utf8');
+    const xml = unGloss(fs.readFileSync(path.join(dir, c.file), 'utf8'));
     const sum = summary(xml);
     return {
         id: c.id,
@@ -156,7 +164,7 @@ console.log(`data/laws.json: ${clauses.length} clauses`);
 const NOTE_TYPES = /^(?:liebermannNote|editorNote|translator|textual)$/;
 const textIndex = {};
 catalogue.forEach(c => {
-    const xml = fs.readFileSync(path.join(dir, c.file), 'utf8');
+    const xml = unGloss(fs.readFileSync(path.join(dir, c.file), 'utf8'));
     const wits = sigla(xml), eds = editors(xml);
     const t = [], e = [], g = [], n = [];
     for (const m of xml.matchAll(/<ab type="(liebermannText|editionText|selectedText|supplementaryText|translation|secondTranslation|supplementaryTranslation)"([^>]*)>([\s\S]*?)<\/ab>/g)) {
@@ -214,7 +222,7 @@ let codeSources = {};
     const pageNo = s => /^\d+$/.test(s) ? parseInt(s, 10) : null;
     const byCode = {};
     catalogue.forEach(c => {
-        const xml = fs.readFileSync(path.join(dir, c.file), 'utf8');
+        const xml = unGloss(fs.readFileSync(path.join(dir, c.file), 'utf8'));
         const k = byCode[c.code] = byCode[c.code] || { sources: new Map(), mss: new Map(), dates: {} };
         const names = editors(xml);
         for (const m of xml.matchAll(/<bibl xml:id="([^"]+)"([^>]*)>([\s\S]*?)<\/bibl>/g)) {

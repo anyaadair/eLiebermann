@@ -205,6 +205,20 @@ scripts:
                 frag.appendChild(span);
                 return;
             }
+            // An interlinear gloss (Iud Dei IV, V: the Old English gloss of the Durham Ritual): each gloss in smaller
+            // type over the Latin word(s) it glosses, as Liebermann prints it (<seg type="glossed"> -> <ruby>)
+            if (name === 'seg' && n.getAttribute('type') === 'glossed') {
+                const base = [...n.childNodes].find(x => x.nodeType === 1 && x.localName === 'seg' && x.getAttribute('type') === 'base');
+                const gl = [...n.childNodes].find(x => x.nodeType === 1 && x.localName === 'gloss');
+                const r = el('ruby', 'gloss-pair');
+                if (base) r.appendChild(inline(base, opts));
+                const rt = el('rt', 'gloss-word');
+                ELieb.setLang(rt, 'ang');
+                if (gl) rt.appendChild(inline(gl, opts));
+                r.appendChild(rt);
+                frag.appendChild(r);
+                return;
+            }
             if (name === 'pb') return;      // the page the text begins on: shown in its label (pageOf)
             if (name === 'lb') { frag.appendChild(el('br')); if (n.getAttribute('type') === 'paragraph') frag.appendChild(el('br')); return; }
             const rend = name === 'hi' ? (n.getAttribute('rend') || '') : '';
