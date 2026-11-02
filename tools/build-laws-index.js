@@ -129,15 +129,17 @@ const clauses = catalogue.map(c => {
     };
 });   // in the order of oe-laws/index.json, which is the order of the spreadsheets
 
+// The lists leave out the full texts (text) and all the English (en), which only the
+// word search needs, and it reads data/laws-text.json: they kept only the English of a
+// clause with no crib (gloss), shortened, for the line under its citation.
+const listRow = c => {
+    const { text, en, ...row } = c;
+    if (!c.gloss && en) row.en = en.length > 300 ? en.slice(0, 300).replace(/\s+\S*$/, '') + '…' : en;
+    return row;
+};
 fs.writeFileSync(path.join(repo, 'data', 'laws.json'),
-    '[\n' + clauses.map(c => JSON.stringify(c)).join(',\n') + '\n]\n');
+    '[\n' + clauses.map(c => JSON.stringify(listRow(c))).join(',\n') + '\n]\n');
 console.log(`data/laws.json: ${clauses.length} clauses`);
-
-// data/laws-brief.json: every clause's id, law code, citation and the opening of its
-// text, for the neighbouring clauses in the sidebar of a clause page.
-const brief = clauses.map(c => [c.id, c.code, c.citation, c.oe.length > 70 ? c.oe.slice(0, 70).replace(/\s+\S*$/, '') + '…' : c.oe]);
-fs.writeFileSync(path.join(repo, 'data', 'laws-brief.json'), JSON.stringify(brief));
-console.log(`data/laws-brief.json: ${brief.length} clauses`);
 
 // data/laws-text.json: what the Laws page's word search looks in, clause by
 // clause, each text kept apart so the reader can choose where to look. Loaded
@@ -146,7 +148,9 @@ console.log(`data/laws-brief.json: ${brief.length} clauses`);
 //   e: the English translations, [translator id, text] ("claude" is the English of Liebermann's German)
 //   g: Liebermann's German translation
 //   n: the notes (Liebermann's textual notes, Erklärungen and footnotes, in German and
-//      English; the modern editors' and translators' notes)
+//      English; the modern editors' and translators' notes): not in data/laws-text.json
+//      but in data/laws-notes.json ({ id: notes }), loaded only for a search in the notes,
+//      as they are half the text; data/laws-text/<prefix>.json has them together, one law code each.
 const NOTE_TYPES = /^(?:liebermannNote|editorNote|translator|textual)$/;
 const textIndex = {};
 catalogue.forEach(c => {
@@ -173,5 +177,182 @@ catalogue.forEach(c => {
     }
     textIndex[c.id] = { t, e, g: g.join(' '), n: n.join(' ¶ ') };
 });
-fs.writeFileSync(path.join(repo, 'data', 'laws-text.json'), JSON.stringify(textIndex));
-console.log(`data/laws-text.json: ${Object.keys(textIndex).length} clauses`);
+{
+    const main = {}, notes = {};
+    Object.entries(textIndex).forEach(([id, { t, e, g, n }]) => { main[id] = { t, e, g }; if (n) notes[id] = n; });
+    fs.writeFileSync(path.join(repo, 'data', 'laws-text.json'), JSON.stringify(main));
+    fs.writeFileSync(path.join(repo, 'data', 'laws-notes.json'), JSON.stringify(notes));
+}
+console.log(`data/laws-text.json, data/laws-notes.json: ${Object.keys(textIndex).length} clauses`);
+
+let codeSources = {};
+// data/code-sources.json: for each law code page (lawcode.html), the manuscripts, editions,
+// translations and studies its clause files name, as at the foot of a clause page, and which of
+// them each name in the code's header stands for ("Whitelock, EHD p. 390" -> whitelock).
+//   { "Abt": { sources: [{ id, name, type, bibl }], mss: [{ abbr, name, parts: [[text, href]] }],
+//              link: { "Whitelock, EHD p. 390": "whitelock", … } } }
+// bibl is the TEI of the reference (rendered by the page); its page is the first page of the code
+// in that work, or "pp. first–last" across the code's clauses.
+{
+    const readJson = f => { try { return JSON.parse(fs.readFileSync(path.join(repo, 'data', f), 'utf8')); } catch (e) { return []; } };
+    // Manuscript sigla to the lists of manuscripts and law codes, as on the clause pages (law.html siglumLinks)
+    const sigKey = s => s.replace(/[\s.]/g, '');
+    const siglumIndex = {};
+    readJson('markLaw.json').forEach(r => { if (r['Gesetze Text']) siglumIndex[sigKey(r['Gesetze Text'])] = 'lawAbb.html#' + encodeURIComponent(r.Anchor); });
+    readJson('manuscripts.json').forEach(r => { if (r['Gesetze Text']) siglumIndex[sigKey(r['Gesetze Text'])] = 'msAbb.html#' + encodeURIComponent(r.Anchor); });
+    const ALIASES = { 'InstCn': 'In(Cn)' };
+    const siglumHref = sig => { let k = sigKey(sig); k = ALIASES[k] || k; return siglumIndex[k] || siglumIndex[sigKey(sig.replace(/\s*\([^)]*\)\s*$/, ''))] || ''; };
+    const siglumParts = sig => {
+        const parts = sig.split(/,\s*/);
+        const linkable = parts.length > 1 && parts.every(p => siglumHref(p)) ? parts : [sig];
+        return linkable.map(p => [p, siglumHref(p) || null]);
+    };
+    // Names for works a clause file lists without naming (as law.html SOURCE_NAMES)
+    const SOURCE_NAMES = { liebermann: 'Liebermann', 'liebermann-erkl': 'Liebermann', 'wormald-mel': 'Wormald', 'wormald-ppmel': 'Wormald', 'rabin-doml': 'Rabin', 'whitelock-cs': 'Whitelock' };
+    const pageNo = s => /^\d+$/.test(s) ? parseInt(s, 10) : null;
+    const byCode = {};
+    catalogue.forEach(c => {
+        const xml = fs.readFileSync(path.join(dir, c.file), 'utf8');
+        const k = byCode[c.code] = byCode[c.code] || { sources: new Map(), mss: new Map(), dates: {} };
+        const names = editors(xml);
+        for (const m of xml.matchAll(/<bibl xml:id="([^"]+)"([^>]*)>([\s\S]*?)<\/bibl>/g)) {
+            const [, id, attrs, inner] = m;
+            const page = (inner.match(/<biblScope unit="page">([^<]*)<\/biblScope>/) || [])[1] || '';
+            const s = k.sources.get(id);
+            if (!s) k.sources.set(id, { id, name: id === 'claude' ? 'LLM' : names[id] || SOURCE_NAMES[id] || id.charAt(0).toUpperCase() + id.slice(1),
+                type: attr(attrs, 'type'), bibl: inner.trim(), first: page, last: page });
+            else if (page) { if (!s.first) s.first = page; s.last = page; }
+        }
+        for (const m of xml.matchAll(/<witness xml:id="([^"]+)"[^>]*>([\s\S]*?)<\/witness>/g)) {
+            const abbr = decode((m[2].match(/<abbr>([\s\S]*?)<\/abbr>/) || [])[1] || m[2]);
+            const name = decode((m[2].match(/<note[^>]*>([\s\S]*?)<\/note>/) || [])[1] || '');
+            if (!k.mss.has(abbr)) k.mss.set(abbr, { abbr, name, parts: siglumParts(abbr) });
+            else if (!k.mss.get(abbr).name && name) k.mss.get(abbr).name = name;
+        }
+        // "Whitelock, EHD p. 390" in the dates: the clause files say which work (source="#whitelock" n="EHD p. 390")
+        for (const m of xml.matchAll(/<(?:date|placeName) source="([^"]*)"(?: n="([^"]*)")?/g)) {
+            const ids = m[1].split(/\s+/).map(x => x.replace(/^#/, '')).filter(Boolean);
+            const pages = (m[2] || '').split('|');
+            ids.forEach((id, j) => {
+                const s = k.sources.get(id);
+                if (s) k.dates[s.name.split(',')[0] + (pages[j] ? ', ' + pages[j] : '')] = id;
+            });
+        }
+    });
+    // every work any clause file lists, with its reference as first given (no pages)
+    const allSources = [];
+    Object.values(byCode).forEach(k => k.sources.forEach(src => { if (!allSources.some(x => x.id === src.id))
+        allSources.push({ id: src.id, name: src.name, type: src.type, bibl: src.bibl.replace(/,?\s*pp?\. <biblScope unit="page">[^<]*<\/biblScope>/, '') }); }));
+    const codeList = fs.existsSync(codesFile) ? JSON.parse(fs.readFileSync(codesFile, 'utf8')) : [];
+    const out = {}, unlinked = [];
+    codeList.forEach(code => {
+        const k = byCode[code.code];
+        if (!k) return;
+        const sources = [...k.sources.values()].map(s => {
+            let bibl = s.bibl;
+            // the pages the code takes up in the work, where they differ
+            const a = pageNo(s.first), b = pageNo(s.last);
+            if (a !== null && b !== null && a !== b) bibl = bibl.replace(/\bp\. (<biblScope unit="page">)[^<]*(<\/biblScope>)/, `pp. $1${Math.min(a, b)}–${Math.max(a, b)}$2`);
+            return { id: s.id, name: s.name, type: s.type, bibl };
+        });
+        // Each name in the header: the dates, places and titles ("Whitelock, EHD p. 390") and the editions.
+        const labels = new Set(['Liebermann'].concat(code.editors || []));
+        [code.dates, code.places, code.titles].forEach(list => (list || []).forEach(([, ns]) => (ns || []).forEach(n => labels.add(n))));
+        const link = {};
+        const match = (label, pool) => {
+            const surname = label.split(',')[0].trim();
+            let cands = pool.filter(s => s.name.split(',')[0] === surname || s.id === surname.toLowerCase().replace(/\s+/g, '-'));
+            // the work named after the surname, without its pages: "EHD", "MEL", "Political Writings", "I" (a volume)
+            const work = label.slice(surname.length).replace(/^\s*,\s*/, '').replace(/\s*\bpp?\.\s*\S+$/, '').trim();
+            if (work) {
+                const fits = s => {
+                    const text = decode(s.bibl);
+                    if (/^[IVX]+$/.test(work)) return new RegExp('unit="volume">' + ({ I: 1, II: 2, III: 3 }[work] || 0) + '<').test(s.bibl);
+                    if (text.toLowerCase().includes(work.toLowerCase())) return true;
+                    // an abbreviation: the capitals of the title, in order ("MEL": The Making of English Law)
+                    const title = decode((s.bibl.match(/<title>([\s\S]*?)<\/title>/) || [])[1] || '');
+                    const caps = title.replace(/[^A-Z]/g, '');
+                    let i = 0; for (const ch of caps) if (ch === work[i]) i++;
+                    return /^[A-Z]{2,}$/.test(work) && i === work.length;
+                };
+                const fitting = cands.filter(fits);
+                // a work named that none of the sources is: better no link than the wrong book
+                if (fitting.length) cands = fitting; else if (cands.length > 1 || !/^[IVX]+$/.test(work)) cands = cands.filter(s => cands.length === 1 && fits(s));
+            }
+            if (cands.length > 1) cands = cands.filter(s => s.type === 'edition' || s.type === 'translation').concat(cands.filter(s => s.type !== 'edition' && s.type !== 'translation'));
+            return cands[0] || null;
+        };
+        labels.forEach(label => {
+            if (k.dates[label]) { link[label] = k.dates[label]; return; }
+            let src = match(label, sources);
+            // a work the code's clause files don't list, but another code's do (Rabin, Political Writings): borrowed
+            if (!src && (src = match(label, allSources))) sources.push(src);
+            if (src) link[label] = src.id; else unlinked.push(code.code + ': ' + label);
+        });
+        out[code.code] = { sources, mss: [...k.mss.values()], link };
+    });
+    codeSources = out;
+    fs.writeFileSync(path.join(repo, 'data', 'code-sources.json'), JSON.stringify(out));
+    console.log(`data/code-sources.json: ${Object.keys(out).length} law codes` + (unlinked.length ? `; names with no reference in the clause files: ${unlinked.join('; ')}` : ''));
+}
+
+// One law code at a time, so a page loads only the code it shows. Each file is named by the
+// start of its clause ids, before the "_" (Abt_1 -> Abt, ECfRetr_Inscr -> ECfRetr), so that
+// a clause page can find its code's file from the clause id alone; a code whose ids start
+// in more than one way (Af Rb: Rubric-List_, Rubrics-Af_) has the same file under each.
+//   data/laws/<prefix>.json       the law code page (lawcode.html): { rows: its rows of
+//                                 data/laws.json, sources: its data/code-sources.json }
+//   data/clauses/<prefix>.json    a clause page (law.html): { rows: its rows of
+//                                 oe-laws/index.json, brief: { id: the opening of the text,
+//                                 for the neighbouring clauses }, dict: { id: [[entry id,
+//                                 headword, language]] }, the dictionary entries citing each
+//                                 clause, from data/dict-citations.json (tools/build-index.js,
+//                                 which runs first; null if it has not) }
+//   data/laws-text/<prefix>.json  the word search on the law code page: its part of
+//                                 data/laws-text.json, with the notes (n)
+{
+    const prefixOf = id => id.split('_')[0];
+    let dictCites = null;
+    try { dictCites = JSON.parse(fs.readFileSync(path.join(repo, 'data', 'dict-citations.json'), 'utf8')); } catch (e) { /* not built */ }
+    const citing = {};
+    if (dictCites) Object.entries(dictCites).forEach(([entry, [hw, lang, ids]]) => ids.forEach(id => (citing[id] = citing[id] || []).push([entry, hw, lang])));
+    const codes = new Map();
+    catalogue.forEach((c, i) => {
+        const k = codes.get(c.code) || codes.set(c.code, { prefixes: new Set(), cat: [], rows: [] }).get(c.code);
+        const p = prefixOf(c.id);
+        if (!/^[A-Za-z0-9-]+$/.test(p)) throw new Error(`oe-laws/index.json: clause id ${c.id} does not make a file name`);
+        k.prefixes.add(p);
+        k.cat.push(c);
+        k.rows.push(clauses[i]);
+    });
+    const owner = {};
+    codes.forEach((k, code) => k.prefixes.forEach(p => {
+        if (owner[p] && owner[p] !== code) throw new Error(`oe-laws/index.json: clause ids starting ${p}_ are in two law codes, ${owner[p]} and ${code}`);
+        owner[p] = code;
+    }));
+    ['laws', 'clauses', 'laws-text'].forEach(d => {
+        const full = path.join(repo, 'data', d);
+        fs.rmSync(full, { recursive: true, force: true });
+        fs.mkdirSync(full);
+    });
+    const brief = oe => oe.length > 70 ? oe.slice(0, 70).replace(/\s+\S*$/, '') + '…' : oe;
+    codes.forEach((k, code) => {
+        const laws = JSON.stringify({ rows: k.rows.map(listRow), sources: codeSources[code] || null });
+        const nav = JSON.stringify({
+            rows: k.cat.map(c => {
+                const row = { id: c.id, file: c.file, citation: c.citation, code: c.code, clause: c.clause, legalText: c.legalText, page: c.page };
+                if (c.parts) row.parts = c.parts;
+                return row;
+            }),
+            brief: Object.fromEntries(k.rows.map(r => [r.id, brief(r.oe)])),
+            dict: dictCites ? Object.fromEntries(k.cat.filter(c => citing[c.id]).map(c => [c.id, citing[c.id]])) : null
+        });
+        const text = JSON.stringify(Object.fromEntries(k.cat.map(c => [c.id, textIndex[c.id]])));
+        k.prefixes.forEach(p => {
+            fs.writeFileSync(path.join(repo, 'data', 'laws', p + '.json'), laws);
+            fs.writeFileSync(path.join(repo, 'data', 'clauses', p + '.json'), nav);
+            fs.writeFileSync(path.join(repo, 'data', 'laws-text', p + '.json'), text);
+        });
+    });
+    console.log(`data/laws/, data/clauses/, data/laws-text/: ${codes.size} law codes, ${Object.keys(owner).length} files each` + (dictCites ? '' : ' (no data/dict-citations.json: run tools/build-index.js first)'));
+}

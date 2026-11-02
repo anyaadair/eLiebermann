@@ -399,6 +399,8 @@ td.term { font-weight: 600; color: var(--navy-dark); white-space: nowrap; }
 .entry-list li { padding: 0.35rem 0; border-bottom: 1px solid #ebe8e1; display: flex; gap: 0.75rem; align-items: baseline; flex-wrap: wrap; }
 .entry-list .headword { font-family: var(--serif); font-size: 1.15rem; font-weight: 600; }
 .entry-list .gloss { color: var(--muted); font-size: 0.95rem; flex: 1 1 20rem; }
+/* Dictionary page: a letter is laid out only when it scrolls into view, so the 9,000 entries draw quickly */
+.dict-letter { content-visibility: auto; contain-intrinsic-size: auto 3000px; }
 
 .lang-badge {
     display: inline-block;
@@ -876,7 +878,14 @@ h2.result-code .code-abbr { min-width: 0; margin-left: 0.4rem; }
 .code-clause-numcol { display: flex; flex-direction: column; align-items: flex-start; gap: 0.4rem; min-width: 0; }
 .code-clause-numcol span.wulf-badge { white-space: normal; }
 .code-callout { margin: 0 0 1rem; padding: 0.6rem 0.9rem; background: var(--powder-tint); border-radius: var(--radius); }
-.code-lieb-title { margin: -0.25rem 0 1rem; }
+.code-callout p { margin: 0; }
+.code-callout p + p { margin-top: 0.6rem; }
+/* lawcode.html: the manuscripts, editions and translations, behind a button after "Clauses" */
+.code-sources { margin: -0.75rem 0 1.5rem; }
+.code-sources > summary::before { content: none; }
+.code-sources .clause-sources h2 { font-size: 1.45rem; margin: 1.1rem 0 0.45rem; }
+.code-sources .clause-sources:first-child h2 { margin-top: 0.2rem; }
+.code-sources .ms-list li:target { background: var(--highlight); }
 .visually-hidden { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
 .code-clause-oe { font-family: var(--serif); font-size: 1.08rem; margin: 0; }
 .code-clause-en { margin: 0; color: #333; }

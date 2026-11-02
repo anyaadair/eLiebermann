@@ -180,6 +180,25 @@
     const loosen = (word, loose = 'user') => LOOSEN[looseMode(loose) || 'user'](word);
     const WORD = /[\p{L}\p{N}⁊]+(?:['’][\p{L}]+)?/gu;
     const wordsCache = new Map();
+    // A word folded: plain letters and digits need only lower case, which is most words.
+    const PLAIN = /^[A-Za-z0-9]*$/;
+    const foldWord = w => PLAIN.test(w) ? w.toLowerCase() : sfold(w).replace(/[^a-z0-9]/g, '');
+    // A word of a text without loosening (see wordsOf). Its map, where each of its folded
+    // letters came from, is worked out only when a match inside the word needs it.
+    function Word(w, at) { this.w = w; this.f = foldWord(w); this.at = at; this.len = w.length; }
+    Object.defineProperty(Word.prototype, 'map', { get() {
+        const map = [];
+        if (PLAIN.test(this.w)) for (let i = 0; i <= this.w.length; i++) map.push(i);
+        else {
+            for (let i = 0; i < this.w.length; i++) {
+                const piece = foldWord(this.w[i]);
+                for (let j = 0; j < piece.length; j++) map.push(i);
+            }
+            map.push(this.w.length);
+        }
+        Object.defineProperty(this, 'map', { value: map });
+        return map;
+    } });
     // A text's words, folded (and loosened), with where each stands in the text. Without
     // loosening, each word also keeps where each of its folded letters came from (map), so
     // that a match inside a word ("gyld" in "XIIgylde") can be marked by itself.
@@ -188,18 +207,9 @@
         const key = (mode === 'link' ? 'K' : mode ? 'L' : 'S') + text;
         let r = wordsCache.get(key);
         if (!r) {
-            r = [...String(text).matchAll(WORD)].map(m => {
-                if (mode) return { f: loosen(sfold(m[0]).replace(/[^a-z0-9]/g, ''), mode), at: m.index, len: m[0].length };
-                let f = '';
-                const map = [];
-                for (let i = 0; i < m[0].length; i++) {
-                    const piece = sfold(m[0][i]).replace(/[^a-z0-9]/g, '');
-                    for (let j = 0; j < piece.length; j++) map.push(i);
-                    f += piece;
-                }
-                map.push(m[0].length);
-                return { f, at: m.index, len: m[0].length, map };
-            });
+            r = [...String(text).matchAll(WORD)].map(m => mode
+                ? { f: loosen(foldWord(m[0]), mode), at: m.index, len: m[0].length }
+                : new Word(m[0], m.index));
             if (wordsCache.size > 60000) wordsCache.clear();
             wordsCache.set(key, r);
         }

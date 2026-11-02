@@ -95,12 +95,14 @@ Nothing is published until it is committed to `main`. GitHub Pages rebuilds the 
 | `tools/laws-from-database.py` | Makes `oe-laws/` from the full laws database spreadsheet, on your own computer, keeping every clause's file name. See [docs/OE-LAWS.md](docs/OE-LAWS.md#making-the-files-again). |
 | `tools/laws-from-xlsx.py`, `tools/law-code-from-xlsx.py` | The earlier scripts (the first layout, and one law code at a time). Not needed now, but `laws-from-database.py` uses their helpers. |
 | `tools/link-citations.py` | Links the law code citations in entries (one letter at a time) to clause files in `oe-laws/`. See [docs/OE-LAWS.md](docs/OE-LAWS.md). |
-| `tools/build-laws-index.js` | Writes `data/laws.json` (every clause with its keywords and text) for the Laws page. Runs on every deploy. |
+| `tools/build-laws-index.js` | Writes the lists the law pages read: `data/laws.json` (every clause with its keywords and a line of its text) for the Laws and Subjects pages; `data/laws-text.json` and `data/laws-notes.json` for the Laws page's word search (the notes only for a search in them); and one file per law code in `data/laws/` (the law code page), `data/clauses/` (a clause page: the code's clauses, their openings and the entries citing them) and `data/laws-text/` (the law code page's word search), each named by the start of the code's clause ids (`Hn_1` → `Hn.json`), so a page loads only its own code. Runs on every deploy. |
 | `tools/see-also.py` | Makes each entry's "See also" links from Liebermann's own cross-references (*s. WORD*, *s. d.*). Writes a report of what it could not link, `docs/see-also-report.md`. |
 | `tools/link-headwords.py` | Makes the words after *s.*, before *s. d.* and after *vgl.* in Liebermann's text links to their entries (`<ref type="entry">`), matched as by `see-also.py`; a bracketed word is linked part by part. Run after `see-also.py` (all three kinds: plain, `--compare`, `--derivatives`), then `update-entries.js` on the changed entries. |
-| `tools/build-index.js` | Writes `data/entries.json`. Runs on every deploy. |
+| `tools/build-index.js` | Writes `data/entries.json` (the Dictionary page's list) and `data/entries-text.json` (Liebermann's text of each entry, loaded only for *Also search Liebermann's text*). Runs on every deploy. |
 | `tools/update-entries.js` | Rewrites the parts of each entry made from Liebermann's text: the numbered meanings and the law code citation list. Run it after adding or changing entries outside the form. |
 | `.github/workflows/static.yml` | Builds and deploys the site on every push to `main`. |
+| `.github/workflows/check.yml` | Runs the same checks and builds on every pull request, without deploying, so a change that would break the site shows as a red cross on the pull request before it is merged. |
+| `tools/check-files.py` | Checks that every XML and JSON file can be read, that `oe-laws/index.json` and the clause files agree, and that every `entry:` and `clause:` link has a target. Runs on every pull request and deploy. |
 | `docs/` | Entry format, import rules, the latest import report, the stock-take of October 2026, and the cross-checks against the team's Word transcriptions (`crosscheck-*.md`). |
 
 ## Adding entries

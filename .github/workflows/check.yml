@@ -1,0 +1,37 @@
+# Checks every pull request before it is merged: the same checks and builds
+# as the deploy (static.yml), so a change that would stop the site deploying,
+# or a file the site cannot read, shows as a red cross on the pull request
+# instead of on the live site. It deploys nothing. It takes about a minute.
+name: Check
+
+on:
+  pull_request:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Check that u is not drawn as V (Latin and French)
+        run: node tools/check-u-not-v.js
+      - name: Check that every file can be read and every link has a target
+        run: python3 tools/check-files.py
+      - name: List dictionary entries
+        run: node tools/build-index.js
+      - name: List law clauses
+        run: node tools/build-laws-index.js
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site

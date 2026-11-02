@@ -58,6 +58,7 @@ scripts:
     const id = new URLSearchParams(location.search).get('id') || '';
     const NS = 'http://www.tei-c.org/ns/1.0';
     let catalogue = [];
+    let codeData = null;   // data/clauses/<prefix>.json: this law code's clauses, their openings and the entries citing them
 
     // Liebermann's volume 1 on archive.org, opened at a printed page in a new tab.
     // "445/6" or "450/451" (a clause running over two pages) opens at the first.
@@ -1059,13 +1060,15 @@ scripts:
             target.appendChild(s);
         }
 
-        // The dictionary entries whose citation lists cite this clause (data/dict-citations.json,
-        // written by tools/build-index.js): filled in when the list has loaded.
+        // The dictionary entries whose citation lists cite this clause (from this code's
+        // data/clauses file, or else data/dict-citations.json, written by tools/build-index.js).
         const dictSec = el('section', 'entry-section clause-section clause-dictionary');
         dictSec.hidden = true;
         target.appendChild(dictSec);
-        fetch(root + 'data/dict-citations.json').then(r => r.ok ? r.json() : {}).then(map => {
-            const hits = Object.entries(map).filter(([, v]) => v[2].includes(row.id)).map(([id, v]) => ({ id, hw: v[0], lang: v[1] }))
+        (codeData && codeData.dict ? Promise.resolve((codeData.dict[row.id] || []).map(([id, hw, lang]) => ({ id, hw, lang })))
+            : fetch(root + 'data/dict-citations.json').then(r => r.ok ? r.json() : {})
+                .then(map => Object.entries(map).filter(([, v]) => v[2].includes(row.id)).map(([id, v]) => ({ id, hw: v[0], lang: v[1] })))).then(hits => {
+            hits = hits
                 .sort((a, b) => { const x = ELieb.alphaKey(a.hw), y = ELieb.alphaKey(b.hw); return x < y ? -1 : x > y ? 1 : 0; });
             if (!hits.length) return;
             dictSec.appendChild(el('h2', null, 'In the dictionary'));
@@ -1234,8 +1237,8 @@ scripts:
         $('p-code').innerHTML = `<a href="${root}lawcode.html?code=${encodeURIComponent(row.code)}#${encodeURIComponent(row.id)}">${esc(row.code)}</a>${codeName !== row.code ? ' (' + esc(codeName) + ')' : ''} · clause ${sameCode.findIndex(c => c.id === row.id) + 1} of ${sameCode.length}`;
         $('go-label').textContent = 'Go to a clause of ' + row.code;
         // the four clauses before and after, with the opening of their text
-        fetch(root + 'data/laws-brief.json').then(r => r.ok ? r.json() : []).then(list => {
-            const mine = list.filter(x => x[1] === row.code);
+        (codeData ? Promise.resolve(sameCode.map(c => [c.id, c.code, c.citation, codeData.brief[c.id] || '']))
+            : Promise.reject(new Error('no list'))).then(mine => {
             const i = mine.findIndex(x => x[0] === row.id);
             const show = i < 0 ? [] : mine.slice(Math.max(0, i - 4), i + 5);
             $('wheel').innerHTML = show.map(([cid, , cit, oe]) => {
@@ -1392,8 +1395,12 @@ scripts:
         target.innerHTML = '<h1>No clause chosen</h1><p>Clauses are reached from the law code citations at the foot of dictionary entries.</p>';
         return;
     }
-    fetch(root + 'oe-laws/index.json')
-        .then(r => r.json())
+    // This clause's law code (data/clauses/<prefix>.json, written by tools/build-laws-index.js),
+    // found by the start of the id (Hn_1 -> Hn); or, if that is missing, the whole catalogue.
+    const getJson = url => fetch(url).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });
+    getJson(root + 'data/clauses/' + encodeURIComponent(id.split('_')[0]) + '.json')
+        .then(data => { codeData = data; return data.rows; })
+        .catch(() => getJson(root + 'oe-laws/index.json'))
         .then(list => {
             catalogue = list;
             // a part of a clause that is shown whole (Abt_1-c): the whole clause, with that part marked
