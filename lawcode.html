@@ -96,6 +96,7 @@ scripts:
     tol.checked = params.get('tol') === '1';
 
     let code = null, codes = [], mine = [], texts = null, dict = null, tag = null, textLabel = '', enLabel = '';
+    let codeSources = {};   // data/code-sources.json (tools/build-laws-index.js): each code's manuscripts and works
 
     function render(clauses) {
         const i = codes.indexOf(code);
@@ -108,7 +109,26 @@ scripts:
         ].filter(Boolean);
         // "Suggested dates: 601–4 (Liebermann) · 597–616, perhaps 602–3 (Whitelock) · …": Liebermann's first, then the
         // others in order of publication (as the database gives them); then the places, as on the clause pages.
-        const who = names => names.length ? ' (' + names.map(esc).join(names.some(n => n.includes(',')) ? '; ' : ', ') + ')' : '';   // "Wormald, MEL p. 337" carries its page
+        // Each scholar's name links to the full reference in the list behind the button below, as on the clause
+        // pages: "Whitelock, EHD p. 390" -> <a>Whitelock</a>, EHD p. 390
+        const cs = codeSources[code.code] || { sources: [], mss: [], link: {} };
+        const srcById = id => cs.sources.find(x => x.id === id);
+        const bibText = src => { const d = biblDoc(src); return d ? d.textContent.replace(/\s+/g, ' ').trim() : ''; };
+        const scholar = label => {
+            const src = srcById(cs.link[label]);
+            if (!src) return esc(label);
+            const surname = label.split(',')[0];
+            return `<a class="source-name" href="#src-${esc(src.id)}" title="${esc(bibText(src))}">${esc(surname)}</a>${esc(label.slice(surname.length))}`;
+        };
+        const msId = abbr => 'ms-' + abbr.replace(/[^A-Za-z0-9]+/g, '-').replace(/^-|-$/g, '');
+        const siglum = abbr => {
+            // "G" in the header is "G(A)" in the clause files, "D" is "D (frags.)"
+            const base = x => x.replace(/\([^)]*\)/g, '').replace(/[\s.]/g, '');   // "G(B) (part Prol.)" -> G, "Cons. Cn." -> ConsCn
+            const m = cs.mss.find(x => x.abbr === abbr) || cs.mss.find(x => base(x.abbr) === base(abbr));
+            if (m) return `<a class="source-name" href="#${esc(msId(m.abbr))}" title="${esc(m.name || abbr)}">${esc(abbr)}</a>`;
+            return esc(abbr);
+        };
+        const who = names => names.length ? ' (' + names.map(scholar).join(names.some(n => n.includes(',')) ? '; ' : ', ') + ')' : '';   // "Wormald, MEL p. 337" carries its page
         const dateLine = (label, items) => items && items.length ? `<p><span class="clause-dates__label">${label}: </span>${
             items.map(([text, names]) => esc(text) + who(names))
                 .join('<span class="clause-dates__sep"> · </span>')}</p>` : '';
@@ -116,7 +136,7 @@ scripts:
             : (code.date ? `<p><span class="clause-dates__label">Suggested dates: </span>${esc(code.date)}</p>` : '');
         // Manuscripts, editions and the number of clauses go under the dates, in the same "Label: …" style.
         const plainLine = (label, html) => `<p><span class="clause-dates__label">${label}: </span>${html}</p>`;
-        const sources = ['Liebermann'].concat(code.editors || []);
+        const sources = [...new Set(['Liebermann'].concat(code.editors || []))];
         // Column headings name the source most of this code's clauses use;
         // a clause from another source carries its own small label.
         const commonest = key => {
@@ -137,9 +157,17 @@ scripts:
             const short = label.startsWith(ed + ', ') ? label.slice(ed.length + 2) : label;
             return `<span class="code-clause-src">${esc(short)}</span> `;
         };
-        // Liebermann's title for the text, from his table of contents (Gesetze I, pp. IX–X), and the running head
-        // over the text where it says something different (oe-laws/codes.json liebermannTitle; tools/titles)
-        const lieb = code.liebermannTitle;
+        // The manuscripts, editions, translations and studies, as at the foot of a clause page: behind a button
+        // after "Clauses"; a scholar's name or a manuscript in the header opens it at that entry.
+        const works = cs.sources.filter(x => x.type !== 'study' && x.id !== 'claude').concat(cs.sources.filter(x => x.id === 'claude'));
+        const studies = cs.sources.filter(x => x.type === 'study');
+        const srcList = (title, list) => list.length ? `<section class="clause-sources"><h2>${title}</h2><ul>${list.map(x =>
+            `<li id="src-${esc(x.id)}"><strong>${esc(x.name)}: </strong>${biblHtml(x)}</li>`).join('')}</ul></section>` : '';
+        const msList = cs.mss.length ? `<section class="clause-sources"><h2>Manuscripts</h2><ul class="ms-list">${cs.mss.map(m =>
+            `<li id="${esc(msId(m.abbr))}"><span class="ms-siglum">${m.parts.map(([t, href]) => href
+                ? `<a href="${root}${esc(href)}" title="See ${esc(t)} in the list of ${href.startsWith('msAbb') ? 'manuscripts' : 'law codes'}">${esc(t)}</a>` : esc(t)).join(', ')}</span>${m.name ? ' ' + esc(m.name) : ''}</li>`).join('')}</ul></section>` : '';
+        const sourcesBox = msList || works.length ? `<details class="code-intro code-sources" id="code-sources"><summary>Manuscripts, editions and translations</summary>
+                <div class="code-intro__body">${msList}${srcList('Editions and translations', works)}${srcList('Studies', studies)}</div></details>` : '';
         // "About the numbering" and the like, behind a button (data/clause-order.json codeIntros; written for the site)
         const intro = ((window.__clauseOrder || {}).codeIntros || {})[code.code];
         // An editorial introduction to the text, shown open at the top (data/clause-order.json codeIntroductions)
@@ -151,14 +179,14 @@ scripts:
                 <div class="meta">${bits.map(b => `<span>${b}</span>`).join('')}</div>
                 ${Wulfstan.badges(code.code, '')}
                 <div class="clause-dates">${dateLine('Titles', code.titles)}${dates}${
-                    code.manuscripts && code.manuscripts.length ? plainLine('Manuscripts', code.manuscripts.map(esc).join(', ')) : ''}${
-                    plainLine('Editions and translations', sources.map(esc).join(', '))}${
+                    code.manuscripts && code.manuscripts.length ? plainLine('Manuscripts', code.manuscripts.map(siglum).join(', ')) : ''}${
+                    plainLine('Editions and translations', sources.map(scholar).join(', '))}${
                     plainLine('Clauses', String(mine.length))}</div>
+                ${sourcesBox}
             </header>
             ${introduction ? `<div class="code-introduction"><h2 class="code-introduction__head">Editor’s introduction</h2>${introduction}</div>` : ''}
             ${intro ? `<details class="code-intro"><summary>${esc(intro.title)}</summary><div class="code-intro__body">${intro.html}</div></details>` : ''}
-            <p class="code-callout">Below is the code in summary form: one text (the first in Liebermann’s edition) and one translation (an English crib of Liebermann’s German). Where either of these is unavailable, an alternative is shown and labelled. Each clause has its own page with all its texts, manuscripts, editions and translations, and its notes, cross-references and keywords. Click a clause number, or <em>All texts and translations</em> under any clause, to open it.</p>
-            ${lieb ? `<div class="clause-dates code-lieb-title"><p><span class="clause-dates__label">Liebermann’s title: </span><span lang="de">${esc(lieb[0])}</span> (<i>Gesetze</i> I, p. ${esc(lieb[1])})${lieb[2] ? `; running head: <span lang="de">${esc(lieb[2])}</span>` : ''}</p></div>` : ''}
+            <p class="code-callout">Below is a single text of the code (the first in Liebermann’s edition) and one translation (an English crib of Liebermann’s German). Where either of these is unavailable, an alternative is shown and labelled. Each clause has its own page with all its texts, manuscripts, editions and translations, and its notes, cross-references and keywords. Click a clause number, or <em>All texts and translations</em> under any clause, to open it.</p>
             <p id="list-count" class="muted small" aria-live="polite"></p>
             <div class="code-clauses-head">
                 <span></span>
@@ -181,6 +209,26 @@ scripts:
             i < codes.length - 1 ? `<li><a href="${codeUrl(codes[i + 1].code)}">${esc(codes[i + 1].name)} →</a></li>` : ''
         ].join('');
     }
+
+    // A reference in data/code-sources.json is TEI ("<author>…</author>, <title>…</title> …"): rendered as on the clause pages.
+    function biblDoc(src) {
+        const doc = new DOMParser().parseFromString('<bibl xmlns="http://www.tei-c.org/ns/1.0">' + src.bibl + '</bibl>', 'application/xml');
+        return doc.getElementsByTagName('parsererror').length ? null : doc.documentElement;
+    }
+    function biblHtml(src) {
+        const d = biblDoc(src);
+        return d ? ELieb.renderTei(d, root) : esc(src.bibl.replace(/<[^>]*>/g, ''));
+    }
+    // A scholar's name or a manuscript in the header: open the list behind the button, then go to the entry.
+    function openSources(hash) {
+        const box = $('code-sources');
+        if (box && /^#(src|ms)-/.test(hash || '')) box.open = true;
+    }
+    target.addEventListener('click', e => {
+        const a = e.target.closest('a[href^="#src-"], a[href^="#ms-"]');
+        if (a) openSources(a.getAttribute('href'));
+    });
+    window.addEventListener('hashchange', () => openSources(location.hash));
 
     // ---- The list, narrowed by the search ----
     function drawList() {
@@ -332,9 +380,11 @@ scripts:
         fetch(root + 'oe-laws/codes.json').then(r => r.json()),
         fetch(root + 'data/laws.json').then(r => r.json()),
         fetch(root + 'data/clause-order.json').then(r => r.json()).catch(() => ({})),
-        Wulfstan.load(root)
-    ]).then(([codeList, clauses, order]) => {
+        Wulfstan.load(root),
+        fetch(root + 'data/code-sources.json').then(r => r.json()).catch(() => ({}))
+    ]).then(([codeList, clauses, order, , sourcesByCode]) => {
         window.__clauseOrder = order;
+        codeSources = sourcesByCode || {};
         codes = codeList.filter(c => clauses.some(x => x.code === c.code));
         code = codes.find(c => c.code === wanted) || codes.find(c => fold(c.code) === fold(wanted));
         if (!code) throw new Error('missing');
@@ -342,6 +392,7 @@ scripts:
         if (S.dict) LawPanel.loadDict().then(m => { dict = m; drawPanel(); });
         drawPanel();
         drawList();
+        openSources(location.hash);
         if (location.hash) { const el = document.getElementById(decodeURIComponent(location.hash.slice(1))); if (el) { el.classList.add('is-target'); el.scrollIntoView({ block: 'center' }); } }
     }).catch(err => {
         if (err && err.message !== 'missing') console.error(err);
