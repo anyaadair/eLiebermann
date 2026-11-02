@@ -28,15 +28,17 @@
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
       <change when="2026-10-28">“von” unlinked from the abbreviations list: here it is ordinary German, not an abbreviation (Anya Adair).</change>
+      <change when="2026-11-02">Marked as Latin (the print has no L before the headword); editor’s note added.</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:lang="ang">
+      <entry xml:lang="la">
         <form type="lemma">
           <orth>interciebatur</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">interciebatur</hi> aliquis aliquid super aliquem <hi rend="italic">einer schob etwas auf einen Gewährsmann</hi> [<hi rend="italic">von</hi> cieo?] <ref type="lawCode" target="law:ECf">ECf</ref> 22,3; <hi rend="italic"><ref type="abbreviation" target="gram:Variante"><abbr>Var.</abbr></ref></hi> ~ciab~; <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:intertiare">intertiare</ref></dictScrap>
+        <note type="editorial">Latin; Liebermann omits the L.</note>
         <xr type="see"><ref target="entry:intertiare">intertiare</ref></xr>
         <xr type="lawCode"><ref target="clause:ECf_22-3">ECf 22,3</ref></xr>
       </entry>
