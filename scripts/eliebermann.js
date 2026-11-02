@@ -138,9 +138,12 @@
     }
 
     // A grammatical entry's language (Old English, Latin, French): what its grammar is about.
-    function grammarLangBadge(code, short) {
-        const name = LANGUAGES[code] || code;
-        return `<span class="lang-badge ${escapeXml(code)}" title="${escapeXml('A grammatical entry on ' + name)}">${escapeXml(short && code === 'ang' ? 'OE' : name)}</span>`;
+    // An entry that treats several languages has several codes ("ang la fro"): one badge each.
+    function grammarLangBadge(codes, short) {
+        return String(codes).split(/\s+/).filter(Boolean).map(code => {
+            const name = LANGUAGES[code] || code;
+            return `<span class="lang-badge ${escapeXml(code)}" title="${escapeXml('A grammatical entry on ' + name)}">${escapeXml(short && code === 'ang' ? 'OE' : name)}</span>`;
+        }).join(' ');
     }
 
     // The language tag, then "Proper Noun" for an Old English name.
@@ -1528,7 +1531,7 @@ ${translation}
             slug: idno ? idno.textContent.trim() : '',
             lang,
             language: LANGUAGES[lang] || lang,
-            // a grammatical entry: the language it is about (<usg type="lang" n="ang|la|fro">);
+            // a grammatical entry: the language(s) it is about (<usg type="lang" n="ang">, or several: n="ang la fro");
             // Liebermann marks French (F) and Latin (L); the others are about Old English
             grammarLang: (childrenNamed(entry, 'usg').find(u => u.getAttribute('type') === 'lang') || { getAttribute: () => '' }).getAttribute('n') || '',
             entry,
