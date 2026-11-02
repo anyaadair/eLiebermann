@@ -27,6 +27,7 @@
           <bibl xml:id="robertson" type="edition">A. J. Robertson, The Laws of the Kings of England from Edmund to Henry I (Cambridge: Cambridge University Press, 1925), p. <biblScope unit="page">262</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
           <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-hk"><abbr>Hk</abbr> <note type="manuscript">Holkham Hall, MS 228, f. 141, c. 1230</note></witness>
@@ -50,6 +51,7 @@
       <change when="2026-10" type="checked">Liebermann’s text of MS Hk added from Gesetze I, p. 506–507.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS I added from Gesetze I, p. 506–507.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS L added from Gesetze I, p. 506–507.</change>
+      <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -59,13 +61,14 @@
         <ab type="liebermannText" xml:lang="xno" source="#liebermann" corresp="#wit-hk"><pb n="506–507" ed="#liebermann"/>E puis seient tuz les vilains en franc plege.</ab>
         <ab type="liebermannText" xml:lang="xno" source="#liebermann" corresp="#wit-i"><pb n="506–507" ed="#liebermann"/>E puis si ser[on]t [t]uz les vilains en franc plege.</ab>
         <ab type="editionText" xml:lang="xno" source="#robertson" n="20.3a" corresp="#wit-hk"><pb n="262" ed="#robertson"/>E puis seient tuz les vilains en franc plege.</ab>
-        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="506–507" ed="#liebermann"/>20, 3<hi rend="italic">a</hi>. Und ferner seien alle Bauern [Ceorlas] in Freibürgschaft.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="506–507" ed="#liebermann"/>20, 3<hi rend="italic">a</hi>. Und ferner seien alle Bauern [Ceorlas] in Freibürgschaft<ptr type="liebermannNote" n="1" target="#LeisWl_20-3a.lnote.de.1"/>.</ab>
         <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">20, 3<hi rend="italic">a</hi>. And further, all peasants [ceorlas] shall be in frankpledge.</ab>
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-hk"><pb n="263" ed="#robertson"/>And further all villeins shall be in frankpledge.</ab>
         <note type="comparison" source="#liebermann" n="507"><ref target="clause:WlArt_8">Wl art 8</ref></note>
         <note type="comparisonPrinted" source="#liebermann">vgl. Wl art. 8</note>
         <note type="comparison" source="#wormald-mel" n="409"><label>influenced by</label> <ref target="clause:WlArt_8">Wl art 8</ref> <quote>the 'Articles' seem to influence only the clauses on murdrum and perhaps frankpledge</quote></note>
         <note type="editorial">Added October 2026 from Robertson pp. 262–263 (text and translation); Liebermann’s text and German translation added from Gesetze I p. 506–507, October 2026 (two independent readings of the page images)</note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="LeisWl_20-3a.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">289</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Die Dublette dieses Satzes, <hi rend="italic">u.</hi> 25, scheint archaischer, weil Cnut näher und nicht auf Bauern beschränkt. Ich nehme an, der Archetyp und il hatten c. 25 am Rande mit einem zweideutigen Verweisungszeichen; Hk und I liessen es als im Französischen bereits enthalten fort; L kopierte es und übersetzte dafür 20, 3a nicht. — <hi rend="italic">Vgl. Gl</hi> Zehnerschaft 7. 10d. Stubbs versteht <hi rend="italic">francum plegium u.</hi> 25 als ‘surety [Bürgschaft]’, was an sich möglich (<hi rend="italic">s. ebd.</hi> 3c). Aber schon die Quelle, Cnut, obwohl sie nur von Bürgschaft sprach, meinte Zehnerschaft</seg><seg type="translation" xml:lang="en" source="#claude">The doublet of this sentence, <hi rend="italic">below</hi> 25, seems more archaic, because it is closer to Cnut and not restricted to peasants. I assume that the archetype and il had c. 25 in the margin with an ambiguous reference sign; Hk and I left it out as already contained in the French; L copied it and in exchange did not translate 20, 3a. — <hi rend="italic">Cf. Gl</hi> Zehnerschaft 7. 10d. Stubbs understands <hi rend="italic">francum plegium below</hi> 25 as ‘surety [Bürgschaft]’, which is possible in itself (<hi rend="italic">see ibid.</hi> 3c). But already the source, Cnut, although it spoke only of suretyship, meant the tithing</seg></note>
       </div>
     </body>
   </text>

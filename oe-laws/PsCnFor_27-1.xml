@@ -21,6 +21,8 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">625</biblScope></bibl>
           <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+          <bibl xml:id="claude" type="translation">English renderings of Liebermann’s German notes, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -39,15 +41,17 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-19">Generated from row 4046 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="27.1">
         <head><ref type="lawCode" target="law:PsCnFor">Ps Cn for</ref> 27.1</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Ps Cn for 27.1" corresp="#wit-lat"><pb n="625" ed="#liebermann"/>Sunt et alia quamplurima animalia, que, quanquam infra septa foreste uiuunt et oneri et curo mediocrium subiacent, foreste tamen nequaquam censeri possunt, qualia sunt equi, bubali, uacce et similia.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Ps Cn for 27.1" corresp="#wit-lat"><pb n="625" ed="#liebermann"/>Sunt et alia quamplurima animalia, que, quanquam infra septa foreste uiuunt et oneri et curo mediocrium subiacent, foreste tamen nequaquam censeri possunt, qualia sunt equi<ptr type="liebermannNote" n="b" target="#PsCnFor_27-1.lnote.oe.erkl-b"/>, bubali, uacce et similia.</ab>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 625 (two independent readings of the page images, differences settled against the page); Liebermann’s print has ‘curo’ (for ‘cure’, i.e. curae); transcribed as printed</note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">There are also very many other animals which, although they live within the enclosures of the forest and are subject to the charge and care of the middling men, can nevertheless by no means be reckoned [beasts] of the forest, such as horses, buffaloes, cows and the like.</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="PsCnFor_27-1.lnote.oe.erkl-b" n="b" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">339</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Pferd 4; Büffel; Forst 16a; Davis *251. Im Ggs. zu wilden <hi rend="italic">bestiae</hi> heissen <hi rend="italic">domestici</hi> im 13. Jh. <hi rend="italic">boves, equi, vacce</hi> in ‘Glanvill revised’ bei Maitland <hi rend="italic">Coll. pap.</hi> II 286</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf. Gl</hi> Pferd 4; Büffel; Forst 16a; Davis *251. In contrast to wild <hi rend="italic">bestiae</hi>, <hi rend="italic">boves, equi, vacce</hi> are called <hi rend="italic">domestici</hi> in the 13th century in ‘Glanvill revised’, in Maitland <hi rend="italic">Coll. pap.</hi> II 286</seg></note>
       </div>
     </body>
   </text>

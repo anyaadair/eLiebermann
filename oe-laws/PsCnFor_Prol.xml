@@ -21,6 +21,8 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">620</biblScope></bibl>
           <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+          <bibl xml:id="claude" type="translation">English renderings of Liebermann’s German notes, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -39,15 +41,18 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-19">Generated from row 4011 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="Prol">
         <head><ref type="lawCode" target="law:PsCnFor">Ps Cn for</ref> Prol</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Ps Cn for Prol" corresp="#wit-lat"><pb n="620" ed="#liebermann"/>He sunt sanctiones de foresta, quas ego Canutus rex, cum consilio primariorum hominum meorum de foresta, condo et facio, ut cunctis regni nostri Anglie ecclesiis et pax et iustitia fiat, et ut omnis delinquens rite secundum modum delicti et delinquentis fortunam patiatur.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Ps Cn for Prol" corresp="#wit-lat"><pb n="620" ed="#liebermann"/>He sunt sanctiones de foresta, quas ego Canutus rex, cum consilio primariorum hominum meorum de foresta, condo et facio, ut cunctis regni nostri<ptr type="liebermannNote" n="f" target="#PsCnFor_Prol.lnote.oe.erkl-f"/> Anglie ecclesiis et pax et iustitia fiat, et ut omnis<ptr type="liebermannNote" n="g" target="#PsCnFor_Prol.lnote.oe.erkl-g"/> delinquens rite secundum modum delicti et delinquentis fortunam patiatur.</ab>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 620 (two independent readings of the page images, differences settled against the page)</note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">These are the ordinances concerning the forest which I, King Cnut, with the counsel of my chief men, make and enact concerning the forest, so that both peace and justice may be done to all the churches of our realm of England, and so that every offender may duly suffer according to the manner of the offence and the fortune of the offender.</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="PsCnFor_Prol.lnote.oe.erkl-f" n="f" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">338</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">S. Gl</hi> Forst 6h. 15. a. Der Pluralis majestatis (<hi rend="italic">s. d. Gl</hi>) im Pronomen possessivum begegnet häufig schon in Agsächs. Urkk. 9. Jhs.; weiter unten aber wird er auch sonst gebraucht</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">See Gl</hi> Forst 6h. 15. a. The plural of majesty (<hi rend="italic">see</hi> that word in <hi rend="italic">Gl</hi>) in the possessive pronoun occurs frequently already in Anglo-Saxon charters of the 9th century; further below, however, it is used elsewhere too</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="PsCnFor_Prol.lnote.oe.erkl-g" n="g" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">338</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de">Verf. plant vielleicht ein forstliches Strafrecht gegen willkürliche Misericordia (<hi rend="italic">s. d. Gl</hi> 7b) regis</seg><seg type="translation" xml:lang="en" source="#claude">The author is perhaps planning a forest penal law against arbitrary misericordia (<hi rend="italic">see</hi> that word in <hi rend="italic">Gl</hi> 7b) regis</seg></note>
       </div>
     </body>
   </text>

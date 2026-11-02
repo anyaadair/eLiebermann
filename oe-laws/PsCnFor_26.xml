@@ -21,6 +21,8 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">624</biblScope></bibl>
           <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+          <bibl xml:id="claude" type="translation">English renderings of Liebermann’s German notes, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -39,15 +41,18 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-19">Generated from row 4044 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="26">
         <head><ref type="lawCode" target="law:PsCnFor">Ps Cn for</ref> 26</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Ps Cn for 26" corresp="#wit-lat"><pb n="624" ed="#liebermann"/>Episcopi, abbates et barones mei non calumniabuntur pro uenatione, si non regales feras occiderint; et si regales, restabunt rei regi pro libito suo, sine certa emendatione.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Ps Cn for 26" corresp="#wit-lat"><pb n="624" ed="#liebermann"/>Episcopi<ptr type="liebermannNote" n="o" target="#PsCnFor_26.lnote.oe.erkl-o"/>, abbates et barones mei non calumniabuntur pro uenatione, si non regales feras occiderint; et si regales, restabunt rei regi pro libito<ptr type="liebermannNote" n="r" target="#PsCnFor_26.lnote.oe.erkl-r"/> suo, sine certa emendatione.</ab>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 624 (two independent readings of the page images, differences settled against the page)</note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">My bishops, abbots and barons shall not be accused for hunting, if they have not killed royal beasts; and if [they kill] royal ones, they shall remain liable to the king at his pleasure, without fixed compensation.</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="PsCnFor_26.lnote.oe.erkl-o" n="o" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">339</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Der Hochadel und Kronvassall darf also auch innerhalb des Königsforstes jagen, nur den Hirsch ausgenommen, doch natürlich nur, was zu ergänzen ist, im eigenen Walde, nicht im fremden oder krondomanialen. Der Abt von Battle erhält das Privileg, durchreisend <hi rend="italic">2 feras</hi> zu erlegen; Davis <hi rend="italic">Reg. Agnorm.</hi> *263. — Über die Behandlung geistlicher Forstfrevler im 13. Jh. <hi rend="italic">s.</hi> Turner p. lxxxvij</seg><seg type="translation" xml:lang="en" source="#claude">The high nobility and tenant-in-chief may therefore hunt within the royal forest too, the stag alone excepted, but of course only (this must be supplied) in his own wood, not in another’s or in the Crown demesne. The abbot of Battle receives the privilege of killing <hi rend="italic">2 feras</hi> when passing through; Davis <hi rend="italic">Reg. Agnorm.</hi> *263. — On the treatment of clerical forest offenders in the 13th century <hi rend="italic">see</hi> Turner p. lxxxvij</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="PsCnFor_26.lnote.oe.erkl-r" n="r" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">339</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Misericordia 5a. 7b</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf. Gl</hi> Misericordia 5a. 7b</seg></note>
       </div>
     </body>
   </text>

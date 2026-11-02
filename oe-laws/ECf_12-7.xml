@@ -23,6 +23,7 @@
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">639</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
           <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
         </listBibl>
       </sourceDesc>
     </fileDesc>
@@ -39,13 +40,14 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+      <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="12.7">
         <head><ref type="lawCode" target="law:ECf">ECf</ref> 12.7</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 12.7"><pb n="639" ed="#liebermann"/><ptr type="liebermannNote" n="8" target="#ECf_12-7.lnote.la.8"/>Pax autem<ptr type="liebermannNote" n="9" target="#ECf_12-7.lnote.la.9"/> quatuor chiminorum<ptr type="liebermannNote" n="10" target="#ECf_12-7.lnote.la.10"/> et<ptr type="liebermannNote" n="11" target="#ECf_12-7.lnote.la.11"/> aquarum predictarum sub maiori iudicio quod<ptr type="liebermannNote" n="12" target="#ECf_12-7.lnote.la.12"/> superius<ptr type="liebermannNote" n="c" target="#ECf_12-7.lnote.la.fn.c"/> diximus continetur<ptr type="liebermannNote" n="13" target="#ECf_12-7.lnote.la.13"/>: de assaltu<ptr type="liebermannNote" n="14" target="#ECf_12-7.lnote.la.14"/>.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 12.7"><pb n="639" ed="#liebermann"/><ptr type="liebermannNote" n="*" target="#ECf_12-7.lnote.oe.erkl-clause"/><ptr type="liebermannNote" n="8" target="#ECf_12-7.lnote.la.8"/>Pax autem<ptr type="liebermannNote" n="9" target="#ECf_12-7.lnote.la.9"/> quatuor chiminorum<ptr type="liebermannNote" n="10" target="#ECf_12-7.lnote.la.10"/> et<ptr type="liebermannNote" n="11" target="#ECf_12-7.lnote.la.11"/> aquarum predictarum sub maiori iudicio quod<ptr type="liebermannNote" n="12" target="#ECf_12-7.lnote.la.12"/> superius<ptr type="liebermannNote" n="c" target="#ECf_12-7.lnote.la.fn.c"/> diximus continetur<ptr type="liebermannNote" n="13" target="#ECf_12-7.lnote.la.13"/>: de assaltu<ptr type="liebermannNote" n="14" target="#ECf_12-7.lnote.la.14"/>.</ab>
         <note type="comparison" source="#liebermann" n="639"><label>printed alongside</label> <ref target="clause:ECfRetr_12-7">ECf retr 12.7</ref></note>
         <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 639 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_12-7.lnote.la.fn.c" n="c" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">639</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">s. o.</hi> 12, 1; 2</seg><seg type="translation" xml:lang="en" source="#claude">see above, 12, 1; 2</seg></note>
@@ -57,6 +59,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_12-7.lnote.la.13" n="13" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">639</biblScope></bibl><seg type="original" xml:lang="de">-nentur <hi rend="italic">S;</hi> scilicet <hi rend="italic">fügt zu Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">-nentur S; Hk adds scilicet</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_12-7.lnote.la.14" n="14" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">639</biblScope></bibl><seg type="original" xml:lang="de">et de ceteris forisfacturis <hi rend="italic">fügt zu Hk</hi> [<hi rend="italic">missverstehend</hi>]</seg><seg type="translation" xml:lang="en" source="#claude">Hk adds et de ceteris forisfacturis [misunderstanding]</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">But the peace of the four highways and of the aforesaid waters is held under the greater judgment which we stated above: for assault.</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_12-7.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">345</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">Höchstes Strafgeldfixum (<hi rend="italic">s. d. Gl</hi> 30), nach <hi rend="italic">u.</hi> 27 je nach Ortsrecht der Grafschaft (<hi rend="italic">s. d. Gl</hi> 9. 17). — <hi rend="italic">assultu</hi><hi rend="superscript">11</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude">Highest fixed fine (s. Gl s.v. 30), according to 27 below varying with the local law of the shire (s. Gl s.v. 9. 17). — <hi rend="italic">assultu</hi><hi rend="superscript">11</hi> Rs</seg></note>
       </div>
     </body>
   </text>

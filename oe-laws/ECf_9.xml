@@ -23,6 +23,7 @@
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">633</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
           <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
         </listBibl>
       </sourceDesc>
     </fileDesc>
@@ -39,13 +40,14 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+      <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="9">
         <head><ref type="lawCode" target="law:ECf">ECf</ref> 9</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 9"><pb n="633" ed="#liebermann"/><hi rend="spaced"><ptr type="liebermannNote" n="4" target="#ECf_9.lnote.la.4"/>De hiis qui ad iudicium aque uel ferri iudicati sunt á iusticia regis.</hi> Die<ptr type="liebermannNote" n="5" target="#ECf_9.lnote.la.5"/> illo<ptr type="liebermannNote" n="6" target="#ECf_9.lnote.la.6"/> quo<ptr type="liebermannNote" n="7" target="#ECf_9.lnote.la.7"/> iudicium<ptr type="liebermannNote" n="8" target="#ECf_9.lnote.la.8"/> fiet<ptr type="liebermannNote" n="9" target="#ECf_9.lnote.la.9"/>, assit<ptr type="liebermannNote" n="a" target="#ECf_9.lnote.la.fn.a"/> ad iudicium minister<ptr type="liebermannNote" n="b" target="#ECf_9.lnote.la.fn.b"/> episcopi cum clericis suis et<ptr type="liebermannNote" n="10" target="#ECf_9.lnote.la.10"/> iusticia regis cum legalibus hominibus prouincie<ptr type="liebermannNote" n="c" target="#ECf_9.lnote.la.fn.c"/> illius, ut uideant et audiant, quod eque<ptr type="liebermannNote" n="11" target="#ECf_9.lnote.la.11"/> omnia fiant.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 9"><pb n="633" ed="#liebermann"/><ptr type="liebermannNote" n="*" target="#ECf_9.lnote.oe.erkl-clause"/><hi rend="spaced"><ptr type="liebermannNote" n="4" target="#ECf_9.lnote.la.4"/>De hiis qui ad iudicium aque uel ferri iudicati sunt á iusticia regis.</hi> Die<ptr type="liebermannNote" n="5" target="#ECf_9.lnote.la.5"/> illo<ptr type="liebermannNote" n="6" target="#ECf_9.lnote.la.6"/> quo<ptr type="liebermannNote" n="7" target="#ECf_9.lnote.la.7"/> iudicium<ptr type="liebermannNote" n="8" target="#ECf_9.lnote.la.8"/> fiet<ptr type="liebermannNote" n="9" target="#ECf_9.lnote.la.9"/>, assit<ptr type="liebermannNote" n="a" target="#ECf_9.lnote.la.fn.a"/> ad iudicium minister<ptr type="liebermannNote" n="b" target="#ECf_9.lnote.la.fn.b"/> episcopi cum clericis suis et<ptr type="liebermannNote" n="10" target="#ECf_9.lnote.la.10"/> iusticia regis cum legalibus hominibus prouincie<ptr type="liebermannNote" n="c" target="#ECf_9.lnote.la.fn.c"/> illius, ut uideant et audiant, quod eque<ptr type="liebermannNote" n="11" target="#ECf_9.lnote.la.11"/> omnia fiant.</ab>
         <note type="comparison" source="#liebermann" n="633"><label>printed alongside</label> <ref target="clause:ECfRetr_9">ECf retr 9</ref></note>
         <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 633 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
         <note type="editorial">“á iusticia”: Liebermann prints the accent as in his manuscript.</note>
@@ -61,6 +63,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_9.lnote.la.10" n="10" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">633</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">von späterer Hand S</hi></seg><seg type="translation" xml:lang="en" source="#claude">in a later hand S</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_9.lnote.la.11" n="11" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">633</biblScope></bibl><seg type="original" xml:lang="de">o. e. <hi rend="italic">S</hi></seg><seg type="translation" xml:lang="en" source="#claude">o. e. S</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">Of those who have been adjudged to the ordeal of water or of iron by the king's justice. On the day on which the ordeal takes place, let the bishop's officer be present at the ordeal with his clerics, and the king's justice with the lawful men of that province, so that they may see and hear that all things are done fairly.</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_9.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">344</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Ordal 10. c. 13a. 28a</seg><seg type="translation" xml:lang="en" source="#claude">Cf. Gl Ordal 10. c. 13a. 28a</seg></note>
       </div>
     </body>
   </text>

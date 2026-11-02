@@ -20,6 +20,8 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">541</biblScope></bibl>
           <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+          <bibl xml:id="claude" type="translation">English renderings of Liebermann’s German notes, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -38,15 +40,17 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-19">Generated from row 3684 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="III Atr 3">
         <head>Quadr Rb III Atr 3</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Quadr Rb III Atr 3" corresp="#wit-lat"><pb n="541" ed="#liebermann"/>III. De landcopo et domini dono et lahcopo et ƿitƿord et geƿitnesse.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Quadr Rb III Atr 3" corresp="#wit-lat"><pb n="541" ed="#liebermann"/><ptr type="liebermannNote" n="*" target="#Quadr-Rb_III-Atr-3.lnote.oe.erkl-clause"/>III. De landcopo et domini dono et lahcopo et ƿitƿord et geƿitnesse.</ab>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 541 (two independent readings of the page images, differences settled against the page)</note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">III. Of <hi rend="italic">landceap</hi> (land-purchase) and the lord's gift and <hi rend="italic">lahceap</hi> (purchase of law) and <hi rend="italic">witword</hi> (declaration, warranty) and <hi rend="italic">gewitnes</hi> (witness).</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="Quadr-Rb_III-Atr-3.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">312</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">witword</hi> fasst als weiter denn ‘Testament’ Lindkvist <hi rend="italic">Middle Engl. place names</hi> 146<hi rend="superscript">1</hi></seg><seg type="translation" xml:lang="en" source="#claude">Lindkvist, <hi rend="italic">Middle Engl. place names</hi> 146<hi rend="superscript">1</hi>, takes <hi rend="italic">witword</hi> as wider than ‘testament’</seg></note>
       </div>
     </body>
   </text>

@@ -23,6 +23,7 @@
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">657</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
           <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
         </listBibl>
       </sourceDesc>
     </fileDesc>
@@ -39,13 +40,14 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+      <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="32 B 7">
         <head><ref type="lawCode" target="law:ECf">ECf</ref> 32 B 7</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 32 B 7"><pb n="657" ed="#liebermann"/>Et qui leges apostabit, si fuerit Anglicus uel Dacus uel<ptr type="liebermannNote" n="b" target="#ECf_32-B-7.lnote.la.fn.b"/> Waliscus uel Albanicus aut<ptr type="liebermannNote" n="10" target="#ECf_32-B-7.lnote.la.10"/> Insulicola, were sue reus sit erga<ptr type="liebermannNote" n="11" target="#ECf_32-B-7.lnote.la.11"/> regem. Et si secundo id faciat, reddat bis weram suam. Et si quid<ptr type="liebermannNote" n="12" target="#ECf_32-B-7.lnote.la.12"/> addat tertio, reus sit omnium que habebit.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 32 B 7"><pb n="657" ed="#liebermann"/><ptr type="liebermannNote" n="*" target="#ECf_32-B-7.lnote.oe.erkl-clause"/>Et qui leges apostabit, si fuerit Anglicus uel Dacus uel<ptr type="liebermannNote" n="b" target="#ECf_32-B-7.lnote.la.fn.b"/> Waliscus uel Albanicus aut<ptr type="liebermannNote" n="10" target="#ECf_32-B-7.lnote.la.10"/> Insulicola, were sue reus sit erga<ptr type="liebermannNote" n="11" target="#ECf_32-B-7.lnote.la.11"/> regem. Et si secundo id faciat, reddat bis weram suam. Et si quid<ptr type="liebermannNote" n="12" target="#ECf_32-B-7.lnote.la.12"/> addat tertio, reus sit omnium que habebit.</ab>
         <note type="comparisonPrinted" source="#liebermann">Quadr. II Cn. 83. 83, 1; 2</note>
         <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 657 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
         <note type="editorial">This passage is not part of ECf or ECf retr: it is one of the additions of the London collection (Leges Anglorum s. XIII in. Londoniis collectae), which Liebermann prints across the page as an insertion into ECf retr. 32 (32 A–E, pp. 655–660). The dictionary cites it as “ECf 32 B …”, so it is kept with ECf here.</note>
@@ -55,6 +57,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_32-B-7.lnote.la.11" n="11" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">657</biblScope></bibl><seg type="original" xml:lang="de">apud <hi rend="italic">Or Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">apud Or Ld</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_32-B-7.lnote.la.12" n="12" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">657</biblScope></bibl><seg type="original" xml:lang="de">quis <hi rend="italic">Quadr.</hi></seg><seg type="translation" xml:lang="en" source="#claude">quis Quadr.</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">And whoever casts aside the laws, whether he be English or Dane or Welsh or Scot or Islander, let him be liable to the king for his wergild. And if he does it a second time, let him pay his wergild twice. And if he adds anything a third time, let him be liable for all that he has.</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_32-B-7.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">348</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Walliser 1b. 11; Schottland 3—4; Inseln 1</seg><seg type="translation" xml:lang="en" source="#claude">Cf. <hi rend="italic">Gl</hi> Walliser 1b. 11; Schottland 3—4; Inseln 1</seg></note>
       </div>
     </body>
   </text>

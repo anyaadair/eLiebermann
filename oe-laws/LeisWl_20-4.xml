@@ -25,6 +25,7 @@
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">506–515</biblScope></bibl>
           <bibl xml:id="robertson" type="edition">A. J. Robertson, The Laws of the Kings of England from Edmund to Henry I (Cambridge: Cambridge University Press, 1925), p. <biblScope unit="page">262</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-hk"><abbr>Hk</abbr> <note type="manuscript">Holkham Hall, MS 228, f. 141, c. 1230</note></witness>
@@ -48,6 +49,7 @@
       <change when="2026-10" type="checked">Liebermann’s text of MS Hk added from Gesetze I, p. 506–515.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS I added from Gesetze I, p. 506–515.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS L added from Gesetze I, p. 506–515.</change>
+      <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -57,10 +59,11 @@
         <ab type="liebermannText" xml:lang="xno" source="#liebermann" corresp="#wit-i"><pb n="506–515" ed="#liebermann"/>[20, 4] Cil qui tenent lur terre a cense, so[i]t lur dreit relief a tant cum la cense est de un an.</ab>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" corresp="#wit-l"><pb n="506–515" ed="#liebermann"/>[20,4] Qui terram ad censum annuum tenet, sit eius releuium quantum unius anni census.</ab>
         <ab type="editionText" xml:lang="xno" source="#robertson" n="20.4" corresp="#wit-i"><pb n="262" ed="#robertson"/>[Cil qui tenent lur terre a cense, so[i]t lur dreit relief a tant cum la cense est de un an.]</ab>
-        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="506–515" ed="#liebermann"/>20, 4. Die, welche ihr Land auf Zins besitzen: sei ihr richtiges Erbantritts-Gefälle [an den Grundherrn] ebenso viel, wie der Zins eines Jahres beträgt.</ab>
+        <ab type="translation" xml:lang="de" source="#liebermann"><pb n="506–515" ed="#liebermann"/><ptr type="liebermannNote" n="*" target="#LeisWl_20-4.lnote.de.clause"/>20, 4. Die, welche ihr Land auf Zins besitzen: sei ihr richtiges Erbantritts-Gefälle [an den Grundherrn] ebenso viel, wie der Zins eines Jahres beträgt.</ab>
         <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">20, 4. Those who hold their land at rent: their proper relief on entering an inheritance [due to the landlord] shall be as much as the rent of one year amounts to.</ab>
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-i"><pb n="263" ed="#robertson"/>[For those who hold their land by the payment of rent the legal heriot shall be the equivalent of a year's rent.]</ab>
         <note type="editorial">Added October 2026 from Robertson pp. 262–263 (text and translation); From I, where it comes after 38 (not in Hk); Robertson follows the order of L.; Liebermann’s text and German translation added from Gesetze I p. 506–515, October 2026 (two independent readings of the page images)</note>
+        <note type="liebermannNote" subtype="erklaerung" xml:id="LeisWl_20-4.lnote.de.clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">291</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Heergewäte 2b. 12c; Bauer 5d. Bei Glanvilla IX 4 ist <hi rend="italic">rationabile rclevium de socagio: census per 1 annum</hi>, und auf Battles Landgütern gilt <hi rend="italic">pro ingressu tenementi redditu[s] per annum</hi>. Die <hi rend="italic">censuarii</hi>, hier gesendert vom Villan <hi rend="italic">o.</hi> 20, 3, sind eine Klasse im Domesdaybuche; Ashley <hi rend="italic">Econ. hist.</hi> I 57; Vinogradoff <hi rend="italic">Villainage</hi> 185 ff.</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf. Gl</hi> Heergewäte 2b. 12c; Bauer 5d. In Glanvilla IX 4 the <hi rend="italic">rationabile rclevium de socagio</hi> is <hi rend="italic">census per 1 annum</hi>, and on Battle’s estates <hi rend="italic">pro ingressu tenementi redditu[s] per annum</hi> applies. The <hi rend="italic">censuarii</hi>, here separated from the villein <hi rend="italic">above</hi> 20, 3, are a class in Domesday Book; Ashley <hi rend="italic">Econ. hist.</hi> I 57; Vinogradoff <hi rend="italic">Villainage</hi> 185 ff.</seg></note>
       </div>
     </body>
   </text>

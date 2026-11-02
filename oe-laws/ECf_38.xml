@@ -23,6 +23,7 @@
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">668</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
           <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
         </listBibl>
       </sourceDesc>
     </fileDesc>
@@ -39,13 +40,14 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+      <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="38">
         <head><ref type="lawCode" target="law:ECf">ECf</ref> 38</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 38"><pb n="668" ed="#liebermann"/><ptr type="liebermannNote" n="*" target="#ECf_38.lnote.la.star"/>Defensum erat<ptr type="liebermannNote" n="22" target="#ECf_38.lnote.la.22"/> etiam<ptr type="liebermannNote" n="19" target="#ECf_38.lnote.la.19"/> in lege<ptr type="liebermannNote" n="d" target="#ECf_38.lnote.la.fn.d"/>, ne aliquis emat uiuum animal uel pannum usatum sine plegiis et bonis testibus.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 38"><pb n="668" ed="#liebermann"/><ptr type="liebermannNote" n="*" target="#ECf_38.lnote.oe.erkl-clause"/><ptr type="liebermannNote" n="*" target="#ECf_38.lnote.la.star"/>Defensum erat<ptr type="liebermannNote" n="22" target="#ECf_38.lnote.la.22"/> etiam<ptr type="liebermannNote" n="19" target="#ECf_38.lnote.la.19"/> in lege<ptr type="liebermannNote" n="d" target="#ECf_38.lnote.la.fn.d"/>, ne aliquis emat uiuum animal uel pannum usatum sine plegiis et bonis testibus.</ab>
         <note type="comparison" source="#liebermann" n="668"><label>printed alongside</label> <ref target="clause:ECfRetr_38">ECf retr 38</ref></note>
         <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 668 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_38.lnote.la.star" n="*" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">668</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="bold">De emptionibus sine fideiussoribus, quod Anglice dicitur fastermannes</hi> <hi rend="italic">Rubr. Lond; vgl.</hi> festermen <hi rend="italic">Northu.</hi> 2, 3</seg><seg type="translation" xml:lang="en" source="#claude">rubric in Lond: De emptionibus sine fideiussoribus, quod Anglice dicitur fastermannes; cf. festermen Northu. 2, 3</seg></note>
@@ -53,6 +55,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_38.lnote.la.19" n="19" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">668</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Hk</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_38.lnote.la.22" n="22" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">668</biblScope></bibl><seg type="original" xml:lang="de">et. er. <hi rend="italic">Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">et. er. Hr</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">It was also forbidden in the law that anyone should buy a living animal or used cloth without pledges and good witnesses.</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_38.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">350</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Handel 8a. h. 10 B; Gewährbürge 1. 5. 6; Kaufzeugen. — *<hi rend="italic">De empt.</hi> bis <hi rend="italic">fastermannes</hi> [zu diesem Worte <hi rend="italic">s. o.</hi> II 333. 485 n. 12a], ohne <hi rend="superscript">15</hi><hi rend="italic">Quod</hi> bis <hi rend="italic">mon.</hi>, Rs</seg><seg type="translation" xml:lang="en" source="#claude">Cf. <hi rend="italic">Gl</hi> Handel 8a. h. 10 B; Gewährbürge 1. 5. 6; Kaufzeugen. — *<hi rend="italic">De empt.</hi> to <hi rend="italic">fastermannes</hi> [on this word see above, II 333. 485 n. 12a], without <hi rend="superscript">15</hi><hi rend="italic">Quod</hi> to <hi rend="italic">mon.</hi>, Rs</seg></note>
       </div>
     </body>
   </text>

@@ -23,6 +23,7 @@
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">645</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
           <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
         </listBibl>
       </sourceDesc>
     </fileDesc>
@@ -39,13 +40,14 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+      <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="20.1a">
         <head><ref type="lawCode" target="law:ECf">ECf</ref> 20.1a</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 20.1a"><pb n="645" ed="#liebermann"/>Quodsi aufugeret<ptr type="liebermannNote" n="23" target="#ECf_20-1a.lnote.la.23"/>, et dicerent, quod non possent<ptr type="liebermannNote" n="24" target="#ECf_20-1a.lnote.la.24"/> habere<ptr type="liebermannNote" n="7" target="#ECf_20-1a.lnote.la.7"/> eum<ptr type="liebermannNote" n="25" target="#ECf_20-1a.lnote.la.25"/> ad<ptr type="liebermannNote" n="22" target="#ECf_20-1a.lnote.la.22"/> rectum, daretur eis terminus<ptr type="liebermannNote" n="26" target="#ECf_20-1a.lnote.la.26"/> a iusticia<ptr type="liebermannNote" n="27" target="#ECf_20-1a.lnote.la.27"/> regis<ptr type="liebermannNote" n="28" target="#ECf_20-1a.lnote.la.28"/> triginta<ptr type="liebermannNote" n="k" target="#ECf_20-1a.lnote.la.fn.k"/> dierum<ptr type="liebermannNote" n="29" target="#ECf_20-1a.lnote.la.29"/> et unius diei.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 20.1a"><pb n="645" ed="#liebermann"/><ptr type="liebermannNote" n="*" target="#ECf_20-1a.lnote.oe.erkl-clause"/>Quodsi aufugeret<ptr type="liebermannNote" n="23" target="#ECf_20-1a.lnote.la.23"/>, et dicerent, quod non possent<ptr type="liebermannNote" n="24" target="#ECf_20-1a.lnote.la.24"/> habere<ptr type="liebermannNote" n="7" target="#ECf_20-1a.lnote.la.7"/> eum<ptr type="liebermannNote" n="25" target="#ECf_20-1a.lnote.la.25"/> ad<ptr type="liebermannNote" n="22" target="#ECf_20-1a.lnote.la.22"/> rectum, daretur eis terminus<ptr type="liebermannNote" n="26" target="#ECf_20-1a.lnote.la.26"/> a iusticia<ptr type="liebermannNote" n="27" target="#ECf_20-1a.lnote.la.27"/> regis<ptr type="liebermannNote" n="28" target="#ECf_20-1a.lnote.la.28"/> triginta<ptr type="liebermannNote" n="k" target="#ECf_20-1a.lnote.la.fn.k"/> dierum<ptr type="liebermannNote" n="29" target="#ECf_20-1a.lnote.la.29"/> et unius diei.</ab>
         <note type="comparison" source="#liebermann" n="645"><label>printed alongside</label> <ref target="clause:ECfRetr_20-1a">ECf retr 20.1a</ref></note>
         <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 645 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_20-1a.lnote.la.fn.k" n="k" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">645</biblScope></bibl><seg type="original" xml:lang="de">Monat und Tag <hi rend="italic">o.</hi> 15, 1; <hi rend="italic">u.</hi> 23, 2; Leis Wl 3</seg><seg type="translation" xml:lang="en" source="#claude">a month and a day, above 15, 1; below 23, 2; Leis Wl 3</seg></note>
@@ -59,6 +61,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_20-1a.lnote.la.28" n="28" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">645</biblScope></bibl><seg type="original" xml:lang="de">spatium <hi rend="italic">fügt zu S</hi></seg><seg type="translation" xml:lang="en" source="#claude">S adds spatium</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_20-1a.lnote.la.29" n="29" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">645</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Hk Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Hk Hr</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">But if he fled, and they said that they could not have him to right, a term of thirty days and one day should be given them by the king's justice.</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_20-1a.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">346</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Ebd.</hi> Zehnerschaft 26d. 31; Dorf 3c — <hi rend="italic">lege t. eis</hi><hi rend="superscript">35</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Ibid.</hi> Zehnerschaft 26d. 31; Dorf 3c — <hi rend="italic">lege t. eis</hi><hi rend="superscript">35</hi> Rs</seg></note>
       </div>
     </body>
   </text>

@@ -23,6 +23,7 @@
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">628</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
           <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
         </listBibl>
       </sourceDesc>
     </fileDesc>
@@ -39,19 +40,20 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+      <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="2.2">
         <head><ref type="lawCode" target="law:ECf">ECf</ref> 2.2</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 2.2"><pb n="628" ed="#liebermann"/>Item ab Ascensione<ptr type="liebermannNote" n="l" target="#ECf_2-2.lnote.la.fn.l"/> Domini usque ad octauas<ptr type="liebermannNote" n="m" target="#ECf_2-2.lnote.la.fn.m"/> pentecostes.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 2.2"><pb n="628" ed="#liebermann"/>Item ab<ptr type="liebermannNote" n="a" target="#ECf_2-2.lnote.oe.erkl-a"/> Ascensione<ptr type="liebermannNote" n="l" target="#ECf_2-2.lnote.la.fn.l"/> Domini usque ad octauas<ptr type="liebermannNote" n="m" target="#ECf_2-2.lnote.la.fn.m"/> pentecostes.</ab>
         <note type="comparison" source="#liebermann" n="628"><label>printed alongside</label> <ref target="clause:ECfRetr_2-2">ECf retr 2.2</ref></note>
         <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 628 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
-        <note type="editorial">Liebermann’s upright (roman) letter a after “ab” refers to his explanatory notes, the Erklärungen (printed as Gesetze III; his note on p. 627 calls it “Band II”), which are not yet added here.</note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_2-2.lnote.la.fn.l" n="l" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">628</biblScope></bibl><seg type="original" xml:lang="de">30. <hi rend="italic">April</hi> — 3. <hi rend="italic">Juni</hi></seg><seg type="translation" xml:lang="en" source="#claude">30 April – 3 June</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_2-2.lnote.la.fn.m" n="m" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">628</biblScope></bibl><seg type="original" xml:lang="de">17. <hi rend="italic">Mai</hi> — 20. <hi rend="italic">Juni</hi></seg><seg type="translation" xml:lang="en" source="#claude">17 May – 20 June</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">Likewise from the Ascension of the Lord until the octave of Pentecost.</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_2-2.lnote.oe.erkl-a" n="a" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">343</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">Anderswo von Bittfahrttagen, also 4 Tage früher</seg><seg type="translation" xml:lang="en" source="#claude">Elsewhere from the Rogation days, i.e. 4 days earlier</seg></note>
       </div>
     </body>
   </text>

@@ -21,6 +21,8 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">623</biblScope></bibl>
           <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+          <bibl xml:id="claude" type="translation">English renderings of Liebermann’s German notes, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -39,15 +41,18 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-19">Generated from row 4031 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="15">
         <head><ref type="lawCode" target="law:PsCnFor">Ps Cn for</ref> 15</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Ps Cn for 15" corresp="#wit-lat"><pb n="623" ed="#liebermann"/>Si quis uim aliquam primariis foreste mee intulerit, si liberalis sit, amittat libertatem et omnia sua; si uillanus, abscindatur dextra.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Ps Cn for 15" corresp="#wit-lat"><pb n="623" ed="#liebermann"/>Si quis uim aliquam primariis foreste mee intulerit, si liberalis sit, amittat libertatem<ptr type="liebermannNote" n="a" target="#PsCnFor_15.lnote.oe.erkl-a"/> et omnia sua; si uillanus, abscindatur dextra<ptr type="liebermannNote" n="b" target="#PsCnFor_15.lnote.oe.erkl-b"/>.</ab>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 623 (two independent readings of the page images, differences settled against the page)</note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">If anyone does any violence to the chief men of my forest, if he is a noble, let him lose his freedom and all his goods; if a villein, let his right hand be cut off.</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="PsCnFor_15.lnote.oe.erkl-a" n="a" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">338</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de">Vielleicht nicht ‘Gefängnis’ (<hi rend="italic">s. d. Gl</hi> 6f. g), sondern ‘Verknechtung’ (<hi rend="italic">s. d. Gl</hi> 12a). Sie übte Schottland 1080—90 an kriegsgefangenen Angelsachsen (Sym. Dunelm. 247); der strafrechtlich harte Verfasser entnahm sie gern dem Altertum. — Vielleicht ist eine Zeile übersprungen, und meinte Verf., den <hi rend="italic">illiberalis</hi> zu verknechten, den <hi rend="italic">liberalis</hi> aber mit Adelsverlust zu strafen, wie <hi rend="italic">u.</hi> 22. 25</seg><seg type="translation" xml:lang="en" source="#claude">Perhaps not ‘imprisonment’ (<hi rend="italic">see</hi> that word in <hi rend="italic">Gl</hi> 6f. g) but ‘enslavement’ (<hi rend="italic">see</hi> that word in <hi rend="italic">Gl</hi> 12a). Scotland practised it in 1080—90 on Anglo-Saxon prisoners of war (Sym. Dunelm. 247); the author, harsh in penal matters, was glad to take it from antiquity. — Perhaps a line has been skipped, and the author meant to enslave the <hi rend="italic">illiberalis</hi> but to punish the <hi rend="italic">liberalis</hi> with loss of noble rank, as <hi rend="italic">below</hi> 22. 25</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="PsCnFor_15.lnote.oe.erkl-b" n="b" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">339</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">S. Gl</hi> Hand 11d. f. Verf. übertreibt den Schutz für Königsbeamte im Anschluss an wirklichen Gerichtsfrieden (<hi rend="italic">s. d. Gl</hi> 4) und Strafen für blutig (<hi rend="italic">s. d.</hi> 5. 8) fechten in Gegenwart staatlicher Obrigkeit; <hi rend="italic">s.</hi> Widerstand 1. 7</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">See Gl</hi> Hand 11d. f. The author exaggerates the protection of royal officials, following the real peace of the court (<hi rend="italic">see</hi> that word in <hi rend="italic">Gl</hi> 4) and the penalties for fighting to bloodshed (<hi rend="italic">see</hi> that word 5. 8) in the presence of public authority; <hi rend="italic">see</hi> Widerstand 1. 7</seg></note>
       </div>
     </body>
   </text>

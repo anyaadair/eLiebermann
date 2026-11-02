@@ -23,6 +23,7 @@
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">667</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
           <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
         </listBibl>
       </sourceDesc>
     </fileDesc>
@@ -39,13 +40,14 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+      <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="36.4">
         <head><ref type="lawCode" target="law:ECf">ECf</ref> 36.4</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 36.4"><pb n="667" ed="#liebermann"/>Quodsi interfectori<ptr type="liebermannNote" n="16" target="#ECf_36-4.lnote.la.16"/> defecerint iudices<ptr type="liebermannNote" n="c" target="#ECf_36-4.lnote.la.fn.c"/> et testes<ptr type="liebermannNote" n="d" target="#ECf_36-4.lnote.la.fn.d"/>, et diracionatum<ptr type="liebermannNote" n="17" target="#ECf_36-4.lnote.la.17"/> fuerit, quod iniuste sit<ptr type="liebermannNote" n="18" target="#ECf_36-4.lnote.la.18"/> interfectus, interfector dabit uadimonium iusticie<ptr type="liebermannNote" n="f" target="#ECf_36-4.lnote.la.fn.f"/> episcopi et fideiussores.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 36.4"><pb n="667" ed="#liebermann"/><ptr type="liebermannNote" n="*" target="#ECf_36-4.lnote.oe.erkl-clause"/>Quodsi interfectori<ptr type="liebermannNote" n="16" target="#ECf_36-4.lnote.la.16"/> defecerint iudices<ptr type="liebermannNote" n="c" target="#ECf_36-4.lnote.la.fn.c"/> et testes<ptr type="liebermannNote" n="d" target="#ECf_36-4.lnote.la.fn.d"/>, et diracionatum<ptr type="liebermannNote" n="17" target="#ECf_36-4.lnote.la.17"/> fuerit, quod iniuste sit<ptr type="liebermannNote" n="18" target="#ECf_36-4.lnote.la.18"/> interfectus, interfector dabit uadimonium iusticie<ptr type="liebermannNote" n="f" target="#ECf_36-4.lnote.la.fn.f"/> episcopi et fideiussores.</ab>
         <note type="comparison" source="#liebermann" n="667"><label>printed alongside</label> <ref target="clause:ECfRetr_36-4">ECf retr 36.4</ref></note>
         <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 667 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_36-4.lnote.la.fn.c" n="c" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">667</biblScope></bibl><seg type="original" xml:lang="de">Urtheilfinder</seg><seg type="translation" xml:lang="en" source="#claude">judgement-finders</seg></note>
@@ -55,6 +57,7 @@
         <note type="liebermannNote" subtype="textual" xml:id="ECf_36-4.lnote.la.17" n="17" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">667</biblScope></bibl><seg type="original" xml:lang="de">derat. <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">derat. Hk</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_36-4.lnote.la.18" n="18" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">667</biblScope></bibl><seg type="original" xml:lang="de">i. sit <hi rend="italic">S; fehlt Hr</hi></seg><seg type="translation" xml:lang="en" source="#claude">i. sit S; lacking in Hr</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">But if the slayer lacks judges and witnesses, and it is deraigned that he was killed unjustly, the slayer shall give a gage to the bishop's justice, and sureties.</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_36-4.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">350</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl.</hi> Geistliches Gericht 3. 27c; Bischof 9e. — Des Retr.'s letzte drei Worte verwirren die Parteirollen — <hi rend="italic">disr. f. q. iniuste</hi><hi rend="superscript">23</hi> [richtig] Rs</seg><seg type="translation" xml:lang="en" source="#claude">Cf. Geistliches Gericht 3. 27c; Bischof 9e. — The Retr.'s last three words confuse the roles of the parties — <hi rend="italic">disr. f. q. iniuste</hi><hi rend="superscript">23</hi> [correct] Rs</seg></note>
       </div>
     </body>
   </text>

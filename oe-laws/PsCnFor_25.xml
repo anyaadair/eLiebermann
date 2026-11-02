@@ -21,6 +21,8 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">624</biblScope></bibl>
           <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+          <bibl xml:id="claude" type="translation">English renderings of Liebermann’s German notes, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -39,15 +41,17 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-19">Generated from row 4043 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="25">
         <head><ref type="lawCode" target="law:PsCnFor">Ps Cn for</ref> 25</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Ps Cn for 25" corresp="#wit-lat"><pb n="624" ed="#liebermann"/>Si uero occiderit, amittat liberalis scutum liberalitatis; si sit illiberalis, careat libertate, si seruus uita.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Ps Cn for 25" corresp="#wit-lat"><pb n="624" ed="#liebermann"/>Si uero occiderit, amittat liberalis scutum<ptr type="liebermannNote" n="m" target="#PsCnFor_25.lnote.oe.erkl-m"/> liberalitatis; si sit illiberalis, careat libertate, si seruus uita.</ab>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 624 (two independent readings of the page images, differences settled against the page)</note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">But if he kills it, let the noble lose the shield of his nobility; if he is a non-noble, let him lose his freedom; if a slave, his life.</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="PsCnFor_25.lnote.oe.erkl-m" n="m" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">339</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Bei hier zitiertem Math. Paris heisst <hi rend="italic">libertas</hi> ‘Privileg der Immunität und Exemtion’, nicht Adelstand. — Ritter (<hi rend="italic">s. d. Gl</hi> 6. a) Osbert Giffard ward 1285 im Geistlichen Gerichte Canterburys verurteilt: <hi rend="italic">insigniis militaribus sit privatus</hi>; Selden <hi rend="italic">Tituli honor.</hi> II 5, 38. Über <hi rend="italic">scutum gentilitium</hi> und die Strafe der Entziehung der Waffen, u. a. des <hi rend="italic">scutum</hi> gegen Gefolgsleute in Frankreich, <hi rend="italic">s.</hi> E. Mayer <hi rend="italic">Frz. Dt. Vfg.</hi> II 134. 163. — Zu <hi rend="italic">libertate carere s. o.</hi> 15<hi rend="superscript">a</hi></seg><seg type="translation" xml:lang="en" source="#claude">In Matthew Paris, quoted here, <hi rend="italic">libertas</hi> means ‘privilege of immunity and exemption’, not noble rank. — The knight (<hi rend="italic">see</hi> that word in <hi rend="italic">Gl</hi> 6. a) Osbert Giffard was sentenced in 1285 in the ecclesiastical court of Canterbury: <hi rend="italic">insigniis militaribus sit privatus</hi>; Selden <hi rend="italic">Tituli honor.</hi> II 5, 38. On the <hi rend="italic">scutum gentilitium</hi> and the penalty of taking away arms, among them the <hi rend="italic">scutum</hi>, from vassals in France, <hi rend="italic">see</hi> E. Mayer <hi rend="italic">Frz. Dt. Vfg.</hi> II 134. 163. — On <hi rend="italic">libertate carere see above</hi> 15<hi rend="superscript">a</hi></seg></note>
       </div>
     </body>
   </text>

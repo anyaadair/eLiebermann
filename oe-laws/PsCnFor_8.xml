@@ -21,6 +21,8 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">621</biblScope></bibl>
           <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
+          <bibl xml:id="claude" type="translation">English renderings of Liebermann’s German notes, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -39,15 +41,17 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-10-19">Generated from row 4021 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
+      <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="8">
         <head><ref type="lawCode" target="law:PsCnFor">Ps Cn for</ref> 8</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Ps Cn for 8" corresp="#wit-lat"><pb n="621" ed="#liebermann"/>Minutorum quilibet unam lanceam, unam arcubalistam et XV solidos argenti.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Ps Cn for 8" corresp="#wit-lat"><pb n="621" ed="#liebermann"/>Minutorum quilibet unam lanceam, unam arcubalistam<ptr type="liebermannNote" n="p" target="#PsCnFor_8.lnote.oe.erkl-p"/> et XV solidos argenti.</ab>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 621 (two independent readings of the page images, differences settled against the page)</note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">Each of the lesser men one lance, one crossbow and fifteen shillings of silver.</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="PsCnFor_8.lnote.oe.erkl-p" n="p" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">338</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Zum <hi rend="italic">Gl</hi> Armbrust trage nach: ein Gefolgsmann Wilhelms I. ward 1079 <hi rend="italic">mid anan arblaste ofscoten</hi>; Ann. Agsax.</seg><seg type="translation" xml:lang="en" source="#claude">Add to <hi rend="italic">Gl</hi> Armbrust: a follower of William I was in 1079 <hi rend="italic">mid anan arblaste ofscoten</hi> (shot with a crossbow); Ann. Agsax.</seg></note>
       </div>
     </body>
   </text>

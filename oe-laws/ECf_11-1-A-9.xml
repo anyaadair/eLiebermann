@@ -23,6 +23,7 @@
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">636</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It is a crib to help the reader with Liebermann’s German, not a separate translation</bibl>
           <bibl xml:id="claude-crib" type="translation">An English crib of the Latin text, semi-literal, made for this database in 2026 with Claude, a large language model (LLM) made by Anthropic. It keeps close to the wording of the original and uses the established English of Anglo-Latin legal, liturgical and canon-law formulae. It is an aid to reading the original, not a published translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
+          <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
         </listBibl>
       </sourceDesc>
     </fileDesc>
@@ -39,18 +40,20 @@
     </profileDesc>
     <revisionDesc>
       <change when="2026-11-01">Transcribed from Liebermann, Gesetze I, by Claude; to be checked against the print.</change>
+      <change when="2026-11-02">Liebermann’s Erklärungen (Gesetze III, 1916) added, with his note marks in the text (read from the page images of vols. I and III).</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="11.1 A 9">
         <head><ref type="lawCode" target="law:ECf">ECf</ref> 11.1 A 9</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 11.1 A 9"><pb n="636" ed="#liebermann"/>Ista uero<ptr type="liebermannNote" n="5" target="#ECf_11-1-A-9.lnote.la.5"/> debet omnia rex in propria persona, inspectis et tactis sacrosanctis euangeliis, et super sacras et sanctas reliquias coram regno et sacerdotio et clero iurare<ptr type="liebermannNote" n="b" target="#ECf_11-1-A-9.lnote.la.fn.b"/>, antequam ab archiepiscopis et episcopis regni coronetur.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="ECf 11.1 A 9"><pb n="636" ed="#liebermann"/><ptr type="liebermannNote" n="*" target="#ECf_11-1-A-9.lnote.oe.erkl-clause"/>Ista uero<ptr type="liebermannNote" n="5" target="#ECf_11-1-A-9.lnote.la.5"/> debet omnia rex in propria persona, inspectis et tactis sacrosanctis euangeliis, et super sacras et sanctas reliquias coram regno et sacerdotio et clero iurare<ptr type="liebermannNote" n="b" target="#ECf_11-1-A-9.lnote.la.fn.b"/>, antequam ab archiepiscopis et episcopis regni coronetur.</ab>
         <note type="editorial">Liebermann’s text transcribed from Gesetze I p. 636 (November 2026): read from the page images and checked against the scan’s own text layer, differences settled against the page.</note>
         <note type="editorial">This passage is not part of ECf or ECf retr: it is one of the additions of the London collection (Leges Anglorum s. XIII in. Londoniis collectae), which Liebermann prints in smaller type across the page, under ECf retr. 11, 1, and numbers 11, 1 A ff. The dictionary cites it as “ECf 11, 1 A …”, so it is kept with ECf here.</note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_11-1-A-9.lnote.la.fn.b" n="b" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">636</biblScope></bibl><seg type="original" xml:lang="de">il grauntera a tenure les leyes et custumes du royalme … et les malvoys leyes et customez de tout oustera; <hi rend="italic">Eid S.</hi> 635<hi rend="italic">c</hi></seg><seg type="translation" xml:lang="en" source="#claude">il grauntera a tenure les leyes et custumes du royalme … et les malvoys leyes et customez de tout oustera; the oath, p. 635, note c</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ECf_11-1-A-9.lnote.la.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">636</biblScope></bibl><seg type="original" xml:lang="de">d. u. <hi rend="italic">K</hi></seg><seg type="translation" xml:lang="en" source="#claude">d. u. K</seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin">All these things the king ought to swear in his own person, having looked upon and touched the holy Gospels, and upon the sacred and holy relics, before the kingdom and the priesthood and the clergy, before he is crowned by the archbishops and bishops of the kingdom.</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="ECf_11-1-A-9.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">345</biblScope><biblScope unit="column">1</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">S. o.</hi> A 2. — <hi rend="italic">Ista d. u.</hi><hi rend="superscript">5</hi> <hi rend="italic">o.</hi> — <hi rend="italic">ab arch. et ab ep. regni</hi> Rs</seg><seg type="translation" xml:lang="en" source="#claude">See above A 2. — <hi rend="italic">Ista d. u.</hi><hi rend="superscript">5</hi> <hi rend="italic">o.</hi> — <hi rend="italic">ab arch. et ab ep. regni</hi> Rs</seg></note>
       </div>
     </body>
   </text>
