@@ -5,10 +5,14 @@ node_modules/
 vendor/
 Gemfile.lock
 data/entries.json
+data/entries-text.json
 data/entry-order.json
 data/laws.json
 data/laws-text.json
-data/laws-brief.json
+data/laws-notes.json
+data/laws/
+data/clauses/
+data/laws-text/
 data/dict-citations.json
 .DS_Store
 __pycache__/

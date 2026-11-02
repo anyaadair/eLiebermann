@@ -48,9 +48,9 @@ const entries = fs.readdirSync(dir)
             page: pick(xml, /<biblScope unit="page">([^<]*)<\/biblScope>/),
             gloss: snippet,
             // a spelling, not a word (<usg type="dom">spelling</usg>): badged in the list
-            spelling: /<usg type="dom">spelling<\/usg>/.test(xml),
+            spelling: /<usg type="dom">spelling<\/usg>/.test(xml) || undefined,
             // an entry that only sends the reader to another headword (type="xref"): badged too
-            xref: /<entry[^>]*type="xref"/.test(xml),
+            xref: /<entry[^>]*type="xref"/.test(xml) || undefined,
             // other spellings to search under (data/headword-variants.json)
             also: Array.isArray(variants[f.replace(/\.xml$/, '')]) ? variants[f.replace(/\.xml$/, '')] : undefined,
             text
@@ -59,9 +59,14 @@ const entries = fs.readdirSync(dir)
     .sort((a, b) => a.id.localeCompare(b.id));
 
 fs.mkdirSync(path.join(repo, 'data'), { recursive: true });
+// The list leaves out Liebermann's whole text, which only the Dictionary page's
+// "Also search Liebermann's text" needs: that is in data/entries-text.json ({ id: text }),
+// loaded only when the box is ticked.
 fs.writeFileSync(path.join(repo, 'data', 'entries.json'),
-    '[\n' + entries.map(e => JSON.stringify(e)).join(',\n') + '\n]\n');
-console.log(`data/entries.json: ${entries.length} entries`);
+    '[\n' + entries.map(({ text, ...e }) => JSON.stringify(e)).join(',\n') + '\n]\n');
+fs.writeFileSync(path.join(repo, 'data', 'entries-text.json'),
+    JSON.stringify(Object.fromEntries(entries.map(e => [e.id, e.text]))));
+console.log(`data/entries.json, data/entries-text.json: ${entries.length} entries`);
 
 // A small list of every entry's id, headword and language (and 1 for a
 // spelling entry, and then any other spellings to search under), for the previous and next links and the sidebar of each

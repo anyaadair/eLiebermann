@@ -7,7 +7,8 @@
  *   LawPanel.suggestBox(input, listEl, typed => [{ value, html }], pick(value))
  *   LawPanel.kwic(text, [[start, end]], lang)        -> HTML, the matches marked
  *   LawPanel.watch(panel, used)                      highlights the section in use
- *   LawPanel.fields(textEntry, where)                -> [[label, text, lang]] from data/laws-text.json
+ *   LawPanel.fields(textEntry, where)                -> [[label, text, lang]] from data/laws-text
+ *   LawPanel.loadTexts(prefix)                       -> one law code's texts (data/laws-text/<prefix>.json)
  */
 (function () {
     'use strict';
@@ -93,7 +94,8 @@
 
     let textsLoading = null, dictLoading = null;
     const root = () => window.SITE_ROOT || '';
-    const loadTexts = () => textsLoading || (textsLoading = fetch(root() + 'data/laws-text.json').then(r => r.ok ? r.json() : {}).catch(() => ({})));
+    // one law code's texts and notes, by the start of its clause ids (tools/build-laws-index.js)
+    const loadTexts = prefix => textsLoading || (textsLoading = fetch(root() + 'data/laws-text/' + encodeURIComponent(prefix) + '.json').then(r => r.ok ? r.json() : {}).catch(() => ({})));
     const loadDict = () => dictLoading || (dictLoading = fetch(root() + 'data/dict-citations.json').then(r => r.ok ? r.json() : {}).catch(() => ({})));
 
     window.LawPanel = { pills, suggestBox, kwic, watch, fields, WHERE, loadTexts, loadDict };

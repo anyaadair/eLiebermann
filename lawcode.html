@@ -96,7 +96,8 @@ scripts:
     tol.checked = params.get('tol') === '1';
 
     let code = null, codes = [], mine = [], texts = null, dict = null, tag = null, textLabel = '', enLabel = '';
-    let codeSources = {};   // data/code-sources.json (tools/build-laws-index.js): each code's manuscripts and works
+    let codeSources = {};   // each code's manuscripts and works (data/laws/<prefix>.json, written by tools/build-laws-index.js)
+    let prefix = '';        // the start of this code's clause ids (Hn_1 -> Hn), which names its data files
 
     function render(clauses) {
         const i = codes.indexOf(code);
@@ -236,7 +237,7 @@ scripts:
         if (!ol) return;
         const tagOf = window.__tag, [tl, el] = window.__labels;
         const words = w.value.trim();
-        if (words && !texts) { $('list-count').textContent = 'Loading the texts for the word search…'; LawPanel.loadTexts().then(t => { texts = t; drawList(); }); return; }
+        if (words && !texts) { $('list-count').textContent = 'Loading the texts for the word search…'; LawPanel.loadTexts(prefix).then(t => { texts = t; drawList(); }); return; }
         if (S.dict && !dict) { LawPanel.loadDict().then(m => { dict = m; drawPanel(); drawList(); }); return; }
         const terms = words ? W.parseWords(words, tol.checked, S.match === 'whole') : [];
         const loose = lang => tol.checked && !/^(en|de|notes)$/.test(lang || '');
@@ -376,19 +377,23 @@ scripts:
             .map(([id, hw, lang, n]) => ({ value: id, html: `<span class="headword">${esc(hw)}</span> ${ELieb.languageBadge(lang, hw)} <span class="gloss">${plural(n, 'clause', 'clauses')}</span>` }));
     }, id => { S.dict = id; d.value = ''; changed(); });
 
+    // The list of law codes, then this code's own file (data/laws/<prefix>.json), named by the
+    // start of its first clause's id (codes.json "first": Hn_Inscr -> Hn).
+    const getJson = url => fetch(url).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });
     Promise.all([
-        fetch(root + 'oe-laws/codes.json').then(r => r.json()),
-        fetch(root + 'data/laws.json').then(r => r.json()),
+        getJson(root + 'oe-laws/codes.json'),
         fetch(root + 'data/clause-order.json').then(r => r.json()).catch(() => ({})),
-        Wulfstan.load(root),
-        fetch(root + 'data/code-sources.json').then(r => r.json()).catch(() => ({}))
-    ]).then(([codeList, clauses, order, , sourcesByCode]) => {
+        Wulfstan.load(root)
+    ]).then(([codeList, order]) => {
         window.__clauseOrder = order;
-        codeSources = sourcesByCode || {};
-        codes = codeList.filter(c => clauses.some(x => x.code === c.code));
+        codes = codeList.filter(c => c.clauses > 0 && c.first);
         code = codes.find(c => c.code === wanted) || codes.find(c => fold(c.code) === fold(wanted));
         if (!code) throw new Error('missing');
-        render(clauses);
+        prefix = code.first.split('_')[0];
+        return getJson(root + 'data/laws/' + encodeURIComponent(prefix) + '.json');
+    }).then(data => {
+        codeSources = { [code.code]: data.sources };
+        render(data.rows);
         if (S.dict) LawPanel.loadDict().then(m => { dict = m; drawPanel(); });
         drawPanel();
         drawList();

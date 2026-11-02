@@ -129,15 +129,17 @@ const clauses = catalogue.map(c => {
     };
 });   // in the order of oe-laws/index.json, which is the order of the spreadsheets
 
+// The lists leave out the full texts (text) and all the English (en), which only the
+// word search needs, and it reads data/laws-text.json: they kept only the English of a
+// clause with no crib (gloss), shortened, for the line under its citation.
+const listRow = c => {
+    const { text, en, ...row } = c;
+    if (!c.gloss && en) row.en = en.length > 300 ? en.slice(0, 300).replace(/\s+\S*$/, '') + '…' : en;
+    return row;
+};
 fs.writeFileSync(path.join(repo, 'data', 'laws.json'),
-    '[\n' + clauses.map(c => JSON.stringify(c)).join(',\n') + '\n]\n');
+    '[\n' + clauses.map(c => JSON.stringify(listRow(c))).join(',\n') + '\n]\n');
 console.log(`data/laws.json: ${clauses.length} clauses`);
-
-// data/laws-brief.json: every clause's id, law code, citation and the opening of its
-// text, for the neighbouring clauses in the sidebar of a clause page.
-const brief = clauses.map(c => [c.id, c.code, c.citation, c.oe.length > 70 ? c.oe.slice(0, 70).replace(/\s+\S*$/, '') + '…' : c.oe]);
-fs.writeFileSync(path.join(repo, 'data', 'laws-brief.json'), JSON.stringify(brief));
-console.log(`data/laws-brief.json: ${brief.length} clauses`);
 
 // data/laws-text.json: what the Laws page's word search looks in, clause by
 // clause, each text kept apart so the reader can choose where to look. Loaded
@@ -146,7 +148,9 @@ console.log(`data/laws-brief.json: ${brief.length} clauses`);
 //   e: the English translations, [translator id, text] ("claude" is the English of Liebermann's German)
 //   g: Liebermann's German translation
 //   n: the notes (Liebermann's textual notes, Erklärungen and footnotes, in German and
-//      English; the modern editors' and translators' notes)
+//      English; the modern editors' and translators' notes): not in data/laws-text.json
+//      but in data/laws-notes.json ({ id: notes }), loaded only for a search in the notes,
+//      as they are half the text; data/laws-text/<prefix>.json has them together, one law code each.
 const NOTE_TYPES = /^(?:liebermannNote|editorNote|translator|textual)$/;
 const textIndex = {};
 catalogue.forEach(c => {
@@ -173,9 +177,15 @@ catalogue.forEach(c => {
     }
     textIndex[c.id] = { t, e, g: g.join(' '), n: n.join(' ¶ ') };
 });
-fs.writeFileSync(path.join(repo, 'data', 'laws-text.json'), JSON.stringify(textIndex));
-console.log(`data/laws-text.json: ${Object.keys(textIndex).length} clauses`);
+{
+    const main = {}, notes = {};
+    Object.entries(textIndex).forEach(([id, { t, e, g, n }]) => { main[id] = { t, e, g }; if (n) notes[id] = n; });
+    fs.writeFileSync(path.join(repo, 'data', 'laws-text.json'), JSON.stringify(main));
+    fs.writeFileSync(path.join(repo, 'data', 'laws-notes.json'), JSON.stringify(notes));
+}
+console.log(`data/laws-text.json, data/laws-notes.json: ${Object.keys(textIndex).length} clauses`);
 
+let codeSources = {};
 // data/code-sources.json: for each law code page (lawcode.html), the manuscripts, editions,
 // translations and studies its clause files name, as at the foot of a clause page, and which of
 // them each name in the code's header stands for ("Whitelock, EHD p. 390" -> whitelock).
@@ -281,6 +291,68 @@ console.log(`data/laws-text.json: ${Object.keys(textIndex).length} clauses`);
         });
         out[code.code] = { sources, mss: [...k.mss.values()], link };
     });
+    codeSources = out;
     fs.writeFileSync(path.join(repo, 'data', 'code-sources.json'), JSON.stringify(out));
     console.log(`data/code-sources.json: ${Object.keys(out).length} law codes` + (unlinked.length ? `; names with no reference in the clause files: ${unlinked.join('; ')}` : ''));
+}
+
+// One law code at a time, so a page loads only the code it shows. Each file is named by the
+// start of its clause ids, before the "_" (Abt_1 -> Abt, ECfRetr_Inscr -> ECfRetr), so that
+// a clause page can find its code's file from the clause id alone; a code whose ids start
+// in more than one way (Af Rb: Rubric-List_, Rubrics-Af_) has the same file under each.
+//   data/laws/<prefix>.json       the law code page (lawcode.html): { rows: its rows of
+//                                 data/laws.json, sources: its data/code-sources.json }
+//   data/clauses/<prefix>.json    a clause page (law.html): { rows: its rows of
+//                                 oe-laws/index.json, brief: { id: the opening of the text,
+//                                 for the neighbouring clauses }, dict: { id: [[entry id,
+//                                 headword, language]] }, the dictionary entries citing each
+//                                 clause, from data/dict-citations.json (tools/build-index.js,
+//                                 which runs first; null if it has not) }
+//   data/laws-text/<prefix>.json  the word search on the law code page: its part of
+//                                 data/laws-text.json, with the notes (n)
+{
+    const prefixOf = id => id.split('_')[0];
+    let dictCites = null;
+    try { dictCites = JSON.parse(fs.readFileSync(path.join(repo, 'data', 'dict-citations.json'), 'utf8')); } catch (e) { /* not built */ }
+    const citing = {};
+    if (dictCites) Object.entries(dictCites).forEach(([entry, [hw, lang, ids]]) => ids.forEach(id => (citing[id] = citing[id] || []).push([entry, hw, lang])));
+    const codes = new Map();
+    catalogue.forEach((c, i) => {
+        const k = codes.get(c.code) || codes.set(c.code, { prefixes: new Set(), cat: [], rows: [] }).get(c.code);
+        const p = prefixOf(c.id);
+        if (!/^[A-Za-z0-9-]+$/.test(p)) throw new Error(`oe-laws/index.json: clause id ${c.id} does not make a file name`);
+        k.prefixes.add(p);
+        k.cat.push(c);
+        k.rows.push(clauses[i]);
+    });
+    const owner = {};
+    codes.forEach((k, code) => k.prefixes.forEach(p => {
+        if (owner[p] && owner[p] !== code) throw new Error(`oe-laws/index.json: clause ids starting ${p}_ are in two law codes, ${owner[p]} and ${code}`);
+        owner[p] = code;
+    }));
+    ['laws', 'clauses', 'laws-text'].forEach(d => {
+        const full = path.join(repo, 'data', d);
+        fs.rmSync(full, { recursive: true, force: true });
+        fs.mkdirSync(full);
+    });
+    const brief = oe => oe.length > 70 ? oe.slice(0, 70).replace(/\s+\S*$/, '') + '…' : oe;
+    codes.forEach((k, code) => {
+        const laws = JSON.stringify({ rows: k.rows.map(listRow), sources: codeSources[code] || null });
+        const nav = JSON.stringify({
+            rows: k.cat.map(c => {
+                const row = { id: c.id, file: c.file, citation: c.citation, code: c.code, clause: c.clause, legalText: c.legalText, page: c.page };
+                if (c.parts) row.parts = c.parts;
+                return row;
+            }),
+            brief: Object.fromEntries(k.rows.map(r => [r.id, brief(r.oe)])),
+            dict: dictCites ? Object.fromEntries(k.cat.filter(c => citing[c.id]).map(c => [c.id, citing[c.id]])) : null
+        });
+        const text = JSON.stringify(Object.fromEntries(k.cat.map(c => [c.id, textIndex[c.id]])));
+        k.prefixes.forEach(p => {
+            fs.writeFileSync(path.join(repo, 'data', 'laws', p + '.json'), laws);
+            fs.writeFileSync(path.join(repo, 'data', 'clauses', p + '.json'), nav);
+            fs.writeFileSync(path.join(repo, 'data', 'laws-text', p + '.json'), text);
+        });
+    });
+    console.log(`data/laws/, data/clauses/, data/laws-text/: ${codes.size} law codes, ${Object.keys(owner).length} files each` + (dictCites ? '' : ' (no data/dict-citations.json: run tools/build-index.js first)'));
 }
