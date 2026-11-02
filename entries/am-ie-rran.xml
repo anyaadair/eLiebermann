@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E00553; guessed from the DOE headword list, spelling variant (i/y/ie, double letters, -ian/-an); not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,7 @@
           <orth>am[ie]rran</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">am[ie]rran</hi>; <hi rend="italic"><ref type="abbreviation" target="gram:Optativ"><abbr>op</abbr></ref></hi> 3: amyrre <hi rend="italic">zerstört</hi> (<hi rend="italic">Schiff</hi>) <ref type="lawCode" target="law:VIAtr">VI Atr</ref> 34 | <hi rend="italic"><ref type="abbreviation" target="gram:Praeteritum"><abbr>ptt</abbr></ref> <ref type="abbreviation" target="gram:Particip"><abbr>pc</abbr></ref>:</hi> amyrred <hi rend="italic">vernichtet</hi> (<hi rend="italic">Menschen</hi>) <ref type="lawCode" target="law:IICn">II Cn</ref> 56; amyrdred <ref type="lawCode" target="law:MsA">A</ref></dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E00553">a-myrran</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAtr_34">VI Atr 34</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_56">II Cn 56</ref></xr>
       </entry>

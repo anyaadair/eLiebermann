@@ -29,6 +29,7 @@
       <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
       <change when="2026-10-17">“statt”, “regiert (von)”, “unsyntakt.” and the Accusativ terms linked to the abbreviations list.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E00015; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -49,6 +50,7 @@
           <sense n="8">⁊ swa forð <hi rend="italic">und so <ref type="abbreviation" target="gram:weiter"><abbr>weiter</abbr></ref></hi> <ref type="lawCode" target="law:Wer">Wer</ref> 6</sense>
           <sense n="9">~ <hi rend="italic"><ref type="abbreviation" target="gram:statt"><abbr>statt</abbr></ref></hi> ge .. ge <ref type="lawCode" target="law:Gethinctho">Geþyncðo</ref> 1 <ref type="lawCode" target="law:H">H</ref> | <hi rend="italic"><ref type="abbreviation" target="gram:statt"><abbr>statt</abbr></ref></hi> ealswa ‘<hi rend="italic"><ref type="abbreviation" target="gram:auch"><abbr>auch</abbr></ref></hi>’ <ref type="lawCode" target="law:ICn">I Cn</ref> 16,1 <ref type="lawCode" target="law:B">B</ref> <ref type="lawCode" target="law:MsA">A</ref> | <hi rend="italic">schlechter <ref type="abbreviation" target="gram:statt"><abbr>statt</abbr></ref></hi> oððe <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:El">El</ref> 36 <ref type="lawCode" target="law:G">G</ref></sense>
         </dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E00015">and</ref></xr>
         <xr type="lawCode"><ref target="clause:Abt_1">Abt 1</ref></xr>
         <xr type="lawCode"><ref target="clause:Hl_Prolog">Hl Pro</ref></xr>
         <xr type="lawCode"><ref target="clause:Wi_Prolog-to-3">Wi Pro</ref></xr>

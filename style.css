@@ -519,6 +519,8 @@ span.wulf-badge { cursor: help; font-size: 0.72rem; padding: 0.02rem 0.5rem; ver
 .dict-group { margin-top: 1rem; }
 .dict-group__name { font-family: var(--serif); font-size: 1.1rem; font-weight: 600; color: var(--navy); margin: 0 0 0.3rem; }
 .dict-group__note { font-size: 0.78rem; color: var(--muted); margin: -0.15rem 0 0.4rem; }
+.doe-access { display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem; }
+.doe-access select { font: inherit; font-size: 0.8rem; color: var(--ink, inherit); padding: 0.1rem 0.3rem; border: 1px solid var(--rule, #ccc); border-radius: var(--radius); background: transparent; }
 /* a quiet caution under the "Other dictionaries" heading */
 .dict-wip { display: inline-block; font-size: 0.78rem; line-height: 1.45; color: var(--muted); background: #fbf3e2; border: 1px solid #ecdcb8; border-radius: var(--radius); padding: 0.3rem 0.6rem; margin: 0 0 0.7rem; }
 .dict-wip__tag { font-weight: 600; color: #8a6418; margin-right: 0.25rem; }

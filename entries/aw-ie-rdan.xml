@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E00924; guessed from the DOE headword list, spelling variant (i/y/ie, double letters, -ian/-an); not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -39,6 +40,7 @@
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/2706">a-wierdan</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/2694">a-werdan</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/2777">a-wyrdan</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E00924">a-wyrdan</ref></xr>
         <xr type="lawCode"><ref target="clause:Abt_64">Abt 64</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_El-to-26">Af El 26</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAtr_34">VI Atr 34</ref></xr>

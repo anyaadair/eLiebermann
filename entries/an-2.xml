@@ -31,6 +31,7 @@
       <change when="2026-10-17">“Vgl.” (vergleiche, compare) linked to the abbreviations list.</change>
       <change when="2026-10-19">“fm”, “nt” linked to the abbreviations list (printed bold italic, missed before).</change>
       <change when="2026-10-28">“von” unlinked from the abbreviations list: here it is ordinary German, not an abbreviation (Anya Adair).</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E00007; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -55,6 +56,7 @@
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/1609">án</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/38553">án (Supplement)</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/61197">án (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E00007">ān</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_54">Ine 54</ref></xr>
         <xr type="lawCode"><ref target="clause:IIAtr_7">II Atr 7</ref></xr>
         <xr type="lawCode"><ref target="clause:XAtr_Prol">X Atr Pro</ref></xr>

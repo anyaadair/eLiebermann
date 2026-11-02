@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">"von" in the definition unlinked (an ordinary German word here).</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E00131; guessed from the DOE headword list, same as the Bosworth-Toller headword; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -43,6 +44,7 @@
         <xr type="compare"><ref target="entry:onbite">onbite</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/63">a-bítan</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/37343">á-bítan (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E00131">a-bītan</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_23">Af 23</ref></xr>
         <xr type="lawCode"><ref target="clause:ICn_26-3">I Cn 26,3</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_76-2">II Cn 76,2</ref></xr>

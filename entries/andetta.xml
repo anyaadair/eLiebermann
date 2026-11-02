@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E01282; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">andetta</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:mitGenetiv"><abbr>m gn</abbr></ref></hi>, <hi rend="italic">geständig</hi> sleges <ref type="lawCode" target="law:Af">Af</ref> 29</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/1684">andetta</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E01282">andetta</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_29">Af 29</ref></xr>
       </entry>
     </body>

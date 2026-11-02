@@ -251,29 +251,59 @@ scripts:
         return list.map(x => `<li>${ELieb.renderTei(x, root)}</li>`).join('');
     }
 
+    // The DOE has two addresses for each entry: one for institutional
+    // subscribers, one for individual ones. The entry files keep a DOE
+    // address; only its entry number (E00946) is used, with the address the
+    // reader has chosen (remembered in this browser; institutional at first).
+    const DOE_ADDRESS = {
+        institution: 'https://dictionary.doe.utoronto.ca/doe/?',
+        individual: 'https://indiv.dictionary.doe.utoronto.ca/doe/?'
+    };
+    const DOE_KEY = 'eLiebermann.doeAccess';
+    function doeAccess() {
+        try { return localStorage.getItem(DOE_KEY) === 'individual' ? 'individual' : 'institution'; } catch (err) { return 'institution'; }
+    }
+    function doeNote() {
+        const a = doeAccess();
+        return `<p class="dict-group__note">The DOE is by subscription: a link opens the entry if you are logged in. Off campus, log in through your library first.</p>
+            <p class="dict-group__note doe-access"><label for="doe-access">I use the DOE through</label>
+            <select id="doe-access">
+                <option value="institution"${a === 'institution' ? ' selected' : ''}>my institution</option>
+                <option value="individual"${a === 'individual' ? ' selected' : ''}>an individual subscription</option>
+            </select></p>`;
+    }
+    document.addEventListener('change', ev => {
+        if (ev.target.id !== 'doe-access') return;
+        const a = ev.target.value === 'individual' ? 'individual' : 'institution';
+        try { localStorage.setItem(DOE_KEY, a); } catch (err) { /* not kept */ }
+        document.querySelectorAll('a[data-doe]').forEach(link => { link.href = DOE_ADDRESS[a] + link.dataset.doe; });
+    });
+
     // Links to the same word in other dictionaries (Bosworth-Toller and so
     // on), from <xr type="bosworthToller"> and the like, shown as cards.
     function dictionaryCards(e) {
         // One group per dictionary, in this order, each with its own heading.
         const dictionaries = [
-            ['doe', 'The Dictionary of Old English', 'University of Toronto', 'DOE is subscription access. If you are logged in, this link will open the full entry for the headword.'],
+            ['doe', 'The Dictionary of Old English', 'University of Toronto', ''],
             ['bosworthToller', 'Bosworth-Toller', 'An Anglo-Saxon Dictionary', '']
         ];
         return dictionaries.map(([type, name, sub, note]) => {
             const cards = e.xr.filter(x => x.getAttribute('type') === type).map(x => {
                 const ref = [...x.children].find(c => c.localName === 'ref') || x;
-                const url = ELieb.safeUrl(ref.getAttribute('target'));
+                let url = ELieb.safeUrl(ref.getAttribute('target'));
+                const doeId = type === 'doe' ? (/[?&](E\d{5})\b/.exec(url || '') || [])[1] : '';
+                if (doeId) url = DOE_ADDRESS[doeAccess()] + doeId;
                 const word = esc(ref.textContent.replace(/\s+/g, ' ').trim());
                 let host = '';
-                try { host = new URL(url).hostname.replace(/^www\./, '').replace(/^indiv\.dictionary\./, ''); } catch (err) { /* no address */ }
+                try { host = new URL(url).hostname.replace(/^www\./, '').replace(/^(indiv\.)?dictionary\./, ''); } catch (err) { /* no address */ }
                 const inner = `
                     <span class="dict-card__word">${word}</span>
                     <span class="dict-card__foot">${host ? esc(host) : esc(sub)}${url ? ' <span aria-hidden="true">↗</span>' : ''}</span>`;
                 return url
-                    ? `<a class="dict-card" href="${esc(url)}" target="_blank" rel="noopener" aria-label="${word} in ${esc(name)} (opens in a new tab)">${inner}</a>`
+                    ? `<a class="dict-card" href="${esc(url)}"${doeId ? ` data-doe="${doeId}"` : ''} target="_blank" rel="noopener" aria-label="${word} in ${esc(name)} (opens in a new tab)">${inner}</a>`
                     : `<div class="dict-card">${inner}</div>`;
             }).join('');
-            return cards ? `<div class="dict-group"><h3 class="dict-group__name">${esc(name)}</h3>${note ? `<p class="dict-group__note">${esc(note)}</p>` : ''}<div class="dict-cards">${cards}</div></div>` : '';
+            return cards ? `<div class="dict-group"><h3 class="dict-group__name">${esc(name)}</h3>${type === 'doe' ? doeNote() : note ? `<p class="dict-group__note">${esc(note)}</p>` : ''}<div class="dict-cards">${cards}</div></div>` : '';
         }).join('');
     }
 

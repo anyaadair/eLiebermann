@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E00535; guessed from the DOE headword list, verb form (-að/-eð → -an/-ian …); not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,7 @@
           <orth>ameldað</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">ameldað</hi>, 3, <hi rend="italic">anmeldet</hi> dyrne orf <ref type="lawCode" target="law:IVEg">IV Eg</ref> 14</dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E00535">a-meldian</ref></xr>
         <xr type="lawCode"><ref target="clause:IVEg_14">IV Eg 14</ref></xr>
       </entry>
     </body>
