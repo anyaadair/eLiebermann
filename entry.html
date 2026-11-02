@@ -509,7 +509,7 @@ scripts:
         ${see ? `<section class="entry-section see-section"><h2>${e.xref || e.spelling ? 'See' : 'See also'}</h2><ul${linkCols(see)}>${see}</ul></section>` : ''}
         ${compare ? `<section class="entry-section"><h2>Compare</h2><ul${linkCols(compare)}>${compare}</ul></section>` : ''}
         ${derivatives ? `<section class="entry-section"><h2>Derivatives and Compounds</h2><ul${linkCols(derivatives)}>${derivatives}</ul></section>` : ''}
-        ${links ? `<section class="entry-section"><h2>Other dictionaries</h2><p class="dict-wip"><span class="dict-wip__tag">⚠ Under construction</span> The work of linking to external dictionaries is ongoing. A semi-automated process is used to generate initial Bosworth-Toller links, so note that some of these may be incorrect until checked.</p>${links}</section>` : ''}
+        ${links ? `<section class="entry-section"><h2>Other dictionaries</h2><p class="dict-wip"><span class="dict-wip__tag">⚠ Under construction</span> The work of linking to external dictionaries is ongoing. A semi-automated process is used to make the first Bosworth-Toller and DOE links, so some of these may be incorrect until checked.</p>${links}</section>` : ''}
         ${citations ? `<section class="entry-section"><h2>Law code citations</h2><div class="citation-groups">${citations}</div></section>` : ''}
 
         ${/* Editors' notes at the foot, above the previous / next links; the "note" bubbles in the text jump here. */ ''}
