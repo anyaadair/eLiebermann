@@ -253,8 +253,11 @@
         (markforward || []).filter(t => t['Link automatically'] !== 'no').forEach(t => terms.push({ text: t['Gesetze Text'].trim(), anchor: t['Anchor'], type: 'gram', romanOnly: t['Link automatically'] === 'roman only' }));
         // Authors and works cited (data/bibliography.json). A bare name shared by
         // several works (Sweet, Thorpe) is marked "Link automatically": "no".
+        // "Link automatically": "before a number" (a bare surname such as Andrews, or Bi for Birch's
+        // charters) is linked only when a page, volume or charter number follows: "Andrews 263",
+        // "Bi 594", "Davis p. xxiv", "Amira II 203".
         (bibliography || []).filter(t => t['Link automatically'] !== 'no')
-            .forEach(t => terms.push({ text: t['Gesetze Text'].trim(), anchor: t['Anchor'], type: 'bib' }));
+            .forEach(t => terms.push({ text: t['Gesetze Text'].trim(), anchor: t['Anchor'], type: 'bib', beforeNumber: t['Link automatically'] === 'before a number' }));
         const byText = new Map();
         terms.filter(t => t.text).forEach(t => { if (!byText.has(t.text)) byText.set(t.text, t); });
         const sorted = [...byText.values()].sort((a, b) => b.text.length - a.text.length);
@@ -267,6 +270,9 @@
         // a pattern with a check on every term (each a table of all the world's letters)
         // several times more slowly, and on a clause page that was most of its loading time.
         const BEFORE = '(?<![\\p{L}\\p{N}])', AFTER = '(?![\\p{L}\\p{N}])';
+        // What may follow a "before a number" term: a page ("p.", "S."), charter ("n.") or volume
+        // (I–XX, with ² ³ for an edition) and then the number, roman (lxiv) or arabic.
+        const NUMBER_NEXT = '(?=,?\\s+(?:(?:p|pp|S|n|nr|col)\\.\\s*)?(?:[IVX]{1,5}[²³]?,?\\s+)?(?:\\d|[ivxlc]+\\b))';
         const makeRegex = list => {
             if (!list.length) return null;
             const runs = [];
@@ -281,11 +287,48 @@
         };
         // Law codes and manuscript sigla are printed in roman type; italic is
         // Liebermann's German, where "Abt" means abbot, not Æthelberht.
-        const allTerms = makeRegex(sorted);
-        // Author names are often in italic too.
-        const italicTerms = makeRegex(sorted.filter(t => (t.type === 'gram' && !t.romanOnly) || t.type === 'bib'));
+        const allTerms = makeRegex(sorted.filter(t => t.type !== 'bib'));
+        const italicTerms = makeRegex(sorted.filter(t => t.type === 'gram' && !t.romanOnly));
+        // Authors and works (several hundred, roman or italic) are looked up by the word a citation begins
+        // with ("Kemble", "Mon", "Zeu"), and only those few tried there: one pattern of them all, tried at
+        // every letter of the notes, made a clause page several times slower to link.
+        const byWord = new Map();
+        sorted.filter(t => t.type === 'bib').forEach(t => {
+            const w = (/^[\p{L}\p{N}]+/u.exec(t.text) || [''])[0];
+            if (!w) return;
+            if (!byWord.has(w)) byWord.set(w, []);
+            byWord.get(w).push(t);
+        });
+        const bibAt = (text, index, word) => {
+            const list = byWord.get(word);
+            if (!list) return null;
+            for (const t of list) {
+                if (!t.re) t.re = new RegExp(t.text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/\s+/g, '\\s+')
+                    + (/[\p{L}\p{N}]$/u.test(t.text) ? AFTER : '') + (t.beforeNumber ? NUMBER_NEXT : ''), 'uy');
+                t.re.lastIndex = index;
+                const m = t.re.exec(text);
+                if (m) return { index, text: m[0], term: t };
+            }
+            return null;
+        };
         const lookup = text => byText.get(text.replace(/\s+/g, ' '));
-        const made = { key, allTerms, italicTerms, lookup };
+        // Works cited as author and title ("Kemble Saxons", "Stevenson Crawford char."), for the name
+        // that ends one piece of text when the title begins the next: "Kemble <i>Saxons</i> II 100".
+        // Tried from the start of "Kemble Saxons II 100", longest first.
+        const titled = new Map();     // first word of the name -> the works, longest first
+        sorted.filter(t => t.type === 'bib' && /\s/.test(t.text) && !t.beforeNumber).forEach(t => {
+            const text = t.text.replace(/\s+/g, ' '), first = text.split(' ')[0];
+            if (!titled.has(first)) titled.set(first, []);
+            titled.get(first).push({ text, term: t, open: /[\p{L}\p{N}]$/u.test(text) });
+        });
+        const titledLookup = s => {
+            s = s.replace(/\s+/g, ' ');
+            const list = titled.get(s.split(' ')[0]);
+            const t = list && list.find(t => s.startsWith(t.text) && !(t.open && /^[\p{L}\p{N}]/u.test(s.slice(t.text.length))));
+            return t ? { term: t.term, length: t.text.length } : null;
+        };
+        const titledFirst = w => titled.has(w);
+        const made = { key, allTerms, italicTerms, lookup, titledLookup, titledFirst, bibAt, hasBib: byWord.size > 0 };
         termCache.push(made);
         if (termCache.length > 4) termCache.shift();
         return made;
@@ -300,7 +343,7 @@
     function linkAbbreviations(html, markLaw, markforward, bibliography) {
         const made = abbreviationTerms(markLaw, markforward, bibliography);
         if (!made) return html;
-        const { allTerms, italicTerms, lookup } = made;
+        const { allTerms, italicTerms, lookup, titledLookup, titledFirst, bibAt, hasBib } = made;
 
         const container = parseHtml(html);
         const languageMarker = findLanguageMarker(container);
@@ -308,38 +351,103 @@
         const textNodes = [];
         while (walker.nextNode()) textNodes.push(walker.currentNode);
 
-        textNodes.forEach(node => {
+        // The author's name at the end of a piece of text, with the title in the next ("Kemble <i>Saxons</i>",
+        // "Stevenson in <i>EHR</i>", "Weinhold (<i>Dt. Frauen</i>"): the name links to that work, not to the
+        // work a bare "Kemble" stands for. Up to four words of name ("Haddan and Stubbs", "J. Stevenson").
+        const NAME_AT_END = /((?:[\p{Lu}][\p{L}’'\-]*\.?\s+(?:(?:and|und|u\.)\s+)?){0,3}[\p{Lu}][\p{L}’'\-]*)(\s*\(?\s*(?:in\s+)?)$/u;
+        const titleNodes = new Set();
+        const titledName = (i, text) => {
+            const tail = text.slice(-80), offset = text.length - tail.length;
+            const m = NAME_AT_END.exec(tail);
+            if (!m) return null;
+            const words = m[1].split(/\s+/);
+            if (!words.some(titledFirst)) return null;
+            const node = textNodes[i];
+            const block = node.parentElement.closest('p, li, div, td, dd');
+            let next = '';
+            for (let j = i + 1; j < textNodes.length && next.length < 120; j++) {
+                if (textNodes[j].parentElement.closest('p, li, div, td, dd') !== block) break;
+                next += textNodes[j].nodeValue;
+            }
+            if (!/^\S/.test(next)) return null;
+            const joins = /in\s*$/.test(m[2]) ? [' ', ' in '] : [' '];   // "Kern in Anglia 28" or "Stevenson EHR"
+            for (let k = 0; k < words.length; k++) {
+                if (!titledFirst(words[k])) continue;
+                const name = words.slice(k).join(' ');
+                const hit = joins.map(j => Object.assign(titledLookup(name + j + next) || {}, { join: j })).find(h => h.term);
+                if (hit && hit.length > name.length + 1) {
+                    const start = offset + m.index + m[1].length - name.length;
+                    // The title's own text is not linked again ("Maitland <i>Domesday</i>" is not also Domesday Book).
+                    let rest = hit.length - name.length - (hit.join || ' ').length;
+                    for (let j = i + 1; j < textNodes.length && rest > 0; j++) {
+                        // Only a piece of text wholly inside the title; " 1913, 770; Kemble …" after "EHR" keeps its links.
+                        if (textNodes[j].nodeValue.length <= rest) titleNodes.add(textNodes[j]);
+                        rest -= textNodes[j].nodeValue.length;
+                    }
+                    return { start, end: offset + m.index + m[1].length, term: hit.term };
+                }
+            }
+            return null;
+        };
+
+        textNodes.forEach((node, i) => {
             if (node.parentElement.closest('a, strong, b, [data-page]')) return;
             if (languageMarker && languageMarker.contains(node)) return;
-            const text = node.nodeValue;
+            if (titleNodes.has(node)) return;
+            const whole = node.nodeValue;
+            const named = titledName(i, whole);
+            const text = named ? whole.slice(0, named.start) : whole;
             const regex = node.parentElement.closest('em, i') ? italicTerms : allTerms;
-            if (!regex) return;
-            regex.lastIndex = 0;
-            if (!regex.test(text)) return;
-            regex.lastIndex = 0;
+            // Matches, leftmost first and at one place the longest: law codes and abbreviations from the
+            // pattern, works cited by their first word.
+            const found = [];
+            let m;
+            if (regex) {
+                regex.lastIndex = 0;
+                while ((m = regex.exec(text))) {
+                    const term = lookup(m[1]);
+                    if (term) found.push({ index: m.index, text: m[1], term });
+                }
+            }
+            if (hasBib) {
+                const WORD = /(?<![\p{L}\p{N}])[\p{L}\p{N}]+/gu;
+                while ((m = WORD.exec(text))) {
+                    const hit = bibAt(text, m.index, m[0]);
+                    if (hit) found.push(hit);
+                }
+            }
+            if (!found.length && !named) return;
+            found.sort((x, y) => x.index - y.index || y.text.length - x.text.length);
             const frag = DOM.document.createDocumentFragment();
-            let last = 0, m;
-            while ((m = regex.exec(text))) {
-                const term = lookup(m[1]);
-                if (!term) continue;
-                if (m.index > last) frag.appendChild(DOM.document.createTextNode(text.slice(last, m.index)));
+            let last = 0;
+            found.forEach(f => {
+                if (f.index < last) return;
+                const term = f.term;
+                if (f.index > last) frag.appendChild(DOM.document.createTextNode(text.slice(last, f.index)));
                 const a = DOM.document.createElement('a');
                 if (term.type === 'law') {
                     a.setAttribute('href', 'lawAbb.html#' + encodeURIComponent(term.anchor));
-                    a.textContent = m[1];
+                    a.textContent = f.text;
                 } else if (term.type === 'bib') {
                     a.setAttribute('href', 'bibAbb.html#' + encodeURIComponent(term.anchor));
-                    a.textContent = m[1];
+                    a.textContent = f.text;
                 } else {
                     a.setAttribute('href', 'gramAbb.html#' + encodeURIComponent(term.anchor));
                     const abbr = DOM.document.createElement('abbr');
-                    abbr.textContent = m[1];
+                    abbr.textContent = f.text;
                     a.appendChild(abbr);
                 }
                 frag.appendChild(a);
-                last = m.index + m[1].length;
-            }
+                last = f.index + f.text.length;
+            });
             if (last < text.length) frag.appendChild(DOM.document.createTextNode(text.slice(last)));
+            if (named) {
+                const a = DOM.document.createElement('a');
+                a.setAttribute('href', 'bibAbb.html#' + encodeURIComponent(named.term.anchor));
+                a.textContent = whole.slice(named.start, named.end);
+                frag.appendChild(a);
+                if (named.end < whole.length) frag.appendChild(DOM.document.createTextNode(whole.slice(named.end)));
+            }
             node.parentNode.replaceChild(frag, node);
         });
         return container.innerHTML;

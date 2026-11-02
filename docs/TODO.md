@@ -11,6 +11,12 @@ Citations that may be misprints in the *Wörterbuch*, or slips in the transcript
 - [ ] **li**, "Wl art Fz 1,1" (*la terre Insc; mere 1,1*): the laws database has no Wl art Fz 1,1, only clause 1. Check whether Liebermann's 1,1 is part of clause 1.
 - [ ] **Dene**, "ECf 10,33", and **cheminus**, "ECf 12,13": no such ECf clauses; probably misprints (left from the ECf transcription).
 
+## Works cited in the notes to the laws: citations to check
+
+About 340 works that Liebermann cites in his notes to the laws were added to [Authors and Works Cited](https://anyaadair.github.io/eLiebermann/bibAbb.html) in November 2026, with full citations. Some still have something uncertain: a work not identified, a publisher or series number not confirmed, or a question only the printed *Gesetze* can answer.
+
+- [ ] **Go through the list in [CITATIONS-TO-CHECK.md](CITATIONS-TO-CHECK.md).** To find it: on GitHub, open the repository, then the `docs` folder, then `CITATIONS-TO-CHECK.md` (it is next to this file). It has three parts: (1) three questions to check against the scan, (2) works not identified or with no library record, (3) works with one detail to check. Each item links to its entry on the site and to clauses where Liebermann cites it. On the site, the same doubts are in each entry's Note, marked *to check*. When you settle one, tell Claude what you found, and it will correct the entry and tick the box.
+
 ## bocland: Latin translations (suggestion #31)
 
 The links go to the right clauses: the Instituta (In Cn), Quadripartitus (Q) and Consiliatio (Cons Cn) texts are columns on those clause pages. Two things are wrong:
