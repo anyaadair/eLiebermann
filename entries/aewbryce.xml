@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E01551; guessed from the DOE headword list, æw- written for ǣ- (æwbryce = ǣ-bryce); checked by the editor).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -39,6 +40,7 @@
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/1042">ǽw-bryce</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/1041">ǽw-breca</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/9827">éw-bryce</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E01551">ǣ-bryce</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_50-1">II Cn 50,1</ref></xr>
         <xr type="lawCode"><ref target="clause:IEm_4">I Em 4</ref></xr>
         <xr type="lawCode"><ref target="clause:ICn_24">I Cn 24</ref></xr>

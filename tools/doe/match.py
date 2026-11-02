@@ -67,14 +67,25 @@ def noun_guesses(f):
 
 
 # ---------- DOE list ----------
-doe = []
+doe, spans = [], []
 for path in lists:
+    rows = []
     for line in open(path, encoding='utf-8'):
         line = line.strip()
         if not line or '\t' not in line:
             continue
         eid, hw = line.split('\t', 1)
-        doe.append((eid.strip(), hw.strip()))
+        rows.append((eid.strip(), hw.strip()))
+    doe += rows
+    spans.append((rows[0][1], rows[-1][1]))
+
+
+def doe_order(b):
+    """A sort key in the DOE's alphabet: æ is a letter of its own after a,
+    and þ comes after t (Python would put both after z)."""
+    return b.replace('æ', 'a\x7f').replace('þ', 't\x7f')
+
+
 def xform(s):
     return re.sub(r'cs|sc|x', 'x', loose(s))
 
@@ -86,14 +97,14 @@ for eid, hw in doe:
         by_base[b].append((eid, hw))
         by_loose[loose(hw)].append((eid, hw))
         by_x[xform(hw)].append((eid, hw))
-lo, hi = min(base(h) for _, h in doe if base(h)), max(base(h) for _, h in doe if base(h))
-# The lists are in the DOE's order, not strict alphabetical; take the span from first and last.
-first, last = base(doe[0][1]), base(doe[-1][1])
-span_lo, span_hi = first, last
+# Each list is in the DOE's order: an entry is matched if its headword falls
+# between the first and last word of one of the lists.
+span_keys = [(doe_order(base(a)), doe_order(base(b))) for a, b in spans]
+span_lo, span_hi = spans[0][0], spans[-1][1]
 
 
 def in_span(b):
-    return b and span_lo <= b <= span_hi and not b.startswith('æ')
+    return bool(b) and any(lo <= doe_order(b) <= hi for lo, hi in span_keys)
 
 
 # ---------- eLiebermann entries ----------
@@ -105,6 +116,9 @@ results = []
 for path in sorted(glob.glob(os.path.join(ENTRIES, '*.xml'))):
     xml = open(path, encoding='utf-8').read()
     if not re.search(r'<entry[^>]*xml:lang="ang"', xml):
+        continue
+    # Cross-reference and spelling entries get no dictionary links (Anya, Nov 2026).
+    if re.search(r'<entry[^>]*type="xref"', xml) or '<usg type="dom">spelling</usg>' in xml:
         continue
     eid = os.path.basename(path)[:-4]
     orths = [text(o) for o in re.findall(r'<orth[^>]*>(.*?)</orth>', xml, re.S)[:1]]
@@ -146,6 +160,7 @@ for path in sorted(glob.glob(os.path.join(ENTRIES, '*.xml'))):
         ('verb form, spelling variant', by_loose, {loose(g) for k in keys for g in verb_guesses(k)}),
         ('without ge-', by_base, {k[2:] for k in keys if k.startswith('ge') and len(k) > 5}),
         ('x / cs / sc (acsian = āxian)', by_x, {xform(k) for k in keys}),
+        ('æw- written for ǣ- (æwbryce = ǣ-bryce)', by_base, {'æ' + k[2:] for k in keys if re.match(r'æw[^aeiouyæ]', k)}),
         ('inflected noun/adjective form', by_base, set().union(*[noun_guesses(k) for k in keys])),
     ]
     for i, (label, table, ks) in enumerate(steps):
@@ -156,7 +171,7 @@ for path in sorted(glob.glob(os.path.join(ENTRIES, '*.xml'))):
                 grade = 'unsure'
             elif i == 0:
                 grade = 'sure'
-            elif i <= 7:  # the Bosworth-Toller links are guesses too: never more than likely
+            elif i <= 8:  # the Bosworth-Toller links are guesses too: never more than likely
                 grade = 'likely'
             else:
                 grade = 'unsure'

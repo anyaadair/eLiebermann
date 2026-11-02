@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E02033; guessed from the DOE headword list, spelling variant (i/y/ie, double letters, -ian/-an); checked by the editor).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -37,6 +38,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">ætgeb[y]cgan</hi> <hi rend="italic">ab-</hi> (<hi rend="italic">er</hi>)<hi rend="italic">kaufen; <ref type="abbreviation" target="gram:Optativ"><abbr>op</abbr></ref></hi> 3: willan ætgebicge æt <hi rend="italic">Einwilligung von</hi> <ref type="lawCode" target="law:Abt">Abt</ref> 82</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/921">æt-gebicgan</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E02033">æt-ge·bicgan</ref></xr>
         <xr type="lawCode"><ref target="clause:Abt_82">Abt 82</ref></xr>
       </entry>
     </body>

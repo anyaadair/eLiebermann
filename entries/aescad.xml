@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E01984; guessed from the DOE headword list, verb form (-að/-eð → -an/-ian …); checked by the editor).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,7 @@
           <orth>æscað</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">æscað</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref>,</hi> (<hi rend="italic">Geld</hi>) <hi rend="italic">einklagen</hi> <ref type="lawCode" target="law:VIAs">VI As</ref> 6,4</dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E01984">ǣscan</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAs_6-4">VI As 6,4</ref></xr>
       </entry>
     </body>

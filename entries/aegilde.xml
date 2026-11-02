@@ -28,6 +28,7 @@
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">“In Cn” and “In” (Instituta Cnuti) linked to the law codes list.</change>
       <change when="2026-10-19">“durch”, “vom” and “als” unlinked: part of the German explanation, not abbreviations.</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E01575; guessed from the DOE headword list, spelling variant (i/y/ie, double letters, -ian/-an); checked by the editor).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -43,6 +44,7 @@
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/541">æ-gylde</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/1239">a-gilde</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/1286">a-gylde</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E01575">ǣ-gylde</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_62-1">II Cn 62,1</ref></xr>
         <xr type="lawCode"><ref target="clause:EGu_6-7">EGu 6,7</ref></xr>
         <xr type="lawCode"><ref target="clause:VAtr_31-1">V Atr 31,1</ref></xr>

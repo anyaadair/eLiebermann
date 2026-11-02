@@ -30,6 +30,7 @@
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
       <change when="2026-10-17">“Vgl.” (vergleiche, compare) linked to the abbreviations list.</change>
       <change when="2026-10-19">“cpa” linked to the abbreviations list (printed bold italic, missed before).</change>
+      <change when="2026-11-02">Link to the Dictionary of Old English added (E01523; guessed from the DOE headword list, same spelling; checked by the editor).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -47,6 +48,7 @@
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/731">ǽr</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/37893">ǽr (Supplement)</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/61097">ǽr (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E01523">ǣr</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_73a">II Cn 73a</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAtr_43">VI Atr 43</ref></xr>
         <xr type="lawCode"><ref target="clause:ICn_Inscr">I Cn Inscr</ref></xr>
