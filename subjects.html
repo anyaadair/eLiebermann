@@ -213,8 +213,19 @@ scripts:
             </div>
             <p class="small muted">Each clause gives the text of the first manuscript in Liebermann’s edition and a semi-literal English rendering (made with an LLM, Claude) of Liebermann’s German, as on the law code pages. Click a clause number, or <em>All texts and translations</em>, for all its texts, manuscripts and translations.</p>
             ${list}`;
-        if (location.hash) { const el = document.getElementById(decodeURIComponent(location.hash.slice(1))); if (el) el.scrollIntoView(); }
+        markTarget();
     }
+    // The law code a timeline bar (or a link from another page) jumps to: its heading marked, and scrolled to.
+    // Set by hand as well as by :target, since the sections are drawn after the page has loaded.
+    function markTarget() {
+        document.querySelectorAll('.subject-code.is-target').forEach(x => x.classList.remove('is-target'));
+        if (!location.hash) return;
+        const el = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+        if (!el) return;
+        if (el.classList.contains('subject-code')) el.classList.add('is-target');
+        el.scrollIntoView();
+    }
+    window.addEventListener('hashchange', markTarget);
 
     Promise.all([
         fetch(root + 'data/subject-groups.json').then(r => r.json()),

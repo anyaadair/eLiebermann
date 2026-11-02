@@ -33,6 +33,11 @@ html { -webkit-text-size-adjust: 100%; }
 /* Keep room for the scroll bar on every page, so the page doesn't jump sideways when it
    appears or goes (as when a list of search suggestions makes the page longer or shorter). */
 html { scrollbar-gutter: stable; }
+/* Whatever a link or a script jumps to (an abbreviation, a note, a clause, a law code on a subject page)
+   stops a little way down the screen, not against its top edge, so the eye finds it and its first line
+   is not cut off. One rule for the whole site: no element needs a scroll-margin of its own. */
+html { scroll-padding-top: clamp(3.5rem, 16vh, 8rem); }
+.laws-panel, .entry-sidebar { scroll-padding-top: 2rem; }
 @supports not (scrollbar-gutter: stable) { html { overflow-y: scroll; } }
 
 body {
@@ -1044,6 +1049,8 @@ a.timeline-bar:focus-visible { outline: 2px solid var(--link-hover); outline-off
 .subject-list-head h2 { margin: 0; }
 .subject-code h3 { font-size: 1.15rem; margin: 1.4rem 0 0.2rem; }
 .subject-code .code-clauses { margin-top: 0.3rem; }
+/* The law code a timeline bar jumps to: its heading marked, as a list entry is when a link lands on it. */
+.subject-code:target > h3, .subject-code.is-target > h3 { background: var(--highlight); box-shadow: 0 0 0 0.35rem var(--highlight); border-radius: 2px; }
 
 /* Liebermann's notes on a clause page: note numbers in the text (hidden until the button is pressed), and the notes */
 .lnote-ref { font-size: 0.68em; line-height: 0; vertical-align: super; font-family: var(--sans, inherit); }
@@ -1054,7 +1061,7 @@ a.timeline-bar:focus-visible { outline: 2px solid var(--link-hover); outline-off
 .lnotes { margin: 0.5rem 0 0; padding: 0.45rem 0.8rem; border-left: 3px solid var(--rule); }
 .lnotes__intro { margin: 0 0 0.4rem; font-style: italic; }
 .lnotes__list { list-style: none; padding: 0; margin: 0; }
-.lnotes__list li { margin: 0 0 1.1rem; line-height: 1.45; scroll-margin-top: 5rem; }
+.lnotes__list li { margin: 0 0 1.1rem; line-height: 1.45; }
 .lnotes__list li:target { background: var(--highlight, #fff3c4); }
 .lnotes__num { font-weight: 600; margin-right: 0.35rem; }
 .lnotes__de, .lnotes__en { display: block; }
@@ -1268,7 +1275,7 @@ mark.find-hit--current { background: #ffc94d; outline: 2px solid #e0a100; }
 .bib-count { font-family: var(--sans); font-size: 0.72rem; font-weight: 600; color: var(--muted); background: #eef0f3; border-radius: 999px; padding: 0.05rem 0.45rem; vertical-align: middle; }
 .bib-intro { font-size: 0.92rem; color: var(--muted); margin: 0.2rem 0 0.6rem; }
 .bib-list { list-style: none; margin: 0; padding: 0; }
-.bib-item { padding: 0.3rem 0; scroll-margin-top: 1rem; }
+.bib-item { padding: 0.3rem 0; }
 .bib-item:target { background: var(--powder-tint); }
 .bib-cit { font-size: 0.95rem; padding-left: 1.6rem; text-indent: -1.6rem; line-height: 1.5; }
 .bib-cit a { overflow-wrap: anywhere; }
@@ -1295,9 +1302,8 @@ mark.find-hit--current { background: #ffc94d; outline: 2px solid #e0a100; }
 .glossary .gl-de { font-style: italic; }
 .glossary .gl-also { display: block; font-weight: 400; font-size: 0.8rem; color: var(--muted); white-space: normal; }
 .glossary .gl-date, .glossary .gl-laws { font-size: 0.88rem; }
-.glossary tr.gl-letter th { text-align: left; font-family: var(--serif); font-size: 1.35rem; font-weight: 600; color: var(--navy); padding: 1.1rem 0.75rem 0.25rem; border-bottom: 1px solid var(--rule); scroll-margin-top: 2.5rem; }
+.glossary tr.gl-letter th { text-align: left; font-family: var(--serif); font-size: 1.35rem; font-weight: 600; color: var(--navy); padding: 1.1rem 0.75rem 0.25rem; border-bottom: 1px solid var(--rule); }
 .glossary tr.is-target td, .glossary tbody.is-target td, .glossary tbody.is-target th { background: var(--powder-tint); }
-.glossary tr[id], .glossary tbody[id] { scroll-margin-top: 2.5rem; }
 .glossary--law .c-abbr, .glossary--ms .c-abbr { width: 7.5rem; }
 .glossary--law .c-de { width: 30%; }
 .glossary--law .c-page, .glossary--ms .c-page { width: 5.5rem; }
@@ -1328,7 +1334,7 @@ mark.find-hit--current { background: #ffc94d; outline: 2px solid #e0a100; }
 .letter-jump a { color: var(--link); border: 1px solid var(--rule); background: var(--surface); text-decoration: none; }
 .letter-jump a:hover, .letter-jump a:focus-visible { border-color: var(--link); background: var(--powder-tint); }
 .letter-jump span { color: #c3c0b8; border: 1px solid transparent; }
-.guides-layout .gl-letter-h { font-size: 1.35rem; border-bottom: 1px solid var(--rule); padding-bottom: 0.2rem; margin: 1.6rem 0 0.8rem; scroll-margin-top: 1rem; }
+.guides-layout .gl-letter-h { font-size: 1.35rem; border-bottom: 1px solid var(--rule); padding-bottom: 0.2rem; margin: 1.6rem 0 0.8rem; }
 .guides-layout .bib-work h3 { font-size: 1.05rem; margin: 0 0 0.2rem; }
 mark.gp-mark { background: var(--highlight); padding: 0 0.05em; border-radius: 2px; }
 mark.gp-mark.is-current { outline: 2px solid var(--link); }
