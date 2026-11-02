@@ -1478,7 +1478,7 @@ ${translation}
             case 'p': return '<p>' + inner() + '</p>';
             // <head rend="sub"> is a subheading within a section (site pages).
             case 'head': {
-                const hid = node.getAttribute('xml:id') ? ' id="' + node.getAttribute('xml:id') + '"' : '';   // a heading others link to
+                const hid = node.getAttribute('xml:id') ? ' id="' + escapeXml(node.getAttribute('xml:id')) + '"' : '';   // a heading others link to
                 return attr('rend') === 'sub' ? '<h3' + hid + '>' + inner() + '</h3>' : '<h2' + hid + '>' + inner() + '</h2>';
             }
             case 'list': {
