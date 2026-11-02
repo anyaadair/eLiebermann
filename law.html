@@ -332,9 +332,12 @@ scripts:
     // Names of the authors and works on the Authors and Works Cited list (Toller, Schmid, Turk …) become
     // links to it, with the same popup as in the dictionary entries (scripts/lawpopup.js).
     // In the English, "His" (Rudolf His) is far more often the pronoun, so it is linked in the German only.
+    // The English list is made once: linkAbbreviations() keeps the terms it builds from a list, so
+    // a new copy for every note would build them again each time.
+    let worksEnglish = null;
     function linkWorks(p, english) {
         if (!bibliography.length || !window.ELieb || !window.ELieb.linkAbbreviations) return;
-        const works = english ? bibliography.filter(w => w['Gesetze Text'] !== 'His') : bibliography;
+        const works = english ? (worksEnglish || (worksEnglish = bibliography.filter(w => w['Gesetze Text'] !== 'His'))) : bibliography;
         p.innerHTML = window.ELieb.linkAbbreviations(p.innerHTML, [], [], works);
     }
     // The notes of one group as a list: number, German as printed, English, where printed, remarks.
