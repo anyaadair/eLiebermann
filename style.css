@@ -1410,3 +1410,10 @@ ruby.gloss-pair rt.gloss-word { font-size: 0.68em; line-height: 1.1; color: #4a4
     body:has(.laws-layout, .entry-layout) .glossary thead th { top: var(--site-top-h, 0px); }
     html:has(.laws-layout, .entry-layout) { scroll-padding-top: calc(var(--site-top-h, 0px) + 0.75rem); }
 }
+
+/* An entry that only points to where Liebermann prints a passage in full (law.html, data/redirects.json) */
+.clause-redirect { margin: 1rem 0 0; padding: 0.75rem 1rem; border-left: 3px solid var(--link); background: var(--powder-tint); max-width: 52rem; }
+.clause-redirect p { margin: 0 0 0.4rem; }
+.clause-redirect p:last-child { margin-bottom: 0; }
+.clause-redirect__links { line-height: 1.8; }
+.code-clause-redirect { margin: 0.2rem 0 0; font-size: 0.9rem; }

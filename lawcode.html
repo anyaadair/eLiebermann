@@ -304,6 +304,11 @@ scripts:
         // where Liebermann's numbers go out of numerical order (data/clause-order.json): a note before that clause
         // a clause Wulfstan probably added (data/wulfstan.json): its badge under the clause number
         const wulfCol = (c, num) => { const wb = Wulfstan.clauseBadges(c.id, { short: true }); return wb ? `<div class="code-clause-numcol">${num}<span class="code-clause-wulf">${wb}</span></div>` : num; };
+        // an entry that only points to where Liebermann prints the passage in full (data/redirects.json)
+        const redirLine = r => {
+            const links = r.to.slice(0, 4).map(x => `<a href="${clauseUrl(x.id)}">${esc(x.label)}</a>`).join(', ') + (r.to.length > 4 ? ` <span class="muted">and ${r.to.length - 4} more</span>` : '');
+            return `<p class="code-clause-en code-clause-redirect">${r.to.length ? `Printed in full beside ${links}` : r.pages.length ? `Printed in full in Gesetze I, p. ${esc(r.pages.join(', '))}` : 'Printed in full elsewhere'}</p>`;
+        };
         const orderNotes = searching ? [] : ((window.__clauseOrder || {}).codeNotes || {})[code.code] || [];
         ol.innerHTML = shown.length ? shown.map(c => {
             const ex = other.get(c.id);
@@ -311,7 +316,7 @@ scripts:
                 <li id="${esc(c.id)}">
                     ${wulfCol(c, `<a class="code-clause-no" href="${clauseUrl(c.id)}" title="All texts, manuscripts and translations of ${esc(c.citation)}">${esc(c.clause || c.citation)}</a>`)}
                     ${S.show.has('text') ? `<p class="code-clause-oe"${ELieb.langAttr(c.oeLang)}>${tagOf(c.oeLabel, tl)}${esc(c.oe)}</p>` : ''}
-                    ${S.show.has('en') ? `<p class="code-clause-en">${tagOf(c.glossLabel, el)}${esc(c.gloss)}</p>` : ''}
+                    ${(window.__redirects || {})[c.id] && !c.gloss ? redirLine(window.__redirects[c.id]) : S.show.has('en') ? `<p class="code-clause-en">${tagOf(c.glossLabel, el)}${esc(c.gloss)}</p>` : ''}
                     ${ex ? `<p class="code-clause-also small">${ex.slice(0, 2).map(([label, text, ranges, lang]) => `<span class="hit__label">${esc(label)}</span> ${LawPanel.kwic(text, ranges, lang)}`).join('<br>')}${ex.length > 2 ? ` <span class="muted">and ${ex.length - 2} more</span>` : ''}</p>` : ''}
                     <a class="code-clause-more" href="${clauseUrl(c.id)}">All texts and translations<span aria-hidden="true"> ›</span><span class="visually-hidden"> of ${esc(c.citation)}</span></a>
                 </li>`;
@@ -420,8 +425,10 @@ scripts:
         getJson(root + 'oe-laws/codes.json'),
         fetch(root + 'data/clause-order.json').then(r => r.json()).catch(() => ({})),
         Wulfstan.load(root),
-        fetch(root + 'data/works.json').then(r => r.json()).catch(() => ({}))
-    ]).then(([codeList, order, , works]) => {
+        fetch(root + 'data/works.json').then(r => r.json()).catch(() => ({})),
+        fetch(root + 'data/redirects.json').then(r => r.json()).catch(() => ({}))
+    ]).then(([codeList, order, , works, redirects]) => {
+        window.__redirects = redirects || {};
         window.__clauseOrder = order;
         window.__works = {};
         (Array.isArray(works) ? works : works.works || []).forEach(w => { window.__works[w.id] = w; });
