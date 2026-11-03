@@ -888,7 +888,7 @@ h2.result-code .code-abbr { min-width: 0; margin-left: 0.4rem; }
 .code-callout p { margin: 0; }
 .code-callout p + p { margin-top: 0.6rem; }
 /* lawcode.html: the manuscripts, editions and translations, behind a button after "Clauses" */
-.code-sources { margin: -0.75rem 0 1.5rem; }
+.code-sources { margin: 0 0 1.5rem; }
 .code-sources > summary::before { content: none; }
 .code-sources .clause-sources h2 { font-size: 1.45rem; margin: 1.1rem 0 0.45rem; }
 .code-sources .clause-sources:first-child h2 { margin-top: 0.2rem; }
