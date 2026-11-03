@@ -347,7 +347,7 @@
             marks.forEach((m, k) => m.classList.toggle('is-current', k === at));
             // the page moves only when the match is off the screen
             const r = marks[at].getBoundingClientRect();
-            if (r.top < 0 || r.bottom > window.innerHeight) marks[at].scrollIntoView({ block: 'center', behavior: 'smooth' });
+            if (r.top < (window.ELiebScroll ? ELiebScroll.headHeight() : 0) || r.bottom > window.innerHeight) { if (window.ELiebScroll) ELiebScroll.toMiddle(marks[at], true); else marks[at].scrollIntoView({ block: 'center', behavior: 'smooth' }); }
             $('gp-found').textContent = `${at + 1} of ${marks.length}`;
         };
         const find = () => {

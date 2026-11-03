@@ -120,6 +120,7 @@
     // can still scroll to the end of the page.
     function scrollToMiddle(el, smooth) {
         if (!el) return;
+        if (window.ELiebScroll) return window.ELiebScroll.toMiddle(el, smooth);
         const r = el.getBoundingClientRect();
         let y = window.scrollY + r.top + r.height / 2 - window.innerHeight / 2;
         const layout = el.closest('.laws-layout');

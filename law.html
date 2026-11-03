@@ -1306,7 +1306,7 @@ scripts:
             vis[at].classList.add('find-hit--current');
             // the page moves only when the match is off the screen
             const r = vis[at].getBoundingClientRect();
-            if (r.top < 0 || r.bottom > window.innerHeight) LawPanel.scrollToMiddle(vis[at], true);
+            if (r.top < (window.ELiebScroll ? ELiebScroll.headHeight() : 0) || r.bottom > window.innerHeight) LawPanel.scrollToMiddle(vis[at], true);
             $('find-count').textContent = `${at + 1} of ${vis.length}` + (marks.length > vis.length ? ` (and ${marks.length - vis.length} in notes not open)` : '');
         };
         function run() {

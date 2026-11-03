@@ -44,9 +44,12 @@
     {%- endif %}
     {%- endfor %}
     <script src="{{ root }}scripts/panel-fold.js?v={{ site.time | date: '%s' }}" defer></script>
+    <script src="{{ root }}scripts/site-top.js?v={{ site.time | date: '%s' }}" defer></script>
 </head>
 <body class="{% if page.full_width %}full-width{% endif %}{% if page.section == "home" %} home{% endif %}">
     <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="site-top">
 
     {%- if page.section == "home" %}
     <header class="site-header">
@@ -99,6 +102,7 @@
         </ul>
     </nav>
     {%- endif %}
+    </div>
 
     <main id="main" class="main-content" tabindex="-1">
         {{ content }}
