@@ -445,6 +445,11 @@ span.wulf-badge { cursor: help; font-size: 0.72rem; padding: 0.02rem 0.5rem; ver
 .wulf-badge--composed > summary, span.wulf-badge--composed,
 .wulf-badge--reworked > summary, span.wulf-badge--reworked { background: #efe7f7; border-color: #cdbfe3; }
 .wulf-badge--disputed > summary, span.wulf-badge--disputed { background: #fff; border: 1px dashed #a597bd; }
+/* other people connected with a code (data/associations.json), in colours of their own */
+.wulf-badge--wulfhelm > summary, span.wulf-badge--wulfhelm { background: #e3f1e8; border-color: #b4d6c0; }
+.wulf-badge--wulfhelm .wulf-badge__body { border-left-color: #b4d6c0; }
+.wulf-badge--dunstan > summary, span.wulf-badge--dunstan { background: #fbefdc; border-color: #e7cfa6; }
+.wulf-badge--dunstan .wulf-badge__body { border-left-color: #e7cfa6; }
 .wulf-by { font-weight: 400; color: var(--muted); margin-left: 0.2rem; }
 .wulf-badge[open] { flex-basis: 100%; }
 .wulf-badge__body { margin: 0.4rem 0 0.2rem; padding: 0.5rem 0.8rem; border-left: 3px solid #cdbfe3; background: var(--surface); max-width: 46rem; }

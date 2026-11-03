@@ -1,12 +1,13 @@
 {
- "_about": "Wulfstan's part in each law code, with whose view it is. 'codes': by law code (as in oe-laws/codes.json); 'clauses': single clauses by id (as in oe-laws/index.json). Each is a list, so other scholars' views can be added beside Rabin's. kind: composed, reworked or disputed. Shown on the law-code and clause pages and in the Laws search (scripts/wulfstan.js).",
+ "_about": "Wulfstan's part in each law code, with whose view it is. 'codes': by law code (as in oe-laws/codes.json); 'clauses': single clauses by id (as in oe-laws/index.json). Each is a list, so other scholars' views can be added beside Rabin's. kind: composed, reworked or disputed. Shown on the law-code and clause pages and in the Laws search (scripts/wulfstan.js). A view with \"secondary\": true (Wormald) never makes a badge of its own: the first scholar's view (Rabin) names the badge, and the others are shown inside it, even where they differ.",
  "kinds": {
   "composed": "Composed by Wulfstan",
   "reworked": "Edited or Reworked by Wulfstan",
   "disputed": "Attributed to Wulfstan (disputed)"
  },
  "sources": {
-  "Rabin": "Andrew Rabin, ed. and trans., Old English Legal Writings: Wulfstan, DOML 66 (2020)"
+  "Rabin": "Andrew Rabin, ed. and trans., Old English Legal Writings: Wulfstan, DOML 66 (2020)",
+  "Wormald": "Patrick Wormald, The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits (Oxford, 1999)"
  },
  "codes": {
   "EGu": [
@@ -15,6 +16,13 @@
     "by": "Rabin",
     "page": "xiv–xv",
     "note": "“Manifestly a forgery”: written by Wulfstan, probably between 1002 and 1004 (a later date has also been suggested), as a treaty of Edward the Elder and Guthrum."
+   },
+   {
+    "kind": "composed",
+    "by": "Wormald",
+    "page": "389–91",
+    "note": "Agrees: a Wulfstan forgery, “his first extant exercise in legal formulation”, before 1008.",
+    "secondary": true
    }
   ],
   "Geþyncðo": [
@@ -23,6 +31,13 @@
     "by": "Rabin",
     "page": "xv",
     "note": "Written by Wulfstan as the opening text of his Compilation on Status (Rabin’s “On the Ranks of People and Law”)."
+   },
+   {
+    "kind": "composed",
+    "by": "Wormald",
+    "page": "393–4",
+    "note": "Agrees: written by Wulfstan outright, not an older text he revised.",
+    "secondary": true
    }
   ],
   "Norðleoda": [
@@ -31,6 +46,13 @@
     "by": "Rabin",
     "page": "xv; p. 405",
     "note": "An older text (the first half probably ninth-century) that Wulfstan took into his Compilation on Status. He added the second half (clauses 7–12) and removed some of its regional references: an earlier version is titled “The Law of the Northern People”."
+   },
+   {
+    "kind": "composed",
+    "by": "Wormald",
+    "page": "392–4",
+    "note": "Agrees that Wulfstan expanded an older wergeld list; he gives Wulfstan clause 5 (a priest’s wergeld equal to a thegn’s) as well as 7–12. The wording “among the English” he takes to be a southern scribe’s, not Wulfstan’s.",
+    "secondary": true
    }
   ],
   "Mirce": [
@@ -39,6 +61,13 @@
     "by": "Rabin",
     "page": "xv",
     "note": "An older (probably ninth-century) text that Wulfstan took into his Compilation on Status (Rabin’s “On the Law of the Mercians”)."
+   },
+   {
+    "kind": "composed",
+    "by": "Wormald",
+    "page": "392–3",
+    "note": "Differs: an older text that Wulfstan took into his compilation, with no sign of his rewriting it: “There is no hint that its composition owed anything to Wulfstan.”",
+    "secondary": true
    }
   ],
   "Að": [
@@ -47,6 +76,13 @@
     "by": "Rabin",
     "page": "xv",
     "note": "An older (probably ninth-century) text that Wulfstan took into his Compilation on Status (Rabin’s “On the Mercian Oath”)."
+   },
+   {
+    "kind": "composed",
+    "by": "Wormald",
+    "page": "392–3",
+    "note": "Agrees: an old first clause, with Wulfstan’s added second clause on the priest’s oath.",
+    "secondary": true
    }
   ],
   "Had": [
@@ -55,6 +91,13 @@
     "by": "Rabin",
     "page": "xv",
     "note": "Written by Wulfstan as the closing text of his Compilation on Status (Rabin’s “On Priests’ Oaths”)."
+   },
+   {
+    "kind": "composed",
+    "by": "Wormald",
+    "page": "390, 393",
+    "note": "Agrees: Wulfstan’s own text, closing his compilation on status.",
+    "secondary": true
    }
   ],
   "Grið": [
@@ -63,6 +106,13 @@
     "by": "Rabin",
     "page": "xv–xvi",
     "note": "Wulfstan’s “most extended argument for the inviolability of ecclesiastical protection”, probably written with the Compilation on Status, perhaps 1006–8."
+   },
+   {
+    "kind": "composed",
+    "by": "Wormald",
+    "page": "394–5",
+    "note": "Agrees: “There is of course no doubt that this piece is by Wulfstan”; written before 1014.",
+    "secondary": true
    }
   ],
   "Nor Grið": [
@@ -71,6 +121,13 @@
     "by": "Rabin",
     "page": "xvi–xvii",
     "note": "By Wulfstan; probably written about the same time as VIII Æthelred, around 1012–14."
+   },
+   {
+    "kind": "composed",
+    "by": "Wormald",
+    "page": "395",
+    "note": "Differs: undecided. The text is too short, and now illegible, to say whether Wulfstan wrote it; if not, it was by someone who had learned from him.",
+    "secondary": true
    }
   ],
   "Prom. Reg.": [
@@ -79,6 +136,13 @@
     "by": "Rabin",
     "page": "xvii",
     "note": "Once dated to Edgar’s reign; recently shown to be Wulfstan’s work, possibly written for a royal assembly late in Æthelred’s reign (1014–16)."
+   },
+   {
+    "kind": "composed",
+    "by": "Wormald",
+    "page": "447–8",
+    "note": "Differs: does not attribute it to Wulfstan. He takes it to be the oath Æthelred swore at his consecration by Dunstan at Kingston (978), as the manuscripts say. (Wormald wrote before the later work that Rabin follows.)",
+    "secondary": true
    }
   ],
   "Episc": [
@@ -87,6 +151,13 @@
     "by": "Rabin",
     "page": "xxi–xxii",
     "note": "One of Wulfstan’s earliest tracts on Church governance, perhaps 1002–8."
+   },
+   {
+    "kind": "composed",
+    "by": "Wormald",
+    "page": "392 n. 584",
+    "note": "Agrees: “clearly” Wulfstan’s.",
+    "secondary": true
    }
   ],
   "V Atr": [
@@ -95,6 +166,13 @@
     "by": "Rabin",
     "page": "xxvi–xxvii",
     "note": "Council of Enham, 16 May 1008: Wulfstan’s first known royal legislation."
+   },
+   {
+    "kind": "composed",
+    "by": "Wormald",
+    "page": "330–5",
+    "note": "Agrees: Wulfstan’s code of 1008, which he went on revising; no single original text survives.",
+    "secondary": true
    }
   ],
   "VI Atr": [
@@ -103,6 +181,13 @@
     "by": "Rabin",
     "page": "xxvii",
     "note": "Probably not an official enactment but Wulfstan’s draft of V Æthelred."
+   },
+   {
+    "kind": "composed",
+    "by": "Wormald",
+    "page": "333–5",
+    "note": "Agrees that it is Wulfstan’s draft, but takes it to be later than V Æthelred, looking forward to Cnut’s codes.",
+    "secondary": true
    }
   ],
   "VI Atr Lat": [
@@ -111,6 +196,13 @@
     "by": "Rabin",
     "page": "xxvii",
     "note": "The Latin version of VI Æthelred; its last clause names Wulfstan as its author."
+   },
+   {
+    "kind": "composed",
+    "by": "Wormald",
+    "page": "334–5",
+    "note": "Agrees: a Latin working draft by Wulfstan, whose own hand filled in its blanks.",
+    "secondary": true
    }
   ],
   "VII Atr": [
@@ -119,6 +211,13 @@
     "by": "Rabin",
     "page": "xxvii–xxviii",
     "note": "Wulfstan’s laws from the council at Bath, 1009. The Old English original is lost; this Latin version (Quadripartitus) is “likely a reasonably close approximation”."
+   },
+   {
+    "kind": "composed",
+    "by": "Wormald",
+    "page": "330–1, 344–5",
+    "note": "Agrees: the Latin shows “many marks of Wulfstan composition”.",
+    "secondary": true
    }
   ],
   "VIIa Atr": [
@@ -127,6 +226,13 @@
     "by": "Rabin",
     "page": "xxviii",
     "note": "Wulfstan’s Old English draft of the 1009 laws, probably made between the law code and his later reworking of it as a homily."
+   },
+   {
+    "kind": "composed",
+    "by": "Wormald",
+    "page": "331–2",
+    "note": "Agrees: Wulfstan’s own Old English redraft of his code of 1009.",
+    "secondary": true
    }
   ],
   "VIII Atr": [
@@ -135,6 +241,13 @@
     "by": "Rabin",
     "page": "xxviii–xxix",
     "note": "Wulfstan’s laws of 1014; they borrow whole clauses from his Compilation on Status."
+   },
+   {
+    "kind": "composed",
+    "by": "Wormald",
+    "page": "336",
+    "note": "Agrees: Wulfstan’s code of 1014, surviving as his own selection of its Church clauses.",
+    "secondary": true
    }
   ],
   "IX Atr": [
@@ -143,6 +256,13 @@
     "by": "Rabin",
     "page": "xxix",
     "note": "A fragment of Wulfstan’s laws from a council at Woodstock, probably 1009–16."
+   },
+   {
+    "kind": "composed",
+    "by": "Wormald",
+    "page": "337 and n. 344",
+    "note": "Differs: does not attribute it; the fragment is too slight to judge.",
+    "secondary": true
    }
   ],
   "X Atr": [
@@ -151,6 +271,13 @@
     "by": "Rabin",
     "page": "xxix",
     "note": "A fragment of Wulfstan’s laws; perhaps another version of the Enham codes of 1008 (V and VI Æthelred)."
+   },
+   {
+    "kind": "composed",
+    "by": "Wormald",
+    "page": "336–7",
+    "note": "Agrees: “This remarkable prologue is again Wulfstan’s work.”",
+    "secondary": true
    }
   ],
   "Cn 1018": [
@@ -159,6 +286,13 @@
     "by": "Rabin",
     "page": "xxx",
     "note": "“The earliest set of laws authored by Wulfstan on behalf of the new king”, Cnut, probably in a version Wulfstan revised for his own use."
+   },
+   {
+    "kind": "composed",
+    "by": "Wormald",
+    "page": "346–7",
+    "note": "Agrees: “beyond dispute Wulfstan’s work”.",
+    "secondary": true
    }
   ],
   "Cn 1020": [
@@ -167,6 +301,13 @@
     "by": "Rabin",
     "page": "xxx–xxxi",
     "note": "Cnut’s proclamation of 1019–20, which Wulfstan afterwards revised in large part (especially clauses 3–7 and 14–20) for further circulation or reading aloud."
+   },
+   {
+    "kind": "composed",
+    "by": "Wormald",
+    "page": "347–8",
+    "note": "Agrees that Wulfstan expanded a royal letter written by others; he finds his hand chiefly in clauses 14–18, not in 3–7.",
+    "secondary": true
    }
   ],
   "I Cn": [
@@ -175,6 +316,13 @@
     "by": "Rabin",
     "page": "xxxi",
     "note": "Wulfstan’s law code for Cnut, 1020–23; one copy is in a manuscript owned and annotated by Wulfstan himself."
+   },
+   {
+    "kind": "composed",
+    "by": "Wormald",
+    "page": "349–50",
+    "note": "Agrees: no need to argue Wulfstan’s authorship of I–II Cnut.",
+    "secondary": true
    }
   ],
   "II Cn": [
@@ -183,6 +331,13 @@
     "by": "Rabin",
     "page": "xxxi–xxxii",
     "note": "Wulfstan’s longest law code. Over half is drawn from his earlier writings; more than a third has no known source, and is probably his own."
+   },
+   {
+    "kind": "composed",
+    "by": "Wormald",
+    "page": "361–5",
+    "note": "Agrees, with a reservation: “it remains uncertain whether he can be credited with Cnut’s most resolutely secular decrees”, and the “alleviations” (69–83) may come from an earlier text.",
+    "secondary": true
    }
   ],
   "I As": [
@@ -191,6 +346,13 @@
     "by": "Rabin",
     "page": "xxxiv–xxxv",
     "note": "The Old English version survives in two manuscripts linked with Wulfstan; its differences from the Latin suggest he recast the text, especially on Church dues."
+   },
+   {
+    "kind": "composed",
+    "by": "Wormald",
+    "page": "295, 302 n. 173",
+    "note": "Agrees: the demands for soul-scot and plough-alms (clause 4), absent from the Quadripartitus, are probably Wulfstan’s additions.",
+    "secondary": true
    }
   ],
   "I Em": [
@@ -199,6 +361,13 @@
     "by": "Rabin",
     "page": "xxxv",
     "note": "The versions in two manuscripts linked with Wulfstan differ in style and content, suggesting he reworked the text."
+   },
+   {
+    "kind": "composed",
+    "by": "Wormald",
+    "page": "309",
+    "note": "Agrees: Wulfstan probably adjusted the text in his manuscripts, above all in clause 2 (Peter’s Pence and plough-alms).",
+    "secondary": true
    }
   ],
   "II Eg": [
@@ -207,6 +376,13 @@
     "by": "Rabin",
     "page": "xxxv–xxxvi",
     "note": "Shows “even more evidence of Wulfstanian intervention” than I Æthelstan and I Edmund, including clauses that repeat almost word for word his laws for Æthelred and Cnut."
+   },
+   {
+    "kind": "composed",
+    "by": "Wormald",
+    "page": "314–15",
+    "note": "Agrees: the added clauses 2.3 and 5.1–5.3 are Wulfstan’s.",
+    "secondary": true
    }
   ],
   "III Eg": [
@@ -215,6 +391,13 @@
     "by": "Rabin",
     "page": "xxxv–xxxvi",
     "note": "Shows “even more evidence of Wulfstanian intervention” than I Æthelstan and I Edmund, including clauses that repeat almost word for word his laws for Æthelred and Cnut."
+   },
+   {
+    "kind": "composed",
+    "by": "Wormald",
+    "page": "314–15",
+    "note": "Agrees: Wulfstan amended the last clause (8.1–8.3).",
+    "secondary": true
    }
   ],
   "Northu": [
@@ -223,6 +406,13 @@
     "by": "Rabin",
     "page": "xxxiii",
     "note": "Attributed to Wulfstan for much of the twentieth century; more recently thought to be by one of his successors at York (Ælfric Puttoc or Cynesige). It draws heavily on Wulfstan’s Canons of Edgar."
+   },
+   {
+    "kind": "composed",
+    "by": "Wormald",
+    "page": "396–7",
+    "note": "Differs: rejects Wulfstan as author. The text was “influenced by Wulfstan but was not from his own desk”, probably written after 1023 by a later archbishop of York.",
+    "secondary": true
    }
   ],
   "Rect": [
@@ -231,6 +421,13 @@
     "by": "Rabin",
     "page": "xxxiii–xxxiv",
     "note": "It has been suggested, mainly on grounds of style, that Wulfstan adapted Rectitudines and Gerefa and joined them; more recent scholarship finds the likeness to his writing not enough to say so."
+   },
+   {
+    "kind": "composed",
+    "by": "Wormald",
+    "page": "387–9",
+    "note": "Differs: rejects Bethurum’s attribution to Wulfstan; it differs in tone, vocabulary and message from his accepted writings.",
+    "secondary": true
    }
   ],
   "Ger": [
@@ -239,6 +436,13 @@
     "by": "Rabin",
     "page": "xxxiii–xxxiv",
     "note": "It has been suggested, mainly on grounds of style, that Wulfstan adapted Rectitudines and Gerefa and joined them; more recent scholarship finds the likeness to his writing not enough to say so."
+   },
+   {
+    "kind": "composed",
+    "by": "Wormald",
+    "page": "387–9",
+    "note": "Differs: rejects the attribution to Wulfstan; its view of reeves is unlike his.",
+    "secondary": true
    }
   ]
  },
@@ -497,6 +701,15 @@
     "by": "Rabin",
     "page": "xv",
     "note": "The opening of what Rabin calls ‘On Priests’ Oaths’, the closing text Wulfstan added to his Compilation on Status (Liebermann’s Að 2 and Hadbot)."
+   }
+  ],
+  "Northleoda_5": [
+   {
+    "kind": "composed",
+    "by": "Wormald",
+    "page": "392–3",
+    "note": "Added by Wulfstan: the clause making a priest’s wergeld equal to a thegn’s.",
+    "secondary": true
    }
   ]
  }

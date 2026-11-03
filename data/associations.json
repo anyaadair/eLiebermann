@@ -1,0 +1,76 @@
+{
+ "_about": "Other people Wormald (or the manuscripts) connect with a law code, shown as badges beside the Wulfstan ones (scripts/wulfstan.js). Same layout as data/wulfstan.json.",
+ "kinds": {
+  "wulfhelm": "Associated with Wulfhelm",
+  "dunstan": "MSS attribute to Dunstan"
+ },
+ "sources": {
+  "Wormald": "Patrick Wormald, The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits (Oxford, 1999)"
+ },
+ "codes": {
+  "I As": [
+   {
+    "kind": "wulfhelm",
+    "by": "Wormald",
+    "page": "295, 299–300",
+    "note": "Archbishop Wulfhelm of Canterbury (926–41). Wormald holds that whether Wulfhelm wrote Æthelstan’s laws cannot be known, but that he was probably behind the surviving form of some of them and was their chief keeper. I Æthelstan, issued on his advice, has “the air of something for which the archbishop had special responsibility”."
+   }
+  ],
+  "As Alm": [
+   {
+    "kind": "wulfhelm",
+    "by": "Wormald",
+    "page": "295, 299–300",
+    "note": "Archbishop Wulfhelm of Canterbury (926–41). Wormald holds that whether Wulfhelm wrote Æthelstan’s laws cannot be known, but that he was probably behind the surviving form of some of them and was their chief keeper. The Charities Ordinance names him as adviser, and its text, like that of I and II Æthelstan, looks like his responsibility."
+   }
+  ],
+  "II As": [
+   {
+    "kind": "wulfhelm",
+    "by": "Wormald",
+    "page": "295, 299–300",
+    "note": "Archbishop Wulfhelm of Canterbury (926–41). Wormald holds that whether Wulfhelm wrote Æthelstan’s laws cannot be known, but that he was probably behind the surviving form of some of them and was their chief keeper. Only the Quadripartitus text of the Grately code has the epilogue naming him; that Canterbury text looks like his responsibility."
+   }
+  ],
+  "III As": [
+   {
+    "kind": "wulfhelm",
+    "by": "Wormald",
+    "page": "296, 299–300",
+    "note": "Archbishop Wulfhelm of Canterbury (926–41). Wormald holds that whether Wulfhelm wrote Æthelstan’s laws cannot be known, but that he was probably behind the surviving form of some of them and was their chief keeper. The Kentish letter to the king was probably kept at Canterbury, and so by Wulfhelm."
+   }
+  ],
+  "IV As": [
+   {
+    "kind": "wulfhelm",
+    "by": "Wormald",
+    "page": "296, 299–300",
+    "note": "Archbishop Wulfhelm of Canterbury (926–41). Wormald holds that whether Wulfhelm wrote Æthelstan’s laws cannot be known, but that he was probably behind the surviving form of some of them and was their chief keeper. The summary of the Thunderfield decisions was “apparently kept by Wulfhelm”."
+   }
+  ],
+  "V As": [
+   {
+    "kind": "wulfhelm",
+    "by": "Wormald",
+    "page": "296, 299–300",
+    "note": "Archbishop Wulfhelm of Canterbury (926–41). Wormald holds that whether Wulfhelm wrote Æthelstan’s laws cannot be known, but that he was probably behind the surviving form of some of them and was their chief keeper. The Exeter decrees came down with the Thunderfield and Faversham records that seem to be his."
+   }
+  ],
+  "VI As": [
+   {
+    "kind": "wulfhelm",
+    "by": "Wormald",
+    "page": "298–300",
+    "note": "Archbishop Wulfhelm of Canterbury (926–41). Wormald holds that whether Wulfhelm wrote Æthelstan’s laws cannot be known, but that he was probably behind the surviving form of some of them and was their chief keeper. VI Æthelstan “may thus be a compound of reports collected by Wulfhelm in fulfilment of royal orders”."
+   }
+  ],
+  "Prom. Reg.": [
+   {
+    "kind": "dunstan",
+    "by": "Wormald",
+    "page": "447–8",
+    "note": "The two manuscripts of the Old English text say that Archbishop Dunstan gave this oath to the king at his consecration at Kingston. Wormald accepts this and takes it to be Æthelred’s oath of 978 (Rabin follows later work that makes the text Wulfstan’s)."
+   }
+  ]
+ }
+}
