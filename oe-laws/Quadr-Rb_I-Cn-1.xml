@@ -20,6 +20,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">535</biblScope></bibl>
           <bibl xml:id="claude-crib" type="translation">A semi-literal English rendering of the Latin text, created for this database in 2026 with Claude, a large language model made by Anthropic. It is a crib to help the reader with the Latin, and should not be treated as a separate translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
+          <bibl xml:id="claude" type="translation">English renderings of Liebermann’s German notes, created for this database in 2026 with Claude, a large language model made by Anthropic. They are cribs to help the reader with Liebermann’s German, and should not be treated as separate translations</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -44,9 +45,12 @@
     <body>
       <div type="clause" n="I Cn 1">
         <head>Quadr Rb I Cn 1</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Quadr Rb I Cn 1" corresp="#wit-lat"><pb n="535" ed="#liebermann"/>Capitula. ¶ De dilectione Dei et domini sui.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Quadr Rb I Cn 1" corresp="#wit-lat"><pb n="535" ed="#liebermann"/><ptr type="liebermannNote" n="15" target="#Quadr-Rb_I-Cn-1.lnote.la.15"/>Capitula. ¶ <ptr type="liebermannNote" n="16" target="#Quadr-Rb_I-Cn-1.lnote.la.16"/>De dilectione Dei et domini<ptr type="liebermannNote" n="17" target="#Quadr-Rb_I-Cn-1.lnote.la.17"/> sui.</ab>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 535 (two independent readings of the page images, differences settled against the page)</note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">Chapters. ¶ Of the love of God and of one's lord.</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="Quadr-Rb_I-Cn-1.lnote.la.15" n="15" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">535</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">die Liste steht an dieser Stelle in DmTHk</hi> (<hi rend="italic">wohl so einst M</hi>); <hi rend="italic">fehlt R, wo im Text jedem Capitel eine Rubrik vorangeht;</hi> Incipiunt cap. <hi rend="italic">überschreibt T;</hi> Capituli (<hi rend="italic">so</hi>) legum Canuti regis <hi rend="italic">Hk;</hi> I. c. legum regis Kanuti <hi rend="italic">Br</hi></seg><seg type="translation" xml:lang="en" source="#claude">the list stands at this point in DmTHk (probably so once in M); lacking in R, where in the text each chapter is preceded by a rubric; T heads it Incipiunt cap.; Capituli (sic) legum Canuti regis Hk; I. c. legum regis Kanuti Br</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Quadr-Rb_I-Cn-1.lnote.la.16" n="16" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">535</biblScope></bibl><seg type="original" xml:lang="de">I <hi rend="italic">fügen THkBr zu. Zahlen fehlen DmR und stimmen in LondTHk nicht immer überein, auch nicht mit den Zahlen ihres Textes, sind also wohl nicht original, daher hier nicht weiter beachtet</hi></seg><seg type="translation" xml:lang="en" source="#claude">THkBr add I. Numbers are lacking in DmR and in LondTHk do not always agree, nor with the numbers of their text; they are therefore probably not original and are not further noted here</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Quadr-Rb_I-Cn-1.lnote.la.17" n="17" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">535</biblScope></bibl><seg type="original" xml:lang="de">proximi <hi rend="italic">statt</hi> d. sui <hi rend="italic">R</hi></seg><seg type="translation" xml:lang="en" source="#claude">proximi instead of d. sui R</seg></note>
       </div>
     </body>
   </text>

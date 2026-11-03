@@ -20,6 +20,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">537</biblScope></bibl>
           <bibl xml:id="claude-crib" type="translation">A semi-literal English rendering of the Latin text, created for this database in 2026 with Claude, a large language model made by Anthropic. It is a crib to help the reader with the Latin, and should not be treated as a separate translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
+          <bibl xml:id="claude" type="translation">English renderings of Liebermann’s German notes, created for this database in 2026 with Claude, a large language model made by Anthropic. They are cribs to help the reader with Liebermann’s German, and should not be treated as separate translations</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -44,9 +45,11 @@
     <body>
       <div type="clause" n="II Cn 44">
         <head>Quadr Rb II Cn 44</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Quadr Rb II Cn 44" corresp="#wit-lat"><pb n="537" ed="#liebermann"/>Si quis confiteri uelit, et negetur ei.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Quadr Rb II Cn 44" corresp="#wit-lat"><pb n="537" ed="#liebermann"/>Si<ptr type="liebermannNote" n="50" target="#Quadr-Rb_II-Cn-44.lnote.la.50"/> quis confiteri<ptr type="liebermannNote" n="51" target="#Quadr-Rb_II-Cn-44.lnote.la.51"/> uelit, et negetur ei.</ab>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 537 (two independent readings of the page images, differences settled against the page)</note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">If anyone wishes to confess, and it is refused him.</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="Quadr-Rb_II-Cn-44.lnote.la.50" n="50" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">537</biblScope></bibl><seg type="original" xml:lang="de">Quod confessio non neg. dampnato <hi rend="italic">Br</hi></seg><seg type="translation" xml:lang="en" source="#claude">Quod confessio non neg. dampnato Br</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Quadr-Rb_II-Cn-44.lnote.la.51" n="51" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">537</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">so Lond;</hi> -tetur <hi rend="italic">Or;</hi> profiteri <hi rend="italic">übr.</hi></seg><seg type="translation" xml:lang="en" source="#claude">so Lond; -tetur Or; profiteri the others</seg></note>
       </div>
     </body>
   </text>

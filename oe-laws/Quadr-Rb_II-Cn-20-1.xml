@@ -20,6 +20,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">536</biblScope></bibl>
           <bibl xml:id="claude-crib" type="translation">A semi-literal English rendering of the Latin text, created for this database in 2026 with Claude, a large language model made by Anthropic. It is a crib to help the reader with the Latin, and should not be treated as a separate translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
+          <bibl xml:id="claude" type="translation">English renderings of Liebermann’s German notes, created for this database in 2026 with Claude, a large language model made by Anthropic. They are cribs to help the reader with Liebermann’s German, and should not be treated as separate translations</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -44,9 +45,13 @@
     <body>
       <div type="clause" n="II Cn 20.1">
         <head>Quadr Rb II Cn 20.1</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Quadr Rb II Cn 20.1" corresp="#wit-lat"><pb n="536" ed="#liebermann"/>et ut discrete sciatur de singulis, quis</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Quadr Rb II Cn 20.1" corresp="#wit-lat"><pb n="536" ed="#liebermann"/>et<ptr type="liebermannNote" n="84" target="#Quadr-Rb_II-Cn-20-1.lnote.la.84"/> ut discrete<ptr type="liebermannNote" n="85" target="#Quadr-Rb_II-Cn-20-1.lnote.la.85"/> sciatur<ptr type="liebermannNote" n="86" target="#Quadr-Rb_II-Cn-20-1.lnote.la.86"/> de singulis, quis<ptr type="liebermannNote" n="87" target="#Quadr-Rb_II-Cn-20-1.lnote.la.87"/></ab>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 536 (two independent readings of the page images, differences settled against the page)</note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">and that it be distinctly known of each one, who</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="Quadr-Rb_II-Cn-20-1.lnote.la.84" n="84" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">536</biblScope></bibl><seg type="original" xml:lang="de">Diuisio liberorum et seruorum <hi rend="italic">statt</hi> et — legalitatis <hi rend="italic">zu</hi> 20, 1 <hi rend="italic">R; statt</hi> et — seruus <hi rend="italic">hat Br:</hi> XLI. De stercman qui iniuste defendunt homines suos</seg><seg type="translation" xml:lang="en" source="#claude">Diuisio liberorum et seruorum instead of et — legalitatis at 20, 1 R; instead of et — seruus Br has: XLI. De stercman qui iniuste defendunt homines suos</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Quadr-Rb_II-Cn-20-1.lnote.la.85" n="85" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">536</biblScope></bibl><seg type="original" xml:lang="de">distincte <hi rend="italic">Or;</hi> s. d. <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">distincte Or; s. d. Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Quadr-Rb_II-Cn-20-1.lnote.la.86" n="86" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">536</biblScope></bibl><seg type="original" xml:lang="de">sciat <hi rend="italic">Dm</hi></seg><seg type="translation" xml:lang="en" source="#claude">sciat Dm</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Quadr-Rb_II-Cn-20-1.lnote.la.87" n="87" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">536</biblScope></bibl><seg type="original" xml:lang="de">an <hi rend="italic">Lond</hi></seg><seg type="translation" xml:lang="en" source="#claude">an Lond</seg></note>
       </div>
     </body>
   </text>

@@ -20,6 +20,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">537</biblScope></bibl>
           <bibl xml:id="claude-crib" type="translation">A semi-literal English rendering of the Latin text, created for this database in 2026 with Claude, a large language model made by Anthropic. It is a crib to help the reader with the Latin, and should not be treated as a separate translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
+          <bibl xml:id="claude" type="translation">English renderings of Liebermann’s German notes, created for this database in 2026 with Claude, a large language model made by Anthropic. They are cribs to help the reader with Liebermann’s German, and should not be treated as separate translations</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -44,9 +45,12 @@
     <body>
       <div type="clause" n="II Cn 30">
         <head>Quadr Rb II Cn 30</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Quadr Rb II Cn 30" corresp="#wit-lat"><pb n="537" ed="#liebermann"/>Si quis incredibilis hundreto á tribus accusetur.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Quadr Rb II Cn 30" corresp="#wit-lat"><pb n="537" ed="#liebermann"/><ptr type="liebermannNote" n="18" target="#Quadr-Rb_II-Cn-30.lnote.la.18"/>Si quis incredibilis hundreto á<ptr type="liebermannNote" n="19" target="#Quadr-Rb_II-Cn-30.lnote.la.19"/> tribus<ptr type="liebermannNote" n="20" target="#Quadr-Rb_II-Cn-30.lnote.la.20"/> accusetur.</ab>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 537 (two independent readings of the page images, differences settled against the page)</note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">If an untrustworthy man is accused before the hundred by three.</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="Quadr-Rb_II-Cn-30.lnote.la.18" n="18" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">537</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt Lond;</hi> LI. De incredibili accusato in h., et [<hi rend="italic">dies aus folg. Rubrik</hi>] de eius allegatione <hi rend="italic">Br</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in Lond; LI. De incredibili accusato in h., et [this from the following rubric] de eius allegatione Br</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Quadr-Rb_II-Cn-30.lnote.la.19" n="19" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">537</biblScope></bibl><seg type="original" xml:lang="de">a. t. <hi rend="italic">fehlt Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">a. t. lacking in Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Quadr-Rb_II-Cn-30.lnote.la.20" n="20" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">537</biblScope></bibl><seg type="original" xml:lang="de">turbis <hi rend="italic">R</hi></seg><seg type="translation" xml:lang="en" source="#claude">turbis R</seg></note>
       </div>
     </body>
   </text>

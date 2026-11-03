@@ -18,6 +18,7 @@
         <bibl type="legalText"><title>Quadripartitus, Liber I: titles of the laws</title></bibl>
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">540</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">English renderings of Liebermann’s German notes, created for this database in 2026 with Claude, a large language model made by Anthropic. They are cribs to help the reader with Liebermann’s German, and should not be treated as separate translations</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -42,8 +43,10 @@
     <body>
       <div type="clause" n="Ordal">
         <head>Quadr I Ordal</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Quadr I Ordal" corresp="#wit-lat"><pb n="540" ed="#liebermann"/>De ordalio — — cxx sol. witæ; <hi rend="italic">s. o. S</hi>. 386. 388</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Quadr I Ordal" corresp="#wit-lat"><pb n="540" ed="#liebermann"/><ptr type="liebermannNote" n="24" target="#Quadr-I_Ordal.lnote.la.24"/>De ordalio — — cxx sol. witæ<ptr type="liebermannNote" n="25" target="#Quadr-I_Ordal.lnote.la.25"/>; <hi rend="italic">s. o. S</hi>. 386. 388</ab>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 540 (two independent readings of the page images, differences settled against the page)</note>
+        <note type="liebermannNote" subtype="textual" xml:id="Quadr-I_Ordal.lnote.la.24" n="24" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">540</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">hinter</hi> II As 23, 3 (<hi rend="italic">s. o. S.</hi> 165, <hi rend="italic">Anm.</hi> 3) <hi rend="italic">R</hi></seg><seg type="translation" xml:lang="en" source="#claude">after II As 23, 3 (see above p. 165, note 3) in R</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Quadr-I_Ordal.lnote.la.25" n="25" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">540</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">folgt</hi> II As 24 <hi rend="italic">bis</hi> VI As <hi rend="italic">zu Ende</hi> (<hi rend="italic">o. S.</hi> 165—83) <hi rend="italic">R; in jüngster Quadr.-Recension werden hier eingeschaltet:</hi> I. III. IV. II Atr; Dunsæte; VII Atr; Iudex; II. III Eg; <hi rend="italic">so MHk</hi> (<hi rend="italic">und, ausser</hi> Eg, <hi rend="italic">Br</hi>)</seg><seg type="translation" xml:lang="en" source="#claude">there follows II As 24 to the end of VI As (above pp. 165–83) in R; in the latest Quadr. recension the following are inserted here: I. III. IV. II Atr; Dunsæte; VII Atr; Iudex; II. III Eg; so MHk (and, except for Eg, Br)</seg></note>
       </div>
     </body>
   </text>
