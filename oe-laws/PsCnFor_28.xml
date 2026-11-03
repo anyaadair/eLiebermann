@@ -25,7 +25,11 @@
           <bibl xml:id="claude" type="translation">English renderings of Liebermann’s German notes, created for this database in 2026 with Claude, a large language model made by Anthropic. They are cribs to help the reader with Liebermann’s German, and should not be treated as separate translations</bibl>
         </listBibl>
         <listWit>
-          <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
+          <witness xml:id="wit-ho-st-cii"><abbr>Ho, St, Cii</abbr> <note type="manuscript">Liebermann’s text, from Ho (William Harrison’s Description of England, prefixed to Holinshed’s Chronicles, London, 1577), St (London, British Library, Stowe MS 414) and Cii (Cambridge, University Library, MS Ii.6.53)</note></witness>
+          <witness xml:id="wit-ho"><abbr>Ho</abbr> <note type="manuscript">Holinshed’s Chronicles (London, 1577): William Harrison’s Description of England</note></witness>
+          <witness xml:id="wit-ho2"><abbr>Ho 2</abbr> <note type="manuscript">the reprint of Holinshed’s Chronicles, 1587</note></witness>
+          <witness xml:id="wit-st"><abbr>St</abbr> <note type="manuscript">London, British Library, Stowe MS 414, late 16th century</note></witness>
+          <witness xml:id="wit-cii"><abbr>Cii</abbr> <note type="manuscript">Cambridge, University Library, MS Ii.6.53, c. 1570</note></witness>
         </listWit>
       </sourceDesc>
     </fileDesc>
@@ -48,9 +52,13 @@
     <body>
       <div type="clause" n="28">
         <head><ref type="lawCode" target="law:PsCnFor">Ps Cn for</ref> 28</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Ps Cn for 28" corresp="#wit-lat"><pb n="625" ed="#liebermann"/>Bosco nec subbosco<ptr type="liebermannNote" n="h" target="#PsCnFor_28.lnote.oe.erkl-h"/> nostro sine licentia primariorum foreste nemo manum apponat; quodsi quis fecerit, reus sit fractionis regalis chacee.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Ps Cn for 28" corresp="#wit-ho-st-cii"><pb n="625" ed="#liebermann"/>Bosco nec subbosco<ptr type="liebermannNote" n="h" target="#PsCnFor_28.lnote.la.fn.h"/> nostro sine licentia<ptr type="liebermannNote" n="14" target="#PsCnFor_28.lnote.la.14"/> primariorum<ptr type="liebermannNote" n="i" target="#PsCnFor_28.lnote.la.fn.i"/> foreste nemo manum apponat; quodsi quis fecerit, reus sit fractionis<ptr type="liebermannNote" n="f" target="#PsCnFor_28.lnote.la.fn.f"/> regalis chacee.</ab>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 625 (two independent readings of the page images, differences settled against the page)</note>
-        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">Let no one lay a hand on our wood or underwood without the leave of the chief men of the forest; and if anyone does so, let him be guilty of breach of the royal chase.</ab>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-ho-st-cii">Let no one lay a hand on our wood or underwood without the leave of the chief men of the forest; and if anyone does so, let him be guilty of breach of the royal chase.</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="PsCnFor_28.lnote.la.fn.h" n="h" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">625</biblScope></bibl><seg type="original" xml:lang="de">Unterholz, <hi rend="italic">jedoch mit Ausnahme des kleinen</hi> crimen uiridis 21, 2. <hi rend="italic">Doch meint Verf. nur Wald innerhalb der</hi> foresta, <hi rend="italic">nicht etwa auf sonstiger Königsdomäne</hi></seg><seg type="translation" xml:lang="en" source="#claude">Underwood, but with the exception of the minor crimen uiridis, 21, 2. But the author means only woodland within the foresta, not on other royal demesne</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="PsCnFor_28.lnote.la.14" n="14" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">625</biblScope></bibl><seg type="original" xml:lang="de">scientia <hi rend="italic">St Cii</hi></seg><seg type="translation" xml:lang="en" source="#claude">scientia St Cii</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="PsCnFor_28.lnote.la.fn.i" n="i" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">625</biblScope></bibl><seg type="original" xml:lang="de">per uisum custodum forestæ <hi rend="italic">Dial. scacc.</hi> I 11; forestariorum et uiridariorum <hi rend="italic">Assisa a.</hi> 1198, <hi rend="italic">also leichter, wie Anm. r</hi></seg><seg type="translation" xml:lang="en" source="#claude">per uisum custodum forestæ, Dial. scacc. I 11; forestariorum et uiridariorum, Assisa a. 1198, thus more lenient, like note r</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="PsCnFor_28.lnote.la.fn.f" n="f" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">625</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">s. o.</hi> 21, 2</seg><seg type="translation" xml:lang="en" source="#claude">see above, 21, 2</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="PsCnFor_28.lnote.oe.erkl-h" n="h" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">339</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Forst 10—11. 15b</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf. Gl</hi> Forst 10—11. 15b</seg></note>
       </div>
     </body>

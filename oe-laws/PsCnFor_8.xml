@@ -25,7 +25,11 @@
           <bibl xml:id="claude" type="translation">English renderings of Liebermann’s German notes, created for this database in 2026 with Claude, a large language model made by Anthropic. They are cribs to help the reader with Liebermann’s German, and should not be treated as separate translations</bibl>
         </listBibl>
         <listWit>
-          <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
+          <witness xml:id="wit-ho-st-cii"><abbr>Ho, St, Cii</abbr> <note type="manuscript">Liebermann’s text, from Ho (William Harrison’s Description of England, prefixed to Holinshed’s Chronicles, London, 1577), St (London, British Library, Stowe MS 414) and Cii (Cambridge, University Library, MS Ii.6.53)</note></witness>
+          <witness xml:id="wit-ho"><abbr>Ho</abbr> <note type="manuscript">Holinshed’s Chronicles (London, 1577): William Harrison’s Description of England</note></witness>
+          <witness xml:id="wit-ho2"><abbr>Ho 2</abbr> <note type="manuscript">the reprint of Holinshed’s Chronicles, 1587</note></witness>
+          <witness xml:id="wit-st"><abbr>St</abbr> <note type="manuscript">London, British Library, Stowe MS 414, late 16th century</note></witness>
+          <witness xml:id="wit-cii"><abbr>Cii</abbr> <note type="manuscript">Cambridge, University Library, MS Ii.6.53, c. 1570</note></witness>
         </listWit>
       </sourceDesc>
     </fileDesc>
@@ -48,9 +52,13 @@
     <body>
       <div type="clause" n="8">
         <head><ref type="lawCode" target="law:PsCnFor">Ps Cn for</ref> 8</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Ps Cn for 8" corresp="#wit-lat"><pb n="621" ed="#liebermann"/>Minutorum quilibet unam lanceam, unam arcubalistam<ptr type="liebermannNote" n="p" target="#PsCnFor_8.lnote.oe.erkl-p"/> et XV solidos argenti.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Ps Cn for 8" corresp="#wit-ho-st-cii"><pb n="621" ed="#liebermann"/>Minutorum quilibet unam<ptr type="liebermannNote" n="16" target="#PsCnFor_8.lnote.la.16"/> lanceam, unam arcubalistam<ptr type="liebermannNote" n="p" target="#PsCnFor_8.lnote.la.fn.p"/> et XV<ptr type="liebermannNote" n="17" target="#PsCnFor_8.lnote.la.17"/> solidos<ptr type="liebermannNote" n="q" target="#PsCnFor_8.lnote.la.fn.q"/> argenti.</ab>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 621 (two independent readings of the page images, differences settled against the page)</note>
-        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">Each of the lesser men one lance, one crossbow and fifteen shillings of silver.</ab>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-ho-st-cii">Each of the lesser men one lance, one crossbow and fifteen shillings of silver.</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="PsCnFor_8.lnote.la.16" n="16" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">621</biblScope></bibl><seg type="original" xml:lang="de">unum <hi rend="italic">Hs. Ho;</hi> sic <hi rend="italic">am Rande Ho</hi></seg><seg type="translation" xml:lang="en" source="#claude">unum MS Ho; sic in the margin Ho</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="PsCnFor_8.lnote.la.fn.p" n="p" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">621</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">das Schwert gilt für diese Stände noch als zu kostbar</hi></seg><seg type="translation" xml:lang="en" source="#claude">The sword is still considered too costly for these ranks.</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="PsCnFor_8.lnote.la.17" n="17" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">621</biblScope></bibl><seg type="original" xml:lang="de">15 <hi rend="italic">Ho</hi></seg><seg type="translation" xml:lang="en" source="#claude">15 Ho</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="PsCnFor_8.lnote.la.fn.q" n="q" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">621</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">also täglich</hi> <hi rend="superscript">1</hi>/&lt;sub&gt;2&lt;/sub&gt; <hi rend="italic">Denar; dem Windhundwärter</hi> leporario obulum in die <hi rend="italic">giebt die</hi> Const. <hi rend="italic">ebd.</hi></seg><seg type="translation" xml:lang="en" source="#claude">That is, ½ penny a day; the Const. (ibid.) gives the greyhound-keeper leporario obulum in die.</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="PsCnFor_8.lnote.oe.erkl-p" n="p" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">338</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">Zum <hi rend="italic">Gl</hi> Armbrust trage nach: ein Gefolgsmann Wilhelms I. ward 1079 <hi rend="italic">mid anan arblaste ofscoten</hi>; Ann. Agsax.</seg><seg type="translation" xml:lang="en" source="#claude">Add to <hi rend="italic">Gl</hi> Armbrust: a follower of William I was in 1079 <hi rend="italic">mid anan arblaste ofscoten</hi> (shot with a crossbow); Ann. Agsax.</seg></note>
       </div>
     </body>
