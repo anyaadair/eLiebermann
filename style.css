@@ -1380,3 +1380,18 @@ mark.gp-mark.is-current { outline: 2px solid var(--link); }
 .clause-reading-text:has(ruby.gloss-pair) { line-height: 2.6; }
 ruby.gloss-pair { ruby-position: over; ruby-align: center; margin-right: 0.15em; }
 ruby.gloss-pair rt.gloss-word { font-size: 0.68em; line-height: 1.1; color: #4a4843; letter-spacing: 0; font-style: normal; }
+
+/* The top of the page (site heading, menus) stays in view on wide screens on pages with a side
+   panel, and the panel sits just below it, so that it never moves under the reader's cursor
+   (scripts/site-top.js keeps the height in --site-top-h). */
+@media (min-width: 60.0625rem) {
+    body:has(.laws-layout, .entry-layout) .site-top { position: sticky; top: 0; z-index: 50; background: var(--paper); }
+    body:has(.laws-layout, .entry-layout) .laws-panel,
+    body:has(.laws-layout, .entry-layout) .entry-sidebar { top: var(--site-top-h, 0px); height: calc(100vh - var(--site-top-h, 0px)); }
+    body:has(.laws-layout, .entry-layout) .entry-scan,
+    body:has(.entry-layout) .entry-with-scan.scan-loaded .entry-scan-divider { top: calc(var(--site-top-h, 0px) + 1rem); }
+    body:has(.entry-layout) .entry-with-scan.scan-loaded .entry-scan-divider { height: calc(100vh - var(--site-top-h, 0px) - 2rem); }
+    body:has(.entry-layout) .entry-scan.loaded { height: calc(100vh - var(--site-top-h, 0px) - 2rem); }
+    body:has(.laws-layout, .entry-layout) .glossary thead th { top: var(--site-top-h, 0px); }
+    html:has(.laws-layout, .entry-layout) { scroll-padding-top: calc(var(--site-top-h, 0px) + 0.75rem); }
+}
