@@ -66,6 +66,10 @@ def add(fid, items, incn=False):
     if '<ab type="translation"' in s:
         return 0
     texts = list(TEXT_AB.finditer(s))
+    # an entry that only points to where Liebermann prints a passage in full ("Et si quis … — — commendauit;
+    # o. S. 61") is never translated (Anya Adair, Nov 2026)
+    if any('— —' in m.group(0) for m in texts):
+        return 0
     lines, langs, retag = [], set(), []
     for k, tei_text, lang in items:
         attrs = texts[k].group(1) if k is not None and k < len(texts) else (texts[0].group(1) if len(texts) == 1 else '')

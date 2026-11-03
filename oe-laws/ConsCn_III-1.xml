@@ -6,7 +6,6 @@
         <title>Cons Cn III 1</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
-        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Latin)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -22,7 +21,6 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">619</biblScope></bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, created for this database in 2026 with Claude, a large language model made by Anthropic. It is a crib to help the reader with Liebermann’s German, and should not be treated as a separate translation</bibl>
-          <bibl xml:id="claude-crib" type="translation">A semi-literal English rendering of the Latin text, created for this database in 2026 with Claude, a large language model made by Anthropic. It is a crib to help the reader with the Latin, and should not be treated as a separate translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -54,7 +52,6 @@
         <note type="liebermannNote" subtype="textual" xml:id="ConsCn_III-1.lnote.oe.g" n="g" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">619</biblScope></bibl><seg type="original" xml:lang="de">III 1—3, 9 <hi rend="italic">sind übersetzt aus Einer Sammlung</hi></seg><seg type="translation" xml:lang="en" source="#claude">III 1—3, 9 are translated from a single collection</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ConsCn_III-1.lnote.oe.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">619</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Überschrift fehlt Hk, wo aber rothe Initiale</hi></seg><seg type="translation" xml:lang="en" source="#claude">Heading missing in Hk, which however has a red initial</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="ConsCn_III-1.lnote.oe.6" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">619</biblScope></bibl><seg type="original" xml:lang="de">latronibus <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">latronibus Hk</seg></note>
-        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">Of <hi rend="italic">balatrones</hi> (incendiaries [?]). We have spoken of <hi rend="italic">balatrones</hi> — — let him be punished with death; see above p. 389</ab>
       </div>
     </body>
   </text>

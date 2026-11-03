@@ -5,7 +5,6 @@
       <titleStmt>
         <title>Quadr I I Em</title>
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
-        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Latin)</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -19,7 +18,6 @@
         <bibl type="legalText"><title>Quadripartitus, Liber I: titles of the laws</title></bibl>
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">541</biblScope></bibl>
-          <bibl xml:id="claude-crib" type="translation">A semi-literal English rendering of the Latin text, created for this database in 2026 with Claude, a large language model made by Anthropic. It is a crib to help the reader with the Latin, and should not be treated as a separate translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
           <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
           <bibl xml:id="claude" type="translation">English renderings of Liebermann’s German notes, created for this database in 2026 with Claude, a large language model made by Anthropic. They are cribs to help the reader with Liebermann’s German, and should not be treated as separate translations</bibl>
         </listBibl>
@@ -49,7 +47,6 @@
         <head>Quadr I I Em</head>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Quadr I I Em" corresp="#wit-lat"><pb n="541" ed="#liebermann"/><ptr type="liebermannNote" n="*" target="#Quadr-I_I-Em.lnote.oe.erkl-clause"/>Incipiunt instituta regis Ædmundi. (De castistate — — liblato); <hi rend="italic">s. o. S</hi>. 185* Eadmundus rex congregauit — — reuertantur; <hi rend="italic">s. o. S</hi>. 185. 187</ab>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 541 (two independent readings of the page images, differences settled against the page)</note>
-        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">Here begin the institutions of King Edmund. (Of chastity — — <hi rend="italic">lyblac</hi> (sorcery)); see above p. 185* King Edmund assembled — — return; see above pp. 185. 187</ab>
         <note type="liebermannNote" subtype="textual" xml:id="Quadr-I_I-Em.lnote.oe.erkl-clause" n="*" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">312</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de">S. 541 Sp. 2 Z. 2 bessere <hi rend="italic">castitate</hi></seg><seg type="translation" xml:lang="en" source="#claude">P. 541 col. 2, line 2: correct to <hi rend="italic">castitate</hi></seg></note>
       </div>
     </body>

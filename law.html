@@ -489,6 +489,7 @@ scripts:
     let siglumIndex = null;
     let bibliography = [];    // authors and works Liebermann cites (data/bibliography.json), linked in his notes
     let clauseOrder = {};     // Liebermann's printed order and the notes on it (data/clause-order.json)
+    let redirects = {};      // entries that only point to where Liebermann prints a passage in full (data/redirects.json)
     let incnElsewhere = {};   // where the Instituta Cnuti's Latin for a clause is printed, if not on its page (data/incn-elsewhere.json)
     let relTerms = {};        // a scholar's wording of a cross-reference -> one of five terms (data/comparison-terms.json)
     const sigKey = s => s.replace(/[\s.]/g, '');
@@ -496,7 +497,8 @@ scripts:
     const LATIN_VERSION = /^(Q|Lat|In|Inst\.? ?Cn\.?|Cons\.?(?: ?Cn\.?)?)(?![\w])/;
     function loadSigla() {
         const get = f => fetch(root + 'data/' + f).then(r => r.json()).catch(() => []);
-        return Promise.all([get('manuscripts.json'), get('markLaw.json'), get('bibliography.json'), get('comparison-terms.json'), get('clause-order.json'), Wulfstan.load(root), get('incn-elsewhere.json')]).then(([ms, law, bib, terms, order, , incn]) => {
+        return Promise.all([get('manuscripts.json'), get('markLaw.json'), get('bibliography.json'), get('comparison-terms.json'), get('clause-order.json'), Wulfstan.load(root), get('incn-elsewhere.json'), get('redirects.json')]).then(([ms, law, bib, terms, order, , incn, redir]) => {
+            redirects = redir && !Array.isArray(redir) ? redir : {};
             clauseOrder = order && !Array.isArray(order) ? order : {};
             incnElsewhere = incn && !Array.isArray(incn) ? incn : {};
             bibliography = bib || [];
@@ -1053,6 +1055,39 @@ scripts:
         const sec = el('section', 'entry-section clause-texts-section');
         const t = texts(doc, el('span'));
         sec.appendChild(t);
+        // An entry that gives only the first and last words of a passage ("— —") and the page where
+        // Liebermann prints it in full: links to that place (tools/redirects/build.py)
+        const redir = redirects[row.id];
+        if (redir && (redir.to.length || redir.pages.length)) {
+            const box = el('div', 'clause-redirect');
+            const p = el('p');
+            p.appendChild(el('strong', null, 'Printed in full elsewhere. '));
+            p.appendChild(document.createTextNode('Liebermann gives only the first and last words of this passage here, and prints it in full '));
+            if (redir.to.length) {
+                p.appendChild(document.createTextNode(redir.to.length > 1 ? 'beside the following clauses:' : 'beside '));
+                const list = el(redir.to.length > 1 ? 'p' : 'span', 'clause-redirect__links');
+                redir.to.forEach((x, i) => {
+                    if (i) list.appendChild(document.createTextNode(', '));
+                    const a = el('a', null, x.label);
+                    a.href = '?id=' + encodeURIComponent(x.id);
+                    list.appendChild(a);
+                });
+                if (redir.to.length > 1) { box.appendChild(p); box.appendChild(list); }
+                else { p.appendChild(list); p.appendChild(document.createTextNode('.')); box.appendChild(p); }
+                if (redir.pages.length) box.appendChild(el('p', 'small muted', 'Gesetze I, p. ' + redir.pages.join(', ') + '.'));
+            } else {
+                p.appendChild(document.createTextNode('in Gesetze I, p. '));
+                redir.pages.forEach((pg, i) => {
+                    if (i) p.appendChild(document.createTextNode(', '));
+                    const at = SCAN_ID ? scanPage(pg) : '';
+                    if (at) { const a = el('a', null, pg); a.href = scanLink(at); a.target = '_blank'; a.rel = 'noopener'; a.title = 'Page scan'; p.appendChild(a); }
+                    else p.appendChild(document.createTextNode(pg));
+                });
+                p.appendChild(document.createTextNode(' (page scan).'));
+                box.appendChild(p);
+            }
+            (sec.querySelector('.clause-texts') || sec).appendChild(box);   // straight under the text, above the previous/next links
+        }
         target.appendChild(sec);
 
         // Below the texts: Keywords, In the dictionary, Manuscripts, Editions and translations, Studies.

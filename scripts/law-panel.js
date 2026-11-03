@@ -104,11 +104,48 @@
     // then any clause beginning with it, so that 4.5 is never taken for 45.
     const clauseKey = s => String(s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
         .replace(/[\s,;:]+/g, '.').replace(/\.+/g, '.').replace(/^\.|\.$/g, '');
+    // A clause label that stands for several clauses: a range ("I 13—17.3": all from I 13 to I 17.3),
+    // a list ("I 12a; b" = I 12a and I 12b; "3, 3.1, 3.2"), or both. Each number is split into a
+    // part ("I", "II", "Rb I", "El") and a key for ordering: [[13], [17, 'a'] …], Prol before 1.
+    const numKey = n => n === 'prol' ? [[-1, '']] : n.split('.').filter(Boolean).map(x => { const m = x.match(/^(\d+)([a-z]*)$/); return m ? [+m[1], m[2]] : [Infinity, x]; });
+    const cmp = (a, b) => {
+        for (let i = 0; i < Math.max(a.length, b.length); i++) {
+            if (!a[i]) return -1; if (!b[i]) return 1;
+            if (a[i][0] !== b[i][0]) return a[i][0] < b[i][0] ? -1 : 1;
+            if (a[i][1] !== b[i][1]) return a[i][1] < b[i][1] ? -1 : 1;
+        }
+        return 0;
+    };
+    // "I 5.2d" -> { part: 'i', key }; a bare letter ("b") or number ("17.3") takes the part (and number) before it
+    function parseNum(raw, prev) {
+        const t = clauseKey(raw).replace(/^prol\b\.?/, 'prol');
+        const m = t.match(/^((?:[a-z]+\.)*?)(prol|\d[\d.a-z]*)$/);
+        if (m) return { part: m[1] ? m[1].replace(/\.$/, '') : (prev ? prev.part : ''), key: numKey(m[2]) };
+        if (prev && /^[a-z]$/.test(t)) { const key = prev.key.map(x => x.slice()); key[key.length - 1][1] = t; return { part: prev.part, key }; }
+        return null;
+    }
+    const parsed = new Map();
+    function spans(label) {
+        if (parsed.has(label)) return parsed.get(label);
+        const out = []; let prev = null;
+        String(label || '').split(/\s*;\s*|,\s+|\.\s+(?=\d)/).forEach(item => {
+            const [a, b] = item.split(/\s*[—–]\s*|(?<=\d[a-z]?)-(?=\d)/);
+            const from = parseNum(a, prev); if (!from) return;
+            const to = b ? parseNum(b, from) : from;
+            if (!to) return;
+            out.push({ part: from.part, from: from.key, to: to.key }); prev = to;
+        });
+        parsed.set(label, out);
+        return out;
+    }
+    const covers = (c, want) => want && spans(c.clause || '').some(s => s.part === want.part && cmp(s.from, want.key) <= 0 && cmp(want.key, s.to) <= 0);
     function findClause(list, typed) {
         const t = clauseKey(typed);
         if (!t) return null;
         const k = c => clauseKey(c.clause || c.citation);
+        const want = parseNum(typed, null);
         return list.find(c => k(c) === t)
+            || list.find(c => covers(c, want))
             || list.find(c => k(c).startsWith(t) && /^[.a-z]/.test(k(c).slice(t.length)))
             || list.find(c => k(c).startsWith(t))
             || list.find(c => k(c).replace(/\./g, '') === t.replace(/\./g, ''));
