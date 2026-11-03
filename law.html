@@ -12,6 +12,7 @@ scripts:
 ---
 <div class="laws-layout">
 <aside class="laws-panel" id="panel" aria-label="This clause">
+    <a class="panel-back" id="p-back" href="laws.html"><span aria-hidden="true">←</span> Back to the law code</a>
     <h2 class="laws-panel__title" id="p-title">This clause</h2>
     <p class="panel-help panel-intro" id="p-code">&nbsp;</p>
 
@@ -1252,7 +1253,11 @@ scripts:
         const sameCode = catalogue.filter(c => c.code === row.code);
         const codeName = row.legalText || row.code;
         $('p-title').textContent = row.citation;
-        $('p-code').innerHTML = `<a href="${root}lawcode.html?code=${encodeURIComponent(row.code)}#${encodeURIComponent(row.id)}">${esc(row.code)}</a>${codeName !== row.code ? ' (' + esc(codeName) + ')' : ''} · clause ${sameCode.findIndex(c => c.id === row.id) + 1} of ${sameCode.length}`;
+        // Back up to the law code: its page from the top, as on a first visit (the clause is not marked)
+        $('p-back').href = root + 'lawcode.html?code=' + encodeURIComponent(row.code);
+        $('p-back').lastChild.textContent = ' Back to ' + row.code;
+        $('p-back').title = codeName;
+        $('p-code').innerHTML = `<a href="${root}lawcode.html?code=${encodeURIComponent(row.code)}">${esc(row.code)}</a>${codeName !== row.code ? ' (' + esc(codeName) + ')' : ''} · clause ${sameCode.findIndex(c => c.id === row.id) + 1} of ${sameCode.length}`;
         $('go-label').textContent = 'Go to a clause of ' + row.code;
         // the four clauses before and after, with the opening of their text
         (codeData ? Promise.resolve(sameCode.map(c => [c.id, c.code, c.citation, codeData.brief[c.id] || '']))
