@@ -335,8 +335,12 @@ scripts:
         const rend = ptr.getAttribute('rend') || '';
         const sup = el('sup', 'lnote-ref');
         const a = el('a', null, rend === 'supplied' ? '[' + n + ']' : n);
-        a.href = '#' + htmlId((ptr.getAttribute('target') || '').replace(/^#/, ''));
-        a.title = rend === 'supplied' ? 'Note ' + n + ': not printed in Gesetze I; Liebermann says in vol. III where it belongs'
+        // A mark may point at more than one note (Liebermann's footnote in vol. I and his explanation in
+        // vol. III on the same word): it goes to the first; the title says there are more.
+        const ids = (ptr.getAttribute('target') || '').split(/\s+/).map(t => t.replace(/^#/, '')).filter(Boolean);
+        a.href = '#' + htmlId(ids[0] || '');
+        a.title = ids.length > 1 ? 'Liebermann’s notes ' + n + ' (' + ids.length + ' notes)'
+            : rend === 'supplied' ? 'Note ' + n + ': not printed in Gesetze I; Liebermann says in vol. III where it belongs'
             : /^printed-as-/.test(rend) ? 'Note ' + n + ': printed as ' + rend.slice(11) + ' in Gesetze I, corrected by Liebermann in vol. III'
             : (ptr.getAttribute('type') === 'editorNote' ? 'Note ' : 'Liebermann’s note ') + n;
         sup.appendChild(a);
@@ -677,7 +681,7 @@ scripts:
         }
         // Liebermann's textual notes: each of his texts gets the notes whose numbers stand in it (his footnotes
         // are numbered separately for each manuscript's column); notes with no number in any text go with the first.
-        const targets = ab => tei(ab, 'ptr').map(x => (x.getAttribute('target') || '').replace(/^#/, ''));
+        const targets = ab => [].concat(...tei(ab, 'ptr').map(x => (x.getAttribute('target') || '').split(/\s+/).map(t => t.replace(/^#/, ''))));
         const pointed = new Set([].concat(...liebTexts.map(t => targets(t[3]))));
         let introShown = false;      // the explanation once, over the first list
         liebTexts.forEach(([box, label, p, a], i) => {
