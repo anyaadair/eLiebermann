@@ -101,7 +101,8 @@
                 <div class="kind-pills kind-pills--small" id="gp-show" role="group" aria-label="Which manuscripts to show">
                     <button type="button" class="kind-pill" data-show="all" aria-pressed="true">All</button>
                     <button type="button" class="kind-pill" data-show="extant" aria-pressed="false">Surviving</button>
-                    <button type="button" class="kind-pill" data-show="lost" aria-pressed="false">Lost (reconstructed)</button>
+                    <button type="button" class="kind-pill" data-show="lost" aria-pressed="false">Lost</button>
+                    <button type="button" class="kind-pill" data-show="posited" aria-pressed="false" title="Manuscripts Liebermann infers from shared readings; none survives">Posited by Liebermann</button>
                 </div>
                 <label class="panel-check"><input type="checkbox" id="gp-open"> Show Liebermann’s description and notes for every manuscript</label>`
             : kind === 'law' ? `
@@ -183,7 +184,7 @@
         const p = new URLSearchParams(location.search);
         state.q = p.get('q') || '';
         state.where = p.get('in') === 'all' ? 'all' : 'start';
-        state.show = ['extant', 'lost'].includes(p.get('show')) ? p.get('show') : 'all';
+        state.show = ['extant', 'lost', 'posited'].includes(p.get('show')) ? p.get('show') : 'all';
         $('gp-q').value = state.q;
     }
     function writeUrl() {
@@ -195,7 +196,10 @@
         history.replaceState(null, '', location.pathname + (s ? '?' + s : '') + location.hash);
     }
 
-    const lost = r => /^\[lost\]/.test(r.Notes || '') || /^Lost manuscript/.test(r['English Translation'] || '');
+    // [lost]: a manuscript known to have existed, now lost; [posited]: one Liebermann infers from shared readings
+    const lost = r => /^\[lost\]/.test(r.Notes || '');
+    const posited = r => /^\[posited\]/.test(r.Notes || '');
+    const kindOf = r => posited(r) ? 'posited' : lost(r) ? 'lost' : 'extant';
     function rowMatches(r) {
         const q = state.q.trim();
         if (!q) return true;
@@ -210,7 +214,7 @@
     function shownGroups() {
         return groups.map(g => {
             let rows = g.rows;
-            if (kind === 'ms' && state.show !== 'all') rows = rows.filter(r => (state.show === 'lost') === lost(r));
+            if (kind === 'ms' && state.show !== 'all') rows = rows.filter(r => kindOf(r) === state.show);
             const hit = rows.filter(rowMatches);
             // a group is shown whole when any of its spellings matches
             return hit.length ? Object.assign({}, g, { rows: kind === 'gram' ? rows : rows }) : null;
@@ -272,7 +276,7 @@
             <tbody>${withLetters(list, 5, g => g.rows.map(r => {
                 const id = seen.has(g.anchor) ? '' : ` id="${esc(g.anchor)}"`;
                 seen.add(g.anchor);
-                const tag = lost(r) ? '<span class="gl-tag">lost</span>' : /^\[not seen/.test(r.Notes || '') ? '<span class="gl-tag">not seen by Liebermann</span>' : '';
+                const tag = posited(r) ? '<span class="gl-tag">posited by Liebermann</span>' : lost(r) ? '<span class="gl-tag">lost</span>' : /^\[not seen/.test(r.Notes || '') ? '<span class="gl-tag">not seen by Liebermann</span>' : '';
                 const notes = String(r.Notes || '').replace(/^\[[^\]]*\]\s*/, '');
                 const more = [r['German Expansion'] ? `<p><span class="muted">Liebermann:</span> <span lang="de">${esc(r['German Expansion'])}</span></p>` : '', notes ? `<p>${esc(notes)}</p>` : ''].join('');
                 return `<tr${id}>

@@ -239,7 +239,9 @@ let codeSources = {};
         // <ab>), else "notes" if Liebermann's notes cite it; one the files only list is left out.
         const withText = new Set();
         for (const m of xml.matchAll(/<ab [^>]*corresp="([^"]+)"/g)) m[1].split(/\s+/).forEach(x => withText.add(x.replace(/^#/, '')));
-        const notesText = [...xml.matchAll(/<note type="liebermannNote"[^>]*>[\s\S]*?<seg type="original"[^>]*>([\s\S]*?)<\/seg>/g)].map(m => m[1].replace(/<[^>]+>/g, ' ')).join(' ');
+        // (his German translation counts too: lq, the lost source of Ld and Quadr., is cited there)
+        const notesText = [...xml.matchAll(/<note type="liebermannNote"[^>]*>[\s\S]*?<seg type="original"[^>]*>([\s\S]*?)<\/seg>/g),
+                           ...xml.matchAll(/<ab type="translation" xml:lang="de"[^>]*>([\s\S]*?)<\/ab>/g)].map(m => m[1].replace(/<[^>]+>/g, ' ')).join(' ');
         for (const m of xml.matchAll(/<witness xml:id="([^"]+)"[^>]*>([\s\S]*?)<\/witness>/g)) {
             const abbr = decode((m[2].match(/<abbr>([\s\S]*?)<\/abbr>/) || [])[1] || m[2]);
             const name = decode((m[2].match(/<note[^>]*>([\s\S]*?)<\/note>/) || [])[1] || '');

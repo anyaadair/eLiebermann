@@ -179,13 +179,13 @@ scripts:
         // (data/laws: role "text" / "notes"); the same in the header line and in the list behind the button.
         const msText = cs.mss.filter(m => m.role !== 'notes'), msNotes = cs.mss.filter(m => m.role === 'notes');
         const msLine = cs.mss.length
-            ? plainLine('Manuscripts', [...new Set(msText.flatMap(m => m.abbr.split(/,\s*/)))].map(siglum).join(', ') + (msNotes.length ? `${msText.length ? '; ' : ''}<span class="muted">cited in Liebermann’s notes:</span> ${msNotes.map(m => siglum(m.abbr)).join(', ')}` : ''))
+            ? plainLine('Manuscripts', [...new Set(msText.flatMap(m => m.abbr.split(/,\s*/)))].map(siglum).join(', ') + (msNotes.length ? `${msText.length ? '; ' : ''}<span class="muted">cited in Liebermann’s notes or translation:</span> ${msNotes.map(m => siglum(m.abbr)).join(', ')}` : ''))
             : (code.manuscripts && code.manuscripts.length ? plainLine('Manuscripts', code.manuscripts.map(siglum).join(', ')) : '');
         const msItems = list => list.map(m =>
             `<li id="${esc(msId(m.abbr))}"><span class="ms-siglum">${m.parts.map(([t, href]) => href
                 ? `<a href="${root}${esc(href)}" title="See ${esc(t)} in the list of ${href.startsWith('msAbb') ? 'manuscripts' : 'law codes'}">${esc(t)}</a>` : esc(t)).join(', ')}</span>${m.name ? ' ' + esc(m.name) : ''}</li>`).join('');
         const msList = cs.mss.length ? `<section class="clause-sources"><h2>Manuscripts</h2>${msText.length ? `<ul class="ms-list">${msItems(msText)}</ul>` : ''}`
-            + (msNotes.length ? `<p class="clause-sources__sub muted">Cited in Liebermann’s notes:</p><ul class="ms-list">${msItems(msNotes)}</ul>` : '') + '</section>' : '';
+            + (msNotes.length ? `<p class="clause-sources__sub muted">Cited in Liebermann’s notes or German translation:</p><ul class="ms-list">${msItems(msNotes)}</ul>` : '') + '</section>' : '';
         // The works the editor's introduction cites (data/clause-order.json codeIntroductionRefs: ids in data/works.json)
         const citedIds = ((window.__clauseOrder || {}).codeIntroductionRefs || {})[code.code] || [];
         const cited = citedIds.map(id => (window.__works || {})[id]).filter(Boolean);
