@@ -21,9 +21,14 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">624</biblScope></bibl>
           <bibl xml:id="claude-crib" type="translation">A semi-literal English rendering of the Latin text, created for this database in 2026 with Claude, a large language model made by Anthropic. It is a crib to help the reader with the Latin, and should not be treated as a separate translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
+          <bibl xml:id="claude" type="translation">English renderings of Liebermann’s German notes, created for this database in 2026 with Claude, a large language model made by Anthropic. They are cribs to help the reader with Liebermann’s German, and should not be treated as separate translations</bibl>
         </listBibl>
         <listWit>
-          <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
+          <witness xml:id="wit-ho-st-cii"><abbr>Ho, St, Cii</abbr> <note type="manuscript">Liebermann’s text, from Ho (William Harrison’s Description of England, prefixed to Holinshed’s Chronicles, London, 1577), St (London, British Library, Stowe MS 414) and Cii (Cambridge, University Library, MS Ii.6.53)</note></witness>
+          <witness xml:id="wit-ho"><abbr>Ho</abbr> <note type="manuscript">Holinshed’s Chronicles (London, 1577): William Harrison’s Description of England</note></witness>
+          <witness xml:id="wit-ho2"><abbr>Ho 2</abbr> <note type="manuscript">the reprint of Holinshed’s Chronicles, 1587</note></witness>
+          <witness xml:id="wit-st"><abbr>St</abbr> <note type="manuscript">London, British Library, Stowe MS 414, late 16th century</note></witness>
+          <witness xml:id="wit-cii"><abbr>Cii</abbr> <note type="manuscript">Cambridge, University Library, MS Ii.6.53, c. 1570</note></witness>
         </listWit>
       </sourceDesc>
     </fileDesc>
@@ -45,9 +50,15 @@
     <body>
       <div type="clause" n="23">
         <head><ref type="lawCode" target="law:PsCnFor">Ps Cn for</ref> 23</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Ps Cn for 23" corresp="#wit-lat"><pb n="624" ed="#liebermann"/>Si uero horum aliquis interfecerit, soluat dupliciter et persoluat, sitque pretii sui reus contra regem.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Ps Cn for 23" corresp="#wit-ho-st-cii"><pb n="624" ed="#liebermann"/>Si uero horum<ptr type="liebermannNote" n="11" target="#PsCnFor_23.lnote.la.11"/> aliquis<ptr type="liebermannNote" n="12" target="#PsCnFor_23.lnote.la.12"/> interfecerit<ptr type="liebermannNote" n="13" target="#PsCnFor_23.lnote.la.13"/>, soluat<ptr type="liebermannNote" n="14" target="#PsCnFor_23.lnote.la.14"/> dupliciter et persoluat<ptr type="liebermannNote" n="f" target="#PsCnFor_23.lnote.la.fn.f"/>, sitque pretii<ptr type="liebermannNote" n="g" target="#PsCnFor_23.lnote.la.fn.g"/> sui reus contra regem.</ab>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 624 (two independent readings of the page images, differences settled against the page)</note>
-        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">But if any of these kills [it], let him pay double and pay again, and let him be liable for his own price to the king.</ab>
+        <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-ho-st-cii">But if any of these kills [it], let him pay double and pay again, and let him be liable for his own price to the king.</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="PsCnFor_23.lnote.la.11" n="11" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">624</biblScope></bibl><seg type="original" xml:lang="de">harum <hi rend="italic">Ho 2 schlimmbessernd</hi></seg><seg type="translation" xml:lang="en" source="#claude">harum Ho 2, a mistaken correction</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="PsCnFor_23.lnote.la.12" n="12" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">624</biblScope></bibl><seg type="original" xml:lang="de">aliquot <hi rend="italic">Ho</hi></seg><seg type="translation" xml:lang="en" source="#claude">aliquot Ho</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="PsCnFor_23.lnote.la.13" n="13" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">624</biblScope></bibl><seg type="original" xml:lang="de">interfic. <hi rend="italic">Cii</hi></seg><seg type="translation" xml:lang="en" source="#claude">interfic. Cii</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="PsCnFor_23.lnote.la.14" n="14" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">624</biblScope></bibl><seg type="original" xml:lang="de">du. so. <hi rend="italic">St Cii</hi></seg><seg type="translation" xml:lang="en" source="#claude">du. so. St Cii</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="PsCnFor_23.lnote.la.fn.f" n="f" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">624</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Verf. versteht nicht mehr, dass</hi> persoluere: doppelt zahlen <hi rend="italic">heisst</hi></seg><seg type="translation" xml:lang="en" source="#claude">The author no longer understands that persoluere means: to pay double</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="PsCnFor_23.lnote.la.fn.g" n="g" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">624</biblScope></bibl><seg type="original" xml:lang="de">Wergeld</seg><seg type="translation" xml:lang="en" source="#claude">wergeld</seg></note>
       </div>
     </body>
   </text>
