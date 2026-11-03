@@ -211,7 +211,7 @@ scripts:
             </header>
             ${introduction ? `<div class="code-introduction is-collapsed"><h2 class="code-introduction__head">Editor’s introduction</h2>
                 <div class="code-introduction__text" id="code-introduction-text">${introduction}</div>
-                <button type="button" class="code-introduction__toggle" aria-expanded="false" aria-controls="code-introduction-text"><span class="ci-more">… Read the introduction <span aria-hidden="true">▾</span></span><span class="ci-less">Show less <span aria-hidden="true">▴</span></span></button></div>` : ''}
+                <button type="button" class="code-introduction__toggle" aria-expanded="false" aria-controls="code-introduction-text"><span class="ci-more">Show more</span><span class="ci-less">Show less</span></button></div>` : ''}
             ${sourcesBox}
             ${intro ? `<details class="code-intro"><summary>${esc(intro.title)}</summary><div class="code-intro__body">${intro.html}</div></details>` : ''}
             <div class="code-callout">
