@@ -18,6 +18,7 @@
         <bibl type="legalText"><title>Quadripartitus, Liber I: titles of the laws</title></bibl>
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">542</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">English renderings of Liebermann’s German notes, created for this database in 2026 with Claude, a large language model made by Anthropic. They are cribs to help the reader with Liebermann’s German, and should not be treated as separate translations</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -42,8 +43,9 @@
     <body>
       <div type="clause" n="II Eg">
         <head>Quadr I II Eg</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Quadr I II Eg" corresp="#wit-lat"><pb n="542" ed="#liebermann"/>(Institutiones Eadgari — — pondere); <hi rend="italic">s. o. S</hi>. 195* Hoc est institutum, quod Eadgarus — — seruetur; <hi rend="italic">s. o. S</hi>. 195—99</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Quadr I II Eg" corresp="#wit-lat"><pb n="542" ed="#liebermann"/><ptr type="liebermannNote" n="††" target="#Quadr-I_II-Eg.lnote.la.dagger2"/>(Institutiones Eadgari — — pondere); <hi rend="italic">s. o. S</hi>. 195* Hoc est institutum, quod Eadgarus — — seruetur; <hi rend="italic">s. o. S</hi>. 195—99</ab>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 542 (two independent readings of the page images, differences settled against the page)</note>
+        <note type="liebermannNote" subtype="textual" xml:id="Quadr-I_II-Eg.lnote.la.dagger2" n="††" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">542</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">vgl. S.</hi> 541†</seg><seg type="translation" xml:lang="en" source="#claude">cf. p. 541†</seg></note>
       </div>
     </body>
   </text>

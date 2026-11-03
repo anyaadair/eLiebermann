@@ -20,6 +20,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">539</biblScope></bibl>
           <bibl xml:id="claude-crib" type="translation">A semi-literal English rendering of the Latin text, created for this database in 2026 with Claude, a large language model made by Anthropic. It is a crib to help the reader with the Latin, and should not be treated as a separate translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
+          <bibl xml:id="claude" type="translation">English renderings of Liebermann’s German notes, created for this database in 2026 with Claude, a large language model made by Anthropic. They are cribs to help the reader with Liebermann’s German, and should not be treated as separate translations</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -44,9 +45,12 @@
     <body>
       <div type="clause" n="Af El 41">
         <head>Quadr Rb Af El 41</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Quadr Rb Af El 41" corresp="#wit-lat"><pb n="539" ed="#liebermann"/>Non consenciendum testibus iniquis; non esse cum multis in malum, non declinare cum multis in iudicium.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Quadr Rb Af El 41" corresp="#wit-lat"><pb n="539" ed="#liebermann"/>Non<ptr type="liebermannNote" n="22" target="#Quadr-Rb_Af-El-41.lnote.la.22"/> consenciendum<ptr type="liebermannNote" n="i" target="#Quadr-Rb_Af-El-41.lnote.la.fn.i"/> testibus iniquis; non esse cum multis in malum, non declinare cum multis in<ptr type="liebermannNote" n="23" target="#Quadr-Rb_Af-El-41.lnote.la.23"/> iudicium.</ab>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 539 (two independent readings of the page images, differences settled against the page)</note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">One is not to consent to unjust witnesses; not to be with the many for evil, not to turn aside with the many in judgment.</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="Quadr-Rb_Af-El-41.lnote.la.22" n="22" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">539</biblScope></bibl><seg type="original" xml:lang="de">nec <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">nec Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Quadr-Rb_Af-El-41.lnote.la.fn.i" n="i" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">539</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">im Text, o. S.</hi> 41 <hi rend="italic">folgt Quadr. der Vulgata, setzt auch</hi> 43 <hi rend="italic">hinter</hi> 42</seg><seg type="translation" xml:lang="en" source="#claude">in the text, above p. 41, Quadr. follows the Vulgate, and also puts 43 after 42</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Quadr-Rb_Af-El-41.lnote.la.23" n="23" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">539</biblScope></bibl><seg type="original" xml:lang="de">in i. <hi rend="italic">fehlt Dm</hi></seg><seg type="translation" xml:lang="en" source="#claude">in i. lacking in Dm</seg></note>
       </div>
     </body>
   </text>
