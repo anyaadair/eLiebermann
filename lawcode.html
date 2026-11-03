@@ -366,7 +366,7 @@ scripts:
             const c = findClause(go.value);
             document.querySelectorAll('.code-clauses li.is-target').forEach(x => x.classList.remove('is-target'));
             const li = c && document.getElementById(c.id);
-            if (li) { li.classList.add('is-target'); li.scrollIntoView({ block: 'center' }); }
+            if (li) { li.classList.add('is-target'); LawPanel.scrollToMiddle(li); }
         }, 150);
     });
     go.addEventListener('keydown', e => { if (e.key === 'Enter') { const c = findClause(go.value); if (c) location.href = clauseUrl(c.id); } });
@@ -420,7 +420,7 @@ scripts:
         drawPanel();
         drawList();
         openSources(location.hash);
-        if (location.hash) { const el = document.getElementById(decodeURIComponent(location.hash.slice(1))); if (el) { el.classList.add('is-target'); el.scrollIntoView({ block: 'center' }); } }
+        if (location.hash) { const el = document.getElementById(decodeURIComponent(location.hash.slice(1))); if (el) { el.classList.add('is-target'); LawPanel.scrollToMiddle(el); } }
     }).catch(err => {
         if (err && err.message !== 'missing') console.error(err);
         target.innerHTML = `<h1>Law code not found</h1><p>There is no law code “${esc(wanted)}” in the database. <a href="${root}laws.html">See the list of law codes.</a></p>`;

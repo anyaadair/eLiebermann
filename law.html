@@ -1306,7 +1306,7 @@ scripts:
             vis[at].classList.add('find-hit--current');
             // the page moves only when the match is off the screen
             const r = vis[at].getBoundingClientRect();
-            if (r.top < 0 || r.bottom > window.innerHeight) vis[at].scrollIntoView({ block: 'center', behavior: 'smooth' });
+            if (r.top < 0 || r.bottom > window.innerHeight) LawPanel.scrollToMiddle(vis[at], true);
             $('find-count').textContent = `${at + 1} of ${vis.length}` + (marks.length > vis.length ? ` (and ${marks.length - vis.length} in notes not open)` : '');
         };
         function run() {
@@ -1430,7 +1430,7 @@ scripts:
                 if (part) {
                     const marked = target.querySelectorAll('.part-' + part);
                     marked.forEach(e => e.classList.add('part-active'));
-                    if (marked[0]) marked[0].scrollIntoView({ block: 'center' });
+                    if (marked[0]) LawPanel.scrollToMiddle(marked[0]);
                 }
             });
         })
