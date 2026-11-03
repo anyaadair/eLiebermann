@@ -210,7 +210,7 @@ let codeSources = {};
     const siglumIndex = {};
     readJson('markLaw.json').forEach(r => { if (r['Gesetze Text']) siglumIndex[sigKey(r['Gesetze Text'])] = 'lawAbb.html#' + encodeURIComponent(r.Anchor); });
     readJson('manuscripts.json').forEach(r => { if (r['Gesetze Text']) siglumIndex[sigKey(r['Gesetze Text'])] = 'msAbb.html#' + encodeURIComponent(r.Anchor); });
-    const ALIASES = { 'InstCn': 'In(Cn)' };
+    const ALIASES = { 'InstCn': 'InCn' };
     const siglumHref = sig => { let k = sigKey(sig); k = ALIASES[k] || k; return siglumIndex[k] || siglumIndex[sigKey(sig.replace(/\s*\([^)]*\)\s*$/, ''))] || ''; };
     const siglumParts = sig => {
         const parts = sig.split(/,\s*/);
@@ -244,11 +244,12 @@ let codeSources = {};
                            ...xml.matchAll(/<ab type="translation" xml:lang="de"[^>]*>([\s\S]*?)<\/ab>/g)].map(m => m[1].replace(/<[^>]+>/g, ' ')).join(' ');
         for (const m of xml.matchAll(/<witness xml:id="([^"]+)"[^>]*>([\s\S]*?)<\/witness>/g)) {
             const abbr = decode((m[2].match(/<abbr>([\s\S]*?)<\/abbr>/) || [])[1] || m[2]);
-            const name = decode((m[2].match(/<note[^>]*>([\s\S]*?)<\/note>/) || [])[1] || '');
+            const name = decode((m[2].match(/<note(?! type="sigla")[^>]*>([\s\S]*?)<\/note>/) || [])[1] || '');
+            const sigla = decode((m[2].match(/<note type="sigla">([\s\S]*?)<\/note>/) || [])[1] || '').split(/\s+/).filter(Boolean).map(x => [x, siglumHref(x) || null]);
             const base = abbr.replace(/\s*\(.*$/, '').trim();
             const role = withText.has(m[1]) ? 'text'
                 : base && new RegExp('(^|[^\\p{L}])' + base.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '(?![\\p{L}])', 'u').test(notesText) ? 'notes' : '';
-            if (!k.mss.has(abbr)) k.mss.set(abbr, { abbr, name, parts: siglumParts(abbr), role });
+            if (!k.mss.has(abbr)) k.mss.set(abbr, { abbr, name, parts: siglumParts(abbr), role, sigla });
             else {
                 const x = k.mss.get(abbr);
                 if (!x.name && name) x.name = name;

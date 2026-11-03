@@ -183,7 +183,8 @@ scripts:
             : (code.manuscripts && code.manuscripts.length ? plainLine('Manuscripts', code.manuscripts.map(siglum).join(', ')) : '');
         const msItems = list => list.map(m =>
             `<li id="${esc(msId(m.abbr))}"><span class="ms-siglum">${m.parts.map(([t, href]) => href
-                ? `<a href="${root}${esc(href)}" title="See ${esc(t)} in the list of ${href.startsWith('msAbb') ? 'manuscripts' : 'law codes'}">${esc(t)}</a>` : esc(t)).join(', ')}</span>${m.name ? ' ' + esc(m.name) : ''}</li>`).join('');
+                ? `<a href="${root}${esc(href)}" title="See ${esc(t)} in the list of ${href.startsWith('msAbb') ? 'manuscripts' : 'law codes'}">${esc(t)}</a>` : esc(t)).join(', ')}</span>${m.name ? ' ' + esc(m.name) : ''}${m.sigla && m.sigla.length
+                ? `<span class="ms-sub muted">. Liebermann’s manuscripts of it: ${m.sigla.map(([t, href]) => href ? `<a href="${root}${esc(href)}" title="See ${esc(t)} in the list of manuscripts">${esc(t)}</a>` : esc(t)).join(', ')}</span>` : ''}</li>`).join('');
         const msList = cs.mss.length ? `<section class="clause-sources"><h2>Manuscripts</h2>${msText.length ? `<ul class="ms-list">${msItems(msText)}</ul>` : ''}`
             + (msNotes.length ? `<p class="clause-sources__sub muted">Cited in Liebermann’s notes or German translation:</p><ul class="ms-list">${msItems(msNotes)}</ul>` : '') + '</section>' : '';
         // The works the editor's introduction cites (data/clause-order.json codeIntroductionRefs: ids in data/works.json)
