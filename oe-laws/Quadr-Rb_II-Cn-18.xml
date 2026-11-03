@@ -20,6 +20,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">536</biblScope></bibl>
           <bibl xml:id="claude-crib" type="translation">A semi-literal English rendering of the Latin text, created for this database in 2026 with Claude, a large language model made by Anthropic. It is a crib to help the reader with the Latin, and should not be treated as a separate translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
+          <bibl xml:id="claude" type="translation">English renderings of Liebermann’s German notes, created for this database in 2026 with Claude, a large language model made by Anthropic. They are cribs to help the reader with Liebermann’s German, and should not be treated as separate translations</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -44,9 +45,13 @@
     <body>
       <div type="clause" n="II Cn 18">
         <head>Quadr Rb II Cn 18</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Quadr Rb II Cn 18" corresp="#wit-lat"><pb n="536" ed="#liebermann"/>Quotiens debeat haberi burhgemot et scyremotus.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Quadr Rb II Cn 18" corresp="#wit-lat"><pb n="536" ed="#liebermann"/>Quotiens debeat<ptr type="liebermannNote" n="78" target="#Quadr-Rb_II-Cn-18.lnote.la.78"/> haberi burhgemot<ptr type="liebermannNote" n="a" target="#Quadr-Rb_II-Cn-18.lnote.la.fn.a"/><ptr type="liebermannNote" n="79" target="#Quadr-Rb_II-Cn-18.lnote.la.79"/> et scyremotus<ptr type="liebermannNote" n="80" target="#Quadr-Rb_II-Cn-18.lnote.la.80"/>.</ab>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 536 (two independent readings of the page images, differences settled against the page)</note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">How often the borough-moot and the shire-moot ought to be held.</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="Quadr-Rb_II-Cn-18.lnote.la.78" n="78" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">536</biblScope></bibl><seg type="original" xml:lang="de">habeat <hi rend="italic">Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">habeat Hk</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Quadr-Rb_II-Cn-18.lnote.la.fn.a" n="a" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">536</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">aus dem Angelsächsischen Texte Cnuts</hi></seg><seg type="translation" xml:lang="en" source="#claude">from the Old English text of Cnut</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Quadr-Rb_II-Cn-18.lnote.la.79" n="79" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">536</biblScope></bibl><seg type="original" xml:lang="de">burhmoth <hi rend="italic">T;</hi> burhmot <hi rend="italic">Hk;</hi> burgemot <hi rend="italic">R</hi></seg><seg type="translation" xml:lang="en" source="#claude">burhmoth T; burhmot Hk; burgemot R</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Quadr-Rb_II-Cn-18.lnote.la.80" n="80" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">536</biblScope></bibl><seg type="original" xml:lang="de">scir. <hi rend="italic">Hk;</hi> scyremot <hi rend="italic">T;</hi> sciremot <hi rend="italic">R;</hi> schiremot <hi rend="italic">Br</hi></seg><seg type="translation" xml:lang="en" source="#claude">scir. Hk; scyremot T; sciremot R; schiremot Br</seg></note>
       </div>
     </body>
   </text>

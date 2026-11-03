@@ -65,7 +65,7 @@
     <body>
       <div type="clause" n="14">
         <head><ref type="lawCode" target="law:Cn1020">Cn 1020</ref> 14</head>
-        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="14" corresp="#wit-york-gospels"><pb n="274" ed="#liebermann"/>for ðam þe ealle b<hi rend="italic">iscopas</hi> secgað, þ<hi rend="italic">æt</hi> hit swyþe deop wið God to betanne, þ<hi rend="italic">æt</hi> man aðas oððe wedd tobrece.</ab>
+        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="14" corresp="#wit-york-gospels"><pb n="274" ed="#liebermann"/>for ðam þe ealle b<hi rend="italic">iscopas</hi> secgað, þ<hi rend="italic">æt</hi> hit swyþe deop<ptr type="liebermannNote" n="4" target="#Cn1020_14.lnote.oe.4"/> wið God to betanne, þ<hi rend="italic">æt</hi> man aðas oððe wedd tobrece.</ab>
         <ab type="editionText" xml:lang="ang" source="#robertson" n="14" corresp="#wit-york-gospels"><pb n="142" ed="#robertson"/>For ðam þe ealle biscopas secgað þæt hit swyþe deop wið God to betanne þæt man aðas oððe wedd tobrece.</ab>
         <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-york-gospels"><pb n="228" ed="#rabin-doml"/>Forðam þe ealle biscopas secgað þæt hit swyþe deop is wið God to betanne þæt man aðas oððe wedd tobrece.</ab>
         <ab type="translation" xml:lang="de" source="#liebermann"><pb n="274" ed="#liebermann"/>weil alle Bischöfe<ptr type="liebermannNote" n="1" target="#Cn1020_14.lnote.de.1"/> sagen, dass es sehr tief gegenüber der Kirche<ptr type="liebermannNote" n="2" target="#Cn1020_14.lnote.de.2"/> gebüsst werden [müsse], wenn man Eide oder rechtsförmliche Versprechen verletzt.</ab>
@@ -77,6 +77,7 @@
         <note type="comparisonPrinted" source="#liebermann">Vgl. VI Atr. 28</note>
         <note type="editorial">Earle supplies ‘is’, Pauli ‘beo’ after ‘deop’.</note>
         <note type="textual" source="#rabin-doml">[6] deop is: is omitted Y</note>
+        <note type="liebermannNote" subtype="textual" xml:id="Cn1020_14.lnote.oe.4" n="4" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">274</biblScope></bibl><seg type="original" xml:lang="de">is <hi rend="italic">ergänzt Earle</hi>, beo <hi rend="italic">Pauli</hi></seg><seg type="translation" xml:lang="en" source="#claude">Earle supplies is, Pauli beo</seg></note>
         <note type="liebermannNote" subtype="erklaerung" xml:id="Cn1020_14.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">189</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Ebd.</hi> Bischof 8; <hi rend="italic">o.</hi> 3. 11</seg><seg type="translation" xml:lang="en" source="#claude">Ibid. [i.e. <hi rend="italic">Gl</hi>] Bischof 8; above, 3. 11</seg></note>
         <note type="liebermannNote" subtype="erklaerung" xml:id="Cn1020_14.lnote.de.2" n="2" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">189</biblScope><biblScope unit="column">2</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">S. Gl</hi> Versprechen 6; Kirchenstaatsrecht 17. a</seg><seg type="translation" xml:lang="en" source="#claude">See <hi rend="italic">Gl</hi> Versprechen 6; Kirchenstaatsrecht 17. a</seg></note>
       </div>

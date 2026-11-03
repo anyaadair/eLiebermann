@@ -20,6 +20,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">536</biblScope></bibl>
           <bibl xml:id="claude-crib" type="translation">A semi-literal English rendering of the Latin text, created for this database in 2026 with Claude, a large language model made by Anthropic. It is a crib to help the reader with the Latin, and should not be treated as a separate translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
+          <bibl xml:id="claude" type="translation">English renderings of Liebermann’s German notes, created for this database in 2026 with Claude, a large language model made by Anthropic. They are cribs to help the reader with Liebermann’s German, and should not be treated as separate translations</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -44,9 +45,11 @@
     <body>
       <div type="clause" n="I Cn 7.2">
         <head>Quadr Rb I Cn 7.2</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Quadr Rb I Cn 7.2" corresp="#wit-lat"><pb n="536" ed="#liebermann"/>et ne meretrices publice uagentur.</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Quadr Rb I Cn 7.2" corresp="#wit-lat"><pb n="536" ed="#liebermann"/>et<ptr type="liebermannNote" n="17" target="#Quadr-Rb_I-Cn-7-2.lnote.la.17"/> ne meretrices publice<ptr type="liebermannNote" n="18" target="#Quadr-Rb_I-Cn-7-2.lnote.la.18"/> uagentur.</ab>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 536 (two independent readings of the page images, differences settled against the page)</note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">and that harlots shall not wander about publicly.</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="Quadr-Rb_I-Cn-7-2.lnote.la.17" n="17" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">536</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt LondDm</hi> (<hi rend="italic">wo</hi> Ne m. p. u. <hi rend="italic">besondere Rubrik</hi>) <hi rend="italic">Br</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in LondDm (where Ne m. p. u. is a separate rubric) Br</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Quadr-Rb_I-Cn-7-2.lnote.la.18" n="18" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">536</biblScope></bibl><seg type="original" xml:lang="de">pupl. <hi rend="italic">THk</hi></seg><seg type="translation" xml:lang="en" source="#claude">pupl. THk</seg></note>
       </div>
     </body>
   </text>

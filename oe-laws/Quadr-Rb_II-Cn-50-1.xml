@@ -20,6 +20,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">537</biblScope></bibl>
           <bibl xml:id="claude-crib" type="translation">A semi-literal English rendering of the Latin text, created for this database in 2026 with Claude, a large language model made by Anthropic. It is a crib to help the reader with the Latin, and should not be treated as a separate translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
+          <bibl xml:id="claude" type="translation">English renderings of Liebermann’s German notes, created for this database in 2026 with Claude, a large language model made by Anthropic. They are cribs to help the reader with Liebermann’s German, and should not be treated as separate translations</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -44,9 +45,12 @@
     <body>
       <div type="clause" n="II Cn 50.1">
         <head>Quadr Rb II Cn 50.1</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Quadr Rb II Cn 50.1" corresp="#wit-lat"><pb n="537" ed="#liebermann"/>De stupro in uirgine et adulterio in uxore alterius. (De adulterio in uacua uel sponsa alterius uel ordinata.)</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Quadr Rb II Cn 50.1" corresp="#wit-lat"><pb n="537" ed="#liebermann"/><ptr type="liebermannNote" n="68" target="#Quadr-Rb_II-Cn-50-1.lnote.la.68"/>De stupro in uirgine et adulterio<ptr type="liebermannNote" n="69" target="#Quadr-Rb_II-Cn-50-1.lnote.la.69"/> in uxore alterius. (De<ptr type="liebermannNote" n="c" target="#Quadr-Rb_II-Cn-50-1.lnote.la.fn.c"/> adulterio in uacua uel sponsa alterius uel ordinata.)</ab>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 537 (two independent readings of the page images, differences settled against the page)</note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">Of fornication with a virgin and of adultery with another's wife. (Of adultery with an unmarried woman or with another's betrothed or with a woman in orders.)</ab>
+        <note type="liebermannNote" subtype="textual" xml:id="Quadr-Rb_II-Cn-50-1.lnote.la.68" n="68" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">537</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">fehlt R; statt</hi> De st. — alterius <hi rend="italic">haben</hi> De — ordinata, <hi rend="italic">hier dem Texte näher, HkBr</hi></seg><seg type="translation" xml:lang="en" source="#claude">lacking in R; instead of De st. — alterius, HkBr have De — ordinata, here closer to the text</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Quadr-Rb_II-Cn-50-1.lnote.la.69" n="69" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">537</biblScope></bibl><seg type="original" xml:lang="de">uiduis ui subactis [<hi rend="italic">s. c.</hi> 52] <hi rend="italic">statt</hi> ad. in u. a. <hi rend="italic">T</hi></seg><seg type="translation" xml:lang="en" source="#claude">uiduis ui subactis [see c. 52] instead of ad. in u. a. T</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Quadr-Rb_II-Cn-50-1.lnote.la.fn.c" n="c" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">537</biblScope></bibl><seg type="original" xml:lang="de">(<hi rend="italic">Eingeklammertes</hi>) <hi rend="italic">entstammt letzter Recension</hi></seg><seg type="translation" xml:lang="en" source="#claude">(What is in brackets) comes from the last recension</seg></note>
       </div>
     </body>
   </text>

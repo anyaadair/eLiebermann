@@ -18,6 +18,7 @@
         <bibl type="legalText"><title>Quadripartitus, Liber I: titles of the laws</title></bibl>
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">540</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">English renderings of Liebermann’s German notes, created for this database in 2026 with Claude, a large language model made by Anthropic. They are cribs to help the reader with Liebermann’s German, and should not be treated as separate translations</bibl>
         </listBibl>
         <listWit>
           <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
@@ -42,8 +43,10 @@
     <body>
       <div type="clause" n="II As">
         <head>Quadr I II As</head>
-        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Quadr I II As" corresp="#wit-lat"><pb n="540" ed="#liebermann"/>(Capitula II. libri). De eo quod non parcatur — — congregare potuit; <hi rend="italic">s. o. S</hi>. 151—67</ab>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Quadr I II As" corresp="#wit-lat"><pb n="540" ed="#liebermann"/><ptr type="liebermannNote" n="a" target="#Quadr-I_II-As.lnote.la.fn.a"/>(Capitula<ptr type="liebermannNote" n="1" target="#Quadr-I_II-As.lnote.la.1"/> II. libri). De eo quod non parcatur — — congregare potuit; <hi rend="italic">s. o. S</hi>. 151—67</ab>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 540 (two independent readings of the page images, differences settled against the page)</note>
+        <note type="liebermannNote" subtype="textual" xml:id="Quadr-I_II-As.lnote.la.fn.a" n="a" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">540</biblScope></bibl><seg type="original" xml:lang="de">(<hi rend="italic">Eingeklammertes</hi>) <hi rend="italic">nur in jüngster Recension</hi></seg><seg type="translation" xml:lang="en" source="#claude">(Bracketed matter) only in the latest recension</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Quadr-I_II-As.lnote.la.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">540</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">nur M, also</hi> I As. <hi rend="italic">und</hi> As. Alm. <hi rend="italic">irrig als Ein Stück betrachtend</hi></seg><seg type="translation" xml:lang="en" source="#claude">only M, thus wrongly treating I As. and As. Alm. as one piece</seg></note>
       </div>
     </body>
   </text>
