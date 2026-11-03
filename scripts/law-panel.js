@@ -98,5 +98,21 @@
     const loadTexts = prefix => textsLoading || (textsLoading = fetch(root() + 'data/laws-text/' + encodeURIComponent(prefix) + '.json').then(r => r.ok ? r.json() : {}).catch(() => ({})));
     const loadDict = () => dictLoading || (dictLoading = fetch(root() + 'data/dict-citations.json').then(r => r.ok ? r.json() : {}).catch(() => ({})));
 
-    window.LawPanel = { pills, suggestBox, kwic, watch, fields, WHERE, loadTexts, loadDict };
+    // "Go to a clause": the clause a typed number means. The number is read part by part, so that
+    // 4 is clause 4 (not 45 or 14), 45 is 45, and 45.1, "45,1" and "45 1" are all 45.1; while a number
+    // is being typed, a clause that begins with it as a whole part comes first (45 → 45.1, 45a),
+    // then any clause beginning with it, so that 4.5 is never taken for 45.
+    const clauseKey = s => String(s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+        .replace(/[\s,;:]+/g, '.').replace(/\.+/g, '.').replace(/^\.|\.$/g, '');
+    function findClause(list, typed) {
+        const t = clauseKey(typed);
+        if (!t) return null;
+        const k = c => clauseKey(c.clause || c.citation);
+        return list.find(c => k(c) === t)
+            || list.find(c => k(c).startsWith(t) && /^[.a-z]/.test(k(c).slice(t.length)))
+            || list.find(c => k(c).startsWith(t))
+            || list.find(c => k(c).replace(/\./g, '') === t.replace(/\./g, ''));
+    }
+
+    window.LawPanel = { pills, suggestBox, kwic, watch, fields, WHERE, loadTexts, loadDict, findClause };
 })();
