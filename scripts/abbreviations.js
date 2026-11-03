@@ -27,6 +27,7 @@
 
     const GUIDES = [
         ['guide.html', 'How to Read a Dictionary Entry'],
+        ['reading-laws.html', 'Reading the Laws'],
         ['lawAbb.html', 'Law Codes'],
         ['msAbb.html', 'Manuscripts'],
         ['gramAbb.html', 'Grammatical Terms and Abbreviations'],
@@ -335,7 +336,7 @@
     function guidePage() {
         panel(null);
         const main = document.querySelector('.laws-main');
-        $('gp-count').textContent = 'Liebermann’s system, explained';
+        $('gp-count').textContent = /reading-laws/.test(location.pathname) ? 'Notes, references and subjects' : 'Liebermann’s system, explained';
         const secs = [...main.querySelectorAll('section[id] > h2')];
         $('gp-jump').innerHTML = `<ul class="sidebar-links">${secs.map(h => `<li><a href="#${esc(h.parentElement.id)}">${esc(h.textContent)}</a></li>`).join('')}</ul>`;
         let marks = [], at = -1, t;

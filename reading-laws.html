@@ -1,0 +1,102 @@
+---
+title: Reading the Laws
+section: abbreviations
+full_width: true
+description: How to use Liebermann's notes on the law pages, how to follow his cross-references, and how to use the subject index and its charts.
+scripts:
+  - "ROOT/scripts/abbreviations.js"
+---
+<div class="laws-layout guides-layout">
+<aside class="laws-panel" id="guide-panel" aria-label="Search and guides"></aside>
+<div class="laws-main">
+<h1>Reading the Laws</h1>
+
+<p class="lede">Each clause of the laws has its own page, with Liebermann's text, the other editions and translations, and Liebermann's notes. This guide explains the different kinds of note and how to follow Liebermann's references from one passage to another. It also explains the subject index, which lets you find every clause on a subject and see how that subject runs through the law codes.</p>
+
+<nav class="guide-toc" aria-label="On this page">
+    <a href="#notes">Liebermann's notes</a> · <a href="#references">Following Liebermann's references</a> · <a href="#subjects">How to use the subject index</a>
+</nav>
+
+<section class="entry-section" id="notes">
+<h2>Liebermann's notes</h2>
+<p>Liebermann's notes are hidden until you open them: under the text on a clause page, click <strong>Show Liebermann's notes</strong>. The small raised numbers and letters in the text are his note marks. Click one to go to its note. Each note gives Liebermann's German as he printed it, then an English rendering made with an LLM (Claude) to help with the German, then where it is printed in the <em>Gesetze</em>.</p>
+<p>His notes come from two volumes of the <em>Gesetze</em>, and are of three kinds.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Kind of note</th><th>Where Liebermann printed it</th><th>What it contains</th></tr></thead>
+<tbody>
+<tr><td class="term">Textual notes</td><td>At the foot of the page in vol. I (1903), under his text</td><td>Mostly the readings of the other manuscripts: what each has where it differs from the text printed. Their numbers start again on each page, and, where he prints several texts side by side, for each text.</td></tr>
+<tr><td class="term">Lettered notes</td><td>At the foot of the page in vol. I, in texts he prints without a German translation (for example <a href="lawcode.html?code=Ps%20Cn%20for">Pseudo-Cnut De foresta</a>)</td><td>His explanations: sources, the manuscripts, the meaning of words, comparisons with other laws. Their letters, too, start again on each page.</td></tr>
+<tr><td class="term">Erklärungen (explanatory notes)</td><td>In vol. III (1916), keyed to the raised numbers in his German translation in vol. I</td><td>His commentary on the content of the laws. Where a text has no German translation, they are keyed to marks in the text itself; in Pseudo-Cnut De foresta, for example, to the same letters as the notes in vol. I, so that one mark leads to both.</td></tr>
+</tbody>
+</table></div>
+<p>Liebermann's notes are very compressed, and are written in German with many abbreviations. The commonest are:</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Liebermann writes</th><th>German</th><th>It means</th></tr></thead>
+<tbody>
+<tr><td class="term"><em>fehlt</em> H</td><td></td><td>lacking in manuscript H</td></tr>
+<tr><td class="term"><em>fügt zu</em> H</td><td></td><td>manuscript H adds</td></tr>
+<tr><td class="term">Hss.</td><td>Handschriften</td><td>manuscripts</td></tr>
+<tr><td class="term">S.</td><td>Seite</td><td>page (of the same volume, unless another is named)</td></tr>
+<tr><td class="term">o. / u.</td><td>oben / unten</td><td>above / below (earlier or later in the same text or volume)</td></tr>
+<tr><td class="term">ebd.</td><td>ebenda</td><td>in the same place (ibid.)</td></tr>
+<tr><td class="term">vgl.</td><td>vergleiche</td><td>compare (cf.)</td></tr>
+<tr><td class="term">Anm.</td><td>Anmerkung</td><td>note</td></tr>
+<tr><td class="term">Z.</td><td>Zeile</td><td>line</td></tr>
+</tbody>
+</table></div>
+<p>The manuscript sigla (H, B, Ho, Cii…) are explained on the <a href="msAbb.html">list of manuscripts</a>, the law codes on the <a href="lawAbb.html">list of law codes</a>, and the modern authors and works he cites on the list of <a href="bibAbb.html">authors and works cited</a>. To see a note as Liebermann printed it, follow the <strong>page scan</strong> link at the top of the clause page.</p>
+</section>
+
+<section class="entry-section" id="references">
+<h2>Following Liebermann's references</h2>
+<p>Liebermann often sends the reader from one note to another passage. On the clause page of <a href="law.html?id=PsCnFor_Prol">Pseudo-Cnut De foresta, Prologue</a>, for example, note c reads <em>diese Zufügung soll Cnuts Landrecht zum Forstrecht stempeln, auch</em> 11. 13<sup><em>s</em></sup>. 14. 17<sup><em>e</em></sup>. 18: “this addition is meant to stamp Cnut's general law as forest law; likewise 11, 13 note s, 14, 17 note e, 18”. Here the numbers are clauses of the same text, and a raised letter is a note at that clause: “13<sup><em>s</em></sup>” is clause 13, note s.</p>
+<p>On this site these references are left as Liebermann printed them, in plain text, rather than turned into links. Linking them by machine would give wrong links in too many places, for three reasons:</p>
+<ul>
+<li><strong>They depend on context.</strong> “11. 13<sup>s</sup>” means clauses of the same text here. Elsewhere a bare number may mean a page (“o. S. 71”), a clause of a code named earlier in the note, or a line.</li>
+<li><strong>Letters and numbers restart on every page.</strong> So “13<sup>s</sup>” only makes sense once you know which clause 13 and which page's note s.</li>
+<li><strong>Liebermann mixes his systems.</strong> “S. 620<sup>g</sup>” is a page plus a note letter, “10<sup>4</sup>” is a clause plus a note number, and “I 8<sup>c</sup>” is a part, a clause and a letter.</li>
+</ul>
+<p>To follow a reference, first decide what kind it is:</p>
+<ul>
+<li><strong>A clause</strong> (a bare number, or a number after a law code's abbreviation): type the number into <strong>Go to a clause</strong> in the panel on the left of a clause or law code page. For another law code, open it from the <a href="laws.html">list of law codes</a> first.</li>
+<li><strong>A note at a clause</strong> (a raised number or letter after the clause number): go to the clause, open Liebermann's notes, and find the note with that number or letter.</li>
+<li><strong>A page</strong> (“S.” and a number): the page of the <em>Gesetze</em> where the passage is printed. Every note and every text on this site says which page it is from, and the law code pages give the pages of each code.</li>
+</ul>
+</section>
+
+<section class="entry-section" id="subjects">
+<h2>How to use the subject index</h2>
+<p>The <a href="subjects.html">subject index</a> lists keywords assigned by hand to the clauses of the laws, for this database. Each clause has been read and given keywords of three kinds:</p>
+<ul>
+<li><strong>Legal matters</strong>: the offences, procedures and other matters the clause deals with (<em>Theft</em>, <em>Homicide</em>, <em>Ordeal</em>);</li>
+<li><strong>People</strong>: the kinds of people it concerns (<em>Widow</em>, <em>Bishops</em>, <em>Thief</em>);</li>
+<li><strong>Places</strong>: the places it names or concerns (<em>Minster</em>, <em>London</em>, <em>Danelaw</em>).</li>
+</ul>
+<p>The index covers the pre-Conquest law codes, from Æthelberht to Cnut, but not the Anglo-Norman and Latin law-books. The keywords of a clause are also listed under <strong>Keywords</strong> at the foot of its page, and each leads to its subject.</p>
+
+<h3>Finding a subject</h3>
+<p>On the <a href="subjects.html">Subjects</a> page the keywords are arranged in the three sections, and within each section in groups (for example <em>Violence and injury</em> under Legal matters). The number after a subject is the number of clauses indexed with it. Type in the box at the top to find a subject by name, and use <strong>Most clauses first</strong> or <strong>A–Z</strong> to change the order. A subject may appear in more than one section: <em>Danelaw</em>, for instance, is both a legal matter and a place.</p>
+
+<h3>A subject's page</h3>
+<p>Click a subject to open its page. It shows:</p>
+<ul>
+<li><strong>Through the law codes</strong>, a bar chart (described below);</li>
+<li><strong>Broader</strong> and <strong>Narrower</strong> subjects, where the subject belongs to a group with a broader keyword;</li>
+<li><strong>Often with</strong>: the keywords most often given to the same clauses, which suggest related subjects to explore;</li>
+<li><strong>The clauses</strong>: every clause indexed with the subject, law code by law code, each with its text and English translation. Click a clause number to open its page.</li>
+</ul>
+<p>To search the words of these clauses, use <strong>Search within these clauses</strong>. It opens the search of the laws with the subject already chosen, so that you can add a word, or further keywords. With several keywords, <strong>All of them</strong> finds the clauses that have every one of them, and <strong>Any of them</strong> finds the clauses that have at least one.</p>
+
+<h3>Reading the bar chart</h3>
+<p>The chart <strong>Through the law codes</strong> shows how often a subject comes up in each law code, from the earliest to the latest.</p>
+<ul>
+<li><strong>Each bar is one law code</strong>, in order from left to right: the laws of each king in turn (named under the bars), then the undated and anonymous texts at the right, under <em>Other texts</em>.</li>
+<li><strong>The height of a bar</strong> is the number of clauses in that code indexed with the subject. The tallest bar is the code with the most such clauses; the number is given under the chart (“Tallest bar: 12 clauses”), and the other bars are drawn in proportion to it.</li>
+<li><strong>A flat, empty bar</strong> means that the code has no clause on the subject.</li>
+<li><strong>Point to a bar</strong> to see the code's name and the number of its clauses on the subject, out of all its clauses (for example “II Cn · II Cnut: 9 clauses of 160”). <strong>Click a bar</strong> to go to that code's clauses further down the page.</li>
+</ul>
+<p>The bars count clauses, not words, and the codes are of very different lengths: Alfred's laws and II Cnut have far more clauses than the Kentish codes or the short anonymous texts. A tall bar may therefore reflect a long code rather than a particular interest in the subject. The figure “out of all its clauses”, shown when you point to a bar, helps to compare codes fairly. The chart shows only how the subject has been indexed, and it is a guide to where to look, not a measure of how important the subject was.</p>
+</section>
+
+</div>
+</div>
