@@ -27,11 +27,11 @@
 
     const GUIDES = [
         ['guide.html', 'How to Read a Dictionary Entry'],
-        ['reading-laws.html', 'Reading the Laws'],
+        ['reading-laws.html', 'How to Read the Laws'],
         ['lawAbb.html', 'Law Codes'],
         ['msAbb.html', 'Manuscripts'],
         ['gramAbb.html', 'Grammatical Terms and Abbreviations'],
-        ['bibAbb.html', 'Authors and Works Cited'],
+        ['bibAbb.html', 'Authors and Works Cited by Liebermann'],
         ['forewords.html', 'Liebermann’s Forewords']
     ];
 
