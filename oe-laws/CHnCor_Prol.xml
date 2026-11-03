@@ -26,12 +26,23 @@
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, created for this database in 2026 with Claude, a large language model made by Anthropic. It is a crib to help the reader with Liebermann’s German, and should not be treated as a separate translation</bibl>
         </listBibl>
         <listWit>
-          <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
           <witness xml:id="wit-worc"><abbr>Worc</abbr> <note type="manuscript">The copy addressed to Worcestershire</note></witness>
           <witness xml:id="wit-herts"><abbr>Herts</abbr> <note type="manuscript">The copy addressed to Hertfordshire</note></witness>
           <witness xml:id="wit-winch"><abbr>Winch</abbr> <note type="manuscript">The copy in the Winchester archive (?)</note></witness>
           <witness xml:id="wit-roch"><abbr>Roch</abbr></witness>
           <witness xml:id="wit-h"><abbr>H</abbr> <note type="manuscript">Strood, Medway Archive and Local Studies Centre, MS DRc/R1 (Textus Roffensis; formerly Rochester, Cathedral Library, A.3.5)</note></witness>
+          <witness xml:id="wit-rl" type="source"><abbr>Rl</abbr> <note type="manuscript">Oxford, Bodleian Library, MS Rawlinson C 641</note></witness>
+          <witness xml:id="wit-haug" type="source"><abbr>Haug</abbr> <note type="manuscript">Richard of Hexham, Historia de gestis regis Stephani</note></witness>
+          <witness xml:id="wit-dm" type="source"><abbr>Dm</abbr> <note type="manuscript">London, British Library, Cotton MS Domitian viii</note></witness>
+          <witness xml:id="wit-q" type="source"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note></witness>
+          <witness xml:id="wit-sc" type="source"><abbr>Sc</abbr> <note type="manuscript">London, The National Archives (formerly the Public Record Office), E 164/2 (the Red Book of the Exchequer)</note></witness>
+          <witness xml:id="wit-hg" type="source"><abbr>Hg</abbr> <note type="manuscript">London, British Library, Hargrave MS 313</note></witness>
+          <witness xml:id="wit-alb" type="source"><abbr>Alb</abbr> <note type="manuscript">Roger of Wendover’s St Albans chronicle, as copied by Matthew Paris in the Chronica maiora; and Matthew Paris, Historia Anglorum</note></witness>
+          <witness xml:id="wit-gl" type="source" n="Glas"><abbr>Gl</abbr> <note type="manuscript">Registrum episcopatus Glasguensis (the register of the bishopric of Glasgow)</note></witness>
+          <witness xml:id="wit-lond" type="source"><abbr>Lond</abbr> <note type="manuscript">The original of the London collection, Leges Anglorum Londoniis collectae (c. 1210), which survives in copies</note></witness>
+          <witness xml:id="wit-hl" type="source"><abbr>Hl</abbr> <note type="manuscript">London, British Library, Harley MS 458 (formerly Le Neve’s)</note></witness>
+          <witness xml:id="wit-cust" type="source"><abbr>Cust</abbr> <note type="manuscript">London, Guildhall (Corporation of London), Liber Custumarum</note></witness>
+          <witness xml:id="wit-s" type="source"><abbr>S</abbr> <note type="manuscript">London, British Library, Harley MS 746</note></witness>
         </listWit>
       </sourceDesc>
     </fileDesc>

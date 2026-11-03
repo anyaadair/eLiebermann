@@ -23,7 +23,11 @@
           <bibl xml:id="claude-crib" type="translation">A semi-literal English rendering of the Latin text, created for this database in 2026 with Claude, a large language model made by Anthropic. It is a crib to help the reader with the Latin, and should not be treated as a separate translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
-          <witness xml:id="wit-lat"><abbr>Lat</abbr> <note type="manuscript">Latin text as edited by Liebermann from several manuscripts (see his notes) (Vt2, Tr, Mg, Ma)</note></witness>
+          <witness xml:id="wit-lat" type="edited"><abbr>Iud Dei XIV</abbr> <note type="manuscript">Iudicium Dei XIV: Liebermann’s edited Latin text, from the manuscripts he names in Gesetze I, p. 425, note a, listed below</note></witness>
+          <witness xml:id="wit-vt2" type="source"><abbr>Vt 2</abbr> <note type="manuscript">London, British Library, Cotton MS Vitellius A.vii (Vt 2, the second pontifical)</note></witness>
+          <witness xml:id="wit-tr" type="source"><abbr>Tr</abbr> <note type="manuscript">London, British Library, Cotton MS Tiberius B.viii</note></witness>
+          <witness xml:id="wit-mg" type="source"><abbr>Mg</abbr> <note type="manuscript">Oxford, Magdalen College, MS 226</note></witness>
+          <witness xml:id="wit-ma" type="source"><abbr>Ma</abbr> <note type="manuscript">Douai, Bibliothèque municipale, MS 67 (formerly 94/6), from Marchiennes</note></witness>
         </listWit>
       </sourceDesc>
     </fileDesc>

@@ -23,16 +23,16 @@
           <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
         </listBibl>
         <listWit>
-          <witness xml:id="wit-lat"><abbr>In Cn</abbr> <note type="manuscript">Instituta Cnuti (Latin translation of Anglo-Saxon laws, c. 1100): Liebermann’s edited text, from the manuscripts listed below</note></witness>
-          <witness xml:id="wit-h"><abbr>H</abbr> <note type="manuscript">Strood, Medway Archive and Local Studies Centre, MS DRc/R1 (Textus Roffensis; formerly Rochester, Cathedral Library, MS A.3.5)</note></witness>
-          <witness xml:id="wit-rl"><abbr>Rl</abbr> <note type="manuscript">Oxford, Bodleian Library, MS Rawlinson C 641</note></witness>
-          <witness xml:id="wit-t"><abbr>T</abbr> <note type="manuscript">London, British Library, Cotton MS Titus A.xxvii</note></witness>
-          <witness xml:id="wit-cb"><abbr>Cb</abbr> <note type="manuscript">Paris, Bibliothèque nationale de France, Lat. 4771, formerly Colbert 3860</note></witness>
-          <witness xml:id="wit-di"><abbr>Di</abbr> <note type="manuscript">Oxford, Bodleian Library, MS Digby 13</note></witness>
-          <witness xml:id="wit-lb"><abbr>Lb</abbr> <note type="manuscript">London, Lambeth Palace Library, MS 118 (formerly of Merton priory, then Lord Lumley’s)</note></witness>
-          <witness xml:id="wit-s"><abbr>S</abbr> <note type="manuscript">London, British Library, Harley MS 746</note></witness>
-          <witness xml:id="wit-pl"><abbr>Pl</abbr> <note type="manuscript">Phillipps MS 8078 (in 1903 owned by H. S. Nichols &amp; Co., London)</note></witness>
-          <witness xml:id="wit-ct"><abbr>Ct</abbr> <note type="manuscript">Cambridge, Trinity College, MS R 5, 42</note></witness>
+          <witness xml:id="wit-lat" type="edited"><abbr>In Cn</abbr> <note type="manuscript">Instituta Cnuti: Liebermann’s edited Latin text, from the manuscripts he names in Gesetze I, p. 59, note *, listed below</note></witness>
+          <witness xml:id="wit-h" type="source"><abbr>H</abbr> <note type="manuscript">Strood, Medway Archive and Local Studies Centre, MS DRc/R1 (Textus Roffensis; formerly Rochester, Cathedral Library, MS A.3.5)</note></witness>
+          <witness xml:id="wit-rl" type="source"><abbr>Rl</abbr> <note type="manuscript">Oxford, Bodleian Library, MS Rawlinson C 641</note></witness>
+          <witness xml:id="wit-t" type="source"><abbr>T</abbr> <note type="manuscript">London, British Library, Cotton MS Titus A.xxvii</note></witness>
+          <witness xml:id="wit-cb" type="source"><abbr>Cb</abbr> <note type="manuscript">Paris, Bibliothèque nationale de France, Lat. 4771, formerly Colbert 3860</note></witness>
+          <witness xml:id="wit-di" type="source"><abbr>Di</abbr> <note type="manuscript">Oxford, Bodleian Library, MS Digby 13</note></witness>
+          <witness xml:id="wit-lb" type="source"><abbr>Lb</abbr> <note type="manuscript">London, Lambeth Palace Library, MS 118 (formerly of Merton priory, then Lord Lumley’s)</note></witness>
+          <witness xml:id="wit-s" type="source"><abbr>S</abbr> <note type="manuscript">London, British Library, Harley MS 746</note></witness>
+          <witness xml:id="wit-pl" type="source"><abbr>Pl</abbr> <note type="manuscript">Phillipps MS 8078 (in 1903 owned by H. S. Nichols &amp; Co., London)</note></witness>
+          <witness xml:id="wit-ct" type="source"><abbr>Ct</abbr> <note type="manuscript">Cambridge, Trinity College, MS R 5, 42</note></witness>
         </listWit>
       </sourceDesc>
     </fileDesc>

@@ -25,7 +25,15 @@
           <bibl xml:id="claude-crib" type="translation">A semi-literal English rendering of the Latin text, created for this database in 2026 with Claude, a large language model made by Anthropic. It is a crib to help the reader with the Latin, and should not be treated as a separate translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
-          <witness xml:id="wit-lat"><abbr>Lat</abbr> <note type="manuscript">Latin text as edited by Liebermann from several manuscripts (see his notes) (Tr, Mg, Hm)</note></witness>
+          <witness xml:id="wit-lat" type="edited"><abbr>Duel</abbr> <note type="manuscript">Blessing for a judicial duel: Liebermann’s edited Latin text, from the manuscripts he names in Gesetze I, p. 430, note a, listed below</note></witness>
+          <witness xml:id="wit-tr" type="source"><abbr>Tr</abbr> <note type="manuscript">London, British Library, Cotton MS Tiberius B.viii</note></witness>
+          <witness xml:id="wit-mg" type="source"><abbr>Mg</abbr> <note type="manuscript">Oxford, Magdalen College, MS 226</note></witness>
+          <witness xml:id="wit-hm" type="source"><abbr>Hm</abbr> <note type="manuscript">London, British Library, Harley MS 873</note></witness>
+          <witness xml:id="wit-ym" type="source"><abbr>Ym</abbr> <note type="manuscript">The York Manual, ed. W. G. Henderson (Surtees Society 63, 1875)</note></witness>
+          <witness xml:id="wit-sr" type="source"><abbr>Sr</abbr> <note type="manuscript">The Sarum Manual (printed, Rouen, 1506)</note></witness>
+          <witness xml:id="wit-ta" type="source"><abbr>Ta</abbr> <note type="manuscript">Oxford, Bodleian Library, MS Tanner 5</note></witness>
+          <witness xml:id="wit-gl" type="source"><abbr>Gl</abbr> <note type="manuscript">London, British Library, Additional MS 30506</note></witness>
+          <witness xml:id="wit-et" type="source"><abbr>Et</abbr> <note type="manuscript">Exeter Cathedral, the Pontifical of Edmund Lacy, bishop of Exeter</note></witness>
         </listWit>
       </sourceDesc>
     </fileDesc>

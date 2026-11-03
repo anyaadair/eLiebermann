@@ -22,7 +22,17 @@
           <bibl xml:id="claude-crib" type="translation">A semi-literal English rendering of the Latin text, created for this database in 2026 with Claude, a large language model made by Anthropic. It is a crib to help the reader with the Latin, and should not be treated as a separate translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
-          <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
+          <witness xml:id="wit-lat" type="edited"><abbr>Quadr</abbr> <note type="manuscript">Quadripartitus, rubrics: Liebermann’s edited Latin text, from the manuscripts he names in Gesetze I, p. 529, note a, listed below</note></witness>
+          <witness xml:id="wit-lond" type="source"><abbr>Lond</abbr> <note type="manuscript">The original of the London collection, Leges Anglorum Londoniis collectae (c. 1210), which survives in copies</note></witness>
+          <witness xml:id="wit-k" type="source"><abbr>K</abbr> <note type="manuscript">London, British Library, Cotton MS Claudius A.iii (K1); but for the Quadripartitus and the London texts Liebermann’s K means Cotton MS Claudius D.ii (K2)</note></witness>
+          <witness xml:id="wit-co" type="source"><abbr>Co</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 70</note></witness>
+          <witness xml:id="wit-or" type="source"><abbr>Or</abbr> <note type="manuscript">Oxford, Oriel College, MS 46</note></witness>
+          <witness xml:id="wit-dm" type="source"><abbr>Dm</abbr> <note type="manuscript">London, British Library, Cotton MS Domitian viii</note></witness>
+          <witness xml:id="wit-t" type="source"><abbr>T</abbr> <note type="manuscript">London, British Library, Cotton MS Titus A.xxvii</note></witness>
+          <witness xml:id="wit-r" type="source"><abbr>R</abbr> <note type="manuscript">London, British Library, Royal MS 11 B II (Liber monasterii Wygornie)</note></witness>
+          <witness xml:id="wit-m" type="source"><abbr>M</abbr> <note type="manuscript">Keswick Hall, Norwich, the Gurney family (in 1903); formerly Fleetwood’s, Spelman’s and Coxe Macro’s</note></witness>
+          <witness xml:id="wit-hk" type="source"><abbr>Hk</abbr> <note type="manuscript">Holkham Hall (Earl of Leicester), MS 228</note></witness>
+          <witness xml:id="wit-br" type="source"><abbr>Br</abbr> <note type="manuscript">The chronicle ascribed to John Brompton: Cambridge, Corpus Christi College, MS 96 (Brco) and London, British Library, Cotton MS Tiberius C.xiii (Brti); printed by Twysden (1652)</note></witness>
         </listWit>
       </sourceDesc>
     </fileDesc>

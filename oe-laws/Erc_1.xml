@@ -25,7 +25,7 @@
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, created for this database in 2026 with Claude, a large language model made by Anthropic. It is a crib to help the reader with Liebermann’s German, and should not be treated as a separate translation</bibl>
         </listBibl>
         <listWit>
-          <witness xml:id="wit-lat"><abbr>Lat</abbr> <note type="manuscript">Bede, Historia ecclesiastica gentis Anglorum III 8 (Liebermann gives the passage as the only record of Earconberht’s laws)</note></witness>
+          <witness xml:id="wit-lat" type="edited"><abbr>Bede</abbr> <note type="manuscript">Bede, Historia ecclesiastica gentis Anglorum III 8 (Liebermann gives the passage as the only record of Earconberht’s laws)</note></witness>
         </listWit>
       </sourceDesc>
     </fileDesc>
