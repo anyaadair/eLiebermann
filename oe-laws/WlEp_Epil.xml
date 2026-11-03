@@ -28,9 +28,11 @@
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, created for this database in 2026 with Claude, a large language model made by Anthropic. It is a crib to help the reader with Liebermann’s German, and should not be treated as a separate translation</bibl>
         </listBibl>
         <listWit>
-          <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
           <witness xml:id="wit-lp"><abbr>Lp</abbr> <note type="manuscript">Lp: the copy addressed to Essex (Liebermann’s siglum)</note></witness>
           <witness xml:id="wit-lc"><abbr>Lc</abbr> <note type="manuscript">Lincoln Cathedral, Registrum antiquissimum (A I 5)</note></witness>
+          <witness xml:id="wit-ry" type="source" n="RyWlEp"><abbr>Ry</abbr> <note type="manuscript">Thomas Rymer, Foedera (new edition, 1816), I 3: the printed text of William I’s writ</note></witness>
+          <witness xml:id="wit-insp" type="source"><abbr>Insp</abbr> <note type="manuscript">London, The National Archives (formerly the Public Record Office), Inspeximus roll of 1378 (Rot. Inspeximus chartarum), m. 13</note></witness>
+          <witness xml:id="wit-gra" type="source"><abbr>Gra</abbr> <note type="manuscript">Gravamina cleri (the clergy’s grievances presented in 1309)</note></witness>
         </listWit>
       </sourceDesc>
     </fileDesc>

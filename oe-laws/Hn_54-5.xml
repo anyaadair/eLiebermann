@@ -23,7 +23,17 @@
           <bibl xml:id="claude-crib" type="translation">A semi-literal English rendering of the Latin text, created for this database in 2026 with Claude, a large language model made by Anthropic. It is a crib to help the reader with the Latin, and should not be treated as a separate translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
-          <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
+          <witness xml:id="wit-lat" type="edited"><abbr>Hn</abbr> <note type="manuscript">Leges Henrici primi: Liebermann’s edited Latin text, from the manuscripts he names in Gesetze I, p. 547, note a, listed below</note></witness>
+          <witness xml:id="wit-sc" type="source"><abbr>Sc</abbr> <note type="manuscript">London, The National Archives (formerly the Public Record Office), E 164/2 (the Red Book of the Exchequer)</note></witness>
+          <witness xml:id="wit-hg" type="source"><abbr>Hg</abbr> <note type="manuscript">London, British Library, Hargrave MS 313</note></witness>
+          <witness xml:id="wit-lond" type="source"><abbr>Lond</abbr> <note type="manuscript">The original of the London collection, Leges Anglorum Londoniis collectae (c. 1210), which survives in copies</note></witness>
+          <witness xml:id="wit-k" type="source"><abbr>K</abbr> <note type="manuscript">London, British Library, Cotton MS Claudius A.iii (K1); but for the Quadripartitus and the London texts Liebermann’s K means Cotton MS Claudius D.ii (K2)</note></witness>
+          <witness xml:id="wit-co" type="source"><abbr>Co</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 70</note></witness>
+          <witness xml:id="wit-or" type="source"><abbr>Or</abbr> <note type="manuscript">Oxford, Oriel College, MS 46</note></witness>
+          <witness xml:id="wit-sl" type="source"><abbr>Sl</abbr> <note type="manuscript">John Selden’s manuscript, now lost (known from Twysden’s variants)</note></witness>
+          <witness xml:id="wit-tw" type="source"><abbr>Tw</abbr> <note type="manuscript">Roger Twysden, in Wheloc’s edition of Lambarde’s Archaionomia (Cambridge, 1644)</note></witness>
+          <witness xml:id="wit-gi" type="source"><abbr>Gi</abbr> <note type="manuscript">London, Guildhall (Corporation of London), a lost manuscript (there from at least 1639 to 1721), known only from the variants cited by earlier editors as “Lond”</note></witness>
+          <witness xml:id="wit-rs" type="source"><abbr>Rs</abbr> <note type="manuscript">Manchester, John Rylands Library, MS Latin 155</note></witness>
         </listWit>
       </sourceDesc>
     </fileDesc>

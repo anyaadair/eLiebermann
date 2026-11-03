@@ -28,8 +28,22 @@
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, created for this database in 2026 with Claude, a large language model made by Anthropic. It is a crib to help the reader with Liebermann’s German, and should not be treated as a separate translation</bibl>
         </listBibl>
         <listWit>
-          <witness xml:id="wit-lat"><abbr>Lat</abbr> <note type="manuscript">Latin text as edited by Liebermann from the London collections (Lond, Cc, Horn, Cus, Cust …)</note></witness>
+          <witness xml:id="wit-lat" type="edited"><abbr>Hn Lond</abbr> <note type="manuscript">Henry I’s charter for London: Liebermann’s edited Latin text, from the manuscripts he names in Gesetze I, p. 524, note a, listed below</note></witness>
           <witness xml:id="wit-rs"><abbr>Rs</abbr> <note type="manuscript">Manchester, John Rylands Library, MS Latin 155</note></witness>
+          <witness xml:id="wit-lond" type="source"><abbr>Lond</abbr> <note type="manuscript">The original of the London collection, Leges Anglorum Londoniis collectae (c. 1210), which survives in copies</note></witness>
+          <witness xml:id="wit-k" type="source"><abbr>K</abbr> <note type="manuscript">London, British Library, Cotton MS Claudius A.iii (K1); but for the Quadripartitus and the London texts Liebermann’s K means Cotton MS Claudius D.ii (K2)</note></witness>
+          <witness xml:id="wit-co" type="source"><abbr>Co</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 70</note></witness>
+          <witness xml:id="wit-or" type="source"><abbr>Or</abbr> <note type="manuscript">Oxford, Oriel College, MS 46</note></witness>
+          <witness xml:id="wit-gi" type="source"><abbr>Gi</abbr> <note type="manuscript">London, Guildhall (Corporation of London), a lost manuscript (there from at least 1639 to 1721), known only from the variants cited by earlier editors as “Lond”</note></witness>
+          <witness xml:id="wit-tw" type="source"><abbr>Tw</abbr> <note type="manuscript">Roger Twysden, in Wheloc’s edition of Lambarde’s Archaionomia (Cambridge, 1644)</note></witness>
+          <witness xml:id="wit-sl" type="source"><abbr>Sl</abbr> <note type="manuscript">John Selden’s manuscript, now lost (known from Twysden’s variants)</note></witness>
+          <witness xml:id="wit-cc" type="source"><abbr>Cc</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 476</note></witness>
+          <witness xml:id="wit-horn" type="source"><abbr>Horn</abbr> <note type="manuscript">London, Guildhall (Corporation of London), Liber Horn</note></witness>
+          <witness xml:id="wit-cus" type="source"><abbr>Cus</abbr> <note type="manuscript">London, Guildhall (Corporation of London), Liber Custumarum, f. 14</note></witness>
+          <witness xml:id="wit-cust" type="source"><abbr>Cust</abbr> <note type="manuscript">London, Guildhall (Corporation of London), Liber Custumarum</note></witness>
+          <witness xml:id="wit-el" type="source" n="ElLond"><abbr>El</abbr> <note type="manuscript">London, Guildhall (Corporation of London), Liber Albus (c. 1420): its extract of Hn Lond</note></witness>
+          <witness xml:id="wit-eiv" type="source"><abbr>E IV</abbr> <note type="manuscript">London, The National Archives (formerly the Public Record Office), Patent Roll 2 Edward IV, pt. 5, m. 1</note></witness>
+          <witness xml:id="wit-po" type="source"><abbr>Po</abbr> <note type="manuscript">The later royal charters for London (1155, 1199), which repeat the words of Henry I’s charter</note></witness>
         </listWit>
       </sourceDesc>
     </fileDesc>

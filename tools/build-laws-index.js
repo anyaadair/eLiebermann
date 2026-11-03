@@ -245,11 +245,18 @@ let codeSources = {};
         for (const m of xml.matchAll(/<witness xml:id="([^"]+)"[^>]*>([\s\S]*?)<\/witness>/g)) {
             const abbr = decode((m[2].match(/<abbr>([\s\S]*?)<\/abbr>/) || [])[1] || m[2]);
             const name = decode((m[2].match(/<note(?! type="sigla")[^>]*>([\s\S]*?)<\/note>/) || [])[1] || '');
-            const sigla = decode((m[2].match(/<note type="sigla">([\s\S]*?)<\/note>/) || [])[1] || '').split(/\s+/).filter(Boolean).map(x => [x, siglumHref(x) || null]);
+            const st = decode((m[2].match(/<note type="sigla">([\s\S]*?)<\/note>/) || [])[1] || '');
+            const sigla = (st.includes(';') ? st.split(/;\s*/) : st.split(/\s+/)).filter(Boolean).map(x => { const [t, anc] = x.split('='); return [t, anc ? 'msAbb.html#' + encodeURIComponent(anc) : (siglumHref(t) || null)]; });
+            // the witness's own tag: n = its entry in the Manuscripts list; type="source"/"edited" = a source of the text shown
+            const wtag = (xml.slice(m.index, m.index + 200).match(/^<witness[^>]*>/) || [''])[0];
+            const anchor = (wtag.match(/ n="([^"]+)"/) || [])[1] || '';
+            const isSource = / type="(?:source|edited)"/.test(wtag);
             const base = abbr.replace(/\s*\(.*$/, '').trim();
-            const role = withText.has(m[1]) ? 'text'
+            const role = withText.has(m[1]) || isSource ? 'text'
                 : base && new RegExp('(^|[^\\p{L}])' + base.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '(?![\\p{L}])', 'u').test(notesText) ? 'notes' : '';
-            if (!k.mss.has(abbr)) k.mss.set(abbr, { abbr, name, parts: siglumParts(abbr), role, sigla });
+            // Liebermann's edited text itself (Hn, Quadr …) is not one of the code's manuscripts: its sources are
+            if (/ type="edited"/.test(wtag)) continue;
+            if (!k.mss.has(abbr)) k.mss.set(abbr, { abbr, name, parts: anchor ? [[abbr, 'msAbb.html#' + encodeURIComponent(anchor)]] : siglumParts(abbr), role, sigla });
             else {
                 const x = k.mss.get(abbr);
                 if (!x.name && name) x.name = name;

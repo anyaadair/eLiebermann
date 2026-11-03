@@ -23,7 +23,10 @@
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, created for this database in 2026 with Claude, a large language model made by Anthropic. It is a crib to help the reader with Liebermann’s German, and should not be treated as a separate translation</bibl>
         </listBibl>
         <listWit>
-          <witness xml:id="wit-lat"><abbr>Lat</abbr> <note type="manuscript">Latin text as edited by Liebermann from several manuscripts (see his notes) (Al, Ma, Bc)</note></witness>
+          <witness xml:id="wit-lat" type="edited"><abbr>Iud Dei X</abbr> <note type="manuscript">Iudicium Dei X: Liebermann’s edited Latin text, from the manuscripts he names in Gesetze I, p. 417, note a, listed below</note></witness>
+          <witness xml:id="wit-al" type="source"><abbr>Al</abbr> <note type="manuscript">Alençon, Bibliothèque municipale, MS 14</note></witness>
+          <witness xml:id="wit-ma" type="source"><abbr>Ma</abbr> <note type="manuscript">Douai, Bibliothèque municipale, MS 67 (formerly 94/6), from Marchiennes</note></witness>
+          <witness xml:id="wit-bc" type="source"><abbr>Bc</abbr> <note type="manuscript">Pontifical of the abbey of Le Bec (known from Martène’s edition)</note></witness>
         </listWit>
       </sourceDesc>
     </fileDesc>

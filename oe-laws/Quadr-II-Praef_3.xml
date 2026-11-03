@@ -23,7 +23,12 @@
           <bibl xml:id="claude" type="translation">English renderings of Liebermann’s German notes, created for this database in 2026 with Claude, a large language model made by Anthropic. They are cribs to help the reader with Liebermann’s German, and should not be treated as separate translations</bibl>
         </listBibl>
         <listWit>
-          <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
+          <witness xml:id="wit-lat" type="edited"><abbr>Quadr</abbr> <note type="manuscript">Quadripartitus, Preface to Book II: Liebermann’s edited Latin text, from the manuscripts he names in Gesetze I, p. 542, note 4, listed below</note></witness>
+          <witness xml:id="wit-t" type="source"><abbr>T</abbr> <note type="manuscript">London, British Library, Cotton MS Titus A.xxvii</note></witness>
+          <witness xml:id="wit-ipml" type="source"><abbr>Ip Ml</abbr> <note type="manuscript">The interpolator of William of Malmesbury’s Gesta regum</note></witness>
+          <witness xml:id="wit-cs" type="source"><abbr>Cs</abbr> <note type="manuscript">London, British Library, Cotton MS Claudius C.ix</note></witness>
+          <witness xml:id="wit-ht" type="source"><abbr>Ht</abbr> <note type="manuscript">Oxford, Bodleian Library, MS Hatton 54</note></witness>
+          <witness xml:id="wit-he" type="source"><abbr>He</abbr> <note type="manuscript">London, British Library, Harley MS 261</note></witness>
         </listWit>
       </sourceDesc>
     </fileDesc>

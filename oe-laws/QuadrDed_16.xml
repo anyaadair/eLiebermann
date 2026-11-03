@@ -25,7 +25,10 @@
           <bibl xml:id="claude-crib" type="translation">A semi-literal English rendering of the Latin text, created for this database in 2026 with Claude, a large language model made by Anthropic. It is a crib to help the reader with the Latin, and should not be treated as a separate translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
-          <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
+          <witness xml:id="wit-lat" type="edited"><abbr>Quadr Ded</abbr> <note type="manuscript">Quadripartitus, Dedication: Liebermann’s edited Latin text, from the manuscripts he names in Gesetze I, p. 529, note c, listed below</note></witness>
+          <witness xml:id="wit-dm" type="source"><abbr>Dm</abbr> <note type="manuscript">London, British Library, Cotton MS Domitian viii</note></witness>
+          <witness xml:id="wit-m" type="source"><abbr>M</abbr> <note type="manuscript">Keswick Hall, Norwich, the Gurney family (in 1903); formerly Fleetwood’s, Spelman’s and Coxe Macro’s</note></witness>
+          <witness xml:id="wit-jl" type="source"><abbr>Jl</abbr> <note type="manuscript">London, British Library, Cotton MS Julius C.ii</note></witness>
         </listWit>
       </sourceDesc>
     </fileDesc>

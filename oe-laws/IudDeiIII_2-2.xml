@@ -25,7 +25,15 @@
           <bibl xml:id="claude-crib" type="translation">A semi-literal English rendering of the Latin text, created for this database in 2026 with Claude, a large language model made by Anthropic. It is a crib to help the reader with the Latin, and should not be treated as a separate translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
         </listBibl>
         <listWit>
-          <witness xml:id="wit-lat"><abbr>Lat</abbr> <note type="manuscript">Latin text as edited by Liebermann from several manuscripts (see his notes); the manuscripts as for Iudicium Dei I (his note b on p. 401)</note></witness>
+          <witness xml:id="wit-lat" type="edited"><abbr>Iud Dei III</abbr> <note type="manuscript">Iudicium Dei III: Liebermann’s edited Latin text, from the manuscripts he names in Gesetze I, p. 401, note b, listed below</note></witness>
+          <witness xml:id="wit-ps" type="source"><abbr>Ps</abbr> <note type="manuscript">Paris, Bibliothèque nationale de France, MS 943</note></witness>
+          <witness xml:id="wit-pt" type="source"><abbr>Pt</abbr> <note type="manuscript">Pierre Pithou, glossary to the Capitularies (1588), printed</note></witness>
+          <witness xml:id="wit-rj" type="source"><abbr>Rj</abbr> <note type="manuscript">Rouen, Bibliothèque municipale, MS 368 (A 27)</note></witness>
+          <witness xml:id="wit-ch" type="source"><abbr>Ch</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 44</note></witness>
+          <witness xml:id="wit-vt" type="source"><abbr>Vt</abbr> <note type="manuscript">London, British Library, Cotton MS Vitellius A.vii (Vt, the first pontifical)</note></witness>
+          <witness xml:id="wit-ci" type="source"><abbr>Ci</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 146</note></witness>
+          <witness xml:id="wit-ca" type="source"><abbr>Ca</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 422, formerly The Rede boke of Derbye</note></witness>
+          <witness xml:id="wit-h" type="source"><abbr>H</abbr> <note type="manuscript">Strood, Medway Archive and Local Studies Centre, MS DRc/R1 (Textus Roffensis; formerly Rochester, Cathedral Library, MS A.3.5)</note></witness>
         </listWit>
       </sourceDesc>
     </fileDesc>

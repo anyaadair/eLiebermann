@@ -21,7 +21,11 @@
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">545</biblScope></bibl>
         </listBibl>
         <listWit>
-          <witness xml:id="wit-lat"><abbr>Lat</abbr></witness>
+          <witness xml:id="wit-lat" type="edited"><abbr>Quadr</abbr> <note type="manuscript">Quadripartitus, Book II: Liebermann’s edited Latin text, from the manuscripts his notes cite, listed below</note></witness>
+          <witness xml:id="wit-t" type="source"><abbr>T</abbr> <note type="manuscript">London, British Library, Cotton MS Titus A.xxvii</note></witness>
+          <witness xml:id="wit-m" type="source"><abbr>M</abbr> <note type="manuscript">Keswick Hall, Norwich, the Gurney family (in 1903); formerly Fleetwood’s, Spelman’s and Coxe Macro’s</note></witness>
+          <witness xml:id="wit-hk" type="source"><abbr>Hk</abbr> <note type="manuscript">Holkham Hall (Earl of Leicester), MS 228</note></witness>
+          <witness xml:id="wit-br" type="source"><abbr>Br</abbr> <note type="manuscript">The chronicle ascribed to John Brompton: Cambridge, Corpus Christi College, MS 96 (Brco) and London, British Library, Cotton MS Tiberius C.xiii (Brti); printed by Twysden (1652)</note></witness>
         </listWit>
       </sourceDesc>
     </fileDesc>

@@ -468,8 +468,13 @@ scripts:
             const name = notes.find(n => n.getAttribute('type') !== 'sigla');
             // a Latin version's own manuscripts, as Liebermann lists them (<note type="sigla">H Rl T …</note>)
             const sigla = notes.find(n => n.getAttribute('type') === 'sigla');
+            // sigla: "H; Rl; Vt 2; Gl=Glas" (a siglum, or siglum=its entry in the Manuscripts list); n: the
+            // witness's own entry there where its siglum means another manuscript elsewhere (Gl in CHn cor);
+            // type="edited": Liebermann's edited text of a Latin work (labelled like Q, without "MS")
+            const st = sigla ? plainText(sigla) : '';
             out[id || ''] = { abbr: abbr ? plainText(abbr) : plainText(w), name: name ? plainText(name) : '',
-                              sigla: sigla ? plainText(sigla).split(/\s+/).filter(Boolean) : [],
+                              sigla: (st.includes(';') ? st.split(/;\s*/) : st.split(/\s+/)).filter(Boolean),
+                              anchor: w.getAttribute('n') || '', edited: w.getAttribute('type') === 'edited',
                               selected: w.getAttribute('rend') === 'bold' };
         });
         return out;
@@ -483,7 +488,7 @@ scripts:
         const abbr = (w ? w.abbr : id.replace(/^wit-/, '').toUpperCase()).replace(/\s*\([^)]*\)\s*$/, '');
         // The Quadripartitus, the Instituta Cnuti and the Consiliatio Cnuti are Latin translations known from
         // several manuscripts, not one manuscript: just "Q", "Inst. Cn.", "Cons. Cn.".
-        const isQuad = LATIN_VERSION.test(abbr);
+        const isQuad = LATIN_VERSION.test(abbr) || !!(w && w.edited);
         // where Liebermann prints two forms of the Quadripartitus side by side (EGu 10–11: Lond, the earlier
         // form, and R, the later), the form is kept: "Q (Lond)", "Q (R)"
         const form = isQuad && w ? (/\((Lond|R)\)\s*$/.exec(w.abbr) || [])[0] : '';
@@ -1160,12 +1165,18 @@ scripts:
                 Object.values(witnesses(doc)).forEach(w => {
                     const li = el('li');
                     const sig = el('span', 'ms-siglum');
-                    sig.appendChild(siglumLinks(w.abbr));
+                    if (w.anchor) { const a = el('a', null, w.abbr); a.href = root + 'msAbb.html#' + encodeURIComponent(w.anchor); a.title = 'See ' + w.abbr + ' in the list of manuscripts'; sig.appendChild(a); }
+                    else sig.appendChild(siglumLinks(w.abbr));
                     li.appendChild(sig);
                     if (w.name) li.appendChild(document.createTextNode(' ' + w.name));
                     if (w.sigla.length) {
                         const sub = el('span', 'ms-sub muted', '. Liebermann’s manuscripts of it: ');
-                        w.sigla.forEach((x, i) => { if (i) sub.appendChild(document.createTextNode(', ')); sub.appendChild(siglumLinks(x)); });
+                        w.sigla.forEach((x, i) => {
+                            if (i) sub.appendChild(document.createTextNode(', '));
+                            const [t, anc] = x.split('=');
+                            if (!anc) { sub.appendChild(siglumLinks(t)); return; }
+                            const a = el('a', null, t); a.href = root + 'msAbb.html#' + encodeURIComponent(anc); a.title = 'See ' + t + ' in the list of manuscripts'; sub.appendChild(a);
+                        });
                         li.appendChild(sub);
                     }
                     ul.appendChild(li);
