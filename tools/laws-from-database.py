@@ -1101,19 +1101,19 @@ def assign_ids(rows, catalogue):
 # The Laws page lists the law codes under the king who issued them (column
 # E). The key is the first name in E; codes with no king go under OTHER.
 GROUPS = {
-    'Æthelberht': 'Æthelberht of Kent', 'Hlothhere': 'Hlothhere and Eadric of Kent', 'Wihtred': 'Wihtred of Kent',
+    'Æthelberht': 'Early Kings of Kent', 'Hlothhere': 'Early Kings of Kent', 'Wihtred': 'Early Kings of Kent',
     'Alfred': 'Ine of Wessex and Alfred the Great', 'Ine': 'Ine of Wessex and Alfred the Great', 'Edward': 'Edward the Elder', 'Æthelstan': 'Æthelstan',
     'Edmund': 'Edmund I', 'Edgar': 'Edgar', 'Æthelred': 'Æthelred II', 'Cnut': 'Cnut',
-    'William': 'William I', 'Henry': 'Henry I', 'Earconberht': 'Earconberht of Kent',
+    'William': 'William I', 'Henry': 'Henry I', 'Earconberht': 'Early Kings of Kent',
 }
-OTHER = 'Other laws and legal texts'
+OTHER = 'Anonymous laws, legal tracts and fragments'
 # Codes listed under another group than their king's. (The rubrics to Ine's laws,
 # written for Alfred's Domboc, stay under Alfred, where Liebermann puts them.)
-GROUP_OVERRIDE = {'App AGu': 'Ine of Wessex and Alfred the Great', 'Duel': 'Ordeal rituals (Iudicia Dei)'}
+GROUP_OVERRIDE = {'App AGu': 'Ine of Wessex and Alfred the Great', 'Duel': 'Ordeal rituals and excommunication formulae'}
 # The ordeal liturgies and excommunication formulae Liebermann prints (Gesetze I pp. 401–441; added October 2026)
-GROUP_OVERRIDE.update({'Iud Dei ' + n: 'Ordeal rituals (Iudicia Dei)' for n in 'I II III IV V VI VII VIII IX X XI XII XIII XIV XV XVI'.split()})
+GROUP_OVERRIDE.update({'Iud Dei ' + n: 'Ordeal rituals and excommunication formulae' for n in 'I II III IV V VI VII VIII IX X XI XII XIII XIV XV XVI'.split()})
 OWN_MS_NAMES = {'Erc', 'App AGu', 'Duel', 'Wl lad', 'Wl ep', 'Wl Lond', 'Wl art', 'Wl art Frz', 'Wl art retr', 'Leis Wl', 'Wl Edmr', 'CHn cor', 'Hn mon', 'Hn com', 'Hn Lond'} | {'Iud Dei ' + n for n in 'I II III IV V VI VII IX X XI XII XIII XIV XV XVI'.split()} | {'Excom ' + n for n in 'I II III IV V VI VII VIII IX X XI XII XIII'.split()}
-GROUP_OVERRIDE.update({'Excom ' + n: 'Excommunication formulae' for n in 'I II III IV V VI VII VIII IX X XI XII XIII'.split()})
+GROUP_OVERRIDE.update({'Excom ' + n: 'Ordeal rituals and excommunication formulae' for n in 'I II III IV V VI VII VIII IX X XI XII XIII'.split()})
 # Anglo-Latin law books (Gesetze I pp. 529–675; added 19 October 2026): Latin only, with æ and ę, so their language
 # is not guessed from those letters
 PHASE2B = ['Quadr Ded', 'Quadr Arg', 'Quadr I', 'Quadr Rb', 'Quadr II Praef', 'Quadr II', 'Hn', 'In Cn', 'Cons Cn', 'Ps Cn for', 'Lib Lond']

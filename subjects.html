@@ -20,7 +20,7 @@ scripts:
     const clauseUrl = id => root + 'law.html?id=' + encodeURIComponent(id);
     const codeUrl = code => root + 'lawcode.html?code=' + encodeURIComponent(code);
     const FIELDS = ['offences', 'people', 'places'];
-    const OTHER = 'Other laws and legal texts';
+    const OTHER = 'Anonymous laws, legal tracts and fragments';
     let SORT = 'count';
     try { SORT = localStorage.getItem('subjects-sort') || 'count'; } catch (e) { /* no storage */ }
 
@@ -142,7 +142,7 @@ scripts:
         const inCodes = Object.keys(perCode).length;
         // Short labels for the kings' groups; the bars' own labels name each law code.
         const SHORT = {
-            'Æthelberht of Kent': 'Kent', 'Hlothhere and Eadric of Kent': 'Kent', 'Wihtred of Kent': 'Kent',
+            'Early Kings of Kent': 'Kent',
             'Ine of Wessex and Alfred the Great': 'Alfred & Ine', 'Alfred the Great': 'Alfred & Ine', 'Ine of Wessex': 'Alfred & Ine',
             'Edward the Elder': 'Edward', 'Edmund I': 'Edmund', 'Æthelred II': 'Æthelred II'
         };
