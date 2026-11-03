@@ -106,10 +106,10 @@ scripts:
     const LANGS = [['ang', 'Old English'], ['la', 'Latin'], ['xno', 'French', 'Anglo-Norman French']];
     // Groups of law codes, by the groups of the list of law codes (oe-laws/codes.json)
     const PRESETS = [
-        ['kent', 'Kentish kings', ['Æthelberht of Kent', 'Hlothhere and Eadric of Kent', 'Wihtred of Kent', 'Earconberht of Kent']],
+        ['kent', 'Kentish kings', ['Early Kings of Kent']],
         ['wessex', 'Ine and Alfred', ['Ine of Wessex and Alfred the Great']],
         ['kings', '10th and 11th c. kings', ['Edward the Elder', 'Æthelstan', 'Edmund I', 'Edgar', 'Æthelred II', 'Cnut']],
-        ['other', 'Other pre-Conquest codes', ['Other laws and legal texts']],
+        ['other', 'Anonymous laws and tracts', ['Anonymous laws, legal tracts and fragments']],
         // every code Wulfstan (d. 1023) composed, edited or reworked, or that has been attributed to him
         // (disputed), as Rabin sees it (data/wulfstan.json, scripts/wulfstan.js)
         ['wulfstan', 'Associated with Wulfstan', null]
@@ -378,6 +378,8 @@ scripts:
     // Ine's laws stay with Alfred's, as in the manuscripts and in Liebermann (part of the Domboc),
     // in Liebermann's order: Af Rb, Ine Rb, Af, Ine, AGu (then App AGu)
     const GROUP_REIGN = { 'Ine of Wessex and Alfred the Great': 'Ine, r. 688–726; Alfred, r. 871–899' };
+    // Groups of several kings: each code's king and reign beside its name, not after the heading.
+    const REIGN_PER_CODE = new Set(['Early Kings of Kent']);
     function groups() {
         const out = [];
         codes.forEach(c => {
@@ -386,7 +388,7 @@ scripts:
             g.items.push(c);
             // The group's dates: from a code issued by the king alone (not a treaty),
             // and not from one listed under another king (Ine Rb, issued by Alfred).
-            const otherKing = c.king && c.group !== 'Other laws and legal texts' && !c.group.includes(c.king.split(' ')[0]);
+            const otherKing = c.king && c.group !== 'Anonymous laws, legal tracts and fragments' && !c.group.includes(c.king.split(' ')[0]);
             if (c.reign && !otherKing && (!g.reign || (g.joint && !/ and /.test(c.king)))) {
                 g.reign = c.reign.replace(/^\[|\]$/g, '');
                 g.joint = / and /.test(c.king) && !/^Hlothhere/.test(c.king);
@@ -424,10 +426,10 @@ scripts:
         tally.innerHTML = tools.innerHTML = '';
         results.innerHTML = gs.map(g => `
             <section class="code-group">
-                <h2>${esc(g.name)}${g.reign && g.items[0].king ? ` <span class="code-group-reign">${esc(g.reign)}</span>` : ''}</h2>
+                <h2>${esc(g.name)}${g.reign && g.items[0].king && !REIGN_PER_CODE.has(g.name) ? ` <span class="code-group-reign">${esc(g.reign)}</span>` : ''}</h2>
                 <ul class="code-list">${g.items.map(c => `
                     <li>
-                        <span class="code-title"><a href="${codeUrl(c.code)}"><span class="code-abbr">${esc(c.code)}</span> <span class="code-name">${esc(c.name)}</span></a>${Wulfstan.codeBadges(c.code) ? ' ' + Wulfstan.codeBadges(c.code) : ''}</span>
+                        <span class="code-title"><a href="${codeUrl(c.code)}"><span class="code-abbr">${esc(c.code)}</span> <span class="code-name">${esc(c.name)}</span></a>${REIGN_PER_CODE.has(g.name) && c.reign ? ` <span class="code-group-reign">${esc(c.reign)}</span>` : ''}${Wulfstan.codeBadges(c.code) ? ' ' + Wulfstan.codeBadges(c.code) : ''}</span>
                         <span class="code-meta">${esc(plural(c.clauses, 'clause', 'clauses'))}</span>
                     </li>`).join('')}
                 </ul>
