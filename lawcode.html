@@ -355,13 +355,19 @@ scripts:
     $('reset').addEventListener('click', reset);
 
     // Go to a clause: the list moves to it as it is typed; Enter opens it.
-    const findClause = t => { const f = fold(t); return f ? mine.find(c => fold(c.clause) === f) || mine.find(c => fold(c.clause).startsWith(f)) : null; };
+    // The list jumps (no smooth scrolling: a long glide was cut short by the next key, and the
+    // list stopped among the clauses in between), a moment after the last key.
+    const findClause = t => LawPanel.findClause(mine, t);
+    let goTimer = null;
     go.addEventListener('input', () => {
         markPanel();
-        const c = findClause(go.value);
-        document.querySelectorAll('.code-clauses li.is-target').forEach(x => x.classList.remove('is-target'));
-        const li = c && document.getElementById(c.id);
-        if (li) { li.classList.add('is-target'); li.scrollIntoView({ block: 'center', behavior: 'smooth' }); }
+        clearTimeout(goTimer);
+        goTimer = setTimeout(() => {
+            const c = findClause(go.value);
+            document.querySelectorAll('.code-clauses li.is-target').forEach(x => x.classList.remove('is-target'));
+            const li = c && document.getElementById(c.id);
+            if (li) { li.classList.add('is-target'); li.scrollIntoView({ block: 'center' }); }
+        }, 150);
     });
     go.addEventListener('keydown', e => { if (e.key === 'Enter') { const c = findClause(go.value); if (c) location.href = clauseUrl(c.id); } });
 

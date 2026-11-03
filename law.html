@@ -1286,8 +1286,7 @@ scripts:
         const fold = x => ELieb.slugify(x).toLowerCase().replace(/-/g, '');
         $('go').addEventListener('keydown', e => {
             if (e.key !== 'Enter') return;
-            const f = fold($('go').value);
-            const c = f && (sameCode.find(x => fold(x.clause) === f) || sameCode.find(x => fold(x.clause).startsWith(f)));
+            const c = LawPanel.findClause(sameCode, $('go').value);
             if (c) location.href = '?id=' + encodeURIComponent(c.id);
         });
         // find on this page (the clause, or the whole code when it is shown)
