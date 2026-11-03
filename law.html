@@ -464,8 +464,12 @@ scripts:
         tei(doc, 'witness').forEach(w => {
             const id = w.getAttribute('xml:id') || w.getAttributeNS('http://www.w3.org/XML/1998/namespace', 'id');
             const abbr = tei(w, 'abbr')[0];
-            const name = tei(w, 'note')[0];
+            const notes = tei(w, 'note');
+            const name = notes.find(n => n.getAttribute('type') !== 'sigla');
+            // a Latin version's own manuscripts, as Liebermann lists them (<note type="sigla">H Rl T …</note>)
+            const sigla = notes.find(n => n.getAttribute('type') === 'sigla');
             out[id || ''] = { abbr: abbr ? plainText(abbr) : plainText(w), name: name ? plainText(name) : '',
+                              sigla: sigla ? plainText(sigla).split(/\s+/).filter(Boolean) : [],
                               selected: w.getAttribute('rend') === 'bold' };
         });
         return out;
@@ -497,7 +501,7 @@ scripts:
     let incnElsewhere = {};   // where the Instituta Cnuti's Latin for a clause is printed, if not on its page (data/incn-elsewhere.json)
     let relTerms = {};        // a scholar's wording of a cross-reference -> one of five terms (data/comparison-terms.json)
     const sigKey = s => s.replace(/[\s.]/g, '');
-    const SIGLUM_ALIASES = { 'InstCn': 'In(Cn)' };
+    const SIGLUM_ALIASES = { 'InstCn': 'InCn' };
     const LATIN_VERSION = /^(Q|Lat|In|Inst\.? ?Cn\.?|Cons\.?(?: ?Cn\.?)?)(?![\w])/;
     function loadSigla() {
         const get = f => fetch(root + 'data/' + f).then(r => r.json()).catch(() => []);
@@ -1159,6 +1163,11 @@ scripts:
                     sig.appendChild(siglumLinks(w.abbr));
                     li.appendChild(sig);
                     if (w.name) li.appendChild(document.createTextNode(' ' + w.name));
+                    if (w.sigla.length) {
+                        const sub = el('span', 'ms-sub muted', '. Liebermann’s manuscripts of it: ');
+                        w.sigla.forEach((x, i) => { if (i) sub.appendChild(document.createTextNode(', ')); sub.appendChild(siglumLinks(x)); });
+                        li.appendChild(sub);
+                    }
                     ul.appendChild(li);
                 });
                 s.appendChild(ul);
