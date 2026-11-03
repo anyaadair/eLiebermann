@@ -23,7 +23,7 @@
         const fold = document.createElement('button');
         fold.type = 'button';
         fold.className = 'sidebar-fold panel-fold';
-        fold.textContent = '‹';
+        fold.textContent = '«';
         fold.title = 'Hide this panel';
         fold.setAttribute('aria-label', 'Hide this panel');
         fold.setAttribute('aria-controls', panel.id);
