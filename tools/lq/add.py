@@ -2,8 +2,8 @@
 clause whose Liebermann notes or German translation cite it; and his vol. I footnote defining it (I As Prol.)."""
 import re, glob
 pat = re.compile(r'(?<![^\W\d_])lq(?![^\W\d_])')
-WIT = ('<witness xml:id="wit-lq"><abbr>lq</abbr> <note type="manuscript">Lost manuscript: the common source of Ld and the '
-       'Quadripartitus, reconstructed by Liebermann from what the two share</note></witness>')
+WIT = ('<witness xml:id="wit-lq"><abbr>lq</abbr> <note type="manuscript">Posited by Liebermann: his siglum for the readings Ld and the '
+       'Quadripartitus share; in his German translation, “lq” after words in round brackets marks words found in both</note></witness>')
 n = 0
 for f in sorted(glob.glob('oe-laws/*.xml')):
     x = open(f, encoding='utf-8').read()
