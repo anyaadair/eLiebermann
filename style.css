@@ -829,8 +829,8 @@ ul.citations li { break-inside: avoid; }
 /* Collapsed: the first line and a half in grey, fading out, with a button to open the rest. */
 .code-introduction.is-collapsed .code-introduction__text { max-height: 2.4em; overflow: hidden; color: var(--muted); cursor: pointer;
     -webkit-mask-image: linear-gradient(to bottom, #000 45%, transparent); mask-image: linear-gradient(to bottom, #000 45%, transparent); }
-.code-introduction__toggle { margin: 0.45rem 0 0; font-family: var(--sans); font-size: 0.85rem; padding: 0.2rem 0.8rem; border: 1px solid var(--rule); border-radius: 999px; background: var(--paper); color: var(--link); cursor: pointer; }
-.code-introduction__toggle:hover { border-color: var(--link); }
+.code-introduction__toggle { margin: 0.2rem 0 0; padding: 0; border: 0; background: none; font-family: var(--sans); font-size: 0.82rem; color: var(--link); cursor: pointer; }
+.code-introduction__toggle:hover, .code-introduction__toggle:focus-visible { text-decoration: underline; }
 .code-introduction.is-collapsed .ci-less, .code-introduction:not(.is-collapsed) .ci-more { display: none; }
 .code-intro { margin: 0 0 1rem; }
 .code-intro > summary { display: inline-block; cursor: pointer; list-style: none; font-family: var(--sans); font-size: 0.85rem; padding: 0.25rem 0.85rem; border: 1px solid var(--rule); border-radius: 999px; background: var(--surface); color: var(--link); }
