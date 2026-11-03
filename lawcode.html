@@ -173,8 +173,13 @@ scripts:
                 ? `<a href="${root}${esc(href)}" title="See ${esc(t)} in the list of ${href.startsWith('msAbb') ? 'manuscripts' : 'law codes'}">${esc(t)}</a>` : esc(t)).join(', ')}</span>${m.name ? ' ' + esc(m.name) : ''}</li>`).join('');
         const msList = cs.mss.length ? `<section class="clause-sources"><h2>Manuscripts</h2>${msText.length ? `<ul class="ms-list">${msItems(msText)}</ul>` : ''}`
             + (msNotes.length ? `<p class="clause-sources__sub muted">Cited in Liebermann’s notes:</p><ul class="ms-list">${msItems(msNotes)}</ul>` : '') + '</section>' : '';
-        const sourcesBox = msList || works.length ? `<details class="code-intro code-sources" id="code-sources"><summary>Manuscripts, editions and translations</summary>
-                <div class="code-intro__body">${msList}${srcList('Editions and translations', works)}${srcList('Studies', studies)}</div></details>` : '';
+        // The works the editor's introduction cites (data/clause-order.json codeIntroductionRefs: ids in data/works.json)
+        const citedIds = ((window.__clauseOrder || {}).codeIntroductionRefs || {})[code.code] || [];
+        const cited = citedIds.map(id => (window.__works || {})[id]).filter(Boolean);
+        const citedList = cited.length ? `<section class="clause-sources"><h2>Works cited in the editor’s introduction</h2><ul>${cited.map(w =>
+            `<li>${w.citation}</li>`).join('')}</ul></section>` : '';
+        const sourcesBox = msList || works.length || cited.length ? `<details class="code-intro code-sources" id="code-sources"><summary>Manuscripts, editions and translations</summary>
+                <div class="code-intro__body">${msList}${srcList('Editions and translations', works)}${srcList('Studies', studies)}${citedList}</div></details>` : '';
         // "About the numbering" and the like, behind a button (data/clause-order.json codeIntros; written for the site)
         const intro = ((window.__clauseOrder || {}).codeIntros || {})[code.code];
         // An editorial introduction to the text, shown open at the top (data/clause-order.json codeIntroductions)
@@ -189,9 +194,9 @@ scripts:
                     msLine}${
                     plainLine('Editions and translations', sources.map(scholar).join(', '))}${
                     plainLine('Clauses', String(mine.length))}</div>
-                ${sourcesBox}
             </header>
             ${introduction ? `<div class="code-introduction"><h2 class="code-introduction__head">Editor’s introduction</h2>${introduction}</div>` : ''}
+            ${sourcesBox}
             ${intro ? `<details class="code-intro"><summary>${esc(intro.title)}</summary><div class="code-intro__body">${intro.html}</div></details>` : ''}
             <div class="code-callout">
                 <p>Below is a single text of the code (the first in Liebermann’s edition) and one translation (an English crib of Liebermann’s German). Where either of these is unavailable, an alternative is shown and labelled.</p>
@@ -391,9 +396,12 @@ scripts:
     Promise.all([
         getJson(root + 'oe-laws/codes.json'),
         fetch(root + 'data/clause-order.json').then(r => r.json()).catch(() => ({})),
-        Wulfstan.load(root)
-    ]).then(([codeList, order]) => {
+        Wulfstan.load(root),
+        fetch(root + 'data/works.json').then(r => r.json()).catch(() => ({}))
+    ]).then(([codeList, order, , works]) => {
         window.__clauseOrder = order;
+        window.__works = {};
+        (Array.isArray(works) ? works : works.works || []).forEach(w => { window.__works[w.id] = w; });
         codes = codeList.filter(c => c.clauses > 0 && c.first);
         code = codes.find(c => c.code === wanted) || codes.find(c => fold(c.code) === fold(wanted));
         if (!code) throw new Error('missing');
