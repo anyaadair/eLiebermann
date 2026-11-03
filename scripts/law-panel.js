@@ -114,5 +114,18 @@
             || list.find(c => k(c).replace(/\./g, '') === t.replace(/\./g, ''));
     }
 
-    window.LawPanel = { pills, suggestBox, kwic, watch, fields, WHERE, loadTexts, loadDict, findClause };
+    // Bring an element to the middle of the window, but never so far down that the end of the
+    // page comes into view: the side panel is "sticky" only while its column reaches the bottom
+    // of the window, and would otherwise be pushed up, away from the reader's cursor. The reader
+    // can still scroll to the end of the page.
+    function scrollToMiddle(el, smooth) {
+        if (!el) return;
+        const r = el.getBoundingClientRect();
+        let y = window.scrollY + r.top + r.height / 2 - window.innerHeight / 2;
+        const layout = el.closest('.laws-layout');
+        if (layout) y = Math.min(y, window.scrollY + layout.getBoundingClientRect().bottom - window.innerHeight);
+        window.scrollTo({ top: Math.max(0, y), behavior: smooth ? 'smooth' : 'auto' });
+    }
+
+    window.LawPanel = { pills, suggestBox, kwic, watch, fields, WHERE, loadTexts, loadDict, findClause, scrollToMiddle };
 })();
