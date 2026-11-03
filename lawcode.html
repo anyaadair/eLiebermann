@@ -98,6 +98,18 @@ scripts:
     let codeSources = {};   // each code's manuscripts and works (data/laws/<prefix>.json, written by tools/build-laws-index.js)
     let prefix = '';        // the start of this code's clause ids (Hn_1 -> Hn), which names its data files
 
+    // The editor's introduction, collapsed to its first line and a half until its button (or the grey text) is
+    // clicked; left open if it is no longer than that.
+    function collapseIntroduction() {
+        const box = document.querySelector('.code-introduction');
+        if (!box) return;
+        const text = box.querySelector('.code-introduction__text'), btn = box.querySelector('.code-introduction__toggle');
+        if (text.scrollHeight <= text.clientHeight + 2) { box.classList.remove('is-collapsed'); btn.hidden = true; return; }
+        const set = open => { box.classList.toggle('is-collapsed', !open); btn.setAttribute('aria-expanded', String(open)); };
+        btn.addEventListener('click', () => set(box.classList.contains('is-collapsed')));
+        text.addEventListener('click', () => { if (box.classList.contains('is-collapsed')) set(true); });
+    }
+
     function render(clauses) {
         const i = codes.indexOf(code);
         mine = clauses.filter(c => c.code === code.code);
@@ -183,7 +195,8 @@ scripts:
                 <div class="code-intro__body">${msList}${srcList('Editions and translations', works)}${srcList('Studies', studies)}${citedList}</div></details>` : '';
         // "About the numbering" and the like, behind a button (data/clause-order.json codeIntros; written for the site)
         const intro = ((window.__clauseOrder || {}).codeIntros || {})[code.code];
-        // An editorial introduction to the text, shown open at the top (data/clause-order.json codeIntroductions)
+        // An editorial introduction to the text, at the top (data/clause-order.json codeIntroductions): its first
+        // line and a half in grey, the rest behind a button (collapseIntroduction)
         const introduction = ((window.__clauseOrder || {}).codeIntroductions || {})[code.code];
         target.innerHTML = `
             <p class="breadcrumb small"><a href="${root}laws.html">Laws</a> › ${esc(code.group)}</p>
@@ -196,7 +209,9 @@ scripts:
                     plainLine('Editions and translations', sources.map(scholar).join(', '))}${
                     plainLine('Clauses', String(mine.length))}</div>
             </header>
-            ${introduction ? `<div class="code-introduction"><h2 class="code-introduction__head">Editor’s introduction</h2>${introduction}</div>` : ''}
+            ${introduction ? `<div class="code-introduction is-collapsed"><h2 class="code-introduction__head">Editor’s introduction</h2>
+                <div class="code-introduction__text" id="code-introduction-text">${introduction}</div>
+                <button type="button" class="code-introduction__toggle" aria-expanded="false" aria-controls="code-introduction-text"><span class="ci-more">… Read the introduction <span aria-hidden="true">▾</span></span><span class="ci-less">Show less <span aria-hidden="true">▴</span></span></button></div>` : ''}
             ${sourcesBox}
             ${intro ? `<details class="code-intro"><summary>${esc(intro.title)}</summary><div class="code-intro__body">${intro.html}</div></details>` : ''}
             <div class="code-callout">
@@ -214,6 +229,7 @@ scripts:
                 ${i > 0 ? `<a href="${codeUrl(codes[i - 1].code)}">← ${esc(codes[i - 1].name)}</a>` : '<span></span>'}
                 ${i < codes.length - 1 ? `<a href="${codeUrl(codes[i + 1].code)}">${esc(codes[i + 1].name)} →</a>` : '<span></span>'}
             </nav>`;
+        collapseIntroduction();
         window.__tag = tag; window.__labels = [textLabel, enLabel];
         // the panel: this law code, and links
         $('panel-links').innerHTML = [
