@@ -17,8 +17,7 @@ def restore(e, old, new, note):
 h = next(e for e in E if e['sigla'] == ['Harley'])
 restore(h, 'f. 3b <b>Hl</b>; <b>Wi</b>, u. S. 3. 9. 12', 'f. 3b <b>Hl</b>; <b>Wl</b>, u. S. 3. 9. 12',
         'n. 1866: Liebermann prints Wl, a misprint for Wi (Wihtred): the pages, 3, 9 and 12, are those of Abt, Hl and Wi.')
-g = next(e for e in E if e['sigla'] == ['Haug'])
-restore(g, 'zu 1135 auf <b>CHn cor</b>', 'zu 1135 auf <b>CHu cor</b>', 'Liebermann prints CHu cor, with the n turned upside down: read CHn cor.')
+# (Haug: Liebermann's "CHu cor", with a turned n, is silently read CHn cor.)
 for e in E:
     e['doubts'] = re.sub(r'[^.]*transcribed CHn cor[^.]*\.( Editor to decide[^.]*\.)?', '', e.get('doubts', '')).strip()
 json.dump(E, open('tools/manuscripts/liebermann-xviii-xlii.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
