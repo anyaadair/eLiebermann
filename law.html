@@ -264,8 +264,8 @@ scripts:
                 frag.appendChild(out);
                 return;
             }
-            if (/superscript/.test(rend)) {
-                const out = el('sup');
+            if (/superscript|subscript/.test(rend)) {
+                const out = el(/subscript/.test(rend) ? 'sub' : 'sup');
                 out.appendChild(inline(n, opts));
                 frag.appendChild(out);
                 return;
