@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="LibLond_Title">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Lib Lond Title</title>
+        <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
+        <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
+        <respStmt><resp>English crib of the text</resp><name ref="#claude-crib">LLM (Latin)</name></respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
+        <idno type="slug">LibLond_Title</idno>
+        <idno type="citation">Lib Lond Title</idno>
+        <idno type="lawCode">Lib Lond</idno>
+        <idno type="lawCodeAnchor">LibLond</idno>
+        <idno type="clause">Title</idno>
+        <idno type="citationKey">LibLond title</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl type="legalText"><title>Libertas Londoniensis</title></bibl>
+        <listBibl type="sources">
+          <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">673</biblScope></bibl>
+          <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, created for this database in 2026 with Claude, a large language model made by Anthropic. It is a crib to help the reader with Liebermann’s German, and should not be treated as a separate translation</bibl>
+          <bibl xml:id="claude-crib" type="translation">A semi-literal English rendering of the Latin text, created for this database in 2026 with Claude, a large language model made by Anthropic. It is a crib to help the reader with the Latin, and should not be treated as a separate translation. Square brackets mark Liebermann’s additions to the text or, now and then, words supplied for the sense; “[?]” marks a doubtful reading</bibl>
+        </listBibl>
+        </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <listPrefixDef>
+        <prefixDef ident="law" matchPattern="(.+)" replacementPattern="lawAbb.html#$1"/>
+        <prefixDef ident="gram" matchPattern="(.+)" replacementPattern="gramAbb.html#$1"/>
+        <prefixDef ident="entry" matchPattern="(.+)" replacementPattern="entry.html?id=$1"/>
+      </listPrefixDef>
+    </encodingDesc>
+    <profileDesc>
+      <creation><date>c. 1133–c. 1154 (Liebermann, I p. 673)</date><note type="promulgation">c. 1133–c. 1154 (Liebermann, I p. 673)</note></creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-11-04">New clause: Liebermann’s own title for the text (Gesetze I, p. 673), with the notes he attaches to it, moved here from 1.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="clause" n="Title">
+        <head><ref type="lawCode" target="law:LibLond">Lib Lond</ref> Title</head>
+        <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Lib Lond Title"><pb n="673" ed="#liebermann"/><ptr type="liebermannNote" n="a" target="#LibLond_Title.lnote.oe.a"/>[<hi rend="italic">Libertas</hi><ptr type="liebermannNote" n="b" target="#LibLond_Title.lnote.oe.b"/> <hi rend="italic">Londoniensis.</hi>]</ab>
+        <note type="editorial">Liebermann’s own title for the text, printed in square brackets above it (Gesetze I, p. 673); it is not in the manuscripts, whose own heading, where there is one, is the Inscr.</note>
+        <note type="liebermannNote" subtype="textual" xml:id="LibLond_Title.lnote.oe.a" n="a" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">673</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Diese Londoner Compilation benutzt den Londoner Freibrief o. S.</hi> 524, <hi rend="italic">aber nicht den von</hi> 1155; <hi rend="italic">sie kennt den Einen Sheriff und den Justicia von London, der bis</hi> 1142 <hi rend="italic">nachweisbar, vor</hi> 1155 <hi rend="italic">verschwindet, und weiss noch nichts von der Commune mit Mayor</hi> (<hi rend="italic">seit</hi> 1191) <hi rend="italic">und freimunicipaler Jurisdiction</hi> [<hi rend="italic">vgl. Round</hi> Commune of London 113. 237; <hi rend="italic">Bateson in</hi> Engl. hist. rev. 1902, 711; <hi rend="italic">zur Sacherklärung: Schanz</hi> Engl. Handelspolitik I 383 <hi rend="italic">f.</hi>]. <hi rend="italic">Sie oder ihr Inhalt ist benutzt von</hi> Leges Angl. s. XIII. in. Lond. coll. <hi rend="italic">ed. Liebermann S.</hi> 14. ¶ <hi rend="italic">Hss.:</hi> <hi rend="bold">Ai</hi> (<hi rend="italic">British Mus., Addit.</hi> 14252 <hi rend="italic">f.</hi> 104<hi rend="italic">v</hi>, <hi rend="italic">hinter Französ. Bearbeitung der Einleitung des</hi> Henr. Huntendon.), <hi rend="italic">um</hi> 1215, <hi rend="italic">war nicht Vorlage der übrigen. Verlorenem</hi> <hi rend="bold">ps</hi> <hi rend="italic">entflossen</hi> <hi rend="bold">Pl</hi> (<hi rend="italic">Phillipps</hi> 8078, <hi rend="italic">gehörte</hi> 1895 <hi rend="italic">Nichols zu London</hi>), <hi rend="italic">um</hi> 1300, <hi rend="italic">und</hi> <hi rend="bold">S</hi> (<hi rend="italic">British Mus., Harley</hi> 746 <hi rend="italic">f.</hi> 54), <hi rend="italic">um</hi> 1325, <hi rend="italic">dem um</hi> 1500 <hi rend="italic">Vitellius E V und Thorpe’s Druck</hi> Anc. laws 200 <hi rend="italic">folgte; einen Theil aus S hatte Palgrave</hi> Rise II, cxviij <hi rend="italic">besser gedruckt; in</hi> Pl S <hi rend="italic">geht</hi> ECf. <hi rend="italic">voran. Drittens steht neben</hi> Ai <hi rend="italic">und</hi> ps <hi rend="italic">die Französ. Übersetzung</hi> 13./14. <hi rend="italic">Jhs. in</hi> <hi rend="bold">Ord</hi> (Liber ordinationum <hi rend="italic">der Londoner Gildhalle f.</hi> 161, <hi rend="italic">ed. Bateson</hi> 715), 14. <hi rend="italic">Jhs.; viertens die verlorene Vorlage für</hi> <hi rend="bold">Horn</hi> (Liber Andreae Horn, <hi rend="italic">des Stadtkämmerers, ebenda, f.</hi> 230 <hi rend="italic">um</hi> 1311) — <hi rend="italic">den im</hi> 15. <hi rend="italic">Jh.</hi> <hi rend="bold">Alb</hi> (Liber albus, <hi rend="italic">ebenda, ed. Riley</hi> Munim. Gildh. Lond. I 673) <hi rend="italic">nur auszog, weshalb ich nur einige Varianten notire — und für</hi> <hi rend="bold">Ampl</hi>ificator <hi rend="italic">Ende</hi> 12. <hi rend="italic">Jhs., der existirt in</hi> <hi rend="bold">Cons</hi>uetudines Lond., <hi rend="italic">in</hi> Ai <hi rend="italic">f.</hi> 119 (<hi rend="italic">um</hi> 1215, <hi rend="italic">ed. Bateson p.</hi> 711), <hi rend="italic">in Hs.</hi> <hi rend="bold">Douai</hi> (13. <hi rend="italic">Jhs., ed. Höhlbaum</hi> Hans. Urkundenbuch III <hi rend="italic">n.</hi> 600) <hi rend="italic">und mit dem kürzeren Texte verbunden, Französisch übersetzt in</hi> Ord (<hi rend="italic">s.</hi> 5 <hi rend="italic">Zeilen vorher</hi>). <hi rend="italic">Miss <hi rend="spaced">Bateson</hi> collationirte mir</hi> <hi rend="bold">Co</hi> (<hi rend="italic">Cambridge Corpus</hi> 70, <hi rend="italic">p.</hi> 188<hi rend="italic">v</hi>, <hi rend="italic">um</hi> 1315, <hi rend="italic">das Eigenthum Horn’s, welches oft mit Horn gleichlautet, aber manches auslässt.</hi></seg><seg type="translation" xml:lang="en" source="#claude">This London compilation uses the London charter above p. 524, but not that of 1155; it knows the single sheriff and the Justiciar of London, who is attested until 1142 and disappears before 1155, and as yet knows nothing of the commune with a Mayor (from 1191) and free municipal jurisdiction [cf. Round Commune of London 113. 237; Bateson in Engl. hist. rev. 1902, 711; on the subject-matter: Schanz Engl. Handelspolitik I 383 f.]. It, or its content, is used by Leges Angl. s. XIII. in. Lond. coll. ed. Liebermann p. 14. ¶ MSS: <hi rend="bold">Ai</hi> (British Mus., Addit. 14252 f. 104v, following a French adaptation of the introduction of Henr. Huntendon.), c. 1215, was not the exemplar of the others. From the lost <hi rend="bold">ps</hi> derive <hi rend="bold">Pl</hi> (Phillipps 8078, owned in 1895 by Nichols of London), c. 1300, and <hi rend="bold">S</hi> (British Mus., Harley 746 f. 54), c. 1325, which was followed c. 1500 by Vitellius E V and by Thorpe’s edition Anc. laws 200; Palgrave Rise II, cxviij had printed a part from S more accurately; in Pl S ECf. precedes. Thirdly, alongside Ai and ps there is the French translation of the 13th/14th cent. in <hi rend="bold">Ord</hi> (Liber ordinationum of the London Guildhall f. 161, ed. Bateson 715), 14th cent.; fourthly the lost exemplar for <hi rend="bold">Horn</hi> (Liber Andreae Horn, the City Chamberlain, ibid., f. 230, c. 1311) — which <hi rend="bold">Alb</hi> (Liber albus, ibid., ed. Riley Munim. Gildh. Lond. I 673) in the 15th cent. merely excerpted, for which reason I record only a few variants — and for the <hi rend="bold">Ampl</hi>ificator of the end of the 12th cent., which survives in <hi rend="bold">Cons</hi>uetudines Lond., in Ai f. 119 (c. 1215, ed. Bateson p. 711), in MS <hi rend="bold">Douai</hi> (13th cent., ed. Höhlbaum Hans. Urkundenbuch III n. 600) and, combined with the shorter text, in French translation in Ord (see 5 lines above). Miss <hi rend="italic">Bateson</hi> collated for me <hi rend="bold">Co</hi> (Cambridge Corpus 70, p. 188v, c. 1315, Horn’s own property, which often agrees word for word with Horn but omits a good deal.</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="LibLond_Title.lnote.oe.b" n="b" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">673</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Originaltitel fehlt; keine Überschrift Ai;</hi> Iste sunt quedam libertates ciuitatis London., que debuissent scribi in X° folio precedenti, ante Iohannem regem <hi rend="italic">Co;</hi> De aliquibus libertatibus ciuitatis London. <hi rend="italic">überschr. Horn;</hi> Libertas <hi rend="italic">Alb;</hi> Libertas ciuitatum [<hi rend="italic">bessere</hi> -atis] <hi rend="italic">Pl S</hi></seg><seg type="translation" xml:lang="en" source="#claude">Original title missing; no heading Ai; Iste sunt quedam libertates ciuitatis London., que debuissent scribi in X° folio precedenti, ante Iohannem regem Co; De aliquibus libertatibus ciuitatis London. as heading Horn; Libertas Alb; Libertas ciuitatum [read -atis] Pl S</seg></note>
+      </div>
+    </body>
+  </text>
+</TEI>
