@@ -43,6 +43,7 @@ for d in files:
         'Notes by': notes,
     }
     if d.get('link_automatically'): row['Link automatically'] = d['link_automatically']
+    if d.get('link_to'): row['Link to'] = d['link_to']   # a siglum that is really listed elsewhere (Q: the List of Law Codes)
     out.append({k: v for k, v in row.items() if v not in (None, [], '') or k in ('Anchor', 'Gesetze Text', 'English Translation', 'Notes')})
 with open('data/manuscripts.json', 'w', encoding='utf-8') as f:
     f.write('[\n' + ',\n'.join(json.dumps(r, ensure_ascii=False, separators=(',', ':')) for r in out) + '\n]\n')

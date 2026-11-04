@@ -530,7 +530,10 @@ scripts:
             relTerms = terms && !Array.isArray(terms) ? terms : {};
             siglumIndex = {};
             law.forEach(r => { if (r['Gesetze Text']) siglumIndex[sigKey(r['Gesetze Text'])] = 'lawAbb.html#' + encodeURIComponent(r.Anchor); });
-            ms.forEach(r => { if (r['Gesetze Text']) siglumIndex[sigKey(r['Gesetze Text'])] = 'msAbb.html#' + encodeURIComponent(r.Anchor); });
+            // a manuscript row marked "Link automatically": "no" is not what its bare siglum links to (Liebermann's
+            // other Q, other L); a row with "Link to" sends the siglum elsewhere (Q: the Quadripartitus, a law code)
+            ms.forEach(r => { if (r['Gesetze Text'] && r['Link automatically'] !== 'no') siglumIndex[sigKey(r['Gesetze Text'])] = 'msAbb.html#' + encodeURIComponent(r.Anchor); });
+            ms.forEach(r => { if (r['Gesetze Text'] && r['Link to']) siglumIndex[sigKey(r['Gesetze Text'])] = r['Link to']; });
         });
     }
     // "G (Prol.)" -> the page for G; "Fl, Ox" -> one link each.
@@ -1182,7 +1185,7 @@ scripts:
                     li.appendChild(sig);
                     if (w.name) li.appendChild(document.createTextNode(' ' + w.name));
                     if (w.sigla.length) {
-                        const sub = el('span', 'ms-sub muted', '. Liebermann’s manuscripts of it: ');
+                        const sub = el('span', 'ms-sub muted', '. Liebermann’s MSS for ' + w.abbr + ': ');
                         w.sigla.forEach((x, i) => {
                             if (i) sub.appendChild(document.createTextNode(', '));
                             const [t, anc] = x.split('=');

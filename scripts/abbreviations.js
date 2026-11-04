@@ -293,7 +293,7 @@
                 const lawsNote = r['Laws note'] ? `<span class="gl-lawsnote"><span class="gl-by">${esc(r['Laws note'].by)}:</span> ${t(r['Laws note'].text)}${r['Laws note'].ref ? ` <span class="gl-ref">(${esc(r['Laws note'].ref)})</span>` : ''}</span>` : '';
                 return `<tr${id}>
                     <td class="gl-term">${esc(r['Gesetze Text'])}</td>
-                    <td class="gl-en">${t(r['English Translation'])}${tag}${more ? `<details class="gl-more"><summary>Description and notes</summary>${more}</details>` : ''}</td>
+                    <td class="gl-en">${t(r['English Translation'])}${r['Link to'] ? ` <a class="gl-linkto" href="${esc(r['Link to'])}">See the List of Law Codes</a>` : ''}${tag}${more ? `<details class="gl-more"><summary>Description and notes</summary>${more}</details>` : ''}</td>
                     <td class="gl-date">${dates}</td>
                     <td class="gl-laws">${esc(r['Laws in it'] || '')}${lawsNote}</td>
                     <td class="num">${esc(r['Liebermann I, page'] || '')}</td>

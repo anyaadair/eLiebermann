@@ -209,7 +209,9 @@ let codeSources = {};
     const sigKey = s => s.replace(/[\s.]/g, '');
     const siglumIndex = {};
     readJson('markLaw.json').forEach(r => { if (r['Gesetze Text']) siglumIndex[sigKey(r['Gesetze Text'])] = 'lawAbb.html#' + encodeURIComponent(r.Anchor); });
-    readJson('manuscripts.json').forEach(r => { if (r['Gesetze Text']) siglumIndex[sigKey(r['Gesetze Text'])] = 'msAbb.html#' + encodeURIComponent(r.Anchor); });
+    const msRows = readJson('manuscripts.json');
+    msRows.forEach(r => { if (r['Gesetze Text'] && r['Link automatically'] !== 'no') siglumIndex[sigKey(r['Gesetze Text'])] = 'msAbb.html#' + encodeURIComponent(r.Anchor); });
+    msRows.forEach(r => { if (r['Gesetze Text'] && r['Link to']) siglumIndex[sigKey(r['Gesetze Text'])] = r['Link to']; });
     const ALIASES = { 'InstCn': 'InCn' };
     const siglumHref = sig => { let k = sigKey(sig); k = ALIASES[k] || k; return siglumIndex[k] || siglumIndex[sigKey(sig.replace(/\s*\([^)]*\)\s*$/, ''))] || ''; };
     const siglumParts = sig => {
