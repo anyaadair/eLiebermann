@@ -1,0 +1,82 @@
+{
+ "id": "Ld",
+ "order": 123,
+ "anchor": "Ld",
+ "label": "Ld",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Ld",
+  "description_de": "Archaionomia Gul. Lambardo int. (Lond. 1568)",
+  "shelfmark_as_given": "William Lambarde, Archaionomia (London, 1568), printed largely from Laurence Nowell’s 16th-century transcripts (Liebermann thought from manuscripts now lost)",
+  "date": "1568",
+  "laws": "Iud Dei, Ine, Af, AGu, I Ew, II Ew, EGu, I As, As Alm, II As, V As, Norðleod, Mirce, Að, I Em, II Em, II Eg, III Eg, I Atr, II Atr, Duns, I Cn, II Cn, Wl art, ECf retr",
+  "page": "xxxiii",
+  "notes": "Lambarde's printed Archaionomia (1568), which in Liebermann’s view used lost manuscripts (l) as well as surviving ones: Iud Dei XVI from Co in the Explicatio, the Anglo-Saxon laws from Ine to I–II Cnut, and the Tripartita (Wl art, ECf retr, also using the London interpolation) with the Genealogia Normannica. He says himself that he followed two codices; for many texts Ld and Quadripartitus share the exemplar lq, for Ine and II Eg he follows ls, and As Alm survives only in Ld. He normalises and archaises at will, mixes readings and makes many mistakes. Copied in Ou, Oxford All Souls 41, Queen's 212 and Harley 4143; translated in Lansdowne 558."
+ },
+ "wormald": [
+  {
+   "wormald_heading": "8 (v) The Lambarde problem",
+   "shelfmark": "William Lambarde, Archaionomia (London, 1568) (printed edition)",
+   "wormald_siglum": "",
+   "liebermann_siglum": "Ld",
+   "guide_anchor": "Ld",
+   "liebermann_date": "1568",
+   "liebermann_page": "xxxiii",
+   "wormald_date": "1568 (p. 262 n. 384)",
+   "wormald_origin": "Printed from transcripts and editorial working copies made by Laurence Nowell, Lambarde's friend and teacher (pp. 261–2).",
+   "laws": "Wormald discusses: I–II Cn; I As, As Alm, Norðleod, Mirce, Að; I–II Ew, I–II Em, Æthelred's laws, AGu and EGu; II–III Eg; II As, V As; Af–Ine (with clause headings)",
+   "laws_liebermann": "Iud Dei, Ine, Af, AGu, I Ew, II Ew, EGu, I As, As Alm, II As, V As, Norðleod, Mirce, Að, I Em, II Em, II Eg, III Eg, I Atr, II Atr, Duns, I Cn, II Cn, Wl art, ECf retr",
+   "other_contents": "",
+   "overview": "The first printed edition of the Anglo-Saxon laws, which Liebermann thought drew on many medieval manuscripts since lost. Sisam showed that its strange texts of two Æthelstan texts and three tracts by Wulfstan were sixteenth-century renderings of Quadripartitus into Old English, and later finds of Laurence Nowell's transcripts show that most of its texts came from surviving manuscripts copied and freely emended by Nowell: Cnut from Harley 55(B), Edward, Edmund, Æthelred and the treaties from Corpus 383, and Edgar from Nero A.i(A); the chapter headings too are probably Nowell's. Wormald argues, however, that for Æthelstan's Grately and Exeter codes, Iudex and probably Alfred–Ine Nowell did use a manuscript now lost, so that Liebermann is partly vindicated.",
+   "liebermann_superseded": "Liebermann believed Archaionomia was printed from numerous now-lost medieval manuscripts and that its chapter divisions came from a medieval intermediate stage; Wormald (pp. 261–2), following Sisam, Ker and Flower, shows that most of its texts came from Nowell's transcripts of surviving manuscripts, with the headings Nowell's own, though one lost manuscript of Æthelstan's codes, Iudex and probably Alfred–Ine does lie behind part of it.",
+   "pages": "260–2; 261 nn. 371–8; 262 nn. 379–84; 225 and n. 246 (Nero A.i(A) as Lambarde's source for II–III Eg; Nero A.i(B) unknown to him in 1568); 173–8 (Nowell's Otho B.xi transcript); 185–6, 253 (Harley 55(B)); 171 n. 38",
+   "key_quote": "'translations of the Quadripartitus into Elizabethan Anglo-Saxon' (Sisam, quoted p. 261)",
+   "doubts": "Wormald refers for detail to his 'The Lambarde Problem: Eighty Years On' (p. 261 n. 373). Iud Dei, Wl art and ECf retr in Ld are not discussed by Wormald here. The guide entry already reflects Wormald broadly; it could add the specific sources: Cnut from Nowell's transcript of Harley 55(B) (Canterbury Lit. MS E.2); Ew, Em, Atr and the treaties from Corpus 383; Edgar via a Nowell transcript based on Nero A.i(A) (Canterbury Lit. B.2, Liebermann's So).",
+   "guide_shelfmark": "William Lambarde, Archaionomia (London, 1568), printed largely from Laurence Nowell’s 16th-century transcripts (Liebermann thought from manuscripts now lost)",
+   "in_guide": "yes",
+   "verify_notes": [
+    "pp. 260–2 and p. 225 checked.",
+    "overview: said Nowell's 'surviving transcripts show' the Corpus 383 texts, but Wormald says no Nowell transcript survives for those (p. 261); the Edgar transcript is not what Lambarde printed (p. 262). Reworded.",
+    "pages: added p. 225 and n. 246 and the cross-referenced Nowell/Harley pages.",
+    "overview: reworded to remove five-word runs shared with Wormald."
+   ],
+   "part": ""
+  }
+ ],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "William Lambarde, Archaionomia (London, 1568), printed largely from Laurence Nowell’s 16th-century transcripts (Liebermann thought from manuscripts now lost)",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "1568",
+    "ref": "Gesetze I, p. xxxiii"
+   },
+   {
+    "by": "Wormald",
+    "text": "1568",
+    "ref": "Wormald, MEL, p. 262 n. 384"
+   }
+  ],
+  "laws": "Iud Dei, Ine, Af, AGu, I Ew, II Ew, EGu, I As, As Alm, II As, V As, Norðleod, Mirce, Að, I Em, II Em, II Eg, III Eg, I Atr, II Atr, Duns, I Cn, II Cn, Wl art, ECf retr",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxxiii",
+    "text": "Lambarde's printed Archaionomia (1568), which in Liebermann’s view used lost manuscripts (l) as well as surviving ones: Iud Dei XVI from Co in the Explicatio, the Anglo-Saxon laws from Ine to I–II Cnut, and the Tripartita (Wl art, ECf retr, also using the London interpolation) with the Genealogia Normannica. He says himself that he followed two codices; for many texts Ld and Quadripartitus share the exemplar lq, for Ine and II Eg he follows ls, and As Alm survives only in Ld. He normalises and archaises at will, mixes readings and makes many mistakes. Copied in Ou, Oxford All Souls 41, Queen's 212 and Harley 4143; translated in Lansdowne 558."
+   },
+   {
+    "by": "Wormald",
+    "ref": "Wormald, MEL, pp. 260–2",
+    "text": "The first printed edition of the Anglo-Saxon laws, which Liebermann thought drew on many medieval manuscripts since lost. Sisam showed that its strange texts of two Æthelstan texts and three tracts by Wulfstan were sixteenth-century renderings of Quadripartitus into Old English, and later finds of Laurence Nowell's transcripts show that most of its texts came from surviving manuscripts copied and freely emended by Nowell: Cnut from Harley 55(B), Edward, Edmund, Æthelred and the treaties from Corpus 383, and Edgar from Nero A.i(A); the chapter headings too are probably Nowell's. Wormald argues, however, that for Æthelstan's Grately and Exeter codes, Iudex and probably Alfred–Ine Nowell did use a manuscript now lost, so that Liebermann is partly vindicated."
+   },
+   {
+    "by": "Wormald",
+    "kind": "correction",
+    "text": "Liebermann believed Archaionomia was printed from numerous now-lost medieval manuscripts and that its chapter divisions came from a medieval intermediate stage; Wormald (pp. 261–2), following Sisam, Ker and Flower, shows that most of its texts came from Nowell's transcripts of surviving manuscripts, with the headings Nowell's own, though one lost manuscript of Æthelstan's codes, Iudex and probably Alfred–Ine does lie behind part of it."
+   }
+  ]
+ }
+}

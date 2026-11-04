@@ -1,0 +1,38 @@
+{
+ "id": "Ant",
+ "order": 11,
+ "anchor": "Ant",
+ "label": "Ant",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Ant",
+  "description_de": "London Society of antiquaries 105",
+  "shelfmark_as_given": "London, Society of Antiquaries, MS 105",
+  "date": "16th century",
+  "laws": "Hn Lond",
+  "page": "xix",
+  "notes": "f. 1 a Modern English translation of Henry I's London charter."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "London, Society of Antiquaries, MS 105",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "16th century",
+    "ref": "Gesetze I, p. xix"
+   }
+  ],
+  "laws": "Hn Lond",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xix",
+    "text": "f. 1 a Modern English translation of Henry I's London charter."
+   }
+  ]
+ }
+}

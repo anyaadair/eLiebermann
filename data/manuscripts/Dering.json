@@ -1,0 +1,38 @@
+{
+ "id": "Dering",
+ "order": 53,
+ "anchor": "Dering",
+ "label": "Dering",
+ "status": "not seen by Liebermann",
+ "display": true,
+ "liebermann": {
+  "siglum": "Dering",
+  "description_de": "Dering's Copie aus H von 1632",
+  "shelfmark_as_given": "Sir Edward Dering’s copy of the Textus Roffensis (1632)",
+  "date": "1632",
+  "laws": "",
+  "page": "xxiii",
+  "notes": "A 1632 copy of H by Sir Edward Dering, Kentish antiquary (1598–1644), which was Hearne's exemplar."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Sir Edward Dering’s copy of the Textus Roffensis (1632)",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "1632",
+    "ref": "Gesetze I, p. xxiii"
+   }
+  ],
+  "laws": "",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxiii",
+    "text": "A 1632 copy of H by Sir Edward Dering, Kentish antiquary (1598–1644), which was Hearne's exemplar."
+   }
+  ]
+ }
+}

@@ -1,0 +1,74 @@
+{
+ "id": "Br",
+ "order": 21,
+ "anchor": "Br",
+ "label": "Br",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Br",
+  "description_de": "'Johannis Brompton Jorevallensis chronicon': Hss. Cambridge Corpus College 96 (Brco) und British Museum Tiberius C XIII (Brti); ed. Twysden",
+  "shelfmark_as_given": "The chronicle ascribed to John Brompton: Cambridge, Corpus Christi College, MS 96 (Brco) and London, British Library, Cotton MS Tiberius C.xiii (Brti); printed by Twysden (1652)",
+  "date": "probably second half of the 14th century; Brco c. 1425; Brti 15th century",
+  "laws": "Quadr, Ine, Af, AGu, EGu, I Ew, II Ew, I As, II As, III As, IV As, V As, VI As, Episc, Norðleod, Mirce, Að, Had, Blas, Forf, Hu, Ordal, I Em, II Em, III Em, Wif, II Eg, III Eg, I Atr, II Atr, III Atr, IV Atr, VII Atr, Pax, Wal, Iudex, I Cn, II Cn, ECf retr, Wl lad, CHn cor",
+  "page": "xix",
+  "notes": "A large compilation of English history to 1199, misnamed after John Brompton, abbot of Jervaulx, from a note in one copy; the compiler used a late-recension Quadripartitus, rearranging it chronologically. Its two independent manuscripts Brco and Brti were printed by Twysden, whose edition Liebermann follows; extracts are in Cambridge Corpus 348 and Harley 362."
+ },
+ "wormald": [
+  {
+   "wormald_heading": "",
+   "shelfmark": "Chronicle ascribed to John Brompton (14th century)",
+   "wormald_siglum": "",
+   "liebermann_siglum": "Br",
+   "guide_anchor": "Br",
+   "liebermann_date": "probably second half of the 14th century; Brco c. 1425; Brti 15th century",
+   "liebermann_page": "xix",
+   "wormald_date": "fourteenth century (p. 243 n. 322)",
+   "wormald_origin": "",
+   "laws": "MHk recension of Quadripartitus, arranged chronologically with omissions",
+   "laws_liebermann": "Quadr, Ine, Af, AGu, EGu, I Ew, II Ew, I As, II As, III As, IV As, V As, VI As, Episc, Norðleod, Mirce, Að, Had, Blas, Forf, Hu, Ordal, I Em, II Em, III Em, Wif, II Eg, III Eg, I Atr, II Atr, III Atr, IV Atr, VII Atr, Pax, Wal, Iudex, I Cn, II Cn, ECf retr, Wl lad, CHn cor",
+   "other_contents": "",
+   "overview": "A fourteenth-century chronicle formerly attributed to John Brompton, which took in the final (MHk) recension of Quadripartitus, rearranged chronologically and abridged.",
+   "liebermann_superseded": "",
+   "pages": "243 n. 322",
+   "key_quote": "incorporated (arranged chronologically and with omissions) in the fourteenth-century chronicle once ascribed to John Brompton (p. 243 n. 322)",
+   "doubts": "Mentioned only in a footnote; consistent with guide.",
+   "guide_shelfmark": "The chronicle ascribed to John Brompton: Cambridge, Corpus Christi College, MS 96 (Brco) and London, British Library, Cotton MS Tiberius C.xiii (Brti); printed by Twysden (1652)",
+   "in_guide": "yes",
+   "verify_notes": [
+    "p. 243 n. 322 checked (the 'it' of n. 322 is the MHk recension, p. 243): checked, no changes."
+   ],
+   "part": ""
+  }
+ ],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "The chronicle ascribed to John Brompton: Cambridge, Corpus Christi College, MS 96 (Brco) and London, British Library, Cotton MS Tiberius C.xiii (Brti); printed by Twysden (1652)",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "probably second half of the 14th century; Brco c. 1425; Brti 15th century",
+    "ref": "Gesetze I, p. xix"
+   },
+   {
+    "by": "Wormald",
+    "text": "14th century",
+    "ref": "Wormald, MEL, p. 243 n. 322"
+   }
+  ],
+  "laws": "Quadr, Ine, Af, AGu, EGu, I Ew, II Ew, I As, II As, III As, IV As, V As, VI As, Episc, Norðleod, Mirce, Að, Had, Blas, Forf, Hu, Ordal, I Em, II Em, III Em, Wif, II Eg, III Eg, I Atr, II Atr, III Atr, IV Atr, VII Atr, Pax, Wal, Iudex, I Cn, II Cn, ECf retr, Wl lad, CHn cor",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xix",
+    "text": "A large compilation of English history to 1199, misnamed after John Brompton, abbot of Jervaulx, from a note in one copy; the compiler used a late-recension Quadripartitus, rearranging it chronologically. Its two independent manuscripts Brco and Brti were printed by Twysden, whose edition Liebermann follows; extracts are in Cambridge Corpus 348 and Harley 362."
+   },
+   {
+    "by": "Wormald",
+    "ref": "Wormald, MEL, pp. 243 n. 322",
+    "text": "A fourteenth-century chronicle formerly attributed to John Brompton, which took in the final (MHk) recension of Quadripartitus, rearranged chronologically and abridged."
+   }
+  ]
+ }
+}

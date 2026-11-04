@@ -1,0 +1,38 @@
+{
+ "id": "Haug",
+ "order": 81,
+ "anchor": "Haug",
+ "label": "Haug",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Haug",
+  "description_de": "Ricardus Haugustaldensis, Hist. Stephani",
+  "shelfmark_as_given": "Richard of Hexham, Historia de gestis regis Stephani",
+  "date": "c. 1140",
+  "laws": "CHn cor",
+  "page": "xxix",
+  "notes": "Richard of Hexham, c. 1140, inserts CHn cor into his Historia Stephani under 1135."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Richard of Hexham, Historia de gestis regis Stephani",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "c. 1140",
+    "ref": "Gesetze I, p. xxix"
+   }
+  ],
+  "laws": "CHn cor",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxix",
+    "text": "Richard of Hexham, c. 1140, inserts CHn cor into his Historia Stephani under 1135."
+   }
+  ]
+ }
+}

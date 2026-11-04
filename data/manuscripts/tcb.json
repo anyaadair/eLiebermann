@@ -1,0 +1,41 @@
+{
+ "id": "tcb",
+ "order": 188,
+ "anchor": "tcb",
+ "label": "tcb",
+ "status": "posited",
+ "display": true,
+ "liebermann": {
+  "siglum": "tcb",
+  "description_de": "Verlorene Vorlage von T und Cb für In Cn",
+  "shelfmark_as_given": "Posited by Liebermann: a common source of T and Cb, inferred from the readings they share. No such manuscript survives.",
+  "date": "",
+  "laws": "In Cn",
+  "page": "xli",
+  "notes": "A common source of T and Cb for the Instituta Cnuti, posited by Liebermann."
+ },
+ "wormald": [],
+ "others": [
+  {
+   "by": "O’Brien",
+   "text": "O’Brien (2003): the same common source appears in O’Brien’s family tree as δ."
+  }
+ ],
+ "display_fields": {
+  "shelfmark": "Posited by Liebermann: a common source of T and Cb, inferred from the readings they share. No such manuscript survives.",
+  "dates": [],
+  "laws": "In Cn",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xli",
+    "text": "A common source of T and Cb for the Instituta Cnuti, posited by Liebermann."
+   },
+   {
+    "by": "O’Brien",
+    "text": "O’Brien (2003): the same common source appears in O’Brien’s family tree as δ."
+   }
+  ]
+ }
+}

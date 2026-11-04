@@ -1,0 +1,38 @@
+{
+ "id": "He",
+ "order": 84,
+ "anchor": "He",
+ "label": "He",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "He",
+  "description_de": "British Museum Harley 261",
+  "shelfmark_as_given": "London, British Library, Harley MS 261",
+  "date": "c. 1240",
+  "laws": "Wl lad, CHn cor, Quadr",
+  "page": "xxix",
+  "notes": "William of Malmesbury's Gesta regum Anglorum from Rochester, c. 1240; on f. 71 after § 297 the interpolation Ip Ml from Quadripartitus: Wl lad and the Praefatio to CHn cor only to § 10."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "London, British Library, Harley MS 261",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "c. 1240",
+    "ref": "Gesetze I, p. xxix"
+   }
+  ],
+  "laws": "Wl lad, CHn cor, Quadr",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxix",
+    "text": "William of Malmesbury's Gesta regum Anglorum from Rochester, c. 1240; on f. 71 after § 297 the interpolation Ip Ml from Quadripartitus: Wl lad and the Praefatio to CHn cor only to § 10."
+   }
+  ]
+ }
+}

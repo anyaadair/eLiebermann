@@ -1,0 +1,32 @@
+{
+ "id": "West",
+ "order": 205,
+ "anchor": "West",
+ "label": "West",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "West",
+  "description_de": "Westminster-Bearbeitung der CHn cor",
+  "shelfmark_as_given": "The Westminster version of the Coronation Charter of Henry I",
+  "date": "",
+  "laws": "CHn cor",
+  "page": "xlii",
+  "notes": "The Westminster recension of Henry I's coronation charter, found in Gl, Lond, Hl, Cust, S, Vl and Cant."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "The Westminster version of the Coronation Charter of Henry I",
+  "dates": [],
+  "laws": "CHn cor",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xlii",
+    "text": "The Westminster recension of Henry I's coronation charter, found in Gl, Lond, Hl, Cust, S, Vl and Cant."
+   }
+  ]
+ }
+}

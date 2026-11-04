@@ -1,0 +1,38 @@
+{
+ "id": "Sloane",
+ "order": 178,
+ "anchor": "Sloane",
+ "label": "Sloane",
+ "status": "not seen by Liebermann",
+ "display": true,
+ "liebermann": {
+  "siglum": "Sloane",
+  "description_de": "British Museum Sloane 754",
+  "shelfmark_as_given": "London, British Library, Sloane MS 754",
+  "date": "16th century",
+  "laws": "Wl Lond, Hn Lond",
+  "page": "xl",
+  "notes": "16th-century manuscript containing (f. 1) William's and Henry I's London charters."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "London, British Library, Sloane MS 754",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "16th century",
+    "ref": "Gesetze I, p. xl"
+   }
+  ],
+  "laws": "Wl Lond, Hn Lond",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xl",
+    "text": "16th-century manuscript containing (f. 1) William's and Henry I's London charters."
+   }
+  ]
+ }
+}

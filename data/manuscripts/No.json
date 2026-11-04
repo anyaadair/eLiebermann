@@ -1,0 +1,38 @@
+{
+ "id": "No",
+ "order": 139,
+ "anchor": "No",
+ "label": "No",
+ "status": "not seen by Liebermann",
+ "display": true,
+ "liebermann": {
+  "siglum": "No",
+  "description_de": "Duke of Northumberland zu Alnwick Castle",
+  "shelfmark_as_given": "Alnwick Castle, the Duke of Northumberland",
+  "date": "14th century",
+  "laws": "ECf",
+  "page": "xxxv",
+  "notes": "A volume owned by the Duke of Northumberland in which a once separate part begins with Glanvill, followed in the same 14th-century hand (f. 99v) by ECf to c. 34,1a, of the adow class."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Alnwick Castle, the Duke of Northumberland",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "14th century",
+    "ref": "Gesetze I, p. xxxv"
+   }
+  ],
+  "laws": "ECf",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxxv",
+    "text": "A volume owned by the Duke of Northumberland in which a once separate part begins with Glanvill, followed in the same 14th-century hand (f. 99v) by ECf to c. 34,1a, of the adow class."
+   }
+  ]
+ }
+}

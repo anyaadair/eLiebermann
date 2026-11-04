@@ -1,0 +1,38 @@
+{
+ "id": "EL",
+ "order": 65,
+ "anchor": "EL",
+ "label": "EL",
+ "status": "not seen by Liebermann",
+ "display": true,
+ "liebermann": {
+  "siglum": "EL",
+  "description_de": "London Guildhall, Liber albus",
+  "shelfmark_as_given": "London, Guildhall (Corporation of London), Liber Albus",
+  "date": "c. 1420",
+  "laws": "Hn Lond",
+  "page": "xxv",
+  "notes": "f. 40 an excerpt from Henry I's London charter."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "London, Guildhall (Corporation of London), Liber Albus",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "c. 1420",
+    "ref": "Gesetze I, p. xxv"
+   }
+  ],
+  "laws": "Hn Lond",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxv",
+    "text": "f. 40 an excerpt from Henry I's London charter."
+   }
+  ]
+ }
+}

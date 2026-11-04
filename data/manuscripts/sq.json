@@ -1,0 +1,32 @@
+{
+ "id": "sq",
+ "order": 182,
+ "anchor": "sq",
+ "label": "sq",
+ "status": "posited",
+ "display": true,
+ "liebermann": {
+  "siglum": "sq",
+  "description_de": "Gemeinsame Vorlage von So und Quadr. für II As",
+  "shelfmark_as_given": "Posited by Liebermann: a common source of So and the Quadripartitus, inferred from the readings they share. No such manuscript survives.",
+  "date": "",
+  "laws": "II As",
+  "page": "xl",
+  "notes": "A common source of So and the Quadripartitus for II Æthelstan, posited by Liebermann and derived by him from osq."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Posited by Liebermann: a common source of So and the Quadripartitus, inferred from the readings they share. No such manuscript survives.",
+  "dates": [],
+  "laws": "II As",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xl",
+    "text": "A common source of So and the Quadripartitus for II Æthelstan, posited by Liebermann and derived by him from osq."
+   }
+  ]
+ }
+}

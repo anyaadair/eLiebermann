@@ -1,0 +1,52 @@
+{
+ "id": "LambardeHuntington",
+ "order": 223,
+ "anchor": "LambardeHuntington",
+ "label": "Lambarde (Huntington)",
+ "status": "not in Liebermann",
+ "display": false,
+ "liebermann": {},
+ "wormald": [
+  {
+   "wormald_heading": "8 (v) The Lambarde problem (n. 384)",
+   "shelfmark": "Huntington Library, 30/B5 c.15142 (Lambarde's annotated copy of Archaionomia)",
+   "wormald_siglum": "",
+   "liebermann_siglum": "",
+   "guide_anchor": "",
+   "liebermann_date": "",
+   "liebermann_page": "",
+   "wormald_date": "Wormald gives no date; annotation after 1568 (inferred, p. 262 n. 384)",
+   "wormald_origin": "Lambarde's own annotated copy (p. 262 n. 384).",
+   "laws": "Note on Æthelberht's code (f. Bjv)",
+   "laws_liebermann": "",
+   "other_contents": "Printed Archaionomia with Lambarde's later notes.",
+   "overview": "A second annotated copy of Archaionomia belonging to Lambarde, in which he records his eventual discovery of Æthelberht's code, whose existence his preface had cited from Bede's account. With the Bodleian copy it shows that Textus Roffensis reached Lambarde only after 1568.",
+   "liebermann_superseded": "",
+   "pages": "262 n. 384",
+   "key_quote": "'Lambarde says that he has \"at last\" come across Æthelberht's code' (p. 262 n. 384)",
+   "doubts": "Footnote mention only; shelfmark as Wormald prints it ('Huntington Library 30/B5 c.15142'); folio printed 'f. Bjv' (OCR 'Biv'). Not in guide.",
+   "guide_shelfmark": "",
+   "in_guide": "no",
+   "verify_notes": [
+    "p. 262 n. 384 checked against 300 dpi image.",
+    "laws/doubts: folio is 'Bjv' in print (OCR 'Biv'); key_quote corrected 'Ethelberht' to 'Æthelberht' as printed.",
+    "overview: reworded to remove five-word runs shared with Wormald."
+   ],
+   "part": ""
+  }
+ ],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Huntington Library, 30/B5 c.15142 (Lambarde's annotated copy of Archaionomia)",
+  "dates": [],
+  "laws": "",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Wormald",
+    "ref": "Wormald, MEL, pp. 262 n. 384",
+    "text": "A second annotated copy of Archaionomia belonging to Lambarde, in which he records his eventual discovery of Æthelberht's code, whose existence his preface had cited from Bede's account. With the Bodleian copy it shows that Textus Roffensis reached Lambarde only after 1568."
+   }
+  ]
+ }
+}

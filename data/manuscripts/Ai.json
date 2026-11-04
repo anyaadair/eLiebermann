@@ -1,0 +1,79 @@
+{
+ "id": "Ai",
+ "order": 6,
+ "anchor": "Ai",
+ "label": "Ai",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Ai",
+  "description_de": "British Museum Additional 14252",
+  "shelfmark_as_given": "London, British Library, Additional MS 14252",
+  "date": "c. 1210–20; compiler writes 1206–16",
+  "laws": "Lib Lond",
+  "page": "xviii",
+  "notes": "A London municipal collection written c. 1210–20 in the London Guildhall (not the autograph, judging by scribal errors); f. 1–88 contain only the last chapters of the Leges Anglorum saec. XIII in. Londoniis collectae (the beginning is torn away), followed by Latin and French material almost wholly on London's constitution, law, privileges, trade and administration by a London citizen compiler; later the Libertas Londoniensis (f. 104v), De excubiis and a list of 1212 on London's charters."
+ },
+ "wormald": [
+  {
+   "wormald_heading": "6 (iii) Quadripartitus, MS 6a (London collection)",
+   "shelfmark": "Manchester, John Rylands Library, Lat. MS 155 (+ London, British Library, Additional MS 14252)",
+   "wormald_siglum": "Rs",
+   "liebermann_siglum": "(Rs: Robertson's siglum); Liebermann's Ai for the Add. 14252 part",
+   "guide_anchor": "Rs; Ai",
+   "liebermann_date": "Ai: c. 1210–20; compiler writes 1206–16",
+   "liebermann_page": "xviii (Ai)",
+   "wormald_date": "s. xiii^in (p. 237); very close in date to the London collection itself (p. 238)",
+   "wormald_origin": "Medieval provenance London Guildhall (p. 237)",
+   "laws": "London collection ('Leges Anglorum'): Quadripartitus texts arranged chronologically (see London column of Table 4.7) and post-conquest texts",
+   "laws_liebermann": "Rs: Wl art retr, Hn Lond, Hn; Ai: Lib Lond",
+   "other_contents": "Its copy of Glanvill was later separated and augmented with London material (p. 238). An earlier 'fair copy', similar in size to Textus Roffensis (p. 253).",
+   "overview": "An early-thirteenth-century copy of the London collection (Leges Anglorum), made very soon after the compilation itself and kept at the Guildhall in the Middle Ages; Wormald finds signs in it that the collection's case was still being worked out during copying. The Glanvill once in the same book was afterwards detached and expanded with London material; Wormald describes the volume as a fair copy, roughly the size of Textus Roffensis.",
+   "liebermann_superseded": "",
+   "pages": "237–8; 253; 237 n. 303",
+   "key_quote": "Rs (6a) is a copy very close in date to the work itself (p. 238)",
+   "doubts": "GUIDE: Rs is in the guide only as Robertson's siglum, with no date; BL Add. MS 14252 is in the guide separately as Liebermann's 'Ai' (c. 1210–20). Wormald treats them as one manuscript (Rylands Lat. 155 + Add. 14252). Liebermann's discovery of this MS upheld his date for the London collection (p. 237 n. 303). Wormald does not say which part (Rylands or Add. 14252) holds the separated Glanvill; the draft overview's assignment of it to the BL part was unsupported and has been removed.",
+   "guide_shelfmark": "Manchester, John Rylands Library, MS Latin 155 | London, British Library, Additional MS 14252",
+   "in_guide": "yes",
+   "verify_notes": [
+    "Checked p. 237 (image: s. xiiiⁱⁿ confirmed), 238, 252–3.",
+    "Overview: removed unsupported claim that the separated Glanvill section is the BL part; added Wormald's 'fair copy' description (p. 253). Pages: size comparison is on p. 253 only."
+   ],
+   "part": ""
+  }
+ ],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "London, British Library, Additional MS 14252 (with Manchester, John Rylands Library, MS Latin 155, Rs: one book)",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "c. 1210–20; compiler writes 1206–16",
+    "ref": "Gesetze I, p. xviii"
+   },
+   {
+    "by": "Wormald",
+    "text": "s. xiiiⁱⁿ",
+    "ref": "Wormald, MEL, p. 237"
+   }
+  ],
+  "laws": "Lib Lond",
+  "laws_note": {
+   "by": "Wormald",
+   "text": "Ai and Rs are parts of one manuscript, Rylands Lat. 155 + BL Add. 14252, a copy of the London collection.",
+   "ref": "Wormald, MEL, p. 237"
+  },
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xviii",
+    "text": "A London municipal collection written c. 1210–20 in the London Guildhall (not the autograph, judging by scribal errors); f. 1–88 contain only the last chapters of the Leges Anglorum saec. XIII in. Londoniis collectae (the beginning is torn away), followed by Latin and French material almost wholly on London's constitution, law, privileges, trade and administration by a London citizen compiler; later the Libertas Londoniensis (f. 104v), De excubiis and a list of 1212 on London's charters."
+   },
+   {
+    "by": "Wormald",
+    "ref": "Wormald, MEL, pp. 237–8",
+    "text": "An early-thirteenth-century copy of the London collection (Leges Anglorum), made very soon after the compilation itself and kept at the Guildhall in the Middle Ages; Wormald finds signs in it that the collection's case was still being worked out during copying. The Glanvill once in the same book was afterwards detached and expanded with London material; Wormald describes the volume as a fair copy, roughly the size of Textus Roffensis."
+   }
+  ]
+ }
+}

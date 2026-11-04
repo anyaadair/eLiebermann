@@ -1,0 +1,38 @@
+{
+ "id": "Ch",
+ "order": 31,
+ "anchor": "Ch",
+ "label": "Ch",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Ch",
+  "description_de": "Cambridge Corpus Christi College 44",
+  "shelfmark_as_given": "Cambridge, Corpus Christi College, MS 44",
+  "date": "c. 1040–80",
+  "laws": "Sacr cor, Iud Dei",
+  "page": "xxi",
+  "notes": "Pontifical for an archbishop of Canterbury, with the coronation oath in the consecratio regis (p. 278) and Iudicium Dei IX and I–III; most closely related to Rj and Vt."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Cambridge, Corpus Christi College, MS 44",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "c. 1040–80",
+    "ref": "Gesetze I, p. xxi"
+   }
+  ],
+  "laws": "Sacr cor, Iud Dei",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxi",
+    "text": "Pontifical for an archbishop of Canterbury, with the coronation oath in the consecratio regis (p. 278) and Iudicium Dei IX and I–III; most closely related to Rj and Vt."
+   }
+  ]
+ }
+}

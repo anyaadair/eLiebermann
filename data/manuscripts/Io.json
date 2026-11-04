@@ -1,0 +1,38 @@
+{
+ "id": "Io",
+ "order": 103,
+ "anchor": "Io",
+ "label": "Io",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Io",
+  "description_de": "Cotton Otho B XIII",
+  "shelfmark_as_given": "London, British Library, Cotton MS Otho B.xiii (manuscript of Pseudo-Ingulf, mostly burnt in 1731)",
+  "date": "c. 1470",
+  "laws": "Leis Wl",
+  "page": "xxxi",
+  "notes": "An Ingulf manuscript of c. 1470, now mostly burnt, from which Selden printed Leis Wl (Eadmeri Hist. Nov., 1623)."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "London, British Library, Cotton MS Otho B.xiii (manuscript of Pseudo-Ingulf, mostly burnt in 1731)",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "c. 1470",
+    "ref": "Gesetze I, p. xxxi"
+   }
+  ],
+  "laws": "Leis Wl",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxxi",
+    "text": "An Ingulf manuscript of c. 1470, now mostly burnt, from which Selden printed Leis Wl (Eadmeri Hist. Nov., 1623)."
+   }
+  ]
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "id": "Sin",
+ "order": 176,
+ "anchor": "Sin",
+ "label": "Sin",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Sin",
+  "description_de": "Mag. Sinicius camerarius pape (Liber censuum eccl. Rom.)",
+  "shelfmark_as_given": "The Liber censuum of the Roman Church (sentences brought by Master Sinicius, papal chamberlain, 1267)",
+  "date": "1267",
+  "laws": "In Cn, ECf",
+  "page": "xxxix",
+  "notes": "Master Sinicius, papal chamberlain and nuncio in England, brought to the Curia in 1267 sentences on Peter's Pence from Instituta Cnuti (Ip Hunt class: I Cn Pr., 11) and ECf 10; they stand in the Liber censuum of the Roman church, in Vatican MS Christina reg. 451 (17th century) and in Vc."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "The Liber censuum of the Roman Church (sentences brought by Master Sinicius, papal chamberlain, 1267)",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "1267",
+    "ref": "Gesetze I, p. xxxix"
+   }
+  ],
+  "laws": "In Cn, ECf",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxxix",
+    "text": "Master Sinicius, papal chamberlain and nuncio in England, brought to the Curia in 1267 sentences on Peter's Pence from Instituta Cnuti (Ip Hunt class: I Cn Pr., 11) and ECf 10; they stand in the Liber censuum of the Roman church, in Vatican MS Christina reg. 451 (17th century) and in Vc."
+   }
+  ]
+ }
+}

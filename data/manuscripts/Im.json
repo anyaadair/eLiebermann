@@ -1,0 +1,38 @@
+{
+ "id": "Im",
+ "order": 101,
+ "anchor": "Im",
+ "label": "Im",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Im",
+  "description_de": "'Marsham's vetus Codex', gedruckt von Fulman",
+  "shelfmark_as_given": "“Marsham’s old codex” of Pseudo-Ingulf, now lost; printed by William Fulman (Oxford, 1684)",
+  "date": "14./15th century",
+  "laws": "Leis Wl",
+  "page": "xxxi",
+  "notes": "From 'Marsham's old codex', of the 14th/15th century, Fulman printed Ingulf with Leis Wl ([Fell] Rerum Angl. script., Oxford 1684)."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "“Marsham’s old codex” of Pseudo-Ingulf, now lost; printed by William Fulman (Oxford, 1684)",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "14./15th century",
+    "ref": "Gesetze I, p. xxxi"
+   }
+  ],
+  "laws": "Leis Wl",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxxi",
+    "text": "From 'Marsham's old codex', of the 14th/15th century, Fulman printed Ingulf with Leis Wl ([Fell] Rerum Angl. script., Oxford 1684)."
+   }
+  ]
+ }
+}

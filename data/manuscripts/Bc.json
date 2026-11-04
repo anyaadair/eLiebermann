@@ -1,0 +1,38 @@
+{
+ "id": "Bc",
+ "order": 19,
+ "anchor": "Bc",
+ "label": "Bc",
+ "status": "not seen by Liebermann",
+ "display": true,
+ "liebermann": {
+  "siglum": "Bc",
+  "description_de": "Liber pontificalis Beccensis monasterii",
+  "shelfmark_as_given": "Pontifical of the abbey of Le Bec (known from Martène’s edition)",
+  "date": "12/13th century",
+  "laws": "Iud Dei",
+  "page": "xix",
+  "notes": "Pontifical of Bec, from which Martène edited Iudicia Dei XII; Zeumer and Liebermann print from Martène."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Pontifical of the abbey of Le Bec (known from Martène’s edition)",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "12/13th century",
+    "ref": "Gesetze I, p. xix"
+   }
+  ],
+  "laws": "Iud Dei",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xix",
+    "text": "Pontifical of Bec, from which Martène edited Iudicia Dei XII; Zeumer and Liebermann print from Martène."
+   }
+  ]
+ }
+}

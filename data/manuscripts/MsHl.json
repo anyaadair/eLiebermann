@@ -1,0 +1,38 @@
+{
+ "id": "MsHl",
+ "order": 87,
+ "anchor": "MsHl",
+ "label": "Hl",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Hl",
+  "description_de": "British Museum Harley 458 (einst Le Neve gehörig)",
+  "shelfmark_as_given": "London, British Library, Harley MS 458 (formerly Le Neve’s)",
+  "date": "c. 1225; f. 4 c. 1250",
+  "laws": "CHn cor",
+  "page": "xxx",
+  "notes": "c. 1225: f. 1 CHn cor (Westminster class), f. 2 charters of Stephen and Henry II; f. 4 (c. 1250) CHn cor in French; f. 5 (first hand) Stephen's and Henry II's charters in French."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "London, British Library, Harley MS 458 (formerly Le Neve’s)",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "c. 1225; f. 4 c. 1250",
+    "ref": "Gesetze I, p. xxx"
+   }
+  ],
+  "laws": "CHn cor",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxx",
+    "text": "c. 1225: f. 1 CHn cor (Westminster class), f. 2 charters of Stephen and Henry II; f. 4 (c. 1250) CHn cor in French; f. 5 (first hand) Stephen's and Henry II's charters in French."
+   }
+  ]
+ }
+}

@@ -1,0 +1,68 @@
+{
+ "id": "l",
+ "order": 118,
+ "anchor": "l",
+ "label": "l",
+ "status": "lost",
+ "display": true,
+ "liebermann": {
+  "siglum": "l",
+  "description_de": "Mittelalterliche Vorlage für Ld",
+  "shelfmark_as_given": "Lambarde’s source for Ld, which Liebermann took to be a lost medieval manuscript",
+  "date": "",
+  "laws": "",
+  "page": "xxxii",
+  "notes": "The source from which Lambarde printed (Ld). Liebermann took it to be a lost medieval manuscript (“mittelalterliche Zwischenstufe”)."
+ },
+ "wormald": [
+  {
+   "wormald_heading": "8 (v) The Lambarde problem",
+   "shelfmark": "Liebermann's posited lost source of Lambarde's Archaionomia ('l')",
+   "wormald_siglum": "",
+   "liebermann_siglum": "l",
+   "guide_anchor": "l",
+   "liebermann_date": "",
+   "liebermann_page": "xxxii",
+   "wormald_date": "",
+   "wormald_origin": "",
+   "laws": "I–II Cn (as discussed by Wormald)",
+   "laws_liebermann": "",
+   "other_contents": "",
+   "overview": "Liebermann posited a lost vernacular manuscript, related to Quadripartitus, behind Lambarde's text of Cnut. Wormald shows that his stemma for Lambarde's Cnut (drawing on Harley 55, Nero A.i, Corpus 383 and this lost witness) was accurate, except that 'l' was not a medieval book but Nowell's own emended transcript, which survives at Canterbury.",
+   "liebermann_superseded": "Liebermann took 'l' to be a lost medieval manuscript; Wormald (p. 261) identifies it with Nowell's sixteenth-century transcript of Harley 55(B), Canterbury Cathedral Lit. MS E.2, emended from Nero A.i(A), Corpus 383 and Quadripartitus.",
+   "pages": "261 and n. 377 (citing Gesetze III, p. 193 (10))",
+   "key_quote": "'was thus spot on, except that the lost manuscript, \"l\", was Nowell's transcript' (p. 261)",
+   "doubts": "Wormald's identification concerns Cnut; for Grately, Exeter, Iudex and probably Af–Ine he accepts a genuinely lost manuscript (p. 262). The guide's 'l' entry already quotes Wormald correctly.",
+   "guide_shelfmark": "Lambarde’s source for Ld, which Liebermann took to be a lost medieval manuscript",
+   "in_guide": "yes",
+   "verify_notes": [
+    "p. 261 and n. 377 checked against image; quotation verbatim. Checked, no changes."
+   ],
+   "part": ""
+  }
+ ],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Lambarde’s source for Ld, which Liebermann took to be a lost medieval manuscript",
+  "dates": [],
+  "laws": "",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxxii",
+    "text": "The source from which Lambarde printed (Ld). Liebermann took it to be a lost medieval manuscript (“mittelalterliche Zwischenstufe”)."
+   },
+   {
+    "by": "Wormald",
+    "ref": "Wormald, MEL, pp. 261 and n. 377 (citing Gesetze III, p. 193 (10))",
+    "text": "Liebermann posited a lost vernacular manuscript, related to Quadripartitus, behind Lambarde's text of Cnut. Wormald shows that his stemma for Lambarde's Cnut (drawing on Harley 55, Nero A.i, Corpus 383 and this lost witness) was accurate, except that 'l' was not a medieval book but Nowell's own emended transcript, which survives at Canterbury."
+   },
+   {
+    "by": "Wormald",
+    "kind": "correction",
+    "text": "Liebermann took 'l' to be a lost medieval manuscript; Wormald (p. 261) identifies it with Nowell's sixteenth-century transcript of Harley 55(B), Canterbury Cathedral Lit. MS E.2, emended from Nero A.i(A), Corpus 383 and Quadripartitus."
+   }
+  ]
+ }
+}

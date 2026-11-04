@@ -1,0 +1,83 @@
+{
+ "id": "F",
+ "order": 69,
+ "anchor": "F",
+ "label": "F",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "F",
+  "description_de": "British Museum Cotton Nero E I",
+  "shelfmark_as_given": "London, British Library, Cotton MS Nero E.i",
+  "date": "c. 1030",
+  "laws": "IV Eg",
+  "page": "xxv",
+  "notes": "After 11th-century Worcester saints' lives and a fragment of a Worcester cartulary come two unrelated leaves (f. 391 f.) that once ended an English liturgical book, with IV Edgar (now foliated II 185v)."
+ },
+ "wormald": [
+  {
+   "wormald_heading": "2 (i) BL, Cotton MS Nero E.i",
+   "shelfmark": "London, British Library, Cotton MS Nero E.i (vol. II), ff. 185–6",
+   "wormald_siglum": "F",
+   "liebermann_siglum": "F",
+   "guide_anchor": "F",
+   "liebermann_date": "c. 1030",
+   "liebermann_page": "xxv",
+   "wormald_date": "s. x/xi (Ker's dating of the script, p. 182; Table 4.1, p. 164); the liturgical text on f. 185r is later than the code (p. 182)",
+   "wormald_origin": "Worcester (Table 4.1, p. 164; argued cumulatively pp. 184–5). The two leaves once belonged to a fairly imposing (probably liturgical) book (pp. 182–3); possibly incorporated early in the eleventh-century Worcester cathedral cartulary, which was probably bound into one of the sister-Bibles of the Codex Amiatinus at Worcester (perhaps the ‘Offa Bible’) (p. 184). A brown-ink foliation earlier than Cotton’s arrangement shows the law leaves standing between two pairs of cartulary leaves (p. 183 and n. 87). Possibly in roughly their present company before Cotton bound them (p. 183); Ker allowed they might have been gathered by Joscelyn from elsewhere, which Wormald thinks unlikely (p. 184).",
+   "laws": "IV Eg (complete; on f. 185v and f. 186r–v)",
+   "laws_liebermann": "IV Eg",
+   "other_contents": "The two leaves: on f. 185r an incomplete liturgical text (excerpts from Bede's commentary on Mark alternating with responses found as lections for a martyr in a thirteenth-century Worcester antiphonary), first line erased. The host volume (Nero E.i, vol. II) as listed by Cotton: last 155 leaves of part I of the Worcester legendary ('Passional', whose second part is in the Parker Library); twelfth-century Lives of Frideswide, David and Margaret; fifteen leaves of part II of the legendary (ff. 166–80); four leaves of an eleventh-century Worcester cathedral cartulary (ff. 181–4); the law leaves; two leaves of a Life of Bede (ff. 187–8, reversed); thirty-four thirteenth-century leaves of vitae and passiones (ff. 189–222) (p. 183).",
+   "overview": "Two large leaves (the largest of all the surviving law manuscripts) carrying a complete copy of IV Edgar, written about the turn of the tenth and eleventh centuries: the second-oldest extant law manuscript and, apart from three Wulfstan books, the copy nearest in date to the code. The pages were ruled for two columns and seem to come from a substantial liturgical volume; a later scribe added a liturgical text on the preceding page. Wormald suggests that they were kept from an early date within the Worcester cathedral cartulary (itself probably bound into a great Bible), and thinks their Worcester provenance all but certain even though the code concerns the Danelaw; Oswald, bishop of Worcester and archbishop of York, may explain its presence there.",
+   "liebermann_superseded": "Liebermann dated the leaves c. 1030 and called them unrelated to the cartulary leaves beside them; Wormald follows Ker’s date of s. x/xi, making it the second-oldest surviving law manuscript, and suggests the leaves may have been lodged in the Worcester cartulary from an early date (pp. 182–4).",
+   "pages": "182–5, 189–90; 164 (Table 4.1); 181 (size); 182 nn. 82–3; 183 nn. 85–8; 184 nn. 89–92; 189 n. 112; 191 n. 117",
+   "key_quote": "'these pages were once in a fairly imposing liturgical collection' (p. 183)",
+   "doubts": "GUIDE: Liebermann's date 'c. 1030' is superseded by Ker/Wormald 's. x/xi'. GUIDE: the guide's folio reference 'f. 391 f.' reflects a different foliation; Wormald (p. 182) gives the current foliation as ff. 185–6 (vol. II), noting (p. 183 n. 87) a further foliation (its age not stated) making the laws ff. 389–90 and the cartulary ff. 387–8, 391–2. The guide calls the leaves 'unrelated'; Wormald suggests they may have been lodged in the Worcester cartulary at an early date. Wormald gives size 310 × 268 mm (p. 181). The ‘code's other manuscript’ (close kin and perhaps descendant, from Worcester, p. 184) is CCCC 265 (C): Wormald's cross-reference is to p. 219, his discussion of that book (resolved). Clause punctuation: significant breaks marked by punctus versus and a large but unhighlighted initial (p. 189, n. 112). Text has few errors (IV Eg 1:5a, 6:2; scribe self-corrects at 12:1, 15) (p. 182 n. 83). Harley 6018 (Cotton's catalogue) lists IV Eg as a 'Carta Saxonica' (p. 184 n. 90).",
+   "guide_shelfmark": "London, British Library, Cotton MS Nero E.i",
+   "in_guide": "yes",
+   "verify_notes": [
+    "Checked pp. 181–5, 189–91 and Table 4.1 (image).",
+    "liebermann_superseded and overview: ‘argues … long lodged’ softened to ‘suggests … may have been lodged from an early date’ (p. 184: ‘Possibly’); added ‘second oldest’ (p. 182).",
+    "origin: Cotton binding statement aligned with p. 183; ‘Offa Bible’ marked as possible.",
+    "doubts: Wormald does not call the second foliation ‘older’.",
+    "doubts: resolved the ‘other manuscript’ query — p. 184’s cross-reference to p. 219 is CCCC 265."
+   ],
+   "part": ""
+  }
+ ],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "London, British Library, Cotton MS Nero E.i",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "c. 1030",
+    "ref": "Gesetze I, p. xxv"
+   },
+   {
+    "by": "Wormald",
+    "text": "s. x/xi",
+    "ref": "Wormald, MEL, pp. 164, 182"
+   }
+  ],
+  "laws": "IV Eg",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxv",
+    "text": "After 11th-century Worcester saints' lives and a fragment of a Worcester cartulary come two unrelated leaves (f. 391 f.) that once ended an English liturgical book, with IV Edgar (now foliated II 185v)."
+   },
+   {
+    "by": "Wormald",
+    "ref": "Wormald, MEL, pp. 182–5, 189–90",
+    "text": "Two large leaves (the largest of all the surviving law manuscripts) carrying a complete copy of IV Edgar, written about the turn of the tenth and eleventh centuries: the second-oldest extant law manuscript and, apart from three Wulfstan books, the copy nearest in date to the code. The pages were ruled for two columns and seem to come from a substantial liturgical volume; a later scribe added a liturgical text on the preceding page. Wormald suggests that they were kept from an early date within the Worcester cathedral cartulary (itself probably bound into a great Bible), and thinks their Worcester provenance all but certain even though the code concerns the Danelaw; Oswald, bishop of Worcester and archbishop of York, may explain its presence there."
+   },
+   {
+    "by": "Wormald",
+    "kind": "correction",
+    "text": "Liebermann dated the leaves c. 1030 and called them unrelated to the cartulary leaves beside them; Wormald follows Ker’s date of s. x/xi, making it the second-oldest surviving law manuscript, and suggests the leaves may have been lodged in the Worcester cartulary from an early date (pp. 182–4)."
+   }
+  ]
+ }
+}

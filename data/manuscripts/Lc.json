@@ -1,0 +1,38 @@
+{
+ "id": "Lc",
+ "order": 122,
+ "anchor": "Lc",
+ "label": "Lc",
+ "status": "not seen by Liebermann",
+ "display": true,
+ "liebermann": {
+  "siglum": "Lc",
+  "description_de": "Lincoln cathedral, 'Registrum antiquissimum Remigii' A I 5",
+  "shelfmark_as_given": "Lincoln Cathedral, Registrum antiquissimum (A I 5)",
+  "date": "c. 1210",
+  "laws": "Wl ep",
+  "page": "xxxiii",
+  "notes": "Lincoln cathedral register; ff. 1 and 9 Wl ep, c. 1210."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Lincoln Cathedral, Registrum antiquissimum (A I 5)",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "c. 1210",
+    "ref": "Gesetze I, p. xxxiii"
+   }
+  ],
+  "laws": "Wl ep",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxxiii",
+    "text": "Lincoln cathedral register; ff. 1 and 9 Wl ep, c. 1210."
+   }
+  ]
+ }
+}

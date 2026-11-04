@@ -1,0 +1,38 @@
+{
+ "id": "Pa",
+ "order": 151,
+ "anchor": "Pa",
+ "label": "Pa",
+ "status": "not seen by Liebermann",
+ "display": true,
+ "liebermann": {
+  "siglum": "Pa",
+  "description_de": "Paris, Biblioth. nationale 6044",
+  "shelfmark_as_given": "Paris, Bibliothèque nationale de France, MS 6044",
+  "date": "16th-century copy",
+  "laws": "In Cn",
+  "page": "xxxvii",
+  "notes": "A 16th-century copy of Henry of Huntingdon with Instituta Cnuti, according to Arnold copied from Lb."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Paris, Bibliothèque nationale de France, MS 6044",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "16th-century copy",
+    "ref": "Gesetze I, p. xxxvii"
+   }
+  ],
+  "laws": "In Cn",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxxvii",
+    "text": "A 16th-century copy of Henry of Huntingdon with Instituta Cnuti, according to Arnold copied from Lb."
+   }
+  ]
+ }
+}

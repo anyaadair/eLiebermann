@@ -1,0 +1,38 @@
+{
+ "id": "Isp",
+ "order": 106,
+ "anchor": "Isp",
+ "label": "Isp",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Isp",
+  "description_de": "Ingulf's ms. veterrimum aus Crowland, gedruckt von Spelman (Concilia 1639)",
+  "shelfmark_as_given": "Pseudo-Ingulf’s “very old manuscript” from Crowland, now lost; printed by Henry Spelman (Concilia, 1639)",
+  "date": "14./15th century",
+  "laws": "Leis Wl",
+  "page": "xxxi",
+  "notes": "Spelman printed from Ingulf's 'very old manuscript', of the 14th/15th century, from Crowland and perhaps the exemplar of Im, only five chapters of Leis Wl. MS Paris was copied from Isp."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Pseudo-Ingulf’s “very old manuscript” from Crowland, now lost; printed by Henry Spelman (Concilia, 1639)",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "14./15th century",
+    "ref": "Gesetze I, p. xxxi"
+   }
+  ],
+  "laws": "Leis Wl",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxxi",
+    "text": "Spelman printed from Ingulf's 'very old manuscript', of the 14th/15th century, from Crowland and perhaps the exemplar of Im, only five chapters of Leis Wl. MS Paris was copied from Isp."
+   }
+  ]
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "id": "Ko",
+ "order": 116,
+ "anchor": "Ko",
+ "label": "Ko",
+ "status": "not seen by Liebermann",
+ "display": true,
+ "liebermann": {
+  "siglum": "Ko",
+  "description_de": "Kopenhagen Arne-Magnaeanus 1 (die von Kolderup-Rosenvinge gedruckte Abschrift)",
+  "shelfmark_as_given": "Copenhagen, Arnamagnæan Collection 1 (a transcript, printed by Kolderup-Rosenvinge)",
+  "date": "before 1697",
+  "laws": "In Cn",
+  "page": "xxxii",
+  "notes": "Transcript of In Cn printed by Kolderup-Rosenvinge, made for F. Rostgaard († 1745) from Cb and collated with it in 1697."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Copenhagen, Arnamagnæan Collection 1 (a transcript, printed by Kolderup-Rosenvinge)",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "before 1697",
+    "ref": "Gesetze I, p. xxxii"
+   }
+  ],
+  "laws": "In Cn",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxxii",
+    "text": "Transcript of In Cn printed by Kolderup-Rosenvinge, made for F. Rostgaard († 1745) from Cb and collated with it in 1697."
+   }
+  ]
+ }
+}

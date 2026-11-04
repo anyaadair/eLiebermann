@@ -1,0 +1,33 @@
+{
+ "id": "LatVersion",
+ "order": 211,
+ "anchor": "LatVersion",
+ "label": "L",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "L",
+  "description_de": "lateinische Fassung",
+  "shelfmark_as_given": "the Latin version",
+  "date": "",
+  "laws": "VI Atr, IV Eg, Leis Wl",
+  "page": "",
+  "notes": "After a citation, L names the Latin version that Liebermann prints beside the text: for VI Atr the Latin paraphrase in MS K (VI Atr Lat, which has its own pages in the laws database), for IV Eg and for Leis Wl their Latin translations. So VI Atr 2 L is clause 2 of the Latin paraphrase. Not to be confused with the manuscript L used by Thorpe for ECf retr."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "the Latin version",
+  "dates": [],
+  "laws": "VI Atr, IV Eg, Leis Wl",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "",
+    "text": "After a citation, L names the Latin version that Liebermann prints beside the text: for VI Atr the Latin paraphrase in MS K (VI Atr Lat, which has its own pages in the laws database), for IV Eg and for Leis Wl their Latin translations. So VI Atr 2 L is clause 2 of the Latin paraphrase. Not to be confused with the manuscript L used by Thorpe for ECf retr."
+   }
+  ]
+ },
+ "link_automatically": "no"
+}

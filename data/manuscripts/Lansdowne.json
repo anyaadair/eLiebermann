@@ -1,0 +1,38 @@
+{
+ "id": "Lansdowne",
+ "order": 120,
+ "anchor": "Lansdowne",
+ "label": "Lansdowne",
+ "status": "not seen by Liebermann",
+ "display": true,
+ "liebermann": {
+  "siglum": "Lansdowne",
+  "description_de": "London British Museum Lansdowne 558",
+  "shelfmark_as_given": "London, British Library, Lansdowne MS 558",
+  "date": "late 16th century",
+  "laws": "Ine, Af, Ew, As, Em, Eg, Cn, ECf",
+  "page": "xxxiii",
+  "notes": "f. 116, late 16th century: English translation 'by J. Warnford' made from Ld of Ine, Af, Ew, As, Em, Eg, Cn and ECf."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "London, British Library, Lansdowne MS 558",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "late 16th century",
+    "ref": "Gesetze I, p. xxxiii"
+   }
+  ],
+  "laws": "Ine, Af, Ew, As, Em, Eg, Cn, ECf",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxxiii",
+    "text": "f. 116, late 16th century: English translation 'by J. Warnford' made from Ld of Ine, Af, Ew, As, Em, Eg, Cn and ECf."
+   }
+  ]
+ }
+}

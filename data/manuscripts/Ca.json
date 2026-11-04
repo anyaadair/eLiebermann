@@ -1,0 +1,38 @@
+{
+ "id": "Ca",
+ "order": 26,
+ "anchor": "Ca",
+ "label": "Ca",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Ca",
+  "description_de": "Cambridge Corpus Christi College 422, früher The Rede boke of Derbye",
+  "shelfmark_as_given": "Cambridge, Corpus Christi College, MS 422, formerly The Rede boke of Derbye",
+  "date": "p. 16 and p. 310 11th century; p. 319 c. 1070",
+  "laws": "Excom, Iud Dei",
+  "page": "xx",
+  "notes": "Excommunication V (in the middle of Solomon and Saturn), Excommunication VI in another hand, and, in a new quire of c. 1070 from Winchester, Iudicium Dei I ff."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Cambridge, Corpus Christi College, MS 422, formerly The Rede boke of Derbye",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "p. 16 and p. 310 11th century; p. 319 c. 1070",
+    "ref": "Gesetze I, p. xx"
+   }
+  ],
+  "laws": "Excom, Iud Dei",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xx",
+    "text": "Excommunication V (in the middle of Solomon and Saturn), Excommunication VI in another hand, and, in a new quire of c. 1070 from Winchester, Iudicium Dei I ff."
+   }
+  ]
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "id": "Hy",
+ "order": 97,
+ "anchor": "Hy",
+ "label": "Hy",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Hy",
+  "description_de": "British Museum Harley 1348",
+  "shelfmark_as_given": "London, British Library, Harley MS 1348",
+  "date": "c. 1375",
+  "laws": "Wl art, ECf retr",
+  "page": "xxxi",
+  "notes": "c. 1375: f. 1 Tripartita (Wl art, ECf retr), f. 8b Genealogia Normannica; derived together with Pe from pehy."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "London, British Library, Harley MS 1348",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "c. 1375",
+    "ref": "Gesetze I, p. xxxi"
+   }
+  ],
+  "laws": "Wl art, ECf retr",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxxi",
+    "text": "c. 1375: f. 1 Tripartita (Wl art, ECf retr), f. 8b Genealogia Normannica; derived together with Pe from pehy."
+   }
+  ]
+ }
+}

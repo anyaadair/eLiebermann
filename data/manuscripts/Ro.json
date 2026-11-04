@@ -1,0 +1,38 @@
+{
+ "id": "Ro",
+ "order": 167,
+ "anchor": "Ro",
+ "label": "Ro",
+ "status": "not seen by Liebermann",
+ "display": true,
+ "liebermann": {
+  "siglum": "Ro",
+  "description_de": "Rouen Bibliothèque municipale 369 (Y 7)",
+  "shelfmark_as_given": "Rouen, Bibliothèque municipale, MS 369 (Y 7)",
+  "date": "late 10th century",
+  "laws": "Sacr cor",
+  "page": "xxxix",
+  "notes": "Benedictional and pontifical of the late 10th century from Newminster, Winchester, for its abbot Æthelgar (later bishop of Selsey and archbishop of Canterbury), formerly owned by Archbishop Robert of Canterbury, then Rouen Cathedral; f. 162 Consecratio regis with the Sacramentum coronationis. Cf. Rj."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Rouen, Bibliothèque municipale, MS 369 (Y 7)",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "late 10th century",
+    "ref": "Gesetze I, p. xxxix"
+   }
+  ],
+  "laws": "Sacr cor",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxxix",
+    "text": "Benedictional and pontifical of the late 10th century from Newminster, Winchester, for its abbot Æthelgar (later bishop of Selsey and archbishop of Canterbury), formerly owned by Archbishop Robert of Canterbury, then Rouen Cathedral; f. 162 Consecratio regis with the Sacramentum coronationis. Cf. Rj."
+   }
+  ]
+ }
+}

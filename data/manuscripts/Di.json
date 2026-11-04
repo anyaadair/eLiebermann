@@ -1,0 +1,47 @@
+{
+ "id": "Di",
+ "order": 56,
+ "anchor": "Di",
+ "label": "Di",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Di",
+  "description_de": "Oxford Bodley Digby 13",
+  "shelfmark_as_given": "Oxford, Bodleian Library, MS Digby 13",
+  "date": "c. 1175",
+  "laws": "In Cn",
+  "page": "xxiii",
+  "notes": "f. 41, in a different hand and quire from the rest of the volume, the Instituta Cnuti; the quire containing I Cn 13–II Cn 15 is lost."
+ },
+ "wormald": [],
+ "others": [
+  {
+   "by": "O’Brien",
+   "text": "O’Brien (2003): mid-12th century. The one manuscript of the short text (ending at III 44) that is not part of Henry of Huntingdon; it shares a common source (O’Brien’s β; posited by Liebermann as dhu) with the Huntingdon interpolation."
+  }
+ ],
+ "display_fields": {
+  "shelfmark": "Oxford, Bodleian Library, MS Digby 13",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "c. 1175",
+    "ref": "Gesetze I, p. xxiii"
+   }
+  ],
+  "laws": "In Cn",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxiii",
+    "text": "f. 41, in a different hand and quire from the rest of the volume, the Instituta Cnuti; the quire containing I Cn 13–II Cn 15 is lost."
+   },
+   {
+    "by": "O’Brien",
+    "text": "O’Brien (2003): mid-12th century. The one manuscript of the short text (ending at III 44) that is not part of Henry of Huntingdon; it shares a common source (O’Brien’s β; posited by Liebermann as dhu) with the Huntingdon interpolation."
+   }
+  ]
+ }
+}

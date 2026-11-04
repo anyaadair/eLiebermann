@@ -1,0 +1,38 @@
+{
+ "id": "Db",
+ "order": 51,
+ "anchor": "Db",
+ "label": "Db",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Db",
+  "description_de": "Dublin Trinity College E 5, 20",
+  "shelfmark_as_given": "Dublin, Trinity College, MS E 5, 20",
+  "date": "c. 1475",
+  "laws": "ECf retr",
+  "page": "xxiii",
+  "notes": "Paper; from the Tripartita, f. 1 ECf retr with Rubricator II from 9 on (beginning torn away), then the Genealogia Normannica; readings closest to L. Followed by a Southwark tract De fundatoribus ecclesiarum and a French romance."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Dublin, Trinity College, MS E 5, 20",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "c. 1475",
+    "ref": "Gesetze I, p. xxiii"
+   }
+  ],
+  "laws": "ECf retr",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxiii",
+    "text": "Paper; from the Tripartita, f. 1 ECf retr with Rubricator II from 9 on (beginning torn away), then the Genealogia Normannica; readings closest to L. Followed by a Southwark tract De fundatoribus ecclesiarum and a French romance."
+   }
+  ]
+ }
+}

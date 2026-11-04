@@ -1,0 +1,38 @@
+{
+ "id": "Insp",
+ "order": 102,
+ "anchor": "Insp",
+ "label": "Insp",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Insp",
+  "description_de": "London, Public record office, Rot. Inspeximus chartarum, a. 1378, mb. 13",
+  "shelfmark_as_given": "London, The National Archives (formerly the Public Record Office), Inspeximus roll of 1378 (Rot. Inspeximus chartarum), m. 13",
+  "date": "1378",
+  "laws": "Wl ep",
+  "page": "xxxi",
+  "notes": "Inspeximus roll of 1378, membrane 13 confirms Wl ep."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "London, The National Archives (formerly the Public Record Office), Inspeximus roll of 1378 (Rot. Inspeximus chartarum), m. 13",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "1378",
+    "ref": "Gesetze I, p. xxxi"
+   }
+  ],
+  "laws": "Wl ep",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxxi",
+    "text": "Inspeximus roll of 1378, membrane 13 confirms Wl ep."
+   }
+  ]
+ }
+}

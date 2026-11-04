@@ -1,0 +1,38 @@
+{
+ "id": "Cust",
+ "order": 46,
+ "anchor": "Cust",
+ "label": "Cust",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Cust",
+  "description_de": "Liber custumarum der Gildhalle zu London",
+  "shelfmark_as_given": "London, Guildhall (Corporation of London), Liber Custumarum",
+  "date": "14th century",
+  "laws": "CHn cor, Hn Lond, Wl Lond",
+  "page": "xxii",
+  "notes": "Guildhall custumal with CHn cor (f. 13v), Hn Lond twice (f. 14v and f. 187) and Wl Lond (f. 187)."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "London, Guildhall (Corporation of London), Liber Custumarum",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "14th century",
+    "ref": "Gesetze I, p. xxii"
+   }
+  ],
+  "laws": "CHn cor, Hn Lond, Wl Lond",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxii",
+    "text": "Guildhall custumal with CHn cor (f. 13v), Hn Lond twice (f. 14v and f. 187) and Wl Lond (f. 187)."
+   }
+  ]
+ }
+}

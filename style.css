@@ -1335,6 +1335,13 @@ mark.find-hit--current { background: #ffc94d; outline: 2px solid #e0a100; }
 .gl-more { margin-top: 0.15rem; font-size: 0.85rem; }
 .gl-more summary { cursor: pointer; color: var(--link); font-family: var(--sans); font-size: 0.78rem; width: max-content; max-width: 100%; }
 .gl-more p { margin: 0.25rem 0 0.35rem; color: #4a4f57; }
+/* Manuscripts guide: each date and note says whose it is (Liebermann, Wormald, O'Brien …) */
+.gl-by { font-family: var(--sans); font-size: 0.78em; font-weight: 600; color: var(--muted); letter-spacing: 0.01em; }
+.gl-ref { color: var(--muted); font-size: 0.9em; }
+.gl-dateline { display: block; }
+.gl-dateline + .gl-dateline { margin-top: 0.2rem; }
+.gl-lawsnote { display: block; margin-top: 0.3rem; padding-left: 0.5rem; border-left: 2px solid #c9d6e6; font-size: 0.95em; }
+.gl-more p.gl-correction { padding-left: 0.5rem; border-left: 2px solid #e7cfa6; }
 .gl-tag { display: inline-block; margin-left: 0.4rem; font-family: var(--sans); font-size: 0.68rem; font-weight: 600; padding: 0 0.4rem; border-radius: 999px; background: #eef0f3; color: var(--muted); vertical-align: 0.1em; }
 /* grammatical terms: a headword (heading row, tinted), with its spellings and the terms filed under it indented */
 .glossary--gram tbody.gl-group--multi tr.gl-head th { text-align: left; padding: 0.55rem 0.75rem 0.35rem; background: #f1efe8; border-top: 1px solid var(--rule); }

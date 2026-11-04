@@ -1,0 +1,38 @@
+{
+ "id": "Ps",
+ "order": 158,
+ "anchor": "Ps",
+ "label": "Ps",
+ "status": "not seen by Liebermann",
+ "display": true,
+ "liebermann": {
+  "siglum": "Ps",
+  "description_de": "Paris, Bibliothèque nationale 943",
+  "shelfmark_as_given": "Paris, Bibliothèque nationale de France, MS 943",
+  "date": "c. 975; f. 154b early 12th century",
+  "laws": "Sacr cor, Iud Dei",
+  "page": "xxxvii",
+  "notes": "Pontifical for Sherborne, perhaps given there by Dunstan, with Old English pieces, in France from the late 11th century. Contains Sherborne documents and letters, the Consecratio regis, reginae with the Sacramentum coronationis (f. 67), Iudicium Dei I–III (ff. 89b–95b), the Excerptio de canonibus Egberti, and a 12th-century book list."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Paris, Bibliothèque nationale de France, MS 943",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "c. 975; f. 154b early 12th century",
+    "ref": "Gesetze I, p. xxxvii"
+   }
+  ],
+  "laws": "Sacr cor, Iud Dei",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxxvii",
+    "text": "Pontifical for Sherborne, perhaps given there by Dunstan, with Old English pieces, in France from the late 11th century. Contains Sherborne documents and letters, the Consecratio regis, reginae with the Sacramentum coronationis (f. 67), Iudicium Dei I–III (ff. 89b–95b), the Excerptio de canonibus Egberti, and a 12th-century book list."
+   }
+  ]
+ }
+}

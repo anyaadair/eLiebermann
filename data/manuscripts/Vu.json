@@ -1,0 +1,38 @@
+{
+ "id": "Vu",
+ "order": 204,
+ "anchor": "Vu",
+ "label": "Vu",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Vu",
+  "description_de": "British Museum, Cotton Vitellius E 17",
+  "shelfmark_as_given": "London, British Library, Cotton MS Vitellius E.xvii",
+  "date": "c. 1210; 15th century; f. 252v 14th century",
+  "laws": "Excom",
+  "page": "xlii",
+  "notes": "The so-called Benedict of Peterborough's Gesta Henrici II (f. 18, c. 1210), then Evesham local records of the 15th century, and on a flyleaf (f. 252v, 14th century) Excommunicatio XI."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "London, British Library, Cotton MS Vitellius E.xvii",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "c. 1210; 15th century; f. 252v 14th century",
+    "ref": "Gesetze I, p. xlii"
+   }
+  ],
+  "laws": "Excom",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xlii",
+    "text": "The so-called Benedict of Peterborough's Gesta Henrici II (f. 18, c. 1210), then Evesham local records of the 15th century, and on a flyleaf (f. 252v, 14th century) Excommunicatio XI."
+   }
+  ]
+ }
+}

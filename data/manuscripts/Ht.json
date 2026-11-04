@@ -1,0 +1,38 @@
+{
+ "id": "Ht",
+ "order": 95,
+ "anchor": "Ht",
+ "label": "Ht",
+ "status": "not seen by Liebermann",
+ "display": true,
+ "liebermann": {
+  "siglum": "Ht",
+  "description_de": "Oxford Bodley Hatton 54",
+  "shelfmark_as_given": "Oxford, Bodleian Library, MS Hatton 54",
+  "date": "c. 1350",
+  "laws": "Wl lad, CHn cor, Quadr",
+  "page": "xxx",
+  "notes": "William of Malmesbury's Gesta regum, c. 1350; f. 192 after § 297 the interpolation Ip Ml from Quadripartitus: Wl lad and the Praefatio to CHn cor to § 10."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Oxford, Bodleian Library, MS Hatton 54",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "c. 1350",
+    "ref": "Gesetze I, p. xxx"
+   }
+  ],
+  "laws": "Wl lad, CHn cor, Quadr",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxx",
+    "text": "William of Malmesbury's Gesta regum, c. 1350; f. 192 after § 297 the interpolation Ip Ml from Quadripartitus: Wl lad and the Praefatio to CHn cor to § 10."
+   }
+  ]
+ }
+}

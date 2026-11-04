@@ -1,0 +1,38 @@
+{
+ "id": "Cant",
+ "order": 27,
+ "anchor": "Cant",
+ "label": "Cant",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Cant",
+  "description_de": "British Museum Cotton Vespasian C XIV f. 129",
+  "shelfmark_as_given": "London, British Library, Cotton MS Vespasian C.xiv f. 129",
+  "date": "c. 1625",
+  "laws": "CHn cor",
+  "page": "xx",
+  "notes": "Collectanea of c. 1625 with the Coronation Charter of Henry I 'ex libro cartarum archiepiscopatus Cantuariensis', in the Westminster text but referring to the privilege of the Canterbury monks."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "London, British Library, Cotton MS Vespasian C.xiv f. 129",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "c. 1625",
+    "ref": "Gesetze I, p. xx"
+   }
+  ],
+  "laws": "CHn cor",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xx",
+    "text": "Collectanea of c. 1625 with the Coronation Charter of Henry I 'ex libro cartarum archiepiscopatus Cantuariensis', in the Westminster text but referring to the privilege of the Canterbury monks."
+   }
+  ]
+ }
+}

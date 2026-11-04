@@ -1,0 +1,38 @@
+{
+ "id": "Al",
+ "order": 7,
+ "anchor": "Al",
+ "label": "Al",
+ "status": "not seen by Liebermann",
+ "display": true,
+ "liebermann": {
+  "siglum": "Al",
+  "description_de": "Alençon 14",
+  "shelfmark_as_given": "Alençon, Bibliothèque municipale, MS 14",
+  "date": "c. 1100",
+  "laws": "Iud Dei",
+  "page": "xix",
+  "notes": "Manuscript once at Saint-Évroult, used by Ordericus Vitalis, mainly saints' lives largely of Anglo-Saxon origin, considered English; f. 109–16 Iudicium Dei X, printed by Martène and Zeumer, whose text Liebermann follows."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Alençon, Bibliothèque municipale, MS 14",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "c. 1100",
+    "ref": "Gesetze I, p. xix"
+   }
+  ],
+  "laws": "Iud Dei",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xix",
+    "text": "Manuscript once at Saint-Évroult, used by Ordericus Vitalis, mainly saints' lives largely of Anglo-Saxon origin, considered English; f. 109–16 Iudicium Dei X, printed by Martène and Zeumer, whose text Liebermann follows."
+   }
+  ]
+ }
+}

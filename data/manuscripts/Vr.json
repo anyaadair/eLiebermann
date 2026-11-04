@@ -1,0 +1,82 @@
+{
+ "id": "Vr",
+ "order": 200,
+ "anchor": "Vr",
+ "label": "Vr",
+ "status": "not seen by Liebermann",
+ "display": true,
+ "liebermann": {
+  "siglum": "Vr",
+  "description_de": "Rom, Vatican, Christina regina 946",
+  "shelfmark_as_given": "Vatican City, Biblioteca Apostolica Vaticana, Reg. lat. 946",
+  "date": "13th century (f. 1–71); 12th century (f. 72b ff.); 11th century (f. 75b)",
+  "laws": "X Atr",
+  "page": "xlii",
+  "notes": "Gesta Francorum to 1165, Pseudo-Turpin and other histories (13th century), customary law of the church of Avranches in various 12th-century hands, and on an added leaf (f. 75b) X Æthelred of the 11th century."
+ },
+ "wormald": [
+  {
+   "wormald_heading": "8 (i) Vatican, Codex Reginensis latina 946, f. 75v",
+   "shelfmark": "Vatican, Codex Reginensis latina 946, f. 75v (Table 4.1: Vatican Cod. Reg. lat. 946)",
+   "wormald_siglum": "Vr",
+   "liebermann_siglum": "Vr",
+   "guide_anchor": "Vr",
+   "liebermann_date": "13th century (f. 1–71); 12th century (f. 72b ff.); 11th century (f. 75b)",
+   "liebermann_page": "xlii",
+   "wormald_date": "s. xi¹ (script, after Ker), p. 257; Table 4.1, p. 165",
+   "wormald_origin": "Origin unknown ('???', Table 4.1). The Avranches leaves (ff. 72–6) were probably end- or front-leaves of an English de luxe service book (Gospel-book, Psalter or Pontifical) taken to Avranches soon after the Conquest; in the 12th century records of the obedience owed to the bishop of Avranches by the monasteries of his diocese, and by Avranches to Rouen, were added (ff. 72v, 73rv, 74rv). Now bound with an early-14th-century French historical miscellany from Queen Christina of Sweden's library, bequeathed to the Pope (p. 256).",
+   "laws": "X Atr Pr–Pr:3 (prologue and three clauses only; the code once ran on for perhaps four to six more pages now lost)",
+   "laws_liebermann": "X Atr",
+   "other_contents": "Single damaged verso (f. 75v) among five leaves (ff. 72–6: a blank bifolium ff. 72/76 and three half-sheets) carrying 12th-century and later Avranches records of episcopal obedience; bound in with an unrelated early-14th-century French historical miscellany. Wormald reconstructs an eight-leaf quire from which the leaves after f. 75 were torn out (p. 256).",
+   "overview": "A single damaged page in an eleventh-century hand, preserving the code that Liebermann discovered and printed as X Æthelred: an elaborate prologue in Wulfstan's style and three clauses that refer back to what had been decreed at Enham. The leaves seem to come from a large and costly English service book that had reached Avranches by the twelfth century, when spare pages were used for records of the obedience due from the monasteries of his diocese to the bishop of Avranches; on Wormald's reconstruction most of the code was torn out at that stage. Wormald suggests the text is a further version of the Enham code of 1008, possibly the official one, and stresses that it puts Wulfstan's legislation into a solemn setting in a book not otherwise linked to him.",
+   "liebermann_superseded": "",
+   "pages": "256–7; 165 (Table 4.1); 336–7 (ch. 5, on the text); 256 nn. 353–4; 257 nn. 355–6",
+   "key_quote": "'Size and quality of parchment alike suggest that they were end- or front-leaves from a \"de luxe service book\"' (p. 256)",
+   "doubts": "Heading prints 'f. 75v' (OCR '7Sv'); Liebermann's 'f. 75b' = 75v. Wormald (p. 257) calls X Atr 'Liebermann's discovery', whereas the guide's note begins '[not seen by Liebermann]': check Gesetze I, p. xlii. GUIDE: Liebermann dates ff. 1–71 to the 13th century; Wormald calls the host volume an early-fourteenth-century French historical miscellany (p. 256); Wormald's date for the law page is s. xi¹ (more precise than '11th century'). Ker, Catalogue no. 392.",
+   "guide_shelfmark": "Vatican City, Biblioteca Apostolica Vaticana, Reg. lat. 946",
+   "in_guide": "yes",
+   "verify_notes": [
+    "pp. 256–7 and Table 4.1 checked against images ('s. xi¹', heading 'f. 75v').",
+    "shelfmark: Wormald writes 'Codex Reginensis latina 946', not 'latinus', and names no library; corrected.",
+    "overview: 'the only witness' not stated by Wormald, replaced by 'discovered and printed'; torn-out leaves marked as Wormald's hypothesis; 'grand liturgical' toned to 'solemn'.",
+    "pages: Table 4.1 entry is on p. 165 only.",
+    "overview: reworded to remove five-word runs shared with Wormald."
+   ],
+   "part": ""
+  }
+ ],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Vatican City, Biblioteca Apostolica Vaticana, Reg. lat. 946",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "13th century (f. 1–71); 12th century (f. 72b ff.); 11th century (f. 75b)",
+    "ref": "Gesetze I, p. xlii"
+   },
+   {
+    "by": "Wormald",
+    "text": "s. xi¹",
+    "ref": "Wormald, MEL, pp. 165, 257"
+   }
+  ],
+  "laws": "X Atr",
+  "laws_note": {
+   "by": "Wormald",
+   "text": "only the prologue and three clauses of X Atr survive.",
+   "ref": "Wormald, MEL, pp. 256–7"
+  },
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xlii",
+    "text": "Gesta Francorum to 1165, Pseudo-Turpin and other histories (13th century), customary law of the church of Avranches in various 12th-century hands, and on an added leaf (f. 75b) X Æthelred of the 11th century."
+   },
+   {
+    "by": "Wormald",
+    "ref": "Wormald, MEL, pp. 256–7",
+    "text": "A single damaged page in an eleventh-century hand, preserving the code that Liebermann discovered and printed as X Æthelred: an elaborate prologue in Wulfstan's style and three clauses that refer back to what had been decreed at Enham. The leaves seem to come from a large and costly English service book that had reached Avranches by the twelfth century, when spare pages were used for records of the obedience due from the monasteries of his diocese to the bishop of Avranches; on Wormald's reconstruction most of the code was torn out at that stage. Wormald suggests the text is a further version of the Enham code of 1008, possibly the official one, and stresses that it puts Wulfstan's legislation into a solemn setting in a book not otherwise linked to him."
+   }
+  ]
+ }
+}

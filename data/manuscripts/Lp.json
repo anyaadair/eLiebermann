@@ -1,0 +1,38 @@
+{
+ "id": "Lp",
+ "order": 128,
+ "anchor": "Lp",
+ "label": "Lp",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Lp",
+  "description_de": "Liber pilosus S. Pauli cathedralis Londoniensis",
+  "shelfmark_as_given": "London, St Paul’s Cathedral, the Liber pilosus",
+  "date": "13th century",
+  "laws": "Wl ep",
+  "page": "xxxiv",
+  "notes": "The 'Liber pilosus' of St Paul's Cathedral, London, with William's episcopal-courts writ (Wl ep) on f. 1."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "London, St Paul’s Cathedral, the Liber pilosus",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "13th century",
+    "ref": "Gesetze I, p. xxxiv"
+   }
+  ],
+  "laws": "Wl ep",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxxiv",
+    "text": "The 'Liber pilosus' of St Paul's Cathedral, London, with William's episcopal-courts writ (Wl ep) on f. 1."
+   }
+  ]
+ }
+}

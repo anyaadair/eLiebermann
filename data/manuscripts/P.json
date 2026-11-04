@@ -1,0 +1,38 @@
+{
+ "id": "P",
+ "order": 150,
+ "anchor": "P",
+ "label": "P",
+ "status": "not seen by Liebermann",
+ "display": true,
+ "liebermann": {
+  "siglum": "P",
+  "description_de": "Paris, Bibliothèque nationale Lat. 10575 (früher Suppl. lat. 138)",
+  "shelfmark_as_given": "Paris, Bibliothèque nationale de France, MS lat. 10575 (formerly Suppl. lat. 138)",
+  "date": "c. 950 or 1000",
+  "laws": "Sacr cor",
+  "page": "xxxvii",
+  "notes": "Contains the Benedictio ignis, Capitula de sacerdotibus and Excarpsum de canonibus, then (ff. 7–172) the so-called Pontificale Egberti in a hand '200 years younger than Egbert', followed by an 11th-century ritual from Évreux, an Old English absolution formula (c. 1000), and after the coronation rite the Sacramentum coronationis (f. 137)."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Paris, Bibliothèque nationale de France, MS lat. 10575 (formerly Suppl. lat. 138)",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "c. 950 or 1000",
+    "ref": "Gesetze I, p. xxxvii"
+   }
+  ],
+  "laws": "Sacr cor",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxxvii",
+    "text": "Contains the Benedictio ignis, Capitula de sacerdotibus and Excarpsum de canonibus, then (ff. 7–172) the so-called Pontificale Egberti in a hand '200 years younger than Egbert', followed by an 11th-century ritual from Évreux, an Old English absolution formula (c. 1000), and after the coronation rite the Sacramentum coronationis (f. 137)."
+   }
+  ]
+ }
+}

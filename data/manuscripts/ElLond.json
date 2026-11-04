@@ -1,0 +1,38 @@
+{
+ "id": "ElLond",
+ "order": 66,
+ "anchor": "ElLond",
+ "label": "El",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "El",
+  "description_de": "Excerptum Lond. im Liber albus um 1420",
+  "shelfmark_as_given": "London, Guildhall (Corporation of London), Liber Albus (c. 1420): its extract of Hn Lond",
+  "date": "c. 1420",
+  "laws": "Hn Lond",
+  "page": "524",
+  "notes": "In Hn Lond only, Liebermann’s El is the extract of Henry I’s London charter in the Liber Albus (ed. Riley, Munimenta Gildhallae Londoniensis I 128). Elsewhere El is Oxford, Bodleian Library, MS 579 (see the next entry). The same book is Liebermann’s Alb in Lib Lond."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "London, Guildhall (Corporation of London), Liber Albus (c. 1420): its extract of Hn Lond",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "c. 1420",
+    "ref": "Gesetze I, p. 524"
+   }
+  ],
+  "laws": "Hn Lond",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. 524",
+    "text": "In Hn Lond only, Liebermann’s El is the extract of Henry I’s London charter in the Liber Albus (ed. Riley, Munimenta Gildhallae Londoniensis I 128). Elsewhere El is Oxford, Bodleian Library, MS 579 (see the next entry). The same book is Liebermann’s Alb in Lib Lond."
+   }
+  ]
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "id": "Gi",
+ "order": 73,
+ "anchor": "Gi",
+ "label": "Gi",
+ "status": "not seen by Liebermann",
+ "display": true,
+ "liebermann": {
+  "siglum": "Gi",
+  "description_de": "Londoner Guildhall, eine Hs. (dort mindestens 1639 bis 1721), von der jetzt nur die Varianten bekannt sind",
+  "shelfmark_as_given": "London, Guildhall (Corporation of London), a lost manuscript (there from at least 1639 to 1721), known only from the variants cited by earlier editors as “Lond”",
+  "date": "15th century (after Spelman)",
+  "laws": "Hn, Hn Lond, Epist Eleuth",
+  "page": "xxvi",
+  "notes": "A manuscript kept at the London Guildhall from at least 1639 to 1721, now known only from the variants the editors cited under the siglum 'Lond'; it had Hn and Hn Lond and belonged to the Lond class (Leges Anglorum Londoniis collectae), closest to Or. Spelman (Conc. I 34) collated Epist. Eleuth. from it and dated it 15th century; a reading at p. 570 shows it was not merely a modern copy."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "London, Guildhall (Corporation of London), a lost manuscript (there from at least 1639 to 1721), known only from the variants cited by earlier editors as “Lond”",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "15th century (after Spelman)",
+    "ref": "Gesetze I, p. xxvi"
+   }
+  ],
+  "laws": "Hn, Hn Lond, Epist Eleuth",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxvi",
+    "text": "A manuscript kept at the London Guildhall from at least 1639 to 1721, now known only from the variants the editors cited under the siglum 'Lond'; it had Hn and Hn Lond and belonged to the Lond class (Leges Anglorum Londoniis collectae), closest to Or. Spelman (Conc. I 34) collated Epist. Eleuth. from it and dated it 15th century; a reading at p. 570 shows it was not merely a modern copy."
+   }
+  ]
+ }
+}

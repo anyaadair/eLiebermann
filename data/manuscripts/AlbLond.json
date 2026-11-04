@@ -1,0 +1,38 @@
+{
+ "id": "AlbLond",
+ "order": 8,
+ "anchor": "AlbLond",
+ "label": "Alb",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Alb",
+  "description_de": "Liber albus der Gildhalle zu London, ed. Riley Munim. Gildh. Lond. I",
+  "shelfmark_as_given": "London, Guildhall (Corporation of London), Liber Albus (c. 1420)",
+  "date": "15th century",
+  "laws": "Lib Lond",
+  "page": "673",
+  "notes": "In Lib Lond, Liebermann’s Alb is the Liber Albus of the London Guildhall (ed. Riley, Munimenta Gildhallae Londoniensis I 673), which only excerpts the lost exemplar of Horn, so he gives only some of its variants. Elsewhere Alb is the St Albans chronicle (see the next entry). Its extract of Hn Lond is his El there."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "London, Guildhall (Corporation of London), Liber Albus (c. 1420)",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "15th century",
+    "ref": "Gesetze I, p. 673"
+   }
+  ],
+  "laws": "Lib Lond",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. 673",
+    "text": "In Lib Lond, Liebermann’s Alb is the Liber Albus of the London Guildhall (ed. Riley, Munimenta Gildhallae Londoniensis I 673), which only excerpts the lost exemplar of Horn, so he gives only some of its variants. Elsewhere Alb is the St Albans chronicle (see the next entry). Its extract of Hn Lond is his El there."
+   }
+  ]
+ }
+}

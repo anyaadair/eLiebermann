@@ -1,0 +1,74 @@
+{
+ "id": "Co",
+ "order": 38,
+ "anchor": "Co",
+ "label": "Co",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Co",
+  "description_de": "Cambridge Corpus Christi College 70",
+  "shelfmark_as_given": "Cambridge, Corpus Christi College, MS 70",
+  "date": "c. 1310–15; marginal additions c. 1320",
+  "laws": "Ine, Blas, Forf, Hu, Af, AGu, EGu, I As, II As, III As, IV As, V As, VI As, As Alm, Episc, Norðleod, Mirce, Að, Had, Ordal, Iud Dei, I Cn, II Cn, II Eg, III Eg, Swer, Pax, IV Atr, Quadr, Wl art Lond retr, ECf retr Lond interp, Hn, CHn cor, Hn Lond, Lib Lond",
+  "page": "xxi",
+  "notes": "Owned and corrected c. 1310 by the London chamberlain Andrew Horn (†1328); contains the Leges Anglorum Londoniis collectae, with Quadripartitus texts of the Anglo-Saxon laws, Iudicia Dei, Cnut, Wl art Lond retr, ECf retr Lond interp, Hn, CHn cor, Hn Lond and partly Lib Lond; c. 1320 further Quadripartitus pieces were added in the margins 'sicut apud S. Augustinum Cantuar.' (i.e. from T). Co was partly copied in Or and Ed."
+ },
+ "wormald": [
+  {
+   "wormald_heading": "6 (iii) Quadripartitus, MS 6c (London collection)",
+   "shelfmark": "Cambridge, Corpus Christi College, MSS 70 + 258",
+   "wormald_siglum": "Co",
+   "liebermann_siglum": "Co",
+   "guide_anchor": "Co",
+   "liebermann_date": "c. 1310–15; marginal additions c. 1320",
+   "liebermann_page": "xxi",
+   "wormald_date": "s. xiv¹ (p. 238)",
+   "wormald_origin": "Andrew Horn's 'working copy', given to the Guildhall (p. 238)",
+   "laws": "London collection version of Quadripartitus texts (see Table 4.7 'London' column)",
+   "laws_liebermann": "Ine, Blas, Forf, Hu, Af, AGu, EGu, I As, II As, III As, IV As, V As, VI As, As Alm, Episc, Norðleod, Mirce, Að, Had, Ordal, Iud Dei, I Cn, II Cn, II Eg, III Eg, Swer, Pax, IV Atr, Quadr, Wl art Lond retr, ECf retr Lond interp, Hn, CHn cor, Hn Lond, Lib Lond",
+   "other_contents": "",
+   "overview": "A copy of the London collection made in the first half of the fourteenth century, now split between two Corpus Christi College, Cambridge manuscripts, and given to the Guildhall. Wormald identifies it as Andrew Horn's working copy, as distinct from his larger presentation copies, K2 and Or.",
+   "liebermann_superseded": "",
+   "pages": "238; 237 n. 304; 238 n. 307; cf. 252–3",
+   "key_quote": "Cambridge, Corpus Christi College, MSS 70+258 [Co]; s xiv¹; Horn's 'working copy', also given to Guildhall. (p. 238)",
+   "doubts": "GUIDE: the guide gives only CCCC 70; Wormald's shelfmark is CCCC 70 + 258.",
+   "guide_shelfmark": "Cambridge, Corpus Christi College, MS 70",
+   "in_guide": "yes",
+   "verify_notes": [
+    "Checked p. 237–8 (image: MSS 70+258, s xiv¹ confirmed), 252–3. Overview expanded to two sentences (was one) to bring out the working-copy/presentation-copy distinction; no factual changes."
+   ],
+   "part": ""
+  }
+ ],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Cambridge, Corpus Christi College, MS 70 (with MS 258, part of the same book)",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "c. 1310–15; marginal additions c. 1320",
+    "ref": "Gesetze I, p. xxi"
+   },
+   {
+    "by": "Wormald",
+    "text": "s. xiv¹",
+    "ref": "Wormald, MEL, p. 238"
+   }
+  ],
+  "laws": "Ine, Blas, Forf, Hu, Af, AGu, EGu, I As, II As, III As, IV As, V As, VI As, As Alm, Episc, Norðleod, Mirce, Að, Had, Ordal, Iud Dei, I Cn, II Cn, II Eg, III Eg, Swer, Pax, IV Atr, Quadr, Wl art Lond retr, ECf retr Lond interp, Hn, CHn cor, Hn Lond, Lib Lond",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxi",
+    "text": "Owned and corrected c. 1310 by the London chamberlain Andrew Horn (†1328); contains the Leges Anglorum Londoniis collectae, with Quadripartitus texts of the Anglo-Saxon laws, Iudicia Dei, Cnut, Wl art Lond retr, ECf retr Lond interp, Hn, CHn cor, Hn Lond and partly Lib Lond; c. 1320 further Quadripartitus pieces were added in the margins 'sicut apud S. Augustinum Cantuar.' (i.e. from T). Co was partly copied in Or and Ed."
+   },
+   {
+    "by": "Wormald",
+    "ref": "Wormald, MEL, pp. 238",
+    "text": "A copy of the London collection made in the first half of the fourteenth century, now split between two Corpus Christi College, Cambridge manuscripts, and given to the Guildhall. Wormald identifies it as Andrew Horn's working copy, as distinct from his larger presentation copies, K2 and Or."
+   }
+  ]
+ }
+}

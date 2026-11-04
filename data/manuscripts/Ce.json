@@ -1,0 +1,38 @@
+{
+ "id": "Ce",
+ "order": 30,
+ "anchor": "Ce",
+ "label": "Ce",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Ce",
+  "description_de": "British Museum Cotton Cleopatra D IX",
+  "shelfmark_as_given": "London, British Library, Cotton MS Cleopatra D.ix",
+  "date": "late 14th century",
+  "laws": "ECf retr Lond interpol",
+  "page": "xxi",
+  "notes": "Annals from Hengist to 1377 by a Lichfield writer, using Huntingdon and (from the Leges Anglorum Londoniis collectae) f. 47 parts of the London-interpolated ECf retr; this piece on William's acceptance of Edward's laws is printed by Thorpe."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "London, British Library, Cotton MS Cleopatra D.ix",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "late 14th century",
+    "ref": "Gesetze I, p. xxi"
+   }
+  ],
+  "laws": "ECf retr Lond interpol",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxi",
+    "text": "Annals from Hengist to 1377 by a Lichfield writer, using Huntingdon and (from the Leges Anglorum Londoniis collectae) f. 47 parts of the London-interpolated ECf retr; this piece on William's acceptance of Edward's laws is printed by Thorpe."
+   }
+  ]
+ }
+}

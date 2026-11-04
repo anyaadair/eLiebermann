@@ -1,0 +1,38 @@
+{
+ "id": "Cl",
+ "order": 36,
+ "anchor": "Cl",
+ "label": "Cl",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Cl",
+  "description_de": "British Museum Cotton Cleopatra A XVI f. 54",
+  "shelfmark_as_given": "London, British Library, Cotton MS Cleopatra A.xvi f. 54",
+  "date": "15th century",
+  "laws": "ECf",
+  "page": "xxi",
+  "notes": "ECf, breaking off at a quire end at c. 37,1; the same part of the volume holds the Dialogus de scaccario."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "London, British Library, Cotton MS Cleopatra A.xvi f. 54",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "15th century",
+    "ref": "Gesetze I, p. xxi"
+   }
+  ],
+  "laws": "ECf",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxi",
+    "text": "ECf, breaking off at a quire end at c. 37,1; the same part of the volume holds the Dialogus de scaccario."
+   }
+  ]
+ }
+}

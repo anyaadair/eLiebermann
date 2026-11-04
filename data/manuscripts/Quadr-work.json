@@ -1,0 +1,59 @@
+{
+ "id": "Quadr-work",
+ "order": 216,
+ "anchor": "Quadr-work",
+ "label": "Quadripartitus",
+ "status": "not in Liebermann",
+ "display": false,
+ "liebermann": {},
+ "wormald": [
+  {
+   "wormald_heading": "6 (iii) Quadripartitus",
+   "shelfmark": "Quadripartitus (Latin legal collection; MSS various: Dm, M, R, Hk, T and the London collection copies)",
+   "wormald_siglum": "Q",
+   "liebermann_siglum": "",
+   "guide_anchor": "",
+   "liebermann_date": "",
+   "liebermann_page": "",
+   "wormald_date": "c. 1110 (p. 165, Table 4.1); begun perhaps before 1100 (pessimistic 'Dedicatio' hints at Rufus' court); latest event mentioned Henry I's conquest of Normandy, 1106; latest texts in Part II dated 1108 (p. 244)",
+   "wormald_origin": "Author 'Q' not a native English speaker; probably from the West Saxon 'legal province', perhaps Hampshire (agreeing with Liebermann) (p. 244 and n. 326). Single author for all versions, proved by Dm (p. 244).",
+   "laws": "Part I (Latin translations): I–II Cn, Af–Ine, Blas, Forf, Hu, I As, As Alm, II As, Norðleod etc. (Episc, Norðleod, Mirce, Að, Had integrated into Æthelstan's codes, p. 242), IV As, V As, III As, VI As, Ordal, AGu, AGu App., EGu, I–II Ew, I–II Em, Swer, Wif, Wer, I Atr, III Atr, Pax, Wal, IV Atr, II Atr, Duns, VII Atr, Iudex, II–III Eg, III Em, Wl lad, [Wl art], Geþyncðo, Rect; Part II: CHn cor, Hn com (Table 4.1, p. 165; Table 4.7, pp. 240–1). Pax, Wal and IV Atr treated as part of III Atr (p. 242).",
+   "laws_liebermann": "",
+   "other_contents": "Prefaces 'Dedicatio' (only in Dm) and 'Argumentum'; rubrics; Part II with post-conquest material.",
+   "overview": "Quadripartitus is not one manuscript but a large Latin rendering of pre-conquest law, compiled and repeatedly revised by a single author whose first language was not English, perhaps begun before 1100 and probably largely done by about 1110. Its surviving copies catch the work at different stages, in the order London collection, R, Dm, T and finally M/Hk, showing reordering, new rubrics and improved translations, partly prompted by newly found manuscripts. Like Corpus 383 and Textus Roffensis it was built from pre-existing groups of texts; unlike them it was recopied and consulted for centuries.",
+   "liebermann_superseded": "Liebermann dated the completion of Quadripartitus to 1114; Wormald finds little to support so late a date (latest datable reference 1106, latest texts 1108) and thinks the project may have begun before 1100 (p. 244).",
+   "pages": "236–44; 240–1 (Table 4.7); 165 (Table 4.1); 231–3 (comparison with Corpus 383); 248–9, 250–1 (Table 4.9); 252–4; 236 n. 298; 237 n. 299; 239 nn. 311, 313; 243 nn. 319–23; 244 nn. 324–6",
+   "key_quote": "It assembled the largest extant set of pre-conquest legal materials, and translated them into Latin. (p. 236)",
+   "doubts": "A work, not a manuscript: no single guide entry (guide has 'm' for the latest recension and entries for individual MSS). Liebermann first identified it as a lawbook (Quadripartitus, 1892) but never edited it as such (p. 236 n. 298). Table 4.1's '[Wl Art.]' bracket = inserted text.",
+   "guide_shelfmark": "",
+   "in_guide": "no",
+   "verify_notes": [
+    "Checked pp. 165 (image), 231–44 (Table 4.7 on images), 248–54.",
+    "Laws: 'I–III Em' corrected to 'I–II Em' (III Em stands separately after II–III Eg in Table 4.1); removed 'Quadr. II' from the Table 4.1-based list.",
+    "Overview: 'in the early years of Henry I' adjusted — Wormald thinks it may have begun before 1100 (p. 244).",
+    "key_quote is on p. 236 only, not pp. 236–7.",
+    "Pages: 248–9, 252–4 added."
+   ],
+   "part": ""
+  }
+ ],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Quadripartitus (Latin legal collection; MSS various: Dm, M, R, Hk, T and the London collection copies)",
+  "dates": [],
+  "laws": "",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Wormald",
+    "ref": "Wormald, MEL, pp. 236–44",
+    "text": "Quadripartitus is not one manuscript but a large Latin rendering of pre-conquest law, compiled and repeatedly revised by a single author whose first language was not English, perhaps begun before 1100 and probably largely done by about 1110. Its surviving copies catch the work at different stages, in the order London collection, R, Dm, T and finally M/Hk, showing reordering, new rubrics and improved translations, partly prompted by newly found manuscripts. Like Corpus 383 and Textus Roffensis it was built from pre-existing groups of texts; unlike them it was recopied and consulted for centuries."
+   },
+   {
+    "by": "Wormald",
+    "kind": "correction",
+    "text": "Liebermann dated the completion of Quadripartitus to 1114; Wormald finds little to support so late a date (latest datable reference 1106, latest texts 1108) and thinks the project may have begun before 1100 (p. 244)."
+   }
+  ]
+ }
+}

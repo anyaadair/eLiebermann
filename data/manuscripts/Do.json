@@ -1,0 +1,38 @@
+{
+ "id": "Do",
+ "order": 58,
+ "anchor": "Do",
+ "label": "Do",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Do",
+  "description_de": "Oxford Bodley Douce 137",
+  "shelfmark_as_given": "Oxford, Bodleian Library, MS Douce 137",
+  "date": "c. 1275–1300",
+  "laws": "ECf",
+  "page": "xxiii",
+  "notes": "In the same hand as the Glanvill at f. 40, f. 91v ECf, ending like class adow at 34,1a."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Oxford, Bodleian Library, MS Douce 137",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "c. 1275–1300",
+    "ref": "Gesetze I, p. xxiii"
+   }
+  ],
+  "laws": "ECf",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxiii",
+    "text": "In the same hand as the Glanvill at f. 40, f. 91v ECf, ending like class adow at 34,1a."
+   }
+  ]
+ }
+}

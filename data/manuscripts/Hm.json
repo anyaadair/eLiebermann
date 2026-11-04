@@ -1,0 +1,38 @@
+{
+ "id": "Hm",
+ "order": 89,
+ "anchor": "Hm",
+ "label": "Hm",
+ "status": "not seen by Liebermann",
+ "display": true,
+ "liebermann": {
+  "siglum": "Hm",
+  "description_de": "British Museum Harley 873",
+  "shelfmark_as_given": "London, British Library, Harley MS 873",
+  "date": "c. 1390",
+  "laws": "Duel",
+  "page": "xxx",
+  "notes": "Ordinale secundum usum ecclesiae Sarisburiensis, c. 1390; f. 27b Duel, collated for Liebermann by J. P. Gilson."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "London, British Library, Harley MS 873",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "c. 1390",
+    "ref": "Gesetze I, p. xxx"
+   }
+  ],
+  "laws": "Duel",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxx",
+    "text": "Ordinale secundum usum ecclesiae Sarisburiensis, c. 1390; f. 27b Duel, collated for Liebermann by J. P. Gilson."
+   }
+  ]
+ }
+}

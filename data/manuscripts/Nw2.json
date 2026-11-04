@@ -1,0 +1,58 @@
+{
+ "id": "Nw2",
+ "order": 212,
+ "anchor": "Nw2",
+ "label": "Nw2",
+ "status": "not in Liebermann",
+ "display": true,
+ "liebermann": {},
+ "wormald": [
+  {
+   "wormald_heading": "1 (ii) BL, Cotton MS Otho B.xi + BL, Additional MS 43703 (and Table 4.1 no. 20)",
+   "shelfmark": "Lost manuscript used by Laurence Nowell as his second exemplar, known from BL, Additional MS 43703, ff. 236r (end), 265r–267v",
+   "wormald_siglum": "Nw2",
+   "liebermann_siglum": "",
+   "guide_anchor": "",
+   "liebermann_date": "",
+   "liebermann_page": "",
+   "wormald_date": "Unknown (Table 4.1 gives only ‘(1560s)’, the date of Nowell’s transcript) (p. 165).",
+   "wormald_origin": "Unknown; no longer extant (p. 176; pp. 261–2). Not Textus Roffensis, which lacks Iudex and was unknown to Nowell (p. 262 and n. 384). Wormald suggests it may have been a fragile item like the loose leaves or ‘pamphlet’ of Harley 55 (p. 262).",
+   "laws": "End of II As (after 25:2, i.e. the perjury clause II As 26) and probably the Sunday-trading clause that Nowell entered in the margin; V As (the Exeter code); Iudex (pp. 176–7); probably also Af–Ine, the source of Nowell’s otherwise untraceable marginal Alfred–Ine readings (p. 262; Table 4.1: ‘(Af–Ine?)’, p. 165).",
+   "laws_liebermann": "",
+   "other_contents": "",
+   "overview": "A lost manuscript, recoverable only from Laurence Nowell's transcript of Otho B.xi, which supplied him with Æthelstan's Exeter code (V As), the tract Iudex and the closing part of the Grately code, all placed after his colophon; letter-forms and spelling suggest these did not come from Otho, which on Wanley's evidence did not contain them. Wormald thinks it probably also supplied the Alfred–Ine readings in Nowell's margins, and that here Liebermann's belief in lost sources behind Lambarde is partly borne out.",
+   "liebermann_superseded": "",
+   "pages": "176–7; 165 (Table 4.1, no. 20); 176 nn. 53–4; 177 n. 56; 262 and nn. 383–4",
+   "key_quote": "“the letter-forms and orthography of his transcription suggest that he took them not from Otho but from a manuscript which is no longer extant” (p. 176)",
+   "doubts": "Not in the guide as such. The guide’s ‘l’ entry (Lambarde’s source) already cites Wormald pp. 261–2 that Nowell used at least one copy of Æthelstan’s Grately code now lost — this manuscript. No Liebermann siglum: Wormald does not equate it with any of Liebermann’s posited sources (l, lq, ls, osq etc.), though he says Liebermann is ‘partially vindicated’ (p. 262). Wormald follows Torkar, Altenglische Übersetzung, pp. 86–128 (p. 262 n. 383). The drafter’s liebermann_superseded concerned Ker, not Liebermann (Ker supposed Otho itself held V As and Iudex; Wormald, p. 176, shows from Wanley’s report it did not): removed from that field and kept here.",
+   "guide_shelfmark": "",
+   "in_guide": "no",
+   "verify_notes": [
+    "Checked pp. 176–7, 261–2, Table 4.1.",
+    "liebermann_superseded: removed (it was about Ker, not Liebermann; noted in doubts). Wormald in fact says Liebermann is partly vindicated here (p. 262).",
+    "overview: ‘show’ softened to ‘suggest’ (Wormald, p. 176); added Alfred–Ine readings point from p. 262.",
+    "laws/origin: added p. 262 evidence (Af–Ine probable; not Textus Roffensis).",
+    "pages: removed duplicates; ‘outside this range’ note dropped."
+   ],
+   "part": ""
+  }
+ ],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Lost manuscript used by Laurence Nowell as his second exemplar, known from BL, Additional MS 43703, ff. 236r (end), 265r–267v",
+  "dates": [],
+  "laws": "",
+  "laws_note": {
+   "by": "Wormald",
+   "text": "V As, Iudex, the end of II As; probably also Af–Ine",
+   "ref": "Wormald, MEL, pp. 176–7"
+  },
+  "notes": [
+   {
+    "by": "Wormald",
+    "ref": "Wormald, MEL, pp. 176–7",
+    "text": "A lost manuscript, recoverable only from Laurence Nowell's transcript of Otho B.xi, which supplied him with Æthelstan's Exeter code (V As), the tract Iudex and the closing part of the Grately code, all placed after his colophon; letter-forms and spelling suggest these did not come from Otho, which on Wanley's evidence did not contain them. Wormald thinks it probably also supplied the Alfred–Ine readings in Nowell's margins, and that here Liebermann's belief in lost sources behind Lambarde is partly borne out."
+   }
+  ]
+ }
+}

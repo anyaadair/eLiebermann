@@ -1,0 +1,38 @@
+{
+ "id": "Sr",
+ "order": 183,
+ "anchor": "Sr",
+ "label": "Sr",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Sr",
+  "description_de": "Manuale ad usum eccl. Sarum, ed. Rouen 1506",
+  "shelfmark_as_given": "The Sarum Manual (printed, Rouen, 1506)",
+  "date": "1506",
+  "laws": "Duel",
+  "page": "xl",
+  "notes": "The printed Salisbury Manual (Rouen 1506), reprinted in Henderson's York manual (Surtees Society 63, 1875), containing the Duel."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "The Sarum Manual (printed, Rouen, 1506)",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "1506",
+    "ref": "Gesetze I, p. xl"
+   }
+  ],
+  "laws": "Duel",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xl",
+    "text": "The printed Salisbury Manual (Rouen 1506), reprinted in Henderson's York manual (Surtees Society 63, 1875), containing the Duel."
+   }
+  ]
+ }
+}

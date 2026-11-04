@@ -1,0 +1,80 @@
+{
+ "id": "Rl",
+ "order": 166,
+ "anchor": "Rl",
+ "label": "Rl",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Rl",
+  "description_de": "Oxford Bodley Rawlinson C 641",
+  "shelfmark_as_given": "Oxford, Bodleian Library, MS Rawlinson C 641",
+  "date": "c. 1185; f. 30 c. 1200",
+  "laws": "ECf, In Cn, CHn cor, Wl art",
+  "page": "xxxviii",
+  "notes": "In a French hand c. 1185, preserving the diphthong æ at ECf 35,1d; ff. 3–10 ECf. After laws of 1166, 1170, 1215 etc., a hand of c. 1200 adds Instituta Cnuti, Henry I's coronation charter and Wl art, for which Rl stands closest to H (see hrl)."
+ },
+ "wormald": [
+  {
+   "wormald_heading": "",
+   "shelfmark": "Oxford, Bodleian Library, MS Rawlinson C 641",
+   "wormald_siglum": "",
+   "liebermann_siglum": "Rl",
+   "guide_anchor": "Rl",
+   "liebermann_date": "c. 1185; f. 30 c. 1200",
+   "liebermann_page": "xxxviii",
+   "wormald_date": "",
+   "wormald_origin": "Closely related to Textus Roffensis for the Instituta Cnuti group; shares with it the error making Bishop Gundulf of Rochester a witness of Henry I's 1100 charter (Liebermann thought a misexpansion of 'G' for Gerard of Hereford), an error natural only at Rochester (p. 252).",
+   "laws": "Wormald (Table 4.9, p. 251) lists only the texts shared with TR: Inst Cn, CHn cor, Wl art",
+   "laws_liebermann": "ECf, In Cn, CHn cor, Wl art",
+   "other_contents": "",
+   "overview": "A manuscript whose Instituta Cnuti, coronation charter of Henry I and Ten Articles of William are closely related to the same group in Textus Roffensis. Both name Bishop Gundulf of Rochester among the witnesses of Henry I's charter, an error that other copies do not share and that would come naturally only at Rochester, so this group of texts very probably derives from Rochester.",
+   "liebermann_superseded": "",
+   "pages": "252; 251 (Table 4.9)",
+   "key_quote": "Roffensis is here closely related to Bodleian Rawlinson C 641 (p. 252)",
+   "doubts": "Wormald gives no date for the manuscript; his Table 4.9 lists only the three texts shared with TR, not the guide's ECf.",
+   "guide_shelfmark": "Oxford, Bodleian Library, MS Rawlinson C 641",
+   "in_guide": "yes",
+   "verify_notes": [
+    "p. 252 and Table 4.9 (p. 251, image) checked.",
+    "overview: removed 'later twelfth-century', which Wormald does not say; clarified the Gundulf argument.",
+    "laws: noted that Wormald lists only the texts shared with TR."
+   ],
+   "part": ""
+  }
+ ],
+ "others": [
+  {
+   "by": "O’Brien",
+   "text": "O’Brien (2003): for the Instituta Cnuti Rl is not an independent witness but a faithful copy of H. It shares H’s interlinear glosses, almost exactly the same capitals, initials and rubrics (of H’s 123 chapter capitals Rl lacks only one), and repeats H’s nonsensical triple ‘patientis’ at II 49. Liebermann’s apparatus gives hardly any readings from Rl. So hrl, posited by Liebermann, is not needed for this text."
+  }
+ ],
+ "display_fields": {
+  "shelfmark": "Oxford, Bodleian Library, MS Rawlinson C 641",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "c. 1185; f. 30 c. 1200",
+    "ref": "Gesetze I, p. xxxviii"
+   }
+  ],
+  "laws": "ECf, In Cn, CHn cor, Wl art",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxxviii",
+    "text": "In a French hand c. 1185, preserving the diphthong æ at ECf 35,1d; ff. 3–10 ECf. After laws of 1166, 1170, 1215 etc., a hand of c. 1200 adds Instituta Cnuti, Henry I's coronation charter and Wl art, for which Rl stands closest to H (see hrl)."
+   },
+   {
+    "by": "Wormald",
+    "ref": "Wormald, MEL, pp. 252",
+    "text": "A manuscript whose Instituta Cnuti, coronation charter of Henry I and Ten Articles of William are closely related to the same group in Textus Roffensis. Both name Bishop Gundulf of Rochester among the witnesses of Henry I's charter, an error that other copies do not share and that would come naturally only at Rochester, so this group of texts very probably derives from Rochester."
+   },
+   {
+    "by": "O’Brien",
+    "text": "O’Brien (2003): for the Instituta Cnuti Rl is not an independent witness but a faithful copy of H. It shares H’s interlinear glosses, almost exactly the same capitals, initials and rubrics (of H’s 123 chapter capitals Rl lacks only one), and repeats H’s nonsensical triple ‘patientis’ at II 49. Liebermann’s apparatus gives hardly any readings from Rl. So hrl, posited by Liebermann, is not needed for this text."
+   }
+  ]
+ }
+}

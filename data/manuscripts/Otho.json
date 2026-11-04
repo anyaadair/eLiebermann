@@ -1,0 +1,71 @@
+{
+ "id": "Otho",
+ "order": 147,
+ "anchor": "Otho",
+ "label": "Otho A.x",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Otho A.x",
+  "description_de": "British Museum Cotton Otho A X",
+  "shelfmark_as_given": "London, British Library, Cotton MS Otho A.x (burnt in 1731; known from Wanley’s extract in Hickes, Thesaurus, 1705)",
+  "date": "medieval",
+  "laws": "IX Atr",
+  "page": "xxxvi",
+  "notes": "A medieval parchment manuscript, now burnt, containing IX Æthelred."
+ },
+ "wormald": [
+  {
+   "wormald_heading": "8 (iii) BL, Cotton MS Otho A.x",
+   "shelfmark": "London, British Library, Cotton MS Otho A.x (destroyed in the fire of 1731)",
+   "wormald_siglum": "",
+   "liebermann_siglum": "",
+   "guide_anchor": "Otho",
+   "liebermann_date": "medieval",
+   "liebermann_page": "xxxvi",
+   "wormald_date": "Law-code undated ('??', Table 4.1); surviving fragments of Æthelweard's Chronicle s. xi^in, of Paul the Deacon s. xii (Ker), p. 258; Wormald's speculative solution would put the code with Æthelweard at an early-11th-century date (p. 259)",
+   "wormald_origin": "Origin unknown. Cotton shelved it immediately above Otho B.xi. The code was apparently the last item in a volume with Æthelweard's Chronicle and Paul the Deacon's Historia Langobardorum (c. 152 leaves); it was already fragmentary when Smith and Wanley saw it. Ker thought the two OE leaves unrelated to the rest; Wormald suggests the code was once appended to Æthelweard and later moved to the end of the book when Paul the Deacon was added (pp. 258–9).",
+   "laws": "IX Atr (prologue showing issue at Woodstock; incomplete, breaking off 'Uton ænne cyne Hlaford holdliche ...')",
+   "laws_liebermann": "IX Atr",
+   "other_contents": "Æthelweard's Chronicle (18 charred pieces survive) and Paul the Deacon, Historia Langobardorum (one piece survives); nothing survives of the law-code, known only from Wanley's and Smith's catalogue descriptions.",
+   "overview": "A Cottonian volume burnt in 1731, from which nothing of its law-text survives: the code, issued at Woodstock but different from I Æthelred, is known only from Wanley's quotation of its opening and close, and Liebermann numbered it IX Æthelred. It was apparently already a two-page fragment at the end of a book containing Æthelweard's Chronicle and Paul the Deacon. Wormald thinks the Wulfstan-style code probably represents a lost decree of Æthelred, and tentatively suggests it was originally attached to Æthelweard's Chronicle, which would make this another early-eleventh-century association of laws and history like Otho B.xi.",
+   "liebermann_superseded": "",
+   "pages": "258–9; 165 (Table 4.1, as 'BL, Cotton A.x'); 336–7 (ch. 5, on the text); 258 nn. 361–3; 259 nn. 364–6",
+   "key_quote": "'This would then be another case of the association of laws and gesta, like that in Cotton Otho B.xi' (p. 259)",
+   "doubts": "Wormald says that as a wholly lost MS it has no Liebermann siglum (p. 258 n. 361); the guide uses the shelfmark 'Otho A.x' as its 'Gesetze Text'. Table 4.1 misprints the shelfmark as 'BL, Cotton A.x'. Fragment dates printed in the image as 's xi in' and 's xii' (no superscripts). Ker, Catalogue no. 170; sources Smith, Catalogus, p. 67; Wanley, Catalogus, p. 232; BL 'Keeper's copy' of Smith ('f. 194b'); Bodl. Add. MS D.82.",
+   "guide_shelfmark": "London, British Library, Cotton MS Otho A.x (burnt in 1731; known from Wanley’s extract in Hickes, Thesaurus, 1705)",
+   "in_guide": "yes",
+   "verify_notes": [
+    "pp. 258–9 and Table 4.1 checked against images; dates 's xi in', 's xii' confirmed.",
+    "pages: Table 4.1 entry is on p. 165 only. Otherwise checked, no changes.",
+    "overview: reworded to remove five-word runs shared with Wormald."
+   ],
+   "part": ""
+  }
+ ],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "London, British Library, Cotton MS Otho A.x (burnt in 1731; known from Wanley’s extract in Hickes, Thesaurus, 1705)",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "medieval",
+    "ref": "Gesetze I, p. xxxvi"
+   }
+  ],
+  "laws": "IX Atr",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxxvi",
+    "text": "A medieval parchment manuscript, now burnt, containing IX Æthelred."
+   },
+   {
+    "by": "Wormald",
+    "ref": "Wormald, MEL, pp. 258–9",
+    "text": "A Cottonian volume burnt in 1731, from which nothing of its law-text survives: the code, issued at Woodstock but different from I Æthelred, is known only from Wanley's quotation of its opening and close, and Liebermann numbered it IX Æthelred. It was apparently already a two-page fragment at the end of a book containing Æthelweard's Chronicle and Paul the Deacon. Wormald thinks the Wulfstan-style code probably represents a lost decree of Æthelred, and tentatively suggests it was originally attached to Æthelweard's Chronicle, which would make this another early-eleventh-century association of laws and history like Otho B.xi."
+   }
+  ]
+ }
+}

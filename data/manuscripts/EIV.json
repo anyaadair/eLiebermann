@@ -1,0 +1,38 @@
+{
+ "id": "EIV",
+ "order": 64,
+ "anchor": "EIV",
+ "label": "EIV",
+ "status": "not seen by Liebermann",
+ "display": true,
+ "liebermann": {
+  "siglum": "EIV",
+  "description_de": "London, Public record office, Patent roll of a. 2 Edward IV pt. 5, mb. 1",
+  "shelfmark_as_given": "London, The National Archives (formerly the Public Record Office), Patent Roll 2 Edward IV, pt. 5, m. 1",
+  "date": "2 Edward IV (1462–63)",
+  "laws": "Hn Lond",
+  "page": "xxv",
+  "notes": "An inspeximus of Henry I's London charter; the most similar text is Harley 2058."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "London, The National Archives (formerly the Public Record Office), Patent Roll 2 Edward IV, pt. 5, m. 1",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "2 Edward IV (1462–63)",
+    "ref": "Gesetze I, p. xxv"
+   }
+  ],
+  "laws": "Hn Lond",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxv",
+    "text": "An inspeximus of Henry I's London charter; the most similar text is Harley 2058."
+   }
+  ]
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "id": "hrl",
+ "order": 94,
+ "anchor": "hrl",
+ "label": "hrl",
+ "status": "posited",
+ "display": true,
+ "liebermann": {
+  "siglum": "hrl",
+  "description_de": "Verlorene Vorlage von H und Rl für CHn cor, Wl art und In Cn",
+  "shelfmark_as_given": "Posited by Liebermann: a common source of H and Rl, inferred from the readings they share. No such manuscript survives.",
+  "date": "early 12th century",
+  "laws": "CHn cor, Wl art, In Cn",
+  "page": "xxx",
+  "notes": "An early-12th-century common source of H and Rl for CHn cor (cf. Harley 1757), Wl art and In Cn, posited by Liebermann; for In Cn he derives it from hd."
+ },
+ "wormald": [],
+ "others": [
+  {
+   "by": "O’Brien",
+   "text": "O’Brien (2003): O’Brien argues that Rl was copied from H, so for the Instituta there was no hrl."
+  }
+ ],
+ "display_fields": {
+  "shelfmark": "Posited by Liebermann: a common source of H and Rl, inferred from the readings they share. No such manuscript survives.",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "early 12th century",
+    "ref": "Gesetze I, p. xxx"
+   }
+  ],
+  "laws": "CHn cor, Wl art, In Cn",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxx",
+    "text": "An early-12th-century common source of H and Rl for CHn cor (cf. Harley 1757), Wl art and In Cn, posited by Liebermann; for In Cn he derives it from hd."
+   },
+   {
+    "by": "O’Brien",
+    "text": "O’Brien (2003): O’Brien argues that Rl was copied from H, so for the Instituta there was no hrl."
+   }
+  ]
+ }
+}

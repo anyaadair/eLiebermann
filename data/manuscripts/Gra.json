@@ -1,0 +1,38 @@
+{
+ "id": "Gra",
+ "order": 78,
+ "anchor": "Gra",
+ "label": "Gra",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Gra",
+  "description_de": "Gravamina cleri a. 1309 proposita",
+  "shelfmark_as_given": "Gravamina cleri (the clergy’s grievances presented in 1309)",
+  "date": "1309",
+  "laws": "Wl ep",
+  "page": "xxvi",
+  "notes": "The clergy's grievances presented in 1309, which use Wl ep."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Gravamina cleri (the clergy’s grievances presented in 1309)",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "1309",
+    "ref": "Gesetze I, p. xxvi"
+   }
+  ],
+  "laws": "Wl ep",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxvi",
+    "text": "The clergy's grievances presented in 1309, which use Wl ep."
+   }
+  ]
+ }
+}

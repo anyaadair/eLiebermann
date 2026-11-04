@@ -1,0 +1,75 @@
+{
+ "id": "X",
+ "order": 208,
+ "anchor": "X",
+ "label": "X",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "X",
+  "description_de": "Oxford, Bodley Junius 121",
+  "shelfmark_as_given": "Oxford, Bodleian Library, MS Junius 121",
+  "date": "c. 1065",
+  "laws": "Episc",
+  "page": "xlii",
+  "notes": "From Worcester, c. 1065, much used by Thorpe for the ecclesiastical canons of Ancient Laws; as c. 7 of his so-called 'Polity' it has Episcopus (f. 13b). Copied in Harley 441."
+ },
+ "wormald": [
+  {
+   "wormald_heading": "",
+   "shelfmark": "Oxford, Bodleian Library, MS Junius 121",
+   "wormald_siglum": "",
+   "liebermann_siglum": "X",
+   "guide_anchor": "X",
+   "liebermann_date": "c. 1065",
+   "liebermann_page": "xlii",
+   "wormald_date": "s. xi³ᐟ⁴ (p. 222)",
+   "wormald_origin": "Worcester ('the important Worcester Wulfstan manuscript', p. 222).",
+   "laws": "",
+   "laws_liebermann": "Episc",
+   "other_contents": "Wormald notes only that it has the second of Ælfric's OE Pastoral Letters for Wulfstan, and both 'Ecgberhtine' penitentials combined with the 'Directions for use of a Confessor' (p. 222).",
+   "overview": "Junius 121 is a Worcester book of Wulfstan material from the third quarter of the eleventh century. Wormald mentions it only as a parallel to the vernacular half of Corpus 190: it contains the second of the Old English letters Ælfric wrote for Wulfstan, and it is one of only two other books to combine the two Old English penitentials ascribed to Ecgberht, there joined with the Directions for a Confessor, which helps point that material to Worcester.",
+   "liebermann_superseded": "",
+   "pages": "222",
+   "key_quote": "the important Worcester Wulfstan manuscript of s. xi³ᐟ⁴, Bodleian MS Junius 121 (p. 222)",
+   "doubts": "Wormald mentions it only in passing and says nothing here of its legal content (Liebermann's Episc). Liebermann's 'c. 1065' is compatible with Wormald's s. xi³ᐟ⁴ (image checked). Not one of Wormald's twenty Table 4.1 manuscripts. The parenthesis 'though sections of it reached Rochester and Canterbury' (p. 222) most naturally refers to the second Pastoral Letter (parts of which survive in Rochester and Canterbury books), not to Junius 121 itself; the draft's claim that parts of the manuscript travelled there has been removed.",
+   "guide_shelfmark": "Oxford, Bodleian Library, MS Junius 121",
+   "in_guide": "yes",
+   "verify_notes": [
+    "Checked p. 222 (image): date s. xi³ᐟ⁴ confirmed.",
+    "Origin/overview: removed claim that parts of Junius 121 reached Rochester and Canterbury (misreading — 'it' = the second Pastoral Letter). Overview also said it combines Ælfric's pastoral letters (plural) with the penitentials; Wormald says it has only the second letter. Rewritten; quotation marks removed."
+   ],
+   "part": ""
+  }
+ ],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Oxford, Bodleian Library, MS Junius 121",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "c. 1065",
+    "ref": "Gesetze I, p. xlii"
+   },
+   {
+    "by": "Wormald",
+    "text": "s. xi³ᐟ⁴",
+    "ref": "Wormald, MEL, p. 222"
+   }
+  ],
+  "laws": "Episc",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xlii",
+    "text": "From Worcester, c. 1065, much used by Thorpe for the ecclesiastical canons of Ancient Laws; as c. 7 of his so-called 'Polity' it has Episcopus (f. 13b). Copied in Harley 441."
+   },
+   {
+    "by": "Wormald",
+    "ref": "Wormald, MEL, pp. 222",
+    "text": "Junius 121 is a Worcester book of Wulfstan material from the third quarter of the eleventh century. Wormald mentions it only as a parallel to the vernacular half of Corpus 190: it contains the second of the Old English letters Ælfric wrote for Wulfstan, and it is one of only two other books to combine the two Old English penitentials ascribed to Ecgberht, there joined with the Directions for a Confessor, which helps point that material to Worcester."
+   }
+  ]
+ }
+}

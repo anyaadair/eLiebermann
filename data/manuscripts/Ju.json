@@ -1,0 +1,38 @@
+{
+ "id": "Ju",
+ "order": 109,
+ "anchor": "Ju",
+ "label": "Ju",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Ju",
+  "description_de": "Oxford Bodley Junius 60",
+  "shelfmark_as_given": "Oxford, Bodleian Library, MS Junius 60",
+  "date": "16th century",
+  "laws": "Sacr cor",
+  "page": "xxxi",
+  "notes": "16th century; Sacr cor, copied from Vt."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Oxford, Bodleian Library, MS Junius 60",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "16th century",
+    "ref": "Gesetze I, p. xxxi"
+   }
+  ],
+  "laws": "Sacr cor",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxxi",
+    "text": "16th century; Sacr cor, copied from Vt."
+   }
+  ]
+ }
+}

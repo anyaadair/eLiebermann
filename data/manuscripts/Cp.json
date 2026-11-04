@@ -1,0 +1,38 @@
+{
+ "id": "Cp",
+ "order": 40,
+ "anchor": "Cp",
+ "label": "Cp",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Cp",
+  "description_de": "British Museum Cotton Cleopatra B XIII",
+  "shelfmark_as_given": "London, British Library, Cotton MS Cleopatra B.xiii",
+  "date": "11th century; f. 56 another hand, c. 1025",
+  "laws": "Sacr cor",
+  "page": "xxii",
+  "notes": "After Old English homilies, f. 56 in another hand of c. 1025, not originally part of the volume, the coronation oath; f. 58 the end of Wulfstan's Sermo Lupi (1014)."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "London, British Library, Cotton MS Cleopatra B.xiii",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "11th century; f. 56 another hand, c. 1025",
+    "ref": "Gesetze I, p. xxii"
+   }
+  ],
+  "laws": "Sacr cor",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxii",
+    "text": "After Old English homilies, f. 56 in another hand of c. 1025, not originally part of the volume, the coronation oath; f. 58 the end of Wulfstan's Sermo Lupi (1014)."
+   }
+  ]
+ }
+}
