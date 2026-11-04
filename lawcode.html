@@ -313,7 +313,7 @@ scripts:
         const orderNotes = searching ? [] : ((window.__clauseOrder || {}).codeNotes || {})[code.code] || [];
         ol.innerHTML = shown.length ? shown.map(c => {
             const ex = other.get(c.id);
-            return orderNotes.filter(x => x.before === c.clause).map(x => `<li class="code-order-note small"><strong>Editor’s note:</strong> ${esc(x.text)}</li>`).join('') + `
+            return orderNotes.filter(x => x.before === c.clause).map(x => `<li class="code-order-note small"><strong>Editor’s note:</strong> ${esc(x.text).replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, '<a href="$2">$1</a>')}</li>`).join('') + `
                 <li id="${esc(c.id)}">
                     ${wulfCol(c, `<a class="code-clause-no" href="${clauseUrl(c.id)}" title="All texts, manuscripts and translations of ${esc(c.citation)}">${esc(c.clause || c.citation)}</a>`)}
                     ${S.show.has('text') ? `<p class="code-clause-oe"${ELieb.langAttr(c.oeLang)}>${tagOf(c.oeLabel, tl)}${esc(c.oe)}</p>` : ''}
