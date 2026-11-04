@@ -22,12 +22,17 @@ def clean(n):
     return {k: sup(v) if isinstance(v, str) else v for k, v in n.items()}
 
 files = sorted((json.load(open(f, encoding='utf-8')) for f in glob.glob(os.path.join(DIR, '*.json'))), key=lambda d: d['order'])
-out = []
+out, texts = [], {}
 for d in files:
     if not d.get('display', True): continue
     L, D = d.get('liebermann') or {}, d['display_fields']
     status = d.get('status', '')
     notes = [clean(n) for n in D.get('notes', []) if n.get('text')]
+    # Liebermann's own entry (Gesetze I, pp. xviii–xlii), as printed, with his notes and an English crib; where
+    # there is one, the guide's old English paraphrase of it (notes "by": "Liebermann") is no longer shown
+    entries = [{k: x[k] for k in ('page', 'pages', 'heading_de', 'heading_en', 'text_de', 'text_en', 'notes', 'editor_notes') if x.get(k)} for x in L.get('entries', [])]
+    if entries: notes = [n for n in notes if n['by'] != 'Liebermann']
+    plain = lambda h: re.sub(r'<[^>]+>', '', h or '')
     row = {
         'Anchor': d['anchor'],
         'Gesetze Text': d['label'],
@@ -42,6 +47,11 @@ for d in files:
         'Laws note': clean(D['laws_note']) if D.get('laws_note') else None,
         'Notes by': notes,
     }
+    # Liebermann's entries go in a file of their own (data/manuscripts-liebermann.json), which only the
+    # Manuscripts guide loads; the clause pages, which read data/manuscripts.json for every siglum, stay light
+    if entries:
+        row['Id'] = d['id']
+        texts[d['id']] = {'entries': entries, 'search': ' '.join(plain(x.get('text_de')) + ' ' + plain(x.get('text_en')) for x in entries)}
     if d.get('link_automatically'): row['Link automatically'] = d['link_automatically']
     if d.get('link_to'): row['Link to'] = d['link_to']   # a siglum that is really listed elsewhere (Q: the List of Law Codes)
     # one manuscript, several sigla (Liebermann's K1, K and Kb): the heading shown, and the old anchors kept
@@ -56,4 +66,6 @@ for d in files:
                      **({'Link automatically': d['link_automatically']} if d.get('link_automatically') else {})})
 with open('data/manuscripts.json', 'w', encoding='utf-8') as f:
     f.write('[\n' + ',\n'.join(json.dumps(r, ensure_ascii=False, separators=(',', ':')) for r in out) + '\n]\n')
+with open('data/manuscripts-liebermann.json', 'w', encoding='utf-8') as f:
+    json.dump(texts, f, ensure_ascii=False, separators=(',', ':'))
 print(len(out), 'entries written to data/manuscripts.json from', len(files), 'files')

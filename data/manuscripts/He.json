@@ -1,6 +1,6 @@
 {
  "id": "He",
- "order": 84,
+ "order": 91,
  "anchor": "He",
  "label": "He",
  "status": "",
@@ -12,7 +12,32 @@
   "date": "c. 1240",
   "laws": "Wl lad, CHn cor, Quadr",
   "page": "xxix",
-  "notes": "William of Malmesbury's Gesta regum Anglorum from Rochester, c. 1240; on f. 71 after § 297 the interpolation Ip Ml from Quadripartitus: Wl lad and the Praefatio to CHn cor only to § 10."
+  "notes": "William of Malmesbury's Gesta regum Anglorum from Rochester, c. 1240; on f. 71 after § 297 the interpolation Ip Ml from Quadripartitus: Wl lad and the Praefatio to CHn cor only to § 10.",
+  "entries": [
+   {
+    "page": "xxix",
+    "pages": "xxix",
+    "column": 2,
+    "heading_de": "<b>He</b>",
+    "heading_en": "<b>He</b>",
+    "text_de": "British Museum <span class=\"spaced\">Harley</span> 261, Willelmi Malmesbiriensis <i>Gesta regum Anglorum</i><sup>2</sup>, aus Rochester, um 1240; f. 71 hinter § 297 (Wilhelm's I. Geschichte): <b>Ip Ml</b>, d. i. aus Quadr.: <b>Wl lad</b>, u. S. 483; <b>Præf. ad CHn cor</b> nur bis 10, u. S. 542; f. 71v. Malmesbiriensis § 298.",
+    "text_en": "British Museum <span class=\"spaced\">Harley</span> 261, William of Malmesbury's <i>Gesta regum Anglorum</i><sup>2</sup>, from Rochester, c. 1240; f. 71, after § 297 (history of William I): <b>Ip Ml</b>, i.e. from Quadr.: <b>Wl lad</b>, below, p. 483; <b>Præf. ad CHn cor</b> only to 10, below, p. 542; f. 71v. Malmesbury § 298.",
+    "notes": [
+     {
+      "n": "2",
+      "page": "xxix",
+      "text_de": "ed. Stubbs I p. <span class=\"smallcaps\">lxxiv</span>; II 348 f.",
+      "text_en": "ed. Stubbs I p. lxxiv; II 348 f."
+     }
+    ],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "'Præf.' printed with the æ ligature here (elsewhere 'Praef.'). 'Harley' is letter-spaced.",
+     "proof_notes": "checked, no changes"
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

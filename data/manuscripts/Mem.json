@@ -1,6 +1,6 @@
 {
  "id": "Mem",
- "order": 139,
+ "order": 145,
  "anchor": "Mem",
  "label": "Mem",
  "status": "",
@@ -12,7 +12,27 @@
   "date": "",
   "laws": "Wl Lond, CHn cor, ECf retr, Hn Lond",
   "page": "xxxv",
-  "notes": "The Liber Memorandorum of the London Guildhall, with William's London charter (f. 110), Henry I's coronation charter from Cust (f. 111), ECf retr to c. 10 copied from Cc or its exemplar (ff. 121v–24), and Henry I's London charter in the Cc reading (f. 124)."
+  "notes": "The Liber Memorandorum of the London Guildhall, with William's London charter (f. 110), Henry I's coronation charter from Cust (f. 111), ECf retr to c. 10 copied from Cc or its exemplar (ff. 121v–24), and Henry I's London charter in the Cc reading (f. 124).",
+  "entries": [
+   {
+    "page": "xxxv",
+    "pages": "xxxv",
+    "column": 1,
+    "heading_de": "<b>Mem</b>",
+    "heading_en": "<b>Mem</b>",
+    "text_de": "Liber Memorandorum der Londoner <span class=\"spaced\">Guildhall</span>, f. 110 <b>Wl Lond</b>, u. S. 486; f. 111 <b>CHn cor</b> aus Cust; copirt f. 121b—24 aus Cc oder dessen Vorlage <b>ECf retr</b> bis 10, u. S. 627; f. 124 <b>Hn Lond</b> in Lesart Cc.",
+    "text_en": "Liber Memorandorum of the London Guildhall, f. 110 <b>Wl Lond</b>, below, p. 486; f. 111 <b>CHn cor</b> from Cust; copied, f. 121b—24, from Cc or its exemplar, <b>ECf retr</b> to 10, below, p. 627; f. 124 <b>Hn Lond</b> in the reading of Cc.",
+    "notes": [],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "",
+     "proof_notes": [
+      "checked, no changes"
+     ]
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

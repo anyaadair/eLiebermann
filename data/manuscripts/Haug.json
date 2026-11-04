@@ -1,6 +1,6 @@
 {
  "id": "Haug",
- "order": 81,
+ "order": 88,
  "anchor": "Haug",
  "label": "Haug",
  "status": "",
@@ -12,7 +12,36 @@
   "date": "c. 1140",
   "laws": "CHn cor",
   "page": "xxix",
-  "notes": "Richard of Hexham, c. 1140, inserts CHn cor into his Historia Stephani under 1135."
+  "notes": "Richard of Hexham, c. 1140, inserts CHn cor into his Historia Stephani under 1135.",
+  "entries": [
+   {
+    "page": "xxix",
+    "pages": "xxix",
+    "column": 1,
+    "heading_de": "<b>Haug</b>",
+    "heading_en": "<b>Haug</b>",
+    "text_de": "Ricardus <span class=\"spaced\">Haugustaldensis</span>, um 1140, nimmt in die <i>Hist. Stephani</i><sup>1</sup> zu 1135 auf <b>CHu cor</b>, u. S. 521.",
+    "text_en": "Richard of <span class=\"spaced\">Hexham</span>, c. 1140, takes into the <i>Hist. Stephani</i><sup>1</sup>, under 1135, <b>CHn cor</b>, below, p. 521.",
+    "notes": [
+     {
+      "n": "1",
+      "page": "xxix",
+      "text_de": "ed. Howlett <i>Chron. of Stephen</i> III 142.",
+      "text_en": "ed. Howlett, <i>Chron. of Stephen</i> III 142."
+     }
+    ],
+    "unseen": false,
+    "editor_notes": [
+     "Liebermann prints CHu cor, with the n turned upside down: read CHn cor."
+    ],
+    "transcription": {
+     "doubts": "The crib renders 'Ricardus Haugustaldensis' as Richard of Hexham.",
+     "proof_notes": [
+      "doubts: 'CHu cor' confirmed as printed (turned n); kept 'CHn cor', flagged"
+     ]
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

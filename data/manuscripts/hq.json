@@ -1,6 +1,6 @@
 {
  "id": "hq",
- "order": 92,
+ "order": 99,
  "anchor": "hq",
  "label": "hq",
  "status": "posited",
@@ -12,7 +12,25 @@
   "date": "",
   "laws": "",
   "page": "xxx",
-  "notes": "A common source of H and the Quadripartitus, posited by Liebermann."
+  "notes": "A common source of H and the Quadripartitus, posited by Liebermann.",
+  "entries": [
+   {
+    "page": "xxx",
+    "pages": "xxx",
+    "column": 2,
+    "heading_de": "<b>hq</b>",
+    "heading_en": "<b>hq</b>",
+    "text_de": "Gemeinsame Vorlage von H und Quadr.",
+    "text_en": "Common exemplar of H and Quadr.",
+    "notes": [],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "",
+     "proof_notes": "checked, no changes"
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

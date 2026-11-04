@@ -1,6 +1,6 @@
 {
  "id": "Ot",
- "order": 152,
+ "order": 158,
  "anchor": "Ot",
  "label": "Ot",
  "status": "",
@@ -12,7 +12,46 @@
   "date": "c. 1010",
   "laws": "Af, Ine, II As",
   "page": "xxxvi",
-  "notes": "Partly burnt; it once held the Old English Bede from Southwick, the Anglo-Saxon Chronicle (printed by Wheloc; Lambarde's 1564 transcript is now in Dublin) and bishop lists to 1005/12. The remains (c. 1010), bound out of order, contain Alfred–Ine (rubrics and fragments), where Ot is close to E and seems copied from it, and also near l; and II Æthelstan 7–25 (cf. osq)."
+  "notes": "Partly burnt; it once held the Old English Bede from Southwick, the Anglo-Saxon Chronicle (printed by Wheloc; Lambarde's 1564 transcript is now in Dublin) and bishop lists to 1005/12. The remains (c. 1010), bound out of order, contain Alfred–Ine (rubrics and fragments), where Ot is close to E and seems copied from it, and also near l; and II Æthelstan 7–25 (cf. osq).",
+  "entries": [
+   {
+    "page": "xxxvi",
+    "pages": "xxxvi",
+    "column": 1,
+    "heading_de": "<b>Ot</b>",
+    "heading_en": "<b>Ot</b>",
+    "text_de": "British Museum <span class=\"spaced\">Cotton Otho</span> B XI, theilweise verbrannt, enthielt einst die Angelsächsische Bæda-Übersetzung aus Southwick stammend<sup>5</sup> und die <i>Ann. Anglosaxonici</i><sup>6</sup>, nach denen Wheloc druckte, und Lambarde 1564 eine jetzt zu <span class=\"spaced\">Dublin</span> befindliche Abschrift<sup>7</sup> fertigte, ferner Bischofslisten bis 1005/12. Die Reste von Ot, um 1010, enthalten, in falscher Ordnung gebunden, f. 49 <b>Af-Ine</b> Rubriken bis Rubr. Ine 9; f. 50 Af 40—43; f. 52 f. Ine 66—76, 2, u. S. 16. 72. 118; für Af-Ine steht Ot nahe zu E, ja scheint daraus copirt; vgl. Af 42, 7*.<br><br>Die Hs. steht in Af-Ine auch nahe zu l.<br><br>F. 48. 51 <b>II As</b> 7—25, u. S. 154; vgl. osq.",
+    "text_en": "British Museum Cotton Otho B XI, partly burnt, once contained the Anglo-Saxon translation of Bede, originating from Southwick<sup>5</sup>, and the <i>Ann. Anglosaxonici</i><sup>6</sup>, from which Wheloc printed and of which Lambarde in 1564 made a transcript now at Dublin<sup>7</sup>, and also lists of bishops to 1005/12. The remains of Ot, c. 1010, bound in the wrong order, contain f. 49 <b>Af-Ine</b> rubrics as far as rubric Ine 9; f. 50 Af 40—43; f. 52 f. Ine 66—76, 2, below, pp. 16. 72. 118; for Af-Ine Ot stands close to E, indeed seems copied from it; cf. Af 42, 7*.<br><br>The MS also stands close to l in Af-Ine.<br><br>F. 48. 51 <b>II As</b> 7—25, below, p. 154; cf. osq.",
+    "notes": [
+     {
+      "n": "5",
+      "page": "xxxvi",
+      "text_de": "Wanley in Hickes’ <i>Thes. ling. sept.</i> III 219. Dass die Hs. Winchester entstamme, wie Turk <i>Code of Aelfred</i> 12 meint, ist unwahrscheinlich, da die Reihe dortiger Bischöfe erst hinter Rochester und Essex folgt.",
+      "text_en": "Wanley in Hickes’ <i>Thes. ling. sept.</i> III 219. That the MS comes from Winchester, as Turk, <i>Code of Aelfred</i> 12, thinks, is improbable, since the series of bishops of that see follows only after Rochester and Essex."
+     },
+     {
+      "n": "6",
+      "page": "xxxvi",
+      "text_de": "Plummer <i>Saxon chron.</i> I p. xiii; II p. xxviii hält sie für copirt aus E.",
+      "text_en": "Plummer, <i>Saxon chron.</i> I p. xiii; II p. xxviii, considers them copied from E."
+     },
+     {
+      "n": "7",
+      "page": "xxxvi",
+      "text_de": "Trinity E 5, 19; vgl. <i>Archiv neu. Spra.</i> CVI S. 345.",
+      "text_en": "Trinity E 5, 19; cf. <i>Archiv neu. Spra.</i> CVI p. 345."
+     }
+    ],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "'die Ann.' - the 'i' of 'die' carries what looks like an accent (díe); a printing flaw, transcribed 'die'. Only the first 'Af-Ine' (f. 49) and 'II As' are bold; 'Af 40—43', 'Ine 66—76, 2' and the later 'Af-Ine' are roman. Entry runs from col. 1 into col. 2.",
+     "proof_notes": [
+      "note 5: 'Winchester' is not letter-spaced → spacing removed (p. xxxvi)"
+     ]
+    }
+   }
+  ]
  },
  "wormald": [
   {

@@ -1,6 +1,6 @@
 {
  "id": "aq",
- "order": 12,
+ "order": 14,
  "anchor": "aq",
  "label": "aq",
  "status": "posited",
@@ -12,7 +12,25 @@
   "date": "",
   "laws": "I Cn, II Cn",
   "page": "xix",
-  "notes": "A common source of A and the Quadripartitus for Cnut’s laws, posited by Liebermann."
+  "notes": "A common source of A and the Quadripartitus for Cnut’s laws, posited by Liebermann.",
+  "entries": [
+   {
+    "page": "xix",
+    "pages": "xix",
+    "column": 1,
+    "heading_de": "<b>aq</b>",
+    "heading_en": "<b>aq</b>",
+    "text_de": "<b>aq</b> Vorlage von A und Quadr für <b>Cn</b>.",
+    "text_en": "<b>aq</b> Exemplar of A and Quadr for <b>Cn</b>.",
+    "notes": [],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "Not a centred heading: a single indented line beginning with bold 'aq'. Lower-case siglum = lost MS. 'Cn' appears bold; 'Quadr' roman.",
+     "proof_notes": "checked, no changes"
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [

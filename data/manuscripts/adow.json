@@ -1,6 +1,6 @@
 {
  "id": "adow",
- "order": 5,
+ "order": 6,
  "anchor": "adow",
  "label": "adow",
  "status": "posited",
@@ -12,7 +12,25 @@
   "date": "",
   "laws": "ECf",
   "page": "xviii",
-  "notes": "A common source of ECf to 34,1a, posited by Liebermann behind manuscripts Ad, Ck, Do, No, Wo and Ed."
+  "notes": "A common source of ECf to 34,1a, posited by Liebermann behind manuscripts Ad, Ck, Do, No, Wo and Ed.",
+  "entries": [
+   {
+    "page": "xviii",
+    "pages": "xviii",
+    "column": 1,
+    "heading_de": "<b>adow</b>",
+    "heading_en": "<b>adow</b>",
+    "text_de": "<b>ECf</b> bis 34, 1a, u. S. 627, Vorlage der Hss. Ad Ck Do No Wo Ed.",
+    "text_en": "<b>ECf</b> to 34, 1a, below, p. 627, exemplar of the MSS Ad Ck Do No Wo Ed.",
+    "notes": [],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "Lower-case siglum = lost MS.",
+     "proof_notes": "checked, no changes"
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

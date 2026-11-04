@@ -1,6 +1,6 @@
 {
  "id": "Cs",
- "order": 42,
+ "order": 48,
  "anchor": "Cs",
  "label": "Cs",
  "status": "not seen by Liebermann",
@@ -12,7 +12,32 @@
   "date": "13th century",
   "laws": "Quadr, Wl lad, CHn cor",
   "page": "xxii",
-  "notes": "From Battle, but perhaps copied from Rochester (cf. He); in William of Malmesbury's Gesta regum after § 297 comes Ip Ml, from the Quadripartitus: Wl lad and the preface to CHn cor, then Malmesbury § 298."
+  "notes": "From Battle, but perhaps copied from Rochester (cf. He); in William of Malmesbury's Gesta regum after § 297 comes Ip Ml, from the Quadripartitus: Wl lad and the preface to CHn cor, then Malmesbury § 298.",
+  "entries": [
+   {
+    "page": "xxii",
+    "pages": "xxii",
+    "column": 1,
+    "heading_de": "°<b>Cs</b>",
+    "heading_en": "°<b>Cs</b>",
+    "text_de": "British Museum Cotton Claudius C IX, 13. Jh., aus Battle, aber vielleicht aus Rochester (vgl. He) copirt, hinter <i>Willelmi Malmesbir. Gesta regum</i><sup>3</sup> § 297 folgt <b>Ip Ml</b>, d. i. aus <b>Quadripartitus</b>: f. 70 <b>Wl lad</b>, u. S. 483; <b>Praef. ad CHn cor</b>, u. S. 542; dann Malmesb. § 298.",
+    "text_en": "British Museum Cotton Claudius C IX, 13th century, from Battle, but perhaps copied from Rochester (cf. He); after <i>Willelmi Malmesbir. Gesta regum</i><sup>3</sup> § 297 there follows <b>Ip Ml</b>, i.e. from the <b>Quadripartitus</b>: f. 70 <b>Wl lad</b>, below, p. 483; <b>Praef. ad CHn cor</b>, below, p. 542; then Malmesb. § 298.",
+    "notes": [
+     {
+      "n": "3",
+      "page": "xxii",
+      "text_de": "ed. Stubbs II 348; I p. lxxiij.",
+      "text_en": "ed. Stubbs II 348; I p. lxxiij."
+     }
+    ],
+    "unseen": true,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "'lxxiij' in n. 3 is in small capitals.",
+     "proof_notes": "text_en: 'in … Gesta regum, after § 297' → 'after … Gesta regum § 297' (hinter)"
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

@@ -1,6 +1,6 @@
 {
  "id": "Cust",
- "order": 46,
+ "order": 52,
  "anchor": "Cust",
  "label": "Cust",
  "status": "",
@@ -12,7 +12,32 @@
   "date": "14th century",
   "laws": "CHn cor, Hn Lond, Wl Lond",
   "page": "xxii",
-  "notes": "Guildhall custumal with CHn cor (f. 13v), Hn Lond twice (f. 14v and f. 187) and Wl Lond (f. 187)."
+  "notes": "Guildhall custumal with CHn cor (f. 13v), Hn Lond twice (f. 14v and f. 187) and Wl Lond (f. 187).",
+  "entries": [
+   {
+    "page": "xxii",
+    "pages": "xxii",
+    "column": 2,
+    "heading_de": "<b>Cust</b>",
+    "heading_en": "<b>Cust</b>",
+    "text_de": "Liber custumarum der Gildhalle zu London, 14. Jh.; f. 13 v. <b>CHn cor</b>, u. S. 521; f. 14 v und f. 187, also doppelt, <b>Hn Lond</b>, u. S. 524; f. 187 <b>Wl Lond</b>, u. S. 486<sup>8</sup>.",
+    "text_en": "Liber custumarum of the Guildhall, London, 14th century; f. 13 v. <b>CHn cor</b>, below, p. 521; f. 14 v and f. 187, thus twice, <b>Hn Lond</b>, below, p. 524; f. 187 <b>Wl Lond</b>, below, p. 486<sup>8</sup>.",
+    "notes": [
+     {
+      "n": "8",
+      "page": "xxii",
+      "text_de": "Mittelengl. Übersetzung bei Riley <i>Munim. Gildhal.</i> II p. 25. 246.",
+      "text_en": "Middle English translation in Riley, <i>Munim. Gildhal.</i> II pp. 25. 246."
+     }
+    ],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "'Liber custumarum' is letter-spaced (Sperrdruck?) at the start of the line, but this looks like justification spacing rather than deliberate Sperrdruck; not marked.",
+     "proof_notes": "text_de: 'f. 13v.' → 'f. 13 v.'; text_de: 'f. 14v' → 'f. 14 v'; text_en: 'f. 13v.' → 'f. 13 v.'; text_en: 'f. 14v' → 'f. 14 v'"
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

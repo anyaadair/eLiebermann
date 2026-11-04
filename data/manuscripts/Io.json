@@ -1,6 +1,6 @@
 {
  "id": "Io",
- "order": 103,
+ "order": 111,
  "anchor": "Io",
  "label": "Io",
  "status": "",
@@ -12,7 +12,32 @@
   "date": "c. 1470",
   "laws": "Leis Wl",
   "page": "xxxi",
-  "notes": "An Ingulf manuscript of c. 1470, now mostly burnt, from which Selden printed Leis Wl (Eadmeri Hist. Nov., 1623)."
+  "notes": "An Ingulf manuscript of c. 1470, now mostly burnt, from which Selden printed Leis Wl (Eadmeri Hist. Nov., 1623).",
+  "entries": [
+   {
+    "page": "xxxi",
+    "pages": "xxxi",
+    "column": 1,
+    "heading_de": "<b>Io</b>",
+    "heading_en": "<b>Io</b>",
+    "text_de": "Aus Cotton <span class=\"spaced\">Otho</span> B XIII, einer Ingulf-Hs. um 1470, jetzt zumeist verbrannt, druckte Selden <b>Leis Wl</b><sup>6</sup>.",
+    "text_en": "From Cotton <span class=\"spaced\">Otho</span> B XIII, an Ingulf MS of c. 1470, now mostly burnt, Selden printed <b>Leis Wl</b><sup>6</sup>.",
+    "notes": [
+     {
+      "n": "6",
+      "page": "xxxi",
+      "text_de": "<i>Eadmeri Cant. Hist. Nov.</i> (1623) 173.",
+      "text_en": "<i>Eadmeri Cant. Hist. Nov.</i> (1623) 173."
+     }
+    ],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "",
+     "proof_notes": "checked, no changes"
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

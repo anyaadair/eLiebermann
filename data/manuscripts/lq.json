@@ -1,6 +1,6 @@
 {
  "id": "lq",
- "order": 133,
+ "order": 139,
  "anchor": "lq",
  "label": "lq",
  "status": "posited",
@@ -12,7 +12,34 @@
   "date": "",
   "laws": "Af, Ine, AGu, EGu, I Ew, II Ew, I As, As Alm, II As, V As, I Em, II Em, II Eg, III Eg, II Atr, Duns, Geþyncðo, Norðleod, Mirce, Að",
   "page": "xxxiv",
-  "notes": "Posited by Liebermann. In a footnote to I As Prol. (Gesetze I, p. 147, note *) he explains: “What Ld and Quadr. have in common I call lq.” So in his German translation, words in round brackets followed by lq, e.g. “(meines lq)”, are words found in both Ld and Quadr. but not in the other manuscripts; and in his notes, “lq’s reading” is the reading the two share. In his introduction (pp. xxiv, xxxiv) he goes further and treats lq as a lost collection (“Sammelband”) from which both Lambarde’s source l and the Quadripartitus drew, for Alfred–Ine, AGu, I–II Edward, I and V Æthelstan, Æthelstan’s Alms ordinance, II–III Edgar, II Æthelred, Dunsæte, Norðleod, Mirce and Að; on this site it is also cited in his notes to EGu, II As, I–II Em and Geþyncðo."
+  "notes": "Posited by Liebermann. In a footnote to I As Prol. (Gesetze I, p. 147, note *) he explains: “What Ld and Quadr. have in common I call lq.” So in his German translation, words in round brackets followed by lq, e.g. “(meines lq)”, are words found in both Ld and Quadr. but not in the other manuscripts; and in his notes, “lq’s reading” is the reading the two share. In his introduction (pp. xxiv, xxxiv) he goes further and treats lq as a lost collection (“Sammelband”) from which both Lambarde’s source l and the Quadripartitus drew, for Alfred–Ine, AGu, I–II Edward, I and V Æthelstan, Æthelstan’s Alms ordinance, II–III Edgar, II Æthelred, Dunsæte, Norðleod, Mirce and Að; on this site it is also cited in his notes to EGu, II As, I–II Em and Geþyncðo.",
+  "entries": [
+   {
+    "page": "xxxiv",
+    "pages": "xxxiv",
+    "column": 2,
+    "heading_de": "<b>lq</b>",
+    "heading_en": "<b>lq</b>",
+    "text_de": "Die l und Quadr. gemeinsame verlorene Vorlage für <b>Af-Ine</b><sup>11</sup>, <b>AGu, I. II Ew, I As, As Alm, V As, II. III Eg, II Atr, Duns, Norðleod, Mirce, Að.</b>",
+    "text_en": "The lost exemplar common to l and Quadr. for <b>Af-Ine</b><sup>11</sup>, <b>AGu, I. II Ew, I As, As Alm, V As, II. III Eg, II Atr, Duns, Norðleod, Mirce, Að.</b>",
+    "notes": [
+     {
+      "n": "11",
+      "page": "xxxiv",
+      "text_de": "vgl. vor. S.<sup>4—14</sup>; mein <i>Quadripartitus</i> S. 46.",
+      "text_en": "cf. previous page, notes<sup>4—14</sup>; my <i>Quadripartitus</i> p. 46."
+     }
+    ],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "The final full stop after 'Að' appears bold.",
+     "proof_notes": [
+      "checked, no changes"
+     ]
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [

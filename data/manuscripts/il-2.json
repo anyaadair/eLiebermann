@@ -1,6 +1,6 @@
 {
  "id": "il-2",
- "order": 100,
+ "order": 108,
  "anchor": "il",
  "label": "il",
  "status": "posited",
@@ -12,7 +12,38 @@
   "date": "",
   "laws": "I Cn, II Cn, In Cn",
   "page": "xxxi",
-  "notes": "A different source also called il, posited by Liebermann: for Cnut the source of l and of In Cn, close to aq. On l, see that entry."
+  "notes": "A different source also called il, posited by Liebermann: for Cnut the source of l and of In Cn, close to aq. On l, see that entry.",
+  "entries": [
+   {
+    "page": "xxxi",
+    "pages": "xxxi",
+    "column": 1,
+    "heading_de": "<b>I</b>",
+    "heading_en": "<b>I</b>",
+    "text_de": "<span class=\"spaced\">Pseudo-Ingulf</span>, angeblich Abt von Crowland (&#8224; 1108), in Wahrheit ein zu und für Crowland fälschender Compilator um 1330<sup>2</sup>, der aus ‘alter’, also vor 1300 geschriebener, Vorlage <b>Leis Wl</b>, u. S. 492, mit vielen Lesefehlern aufnahm. Sie war mit dem Original der Leis (1090—1135) nicht identisch.<br><br>Mehrere Abschreiber I's liessen die Leis absichtlich fort<sup>3</sup>, über die anderen vgl. il, Im, Io, Isp.<br><br><b>il</b> Vorlage für I und L[ateinischen Übersetzer der <b>Leis Wl</b>, u. S. 492].<br><br>Andere Hs. <b>il</b>, für <b>Cn</b> Vorlage von l und In Cn, stand aq nahe.",
+    "text_en": "<span class=\"spaced\">Pseudo-Ingulf</span>, allegedly abbot of Crowland (&#8224; 1108), in truth a compiler forging at and for Crowland c. 1330<sup>2</sup>, who took in <b>Leis Wl</b>, below, p. 492, from an ‘old’ exemplar, i.e. one written before 1300, with many misreadings. That exemplar was not identical with the original of the Leis (1090—1135).<br><br>Several copyists of I deliberately left out the Leis<sup>3</sup>; on the others cf. il, Im, Io, Isp.<br><br><b>il</b> exemplar for I and for L[the Latin translator of the <b>Leis Wl</b>, below, p. 492].<br><br>Another MS <b>il</b>, for <b>Cn</b> the exemplar of l and In Cn, stood close to aq.",
+    "notes": [
+     {
+      "n": "2",
+      "page": "xxxi",
+      "text_de": "vgl. <i>Neues Archiv ält. Dt. Gesch.</i> 18, 262; <i>Archiv neu. Spra.</i> CVI 114.",
+      "text_en": "cf. <i>Neues Archiv ält. Dt. Gesch.</i> 18, 262; <i>Archiv neu. Spra.</i> CVI 114."
+     },
+     {
+      "n": "3",
+      "page": "xxxi",
+      "text_de": "Darunter <span class=\"spaced\">Arundel</span> 178, 16. Jh., von Birch <i>The chron. of Croyland</i> edirt.",
+      "text_en": "Among them <span class=\"spaced\">Arundel</span> 178, 16th century, edited by Birch, <i>The chron. of Croyland</i>."
+     }
+    ],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "The two paragraphs on il (printed with il in bold at the start of a paragraph, not as a centred heading) are taken as part of the I entry. 'In Cn' in the last paragraph appears to be roman, not bold (contrast bold Cn just before). The dagger before 1108 is printed as †.",
+     "proof_notes": "checked, no changes"
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

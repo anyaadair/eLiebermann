@@ -1,6 +1,6 @@
 {
  "id": "Ct",
- "order": 43,
+ "order": 49,
  "anchor": "Ct",
  "label": "Ct",
  "status": "",
@@ -12,7 +12,44 @@
   "date": "early 14th century",
   "laws": "In Cn, Wl art",
   "page": "xxii",
-  "notes": "In Henry of Huntingdon, f. 135 Instituta Cnuti; after Huntingdon, f. 304 the Tripartita only as far as Wl art 6, the verso blank."
+  "notes": "In Henry of Huntingdon, f. 135 Instituta Cnuti; after Huntingdon, f. 304 the Tripartita only as far as Wl art 6, the verso blank.",
+  "entries": [
+   {
+    "page": "xxii",
+    "pages": "xxii",
+    "column": 1,
+    "heading_de": "<b>Ct</b>",
+    "heading_en": "<b>Ct</b>",
+    "text_de": "Cambridge Trinity College R 5, 42, Anfang 14. Jhs.<sup>4</sup>, in Huntingdon<sup>5</sup>, f. 135 <b>Instituta Cnuti</b>, u. S. 612<sup>6</sup>. Hinter Huntingdon f. 304 <b>Tripartita</b> nur bis <b>Wl art</b> 6, u. S. 487<sup>56</sup>; Rückseite leer.",
+    "text_en": "Cambridge Trinity College R 5, 42, beginning of the 14th century<sup>4</sup>, in Huntingdon<sup>5</sup>, f. 135 <b>Instituta Cnuti</b>, below, p. 612<sup>6</sup>. After Huntingdon, f. 304 <b>Tripartita</b> only to <b>Wl art</b> 6, below, p. 487<sup>56</sup>; verso blank.",
+    "notes": [
+     {
+      "n": "4",
+      "page": "xxii",
+      "text_de": "vgl. James <i>Western mss. in Trin.</i> II 210.",
+      "text_en": "cf. James, <i>Western mss. in Trin.</i> II 210."
+     },
+     {
+      "n": "5",
+      "page": "xxii",
+      "text_de": "vgl. Ed. Arnold p. xli; <i>Transact. Hist. soc., N. S.</i> VII 105.",
+      "text_en": "cf. Arnold's edition, p. xli; <i>Transact. Hist. soc., N. S.</i> VII 105."
+     },
+     {
+      "n": "6",
+      "page": "xxii",
+      "text_de": "vgl. o. Cb.",
+      "text_en": "cf. above, Cb."
+     }
+    ],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "After 'u. S. 487' the print clearly has superscript '56'; there is no note 56 on the page (notes run 1–20 and 2*). Possibly a misprint (for a repeated 5 or 6, or part of the page number). Kept as printed. 'xli' in n. 5 is small capitals.",
+     "proof_notes": "checked, no changes"
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

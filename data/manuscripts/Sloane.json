@@ -1,6 +1,6 @@
 {
  "id": "Sloane",
- "order": 188,
+ "order": 195,
  "anchor": "Sloane",
  "label": "Sloane",
  "status": "not seen by Liebermann",
@@ -12,7 +12,25 @@
   "date": "16th century",
   "laws": "Wl Lond, Hn Lond",
   "page": "xl",
-  "notes": "16th-century manuscript containing (f. 1) William's and Henry I's London charters."
+  "notes": "16th-century manuscript containing (f. 1) William's and Henry I's London charters.",
+  "entries": [
+   {
+    "page": "xl",
+    "pages": "xl",
+    "column": 1,
+    "heading_de": "°<b>Sloane</b>",
+    "heading_en": "°<b>Sloane</b>",
+    "text_de": "British Museum <span class=\"spaced\">Sloane</span> 754, 16. Jh.<br><br>f. 1 <b>Wl Lond</b>, u. S. 486; <b>Hn Lond</b>, u. S. 524.",
+    "text_en": "British Museum <span class=\"spaced\">Sloane</span> 754, 16th century.<br><br>f. 1 <b>Wl Lond</b>, below, p. 486; <b>Hn Lond</b>, below, p. 524.",
+    "notes": [],
+    "unseen": true,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "",
+     "proof_notes": "checked, no changes"
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

@@ -1,6 +1,6 @@
 {
  "id": "Ti",
- "order": 199,
+ "order": 206,
  "anchor": "Ti",
  "label": "Ti",
  "status": "",
@@ -12,7 +12,34 @@
   "date": "c. 1075",
   "laws": "Excom",
   "page": "xli",
-  "notes": "Pontifical for Salisbury (c. 1075), with an excommunication of 'Leo papa' (f. 197) followed by Excommunicatio I."
+  "notes": "Pontifical for Salisbury (c. 1075), with an excommunication of 'Leo papa' (f. 197) followed by Excommunicatio I.",
+  "entries": [
+   {
+    "page": "xli",
+    "pages": "xli",
+    "column": 1,
+    "heading_de": "<b>Ti</b>",
+    "heading_en": "<b>Ti</b>",
+    "text_de": "British Museum <span class=\"spaced\">Cotton Tiberius</span> C I, f. 42—201 Pontifical für Salisbury<sup>4</sup>, um 1075.<br><br>F. 197 Excommunicatio des <i>Leo papa</i>, s. u. S. 432<sup>a</sup>. Darauf folgt <b>Excom. I</b>, u. S. 432.",
+    "text_en": "British Museum <span class=\"spaced\">Cotton Tiberius</span> C I, f. 42—201 pontifical for Salisbury<sup>4</sup>, c. 1075.<br><br>F. 197 excommunication of <i>Leo papa</i>, see below, p. 432<sup>a</sup>. Then follows <b>Excom. I</b>, below, p. 432.",
+    "notes": [
+     {
+      "n": "4",
+      "page": "xli",
+      "text_de": "ebd. p. xxvii; Wanley in Hickes’ <i>Thes. ling. sept.</i> III 220.",
+      "text_en": "ibid. p. xxvii; Wanley in Hickes’ <i>Thes. ling. sept.</i> III 220."
+     }
+    ],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "",
+     "proof_notes": [
+      "'Tiberius' also letter-spaced, as in Tr (p. xli col. 1)"
+     ]
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

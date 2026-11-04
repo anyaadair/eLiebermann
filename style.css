@@ -1431,3 +1431,17 @@ ruby.gloss-pair rt.gloss-word { font-size: 0.68em; line-height: 1.1; color: #4a4
 .code-clause-redirect { margin: 0.2rem 0 0; font-size: 0.9rem; }
 .gl-tag.gl-tag--new { background: #dcefe6; color: #1f6a4c; box-shadow: inset 0 0 0 1px #9fceb7; }
 .gl-sup { font-size: 0.68em; line-height: 0; vertical-align: 0.5em; letter-spacing: 0.01em; }
+/* Manuscripts guide: Liebermann's own entry (as printed, with an English crib), then later scholarship */
+.gl-part { font-family: var(--sans); font-size: 0.74rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); margin: 0.6rem 0 0.25rem; }
+.gl-part .gl-ref { text-transform: none; letter-spacing: 0; font-weight: 400; }
+.gl-lieb .lb-de, .gl-lieb .lb-en { padding: 0.35rem 0.6rem; border-left: 3px solid #d9c9a8; background: rgba(217, 201, 168, 0.12); margin: 0.2rem 0 0.4rem; }
+.gl-lieb .lb-en { border-left-color: #cfd6df; background: rgba(207, 214, 223, 0.18); color: #4a4f57; }
+.gl-lieb .lb-head { margin: 0 0 0.2rem; }
+.gl-lieb .lb-de p, .gl-lieb .lb-en p { margin: 0 0 0.3rem; }
+.gl-lieb .lb-label { font-family: var(--sans); font-size: 0.72rem; color: var(--muted); margin: 0 0 0.2rem; cursor: help; }
+.gl-lieb .lb-notes { list-style: none; padding: 0; margin: 0.35rem 0 0; font-size: 0.92em; border-top: 1px solid rgba(0,0,0,0.08); padding-top: 0.25rem; }
+.gl-lieb .lb-notes li { margin: 0 0 0.15rem; }
+.gl-lieb .lb-n { color: var(--muted); }
+.lb-spaced { letter-spacing: 0.12em; }
+.lb-smallcaps { font-variant: small-caps; }
+.gl-later { margin-top: 0.4rem; }

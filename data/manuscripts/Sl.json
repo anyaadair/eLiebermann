@@ -1,6 +1,6 @@
 {
  "id": "Sl",
- "order": 187,
+ "order": 194,
  "anchor": "Sl",
  "label": "Sl",
  "status": "not seen by Liebermann",
@@ -12,7 +12,38 @@
   "date": "",
   "laws": "Hn, Hn Lond",
   "page": "xxxix",
-  "notes": "John Selden's manuscript of the London Leges Anglorum (see Lond), containing Leges Henrici and Henry I's London charter, known from variants noted by Twysden (in Wheloc's Archaionomia 1644); it stands closest to K."
+  "notes": "John Selden's manuscript of the London Leges Anglorum (see Lond), containing Leges Henrici and Henry I's London charter, known from variants noted by Twysden (in Wheloc's Archaionomia 1644); it stands closest to K.",
+  "entries": [
+   {
+    "page": "xxxix",
+    "pages": "xxxix",
+    "column": 2,
+    "heading_de": "°<b>Sl</b>",
+    "heading_en": "°<b>Sl</b>",
+    "text_de": "John <span class=\"spaced\">Selden’s</span> Codex, <b>Hn</b>, u. S. 547, mit <b>Hn Lond</b>, u. S. 524, enthaltend, woraus Twysden<sup>10</sup> Varianten notirte. Die Hs. giebt den Text der <i>Leges Anglorum s. XIII. in. Lond. coll.</i> (s. o. Lond) und steht K zunächst<sup>11</sup>.",
+    "text_en": "John <span class=\"spaced\">Selden’s</span> codex, containing <b>Hn</b>, below, p. 547, with <b>Hn Lond</b>, below, p. 524, from which Twysden<sup>10</sup> noted variants. The MS gives the text of the <i>Leges Anglorum s. XIII. in. Lond. coll.</i> (see above, Lond) and stands closest to K<sup>11</sup>.",
+    "notes": [
+     {
+      "n": "10",
+      "page": "xxxix",
+      "text_de": "In Wheloc’s <i>Archaionomia</i> 1644.",
+      "text_en": "In Wheloc’s <i>Archaionomia</i> 1644."
+     },
+     {
+      "n": "11",
+      "page": "xxxix",
+      "text_de": "vgl. mein <i>Über Leges Henrici</i> S. 14.",
+      "text_en": "cf. my <i>Über Leges Henrici</i> p. 14."
+     }
+    ],
+    "unseen": true,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "",
+     "proof_notes": "checked, no changes"
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

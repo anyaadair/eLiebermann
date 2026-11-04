@@ -1,6 +1,6 @@
 {
  "id": "L",
- "order": 117,
+ "order": 123,
  "anchor": "L",
  "label": "L",
  "status": "not seen by Liebermann",
@@ -12,7 +12,34 @@
   "date": "13th century (after Thorpe)",
   "laws": "ECf retr",
   "page": "xxxii",
-  "notes": "A manuscript used only by Thorpe, who gave no location and assigned it to the 13th century; from the variants he cites for ECf it had ECf retr, closest to Db."
+  "notes": "A manuscript used only by Thorpe, who gave no location and assigned it to the 13th century; from the variants he cites for ECf it had ECf retr, closest to Db.",
+  "entries": [
+   {
+    "page": "xxxii",
+    "pages": "xxxii",
+    "column": 2,
+    "heading_de": "°<b>L</b>",
+    "heading_en": "°<b>L</b>",
+    "text_de": "Von Thorpe<sup>12</sup> allein, ohne Angabe des Fundortes, benutzt und dem 13. Jh. zugewiesen. Laut der von ihm nur für ECf citirten Varianten: <b>ECf retr</b>, u. S. 627, nächst verwandt mit Db.",
+    "text_en": "Used by Thorpe<sup>12</sup> alone, without stating where it is kept, and assigned to the 13th century. According to the variants he cites only for ECf: <b>ECf retr</b>, below, p. 627, most closely related to Db.",
+    "notes": [
+     {
+      "n": "12",
+      "page": "xxxii",
+      "text_de": "<i>Ancient laws</i> p. <span class=\"smallcaps\">xi</span>.",
+      "text_en": "<i>Ancient laws</i> p. xi."
+     }
+    ],
+    "unseen": true,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "",
+     "proof_notes": [
+      "note 12 text_de: 'xi' marked small caps"
+     ]
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

@@ -1,6 +1,6 @@
 {
  "id": "La",
- "order": 120,
+ "order": 126,
  "anchor": "La",
  "label": "La",
  "status": "",
@@ -12,7 +12,41 @@
   "date": "early 13th century",
   "laws": "Wl art, ECf retr",
   "page": "xxxii",
-  "notes": "Henry of Huntingdon, early 13th century, followed at f. 79v by the Tripartita (Wl art, ECf retr) and the Genealogia Normannica with readings like Lb; then f. 86 'Hic est annus qui comprehendit' from Huntingdon VIII and f. 87 bishop lists from William of Malmesbury's Gesta Pontificum, continued to the early 13th century. Arnold calls it a 'transcript of Lb'."
+  "notes": "Henry of Huntingdon, early 13th century, followed at f. 79v by the Tripartita (Wl art, ECf retr) and the Genealogia Normannica with readings like Lb; then f. 86 'Hic est annus qui comprehendit' from Huntingdon VIII and f. 87 bishop lists from William of Malmesbury's Gesta Pontificum, continued to the early 13th century. Arnold calls it a 'transcript of Lb'.",
+  "entries": [
+   {
+    "page": "xxxii",
+    "pages": "xxxii–xxxiii",
+    "column": 2,
+    "heading_de": "<b>La</b>",
+    "heading_en": "<b>La</b>",
+    "text_de": "London <span class=\"spaced\">Lambeth</span> 179, Anfang 13. Jhs.: <i>Henr. Huntendon.</i><sup>13</sup> Dahinter f. 79b <b>Tripartita</b>, d. i. <b>Wl art</b>, u. S. 486, <b>ECf retr</b>, u. S. 627, und <i>Geneal. Normann.</i> Lesarten wie Lb. Dahinter f. 86 <i>Hic est annus qui comprehendit</i> aus Huntingdon. VIII<sup>1</sup>; f. 87 Bischofslisten, aus Will. Malmesbir. <i>G. Pontif.,</i> theilweise fortgesetzt bis Anfang 13. Jhs.",
+    "text_en": "London <span class=\"spaced\">Lambeth</span> 179, beginning of the 13th century: <i>Henr. Huntendon.</i><sup>13</sup> After it f. 79b <b>Tripartita</b>, i.e. <b>Wl art</b>, below, p. 486, <b>ECf retr</b>, below, p. 627, and <i>Geneal. Normann.</i> Readings as Lb. After that f. 86 <i>Hic est annus qui comprehendit</i> from Huntingdon VIII<sup>1</sup>; f. 87 lists of bishops, from Will. Malmesbir. <i>G. Pontif.,</i> partly continued to the beginning of the 13th century.",
+    "notes": [
+     {
+      "n": "13",
+      "page": "xxxii",
+      "text_de": "vgl. Arnold p. <span class=\"smallcaps\">xl</span>: ‘transcript of Lb’.",
+      "text_en": "cf. Arnold p. xl: ‘transcript of Lb’."
+     },
+     {
+      "n": "1",
+      "page": "xxxiii",
+      "text_de": "vgl. Arnold p. <span class=\"smallcaps\">xviii</span>.",
+      "text_en": "cf. Arnold p. xviii."
+     }
+    ],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "Runs from the foot of p. xxxii col. 2 to the top of p. xxxiii col. 1; footnote 1 is on p. xxxiii.",
+     "proof_notes": [
+      "note 13 text_de: 'xl' marked small caps",
+      "note 1 (p. xxxiii) text_de: 'xviii' marked small caps"
+     ]
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

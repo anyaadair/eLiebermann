@@ -1,6 +1,6 @@
 {
  "id": "gls",
- "order": 76,
+ "order": 82,
  "anchor": "gls",
  "label": "gls",
  "status": "posited",
@@ -12,7 +12,27 @@
   "date": "",
   "laws": "Af, Ine, II Eg, III Eg",
   "page": "xxvi",
-  "notes": "A common source of G and ls for Alfred–Ine and II–III Edgar, posited by Liebermann."
+  "notes": "A common source of G and ls for Alfred–Ine and II–III Edgar, posited by Liebermann.",
+  "entries": [
+   {
+    "page": "xxvi",
+    "pages": "xxvi",
+    "column": 1,
+    "heading_de": "<b>gls</b>",
+    "heading_en": "<b>gls</b>",
+    "text_de": "Verlorene Vorlage von G und ls für <b>Af-Ine</b> und <b>II. III Eg.</b>",
+    "text_en": "Lost exemplar of G and ls for <b>Af-Ine</b> and <b>II. III Eg.</b>",
+    "notes": [],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "Heading and siglum read 'gls' / 'ls' (lower-case l with slanted top serif, taller than cap height, no i-dot).",
+     "proof_notes": [
+      "heading_de/sigla: 'gis' → 'gls'; text_de: 'G und Is' → 'G und ls' (both lower-case l, no dot; checked at 600 dpi against capital I in 'Ip Hunt', p. xxiii; p. xxvi col. 1)"
+     ]
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [

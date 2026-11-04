@@ -1,6 +1,6 @@
 {
  "id": "West",
- "order": 219,
+ "order": 226,
  "anchor": "West",
  "label": "West",
  "status": "",
@@ -12,7 +12,25 @@
   "date": "",
   "laws": "CHn cor",
   "page": "xlii",
-  "notes": "The Westminster recension of Henry I's coronation charter, found in Gl, Lond, Hl, Cust, S, Vl and Cant."
+  "notes": "The Westminster recension of Henry I's coronation charter, found in Gl, Lond, Hl, Cust, S, Vl and Cant.",
+  "entries": [
+   {
+    "page": "xlii",
+    "pages": "xlii",
+    "column": 2,
+    "heading_de": "<b>West</b>",
+    "heading_en": "<b>West</b>",
+    "text_de": "<span class=\"spaced\">Westminster</span>-Bearbeitung der <b>CHn cor</b>, u. S. 521<sup>d</sup> in Gl Lond Hl Cust S Vl Cant.",
+    "text_en": "<span class=\"spaced\">Westminster</span> recension of <b>CHn cor</b>, below, p. 521<sup>d</sup> in Gl Lond Hl Cust S Vl Cant.",
+    "notes": [],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "521<sup>d</sup> is a textual-note letter.",
+     "proof_notes": "checked, no changes"
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

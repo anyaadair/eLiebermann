@@ -1,6 +1,6 @@
 {
  "id": "Lm",
- "order": 130,
+ "order": 136,
  "anchor": "Lm",
  "label": "Lm",
  "status": "",
@@ -12,7 +12,34 @@
   "date": "c. 1325",
   "laws": "ECf retr",
   "page": "xxxiv",
-  "notes": "Copy of the Flores historiarum from St Albans, into which an interpolator at St Paul's, London, inserted (f. 33) ECf retr 10–10,3."
+  "notes": "Copy of the Flores historiarum from St Albans, into which an interpolator at St Paul's, London, inserted (f. 33) ECf retr 10–10,3.",
+  "entries": [
+   {
+    "page": "xxxiv",
+    "pages": "xxxiv",
+    "column": 1,
+    "heading_de": "<b>Lm</b>",
+    "heading_en": "<b>Lm</b>",
+    "text_de": "London, <span class=\"spaced\">Lambeth</span> 1106 um 1325. Im Londoner Dom setzt in die <i>Flores historiarum</i><sup>3</sup> aus St. Alban’s, f. 33 ein Interpolator <b>ECf retr</b> 10—10, 3, u. S. 634, hinein.",
+    "text_en": "London, Lambeth 1106, c. 1325. In the London cathedral an interpolator inserts into the <i>Flores historiarum</i><sup>3</sup> from St Alban’s, f. 33, <b>ECf retr</b> 10—10, 3, below, p. 634.",
+    "notes": [
+     {
+      "n": "3",
+      "page": "xxxiv",
+      "text_de": "ed. Luard I 426, vgl. Stubbs <i>Chron. of Edw. I.</i>, I p. xlv.",
+      "text_en": "ed. Luard I 426, cf. Stubbs, <i>Chron. of Edw. I.</i>, I p. xlv."
+     }
+    ],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "",
+     "proof_notes": [
+      "checked, no changes"
+     ]
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

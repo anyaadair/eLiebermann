@@ -1,6 +1,6 @@
 {
  "id": "Os",
- "order": 150,
+ "order": 156,
  "anchor": "Os",
  "label": "Os",
  "status": "",
@@ -12,7 +12,40 @@
   "date": "written 995–1005",
   "laws": "Sacr cor",
   "page": "xxxvi",
-  "notes": "The Life of St Oswald of York by a Ramsey monk, composed 995–1005, which uses the Sacramentum coronationis."
+  "notes": "The Life of St Oswald of York by a Ramsey monk, composed 995–1005, which uses the Sacramentum coronationis.",
+  "entries": [
+   {
+    "page": "xxxvi",
+    "pages": "xxxvi",
+    "column": 1,
+    "heading_de": "<b>Os</b>",
+    "heading_en": "<b>Os</b>",
+    "text_de": "Vita s. <span class=\"spaced\">Oswaldi</span> archiepiscopi Eboracensis, auct. monacho Rameseiensi, verfasst 995—1005<sup>3</sup>, benutzt<sup>4</sup> <b>Sacr cor</b>, u. S. 215.",
+    "text_en": "Life of St Oswald, archbishop of York, by a monk of Ramsey, written 995—1005<sup>3</sup>, uses<sup>4</sup> <b>Sacr cor</b>, below, p. 215.",
+    "notes": [
+     {
+      "n": "3",
+      "page": "xxxvi",
+      "text_de": "Erzbischof Aelfric von Canterbury <i>testis est</i>.",
+      "text_en": "Archbishop Aelfric of Canterbury <i>testis est</i>."
+     },
+     {
+      "n": "4",
+      "page": "xxxvi",
+      "text_de": "Aus Hs. Anfang 11. Jhs. ed. Raine <i>Historians of York</i> I 437.",
+      "text_en": "From a MS of the beginning of the 11th century, ed. Raine, <i>Historians of York</i> I 437."
+     }
+    ],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "A stray dot before 'auct.' is a blemish, omitted.",
+     "proof_notes": [
+      "checked, no changes"
+     ]
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

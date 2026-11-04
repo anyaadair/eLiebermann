@@ -1,6 +1,6 @@
 {
  "id": "ls",
- "order": 134,
+ "order": 140,
  "anchor": "ls",
  "label": "ls",
  "status": "posited",
@@ -12,7 +12,27 @@
   "date": "",
   "laws": "Af, Ine, II Eg",
   "page": "xxxiv",
-  "notes": "A common source of Ld and So for Alfred–Ine and II Edgar, posited by Liebermann and derived by him from gls."
+  "notes": "A common source of Ld and So for Alfred–Ine and II Edgar, posited by Liebermann and derived by him from gls.",
+  "entries": [
+   {
+    "page": "xxxiv",
+    "pages": "xxxiv",
+    "column": 2,
+    "heading_de": "<b>ls</b>",
+    "heading_en": "<b>ls</b>",
+    "text_de": "Die Ld und So gemeinsame Vorlage für <b>Af-Ine</b> und <b>II Eg.</b> Sie floss aus gls.",
+    "text_en": "The exemplar common to Ld and So for <b>Af-Ine</b> and <b>II Eg.</b> It derived from gls.",
+    "notes": [],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "",
+     "proof_notes": [
+      "checked, no changes"
+     ]
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [

@@ -1,6 +1,6 @@
 {
  "id": "Douai",
- "order": 60,
+ "order": 66,
  "anchor": "Douai",
  "label": "Douai",
  "status": "not seen by Liebermann",
@@ -12,7 +12,27 @@
   "date": "",
   "laws": "Consuetudines Londoniarum amplificatae",
   "page": "xxiii",
-  "notes": "Douai manuscript containing the Consuetudines Londoniarum amplificatae (printed at p. 673)."
+  "notes": "Douai manuscript containing the Consuetudines Londoniarum amplificatae (printed at p. 673).",
+  "entries": [
+   {
+    "page": "xxiii",
+    "pages": "xxiii",
+    "column": 2,
+    "heading_de": "°<b>Douai</b>",
+    "heading_en": "°<b>Douai</b>",
+    "text_de": "<b>Consuetudines Londoniarum amplificatae</b>, u. S. 673<sup>a</sup>.",
+    "text_en": "<b>Consuetudines Londoniarum amplificatae</b>, below, p. 673<sup>a</sup>.",
+    "notes": [],
+    "unseen": true,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "Superscript 'a' after 673 is part of the page reference (p. 673 note a), not a footnote mark of this page. Bold of the title: read as bold (law-text name).",
+     "proof_notes": [
+      "checked, no changes"
+     ]
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

@@ -1,6 +1,6 @@
 {
  "id": "Paris",
- "order": 158,
+ "order": 165,
  "anchor": "Paris",
  "label": "Paris",
  "status": "not seen by Liebermann",
@@ -12,7 +12,34 @@
   "date": "c. 1700",
   "laws": "Leis Wl",
   "page": "xxxvii",
-  "notes": "Collectanea of Toustain de Billy (c. 1700), with a few lines of the Leis Willelme copied from Isp."
+  "notes": "Collectanea of Toustain de Billy (c. 1700), with a few lines of the Leis Willelme copied from Isp.",
+  "entries": [
+   {
+    "page": "xxxvii",
+    "pages": "xxxvii",
+    "column": 1,
+    "heading_de": "°<b>Paris</b>",
+    "heading_en": "°<b>Paris</b>",
+    "text_de": "Bibliothèque nationale, Fonds franç. 4901, Collectaneen des Toustain de Billy um 1700, mit einigen Zeilen der <b>Leis Wl</b>, aus Isp copirt<sup>9</sup>.",
+    "text_en": "Bibliothèque nationale, Fonds franç. 4901, collectanea of Toustain de Billy, c. 1700, with some lines of the <b>Leis Wl</b>, copied from Isp<sup>9</sup>.",
+    "notes": [
+     {
+      "n": "9",
+      "page": "xxxvii",
+      "text_de": "vgl. <i>Archiv neu. Spra.</i> CVII 134.",
+      "text_en": "cf. <i>Archiv neu. Spra.</i> CVII 134."
+     }
+    ],
+    "unseen": true,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "",
+     "proof_notes": [
+      "checked, no changes"
+     ]
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

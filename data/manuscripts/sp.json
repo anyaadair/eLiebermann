@@ -1,6 +1,6 @@
 {
  "id": "sp",
- "order": 191,
+ "order": 198,
  "anchor": "sp",
  "label": "sp",
  "status": "posited",
@@ -12,7 +12,43 @@
   "date": "",
   "laws": "ECf, Lib Lond, In Cn, Wl art",
   "page": "xl",
-  "notes": "A common source of S and Pl for ECf (with rubrics from ECf retr), Libertas Londoniensis, Instituta Cnuti (Ip Hunt class) and the Tripartita (Wl art, Genealogia Normannica continued to John), posited by Liebermann."
+  "notes": "A common source of S and Pl for ECf (with rubrics from ECf retr), Libertas Londoniensis, Instituta Cnuti (Ip Hunt class) and the Tripartita (Wl art, Genealogia Normannica continued to John), posited by Liebermann.",
+  "entries": [
+   {
+    "page": "xl",
+    "pages": "xl",
+    "column": 1,
+    "heading_de": "<b>sp</b>",
+    "heading_en": "<b>sp</b>",
+    "text_de": "Verlorene Vorlage von S und Pl für <b>ECf</b>, u. S. 627, mit Rubriken zu ECf retr; <b>Lib Lond</b>, u. S. 673; <b>In Cn</b>, u. S. 612 aus Ip Hunt Classe; <b>Tripartita</b>, nämlich <b>Wl art</b>, u. S. 486; <i>Geneal. Normannica</i>, fortgesetzt bis Johann.",
+    "text_en": "Lost exemplar of S and Pl for <b>ECf</b>, below, p. 627, with rubrics to ECf retr; <b>Lib Lond</b>, below, p. 673; <b>In Cn</b>, below, p. 612, from the Ip Hunt class; <b>Tripartita</b>, namely <b>Wl art</b>, below, p. 486; <i>Geneal. Normannica</i>, continued to John.",
+    "notes": [],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "'ECf retr' here is in roman, not bold.",
+     "proof_notes": "checked, no changes"
+    }
+   },
+   {
+    "page": "xxxvii",
+    "pages": "xxxvii",
+    "column": 2,
+    "heading_de": "<b>ps</b> s. <b>sp</b>",
+    "heading_en": "<b>ps</b>: see <b>sp</b>",
+    "text_de": "",
+    "text_en": "",
+    "notes": [],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "Cross-reference line only, printed centred; no body text.",
+     "proof_notes": [
+      "checked, no changes"
+     ]
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [

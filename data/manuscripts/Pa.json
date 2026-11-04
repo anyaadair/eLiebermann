@@ -1,6 +1,6 @@
 {
  "id": "Pa",
- "order": 157,
+ "order": 164,
  "anchor": "Pa",
  "label": "Pa",
  "status": "not seen by Liebermann",
@@ -12,7 +12,34 @@
   "date": "16th-century copy",
   "laws": "In Cn",
   "page": "xxxvii",
-  "notes": "A 16th-century copy of Henry of Huntingdon with Instituta Cnuti, according to Arnold copied from Lb."
+  "notes": "A 16th-century copy of Henry of Huntingdon with Instituta Cnuti, according to Arnold copied from Lb.",
+  "entries": [
+   {
+    "page": "xxxvii",
+    "pages": "xxxvii",
+    "column": 1,
+    "heading_de": "°<b>Pa</b>",
+    "heading_en": "°<b>Pa</b>",
+    "text_de": "<span class=\"spaced\">Paris</span>, Biblioth. nationale 6044, Abschrift 16. Jhs. des <i>Henr. Huntingdon.</i> mit <b>In Cn</b>, u. S. 612, nach Arnold<sup>8</sup> aus Lb.",
+    "text_en": "Paris, Biblioth. nationale 6044, 16th-century transcript of <i>Henr. Huntingdon.</i> with <b>In Cn</b>, below, p. 612, according to Arnold<sup>8</sup> from Lb.",
+    "notes": [
+     {
+      "n": "8",
+      "page": "xxxvii",
+      "text_de": "<i>Henr. Huntendun.</i> p. xliii.",
+      "text_en": "<i>Henr. Huntendun.</i> p. xliii."
+     }
+    ],
+    "unseen": true,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "",
+     "proof_notes": [
+      "checked, no changes"
+     ]
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

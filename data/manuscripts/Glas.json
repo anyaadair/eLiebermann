@@ -1,6 +1,6 @@
 {
  "id": "Glas",
- "order": 75,
+ "order": 81,
  "anchor": "Glas",
  "label": "Glas",
  "status": "not seen by Liebermann",
@@ -12,7 +12,34 @@
   "date": "c. 1225",
   "laws": "CHn cor",
   "page": "xxvi",
-  "notes": "The register of the bishopric of Glasgow; f. 25, c. 1225, has CHn cor. Compare West."
+  "notes": "The register of the bishopric of Glasgow; f. 25, c. 1225, has CHn cor. Compare West.",
+  "entries": [
+   {
+    "page": "xxvi",
+    "pages": "xxvi",
+    "column": 1,
+    "heading_de": "°<b>Gl</b>[asgow]",
+    "heading_en": "°<b>Gl</b>[asgow]",
+    "text_de": "Registrum episcopatus Glasguensis<sup>8</sup>. F. 25, um 1225, <b>CHn cor</b>, u. S. 521<sup>d</sup>. Vgl. West.",
+    "text_en": "Registrum episcopatus Glasguensis<sup>8</sup>. F. 25, c. 1225, <b>CHn cor</b>, below, p. 521<sup>d</sup>. Cf. West.",
+    "notes": [
+     {
+      "n": "8",
+      "page": "xxvi",
+      "text_de": "ed. Innes (Bannatyne club 79) Edinburgh 1843, II p. 591.",
+      "text_en": "ed. Innes (Bannatyne Club 79), Edinburgh 1843, II p. 591."
+     }
+    ],
+    "unseen": true,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "Heading printed °Gl[asgow]; '[asgow]' not bold. '521<sup>d</sup>' is a page-and-note reference. Whether 'Registrum episcopatus Glasguensis' is italic: appears roman.",
+     "proof_notes": [
+      "checked, no changes"
+     ]
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

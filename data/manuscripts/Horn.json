@@ -1,6 +1,6 @@
 {
  "id": "Horn",
- "order": 91,
+ "order": 98,
  "anchor": "Horn",
  "label": "Horn",
  "status": "",
@@ -12,7 +12,38 @@
   "date": "1311",
   "laws": "Lib Lond, Wl Lond, Hn Lond, ECf retr",
   "page": "xxx",
-  "notes": "The Liber Horn, made in 1311 for Andrew Horn, fishmonger of London, containing the city's charters and customs: f. 230 Lib London., ff. 205v and 362 Wl Lond, f. 362v Hn Lond, f. 375 ECf retr (similar to Cc). Compare Co."
+  "notes": "The Liber Horn, made in 1311 for Andrew Horn, fishmonger of London, containing the city's charters and customs: f. 230 Lib London., ff. 205v and 362 Wl Lond, f. 362v Hn Lond, f. 375 ECf retr (similar to Cc). Compare Co.",
+  "entries": [
+   {
+    "page": "xxx",
+    "pages": "xxx",
+    "column": 2,
+    "heading_de": "<b>Horn</b>",
+    "heading_en": "<b>Horn</b>",
+    "text_de": "London <span class=\"spaced\">Guildhall</span>, Liber Horn f. 206: <i>Iste liber restat Andree Horn</i><sup>4</sup> <i>piscenario Londoñ de Breggestrete, in quo continentur carte et alie consuetudines prędicte ciuitatis, . . . quem fieri fecit a. D.</i> 1311<sup>5</sup>.<br><br>F. 230 <b>Lib London.</b>, u. S. 673; f. 205b und 362 <b>Wl Lond</b>, u. S. 486; f. 362b <b>Hn Lond</b>, u. S. 524; f. 375 <b>ECf retr</b>, u. S. 627, ähnlich Cc. Vgl. o. Co.",
+    "text_en": "London <span class=\"spaced\">Guildhall</span>, Liber Horn f. 206: <i>Iste liber restat Andree Horn</i><sup>4</sup> <i>piscenario Londoñ de Breggestrete, in quo continentur carte et alie consuetudines prędicte ciuitatis, . . . quem fieri fecit a. D.</i> 1311<sup>5</sup>.<br><br>F. 230 <b>Lib London.</b>, below, p. 673; f. 205b and 362 <b>Wl Lond</b>, below, p. 486; f. 362b <b>Hn Lond</b>, below, p. 524; f. 375 <b>ECf retr</b>, below, p. 627, similar to Cc. Cf. above, Co.",
+    "notes": [
+     {
+      "n": "4",
+      "page": "xxx",
+      "text_de": "vgl. o. S. <span class=\"smallcaps\">xxi</span><sup>15. 16</sup>.",
+      "text_en": "cf. above, p. xxi, notes 15. 16."
+     },
+     {
+      "n": "5",
+      "page": "xxx",
+      "text_de": "Facsimile dieser Seite bei Sharpe <i>Journ. Brit. archl. assoc.</i> 1897 p. 103, vgl. p. 107.",
+      "text_en": "Facsimile of this page in Sharpe, <i>Journ. Brit. archl. assoc.</i> 1897 p. 103, cf. p. 107."
+     }
+    ],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "The Latin quotation is left in Latin in the crib. 'Londoñ' has a tilde (abbreviation mark) over n; 'pręd' has an e-caudata (ę).",
+     "proof_notes": "checked, no changes"
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],
