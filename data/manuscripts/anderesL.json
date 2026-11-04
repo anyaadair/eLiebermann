@@ -1,6 +1,6 @@
 {
  "id": "anderesL",
- "order": 10,
+ "order": 12,
  "anchor": "anderesL",
  "label": "anderes L",
  "status": "",
@@ -12,7 +12,25 @@
   "date": "",
   "laws": "Leis Wl",
   "page": "xxxii",
-  "notes": "The Latin translation of Leis Wl, made from the form il, which was the exemplar of S."
+  "notes": "The Latin translation of Leis Wl, made from the form il, which was the exemplar of S.",
+  "entries": [
+   {
+    "page": "xxxii",
+    "pages": "xxxii",
+    "column": 2,
+    "heading_de": "anderes <b>L</b>",
+    "heading_en": "another <b>L</b>",
+    "text_de": "Lateinische Übersetzung der <b>Leis Wl</b> aus Form il, u. S. 492<sup><i>a</i></sup>, lag S vor.",
+    "text_en": "Latin translation of the <b>Leis Wl</b> from form il, below, p. 492<sup><i>a</i></sup>, lay before S.",
+    "notes": [],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "'492<sup><i>a</i></sup>': the superscript italic a refers to variant note a on p. 492, not a footnote here.",
+     "proof_notes": "checked, no changes"
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

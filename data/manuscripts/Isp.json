@@ -1,6 +1,6 @@
 {
  "id": "Isp",
- "order": 106,
+ "order": 114,
  "anchor": "Isp",
  "label": "Isp",
  "status": "",
@@ -12,7 +12,34 @@
   "date": "14./15th century",
   "laws": "Leis Wl",
   "page": "xxxi",
-  "notes": "Spelman printed from Ingulf's 'very old manuscript', of the 14th/15th century, from Crowland and perhaps the exemplar of Im, only five chapters of Leis Wl. MS Paris was copied from Isp."
+  "notes": "Spelman printed from Ingulf's 'very old manuscript', of the 14th/15th century, from Crowland and perhaps the exemplar of Im, only five chapters of Leis Wl. MS Paris was copied from Isp.",
+  "entries": [
+   {
+    "page": "xxxi",
+    "pages": "xxxi",
+    "column": 2,
+    "heading_de": "<b>Isp</b>",
+    "heading_en": "<b>Isp</b>",
+    "text_de": "<span class=\"spaced\">Spelman</span><sup>9</sup> druckte nach Ingulf's <i>ms. veterrimo,</i> also des 14./15. Jhs., aus Crowland, vielleicht der Vorlage von Im, nur fünf Capitel der <b>Leis Wl</b>.<br><br>Aus Isp copirte Hs. Paris.",
+    "text_en": "<span class=\"spaced\">Spelman</span><sup>9</sup> printed, from Ingulf's <i>ms. veterrimo,</i> thus of the 14th/15th century, from Crowland, perhaps the exemplar of Im, only five chapters of the <b>Leis Wl</b>.<br><br>MS Paris was copied from Isp.",
+    "notes": [
+     {
+      "n": "9",
+      "page": "xxxi",
+      "text_de": "<i>Concilia M. Britann.</i> (1639) I 624.",
+      "text_en": "<i>Concilia M. Britann.</i> (1639) I 624."
+     }
+    ],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "",
+     "proof_notes": [
+      "text_en: 'From Isp MS Paris copied.' → 'MS Paris was copied from Isp.'"
+     ]
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

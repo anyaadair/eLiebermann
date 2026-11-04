@@ -1,6 +1,6 @@
 {
  "id": "Du",
- "order": 61,
+ "order": 67,
  "anchor": "Du",
  "label": "Du",
  "status": "",
@@ -12,7 +12,41 @@
   "date": "c. 875 or 925 (first part); perhaps c. 850 (the rest); glosses c. 975",
   "laws": "Iud Dei",
   "page": "xxiii",
-  "notes": "Latin ritual, the first part written in southern England, the rest perhaps in the north, all glossed in Northumbrian c. 975 (not by the provost Aldred who mentions on f. 84 adding four collects in 970); contains Iudicium Dei IV and V and, in Kentish language, VI. Edited by Stevenson (Surtees Society)."
+  "notes": "Latin ritual, the first part written in southern England, the rest perhaps in the north, all glossed in Northumbrian c. 975 (not by the provost Aldred who mentions on f. 84 adding four collects in 970); contains Iudicium Dei IV and V and, in Kentish language, VI. Edited by Stevenson (Surtees Society).",
+  "entries": [
+   {
+    "page": "xxiii",
+    "pages": "xxiii–xxiv",
+    "column": 2,
+    "heading_de": "<b>Du</b>",
+    "heading_en": "<b>Du</b>",
+    "text_de": "Durham Kathedrale Aa IIII 19<sup>24</sup>, <i>Rituale ecclesiae Dunelmensis</i><sup>25</sup>. Der Grundtext lautet (ausser f. 55, s. u.) Lateinisch. Der erste Theil, bis ed. Stev. p. 138, ist um 875 oder 925 im südlichen England geschrieben, der Rest, vielleicht um 850, im Norden. Die drei Theile sind um 975 Northumbrisch glossirt, nicht von Einer Hand und nicht von jenem Probst <i>Aldred,</i> der, wie er f. 84 erwähnt, dem Bischofe Ælfsige von Chester-le-Street 970 in Wessex vier Collecten ins Ritual eintrug. Ein anderer Aldred ist der Glossator des Lindisfarner Evangeliars.<br><br>Auf f. 48b steht <b>Iud Dei IV</b>, u. S. 409; f. 54 <b>Iud Dei V</b>, u. S. 411; f. 55 in ders. Hand, aber in Kentischer Sprache, <b>Iud Dei VI</b>, u. S. 412.",
+    "text_en": "Durham Cathedral Aa IIII 19<sup>24</sup>, <i>Rituale ecclesiae Dunelmensis</i><sup>25</sup>. The base text is (except f. 55, see below) Latin. The first part, as far as ed. Stevenson p. 138, was written c. 875 or 925 in southern England, the rest, perhaps c. 850, in the North. The three parts were glossed in Northumbrian c. 975, not by one hand and not by that provost <i>Aldred</i> who, as he mentions on f. 84, entered four collects into the ritual for Bishop Ælfsige of Chester-le-Street in Wessex in 970. Another Aldred is the glossator of the Lindisfarne Gospels.<br><br>On f. 48b stands <b>Iud Dei IV</b>, below, p. 409; f. 54 <b>Iud Dei V</b>, below, p. 411; f. 55 in the same hand, but in Kentish dialect, <b>Iud Dei VI</b>, below, p. 412.",
+    "notes": [
+     {
+      "n": "24",
+      "page": "xxiii",
+      "text_de": "vgl. Rud <i>Codd. mss. Dunelm. catal.</i> 71; Wanley p. 295; Lindelöf <i>Sprache des Rit. v. Dur.</i> p. ii; Liebermann <i>Archiv neu. Spra.</i> CIV 122; <i>Palæogr. soc.</i> I 240 f.",
+      "text_en": "cf. Rud, <i>Codd. mss. Dunelm. catal.</i> 71; Wanley p. 295; Lindelöf, <i>Sprache des Rit. v. Dur.</i> p. ii; Liebermann, <i>Archiv neu. Spra.</i> CIV 122; <i>Palæogr. soc.</i> I 240 f."
+     },
+     {
+      "n": "25",
+      "page": "xxiii",
+      "text_de": "ed. Stevenson (<i>Surtees soc.</i> n. 10, 1840), wozu Skeat <i>Transactions of the Philolog. soc.</i> 1877—79, App. II, p. 51* Correcturen gab. Theile druckte Sweet <i>Oldest Engl. texts</i> (1885) p. 175.",
+      "text_en": "ed. Stevenson (<i>Surtees soc.</i> no. 10, 1840), to which Skeat gave corrections in <i>Transactions of the Philolog. soc.</i> 1877—79, App. II, p. 51*. Parts were printed by Sweet, <i>Oldest Engl. texts</i> (1885) p. 175."
+     }
+    ],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "Shelfmark printed 'Aa IIII 19' (checked at 600 dpi). The entry runs from the foot of col. 2, p. xxiii, to the top of col. 1, p. xxiv. 'p. ii' in n. 24 is small-capital roman numerals.",
+     "proof_notes": [
+      "text_de: first 'Aldred,' (after 'Probst') is italic in print, now <i>Aldred,</i> (p. xxiv col. 1); the second 'Aldred' is roman",
+      "text_en: shelfmark kept as printed 'Aa IIII 19' (removed the supplied modern form 'A IV 19')"
+     ]
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

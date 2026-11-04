@@ -1,6 +1,6 @@
 {
  "id": "Pt",
- "order": 165,
+ "order": 172,
  "anchor": "Pt",
  "label": "Pt",
  "status": "not seen by Liebermann",
@@ -12,7 +12,34 @@
   "date": "1588",
   "laws": "Iud Dei",
   "page": "xxxvii",
-  "notes": "Pithou's printed edition of the Iudicium Dei, according to Rozière taken from Ps."
+  "notes": "Pithou's printed edition of the Iudicium Dei, according to Rozière taken from Ps.",
+  "entries": [
+   {
+    "page": "xxxvii",
+    "pages": "xxxvii",
+    "column": 2,
+    "heading_de": "°<b>Pt</b>",
+    "heading_en": "°<b>Pt</b>",
+    "text_de": "Pithou’s Druck<sup>21</sup> der <b>Iud Dei</b>; vgl. u. S. 401<sup><i>b</i></sup>.",
+    "text_en": "Pithou’s print<sup>21</sup> of the <b>Iud Dei</b>; cf. below, p. 401<sup><i>b</i></sup>.",
+    "notes": [
+     {
+      "n": "21",
+      "page": "xxxvii",
+      "text_de": "Franc. Pithoeus <i>Gloss. ad Capitul.</i> (1588), nach Rozière III 76. 232 aus Ps.",
+      "text_en": "Franc. Pithoeus, <i>Gloss. ad Capitul.</i> (1588), according to Rozière III 76. 232 from Ps."
+     }
+    ],
+    "unseen": true,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "Entry ends at foot of p. xxxvii; p. xxxviii begins with a new heading (Q). The superscript italic b refers to note b on p. 401.",
+     "proof_notes": [
+      "checked, no changes"
+     ]
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

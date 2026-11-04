@@ -1,6 +1,6 @@
 {
  "id": "Otho",
- "order": 153,
+ "order": 159,
  "anchor": "Otho",
  "label": "Otho A.x",
  "status": "",
@@ -12,7 +12,27 @@
   "date": "medieval",
   "laws": "IX Atr",
   "page": "xxxvi",
-  "notes": "A medieval parchment manuscript, now burnt, containing IX Æthelred."
+  "notes": "A medieval parchment manuscript, now burnt, containing IX Æthelred.",
+  "entries": [
+   {
+    "page": "xxxvi",
+    "pages": "xxxvi",
+    "column": 2,
+    "heading_de": "<b>Otho</b>",
+    "heading_en": "<b>Otho</b>",
+    "text_de": "British Museum <span class=\"spaced\">Cotton Otho</span> A X, mb., mittelalterlich, jetzt verbrannt, <b>IX Atr</b>, u. S. 269.",
+    "text_en": "British Museum Cotton Otho A X, parchment (mb.), medieval, now burnt, <b>IX Atr</b>, below, p. 269.",
+    "notes": [],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "",
+     "proof_notes": [
+      "checked, no changes"
+     ]
+    }
+   }
+  ]
  },
  "wormald": [
   {

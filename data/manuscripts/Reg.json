@@ -1,6 +1,6 @@
 {
  "id": "Reg",
- "order": 172,
+ "order": 179,
  "anchor": "Reg",
  "label": "Reg",
  "status": "",
@@ -12,7 +12,25 @@
   "date": "",
   "laws": "Excom",
   "page": "xxxviii",
-  "notes": "Regino of Prüm's De synodalibus causis (ed. Wasserschleben), source of Excommunicatio I and II."
+  "notes": "Regino of Prüm's De synodalibus causis (ed. Wasserschleben), source of Excommunicatio I and II.",
+  "entries": [
+   {
+    "page": "xxxviii",
+    "pages": "xxxviii",
+    "column": 2,
+    "heading_de": "<b>Reg</b>",
+    "heading_en": "<b>Reg</b>",
+    "text_de": "<span class=\"spaced\">Regino</span> <i>De synodalibus causis</i> II 414. 416 f., ed. Wasserschleben p. 373 ff.: <b>Excom. I. II</b>, u. S. 432 ff.",
+    "text_en": "<span class=\"spaced\">Regino</span> <i>De synodalibus causis</i> II 414. 416 f., ed. Wasserschleben p. 373 ff.: <b>Excom. I. II</b>, below, p. 432 ff.",
+    "notes": [],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "",
+     "proof_notes": "checked, no changes"
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

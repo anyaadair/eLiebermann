@@ -1,6 +1,6 @@
 {
  "id": "Cradok",
- "order": 41,
+ "order": 47,
  "anchor": "Cradok",
  "label": "Cradok",
  "status": "not seen by Liebermann",
@@ -12,7 +12,32 @@
   "date": "",
   "laws": "",
   "page": "xxii",
-  "notes": "An Oxford MS copied from D, which was the exemplar of Vs; cited by Spelman, perhaps Edward Cradock's (fl. 1571)."
+  "notes": "An Oxford MS copied from D, which was the exemplar of Vs; cited by Spelman, perhaps Edward Cradock's (fl. 1571).",
+  "entries": [
+   {
+    "page": "xxii",
+    "pages": "xxii",
+    "column": 1,
+    "heading_de": "Liber °<b>Cradok</b><sup>2*</sup>",
+    "heading_en": "Liber °<b>Cradok</b><sup>2*</sup>",
+    "text_de": "Liber °<b>Cradok</b><sup>2*</sup> zu Oxford, aus D, lag Vs vor.",
+    "text_en": "The Liber °<b>Cradok</b><sup>2*</sup> at Oxford, from D, lay before Vs (was Vs's exemplar).",
+    "notes": [
+     {
+      "n": "2*",
+      "page": "xxii",
+      "text_de": "Citirt von Spelman. Ob <i>Edw. Cradock</i> [fl. 1571]?",
+      "text_en": "Cited by Spelman. <i>Edw. Cradock</i> [fl. 1571]?"
+     }
+    ],
+    "unseen": true,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "Not a centred heading like the others: a single indented line in which 'Cradok' is set in larger bold type, in the heading position between Cp and Cs. Treated as an entry; heading_de repeats the opening words of the line, and text_de gives the whole line.",
+     "proof_notes": "checked, no changes"
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

@@ -1,6 +1,6 @@
 {
  "id": "Ant",
- "order": 11,
+ "order": 13,
  "anchor": "Ant",
  "label": "Ant",
  "status": "",
@@ -12,7 +12,25 @@
   "date": "16th century",
   "laws": "Hn Lond",
   "page": "xix",
-  "notes": "f. 1 a Modern English translation of Henry I's London charter."
+  "notes": "f. 1 a Modern English translation of Henry I's London charter.",
+  "entries": [
+   {
+    "page": "xix",
+    "pages": "xix",
+    "column": 1,
+    "heading_de": "<b>Ant</b>",
+    "heading_en": "<b>Ant</b>",
+    "text_de": "London Society of antiquaries 105, 16. Jh. f. 1 Neuengl. Übersetzung von <b>Hn Lond</b>, u. S. 524.",
+    "text_en": "London, Society of Antiquaries 105, 16th century. f. 1 Modern English translation of <b>Hn Lond</b>, below, p. 524.",
+    "notes": [],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "'Society of antiquaries' is letter-spaced in the print (as are many shelfmark names on these pages, e.g. 'Harley', 'Additional', 'Burney'); this seems a typographic convention for library/collection names. Not marked as Sperrdruck here; editor may wish to decide.",
+     "proof_notes": "checked, no changes"
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

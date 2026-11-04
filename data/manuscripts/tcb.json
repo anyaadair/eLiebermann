@@ -1,6 +1,6 @@
 {
  "id": "tcb",
- "order": 198,
+ "order": 205,
  "anchor": "tcb",
  "label": "tcb",
  "status": "posited",
@@ -12,7 +12,25 @@
   "date": "",
   "laws": "In Cn",
   "page": "xli",
-  "notes": "A common source of T and Cb for the Instituta Cnuti, posited by Liebermann."
+  "notes": "A common source of T and Cb for the Instituta Cnuti, posited by Liebermann.",
+  "entries": [
+   {
+    "page": "xli",
+    "pages": "xli",
+    "column": 1,
+    "heading_de": "<b>tcb</b>",
+    "heading_en": "<b>tcb</b>",
+    "text_de": "Verlorene Vorlage von T und Cb für <b>In Cn</b>, u. S. 612<sup>a</sup>.",
+    "text_en": "Lost exemplar of T and Cb for <b>In Cn</b>, below, p. 612<sup>a</sup>.",
+    "notes": [],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "612<sup>a</sup> is a textual-note letter, not a footnote.",
+     "proof_notes": "checked, no changes"
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [

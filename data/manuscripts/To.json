@@ -1,6 +1,6 @@
 {
  "id": "To",
- "order": 202,
+ "order": 209,
  "anchor": "To",
  "label": "To",
  "status": "",
@@ -12,7 +12,25 @@
   "date": "",
   "laws": "Wl Lond",
   "page": "xli",
-  "notes": "The original of William I's London charter, kept in the Town Clerk's office of the Guildhall."
+  "notes": "The original of William I's London charter, kept in the Town Clerk's office of the Guildhall.",
+  "entries": [
+   {
+    "page": "xli",
+    "pages": "xli",
+    "column": 1,
+    "heading_de": "<b>To</b>",
+    "heading_en": "<b>To</b>",
+    "text_de": "London, Guildhall, <span class=\"spaced\">Town</span> clerk’s office, Original von <b>Wl Lond</b>, u. S. 486.",
+    "text_en": "London, Guildhall, <span class=\"spaced\">Town</span> clerk’s office, original of <b>Wl Lond</b>, below, p. 486.",
+    "notes": [],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "",
+     "proof_notes": "checked, no changes"
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

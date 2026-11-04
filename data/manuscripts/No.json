@@ -1,6 +1,6 @@
 {
  "id": "No",
- "order": 143,
+ "order": 149,
  "anchor": "No",
  "label": "No",
  "status": "not seen by Liebermann",
@@ -12,7 +12,34 @@
   "date": "14th century",
   "laws": "ECf",
   "page": "xxxv",
-  "notes": "A volume owned by the Duke of Northumberland in which a once separate part begins with Glanvill, followed in the same 14th-century hand (f. 99v) by ECf to c. 34,1a, of the adow class."
+  "notes": "A volume owned by the Duke of Northumberland in which a once separate part begins with Glanvill, followed in the same 14th-century hand (f. 99v) by ECf to c. 34,1a, of the adow class.",
+  "entries": [
+   {
+    "page": "xxxv",
+    "pages": "xxxv",
+    "column": 2,
+    "heading_de": "<b>No</b><sup>9</sup>",
+    "heading_en": "<b>No</b><sup>9</sup>",
+    "text_de": "Dem Duke of <span class=\"spaced\">Northumberland</span> zu Alnwick Castle gehört ein Band, in welchem mit <i>Glanvilla</i> ein einst gesonderter Theil beginnt. Diesem folgt in ders. Hd. 14. Jhs. f. 99v. <b>ECf</b>–34, 1a, u. S. 627, der Classe adow.",
+    "text_en": "To the Duke of Northumberland at Alnwick Castle belongs a volume in which a once separate part begins with <i>Glanvilla</i>. This is followed, in the same hand of the 14th century, f. 99v., by <b>ECf</b>–34, 1a, below, p. 627, of the class adow.",
+    "notes": [
+     {
+      "n": "9",
+      "page": "xxxv",
+      "text_de": "vgl. mein <i>Über Leges Ed. Conf.</i> S. 126.",
+      "text_en": "cf. my <i>Über Leges Ed. Conf.</i> p. 126."
+     }
+    ],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "'ECf–34, 1a': the dash is short (en-dash/hyphen size) and there is a small mark under the 3; I read 'ECf–34, 1a' (i.e. ECf up to 34, 1a).",
+     "proof_notes": [
+      "checked, no changes"
+     ]
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

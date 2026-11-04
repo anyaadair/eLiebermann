@@ -1,6 +1,6 @@
 {
  "id": "Tripartita",
- "order": 204,
+ "order": 211,
  "anchor": "Tripartita",
  "label": "Tripartita",
  "status": "",
@@ -12,7 +12,32 @@
   "date": "1140 (probably 1154) to 1159",
   "laws": "Wl art, ECf retr",
   "page": "xli",
-  "notes": "A collection of three pieces by different authors — Wl art, ECf retr and the Genealogia Normannica — compiled 1140 (probably 1154)–1159, possibly by the genealogist himself. Its oldest manuscript (c. 1160) is Cb; others include Cu, Db, Kn, Lm, Oh, pehy and the appendix added to Huntingdon before 1200 in Lb, rv (Ra, Vi), Gr, Rc, La, Va, sp (S, Vl, Pl), Additional 21088, Ba, Jo, Ct, Ph; from this appendix probably also Hv and Lond (K Co Or)."
+  "notes": "A collection of three pieces by different authors — Wl art, ECf retr and the Genealogia Normannica — compiled 1140 (probably 1154)–1159, possibly by the genealogist himself. Its oldest manuscript (c. 1160) is Cb; others include Cu, Db, Kn, Lm, Oh, pehy and the appendix added to Huntingdon before 1200 in Lb, rv (Ra, Vi), Gr, Rc, La, Va, sp (S, Vl, Pl), Additional 21088, Ba, Jo, Ct, Ph; from this appendix probably also Hv and Lond (K Co Or).",
+  "entries": [
+   {
+    "page": "xli",
+    "pages": "xli",
+    "column": 1,
+    "heading_de": "<b>Tripartita</b>",
+    "heading_en": "<b>Tripartita</b>",
+    "text_de": "Eine Sammlung dreier Stücke verschiedener Autoren: <b>Wl art</b>, u. S. 486; <b>ECf retr</b>, u. S. 627; und <i>Genealogia Normannica</i>, die 1140 (wahrscheinlich 1154)—1159 verfasst ist<sup>7</sup>. Möglicher Weise ist Sammler und Genealog identisch. Ihre älteste Hs., um 1160, ist Cb; vgl. ferner Cu Db Kn Lm Oh pehy und den vor 1200 Huntingdon angefügten Anhang in Lb rv (Vorlage von Ra Vi) Gr Rc La Va sp (Vorlage von S, dem Vl folgt, und Pl) Additional 21088 Ba Jo Ct Ph; aus diesem Anhang stammen wahrscheinlich auch Hv und Lond (d. i. K Co Or).",
+    "text_en": "A collection of three pieces by different authors: <b>Wl art</b>, below, p. 486; <b>ECf retr</b>, below, p. 627; and <i>Genealogia Normannica</i>, which was composed 1140 (probably 1154)—1159<sup>7</sup>. Possibly the compiler and the genealogist are identical. Its oldest MS, c. 1160, is Cb; cf. further Cu Db Kn Lm Oh pehy and the appendix added before 1200 to Huntingdon in Lb rv (exemplar of Ra Vi) Gr Rc La Va sp (exemplar of S, which Vl follows, and of Pl) Additional 21088 Ba Jo Ct Ph; from this appendix probably also derive Hv and Lond (i.e. K Co Or).",
+    "notes": [
+     {
+      "n": "7",
+      "page": "xli",
+      "text_de": "vgl. mein <i>Über Edward Conf.</i> S. 120.",
+      "text_en": "cf. my <i>Über Edward Conf.</i> p. 120."
+     }
+    ],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "Heading is a work title, not a MS siglum. Runs from foot of col. 1 to top of col. 2.",
+     "proof_notes": "checked, no changes"
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

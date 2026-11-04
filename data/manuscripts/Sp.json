@@ -1,6 +1,6 @@
 {
  "id": "Sp",
- "order": 190,
+ "order": 197,
  "anchor": "Sp",
  "label": "Sp",
  "status": "",
@@ -12,7 +12,25 @@
   "date": "1639",
   "laws": "ECf retr",
   "page": "xl",
-  "notes": "Spelman's Concilia prints from his own manuscript parts of ECf retr (Prol.–12, 12,5, 13,1, 15, 20–20,5, 23, 32); at p. 219 he takes 32b,3–8 only from Ld."
+  "notes": "Spelman's Concilia prints from his own manuscript parts of ECf retr (Prol.–12, 12,5, 13,1, 15, 20–20,5, 23, 32); at p. 219 he takes 32b,3–8 only from Ld.",
+  "entries": [
+   {
+    "page": "xl",
+    "pages": "xl",
+    "column": 1,
+    "heading_de": "<b>Sp</b>",
+    "heading_en": "<b>Sp</b>",
+    "text_de": "<span class=\"spaced\">Spelman</span>, <i>Concil. M. Brit.</i> I 619 druckt aus eigenem Codex: ECf retr, Prol.—12. 12, 5. 13, 1. 15. 20—20, 5. 23. 32. (Dagegen p. 219 nimmt er 32b, 3—8 nur aus Ld.)",
+    "text_en": "<span class=\"spaced\">Spelman</span>, <i>Concil. M. Brit.</i> I 619, prints from his own codex: ECf retr, Prol.—12. 12, 5. 13, 1. 15. 20—20, 5. 23. 32. (On the other hand, on p. 219 he takes 32b, 3—8 only from Ld.)",
+    "notes": [],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "'ECf retr' in roman. There is a small raised mark after '20, 5' (looks like a stray dot or apostrophe); omitted.",
+     "proof_notes": "checked, no changes"
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

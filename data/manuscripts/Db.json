@@ -1,6 +1,6 @@
 {
  "id": "Db",
- "order": 51,
+ "order": 57,
  "anchor": "Db",
  "label": "Db",
  "status": "",
@@ -12,7 +12,46 @@
   "date": "c. 1475",
   "laws": "ECf retr",
   "page": "xxiii",
-  "notes": "Paper; from the Tripartita, f. 1 ECf retr with Rubricator II from 9 on (beginning torn away), then the Genealogia Normannica; readings closest to L. Followed by a Southwark tract De fundatoribus ecclesiarum and a French romance."
+  "notes": "Paper; from the Tripartita, f. 1 ECf retr with Rubricator II from 9 on (beginning torn away), then the Genealogia Normannica; readings closest to L. Followed by a Southwark tract De fundatoribus ecclesiarum and a French romance.",
+  "entries": [
+   {
+    "page": "xxiii",
+    "pages": "xxiii",
+    "column": 1,
+    "heading_de": "<b>Db</b>",
+    "heading_en": "<b>Db</b>",
+    "text_de": "Dublin Trinity College E 5, 20<sup>16</sup>, Papier, um 1475. [Aus <b>Tripartita:</b>] f. 1 <b>ECf retr</b> mit Rubricator II von 9 ab, u. S. 633 Anm. 17, Anfang fortgerissen. Dann Geneal. Norm. Die Lesarten sind L nächst verwandt.<br><br>[Es folgen der Tractat eines dem Diceto folgenden Southwarkers <i>De fundatoribus ecclesiarum</i><sup>17</sup> und der Roman von <i>rex in Norfolchia Castor</i><sup>18</sup>.]",
+    "text_en": "Dublin, Trinity College E 5, 20<sup>16</sup>, paper, c. 1475. [From <b>Tripartita:</b>] f. 1 <b>ECf retr</b> with Rubricator II from 9 onward, below, p. 633 n. 17, the beginning torn away. Then Geneal. Norm. The readings are most closely related to L.<br><br>[There follow the treatise of a Southwark writer following Diceto, <i>De fundatoribus ecclesiarum</i><sup>17</sup>, and the romance of <i>rex in Norfolchia Castor</i><sup>18</sup>.]",
+    "notes": [
+     {
+      "n": "16",
+      "page": "xxiii",
+      "text_de": "vgl. Abbott <i>Catalogue of the mss. in Trinity Coll.</i> n. 632; Liebermann <i>Über Leges ECf.</i> p. 129.",
+      "text_en": "cf. Abbott, <i>Catalogue of the mss. in Trinity Coll.</i> no. 632; Liebermann, <i>Über Leges ECf.</i> p. 129."
+     },
+     {
+      "n": "17",
+      "page": "xxiii",
+      "text_de": "ed. Birch <i>Fasti monast. Saxon.</i> p. 12.",
+      "text_en": "ed. Birch, <i>Fasti monast. Saxon.</i> p. 12."
+     },
+     {
+      "n": "18",
+      "page": "xxiii",
+      "text_de": "Hierzu nannte mir Herr Prof. <span class=\"spaced\">Suchier</span> eine Französische Version bei K. Sachs <i>Beitr. zur Kunde Altfranzös. Literatur</i> (1857) p. 47—52.",
+      "text_en": "For this Prof. <span class=\"spaced\">Suchier</span> pointed me to a French version in K. Sachs, <i>Beitr. zur Kunde Altfranzös. Literatur</i> (1857) p. 47—52."
+     }
+    ],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "Skipped at top of col. 1, p. xxiii: the end of the D entry (\"19 Anfang. 23 Anfang. 13. 14 Anfang … D copirte Liber Oxon. Cradok, diesen Vs.\"), which belongs to the previous reader. Words such as 'Dublin Trinity' appear letter-spaced, apparently only to justify the line; not marked as Sperrdruck.",
+     "proof_notes": [
+      "n. 18: 'Suchier' is letter-spaced (Sperrdruck), now marked spaced (p. xxiii)"
+     ]
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

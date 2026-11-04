@@ -1,6 +1,6 @@
 {
  "id": "Malm",
- "order": 138,
+ "order": 144,
  "anchor": "Malm",
  "label": "Malm",
  "status": "",
@@ -12,7 +12,27 @@
   "date": "",
   "laws": "Cn 1027",
   "page": "xxxv",
-  "notes": "William of Malmesbury's Gesta regum (ed. Stubbs), which gives Cnut's letter of 1027; compare Ip Ml."
+  "notes": "William of Malmesbury's Gesta regum (ed. Stubbs), which gives Cnut's letter of 1027; compare Ip Ml.",
+  "entries": [
+   {
+    "page": "xxxv",
+    "pages": "xxxv",
+    "column": 1,
+    "heading_de": "<b>Ma</b>[lmesbir.]",
+    "heading_en": "<b>Ma</b>[lmesbir.]",
+    "text_de": "Willelmus Malmesbiriensis, <i>Gesta regum</i> II 183, ed. Stubbs p. 221: <b>Cnut 1027</b>, u. S. 276. [Vgl. Ip Ml.]",
+    "text_en": "William of Malmesbury, <i>Gesta regum</i> II 183, ed. Stubbs p. 221: <b>Cnut 1027</b>, below, p. 276. [Cf. Ip Ml.]",
+    "notes": [],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "Only 'Ma' of the heading is bold; '[lmesbir.]' is roman.",
+     "proof_notes": [
+      "checked, no changes"
+     ]
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

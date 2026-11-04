@@ -1,6 +1,6 @@
 {
  "id": "Vl",
- "order": 213,
+ "order": 220,
  "anchor": "Vl",
  "label": "Vl",
  "status": "",
@@ -12,7 +12,32 @@
   "date": "16th century",
   "laws": "ECf, Lib Lond, Leis Wl, CHn cor, In Cn, Wl art",
   "page": "xli",
-  "notes": "Bound out of order and badly burnt, copied in the 16th century partly by L. Nowell, entirely from S: ECf, Libertas Londoniensis, Latin Leis Willelme, CHn cor, Instituta Cnuti, Huntingdon VI, and from the Tripartita Wl art and the Genealogia Normannica (reaching to John); other pieces found in S also stood in Vl."
+  "notes": "Bound out of order and badly burnt, copied in the 16th century partly by L. Nowell, entirely from S: ECf, Libertas Londoniensis, Latin Leis Willelme, CHn cor, Instituta Cnuti, Huntingdon VI, and from the Tripartita Wl art and the Genealogia Normannica (reaching to John); other pieces found in S also stood in Vl.",
+  "entries": [
+   {
+    "page": "xli",
+    "pages": "xli–xlii",
+    "column": 2,
+    "heading_de": "<b>Vl</b>",
+    "heading_en": "<b>Vl</b>",
+    "text_de": "British Museum, <span class=\"spaced\">Cotton Vitellius</span> E V, in falscher Ordnung gebunden<sup>10</sup>, stark angebrannt, copirt im 16. Jh., z. Th. durch L. <span class=\"spaced\">Nowell</span>, gänzlich aus S. Die Ordnung müsste sein f. 165 f. 172 v. <b>ECf</b>, u. S. 627; f. (154). 174 <b>Lib Lond</b>, u. S. 673; f. (160 v. 161 v.) 180 <b>Leis Wl Lat</b>, u. S. 493; f. 180 f. <b>CHn cor</b>, u. S. 521; f. 189 v. 181. 195. 172 <b>In Cn</b>, u. S. 612; f. 172 Huntingdon VI (wie in S). Aus <b>Tripartita</b>: f. (178) <b>Wl art</b>, u. S. 486; f. (178b) <i>Geneal. Normann.</i>, sie reichte bis Johann. Auch andere Stücke standen in Vl, die sich in S finden.",
+    "text_en": "British Museum, <span class=\"spaced\">Cotton Vitellius</span> E V, bound in the wrong order<sup>10</sup>, badly burnt, copied in the 16th century, partly by L. <span class=\"spaced\">Nowell</span>, entirely from S. The order ought to be f. 165 f. 172 v. <b>ECf</b>, below, p. 627; f. (154). 174 <b>Lib Lond</b>, below, p. 673; f. (160 v. 161 v.) 180 <b>Leis Wl Lat</b>, below, p. 493; f. 180 f. <b>CHn cor</b>, below, p. 521; f. 189 v. 181. 195. 172 <b>In Cn</b>, below, p. 612; f. 172 Huntingdon VI (as in S). From <b>Tripartita</b>: f. (178) <b>Wl art</b>, below, p. 486; f. (178b) <i>Geneal. Normann.</i>; it extended to John. Other pieces too stood in Vl which are found in S.",
+    "notes": [
+     {
+      "n": "10",
+      "page": "xli",
+      "text_de": "Beschreibbar aus Smith, <i>Catal. Cotton.</i>; (eingeklammert) sind frühere Folien.",
+      "text_en": "Describable from Smith, <i>Catal. Cotton.</i>; (bracketed) are earlier folio numbers."
+     }
+    ],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "Runs from foot of p. xli col. 2 to top of p. xlii col. 1. 'Folien' in n. 10 rendered 'folio numbers' (lit. 'folios').",
+     "proof_notes": "checked, no changes"
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

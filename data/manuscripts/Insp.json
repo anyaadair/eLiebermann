@@ -1,6 +1,6 @@
 {
  "id": "Insp",
- "order": 102,
+ "order": 110,
  "anchor": "Insp",
  "label": "Insp",
  "status": "",
@@ -12,7 +12,32 @@
   "date": "1378",
   "laws": "Wl ep",
   "page": "xxxi",
-  "notes": "Inspeximus roll of 1378, membrane 13 confirms Wl ep."
+  "notes": "Inspeximus roll of 1378, membrane 13 confirms Wl ep.",
+  "entries": [
+   {
+    "page": "xxxi",
+    "pages": "xxxi",
+    "column": 1,
+    "heading_de": "<b>Insp</b>",
+    "heading_en": "<b>Insp</b>",
+    "text_de": "London, Public record office, Rot. <span class=\"spaced\">Inspeximus</span><sup>5</sup> chartarum, a. 1378, mb. 13 bestätigt <b>Wl ep</b>, u. S. 485.",
+    "text_en": "London, Public Record Office, Rot. <span class=\"spaced\">Inspeximus</span><sup>5</sup> chartarum, a. 1378, mb. 13 confirms <b>Wl ep</b>, below, p. 485.",
+    "notes": [
+     {
+      "n": "5",
+      "page": "xxxi",
+      "text_de": "vgl. o. E IV.",
+      "text_en": "cf. above, E IV."
+     }
+    ],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "",
+     "proof_notes": "checked, no changes"
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

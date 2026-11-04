@@ -1,6 +1,6 @@
 {
  "id": "Tw",
- "order": 205,
+ "order": 212,
  "anchor": "Tw",
  "label": "Tw",
  "status": "",
@@ -12,7 +12,38 @@
   "date": "1644",
   "laws": "Hn, CHn cor, Hn Lond",
   "page": "xli",
-  "notes": "Roger Twysden's edition in Wheloc's Archaionomia (1644) used for Hn, CHn cor and Hn Lond a text of the Lond class, Co and Or–Gi family. What Schmid prints as Tw for Wl art retr comes not from Wheloc but from Wilkins, who admits mixing Wl art and Wl art retr, so perhaps no separate manuscript lies behind it."
+  "notes": "Roger Twysden's edition in Wheloc's Archaionomia (1644) used for Hn, CHn cor and Hn Lond a text of the Lond class, Co and Or–Gi family. What Schmid prints as Tw for Wl art retr comes not from Wheloc but from Wilkins, who admits mixing Wl art and Wl art retr, so perhaps no separate manuscript lies behind it.",
+  "entries": [
+   {
+    "page": "xli",
+    "pages": "xli",
+    "column": 2,
+    "heading_de": "<b>Tw</b>",
+    "heading_en": "<b>Tw</b>",
+    "text_de": "Roger <span class=\"spaced\">Twysden</span> benutzt in seiner Ausgabe für Wheloc’s <i>Archaionomia</i> (1644) von <b>Hn</b>, u. S 547, mit <b>CHn cor</b> und <b>Hn Lond</b>, u. S. 521. 524, einen Text der Classe Lond und zwar der Familie Co und Or-Gi<sup>8</sup>. [Was Schmid<sup>9</sup> zu <b>Wl art retr</b>, u. S. 489 als Tw druckt, stammt nicht aus Whelock, sondern aus Wilkins <i>Leges Anglosax.</i>, der p. 217<sup>a</sup> gesteht, Wl art und Wl art retr vermengt zu haben, also vielleicht keine besondere Hs. benutzt.]",
+    "text_en": "Roger <span class=\"spaced\">Twysden</span>, in his edition for Wheloc’s <i>Archaionomia</i> (1644) of <b>Hn</b>, below, p. 547, with <b>CHn cor</b> and <b>Hn Lond</b>, below, pp. 521. 524, uses a text of the class Lond, and specifically of the family Co and Or-Gi<sup>8</sup>. [What Schmid<sup>9</sup> prints as Tw for <b>Wl art retr</b>, below, p. 489, comes not from Whelock but from Wilkins <i>Leges Anglosax.</i>, who admits on p. 217<sup>a</sup> that he mixed up Wl art and Wl art retr, and so perhaps used no particular MS.]",
+    "notes": [
+     {
+      "n": "8",
+      "page": "xli",
+      "text_de": "Mein <i>Über Leges Henrici</i> S. 14.",
+      "text_en": "My <i>Über Leges Henrici</i> p. 14."
+     },
+     {
+      "n": "9",
+      "page": "xli",
+      "text_de": "<i>Gesetze der Angels.</i> p. lxxviii.",
+      "text_en": "<i>Gesetze der Angels.</i> p. lxxviii."
+     }
+    ],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "'u. S 547' printed without period after S. Second 'Wl art' and 'Wl art retr' near the end are roman, not bold. 217<sup>a</sup> is a note letter. Wheloc / Whelock both spellings as printed.",
+     "proof_notes": "checked, no changes"
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

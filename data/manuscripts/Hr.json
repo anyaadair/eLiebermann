@@ -1,6 +1,6 @@
 {
  "id": "Hr",
- "order": 93,
+ "order": 100,
  "anchor": "Hr",
  "label": "Hr",
  "status": "",
@@ -12,7 +12,38 @@
   "date": "c. 1325",
   "laws": "Cons Cn, ECf",
   "page": "xxx",
-  "notes": "Only ff. 1–12 are parchment, in one hand of c. 1325 (the rest is paper without legal content): ff. 1–7v Cons Cn, ff. 7v–12v ECf; the heading calls Cons 'Leges Edwardi' and treats both works as one."
+  "notes": "Only ff. 1–12 are parchment, in one hand of c. 1325 (the rest is paper without legal content): ff. 1–7v Cons Cn, ff. 7v–12v ECf; the heading calls Cons 'Leges Edwardi' and treats both works as one.",
+  "entries": [
+   {
+    "page": "xxx",
+    "pages": "xxx",
+    "column": 2,
+    "heading_de": "<b>Hr</b>",
+    "heading_en": "<b>Hr</b>",
+    "text_de": "British Museum <span class=\"spaced\">Harley</span> 1704, nur f. 1—12 sind Pergament und von Einer Hand um 1325 geschrieben, der Rest ist Papier ohne Rechtsinhalt<sup>6</sup>; f. 1—7b <b>Cons Cn</b>, u. S. 618; f. 7b—12b <b>ECf</b>, u. S. 627. Die Überschrift bezeichnet Cons. als <i>Leges Edwardi</i> und charakterisirt sie durch eine Bemerkung ECf's, fasst also beide Werke als eines<sup>7</sup>.",
+    "text_en": "British Museum <span class=\"spaced\">Harley</span> 1704; only ff. 1—12 are parchment and written by one hand c. 1325, the rest is paper without legal content<sup>6</sup>; ff. 1—7b <b>Cons Cn</b>, below, p. 618; ff. 7b—12b <b>ECf</b>, below, p. 627. The heading calls Cons. <i>Leges Edwardi</i> and characterises it by a remark of ECf's, thus treats both works as one<sup>7</sup>.",
+    "notes": [
+     {
+      "n": "6",
+      "page": "xxx",
+      "text_de": "vgl. <i>Catal. libr. Harlei.</i> II p. 177.",
+      "text_en": "cf. <i>Catal. libr. Harlei.</i> II p. 177."
+     },
+     {
+      "n": "7",
+      "page": "xxx",
+      "text_de": "vgl. meine <i>Cons. Cnuti</i> p. <span class=\"smallcaps\">xix</span>; <i>Leges Ed. Conf.</i> p. 124.",
+      "text_en": "cf. my <i>Cons. Cnuti</i> p. xix; <i>Leges Ed. Conf.</i> p. 124."
+     }
+    ],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "",
+     "proof_notes": "checked, no changes"
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

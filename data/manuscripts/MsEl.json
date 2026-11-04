@@ -1,6 +1,6 @@
 {
  "id": "MsEl",
- "order": 67,
+ "order": 73,
  "anchor": "MsEl",
  "label": "El",
  "status": "",
@@ -12,7 +12,46 @@
   "date": "c. 925 (main text); additions c. 1050; the earliest English part 970–1000",
   "laws": "Sacr cor",
   "page": "xxiv",
-  "notes": "The Leofric Missal, used by Bishop Leofric (†1072) and given by him to Exeter cathedral, edited by Warren 1883; its core is a Gregorian sacramentary written in Lorraine c. 925, to which the coronation liturgy with the oath (f. 305) belongs."
+  "notes": "The Leofric Missal, used by Bishop Leofric (†1072) and given by him to Exeter cathedral, edited by Warren 1883; its core is a Gregorian sacramentary written in Lorraine c. 925, to which the coronation liturgy with the oath (f. 305) belongs.",
+  "entries": [
+   {
+    "page": "xxiv",
+    "pages": "xxiv–xxv",
+    "column": 2,
+    "heading_de": "<b>El</b>",
+    "heading_en": "<b>El</b>",
+    "text_de": "Oxford Bodley 579, gebraucht, und dem Dome Exeter geschenkt, von Bischof Leofric (†1072), edirt von Warren <i>Leofric missal</i> 1883<sup>13</sup>. Der Grundbestandtheil ist ein Gregorianisches Sacramentar, in Lothringen um 925<sup>1</sup> geschrieben. Zu diesem Theile, und nicht zu den Nachträgen<sup>2</sup> des südwestlichen England um 1050, gehört die Krönungsliturgie mit f. 305 <b>Sacr cor</b>, u. S. 215, wo also das Datum der Hs. zu bessern. Dieser also festländische Theil braucht jedoch nicht vor 975 in England angewendet worden zu sein. Erst von 970—1000 datirt der früheste Englische Bestandtheil des Bandes.",
+    "text_en": "Oxford, Bodley 579, used by Bishop Leofric (†1072) and given by him to Exeter Cathedral, edited by Warren, <i>Leofric missal</i> 1883<sup>13</sup>. The basic stock is a Gregorian sacramentary written in Lotharingia c. 925<sup>1</sup>. To this part, and not to the additions<sup>2</sup> of south-western England of c. 1050, belongs the coronation liturgy with f. 305 <b>Sacr cor</b>, below, p. 215, where the date of the MS is therefore to be corrected. This part, then of continental origin, need not however have been used in England before 975. Only from 970—1000 dates the earliest English component of the volume.",
+    "notes": [
+     {
+      "n": "13",
+      "page": "xxiv",
+      "text_de": "vgl. Henderson <i>Liber pont. Ebor.</i> p. xii, 299; Theile drucken ferner Stevenson <i>Chron. Abingdon.</i> II p. liii. lxxi ff.",
+      "text_en": "cf. Henderson, <i>Liber pont. Ebor.</i> p. xii, 299; parts are further printed by Stevenson, <i>Chron. Abingdon.</i> II p. liii. lxxi ff."
+     },
+     {
+      "n": "1",
+      "page": "xxv",
+      "text_de": "So Warren und in freundlicher Auskunft F. <span class=\"spaced\">Madan</span>; '850—925' Westwood <i>Miniatures</i> p. 99, wo Facsimile.",
+      "text_en": "So Warren, and F. <span class=\"spaced\">Madan</span> in a kind communication; '850—925' Westwood, <i>Miniatures</i> p. 99, where there is a facsimile."
+     },
+     {
+      "n": "2",
+      "page": "xxv",
+      "text_de": "Theilweise auch bei Earle <i>Landcharters</i> p. 253.",
+      "text_en": "Partly also in Earle, <i>Landcharters</i> p. 253."
+     }
+    ],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "Runs from foot of col. 2, p. xxiv to top of col. 1, p. xxv (word 'Grundbestand-theil' split across the page). Footnote numbering restarts on p. xxv. The comma placement 'gebraucht, und dem Dome Exeter geschenkt, von Bischof Leofric' is as printed. 'xii', 'liii', 'lxxi' small capitals; the print may read 'p. LIII' (OCR 'uii').",
+     "proof_notes": [
+      "checked, no changes"
+     ]
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

@@ -1,6 +1,6 @@
 {
  "id": "Ci",
- "order": 32,
+ "order": 36,
  "anchor": "Ci",
  "label": "Ci",
  "status": "",
@@ -12,7 +12,44 @@
   "date": "pontifical c. 1100; benedictional c. 1025–50",
   "laws": "Sacr cor, Iud Dei, Excom",
   "page": "xxi",
-  "notes": "After a Worcester pontifical of c. 1100, in the last part, a benedictional from Winchester of c. 1025–50 with the coronation liturgy and oath, Iudicium Dei I–III and on the last leaf Excommunication IV–V. Copied in Vs."
+  "notes": "After a Worcester pontifical of c. 1100, in the last part, a benedictional from Winchester of c. 1025–50 with the coronation liturgy and oath, Iudicium Dei I–III and on the last leaf Excommunication IV–V. Copied in Vs.",
+  "entries": [
+   {
+    "page": "xxi",
+    "pages": "xxi",
+    "column": 1,
+    "heading_de": "<b>Ci</b>",
+    "heading_en": "<b>Ci</b>",
+    "text_de": "Cambridge Corpus Christi College 146, hinter einem Pontifical für Worcester um 1100<sup>6</sup>, im letzten Theile, einem Benedictional aus Winchester um 1025—50:<br><br>p. 138 Krönungsliturgie<sup>7</sup>, sammt <b>Sacr cor</b>, u. S. 215<sup>8</sup>.<br><br>p. 301 <b>Iud Dei I—III</b>, u. S. 401.<br><br>Letztes Blatt <b>Excom. IV. V</b>, u. S. 435. Copirt in Vs.",
+    "text_en": "Cambridge Corpus Christi College 146: after a pontifical for Worcester of c. 1100<sup>6</sup>, in the last part, a benedictional from Winchester of c. 1025—50:<br><br>p. 138 coronation liturgy<sup>7</sup>, together with <b>Sacr cor</b>, below, p. 215<sup>8</sup>.<br><br>p. 301 <b>Iud Dei I—III</b>, below, p. 401.<br><br>Last leaf: <b>Excom. IV. V</b>, below, p. 435. Copied in Vs.",
+    "notes": [
+     {
+      "n": "6",
+      "page": "xxi",
+      "text_de": "Henderson p. xvii. xxx.",
+      "text_en": "Henderson, pp. xvii. xxx."
+     },
+     {
+      "n": "7",
+      "page": "xxi",
+      "text_de": "ed. hieraus L. G. W. Legg <i>Coronation records</i> p. 12.",
+      "text_en": "edited from this by L. G. W. Legg, <i>Coronation records</i> p. 12."
+     },
+     {
+      "n": "8",
+      "page": "xxi",
+      "text_de": "Legg p. 15.",
+      "text_en": "Legg p. 15."
+     }
+    ],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "The entry continues at the top of the right column of p. xxi (p. 301 …). Small capitals in n. 6 given in lower case.",
+     "proof_notes": "checked, no changes"
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

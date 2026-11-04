@@ -1,6 +1,6 @@
 {
  "id": "cis",
- "order": 34,
+ "order": 38,
  "anchor": "cis",
  "label": "cis",
  "status": "posited",
@@ -12,7 +12,25 @@
   "date": "",
   "laws": "Ps Cn for",
   "page": "xxi",
-  "notes": "A common source of Cii and St for the Pseudo-Cnut forest law, posited by Liebermann."
+  "notes": "A common source of Cii and St for the Pseudo-Cnut forest law, posited by Liebermann.",
+  "entries": [
+   {
+    "page": "xxi",
+    "pages": "xxi",
+    "column": 2,
+    "heading_de": "<b>cis</b>",
+    "heading_en": "<b>cis</b>",
+    "text_de": "Verlorene Vorlage von Cii und St für <b>Ps Cn for</b>, u. S. 620.",
+    "text_en": "Lost exemplar of Cii and St for <b>Ps Cn for</b>, below, p. 620.",
+    "notes": [],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "Lower-case siglum = lost manuscript.",
+     "proof_notes": "checked, no changes"
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

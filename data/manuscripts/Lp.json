@@ -1,6 +1,6 @@
 {
  "id": "Lp",
- "order": 132,
+ "order": 138,
  "anchor": "Lp",
  "label": "Lp",
  "status": "",
@@ -12,7 +12,34 @@
   "date": "13th century",
   "laws": "Wl ep",
   "page": "xxxiv",
-  "notes": "The 'Liber pilosus' of St Paul's Cathedral, London, with William's episcopal-courts writ (Wl ep) on f. 1."
+  "notes": "The 'Liber pilosus' of St Paul's Cathedral, London, with William's episcopal-courts writ (Wl ep) on f. 1.",
+  "entries": [
+   {
+    "page": "xxxiv",
+    "pages": "xxxiv",
+    "column": 2,
+    "heading_de": "<b>Lp</b>",
+    "heading_en": "<b>Lp</b>",
+    "text_de": "<span class=\"spaced\">Liber pilosus</span> S. Pauli cathedralis <span class=\"spaced\">Londoniensis</span><sup>10</sup>, 13. Jh., f. 1 <b>Wl ep</b>, u. S. 485.",
+    "text_en": "Liber pilosus of St Paul’s cathedral, London<sup>10</sup>, 13th century, f. 1 <b>Wl ep</b>, below, p. 485.",
+    "notes": [
+     {
+      "n": "10",
+      "page": "xxxiv",
+      "text_de": "vgl. Lyte <i>Ninth report of histor. mss., App. I</i> p. 60.",
+      "text_en": "cf. Lyte, <i>Ninth report of histor. mss., App. I</i> p. 60."
+     }
+    ],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "",
+     "proof_notes": [
+      "checked, no changes"
+     ]
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

@@ -1,6 +1,6 @@
 {
  "id": "Gi",
- "order": 73,
+ "order": 79,
  "anchor": "Gi",
  "label": "Gi",
  "status": "not seen by Liebermann",
@@ -12,7 +12,52 @@
   "date": "15th century (after Spelman)",
   "laws": "Hn, Hn Lond, Epist Eleuth",
   "page": "xxvi",
-  "notes": "A manuscript kept at the London Guildhall from at least 1639 to 1721, now known only from the variants the editors cited under the siglum 'Lond'; it had Hn and Hn Lond and belonged to the Lond class (Leges Anglorum Londoniis collectae), closest to Or. Spelman (Conc. I 34) collated Epist. Eleuth. from it and dated it 15th century; a reading at p. 570 shows it was not merely a modern copy."
+  "notes": "A manuscript kept at the London Guildhall from at least 1639 to 1721, now known only from the variants the editors cited under the siglum 'Lond'; it had Hn and Hn Lond and belonged to the Lond class (Leges Anglorum Londoniis collectae), closest to Or. Spelman (Conc. I 34) collated Epist. Eleuth. from it and dated it 15th century; a reading at p. 570 shows it was not merely a modern copy.",
+  "entries": [
+   {
+    "page": "xxvi",
+    "pages": "xxvi",
+    "column": 1,
+    "heading_de": "°<b>Gi</b>",
+    "heading_en": "°<b>Gi</b>",
+    "text_de": "Mindestens von 1639 bis 1721 bewahrte die Londoner Guildhall eine Hs. von <b>Hn</b>, s. u. S. 547, mit <b>Hn Lond</b>, u. S. 524, von der jetzt nur die Varianten bekannt sind, welche die Editoren daraus unter der Sigle <i>Lond</i> notirt haben. Sie gehörte zur Classe Lond, d. h. den <i>Leges Anglorum Londoniis s. XIII in. collectae</i> (vgl. dort p. 104) und war Hs. Or nächst verwandt<sup>7</sup>. Sie könnte vielleicht nur eine moderne Abschrift scheinen, wenn sie nicht u. S. 570<sup>10</sup> neben richtigem <i>promoveri</i> das falsche <i>promereri</i> nur als Schreibervorschlag böte, welches Lond's andere Codices allein haben. Spelman <i>Conc.</i> I 34 verglich aus Gi <b>Epist. Eleuth.</b>, u. S. 636 [zu 637 Anmm. 8. 11 hatte Gi <i>puerum . . dimicabunt</i>]; nach ihm p. 36 war Gi 15. Jhs.",
+    "text_en": "From at least 1639 to 1721 the London Guildhall kept a MS of <b>Hn</b>, see below, p. 547, with <b>Hn Lond</b>, below, p. 524, of which now only the variants are known which the editors noted from it under the siglum <i>Lond</i>. It belonged to the class Lond, i.e. the <i>Leges Anglorum Londoniis s. XIII in. collectae</i> (cf. there p. 104), and was most closely related to MS Or<sup>7</sup>. It might perhaps seem to be merely a modern copy, were it not that below, p. 570<sup>10</sup>, beside the correct <i>promoveri</i> it offers the wrong <i>promereri</i>, only as a scribal suggestion, which Lond's other codices alone have. Spelman, <i>Conc.</i> I 34, collated <b>Epist. Eleuth.</b> from Gi, below, p. 636 [at 637 nn. 8. 11 Gi had <i>puerum . . dimicabunt</i>]; according to him, p. 36, Gi was of the 15th century.",
+    "notes": [
+     {
+      "n": "7",
+      "page": "xxvi",
+      "text_de": "vgl. <i>Über Leges Henr.</i> p. 11—14.",
+      "text_en": "cf. <i>Über Leges Henr.</i> pp. 11—14."
+     }
+    ],
+    "unseen": true,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "'570<sup>10</sup>' is a page-and-note reference, not this page's note 10. 'Conc. I 34' confirmed. Note mark 7 stands after 'verwandt' (checked).",
+     "proof_notes": [
+      "checked, no changes"
+     ]
+    }
+   },
+   {
+    "page": "xxxiv",
+    "pages": "xxxiv",
+    "column": 1,
+    "heading_de": "<b>Lond</b> früherer Editoren s. <b>Gi</b>",
+    "heading_en": "<b>Lond</b> of earlier editors: see <b>Gi</b>",
+    "text_de": "",
+    "text_en": "",
+    "notes": [],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "Cross-reference line only, printed centred like a heading; no body text.",
+     "proof_notes": [
+      "checked, no changes"
+     ]
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

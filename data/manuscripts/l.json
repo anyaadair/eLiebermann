@@ -1,6 +1,6 @@
 {
  "id": "l",
- "order": 119,
+ "order": 125,
  "anchor": "l",
  "label": "l",
  "status": "lost",
@@ -12,7 +12,25 @@
   "date": "",
   "laws": "",
   "page": "xxxii",
-  "notes": "The source from which Lambarde printed (Ld). Liebermann took it to be a lost medieval manuscript (“mittelalterliche Zwischenstufe”)."
+  "notes": "The source from which Lambarde printed (Ld). Liebermann took it to be a lost medieval manuscript (“mittelalterliche Zwischenstufe”).",
+  "entries": [
+   {
+    "page": "xxxii",
+    "pages": "xxxii",
+    "column": 2,
+    "heading_de": "<b>l</b>",
+    "heading_en": "<b>l</b>",
+    "text_de": "Mittelalterliche Vorlage für Ld. Vgl. hlq, il, ls.",
+    "text_en": "Medieval exemplar for Ld. Cf. hlq, il, ls.",
+    "notes": [],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "Heading is a bold lower-case l. Last siglum reads 'ls' (lower-case l + s) on the image, not 'Is'.",
+     "proof_notes": "checked, no changes"
+    }
+   }
+  ]
  },
  "wormald": [
   {

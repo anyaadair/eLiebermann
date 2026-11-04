@@ -1,6 +1,6 @@
 {
  "id": "Ju",
- "order": 109,
+ "order": 117,
  "anchor": "Ju",
  "label": "Ju",
  "status": "",
@@ -12,7 +12,32 @@
   "date": "16th century",
   "laws": "Sacr cor",
   "page": "xxxi",
-  "notes": "16th century; Sacr cor, copied from Vt."
+  "notes": "16th century; Sacr cor, copied from Vt.",
+  "entries": [
+   {
+    "page": "xxxi",
+    "pages": "xxxi",
+    "column": 2,
+    "heading_de": "<b>Ju</b>",
+    "heading_en": "<b>Ju</b>",
+    "text_de": "Oxford Bodley <span class=\"spaced\">Junius</span> 60, 16. Jh., <b>Sacr cor</b>, u. S. 214, copirt aus Vt<sup>13</sup>.",
+    "text_en": "Oxford Bodley <span class=\"spaced\">Junius</span> 60, 16th century, <b>Sacr cor</b>, below, p. 214, copied from Vt<sup>13</sup>.",
+    "notes": [
+     {
+      "n": "13",
+      "page": "xxxi",
+      "text_de": "Wanley in Hickes' <i>Thes. ling. sept.</i> III 93.",
+      "text_en": "Wanley in Hickes' <i>Thes. ling. sept.</i> III 93."
+     }
+    ],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "",
+     "proof_notes": "checked, no changes"
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

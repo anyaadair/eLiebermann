@@ -1,6 +1,6 @@
 {
  "id": "Ma",
- "order": 137,
+ "order": 143,
  "anchor": "Ma",
  "label": "Ma",
  "status": "not seen by Liebermann",
@@ -12,7 +12,46 @@
   "date": "12th century",
   "laws": "Sacr cor, Iud Dei",
   "page": "xxxv",
-  "notes": "A 12th-century pontifical, described at Marchiennes in the 18th century as a gift of Thomas Becket, copied from an English text of the late 11th century; it contains the Sacramentum coronationis and Iudicium Dei X and XIV, and also an Iudicium ferri."
+  "notes": "A 12th-century pontifical, described at Marchiennes in the 18th century as a gift of Thomas Becket, copied from an English text of the late 11th century; it contains the Sacramentum coronationis and Iudicium Dei X and XIV, and also an Iudicium ferri.",
+  "entries": [
+   {
+    "page": "xxxv",
+    "pages": "xxxv",
+    "column": 1,
+    "heading_de": "°<b>Ma</b><sup>3</sup>",
+    "heading_en": "°<b>Ma</b><sup>3</sup>",
+    "text_de": "In <span class=\"spaced\">Marchiennes</span> im 18. Jh. bezeichnet als Geschenk Thomas Becket’s, jetzt <span class=\"spaced\">Douai</span> 67 (früher 94/6), Pontifical<sup>4</sup> 12. Jhs. mit <b>Sacr cor</b>, copirt aus Englischem Text Ende 11. Jhs.<sup>5</sup>, der in der Litanei <i>Oswald, Swithin, Æthelwold, Ætheldreda</i> erwähnt. Darin <b>Iud Dei X. XIV</b>, u. S. 417. 425 und auch <i>Iudicium ferri</i>.",
+    "text_en": "At Marchiennes in the 18th century described as a gift of Thomas Becket, now Douai 67 (formerly 94/6), pontifical<sup>4</sup> of the 12th century with <b>Sacr cor</b>, copied from an English text of the end of the 11th century<sup>5</sup>, which mentions <i>Oswald, Swithin, Æthelwold, Ætheldreda</i> in the litany. In it <b>Iud Dei X. XIV</b>, below, pp. 417. 425, and also <i>Iudicium ferri</i>.",
+    "notes": [
+     {
+      "n": "3",
+      "page": "xxxv",
+      "text_de": "vgl. Martène et Durand <i>Voyage littér. de 2 Bénédictins</i> 92; Martène <i>Ant. eccl. rit.</i> II 23; III 476. 199; Henderson <i>Lib. pontif. Ebor.</i> p. xx. 267; Zeumer <i>Formulae</i> 634. 714. 717. 720. Ich benutzte <span class=\"spaced\">Bethmann’s</span> Abschrift für <i>Mon. Germ.</i>",
+      "text_en": "cf. Martène et Durand, <i>Voyage littér. de 2 Bénédictins</i> 92; Martène, <i>Ant. eccl. rit.</i> II 23; III 476. 199; Henderson, <i>Lib. pontif. Ebor.</i> p. xx. 267; Zeumer, <i>Formulae</i> 634. 714. 717. 720. I used Bethmann’s transcript for the <i>Mon. Germ.</i>"
+     },
+     {
+      "n": "4",
+      "page": "xxxv",
+      "text_de": "vgl. o. S. xxxii<sup>3</sup>.",
+      "text_en": "cf. above, p. xxxii<sup>3</sup>."
+     },
+     {
+      "n": "5",
+      "page": "xxxv",
+      "text_de": "Aber nicht ‘early Anglo-Saxon’, wie Rock <i>Pontif. of Egbert.</i> p. xi meint.",
+      "text_en": "But not ‘early Anglo-Saxon’, as Rock, <i>Pontif. of Egbert.</i> p. xi, thinks."
+     }
+    ],
+    "unseen": true,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "FOOTNOTE MARK 4: no superscript 4 is printed in the text (confirmed at 600 dpi: after 'Pontifical' there is only a small low dot, a dropped or broken superscript). <sup>4</sup> placed after 'Pontifical', where the dot stands, since note 4 must fall between marks 3 (heading) and 5.",
+     "proof_notes": [
+      "checked, no changes (missing mark 4 confirmed at 600 dpi; doubt reworded)"
+     ]
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

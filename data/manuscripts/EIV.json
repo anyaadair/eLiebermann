@@ -1,6 +1,6 @@
 {
  "id": "EIV",
- "order": 64,
+ "order": 70,
  "anchor": "EIV",
  "label": "EIV",
  "status": "not seen by Liebermann",
@@ -12,7 +12,34 @@
   "date": "2 Edward IV (1462–63)",
   "laws": "Hn Lond",
   "page": "xxv",
-  "notes": "An inspeximus of Henry I's London charter; the most similar text is Harley 2058."
+  "notes": "An inspeximus of Henry I's London charter; the most similar text is Harley 2058.",
+  "entries": [
+   {
+    "page": "xxv",
+    "pages": "xxv",
+    "column": 1,
+    "heading_de": "°<b>EIV</b>",
+    "heading_en": "°<b>EIV</b>",
+    "text_de": "London, Public record office, Patent roll of a. 2. Edward IV pt. 5, mb. 1<sup>5</sup>, Inspeximus von <b>Hn Lond</b>, u. S. 524; ähnlichste Textform s. Harley 2058.",
+    "text_en": "London, Public Record Office, Patent roll of 2 Edward IV pt. 5, mb. 1<sup>5</sup>, Inspeximus of <b>Hn Lond</b>, below, p. 524; for the most similar form of text see Harley 2058.",
+    "notes": [
+     {
+      "n": "5",
+      "page": "xxv",
+      "text_de": "Hieraus ed. Brady <i>Hist. treat. of Engl. cit.</i>, App. p. 25; Rymer <i>Foedera</i> I p. 11.",
+      "text_en": "From this ed. Brady, <i>Hist. treat. of Engl. cit.</i>, App. p. 25; Rymer, <i>Foedera</i> I p. 11."
+     }
+    ],
+    "unseen": true,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "Heading printed with a small gap, '°E IV'. Brady's title confirmed 'Hist. treat. of Engl. cit.,'.",
+     "proof_notes": [
+      "checked, no changes"
+     ]
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

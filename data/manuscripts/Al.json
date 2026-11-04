@@ -1,6 +1,6 @@
 {
  "id": "Al",
- "order": 7,
+ "order": 8,
  "anchor": "Al",
  "label": "Al",
  "status": "not seen by Liebermann",
@@ -12,7 +12,32 @@
   "date": "c. 1100",
   "laws": "Iud Dei",
   "page": "xix",
-  "notes": "Manuscript once at Saint-Évroult, used by Ordericus Vitalis, mainly saints' lives largely of Anglo-Saxon origin, considered English; f. 109–16 Iudicium Dei X, printed by Martène and Zeumer, whose text Liebermann follows."
+  "notes": "Manuscript once at Saint-Évroult, used by Ordericus Vitalis, mainly saints' lives largely of Anglo-Saxon origin, considered English; f. 109–16 Iudicium Dei X, printed by Martène and Zeumer, whose text Liebermann follows.",
+  "entries": [
+   {
+    "page": "xix",
+    "pages": "xix",
+    "column": 1,
+    "heading_de": "°<b>Al</b>",
+    "heading_en": "°<b>Al</b>",
+    "text_de": "Alençon 14, um 1100, einst in S. Évroult zu Ouches durch Ordericus Vitalis benutzt, enthält hauptsächlich <i>Vitae sanctorum,</i> besonders Angelsächsischer Herkunft<sup>4</sup>, u. a. Willibrord, Aethelwold, Birin, Swithun, doch auch Brendan, und gilt als Englisch. F. 109—16 <b>Iudicium Dei X</b>, s. u. S. 417, gedruckt von Martène und Zeumer, s. S. 401<sup>b</sup>, denen ich folge.",
+    "text_en": "Alençon 14, c. 1100, once used at Saint-Évroult in Ouche by Orderic Vitalis; contains chiefly <i>Vitae sanctorum,</i> especially of Anglo-Saxon origin<sup>4</sup>, among others Willibrord, Aethelwold, Birinus, Swithun, but also Brendan, and is held to be English. Ff. 109—16 <b>Iudicium Dei X</b>, see below, p. 417, printed by Martène and Zeumer, see p. 401<sup>b</sup>, whom I follow.",
+    "notes": [
+     {
+      "n": "4",
+      "page": "xix",
+      "text_de": "vgl. <i>Neues Archiv ält. Dt. Gesch.</i> VI 188; Hardy <i>Descr. cat.</i> I 237. 464. 515. 587.",
+      "text_en": "cf. <i>Neues Archiv ält. Dt. Gesch.</i> VI 188; Hardy, <i>Descr. cat.</i> I 237. 464. 515. 587."
+     }
+    ],
+    "unseen": true,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "Superscript italic 'b' after 'S. 401' is a letter, not a footnote number (probably refers to a marked note or addendum on p. 401); kept as <sup>b</sup>.",
+     "proof_notes": "checked, no changes"
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

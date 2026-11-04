@@ -1,6 +1,6 @@
 {
  "id": "Gra",
- "order": 78,
+ "order": 84,
  "anchor": "Gra",
  "label": "Gra",
  "status": "",
@@ -12,7 +12,34 @@
   "date": "1309",
   "laws": "Wl ep",
   "page": "xxvi",
-  "notes": "The clergy's grievances presented in 1309, which use Wl ep."
+  "notes": "The clergy's grievances presented in 1309, which use Wl ep.",
+  "entries": [
+   {
+    "page": "xxvi",
+    "pages": "xxvi",
+    "column": 2,
+    "heading_de": "<b>Gra</b>",
+    "heading_en": "<b>Gra</b>",
+    "text_de": "Gravamina cleri a. 1309 proposita<sup>10</sup> benutzen <b>Wl ep</b>, u. S. 485.",
+    "text_en": "The Gravamina cleri presented in 1309<sup>10</sup> use <b>Wl ep</b>, below, p. 485.",
+    "notes": [
+     {
+      "n": "10",
+      "page": "xxvi",
+      "text_de": "ed. Wilkins <i>Concilia M. Brit.</i> II 314.",
+      "text_en": "ed. Wilkins, <i>Concilia M. Brit.</i> II 314."
+     }
+    ],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "Whether 'Gravamina cleri … proposita' is italic: appears roman.",
+     "proof_notes": [
+      "checked, no changes"
+     ]
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

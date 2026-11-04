@@ -1,6 +1,6 @@
 {
  "id": "Ko",
- "order": 116,
+ "order": 122,
  "anchor": "Ko",
  "label": "Ko",
  "status": "not seen by Liebermann",
@@ -12,7 +12,25 @@
   "date": "before 1697",
   "laws": "In Cn",
   "page": "xxxii",
-  "notes": "Transcript of In Cn printed by Kolderup-Rosenvinge, made for F. Rostgaard († 1745) from Cb and collated with it in 1697."
+  "notes": "Transcript of In Cn printed by Kolderup-Rosenvinge, made for F. Rostgaard († 1745) from Cb and collated with it in 1697.",
+  "entries": [
+   {
+    "page": "xxxii",
+    "pages": "xxxii",
+    "column": 2,
+    "heading_de": "°<b>Ko</b>",
+    "heading_en": "°<b>Ko</b>",
+    "text_de": "Die von Kolderup-Rosenvinge gedruckte Abschrift, jetzt zu <span class=\"spaced\">Kopenhagen</span> Arne-Magnaeanus 1, die F. Rostgaard (&#8224; 1745) aus Cb anfertigen liess und 1697 damit verglich: <b>In Cn</b>, u. S. 612.",
+    "text_en": "The transcript printed by Kolderup-Rosenvinge, now at <span class=\"spaced\">Copenhagen</span>, Arne-Magnaeanus 1, which F. Rostgaard (&#8224; 1745) had made from Cb and collated with it in 1697: <b>In Cn</b>, below, p. 612.",
+    "notes": [],
+    "unseen": true,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "Kopenhagen is spaced in the German; I kept the spacing on 'Copenhagen' in the crib.",
+     "proof_notes": "checked, no changes"
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

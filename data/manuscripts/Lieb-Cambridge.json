@@ -1,0 +1,39 @@
+{
+ "id": "Lieb-Cambridge",
+ "order": 30,
+ "anchor": "Lieb-Cambridge",
+ "label": "Cambridge",
+ "status": "collection",
+ "display": true,
+ "liebermann": {
+  "siglum": "Cambridge",
+  "entries": [
+   {
+    "page": "xx",
+    "pages": "xx",
+    "column": 2,
+    "heading_de": "<b>Cambridge</b> (vgl. Corpus)",
+    "heading_en": "<b>Cambridge</b> (cf. Corpus)",
+    "text_de": "°Trinity College O 10, 5 Will. Somner über <b>Hn.</b><br><br>Ebd. O 10, 20, vom 17. Jh., Copie aus Sc und K2, <b>Hn</b> mit <b>CHn cor</b> und <b>Hn Ld; Hn com; Hn mon.</b> <i>Ex Cotton.</i> [K2?]: <b>Ine Af AGu Ew As Em Eg Atr Cn.</b><br><br>Ebd. O 10, 38, Copie Gale's von <b>Ps Cn for.</b><br><br>Universität Dd VI 38, vom 16. Jh., <b>Hn</b>, copirt aus Sc; laut f. 41 mit Sc's Nachträgen vom 14. Jh.",
+    "text_en": "°Trinity College O 10, 5: Will. Somner on <b>Hn.</b><br><br>Ibid. O 10, 20, of the 17th century, copy from Sc and K2: <b>Hn</b> with <b>CHn cor</b> and <b>Hn Ld; Hn com; Hn mon.</b> <i>Ex Cotton.</i> [K2?]: <b>Ine Af AGu Ew As Em Eg Atr Cn.</b><br><br>Ibid. O 10, 38, Gale's copy of <b>Ps Cn for.</b><br><br>University Library Dd VI 38, of the 16th century, <b>Hn</b>, copied from Sc; according to f. 41, with Sc's additions of the 14th century.",
+    "notes": [],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "Heading is a collective heading (not a siglum); the ° stands before the first item (Trinity O 10, 5), not before the heading, so unseen=false. Whether the full stops after 'Hn', 'Hn mon', 'Cn' and 'Ps Cn for' are in bold cannot be told.",
+     "proof_notes": "checked, no changes"
+    }
+   }
+  ]
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Liebermann’s list of the Cambridge MSS he uses and their sigla",
+  "dates": [],
+  "laws": "",
+  "laws_note": null,
+  "notes": []
+ },
+ "link_automatically": "no"
+}

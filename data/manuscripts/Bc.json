@@ -1,6 +1,6 @@
 {
  "id": "Bc",
- "order": 19,
+ "order": 21,
  "anchor": "Bc",
  "label": "Bc",
  "status": "not seen by Liebermann",
@@ -12,7 +12,25 @@
   "date": "12/13th century",
   "laws": "Iud Dei",
   "page": "xix",
-  "notes": "Pontifical of Bec, from which Martène edited Iudicia Dei XII; Zeumer and Liebermann print from Martène."
+  "notes": "Pontifical of Bec, from which Martène edited Iudicia Dei XII; Zeumer and Liebermann print from Martène.",
+  "entries": [
+   {
+    "page": "xix",
+    "pages": "xix",
+    "column": 2,
+    "heading_de": "°<b>Bc</b>",
+    "heading_en": "°<b>Bc</b>",
+    "text_de": "Liber pontificalis Beccensis monasterii, 12/13. Jh. Hieraus edirte Martène <b>Iudicia Dei XII</b>; aus ihm drucken Zeumer und ich S. 417. 420; vgl. 401<sup>b</sup>.",
+    "text_en": "Pontifical of the monastery of Bec, 12th/13th century. From this Martène edited <b>Iudicia Dei XII</b>; from him Zeumer and I print them, pp. 417. 420; cf. 401<sup>b</sup>.",
+    "notes": [],
+    "unseen": true,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "Superscript italic 'b' is a letter mark, not a footnote number. 'Liber pontificalis Beccensis' letter-spaced in print (cf. note on Ant).",
+     "proof_notes": "checked, no changes"
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

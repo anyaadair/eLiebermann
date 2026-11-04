@@ -1,6 +1,6 @@
 {
  "id": "Alb",
- "order": 9,
+ "order": 10,
  "anchor": "Alb",
  "label": "Alb",
  "status": "",
@@ -12,7 +12,38 @@
   "date": "",
   "laws": "CHn cor",
   "page": "xix",
-  "notes": "The St Albans chronicle of Roger of Wendover, copied by Matthew Paris in the Chronica maiora; both contain under 1100 and 1213, and Matthew's Historia Anglorum under 1100, the Coronation Charter of Henry I."
+  "notes": "The St Albans chronicle of Roger of Wendover, copied by Matthew Paris in the Chronica maiora; both contain under 1100 and 1213, and Matthew's Historia Anglorum under 1100, the Coronation Charter of Henry I.",
+  "entries": [
+   {
+    "page": "xix",
+    "pages": "xix",
+    "column": 1,
+    "heading_de": "<b>Alb</b>",
+    "heading_en": "<b>Alb</b>",
+    "text_de": "Die Saint Alban's-Chronik des Roger von Wendover wurde copirt durch Matheus Paris, <i>Cron. maiora</i><sup>5</sup>. Beide enthalten je zu a. 1100 und 1213, und Matheus' <i>Hist. Angl.</i><sup>6</sup> enthält zu a. 1100: <b>CHn cor</b>, u. S. 521<sup>c</sup>.",
+    "text_en": "The St Albans chronicle of Roger of Wendover was copied by Matthew Paris, <i>Cron. maiora</i><sup>5</sup>. Both contain, each under the years 1100 and 1213, and Matthew's <i>Hist. Angl.</i><sup>6</sup> contains under the year 1100: <b>CHn cor</b>, below, p. 521<sup>c</sup>.",
+    "notes": [
+     {
+      "n": "5",
+      "page": "xix",
+      "text_de": "ed. Luard II 115. 552.",
+      "text_en": "ed. Luard II 115. 552."
+     },
+     {
+      "n": "6",
+      "page": "xix",
+      "text_de": "ed. Madden I 177.",
+      "text_en": "ed. Madden I 177."
+     }
+    ],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "Superscript italic 'c' after 'S. 521' is a letter mark, not a footnote number; kept as <sup>c</sup>.",
+     "proof_notes": "checked, no changes"
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

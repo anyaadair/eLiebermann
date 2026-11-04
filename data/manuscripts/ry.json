@@ -1,6 +1,6 @@
 {
  "id": "ry",
- "order": 181,
+ "order": 188,
  "anchor": "ry",
  "label": "ry",
  "status": "lost",
@@ -12,7 +12,25 @@
   "date": "",
   "laws": "Wl ep",
   "page": "xxxix",
-  "notes": "The manuscript used for Rymer’s Foedera (ed. 1816, I 3) for William’s episcopal-courts writ, now lost."
+  "notes": "The manuscript used for Rymer’s Foedera (ed. 1816, I 3) for William’s episcopal-courts writ, now lost.",
+  "entries": [
+   {
+    "page": "xxxix",
+    "pages": "xxxix",
+    "column": 1,
+    "heading_de": "<b>ry</b>",
+    "heading_en": "<b>ry</b>",
+    "text_de": "Vorlage für <span class=\"spaced\">Rymer</span>, ed. 1816, I 3: <b>Wl ep.</b>",
+    "text_en": "Exemplar for <span class=\"spaced\">Rymer</span>, ed. 1816, I 3: <b>Wl ep.</b>",
+    "notes": [],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "Heading is run-in at the start of the line (not centred), like °Ry and °Rym below it.",
+     "proof_notes": "checked, no changes"
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

@@ -1,6 +1,6 @@
 {
  "id": "EL",
- "order": 65,
+ "order": 71,
  "anchor": "EL",
  "label": "EL",
  "status": "not seen by Liebermann",
@@ -12,7 +12,34 @@
   "date": "c. 1420",
   "laws": "Hn Lond",
   "page": "xxv",
-  "notes": "f. 40 an excerpt from Henry I's London charter."
+  "notes": "f. 40 an excerpt from Henry I's London charter.",
+  "entries": [
+   {
+    "page": "xxv",
+    "pages": "xxv",
+    "column": 1,
+    "heading_de": "°<b>EL</b>[ond].",
+    "heading_en": "°<b>EL</b>[ond].",
+    "text_de": "London Guildhall, Liber albus, um 1420, f. 40<sup>3</sup> Excerptum aus <b>Hn Lond</b>, u. S. 524.",
+    "text_en": "London, Guildhall, Liber albus, c. 1420, f. 40<sup>3</sup>, an extract from <b>Hn Lond</b>, below, p. 524.",
+    "notes": [
+     {
+      "n": "3",
+      "page": "xxv",
+      "text_de": "ed. Riley <i>Mun. Gildh.</i> I 128.",
+      "text_en": "ed. Riley, <i>Mun. Gildh.</i> I 128."
+     }
+    ],
+    "unseen": true,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "Heading printed '°E L[ond].' (the gap between E and L may be only letter-spacing); '[ond].' not bold. 'Liber albus' is roman.",
+     "proof_notes": [
+      "heading_de: full stop after '[ond]' as printed (p. xxv col. 1)"
+     ]
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

@@ -1,6 +1,6 @@
 {
  "id": "Dering",
- "order": 53,
+ "order": 59,
  "anchor": "Dering",
  "label": "Dering",
  "status": "not seen by Liebermann",
@@ -12,7 +12,34 @@
   "date": "1632",
   "laws": "",
   "page": "xxiii",
-  "notes": "A 1632 copy of H by Sir Edward Dering, Kentish antiquary (1598–1644), which was Hearne's exemplar."
+  "notes": "A 1632 copy of H by Sir Edward Dering, Kentish antiquary (1598–1644), which was Hearne's exemplar.",
+  "entries": [
+   {
+    "page": "xxiii",
+    "pages": "xxiii",
+    "column": 1,
+    "heading_de": "°<b>Dering's</b>",
+    "heading_en": "°<b>Dering's</b>",
+    "text_de": "°<b>Dering's</b><sup>20</sup> Copie aus H von 1632, Vorlage Hearne's.",
+    "text_en": "°<b>Dering's</b><sup>20</sup> copy from H of 1632, Hearne's exemplar.",
+    "notes": [
+     {
+      "n": "20",
+      "page": "xxiii",
+      "text_de": "Sir Edward Dering, Kentischer Antiquar, 1598—1644.",
+      "text_en": "Sir Edward Dering, Kentish antiquary, 1598—1644."
+     }
+    ],
+    "unseen": true,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "Not a centred heading: the bold siglum °Dering's opens a one-line run-in paragraph at the foot of col. 1, p. xxiii, so it is treated here as its own entry; the heading is also the first word of the text.",
+     "proof_notes": [
+      "text_en: removed supplied '[edition]'"
+     ]
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

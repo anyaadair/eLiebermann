@@ -1,6 +1,6 @@
 {
  "id": "adg",
- "order": 4,
+ "order": 5,
  "anchor": "adg",
  "label": "adg",
  "status": "posited",
@@ -12,7 +12,25 @@
   "date": "",
   "laws": "II Eg, III Eg",
   "page": "xviii",
-  "notes": "A common source of A and dg for II–III Edgar, posited by Liebermann."
+  "notes": "A common source of A and dg for II–III Edgar, posited by Liebermann.",
+  "entries": [
+   {
+    "page": "xviii",
+    "pages": "xviii",
+    "column": 1,
+    "heading_de": "<b>adg</b>",
+    "heading_en": "<b>adg</b>",
+    "text_de": "Vorlage von A und dg für II. III Eg.",
+    "text_en": "Exemplar of A and dg for II. III Eg.",
+    "notes": [],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "Lower-case siglum = lost MS. 'II. III Eg' here appears to be in roman, not bold.",
+     "proof_notes": "checked, no changes"
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

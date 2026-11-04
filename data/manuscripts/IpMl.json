@@ -1,6 +1,6 @@
 {
  "id": "IpMl",
- "order": 105,
+ "order": 113,
  "anchor": "IpMl",
  "label": "Ip Ml",
  "status": "",
@@ -12,7 +12,34 @@
   "date": "c. 1150–1200",
   "laws": "Wl lad, CHn cor, Quadr",
   "page": "xxxi",
-  "notes": "A copyist of c. 1150–1200 who inserted from Quadripartitus Wl lad and the Praefatio to CHn cor after the history of William I in William of Malmesbury's Gesta Regum; copied in Cs, Ht, He and Pi."
+  "notes": "A copyist of c. 1150–1200 who inserted from Quadripartitus Wl lad and the Praefatio to CHn cor after the history of William I in William of Malmesbury's Gesta Regum; copied in Cs, Ht, He and Pi.",
+  "entries": [
+   {
+    "page": "xxxi",
+    "pages": "xxxi",
+    "column": 1,
+    "heading_de": "<b>Ip Ml</b>",
+    "heading_en": "<b>Ip Ml</b>",
+    "text_de": "<span class=\"spaced\">Interpolator Willelmi Malmesbiriensis</span>, hinter dessen Geschichte Wilhelm's I. in <i>Gesta Regum</i><sup>8</sup> schaltet ein Abschreiber etwa 1150—1200 aus Quadr. ein: <b>Wl lad</b>, u. S. 483 und <b>Praef. ad CHn cor</b>, u. S. 542. Er wurde copirt in Cs Ht He und Pi.",
+    "text_en": "<span class=\"spaced\">Interpolator of William of Malmesbury</span>: after his history of William I in the <i>Gesta Regum</i><sup>8</sup> a copyist c. 1150—1200 inserts from Quadr.: <b>Wl lad</b>, below, p. 483, and <b>Praef. ad CHn cor</b>, below, p. 542. He was copied in Cs Ht He and Pi.",
+    "notes": [
+     {
+      "n": "8",
+      "page": "xxxi",
+      "text_de": "vgl. vor. Seite<sup>8</sup>.",
+      "text_en": "cf. previous page, note 8."
+     }
+    ],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "Heading printed 'Ip Ml' (with a space). The entry runs from the foot of column 1 to the top of column 2 on the same page. 'Pi' confirmed at 600 dpi.",
+     "proof_notes": [
+      "doubts: 'Pi' confirmed"
+     ]
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

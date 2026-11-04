@@ -1,6 +1,6 @@
 {
  "id": "Im",
- "order": 101,
+ "order": 109,
  "anchor": "Im",
  "label": "Im",
  "status": "",
@@ -12,7 +12,32 @@
   "date": "14./15th century",
   "laws": "Leis Wl",
   "page": "xxxi",
-  "notes": "From 'Marsham's old codex', of the 14th/15th century, Fulman printed Ingulf with Leis Wl ([Fell] Rerum Angl. script., Oxford 1684)."
+  "notes": "From 'Marsham's old codex', of the 14th/15th century, Fulman printed Ingulf with Leis Wl ([Fell] Rerum Angl. script., Oxford 1684).",
+  "entries": [
+   {
+    "page": "xxxi",
+    "pages": "xxxi",
+    "column": 1,
+    "heading_de": "<b>Im</b>",
+    "heading_en": "<b>Im</b>",
+    "text_de": "Aus ‘<span class=\"spaced\">Marsham's</span> <i>vetus</i> Codex’, also vom 14./15. Jh., druckte Fulman den Ingulf mit <b>Leis Wl</b><sup>4</sup>.",
+    "text_en": "From ‘<span class=\"spaced\">Marsham's</span> <i>vetus</i> Codex’, thus of the 14th/15th century, Fulman printed Ingulf with <b>Leis Wl</b><sup>4</sup>.",
+    "notes": [
+     {
+      "n": "4",
+      "page": "xxxi",
+      "text_de": "[Fell] <i>Rerum Angl. script.</i> (Oxf. 1684) I 88.",
+      "text_en": "[Fell] <i>Rerum Angl. script.</i> (Oxford 1684) I 88."
+     }
+    ],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "",
+     "proof_notes": "checked, no changes"
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

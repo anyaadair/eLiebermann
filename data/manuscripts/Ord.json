@@ -1,6 +1,6 @@
 {
  "id": "Ord",
- "order": 149,
+ "order": 155,
  "anchor": "Ord",
  "label": "Ord",
  "status": "not seen by Liebermann",
@@ -12,7 +12,27 @@
   "date": "",
   "laws": "Lib Lond",
   "page": "xxxvi",
-  "notes": "The Liber ordinationum of the London Guildhall, containing (f. 161) the Libertas Londoniensis joined with the French Amplificator text."
+  "notes": "The Liber ordinationum of the London Guildhall, containing (f. 161) the Libertas Londoniensis joined with the French Amplificator text.",
+  "entries": [
+   {
+    "page": "xxxvi",
+    "pages": "xxxvi",
+    "column": 1,
+    "heading_de": "°<b>Ord</b>",
+    "heading_en": "°<b>Ord</b>",
+    "text_de": "London, <span class=\"spaced\">Gildhalle</span>, Liber <span class=\"spaced\">ordinationum</span>; f. 161 <b>Lib Lond</b>, verbunden mit dem Amplificator-Texte, Französisch; s. u. S. 673<sup><i>a</i></sup>.",
+    "text_en": "London, Guildhall, Liber ordinationum; f. 161 <b>Lib Lond</b>, combined with the Amplificator text, French; see below, p. 673<sup><i>a</i></sup>.",
+    "notes": [],
+    "unseen": true,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "The superscript italic a after 673 is a reference to note a on p. 673, not a footnote of this page.",
+     "proof_notes": [
+      "text_de: 'ordinationum' is letter-spaced → marked spaced (p. xxxvi col. 1)"
+     ]
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

@@ -117,11 +117,14 @@
 
         fetch(root() + container.dataset.source)
             .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+            // the manuscripts: Liebermann's own entries (Gesetze I, pp. xviii–xlii) come from a file of their own
+            .then(rows => kind !== 'ms' ? rows : fetch(root() + 'data/manuscripts-liebermann.json').then(r => r.ok ? r.json() : {}).catch(() => ({}))
+                .then(texts => { rows.forEach(r => { if (r.Id && texts[r.Id]) r.__lieb = texts[r.Id]; }); return rows; }))
             .then(rows => {
                 // the manuscripts' dates and laws note are searchable too ("Everything")
                 // a manuscript's other sigla (K and Kb for K1) are rows of their own for the links: not shown here
                 if (kind === 'ms') rows = rows.filter(r => !r['Alias of']);
-                if (kind === 'ms') rows.forEach(r => { r['Search extra'] = (r.Dates || []).map(x => x.by + ' ' + x.text).concat(r['Laws note'] ? [r['Laws note'].text] : []).join(' '); });
+                if (kind === 'ms') rows.forEach(r => { r['Search extra'] = (r.Dates || []).map(x => x.by + ' ' + x.text).concat(r['Laws note'] ? [r['Laws note'].text] : [], r.__lieb ? [r.__lieb.search] : []).join(' '); });
                 // rows with the same Anchor together, in the order of the file (the manuscripts'
                 // two lost "il" stay apart: each is its own manuscript)
                 const byAnchor = new Map();
@@ -278,6 +281,18 @@
     const SUPS = { 'ᵐ': 'm', 'ᵉ': 'e', 'ᵈ': 'd', 'ⁱ': 'i', 'ⁿ': 'n', 'ˣ': 'x', '⁰': '0', '¹': '1', '²': '2', '³': '3', '⁴': '4', 'ᐟ': '/' };
     const supFmt = h => h.replace(/[ᵐᵉᵈⁱⁿˣ⁰¹²³⁴ᐟ]+/g, m => `<sup class="gl-sup">${[...m].map(c => SUPS[c]).join('')}</sup>`);
     const t = x => supFmt(esc(x));
+    // Liebermann's entry as printed (Gesetze I, pp. xviii–xlii): only his typography is let through
+    // (bold for sigla and law codes, italics, spaced type, small capitals, superscripts, paragraph breaks)
+    const printed = h => esc(h).replace(/&lt;(\/?)(b|i|sup)&gt;/g, '<$1$2>').replace(/&lt;br&gt;/g, '<br>')
+        .replace(/&lt;span class="(spaced|smallcaps)"&gt;/g, '<span class="lb-$1">').replace(/&lt;\/span&gt;/g, '</span>')
+        .replace(/&amp;(#\d+;)/g, '&$1');
+    const liebNotes = (e, lang) => (e.notes || []).length ? `<ol class="lb-notes">${e.notes.map(n => `<li><span class="lb-n">${e.pages && e.pages.includes('–') ? 'p. ' + esc(n.page) + ', ' : ''}${esc(n.n)})</span> ${printed(lang === 'de' ? n.text_de : n.text_en)}</li>`).join('')}</ol>` : '';
+    const liebEntry = e => `<div class="gl-lieb">
+        <p class="gl-part">Liebermann <span class="gl-ref">(Gesetze I, ${e.pages && e.pages.includes('–') ? 'pp. ' + esc(e.pages) : 'p. ' + esc(e.page)})</span></p>
+        <div class="lb-de" lang="de"><p class="lb-head">${printed(e.heading_de)}</p><p>${printed(e.text_de)}</p>${liebNotes(e, 'de')}</div>
+        <div class="lb-en" lang="en"><p class="lb-label" title="A semi-literal English rendering of Liebermann’s German, created for this database in 2026 with Claude, a large language model made by Anthropic. It is a crib to help the reader with Liebermann’s German, and should not be treated as a separate translation.">English crib (LLM)</p><p class="lb-head">${printed(e.heading_en)}</p><p>${printed(e.text_en)}</p>${liebNotes(e, 'en')}</div>
+        ${(e.editor_notes || []).map(x => `<p class="gl-correction"><span class="gl-by">Editor:</span> ${esc(x)}</p>`).join('')}
+    </div>`;
     const byLine = (x, cls) => `<p class="${cls || ''}"><span class="gl-by">${esc(x.by)}${x.kind === 'correction' ? ', correcting Liebermann' : ''}:</span> ${t(x.text)}${x.ref ? ` <span class="gl-ref">(${esc(x.ref)})</span>` : ''}</p>`;
     function drawMs(list) {
         const seen = new Set();
@@ -287,10 +302,13 @@
             <tbody>${withLetters(list, 5, g => g.rows.map(r => {
                 const id = seen.has(g.anchor) ? '' : ` id="${esc(g.anchor)}"`;
                 seen.add(g.anchor);
-                const tag = posited(r) ? '<span class="gl-tag">posited by Liebermann</span>' : lost(r) ? '<span class="gl-tag">lost</span>' : /^\[not seen/.test(r.Notes || '') ? '<span class="gl-tag">not seen by Liebermann</span>' : /^\[not in Liebermann/.test(r.Notes || '') ? '<span class="gl-tag gl-tag--new" title="Known from later scholarship (Wormald), not from Liebermann">not in Liebermann</span>' : '';
+                const tag = posited(r) ? '<span class="gl-tag">posited by Liebermann</span>' : lost(r) ? '<span class="gl-tag">lost</span>' : /^\[not seen/.test(r.Notes || '') ? '<span class="gl-tag">not seen by Liebermann</span>' : /^\[not in Liebermann/.test(r.Notes || '') ? '<span class="gl-tag gl-tag--new" title="Known from later scholarship (Wormald), not from Liebermann">not in Liebermann</span>' : /^\[cross-reference/.test(r.Notes || '') ? '<span class="gl-tag">Liebermann’s cross-reference</span>' : /^\[collection/.test(r.Notes || '') ? '<span class="gl-tag">Liebermann’s list</span>' : '';
                 const notes = r['Notes by'] ? r['Notes by'].map(n => byLine(n, n.kind === 'correction' ? 'gl-correction' : '')).join('')
                     : (String(r.Notes || '').replace(/^\[[^\]]*\]\s*/, '') ? `<p>${esc(String(r.Notes).replace(/^\[[^\]]*\]\s*/, ''))}</p>` : '');
-                const more = [r['German Expansion'] ? `<p><span class="gl-by">Liebermann:</span> <span lang="de">${esc(r['German Expansion'])}</span></p>` : '', notes].join('');
+                const lieb = r.__lieb ? r.__lieb.entries.map(liebEntry).join('') : '';
+                const more = lieb
+                    ? lieb + (notes ? `<div class="gl-later"><p class="gl-part">Since Liebermann</p>${notes}</div>` : '')
+                    : [r['German Expansion'] ? `<p><span class="gl-by">Liebermann:</span> <span lang="de">${esc(r['German Expansion'])}</span></p>` : '', notes].join('');
                 const dates = r.Dates ? r.Dates.map(x => `<span class="gl-dateline"><span class="gl-by">${esc(x.by)}:</span> ${t(x.text)}${x.ref ? ` <span class="gl-ref">(${esc(x.ref)})</span>` : ''}</span>`).join('') : esc(r['Date (Liebermann)'] || '');
                 const lawsNote = r['Laws note'] ? `<span class="gl-lawsnote"><span class="gl-by">${esc(r['Laws note'].by)}:</span> ${t(r['Laws note'].text)}${r['Laws note'].ref ? ` <span class="gl-ref">(${esc(r['Laws note'].ref)})</span>` : ''}</span>` : '';
                 return `<tr${id}>

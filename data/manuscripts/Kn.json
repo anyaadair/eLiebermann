@@ -1,6 +1,6 @@
 {
  "id": "Kn",
- "order": 115,
+ "order": 121,
  "anchor": "Kn",
  "label": "Kn",
  "status": "",
@@ -12,7 +12,32 @@
   "date": "to 1366",
   "laws": "ECf retr",
   "page": "xxxii",
-  "notes": "Henry Knighton's chronicle to 1366 uses ECf retr with rubricator II, to about c. 16."
+  "notes": "Henry Knighton's chronicle to 1366 uses ECf retr with rubricator II, to about c. 16.",
+  "entries": [
+   {
+    "page": "xxxii",
+    "pages": "xxxii",
+    "column": 2,
+    "heading_de": "<b>Kn</b>",
+    "heading_en": "<b>Kn</b>",
+    "text_de": "Chronicon Henrici <span class=\"spaced\">Knighton</span><sup>11</sup> Leicestrensis bis 1366, benutzt <b>ECf retr</b>, mit Rubr. II, bis c. 16, u. S. 627.",
+    "text_en": "Chronicle of Henry <span class=\"spaced\">Knighton</span><sup>11</sup> of Leicester to 1366, uses <b>ECf retr</b>, with Rubr. II, up to c. 16, below, p. 627.",
+    "notes": [
+     {
+      "n": "11",
+      "page": "xxxii",
+      "text_de": "ed. Lumby (Rolls ser.) 1889; ed. Twysden <i>Hist. Angl. SS. X</i> c. 2354.",
+      "text_en": "ed. Lumby (Rolls Series) 1889; ed. Twysden, <i>Hist. Angl. SS. X</i> col. 2354."
+     }
+    ],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "",
+     "proof_notes": "checked, no changes"
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],

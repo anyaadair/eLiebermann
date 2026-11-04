@@ -1,6 +1,6 @@
 {
  "id": "hlq",
- "order": 88,
+ "order": 95,
  "anchor": "hlq",
  "label": "hlq",
  "status": "posited",
@@ -12,7 +12,25 @@
   "date": "",
   "laws": "",
   "page": "xxx",
-  "notes": "A common source of H, l and the Quadripartitus, posited by Liebermann. On l, see that entry."
+  "notes": "A common source of H, l and the Quadripartitus, posited by Liebermann. On l, see that entry.",
+  "entries": [
+   {
+    "page": "xxx",
+    "pages": "xxx",
+    "column": 1,
+    "heading_de": "<b>hlq</b>",
+    "heading_en": "<b>hlq</b>",
+    "text_de": "Gemeinsame Vorlage von H, l und Quadr.",
+    "text_en": "Common exemplar of H, l and Quadr.",
+    "notes": [],
+    "unseen": false,
+    "editor_notes": [],
+    "transcription": {
+     "doubts": "The 'l' here is lower-case l (the siglum l), not the numeral 1 (OCR read '1').",
+     "proof_notes": "checked, no changes"
+    }
+   }
+  ]
  },
  "wormald": [],
  "others": [],
