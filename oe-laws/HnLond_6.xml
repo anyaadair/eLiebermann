@@ -31,7 +31,7 @@
           <witness xml:id="wit-lat" type="edited"><abbr>Hn Lond</abbr> <note type="manuscript">Henry I’s charter for London: Liebermann’s edited Latin text, from the manuscripts he names in Gesetze I, p. 524, note a, listed below</note></witness>
           <witness xml:id="wit-rs"><abbr>Rs</abbr> <note type="manuscript">Manchester, John Rylands Library, MS Latin 155</note></witness>
           <witness xml:id="wit-lond" type="source"><abbr>Lond</abbr> <note type="manuscript">The original of the London collection, Leges Anglorum Londoniis collectae (c. 1210), which survives in copies</note></witness>
-          <witness xml:id="wit-k" type="source"><abbr>K</abbr> <note type="manuscript">London, British Library, Cotton MS Claudius A.iii (K1); but for the Quadripartitus and the London texts Liebermann’s K means Cotton MS Claudius D.ii (K2)</note></witness>
+          <witness xml:id="wit-k" type="source" n="K2"><abbr>K</abbr> <note type="manuscript">London, British Library, Cotton MS Claudius D.ii (Liebermann’s K, also K2)</note></witness>
           <witness xml:id="wit-co" type="source"><abbr>Co</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 70</note></witness>
           <witness xml:id="wit-or" type="source"><abbr>Or</abbr> <note type="manuscript">Oxford, Oriel College, MS 46</note></witness>
           <witness xml:id="wit-gi" type="source"><abbr>Gi</abbr> <note type="manuscript">London, Guildhall (Corporation of London), a lost manuscript (there from at least 1639 to 1721), known only from the variants cited by earlier editors as “Lond”</note></witness>

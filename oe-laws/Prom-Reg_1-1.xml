@@ -41,7 +41,7 @@
           <witness xml:id="wit-p" type="source"><abbr>P</abbr> <note type="manuscript">Paris, Bibliothèque nationale de France, MS lat. 10575 (formerly Suppl. lat. 138)</note></witness>
           <witness xml:id="wit-el" type="source"><abbr>El</abbr> <note type="manuscript">Oxford, Bodleian Library, MS 579</note></witness>
           <witness xml:id="wit-os" type="source"><abbr>Os</abbr> <note type="manuscript">The Life of St Oswald of York, by a monk of Ramsey</note></witness>
-          <witness xml:id="wit-k" type="source"><abbr>K</abbr> <note type="manuscript">London, British Library, Cotton MS Claudius A.iii (K1); but for the Quadripartitus and the London texts Liebermann’s K means Cotton MS Claudius D.ii (K2)</note></witness>
+          <witness xml:id="wit-k" type="source" n="K1"><abbr>K</abbr> <note type="manuscript">London, British Library, Cotton MS Claudius A.iii (Liebermann’s K, also K1)</note></witness>
           <witness xml:id="wit-ch" type="source"><abbr>Ch</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 44</note></witness>
         </listWit>
       </sourceDesc>
