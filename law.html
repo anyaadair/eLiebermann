@@ -330,6 +330,18 @@ scripts:
     };
     const xmlId = n => n.getAttribute('xml:id') || n.getAttributeNS('http://www.w3.org/XML/1998/namespace', 'id') || '';
     const htmlId = id => 'ln-' + id.replace(/[^A-Za-z0-9_-]/g, '_');
+    // An editor's note (data/clause-order.json) as text, with [label](address) made into a link.
+    function noteText(text) {
+        const frag = document.createDocumentFragment();
+        let last = 0;
+        String(text).replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, (m, label, href, i) => {
+            frag.appendChild(document.createTextNode(text.slice(last, i)));
+            const a = el('a', null, label); a.href = href; frag.appendChild(a);
+            last = i + m.length;
+        });
+        frag.appendChild(document.createTextNode(String(text).slice(last)));
+        return frag;
+    }
     function noteRef(ptr) {
         const n = ptr.getAttribute('n') || '';
         const rend = ptr.getAttribute('rend') || '';
@@ -721,7 +733,7 @@ scripts:
         if (orderNote) {
             const p = el('p', 'clause-note clause-order-note small');
             p.appendChild(el('strong', null, 'Editor’s note: '));
-            p.appendChild(document.createTextNode(orderNote));
+            p.appendChild(noteText(orderNote));
             wrap.insertBefore(p, grid);
         }
         // The Instituta Cnuti's Latin for this clause, where it is not on this page: in a passage printed
@@ -1254,7 +1266,7 @@ scripts:
                         codeNotes.filter(x => x.before === c.clause).forEach(x => {
                             const p = el('p', 'clause-note clause-order-note small');
                             p.appendChild(el('strong', null, 'Editor’s note: '));
-                            p.appendChild(document.createTextNode(x.text));
+                            p.appendChild(noteText(x.text));
                             out.appendChild(p);
                         });
                         const h = el('h2', c.id === row.id ? 'current' : null);
