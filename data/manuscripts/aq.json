@@ -1,0 +1,41 @@
+{
+ "id": "aq",
+ "order": 12,
+ "anchor": "aq",
+ "label": "aq",
+ "status": "posited",
+ "display": true,
+ "liebermann": {
+  "siglum": "aq",
+  "description_de": "Vorlage von A und Quadr für Cn",
+  "shelfmark_as_given": "Posited by Liebermann: a common source of A and the Quadripartitus, inferred from the readings they share. No such manuscript survives.",
+  "date": "",
+  "laws": "I Cn, II Cn",
+  "page": "xix",
+  "notes": "A common source of A and the Quadripartitus for Cnut’s laws, posited by Liebermann."
+ },
+ "wormald": [],
+ "others": [
+  {
+   "by": "Wormald",
+   "text": "Wormald (1999, p. 351) doubts that any such stemma can be drawn for Cnut’s code, which attracted variants from every side; he prefers to speak of a “post-conquest vulgate”."
+  }
+ ],
+ "display_fields": {
+  "shelfmark": "Posited by Liebermann: a common source of A and the Quadripartitus, inferred from the readings they share. No such manuscript survives.",
+  "dates": [],
+  "laws": "I Cn, II Cn",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xix",
+    "text": "A common source of A and the Quadripartitus for Cnut’s laws, posited by Liebermann."
+   },
+   {
+    "by": "Wormald",
+    "text": "Wormald (1999, p. 351) doubts that any such stemma can be drawn for Cnut’s code, which attracted variants from every side; he prefers to speak of a “post-conquest vulgate”."
+   }
+  ]
+ }
+}

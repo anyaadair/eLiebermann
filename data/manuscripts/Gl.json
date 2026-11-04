@@ -1,0 +1,38 @@
+{
+ "id": "Gl",
+ "order": 74,
+ "anchor": "Gl",
+ "label": "Gl",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Gl",
+  "description_de": "British Museum Additional 30506",
+  "shelfmark_as_given": "London, British Library, Additional MS 30506",
+  "date": "15th century",
+  "laws": "Duel",
+  "page": "xxvi",
+  "notes": "Manuale from St Aldate's, Gloucester, 15th century; f. 148b has Duel."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "London, British Library, Additional MS 30506",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "15th century",
+    "ref": "Gesetze I, p. xxvi"
+   }
+  ],
+  "laws": "Duel",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxvi",
+    "text": "Manuale from St Aldate's, Gloucester, 15th century; f. 148b has Duel."
+   }
+  ]
+ }
+}

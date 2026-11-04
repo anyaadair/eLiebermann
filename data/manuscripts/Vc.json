@@ -1,0 +1,38 @@
+{
+ "id": "Vc",
+ "order": 195,
+ "anchor": "Vc",
+ "label": "Vc",
+ "status": "not seen by Liebermann",
+ "display": true,
+ "liebermann": {
+  "siglum": "Vc",
+  "description_de": "Rom, Vatican 3495",
+  "shelfmark_as_given": "Vatican City, Biblioteca Apostolica Vaticana, MS Vat. lat. 3495",
+  "date": "16th century",
+  "laws": "In Cn, ECf",
+  "page": "xli",
+  "notes": "Contains Sinicius' extracts (see Sin); copied in Rym."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Vatican City, Biblioteca Apostolica Vaticana, MS Vat. lat. 3495",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "16th century",
+    "ref": "Gesetze I, p. xli"
+   }
+  ],
+  "laws": "In Cn, ECf",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xli",
+    "text": "Contains Sinicius' extracts (see Sin); copied in Rym."
+   }
+  ]
+ }
+}

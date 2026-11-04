@@ -1,0 +1,38 @@
+{
+ "id": "Lh",
+ "order": 124,
+ "anchor": "Lh",
+ "label": "Lh",
+ "status": "not seen by Liebermann",
+ "display": true,
+ "liebermann": {
+  "siglum": "Lh",
+  "description_de": "Hamburg, Stadtbibliothek, Jur. 127 (Papierhandschrift, einst Lindenbrog gehörig)",
+  "shelfmark_as_given": "Hamburg, Stadtbibliothek, Jur. 127 (paper; formerly Lindenbrog’s)",
+  "date": "c. 1600",
+  "laws": "Quadr, I Cn, II Cn, Af, Ine, I As, VI As, II Em, Swer, Wer, I Atr, III Atr, Duns, Rect",
+  "page": "xxxiv",
+  "notes": "Paper manuscript formerly owned by Lindenbrog, containing the Quadripartitus from the Primus liber (Arg. 32) on: I–II Cnut, Alfred–Ine without rubrics, I and VI Æthelstan, II Edmund, Swerian, Wer, I and III Æthelred, Dunsæte and Rectitudines. Judging by this and other samples its readings agree exactly with R."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Hamburg, Stadtbibliothek, Jur. 127 (paper; formerly Lindenbrog’s)",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "c. 1600",
+    "ref": "Gesetze I, p. xxxiv"
+   }
+  ],
+  "laws": "Quadr, I Cn, II Cn, Af, Ine, I As, VI As, II Em, Swer, Wer, I Atr, III Atr, Duns, Rect",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxxiv",
+    "text": "Paper manuscript formerly owned by Lindenbrog, containing the Quadripartitus from the Primus liber (Arg. 32) on: I–II Cnut, Alfred–Ine without rubrics, I and VI Æthelstan, II Edmund, Swerian, Wer, I and III Æthelred, Dunsæte and Rectitudines. Judging by this and other samples its readings agree exactly with R."
+   }
+  ]
+ }
+}

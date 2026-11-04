@@ -1,0 +1,38 @@
+{
+ "id": "Ma",
+ "order": 133,
+ "anchor": "Ma",
+ "label": "Ma",
+ "status": "not seen by Liebermann",
+ "display": true,
+ "liebermann": {
+  "siglum": "Ma",
+  "description_de": "Douai 67 (früher 94/6), aus Marchiennes",
+  "shelfmark_as_given": "Douai, Bibliothèque municipale, MS 67 (formerly 94/6), from Marchiennes",
+  "date": "12th century",
+  "laws": "Sacr cor, Iud Dei",
+  "page": "xxxv",
+  "notes": "A 12th-century pontifical, described at Marchiennes in the 18th century as a gift of Thomas Becket, copied from an English text of the late 11th century; it contains the Sacramentum coronationis and Iudicium Dei X and XIV, and also an Iudicium ferri."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Douai, Bibliothèque municipale, MS 67 (formerly 94/6), from Marchiennes",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "12th century",
+    "ref": "Gesetze I, p. xxxv"
+   }
+  ],
+  "laws": "Sacr cor, Iud Dei",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxxv",
+    "text": "A 12th-century pontifical, described at Marchiennes in the 18th century as a gift of Thomas Becket, copied from an English text of the late 11th century; it contains the Sacramentum coronationis and Iudicium Dei X and XIV, and also an Iudicium ferri."
+   }
+  ]
+ }
+}

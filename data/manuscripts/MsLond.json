@@ -1,0 +1,75 @@
+{
+ "id": "MsLond",
+ "order": 127,
+ "anchor": "MsLond",
+ "label": "Lond",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Lond",
+  "description_de": "verlorenes Original der Leges Anglorum Londoniis s. XIII. in. collectae",
+  "shelfmark_as_given": "The original of the London collection, Leges Anglorum Londoniis collectae (c. 1210), which survives in copies",
+  "date": "c. 1210",
+  "laws": "Quadr, Ine, Blas, Forf, Hu, Af, AGu, App AGu, EGu, I As, As Alm, II As, Episc, Norðleod, Mirce, Að, Had, IV As, V As, III As, VI As, Ordal, Cn, Wl art retr, ECf retr, Lond ECf, Hn, CHn cor, Hn Lond",
+  "page": "xxxiv",
+  "notes": "The original of the London collection Leges Anglorum (c. 1210), which survives in copies; Liebermann’s Lond is the reading where K, Co, Or, Gi, Sl, Tw (or at least the first three) agree. Gi, Sl and Tw are known only from variants cited by 17th/18th-century editors. It contained the Expositio vocabulorum and Numerus provinciarum, then texts from the Quadripartitus with interpolated historical connections and supposed laws of London invention (incl. Pseudo-Ine, Pseudo-Alfred), then from the Tripartita the rubric list, Wl art retr, ECf retr with London interpolations and the Genealogia Normannica, and finally Henry I’s laws with his coronation charter and London charter."
+ },
+ "wormald": [
+  {
+   "wormald_heading": "6 (iii) Quadripartitus: the London collection",
+   "shelfmark": "Leges Anglorum Londoniis collectae ('London collection'; original lost, copies Rs, K2, Co, Or)",
+   "wormald_siglum": "London",
+   "liebermann_siglum": "Lond",
+   "guide_anchor": "MsLond",
+   "liebermann_date": "c. 1210",
+   "liebermann_page": "xxxiv",
+   "wormald_date": "Reign of John (p. 238); Liebermann's early-13th-century date upheld by discovery of Rs (p. 237 n. 303)",
+   "wormald_origin": "London; belongs to the history of John's reign (p. 238); its surviving copies were kept at or given to the Guildhall (pp. 237–8).",
+   "laws": "Geographical; Ine, Blas, Forf, Hu; Historical; Af, AGu, App. AGu, EGu; Historical; I–II As, Episc, Norðleod, Mirce, Að, Had, III–VI As, Ordal; Historical; I–II Cn; Historical; Part II: Wl art, ECf, Geneal. Duc. Norm., Historical, CHn cor, Hn Lond, Hn, etc. (Table 4.7, pp. 240–1)",
+   "laws_liebermann": "Quadr, Ine, Blas, Forf, Hu, Af, AGu, App AGu, EGu, I As, As Alm, II As, Episc, Norðleod, Mirce, Að, Had, IV As, V As, III As, VI As, Ordal, Cn, Wl art retr, ECf retr, Lond ECf, Hn, CHn cor, Hn Lond",
+   "other_contents": "Large assemblage from Ine to Henry II, in chronological order with historical commentary; constitutional defensiveness and imperial assertion (p. 238).",
+   "overview": "An early-thirteenth-century London compilation of English law from Ine to Henry II, which took its pre-twelfth-century texts from Quadripartitus, rearranged them chronologically (so Ine precedes Alfred) and added historical commentary. Although surviving only in later copies, it drew on the earliest stage of Quadripartitus.",
+   "liebermann_superseded": "",
+   "pages": "238–9, 242–3; 240–1 (Table 4.7); 179; 237 n. 303; 238 n. 306",
+   "key_quote": "a large assemblage of legal texts from Ine to Henry II, drawing on Quadripartitus for the pre-twelfth-century period (p. 238)",
+   "doubts": "A text, not a manuscript; included because Wormald treats its Quadripartitus as the earliest recension.",
+   "guide_shelfmark": "The original of the London collection, Leges Anglorum Londoniis collectae (c. 1210), which survives in copies",
+   "in_guide": "yes",
+   "verify_notes": [
+    "Checked pp. 179, 237–43, Table 4.7 (image): contents list matches.",
+    "Origin: Wormald does not place the compilation at the Guildhall, only its copies; adjusted. Pages: 179 (its geographical preface) and 237 n. 303 added."
+   ],
+   "part": ""
+  }
+ ],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "The original of the London collection, Leges Anglorum Londoniis collectae (c. 1210), which survives in copies",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "c. 1210",
+    "ref": "Gesetze I, p. xxxiv"
+   },
+   {
+    "by": "Wormald",
+    "text": "reign of John",
+    "ref": "Wormald, MEL, p. 238"
+   }
+  ],
+  "laws": "Quadr, Ine, Blas, Forf, Hu, Af, AGu, App AGu, EGu, I As, As Alm, II As, Episc, Norðleod, Mirce, Að, Had, IV As, V As, III As, VI As, Ordal, Cn, Wl art retr, ECf retr, Lond ECf, Hn, CHn cor, Hn Lond",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxxiv",
+    "text": "The original of the London collection Leges Anglorum (c. 1210), which survives in copies; Liebermann’s Lond is the reading where K, Co, Or, Gi, Sl, Tw (or at least the first three) agree. Gi, Sl and Tw are known only from variants cited by 17th/18th-century editors. It contained the Expositio vocabulorum and Numerus provinciarum, then texts from the Quadripartitus with interpolated historical connections and supposed laws of London invention (incl. Pseudo-Ine, Pseudo-Alfred), then from the Tripartita the rubric list, Wl art retr, ECf retr with London interpolations and the Genealogia Normannica, and finally Henry I’s laws with his coronation charter and London charter."
+   },
+   {
+    "by": "Wormald",
+    "ref": "Wormald, MEL, pp. 238–9, 242–3",
+    "text": "An early-thirteenth-century London compilation of English law from Ine to Henry II, which took its pre-twelfth-century texts from Quadripartitus, rearranged them chronologically (so Ine precedes Alfred) and added historical commentary. Although surviving only in later copies, it drew on the earliest stage of Quadripartitus."
+   }
+  ]
+ }
+}

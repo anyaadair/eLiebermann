@@ -1,0 +1,38 @@
+{
+ "id": "Paris",
+ "order": 152,
+ "anchor": "Paris",
+ "label": "Paris",
+ "status": "not seen by Liebermann",
+ "display": true,
+ "liebermann": {
+  "siglum": "Paris",
+  "description_de": "Bibliothèque nationale, Fonds franç. 4901",
+  "shelfmark_as_given": "Paris, Bibliothèque nationale de France, MS fr. 4901",
+  "date": "c. 1700",
+  "laws": "Leis Wl",
+  "page": "xxxvii",
+  "notes": "Collectanea of Toustain de Billy (c. 1700), with a few lines of the Leis Willelme copied from Isp."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Paris, Bibliothèque nationale de France, MS fr. 4901",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "c. 1700",
+    "ref": "Gesetze I, p. xxxvii"
+   }
+  ],
+  "laws": "Leis Wl",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxxvii",
+    "text": "Collectanea of Toustain de Billy (c. 1700), with a few lines of the Leis Willelme copied from Isp."
+   }
+  ]
+ }
+}

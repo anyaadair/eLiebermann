@@ -1,0 +1,41 @@
+{
+ "id": "dhu",
+ "order": 55,
+ "anchor": "dhu",
+ "label": "dhu",
+ "status": "posited",
+ "display": true,
+ "liebermann": {
+  "siglum": "dhu",
+  "description_de": "Verlorene Vorlage von Di und Ip Hunt für In Cn",
+  "shelfmark_as_given": "Posited by Liebermann: a common source of Di and Ip Hunt, inferred from the readings they share. No such manuscript survives.",
+  "date": "",
+  "laws": "In Cn",
+  "page": "xxiii",
+  "notes": "A common source of Di and Ip Hunt for the Instituta Cnuti, posited by Liebermann."
+ },
+ "wormald": [],
+ "others": [
+  {
+   "by": "O’Brien",
+   "text": "O’Brien (2003): the same common source appears in O’Brien’s family tree as β."
+  }
+ ],
+ "display_fields": {
+  "shelfmark": "Posited by Liebermann: a common source of Di and Ip Hunt, inferred from the readings they share. No such manuscript survives.",
+  "dates": [],
+  "laws": "In Cn",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxiii",
+    "text": "A common source of Di and Ip Hunt for the Instituta Cnuti, posited by Liebermann."
+   },
+   {
+    "by": "O’Brien",
+    "text": "O’Brien (2003): the same common source appears in O’Brien’s family tree as β."
+   }
+  ]
+ }
+}

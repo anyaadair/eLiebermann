@@ -1,0 +1,38 @@
+{
+ "id": "Pt",
+ "order": 159,
+ "anchor": "Pt",
+ "label": "Pt",
+ "status": "not seen by Liebermann",
+ "display": true,
+ "liebermann": {
+  "siglum": "Pt",
+  "description_de": "Pithou's Druck (Franc. Pithoeus Gloss. ad Capitul., 1588)",
+  "shelfmark_as_given": "Pierre Pithou, glossary to the Capitularies (1588), printed",
+  "date": "1588",
+  "laws": "Iud Dei",
+  "page": "xxxvii",
+  "notes": "Pithou's printed edition of the Iudicium Dei, according to Rozière taken from Ps."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Pierre Pithou, glossary to the Capitularies (1588), printed",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "1588",
+    "ref": "Gesetze I, p. xxxvii"
+   }
+  ],
+  "laws": "Iud Dei",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxxvii",
+    "text": "Pithou's printed edition of the Iudicium Dei, according to Rozière taken from Ps."
+   }
+  ]
+ }
+}

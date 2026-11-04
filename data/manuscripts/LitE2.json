@@ -1,0 +1,67 @@
+{
+ "id": "LitE2",
+ "order": 213,
+ "anchor": "LitE2",
+ "label": "Lit. E.2",
+ "status": "not in Liebermann",
+ "display": true,
+ "liebermann": {},
+ "wormald": [
+  {
+   "wormald_heading": "8 (v) The Lambarde problem",
+   "shelfmark": "Canterbury Cathedral Lit. MS E.2",
+   "wormald_siglum": "",
+   "liebermann_siglum": "",
+   "guide_anchor": "",
+   "liebermann_date": "",
+   "liebermann_page": "",
+   "wormald_date": "Wormald gives no date (a Nowell transcript, before Archaionomia, 1568)",
+   "wormald_origin": "Transcript by Laurence Nowell, not part of the Walden bequest; noticed by Flower; unknown to Liebermann (p. 261 n. 375).",
+   "laws": "I–II Cn",
+   "laws_liebermann": "",
+   "other_contents": "",
+   "overview": "Laurence Nowell's transcript of Cnut's code, essentially a copy of Harley 55(B), which appears to be the very copy Lambarde sent to his printers. It already contains the linguistic oddities of the printed text, showing they are Nowell's, and Nowell covered it with emendations from Nero A.i(A), Corpus 383, translations of Quadripartitus and his own conjecture. It is thus the 'lost' manuscript 'l' that Liebermann inferred.",
+   "liebermann_superseded": "Liebermann did not know this transcript and posited a lost medieval manuscript 'l' behind Lambarde's Cnut; Wormald (p. 261 and n. 375) shows that this was Nowell's emended transcript.",
+   "pages": "261 and nn. 375–7",
+   "key_quote": "'shows every sign of being what Lambarde actually sent to his printers' (p. 261)",
+   "doubts": "Not in the guide (it eluded Liebermann). Do not confuse with Canterbury Lit. B.2 (the 'Somner' transcript, p. 262 n. 380). Further discussion in Wormald, 'The Lambarde Problem', pp. 241–9; Dammery, 'Editing the Anglo-Saxon Laws', n. 11.",
+   "guide_shelfmark": "",
+   "in_guide": "no",
+   "verify_notes": [
+    "p. 261 and nn. 375–7 checked against image.",
+    "shelfmark: set to Wormald's form ('Canterbury Cathedral Lit. MS E.2').",
+    "wormald_date: Wormald gives no explicit date; marked as such."
+   ],
+   "part": ""
+  }
+ ],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Canterbury Cathedral Lit. MS E.2",
+  "dates": [
+   {
+    "by": "Wormald",
+    "text": "16th century, in Laurence Nowell’s hand",
+    "ref": "Wormald, MEL, p. 261 n. 375"
+   }
+  ],
+  "laws": "",
+  "laws_note": {
+   "by": "Wormald",
+   "text": "I–II Cn",
+   "ref": "Wormald, MEL, pp. 261 and nn. 375–7"
+  },
+  "notes": [
+   {
+    "by": "Wormald",
+    "ref": "Wormald, MEL, pp. 261 and nn. 375–7",
+    "text": "Laurence Nowell's transcript of Cnut's code, essentially a copy of Harley 55(B), which appears to be the very copy Lambarde sent to his printers. It already contains the linguistic oddities of the printed text, showing they are Nowell's, and Nowell covered it with emendations from Nero A.i(A), Corpus 383, translations of Quadripartitus and his own conjecture. It is thus the 'lost' manuscript 'l' that Liebermann inferred."
+   },
+   {
+    "by": "Wormald",
+    "kind": "correction",
+    "text": "Liebermann did not know this transcript and posited a lost medieval manuscript 'l' behind Lambarde's Cnut; Wormald (p. 261 and n. 375) shows that this was Nowell's emended transcript."
+   }
+  ]
+ }
+}

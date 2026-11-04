@@ -1,0 +1,38 @@
+{
+ "id": "MsWi",
+ "order": 206,
+ "anchor": "MsWi",
+ "label": "Wi",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Wi",
+  "description_de": "Worcester, Dean and Chapter, Wigornense Registrum prioratus",
+  "shelfmark_as_given": "Worcester Cathedral, Dean and Chapter: Registrum prioratus (the priory register)",
+  "date": "c. 1260",
+  "laws": "ECf retr",
+  "page": "xlii",
+  "notes": "The Worcester priory register (c. 1260), with pieces from ECf retr on f. 16."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Worcester Cathedral, Dean and Chapter: Registrum prioratus (the priory register)",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "c. 1260",
+    "ref": "Gesetze I, p. xlii"
+   }
+  ],
+  "laws": "ECf retr",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xlii",
+    "text": "The Worcester priory register (c. 1260), with pieces from ECf retr on f. 16."
+   }
+  ]
+ }
+}

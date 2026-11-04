@@ -1,0 +1,47 @@
+{
+ "id": "Jo",
+ "order": 108,
+ "anchor": "Jo",
+ "label": "Jo",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Jo",
+  "description_de": "Cambridge St. John's College G 16",
+  "shelfmark_as_given": "Cambridge, St John's College, MS G 16",
+  "date": "14th century",
+  "laws": "In Cn",
+  "page": "xxxi",
+  "notes": "Henry of Huntingdon's chronicle, 14th century, containing Ip Hunt, i.e. In Cn in the history of Cnut."
+ },
+ "wormald": [],
+ "others": [
+  {
+   "by": "O’Brien",
+   "text": "O’Brien (2003): O’Brien’s J; paired with a Huntingdon manuscript he calls T."
+  }
+ ],
+ "display_fields": {
+  "shelfmark": "Cambridge, St John's College, MS G 16",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "14th century",
+    "ref": "Gesetze I, p. xxxi"
+   }
+  ],
+  "laws": "In Cn",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxxi",
+    "text": "Henry of Huntingdon's chronicle, 14th century, containing Ip Hunt, i.e. In Cn in the history of Cnut."
+   },
+   {
+    "by": "O’Brien",
+    "text": "O’Brien (2003): O’Brien’s J; paired with a Huntingdon manuscript he calls T."
+   }
+  ]
+ }
+}

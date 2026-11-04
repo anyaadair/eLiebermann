@@ -1,0 +1,38 @@
+{
+ "id": "Ox",
+ "order": 149,
+ "anchor": "Ox",
+ "label": "Ox",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Ox",
+  "description_de": "Oxford Corpus College 157",
+  "shelfmark_as_given": "Oxford, Corpus Christi College, MS 157",
+  "date": "early 12th century",
+  "laws": "Cn 1027",
+  "page": "xxxvi",
+  "notes": "Manuscript of Florence of Worcester, containing Cnut's letter of 1027 (p. 329)."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Oxford, Corpus Christi College, MS 157",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "early 12th century",
+    "ref": "Gesetze I, p. xxxvi"
+   }
+  ],
+  "laws": "Cn 1027",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxxvi",
+    "text": "Manuscript of Florence of Worcester, containing Cnut's letter of 1027 (p. 329)."
+   }
+  ]
+ }
+}

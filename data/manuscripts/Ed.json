@@ -1,0 +1,38 @@
+{
+ "id": "Ed",
+ "order": 63,
+ "anchor": "Ed",
+ "label": "Ed",
+ "status": "not seen by Liebermann",
+ "display": true,
+ "liebermann": {
+  "siglum": "Ed",
+  "description_de": "Edinburgh Advocates' library 28. 4. 8",
+  "shelfmark_as_given": "Edinburgh, National Library of Scotland (Advocates’ Library), 28.4.8",
+  "date": "late 16th century",
+  "laws": "Ine, Af, AGu, EGu, I Ew, II Ew, I As, III As, Hu, Norðleod, Að, Had, I Em, II Eg, III Eg, I Atr, I Cn, II Cn, Wl lad, Wl art Lond retr, ECf, ECf retr",
+  "page": "xxiv",
+  "notes": "Paper transcripts by a Cambridge legal historian of the late 16th century, mostly from Br and Co (Ine in Brompton's form, Af, AGu, EGu, Ew, As, Hu, Em, Eg, Atr, Cn, Wl art Lond retr, Wl lad from the Quadripartitus) plus London-interpolated pieces; p. 131 ECf (Ed 1) from Wo ending at 34,1a, to which a second scribe (Ed 2) adds 34,1a–35,2 from a text like Hk."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Edinburgh, National Library of Scotland (Advocates’ Library), 28.4.8",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "late 16th century",
+    "ref": "Gesetze I, p. xxiv"
+   }
+  ],
+  "laws": "Ine, Af, AGu, EGu, I Ew, II Ew, I As, III As, Hu, Norðleod, Að, Had, I Em, II Eg, III Eg, I Atr, I Cn, II Cn, Wl lad, Wl art Lond retr, ECf, ECf retr",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxiv",
+    "text": "Paper transcripts by a Cambridge legal historian of the late 16th century, mostly from Br and Co (Ine in Brompton's form, Af, AGu, EGu, Ew, As, Hu, Em, Eg, Atr, Cn, Wl art Lond retr, Wl lad from the Quadripartitus) plus London-interpolated pieces; p. 131 ECf (Ed 1) from Wo ending at 34,1a, to which a second scribe (Ed 2) adds 34,1a–35,2 from a text like Hk."
+   }
+  ]
+ }
+}

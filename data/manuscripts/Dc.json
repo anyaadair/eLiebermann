@@ -1,0 +1,38 @@
+{
+ "id": "Dc",
+ "order": 52,
+ "anchor": "Dc",
+ "label": "Dc",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Dc",
+  "description_de": "Oxford Bodley Douce 139",
+  "shelfmark_as_given": "Oxford, Bodleian Library, MS Douce 139",
+  "date": "f. 116 c. 1290",
+  "laws": "ECf retr",
+  "page": "xxiii",
+  "notes": "From Coventry; f. 116 begins, after a now torn-away quire, ECf retr at 6a. Madan doubts that it once belonged to Cotton."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Oxford, Bodleian Library, MS Douce 139",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "f. 116 c. 1290",
+    "ref": "Gesetze I, p. xxiii"
+   }
+  ],
+  "laws": "ECf retr",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxiii",
+    "text": "From Coventry; f. 116 begins, after a now torn-away quire, ECf retr at 6a. Madan doubts that it once belonged to Cotton."
+   }
+  ]
+ }
+}

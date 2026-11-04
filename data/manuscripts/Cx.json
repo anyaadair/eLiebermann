@@ -1,0 +1,38 @@
+{
+ "id": "Cx",
+ "order": 48,
+ "anchor": "Cx",
+ "label": "Cx",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Cx",
+  "description_de": "Cambridge Corpus Christi College 303",
+  "shelfmark_as_given": "Cambridge, Corpus Christi College, MS 303",
+  "date": "c. 1120",
+  "laws": "Excom",
+  "page": "xxii",
+  "notes": "Mostly Ælfric's homilies and saints' lives and other Old English theology; in the same hand p. 339 Excommunication VII."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Cambridge, Corpus Christi College, MS 303",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "c. 1120",
+    "ref": "Gesetze I, p. xxii"
+   }
+  ],
+  "laws": "Excom",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxii",
+    "text": "Mostly Ælfric's homilies and saints' lives and other Old English theology; in the same hand p. 339 Excommunication VII."
+   }
+  ]
+ }
+}

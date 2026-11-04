@@ -1,0 +1,38 @@
+{
+ "id": "I",
+ "order": 98,
+ "anchor": "I",
+ "label": "I",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "I",
+  "description_de": "Pseudo-Ingulf, angeblich Abt von Crowland († 1108), in Wahrheit ein Compilator um 1330",
+  "shelfmark_as_given": "Pseudo-Ingulf, Historia Croylandensis (a chronicle forged at Crowland c. 1330)",
+  "date": "c. 1330",
+  "laws": "Leis Wl",
+  "page": "xxxi",
+  "notes": "The Pseudo-Ingulf chronicle, a forgery compiled for Crowland c. 1330, which took over Leis Wl, with many misreadings, from an exemplar written before 1300 that was not the original of the Leis (1090–1135). Several copyists of I deliberately left out the Leis; for the others see il, Im, Io, Isp."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Pseudo-Ingulf, Historia Croylandensis (a chronicle forged at Crowland c. 1330)",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "c. 1330",
+    "ref": "Gesetze I, p. xxxi"
+   }
+  ],
+  "laws": "Leis Wl",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxxi",
+    "text": "The Pseudo-Ingulf chronicle, a forgery compiled for Crowland c. 1330, which took over Leis Wl, with many misreadings, from an exemplar written before 1300 that was not the original of the Leis (1090–1135). Several copyists of I deliberately left out the Leis; for the others see il, Im, Io, Isp."
+   }
+  ]
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "id": "Brco",
+ "order": 22,
+ "anchor": "Brco",
+ "label": "Brco",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Brco",
+  "description_de": "'Johannis Brompton Jorevallensis chronicon': Hss. Cambridge Corpus College 96 (Brco) und British Museum Tiberius C XIII (Brti); ed. Twysden",
+  "shelfmark_as_given": "Cambridge, Corpus Christi College, MS 96 (a manuscript of the Brompton chronicle)",
+  "date": "probably second half of the 14th century; Brco c. 1425; Brti 15th century",
+  "laws": "Quadr, Ine, Af, AGu, EGu, I Ew, II Ew, I As, II As, III As, IV As, V As, VI As, Episc, Norðleod, Mirce, Að, Had, Blas, Forf, Hu, Ordal, I Em, II Em, III Em, Wif, II Eg, III Eg, I Atr, II Atr, III Atr, IV Atr, VII Atr, Pax, Wal, Iudex, I Cn, II Cn, ECf retr, Wl lad, CHn cor",
+  "page": "xix",
+  "notes": "A large compilation of English history to 1199, misnamed after John Brompton, abbot of Jervaulx, from a note in one copy; the compiler used a late-recension Quadripartitus, rearranging it chronologically. Its two independent manuscripts Brco and Brti were printed by Twysden, whose edition Liebermann follows; extracts are in Cambridge Corpus 348 and Harley 362."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Cambridge, Corpus Christi College, MS 96 (a manuscript of the Brompton chronicle)",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "probably second half of the 14th century; Brco c. 1425; Brti 15th century",
+    "ref": "Gesetze I, p. xix"
+   }
+  ],
+  "laws": "Quadr, Ine, Af, AGu, EGu, I Ew, II Ew, I As, II As, III As, IV As, V As, VI As, Episc, Norðleod, Mirce, Að, Had, Blas, Forf, Hu, Ordal, I Em, II Em, III Em, Wif, II Eg, III Eg, I Atr, II Atr, III Atr, IV Atr, VII Atr, Pax, Wal, Iudex, I Cn, II Cn, ECf retr, Wl lad, CHn cor",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xix",
+    "text": "A large compilation of English history to 1199, misnamed after John Brompton, abbot of Jervaulx, from a note in one copy; the compiler used a late-recension Quadripartitus, rearranging it chronologically. Its two independent manuscripts Brco and Brti were printed by Twysden, whose edition Liebermann follows; extracts are in Cambridge Corpus 348 and Harley 362."
+   }
+  ]
+ }
+}

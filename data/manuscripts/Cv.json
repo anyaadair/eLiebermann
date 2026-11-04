@@ -1,0 +1,38 @@
+{
+ "id": "Cv",
+ "order": 47,
+ "anchor": "Cv",
+ "label": "Cv",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Cv",
+  "description_de": "British Museum, Cotton Vitellius A VII",
+  "shelfmark_as_given": "London, British Library, Cotton MS Vitellius A.vii (= Vt)",
+  "date": "c. 1060 (Vt); c. 1130 (Vt 2)",
+  "laws": "Sacr cor, Iud Dei",
+  "page": "xlii",
+  "notes": "Badly burnt. Vt (= Cv), the first pontifical, from Wessex c. 1060 (litany suggests shortly before 1000), most closely related to Rj and Ch, has the Sacramentum coronationis (f. 1, copied in Ju) and Iudicium Dei IX, I–III, VI, VII. Vt 2, a second pontifical of c. 1130, has Iudicium Dei XI–XIV, related to Mg and Tr."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "London, British Library, Cotton MS Vitellius A.vii (= Vt)",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "c. 1060 (Vt); c. 1130 (Vt 2)",
+    "ref": "Gesetze I, p. xlii"
+   }
+  ],
+  "laws": "Sacr cor, Iud Dei",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xlii",
+    "text": "Badly burnt. Vt (= Cv), the first pontifical, from Wessex c. 1060 (litany suggests shortly before 1000), most closely related to Rj and Ch, has the Sacramentum coronationis (f. 1, copied in Ju) and Iudicium Dei IX, I–III, VI, VII. Vt 2, a second pontifical of c. 1130, has Iudicium Dei XI–XIV, related to Mg and Tr."
+   }
+  ]
+ }
+}

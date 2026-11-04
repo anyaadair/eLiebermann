@@ -1,0 +1,38 @@
+{
+ "id": "Lm",
+ "order": 126,
+ "anchor": "Lm",
+ "label": "Lm",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Lm",
+  "description_de": "London, Lambeth 1106",
+  "shelfmark_as_given": "London, Lambeth Palace Library, MS 1106",
+  "date": "c. 1325",
+  "laws": "ECf retr",
+  "page": "xxxiv",
+  "notes": "Copy of the Flores historiarum from St Albans, into which an interpolator at St Paul's, London, inserted (f. 33) ECf retr 10–10,3."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "London, Lambeth Palace Library, MS 1106",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "c. 1325",
+    "ref": "Gesetze I, p. xxxiv"
+   }
+  ],
+  "laws": "ECf retr",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxxiv",
+    "text": "Copy of the Flores historiarum from St Albans, into which an interpolator at St Paul's, London, inserted (f. 33) ECf retr 10–10,3."
+   }
+  ]
+ }
+}

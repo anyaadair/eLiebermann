@@ -1,0 +1,64 @@
+{
+ "id": "Add43703",
+ "order": 3,
+ "anchor": "Add43703",
+ "label": "Add. 43703",
+ "status": "not in Liebermann",
+ "display": true,
+ "liebermann": {},
+ "wormald": [
+  {
+   "wormald_heading": "1 (ii) BL, Cotton MS Otho B.xi + BL, Additional MS 43703",
+   "shelfmark": "London, British Library, Additional MS 43703 (Laurence Nowell’s transcript of Otho B.xi)",
+   "wormald_siglum": "Nw2 (Table 4.1, no. 20, where the entry lists only the texts Nowell drew from his lost second exemplar; see next record); in the running text simply ‘Nowell’ / ‘Otho/Nowell’",
+   "liebermann_siglum": "",
+   "guide_anchor": "",
+   "liebermann_date": "",
+   "liebermann_page": "",
+   "wormald_date": "1562, with glosses and corrections added in the following years (p. 173); Table 4.1: 1560s (p. 165).",
+   "wormald_origin": "Transcript made by Laurence Nowell from Otho B.xi before the Cotton fire (p. 173); its discovery was first announced by Robin Flower (p. 173 n. 42); it came to the British Museum with the other Nowell transcripts (Add. MSS 43703–10) in Lord Howard de Walden’s 1934 bequest (p. 261 n. 374).",
+   "laws": "II As (Grately code, f. 236r), the last part from 25:2 onward and the marginal Sunday-trading clause apparently from a second, lost exemplar; Af–Ine (Mosaic preface ff. 238v–242r; Af 42:1 at f. 246v); Ymb Æwbricas straight after Ine; and after the colophon V As and Iudex (ff. 265r–267v), taken from the lost exemplar (pp. 174–7 and nn. 45–54).",
+   "laws_liebermann": "",
+   "other_contents": "Almost the whole of Otho B.xi: Bede (autobiographical ending ff. 196v–198r), Chronicle, lists, laws, Burghal Hidage (ff. 255r–256r), ‘Seasons of Fasting’ (f. 260v), medical recipes (f. 261v) (pp. 173–8 nn.). Nowell reproduces Otho’s errors on first copying, then corrects many in later marginal and interlinear glosses; he reproduces Otho’s transposition marks (pp. 174–5, nn. 46, 48).",
+   "overview": "Laurence Nowell's 1562 transcript of almost the whole of Otho B.xi, later corrected and glossed by him, is the main witness to the contents of that manuscript before the 1731 fire, including texts known from nowhere else. At the end Nowell added the Exeter code of Æthelstan (V As), Iudex and the close of the Grately code — texts he took from another manuscript, now lost.",
+   "liebermann_superseded": "",
+   "pages": "173–8; 165 (Table 4.1, no. 20); 173 n. 42; 174 nn. 45–6; 175 nn. 48–9; 176 nn. 51, 54; 177 n. 56; 230 n. 265 (‘Desunt nonnulla’ note); 261–2 and nn. 374, 381–4",
+   "key_quote": "“Almost the whole manuscript was copied in 1562, then glossed in the following years, by Laurence Nowell.” (p. 173)",
+   "doubts": "Not in the guide: Liebermann did not know it (Wormald, p. 174, implies this; it came to the BM only in 1934, p. 261 n. 374). Table 4.1 row 20 lists Add. 43703 [Nw2] (1560s) with contents ‘(Af–Ine?), II As, V As, Iudex’ — i.e. the texts Nowell took from his lost second exemplar; a separate record is made for that. Wormald gives Nowell’s foliation; Otho references are partly to pages (e.g. Otho pp. 349–50) and partly folios. On pp. 261–2 Wormald treats it as one of the Nowell working transcripts behind Lambarde’s Archaionomia: it shows Nowell supplying clause headings, and its marginal Alfred–Ine readings untraceable to any known copy point to a lost manuscript. Nowell wrote ‘Desunt nonnulla’ in it where the CCCC 383 text of II As breaks off (p. 230 n. 265).",
+   "guide_shelfmark": "",
+   "in_guide": "no",
+   "verify_notes": [
+    "Checked pp. 173–8, 230 n. 265, 261–2 and Table 4.1 (image).",
+    "pages: cleaned up duplicated/garbled list; added 230 n. 265 and 261 n. 374.",
+    "wormald_origin: added 1934 de Walden bequest (p. 261 n. 374).",
+    "doubts: removed drafting residue; merged the pp. 261–2 remarks into one statement.",
+    "overview: reworded to remove five-word runs matching Wormald’s text."
+   ],
+   "part": ""
+  }
+ ],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "London, British Library, Additional MS 43703 (Laurence Nowell’s transcript of Otho B.xi)",
+  "dates": [
+   {
+    "by": "Wormald",
+    "text": "1562, corrected and glossed later",
+    "ref": "Wormald, MEL, p. 173"
+   }
+  ],
+  "laws": "",
+  "laws_note": {
+   "by": "Wormald",
+   "text": "Nowell’s transcript of almost all of Otho B.xi (II As, Af–Ine, Ymb Æwbricas and the rest), with V As, Iudex and the end of II As from a second, lost manuscript (Nw2)",
+   "ref": "Wormald, MEL, pp. 173–8"
+  },
+  "notes": [
+   {
+    "by": "Wormald",
+    "ref": "Wormald, MEL, pp. 173–8",
+    "text": "Laurence Nowell's 1562 transcript of almost the whole of Otho B.xi, later corrected and glossed by him, is the main witness to the contents of that manuscript before the 1731 fire, including texts known from nowhere else. At the end Nowell added the Exeter code of Æthelstan (V As), Iudex and the close of the Grately code — texts he took from another manuscript, now lost."
+   }
+  ]
+ }
+}

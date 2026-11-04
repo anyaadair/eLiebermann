@@ -1,0 +1,38 @@
+{
+ "id": "Mr",
+ "order": 138,
+ "anchor": "Mr",
+ "label": "Mr",
+ "status": "not seen by Liebermann",
+ "display": true,
+ "liebermann": {
+  "siglum": "Mr",
+  "description_de": "Oxford Bodley Rawlinson C 400",
+  "shelfmark_as_given": "Oxford, Bodleian Library, MS Rawlinson C 400",
+  "date": "under Bishop Roger (1315–29)",
+  "laws": "Sacr cor",
+  "page": "xxxv",
+  "notes": "Pontifical of Roger de Martival, bishop of Salisbury (1315–29), containing in the Consecratio regis the Sacramentum coronationis in the Kb form."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Oxford, Bodleian Library, MS Rawlinson C 400",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "under Bishop Roger (1315–29)",
+    "ref": "Gesetze I, p. xxxv"
+   }
+  ],
+  "laws": "Sacr cor",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxxv",
+    "text": "Pontifical of Roger de Martival, bishop of Salisbury (1315–29), containing in the Consecratio regis the Sacramentum coronationis in the Kb form."
+   }
+  ]
+ }
+}

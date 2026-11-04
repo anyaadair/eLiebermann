@@ -1,0 +1,38 @@
+{
+ "id": "Sp",
+ "order": 180,
+ "anchor": "Sp",
+ "label": "Sp",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Sp",
+  "description_de": "Spelman, Concil. M. Brit. I 619",
+  "shelfmark_as_given": "Henry Spelman, Concilia (1639) I 619, printed from his own manuscript",
+  "date": "1639",
+  "laws": "ECf retr",
+  "page": "xl",
+  "notes": "Spelman's Concilia prints from his own manuscript parts of ECf retr (Prol.–12, 12,5, 13,1, 15, 20–20,5, 23, 32); at p. 219 he takes 32b,3–8 only from Ld."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Henry Spelman, Concilia (1639) I 619, printed from his own manuscript",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "1639",
+    "ref": "Gesetze I, p. xl"
+   }
+  ],
+  "laws": "ECf retr",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xl",
+    "text": "Spelman's Concilia prints from his own manuscript parts of ECf retr (Prol.–12, 12,5, 13,1, 15, 20–20,5, 23, 32); at p. 219 he takes 32b,3–8 only from Ld."
+   }
+  ]
+ }
+}

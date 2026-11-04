@@ -1,0 +1,38 @@
+{
+ "id": "Cs",
+ "order": 42,
+ "anchor": "Cs",
+ "label": "Cs",
+ "status": "not seen by Liebermann",
+ "display": true,
+ "liebermann": {
+  "siglum": "Cs",
+  "description_de": "British Museum Cotton Claudius C IX",
+  "shelfmark_as_given": "London, British Library, Cotton MS Claudius C.ix",
+  "date": "13th century",
+  "laws": "Quadr, Wl lad, CHn cor",
+  "page": "xxii",
+  "notes": "From Battle, but perhaps copied from Rochester (cf. He); in William of Malmesbury's Gesta regum after § 297 comes Ip Ml, from the Quadripartitus: Wl lad and the preface to CHn cor, then Malmesbury § 298."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "London, British Library, Cotton MS Claudius C.ix",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "13th century",
+    "ref": "Gesetze I, p. xxii"
+   }
+  ],
+  "laws": "Quadr, Wl lad, CHn cor",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxii",
+    "text": "From Battle, but perhaps copied from Rochester (cf. He); in William of Malmesbury's Gesta regum after § 297 comes Ip Ml, from the Quadripartitus: Wl lad and the preface to CHn cor, then Malmesbury § 298."
+   }
+  ]
+ }
+}

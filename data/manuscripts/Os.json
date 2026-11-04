@@ -1,0 +1,38 @@
+{
+ "id": "Os",
+ "order": 144,
+ "anchor": "Os",
+ "label": "Os",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Os",
+  "description_de": "Vita s. Oswaldi archiepiscopi Eboracensis, auct. monacho Rameseiensi",
+  "shelfmark_as_given": "The Life of St Oswald of York, by a monk of Ramsey",
+  "date": "written 995–1005",
+  "laws": "Sacr cor",
+  "page": "xxxvi",
+  "notes": "The Life of St Oswald of York by a Ramsey monk, composed 995–1005, which uses the Sacramentum coronationis."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "The Life of St Oswald of York, by a monk of Ramsey",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "written 995–1005",
+    "ref": "Gesetze I, p. xxxvi"
+   }
+  ],
+  "laws": "Sacr cor",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxxvi",
+    "text": "The Life of St Oswald of York by a Ramsey monk, composed 995–1005, which uses the Sacramentum coronationis."
+   }
+  ]
+ }
+}

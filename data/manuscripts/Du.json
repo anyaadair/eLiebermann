@@ -1,0 +1,38 @@
+{
+ "id": "Du",
+ "order": 61,
+ "anchor": "Du",
+ "label": "Du",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Du",
+  "description_de": "Durham Kathedrale A IV 19 (Aa IIII 19), Rituale ecclesiae Dunelmensis",
+  "shelfmark_as_given": "Durham, Cathedral Library, MS A.IV.19 (the Durham Ritual)",
+  "date": "c. 875 or 925 (first part); perhaps c. 850 (the rest); glosses c. 975",
+  "laws": "Iud Dei",
+  "page": "xxiii",
+  "notes": "Latin ritual, the first part written in southern England, the rest perhaps in the north, all glossed in Northumbrian c. 975 (not by the provost Aldred who mentions on f. 84 adding four collects in 970); contains Iudicium Dei IV and V and, in Kentish language, VI. Edited by Stevenson (Surtees Society)."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Durham, Cathedral Library, MS A.IV.19 (the Durham Ritual)",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "c. 875 or 925 (first part); perhaps c. 850 (the rest); glosses c. 975",
+    "ref": "Gesetze I, p. xxiii"
+   }
+  ],
+  "laws": "Iud Dei",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxiii",
+    "text": "Latin ritual, the first part written in southern England, the rest perhaps in the north, all glossed in Northumbrian c. 975 (not by the provost Aldred who mentions on f. 84 adding four collects in 970); contains Iudicium Dei IV and V and, in Kentish language, VI. Edited by Stevenson (Surtees Society)."
+   }
+  ]
+ }
+}

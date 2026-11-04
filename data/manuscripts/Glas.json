@@ -1,0 +1,38 @@
+{
+ "id": "Glas",
+ "order": 75,
+ "anchor": "Glas",
+ "label": "Glas",
+ "status": "not seen by Liebermann",
+ "display": true,
+ "liebermann": {
+  "siglum": "Glas",
+  "description_de": "Registrum episcopatus Glasguensis",
+  "shelfmark_as_given": "Registrum episcopatus Glasguensis (the register of the bishopric of Glasgow)",
+  "date": "c. 1225",
+  "laws": "CHn cor",
+  "page": "xxvi",
+  "notes": "The register of the bishopric of Glasgow; f. 25, c. 1225, has CHn cor. Compare West."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Registrum episcopatus Glasguensis (the register of the bishopric of Glasgow)",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "c. 1225",
+    "ref": "Gesetze I, p. xxvi"
+   }
+  ],
+  "laws": "CHn cor",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxvi",
+    "text": "The register of the bishopric of Glasgow; f. 25, c. 1225, has CHn cor. Compare West."
+   }
+  ]
+ }
+}

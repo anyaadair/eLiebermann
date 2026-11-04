@@ -1,0 +1,38 @@
+{
+ "id": "Vi",
+ "order": 197,
+ "anchor": "Vi",
+ "label": "Vi",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Vi",
+  "description_de": "British Museum, Cotton Vitellius A XIII",
+  "shelfmark_as_given": "London, British Library, Cotton MS Vitellius A.xiii",
+  "date": "late 13th century",
+  "laws": "Wl art, ECf retr",
+  "page": "xli",
+  "notes": "Contains the Tripartita (Wl art, rubric list, ECf retr, Genealogia Normannica to 1154); with Ra it goes back to rv."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "London, British Library, Cotton MS Vitellius A.xiii",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "late 13th century",
+    "ref": "Gesetze I, p. xli"
+   }
+  ],
+  "laws": "Wl art, ECf retr",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xli",
+    "text": "Contains the Tripartita (Wl art, rubric list, ECf retr, Genealogia Normannica to 1154); with Ra it goes back to rv."
+   }
+  ]
+ }
+}

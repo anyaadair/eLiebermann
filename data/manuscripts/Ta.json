@@ -1,0 +1,38 @@
+{
+ "id": "Ta",
+ "order": 186,
+ "anchor": "Ta",
+ "label": "Ta",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Ta",
+  "description_de": "Oxford Bodley Tanner 5",
+  "shelfmark_as_given": "Oxford, Bodleian Library, MS Tanner 5",
+  "date": "15th century",
+  "laws": "Duel",
+  "page": "xli",
+  "notes": "Pontifical of the Salisbury rite, with the Duel on p. 120."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Oxford, Bodleian Library, MS Tanner 5",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "15th century",
+    "ref": "Gesetze I, p. xli"
+   }
+  ],
+  "laws": "Duel",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xli",
+    "text": "Pontifical of the Salisbury rite, with the Duel on p. 120."
+   }
+  ]
+ }
+}

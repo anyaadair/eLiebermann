@@ -1,0 +1,38 @@
+{
+ "id": "Ba",
+ "order": 17,
+ "anchor": "Ba",
+ "label": "Ba",
+ "status": "not seen by Liebermann",
+ "display": true,
+ "liebermann": {
+  "siglum": "Ba",
+  "description_de": "Marquess of Bath",
+  "shelfmark_as_given": "Longleat House, Marquess of Bath",
+  "date": "14th century",
+  "laws": "Wl art, ECf retr",
+  "page": "xix",
+  "notes": "Parchment manuscript; after poems of Henry of Huntingdon comes the Tripartita, i.e. Wl art, ECf retr and the Genealogia Normannica. Described by Wanley as belonging to the ancestor (Weymouth)."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Longleat House, Marquess of Bath",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "14th century",
+    "ref": "Gesetze I, p. xix"
+   }
+  ],
+  "laws": "Wl art, ECf retr",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xix",
+    "text": "Parchment manuscript; after poems of Henry of Huntingdon comes the Tripartita, i.e. Wl art, ECf retr and the Genealogia Normannica. Described by Wanley as belonging to the ancestor (Weymouth)."
+   }
+  ]
+ }
+}

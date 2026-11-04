@@ -1,0 +1,38 @@
+{
+ "id": "Cus",
+ "order": 45,
+ "anchor": "Cus",
+ "label": "Cus",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Cus",
+  "description_de": "Liber custumarum der Gildhalle, f. 14",
+  "shelfmark_as_given": "London, Guildhall (Corporation of London), Liber Custumarum, f. 14",
+  "date": "14th century",
+  "laws": "Hn Lond",
+  "page": "524",
+  "notes": "Liebermann’s siglum for the first copy of Hn Lond in the Liber Custumarum (f. 14); the second copy in the same book (f. 187) is his Cust. See Cust."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "London, Guildhall (Corporation of London), Liber Custumarum, f. 14",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "14th century",
+    "ref": "Gesetze I, p. 524"
+   }
+  ],
+  "laws": "Hn Lond",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. 524",
+    "text": "Liebermann’s siglum for the first copy of Hn Lond in the Liber Custumarum (f. 14); the second copy in the same book (f. 187) is his Cust. See Cust."
+   }
+  ]
+ }
+}

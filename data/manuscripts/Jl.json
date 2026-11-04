@@ -1,0 +1,69 @@
+{
+ "id": "Jl",
+ "order": 107,
+ "anchor": "Jl",
+ "label": "Jl",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Jl",
+  "description_de": "British Museum Cotton Julius C II",
+  "shelfmark_as_given": "London, British Library, Cotton MS Julius C.ii",
+  "date": "c. 1589–1613",
+  "laws": "Abt, Wi, Blas, Ordal, Wal, Pax, Hl, Swer, Að, Mirce, IV Atr, Grið, VIII Atr, Wer, III Atr, Wl lad, VI As, III As, In Cn, Iud Dei, Becwæð, Rect, Geþyncðo, Quadr",
+  "page": "xxxi",
+  "notes": "Transcript and excerpts by Francis Tate, c. 1589–1613, mostly from H (Kentish laws, Blas, Ordal, Wal, Pax, Swer, Að, Mirce, charters, Wer, III Atr, Wl lad, VI As, parts of In Cn, Iud Dei III, Gyf feoh, Becwæð, Geþyncðo), from G (IV Atr, Grið, VIII Atr, parts of the Polity), from B (Rect), and III As from a book of Henry Sidney, Lord President of Wales. In the margin he cites a lost manuscript titled 'Quadripartitus' (Blas Forf, III and VI As, Ordal, III Atr, Pax Wal, Swer, Wer, Wl lad, Geþyncðo, Rect) whose readings match no known Quadripartitus codex."
+ },
+ "wormald": [
+  {
+   "wormald_heading": "",
+   "shelfmark": "London, British Library, Cotton MS Julius C.ii",
+   "wormald_siglum": "",
+   "liebermann_siglum": "Jl",
+   "guide_anchor": "Jl",
+   "liebermann_date": "c. 1589–1613",
+   "liebermann_page": "xxxi",
+   "wormald_date": "",
+   "wormald_origin": "Francis Tate wrote the note on f. 52r (formerly ascribed to Lambarde) (p. 225 nn. 245–6). (Liebermann's guide: transcripts by Tate, c. 1589–1613.)",
+   "laws": "Transcript of V Atr and Grið (traced to Joscelyn's copy)",
+   "laws_liebermann": "Abt, Wi, Blas, Ordal, Wal, Pax, Hl, Swer, Að, Mirce, IV Atr, Grið, VIII Atr, Wer, III Atr, Wl lad, VI As, III As, In Cn, Iud Dei, Becwæð, Rect, Geþyncðo, Quadr",
+   "other_contents": "",
+   "overview": "An early modern volume of transcripts (Liebermann ascribes them to Francis Tate). A note by Tate on f. 52r, once thought to be Lambarde's, traces its copy of V Æthelred and Grið to a manuscript Joscelyn held by November 1580; Wormald takes this to show that Joscelyn seems then to have had Nero A.i(B), and that Lambarde had probably seen it by that date.",
+   "liebermann_superseded": "",
+   "pages": "225 nn. 245–6",
+   "key_quote": "is now known to be by Tate not Lambarde (p. 225 n. 246)",
+   "doubts": "Footnote mention only.",
+   "guide_shelfmark": "London, British Library, Cotton MS Julius C.ii",
+   "in_guide": "yes",
+   "verify_notes": [
+    "Checked p. 225 nn. 245–6. Overview: 'A volume of Francis Tate's transcripts' is the guide's (Liebermann's) description, not Wormald's — now labelled; Joscelyn's possession of Nero A.i(B) softened to Wormald's 'seems'."
+   ],
+   "part": ""
+  }
+ ],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "London, British Library, Cotton MS Julius C.ii",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "c. 1589–1613",
+    "ref": "Gesetze I, p. xxxi"
+   }
+  ],
+  "laws": "Abt, Wi, Blas, Ordal, Wal, Pax, Hl, Swer, Að, Mirce, IV Atr, Grið, VIII Atr, Wer, III Atr, Wl lad, VI As, III As, In Cn, Iud Dei, Becwæð, Rect, Geþyncðo, Quadr",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxxi",
+    "text": "Transcript and excerpts by Francis Tate, c. 1589–1613, mostly from H (Kentish laws, Blas, Ordal, Wal, Pax, Swer, Að, Mirce, charters, Wer, III Atr, Wl lad, VI As, parts of In Cn, Iud Dei III, Gyf feoh, Becwæð, Geþyncðo), from G (IV Atr, Grið, VIII Atr, parts of the Polity), from B (Rect), and III As from a book of Henry Sidney, Lord President of Wales. In the margin he cites a lost manuscript titled 'Quadripartitus' (Blas Forf, III and VI As, Ordal, III Atr, Pax Wal, Swer, Wer, Wl lad, Geþyncðo, Rect) whose readings match no known Quadripartitus codex."
+   },
+   {
+    "by": "Wormald",
+    "ref": "Wormald, MEL, pp. 225 nn. 245–6",
+    "text": "An early modern volume of transcripts (Liebermann ascribes them to Francis Tate). A note by Tate on f. 52r, once thought to be Lambarde's, traces its copy of V Æthelred and Grið to a manuscript Joscelyn held by November 1580; Wormald takes this to show that Joscelyn seems then to have had Nero A.i(B), and that Lambarde had probably seen it by that date."
+   }
+  ]
+ }
+}

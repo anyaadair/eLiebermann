@@ -1,0 +1,38 @@
+{
+ "id": "Vs",
+ "order": 201,
+ "anchor": "Vs",
+ "label": "Vs",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Vs",
+  "description_de": "British Museum, Cotton Vitellius D VII",
+  "shelfmark_as_given": "London, British Library, Cotton MS Vitellius D.vii",
+  "date": "16th century",
+  "laws": "Iud Dei, IV Eg, Geþyncðo, Norðleod, Mirce, Að, Had",
+  "page": "xlii",
+  "notes": "16th-century transcripts: Iudicium Dei from Ci, IV Edgar from C, and from 'Cradok' Geþyncðo, Norðleod, Mirce, Að and Had; also Þa halgan (f. 144)."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "London, British Library, Cotton MS Vitellius D.vii",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "16th century",
+    "ref": "Gesetze I, p. xlii"
+   }
+  ],
+  "laws": "Iud Dei, IV Eg, Geþyncðo, Norðleod, Mirce, Að, Had",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xlii",
+    "text": "16th-century transcripts: Iudicium Dei from Ci, IV Edgar from C, and from 'Cradok' Geþyncðo, Norðleod, Mirce, Að and Had; also Þa halgan (f. 144)."
+   }
+  ]
+ }
+}

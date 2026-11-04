@@ -1,0 +1,38 @@
+{
+ "id": "Cn",
+ "order": 37,
+ "anchor": "Cn",
+ "label": "Cn",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Cn",
+  "description_de": "Cambridge Corpus Christi College 79",
+  "shelfmark_as_given": "Cambridge, Corpus Christi College, MS 79",
+  "date": "c. 1325",
+  "laws": "Excom",
+  "page": "xxi",
+  "notes": "Pontifical of Bishop Clifford of London (1406–21); f. 204 Excommunication II."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Cambridge, Corpus Christi College, MS 79",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "c. 1325",
+    "ref": "Gesetze I, p. xxi"
+   }
+  ],
+  "laws": "Excom",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxi",
+    "text": "Pontifical of Bishop Clifford of London (1406–21); f. 204 Excommunication II."
+   }
+  ]
+ }
+}

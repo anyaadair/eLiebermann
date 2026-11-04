@@ -1,0 +1,38 @@
+{
+ "id": "Horn",
+ "order": 91,
+ "anchor": "Horn",
+ "label": "Horn",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Horn",
+  "description_de": "London Guildhall, Liber Horn",
+  "shelfmark_as_given": "London, Guildhall (Corporation of London), Liber Horn",
+  "date": "1311",
+  "laws": "Lib Lond, Wl Lond, Hn Lond, ECf retr",
+  "page": "xxx",
+  "notes": "The Liber Horn, made in 1311 for Andrew Horn, fishmonger of London, containing the city's charters and customs: f. 230 Lib London., ff. 205b and 362 Wl Lond, f. 362b Hn Lond, f. 375 ECf retr (similar to Cc). Compare Co."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "London, Guildhall (Corporation of London), Liber Horn",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "1311",
+    "ref": "Gesetze I, p. xxx"
+   }
+  ],
+  "laws": "Lib Lond, Wl Lond, Hn Lond, ECf retr",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxx",
+    "text": "The Liber Horn, made in 1311 for Andrew Horn, fishmonger of London, containing the city's charters and customs: f. 230 Lib London., ff. 205b and 362 Wl Lond, f. 362b Hn Lond, f. 375 ECf retr (similar to Cc). Compare Co."
+   }
+  ]
+ }
+}

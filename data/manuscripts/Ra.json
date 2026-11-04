@@ -1,0 +1,38 @@
+{
+ "id": "Ra",
+ "order": 162,
+ "anchor": "Ra",
+ "label": "Ra",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Ra",
+  "description_de": "British Museum Regius 13 A XVIII",
+  "shelfmark_as_given": "London, British Library, Royal MS 13 A XVIII",
+  "date": "c. 1350",
+  "laws": "Wl art, ECf retr",
+  "page": "xxxviii",
+  "notes": "After Henry of Huntingdon, the Tripartita with Rubricator II (Wl art, like Vi changing the title to plural majesty; cf. rv), the rubric list to ECf, ECf retr and the Genealogia Normannica to 1154; English history continued as in Gr to 1232, and finally the same verses as in Lb."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "London, British Library, Royal MS 13 A XVIII",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "c. 1350",
+    "ref": "Gesetze I, p. xxxviii"
+   }
+  ],
+  "laws": "Wl art, ECf retr",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxxviii",
+    "text": "After Henry of Huntingdon, the Tripartita with Rubricator II (Wl art, like Vi changing the title to plural majesty; cf. rv), the rubric list to ECf, ECf retr and the Genealogia Normannica to 1154; English history continued as in Gr to 1232, and finally the same verses as in Lb."
+   }
+  ]
+ }
+}

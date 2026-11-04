@@ -1,0 +1,38 @@
+{
+ "id": "MsEl",
+ "order": 67,
+ "anchor": "MsEl",
+ "label": "El",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "El",
+  "description_de": "Oxford Bodley 579",
+  "shelfmark_as_given": "Oxford, Bodleian Library, MS 579",
+  "date": "c. 925 (main text); additions c. 1050; the earliest English part 970–1000",
+  "laws": "Sacr cor",
+  "page": "xxiv",
+  "notes": "The Leofric Missal, used by Bishop Leofric (†1072) and given by him to Exeter cathedral, edited by Warren 1883; its core is a Gregorian sacramentary written in Lorraine c. 925, to which the coronation liturgy with the oath (f. 305) belongs."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Oxford, Bodleian Library, MS 579",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "c. 925 (main text); additions c. 1050; the earliest English part 970–1000",
+    "ref": "Gesetze I, p. xxiv"
+   }
+  ],
+  "laws": "Sacr cor",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxiv",
+    "text": "The Leofric Missal, used by Bishop Leofric (†1072) and given by him to Exeter cathedral, edited by Warren 1883; its core is a Gregorian sacramentary written in Lorraine c. 925, to which the coronation liturgy with the oath (f. 305) belongs."
+   }
+  ]
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "id": "Et",
+ "order": 68,
+ "anchor": "Et",
+ "label": "Et",
+ "status": "not seen by Liebermann",
+ "display": true,
+ "liebermann": {
+  "siglum": "Et",
+  "description_de": "Exeter, Kathedrale, 'Liber pontificalis of Edmund Lacy, bishop of Exeter'",
+  "shelfmark_as_given": "Exeter Cathedral, the Pontifical of Edmund Lacy, bishop of Exeter",
+  "date": "14th century",
+  "laws": "Duel, Excom",
+  "page": "xxv",
+  "notes": "Edmund Lacy's (†1455) pontifical, edited by R. Barnes 1847; p. 138 a coronation oath confirming the laws of Edward, p. 211 Duel to 8,2 (bought too late for its insignificant variants to be included) and p. 287 Excommunication II."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Exeter Cathedral, the Pontifical of Edmund Lacy, bishop of Exeter",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "14th century",
+    "ref": "Gesetze I, p. xxv"
+   }
+  ],
+  "laws": "Duel, Excom",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxv",
+    "text": "Edmund Lacy's (†1455) pontifical, edited by R. Barnes 1847; p. 138 a coronation oath confirming the laws of Edward, p. 211 Duel to 8,2 (bought too late for its insignificant variants to be included) and p. 287 Excommunication II."
+   }
+  ]
+ }
+}

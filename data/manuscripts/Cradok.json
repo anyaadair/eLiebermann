@@ -1,0 +1,32 @@
+{
+ "id": "Cradok",
+ "order": 41,
+ "anchor": "Cradok",
+ "label": "Cradok",
+ "status": "not seen by Liebermann",
+ "display": true,
+ "liebermann": {
+  "siglum": "Cradok",
+  "description_de": "Liber Cradok zu Oxford",
+  "shelfmark_as_given": "The Liber Cradok at Oxford, known from Spelman",
+  "date": "",
+  "laws": "",
+  "page": "xxii",
+  "notes": "An Oxford book copied from D, which was the exemplar of Vs; cited by Spelman, perhaps Edward Cradock's (fl. 1571)."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "The Liber Cradok at Oxford, known from Spelman",
+  "dates": [],
+  "laws": "",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxii",
+    "text": "An Oxford book copied from D, which was the exemplar of Vs; cited by Spelman, perhaps Edward Cradock's (fl. 1571)."
+   }
+  ]
+ }
+}

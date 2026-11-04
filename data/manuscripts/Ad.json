@@ -1,0 +1,38 @@
+{
+ "id": "Ad",
+ "order": 2,
+ "anchor": "Ad",
+ "label": "Ad",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Ad",
+  "description_de": "British Museum Additional 24066",
+  "shelfmark_as_given": "London, British Library, Additional MS 24066",
+  "date": "c. 1210",
+  "laws": "ECf",
+  "page": "xviii",
+  "notes": "Glanvill (f. 5–73, c. 1210), then, after a later-inserted 14th-century collection of 13th–14th-century statutes (f. 74–212), originally directly following in the same hand, f. 213 ECf to 34,1a (class adow), ending the volume."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "London, British Library, Additional MS 24066",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "c. 1210",
+    "ref": "Gesetze I, p. xviii"
+   }
+  ],
+  "laws": "ECf",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xviii",
+    "text": "Glanvill (f. 5–73, c. 1210), then, after a later-inserted 14th-century collection of 13th–14th-century statutes (f. 74–212), originally directly following in the same hand, f. 213 ECf to 34,1a (class adow), ending the volume."
+   }
+  ]
+ }
+}

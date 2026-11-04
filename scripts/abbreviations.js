@@ -42,7 +42,7 @@
             // Liebermann's order ignores the numeral of a code: I As, II As … under A
             letter: r => (String(r['Gesetze Text']).replace(/^(?:[IVX]+a?)\s+/, '').match(/\p{L}/u) || ['#'])[0].toUpperCase() },
         ms: { noun: ['manuscript', 'manuscripts'], field: 'Gesetze Text', label: 'Siglum',
-            fields: ['Gesetze Text', 'German Expansion', 'English Translation', 'Date (Liebermann)', 'Laws in it', 'Notes'],
+            fields: ['Gesetze Text', 'German Expansion', 'English Translation', 'Date (Liebermann)', 'Laws in it', 'Notes', 'Search extra'],
             letter: r => (String(r['Gesetze Text']).match(/\p{L}/u) || ['#'])[0].toUpperCase() },
         gram: { noun: ['headword', 'headwords'], field: 'Gesetze Text', label: 'Term',
             fields: ['Gesetze Text', 'German Expansion', 'Modern German', 'English Translation', 'Notes: Grammatical'],
@@ -118,6 +118,8 @@
         fetch(root() + container.dataset.source)
             .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
             .then(rows => {
+                // the manuscripts' dates and laws note are searchable too ("Everything")
+                if (kind === 'ms') rows.forEach(r => { r['Search extra'] = (r.Dates || []).map(x => x.by + ' ' + x.text).concat(r['Laws note'] ? [r['Laws note'].text] : []).join(' '); });
                 // rows with the same Anchor together, in the order of the file (the manuscripts'
                 // two lost "il" stay apart: each is its own manuscript)
                 const byAnchor = new Map();
@@ -266,24 +268,29 @@
             })}</tbody></table>`;
     }
 
-    // Manuscripts: siglum, library and shelfmark, Liebermann's date, the laws in it; his German
-    // description and notes folded away.
+    // Manuscripts: siglum, library and shelfmark, the dates (Liebermann's, Wormald's), the laws in it
+    // (with Wormald's note where the contents differ); the notes, each with its author, folded away.
+    // The data: data/manuscripts.json, built from one file a manuscript in data/manuscripts/.
+    const byLine = (x, cls) => `<p class="${cls || ''}"><span class="gl-by">${esc(x.by)}${x.kind === 'correction' ? ', correcting Liebermann' : ''}:</span> ${esc(x.text)}${x.ref ? ` <span class="gl-ref">(${esc(x.ref)})</span>` : ''}</p>`;
     function drawMs(list) {
         const seen = new Set();
         return `<table class="glossary glossary--ms">
             <colgroup><col class="c-abbr"><col class="c-en"><col class="c-date"><col class="c-laws"><col class="c-page"></colgroup>
-            <thead><tr><th scope="col">Siglum</th><th scope="col">Manuscript</th><th scope="col">Date (Liebermann)</th><th scope="col">Laws in it</th><th scope="col" class="num" title="Where Liebermann describes it, Gesetze I">Gesetze I, p.</th></tr></thead>
+            <thead><tr><th scope="col">Siglum</th><th scope="col">Manuscript</th><th scope="col">Dates</th><th scope="col">Laws in it</th><th scope="col" class="num" title="Where Liebermann describes it, Gesetze I">Gesetze I, p.</th></tr></thead>
             <tbody>${withLetters(list, 5, g => g.rows.map(r => {
                 const id = seen.has(g.anchor) ? '' : ` id="${esc(g.anchor)}"`;
                 seen.add(g.anchor);
-                const tag = posited(r) ? '<span class="gl-tag">posited by Liebermann</span>' : lost(r) ? '<span class="gl-tag">lost</span>' : /^\[not seen/.test(r.Notes || '') ? '<span class="gl-tag">not seen by Liebermann</span>' : '';
-                const notes = String(r.Notes || '').replace(/^\[[^\]]*\]\s*/, '');
-                const more = [r['German Expansion'] ? `<p><span class="muted">Liebermann:</span> <span lang="de">${esc(r['German Expansion'])}</span></p>` : '', notes ? `<p>${esc(notes)}</p>` : ''].join('');
+                const tag = posited(r) ? '<span class="gl-tag">posited by Liebermann</span>' : lost(r) ? '<span class="gl-tag">lost</span>' : /^\[not seen/.test(r.Notes || '') ? '<span class="gl-tag">not seen by Liebermann</span>' : /^\[not in Liebermann/.test(r.Notes || '') ? '<span class="gl-tag">not in Liebermann</span>' : '';
+                const notes = r['Notes by'] ? r['Notes by'].map(n => byLine(n, n.kind === 'correction' ? 'gl-correction' : '')).join('')
+                    : (String(r.Notes || '').replace(/^\[[^\]]*\]\s*/, '') ? `<p>${esc(String(r.Notes).replace(/^\[[^\]]*\]\s*/, ''))}</p>` : '');
+                const more = [r['German Expansion'] ? `<p><span class="gl-by">Liebermann’s description:</span> <span lang="de">${esc(r['German Expansion'])}</span></p>` : '', notes].join('');
+                const dates = r.Dates ? r.Dates.map(x => `<span class="gl-dateline"><span class="gl-by">${esc(x.by)}:</span> ${esc(x.text)}${x.ref ? ` <span class="gl-ref">(${esc(x.ref)})</span>` : ''}</span>`).join('') : esc(r['Date (Liebermann)'] || '');
+                const lawsNote = r['Laws note'] ? `<span class="gl-lawsnote"><span class="gl-by">${esc(r['Laws note'].by)}:</span> ${esc(r['Laws note'].text)}${r['Laws note'].ref ? ` <span class="gl-ref">(${esc(r['Laws note'].ref)})</span>` : ''}</span>` : '';
                 return `<tr${id}>
                     <td class="gl-term">${esc(r['Gesetze Text'])}</td>
                     <td class="gl-en">${esc(r['English Translation'])}${tag}${more ? `<details class="gl-more"><summary>Description and notes</summary>${more}</details>` : ''}</td>
-                    <td class="gl-date">${esc(r['Date (Liebermann)'] || '')}</td>
-                    <td class="gl-laws">${esc(r['Laws in it'] || '')}</td>
+                    <td class="gl-date">${dates}</td>
+                    <td class="gl-laws">${esc(r['Laws in it'] || '')}${lawsNote}</td>
                     <td class="num">${esc(r['Liebermann I, page'] || '')}</td>
                 </tr>`;
             }).join(''))}</tbody></table>`;

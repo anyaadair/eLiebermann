@@ -1,0 +1,38 @@
+{
+ "id": "L",
+ "order": 117,
+ "anchor": "L",
+ "label": "L",
+ "status": "not seen by Liebermann",
+ "display": true,
+ "liebermann": {
+  "siglum": "L",
+  "description_de": "Von Thorpe allein, ohne Angabe des Fundortes, benutzt",
+  "shelfmark_as_given": "A manuscript used only by Thorpe, who did not say where it was",
+  "date": "13th century (after Thorpe)",
+  "laws": "ECf retr",
+  "page": "xxxii",
+  "notes": "A manuscript used only by Thorpe, who gave no location and assigned it to the 13th century; from the variants he cites for ECf it had ECf retr, closest to Db."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "A manuscript used only by Thorpe, who did not say where it was",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "13th century (after Thorpe)",
+    "ref": "Gesetze I, p. xxxii"
+   }
+  ],
+  "laws": "ECf retr",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxxii",
+    "text": "A manuscript used only by Thorpe, who gave no location and assigned it to the 13th century; from the variants he cites for ECf it had ECf retr, closest to Db."
+   }
+  ]
+ }
+}

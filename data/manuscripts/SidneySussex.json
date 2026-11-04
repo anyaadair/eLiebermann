@@ -1,0 +1,51 @@
+{
+ "id": "SidneySussex",
+ "order": 219,
+ "anchor": "SidneySussex",
+ "label": "Sidney Sussex pontifical",
+ "status": "not in Liebermann",
+ "display": false,
+ "liebermann": {},
+ "wormald": [
+  {
+   "wormald_heading": "",
+   "shelfmark": "Cambridge, Sidney Sussex College pontifical (no shelfmark given by Wormald)",
+   "wormald_siglum": "",
+   "liebermann_siglum": "",
+   "guide_anchor": "",
+   "liebermann_date": "",
+   "liebermann_page": "",
+   "wormald_date": "slightly earlier than 'Claudius I' (p. 194)",
+   "wormald_origin": "At Durham by the mid-eleventh century, perhaps because Archbishop Oswald took it to York; Wormald suggests it and ‘Claudius I’ may share an origin in the Fenland abbeys (p. 194 n. 134).",
+   "laws": "",
+   "laws_liebermann": "",
+   "other_contents": "Pontifical; begins with ordinations of lesser grades and omits the consecration of bishops (p. 194).",
+   "overview": "A pontifical closely related to and slightly older than 'Claudius I' (the VI Æthelred pontifical in Claudius A.iii). Like it, it lacks a rite for consecrating bishops. Its presence at Durham, perhaps via Oswald, leads Wormald to suggest that the two books both came from a Fenland abbey rather than from York.",
+   "liebermann_superseded": "",
+   "pages": "194 and nn. 131, 134",
+   "key_quote": "'their links may be best explained in terms of a common origin in the Fenland abbeys' (p. 194 n. 134)",
+   "doubts": "No laws; not in guide. Included only as comparative evidence for Claudius A.iii. Wormald cites it as ed. Banting, Two Anglo-Saxon Pontificals.",
+   "guide_shelfmark": "",
+   "in_guide": "no",
+   "verify_notes": [
+    "Checked p. 194 and nn. 131, 134; origin wording aligned with n. 134 (‘taken to York’), otherwise no changes.",
+    "overview: reworded to remove five-word runs matching Wormald’s text."
+   ],
+   "part": ""
+  }
+ ],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Cambridge, Sidney Sussex College pontifical (no shelfmark given by Wormald)",
+  "dates": [],
+  "laws": "",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Wormald",
+    "ref": "Wormald, MEL, pp. 194 and nn. 131, 134",
+    "text": "A pontifical closely related to and slightly older than 'Claudius I' (the VI Æthelred pontifical in Claudius A.iii). Like it, it lacks a rite for consecrating bishops. Its presence at Durham, perhaps via Oswald, leads Wormald to suggest that the two books both came from a Fenland abbey rather than from York."
+   }
+  ]
+ }
+}

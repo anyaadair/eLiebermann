@@ -1,0 +1,74 @@
+{
+ "id": "Or",
+ "order": 142,
+ "anchor": "Or",
+ "label": "Or",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Or",
+  "description_de": "Oxford, Oriel College 46",
+  "shelfmark_as_given": "Oxford, Oriel College, MS 46",
+  "date": "c. 1330",
+  "laws": "Quadr, Ine, Blas, Forf, Hu, Af, AGu, App AGu, EGu, I As, As Alm, II As, Episc, Norðleod, Mirce, Að, Had, IV As, V As, III As, VI As, Ordal, Iud Dei, Cn, Wl art retr, ECf retr, Lond ECf, Hn, CHn cor, Hn Lond",
+  "page": "xxxvi",
+  "notes": "Written in one hand c. 1330, once owned by the London Guildhall and then by Francis Tate; a codex of the London Leges Anglorum (see Lond), mostly closer to Co than K, taking many insertions added in Co into its text; Gi mostly reads like Or. Contents: Expositio vocabulorum, Numerus provinciarum, Quadripartitus texts (Ine, Alfred, Æthelstan, etc.), Iudicium Dei XVI, I, XV, Cnut, then Tripartita (rubric list, Wl art retr, ECf retr with London interpolations, Genealogia Normannica), and Henry I's laws with his coronation and London charters."
+ },
+ "wormald": [
+  {
+   "wormald_heading": "6 (iii) Quadripartitus, MS 6d (London collection)",
+   "shelfmark": "Oxford, Oriel College, MS 46",
+   "wormald_siglum": "Or",
+   "liebermann_siglum": "Or",
+   "guide_anchor": "Or",
+   "liebermann_date": "c. 1330",
+   "liebermann_page": "xxxvi",
+   "wormald_date": "s. xiv¹ (p. 238)",
+   "wormald_origin": "Probably Andrew Horn's work; given to the Guildhall (p. 238)",
+   "laws": "London collection version of Quadripartitus texts (see Table 4.7 'London' column)",
+   "laws_liebermann": "Quadr, Ine, Blas, Forf, Hu, Af, AGu, App AGu, EGu, I As, As Alm, II As, Episc, Norðleod, Mirce, Að, Had, IV As, V As, III As, VI As, Ordal, Iud Dei, Cn, Wl art retr, ECf retr, Lond ECf, Hn, CHn cor, Hn Lond",
+   "other_contents": "Calligraphic presentation copy (pp. 239, 252–3).",
+   "overview": "An early-fourteenth-century copy of the London collection, probably made by or for Andrew Horn and given to the Guildhall. With K2 it is one of Horn's large calligraphic presentation copies of that collection.",
+   "liebermann_superseded": "",
+   "pages": "238; 252–3; 237 n. 304; 238 n. 307",
+   "key_quote": "Oxford, Oriel College, MS 46 [Or]; s xiv¹; also probably Horn's work, also given to Guildhall. (p. 238)",
+   "doubts": "Guide date c. 1330 consistent with s. xiv¹.",
+   "guide_shelfmark": "Oxford, Oriel College, MS 46",
+   "in_guide": "yes",
+   "verify_notes": [
+    "Checked p. 238 (image), 239, 252–3. Overview: 'fair copy' was wrong — Wormald uses that term for Rs (6a); Or is one of Horn's 'presentation copies' (pp. 252–3)."
+   ],
+   "part": ""
+  }
+ ],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Oxford, Oriel College, MS 46",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "c. 1330",
+    "ref": "Gesetze I, p. xxxvi"
+   },
+   {
+    "by": "Wormald",
+    "text": "s. xiv¹",
+    "ref": "Wormald, MEL, p. 238"
+   }
+  ],
+  "laws": "Quadr, Ine, Blas, Forf, Hu, Af, AGu, App AGu, EGu, I As, As Alm, II As, Episc, Norðleod, Mirce, Að, Had, IV As, V As, III As, VI As, Ordal, Iud Dei, Cn, Wl art retr, ECf retr, Lond ECf, Hn, CHn cor, Hn Lond",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxxvi",
+    "text": "Written in one hand c. 1330, once owned by the London Guildhall and then by Francis Tate; a codex of the London Leges Anglorum (see Lond), mostly closer to Co than K, taking many insertions added in Co into its text; Gi mostly reads like Or. Contents: Expositio vocabulorum, Numerus provinciarum, Quadripartitus texts (Ine, Alfred, Æthelstan, etc.), Iudicium Dei XVI, I, XV, Cnut, then Tripartita (rubric list, Wl art retr, ECf retr with London interpolations, Genealogia Normannica), and Henry I's laws with his coronation and London charters."
+   },
+   {
+    "by": "Wormald",
+    "ref": "Wormald, MEL, pp. 238",
+    "text": "An early-fourteenth-century copy of the London collection, probably made by or for Andrew Horn and given to the Guildhall. With K2 it is one of Horn's large calligraphic presentation copies of that collection."
+   }
+  ]
+ }
+}

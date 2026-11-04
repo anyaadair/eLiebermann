@@ -1,0 +1,79 @@
+{
+ "id": "R",
+ "order": 161,
+ "anchor": "R",
+ "label": "R",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "R",
+  "description_de": "British Museum Regius 11 B II (Liber monasterii Wygornie)",
+  "shelfmark_as_given": "London, British Library, Royal MS 11 B II (Liber monasterii Wygornie)",
+  "date": "c. 1160",
+  "laws": "Quadr, I Cn, II Cn, Af, Ine, I As, II As, Ordal, Episc, Norðleod, Geþyncðo, Mirce, Að, Had, Blas, Forf, Hu, IV As, VI As, EGu, II Em, Swer, Wif, Wer, III Atr, Pax, Wal, IV Atr, II Atr, Duns, Iudex, Rect, Wl lad",
+  "page": "xxxviii",
+  "notes": "Worcester book written c. 1160 handsomely but thoughtlessly, often keeping e-caudata for ae; ff. 103–166 hold the middle recension of the Quadripartitus from Arg. 32 (Cnut, Alfred–Ine, Æthelstan, Edgar, Edmund, Æthelred and the shorter tracts, to Wl lad), followed in the same hand by Odo of Cambrai's De canone missae. R was copied in Lh."
+ },
+ "wormald": [
+  {
+   "wormald_heading": "6 (iii) Quadripartitus, MS 3",
+   "shelfmark": "London, British Library, Royal MS 11.B.ii, ff. 103r–166v",
+   "wormald_siglum": "R",
+   "liebermann_siglum": "R",
+   "guide_anchor": "R",
+   "liebermann_date": "c. 1160",
+   "liebermann_page": "xxxviii",
+   "wormald_date": "s. xii^3/4 (p. 237)",
+   "wormald_origin": "Provenance Worcester (p. 237); 13th-century Worcester business letters in margins (p. 238 n. 309)",
+   "laws": "Quadripartitus (second recension): Argum. 32, I–II Cn, Af–Ine, I–II As, Ordal, Episc, Norðleod, Geþyncðo, Mirce, Að, Had, Blas, Forf, Hu, III–VI As, EGu 9 ff., II Em, Swer, Wif, Wer, III Atr, Pax, Wal, IV Atr, II Atr, Duns, Iudex, Rect, Wl lad (Table 4.7, pp. 240–1)",
+   "laws_liebermann": "Quadr, I Cn, II Cn, Af, Ine, I As, II As, Ordal, Episc, Norðleod, Geþyncðo, Mirce, Að, Had, Blas, Forf, Hu, IV As, VI As, EGu, II Em, Swer, Wif, Wer, III Atr, Pax, Wal, IV Atr, II Atr, Duns, Iudex, Rect, Wl lad",
+   "other_contents": "Added at Worcester to canon-law materials; also a list of the 'Seven Wonders of the World' and poetry of Hildebert of Tours (different hand). Calligraphic; frequent scribal lapses; omits and displaces items; dispenses with preliminary rubric lists (pp. 238–9 and n. 311).",
+   "overview": "A handsome Worcester copy of Quadripartitus from the third quarter of the twelfth century, bound there with canon law and with literary pieces. It represents the second of the five stages Wormald identifies (after the version used by the London collection), omits or moves several texts, and for all its calligraphy is careless in detail.",
+   "liebermann_superseded": "",
+   "pages": "237–9, 243; 240–1 (Table 4.7); 252 (size); 254 (two columns); 238 n. 309; 239 n. 311",
+   "key_quote": "R (3) was added in its Worcester home to a collection of canon law materials (p. 238)",
+   "doubts": "Guide date c. 1160 (Liebermann) is compatible with Wormald's s. xii^3/4.",
+   "guide_shelfmark": "London, British Library, Royal MS 11 B II (Liber monasterii Wygornie)",
+   "in_guide": "yes",
+   "verify_notes": [
+    "Checked p. 237 (image: s. xii³ᐟ⁴ confirmed), 238–9, 243, 252, 254, Table 4.7 (image): laws list matches.",
+    "Overview: 'second after the London collection's source' clarified; 'bound with' made precise (added to canon-law materials at Worcester, p. 238)."
+   ],
+   "part": ""
+  }
+ ],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "London, British Library, Royal MS 11 B II (Liber monasterii Wygornie)",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "c. 1160",
+    "ref": "Gesetze I, p. xxxviii"
+   },
+   {
+    "by": "Wormald",
+    "text": "s. xii³ᐟ⁴",
+    "ref": "Wormald, MEL, p. 237"
+   }
+  ],
+  "laws": "Quadr, I Cn, II Cn, Af, Ine, I As, II As, Ordal, Episc, Norðleod, Geþyncðo, Mirce, Að, Had, Blas, Forf, Hu, IV As, VI As, EGu, II Em, Swer, Wif, Wer, III Atr, Pax, Wal, IV Atr, II Atr, Duns, Iudex, Rect, Wl lad",
+  "laws_note": {
+   "by": "Wormald",
+   "text": "his Table 4.7 lists also Argumentum 32 and III and V As.",
+   "ref": "Wormald, MEL, pp. 240–1 (Table 4.7)"
+  },
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxxviii",
+    "text": "Worcester book written c. 1160 handsomely but thoughtlessly, often keeping e-caudata for ae; ff. 103–166 hold the middle recension of the Quadripartitus from Arg. 32 (Cnut, Alfred–Ine, Æthelstan, Edgar, Edmund, Æthelred and the shorter tracts, to Wl lad), followed in the same hand by Odo of Cambrai's De canone missae. R was copied in Lh."
+   },
+   {
+    "by": "Wormald",
+    "ref": "Wormald, MEL, pp. 237–9, 243",
+    "text": "A handsome Worcester copy of Quadripartitus from the third quarter of the twelfth century, bound there with canon law and with literary pieces. It represents the second of the five stages Wormald identifies (after the version used by the London collection), omits or moves several texts, and for all its calligraphy is careless in detail."
+   }
+  ]
+ }
+}

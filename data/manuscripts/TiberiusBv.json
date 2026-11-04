@@ -1,0 +1,50 @@
+{
+ "id": "TiberiusBv",
+ "order": 221,
+ "anchor": "TiberiusBv",
+ "label": "Tiberius B.v",
+ "status": "not in Liebermann",
+ "display": false,
+ "liebermann": {},
+ "wormald": [
+  {
+   "wormald_heading": "",
+   "shelfmark": "London, British Library, Cotton MS Tiberius B.v",
+   "wormald_siglum": "",
+   "liebermann_siglum": "",
+   "guide_anchor": "",
+   "liebermann_date": "",
+   "liebermann_page": "",
+   "wormald_date": "around the turn of the millennium (p. 249)",
+   "wormald_origin": "Canterbury (p. 249)",
+   "laws": "",
+   "laws_liebermann": "",
+   "other_contents": "Called a 'wonder book' (p. 249); regnal and episcopal lists",
+   "overview": "A Canterbury manuscript of about the year 1000 whose regnal and episcopal lists come from the same exemplar as those in Textus Roffensis. This explains why the Rochester scribe could bring the Canterbury archbishops down to 1122 while his lists for Rochester and other sees stop much earlier.",
+   "liebermann_superseded": "",
+   "pages": "249, 252",
+   "key_quote": "They evidently shared an exemplar with those in the impressive 'wonder book', Cotton Tiberius B.v (p. 249)",
+   "doubts": "Not in the guide (no laws).",
+   "guide_shelfmark": "",
+   "in_guide": "no",
+   "verify_notes": [
+    "pp. 249, 252 checked; 'miscellany' in overview removed (Wormald does not describe the book's contents); pages narrowed from 249–52 to 249, 252 (pp. 250–1 are Table 4.9)."
+   ],
+   "part": ""
+  }
+ ],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "London, British Library, Cotton MS Tiberius B.v",
+  "dates": [],
+  "laws": "",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Wormald",
+    "ref": "Wormald, MEL, pp. 249, 252",
+    "text": "A Canterbury manuscript of about the year 1000 whose regnal and episcopal lists come from the same exemplar as those in Textus Roffensis. This explains why the Rochester scribe could bring the Canterbury archbishops down to 1122 while his lists for Rochester and other sees stop much earlier."
+   }
+  ]
+ }
+}

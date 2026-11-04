@@ -1,0 +1,41 @@
+{
+ "id": "sp",
+ "order": 181,
+ "anchor": "sp",
+ "label": "sp",
+ "status": "posited",
+ "display": true,
+ "liebermann": {
+  "siglum": "sp",
+  "description_de": "Verlorene Vorlage von S und Pl",
+  "shelfmark_as_given": "Posited by Liebermann: a common source of S and Pl, inferred from the readings they share. No such manuscript survives.",
+  "date": "",
+  "laws": "ECf, Lib Lond, In Cn, Wl art",
+  "page": "xl",
+  "notes": "A common source of S and Pl for ECf (with rubrics from ECf retr), Libertas Londoniensis, Instituta Cnuti (Ip Hunt class) and the Tripartita (Wl art, Genealogia Normannica continued to John), posited by Liebermann."
+ },
+ "wormald": [],
+ "others": [
+  {
+   "by": "O’Brien",
+   "text": "O’Brien (2003): O’Brien’s family tree has the same common source of S and Pl (his ι), and below it a second lost manuscript (π) behind Pl, Vincent 98 and Harley 785."
+  }
+ ],
+ "display_fields": {
+  "shelfmark": "Posited by Liebermann: a common source of S and Pl, inferred from the readings they share. No such manuscript survives.",
+  "dates": [],
+  "laws": "ECf, Lib Lond, In Cn, Wl art",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xl",
+    "text": "A common source of S and Pl for ECf (with rubrics from ECf retr), Libertas Londoniensis, Instituta Cnuti (Ip Hunt class) and the Tripartita (Wl art, Genealogia Normannica continued to John), posited by Liebermann."
+   },
+   {
+    "by": "O’Brien",
+    "text": "O’Brien (2003): O’Brien’s family tree has the same common source of S and Pl (his ι), and below it a second lost manuscript (π) behind Pl, Vincent 98 and Harley 785."
+   }
+  ]
+ }
+}

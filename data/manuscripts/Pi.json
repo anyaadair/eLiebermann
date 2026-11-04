@@ -1,0 +1,38 @@
+{
+ "id": "Pi",
+ "order": 155,
+ "anchor": "Pi",
+ "label": "Pi",
+ "status": "not seen by Liebermann",
+ "display": true,
+ "liebermann": {
+  "siglum": "Pi",
+  "description_de": "Phillipps 26641 (früher 2777)",
+  "shelfmark_as_given": "Phillipps MS 26641 (formerly 2777)",
+  "date": "early 13th century",
+  "laws": "Wl lad, Praef ad CHn cor",
+  "page": "xxxvii",
+  "notes": "William of Malmesbury's Gesta regum with Ip Ml, i.e. Wl lad and the preface to Henry I's coronation charter."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Phillipps MS 26641 (formerly 2777)",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "early 13th century",
+    "ref": "Gesetze I, p. xxxvii"
+   }
+  ],
+  "laws": "Wl lad, Praef ad CHn cor",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxxvii",
+    "text": "William of Malmesbury's Gesta regum with Ip Ml, i.e. Wl lad and the preface to Henry I's coronation charter."
+   }
+  ]
+ }
+}

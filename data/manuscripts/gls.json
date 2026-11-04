@@ -1,0 +1,41 @@
+{
+ "id": "gls",
+ "order": 76,
+ "anchor": "gls",
+ "label": "gls",
+ "status": "posited",
+ "display": true,
+ "liebermann": {
+  "siglum": "gls",
+  "description_de": "Verlorene Vorlage von G und ls für Af-Ine und II. III Eg",
+  "shelfmark_as_given": "Posited by Liebermann: a common source of G and ls, inferred from the readings they share. No such manuscript survives.",
+  "date": "",
+  "laws": "Af, Ine, II Eg, III Eg",
+  "page": "xxvi",
+  "notes": "A common source of G and ls for Alfred–Ine and II–III Edgar, posited by Liebermann."
+ },
+ "wormald": [],
+ "others": [
+  {
+   "by": "Wormald",
+   "text": "Wormald (1999, p. 265) finds Liebermann’s account of the manuscripts of Alfred’s law-book too flawed to reproduce."
+  }
+ ],
+ "display_fields": {
+  "shelfmark": "Posited by Liebermann: a common source of G and ls, inferred from the readings they share. No such manuscript survives.",
+  "dates": [],
+  "laws": "Af, Ine, II Eg, III Eg",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxvi",
+    "text": "A common source of G and ls for Alfred–Ine and II–III Edgar, posited by Liebermann."
+   },
+   {
+    "by": "Wormald",
+    "text": "Wormald (1999, p. 265) finds Liebermann’s account of the manuscripts of Alfred’s law-book too flawed to reproduce."
+   }
+  ]
+ }
+}

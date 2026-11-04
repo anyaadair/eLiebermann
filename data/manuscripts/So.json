@@ -1,0 +1,83 @@
+{
+ "id": "So",
+ "order": 179,
+ "anchor": "So",
+ "label": "So",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "So",
+  "description_de": "Canterbury Cathedral library B 2 n. 8 (Papierheft mit William Somner's Abschrift)",
+  "shelfmark_as_given": "Canterbury, Cathedral Library, B 2 no. 8 (William Somner’s transcript, 17th century)",
+  "date": "17th century (Somner's hand)",
+  "laws": "Af, Ine, II As, II Eg, III Eg",
+  "page": "xl",
+  "notes": "A separately foliated paper booklet with William Somner's transcript of Anglo-Saxon laws, incomplete and misbound (after 1705 the Pseudo-Evangelium Nicodemi was bound behind it); it preserves Af to 38, Ine from 54, II As 1–15 and II Eg 4–III Eg 7,2, from an exemplar that did not have these gaps; the source is unnamed. For Eg it follows with Ld a common source ls (which with G follows another, gls, perhaps direct from the original), both posited by Liebermann; for II As it derives, against H B (Ld), from sq; for Af–Ine it follows ls and gls."
+ },
+ "wormald": [
+  {
+   "wormald_heading": "8 (v) The Lambarde problem",
+   "shelfmark": "Canterbury, MS Lit. B.2 (the 'Somner' transcript)",
+   "wormald_siglum": "",
+   "liebermann_siglum": "So",
+   "guide_anchor": "So",
+   "liebermann_date": "17th century (Somner's hand)",
+   "liebermann_page": "xl",
+   "wormald_date": "16th century (Nowell)",
+   "wormald_origin": "A Nowell transcript, later owned by William Somner in the 17th century; Nowell's authorship discovered by Carl Berkhout (p. 262 n. 380).",
+   "laws": "II–III Eg (p. 262); also among the Nowell transcripts behind Lambarde's Grately/Exeter and Alfred–Ine texts (p. 262), and contains Af 8 (p. 171 n. 38). Wormald does not list its contents in full (guide: Af, Ine, II As, II Eg, III Eg).",
+   "laws_liebermann": "Af, Ine, II As, II Eg, III Eg",
+   "other_contents": "",
+   "overview": "A transcript of Anglo-Saxon laws that Liebermann ascribed to the seventeenth-century antiquary William Somner, its later owner, and thought to depend on lost manuscripts. It is in fact Laurence Nowell's work: for Edgar an editorial version based on Nero A.i(A), close to but not the same as what Lambarde printed, and it is also one of the working copies behind Lambarde's texts of Æthelstan and Alfred–Ine. Its readings therefore carry no independent authority.",
+   "liebermann_superseded": "Liebermann (Gesetze I, p. xl) attributed this transcript to William Somner and thought it drew on one or more lost manuscripts; Wormald (p. 262 and n. 380, after Berkhout) shows it is a Nowell editorial exercise, for Edgar based on Nero A.i(A), with no independent textual authority (cf. p. 171 n. 38).",
+   "pages": "261–2 and p. 262 nn. 379–81; 171 n. 38",
+   "key_quote": "'It was in fact another Nowell editorial exercise, based on Nero A.i(A), and not what was printed by Lambarde' (p. 262)",
+   "doubts": "GUIDE: the guide's So entry should be corrected: the hand is Laurence Nowell's (16th century), not Somner's; Somner was its 17th-century owner. Guide gives 'B 2 no. 8'; Wormald 'MS Lit. B.2'. Wormald's 'based on Nero A.i(A)' is said of the Edgar text; the basis for its Af–Ine and II As is not stated. At p. 171 n. 38 Wormald notes that Liebermann used 'Somner's' text to support the Parker MS reading at Af 8, but holds that it has no textual authority.",
+   "guide_shelfmark": "Canterbury, Cathedral Library, B 2 no. 8 (William Somner’s transcript, 17th century)",
+   "in_guide": "yes",
+   "verify_notes": [
+    "pp. 261–2, n. 380 and p. 171 n. 38 checked.",
+    "shelfmark: Wormald does give it ('Canterbury, MS Lit. B.2', n. 380); set to his form and removed the drafting note saying he did not.",
+    "laws: the source of 'Af–Ine and II As' was over-specific; restated as Wormald gives it.",
+    "pages and doubts: duplicated drafting text cleaned.",
+    "overview: reworded to remove five-word runs shared with Wormald."
+   ],
+   "part": ""
+  }
+ ],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Canterbury, Cathedral Library, Lit. MS B.2 (Liebermann: B 2 no. 8): a transcript in Laurence Nowell’s hand, later owned by William Somner",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "17th century (Somner's hand)",
+    "ref": "Gesetze I, p. xl"
+   },
+   {
+    "by": "Wormald",
+    "text": "16th century, in Laurence Nowell’s hand",
+    "ref": "Wormald, MEL, p. 262 n. 380"
+   }
+  ],
+  "laws": "Af, Ine, II As, II Eg, III Eg",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xl",
+    "text": "A separately foliated paper booklet with William Somner's transcript of Anglo-Saxon laws, incomplete and misbound (after 1705 the Pseudo-Evangelium Nicodemi was bound behind it); it preserves Af to 38, Ine from 54, II As 1–15 and II Eg 4–III Eg 7,2, from an exemplar that did not have these gaps; the source is unnamed. For Eg it follows with Ld a common source ls (which with G follows another, gls, perhaps direct from the original), both posited by Liebermann; for II As it derives, against H B (Ld), from sq; for Af–Ine it follows ls and gls."
+   },
+   {
+    "by": "Wormald",
+    "ref": "Wormald, MEL, pp. 261–2 and p. 262 nn. 379–81",
+    "text": "A transcript of Anglo-Saxon laws that Liebermann ascribed to the seventeenth-century antiquary William Somner, its later owner, and thought to depend on lost manuscripts. It is in fact Laurence Nowell's work: for Edgar an editorial version based on Nero A.i(A), close to but not the same as what Lambarde printed, and it is also one of the working copies behind Lambarde's texts of Æthelstan and Alfred–Ine. Its readings therefore carry no independent authority."
+   },
+   {
+    "by": "Wormald",
+    "kind": "correction",
+    "text": "Liebermann (Gesetze I, p. xl) attributed this transcript to William Somner and thought it drew on one or more lost manuscripts; Wormald (p. 262 and n. 380, after Berkhout) shows it is a Nowell editorial exercise, for Edgar based on Nero A.i(A), with no independent textual authority (cf. p. 171 n. 38)."
+   }
+  ]
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "id": "Vd",
+ "order": 196,
+ "anchor": "Vd",
+ "label": "Vd",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Vd",
+  "description_de": "British Museum, Cotton Vespasian D XI",
+  "shelfmark_as_given": "London, British Library, Cotton MS Vespasian D.xi",
+  "date": "c. 1200",
+  "laws": "Excom",
+  "page": "xli",
+  "notes": "Contains Excommunicatio X (f. 108b)."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "London, British Library, Cotton MS Vespasian D.xi",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "c. 1200",
+    "ref": "Gesetze I, p. xli"
+   }
+  ],
+  "laws": "Excom",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xli",
+    "text": "Contains Excommunicatio X (f. 108b)."
+   }
+  ]
+ }
+}

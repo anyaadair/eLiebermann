@@ -1,0 +1,41 @@
+{
+ "id": "ls",
+ "order": 130,
+ "anchor": "ls",
+ "label": "ls",
+ "status": "posited",
+ "display": true,
+ "liebermann": {
+  "siglum": "ls",
+  "description_de": "Die Ld und So gemeinsame Vorlage",
+  "shelfmark_as_given": "Posited by Liebermann: a common source of Ld and So, inferred from the readings they share. No such manuscript survives.",
+  "date": "",
+  "laws": "Af, Ine, II Eg",
+  "page": "xxxiv",
+  "notes": "A common source of Ld and So for Alfred–Ine and II Edgar, posited by Liebermann and derived by him from gls."
+ },
+ "wormald": [],
+ "others": [
+  {
+   "by": "Editor",
+   "text": "On Lambarde’s sources, see l."
+  }
+ ],
+ "display_fields": {
+  "shelfmark": "Posited by Liebermann: a common source of Ld and So, inferred from the readings they share. No such manuscript survives.",
+  "dates": [],
+  "laws": "Af, Ine, II Eg",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxxiv",
+    "text": "A common source of Ld and So for Alfred–Ine and II Edgar, posited by Liebermann and derived by him from gls."
+   },
+   {
+    "by": "Editor",
+    "text": "On Lambarde’s sources, see l."
+   }
+  ]
+ }
+}

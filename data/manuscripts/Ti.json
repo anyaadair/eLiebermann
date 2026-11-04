@@ -1,0 +1,38 @@
+{
+ "id": "Ti",
+ "order": 189,
+ "anchor": "Ti",
+ "label": "Ti",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Ti",
+  "description_de": "British Museum Cotton Tiberius C I, f. 42–201",
+  "shelfmark_as_given": "London, British Library, Cotton MS Tiberius C.i, f. 42–201",
+  "date": "c. 1075",
+  "laws": "Excom",
+  "page": "xli",
+  "notes": "Pontifical for Salisbury (c. 1075), with an excommunication of 'Leo papa' (f. 197) followed by Excommunicatio I."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "London, British Library, Cotton MS Tiberius C.i, f. 42–201",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "c. 1075",
+    "ref": "Gesetze I, p. xli"
+   }
+  ],
+  "laws": "Excom",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xli",
+    "text": "Pontifical for Salisbury (c. 1075), with an excommunication of 'Leo papa' (f. 197) followed by Excommunicatio I."
+   }
+  ]
+ }
+}

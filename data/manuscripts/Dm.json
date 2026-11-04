@@ -1,0 +1,79 @@
+{
+ "id": "Dm",
+ "order": 57,
+ "anchor": "Dm",
+ "label": "Dm",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Dm",
+  "description_de": "British Museum Cotton Domitian VIII",
+  "shelfmark_as_given": "London, British Library, Cotton MS Domitian viii",
+  "date": "f. 95–110 c. 1140; f. 118 late 12th century",
+  "laws": "Quadr, I Cn, II Cn, Af, Ine, CHn cor",
+  "page": "xxiii",
+  "notes": "Leaves 95–110, two quires unconnected with the rest, contain the Quadripartitus (I–II Cnut from f. 97, Af–Ine from f. 107, breaking off at Af 2); this manuscript, its exemplar or a sister comes from Worcester. Unconnected f. 118 has CHn cor to c. 6,1."
+ },
+ "wormald": [
+  {
+   "wormald_heading": "6 (iii) Quadripartitus, MS 1",
+   "shelfmark": "London, British Library, Cotton MS Domitian viii, ff. 96r–110v",
+   "wormald_siglum": "Dm",
+   "liebermann_siglum": "Dm",
+   "guide_anchor": "Dm",
+   "liebermann_date": "f. 95–110 c. 1140; f. 118 late 12th century",
+   "liebermann_page": "xxiii",
+   "wormald_date": "s. xii^2/4 (p. 237)",
+   "wormald_origin": "?West Midlands origin (p. 237)",
+   "laws": "Quadripartitus: Dedicatio, Argumentum, I–II Cn, Af… (breaking off) (Table 4.7, p. 240)",
+   "laws_liebermann": "Quadr, I Cn, II Cn, Af, Ine, CHn cor",
+   "other_contents": "Only its first two quires survive; two-column layout (p. 254); scribes reproduce amendments (glosses, deletions) evidently from the archetype; alone preserves the 'Dedicatio'; adds rubrics for Alfred's Mosaic introduction (pp. 238–9, 242, 244).",
+   "overview": "The earliest surviving Quadripartitus manuscript, written in the second quarter of the twelfth century, perhaps in the West Midlands, and now reduced to two quires holding the prefaces, Cnut and the start of Alfred. Wormald rates it the most important copy despite its brevity, because its scribes reproduce amendments evidently taken from the archetype and because it alone keeps the first preface (the Dedicatio), which he uses to argue that all the versions are one author's work.",
+   "liebermann_superseded": "",
+   "pages": "237–9, 242–4; 240 (Table 4.7); 254; 243 n. 321; 244 n. 324",
+   "key_quote": "Dm (1), the earliest of the series, is also the most important despite lacking all but its first two quires. (p. 238)",
+   "doubts": "OCR read 'Domitian vii'; image confirms 'Domitian viii', matching guide. Wormald gives ff. 96r–110v; guide (Liebermann) ff. 95–110. In Wormald's order of recensions Dm is third (after London and R), though earliest copy (p. 243).",
+   "guide_shelfmark": "London, British Library, Cotton MS Domitian viii",
+   "in_guide": "yes",
+   "verify_notes": [
+    "Checked p. 237 (image: 'Domitian viii', s. xii²ᐟ⁴ confirmed), 238–9, 242–4, 254, Table 4.7 (image).",
+    "Overview: 'probably in the West Midlands' -> 'perhaps' (Wormald '?West Midlands'); 'copied the author's own alterations' -> amendments 'evidently from the archetype' (p. 238)."
+   ],
+   "part": ""
+  }
+ ],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "London, British Library, Cotton MS Domitian viii",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "f. 95–110 c. 1140; f. 118 late 12th century",
+    "ref": "Gesetze I, p. xxiii"
+   },
+   {
+    "by": "Wormald",
+    "text": "s. xii²ᐟ⁴",
+    "ref": "Wormald, MEL, p. 237"
+   }
+  ],
+  "laws": "Quadr, I Cn, II Cn, Af, Ine, CHn cor",
+  "laws_note": {
+   "by": "Wormald",
+   "text": "its Quadripartitus, now two quires, breaks off in Alfred’s laws.",
+   "ref": "Wormald, MEL, pp. 237, 240 (Table 4.7)"
+  },
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxiii",
+    "text": "Leaves 95–110, two quires unconnected with the rest, contain the Quadripartitus (I–II Cnut from f. 97, Af–Ine from f. 107, breaking off at Af 2); this manuscript, its exemplar or a sister comes from Worcester. Unconnected f. 118 has CHn cor to c. 6,1."
+   },
+   {
+    "by": "Wormald",
+    "ref": "Wormald, MEL, pp. 237–9, 242–4",
+    "text": "The earliest surviving Quadripartitus manuscript, written in the second quarter of the twelfth century, perhaps in the West Midlands, and now reduced to two quires holding the prefaces, Cnut and the start of Alfred. Wormald rates it the most important copy despite its brevity, because its scribes reproduce amendments evidently taken from the archetype and because it alone keeps the first preface (the Dedicatio), which he uses to argue that all the versions are one author's work."
+   }
+  ]
+ }
+}

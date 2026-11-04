@@ -1,0 +1,32 @@
+{
+ "id": "Douai",
+ "order": 60,
+ "anchor": "Douai",
+ "label": "Douai",
+ "status": "not seen by Liebermann",
+ "display": true,
+ "liebermann": {
+  "siglum": "Douai",
+  "description_de": "Douai",
+  "shelfmark_as_given": "Douai, Bibliothèque municipale (manuscript number not given)",
+  "date": "",
+  "laws": "Consuetudines Londoniarum amplificatae",
+  "page": "xxiii",
+  "notes": "Douai manuscript containing the Consuetudines Londoniarum amplificatae (printed at p. 673)."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Douai, Bibliothèque municipale (manuscript number not given)",
+  "dates": [],
+  "laws": "Consuetudines Londoniarum amplificatae",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxiii",
+    "text": "Douai manuscript containing the Consuetudines Londoniarum amplificatae (printed at p. 673)."
+   }
+  ]
+ }
+}

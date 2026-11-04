@@ -1,0 +1,38 @@
+{
+ "id": "Kn",
+ "order": 115,
+ "anchor": "Kn",
+ "label": "Kn",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Kn",
+  "description_de": "Chronicon Henrici Knighton Leicestrensis",
+  "shelfmark_as_given": "Henry Knighton, Chronicon",
+  "date": "to 1366",
+  "laws": "ECf retr",
+  "page": "xxxii",
+  "notes": "Henry Knighton's chronicle to 1366 uses ECf retr with rubricator II, to about c. 16."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "Henry Knighton, Chronicon",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "to 1366",
+    "ref": "Gesetze I, p. xxxii"
+   }
+  ],
+  "laws": "ECf retr",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxxii",
+    "text": "Henry Knighton's chronicle to 1366 uses ECf retr with rubricator II, to about c. 16."
+   }
+  ]
+ }
+}

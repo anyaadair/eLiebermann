@@ -1,0 +1,38 @@
+{
+ "id": "St",
+ "order": 184,
+ "anchor": "St",
+ "label": "St",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "St",
+  "description_de": "British Museum Stow 414",
+  "shelfmark_as_given": "London, British Library, Stowe MS 414",
+  "date": "late 16th century",
+  "laws": "Ps Cn for",
+  "page": "xl",
+  "notes": "Paper manuscript once owned by Francis Tate, with Pseudo-Cnut de foresta (f. 284); with Cii it goes back to cis, a common source posited by Liebermann."
+ },
+ "wormald": [],
+ "others": [],
+ "display_fields": {
+  "shelfmark": "London, British Library, Stowe MS 414",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "late 16th century",
+    "ref": "Gesetze I, p. xl"
+   }
+  ],
+  "laws": "Ps Cn for",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xl",
+    "text": "Paper manuscript once owned by Francis Tate, with Pseudo-Cnut de foresta (f. 284); with Cii it goes back to cis, a common source posited by Liebermann."
+   }
+  ]
+ }
+}

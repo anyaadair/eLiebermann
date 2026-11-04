@@ -1,0 +1,47 @@
+{
+ "id": "IpHunt",
+ "order": 104,
+ "anchor": "IpHunt",
+ "label": "Ip Hunt",
+ "status": "",
+ "display": true,
+ "liebermann": {
+  "siglum": "Ip Hunt",
+  "description_de": "Interpolator Henrici Huntendoniensis der Ausgabe von 1145",
+  "shelfmark_as_given": "The interpolator of Henry of Huntingdon’s Historia Anglorum (edition of 1145)",
+  "date": "c. 1150–1200",
+  "laws": "In Cn, Wl art, ECf retr",
+  "page": "xxxi",
+  "notes": "An interpolator of the 1145 edition of Henry of Huntingdon who, c. 1150–1200, inserted In Cn (to III 44, from dhu) into the history of Cnut; manuscripts Lb, sp (exemplar of S, Pl), Rc, Ct, Jo, Va, Pa, Sin. Perhaps the same person appended the Tripartita (Wl art, ECf retr) and the Genealogia Normannica to 1154."
+ },
+ "wormald": [],
+ "others": [
+  {
+   "by": "O’Brien",
+   "text": "O’Brien (2003): following Diana Greenway’s edition of Henry of Huntingdon (Oxford 1996), the Instituta was interpolated into the fifth edition, version B, of the Historia by c. 1190 (the hypearchetype was probably written in 1149). Its copies form several branches, not Liebermann’s single row: Lb (O’Brien’s La); S with Pl, Vincent 98 and Harley 785; Ba with Va; J (Jo) with T."
+  }
+ ],
+ "display_fields": {
+  "shelfmark": "The interpolator of Henry of Huntingdon’s Historia Anglorum (edition of 1145)",
+  "dates": [
+   {
+    "by": "Liebermann",
+    "text": "c. 1150–1200",
+    "ref": "Gesetze I, p. xxxi"
+   }
+  ],
+  "laws": "In Cn, Wl art, ECf retr",
+  "laws_note": null,
+  "notes": [
+   {
+    "by": "Liebermann",
+    "ref": "Gesetze I, p. xxxi",
+    "text": "An interpolator of the 1145 edition of Henry of Huntingdon who, c. 1150–1200, inserted In Cn (to III 44, from dhu) into the history of Cnut; manuscripts Lb, sp (exemplar of S, Pl), Rc, Ct, Jo, Va, Pa, Sin. Perhaps the same person appended the Tripartita (Wl art, ECf retr) and the Genealogia Normannica to 1154."
+   },
+   {
+    "by": "O’Brien",
+    "text": "O’Brien (2003): following Diana Greenway’s edition of Henry of Huntingdon (Oxford 1996), the Instituta was interpolated into the fifth edition, version B, of the Historia by c. 1190 (the hypearchetype was probably written in 1149). Its copies form several branches, not Liebermann’s single row: Lb (O’Brien’s La); S with Pl, Vincent 98 and Harley 785; Ba with Va; J (Jo) with T."
+   }
+  ]
+ }
+}
