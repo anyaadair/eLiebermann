@@ -104,7 +104,7 @@
                     <button type="button" class="kind-pill" data-show="lost" aria-pressed="false">Lost</button>
                     <button type="button" class="kind-pill" data-show="posited" aria-pressed="false" title="Manuscripts Liebermann infers from shared readings; none survives">Posited by Liebermann</button>
                 </div>
-                <label class="panel-check"><input type="checkbox" id="gp-open"> Show Liebermann’s description and notes for every manuscript</label>`
+                <label class="panel-check"><input type="checkbox" id="gp-open"> Show the notes on every manuscript</label>`
             : kind === 'law' ? `
                 <div class="sidebar-label">Details</div>
                 <label class="panel-check"><input type="checkbox" id="gp-open"> Show the manuscripts, editions and notes for every code</label>` : '';
@@ -271,7 +271,12 @@
     // Manuscripts: siglum, library and shelfmark, the dates (Liebermann's, Wormald's), the laws in it
     // (with Wormald's note where the contents differ); the notes, each with its author, folded away.
     // The data: data/manuscripts.json, built from one file a manuscript in data/manuscripts/.
-    const byLine = (x, cls) => `<p class="${cls || ''}"><span class="gl-by">${esc(x.by)}${x.kind === 'correction' ? ', correcting Liebermann' : ''}:</span> ${esc(x.text)}${x.ref ? ` <span class="gl-ref">(${esc(x.ref)})</span>` : ''}</p>`;
+    // Wormald's date marks (s. xiⁱⁿ, s. xiᵐᵉᵈ, s. xii³ᐟ⁴, s. xi¹) are kept in the data as Unicode
+    // superscript letters, which most fonts draw unevenly; on the page they are set as real superscripts.
+    const SUPS = { 'ᵐ': 'm', 'ᵉ': 'e', 'ᵈ': 'd', 'ⁱ': 'i', 'ⁿ': 'n', 'ˣ': 'x', '⁰': '0', '¹': '1', '²': '2', '³': '3', '⁴': '4', 'ᐟ': '/' };
+    const supFmt = h => h.replace(/[ᵐᵉᵈⁱⁿˣ⁰¹²³⁴ᐟ]+/g, m => `<sup class="gl-sup">${[...m].map(c => SUPS[c]).join('')}</sup>`);
+    const t = x => supFmt(esc(x));
+    const byLine = (x, cls) => `<p class="${cls || ''}"><span class="gl-by">${esc(x.by)}${x.kind === 'correction' ? ', correcting Liebermann' : ''}:</span> ${t(x.text)}${x.ref ? ` <span class="gl-ref">(${esc(x.ref)})</span>` : ''}</p>`;
     function drawMs(list) {
         const seen = new Set();
         return `<table class="glossary glossary--ms">
@@ -283,12 +288,12 @@
                 const tag = posited(r) ? '<span class="gl-tag">posited by Liebermann</span>' : lost(r) ? '<span class="gl-tag">lost</span>' : /^\[not seen/.test(r.Notes || '') ? '<span class="gl-tag">not seen by Liebermann</span>' : /^\[not in Liebermann/.test(r.Notes || '') ? '<span class="gl-tag">not in Liebermann</span>' : '';
                 const notes = r['Notes by'] ? r['Notes by'].map(n => byLine(n, n.kind === 'correction' ? 'gl-correction' : '')).join('')
                     : (String(r.Notes || '').replace(/^\[[^\]]*\]\s*/, '') ? `<p>${esc(String(r.Notes).replace(/^\[[^\]]*\]\s*/, ''))}</p>` : '');
-                const more = [r['German Expansion'] ? `<p><span class="gl-by">Liebermann’s description:</span> <span lang="de">${esc(r['German Expansion'])}</span></p>` : '', notes].join('');
-                const dates = r.Dates ? r.Dates.map(x => `<span class="gl-dateline"><span class="gl-by">${esc(x.by)}:</span> ${esc(x.text)}${x.ref ? ` <span class="gl-ref">(${esc(x.ref)})</span>` : ''}</span>`).join('') : esc(r['Date (Liebermann)'] || '');
-                const lawsNote = r['Laws note'] ? `<span class="gl-lawsnote"><span class="gl-by">${esc(r['Laws note'].by)}:</span> ${esc(r['Laws note'].text)}${r['Laws note'].ref ? ` <span class="gl-ref">(${esc(r['Laws note'].ref)})</span>` : ''}</span>` : '';
+                const more = [r['German Expansion'] ? `<p><span class="gl-by">Liebermann:</span> <span lang="de">${esc(r['German Expansion'])}</span></p>` : '', notes].join('');
+                const dates = r.Dates ? r.Dates.map(x => `<span class="gl-dateline"><span class="gl-by">${esc(x.by)}:</span> ${t(x.text)}${x.ref ? ` <span class="gl-ref">(${esc(x.ref)})</span>` : ''}</span>`).join('') : esc(r['Date (Liebermann)'] || '');
+                const lawsNote = r['Laws note'] ? `<span class="gl-lawsnote"><span class="gl-by">${esc(r['Laws note'].by)}:</span> ${t(r['Laws note'].text)}${r['Laws note'].ref ? ` <span class="gl-ref">(${esc(r['Laws note'].ref)})</span>` : ''}</span>` : '';
                 return `<tr${id}>
                     <td class="gl-term">${esc(r['Gesetze Text'])}</td>
-                    <td class="gl-en">${esc(r['English Translation'])}${tag}${more ? `<details class="gl-more"><summary>Description and notes</summary>${more}</details>` : ''}</td>
+                    <td class="gl-en">${t(r['English Translation'])}${tag}${more ? `<details class="gl-more"><summary>Description and notes</summary>${more}</details>` : ''}</td>
                     <td class="gl-date">${dates}</td>
                     <td class="gl-laws">${esc(r['Laws in it'] || '')}${lawsNote}</td>
                     <td class="num">${esc(r['Liebermann I, page'] || '')}</td>

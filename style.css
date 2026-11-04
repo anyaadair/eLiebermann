@@ -1429,3 +1429,4 @@ ruby.gloss-pair rt.gloss-word { font-size: 0.68em; line-height: 1.1; color: #4a4
 .clause-redirect p:last-child { margin-bottom: 0; }
 .clause-redirect__links { line-height: 1.8; }
 .code-clause-redirect { margin: 0.2rem 0 0; font-size: 0.9rem; }
+.gl-sup { font-size: 0.68em; line-height: 0; vertical-align: 0.5em; letter-spacing: 0.01em; }
