@@ -44,7 +44,16 @@ for d in files:
     }
     if d.get('link_automatically'): row['Link automatically'] = d['link_automatically']
     if d.get('link_to'): row['Link to'] = d['link_to']   # a siglum that is really listed elsewhere (Q: the List of Law Codes)
+    # one manuscript, several sigla (Liebermann's K1, K and Kb): the heading shown, and the old anchors kept
+    if d.get('display_label'): row['Label'] = d['display_label']
+    if d.get('also_anchors'): row['Also anchors'] = d['also_anchors']
+    if d.get('also'): row['Also'] = d['also']
     out.append({k: v for k, v in row.items() if v not in (None, [], '') or k in ('Anchor', 'Gesetze Text', 'English Translation', 'Notes')})
+    # each other siglum as a row of its own marked "Alias of", so that sigla link and pop up everywhere;
+    # the guide does not show these rows
+    for a in d.get('also', []):
+        out.append({'Anchor': d['anchor'], 'Gesetze Text': a, 'English Translation': D.get('shelfmark', ''), 'Notes': '', 'Alias of': d['label'],
+                     **({'Link automatically': d['link_automatically']} if d.get('link_automatically') else {})})
 with open('data/manuscripts.json', 'w', encoding='utf-8') as f:
     f.write('[\n' + ',\n'.join(json.dumps(r, ensure_ascii=False, separators=(',', ':')) for r in out) + '\n]\n')
 print(len(out), 'entries written to data/manuscripts.json from', len(files), 'files')

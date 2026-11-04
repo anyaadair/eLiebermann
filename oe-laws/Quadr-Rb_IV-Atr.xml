@@ -23,7 +23,7 @@
         <listWit>
           <witness xml:id="wit-lat" type="edited"><abbr>Quadr</abbr> <note type="manuscript">Quadripartitus, rubrics: Liebermann’s edited Latin text, from the manuscripts he names in Gesetze I, p. 529, note a, listed below</note></witness>
           <witness xml:id="wit-lond" type="source"><abbr>Lond</abbr> <note type="manuscript">The original of the London collection, Leges Anglorum Londoniis collectae (c. 1210), which survives in copies</note></witness>
-          <witness xml:id="wit-k" type="source"><abbr>K</abbr> <note type="manuscript">London, British Library, Cotton MS Claudius A.iii (K1); but for the Quadripartitus and the London texts Liebermann’s K means Cotton MS Claudius D.ii (K2)</note></witness>
+          <witness xml:id="wit-k" type="source" n="K2"><abbr>K</abbr> <note type="manuscript">London, British Library, Cotton MS Claudius D.ii (Liebermann’s K, also K2)</note></witness>
           <witness xml:id="wit-co" type="source"><abbr>Co</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 70</note></witness>
           <witness xml:id="wit-or" type="source"><abbr>Or</abbr> <note type="manuscript">Oxford, Oriel College, MS 46</note></witness>
           <witness xml:id="wit-dm" type="source"><abbr>Dm</abbr> <note type="manuscript">London, British Library, Cotton MS Domitian viii</note></witness>

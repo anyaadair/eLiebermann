@@ -45,7 +45,7 @@
  ],
  "others": [],
  "display_fields": {
-  "shelfmark": "London, British Library, Cotton MS Claudius A.iii (K)",
+  "shelfmark": "London, British Library, Cotton MS Claudius A.iii",
   "dates": [
    {
     "by": "Liebermann",
@@ -58,9 +58,13 @@
     "ref": "Wormald, MEL, pp. 164, 191"
    }
   ],
-  "laws": "Sacr cor, VI Atr",
+  "laws": "VI Atr, VI Atr Lat, Sacr cor",
   "laws_note": null,
   "notes": [
+   {
+    "by": "Editor",
+    "text": "Liebermann’s sigla (Gesetze I, p. xxxii): K1, which he usually calls simply K, for this MS (VI Æthelred, in Old English and Latin, and the coronation oath); Kb for ff. 17–27v, a later part of the same MS with a second text of the coronation oath. In the London texts (Quadripartitus, Leges Henrici, Henry I’s London charter) Liebermann’s K is a different MS, Cotton Claudius D.ii (K2, the next entry)."
+   },
    {
     "by": "Liebermann",
     "ref": "Gesetze I, p. xxxii",
@@ -72,5 +76,14 @@
     "text": "A volume put together by Cotton from three pontificals, the oldest of which ('Claudius I', c. 1000) begins with the only surviving copies of VI Æthelred, in Latin and in a loose Old English version, entered before the benedictional proper. Wulfstan's own hand supplied the names of the king and of himself as archbishop of York in the Latin conclusion, which states that he wrote the decrees down; the codicology suggests the Old English text and that conclusion were added on inserted leaves. Wormald doubts the usual attribution to York: the MS was an outdated, lavishly decorated pontifical, perhaps adorned for Wulfstan when bishop of London, and its use as a home for laws shows respect for written law rather than a need to consult it."
    }
   ]
- }
+ },
+ "display_label": "K1 (or K), with Kb",
+ "also": [
+  "K",
+  "Kb"
+ ],
+ "also_anchors": [
+  "K",
+  "Kb"
+ ]
 }

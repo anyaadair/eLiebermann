@@ -119,6 +119,8 @@
             .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
             .then(rows => {
                 // the manuscripts' dates and laws note are searchable too ("Everything")
+                // a manuscript's other sigla (K and Kb for K1) are rows of their own for the links: not shown here
+                if (kind === 'ms') rows = rows.filter(r => !r['Alias of']);
                 if (kind === 'ms') rows.forEach(r => { r['Search extra'] = (r.Dates || []).map(x => x.by + ' ' + x.text).concat(r['Laws note'] ? [r['Laws note'].text] : []).join(' '); });
                 // rows with the same Anchor together, in the order of the file (the manuscripts'
                 // two lost "il" stay apart: each is its own manuscript)
@@ -149,7 +151,7 @@
                 if (location.hash) {
                     const anchor = decodeURIComponent(location.hash.slice(1));
                     const el = document.getElementById(anchor);
-                    if (el) { el.scrollIntoView(); el.classList.add('is-target'); } else forward(anchor);
+                    if (el) { el.scrollIntoView(); (el.closest('tr') || el).classList.add('is-target'); } else forward(anchor);
                 }
             })
             .catch(() => { container.innerHTML = '<p class="notice error">The list could not be loaded.</p>'; });
@@ -207,7 +209,7 @@
         if (!q) return true;
         if (state.where === 'start') {
             const s = squash(q);
-            return squash(r[K.field]).startsWith(s) || (kind === 'works' && squash(r['Gesetze Text']).startsWith(s));
+            return squash(r[K.field]).startsWith(s) || (kind === 'works' && squash(r['Gesetze Text']).startsWith(s)) || (r.Also || []).some(a => squash(a).startsWith(s));
         }
         const words = fold(q).split(/\s+/).filter(Boolean);
         const text = fold(K.fields.map(f => r[f] || '').join(' '));
@@ -285,14 +287,14 @@
             <tbody>${withLetters(list, 5, g => g.rows.map(r => {
                 const id = seen.has(g.anchor) ? '' : ` id="${esc(g.anchor)}"`;
                 seen.add(g.anchor);
-                const tag = posited(r) ? '<span class="gl-tag">posited by Liebermann</span>' : lost(r) ? '<span class="gl-tag">lost</span>' : /^\[not seen/.test(r.Notes || '') ? '<span class="gl-tag">not seen by Liebermann</span>' : /^\[not in Liebermann/.test(r.Notes || '') ? '<span class="gl-tag">not in Liebermann</span>' : '';
+                const tag = posited(r) ? '<span class="gl-tag">posited by Liebermann</span>' : lost(r) ? '<span class="gl-tag">lost</span>' : /^\[not seen/.test(r.Notes || '') ? '<span class="gl-tag">not seen by Liebermann</span>' : /^\[not in Liebermann/.test(r.Notes || '') ? '<span class="gl-tag gl-tag--new" title="Known from later scholarship (Wormald), not from Liebermann">not in Liebermann</span>' : '';
                 const notes = r['Notes by'] ? r['Notes by'].map(n => byLine(n, n.kind === 'correction' ? 'gl-correction' : '')).join('')
                     : (String(r.Notes || '').replace(/^\[[^\]]*\]\s*/, '') ? `<p>${esc(String(r.Notes).replace(/^\[[^\]]*\]\s*/, ''))}</p>` : '');
                 const more = [r['German Expansion'] ? `<p><span class="gl-by">Liebermann:</span> <span lang="de">${esc(r['German Expansion'])}</span></p>` : '', notes].join('');
                 const dates = r.Dates ? r.Dates.map(x => `<span class="gl-dateline"><span class="gl-by">${esc(x.by)}:</span> ${t(x.text)}${x.ref ? ` <span class="gl-ref">(${esc(x.ref)})</span>` : ''}</span>`).join('') : esc(r['Date (Liebermann)'] || '');
                 const lawsNote = r['Laws note'] ? `<span class="gl-lawsnote"><span class="gl-by">${esc(r['Laws note'].by)}:</span> ${t(r['Laws note'].text)}${r['Laws note'].ref ? ` <span class="gl-ref">(${esc(r['Laws note'].ref)})</span>` : ''}</span>` : '';
                 return `<tr${id}>
-                    <td class="gl-term">${esc(r['Gesetze Text'])}</td>
+                    <td class="gl-term">${(r['Also anchors'] || []).map(a => `<span id="${esc(a)}" class="gl-alias-anchor"></span>`).join('')}${esc(r.Label || r['Gesetze Text'])}</td>
                     <td class="gl-en">${t(r['English Translation'])}${r['Link to'] ? ` <a class="gl-linkto" href="${esc(r['Link to'])}">See the List of Law Codes</a>` : ''}${tag}${more ? `<details class="gl-more"><summary>Description and notes</summary>${more}</details>` : ''}</td>
                     <td class="gl-date">${dates}</td>
                     <td class="gl-laws">${esc(r['Laws in it'] || '')}${lawsNote}</td>

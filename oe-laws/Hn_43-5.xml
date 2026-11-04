@@ -29,7 +29,7 @@
           <witness xml:id="wit-sc" type="source"><abbr>Sc</abbr> <note type="manuscript">London, The National Archives (formerly the Public Record Office), E 164/2 (the Red Book of the Exchequer)</note></witness>
           <witness xml:id="wit-hg" type="source"><abbr>Hg</abbr> <note type="manuscript">London, British Library, Hargrave MS 313</note></witness>
           <witness xml:id="wit-lond" type="source"><abbr>Lond</abbr> <note type="manuscript">The original of the London collection, Leges Anglorum Londoniis collectae (c. 1210), which survives in copies</note></witness>
-          <witness xml:id="wit-k" type="source"><abbr>K</abbr> <note type="manuscript">London, British Library, Cotton MS Claudius A.iii (K1); but for the Quadripartitus and the London texts Liebermann’s K means Cotton MS Claudius D.ii (K2)</note></witness>
+          <witness xml:id="wit-k" type="source" n="K2"><abbr>K</abbr> <note type="manuscript">London, British Library, Cotton MS Claudius D.ii (Liebermann’s K, also K2)</note></witness>
           <witness xml:id="wit-co" type="source"><abbr>Co</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 70</note></witness>
           <witness xml:id="wit-or" type="source"><abbr>Or</abbr> <note type="manuscript">Oxford, Oriel College, MS 46</note></witness>
           <witness xml:id="wit-sl" type="source"><abbr>Sl</abbr> <note type="manuscript">John Selden’s manuscript, now lost (known from Twysden’s variants)</note></witness>
