@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-06">Links to Bosworth–Toller (39575) and the Dictionary of Old English (E04300) added (suggestion #49, Anya Adair).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,8 @@
           <orth>bearmteage</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">bearmteage</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref></hi>, <hi rend="italic">Hefenkiste</hi> <ref type="lawCode" target="law:Ger">Ger</ref> 17</dictScrap>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/39575">bearm-teág</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E04300">bearmteage</ref></xr>
         <xr type="lawCode"><ref target="clause:Ger_17">Ger 17</ref></xr>
       </entry>
     </body>

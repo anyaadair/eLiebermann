@@ -34,11 +34,10 @@
           <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
         </listBibl>
         <listWit>
-          <witness xml:id="wit-b1" rend="bold"><abbr>B1</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383, pp. 83–4 (Liebermann’s B, the second copy in the MS)</note></witness>
-          <witness xml:id="wit-b2"><abbr>B2</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383, p. 6 (Liebermann’s B 2, the first copy in the MS)</note></witness>
+          <witness xml:id="wit-b" rend="bold"><abbr>B</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383, pp. 83–4 (Liebermann’s B). The MS has the treaty twice, both copies in one hand of about 1125 (Liebermann); he prints the copy at p. 6 beside this one as B2</note></witness>
+          <witness xml:id="wit-b2"><abbr>B2</abbr> <note type="manuscript">The other copy of the treaty in the same MS, B: Cambridge, Corpus Christi College, MS 383, p. 6 (Liebermann’s B 2)</note></witness>
           <witness xml:id="wit-q"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note> <note type="sigla">Lond; K; Co; Or; Dm; T; R; M; Hk; Br</note></witness>
           <witness xml:id="wit-ld"><abbr>Ld</abbr> <note type="manuscript">William Lambarde, Archaionomia (London, 1568), printed largely from Laurence Nowell’s 16th-century transcripts (Liebermann thought from manuscripts now lost)</note></witness>
-          <witness xml:id="wit-b"><abbr>B</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383</note></witness>
         </listWit>
       </sourceDesc>
     </fileDesc>
@@ -71,10 +70,10 @@
         <head><ref type="lawCode" target="law:AGu">AGu</ref> 4</head>
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="4" corresp="#wit-b"><ptr type="liebermannNote" n="*" target="#AGu_4.lnote.oe.star"/><pb n="128" ed="#liebermann"/>⁊ þ<hi rend="italic">æt<ptr type="liebermannNote" n="1" target="#AGu_4.lnote.oe.1"/></hi> ælc man wite his getyman be mannu<hi rend="italic">m</hi> ⁊ be horsum ⁊ be oxum.</ab>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="4" corresp="#wit-q"><pb n="129" ed="#liebermann"/>Et omnis<ptr type="liebermannNote" n="1" target="#AGu_4.lnote.oe.1-2"/> homo sciat aduocatum suum de hominibus et<ptr type="liebermannNote" n="2" target="#AGu_4.lnote.oe.2"/> de equis et de<ptr type="liebermannNote" n="2" target="#AGu_4.lnote.oe.2"/> bobus.<ptr type="liebermannNote" n="3" target="#AGu_4.lnote.oe.3"/></ab>
-        <ab type="editionText" xml:lang="ang" source="#attenborough" n="4" corresp="#wit-b1"><pb n="100" ed="#attenborough"/>[Be getymum.]<ptr type="editorNote" n="1" target="#AGu_4.attnote.fn.1"/> ⁊ ðæt ælc man wite his getyman be mannum ⁊ be horsum ⁊ be oxum.</ab>
+        <ab type="editionText" xml:lang="ang" source="#attenborough" n="4" corresp="#wit-b"><pb n="100" ed="#attenborough"/>[Be getymum.]<ptr type="editorNote" n="1" target="#AGu_4.attnote.fn.1"/> ⁊ ðæt ælc man wite his getyman be mannum ⁊ be horsum ⁊ be oxum.</ab>
         <ab type="translation" xml:lang="de" source="#liebermann"><pb n="129" ed="#liebermann"/>(Über Gewährsmänner. <hi rend="italic">Ld</hi>) Und<ptr type="liebermannNote" n="1" target="#AGu_4.lnote.de.1"/> dass jedermann seinen Gewährsmann kenne<ptr type="liebermannNote" n="2" target="#AGu_4.lnote.de.2"/> bei [Erwerb von] Sklaven und Pferden und Ochsen.</ab>
         <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">(Of warrantors. Ld) And that everyone should know his warrantor in [acquiring] slaves and horses and oxen.</ab>
-        <ab type="translation" xml:lang="en" source="#attenborough" corresp="#wit-b1"><pb n="101" ed="#attenborough"/>Every man shall have knowledge of his warrantor when he buys slaves, or horses, or oxen.</ab>
+        <ab type="translation" xml:lang="en" source="#attenborough" corresp="#wit-b"><pb n="101" ed="#attenborough"/>Every man shall have knowledge of his warrantor when he buys slaves, or horses, or oxen.</ab>
         <ab type="translation" xml:lang="en" source="#whitelock" corresp="#wit-b"><pb n="418" ed="#whitelock"/>And that each man is to know his warrantor at [the purchase of] men or horses or oxen.</ab>
         <note type="comparedBy" source="#liebermann"><ref target="clause:IEw_1">I Ew 1</ref></note>
         <note type="comparison" source="#wormald-mel" n="286"><label>resembles</label> <ref target="clause:IEw_1">I Ew 1–1.5</ref> <quote>They also resembled what tenth-century kings became inclined to say about transactions in movable goods, above all cattle (n. 104)</quote></note>

@@ -28,6 +28,7 @@
       <change when="2026-10-17">Marked as a spelling entry.</change>
       <change when="2026-10-19">“Praefix” linked to the abbreviations list (printed bold italic, missed before).</change>
       <change when="2026-11-01">Editor’s note on “ongiman” (suggestion #20).</change>
+      <change when="2026-11-06">Editor’s note on “ongiman” shortened (suggestion #48).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -45,7 +46,7 @@
           <sense n="4"><hi rend="italic"><ref type="abbreviation" target="gram:fur"><abbr>für</abbr></ref></hi> (<hi rend="italic"><ref type="abbreviation" target="gram:älteren"><abbr>ält.</abbr></ref></hi>) on- <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:on-butan">onbutan</ref>, <ref type="entry" target="entry:onbyrigan">onbyrigan</ref>, <ref type="entry" target="entry:onfindan">onfindan</ref>, <ref type="entry" target="entry:onfon">onfon</ref>, ongiman<ptr type="editorNote" target="#edn-1"/>, <ref type="entry" target="entry:onginnan">onginnan</ref>, <ref type="entry" target="entry:hand">hand</ref>, <ref type="entry" target="entry:onlaenan">onlænan</ref>, <ref type="entry" target="entry:ariht">ariht</ref>, <ref type="entry" target="entry:onweg">onweg</ref>, <ref type="entry" target="entry:onwendad">onwendan</ref>, <ref type="entry" target="entry:awoh">awoh</ref></sense>
           <sense n="5"><hi rend="italic"><ref type="abbreviation" target="gram:fur"><abbr>für</abbr></ref></hi> oð- <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:odcwolen">oðcwolen</ref>, ut <ref type="entry" target="entry:odberstan">oðberstan</ref> <hi rend="bold">IV</hi>) <hi rend="italic"><ref type="abbreviation" target="gram:dafurAbweichend"><abbr>dafür abweichend</abbr></ref></hi> <ref type="entry" target="entry:for-4">for-</ref>, <ref type="entry" target="entry:ge-3">ge-</ref>, <ref type="entry" target="entry:of-2">of-</ref> <hi rend="italic"><ref type="abbreviation" target="gram:sieheDort"><abbr>s. d.</abbr></ref></hi></sense>
         </dictScrap>
-        <note type="editorial" xml:id="edn-1">“ongiman” appears to be a misprint or error for <hi rend="italic">onginnan</hi>, which follows it; there is no such word as <hi rend="italic">ongiman</hi>.</note>
+        <note type="editorial" xml:id="edn-1">“ongiman” appears to be a misprint or error for <hi rend="italic">onginnan</hi>, which follows it.</note>
         <xr type="see"><ref target="entry:abide">abide</ref></xr>
         <xr type="see"><ref target="entry:aliesan">aliesan</ref></xr>
         <xr type="see"><ref target="entry:araeran">aræran</ref></xr>
