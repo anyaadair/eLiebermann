@@ -38,6 +38,7 @@
       <change when="2026-10-28">“verschr.” linked to the abbreviations list.</change>
       <change when="2026-10-28">Editor’s note on how Liebermann lays out the forms of se (Anya Adair).</change>
       <change when="2026-11-01">Grammatical terms (Sing., Pers., Kl., north, altes …) linked to the terms list.</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -86,7 +87,7 @@
         <xr type="lawCode"><ref target="clause:EGu_3">EGu 3</ref></xr>
         <xr type="lawCode"><ref target="clause:EGu_3-2">EGu 3,2</ref></xr>
         <xr type="lawCode"><ref target="clause:EGu_6-7">EGu 6,7</ref></xr>
-        <xr type="lawCode"><ref target="clause:IEw_1">I Ew 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IEw_1-1">I Ew 1</ref></xr>
         <xr type="lawCode"><ref target="clause:IEw_1-2">I Ew 1,2</ref></xr>
         <xr type="lawCode"><ref target="clause:IIEw_7">II Ew 7</ref></xr>
         <xr type="lawCode"><ref target="clause:IAs_Prol">I As Pro</ref></xr>
@@ -104,7 +105,7 @@
         <xr type="lawCode"><ref target="clause:Ine_Ine-Prol">Ine Pro</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_34-1">Ine 34,1</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_1">Ine 1</ref></xr>
-        <xr type="lawCode"><ref target="clause:Ine_53">Ine 53</ref></xr>
+        <xr type="lawCode"><ref target="clause:Ine_53-1">Ine 53</ref></xr>
         <xr type="lawCode"><ref target="clause:Abt_56">Abt 56</ref></xr>
         <xr type="lawCode"><ref target="clause:Abt_82">Abt 82</ref></xr>
         <xr type="lawCode"><ref target="clause:Hl_5">Hl 5</ref></xr>
@@ -119,7 +120,7 @@
         <xr type="lawCode"><ref target="clause:IEw_1-4">I Ew 1,4</ref></xr>
         <xr type="lawCode"><ref target="clause:AsAlm_2">As Alm 2</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_25-1">II Cn 25,1</ref></xr>
-        <xr type="lawCode"><ref target="clause:IICn_8">II Cn 8</ref></xr>
+        <xr type="lawCode"><ref target="clause:IICn_8-1">II Cn 8</ref></xr>
         <xr type="lawCode"><ref target="clause:Hl_13">Hl 13</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_1-6">Af 1,6</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_47-1">Af 47,1</ref></xr>
@@ -133,7 +134,7 @@
         <xr type="lawCode"><ref target="clause:Ine_10">Ine 10</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_22">Ine 22</ref></xr>
         <xr type="lawCode"><ref target="clause:AGu_5">AGu 5</ref></xr>
-        <xr type="lawCode"><ref target="clause:EGu_4">EGu 4</ref></xr>
+        <xr type="lawCode"><ref target="clause:EGu_4-2">EGu 4</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_23-2">Ine 23,2</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_75">II Cn 75</ref></xr>
         <xr type="lawCode"><ref target="clause:Blas_3">Blas 3</ref></xr>
@@ -163,7 +164,7 @@
         <xr type="lawCode"><ref target="clause:Rubrics-Af_15">Af Rb 15</ref></xr>
         <xr type="lawCode"><ref target="clause:IIEw_6">II Ew 6</ref></xr>
         <xr type="lawCode"><ref target="clause:IIAs_11">II As 11</ref></xr>
-        <xr type="lawCode"><ref target="clause:IIAs_20">II As 20</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIAs_20-3">II As 20</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_8-2">Af 8,2</ref></xr>
         <xr type="lawCode"><ref target="clause:IEw_2">I Ew 2</ref></xr>
         <xr type="lawCode"><ref target="clause:Abt_11">Abt 11</ref></xr>
@@ -202,7 +203,7 @@
         <xr type="lawCode"><ref target="clause:Wi_Prolog-to-3">Wi Pro 2</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_76-1a">II Cn 76,1a</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_8-1">II Cn 8,1</ref></xr>
-        <xr type="lawCode"><ref target="clause:IICn_36">II Cn 36</ref></xr>
+        <xr type="lawCode"><ref target="clause:IICn_36-1">II Cn 36</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_El-to-29">Af El 29</ref></xr>
         <xr type="lawCode"><ref target="clause:Abt_72">Abt 72</ref></xr>
         <xr type="lawCode"><ref target="clause:Abt_75">Abt 75</ref></xr>
@@ -230,7 +231,7 @@
         <xr type="lawCode"><ref target="clause:Hl_6">Hl 6</ref></xr>
         <xr type="lawCode"><ref target="clause:Hl_16-2">Hl 16,2</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_39">Af 39</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiIV_4">Iud Dei IV 4</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiIV_4-3">Iud Dei IV 4</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_74">Af 74</ref></xr>
         <xr type="lawCode"><ref target="clause:ICn_19-2">I Cn 19,2</ref></xr>
         <xr type="lawCode"><ref target="clause:Ger_8">Ger 8</ref></xr>
@@ -240,7 +241,7 @@
         <xr type="lawCode"><ref target="clause:Ine_76-3">Ine 76,3</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_El-to-24">Af El 24</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAtr_36">VI Atr 36</ref></xr>
-        <xr type="lawCode"><ref target="clause:IIEg_3">II Eg 3</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIEg_3-1">II Eg 3</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_El-to-20">Af El 20</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_17">Ine 17</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAs_8-9">VI As 8,9</ref></xr>
@@ -301,7 +302,7 @@
         <xr type="lawCode"><ref target="clause:IEw_3">I Ew 3</ref></xr>
         <xr type="lawCode"><ref target="clause:IAs_Prol">I As Pro 1</ref></xr>
         <xr type="lawCode"><ref target="clause:Grith_4">Grið 4</ref></xr>
-        <xr type="lawCode"><ref target="clause:IICn_56">II Cn 56</ref></xr>
+        <xr type="lawCode"><ref target="clause:IICn_56-1">II Cn 56</ref></xr>
         <xr type="lawCode"><ref target="clause:IIEw_4">II Ew 4</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_El-to-49">Af El 49</ref></xr>
         <xr type="lawCode"><ref target="clause:IAs_Prol">I As Pro 3</ref></xr>

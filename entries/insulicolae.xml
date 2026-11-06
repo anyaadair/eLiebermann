@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
+      <change when="2026-11-06">“Wl art Lond retr” (the London text of Wl art retr) made one code reference, and its citations linked (tools/link-wl-art-lond-retr.py).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,8 +36,8 @@
         <form type="lemma">
           <orth>insulicolae</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">insulicolae</hi> <hi rend="italic">die Bewohner der Britannien umgebenden Inseln, ohne Irland, besonders das Volk auf Wight, Man, Hebriden, Orkney</hi> <ref type="lawCode" target="law:WlArt">Wl art</ref> <ref type="lawCode" target="law:Lond">Lond</ref> <ref type="lawCode" target="law:retr">retr</ref> 1. <ref type="lawCode" target="law:Lond">Lond</ref> <ref type="lawCode" target="law:ECf">ECf</ref> 32 B 7</dictScrap>
-        <xr type="lawCode"><ref target="law:Lond">Lond retr 1</ref></xr>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">insulicolae</hi> <hi rend="italic">die Bewohner der Britannien umgebenden Inseln, ohne Irland, besonders das Volk auf Wight, Man, Hebriden, Orkney</hi> <ref type="lawCode" target="law:WlArtRetr">Wl art Lond retr</ref> 1. <ref type="lawCode" target="law:Lond">Lond</ref> <ref type="lawCode" target="law:ECf">ECf</ref> 32 B 7</dictScrap>
+        <xr type="lawCode"><ref target="clause:WlArtRetr_1">Wl art Lond retr 1</ref></xr>
         <xr type="lawCode"><ref target="clause:ECf_32-B-7">ECf 32 B 7</ref></xr>
       </entry>
     </body>

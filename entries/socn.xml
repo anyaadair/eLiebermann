@@ -32,6 +32,7 @@
       <change when="2026-10-17">“In Cn” and “In” (Instituta Cnuti) linked to the law codes list.</change>
       <change when="2026-10-19">“Fz” linked to the abbreviations list.</change>
       <change when="2026-10-28">“von” unlinked from the abbreviations list: here it is ordinary German, not an abbreviation (Anya Adair).</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -65,15 +66,15 @@
         <xr type="lawCode"><ref target="clause:IICn_37">II Cn 37</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_63">II Cn 63a</ref></xr>
         <xr type="lawCode"><ref target="clause:HnLond_6">Hn Lond 6</ref></xr>
-        <xr type="lawCode"><ref target="clause:LibLond_4">Lib Lond 4</ref></xr>
+        <xr type="lawCode"><ref target="clause:LibLond_4-1">Lib Lond 4</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_30-6">In Cn II 30,6</ref></xr>
         <xr type="lawCode"><ref target="clause:ECf_22">ECf 22</ref></xr>
         <xr type="lawCode"><ref target="clause:LeisWl_2-3">Leis Wl 2,3</ref></xr>
-        <xr type="lawCode"><ref target="clause:LeisWl_27">Leis Wl 27</ref></xr>
+        <xr type="lawCode"><ref target="clause:LeisWl_27-1">Leis Wl 27</ref></xr>
         <xr type="lawCode"><ref target="clause:LeisWl_27-1">Leis Wl 27,1</ref></xr>
         <xr type="lawCode"><ref target="clause:Hn_14-4">Hn 14,4</ref></xr>
         <xr type="lawCode"><ref target="clause:Hn_19-2">Hn 19,2</ref></xr>
-        <xr type="lawCode"><ref target="clause:Hn_63">Hn 63</ref></xr>
+        <xr type="lawCode"><ref target="clause:Hn_63-1">Hn 63</ref></xr>
         <xr type="lawCode"><ref target="clause:Hn_10-2">Hn 10,2</ref></xr>
         <xr type="lawCode"><ref target="clause:Hn_20-3">Hn 20,3</ref></xr>
         <xr type="lawCode"><ref target="clause:Hn_80-2">Hn 80,2</ref></xr>

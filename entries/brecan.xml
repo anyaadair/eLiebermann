@@ -28,6 +28,7 @@
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
       <change when="2026-11-02">Link to the Dictionary of Old English added (E03937; guessed from the DOE headword list, same spelling; not yet checked).</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -56,7 +57,7 @@
         <xr type="lawCode"><ref target="clause:Af_3">Af 3</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_42-1">Ine 42,1</ref></xr>
         <xr type="lawCode"><ref target="clause:IIEw_5">II Ew 5</ref></xr>
-        <xr type="lawCode"><ref target="clause:Hu_7">Hu 7</ref></xr>
+        <xr type="lawCode"><ref target="clause:Hu_7-1">Hu 7</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_58-1">II Cn 58,1</ref></xr>
         <xr type="lawCode"><ref target="clause:Northu_57">Northu 57</ref></xr>
         <xr type="lawCode"><ref target="clause:Abt_36">Abt 36</ref></xr>

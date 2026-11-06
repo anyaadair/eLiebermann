@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-13">Page corrected from 195 to 196 (the page turns inside senz), as in the team transcription (sadelican - singan.docx).</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,7 +37,7 @@
           <orth>Seraphin</orth>
         </form>
         <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">Seraphin</hi> <ref type="lawCode" target="law:IudDeiI">Iud Dei I</ref> 21. <ref type="lawCode" target="law:IudDeiV">V</ref> 2. <ref type="lawCode" target="law:IudDeiVII">VII</ref> 23,1 <ref type="lawCode" target="law:MsA">A</ref>. <ref type="lawCode" target="law:IudDeiXIII">XIII</ref> 12,2. 13,2. <ref type="lawCode" target="law:ExcomVI">Excom VI</ref> 1,2. <ref type="lawCode" target="law:ExcomVIII">VIII</ref> 1</dictScrap>
-        <xr type="lawCode"><ref target="clause:IudDeiI_21">Iud Dei I 21</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiI_21-6">Iud Dei I 21</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiV_2">Iud Dei V 2</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiVII_23-1">Iud Dei VII 23,1</ref></xr>
         <xr type="lawCode"><ref target="clause:ExcomVI_1-2">Excom VI 1,2</ref></xr>

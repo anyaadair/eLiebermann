@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -39,7 +40,7 @@
           <sense n="1">gebann <ref type="lawCode" target="law:Rect">Rect</ref> 1</sense>
           <sense n="2">gebodu <ref type="lawCode" target="law:VIAs">VI As</ref> 4</sense>
         </dictScrap>
-        <xr type="lawCode"><ref target="clause:Rect_1">Rect 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:Rect_1-1">Rect 1</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAs_4">VI As 4</ref></xr>
       </entry>
     </body>

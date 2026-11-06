@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-06">“Wl art Lond retr” (the London text of Wl art retr) made one code reference, and its citations linked (tools/link-wl-art-lond-retr.py).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -34,8 +35,8 @@
         <form type="lemma">
           <orth>Albania</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">Albania</hi> <hi rend="italic">Schottland</hi> 11./12. <hi rend="italic"><ref type="abbreviation" target="gram:Jahrhundert"><abbr>Jhs</abbr></ref>.</hi> <ref type="lawCode" target="law:WlArt">Wl art</ref> <ref type="lawCode" target="law:Lond">Lond</ref> <ref type="lawCode" target="law:retr">retr</ref> 1. <ref type="lawCode" target="law:Lond">Lond</ref> <ref type="lawCode" target="law:ECf">ECf</ref> 35,1 A 2 | <hi rend="bold">~nicus</hi> <hi rend="italic">Schotte</hi> 32 <ref type="lawCode" target="law:B">B</ref> 7</dictScrap>
-        <xr type="lawCode"><ref target="law:Lond">Lond retr 1</ref></xr>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">Albania</hi> <hi rend="italic">Schottland</hi> 11./12. <hi rend="italic"><ref type="abbreviation" target="gram:Jahrhundert"><abbr>Jhs</abbr></ref>.</hi> <ref type="lawCode" target="law:WlArtRetr">Wl art Lond retr</ref> 1. <ref type="lawCode" target="law:Lond">Lond</ref> <ref type="lawCode" target="law:ECf">ECf</ref> 35,1 A 2 | <hi rend="bold">~nicus</hi> <hi rend="italic">Schotte</hi> 32 <ref type="lawCode" target="law:B">B</ref> 7</dictScrap>
+        <xr type="lawCode"><ref target="clause:WlArtRetr_1">Wl art Lond retr 1</ref></xr>
         <xr type="lawCode"><ref target="clause:ECf_35-1-A-2">ECf 35,1 A 2</ref></xr>
         <xr type="lawCode"><ref target="clause:ECf_32">ECf 32</ref></xr>
       </entry>

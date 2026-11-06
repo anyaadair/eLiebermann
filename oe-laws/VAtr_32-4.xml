@@ -63,13 +63,13 @@
       <change when="2026-10" type="checked">Liebermann’s text checked and corrected against <title>Die Gesetze der Angelsachsen</title> I, p. 244.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS D added from Gesetze I, p. 244.</change>
       <change when="2026-10" type="checked">The modern editor’s text corrected against Robertson, p. 88: “[D only]” → “∅”.</change>
+      <change when="2026-11-06">A duplicate of Liebermann’s text (the same words without his italics or notes) removed.</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="32.4">
         <head><ref type="lawCode" target="law:VAtr">V Atr</ref> 32.4</head>
-        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="32.4" corresp="#wit-d"><pb n="244" ed="#liebermann"/>⁊ be norðan stod seo unlagu, þæt man moste banweorc on unsacne secgan; ⁊ þæt scolde standan, gif hit wurde swa gecyðed ydæges sona.</ab>
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="32.4" corresp="#wit-d"><pb n="244" ed="#liebermann"/>⁊ be norðan stod seo unlagu, þ<hi rend="italic">æt</hi> man moste banweorc on unsacne secgan; ⁊ þ<hi rend="italic">æt</hi> scolde standan, gif hit wurde swa gecyðed ydæges sona.</ab>
         <ab type="editionText" xml:lang="ang" source="#robertson" n="32.4" corresp="#wit-d"><pb n="88" ed="#robertson"/>⁊ be norðan stod seo unlagu, þæt man moste banweorc on unsacne secgan, ⁊ þæt scolde standan, gif hit wurde swa gecyðed ydæges sona.</ab>
         <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-g"><pb n="156" ed="#rabin-doml"/>And be norðan stod seo unlagu þæt man moste banweorc on unsacne secgan, and þæt scolde standan gif hit wurde swa gecyðed ydæges sona.</ab>

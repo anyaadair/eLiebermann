@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -40,7 +41,7 @@
           <sense n="2">~ cum rege <hi rend="italic">verhandeln, Erlaubnis erwirken bei</hi> <ref type="lawCode" target="law:CHnCor">CHn cor</ref> 3</sense>
         </dictScrap>
         <xr type="lawCode"><ref target="clause:IIIAtr_14">III Atr 14</ref></xr>
-        <xr type="lawCode"><ref target="clause:Duns_1">Duns 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:Duns_1-2">Duns 1</ref></xr>
         <xr type="lawCode"><ref target="clause:Hn_74-2b">Hn 74,2b</ref></xr>
         <xr type="lawCode"><ref target="clause:Hn_56-5">Hn 56,5</ref></xr>
         <xr type="lawCode"><ref target="clause:CHnCor_3-to-3-1">CHn cor 3</ref></xr>

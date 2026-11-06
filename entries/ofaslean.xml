@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -44,7 +45,7 @@
         <xr type="lawCode"><ref target="clause:Af_71">Af 71</ref></xr>
         <xr type="lawCode"><ref target="clause:Abt_40">Abt 40</ref></xr>
         <xr type="lawCode"><ref target="clause:Abt_87">Abt 87</ref></xr>
-        <xr type="lawCode"><ref target="clause:Af_56">Af 56</ref></xr>
+        <xr type="lawCode"><ref target="clause:Af_56-1">Af 56</ref></xr>
         <xr type="lawCode" subtype="range"><ref target="clause:Af_58">Af 58</ref></xr>
         <xr type="lawCode" subtype="range"><ref target="clause:Af_59">Af 59</ref></xr>
         <xr type="lawCode" rend="range-from:Af 56"><ref target="clause:Af_60">Af 60</ref></xr>

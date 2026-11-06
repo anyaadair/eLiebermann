@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-13">Page corrected from 56 to 57 (the page turns inside e-), as in the team transcription (dryhtenbeag - fadian.docx).</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -51,7 +52,7 @@
         <xr type="lawCode"><ref target="clause:ECf_35-1">ECf 35,1</ref></xr>
         <xr type="lawCode"><ref target="clause:ECf_35-1b">ECf 35,1b</ref></xr>
         <xr type="lawCode"><ref target="clause:ECf_35-2">ECf 35,2</ref></xr>
-        <xr type="lawCode"><ref target="clause:ECf_35">ECf 35</ref></xr>
+        <xr type="lawCode"><ref target="clause:ECf_35-1">ECf 35</ref></xr>
         <xr type="lawCode"><ref target="clause:ECf_Inscr">ECf Insc</ref></xr>
         <xr type="lawCode"><ref target="clause:ECf_35-1-A-1">ECf 35,1 A 1</ref></xr>
       </entry>

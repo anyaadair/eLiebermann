@@ -33,6 +33,7 @@
       <change when="2026-10-17">Liebermann’s numbered sections joined into one entry, as in the print: the files god, god-2 (later sections) are now part of this entry.</change>
       <change when="2026-10-19">“ac”, “dt”, “gn”, “pl”, “voc” linked to the abbreviations list (printed bold italic, missed before).</change>
       <change when="2026-10-28">“von” unlinked from the abbreviations list: here it is ordinary German, not an abbreviation (Anya Adair).</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -176,7 +177,7 @@
         <xr type="lawCode"><ref target="clause:IEm_1">I Em 1</ref></xr>
         <xr type="lawCode"><ref target="clause:VIIIAtr_6">VIII Atr 6</ref></xr>
         <xr type="lawCode"><ref target="clause:Had_1-1">Had 1,1</ref></xr>
-        <xr type="lawCode"><ref target="clause:ICn_18">I Cn 18</ref></xr>
+        <xr type="lawCode"><ref target="clause:ICn_18-3">I Cn 18</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_68-1">II Cn 68,1</ref></xr>
         <xr type="lawCode"><ref target="clause:Grith_24">Grið 24</ref></xr>
         <xr type="lawCode"><ref target="clause:Had_11">Had 11</ref></xr>

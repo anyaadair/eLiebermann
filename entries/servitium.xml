@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-13">Page corrected from 195 to 196 (the page turns inside senz), as in the team transcription (sadelican - singan.docx).</change>
+      <change when="2026-11-06">“Wl art Lond retr” (the London text of Wl art retr) made one code reference, and its citations linked (tools/link-wl-art-lond-retr.py).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,9 +36,9 @@
         <form type="lemma">
           <orth>servitium</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">servitium</hi> <hi rend="italic">lehnsrechtlicher Kriegsdienst</hi> <ref type="lawCode" target="law:CHnCor">CHn cor</ref> 11. <ref type="lawCode" target="law:WlArt">Wl art</ref> <ref type="lawCode" target="law:Lond">Lond</ref> <ref type="lawCode" target="law:retr">retr</ref> 8</dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">servitium</hi> <hi rend="italic">lehnsrechtlicher Kriegsdienst</hi> <ref type="lawCode" target="law:CHnCor">CHn cor</ref> 11. <ref type="lawCode" target="law:WlArtRetr">Wl art Lond retr</ref> 8</dictScrap>
         <xr type="lawCode"><ref target="clause:CHnCor_11">CHn cor 11</ref></xr>
-        <xr type="lawCode"><ref target="law:Lond">Lond retr 8</ref></xr>
+        <xr type="lawCode"><ref target="clause:WlArtRetr_8">Wl art Lond retr 8</ref></xr>
       </entry>
     </body>
   </text>

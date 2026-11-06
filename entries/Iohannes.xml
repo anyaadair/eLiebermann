@@ -31,6 +31,7 @@
       <change when="2026-10-17">“statt”, “regiert (von)”, “unsyntakt.” and the Accusativ terms linked to the abbreviations list.</change>
       <change when="2026-10-28">“von” unlinked from the abbreviations list: here it is ordinary German, not an abbreviation (Anya Adair).</change>
       <change when="2026-11-01">Abbreviations “unfl.” and “Für” linked to the abbreviations list.</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -47,7 +48,7 @@
         <xr type="lawCode"><ref target="clause:ECf_2-5">ECf 2,5</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiVI_1">Iud Dei VI 1</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiVI_1">Iud Dei VI 1,4</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_23">Iud Dei VII 23</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_23-1">Iud Dei VII 23</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiXIII_13-2">Iud Dei XIII 13,2</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiXV_3">Iud Dei XV 3</ref></xr>
         <xr type="lawCode"><ref target="clause:ExcomI_9">Excom I 9</ref></xr>

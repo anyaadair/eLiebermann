@@ -29,6 +29,7 @@
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
       <change when="2026-10-17">“Vgl.” (vergleiche, compare) linked to the abbreviations list.</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -85,7 +86,7 @@
         <xr type="lawCode"><ref target="clause:Gethyn_7">Geþyncðo 7</ref></xr>
         <xr type="lawCode"><ref target="clause:EGu_12">EGu 12</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAtr_41">VI Atr 41</ref></xr>
-        <xr type="lawCode"><ref target="clause:VIIIAtr_2">VIII Atr 2</ref></xr>
+        <xr type="lawCode"><ref target="clause:VIIIAtr_2-1">VIII Atr 2</ref></xr>
         <xr type="lawCode"><ref target="clause:Grith_19-1">Grið 19,1</ref></xr>
         <xr type="lawCode"><ref target="clause:Grith_22">Grið 22</ref></xr>
         <xr type="lawCode"><ref target="clause:ICn_2-4">I Cn 2,4</ref></xr>

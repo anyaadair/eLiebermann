@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-12">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -37,7 +38,7 @@
         <dictScrap type="liebermann"><hi rend="bold">tilð</hi> <hi rend="italic">Landarbeit</hi> <ref type="lawCode" target="law:Ger">Ger</ref> 1 | <hi rend="italic"><ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref> <ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>:</hi> fela ~ða <hi rend="italic">Bodenerträge</hi> 10 | <hi rend="italic">gleichbed.: <ref type="abbreviation" target="gram:schwach"><abbr>schwach</abbr></ref></hi> <hi rend="bold">tilðe</hi>; <hi rend="italic"><ref type="abbreviation" target="gram:Genitiv"><abbr>gn</abbr></ref>:</hi> ælcre ~ðan timan 1</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/30500">tilþ</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/59075">tilþ (Supplement)</ref></xr>
-        <xr type="lawCode"><ref target="clause:Ger_1">Ger 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:Ger_1-1">Ger 1</ref></xr>
       </entry>
     </body>
   </text>

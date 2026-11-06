@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-11-01">Abbreviations “unfl.” and “Für” linked to the abbreviations list.</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -45,7 +46,7 @@
         <xr type="lawCode"><ref target="clause:LeisWl_2-3">Leis Wl 2,3</ref></xr>
         <xr type="lawCode"><ref target="clause:LeisWl_14">Leis Wl 14</ref></xr>
         <xr type="lawCode"><ref target="clause:LeisWl_17-1">Leis Wl 17,1</ref></xr>
-        <xr type="lawCode"><ref target="clause:LeisWl_17">Leis Wl 17</ref></xr>
+        <xr type="lawCode"><ref target="clause:LeisWl_17-1">Leis Wl 17</ref></xr>
         <xr type="lawCode"><ref target="clause:Wl-art-Frz_6">Wl art Fz 6</ref></xr>
         <xr type="lawCode"><ref target="clause:Wl-art-Frz_9">Wl art Fz 9</ref></xr>
         <xr type="lawCode"><ref target="clause:LeisWl_48-1">Leis Wl 48,1</ref></xr>
@@ -56,7 +57,7 @@
         <xr type="lawCode"><ref target="clause:LeisWl_2-1">Leis Wl 2,1</ref></xr>
         <xr type="lawCode"><ref target="clause:Wl-art-Frz_10">Wl art Fz 10</ref></xr>
         <xr type="lawCode"><ref target="clause:LeisWl_24">Leis Wl 24</ref></xr>
-        <xr type="lawCode"><ref target="clause:LeisWl_48">Leis Wl 48</ref></xr>
+        <xr type="lawCode"><ref target="clause:LeisWl_48-1">Leis Wl 48</ref></xr>
         <xr type="lawCode"><ref target="clause:LeisWl_26">Leis Wl 26</ref></xr>
         <xr type="lawCode"><ref target="clause:LeisWl_44">Leis Wl 44</ref></xr>
         <xr type="lawCode"><ref target="clause:Wl-art-Frz_8-1">Wl art Fz 8,1</ref></xr>

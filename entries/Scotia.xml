@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -38,7 +39,7 @@
         <xr type="see"><ref target="entry:David">David</ref></xr>
         <xr type="see"><ref target="entry:Margareta">Margareta</ref></xr>
         <xr type="lawCode"><ref target="clause:ECf_35-1">ECf 35,1</ref></xr>
-        <xr type="lawCode"><ref target="clause:ECf_35">ECf 35</ref></xr>
+        <xr type="lawCode"><ref target="clause:ECf_35-1">ECf 35</ref></xr>
         <xr type="lawCode"><ref target="clause:ECf_Inscr">ECf Insc</ref></xr>
       </entry>
     </body>

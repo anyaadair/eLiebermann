@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-06">“Wl art Lond retr” (the London text of Wl art retr) made one code reference, and its citations linked (tools/link-wl-art-lond-retr.py).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -34,9 +35,9 @@
         <form type="lemma">
           <orth>Cornubia</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">Cornubia</hi> <hi rend="italic">Cornwall</hi> <ref type="lawCode" target="law:WlArt">Wl art</ref> <ref type="lawCode" target="law:Lond">Lond</ref> <ref type="lawCode" target="law:retr">retr</ref> 1. <ref type="lawCode" target="law:Lond">Lond</ref> <ref type="lawCode" target="law:ECf">ECf</ref> 32 C 3 [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>.</hi> <ref type="entry" target="entry:Cordubiensis">Cordubiensis</ref>]</dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">Cornubia</hi> <hi rend="italic">Cornwall</hi> <ref type="lawCode" target="law:WlArtRetr">Wl art Lond retr</ref> 1. <ref type="lawCode" target="law:Lond">Lond</ref> <ref type="lawCode" target="law:ECf">ECf</ref> 32 C 3 [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>.</hi> <ref type="entry" target="entry:Cordubiensis">Cordubiensis</ref>]</dictScrap>
         <xr type="compare"><ref target="entry:Cordubiensis">Cordubiensis</ref></xr>
-        <xr type="lawCode"><ref target="law:Lond">Lond retr 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:WlArtRetr_1">Wl art Lond retr 1</ref></xr>
         <xr type="lawCode"><ref target="clause:ECf_32-C-3">ECf 32 C 3</ref></xr>
       </entry>
     </body>

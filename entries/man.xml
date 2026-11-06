@@ -33,6 +33,7 @@
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
       <change when="2026-10-28">“von” unlinked from the abbreviations list: here it is ordinary German, not an abbreviation (Anya Adair).</change>
       <change when="2026-11-01">Grammatical terms (Sing., Pers., Kl., north, altes …) linked to the terms list.</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -111,7 +112,7 @@
         <xr type="lawCode"><ref target="clause:Wi_8">Wi 8</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_60">II Cn 60</ref></xr>
         <xr type="lawCode"><ref target="clause:Abt_88">Abt 88</ref></xr>
-        <xr type="lawCode"><ref target="clause:Hl_16">Hl 16</ref></xr>
+        <xr type="lawCode"><ref target="clause:Hl_16-1">Hl 16</ref></xr>
         <xr type="lawCode"><ref target="clause:Abt_64">Abt 64</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_El-to-49-6">Af El 49,6</ref></xr>
         <xr type="lawCode"><ref target="clause:Wer_2">Wer 2</ref></xr>
@@ -147,8 +148,8 @@
         <xr type="lawCode"><ref target="clause:IIAs_14-1">II As 14,1</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAs_12-2">VI As 12,2</ref></xr>
         <xr type="lawCode"><ref target="clause:Blas_1">Blas 1</ref></xr>
-        <xr type="lawCode"><ref target="clause:Ine_34">Ine 34</ref></xr>
-        <xr type="lawCode"><ref target="clause:Wi_1">Wi 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:Ine_34-1">Ine 34</ref></xr>
+        <xr type="lawCode"><ref target="clause:Wi_1-1">Wi 1</ref></xr>
         <xr type="lawCode"><ref target="clause:Wi_7">Wi 7</ref></xr>
         <xr type="lawCode"><ref target="clause:Wi_26">Wi 26</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_21">Ine 21</ref></xr>

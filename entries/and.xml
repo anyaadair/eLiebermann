@@ -30,6 +30,7 @@
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
       <change when="2026-10-17">“statt”, “regiert (von)”, “unsyntakt.” and the Accusativ terms linked to the abbreviations list.</change>
       <change when="2026-11-02">Link to the Dictionary of Old English added (E00015; guessed from the DOE headword list, same spelling; checked by the editor).</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -104,7 +105,7 @@
         <xr type="lawCode"><ref target="clause:Ine_42-1">Ine 42,1</ref></xr>
         <xr type="lawCode"><ref target="clause:IIEw_6">II Ew 6</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAs_12-2">VI As 12,2</ref></xr>
-        <xr type="lawCode"><ref target="clause:Hu_6">Hu 6</ref></xr>
+        <xr type="lawCode"><ref target="clause:Hu_6-1">Hu 6</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAtr_3">VI Atr 3</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_75">II Cn 75</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_79">II Cn 79</ref></xr>

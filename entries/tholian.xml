@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-12">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-28">“von” unlinked from the abbreviations list: here it is ordinary German, not an abbreviation (Anya Adair).</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -64,7 +65,7 @@
         <xr type="lawCode"><ref target="clause:Af_11-4">Af 11,4</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_20">Af 20</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_62">Ine 62</ref></xr>
-        <xr type="lawCode"><ref target="clause:IIEw_5">II Ew 5</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIEw_5-1">II Ew 5</ref></xr>
         <xr type="lawCode"><ref target="clause:IAs_4">I As 4</ref></xr>
         <xr type="lawCode"><ref target="clause:IIAs_3-1">II As 3,1</ref></xr>
         <xr type="lawCode"><ref target="clause:IIAs_25-2">II As 25,2</ref></xr>

@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,7 +37,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">Andreas</hi> <hi rend="italic">Apostel</hi> <ref type="lawCode" target="law:IudDeiXVI">Iud Dei XVI</ref> 30b. <ref type="lawCode" target="law:ExcomVI">Excom VI</ref> 1,4. <ref type="lawCode" target="law:ExcomVIII">VIII</ref> 14.</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/1726">Andreas</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiXVI_30">Iud Dei XVI 30b</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiXVI_30-6">Iud Dei XVI 30b</ref></xr>
         <xr type="lawCode"><ref target="clause:ExcomVI_1-4">Excom VI 1,4</ref></xr>
         <xr type="lawCode"><ref target="clause:ExcomVIII_14">Excom VIII 14</ref></xr>
       </entry>

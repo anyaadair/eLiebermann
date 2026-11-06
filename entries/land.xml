@@ -31,6 +31,7 @@
       <change when="2026-10-18">Abbreviations and law code (Norðleod) linked; see the pull request “þæt: indecl., Einl., Folg., Urkk.-Sprache, Norðleod”.</change>
       <change when="2026-11-01">Abbreviations “unfl.” and “Für” linked to the abbreviations list.</change>
       <change when="2026-11-06">Link to the Dictionary of Old English added (E19204; guessed from the DOE headword list, same spelling; not yet checked).</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -131,7 +132,7 @@
         <xr type="lawCode"><ref target="clause:Rect_1-1">Rect 1,1</ref></xr>
         <xr type="lawCode"><ref target="clause:Rect_5-1">Rect 5,1</ref></xr>
         <xr type="lawCode"><ref target="clause:Rect_6-1">Rect 6,1</ref></xr>
-        <xr type="lawCode"><ref target="clause:Ger_1">Ger 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:Ger_1-1">Ger 1</ref></xr>
         <xr type="lawCode"><ref target="clause:Duns_1-2">Duns 1,2</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_32">Ine 32</ref></xr>
       </entry>

@@ -27,6 +27,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -74,7 +75,7 @@
         <xr type="lawCode"><ref target="clause:LeisWl_44-1">Leis Wl 44,1</ref></xr>
         <xr type="lawCode"><ref target="clause:LeisWl_2-4">Leis Wl 2,4</ref></xr>
         <xr type="lawCode"><ref target="clause:LeisWl_27">Leis Wl 27</ref></xr>
-        <xr type="lawCode"><ref target="clause:LeisWl_39">Leis Wl 39</ref></xr>
+        <xr type="lawCode"><ref target="clause:LeisWl_39-1">Leis Wl 39</ref></xr>
       </entry>
     </body>
   </text>

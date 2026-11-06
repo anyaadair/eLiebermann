@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-13">Page corrected from 43 to 45 (the page turns inside cyning), as in the team transcription (collarium - d.docx).</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,7 +37,7 @@
           <orth>kyrieleison</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">kyrieleison</hi> <hi rend="italic">‘Herr, erbarme Dich’</hi> <ref type="lawCode" target="law:IudDeiXVI">Iud Dei XVI</ref> 30. <ref type="lawCode" target="law:Duel">Duel</ref> 1,8. <ref type="lawCode" target="law:ExcomIV">Excom IV</ref> 15</dictScrap>
-        <xr type="lawCode"><ref target="clause:IudDeiXVI_30">Iud Dei XVI 30</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiXVI_30-1">Iud Dei XVI 30</ref></xr>
         <xr type="lawCode"><ref target="clause:Duel_1-8">Duel 1,8</ref></xr>
         <xr type="lawCode"><ref target="clause:ExcomIV_15">Excom IV 15</ref></xr>
       </entry>

@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">"Quadr II" (Quadripartitus, Book II) linked as one code.</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -39,7 +40,7 @@
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/2814">Babilón</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiXII_16-4">Iud Dei XII 16,4</ref></xr>
         <xr type="lawCode"><ref target="clause:QuadrII_4-1">Quadr II 4,1</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiII_3">Iud Dei II 3</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiII_3-2">Iud Dei II 3</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiIV_4-2">Iud Dei IV 4,2</ref></xr>
       </entry>
     </body>

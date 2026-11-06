@@ -28,6 +28,7 @@
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
       <change when="2026-10-17">“Quadr Arg” and “Quadr Ded” (Quadripartitus, Argumentum and Dedicatio) linked as codes.</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -45,7 +46,7 @@
         <xr type="lawCode"><ref target="clause:IIAtr_7-2">II Atr 7,2</ref></xr>
         <xr type="lawCode"><ref target="clause:IIAtr_1-1">II Atr 1,1</ref></xr>
         <xr type="lawCode"><ref target="clause:VAtr_16">V Atr 16</ref></xr>
-        <xr type="lawCode"><ref target="clause:VIAtr_23">VI Atr 23</ref></xr>
+        <xr type="lawCode"><ref target="clause:VIAtr_23-1">VI Atr 23</ref></xr>
         <xr type="lawCode"><ref target="clause:ICn_17-1">I Cn 17,1</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_Prol">II Cn Pro</ref></xr>
         <xr type="lawCode"><ref target="clause:WiLad_Prol">Wl lad Pro</ref></xr>

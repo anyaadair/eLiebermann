@@ -30,6 +30,7 @@
       <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -71,7 +72,7 @@
         <xr type="lawCode"><ref target="clause:VIAtr_3-1">VI Atr 3,1</ref></xr>
         <xr type="lawCode"><ref target="clause:VIIIAtr_32">VIII Atr 32</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_21">Af 21</ref></xr>
-        <xr type="lawCode"><ref target="clause:ICn_5-2">I Cn 5,2</ref></xr>
+        <xr type="lawCode"><ref target="clause:ICn_5-2c">I Cn 5,2</ref></xr>
         <xr type="lawCode"><ref target="clause:VAtr_7">V Atr 7</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAtr_4">VI Atr 4</ref></xr>
         <xr type="lawCode"><ref target="clause:VIIaAtr_6">VIIa Atr 6</ref></xr>

@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
+      <change when="2026-11-06">“Wl art Lond retr” (the London text of Wl art retr) made one code reference, and its citations linked (tools/link-wl-art-lond-retr.py).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,9 +36,9 @@
         <form type="lemma">
           <orth>Scotus</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">Scotus</hi>; ~ti <hi rend="italic">Schotten nach</hi> 1066 <ref type="lawCode" target="law:ECf">ECf</ref> 34*; Picti et ~ti Albaniae <hi rend="italic">Bewohner Schottlands, bald nach</hi> 1066, <ref type="lawCode" target="law:WlArt">Wl art</ref> <ref type="lawCode" target="law:Lond">Lond</ref> <ref type="lawCode" target="law:retr">retr</ref> 1. <ref type="lawCode" target="law:Lond">Lond</ref> <ref type="lawCode" target="law:ECf">ECf</ref> 35,1 A 2; <hi rend="italic"><ref type="abbreviation" target="gram:fur"><abbr>für</abbr></ref> die Zeit um</hi> 700 <hi rend="italic">und um</hi> 1200, 32 C 5; D 6; <hi rend="italic"><ref type="abbreviation" target="gram:Variante"><abbr>Var.</abbr></ref></hi> Scotti</dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">Scotus</hi>; ~ti <hi rend="italic">Schotten nach</hi> 1066 <ref type="lawCode" target="law:ECf">ECf</ref> 34*; Picti et ~ti Albaniae <hi rend="italic">Bewohner Schottlands, bald nach</hi> 1066, <ref type="lawCode" target="law:WlArtRetr">Wl art Lond retr</ref> 1. <ref type="lawCode" target="law:Lond">Lond</ref> <ref type="lawCode" target="law:ECf">ECf</ref> 35,1 A 2; <hi rend="italic"><ref type="abbreviation" target="gram:fur"><abbr>für</abbr></ref> die Zeit um</hi> 700 <hi rend="italic">und um</hi> 1200, 32 C 5; D 6; <hi rend="italic"><ref type="abbreviation" target="gram:Variante"><abbr>Var.</abbr></ref></hi> Scotti</dictScrap>
         <xr type="lawCode"><ref target="clause:ECf_34">ECf 34</ref></xr>
-        <xr type="lawCode"><ref target="law:Lond">Lond retr 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:WlArtRetr_1">Wl art Lond retr 1</ref></xr>
         <xr type="lawCode"><ref target="clause:ECf_35-1-A-2">ECf 35,1 A 2</ref></xr>
       </entry>
     </body>

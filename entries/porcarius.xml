@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,7 +36,7 @@
           <orth>porcarius</orth>
         </form>
         <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">porcarius</hi> <hi rend="italic">Schweinehirt</hi> <ref type="lawCode" target="law:Rect">Rect</ref> 6-7 <ref type="lawCode" target="law:Quadr">Q</ref> [<hi rend="italic"><ref type="abbreviation" target="gram:auch"><abbr>auch</abbr></ref></hi> Firmicus Mat.]</dictScrap>
-        <xr type="lawCode"><ref target="clause:Rect_6">Rect 6</ref></xr>
+        <xr type="lawCode"><ref target="clause:Rect_6-2-to-6-4">Rect 6</ref></xr>
       </entry>
     </body>
   </text>

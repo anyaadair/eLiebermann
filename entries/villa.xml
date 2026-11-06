@@ -31,6 +31,7 @@
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
       <change when="2026-10-17">“In Cn” and “In” (Instituta Cnuti) linked to the law codes list.</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -61,7 +62,7 @@
         <xr type="lawCode"><ref target="clause:HnLond_12">Hn Lond 12</ref></xr>
         <xr type="lawCode"><ref target="clause:HnLond_14">Hn Lond 14</ref></xr>
         <xr type="lawCode"><ref target="clause:ECf_18-1">ECf 18,1</ref></xr>
-        <xr type="lawCode"><ref target="clause:Hn_7-7">Hn 7,7</ref></xr>
+        <xr type="lawCode"><ref target="clause:Hn_7-7b">Hn 7,7</ref></xr>
         <xr type="lawCode"><ref target="clause:LeisWl_6">Leis Wl 6</ref></xr>
         <xr type="lawCode"><ref target="clause:Hn_83-6a">Hn 83,6a</ref></xr>
         <xr type="lawCode"><ref target="clause:ECf_20-1">ECf 20,1</ref></xr>

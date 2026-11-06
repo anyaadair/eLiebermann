@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,7 +36,7 @@
           <orth>homagium</orth>
         </form>
         <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">homagium</hi> <hi rend="italic">Mannschaftseid, Hulde</hi> <ref type="lawCode" target="law:Hn">Hn</ref> 43,6. 56,2</dictScrap>
-        <xr type="lawCode"><ref target="clause:Hn_43-6">Hn 43,6</ref></xr>
+        <xr type="lawCode"><ref target="clause:Hn_43-6a">Hn 43,6</ref></xr>
         <xr type="lawCode"><ref target="clause:Hn_56-2">Hn 56,2</ref></xr>
       </entry>
     </body>
