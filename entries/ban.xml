@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-11-02">Link to the Dictionary of Old English added (E02154; guessed from the DOE headword list, same spelling; not yet checked).</change>
+      <change when="2026-11-06">Link to Bosworth–Toller (Supplement, 39471) added (dictionary corrections list, Nov. 2026).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -38,6 +39,7 @@
         <dictScrap type="liebermann"><hi rend="bold">ban</hi> <hi rend="italic">Knochen</hi> <ref type="lawCode" target="law:Af">Af</ref> 44,1 | <hi rend="italic"><ref type="abbreviation" target="gram:Genitiv"><abbr>gn</abbr></ref>:</hi> banes <ref type="lawCode" target="law:Abt">Abt</ref> 34. 35 | <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>:</hi> ~ <ref type="lawCode" target="law:Af">Af</ref> 70,1. 74 | <hi rend="italic"><ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref>:</hi> ~ <ref type="lawCode" target="law:Af">Af</ref> 44. — <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:cinban">cinnban</ref>, <ref type="entry" target="entry:wi-d-oban">wiðoban</ref></dictScrap>
         <xr type="derivative"><ref target="entry:cinban">cinban</ref></xr>
         <xr type="derivative"><ref target="entry:wi-d-oban">wi[ð]oban</ref></xr>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/39471">bán (Supplement)</ref></xr>
         <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E02154">bān</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_44-1">Af 44,1</ref></xr>
         <xr type="lawCode"><ref target="clause:Abt_34">Abt 34</ref></xr>

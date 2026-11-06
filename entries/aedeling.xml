@@ -30,6 +30,7 @@
       <change when="2026-10-17">“In Cn” and “In” (Instituta Cnuti) linked to the law codes list.</change>
       <change when="2026-10-18">Abbreviations and law code (Norðleod) linked; see the pull request “þæt: indecl., Einl., Folg., Urkk.-Sprache, Norðleod”.</change>
       <change when="2026-11-02">Link to the Dictionary of Old English added (E01528; guessed from the DOE headword list, same spelling; checked by the editor).</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -44,7 +45,7 @@
         <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E01528">æþeling</ref></xr>
         <xr type="lawCode"><ref target="clause:InCn_III-56-2">In Cn III 56,2</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_58-1">II Cn 58,1</ref></xr>
-        <xr type="lawCode"><ref target="clause:ECf_35-1">ECf 35,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:ECf_35-1-A">ECf 35,1</ref></xr>
         <xr type="lawCode" subtype="range"><ref target="clause:ECf_35-1-A">ECf 35,1 A</ref></xr>
         <xr type="lawCode" subtype="range"><ref target="clause:ECf_35-1-A-2">ECf 35,1 A 2</ref></xr>
         <xr type="lawCode" subtype="range"><ref target="clause:ECf_35-1a">ECf 35,1a</ref></xr>

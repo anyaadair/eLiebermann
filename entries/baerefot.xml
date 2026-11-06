@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-06">Links to Bosworth–Toller (39442) and the Dictionary of Old English (E02259) added (dictionary corrections list, Nov. 2026).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,8 @@
           <orth>bærefot</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">bærefot</hi> <hi rend="italic">barfuss</hi> <ref type="lawCode" target="law:VIIaAtr">VIIa Atr</ref> 2</dictScrap>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/39442">bær-fót (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E02259">bær-fōt</ref></xr>
         <xr type="lawCode"><ref target="clause:VIIaAtr_2">VIIa Atr 2</ref></xr>
       </entry>
     </body>

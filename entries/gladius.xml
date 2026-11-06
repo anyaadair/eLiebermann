@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,7 +36,7 @@
           <orth>gladius</orth>
         </form>
         <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">gladius</hi> gladium iuvabit <hi rend="italic">Staat soll der Kirche helfen</hi> <ref type="lawCode" target="law:ECf">ECf</ref> 2,9</dictScrap>
-        <xr type="lawCode"><ref target="clause:ECf_2-9">ECf 2,9</ref></xr>
+        <xr type="lawCode"><ref target="clause:ECf_2-9b">ECf 2,9</ref></xr>
       </entry>
     </body>
   </text>

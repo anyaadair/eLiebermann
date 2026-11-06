@@ -30,6 +30,7 @@
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
       <change when="2026-10-17">“statt”, “regiert (von)”, “unsyntakt.” and the Accusativ terms linked to the abbreviations list.</change>
       <change when="2026-10-19">“pl”, “sg” linked to the abbreviations list (printed bold italic, missed before).</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -90,7 +91,7 @@
         <xr type="lawCode"><ref target="clause:VIAtr_10">VI Atr 10</ref></xr>
         <xr type="lawCode"><ref target="clause:Prom-Reg_1">Sacr cor 1</ref></xr>
         <xr type="lawCode"><ref target="clause:VAtr_22">V Atr 22</ref></xr>
-        <xr type="lawCode"><ref target="clause:VIAtr_12">VI Atr 12</ref></xr>
+        <xr type="lawCode"><ref target="clause:VIAtr_12-1">VI Atr 12</ref></xr>
       </entry>
     </body>
   </text>

@@ -25,6 +25,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-12">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-06">“Wl art Lond retr” (the London text of Wl art retr) made one code reference, and its citations linked (tools/link-wl-art-lond-retr.py).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -33,8 +34,8 @@
         <form type="lemma">
           <orth>tallagium</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">tallagium</hi> <hi rend="italic">Steuer <ref type="abbreviation" target="gram:fur"><abbr>für</abbr></ref> den König</hi> <ref type="lawCode" target="law:WlArt">Wl art</ref> <ref type="lawCode" target="law:Lond">Lond</ref> <ref type="lawCode" target="law:retr">retr</ref> 5</dictScrap>
-        <xr type="lawCode"><ref target="law:Lond">Lond retr 5</ref></xr>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">tallagium</hi> <hi rend="italic">Steuer <ref type="abbreviation" target="gram:fur"><abbr>für</abbr></ref> den König</hi> <ref type="lawCode" target="law:WlArtRetr">Wl art Lond retr</ref> 5</dictScrap>
+        <xr type="lawCode"><ref target="clause:WlArtRetr_5">Wl art Lond retr 5</ref></xr>
       </entry>
     </body>
   </text>

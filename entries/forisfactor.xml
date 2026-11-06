@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,7 +36,7 @@
           <orth>forisfactor</orth>
         </form>
         <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">forisfactor</hi> <hi rend="italic">Missetäter</hi> <ref type="lawCode" target="law:ECf">ECf</ref> 2,9. 20,4; <hi rend="italic"><ref type="abbreviation" target="gram:dafur"><abbr>dafür</abbr></ref> <ref type="abbreviation" target="gram:setzt"><abbr>setzt</abbr></ref></hi> <ref type="lawCode" target="law:retr">retr</ref>: malefactor</dictScrap>
-        <xr type="lawCode"><ref target="clause:ECf_2-9">ECf 2,9</ref></xr>
+        <xr type="lawCode"><ref target="clause:ECf_2-9a">ECf 2,9</ref></xr>
         <xr type="lawCode"><ref target="clause:ECf_20-4">ECf 20,4</ref></xr>
       </entry>
     </body>

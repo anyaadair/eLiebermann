@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -41,7 +42,7 @@
         </dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/14228">ge-endian</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/47843">ge-endian (Supplement)</ref></xr>
-        <xr type="lawCode"><ref target="clause:Northu_63">Northu 63</ref></xr>
+        <xr type="lawCode"><ref target="clause:Northu_63-1">Northu 63</ref></xr>
         <xr type="lawCode"><ref target="clause:Northu_62">Northu 62</ref></xr>
         <xr type="lawCode"><ref target="clause:Iudex_11">Iudex 11</ref></xr>
       </entry>

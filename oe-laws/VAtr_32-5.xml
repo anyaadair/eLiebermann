@@ -59,13 +59,13 @@
       <change when="2026-10-19">Generated from row 1204 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text checked and corrected against <title>Die Gesetze der Angelsachsen</title> I, p. 244.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS D added from Gesetze I, p. 244.</change>
+      <change when="2026-11-06">A duplicate of Liebermann’s text (the same words without his italics or notes) removed.</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="32.5">
         <head><ref type="lawCode" target="law:VAtr">V Atr</ref> 32.5</head>
-        <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="32.5" corresp="#wit-d"><pb n="244" ed="#liebermann"/>Ac þæt unriht alegde ure hlaford; þæt he ma mote.</ab>
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="32.5" corresp="#wit-d"><pb n="244" ed="#liebermann"/>Ac þ<hi rend="italic">æt</hi> unriht alegde ure hlaford; þ<hi rend="italic">æt</hi> he ma mote.</ab>
         <ab type="editionText" xml:lang="ang" source="#robertson" n="32.5" corresp="#wit-d"><pb n="88" ed="#robertson"/>Ac þæt unriht alegde ure hlaford; þæt he ma mote.</ab>
         <ab type="editionText" xml:lang="ang" source="#rabin-doml" corresp="#wit-g"><pb n="156" ed="#rabin-doml"/>Ac þæt unriht alegde ure hlaford. Þæt he ma mote!</ab>

@@ -29,6 +29,7 @@
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
       <change when="2026-10-17">Liebermann’s numbered sections joined into one entry, as in the print: the files marca-2 (later sections) are now part of this entry.</change>
       <change when="2026-10-19">“Fz.” linked to the abbreviations list.</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -42,10 +43,10 @@
         <xr type="see"><ref target="entry:mearc">mearc</ref></xr>
         <xr type="compare"><ref target="entry:marcata">marcata</ref></xr>
         <xr type="lawCode"><ref target="clause:Hn_13-2">Hn 13,2</ref></xr>
-        <xr type="lawCode"><ref target="clause:Hn_91">Hn 91</ref></xr>
+        <xr type="lawCode"><ref target="clause:Hn_91-1">Hn 91</ref></xr>
         <xr type="lawCode"><ref target="clause:AGu_3">AGu 3</ref></xr>
         <xr type="lawCode"><ref target="clause:Hn_29-3">Hn 29,3</ref></xr>
-        <xr type="lawCode" n="1"><ref target="clause:Hn_13">Hn 13</ref></xr>
+        <xr type="lawCode" n="1"><ref target="clause:Hn_13-2">Hn 13</ref></xr>
         <xr type="lawCode"><ref target="clause:ECf_12-4">ECf 12,4</ref></xr>
         <xr type="lawCode"><ref target="clause:ECf_15-2">ECf 15,2</ref></xr>
         <xr type="lawCode"><ref target="clause:WlArt_3-1">Wl art 3,1</ref></xr>

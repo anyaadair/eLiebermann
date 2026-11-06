@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-13">Page corrected from 35 to 36 (the page turns inside clæne), as in the team transcription (bocere - collaboratio.docx).</change>
+      <change when="2026-11-06">“Wl art Lond retr” (the London text of Wl art retr) made one code reference, and its citations linked (tools/link-wl-art-lond-retr.py).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,10 +36,10 @@
         <form type="lemma">
           <orth>Claudia</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">Claudia</hi> Civitas <ref type="lawCode" target="law:WlArt">Wl art</ref> 4; [<hi rend="italic">richtig</hi>] Gloucestre <ref type="lawCode" target="law:WlArtFz">Wl art Fz</ref> 4; <hi rend="italic"><ref type="abbreviation" target="gram:verderbt"><abbr>verderbt</abbr></ref></hi> Laudia <ref type="lawCode" target="law:WlArt">Wl art</ref> <ref type="lawCode" target="law:Lond">Lond</ref> <ref type="lawCode" target="law:retr">retr</ref> 9, <hi rend="italic">in <ref type="abbreviation" target="gram:Variante"><abbr>Var.</abbr></ref> gefälscht</hi> Londra, <hi rend="italic">London</hi></dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">Claudia</hi> Civitas <ref type="lawCode" target="law:WlArt">Wl art</ref> 4; [<hi rend="italic">richtig</hi>] Gloucestre <ref type="lawCode" target="law:WlArtFz">Wl art Fz</ref> 4; <hi rend="italic"><ref type="abbreviation" target="gram:verderbt"><abbr>verderbt</abbr></ref></hi> Laudia <ref type="lawCode" target="law:WlArtRetr">Wl art Lond retr</ref> 9, <hi rend="italic">in <ref type="abbreviation" target="gram:Variante"><abbr>Var.</abbr></ref> gefälscht</hi> Londra, <hi rend="italic">London</hi></dictScrap>
         <xr type="lawCode"><ref target="clause:WlArt_4">Wl art 4</ref></xr>
         <xr type="lawCode"><ref target="clause:Wl-art-Frz_4">Wl art Fz 4</ref></xr>
-        <xr type="lawCode"><ref target="law:Lond">Lond retr 9</ref></xr>
+        <xr type="lawCode"><ref target="clause:WlArtRetr_9">Wl art Lond retr 9</ref></xr>
       </entry>
     </body>
   </text>

@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-06">“Wl art Lond retr” (the London text of Wl art retr) made one code reference, and its citations linked (tools/link-wl-art-lond-retr.py).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -34,9 +35,9 @@
         <form type="lemma">
           <orth>Conquestor</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">Conquestor</hi> (Angliae) <hi rend="italic">heisst Wilhelm I.</hi> <ref type="lawCode" target="law:Hn">Hn</ref> Insc<hi rend="superscript">2</hi>. <ref type="lawCode" target="law:ECfRetr">ECf retr</ref> Expl = <hi rend="bold">Conquisitor</hi> <ref type="lawCode" target="law:WlArt">Wl art</ref> <ref type="lawCode" target="law:Lond">Lond</ref> <ref type="lawCode" target="law:retr">retr</ref> Insc</dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">Conquestor</hi> (Angliae) <hi rend="italic">heisst Wilhelm I.</hi> <ref type="lawCode" target="law:Hn">Hn</ref> Insc<hi rend="superscript">2</hi>. <ref type="lawCode" target="law:ECfRetr">ECf retr</ref> Expl = <hi rend="bold">Conquisitor</hi> <ref type="lawCode" target="law:WlArtRetr">Wl art Lond retr</ref> Insc</dictScrap>
         <xr type="lawCode" n="2"><ref target="clause:Hn_Inscr">Hn Insc</ref></xr>
-        <xr type="lawCode"><ref target="law:Lond">Lond retr Insc</ref></xr>
+        <xr type="lawCode"><ref target="clause:WlArtRetr_Inscr">Wl art Lond retr Insc</ref></xr>
       </entry>
     </body>
   </text>

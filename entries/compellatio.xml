@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -44,7 +45,7 @@
         <xr type="lawCode"><ref target="clause:IICn_53-1">II Cn 53,1</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_56-1">II Cn 56,1</ref></xr>
         <xr type="lawCode"><ref target="clause:Hn_71-1b">Hn 71,1b</ref></xr>
-        <xr type="lawCode"><ref target="clause:Duns_2">Duns 2</ref></xr>
+        <xr type="lawCode"><ref target="clause:Duns_2-1">Duns 2</ref></xr>
         <xr type="lawCode"><ref target="clause:Episc_5">Episc 5</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_27">II Cn 27</ref></xr>
       </entry>

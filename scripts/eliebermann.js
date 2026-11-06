@@ -1260,6 +1260,9 @@
         if (hw && !(opts || {}).noFind) hits.forEach(h => {
             let form = h.form;
             if (spelling && form === hw) form = '';
+            // a Latin or French word cited for the Old English it translates ("bannum setzt Q für gebodu VI As 4"):
+            // the clause has both, and both are marked (every spelling a link gives that is found is marked)
+            if (form && (opts || {}).lang && (opts || {}).lang !== 'ang' && !spelling && !oneLetter && !form.split(',').includes(hw) && /^\p{L}{3,}$/u.test(hw)) form += ',' + hw;
             const sep = () => (h.href.includes('?') ? '&' : '?');
             if (form && (oneLetter ? /\p{L}/u : /\p{L}.*\p{L}/u).test(form.split(',')[0])) h.href += sep() + 'find=' + encodeURIComponent(form);
             const also = variantAfter(flat, h.flatEnd, ital, hw);

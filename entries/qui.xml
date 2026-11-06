@@ -28,6 +28,7 @@
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
       <change when="2026-10-19">“ac”, “bez.”, “no”, “nt”, “pl”, “sg” linked to the abbreviations list (printed bold italic, missed before).</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -64,7 +65,7 @@
         <xr type="lawCode"><ref target="clause:LeisWl_26">Leis Wl 26</ref></xr>
         <xr type="lawCode"><ref target="clause:LeisWl_45-1">Leis Wl 45,1</ref></xr>
         <xr type="lawCode"><ref target="clause:Wl-art-Frz_5">Wl art Fz 5</ref></xr>
-        <xr type="lawCode"><ref target="clause:LeisWl_1">Leis Wl 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:LeisWl_1-1">Leis Wl 1</ref></xr>
         <xr type="lawCode"><ref target="clause:LeisWl_24">Leis Wl 24</ref></xr>
         <xr type="lawCode"><ref target="clause:Wl-art-Frz_8-1">Wl art Fz 8,1</ref></xr>
         <xr type="lawCode"><ref target="clause:LeisWl_2-2a">Leis Wl 2,2a</ref></xr>

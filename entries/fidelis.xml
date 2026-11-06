@@ -28,6 +28,7 @@
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">L (Latin version) after VI Atr, IV Eg and Leis Wl citations linked.</change>
       <change when="2026-10-17">“In Cn” and “In” (Instituta Cnuti) linked to the law codes list.</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -47,7 +48,7 @@
         <xr type="lawCode"><ref target="clause:IICn_22">II Cn 22</ref></xr>
         <xr type="lawCode"><ref target="clause:IIIEm_1">III Em 1</ref></xr>
         <xr type="lawCode"><ref target="clause:WlArt_2">Wl art 2</ref></xr>
-        <xr type="lawCode"><ref target="clause:ICn_20">I Cn 20</ref></xr>
+        <xr type="lawCode"><ref target="clause:ICn_20-1">I Cn 20</ref></xr>
         <xr type="lawCode"><ref target="clause:Swer_1">Swer 1</ref></xr>
         <xr type="lawCode"><ref target="clause:WlEp_Prol">Wl ep Pro</ref></xr>
         <xr type="lawCode"><ref target="clause:CHnCor_Prol">CHn cor Pro</ref></xr>

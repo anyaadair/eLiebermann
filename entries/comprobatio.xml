@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -41,7 +42,7 @@
           <sense n="2"><hi rend="italic">Prüfung</hi> (<hi rend="italic">des Schuldverdachts</hi>) <ref type="lawCode" target="law:IudDeiXIII">XIII</ref> 9. <ref type="lawCode" target="law:IudDeiXIV">XIV</ref> 9</sense>
         </dictScrap>
         <xr type="lawCode"><ref target="clause:IudDeiI_1">Iud Dei I 1</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiXIII_9">Iud Dei XIII 9</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiXIII_9-1">Iud Dei XIII 9</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiXIV_9">Iud Dei XIV 9</ref></xr>
       </entry>
     </body>

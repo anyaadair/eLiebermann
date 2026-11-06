@@ -36,6 +36,7 @@
       <change when="2026-10-19">“pl” linked to the abbreviations list (printed bold italic, missed before).</change>
       <change when="2026-10-28">“von” unlinked from the abbreviations list: here it is ordinary German, not an abbreviation (Anya Adair).</change>
       <change when="2026-11-01">Grammatical terms (Sing., Pers., Kl., north, altes …) linked to the terms list.</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -95,7 +96,7 @@
         <xr type="lawCode"><ref target="clause:Iudex_1">Iudex 1</ref></xr>
         <xr type="lawCode"><ref target="clause:IIEg_3">II Eg 3</ref></xr>
         <xr type="lawCode"><ref target="clause:VIIIAtr_7">VIII Atr 7</ref></xr>
-        <xr type="lawCode"><ref target="clause:Af_38">Af 38</ref></xr>
+        <xr type="lawCode"><ref target="clause:Af_38-2">Af 38</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_25-1">Ine 25,1</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_12">Af 12</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_6-5">Ine 6,5</ref></xr>
@@ -124,7 +125,7 @@
         <xr type="lawCode"><ref target="clause:IIEw_1-3">II Ew 1,3</ref></xr>
         <xr type="lawCode"><ref target="clause:IIAs_6-1">II As 6,1</ref></xr>
         <xr type="lawCode"><ref target="clause:IIAs_6-3">II As 6,3</ref></xr>
-        <xr type="lawCode"><ref target="clause:VAs_1">V As 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:VAs_1-5">V As 1</ref></xr>
         <xr type="lawCode"><ref target="clause:IIEg_4-1">II Eg 4,1</ref></xr>
         <xr type="lawCode"><ref target="clause:VIIIAtr_10-1">VIII Atr 10,1</ref></xr>
         <xr type="lawCode"><ref target="clause:ICn_9-1">I Cn 9,1</ref></xr>

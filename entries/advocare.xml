@@ -28,6 +28,7 @@
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-13">Page corrected from 3 to 4 (the page turns inside acquietare), as in the team transcription (A - boc.docx).</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -51,7 +52,7 @@
         <xr type="lawCode"><ref target="clause:IIAtr_9-4">II Atr 9,4</ref></xr>
         <xr type="lawCode"><ref target="clause:IVAtr_3-3">IV Atr 3,3</ref></xr>
         <xr type="lawCode"><ref target="clause:IVAtr_7">IV Atr 7</ref></xr>
-        <xr type="lawCode"><ref target="clause:IICn_24">II Cn 24</ref></xr>
+        <xr type="lawCode"><ref target="clause:IICn_24-1">II Cn 24</ref></xr>
         <xr type="lawCode"><ref target="clause:Hn_92-3">Hn 92,3</ref></xr>
         <xr type="lawCode"><ref target="clause:IIAtr_8">II Atr 8</ref></xr>
         <xr type="lawCode"><ref target="clause:Swer_3-2">Swer 3,2</ref></xr>

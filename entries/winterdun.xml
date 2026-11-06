@@ -28,6 +28,7 @@
     <revisionDesc>
       <change when="2026-10-12">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -38,7 +39,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">winterdun</hi> <hi rend="italic">Winterhügel</hi> (<hi rend="italic">mit Hürden</hi> [<hi rend="italic">‘und Weide’ <ref type="bibl" target="bib:CitToller">Toller</ref></hi>] <hi rend="italic">zum Überwintern der Schafe</hi>) <ref type="lawCode" target="law:Ger">Ger</ref> 1</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/35943">winter-dún</ref></xr>
-        <xr type="lawCode"><ref target="clause:Ger_1">Ger 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:Ger_1-1">Ger 1</ref></xr>
       </entry>
     </body>
   </text>

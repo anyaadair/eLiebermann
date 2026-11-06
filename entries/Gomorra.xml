@@ -28,6 +28,7 @@
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
       <change when="2026-11-01">Editor’s note on a misprinted citation (unlinked citations, November 2026).</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -38,7 +39,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">Gomorra</hi> [<hi rend="italic"><ref type="abbreviation" target="gram:aus"><abbr>aus</abbr></ref> Genesis</hi>] <ref type="lawCode" target="law:IudDeiII">Iud Dei II</ref> 2; Gamorra <ref type="lawCode" target="law:IudDeiV">V</ref> 13<ptr type="editorNote" target="#edn-1"/></dictScrap>
         <note type="editorial" xml:id="edn-1">“V 13” appears to be a misprint for Iud Dei V 1,3, where <hi rend="italic">Gamorra</hi> occurs (<ref target="clause:IudDeiV_1-3">Iud Dei V 1,3</ref>); the link follows 1,3.</note>
-        <xr type="lawCode"><ref target="clause:IudDeiII_2">Iud Dei II 2</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiII_2-3">Iud Dei II 2</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiV_1-3">Iud Dei V 13</ref></xr>
       </entry>
     </body>

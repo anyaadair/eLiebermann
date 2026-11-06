@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -37,7 +38,7 @@
         <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">Marcus</hi> <hi rend="italic">Evangelist</hi> <ref type="lawCode" target="law:IudDeiI">Iud Dei I</ref> 11. <ref type="lawCode" target="law:IudDeiVI">VI</ref> 1. <ref type="lawCode" target="law:IudDeiVII">VII</ref> 23. <ref type="lawCode" target="law:IudDeiXII">XII</ref> 12. <ref type="lawCode" target="law:IudDeiXIII">XIII</ref> 13,2. <ref type="lawCode" target="law:ExcomVI">Excom VI</ref> 1,4</dictScrap>
         <xr type="lawCode"><ref target="clause:IudDeiI_11">Iud Dei I 11</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiVI_1">Iud Dei VI 1</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_23">Iud Dei VII 23</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_23-1">Iud Dei VII 23</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiXII_12">Iud Dei XII 12</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiXIII_13-2">Iud Dei XIII 13,2</ref></xr>
         <xr type="lawCode"><ref target="clause:ExcomVI_1-4">Excom VI 1,4</ref></xr>

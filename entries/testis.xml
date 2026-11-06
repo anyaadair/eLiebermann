@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-12">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -40,7 +41,7 @@
           <sense n="2">? <hi rend="italic">Gerichtsumstand</hi> <ref type="lawCode" target="law:ECf">ECf</ref> 36,3</sense>
         </dictScrap>
         <xr type="compare"><ref target="entry:gewitnes">gewitnes</ref></xr>
-        <xr type="lawCode"><ref target="clause:Hn_31-8">Hn 31,8</ref></xr>
+        <xr type="lawCode"><ref target="clause:Hn_31-8a">Hn 31,8</ref></xr>
         <xr type="lawCode"><ref target="clause:Hn_31-8a">Hn 31,8a</ref></xr>
         <xr type="lawCode"><ref target="clause:Hn_45-1a">Hn 45,1a</ref></xr>
         <xr type="lawCode"><ref target="clause:ECf_36-3">ECf 36,3</ref></xr>

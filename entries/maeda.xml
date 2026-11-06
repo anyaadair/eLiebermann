@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,7 +37,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">mæda</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref>, Wiesen</hi>[<hi rend="italic">mähungen</hi>] <ref type="lawCode" target="law:Ger">Ger</ref> 1, <hi rend="italic"><ref type="abbreviation" target="gram:geandertAus"><abbr>geänd. aus</abbr></ref></hi> ~de</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/22023">mǽd</ref></xr>
-        <xr type="lawCode"><ref target="clause:Ger_1">Ger 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:Ger_1-1">Ger 1</ref></xr>
       </entry>
     </body>
   </text>

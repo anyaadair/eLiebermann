@@ -25,6 +25,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-06">“Wl art Lond retr” (the London text of Wl art retr) made one code reference, and its citations linked (tools/link-wl-art-lond-retr.py).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -33,8 +34,8 @@
         <form type="lemma">
           <orth>Laudia</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">Laudia,</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Fehler"><abbr>Fehler</abbr></ref> <ref type="abbreviation" target="gram:fur"><abbr>für</abbr></ref></hi> Claudia <hi rend="italic">Gloucester</hi> <ref type="lawCode" target="law:WlArt">Wl art</ref> <ref type="lawCode" target="law:Lond">Lond</ref> <ref type="lawCode" target="law:retr">retr</ref> 9</dictScrap>
-        <xr type="lawCode"><ref target="law:Lond">Lond retr 9</ref></xr>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">Laudia,</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Fehler"><abbr>Fehler</abbr></ref> <ref type="abbreviation" target="gram:fur"><abbr>für</abbr></ref></hi> Claudia <hi rend="italic">Gloucester</hi> <ref type="lawCode" target="law:WlArtRetr">Wl art Lond retr</ref> 9</dictScrap>
+        <xr type="lawCode"><ref target="clause:WlArtRetr_9">Wl art Lond retr 9</ref></xr>
       </entry>
     </body>
   </text>

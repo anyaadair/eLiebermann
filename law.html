@@ -1444,6 +1444,61 @@ scripts:
             markPanel();
             if (vis.length && terms.length) step(1);
         }
+        // a word in an original text of the clause (its left-hand column), not in a translation or a note
+        function isOriginal(el) {
+            if (!el.closest('.clause-col--text') || el.closest('[class*="note"], [class*="label"], button, .hit__label')) return false;
+            const l = ((el.closest('[lang]') || {}).lang || '').toLowerCase();
+            return !/^(en|de)/.test(l) || !!el.closest('.clause-reading-text');
+        }
+        // The other spellings, in the clause's original texts (Old English, Latin, French), of the words a
+        // dictionary link found. Words of three letters or fewer have none (be, se, mid). A four-letter word:
+        // the same first three letters, and a vowel (or the same letter) after them (baro: barones, barun;
+        // not feoh: feortig). A longer word: its beginning (all but the last three letters, at least four)
+        // (at most seven letters) differs at most by a vowel, a doubled letter, g/h, c/t or d/ð (ballia: baillie; burg: burh; barganiare:
+        // barganiet; not Æðelstan: æþelum). Liebermann's [ ] inside a word are left out (b[a]st[ar]dis).
+        function variantsOf(found, root, have) {
+            const fold = x => x.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
+                .replace(/æ/g, 'ae').replace(/ð/g, 'þ').replace(/v/g, 'u').replace(/j/g, 'i').replace(/y/g, 'i').replace(/k/g, 'c').replace(/[^a-zþ]/g, '');
+            const V = /[aeiou]/;
+            // a distance in which a vowel for a vowel, a vowel put in or left out, a doubled letter, g for h, c for t
+            // (Latin -tia/-cia) or d for ð (Liebermann's Nordhymbra)
+            // count 1, and anything else 2
+            const dist = (a, b) => {
+                const d = Array.from({ length: a.length + 1 }, () => new Array(b.length + 1).fill(0));
+                const indel = (w, k) => (V.test(w[k - 1]) || (k > 1 && w[k - 1] === w[k - 2]) ? 1 : 2);
+                for (let x = 1; x <= a.length; x++) d[x][0] = d[x - 1][0] + indel(a, x);
+                for (let y = 1; y <= b.length; y++) d[0][y] = d[0][y - 1] + indel(b, y);
+                for (let x = 1; x <= a.length; x++) for (let y = 1; y <= b.length; y++) {
+                    const p = a[x - 1], q = b[y - 1];
+                    const sub = p === q ? 0 : (V.test(p) && V.test(q)) || /^(gh|hg|ct|tc|dþ|þd)$/.test(p + q) ? 1 : 2;
+                    d[x][y] = Math.min(d[x - 1][y - 1] + sub, d[x - 1][y] + indel(a, x), d[x][y - 1] + indel(b, y));
+                }
+                return d[a.length][b.length];
+            };
+            const words = [...new Set(found.map(fold))].filter(w => w.length >= 4);
+            if (!words.length) return [];
+            const strip = w => (w.length > 5 && w.startsWith('ge') ? w.slice(2) : w);
+            const like = (a, b) => {
+                a = strip(a); b = strip(b);
+                if (a.length > b.length + 5) return false;
+                if (b.length === 4) return a.length >= 4 && a.slice(0, 3) === b.slice(0, 3) && (a[3] === b[3] || (V.test(a[3]) && V.test(b[3])) || /^(gh|hg)$/.test(a[3] + b[3]));
+                const n = Math.min(7, Math.max(4, b.length - 3));
+                if (a.length < n) return false;
+                return a[0] === b[0] && Math.min(dist(a.slice(0, n), b.slice(0, n)), dist(a.slice(0, n + 1), b.slice(0, n))) <= 1;
+            };
+            const seen = new Set((have || []).concat(found)), out = [];
+            const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+            for (let t = walker.nextNode(); t; t = walker.nextNode()) {
+                const el = t.parentElement;
+                if (!el || !isOriginal(el) || el.closest('mark')) continue;
+                for (const m of t.data.matchAll(/\p{L}[\p{L}\[\]]*\p{L}|\p{L}/gu)) {
+                    const w = m[0], f = fold(w);
+                    if (seen.has(w) || f.length < 3) continue;
+                    if (words.some(b => like(f, b))) { seen.add(w); out.push(w); }
+                }
+            }
+            return out;
+        }
         let timer = null;
         find.addEventListener('input', () => { fromLink = false; clearTimeout(timer); timer = setTimeout(run, 250); });
         find.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); step(e.shiftKey ? -1 : 1); } });
@@ -1470,10 +1525,21 @@ scripts:
             // (a word of three letters or fewer is looked for only as it stands: "be*" would find beforan, betan …)
             const stems = letters.length <= 3 ? [] : letters.length === 4 ? [letters.join('') + '*']
                 : [...new Set([letters.length - 2, letters.length - 3, Math.ceil(letters.length * 0.6)].map(n => Math.max(4, n)))].map(n => letters.slice(0, n).join('') + '*');
-            for (const w of wanted.length ? wanted.concat(stems) : []) {
-                find.value = w;
-                run();
-                if (marks.length) break;
+            // every one of the spellings given that is in the clause is marked (be and bi in Ine 45); if none
+            // is, the shorter beginnings of the first, until one is found
+            const got = [];
+            for (const w of wanted) { find.value = w; run(); if (marks.length) got.push(w); }
+            // none found: the same word in another spelling (barganiare: Q's barganiet), else shorter beginnings
+            if (!got.length && letters.length) got.push(...variantsOf(wanted.filter(w => !/[*"]/.test(w)), target));
+            if (!got.length) for (const w of stems) { find.value = w; run(); if (marks.length) { got.push(w); break; } }
+            find.value = got.join(' ');
+            run();
+            // and the same word in the other texts of the clause, in their own spelling (baro: barones,
+            // barun, baroun; Barnabas: Barnabe; ballia: baillie): see variantsOf
+            if (marks.length) {
+                const orig = m => isOriginal(m);
+                const more = variantsOf([...new Set(marks.filter(orig).map(m => m.textContent).concat(got, wanted).filter(w => !/[*"]/.test(w)))], target, got);
+                if (more.length) { find.value = got.concat(more).join(' '); run(); }
             }
             if (also.length) {
                 const found = marks.length ? [find.value] : [];

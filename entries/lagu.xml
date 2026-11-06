@@ -36,6 +36,7 @@
       <change when="2026-10-19">“Lat.”, “ac”, “dt”, “gn”, “no”, “pl”, “viell.” linked to the abbreviations list (printed bold italic, missed before).</change>
       <change when="2026-11-01">Grammatical terms (Sing., Pers., Kl., north, altes …) linked to the terms list.</change>
       <change when="2026-11-06">Link to the Dictionary of Old English added (E18601; chosen by the editor on the review page).</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -135,7 +136,7 @@
         <xr type="lawCode"><ref target="clause:Grith_7">Grið 7</ref></xr>
         <xr type="lawCode"><ref target="clause:Grith_19">Grið 19</ref></xr>
         <xr type="lawCode"><ref target="clause:ICn_1">I Cn 1</ref></xr>
-        <xr type="lawCode"><ref target="clause:VAtr_1">V Atr 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:VAtr_1-1">V Atr 1</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_1">II Cn 1</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_83">II Cn 83</ref></xr>
         <xr type="lawCode"><ref target="clause:Northu_66">Northu 66</ref></xr>

@@ -37,6 +37,7 @@
       <change when="2026-10-19">“pl” linked to the abbreviations list (printed bold italic, missed before).</change>
       <change when="2026-10-28">“von” unlinked from the abbreviations list: here it is ordinary German, not an abbreviation (Anya Adair).</change>
       <change when="2026-11-01">Editor’s note on a misprinted citation (unlinked citations, November 2026).</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -243,7 +244,7 @@
         <xr type="lawCode"><ref target="clause:ICn_20-2">I Cn 20,2</ref></xr>
         <xr type="lawCode"><ref target="clause:IAtr_1-11">I Atr 1,11</ref></xr>
         <xr type="lawCode"><ref target="clause:IAtr_1-13">I Atr 1,13</ref></xr>
-        <xr type="lawCode"><ref target="clause:IICn_31-1">II Cn 31,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IICn_31-1a">II Cn 31,1</ref></xr>
         <xr type="lawCode"><ref target="clause:Rect_8">Rect 8</ref></xr>
         <xr type="lawCode"><ref target="clause:Rect_18-to-18-1">Rect 18</ref></xr>
         <xr type="lawCode"><ref target="clause:Rect_21-5">Rect 21,5</ref></xr>

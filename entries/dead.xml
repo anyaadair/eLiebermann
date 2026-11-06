@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -51,7 +52,7 @@
         <xr type="lawCode"><ref target="clause:IIIAtr_1-2">III Atr 1,2</ref></xr>
         <xr type="lawCode"><ref target="clause:NorGrith_4">Nor grið Z. 4</ref></xr>
         <xr type="lawCode"><ref target="clause:IIIAtr_2">III Atr 2</ref></xr>
-        <xr type="lawCode"><ref target="clause:IIIEg_7">III Eg 7</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIIEg_7-1">III Eg 7</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_25a">II Cn 25a</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_53">Ine 53</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_2-1">Ine 2,1</ref></xr>

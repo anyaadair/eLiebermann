@@ -30,6 +30,7 @@
       <change when="2026-10-17">Liebermann’s numbered sections joined into one entry, as in the print: the files li-2 (later sections) are now part of this entry.</change>
       <change when="2026-10-19">“fm”, “masc”, “no”, “obl”, “pl” linked to the abbreviations list (printed bold italic, missed before).</change>
       <change when="2026-11-01">Abbreviations “unfl.” and “Für” linked to the abbreviations list.</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -62,7 +63,7 @@
         <xr type="lawCode"><ref target="clause:LeisWl_47-2">Leis Wl 47,2</ref></xr>
         <xr type="lawCode"><ref target="clause:LeisWl_52-2">Leis Wl 52,2</ref></xr>
         <xr type="lawCode"><ref target="clause:Wl-art-Frz_7">Wl art Fz 7</ref></xr>
-        <xr type="lawCode"><ref target="clause:Wl-art-Frz_8">Wl art Fz 8</ref></xr>
+        <xr type="lawCode"><ref target="clause:Wl-art-Frz_8-3">Wl art Fz 8</ref></xr>
         <xr type="lawCode"><ref target="clause:LeisWl_2-2a">Leis Wl 2,2a</ref></xr>
         <xr type="lawCode"><ref target="clause:LeisWl_3-1">Leis Wl 3,1</ref></xr>
         <xr type="lawCode"><ref target="clause:Wl-art-Frz_1">Wl art Fz 1</ref></xr>

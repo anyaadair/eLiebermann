@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">L (Latin version) after VI Atr, IV Eg and Leis Wl citations linked.</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -39,7 +40,7 @@
         <xr type="lawCode"><ref target="clause:Hn_9-4">Hn 9,4</ref></xr>
         <xr type="lawCode"><ref target="clause:Hn_9-6a">Hn 9,6a</ref></xr>
         <xr type="lawCode"><ref target="clause:Hn_31-7">Hn 31,7</ref></xr>
-        <xr type="lawCode"><ref target="clause:Hn_33">Hn 33</ref></xr>
+        <xr type="lawCode"><ref target="clause:Hn_33-1">Hn 33</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_31-1a">II Cn 31,1a</ref></xr>
         <xr type="lawCode"><ref target="clause:ICn_5a">I Cn 5a</ref></xr>
         <xr type="lawCode"><ref target="clause:AGu_3">AGu 3</ref></xr>

@@ -29,6 +29,7 @@
       <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
       <change when="2026-10-18">Abbreviations and law code (Norðleod) linked; see the pull request “þæt: indecl., Einl., Folg., Urkk.-Sprache, Norðleod”.</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -88,7 +89,7 @@
         <xr type="lawCode"><ref target="clause:Af_El-to-11">Af El 11f</ref></xr>
         <xr type="lawCode"><ref target="clause:Abt_27">Abt 27</ref></xr>
         <xr type="lawCode"><ref target="clause:Abt_29">Abt 29</ref></xr>
-        <xr type="lawCode"><ref target="clause:Ine_74">Ine 74</ref></xr>
+        <xr type="lawCode"><ref target="clause:Ine_74-1">Ine 74</ref></xr>
         <xr type="lawCode"><ref target="clause:Rect_18-to-18-1">Rect 18</ref></xr>
       </entry>
     </body>

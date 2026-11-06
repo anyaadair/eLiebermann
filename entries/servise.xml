@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-13">Page corrected from 195 to 196 (the page turns inside senz), as in the team transcription (sadelican - singan.docx).</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,7 +37,7 @@
           <orth>servise</orth>
         </form>
         <dictScrap type="liebermann"><lbl type="language">F</lbl> <hi rend="bold">servise</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>, Dienst des Bauern fürs Herrschaftsgut</hi> <ref type="lawCode" target="law:LeisWl">Leis Wl</ref> 30 (~ice <ref type="lawCode" target="law:Io">Io</ref>). 30,1. 32; seir~ 29,1</dictScrap>
-        <xr type="lawCode"><ref target="clause:LeisWl_30">Leis Wl 30</ref></xr>
+        <xr type="lawCode"><ref target="clause:LeisWl_30-1">Leis Wl 30</ref></xr>
         <xr type="lawCode"><ref target="clause:LeisWl_30-1">Leis Wl 30,1</ref></xr>
         <xr type="lawCode"><ref target="clause:LeisWl_32">Leis Wl 32</ref></xr>
         <xr type="lawCode"><ref target="clause:LeisWl_29-1">Leis Wl 29,1</ref></xr>

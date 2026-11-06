@@ -178,7 +178,9 @@
     };
     const looseMode = loose => loose === 'link' ? 'link' : loose ? 'user' : '';
     const loosen = (word, loose = 'user') => LOOSEN[looseMode(loose) || 'user'](word);
-    const WORD = /[\p{L}\p{N}⁊]+(?:['’][\p{L}]+)?/gu;
+    // a word may have Liebermann's square brackets inside it, round letters he supplied (b[a]st[ar]dis,
+    // [cyric]frið, [mæ]r[þ]e): they are part of the word, and left out when it is compared
+    const WORD = /\[?[\p{L}\p{N}⁊]+(?:\[[\p{L}]{1,8}\]?[\p{L}\p{N}⁊]*|\][\p{L}\p{N}⁊]+)*(?:['’][\p{L}]+)?/gu;
     const wordsCache = new Map();
     // A word folded: plain letters and digits need only lower case, which is most words.
     const PLAIN = /^[A-Za-z0-9]*$/;

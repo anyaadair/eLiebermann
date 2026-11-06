@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,7 +36,7 @@
           <orth>Misac</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">Misac</hi> <hi rend="italic">Misach</hi> [<hi rend="italic">des Buches Daniel</hi>] <ref type="lawCode" target="law:IudDeiII">Iud Dei II</ref> 3. <ref type="lawCode" target="law:IudDeiIV">IV</ref> 3,3. <ref type="lawCode" target="law:IudDeiVII">VII</ref> 23,2 <ref type="lawCode" target="law:MsA">A</ref>. <ref type="lawCode" target="law:IudDeiXII">XII</ref> 16,4. <ref type="lawCode" target="law:IudDeiXIII">XIII</ref> 13,2. <ref type="lawCode" target="law:ExcomVI">Excom VI</ref> 14,1</dictScrap>
-        <xr type="lawCode"><ref target="clause:IudDeiII_3">Iud Dei II 3</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiII_3-2">Iud Dei II 3</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiIV_3-3">Iud Dei IV 3,3</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiVII_23-2">Iud Dei VII 23,2</ref></xr>
         <xr type="lawCode"><ref target="clause:ExcomVI_14-1">Excom VI 14,1</ref></xr>
