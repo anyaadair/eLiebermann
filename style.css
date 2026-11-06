@@ -1269,6 +1269,11 @@ body.scan-open .entry-column > article { max-width: none; }
 .code-clause-also mark, .code-clauses mark.find-hit, .clause-page mark.find-hit { background: var(--highlight); color: inherit; padding: 0 0.05em; border-radius: 2px; }
 .code-clauses--one li { grid-template-columns: 6rem 1fr; }
 .code-clauses--one .code-clause-more { grid-column: 2; }
+.code-clauses--whole li { grid-template-columns: 1fr 1fr; }
+.code-clauses--whole.code-clauses--one li { grid-template-columns: 1fr; }
+.code-clauses--whole .code-clause-more { grid-column: auto / -1; justify-self: end; }
+.code-clauses--whole .code-clause-oe .ms-line__n { padding-left: 0; }
+@media (max-width: 760px) { .code-clauses--whole li { grid-template-columns: 1fr; } .code-clauses--whole .code-clause-more { justify-self: start; } }
 .code-clauses li.is-target { background: var(--powder-tint); }
 .code-clauses-head [hidden] { display: none; }
 @media (max-width: 760px) { .code-clause-also, .code-clauses--one .code-clause-more { grid-column: 1; } }

@@ -48,7 +48,7 @@ const firstAb = (xml, types) => {
     for (const type of types) {
         for (const m of xml.matchAll(new RegExp('<ab type="' + type + '"([^>]*)>([\\s\\S]*?)</ab>', 'g'))) {
             const text = decode(m[2]);
-            if (text) return { attrs: m[1], text };
+            if (text) return { attrs: m[1], text, raw: m[2] };
         }
     }
     return null;
@@ -65,9 +65,11 @@ const attr = (attrs, name) => { const m = attrs.match(new RegExp(name + '="([^"]
 const summary = xml => {
     const wits = sigla(xml), eds = editors(xml);
     const t = firstAb(xml, ['liebermannText', 'editionText', 'selectedText']);
-    let oe = '', oeLabel = '', oeLang = '';
+    let oe = '', oeLabel = '', oeLang = '', oeLines;
     if (t) {
         oe = t.text;
+        // a text printed by the lines of its manuscript (Nor Grið): the lines too, numbered on the law code page
+        if (/<seg type="line"/.test(t.raw)) oeLines = [...t.raw.matchAll(/<seg type="line" n="([^"]*)">([\s\S]*?)<\/seg>/g)].map(m => [m[1], decode(m[2])]);
         oeLang = attr(t.attrs, 'xml:lang');
         const ed = attr(t.attrs, 'source').replace(/^#/, '');
         const sig = wits[attr(t.attrs, 'corresp').replace(/^#/, '')];
@@ -90,7 +92,7 @@ const summary = xml => {
             glossLabel = crib ? 'LLM (' + crib + ')' : eds[ed] || ed || 'Translator not recorded';
         }
     }
-    return { oe, oeLabel, oeLang, gloss, glossLabel };
+    return { oe, oeLabel, oeLang, oeLines, gloss, glossLabel };
 };
 // Liebermann prints the clause number at the head of his German in some codes ("2, 1. Wer einen …",
 // "App. AGu. 1. Wenn …"), and the English crib copies it: left out of the summary when it is this clause's number.
@@ -129,6 +131,7 @@ const clauses = catalogue.map(c => {
         oe: sum.oe,
         oeLabel: sum.oeLabel,
         oeLang: sum.oeLang,
+        oeLines: sum.oeLines,
         // the languages of the clause's original texts (ang, la, xno), for the language filter
         langs: [...new Set([...xml.matchAll(/<ab type="(?:liebermannText|editionText|selectedText|supplementaryText)"([^>]*)>/g)].map(m => attr(m[1], 'xml:lang')).filter(Boolean))],
         text: ab(xml, 'liebermannText').concat(ab(xml, 'editionText'), ab(xml, 'selectedText'), ab(xml, 'supplementaryText')).join(' '),
