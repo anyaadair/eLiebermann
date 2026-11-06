@@ -1396,7 +1396,9 @@ scripts:
             // a one-letter word from a dictionary link ("a"): only in the texts themselves, not in
             // the translations, notes or labels, where it would be everywhere
             const oneLetter = fromLink && find.value.trim().split(/\s+/).every(w => w.replace(/\*/g, '').length === 1);
-            marks = W.mark(target, terms, lang => oneLetter && !/^(ang|la|xno)$/.test(lang || '') ? null : !/^(en|de)$/.test(lang || '') && loose);
+            // and never in the English translations: the dictionary cites the words of the texts (and of
+            // Liebermann's German), so a form such as "be" must not mark English "be" or "beyond"
+            marks = W.mark(target, terms, lang => (oneLetter && !/^(ang|la|xno)$/.test(lang || '')) || (fromLink && lang === 'en') ? null : !/^(en|de)$/.test(lang || '') && loose);
             at = -1;
             $('find-status').hidden = !terms.length;
             const vis = marks.filter(m => m.offsetParent !== null);
@@ -1439,7 +1441,8 @@ scripts:
             // a link may carry only also= or mark=; a link for a Latin translation (it begins with a phrase, or
             // brings its own beginnings, "liber*") gets no shorter beginnings made here
             const letters = /^"/.test(wanted[0] || '') || wanted.some(w => /\*$/.test(w)) ? [] : [...(wanted[0] || '')];
-            const stems = !letters.length ? [] : letters.length <= 4 ? [letters.join('') + '*']
+            // (a word of three letters or fewer is looked for only as it stands: "be*" would find beforan, betan …)
+            const stems = letters.length <= 3 ? [] : letters.length === 4 ? [letters.join('') + '*']
                 : [...new Set([letters.length - 2, letters.length - 3, Math.ceil(letters.length * 0.6)].map(n => Math.max(4, n)))].map(n => letters.slice(0, n).join('') + '*');
             for (const w of wanted.length ? wanted.concat(stems) : []) {
                 find.value = w;
