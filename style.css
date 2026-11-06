@@ -1095,6 +1095,11 @@ a.timeline-bar:focus-visible { outline: 2px solid var(--link-hover); outline-off
    grey bubble on the line, not raised, so it is not mistaken for a footnote number */
 .part-mark { display: inline-block; font-family: var(--sans, inherit); font-size: 0.72em; line-height: 1.35; color: #55595e; font-style: normal; font-weight: 600; white-space: nowrap; padding: 0 0.45em; margin: 0 0.3em 0 0.05em; border: 1px solid var(--rule); border-radius: 999px; background: var(--surface); vertical-align: 0.12em; cursor: default; }
 .part-active { background: var(--highlight, #fff3c4); border-radius: 2px; }
+/* a text printed by the lines of its manuscript (Nor Grið): one line each, the number in the margin */
+.ms-line { display: grid; grid-template-columns: 2.2em 1fr; align-items: baseline; padding: 0.05em 0.3em 0.05em 0; }
+.ms-line__n { font-family: var(--sans, inherit); font-size: 0.75em; color: #6b6f75; text-align: right; padding-right: 0.9em; font-style: normal; font-variant-numeric: tabular-nums; cursor: default; }
+.ms-line.part-active { box-shadow: inset 3px 0 0 var(--accent, #b8860b); }
+.part-mark.old-clause { border: 0; background: none; padding: 0 0.15em; color: #8a5a00; font-weight: 700; }
 
 /* Modern German spelling under Liebermann's form (abbreviation lists and popups) */
 .modern-german { display: block; font-size: 0.85em; color: var(--muted); }
