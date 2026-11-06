@@ -1059,6 +1059,23 @@
         for (let k = 0; k <= Math.min(2, hw.length - 3); k++) out.push(pre + hw.slice(0, hw.length - k) + post);
         return [...new Set(out)].join(',');
     }
+    // A spelling of the headword that does not begin like it (aht, oht, owiht, ahte for awuht): the same first
+    // letter, or a vowel for a vowel, and the same consonants after it (w and the vowels aside), allowing one
+    // difference in a word of three consonants, two in a longer one.
+    function closeForm(tok, hw) {
+        const a = foldForm(tok).replace(/[^a-z]/g, ''), b = foldForm(hw).replace(/[^a-z]/g, '');
+        if (a.length < 2 || b.length < 3 || a.length > b.length + 3) return -1;
+        const V = /[aeiouy]/;
+        if (!(a[0] === b[0] || (V.test(a[0]) && V.test(b[0])))) return -1;
+        const sk = w => w.slice(1).replace(/[aeiouyw]/g, '').replace(/(.)\1/g, '$1');
+        const x = sk(a), y = sk(b);
+        if (!y.length) return -1;
+        const d = Array.from({ length: x.length + 1 }, (_, i) => [i]);
+        for (let j = 1; j <= y.length; j++) d[0][j] = j;
+        for (let i = 1; i <= x.length; i++) for (let j = 1; j <= y.length; j++) d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + (x[i - 1] === y[j - 1] ? 0 : 1));
+        const dist = d[x.length][y.length];
+        return dist <= (y.length >= 4 ? 2 : y.length === 3 ? 1 : 0) ? dist : -1;
+    }
     // a word that is a form of the headword: it begins with the same letters (a ge- aside)
     function relatedForm(tok, hw) {
         const a = foldForm(tok).replace(/[^a-z]/g, ''), b = foldForm(hw).replace(/[^a-z]/g, '');
@@ -1113,6 +1130,12 @@
         const groups = bracketPassages(flat);
         const inside = groups.find(([a, b]) => a < i && i < b);
         let depth = 0, last = i, plain = 0;   // plain: words of the text read past so far
+        // the words of the passage before the citation (back to the citation before it) that are spellings of
+        // the headword not beginning like it ("ne stande for aht gelte für nichts II Cn 37": aht). If no form
+        // of the headword is found in the passage, the nearest closest of them is the form cited.
+        const near = []; let seen = false, shut = false;
+        const best = () => near.slice().sort((p, q) => p[1] - q[1])[0];
+        const orHw = f => { const c = best(); return c ? c[0] + (f ? ',' + f : '') : f; };
         for (let k = toks.length - 1; k >= 0; k--) {
             const t = toks[k][0], at = toks[k].index;
             if (inside && at < inside[0]) return hw;
@@ -1120,14 +1143,14 @@
             // a new paragraph (a numbered sense set on its own line) between here and the last word read
             for (const b of breaks) if (b > at && b <= last) return hw;
             last = at;
-            if (t[0] === '\u0001') { endGloss(); continue; }
+            if (t[0] === '\u0001') { if (seen && near.length) return orHw(hw); if (seen) shut = true; endGloss(); continue; }
             if (t === ')') { depth++; endGloss(); continue; }
             if (t === '(') { depth = Math.max(0, depth - 1); continue; }
             if (depth) continue;
             // "|" starts a new grammatical form ("| gen: ~des") or a new meaning ("| jedesmal VI Atr 20"):
             // with no form found, a new meaning is for the headword itself; a form with a label, nothing
-            if (t === '|' || t === '‖') return /:/.test(flat.slice(at, i)) ? '' : hw;
-            if (/^\d+$/.test(t)) { if (bold[at]) return hw; endGloss(); continue; }
+            if (t === '|' || t === '‖') return orHw(/:/.test(flat.slice(at, i)) ? '' : hw);
+            if (/^\d+$/.test(t)) { if (seen && near.length) return orHw(hw); if (seen) shut = true; if (bold[at]) return hw; endGloss(); continue; }
             if (!ital[at] && !bold[at] && CLAUSE_WORD.test(t)) { endGloss(); plain++; continue; }
             if (!ital[at] && NOT_GLOSS.test(t)) endGloss();
             if (glosses && ital[at] && gloss.length && GLOSS_MARK.test(t)) return glossForm();
@@ -1135,8 +1158,8 @@
             // not a list of translations; only "als" ("erklärt als") may stand between
             if (ital[at] && gloss.length && !/^(?:als|durch)$/.test(t)) { gloss.length = 0; glossDone = true; }
             // a bold italic label ("sg:", "pl:", "op:") with no form after it: the headword itself is cited
-            if (bold[at] && ital[at]) return hw;
-            if (bold[at]) return t.length > 1 ? expandTilde(t, hw) : hw;   // the headword, or "a)" of a sense
+            if (bold[at] && ital[at]) return orHw(hw);
+            if (bold[at]) return orHw(t.length > 1 ? expandTilde(t, hw) : hw);   // the headword, or "a)" of a sense
             if (ital[at]) continue;
             if (t.includes('~')) return expandTilde(t, hw);
             // the word just before the citation, when it follows a grammatical label ("ptt pc: aboren",
@@ -1147,11 +1170,12 @@
             // cited, whatever it looks like ("ævre II Atr 8,4", "afre I Cn 1 A")
             if (inside) return t.replace(/[\[\]\-]/g, '');
             if (relatedForm(t, hw)) return t.replace(/[\[\]\-]/g, '');
+            if (!shut) { seen = true; const c = closeForm(t, hw); if (c >= 0) near.push([t.replace(/[\[\]\-]/g, ''), c]); }
             // (Latin words only: an Old English spelling given after "übs" is not a translation)
             if (!glossDone && gloss.length < 4 && t.length > 1 && !/[þðæƿäöüß]/i.test(t) && !NOT_GLOSS.test(t)) gloss.unshift(t); else endGloss();
             plain++;
         }
-        return hw;
+        return orHw(hw);
     }
     // Is the word toks[k] (at flat[at]) straight after a grammatical label such as "dt:", "pl ac:", "ptt pc:"?
     function labelBefore(toks, k, flat, ital, at) {
@@ -1172,9 +1196,18 @@
     const VARIANT = new RegExp('^(?:\\s*' + CODE_TOKEN + ')*\\s*[;(]\\s*([\\p{L}~\'’\\[\\]\\-]*[\\p{L}~][\\p{L}~\'’\\[\\]\\-]*)((?:\\s*' + CODE_TOKEN + ')+)\\s*(?=$|[;|)‖.,])', 'du');
     function variantAfter(flat, end, ital, hw) {
         if (end == null) return '';
-        const m = VARIANT.exec(flat.slice(end));
-        if (!m || ital[end + m.indices[1][0]]) return '';
-        let w = m[1];
+        // one spelling after another ("Af 8,1 H; owiht E; nawiht B"): each is looked for
+        const out = [];
+        for (let at = end, n = 0; n < 4; n++) {
+            const m = VARIANT.exec(flat.slice(at));
+            if (!m || ital[at + m.indices[1][0]]) break;
+            const w = oneVariant(m[1], hw);
+            if (w) out.push(w);
+            at += m[0].length;
+        }
+        return [...new Set(out.join(',').split(',').filter(Boolean))].join(',');
+    }
+    function oneVariant(w, hw) {
         if (/^-/.test(w)) return '';   // an ending ("-ige"), not a word
         if (w.includes('~')) return expandTilde(w, hw);
         // "Wyl-": the beginning of a spelling, looked for as a beginning (four letters or more)
@@ -1183,6 +1216,7 @@
         // a word, not a stray letter or ending ("c", "te")
         return w.length >= 3 || hw.length === 1 ? w : '';
     }
+
 
     function linkClauseNumbers(container, clauses, opts) {
         const hw = plainHeadword((opts || {}).headword);

@@ -1472,6 +1472,8 @@ scripts:
                     const p = a[x - 1], q = b[y - 1];
                     const sub = p === q ? 0 : (V.test(p) && V.test(q)) || /^(gh|hg|ct|tc|dþ|þd)$/.test(p + q) ? 1 : 2;
                     d[x][y] = Math.min(d[x - 1][y - 1] + sub, d[x - 1][y] + indel(a, x), d[x][y - 1] + indel(b, y));
+                    // two letters the other way round (awyrtwalige, áwrytwalige)
+                    if (x > 1 && y > 1 && p === b[y - 2] && a[x - 2] === q && p !== q) d[x][y] = Math.min(d[x][y], d[x - 2][y - 2] + 1);
                 }
                 return d[a.length][b.length];
             };
@@ -1543,12 +1545,12 @@ scripts:
             }
             if (also.length) {
                 const found = marks.length ? [find.value] : [];
-                // the spellings are the likeliest forms of one reading, best first: the first found is enough
+                // other manuscripts' spellings (owiht E; nawiht B): every one found is marked
                 for (const w of also) {
-                    if (found.includes(w)) break;
+                    if (found.includes(w)) continue;
                     find.value = w;
                     run();
-                    if (marks.length) { found.push(w); break; }
+                    if (marks.length) found.push(w);
                 }
                 find.value = found.join(' ');
                 run();

@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-11-06">“Wl art Lond retr” (the London text of Wl art retr) made one code reference, and its citations linked (tools/link-wl-art-lond-retr.py).</change>
+      <change when="2026-11-06">“Cons” (Consiliatio Cnuti) linked to the list of law codes and “neg.” to the abbreviations list, where they were plain text.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,9 +36,9 @@
         <form type="lemma">
           <orth>signare</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">signare</hi> <hi rend="bold">1</hi>) <hi rend="italic">brandmarken</hi> <ref type="lawCode" target="law:Hn">Hn</ref> 59,3; 26; mearcian <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref></hi> <ref type="lawCode" target="law:Quadr">Q</ref>: <ref type="lawCode" target="law:IAtr">I Atr</ref> 2. <ref type="lawCode" target="law:IICn">II Cn</ref> 32 (<hi rend="italic"><ref type="abbreviation" target="gram:auch"><abbr>auch</abbr></ref></hi> Cons). <hi rend="bold">2</hi>) <hi rend="italic">aichen;</hi> mensuras et pondera <ref type="lawCode" target="law:WlArtRetr">Wl art Lond retr</ref> 7</dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">signare</hi> <hi rend="bold">1</hi>) <hi rend="italic">brandmarken</hi> <ref type="lawCode" target="law:Hn">Hn</ref> 59,3; 26; mearcian <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref></hi> <ref type="lawCode" target="law:Quadr">Q</ref>: <ref type="lawCode" target="law:IAtr">I Atr</ref> 2. <ref type="lawCode" target="law:IICn">II Cn</ref> 32 (<hi rend="italic"><ref type="abbreviation" target="gram:auch"><abbr>auch</abbr></ref></hi> <ref type="lawCode" target="law:ConsCn">Cons</ref>). <hi rend="bold">2</hi>) <hi rend="italic">aichen;</hi> mensuras et pondera <ref type="lawCode" target="law:WlArtRetr">Wl art Lond retr</ref> 7</dictScrap>
         <dictScrap type="senses">
-          <sense n="1"><hi rend="italic">brandmarken</hi> <ref type="lawCode" target="law:Hn">Hn</ref> 59,3; 26; mearcian <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref></hi> <ref type="lawCode" target="law:Quadr">Q</ref>: <ref type="lawCode" target="law:IAtr">I Atr</ref> 2. <ref type="lawCode" target="law:IICn">II Cn</ref> 32 (<hi rend="italic"><ref type="abbreviation" target="gram:auch"><abbr>auch</abbr></ref></hi> Cons).</sense>
+          <sense n="1"><hi rend="italic">brandmarken</hi> <ref type="lawCode" target="law:Hn">Hn</ref> 59,3; 26; mearcian <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref></hi> <ref type="lawCode" target="law:Quadr">Q</ref>: <ref type="lawCode" target="law:IAtr">I Atr</ref> 2. <ref type="lawCode" target="law:IICn">II Cn</ref> 32 (<hi rend="italic"><ref type="abbreviation" target="gram:auch"><abbr>auch</abbr></ref></hi> <ref type="lawCode" target="law:ConsCn">Cons</ref>).</sense>
           <sense n="2"><hi rend="italic">aichen;</hi> mensuras et pondera <ref type="lawCode" target="law:WlArtRetr">Wl art Lond retr</ref> 7</sense>
         </dictScrap>
         <xr type="lawCode"><ref target="clause:Hn_59-3">Hn 59,3</ref></xr>
