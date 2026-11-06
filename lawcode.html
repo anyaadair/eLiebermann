@@ -199,6 +199,10 @@ scripts:
         // An editorial introduction to the text, at the top (data/clause-order.json codeIntroductions): its first
         // line and a half in grey, the rest behind a button (collapseIntroduction)
         const introduction = ((window.__clauseOrder || {}).codeIntroductions || {})[code.code];
+        // a short text printed whole, by the lines of its manuscript, not by clauses (Nor Grið): one text, one translation
+        const whole = window.__whole = mine.length === 1 && !!mine[0].oeLines;
+        const goSec = $('go') && $('go').closest('.panel-sec');
+        if (goSec) goSec.hidden = whole;
         target.innerHTML = `
             <p class="breadcrumb small"><a href="${root}laws.html">Laws</a> › ${esc(code.group)}</p>
             <header class="entry-header">
@@ -208,17 +212,20 @@ scripts:
                 <div class="clause-dates">${dateLine('Titles', code.titles)}${dates}${
                     msLine}${
                     plainLine('Editions and translations', sources.map(scholar).join(', '))}${
-                    plainLine('Clauses', String(mine.length))}</div>
+                    (whole ? '' : plainLine('Clauses', String(mine.length)))}</div>
             </header>
             ${introduction ? `<div class="code-introduction is-collapsed"><h2 class="code-introduction__head">Editor’s introduction</h2>
                 <div class="code-introduction__text" id="code-introduction-text">${introduction}</div>
                 <button type="button" class="code-introduction__toggle" aria-expanded="false" aria-controls="code-introduction-text"><span class="ci-more">Show more</span><span class="ci-less">Show less</span></button></div>` : ''}
             ${sourcesBox}
             ${intro ? `<details class="code-intro"><summary>${esc(intro.title)}</summary><div class="code-intro__body">${intro.html}</div></details>` : ''}
-            <div class="code-callout">
+            ${whole ? `<div class="code-callout">
+                <p>This short text is not divided into clauses. Below is the whole text, set out line by line as Liebermann prints it from its only manuscript, with one translation (an English crib of Liebermann’s German).</p>
+                <p>Its own page has every text and translation (Rabin’s too), Liebermann’s notes, cross-references and keywords: <a href="${clauseUrl(mine[0].id)}">all texts and translations</a>.</p>
+            </div>` : `<div class="code-callout">
                 <p>Below is a single text of the code (the first in Liebermann’s edition) and one translation (an English crib of Liebermann’s German). Where either of these is unavailable, an alternative is shown and labelled.</p>
                 <p>Each clause has its own page with all texts, editions, translations, notes, cross-references, and keywords. Click a clause number, or <em>All texts and translations</em> under any clause, to open it.</p>
-            </div>
+            </div>`}
             <p id="list-count" class="muted small" aria-live="polite"></p>
             <div class="code-clauses-head">
                 <span></span>
@@ -297,11 +304,13 @@ scripts:
             return true;
         });
         const searching = words || S.dict || S.kws.length;
-        $('list-count').innerHTML = searching ? `${shown.length} of ${plural(mine.length, 'clause', 'clauses')} · <button type="button" class="link-button" id="clear-inline">Clear the search</button>` : '';
+        $('list-count').innerHTML = searching ? `${window.__whole ? (shown.length ? 'Found in the text' : 'Not found in the text') : `${shown.length} of ${plural(mine.length, 'clause', 'clauses')}`} · <button type="button" class="link-button" id="clear-inline">Clear the search</button>` : '';
         document.querySelectorAll('.code-clauses-head .col-text').forEach(x => { x.hidden = !S.show.has('text'); });
         document.querySelectorAll('.code-clauses-head .col-en').forEach(x => { x.hidden = !S.show.has('en'); });
-        ol.className = 'code-clauses' + (S.show.size === 1 ? ' code-clauses--one' : '');
-        document.querySelectorAll('.code-clauses-head').forEach(h => { h.style.gridTemplateColumns = S.show.size === 1 ? '6rem 1fr' : ''; });
+        // one whole text (Nor Grið): no column for clause numbers
+        const W0 = window.__whole;
+        ol.className = 'code-clauses' + (S.show.size === 1 ? ' code-clauses--one' : '') + (W0 ? ' code-clauses--whole' : '');
+        document.querySelectorAll('.code-clauses-head').forEach(h => { h.style.gridTemplateColumns = W0 ? (S.show.size === 1 || innerWidth <= 760 ? '1fr' : '1fr 1fr') : S.show.size === 1 ? '6rem 1fr' : ''; const f = h.firstElementChild; if (f) f.hidden = !!W0; });
         // where Liebermann's numbers go out of numerical order (data/clause-order.json): a note before that clause
         // a clause Wulfstan probably added (data/wulfstan.json): its badge under the clause number
         const wulfCol = (c, num) => { const wb = Wulfstan.clauseBadges(c.id, { short: true }); return wb ? `<div class="code-clause-numcol">${num}<span class="code-clause-wulf">${wb}</span></div>` : num; };
@@ -315,8 +324,8 @@ scripts:
             const ex = other.get(c.id);
             return orderNotes.filter(x => x.before === c.clause).map(x => `<li class="code-order-note small"><strong>Editor’s note:</strong> ${esc(x.text).replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, '<a href="$2">$1</a>')}</li>`).join('') + `
                 <li id="${esc(c.id)}">
-                    ${wulfCol(c, `<a class="code-clause-no" href="${clauseUrl(c.id)}" title="All texts, manuscripts and translations of ${esc(c.citation)}">${esc(c.clause || c.citation)}</a>`)}
-                    ${S.show.has('text') ? `<p class="code-clause-oe"${ELieb.langAttr(c.oeLang)}>${tagOf(c.oeLabel, tl)}${esc(c.oe)}</p>` : ''}
+                    ${window.__whole ? '' : wulfCol(c, `<a class="code-clause-no" href="${clauseUrl(c.id)}" title="All texts, manuscripts and translations of ${esc(c.citation)}">${esc(c.clause || c.citation)}</a>`)}
+                    ${!S.show.has('text') ? '' : c.oeLines ? `<div class="code-clause-oe"${ELieb.langAttr(c.oeLang)}>${tagOf(c.oeLabel, tl)}${c.oeLines.map(([n, t]) => `<span class="ms-line"><span class="ms-line__n" title="Line ${esc(n)} of the manuscript">${esc(n)}</span><span class="ms-line__text">${esc(t)}</span></span>`).join('')}</div>` : `<p class="code-clause-oe"${ELieb.langAttr(c.oeLang)}>${tagOf(c.oeLabel, tl)}${esc(c.oe)}</p>`}
                     ${(window.__redirects || {})[c.id] && !c.gloss ? redirLine(window.__redirects[c.id]) : S.show.has('en') ? `<p class="code-clause-en">${tagOf(c.glossLabel, el)}${esc(c.gloss)}</p>` : ''}
                     ${ex ? `<p class="code-clause-also small">${ex.slice(0, 2).map(([label, text, ranges, lang]) => `<span class="hit__label">${esc(label)}</span> ${LawPanel.kwic(text, ranges, lang)}`).join('<br>')}${ex.length > 2 ? ` <span class="muted">and ${ex.length - 2} more</span>` : ''}</p>` : ''}
                     <a class="code-clause-more" href="${clauseUrl(c.id)}">All texts and translations<span aria-hidden="true"> ›</span><span class="visually-hidden"> of ${esc(c.citation)}</span></a>
