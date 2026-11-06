@@ -28,6 +28,7 @@
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
       <change when="2026-10-18">Abbreviations and law code (Norðleod) linked; see the pull request “þæt: indecl., Einl., Folg., Urkk.-Sprache, Norðleod”.</change>
+      <change when="2026-11-06">Link to the Dictionary of Old English added (E18985, E18986; chosen by the editor on the review page).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -41,6 +42,8 @@
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/54276">land-leód (Supplement)</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/54277">land-leód (Supplement)</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/21114">land-leód (n.)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E18985">land-lēod</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E18986">land-lēod</ref></xr>
         <xr type="lawCode"><ref target="clause:Mirce_4">Mirce 4</ref></xr>
         <xr type="lawCode"><ref target="clause:Northleoda_1">Norðleod 1</ref></xr>
       </entry>
