@@ -1066,6 +1066,9 @@
         // a one-letter headword (a, á): the word itself, or a short form of it (al, as, aa), nothing longer
         if (b.length === 1 && /^\p{L}$/u.test(String(hw).normalize('NFC'))) return a === b || (a.length <= 3 && a.startsWith(b) && a.length > 1 && /^[a-z]+$/.test(a));
         if (a.length < 2) return false;
+        // a two-letter headword ending in a vowel (be, to, he, ne): another two-letter word with the same first
+        // letter and a vowel after it is a spelling of it (bi, by, bæ for be); longer words are not (German bei)
+        if (b.length === 2 && a.length === 2 && /[aeiouy]/.test(b[1])) return a[0] === b[0] && /[aeiouy]/.test(a[1]);
         const strip = w => (w.length > 4 && w.startsWith('ge') ? w.slice(2) : w);
         const n = Math.min(3, b.length);
         return a.slice(0, n) === b.slice(0, n) || strip(a).slice(0, n) === strip(b).slice(0, n);
@@ -1244,8 +1247,18 @@
         // Liebermann's grammatical entries (Accent, Declination …) cite hundreds of forms, each the
         // word before its citation and often not clearly marked off: their links open the clause
         // without marking a word (the entry page says so)
+        if (hw && !(opts || {}).noFind) {
+            hits.forEach(h => { h.form = formBefore(flat, h.flatStart, ital, bold, breaks, hw, affix, (opts || {}).lang === 'ang'); });
+            // A citation with no spelling of its own before it falls back on the headword ("bei, an, neben
+            // Abt 51" in be). If the entry gives a spelling for that same clause elsewhere ("Form: … bi Abt 51"),
+            // that spelling is looked for too, after the headword (a clause cited for þæt and again for se
+            // keeps se, where se is there).
+            const given = new Map();
+            hits.forEach(h => { if (h.form && h.form !== hw && !given.has(h.text)) given.set(h.text, h.form.split(',')[0]); });
+            hits.forEach(h => { if (h.form === hw && given.has(h.text)) h.form = hw + ',' + given.get(h.text); });
+        }
         if (hw && !(opts || {}).noFind) hits.forEach(h => {
-            let form = formBefore(flat, h.flatStart, ital, bold, breaks, hw, affix, (opts || {}).lang === 'ang');
+            let form = h.form;
             if (spelling && form === hw) form = '';
             const sep = () => (h.href.includes('?') ? '&' : '?');
             if (form && (oneLetter ? /\p{L}/u : /\p{L}.*\p{L}/u).test(form.split(',')[0])) h.href += sep() + 'find=' + encodeURIComponent(form);
