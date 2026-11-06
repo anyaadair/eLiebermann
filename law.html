@@ -220,6 +220,28 @@ scripts:
                 frag.appendChild(r);
                 return;
             }
+            // A text Liebermann prints by the lines of its manuscript (Nor Grið, "Zeile 1–9"): each line on a line
+            // of its own, numbered in the margin; a link to one line (law.html?id=NorGrith_6) highlights it
+            if (name === 'seg' && n.getAttribute('type') === 'line') {
+                const num = n.getAttribute('n') || '';
+                const line = el('span', 'ms-line line-' + num);
+                const no = el('span', 'ms-line__n', num);
+                no.title = 'Line ' + num + ' of the manuscript (Liebermann’s “Zeile ' + num + '”)';
+                line.appendChild(no);
+                const txt = el('span', 'ms-line__text');
+                txt.appendChild(inline(n, opts));
+                line.appendChild(txt);
+                frag.appendChild(line);
+                return;
+            }
+            // the clause numbers of the earlier editions, which Liebermann gives in square brackets
+            if (name === 'milestone' && n.getAttribute('unit') === 'clause') {
+                const num = n.getAttribute('n') || '';
+                const m = el('span', 'part-mark old-clause', '[' + num + ']');
+                m.title = 'Clause ' + num + ' of the earlier editions (Liebermann prints it in square brackets)';
+                frag.appendChild(m);
+                return;
+            }
             if (name === 'pb') return;      // the page the text begins on: shown in its label (pageOf)
             if (name === 'lb') { frag.appendChild(el('br')); if (n.getAttribute('type') === 'paragraph') frag.appendChild(el('br')); return; }
             const rend = name === 'hi' ? (n.getAttribute('rend') || '') : '';
@@ -1026,6 +1048,10 @@ scripts:
     function partsNote(row, doc) {
         if (!row.parts || row.parts.length < 2) return null;
         const p = el('p', 'clause-parts small');
+        if (row.parts.every(x => x.line)) {
+            p.textContent = 'Liebermann prints this text by the lines of its manuscript (1–' + row.parts.length + ', numbered in the margin), and gives the clause numbers of the earlier editions in square brackets within the lines ([1]–[4], in brown). The dictionary cites it by line; Rabin’s clause numbers are in grey circles.';
+            return p;
+        }
         const conc = tei(doc, 'note').find(n => n.getAttribute('type') === 'concordance');
         p.appendChild(document.createTextNode('Liebermann prints this as one clause'));
         if (conc && plainText(conc)) {
@@ -1505,12 +1531,14 @@ scripts:
             // a part of a clause that is shown whole (Abt_1-c): the whole clause, with that part marked
             const row = list.find(c => c.id === id) || list.find(c => (c.parts || []).some(p => p.id === id));
             if (!row) throw new Error('missing');
-            const part = row.id === id ? '' : ((row.parts.find(p => p.id === id).clause.match(/\[([a-z])\]$/) || [])[1] || '');
+            const asPart = row.id === id ? null : row.parts.find(p => p.id === id);
+            // a line of a text printed by lines (Nor Grið): that line is highlighted
+            const part = !asPart ? '' : asPart.line ? 'line-' + asPart.line : 'part-' + ((asPart.clause.match(/\[([a-z])\]$/) || [])[1] || '');
             return Promise.all([fetchXml(row.file), loadSigla()]).then(([doc]) => {
                 render(row, doc);
                 sidebar(row);
                 if (part) {
-                    const marked = target.querySelectorAll('.part-' + part);
+                    const marked = target.querySelectorAll('.' + part);
                     marked.forEach(e => e.classList.add('part-active'));
                     if (marked[0]) LawPanel.scrollToMiddle(marked[0]);
                 }
