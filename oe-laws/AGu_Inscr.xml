@@ -34,8 +34,8 @@
           <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
         </listBibl>
         <listWit>
-          <witness xml:id="wit-b1" rend="bold"><abbr>B1</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383, pp. 83–4 (Liebermann’s B, the second copy in the MS)</note></witness>
-          <witness xml:id="wit-b2"><abbr>B2</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383, p. 6 (Liebermann’s B 2, the first copy in the MS)</note></witness>
+          <witness xml:id="wit-b" rend="bold"><abbr>B</abbr> <note type="manuscript">Cambridge, Corpus Christi College, MS 383, pp. 83–4 (Liebermann’s B). The MS has the treaty twice, both copies in one hand of about 1125 (Liebermann); he prints the copy at p. 6 beside this one as B2</note></witness>
+          <witness xml:id="wit-b2"><abbr>B2</abbr> <note type="manuscript">The other copy of the treaty in the same MS, B: Cambridge, Corpus Christi College, MS 383, p. 6 (Liebermann’s B 2)</note></witness>
           <witness xml:id="wit-q"><abbr>Q</abbr> <note type="manuscript">Quadripartitus (Latin translation, c. 1114), as edited by Liebermann</note> <note type="sigla">Lond; K; Co; Or; Dm; T; R; M; Hk; Br</note></witness>
           <witness xml:id="wit-ld"><abbr>Ld</abbr> <note type="manuscript">William Lambarde, Archaionomia (London, 1568), printed largely from Laurence Nowell’s 16th-century transcripts (Liebermann thought from manuscripts now lost)</note></witness>
         </listWit>
