@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-06">Link to the Dictionary of Old English added (E18819; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,7 @@
           <orth>leaden</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">leaden,</hi> <hi rend="italic"><ref type="abbreviation" target="gram:neutrum"><abbr>nt</abbr></ref>, bleiern</hi> <ref type="lawCode" target="law:Ordal">Ordal</ref> 1b</dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E18819">lēaden</ref></xr>
         <xr type="lawCode"><ref target="clause:Ordal_1b">Ordal 1b</ref></xr>
       </entry>
     </body>

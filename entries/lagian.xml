@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
+      <change when="2026-11-06">Link to the Dictionary of Old English added (E18613; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -38,6 +39,7 @@
         <dictScrap type="liebermann"><hi rend="bold">lagian</hi> <hi rend="italic">gesetzlich bestimmen</hi> <ref type="lawCode" target="law:XAtr">X Atr</ref> Pro | <hi rend="italic"><ref type="abbreviation" target="gram:Praeteritum"><abbr>ptt</abbr></ref> <ref type="abbreviation" target="gram:Particip"><abbr>pc</abbr></ref>:</hi> gelagod <ref type="lawCode" target="law:VIIaAtr">VIIa</ref> 3. — <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> gel~, inl~</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/21041">lagian</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/54245">lagian (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E18613">lagian</ref></xr>
         <xr type="lawCode"><ref target="clause:XAtr_Prol">X Atr Pro</ref></xr>
         <xr type="lawCode"><ref target="clause:VIIaAtr_3">VIIa Atr 3</ref></xr>
       </entry>

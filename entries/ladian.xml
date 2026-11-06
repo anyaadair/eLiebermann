@@ -29,6 +29,7 @@
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
       <change when="2026-10-28">“von” unlinked from the abbreviations list: here it is ordinary German, not an abbreviation (Anya Adair).</change>
+      <change when="2026-11-06">Link to the Dictionary of Old English added (E18347; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -45,6 +46,7 @@
         <xr type="derivative"><ref target="entry:geladian">geladian</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/20892">ládian</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/54122">ládian (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E18347">lādian</ref></xr>
         <xr type="lawCode"><ref target="clause:AGu_3">AGu 3</ref></xr>
         <xr type="lawCode"><ref target="clause:IIAs_14-1">II As 14,1</ref></xr>
         <xr type="lawCode"><ref target="clause:IIAs_20-8">II As 20,8</ref></xr>

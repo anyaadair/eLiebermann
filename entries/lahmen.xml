@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-06">Link to the Dictionary of Old English added (E18760; guessed from the DOE headword list, verb form, spelling variant; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">lahmen</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref>, Urteil findende (und Recht weisende?) Ratsmannen</hi> <ref type="lawCode" target="law:Duns">Duns</ref> 3,2; id est legis homines [<hi rend="italic">zu <ref type="abbreviation" target="gram:silbenhaft"><abbr>silbenhaft</abbr></ref></hi>] <ref type="lawCode" target="law:Quadr">Q</ref> | lagemanni <hi rend="italic">städtische Patricier, regierende Ratsherren</hi> <ref type="lawCode" target="law:ECf">ECf</ref> 38,2; <hi rend="italic"><ref type="abbreviation" target="gram:Variante"><abbr>Var.</abbr></ref>:</hi> lagam-, lagahem-, laghem-, lakem- [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>.</hi> <ref type="entry" target="entry:Lachman">Lachman</ref>]</dictScrap>
         <xr type="compare"><ref target="entry:Lachman">Lachman</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E18760">lah-mann</ref></xr>
         <xr type="lawCode"><ref target="clause:Duns_3-2">Duns 3,2</ref></xr>
         <xr type="lawCode"><ref target="clause:ECf_38-2">ECf 38,2</ref></xr>
       </entry>

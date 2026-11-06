@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
+      <change when="2026-11-06">Link to the Dictionary of Old English added (E19342; guessed from the DOE headword list, same as the Bosworth-Toller headword; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -38,6 +39,7 @@
         <dictScrap type="liebermann"><hi rend="bold">leodwitan,</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref>, Ratsherren der Nation, Volksfürsten</hi> <ref type="lawCode" target="law:Gethinctho">Geþyncðo</ref> 1 <ref type="lawCode" target="law:H">H</ref>; þeodw~ <hi rend="italic"><ref type="abbreviation" target="gram:ubrigeHandschriften"><abbr>übr.</abbr></ref></hi></dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/21427">leód-wita</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/54506">leód-wita (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E19342">lēod-wita</ref></xr>
         <xr type="lawCode"><ref target="clause:Gethyn_1">Geþyncðo 1</ref></xr>
       </entry>
     </body>

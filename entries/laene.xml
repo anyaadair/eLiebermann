@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-06">Link to the Dictionary of Old English added (E19012; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,7 @@
           <orth>læne</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">læne</hi>; <hi rend="italic"><ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>:</hi> on lænan liffæce, <hi rend="italic">in vergänglicher Lebensspanne</hi> <ref type="lawCode" target="law:Grith">Grið</ref> 21</dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E19012">lǣne</ref></xr>
         <xr type="lawCode"><ref target="clause:Grith_21">Grið 21</ref></xr>
       </entry>
     </body>

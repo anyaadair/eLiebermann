@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
+      <change when="2026-11-06">Link to the Dictionary of Old English added (E19404; guessed from the DOE headword list, Bosworth-Toller headword, spelling variant; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -38,6 +39,7 @@
         <dictScrap type="liebermann"><hi rend="bold">leasgewitnesse,</hi> <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>, <ref type="abbreviation" target="gram:falsch"><abbr>falsch</abbr></ref> Zeugnis</hi> <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:El">El</ref> 8 <ref type="lawCode" target="law:Ld">Ld</ref>; lease gewitnesse <hi rend="italic"><ref type="abbreviation" target="gram:ubrigeHandschriften"><abbr>übr.</abbr></ref></hi></dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/21291">leás-gewitness</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/54403">leás-gewitness (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E19404">lēas-ge·witnes</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_El-to-8">Af El 8</ref></xr>
       </entry>
     </body>

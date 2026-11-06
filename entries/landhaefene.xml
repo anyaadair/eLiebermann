@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-06">Link to the Dictionary of Old English added (E15058; guessed from the DOE headword list, same as the Bosworth-Toller headword; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">landhæfene</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>, Grundbesitze</hi> <ref type="lawCode" target="law:Ine">Ine</ref> <ref type="lawCode" target="law:Rb">Rb</ref> 32 <ref type="lawCode" target="law:G">G</ref>; lon~ <ref type="lawCode" target="law:E">E</ref>; <hi rend="italic"><ref type="abbreviation" target="gram:geandert"><abbr>geänd.</abbr></ref></hi> londhæwene <ref type="lawCode" target="law:H">H</ref></dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/21108">land-hæfen</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E15058">land-hæfen</ref></xr>
         <xr type="lawCode"><ref target="clause:Rubrics-Ine_32">Ine Rb 32</ref></xr>
       </entry>
     </body>

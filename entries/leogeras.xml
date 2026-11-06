@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-06">Link to the Dictionary of Old English added (E19081; guessed from the DOE headword list, same as the Bosworth-Toller headword; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -37,6 +38,7 @@
         <dictScrap type="liebermann"><hi rend="bold">leogeras,</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref>, Lügner</hi> <ref type="lawCode" target="law:IICn">II Cn</ref> 7</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/21441">leógere</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/54513">leógere (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E19081">lēogere</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_7">II Cn 7</ref></xr>
       </entry>
     </body>

@@ -28,7 +28,7 @@ def loose(s):
     s = base(s)
     s = s.replace('ie', 'i').replace('y', 'i').replace('io', 'eo')
     s = re.sub(r'(.)\1', r'\1', s)
-    s = s.replace('cg', 'g')
+    # (cg and g are not treated as one: l[i]eg is not lecg.)
     s = re.sub(r'(nis|nys|nes)$', 'nes', s)
     s = re.sub(r'ian$', 'an', s)
     s = re.sub(r'ig$', 'i', s)
@@ -87,7 +87,10 @@ for path in lists:
         eid, hw = line.split('\t', 1)
         rows.append((eid.strip(), hw.strip()))
     doe += rows
-    spans.append((rows[0][1], rows[-1][1]))
+    # The DOE files ge- words under their stem (ge·logen comes last in L), and
+    # -lac and the like are word-parts: take the range from the other headwords.
+    plain = [h for _, h in rows if not h.startswith(('ge·', '-'))]
+    spans.append((plain[0], plain[-1]))
 
 
 def doe_order(b):
@@ -155,7 +158,7 @@ for path in sorted(glob.glob(os.path.join(ENTRIES, '*.xml'))):
         found = {}
         for k in ks:
             for e in table.get(k, []):
-                if part != e[1].endswith(('-', '~')):
+                if part != e[1].endswith(('-', '~')) or e[1].startswith('-'):
                     continue
                 found[e[0]] = e[1]
         return found
@@ -178,6 +181,12 @@ for path in sorted(glob.glob(os.path.join(ENTRIES, '*.xml'))):
         found = hits(table, ks)
         if found:
             how = label
+            if label.startswith('verb form'):
+                rival = hits(by_base, set().union(*[noun_guesses(k) | {k + 'e', k[:-1]} for k in keys]))
+                rival = {k: v for k, v in rival.items() if k not in found}
+                if rival:
+                    found.update(rival)
+                    how += '; or a noun or adjective'
             if len(found) > 1:
                 grade = 'unsure'
             elif i == 0:
@@ -196,7 +205,7 @@ for path in sorted(glob.glob(os.path.join(ENTRIES, '*.xml'))):
                     'grade': grade, 'how': how,
                     'candidates': [{'id': k, 'headword': v} for k, v in found.items()]})
 
-json.dump({'span': [span_lo, span_hi], 'doe_count': len(doe), 'results': results},
+json.dump({'span': [span_lo, span_hi], 'letters': [base(a)[:1].upper() for a, _ in spans], 'doe_count': len(doe), 'results': results},
           open(out_path, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 c = collections.Counter(r['grade'] for r in results)
 print(f'DOE headwords: {len(doe)}  span {span_lo} … {span_hi}')

@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-06">Link to the Dictionary of Old English added (E18875; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">landlagu</hi> <hi rend="italic">Landgutssatzung, Hofrecht</hi> <ref type="lawCode" target="law:Rect">Rect</ref> 4,4 | <hi rend="italic"><ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref>:</hi> ~ga 21</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/21111">land-lagu</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E18875">land-lagu</ref></xr>
         <xr type="lawCode"><ref target="clause:Rect_4-4">Rect 4,4</ref></xr>
         <xr type="lawCode"><ref target="clause:Rect_21-to-21-3">Rect 21</ref></xr>
       </entry>
