@@ -29,6 +29,7 @@
       <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
       <change when="2026-11-01">Abbreviations “unfl.” and “Für” linked to the abbreviations list.</change>
+      <change when="2026-11-06">Link to the Dictionary of Old English added (E18881; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -43,6 +44,7 @@
         <xr type="derivative"><ref target="entry:utalaedan">utalædan</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/20929">lǽdan</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/54154">lǽdan (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E18881">lǣdan</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_84-1a">II Cn 84,1a</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_84-2">II Cn 84,2</ref></xr>
         <xr type="lawCode"><ref target="clause:Duns_1-2">Duns 1,2</ref></xr>

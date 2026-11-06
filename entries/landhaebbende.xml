@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-06">Link to the Dictionary of Old English added (E19365; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -37,6 +38,7 @@
         <dictScrap type="liebermann"><hi rend="bold">landhæbbende</hi> [<hi rend="italic">in adliger Weise</hi>] <hi rend="italic">grundbesitzend, Landeigner</hi> [<hi rend="italic"><ref type="abbreviation" target="gram:uber"><abbr>über</abbr></ref> bäuerlichen Hintersassen</hi>]; <hi rend="italic"><ref type="abbreviation" target="gram:Genitiv"><abbr>gn</abbr></ref>:</hi> ~des <ref type="lawCode" target="law:Ine">Ine</ref> 45 | <hi rend="italic"><ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref> <ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>:</hi> ~habbendum <ref type="lawCode" target="law:Ine">Ine</ref> <ref type="lawCode" target="law:Rb">Rb</ref> 64 <ref type="lawCode" target="law:Ld">Ld</ref>; lond- <ref type="lawCode" target="law:So">So</ref> [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>.</hi> <ref type="entry" target="entry:land">land</ref> <hi rend="italic"><ref type="abbreviation" target="gram:Nummer"><abbr>n.</abbr></ref></hi> 6]</dictScrap>
         <xr type="compare"><ref target="entry:land">land</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/21107">land-hæbbende</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E19365">land-hæbbende</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_45">Ine 45</ref></xr>
         <xr type="lawCode"><ref target="clause:Rubrics-Ine_64">Ine Rb 64</ref></xr>
       </entry>

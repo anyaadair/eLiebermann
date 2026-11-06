@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">“In Cn” and “In” (Instituta Cnuti) linked to the law codes list.</change>
+      <change when="2026-11-06">Link to the Dictionary of Old English added (E19116; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -37,6 +38,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">lesan</hi> <hi rend="bold">I</hi>) <hi rend="italic">einlesen; <ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref></hi> 1: lese we lean <hi rend="italic">werden wir ernten</hi> <ref type="lawCode" target="law:IICn">II Cn</ref> 68 <ref type="lawCode" target="law:MsA">A</ref>; metemus <ref type="lawCode" target="law:Quadr">Q</ref>; nime <ref type="lawCode" target="law:G">G</ref>; accipiemus <ref type="lawCode" target="law:InCn">In</ref> <hi rend="bold">II</hi>) <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:l-ie-san">liesan</ref></dictScrap>
         <xr type="see"><ref target="entry:l-ie-san">l[ie]san</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E19116">lesan</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_68">II Cn 68</ref></xr>
       </entry>
     </body>

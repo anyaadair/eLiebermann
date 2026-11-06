@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-06">Link to the Dictionary of Old English added (E19260; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,7 @@
           <orth>leodbisceop</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">leodbisceop</hi> <hi rend="italic">Diöcesan(Suffragan)-bischof; <ref type="abbreviation" target="gram:Genitiv"><abbr>gn</abbr></ref>:</hi> ~pes <ref type="lawCode" target="law:IICn">II Cn</ref> 58,2 | <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>:</hi> ~cop <ref type="lawCode" target="law:Grith">Grið</ref> 5 | <hi rend="italic"><ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref> <ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>:</hi> ~copas <ref type="lawCode" target="law:Cn1020">Cn 1020</ref>,1. 8</dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E19260">lēod-bisceop</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_58-2">II Cn 58,2</ref></xr>
         <xr type="lawCode"><ref target="clause:Grith_5">Grið 5</ref></xr>
         <xr type="lawCode"><ref target="clause:Cn1020_1">Cn 1020,1</ref></xr>

@@ -26,6 +26,7 @@ for r in R:
                  'o': [{'id': c['id'], 'hw': c['headword']} for c in r['candidates']][:8]})
 d = json.dumps(rows, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
 t = open(sys.argv[2], encoding='utf-8').read()
-t = t.replace('__FROM__', D['span'][0]).replace('__TO__', D['span'][1])
+L = D.get('letters') or [D['span'][0][:1].upper()]
+t = t.replace('__LETTERS__', ', '.join(L[:-1]) + ' and ' + L[-1] if len(L) > 1 else L[0])
 open(sys.argv[3], 'w', encoding='utf-8').write(t.replace('__DATA__', d))
 print(len(rows), 'rows,', len(d) // 1000, 'KB')

@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-06">Link to the Dictionary of Old English added (E19369; guessed from the DOE headword list, same as the Bosworth-Toller headword; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">landsetene</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>, Bodenbesiedlung</hi> (<hi rend="italic">des Grossguts</hi>) <hi rend="italic"><ref type="abbreviation" target="gram:mit"><abbr>mit</abbr></ref> Inventarlieferung</hi> (<hi rend="italic">an den Bauern</hi>) <ref type="lawCode" target="law:Rect">Rect</ref> 4,3</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/21129">land-seten</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E19369">land-seten</ref></xr>
         <xr type="lawCode"><ref target="clause:Rect_4-3-to-4-3c">Rect 4,3</ref></xr>
       </entry>
     </body>

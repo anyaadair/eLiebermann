@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-06">Link to the Dictionary of Old English added (E19184; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -37,6 +38,7 @@
         <dictScrap type="liebermann">lof <hi rend="bold">leosan</hi> <hi rend="italic">Ehre verlieren</hi> <ref type="lawCode" target="law:Rect">Rect</ref> 21,3. — <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:forleosan">forl~</ref></dictScrap>
         <xr type="derivative"><ref target="entry:forleosan">forleosan</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/62795">leósan</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E19184">lēosan</ref></xr>
         <xr type="lawCode"><ref target="clause:Rect_21-to-21-3">Rect 21,3</ref></xr>
       </entry>
     </body>

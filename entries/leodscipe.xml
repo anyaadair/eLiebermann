@@ -28,6 +28,7 @@
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">L (Latin version) after VI Atr, IV Eg and Leis Wl citations linked.</change>
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
+      <change when="2026-11-06">Link to the Dictionary of Old English added (E19259; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -43,6 +44,7 @@
         </dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/21421">leód-scipe</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/54504">leód-scipe (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E19259">lēodscipe</ref></xr>
         <xr type="lawCode"><ref target="clause:IIEg_Prol">II Eg Pro</ref></xr>
         <xr type="lawCode"><ref target="clause:IVEg_2-1a">IV Eg 2,1a</ref></xr>
         <xr type="lawCode"><ref target="clause:IVEg_2-2">IV Eg 2,2</ref></xr>

@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-18">Abbreviations and law code (Norðleod) linked; see the pull request “þæt: indecl., Einl., Folg., Urkk.-Sprache, Norðleod”.</change>
+      <change when="2026-11-06">Link to the Dictionary of Old English added (E19078, E19079, E19080; chosen by the editor on the review page).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -44,6 +45,9 @@
         </dictScrap>
         <xr type="see"><ref target="entry:geleod">geleod</ref></xr>
         <xr type="derivative"><ref target="entry:landleod">landleod</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E19078">lēod</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E19079">lēod</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E19080">lēod</ref></xr>
         <xr type="lawCode"><ref target="clause:Wi_25">Wi 25</ref></xr>
         <xr type="lawCode"><ref target="clause:Abt_22">Abt 22</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_11">Ine 11</ref></xr>
