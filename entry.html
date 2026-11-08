@@ -407,7 +407,12 @@ scripts:
             const m = /^clause:(.+)$/.exec(ref.getAttribute('target') || '');
             if (m) clauses[ref.textContent.replace(/\s+/g, ' ').trim()] = root + 'law.html?id=' + encodeURIComponent(m[1]);
         });
-        ELieb.linkClauseNumbers(target.querySelector('.liebermann-text'), clauses, { headword: e.headword, spelling: !!e.spelling, noFind: e.lang === 'de', lang: e.lang });
+        // The cited word is not highlighted in the clause for Liebermann's grammatical entries, nor (for now, Nov.
+        // 2026, Anya Adair) for the Old French entries, whose short and contracted forms (al, as, del) are too
+        // easily matched wrongly. Nothing is lost: the forms are still worked out from the entry, and switching a
+        // language back on here brings their highlighting back.
+        const NO_HIGHLIGHT = ['de', 'fro'];
+        ELieb.linkClauseNumbers(target.querySelector('.liebermann-text'), clauses, { headword: e.headword, spelling: !!e.spelling, noFind: NO_HIGHLIGHT.includes(e.lang), lang: e.lang });
         // Highlight words added by hand (data/link-highlights.json), on the links found by the rules and
         // on those made by hand (<ref type="clause" … n="Ine 70,1">): "find" replaces the form the rules
         // chose; every word in "mark" is marked as well, wherever it is found in the clause.
@@ -494,6 +499,7 @@ scripts:
 
         <section class="entry-section">
             ${e.lang === 'de' && !e.xref ? `<details class="code-intro gram-info"><summary>About the clause links in this entry</summary><div class="code-intro__body"><p>This is one of Liebermann’s grammatical entries. It gathers a great many forms from across the laws, each cited by the word in front of its clause number. When you click a clause number here, the clause opens, but the cited word is <strong>not highlighted</strong> in it, as it is from other entries in the dictionary.</p><p>To find the word, look in the clause for the form printed just before the clause number in this entry (if a manuscript siglum follows the number, the form is that manuscript’s reading, which may be in Liebermann’s notes), or type it into “Find in this clause” on the clause page.</p></div></details>` : ''}
+            ${e.lang === 'fro' && !e.xref ? `<details class="code-intro gram-info"><summary>About the clause links in this entry</summary><div class="code-intro__body"><p>For the Old French entries, a clause number opens the clause, but the cited word is <strong>not highlighted</strong> in it, as it is from the Old English and Latin entries: the French forms (often short, or joined to the article, as <i>al</i> = <i>a le</i>) are too easily matched with the wrong word.</p><p>To find the word, look in the clause for the form printed just before the clause number in this entry (if a manuscript siglum follows the number, the form is that manuscript’s reading), or type it into “Find in this clause” on the clause page.</p></div></details>` : ''}
             <div class="liebermann-text">${e.original ? paragraphs(ELieb.renderTei(e.original, root), e.lang === 'de') : ''}</div>
             ${e.xref ? '' : `<p class="small muted reading-help">Click a <span class="link-key link-key--law">law code</span>, <span class="link-key link-key--ms">manuscript</span>, <span class="link-key link-key--gram">technical term</span> or <span class="link-key link-key--bib">cited work</span> to see what it stands for.<br>Click a <span class="link-key link-key--clause">clause number</span> to see that clause (with all its MS variants) in the laws database.<br>Click a <span class="link-key link-key--entry">linked headword</span> to see that entry in the dictionary.</p><p class="small muted reading-help reading-help--tilde"><a href="${root}guide.html">How to read an entry</a></p>`}
         </section>
