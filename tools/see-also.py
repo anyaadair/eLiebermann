@@ -208,7 +208,12 @@ def respellings(word):
              ('æ', 'e'), ('e', 'æ'), ('ea', 'e'), ('eo', 'e'), ('io', 'eo'), ('eo', 'io'), ('u', 'o'), ('o', 'u'),
              ('c', 'k'), ('k', 'c'), ('nn', 'n'), ('ll', 'l'), ('n', 'nn'), ('l', 'll'), ('tt', 't'), ('t', 'tt'),
              ('mm', 'm'), ('ss', 's'), ('dd', 'd'), ('gg', 'g')]
+    # Latin printed with j and v where the headword has i and u (forisjurare / forisiurare): every j, or every v,
+    # at once (also counted as one difference)
     out = set()
+    if 'j' in word: out.add(word.replace('j', 'i'))
+    if 'i' in word: out.add(word.replace('i', 'j'))
+    if 'v' in word: out.add(word.replace('v', 'u'))
     for a, b in swaps:
         for m in re.finditer(re.escape(a), word):
             out.add(word[:m.start()] + b + word[m.end():])

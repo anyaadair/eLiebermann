@@ -180,7 +180,8 @@
     const loosen = (word, loose = 'user') => LOOSEN[looseMode(loose) || 'user'](word);
     // a word may have Liebermann's square brackets inside it, round letters he supplied (b[a]st[ar]dis,
     // [cyric]frið, [mæ]r[þ]e): they are part of the word, and left out when it is compared
-    const WORD = /\[?[\p{L}\p{N}⁊]+(?:\[[\p{L}]{1,8}\]?[\p{L}\p{N}⁊]*|\][\p{L}\p{N}⁊]+)*(?:['’][\p{L}]+)?/gu;
+    // (and an accent or other mark written as a character of its own after its letter, i + ´ = í, is part of it)
+    const WORD = /\[?[\p{L}\p{M}\p{N}⁊]+(?:\[[\p{L}\p{M}]{1,8}\]?[\p{L}\p{M}\p{N}⁊]*|\][\p{L}\p{M}\p{N}⁊]+)*(?:['’][\p{L}\p{M}]+)?/gu;
     const wordsCache = new Map();
     // A word folded: plain letters and digits need only lower case, which is most words.
     const PLAIN = /^[A-Za-z0-9]*$/;
