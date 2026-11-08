@@ -1041,6 +1041,8 @@
         if (pre && !post) {
             const last = lc(pre.slice(-1)), lead = lc(pre.slice(0, -1));
             for (let j = 1; j <= hw.length - 2; j++) if (lc(hw[j]) === last && lc(hw[0]) === lc(pre[0]) && lead.length <= j + 1 && pre.length + hw.length - j - 1 >= hw.length - 2) out.push(pre + hw.slice(j + 1));
+            // a prefix of its own before the letter shared (geb~ under abide = gebide, oðb~ under aberste = oðberste)
+            if (!out.length && pre.length >= 2 && !/[aeiouyæ]/i.test(last)) for (let j = 1; j <= 2 && j <= hw.length - 3; j++) if (lc(hw[j]) === last) { out.push(pre + hw.slice(j + 1)); break; }
         }
         if (pre && pre.slice(-1).toLowerCase() === hw[0].toLowerCase()) pre = pre.slice(0, -1);
         if (!post) { out.push(pre + hw); return [...new Set(out)].join(','); }
@@ -1112,7 +1114,7 @@
     const NOT_GLOSS = /^(?:[IVXLC]+|id|est|vel|sc|scil|Ip|Hunt|Var|Lond|Quadr|Inst|Hs|Hss|ff?|Z)$/;
     // glosses: look for the Latin translation of an Old English headword (not in Latin or French entries)
     function formBefore(flat, i, ital, bold, breaks, hw, affix, glosses) {
-        const toks = [...flat.slice(0, i).matchAll(/\u0001[^\u0003]*\u0003|[\p{L}~'’\[\]\-]*[\p{L}~][\p{L}~'’\[\]\-]*|\d+|[()|‖]/gu)];
+        const toks = [...flat.slice(0, i).matchAll(/\u0001[^\u0003]*\u0003|[\p{L}~'’\[\]\-]*[\p{L}~][\p{L}~'’\[\]\-]*|\d+|[()|‖—]/gu)];
         // the plain words nearest the citation ("terra testamentalis"), in case a GLOSS_MARK comes before them
         const gloss = []; let glossDone = false;
         const endGloss = () => { if (gloss.length) glossDone = true; };
@@ -1150,6 +1152,9 @@
             // "|" starts a new grammatical form ("| gen: ~des") or a new meaning ("| jedesmal VI Atr 20"):
             // with no form found, a new meaning is for the headword itself; a form with a label, nothing
             if (t === '|' || t === '‖') return orHw(/:/.test(flat.slice(at, i)) ? '' : hw);
+            // the long dash starts a new part of the entry (the meanings after the forms, "— (Recht) erlangen
+            // Ine 8"): a form from the part before it is not carried over
+            if (t === '—') { if (/\d$/.test(flat.slice(0, at)) && /^\d/.test(flat.slice(at + 1))) continue; return orHw(hw); }   // (not a range, "Af 56—60")
             if (/^\d+$/.test(t)) { if (seen && near.length) return orHw(hw); if (seen) shut = true; if (bold[at]) return hw; endGloss(); continue; }
             if (!ital[at] && !bold[at] && CLAUSE_WORD.test(t)) { endGloss(); plain++; continue; }
             if (!ital[at] && NOT_GLOSS.test(t)) endGloss();
@@ -1161,6 +1166,8 @@
             if (bold[at] && ital[at]) return orHw(hw);
             if (bold[at]) return orHw(t.length > 1 ? expandTilde(t, hw) : hw);   // the headword, or "a)" of a sense
             if (ital[at]) continue;
+            // "für geb~ II Cn 35 Ld": abide stands there for gebide, so the clause (here MS Ld) has the headword
+            if (t.includes('~') && k > 0 && ital[toks[k - 1].index] && /^für$/i.test(toks[k - 1][0])) return hw;
             if (t.includes('~')) return expandTilde(t, hw);
             // the word just before the citation, when it follows a grammatical label ("ptt pc: aboren",
             // "dt: …"; short abbreviations, not a German meaning such as "kaufen:"), whatever it looks like
