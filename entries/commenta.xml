@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">“Quadr Arg” and “Quadr Ded” (Quadripartitus, Argumentum and Dedicatio) linked as codes.</change>
+      <change when="2026-11-08">Citations of the preface of Quadr II (“Præf 12”) linked to their clauses (tools/link-quadr-praef.py).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,9 +36,10 @@
         <form type="lemma">
           <orth>commenta</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">commenta</hi> <hi rend="italic">Erfindungen, Träume</hi> [<hi rend="italic"><ref type="abbreviation" target="gram:aus"><abbr>aus</abbr></ref></hi> Firm. Mat.?] <ref type="lawCode" target="law:QuadrDed">Quadr Ded</ref> 17 (<hi rend="italic"><ref type="abbreviation" target="gram:geschrieben"><abbr>geschr.</abbr></ref></hi> come.). <ref type="lawCode" target="law:QuadrArg">Arg</ref> 11. II <ref type="abbreviation" target="gram:Praefatio"><abbr>Præf</abbr></ref> 7</dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">commenta</hi> <hi rend="italic">Erfindungen, Träume</hi> [<hi rend="italic"><ref type="abbreviation" target="gram:aus"><abbr>aus</abbr></ref></hi> Firm. Mat.?] <ref type="lawCode" target="law:QuadrDed">Quadr Ded</ref> 17 (<hi rend="italic"><ref type="abbreviation" target="gram:geschrieben"><abbr>geschr.</abbr></ref></hi> come.). <ref type="lawCode" target="law:QuadrArg">Arg</ref> 11. II <ref type="abbreviation" target="gram:Praefatio"><abbr>Præf</abbr></ref> <ref type="clause" target="clause:Quadr-II-Praef_7" n="Quadr II Præf 7">7</ref></dictScrap>
         <xr type="lawCode"><ref target="clause:QuadrDed_17">Quadr Ded 17</ref></xr>
         <xr type="lawCode"><ref target="clause:QuadrArg_11">Quadr Arg 11</ref></xr>
+        <xr type="lawCode"><ref target="clause:Quadr-II-Praef_7">Quadr II Præf 7</ref></xr>
       </entry>
     </body>
   </text>

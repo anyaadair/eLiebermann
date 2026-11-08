@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">"Quadr II" (Quadripartitus, Book II) linked as one code.</change>
+      <change when="2026-11-08">Citations of the preface of Quadr II (“Præf 12”) linked to their clauses (tools/link-quadr-praef.py).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,8 +36,9 @@
         <form type="lemma">
           <orth>invitare</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">invitare</hi> gloriam musis <hi rend="italic">auffordernd überlassen, einladend abtreten</hi> <ref type="lawCode" target="law:QuadrII">Quadr II</ref> <ref type="abbreviation" target="gram:Praefatio"><abbr>Praef</abbr></ref> 13 | <hi rend="bold">~atio</hi> placitandi <hi rend="italic">Vorladung zum Process</hi> <ref type="lawCode" target="law:LibLond">Lib Lond</ref> 5</dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">invitare</hi> gloriam musis <hi rend="italic">auffordernd überlassen, einladend abtreten</hi> <ref type="lawCode" target="law:QuadrII">Quadr II</ref> <ref type="abbreviation" target="gram:Praefatio"><abbr>Praef</abbr></ref> <ref type="clause" target="clause:Quadr-II-Praef_13" n="Quadr II Præf 13">13</ref> | <hi rend="bold">~atio</hi> placitandi <hi rend="italic">Vorladung zum Process</hi> <ref type="lawCode" target="law:LibLond">Lib Lond</ref> 5</dictScrap>
         <xr type="lawCode"><ref target="clause:LibLond_5">Lib Lond 5</ref></xr>
+        <xr type="lawCode"><ref target="clause:Quadr-II-Praef_13">Quadr II Præf 13</ref></xr>
       </entry>
     </body>
   </text>

@@ -1540,7 +1540,7 @@ scripts:
             // barun, baroun; Barnabas: Barnabe; ballia: baillie): see variantsOf
             if (marks.length) {
                 const orig = m => isOriginal(m);
-                const more = variantsOf([...new Set(marks.filter(orig).map(m => m.textContent).concat(got, wanted).filter(w => !/[*"]/.test(w)))], target, got);
+                const more = variantsOf([...new Set(marks.filter(orig).map(m => m.dataset.word || m.textContent).concat(got, wanted).filter(w => !/[*"]/.test(w)))], target, got);
                 if (more.length) { find.value = got.concat(more).join(' '); run(); }
             }
             if (also.length) {

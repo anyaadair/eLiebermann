@@ -293,27 +293,63 @@
         });
         const nodes = [];
         while (walker.nextNode()) nodes.push(walker.currentNode);
-        nodes.forEach(n => {
-            const holder = n.parentElement.closest('[lang], [data-lang]');
-            const lang = holder ? (holder.getAttribute('data-lang') || holder.getAttribute('lang')) : '';
-            const loose = looseFor ? looseFor(lang) : false;
-            if (loose === null) return;   // not looked for in this language
-            const ranges = findIn(n.data, terms, loose).filter(Boolean).sort((a, b) => a[0] - b[0]);
-            if (!ranges.length) return;
+        // A word may run across the end of one piece of text into the next, as where Liebermann prints the
+        // letters he supplies for an abbreviation in italics (bearnu<i>m</i>, deadu<i>m</i>): such pieces are
+        // searched as one. Only plain inline wrappers (italics, bold, spans) may lie between them, not a
+        // footnote mark (⁊<sup>b</sup>) or a break.
+        const INLINE = /^(I|EM|B|STRONG|U|SPAN)$/;
+        const joined = (a, b) => {
+            if (!/\p{L}$/u.test(a.data) || !/^\p{L}/u.test(b.data)) return false;
+            const r = document.createRange();
+            r.setStart(a, a.data.length); r.setEnd(b, 0);
+            if (r.toString() !== '') return false;
+            const els = r.cloneContents().querySelectorAll('*');
+            for (const e of els) if (!INLINE.test(e.tagName) || e.matches('[class*="note"], [class*="ref"], .part-mark')) return false;
+            for (let e = a.parentElement; e && !e.contains(b); e = e.parentElement) if (!INLINE.test(e.tagName) || e.matches('[class*="note"], [class*="ref"]')) return false;
+            for (let e = b.parentElement; e && !e.contains(a); e = e.parentElement) if (!INLINE.test(e.tagName) || e.matches('[class*="note"], [class*="ref"]')) return false;
+            return true;
+        };
+        const runs = [];
+        nodes.forEach((n, k) => { if (k && joined(nodes[k - 1], n)) runs[runs.length - 1].push(n); else runs.push([n]); });
+        const wrap = (n, pieces) => {   // pieces: [start, end, first?, word] within n
             const frag = document.createDocumentFragment();
             let at = 0;
-            ranges.forEach(([a, b]) => {
-                if (a < at) return;
+            pieces.forEach(([a, b, first, word]) => {
                 frag.appendChild(document.createTextNode(n.data.slice(at, a)));
                 const m = document.createElement('mark');
                 m.className = 'find-hit';
                 m.textContent = n.data.slice(a, b);
+                if (word) m.dataset.word = word;
                 frag.appendChild(m);
-                out.push(m);
+                if (first) out.push(m);
                 at = b;
             });
             frag.appendChild(document.createTextNode(n.data.slice(at)));
             n.replaceWith(frag);
+        };
+        runs.forEach(run => {
+            const n = run[0];
+            const holder = n.parentElement.closest('[lang], [data-lang]');
+            const lang = holder ? (holder.getAttribute('data-lang') || holder.getAttribute('lang')) : '';
+            const loose = looseFor ? looseFor(lang) : false;
+            if (loose === null) return;   // not looked for in this language
+            const text = run.map(x => x.data).join('');
+            const ranges = findIn(text, terms, loose).filter(Boolean).sort((a, b) => a[0] - b[0]);
+            if (!ranges.length) return;
+            // the hits, cut at the edges of the pieces of text
+            const per = run.map(() => []);
+            let at = 0;
+            ranges.forEach(([a, b]) => {
+                if (a < at) return;
+                at = b;
+                let off = 0, first = true;
+                run.forEach((x, k) => {
+                    const s = Math.max(a, off), e = Math.min(b, off + x.data.length);
+                    if (s < e) { per[k].push([s - off, e - off, first, run.length > 1 ? text.slice(a, b) : '']); first = false; }
+                    off += x.data.length;
+                });
+            });
+            run.forEach((x, k) => { if (per[k].length) wrap(x, per[k]); });
         });
         return out;
     }
