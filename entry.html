@@ -417,6 +417,13 @@ scripts:
         // on those made by hand (<ref type="clause" … n="Ine 70,1">): "find" replaces the form the rules
         // chose; every word in "mark" is marked as well, wherever it is found in the clause.
         const extra = linkHighlights[slug] || {};
+        // a link made by hand, with no word of its own in the list: the headword is looked for (and its
+        // spellings in the clause), as the rules' links do
+        const hwPlain = String(e.headword || '').split(',')[0].replace(/[\[\]()\-\d¹²³⁴⁵⁶⁷⁸⁹⁰\s]/g, '');
+        if (!NO_HIGHLIGHT.includes(e.lang) && !e.spelling && hwPlain.length > 1) target.querySelectorAll('.liebermann-text a.ref-clause[data-hand]').forEach(a => {
+            if (/[?&]find=/.test(a.getAttribute('href')) || extra[(a.title || '').replace(/ in the laws database$/, '')]) return;
+            a.setAttribute('href', a.getAttribute('href') + (a.getAttribute('href').includes('?') ? '&' : '?') + 'find=' + encodeURIComponent(hwPlain));
+        });
         target.querySelectorAll('.liebermann-text a.ref-clause').forEach(a => {
             const rule = extra[(a.title || '').replace(/ in the laws database$/, '')];
             if (!rule) return;

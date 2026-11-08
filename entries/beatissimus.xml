@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">"Quadr II" (Quadripartitus, Book II) linked as one code.</change>
+      <change when="2026-11-08">Citations of the preface of Quadr II (“Præf 12”) linked to their clauses (tools/link-quadr-praef.py).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,13 +36,14 @@
         <form type="lemma">
           <orth>beatissimus</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">beatissimus</hi> <hi rend="bold">1</hi>) <hi rend="italic">selig verstorben</hi> [? <hi rend="italic"><ref type="abbreviation" target="gram:oder"><abbr>oder</abbr></ref></hi> = <hi rend="italic"><ref type="abbreviation" target="gram:Nummer"><abbr>n.</abbr></ref></hi> 2] Anselmus archiepiscopus [Cantuar.] <ref type="lawCode" target="law:QuadrII">Quadr II</ref> 8c <hi rend="bold">2</hi>) <hi rend="italic">erlaucht, edel</hi> rex (<hi rend="italic">Heinrich I.</hi>) <ref type="lawCode" target="law:QuadrII">Quadr II</ref> <ref type="abbreviation" target="gram:Praefatio"><abbr>Præf</abbr></ref> 12. <ref type="lawCode" target="law:Hn">Hn</ref> 8,6</dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">beatissimus</hi> <hi rend="bold">1</hi>) <hi rend="italic">selig verstorben</hi> [? <hi rend="italic"><ref type="abbreviation" target="gram:oder"><abbr>oder</abbr></ref></hi> = <hi rend="italic"><ref type="abbreviation" target="gram:Nummer"><abbr>n.</abbr></ref></hi> 2] Anselmus archiepiscopus [Cantuar.] <ref type="lawCode" target="law:QuadrII">Quadr II</ref> 8c <hi rend="bold">2</hi>) <hi rend="italic">erlaucht, edel</hi> rex (<hi rend="italic">Heinrich I.</hi>) <ref type="lawCode" target="law:QuadrII">Quadr II</ref> <ref type="abbreviation" target="gram:Praefatio"><abbr>Præf</abbr></ref> <ref type="clause" target="clause:Quadr-II-Praef_12" n="Quadr II Præf 12">12</ref>. <ref type="lawCode" target="law:Hn">Hn</ref> 8,6</dictScrap>
         <dictScrap type="senses">
           <sense n="1"><hi rend="italic">selig verstorben</hi> [? <hi rend="italic"><ref type="abbreviation" target="gram:oder"><abbr>oder</abbr></ref></hi> = <hi rend="italic"><ref type="abbreviation" target="gram:Nummer"><abbr>n.</abbr></ref></hi> 2] Anselmus archiepiscopus [Cantuar.] <ref type="lawCode" target="law:QuadrII">Quadr II</ref> 8c</sense>
-          <sense n="2"><hi rend="italic">erlaucht, edel</hi> rex (<hi rend="italic">Heinrich I.</hi>) <ref type="lawCode" target="law:QuadrII">Quadr II</ref> <ref type="abbreviation" target="gram:Praefatio"><abbr>Præf</abbr></ref> 12. <ref type="lawCode" target="law:Hn">Hn</ref> 8,6</sense>
+          <sense n="2"><hi rend="italic">erlaucht, edel</hi> rex (<hi rend="italic">Heinrich I.</hi>) <ref type="lawCode" target="law:QuadrII">Quadr II</ref> <ref type="abbreviation" target="gram:Praefatio"><abbr>Præf</abbr></ref> <ref type="clause" target="clause:Quadr-II-Praef_12" n="Quadr II Præf 12">12</ref>. <ref type="lawCode" target="law:Hn">Hn</ref> 8,6</sense>
         </dictScrap>
         <xr type="lawCode"><ref target="clause:QuadrII_8c">Quadr II 8c</ref></xr>
         <xr type="lawCode"><ref target="clause:Hn_8-6">Hn 8,6</ref></xr>
+        <xr type="lawCode"><ref target="clause:Quadr-II-Praef_12">Quadr II Præf 12</ref></xr>
       </entry>
     </body>
   </text>

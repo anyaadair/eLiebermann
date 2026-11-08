@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">“Quadr Arg” and “Quadr Ded” (Quadripartitus, Argumentum and Dedicatio) linked as codes.</change>
+      <change when="2026-11-08">Citations of the preface of Quadr II (“Præf 12”) linked to their clauses (tools/link-quadr-praef.py).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,10 +36,11 @@
         <form type="lemma">
           <orth>Mathilde</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">Mathilde</hi> <hi rend="bold">I</hi>) secunda, <hi rend="italic"><ref type="abbreviation" target="gram:ablativus"><abbr>abl</abbr></ref></hi>, <hi rend="italic">Gemahlin Heinrichs I.</hi> <ref type="lawCode" target="law:QuadrArg">Quadr Arg</ref> 25. II <ref type="abbreviation" target="gram:Praefatio"><abbr>Præf</abbr></ref> 14,1 = <ref type="lawCode" target="law:Hn">Hn</ref> Pro 2 <hi rend="bold">II</hi>) <hi rend="italic">beider Tochter</hi> [<hi rend="italic">spätere Kaiserin</hi>] <ref type="lawCode" target="law:QuadrArg">Quadr Arg</ref> 28. II <ref type="abbreviation" target="gram:Praefatio"><abbr>Præf</abbr></ref> 14,1 = <ref type="lawCode" target="law:Hn">Hn</ref> Pro 2</dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">Mathilde</hi> <hi rend="bold">I</hi>) secunda, <hi rend="italic"><ref type="abbreviation" target="gram:ablativus"><abbr>abl</abbr></ref></hi>, <hi rend="italic">Gemahlin Heinrichs I.</hi> <ref type="lawCode" target="law:QuadrArg">Quadr Arg</ref> 25. II <ref type="abbreviation" target="gram:Praefatio"><abbr>Præf</abbr></ref> <ref type="clause" target="clause:Quadr-II-Praef_14-1" n="Quadr II Præf 14,1">14,1</ref> = <ref type="lawCode" target="law:Hn">Hn</ref> Pro 2 <hi rend="bold">II</hi>) <hi rend="italic">beider Tochter</hi> [<hi rend="italic">spätere Kaiserin</hi>] <ref type="lawCode" target="law:QuadrArg">Quadr Arg</ref> 28. II <ref type="abbreviation" target="gram:Praefatio"><abbr>Præf</abbr></ref> <ref type="clause" target="clause:Quadr-II-Praef_14-1" n="Quadr II Præf 14,1">14,1</ref> = <ref type="lawCode" target="law:Hn">Hn</ref> Pro 2</dictScrap>
         <xr type="lawCode"><ref target="clause:QuadrArg_25">Quadr Arg 25</ref></xr>
         <xr type="lawCode"><ref target="clause:Hn_Prooem-2">Hn Pro 2</ref></xr>
         <xr type="lawCode"><ref target="clause:QuadrArg_28">Quadr Arg 28</ref></xr>
+        <xr type="lawCode"><ref target="clause:Quadr-II-Praef_14-1">Quadr II Præf 14,1</ref></xr>
       </entry>
     </body>
   </text>

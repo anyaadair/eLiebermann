@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">"Quadr II" (Quadripartitus, Book II) linked as one code.</change>
+      <change when="2026-11-08">Citations of the preface of Quadr II (“Præf 12”) linked to their clauses (tools/link-quadr-praef.py).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,8 +36,9 @@
         <form type="lemma">
           <orth>irradiat</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">irradiat</hi>; pacis tripudia, qu[a]e regno ~ <hi rend="italic">ausstrahlt</hi> [<hi rend="italic"><ref type="abbreviation" target="gram:transitiv"><abbr>tr.</abbr></ref></hi>], <hi rend="italic">erglänzen lässt</hi> <ref type="lawCode" target="law:QuadrII">Quadr II</ref> <ref type="abbreviation" target="gram:Praefatio"><abbr>Praef</abbr></ref> 14 | <hi rend="italic"><ref type="abbreviation" target="gram:daraus"><abbr>daraus</abbr></ref></hi> pacis gaudia, quibus regno ~ [<hi rend="italic"><ref type="abbreviation" target="gram:intransitiv"><abbr>intr.</abbr></ref></hi>] <hi rend="italic">erstrahlt</hi> <ref type="lawCode" target="law:Hn">Hn</ref> Pro 1</dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">irradiat</hi>; pacis tripudia, qu[a]e regno ~ <hi rend="italic">ausstrahlt</hi> [<hi rend="italic"><ref type="abbreviation" target="gram:transitiv"><abbr>tr.</abbr></ref></hi>], <hi rend="italic">erglänzen lässt</hi> <ref type="lawCode" target="law:QuadrII">Quadr II</ref> <ref type="abbreviation" target="gram:Praefatio"><abbr>Praef</abbr></ref> <ref type="clause" target="clause:Quadr-II-Praef_14" n="Quadr II Præf 14">14</ref> | <hi rend="italic"><ref type="abbreviation" target="gram:daraus"><abbr>daraus</abbr></ref></hi> pacis gaudia, quibus regno ~ [<hi rend="italic"><ref type="abbreviation" target="gram:intransitiv"><abbr>intr.</abbr></ref></hi>] <hi rend="italic">erstrahlt</hi> <ref type="lawCode" target="law:Hn">Hn</ref> Pro 1</dictScrap>
         <xr type="lawCode"><ref target="clause:Hn_Prooem-1">Hn Pro 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:Quadr-II-Praef_14">Quadr II Præf 14</ref></xr>
       </entry>
     </body>
   </text>

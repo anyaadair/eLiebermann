@@ -1671,7 +1671,7 @@ ${translation}
                 const cls = attr('type') ? ` class="ref-${escapeXml(attr('type'))}"` : '';
                 // a clause linked by hand (<ref type="clause" … n="Ine 70,1">) is named like the
                 // links the rules make, so the entry page treats both alike
-                const tip = attr('type') === 'clause' && attr('n') ? ` title="${escapeXml(attr('n'))} in the laws database"` : '';
+                const tip = attr('type') === 'clause' && attr('n') ? ` title="${escapeXml(attr('n'))} in the laws database" data-hand="1"` : '';
                 return `<a href="${escapeXml(target)}"${cls}${tip}${ext}>${inner()}</a>`;
             }
             case 'ptr': {

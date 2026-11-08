@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">"Quadr II" (Quadripartitus, Book II) linked as one code.</change>
+      <change when="2026-11-08">Citations of the preface of Quadr II (“Præf 12”) linked to their clauses (tools/link-quadr-praef.py).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,12 +36,13 @@
         <form type="lemma">
           <orth>potentatus</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">potentatus</hi> <hi rend="bold">1</hi>) <hi rend="italic">Amtsgewalt</hi> <ref type="lawCode" target="law:Hn">Hn</ref> 20,2 <hi rend="bold">2</hi>) <hi rend="italic">Machtübung</hi> <ref type="lawCode" target="law:QuadrII">Quadr II</ref> <ref type="abbreviation" target="gram:Praefatio"><abbr>Præf</abbr></ref> 6</dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">potentatus</hi> <hi rend="bold">1</hi>) <hi rend="italic">Amtsgewalt</hi> <ref type="lawCode" target="law:Hn">Hn</ref> 20,2 <hi rend="bold">2</hi>) <hi rend="italic">Machtübung</hi> <ref type="lawCode" target="law:QuadrII">Quadr II</ref> <ref type="abbreviation" target="gram:Praefatio"><abbr>Præf</abbr></ref> <ref type="clause" target="clause:Quadr-II-Praef_6" n="Quadr II Præf 6">6</ref></dictScrap>
         <dictScrap type="senses">
           <sense n="1"><hi rend="italic">Amtsgewalt</hi> <ref type="lawCode" target="law:Hn">Hn</ref> 20,2</sense>
-          <sense n="2"><hi rend="italic">Machtübung</hi> <ref type="lawCode" target="law:QuadrII">Quadr II</ref> <ref type="abbreviation" target="gram:Praefatio"><abbr>Præf</abbr></ref> 6</sense>
+          <sense n="2"><hi rend="italic">Machtübung</hi> <ref type="lawCode" target="law:QuadrII">Quadr II</ref> <ref type="abbreviation" target="gram:Praefatio"><abbr>Præf</abbr></ref> <ref type="clause" target="clause:Quadr-II-Praef_6" n="Quadr II Præf 6">6</ref></sense>
         </dictScrap>
         <xr type="lawCode"><ref target="clause:Hn_20-2">Hn 20,2</ref></xr>
+        <xr type="lawCode"><ref target="clause:Quadr-II-Praef_6">Quadr II Præf 6</ref></xr>
       </entry>
     </body>
   </text>
