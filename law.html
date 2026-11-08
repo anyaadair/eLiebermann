@@ -1495,7 +1495,7 @@ scripts:
             for (let t = walker.nextNode(); t; t = walker.nextNode()) {
                 const el = t.parentElement;
                 if (!el || !isOriginal(el) || el.closest('mark')) continue;
-                for (const m of t.data.matchAll(/\p{L}[\p{L}\[\]]*\p{L}|\p{L}/gu)) {
+                for (const m of t.data.matchAll(/\p{L}[\p{L}\p{M}\[\]]*[\p{L}\p{M}]|\p{L}/gu)) {
                     const w = m[0], f = fold(w);
                     if (seen.has(w) || f.length < 3) continue;
                     if (words.some(b => like(f, b))) { seen.add(w); out.push(w); }
