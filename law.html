@@ -1456,7 +1456,7 @@ scripts:
         // not feoh: feortig). A longer word: its beginning (all but the last three letters, at least four)
         // (at most seven letters) differs at most by a vowel, a doubled letter, g/h, c/t or d/ð (ballia: baillie; burg: burh; barganiare:
         // barganiet; not Æðelstan: æþelum). Liebermann's [ ] inside a word are left out (b[a]st[ar]dis).
-        function variantsOf(found, root, have) {
+        function variantsOf(found, root, have, loose) {
             const fold = x => x.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
                 .replace(/æ/g, 'ae').replace(/ð/g, 'þ').replace(/v/g, 'u').replace(/j/g, 'i').replace(/y/g, 'i').replace(/k/g, 'c').replace(/[^a-zþ]/g, '');
             const V = /[aeiou]/;
@@ -1482,7 +1482,9 @@ scripts:
             const strip = w => (w.length > 5 && w.startsWith('ge') ? w.slice(2) : w);
             const like = (a, b) => {
                 a = strip(a); b = strip(b);
-                if (a.length > b.length + 5) return false;
+                // (a much shorter word is another word, abbodas for abbodissan: but where the word is not in the
+                // clause at all, a shorter one may be part of it, hundred for hundredgemot)
+                if (a.length > b.length + 5 || (!loose && b.length >= 7 && a.length < b.length - 2)) return false;
                 if (b.length === 4) return a.length >= 4 && a.slice(0, 3) === b.slice(0, 3) && (a[3] === b[3] || (V.test(a[3]) && V.test(b[3])) || /^(gh|hg)$/.test(a[3] + b[3]));
                 const n = Math.min(7, Math.max(4, b.length - 3));
                 if (a.length < n) return false;
@@ -1531,14 +1533,16 @@ scripts:
             // is, the shorter beginnings of the first, until one is found
             const got = [];
             for (const w of wanted) { find.value = w; run(); if (marks.length) got.push(w); }
-            // none found: the same word in another spelling (barganiare: Q's barganiet), else shorter beginnings
-            if (!got.length && letters.length) got.push(...variantsOf(wanted.filter(w => !/[*"]/.test(w)), target));
+            // none found: the word as the end of a longer one (Liebermann's "ut aberste" is utaberste in the
+            // clause), then the same word in another spelling (barganiare: Q's barganiet), else shorter beginnings
+            if (!got.length && letters.length >= 5) for (const w of wanted.filter(w => !/[*"]/.test(w) && w.length >= 5)) { find.value = '*' + w; run(); if (marks.length) got.push('*' + w); }
+            if (!got.length && letters.length) got.push(...variantsOf(wanted.filter(w => !/[*"]/.test(w)), target, [], true));
             if (!got.length) for (const w of stems) { find.value = w; run(); if (marks.length) { got.push(w); break; } }
             find.value = got.join(' ');
             run();
             // and the same word in the other texts of the clause, in their own spelling (baro: barones,
             // barun, baroun; Barnabas: Barnabe; ballia: baillie): see variantsOf
-            if (marks.length) {
+            if (marks.length && !got.some(w => w.startsWith('*'))) {   // (not for a word found only inside a longer one)
                 const orig = m => isOriginal(m);
                 const more = variantsOf([...new Set(marks.filter(orig).map(m => m.dataset.word || m.textContent).concat(got, wanted).filter(w => !/[*"]/.test(w)))], target, got);
                 if (more.length) { find.value = got.concat(more).join(' '); run(); }
