@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Shared vocabulary</title>
+<style>
+:root {
+  --bg: #fbfaf7; --fg: #22201c; --muted: #6b665d; --line: #d9d4ca; --panel: #ffffff; --accent: #8a3b12; --edge: #8c8579; --hi: #c0392b;
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #1a1916; --fg: #ebe7df; --muted: #a39d92; --line: #3a3732; --panel: #24221f; --accent: #e39a6b; --edge: #8a847a; --hi: #ff7a66; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); }
+header { padding: 20px 24px 8px; max-width: 1100px; }
+h1 { margin: 0 0 6px; font-size: 1.6rem; font-weight: 600; }
+header p { margin: 4px 0; color: var(--muted); line-height: 1.45; max-width: 78ch; }
+.controls { display: flex; flex-wrap: wrap; gap: 8px 22px; padding: 10px 24px; align-items: center; border-bottom: 1px solid var(--line); font-size: .92rem; }
+.controls fieldset { border: 0; padding: 0; margin: 0; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.controls legend { float: left; margin-right: 6px; color: var(--muted); font-size: .8rem; text-transform: uppercase; letter-spacing: .06em; }
+input[type=search] { font: inherit; padding: 4px 8px; border: 1px solid var(--line); border-radius: 4px; background: var(--panel); color: var(--fg); width: 16em; }
+main { display: grid; grid-template-columns: minmax(0, 1fr) 360px; min-height: 70vh; }
+@media (max-width: 900px) { main { grid-template-columns: 1fr; } }
+#chart { position: relative; overflow: hidden; }
+#chart svg { display: block; width: 100%; }
+aside { border-left: 1px solid var(--line); padding: 16px 18px; background: var(--panel); max-height: calc(100vh - 40px); overflow-y: auto; position: sticky; top: 0; font-size: .92rem; }
+aside h2 { font-size: 1.15rem; margin: 0 0 4px; }
+aside h3 { font-size: .95rem; margin: 16px 0 4px; }
+.muted { color: var(--muted); }
+aside a { color: var(--accent); }
+.words { display: flex; flex-wrap: wrap; gap: 4px 10px; }
+.words a { text-decoration: none; }
+.words a:hover { text-decoration: underline; }
+.words small { color: var(--muted); }
+ul.near { list-style: none; padding: 0; margin: 0; }
+ul.near li { display: flex; justify-content: space-between; border-bottom: 1px dotted var(--line); padding: 2px 0; cursor: pointer; }
+ul.near li:hover { color: var(--accent); }
+.node circle { stroke: var(--bg); stroke-width: 1.5; cursor: pointer; }
+.node text { font-size: 11px; fill: var(--fg); pointer-events: none; paint-order: stroke; stroke: var(--bg); stroke-width: 3px; }
+.edge { stroke: var(--edge); }
+.dim { opacity: .1; }
+.hit circle { stroke: var(--hi); stroke-width: 3; }
+#suggest { position: absolute; background: var(--panel); border: 1px solid var(--line); list-style: none; margin: 0; padding: 0; max-height: 260px; overflow-y: auto; z-index: 4; min-width: 16em; }
+#suggest li { padding: 3px 8px; cursor: pointer; }
+#suggest li:hover, #suggest li.on { background: var(--line); }
+#tip { position: fixed; pointer-events: none; background: var(--panel); border: 1px solid var(--line); padding: 6px 9px; font-size: .82rem; border-radius: 4px; display: none; max-width: 300px; z-index: 5; }
+.legend { display: flex; flex-wrap: wrap; gap: 4px 12px; padding: 8px 24px; font-size: .8rem; color: var(--muted); }
+.swatch { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 4px; vertical-align: middle; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Law codes by shared vocabulary</h1>
+  <p>Two law codes are joined when many of the same Wörterbuch headwords cite clauses in both. Each code keeps only its closest neighbours (by the Jaccard overlap of their word lists), so the clusters show families of texts that use the same words. Search a headword to light up every code it is cited in; click a code for its closest codes and its most distinctive words.</p>
+  <p class="muted">An experiment, made from the law code citations (<code>&lt;xr type="lawCode"&gt;</code>) in <code>entries/</code>. Codes with fewer than three cited words are left out.</p>
+</header>
+<div class="controls">
+  <fieldset><legend>Words in</legend>
+    <label><input type="checkbox" name="lang" value="ang" checked> Old English</label>
+    <label><input type="checkbox" name="lang" value="la" checked> Latin</label>
+    <label><input type="checkbox" name="lang" value="fro" checked> French</label>
+  </fieldset>
+  <fieldset><legend>Neighbours per code</legend>
+    <input type="range" id="k" min="1" max="8" value="3" aria-label="Neighbours per code"> <span id="k-n">3</span>
+  </fieldset>
+  <fieldset style="position:relative"><legend>Headword</legend>
+    <input type="search" id="q" placeholder="e.g. wergild, ceap, mund" autocomplete="off">
+    <ul id="suggest" hidden></ul>
+  </fieldset>
+</div>
+<div class="legend" id="legend"></div>
+<main>
+  <div id="chart"></div>
+  <aside id="side"><p class="muted">Click a law code, or search for a headword.</p></aside>
+</main>
+<div id="tip"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script>
+const DATA = /*DATA*/null;
+const SITE = 'https://anyaadair.github.io/eLiebermann/';
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const LANG = { ang: 'OE', la: 'Lat.', fro: 'Fr.', de: 'gram.' };
+const groupColour = d3.scaleOrdinal(DATA.groups, d3.schemeTableau10.concat(d3.schemeSet3));
+const S = { langs: new Set(['ang', 'la', 'fro']), k: 3, focus: null, word: null };
+const entryUrl = id => SITE + 'entry.html?id=' + encodeURIComponent(id);
+document.getElementById('legend').innerHTML = DATA.groups.map(g => `<span><span class="swatch" style="background:${groupColour(g)}"></span>${esc(g)}</span>`).join('');
+
+// words per code, under the language filter
+function sets() {
+  const m = new Map(DATA.codes.map(c => [c.code, new Set()]));
+  DATA.words.forEach((w, i) => { if (!S.langs.has(w[2])) return; Object.keys(w[4]).forEach(c => m.has(c) && m.get(c).add(i)); });
+  return m;
+}
+function edges(m) {
+  const codes = [...m.keys()].filter(c => m.get(c).size >= 3);
+  const sim = new Map();
+  codes.forEach((a, i) => codes.slice(i + 1).forEach(b => {
+    const A = m.get(a), B = m.get(b); let n = 0;
+    const [s, t] = A.size < B.size ? [A, B] : [B, A]; s.forEach(x => t.has(x) && n++);
+    if (n) sim.set(a + '\u0000' + b, { a, b, n, j: n / (A.size + B.size - n) });
+  }));
+  const keep = new Map();
+  codes.forEach(c => {
+    [...sim.values()].filter(e => e.a === c || e.b === c).sort((x, y) => y.j - x.j).slice(0, S.k)
+      .forEach(e => keep.set(e.a + '\u0000' + e.b, e));
+  });
+  return { codes, all: sim, edges: [...keep.values()] };
+}
+
+const tip = document.getElementById('tip');
+const showTip = (e, h) => { tip.innerHTML = h; tip.style.display = 'block'; tip.style.left = Math.min(e.clientX + 12, innerWidth - 310) + 'px'; tip.style.top = e.clientY + 12 + 'px'; };
+const hideTip = () => { tip.style.display = 'none'; };
+
+let sim, M, E, nodeSel, edgeSel;
+function draw() {
+  if (sim) sim.stop();
+  const chart = document.getElementById('chart');
+  chart.innerHTML = '';
+  M = sets(); E = edges(M);
+  const width = chart.clientWidth || 900, height = Math.max(620, innerHeight - 220);
+  const byCode = new Map(DATA.codes.map(c => [c.code, c]));
+  const ns = E.codes.map(c => ({ ...byCode.get(c), id: c, size: M.get(c).size }));
+  const ls = E.edges.map(e => ({ ...e, source: e.a, target: e.b }));
+  const r = d3.scaleSqrt([1, d3.max(ns, n => n.size)], [3, 22]);
+  const w = d3.scaleLinear([0, d3.max(ls, l => l.j) || 1], [.5, 6]);
+  const svg = d3.select(chart).append('svg').attr('viewBox', [0, 0, width, height]).attr('height', height);
+  const g = svg.append('g');
+  edgeSel = g.append('g').selectAll('line').data(ls).join('line').attr('class', 'edge').attr('stroke-width', l => w(l.j)).attr('stroke-opacity', .45)
+    .on('mousemove', (e, l) => showTip(e, `<strong>${esc(l.a)} — ${esc(l.b)}</strong><br>${l.n} shared headwords (overlap ${(l.j * 100).toFixed(0)}%)`)).on('mouseleave', hideTip);
+  nodeSel = g.append('g').selectAll('g').data(ns).join('g').attr('class', 'node');
+  nodeSel.append('circle').attr('r', n => r(n.size)).attr('fill', n => groupColour(n.group));
+  nodeSel.append('text').attr('x', n => r(n.size) + 2).attr('y', 4).text(n => n.code);
+  nodeSel.on('mousemove', (e, n) => showTip(e, `<strong>${esc(n.code)}</strong> ${esc(n.name)}<br>${n.size} headwords cite it<br><span class="muted">${esc(n.group)}</span>`))
+    .on('mouseleave', hideTip).on('click', (e, n) => focus(n.code));
+  sim = d3.forceSimulation(ns)
+    .force('link', d3.forceLink(ls).id(d => d.id).distance(l => 30 + 120 * (1 - l.j)).strength(l => .2 + l.j))
+    .force('charge', d3.forceManyBody().strength(-160))
+    .force('x', d3.forceX(width / 2).strength(.04)).force('y', d3.forceY(height / 2).strength(.06))
+    .force('collide', d3.forceCollide(n => r(n.size) + 4))
+    .on('tick', () => {
+      edgeSel.attr('x1', l => l.source.x).attr('y1', l => l.source.y).attr('x2', l => l.target.x).attr('y2', l => l.target.y);
+      nodeSel.attr('transform', n => `translate(${n.x},${n.y})`);
+    });
+  nodeSel.call(d3.drag()
+    .on('start', (e, d) => { if (!e.active) sim.alphaTarget(.3).restart(); d.fx = d.x; d.fy = d.y; })
+    .on('drag', (e, d) => { d.fx = e.x; d.fy = e.y; })
+    .on('end', (e, d) => { if (!e.active) sim.alphaTarget(0); d.fx = null; d.fy = null; }));
+  svg.call(d3.zoom().scaleExtent([.3, 5]).on('zoom', e => g.attr('transform', e.transform)));
+  if (S.word != null) word(S.word); else if (S.focus && M.has(S.focus)) focus(S.focus);
+}
+
+function focus(code) {
+  S.focus = code; S.word = null;
+  const c = DATA.codes.find(x => x.code === code);
+  const mine = M.get(code);
+  const near = [...E.all.values()].filter(e => e.a === code || e.b === code).sort((x, y) => y.j - x.j).slice(0, 12);
+  const nearSet = new Set(near.slice(0, S.k).flatMap(e => [e.a, e.b]));
+  nodeSel.classed('dim', n => !nearSet.has(n.code) && n.code !== code).classed('hit', n => n.code === code);
+  edgeSel.classed('dim', l => l.a !== code && l.b !== code);
+  // distinctive: cited in this code, in as few other codes as possible, cited here most often
+  const nCodes = i => Object.keys(DATA.words[i][4]).length;
+  const words = [...mine].sort((i, j) => nCodes(i) - nCodes(j) || DATA.words[j][4][code] - DATA.words[i][4][code]).slice(0, 40);
+  const common = [...mine].sort((i, j) => DATA.words[j][4][code] - DATA.words[i][4][code]).slice(0, 25);
+  const wl = list => `<div class="words">${list.map(i => { const w = DATA.words[i]; return `<a href="${entryUrl(w[0])}" target="_blank" rel="noopener" title="${esc(w[3])}">${esc(w[1])}</a><small>${LANG[w[2]] || ''}</small>`; }).join(' ')}</div>`;
+  document.getElementById('side').innerHTML = `
+    <h2>${esc(code)}</h2><p class="muted">${esc(c.name)}<br>${esc(c.date || c.group)}<br>${mine.size} headwords cite it</p>
+    <p><a href="${SITE}lawcode.html?code=${encodeURIComponent(code)}" target="_blank" rel="noopener">Read the code</a> · <a href="#" id="clear">Show all</a></p>
+    <h3>Closest codes</h3>
+    <ul class="near">${near.map(e => { const o = e.a === code ? e.b : e.a; return `<li data-c="${esc(o)}"><span>${esc(o)}</span><span class="muted">${e.n} words · ${(e.j * 100).toFixed(0)}%</span></li>`; }).join('')}</ul>
+    <h3>Most distinctive words</h3><p class="muted small">Cited in this code and in the fewest others.</p>${wl(words)}
+    <h3>Most cited words</h3>${wl(common)}`;
+  document.querySelectorAll('ul.near li').forEach(li => li.addEventListener('click', () => focus(li.dataset.c)));
+  document.getElementById('clear').addEventListener('click', e => { e.preventDefault(); clear(); });
+}
+function clear() {
+  S.focus = null; S.word = null; nodeSel.classed('dim', false).classed('hit', false); edgeSel.classed('dim', false);
+  document.getElementById('side').innerHTML = '<p class="muted">Click a law code, or search for a headword.</p>';
+}
+function word(i) {
+  S.word = i; S.focus = null;
+  const w = DATA.words[i];
+  const cs = w[4];
+  nodeSel.classed('dim', n => !(n.code in cs)).classed('hit', n => n.code in cs);
+  edgeSel.classed('dim', l => !(l.a in cs && l.b in cs));
+  const order = DATA.codes.filter(c => c.code in cs);
+  document.getElementById('side').innerHTML = `
+    <h2>${esc(w[1])}</h2><p class="muted">${LANG[w[2]] || ''} ${esc(w[3])}</p>
+    <p><a href="${entryUrl(w[0])}" target="_blank" rel="noopener">Open the entry</a> · <a href="#" id="clear">Show all</a></p>
+    <h3>Cited in ${order.length} law code(s)</h3>
+    <ul class="near">${order.map(c => `<li data-c="${esc(c.code)}"><span>${esc(c.code)} <span class="muted">${esc(c.name)}</span></span><span>${cs[c.code]}</span></li>`).join('')}</ul>`;
+  document.querySelectorAll('ul.near li').forEach(li => li.addEventListener('click', () => focus(li.dataset.c)));
+  document.getElementById('clear').addEventListener('click', e => { e.preventDefault(); clear(); });
+}
+
+// headword search
+const q = document.getElementById('q'), sug = document.getElementById('suggest');
+const fold = s => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/æ/g, 'ae').replace(/[þð]/g, 'th');
+const folded = DATA.words.map(w => fold(w[1]));
+let shown = [];
+q.addEventListener('input', () => {
+  const t = fold(q.value.trim());
+  if (!t) { sug.hidden = true; return; }
+  shown = folded.map((f, i) => [f, i]).filter(([f]) => f.startsWith(t)).sort((a, b) => a[0].length - b[0].length).slice(0, 15).map(x => x[1]);
+  sug.innerHTML = shown.map(i => `<li data-i="${i}">${esc(DATA.words[i][1])} <span class="muted">${LANG[DATA.words[i][2]] || ''} · ${Object.keys(DATA.words[i][4]).length} codes</span></li>`).join('');
+  sug.hidden = !shown.length;
+});
+sug.addEventListener('click', e => { const li = e.target.closest('li'); if (li) { word(+li.dataset.i); sug.hidden = true; q.value = DATA.words[+li.dataset.i][1]; } });
+q.addEventListener('keydown', e => { if (e.key === 'Enter' && shown.length) { word(shown[0]); sug.hidden = true; q.value = DATA.words[shown[0]][1]; } });
+
+document.querySelectorAll('input[name=lang]').forEach(cb => cb.addEventListener('change', () => { cb.checked ? S.langs.add(cb.value) : S.langs.delete(cb.value); draw(); }));
+document.getElementById('k').addEventListener('input', e => { S.k = +e.target.value; document.getElementById('k-n').textContent = S.k; draw(); });
+draw();
+</script>
+</body>
+</html>
