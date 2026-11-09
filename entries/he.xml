@@ -32,6 +32,8 @@
       <change when="2026-10-19">“bez.”, “fm”, “no”, “nt”, “pl” linked to the abbreviations list (printed bold italic, missed before).</change>
       <change when="2026-10-28">“von” unlinked from the abbreviations list: here it is ordinary German, not an abbreviation (Anya Adair).</change>
       <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
+      <change when="2026-11-09">II Ew 1 linked to II Ew 1 (it went to 1,1).</change>
+      <change when="2026-11-09">Iud Dei VII cited with MS A linked to the Old English text (A), not the Latin.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -75,7 +77,7 @@
         <xr type="lawCode"><ref target="clause:Ine_5">Ine 5</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_5-1">Ine 5,1</ref></xr>
         <xr type="lawCode"><ref target="clause:EGu_5">EGu 5</ref></xr>
-        <xr type="lawCode"><ref target="clause:IIEw_1-1">II Ew 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIEw_II-Ew-to-1">II Ew 1</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_El-to-15">Af El 15</ref></xr>
         <xr type="lawCode"><ref target="clause:Wi_26-1">Wi 26,1</ref></xr>
         <xr type="lawCode"><ref target="clause:IIIEg_1-1">III Eg 1,1</ref></xr>
@@ -164,7 +166,7 @@
         <xr type="lawCode"><ref target="clause:IEw_1-5">I Ew 1,5</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_El-to-28">Af El 28</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_57">Ine 57</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_13">Iud Dei VII 13</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_13A">Iud Dei VII 13</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_6-5">Ine 6,5</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_7-1">Ine 7,1</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_49-1">Ine 49,1</ref></xr>

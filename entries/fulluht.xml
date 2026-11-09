@@ -28,6 +28,7 @@
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
+      <change when="2026-11-09">Iud Dei VII linked to its Old English text (A), not the Latin.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -45,8 +46,8 @@
         <xr type="lawCode"><ref target="clause:ICn_22-6">I Cn 22,6</ref></xr>
         <xr type="lawCode"><ref target="clause:Wi_6">Wi 6</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiVIII_2">Iud Dei VIII 2</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_12-3">Iud Dei VII 12,3</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_13">Iud Dei VII 13</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_12-3A">Iud Dei VII 12,3</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_13A">Iud Dei VII 13</ref></xr>
       </entry>
     </body>
   </text>

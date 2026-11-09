@@ -30,6 +30,7 @@
       <change when="2026-10-17">Linked gen (Genetiv) and geschrieben to the abbreviations list.</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
       <change when="2026-11-01">Abbreviations “unfl.” and “Für” linked to the abbreviations list.</change>
+      <change when="2026-11-09">Iud Dei VII cited with MS A linked to the Old English text (A), not the Latin.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -55,7 +56,7 @@
         <xr type="lawCode"><ref target="clause:IIAs_7">II As 7</ref></xr>
         <xr type="lawCode"><ref target="clause:IAtr_3-1">I Atr 3,1</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAtr_22-3">VI Atr 22,3</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_13">Iud Dei VII 13</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_13A">Iud Dei VII 13</ref></xr>
         <xr type="lawCode"><ref target="clause:IVEg_9">IV Eg 9</ref></xr>
         <xr type="lawCode"><ref target="clause:IVEg_7">IV Eg 7</ref></xr>
         <xr type="lawCode"><ref target="clause:Wif_2">Wif 2</ref></xr>
@@ -95,7 +96,7 @@
         <xr type="lawCode"><ref target="clause:Abt_73">Abt 73</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_37-2">Af 37,2</ref></xr>
         <xr type="lawCode"><ref target="clause:Iudex_13">Iudex 13</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_23-3">Iud Dei VII 23,3</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_23-3A">Iud Dei VII 23,3</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_69-2">II Cn 69,2</ref></xr>
       </entry>
     </body>

@@ -30,6 +30,7 @@
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
       <change when="2026-11-01">Abbreviations “unfl.” and “Für” linked to the abbreviations list.</change>
       <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
+      <change when="2026-11-09">Iud Dei VII cited with MS A linked to the Old English text (A), not the Latin.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -128,10 +129,10 @@
         <xr type="lawCode"><ref target="clause:Cn1020_11">Cn 1020,11</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_84-4">II Cn 84,4</ref></xr>
         <xr type="lawCode"><ref target="clause:Becwaeth_3-2">Becwæð 3,2</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_24-1">Iud Dei VII 24,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_24-1A">Iud Dei VII 24,1</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiVIII_2-4">Iud Dei VIII 2,4</ref></xr>
         <xr type="lawCode"><ref target="clause:Iudex_10-1">Iudex 10</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_13">Iud Dei VII 13</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_13A">Iud Dei VII 13</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_6">Af 6</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_43">Ine 43</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_68-2">II Cn 68,2</ref></xr>

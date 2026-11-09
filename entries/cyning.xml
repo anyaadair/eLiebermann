@@ -33,6 +33,7 @@
       <change when="2026-10-17">“In Cn” and “In” (Instituta Cnuti) linked to the law codes list.</change>
       <change when="2026-10-18">Abbreviations and law code (Norðleod) linked; see the pull request “þæt: indecl., Einl., Folg., Urkk.-Sprache, Norðleod”.</change>
       <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
+      <change when="2026-11-09">II Ew 1 linked to II Ew 1 (it went to 1,1).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -219,7 +220,7 @@
         <xr type="lawCode"><ref target="clause:VIIIAtr_Prol">VIII Atr Pro</ref></xr>
         <xr type="lawCode"><ref target="clause:Wi_Prolog-to-3">Wi Pro</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_El-to-49-9">Af 49,9</ref></xr>
-        <xr type="lawCode"><ref target="clause:IIEw_1-1">II Ew 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIEw_II-Ew-to-1">II Ew 1</ref></xr>
         <xr type="lawCode"><ref target="clause:VAs_Prol">V As Pro</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAs_10">VI As 10</ref></xr>
         <xr type="lawCode"><ref target="clause:IEm_Inscr">I Em Insc</ref></xr>

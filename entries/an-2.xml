@@ -32,6 +32,7 @@
       <change when="2026-10-19">“fm”, “nt” linked to the abbreviations list (printed bold italic, missed before).</change>
       <change when="2026-10-28">“von” unlinked from the abbreviations list: here it is ordinary German, not an abbreviation (Anya Adair).</change>
       <change when="2026-11-02">Link to the Dictionary of Old English added (E00007; guessed from the DOE headword list, same spelling; checked by the editor).</change>
+      <change when="2026-11-09">Iud Dei VII cited with MS A linked to the Old English text (A), not the Latin.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -103,7 +104,7 @@
         <xr type="lawCode"><ref target="clause:Wi_26">Wi 26</ref></xr>
         <xr type="lawCode"><ref target="clause:ICn_5">I Cn 5</ref></xr>
         <xr type="lawCode"><ref target="clause:Duns_8-2">Duns 8,2</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_24-1">Iud Dei VII 24,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_24-1A">Iud Dei VII 24,1</ref></xr>
         <xr type="lawCode"><ref target="clause:IAs_3">I As 3</ref></xr>
         <xr type="lawCode"><ref target="clause:Had_9-1">Had 9,1</ref></xr>
         <xr type="lawCode"><ref target="clause:IXAtr_1">IX Atr 1</ref></xr>

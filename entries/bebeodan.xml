@@ -30,6 +30,7 @@
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
       <change when="2026-10-17">“In Cn” and “In” (Instituta Cnuti) linked to the law codes list.</change>
       <change when="2026-11-02">Link to the Dictionary of Old English added (E02303; guessed from the DOE headword list, same spelling; not yet checked).</change>
+      <change when="2026-11-09">II Ew 1 linked to II Ew 1 (it went to 1,1).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -61,7 +62,7 @@
         <xr type="lawCode"><ref target="clause:Af_42-1">Af 42,1</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_El-to-49-9">Af El 49,9</ref></xr>
         <xr type="lawCode"><ref target="clause:IAs_5">I As 5</ref></xr>
-        <xr type="lawCode"><ref target="clause:IIEw_1-1">II Ew 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIEw_II-Ew-to-1">II Ew 1</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAs_11">VI As 11</ref></xr>
         <xr type="lawCode"><ref target="clause:IIEg_5">II Eg 5</ref></xr>
         <xr type="lawCode"><ref target="clause:ICn_14-2">I Cn 14,2</ref></xr>

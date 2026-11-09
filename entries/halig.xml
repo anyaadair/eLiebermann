@@ -29,6 +29,7 @@
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
       <change when="2026-10-19">“ac”, “dt”, “gn”, “pl” linked to the abbreviations list (printed bold italic, missed before).</change>
       <change when="2026-11-01">Abbreviations “unfl.” and “Für” linked to the abbreviations list.</change>
+      <change when="2026-11-09">Iud Dei VII cited with MS A linked to the Old English text (A), not the Latin.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -61,8 +62,8 @@
         <xr type="lawCode"><ref target="clause:IEm_Prolog">I Em Pro</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiVIII_2">Iud Dei VIII 2</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiV_2-2">Iud Dei V 2,2</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_13">Iud Dei VII 13</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_12-1">Iud Dei VII 12,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_13A">Iud Dei VII 13</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_12-1A">Iud Dei VII 12,1</ref></xr>
         <xr type="lawCode"><ref target="clause:ICn_4-2">I Cn 4,2</ref></xr>
         <xr type="lawCode"><ref target="clause:IEm_1">I Em 1</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_El-to-49-7">Af El 49,7</ref></xr>
@@ -80,7 +81,7 @@
         <xr type="lawCode"><ref target="clause:VAtr_19">V Atr 19</ref></xr>
         <xr type="lawCode"><ref target="clause:ICn_17-2">I Cn 17,2</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAtr_25-1">VI Atr 25,1</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_12-2">Iud Dei VII 12,2</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_12-2A">Iud Dei VII 12,2</ref></xr>
         <xr type="lawCode"><ref target="clause:Cn1020_19">Cn 1020,19</ref></xr>
       </entry>
     </body>

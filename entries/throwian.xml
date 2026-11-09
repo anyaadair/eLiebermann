@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-12">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
+      <change when="2026-11-09">Iud Dei VII linked to its Old English text (A), not the Latin.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -44,7 +45,7 @@
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/59571">þrowian (Supplement)</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_1-2">Af 1,2</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiVIII_1">Iud Dei VIII 1</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_12-1">Iud Dei VII 12,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_12-1A">Iud Dei VII 12,1</ref></xr>
       </entry>
     </body>
   </text>

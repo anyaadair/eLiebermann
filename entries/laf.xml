@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-11-06">Link to the Dictionary of Old English added (E18618; guessed from the DOE headword list, same spelling; not yet checked).</change>
+      <change when="2026-11-09">Iud Dei VII cited with MS A linked to the Old English text (A), not the Latin.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -48,7 +49,7 @@
         <xr type="lawCode"><ref target="clause:VIAtr_12">VI Atr 12</ref></xr>
         <xr type="lawCode"><ref target="clause:ICn_7">I Cn 7</ref></xr>
         <xr type="lawCode"><ref target="clause:IAs_3">I As 3</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_13">Iud Dei VII 13</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_13A">Iud Dei VII 13</ref></xr>
       </entry>
     </body>
   </text>

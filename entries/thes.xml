@@ -34,6 +34,7 @@
       <change when="2026-10-17">Liebermann’s numbered sections joined into one entry, as in the print: the files thes-2 (later sections) are now part of this entry.</change>
       <change when="2026-10-19">“bez.”, “fm”, “nt”, “pl” linked to the abbreviations list (printed bold italic, missed before).</change>
       <change when="2026-10-28">“von” unlinked from the abbreviations list: here it is ordinary German, not an abbreviation (Anya Adair).</change>
+      <change when="2026-11-09">Iud Dei VII cited with MS A linked to the Old English text (A), not the Latin.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -60,12 +61,12 @@
         <xr type="lawCode"><ref target="clause:ExcomVII_1">Excom VII 1</ref></xr>
         <xr type="lawCode"><ref target="clause:ExcomVII_23">Excom VII 23</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiVIII_2-1">Iud Dei VIII 2,1</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_13">Iud Dei VII 13</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_13A">Iud Dei VII 13</ref></xr>
         <xr type="lawCode"><ref target="clause:IIAs_25-2">II As 25,2</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiIV_3-2">Iud Dei IV 3,2</ref></xr>
         <xr type="lawCode"><ref target="clause:Prom-Reg_Sacr-cor-Prol">Sacr cor Pro</ref></xr>
         <xr type="lawCode"><ref target="clause:IVEg_1-4">IV Eg 1,4</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_12-4">Iud Dei VII 12,4</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_12-4A">Iud Dei VII 12,4</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiVIII_2">Iud Dei VIII 2</ref></xr>
         <xr type="lawCode"><ref target="clause:IVEg_Prolog">IV Eg Pro</ref></xr>
         <xr type="lawCode"><ref target="clause:ICn_22-3">I Cn 22,3</ref></xr>

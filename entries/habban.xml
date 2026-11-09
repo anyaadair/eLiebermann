@@ -31,6 +31,8 @@
       <change when="2026-10-18">Abbreviations and law code (Norðleod) linked; see the pull request “þæt: indecl., Einl., Folg., Urkk.-Sprache, Norðleod”.</change>
       <change when="2026-10-19">“op”, “pc”, “pl”, “ptt” linked to the abbreviations list (printed bold italic, missed before).</change>
       <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
+      <change when="2026-11-09">II Ew 1 linked to II Ew 1 (it went to 1,1).</change>
+      <change when="2026-11-09">Iud Dei VII cited with MS A linked to the Old English text (A), not the Latin.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -77,7 +79,7 @@
         <xr type="lawCode"><ref target="clause:ExcomVII_3">Excom VII 3</ref></xr>
         <xr type="lawCode"><ref target="clause:Rect_3-to-3-4">Rect 3,3</ref></xr>
         <xr type="lawCode"><ref target="clause:Becwaeth_2">Becwæð 2</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_12-3">Iud Dei VII 12,3</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_12-3A">Iud Dei VII 12,3</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_36">Af 36</ref></xr>
         <xr type="lawCode"><ref target="clause:Rubrics-Ine_64">Ine Rb 64</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_24-2">Ine 24,2</ref></xr>
@@ -166,7 +168,7 @@
         <xr type="lawCode"><ref target="clause:VAs_Prol-to-2">V As Pro 2</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_35-1">Ine 35,1</ref></xr>
         <xr type="lawCode"><ref target="clause:IEw_1-2">I Ew 1,2</ref></xr>
-        <xr type="lawCode"><ref target="clause:IIEw_1-1">II Ew 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIEw_II-Ew-to-1">II Ew 1</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_73a">II Cn 73a</ref></xr>
         <xr type="lawCode"><ref target="clause:Gethyn_2">Geþyncðo 2</ref></xr>
         <xr type="lawCode"><ref target="clause:Gethyn_3">Geþyncðo 3</ref></xr>

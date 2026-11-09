@@ -31,6 +31,7 @@
       <change when="2026-10-17">“In Cn” and “In” (Instituta Cnuti) linked to the law codes list.</change>
       <change when="2026-10-17">Liebermann’s numbered sections joined into one entry, as in the print: the files witan-3, witan-2 (later sections) are now part of this entry.</change>
       <change when="2026-10-19">“op”, “pl”, “ptt” linked to the abbreviations list (printed bold italic, missed before).</change>
+      <change when="2026-11-09">Iud Dei VII cited with MS A linked to the Old English text (A), not the Latin.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -59,12 +60,12 @@
         <xr type="lawCode"><ref target="clause:Af_42">Af 42</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_42-4">Af 42,4</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiVI_1">Iud Dei VI 1</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_23-3">Iud Dei VII 23,3</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_23-3A">Iud Dei VII 23,3</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_El-to-21">Af El 21</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_El-to-23">Af El 23</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_19-2">Af 19,2</ref></xr>
         <xr type="lawCode"><ref target="clause:IIAtr_9">II Atr 9</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_13">Iud Dei VII 13</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_13A">Iud Dei VII 13</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiVIII_1-1">Iud Dei VIII 1,1</ref></xr>
         <xr type="lawCode"><ref target="clause:EGu_Prol-to-2">EGu Pro 2</ref></xr>
         <xr type="lawCode"><ref target="clause:ICn_5">I Cn 5</ref></xr>

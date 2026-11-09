@@ -71,6 +71,7 @@
       <change when="2026-10" type="checked">Liebermann’s German translation corrected against Gesetze I, p. 296: “(Vom Fasten B) Und dass man jedes gebotene Fasten mit aller Bereitwilligkeit halte, sei es Quatemberfasten, sei es Frühlingsfasten, sei es sonst anderes Fasten.” → “(Vom Fasten B) Und dass man jedes gebotene Fasten mit aller Bereitwilligkeit halte, sei es Quatemberfasten, sei es Frühlingsfasten, sei es sonst anderes Fasten. (expanded letters in italics: B)”.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS In added from Gesetze I, p. 297.</change>
       <change when="2026-11-01" type="incn-type">Liebermann’s bold, spaced and smaller type in the Instituta Cnuti text marked by Claude from the page images; to be checked against the print.</change>
+      <change when="2026-11-09">Rabin’s translation: the sentence on the feasts of St Mary and the apostles moved to I Cn 16a, where its Old English is.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -88,7 +89,7 @@
         <ab type="translation" xml:lang="de" source="#liebermann"><pb n="296" ed="#liebermann"/>(Vom Fasten <hi rend="italic">B</hi>) Und<ptr type="liebermannNote" n="1" target="#ICn_16.lnote.de.1"/> dass man jedes gebotene Fasten mit aller Bereitwilligkeit halte, sei es Quatemberfasten, sei es Frühlingsfasten, sei es sonst anderes Fasten.</ab>
         <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">(Of fasting, B) And that every commanded fast be kept with all eagerness, whether it be an Ember fast or a Lenten fast or any other fast.</ab>
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-b"><ptr type="editorNote" n="1" target="#ICn_16.robnote.n.1"/><pb n="167" ed="#robertson"/>Concerning fasts. And every prescribed fast shall be observed with all diligence, whether it be the fast of the Ember Days, or the Lent fast, or any other fast.</ab>
-        <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-g-a"><pb n="245" ed="#rabin-doml"/>And each ordained fast is to be observed with all assiduousness, whether it is the Ember Fast, the Lenten fast, or any other fast. And a fast is to be observed on all of the feasts of Saint Mary as well as on the feasts of each of the apostles—but we order no fast for the Feasts of Philip and James because of Easter—</ab>
+        <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-g-a"><pb n="245" ed="#rabin-doml"/>And each ordained fast is to be observed with all assiduousness, whether it is the Ember Fast, the Lenten fast, or any other fast.</ab>
         <note type="comparison" source="#liebermann" n="296"><ref target="clause:IIEg_5-1">II Eg 5.1</ref>; <ref target="clause:VIAtr_23">VI Atr 23</ref>; <ref target="clause:VIAtr_22-3">VI Atr 22.3</ref></note>
         <note type="comparisonPrinted" source="#liebermann">II Eg. 5, 1 | * VI Atr. 23; † 22, 3</note>
         <note type="comparison" source="#wormald-mel" n="356"><label>source (roman)</label> <ref target="clause:IIEg_5-1">II Eg 5.1</ref> <quote>Table 5.4, I Cn 16: II Eg 5:1</quote></note>

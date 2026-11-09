@@ -72,6 +72,7 @@
       <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 296: “⁊ to sancta Marian mæssan ælcere ⁊ to ælces apostoles mæssan fæsten, buton Philippi ⁊ Iacobi we ne beodað nan fæsten, for ðam easterlican freolse, and ælces Frigdæges fæsten, buton hyt freols sy.” → “⁊ to sancta Marian mæssan ælcere ⁊ to ælces apostoles mæssan fæsten, buton Philippi ⁊ Iacobi we ne beodað nan fæsten, for ðam easterlican freolse, and ælces Frigdæges fæsten, buton hyt freols sy. (expanded letters in italics: anct, m)”.</change>
       <change when="2026-10" type="checked">Liebermann’s German translation corrected against Gesetze I, p. 296: “BA)” → “B A)”.</change>
       <change when="2026-11-01">Manuscript sigla that Liebermann prints run together in his notes (“MHkBr”, “HB”) spaced for reading (“M Hk Br”, “H B”).</change>
+      <change when="2026-11-09">Rabin’s translation: the sentence on the feasts of St Mary and the apostles moved here from I Cn 16.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -87,7 +88,7 @@
         <ab type="translation" xml:lang="de" source="#liebermann"><pb n="296" ed="#liebermann"/>Und vor jedem Feste<ptr type="liebermannNote" n="1" target="#ICn_16a.lnote.de.1"/> der heiligen Maria und vor jeden Apostels Tage faste man (Fasten<ptr type="liebermannNote" n="2" target="#ICn_16a.lnote.de.2"/> <hi rend="italic">B A</hi>) — nur vor Philippi und Jacobi Tag gebieten wir, wegen des österlichen Festes, kein Fasten — und Fasten jedes Freitags, ausser wenn es ein Feiertag ist.</ab>
         <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">And before every feast of St Mary and before every apostle's day let there be a fast (fasting, B A) — only before the day of Philip and James we command no fast, because of the Easter festival — and the fast of every Friday, unless it is a feast-day.</ab>
         <ab type="translation" xml:lang="en" source="#robertson" corresp="#wit-b"><ptr type="editorNote" n="1" target="#ICn_16a.robnote.n.1"/><pb n="167" ed="#robertson"/>And at all the festivals of St Mary and at the festival of every apostle a fast [shall be observed]—except at the festival of St Philip and St James when we do not enjoin a fast because of the Easter festival—and a fast [shall be observed] every Friday, unless it be a festival.</ab>
-        <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-g-a"><pb n="247" ed="#rabin-doml"/>and a fast is to be held every Friday unless there is a feast.</ab>
+        <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-g-a"><pb n="247" ed="#rabin-doml"/>And a fast is to be observed on all of the feasts of Saint Mary as well as on the feasts of each of the apostles—but we order no fast for the Feasts of Philip and James because of Easter—and a fast is to be held every Friday unless there is a feast.</ab>
         <note type="comparison" source="#liebermann" n="296"><ref target="clause:VIAtr_22-2">VI Atr 22.2f.</ref>; <ref target="clause:VIAtr_24">VI Atr 24</ref></note>
         <note type="comparisonPrinted" source="#liebermann">ebd. 22, 2 f. | * ebd. 24</note>
         <note type="comparison" source="#wormald-mel" n="356"><label>source (roman)</label> <ref target="clause:VIAtr_22-2">VI Atr 22.2–3</ref> <quote>Table 5.4, I Cn 16a: Cn 1018 14:2-3  VI Atr 22:2-3, 24</quote></note>

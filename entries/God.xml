@@ -34,6 +34,7 @@
       <change when="2026-10-19">“ac”, “dt”, “gn”, “pl”, “voc” linked to the abbreviations list (printed bold italic, missed before).</change>
       <change when="2026-10-28">“von” unlinked from the abbreviations list: here it is ordinary German, not an abbreviation (Anya Adair).</change>
       <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
+      <change when="2026-11-09">Iud Dei VII cited with MS A linked to the Old English text (A), not the Latin.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -117,7 +118,7 @@
         <xr type="lawCode"><ref target="clause:Af_El-to-48">Af El 48</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_5-1">II Cn 5,1</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_El-Prol">Af El Pro</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_13">Iud Dei VII 13</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_13A">Iud Dei VII 13</ref></xr>
         <xr type="lawCode"><ref target="clause:Grith_30">Grið 30</ref></xr>
         <xr type="lawCode"><ref target="clause:Prom-Reg_1-1">Sacr cor 1,1</ref></xr>
         <xr type="lawCode"><ref target="clause:VAtr_8">V Atr 8</ref></xr>
@@ -181,7 +182,7 @@
         <xr type="lawCode"><ref target="clause:IICn_68-1">II Cn 68,1</ref></xr>
         <xr type="lawCode"><ref target="clause:Grith_24">Grið 24</ref></xr>
         <xr type="lawCode"><ref target="clause:Had_11">Had 11</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_12-2">Iud Dei VII 12,2</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_12-2A">Iud Dei VII 12,2</ref></xr>
         <xr type="lawCode"><ref target="clause:VIIaAtr_4">VIIa Atr 4</ref></xr>
         <xr type="lawCode"><ref target="clause:VIIaAtr_4-1">VIIa Atr 4,1</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAs_8-1">VI As 8,1</ref></xr>

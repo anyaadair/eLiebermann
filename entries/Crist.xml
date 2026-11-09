@@ -30,6 +30,7 @@
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
       <change when="2026-10-17">“Vgl.” (vergleiche, compare) linked to the abbreviations list.</change>
       <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
+      <change when="2026-11-09">Iud Dei VII cited with MS A linked to the Old English text (A), not the Latin.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -71,8 +72,8 @@
         <xr type="lawCode"><ref target="clause:Ordal_4-1">Ordal 4,1</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiIV_4-1">Iud Dei IV 4,1</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiV_2-1">Iud Dei V 2,1</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_23">Iud Dei VII 23</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_23-2">Iud Dei VII 23,2</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_23A">Iud Dei VII 23</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_23-2A">Iud Dei VII 23,2</ref></xr>
         <xr type="lawCode"><ref target="clause:ExcomVII_2">Excom VII 2</ref></xr>
         <xr type="lawCode"><ref target="clause:Grith_8">Grið 8</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_El-to-49-2">Af El 49,2</ref></xr>
@@ -90,7 +91,7 @@
         <xr type="lawCode"><ref target="clause:Grith_19-1">Grið 19,1</ref></xr>
         <xr type="lawCode"><ref target="clause:Grith_22">Grið 22</ref></xr>
         <xr type="lawCode"><ref target="clause:ICn_2-4">I Cn 2,4</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_24">Iud Dei VII 24</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_24A">Iud Dei VII 24</ref></xr>
         <xr type="lawCode"><ref target="clause:VIIIAtr_2-1">VIII Atr 2,1</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAtr_38">VI Atr 38</ref></xr>
         <xr type="lawCode"><ref target="clause:VIIIAtr_15">VIII Atr 15</ref></xr>

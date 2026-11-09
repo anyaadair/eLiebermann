@@ -29,6 +29,7 @@
       <change when="2026-10-17">Hein, Sprache Eadwines, linked to the list of works cited.</change>
       <change when="2026-11-01">Editor’s notes: “I Cn 36” is II Cn 36 and “Ordal 11” is Ordal 1; III Atr 4,1 after “4 H;” linked.</change>
       <change when="2026-11-01">Grammatical entry labelled by the language it concerns (Old English): Liebermann marks French (F) and Latin (L); unmarked ones concern Old English.</change>
+      <change when="2026-11-09">Iud Dei VII cited with MS A linked to the Old English text (A), not the Latin.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -320,7 +321,7 @@
         <xr type="lawCode"><ref target="clause:IICn_39">II Cn 39</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_30-1">II Cn 30,1</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_23-3">Ine 23,3</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_12-4">Iud Dei VII 12,4</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_12-4A">Iud Dei VII 12,4</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_El-to-43">Af El 43</ref></xr>
         <xr type="lawCode"><ref target="clause:VAtr_22">V Atr 22</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_26">Af 26</ref></xr>

@@ -34,6 +34,7 @@
       <change when="2026-10-17">“In Cn” and “In” (Instituta Cnuti) linked to the law codes list.</change>
       <change when="2026-10-28">“von” unlinked from the abbreviations list: here it is ordinary German, not an abbreviation (Anya Adair).</change>
       <change when="2026-11-01">Grammatical terms (Sing., Pers., Kl., north, altes …) linked to the terms list.</change>
+      <change when="2026-11-09">II Ew 1 linked to II Ew 1 (it went to 1,1).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -96,7 +97,7 @@
         <xr type="lawCode"><ref target="clause:VAtr_5">V Atr 5</ref></xr>
         <xr type="lawCode"><ref target="clause:IVEg_1">IV Eg 1</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAs_12-1">VI As 12,1</ref></xr>
-        <xr type="lawCode"><ref target="clause:IIEw_1-1">II Ew 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIEw_II-Ew-to-1">II Ew 1</ref></xr>
         <xr type="lawCode"><ref target="clause:EGu_5-1">EGu 5,1</ref></xr>
         <xr type="lawCode"><ref target="clause:IIAtr_9">II Atr 9</ref></xr>
         <xr type="lawCode"><ref target="clause:VAtr_16">V Atr 16</ref></xr>

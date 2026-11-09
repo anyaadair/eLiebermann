@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-09">Iud Dei VII cited with MS A linked to the Old English text (A), not the Latin.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -42,7 +43,7 @@
           <sense n="4"><hi rend="italic">hienieden</hi> <ref type="lawCode" target="law:VIAtr">VI Atr</ref> 52. <ref type="lawCode" target="law:ICn">I Cn</ref> 22,5. <ref type="lawCode" target="law:IudDeiVI">Iud Dei VI</ref> 1. <ref type="lawCode" target="law:Episc">Episc</ref> 14</sense>
         </dictScrap>
         <xr type="lawCode"><ref target="clause:Swer_8">Swer 8</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_24">Iud Dei VII 24</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_24A">Iud Dei VII 24</ref></xr>
         <xr type="lawCode"><ref target="clause:IIAs_7">II As 7</ref></xr>
         <xr type="lawCode"><ref target="clause:IIAs_14-1">II As 14,1</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_24-2">II Cn 24,2</ref></xr>

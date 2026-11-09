@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-11-02">Link to the Dictionary of Old English added (E01092; guessed from the DOE headword list, same spelling; checked by the editor).</change>
+      <change when="2026-11-09">Iud Dei VII cited with MS A linked to the Old English text (A), not the Latin.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -47,7 +48,7 @@
         <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E01092">ān-cenned</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiIV_4-6">Iud Dei IV 4,6</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_El-to-49">Af El 49</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_13">Iud Dei VII 13</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_13A">Iud Dei VII 13</ref></xr>
       </entry>
     </body>
   </text>

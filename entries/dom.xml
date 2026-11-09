@@ -30,6 +30,7 @@
       <change when="2026-10-18">Abbreviations and law code (Norðleod) linked; see the pull request “þæt: indecl., Einl., Folg., Urkk.-Sprache, Norðleod”.</change>
       <change when="2026-10-19">“pl” linked to the abbreviations list (printed bold italic, missed before).</change>
       <change when="2026-10-28">“von” unlinked from the abbreviations list: here it is ordinary German, not an abbreviation (Anya Adair).</change>
+      <change when="2026-11-09">Iud Dei VII linked to its Old English text (A), not the Latin.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -97,7 +98,7 @@
         <xr type="lawCode"><ref target="clause:IudDeiIV_3-2">Iud Dei IV 3,2</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiIV_3-4">Iud Dei IV 3,4</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiIV_4">Iud Dei IV 4</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_23">Iud Dei VII 23</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_23A">Iud Dei VII 23</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiVIII_2">Iud Dei VIII 2</ref></xr>
         <xr type="lawCode"><ref target="clause:Forf_2">Forf 2</ref></xr>
         <xr type="lawCode"><ref target="clause:Episc_14">Episc 14</ref></xr>

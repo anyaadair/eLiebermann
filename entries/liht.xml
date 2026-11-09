@@ -26,6 +26,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-13">Page corrected from 134 to 135 (the page turns inside libra), as in the team transcription (iustitiabilis - mægen.docx).</change>
+      <change when="2026-11-09">“s. I) … II) …”: the numeral I was marked as a law code; its See links go to the words listed, not to “i”.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -34,8 +35,9 @@
         <form type="lemma">
           <orth>liht-</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">liht-</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="lawCode" target="law:I">I</ref>) leoht- II) togeliht</dictScrap>
-        <xr type="see"><ref target="entry:i">i</ref></xr>
+        <dictScrap type="liebermann"><hi rend="bold">liht-</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> I) leoht- II) togeliht</dictScrap>
+        <xr type="see"><ref target="entry:leoht">leoht</ref></xr>
+        <xr type="see"><ref target="entry:togeliht">togeliht</ref></xr>
       </entry>
     </body>
   </text>

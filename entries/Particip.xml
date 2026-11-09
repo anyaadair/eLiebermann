@@ -30,6 +30,7 @@
       <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
       <change when="2026-11-01">Grammatical entry labelled by the language it concerns (Old English): Liebermann marks French (F) and Latin (L); unmarked ones concern Old English.</change>
       <change when="2026-11-06">“Cons” (Consiliatio Cnuti) linked to the list of law codes and “neg.” to the abbreviations list, where they were plain text.</change>
+      <change when="2026-11-09">Iud Dei VII cited with MS A linked to the Old English text (A), not the Latin.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -79,7 +80,7 @@
         <xr type="lawCode"><ref target="clause:IVEg_Prolog">IV Eg Pro</ref></xr>
         <xr type="lawCode"><ref target="clause:Pax_part-001">Pax</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiIV_2-1">Iud Dei IV 2,1</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_23-1">Iud Dei VII 23,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_23-1A">Iud Dei VII 23,1</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAs_8-6">VI As 8,6</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_13">Af 13</ref></xr>
       </entry>
