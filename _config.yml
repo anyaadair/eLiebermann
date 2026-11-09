@@ -26,6 +26,9 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor/
+  - experiments/templates/
+  - experiments/build.py
+  - experiments/README.md
 
 defaults:
   - scope:
