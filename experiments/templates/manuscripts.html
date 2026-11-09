@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Manuscripts and law codes</title>
+<style>
+:root {
+  --bg: #fbfaf7; --fg: #22201c; --muted: #6b665d; --line: #d9d4ca; --panel: #ffffff; --accent: #8a3b12; --link: #8c8579; --hi: #c0392b;
+  --ms: #4d6e9e; --lost: #9b8cc4; --print: #6f8f3a; --version: #b5a58f;
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #1a1916; --fg: #ebe7df; --muted: #a39d92; --line: #3a3732; --panel: #24221f; --accent: #e39a6b; --link: #8a847a; --hi: #ff7a66;
+          --ms: #85a6d6; --lost: #b9aee0; --print: #a5c46b; --version: #8a7f70; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); }
+header { padding: 20px 24px 8px; max-width: 1100px; }
+h1 { margin: 0 0 6px; font-size: 1.6rem; font-weight: 600; }
+header p { margin: 4px 0; color: var(--muted); line-height: 1.45; max-width: 80ch; }
+.controls { display: flex; flex-wrap: wrap; gap: 8px 22px; padding: 10px 24px; align-items: center; border-bottom: 1px solid var(--line); font-size: .92rem; }
+.controls fieldset { border: 0; padding: 0; margin: 0; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.controls legend { float: left; margin-right: 6px; color: var(--muted); font-size: .8rem; text-transform: uppercase; letter-spacing: .06em; }
+.dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 3px; vertical-align: middle; }
+.legend { display: flex; flex-wrap: wrap; gap: 4px 12px; padding: 8px 24px; font-size: .8rem; color: var(--muted); }
+main { display: grid; grid-template-columns: minmax(0, 1fr) 340px; min-height: 70vh; }
+@media (max-width: 900px) { main { grid-template-columns: 1fr; } }
+#chart { position: relative; overflow: hidden; }
+#chart svg { display: block; width: 100%; }
+aside { border-left: 1px solid var(--line); padding: 16px 18px; background: var(--panel); max-height: calc(100vh - 40px); overflow-y: auto; position: sticky; top: 0; font-size: .92rem; }
+aside h2 { font-size: 1.1rem; margin: 0 0 4px; }
+aside h3 { font-size: .95rem; margin: 16px 0 4px; }
+.muted { color: var(--muted); }
+aside a { color: var(--accent); }
+aside ul { list-style: none; padding: 0; margin: 0; }
+aside li { padding: 2px 0; border-bottom: 1px dotted var(--line); cursor: pointer; display: flex; justify-content: space-between; gap: 8px; }
+aside li:hover { color: var(--accent); }
+.node { cursor: pointer; }
+.node circle { stroke: var(--bg); stroke-width: 1.2; }
+.node text { font-size: 10px; fill: var(--fg); pointer-events: none; paint-order: stroke; stroke: var(--bg); stroke-width: 3px; }
+.axis text { fill: var(--muted); font-size: 11px; }
+.axis line, .axis path { stroke: var(--line); }
+.band-label { font-size: 12px; fill: var(--muted); font-style: italic; }
+.link { fill: none; stroke: var(--link); }
+.dim { opacity: .08; }
+.on circle { stroke: var(--hi); stroke-width: 2.5; }
+#tip { position: fixed; pointer-events: none; background: var(--panel); border: 1px solid var(--line); padding: 6px 9px; font-size: .82rem; border-radius: 4px; display: none; max-width: 340px; z-index: 5; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Which manuscripts carry which law codes</h1>
+  <p>Law codes sit on the top band at the date they were made; the manuscripts and early prints that carry their text sit on the bottom band at the date they were written. Each line is a code copied in a manuscript, its width the number of clauses whose text comes from that witness. Long slanting lines are long gaps between a law and its surviving copies. Click a code or a manuscript to follow it.</p>
+  <p class="muted">An experiment, made from the witnesses (<code>&lt;witness&gt;</code>) of each clause file in <code>oe-laws/</code>, dated from <code>data/manuscripts.json</code>. Dates are rough: a century such as <i>s. xi¹</i> is placed at 1025. Undated witnesses sit at the right.</p>
+</header>
+<div class="controls">
+  <fieldset id="kinds"><legend>Witnesses</legend></fieldset>
+  <fieldset><legend>Labels</legend><label><input type="checkbox" id="labels" checked> Show names</label></fieldset>
+</div>
+<div class="legend" id="legend"></div>
+<main>
+  <div id="chart"></div>
+  <aside id="side"><p class="muted">Click a law code or a manuscript.</p></aside>
+</main>
+<div id="tip"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script>
+const DATA = /*DATA*/null;
+const SITE = 'https://anyaadair.github.io/eLiebermann/';
+const KINDS = [['ms', 'Manuscripts'], ['lost', 'Lost manuscripts'], ['print', 'Early prints and transcripts'], ['version', 'Edited texts and translations (Quadr., In Cn …)']];
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const groupColour = d3.scaleOrdinal(DATA.groups, d3.schemeTableau10.concat(d3.schemeSet3));
+const S = { kinds: new Set(['ms', 'lost', 'print']), labels: true, focus: null };
+document.getElementById('legend').innerHTML = DATA.groups.map(g => `<span><span class="dot" style="background:${groupColour(g)}"></span>${esc(g)}</span>`).join('');
+document.getElementById('kinds').insertAdjacentHTML('beforeend', KINDS.map(([k, l]) =>
+  `<label><input type="checkbox" value="${k}" ${S.kinds.has(k) ? 'checked' : ''}> <span class="dot" style="background:var(--${k})"></span>${l} (${DATA.mss.filter(m => m.kind === k).length})</label>`).join(''));
+document.getElementById('kinds').addEventListener('change', e => { e.target.checked ? S.kinds.add(e.target.value) : S.kinds.delete(e.target.value); draw(); });
+document.getElementById('labels').addEventListener('change', e => { S.labels = e.target.checked; draw(); });
+
+const tip = document.getElementById('tip');
+const showTip = (e, h) => { tip.innerHTML = h; tip.style.display = 'block'; tip.style.left = Math.min(e.clientX + 12, innerWidth - 350) + 'px'; tip.style.top = e.clientY + 12 + 'px'; };
+const hideTip = () => { tip.style.display = 'none'; };
+
+let nodeSel, linkSel, L, codeN, msN;
+function draw() {
+  const chart = document.getElementById('chart');
+  chart.innerHTML = '';
+  const mss = DATA.mss.filter(m => S.kinds.has(m.kind));
+  const msSet = new Set(mss.map(m => m.name));
+  L = DATA.links.filter(l => msSet.has(l[0])).map(([m, c, n]) => ({ m, c, n }));
+  const codeSet = new Set(L.map(l => l.c));
+  const codes = DATA.codes.filter(c => codeSet.has(c.code));
+  const width = Math.max(chart.clientWidth || 1000, 900), height = Math.max(560, Math.min(innerHeight - 40, 760));
+  const years = [...codes.map(c => c.year), ...mss.map(m => m.year)].filter(Boolean);
+  const x = d3.scaleLinear([Math.floor(d3.min(years) / 50) * 50, Math.ceil(d3.max(years) / 50) * 50], [40, width - 150]);
+  const undatedX = width - 70;
+  const topY = 110, botY = height - 160;
+  const r = d3.scaleSqrt([1, d3.max(DATA.codes, c => c.clauses)], [3, 12]);
+  const clausesOf = d3.rollup(L, v => d3.sum(v, l => l.n), l => l.m);
+  const rm = d3.scaleSqrt([1, d3.max([...clausesOf.values()]) || 1], [2.5, 10]);
+  codeN = codes.map(c => ({ type: 'code', id: c.code, d: c, tx: c.year ? x(c.year) : undatedX, ty: topY, r: r(c.clauses) }));
+  msN = mss.map(m => ({ type: 'ms', id: m.name, d: m, tx: m.year ? x(m.year) : undatedX, ty: botY, r: rm(clausesOf.get(m.name) || 1) }));
+  // beeswarm: pulled to the date, spread up and down from the band
+  for (const [ns, dir] of [[codeN, -1], [msN, 1]]) {
+    ns.forEach(n => { n.x = n.tx; n.y = n.ty; });
+    const sim = d3.forceSimulation(ns).force('x', d3.forceX(n => n.tx).strength(.9)).force('y', d3.forceY(n => n.ty).strength(.06))
+      .force('collide', d3.forceCollide(n => n.r + 1.5)).stop();
+    for (let i = 0; i < 260; i++) sim.tick();
+  }
+  const byId = new Map([...codeN, ...msN].map(n => [n.type + ':' + n.id, n]));
+  const svg = d3.select(chart).append('svg').attr('viewBox', [0, 0, width, height]).attr('height', height);
+  const g = svg.append('g');
+  g.append('g').attr('class', 'axis').attr('transform', `translate(0,${height - 40})`).call(d3.axisBottom(x).tickFormat(d3.format('d')).ticks(width / 90));
+  g.append('text').attr('class', 'band-label').attr('x', undatedX).attr('y', height - 22).attr('text-anchor', 'middle').text('undated');
+  g.append('text').attr('class', 'band-label').attr('x', 40).attr('y', 24).text('Law codes, by date made');
+  g.append('text').attr('class', 'band-label').attr('x', 40).attr('y', height - 60).text('Manuscripts and prints, by date written');
+  const w = d3.scaleSqrt([1, d3.max(L, l => l.n) || 1], [.4, 5]);
+  linkSel = g.append('g').selectAll('path').data(L).join('path').attr('class', 'link')
+    .attr('d', l => { const a = byId.get('code:' + l.c), b = byId.get('ms:' + l.m); const my = (a.y + b.y) / 2;
+      return `M${a.x},${a.y} C${a.x},${my} ${b.x},${my} ${b.x},${b.y}`; })
+    .attr('stroke-width', l => w(l.n)).attr('stroke-opacity', .28)
+    .on('mousemove', (e, l) => showTip(e, `<strong>${esc(l.c)}</strong> in ${esc(l.m)}<br>${l.n} clause(s)`)).on('mouseleave', hideTip);
+  nodeSel = g.append('g').selectAll('g').data([...codeN, ...msN]).join('g').attr('class', 'node').attr('transform', n => `translate(${n.x},${n.y})`);
+  nodeSel.append('circle').attr('r', n => n.r).attr('fill', n => n.type === 'code' ? groupColour(n.d.group) : `var(--${n.d.kind})`);
+  if (S.labels) nodeSel.filter(n => n.type === 'code' || n.r > 5).append('text')
+    .attr('transform', n => n.type === 'code' ? `translate(0,${-n.r - 3}) rotate(-50)` : `translate(0,${n.r + 4}) rotate(50)`)
+    .text(n => n.type === 'code' ? n.id : (n.d.sigla[0] || n.id).slice(0, 14));
+  nodeSel.on('mousemove', (e, n) => showTip(e, n.type === 'code'
+      ? `<strong>${esc(n.id)}</strong> ${esc(n.d.name)}<br><span class="muted">${esc(n.d.date)}</span>`
+      : `<strong>${esc(n.id)}</strong><br>${esc(n.d.sigla.join(', '))}<br><span class="muted">${esc(n.d.date || 'no date')}</span>`))
+    .on('mouseleave', hideTip).on('click', (e, n) => focus(n));
+  svg.call(d3.zoom().scaleExtent([.5, 6]).on('zoom', e => g.attr('transform', e.transform)));
+  if (S.focus) { const n = byId.get(S.focus); if (n) focus(n); }
+}
+
+function focus(n) {
+  S.focus = n.type + ':' + n.id;
+  const key = n.type === 'code' ? 'c' : 'm';
+  const mine = L.filter(l => l[key] === n.id);
+  const other = new Set(mine.map(l => n.type === 'code' ? 'ms:' + l.m : 'code:' + l.c));
+  linkSel.classed('dim', l => l[key] !== n.id);
+  nodeSel.classed('dim', x => x !== n && !other.has(x.type + ':' + x.id)).classed('on', x => x === n);
+  const rows = mine.map(l => n.type === 'code' ? { id: 'ms:' + l.m, label: l.m, sub: (DATA.mss.find(m => m.name === l.m) || {}).date || '', n: l.n }
+                                               : { id: 'code:' + l.c, label: l.c, sub: (DATA.codes.find(c => c.code === l.c) || {}).name || '', n: l.n })
+    .sort((a, b) => b.n - a.n);
+  const head = n.type === 'code'
+    ? `<h2>${esc(n.id)}</h2><p class="muted">${esc(n.d.name)}<br>${esc(n.d.date)}</p><p><a href="${SITE}lawcode.html?code=${encodeURIComponent(n.id)}" target="_blank" rel="noopener">Read the code</a> · <a href="#" id="clear">Show all</a></p><h3>Witnesses (${rows.length})</h3>`
+    : `<h2>${esc(n.id)}</h2><p class="muted">${esc(n.d.full)}</p><p>Sigla: ${esc(n.d.sigla.join(', '))}<br><span class="muted">${esc(n.d.date || 'No date in the Manuscripts list')}</span></p><p><a href="#" id="clear">Show all</a></p><h3>Law codes (${rows.length})</h3>`;
+  document.getElementById('side').innerHTML = head + `<ul>${rows.map(r => `<li data-id="${esc(r.id)}"><span>${esc(r.label)} <span class="muted small">${esc(r.sub.slice(0, 50))}</span></span><span>${r.n}</span></li>`).join('')}</ul>`;
+  document.querySelectorAll('aside li').forEach(li => li.addEventListener('click', () => {
+    const t = [...codeN, ...msN].find(x => x.type + ':' + x.id === li.dataset.id); if (t) focus(t);
+  }));
+  document.getElementById('clear').addEventListener('click', e => { e.preventDefault(); S.focus = null; linkSel.classed('dim', false); nodeSel.classed('dim', false).classed('on', false);
+    document.getElementById('side').innerHTML = '<p class="muted">Click a law code or a manuscript.</p>'; });
+}
+draw();
+let rt; addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(draw, 200); });
+</script>
+</body>
+</html>

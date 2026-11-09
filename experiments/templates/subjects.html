@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Subjects together</title>
+<style>
+:root {
+  --bg: #fbfaf7; --fg: #22201c; --muted: #6b665d; --line: #d9d4ca; --panel: #ffffff; --accent: #8a3b12; --edge: #8c8579; --hi: #c0392b;
+  --f0: #b5541b; --f1: #4d6e9e; --f2: #6f8f3a;
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #1a1916; --fg: #ebe7df; --muted: #a39d92; --line: #3a3732; --panel: #24221f; --accent: #e39a6b; --edge: #8a847a; --hi: #ff7a66;
+          --f0: #e88a4d; --f1: #85a6d6; --f2: #a5c46b; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); }
+header { padding: 20px 24px 8px; max-width: 1100px; }
+h1 { margin: 0 0 6px; font-size: 1.6rem; font-weight: 600; }
+header p { margin: 4px 0; color: var(--muted); line-height: 1.45; max-width: 80ch; }
+.controls { display: flex; flex-wrap: wrap; gap: 8px 22px; padding: 10px 24px; align-items: center; border-bottom: 1px solid var(--line); font-size: .92rem; }
+.controls fieldset { border: 0; padding: 0; margin: 0; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; position: relative; }
+.controls legend { float: left; margin-right: 6px; color: var(--muted); font-size: .8rem; text-transform: uppercase; letter-spacing: .06em; }
+input[type=search] { font: inherit; padding: 4px 8px; border: 1px solid var(--line); border-radius: 4px; background: var(--panel); color: var(--fg); width: 14em; }
+.dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 3px; vertical-align: middle; }
+main { display: grid; grid-template-columns: minmax(0, 1fr) 330px; min-height: 70vh; }
+@media (max-width: 900px) { main { grid-template-columns: 1fr; } }
+#chart { position: relative; overflow: hidden; }
+#chart svg { display: block; width: 100%; }
+aside { border-left: 1px solid var(--line); padding: 16px 18px; background: var(--panel); max-height: calc(100vh - 40px); overflow-y: auto; position: sticky; top: 0; font-size: .92rem; }
+aside h2 { font-size: 1.15rem; margin: 0 0 4px; }
+aside h3 { font-size: .95rem; margin: 16px 0 4px; }
+.muted { color: var(--muted); }
+aside a { color: var(--accent); }
+aside ul { list-style: none; padding: 0; margin: 0; }
+aside li { padding: 2px 0; border-bottom: 1px dotted var(--line); cursor: pointer; display: flex; justify-content: space-between; gap: 8px; }
+aside li:hover { color: var(--accent); }
+.node circle { stroke: var(--bg); stroke-width: 1.2; cursor: pointer; }
+.node text { font-size: 10.5px; fill: var(--fg); pointer-events: none; paint-order: stroke; stroke: var(--bg); stroke-width: 3px; }
+.edge { stroke: var(--edge); }
+.dim { opacity: .08; }
+.on circle { stroke: var(--hi); stroke-width: 3; }
+#suggest { position: absolute; top: 100%; left: 0; background: var(--panel); border: 1px solid var(--line); list-style: none; margin: 0; padding: 0; max-height: 260px; overflow-y: auto; z-index: 4; min-width: 14em; }
+#suggest li { padding: 3px 8px; cursor: pointer; }
+#suggest li:hover { background: var(--line); }
+#tip { position: fixed; pointer-events: none; background: var(--panel); border: 1px solid var(--line); padding: 6px 9px; font-size: .82rem; border-radius: 4px; display: none; max-width: 300px; z-index: 5; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Subjects that appear together</h1>
+  <p>Each dot is a subject keyword from the index of the laws; two subjects are joined when they are tagged on the same clauses more often than chance would give (by lift: how many times more often than if the keywords were scattered at random). Each subject keeps only its strongest partners, so the clusters are themes that travel together. Click a subject for its partners and its clauses.</p>
+  <p class="muted">An experiment, made from <code>&lt;keywords&gt;</code> in <code>oe-laws/</code>. The index covers the pre-Conquest codes only (2,207 clauses). The broadest keywords (All people, Rank) are left out.</p>
+</header>
+<div class="controls">
+  <fieldset id="fields"><legend>Show</legend></fieldset>
+  <fieldset><legend>Subjects on at least</legend><input type="range" id="min" min="3" max="60" value="12" aria-label="Fewest clauses per subject"> <span id="min-n">12</span> clauses</fieldset>
+  <fieldset><legend>Partners each</legend><input type="range" id="k" min="1" max="6" value="3" aria-label="Partners per subject"> <span id="k-n">3</span></fieldset>
+  <fieldset><legend>Subject</legend><input type="search" id="q" placeholder="e.g. Theft, Oaths" autocomplete="off"><ul id="suggest" hidden></ul></fieldset>
+</div>
+<main>
+  <div id="chart"></div>
+  <aside id="side"><p class="muted">Click a subject, or search for one.</p></aside>
+</main>
+<div id="tip"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script>
+const DATA = /*DATA*/null;
+const SITE = 'https://anyaadair.github.io/eLiebermann/';
+const FIELDS = ['Legal matters', 'People', 'Places'];
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const fieldCol = f => `var(--f${Math.max(0, FIELDS.indexOf(f))})`;
+const S = { fields: new Set(FIELDS), min: 12, k: 3, focus: null };
+const GENERAL = new Set(DATA.general);
+const T = DATA.terms.length, NC = DATA.clauses.length;
+document.getElementById('fields').insertAdjacentHTML('beforeend', FIELDS.map(f => `<label><input type="checkbox" value="${f}" checked> <span class="dot" style="background:${fieldCol(f)}"></span>${f}</label>`).join(''));
+document.getElementById('fields').addEventListener('change', e => { e.target.checked ? S.fields.add(e.target.value) : S.fields.delete(e.target.value); draw(); });
+document.getElementById('min').addEventListener('input', e => { S.min = +e.target.value; document.getElementById('min-n').textContent = S.min; draw(); });
+document.getElementById('k').addEventListener('input', e => { S.k = +e.target.value; document.getElementById('k-n').textContent = S.k; draw(); });
+
+// counts and co-occurrence, once
+const count = new Array(T).fill(0);
+const co = new Map();
+DATA.clauses.forEach(([, , ts]) => {
+  ts.forEach(t => count[t]++);
+  for (let i = 0; i < ts.length; i++) for (let j = i + 1; j < ts.length; j++) { const k = ts[i] * T + ts[j]; co.set(k, (co.get(k) || 0) + 1); }
+});
+const pair = (a, b) => co.get(Math.min(a, b) * T + Math.max(a, b)) || 0;
+const lift = (a, b, n) => n * NC / (count[a] * count[b]);
+const partners = new Map();
+co.forEach((n, k) => { const a = Math.floor(k / T), b = k % T;
+  (partners.get(a) || partners.set(a, []).get(a)).push(b); (partners.get(b) || partners.set(b, []).get(b)).push(a); });
+
+const tip = document.getElementById('tip');
+const showTip = (e, h) => { tip.innerHTML = h; tip.style.display = 'block'; tip.style.left = Math.min(e.clientX + 12, innerWidth - 310) + 'px'; tip.style.top = e.clientY + 12 + 'px'; };
+const hideTip = () => { tip.style.display = 'none'; };
+
+let sim, nodeSel, edgeSel, shownSet;
+function draw() {
+  if (sim) sim.stop();
+  const chart = document.getElementById('chart');
+  chart.innerHTML = '';
+  const ok = t => count[t] >= S.min && S.fields.has(DATA.terms[t][1]) && !GENERAL.has(DATA.terms[t][0]);
+  const ids = d3.range(T).filter(ok);
+  shownSet = new Set(ids);
+  const keep = new Map();
+  ids.forEach(a => (partners.get(a) || []).filter(b => shownSet.has(b) && pair(a, b) >= 3)
+    .sort((x, y) => lift(a, y, pair(a, y)) - lift(a, x, pair(a, x))).slice(0, S.k)
+    .forEach(b => { const k = Math.min(a, b) + ':' + Math.max(a, b); keep.set(k, { a: Math.min(a, b), b: Math.max(a, b), n: pair(a, b), l: lift(a, b, pair(a, b)) }); }));
+  const ls = [...keep.values()].map(e => ({ ...e, source: e.a, target: e.b }));
+  const ns = ids.map(t => ({ id: t, name: DATA.terms[t][0], field: DATA.terms[t][1], group: DATA.terms[t][2], n: count[t] }));
+  const width = chart.clientWidth || 900, height = Math.max(640, innerHeight - 200);
+  const r = d3.scaleSqrt([1, d3.max(count)], [2.5, 22]);
+  const w = d3.scaleLog([1, d3.max(ls, l => l.l) || 2], [.6, 4]).clamp(true);
+  const svg = d3.select(chart).append('svg').attr('viewBox', [0, 0, width, height]).attr('height', height);
+  const g = svg.append('g');
+  edgeSel = g.append('g').selectAll('line').data(ls).join('line').attr('class', 'edge').attr('stroke-width', l => w(l.l)).attr('stroke-opacity', .4)
+    .on('mousemove', (e, l) => showTip(e, `<strong>${esc(DATA.terms[l.a][0])} + ${esc(DATA.terms[l.b][0])}</strong><br>${l.n} clauses together, ${l.l.toFixed(1)}× chance`)).on('mouseleave', hideTip);
+  nodeSel = g.append('g').selectAll('g').data(ns).join('g').attr('class', 'node');
+  nodeSel.append('circle').attr('r', n => r(n.n)).attr('fill', n => fieldCol(n.field));
+  nodeSel.append('text').attr('x', n => r(n.n) + 2).attr('y', 4).text(n => n.name).attr('opacity', n => n.n >= Math.max(S.min, 20) || ns.length < 120 ? 1 : .55);
+  nodeSel.on('mousemove', (e, n) => showTip(e, `<strong>${esc(n.name)}</strong><br>${n.field} · ${esc(n.group)}<br>${n.n} clauses`)).on('mouseleave', hideTip)
+    .on('click', (e, n) => focus(n.id));
+  sim = d3.forceSimulation(ns)
+    .force('link', d3.forceLink(ls).id(d => d.id).distance(50).strength(.5))
+    .force('charge', d3.forceManyBody().strength(-70))
+    .force('x', d3.forceX(width / 2).strength(.05)).force('y', d3.forceY(height / 2).strength(.07))
+    .force('collide', d3.forceCollide(n => r(n.n) + 2))
+    .on('tick', () => {
+      edgeSel.attr('x1', l => l.source.x).attr('y1', l => l.source.y).attr('x2', l => l.target.x).attr('y2', l => l.target.y);
+      nodeSel.attr('transform', n => `translate(${n.x},${n.y})`);
+    });
+  nodeSel.call(d3.drag()
+    .on('start', (e, d) => { if (!e.active) sim.alphaTarget(.3).restart(); d.fx = d.x; d.fy = d.y; })
+    .on('drag', (e, d) => { d.fx = e.x; d.fy = e.y; })
+    .on('end', (e, d) => { if (!e.active) sim.alphaTarget(0); d.fx = null; d.fy = null; }));
+  svg.call(d3.zoom().scaleExtent([.3, 5]).on('zoom', e => g.attr('transform', e.transform)));
+  if (S.focus != null) focus(S.focus);
+}
+
+function focus(t) {
+  S.focus = t;
+  const ps = (partners.get(t) || []).filter(b => pair(t, b) >= 2).sort((x, y) => lift(t, y, pair(t, y)) - lift(t, x, pair(t, x)));
+  const near = new Set(ps.slice(0, 15));
+  nodeSel.classed('dim', n => n.id !== t && !near.has(n.id)).classed('on', n => n.id === t);
+  edgeSel.classed('dim', l => l.a !== t && l.b !== t);
+  const name = DATA.terms[t][0];
+  const byCode = d3.rollups(DATA.clauses.filter(c => c[2].includes(t)), v => v.length, c => c[1]).sort((a, b) => b[1] - a[1]);
+  document.getElementById('side').innerHTML = `
+    <h2>${esc(name)}</h2><p class="muted">${DATA.terms[t][1]} · ${esc(DATA.terms[t][2])}<br>${count[t]} clauses</p>
+    <p><a href="${SITE}subjects.html?k=${encodeURIComponent(name)}" target="_blank" rel="noopener">Its page on eLiebermann</a> · <a href="#" id="clear">Show all</a></p>
+    <h3>Most often with</h3><p class="muted small">Clauses together · times more than chance</p>
+    <ul>${ps.slice(0, 25).map(b => `<li data-t="${b}"><span>${esc(DATA.terms[b][0])}${shownSet.has(b) ? '' : ' <span class="muted">(hidden)</span>'}</span><span class="muted">${pair(t, b)} · ${lift(t, b, pair(t, b)).toFixed(1)}×</span></li>`).join('')}</ul>
+    <h3>In law codes</h3>
+    <ul>${byCode.map(([c, n]) => `<li data-code="${esc(c)}"><span>${esc(c)}</span><span>${n}</span></li>`).join('')}</ul>`;
+  document.querySelectorAll('aside li[data-t]').forEach(li => li.addEventListener('click', () => focus(+li.dataset.t)));
+  document.querySelectorAll('aside li[data-code]').forEach(li => li.addEventListener('click', () => window.open(`${SITE}laws.html?kw=${encodeURIComponent(name)}&codes=${encodeURIComponent(li.dataset.code)}`, '_blank', 'noopener')));
+  document.getElementById('clear').addEventListener('click', e => { e.preventDefault(); S.focus = null; nodeSel.classed('dim', false).classed('on', false); edgeSel.classed('dim', false);
+    document.getElementById('side').innerHTML = '<p class="muted">Click a subject, or search for one.</p>'; });
+}
+
+const q = document.getElementById('q'), sug = document.getElementById('suggest');
+let shown = [];
+q.addEventListener('input', () => {
+  const t = q.value.trim().toLowerCase();
+  if (!t) { sug.hidden = true; return; }
+  shown = d3.range(T).filter(i => DATA.terms[i][0].toLowerCase().includes(t)).sort((a, b) => count[b] - count[a]).slice(0, 15);
+  sug.innerHTML = shown.map(i => `<li data-i="${i}">${esc(DATA.terms[i][0])} <span class="muted">${count[i]}</span></li>`).join('');
+  sug.hidden = !shown.length;
+});
+sug.addEventListener('click', e => { const li = e.target.closest('li'); if (li) { focus(+li.dataset.i); sug.hidden = true; } });
+q.addEventListener('keydown', e => { if (e.key === 'Enter' && shown.length) { focus(shown[0]); sug.hidden = true; } });
+draw();
+</script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Dating the law codes</title>
+<style>
+:root {
+  --bg: #fbfaf7; --fg: #22201c; --muted: #6b665d; --line: #e4dfd5; --panel: #ffffff; --accent: #8a3b12; --grid: #ece8e0;
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #1a1916; --fg: #ebe7df; --muted: #a39d92; --line: #3a3732; --panel: #24221f; --accent: #e39a6b; --grid: #2c2a26; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); }
+header { padding: 20px 24px 8px; max-width: 1100px; }
+h1 { margin: 0 0 6px; font-size: 1.6rem; font-weight: 600; }
+header p { margin: 4px 0; color: var(--muted); line-height: 1.45; max-width: 80ch; }
+.controls { display: flex; flex-wrap: wrap; gap: 8px 22px; padding: 10px 24px; align-items: center; border-bottom: 1px solid var(--line); font-size: .92rem; position: sticky; top: 0; background: var(--bg); z-index: 3; }
+.controls fieldset { border: 0; padding: 0; margin: 0; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.controls legend { float: left; margin-right: 6px; color: var(--muted); font-size: .8rem; text-transform: uppercase; letter-spacing: .06em; }
+.swatch { display: inline-block; width: 16px; height: 6px; border-radius: 2px; margin-right: 4px; vertical-align: middle; }
+#axis { position: sticky; top: 46px; background: var(--bg); z-index: 2; }
+#chart svg, #axis svg { display: block; }
+.axis text { fill: var(--muted); font-size: 11px; }
+.axis line, .axis path { stroke: var(--line); }
+.grid line { stroke: var(--grid); }
+.row-label { font-size: 11.5px; fill: var(--fg); cursor: default; }
+.group-label { font-size: 13px; fill: var(--muted); font-style: italic; }
+.reign { fill: var(--grid); }
+.bar { cursor: default; }
+.zebra { fill: var(--grid); opacity: .5; }
+#tip { position: fixed; pointer-events: none; background: var(--panel); border: 1px solid var(--line); padding: 6px 9px; font-size: .82rem; border-radius: 4px; display: none; max-width: 360px; z-index: 5; box-shadow: 0 2px 8px rgba(0,0,0,.12); }
+.muted { color: var(--muted); }
+</style>
+</head>
+<body>
+<header>
+  <h1>Dating the law codes: where the scholars agree and differ</h1>
+  <p>Each law code gets one bar per scholar who dates it: Liebermann (1903), Attenborough (1922), Robertson (1925), Whitelock (EHD), Wormald (1999) and others. A thin bar is the whole range given; a thick stretch is the date they think likely (“probably”, “perhaps”); a fading bar is open-ended (“before 918”, “after 893”). Hover for the scholar's own words. Sort by disagreement to bring the contested codes, such as EGu, I–II Cnut and the Edgar codes, to the top.</p>
+  <p class="muted">An experiment, made from the dates in <code>oe-laws/codes.json</code>, which come from <code>&lt;creation&gt;&lt;date&gt;</code> in the clause files. Years are read from free text, so treat them as approximate; dates given only relative to another code (“after IV Eg”) appear in the tooltip but not as bars.</p>
+</header>
+<div class="controls">
+  <fieldset><legend>Order</legend>
+    <label><input type="radio" name="sort" value="king" checked> By king</label>
+    <label><input type="radio" name="sort" value="spread"> By disagreement</label>
+    <label><input type="radio" name="sort" value="date"> By earliest date</label>
+  </fieldset>
+  <fieldset id="who"><legend>Scholars</legend></fieldset>
+  <fieldset><label><input type="checkbox" id="single"> Only codes dated by two or more</label></fieldset>
+</div>
+<div id="axis"></div>
+<div id="chart"></div>
+<div id="tip"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script>
+const DATA = /*DATA*/null;
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const counts = d3.rollup(DATA.codes.flatMap(c => c.dates.filter(d => d.lo).map(d => d.by)), v => v.length, d => d);
+const WHO = [...counts.keys()].sort((a, b) => counts.get(b) - counts.get(a));
+const colour = d3.scaleOrdinal(WHO, ['#8a3b12', '#3f6aa1', '#3d8a63', '#b8860b', '#7a5aa6', '#c0587e', '#5b8f9e', '#7d7468', '#a0522d']);
+const S = { sort: 'king', who: new Set(WHO), multi: false };
+document.getElementById('who').insertAdjacentHTML('beforeend', WHO.map(w => `<label><input type="checkbox" value="${esc(w)}" checked> <span class="swatch" style="background:${colour(w)}"></span>${esc(w)} (${counts.get(w)})</label>`).join(''));
+document.getElementById('who').addEventListener('change', e => { e.target.checked ? S.who.add(e.target.value) : S.who.delete(e.target.value); draw(); });
+document.querySelectorAll('input[name=sort]').forEach(r => r.addEventListener('change', () => { S.sort = r.value; draw(); }));
+document.getElementById('single').addEventListener('change', e => { S.multi = e.target.checked; draw(); });
+
+const tip = document.getElementById('tip');
+const showTip = (e, h) => { tip.innerHTML = h; tip.style.display = 'block'; tip.style.left = Math.min(e.clientX + 12, innerWidth - 370) + 'px'; tip.style.top = Math.min(e.clientY + 12, innerHeight - 140) + 'px'; };
+const hideTip = () => { tip.style.display = 'none'; };
+const mid = d => d.likely ? (d.likely[0] + d.likely[1]) / 2 : (d.lo + d.hi) / 2;
+const spread = c => { const ms = c.dates.filter(d => d.lo && S.who.has(d.by)).map(mid); return ms.length > 1 ? d3.max(ms) - d3.min(ms) : 0; };
+
+function draw() {
+  const W = Math.max(document.body.clientWidth, 760);
+  const left = 130, right = 24;
+  const x = d3.scaleLinear([580, 1200], [left, W - right]);
+  let rows = DATA.codes.map(c => ({ ...c, ds: c.dates.filter(d => d.lo && S.who.has(d.by)) })).filter(c => c.ds.length);
+  if (S.multi) rows = rows.filter(c => new Set(c.ds.map(d => d.by)).size > 1);
+  if (S.sort === 'spread') rows.sort((a, b) => spread(b) - spread(a));
+  if (S.sort === 'date') rows.sort((a, b) => d3.min(a.ds, d => d.lo) - d3.min(b.ds, d => d.lo));
+  const lane = 7, gap = 9;
+  let y = 6; const pos = [];
+  let lastGroup = null;
+  rows.forEach(c => {
+    if (S.sort === 'king' && c.group !== lastGroup) { y += 22; pos.push({ head: c.group, y }); y += 6; lastGroup = c.group; }
+    pos.push({ c, y }); y += c.ds.length * lane + gap;
+  });
+  const H = y + 20;
+  // axis, sticky
+  d3.select('#axis').html('').append('svg').attr('width', W).attr('height', 26)
+    .append('g').attr('class', 'axis').attr('transform', 'translate(0,22)').call(d3.axisTop(x).tickFormat(d3.format('d')).ticks(W / 70));
+  const svg = d3.select('#chart').html('').append('svg').attr('width', W).attr('height', H);
+  svg.append('g').attr('class', 'grid').selectAll('line').data(x.ticks(W / 70)).join('line')
+    .attr('x1', d => x(d)).attr('x2', d => x(d)).attr('y1', 0).attr('y2', H);
+  const defs = svg.append('defs');
+  WHO.forEach((w, i) => {
+    [['r', 0, 1], ['l', 1, 0]].forEach(([k, a, b]) => {
+      const gr = defs.append('linearGradient').attr('id', `fade-${k}-${i}`);
+      gr.append('stop').attr('offset', 0).attr('stop-color', colour(w)).attr('stop-opacity', a);
+      gr.append('stop').attr('offset', 1).attr('stop-color', colour(w)).attr('stop-opacity', b);
+    });
+  });
+  pos.forEach((p, i) => {
+    if (p.head) { svg.append('text').attr('class', 'group-label').attr('x', 8).attr('y', p.y).text(p.head); return; }
+    const c = p.c, g = svg.append('g').attr('transform', `translate(0,${p.y})`);
+    g.append('rect').attr('class', 'zebra').attr('x', 0).attr('y', -3).attr('width', W).attr('height', c.ds.length * lane + 4).attr('opacity', i % 2 ? .45 : 0);
+    const others = c.dates.filter(d => !d.lo).map(d => `${esc(d.by)}: ${esc(d.text)}`);
+    g.append('text').attr('class', 'row-label').attr('x', left - 8).attr('y', c.ds.length * lane / 2 + 4).attr('text-anchor', 'end').text(c.code)
+      .on('mousemove', e => showTip(e, `<strong>${esc(c.code)}</strong> ${esc(c.name)}<br><span class="muted">${esc(c.reign || c.group)}</span><br>` +
+        c.dates.map(d => `<span style="color:${colour(d.by)}">■</span> ${esc(d.by)}: ${esc(d.text)}`).join('<br>')))
+      .on('mouseleave', hideTip);
+    c.ds.forEach((d, j) => {
+      const yy = j * lane, i2 = WHO.indexOf(d.by);
+      const tipH = e => showTip(e, `<strong>${esc(c.code)}</strong> · ${esc(d.by)}<br>“${esc(d.text)}”<br><span class="muted">${esc(d.ref || '')}</span>`);
+      let x0 = x(d.lo), x1 = x(d.hi);
+      if (d.openStart) { x0 = x(d.hi - 40); }
+      if (d.openEnd) { x1 = x(d.lo + 40); }
+      const bar = g.append('rect').attr('class', 'bar').attr('x', x0).attr('y', yy + 2).attr('width', Math.max(3, x1 - x0)).attr('height', 2.5).attr('rx', 1)
+        .attr('fill', d.openStart ? `url(#fade-l-${i2})` : d.openEnd ? `url(#fade-r-${i2})` : colour(d.by));
+      const core = d.likely ? [d.likely[0], d.likely[1]] : (d.hi - d.lo <= 3 && !d.openStart && !d.openEnd ? [d.lo, d.hi] : null);
+      if (core) g.append('rect').attr('class', 'bar').attr('x', x(core[0]) - 1.5).attr('y', yy).attr('width', Math.max(4, x(core[1]) - x(core[0]) + 3)).attr('height', 6.5).attr('rx', 2).attr('fill', colour(d.by))
+        .on('mousemove', tipH).on('mouseleave', hideTip);
+      if (d.openStart || d.openEnd) g.append('circle').attr('cx', d.openStart ? x(d.hi) : x(d.lo)).attr('cy', yy + 3.2).attr('r', 3).attr('fill', colour(d.by))
+        .on('mousemove', tipH).on('mouseleave', hideTip);
+      g.append('rect').attr('x', x0).attr('y', yy - 1).attr('width', Math.max(6, x1 - x0)).attr('height', lane).attr('fill', 'transparent')
+        .on('mousemove', tipH).on('mouseleave', hideTip);
+    });
+  });
+}
+draw();
+let rt; addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(draw, 150); });
+</script>
+</body>
+</html>

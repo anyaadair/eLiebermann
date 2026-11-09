@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Reuse chains</title>
+<style>
+:root {
+  --bg: #fbfaf7; --fg: #22201c; --muted: #6b665d; --line: #d9d4ca; --panel: #ffffff; --accent: #8a3b12; --hi: #c0392b;
+  --compare: #4d6e9e; --source: #b5541b; --contrast: #6f8f3a;
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #1a1916; --fg: #ebe7df; --muted: #a39d92; --line: #3a3732; --panel: #24221f; --accent: #e39a6b; --hi: #ff7a66;
+          --compare: #85a6d6; --source: #e88a4d; --contrast: #a5c46b; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); }
+header { padding: 20px 24px 8px; max-width: 1100px; }
+h1 { margin: 0 0 6px; font-size: 1.6rem; font-weight: 600; }
+header p { margin: 4px 0; color: var(--muted); line-height: 1.45; max-width: 80ch; }
+.controls { display: flex; flex-wrap: wrap; gap: 8px 22px; padding: 10px 24px; align-items: center; border-bottom: 1px solid var(--line); font-size: .92rem; }
+.controls fieldset { border: 0; padding: 0; margin: 0; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; position: relative; }
+.controls legend { float: left; margin-right: 6px; color: var(--muted); font-size: .8rem; text-transform: uppercase; letter-spacing: .06em; }
+input[type=search] { font: inherit; padding: 4px 8px; border: 1px solid var(--line); border-radius: 4px; background: var(--panel); color: var(--fg); width: 14em; }
+.swatch { display: inline-block; width: 14px; height: 3px; margin-right: 4px; vertical-align: middle; }
+main { display: grid; grid-template-columns: minmax(0, 1fr) 360px; min-height: 70vh; }
+@media (max-width: 900px) { main { grid-template-columns: 1fr; } }
+#chart { position: relative; overflow: hidden; }
+#chart svg { display: block; width: 100%; }
+aside { border-left: 1px solid var(--line); padding: 16px 18px; background: var(--panel); max-height: calc(100vh - 40px); overflow-y: auto; position: sticky; top: 0; font-size: .92rem; }
+aside h2 { font-size: 1.15rem; margin: 0 0 4px; }
+aside h3 { font-size: .95rem; margin: 16px 0 4px; }
+aside blockquote { margin: 6px 0; padding-left: 10px; border-left: 3px solid var(--line); }
+.muted { color: var(--muted); }
+aside a { color: var(--accent); }
+aside ul { list-style: none; padding: 0; margin: 0; }
+aside li { padding: 2px 0; border-bottom: 1px dotted var(--line); cursor: pointer; display: flex; justify-content: space-between; gap: 8px; }
+aside li:hover { color: var(--accent); }
+.node circle { stroke: var(--bg); stroke-width: 1.5; cursor: pointer; }
+.node text { font-size: 11px; fill: var(--fg); paint-order: stroke; stroke: var(--bg); stroke-width: 3px; cursor: pointer; }
+.node.root text { font-weight: 700; font-size: 13px; }
+.node.root circle { stroke: var(--hi); stroke-width: 3; }
+.link { fill: none; stroke-opacity: .7; }
+.side-label { font-size: 12px; fill: var(--muted); font-style: italic; }
+#suggest { position: absolute; top: 100%; left: 0; background: var(--panel); border: 1px solid var(--line); list-style: none; margin: 0; padding: 0; max-height: 260px; overflow-y: auto; z-index: 4; min-width: 14em; }
+#suggest li { padding: 3px 8px; cursor: pointer; }
+#suggest li:hover { background: var(--line); }
+#tip { position: fixed; pointer-events: none; background: var(--panel); border: 1px solid var(--line); padding: 6px 9px; font-size: .82rem; border-radius: 4px; display: none; max-width: 360px; z-index: 5; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Chains of reuse from one clause</h1>
+  <p>Pick a clause and follow the scholars' links outward: to the right, the later clauses that echo, compare or reuse it, step by step through later codes; to the left, the earlier clauses it draws on. Where a scholar does not say which way the borrowing ran, the earlier law code is taken as the source. Click any clause to move to it.</p>
+  <p class="muted">An experiment, made from the comparison notes in <code>oe-laws/</code>. Codes follow the order of the kings; links within one code are left out.</p>
+</header>
+<div class="controls">
+  <fieldset><legend>Clause</legend><input type="search" id="q" placeholder="e.g. Ine 23, II Cn 30" autocomplete="off"><ul id="suggest" hidden></ul></fieldset>
+  <fieldset><legend>Steps</legend>
+    <label><input type="radio" name="depth" value="1"> 1</label><label><input type="radio" name="depth" value="2"> 2</label>
+    <label><input type="radio" name="depth" value="3" checked> 3</label><label><input type="radio" name="depth" value="5"> 5</label>
+  </fieldset>
+  <fieldset><legend>Links</legend>
+    <label><input type="checkbox" name="kind" value="source" checked> <span class="swatch" style="background:var(--source)"></span>Source</label>
+    <label><input type="checkbox" name="kind" value="compare" checked> <span class="swatch" style="background:var(--compare)"></span>Compare</label>
+    <label><input type="checkbox" name="kind" value="contrast" checked> <span class="swatch" style="background:var(--contrast)"></span>Contrast</label>
+  </fieldset>
+</div>
+<main>
+  <div id="chart"></div>
+  <aside id="side"></aside>
+</main>
+<div id="tip"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script>
+const DATA = /*DATA*/null;
+const SITE = 'https://anyaadair.github.io/eLiebermann/';
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const groupColour = d3.scaleOrdinal(DATA.groups, d3.schemeTableau10.concat(d3.schemeSet3));
+const order = new Map(DATA.codes.map((c, i) => [c.code, i]));
+const codeOf = new Map(DATA.codes.map(c => [c.code, c]));
+const S = { root: null, depth: 3, kinds: new Set(['source', 'compare', 'contrast']), history: [] };
+const C = DATA.clauses;
+const clauseUrl = id => SITE + 'law.html?id=' + encodeURIComponent(id);
+
+// directed links, earlier -> later; one per pair, keeping every scholar's word
+const out = new Map(), inn = new Map();
+const edges = new Map();
+DATA.pairs.forEach(([a, b, who, kind, label]) => {
+  if (!C[a] || !C[b] || C[a][1] === C[b][1]) return;
+  let [s, t] = [a, b];
+  if (kind !== 'source' && order.get(C[a][1]) > order.get(C[b][1])) [s, t] = [b, a];
+  const k = s + '>' + t;
+  if (!edges.has(k)) edges.set(k, { s, t, kinds: new Set(), notes: [] });
+  const e = edges.get(k); e.kinds.add(kind); e.notes.push(who + (label ? ': ' + label : ''));
+});
+edges.forEach(e => {
+  e.kind = e.kinds.has('source') ? 'source' : e.kinds.has('contrast') && !e.kinds.has('compare') ? 'contrast' : 'compare';
+  (out.get(e.s) || out.set(e.s, []).get(e.s)).push(e); (inn.get(e.t) || inn.set(e.t, []).get(e.t)).push(e);
+});
+const ok = e => [...e.kinds].some(k => S.kinds.has(k));
+
+function tree(root, dir) {
+  const seen = new Set([root]);
+  const build = (id, d) => {
+    const node = { id, children: [] };
+    if (d >= S.depth) return node;
+    const next = ((dir > 0 ? out : inn).get(id) || []).filter(ok)
+      .sort((x, y) => order.get(C[dir > 0 ? x.t : x.s][1]) - order.get(C[dir > 0 ? y.t : y.s][1]));
+    next.forEach(e => { const o = dir > 0 ? e.t : e.s; if (seen.has(o)) return; seen.add(o); const ch = build(o, d + 1); ch.edge = e; node.children.push(ch); });
+    return node;
+  };
+  return build(root, 0);
+}
+function reach(id) { let n = 0; const seen = new Set([id]); const st = [id];
+  while (st.length) { (out.get(st.pop()) || []).forEach(e => { if (!seen.has(e.t)) { seen.add(e.t); n++; st.push(e.t); } }); } return n; }
+const starts = Object.keys(C).filter(id => out.has(id)).map(id => [id, reach(id)]).sort((a, b) => b[1] - a[1]).slice(0, 20);
+
+const tip = document.getElementById('tip');
+const showTip = (e, h) => { tip.innerHTML = h; tip.style.display = 'block'; tip.style.left = Math.min(e.clientX + 12, innerWidth - 370) + 'px'; tip.style.top = e.clientY + 12 + 'px'; };
+const hideTip = () => { tip.style.display = 'none'; };
+const clauseTip = id => { const c = C[id]; return `<strong>${esc(c[0])}</strong> <span class="muted">${esc((codeOf.get(c[1]) || {}).name || '')}</span>${c[2] ? `<br><i>${esc(c[2])}</i>` : ''}${c[3] ? `<br>${esc(c[3])}` : ''}`; };
+
+function draw() {
+  const chart = document.getElementById('chart');
+  chart.innerHTML = '';
+  const root = S.root;
+  const fw = d3.hierarchy(tree(root, 1)), bw = d3.hierarchy(tree(root, -1));
+  const rows = Math.max(fw.leaves().length, bw.leaves().length, 6);
+  const width = chart.clientWidth || 900, height = Math.max(520, rows * 22 + 80);
+  const half = width / 2 - 20;
+  const layout = d3.tree().size([height - 60, half - 110]);
+  layout(fw); layout(bw);
+  const svg = d3.select(chart).append('svg').attr('viewBox', [0, 0, width, height]).attr('height', height);
+  const g = svg.append('g').attr('transform', `translate(${width / 2},30)`);
+  g.append('text').attr('class', 'side-label').attr('x', -half + 10).attr('y', -10).text(`← drawn on (${bw.descendants().length - 1})`);
+  g.append('text').attr('class', 'side-label').attr('x', half - 10).attr('y', -10).attr('text-anchor', 'end').text(`taken up later (${fw.descendants().length - 1}) →`);
+  const midY = (fw.x + bw.x) / 2;
+  [[fw, 1], [bw, -1]].forEach(([h, dir]) => {
+    const dy = h.x - midY; h.each(n => { n.px = dir * n.y; n.py = n.x - dy; });
+    g.append('g').selectAll('path').data(h.links()).join('path').attr('class', 'link')
+      .attr('stroke', l => `var(--${l.target.data.edge.kind})`).attr('stroke-width', l => 1 + Math.min(3, l.target.data.edge.notes.length / 2))
+      .attr('d', d3.linkHorizontal().x(n => n.px).y(n => n.py))
+      .on('mousemove', (e, l) => showTip(e, `<strong>${esc(C[l.target.data.edge.s][0])} → ${esc(C[l.target.data.edge.t][0])}</strong><br>${l.target.data.edge.notes.map(esc).join('<br>')}`))
+      .on('mouseleave', hideTip);
+    const ns = g.append('g').selectAll('g').data(h.descendants().filter(n => n.depth > 0 || dir > 0)).join('g')
+      .attr('class', n => 'node' + (n.depth === 0 ? ' root' : '')).attr('transform', n => `translate(${n.px},${n.py})`);
+    ns.append('circle').attr('r', n => n.depth === 0 ? 8 : 5).attr('fill', n => groupColour((codeOf.get(C[n.data.id][1]) || {}).group));
+    ns.append('text').attr('x', n => n.depth === 0 ? 0 : dir * 8).attr('y', n => n.depth === 0 ? -14 : 4)
+      .attr('text-anchor', n => n.depth === 0 ? 'middle' : dir > 0 ? 'start' : 'end').text(n => C[n.data.id][0]);
+    ns.on('mousemove', (e, n) => showTip(e, clauseTip(n.data.id))).on('mouseleave', hideTip)
+      .on('click', (e, n) => { if (n.data.id !== S.root) centre(n.data.id); });
+  });
+  side(fw, bw);
+}
+
+function side(fw, bw) {
+  const c = C[S.root];
+  const codes = h => d3.rollups(h.descendants().slice(1), v => v.length, n => C[n.data.id][1]).sort((a, b) => order.get(a[0]) - order.get(b[0]));
+  const list = h => `<ul>${codes(h).map(([code, n]) => `<li><span>${esc(code)} <span class="muted">${esc((codeOf.get(code) || {}).name || '')}</span></span><span>${n}</span></li>`).join('') || '<li class="muted">none</li>'}</ul>`;
+  document.getElementById('side').innerHTML = `
+    <h2>${esc(c[0])}</h2><p class="muted">${esc((codeOf.get(c[1]) || {}).name || '')} · ${esc((codeOf.get(c[1]) || {}).date || '')}</p>
+    ${c[2] ? `<blockquote><i>${esc(c[2])}</i></blockquote>` : ''}${c[3] ? `<blockquote>${esc(c[3])}</blockquote>` : ''}
+    <p><a href="${clauseUrl(S.root)}" target="_blank" rel="noopener">Open the clause</a>${S.history.length ? ' · <a href="#" id="back">Back</a>' : ''}</p>
+    <h3>Taken up later, by code</h3>${list(fw)}
+    <h3>Drawn on, by code</h3>${list(bw)}
+    <h3>Clauses with the longest chains</h3>
+    <ul class="starts">${starts.map(([id, n]) => `<li data-id="${esc(id)}"><span>${esc(C[id][0])}</span><span class="muted">${n} later</span></li>`).join('')}</ul>`;
+  document.querySelectorAll('.starts li').forEach(li => li.addEventListener('click', () => centre(li.dataset.id)));
+  const back = document.getElementById('back');
+  if (back) back.addEventListener('click', e => { e.preventDefault(); S.root = S.history.pop(); draw(); });
+}
+
+function centre(id, push = true) {
+  if (push && S.root) S.history.push(S.root);
+  S.root = id; draw();
+  try { history.replaceState(null, '', '#' + encodeURIComponent(id)); } catch (e) { /* file:// */ }
+}
+document.querySelectorAll('input[name=depth]').forEach(r => r.addEventListener('change', () => { S.depth = +r.value; draw(); }));
+document.querySelectorAll('input[name=kind]').forEach(cb => cb.addEventListener('change', () => { cb.checked ? S.kinds.add(cb.value) : S.kinds.delete(cb.value); draw(); }));
+
+const q = document.getElementById('q'), sug = document.getElementById('suggest');
+const fold = s => s.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+const ids = Object.keys(C);
+let shown = [];
+q.addEventListener('input', () => {
+  const t = fold(q.value);
+  if (!t) { sug.hidden = true; return; }
+  shown = ids.filter(id => fold(C[id][0]).startsWith(t)).sort((a, b) => C[a][0].localeCompare(C[b][0], 'en', { numeric: true })).slice(0, 20);
+  sug.innerHTML = shown.map(id => `<li data-id="${esc(id)}">${esc(C[id][0])} <span class="muted">${(out.get(id) || []).length + (inn.get(id) || []).length} links</span></li>`).join('');
+  sug.hidden = !shown.length;
+});
+sug.addEventListener('click', e => { const li = e.target.closest('li'); if (li) { centre(li.dataset.id); sug.hidden = true; } });
+q.addEventListener('keydown', e => { if (e.key === 'Enter' && shown.length) { centre(shown[0]); sug.hidden = true; } });
+
+const startId = decodeURIComponent(location.hash.slice(1));
+centre(C[startId] ? startId : starts[0][0], false);
+let rt; addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(draw, 200); });
+</script>
+</body>
+</html>
