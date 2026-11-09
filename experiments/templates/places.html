@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Where the codes were made</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+<style>
+:root {
+  --bg: #fbfaf7; --fg: #22201c; --muted: #6b665d; --line: #d9d4ca; --panel: #ffffff; --accent: #8a3b12;
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #1a1916; --fg: #ebe7df; --muted: #a39d92; --line: #3a3732; --panel: #24221f; --accent: #e39a6b; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); }
+header { padding: 20px 24px 8px; max-width: 1100px; }
+h1 { margin: 0 0 6px; font-size: 1.6rem; font-weight: 600; }
+header p { margin: 4px 0; color: var(--muted); line-height: 1.45; max-width: 80ch; }
+.controls { display: flex; flex-wrap: wrap; gap: 8px 22px; padding: 10px 24px; align-items: center; border-bottom: 1px solid var(--line); font-size: .92rem; }
+.controls legend { float: left; margin-right: 6px; color: var(--muted); font-size: .8rem; text-transform: uppercase; letter-spacing: .06em; }
+.controls fieldset { border: 0; padding: 0; margin: 0; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+main { display: grid; grid-template-columns: minmax(0, 1fr) 340px; }
+@media (max-width: 900px) { main { grid-template-columns: 1fr; } }
+#map { height: calc(100vh - 230px); min-height: 480px; }
+@media (prefers-color-scheme: dark) { #map .leaflet-tile-pane { filter: invert(1) hue-rotate(180deg) brightness(.85) contrast(.9); } }
+aside { border-left: 1px solid var(--line); padding: 16px 18px; background: var(--panel); height: calc(100vh - 230px); min-height: 480px; overflow-y: auto; font-size: .92rem; }
+aside h2 { font-size: 1.1rem; margin: 0 0 6px; }
+aside h3 { font-size: .95rem; margin: 16px 0 4px; }
+aside a, .leaflet-popup-content a { color: var(--accent); }
+.muted { color: var(--muted); }
+.dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 4px; vertical-align: middle; }
+.row { padding: 3px 0; border-bottom: 1px dotted var(--line); }
+.row.place { cursor: pointer; }
+.row.place:hover { color: var(--accent); }
+.leaflet-popup-content { font-family: inherit; font-size: .9rem; }
+.leaflet-popup-content ul { padding-left: 16px; margin: 4px 0; }
+.year { font-variant-numeric: tabular-nums; color: var(--muted); margin-right: 6px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Where the law codes were made</h1>
+  <p>The places where the kings' councils issued their laws, as the codes themselves or their editors name them: Grately, Exeter, Andover, Enham, Bath, Winchester and the rest. Each circle is a place, sized by the number of codes issued there and coloured by king. Drag the slider to watch the councils move through time; click a place for its codes.</p>
+  <p class="muted">An experiment, made from <code>&lt;creation&gt;&lt;placeName&gt;</code> in <code>oe-laws/</code>. Coordinates were added by hand; identifications marked uncertain are the scholars' own doubts. Wihtbordesstan, and the letters Cnut wrote abroad, cannot be placed on the map and are listed on the right.</p>
+</header>
+<div class="controls">
+  <fieldset><legend>Up to</legend><input type="range" id="year" min="900" max="1140" step="1" value="1140" style="width:260px" aria-label="Show codes issued up to this year"> <strong id="year-n">1140</strong></fieldset>
+  <fieldset id="legend"></fieldset>
+</div>
+<main>
+  <div id="map"></div>
+  <aside id="side"></aside>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+<script>
+const DATA = /*DATA*/null;
+const SITE = 'https://anyaadair.github.io/eLiebermann/';
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const PALETTE = ['#4e79a7', '#f28e2b', '#e15759', '#76b7b2', '#59a14f', '#edc948', '#b07aa1', '#ff9da7', '#9c755f', '#bab0ac', '#8cd17d', '#86bcb6'];
+const groupColour = g => PALETTE[DATA.groups.indexOf(g) % PALETTE.length];
+document.getElementById('legend').innerHTML = DATA.groups.map(g => `<span><span class="dot" style="background:${groupColour(g)}"></span>${esc(g)}</span>`).join(' ');
+
+const map = L.map('map', { scrollWheelZoom: true }).setView([51.45, -1.6], 7);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  maxZoom: 12, minZoom: 5, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+const layer = L.layerGroup().addTo(map);
+
+// one marker per point on the map (places with the same coordinates share it)
+const placed = DATA.rows.filter(r => r.lat != null);
+const unplaced = DATA.rows.filter(r => r.lat == null);
+function draw(upTo) {
+  layer.clearLayers();
+  const rows = placed.filter(r => !r.year || r.year <= upTo);
+  const byPt = new Map();
+  rows.forEach(r => { const k = r.lat + ',' + r.lng; (byPt.get(k) || byPt.set(k, []).get(k)).push(r); });
+  byPt.forEach(rs => {
+    rs.sort((a, b) => (a.year || 0) - (b.year || 0));
+    const latest = rs[rs.length - 1];
+    const names = [...new Set(rs.map(r => r.place))];
+    const m = L.circleMarker([rs[0].lat, rs[0].lng], {
+      radius: 6 + 4 * Math.sqrt(rs.length), color: '#fff', weight: 1.5, fillColor: groupColour(latest.group), fillOpacity: .85
+    }).addTo(layer);
+    m.bindTooltip(`${esc(names.join(' / '))}: ${rs.length} code${rs.length > 1 ? 's' : ''}`);
+    m.bindPopup(`<strong>${esc(names.join(' / '))}</strong>${rs[0].note ? `<br><span class="muted">${esc(rs[0].note)}</span>` : ''}
+      <ul>${rs.map(r => `<li><span class="dot" style="background:${groupColour(r.group)}"></span><a href="${SITE}lawcode.html?code=${encodeURIComponent(r.code)}" target="_blank" rel="noopener">${esc(r.code)}</a> ${esc(r.name)}<br><span class="muted">${esc(r.date)}${r.refs.length ? ' · place: ' + esc(r.refs.join('; ')) : ''}</span></li>`).join('')}</ul>`);
+  });
+}
+
+// side: every code by date, then the places that cannot be mapped
+const all = [...DATA.rows].sort((a, b) => (a.year || 9999) - (b.year || 9999));
+document.getElementById('side').innerHTML = `
+  <h2>In order of date</h2>
+  ${all.filter(r => r.lat != null).map(r => `<div class="row place" data-lat="${r.lat}" data-lng="${r.lng}"><span class="year">${r.year || '?'}</span><span class="dot" style="background:${groupColour(r.group)}"></span><strong>${esc(r.code)}</strong> · ${esc(r.place)}</div>`).join('')}
+  <h3>Not on the map</h3>
+  ${unplaced.map(r => `<div class="row"><span class="year">${r.year || '?'}</span><strong>${esc(r.code)}</strong> · ${esc(r.place)}${r.note ? ` <span class="muted">(${esc(r.note)})</span>` : ''}${r.refs.length ? `<br><span class="muted">${esc(r.refs.join('; '))}</span>` : ''}</div>`).join('')}`;
+document.querySelectorAll('.row.place').forEach(el => el.addEventListener('click', () => map.flyTo([+el.dataset.lat, +el.dataset.lng], 9)));
+
+const slider = document.getElementById('year');
+const years = DATA.rows.map(r => r.year).filter(Boolean);
+slider.min = Math.min(...years); slider.max = Math.max(...years); slider.value = slider.max;
+document.getElementById('year-n').textContent = slider.value;
+slider.addEventListener('input', () => { document.getElementById('year-n').textContent = slider.value; draw(+slider.value); });
+draw(+slider.value);
+</script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Where the codes were made</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+<style>
+:root {
+  --bg: #fbfaf7; --fg: #22201c; --muted: #6b665d; --line: #d9d4ca; --panel: #ffffff; --accent: #8a3b12;
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #1a1916; --fg: #ebe7df; --muted: #a39d92; --line: #3a3732; --panel: #24221f; --accent: #e39a6b; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); }
+header { padding: 20px 24px 8px; max-width: 1100px; }
+h1 { margin: 0 0 6px; font-size: 1.6rem; font-weight: 600; }
+header p { margin: 4px 0; color: var(--muted); line-height: 1.45; max-width: 80ch; }
+.controls { display: flex; flex-wrap: wrap; gap: 8px 22px; padding: 10px 24px; align-items: center; border-bottom: 1px solid var(--line); font-size: .92rem; }
+.controls legend { float: left; margin-right: 6px; color: var(--muted); font-size: .8rem; text-transform: uppercase; letter-spacing: .06em; }
+.controls fieldset { border: 0; padding: 0; margin: 0; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+main { display: grid; grid-template-columns: minmax(0, 1fr) 340px; }
+@media (max-width: 900px) { main { grid-template-columns: 1fr; } }
+#map { height: calc(100vh - 230px); min-height: 480px; }
+@media (prefers-color-scheme: dark) { #map .leaflet-tile-pane { filter: invert(1) hue-rotate(180deg) brightness(.85) contrast(.9); } }
+aside { border-left: 1px solid var(--line); padding: 16px 18px; background: var(--panel); height: calc(100vh - 230px); min-height: 480px; overflow-y: auto; font-size: .92rem; }
+aside h2 { font-size: 1.1rem; margin: 0 0 6px; }
+aside h3 { font-size: .95rem; margin: 16px 0 4px; }
+aside a, .leaflet-popup-content a { color: var(--accent); }
+.muted { color: var(--muted); }
+.dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 4px; vertical-align: middle; }
+.row { padding: 3px 0; border-bottom: 1px dotted var(--line); }
+.row.place { cursor: pointer; }
+.row.place:hover { color: var(--accent); }
+.leaflet-popup-content { font-family: inherit; font-size: .9rem; }
+.leaflet-popup-content ul { padding-left: 16px; margin: 4px 0; }
+.year { font-variant-numeric: tabular-nums; color: var(--muted); margin-right: 6px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Where the law codes were made</h1>
+  <p>The places where the kings' councils issued their laws, as the codes themselves or their editors name them: Grately, Exeter, Andover, Enham, Bath, Winchester and the rest. Each circle is a place, sized by the number of codes issued there and coloured by king. Drag the slider to watch the councils move through time; click a place for its codes.</p>
+  <p class="muted">An experiment, made from <code>&lt;creation&gt;&lt;placeName&gt;</code> in <code>oe-laws/</code>. Coordinates were added by hand; identifications marked uncertain are the scholars' own doubts. Wihtbordesstan, and the letters Cnut wrote abroad, cannot be placed on the map and are listed on the right.</p>
+</header>
+<div class="controls">
+  <fieldset><legend>Up to</legend><input type="range" id="year" min="900" max="1140" step="1" value="1140" style="width:260px" aria-label="Show codes issued up to this year"> <strong id="year-n">1140</strong></fieldset>
+  <fieldset id="legend"></fieldset>
+</div>
+<main>
+  <div id="map"></div>
+  <aside id="side"></aside>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+<script>
+const DATA = {"rows":[{"code":"II Ew","name":"II Edward (Exeter)","group":"Edward the Elder","date":"924–5 (Liebermann, I p. 140); before 918 (Attenborough); before 916 (Wormald, MEL pp. 438–9); Exeter","year":924,"place":"Exeter","refs":[],"lat":50.7184,"lng":-3.5339,"note":"Devon","clauses":15},{"code":"II As","name":"II Æthelstan (Grately)","group":"Æthelstan","date":"925–c.935 (Liebermann, I p. 150); before III–VI As (Attenborough); c.926–c.930 (Whitelock, EHD p. 418); not before 928 (Wormald, MEL p. 440); Grately","year":925,"place":"Grately","refs":[],"lat":51.17,"lng":-1.6,"note":"Hampshire","clauses":60},{"code":"IV As","name":"IV Æthelstan (Thunresfeld)","group":"Æthelstan","date":"c.929–c.939 (Liebermann, I p. 171); before VI As (Attenborough); after III As, before VI As 12 (Wormald, MEL pp. 439–40); Ðunresfeld","year":929,"place":"Ðunresfeld","refs":[],"lat":51.17,"lng":-0.15,"note":"perhaps Thunderfield, near Horley, Surrey (uncertain)","clauses":22},{"code":"V As","name":"V Æthelstan (Exeter)","group":"Æthelstan","date":"c.927–37 (Liebermann, I p. 166); before III, IV & VI As (Attenborough); before III and IV As (Whitelock, EHD p. 423); Christmas 930, 931 or 934 (Wormald, MEL p. 439); Exeter","year":927,"place":"Exeter","refs":[],"lat":50.7184,"lng":-3.5339,"note":"Devon","clauses":12},{"code":"VI As","name":"VI Æthelstan (London Peace-Guild)","group":"Æthelstan","date":"c.930–40 (Liebermann, I p. 173); after II & V As (Attenborough); after IV As, cl. 12 in 934 or 936×7 (Wormald, MEL pp. 439–40); London","year":930,"place":"London","refs":[],"lat":51.5114,"lng":-0.09,"note":"the City","clauses":31},{"code":"I Em","name":"I Edmund (London)","group":"Edmund I","date":"Apr. 942–Mar. 946 (Liebermann, I p. 184); 942 or 944–6 (Robertson); Easter 945 or 946 (Wormald, MEL p. 441); London","year":942,"place":"London","refs":[],"lat":51.5114,"lng":-0.09,"note":"the City","clauses":8},{"code":"III Em","name":"III Edmund (Colyton)","group":"Edmund I","date":"940–6 (Liebermann, I p. 190); Culinton (?Colyton, Devonshire)","year":940,"place":"Culinton (?Colyton, Devonshire)","refs":[],"lat":50.739,"lng":-3.069,"note":"Colyton, Devon (uncertain)","clauses":13},{"code":"II Eg","name":"II Edgar (Andover)","group":"Edgar","date":"959–c.962 (Liebermann, I p. 194); after IV Eg (Robertson); 959–63 (Whitelock, EHD p. 434); Andover","year":959,"place":"Andover","refs":[],"lat":51.211,"lng":-1.492,"note":"Hampshire","clauses":18},{"code":"III Eg","name":"III Edgar (Andover)","group":"Edgar","date":"959–c.962 (Liebermann, I p. 200); after IV Eg (Robertson); 959–63 (Whitelock, EHD p. 434); Andover","year":959,"place":"Andover","refs":[],"lat":51.211,"lng":-1.492,"note":"Hampshire","clauses":23},{"code":"IV Eg","name":"IV Edgar (Whitbordesstan)","group":"Edgar","date":"962–3 (Liebermann, I p. 206; Whitelock, EHD p. 437); 962 or 963 (Robertson); ?970s (Wormald, MEL pp. 441–2); Wihtbordesstan","year":962,"place":"Wihtbordesstan","refs":[],"lat":null,"lng":null,"note":"unidentified","clauses":40},{"code":"I Atr","name":"I Æthelred (Woodstock)","group":"Æthelred II","date":"980–1013 (Liebermann, I p. 216); ?same time as III Atr (Robertson); ?mid-990s (Wormald, MEL p. 443); Woodstock, Mercia","year":980,"place":"Woodstock, Mercia","refs":[],"lat":51.848,"lng":-1.354,"note":"Oxfordshire","clauses":26},{"code":"III Atr","name":"III Æthelred (Wantage)","group":"Æthelred II","date":"981–1012, 997? (Liebermann, I p. 228); probably 997 (Whitelock, EHD p. 444); ?mid-990s (Wormald, MEL p. 443); Wantage, Wessex","year":981,"place":"Wantage, Wessex","refs":[],"lat":51.588,"lng":-1.426,"note":"Oxfordshire (formerly Berkshire)","clauses":36},{"code":"V Atr","name":"V Æthelred","group":"Æthelred II","date":"1008 (Liebermann, I p. 236; Whitelock, EHD p. 447); Pentecost 1008 (Wormald, MEL p. 332); Enham","year":1008,"place":"Enham","refs":[],"lat":51.238,"lng":-1.47,"note":"King’s Enham, near Andover, Hampshire","clauses":65},{"code":"VI Atr","name":"VI Æthelred (Enham)","group":"Æthelred II","date":"16 May 1008–13 May 1011 (Liebermann, I p. 246); 1008 (Robertson; Wormald, MEL pp. 332–5); Enham","year":1008,"place":"Enham","refs":[],"lat":51.238,"lng":-1.47,"note":"King’s Enham, near Andover, Hampshire","clauses":96},{"code":"VI Atr Lat","name":"VI Æthelred, Latin paraphrase","group":"Æthelred II","date":"16 May 1008–13 May 1011 (Liebermann, I p. 247); 1008 (Wormald, MEL pp. 333–5); Enham","year":1008,"place":"Enham","refs":[],"lat":51.238,"lng":-1.47,"note":"King’s Enham, near Andover, Hampshire","clauses":65},{"code":"VII Atr","name":"VII Æthelred (Bath)","group":"Æthelred II","date":"992–1011 (Liebermann, I p. 260); probably 1009 (Whitelock, EHD p. 452); 1009 (Wormald, MEL p. 331); Bath","year":992,"place":"Bath","refs":[],"lat":51.3811,"lng":-2.359,"note":"","clauses":28},{"code":"VIIa Atr","name":"VIIa Æthelred","group":"Æthelred II","date":"992–1011 (Liebermann, I p. 262); probably 1009 (Whitelock, EHD p. 452); 1009 (Wormald, MEL pp. 331–2); Bath","year":992,"place":"Bath","refs":[],"lat":51.3811,"lng":-2.359,"note":"","clauses":19},{"code":"IX Atr","name":"IX Æthelred (Woodstock)","group":"Æthelred II","date":"c.980–1016 (Liebermann, I p. 269); ? as for VIII Atr, i.e. 1014 (Wormald, MEL pp. 337, 431); Woodstock","year":980,"place":"Woodstock","refs":[],"lat":51.848,"lng":-1.354,"note":"Oxfordshire","clauses":2},{"code":"X Atr","name":"X Æthelred","group":"Æthelred II","date":"1009–16 (Liebermann, I p. 269); ?as for V & VI Atr: 1008 (Wormald, MEL pp. 336–7); ?King’s Enham (Wormald, MEL pp. 336–7)","year":1009,"place":"?King’s Enham","refs":["Wormald, MEL pp. 336–7"],"lat":51.238,"lng":-1.47,"note":"King’s Enham, near Andover, Hampshire (uncertain)","clauses":7},{"code":"Cn 1018","name":"Cnut’s Code of 1018 (Oxford)","group":"Cnut","date":"1018 (Whitelock, EHD p. 458; Kennedy; Wormald, MEL p. 346); Oxford","year":1018,"place":"Oxford","refs":[],"lat":51.752,"lng":-1.2577,"note":"","clauses":77},{"code":"Cn 1020","name":"Cnut’s Letter of 1020","group":"Cnut","date":"1020, Feb.–July (Liebermann, I p. 273); 1019/1020 (Robertson; Wormald, MEL p. 347); end of 1019 or very beginning of 1020 (Whitelock, EHD p. 459); England (Robertson); probably written from Denmark (Whitelock, EHD p. 459)","year":1020,"place":"England","refs":["Robertson"],"lat":null,"lng":null,"note":"","clauses":20},{"code":"Cn 1020","name":"Cnut’s Letter of 1020","group":"Cnut","date":"1020, Feb.–July (Liebermann, I p. 273); 1019/1020 (Robertson; Wormald, MEL p. 347); end of 1019 or very beginning of 1020 (Whitelock, EHD p. 459); England (Robertson); probably written from Denmark (Whitelock, EHD p. 459)","year":1020,"place":"probably written from Denmark","refs":["Whitelock, EHD p. 459"],"lat":null,"lng":null,"note":"","clauses":20},{"code":"Cn 1027","name":"Cnut’s Letter of 1027","group":"Cnut","date":"1027, c. May (Liebermann, I p. 276); 1027 (Whitelock, EHD p. 485; Wormald, MEL p. 348); ?en route from Rome to Denmark (Robertson)","year":1027,"place":"?en route from Rome to Denmark","refs":["Robertson"],"lat":null,"lng":null,"note":"","clauses":18},{"code":"I Cn","name":"I Cnut (Winchester)","group":"Cnut","date":"25 Dec. 1027–34 (Liebermann, I p. 278); 1020–23 (Whitelock, EHD p. 461); 1020/21 (Wormald, MEL p. 345); Winchester","year":1027,"place":"Winchester","refs":[],"lat":51.0632,"lng":-1.308,"note":"","clauses":93},{"code":"II Cn","name":"II Cnut (Winchester)","group":"Cnut","date":"25 Dec. 1027–34 (Liebermann, I p. 308); 1020–23 (Whitelock, EHD p. 461); 1020/21 (Wormald, MEL p. 345); Winchester","year":1027,"place":"Winchester","refs":[],"lat":51.0632,"lng":-1.308,"note":"","clauses":215},{"code":"Prom. Reg.","name":"Promissio Regis (Coronation Oath)","group":"Anonymous laws, legal tracts and fragments","date":"975 or 978, 14 April (Liebermann, I p. 214); 978 or 979 (Robertson); at Æthelred's consecration (Wormald, MEL pp. 447–8); Kingston, if 978–9 (Robertson)","year":975,"place":"Kingston, if 978–9","refs":["Robertson"],"lat":51.4123,"lng":-0.3007,"note":"Kingston upon Thames (if 978–9)","clauses":5},{"code":"Duns","name":"Dunsæte Ordinance","group":"Anonymous laws, legal tracts and fragments","date":"c.926–c.1000, c.935? (Liebermann, I p. 374); c.930 (Wormald, MEL pp. 381–2); ?Archenfield, on the Wye (Wormald, MEL pp. 381–2)","year":926,"place":"?Archenfield, on the Wye","refs":["Wormald, MEL pp. 381–2"],"lat":51.93,"lng":-2.75,"note":"Ergyng, south-west Herefordshire (uncertain)","clauses":26},{"code":"Rect","name":"Rectitudines Singularum Personarum","group":"Anonymous laws, legal tracts and fragments","date":"960 (c.1025?)–1060 (Liebermann, I p. 444); ?Bath Abbey (Wormald, MEL p. 389)","year":960,"place":"?Bath Abbey","refs":["Wormald, MEL p. 389"],"lat":51.3811,"lng":-2.359,"note":"uncertain","clauses":34},{"code":"Ger","name":"Gerefa (The Reeve)","group":"Anonymous laws, legal tracts and fragments","date":"960 (c.1025)–1060 (Liebermann, I p. 453); ?Bath Abbey (Wormald)","year":960,"place":"?Bath Abbey","refs":["Wormald"],"lat":51.3811,"lng":-2.359,"note":"uncertain","clauses":27},{"code":"Wl Lond","name":"William I: London Charter","group":"William I","date":"Dec. 1066–75 (Liebermann, I p. 486); 1066–75 (Robertson); 1066/7, within months of the coronation (Wormald, MEL p. 398); London","year":1066,"place":"London","refs":[],"lat":51.5114,"lng":-0.09,"note":"the City","clauses":5},{"code":"Hn mon","name":"Henry I: Decree Concerning the Coinage","group":"Henry I","date":"1100–3 (Liebermann, I p. 523); Westminster (Robertson)","year":1100,"place":"Westminster","refs":["Robertson"],"lat":51.4995,"lng":-0.1248,"note":"","clauses":10},{"code":"Hn com","name":"Henry I: Decree Concerning the County and Hundred Courts","group":"Henry I","date":"1109–11 (Liebermann, I p. 524); 1108 (Wormald, MEL p. 401); Reading (Robertson)","year":1109,"place":"Reading","refs":["Robertson"],"lat":51.4543,"lng":-0.9781,"note":"Berkshire","clauses":11},{"code":"Hn Lond","name":"Henry I: London Charter","group":"Henry I","date":"1115–33, probably 1131 (Liebermann, I p. 524); very late in Henry I's reign (Wormald, MEL p. 401); Westminster (Robertson)","year":1115,"place":"Westminster","refs":["Robertson"],"lat":51.4995,"lng":-0.1248,"note":"","clauses":20}],"groups":["Edward the Elder","Æthelstan","Edmund I","Edgar","Æthelred II","Cnut","Anonymous laws, legal tracts and fragments","William I","Henry I"]};
+const SITE = 'https://anyaadair.github.io/eLiebermann/';
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const PALETTE = ['#4e79a7', '#f28e2b', '#e15759', '#76b7b2', '#59a14f', '#edc948', '#b07aa1', '#ff9da7', '#9c755f', '#bab0ac', '#8cd17d', '#86bcb6'];
+const groupColour = g => PALETTE[DATA.groups.indexOf(g) % PALETTE.length];
+document.getElementById('legend').innerHTML = DATA.groups.map(g => `<span><span class="dot" style="background:${groupColour(g)}"></span>${esc(g)}</span>`).join(' ');
+
+const map = L.map('map', { scrollWheelZoom: true }).setView([51.45, -1.6], 7);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  maxZoom: 12, minZoom: 5, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+const layer = L.layerGroup().addTo(map);
+
+// one marker per point on the map (places with the same coordinates share it)
+const placed = DATA.rows.filter(r => r.lat != null);
+const unplaced = DATA.rows.filter(r => r.lat == null);
+function draw(upTo) {
+  layer.clearLayers();
+  const rows = placed.filter(r => !r.year || r.year <= upTo);
+  const byPt = new Map();
+  rows.forEach(r => { const k = r.lat + ',' + r.lng; (byPt.get(k) || byPt.set(k, []).get(k)).push(r); });
+  byPt.forEach(rs => {
+    rs.sort((a, b) => (a.year || 0) - (b.year || 0));
+    const latest = rs[rs.length - 1];
+    const names = [...new Set(rs.map(r => r.place))];
+    const m = L.circleMarker([rs[0].lat, rs[0].lng], {
+      radius: 6 + 4 * Math.sqrt(rs.length), color: '#fff', weight: 1.5, fillColor: groupColour(latest.group), fillOpacity: .85
+    }).addTo(layer);
+    m.bindTooltip(`${esc(names.join(' / '))}: ${rs.length} code${rs.length > 1 ? 's' : ''}`);
+    m.bindPopup(`<strong>${esc(names.join(' / '))}</strong>${rs[0].note ? `<br><span class="muted">${esc(rs[0].note)}</span>` : ''}
+      <ul>${rs.map(r => `<li><span class="dot" style="background:${groupColour(r.group)}"></span><a href="${SITE}lawcode.html?code=${encodeURIComponent(r.code)}" target="_blank" rel="noopener">${esc(r.code)}</a> ${esc(r.name)}<br><span class="muted">${esc(r.date)}${r.refs.length ? ' · place: ' + esc(r.refs.join('; ')) : ''}</span></li>`).join('')}</ul>`);
+  });
+}
+
+// side: every code by date, then the places that cannot be mapped
+const all = [...DATA.rows].sort((a, b) => (a.year || 9999) - (b.year || 9999));
+document.getElementById('side').innerHTML = `
+  <h2>In order of date</h2>
+  ${all.filter(r => r.lat != null).map(r => `<div class="row place" data-lat="${r.lat}" data-lng="${r.lng}"><span class="year">${r.year || '?'}</span><span class="dot" style="background:${groupColour(r.group)}"></span><strong>${esc(r.code)}</strong> · ${esc(r.place)}</div>`).join('')}
+  <h3>Not on the map</h3>
+  ${unplaced.map(r => `<div class="row"><span class="year">${r.year || '?'}</span><strong>${esc(r.code)}</strong> · ${esc(r.place)}${r.note ? ` <span class="muted">(${esc(r.note)})</span>` : ''}${r.refs.length ? `<br><span class="muted">${esc(r.refs.join('; '))}</span>` : ''}</div>`).join('')}`;
+document.querySelectorAll('.row.place').forEach(el => el.addEventListener('click', () => map.flyTo([+el.dataset.lat, +el.dataset.lng], 9)));
+
+const slider = document.getElementById('year');
+const years = DATA.rows.map(r => r.year).filter(Boolean);
+slider.min = Math.min(...years); slider.max = Math.max(...years); slider.value = slider.max;
+document.getElementById('year-n').textContent = slider.value;
+slider.addEventListener('input', () => { document.getElementById('year-n').textContent = slider.value; draw(+slider.value); });
+draw(+slider.value);
+</script>
+</body>
+</html>
