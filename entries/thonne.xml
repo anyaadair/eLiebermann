@@ -30,6 +30,7 @@
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
       <change when="2026-10-17">Liebermann’s numbered sections joined into one entry, as in the print: the files thonne-2 (later sections) are now part of this entry.</change>
       <change when="2026-10-18">Abbreviations and law code (Norðleod) linked; see the pull request “þæt: indecl., Einl., Folg., Urkk.-Sprache, Norðleod”.</change>
+      <change when="2026-11-09">II Ew 1 linked to II Ew 1 (it went to 1,1).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -63,7 +64,7 @@
         <xr type="lawCode"><ref target="clause:IICn_10">II Cn 10</ref></xr>
         <xr type="lawCode"><ref target="clause:Rect_21-to-21-3">Rect 21,2</ref></xr>
         <xr type="lawCode"><ref target="clause:ICn_18a">I Cn 18a</ref></xr>
-        <xr type="lawCode"><ref target="clause:IIEw_1-1">II Ew 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIEw_II-Ew-to-1">II Ew 1</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_24-2">II Cn 24,2</ref></xr>
         <xr type="lawCode"><ref target="clause:AGu_1">AGu 1</ref></xr>
         <xr type="lawCode"><ref target="clause:Northleoda_7">Norðleod 7</ref></xr>

@@ -1479,9 +1479,12 @@ scripts:
             };
             const words = [...new Set(found.map(fold))].filter(w => w.length >= 4);
             if (!words.length) return [];
+            // ge- in front is left aside
             const strip = w => (w.length > 5 && w.startsWith('ge') ? w.slice(2) : w);
+            // two words with different prefixes ge-, be-, to- (bebycge / gebycge, beforan / toforan)
+            const pre = w => (w.length > 5 && /^(ge|be|to)/.test(w) ? w.slice(0, 2) : '');
             const like = (a, b) => {
-                a = strip(a); b = strip(b);
+                if (pre(a) && pre(b) && pre(a) !== pre(b)) { a = a.slice(2); b = b.slice(2); } else { a = strip(a); b = strip(b); }
                 // (a much shorter word is another word, abbodas for abbodissan: but where the word is not in the
                 // clause at all, a shorter one may be part of it, hundred for hundredgemot)
                 if (a.length > b.length + 5 || (!loose && b.length >= 7 && a.length < b.length - 2)) return false;

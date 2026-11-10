@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-12">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
+      <change when="2026-11-09">II Ew 1 linked to II Ew 1 (it went to 1,1).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -47,7 +48,7 @@
         <xr type="lawCode"><ref target="clause:VIAs_8-3">VI As 8,3</ref></xr>
         <xr type="lawCode"><ref target="clause:Cn1020_11">Cn 1020,11</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_27">II Cn 27</ref></xr>
-        <xr type="lawCode"><ref target="clause:IIEw_1-1">II Ew 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIEw_II-Ew-to-1">II Ew 1</ref></xr>
         <xr type="lawCode"><ref target="clause:IIEm_Prol-to-1">II Em Pro 1</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAs_12-1">VI As 12,1</ref></xr>
         <xr type="lawCode"><ref target="clause:IVEg_1">IV Eg 1</ref></xr>

@@ -1201,12 +1201,14 @@
     // "Leis Wl 18,1; ~te I", "II Cn 2; abr~ A". -> its spellings, joined by commas, or ''
     const CODE_TOKEN = '\u0001[^\u0002\u0003]*\u0002[^\u0003]*\u0003';
     const VARIANT = new RegExp('^(?:\\s*' + CODE_TOKEN + ')*\\s*[;(]\\s*([\\p{L}~\'’\\[\\]\\-]*[\\p{L}~][\\p{L}~\'’\\[\\]\\-]*)((?:\\s*' + CODE_TOKEN + ')+)\\s*(?=$|[;|)‖.,])', 'du');
+    // the reading of the other manuscripts, "übr." (übrige): "~de Af 42,1 H; gebodie übr.", "(gebodum übr.)"
+    const VARIANT_OTHERS = new RegExp('^(?:\\s*' + CODE_TOKEN + ')*\\s*[;(]\\s*([\\p{L}~\'’\\[\\]\\-]*[\\p{L}~][\\p{L}~\'’\\[\\]\\-]*)\\s+übr\\.?', 'du');
     function variantAfter(flat, end, ital, hw) {
         if (end == null) return '';
         // one spelling after another ("Af 8,1 H; owiht E; nawiht B"): each is looked for
         const out = [];
         for (let at = end, n = 0; n < 4; n++) {
-            const m = VARIANT.exec(flat.slice(at));
+            const m = VARIANT.exec(flat.slice(at)) || VARIANT_OTHERS.exec(flat.slice(at));
             if (!m || ital[at + m.indices[1][0]]) break;
             const w = oneVariant(m[1], hw);
             if (w) out.push(w);
@@ -1298,6 +1300,16 @@
             hits.forEach(h => { if (h.form && h.form !== hw && !given.has(h.text)) given.set(h.text, h.form.split(',')[0]); });
             hits.forEach(h => { if (h.form === hw && given.has(h.text)) h.form = hw + ',' + given.get(h.text); });
         }
+        // After the long dash that ends the forms ("— Bed.: 1) gebieten Af El 49. II Ew 1. VI As 8,9"), a
+        // citation is given for a meaning, not a spelling: every form the entry gave before the dash is looked
+        // for too (beboden in VI As 8,9, bebead in Af El 49,7)
+        if (hw && !(opts || {}).noFind) {
+            const dash = (() => { const re = /—/g; let m; while ((m = re.exec(flat))) if (!(/\d$/.test(flat.slice(0, m.index)) && /^\d/.test(flat.slice(m.index + 1)))) return m.index; return -1; })();
+            if (dash > 0) {
+                const forms = [...new Set(hits.filter(h => h.flatStart < dash && h.form).map(h => h.form.split(',')[0]))].filter(f => f && f !== hw && !/[*"]/.test(f));
+                if (forms.length) hits.forEach(h => { if (h.flatStart > dash) h.dashForms = forms.slice(0, 12).join(','); });
+            }
+        }
         if (hw && !(opts || {}).noFind) hits.forEach(h => {
             let form = h.form;
             if (spelling && form === hw) form = '';
@@ -1306,7 +1318,7 @@
             if (form && (opts || {}).lang && (opts || {}).lang !== 'ang' && !spelling && !oneLetter && !form.split(',').includes(hw) && /^\p{L}{3,}$/u.test(hw)) form += ',' + hw;
             const sep = () => (h.href.includes('?') ? '&' : '?');
             if (form && (oneLetter ? /\p{L}/u : /\p{L}.*\p{L}/u).test(form.split(',')[0])) h.href += sep() + 'find=' + encodeURIComponent(form);
-            const also = variantAfter(flat, h.flatEnd, ital, hw);
+            const also = [variantAfter(flat, h.flatEnd, ital, hw), h.dashForms].filter(Boolean).join(',');
             if (also) h.href += sep() + 'also=' + encodeURIComponent(also);
         });
         // Wrap from the last to the first, so earlier offsets stay right.

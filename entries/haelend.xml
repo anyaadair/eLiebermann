@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
+      <change when="2026-11-09">Iud Dei VII linked to its Old English text (A), not the Latin.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -41,15 +42,15 @@
         <xr type="lawCode"><ref target="clause:Af_El-to-49">Af El 49</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiVI_1">Iud Dei VI 1</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiIV_2">Iud Dei IV 2</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_24">Iud Dei VII 24</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_24A">Iud Dei VII 24</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiVIII_2-3">Iud Dei VIII 2,3</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiIV_4-1">Iud Dei IV 4,1</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiV_2-1">Iud Dei V 2,1</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_23">Iud Dei VII 23</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_23-2">Iud Dei VII 23,2</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_23A">Iud Dei VII 23</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_23-2A">Iud Dei VII 23,2</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiVIII_2">Iud Dei VIII 2</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiIV_4-6">Iud Dei IV 4,6</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_23-1">Iud Dei VII 23,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_23-1A">Iud Dei VII 23,1</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiIV_3">Iud Dei IV 3</ref></xr>
       </entry>
     </body>

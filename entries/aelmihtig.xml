@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-13">Added the manuscript siglum B after the first Swer 7–9, checked against the print.</change>
+      <change when="2026-11-09">Iud Dei VII cited with MS A linked to the Old English text (A), not the Latin.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -59,7 +60,7 @@
         <xr type="lawCode"><ref target="clause:Ordal_4-3">Ordal 4,3</ref></xr>
         <xr type="lawCode"><ref target="clause:VAtr_35">V Atr 35</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_El-to-49">Af El 49</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_12-1">Iud Dei VII 12,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_12-1A">Iud Dei VII 12,1</ref></xr>
       </entry>
     </body>
   </text>

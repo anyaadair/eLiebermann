@@ -25,6 +25,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-09">“s. I) … II) …”: the numeral I was marked as a law code; its See links go to the words listed, not to “i”.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -33,8 +34,9 @@
         <form type="lemma">
           <orth>hæfdon</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">hæfdon</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="lawCode" target="law:I">I</ref>) habban II) heafod</dictScrap>
-        <xr type="see"><ref target="entry:i">i</ref></xr>
+        <dictScrap type="liebermann"><hi rend="bold">hæfdon</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> I) habban II) heafod</dictScrap>
+        <xr type="see"><ref target="entry:habban">habban</ref></xr>
+        <xr type="see"><ref target="entry:heafod">heafod</ref></xr>
       </entry>
     </body>
   </text>

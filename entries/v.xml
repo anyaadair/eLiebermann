@@ -29,6 +29,7 @@
       <change when="2026-10-17">Marked as a spelling entry.</change>
       <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
       <change when="2026-10-28">“von” unlinked from the abbreviations list: here it is ordinary German, not an abbreviation (Anya Adair).</change>
+      <change when="2026-11-09">Iud Dei VII cited with MS A linked to the Old English text (A), not the Latin.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -72,7 +73,7 @@
         <xr type="see"><ref target="entry:wif">wif</ref></xr>
         <xr type="see"><ref target="entry:willan">willan</ref></xr>
         <xr type="see"><ref target="entry:wesan">wesan</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_13">Iud Dei VII 13</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_13A">Iud Dei VII 13</ref></xr>
       </entry>
     </body>
   </text>

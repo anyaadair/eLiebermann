@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-12">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
+      <change when="2026-11-09">Iud Dei VII cited with MS A linked to the Old English text (A), not the Latin.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -41,7 +42,7 @@
         <xr type="lawCode"><ref target="clause:Af_43">Af 43</ref></xr>
         <xr type="lawCode"><ref target="clause:XAtr_Prol">X Atr Pro</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_84-4b">II Cn 84,4b</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_24-1">Iud Dei VII 24,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_24-1A">Iud Dei VII 24,1</ref></xr>
         <xr type="lawCode"><ref target="clause:Northu_48">Northu 48</ref></xr>
       </entry>
     </body>

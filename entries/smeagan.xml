@@ -28,6 +28,7 @@
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
+      <change when="2026-11-09">II Ew 1 linked to II Ew 1 (it went to 1,1).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -54,7 +55,7 @@
         <xr type="lawCode"><ref target="clause:IVEg_Prolog">IV Eg Pro</ref></xr>
         <xr type="lawCode"><ref target="clause:IIEm_Prolog">II Em Pro</ref></xr>
         <xr type="lawCode"><ref target="clause:XAtr_Prol">X Atr Pro</ref></xr>
-        <xr type="lawCode"><ref target="clause:IIEw_1-1">II Ew 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIEw_II-Ew-to-1">II Ew 1</ref></xr>
         <xr type="lawCode"><ref target="clause:ICn_21">I Cn 21</ref></xr>
         <xr type="lawCode"><ref target="clause:ICn_1">I Cn 1</ref></xr>
         <xr type="lawCode"><ref target="clause:Ger_2-1">Ger 2,1</ref></xr>

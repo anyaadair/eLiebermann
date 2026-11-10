@@ -29,6 +29,7 @@
       <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
       <change when="2026-10-28">“von” unlinked from the abbreviations list: here it is ordinary German, not an abbreviation (Anya Adair).</change>
+      <change when="2026-11-09">Iud Dei VII cited with MS A linked to the Old English text (A), not the Latin.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -50,7 +51,7 @@
         <xr type="lawCode"><ref target="clause:VIIaAtr_6">VIIa Atr 6</ref></xr>
         <xr type="lawCode"><ref target="clause:VIIaAtr_1">VIIa Atr 1</ref></xr>
         <xr type="lawCode"><ref target="clause:VIIaAtr_5-1">VIIa Atr 5,1</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_23-2">Iud Dei VII 23,2</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_23-2A">Iud Dei VII 23,2</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiVIII_2">Iud Dei VIII 2</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiIV_3-3">Iud Dei IV 3,3</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiIV_4-2">Iud Dei IV 4,2</ref></xr>

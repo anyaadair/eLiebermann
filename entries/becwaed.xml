@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-09">Links to Bosworth–Toller (be-cweðan, 3277) and the Dictionary of Old English (be-cweþan, be-cwelan) added (dictionary corrections list).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,9 @@
           <orth>becwæð</orth>
         </form>
         <dictScrap type="liebermann">hit <hi rend="bold">becwæð ⁊ becwæl</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Praeteritum"><abbr>ptt</abbr></ref></hi> 3, <hi rend="italic">es letztwillig vermachte und verstarb</hi> <ref type="lawCode" target="law:Becwaeth">Becwæð</ref> 1</dictScrap>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/3277">be-cweðan</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E02541">be-cweþan</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E02552">be-cwelan</ref></xr>
         <xr type="lawCode"><ref target="clause:Becwaeth_1">Becwæð 1</ref></xr>
       </entry>
     </body>

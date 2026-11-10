@@ -28,6 +28,7 @@
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
       <change when="2026-11-02">Link to the Dictionary of Old English added (E02376; guessed from the DOE headword list, verb form (-að/-eð → -an/-ian …); not yet checked).</change>
+      <change when="2026-11-09">Iud Dei VII cited with MS A linked to the Old English text (A), not the Latin.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -38,7 +39,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">bifiað</hi> of, <hi rend="italic"><ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref></hi> 3, <hi rend="italic">zittern vor</hi> <ref type="lawCode" target="law:IudDeiVII">Iud Dei VII</ref> 23,1 <ref type="lawCode" target="law:MsA">A</ref>, in quo tremebunt <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref></hi></dictScrap>
         <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E02376">bifian</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_23-1">Iud Dei VII 23,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_23-1A">Iud Dei VII 23,1</ref></xr>
       </entry>
     </body>
   </text>

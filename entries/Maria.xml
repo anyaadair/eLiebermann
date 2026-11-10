@@ -29,6 +29,7 @@
       <change when="2026-10-14">S. marked as Sanctus, not siehe.</change>
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
       <change when="2026-10-19">“Lat.” linked to the abbreviations list (printed bold italic, missed before).</change>
+      <change when="2026-11-09">Iud Dei VII linked to its Old English text (A), not the Latin.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -46,8 +47,8 @@
         <xr type="lawCode"><ref target="clause:IudDeiVI_1">Iud Dei VI 1</ref></xr>
         <xr type="lawCode"><ref target="clause:ExcomVII_2">Excom VII 2</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiIV_3-1">Iud Dei IV 3,1</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_12-1">Iud Dei VII 12,1</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_23-2">Iud Dei VII 23,2</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_12-1A">Iud Dei VII 12,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_23-2A">Iud Dei VII 23,2</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiXIII_13-2">Iud Dei XIII 13,2</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiXIV_4">Iud Dei XIV 4</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiXVI_14">Iud Dei XVI 14</ref></xr>

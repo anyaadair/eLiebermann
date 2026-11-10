@@ -33,6 +33,7 @@
       <change when="2026-11-01">Abbreviations “unfl.” and “Für” linked to the abbreviations list.</change>
       <change when="2026-11-01">“A” after a Sievers section is Sievers’s Anmerkung (note), not manuscript A: unlinked from the manuscripts list.</change>
       <change when="2026-11-01">Editor’s note: efenscyldig is cited under efen.</change>
+      <change when="2026-11-09">Iud Dei VII cited with MS A linked to the Old English text (A), not the Latin.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -59,8 +60,8 @@
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/57875">scyldig (Supplement)</ref></xr>
         <xr type="lawCode"><ref target="clause:Wi_12">Wi 12</ref></xr>
         <xr type="lawCode"><ref target="clause:VAs_Prol-to-2">V As Pro 2</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_23-3">Iud Dei VII 23,3</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_24">Iud Dei VII 24</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_23-3A">Iud Dei VII 23,3</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_24A">Iud Dei VII 24</ref></xr>
         <xr type="lawCode"><ref target="clause:Iudex_7">Iudex 7</ref></xr>
         <xr type="lawCode"><ref target="clause:IVEg_14">IV Eg 14</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_El-to-17">Af El 17</ref></xr>

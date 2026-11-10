@@ -28,6 +28,7 @@
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
       <change when="2026-11-01">Grammatical entry labelled by the language it concerns (Old English): Liebermann marks French (F) and Latin (L); unmarked ones concern Old English.</change>
+      <change when="2026-11-09">II Ew 1 linked to II Ew 1 (it went to 1,1).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -44,7 +45,7 @@
           <sense n="3"><hi rend="italic">umgekehrt Praeteritum gemeint <ref type="abbreviation" target="gram:mit"><abbr>mit</abbr></ref> <ref type="abbreviation" target="gram:Form"><abbr>Form</abbr></ref> des Plusqpf:</hi> wæs (wearð) geworden, <hi rend="italic">geschah</hi> (<hi rend="italic">wurde</hi>), <ref type="lawCode" target="law:ICn">I Cn</ref> Insc <ref type="lawCode" target="law:D">D</ref> (<ref type="lawCode" target="law:Grith">Grið</ref> 22)</sense>
           <sense n="4"><hi rend="italic"><ref type="abbreviation" target="gram:durch"><abbr>durch</abbr></ref> Praesens ausgedrückt <ref type="abbreviation" target="gram:sieheDN"><abbr>s. d. n.</abbr></ref></hi> 2</sense>
         </dictScrap>
-        <xr type="lawCode"><ref target="clause:IIEw_1-1">II Ew 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIEw_II-Ew-to-1">II Ew 1</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_El-to-13">Af El 13</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_El-to-25">Af El 25</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_El-to-49-7">Af El 49,7</ref></xr>

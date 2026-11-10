@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
+      <change when="2026-11-09">Iud Dei VII linked to its Old English text (A), not the Latin.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -41,7 +42,7 @@
         <xr type="lawCode"><ref target="clause:IudDeiXIII_13-2">Iud Dei XIII 13,2</ref></xr>
         <xr type="lawCode"><ref target="clause:ExcomVI_14-1">Excom VI 14,1</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiII_3-2">Iud Dei II 3,2</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_23-2">Iud Dei VII 23,2</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_23-2A">Iud Dei VII 23,2</ref></xr>
       </entry>
     </body>
   </text>

@@ -29,6 +29,7 @@
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
       <change when="2026-11-01">Abbreviations “unfl.” and “Für” linked to the abbreviations list.</change>
+      <change when="2026-11-09">Iud Dei VII cited with MS A linked to the Old English text (A), not the Latin.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -67,8 +68,8 @@
         <xr type="lawCode"><ref target="clause:ExcomVII_2">Excom VII 2</ref></xr>
         <xr type="lawCode"><ref target="clause:ExcomVII_5">Excom VII 5</ref></xr>
         <xr type="lawCode"><ref target="clause:IAs_Prol">I As Pro</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_23">Iud Dei VII 23</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_23-2">Iud Dei VII 23,2</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_23A">Iud Dei VII 23</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_23-2A">Iud Dei VII 23,2</ref></xr>
         <xr type="lawCode"><ref target="clause:AsAlm_1">As Alm 1</ref></xr>
         <xr type="lawCode"><ref target="clause:Wi_5">Wi 5</ref></xr>
         <xr type="lawCode"><ref target="clause:VAtr_6">V Atr 6</ref></xr>

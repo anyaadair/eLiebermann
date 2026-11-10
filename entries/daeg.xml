@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">“Vgl.” (vergleiche, compare) linked to the abbreviations list.</change>
+      <change when="2026-11-09">Iud Dei VII cited with MS A linked to the Old English text (A), not the Latin.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -81,7 +82,7 @@
         <xr type="lawCode"><ref target="clause:ICn_10-1">I Cn 10,1</ref></xr>
         <xr type="lawCode"><ref target="clause:ICn_17">I Cn 17</ref></xr>
         <xr type="lawCode"><ref target="clause:Ordal_5-2">Ordal 5,2</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_23-1">Iud Dei VII 23,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_23-1A">Iud Dei VII 23,1</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiVIII_2">Iud Dei VIII 2</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_72">II Cn 72</ref></xr>
         <xr type="lawCode"><ref target="clause:Wi_Prolog-to-3">Wi Pro</ref></xr>

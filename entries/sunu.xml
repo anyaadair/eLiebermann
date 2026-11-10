@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-18">Abbreviations and law code (Norðleod) linked; see the pull request “þæt: indecl., Einl., Folg., Urkk.-Sprache, Norðleod”.</change>
+      <change when="2026-11-09">Iud Dei VII cited with MS A linked to the Old English text (A), not the Latin.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -49,8 +50,8 @@
         <xr type="lawCode"><ref target="clause:ExcomVII_2">Excom VII 2</ref></xr>
         <xr type="lawCode"><ref target="clause:Northleoda_11">Norðleod 11</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_El-to-12">Af El 12</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_13">Iud Dei VII 13</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_23-1">Iud Dei VII 23,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_13A">Iud Dei VII 13</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_23-1A">Iud Dei VII 23,1</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiVIII_1">Iud Dei VIII 1</ref></xr>
       </entry>
     </body>

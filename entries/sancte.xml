@@ -29,6 +29,7 @@
       <change when="2026-10-13">Page corrected from 187 to 188 (the page turns inside sacu), as in the team transcription (sadelican - singan.docx).</change>
       <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
+      <change when="2026-11-09">Iud Dei VII linked to its Old English text (A), not the Latin.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -52,8 +53,8 @@
         <xr type="lawCode"><ref target="clause:VIAtr_22-2">VI Atr 22,2</ref></xr>
         <xr type="lawCode"><ref target="clause:ICn_16a">I Cn 16a</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiVI_1">Iud Dei VI 1</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_12-1">Iud Dei VII 12,1</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_23-2">Iud Dei VII 23,2</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_12-1A">Iud Dei VII 12,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_23-2A">Iud Dei VII 23,2</ref></xr>
         <xr type="lawCode"><ref target="clause:ICn_12">I Cn 12</ref></xr>
       </entry>
     </body>

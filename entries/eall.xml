@@ -32,6 +32,8 @@
       <change when="2026-10-19">“fm”, “masc”, “nt”, “pl” linked to the abbreviations list (printed bold italic, missed before).</change>
       <change when="2026-11-01">Editor’s note on a misprinted citation (unlinked citations, November 2026).</change>
       <change when="2026-11-01">Abbreviations “unfl.” and “Für” linked to the abbreviations list.</change>
+      <change when="2026-11-09">II Ew 1 linked to II Ew 1 (it went to 1,1).</change>
+      <change when="2026-11-09">Iud Dei VII cited with MS A linked to the Old English text (A), not the Latin.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -99,7 +101,7 @@
         <xr type="lawCode"><ref target="clause:Forf_2">Forf 2</ref></xr>
         <xr type="lawCode"><ref target="clause:WiLad_Prol">Wl lad Pro</ref></xr>
         <xr type="lawCode"><ref target="clause:VAtr_16">V Atr 16</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_12-1">Iud Dei VII 12,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_12-1A">Iud Dei VII 12,1</ref></xr>
         <xr type="lawCode"><ref target="clause:IIAs_14">II As 14</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_30-9">II Cn 30,9</ref></xr>
         <xr type="lawCode"><ref target="clause:Had_1">Had 1</ref></xr>
@@ -121,7 +123,7 @@
         <xr type="lawCode"><ref target="clause:Ordal_4">Ordal 4</ref></xr>
         <xr type="lawCode"><ref target="clause:AGu_5">AGu 5</ref></xr>
         <xr type="lawCode"><ref target="clause:Cn1020_20">Cn 1020,20</ref></xr>
-        <xr type="lawCode"><ref target="clause:IIEw_1-1">II Ew 1</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIEw_II-Ew-to-1">II Ew 1</ref></xr>
         <xr type="lawCode"><ref target="clause:Wer_4">Wer 4</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_El-to-49-2">Af El 49,2</ref></xr>
         <xr type="lawCode"><ref target="clause:Northu_1">Northu 1</ref></xr>
@@ -154,7 +156,7 @@
         <xr type="lawCode"><ref target="clause:Northu_2-2">Northu 2,2</ref></xr>
         <xr type="lawCode"><ref target="clause:IEw_Prol">I Ew Pro</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_Ine-Prol">Ine Pro</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_13">Iud Dei VII 13</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_13A">Iud Dei VII 13</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiIV_3-1">Iud Dei IV 3,1</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_14">II Cn 14</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_El-to-3">Af El 3</ref></xr>

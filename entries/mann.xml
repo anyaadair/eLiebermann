@@ -38,6 +38,7 @@
       <change when="2026-10-28">“von” unlinked from the abbreviations list: here it is ordinary German, not an abbreviation (Anya Adair).</change>
       <change when="2026-11-01">Editor’s note on a misprinted citation (unlinked citations, November 2026).</change>
       <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
+      <change when="2026-11-09">Iud Dei VII cited with MS A linked to the Old English text (A), not the Latin.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -89,8 +90,8 @@
         <xr type="lawCode"><ref target="clause:ICn_2-3">I Cn 2,3</ref></xr>
         <xr type="lawCode"><ref target="clause:ICn_7-1">I Cn 7,1</ref></xr>
         <xr type="lawCode"><ref target="clause:ICn_8-2">I Cn 8,2</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_23">Iud Dei VII 23</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_24">Iud Dei VII 24</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_23A">Iud Dei VII 23</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_24A">Iud Dei VII 24</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_61">Ine 61</ref></xr>
         <xr type="lawCode"><ref target="clause:Rubrics-Ine_74">Ine Rb 74</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiIV_2-1">Iud Dei IV 2,1</ref></xr>

@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
+      <change when="2026-11-09">Iud Dei VII linked to its Old English text (A), not the Latin.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -37,7 +38,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">Lucas</hi> <ref type="lawCode" target="law:IudDeiVI">Iud Dei VI</ref> 1. <ref type="lawCode" target="law:IudDeiVII">VII</ref> 23. <ref type="lawCode" target="law:IudDeiXIII">XIII</ref> 13,2. <ref type="lawCode" target="law:ExcomVI">Excom VI</ref> 1,4</dictScrap>
         <xr type="lawCode"><ref target="clause:IudDeiVI_1">Iud Dei VI 1</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_23-1">Iud Dei VII 23</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_23-1A">Iud Dei VII 23</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiXIII_13-2">Iud Dei XIII 13,2</ref></xr>
         <xr type="lawCode"><ref target="clause:ExcomVI_1-4">Excom VI 1,4</ref></xr>
       </entry>

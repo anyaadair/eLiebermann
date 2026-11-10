@@ -662,7 +662,13 @@ def targets(scrap, entry_id, index):
             if not node[:1].isspace():
                 found.append((kind, '', [], 'nothing follows'))
                 continue
-            toks = words(node)
+            # "s. I) gebedræden II) unabeden": a numbered list, the word after each numeral
+            if re.match(r'\s*(?:I{1,3}|IV|V)\)\s', node):
+                toks = re.findall(r'(?:^|\s)(?:I{1,3}|IV|V)\)\s*(?:Der\.:\s*)?([^\W\d_][^\s,|;()]*)', node)
+                words.unter = []
+                words.right = ''
+            else:
+                toks = words(node)
             for form, _ in words.unter:
                 ids, _, _ = resolve(clean(html.unescape(form)), index, lang, '', heads, entry_id)
                 UNTER_FORMS[entry_id].update(ids)

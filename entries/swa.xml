@@ -34,6 +34,7 @@
       <change when="2026-10-18">Abbreviations and law code (Norðleod) linked; see the pull request “þæt: indecl., Einl., Folg., Urkk.-Sprache, Norðleod”.</change>
       <change when="2026-10-19">“bez.” (bezüglich) linked to the abbreviations list.</change>
       <change when="2026-11-01">Abbreviations “unfl.” and “Für” linked to the abbreviations list.</change>
+      <change when="2026-11-09">Iud Dei VII cited with MS A linked to the Old English text (A), not the Latin.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -157,7 +158,7 @@
         <xr type="lawCode"><ref target="clause:IIEm_1">II Em 1</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_12">Af 12</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_43-1">Ine 43,1</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_23-3">Iud Dei VII 23,3</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_23-3A">Iud Dei VII 23,3</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_30-5">II Cn 30,5</ref></xr>
         <xr type="lawCode"><ref target="clause:Gethyn_3">Geþyncðo 3</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAs_8-4">VI As 8,4</ref></xr>

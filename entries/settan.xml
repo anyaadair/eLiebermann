@@ -30,6 +30,7 @@
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
       <change when="2026-10-19">“op”, “pc”, “pl”, “ptt” linked to the abbreviations list (printed bold italic, missed before).</change>
       <change when="2026-10-19">“msc” linked to the abbreviations list.</change>
+      <change when="2026-11-09">Iud Dei VII cited with MS A linked to the Old English text (A), not the Latin.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -63,7 +64,7 @@
         <xr type="lawCode"><ref target="clause:IAs_1">I As 1</ref></xr>
         <xr type="lawCode"><ref target="clause:Rect_21-to-21-3">Rect 21,1</ref></xr>
         <xr type="lawCode"><ref target="clause:Swer_3-2">Swer 3,2</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVII_24">Iud Dei VII 24</ref></xr>
+        <xr type="lawCode"><ref target="clause:IudDeiVII_24A">Iud Dei VII 24</ref></xr>
         <xr type="lawCode"><ref target="clause:IIAs_14-1">II As 14,1</ref></xr>
         <xr type="lawCode"><ref target="clause:IAtr_1-5">I Atr 1,5</ref></xr>
         <xr type="lawCode"><ref target="clause:IIAtr_8">II Atr 8</ref></xr>
