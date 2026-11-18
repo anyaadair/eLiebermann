@@ -1400,6 +1400,7 @@ scripts:
         // fromLink: the box was filled from a dictionary entry (?find=), and is looked for with the
         // links' own spelling tolerance (law-search.js), not the reader's, until the reader changes it
         let fromLink = false;
+        const onlyIn = (new URLSearchParams(location.search).get('in') || '').trim();
         const drawMatch = () => LawPanel.pills($('match'), [['whole', 'Whole words'], ['part', 'Parts of words']], k => matchMode === k, k => { matchMode = k; fromLink = false; drawMatch(); run(); });
         drawMatch();
         const markPanel = LawPanel.watch($('panel'), () => ({ f: !!find.value.trim(), go: !!$('go').value.trim() }));
@@ -1424,7 +1425,11 @@ scripts:
             const oneLetter = fromLink && find.value.trim().split(/\s+/).every(w => w.replace(/\*/g, '').length === 1);
             // and never in the English translations: the dictionary cites the words of the texts (and of
             // Liebermann's German), so a form such as "be" must not mark English "be" or "beyond"
-            marks = W.mark(target, terms, lang => (oneLetter && !/^(ang|la|xno)$/.test(lang || '')) || (fromLink && lang === 'en') ? null : !/^(en|de)$/.test(lang || '') && loose);
+            // (a link may ask for the Old English alone, &in=ang: the forms of beon, is, si, sie, are Latin words too)
+            // nor in Liebermann's German translation, where a name or a German word (bringe) would be marked; his
+            // German notes, which quote the manuscripts' readings, are looked in
+            marks = W.mark(target, terms, (lang, holder) => (oneLetter && !/^(ang|la|xno)$/.test(lang || '')) || (fromLink && lang === 'en') || (fromLink && onlyIn && !(lang || '').startsWith(onlyIn))
+                || (fromLink && /^de/.test(lang || '') && holder && holder.classList.contains('clause-reading-text')) ? null : !/^(en|de)$/.test(lang || '') && loose);
             at = -1;
             $('find-status').hidden = !terms.length;
             const vis = marks.filter(m => m.offsetParent !== null);

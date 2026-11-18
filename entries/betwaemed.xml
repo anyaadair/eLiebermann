@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-18">Corrections from the consolidated dictionary corrections list for B (links, cross-references, abbreviation links).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,7 @@
           <orth>betwæmed</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">betwæmed</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Praeteritum"><abbr>ptt</abbr></ref> <ref type="abbreviation" target="gram:Particip"><abbr>pc</abbr></ref></hi>, (<hi rend="italic">Rechtsstreit</hi>) <hi rend="italic">eingestellt</hi> <ref type="lawCode" target="law:ICn">I Cn</ref> 17,2</dictScrap>
+        <xr type="compare"><ref target="entry:totwaeman">totwæman</ref></xr>
         <xr type="lawCode"><ref target="clause:ICn_17-2">I Cn 17,2</ref></xr>
       </entry>
     </body>

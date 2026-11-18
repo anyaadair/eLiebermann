@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-11-02">Link to the Dictionary of Old English added (E02911; guessed from the DOE headword list, spelling variant (i/y/ie, double letters, -ian/-an); not yet checked).</change>
+      <change when="2026-11-18">Derivatives list: a first part with a hyphen ("burg-" under bot) now goes to the compound (burgbot), and a compound written without its final -e (woruldbot) to its entry.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,7 +36,8 @@
         <form type="lemma">
           <orth>by[c]gen</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">by[c]gen</hi>; <hi rend="italic"><ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>:</hi> Be leodan bygene <hi rend="italic">Vom Verkaufen eines Landsmannes</hi> <ref type="lawCode" target="law:Ine">Ine</ref> 11 Insc <ref type="lawCode" target="law:B">B</ref> (leodb- 11 <ref type="lawCode" target="law:Rb">Rb</ref> <ref type="lawCode" target="law:Ld">Ld</ref>) <hi rend="italic"><ref type="abbreviation" target="gram:uber"><abbr>über</abbr></ref></hi> landb- <hi rend="italic"><ref type="abbreviation" target="gram:ubergeschrieben"><abbr>übergeschr.</abbr></ref></hi> — <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> gebedbigen</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">by[c]gen</hi>; <hi rend="italic"><ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>:</hi> Be leodan bygene <hi rend="italic">Vom Verkaufen eines Landsmannes</hi> <ref type="lawCode" target="law:Ine">Ine</ref> 11 Insc <ref type="lawCode" target="law:B">B</ref> (leodb- 11 <ref type="lawCode" target="law:Rb">Rb</ref> <ref type="lawCode" target="law:Ld">Ld</ref>) <hi rend="italic"><ref type="abbreviation" target="gram:uber"><abbr>über</abbr></ref></hi> landb- <hi rend="italic"><ref type="abbreviation" target="gram:ubergeschrieben"><abbr>übergeschr.</abbr></ref></hi> — <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:gebedbigene">gebedbigen</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:gebedbigene">gebedbigene</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/5528">bycgen</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/41191">bygen</ref></xr>
         <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E02911">bigen</ref></xr>

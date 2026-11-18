@@ -25,6 +25,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-18">Derivatives list: a first part with a hyphen ("burg-" under bot) now goes to the compound (burgbot), and a compound written without its final -e (woruldbot) to its entry.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -33,7 +34,8 @@
         <form type="lemma">
           <orth>[-dafenian]</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">[-dafenian]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> ged~, ungedafenlic</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">[-dafenian]</hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> ged~, <ref type="entry" target="entry:ungedafenlice">ungedafenlic</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:ungedafenlice">ungedafenlice</ref></xr>
       </entry>
     </body>
   </text>

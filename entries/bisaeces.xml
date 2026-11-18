@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-18">Link to the Dictionary of Old English added (E02820; asked for in the dictionary corrections list (B), found in the DOE headword list; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,7 @@
           <orth>bisæces</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">bisæces</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Genitiv"><abbr>gn</abbr></ref></hi>, <hi rend="italic">Streites</hi> <ref type="lawCode" target="law:Episc">Episc</ref> 12</dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E02820">big-sæc</ref></xr>
         <xr type="lawCode"><ref target="clause:Episc_12">Episc 12</ref></xr>
       </entry>
     </body>

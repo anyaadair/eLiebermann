@@ -292,7 +292,7 @@ scripts:
                 const seen = terms.map(() => false), extra = [];
                 let inShown = false;
                 LawPanel.fields(texts[c.id], S.where).forEach(([label, text, lang]) => {
-                    const hits = W.findIn(text, terms, loose(lang));
+                    const hits = W.findIn(text, !loose(lang) && terms.strict ? terms.strict : terms, loose(lang));
                     hits.forEach((h, i) => { if (h) seen[i] = true; });
                     const isShown = (S.show.has('text') && text === c.oe) || (S.show.has('en') && text === c.gloss);
                     if (hits.some(Boolean)) { if (isShown) inShown = true; else extra.push([label, text, hits.filter(Boolean), lang]); }

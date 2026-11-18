@@ -334,10 +334,29 @@ class Index:
         hw = re.sub(r'^\[(.*)\]$', r'\1', self.hw.get(id_, id_))
         return hw + (' ' + self.section[id_] if id_ in self.section else '')
 
+    def compound(self, word, self_entry, lang):
+        key = lambda h: re.sub(r'[\u0300-\u036f]', '', unicodedata.normalize('NFD', re.sub(r'[\[\]()\-~]', '', h))).lower().replace('æ', 'ae').replace('ð', 'þ')
+        pre = key(word)
+        own = [key(f) for f in spellings(self.hw.get(self_entry, '').split(',')[0].strip().strip('[]-'))]
+        want = {pre + o + e for o in own if o for e in ('', 'e')} | {pre + o[:-1] for o in own if o.endswith('e')}
+        return sorted(i for i, h in self.hw.items() if i != self_entry and i not in self.pointer and self.lang.get(i) == lang
+                      and any(key(f) in want for f in spellings(h) | {h}))
+
     def find(self, word, lang='', numeral='', mark=None, self_entry=''):
         """-> (list of ids, why not / how)"""
         ids = self.lookup(word)
         how = ''
+        if DERIV and self_entry and word.endswith('-') and not word.startswith('-'):
+            # In a "Der." list a first part with a hyphen is a compound of this entry's word: under bot,
+            # "burg-, sar-, weofod-" are burgbot, sarbote, weofodbot (with or without a final -e). Only
+            # where no such entry is found does the first part link to its own entry (burg).
+            whole = self.compound(word, self_entry, lang)
+            if whole:
+                return whole, 'the first part and this entry\'s word'
+        if DERIV and not ids and re.fullmatch(r'[^\W\d_]{4,}', word):
+            # a compound written out with no entry of that spelling, but one with a final -e (woruldbot: woruldbote)
+            ids = [i for i in self.lookup(word + 'e') if i not in self.pointer]
+            how = 'linked to the spelling with -e' if ids else ''
         if not ids:
             # A prefix or suffix (heah-, -sceatt) with no entry of its own: the
             # entry for the word itself.
@@ -821,8 +840,11 @@ def update(path, index, write):
     existing = SEE.findall(text)
     has_dort = any(k == 'sieheDort' for k, _, _, _ in found)
     # a link checked and found wrong (SKIP) is taken off, though it was there before
+    # a first part linked to its own entry before the compound was found ("burg-" under bot: burg, now burgbot)
+    superseded = {i for kind, shown, ids, why in found if why == "the first part and this entry's word"
+                  for i in index.lookup(shown.strip('-'))}
     removed = [x for x in existing if (x == 'd' and has_dort and x not in want) or ((entry_id, x) in SKIP and x not in want)
-               or (x in UNTER_FORMS[entry_id] and x not in want)]
+               or (x in UNTER_FORMS[entry_id] and x not in want) or (x in superseded and x not in want)]
     kept = [x for x in existing if x not in removed]
     final = want + [x for x in kept if x not in want]
     if final == existing and block_labels_ok(text, final, index):

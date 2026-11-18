@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-18">Link to the Dictionary of Old English added (E03496; asked for in the dictionary corrections list (B), found in the DOE headword list; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,7 @@
           <orth>bistandeð</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">bistandeð</hi>, 3, <hi rend="italic">danebensteht</hi> <ref type="lawCode" target="law:Abt">Abt</ref> 51</dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E03496">be-standan</ref></xr>
         <xr type="lawCode"><ref target="clause:Abt_51">Abt 51</ref></xr>
       </entry>
     </body>

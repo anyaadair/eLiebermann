@@ -1113,6 +1113,16 @@
     // words that end a run of Latin but are not themselves the translation (sigla, numerals, "id est")
     const NOT_GLOSS = /^(?:[IVXLC]+|id|est|vel|sc|scil|Ip|Hunt|Var|Lond|Quadr|Inst|Hs|Hss|ff?|Z)$/;
     // glosses: look for the Latin translation of an Old English headword (not in Latin or French entries)
+    // A verb whose forms do not look like its headword (beon: bið, is, sie, wæs, syndon): the forms, in groups that
+    // stand for one another (data/link-highlights.json, "_forms"). Any of them before a citation is the cited form,
+    // and its link looks for every form of its group (sy: sie, si, sig …). Set by linkClauseNumbers.
+    let paradigm = null;
+    const paradigmGroup = t => {
+        if (!paradigm) return null;
+        const w = foldForm(t).replace(/[\[\]\-]/g, '');
+        const g = paradigm.find(x => x.some(f => foldForm(f) === w));
+        return g ? [...new Set([t.replace(/[\[\]\-]/g, ''), ...g])].join(',') : null;
+    };
     function formBefore(flat, i, ital, bold, breaks, hw, affix, glosses) {
         const toks = [...flat.slice(0, i).matchAll(/\u0001[^\u0003]*\u0003|[\p{L}~'’\[\]\-]*[\p{L}~][\p{L}~'’\[\]\-]*|\d+|[()|‖—]/gu)];
         // the plain words nearest the citation ("terra testamentalis"), in case a GLOSS_MARK comes before them
@@ -1171,6 +1181,8 @@
             if (t.includes('~')) return expandTilde(t, hw);
             // the word just before the citation, when it follows a grammatical label ("ptt pc: aboren",
             // "dt: …"; short abbreviations, not a German meaning such as "kaufen:"), whatever it looks like
+            const group = paradigmGroup(t);
+            if (group) return group;
             if (!plain && labelBefore(toks, k, flat, ital, at)) return t.replace(/[\[\]\-]/g, '');
             if (!plain && affix && t.length > 1 && !/^[IVXLC]+$/.test(t)) return t.replace(/[\[\]\-]/g, '');   // not a numeral (III)
             // in a bracketed passage of spellings, the word before the citation is the spelling
@@ -1290,6 +1302,7 @@
         // Liebermann's grammatical entries (Accent, Declination …) cite hundreds of forms, each the
         // word before its citation and often not clearly marked off: their links open the clause
         // without marking a word (the entry page says so)
+        paradigm = Array.isArray((opts || {}).forms) && (opts || {}).forms.length ? opts.forms : null;
         if (hw && !(opts || {}).noFind) {
             hits.forEach(h => { h.form = formBefore(flat, h.flatStart, ital, bold, breaks, hw, affix, (opts || {}).lang === 'ang'); });
             // A citation with no spelling of its own before it falls back on the headword ("bei, an, neben
@@ -1307,7 +1320,12 @@
             const dash = (() => { const re = /—/g; let m; while ((m = re.exec(flat))) if (!(/\d$/.test(flat.slice(0, m.index)) && /^\d/.test(flat.slice(m.index + 1)))) return m.index; return -1; })();
             if (dash > 0) {
                 const forms = [...new Set(hits.filter(h => h.flatStart < dash && h.form).map(h => h.form.split(',')[0]))].filter(f => f && f !== hw && !/[*"]/.test(f));
-                if (forms.length) hits.forEach(h => { if (h.flatStart > dash) h.dashForms = forms.slice(0, 12).join(','); });
+                if (paradigm) {
+                    // (a verb such as beon: a meaning cited with a form of its own (þær bið gewrit) looks for that form's
+                    // group; one cited with none (bist unscyldig Af El 2; gebrocen Abt 37) for every form)
+                    const all = [...new Set(forms.concat(paradigm.flat()))];
+                    hits.forEach(h => { if (h.flatStart > dash && !paradigmGroup((h.form || '').split(',')[0])) h.dashForms = all.join(','); });
+                } else if (forms.length) hits.forEach(h => { if (h.flatStart > dash) h.dashForms = forms.slice(0, 12).join(','); });
             }
         }
         if (hw && !(opts || {}).noFind) hits.forEach(h => {
@@ -1320,6 +1338,8 @@
             if (form && (oneLetter ? /\p{L}/u : /\p{L}.*\p{L}/u).test(form.split(',')[0])) h.href += sep() + 'find=' + encodeURIComponent(form);
             const also = [variantAfter(flat, h.flatEnd, ital, hw), h.dashForms].filter(Boolean).join(',');
             if (also) h.href += sep() + 'also=' + encodeURIComponent(also);
+            // short forms such as is, si, sie are Latin and French words too: only the Old English is marked
+            if (paradigm && (form || also)) h.href += sep() + 'in=ang';
         });
         // Wrap from the last to the first, so earlier offsets stay right.
         hits.reverse().forEach(h => {

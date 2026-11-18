@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-18">Link to the Dictionary of Old English added (E04017; asked for in the dictionary corrections list (B), found in the DOE headword list; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,7 @@
           <orth>biornendes</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">biornendes</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Particip"><abbr>pc</abbr></ref> <ref type="abbreviation" target="gram:Genitiv"><abbr>gn</abbr></ref></hi>, <hi rend="italic">brennenden</hi> <ref type="lawCode" target="law:IudDeiIV">Iud Dei IV</ref> 3,3, ardentis <hi rend="italic"><ref type="abbreviation" target="gram:glossirend"><abbr>glossirend</abbr></ref></hi></dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E04017">byrnan</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiIV_3-3">Iud Dei IV 3,3</ref></xr>
       </entry>
     </body>

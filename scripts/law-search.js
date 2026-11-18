@@ -174,7 +174,8 @@
     const LOOSEN = {
         // Liebermann prints v where the editions have u (ævre, æure)
         user: word => word.replace(/v/g, 'u').replace(/ie|y/g, 'i').replace(/ea|eo|io|ae/g, 'e').replace(/k/g, 'c').replace(/([b-df-hj-np-tv-z])\1+/g, '$1'),
-        link: word => word.replace(/v/g, 'u').replace(/ie|y/g, 'i').replace(/ea|eo|io|ae/g, 'e').replace(/k/g, 'c').replace(/([b-df-hj-np-tv-z])\1+/g, '$1')
+        // (a word of three letters keeps its two vowels: beo is not be, heo not he, bie not bi; upp is still up)
+        link: word => { const l = word.replace(/v/g, 'u').replace(/ie|y/g, 'i').replace(/ea|eo|io|ae/g, 'e').replace(/k/g, 'c').replace(/([b-df-hj-np-tv-z])\1+/g, '$1'); return l.replace(/\W/g, '').length <= 2 && word.replace(/\W/g, '').length > 2 ? word.replace(/v/g, 'u').replace(/y/g, 'i').replace(/k/g, 'c').replace(/([b-df-hj-np-tv-z])\1+/g, '$1') : l; }
     };
     const looseMode = loose => loose === 'link' ? 'link' : loose ? 'user' : '';
     const loosen = (word, loose = 'user') => LOOSEN[looseMode(loose) || 'user'](word);
@@ -243,6 +244,9 @@
             if (suf) return f => f.endsWith(core) ? [0, f.length] : null;
             return f => f === core ? [0, f.length] : null;
         };
+        // the same words without loosening, for the texts that are searched as they stand (Liebermann's German
+        // notes: "beon*" loosened is "ben*", which must not mark "benutzt")
+        if (loose) terms.strict = parseWords(text, false, whole);
         for (const m of String(text).matchAll(/"([^"]+)"|(\S+)/g)) {
             if (m[1]) {
                 const seq = m[1].split(/\s+/).map(x => test(x, true)).filter(Boolean);
@@ -332,10 +336,10 @@
             const n = run[0];
             const holder = n.parentElement.closest('[lang], [data-lang]');
             const lang = holder ? (holder.getAttribute('data-lang') || holder.getAttribute('lang')) : '';
-            const loose = looseFor ? looseFor(lang) : false;
+            const loose = looseFor ? looseFor(lang, holder) : false;
             if (loose === null) return;   // not looked for in this language
             const text = run.map(x => x.data).join('');
-            const ranges = findIn(text, terms, loose).filter(Boolean).sort((a, b) => a[0] - b[0]);
+            const ranges = findIn(text, !loose && terms.strict ? terms.strict : terms, loose).filter(Boolean).sort((a, b) => a[0] - b[0]);
             if (!ranges.length) return;
             // the hits, cut at the edges of the pieces of text
             const per = run.map(() => []);
