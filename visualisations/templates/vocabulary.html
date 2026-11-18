@@ -1,57 +1,57 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex">
-<title>Shared vocabulary</title>
+---
+title: "Law codes by shared vocabulary · Visualisation Tools"
+full_width: true
+description: "A network of law codes joined by the Wörterbuch headwords that cite both, with a headword search."
+---
+{% raw %}
+<div class="viz">
+<p class="small viz-crumb"><a href="index.html">Visualisation Tools</a> › Words and subjects</p>
 <style>
-:root {
-  --bg: #fbfaf7; --fg: #22201c; --muted: #6b665d; --line: #d9d4ca; --panel: #ffffff; --accent: #8a3b12; --edge: #8c8579; --hi: #c0392b;
-  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+.viz { --bg: var(--paper); --fg: var(--ink); --line: var(--rule); --panel: var(--surface); --accent: var(--navy); --edge: #8c8579; --hi: #c0392b; font-family: var(--sans); }
+.viz * { box-sizing: border-box; }
+.viz header { padding: 20px 24px 8px; max-width: 1100px; }
+.viz header p { margin: 4px 0; color: var(--muted); line-height: 1.45; max-width: 78ch; }
+.viz .controls { display: flex; flex-wrap: wrap; gap: 8px 22px; padding: 10px 24px; align-items: center; border-bottom: 1px solid var(--line); font-size: .92rem; }
+.viz .controls fieldset { border: 0; padding: 0; margin: 0; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.viz .controls legend { float: left; margin-right: 6px; color: var(--muted); font-size: .8rem; text-transform: uppercase; letter-spacing: .06em; }
+.viz input[type=search] { font: inherit; padding: 4px 8px; border: 1px solid var(--line); border-radius: 4px; background: var(--panel); color: var(--fg); width: 16em; }
+.viz .viz-main { display: grid; grid-template-columns: minmax(0, 1fr) 360px; min-height: 70vh; }
+@media (max-width: 900px) {
+.viz .viz-main { grid-template-columns: 1fr; }
 }
-@media (prefers-color-scheme: dark) {
-  :root { --bg: #1a1916; --fg: #ebe7df; --muted: #a39d92; --line: #3a3732; --panel: #24221f; --accent: #e39a6b; --edge: #8a847a; --hi: #ff7a66; }
-}
-* { box-sizing: border-box; }
-body { margin: 0; background: var(--bg); color: var(--fg); }
-header { padding: 20px 24px 8px; max-width: 1100px; }
-h1 { margin: 0 0 6px; font-size: 1.6rem; font-weight: 600; }
-header p { margin: 4px 0; color: var(--muted); line-height: 1.45; max-width: 78ch; }
-.controls { display: flex; flex-wrap: wrap; gap: 8px 22px; padding: 10px 24px; align-items: center; border-bottom: 1px solid var(--line); font-size: .92rem; }
-.controls fieldset { border: 0; padding: 0; margin: 0; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
-.controls legend { float: left; margin-right: 6px; color: var(--muted); font-size: .8rem; text-transform: uppercase; letter-spacing: .06em; }
-input[type=search] { font: inherit; padding: 4px 8px; border: 1px solid var(--line); border-radius: 4px; background: var(--panel); color: var(--fg); width: 16em; }
-main { display: grid; grid-template-columns: minmax(0, 1fr) 360px; min-height: 70vh; }
-@media (max-width: 900px) { main { grid-template-columns: 1fr; } }
-#chart { position: relative; overflow: hidden; }
-#chart svg { display: block; width: 100%; }
-aside { border-left: 1px solid var(--line); padding: 16px 18px; background: var(--panel); max-height: calc(100vh - 40px); overflow-y: auto; position: sticky; top: 0; font-size: .92rem; }
-aside h2 { font-size: 1.15rem; margin: 0 0 4px; }
-aside h3 { font-size: .95rem; margin: 16px 0 4px; }
-.muted { color: var(--muted); }
-aside a { color: var(--accent); }
-.words { display: flex; flex-wrap: wrap; gap: 4px 10px; }
-.words a { text-decoration: none; }
-.words a:hover { text-decoration: underline; }
-.words small { color: var(--muted); }
-ul.near { list-style: none; padding: 0; margin: 0; }
-ul.near li { display: flex; justify-content: space-between; border-bottom: 1px dotted var(--line); padding: 2px 0; cursor: pointer; }
-ul.near li:hover { color: var(--accent); }
-.node circle { stroke: var(--bg); stroke-width: 1.5; cursor: pointer; }
-.node text { font-size: 11px; fill: var(--fg); pointer-events: none; paint-order: stroke; stroke: var(--bg); stroke-width: 3px; }
-.edge { stroke: var(--edge); }
-.dim { opacity: .1; }
-.hit circle { stroke: var(--hi); stroke-width: 3; }
-#suggest { position: absolute; background: var(--panel); border: 1px solid var(--line); list-style: none; margin: 0; padding: 0; max-height: 260px; overflow-y: auto; z-index: 4; min-width: 16em; }
-#suggest li { padding: 3px 8px; cursor: pointer; }
-#suggest li:hover, #suggest li.on { background: var(--line); }
-#tip { position: fixed; pointer-events: none; background: var(--panel); border: 1px solid var(--line); padding: 6px 9px; font-size: .82rem; border-radius: 4px; display: none; max-width: 300px; z-index: 5; }
-.legend { display: flex; flex-wrap: wrap; gap: 4px 12px; padding: 8px 24px; font-size: .8rem; color: var(--muted); }
-.swatch { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 4px; vertical-align: middle; }
+.viz #chart { position: relative; overflow: hidden; }
+.viz #chart svg { display: block; width: 100%; }
+.viz aside { border-left: 1px solid var(--line); padding: 16px 18px; background: var(--panel); max-height: calc(100vh - 40px); overflow-y: auto; position: sticky; top: 0; font-size: .92rem; }
+.viz aside h2 { font-size: 1.15rem; margin: 0 0 4px; }
+.viz aside h3 { font-size: .95rem; margin: 16px 0 4px; }
+.viz .muted { color: var(--muted); }
+.viz aside a { color: var(--accent); }
+.viz .words { display: flex; flex-wrap: wrap; gap: 4px 10px; }
+.viz .words a { text-decoration: none; }
+.viz .words a:hover { text-decoration: underline; }
+.viz .words small { color: var(--muted); }
+.viz ul.near { list-style: none; padding: 0; margin: 0; }
+.viz ul.near li { display: flex; justify-content: space-between; border-bottom: 1px dotted var(--line); padding: 2px 0; cursor: pointer; }
+.viz ul.near li:hover { color: var(--accent); }
+.viz .node circle { stroke: var(--bg); stroke-width: 1.5; cursor: pointer; }
+.viz .node text { font-size: 11px; fill: var(--fg); pointer-events: none; paint-order: stroke; stroke: var(--bg); stroke-width: 3px; }
+.viz .edge { stroke: var(--edge); }
+.viz .dim { opacity: .1; }
+.viz .hit circle { stroke: var(--hi); stroke-width: 3; }
+.viz #suggest { position: absolute; background: var(--panel); border: 1px solid var(--line); list-style: none; margin: 0; padding: 0; max-height: 260px; overflow-y: auto; z-index: 4; min-width: 16em; }
+.viz #suggest li { padding: 3px 8px; cursor: pointer; }
+.viz #suggest li:hover, .viz #suggest li.on { background: var(--line); }
+.viz #tip { position: fixed; pointer-events: none; background: var(--panel); border: 1px solid var(--line); padding: 6px 9px; font-size: .82rem; border-radius: 4px; display: none; max-width: 300px; z-index: 5; }
+.viz .legend { display: flex; flex-wrap: wrap; gap: 4px 12px; padding: 8px 24px; font-size: .8rem; color: var(--muted); }
+.viz .swatch { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 4px; vertical-align: middle; }
+.viz button[aria-pressed="true"] { background: var(--navy); border-color: var(--navy); color: #fff; }
+.viz button:hover { background: var(--powder-tint); color: var(--navy); }
+.viz button[aria-pressed="true"]:hover { background: var(--link-hover); color: #fff; }
+.viz header, .viz .controls, .viz .legend { padding-left: 0; padding-right: 0; }
+.viz header h1 { margin-top: 0.2em; }
+.viz-crumb { margin: 0.6rem 0 0; }
+.viz { display: block; padding: 0 clamp(16px, 3vw, 40px) 2rem; }
 </style>
-</head>
-<body>
 <header>
   <h1>Law codes by shared vocabulary</h1>
   <p>Two law codes are joined when many of the same Wörterbuch headwords cite clauses in both. Each code keeps only its closest neighbours (by the Jaccard overlap of their word lists), so the clusters show families of texts that use the same words. Search a headword to light up every code it is cited in; click a code for its closest codes and its most distinctive words.</p>
@@ -72,10 +72,10 @@ ul.near li:hover { color: var(--accent); }
   </fieldset>
 </div>
 <div class="legend" id="legend"></div>
-<main>
+<div class="viz-main">
   <div id="chart"></div>
   <aside id="side"><p class="muted">Click a law code, or search for a headword.</p></aside>
-</main>
+</div>
 <div id="tip"></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
 <script>
@@ -214,5 +214,5 @@ document.querySelectorAll('input[name=lang]').forEach(cb => cb.addEventListener(
 document.getElementById('k').addEventListener('input', e => { S.k = +e.target.value; document.getElementById('k-n').textContent = S.k; draw(); });
 draw();
 </script>
-</body>
-</html>
+</div>
+{% endraw %}

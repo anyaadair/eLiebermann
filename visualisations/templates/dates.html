@@ -1,42 +1,40 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex">
-<title>Dating the law codes</title>
+---
+title: "Dating the law codes: where the scholars agree and differ · Visualisation Tools"
+full_width: true
+description: "Each scholar’s date for each code, side by side, to show where they agree and differ."
+---
+{% raw %}
+<div class="viz">
+<p class="small viz-crumb"><a href="index.html">Visualisation Tools</a> › Time, place and manuscripts</p>
 <style>
-:root {
-  --bg: #fbfaf7; --fg: #22201c; --muted: #6b665d; --line: #e4dfd5; --panel: #ffffff; --accent: #8a3b12; --grid: #ece8e0;
-  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
-}
-@media (prefers-color-scheme: dark) {
-  :root { --bg: #1a1916; --fg: #ebe7df; --muted: #a39d92; --line: #3a3732; --panel: #24221f; --accent: #e39a6b; --grid: #2c2a26; }
-}
-* { box-sizing: border-box; }
-body { margin: 0; background: var(--bg); color: var(--fg); }
-header { padding: 20px 24px 8px; max-width: 1100px; }
-h1 { margin: 0 0 6px; font-size: 1.6rem; font-weight: 600; }
-header p { margin: 4px 0; color: var(--muted); line-height: 1.45; max-width: 80ch; }
-.controls { display: flex; flex-wrap: wrap; gap: 8px 22px; padding: 10px 24px; align-items: center; border-bottom: 1px solid var(--line); font-size: .92rem; position: sticky; top: 0; background: var(--bg); z-index: 3; }
-.controls fieldset { border: 0; padding: 0; margin: 0; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
-.controls legend { float: left; margin-right: 6px; color: var(--muted); font-size: .8rem; text-transform: uppercase; letter-spacing: .06em; }
-.swatch { display: inline-block; width: 16px; height: 6px; border-radius: 2px; margin-right: 4px; vertical-align: middle; }
-#axis { position: sticky; top: 46px; background: var(--bg); z-index: 2; }
-#chart svg, #axis svg { display: block; }
-.axis text { fill: var(--muted); font-size: 11px; }
-.axis line, .axis path { stroke: var(--line); }
-.grid line { stroke: var(--grid); }
-.row-label { font-size: 11.5px; fill: var(--fg); cursor: default; }
-.group-label { font-size: 13px; fill: var(--muted); font-style: italic; }
-.reign { fill: var(--grid); }
-.bar { cursor: default; }
-.zebra { fill: var(--grid); opacity: .5; }
-#tip { position: fixed; pointer-events: none; background: var(--panel); border: 1px solid var(--line); padding: 6px 9px; font-size: .82rem; border-radius: 4px; display: none; max-width: 360px; z-index: 5; box-shadow: 0 2px 8px rgba(0,0,0,.12); }
-.muted { color: var(--muted); }
+.viz { --bg: var(--paper); --fg: var(--ink); --line: var(--rule); --panel: var(--surface); --accent: var(--navy); --grid: #ece8e0; font-family: var(--sans); }
+.viz * { box-sizing: border-box; }
+.viz header { padding: 20px 24px 8px; max-width: 1100px; }
+.viz header p { margin: 4px 0; color: var(--muted); line-height: 1.45; max-width: 80ch; }
+.viz .controls { display: flex; flex-wrap: wrap; gap: 8px 22px; padding: 10px 24px; align-items: center; border-bottom: 1px solid var(--line); font-size: .92rem; position: sticky; top: 0; background: var(--bg); z-index: 3; }
+.viz .controls fieldset { border: 0; padding: 0; margin: 0; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.viz .controls legend { float: left; margin-right: 6px; color: var(--muted); font-size: .8rem; text-transform: uppercase; letter-spacing: .06em; }
+.viz .swatch { display: inline-block; width: 16px; height: 6px; border-radius: 2px; margin-right: 4px; vertical-align: middle; }
+.viz #axis { position: sticky; top: 46px; background: var(--bg); z-index: 2; }
+.viz #chart svg, .viz #axis svg { display: block; }
+.viz .axis text { fill: var(--muted); font-size: 11px; }
+.viz .axis line, .viz .axis path { stroke: var(--line); }
+.viz .grid line { stroke: var(--grid); }
+.viz .row-label { font-size: 11.5px; fill: var(--fg); cursor: default; }
+.viz .group-label { font-size: 13px; fill: var(--muted); font-style: italic; }
+.viz .reign { fill: var(--grid); }
+.viz .bar { cursor: default; }
+.viz .zebra { fill: var(--grid); opacity: .5; }
+.viz #tip { position: fixed; pointer-events: none; background: var(--panel); border: 1px solid var(--line); padding: 6px 9px; font-size: .82rem; border-radius: 4px; display: none; max-width: 360px; z-index: 5; box-shadow: 0 2px 8px rgba(0,0,0,.12); }
+.viz .muted { color: var(--muted); }
+.viz button[aria-pressed="true"] { background: var(--navy); border-color: var(--navy); color: #fff; }
+.viz button:hover { background: var(--powder-tint); color: var(--navy); }
+.viz button[aria-pressed="true"]:hover { background: var(--link-hover); color: #fff; }
+.viz header, .viz .controls, .viz .legend { padding-left: 0; padding-right: 0; }
+.viz header h1 { margin-top: 0.2em; }
+.viz-crumb { margin: 0.6rem 0 0; }
+.viz { display: block; padding: 0 clamp(16px, 3vw, 40px) 2rem; }
 </style>
-</head>
-<body>
 <header>
   <h1>Dating the law codes: where the scholars agree and differ</h1>
   <p>Each law code gets one bar per scholar who dates it: Liebermann (1903), Attenborough (1922), Robertson (1925), Whitelock (EHD), Wormald (1999) and others. A thin bar is the whole range given; a thick stretch is the date they think likely (“probably”, “perhaps”); a fading bar is open-ended (“before 918”, “after 893”). Hover for the scholar's own words. Sort by disagreement to bring the contested codes, such as EGu, I–II Cnut and the Edgar codes, to the top.</p>
@@ -74,7 +72,7 @@ const mid = d => d.likely ? (d.likely[0] + d.likely[1]) / 2 : (d.lo + d.hi) / 2;
 const spread = c => { const ms = c.dates.filter(d => d.lo && S.who.has(d.by)).map(mid); return ms.length > 1 ? d3.max(ms) - d3.min(ms) : 0; };
 
 function draw() {
-  const W = Math.max(document.body.clientWidth, 760);
+  const W = Math.max(document.getElementById('chart').clientWidth, 760);   // the page's width, inside the site's margins
   const left = 130, right = 24;
   const x = d3.scaleLinear([580, 1200], [left, W - right]);
   let rows = DATA.codes.map(c => ({ ...c, ds: c.dates.filter(d => d.lo && S.who.has(d.by)) })).filter(c => c.ds.length);
@@ -133,5 +131,5 @@ function draw() {
 draw();
 let rt; addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(draw, 150); });
 </script>
-</body>
-</html>
+</div>
+{% endraw %}

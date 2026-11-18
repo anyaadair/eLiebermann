@@ -1,58 +1,56 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex">
-<title>Law code borrowing</title>
+---
+title: "Which law codes borrow from which · Visualisation Tools"
+full_width: true
+description: "Arcs between law codes, from the clause-to-clause comparisons of Liebermann, Wormald, Kennedy, Whitelock and Jurasinski and Oliver."
+---
+{% raw %}
+<div class="viz">
+<p class="small viz-crumb"><a href="index.html">Visualisation Tools</a> › Borrowing and reuse</p>
 <style>
-:root {
-  --bg: #fbfaf7; --fg: #22201c; --muted: #6b665d; --line: #d9d4ca; --panel: #ffffff;
-  --accent: #8a3b12; --compare: #4d6e9e; --source: #b5541b; --contrast: #6f8f3a; --hi: #c0392b;
-  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+.viz { --bg: var(--paper); --fg: var(--ink); --line: var(--rule); --panel: var(--surface); --accent: var(--navy); --compare: #4d6e9e; --source: #b5541b; --contrast: #6f8f3a; --hi: #c0392b; font-family: var(--sans); }
+.viz * { box-sizing: border-box; }
+.viz header { padding: 20px 24px 8px; max-width: 1100px; }
+.viz header p { margin: 4px 0; color: var(--muted); line-height: 1.45; max-width: 75ch; }
+.viz .controls { display: flex; flex-wrap: wrap; gap: 8px 22px; padding: 10px 24px; align-items: center; border-bottom: 1px solid var(--line); font-size: .92rem; }
+.viz .controls fieldset { border: 0; padding: 0; margin: 0; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+.viz .controls legend { float: left; margin-right: 6px; color: var(--muted); font-size: .8rem; text-transform: uppercase; letter-spacing: .06em; }
+.viz .controls label { cursor: pointer; white-space: nowrap; }
+.viz .swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 3px; vertical-align: middle; }
+.viz button { font: inherit; padding: 3px 10px; border: 1px solid var(--line); background: var(--panel); color: var(--fg); border-radius: 4px; cursor: pointer; }
+.viz button[aria-pressed="true"] { background: var(--fg); color: var(--bg); }
+.viz .viz-main { display: grid; grid-template-columns: minmax(0, 1fr) 340px; min-height: 70vh; }
+@media (max-width: 900px) {
+.viz .viz-main { grid-template-columns: 1fr; }
 }
-@media (prefers-color-scheme: dark) {
-  :root { --bg: #1a1916; --fg: #ebe7df; --muted: #a39d92; --line: #3a3732; --panel: #24221f;
-          --accent: #e39a6b; --compare: #85a6d6; --source: #e88a4d; --contrast: #a5c46b; --hi: #ff7a66; }
-}
-* { box-sizing: border-box; }
-body { margin: 0; background: var(--bg); color: var(--fg); }
-header { padding: 20px 24px 8px; max-width: 1100px; }
-h1 { margin: 0 0 6px; font-size: 1.6rem; font-weight: 600; }
-header p { margin: 4px 0; color: var(--muted); line-height: 1.45; max-width: 75ch; }
-.controls { display: flex; flex-wrap: wrap; gap: 8px 22px; padding: 10px 24px; align-items: center; border-bottom: 1px solid var(--line); font-size: .92rem; }
-.controls fieldset { border: 0; padding: 0; margin: 0; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
-.controls legend { float: left; margin-right: 6px; color: var(--muted); font-size: .8rem; text-transform: uppercase; letter-spacing: .06em; }
-.controls label { cursor: pointer; white-space: nowrap; }
-.swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 3px; vertical-align: middle; }
-button { font: inherit; padding: 3px 10px; border: 1px solid var(--line); background: var(--panel); color: var(--fg); border-radius: 4px; cursor: pointer; }
-button[aria-pressed="true"] { background: var(--fg); color: var(--bg); }
-main { display: grid; grid-template-columns: minmax(0, 1fr) 340px; min-height: 70vh; }
-@media (max-width: 900px) { main { grid-template-columns: 1fr; } }
-#chart { overflow-x: auto; position: relative; }
-#chart svg { display: block; }
-aside { border-left: 1px solid var(--line); padding: 16px 18px; background: var(--panel); max-height: calc(100vh - 40px); overflow-y: auto; position: sticky; top: 0; font-size: .92rem; }
-aside h2 { font-size: 1.15rem; margin: 0 0 4px; }
-aside h3 { font-size: .95rem; margin: 16px 0 4px; }
-aside .muted, .muted { color: var(--muted); }
-aside ul { list-style: none; padding: 0; margin: 0; }
-aside li { padding: 3px 0; border-bottom: 1px dotted var(--line); }
-aside a { color: var(--accent); }
-.partner { cursor: pointer; display: flex; justify-content: space-between; gap: 8px; }
-.partner:hover { color: var(--accent); }
-.pairs li { font-size: .85rem; }
-.tag { font-size: .72rem; padding: 0 5px; border-radius: 3px; color: #fff; margin-left: 4px; }
-.arc { fill: none; stroke-linecap: round; }
-.node text { font-size: 11px; fill: var(--fg); cursor: pointer; }
-.node circle { cursor: pointer; stroke: var(--bg); stroke-width: 1.5; }
-.group-label { font-size: 11px; fill: var(--muted); font-style: italic; }
-.dim { opacity: .07; }
-.legend { display: flex; flex-wrap: wrap; gap: 4px 14px; padding: 8px 24px; font-size: .8rem; color: var(--muted); }
-.legend .swatch { width: 14px; height: 4px; }
-#tip { position: fixed; pointer-events: none; background: var(--panel); border: 1px solid var(--line); padding: 6px 9px; font-size: .82rem; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,.15); display: none; max-width: 320px; z-index: 5; }
+.viz #chart { overflow-x: auto; position: relative; }
+.viz #chart svg { display: block; }
+.viz aside { border-left: 1px solid var(--line); padding: 16px 18px; background: var(--panel); max-height: calc(100vh - 40px); overflow-y: auto; position: sticky; top: 0; font-size: .92rem; }
+.viz aside h2 { font-size: 1.15rem; margin: 0 0 4px; }
+.viz aside h3 { font-size: .95rem; margin: 16px 0 4px; }
+.viz aside .muted, .viz .muted { color: var(--muted); }
+.viz aside ul { list-style: none; padding: 0; margin: 0; }
+.viz aside li { padding: 3px 0; border-bottom: 1px dotted var(--line); }
+.viz aside a { color: var(--accent); }
+.viz .partner { cursor: pointer; display: flex; justify-content: space-between; gap: 8px; }
+.viz .partner:hover { color: var(--accent); }
+.viz .pairs li { font-size: .85rem; }
+.viz .tag { font-size: .72rem; padding: 0 5px; border-radius: 3px; color: #fff; margin-left: 4px; }
+.viz .arc { fill: none; stroke-linecap: round; }
+.viz .node text { font-size: 11px; fill: var(--fg); cursor: pointer; }
+.viz .node circle { cursor: pointer; stroke: var(--bg); stroke-width: 1.5; }
+.viz .group-label { font-size: 11px; fill: var(--muted); font-style: italic; }
+.viz .dim { opacity: .07; }
+.viz .legend { display: flex; flex-wrap: wrap; gap: 4px 14px; padding: 8px 24px; font-size: .8rem; color: var(--muted); }
+.viz .legend .swatch { width: 14px; height: 4px; }
+.viz #tip { position: fixed; pointer-events: none; background: var(--panel); border: 1px solid var(--line); padding: 6px 9px; font-size: .82rem; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,.15); display: none; max-width: 320px; z-index: 5; }
+.viz button[aria-pressed="true"] { background: var(--navy); border-color: var(--navy); color: #fff; }
+.viz button:hover { background: var(--powder-tint); color: var(--navy); }
+.viz button[aria-pressed="true"]:hover { background: var(--link-hover); color: #fff; }
+.viz header, .viz .controls, .viz .legend { padding-left: 0; padding-right: 0; }
+.viz header h1 { margin-top: 0.2em; }
+.viz-crumb { margin: 0.6rem 0 0; }
+.viz { display: block; padding: 0 clamp(16px, 3vw, 40px) 2rem; }
 </style>
-</head>
-<body>
 <header>
   <h1>Which law codes borrow from which</h1>
   <p>Each arc joins two law codes that scholars link clause to clause: Liebermann's comparisons, Wormald's and Kennedy's tables, Whitelock's and Jurasinski and Oliver's notes. Codes run left to right in the order of the kings, then the anonymous texts and the Anglo-Norman law books. An arc's width is the number of clause links. Click a code to see its partners and the clauses behind each arc.</p>
@@ -70,17 +68,17 @@ aside a { color: var(--accent); }
   </fieldset>
 </div>
 <div class="legend" id="legend"></div>
-<main>
+<div class="viz-main">
   <div id="chart"></div>
   <aside id="side"><p class="muted">Click a law code, or an arc.</p></aside>
-</main>
+</div>
 <div id="tip"></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
 <script>
 const DATA = /*DATA*/null;
 const SITE = 'https://anyaadair.github.io/eLiebermann/';
 const KINDS = [['source', 'Source / used in'], ['compare', 'Compare'], ['contrast', 'Contrast']];
-const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const css = n => getComputedStyle(document.querySelector('.viz') || document.documentElement).getPropertyValue(n).trim();   // the colours are set on .viz
 const kindColour = k => css('--' + k);
 const groupColour = d3.scaleOrdinal(DATA.groups, d3.schemeTableau10.concat(d3.schemeSet3));
 const scholars = [...new Set(DATA.pairs.map(p => p[4]))].sort((a, b) => DATA.pairs.filter(p => p[4] === b).length - DATA.pairs.filter(p => p[4] === a).length);
@@ -228,5 +226,5 @@ function draw() {
 draw();
 let rt; addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(draw, 200); });
 </script>
-</body>
-</html>
+</div>
+{% endraw %}

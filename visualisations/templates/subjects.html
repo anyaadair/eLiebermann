@@ -1,54 +1,52 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex">
-<title>Subjects together</title>
+---
+title: "Subjects that appear together · Visualisation Tools"
+full_width: true
+description: "Subject keywords joined when they are tagged on the same clauses more often than chance."
+---
+{% raw %}
+<div class="viz">
+<p class="small viz-crumb"><a href="index.html">Visualisation Tools</a> › Words and subjects</p>
 <style>
-:root {
-  --bg: #fbfaf7; --fg: #22201c; --muted: #6b665d; --line: #d9d4ca; --panel: #ffffff; --accent: #8a3b12; --edge: #8c8579; --hi: #c0392b;
-  --f0: #b5541b; --f1: #4d6e9e; --f2: #6f8f3a;
-  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+.viz { --bg: var(--paper); --fg: var(--ink); --line: var(--rule); --panel: var(--surface); --accent: var(--navy); --edge: #8c8579; --hi: #c0392b; --f0: #b5541b; --f1: #4d6e9e; --f2: #6f8f3a; font-family: var(--sans); }
+.viz * { box-sizing: border-box; }
+.viz header { padding: 20px 24px 8px; max-width: 1100px; }
+.viz header p { margin: 4px 0; color: var(--muted); line-height: 1.45; max-width: 80ch; }
+.viz .controls { display: flex; flex-wrap: wrap; gap: 8px 22px; padding: 10px 24px; align-items: center; border-bottom: 1px solid var(--line); font-size: .92rem; }
+.viz .controls fieldset { border: 0; padding: 0; margin: 0; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; position: relative; }
+.viz .controls legend { float: left; margin-right: 6px; color: var(--muted); font-size: .8rem; text-transform: uppercase; letter-spacing: .06em; }
+.viz input[type=search] { font: inherit; padding: 4px 8px; border: 1px solid var(--line); border-radius: 4px; background: var(--panel); color: var(--fg); width: 14em; }
+.viz .dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 3px; vertical-align: middle; }
+.viz .viz-main { display: grid; grid-template-columns: minmax(0, 1fr) 330px; min-height: 70vh; }
+@media (max-width: 900px) {
+.viz .viz-main { grid-template-columns: 1fr; }
 }
-@media (prefers-color-scheme: dark) {
-  :root { --bg: #1a1916; --fg: #ebe7df; --muted: #a39d92; --line: #3a3732; --panel: #24221f; --accent: #e39a6b; --edge: #8a847a; --hi: #ff7a66;
-          --f0: #e88a4d; --f1: #85a6d6; --f2: #a5c46b; }
-}
-* { box-sizing: border-box; }
-body { margin: 0; background: var(--bg); color: var(--fg); }
-header { padding: 20px 24px 8px; max-width: 1100px; }
-h1 { margin: 0 0 6px; font-size: 1.6rem; font-weight: 600; }
-header p { margin: 4px 0; color: var(--muted); line-height: 1.45; max-width: 80ch; }
-.controls { display: flex; flex-wrap: wrap; gap: 8px 22px; padding: 10px 24px; align-items: center; border-bottom: 1px solid var(--line); font-size: .92rem; }
-.controls fieldset { border: 0; padding: 0; margin: 0; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; position: relative; }
-.controls legend { float: left; margin-right: 6px; color: var(--muted); font-size: .8rem; text-transform: uppercase; letter-spacing: .06em; }
-input[type=search] { font: inherit; padding: 4px 8px; border: 1px solid var(--line); border-radius: 4px; background: var(--panel); color: var(--fg); width: 14em; }
-.dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 3px; vertical-align: middle; }
-main { display: grid; grid-template-columns: minmax(0, 1fr) 330px; min-height: 70vh; }
-@media (max-width: 900px) { main { grid-template-columns: 1fr; } }
-#chart { position: relative; overflow: hidden; }
-#chart svg { display: block; width: 100%; }
-aside { border-left: 1px solid var(--line); padding: 16px 18px; background: var(--panel); max-height: calc(100vh - 40px); overflow-y: auto; position: sticky; top: 0; font-size: .92rem; }
-aside h2 { font-size: 1.15rem; margin: 0 0 4px; }
-aside h3 { font-size: .95rem; margin: 16px 0 4px; }
-.muted { color: var(--muted); }
-aside a { color: var(--accent); }
-aside ul { list-style: none; padding: 0; margin: 0; }
-aside li { padding: 2px 0; border-bottom: 1px dotted var(--line); cursor: pointer; display: flex; justify-content: space-between; gap: 8px; }
-aside li:hover { color: var(--accent); }
-.node circle { stroke: var(--bg); stroke-width: 1.2; cursor: pointer; }
-.node text { font-size: 10.5px; fill: var(--fg); pointer-events: none; paint-order: stroke; stroke: var(--bg); stroke-width: 3px; }
-.edge { stroke: var(--edge); }
-.dim { opacity: .08; }
-.on circle { stroke: var(--hi); stroke-width: 3; }
-#suggest { position: absolute; top: 100%; left: 0; background: var(--panel); border: 1px solid var(--line); list-style: none; margin: 0; padding: 0; max-height: 260px; overflow-y: auto; z-index: 4; min-width: 14em; }
-#suggest li { padding: 3px 8px; cursor: pointer; }
-#suggest li:hover { background: var(--line); }
-#tip { position: fixed; pointer-events: none; background: var(--panel); border: 1px solid var(--line); padding: 6px 9px; font-size: .82rem; border-radius: 4px; display: none; max-width: 300px; z-index: 5; }
+.viz #chart { position: relative; overflow: hidden; }
+.viz #chart svg { display: block; width: 100%; }
+.viz aside { border-left: 1px solid var(--line); padding: 16px 18px; background: var(--panel); max-height: calc(100vh - 40px); overflow-y: auto; position: sticky; top: 0; font-size: .92rem; }
+.viz aside h2 { font-size: 1.15rem; margin: 0 0 4px; }
+.viz aside h3 { font-size: .95rem; margin: 16px 0 4px; }
+.viz .muted { color: var(--muted); }
+.viz aside a { color: var(--accent); }
+.viz aside ul { list-style: none; padding: 0; margin: 0; }
+.viz aside li { padding: 2px 0; border-bottom: 1px dotted var(--line); cursor: pointer; display: flex; justify-content: space-between; gap: 8px; }
+.viz aside li:hover { color: var(--accent); }
+.viz .node circle { stroke: var(--bg); stroke-width: 1.2; cursor: pointer; }
+.viz .node text { font-size: 10.5px; fill: var(--fg); pointer-events: none; paint-order: stroke; stroke: var(--bg); stroke-width: 3px; }
+.viz .edge { stroke: var(--edge); }
+.viz .dim { opacity: .08; }
+.viz .on circle { stroke: var(--hi); stroke-width: 3; }
+.viz #suggest { position: absolute; top: 100%; left: 0; background: var(--panel); border: 1px solid var(--line); list-style: none; margin: 0; padding: 0; max-height: 260px; overflow-y: auto; z-index: 4; min-width: 14em; }
+.viz #suggest li { padding: 3px 8px; cursor: pointer; }
+.viz #suggest li:hover { background: var(--line); }
+.viz #tip { position: fixed; pointer-events: none; background: var(--panel); border: 1px solid var(--line); padding: 6px 9px; font-size: .82rem; border-radius: 4px; display: none; max-width: 300px; z-index: 5; }
+.viz button[aria-pressed="true"] { background: var(--navy); border-color: var(--navy); color: #fff; }
+.viz button:hover { background: var(--powder-tint); color: var(--navy); }
+.viz button[aria-pressed="true"]:hover { background: var(--link-hover); color: #fff; }
+.viz header, .viz .controls, .viz .legend { padding-left: 0; padding-right: 0; }
+.viz header h1 { margin-top: 0.2em; }
+.viz-crumb { margin: 0.6rem 0 0; }
+.viz { display: block; padding: 0 clamp(16px, 3vw, 40px) 2rem; }
 </style>
-</head>
-<body>
 <header>
   <h1>Subjects that appear together</h1>
   <p>Each dot is a subject keyword from the index of the laws; two subjects are joined when they are tagged on the same clauses more often than chance would give (by lift: how many times more often than if the keywords were scattered at random). Each subject keeps only its strongest partners, so the clusters are themes that travel together. Click a subject for its partners and its clauses.</p>
@@ -60,10 +58,10 @@ aside li:hover { color: var(--accent); }
   <fieldset><legend>Partners each</legend><input type="range" id="k" min="1" max="6" value="3" aria-label="Partners per subject"> <span id="k-n">3</span></fieldset>
   <fieldset><legend>Subject</legend><input type="search" id="q" placeholder="e.g. Theft, Oaths" autocomplete="off"><ul id="suggest" hidden></ul></fieldset>
 </div>
-<main>
+<div class="viz-main">
   <div id="chart"></div>
   <aside id="side"><p class="muted">Click a subject, or search for one.</p></aside>
-</main>
+</div>
 <div id="tip"></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
 <script>
@@ -174,5 +172,5 @@ sug.addEventListener('click', e => { const li = e.target.closest('li'); if (li) 
 q.addEventListener('keydown', e => { if (e.key === 'Enter' && shown.length) { focus(shown[0]); sug.hidden = true; } });
 draw();
 </script>
-</body>
-</html>
+</div>
+{% endraw %}

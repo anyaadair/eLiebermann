@@ -1,6 +1,6 @@
-# Experiments: network visualisations
+# Visualisation Tools
 
-Standalone pages that try out pictures of the TEI. Nothing on the site links to them. Each page is a single HTML file with its CSS, JavaScript and data inline; only [D3](https://d3js.org/) 7.9.0 (and, for the map, [Leaflet](https://leafletjs.com/) 1.9.4 with OpenStreetMap tiles) comes from a CDN (cdnjs). Open a file straight from disk, or at `https://anyaadair.github.io/eLiebermann/experiments/` once merged.
+Interactive pictures of the TEI, in the site's **Visualisation Tools** section (main menu, between Editorial Principles and About): `https://anyaadair.github.io/eLiebermann/visualisations/`. They began as standalone experiments in `experiments/`; those addresses now forward here. Each page is a site page (the site's layout, menu and footer) with its CSS, JavaScript and data inline. The CSS is scoped under `.viz` and uses the site's colours and type. Only [D3](https://d3js.org/) 7.9.0 (and, for the map, [Leaflet](https://leafletjs.com/) 1.9.4 with OpenStreetMap tiles) comes from a CDN (cdnjs). The overview, `index.html`, is written by hand and groups the tools under three headings: Borrowing and reuse; Time, place and manuscripts; Words and subjects.
 
 | Page | What it shows | Made from |
 |---|---|---|
@@ -13,14 +13,14 @@ Standalone pages that try out pictures of the TEI. Nothing on the site links to 
 | [where-codes-were-made.html](where-codes-were-made.html) | A Leaflet map of the places where codes were issued, with a time slider. Coordinates are in `PLACES` in `build.py`. Not a network. | `<creation><placeName>` (`places` in `oe-laws/codes.json`) |
 | [headword-crossrefs.html](headword-crossrefs.html) | Liebermann's *s.*, *vgl.* and *Der.* as a network of word families, one to three steps out from a headword. | `<xr type="see|compare|derivative">` in `entries/` |
 
-`index.html` lists them.
+
 
 ## Making the pages again
 
 The pages are made from `templates/` by `build.py`, which reads the TEI and puts the data where each template says `/*DATA*/null`:
 
 ```sh
-python3 experiments/build.py
+python3 visualisations/build.py
 ```
 
-Run it from the repository root after the entries or clauses change. It needs only Python 3. Edit the templates, not the generated pages.
+Run it from the repository root after the entries or clauses change. It needs only Python 3. Edit the templates, not the generated pages. Each template starts with the page's front matter and wraps its content in `{% raw %}` so the site build leaves the inline data alone.

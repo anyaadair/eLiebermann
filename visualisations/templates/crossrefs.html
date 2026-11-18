@@ -1,57 +1,53 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex">
-<title>Headword cross-references</title>
+---
+title: "Liebermann's cross-references between headwords · Visualisation Tools"
+full_width: true
+description: "Word families from Liebermann’s s., vgl. and Der."
+---
+{% raw %}
+<div class="viz">
+<p class="small viz-crumb"><a href="index.html">Visualisation Tools</a> › Words and subjects</p>
 <style>
-:root {
-  --bg: #fbfaf7; --fg: #22201c; --muted: #6b665d; --line: #d9d4ca; --panel: #ffffff; --accent: #8a3b12;
-  --see: #4d6e9e; --compare: #6f8f3a; --derivative: #b5541b; --hi: #c0392b;
-  --ang: #8a3b12; --la: #4d6e9e; --fro: #7a5aa6; --de: #8c8579;
-  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+.viz { --bg: var(--paper); --fg: var(--ink); --line: var(--rule); --panel: var(--surface); --accent: var(--navy); --see: #4d6e9e; --compare: #6f8f3a; --derivative: #b5541b; --hi: #c0392b; --ang: #8a3b12; --la: #4d6e9e; --fro: #7a5aa6; --de: #8c8579; font-family: var(--sans); }
+.viz * { box-sizing: border-box; }
+.viz header { padding: 20px 24px 8px; max-width: 1100px; }
+.viz header p { margin: 4px 0; color: var(--muted); line-height: 1.45; max-width: 78ch; }
+.viz .controls { display: flex; flex-wrap: wrap; gap: 8px 22px; padding: 10px 24px; align-items: center; border-bottom: 1px solid var(--line); font-size: .92rem; }
+.viz .controls fieldset { border: 0; padding: 0; margin: 0; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; position: relative; }
+.viz .controls legend { float: left; margin-right: 6px; color: var(--muted); font-size: .8rem; text-transform: uppercase; letter-spacing: .06em; }
+.viz input[type=search] { font: inherit; padding: 4px 8px; border: 1px solid var(--line); border-radius: 4px; background: var(--panel); color: var(--fg); width: 16em; }
+.viz .swatch { display: inline-block; width: 14px; height: 3px; margin-right: 4px; vertical-align: middle; }
+.viz .dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 3px; vertical-align: middle; }
+.viz .viz-main { display: grid; grid-template-columns: minmax(0, 1fr) 330px; min-height: 70vh; }
+@media (max-width: 900px) {
+.viz .viz-main { grid-template-columns: 1fr; }
 }
-@media (prefers-color-scheme: dark) {
-  :root { --bg: #1a1916; --fg: #ebe7df; --muted: #a39d92; --line: #3a3732; --panel: #24221f; --accent: #e39a6b;
-          --see: #85a6d6; --compare: #a5c46b; --derivative: #e88a4d; --hi: #ff7a66;
-          --ang: #e39a6b; --la: #85a6d6; --fro: #b79be0; --de: #a39d92; }
-}
-* { box-sizing: border-box; }
-body { margin: 0; background: var(--bg); color: var(--fg); }
-header { padding: 20px 24px 8px; max-width: 1100px; }
-h1 { margin: 0 0 6px; font-size: 1.6rem; font-weight: 600; }
-header p { margin: 4px 0; color: var(--muted); line-height: 1.45; max-width: 78ch; }
-.controls { display: flex; flex-wrap: wrap; gap: 8px 22px; padding: 10px 24px; align-items: center; border-bottom: 1px solid var(--line); font-size: .92rem; }
-.controls fieldset { border: 0; padding: 0; margin: 0; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; position: relative; }
-.controls legend { float: left; margin-right: 6px; color: var(--muted); font-size: .8rem; text-transform: uppercase; letter-spacing: .06em; }
-input[type=search] { font: inherit; padding: 4px 8px; border: 1px solid var(--line); border-radius: 4px; background: var(--panel); color: var(--fg); width: 16em; }
-.swatch { display: inline-block; width: 14px; height: 3px; margin-right: 4px; vertical-align: middle; }
-.dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 3px; vertical-align: middle; }
-main { display: grid; grid-template-columns: minmax(0, 1fr) 330px; min-height: 70vh; }
-@media (max-width: 900px) { main { grid-template-columns: 1fr; } }
-#chart { position: relative; overflow: hidden; }
-#chart svg { display: block; width: 100%; }
-aside { border-left: 1px solid var(--line); padding: 16px 18px; background: var(--panel); max-height: calc(100vh - 40px); overflow-y: auto; position: sticky; top: 0; font-size: .92rem; }
-aside h2 { font-size: 1.2rem; margin: 0 0 4px; }
-aside h3 { font-size: .95rem; margin: 16px 0 4px; }
-.muted { color: var(--muted); }
-aside a { color: var(--accent); }
-aside ul { list-style: none; padding: 0; margin: 0; }
-aside li { padding: 2px 0; border-bottom: 1px dotted var(--line); cursor: pointer; display: flex; justify-content: space-between; gap: 6px; }
-aside li:hover { color: var(--accent); }
-.node circle { stroke: var(--bg); stroke-width: 1.5; cursor: pointer; }
-.node text { font-size: 11px; fill: var(--fg); paint-order: stroke; stroke: var(--bg); stroke-width: 3px; pointer-events: none; }
-.node.centre text { font-weight: 700; font-size: 13px; }
-.node.centre circle { stroke: var(--hi); stroke-width: 3; }
-.edge { stroke-opacity: .6; fill: none; }
-#suggest { position: absolute; top: 100%; left: 0; background: var(--panel); border: 1px solid var(--line); list-style: none; margin: 0; padding: 0; max-height: 260px; overflow-y: auto; z-index: 4; min-width: 16em; }
-#suggest li { padding: 3px 8px; cursor: pointer; }
-#suggest li:hover { background: var(--line); }
-#tip { position: fixed; pointer-events: none; background: var(--panel); border: 1px solid var(--line); padding: 6px 9px; font-size: .82rem; border-radius: 4px; display: none; max-width: 300px; z-index: 5; }
+.viz #chart { position: relative; overflow: hidden; }
+.viz #chart svg { display: block; width: 100%; }
+.viz aside { border-left: 1px solid var(--line); padding: 16px 18px; background: var(--panel); max-height: calc(100vh - 40px); overflow-y: auto; position: sticky; top: 0; font-size: .92rem; }
+.viz aside h2 { font-size: 1.2rem; margin: 0 0 4px; }
+.viz aside h3 { font-size: .95rem; margin: 16px 0 4px; }
+.viz .muted { color: var(--muted); }
+.viz aside a { color: var(--accent); }
+.viz aside ul { list-style: none; padding: 0; margin: 0; }
+.viz aside li { padding: 2px 0; border-bottom: 1px dotted var(--line); cursor: pointer; display: flex; justify-content: space-between; gap: 6px; }
+.viz aside li:hover { color: var(--accent); }
+.viz .node circle { stroke: var(--bg); stroke-width: 1.5; cursor: pointer; }
+.viz .node text { font-size: 11px; fill: var(--fg); paint-order: stroke; stroke: var(--bg); stroke-width: 3px; pointer-events: none; }
+.viz .node.centre text { font-weight: 700; font-size: 13px; }
+.viz .node.centre circle { stroke: var(--hi); stroke-width: 3; }
+.viz .edge { stroke-opacity: .6; fill: none; }
+.viz #suggest { position: absolute; top: 100%; left: 0; background: var(--panel); border: 1px solid var(--line); list-style: none; margin: 0; padding: 0; max-height: 260px; overflow-y: auto; z-index: 4; min-width: 16em; }
+.viz #suggest li { padding: 3px 8px; cursor: pointer; }
+.viz #suggest li:hover { background: var(--line); }
+.viz #tip { position: fixed; pointer-events: none; background: var(--panel); border: 1px solid var(--line); padding: 6px 9px; font-size: .82rem; border-radius: 4px; display: none; max-width: 300px; z-index: 5; }
+.viz button[aria-pressed="true"] { background: var(--navy); border-color: var(--navy); color: #fff; }
+.viz button:hover { background: var(--powder-tint); color: var(--navy); }
+.viz button[aria-pressed="true"]:hover { background: var(--link-hover); color: #fff; }
+.viz header, .viz .controls, .viz .legend { padding-left: 0; padding-right: 0; }
+.viz header h1 { margin-top: 0.2em; }
+.viz-crumb { margin: 0.6rem 0 0; }
+.viz { display: block; padding: 0 clamp(16px, 3vw, 40px) 2rem; }
 </style>
-</head>
-<body>
 <header>
   <h1>Liebermann's cross-references between headwords</h1>
   <p>Every <i>s.</i> (see), <i>vgl.</i> (compare) and <i>Der.</i> (derivatives and compounds) in the Wörterbuch, as a network of word families. Search a headword, or pick one of the largest families on the right; click any word to move to it, double-click to open its entry. Arrows point from the entry that makes the reference. Liebermann's notes on spellings (<i>h</i>, <i>th</i>, <i>-e</i>) and grammar link to hundreds of words each, so they are left out unless you tick them in.</p>
@@ -77,10 +73,10 @@ aside li:hover { color: var(--accent); }
     <span><span class="dot" style="background:var(--de)"></span>Grammatical</span>
   </fieldset>
 </div>
-<main>
+<div class="viz-main">
   <div id="chart"></div>
   <aside id="side"></aside>
-</main>
+</div>
 <div id="tip"></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
 <script>
@@ -90,7 +86,7 @@ const KINDS = ['see', 'compare', 'derivative'];
 const KIND_LABEL = { see: 'See (s.)', compare: 'Compare (vgl.)', derivative: 'Derivatives (Der.)' };
 const LANG = { ang: 'Old English', la: 'Latin', fro: 'French', de: 'Grammatical term' };
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const css = n => getComputedStyle(document.querySelector('.viz') || document.documentElement).getPropertyValue(n).trim();   // the colours are set on .viz
 const N = DATA.nodes.length;
 const S = { kinds: new Set(KINDS), depth: 2, centre: null, history: [], notes: false };
 const MAX = 220;
@@ -218,5 +214,5 @@ const start = decodeURIComponent(location.hash.slice(1));
 const startI = DATA.nodes.findIndex(n => n[0] === start);
 centre(startI >= 0 ? startI : (DATA.nodes.findIndex(n => n[0] === 'riht') >= 0 ? DATA.nodes.findIndex(n => n[0] === 'riht') : hubs[0]), false);
 </script>
-</body>
-</html>
+</div>
+{% endraw %}

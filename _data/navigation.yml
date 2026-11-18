@@ -19,6 +19,9 @@ main:
   - title: Editorial Principles
     url: editorial.html
     section: editorial
+  - title: Visualisation Tools
+    url: visualisations/index.html
+    section: visualisations
   - title: About
     url: about.html
     section: about
@@ -45,6 +48,23 @@ sections:
       url: bibAbb.html
     - title: Liebermann's Forewords
       url: forewords.html
+  visualisations:
+    - title: Borrowing
+      url: visualisations/law-code-borrowing.html
+    - title: Reuse Chains
+      url: visualisations/reuse-chains.html
+    - title: Dating
+      url: visualisations/dating-the-codes.html
+    - title: Places
+      url: visualisations/where-codes-were-made.html
+    - title: Manuscripts
+      url: visualisations/manuscripts-and-codes.html
+    - title: Shared Vocabulary
+      url: visualisations/shared-vocabulary.html
+    - title: Cross-references
+      url: visualisations/headword-crossrefs.html
+    - title: Subjects
+      url: visualisations/subjects-together.html
   # Statuta Vetera is a separate project hosted here; it isn't in the main
   # menu, but its own pages keep this menu.
   statuta:
