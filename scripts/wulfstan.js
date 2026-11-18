@@ -7,7 +7,7 @@
 // A badge opens to say what the scholar says, and where. A "secondary" view (Wormald) never makes
 // a badge of its own: Rabin's view names the badge, and Wormald's is shown inside it, even where
 // he differs.
-// Other people connected with a code (data/associations.json: Archbishop Wulfhelm, Dunstan) have
+// Other people connected with a code (data/associations.json: Archbishop Wulfhelm) have
 // badges of their own, in other colours, beside the Wulfstan ones.
 (function () {
     'use strict';
@@ -54,7 +54,7 @@
             `<div class="wulf-badge__body">${all.map(line).join('')}${works ? `<p class="wulf-src">${works}</p>` : ''}</div></details>`;
     }
     const SHORT = { composed: 'By Wulfstan', reworked: 'Reworked by Wulfstan', disputed: 'Wulfstan?' };   // in the narrow clause-number column
-    // The badges of other people connected with the code (Wulfhelm, Dunstan)
+    // The badges of other people connected with the code (Wulfhelm)
     function otherBadges(code, opts) {
         const views = others.codes[code] || [];
         return [...new Set(views.map(v => v.kind))].map(k => badge(k, views.filter(v => v.kind === k), opts, null, others)).join(opts && opts.plain ? ' ' : '');
