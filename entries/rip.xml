@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
+      <change when="2026-11-18">Derivatives list: a first part with a hyphen ("burg-" under bot) now goes to the compound (burgbot), and a compound written without its final -e (woruldbot) to its entry.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,7 +36,8 @@
         <form type="lemma">
           <orth>rip</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">rip</hi> <hi rend="italic">Ernte; <ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>:</hi> for ripe <ref type="lawCode" target="law:Rect">Rect</ref> 21,4 | <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>:</hi> ryp <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:El">El</ref> 27 <ref type="lawCode" target="law:Ld">Ld</ref> [<hi rend="italic"><ref type="abbreviation" target="gram:falsch"><abbr>falsch</abbr></ref></hi>]; ryt <hi rend="italic"><ref type="abbreviation" target="gram:ubrigeHandschriften"><abbr>übr.</abbr></ref></hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> bedrip</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">rip</hi> <hi rend="italic">Ernte; <ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>:</hi> for ripe <ref type="lawCode" target="law:Rect">Rect</ref> 21,4 | <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>:</hi> ryp <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:El">El</ref> 27 <ref type="lawCode" target="law:Ld">Ld</ref> [<hi rend="italic"><ref type="abbreviation" target="gram:falsch"><abbr>falsch</abbr></ref></hi>]; ryt <hi rend="italic"><ref type="abbreviation" target="gram:ubrigeHandschriften"><abbr>übr.</abbr></ref></hi> <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:bedripe">bedrip</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:bedripe">bedripe</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/25907">ríp</ref></xr>
         <xr type="lawCode"><ref target="clause:Rect_21-4">Rect 21,4</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_El-to-27">Af El 27</ref></xr>

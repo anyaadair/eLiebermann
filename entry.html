@@ -229,6 +229,10 @@ scripts:
             const nextAny = rows[i + 1];
             if (next && nextAny && (nextAny.kind === 'number' || nextAny.kind === 'case')) r.depth = next.depth;
         });
+        // Liebermann's long dash before the meanings ("Forf 3,2. — 1) fassen"): on the page the meanings start a
+        // new line, which does the dash's work, so a dash left at the end of a line is not shown (it stays in
+        // the text, where the links read it)
+        rows.forEach(r => { r.html = r.html.replace(/\s*—\s*$/, ' <span class="outline-dash">—</span>'); });
         return rows.filter(r => r.html).map(r => `<p class="${r.cls} sense--depth-${Math.min(r.depth, 4)}">${r.html}</p>`).join('');
     }
 
@@ -412,7 +416,7 @@ scripts:
         // easily matched wrongly. Nothing is lost: the forms are still worked out from the entry, and switching a
         // language back on here brings their highlighting back.
         const NO_HIGHLIGHT = ['de', 'fro'];
-        ELieb.linkClauseNumbers(target.querySelector('.liebermann-text'), clauses, { headword: e.headword, spelling: !!e.spelling, noFind: NO_HIGHLIGHT.includes(e.lang), lang: e.lang });
+        ELieb.linkClauseNumbers(target.querySelector('.liebermann-text'), clauses, { headword: e.headword, spelling: !!e.spelling, noFind: NO_HIGHLIGHT.includes(e.lang), lang: e.lang, forms: (linkHighlights[slug] || {})._forms });
         // Highlight words added by hand (data/link-highlights.json), on the links found by the rules and
         // on those made by hand (<ref type="clause" … n="Ine 70,1">): "find" replaces the form the rules
         // chose; every word in "mark" is marked as well, wherever it is found in the clause.
@@ -437,7 +441,9 @@ scripts:
         target.querySelectorAll('.liebermann-text a[href*="lawAbb.html#"]').forEach(a => {
             const href = clauses[a.textContent.replace(/\s+/g, ' ').trim()];
             if (href && !(a.nextElementSibling && a.nextElementSibling.classList.contains('jump-link'))) {
-                a.insertAdjacentHTML('afterend', ELieb.jumpLink(href, 'Go to this text in the laws database'));
+                // (the word is looked for there, as on the other clause links)
+                const find = !NO_HIGHLIGHT.includes(e.lang) && !e.spelling && hwPlain.length > 1 ? (href.includes('?') ? '&' : '?') + 'find=' + encodeURIComponent(hwPlain) : '';
+                a.insertAdjacentHTML('afterend', ELieb.jumpLink(href + find, 'Go to this text in the laws database'));
             }
         });
         // The tooltip names the code in full: "Wihtred 6 in the laws database".

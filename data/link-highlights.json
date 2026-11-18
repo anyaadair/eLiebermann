@@ -1,5 +1,5 @@
 {
-  "_about": "Words to highlight on a dictionary entry's clause links, added by hand where the rules can't tell. Keyed by entry id, then by the citation as listed under the entry. 'find' replaces the form the rules choose; every word in 'mark' is marked too, wherever it is found in the clause (other manuscripts' spellings). Read by entry.html; law.html marks them (its mark= parameter).",
+  "_about": "Words to highlight on a dictionary entry's clause links, added by hand where the rules can't tell. Keyed by entry id, then by the citation as listed under the entry. 'find' replaces the form the rules choose; every word in 'mark' is marked too, wherever it is found in the clause (other manuscripts' spellings). Read by entry.html; law.html marks them (its mark= parameter). An entry may also have '_forms': the forms of a verb that do not look like its headword (beon: bið, is, sie, wæs), in groups that stand for one another; any of them before a citation is the form cited, and its link looks for its whole group (scripts/eliebermann.js).",
   "pundwaega": {
     "Ine 59,1": {
       "find": "pundwæga",
@@ -104,6 +104,629 @@
       "mark": [
         "beboden"
       ]
+    }
+  },
+  "beon-2": {
+    "_forms": [
+      [
+        "is",
+        "ys",
+        "nis"
+      ],
+      [
+        "bið",
+        "byð",
+        "bid",
+        "biþ",
+        "byþ"
+      ],
+      [
+        "sie",
+        "si",
+        "sy",
+        "sig",
+        "sio",
+        "bie"
+      ],
+      [
+        "sien",
+        "syn",
+        "sion"
+      ],
+      [
+        "sind",
+        "sint",
+        "synd",
+        "synt",
+        "sindon",
+        "syndon",
+        "syndan",
+        "sindan",
+        "sinden",
+        "synden"
+      ],
+      [
+        "eom",
+        "eam"
+      ],
+      [
+        "eart"
+      ],
+      [
+        "bist",
+        "byst"
+      ],
+      [
+        "wæs",
+        "næs"
+      ],
+      [
+        "wære",
+        "wæron",
+        "wæren",
+        "wæran",
+        "nære",
+        "næron"
+      ],
+      [
+        "wesan",
+        "wesen"
+      ]
+    ],
+    "II As 20": {
+      "find": "beo",
+      "mark": [
+        "sie",
+        "si",
+        "sy",
+        "sig"
+      ]
+    },
+    "II As 20,7": {
+      "find": "beo",
+      "mark": [
+        "sie",
+        "si",
+        "sy",
+        "sig"
+      ]
+    },
+    "II As 23,2": {
+      "find": "beo",
+      "mark": [
+        "sie",
+        "si",
+        "sy",
+        "sig"
+      ]
+    },
+    "II Eg 5": {
+      "find": "beo",
+      "mark": [
+        "sie",
+        "si",
+        "sy",
+        "sig"
+      ]
+    },
+    "V Atr 30": {
+      "find": "beo",
+      "mark": [
+        "sie",
+        "si",
+        "sy",
+        "sig"
+      ]
+    },
+    "VI Atr 32": {
+      "find": "beo",
+      "mark": [
+        "sie",
+        "si",
+        "sy",
+        "sig"
+      ]
+    },
+    "II Cn 31,2": {
+      "find": "beo",
+      "mark": [
+        "sie",
+        "si",
+        "sy",
+        "sig"
+      ]
+    },
+    "II Cn 53,1": {
+      "find": "beo",
+      "mark": [
+        "sie",
+        "si",
+        "sy",
+        "sig"
+      ]
+    },
+    "II Cn 82": {
+      "find": "beo",
+      "mark": [
+        "sie",
+        "si",
+        "sy",
+        "sig"
+      ]
+    },
+    "Af El 12": {
+      "find": "beo",
+      "mark": [
+        "sie",
+        "si",
+        "sy",
+        "sig",
+        "is",
+        "se"
+      ]
+    },
+    "II As 20,4": {
+      "find": "beo",
+      "mark": [
+        "sien",
+        "syn"
+      ]
+    },
+    "II Cn 69,2": {
+      "find": "be",
+      "mark": [
+        "beo"
+      ]
+    },
+    "Hl 10": {
+      "find": "bie",
+      "mark": [
+        "hie"
+      ]
+    },
+    "II Cn 83": {
+      "find": "si",
+      "mark": [
+        "sie",
+        "sy",
+        "sig"
+      ]
+    },
+    "II Cn 13,1": {
+      "find": "sig",
+      "mark": [
+        "si",
+        "sie",
+        "sy"
+      ]
+    },
+    "Iudex 3": {
+      "find": "ys",
+      "mark": [
+        "is"
+      ]
+    },
+    "II Cn 2a": {
+      "find": "is",
+      "mark": [
+        "ys"
+      ]
+    },
+    "Forf 2": {
+      "find": "is",
+      "mark": [
+        "ys"
+      ]
+    },
+    "Rect 6,4": {
+      "find": "be",
+      "mark": [
+        "beo"
+      ]
+    },
+    "II Ew 1": {
+      "find": "beon",
+      "mark": [
+        "sie",
+        "si",
+        "sy"
+      ]
+    },
+    "IV Eg 1,3": {
+      "find": "syn",
+      "mark": [
+        "syndon",
+        "synd",
+        "synt"
+      ]
+    }
+  },
+  "began": {
+    "Ger 12": {
+      "find": "began",
+      "mark": [
+        "bycgan"
+      ]
+    }
+  },
+  "behweorfan": {
+    "I Em 5": {
+      "find": "behworfene",
+      "mark": [
+        "behwofene",
+        "behweorfene"
+      ]
+    }
+  },
+  "belimpan": {
+    "Ger 3,1": {
+      "find": "belimpað,\"be limpað\""
+    }
+  },
+  "bern": {
+    "Ger 3,1": {
+      "find": "berne,\"ber ne\""
+    }
+  },
+  "beodan": {
+    "I Ew Pro": {
+      "find": "byt"
+    },
+    "II As 2": {
+      "find": "beode",
+      "mark": [
+        "bude"
+      ]
+    },
+    "I As 1": {
+      "find": "beodan",
+      "mark": [
+        "beode",
+        "budon",
+        "geboden"
+      ]
+    }
+  },
+  "beorgan": {
+    "II Cn 38": {
+      "find": "beorgan",
+      "mark": [
+        "bebyrgan"
+      ]
+    },
+    "II Cn 30,5": {
+      "find": "beorgan",
+      "mark": [
+        "gebeorgan"
+      ]
+    },
+    "Episc 8": {
+      "find": "geborgen"
+    }
+  },
+  "betaecean": {
+    "Af El 18": {
+      "find": "betæcan",
+      "mark": [
+        "gereccen",
+        "gereccan",
+        "getæcan"
+      ]
+    }
+  },
+  "betera": {
+    "Abt 75": {
+      "find": "betstan"
+    },
+    "IV Eg 2": {
+      "find": "betste"
+    },
+    "IV Eg 2,1": {
+      "find": "betste"
+    },
+    "IV Eg 12": {
+      "find": "betste"
+    },
+    "V Atr 15": {
+      "find": "betst"
+    },
+    "V Atr 35": {
+      "find": "betst"
+    }
+  },
+  "betihtlod": {
+    "III Atr 4": {
+      "find": "betihtlod",
+      "mark": [
+        "betihlod"
+      ]
+    },
+    "II Cn 31,1": {
+      "find": "betihtlod",
+      "mark": [
+        "betyhtlod",
+        "betyhled"
+      ]
+    }
+  },
+  "betweonan": {
+    "II Em Pro 1": {
+      "find": "betweonan"
+    }
+  },
+  "bethencan": {
+    "Ger 18": {
+      "find": "beðencan,\"beðen can\""
+    }
+  },
+  "biddan": {
+    "II As 11": {
+      "find": "beodað",
+      "mark": [
+        "bæde"
+      ]
+    },
+    "II Em 4": {
+      "find": "gebet"
+    }
+  },
+  "binnan": {
+    "II Cn 24": {
+      "find": "binnan"
+    },
+    "II Atr 2": {
+      "find": "binnan"
+    }
+  },
+  "biscopland": {
+    "VI As 1,1": {
+      "find": "biscopland,\"bisceopa land\""
+    }
+  },
+  "bismerian": {
+    "II Cn 42": {
+      "find": "bismærige",
+      "mark": [
+        "gebysmrige",
+        "gebismerian"
+      ]
+    }
+  },
+  "bistanded": {
+    "Abt 51": {
+      "find": "bistandeð,\"bi standeð\",\"bi standeþ\""
+    }
+  },
+  "biwiste": {
+    "Rect 21,5": {
+      "find": "biwiste,\"bi wiste\""
+    }
+  },
+  "blod": {
+    "I Em 3": {
+      "find": "\"mannes blod\",mannesblod"
+    },
+    "II Em 4": {
+      "find": "\"mannes blod\",mannesblod"
+    }
+  },
+  "bocrihtes": {
+    "Rect 1": {
+      "find": "bocrihtes,\"boc rihtes\""
+    }
+  },
+  "boctaecinge": {
+    "II Cn 38,2": {
+      "find": "boctæcinge",
+      "mark": [
+        "boctale"
+      ]
+    }
+  },
+  "bod": {
+    "I Cn 26,4": {
+      "find": "bodan"
+    }
+  },
+  "borgbryce": {
+    "Af Rb 3": {
+      "find": "borgbryce",
+      "mark": [
+        "burhbryce"
+      ]
+    },
+    "Hn 12,2": {
+      "find": "burgbryce,borgbryce",
+      "mark": [
+        "burchbreche"
+      ]
+    },
+    "Hn 35,2": {
+      "find": "burgbryce,borgbryce",
+      "mark": [
+        "burhbreche"
+      ]
+    }
+  },
+  "burgbryce": {
+    "Hn 12,2": {
+      "find": "burchbreche"
+    },
+    "Hn 35,2": {
+      "find": "burhbreche"
+    }
+  },
+  "bot": {
+    "II Cn 38,2": {
+      "find": "bote",
+      "mark": [
+        "woruldbote"
+      ]
+    }
+  },
+  "bringan": {
+    "Cn 1020,3": {
+      "find": "bringan",
+      "mark": [
+        "brohte"
+      ]
+    },
+    "Af 21": {
+      "find": "brengan,bringan",
+      "mark": [
+        "brohte",
+        "bohte"
+      ]
+    }
+  },
+  "bycgan": {
+    "Af 21": {
+      "find": "bohte",
+      "mark": [
+        "brohte"
+      ]
+    },
+    "IV Eg 9": {
+      "find": "bohte"
+    }
+  },
+  "bufan": {
+    "Af 42,2": {
+      "find": "ærbufan",
+      "mark": [
+        "bufan",
+        "bufon"
+      ]
+    }
+  },
+  "bur": {
+    "Ine 6,3": {
+      "find": "bur",
+      "mark": [
+        "gebures",
+        "gebure"
+      ]
+    }
+  },
+  "burg": {
+    "Ger 13": {
+      "find": "byrig",
+      "mark": [
+        "onbyrug"
+      ]
+    },
+    "II Cn 58,2": {
+      "find": "burg",
+      "mark": [
+        "borh"
+      ]
+    },
+    "ECf 12": {
+      "find": "burgis"
+    }
+  },
+  "bur-g-gemot": {
+    "III Eg 5,1": {
+      "find": "burhgemot",
+      "mark": [
+        "buruhgemot",
+        "buruhmot"
+      ]
+    },
+    "II Cn 18": {
+      "find": "burhgemot"
+    }
+  },
+  "butere": {
+    "Ine 70,1": {
+      "find": "buteran",
+      "mark": [
+        "butran"
+      ]
+    }
+  },
+  "by-c-gen": {
+    "Ine 11": {
+      "find": "bycgen,bygene",
+      "mark": [
+        "bebycgge",
+        "gebycge",
+        "bebicge"
+      ]
+    },
+    "Ine Insc": {
+      "find": "bycgen,bygene",
+      "mark": [
+        "bebycgge",
+        "gebycge",
+        "bebicge"
+      ]
+    }
+  },
+  "byrga": {
+    "Af 18,1": {
+      "find": "byrgean",
+      "mark": [
+        "gebyrige",
+        "gebyrie"
+      ]
+    },
+    "Af 18,2": {
+      "find": "byrgean",
+      "mark": [
+        "gebyrie",
+        "gebyrian"
+      ]
+    },
+    "Af 18,3": {
+      "find": "byrgean",
+      "mark": [
+        "gebyrie",
+        "gebyrige"
+      ]
+    }
+  },
+  "beran": {
+    "Af 42,6": {
+      "find": "geborene"
+    },
+    "Af 42,7": {
+      "find": "borenre",
+      "mark": [
+        "æwumborenre"
+      ]
+    },
+    "Iud Dei IV 3,3": {
+      "find": "geborenum"
+    }
+  },
+  "borg": {
+    "Grið 11": {
+      "find": "mundbrice",
+      "mark": [
+        "borg"
+      ]
+    }
+  },
+  "buremannus": {
+    "VI As 11": {
+      "find": "buremannus",
+      "mark": [
+        "hyremannus",
+        "hyremannis",
+        "hyremannum",
+        "hyremannu"
+      ]
+    }
+  },
+  "ben": {
+    "Ine 8": {
+      "find": "bene"
+    }
+  },
+  "boc": {
+    "VI Atr 51": {
+      "find": "bocan"
     }
   }
 }

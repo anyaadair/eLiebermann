@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-18">Link to the Dictionary of Old English added (E02875; asked for in the dictionary corrections list (B), found in the DOE headword list; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,7 @@
           <orth>behwyrfð</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">behwyrfð</hi>, 3, (<hi rend="italic">Kirchengerechtsame</hi>) <hi rend="italic">behandelt, betreibt</hi> <ref type="lawCode" target="law:IVEg">IV Eg</ref> 1,5a</dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E02875">be-hwyrfan</ref></xr>
         <xr type="lawCode"><ref target="clause:IVEg_1-5a">IV Eg 1,5a</ref></xr>
       </entry>
     </body>

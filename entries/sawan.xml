@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-18">Derivatives list: a first part with a hyphen ("burg-" under bot) now goes to the compound (burgbot), and a compound written without its final -e (woruldbot) to its entry.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -34,7 +35,8 @@
         <form type="lemma">
           <orth>sawan</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">sawan</hi> <hi rend="italic">säen</hi> <ref type="lawCode" target="law:Ger">Ger</ref> 12 | <hi rend="italic"><ref type="abbreviation" target="gram:Optativ"><abbr>op</abbr></ref></hi> 3: sawe <hi rend="italic">besäe</hi> <ref type="lawCode" target="law:Rect">Rect</ref> 4,2 | <hi rend="italic"><ref type="abbreviation" target="gram:Praeteritum"><abbr>ptt</abbr></ref> <ref type="abbreviation" target="gram:Particip"><abbr>pc</abbr></ref>:</hi> gesawen <ref type="lawCode" target="law:Rect">Rect</ref> 10; <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>:</hi> gesawene <hi rend="italic"><ref type="abbreviation" target="gram:ebenda"><abbr>ebd.</abbr></ref>; <ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref> <ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref></hi> - 4,3. — <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> ges~; unsawen</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">sawan</hi> <hi rend="italic">säen</hi> <ref type="lawCode" target="law:Ger">Ger</ref> 12 | <hi rend="italic"><ref type="abbreviation" target="gram:Optativ"><abbr>op</abbr></ref></hi> 3: sawe <hi rend="italic">besäe</hi> <ref type="lawCode" target="law:Rect">Rect</ref> 4,2 | <hi rend="italic"><ref type="abbreviation" target="gram:Praeteritum"><abbr>ptt</abbr></ref> <ref type="abbreviation" target="gram:Particip"><abbr>pc</abbr></ref>:</hi> gesawen <ref type="lawCode" target="law:Rect">Rect</ref> 10; <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>:</hi> gesawene <hi rend="italic"><ref type="abbreviation" target="gram:ebenda"><abbr>ebd.</abbr></ref>; <ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref> <ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref></hi> - 4,3. — <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> ges~; <ref type="entry" target="entry:unsawene">unsawen</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:unsawene">unsawene</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/26456">sáwan</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/57609">sáwan (Supplement)</ref></xr>
         <xr type="lawCode"><ref target="clause:Ger_12">Ger 12</ref></xr>

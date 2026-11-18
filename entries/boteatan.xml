@@ -28,6 +28,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
+      <change when="2026-11-18">Link to the Dictionary of Old English added (E03791; asked for in the dictionary corrections list (B), found in the DOE headword list; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -37,6 +38,7 @@
           <orth>boteatan</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">boteatan</hi> <hi rend="italic">ausbessern</hi> <ref type="lawCode" target="law:Ger">Ger</ref> 9 [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>. </hi><ref type="bibl" target="bib:CitKlaeberAnglia"><hi rend="italic">Klaeber</hi> Anglia 27, 431</ref>]</dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E03791">bōtettan</ref></xr>
         <xr type="lawCode"><ref target="clause:Ger_9">Ger 9</ref></xr>
       </entry>
     </body>

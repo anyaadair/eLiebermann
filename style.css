@@ -936,6 +936,7 @@ h2.result-code .code-abbr { min-width: 0; margin-left: 0.4rem; }
 .liebermann-text p.sense--depth-1 { margin-left: 1.5em; }
 .liebermann-text p.sense--depth-2 { margin-left: 3em; }
 .liebermann-text p.sense--depth-3 { margin-left: 4.5em; }
+.liebermann-text .outline-dash { display: none; }
 .liebermann-text p.sense--depth-4 { margin-left: 6em; }
 .liebermann-text p.sense--roman, .liebermann-text p.sense--upper { margin-top: 0.9em; }
 /* Grammatical entries: a case heading (Genetiv, Dativ…) after "|" starts a new

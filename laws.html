@@ -335,7 +335,8 @@ scripts:
         const seen = terms.map(() => false);
         const shown = [];
         for (const [label, text, lang] of fields(c)) {
-            const hits = findIn(text, terms, loose && lang !== 'en' && lang !== 'de' ? true : false);
+            const lo = loose && lang !== 'en' && lang !== 'de';
+            const hits = findIn(text, !lo && terms.strict ? terms.strict : terms, lo);
             const any = hits.some(Boolean);
             hits.forEach((h, i) => { if (h) seen[i] = true; });
             if (any) shown.push([label, text, hits.filter(Boolean), lang]);

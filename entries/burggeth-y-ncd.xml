@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-18">Link to the Dictionary of Old English added (E03337; asked for in the dictionary corrections list (B), found in the DOE headword list; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,7 @@
           <orth>burggeþ[y]ncð</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">burggeþ[y]ncð</hi> <hi rend="italic">Stadtgericht; <ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>:</hi> burhgaþinðe <ref type="lawCode" target="law:IIIAtr">III Atr</ref> 1,2; burgiþincða <ref type="lawCode" target="law:Quadr">Q</ref></dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E03337">burh-ge·þingþ</ref></xr>
         <xr type="lawCode"><ref target="clause:IIIAtr_1-2">III Atr 1,2</ref></xr>
       </entry>
     </body>

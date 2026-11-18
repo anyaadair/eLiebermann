@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-18">Link to the Dictionary of Old English added (E02944; asked for in the dictionary corrections list (B), found in the DOE headword list; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">belewedan</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Genitiv"><abbr>gn</abbr></ref></hi>, <hi rend="italic">Verräters</hi> [<hi rend="italic">Christi: Judas</hi>] <ref type="lawCode" target="law:ExcomVII">Excom VII</ref> 5</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/3593">be-léweda</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E02944">be-lǣwa</ref></xr>
         <xr type="lawCode"><ref target="clause:ExcomVII_5">Excom VII 5</ref></xr>
       </entry>
     </body>

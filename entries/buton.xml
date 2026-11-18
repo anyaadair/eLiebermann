@@ -29,6 +29,7 @@
       <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
       <change when="2026-10-18">Abbreviations and law code (Norðleod) linked; see the pull request “þæt: indecl., Einl., Folg., Urkk.-Sprache, Norðleod”.</change>
+      <change when="2026-11-18">Link to the Dictionary of Old English added (E03005; asked for in the dictionary corrections list (B), found in the DOE headword list; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -51,6 +52,7 @@
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/5515">búton (adv.)</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/4135">be-útan</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/5521">bútun</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E03005">būtan</ref></xr>
         <xr type="lawCode"><ref target="clause:Rubrics-Ine_20">Ine Rb 20</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_8">Af 8</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_3-1">Ine 3,1</ref></xr>

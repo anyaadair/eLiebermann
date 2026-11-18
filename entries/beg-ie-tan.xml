@@ -31,6 +31,7 @@
       <change when="2026-11-02">Link to the Dictionary of Old English added (E02416; guessed from the DOE headword list, spelling variant (i/y/ie, double letters, -ian/-an); not yet checked).</change>
       <change when="2026-11-06">“m” (mit) before a grammatical term linked to the abbreviations list.</change>
       <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
+      <change when="2026-11-18">Corrections from the consolidated dictionary corrections list for B (links, cross-references, abbreviation links).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -60,7 +61,7 @@
         <xr type="lawCode"><ref target="clause:Hl_2">Hl 2</ref></xr>
         <xr type="lawCode"><ref target="clause:Hl_4">Hl 4</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_65">Af 65</ref></xr>
-        <xr type="lawCode"><ref target="clause:IIAs_2-1">II As 2</ref></xr>
+        <xr type="lawCode"><ref target="clause:IIAs_2">II As 2</ref></xr>
         <xr type="lawCode"><ref target="clause:IIAs_2-1">II As 2,1</ref></xr>
         <xr type="lawCode"><ref target="clause:Duns_2-2">Duns 2,2</ref></xr>
         <xr type="lawCode"><ref target="clause:Northleoda_10">Norðleod 10</ref></xr>
@@ -77,7 +78,7 @@
         <xr type="lawCode"><ref target="clause:Becwaeth_1">Becwæð 1</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_23-1">II Cn 23,1</ref></xr>
         <xr type="lawCode"><ref target="clause:Forf_3-2">Forf 3,2</ref></xr>
-        <xr type="lawCode"><ref target="clause:Forf_3-1">Forf 3,1</ref></xr>
+        <xr type="lawCode" rend="range-from:Forf 3,2"><ref target="clause:Forf_3-1">Forf 3,1</ref></xr>
         <xr type="lawCode"><ref target="clause:VIIIAtr_3">VIII Atr 3</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAs_8-6">VI As 8,6</ref></xr>
         <xr type="lawCode"><ref target="clause:IEw_1-4">I Ew 1,4</ref></xr>

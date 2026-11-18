@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-18">Link to the Dictionary of Old English added (E03199; asked for in the dictionary corrections list (B), found in the DOE headword list; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,7 @@
           <orth>bearneacnum</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">bearneacnum</hi> wife, <hi rend="italic"><ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref></hi>, <hi rend="italic">schwangerem</hi> <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:Rb">Rb</ref> 9 ‖ ~<hi rend="bold">cnend</hi> (<hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref></hi>) <ref type="lawCode" target="law:Ld">Ld</ref></dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E03199">bearn-ēacen</ref></xr>
         <xr type="lawCode"><ref target="clause:Rubrics-Af_9">Af Rb 9</ref></xr>
       </entry>
     </body>
