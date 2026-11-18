@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
-"""Builds the standalone network experiments in this folder.
+"""Builds the visualisation tools in this folder (the site's Visualisation Tools pages).
 
-Each page is one HTML file with its CSS, JS and data inline; only D3 comes
-from a CDN. The pages are made from the templates in templates/ by putting
-the data where the template says /*DATA*/. Run from the repository root:
+Each page is a site page (Jekyll front matter, the site's layout) with its CSS, JS and data
+inline; only D3 (and, for the map, Leaflet) comes from a CDN. The pages are made from the
+templates in templates/ by putting the data where the template says /*DATA*/. Run from the
+repository root:
 
-    python3 experiments/build.py
+    python3 visualisations/build.py
 
-and open experiments/*.html in a browser (no server needed).
-
-The pages are experiments: nothing on the site links to them.
+The overview page is visualisations/index.html (written by hand). The tools' CSS is scoped
+under .viz and uses the site's colours and type (style.css).
 """
 import json
 import re

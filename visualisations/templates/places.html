@@ -1,46 +1,46 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex">
-<title>Where the codes were made</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+---
+title: "Where the law codes were made · Visualisation Tools"
+full_width: true
+description: "A map of the places where the codes were issued, with a slider through time."
+stylesheets:
+  - "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css"
+---
+{% raw %}
+<div class="viz">
+<p class="small viz-crumb"><a href="index.html">Visualisation Tools</a> › Time, place and manuscripts</p>
 <style>
-:root {
-  --bg: #fbfaf7; --fg: #22201c; --muted: #6b665d; --line: #d9d4ca; --panel: #ffffff; --accent: #8a3b12;
-  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+.viz { --bg: var(--paper); --fg: var(--ink); --line: var(--rule); --panel: var(--surface); --accent: var(--navy); font-family: var(--sans); }
+.viz * { box-sizing: border-box; }
+.viz header { padding: 20px 24px 8px; max-width: 1100px; }
+.viz header p { margin: 4px 0; color: var(--muted); line-height: 1.45; max-width: 80ch; }
+.viz .controls { display: flex; flex-wrap: wrap; gap: 8px 22px; padding: 10px 24px; align-items: center; border-bottom: 1px solid var(--line); font-size: .92rem; }
+.viz .controls legend { float: left; margin-right: 6px; color: var(--muted); font-size: .8rem; text-transform: uppercase; letter-spacing: .06em; }
+.viz .controls fieldset { border: 0; padding: 0; margin: 0; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.viz .viz-main { display: grid; grid-template-columns: minmax(0, 1fr) 340px; }
+@media (max-width: 900px) {
+.viz .viz-main { grid-template-columns: 1fr; }
 }
-@media (prefers-color-scheme: dark) {
-  :root { --bg: #1a1916; --fg: #ebe7df; --muted: #a39d92; --line: #3a3732; --panel: #24221f; --accent: #e39a6b; }
-}
-* { box-sizing: border-box; }
-body { margin: 0; background: var(--bg); color: var(--fg); }
-header { padding: 20px 24px 8px; max-width: 1100px; }
-h1 { margin: 0 0 6px; font-size: 1.6rem; font-weight: 600; }
-header p { margin: 4px 0; color: var(--muted); line-height: 1.45; max-width: 80ch; }
-.controls { display: flex; flex-wrap: wrap; gap: 8px 22px; padding: 10px 24px; align-items: center; border-bottom: 1px solid var(--line); font-size: .92rem; }
-.controls legend { float: left; margin-right: 6px; color: var(--muted); font-size: .8rem; text-transform: uppercase; letter-spacing: .06em; }
-.controls fieldset { border: 0; padding: 0; margin: 0; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
-main { display: grid; grid-template-columns: minmax(0, 1fr) 340px; }
-@media (max-width: 900px) { main { grid-template-columns: 1fr; } }
-#map { height: calc(100vh - 230px); min-height: 480px; }
-@media (prefers-color-scheme: dark) { #map .leaflet-tile-pane { filter: invert(1) hue-rotate(180deg) brightness(.85) contrast(.9); } }
-aside { border-left: 1px solid var(--line); padding: 16px 18px; background: var(--panel); height: calc(100vh - 230px); min-height: 480px; overflow-y: auto; font-size: .92rem; }
-aside h2 { font-size: 1.1rem; margin: 0 0 6px; }
-aside h3 { font-size: .95rem; margin: 16px 0 4px; }
-aside a, .leaflet-popup-content a { color: var(--accent); }
-.muted { color: var(--muted); }
-.dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 4px; vertical-align: middle; }
-.row { padding: 3px 0; border-bottom: 1px dotted var(--line); }
-.row.place { cursor: pointer; }
-.row.place:hover { color: var(--accent); }
-.leaflet-popup-content { font-family: inherit; font-size: .9rem; }
-.leaflet-popup-content ul { padding-left: 16px; margin: 4px 0; }
-.year { font-variant-numeric: tabular-nums; color: var(--muted); margin-right: 6px; }
+.viz #map { height: calc(100vh - 230px); min-height: 480px; }
+.viz aside { border-left: 1px solid var(--line); padding: 16px 18px; background: var(--panel); height: calc(100vh - 230px); min-height: 480px; overflow-y: auto; font-size: .92rem; }
+.viz aside h2 { font-size: 1.1rem; margin: 0 0 6px; }
+.viz aside h3 { font-size: .95rem; margin: 16px 0 4px; }
+.viz aside a, .viz .leaflet-popup-content a { color: var(--accent); }
+.viz .muted { color: var(--muted); }
+.viz .dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 4px; vertical-align: middle; }
+.viz .row { padding: 3px 0; border-bottom: 1px dotted var(--line); }
+.viz .row.place { cursor: pointer; }
+.viz .row.place:hover { color: var(--accent); }
+.viz .leaflet-popup-content { font-family: inherit; font-size: .9rem; }
+.viz .leaflet-popup-content ul { padding-left: 16px; margin: 4px 0; }
+.viz .year { font-variant-numeric: tabular-nums; color: var(--muted); margin-right: 6px; }
+.viz button[aria-pressed="true"] { background: var(--navy); border-color: var(--navy); color: #fff; }
+.viz button:hover { background: var(--powder-tint); color: var(--navy); }
+.viz button[aria-pressed="true"]:hover { background: var(--link-hover); color: #fff; }
+.viz header, .viz .controls, .viz .legend { padding-left: 0; padding-right: 0; }
+.viz header h1 { margin-top: 0.2em; }
+.viz-crumb { margin: 0.6rem 0 0; }
+.viz { display: block; padding: 0 clamp(16px, 3vw, 40px) 2rem; }
 </style>
-</head>
-<body>
 <header>
   <h1>Where the law codes were made</h1>
   <p>The places where the kings' councils issued their laws, as the codes themselves or their editors name them: Grately, Exeter, Andover, Enham, Bath, Winchester and the rest. Each circle is a place, sized by the number of codes issued there and coloured by king. Drag the slider to watch the councils move through time; click a place for its codes.</p>
@@ -50,10 +50,10 @@ aside a, .leaflet-popup-content a { color: var(--accent); }
   <fieldset><legend>Up to</legend><input type="range" id="year" min="900" max="1140" step="1" value="1140" style="width:260px" aria-label="Show codes issued up to this year"> <strong id="year-n">1140</strong></fieldset>
   <fieldset id="legend"></fieldset>
 </div>
-<main>
+<div class="viz-main">
   <div id="map"></div>
   <aside id="side"></aside>
-</main>
+</div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
 <script>
 const DATA = /*DATA*/null;
@@ -106,5 +106,5 @@ document.getElementById('year-n').textContent = slider.value;
 slider.addEventListener('input', () => { document.getElementById('year-n').textContent = slider.value; draw(+slider.value); });
 draw(+slider.value);
 </script>
-</body>
-</html>
+</div>
+{% endraw %}

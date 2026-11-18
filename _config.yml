@@ -26,9 +26,9 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor/
-  - experiments/templates/
-  - experiments/build.py
-  - experiments/README.md
+  - visualisations/templates/
+  - visualisations/build.py
+  - visualisations/README.md
 
 defaults:
   - scope:
@@ -42,3 +42,9 @@ defaults:
     values:
       root: "../"
       section: statuta
+  # The visualisation tools (visualisations/build.py writes them)
+  - scope:
+      path: "visualisations"
+    values:
+      root: "../"
+      section: visualisations

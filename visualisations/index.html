@@ -1,0 +1,64 @@
+---
+title: Visualisation Tools
+description: "Interactive pictures of the laws and the dictionary, made from eLiebermann's data: borrowing between law codes, dates, places and manuscripts, shared words and subjects."
+---
+<h1>Visualisation Tools</h1>
+
+<p class="lede">Interactive pictures of the laws and the dictionary, drawn from the same data as the rest of eLiebermann. Each tool sets out one kind of connection: between law codes, across time and place, or among words and subjects. Click and filter to explore; each tool says how it was made.</p>
+
+<h2>Borrowing and reuse</h2>
+<p>How the law codes draw on one another, from the clause-to-clause comparisons of Liebermann and later scholars.</p>
+<div class="card-grid card-grid--fill">
+    <a class="card" href="law-code-borrowing.html">
+        <h3>Which law codes borrow from which</h3>
+        <p class="small muted">Arcs or network</p>
+        <p>Arcs between law codes, from the clause-to-clause comparisons of Liebermann, Wormald, Kennedy, Whitelock and Jurasinski and Oliver. Click a code or an arc to see the clauses behind it.</p>
+    </a>
+    <a class="card" href="reuse-chains.html">
+        <h3>Chains of reuse from one clause</h3>
+        <p class="small muted">Tree</p>
+        <p>Follow a clause forward to the later clauses that take it up, and back to the ones it draws on.</p>
+    </a>
+</div>
+
+<h2>Time, place and manuscripts</h2>
+<p>When and where the codes were made, and the manuscripts that carry them.</p>
+<div class="card-grid card-grid--fill">
+    <a class="card" href="dating-the-codes.html">
+        <h3>Dating the law codes</h3>
+        <p class="small muted">Timeline</p>
+        <p>Each scholar’s date for each code, side by side, to show where they agree and where they differ.</p>
+    </a>
+    <a class="card" href="where-codes-were-made.html">
+        <h3>Where the law codes were made</h3>
+        <p class="small muted">Map</p>
+        <p>The places where the codes were issued, with a slider through time.</p>
+    </a>
+    <a class="card" href="manuscripts-and-codes.html">
+        <h3>Which manuscripts carry which law codes</h3>
+        <p class="small muted">Timeline network</p>
+        <p>Law codes at the date they were made, joined to the manuscripts and early prints that carry them at the date they were written.</p>
+    </a>
+</div>
+
+<h2>Words and subjects</h2>
+<p>The vocabulary of the laws, from Liebermann’s <em>Wörterbuch</em>, and the subjects tagged on the clauses.</p>
+<div class="card-grid card-grid--fill">
+    <a class="card" href="shared-vocabulary.html">
+        <h3>Law codes by shared vocabulary</h3>
+        <p class="small muted">Network</p>
+        <p>Law codes joined by the <em>Wörterbuch</em> headwords that cite both, with a headword search.</p>
+    </a>
+    <a class="card" href="headword-crossrefs.html">
+        <h3>Liebermann’s cross-references between headwords</h3>
+        <p class="small muted">Network</p>
+        <p>Word families from Liebermann’s <em>s.</em>, <em>vgl.</em> and <em>Der.</em>, one to three steps out from a headword.</p>
+    </a>
+    <a class="card" href="subjects-together.html">
+        <h3>Subjects that appear together</h3>
+        <p class="small muted">Network</p>
+        <p>Subject keywords joined when they are tagged on the same clauses more often than chance.</p>
+    </a>
+</div>
+
+<p class="small muted">The tools are made from the clause and entry files by <code>visualisations/build.py</code> (see the <a href="https://github.com/anyaadair/eLiebermann/tree/main/visualisations">README</a>), and are rebuilt when the data changes. They work best on a large screen.</p>
