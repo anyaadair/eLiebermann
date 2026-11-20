@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Cons (Consiliatio Cnuti) linked to the list of law codes.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -34,7 +35,7 @@
         <form type="lemma">
           <orth>pr[a]eses</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">pr[a]eses</hi> <hi rend="italic"><ref type="abbreviation" target="gram:fur"><abbr>für</abbr></ref></hi> ealdorman <ref type="lawCode" target="law:IICn">II Cn</ref> 18,1 Cons [<hi rend="italic"><ref type="abbreviation" target="gram:bessereViell"><abbr>bessere viell.</abbr></ref>, wie</hi> 58,2, princeps]</dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">pr[a]eses</hi> <hi rend="italic"><ref type="abbreviation" target="gram:fur"><abbr>für</abbr></ref></hi> ealdorman <ref type="lawCode" target="law:IICn">II Cn</ref> 18,1 <ref type="lawCode" target="law:ConsCn">Cons</ref> [<hi rend="italic"><ref type="abbreviation" target="gram:bessereViell"><abbr>bessere viell.</abbr></ref>, wie</hi> 58,2, princeps]</dictScrap>
         <xr type="lawCode"><ref target="clause:IICn_18-1">II Cn 18,1</ref></xr>
       </entry>
     </body>

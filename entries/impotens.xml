@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Cons (Consiliatio Cnuti) linked to the list of law codes.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -34,7 +35,7 @@
         <form type="lemma">
           <orth>impotens</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">impotens</hi> <hi rend="italic">unvermögend</hi> (<hi rend="italic">in Wertbesitz</hi>) <ref type="lawCode" target="law:IIAtr">II Atr</ref> 9 <ref type="lawCode" target="law:Quadr">Q</ref>, unmihtig <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref>;</hi> ~ncior <ref type="lawCode" target="law:IICn">II Cn</ref> 71,5 Cons, læsse mage <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref></hi></dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">impotens</hi> <hi rend="italic">unvermögend</hi> (<hi rend="italic">in Wertbesitz</hi>) <ref type="lawCode" target="law:IIAtr">II Atr</ref> 9 <ref type="lawCode" target="law:Quadr">Q</ref>, unmihtig <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref>;</hi> ~ncior <ref type="lawCode" target="law:IICn">II Cn</ref> 71,5 <ref type="lawCode" target="law:ConsCn">Cons</ref>, læsse mage <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref></hi></dictScrap>
         <xr type="lawCode"><ref target="clause:IIAtr_9">II Atr 9</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_71-5">II Cn 71,5</ref></xr>
       </entry>

@@ -28,6 +28,7 @@
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-14">S. marked as Sanctus, not siehe.</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
+      <change when="2026-11-20">Cons (Consiliatio Cnuti) linked to the list of law codes.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,10 +37,10 @@
         <form type="lemma">
           <orth>purificatio</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">purificatio</hi> <hi rend="bold">1</hi>) <hi rend="italic">Reinigungsbeweis durch Ordal</hi> <ref type="lawCode" target="law:IudDeiXII">Iud Dei XII</ref> 21,1 <hi rend="bold">2</hi>) ~ <ref type="abbreviation" target="gram:sanctus"><abbr>s.</abbr></ref> Mariæ <hi rend="italic">Lichtmess,</hi> 2. <hi rend="italic">Februar,</hi> <ref type="lawCode" target="law:ICn">I Cn</ref> 12 Cons, clænsung <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref></hi> [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>.</hi> <ref type="entry" target="entry:Candelarum">Candelarum</ref>]</dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">purificatio</hi> <hi rend="bold">1</hi>) <hi rend="italic">Reinigungsbeweis durch Ordal</hi> <ref type="lawCode" target="law:IudDeiXII">Iud Dei XII</ref> 21,1 <hi rend="bold">2</hi>) ~ <ref type="abbreviation" target="gram:sanctus"><abbr>s.</abbr></ref> Mariæ <hi rend="italic">Lichtmess,</hi> 2. <hi rend="italic">Februar,</hi> <ref type="lawCode" target="law:ICn">I Cn</ref> 12 <ref type="lawCode" target="law:ConsCn">Cons</ref>, clænsung <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref></hi> [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>.</hi> <ref type="entry" target="entry:Candelarum">Candelarum</ref>]</dictScrap>
         <dictScrap type="senses">
           <sense n="1"><hi rend="italic">Reinigungsbeweis durch Ordal</hi> <ref type="lawCode" target="law:IudDeiXII">Iud Dei XII</ref> 21,1</sense>
-          <sense n="2">~ <ref type="abbreviation" target="gram:sanctus"><abbr>s.</abbr></ref> Mariæ <hi rend="italic">Lichtmess,</hi> 2. <hi rend="italic">Februar,</hi> <ref type="lawCode" target="law:ICn">I Cn</ref> 12 Cons, clænsung <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref></hi> [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>.</hi> <ref type="entry" target="entry:Candelarum">Candelarum</ref>]</sense>
+          <sense n="2">~ <ref type="abbreviation" target="gram:sanctus"><abbr>s.</abbr></ref> Mariæ <hi rend="italic">Lichtmess,</hi> 2. <hi rend="italic">Februar,</hi> <ref type="lawCode" target="law:ICn">I Cn</ref> 12 <ref type="lawCode" target="law:ConsCn">Cons</ref>, clænsung <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref></hi> [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>.</hi> <ref type="entry" target="entry:Candelarum">Candelarum</ref>]</sense>
         </dictScrap>
         <xr type="compare"><ref target="entry:Candelarum">Candelarum</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiXII_21-1">Iud Dei XII 21,1</ref></xr>

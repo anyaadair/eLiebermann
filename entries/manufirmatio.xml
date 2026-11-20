@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Cons (Consiliatio Cnuti) linked to the list of law codes.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -34,7 +35,7 @@
         <form type="lemma">
           <orth>manufirmatio</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">manufirmatio</hi> <hi rend="italic">Versprechen, Vertrag</hi> <ref type="lawCode" target="law:ICn">I Cn</ref> 19,1 Cons, wedd <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref></hi> [<hi rend="italic"><ref type="abbreviation" target="gram:aus"><abbr>aus</abbr></ref> frz.</hi> main ferme, <hi rend="italic">dessen Sondersinn</hi> (<hi rend="italic">gegen Zins verliehenes Land</hi>) Cons <hi rend="italic">schwerlich meint</hi>]</dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">manufirmatio</hi> <hi rend="italic">Versprechen, Vertrag</hi> <ref type="lawCode" target="law:ICn">I Cn</ref> 19,1 <ref type="lawCode" target="law:ConsCn">Cons</ref>, wedd <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref></hi> [<hi rend="italic"><ref type="abbreviation" target="gram:aus"><abbr>aus</abbr></ref> frz.</hi> main ferme, <hi rend="italic">dessen Sondersinn</hi> (<hi rend="italic">gegen Zins verliehenes Land</hi>) <ref type="lawCode" target="law:ConsCn">Cons</ref> <hi rend="italic">schwerlich meint</hi>]</dictScrap>
         <xr type="lawCode"><ref target="clause:ICn_19-1">I Cn 19,1</ref></xr>
       </entry>
     </body>

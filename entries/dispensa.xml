@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">“In Cn” and “In” (Instituta Cnuti) linked to the law codes list.</change>
+      <change when="2026-11-20">Cons (Consiliatio Cnuti) linked to the list of law codes.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,7 +36,7 @@
         <form type="lemma">
           <orth>dispensa</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">dispensa</hi> <hi rend="italic">Vorratskammer</hi> <ref type="lawCode" target="law:IICn">II Cn</ref> 76,1a <ref type="lawCode" target="law:Quadr">Q</ref>. <ref type="lawCode" target="law:InCn">In</ref>. Cons, hordern <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref></hi></dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">dispensa</hi> <hi rend="italic">Vorratskammer</hi> <ref type="lawCode" target="law:IICn">II Cn</ref> 76,1a <ref type="lawCode" target="law:Quadr">Q</ref>. <ref type="lawCode" target="law:InCn">In</ref>. <ref type="lawCode" target="law:ConsCn">Cons</ref>, hordern <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref></hi></dictScrap>
         <xr type="lawCode"><ref target="clause:IICn_76-1a">II Cn 76,1a</ref></xr>
       </entry>
     </body>

@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Cons (Consiliatio Cnuti) linked to the list of law codes.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -34,7 +35,7 @@
         <form type="lemma">
           <orth>basilides</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">basilides</hi> <hi rend="italic">königlicher Prinz</hi> <ref type="lawCode" target="law:IICn">II Cn</ref> 58,1 Cons, æðeling <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref></hi></dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">basilides</hi> <hi rend="italic">königlicher Prinz</hi> <ref type="lawCode" target="law:IICn">II Cn</ref> 58,1 <ref type="lawCode" target="law:ConsCn">Cons</ref>, æðeling <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref></hi></dictScrap>
         <xr type="lawCode"><ref target="clause:IICn_58-1">II Cn 58,1</ref></xr>
       </entry>
     </body>

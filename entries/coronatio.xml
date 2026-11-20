@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">A citation after a reading in square brackets linked (it had not been picked up).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -34,9 +35,10 @@
         <form type="lemma">
           <orth>coronatio</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">coronatio</hi> <hi rend="italic">Königskrönung</hi> <ref type="lawCode" target="law:CHnCor">CHn cor</ref> Prot<hi rend="superscript">1</hi>. <ref type="lawCode" target="law:ECf">ECf</ref> 12,1 = <hi rend="bold">coronatus</hi> primus <hi rend="italic">erste</hi> (<hi rend="italic">staatsrechtliche</hi>) <hi rend="italic">Krönung zum König</hi> [<hi rend="italic"><ref type="abbreviation" target="gram:Gegensatz"><abbr>Ggs.</abbr></ref>: späteres Krone tragen an Festen</hi>] 27,2</dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">coronatio</hi> <hi rend="italic">Königskrönung</hi> <ref type="lawCode" target="law:CHnCor">CHn cor</ref> Prot<hi rend="superscript">1</hi>. <ref type="lawCode" target="law:ECf">ECf</ref> 12,1 = <hi rend="bold">coronatus</hi> primus <hi rend="italic">erste</hi> (<hi rend="italic">staatsrechtliche</hi>) <hi rend="italic">Krönung zum König</hi> [<hi rend="italic"><ref type="abbreviation" target="gram:Gegensatz"><abbr>Ggs.</abbr></ref>: späteres Krone tragen an Festen</hi>] <ref type="clause" target="clause:ECf_27-2" n="ECf 27,2">27,2</ref></dictScrap>
         <xr type="lawCode" n="1"><ref target="clause:CHnCor_Prol">CHn cor Prot</ref></xr>
         <xr type="lawCode"><ref target="clause:ECf_12-1">ECf 12,1</ref></xr>
+        <xr type="lawCode"><ref target="clause:ECf_27-2">ECf 27,2</ref></xr>
       </entry>
     </body>
   </text>
