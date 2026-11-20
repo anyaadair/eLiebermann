@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E18080; guessed from the DOE headword list, same spelling).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">impian</hi> (<hi rend="italic">Bäume</hi>) <hi rend="italic">propfen</hi> <ref type="lawCode" target="law:Ger">Ger</ref> 12</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/53863">impian</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E18080">impian</ref></xr>
         <xr type="lawCode"><ref target="clause:Ger_12">Ger 12</ref></xr>
       </entry>
     </body>
