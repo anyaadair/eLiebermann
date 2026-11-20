@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-11-01">Abbreviations “unfl.” and “Für” linked to the abbreviations list.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E15362; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -45,6 +46,7 @@
         <xr type="compare"><ref target="entry:haelo">hælo</ref></xr>
         <xr type="derivative"><ref target="entry:gehal">gehal</ref></xr>
         <xr type="derivative"><ref target="entry:unhal">unhal</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E15362">hāl</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_75">Af 75</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiIV_4-3">Iud Dei IV 4,3</ref></xr>
         <xr type="lawCode"><ref target="clause:Swer_9">Swer 9</ref></xr>

@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E15489; guessed from the DOE headword list, same as the Bosworth-Toller headword; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">hadnote</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>, Priesteramt</hi> <ref type="lawCode" target="law:Gethinctho">Geþyncðo</ref> 7 <ref type="lawCode" target="law:H">H</ref></dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/17817">hád-notu</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E15489">hād-notu</ref></xr>
         <xr type="lawCode"><ref target="clause:Gethyn_7">Geþyncðo 7</ref></xr>
       </entry>
     </body>

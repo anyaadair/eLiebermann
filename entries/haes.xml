@@ -28,6 +28,7 @@
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
       <change when="2026-11-01">Abbreviations “unfl.” and “Für” linked to the abbreviations list.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E14668; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -41,6 +42,7 @@
         <xr type="derivative"><ref target="entry:uthes">uthes</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/17950">hǽs</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/51560">hǽs (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E14668">hǣs</ref></xr>
         <xr type="lawCode"><ref target="clause:Wi_9">Wi 9</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_3-2">Ine 3,2</ref></xr>
         <xr type="lawCode"><ref target="law:Ine">Ine 3,3</ref></xr>

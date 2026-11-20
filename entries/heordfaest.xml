@@ -28,6 +28,7 @@
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
       <change when="2026-10-17">“In Cn” and “In” (Instituta Cnuti) linked to the law codes list.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E13081; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -39,6 +40,7 @@
         <dictScrap type="liebermann"><hi rend="bold">heorðfæst</hi> <hi rend="italic">hausangesessen</hi> <ref type="lawCode" target="law:IICn">II Cn</ref> 20a (<hi rend="italic"><ref type="abbreviation" target="gram:mit"><abbr>mit</abbr></ref> <ref type="abbreviation" target="gram:Gegensatz"><abbr>Ggs.</abbr></ref></hi> folgere); ~fast <ref type="lawCode" target="law:Quadr">Q</ref>; <hi rend="italic"><ref type="abbreviation" target="gram:dafur"><abbr>dafür</abbr></ref></hi> husf~ <ref type="lawCode" target="law:InCn">In</ref>; hurðefest <ref type="lawCode" target="law:Hn">Hn</ref> 8,1 [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>.</hi> <ref type="entry" target="entry:hamfaest">hamfæst</ref>, hamsittend]</dictScrap>
         <xr type="compare"><ref target="entry:hamfaest">hamfæst</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/18815">heorþ-fæst</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E13081">heorþ-fæst</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_20a">II Cn 20a</ref></xr>
         <xr type="lawCode"><ref target="clause:Hn_8-1">Hn 8,1</ref></xr>
       </entry>

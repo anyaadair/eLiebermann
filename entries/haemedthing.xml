@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E15444; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,7 @@
           <orth>hæmedþing</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">hæmedþing</hi> <hi rend="italic">Unzüchtigkeit, Buhlerei; <ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>:</hi> ~ge <ref type="lawCode" target="law:Af">Af</ref> 18 | <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>:</hi> ~ <hi rend="italic">Beischlaf</hi> <ref type="lawCode" target="law:VAtr">V Atr</ref> 9 = <ref type="lawCode" target="law:VIAtr">VI</ref> 5,1 = ~ge <ref type="lawCode" target="law:ICn">I Cn</ref> 6,2 | <hi rend="italic"><ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref> <ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>:</hi> ~gum <hi rend="italic">Hurereien</hi> <ref type="lawCode" target="law:Af">Af</ref> 10 <ref type="lawCode" target="law:B">B</ref></dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E15444">hǣmed-þing</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_18">Af 18</ref></xr>
         <xr type="lawCode"><ref target="clause:VAtr_9">V Atr 9</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAtr_5-1">VI Atr 5,1</ref></xr>

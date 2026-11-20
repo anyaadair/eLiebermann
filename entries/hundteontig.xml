@@ -28,6 +28,7 @@
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
       <change when="2026-11-09">Iud Dei VII cited with MS A linked to the Old English text (A), not the Latin.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E17146; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -40,6 +41,7 @@
         <xr type="compare"><ref target="entry:hundtwentig">hundtwentig</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/19948">hund-teóntig</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/53371">hund-teóntig (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E17146">hundtēontig</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_70-1">Ine 70,1</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_18-2">Af 18,2</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiVII_23-2A">Iud Dei VII 23,2</ref></xr>

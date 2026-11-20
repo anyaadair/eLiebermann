@@ -31,6 +31,7 @@
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
       <change when="2026-11-01">Abbreviations “unfl.” and “Für” linked to the abbreviations list.</change>
       <change when="2026-11-09">Iud Dei VII cited with MS A linked to the Old English text (A), not the Latin.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E17165; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -49,6 +50,7 @@
         <xr type="derivative"><ref target="entry:lochwa">lochwa</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/20033">hwá</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/53444">hwá (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E17165">hwā</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_El-to-28">Af El 28</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_53-1">Ine 53,1</ref></xr>
         <xr type="lawCode"><ref target="clause:IIEw_1-1">II Ew 1,1</ref></xr>

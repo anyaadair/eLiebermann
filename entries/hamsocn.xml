@@ -30,6 +30,7 @@
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
       <change when="2026-10-17">“In Cn” and “In” (Instituta Cnuti) linked to the law codes list.</change>
       <change when="2026-10-17">“statt”, “regiert (von)”, “unsyntakt.” and the Accusativ terms linked to the abbreviations list.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E15346; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -46,6 +47,7 @@
         <xr type="see"><ref target="entry:hamfare">hamfare</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/18097">hám-sócn</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/51695">hám-sócn (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E15346">hām-sōcn</ref></xr>
         <xr type="lawCode"><ref target="clause:InCn_III-58-1">In Cn III 58,1</ref></xr>
         <xr type="lawCode"><ref target="clause:IIEm_6">II Em 6</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_62">II Cn 62</ref></xr>

@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E14691; guessed from the DOE headword list, spelling variant (i/y/ie, double letters, -ian/-an); not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,7 @@
           <orth>hl[i]ehhan</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">hl[i]ehhan</hi>; <hi rend="italic"><ref type="abbreviation" target="gram:Particip"><abbr>pc</abbr></ref> <ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref>:</hi> hlehhende ⁊ wepende <hi rend="italic">lachend und weinend</hi> <ref type="lawCode" target="law:ExcomVII">Excom VII</ref> 11</dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E14691">hlyhhan</ref></xr>
         <xr type="lawCode"><ref target="clause:ExcomVII_11">Excom VII 11</ref></xr>
       </entry>
     </body>

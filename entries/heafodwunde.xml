@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E14487; guessed from the DOE headword list, same as the Bosworth-Toller headword; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -37,6 +38,7 @@
         <dictScrap type="liebermann"><hi rend="bold">heafodwunde</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>, Verwundung des Kopfes</hi> <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:Rb">Rb</ref> 44. <ref type="lawCode" target="law:Af">Af</ref> 44</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/18302">heáfod-wund</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/51876">heáfod-wund (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E14487">hēafod-wund</ref></xr>
         <xr type="lawCode"><ref target="clause:Rubrics-Af_44">Af Rb 44</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_44">Af 44</ref></xr>
       </entry>
