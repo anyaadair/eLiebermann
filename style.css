@@ -1452,5 +1452,7 @@ ruby.gloss-pair rt.gloss-word { font-size: 0.68em; line-height: 1.1; color: #4a4
 .gl-lieb .lb-notes li { margin: 0 0 0.15rem; }
 .gl-lieb .lb-n { color: var(--muted); }
 .lb-spaced { letter-spacing: 0.12em; }
+/* Liebermann's spaced type (Sperrdruck) is German emphasis; in the English cribs it is shown as English emphasis, in bold, as in the forewords */
+.gl-lieb .lb-en .spaced, .gl-lieb .lb-en .lb-spaced, .lnotes__en .spaced { letter-spacing: normal; font-weight: 600; }
 .lb-smallcaps { font-variant: small-caps; }
 .gl-later { margin-top: 0.4rem; }
