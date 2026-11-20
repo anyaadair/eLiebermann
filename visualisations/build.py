@@ -345,6 +345,8 @@ def chains():
 def date_range(text):
     """Years in a free-text date, as (low, high, likely, open_start, open_end)."""
     t = text.replace('×', '–')
+    # page references ("Liebermann, I p. 529") are not years
+    t = re.sub(r'\bpp?\.\s*\d+(?:\s*[–-]\s*\d+)?', '', t)
     years = []
     likely = []
     for m in re.finditer(r'(\d{3,4})(s?)(?:\s*[–-]\s*(?:c\.\s*)?(\d{1,4}))?', t):
