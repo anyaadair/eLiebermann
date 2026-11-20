@@ -385,18 +385,23 @@ scripts:
     // In the English, "His" (Rudolf His) is far more often the pronoun, so it is linked in the German only.
     // The English list is made once: linkAbbreviations() keeps the terms it builds from a list, so
     // a new copy for every note would build them again each time.
-    let worksEnglish = null;
+    // The law codes he cites ("Grið 7", "II Cn 73, 2", "Gl Ehe 5") get the popup of the list of law codes
+    // too, but only before a clause number: "Had", "Ine" and "Abt" are also ordinary words.
+    let worksEnglish = null, lawsInNotes = null;
     function linkWorks(p, english) {
         if (!bibliography.length || !window.ELieb || !window.ELieb.linkAbbreviations) return;
         const works = english ? (worksEnglish || (worksEnglish = bibliography.filter(w => w['Gesetze Text'] !== 'His'))) : bibliography;
-        p.innerHTML = window.ELieb.linkAbbreviations(p.innerHTML, [], [], works);
+        if (!lawsInNotes) lawsInNotes = (lawAbbrevs || []).filter(r => r['Link automatically'] !== 'no')
+            .map(r => Object.assign({}, r, { 'Link automatically': r['Link automatically'] || 'before a number' }));
+        p.innerHTML = window.ELieb.linkAbbreviations(p.innerHTML, lawsInNotes, [], works);
     }
     // The letters in Liebermann's italic in his notes (sigla of manuscripts and editions: Sc Hg, Wi, Edd.), from
     // this law's list in data/note-sigla.json: each says what it is when pointed at, and links to the guide.
     let noteSigla = {};
     function linkNoteSigla(p) {
-        const map = noteSigla[id.split('_')[0]];
-        if (!map) return;
+        // (the "_all" list, Liebermann's own short references such as Gl and Wb, is used for every law)
+        const map = Object.assign({}, noteSigla._all, noteSigla[id.split('_')[0]]);
+        if (!Object.keys(map).length) return;
         const keys = Object.keys(map).sort((a, b) => b.length - a.length);
         // (sigla run together, "WiTho", "KOr", are each marked)
         const alt = keys.map(k => k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|');
@@ -571,6 +576,7 @@ scripts:
     // Manuscript sigla link to the Manuscripts list (msAbb.html), or, for the Quadripartitus and the
     // other Latin versions, to the list of law codes (lawAbb.html).
     let siglumIndex = null;
+    let lawAbbrevs = [];
     let bibliography = [];    // authors and works Liebermann cites (data/bibliography.json), linked in his notes
     let clauseOrder = {};     // Liebermann's printed order and the notes on it (data/clause-order.json)
     let redirects = {};      // entries that only point to where Liebermann prints a passage in full (data/redirects.json)
@@ -587,6 +593,7 @@ scripts:
             clauseOrder = order && !Array.isArray(order) ? order : {};
             incnElsewhere = incn && !Array.isArray(incn) ? incn : {};
             bibliography = bib || [];
+            lawAbbrevs = law || [];
             relTerms = terms && !Array.isArray(terms) ? terms : {};
             siglumIndex = {};
             law.forEach(r => { if (r['Gesetze Text']) siglumIndex[sigKey(r['Gesetze Text'])] = 'lawAbb.html#' + encodeURIComponent(r.Anchor); });
@@ -895,7 +902,12 @@ scripts:
                 parts.forEach((x, k) => {
                     if (k) p.appendChild(document.createTextNode('; '));
                     x.refs.forEach((r, m) => { if (m) p.appendChild(document.createTextNode(', ')); p.appendChild(r); });
-                    if (x.page) p.appendChild(el('span', 'muted', ' (' + (/^liebermann(-notes)?$/.test(id) ? 'Gesetze I, ' : '') + (/^\d+[–-]\d+/.test(x.page) ? 'pp. ' : 'p. ') + x.page + ')'));
+                    if (x.page) {
+                        // Liebermann's pages are in Gesetze I unless the page says III ("III 15", his commentary)
+                        const vol = /^liebermann(-notes)?$/.test(id) ? (/^III\s/.test(x.page) ? 'III' : 'I') : '';
+                        const pg = x.page.replace(/^III\s+/, '');
+                        p.appendChild(el('span', 'muted', ' (' + (vol ? 'Gesetze ' + vol + ', ' : '') + (/^\d+[–-]\d+/.test(pg) ? 'pp. ' : 'p. ') + pg + ')'));
+                    }
                     if (usefulQuote(x.quote)) {
                         p.appendChild(document.createTextNode(' '));
                         p.appendChild(el('span', 'clause-compare__quote', '“' + x.quote + '”'));

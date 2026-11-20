@@ -1,5 +1,18 @@
 {
-  "_about": "The letters and short names in Liebermann's notes, law by law: what each stands for there, shown when the reader points at it and linked to the Manuscripts guide or the Works cited. The same letters can mean different things in different laws (in Henry I's laws Wi is Wilkins's edition; elsewhere Wi is a Worcester manuscript), so each law has its own list. Only letters in Liebermann's italic are looked at, where he prints his sigla. law.html applies it to the notes of the clauses whose id begins with the key (Hn_...).",
+  "_about": "The letters and short names in Liebermann's notes, law by law: what each stands for there, shown when the reader points at it and linked to the Manuscripts guide or the Works cited. The same letters can mean different things in different laws (in Henry I's laws Wi is Wilkins's edition; elsewhere Wi is a Worcester manuscript), so each law has its own list. Only letters in Liebermann's italic are looked at, where he prints his sigla. law.html applies it to the notes of the clauses whose id begins with the key (Hn_...). The list \"_all\" holds the short references in Liebermann’s italic that mean the same in every law (Gl, Wb, o., u.).",
+  "_all": {
+    "Gl": { "href": "lawAbb.html#Gl", "title": "Gl: Liebermann’s legal and subject glossary (Gesetze II.2), cited by heading and section; “s. d. Gl 3” is section 3 of the glossary article on the word just named" },
+    "Wb": { "href": "lawAbb.html#Wb", "title": "Wb: Liebermann’s dictionary (Gesetze II.1), cited by headword and section; “s. d. Wb 3” is section 3 of the dictionary entry for the word just named" },
+    "s. d.": { "title": "s. d. = siehe dort: see under that word (in the glossary or dictionary)" },
+    "o.": { "title": "o. = oben: above, an earlier clause of this law (“o. 54”, with a note number as “o. 5¹”) or, with a volume and page, an earlier page of the Gesetze (“o. I 3”)" },
+    "u.": { "title": "u. = unten: below, a later clause of this law (“u. 27”)" },
+    "ebd.": { "title": "ebd. = ebenda: in the same place, the work or passage just cited" },
+    "Ebd.": { "title": "Ebd. = ebenda: in the same place, the work or passage just cited" },
+    "Suppl.": { "href": "bibAbb.html#CitTollerASD", "title": "Suppl.: Toller’s Supplement to Bosworth–Toller, An Anglo-Saxon Dictionary (1908–21)" },
+    "bessere": { "title": "bessere = correct (Liebermann corrects his own earlier text or translation)" },
+    "auf Rasur": { "title": "auf Rasur = written over an erasure in the manuscript" },
+    "übergeschr.": { "title": "übergeschr. = übergeschrieben: written above the line in the manuscript" }
+  },
   "Hn": {
     "Sc": { "href": "msAbb.html#Sc", "title": "Manuscript Sc: London, The National Archives, E 164/2 (the Red Book of the Exchequer)" },
     "Hg": { "href": "msAbb.html#Hg", "title": "Manuscript Hg: London, British Library, Hargrave MS 313" },

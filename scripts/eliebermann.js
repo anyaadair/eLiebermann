@@ -245,8 +245,11 @@
         const terms = [];
         // Sigla marked "Link automatically": "no" (single letters such as L or S, and sigla spelled like a
         // law code, e.g. Wi) are linked by hand only: in running text they are mostly something else.
+        // "before a number" (law codes in Liebermann's notes, Erkl.) is linked only when a clause or page
+        // number follows ("Grið 7", "Wi Pro 3"); "before a number or word" (Gl) also before a heading ("Gl Ehe 5").
         (markLaw || []).filter(t => t['Link automatically'] !== 'no')
-            .forEach(t => terms.push({ text: t['Gesetze Text'].trim(), anchor: t['Anchor'], type: 'law' }));
+            .forEach(t => terms.push({ text: t['Gesetze Text'].trim(), anchor: t['Anchor'], type: 'law',
+                next: { 'before a number': 'number', 'before a number or word': 'word' }[t['Link automatically']] || '' }));
         // "Link automatically": "roman only" (the sic mark "!") is not linked in
         // Liebermann's German, where "!" is an ordinary exclamation mark.
         // "Link automatically": "no" (von, which is mostly ordinary German) is linked by hand only.
@@ -273,17 +276,18 @@
         // What may follow a "before a number" term: a page ("p.", "S."), charter ("n.") or volume
         // (I–XX, with ² ³ for an edition) and then the number, roman (lxiv) or arabic.
         const NUMBER_NEXT = '(?=,?\\s+(?:(?:p|pp|S|n|nr|col)\\.\\s*)?(?:[IVX]{1,5}[²³]?,?\\s+)?(?:\\d|[ivxlc]+\\b))';
+        const LAW_NEXT = { number: '(?=\\.?,?\\s+(?:(?:Pro|Rb|El|Inscr|Prol)\\.?\\s+)?\\d)', word: '(?=\\.?\\s+(?:\\d|\\p{Lu}))' };
         const makeRegex = list => {
             if (!list.length) return null;
             const runs = [];
             list.forEach(t => {
                 const body = t.text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/\s+/g, '\\s+');
-                const before = /^[\p{L}\p{N}]/u.test(t.text), after = /[\p{L}\p{N}]$/u.test(t.text);
+                const before = /^[\p{L}\p{N}]/u.test(t.text), after = /[\p{L}\p{N}]$/u.test(t.text), next = t.next || '';
                 const last = runs[runs.length - 1];
-                if (last && last.before === before && last.after === after) last.bodies.push(body);
-                else runs.push({ before, after, bodies: [body] });
+                if (last && last.before === before && last.after === after && last.next === next) last.bodies.push(body);
+                else runs.push({ before, after, next, bodies: [body] });
             });
-            return new RegExp('(' + runs.map(r => (r.before ? BEFORE : '') + '(?:' + r.bodies.join('|') + ')' + (r.after ? AFTER : '')).join('|') + ')', 'gu');
+            return new RegExp('(' + runs.map(r => (r.before ? BEFORE : '') + '(?:' + r.bodies.join('|') + ')' + (r.after ? AFTER : '') + (r.next ? LAW_NEXT[r.next] : '')).join('|') + ')', 'gu');
         };
         // Law codes and manuscript sigla are printed in roman type; italic is
         // Liebermann's German, where "Abt" means abbot, not Æthelberht.
