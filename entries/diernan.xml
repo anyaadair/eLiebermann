@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E06526; guessed from the DOE headword list, spelling variant (i/y/ie, double letters, -ian/-an); not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -41,6 +42,7 @@
         </dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/8223">dyrnan</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/42812">dirnan</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E06526">dyrnan</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_21-1">Ine 21,1</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_35">Ine 35</ref></xr>
       </entry>

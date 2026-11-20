@@ -1,5 +1,27 @@
 {
-  "_about": "Matches the editor should always decide: grade forced to unsure, with extra DOE entries offered. Read by match.py.",
-  "ciricthen": {"note": "BT link cyric-tún led to cyric-tūn; ciricþen is a church servant", "add": ["E05462"]},
-  "cotan": {"note": "cote: cott or cȳte", "add": ["E05064"]}
+  "_about": "Matches the editor should always decide: grade forced to unsure, with extra DOE entries offered (add); or entries never to link (skip). Read by match.py.",
+  "ciricthen": {
+    "note": "BT link cyric-tún led to cyric-tūn; ciricþen is a church servant",
+    "add": [
+      "E05462"
+    ]
+  },
+  "cotan": {
+    "note": "cote: cott or cȳte",
+    "add": [
+      "E05064"
+    ]
+  },
+  "del": {
+    "note": "= de + li: French, not Old English",
+    "skip": true
+  },
+  "d-y-nge": {
+    "note": "Dung (noun): dung or dyncge, not the verb dyngan",
+    "add": [
+      "E06407",
+      "E06406",
+      "E06463"
+    ]
+  }
 }

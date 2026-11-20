@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E05836; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,7 @@
           <orth>deaf</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">deaf</hi> <hi rend="italic">taub</hi> <ref type="lawCode" target="law:Af">Af</ref> 14</dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E05836">dēaf</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_14">Af 14</ref></xr>
       </entry>
     </body>

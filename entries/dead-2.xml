@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E05818; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -43,6 +44,7 @@
         </dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/7471">deáþ</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/42624">deáþ (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E05818">dēaþ</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_7">Af 7</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_27">Ine 27</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_5">Ine 5</ref></xr>

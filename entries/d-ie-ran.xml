@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E06518; guessed from the DOE headword list, spelling variant (i/y/ie, double letters, -ian/-an); not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
           <orth>d[ie]ran</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">d[ie]ran</hi>; <hi rend="italic"><ref type="abbreviation" target="gram:Optativ"><abbr>op</abbr></ref></hi> 3: dyre <hi rend="italic">hochbewerte</hi> <ref type="lawCode" target="law:NorGrith">Nor grið</ref> <hi rend="italic"><ref type="abbreviation" target="gram:Zeile"><abbr>Z.</abbr></ref></hi> 8</dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E06518">dȳran</ref></xr>
         <xr type="lawCode"><ref target="clause:NorGrith_8">Nor grið Z. 8</ref></xr>
       </entry>
     </body>

@@ -158,6 +158,12 @@ for path in sorted(glob.glob(os.path.join(ENTRIES, '*.xml'))):
     if not any(in_span(k) for k in keys):
         continue
     is_xref = 'type="xref"' in xml
+    # An entry that only points elsewhere ("dyde s. I) diedan II) don") is a
+    # cross-reference too, even when not marked as one: no links (Anya, Nov 2026).
+    _b = re.search(r'<entry[^>]*>(.*?)</entry>', xml, re.S)
+    _b = text(re.sub(r'<(orth)\b.*?</\1>', ' ', _b.group(1), flags=re.S)) if _b else ''
+    if re.match(r'(\S+\s+)?s\.\s', _b) or OVERRIDES.get(os.path.basename(path)[:-4], {}).get('skip'):
+        continue
     has = re.findall(r'type="doe"><ref target="[^"]*\?(E\d+)"', xml)
     bt = [re.sub(r'\s*\(Supplement\)', '', text(t)) for t in
           re.findall(r'type="bosworthToller"><ref[^>]*>(.*?)</ref>', xml, re.S)]
