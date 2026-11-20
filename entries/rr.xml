@@ -27,6 +27,7 @@
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Marked as a spelling entry.</change>
       <change when="2026-10-17">“statt”, “regiert (von)”, “unsyntakt.” and the Accusativ terms linked to the abbreviations list.</change>
+      <change when="2026-11-20">Corrections from website suggestions by MD (#51–#63): links, cross-references, abbreviation links.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,8 +37,10 @@
           <orth>rr</orth>
         </form>
         <usg type="dom">spelling</usg>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">rr</hi> <hi rend="italic"><ref type="abbreviation" target="gram:statt"><abbr>statt</abbr></ref></hi> r: <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> parrochia, <ref type="entry" target="entry:turribulum">turribulum</ref>, werra <hi rend="italic"><ref type="abbreviation" target="gram:unter"><abbr>unter</abbr></ref></hi> <ref type="entry" target="entry:wer-2">wer</ref>(lad)</dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">rr</hi> <hi rend="italic"><ref type="abbreviation" target="gram:statt"><abbr>statt</abbr></ref></hi> r: <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:parochia">parrochia</ref>, <ref type="entry" target="entry:turribulum">turribulum</ref>, <ref type="entry" target="entry:werra">werra</ref> <hi rend="italic"><ref type="abbreviation" target="gram:unter"><abbr>unter</abbr></ref></hi> wer(lad)</dictScrap>
+        <xr type="see"><ref target="entry:parochia">parochia</ref></xr>
         <xr type="see"><ref target="entry:turribulum">turribulum</ref></xr>
+        <xr type="see"><ref target="entry:werra">werra</ref></xr>
         <xr type="see"><ref target="entry:wer-2">wer</ref></xr>
       </entry>
     </body>
