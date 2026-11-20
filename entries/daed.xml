@@ -29,6 +29,7 @@
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
       <change when="2026-10-17">Liebermann’s numbered sections joined into one entry, as in the print: the files daed-2 (later sections) are now part of this entry.</change>
       <change when="2026-10-19">“gn”, “pl” linked to the abbreviations list (printed bold italic, missed before).</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E05724; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -46,6 +47,7 @@
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/7309">dǽd</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/42516">dǽd (Supplement)</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/8176">dyd</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E05724">dǣd</ref></xr>
         <xr type="see"><ref target="entry:dead">dead</ref></xr>
         <xr type="derivative"><ref target="entry:misdaed">misdæd</ref></xr>
         <xr type="lawCode"><ref target="clause:EGu_2">EGu 2</ref></xr>

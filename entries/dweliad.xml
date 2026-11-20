@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E06448; guessed from the DOE headword list, verb form (-að/-eð → -an/-ian …); not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,7 @@
           <orth>dweliað</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">dweliað</hi> on, <hi rend="italic"><ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref></hi> 3, <hi rend="italic">fehlgehen am</hi> (<hi rend="italic">Verkünden der Wahrheit</hi>) <ref type="lawCode" target="law:Iudex">Iudex</ref> 16</dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E06448">dwelian</ref></xr>
         <xr type="lawCode"><ref target="clause:Iudex_16">Iudex 16</ref></xr>
       </entry>
     </body>

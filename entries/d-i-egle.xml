@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E06048; guessed from the DOE headword list, spelling variant (i/y/ie, double letters, -ian/-an); not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,7 @@
           <orth>d[i]egle</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">d[i]egle</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:neutrum"><abbr>nt</abbr></ref>, dunkel, verborgen;</hi> degle <ref type="lawCode" target="law:IudDeiV">Iud Dei V</ref> 2,4</dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E06048">dīgle</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiV_2-4">Iud Dei V 2,4</ref></xr>
       </entry>
     </body>
