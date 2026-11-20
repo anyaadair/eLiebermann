@@ -58,8 +58,9 @@
       <div type="clause" n="31.6">
         <head><ref type="lawCode" target="law:Hn">Hn</ref> 31.6</head>
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="Hn 31.6" corresp="#wit-lat"><pb n="564" ed="#liebermann"/>Si<ptr type="liebermannNote" n="i" target="#Hn_31-6.lnote.oe.i"/> quis iudices suspectos habeat, aduocet aut contradicat.</ab>
+        <note type="comparison" source="#liebermann-notes" n="564"><label>repeats</label> <ref target="clause:Hn_5-3a">Hn 5.3a</ref> <quote>repeated from 5, 3a; cf. 33, 2</quote></note>
         <note type="editorial">New row (October 2026): Liebermann’s text transcribed from Gesetze I p. 564 (two independent readings of the page images, differences settled against the page)</note>
-        <note type="liebermannNote" subtype="textual" xml:id="Hn_31-6.lnote.oe.i" n="i" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">564</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">wiederholt aus</hi> 5, 3<hi rend="italic">a</hi>; <hi rend="italic">vgl.</hi> 33, 2</seg><seg type="translation" xml:lang="en" source="#claude">repeated from 5, 3<hi rend="italic">a</hi>; cf. 33, 2</seg></note>
+        <note type="liebermannNote" subtype="textual" xml:id="Hn_31-6.lnote.oe.i" n="i" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">564</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">wiederholt aus</hi> <ref target="clause:Hn_5-3a">5, 3</ref><hi rend="italic">a</hi>; <hi rend="italic">vgl.</hi> <ref target="clause:Hn_33-2">33, 2</ref></seg><seg type="translation" xml:lang="en" source="#claude">repeated from <ref target="clause:Hn_5-3a">5, 3</ref><hi rend="italic">a</hi>; cf. <ref target="clause:Hn_33-2">33, 2</ref></seg></note>
         <ab type="translation" xml:lang="en" source="#claude-crib" ana="#fromLatin" corresp="#wit-lat">If anyone holds the judges suspect, let him appeal or object.</ab>
       </div>
     </body>
