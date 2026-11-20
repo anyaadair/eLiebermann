@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E11730; guessed from the DOE headword list, spelling variant (i/y/ie, double letters, -ian/-an); not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,7 @@
           <orth>frumci[e]rr</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">frumci[e]rr</hi>; <hi rend="italic"><ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>:</hi> æt ~cirre <hi rend="italic">beim ersten Male</hi> <ref type="lawCode" target="law:IIAs">II As</ref> 25,2; ~cyrre 3,1</dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E11730">frum-cyrr</ref></xr>
         <xr type="lawCode"><ref target="clause:IIAs_25-2">II As 25,2</ref></xr>
         <xr type="lawCode"><ref target="clause:IIAs_3-1">II As 3,1</ref></xr>
       </entry>

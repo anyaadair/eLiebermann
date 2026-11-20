@@ -28,6 +28,7 @@
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
       <change when="2026-10-28">“von” unlinked from the abbreviations list: here it is ordinary German, not an abbreviation (Anya Adair).</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E08997; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -39,6 +40,7 @@
         <dictScrap type="liebermann"><hi rend="bold">fyrmest</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:superlativus"><abbr>spla</abbr></ref> <ref type="abbreviation" target="gram:adverb"><abbr>adv</abbr></ref>, zuvörderst</hi> <ref type="lawCode" target="law:VIAtr">VI Atr</ref> 40. <ref type="lawCode" target="law:IICn">II Cn</ref> 11 | <hi rend="italic">von Anfang an</hi> <ref type="lawCode" target="law:Swer">Swer</ref> 11 | <hi rend="italic"><ref type="abbreviation" target="gram:zumeist"><abbr>zumeist</abbr></ref></hi> <ref type="lawCode" target="law:XAtr">X Atr</ref> Pro | <hi rend="italic">bestens</hi> <ref type="lawCode" target="law:IIIAtr">III</ref> 1</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/12985">fyrmest</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/46759">fyrmest (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E08997">fyrmest</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAtr_40">VI Atr 40</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_11">II Cn 11</ref></xr>
         <xr type="lawCode"><ref target="clause:Swer_11">Swer 11</ref></xr>

@@ -28,6 +28,7 @@
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E10619; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -42,6 +43,7 @@
         <xr type="derivative"><ref target="entry:beforan">beforan</ref></xr>
         <xr type="derivative"><ref target="entry:onforan">onforan</ref></xr>
         <xr type="derivative"><ref target="entry:toforan">toforan</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E10619">foran</ref></xr>
         <xr type="lawCode"><ref target="clause:IIAs_1-5">II As 1,5</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAs_8-2">VI As 8,2</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_33-1a">II Cn 33,1a</ref></xr>

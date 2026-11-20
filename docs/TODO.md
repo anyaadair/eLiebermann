@@ -17,6 +17,14 @@ About 340 works that Liebermann cites in his notes to the laws were added to [Au
 
 - [ ] **Go through the list in [CITATIONS-TO-CHECK.md](CITATIONS-TO-CHECK.md).** To find it: on GitHub, open the repository, then the `docs` folder, then `CITATIONS-TO-CHECK.md` (it is next to this file). It has three parts: (1) three questions to check against the scan, (2) works not identified or with no library record, (3) works with one detail to check. Each item links to its entry on the site and to clauses where Liebermann cites it. On the site, the same doubts are in each entry's Note, marked *to check*. When you settle one, tell Claude what you found, and it will correct the entry and tick the box.
 
+## Bosworth–Toller links that are probably wrong
+
+Found while matching headwords to the *Dictionary of Old English* (November 2026): in each case the Bosworth–Toller link led the matching to the wrong DOE word, which suggests the Bosworth–Toller link is wrong too. Check each against Bosworth–Toller and correct or remove it.
+
+- [ ] **[ciricþen](https://anyaadair.github.io/eLiebermann/entry.html?id=ciricthen)**: one of its links is to *cyric-tún* ("churchyard"). Liebermann's word is a church servant: *cyric-þegn*.
+- [ ] **[æðel](https://anyaadair.github.io/eLiebermann/entry.html?id=aedel)**: it links to *éðel* ("homeland") as well as *ǽðel*. Liebermann glosses it "adlig, edel" ("noble"), so *éðel* is probably wrong.
+- [ ] **[fanna](https://anyaadair.github.io/eLiebermann/entry.html?id=fanna)**: it links to *fana* ("banner"). Liebermann's word is a winnowing fan ("Futterschwinge"): Bosworth–Toller *fann*.
+
 ## English crib of the texts with no translation
 
 About 3,170 clauses had no translation at all, nearly all Latin. An English crib, made with an LLM (Claude, 2026) and labelled so on the clause pages, has been added to all of them (November 2026, pull requests #169–173) with `tools/add-crib.py`, following `tools/crib/BRIEF.md` (texts extracted with `tools/crib/extract.py`).

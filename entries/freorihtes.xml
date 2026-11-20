@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E11804; guessed from the DOE headword list, same as the Bosworth-Toller headword; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -37,6 +38,7 @@
         <dictScrap type="liebermann"><hi rend="bold">freorihtes</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Genitiv"><abbr>gn</abbr></ref>, Freienrechtes, Berechtigung des Staatsbürgers</hi> <ref type="lawCode" target="law:IICn">II Cn</ref> 20</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/12335">freó-riht</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/46433">freó-riht (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E11804">frēo-riht</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_20">II Cn 20</ref></xr>
       </entry>
     </body>

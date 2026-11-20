@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E09103; guessed from the DOE headword list, same as the Bosworth-Toller headword; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">folclage</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>, bürgerliche Satzung</hi> [<hi rend="italic"><ref type="abbreviation" target="gram:imGegensatzZu"><abbr>im Ggs. zu</abbr></ref></hi> Godes lage <hi rend="italic">Kirchenrecht</hi>] <ref type="lawCode" target="law:Northu">Northu</ref> 46</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/11105">folc-lagu</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E09103">folc-lagu</ref></xr>
         <xr type="lawCode"><ref target="clause:Northu_46">Northu 46</ref></xr>
       </entry>
     </body>

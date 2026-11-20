@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E09865; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -39,6 +40,7 @@
           <sense n="1">healf onweg ~ <hi rend="italic">halb abfliege</hi> (<hi rend="italic">abgeschlagene Hand</hi>) <ref type="lawCode" target="law:Af">Af</ref> 69,1</sense>
           <sense n="2"><hi rend="italic">entfliehe</hi> <ref type="lawCode" target="law:VIAs">VI As</ref> 12,1</sense>
         </dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E09865">flēoge</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_69-1">Af 69,1</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAs_12-1">VI As 12,1</ref></xr>
       </entry>

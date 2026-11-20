@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E11744; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">frumræd</hi> <hi rend="italic">vornehmste, hauptsächliche Verordnung</hi> <ref type="lawCode" target="law:VIAtr">VI Atr</ref> 1</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/12546">frum-rǽd</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E11744">frum-rǣd</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAtr_1">VI Atr 1</ref></xr>
       </entry>
     </body>

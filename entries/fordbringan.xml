@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-18">Abbreviations and law code (Norðleod) linked; see the pull request “þæt: indecl., Einl., Folg., Urkk.-Sprache, Norðleod”.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E09225; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
           <orth>forðbringan</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">forðbringan</hi> (<hi rend="italic">Eid</hi>) <hi rend="italic">zustande bringen</hi> <ref type="lawCode" target="law:Blas">Blas</ref> 3 | (<hi rend="italic">Steuer</hi>) <hi rend="italic">aufbringen</hi> (<hi rend="italic"><ref type="abbreviation" target="gram:anJemand"><abbr>an jem.</abbr></ref>: <ref type="abbreviation" target="gram:Genitiv"><abbr>gn</abbr></ref></hi>) <ref type="lawCode" target="law:Northleoda">Norðleod</ref> 7; gieldan <ref type="lawCode" target="law:Ld">Ld</ref></dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E09225">forþ-bringan</ref></xr>
         <xr type="lawCode"><ref target="clause:Blas_3">Blas 3</ref></xr>
         <xr type="lawCode"><ref target="clause:Northleoda_7">Norðleod 7</ref></xr>
       </entry>

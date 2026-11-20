@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E11937; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
           <orth>freolsbryce</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">freolsbryce</hi> <hi rend="italic">Feiertags-Verletzung; <ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref> <ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>:</hi> ~can <ref type="lawCode" target="law:VAtr">V Atr</ref> 25 <ref type="lawCode" target="law:G">G</ref> = ~ricon <ref type="lawCode" target="law:VIAtr">VI</ref> 28,3</dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E11937">frēols-bryce</ref></xr>
         <xr type="lawCode"><ref target="clause:VAtr_25">V Atr 25</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAtr_28-3">VI Atr 28,3</ref></xr>
       </entry>

@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E09032; guessed from the DOE headword list, same as the Bosworth-Toller headword; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -41,6 +42,7 @@
         </dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/11153">folgoþ</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/11149">folgaþ</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E09032">folgoþ</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAs_11">VI As 11</ref></xr>
         <xr type="lawCode"><ref target="clause:Ger_7">Ger 7</ref></xr>
         <xr type="lawCode"><ref target="clause:IIAs_25-1">II As 25,1</ref></xr>

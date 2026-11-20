@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E11283; guessed from the DOE headword list, same as the Bosworth-Toller headword; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -40,6 +41,7 @@
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/46174">for-wyrd (Supplement)</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/62346">for-wyrd (Supplement)</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/10001">fǽr-wyrd</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E11283">for-wyrd</ref></xr>
         <xr type="lawCode"><ref target="clause:IVEg_1-5a">IV Eg 1,5a</ref></xr>
       </entry>
     </body>

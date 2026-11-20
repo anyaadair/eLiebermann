@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E11761; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">frumstol</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>, Hauptsitz, Stammgut</hi> <ref type="lawCode" target="law:Ine">Ine</ref> 38</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/12560">frum-stól</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E11761">frum-stōl</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_38">Ine 38</ref></xr>
       </entry>
     </body>

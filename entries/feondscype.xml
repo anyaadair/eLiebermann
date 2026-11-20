@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E08893; guessed from the DOE headword list, spelling variant (i/y/ie, double letters, -ian/-an); not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -37,6 +38,7 @@
         <dictScrap type="liebermann"><hi rend="bold">feondscype</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref></hi>, <hi rend="italic">Feindschaft, Fehde[last], Zustand des in Blutrache Verfolgten;</hi> on anum freondscype swa ~ <ref type="lawCode" target="law:VIAs">VI As</ref> 7</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/10374">feónd-scipe</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/44752">feónd-scipe (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E08893">fēondscipe</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAs_7">VI As 7</ref></xr>
       </entry>
     </body>

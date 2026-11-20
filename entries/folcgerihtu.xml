@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E09120; guessed from the DOE headword list, same as the Bosworth-Toller headword; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">folcgerihtu</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref>, Gerechtsame der Gemeinen</hi> (<hi rend="italic">Leistungen der adligen Gutsherrschaft an die fronenden Hintersassen</hi>) <ref type="lawCode" target="law:Rect">Rect</ref> 21,4</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/11093">folc-geriht</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E09120">folc-ge·riht</ref></xr>
         <xr type="lawCode"><ref target="clause:Rect_21-4">Rect 21,4</ref></xr>
       </entry>
     </body>

@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E09755; guessed from the DOE headword list, spelling variant (i/y/ie, double letters, -ian/-an); not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -48,6 +49,7 @@
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/62231">feónd (Supplement)</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/10654">fiénd</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/12868">fýnd</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E09755">fēond</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_El-to-42">Af El 42</ref></xr>
         <xr type="lawCode"><ref target="clause:VIIaAtr_Prol">VIIa Atr Pro</ref></xr>
         <xr type="lawCode"><ref target="clause:VIIaAtr_8">VIIa Atr 8</ref></xr>

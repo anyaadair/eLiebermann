@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E09284; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">for[e]fangfeoh</hi> <hi rend="italic">Rettungsgebühr, die der Eigentümer verlorener Fahrhabe ihrem Ergreifer zahlt</hi> <ref type="lawCode" target="law:Forf">Forf</ref> 3,2</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/11440">forfang-feoh</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E09284">forfang-feoh</ref></xr>
         <xr type="lawCode"><ref target="clause:Forf_3-2">Forf 3,2</ref></xr>
       </entry>
     </body>

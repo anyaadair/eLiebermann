@@ -31,6 +31,7 @@
       <change when="2026-10-17">“In Cn” and “In” (Instituta Cnuti) linked to the law codes list.</change>
       <change when="2026-10-17">“statt”, “regiert (von)”, “unsyntakt.” and the Accusativ terms linked to the abbreviations list.</change>
       <change when="2026-11-06">“Cons” (Consiliatio Cnuti) linked to the list of law codes and “neg.” to the abbreviations list, where they were plain text.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E09862; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -47,6 +48,7 @@
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/10891">fleám</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/45176">fleám (Supplement)</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/10850">flǽm</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E09862">flēam</ref></xr>
         <xr type="lawCode"><ref target="clause:ICn_4-2">I Cn 4,2</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_13-2">II Cn 13,2</ref></xr>
       </entry>

@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E10850; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -44,6 +45,7 @@
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/45666">for-faran (Supplement)</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/11445">for-feran</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/45670">for-feran (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E10850">for-faran</ref></xr>
         <xr type="lawCode"><ref target="clause:EGu_11">EGu 11</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAtr_7">VI Atr 7</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_4a">II Cn 4a</ref></xr>

@@ -31,6 +31,7 @@
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
       <change when="2026-10-17">“Vgl.” (vergleiche, compare) linked to the abbreviations list.</change>
       <change when="2026-10-28">“von” unlinked from the abbreviations list: here it is ordinary German, not an abbreviation (Anya Adair).</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E10295; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -51,6 +52,7 @@
         <xr type="see"><ref target="entry:foreg-ie-ldan">foreg[ie]ldan</ref></xr>
         <xr type="see"><ref target="entry:for-2">for (denn)</ref></xr>
         <xr type="see"><ref target="entry:for">for (prp)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E10295">fore</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_El-to-19">Af El 19</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAs_5">VI As 5</ref></xr>
         <xr type="lawCode"><ref target="clause:IIEw_6">II Ew 6</ref></xr>

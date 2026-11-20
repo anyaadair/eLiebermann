@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E08657; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -38,6 +39,7 @@
         <dictScrap type="liebermann"><hi rend="bold">fiscpol</hi> <hi rend="italic">Fischteich, Interpolator von</hi> <ref type="lawCode" target="law:IICn">II Cn</ref> 80,1 <ref type="lawCode" target="law:Quadr">Q</ref>, <hi rend="italic"><ref type="abbreviation" target="gram:Seite"><abbr>S.</abbr></ref></hi> 367*</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/10817">fisc-pól</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/45096">fisc-pól (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E08657">fisc-pōl</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_80-1">II Cn 80,1</ref></xr>
       </entry>
     </body>

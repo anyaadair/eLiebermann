@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E11243; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -44,6 +45,7 @@
         </dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/11569">for-lǽtan</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/62326">for-lǽtan (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E11243">for-lǣtan</ref></xr>
         <xr type="lawCode"><ref target="clause:Wi_5-1">Wi 5,1</ref></xr>
         <xr type="lawCode"><ref target="clause:Rubrics-Ine_36">Ine Rb 36</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAs_5">VI As 5</ref></xr>
