@@ -391,6 +391,43 @@ scripts:
         const works = english ? (worksEnglish || (worksEnglish = bibliography.filter(w => w['Gesetze Text'] !== 'His'))) : bibliography;
         p.innerHTML = window.ELieb.linkAbbreviations(p.innerHTML, [], [], works);
     }
+    // The letters in Liebermann's italic in his notes (sigla of manuscripts and editions: Sc Hg, Wi, Edd.), from
+    // this law's list in data/note-sigla.json: each says what it is when pointed at, and links to the guide.
+    let noteSigla = {};
+    function linkNoteSigla(p) {
+        const map = noteSigla[id.split('_')[0]];
+        if (!map) return;
+        const keys = Object.keys(map).sort((a, b) => b.length - a.length);
+        // (sigla run together, "WiTho", "KOr", are each marked)
+        const alt = keys.map(k => k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|');
+        const re = new RegExp('(?<![\\p{L}])((?:' + alt + ')+)(?![\\p{L}])', 'gu');
+        const one = new RegExp(alt, 'gu');
+        const walker = document.createTreeWalker(p, NodeFilter.SHOW_TEXT);
+        const nodes = [];
+        while (walker.nextNode()) { const t = walker.currentNode; if (t.parentElement.closest('em') && !t.parentElement.closest('a')) nodes.push(t); }
+        nodes.forEach(t => {
+            const text = t.nodeValue;
+            if (!re.test(text)) return;
+            re.lastIndex = 0;
+            const frag = document.createDocumentFragment();
+            let last = 0, m;
+            while ((m = re.exec(text))) {
+                frag.appendChild(document.createTextNode(text.slice(last, m.index)));
+                (m[1].match(one) || []).forEach(k => {
+                    const s = map[k];
+                    const a = document.createElement(s.href ? 'a' : 'abbr');
+                    if (s.href) a.href = s.href;
+                    a.className = 'note-siglum';
+                    a.title = s.title;
+                    a.textContent = k;
+                    frag.appendChild(a);
+                });
+                last = m.index + m[1].length;
+            }
+            frag.appendChild(document.createTextNode(text.slice(last)));
+            t.parentNode.replaceChild(frag, t);
+        });
+    }
     // The notes of one group as a list: number, German as printed, English, where printed, remarks.
     function notesList(notes, group) {
         const box = el('div', 'lnotes small');
@@ -415,8 +452,8 @@ scripts:
             }
             const seg = type => kids.find(k => k.localName === 'seg' && k.getAttribute('type') === type);
             const de = seg('original'), en = seg('translation');
-            if (de) { const p = el('span', 'lnotes__de'); ELieb.setLang(p, de.getAttribute('xml:lang') || 'de'); p.appendChild(inline(de)); linkWorks(p); li.appendChild(p); }
-            if (en) { const p = el('span', 'lnotes__en'); p.lang = 'en'; p.appendChild(inline(en)); linkWorks(p, true); li.appendChild(p); }
+            if (de) { const p = el('span', 'lnotes__de'); ELieb.setLang(p, de.getAttribute('xml:lang') || 'de'); p.appendChild(inline(de)); linkWorks(p); linkNoteSigla(p); li.appendChild(p); }
+            if (en) { const p = el('span', 'lnotes__en'); p.lang = 'en'; p.appendChild(inline(en)); linkWorks(p, true); linkNoteSigla(p); li.appendChild(p); }
             const bibl = kids.find(k => k.localName === 'bibl');
             const where = [];
             if (bibl) {
@@ -544,7 +581,8 @@ scripts:
     const LATIN_VERSION = /^(Q|Lat|In|Inst\.? ?Cn\.?|Cons\.?(?: ?Cn\.?)?)(?![\w])/;
     function loadSigla() {
         const get = f => fetch(root + 'data/' + f).then(r => r.json()).catch(() => []);
-        return Promise.all([get('manuscripts.json'), get('markLaw.json'), get('bibliography.json'), get('comparison-terms.json'), get('clause-order.json'), Wulfstan.load(root), get('incn-elsewhere.json'), get('redirects.json')]).then(([ms, law, bib, terms, order, , incn, redir]) => {
+        return Promise.all([get('manuscripts.json'), get('markLaw.json'), get('bibliography.json'), get('comparison-terms.json'), get('clause-order.json'), Wulfstan.load(root), get('incn-elsewhere.json'), get('redirects.json'), get('note-sigla.json')]).then(([ms, law, bib, terms, order, , incn, redir, nsig]) => {
+            noteSigla = nsig && !Array.isArray(nsig) ? nsig : {};
             redirects = redir && !Array.isArray(redir) ? redir : {};
             clauseOrder = order && !Array.isArray(order) ? order : {};
             incnElsewhere = incn && !Array.isArray(incn) ? incn : {};
