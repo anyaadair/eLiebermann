@@ -728,5 +728,103 @@
     "VI Atr 51": {
       "find": "bocan"
     }
+  },
+  "lade": {
+    "Rect 2": {
+      "find": "\"lade lædan\",lade"
+    },
+    "Rect 21,4": {
+      "find": "terra",
+      "mark": [
+        "cornlade",
+        "wudulade"
+      ]
+    }
+  },
+  "ladian": {
+    "I Cn 5a": {
+      "find": "ladige",
+      "mark": [
+        "geladige"
+      ]
+    },
+    "I Cn 5,2b": {
+      "find": "ladige",
+      "mark": [
+        "geladige"
+      ]
+    },
+    "I Cn 5,2c": {
+      "find": "ladige",
+      "mark": [
+        "geladige"
+      ]
+    },
+    "I Cn 5,2": {
+      "find": "ladige",
+      "mark": [
+        "geladige"
+      ]
+    },
+    "VIII Atr 19,1": {
+      "find": "ladige",
+      "mark": [
+        "geladige"
+      ]
+    },
+    "VIII Atr 20,1": {
+      "find": "ladige",
+      "mark": [
+        "geladige"
+      ]
+    },
+    "VIII Atr 23": {
+      "find": "ladige",
+      "mark": [
+        "geladige"
+      ]
+    },
+    "VIII Atr 24": {
+      "find": "ladige",
+      "mark": [
+        "geladige"
+      ]
+    },
+    "II Cn 39": {
+      "find": "ladige",
+      "mark": [
+        "geladige"
+      ]
+    },
+    "II Cn 47,1": {
+      "find": "ladige",
+      "mark": [
+        "geladige"
+      ]
+    },
+    "V Atr 30": {
+      "find": "ladian,ladige"
+    },
+    "I Atr 1,12": {
+      "find": "ladie"
+    },
+    "II Cn 41,1": {
+      "find": "ladian",
+      "mark": [
+        "ladige",
+        "ladie"
+      ]
+    },
+    "I Cn 4": {
+      "find": "ladian",
+      "mark": [
+        "ladige"
+      ]
+    }
+  },
+  "lad": {
+    "Hn 64,9b": {
+      "find": "lada"
+    }
   }
 }

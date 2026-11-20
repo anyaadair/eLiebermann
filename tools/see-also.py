@@ -214,6 +214,10 @@ def respellings(word):
     if 'j' in word: out.add(word.replace('j', 'i'))
     if 'i' in word: out.add(word.replace('i', 'j'))
     if 'v' in word: out.add(word.replace('v', 'u'))
+    # a doubled consonant written single or the other way round (sibblac / siblac, parrochia / parochia), but not
+    # in a short word that is itself a letter (pp, rr)
+    if len(word) > 3:
+        swaps = swaps + [('bb', 'b'), ('b', 'bb'), ('pp', 'p'), ('ff', 'f'), ('rr', 'r'), ('r', 'rr')]
     for a, b in swaps:
         for m in re.finditer(re.escape(a), word):
             out.add(word[:m.start()] + b + word[m.end():])
