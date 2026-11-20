@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E04688; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">ceorl[lea]s</hi>; ceorlæs <hi rend="italic">gattenlos</hi> <ref type="lawCode" target="law:IICn">II Cn</ref> 73 Insc <ref type="lawCode" target="law:B">B</ref> [<hi rend="italic">im Text älteres</hi> werleas]</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/41583">ceorl-leás</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E04688">ceorl-lēas</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_73">II Cn 73</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_73">II Cn Insc</ref></xr>
       </entry>

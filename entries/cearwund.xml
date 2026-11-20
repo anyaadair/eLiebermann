@@ -27,6 +27,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E04612; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
           <orth>cearwund</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">cearwund</hi> <hi rend="italic">schwer verwundet</hi> <ref type="lawCode" target="law:Abt">Abt</ref> 63 [<hi rend="italic">bettwund</hi> (?); <ref type="bibl" target="bib:CitGrimmKS"><hi rend="italic">Grimm</hi> Kleine Schr. V 319</ref>, <hi rend="italic"><ref type="abbreviation" target="gram:nordisch"><abbr>nord.</abbr></ref></hi> kör <hi rend="italic">Siechbett vergleichend</hi>]</dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E04612">cear-wund</ref></xr>
         <xr type="lawCode"><ref target="clause:Abt_63">Abt 63</ref></xr>
       </entry>
     </body>

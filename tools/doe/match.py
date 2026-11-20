@@ -77,6 +77,12 @@ def noun_guesses(f):
 
 
 # ---------- DOE list ----------
+def doe_order(b):
+    """A sort key in the DOE's alphabet: æ is a letter of its own after a,
+    and þ comes after t (Python would put both after z)."""
+    return b.replace('æ', 'a\x7f').replace('þ', 't\x7f')
+
+
 doe, spans = [], []
 for path in lists:
     rows = []
@@ -90,13 +96,15 @@ for path in lists:
     # The DOE files ge- words under their stem (ge·logen comes last in L), and
     # -lac and the like are word-parts: take the range from the other headwords.
     plain = [h for _, h in rows if not h.startswith(('ge·', '-'))]
-    spans.append((plain[0], plain[-1]))
+    # The C list ends with k and ka (the DOE files K under C): take the range
+    # from the words with the list's own first letter, in the DOE's own order.
+    initial = lambda h: unicodedata.normalize('NFD', h.lower())[:1]
+    same = [h for h in plain if initial(h) == initial(plain[0])]
+    spans.append((same[0], same[-1]))
 
 
-def doe_order(b):
-    """A sort key in the DOE's alphabet: æ is a letter of its own after a,
-    and þ comes after t (Python would put both after z)."""
-    return b.replace('æ', 'a\x7f').replace('þ', 't\x7f')
+OVERRIDES = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'overrides.json'), encoding='utf-8'))
+doe_head = dict(doe)
 
 
 def xform(s):
@@ -201,6 +209,10 @@ for path in sorted(glob.glob(os.path.join(ENTRIES, '*.xml'))):
     # A capitalised headword may be a name (Bocland, the place): the editor decides.
     if grade in ('sure', 'likely') and hw.lstrip('[(').strip()[:1].isupper():
         grade = 'unsure'
+    if eid in OVERRIDES:
+        for x in OVERRIDES[eid].get('add', []):
+            found[x] = doe_head.get(x, x)
+        grade, how = 'unsure', (how + '; ' if how else '') + 'held for the editor (overrides.json)'
     results.append({'id': eid, 'headword': hw, 'xref': is_xref, 'bt': bt, 'existing': has, 'snippet': text(body)[:160],
                     'grade': grade, 'how': how,
                     'candidates': [{'id': k, 'headword': v} for k, v in found.items()]})

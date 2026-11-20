@@ -29,6 +29,7 @@
       <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
       <change when="2026-10-18">Abbreviations and law code (Norðleod) linked; see the pull request “þæt: indecl., Einl., Folg., Urkk.-Sprache, Norðleod”.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E05534; guessed from the DOE headword list, same as the Bosworth-Toller headword; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -47,6 +48,7 @@
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/41746">cirlisc (Supplement)</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/61764">cirlisc (Supplement)</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/7246">cyrlisc</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E05534">ceorlisc</ref></xr>
         <xr type="lawCode"><ref target="clause:Rubrics-Ine_30">Ine Rb 30</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_18">Ine 18</ref></xr>
         <xr type="lawCode"><ref target="clause:Northu_53">Northu 53</ref></xr>

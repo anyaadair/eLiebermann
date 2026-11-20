@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-13">Page corrected from 43 to 44 (the page turns inside cweðan), as in the team transcription (collarium - d.docx).</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E04462; guessed from the DOE headword list, same as the Bosworth-Toller headword; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -37,6 +38,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">cyfa, cyflas</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref> <ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>, Eimer, Kübel</hi> <ref type="lawCode" target="law:Ger">Ger</ref> 17</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/7059">cýf</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E04462">cȳf</ref></xr>
         <xr type="lawCode"><ref target="clause:Ger_17">Ger 17</ref></xr>
       </entry>
     </body>
