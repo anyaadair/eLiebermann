@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E17224; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">husting</hi> <hi rend="italic">Stadtgericht Londons</hi> [<hi rend="italic"><ref type="abbreviation" target="gram:spater"><abbr>später</abbr></ref> ‘Hustings’</hi>] <ref type="lawCode" target="law:HnLond">Hn Lond</ref> 9. <ref type="lawCode" target="law:LibLond">Lib Lond</ref> 5 (<hi rend="italic"><ref type="abbreviation" target="gram:Variante"><abbr>Var.</abbr></ref>:</hi> ~teng, ~tengum). <ref type="lawCode" target="law:Lond">Lond</ref> <ref type="lawCode" target="law:ECf">ECf</ref> 32 B 12; <hi rend="italic"><ref type="abbreviation" target="gram:Variante"><abbr>Var.</abbr></ref>:</hi> ~tingis, ~tengum | <hi rend="italic"><ref type="abbreviation" target="gram:ablativus"><abbr>abl</abbr></ref>:</hi> hustenge <ref type="lawCode" target="law:HnLond">Hn Lond</ref> 8</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/20027">hús-ting</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E17224">hūs-ting</ref></xr>
         <xr type="lawCode"><ref target="clause:HnLond_9">Hn Lond 9</ref></xr>
         <xr type="lawCode"><ref target="clause:LibLond_5">Lib Lond 5</ref></xr>
         <xr type="lawCode"><ref target="clause:ECf_32-B-12">ECf 32 B 12</ref></xr>

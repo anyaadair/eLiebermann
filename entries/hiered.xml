@@ -29,6 +29,7 @@
       <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
       <change when="2026-10-17">“Vgl.” (vergleiche, compare) linked to the abbreviations list.</change>
       <change when="2026-10-18">Abbreviations and law code (Norðleod) linked; see the pull request “þæt: indecl., Einl., Folg., Urkk.-Sprache, Norðleod”.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E15226; guessed from the DOE headword list, spelling variant (i/y/ie, double letters, -ian/-an); not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -50,6 +51,7 @@
         <xr type="compare"><ref target="entry:tun">tun</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/19113">hí-réd</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/52556">híréd (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E15226">hīred</ref></xr>
         <xr type="lawCode"><ref target="clause:VIIaAtr_6-3">VIIa Atr 6,3</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_7-1">Ine 7,1</ref></xr>
         <xr type="lawCode"><ref target="clause:IIEm_4">II Em 4</ref></xr>

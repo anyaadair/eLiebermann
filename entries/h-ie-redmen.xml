@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E15233; guessed from the DOE headword list, verb form, spelling variant; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,7 @@
           <orth>h[ie]redmen</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">h[ie]redmen</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref>, Haushaltsuntergebene, Hausleute; <ref type="abbreviation" target="gram:Genitiv"><abbr>gn</abbr></ref>:</hi> hiredmanna <ref type="lawCode" target="law:VIIaAtr">VIIa Atr</ref> 5 | <hi rend="italic"><ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>:</hi> hiredmonnum <ref type="lawCode" target="law:IICn">II Cn</ref> 31 <ref type="lawCode" target="law:B">B</ref> | <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>:</hi> hir~ <ref type="lawCode" target="law:IAtr">I Atr</ref> 1,10. <ref type="lawCode" target="law:IICn">II Cn</ref> 31; hird~ <ref type="lawCode" target="law:MsA">A</ref>; hyrd~ <ref type="lawCode" target="law:Ld">Ld</ref></dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E15233">hīred-mann</ref></xr>
         <xr type="lawCode"><ref target="clause:VIIaAtr_5">VIIa Atr 5</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_31">II Cn 31</ref></xr>
         <xr type="lawCode"><ref target="clause:IAtr_1-1_dup2">I Atr 1,10</ref></xr>

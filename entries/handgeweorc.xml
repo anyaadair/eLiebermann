@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-28">“von” unlinked from the abbreviations list: here it is ordinary German, not an abbreviation (Anya Adair).</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E14406; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -38,6 +39,7 @@
         <dictScrap type="liebermann">Godes <hi rend="bold">handgeweorc</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>, Gottes Hände-Werk, von G. selbst Erschaffenes</hi> <ref type="lawCode" target="law:VAtr">V Atr</ref> 3,1 = <ref type="lawCode" target="law:VIAtr">VI</ref> 10,1 = <ref type="lawCode" target="law:IICn">II Cn</ref> 2,1</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/18138">hand-geweorc</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/51731">hand-geweorc (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E14406">hand-ge·weorc</ref></xr>
         <xr type="lawCode"><ref target="clause:VAtr_3-1">V Atr 3,1</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAtr_10-1">VI Atr 10,1</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_2-1">II Cn 2,1</ref></xr>

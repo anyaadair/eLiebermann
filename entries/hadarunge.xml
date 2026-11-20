@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E12308; guessed from the DOE headword list, same as the Bosworth-Toller headword; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
         </form>
         <dictScrap type="liebermann">butan <hi rend="bold">hadarunge</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>, <ref type="abbreviation" target="gram:ohne"><abbr>ohne</abbr></ref> Rücksicht <ref type="abbreviation" target="gram:auf"><abbr>auf</abbr></ref> Personen</hi> <ref type="lawCode" target="law:Iudex">Iudex</ref> 3; hader~ <ref type="lawCode" target="law:Quadr">Q</ref></dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/51416">hád-árung</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E12308">hād-ārung</ref></xr>
         <xr type="lawCode"><ref target="clause:Iudex_3">Iudex 3</ref></xr>
       </entry>
     </body>

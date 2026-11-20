@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E16432; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -42,6 +43,7 @@
         </dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/20163">hwílum</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/53592">hwílum (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E16432">hwīlum</ref></xr>
         <xr type="lawCode"><ref target="clause:Gethyn_1">Geþyncðo 1</ref></xr>
         <xr type="lawCode"><ref target="clause:Grith_3">Grið 3</ref></xr>
         <xr type="lawCode"><ref target="clause:Grith_22">Grið 22</ref></xr>

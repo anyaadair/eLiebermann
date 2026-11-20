@@ -28,6 +28,7 @@
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
       <change when="2026-10-19">“msc” linked to the abbreviations list.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E15485; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -44,6 +45,7 @@
         <xr type="see"><ref target="entry:hadian">hadian</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/14577">ge-hádod</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/48183">ge-hádod (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E15485">ge·hādod</ref></xr>
         <xr type="lawCode"><ref target="clause:EGu_3">EGu 3</ref></xr>
         <xr type="lawCode"><ref target="clause:EGu_4-2">EGu 4,2</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_43">II Cn 43</ref></xr>

@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E14541; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -37,6 +38,7 @@
         </form>
         <dictScrap type="liebermann">ne for <hi rend="bold">hete</hi> ne hole, <hi rend="italic"><ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref></hi>, <hi rend="italic">nicht aus Hass noch Verleumdung</hi> <ref type="lawCode" target="law:Swer">Swer</ref> 4</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/18957">hete</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E14541">hete</ref></xr>
         <xr type="lawCode"><ref target="clause:Swer_4">Swer 4</ref></xr>
       </entry>
     </body>

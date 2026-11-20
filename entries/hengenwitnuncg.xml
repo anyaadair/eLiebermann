@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E15121; guessed from the DOE headword list, same as the Bosworth-Toller headword; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">hengenwitnuncg</hi> <hi rend="italic">Gefängnisstrafe</hi> <ref type="lawCode" target="law:Grith">Grið</ref> 16</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/18696">hengen-wítnung</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E15121">hengen-wītnung</ref></xr>
         <xr type="lawCode"><ref target="clause:Grith_16">Grið 16</ref></xr>
       </entry>
     </body>

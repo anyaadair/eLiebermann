@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E17447; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,7 @@
           <orth>healfpeningwurð</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">healfpeningwurð</hi> wexes, <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>, Halbpfennigwert an Wachs, <ref type="abbreviation" target="gram:fur"><abbr>für</abbr></ref></hi> <hi rend="superscript">1</hi>/<hi rend="subscript">2</hi> <hi rend="italic">Pf. W.</hi> <ref type="lawCode" target="law:ICn">I Cn</ref> 12 <ref type="lawCode" target="law:MsA">A</ref>; ~ig~ <ref type="lawCode" target="law:G">G</ref></dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E17447">healfpening-wurþ</ref></xr>
         <xr type="lawCode"><ref target="clause:ICn_12">I Cn 12</ref></xr>
       </entry>
     </body>

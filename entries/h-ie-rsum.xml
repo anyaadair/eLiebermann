@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E17663; guessed from the DOE headword list, spelling variant (i/y/ie, double letters, -ian/-an); not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,7 @@
           <orth>h[ie]rsum</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">h[ie]rsum</hi> <hi rend="italic">gehorsam; <ref type="abbreviation" target="gram:neutrum"><abbr>nt</abbr></ref> <ref type="abbreviation" target="gram:Instrumental"><abbr>instr</abbr></ref> <ref type="abbreviation" target="gram:schwach"><abbr>schw.</abbr></ref>:</hi> þy hersuman folcy <ref type="lawCode" target="law:Wi">Wi</ref> Pro 2</dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E17663">hȳrsum</ref></xr>
         <xr type="lawCode"><ref target="clause:Wi_Prolog-to-3">Wi Pro 2</ref></xr>
       </entry>
     </body>

@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-18">Abbreviations and law code (Norðleod) linked; see the pull request “þæt: indecl., Einl., Folg., Urkk.-Sprache, Norðleod”.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E15208; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -42,6 +43,7 @@
         </dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/19141">híwisc</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/52620">híwisc (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E15208">hīwisc</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_44-1">Ine 44,1</ref></xr>
         <xr type="lawCode"><ref target="clause:Northleoda_7">Norðleod 7</ref></xr>
       </entry>

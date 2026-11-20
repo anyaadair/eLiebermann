@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E15555; guessed from the DOE headword list, same as the Bosworth-Toller headword; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">hlafordleasan</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref> <ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>, herrenlosen</hi> <ref type="lawCode" target="law:IIAs">II As</ref> 2</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/19183">hláford-leás</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E15555">hlāford-lēas</ref></xr>
         <xr type="lawCode"><ref target="clause:IIAs_2">II As 2</ref></xr>
       </entry>
     </body>
