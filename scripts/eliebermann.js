@@ -1305,6 +1305,11 @@
         paradigm = Array.isArray((opts || {}).forms) && (opts || {}).forms.length ? opts.forms : null;
         if (hw && !(opts || {}).noFind) {
             hits.forEach(h => { h.form = formBefore(flat, h.flatStart, ital, bold, breaks, hw, affix, (opts || {}).lang === 'ang'); });
+            // A second spelling of the headword given straight after it ("adlegiare, all~": allegiare) is
+            // looked for too, wherever a link looks for the headword's own forms
+            const altHead = new RegExp('^[^\\p{L}]*(?:[FL]{1,2}\\s+)?' + hw.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '((?:\\s*,\\s*[\\p{L}\\[\\]\\-]*~)+)', 'u').exec(flat.slice(0, 200));
+            const alts = altHead ? altHead[1].split(',').map(x => x.trim()).filter(x => /^\p{L}/u.test(x)).map(x => expandTilde(x, hw).split(',').sort((a, b) => a.length - b.length)[0]).filter(x => x && x !== hw) : [];
+            if (alts.length) hits.forEach(h => { h.altHw = alts.join(','); });
             // A citation with no spelling of its own before it falls back on the headword ("bei, an, neben
             // Abt 51" in be). If the entry gives a spelling for that same clause elsewhere ("Form: … bi Abt 51"),
             // that spelling is looked for too, after the headword (a clause cited for þæt and again for se
@@ -1334,6 +1339,8 @@
             // a Latin or French word cited for the Old English it translates ("bannum setzt Q für gebodu VI As 4"):
             // the clause has both, and both are marked (every spelling a link gives that is found is marked)
             if (form && (opts || {}).lang && (opts || {}).lang !== 'ang' && !spelling && !oneLetter && !form.split(',').includes(hw) && /^\p{L}{3,}$/u.test(hw)) form += ',' + hw;
+            // (the headword's second spelling is looked for as the headword is, with its other endings: allegiet)
+            if (form && h.altHw) form += ',' + h.altHw;
             const sep = () => (h.href.includes('?') ? '&' : '?');
             if (form && (oneLetter ? /\p{L}/u : /\p{L}.*\p{L}/u).test(form.split(',')[0])) h.href += sep() + 'find=' + encodeURIComponent(form);
             const also = [variantAfter(flat, h.flatEnd, ital, hw), h.dashForms].filter(Boolean).join(',');

@@ -483,7 +483,9 @@ scripts:
     // of archive.org's embedded reader opened at that page.
     function scanEmbed(url) {
         const m = /^https?:\/\/archive\.org\/details\/([^/?#]+)\/page\/([^/?#]+)/.exec(url || '');
-        return m ? `https://archive.org/embed/${m[1]}#page/${m[2]}/mode/1up` : '';
+        // (the page goes in the address itself, as on archive.org's own pages: the older "#page/…" form is
+        // no longer read by the reader, which then opens at the start of the volume)
+        return m ? `https://archive.org/embed/${m[1]}/page/${m[2]}/mode/1up` : '';
     }
 
     function render(e) {

@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-13">Page corrected from 3 to 4 (the page turns inside acquietare), as in the team transcription (A - boc.docx).</change>
+      <change when="2026-11-20">Hn 66,6 linked to Hn 66,6a, with an editor's note; the spelling all~ (allegiare) searched for in every link.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -40,6 +41,7 @@
           <sense n="1"><hi rend="italic">gerichtlich rein schwören, unschuldig erweisen</hi> <hi rend="bold">a</hi>) <hi rend="italic"><ref type="abbreviation" target="gram:mit"><abbr>mit</abbr></ref></hi> se (<hi rend="italic">sich</hi>) <ref type="lawCode" target="law:Quadr">Q</ref>: <ref type="lawCode" target="law:Af">Af</ref> 4,1. 17. <ref type="lawCode" target="law:AGu">AGu</ref> 3. <ref type="lawCode" target="law:IIEw">II Ew</ref> 3. <ref type="lawCode" target="law:IIAs">II As</ref> 1,1. <ref type="lawCode" target="law:IVAs">IV As</ref> 6,3. <ref type="lawCode" target="law:IIIEm">III Em</ref> 6,2. <ref type="lawCode" target="law:IVAtr">IV Atr</ref> 7,3. <ref type="lawCode" target="law:ICn">I Cn</ref> 5,1a = <ref type="lawCode" target="law:Hn">Hn</ref> 64,8a. <ref type="lawCode" target="law:IICn">II Cn</ref> 13,2. <ref type="lawCode" target="law:WiLad">Wl lad</ref> 1,1 <hi rend="bold">b</hi>) manum~ <ref type="lawCode" target="law:IIAs">II As</ref> 14,1 <ref type="lawCode" target="law:Quadr">Q</ref>. <ref type="lawCode" target="law:IICn">II Cn</ref> 31,1a = <ref type="lawCode" target="law:Hn">Hn</ref> 41,9. <ref type="lawCode" target="law:IICn">II Cn</ref> 65 = <ref type="lawCode" target="law:Hn">Hn</ref> 66,6. 86,3.</sense>
           <sense n="2"><hi rend="italic">gerichtlich</hi> [<hi rend="italic"><ref type="abbreviation" target="gram:jemand"><abbr>jem.</abbr></ref> <ref type="abbreviation" target="gram:als"><abbr>als</abbr></ref> Kläger</hi>] <hi rend="italic">zulassen, anerkennen</hi> <ref type="lawCode" target="law:Hn">Hn</ref> 63,2</sense>
         </dictScrap>
+        <note type="editorial" xml:id="edn-1">“Hn 66,6” (= II Cn 65): the word is not in Hn 66,6 but in the next section, Hn 66,6a, as <hi rend="italic">allegiet</hi> (<ref target="clause:Hn_66-6a">Hn 66,6a</ref>). The link follows Hn 66,6a.</note>
         <xr type="lawCode"><ref target="clause:Af_4-1">Af 4,1</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_17">Af 17</ref></xr>
         <xr type="lawCode"><ref target="clause:AGu_3">AGu 3</ref></xr>
@@ -56,7 +58,7 @@
         <xr type="lawCode"><ref target="clause:IICn_31-1a">II Cn 31,1a</ref></xr>
         <xr type="lawCode"><ref target="clause:Hn_41-9">Hn 41,9</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_65">II Cn 65</ref></xr>
-        <xr type="lawCode"><ref target="clause:Hn_66-6">Hn 66,6</ref></xr>
+        <xr type="lawCode"><ref target="clause:Hn_66-6a">Hn 66,6</ref></xr>
         <xr type="lawCode"><ref target="clause:Hn_86-3">Hn 86,3</ref></xr>
         <xr type="lawCode"><ref target="clause:Hn_63-2">Hn 63,2</ref></xr>
       </entry>
