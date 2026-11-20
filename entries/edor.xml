@@ -27,6 +27,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E07763; guessed from the DOE headword list, same as the Bosworth-Toller headword; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -40,6 +41,7 @@
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/8318">eador</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/8866">eder</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/9456">eodor</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E07763">eodor</ref></xr>
         <xr type="lawCode"><ref target="clause:Abt_29">Abt 29</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_40">Af 40</ref></xr>
       </entry>

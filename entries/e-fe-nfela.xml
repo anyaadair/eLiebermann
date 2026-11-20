@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E07486; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">e[fe]nfela</hi> <hi rend="italic"><ref type="abbreviation" target="gram:mitGenetiv"><abbr>m gn</abbr></ref>;</hi> emfela manna <hi rend="italic">gleich viele Männer</hi> <ref type="lawCode" target="law:Ordal">Ordal</ref> 4</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/8961">efen-fela</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E07486">efen-fela</ref></xr>
         <xr type="lawCode"><ref target="clause:Ordal_4">Ordal 4</ref></xr>
       </entry>
     </body>

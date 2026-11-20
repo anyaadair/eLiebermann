@@ -51,7 +51,7 @@ def verb_guesses(f):
     out = set()
     for end, reps in (('að', ('an', 'ian')), ('eð', ('an', 'ian')), ('aþ', ('an', 'ian')), ('eþ', ('an', 'ian')),
                       ('iað', ('ian',)), ('iaþ', ('ian',)), ('ige', ('ian',)), ('ie', ('ian',)),
-                      ('ode', ('ian',)), ('ede', ('an',)), ('od', ('ian',)), ('ed', ('an',)),
+                      ('iende', ('ian',)), ('ende', ('an', 'ian')), ('ode', ('ian',)), ('ede', ('an',)), ('od', ('ian',)), ('ed', ('an',)),
                       ('en', ('an',)), ('e', ('an', 'ian'))):
         if f.endswith(end) and len(f) - len(end) >= 3:
             for r in reps:
