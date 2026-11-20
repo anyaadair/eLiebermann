@@ -29,6 +29,7 @@
       <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
       <change when="2026-10-17">“statt”, “regiert (von)”, “unsyntakt.” and the Accusativ terms linked to the abbreviations list.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E04364; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -41,6 +42,7 @@
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/13907">ge-clǽnsian</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/47458">ge-clǽnsian (Supplement)</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/13910">ge-clánsian</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E04364">ge·clǣnsian</ref></xr>
         <xr type="lawCode"><ref target="clause:Cn1020_2">Cn 1020,2</ref></xr>
         <xr type="lawCode"><ref target="clause:Wi_23">Wi 23</ref></xr>
         <xr type="lawCode"><ref target="clause:Wi_24">Wi 24</ref></xr>

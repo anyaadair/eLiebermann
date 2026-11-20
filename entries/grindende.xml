@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E12575; guessed from the DOE headword list, verb form (-að/-eð → -an/-ian …); not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,7 @@
           <orth>grindende</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">grindende</hi> þeowa [<hi rend="italic">Getreide</hi>] <hi rend="italic">mahlende Sklavin</hi> <ref type="lawCode" target="law:Abt">Abt</ref> 11</dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E12575">grindan</ref></xr>
         <xr type="lawCode"><ref target="clause:Abt_11">Abt 11</ref></xr>
       </entry>
     </body>

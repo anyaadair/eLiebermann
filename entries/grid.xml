@@ -29,6 +29,7 @@
       <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
       <change when="2026-10-28">“von” unlinked from the abbreviations list: here it is ordinary German, not an abbreviation (Anya Adair).</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E14282; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -51,6 +52,7 @@
         <xr type="derivative"><ref target="entry:handgrid">handgrið</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/17550">grið</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/51260">griþ (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E14282">griþ</ref></xr>
         <xr type="lawCode"><ref target="clause:ECf_32-1">ECf 32,1</ref></xr>
         <xr type="lawCode"><ref target="clause:IIEm_7-1">II Em 7,1</ref></xr>
         <xr type="lawCode"><ref target="clause:Grith_Grid-Inscr">Grið Insc</ref></xr>

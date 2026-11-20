@@ -30,6 +30,7 @@
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
       <change when="2026-10-18">Abbreviations and law code (Norðleod) linked; see the pull request “þæt: indecl., Einl., Folg., Urkk.-Sprache, Norðleod”.</change>
       <change when="2026-10-28">“eigentl.” and “Zushg.” linked to the abbreviations list.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E14112; guessed from the DOE headword list, spelling variant (i/y/ie, double letters, -ian/-an); not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -48,6 +49,7 @@
         <xr type="derivative"><ref target="entry:foreg-ie-ldan">foreg[ie]ldan</ref></xr>
         <xr type="derivative"><ref target="entry:maeggieldan">mæggieldan</ref></xr>
         <xr type="lawCode" rend="range-from:Northu 2,2"><ref target="law:Northu">Northu 2,7</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E14112">gyldan</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_74-2">Ine 74,2</ref></xr>
         <xr type="lawCode"><ref target="clause:Duns_5">Duns 5</ref></xr>
         <xr type="lawCode"><ref target="clause:Duns_7">Duns 7</ref></xr>

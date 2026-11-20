@@ -28,6 +28,7 @@
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E14166; guessed from the DOE headword list, spelling variant (i/y/ie, double letters, -ian/-an); not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -39,6 +40,7 @@
         <dictScrap type="liebermann"><hi rend="bold">g[ie]meleasnes</hi>; <hi rend="italic"><ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>:</hi> speres [<hi rend="italic"><ref type="abbreviation" target="gram:Genitiv"><abbr>gn</abbr></ref> <ref type="abbreviation" target="gram:objectiv"><abbr>obj</abbr></ref></hi>] gemeleasnesse <hi rend="italic">Unvorsichtigkeit mit</hi> <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:Rb">Rb</ref> 36; gym~ <ref type="lawCode" target="law:G">G</ref> <ref type="lawCode" target="law:H">H</ref>; gymeleaste <ref type="lawCode" target="law:B">B</ref></dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/17739">gýmeleásnys</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/50781">gímeleás-ness</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E14166">gȳme-lēasnes</ref></xr>
         <xr type="lawCode"><ref target="clause:Rubrics-Af_36">Af Rb 36</ref></xr>
       </entry>
     </body>

@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E13549; guessed from the DOE headword list, same as the Bosworth-Toller headword; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -39,6 +40,7 @@
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/15576">geornan</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/15744">gernan</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/17767">gyrnan</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E13549">gyrnan</ref></xr>
         <xr type="lawCode"><ref target="clause:IAs_5">I As 5</ref></xr>
         <xr type="lawCode"><ref target="clause:Wif_1">Wif 1</ref></xr>
       </entry>

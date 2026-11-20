@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E14164; guessed from the DOE headword list, spelling variant (i/y/ie, double letters, -ian/-an); not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -40,6 +41,7 @@
           <sense n="2"><hi rend="italic">nachlässig, unachtsam; <ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref>:</hi> gimelease menn 8,7 — <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:forg-ie-meleasian">forgiemeleasian</ref></sense>
         </dictScrap>
         <xr type="derivative"><ref target="entry:forg-ie-meleasian">forg[ie]meleasian</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E14164">gȳme-lēas</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_El-to-42">Af El 42</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAs_8-8">VI As 8,8</ref></xr>
       </entry>

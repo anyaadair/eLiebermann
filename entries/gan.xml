@@ -32,6 +32,7 @@
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
       <change when="2026-11-01">Abbreviations “unfl.” and “Für” linked to the abbreviations list.</change>
       <change when="2026-11-09">Iud Dei VII cited with MS A linked to the Old English text (A), not the Latin.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E13654; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -66,6 +67,7 @@
         <xr type="derivative"><ref target="entry:ofgan">ofgan</ref></xr>
         <xr type="derivative"><ref target="entry:togan">togan</ref></xr>
         <xr type="derivative"><ref target="entry:utgan">utgan</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E13654">gān</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_42-1">Af 42,1</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_42-4">Af 42,4</ref></xr>
         <xr type="lawCode"><ref target="clause:Ordal_1">Ordal 1</ref></xr>

@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E11061; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">gafolhwitel</hi> <hi rend="italic">Abgabengewand</hi> <ref type="lawCode" target="law:Ine">Ine</ref> 44,1; gavo~ <ref type="lawCode" target="law:K">K</ref></dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/13183">gafol-hwitel</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E11061">gafol-hwītel</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_44-1">Ine 44,1</ref></xr>
       </entry>
     </body>
