@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E02212; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -42,6 +43,7 @@
         </dictScrap>
         <xr type="see"><ref target="entry:beodan">beodan</ref></xr>
         <xr type="compare"><ref target="entry:bebeodan">bebeodan</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E02212">ge·bēodan</ref></xr>
         <xr type="lawCode"><ref target="clause:IVEg_13-1">IV Eg 13,1</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_5-3">Af 5,3</ref></xr>
       </entry>

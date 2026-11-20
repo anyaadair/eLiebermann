@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E14167; guessed from the DOE headword list, spelling variant (i/y/ie, double letters, -ian/-an); not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -43,6 +44,7 @@
         </dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/17740">gýmeleást</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/15193">géme-lést</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E14167">gȳme-lēast</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_70">II Cn 70</ref></xr>
         <xr type="lawCode"><ref target="clause:Northu_10-1">Northu 10,1</ref></xr>
         <xr type="lawCode"><ref target="clause:IVEg_1-1">IV Eg 1,1</ref></xr>

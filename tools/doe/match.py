@@ -205,6 +205,8 @@ for path in sorted(glob.glob(os.path.join(ENTRIES, '*.xml'))):
                 grade = 'unsure'
             elif i == 0:
                 grade = 'sure'
+            elif label == 'without ge-':  # geeowde is not ēowde: the editor decides
+                grade = 'unsure'
             elif i <= 9:  # the Bosworth-Toller links are guesses too: never more than likely
                 grade = 'likely'
             else:
@@ -215,6 +217,11 @@ for path in sorted(glob.glob(os.path.join(ENTRIES, '*.xml'))):
     # A capitalised headword may be a name (Bocland, the place): the editor decides.
     if grade in ('sure', 'likely') and hw.lstrip('[(').strip()[:1].isupper():
         grade = 'unsure'
+    # A ge- word with no match whose stem lies outside the DOE's published letters
+    # (gehealdan: the DOE files it under H) can't be matched yet: leave it out.
+    _k = {k for k in keys if not (k[:1] == 'g' and k[:2] != 'ge' and 'ge' + k[1:] in keys)}  # g[e]hælan
+    if not found and all(k.startswith('ge') and len(k) > 4 and not in_span(k[2:]) for k in _k if in_span(k)):
+        continue
     if eid in OVERRIDES:
         for x in OVERRIDES[eid].get('add', []):
             found[x] = doe_head.get(x, x)

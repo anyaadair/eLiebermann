@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E14289; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">griðlagu</hi> stent <hi rend="italic">Sonderfriedensrecht gilt</hi> <ref type="lawCode" target="law:Grith">Grið</ref> 9</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/17553">grið-lagu</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E14289">griþ-lagu</ref></xr>
         <xr type="lawCode"><ref target="clause:Grith_9">Grið 9</ref></xr>
       </entry>
     </body>

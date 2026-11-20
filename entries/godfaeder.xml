@@ -28,6 +28,7 @@
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-13">Page corrected from 104 to 105 (the page turns inside God), as in the team transcription (gerefscipe - habban.docx).</change>
       <change when="2026-10-13">Corrected the typing slip "Taufrater" to Taufvater, as in the team transcription (gerefscipe - habban.docx).</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E13621; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -39,6 +40,7 @@
         <dictScrap type="liebermann"><hi rend="bold">godfæder</hi> <hi rend="italic">Taufvater, Gevatter; <ref type="abbreviation" target="gram:Genitiv"><abbr>gn</abbr></ref>:</hi> ~res <ref type="lawCode" target="law:Ine">Ine</ref> 76 <ref type="lawCode" target="law:B">B</ref> | <hi rend="italic"><ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>:</hi> ~ 76,2; ~re <ref type="lawCode" target="law:B">B</ref> | <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>:</hi> ~ 76. <ref type="lawCode" target="law:Ine">Ine</ref> <ref type="lawCode" target="law:Rb">Rb</ref> 76.</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/17311">god-fæder</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/51025">god-fæder (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E13621">god-fæder</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_76">Ine 76</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_76-2">Ine 76,2</ref></xr>
         <xr type="lawCode"><ref target="clause:Rubrics-Ine_76">Ine Rb 76</ref></xr>

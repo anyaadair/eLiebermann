@@ -28,6 +28,7 @@
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E09057; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -40,6 +41,7 @@
         <xr type="see"><ref target="entry:feohtan">feohtan</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/14325">ge-feohtan</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/47920">ge-feohtan (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E09057">ge·feohtan</ref></xr>
         <xr type="lawCode"><ref target="clause:Grith_9">Grið 9</ref></xr>
         <xr type="lawCode"><ref target="clause:Rubrics-Af_7">Af Rb 7</ref></xr>
         <xr type="lawCode"><ref target="clause:Rubrics-Af_38">Af Rb 38</ref></xr>

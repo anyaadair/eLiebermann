@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E13739; guessed from the DOE headword list, same as the Bosworth-Toller headword; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -37,6 +38,7 @@
         <dictScrap type="liebermann"><hi rend="bold">geargerihta</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref> <ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>, jährliche Geldgerechtsame</hi> (<hi rend="italic">der Kirche</hi>) <ref type="lawCode" target="law:Northu">Northu</ref> 43</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/13492">geár-geriht</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/47098">geár-geriht (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E13739">gēar-ge·riht</ref></xr>
         <xr type="lawCode"><ref target="clause:Northu_43">Northu 43</ref></xr>
       </entry>
     </body>

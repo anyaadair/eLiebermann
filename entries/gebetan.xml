@@ -30,6 +30,7 @@
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
       <change when="2026-11-01">Abbreviations “unfl.” and “Für” linked to the abbreviations list.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E03946; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -49,6 +50,7 @@
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/13656">ge-bétan</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/47235">ge-bétan (Supplement)</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/62447">ge-bétan (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E03946">ge·bētan</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAtr_52">VI Atr 52</ref></xr>
         <xr type="lawCode"><ref target="clause:Episc_10">Episc 10</ref></xr>
         <xr type="lawCode"><ref target="clause:VAs_3">V As 3,1</ref></xr>

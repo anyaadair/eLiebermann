@@ -28,6 +28,7 @@
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
       <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E04368; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -40,6 +41,7 @@
         <xr type="see"><ref target="entry:gecweden">gecweden</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/13984">ge-cweðan</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/47555">ge-cweþan (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E04368">ge·cweþan</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_El-to-49-7">Af El 49,7</ref></xr>
         <xr type="lawCode"><ref target="clause:XAtr_Prol-to-3">X Atr Pro</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAtr_Prol">VI Atr Pro</ref></xr>

@@ -31,6 +31,7 @@
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
       <change when="2026-10-17">“statt”, “regiert (von)”, “unsyntakt.” and the Accusativ terms linked to the abbreviations list.</change>
       <change when="2026-11-01">Abbreviations “unfl.” and “Für” linked to the abbreviations list.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E13679; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -56,6 +57,7 @@
         <xr type="derivative"><ref target="entry:gegangan">gegangan</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/13271">gangan</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/46939">gangan (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E13679">gangan</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_69">Ine 69</ref></xr>
         <xr type="lawCode"><ref target="clause:Wi_7">Wi 7</ref></xr>
         <xr type="lawCode"><ref target="clause:Wi_28">Wi 28</ref></xr>

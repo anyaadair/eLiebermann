@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E01482; guessed from the DOE headword list, same as the Bosworth-Toller headword; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">geandagode</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Praeteritum"><abbr>ptt</abbr></ref></hi> 3 (<hi rend="italic"><ref type="abbreviation" target="gram:Optativ"><abbr>op</abbr></ref>?</hi>), <hi rend="italic">Termin setzte</hi> <ref type="lawCode" target="law:IEw">I Ew</ref> 2</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/13438">ge-ándagian</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E01482">ge·ān-dagian</ref></xr>
         <xr type="lawCode"><ref target="clause:IEw_2">I Ew 2</ref></xr>
       </entry>
     </body>

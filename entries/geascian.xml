@@ -28,6 +28,7 @@
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E01503; guessed from the DOE headword list, x / cs / sc (acsian = āxian); not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -43,6 +44,7 @@
         </dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/13538">ge-ascian</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/47134">ge-ascian (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E01503">ge·āxian</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAs_9">VI As 9</ref></xr>
         <xr type="lawCode"><ref target="clause:IVEg_10">IV Eg 10</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_39">Ine 39</ref></xr>

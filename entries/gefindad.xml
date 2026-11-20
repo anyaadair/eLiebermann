@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E09449; guessed from the DOE headword list, verb form (-að/-eð → -an/-ian …); not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,7 @@
           <orth>gefindað</orth>
         </form>
         <dictScrap type="liebermann">ge <hi rend="bold">gefindað</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref></hi> 2, <hi rend="italic">ihr auffindet</hi> <ref type="lawCode" target="law:AsAlm">As Alm</ref> Pro</dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E09449">ge·findan</ref></xr>
         <xr type="lawCode"><ref target="clause:AsAlm_Prol">As Alm Pro</ref></xr>
       </entry>
     </body>

@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E10504; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -37,6 +38,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">gecweden</hi> <hi rend="italic">bestimmt, verordnet, <ref type="abbreviation" target="gram:oben"><abbr>o.</abbr></ref> <ref type="abbreviation" target="gram:Seite"><abbr>S.</abbr></ref></hi> 43 <hi rend="italic">letzte <ref type="abbreviation" target="gram:Zeile"><abbr>Z.</abbr></ref> und</hi> <ref type="lawCode" target="law:VIAs">VI As</ref> 8,5</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/13968">ge-cweden</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E10504">ge·cweden</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAs_8-5">VI As 8,5</ref></xr>
       </entry>
     </body>

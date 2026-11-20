@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-18">Abbreviations and law code (Norðleod) linked; see the pull request “þæt: indecl., Einl., Folg., Urkk.-Sprache, Norðleod”.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E09365; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -37,6 +38,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">goldfæted</hi> sweord, <hi rend="italic"><ref type="abbreviation" target="gram:adjektiv"><abbr>adj</abbr></ref>, <ref type="abbreviation" target="gram:mit"><abbr>mit</abbr></ref> Goldblech belegtes Schwert</hi> <ref type="lawCode" target="law:Northleoda">Norðleod</ref> 10 <ref type="lawCode" target="law:H">H</ref>; golde fæted <ref type="lawCode" target="law:D">D</ref></dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/51068">gold-fǽted</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E09365">gold-fǣted</ref></xr>
         <xr type="lawCode"><ref target="clause:Northleoda_10">Norðleod 10</ref></xr>
       </entry>
     </body>

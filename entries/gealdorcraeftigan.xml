@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E11101; guessed from the DOE headword list, same as the Bosworth-Toller headword; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -38,6 +39,7 @@
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/13417">gealdor-cræftiga</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/13209">galder-cræftiga</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/13212">galdor-cræftiga</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E11101">galdor-cræftiga</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_El-to-30">Af El 30</ref></xr>
       </entry>
     </body>

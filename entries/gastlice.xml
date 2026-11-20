@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E12741; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,7 @@
           <orth>gastlice</orth>
         </form>
         <dictScrap type="liebermann">ane <hi rend="bold">gastlice</hi> modor, <hi rend="italic"><ref type="abbreviation" target="gram:femininum"><abbr>fm</abbr></ref> <ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>, Eine geistliche Mutter</hi> (<hi rend="italic"><ref type="abbreviation" target="gram:dasIst"><abbr>d. i.</abbr></ref> Kirche</hi>) <ref type="lawCode" target="law:Grith">Grið</ref> 30</dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E12741">gāstlīce</ref></xr>
         <xr type="lawCode"><ref target="clause:Grith_30">Grið 30</ref></xr>
       </entry>
     </body>

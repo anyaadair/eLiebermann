@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-11-01">Editor’s note on a misprinted citation (unlinked citations, November 2026).</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E14006; guessed from the DOE headword list, same as the Bosworth-Toller headword; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -39,6 +40,7 @@
         <note type="editorial" xml:id="edn-1">“Had 19” appears to be a misprint for Had 1, where <hi rend="italic">seofon stapas … ciriclicra grada</hi> occurs (<ref target="clause:Had_1">Had 1</ref>); Hadbot has only 11 chapters. The link follows Had 1.</note>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/17416">grad</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/51115">grad (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E14006">grād</ref></xr>
         <xr type="lawCode"><ref target="clause:Had_1">Had 19</ref></xr>
       </entry>
     </body>

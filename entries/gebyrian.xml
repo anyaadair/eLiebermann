@@ -30,6 +30,7 @@
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
       <change when="2026-10-18">Abbreviations and law code (Norðleod) linked; see the pull request “þæt: indecl., Einl., Folg., Urkk.-Sprache, Norðleod”.</change>
       <change when="2026-11-01">Abbreviations “unfl.” and “Für” linked to the abbreviations list.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E03259; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -53,6 +54,7 @@
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/47408">ge-býrian (Supplement)</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/62471">ge-byrian (Supplement)</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/13652">ge-berian</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E03259">ge·byrian</ref></xr>
         <xr type="lawCode"><ref target="clause:IIEm_7-1">II Em 7,1</ref></xr>
         <xr type="lawCode"><ref target="clause:Duns_2">Duns 2</ref></xr>
         <xr type="lawCode"><ref target="clause:Duns_9">Duns 9</ref></xr>
