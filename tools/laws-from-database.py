@@ -52,8 +52,9 @@ rubrics = _load('rubric_split', 'rubric_split.py')         # J&O's E and B rubri
 promulgation = _load('promulgation', 'promulgation.py')  # date and place, with their scholars
 # A scholar's statement that gives no date at all ("no evidence of exact date (Robertson)") is left out
 # of the dates, the note and codes.json (Anya, November 2026); relative dates ("after IV Eg") are kept.
-NO_DATE = re.compile(r'^no (?:clear )?evidence of (?:exact )?date$')
-NO_DATE_IN_TEXT = re.compile(r';\s*no (?:clear )?evidence of (?:exact )?date \([^)]*\)')
+# ... and As Alm's unattributed "before c.1110 (Nowell's 'translation' from Q?)", a mistake (Anya, Nov 2026)
+NO_DATE = re.compile(r'^(?:no (?:clear )?evidence of (?:exact )?date|before c\.1110 \(Nowell(?:.s)? .translation. from Q\?\))$')
+NO_DATE_IN_TEXT = re.compile(r';\s*(?:no (?:clear )?evidence of (?:exact )?date \([^)]*\)|before c\.1110 \(Nowell(?:.s)? .translation. from Q\?\))')
 
 
 def parsed_dates(text):

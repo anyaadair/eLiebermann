@@ -26,7 +26,7 @@ TABLE = {
     '880–90; 886–90 (Whitelock)': ([('880–90', []), ('886–90', [W])], []),
     '601–4; 597–616, perhaps 602–3 (Whitelock)': ([('601–4', []), ('597–616, perhaps 602–3', [W])], []),
     '890–901; 885–899 (Whitelock)': ([('890–901', []), ('885–899', [W])], []),
-    "925–40; before c.1110 (Nowell 'translation' from Q?)": ([('925–40', []), ('before c.1110 (Nowell’s ‘translation’ from Q?)', [])], []),
+    "925–40; before c.1110 (Nowell 'translation' from Q?)": ([('925–40', [])], []),
     '1002–23 (Whitelock); 1006–8 (Rabin)': ([('1002–23', [W]), ('1006–8', [RB])], []),
     'c.1020–c.1060; c.990–c.1020 (Wormald)': ([('c.1020–c.1060', []), ('c.990–c.1020', [WM])], []),
     "c.930–75; ?mid 990's (Wormald)": ([('c.930–75', []), ('?mid-990s', [WM])], []),
@@ -123,7 +123,7 @@ TABLE.update({
     '925–c.936 (Liebermann); before III As (Attenborough); early in the reign, before II As (Wormald)':
         ([('925–c.936', [L]), ('before III As', [A]), ('early in the reign, before II As', [WM])], []),
     '925–40 (Liebermann); ?Christmas 932–Jan. 933 (Wormald); before c.1110 (Nowell’s ‘translation’ from Q?)':
-        ([('925–40', [L]), ('?Christmas 932–Jan. 933', [WM]), ('before c.1110 (Nowell’s ‘translation’ from Q?)', [])], []),
+        ([('925–40', [L]), ('?Christmas 932–Jan. 933', [WM])], []),
     '925–c.935 (Liebermann); before III–VI As (Attenborough); c.926–c.930 (Whitelock); not before 928 (Wormald); Grately':
         ([('925–c.935', [L]), ('before III–VI As', [A]), ('c.926–c.930', [W]), ('not before 928', [WM])], [('Grately', [])]),
     'c.928–c.938 (Liebermann); after I & V As (Attenborough); after V As, before VI As 12 (Wormald)':
@@ -278,7 +278,7 @@ TABLE.update({
     '925–c.936 (Liebermann, I p. 146); before III As (Attenborough); early in the reign, before II As (Wormald, MEL p. 439)':
         ([('925–c.936', ['Liebermann, I p. 146']), ('before III As', ['Attenborough']), ('early in the reign, before II As', ['Wormald, MEL p. 439'])], []),
     '925–40 (Liebermann, I p. 148); ?Christmas 932–Jan. 933 (Wormald, MEL p. 439 n. 76); before c.1110 (Nowell’s ‘translation’ from Q?)':
-        ([('925–40', ['Liebermann, I p. 148']), ('?Christmas 932–Jan. 933', ['Wormald, MEL p. 439 n. 76']), ('before c.1110 (Nowell’s ‘translation’ from Q?)', [])], []),
+        ([('925–40', ['Liebermann, I p. 148']), ('?Christmas 932–Jan. 933', ['Wormald, MEL p. 439 n. 76'])], []),
     '925–c.935 (Liebermann, I p. 150); before III–VI As (Attenborough); c.926–c.930 (Whitelock, EHD p. 418); not before 928 (Wormald, MEL p. 440); Grately':
         ([('925–c.935', ['Liebermann, I p. 150']), ('before III–VI As', ['Attenborough']), ('c.926–c.930', ['Whitelock, EHD p. 418']), ('not before 928', ['Wormald, MEL p. 440'])], [('Grately', [])]),
     'c.928–c.938 (Liebermann, I p. 170); after I & V As (Attenborough); after V As, before VI As 12 (Wormald, MEL pp. 439–40)':
