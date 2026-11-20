@@ -28,6 +28,7 @@
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
       <change when="2026-11-09">Iud Dei VII cited with MS A linked to the Old English text (A), not the Latin.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E14739; guessed from the DOE headword list, same spelling).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -39,6 +40,7 @@
         <dictScrap type="liebermann"><hi rend="bold">heahengel</hi> <hi rend="italic">Erzengel; <ref type="abbreviation" target="gram:Genitiv"><abbr>gn</abbr></ref>:</hi> ~glas<ref type="abbreviation" target="gram:sic"><abbr>!</abbr></ref> <ref type="lawCode" target="law:ExcomVII">Excom VII</ref> 2 | <hi rend="italic"><ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref> <ref type="abbreviation" target="gram:Genitiv"><abbr>gn</abbr></ref>:</hi> ~gla <ref type="lawCode" target="law:IudDeiVII">Iud Dei VII</ref> 12,1 <ref type="lawCode" target="law:MsA">A</ref>; hehangla <ref type="lawCode" target="law:IudDeiV">V</ref> 2 | <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>:</hi> ~glas <ref type="lawCode" target="law:IudDeiVII">VII</ref> 23,1 <ref type="lawCode" target="law:MsA">A</ref>. <ref type="lawCode" target="law:IudDeiVIII">VIII</ref> 2</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/18328">heáh-engel</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/51895">heáh-engel (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E14739">hēah-engel</ref></xr>
         <xr type="lawCode"><ref target="clause:ExcomVII_2">Excom VII 2</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiVII_12-1A">Iud Dei VII 12,1</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiV_2">Iud Dei V 2</ref></xr>

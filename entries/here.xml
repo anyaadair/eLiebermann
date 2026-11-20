@@ -28,6 +28,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E14572; guessed from the DOE headword list, same spelling).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -49,6 +50,7 @@
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/18861">here</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/52382">here (Supplement)</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/18535">hearra</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E14572">here</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_El-to-28">Af El 28</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_13-1">Ine 13,1</ref></xr>
         <xr type="lawCode"><ref target="clause:IVEg_15">IV Eg 15</ref></xr>

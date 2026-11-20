@@ -29,6 +29,7 @@
       <change when="2026-10-17">“Vgl.” (vergleiche, compare) linked to the abbreviations list.</change>
       <change when="2026-11-01">Abbreviations “unfl.” and “Für” linked to the abbreviations list.</change>
       <change when="2026-11-18">Derivatives list: a first part with a hyphen ("burg-" under bot) now goes to the compound (burgbot), and a compound written without its final -e (woruldbot) to its entry.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E16912; guessed from the DOE headword list, same spelling).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -44,6 +45,7 @@
         <xr type="derivative"><ref target="entry:ealahuse">ealahuse</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/19996">hús</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/53415">hús (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E16912">hūs</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_75">II Cn 75</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_5-1">Af 5,1</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_6">Ine 6</ref></xr>

@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E16671; guessed from the DOE headword list, same spelling).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">hl[i]dan</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref> <ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>;</hi> hlydan [<hi rend="italic"><ref type="abbreviation" target="gram:fur"><abbr>für</abbr></ref></hi> hledan <hi rend="italic">Stühle; <ref type="abbreviation" target="gram:oder"><abbr>oder</abbr></ref></hi>] <hi rend="italic">Deckel</hi> <ref type="lawCode" target="law:Ger">Ger</ref> 17. — <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:belidens">belidens</ref> (?)</dictScrap>
         <xr type="derivative"><ref target="entry:belidens">belidens</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E16671">hlīdan</ref></xr>
         <xr type="lawCode"><ref target="clause:Ger_17">Ger 17</ref></xr>
       </entry>
     </body>

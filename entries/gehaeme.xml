@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E12702; guessed from the DOE headword list, same spelling).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -41,6 +42,7 @@
           <sense n="2"><hi rend="italic"><ref type="abbreviation" target="gram:transitiv"><abbr>tr.</abbr></ref> beschlafe;</hi> swustor gehame <ref type="lawCode" target="law:MsA">A</ref> [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>.</hi> <ref type="entry" target="entry:forlicgan">forlicgan</ref> <hi rend="italic"><ref type="abbreviation" target="gram:intransitiv"><abbr>intr.</abbr></ref> <ref type="abbreviation" target="gram:und"><abbr>u.</abbr></ref> <ref type="abbreviation" target="gram:transitiv"><abbr>tr.</abbr></ref></hi>]</sense>
         </dictScrap>
         <xr type="compare"><ref target="entry:forlicgan">forlicgan</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E12702">ge·hǣme</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_11-1">Af 11,1</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_11-2">Af 11,2</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_51-1">II Cn 51,1</ref></xr>

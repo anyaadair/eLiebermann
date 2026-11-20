@@ -28,6 +28,7 @@
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
       <change when="2026-11-09">Iud Dei VII cited with MS A linked to the Old English text (A), not the Latin.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E16896; guessed from the DOE headword list, same spelling).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -37,6 +38,7 @@
           <orth>heofonlic</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">heofonlic</hi> <hi rend="italic">himmlisch; <ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>:</hi> ~cne fæder <ref type="lawCode" target="law:Grith">Grið</ref> 30 | <hi rend="italic"><ref type="abbreviation" target="gram:femininum"><abbr>fm</abbr></ref> <ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>:</hi> ~cre myrigðe <ref type="lawCode" target="law:IICn">II Cn</ref> 84,2; ~nol- <ref type="lawCode" target="law:MsA">A</ref> | <hi rend="italic"><ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref> <ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>:</hi> ~ca <ref type="lawCode" target="law:IAs">I As</ref> 4,1 <ref type="lawCode" target="law:Ld">Ld</ref>; ~ce anweald <ref type="lawCode" target="law:IudDeiVII">Iud Dei VII</ref> 23,1 <ref type="lawCode" target="law:MsA">A</ref>; <hi rend="italic">schw:</hi> þa ~can mægenþrymmas <ref type="lawCode" target="law:IudDeiVIII">VIII</ref> 2</dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E16896">heofonlic</ref></xr>
         <xr type="lawCode"><ref target="clause:Grith_30">Grið 30</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_84-2">II Cn 84,2</ref></xr>
         <xr type="lawCode"><ref target="clause:IAs_4-1-Ld">I As 4,1</ref></xr>

@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E12699; guessed from the DOE headword list, same spelling).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">hælnesgrið</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>, Sonderfrieden des Heiligtums</hi> <ref type="lawCode" target="law:Grith">Grið</ref> 19</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/17900">hǽlnes-griþ</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E12699">hǣlnes-griþ</ref></xr>
         <xr type="lawCode"><ref target="clause:Grith_19">Grið 19</ref></xr>
       </entry>
     </body>

@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E15193; guessed from the DOE headword list, same spelling).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">hiwen</hi> <hi rend="italic">Hausverband, Familie</hi> <ref type="lawCode" target="law:ECf">ECf</ref> 23,1; <hi rend="italic"><ref type="abbreviation" target="gram:Variante"><abbr>Var.</abbr></ref>:</hi> hywen, hewe(n) [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>.</hi> <ref type="entry" target="entry:hine">hine</ref> <ref type="lawCode" target="law:I">I</ref>, hiwan]</dictScrap>
         <xr type="compare"><ref target="entry:hine">hine</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E15193">hīwen</ref></xr>
         <xr type="lawCode"><ref target="clause:ECf_23-1">ECf 23,1</ref></xr>
       </entry>
     </body>

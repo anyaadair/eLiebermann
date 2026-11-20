@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E12374; guessed from the DOE headword list, same as the Bosworth-Toller headword).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -37,6 +38,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">gehamette</hi> to rihte, <hi rend="italic"><ref type="abbreviation" target="gram:Optativ"><abbr>op</abbr></ref></hi> 3, <hi rend="italic">sesshaft</hi> (<hi rend="italic">sicher verhaftbar</hi>) <hi rend="italic">mache fürs Gericht</hi> <ref type="lawCode" target="law:IIAs">II As</ref> 2</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/14607">ge-hámettan</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E12374">ge·hāmettan</ref></xr>
         <xr type="lawCode"><ref target="clause:IIAs_2">II As 2</ref></xr>
       </entry>
     </body>

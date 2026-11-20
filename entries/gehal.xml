@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E15363; guessed from the DOE headword list, same spelling).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,7 @@
           <orth>gehal</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">gehal</hi> <hi rend="italic">heil; <ref type="abbreviation" target="gram:femininum"><abbr>fm</abbr></ref> <ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>:</hi> ~lre hyde <hi rend="italic">unverletzt gebliebener Haut</hi> <ref type="lawCode" target="law:Af">Af</ref> 70 <ref type="lawCode" target="law:H">H</ref> <ref type="lawCode" target="law:B">B</ref>; gehaldre<ref type="abbreviation" target="gram:sic"><abbr>!</abbr></ref> <ref type="lawCode" target="law:E">E</ref></dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E15363">ge·hāl</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_70">Af 70</ref></xr>
       </entry>
     </body>

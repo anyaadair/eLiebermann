@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E18360; guessed from the DOE headword list, same as the Bosworth-Toller headword).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -40,6 +41,7 @@
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/53902">in-færeld (Supplement)</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/24529">on-færeld</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/56494">on-færeld (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E18360">in-færeld</ref></xr>
         <xr type="lawCode"><ref target="clause:ExcomVII_4">Excom VII 4</ref></xr>
       </entry>
     </body>

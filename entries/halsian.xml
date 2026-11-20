@@ -28,6 +28,7 @@
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
       <change when="2026-11-09">Iud Dei VII linked to its Old English text (A), not the Latin.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E15452; guessed from the DOE headword list, same spelling).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -44,6 +45,7 @@
         <xr type="derivative"><ref target="entry:g-e-halsian">g[e]halsian</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/18060">hálsian (v.)</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/51657">hálsian (v.)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E15452">hālsian</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiVIII_1">Iud Dei VIII 1</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiVIII_2">Iud Dei VIII 2</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiVII_12-2A">Iud Dei VII 12,2</ref></xr>

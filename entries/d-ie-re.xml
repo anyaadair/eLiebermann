@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">“Vgl.” (vergleiche, compare) linked to the abbreviations list.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E06062, E06338; chosen by the editor on the review page).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -41,6 +42,8 @@
           <sense n="2"><hi rend="italic">teuer an Geldwert; <ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>:</hi> dyrne <ref type="lawCode" target="law:Grith">Grið</ref> 6. <ref type="lawCode" target="law:AGu">AGu</ref> 2 | <hi rend="italic"><ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref>:</hi> dyre <hi rend="italic"><ref type="abbreviation" target="gram:ebenda"><abbr>ebd.</abbr></ref></hi> [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>Vgl</abbr></ref>.</hi> <ref type="entry" target="entry:deore">deore</ref>]</sense>
         </dictScrap>
         <xr type="compare"><ref target="entry:deore">deore</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E06062">dȳre</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E06338">dȳre</ref></xr>
         <xr type="lawCode"><ref target="clause:Grith_22">Grið 22</ref></xr>
         <xr type="lawCode"><ref target="clause:Grith_6">Grið 6</ref></xr>
         <xr type="lawCode"><ref target="clause:AGu_2">AGu 2</ref></xr>

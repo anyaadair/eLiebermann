@@ -33,6 +33,7 @@
       <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
       <change when="2026-11-09">II Ew 1 linked to II Ew 1 (it went to 1,1).</change>
       <change when="2026-11-09">Iud Dei VII cited with MS A linked to the Old English text (A), not the Latin.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E17121; guessed from the DOE headword list, same spelling).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -67,6 +68,7 @@
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/17802">habban</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/51406">habban (Supplement)</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/62743">habban (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E17121">habban</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_63">Ine 63</ref></xr>
         <xr type="lawCode"><ref target="clause:AGu_5">AGu 5</ref></xr>
         <xr type="lawCode"><ref target="clause:AsAlm_Prol">As Alm Pro</ref></xr>

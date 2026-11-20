@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-11-09">Iud Dei VII cited with MS A linked to the Old English text (A), not the Latin.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E15473; guessed from the DOE headword list, same as the Bosworth-Toller headword).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -38,6 +39,7 @@
         <dictScrap type="liebermann"><hi rend="bold">halignyssa</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref> <ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>, heilige Kräfte, Himmelsmächte</hi> <ref type="lawCode" target="law:IudDeiVII">Iud Dei VII</ref> 12,3 <ref type="lawCode" target="law:MsA">A</ref>, sanctitates <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref></hi></dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/18050">hálig-nes</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/51650">hálig-nes (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E15473">hālignes</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiVII_12-3A">Iud Dei VII 12,3</ref></xr>
       </entry>
     </body>

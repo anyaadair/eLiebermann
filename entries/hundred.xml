@@ -34,6 +34,7 @@
       <change when="2026-10-28">“von” unlinked from the abbreviations list: here it is ordinary German, not an abbreviation (Anya Adair).</change>
       <change when="2026-10-28">“Hn mon”, “Hn com” and “Hn cor” linked to their own law codes (Henry I’s decrees on the coinage and on the county and hundred courts; his coronation charter), not to the Leges Henrici.</change>
       <change when="2026-11-06">“Wl art Lond retr” (the London text of Wl art retr) made one code reference, and its citations linked (tools/link-wl-art-lond-retr.py).</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E17190; guessed from the DOE headword list, same spelling).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -58,6 +59,7 @@
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/53361">hundred (Supplement)</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/53362">hundred (Supplement)</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/19938">hundred (n., adj., num.)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E17190">hundred</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_23-3">Ine 23,3</ref></xr>
         <xr type="lawCode"><ref target="clause:Rect_16">Rect 16</ref></xr>
         <xr type="lawCode"><ref target="clause:ICn_3-2">I Cn 3,2</ref></xr>

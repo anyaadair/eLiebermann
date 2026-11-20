@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-18">Abbreviations and law code (Norðleod) linked; see the pull request “þæt: indecl., Einl., Folg., Urkk.-Sprache, Norðleod”.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E16781; guessed from the DOE headword list, same spelling).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -40,6 +41,7 @@
         <xr type="derivative"><ref target="entry:Wulfhelm">Wulfhelm</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/18674">helm</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/52232">helm (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E16781">helm</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_71-1">II Cn 71,1</ref></xr>
         <xr type="lawCode"><ref target="clause:Northleoda_10">Norðleod 10</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_71a">II Cn 71a</ref></xr>

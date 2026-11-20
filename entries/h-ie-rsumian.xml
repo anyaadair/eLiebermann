@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E17662; guessed from the DOE headword list, spelling variant (i/y/ie, double letters, -ian/-an)).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">h[ie]rsumian</hi> <hi rend="italic">Gehorsam leisten; <ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref></hi> 1: hyrsumiað <ref type="lawCode" target="law:IVEg">IV Eg</ref> 1,8 <ref type="lawCode" target="law:C">C</ref>; hyrsom- <ref type="lawCode" target="law:F">F</ref>. — <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:geh-ie-rsumian">geh~</ref></dictScrap>
         <xr type="derivative"><ref target="entry:geh-ie-rsumian">geh[ie]rsumian</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E17662">hȳrsumian</ref></xr>
         <xr type="lawCode"><ref target="clause:IVEg_1-8">IV Eg 1,8</ref></xr>
       </entry>
     </body>

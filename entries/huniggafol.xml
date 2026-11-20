@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E12804; guessed from the DOE headword list, same spelling).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">huniggafol</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>, Abgabe</hi> (<hi rend="italic">an die Gutsherrschaft</hi>) <hi rend="italic">in Honig</hi> <ref type="lawCode" target="law:Rect">Rect</ref> 4,5; hunigablum <ref type="lawCode" target="law:Quadr">Q</ref>; <hi rend="italic"><ref type="abbreviation" target="gram:Variante"><abbr>Var.</abbr></ref>:</hi> un-</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/19970">hunig-gafol</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E12804">hunig-gafol</ref></xr>
         <xr type="lawCode"><ref target="clause:Rect_4-5">Rect 4,5</ref></xr>
       </entry>
     </body>
