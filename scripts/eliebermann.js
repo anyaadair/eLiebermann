@@ -1782,6 +1782,10 @@ ${translation}
             slug: idno ? idno.textContent.trim() : '',
             lang,
             language: LANGUAGES[lang] || lang,
+            // Liebermann's mark "FL" (or "LF"): the word is French and Latin; the second language's code
+            alsoLang: (() => { const l = entry.getElementsByTagNameNS(TEI_NS, 'lbl')[0];
+                const t = l && l.getAttribute('type') === 'language' ? l.textContent.trim() : '';
+                return t.length === 2 ? (t[1] === 'L' ? 'la' : t[1] === 'F' ? 'fro' : '') : ''; })(),
             // a grammatical entry: the language(s) it is about (<usg type="lang" n="ang">, or several: n="ang la fro");
             // Liebermann marks French (F) and Latin (L); the others are about Old English
             grammarLang: (childrenNamed(entry, 'usg').find(u => u.getAttribute('type') === 'lang') || { getAttribute: () => '' }).getAttribute('n') || '',

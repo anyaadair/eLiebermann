@@ -26,6 +26,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Marked as a spelling entry.</change>
+      <change when="2026-11-20">Corrections from website suggestions by MD (#51–#63): links, cross-references, abbreviation links.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,16 +36,18 @@
           <orth>-l-</orth>
         </form>
         <usg type="dom">spelling</usg>
-        <dictScrap type="liebermann"><hi rend="bold">-l-</hi> <hi rend="bold">1</hi>) <hi rend="italic"><ref type="abbreviation" target="gram:geschwunden"><abbr>geschwunden</abbr></ref> <ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:Aedelstan">Æðelstan</ref>, cotsetl <hi rend="bold">2</hi>) -l <hi rend="italic">einfach <ref type="abbreviation" target="gram:fur"><abbr>für</abbr></ref></hi> -ll: <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:eall">eall</ref>, motbell, <ref type="entry" target="entry:ceorl-lea-s">ceorlleas</ref> <hi rend="bold">3</hi>) <hi rend="italic"><ref type="abbreviation" target="gram:dafur"><abbr>dafür</abbr></ref></hi> <ref type="entry" target="entry:ll">ll</ref> <hi rend="italic"><ref type="abbreviation" target="gram:sieheDort"><abbr>s. d.</abbr></ref></hi></dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">-l-</hi> <hi rend="bold">1</hi>) <hi rend="italic"><ref type="abbreviation" target="gram:geschwunden"><abbr>geschwunden</abbr></ref> <ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:Aedelstan">Æðelstan</ref>, cotsetl <hi rend="bold">2</hi>) -l <hi rend="italic"><ref type="abbreviation" target="gram:einfachFur"><abbr>einfach für</abbr></ref></hi> -ll: <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:eall">eall</ref>, motbell, <ref type="entry" target="entry:ceorl-lea-s">ceorlleas</ref> <hi rend="bold">3</hi>) <hi rend="italic"><ref type="abbreviation" target="gram:dafur"><abbr>dafür</abbr></ref></hi> <ref type="entry" target="entry:ll">ll</ref> <hi rend="italic"><ref type="abbreviation" target="gram:sieheDort"><abbr>s. d.</abbr></ref></hi></dictScrap>
         <dictScrap type="senses">
           <sense n="1"><hi rend="italic"><ref type="abbreviation" target="gram:geschwunden"><abbr>geschwunden</abbr></ref> <ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:Aedelstan">Æðelstan</ref>, cotsetl</sense>
-          <sense n="2">-l <hi rend="italic">einfach <ref type="abbreviation" target="gram:fur"><abbr>für</abbr></ref></hi> -ll: <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:eall">eall</ref>, motbell, <ref type="entry" target="entry:ceorl-lea-s">ceorlleas</ref></sense>
+          <sense n="2">-l <hi rend="italic"><ref type="abbreviation" target="gram:einfachFur"><abbr>einfach für</abbr></ref></hi> -ll: <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:eall">eall</ref>, motbell, <ref type="entry" target="entry:ceorl-lea-s">ceorlleas</ref></sense>
           <sense n="3"><hi rend="italic"><ref type="abbreviation" target="gram:dafur"><abbr>dafür</abbr></ref></hi> <ref type="entry" target="entry:ll">ll</ref> <hi rend="italic"><ref type="abbreviation" target="gram:sieheDort"><abbr>s. d.</abbr></ref></hi></sense>
         </dictScrap>
         <xr type="see"><ref target="entry:Aedelstan">Æðelstan</ref></xr>
         <xr type="see"><ref target="entry:eall">eall</ref></xr>
         <xr type="see"><ref target="entry:ceorl-lea-s">ceorl[lea]s</ref></xr>
         <xr type="see"><ref target="entry:ll">-ll-</ref></xr>
+        <xr type="see"><ref target="entry:cotsetla">cotsetla</ref></xr>
+        <xr type="see"><ref target="entry:motbele">motbele</ref></xr>
       </entry>
     </body>
   </text>

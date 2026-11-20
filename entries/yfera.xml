@@ -25,6 +25,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-12">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Corrections from website suggestions by MD (#51–#63): links, cross-references, abbreviation links.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -33,7 +34,8 @@
         <form type="lemma">
           <orth>yfera</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">yfera</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> uferra</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">yfera</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:ufera">uferra</ref></dictScrap>
+        <xr type="see"><ref target="entry:ufera">ufera</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/37089">yfera</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/60938">yfera (Supplement)</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/32471">ufera</ref></xr>
