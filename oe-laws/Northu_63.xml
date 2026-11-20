@@ -69,6 +69,7 @@
         <note type="comparison" source="#liebermann" n="384">I Em [?]</note>
         <note type="comparisonPrinted" source="#liebermann">ebd.</note>
         <note type="comparisonIncomplete">Some of Liebermann’s notes here are cut off in the gutter of the scan used, and are still to be completed.</note>
+        <note type="comparedBy" source="#liebermann-notes" n="III 9"><label>cf.</label> <ref target="clause:Abt_31">Abt 31</ref> <quote>[The adulterer pays his wergild:] this was the law in England c. 1100; likewise for marriage by abduction of the widow, II Cn 52, and for the violation of nuns, Northu 63.</quote></note>
         <note type="editorial">U: checked against Whitelock, EHD I (1979), and corrected (before: ‘If anyone lies with a nun, both are liable to pay their wergild, both he and she.’).</note>
         <note type="liebermannNote" subtype="erklaerung" xml:id="Northu_63.lnote.de.1" n="1" source="#liebermann-erkl"><bibl><biblScope unit="volume">3</biblScope><biblScope unit="page">225</biblScope><biblScope unit="column">3</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Vgl. Gl</hi> Nonne 13; Wergeld 30s</seg><seg type="translation" xml:lang="en" source="#claude"><hi rend="italic">Cf. Gl</hi> Nonne 13; Wergeld 30s</seg></note>
       </div>
