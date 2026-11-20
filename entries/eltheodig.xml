@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-19">“pl” linked to the abbreviations list (printed bold italic, missed before).</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E07616; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -42,6 +43,7 @@
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/653">æl-þiódig</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/9266">ell-þeódig</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/9300">el-þiódig</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E07616">el-þēodig</ref></xr>
         <xr type="lawCode"><ref target="clause:Rubrics-Ine_23">Ine Rb 23</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_23">Ine 23</ref></xr>
         <xr type="lawCode"><ref target="clause:Gethyn_8">Geþyncðo 8</ref></xr>

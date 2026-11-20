@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E07755; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">engel</hi>, <hi rend="italic">Engel; <ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>:</hi> ~ <ref type="lawCode" target="law:IudDeiIV">Iud Dei IV</ref> 4,2 | <hi rend="italic"><ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref>:</hi> englas <ref type="lawCode" target="law:ICn">I Cn</ref> 4,2 | <hi rend="italic"><ref type="abbreviation" target="gram:Genitiv"><abbr>gn</abbr></ref>:</hi> engla V 2. VII 12,1 <ref type="lawCode" target="law:MsA">A</ref> | <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>:</hi> englas 23,1 <ref type="lawCode" target="law:MsA">A</ref>. VIII 2. — <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:heahengel">heahe~</ref></dictScrap>
         <xr type="derivative"><ref target="entry:heahengel">heahengel</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E07755">engel</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiIV_4-2">Iud Dei IV 4,2</ref></xr>
         <xr type="lawCode"><ref target="clause:ICn_4-2">I Cn 4,2</ref></xr>
       </entry>

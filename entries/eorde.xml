@@ -28,6 +28,7 @@
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
       <change when="2026-11-09">Iud Dei VII cited with MS A linked to the Old English text (A), not the Latin.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E07776; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -41,6 +42,7 @@
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/44154">eorþe (Supplement)</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/62159">eorþe (Supplement)</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/9600">eorþ-iui</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E07776">eorþe</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_El-to-4">Af El 4</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiVII_12-3A">Iud Dei VII 12,3</ref></xr>
         <xr type="lawCode"><ref target="clause:Episc_14">Episc 14</ref></xr>
