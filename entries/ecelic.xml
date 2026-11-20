@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E07225; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,7 @@
           <orth>ecelic</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">ecelic</hi> <hi rend="italic">ewig; <ref type="abbreviation" target="gram:neutrum"><abbr>nt</abbr></ref> <ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref> <ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>:</hi> þa ~ þinga <ref type="lawCode" target="law:IAs">I As</ref> 4,1 <ref type="lawCode" target="law:Ld">Ld</ref> | <hi rend="italic"><ref type="abbreviation" target="gram:adverb"><abbr>adv</abbr></ref>:</hi> ~ce <ref type="lawCode" target="law:ICn">I Cn</ref> Epil. <ref type="lawCode" target="law:IICn">II</ref> 84,5</dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E07225">ēcelic</ref></xr>
         <xr type="lawCode"><ref target="clause:IAs_4-1-Ld">I As 4,1</ref></xr>
         <xr type="lawCode"><ref target="clause:ICn_Epilog">I Cn Epil</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_84-5">II Cn 84,5</ref></xr>

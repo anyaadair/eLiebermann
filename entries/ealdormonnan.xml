@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E06811; guessed from the DOE headword list, Bosworth-Toller headword, spelling variant; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -42,6 +43,7 @@
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/8450">ealdor-man</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/8466">ealdur-man</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/9195">eldor-man</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E06811">ealdor-mann</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_50">Ine 50</ref></xr>
         <xr type="lawCode"><ref target="clause:IAs_Prol">I As Pro</ref></xr>
       </entry>

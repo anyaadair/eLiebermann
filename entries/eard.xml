@@ -28,6 +28,7 @@
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-13">Page corrected from 58 to 59 (the page turns inside eall), as in the team transcription (dryhtenbeag - fadian.docx).</change>
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E06586; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -45,6 +46,7 @@
         </dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/8581">eard</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/43381">eard (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E06586">eard</ref></xr>
         <xr type="lawCode"><ref target="clause:VIIIAtr_26">VIII Atr 26</ref></xr>
         <xr type="lawCode"><ref target="clause:VAtr_1-2">V Atr 1,2</ref></xr>
         <xr type="lawCode"><ref target="clause:VAtr_23">V Atr 23</ref></xr>

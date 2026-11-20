@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-13">Page corrected from 58 to 59 (the page turns inside eall), as in the team transcription (dryhtenbeag - fadian.docx).</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E07132; guessed from the DOE headword list, same as the Bosworth-Toller headword; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -38,6 +39,7 @@
         <dictScrap type="liebermann"><hi rend="bold">eastorfeorm</hi> <hi rend="italic">Verköstigung, Schmaus zu Ostern</hi> <ref type="lawCode" target="law:Rect">Rect</ref> 9,1; ~ter- 21,4</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/8751">eástor-feorm</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/8734">eáster-feorm</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E07132">ēaster-feorm</ref></xr>
         <xr type="lawCode"><ref target="clause:Rect_9-to-9-1">Rect 9,1</ref></xr>
         <xr type="lawCode"><ref target="clause:Rect_21-4">Rect 21,4</ref></xr>
       </entry>
