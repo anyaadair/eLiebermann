@@ -519,7 +519,7 @@ scripts:
     }
 
     // Names for works a clause file lists without naming (e.g. Liebermann in Cn 1018).
-    const SOURCE_NAMES = { liebermann: 'Liebermann', 'liebermann-erkl': 'Liebermann', 'wormald-mel': 'Wormald', 'wormald-ppmel': 'Wormald', 'rabin-doml': 'Rabin', 'whitelock-cs': 'Whitelock', 'jurasinski-and-oliver': 'Jurasinski and Oliver' };
+    const SOURCE_NAMES = { liebermann: 'Liebermann', 'liebermann-erkl': 'Liebermann', 'liebermann-notes': 'Liebermann (notes)', 'wormald-mel': 'Wormald', 'wormald-ppmel': 'Wormald', 'rabin-doml': 'Rabin', 'whitelock-cs': 'Whitelock', 'jurasinski-and-oliver': 'Jurasinski and Oliver' };
 
     // A translator's or editor's surname, linked to the full reference at the foot of the page.
     function sourceLink(src) {
@@ -840,7 +840,7 @@ scripts:
         const cmpAll = notesOf('comparison'), backAll = notesOf('comparedBy');
         const cmp = cmpAll.find(n => srcId(n) === 'liebermann'), back = backAll.find(n => srcId(n) === 'liebermann');
         const others = cmpAll.filter(n => srcId(n) !== 'liebermann'), othersBack = backAll.filter(n => srcId(n) !== 'liebermann');
-        const scholar = id => (srcs[id] || {}).name || id;
+        const scholar = id => (srcs[id] || {}).name || SOURCE_NAMES[id] || id;
         const childOf = (n, name) => Array.from(n.childNodes).find(c => c.localName === name);
         // Two parts, each only when it has something: "This clause linked to another" (what each
         // scholar, Liebermann among them, says at this clause) and "Another clause linked to this"
@@ -895,7 +895,7 @@ scripts:
                 parts.forEach((x, k) => {
                     if (k) p.appendChild(document.createTextNode('; '));
                     x.refs.forEach((r, m) => { if (m) p.appendChild(document.createTextNode(', ')); p.appendChild(r); });
-                    if (x.page) p.appendChild(el('span', 'muted', ' (' + (id === 'liebermann' ? 'Gesetze I, ' : '') + (/^\d+[–-]\d+/.test(x.page) ? 'pp. ' : 'p. ') + x.page + ')'));
+                    if (x.page) p.appendChild(el('span', 'muted', ' (' + (/^liebermann(-notes)?$/.test(id) ? 'Gesetze I, ' : '') + (/^\d+[–-]\d+/.test(x.page) ? 'pp. ' : 'p. ') + x.page + ')'));
                     if (usefulQuote(x.quote)) {
                         p.appendChild(document.createTextNode(' '));
                         p.appendChild(el('span', 'clause-compare__quote', '“' + x.quote + '”'));
