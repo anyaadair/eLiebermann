@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-13">Page corrected from 35 to 36 (the page turns inside clæne), as in the team transcription (bocere - collaboratio.docx).</change>
+      <change when="2026-11-20">Cons (Consiliatio Cnuti) linked to the list of law codes.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,7 +36,7 @@
         <form type="lemma">
           <orth>clancula</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">clancula</hi> occisio <hi rend="italic">heimliche Tötung</hi> <ref type="lawCode" target="law:IICn">II Cn</ref> 64 Cons, morð <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref></hi></dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">clancula</hi> occisio <hi rend="italic">heimliche Tötung</hi> <ref type="lawCode" target="law:IICn">II Cn</ref> 64 <ref type="lawCode" target="law:ConsCn">Cons</ref>, morð <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref></hi></dictScrap>
         <xr type="lawCode"><ref target="clause:IICn_64">II Cn 64</ref></xr>
       </entry>
     </body>

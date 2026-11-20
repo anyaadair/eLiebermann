@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Cons (Consiliatio Cnuti) linked to the list of law codes.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -34,7 +35,7 @@
         <form type="lemma">
           <orth>collicipium</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">collicipium</hi> Cons: <ref type="lawCode" target="law:IICn">II Cn</ref> 37. 45,1, healsfang <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref></hi></dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">collicipium</hi> <ref type="lawCode" target="law:ConsCn">Cons</ref>: <ref type="lawCode" target="law:IICn">II Cn</ref> 37. 45,1, healsfang <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref></hi></dictScrap>
         <xr type="lawCode"><ref target="clause:IICn_37">II Cn 37</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_45-1">II Cn 45,1</ref></xr>
       </entry>

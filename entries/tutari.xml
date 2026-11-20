@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-12">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Cons (Consiliatio Cnuti) linked to the list of law codes.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -34,7 +35,7 @@
         <form type="lemma">
           <orth>tutari</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">tutari</hi> terram <hi rend="italic">Landgut vertreten</hi> (<hi rend="italic">in dessen Staatspflicht</hi>) <ref type="lawCode" target="law:IICn">II Cn</ref> 79 Cons, gewerian <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref></hi></dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">tutari</hi> terram <hi rend="italic">Landgut vertreten</hi> (<hi rend="italic">in dessen Staatspflicht</hi>) <ref type="lawCode" target="law:IICn">II Cn</ref> 79 <ref type="lawCode" target="law:ConsCn">Cons</ref>, gewerian <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref></hi></dictScrap>
         <xr type="lawCode"><ref target="clause:IICn_79">II Cn 79</ref></xr>
       </entry>
     </body>

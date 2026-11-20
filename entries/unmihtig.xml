@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-12">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Cons (Consiliatio Cnuti) linked to the list of law codes.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -34,7 +35,7 @@
         <form type="lemma">
           <orth>unmihtig</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">unmihtig</hi> <hi rend="italic">unvermögend an Besitz</hi> [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>.</hi> <ref type="entry" target="entry:unmaga">unmaga</ref>] <ref type="lawCode" target="law:Forf">Forf</ref> 2; impotens <ref type="lawCode" target="law:Quadr">Q</ref>, imbecillis Cons | <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>:</hi> ~gne <ref type="lawCode" target="law:IIAtr">II Atr</ref> 9 [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>.</hi> <ref type="entry" target="entry:unmaga">unmaga</ref>]</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">unmihtig</hi> <hi rend="italic">unvermögend an Besitz</hi> [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>.</hi> <ref type="entry" target="entry:unmaga">unmaga</ref>] <ref type="lawCode" target="law:Forf">Forf</ref> 2; impotens <ref type="lawCode" target="law:Quadr">Q</ref>, imbecillis <ref type="lawCode" target="law:ConsCn">Cons</ref> | <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>:</hi> ~gne <ref type="lawCode" target="law:IIAtr">II Atr</ref> 9 [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>.</hi> <ref type="entry" target="entry:unmaga">unmaga</ref>]</dictScrap>
         <xr type="compare"><ref target="entry:unmaga">unmaga</ref></xr>
         <xr type="lawCode"><ref target="clause:Forf_2">Forf 2</ref></xr>
         <xr type="lawCode"><ref target="clause:IIAtr_9">II Atr 9</ref></xr>

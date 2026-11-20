@@ -28,6 +28,7 @@
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">L (Latin version) after VI Atr, IV Eg and Leis Wl citations linked.</change>
       <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
+      <change when="2026-11-20">Cons (Consiliatio Cnuti) linked to the list of law codes.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,7 +37,7 @@
         <form type="lemma">
           <orth>par</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">par</hi>; <hi rend="italic"><ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref>:</hi> pares <hi rend="italic">Standesgenossen</hi> <ref type="lawCode" target="law:Hn">Hn</ref> 9,4; 6a. 31,7. 33 | þegnas [<hi rend="italic">richtig, da Verklagter</hi> hlaford] <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref></hi> <ref type="lawCode" target="law:IICn">II Cn</ref> 31,1a Cons | gehadan (<hi rend="italic">Priester</hi>) <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref></hi> <ref type="lawCode" target="law:ICn">I</ref> 5a; 1 | gelican <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref></hi> <ref type="lawCode" target="law:AGu">AGu</ref> 3 <ref type="lawCode" target="law:Quadr">Q</ref> | pers (<hi rend="italic">Landbesitzrechts-Genossen</hi>) <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref></hi> <ref type="lawCode" target="law:LeisWl">Leis Wl</ref> 23 <ref type="lawCode" target="law:LatVersion">L</ref></dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">par</hi>; <hi rend="italic"><ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref>:</hi> pares <hi rend="italic">Standesgenossen</hi> <ref type="lawCode" target="law:Hn">Hn</ref> 9,4; 6a. 31,7. 33 | þegnas [<hi rend="italic">richtig, da Verklagter</hi> hlaford] <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref></hi> <ref type="lawCode" target="law:IICn">II Cn</ref> 31,1a <ref type="lawCode" target="law:ConsCn">Cons</ref> | gehadan (<hi rend="italic">Priester</hi>) <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref></hi> <ref type="lawCode" target="law:ICn">I</ref> 5a; 1 | gelican <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref></hi> <ref type="lawCode" target="law:AGu">AGu</ref> 3 <ref type="lawCode" target="law:Quadr">Q</ref> | pers (<hi rend="italic">Landbesitzrechts-Genossen</hi>) <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref></hi> <ref type="lawCode" target="law:LeisWl">Leis Wl</ref> 23 <ref type="lawCode" target="law:LatVersion">L</ref></dictScrap>
         <xr type="lawCode"><ref target="clause:Hn_9-4">Hn 9,4</ref></xr>
         <xr type="lawCode"><ref target="clause:Hn_9-6a">Hn 9,6a</ref></xr>
         <xr type="lawCode"><ref target="clause:Hn_31-7">Hn 31,7</ref></xr>

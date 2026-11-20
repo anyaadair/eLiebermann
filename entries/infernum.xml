@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Cons (Consiliatio Cnuti) linked to the list of law codes.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -34,7 +35,7 @@
         <form type="lemma">
           <orth>infernum</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">infernum</hi> <hi rend="italic">Hölle</hi> <ref type="lawCode" target="law:ICn">I Cn</ref> 7,3 Cons, hell <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref>;</hi> <ref type="lawCode" target="law:ExcomIV">Excom IV</ref> 8</dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">infernum</hi> <hi rend="italic">Hölle</hi> <ref type="lawCode" target="law:ICn">I Cn</ref> 7,3 <ref type="lawCode" target="law:ConsCn">Cons</ref>, hell <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref>;</hi> <ref type="lawCode" target="law:ExcomIV">Excom IV</ref> 8</dictScrap>
         <xr type="lawCode"><ref target="clause:ICn_7-3">I Cn 7,3</ref></xr>
         <xr type="lawCode"><ref target="clause:ExcomIV_8">Excom IV 8</ref></xr>
       </entry>

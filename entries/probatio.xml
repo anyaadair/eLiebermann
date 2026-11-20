@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Cons (Consiliatio Cnuti) linked to the list of law codes.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -34,7 +35,7 @@
         <form type="lemma">
           <orth>probatio</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">probatio</hi> <hi rend="italic">gerichtliche Beweisführung, Ordalprobe;</hi> simpla <hi rend="italic">einfaches Ordal</hi> <ref type="lawCode" target="law:IudDeiXII">Iud Dei XII</ref> 22,2<hi rend="superscript">b</hi> | eucaristialis <hi rend="italic">Abendmahl(sprobe)</hi> <ref type="lawCode" target="law:ICn">I Cn</ref> 5,2a Cons, husl <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref></hi> [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>.</hi> <ref type="entry" target="entry:comprobatio">comp~</ref>]</dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">probatio</hi> <hi rend="italic">gerichtliche Beweisführung, Ordalprobe;</hi> simpla <hi rend="italic">einfaches Ordal</hi> <ref type="lawCode" target="law:IudDeiXII">Iud Dei XII</ref> 22,2<hi rend="superscript">b</hi> | eucaristialis <hi rend="italic">Abendmahl(sprobe)</hi> <ref type="lawCode" target="law:ICn">I Cn</ref> 5,2a <ref type="lawCode" target="law:ConsCn">Cons</ref>, husl <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref></hi> [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>.</hi> <ref type="entry" target="entry:comprobatio">comp~</ref>]</dictScrap>
         <xr type="compare"><ref target="entry:comprobatio">comprobatio</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiXII_22-2">Iud Dei XII 22,2</ref></xr>
         <xr type="lawCode"><ref target="clause:ICn_5-2a">I Cn 5,2a</ref></xr>

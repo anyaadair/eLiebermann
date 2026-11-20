@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-11-20">Link to the Dictionary of Old English added (E18325; guessed from the DOE headword list, same as the Bosworth-Toller headword).</change>
+      <change when="2026-11-20">Cons (Consiliatio Cnuti) linked to the list of law codes.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,7 +36,7 @@
         <form type="lemma">
           <orth>inlagie</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">inlagie</hi> to bote, <hi rend="italic"><ref type="abbreviation" target="gram:Optativ"><abbr>op</abbr></ref></hi> 3, <hi rend="italic">in den Genuss des Friedensschutzes einkaufe zur Bussfähigkeit</hi> <ref type="lawCode" target="law:VIIIAtr">VIII Atr</ref> 2 (~ige <ref type="lawCode" target="law:D">D</ref>) = <ref type="lawCode" target="law:ICn">I Cn</ref> 2,4; inlegiet <ref type="lawCode" target="law:Quadr">Q</ref> (= <ref type="lawCode" target="law:Hn">Hn</ref> 11,1a); inleget Cons</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">inlagie</hi> to bote, <hi rend="italic"><ref type="abbreviation" target="gram:Optativ"><abbr>op</abbr></ref></hi> 3, <hi rend="italic">in den Genuss des Friedensschutzes einkaufe zur Bussfähigkeit</hi> <ref type="lawCode" target="law:VIIIAtr">VIII Atr</ref> 2 (~ige <ref type="lawCode" target="law:D">D</ref>) = <ref type="lawCode" target="law:ICn">I Cn</ref> 2,4; inlegiet <ref type="lawCode" target="law:Quadr">Q</ref> (= <ref type="lawCode" target="law:Hn">Hn</ref> 11,1a); inleget <ref type="lawCode" target="law:ConsCn">Cons</ref></dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/20619">in-lagian</ref></xr>
         <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E18325">in-lagian</ref></xr>
         <xr type="lawCode"><ref target="clause:VIIIAtr_2">VIII Atr 2</ref></xr>

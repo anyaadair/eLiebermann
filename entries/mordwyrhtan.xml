@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Cons (Consiliatio Cnuti) linked to the list of law codes.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -34,7 +35,7 @@
         <form type="lemma">
           <orth>morðwyrhtan</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">morðwyrhtan</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref>, heimliche Mordstifter</hi> <ref type="lawCode" target="law:VIAtr">VI Atr</ref> 36. <ref type="lawCode" target="law:EGu">EGu</ref> 11 (~wirthan <ref type="lawCode" target="law:Quadr">Q</ref>) = <ref type="lawCode" target="law:VIAtr">VI Atr</ref> 7 = <ref type="lawCode" target="law:IICn">II Cn</ref> 4a; ~wir~ <ref type="lawCode" target="law:D">D</ref>; latrones-homicidae Cons; <hi rend="italic"><ref type="abbreviation" target="gram:dafur"><abbr>dafür</abbr></ref></hi> ~wytan <ref type="lawCode" target="law:MsA">A</ref></dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">morðwyrhtan</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref>, heimliche Mordstifter</hi> <ref type="lawCode" target="law:VIAtr">VI Atr</ref> 36. <ref type="lawCode" target="law:EGu">EGu</ref> 11 (~wirthan <ref type="lawCode" target="law:Quadr">Q</ref>) = <ref type="lawCode" target="law:VIAtr">VI Atr</ref> 7 = <ref type="lawCode" target="law:IICn">II Cn</ref> 4a; ~wir~ <ref type="lawCode" target="law:D">D</ref>; latrones-homicidae <ref type="lawCode" target="law:ConsCn">Cons</ref>; <hi rend="italic"><ref type="abbreviation" target="gram:dafur"><abbr>dafür</abbr></ref></hi> ~wytan <ref type="lawCode" target="law:MsA">A</ref></dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/23184">morþ-wyrhta</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/55605">morþ-wyrhta (Supplement)</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAtr_36">VI Atr 36</ref></xr>

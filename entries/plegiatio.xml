@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Cons (Consiliatio Cnuti) linked to the list of law codes.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -34,7 +35,7 @@
         <form type="lemma">
           <orth>plegiatio</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">plegiatio</hi> <hi rend="italic">Bürgschaftsleistung</hi> <ref type="lawCode" target="law:ICn">I Cn</ref> 17,3 <ref type="lawCode" target="law:Quadr">Q</ref> [<hi rend="italic">synonym</hi> fideiussio Cons], borg <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref>, das <ref type="abbreviation" target="gram:aber"><abbr>aber</abbr></ref> hier</hi> ‘<hi rend="italic">Geborgtes</hi>’ <hi rend="italic">heisst</hi> [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>.</hi> <ref type="entry" target="entry:plegium">plegium</ref> <hi rend="italic"><ref type="abbreviation" target="gram:Nummer"><abbr>n.</abbr></ref></hi> 3b]</dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">plegiatio</hi> <hi rend="italic">Bürgschaftsleistung</hi> <ref type="lawCode" target="law:ICn">I Cn</ref> 17,3 <ref type="lawCode" target="law:Quadr">Q</ref> [<hi rend="italic">synonym</hi> fideiussio <ref type="lawCode" target="law:ConsCn">Cons</ref>], borg <hi rend="italic"><ref type="abbreviation" target="gram:ubersetzend"><abbr>übsnd</abbr></ref>, das <ref type="abbreviation" target="gram:aber"><abbr>aber</abbr></ref> hier</hi> ‘<hi rend="italic">Geborgtes</hi>’ <hi rend="italic">heisst</hi> [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>vgl</abbr></ref>.</hi> <ref type="entry" target="entry:plegium">plegium</ref> <hi rend="italic"><ref type="abbreviation" target="gram:Nummer"><abbr>n.</abbr></ref></hi> 3b]</dictScrap>
         <xr type="compare"><ref target="entry:plegium">plegium</ref></xr>
         <xr type="lawCode"><ref target="clause:ICn_17-3">I Cn 17,3</ref></xr>
       </entry>

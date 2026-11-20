@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Cons (Consiliatio Cnuti) linked to the list of law codes.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -34,9 +35,9 @@
         <form type="lemma">
           <orth>causare</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">causare</hi> <hi rend="bold">1</hi>) ~ vicio <hi rend="italic">verklagen</hi> <ref type="lawCode" target="law:ICn">I Cn</ref> 5 Cons, mid uncræftum belecgan <hi rend="italic">übersnd</hi> <hi rend="bold">2</hi>) ~abar <hi rend="italic">beschwerte mich</hi> <ref type="lawCode" target="law:Cn1027">Cn 1027</ref>,7; <hi rend="italic"><ref type="abbreviation" target="gram:Variante"><abbr>Var.</abbr></ref></hi> dixi</dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">causare</hi> <hi rend="bold">1</hi>) ~ vicio <hi rend="italic">verklagen</hi> <ref type="lawCode" target="law:ICn">I Cn</ref> 5 <ref type="lawCode" target="law:ConsCn">Cons</ref>, mid uncræftum belecgan <hi rend="italic">übersnd</hi> <hi rend="bold">2</hi>) ~abar <hi rend="italic">beschwerte mich</hi> <ref type="lawCode" target="law:Cn1027">Cn 1027</ref>,7; <hi rend="italic"><ref type="abbreviation" target="gram:Variante"><abbr>Var.</abbr></ref></hi> dixi</dictScrap>
         <dictScrap type="senses">
-          <sense n="1">~ vicio <hi rend="italic">verklagen</hi> <ref type="lawCode" target="law:ICn">I Cn</ref> 5 Cons, mid uncræftum belecgan <hi rend="italic">übersnd</hi></sense>
+          <sense n="1">~ vicio <hi rend="italic">verklagen</hi> <ref type="lawCode" target="law:ICn">I Cn</ref> 5 <ref type="lawCode" target="law:ConsCn">Cons</ref>, mid uncræftum belecgan <hi rend="italic">übersnd</hi></sense>
           <sense n="2">~abar <hi rend="italic">beschwerte mich</hi> <ref type="lawCode" target="law:Cn1027">Cn 1027</ref>,7; <hi rend="italic"><ref type="abbreviation" target="gram:Variante"><abbr>Var.</abbr></ref></hi> dixi</sense>
         </dictScrap>
         <xr type="lawCode"><ref target="clause:ICn_5">I Cn 5</ref></xr>

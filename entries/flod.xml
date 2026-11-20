@@ -28,6 +28,7 @@
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">“In Cn” and “In” (Instituta Cnuti) linked to the law codes list.</change>
       <change when="2026-11-20">Link to the Dictionary of Old English added (E09511; guessed from the DOE headword list, same spelling).</change>
+      <change when="2026-11-20">Cons (Consiliatio Cnuti) linked to the list of law codes.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,7 +37,7 @@
         <form type="lemma">
           <orth>flod</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">flod</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>, Flut, fliessendes Wasser</hi> <ref type="lawCode" target="law:IICn">II Cn</ref> 5,1; fluctus <ref type="lawCode" target="law:Quadr">Q</ref>; aquam <ref type="lawCode" target="law:InCn">In</ref>; flumen Cons</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">flod</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>, Flut, fliessendes Wasser</hi> <ref type="lawCode" target="law:IICn">II Cn</ref> 5,1; fluctus <ref type="lawCode" target="law:Quadr">Q</ref>; aquam <ref type="lawCode" target="law:InCn">In</ref>; flumen <ref type="lawCode" target="law:ConsCn">Cons</ref></dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/10990">flód</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/45262">flód (Supplement)</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/10903">fléd</ref></xr>

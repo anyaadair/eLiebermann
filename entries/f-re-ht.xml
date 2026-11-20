@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Cons (Consiliatio Cnuti) linked to the list of law codes.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -34,7 +35,7 @@
         <form type="lemma">
           <orth>f[re]ht</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">f[re]ht</hi> <hi rend="italic">Zukunftsschauen, Wahrsagung; <ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>:</hi> fyrhte <ref type="lawCode" target="law:IICn">II Cn</ref> 5,1; fyrte <ref type="lawCode" target="law:Ld">Ld</ref>; firhte <ref type="lawCode" target="law:Quadr">Q</ref><hi rend="superscript">13</hi>; transmigratio <hi rend="italic"><ref type="abbreviation" target="gram:missversteht"><abbr>missversteht</abbr></ref></hi> Cons, <hi rend="italic"><ref type="abbreviation" target="gram:vielleicht"><abbr>vielleicht</abbr></ref></hi> fyrde <hi rend="italic"><ref type="abbreviation" target="gram:lesend"><abbr>lesend</abbr></ref>;</hi> oððe on blot oððe on firhte <ref type="lawCode" target="law:Northu">Northu</ref> 48</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">f[re]ht</hi> <hi rend="italic">Zukunftsschauen, Wahrsagung; <ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>:</hi> fyrhte <ref type="lawCode" target="law:IICn">II Cn</ref> 5,1; fyrte <ref type="lawCode" target="law:Ld">Ld</ref>; firhte <ref type="lawCode" target="law:Quadr">Q</ref><hi rend="superscript">13</hi>; transmigratio <hi rend="italic"><ref type="abbreviation" target="gram:missversteht"><abbr>missversteht</abbr></ref></hi> <ref type="lawCode" target="law:ConsCn">Cons</ref>, <hi rend="italic"><ref type="abbreviation" target="gram:vielleicht"><abbr>vielleicht</abbr></ref></hi> fyrde <hi rend="italic"><ref type="abbreviation" target="gram:lesend"><abbr>lesend</abbr></ref>;</hi> oððe on blot oððe on firhte <ref type="lawCode" target="law:Northu">Northu</ref> 48</dictScrap>
         <xr type="lawCode"><ref target="clause:IICn_5-1">II Cn 5,1</ref></xr>
         <xr type="lawCode"><ref target="clause:Northu_48">Northu 48</ref></xr>
       </entry>

@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Cons (Consiliatio Cnuti) linked to the list of law codes.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -34,7 +35,7 @@
         <form type="lemma">
           <orth>strec</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">strec</hi> <hi rend="italic">gewaltig, mächtig</hi> <ref type="lawCode" target="law:IICn">II Cn</ref> 20,1; stræc <ref type="lawCode" target="law:B">B</ref>; ~cman, potens, fortis, <hi rend="italic"><ref type="abbreviation" target="gram:als"><abbr>als</abbr></ref> Ein Wort,</hi> <ref type="lawCode" target="law:Quadr">Q</ref>, <hi rend="italic"><ref type="abbreviation" target="gram:Variante"><abbr>Var.</abbr></ref>:</hi> stercman; austerus <hi rend="italic">streng</hi> [<hi rend="italic">ungenau</hi>] Cons</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">strec</hi> <hi rend="italic">gewaltig, mächtig</hi> <ref type="lawCode" target="law:IICn">II Cn</ref> 20,1; stræc <ref type="lawCode" target="law:B">B</ref>; ~cman, potens, fortis, <hi rend="italic"><ref type="abbreviation" target="gram:als"><abbr>als</abbr></ref> Ein Wort,</hi> <ref type="lawCode" target="law:Quadr">Q</ref>, <hi rend="italic"><ref type="abbreviation" target="gram:Variante"><abbr>Var.</abbr></ref>:</hi> stercman; austerus <hi rend="italic">streng</hi> [<hi rend="italic">ungenau</hi>] <ref type="lawCode" target="law:ConsCn">Cons</ref></dictScrap>
         <xr type="lawCode"><ref target="clause:IICn_20-1">II Cn 20,1</ref></xr>
       </entry>
     </body>
