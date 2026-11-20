@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E09437; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -40,6 +41,7 @@
           <sense n="1">~ soðfæstnesse <hi rend="italic">das Verlassen</hi> (<hi rend="italic">Abgehen von</hi>) <hi rend="italic">der Wahrheit</hi> <ref type="lawCode" target="law:Iudex">Iudex</ref> 17</sense>
           <sense n="2"><hi rend="italic"><ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>:</hi> to ~letnise <hi rend="italic">Vergebung</hi> <ref type="lawCode" target="law:IudDeiIV">Iud Dei IV</ref> 5, ad veniam <hi rend="italic"><ref type="abbreviation" target="gram:glossirend"><abbr>glossirend</abbr></ref></hi></sense>
         </dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E09437">for-lǣtnes</ref></xr>
         <xr type="lawCode"><ref target="clause:Iudex_17">Iudex 17</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiIV_5">Iud Dei IV 5</ref></xr>
       </entry>

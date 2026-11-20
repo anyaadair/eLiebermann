@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E08162; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">fealgian</hi> <hi rend="italic">Acker felgen</hi> <ref type="lawCode" target="law:Ger">Ger</ref> 9</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/44564">fealgian</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E08162">fealgian</ref></xr>
         <xr type="lawCode"><ref target="clause:Ger_9">Ger 9</ref></xr>
       </entry>
     </body>

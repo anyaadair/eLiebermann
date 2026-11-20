@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E11775; guessed from the DOE headword list, same as the Bosworth-Toller headword; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">frymetlinge</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Genitiv"><abbr>gn</abbr></ref>, junger Kuh</hi> <ref type="lawCode" target="law:Rect">Rect</ref> 13</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/12577">frymetling</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E11775">frymetling</ref></xr>
         <xr type="lawCode"><ref target="clause:Rect_13-to-13-1">Rect 13</ref></xr>
       </entry>
     </body>

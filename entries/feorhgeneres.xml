@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E08601; guessed from the DOE headword list, same as the Bosworth-Toller headword; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">feorhgeneres</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Genitiv"><abbr>gn</abbr></ref></hi>, <hi rend="italic">Lebensrettung</hi> <ref type="lawCode" target="law:IIIEg">III Eg</ref> 7,3</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/10413">feorh-gener</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E08601">feorh-ge·ner</ref></xr>
         <xr type="lawCode"><ref target="clause:IIIEg_7-3">III Eg 7,3</ref></xr>
       </entry>
     </body>

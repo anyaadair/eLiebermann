@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E10375; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -39,6 +40,7 @@
         <xr type="see"><ref target="entry:wite">wíte</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/12750">full-wíte</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/12800">ful-wíte</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E10375">full-wīte</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_30">Af 30</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_48">II Cn 48</ref></xr>
         <xr type="lawCode"><ref target="clause:EGu_6-5">EGu 6,5</ref></xr>

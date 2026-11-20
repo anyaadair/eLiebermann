@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E11445; guessed from the DOE headword list, rg / rh, -cean / -can (burg = burh, borh = borg, bereccean = be-reccan); not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">fyrgebeorh</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>, Feuerschutz, -schirm</hi> <ref type="lawCode" target="law:Ger">Ger</ref> 17</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/46742">fýr-gebeorh</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E11445">fȳr-ge·beorg</ref></xr>
         <xr type="lawCode"><ref target="clause:Ger_17">Ger 17</ref></xr>
       </entry>
     </body>

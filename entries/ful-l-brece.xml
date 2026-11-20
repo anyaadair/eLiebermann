@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E11391; guessed from the DOE headword list, Bosworth-Toller headword, spelling variant; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">ful[l]brece</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Optativ"><abbr>op</abbr></ref></hi> 3, [<hi rend="italic"><ref type="abbreviation" target="gram:durch"><abbr>durch</abbr></ref> Totschlag Frieden</hi>] <hi rend="italic">ganz verletzt</hi> <ref type="lawCode" target="law:ICn">I Cn</ref> 2,2</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/12648">ful-brecan</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E11391">full-brecan</ref></xr>
         <xr type="lawCode"><ref target="clause:ICn_2-2">I Cn 2,2</ref></xr>
       </entry>
     </body>

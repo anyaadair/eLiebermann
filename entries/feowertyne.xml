@@ -29,6 +29,7 @@
       <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E08506; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -45,6 +46,7 @@
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/10488">feówertyne</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/44825">feówertyne (Supplement)</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/10479">feówertene</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E08506">fēowertȳne</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_58">Ine 58</ref></xr>
         <xr type="lawCode"><ref target="clause:VAtr_18">V Atr 18</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAtr_25">VI Atr 25</ref></xr>

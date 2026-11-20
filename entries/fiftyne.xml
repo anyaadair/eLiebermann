@@ -29,6 +29,7 @@
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
       <change when="2026-10-18">Abbreviations and law code (Norðleod) linked; see the pull request “þæt: indecl., Einl., Folg., Urkk.-Sprache, Norðleod”.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E08762; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -46,6 +47,7 @@
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/44945">fíf-tyne (Supplement)</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/10684">fíf-tene</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/12830">fýftyne</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E08762">fīftȳne</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_40">Af 40</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_44-1">Af 44,1</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_50">Af 50</ref></xr>

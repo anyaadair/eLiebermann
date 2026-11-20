@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E08670; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -42,6 +43,7 @@
         </dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/9871">fadian</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/44300">fadian (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E08670">fadian</ref></xr>
         <xr type="lawCode"><ref target="clause:VAtr_22-2">V Atr 22,2</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAtr_28">VI Atr 28</ref></xr>
         <xr type="lawCode"><ref target="clause:ICn_19-1">I Cn 19,1</ref></xr>

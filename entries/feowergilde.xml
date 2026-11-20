@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E08409; guessed from the DOE headword list, spelling variant (i/y/ie, double letters, -ian/-an); not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,7 @@
           <orth>feowergilde</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">feowergilde</hi> gilde <hi rend="italic">vierfach zahle</hi> <ref type="lawCode" target="law:IIIAtr">III Atr</ref> 3,4</dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E08409">fēower-gylde</ref></xr>
         <xr type="lawCode"><ref target="clause:IIIAtr_3-4">III Atr 3,4</ref></xr>
       </entry>
     </body>

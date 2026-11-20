@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E11326; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -42,6 +43,7 @@
         </dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/11725">for-specan (v.)</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/45978">for-specan (v.)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E11326">for-sprecan</ref></xr>
         <xr type="lawCode"><ref target="clause:Hn_61-13b">Hn 61,13b</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAs_8-9">VI As 8,9</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_27">II Cn 27</ref></xr>

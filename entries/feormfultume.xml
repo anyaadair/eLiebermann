@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E09168; guessed from the DOE headword list, same as the Bosworth-Toller headword; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">feormfultume</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref></hi>, <hi rend="italic">Beköstigungsbeihilfe, Abgabe Bezirkseingesessener an königlichen Beamten</hi> <ref type="lawCode" target="law:IICn">II Cn</ref> 69,1; fear~ <ref type="lawCode" target="law:Ld">Ld</ref>; adiutorium firm[a]e <ref type="lawCode" target="law:Quadr">Q</ref>, <hi rend="italic"><ref type="abbreviation" target="gram:auch"><abbr>auch</abbr></ref></hi> <ref type="lawCode" target="law:Rb">Rb</ref> <hi rend="italic"><ref type="abbreviation" target="gram:Seite"><abbr>S.</abbr></ref></hi> 538<hi rend="superscript">34</hi></dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/10440">feorm-fultum</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E09168">feorm-fultum</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_69-1">II Cn 69,1</ref></xr>
       </entry>
     </body>

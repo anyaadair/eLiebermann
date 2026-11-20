@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E10989; guessed from the DOE headword list, same as the Bosworth-Toller headword; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">freondleaste</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>, Sippenlosigkeit</hi> <ref type="lawCode" target="law:IICn">II Cn</ref> 35; ~læste <ref type="lawCode" target="law:B">B</ref></dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/12321">freónd-leást</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E10989">frēond-lēast</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_35">II Cn 35</ref></xr>
       </entry>
     </body>

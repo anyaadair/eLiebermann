@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E11522; guessed from the DOE headword list, same as the Bosworth-Toller headword; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -45,6 +46,7 @@
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/10577">féster</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/12062">fóstor</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/12071">fóstur</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E11522">fōstor</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_70-1">Ine 70,1</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_26">Ine 26</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_38">Ine 38</ref></xr>

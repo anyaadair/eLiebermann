@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E08376; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">feorhlyre</hi> wurðe <hi rend="italic">Verlust des Lebens</hi> (<hi rend="italic">ein Todesfall</hi>) <hi rend="italic">eintritt</hi> <ref type="lawCode" target="law:Had">Had</ref> 3 <ref type="lawCode" target="law:O">O</ref> <ref type="lawCode" target="law:H">H</ref>; ~lira <ref type="lawCode" target="law:D">D</ref></dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/10426">feorh-lyre</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E08376">feorh-lyre</ref></xr>
         <xr type="lawCode"><ref target="clause:Had_3">Had 3</ref></xr>
       </entry>
     </body>

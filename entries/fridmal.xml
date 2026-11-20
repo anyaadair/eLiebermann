@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E11907; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,7 @@
           <orth>friðmal</orth>
         </form>
         <dictScrap type="liebermann">þa <hi rend="bold">friðmal</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:neutrum"><abbr>nt</abbr></ref> <ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref>, die Friedensartikel, der Friedensschluss</hi> <ref type="lawCode" target="law:IIAtr">II Atr</ref> Pro</dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E11907">friþ-māl</ref></xr>
         <xr type="lawCode"><ref target="clause:IIAtr_II-Atr-Prol">II Atr Pro</ref></xr>
       </entry>
     </body>

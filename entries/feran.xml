@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E11827; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -43,6 +44,7 @@
         <xr type="derivative"><ref target="entry:wegferende">wegferende</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/10498">feran</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/62238">féran (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E11827">fēran</ref></xr>
         <xr type="lawCode"><ref target="clause:Gethyn_6">Geþyncðo 6</ref></xr>
       </entry>
     </body>

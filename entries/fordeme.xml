@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E10083; guessed from the DOE headword list, same as the Bosworth-Toller headword; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -37,6 +38,7 @@
         <dictScrap type="liebermann"><hi rend="bold">fordeme</hi> to deaðe, <hi rend="italic"><ref type="abbreviation" target="gram:Optativ"><abbr>op</abbr></ref></hi> 3, <hi rend="italic">verurteile zum Tode</hi> <ref type="lawCode" target="law:VAtr">V Atr</ref> 3</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/11267">for-déman</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/45458">for-déman (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E10083">for-dēman</ref></xr>
         <xr type="lawCode"><ref target="clause:VAtr_3">V Atr 3</ref></xr>
       </entry>
     </body>

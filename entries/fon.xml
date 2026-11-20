@@ -31,6 +31,7 @@
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
       <change when="2026-10-28">“von” unlinked from the abbreviations list: here it is ordinary German, not an abbreviation (Anya Adair).</change>
       <change when="2026-11-01">Abbreviations “unfl.” and “Für” linked to the abbreviations list.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E09556; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -58,6 +59,7 @@
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/11157">fón</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/45377">fón (Supplement)</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/62297">fón (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E09556">fōn</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_36">Ine 36</ref></xr>
         <xr type="lawCode"><ref target="clause:Hl_7">Hl 7</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_13">Af 13</ref></xr>
