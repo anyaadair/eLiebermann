@@ -30,6 +30,7 @@
       <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
       <change when="2026-11-09">Iud Dei VII linked to its Old English text (A), not the Latin.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E04921; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -49,6 +50,7 @@
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/41955">cniht (Supplement)</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/61802">cniht (Supplement)</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/6483">cnyht</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E04921">cniht</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_7-2">Ine 7,2</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiIV_1">Iud Dei IV 1</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiVII_23-2A">Iud Dei VII 23,2</ref></xr>

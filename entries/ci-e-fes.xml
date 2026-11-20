@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E04724; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,7 @@
           <orth>ci[e]fes</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">ci[e]fes</hi> <hi rend="italic">Kebsweib; <ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>:</hi> cifese <ref type="lawCode" target="law:IICn">II Cn</ref> 54,1; cefese <ref type="lawCode" target="law:B">B</ref>; ceafese <ref type="lawCode" target="law:MsA">A</ref></dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E04724">cifes</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_54-1">II Cn 54,1</ref></xr>
       </entry>
     </body>

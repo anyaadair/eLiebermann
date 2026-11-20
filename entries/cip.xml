@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E04565; guessed from the DOE headword list, spelling variant (i/y/ie, double letters, -ian/-an); not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,7 @@
           <orth>cip</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">cip</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref></hi>, <hi rend="italic">Webebaum</hi> <ref type="lawCode" target="law:Ger">Ger</ref> 15,1</dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E04565">cipp</ref></xr>
         <xr type="lawCode"><ref target="clause:Ger_15-1">Ger 15,1</ref></xr>
       </entry>
     </body>

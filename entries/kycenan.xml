@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-13">Page corrected from 43 to 44 (the page turns inside cweðan), as in the team transcription (collarium - d.docx).</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E05340; chosen by the editor on the review page).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
           <orth>kycenan</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">kycenan</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>;</hi> cirican ⁊ ~ <hi rend="italic">Kirche und Küche</hi> [<hi rend="italic">Characteristica des Thegn-Besitzes</hi>] <ref type="lawCode" target="law:Gethinctho">Geþyncðo</ref> 2 <ref type="lawCode" target="law:H">H</ref></dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E05340">cycene</ref></xr>
         <xr type="lawCode"><ref target="clause:Gethyn_2">Geþyncðo 2</ref></xr>
       </entry>
     </body>

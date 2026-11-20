@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E04365; guessed from the DOE headword list, spelling variant (i/y/ie, double letters, -ian/-an); not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,7 @@
           <orth>ci[e]rran</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">ci[e]rran</hi>; cirran to <hi rend="italic">umkehren, sich bekehren zu</hi> <ref type="lawCode" target="law:IIAs">II As</ref> 26,1; cyrran <ref type="lawCode" target="law:IIEw">II Ew</ref> 1,1. — <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>~, forc~, gec~</dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E04365">cyrran</ref></xr>
         <xr type="lawCode"><ref target="clause:IIAs_26-1">II As 26,1</ref></xr>
         <xr type="lawCode"><ref target="clause:IIEw_1-1">II Ew 1,1</ref></xr>
       </entry>

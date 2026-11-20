@@ -29,6 +29,7 @@
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
       <change when="2026-10-19">“praed” linked to the abbreviations list (printed bold italic, missed before).</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E04328; chosen by the editor on the review page).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -44,6 +45,7 @@
           <sense n="3"><hi rend="italic">keusch:</hi> lif <ref type="lawCode" target="law:IVEg">IV Eg</ref> 1,7</sense>
           <sense n="4"><hi rend="italic">unschuldig</hi> <ref type="lawCode" target="law:VIAs">VI As</ref> 1,1; æt ordale <hi rend="italic">im</hi> (<hi rend="italic">beim</hi>) <hi rend="italic">O.</hi> As 7,1; þæs (<hi rend="italic">näml.</hi> spræce) <hi rend="italic">davon</hi> <pb n="36"/>(<hi rend="italic">von Klage</hi>) <hi rend="italic">rein</hi> <ref type="lawCode" target="law:ICn">I Cn</ref> 5. <ref type="lawCode" target="law:IICn">II</ref> 75,1. 76,1 (<ref type="lawCode" target="law:IICn">II</ref> 28,1; <hi rend="italic"><ref type="abbreviation" target="gram:fur"><abbr>für</abbr></ref> <ref type="abbreviation" target="gram:Genitiv"><abbr>gn</abbr></ref> <ref type="abbreviation" target="gram:setzt"><abbr>setzt</abbr></ref></hi> æt <hi rend="italic"><ref type="abbreviation" target="gram:mitDativ"><abbr>m dt</abbr></ref></hi> <ref type="lawCode" target="law:B">B</ref>)</sense>
         </dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E04328">clǣne</ref></xr>
         <xr type="lawCode"><ref target="clause:Northu_62">Northu 62</ref></xr>
         <xr type="lawCode"><ref target="clause:Northu_63-1">Northu 63,1</ref></xr>
         <xr type="lawCode"><ref target="clause:ICn_5">I Cn 5</ref></xr>

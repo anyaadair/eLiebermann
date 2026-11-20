@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E04466; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -37,6 +38,7 @@
         <dictScrap type="liebermann"><hi rend="bold">canon</hi> <hi rend="italic">Kanon, Kirchenrecht</hi> <ref type="lawCode" target="law:EGu">EGu</ref> 3 | <hi rend="italic"><ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>:</hi> ~ne <ref type="lawCode" target="law:IEm">I Em</ref> 1</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/5829">canon</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/41366">canon (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E04466">canon</ref></xr>
         <xr type="lawCode"><ref target="clause:EGu_3">EGu 3</ref></xr>
         <xr type="lawCode"><ref target="clause:IEm_1">I Em 1</ref></xr>
       </entry>

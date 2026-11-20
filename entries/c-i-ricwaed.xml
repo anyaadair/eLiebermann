@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E05508; guessed from the DOE headword list, spelling variant (i/y/ie, double letters, -ian/-an); not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">c[i]ricwæd</hi> <hi rend="italic">Kirchengewand; <ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref> <ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>:</hi> cyricwædan <ref type="lawCode" target="law:VIAtr">VI Atr</ref> 51</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/7240">cyric-wǽd</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E05508">cyric-wǣd</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAtr_51">VI Atr 51</ref></xr>
       </entry>
     </body>

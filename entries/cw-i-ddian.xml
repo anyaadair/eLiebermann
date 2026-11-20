@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-13">Page corrected from 43 to 44 (the page turns inside cweðan), as in the team transcription (collarium - d.docx).</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E05319; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -38,6 +39,7 @@
         <dictScrap type="liebermann"><hi rend="bold">cw[i]ddian</hi>; <hi rend="italic"><ref type="abbreviation" target="gram:Praeteritum"><abbr>ptt</abbr></ref></hi> 3: cwydde hine <hi rend="italic">ihn in Anspruch nahm, gerichtlich verklagte</hi> <ref type="lawCode" target="law:Becwaeth">Becwæð</ref> 3,1. — <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:uncwydd">uncwydd</ref></dictScrap>
         <xr type="derivative"><ref target="entry:uncwydd">uncwydd</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/42337">cwiddian</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E05319">cwiddian</ref></xr>
         <xr type="lawCode"><ref target="clause:Becwaeth_3-1">Becwæð 3,1</ref></xr>
       </entry>
     </body>

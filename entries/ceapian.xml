@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E04593; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -44,6 +45,7 @@
         <xr type="derivative"><ref target="entry:geceapian">geceapian</ref></xr>
         <xr type="derivative"><ref target="entry:ofaceapian">ofaceapian</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/5929">ceápian</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E04593">cēapian</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAs_10">VI As 10</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_25">Ine 25</ref></xr>
         <xr type="lawCode"><ref target="clause:IEw_1">I Ew 1</ref></xr>

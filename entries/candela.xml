@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E04402; chosen by the editor on the review page).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,7 @@
           <orth>candela</orth>
         </form>
         <dictScrap type="liebermann">þeos <hi rend="bold">candela</hi> [<hi rend="italic">spät <ref type="abbreviation" target="gram:neben"><abbr>neben</abbr></ref> <ref type="abbreviation" target="gram:älteren"><abbr>ält.</abbr></ref></hi> candel] <hi rend="italic">diese Kerze</hi> <ref type="lawCode" target="law:ExcomVII">Excom VII</ref> 23</dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E04402">candel</ref></xr>
         <xr type="lawCode"><ref target="clause:ExcomVII_23">Excom VII 23</ref></xr>
       </entry>
     </body>

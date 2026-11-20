@@ -33,6 +33,7 @@
       <change when="2026-10-18">Abbreviations and law code (Norðleod) linked; see the pull request “þæt: indecl., Einl., Folg., Urkk.-Sprache, Norðleod”.</change>
       <change when="2026-10-28">“von” unlinked from the abbreviations list: here it is ordinary German, not an abbreviation (Anya Adair).</change>
       <change when="2026-11-01">Abbreviations “unfl.” and “Für” linked to the abbreviations list.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E04684; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -62,6 +63,7 @@
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/61748">ceorl (Supplement)</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/5858">carl</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/6191">ciorl</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E04684">ceorl</ref></xr>
         <xr type="lawCode"><ref target="clause:Abt_78">Abt 78</ref></xr>
         <xr type="lawCode"><ref target="clause:Abt_80">Abt 80</ref></xr>
         <xr type="lawCode"><ref target="clause:Hl_6">Hl 6</ref></xr>

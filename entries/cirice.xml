@@ -29,6 +29,7 @@
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
       <change when="2026-11-01">Abbreviations “unfl.” and “Für” linked to the abbreviations list.</change>
       <change when="2026-11-09">Iud Dei VII cited with MS A linked to the Old English text (A), not the Latin.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E04360; guessed from the DOE headword list, spelling variant (i/y/ie, double letters, -ian/-an); not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -48,6 +49,7 @@
         <xr type="derivative"><ref target="entry:feldcirice">feldcirice</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/6217">cirice</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/41713">cirice (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E04360">cyrice</ref></xr>
         <xr type="lawCode"><ref target="clause:Wi_1">Wi 1</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_5-1">Af 5,1</ref></xr>
         <xr type="lawCode"><ref target="clause:Prom-Reg_1-1">Sacr cor 1,1</ref></xr>

@@ -29,6 +29,7 @@
       <change when="2026-10-13">Page corrected from 35 to 36 (the page turns inside clæne), as in the team transcription (bocere - collaboratio.docx).</change>
       <change when="2026-10-17">Abbreviation links corrected after the review of the abbreviations list.</change>
       <change when="2026-10-17">Ordinary German words in Liebermann’s definitions unlinked from the abbreviations list (reviewed list, October 2026).</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E04815; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -44,6 +45,7 @@
         </dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/6280">clǽnsung</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/41804">clǽnsung (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E04815">clǣnsung</ref></xr>
         <xr type="lawCode"><ref target="clause:ICn_12">I Cn 12</ref></xr>
       </entry>
     </body>

@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-13">Page corrected from 35 to 36 (the page turns inside clæne), as in the team transcription (bocere - collaboratio.docx).</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E04810; guessed from the DOE headword list, same as the Bosworth-Toller headword; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -37,6 +38,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">clænnesse</hi> <hi rend="italic">Keuschheit; <ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>:</hi> ~ <ref type="lawCode" target="law:VIAtr">VI Atr</ref> 4; ~nisse <ref type="lawCode" target="law:IEm">I Em</ref> 1 <ref type="lawCode" target="law:Rb">Rb</ref> <ref type="lawCode" target="law:Ld">Ld</ref> | <hi rend="italic"><ref type="abbreviation" target="gram:accusativus"><abbr>ac</abbr></ref>:</hi> ~ healdan <ref type="lawCode" target="law:IEm">I Em</ref> 1. <ref type="lawCode" target="law:VAtr">V Atr</ref> 9,1 = <ref type="lawCode" target="law:VIAtr">VI</ref> 5,3 = <ref type="lawCode" target="law:ICn">I Cn</ref> 6,2a. <ref type="lawCode" target="law:VAtr">V Atr</ref> 6 = <ref type="lawCode" target="law:VIAtr">VI</ref> 3,1. <ref type="lawCode" target="law:Northu">Northu</ref> 65; ~ lufian <ref type="lawCode" target="law:VIAtr">VI Atr</ref> 5 = <ref type="lawCode" target="law:ICn">I Cn</ref> 6,1. <ref type="lawCode" target="law:VIAtr">VI Atr</ref> 41; ~nysse <ref type="lawCode" target="law:IVEg">IV Eg</ref> 1,7</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/6275">clǽnnes</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E04810">clǣnnes</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAtr_4">VI Atr 4</ref></xr>
         <xr type="lawCode"><ref target="clause:IEm_1">I Em 1</ref></xr>
         <xr type="lawCode"><ref target="clause:VAtr_9-1">V Atr 9,1</ref></xr>

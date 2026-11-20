@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E05434; guessed from the DOE headword list, spelling variant (i/y/ie, double letters, -ian/-an); not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,7 @@
           <orth>ciepan</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">ciepan</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref></hi>, <hi rend="italic">Kaufmanne</hi> <ref type="lawCode" target="law:Ine">Ine</ref> 25,1; ceapmen <ref type="lawCode" target="law:H">H</ref>; cypmen <ref type="lawCode" target="law:B">B</ref></dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E05434">cȳpan</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_25-1">Ine 25,1</ref></xr>
       </entry>
     </body>

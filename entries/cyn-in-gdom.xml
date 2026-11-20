@@ -28,6 +28,7 @@
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-13">Page corrected from 43 to 45 (the page turns inside cyning), as in the team transcription (collarium - d.docx).</change>
       <change when="2026-10-18">Abbreviations and law code (Norðleod) linked; see the pull request “þæt: indecl., Einl., Folg., Urkk.-Sprache, Norðleod”.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E05424; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -38,6 +39,7 @@
         </form>
         <dictScrap type="liebermann"><hi rend="bold">cyn[in]gdom</hi> <hi rend="italic">Königswürde; <ref type="abbreviation" target="gram:Genitiv"><abbr>gn</abbr></ref>:</hi> cyngdomes <ref type="lawCode" target="law:Northleoda">Norðleod</ref> 1 <ref type="lawCode" target="law:Quadr">Q</ref> <hi rend="italic"><ref type="abbreviation" target="gram:Variante"><abbr>Var.</abbr></ref>;</hi> cyned- <hi rend="italic"><ref type="abbreviation" target="gram:ubrig"><abbr>übrige</abbr></ref></hi></dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/7150">cyning-dóm</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E05424">cyning-dōm</ref></xr>
         <xr type="lawCode"><ref target="clause:Northleoda_1">Norðleod 1</ref></xr>
       </entry>
     </body>

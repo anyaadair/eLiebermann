@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E04673; guessed from the DOE headword list, same spelling; not yet checked).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,6 +36,7 @@
           <orth>ceol</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">ceol</hi> <hi rend="italic">Kiel, höheres Schiff</hi> <ref type="lawCode" target="law:IVAtr">IV Atr</ref> 2,1</dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E04673">cēol</ref></xr>
         <xr type="lawCode"><ref target="clause:IVAtr_2-1">IV Atr 2,1</ref></xr>
       </entry>
     </body>
