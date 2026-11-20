@@ -24,6 +24,7 @@ Found while matching headwords to the *Dictionary of Old English* (November 2026
 - [ ] **[ciricþen](https://anyaadair.github.io/eLiebermann/entry.html?id=ciricthen)**: one of its links is to *cyric-tún* ("churchyard"). Liebermann's word is a church servant: *cyric-þegn*.
 - [ ] **[æðel](https://anyaadair.github.io/eLiebermann/entry.html?id=aedel)**: it links to *éðel* ("homeland") as well as *ǽðel*. Liebermann glosses it "adlig, edel" ("noble"), so *éðel* is probably wrong.
 - [ ] **[fanna](https://anyaadair.github.io/eLiebermann/entry.html?id=fanna)**: it links to *fana* ("banner"). Liebermann's word is a winnowing fan ("Futterschwinge"): Bosworth–Toller *fann*.
+- [ ] **[gebycgean](https://anyaadair.github.io/eLiebermann/entry.html?id=gebycgean)**: it links to *ge-bígan* ("bend"). Liebermann's word is *gebycgan*, "buy": Bosworth–Toller *ge-bycgan*.
 
 ## English crib of the texts with no translation
 
