@@ -64,7 +64,7 @@ for r in R:
             continue
         at = m.start()
     s = s[:at] + lines + s[at:]
-    how = 'chosen by the editor on the review page' if checked else f'guessed from the DOE headword list, {r["how"]}; not yet checked'
+    how = 'chosen by the editor on the review page' if checked else f'guessed from the DOE headword list, {r["how"]}'
     note = (f'      <change when="{today}">Link to the Dictionary of Old English added '
             f'({", ".join(new)}; {html.escape(how, quote=False)}).</change>\n')
     m = re.search(r'^    </revisionDesc>', s, re.M)
