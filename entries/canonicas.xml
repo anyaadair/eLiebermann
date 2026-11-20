@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">Roman numerals of law codes after a quoted form linked (e.g. "Abyron III 2" = Excom III 2).</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E04408; chosen by the editor on the review page).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -38,6 +39,7 @@
         <dictScrap type="liebermann"><hi rend="bold">canonicas</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref>, Stiftsgeistliche, Kanoniker</hi> <ref type="lawCode" target="law:VAtr">V Atr</ref> 7 (<hi rend="italic"><ref type="abbreviation" target="gram:verbessert"><abbr>verbessert</abbr></ref> <ref type="abbreviation" target="gram:aus"><abbr>aus</abbr></ref></hi> canonas <ref type="lawCode" target="law:G2">G 2</ref>) = <ref type="lawCode" target="law:VIAtr">VI</ref> 4. 2,2 = <ref type="lawCode" target="law:ICn">I Cn</ref> 6a</dictScrap>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/5832">canonic</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/41368">canonic (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E04408">canonic</ref></xr>
         <xr type="lawCode"><ref target="clause:VAtr_7">V Atr 7</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAtr_4">VI Atr 4</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAtr_2-2">VI Atr 2,2</ref></xr>

@@ -31,6 +31,7 @@
       <change when="2026-10-17">“statt”, “regiert (von)”, “unsyntakt.” and the Accusativ terms linked to the abbreviations list.</change>
       <change when="2026-10-19">“pl”, “sg” linked to the abbreviations list (printed bold italic, missed before).</change>
       <change when="2026-11-06">Links to a clause whose sub-clause has the word sent to that sub-clause (data/citation-corrections.json).</change>
+      <change when="2026-11-20">Link to the Dictionary of Old English added (E05128; chosen by the editor on the review page).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -50,6 +51,7 @@
         <xr type="derivative"><ref target="entry:e-fe-ncristen">e[fe]ncristen</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/6719">cristen</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/42155">crísten (Supplement)</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E05128">cristen</ref></xr>
         <xr type="lawCode"><ref target="clause:VAtr_10">V Atr 10</ref></xr>
         <xr type="lawCode"><ref target="clause:VIAtr_12-1">VI Atr 12,1</ref></xr>
         <xr type="lawCode"><ref target="clause:VIIIAtr_2-1">VIII Atr 2,1</ref></xr>
