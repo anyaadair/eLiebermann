@@ -151,6 +151,8 @@
                 readUrl();
                 bind();
                 draw();
+                // the list's column headings now exist: measure them, so the jump stops below them
+                if (window.ELiebScroll && ELiebScroll.measure) ELiebScroll.measure();
                 if (location.hash) {
                     const anchor = decodeURIComponent(location.hash.slice(1));
                     const el = document.getElementById(anchor);
