@@ -37,6 +37,8 @@ html { scrollbar-gutter: stable; }
    stops a little way down the screen, not against its top edge, so the eye finds it and its first line
    is not cut off. One rule for the whole site: no element needs a scroll-margin of its own. */
 html { scroll-padding-top: clamp(3.5rem, 16vh, 8rem); }
+/* A list whose column headings stay at the top of the window (the Guides' lists): below them too. */
+html:has(.glossary) { scroll-padding-top: max(clamp(3.5rem, 16vh, 8rem), calc(var(--sticky-head-h, 2.2rem) + 1rem)); }
 .laws-panel, .entry-sidebar { scroll-padding-top: 2rem; }
 @supports not (scrollbar-gutter: stable) { html { overflow-y: scroll; } }
 
@@ -1429,7 +1431,7 @@ ruby.gloss-pair rt.gloss-word { font-size: 0.68em; line-height: 1.1; color: #4a4
     body:has(.entry-layout) .entry-with-scan.scan-loaded .entry-scan-divider { height: calc(100vh - var(--site-top-h, 0px) - 2rem); }
     body:has(.entry-layout) .entry-scan.loaded { height: calc(100vh - var(--site-top-h, 0px) - 2rem); }
     body:has(.laws-layout, .entry-layout) .glossary thead th { top: var(--site-top-h, 0px); }
-    html:has(.laws-layout, .entry-layout) { scroll-padding-top: calc(var(--site-top-h, 0px) + 0.75rem); }
+    html:has(.laws-layout, .entry-layout) { scroll-padding-top: calc(var(--site-top-h, 0px) + var(--sticky-head-h, 0px) + 1rem); }
 }
 
 /* An entry that only points to where Liebermann prints a passage in full (law.html, data/redirects.json) */
