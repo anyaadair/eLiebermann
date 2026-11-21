@@ -879,6 +879,17 @@ a.clause-compare__who:hover, a.clause-compare__who:focus-visible { text-decorati
 .entry-nav a:hover .entry-nav__word, .entry-nav a:focus-visible .entry-nav__word { text-decoration: underline; text-underline-offset: 3px; }
 /* Laws page: the list of law codes */
 .code-group h2 { font-size: 1.35rem; margin: 1.6em 0 0.4em; }
+/* a folded group on the Laws page (FOLDED_GROUPS in laws.html) */
+.code-group--fold > summary { list-style: none; cursor: pointer; display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.3rem 0.75rem; }
+.code-group--fold > summary::-webkit-details-marker { display: none; }
+.code-group--fold > summary h2 { display: inline; }
+.code-group--fold > summary h2::before { content: "▸"; display: inline-block; width: 1.1em; color: var(--navy); transition: transform .15s; }
+.code-group--fold[open] > summary h2::before { transform: rotate(90deg); }
+.code-fold-count { font-family: var(--sans); font-size: 0.85rem; color: var(--muted); }
+.code-fold-hint::before { content: "\00a0·\00a0"; }
+.code-fold-hint::after { content: "show"; color: var(--navy); text-decoration: underline; text-underline-offset: 2px; }
+.code-group--fold[open] .code-fold-hint::after { content: "hide"; }
+.code-group--fold > summary:focus-visible { outline: 2px solid var(--navy); outline-offset: 3px; }
 .code-group-reign { font-family: var(--sans, inherit); font-size: 0.9rem; font-weight: 400; color: var(--muted); margin-left: 0.4rem; }
 .code-list { list-style: none; margin: 0; padding: 0; }
 .code-list li { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0.2rem 1rem; padding: 0.45rem 0; border-bottom: 1px solid #ebe8e1; }

@@ -423,17 +423,29 @@ scripts:
         const n = gs.reduce((a, g) => a + g.items.length, 0);
         count.textContent = n === codes.length ? `${codes.length} law codes, ${clauses.length} clauses` : `${plural(n, 'law code', 'law codes')} of ${codes.length}`;
         tally.innerHTML = tools.innerHTML = '';
-        results.innerHTML = gs.map(g => `
-            <section class="code-group">
-                <h2>${esc(g.name)}${g.reign && g.items[0].king && !REIGN_PER_CODE.has(g.name) ? ` <span class="code-group-reign">${esc(g.reign)}</span>` : ''}</h2>
+        results.innerHTML = gs.map(g => {
+            const heading = `${esc(g.name)}${g.reign && g.items[0].king && !REIGN_PER_CODE.has(g.name) ? ` <span class="code-group-reign">${esc(g.reign)}</span>` : ''}`;
+            // a long group of little-used texts starts folded; it opens on a click, or when codes are chosen
+            const fold = FOLDED_GROUPS.has(g.name);
+            const open = !fold || S.codes.size || openFolds.has(g.name);
+            return `
+            ${fold ? `<details class="code-group code-group--fold" data-group="${esc(g.name)}"${open ? ' open' : ''}>
+                <summary><h2>${heading}</h2> <span class="code-fold-count">${esc(plural(g.items.length, 'text', 'texts'))}<span class="code-fold-hint"></span></span></summary>` : `<section class="code-group">
+                <h2>${heading}</h2>`}
                 <ul class="code-list">${g.items.map(c => `
                     <li>
                         <span class="code-title"><a href="${codeUrl(c.code)}"><span class="code-abbr">${esc(c.code)}</span> <span class="code-name">${esc(c.name)}</span></a>${REIGN_PER_CODE.has(g.name) && c.reign ? ` <span class="code-group-reign">${esc(c.reign)}</span>` : ''}${Wulfstan.codeBadges(c.code) ? ' ' + Wulfstan.codeBadges(c.code) : ''}</span>
                         <span class="code-meta">${esc(plural(c.clauses, 'clause', 'clauses'))}</span>
                     </li>${reconstructedRow(c.code)}`).join('')}
                 </ul>
-            </section>`).join('') || '<p>No law codes match these choices.</p>';
+            ${fold ? '</details>' : '</section>'}`; }).join('') || '<p>No law codes match these choices.</p>';
+        results.querySelectorAll('details.code-group--fold').forEach(d => d.addEventListener('toggle', () => {
+            d.open ? openFolds.add(d.dataset.group) : openFolds.delete(d.dataset.group);
+        }));
     }
+    // groups shown folded on the list of law codes (the many short ordeal and excommunication texts)
+    const FOLDED_GROUPS = new Set(['Ordeal rituals and excommunication formulae']);
+    const openFolds = new Set();
 
     // A reconstructed continuous text (ELieb.RECONSTRUCTED) is listed under its code as an extra.
     function reconstructedRow(code) {
