@@ -1833,7 +1833,18 @@ ${translation}
         return abbreviations;
     }
 
+    /**
+     * Texts that Liebermann prints only in pieces, beside the codes they translate, and that the
+     * site also gives as one continuous, reconstructed text. Shown on the Laws page under the code
+     * and at the top of its law-code page.
+     */
+    const RECONSTRUCTED = {
+        'In Cn': { href: 'instituta.html', title: 'Instituta Cnuti, read in order',
+            note: 'The whole text in the translator’s order, put back together from the columns where Liebermann prints it beside Cnut, Alfred, Ine, Edgar and the texts on rank.' }
+    };
+
     const api = {
+        RECONSTRUCTED,
         TEI_NS, LANGUAGES, LANGUAGE_CODES, langAttr, setLang, languageBadge, grammarLangBadge, properNounBadge, isProperNoun, hiddenLanguages, setHiddenLanguages, isShown, KINDS, kindFilter, kindTags,
         useDom, slugify, sortKey, alphaKey, letterOf, ALPHABET, escapeXml, safeUrl,
         linkAbbreviations, loadAbbreviations, extractCitations, linkClauseNumbers, formBefore, expandTilde, jumpLink, citationXr, splitSenses, splitOutline, splitBreaks, sensesXml, detectLanguage, detectHeadword,
