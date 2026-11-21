@@ -7,24 +7,46 @@ scripts:
 ---
 <div id="site-page" data-page="Home"><p class="loading">Loading…</p></div>
 
+<section class="at-a-glance" aria-label="eLiebermann at a glance">
+    <div><span class="glance-num" id="glance-codes">124</span><span class="glance-label">law codes and legal texts</span></div>
+    <div><span class="glance-num" id="glance-clauses">5,647</span><span class="glance-label">clauses, with Liebermann’s text, translation and notes</span></div>
+    <div><span class="glance-num" id="glance-entries">9,090</span><span class="glance-label">entries of the <i>Wörterbuch</i></span></div>
+    <div><span class="glance-num" id="glance-xr">3,214</span><span class="glance-label">cross-references between clauses</span></div>
+</section>
+<script>
+// the figures above, counted from the data itself (the numbers in the page are the fallback)
+(function () {
+    const n = x => x.toLocaleString('en-GB');
+    const put = (id, v) => { const e = document.getElementById(id); if (e && v) e.textContent = n(v); };
+    fetch('oe-laws/codes.json').then(r => r.json()).then(cs => { put('glance-codes', cs.length); put('glance-clauses', cs.reduce((a, c) => a + (c.clauses || 0), 0)); }).catch(() => {});
+    fetch('data/entries.json').then(r => r.json()).then(es => put('glance-entries', es.length)).catch(() => {});
+})();
+</script>
+
 <h2>Explore</h2>
 <div class="card-grid">
     <a class="card" href="laws.html">
         <h3>Laws</h3>
-        <p>Search the clauses of the Old English law codes by code and clause number, by subject, or by the words of the text, with editions and translations side by side.</p>
+        <p>Read the codes clause by clause, with Liebermann’s text and translation beside later editions; search by word, subject or code.</p>
     </a>
     <a class="card" href="dictionary.html">
         <h3>Dictionary</h3>
-        <p>Browse and search the entries of Liebermann's <em>Wörterbuch</em>, with every law code and abbreviation linked.</p>
+        <p>Liebermann’s <em>Wörterbuch</em>, with his abbreviations explained and every clause he cites linked.</p>
     </a>
     <a class="card" href="abbreviations.html">
         <h3>Guides</h3>
-        <p>The law codes, manuscripts and German grammatical shorthand Liebermann uses, expanded and translated.</p>
+        <p>The sigla, manuscripts, abbreviations and authorities of the <em>Gesetze</em>, expanded and translated.</p>
+    </a>
+    <a class="card" href="visualisations/index.html">
+        <h3>Visualisation Tools</h3>
+        <p>How the codes borrow from one another, where and when they were made, and the words and subjects they share.</p>
     </a>
     <a class="card" href="editorial.html">
         <h3>Editorial Principles</h3>
-        <p>The editorial decisions behind the dictionary and the law codes, and the reasons for them: what has been reproduced from Liebermann, and what has been added.</p>
+        <p>What is reproduced from Liebermann, what has been added, and how the texts were transcribed and checked.</p>
+    </a>
+    <a class="card" href="about.html#citing">
+        <h3>Citing eLiebermann</h3>
+        <p>How to cite the site, an entry or a clause, and how to cite Liebermann’s printed edition alongside it.</p>
     </a>
 </div>
-
-<p class="small muted"><a href="about.html">More about the project</a>.</p>
