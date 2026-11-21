@@ -114,7 +114,7 @@ scripts:
     ];
     const wulfstanCodes = () => codes.filter(c => Wulfstan.kindsOf(c.code).size).map(c => c.code);
     const S = {
-        where: new Set(['orig']), match: 'whole',
+        where: new Set(['orig']), match: 'part',
         dict: '', kws: [], kwMode: 'all', codes: new Set(), langs: new Set()
     };
 
@@ -123,7 +123,7 @@ scripts:
         q.value = p.get('q') || '';
         w.value = p.get('w') || '';
         if (p.get('in')) S.where = new Set(p.get('in').split(',').filter(x => WHERE.some(([k]) => k === x)));
-        S.match = p.get('m') === 'part' ? 'part' : 'whole';
+        S.match = p.get('m') === 'whole' ? 'whole' : 'part';   // parts of words is the default: spellings vary
         tol.checked = p.get('tol') === '1';
         S.dict = p.get('d') || '';
         S.kws = (p.get('kw') || '').split('|').map(x => x.trim()).filter(Boolean);
@@ -141,7 +141,7 @@ scripts:
         if (w.value.trim()) {
             p.set('w', w.value.trim());
             if ([...S.where].join(',') !== 'orig') p.set('in', [...S.where].join(','));
-            if (S.match === 'part') p.set('m', 'part');
+            if (S.match === 'whole') p.set('m', 'whole');
             if (tol.checked) p.set('tol', '1');
         }
         if (S.dict) p.set('d', S.dict);
@@ -264,7 +264,7 @@ scripts:
     $('reset').addEventListener('click', () => {
         q.value = w.value = d.value = kw.value = '';
         tol.checked = false;
-        Object.assign(S, { where: new Set(['orig']), match: 'whole', dict: '', kws: [], kwMode: 'all', codes: new Set(), langs: new Set() });
+        Object.assign(S, { where: new Set(['orig']), match: 'part', dict: '', kws: [], kwMode: 'all', codes: new Set(), langs: new Set() });
         changed();
     });
 
@@ -502,7 +502,7 @@ scripts:
             (subject ? ` · <a href="${root}subjects.html?k=${encodeURIComponent(subject)}">See “${esc(subject)}” through all the law codes</a>` : '');
         if (!list.length) {
             tally.innerHTML = tools.innerHTML = '';
-            results.innerHTML = '<p>No clauses match. Try fewer words or keywords, “Parts of words”, more places to look, or all law codes.</p>' + ambiguous();
+            results.innerHTML = '<p>No clauses match. Try fewer words or keywords, “Spelling tolerance”, more places to look, or all law codes.</p>' + ambiguous();
             return;
         }
         // How many in each law code; a click narrows the search to that code.

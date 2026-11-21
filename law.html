@@ -1446,7 +1446,7 @@ scripts:
         });
         // find on this page (the clause, or the whole code when it is shown)
         const find = $('find'), tol = $('tol');
-        let matchMode = 'whole', marks = [], at = -1;
+        let matchMode = 'part', marks = [], at = -1;   // parts of words is the default: spellings vary
         // fromLink: the box was filled from a dictionary entry (?find=), and is looked for with the
         // links' own spelling tolerance (law-search.js), not the reader's, until the reader changes it
         let fromLink = false;
@@ -1581,6 +1581,7 @@ scripts:
         if (wanted.length || also.length || extra.length) {
             tol.checked = true;
             fromLink = true;
+            matchMode = 'whole'; drawMatch();   // a dictionary link marks whole words (its own beginnings come with *)
             // a link may carry only also= or mark=; a link for a Latin translation (it begins with a phrase, or
             // brings its own beginnings, "liber*") gets no shorter beginnings made here
             const letters = /^"/.test(wanted[0] || '') || wanted.some(w => /\*$/.test(w)) ? [] : [...(wanted[0] || '')];
