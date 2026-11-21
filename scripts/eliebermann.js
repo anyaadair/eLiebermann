@@ -1737,7 +1737,7 @@ ${translation}
             case 'abbr': return '<abbr>' + inner() + '</abbr>';
             case 'lb': return '<br>';
             case 'pb': return `<span class="pb" title="Page ${escapeXml(attr('n'))} of the printed volume">[p. ${escapeXml(attr('n'))}]</span>`;
-            case 'p': return '<p>' + inner() + '</p>';
+            case 'p': { const pr = node.getAttribute('rend'); return (pr ? `<p class="${escapeXml(pr)}">` : '<p>') + inner() + '</p>'; }
             // <head rend="sub"> is a subheading within a section (site pages).
             case 'head': {
                 const hid = node.getAttribute('xml:id') ? ' id="' + escapeXml(node.getAttribute('xml:id')) + '"' : '';   // a heading others link to
@@ -1750,7 +1750,7 @@ ${translation}
             case 'item': return '<li>' + inner() + '</li>';
             case 'title': return '<cite>' + inner() + '</cite>';
             case 'quote': return '<q>' + inner() + '</q>';
-            case 'div': return '<section>' + inner() + '</section>';
+            case 'div': { const did = node.getAttribute('xml:id') || node.getAttributeNS('http://www.w3.org/XML/1998/namespace', 'id'); return (did ? `<section id="${escapeXml(did)}">` : '<section>') + inner() + '</section>'; }
             case 'foreign': return `<i${langAttr(node.getAttribute('xml:lang') || '')}>` + inner() + '</i>';
             default: return inner();
         }
@@ -1845,8 +1845,33 @@ ${translation}
             note: 'The whole text in the translator’s order, put back together from the columns where Liebermann prints it beside I and II Cnut, VIII Æthelred, Be blaserum, Forfang and the Hundred Ordinance.' }
     };
 
+    /**
+     * "Cite this page" on dictionary entries and clauses: the form given on the About page, filled in,
+     * with a button that copies it. kind: 'entry' or 'clause'; label: the headword or the citation;
+     * after: where it is in Liebermann ("II.1, p. 26").
+     */
+    // (keep the version in step with site_version in _config.yml and the About page)
+    const SITE = { version: '0.9', url: 'https://anyaadair.github.io/eLiebermann/' };
+    function citeThis(kind, label, after) {
+        const work = kind === 'entry' ? 'eLiebermann Legal Dictionary' : 'eLiebermann Lawcodes Database';
+        const here = SITE.url + location.pathname.split('/').pop() + location.search.replace(/&.*$/, '');
+        const today = new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+        const text = `“${label}”, in ${work}, ed. Anya Adair, version ${SITE.version}, ${here} (accessed ${today})` + (after ? `; after Felix Liebermann, Die Gesetze der Angelsachsen, ${after}.` : '.');
+        const html = `“${escapeXml(label)}”, in <i>${work}</i>, ed. Anya Adair, version ${SITE.version}, ${escapeXml(here)} (accessed ${today})` + (after ? `; after Felix Liebermann, <i>Die Gesetze der Angelsachsen</i>, ${escapeXml(after)}.` : '.');
+        return `<section class="entry-section cite-this"><h2>Cite this page</h2><p class="cite-form" data-cite="${escapeXml(text)}">${html}</p>`
+            + `<p class="small muted"><button type="button" class="button button--small" data-copy-cite>Copy the citation</button> <a href="${(window.SITE_ROOT || '')}about.html#citing">More on citing eLiebermann</a></p></section>`;
+    }
+    document.addEventListener('click', ev => {
+        const btn = ev.target.closest && ev.target.closest('[data-copy-cite]');
+        if (!btn) return;
+        const box = btn.closest('.cite-this').querySelector('[data-cite]');
+        const done = () => { btn.textContent = 'Copied'; setTimeout(() => { btn.textContent = 'Copy the citation'; }, 1800); };
+        const select = () => { const r = document.createRange(); r.selectNodeContents(box); const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r); btn.textContent = 'Selected: press Ctrl+C or ⌘C'; };
+        (navigator.clipboard && navigator.clipboard.writeText ? navigator.clipboard.writeText(box.dataset.cite).then(done, select) : (select(), null));
+    });
+
     const api = {
-        RECONSTRUCTED,
+        RECONSTRUCTED, citeThis,
         TEI_NS, LANGUAGES, LANGUAGE_CODES, langAttr, setLang, languageBadge, grammarLangBadge, properNounBadge, isProperNoun, hiddenLanguages, setHiddenLanguages, isShown, KINDS, kindFilter, kindTags,
         useDom, slugify, sortKey, alphaKey, letterOf, ALPHABET, escapeXml, safeUrl,
         linkAbbreviations, loadAbbreviations, extractCitations, linkClauseNumbers, formBefore, expandTilde, jumpLink, citationXr, splitSenses, splitOutline, splitBreaks, sensesXml, detectLanguage, detectHeadword,

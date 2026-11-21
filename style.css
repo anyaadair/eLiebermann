@@ -124,26 +124,22 @@ code, pre, textarea.code { font-family: var(--mono); font-size: 0.9em; }
 }
 .site-header--slim .site-subtitle { margin: 0; color: var(--muted); font-size: 1.05rem; }
 
-/* "Site under construction" tape, in both headers. */
-.construction {
+/* The release label beside the logo ("Beta · version 0.9"), in both headers (_config.yml site_status). */
+.site-status { margin: 0.45rem 0 0.2rem; font-family: var(--sans); }
+.site-status a {
     display: inline-block;
-    margin: 0.5rem 0 0.25rem;
-    padding: 3px;
-    border-radius: 4px;
-    background: repeating-linear-gradient(-45deg, #f2b705 0 8px, var(--navy-dark) 8px 16px);
-}
-.construction span {
-    display: block;
-    padding: 0.15rem 0.75rem;
-    border-radius: 2px;
-    background: #fff3c4;
-    color: var(--navy-dark);
-    font-size: 0.8rem;
+    padding: 0.1rem 0.65rem;
+    border: 1px solid var(--navy);
+    border-radius: 999px;
+    color: var(--navy);
+    font-size: 0.72rem;
     font-weight: 600;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
+    text-decoration: none;
 }
-.site-header--slim .construction { margin: 0 0 0 auto; }
+.site-status a:hover, .site-status a:focus-visible { background: var(--navy); color: #fff; }
+.site-header--slim .site-status { margin: 0 0 0 auto; }
 
 .main-nav, .sub-nav { background: var(--navy-dark); }
 .main-nav ul, .sub-nav ul {
@@ -764,6 +760,11 @@ body.full-width .main-content { max-width: none; padding: 0; }
     body { font-size: 16px; }
     h1 { font-size: 1.8rem; }
     .main-nav ul, .sub-nav ul { gap: 0 1rem; }
+    /* the menus keep to one line and scroll sideways, instead of taking three lines of the screen */
+    .main-nav ul, .sub-nav ul { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+    .main-nav ul::-webkit-scrollbar, .sub-nav ul::-webkit-scrollbar { display: none; }
+    .main-nav li, .sub-nav li { flex: none; }
+    .main-nav { -webkit-mask-image: linear-gradient(to right, #000 88%, transparent); mask-image: linear-gradient(to right, #000 88%, transparent); }
     td.term { white-space: normal; }
 }
 
@@ -1481,3 +1482,12 @@ ruby.gloss-pair rt.gloss-word { font-size: 0.68em; line-height: 1.1; color: #4a4
 .lnotes a.note-siglum:hover { color: var(--accent, #7a3b12); }
 /* a note mark whose note is not yet entered (law.html noteRef) */
 .lnote-ref--absent { color: var(--muted); cursor: help; }
+
+/* Home page: the figures at a glance (index.html) */
+.at-a-glance { display: grid; grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr)); gap: 1rem 1.5rem; margin: 2rem 0 0.5rem; padding: 1.1rem 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+.at-a-glance > div { display: flex; flex-direction: column; gap: 0.15rem; min-width: 0; }
+.glance-num { font-family: var(--serif, Georgia, serif); font-size: 1.9rem; line-height: 1.1; color: var(--navy); font-variant-numeric: lining-nums tabular-nums; }
+.glance-label { font-family: var(--sans); font-size: 0.85rem; color: var(--muted); line-height: 1.35; }
+
+/* a citation form to copy (About, Citing eLiebermann) */
+.cite-form { padding: 0.55rem 0.85rem; border-left: 3px solid var(--rule); background: var(--surface, #f6f4ef); overflow-wrap: anywhere; }

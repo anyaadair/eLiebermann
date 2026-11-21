@@ -57,7 +57,7 @@
             <img src="{{ root }}images/eliebermann.svg" alt="eLiebermann" width="510" height="74">
         </a>
         <p class="site-subtitle">{{ tagline }}</p>
-        <p class="construction"><span>Site under construction</span></p>
+        {%- if site.site_status != "" %}<p class="site-status" title="eLiebermann is in its public beta: the texts, links and translations are being added to and corrected continuously."><a href="{{ root }}about.html#version">{{ site.site_status }} · version {{ site.site_version }}</a></p>{%- endif %}
     </header>
     {%- else %}
     <header class="site-header site-header--slim">
@@ -78,7 +78,7 @@
             <img class="site-lockup" src="{{ root }}images/eliebermann-dictionary.svg" alt="eLiebermann: legal dictionary" width="511" height="112">
         </a>
         {%- endif %}
-        <p class="construction"><span>Site under construction</span></p>
+        {%- if site.site_status != "" %}<p class="site-status" title="eLiebermann is in its public beta: the texts, links and translations are being added to and corrected continuously."><a href="{{ root }}about.html#version">{{ site.site_status }} · version {{ site.site_version }}</a></p>{%- endif %}
     </header>
     {%- endif %}
 

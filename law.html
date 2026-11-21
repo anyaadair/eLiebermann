@@ -1335,6 +1335,10 @@ scripts:
         report.innerHTML = '<p>Spotted a problem on this page: a mistranscription, a mistake in the translation, a missing manuscript reading, something wrong with the layout?</p><button type="button" class="button" data-open-suggest>Report a problem</button>';
         target.appendChild(report);
         if (window.SuggestChange) SuggestChange.attach(report, { headword: row.citation, page: location.href.split('#')[0], section: 'laws', simple: true });
+        // "Cite this page", above the report box
+        { const pg = (typeof liebPage !== 'undefined' && liebPage) || row.page || '';
+          const holder = el('div'); holder.innerHTML = ELieb.citeThis('clause', row.citation, pg ? 'I, p. ' + pg : 'I');
+          report.parentNode ? report.parentNode.insertBefore(holder.firstElementChild, report) : null; }
         // Just above the cross-references (or, with none, straight after the texts).
         const navTop = nav;
         navTop.classList.add('clause-nav--top');

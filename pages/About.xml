@@ -20,54 +20,52 @@
       <change when="2026-10-15">Rewritten: the project, Liebermann and the Gesetze, how the dictionary and the law codes database are made, citation of both, people, and rights and reuse. Added the funding acknowledgement; the database is the Lawcodes Database.</change>
       <change when="2026-10-19">The section How Entries Are Made moved to Editorial Principles; the opening now points readers there.</change>
       <change when="2026-10-19">The descriptions of the three parts now give a brief list of contents for each.</change>
+      <change when="2026-11-21">Revised for the public beta: current figures; a section on the release and how to report errors; a fuller section on citing, with a form for the whole resource and the version; acknowledgement of the use of a large language model; people and rights brought up to date.</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="page">
         <head>About the eLiebermann Project</head>
-        <p>The eLiebermann database is a digital research platform for the laws and legal language of early England. Its foundation is Felix Liebermann's <title>Die Gesetze der Angelsachsen</title> (1903–16), still the standard complete edition of the early English laws, which it makes searchable, interlinked and accessible to Anglophone readers. Around that core it collates later editions, translations and scholarship, so that the text of a law, the words it uses, and what scholars have said about both can be studied in one place.</p>
-        <p>The platform has three parts:</p>
+        <p>eLiebermann is a digital research resource for the laws and legal language of early England. Its foundation is Felix Liebermann’s <title>Die Gesetze der Angelsachsen</title> (1903–16), still the standard complete edition of the early English laws, which it makes searchable, interlinked and accessible to readers of English. Around that core it gathers later editions, translations and scholarship, so that the text of a law, the words it uses, and what scholars have said about both can be studied in one place.</p>
+        <p>It has three parts:</p>
         <list>
-          <item><hi rend="bold">The eLiebermann Lawcodes Database</hi> presents the laws clause by clause, according to Liebermann's own editorial divisions. It contains:
+          <item><hi rend="bold">The eLiebermann Lawcodes Database</hi> presents the laws clause by clause, according to Liebermann’s own editorial divisions and in his order. It contains:
             <list>
-              <item>the Old English or Latin text as Liebermann prints it, labelled by manuscript;</item>
-              <item>Liebermann's German translation, with an English crib;</item>
-              <item>the texts and translations of later editors, where these are in the public domain;</item>
-              <item>Liebermann's textual notes and commentary;</item>
-              <item>a new subject index of offences, people and places;</item>
-              <item>cross-references between clauses, from Liebermann and later scholars, with citations.</item>
+              <item>the Old English, Latin or French text as Liebermann prints it, labelled by manuscript;</item>
+              <item>Liebermann’s German translation, with an English rendering of it;</item>
+              <item>the texts and translations of later editors (see <ref target="#rights">Rights</ref> below);</item>
+              <item>Liebermann’s textual notes and commentary, with his references to other works and manuscripts explained;</item>
+              <item>a new subject index of offences, persons, institutions and places;</item>
+              <item>cross-references between clauses, from Liebermann and from later scholars, each with its source and linked in both directions;</item>
+              <item>continuous reading texts of the <title>Instituta Cnuti</title> and the <title>Consiliatio Cnuti</title>, which Liebermann prints only in pieces beside their sources.</item>
             </list>
           </item>
-          <item><hi rend="bold">The eLiebermann Legal Dictionary</hi> is a digital edition of Liebermann's <title>Wörterbuch</title> (volume II, part 1), the dictionary of the Old English, Latin and French words of the laws. It contains:
+          <item><hi rend="bold">The eLiebermann Legal Dictionary</hi> is a digital edition of Liebermann’s <title>Wörterbuch</title> (volume II, part 1), the dictionary of the Old English, Latin and French words of the laws. It contains:
             <list>
-              <item>links for abbreviations and grammatical terms, with expansions and English translations;</item>
-              <item>links for law-code and manuscript sigla;</item>
-              <item>links from each law cited to its clause in the Lawcodes Database;</item>
-              <item>links to the works Liebermann cites;</item>
-              <item>links to entries in other dictionaries (in progress).</item>
+              <item>Liebermann’s abbreviations and grammatical terms, expanded and translated;</item>
+              <item>his sigla for law codes and manuscripts, explained;</item>
+              <item>a link from every law he cites to the clause in the Lawcodes Database, with the word marked;</item>
+              <item>links to the works he cites;</item>
+              <item>links to the corresponding entries in Bosworth–Toller and the <title>Dictionary of Old English</title> (still being checked).</item>
             </list>
           </item>
-          <item><hi rend="bold">The eLiebermann Guide to the Gesetze</hi> expands and translates the apparatus of the <title>Gesetze</title>. It contains:
-            <list>
-              <item>Liebermann's sigla for the law codes;</item>
-              <item>his list of manuscripts;</item>
-              <item>his grammatical terms and abbreviations;</item>
-              <item>the authors and works he cites;</item>
-              <item>his own account of how to read the dictionary;</item>
-              <item>his forewords, in German and English.</item>
-            </list>
-          </item>
+          <item><hi rend="bold">The eLiebermann Guide to the Gesetze</hi> expands and translates the apparatus of the <title>Gesetze</title>: Liebermann’s sigla for the law codes; his list of manuscripts; his grammatical terms and abbreviations; the authors and works he cites; his own account of how to read the dictionary; and his forewords, in German and English.</item>
         </list>
-        <p>The project grows out of research on the language and composition of the earliest English law codes. Its aims are to open Liebermann's foundational work to more scholars, and to facilitate new research into the earliest English written laws.</p>
+        <p>The project grows out of research on the language and composition of the earliest English law codes. Its aims are to open Liebermann’s foundational work to more scholars, and to make possible new research on the earliest English written laws.</p>
         <p>At present eLiebermann holds:</p>
         <list>
-          <item>9,246 dictionary entries, the whole of the <title>Wörterbuch</title>;</item>
-          <item>2,547 clauses from 78 law codes and legal texts, from the laws of Æthelberht of Kent to those of William I and Henry I;</item>
-          <item>the texts and translations of a number of more modern editions, among them those of F. L. Attenborough and A. J. Robertson;</item>
-          <item>1,348 cross-references between clauses from Liebermann's apparatus, and about 1,500 more from later scholars, each linked in both directions.</item>
+          <item>9,090 dictionary entries, the whole of the <title>Wörterbuch</title>;</item>
+          <item>5,647 clauses of 124 law codes and legal texts, from the laws of Æthelberht of Kent to the Anglo-Norman law books of the twelfth century, with the ordeal rituals and excommunication formulae;</item>
+          <item>the texts and translations of later editions, among them those of F. L. Attenborough, A. J. Robertson and Dorothy Whitelock;</item>
+          <item>3,214 cross-references between clauses: 1,708 from Liebermann’s margins, notes and commentary, and the rest from later scholars.</item>
         </list>
-        <p>eLiebermann is a work in progress. New material is added, and existing material corrected, continuously. The principles on which the texts have been edited, and the methods by which they have been transcribed, checked and encoded, are set out under <ref target="editorial.html">Editorial Principles</ref>.</p>
+        <p>The principles on which the texts have been edited, and the methods by which they have been transcribed, checked and encoded, are set out under <ref target="editorial.html">Editorial Principles</ref>.</p>
+      </div>
+      <div type="section" xml:id="version">
+        <head>Release and corrections</head>
+        <p>eLiebermann is in public beta (version 0.9, November 2026). All of Liebermann’s laws and the whole of the <title>Wörterbuch</title> are on the site, but the checking of transcriptions against the printed volumes, and of links to other dictionaries, is still under way, and material is added and corrected continuously. Each dictionary entry and clause keeps a history of the changes made to it.</p>
+        <p>Corrections are welcome. Every dictionary entry and clause page has a button for suggesting a change or reporting a problem, which sends a note to the editor; reports are read and answered, and the correction is recorded in the history of the page.</p>
       </div>
       <div type="section">
         <head>Felix Liebermann and <title>Die Gesetze der Angelsachsen</title></head>
@@ -80,31 +78,38 @@
           <item><hi rend="bold">II.2. Rechts- und Sachglossar</hi> (1912): a glossary of legal and historical subjects;</item>
           <item><hi rend="bold">III. Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</hi> (1916): an introduction to each text and a commentary on individual passages.</item>
         </list>
-        <p>More than a century later the <title>Gesetze</title> remains the edition from which the laws are commonly cited, and much of what has been written on early English law since rests on it. But it is not an easy book to use. It is written in a heavily abbreviated academic German, it depends on hundreds of sigla, and its apparatus is dense and occasionally inconsistent. Parts of its scholarship have also been substantially revised by later studies. eLiebermann keeps Liebermann's text as he printed it, and sets beside it the work of the century since.</p>
+        <p>More than a century later the <title>Gesetze</title> remains the edition from which the laws are commonly cited, and much of what has been written on early English law since rests on it. But it is not an easy book to use. It is written in a heavily abbreviated academic German, it depends on hundreds of sigla, and its apparatus is dense and occasionally inconsistent. Parts of its scholarship have also been substantially revised by later studies. eLiebermann keeps Liebermann’s text as he printed it, and sets beside it the work of the century since.</p>
       </div>
-      <div type="section">
+      <div type="section" xml:id="citing">
         <head>Citing eLiebermann</head>
-        <p>When you use eLiebermann, you can open the linked archive.org pdfs of <title>Die Gesetze der Angelsachsen</title> to confirm the text and cite directly to the printed work:</p>
-        <p>Felix Liebermann, ed. and trans., <title>Die Gesetze der Angelsachsen</title>, 3 vols (Halle: Niemeyer, 1903–16).</p>
-        <p>If you would like to cite directly to the eLiebermann database, you can use this form:</p>
-        <p><hi rend="bold">A dictionary entry:</hi> “bocland”, <title>eLiebermann Legal Dictionary</title>, ed. Anya Adair, https://anyaadair.github.io/eLiebermann/entry.html?id=bocland (accessed 15 October 2026); after Felix Liebermann, ed. and trans., <title>Die Gesetze der Angelsachsen</title>, 3 vols (Halle: Niemeyer, 1903–16), II.1, p. 26.</p>
-        <p><hi rend="bold">A law-code clause:</hi> “Ine 23.2”, <title>eLiebermann Lawcodes Database</title>, ed. Anya Adair, https://anyaadair.github.io/eLiebermann/law.html?id=Ine_23-2 (accessed 15 October 2026); after Felix Liebermann, ed. and trans., <title>Die Gesetze der Angelsachsen</title>, 3 vols (Halle: Niemeyer, 1903–16), I, p. 98.</p>
-        <p>When quoting a modern edition or translation of a clause, please cite that edition as well; its full reference is given on the page.</p>
+        <p>Every page links to the scan of the printed page of the <title>Gesetze</title> on which it rests, so that the text can be checked, and cited, from the print:</p>
+        <p rend="cite-form">Felix Liebermann, ed. and trans., <title>Die Gesetze der Angelsachsen</title>, 3 vols (Halle: Niemeyer, 1903–16).</p>
+        <p>To cite eLiebermann as a whole:</p>
+        <p rend="cite-form">Anya Adair, ed., <title>eLiebermann: A Database of Early English Laws and Legal Language, after Felix Liebermann</title>, version 0.9 (2026), https://anyaadair.github.io/eLiebermann/.</p>
+        <p>To cite a dictionary entry or a clause (each page gives its own citation in this form, ready to copy, under “Cite this page”):</p>
+        <p rend="cite-form"><hi rend="bold">A dictionary entry:</hi> “bocland”, in <title>eLiebermann Legal Dictionary</title>, ed. Anya Adair, version 0.9, https://anyaadair.github.io/eLiebermann/entry.html?id=bocland (accessed 21 November 2026); after Liebermann, <title>Gesetze</title> II.1, p. 26.</p>
+        <p rend="cite-form"><hi rend="bold">A clause:</hi> “Ine 23.2”, in <title>eLiebermann Lawcodes Database</title>, ed. Anya Adair, version 0.9, https://anyaadair.github.io/eLiebermann/law.html?id=Ine_23-2 (accessed 21 November 2026); after Liebermann, <title>Gesetze</title> I, p. 98.</p>
+        <p>When you quote a later edition or translation of a clause, please cite that edition too: its full reference is given on the page.</p>
       </div>
-      <div type="section">
+      <div type="section" xml:id="people">
         <head>People</head>
         <p><hi rend="bold">Anya Adair</hi>, Editor. School of English and Department of Law, The University of Hong Kong. Anya Adair directs the project, and is responsible for the creation and editing of the database and website.</p>
         <p><hi rend="bold">Mitchell Harrop</hi>, Website and Technical Development. Mitchell Harrop designed the core of the eLiebermann website and its data infrastructure.</p>
         <p><hi rend="bold">Allan Adair</hi>, Research Assistant and Data Entry. Allan Adair undertook a major portion of the work of keying and correcting dictionary and Old English lawcode entries against the print editions.</p>
+        <p>The project is grateful to the readers and research assistants whose corrections, sent through the site, are recorded in the histories of the entries and clauses they concern.</p>
+      </div>
+      <div type="section" xml:id="ai">
+        <head>Use of a large language model</head>
+        <p>Parts of the work were done with the assistance of Claude, a large language model developed by Anthropic: a second, independent transcription of the <title>Wörterbuch</title> from page images, collated word by word with the project’s own; the English renderings of Liebermann’s German and of some Latin texts, which are labelled as such on every page; and much of the encoding, linking and checking of the data. All of this work was directed and reviewed by the editor, and its details are recorded in the editorial principles and in the history of each page. Where a reading, identification or link has not yet been checked by the editor, the page says so.</p>
       </div>
       <div type="section">
         <head>Funding</head>
         <p>The work described here was supported by a grant from the Research Grants Council of Hong Kong (General Research Fund, Project No. HKU 17604022), for the project <hi rend="italic">The Language and Style of the Earliest English Law Codes</hi> (PI: Anya Adair).</p>
       </div>
-      <div type="section">
-        <head>Code and data</head>
-        <p>The site's code and all its data are on GitHub at <ref target="https://github.com/anyaadair/eLiebermann">github.com/anyaadair/eLiebermann</ref>: the dictionary entries and clauses as TEI XML, the authority lists of law codes, manuscripts and abbreviations, the scripts that build the site, and the reports of collation and checking.</p>
-        <p>Liebermann's text and translation are in the public domain.</p>
+      <div type="section" xml:id="rights">
+        <head>Rights, code and data</head>
+        <p>Liebermann’s text, translation and apparatus are in the public domain. The texts and translations of later editors are reproduced for research and teaching, with full references to the editions from which they come; they remain the copyright of their authors and publishers.</p>
+        <p>The site’s code and data are on GitHub at <ref target="https://github.com/anyaadair/eLiebermann">github.com/anyaadair/eLiebermann</ref>: the dictionary entries and clauses as TEI XML, the authority lists of law codes, manuscripts, abbreviations and works cited, the scripts that build the site, and the reports of collation and checking.</p>
       </div>
     </body>
   </text>
