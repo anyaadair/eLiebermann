@@ -364,10 +364,24 @@ scripts:
         frag.appendChild(document.createTextNode(String(text).slice(last)));
         return frag;
     }
+    // the xml:ids in a clause file, to tell a note mark whose note is not (yet) in the file
+    const idsIn = new WeakMap();
+    function hasNote(doc, id) {
+        if (!idsIn.has(doc)) idsIn.set(doc, new Set([...doc.getElementsByTagName('*')].map(xmlId).filter(Boolean)));
+        return idsIn.get(doc).has(id);
+    }
     function noteRef(ptr) {
         const n = ptr.getAttribute('n') || '';
         const rend = ptr.getAttribute('rend') || '';
         const sup = el('sup', 'lnote-ref');
+        // a note printed in the edition but not yet entered here: the number, as in print, without a link
+        const first = ((ptr.getAttribute('target') || '').split(/\s+/)[0] || '').replace(/^#/, '');
+        if (!first || first === 'missing' || !hasNote(ptr.ownerDocument, first)) {
+            const s = el('span', 'lnote-ref--absent', rend === 'supplied' ? '[' + n + ']' : n);
+            s.title = 'Note ' + n + ': in the printed edition, not yet entered on this site';
+            sup.appendChild(s);
+            return sup;
+        }
         const a = el('a', null, rend === 'supplied' ? '[' + n + ']' : n);
         // A mark may point at more than one note (Liebermann's footnote in vol. I and his explanation in
         // vol. III on the same word): it goes to the first; the title says there are more.

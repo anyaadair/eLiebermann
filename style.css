@@ -1479,3 +1479,5 @@ ruby.gloss-pair rt.gloss-word { font-size: 0.68em; line-height: 1.1; color: #4a4
 /* a siglum or short name in Liebermann's notes (Sc, Wi, Edd.): says what it is when pointed at (data/note-sigla.json) */
 .lnotes a.note-siglum, .lnotes abbr.note-siglum { color: inherit; text-decoration: underline dotted; text-underline-offset: 0.18em; cursor: help; }
 .lnotes a.note-siglum:hover { color: var(--accent, #7a3b12); }
+/* a note mark whose note is not yet entered (law.html noteRef) */
+.lnote-ref--absent { color: var(--muted); cursor: help; }
