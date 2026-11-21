@@ -25,6 +25,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-21">Bosworth–Toller link changed from lǽge (54173) to leáh (54379; BT also spells it leág, lǽg), as Liebermann sends læge to leah (MD, website suggestion #65). Link to the DOE added: lēah (E19430). MD suggested E19199, which the DOE’s headword list gives as lēag; needs checking (#66).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -34,7 +35,8 @@
           <orth>læge</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">læge</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> leah</dictScrap>
-        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/54173">lǽge</ref></xr>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/54379">leáh</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E19430">lēah</ref></xr>
       </entry>
     </body>
   </text>
