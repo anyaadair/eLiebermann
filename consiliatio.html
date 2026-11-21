@@ -1,0 +1,176 @@
+---
+title: Consiliatio Cnuti, read in order
+section: laws
+description: The Consiliatio Cnuti, read in the translator’s own order, assembled from the places where Liebermann prints it.
+scripts:
+  - "ROOT/scripts/eliebermann.js"
+---
+<article class="incn-reading">
+<h1>Consiliatio Cnuti, read in order</h1>
+<p class="lede">The <i>Consiliatio Cnuti</i>, a Latin translation of Cnut’s laws made in the reign of Henry I (Liebermann: c. 1110–30), read from beginning to end.</p>
+
+<details class="incn-about" open>
+  <summary>About this text and this page</summary>
+  <p>Liebermann never prints the <i>Consiliatio</i> as one continuous text. It translates I and II Cnut, adds a little from VIII Æthelred, and ends with three short texts, <i>Be blaserum</i>, <i>Forfang</i> and the Hundred Ordinance. He prints each passage once only, as a Latin column beside the Old English it translates. His list of the work’s chapters (<i>Gesetze</i> I, pp. 618–619) gives in full only what he has not printed beside a source (the inscription, the author’s prooemium, a passage on tithings at II 19,2a–d, one on the fore-oath at II 22,1b, and a few closing sentences), and points with a short quotation (“De lege seculari … — — perquirendi; s. o. S. 309—323”) to the rest. This page puts the passages back together in the translator’s order, following that list. Each passage is labelled with its chapter of the <i>Consiliatio</i> and links to the clause page where Liebermann prints it, with his notes and the Old English beside it.</p>
+  <p><strong>Numbering.</strong> The three books are Liebermann’s division. Books I and II translate I and II Cnut and are numbered to match them, so that Cons Cn II 30 translates II Cnut 30; the translator’s own additions carry letters (II 19,2a–d). Book III is the three short texts (Blas, Forf, Hu). The title is Liebermann’s: he made it from the translator’s word for the three prologues (<i>consiliatio</i>).</p>
+  <p><strong>The author and the manuscripts.</strong> Liebermann dates the work after 1102 and probably before c. 1130: the author renders English words in their Norman-period sense, writes in a more scholastic and canonistic way than the <i>Instituta Cnuti</i>, <i>Quadripartitus</i> or the <i>Leges Henrici</i>, and credits Cnut alone with uniting the law; he seems to have known Kent. Only <a href="msAbb.html#Hr">Hr</a> (London, BL Harley 1704, c. 1325) is complete, and there the <i>Leges Edwardi Confessoris</i> follow as if part of the same work. <a href="msAbb.html#Cb">Cb</a> (Paris, BnF lat. 4771, c. 1160) has only the prologue, I Cn 1 f. and the end (Hu 8 f.), grafted into its <i>Instituta Cnuti</i>; <a href="msAbb.html#Hk">Hk</a> (c. 1230) has about a third of the work, in twenty pieces. (Liebermann, <i>Gesetze</i> I, p. 618, note a, and his <i>Consiliatio Cnuti</i>, Halle 1893.)</p>
+  <p><strong>The English.</strong> Beside the Latin is an English crib. For the passages printed beside Cnut, VIII Æthelred, Blas, Forf and Hu, it is the crib of the <em>Old English source</em> (made from Liebermann’s German translation), so that the Latin can be compared with what it translates; where the translator departs from his source, the two will differ. For the passages found only in Liebermann’s list, it is a crib of the Latin itself. Both were made with the help of an LLM (Claude, 2026) and have not been checked line by line. A label under each passage says which it is.</p>
+</details>
+
+<div class="incn-tools"><p class="incn-jump" id="incn-jump"></p>
+<div class="incn-view kind-pills kind-pills--small" role="group" aria-label="Show">
+  <button type="button" class="kind-pill" data-view="both" aria-pressed="true">Latin and English</button>
+  <button type="button" class="kind-pill" data-view="la" aria-pressed="false">Latin</button>
+  <button type="button" class="kind-pill" data-view="en" aria-pressed="false">English</button>
+</div>
+<button type="button" class="chip lnotes-toggle" id="incn-all-notes" aria-pressed="false">Show all Liebermann’s notes</button></div>
+<div id="incn-text"><p class="loading">Loading…</p></div>
+</article>
+
+<style>
+.incn-reading { max-width: 46rem; margin: 0 auto; }
+.incn-reading.with-en { max-width: 74rem; }
+.incn-tools { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; align-items: baseline; margin: 0 0 .75rem; }
+.incn-view { margin: 0; }
+.incn-key-wrap { position: sticky; top: 0; z-index: 2; background: var(--paper); padding: .35rem 0 .1rem; border-bottom: 1px solid var(--rule); margin-bottom: .5rem; }
+.with-en .incn-passage { grid-template-columns: 7.5rem 1fr 1fr; }
+.incn-en { margin: 0; font-family: var(--serif); font-size: 1.02rem; line-height: 1.45; color: #34332f; }
+.incn-only-en .incn-text-p { display: none; }
+.incn-only-en .incn-passage { grid-template-columns: 7.5rem 1fr; }
+.incn-only-la .incn-en-wrap { display: none; }
+.cons-en-of { display: block; font-size: .74rem; margin-top: .2rem; }
+@media (max-width: 52rem) { .with-en .incn-passage { grid-template-columns: 7.5rem 1fr; } .with-en .incn-en-wrap { grid-column: 2; } }
+.incn-about { margin: 1rem 0 1.5rem; padding: .75rem 1rem; border-left: 3px solid var(--rule, #ddd); background: var(--panel, rgba(0,0,0,.02)); }
+.incn-about summary { cursor: pointer; font-weight: 600; }
+.incn-about p { font-size: .95rem; }
+.incn-from { display: block; }
+.incn-mss__list { font-size: .95rem; margin: .25rem 0 .75rem; }
+.incn-mss__list dt { font-weight: 600; margin-top: .6rem; }
+.incn-mss__list dd { margin: .2rem 0 0 1.25rem; }
+.incn-jump a { margin-right: .75rem; }
+.incn-book { margin-top: 2rem; }
+.incn-passage { display: grid; grid-template-columns: 7.5rem 1fr; gap: .25rem 1rem; margin: 0; padding: .8rem 0 .85rem; border-top: 1px solid var(--rule); }
+.incn-book + .incn-passage, .incn-rubrics > p + .incn-passage { border-top: 0; }
+.incn-label .lnotes-toggle { display: inline-block; margin: .4rem 0 0; font-size: .74rem; padding: .08rem .5rem; }
+.incn-passage .lnotes__de { display: inline; }
+.incn-passage .lnotes__en { display: inline; margin: 0; }
+.incn-passage .lnotes__en::before { content: ' — '; }
+.incn-passage .lnotes__where { display: inline; margin: 0 0 0 .4em; }
+.incn-passage .lnote-ref { display: none; }
+.incn-passage.notes-open .lnote-ref { display: inline; }
+.incn-passage .lnotes { grid-column: 2 / -1; margin: .35rem 0 0; }
+.incn-passage .lnotes__list li { margin-bottom: .7rem; }
+.incn-label { font-size: .85rem; color: var(--muted); padding-top: .2rem; }
+.incn-label a { color: inherit; }
+.incn-label .incn-src { display: block; font-size: .8rem; }
+.incn-text-p { margin: 0; font-size: 1.08rem; }
+.incn-rubrics { margin-top: 2rem; }
+@media (max-width: 40rem) { .incn-passage, .with-en .incn-passage { grid-template-columns: 1fr; } .with-en .incn-en-wrap { grid-column: 1; } }
+</style>
+
+<script>
+(function () {
+    const root = window.SITE_ROOT || '';
+    const box = document.getElementById('incn-text');
+    const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+    // the TEI inline markup of a passage as HTML: Liebermann's kinds of type, his round brackets
+    function render(xml) {
+        const doc = new DOMParser().parseFromString('<x xmlns="http://www.tei-c.org/ns/1.0">' + xml + '</x>', 'application/xml');
+        const walk = node => [...node.childNodes].map(n => {
+            if (n.nodeType === 3) return esc(n.nodeValue);
+            if (n.nodeType !== 1) return '';
+            const inner = walk(n), rend = n.getAttribute('rend') || '';
+            if (n.localName === 'hi') {
+                if (/bold/.test(rend)) return '<strong title="Changed">' + inner + '</strong>';
+                if (/spaced/.test(rend)) return '<span class="spaced" title="Reworded">' + inner + '</span>';
+                if (/\bsmall\b/.test(rend)) return '<span class="small-type" title="From source">' + inner + '</span>';
+                if (/italic/.test(rend)) return '<em>' + inner + '</em>';
+                if (/superscript/.test(rend)) return '<sup>' + inner + '</sup>';
+                return inner;
+            }
+            if (n.localName === 'label') return '';
+            if (n.localName === 'ptr') return '<sup class="lnote-ref"><a href="#n-' + esc(n.getAttribute('target')) + '">' + esc(n.getAttribute('n')) + '</a></sup>';
+            if (n.localName === 'seg' && n.getAttribute('type') === 'parallel') {
+                const lab = [...n.childNodes].find(x => x.nodeType === 1 && x.localName === 'label');
+                const sig = lab ? lab.textContent.trim() : '';
+                const first = !(n.previousSibling && n.previousSibling.nodeType === 1 && n.previousSibling.localName === 'seg' && n.previousSibling.getAttribute('type') === 'parallel');
+                const last = !(n.nextSibling && n.nextSibling.nodeType === 1 && n.nextSibling.localName === 'seg' && n.nextSibling.getAttribute('type') === 'parallel');
+                const count = [...n.parentNode.childNodes].filter(x => x.nodeType === 1 && x.localName === 'seg' && x.getAttribute('type') === 'parallel').length;
+                return (first ? '<span class="parallel-group"><span class="parallel-intro">The manuscripts differ here, and Liebermann prints ' + (count === 2 ? 'the two versions' : 'the ' + count + ' versions') + ' side by side:</span>' : '')
+                    + '<span class="parallel"><span class="parallel__label">' + (sig ? (/^[A-Z][A-Za-z]{0,2}\d?$/.test(sig) ? 'MS ' : /^([A-Z][A-Za-z]{0,2}\d?\s*)+$/.test(sig) ? 'MSS ' : '') + esc(sig) : '') + '</span><span class="parallel__text">' + inner + '</span></span>'
+                    + (last ? '</span>' : '');
+            }
+            if (n.localName === 'seg' && n.getAttribute('type') === 'recension')
+                return '<span class="recension" title="Alternative version">' + inner + '</span>';
+            return inner;
+        }).join('');
+        return walk(doc.documentElement);
+    }
+    // which texts to show: Latin and English side by side (the default), or one of them; remembered
+    const art = document.querySelector('.incn-reading');
+    function setView(v) {
+        art.classList.toggle('with-en', v === 'both');
+        art.classList.toggle('incn-only-la', v === 'la');
+        art.classList.toggle('incn-only-en', v === 'en');
+        document.querySelectorAll('.incn-view button').forEach(b => b.setAttribute('aria-pressed', b.dataset.view === v ? 'true' : 'false'));
+        try { localStorage.setItem('eLiebermann.consView', v); } catch (e) {}
+    }
+    let view = 'both';
+    try { view = localStorage.getItem('eLiebermann.consView') || 'both'; } catch (e) {}
+    setView(view);
+    document.querySelectorAll('.incn-view button').forEach(b => b.addEventListener('click', () => setView(b.dataset.view)));
+    // Liebermann's notes to a passage, behind a button as on the clause pages: his German, then the English crib
+    const plainOf = x => String(x || '').replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();   // the English only where it says more than the German
+    const plural = n => n === 1 ? 'note' : 'notes';
+    const notesButton = p => p.notes && p.notes.length ? `<button type="button" class="chip lnotes-toggle incn-notes-btn" aria-pressed="false" title="Show or hide Liebermann’s notes to this passage">Notes (${p.notes.length})</button>` : '';
+    const notesList = p => !(p.notes && p.notes.length) ? '' : '<div class="lnotes small" hidden><ol class="lnotes__list">' + p.notes.map(n =>
+        `<li id="n-${esc(n.t)}"><span class="lnotes__num">${esc(n.n)})</span><span class="lnotes__de" lang="de">${render(n.de)}</span>${plainOf(n.en) && plainOf(n.en) !== plainOf(n.de) ? `<span class="lnotes__en" lang="en">${render(n.en)}</span>` : ''}${n.page && n.page !== p.page ? `<span class="lnotes__where muted">(p. ${esc(n.page)})</span>` : ''}</li>`).join('') + '</ol></div>';
+    function toggleNotes(pass, on) {
+        const list = pass.querySelector('.lnotes'), btn = pass.querySelector('.incn-notes-btn');
+        if (!list) return;
+        list.hidden = !on;
+        pass.classList.toggle('notes-open', on);
+        btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+        btn.textContent = (on ? 'Hide notes' : 'Notes') + ' (' + list.querySelectorAll('li').length + ')';
+    }
+    const bookOf = c => (/^(I{1,3})\b/.exec(c) || [])[1] || '';
+    fetch(root + 'data/conscn-reading.json').then(r => r.json()).then(data => {
+        let html = '', book = null, last = '';
+        const jump = [];
+        data.passages.forEach(p => {
+            const b = bookOf(p.cons) || 'Prooem';
+            if (b !== book) {
+                book = b;
+                const name = b === 'Prooem' ? 'Inscription and prooemium' : 'Book ' + b;
+                jump.push(`<a href="#book-${b}">${name}</a>`);
+                html += `<h2 class="incn-book" id="book-${b}">${name}</h2>`;
+            }
+            const label = p.cons === last ? '' : 'Cons Cn ' + esc(p.cons);
+            last = p.cons;
+            const where = p.source ? 'beside ' + esc(p.source) : 'Liebermann’s list';
+            html += `<div class="incn-passage"><div class="incn-label">${label}<a class="incn-src" href="${root}law.html?id=${encodeURIComponent(p.id)}" title="The clause page, with the Old English beside it">${where}${p.page ? ', p. ' + esc(p.page) : ''}</a>${(p.translates || []).length ? '<span class="incn-from small muted">' + (p.verb || 'translates') + ' ' + p.translates.map(t => `${t.perhaps ? 'perhaps ' : ''}<a href="${root}law.html?id=${encodeURIComponent(t.id)}">${esc(t.label)}</a>`).join(', ') + '</span>' : ''}${notesButton(p)}</div>`
+                + `<p class="incn-text-p clause-reading-text lt"${ELieb.langAttr('la')}>${render(p.text)}</p>`
+                + `<div class="incn-en-wrap"><p class="incn-en lt" lang="en">${p.en ? render(p.en) : ''}</p>${p.en ? `<span class="cons-en-of muted">${p.enOf === 'la' ? 'English of the Latin' : 'English of the Old English source'}</span>` : ''}</div>${notesList(p)}</div>`;
+        });
+        box.innerHTML = html;
+        document.getElementById('incn-jump').innerHTML = 'Go to: ' + jump.join('');
+        box.addEventListener('click', e => {
+            const btn = e.target.closest('.incn-notes-btn');
+            if (btn) { const pass = btn.closest('.incn-passage'); toggleNotes(pass, btn.getAttribute('aria-pressed') !== 'true'); }
+            const ref = e.target.closest('.lnote-ref a');
+            if (ref) {
+                e.preventDefault();
+                const li = document.getElementById(ref.getAttribute('href').slice(1));
+                if (li) { li.scrollIntoView({ block: 'nearest' }); li.style.background = 'var(--highlight)'; setTimeout(() => { li.style.background = ''; }, 1200); }
+            }
+        });
+        const all = document.getElementById('incn-all-notes');
+        all.addEventListener('click', () => {
+            const on = all.getAttribute('aria-pressed') !== 'true';
+            all.setAttribute('aria-pressed', on ? 'true' : 'false');
+            all.textContent = (on ? 'Hide' : 'Show') + ' all Liebermann’s notes';
+            box.querySelectorAll('.incn-passage').forEach(pass => toggleNotes(pass, on));
+        });
+    }).catch(() => { box.innerHTML = '<p class="notice error">The text couldn’t be loaded.</p>'; });
+})();
+</script>
