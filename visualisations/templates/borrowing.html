@@ -53,13 +53,17 @@ description: "Arcs between law codes, from the clause-to-clause comparisons of L
 </style>
 <header>
   <h1>Which law codes borrow from which</h1>
-  <p>Each arc joins two law codes that scholars link clause to clause: Liebermann's comparisons, Wormald's and Kennedy's tables, Whitelock's and Jurasinski and Oliver's notes. Codes run left to right in the order of the kings, then the anonymous texts and the Anglo-Norman law books. An arc's width is the number of clause links. Click a code to see its partners and the clauses behind each arc.</p>
+  <p>Each arc joins two law codes that scholars link clause to clause: Liebermann's comparisons, Wormald's and Kennedy's tables, Whitelock's and Jurasinski and Oliver's notes. Codes run left to right in Liebermann’s order, or, with “Approximate date”, by the most recent scholar’s date for each (Wormald where he gives a year, then Rabin, Whitelock, Robertson or Attenborough, then Liebermann; the date used is shown when you point at a code). An arc's width is the number of clause links. Click a code to see its partners and the clauses behind each arc.</p>
   <p class="muted small">An experiment, made from the clause files in <code>oe-laws/</code>. Links within one code are left out.</p>
 </header>
 <div class="controls">
   <fieldset><legend>Layout</legend>
     <button type="button" id="lay-arc" aria-pressed="true">Timeline arcs</button>
     <button type="button" id="lay-force" aria-pressed="false">Network</button>
+  </fieldset>
+  <fieldset><legend>Order</legend>
+    <button type="button" id="ord-lieb" aria-pressed="true">Liebermann’s order</button>
+    <button type="button" id="ord-date" aria-pressed="false">Approximate date</button>
   </fieldset>
   <fieldset id="kinds"><legend>Kind</legend></fieldset>
   <fieldset id="scholars"><legend>Linked by</legend></fieldset>
@@ -82,7 +86,7 @@ const css = n => getComputedStyle(document.querySelector('.viz') || document.doc
 const kindColour = k => css('--' + k);
 const groupColour = d3.scaleOrdinal(DATA.groups, d3.schemeTableau10.concat(d3.schemeSet3));
 const scholars = [...new Set(DATA.pairs.map(p => p[4]))].sort((a, b) => DATA.pairs.filter(p => p[4] === b).length - DATA.pairs.filter(p => p[4] === a).length);
-const S = { kinds: new Set(KINDS.map(k => k[0])), scholars: new Set(scholars), min: 2, layout: 'arc', focus: null };
+const S = { kinds: new Set(KINDS.map(k => k[0])), scholars: new Set(scholars), min: 2, layout: 'arc', order: 'lieb', focus: null };
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 document.getElementById('legend').innerHTML = DATA.groups.map(g => `<span><span class="swatch" style="background:${groupColour(g)}"></span>${esc(g)}</span>`).join('');
 const clauseUrl = id => SITE + 'law.html?id=' + encodeURIComponent(id);
@@ -99,6 +103,12 @@ document.getElementById('min').addEventListener('input', e => { S.min = +e.targe
 ['arc', 'force'].forEach(l => document.getElementById('lay-' + l).addEventListener('click', () => {
   S.layout = l; document.querySelectorAll('[id^=lay-]').forEach(b => b.setAttribute('aria-pressed', b.id === 'lay-' + l)); draw();
 }));
+['lieb', 'date'].forEach(o => document.getElementById('ord-' + o).addEventListener('click', () => {
+  S.order = o; document.querySelectorAll('[id^=ord-]').forEach(b => b.setAttribute('aria-pressed', b.id === 'ord-' + o)); draw();
+}));
+// by date: the modern year, then Liebermann's order for codes of the same year or with none
+const byDate = (p, q) => ((p.modernYear ?? 9999) - (q.modernYear ?? 9999)) || (p.order - q.order);
+const dateLine = c => c.modernDate ? `Dated ${c.modernDate}${c.modernBy ? ' (' + c.modernBy + ')' : ''}` : (c.date || c.group);
 
 // the links between two codes, under the current filters
 function links() {
@@ -129,6 +139,7 @@ function draw() {
   const L = links();
   const deg = d3.rollup(L.flatMap(l => [[l.a, l.pairs.length], [l.b, l.pairs.length]]), v => d3.sum(v, d => d[1]), d => d[0]);
   const codes = DATA.codes.filter(c => deg.has(c.code));
+  if (S.order === 'date') codes.sort(byDate);
   const byCode = new Map(codes.map(c => [c.code, c]));
   const width = Math.max(chart.clientWidth || 900, S.layout === 'arc' ? codes.length * 13 + 80 : 600);
   const maxN = d3.max(L, l => l.pairs.length) || 1;
@@ -144,7 +155,10 @@ function draw() {
     svg.attr('width', width).attr('height', height);
     const x = d3.scalePoint(codes.map(c => c.code), [40, width - 40]);
     // king groups as bands under the axis (named in the legend above the chart)
-    d3.groups(codes, c => c.group).forEach(([grp, cs]) => {
+    // one band per run of neighbouring codes of the same group (in date order a group can come in several runs)
+    const runs = [];
+    codes.forEach(c => { const last = runs[runs.length - 1]; last && last[0] === c.group ? last[1].push(c) : runs.push([c.group, [c]]); });
+    runs.forEach(([grp, cs]) => {
       const x0 = x(cs[0].code) - 7, x1 = x(cs[cs.length - 1].code) + 7;
       g.append('rect').attr('x', x0).attr('y', base + 4).attr('width', x1 - x0).attr('height', 4).attr('fill', groupColour(grp)).append('title').text(grp);
     });
@@ -186,7 +200,7 @@ function draw() {
 
   const partners = code => L.filter(l => l.a === code || l.b === code);
   arcs.on('mousemove', (e, l) => showTip(e, linkTip(l))).on('mouseleave', hideTip).on('click', (e, l) => showLink(l));
-  nodes.on('mousemove', (e, c) => showTip(e, `<strong>${esc(c.code)}</strong> ${esc(c.name)}<br><span class="muted">${esc(c.date || c.group)}</span><br>${deg.get(c.code)} clause links with ${partners(c.code).length} codes`))
+  nodes.on('mousemove', (e, c) => showTip(e, `<strong>${esc(c.code)}</strong> ${esc(c.name)}<br><span class="muted">${esc(S.order === 'date' ? dateLine(c) : (c.date || c.group))}</span><br>${deg.get(c.code)} clause links with ${partners(c.code).length} codes`))
     .on('mouseleave', hideTip).on('click', (e, c) => focus(c.code));
 
   function focus(code) {
@@ -198,7 +212,7 @@ function draw() {
     const c = byCode.get(code);
     const list = mine.map(l => ({ other: l.a === code ? l.b : l.a, l })).sort((p, q) => q.l.pairs.length - p.l.pairs.length);
     document.getElementById('side').innerHTML = `
-      <h2>${esc(c.code)}</h2><p class="muted">${esc(c.name)}<br>${esc(c.date || '')}</p>
+      <h2>${esc(c.code)}</h2><p class="muted">${esc(c.name)}<br>${esc(c.date || '')}${S.order === 'date' ? '<br>Placed by: ' + esc(dateLine(c)) : ''}</p>
       <p><a href="${SITE}lawcode.html?code=${encodeURIComponent(c.code)}" target="_blank" rel="noopener">Read the code on eLiebermann</a> · <a href="#" id="clear">Show all</a></p>
       <h3>Linked codes</h3>
       <ul>${list.map((p, i) => `<li class="partner" data-i="${i}"><span>${esc(p.other)} <span class="muted small">${esc((byCode.get(p.other) || {}).name || '')}</span></span><span>${p.l.pairs.length}</span></li>`).join('')}</ul>`;

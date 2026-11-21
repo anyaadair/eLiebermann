@@ -22,7 +22,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(HERE)
 
 SCHOLARS = {
-    'liebermann': 'Liebermann', 'liebermann-erkl': 'Liebermann',
+    'liebermann': 'Liebermann', 'liebermann-erkl': 'Liebermann', 'liebermann-notes': 'Liebermann (notes)',
     'wormald-mel': 'Wormald', 'wormald-ppmel': 'Wormald',
     'rabin-doml': 'Rabin', 'whitelock': 'Whitelock', 'whitelock-cs': 'Whitelock',
     'jurasinski-and-oliver': 'Jurasinski and Oliver', 'robertson': 'Robertson',
@@ -50,6 +50,55 @@ def first_year(date):
     return (int(m.group(1)) - 1) * 100 + 50 if m else None
 
 
+# For the "by date" order of the borrowing chart: the most recent scholar's date that gives a year
+# (Wormald, then Rabin, Whitelock, Kennedy, Robertson, Attenborough, and last Liebermann).
+DATE_PREFERENCE = ['Wormald', 'Rabin', 'Whitelock', 'Kennedy', 'Robertson', 'Attenborough', 'Liebermann']
+
+
+def approx_year(text):
+    """A single year for ordering: the middle of a range, 'before 959' just before 959, 'mid-990s' 995."""
+    t = re.sub(r'\bpp?\.\s*[\d–-]+', '', text or '')
+    # the scholar's own best guess, where he narrows his range ("1095–1135, probably 1103–20"; "960 (c.1025?)–1060")
+    m = re.search(r'\bprobably\s+(.*)', t) or re.search(r'\((c\.\s*\d{3,4})\??\)', t)
+    if m and re.search(r'\d{3,4}', m.group(1)):
+        t = m.group(1)
+    t = re.sub(r'\b\d{1,2} (?:Jan|Feb|Mar|Apr|May|June?|July?|Aug|Sept?|Oct|Nov|Dec)\.?\s', '', t)   # day of the month
+    m = re.search(r'\b(early|mid|late)-?\s*(\d{3,4})s\b', t)
+    if m:
+        return int(m.group(2)) + {'early': 2, 'mid': 5, 'late': 8}[m.group(1)] * (10 if m.group(2).endswith('00') else 1)
+    m = re.search(r'\b(\d{1,2})(?:st|nd|rd|th) century', t)
+    if m and not re.search(r'\d{3,4}', t):
+        return (int(m.group(1)) - 1) * 100 + 50
+    ys = []
+    for y in re.findall(r'\b(\d{3,4})(?:[–-](\d{1,4}))?', t):
+        a = int(y[0]); ys.append(a)
+        if y[1]:
+            b = y[1]
+            ys.append(int(str(a)[:len(str(a)) - len(b)] + b) if len(b) < len(str(a)) else int(b))
+    ys = [y for y in ys if 500 <= y <= 1400]
+    if not ys:
+        return None
+    if re.search(r'\bnot before\b|\bafter\b', t) and len(ys) == 1:
+        return ys[0] + 5
+    if re.search(r'\bbefore\b', t) and len(ys) == 1:
+        return ys[0] - 5
+    return (min(ys) + max(ys)) / 2
+
+
+def modern_date(c):
+    """(year, the date as given, who gives it), from the most recent scholar who gives a year."""
+    for who in DATE_PREFERENCE:
+        for text, refs in c.get('dates', []):
+            if any(r.startswith(who) for r in refs):
+                y = approx_year(text)
+                if y is not None:
+                    return round(y, 1), text, '; '.join(r for r in refs if r.startswith(who))
+    text = c.get('date', '')
+    first = re.split(r'\s\(', text)[0]
+    who = re.search(r'\(([^)]*)\)', text)
+    return approx_year(first) or first_year(text), first, who.group(1) if who else ''
+
+
 def codes_list():
     codes = load('oe-laws/codes.json')
     out = []
@@ -60,6 +109,8 @@ def codes_list():
             'year': first_year(c.get('date', '')), 'clauses': c.get('clauses', 0),
             'order': i, 'anchor': c.get('anchor', ''),
         })
+        y, text, who = modern_date(c)
+        out[-1].update({'modernYear': y, 'modernDate': text, 'modernBy': who})
     return out
 
 
