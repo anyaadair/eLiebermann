@@ -1,5 +1,10 @@
 {
   "_about": "Words to highlight on a dictionary entry's clause links, added by hand where the rules can't tell. Keyed by entry id, then by the citation as listed under the entry. 'find' replaces the form the rules choose; every word in 'mark' is marked too, wherever it is found in the clause (other manuscripts' spellings). Read by entry.html; law.html marks them (its mark= parameter). An entry may also have '_forms': the forms of a verb that do not look like its headword (beon: bið, is, sie, wæs), in groups that stand for one another; any of them before a citation is the form cited, and its link looks for its whole group (scripts/eliebermann.js).",
+  "laen": {
+    "Af 19,1": {
+      "find": "onlah"
+    }
+  },
   "pundwaega": {
     "Ine 59,1": {
       "find": "pundwæga",

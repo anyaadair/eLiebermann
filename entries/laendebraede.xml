@@ -25,6 +25,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-21">len~ linked to lendenbræde (MD, website suggestion #70).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -33,7 +34,8 @@
         <form type="lemma">
           <orth>lændebræde</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">lændebræde</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> len~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">lændebræde</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:lendenbraede">len~</ref></dictScrap>
+        <xr type="see"><ref target="entry:lendenbraede">lendenbræde</ref></xr>
       </entry>
     </body>
   </text>
