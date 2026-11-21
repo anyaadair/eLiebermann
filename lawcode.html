@@ -214,6 +214,7 @@ scripts:
                     plainLine('Editions and translations', sources.map(scholar).join(', '))}${
                     (whole ? '' : plainLine('Clauses', String(mine.length)))}</div>
             </header>
+            ${(() => { const r = (ELieb.RECONSTRUCTED || {})[code.code]; return r ? `<p class="reconstructed-callout"><span class="reconstructed-badge">Reconstructed text</span> <a href="${root}${r.href}">${esc(r.title)}</a>: ${esc(r.note)} The list below follows Liebermann, who prints only what he has not printed beside its source.</p>` : ''; })()}
             ${introduction ? `<div class="code-introduction is-collapsed"><h2 class="code-introduction__head">Editor’s introduction</h2>
                 <div class="code-introduction__text" id="code-introduction-text">${introduction}</div>
                 <button type="button" class="code-introduction__toggle" aria-expanded="false" aria-controls="code-introduction-text"><span class="ci-more">Show more</span><span class="ci-less">Show less</span></button></div>` : ''}

@@ -430,9 +430,19 @@ scripts:
                     <li>
                         <span class="code-title"><a href="${codeUrl(c.code)}"><span class="code-abbr">${esc(c.code)}</span> <span class="code-name">${esc(c.name)}</span></a>${REIGN_PER_CODE.has(g.name) && c.reign ? ` <span class="code-group-reign">${esc(c.reign)}</span>` : ''}${Wulfstan.codeBadges(c.code) ? ' ' + Wulfstan.codeBadges(c.code) : ''}</span>
                         <span class="code-meta">${esc(plural(c.clauses, 'clause', 'clauses'))}</span>
-                    </li>`).join('')}
+                    </li>${reconstructedRow(c.code)}`).join('')}
                 </ul>
             </section>`).join('') || '<p>No law codes match these choices.</p>';
+    }
+
+    // A reconstructed continuous text (ELieb.RECONSTRUCTED) is listed under its code as an extra.
+    function reconstructedRow(code) {
+        const r = ((window.ELieb || {}).RECONSTRUCTED || {})[code];
+        return r ? `
+                    <li class="code-list__extra">
+                        <span class="code-title"><a href="${root}${r.href}"><span class="reconstructed-badge">Reconstructed text</span> <span class="code-name">${esc(r.title)}</span></a></span>
+                        <span class="code-extra-note">${esc(r.note)}</span>
+                    </li>` : '';
     }
 
     let lastList = [];
