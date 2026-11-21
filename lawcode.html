@@ -82,7 +82,7 @@ scripts:
     // the search, as set in the panel (and kept in the address)
     const S = {
         where: new Set((params.get('in') || 'orig').split(',').filter(x => LawPanel.WHERE.some(([k]) => k === x))),
-        match: params.get('m') === 'part' ? 'part' : 'whole',
+        match: params.get('m') === 'whole' ? 'whole' : 'part',   // parts of words is the default: spellings vary
         dict: params.get('d') || '',
         kws: (params.get('kw') || '').split('|').filter(Boolean),
         kwMode: params.get('kwm') === 'any' ? 'any' : 'all',
@@ -356,7 +356,7 @@ scripts:
         if (w.value.trim()) {
             p.set('w', w.value.trim());
             if ([...S.where].join(',') !== 'orig') p.set('in', [...S.where].join(','));
-            if (S.match === 'part') p.set('m', 'part');
+            if (S.match === 'whole') p.set('m', 'whole');
             if (tol.checked) p.set('tol', '1');
         }
         if (S.dict) p.set('d', S.dict);
@@ -382,7 +382,7 @@ scripts:
     function reset() {
         w.value = d.value = kw.value = go.value = '';
         tol.checked = false;
-        Object.assign(S, { where: new Set(['orig']), match: 'whole', dict: '', kws: [], kwMode: 'all', show: new Set(['text', 'en']) });
+        Object.assign(S, { where: new Set(['orig']), match: 'part', dict: '', kws: [], kwMode: 'all', show: new Set(['text', 'en']) });
         changed();
     }
     $('reset').addEventListener('click', reset);
