@@ -434,6 +434,9 @@ scripts:
             const url = new URL(a.getAttribute('href'), location.href);
             if (rule.find) url.searchParams.set('find', rule.find);
             if (rule.mark && rule.mark.length) url.searchParams.set('mark', rule.mark.join(','));
+            // "only": just these words, no other spellings guessed on the clause page (where a look-alike word,
+            // capitalis for capelle, would be marked too)
+            if (rule.only) { url.searchParams.set('only', '1'); url.searchParams.delete('also'); }
             a.setAttribute('href', url.pathname.split('/').pop() + url.search);
         });
         // "Pax": a text the laws database keeps as one clause, cited by name alone. The name keeps

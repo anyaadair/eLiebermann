@@ -25,6 +25,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-22">Cross-reference linked (reported by Allan Adair, list C).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -33,7 +34,7 @@
         <form type="lemma">
           <orth>cenegild</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">cenegild</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> cynegield</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">cenegild</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:cynegilde">cynegield</ref></dictScrap>
       </entry>
     </body>
   </text>

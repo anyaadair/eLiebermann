@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-22">Editor’s note on the citation Iud Dei I 21, linked to 21,1.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -34,8 +35,9 @@
         <form type="lemma">
           <orth>calcabilis</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">calcabilis</hi> <hi rend="italic">betretbar</hi> <ref type="lawCode" target="law:IudDeiI">Iud Dei I</ref> 21</dictScrap>
-        <xr type="lawCode"><ref target="clause:IudDeiI_21">Iud Dei I 21</ref></xr>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">calcabilis</hi> <hi rend="italic">betretbar</hi> <ref type="lawCode" target="law:IudDeiI">Iud Dei I</ref> 21<ptr type="editorNote" target="#edn-1"/></dictScrap>
+        <note type="editorial" xml:id="edn-1">Liebermann cites the paragraph, Iud Dei I 21; the word (<hi rend="italic">calcabile</hi>) stands in its second part, <ref target="clause:IudDeiI_21-1">Iud Dei I 21,1</ref>, to which the link goes.</note>
+        <xr type="lawCode"><ref target="clause:IudDeiI_21-1">Iud Dei I 21</ref></xr>
       </entry>
     </body>
   </text>

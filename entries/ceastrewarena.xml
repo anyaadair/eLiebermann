@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-28">“von” unlinked from the abbreviations list: here it is ordinary German, not an abbreviation (Anya Adair).</change>
+      <change when="2026-11-22">Link to the DOE added: ceaster-wara (E04630). (Reported by Allan Adair, list C.)</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,6 +37,7 @@
           <orth>ceastrewarena</orth>
         </form>
         <dictScrap type="liebermann"><hi rend="bold">ceastrewarena</hi>, <hi rend="italic"><ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref>. <ref type="abbreviation" target="gram:Genitiv"><abbr>gn</abbr></ref></hi>, <hi rend="italic">Bürger</hi> [<hi rend="italic">Bewohner von Städten, <ref type="abbreviation" target="gram:imGegensatzZu"><abbr>im Ggs. zu</abbr></ref> Dörflern</hi>] <ref type="lawCode" target="law:Iudex">Iudex</ref> 9,1</dictScrap>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E04630">ceaster-wara</ref></xr>
         <xr type="lawCode"><ref target="clause:Iudex_9-1">Iudex 9,1</ref></xr>
       </entry>
     </body>

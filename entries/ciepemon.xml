@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-11-01">Abbreviations “unfl.” and “Für” linked to the abbreviations list.</change>
+      <change when="2026-11-22">Link to the DOE added: cēap-mann (E04601). The DOE has no separate headword for this spelling; Liebermann says it was replaced by ceapman. Needs checking. (Reported by Allan Adair, list C.)</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -42,12 +43,13 @@
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/6565">cope-man</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/7174">cýpe-man</ref></xr>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/41692">cípe-mann</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E04601">cēap-mann</ref></xr>
         <xr type="lawCode"><ref target="clause:Ine_25">Ine 25</ref></xr>
+        <xr type="lawCode"><ref target="clause:Ine_25-1">Ine 25,1</ref></xr>
         <xr type="lawCode"><ref target="clause:Hl_15">Hl 15</ref></xr>
         <xr type="lawCode"><ref target="clause:Rubrics-Ine_25">Ine Rb 25</ref></xr>
         <xr type="lawCode"><ref target="clause:Rubrics-Af_34">Af Rb 34</ref></xr>
         <xr type="lawCode"><ref target="clause:Af_34">Af 34</ref></xr>
-        <xr type="lawCode"><ref target="clause:Ine_25-1">Ine 25,1</ref></xr>
       </entry>
     </body>
   </text>

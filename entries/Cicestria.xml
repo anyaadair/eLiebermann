@@ -25,6 +25,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-22">Cross-reference linked (reported by Allan Adair, list C).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -33,7 +34,7 @@
         <form type="lemma">
           <orth>Cicestria</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">Cicestria</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> Cisseceaster</dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">Cicestria</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:Cisseceastre">Cisseceaster</ref></dictScrap>
       </entry>
     </body>
   </text>

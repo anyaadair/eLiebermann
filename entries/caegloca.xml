@@ -27,6 +27,7 @@
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-11-20">Link to the Dictionary of Old English added (E04345; guessed from the DOE headword list, same spelling).</change>
+      <change when="2026-11-22">Editor’s note on the citation II Cn 76,1a, linked to 76,1.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -35,10 +36,11 @@
         <form type="lemma">
           <orth>cægloca</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">cægloca</hi> <hi rend="italic">Verschluss; <ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>:</hi> ~can <ref type="lawCode" target="law:IICn">II Cn</ref> 76,1a | <hi rend="italic"><ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref> <ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>:</hi> ~cum <ref type="lawCode" target="law:MsA">A</ref></dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">cægloca</hi> <hi rend="italic">Verschluss; <ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>:</hi> ~can <ref type="lawCode" target="law:IICn">II Cn</ref> 76,1a<ptr type="editorNote" target="#edn-1"/> | <hi rend="italic"><ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref> <ref type="abbreviation" target="gram:Dativ"><abbr>dt</abbr></ref>:</hi> ~cum <ref type="lawCode" target="law:MsA">A</ref></dictScrap>
+        <note type="editorial" xml:id="edn-1">Liebermann’s “II Cn 76,1a”: in his text the word (<hi rend="italic">cæglocan</hi>, and A’s <hi rend="italic">cæglocum</hi>) stands in <ref target="clause:IICn_76-1">II Cn 76,1</ref> (Gesetze I, p. 362), to which the link goes; 76,1a has <hi rend="italic">cægean</hi>.</note>
         <xr type="bosworthToller"><ref target="https://bosworthtoller.com/5738">cæg-loca</ref></xr>
         <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E04345">cǣg-loca</ref></xr>
-        <xr type="lawCode"><ref target="clause:IICn_76-1a">II Cn 76,1a</ref></xr>
+        <xr type="lawCode"><ref target="clause:IICn_76-1">II Cn 76,1a</ref></xr>
       </entry>
     </body>
   </text>
