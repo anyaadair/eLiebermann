@@ -1,5 +1,5 @@
 {
-  "_about": "Words to highlight on a dictionary entry's clause links, added by hand where the rules can't tell. Keyed by entry id, then by the citation as listed under the entry. 'find' replaces the form the rules choose; every word in 'mark' is marked too, wherever it is found in the clause (other manuscripts' spellings). Read by entry.html; law.html marks them (its mark= parameter). An entry may also have '_forms': the forms of a verb that do not look like its headword (beon: bið, is, sie, wæs), in groups that stand for one another; any of them before a citation is the form cited, and its link looks for its whole group (scripts/eliebermann.js).",
+  "_about": "Words to highlight on a dictionary entry's clause links, added by hand where the rules can't tell. Keyed by entry id, then by the citation as listed under the entry. 'find' replaces the form the rules choose; every word in 'mark' is marked too, wherever it is found in the clause (other manuscripts' spellings). 'only': true marks just these words, with no other spellings guessed on the clause page (for a look-alike word wrongly marked). Read by entry.html; law.html marks them (its mark= parameter). An entry may also have '_forms': the forms of a verb that do not look like its headword (beon: bið, is, sie, wæs), in groups that stand for one another; any of them before a citation is the form cited, and its link looks for its whole group (scripts/eliebermann.js).",
   "laen": {
     "Af 19,1": {
       "find": "onlah"
@@ -861,6 +861,247 @@
       "mark": [
         "adlegatione"
       ]
+    }
+  },
+  "cadere": {
+    "II Cn 8,2": {
+      "find": "ceciderit"
+    },
+    "II Cn 32,1": {
+      "find": "ceciderit"
+    }
+  },
+  "calefacere": {
+    "Ordal 1,1b": {
+      "find": "calefiat"
+    }
+  },
+  "calumniare": {
+    "Hu 6,1": {
+      "find": "calumpnietur"
+    },
+    "ECf 38,2": {
+      "find": "calumpniari"
+    },
+    "Leis Wl 3,3": {
+      "find": "calumpnianti"
+    },
+    "Leis Wl 3,4": {
+      "find": "calumpnians"
+    }
+  },
+  "calu-mn-iator": {
+    "Leis Wl 21,3": {
+      "find": "calumpniator"
+    },
+    "Leis Wl 27": {
+      "find": "calumpniator"
+    },
+    "ECf 22,3": {
+      "find": "calumpniatore"
+    }
+  },
+  "capitale": {
+    "Ine 46": {
+      "find": "captale",
+      "only": true
+    },
+    "Ine 75": {
+      "find": "captale",
+      "only": true
+    },
+    "II As 3": {
+      "find": "captale",
+      "only": true
+    },
+    "II As 19": {
+      "find": "captale",
+      "only": true
+    },
+    "VI As 1,1": {
+      "find": "captale",
+      "only": true
+    },
+    "III Em 6,2": {
+      "find": "captale",
+      "only": true
+    },
+    "II As 21": {
+      "find": "captali",
+      "only": true
+    },
+    "VI As 6,1": {
+      "find": "captali",
+      "only": true
+    },
+    "Ine 18": {
+      "find": "captali",
+      "only": true
+    }
+  },
+  "capella": {
+    "Hn 79,6": {
+      "find": "capelle",
+      "only": true
+    }
+  },
+  "censura": {
+    "IV Atr 7,3": {
+      "find": "censure",
+      "mark": [
+        "censurae"
+      ],
+      "only": true
+    }
+  },
+  "ceap": {
+    "I Cn 18,3": {
+      "find": "ceape",
+      "mark": [
+        "ceapum"
+      ]
+    }
+  },
+  "ceapian": {
+    "Ine 25,1": {
+      "find": "geceapod",
+      "only": true
+    }
+  },
+  "ceapung": {
+    "Af El 11": {
+      "find": "ceapunge",
+      "mark": [
+        "orceapunge",
+        "orceapunga"
+      ]
+    }
+  },
+  "Cent": {
+    "Hn 76,7g": {
+      "find": "Cancia"
+    },
+    "In Cn III 56": {
+      "find": "Cantia"
+    },
+    "Grið 6": {
+      "find": "Cantwara"
+    }
+  },
+  "ceorl": {
+    "Cn 1027,12": {
+      "find": "ignobilibus",
+      "mark": [
+        "nobilibus"
+      ],
+      "only": true
+    },
+    "Hn 76,7g": {
+      "find": "uillanorum",
+      "mark": [
+        "baronum"
+      ],
+      "only": true
+    },
+    "Hu 76,7g": {
+      "find": "uillanorum",
+      "mark": [
+        "baronum"
+      ],
+      "only": true
+    },
+    "Af 10": {
+      "find": "cierliscum",
+      "mark": [
+        "cyrliscum",
+        "cirlisco"
+      ]
+    }
+  },
+  "Chaldaicus": {
+    "Iud Dei II 2": {
+      "find": "Chaldeorum"
+    }
+  },
+  "c-h-arta": {
+    "Hn 89,2": {
+      "find": "cartam"
+    },
+    "Hn 89,2a": {
+      "find": "cartam",
+      "mark": [
+        "carta"
+      ]
+    },
+    "Hn 70,22": {
+      "find": "cartarum"
+    },
+    "In Cn III 46": {
+      "find": "carta"
+    },
+    "Hn com Prot": {
+      "find": "carte"
+    },
+    "Wl lad Insc": {
+      "find": "carta"
+    },
+    "Wl Lond 1": {
+      "find": "carte"
+    }
+  },
+  "c-h-irotheca": {
+    "Rect 10": {
+      "find": "cirothecas",
+      "mark": [
+        "cirotecae"
+      ]
+    },
+    "IV Atr 2,10": {
+      "find": "cirotecas"
+    }
+  },
+  "cieping": {
+    "VI Atr 22,1": {
+      "find": "cipincga",
+      "mark": [
+        "cypinga"
+      ]
+    }
+  },
+  "cierlisc": {
+    "Wi 5,1": {
+      "find": "ceorlisc"
+    },
+    "Norðleod 9": {
+      "find": "ceorlisc"
+    },
+    "Ine Rb 32": {
+      "find": "cirlisces",
+      "only": true
+    }
+  },
+  "ci-e-rr": {
+    "Ine 37": {
+      "find": "cyrre",
+      "only": true
+    }
+  },
+  "Cantuaria": {
+    "Grið 8": {
+      "find": "\"Christes cyrican\""
+    }
+  },
+  "canonicus": {
+    "Quadr II Rb 18": {
+      "find": "canonicis"
+    },
+    "Quadr II 8,1": {
+      "find": "canonicis"
+    }
+  },
+  "persolutio": {
+    "VI As 8,8": {
+      "find": "persolucionem"
     }
   }
 }

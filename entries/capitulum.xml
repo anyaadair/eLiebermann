@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-22">Hn 8,6 linked to Hn 8,7, where capitula stands; editor’s note added (reported by Allan Adair, list C).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -34,13 +35,14 @@
         <form type="lemma">
           <orth>capitulum</orth>
         </form>
-        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">capitulum</hi> <hi rend="bold">1</hi>) <hi rend="italic">Gesetzartikel</hi> <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:El">El</ref> 49,8 <ref type="lawCode" target="law:Quadr">Q</ref>; <hi rend="italic">Rechtsbuchabschnitt</hi> <ref type="lawCode" target="law:Hn">Hn</ref> 8,6 <hi rend="bold">2</hi>) <hi rend="italic">kirchl. Convents-Capitel</hi> <ref type="lawCode" target="law:ECf">ECf</ref> 2,8</dictScrap>
+        <dictScrap type="liebermann"><lbl type="language">L</lbl> <hi rend="bold">capitulum</hi> <hi rend="bold">1</hi>) <hi rend="italic">Gesetzartikel</hi> <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:El">El</ref> 49,8 <ref type="lawCode" target="law:Quadr">Q</ref>; <hi rend="italic">Rechtsbuchabschnitt</hi> <ref type="lawCode" target="law:Hn">Hn</ref> 8,6<ptr type="editorNote" target="#edn-1"/> <hi rend="bold">2</hi>) <hi rend="italic">kirchl. Convents-Capitel</hi> <ref type="lawCode" target="law:ECf">ECf</ref> 2,8</dictScrap>
         <dictScrap type="senses">
-          <sense n="1"><hi rend="italic">Gesetzartikel</hi> <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:El">El</ref> 49,8 <ref type="lawCode" target="law:Quadr">Q</ref>; <hi rend="italic">Rechtsbuchabschnitt</hi> <ref type="lawCode" target="law:Hn">Hn</ref> 8,6</sense>
+          <sense n="1"><hi rend="italic">Gesetzartikel</hi> <ref type="lawCode" target="law:Af">Af</ref> <ref type="lawCode" target="law:El">El</ref> 49,8 <ref type="lawCode" target="law:Quadr">Q</ref>; <hi rend="italic">Rechtsbuchabschnitt</hi> <ref type="lawCode" target="law:Hn">Hn</ref> 8,6<ptr type="editorNote" target="#edn-1"/></sense>
           <sense n="2"><hi rend="italic">kirchl. Convents-Capitel</hi> <ref type="lawCode" target="law:ECf">ECf</ref> 2,8</sense>
         </dictScrap>
+        <note type="editorial" xml:id="edn-1">Liebermann’s “Hn 8,6”: the word (<hi rend="italic">capitula</hi>) stands in the next clause, <ref target="clause:Hn_8-7">Hn 8,7</ref> (Gesetze I, p. 554), to which the link goes.</note>
         <xr type="lawCode"><ref target="clause:Af_El-to-49-8">Af El 49,8</ref></xr>
-        <xr type="lawCode"><ref target="clause:Hn_8-6">Hn 8,6</ref></xr>
+        <xr type="lawCode"><ref target="clause:Hn_8-7">Hn 8,6</ref></xr>
         <xr type="lawCode"><ref target="clause:ECf_2-8">ECf 2,8</ref></xr>
       </entry>
     </body>
