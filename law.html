@@ -364,10 +364,24 @@ scripts:
         frag.appendChild(document.createTextNode(String(text).slice(last)));
         return frag;
     }
+    // the xml:ids in a clause file, to tell a note mark whose note is not (yet) in the file
+    const idsIn = new WeakMap();
+    function hasNote(doc, id) {
+        if (!idsIn.has(doc)) idsIn.set(doc, new Set([...doc.getElementsByTagName('*')].map(xmlId).filter(Boolean)));
+        return idsIn.get(doc).has(id);
+    }
     function noteRef(ptr) {
         const n = ptr.getAttribute('n') || '';
         const rend = ptr.getAttribute('rend') || '';
         const sup = el('sup', 'lnote-ref');
+        // a note printed in the edition but not yet entered here: the number, as in print, without a link
+        const first = ((ptr.getAttribute('target') || '').split(/\s+/)[0] || '').replace(/^#/, '');
+        if (!first || first === 'missing' || !hasNote(ptr.ownerDocument, first)) {
+            const s = el('span', 'lnote-ref--absent', rend === 'supplied' ? '[' + n + ']' : n);
+            s.title = 'Note ' + n + ': in the printed edition, not yet entered on this site';
+            sup.appendChild(s);
+            return sup;
+        }
         const a = el('a', null, rend === 'supplied' ? '[' + n + ']' : n);
         // A mark may point at more than one note (Liebermann's footnote in vol. I and his explanation in
         // vol. III on the same word): it goes to the first; the title says there are more.
@@ -1321,6 +1335,10 @@ scripts:
         report.innerHTML = '<p>Spotted a problem on this page: a mistranscription, a mistake in the translation, a missing manuscript reading, something wrong with the layout?</p><button type="button" class="button" data-open-suggest>Report a problem</button>';
         target.appendChild(report);
         if (window.SuggestChange) SuggestChange.attach(report, { headword: row.citation, page: location.href.split('#')[0], section: 'laws', simple: true });
+        // "Cite this page", above the report box
+        { const pg = (typeof liebPage !== 'undefined' && liebPage) || row.page || '';
+          const holder = el('div'); holder.innerHTML = ELieb.citeThis('clause', row.citation, pg ? 'I, p. ' + pg : 'I');
+          report.parentNode ? report.parentNode.insertBefore(holder.firstElementChild, report) : null; }
         // Just above the cross-references (or, with none, straight after the texts).
         const navTop = nav;
         navTop.classList.add('clause-nav--top');

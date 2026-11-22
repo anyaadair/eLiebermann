@@ -48,3 +48,9 @@ defaults:
     values:
       root: "../"
       section: visualisations
+
+# Shown beside the logo on every page (_layouts/default.html) and in the citation forms.
+# Change the version when a new release is announced; set status to "" when the beta label should go.
+site_version: "0.9"
+site_status: "Beta"
+site_url: "https://anyaadair.github.io/eLiebermann/"
