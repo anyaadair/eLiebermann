@@ -7,7 +7,6 @@
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
-        <respStmt><resp>Translation</resp><name ref="#unattributed">Translator not recorded</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
@@ -22,7 +21,7 @@
         <bibl type="legalText"><title>Iudicium Dei VIII (Ordeal Formula)</title></bibl>
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">415</biblScope></bibl>
-          <bibl xml:id="unattributed" type="translation">Translation from the original OE Laws Database spreadsheet; the translator is not recorded</bibl>
+          <bibl xml:id="adair-draft" type="withheld">Draft translation from the original OE Laws Database spreadsheet (Allan Adair, with machine translation), withheld from the site until it has been checked</bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, created for this database in 2026 with Claude, a large language model made by Anthropic. It is a crib to help the reader with Liebermann’s German, and should not be treated as a separate translation</bibl>
         </listBibl>
         <listWit>
@@ -44,6 +43,7 @@
       <change when="2026-10-19">Generated from row 2290 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text added from <title>Die Gesetze der Angelsachsen</title> I, p. 415.</change>
       <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 415: “7” → “⁊”.</change>
+        <change when="2026-11-24">Draft English translation (translator not recorded; Allan Adair, with machine translation) withheld from the site until checked (Anya Adair). Liebermann’s German and its English crib are shown.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -53,7 +53,7 @@
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="2.1" corresp="#wit-ca"><pb n="415" ed="#liebermann"/>þ<hi rend="italic">æt</hi>, gyf ðu ænig ðing ðisse stale wite oððe gewita wære, ðonne gedylegie ðin heorte, ⁊ þis wæter ðe ne underfó;</ab>
         <ab type="translation" xml:lang="de" source="#liebermann"><pb n="415" ed="#liebermann"/>dass, wenn du etwas von diesem Diebstahle weisst oder Mitwisser gewesen bist, dann vergehe dein Herz, und dies Wasser nehme dich nicht auf;</ab>
         <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">that, if you know anything of this theft or have been an accessory, then may your heart fail, and may this water not receive you;</ab>
-        <ab type="translation" xml:lang="en" source="#unattributed" corresp="#wit-ca">if you know anything about this theft or have been an accomplice, then let your heart perish, and let not this water receive you.</ab>
+        <ab type="translationWithheld" xml:lang="en" source="#adair-draft" corresp="#wit-ca">if you know anything about this theft or have been an accomplice, then let your heart perish, and let not this water receive you.</ab>
         <note type="editorial">U: translator unrecorded: check</note>
       </div>
     </body>

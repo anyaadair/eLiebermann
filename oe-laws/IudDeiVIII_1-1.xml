@@ -7,7 +7,6 @@
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
-        <respStmt><resp>Translation</resp><name ref="#unattributed">Translator not recorded</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
       </titleStmt>
       <publicationStmt>
@@ -23,7 +22,7 @@
         <bibl type="legalText"><title>Iudicium Dei VIII (Ordeal Formula)</title></bibl>
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">415</biblScope></bibl>
-          <bibl xml:id="unattributed" type="translation">Translation from the original OE Laws Database spreadsheet; the translator is not recorded</bibl>
+          <bibl xml:id="adair-draft" type="withheld">Draft translation from the original OE Laws Database spreadsheet (Allan Adair, with machine translation), withheld from the site until it has been checked</bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, created for this database in 2026 with Claude, a large language model made by Anthropic. It is a crib to help the reader with Liebermann’s German, and should not be treated as a separate translation</bibl>
         </listBibl>
         <listWit>
@@ -45,6 +44,7 @@
       <change when="2026-10-19">Generated from row 2288 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text added from <title>Die Gesetze der Angelsachsen</title> I, p. 415.</change>
       <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 415: “7” → “⁊”.</change>
+        <change when="2026-11-24">Draft English translation (translator not recorded; Allan Adair, with machine translation) withheld from the site until checked (Anya Adair). Liebermann’s German and its English crib are shown.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -54,7 +54,7 @@
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="1.1" corresp="#wit-ca"><pb n="415" ed="#liebermann"/>þ<hi rend="italic">æt</hi> ge ne genedon<ptr type="liebermannNote" n="5" target="#IudDeiVIII_1-1.lnote.oe.5"/>, þ<hi rend="italic">æt</hi> ge þis husl ðicgon ⁊ to ðisson weofode ne gán, gif ge þis dydon, þe ge betogene syndon, oððe wiston, hwa hit dide.</ab>
         <ab type="translation" xml:lang="de" source="#liebermann"><pb n="415" ed="#liebermann"/>dass ihr nicht waget, dies Abendmahl zu geniessen und zu diesem Altare zu treten, wenn ihr jenes gethan habt, dessen ihr angeklagt seid, oder wusstet, wer es gethan hat.</ab>
         <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">that you do not dare to partake of this communion and to approach this altar if you have done that of which you are accused, or knew who did it.</ab>
-        <ab type="translation" xml:lang="en" source="#unattributed" corresp="#wit-ca">that you dare not share this Eucharist or approach this altar if you have done what you are accused of, or if you knew who did it.</ab>
+        <ab type="translationWithheld" xml:lang="en" source="#adair-draft" corresp="#wit-ca">that you dare not share this Eucharist or approach this altar if you have done what you are accused of, or if you knew who did it.</ab>
         <note type="editorial">U: translator unrecorded: check; Liebermann would correct ‘genedon’ to ‘geneðon’.</note>
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiVIII_1-1.lnote.oe.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">415</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">bessere</hi> geneðon</seg><seg type="translation" xml:lang="en" source="#claude">read geneðon</seg></note>
       </div>

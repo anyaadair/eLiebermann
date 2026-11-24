@@ -7,7 +7,6 @@
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
-        <respStmt><resp>Translation</resp><name ref="#unattributed">Translator not recorded</name></respStmt>
         <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
       </titleStmt>
@@ -24,7 +23,7 @@
         <bibl type="legalText"><title>Dunsæte Ordinance</title></bibl>
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">374</biblScope></bibl>
-          <bibl xml:id="unattributed" type="translation">Translation from the original OE Laws Database spreadsheet; the translator is not recorded</bibl>
+          <bibl xml:id="adair-draft" type="withheld">Draft translation from the original OE Laws Database spreadsheet (Allan Adair, with machine translation), withheld from the site until it has been checked</bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, created for this database in 2026 with Claude, a large language model made by Anthropic. It is a crib to help the reader with Liebermann’s German, and should not be treated as a separate translation</bibl>
           <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
           <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
@@ -55,6 +54,7 @@
       <change when="2026-10-19">Generated from row 1919 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 374.</change>
       <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 374: “Gif man secge, þæt man þæt trod awoh drife, ðonne mot se ðe þæt yrfe ah trod [o]ð to stæðe lædan ⁊ ðær syxa sum ungecorenra, ðe getrywe syn, ðone að syllan, þæt he mid folcrihte on þæt land sprece, swa his [orf] ðær up eode.” → “Gif man secge, þæt man þæt trod awoh drife, ðonne mot se ðe þæt yrfe ah trod [o]ð to stæðe lædan ⁊ ðær syxa sum ungecorenra, ðe getrywe syn, ðone að syllan, þæt he mid folcrihte on þæt land sprece, swa his [orf] ðær up eode. (expanded letters in italics: æt, æt, ne, æt, æt, æt)”.</change>
+        <change when="2026-11-24">Draft English translation (translator not recorded; Allan Adair, with machine translation) withheld from the site until checked (Anya Adair). Liebermann’s German and its English crib are shown.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -65,7 +65,7 @@
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="1.2" corresp="#wit-q"><pb n="375" ed="#liebermann"/>Si dicatur, quod uestigium illud<ptr type="liebermannNote" n="13" target="#Duns_1-2.lnote.oe.13"/> iniuste minetur, tunc debet homo qui per uestigium sequitur ad locum ducere et ibi se sexto ungecorenra (id est non electorum), qui credibiles<ptr type="liebermannNote" n="14" target="#Duns_1-2.lnote.oe.14"/> tamen sint, iurare, quod in recto puplico super illam terram<ptr type="liebermannNote" n="15" target="#Duns_1-2.lnote.oe.15"/> loquatur, sicut pecunia sua<ptr type="liebermannNote" n="16" target="#Duns_1-2.lnote.oe.16"/> super eam euenit<ptr type="liebermannNote" n="17" target="#Duns_1-2.lnote.oe.17"/>.</ab>
         <ab type="translation" xml:lang="de" source="#liebermann"><pb n="375" ed="#liebermann"/>Wenn jener [dortige Gutsbesitzer] erwidert, dass dieser [Kläger] rechtswidrig diese Spur verfolge, dann kann dieser Eigenthümer<ptr type="liebermannNote" n="1" target="#Duns_1-2.lnote.de.1"/> des Viehes [als Widerlegung] die Spur bis<ptr type="liebermannNote" n="2" target="#Duns_1-2.lnote.de.2"/> zum Ufer leiten und dort als einer von sechs<ptr type="liebermannNote" n="3" target="#Duns_1-2.lnote.de.3"/> [Eidesleistern], die [ihm zwar] nicht ernannt<ptr type="liebermannNote" n="4" target="#Duns_1-2.lnote.de.4"/>, [aber] vertrauenswerth seien, folgenden Eid ablegen: ‘dass er nach Volksrecht gegen jenes Landgut klage, da sein Vieh dort hinauf gegangen sei’.</ab>
         <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">If that [landowner there] replies that this [plaintiff] is following the track wrongfully, then this owner of the cattle may [in rebuttal] lead the track up to the bank and there, as one of six [oath-givers] who are not nominated [for him] but are trustworthy, give the following oath: ‘that he makes his claim against that estate according to folk-right, since his cattle went up there’.</ab>
-        <ab type="translation" xml:lang="en" source="#unattributed" corresp="#wit-b">If that man [the local] says that [the owner of the cattle] unjustly follows the trail, then this [man] who owns the cattle must conduct [them both back] to the bank; and there as one of six unselected [oath-takers], who are trustworthy, give an oath there that he asserts within [the terms of] customary law that his cattle went there.</ab>
+        <ab type="translationWithheld" xml:lang="en" source="#adair-draft" corresp="#wit-b">If that man [the local] says that [the owner of the cattle] unjustly follows the trail, then this [man] who owns the cattle must conduct [them both back] to the bank; and there as one of six unselected [oath-takers], who are trustworthy, give an oath there that he asserts within [the terms of] customary law that his cattle went there.</ab>
         <note type="comparison" source="#liebermann" n="375"><ref target="clause:IIAs_9">II As 9</ref></note>
         <note type="comparisonPrinted" source="#liebermann">Vgl. II As. 9</note>
         <note type="editorial">U: translator unrecorded: check; B reads ‘ah trod’ and ‘ofer’; Liebermann prints ‘[o]ð’ and supplies ‘orf’ from Ld and the Quadripartitus. B and Ld read ‘ahtrodað’, which the Quadripartitus also understands as a verb derived from ‘trod’. Liebermann compares II As 9.</note>

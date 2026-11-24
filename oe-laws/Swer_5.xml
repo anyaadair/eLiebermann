@@ -7,7 +7,6 @@
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
-        <respStmt><resp>Translation</resp><name ref="#unattributed">Translator not recorded</name></respStmt>
         <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
       </titleStmt>
@@ -24,7 +23,7 @@
         <bibl type="legalText"><title>Swerian (Oaths)</title></bibl>
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">398</biblScope></bibl>
-          <bibl xml:id="unattributed" type="translation">Translation from the original OE Laws Database spreadsheet; the translator is not recorded</bibl>
+          <bibl xml:id="adair-draft" type="withheld">Draft translation from the original OE Laws Database spreadsheet (Allan Adair, with machine translation), withheld from the site until it has been checked</bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, created for this database in 2026 with Claude, a large language model made by Anthropic. It is a crib to help the reader with Liebermann’s German, and should not be treated as a separate translation</bibl>
           <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
           <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
@@ -55,6 +54,7 @@
       <change when="2026-10" type="checked">Liebermann’s text checked and corrected against <title>Die Gesetze der Angelsachsen</title> I, p. 398.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS H added from Gesetze I, p. 398.</change>
       <change when="2026-10" type="checked">Liebermann’s German translation corrected against Gesetze I, p. 399: “…,” → “. . .,”.</change>
+        <change when="2026-11-24">Draft English translation (translator not recorded; Allan Adair, with machine translation) withheld from the site until checked (Anya Adair). Liebermann’s German and its English crib are shown.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -66,7 +66,7 @@
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="5" corresp="#wit-q"><pb n="399" ed="#liebermann"/>In omnipotenti Deo, innocens sum actionis et dictionis ab ea compellatione, qua N. me compellat.</ab>
         <ab type="translation" xml:lang="de" source="#liebermann"><pb n="399" ed="#liebermann"/>(Eid des Gegners<ptr type="liebermannNote" n="1" target="#Swer_5.lnote.de.1"/> [Beklagten]: dass er unschuldig ist. <hi rend="italic">B</hi>) Bei dem Herrn . . ., ich bin unschuldig, sowohl in That<ptr type="liebermannNote" n="2" target="#Swer_5.lnote.de.2"/> wie<ptr type="liebermannNote" n="†" target="#Swer_5.lnote.de1.dagger"/> im Planen<ptr type="liebermannNote" n="3" target="#Swer_5.lnote.de.3"/>, der Anschuldigung deren N. mich zeiht.</ab>
         <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">(The oath of the opponent [the defendant]: that he is innocent. B) By the Lord …, I am innocent, both in deed and in planning, of the accusation of which N. accuses me.</ab>
-        <ab type="translation" xml:lang="en" source="#unattributed" corresp="#wit-h">[I swear] by the Lord [that] I am not guilty of the accusation that N. laid against me, either in deed or purpose.</ab>
+        <ab type="translationWithheld" xml:lang="en" source="#adair-draft" corresp="#wit-h">[I swear] by the Lord [that] I am not guilty of the accusation that N. laid against me, either in deed or purpose.</ab>
         <note type="editorial">U: translator unrecorded: check; B's heading is in red. ‘That … Planen’ (dæde … dihtes) is an alliterating pair.</note>
         <note type="liebermannNote" subtype="textual" xml:id="Swer_5.lnote.oe.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">398</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Platz für Überschrift frei</hi></seg><seg type="translation" xml:lang="en" source="#claude">Space left free for a heading</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Swer_5.lnote.oe.1-2" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">398</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">Überschrift roth</hi></seg><seg type="translation" xml:lang="en" source="#claude">Heading in red</seg></note>

@@ -7,7 +7,6 @@
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
-        <respStmt><resp>Translation</resp><name ref="#unattributed">Translator not recorded</name></respStmt>
         <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
       </titleStmt>
@@ -24,7 +23,7 @@
         <bibl type="legalText"><title>Iudex (Judicial Duties)</title></bibl>
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">476</biblScope></bibl>
-          <bibl xml:id="unattributed" type="translation">Translation from the original OE Laws Database spreadsheet; the translator is not recorded</bibl>
+          <bibl xml:id="adair-draft" type="withheld">Draft translation from the original OE Laws Database spreadsheet (Allan Adair, with machine translation), withheld from the site until it has been checked</bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, created for this database in 2026 with Claude, a large language model made by Anthropic. It is a crib to help the reader with Liebermann’s German, and should not be treated as a separate translation</bibl>
           <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
           <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
@@ -55,6 +54,7 @@
       <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 476: “Hyt ys awriten: ‘Ne onfoh ðu nænigne had on dome; né ne ara ðú for nanum, þæt þu þæt riht ne deme’.” → “Hyt ys awriten: ‘Ne onfoh ðu nænigne had on dome; né ne ara ðú for nanum, þæt þu þæt riht ne deme’. (expanded letters in italics: æt, æt)”.</change>
       <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 476: “indicio,; nero” → “iudicio,; uero”.</change>
       <change when="2026-11-01">Manuscript sigla that Liebermann prints run together in his notes (“MHkBr”, “HB”) spaced for reading (“M Hk Br”, “H B”).</change>
+        <change when="2026-11-24">Draft English translation (translator not recorded; Allan Adair, with machine translation) withheld from the site until checked (Anya Adair). Liebermann’s German and its English crib are shown.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -65,7 +65,7 @@
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="15.1" corresp="#wit-q"><pb n="476" ed="#liebermann"/>Scriptum est: Non attendas personam hominis in iudicio, nec<ptr type="liebermannNote" n="12" target="#Iudex_15-1.lnote.oe.12"/> pro aliquo facies<ptr type="liebermannNote" n="13" target="#Iudex_15-1.lnote.oe.13"/>, ut<ptr type="liebermannNote" n="c" target="#Iudex_15-1.lnote.oe.c"/> a uero denies<ptr type="liebermannNote" n="14" target="#Iudex_15-1.lnote.oe.14"/> et iniuste iudices!</ab>
         <ab type="translation" xml:lang="de" source="#liebermann"><pb n="476" ed="#liebermann"/>Es steht geschrieben: ‘Nicht begünstige du irgend eine Person im Urtheilspruch und um Keines willen schone<ptr type="liebermannNote" n="1" target="#Iudex_15-1.lnote.de.1"/> unterlassend, den richtigen Spruch zu ertheilen’.</ab>
         <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">It is written: ‘Do not favour any person in judgment, and for no one's sake be lenient so as to fail to give the right judgment’.</ab>
-        <ab type="translation" xml:lang="en" source="#unattributed" corresp="#wit-g-a">It is written: “Don’t look (over-)favourably upon any individual, nor give honour to any (in such a way) that justice is not served.</ab>
+        <ab type="translationWithheld" xml:lang="en" source="#adair-draft" corresp="#wit-g-a">It is written: “Don’t look (over-)favourably upon any individual, nor give honour to any (in such a way) that justice is not served.</ab>
         <note type="passageSource">Deuteronomy 16:19 (cf. Exodus 23:2–3)</note>
         <note type="comparison" source="#liebermann" n="476">Deut. 16, 19</note>
         <note type="comparisonPrinted" source="#liebermann">Deut. 16, 19</note>

@@ -7,7 +7,6 @@
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
-        <respStmt><resp>Translation</resp><name ref="#unattributed">Translator not recorded</name></respStmt>
         <respStmt><resp>Cross-references to other clauses</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
       </titleStmt>
@@ -24,7 +23,7 @@
         <bibl type="legalText"><title>Romscot (Peter’s Pence)</title></bibl>
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">474</biblScope></bibl>
-          <bibl xml:id="unattributed" type="translation">Translation from the original OE Laws Database spreadsheet; the translator is not recorded</bibl>
+          <bibl xml:id="adair-draft" type="withheld">Draft translation from the original OE Laws Database spreadsheet (Allan Adair, with machine translation), withheld from the site until it has been checked</bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, created for this database in 2026 with Claude, a large language model made by Anthropic. It is a crib to help the reader with Liebermann’s German, and should not be treated as a separate translation</bibl>
           <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
           <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
@@ -53,6 +52,7 @@
       <change when="2026-10" type="checked">Liebermann’s text added from <title>Die Gesetze der Angelsachsen</title> I, p. 474.</change>
       <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 474: “7” → “⁊”.</change>
       <change when="2026-10" type="checked">Liebermann’s German translation corrected against Gesetze I, p. 474: “jemand” → “jémand”.</change>
+        <change when="2026-11-24">Draft English translation (translator not recorded; Allan Adair, with machine translation) withheld from the site until checked (Anya Adair). Liebermann’s German and its English crib are shown.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -62,7 +62,7 @@
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="2" corresp="#wit-g-a"><pb n="474" ed="#liebermann"/>Gif hit hwa forgumie, gylde LX scill' ⁊ be twelffealdan agife þene Rómpenincg<ptr type="liebermannNote" n="c" target="#Romscot_2.lnote.oe.c"/>.</ab>
         <ab type="translation" xml:lang="de" source="#liebermann"><pb n="474" ed="#liebermann"/>Wenn es jémand versäumt<ptr type="liebermannNote" n="1" target="#Romscot_2.lnote.de.1"/>, zahle er 60<ptr type="liebermannNote" n="2" target="#Romscot_2.lnote.de.2"/> Schill. und entrichte den Rompfennig mit Zwölffachem<ptr type="liebermannNote" n="3" target="#Romscot_2.lnote.de.3"/>.</ab>
         <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">If anyone neglects it, let him pay 60 shillings and render the Rome-penny twelvefold.</ab>
-        <ab type="translation" xml:lang="en" source="#unattributed" corresp="#wit-g-a">If anyone misses [this date], he should pay [a fine of] 60 shillings, and pay twelve times [the Peter's pence].</ab>
+        <ab type="translationWithheld" xml:lang="en" source="#adair-draft" corresp="#wit-g-a">If anyone misses [this date], he should pay [a fine of] 60 shillings, and pay twelve times [the Peter's pence].</ab>
         <note type="comparison" source="#wormald-mel" n="368"><label>term recurs</label> <ref target="clause:Northu_57-1">Northu 57.1</ref> <quote>the 'Rompenincg' of Romscot 2 recurs in Northu 57:1</quote></note>
         <note type="editorial">U: translator unrecorded: check; In G, Iudex follows in the same hand.</note>
         <note type="liebermannNote" subtype="textual" xml:id="Romscot_2.lnote.oe.c" n="c" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">474</biblScope></bibl><seg type="original" xml:lang="de">per aequitatem corrigat <hi rend="italic">Isidor</hi></seg><seg type="translation" xml:lang="en" source="#claude">per aequitatem corrigat Isidor</seg></note>

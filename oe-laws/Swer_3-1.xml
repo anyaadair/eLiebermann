@@ -7,7 +7,6 @@
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
-        <respStmt><resp>Translation</resp><name ref="#unattributed">Translator not recorded</name></respStmt>
         <respStmt><resp>Cross-references to other clauses</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
       </titleStmt>
@@ -24,7 +23,7 @@
         <bibl type="legalText"><title>Swerian (Oaths)</title></bibl>
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">396</biblScope></bibl>
-          <bibl xml:id="unattributed" type="translation">Translation from the original OE Laws Database spreadsheet; the translator is not recorded</bibl>
+          <bibl xml:id="adair-draft" type="withheld">Draft translation from the original OE Laws Database spreadsheet (Allan Adair, with machine translation), withheld from the site until it has been checked</bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, created for this database in 2026 with Claude, a large language model made by Anthropic. It is a crib to help the reader with Liebermann’s German, and should not be treated as a separate translation</bibl>
           <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
           <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
@@ -55,6 +54,7 @@
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 396.</change>
       <change when="2026-10" type="checked">Liebermann’s text of MS H added from Gesetze I, p. 396.</change>
       <change when="2026-11-01">Manuscript sigla that Liebermann prints run together (“HDi”, “HRl”, “PlS”, “THk”) spaced for reading (“H Di”, “H Rl”, “Pl S”, “T Hk”).</change>
+        <change when="2026-11-24">Draft English translation (translator not recorded; Allan Adair, with machine translation) withheld from the site until checked (Anya Adair). Liebermann’s German and its English crib are shown.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -66,7 +66,7 @@
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="3.1" corresp="#wit-q"><pb n="397" ed="#liebermann"/>Sed sic<ptr type="liebermannNote" n="13" target="#Swer_3-1.lnote.oe.13"/> pecus<ptr type="liebermannNote" n="14" target="#Swer_3-1.lnote.oe.14"/> habeo<ptr type="liebermannNote" n="15" target="#Swer_3-1.lnote.oe.15"/>, sicut recte adquisiui.</ab>
         <ab type="translation" xml:lang="de" source="#liebermann"><pb n="397" ed="#liebermann"/>Sondern<ptr type="liebermannNote" n="1" target="#Swer_3-1.lnote.de.1"/> só hab ich Vieh, wie ich es rechtlich<ptr type="liebermannNote" n="2" target="#Swer_3-1.lnote.de.2"/> erworben habe<ptr type="liebermannNote" n="3" target="#Swer_3-1.lnote.de.3"/>.</ab>
         <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">But I have the cattle just as I lawfully acquired it.</ab>
-        <ab type="translation" xml:lang="en" source="#unattributed" corresp="#wit-h">However, I [do] have cattle that I acquired legally.</ab>
+        <ab type="translationWithheld" xml:lang="en" source="#adair-draft" corresp="#wit-h">However, I [do] have cattle that I acquired legally.</ab>
         <note type="comparedBy" source="#liebermann"><ref target="clause:Duns_8-2">Duns 8.2</ref></note>
         <note type="comparedBy" source="#wormald-mel" n="385"><label>common ground</label> <ref target="clause:Becwaeth_1">Becwæð 1</ref> <quote>perhaps just enough common ground with Swerian to suggest a link between the two [n. Swer. 3:1/Becwæð 1, Swer. 3:3/Becwæð 2]</quote></note>
         <note type="editorial">U: translator unrecorded: check</note>

@@ -7,7 +7,6 @@
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
-        <respStmt><resp>Translation</resp><name ref="#unattributed">Translator not recorded</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
       </titleStmt>
       <publicationStmt>
@@ -23,7 +22,7 @@
         <bibl type="legalText"><title>Iudicium Dei VIII (Ordeal Formula)</title></bibl>
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">415</biblScope></bibl>
-          <bibl xml:id="unattributed" type="translation">Translation from the original OE Laws Database spreadsheet; the translator is not recorded</bibl>
+          <bibl xml:id="adair-draft" type="withheld">Draft translation from the original OE Laws Database spreadsheet (Allan Adair, with machine translation), withheld from the site until it has been checked</bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, created for this database in 2026 with Claude, a large language model made by Anthropic. It is a crib to help the reader with Liebermann’s German, and should not be treated as a separate translation</bibl>
         </listBibl>
         <listWit>
@@ -46,6 +45,7 @@
       <change when="2026-10" type="checked">Liebermann’s text added from <title>Die Gesetze der Angelsachsen</title> I, p. 415.</change>
       <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 415: “7; 7; 7; 7; 7; 7” → “⁊; ⁊; ⁊; ⁊; ⁊; ⁊”.</change>
       <change when="2026-10" type="checked">The modern editor’s text corrected against Gesetze I, p. 415: “ge uiiderfengon” → “ge underfengon”.</change>
+        <change when="2026-11-24">Draft English translation (translator not recorded; Allan Adair, with machine translation) withheld from the site until checked (Anya Adair). Liebermann’s German and its English crib are shown.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -55,7 +55,7 @@
         <ab type="liebermannText" xml:lang="ang" source="#liebermann" n="1" corresp="#wit-ca"><ptr type="liebermannNote" n="2" target="#IudDeiVIII_1.lnote.oe.2"/><pb n="415" ed="#liebermann"/>Ic eow halsie þurh ðonne<ptr type="liebermannNote" n="1" target="#IudDeiVIII_1.lnote.oe.1"/> Fæder ⁊ þone Sunu ⁊ þone Halgan gast ⁊ þurh heowerne<ptr type="liebermannNote" n="3" target="#IudDeiVIII_1.lnote.oe.3"/> cristendóm, þe ge underfengon, ⁊ þurh þa <ptr type="liebermannNote" n="4" target="#IudDeiVIII_1.lnote.oe.4"/>halgan rode, þe Crist on ðrowode, ⁊ þurh þa halgan godspel ⁊ ða reliquias, þe on ðisse cyrcan syndon,</ab>
         <ab type="translation" xml:lang="de" source="#liebermann"><pb n="415" ed="#liebermann"/>Ich beschwöre euch bei dem Vater und dem Sohne und dem Heiligen Geiste und bei eurem Christenthum, welches ihr empfangen habt, und bei dem heiligen Kreuze, an welchem Christus gelitten hat, und bei den heiligen Evangelien und den Reliquien, welche in dieser Kirche sind,</ab>
         <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">I adjure you by the Father and the Son and the Holy Spirit, and by your Christianity which you have received, and by the holy cross on which Christ suffered, and by the holy gospels and the relics which are in this church,</ab>
-        <ab type="translation" xml:lang="en" source="#unattributed" corresp="#wit-ca">I adjure you by the Father and the Son and the Holy Spirit, and by the Christianity which you have received, and by the holy Cross on which Christ suffered, and by the holy Gospels and the relics which are in this church,</ab>
+        <ab type="translationWithheld" xml:lang="en" source="#adair-draft" corresp="#wit-ca">I adjure you by the Father and the Son and the Holy Spirit, and by the Christianity which you have received, and by the holy Cross on which Christ suffered, and by the holy Gospels and the relics which are in this church,</ab>
         <note type="editorial">U: translator unrecorded: check; Chapter 1 is translated word for word from the Latin ordo printed by Zeumer (Formulae p. 697, no. 5), Liebermann notes.</note>
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiVIII_1.lnote.oe.2" n="2" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">415</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">cap.</hi> 1 <hi rend="italic">wörtlich übersetzt aus Zeumer</hi> 697 (5), <hi rend="italic">zu welchem es näher steht als zu</hi> I 2, 1 <hi rend="italic">oder zu</hi> VI</seg><seg type="translation" xml:lang="en" source="#claude">cap. 1 translated literally from Zeumer 697 (5), to which it stands closer than to I 2, 1 or to VI</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="IudDeiVIII_1.lnote.oe.1" n="1" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">415</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">für</hi> ðone <hi rend="italic">auch cap.</hi> 1</seg><seg type="translation" xml:lang="en" source="#claude">for ðone, also cap. 1</seg></note>

@@ -528,7 +528,7 @@ scripts:
         const out = {};
         tei(doc, 'listBibl').forEach(list => tei(list, 'bibl').forEach(b => {
             const id = b.getAttribute('xml:id') || b.getAttributeNS('http://www.w3.org/XML/1998/namespace', 'id');
-            if (!id) return;
+            if (!id || b.getAttribute('type') === 'withheld') return;   // (a draft withheld until checked)
             const name = tei(doc, 'name').find(n => n.getAttribute('ref') === '#' + id);
             const page = tei(b, 'biblScope').find(s => s.getAttribute('unit') === 'page');
             out[id] = { id, bibl: b, type: b.getAttribute('type') || '', name: id === 'claude' ? 'LLM' : name ? plainText(name) : (SOURCE_NAMES[id] || id.charAt(0).toUpperCase() + id.slice(1)),

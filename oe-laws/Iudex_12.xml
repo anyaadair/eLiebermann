@@ -7,7 +7,6 @@
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
-        <respStmt><resp>Translation</resp><name ref="#unattributed">Translator not recorded</name></respStmt>
         <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
       </titleStmt>
@@ -24,7 +23,7 @@
         <bibl type="legalText"><title>Iudex (Judicial Duties)</title></bibl>
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">476</biblScope></bibl>
-          <bibl xml:id="unattributed" type="translation">Translation from the original OE Laws Database spreadsheet; the translator is not recorded</bibl>
+          <bibl xml:id="adair-draft" type="withheld">Draft translation from the original OE Laws Database spreadsheet (Allan Adair, with machine translation), withheld from the site until it has been checked</bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, created for this database in 2026 with Claude, a large language model made by Anthropic. It is a crib to help the reader with Liebermann’s German, and should not be treated as a separate translation</bibl>
           <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
           <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
@@ -55,6 +54,7 @@
       <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 476: “Þa únrihtwisan deman, æfter witegan cwyde, swa swa wulfas on æfne, ne læfað náwiht oð morgen: þæt ys, þæt hi be þisses anweardan lifes ongehyðnesse ðenceað ⁊ nawiht be þæs towerdan.” → “Þa únrihtwisan deman, æfter witegan cwyde, swa swa wulfas on æfne, ne læfað náwiht oð morgen: þæt ys, þæt hi be þisses anweardan lifes ongehyðnesse ðenceað ⁊ nawiht be þæs towerdan. (expanded letters in italics: æt, æt)”.</change>
       <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 476: “nespere” → “uespere”.</change>
       <change when="2026-11-01">Manuscript sigla that Liebermann prints run together in his notes (“MHkBr”, “HB”) spaced for reading (“M Hk Br”, “H B”).</change>
+        <change when="2026-11-24">Draft English translation (translator not recorded; Allan Adair, with machine translation) withheld from the site until checked (Anya Adair). Liebermann’s German and its English crib are shown.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -65,7 +65,7 @@
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="12" corresp="#wit-q"><pb n="476" ed="#liebermann"/>Impii iudices, iuxta uerba<ptr type="liebermannNote" n="1" target="#Iudex_12.lnote.oe.1"/> sapientium<ptr type="liebermannNote" n="2" target="#Iudex_12.lnote.oe.2"/>, sicut rapaces<ptr type="liebermannNote" n="a" target="#Iudex_12.lnote.oe.a"/> lupi uespere nil residuant<ptr type="liebermannNote" n="b" target="#Iudex_12.lnote.oe.b"/> usque mane, id est de presenti<ptr type="liebermannNote" n="3" target="#Iudex_12.lnote.oe.3"/> solum uita cogitant; de futura<ptr type="liebermannNote" n="4" target="#Iudex_12.lnote.oe.4"/> nichil<ptr type="liebermannNote" n="5" target="#Iudex_12.lnote.oe.5"/> considerant.</ab>
         <ab type="translation" xml:lang="de" source="#liebermann"><pb n="476" ed="#liebermann"/>Die ungerechten Richter lassen nach des Propheten<ptr type="liebermannNote" n="a" target="#Iudex_12.lnote.de1.a"/> Spruch, so wie Wölfe<ptr type="liebermannNote" n="1" target="#Iudex_12.lnote.de.1"/> am Abend nichts bis zum Morgen übrig: d. h. dass sie an das Vortheilhafte<ptr type="liebermannNote" n="2" target="#Iudex_12.lnote.de.2"/> dieses gegenwärtigen Lebens denken und nicht an das des zukünftigen.</ab>
         <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">Unjust judges, according to the prophet's saying, like wolves in the evening, leave nothing until morning: that is, they think of the advantage of this present life and not of the life to come.</ab>
-        <ab type="translation" xml:lang="en" source="#unattributed" corresp="#wit-g-a">Unjust judges follow the prophet’s saying: like wolves in the evening, they leave nothing for morning. That is, they think about this present life’s advantages and nothing about the next.</ab>
+        <ab type="translationWithheld" xml:lang="en" source="#adair-draft" corresp="#wit-g-a">Unjust judges follow the prophet’s saying: like wolves in the evening, they leave nothing for morning. That is, they think about this present life’s advantages and nothing about the next.</ab>
         <note type="passageSource">Zephaniah 3:3 (cf. Acts 20:29)</note>
         <note type="comparison" source="#liebermann" n="476">Isidor, Sent. III 52.12</note>
         <note type="comparisonPrinted" source="#liebermann">Isidor, Sent. III 52, 12</note>

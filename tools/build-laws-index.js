@@ -234,6 +234,8 @@ let codeSources = {};
             const [, id, attrs, inner] = m;
             // the LLM's English of Liebermann's German only where a text is from it (not for notes alone)
             if (id === 'claude' && !/<ab [^>]*source="#claude"/.test(xml)) continue;
+            // a text withheld from the site until checked (type="withheld") is not listed either
+            if (attr(attrs, 'type') === 'withheld') continue;
             const page = (inner.match(/<biblScope unit="page">([^<]*)<\/biblScope>/) || [])[1] || '';
             const s = k.sources.get(id);
             if (!s) k.sources.set(id, { id, name: id === 'claude' ? 'LLM' : names[id] || SOURCE_NAMES[id] || id.charAt(0).toUpperCase() + id.slice(1),
