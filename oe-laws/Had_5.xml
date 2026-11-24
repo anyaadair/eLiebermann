@@ -9,7 +9,6 @@
         <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
         <respStmt><resp>Translation</resp><name ref="#rabin-doml">Rabin</name></respStmt>
-        <respStmt><resp>Translation</resp><name ref="#unattributed">Translator not recorded</name></respStmt>
         <respStmt><resp>Date and place</resp><name ref="#whitelock">Whitelock</name></respStmt>
         <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
@@ -28,7 +27,7 @@
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">466</biblScope></bibl>
           <bibl xml:id="rabin-doml" type="edition">Andrew Rabin, ed. and trans., <title>Old English Legal Writings: Wulfstan</title>, Dumbarton Oaks Medieval Library (Cambridge, MA: Harvard University Press, 2020), p. <biblScope unit="page">18</biblScope></bibl>
-          <bibl xml:id="unattributed" type="translation">Translation from the original OE Laws Database spreadsheet; the translator is not recorded</bibl>
+          <bibl xml:id="adair-draft" type="withheld">Draft translation from the original OE Laws Database spreadsheet (Allan Adair, with machine translation), withheld from the site until it has been checked</bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, created for this database in 2026 with Claude, a large language model made by Anthropic. It is a crib to help the reader with Liebermann’s German, and should not be treated as a separate translation</bibl>
           <bibl xml:id="whitelock" type="study">Dorothy Whitelock, ed., <title>English Historical Documents, I: c. 500–1042</title> (London: Eyre &amp; Spottiswoode, 1955; 2nd edn, London: Eyre Methuen, 1979); page numbers are those of the Taylor &amp; Francis e-Library edition (2007)</bibl>
           <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
@@ -65,6 +64,7 @@
       <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 466: “7” → “⁊”.</change>
       <change when="2026-10" type="checked">Liebermann’s Latin text corrected against Gesetze I, p. 467: “libre” → “librę”.</change>
       <change when="2026-11-01">Manuscript sigla that Liebermann prints run together in his notes (“MHkBr”, “HB”) spaced for reading (“M Hk Br”, “H B”).</change>
+        <change when="2026-11-24">Draft English translation (translator not recorded; Allan Adair, with machine translation) withheld from the site until checked (Anya Adair). Liebermann’s German and its English crib are shown.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -79,7 +79,7 @@
         <ab type="translation" xml:lang="de" source="#liebermann"><pb n="467" ed="#liebermann"/>Und wenn tödtliche Verletzung eintritt: ausser dem gesetzlichen Wergeld, beim vierten Ordo<ptr type="liebermannNote" n="1" target="#Had_5.lnote.de.1"/> als Klerusbusse 4 Pfund zur Busse, neben geistlicher Poenitenz.</ab>
         <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">And if fatal injury occurs: besides the lawful wergild, for the fourth grade 4 pounds as compensation for orders, with spiritual penance.</ab>
         <ab type="translation" xml:lang="en" source="#rabin-doml" corresp="#wit-h">And as compensation for one in orders if a full breach of the peace occurs, the perpetrator must make amends for the fourth rank by paying four pounds as a penalty in addition to the standard wergild and by doing spiritual penance.</ab>
-        <ab type="translation" xml:lang="en" source="#unattributed" corresp="#wit-d">And in compensation for [an offence against a man in] orders, if a full breach occurs, one must pay for the fourth degree with four pounds in addition to the legal wergild, and intercede zealously with ecclesiastical penance.</ab>
+        <ab type="translationWithheld" xml:lang="en" source="#adair-draft" corresp="#wit-d">And in compensation for [an offence against a man in] orders, if a full breach occurs, one must pay for the fourth degree with four pounds in addition to the legal wergild, and intercede zealously with ecclesiastical penance.</ab>
         <note type="editorial">H ends at ‘IIII pund’; Liebermann supplies the rest (‘to bote, mid godcundan scrifte’) from the others.; U: not in Whitelock’s English Historical Documents, which prints only Had 1–2 and 9–11 (with “…” for the rest); the source of this translation is not recorded.; AU: corrected against Rabin p. 18 / 19, October 2026 (was “iiii”, now “IIII”)</note>
         <note type="textual" source="#rabin-doml">pund to: to . . . scrifte: omitted H, text supplied from D</note>
         <note type="translator" source="#rabin-doml">and by doing spiritual penance: The end of this clause is omitted from Textus Roffensis, likely inadvertently, but present in Cambridge, Corpus Christi College MSS 190 and 201.</note>

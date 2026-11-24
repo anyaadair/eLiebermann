@@ -7,7 +7,6 @@
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
-        <respStmt><resp>Translation</resp><name ref="#unattributed">Translator not recorded</name></respStmt>
         <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
       </titleStmt>
@@ -24,7 +23,7 @@
         <bibl type="legalText"><title>Iudex (Judicial Duties)</title></bibl>
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">476</biblScope></bibl>
-          <bibl xml:id="unattributed" type="translation">Translation from the original OE Laws Database spreadsheet; the translator is not recorded</bibl>
+          <bibl xml:id="adair-draft" type="withheld">Draft translation from the original OE Laws Database spreadsheet (Allan Adair, with machine translation), withheld from the site until it has been checked</bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, created for this database in 2026 with Claude, a large language model made by Anthropic. It is a crib to help the reader with Liebermann’s German, and should not be treated as a separate translation</bibl>
           <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
         </listBibl>
@@ -53,6 +52,7 @@
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 476.</change>
       <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 476: “Yfelra gerefena þeaw ýs, þæt hí nymað ælcwiht ⁊ uneaðe hí þam þearfiendum lytles hwæt læfa[ð].” → “Yfelra gerefena þeaw ýs, þæt hí nymað ælcwiht ⁊ uneaðe hí þam þearfiendum lytles hwæt læfa[ð]. (expanded letters in italics: æt)”.</change>
       <change when="2026-11-01">Manuscript sigla that Liebermann prints run together in his notes (“MHkBr”, “HB”) spaced for reading (“M Hk Br”, “H B”).</change>
+        <change when="2026-11-24">Draft English translation (translator not recorded; Allan Adair, with machine translation) withheld from the site until checked (Anya Adair). Liebermann’s German and its English crib are shown.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -63,7 +63,7 @@
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="13" corresp="#wit-q"><pb n="476" ed="#liebermann"/>Malorum prepositorum mos est, ut quicquid possunt auferant et uix necessariorum<ptr type="liebermannNote" n="6" target="#Iudex_13.lnote.oe.6"/> parum quid relinquant sustentationum<ptr type="liebermannNote" n="7" target="#Iudex_13.lnote.oe.7"/>.</ab>
         <ab type="translation" xml:lang="de" source="#liebermann"><pb n="476" ed="#liebermann"/>Böser Amtleute<ptr type="liebermannNote" n="b" target="#Iudex_13.lnote.de1.b"/> Brauch ist, dass sie jegliches fortnehmen und kaum etwas weniges den armen [Hintersassen ihres Bezirks] belassen.</ab>
         <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">It is the custom of bad reeves that they take away everything and scarcely leave a little to the needy [tenants of their district].</ab>
-        <ab type="translation" xml:lang="en" source="#unattributed" corresp="#wit-g-a">It is the custom of evil officials that they take everything and unwillingly leave little for the poor</ab>
+        <ab type="translationWithheld" xml:lang="en" source="#adair-draft" corresp="#wit-g-a">It is the custom of evil officials that they take everything and unwillingly leave little for the poor</ab>
         <note type="editorial">U: translator unrecorded: check; The ‘ð’ of ‘læfa[ð]’ was cut off in binding.</note>
         <note type="liebermannNote" subtype="textual" xml:id="Iudex_13.lnote.oe.6" n="6" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">476</biblScope></bibl><seg type="original" xml:lang="de">-arium <hi rend="italic">T M Br</hi></seg><seg type="translation" xml:lang="en" source="#claude">-arium <hi rend="italic">T M Br</hi></seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Iudex_13.lnote.oe.7" n="7" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">476</biblScope></bibl><seg type="original" xml:lang="de">-ni <hi rend="italic">Br</hi></seg><seg type="translation" xml:lang="en" source="#claude">-ni <hi rend="italic">Br</hi></seg></note>

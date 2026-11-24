@@ -7,7 +7,6 @@
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
-        <respStmt><resp>Translation</resp><name ref="#unattributed">Translator not recorded</name></respStmt>
         <respStmt><resp>Cross-references to other clauses</resp><name ref="#jurasinski-and-oliver">Jurasinski and Oliver</name></respStmt>
         <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
@@ -25,7 +24,7 @@
         <bibl type="legalText"><title>Swerian (Oaths)</title></bibl>
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">396</biblScope></bibl>
-          <bibl xml:id="unattributed" type="translation">Translation from the original OE Laws Database spreadsheet; the translator is not recorded</bibl>
+          <bibl xml:id="adair-draft" type="withheld">Draft translation from the original OE Laws Database spreadsheet (Allan Adair, with machine translation), withheld from the site until it has been checked</bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, created for this database in 2026 with Claude, a large language model made by Anthropic. It is a crib to help the reader with Liebermann’s German, and should not be treated as a separate translation</bibl>
           <bibl xml:id="jurasinski-and-oliver" type="study">Stefan Jurasinski and Lisi Oliver, <title>The Laws of Alfred: The Domboc and the Making of Anglo-Saxon Law</title> (Cambridge: Cambridge University Press, 2021)</bibl>
           <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
@@ -58,6 +57,7 @@
       <change when="2026-10" type="checked">Liebermann’s text of MS H added from Gesetze I, p. 396.</change>
       <change when="2026-10" type="checked">Liebermann’s German translation corrected against Gesetze I, p. 397: “…,” → “. . .,”.</change>
       <change when="2026-11-01">Manuscript sigla that Liebermann prints run together in his notes (“MHkBr”, “HB”) spaced for reading (“M Hk Br”, “H B”).</change>
+        <change when="2026-11-24">Draft English translation (translator not recorded; Allan Adair, with machine translation) withheld from the site until checked (Anya Adair). Liebermann’s German and its English crib are shown.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -69,7 +69,7 @@
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="3" corresp="#wit-q"><pb n="397" ed="#liebermann"/>In illo Deo, non fui in consilio uel in actu<ptr type="liebermannNote" n="11" target="#Swer_3.lnote.oe.11"/>, consulens uel agens, ubi per iniustitiam<ptr type="liebermannNote" n="12" target="#Swer_3.lnote.oe.12"/> uel facinus abduceretur pecus hoc N.</ab>
         <ab type="translation" xml:lang="de" source="#liebermann"><pb n="397" ed="#liebermann"/>(Eid<ptr type="liebermannNote" n="1" target="#Swer_3.lnote.de.1"/> des anderen [des Beklagten], dem man sein Vieh wegnimmt<ptr type="liebermannNote" n="2" target="#Swer_3.lnote.de.2"/>. <hi rend="italic">B</hi>) Bei dem Herrn<ptr type="liebermannNote" n="3" target="#Swer_3.lnote.de.3"/> . . ., nicht war ich bei Rath<ptr type="liebermannNote" n="4" target="#Swer_3.lnote.de.4"/> oder<ptr type="liebermannNote" n="††" target="#Swer_3.lnote.de1.dagger2"/> That, weder Mitwisser<ptr type="liebermannNote" n="5" target="#Swer_3.lnote.de.5"/> noch<ptr type="liebermannNote" n="†" target="#Swer_3.lnote.de1.dagger"/> Mitwirker da, wo rechtswidrig (oder<ptr type="liebermannNote" n="6" target="#Swer_3.lnote.de.6"/> mit Trug <hi rend="italic">Quadr</hi>.) dem N. Vieh entwendet worden ist.</ab>
         <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">(The oath of the other [the defendant], from whom one takes his cattle. B) By the Lord …, I was not at the counsel or the deed, neither accessory nor accomplice, where cattle was wrongfully (or by fraud, Quadr.) taken from N.</ab>
-        <ab type="translation" xml:lang="en" source="#unattributed" corresp="#wit-h">[I swear] by the Lord, [that] I [the defendant] was not a planner nor a participant, [nor] a witness nor an accomplice, where someone illegally carried off the N. cattle.</ab>
+        <ab type="translationWithheld" xml:lang="en" source="#adair-draft" corresp="#wit-h">[I swear] by the Lord, [that] I [the defendant] was not a planner nor a participant, [nor] a witness nor an accomplice, where someone illegally carried off the N. cattle.</ab>
         <note type="comparedBy" source="#jurasinski-and-oliver" n="383"><label>sample oath</label> <ref target="clause:Ine_17">Ine 17</ref> <quote>Swerian §3 provides a sample oath.</quote></note>
         <note type="comparedBy" source="#jurasinski-and-oliver" n="392"><label>compare</label> <ref target="clause:Ine_25-1">Ine 25.1</ref> <quote>Compare to Swerian §3 (ne gewita ne gewyrhta).</quote></note>
         <note type="editorial">U: translator unrecorded: check; Here the Quadripartitus read ‘oððe facne’ (compare VI As 1.1 f.). ‘Rath oder That’ and ‘weder … noch’ are alliterating and rhyming pairs.</note>

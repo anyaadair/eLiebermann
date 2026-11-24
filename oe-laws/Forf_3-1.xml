@@ -7,7 +7,6 @@
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
-        <respStmt><resp>Translation</resp><name ref="#unattributed">Translator not recorded</name></respStmt>
         <respStmt><resp>Cross-references to other clauses</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
       </titleStmt>
@@ -24,7 +23,7 @@
         <bibl type="legalText"><title>Forfang (On Attachment)</title></bibl>
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">390</biblScope></bibl>
-          <bibl xml:id="unattributed" type="translation">Translation from the original OE Laws Database spreadsheet; the translator is not recorded</bibl>
+          <bibl xml:id="adair-draft" type="withheld">Draft translation from the original OE Laws Database spreadsheet (Allan Adair, with machine translation), withheld from the site until it has been checked</bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, created for this database in 2026 with Claude, a large language model made by Anthropic. It is a crib to help the reader with Liebermann’s German, and should not be treated as a separate translation</bibl>
           <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
           <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
@@ -57,6 +56,7 @@
       <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 390: “…; …” → “. . .; . . .”.</change>
       <change when="2026-10" type="checked">Liebermann’s German translation corrected against Gesetze I, p. 391: “Aber echtes Recht ist, dass fehlt B) Einfang von jedem gestohlenen Vieh gemäss dessen (Werth fehlt B) gezahlt werde, nämlich von jedem Schilling [1] Pfennig, sei es Vieh von welcher Art es auch sei, wenn es [nämlich] aus Diebes Hand entrissen wird.” → “Aber echtes Recht ist, dass fehlt B) Einfang von jedem gestohlenen Vieh gemäss dessen (Werth fehlt B) gezahlt werde, nämlich von jedem Schilling [1] Pfennig, sei es Vieh von welcher Art es auch sei, wenn es [nämlich] aus Diebes Hand entrissen wird. (expanded letters in italics: fehlt B, fehlt B)”.</change>
       <change when="2026-11-01">Manuscript sigla that Liebermann prints run together in his notes (“MHkBr”, “HB”) spaced for reading (“M Hk Br”, “H B”).</change>
+        <change when="2026-11-24">Draft English translation (translator not recorded; Allan Adair, with machine translation) withheld from the site until checked (Anya Adair). Liebermann’s German and its English crib are shown.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -68,7 +68,7 @@
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="3.1" corresp="#wit-cons"><pb n="391" ed="#liebermann"/>Uetus rectum quidem est, ut pro omni furata pecunia secundum precium ipsius anticipacio detur, id est pro solido nummus, cuiuscunque generis pecunia sit, si a manibus furis erepta sit;</ab>
         <ab type="translation" xml:lang="de" source="#liebermann"><pb n="391" ed="#liebermann"/>Aber echtes<ptr type="liebermannNote" n="1" target="#Forf_3-1.lnote.de.1"/> Recht ist, dass <hi rend="italic">fehlt B</hi>) Einfang von jedem gestohlenen<ptr type="liebermannNote" n="2" target="#Forf_3-1.lnote.de.2"/> Vieh gemäss dessen (Werth <hi rend="italic">fehlt B</hi>) gezahlt werde, nämlich von jedem Schilling [1] Pfennig, sei es Vieh von welcher Art es auch sei, wenn es [nämlich] aus Diebes Hand entrissen wird<ptr type="liebermannNote" n="3" target="#Forf_3-1.lnote.de.3"/>.</ab>
         <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">But true law is that — lacking in B) seizure-money be paid for every stolen beast according to its (value — lacking in B), namely [1] penny for every shilling, of whatever kind the beast may be, if [that is] it is snatched from the thief's hand.</ab>
-        <ab type="translation" xml:lang="en" source="#unattributed" corresp="#wit-b">.. for all stolen property and by its … [reward for] recovery was at [the ratio of] one penny per shilling, whatever kind of property it was, as long as it was recovered from thieves.</ab>
+        <ab type="translationWithheld" xml:lang="en" source="#adair-draft" corresp="#wit-b">.. for all stolen property and by its … [reward for] recovery was at [the ratio of] one penny per shilling, whatever kind of property it was, as long as it was recovered from thieves.</ab>
         <note type="comparison" source="#wormald-mel" n="370"><label>shared word</label> <ref target="clause:IVEg_14">IV Eg 14</ref> <quote>Forf. 3:1, IV Eg 14 'ahret'</quote></note>
         <note type="editorial">U: translator unrecorded: check; In B, ‘⁊’ should be struck, and there is no gap after ‘his’: read ‘weorþe forfang’. K: ‘ut se omni fortiuo’ corrected to ‘ut de omni furtiuo’ against Liebermann.; BR: added from Gesetze I p. 391, October 2026 (MS Cons)</note>
         <note type="liebermannNote" subtype="textual" xml:id="Forf_3-1.lnote.oe.star" n="*" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">391</biblScope></bibl><seg type="original" xml:lang="de"><hi rend="italic">In Hr folgt</hi> [<hi rend="italic">ursprünglich Glosse, vielleicht einst am Rande</hi>]: Necessarium ius: necessarium ius est quod misericordia et mitigacione caret, firmiter institutum; <hi rend="italic">vielleicht ist</hi> necciū <hi rend="italic">verlesen aus</hi> uet'tū (vetustum).</seg><seg type="translation" xml:lang="en" source="#claude">In Hr there follows [originally a gloss, perhaps once in the margin]: Necessarium ius: necessarium ius est quod misericordia et mitigacione caret, firmiter institutum; perhaps necciū is misread from uet'tū (vetustum).</seg></note>

@@ -7,7 +7,6 @@
         <respStmt><resp>Edition of the text</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Translation</resp><name ref="#liebermann">Liebermann</name></respStmt>
         <respStmt><resp>Translation</resp><name ref="#claude">Claude</name></respStmt>
-        <respStmt><resp>Translation</resp><name ref="#unattributed">Translator not recorded</name></respStmt>
         <respStmt><resp>Date and place</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
         <respStmt><resp>Transcription and English translation of Liebermann’s notes</resp><name ref="#claude">Claude</name></respStmt>
       </titleStmt>
@@ -24,7 +23,7 @@
         <bibl type="legalText"><title>Dunsæte Ordinance</title></bibl>
         <listBibl type="sources">
           <bibl xml:id="liebermann" type="edition"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">1</biblScope> (Halle: Niemeyer, 1903), p. <biblScope unit="page">378</biblScope></bibl>
-          <bibl xml:id="unattributed" type="translation">Translation from the original OE Laws Database spreadsheet; the translator is not recorded</bibl>
+          <bibl xml:id="adair-draft" type="withheld">Draft translation from the original OE Laws Database spreadsheet (Allan Adair, with machine translation), withheld from the site until it has been checked</bibl>
           <bibl xml:id="claude" type="translation">A semi-literal English rendering of Liebermann’s German, created for this database in 2026 with Claude, a large language model made by Anthropic. It is a crib to help the reader with Liebermann’s German, and should not be treated as a separate translation</bibl>
           <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
           <bibl xml:id="liebermann-erkl" type="commentary"><author>Felix Liebermann</author>, <title>Die Gesetze der Angelsachsen</title>, vol. <biblScope unit="volume">3</biblScope>: <title>Einleitung zu jedem Stück; Erklärungen zu einzelnen Stellen</title> (Halle: Niemeyer, 1916)</bibl>
@@ -54,6 +53,7 @@
       <change when="2026-10-19">Generated from row 1934 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
       <change when="2026-10" type="checked">Liebermann’s text checked against <title>Die Gesetze der Angelsachsen</title> I, p. 378.</change>
       <change when="2026-10" type="checked">Liebermann’s text corrected against Gesetze I, p. 379: “ungesaþene” → “ungesaƿene”.</change>
+        <change when="2026-11-24">Draft English translation (translator not recorded; Allan Adair, with machine translation) withheld from the site until checked (Anya Adair). Liebermann’s German and its English crib are shown.</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -64,7 +64,7 @@
         <ab type="liebermannText" xml:lang="la" source="#liebermann" n="7.1" corresp="#wit-q"><pb n="379" ed="#liebermann"/>Cetere res ungesaƿene<ptr type="liebermannNote" n="13" target="#Duns_7-1.lnote.oe.13"/> (id est non uise) possunt<ptr type="liebermannNote" n="14" target="#Duns_7-1.lnote.oe.14"/> iuramento comprobari et secundum hoc reddi. Capra duos d.</ab>
         <ab type="translation" xml:lang="de" source="#liebermann"><pb n="379" ed="#liebermann"/>Andere, unsichtbare [abstracte<ptr type="liebermannNote" n="1" target="#Duns_7-1.lnote.de.1"/>] Sachen dürfen [vom Kläger] durch Eid bewerthet<ptr type="liebermannNote" n="2" target="#Duns_7-1.lnote.de.2"/> und [ihm] dann demgemäss bezahlt werden.</ab>
         <ab type="translation" xml:lang="en" source="#claude" ana="#fromGerman">Other, unseen [abstract] things may be valued by oath [by the plaintiff] and then paid [to him] accordingly.</ab>
-        <ab type="translation" xml:lang="en" source="#unattributed" corresp="#wit-b">Other unseen things [i.e. not on the above list?] may be valued [by the plaintiff] by [taking an] oath, and paid out accordingly.</ab>
+        <ab type="translationWithheld" xml:lang="en" source="#adair-draft" corresp="#wit-b">Other unseen things [i.e. not on the above list?] may be valued [by the plaintiff] by [taking an] oath, and paid out accordingly.</ab>
         <note type="editorial">U: translator unrecorded: check; The Quadripartitus's ‘Capra duos d.’ at the end of this clause belongs to 7 in the OE (see the note there).</note>
         <note type="liebermannNote" subtype="textual" xml:id="Duns_7-1.lnote.oe.5" n="5" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">378</biblScope></bibl><seg type="original" xml:lang="de">mon <hi rend="italic">Ld</hi></seg><seg type="translation" xml:lang="en" source="#claude">mon Ld</seg></note>
         <note type="liebermannNote" subtype="textual" xml:id="Duns_7-1.lnote.oe.13" n="13" source="#liebermann"><bibl><biblScope unit="volume">1</biblScope><biblScope unit="page">379</biblScope></bibl><seg type="original" xml:lang="de">-seƿ. <hi rend="italic">T M Hk</hi></seg><seg type="translation" xml:lang="en" source="#claude">-seƿ. T M Hk</seg></note>
