@@ -1840,9 +1840,9 @@ ${translation}
      */
     const RECONSTRUCTED = {
         'In Cn': { href: 'instituta.html', title: 'Instituta Cnuti, read in order',
-            note: 'The whole text in the translator’s order, put back together from the columns where Liebermann prints it beside Cnut, Alfred, Ine, Edgar and the texts on rank.' },
+            note: 'The whole text in order, reassembled from the columns where Liebermann prints it beside Cnut, Alfred, Ine, Edgar and the texts on rank.' },
         'Cons Cn': { href: 'consiliatio.html', title: 'Consiliatio Cnuti, read in order',
-            note: 'The whole text in the translator’s order, put back together from the columns where Liebermann prints it beside I and II Cnut, VIII Æthelred, Be blaserum, Forfang and the Hundred Ordinance.' }
+            note: 'The whole text in order, reassembled from the columns where Liebermann prints it beside I and II Cnut, VIII Æthelred, Be blaserum, Forfang and the Hundred Ordinance.' }
     };
 
     /**

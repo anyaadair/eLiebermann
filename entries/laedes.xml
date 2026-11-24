@@ -28,6 +28,7 @@
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
       <change when="2026-10-17">“Vgl.” (vergleiche, compare) linked to the abbreviations list.</change>
       <change when="2026-11-06">Link to the Dictionary of Old English added (E19118; chosen by the editor on the review page).</change>
+  <change when="2026-11-24">ECf retr 22,5 linked, with an editor’s note (lestis is a gloss in Liebermann’s note); the second 31,2 linked; link to Bosworth–Toller added (21017) (MD, website suggestion #79).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -36,11 +37,14 @@
         <form type="lemma">
           <orth>læðes</orth>
         </form>
-        <dictScrap type="liebermann">ne <hi rend="bold">læðes</hi> (ne landes), <hi rend="italic"><ref type="abbreviation" target="gram:Genitiv"><abbr>gn</abbr></ref>, Gaubezirks</hi> <ref type="lawCode" target="law:Becwaeth">Becwæð</ref> 3,2 | <hi rend="italic"><ref type="abbreviation" target="gram:Lateinisch"><abbr>lat.</abbr></ref></hi> leð <hi rend="italic">Lathe, Teilbezirk der Grafsch. Kent</hi> <ref type="lawCode" target="law:ECfRetr">ECf retr</ref> 31,2. 32; <hi rend="italic"><ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref> <ref type="abbreviation" target="gram:ablativus"><abbr>abl</abbr></ref>:</hi> lestis 22,5, <hi rend="italic"><ref type="abbreviation" target="gram:wo"><abbr>wo</abbr></ref></hi> [<hi rend="italic"><ref type="abbreviation" target="gram:irrig"><abbr>irrig</abbr></ref></hi>] <hi rend="italic"><ref type="abbreviation" target="gram:mit"><abbr>mit</abbr></ref></hi> wæpentake (<hi rend="italic">und</hi> þrihing 31,2) <hi rend="italic">gleichgesetzt.</hi> [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>Vgl</abbr></ref>.</hi> leidgrevei]</dictScrap>
+        <dictScrap type="liebermann">ne <hi rend="bold">læðes</hi> (ne landes), <hi rend="italic"><ref type="abbreviation" target="gram:Genitiv"><abbr>gn</abbr></ref>, Gaubezirks</hi> <ref type="lawCode" target="law:Becwaeth">Becwæð</ref> 3,2 | <hi rend="italic"><ref type="abbreviation" target="gram:Lateinisch"><abbr>lat.</abbr></ref></hi> leð <hi rend="italic">Lathe, Teilbezirk der Grafsch. Kent</hi> <ref type="lawCode" target="law:ECfRetr">ECf retr</ref> 31,2. 32; <hi rend="italic"><ref type="abbreviation" target="gram:Plural"><abbr>pl</abbr></ref> <ref type="abbreviation" target="gram:ablativus"><abbr>abl</abbr></ref>:</hi> lestis <ref type="clause" target="clause:ECfRetr_22-5" n="ECf retr 22,5">22,5</ref><ptr type="editorNote" target="#edn-1"/>, <hi rend="italic"><ref type="abbreviation" target="gram:wo"><abbr>wo</abbr></ref></hi> [<hi rend="italic"><ref type="abbreviation" target="gram:irrig"><abbr>irrig</abbr></ref></hi>] <hi rend="italic"><ref type="abbreviation" target="gram:mit"><abbr>mit</abbr></ref></hi> wæpentake (<hi rend="italic">und</hi> þrihing <ref type="clause" target="clause:ECfRetr_31-2" n="ECf retr 31,2">31,2</ref>) <hi rend="italic">gleichgesetzt.</hi> [<hi rend="italic"><ref type="abbreviation" target="gram:vergleiche"><abbr>Vgl</abbr></ref>.</hi> leidgrevei]</dictScrap>
+        <note type="editorial" xml:id="edn-1">ECf retr 22,5: <hi rend="italic">lestis</hi> is not in the text Liebermann prints but in his note to it: “id est lestis”, written above <hi rend="italic">wapentagiis</hi> by a 13th-century hand in MS Cb (Gesetze I, p. 648). The link marks <hi rend="italic">wapentagiis</hi>.</note>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/21017">lǽþ</ref></xr>
         <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E19118">lǣþ</ref></xr>
         <xr type="lawCode"><ref target="clause:Becwaeth_3-2">Becwæð 3,2</ref></xr>
         <xr type="lawCode"><ref target="clause:ECfRetr_31-2">ECf retr 31,2</ref></xr>
         <xr type="lawCode"><ref target="clause:ECfRetr_32">ECf retr 32</ref></xr>
+        <xr type="lawCode"><ref target="clause:ECfRetr_22-5">ECf retr 22,5</ref></xr>
       </entry>
     </body>
   </text>

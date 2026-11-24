@@ -25,6 +25,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+  <change when="2026-11-24">unlag~ and utlag~ linked (unlagu; both utlaga entries) (MD, website suggestion #84).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -33,7 +34,10 @@
         <form type="lemma">
           <orth>lag-</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">lag-</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:lah">lah-</ref>; <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> unlag~, utlag~</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">lag-</hi> <hi rend="italic"><ref type="abbreviation" target="gram:siehe"><abbr>s.</abbr></ref></hi> <ref type="entry" target="entry:lah">lah-</ref>; <hi rend="italic"><ref type="abbreviation" target="gram:Derivativ"><abbr>Der.</abbr></ref>:</hi> <ref type="entry" target="entry:unlagu">unlag~</ref>, <ref type="entry" target="entry:utlaga">utlag~</ref></dictScrap>
+        <xr type="derivative"><ref target="entry:unlagu">unlagu</ref></xr>
+        <xr type="derivative"><ref target="entry:utlaga">utlaga</ref></xr>
+        <xr type="derivative"><ref target="entry:utlaga-2">utlaga (2)</ref></xr>
         <xr type="see"><ref target="entry:lah">-lah</ref></xr>
         <xr type="see"><ref target="entry:lahcop">lahcop</ref></xr>
         <xr type="see"><ref target="entry:lahlicne">lahlicne</ref></xr>

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Ymb-Aewbricas_Not-known-to-Liebermann">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Ymb-Aewbricas_1">
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Ymb Æwbricas Not known to Liebermann</title>
+        <title>Ymb Æwbricas 1</title>
         <respStmt><resp>Translation</resp><name ref="#wormald">Wormald</name></respStmt>
         <respStmt><resp>Cross-references to other clauses</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
-        <idno type="slug">Ymb-Aewbricas_Not-known-to-Liebermann</idno>
-        <idno type="citation">Ymb Æwbricas Not known to Liebermann</idno>
+        <idno type="slug">Ymb-Aewbricas_1</idno>
+        <idno type="citation">Ymb Æwbricas 1</idno>
         <idno type="lawCode">Ymb Æwbricas</idno>
-        <idno type="clause">Not known to Liebermann</idno>
-        <idno type="citationKey">Ymb Æwbricas notknowntoliebermann</idno>
+        <idno type="clause">1</idno>
+        <idno type="citationKey">Ymb Æwbricas 1</idno>
       </publicationStmt>
       <sourceDesc>
         <bibl type="legalText"><title>Ymb æwbricas (On Adulterers)</title></bibl>
@@ -44,12 +44,13 @@
     <revisionDesc>
       <change when="2026-10-19">Generated from row 2294 of the spreadsheet OE_Laws_Database - Updated by Claude.xlsx.</change>
         <change when="2026-11-24">Translation identified as Wormald’s (The Making of English Law I, p. 372, where it is printed in full with the Old English of some phrases in brackets) and credited to him; it had been “translator not recorded”.</change>
+  <change when="2026-11-24">“Not known to Liebermann” taken out of the title (the clause is now Ymb Æwbricas 1; it was Ymb-Aewbricas_Not-known-to-Liebermann); the law code has a badge “Not in Liebermann’s Gesetze” instead (Anya Adair).</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
-      <div type="clause" n="Not known to Liebermann">
-        <head>Ymb Æwbricas Not known to Liebermann</head>
+      <div type="clause" n="1">
+        <head>Ymb Æwbricas 1</head>
         <ab type="translation" xml:lang="en" source="#wormald">And on your question about adulterers, whether with nuns or lay women, the forfeited woman and man go respectively to the bishopric with her third, and to the lord – whether it be bookland or folkland, whether of the king himself or of any man – he goes with his two parts to his lord if he has wicked intercourse, and they are both forfeit.</ab>
         <note type="comparison" source="#wormald-mel" n="373"><label>closest to an echo</label> <ref target="clause:EGu_4">EGu 4</ref> <quote>the closest to an echo of Ymb Æwbricas is in his 'Peace of Edward and Guthrum' [n. EGu 4]</quote></note>
         <note type="comparison" source="#wormald-mel" n="373"><label>same offence stigmatized</label> <ref target="clause:IEm_4">I Em 4</ref> <quote>at the time when such offences were stigmatized by Edmund's London council [n. I Em 4]</quote></note>

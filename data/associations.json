@@ -1,7 +1,8 @@
 {
- "_about": "Other people Wormald (or the manuscripts) connect with a law code, shown as badges beside the Wulfstan ones (scripts/wulfstan.js). Same layout as data/wulfstan.json.",
+ "_about": "Other people Wormald (or the manuscripts) connect with a law code, and other facts about a code (not in Liebermann’s Gesetze), shown as badges beside the Wulfstan ones (scripts/wulfstan.js). Same layout as data/wulfstan.json.",
  "kinds": {
-  "wulfhelm": "Associated with Wulfhelm"
+  "wulfhelm": "Associated with Wulfhelm",
+  "notInLiebermann": "Not in Liebermann’s Gesetze"
  },
  "sources": {
   "Wormald": "Patrick Wormald, The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits (Oxford, 1999)"
@@ -61,6 +62,14 @@
     "by": "Wormald",
     "page": "298–300",
     "note": "Archbishop Wulfhelm of Canterbury (926–41). Wormald holds that whether Wulfhelm wrote Æthelstan’s laws cannot be known, but that he was probably behind the surviving form of some of them and was their chief keeper. VI Æthelstan “may thus be a compound of reports collected by Wulfhelm in fulfilment of royal orders”."
+   }
+  ],
+  "Ymb Æwbricas": [
+   {
+    "kind": "notInLiebermann",
+    "by": "Wormald",
+    "page": "175–6, 372–3",
+    "note": "Liebermann did not know this text. It survives only in Laurence Nowell’s sixteenth-century transcript of Cotton Otho B.xi, made before that manuscript was damaged by fire in 1731, and was first printed by Robin Flower in 1937. Wormald quotes it in full in English, as it had never been translated."
    }
   ]
  }
