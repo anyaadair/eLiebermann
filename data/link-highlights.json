@@ -1,5 +1,45 @@
 {
   "_about": "Words to highlight on a dictionary entry's clause links, added by hand where the rules can't tell. Keyed by entry id, then by the citation as listed under the entry. 'find' replaces the form the rules choose; every word in 'mark' is marked too, wherever it is found in the clause (other manuscripts' spellings). 'only': true marks just these words, with no other spellings guessed on the clause page (for a look-alike word wrongly marked). Read by entry.html; law.html marks them (its mark= parameter). An entry may also have '_forms': the forms of a verb that do not look like its headword (beon: bið, is, sie, wæs), in groups that stand for one another; any of them before a citation is the form cited, and its link looks for its whole group (scripts/eliebermann.js).",
+  "laetan": {
+    "II Cn 75": {
+      "find": "læte",
+      "only": true
+    },
+    "II Cn 76,2": {
+      "find": "letan",
+      "mark": [
+        "lætan",
+        "leton"
+      ]
+    },
+    "VI Atr 8,1": {
+      "find": "læte"
+    }
+  },
+  "laedes": {
+    "ECf retr 22,5": {
+      "find": "wapentagiis",
+      "only": true
+    },
+    "ECf retr 31,2": {
+      "find": "leð",
+      "mark": [
+        "þrihinge",
+        "þrehingis"
+      ]
+    }
+  },
+  "laeran": {
+    "VI Atr 11": {
+      "find": "lærað"
+    },
+    "VIII Atr 31": {
+      "find": "lærað"
+    },
+    "Northu 9": {
+      "find": "lærað"
+    }
+  },
   "laen": {
     "Af 19,1": {
       "find": "onlah"
