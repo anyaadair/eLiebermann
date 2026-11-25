@@ -327,6 +327,8 @@ let codeSources = {};
             if (k.dates[label]) { link[label] = k.dates[label]; return; }
             let src = match(label, sources);
             // a work the code's clause files don't list, but another code's do (Rabin, Political Writings): borrowed
+            // (but not Liebermann for a text he did not edit, such as Ymb æwbricas)
+            if (!src && label === 'Liebermann') return;
             if (!src && (src = match(label, allSources))) sources.push(src);
             if (src) link[label] = src.id; else unlinked.push(code.code + ': ' + label);
         });

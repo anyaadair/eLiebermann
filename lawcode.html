@@ -148,7 +148,9 @@ scripts:
             : (code.date ? `<p><span class="clause-dates__label">Suggested dates: </span>${esc(code.date)}</p>` : '');
         // Manuscripts, editions and the number of clauses go under the dates, in the same "Label: …" style.
         const plainLine = (label, html) => `<p><span class="clause-dates__label">${label}: </span>${html}</p>`;
-        const sources = [...new Set(['Liebermann'].concat(code.editors || []))];
+        // Liebermann first, except for a text he did not edit (Ymb æwbricas: no Liebermann source in its files)
+        const notLiebermann = cs.sources.length > 0 && !cs.sources.some(s => s.id === 'liebermann');
+        const sources = [...new Set((notLiebermann ? [] : ['Liebermann']).concat(code.editors || []))];
         // Column headings name the source most of this code's clauses use;
         // a clause from another source carries its own small label.
         const commonest = key => {
