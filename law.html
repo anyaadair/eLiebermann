@@ -1244,7 +1244,7 @@ scripts:
                 .then(map => Object.entries(map).filter(([, v]) => v[2].includes(row.id)).map(([id, v]) => ({ id, hw: v[0], lang: v[1] })))).then(hits => {
             hits = hits
                 .sort((a, b) => { const x = ELieb.alphaKey(a.hw), y = ELieb.alphaKey(b.hw); return x < y ? -1 : x > y ? 1 : 0; });
-            if (!hits.length) return;
+            if (!hits.length) return constructedWords();
             dictSec.appendChild(el('h2', null, 'In the dictionary'));
             dictSec.appendChild(el('p', 'small muted', hits.length === 1 ? 'This entry of Liebermann’s Wörterbuch cites this clause:' : 'These ' + hits.length + ' entries of Liebermann’s Wörterbuch cite this clause:'));
             const ul = el('ul', 'link-columns' + (hits.length <= 3 ? '' : hits.length <= 6 ? ' cols-2' : ' cols-3'));
@@ -1259,6 +1259,33 @@ scripts:
             dictSec.appendChild(ul);
             dictSec.hidden = false;
         }).catch(() => {});
+        // A text Liebermann did not know (Ymb æwbricas): no entry cites it, so its words are listed
+        // under the entries where he treats them, matched by hand (data/constructed-headwords.json).
+        function constructedWords() {
+            return fetch(root + 'data/constructed-headwords.json').then(r => r.ok ? r.json() : {}).then(map => {
+                const c = map[row.id];
+                if (!c || !(c.words || []).length) return;
+                dictSec.appendChild(el('h2', null, 'In the dictionary'));
+                const p = el('p', 'small muted'); p.innerHTML = c.note; dictSec.appendChild(p);
+                const words = c.words.slice().sort((a, b) => { const x = ELieb.alphaKey(a.headword), y = ELieb.alphaKey(b.headword); return x < y ? -1 : x > y ? 1 : 0; });
+                const ul = el('ul', 'link-columns' + (words.length <= 3 ? '' : words.length <= 6 ? ' cols-2' : ' cols-3'));
+                words.forEach(w => {
+                    const li = el('li');
+                    const a = el('a', null, w.headword);
+                    a.href = root + 'entry.html?id=' + encodeURIComponent(w.entry);
+                    li.appendChild(a);
+                    if (w.form && w.form.toLowerCase() !== w.headword.toLowerCase()) {
+                        const f = el('span', 'muted', ' (');
+                        const i = el('i', null, w.form); ELieb.setLang(i, 'ang');
+                        f.appendChild(i); f.appendChild(document.createTextNode(')'));
+                        li.appendChild(f);
+                    }
+                    ul.appendChild(li);
+                });
+                dictSec.appendChild(ul);
+                dictSec.hidden = false;
+            });
+        }
 
         const wits = tei(doc, 'witness');
         if (wits.length) {
