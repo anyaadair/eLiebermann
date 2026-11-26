@@ -27,7 +27,9 @@ const ELieb = require(path.join(repo, 'scripts/eliebermann.js'));
 ELieb.useDom(new JSDOM('<!doctype html><body></body>').window);
 
 const unescape = t => t.replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&amp;/g, '&');
-const XR = /^\s*<xr type="lawCode"(?: n="[^"]*")?><ref(?: target="([^"]*)")?>([\s\S]*?)<\/ref><\/xr>\s*$/;
+// (also the ends of ranges, rend="range-from:…", and the clauses between them, subtype="range", which
+// tools/link-citations.py fills in again: kept, they were written a second time on every run)
+const XR = /^\s*<xr type="lawCode"(?: n="[^"]*")?(?: rend="range-from:[^"]*"| subtype="range")?><ref(?: target="([^"]*)")?>([\s\S]*?)<\/ref><\/xr>\s*$/;
 
 function update(xml) {
     const scrap = /<dictScrap type="liebermann">([\s\S]*?)<\/dictScrap>/.exec(xml);

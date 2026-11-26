@@ -51,7 +51,8 @@
         <xr type="lawCode"><ref target="clause:IIAs_23-1">II As 23,1</ref></xr>
         <xr type="lawCode"><ref target="clause:Ordal_1b">Ordal 1b</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiVIII_2-1">Iud Dei VIII 2,1</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiVIII_2-3">Iud Dei VIII 2,3</ref></xr>
+        <xr type="lawCode" subtype="range"><ref target="clause:IudDeiVIII_2-2">Iud Dei VIII 2,2</ref></xr>
+        <xr type="lawCode" rend="range-from:Iud Dei VIII 2"><ref target="clause:IudDeiVIII_2-3">Iud Dei VIII 2,3</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiIV_2">Iud Dei IV 2</ref></xr>
         <xr type="lawCode"><ref target="clause:Becwaeth_3">Becwæð 3</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiVII_23A">Iud Dei VII 23</ref></xr>
@@ -66,9 +67,17 @@
         <xr type="lawCode"><ref target="clause:IudDeiIV_3-3">Iud Dei IV 3,3</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiIV_3-5">Iud Dei IV 3,5</ref></xr>
         <xr type="lawCode"><ref target="clause:IIIAtr_6">III Atr 6</ref></xr>
+        <xr type="lawCode" subtype="range"><ref target="clause:IudDeiIV_2-1">Iud Dei IV 2,1</ref></xr>
+        <xr type="lawCode" subtype="range"><ref target="clause:IudDeiIV_2-2">Iud Dei IV 2,2</ref></xr>
+        <xr type="lawCode" subtype="range"><ref target="clause:IudDeiIV_2-3">Iud Dei IV 2,3</ref></xr>
+        <xr type="lawCode" subtype="range"><ref target="clause:IudDeiIV_3">Iud Dei IV 3</ref></xr>
+        <xr type="lawCode" subtype="range"><ref target="clause:IudDeiIV_3-1">Iud Dei IV 3,1</ref></xr>
+        <xr type="lawCode" subtype="range"><ref target="clause:IudDeiIV_3-4">Iud Dei IV 3,4</ref></xr>
+        <xr type="lawCode" subtype="range"><ref target="clause:IudDeiIV_4">Iud Dei IV 4</ref></xr>
+        <xr type="lawCode" subtype="range"><ref target="clause:IudDeiIV_4-2">Iud Dei IV 4,2</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiIV_4-1">Iud Dei IV 4,1</ref></xr>
         <xr type="lawCode"><ref target="clause:IudDeiVII_24A">Iud Dei VII 24</ref></xr>
-        <xr type="lawCode"><ref target="clause:IudDeiIV_4-3">Iud Dei IV 4,3</ref></xr>
+        <xr type="lawCode" rend="range-from:Iud Dei IV 2"><ref target="clause:IudDeiIV_4-3">Iud Dei IV 4,3</ref></xr>
       </entry>
     </body>
   </text>
