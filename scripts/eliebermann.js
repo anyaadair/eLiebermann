@@ -822,9 +822,9 @@
             }
             for (;;) {
                 // "Rect 4,1c—3", "II Cn 71a—71,4": a range; its end is cited too, written out
-                // (4,1c—3 ends at 4,3; 71a—71,4 at 71,4)
+                // (4,1c—3 ends at 4,3; 71a—71,4 at 71,4). Not the dash before a numbered meaning ("Forf 3,2 — 1)").
                 let rg;
-                if (code && last && last.anchor === code.anchor && (rg = new RegExp(`^\\s*[—–]\\s*(${PASSAGE})(?![\\p{L}\\d])`, 'u').exec(rest))) {
+                if (code && last && last.anchor === code.anchor && (rg = new RegExp(`^\\s*[—–]\\s*(${PASSAGE})(?![\\p{L}\\d)\\u0001-\\u0008])`, 'u').exec(rest))) {
                     const n = rg[1].replace(/\.$/, ''), s = at + rg[0].length - rg[1].length;
                     const first = last.text.slice(code.label.length).trim();
                     const full = /,/.test(n) || !/,/.test(first) || !/^\d/.test(n) ? n : first.replace(/,[^,]*$/, '') + ',' + n;
@@ -1292,9 +1292,16 @@
         };
         walk(container);
         const hits = [];
-        scanCitations(flat, (text, anchor, start, end, replaces) => {
+        scanCitations(flat, (text, anchor, start, end, replaces, rangeFrom) => {
             // a citation that replaces the one just found (VI Atr 2 L): drop that one's link
             if (replaces) { const i = hits.findIndex(h => h.flatStart === start && h.text !== text); if (i >= 0) hits.splice(i, 1); }
+            // the end of a range ("Leis Wl 1,1—5"): one link over the whole range, to its first clause (Anya
+            // Adair, Nov. 2026). The clauses of the range are all in the list of citations under the entry.
+            const prev = hits[hits.length - 1];
+            if (rangeFrom && prev && prev.text === rangeFrom) {
+                const b0 = from[end - 1];
+                if (b0 && b0[0] === prev.node) { prev.end = b0[1] + 1; prev.flatEnd = end; prev.range = true; return; }
+            }
             const href = clauses[text];
             // "Z. 6" (line 6): "Z." keeps its own link; the number is linked.
             if (/^Z\./.test(flat.slice(start, end))) start += flat.slice(start, end).search(/\d/);

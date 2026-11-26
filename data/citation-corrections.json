@@ -484,7 +484,7 @@
   {"entry": "beon-2", "citation": "Forf 3", "clause": "Forf_3-1", "why": "\"cynnes Forf 3\": the words (si þæs cynnes) are in Forf 3,1; Forf 3 is a heading only (checked Nov. 2026)"},
   {"entry": "ben", "citation": "Ine 8", "clause": "Rubrics-Ine_8", "why": "\"Ine 8 Rb\": the rubric of Ine 8, Ine Rb 8 (rihtes bene)"},
   {"entry": "bletsung", "citation": "Grið 26", "clause": "Grith_27", "why": "Liebermann's slip: bletsunge is in Grið 27, not 26"},
-  {"entry": "bot", "citation": "VIII Atr 1,3", "clause": "VIIIAtr_3", "why": "\"VIII 1,1—3 = I Cn 2,3; 4; 5\": the range runs from VIII Atr 1,1 to VIII Atr 3 (1,1; 2; 3 = I Cn 2,3; 2,4; 2,5), not to a 1,3"},
+  {"entry": "bot", "citation": "VIII Atr 1,3", "clause": "VIIIAtr_3", "label": "VIII Atr 3", "why": "\"VIII 1,1—3 = I Cn 2,3; 4; 5\": the range runs from VIII Atr 1,1 to VIII Atr 3 (1,1; 2; 3 = I Cn 2,3; 2,4; 2,5), not to a 1,3"},
   {"entry": "burg", "citation": "ECf 12", "clause": "ECf_12d", "why": "\"ECf 12. 12,9\": burgis (after civitatibus) is in ECf 12d, a sub-clause of ECf 12"},
   {"entry": "ladian", "citation": "IV As 6,3", "clause": "IVAs_6-3_dup2", "why": "\"IV 6,3\": ladian is in the Old English fragment of IV As 6,3 (IVAs_6-3_dup2), not in the Latin text"},
   {"entry": "ladian", "citation": "I Cn 4", "clause": "ICn_5-4", "why": "\"VIII 27,1 = II Cn 41,1. I 4\": I Cn 4 has no ladian; VIII Atr 27,1 = I Cn 5,4, which has ladian (hine in A). Probably \"I [5,]4\"; to check in the print"},
@@ -497,7 +497,5 @@
   {"entry": "chose", "citation": "Wl art 5", "clause": "Wl-art-Frz_5", "why": "the French chose is in the French version, Wl art Fz 5 (Dad, list C)"},
   {"entry": "ceorl", "citation": "Abt 5", "clause": "Abt_25", "why": "Liebermann's 'Abt 5': ceorlæs is in Abt 25; editor's note on the entry (Dad, list C)"},
   {"entry": "ceorl", "citation": "Af Rb 31", "clause": "Rubrics-Af_25", "why": "'ciorles Af Rb 31 H': ciorles stands in H's rubric XXVI, Af Rb 25 in Liebermann's numbering; editor's note on the entry (Dad, list C)"},
-  {"entry": "laeran", "citation": "Northu 9", "clause": "Northu_10", "why": "Liebermann prints Northu 9; lærað is in Northu 10 (MD, #72)"},
-  {"entry": "mann", "citation": "Af 49,52", "clause": "Af_52", "why": "'Af 19,3. 49,2 — 52': the range ends at Af 52; the citation finder reads a bare number after a subsection as another subsection (49,52)"},
-  {"entry": "qui", "citation": "Leis Wl 11,13", "clause": "LeisWl_13", "why": "'Leis Wl 1,1—5. 9,1. 11,1—13': the range ends at Leis Wl 13; the citation finder reads a bare number after a subsection as another subsection (11,13)"}
+  {"entry": "laeran", "citation": "Northu 9", "clause": "Northu_10", "why": "Liebermann prints Northu 9; lærað is in Northu 10 (MD, #72)"}
 ]

@@ -70,7 +70,9 @@
         <xr type="lawCode"><ref target="clause:NorGrith_4">Nor grið Z. 4</ref></xr>
         <xr type="lawCode"><ref target="clause:ECf_12-3">ECf 12,3</ref></xr>
         <xr type="lawCode"><ref target="clause:ECf_33">ECf 33</ref></xr>
-        <xr type="lawCode"><ref target="clause:Hu_5">Hu 5</ref></xr>
+        <xr type="lawCode" subtype="range"><ref target="clause:Hu_3-1">Hu 3,1</ref></xr>
+        <xr type="lawCode" subtype="range"><ref target="clause:Hu_4-1">Hu 4,1</ref></xr>
+        <xr type="lawCode" rend="range-from:Hu 2"><ref target="clause:Hu_5">Hu 5</ref></xr>
         <xr type="lawCode"><ref target="clause:IIIEg_7-1">III Eg 7,1</ref></xr>
         <xr type="lawCode"><ref target="clause:IVEg_8-1">IV Eg 8,1</ref></xr>
         <xr type="lawCode"><ref target="clause:IICn_25-1">II Cn 25,1</ref></xr>
@@ -106,7 +108,7 @@
         <xr type="lawCode"><ref target="clause:LeisWl_28">Leis Wl 28</ref></xr>
         <xr type="lawCode"><ref target="clause:LeisWl_42-1">Leis Wl 42,1</ref></xr>
         <xr type="lawCode"><ref target="clause:WlArt_3-2">Wl art 3,2</ref></xr>
-        <xr type="lawCode"><ref target="clause:WlArtRetr_6">Wl art Lond retr 6</ref></xr>
+        <xr type="lawCode"><ref target="law:WlArtRetr">retr Lond 6</ref></xr>
         <xr type="lawCode"><ref target="clause:Hn_7-5">Hn 7,5</ref></xr>
         <xr type="lawCode"><ref target="clause:Hn_6-1b">Hn 6,1b</ref></xr>
         <xr type="lawCode"><ref target="clause:Hn_7-4">Hn 7,4</ref></xr>
