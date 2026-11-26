@@ -714,6 +714,9 @@
                 return;
             }
             if (!seen.has(text)) { seen.add(text); newAt.set(start, out.push(c) - 1); }
+            // cited before, and here the end of a range ("Rect 6,1 … 4,3—6,1"): the range is kept, so that its
+            // clauses between are filled in too
+            else if (rangeFrom) { const o = out.find(x => x && x.text === text); if (o && !o.rangeFrom) o.rangeFrom = rangeFrom; }
         }, italic);
         byHand.forEach(c => { if (!seen.has(c.text)) { seen.add(c.text); out.push(c); } });
         return out.filter(Boolean);
@@ -838,6 +841,8 @@
                     add(code.label + ' ' + line + n, s, s + n.length);
                     rest = rest.slice(m[0].length); at += m[0].length;
                 }
+                // a range after a passage that follows the first ("EGu 6. 6,1—4"): back to the range rule above
+                if (code && last && last.anchor === code.anchor && new RegExp(`^\\s*[—–]\\s*(?:${PASSAGE})(?![\\p{L}\\d)\\u0001-\\u0008])`, 'u').test(rest)) continue;   // (not "— 1)", a numbered meaning)
                 // Liebermann's "58,1; 2" is 58,1 and 58,2: after a clause with a comma, a
                 // semicolon and a bare number name another subsection of the same clause.
                 const sub = code && last && last.anchor === code.anchor && /^(.* )(\d+[a-z]{0,2}),\d+[a-z]{0,2}$/.exec(last.text);
@@ -1328,7 +1333,9 @@
         if (hw && !(opts || {}).noFind) {
             const dash = (() => { const re = /—/g; let m; while ((m = re.exec(flat))) if (!(/\d$/.test(flat.slice(0, m.index)) && /^\d/.test(flat.slice(m.index + 1)))) return m.index; return -1; })();
             if (dash > 0) {
-                const forms = [...new Set(hits.filter(h => h.flatStart < dash && h.form).map(h => h.form.split(',')[0]))].filter(f => f && f !== hw && !/[*"]/.test(f));
+                // (not a word that stands only in Liebermann's German: "[fehlt bis EGu …: Ine Pro]" in lagu)
+                const plainSomewhere = f => { let i = -1, seen = false; while ((i = flat.indexOf(f, i + 1)) >= 0) { seen = true; if (!ital[i]) return true; } return !seen; };   // (a ~ form is not in the text as such)
+                const forms = [...new Set(hits.filter(h => h.flatStart < dash && h.form).map(h => h.form.split(',')[0]))].filter(f => f && f !== hw && !/[*"]/.test(f) && plainSomewhere(f));
                 if (paradigm) {
                     // (a verb such as beon: a meaning cited with a form of its own (þær bið gewrit) looks for that form's
                     // group; one cited with none (bist unscyldig Af El 2; gebrocen Abt 37) for every form)

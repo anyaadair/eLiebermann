@@ -1,5 +1,95 @@
 {
   "_about": "Words to highlight on a dictionary entry's clause links, added by hand where the rules can't tell. Keyed by entry id, then by the citation as listed under the entry. 'find' replaces the form the rules choose; every word in 'mark' is marked too, wherever it is found in the clause (other manuscripts' spellings). 'only': true marks just these words, with no other spellings guessed on the clause page (for a look-alike word wrongly marked). Read by entry.html; law.html marks them (its mark= parameter). An entry may also have '_forms': the forms of a verb that do not look like its headword (beon: bið, is, sie, wæs), in groups that stand for one another; any of them before a citation is the form cited, and its link looks for its whole group (scripts/eliebermann.js).",
+  "lagu": {
+    "Ine Pro": {
+      "find": "lage,lagu"
+    },
+    "AGu Insc": {
+      "find": "laga,lagu,lage"
+    },
+    "II Em 7": {
+      "find": "slaga,laga"
+    },
+    "III Atr 8,2": {
+      "find": "lah",
+      "only": true
+    },
+    "II Cn 31a": {
+      "find": "rihtlagu"
+    },
+    "Hn 79,6": {
+      "find": "lege",
+      "mark": [
+        "Anglorum"
+      ]
+    },
+    "IV Eg 2,1": {
+      "find": "lagum,laga,lage,lagu,lagan"
+    },
+    "IV Eg 13,1": {
+      "find": "lagum,laga,lage,lagu,lagan"
+    },
+    "V Atr 10": {
+      "find": "lagum,laga,lage,lagu,lagan"
+    },
+    "VI Atr 42,2": {
+      "find": "lagum,laga,lage,lagu,lagan"
+    },
+    "VIII Atr 30": {
+      "find": "lagum,laga,lage,lagu,lagan"
+    },
+    "VIII Atr 37": {
+      "find": "lagum,laga,lage,lagu,lagan"
+    },
+    "I Cn 1": {
+      "find": "lagum,laga,lage,lagu,lagan"
+    },
+    "I Cn 6,3": {
+      "find": "lagum,laga,lage,lagu,lagan"
+    },
+    "Geþyncðo 1": {
+      "find": "lagum,laga,lage,lagu,lagan"
+    },
+    "Grið 7": {
+      "find": "lagum,laga,lage,lagu,lagan"
+    },
+    "Grið 19": {
+      "find": "lagum,laga,lage,lagu,lagan"
+    },
+    "Wl Lond 2": {
+      "find": "lagum,laga,lage,lagu,lagan"
+    },
+    "Rect 6,4": {
+      "find": "lage"
+    }
+  },
+  "lahslit": {
+    "EGu 3,1": {
+      "find": "healfmarc,healfmare",
+      "mark": [
+        "þreo",
+        "ðreo"
+      ]
+    },
+    "EGu 2": {
+      "find": "lahslite,lahslitte"
+    }
+  },
+  "lamb": {
+    "Iud Dei V 2": {
+      "find": "lomb",
+      "only": true
+    }
+  },
+  "land": {
+    "Norðleod 7": {
+      "find": "landes",
+      "mark": [
+        "hiwisc",
+        "hywisc"
+      ]
+    }
+  },
   "laetan": {
     "II Cn 75": {
       "find": "læte",

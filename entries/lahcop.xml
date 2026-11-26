@@ -26,6 +26,7 @@
     </encodingDesc>
     <revisionDesc>
       <change when="2026-10-13">Transcribed by Claude from the page scan; not yet checked against the print.</change>
+      <change when="2026-11-26">nordisch explained; links to Bosworth–Toller (21058) and the DOE (E18758) added (MD, website suggestion #90).</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -34,7 +35,9 @@
         <form type="lemma">
           <orth>lahcop</orth>
         </form>
-        <dictScrap type="liebermann"><hi rend="bold">lahcop</hi> <hi rend="italic">Erkaufung des Rechtsschutzes, staatsbürgerlichen Friedens</hi> <ref type="lawCode" target="law:IIIAtr">III Atr</ref> 3, <hi rend="italic"><ref type="abbreviation" target="gram:unubersetzt"><abbr>unübs</abbr></ref>.</hi> ~pum <ref type="lawCode" target="law:Quadr">Q</ref>, <hi rend="italic"><ref type="abbreviation" target="gram:auch"><abbr>auch</abbr></ref></hi> <ref type="lawCode" target="law:Rb">Rb</ref> <hi rend="italic"><ref type="abbreviation" target="gram:Seite"><abbr>S.</abbr></ref></hi> 541 [<hi rend="italic">nordisch; <ref type="abbreviation" target="gram:daraus"><abbr>daraus</abbr></ref> anglisirt:</hi>] <hi rend="bold">lahceap</hi> <ref type="lawCode" target="law:Northu">Northu</ref> 67,1</dictScrap>
+        <dictScrap type="liebermann"><hi rend="bold">lahcop</hi> <hi rend="italic">Erkaufung des Rechtsschutzes, staatsbürgerlichen Friedens</hi> <ref type="lawCode" target="law:IIIAtr">III Atr</ref> 3, <hi rend="italic"><ref type="abbreviation" target="gram:unubersetzt"><abbr>unübs</abbr></ref>.</hi> ~pum <ref type="lawCode" target="law:Quadr">Q</ref>, <hi rend="italic"><ref type="abbreviation" target="gram:auch"><abbr>auch</abbr></ref></hi> <ref type="lawCode" target="law:Rb">Rb</ref> <hi rend="italic"><ref type="abbreviation" target="gram:Seite"><abbr>S.</abbr></ref></hi> 541 [<hi rend="italic"><ref type="abbreviation" target="gram:nordisch"><abbr>nordisch</abbr></ref>; <ref type="abbreviation" target="gram:daraus"><abbr>daraus</abbr></ref> anglisirt:</hi>] <hi rend="bold">lahceap</hi> <ref type="lawCode" target="law:Northu">Northu</ref> 67,1</dictScrap>
+        <xr type="bosworthToller"><ref target="https://bosworthtoller.com/21058">lahcop</ref></xr>
+        <xr type="doe"><ref target="https://indiv.dictionary.doe.utoronto.ca/doe/?E18758">lahcop</ref></xr>
         <xr type="lawCode"><ref target="clause:IIIAtr_3">III Atr 3</ref></xr>
         <xr type="lawCode"><ref target="clause:Northu_67-1">Northu 67,1</ref></xr>
       </entry>
