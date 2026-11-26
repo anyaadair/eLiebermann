@@ -33,6 +33,7 @@ A citation finds its clause in three steps, and the report says which:
   Instituta column  "In Cn II 30,6": books I and II of the Instituta follow Cnut's numbers, so to
               the I or II Cn clause, whose page has the Instituta column (II 59a–i, I 5,2e: Alfred)
   correction  a slip of Liebermann's, linked by hand in data/citation-corrections.json
+  range end   "Leis Wl 11,1—13": no Leis Wl 11,13, so the range ends at Leis Wl 13 (listed so)
 
 Writes docs/oe-laws-link-report.md (use --no-report to skip) and needs only
 Python 3.
@@ -292,11 +293,16 @@ def main():
 
     clauses = Clauses(args.catalogue, args.mark_law)
     # Liebermann's slips, linked by hand to the right clause: data/citation-corrections.json,
-    # one row per entry and citation as listed ({"entry", "citation", "clause", "why"})
+    # one row per entry and citation as listed ({"entry", "citation", "clause", "why"}). A row may also
+    # give a "label", the citation as it should be listed, where the citation finder spells it wrongly
+    # (the end of a range, "Leis Wl 11,1—13": not 11,13 but Leis Wl 13)
     corrections = {}
+    labels = {}
     if os.path.exists(args.corrections):
         for row in json.load(open(args.corrections, encoding='utf-8')):
             corrections[(row['entry'], row['citation'])] = row['clause']
+            if row.get('label'):
+                labels[(row['entry'], row['citation'])] = row['label']
     outcome = Counter()
     missed = defaultdict(Counter)            # reason -> {"Anchor text": count}
     entries_seen = entries_changed = entries_with_citations = entries_fully_linked = 0
@@ -318,6 +324,16 @@ def main():
             nonlocal changed_here
             fixed = corrections.get((slug, html.unescape(m.group('text'))))
             how, clause_id = ('correction', fixed) if fixed else clauses.find(m.group('anchor'), html.unescape(m.group('text')))
+            label = labels.get((slug, html.unescape(m.group('text'))))
+            # The end of a range written as a bare number after a subsection ("Leis Wl 11,1—13", "V Atr 1,1—5")
+            # is read by the citation finder as another subsection (11,13; 1,5). Where there is no such
+            # subsection but there is a clause of that number, the range ends at the clause: linked and listed so.
+            if not fixed and how != 'exact' and 'range-from:' in (m.group('n') or ''):
+                alt = re.sub(r'(\s)\d+[a-z]?,(\d+[a-z]*)$', r'\1\2', html.unescape(m.group('text')))
+                if alt != html.unescape(m.group('text')):
+                    how2, id2 = clauses.find(m.group('anchor'), alt)
+                    if how2 == 'exact':
+                        how, clause_id, label = 'range end', id2, alt
             outcome[how] += 1
             results_here.append(how)
             if clause_id is None:
@@ -326,9 +342,14 @@ def main():
             changed_here += 1
             if len(samples) < 12 and how != 'exact':
                 samples.append((how, m.group('text'), clause_id))
-            return '<xr type="lawCode"%s><ref target="clause:%s">%s</ref></xr>' % (m.group('n') or '', clause_id, m.group('text'))
+            return '<xr type="lawCode"%s><ref target="clause:%s">%s</ref></xr>' % (m.group('n') or '', clause_id, html.escape(label, quote=False) if label else m.group('text'))
 
         new = XR.sub(link, text)
+        # a range end now listed under the clause it ends at ("Leis Wl 13") may already be cited on its own:
+        # the plain citation goes, the range end (which brings the clauses between) stays
+        ends = set(re.findall(r'<xr type="lawCode"(?: n="[^"]*")? rend="range-from:[^"]*">(<ref target="clause:[^"]+">[^<]*</ref>)</xr>', new))
+        if ends:
+            new = re.sub(r'[ \t]*<xr type="lawCode"(?: n="[^"]*")?>(<ref target="clause:[^"]+">[^<]*</ref>)</xr>\n', lambda m: '' if m.group(1) in ends else m.group(0), new)
         # the clauses between the two ends of a range, in the database's order
         new = RANGE_FILL.sub('', new)
         for rm in list(RANGE_END.finditer(new)):
