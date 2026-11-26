@@ -3,25 +3,26 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Ymb Æwbricas 1</title>
+        <title>Ymb Æwbricas</title>
         <respStmt><resp>Old English text</resp><name ref="#flower">Flower</name></respStmt>
         <respStmt><resp>Translation</resp><name ref="#adair">Adair</name></respStmt>
+        <respStmt><resp>Translation</resp><name ref="#wormald">Wormald</name></respStmt>
         <respStmt><resp>Cross-references to other clauses</resp><name ref="#wormald-mel">Wormald, MEL</name></respStmt>
       </titleStmt>
       <publicationStmt>
         <publisher>eLiebermann: An Online Dictionary of Pre-Conquest English Law</publisher>
         <idno type="slug">Ymb-Aewbricas_1</idno>
-        <idno type="citation">Ymb Æwbricas 1</idno>
+        <idno type="citation">Ymb Æwbricas</idno>
         <idno type="lawCode">Ymb Æwbricas</idno>
-        <idno type="clause">1</idno>
-        <idno type="citationKey">Ymb Æwbricas 1</idno>
+        <idno type="clause"></idno>
+        <idno type="citationKey">Ymb Æwbricas</idno>
       </publicationStmt>
       <sourceDesc>
         <bibl type="legalText"><title>Ymb æwbricas (On Adulteries)</title></bibl>
         <listBibl type="sources">
           <bibl xml:id="flower" type="edition">Robin Flower, ‘The Text of the Burghal Hidage’, <title>London Mediaeval Studies</title> 1 (1937), 60–64, p. <biblScope unit="page">62</biblScope> (text as given in the Dictionary of Old English Corpus, Cameron no. B14.56, short title LawF)</bibl>
           <bibl xml:id="adair" type="translation">Anya Adair, English translation made for this edition (eLiebermann, 2026)</bibl>
-          <bibl xml:id="wormald" type="withheld">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I</title> (Oxford: Blackwell, 1999), p. <biblScope unit="page">372</biblScope></bibl>
+          <bibl xml:id="wormald" type="translation">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I</title> (Oxford: Blackwell, 1999), p. <biblScope unit="page">372</biblScope></bibl>
           <bibl xml:id="wormald-mel" type="study">Patrick Wormald, <title>The Making of English Law: King Alfred to the Twelfth Century, I: Legislation and its Limits</title> (Oxford: Blackwell, 1999)</bibl>
         </listBibl>
         <listWit>
@@ -37,7 +38,7 @@
       </listPrefixDef>
     </encodingDesc>
     <profileDesc>
-      <creation><date source="#wormald-mel" n="MEL pp. 372–3">c.945, the work excerpted</date><note type="promulgation">c.945, the work excerpted (Wormald, MEL pp. 372–3)</note></creation>
+      <creation><date source="#wormald-mel" n="MEL pp. 372–3">?c.945 (proposed date of composition of the work from which this text was excerpted in the early eleventh century)</date><note type="promulgation">?c.945 (proposed date of composition of the work from which this text was excerpted in the early eleventh century) (Wormald, MEL pp. 372–3)</note></creation>
       <textClass>
         <keywords n="offence-legal-event"><term>Illicit unions</term><term>Forfeiture</term><term>Land</term><term>Legal procedure</term><term>Adultery</term></keywords>
         <keywords n="people"><term>Nun</term><term>Women</term><term>Nobles</term><term>King</term><term>Bishops</term><term>Ecclesiastical orders</term><term>Rank</term><term>All people</term></keywords>
@@ -49,15 +50,16 @@
   <change when="2026-11-24">“Not known to Liebermann” taken out of the title (the clause is now Ymb Æwbricas 1; it was Ymb-Aewbricas_Not-known-to-Liebermann); the law code has a badge “Not in Liebermann’s Gesetze” instead (Anya Adair).</change>
   <change when="2026-11-25">Old English text added from Robin Flower’s edition (London Mediaeval Studies 1 (1937), p. 62), as given in the Dictionary of Old English Corpus (B14.56), found by Anya Adair; manuscript corrected from Lambarde (Ld) to Nowell’s transcript, BL Add. MS 43703, f. 255 (Anya Adair).</change>
   <change when="2026-11-25">New English translation by Anya Adair; Wormald’s translation (MEL p. 372) withheld from the site. Title corrected to “On Adulteries”: æbricas is the plural of the noun ǣ-bryce “adultery” (DOE s.v. ǣ-bryce, which lists this spelling), not of ǣ-breca “adulterer”; see the editor’s note (data/clause-order.json) (Anya Adair).</change>
+  <change when="2026-11-25">Wormald’s translation (MEL p. 372) restored as a second translation beside Anya Adair’s; the text is not numbered as clause 1, since it is the whole text (now cited as “Ymb Æwbricas”); suggested date reworded (Anya Adair).</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
       <div type="clause" n="1">
-        <head>Ymb Æwbricas 1</head>
+        <head>Ymb Æwbricas</head>
         <ab type="editionText" xml:lang="ang" source="#flower" corresp="#wit-nowell">And ymb æbricas þe þu acsodes ge æt nunnum ge æt læwedum wifum symle gæð se forworhta wifmon þam bisceopstole mid hire þriddan dæle ⁊ se wæpned to þam hlaforde sie swa boclond swa folclond swaþer hit sie ge cyninges selfes ge ælces monnes. Þonne geð se wer mid his twæde to þam hlaforde gif he on woh geligeþ ⁊ hie butu forworhte beoð.</ab>
         <ab type="translation" xml:lang="en" source="#adair" corresp="#wit-nowell">And concerning the adulteries that you asked about, both in the case of nuns and in the case of lay women: the forfeit woman always goes to the bishop’s see with her third part [of the household property], and the male to the lord, be it either bookland or folkland, whichever it may be, whether the king’s own or any man’s. Then the man goes with his two-thirds to the lord, if he lies [with her] wrongfully; and they are both forfeit.</ab>
-        <ab type="translationWithheld" xml:lang="en" source="#wormald" corresp="#wit-nowell">And on your question about adulterers, whether with nuns or lay women, the forfeited woman and man go respectively to the bishopric with her third, and to the lord – whether it be bookland or folkland, whether of the king himself or of any man – he goes with his two parts to his lord if he has wicked intercourse, and they are both forfeit.</ab>
+        <ab type="translation" xml:lang="en" source="#wormald" corresp="#wit-nowell">And on your question about adulterers, whether with nuns or lay women, the forfeited woman and man go respectively to the bishopric with her third, and to the lord – whether it be bookland or folkland, whether of the king himself or of any man – he goes with his two parts to his lord if he has wicked intercourse, and they are both forfeit.</ab>
         <note type="comparison" source="#wormald-mel" n="373"><label>closest to an echo</label> <ref target="clause:EGu_4">EGu 4</ref> <quote>the closest to an echo of Ymb Æwbricas is in his 'Peace of Edward and Guthrum' [n. EGu 4]</quote></note>
         <note type="comparison" source="#wormald-mel" n="373"><label>same offence stigmatized</label> <ref target="clause:IEm_4">I Em 4</ref> <quote>at the time when such offences were stigmatized by Edmund's London council [n. I Em 4]</quote></note>
         <note type="comparison" source="#wormald-mel" n="373"><label>cf.</label> <ref target="clause:VAtr_10">V Atr 10</ref> <quote>EGu 4; cf. V Atr 10 (VI 11 – 12:2), Cn 1018 11:3 – 12:4, I Cn 6:3 – 7:3, II 50 – 55</quote></note>

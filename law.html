@@ -1452,7 +1452,7 @@ scripts:
         $('p-back').href = root + 'lawcode.html?code=' + encodeURIComponent(row.code);
         $('p-back').lastChild.textContent = ' Back to ' + row.code;
         $('p-back').title = codeName;
-        $('p-code').innerHTML = `<a href="${root}lawcode.html?code=${encodeURIComponent(row.code)}">${esc(row.code)}</a>${codeName !== row.code ? ' (' + esc(codeName) + ')' : ''} · clause ${sameCode.findIndex(c => c.id === row.id) + 1} of ${sameCode.length}`;
+        $('p-code').innerHTML = `<a href="${root}lawcode.html?code=${encodeURIComponent(row.code)}">${esc(row.code)}</a>${codeName !== row.code ? ' (' + esc(codeName) + ')' : ''}${sameCode.length === 1 && !row.clause ? '' : ` · clause ${sameCode.findIndex(c => c.id === row.id) + 1} of ${sameCode.length}`}`;   // a whole text with no clause number (Ymb æwbricas) is not “clause 1 of 1”
         $('go-label').textContent = 'Go to a clause of ' + row.code;
         // the four clauses before and after, with the opening of their text
         (codeData ? Promise.resolve(sameCode.map(c => [c.id, c.code, c.citation, codeData.brief[c.id] || '']))

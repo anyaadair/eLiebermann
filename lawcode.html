@@ -214,7 +214,7 @@ scripts:
                 <div class="clause-dates">${dateLine('Titles', code.titles)}${dates}${
                     msLine}${
                     plainLine('Editions and translations', sources.map(scholar).join(', '))}${
-                    (whole ? '' : plainLine('Clauses', String(mine.length)))}</div>
+                    (whole || (mine.length === 1 && !mine[0].clause) ? '' : plainLine('Clauses', String(mine.length)))}</div>
             </header>
             ${(() => { const r = (ELieb.RECONSTRUCTED || {})[code.code]; return r ? `<p class="reconstructed-callout"><span class="reconstructed-badge">Reconstructed text</span> <a href="${root}${r.href}">${esc(r.title)}</a>: ${esc(r.note)} The list below follows Liebermann, who prints only what he has not printed beside its source.</p>` : ''; })()}
             ${introduction ? `<div class="code-introduction is-collapsed"><h2 class="code-introduction__head">Editor’s introduction</h2>
@@ -226,7 +226,7 @@ scripts:
                 <p>This short text is not divided into clauses. Below is the whole text, set out line by line as Liebermann prints it from its only manuscript, with one translation (an English crib of Liebermann’s German).</p>
                 <p>Its own page has every text and translation (Rabin’s too), Liebermann’s notes, cross-references and keywords: <a href="${clauseUrl(mine[0].id)}">all texts and translations</a>.</p>
             </div>` : code.code === 'Ymb Æwbricas' ? `<div class="code-callout">
-                <p>Click a clause number, or <em>All texts and translations</em> under the clause, to open this text in its own page with all editions, translations, notes, cross-references, and keywords.</p>
+                <p>Click the clause, or <em>All texts and translations</em> under the clause, to open this text in its own page with all editions, translations, notes, cross-references, and keywords.</p>
             </div>` : `<div class="code-callout">
                 <p>Below is a single text of the code (the first in Liebermann’s edition) and one translation (an English crib of Liebermann’s German). Where either of these is unavailable, an alternative is shown and labelled.</p>
                 <p>Each clause has its own page with all texts, editions, translations, notes, cross-references, and keywords. Click a clause number, or <em>All texts and translations</em> under any clause, to open it.</p>
